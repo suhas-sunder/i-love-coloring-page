@@ -28,6 +28,12 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - New source QA rejection counts above 500, excluding previously blocked Round 2 images, require diagnostic failure mode.
 - Future production, export, gallery, sitemap, and metadata scripts should use the latest approved-source manifest, currently `pipeline/manifests/round-3a1-approved-source-images.json`, unless replaced by a later approved manifest.
 - Future blocked-source logic should use the latest blocked-source manifest, currently `pipeline/manifests/round-3a1-blocked-source-images.json`, unless replaced by a later blocked manifest.
+- Production exporters must validate every input against the latest approved-source manifest before processing.
+- Blocked images must never be processed unless restored by an explicit later approval manifest.
+- Warning images remain eligible for conversion when they are present in the approved-source manifest; preserve warning metadata instead of treating warnings as rejection.
+- Production dry-run outputs must stay under `pipeline/production/dry-run/` and out of any Next.js `public/` folder.
+- Final asset IDs must be deterministic and collision-safe.
+- Duplicate original filenames cannot be trusted as unique IDs.
 - Duplicate filenames are not duplicate images by themselves; keep same-name images when content differs and use deterministic collision-safe output IDs.
 - Only exact duplicate image content may be excluded as a duplicate, and source files must still never be deleted or moved.
 

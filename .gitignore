@@ -8,6 +8,12 @@ pipeline/bakeoffs/**
 pipeline/review/**
 pipeline/production/assets/**
 pipeline/production/thumbs/**
+pipeline/production/dry-run/assets/**
+pipeline/production/dry-run/logs/**
+pipeline/production/dry-run/manifests/**
+pipeline/production/dry-run/quarantine/**
+pipeline/production/dry-run/reports/**
+pipeline/production/dry-run/review/**
 
 # Keep production data manifests commit-eligible
 !pipeline/production/data/

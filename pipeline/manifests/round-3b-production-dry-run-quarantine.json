@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-05-09",
+  "runId": "round-3b-approved-production-dry-run-line-thick",
+  "sourceManifest": "pipeline/manifests/round-3a1-approved-production-dry-run-sample.json",
+  "approvedManifest": "pipeline/manifests/round-3a1-approved-source-images.json",
+  "blockedManifest": "pipeline/manifests/round-3a1-blocked-source-images.json",
+  "warningManifest": "pipeline/manifests/round-3a1-warning-source-images.json",
+  "presetPolicyUsed": {
+    "presetId": "line-thick",
+    "presetName": "Lineart - Thick"
+  },
+  "totalQuarantined": 0,
+  "totalSkipped": 0,
+  "countsByFailureReason": {},
+  "entries": [],
+  "skipped": [],
+  "note": "Quarantine is an automated dry-run gate only. It is not a final human aesthetic review."
+}
