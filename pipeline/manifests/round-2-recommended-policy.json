@@ -1,0 +1,50 @@
+{
+  "conditionalRules": [],
+  "defaultPreset": {
+    "presetId": "line-thick",
+    "presetName": "Lineart - Thick",
+    "reason": "Highest Stage B aggregate score with successful render rate and manageable complexity."
+  },
+  "generatedAt": "2026-05-09",
+  "manualReviewPolicy": [
+    "All human-adjacent images require manual anatomy review before production approval.",
+    "Any image with render, blank, overfilled, or excessive-complexity flags is quarantined for manual review.",
+    "Automatic anatomy detection is not considered authoritative."
+  ],
+  "productionReadyOutputSpec": {
+    "manualReviewTriggers": [
+      "human-adjacent category",
+      "conversion flags",
+      "low Stage B quality score",
+      "duplicate filename collision"
+    ],
+    "metadataConvention": "Store category, sourceRelativePath, presetId, conversion status, metrics, flags, review status, and CDN asset paths.",
+    "namingConvention": "Use deterministic IDs derived from category, original filename, and short source-path hash.",
+    "passThresholds": {
+      "maximumDarkPixelRatio": 0.55,
+      "maximumPathCountPreferred": 2500,
+      "maximumSvgBytesPreferred": 2000000,
+      "minimumDarkPixelRatio": 0.004,
+      "minimumQualityScore": 70
+    },
+    "pngPreviewExpectations": [
+      "White-background PNG preview rendered from the SVG.",
+      "Preview should match the normalized SVG bounds.",
+      "Preview is for QA and thumbnails only, not the source of record."
+    ],
+    "quarantineCriteria": [
+      "render_failed",
+      "blank_or_missing_subject",
+      "overfilled_or_blobbed_output",
+      "excessive_svg_complexity",
+      "human-adjacent images lacking manual signoff"
+    ],
+    "svgExpectations": [
+      "Valid SVG with viewBox or width and height.",
+      "Black or near-black linework on transparent or white background.",
+      "Readable subject with no blank or overfilled output.",
+      "Manageable file size and path count for gallery use."
+    ]
+  },
+  "recommendationType": "single_default_preset"
+}

@@ -1,0 +1,2119 @@
+{
+  "anatomyDetectionLimit": "This workflow does not claim reliable anatomy detection. Human-adjacent images are queued for manual review.",
+  "flaggedByCategory": {
+    "anime-girls": 37,
+    "chibi": 36,
+    "fantasy": 28,
+    "gardening": 1,
+    "horror": 1,
+    "mandala": 1,
+    "midieval": 16,
+    "mythology": 19
+  },
+  "flaggedImageCount": 139,
+  "flagsAreHeuristic": true,
+  "generatedAt": "2026-05-09",
+  "images": [
+    {
+      "category": "anime-girls",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-010-anime-girls-anime-girl-asgard-invasion-6fddc731.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-010-anime-girls-anime-girl-asgard-invasion-6fddc731.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-010-anime-girls-anime-girl-asgard-invasion-6fddc731",
+      "sourceRelativePath": "images/anime-girls/anime-girl-asgard-invasion.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-011-anime-girls-anime-girl-baboon-hoodie-animal-plushie-c26bf824.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-011-anime-girls-anime-girl-baboon-hoodie-animal-plushie-c26bf824.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-011-anime-girls-anime-girl-baboon-hoodie-animal-plushie-c26bf824",
+      "sourceRelativePath": "images/anime-girls/anime-girl-baboon-hoodie-animal-plushie.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-012-anime-girls-anime-girl-bear-hoodie-plushie-nature-8ccbbef0.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-012-anime-girls-anime-girl-bear-hoodie-plushie-nature-8ccbbef0.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-012-anime-girls-anime-girl-bear-hoodie-plushie-nature-8ccbbef0",
+      "sourceRelativePath": "images/anime-girls/anime-girl-bear-hoodie-plushie-nature.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-013-anime-girls-anime-girl-brazilian-jiu-jitsu-9376a0ac.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-013-anime-girls-anime-girl-brazilian-jiu-jitsu-9376a0ac.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-013-anime-girls-anime-girl-brazilian-jiu-jitsu-9376a0ac",
+      "sourceRelativePath": "images/anime-girls/anime-girl-brazilian-jiu-jitsu.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-014-anime-girls-anime-girl-elephant-hoodie-plushie-dfeaa10e.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-014-anime-girls-anime-girl-elephant-hoodie-plushie-dfeaa10e.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-014-anime-girls-anime-girl-elephant-hoodie-plushie-dfeaa10e",
+      "sourceRelativePath": "images/anime-girls/anime-girl-elephant-hoodie-plushie.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-015-anime-girls-anime-girl-forward-bending-yoga-pose-30c168f6.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-015-anime-girls-anime-girl-forward-bending-yoga-pose-30c168f6.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-015-anime-girls-anime-girl-forward-bending-yoga-pose-30c168f6",
+      "sourceRelativePath": "images/anime-girls/anime-girl-forward-bending-yoga-pose.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-016-anime-girls-anime-girl-furisode-japanese-dress-3fefc225.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-016-anime-girls-anime-girl-furisode-japanese-dress-3fefc225.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-016-anime-girls-anime-girl-furisode-japanese-dress-3fefc225",
+      "sourceRelativePath": "images/anime-girls/anime-girl-furisode-japanese-dress.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-017-anime-girls-anime-girl-hedgehog-hoodie-plushie-cosplay-f8cad9ed.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-017-anime-girls-anime-girl-hedgehog-hoodie-plushie-cosplay-f8cad9ed.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-017-anime-girls-anime-girl-hedgehog-hoodie-plushie-cosplay-f8cad9ed",
+      "sourceRelativePath": "images/anime-girls/anime-girl-hedgehog-hoodie-plushie-cosplay.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-018-anime-girls-anime-girl-hiking-forest-9a6f2109.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-018-anime-girls-anime-girl-hiking-forest-9a6f2109.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-018-anime-girls-anime-girl-hiking-forest-9a6f2109",
+      "sourceRelativePath": "images/anime-girls/anime-girl-hiking-forest.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-019-anime-girls-anime-girl-iron-tail-d296b236.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-019-anime-girls-anime-girl-iron-tail-d296b236.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-019-anime-girls-anime-girl-iron-tail-d296b236",
+      "sourceRelativePath": "images/anime-girls/anime-girl-iron-tail.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-020-anime-girls-anime-girl-kangaroo-hoodie-plushie-b162138a.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-020-anime-girls-anime-girl-kangaroo-hoodie-plushie-b162138a.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-020-anime-girls-anime-girl-kangaroo-hoodie-plushie-b162138a",
+      "sourceRelativePath": "images/anime-girls/anime-girl-kangaroo-hoodie-plushie.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-021-anime-girls-anime-girl-lich-ritual-interrupt-2a6e10d3.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-021-anime-girls-anime-girl-lich-ritual-interrupt-2a6e10d3.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-021-anime-girls-anime-girl-lich-ritual-interrupt-2a6e10d3",
+      "sourceRelativePath": "images/anime-girls/anime-girl-lich-ritual-interrupt.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-022-anime-girls-anime-girl-muay-thai-877ad80e.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-022-anime-girls-anime-girl-muay-thai-877ad80e.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-022-anime-girls-anime-girl-muay-thai-877ad80e",
+      "sourceRelativePath": "images/anime-girls/anime-girl-muay-thai.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-023-anime-girls-anime-girl-phoenix-hunt-b9a226b8.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-023-anime-girls-anime-girl-phoenix-hunt-b9a226b8.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-023-anime-girls-anime-girl-phoenix-hunt-b9a226b8",
+      "sourceRelativePath": "images/anime-girls/anime-girl-phoenix-hunt.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-024-anime-girls-anime-girl-powering-up-0f02f24d.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-024-anime-girls-anime-girl-powering-up-0f02f24d.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-024-anime-girls-anime-girl-powering-up-0f02f24d",
+      "sourceRelativePath": "images/anime-girls/anime-girl-powering-up.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-025-anime-girls-anime-girl-ram-hoodie-kitty-cake-eb65d6bd.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-025-anime-girls-anime-girl-ram-hoodie-kitty-cake-eb65d6bd.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-025-anime-girls-anime-girl-ram-hoodie-kitty-cake-eb65d6bd",
+      "sourceRelativePath": "images/anime-girls/anime-girl-ram-hoodie-kitty-cake.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-026-anime-girls-anime-girl-riding-bicycle-21ca9cc2.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-026-anime-girls-anime-girl-riding-bicycle-21ca9cc2.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-026-anime-girls-anime-girl-riding-bicycle-21ca9cc2",
+      "sourceRelativePath": "images/anime-girls/anime-girl-riding-bicycle.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [
+        "heavy_ink_coverage",
+        "high_svg_complexity"
+      ],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review",
+        "conversion_issue_on_human_adjacent_image"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-027-anime-girls-anime-girl-shadow-clone-jutsu-battle-shounin-da711b4c.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-027-anime-girls-anime-girl-shadow-clone-jutsu-battle-shounin-da711b4c.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-027-anime-girls-anime-girl-shadow-clone-jutsu-battle-shounin-da711b4c",
+      "sourceRelativePath": "images/anime-girls/anime-girl-shadow-clone-jutsu-battle-shounin.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-028-anime-girls-anime-girl-summoning-fairies-ffd45513.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-028-anime-girls-anime-girl-summoning-fairies-ffd45513.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-028-anime-girls-anime-girl-summoning-fairies-ffd45513",
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-fairies.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-029-anime-girls-anime-girl-summoning-jutsu-amphithere-dragon-a193a4b4.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-029-anime-girls-anime-girl-summoning-jutsu-amphithere-dragon-a193a4b4.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-029-anime-girls-anime-girl-summoning-jutsu-amphithere-dragon-a193a4b4",
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-amphithere-dragon.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [
+        "high_svg_complexity"
+      ],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review",
+        "conversion_issue_on_human_adjacent_image"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-030-anime-girls-anime-girl-summoning-jutsu-baby-dragon-plushies-593b64d8.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-030-anime-girls-anime-girl-summoning-jutsu-baby-dragon-plushies-593b64d8.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-030-anime-girls-anime-girl-summoning-jutsu-baby-dragon-plushies-593b64d8",
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-baby-dragon-plushies.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-031-anime-girls-anime-girl-summoning-jutsu-cows-aa1e0277.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-031-anime-girls-anime-girl-summoning-jutsu-cows-aa1e0277.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-031-anime-girls-anime-girl-summoning-jutsu-cows-aa1e0277",
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-cows.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-032-anime-girls-anime-girl-summoning-jutsu-dragon-eggs-4a74b8b4.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-032-anime-girls-anime-girl-summoning-jutsu-dragon-eggs-4a74b8b4.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-032-anime-girls-anime-girl-summoning-jutsu-dragon-eggs-4a74b8b4",
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-dragon-eggs.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-033-anime-girls-anime-girl-summoning-jutsu-earth-spirit-dragon-e69b8a17.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-033-anime-girls-anime-girl-summoning-jutsu-earth-spirit-dragon-e69b8a17.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-033-anime-girls-anime-girl-summoning-jutsu-earth-spirit-dragon-e69b8a17",
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-earth-spirit-dragon.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-034-anime-girls-anime-girl-summoning-jutsu-eel-plushies-0009f64d.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-034-anime-girls-anime-girl-summoning-jutsu-eel-plushies-0009f64d.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-034-anime-girls-anime-girl-summoning-jutsu-eel-plushies-0009f64d",
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-eel-plushies.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-035-anime-girls-anime-girl-summoning-jutsu-hydra-dragon-plushies-5256c3e0.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-035-anime-girls-anime-girl-summoning-jutsu-hydra-dragon-plushies-5256c3e0.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-035-anime-girls-anime-girl-summoning-jutsu-hydra-dragon-plushies-5256c3e0",
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-hydra-dragon-plushies.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-036-anime-girls-anime-girl-summoning-jutsu-kawaii-cow-plushies-1b288817.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-036-anime-girls-anime-girl-summoning-jutsu-kawaii-cow-plushies-1b288817.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-036-anime-girls-anime-girl-summoning-jutsu-kawaii-cow-plushies-1b288817",
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-kawaii-cow-plushies.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-037-anime-girls-anime-girl-summoning-jutsu-spirit-dragon-plushies-62805e5e.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-037-anime-girls-anime-girl-summoning-jutsu-spirit-dragon-plushies-62805e5e.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-037-anime-girls-anime-girl-summoning-jutsu-spirit-dragon-plushies-62805e5e",
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-spirit-dragon-plushies.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-038-anime-girls-anime-girl-summoning-jutsu-tyrannosaurus-rex-0878b245.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-038-anime-girls-anime-girl-summoning-jutsu-tyrannosaurus-rex-0878b245.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-038-anime-girls-anime-girl-summoning-jutsu-tyrannosaurus-rex-0878b245",
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-tyrannosaurus-rex.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-039-anime-girls-anime-girl-summoning-jutsu-volcano-erruption-44c71803.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-039-anime-girls-anime-girl-summoning-jutsu-volcano-erruption-44c71803.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-039-anime-girls-anime-girl-summoning-jutsu-volcano-erruption-44c71803",
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-volcano-erruption.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-040-anime-girls-anime-girl-taekwondo-gym-ca94f3b0.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-040-anime-girls-anime-girl-taekwondo-gym-ca94f3b0.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-040-anime-girls-anime-girl-taekwondo-gym-ca94f3b0",
+      "sourceRelativePath": "images/anime-girls/anime-girl-taekwondo-gym.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-041-anime-girls-anime-girl-tiger-hoodie-plushie-14ea7c33.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-041-anime-girls-anime-girl-tiger-hoodie-plushie-14ea7c33.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-041-anime-girls-anime-girl-tiger-hoodie-plushie-14ea7c33",
+      "sourceRelativePath": "images/anime-girls/anime-girl-tiger-hoodie-plushie.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-042-anime-girls-anime-girl-belly-dancing-68a2b8de.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-042-anime-girls-anime-girl-belly-dancing-68a2b8de.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-042-anime-girls-anime-girl-belly-dancing-68a2b8de",
+      "sourceRelativePath": "images/anime-girls/old-cards/anime-girl-belly-dancing.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-043-anime-girls-anime-girl-dragon-rider-37e80c68.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-043-anime-girls-anime-girl-dragon-rider-37e80c68.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-043-anime-girls-anime-girl-dragon-rider-37e80c68",
+      "sourceRelativePath": "images/anime-girls/old-cards/anime-girl-dragon-rider.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-044-anime-girls-anime-girl-pull-up-winter-76863841.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-044-anime-girls-anime-girl-pull-up-winter-76863841.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-044-anime-girls-anime-girl-pull-up-winter-76863841",
+      "sourceRelativePath": "images/anime-girls/old-cards/anime-girl-pull-up-winter.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [
+        "heavy_ink_coverage",
+        "excessive_svg_complexity"
+      ],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review",
+        "conversion_issue_on_human_adjacent_image"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-045-anime-girls-anime-girl-squirrel-hoodie-plushie-f07bdf46.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-045-anime-girls-anime-girl-squirrel-hoodie-plushie-f07bdf46.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-045-anime-girls-anime-girl-squirrel-hoodie-plushie-f07bdf46",
+      "sourceRelativePath": "images/anime-girls/old-cards/anime-girl-squirrel-hoodie-plushie.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "anime-girls",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-046-anime-girls-anime-girl-801324a8.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-046-anime-girls-anime-girl-801324a8.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-046-anime-girls-anime-girl-801324a8",
+      "sourceRelativePath": "images/anime-girls/old-cards/anime-girl.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-053-chibi-chibi-animals-pets-dogs-bull-terrier-13873b45.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-053-chibi-chibi-animals-pets-dogs-bull-terrier-13873b45.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-053-chibi-chibi-animals-pets-dogs-bull-terrier-13873b45",
+      "sourceRelativePath": "images/chibi/chibi-animals-pets-dogs-bull-terrier.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-054-chibi-chibi-cockatrice-2cd1f55c.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-054-chibi-chibi-cockatrice-2cd1f55c.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-054-chibi-chibi-cockatrice-2cd1f55c",
+      "sourceRelativePath": "images/chibi/chibi-cockatrice.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-055-chibi-chibi-drake-4cefa8dd.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-055-chibi-chibi-drake-4cefa8dd.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-055-chibi-chibi-drake-4cefa8dd",
+      "sourceRelativePath": "images/chibi/chibi-drake.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-056-chibi-chibi-dungeon-dark-portal-31d6f95d.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-056-chibi-chibi-dungeon-dark-portal-31d6f95d.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-056-chibi-chibi-dungeon-dark-portal-31d6f95d",
+      "sourceRelativePath": "images/chibi/chibi-dungeon-dark-portal.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-057-chibi-chibi-dungeon-dungeon-stairs-d757cdc7.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-057-chibi-chibi-dungeon-dungeon-stairs-d757cdc7.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-057-chibi-chibi-dungeon-dungeon-stairs-d757cdc7",
+      "sourceRelativePath": "images/chibi/chibi-dungeon-dungeon-stairs.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-058-chibi-chibi-dungeon-evil-king-7cc02d9b.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-058-chibi-chibi-dungeon-evil-king-7cc02d9b.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-058-chibi-chibi-dungeon-evil-king-7cc02d9b",
+      "sourceRelativePath": "images/chibi/chibi-dungeon-evil-king.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-059-chibi-chibi-dungeon-shadow-beast-99405c23.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-059-chibi-chibi-dungeon-shadow-beast-99405c23.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-059-chibi-chibi-dungeon-shadow-beast-99405c23",
+      "sourceRelativePath": "images/chibi/chibi-dungeon-shadow-beast.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-060-chibi-chibi-flowers-anemone-1d5928f5.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-060-chibi-chibi-flowers-anemone-1d5928f5.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-060-chibi-chibi-flowers-anemone-1d5928f5",
+      "sourceRelativePath": "images/chibi/chibi-flowers-anemone.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-061-chibi-chibi-flowers-bird-of-paradise-kawaii-ae230f20.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-061-chibi-chibi-flowers-bird-of-paradise-kawaii-ae230f20.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-061-chibi-chibi-flowers-bird-of-paradise-kawaii-ae230f20",
+      "sourceRelativePath": "images/chibi/chibi-flowers-bird-of-paradise-kawaii.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-062-chibi-chibi-flowers-foxglove-24f72f8d.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-062-chibi-chibi-flowers-foxglove-24f72f8d.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-062-chibi-chibi-flowers-foxglove-24f72f8d",
+      "sourceRelativePath": "images/chibi/chibi-flowers-foxglove.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-063-chibi-chibi-flowers-gerbera-8a4f8c45.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-063-chibi-chibi-flowers-gerbera-8a4f8c45.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-063-chibi-chibi-flowers-gerbera-8a4f8c45",
+      "sourceRelativePath": "images/chibi/chibi-flowers-gerbera.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-064-chibi-chibi-flowers-liatris-b45e0086.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-064-chibi-chibi-flowers-liatris-b45e0086.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-064-chibi-chibi-flowers-liatris-b45e0086",
+      "sourceRelativePath": "images/chibi/chibi-flowers-liatris.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-065-chibi-chibi-flowers-osteospermum-kawaii-3de0a8a2.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-065-chibi-chibi-flowers-osteospermum-kawaii-3de0a8a2.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-065-chibi-chibi-flowers-osteospermum-kawaii-3de0a8a2",
+      "sourceRelativePath": "images/chibi/chibi-flowers-osteospermum-kawaii.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-066-chibi-chibi-flowers-rudbeckia-kawaii-ba1cd75e.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-066-chibi-chibi-flowers-rudbeckia-kawaii-ba1cd75e.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-066-chibi-chibi-flowers-rudbeckia-kawaii-ba1cd75e",
+      "sourceRelativePath": "images/chibi/chibi-flowers-rudbeckia-kawaii.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-067-chibi-chibi-flowers-yarrow-55afd72b.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-067-chibi-chibi-flowers-yarrow-55afd72b.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-067-chibi-chibi-flowers-yarrow-55afd72b",
+      "sourceRelativePath": "images/chibi/chibi-flowers-yarrow.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-068-chibi-chibi-flowers-zinnia-kawaii-91bc65dd.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-068-chibi-chibi-flowers-zinnia-kawaii-91bc65dd.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-068-chibi-chibi-flowers-zinnia-kawaii-91bc65dd",
+      "sourceRelativePath": "images/chibi/chibi-flowers-zinnia-kawaii.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-069-chibi-chibi-golems-d040a29a.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-069-chibi-chibi-golems-d040a29a.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-069-chibi-chibi-golems-d040a29a",
+      "sourceRelativePath": "images/chibi/chibi-golems.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-070-chibi-chibi-holiday-halloween-cauldron-smoke-and-bats-coloring-page-002080b5.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-070-chibi-chibi-holiday-halloween-cauldron-smoke-and-bats-coloring-page-002080b5.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-070-chibi-chibi-holiday-halloween-cauldron-smoke-and-bats-coloring-page-002080b5",
+      "sourceRelativePath": "images/chibi/chibi-holiday-halloween-cauldron-smoke-and-bats-coloring-page.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-071-chibi-chibi-holiday-halloween-mummy-popping-out-of-old-coffin-coloring-5e238990.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-071-chibi-chibi-holiday-halloween-mummy-popping-out-of-old-coffin-coloring-5e238990.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-071-chibi-chibi-holiday-halloween-mummy-popping-out-of-old-coffin-coloring-5e238990",
+      "sourceRelativePath": "images/chibi/chibi-holiday-halloween-mummy-popping-out-of-old-coffin-coloring-page.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-072-chibi-chibi-holiday-halloween-skeleton-playing-guitar-by-bonfire-color-38417b6f.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-072-chibi-chibi-holiday-halloween-skeleton-playing-guitar-by-bonfire-color-38417b6f.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-072-chibi-chibi-holiday-halloween-skeleton-playing-guitar-by-bonfire-color-38417b6f",
+      "sourceRelativePath": "images/chibi/chibi-holiday-halloween-skeleton-playing-guitar-by-bonfire-coloring-page.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-073-chibi-chibi-holiday-halloween-trick-or-treat-street-with-lit-lanterns--04c39dda.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-073-chibi-chibi-holiday-halloween-trick-or-treat-street-with-lit-lanterns--04c39dda.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-073-chibi-chibi-holiday-halloween-trick-or-treat-street-with-lit-lanterns--04c39dda",
+      "sourceRelativePath": "images/chibi/chibi-holiday-halloween-trick-or-treat-street-with-lit-lanterns-coloring-page.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-074-chibi-chibi-holiday-halloween-witch-flying-over-haunted-village-colori-65767d7e.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-074-chibi-chibi-holiday-halloween-witch-flying-over-haunted-village-colori-65767d7e.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-074-chibi-chibi-holiday-halloween-witch-flying-over-haunted-village-colori-65767d7e",
+      "sourceRelativePath": "images/chibi/chibi-holiday-halloween-witch-flying-over-haunted-village-coloring-page.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-075-chibi-chibi-holiday-halloween-zombie-climbing-out-of-swampy-water-colo-a142cea9.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-075-chibi-chibi-holiday-halloween-zombie-climbing-out-of-swampy-water-colo-a142cea9.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-075-chibi-chibi-holiday-halloween-zombie-climbing-out-of-swampy-water-colo-a142cea9",
+      "sourceRelativePath": "images/chibi/chibi-holiday-halloween-zombie-climbing-out-of-swampy-water-coloring-page.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-076-chibi-chibi-knucker-dragon-fff7c303.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-076-chibi-chibi-knucker-dragon-fff7c303.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-076-chibi-chibi-knucker-dragon-fff7c303",
+      "sourceRelativePath": "images/chibi/chibi-knucker-dragon.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-077-chibi-chibi-llama-e6f2c764.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-077-chibi-chibi-llama-e6f2c764.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-077-chibi-chibi-llama-e6f2c764",
+      "sourceRelativePath": "images/chibi/chibi-llama.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-078-chibi-chibi-midieval-fantasy-dragon-df3d197c.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-078-chibi-chibi-midieval-fantasy-dragon-df3d197c.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-078-chibi-chibi-midieval-fantasy-dragon-df3d197c",
+      "sourceRelativePath": "images/chibi/chibi-midieval-fantasy-dragon.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-079-chibi-chibi-mushroom-artists-conk-f87530a9.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-079-chibi-chibi-mushroom-artists-conk-f87530a9.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-079-chibi-chibi-mushroom-artists-conk-f87530a9",
+      "sourceRelativePath": "images/chibi/chibi-mushroom-artists-conk.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-080-chibi-chibi-mushroom-chanterelle-6d02745c.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-080-chibi-chibi-mushroom-chanterelle-6d02745c.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-080-chibi-chibi-mushroom-chanterelle-6d02745c",
+      "sourceRelativePath": "images/chibi/chibi-mushroom-chanterelle.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-081-chibi-chibi-plushie-cupcake-character-c93def33.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-081-chibi-chibi-plushie-cupcake-character-c93def33.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-081-chibi-chibi-plushie-cupcake-character-c93def33",
+      "sourceRelativePath": "images/chibi/chibi-plushie-cupcake-character.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-082-chibi-chibi-plushie-fox-8343be36.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-082-chibi-chibi-plushie-fox-8343be36.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-082-chibi-chibi-plushie-fox-8343be36",
+      "sourceRelativePath": "images/chibi/chibi-plushie-fox.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-083-chibi-chibi-plushie-manta-ray-c37ed166.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-083-chibi-chibi-plushie-manta-ray-c37ed166.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-083-chibi-chibi-plushie-manta-ray-c37ed166",
+      "sourceRelativePath": "images/chibi/chibi-plushie-manta-ray.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-084-chibi-chibi-plushie-popcorn-character-75162171.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-084-chibi-chibi-plushie-popcorn-character-75162171.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-084-chibi-chibi-plushie-popcorn-character-75162171",
+      "sourceRelativePath": "images/chibi/chibi-plushie-popcorn-character.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-085-chibi-chibi-plushie-tortoise-0cd53207.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-085-chibi-chibi-plushie-tortoise-0cd53207.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-085-chibi-chibi-plushie-tortoise-0cd53207",
+      "sourceRelativePath": "images/chibi/chibi-plushie-tortoise.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-086-chibi-chibi-porcupine-46504fc3.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-086-chibi-chibi-porcupine-46504fc3.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-086-chibi-chibi-porcupine-46504fc3",
+      "sourceRelativePath": "images/chibi/chibi-porcupine.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-087-chibi-chibi-professions-artist-a7e0e7fe.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-087-chibi-chibi-professions-artist-a7e0e7fe.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-087-chibi-chibi-professions-artist-a7e0e7fe",
+      "sourceRelativePath": "images/chibi/chibi-professions-artist.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "chibi",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-088-chibi-chibi-professions-veterinarian-f0725012.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-088-chibi-chibi-professions-veterinarian-f0725012.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-088-chibi-chibi-professions-veterinarian-f0725012",
+      "sourceRelativePath": "images/chibi/chibi-professions-veterinarian.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "fantasy",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-105-fantasy-fantasy-ancient-colossus-41455aa7.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-105-fantasy-fantasy-ancient-colossus-41455aa7.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-105-fantasy-fantasy-ancient-colossus-41455aa7",
+      "sourceRelativePath": "images/fantasy/fantasy-ancient-colossus.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "fantasy",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-106-fantasy-fantasy-ancient-wolf-spirit-b2b511cc.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-106-fantasy-fantasy-ancient-wolf-spirit-b2b511cc.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-106-fantasy-fantasy-ancient-wolf-spirit-b2b511cc",
+      "sourceRelativePath": "images/fantasy/fantasy-ancient-wolf-spirit.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "fantasy",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-107-fantasy-fantasy-ancient-wyvern-canyon-7d7027cd.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-107-fantasy-fantasy-ancient-wyvern-canyon-7d7027cd.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-107-fantasy-fantasy-ancient-wyvern-canyon-7d7027cd",
+      "sourceRelativePath": "images/fantasy/fantasy-ancient-wyvern-canyon.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "fantasy",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-108-fantasy-fantasy-barbarian-mountain-roar-dc04caa8.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-108-fantasy-fantasy-barbarian-mountain-roar-dc04caa8.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-108-fantasy-fantasy-barbarian-mountain-roar-dc04caa8",
+      "sourceRelativePath": "images/fantasy/fantasy-barbarian-mountain-roar.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "fantasy",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-109-fantasy-fantasy-centaur-hill-run-5e7404e2.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-109-fantasy-fantasy-centaur-hill-run-5e7404e2.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-109-fantasy-fantasy-centaur-hill-run-5e7404e2",
+      "sourceRelativePath": "images/fantasy/fantasy-centaur-hill-run.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "fantasy",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-110-fantasy-fantasy-creatures-griffin-soaring-ee3966d2.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-110-fantasy-fantasy-creatures-griffin-soaring-ee3966d2.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-110-fantasy-fantasy-creatures-griffin-soaring-ee3966d2",
+      "sourceRelativePath": "images/fantasy/fantasy-creatures-griffin-soaring.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "fantasy",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-111-fantasy-fantasy-creatures-necromancer-e4e7fba1.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-111-fantasy-fantasy-creatures-necromancer-e4e7fba1.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-111-fantasy-fantasy-creatures-necromancer-e4e7fba1",
+      "sourceRelativePath": "images/fantasy/fantasy-creatures-necromancer.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "fantasy",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-112-fantasy-fantasy-creatures-sprite-lantern-bc0a2bb7.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-112-fantasy-fantasy-creatures-sprite-lantern-bc0a2bb7.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-112-fantasy-fantasy-creatures-sprite-lantern-bc0a2bb7",
+      "sourceRelativePath": "images/fantasy/fantasy-creatures-sprite-lantern.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "fantasy",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-113-fantasy-fantasy-cursed-flaming-armor-1b2104b3.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-113-fantasy-fantasy-cursed-flaming-armor-1b2104b3.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-113-fantasy-fantasy-cursed-flaming-armor-1b2104b3",
+      "sourceRelativePath": "images/fantasy/fantasy-cursed-flaming-armor.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "fantasy",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-114-fantasy-fantasy-cute-earth-dragon-burrow-f69d502b.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-114-fantasy-fantasy-cute-earth-dragon-burrow-f69d502b.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-114-fantasy-fantasy-cute-earth-dragon-burrow-f69d502b",
+      "sourceRelativePath": "images/fantasy/fantasy-cute-earth-dragon-burrow.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "fantasy",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-115-fantasy-fantasy-dwarf-forge-working-hard-36917ca7.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-115-fantasy-fantasy-dwarf-forge-working-hard-36917ca7.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-115-fantasy-fantasy-dwarf-forge-working-hard-36917ca7",
+      "sourceRelativePath": "images/fantasy/fantasy-dwarf-forge-working-hard.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "fantasy",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-116-fantasy-fantasy-earth-golem-grove-89060eb8.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-116-fantasy-fantasy-earth-golem-grove-89060eb8.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-116-fantasy-fantasy-earth-golem-grove-89060eb8",
+      "sourceRelativePath": "images/fantasy/fantasy-earth-golem-grove.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "fantasy",
+      "flags": [
+        "heavy_ink_coverage",
+        "high_svg_complexity"
+      ],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review",
+        "conversion_issue_on_human_adjacent_image"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-117-fantasy-fantasy-earth-golem-72e65a93.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-117-fantasy-fantasy-earth-golem-72e65a93.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-117-fantasy-fantasy-earth-golem-72e65a93",
+      "sourceRelativePath": "images/fantasy/fantasy-earth-golem.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "fantasy",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-118-fantasy-fantasy-floating-runestones-2d86f5d4.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-118-fantasy-fantasy-floating-runestones-2d86f5d4.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-118-fantasy-fantasy-floating-runestones-2d86f5d4",
+      "sourceRelativePath": "images/fantasy/fantasy-floating-runestones.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "fantasy",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-119-fantasy-fantasy-forest-guardian-stag-1140d665.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-119-fantasy-fantasy-forest-guardian-stag-1140d665.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-119-fantasy-fantasy-forest-guardian-stag-1140d665",
+      "sourceRelativePath": "images/fantasy/fantasy-forest-guardian-stag.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "fantasy",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-120-fantasy-fantasy-lagoon-siren-d122862f.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-120-fantasy-fantasy-lagoon-siren-d122862f.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-120-fantasy-fantasy-lagoon-siren-d122862f",
+      "sourceRelativePath": "images/fantasy/fantasy-lagoon-siren.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "fantasy",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-121-fantasy-fantasy-majestic-ghost-serpent-972e0af6.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-121-fantasy-fantasy-majestic-ghost-serpent-972e0af6.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-121-fantasy-fantasy-majestic-ghost-serpent-972e0af6",
+      "sourceRelativePath": "images/fantasy/fantasy-majestic-ghost-serpent.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "fantasy",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-122-fantasy-fantasy-minotaur-maze-guardian-8f55c8c9.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-122-fantasy-fantasy-minotaur-maze-guardian-8f55c8c9.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-122-fantasy-fantasy-minotaur-maze-guardian-8f55c8c9",
+      "sourceRelativePath": "images/fantasy/fantasy-minotaur-maze-guardian.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "fantasy",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-123-fantasy-fantasy-moon-fairy-pond-5390403b.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-123-fantasy-fantasy-moon-fairy-pond-5390403b.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-123-fantasy-fantasy-moon-fairy-pond-5390403b",
+      "sourceRelativePath": "images/fantasy/fantasy-moon-fairy-pond.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "fantasy",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-124-fantasy-fantasy-nymph-moon-glade-49ee544d.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-124-fantasy-fantasy-nymph-moon-glade-49ee544d.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-124-fantasy-fantasy-nymph-moon-glade-49ee544d",
+      "sourceRelativePath": "images/fantasy/fantasy-nymph-moon-glade.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "fantasy",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-125-fantasy-fantasy-phoenix-nest-00494921.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-125-fantasy-fantasy-phoenix-nest-00494921.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-125-fantasy-fantasy-phoenix-nest-00494921",
+      "sourceRelativePath": "images/fantasy/fantasy-phoenix-nest.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "fantasy",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-126-fantasy-fantasy-sky-dragon-temple-25b19e4f.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-126-fantasy-fantasy-sky-dragon-temple-25b19e4f.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-126-fantasy-fantasy-sky-dragon-temple-25b19e4f",
+      "sourceRelativePath": "images/fantasy/fantasy-sky-dragon-temple.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "fantasy",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-127-fantasy-fantasy-sorceress-fire-circle-c5b82423.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-127-fantasy-fantasy-sorceress-fire-circle-c5b82423.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-127-fantasy-fantasy-sorceress-fire-circle-c5b82423",
+      "sourceRelativePath": "images/fantasy/fantasy-sorceress-fire-circle.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "fantasy",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-128-fantasy-fantasy-spirit-shrine-ffbe49b0.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-128-fantasy-fantasy-spirit-shrine-ffbe49b0.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-128-fantasy-fantasy-spirit-shrine-ffbe49b0",
+      "sourceRelativePath": "images/fantasy/fantasy-spirit-shrine.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "fantasy",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-129-fantasy-fantasy-storm-dragon-696c0572.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-129-fantasy-fantasy-storm-dragon-696c0572.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-129-fantasy-fantasy-storm-dragon-696c0572",
+      "sourceRelativePath": "images/fantasy/fantasy-storm-dragon.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "fantasy",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-130-fantasy-fantasy-storm-kirin-aa0d9a7e.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-130-fantasy-fantasy-storm-kirin-aa0d9a7e.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-130-fantasy-fantasy-storm-kirin-aa0d9a7e",
+      "sourceRelativePath": "images/fantasy/fantasy-storm-kirin.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "fantasy",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-131-fantasy-fantasy-wizard-magic-lab-0931639c.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-131-fantasy-fantasy-wizard-magic-lab-0931639c.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-131-fantasy-fantasy-wizard-magic-lab-0931639c",
+      "sourceRelativePath": "images/fantasy/fantasy-wizard-magic-lab.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "fantasy",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-132-fantasy-fantasy-zombie-graveyard-a0a3c731.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-132-fantasy-fantasy-zombie-graveyard-a0a3c731.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-132-fantasy-fantasy-zombie-graveyard-a0a3c731",
+      "sourceRelativePath": "images/fantasy/fantasy-zombie-graveyard.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "gardening",
+      "flags": [
+        "high_svg_complexity"
+      ],
+      "humanReviewFlags": [],
+      "likelyHumanAdjacent": false,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-142-gardening-gardening-mushroom-truffle-white-04aae25a.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-142-gardening-gardening-mushroom-truffle-white-04aae25a.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_conversion_review",
+      "sampleId": "r2-142-gardening-gardening-mushroom-truffle-white-04aae25a",
+      "sourceRelativePath": "images/gardening/gardening-mushroom-truffle-white.png",
+      "uncertainty": "Automated scoring is heuristic and should be sampled manually."
+    },
+    {
+      "category": "horror",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-158-horror-sasquatch-83544cfb.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-158-horror-sasquatch-83544cfb.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-158-horror-sasquatch-83544cfb",
+      "sourceRelativePath": "images/horror/sasquatch.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "mandala",
+      "flags": [
+        "heavy_ink_coverage"
+      ],
+      "humanReviewFlags": [],
+      "likelyHumanAdjacent": false,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-188-mandala-mandala-geometry-patterns-floral-mandala-2aebcf0f.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-188-mandala-mandala-geometry-patterns-floral-mandala-2aebcf0f.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_conversion_review",
+      "sampleId": "r2-188-mandala-mandala-geometry-patterns-floral-mandala-2aebcf0f",
+      "sourceRelativePath": "images/mandala/mandala-geometry-patterns-floral-mandala.png",
+      "uncertainty": "Automated scoring is heuristic and should be sampled manually."
+    },
+    {
+      "category": "midieval",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-189-midieval-midieval-fantasy-alchemist-lab-124f421e.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-189-midieval-midieval-fantasy-alchemist-lab-124f421e.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-189-midieval-midieval-fantasy-alchemist-lab-124f421e",
+      "sourceRelativePath": "images/midieval/midieval-fantasy-alchemist-lab.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "midieval",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-190-midieval-midieval-fantasy-ancient-grimoire-6cda10e7.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-190-midieval-midieval-fantasy-ancient-grimoire-6cda10e7.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-190-midieval-midieval-fantasy-ancient-grimoire-6cda10e7",
+      "sourceRelativePath": "images/midieval/midieval-fantasy-ancient-grimoire.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "midieval",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-191-midieval-midieval-fantasy-ancient-ruins-2417791b.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-191-midieval-midieval-fantasy-ancient-ruins-2417791b.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-191-midieval-midieval-fantasy-ancient-ruins-2417791b",
+      "sourceRelativePath": "images/midieval/midieval-fantasy-ancient-ruins.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "midieval",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-192-midieval-midieval-fantasy-bandit-camp-ff14611c.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-192-midieval-midieval-fantasy-bandit-camp-ff14611c.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-192-midieval-midieval-fantasy-bandit-camp-ff14611c",
+      "sourceRelativePath": "images/midieval/midieval-fantasy-bandit-camp.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "midieval",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-193-midieval-midieval-fantasy-battlefield-ruins-a95fb2b3.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-193-midieval-midieval-fantasy-battlefield-ruins-a95fb2b3.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-193-midieval-midieval-fantasy-battlefield-ruins-a95fb2b3",
+      "sourceRelativePath": "images/midieval/midieval-fantasy-battlefield-ruins.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "midieval",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-194-midieval-midieval-fantasy-black-dragon-citadel-dd803bdf.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-194-midieval-midieval-fantasy-black-dragon-citadel-dd803bdf.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-194-midieval-midieval-fantasy-black-dragon-citadel-dd803bdf",
+      "sourceRelativePath": "images/midieval/midieval-fantasy-black-dragon-citadel.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "midieval",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-195-midieval-midieval-fantasy-castle-gatehouse-363609e7.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-195-midieval-midieval-fantasy-castle-gatehouse-363609e7.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-195-midieval-midieval-fantasy-castle-gatehouse-363609e7",
+      "sourceRelativePath": "images/midieval/midieval-fantasy-castle-gatehouse.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "midieval",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-196-midieval-midieval-fantasy-djinn-genie-01787b82.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-196-midieval-midieval-fantasy-djinn-genie-01787b82.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-196-midieval-midieval-fantasy-djinn-genie-01787b82",
+      "sourceRelativePath": "images/midieval/midieval-fantasy-djinn-genie.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "midieval",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-197-midieval-midieval-fantasy-dragon-forged-blade-7a7bb4d2.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-197-midieval-midieval-fantasy-dragon-forged-blade-7a7bb4d2.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-197-midieval-midieval-fantasy-dragon-forged-blade-7a7bb4d2",
+      "sourceRelativePath": "images/midieval/midieval-fantasy-dragon-forged-blade.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "midieval",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-198-midieval-midieval-fantasy-dungeon-door-8e58cb0b.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-198-midieval-midieval-fantasy-dungeon-door-8e58cb0b.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-198-midieval-midieval-fantasy-dungeon-door-8e58cb0b",
+      "sourceRelativePath": "images/midieval/midieval-fantasy-dungeon-door.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "midieval",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-199-midieval-midieval-fantasy-fairy-glen-b954b4dd.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-199-midieval-midieval-fantasy-fairy-glen-b954b4dd.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-199-midieval-midieval-fantasy-fairy-glen-b954b4dd",
+      "sourceRelativePath": "images/midieval/midieval-fantasy-fairy-glen.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "midieval",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-200-midieval-midieval-fantasy-healing-potion-48c6e36d.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-200-midieval-midieval-fantasy-healing-potion-48c6e36d.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-200-midieval-midieval-fantasy-healing-potion-48c6e36d",
+      "sourceRelativePath": "images/midieval/midieval-fantasy-healing-potion.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "midieval",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-201-midieval-midieval-fantasy-lich-9d0fbed0.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-201-midieval-midieval-fantasy-lich-9d0fbed0.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-201-midieval-midieval-fantasy-lich-9d0fbed0",
+      "sourceRelativePath": "images/midieval/midieval-fantasy-lich.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "midieval",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-202-midieval-midieval-fantasy-magical-forest-61a61419.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-202-midieval-midieval-fantasy-magical-forest-61a61419.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-202-midieval-midieval-fantasy-magical-forest-61a61419",
+      "sourceRelativePath": "images/midieval/midieval-fantasy-magical-forest.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "midieval",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-203-midieval-midieval-fantasy-mystic-orb-cd086232.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-203-midieval-midieval-fantasy-mystic-orb-cd086232.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-203-midieval-midieval-fantasy-mystic-orb-cd086232",
+      "sourceRelativePath": "images/midieval/midieval-fantasy-mystic-orb.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "midieval",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-204-midieval-midieval-fantasy-witch-ec463ad3.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-204-midieval-midieval-fantasy-witch-ec463ad3.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-204-midieval-midieval-fantasy-witch-ec463ad3",
+      "sourceRelativePath": "images/midieval/midieval-fantasy-witch.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "mythology",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-205-mythology-fantasy-mythology-dragons-bone-dragon-d3a551d8.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-205-mythology-fantasy-mythology-dragons-bone-dragon-d3a551d8.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-205-mythology-fantasy-mythology-dragons-bone-dragon-d3a551d8",
+      "sourceRelativePath": "images/mythology/fantasy-mythology-dragons-bone-dragon.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "mythology",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-206-mythology-fantasy-mythology-dragons-volcano-dragon-91fdc20f.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-206-mythology-fantasy-mythology-dragons-volcano-dragon-91fdc20f.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-206-mythology-fantasy-mythology-dragons-volcano-dragon-91fdc20f",
+      "sourceRelativePath": "images/mythology/fantasy-mythology-dragons-volcano-dragon.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "mythology",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-207-mythology-mythology-agni-63fccb7c.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-207-mythology-mythology-agni-63fccb7c.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-207-mythology-mythology-agni-63fccb7c",
+      "sourceRelativePath": "images/mythology/mythology-agni.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "mythology",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-208-mythology-mythology-ammit-279cd0b2.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-208-mythology-mythology-ammit-279cd0b2.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-208-mythology-mythology-ammit-279cd0b2",
+      "sourceRelativePath": "images/mythology/mythology-ammit.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "mythology",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-209-mythology-mythology-benu-ee8d27df.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-209-mythology-mythology-benu-ee8d27df.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-209-mythology-mythology-benu-ee8d27df",
+      "sourceRelativePath": "images/mythology/mythology-benu.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "mythology",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-210-mythology-mythology-dionysus-bacchus-50e770ed.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-210-mythology-mythology-dionysus-bacchus-50e770ed.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-210-mythology-mythology-dionysus-bacchus-50e770ed",
+      "sourceRelativePath": "images/mythology/mythology-dionysus-bacchus.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "mythology",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-211-mythology-mythology-dullahan-01c942bb.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-211-mythology-mythology-dullahan-01c942bb.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-211-mythology-mythology-dullahan-01c942bb",
+      "sourceRelativePath": "images/mythology/mythology-dullahan.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "mythology",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-212-mythology-mythology-eir-76abaf12.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-212-mythology-mythology-eir-76abaf12.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-212-mythology-mythology-eir-76abaf12",
+      "sourceRelativePath": "images/mythology/mythology-eir.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "mythology",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-213-mythology-mythology-fairy-9e559d8a.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-213-mythology-mythology-fairy-9e559d8a.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-213-mythology-mythology-fairy-9e559d8a",
+      "sourceRelativePath": "images/mythology/mythology-fairy.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "mythology",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-214-mythology-mythology-ganesha-b196bbf6.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-214-mythology-mythology-ganesha-b196bbf6.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-214-mythology-mythology-ganesha-b196bbf6",
+      "sourceRelativePath": "images/mythology/mythology-ganesha.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "mythology",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-215-mythology-mythology-kanaloa-1b4fbcd5.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-215-mythology-mythology-kanaloa-1b4fbcd5.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-215-mythology-mythology-kanaloa-1b4fbcd5",
+      "sourceRelativePath": "images/mythology/mythology-kanaloa.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "mythology",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-216-mythology-mythology-lugh-c2862c3f.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-216-mythology-mythology-lugh-c2862c3f.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-216-mythology-mythology-lugh-c2862c3f",
+      "sourceRelativePath": "images/mythology/mythology-lugh.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "mythology",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-217-mythology-mythology-morpheus-8910d885.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-217-mythology-mythology-morpheus-8910d885.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-217-mythology-mythology-morpheus-8910d885",
+      "sourceRelativePath": "images/mythology/mythology-morpheus.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "mythology",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-218-mythology-mythology-nidhogg-33f9ba21.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-218-mythology-mythology-nidhogg-33f9ba21.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-218-mythology-mythology-nidhogg-33f9ba21",
+      "sourceRelativePath": "images/mythology/mythology-nidhogg.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "mythology",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-219-mythology-mythology-oedipus-e0f68f65.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-219-mythology-mythology-oedipus-e0f68f65.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-219-mythology-mythology-oedipus-e0f68f65",
+      "sourceRelativePath": "images/mythology/mythology-oedipus.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "mythology",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-220-mythology-mythology-selkie-41c9a53d.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-220-mythology-mythology-selkie-41c9a53d.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-220-mythology-mythology-selkie-41c9a53d",
+      "sourceRelativePath": "images/mythology/mythology-selkie.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "mythology",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-221-mythology-mythology-shiva-ff464366.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-221-mythology-mythology-shiva-ff464366.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-221-mythology-mythology-shiva-ff464366",
+      "sourceRelativePath": "images/mythology/mythology-shiva.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "mythology",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-222-mythology-mythology-the-morrigan-0df1b5ff.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-222-mythology-mythology-the-morrigan-0df1b5ff.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-222-mythology-mythology-the-morrigan-0df1b5ff",
+      "sourceRelativePath": "images/mythology/mythology-the-morrigan.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    },
+    {
+      "category": "mythology",
+      "flags": [],
+      "humanReviewFlags": [
+        "requires_manual_anatomy_review"
+      ],
+      "likelyHumanAdjacent": true,
+      "outputPreviewPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-223-mythology-mythology-wadjet-6cc75f0f.png",
+      "outputSvgPath": "pipeline/bakeoffs/round-2/stage-b/line-thick/r2-223-mythology-mythology-wadjet-6cc75f0f.svg",
+      "presetId": "line-thick",
+      "recommendedAction": "manual_anatomy_review",
+      "sampleId": "r2-223-mythology-mythology-wadjet-6cc75f0f",
+      "sourceRelativePath": "images/mythology/mythology-wadjet.png",
+      "uncertainty": "Anatomy cannot be verified automatically. Manual review is required."
+    }
+  ],
+  "policyPresetId": "line-thick"
+}

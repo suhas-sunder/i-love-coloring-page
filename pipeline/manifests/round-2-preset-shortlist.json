@@ -1,0 +1,450 @@
+{
+  "actualShortlistSize": 12,
+  "generatedAt": "2026-05-09",
+  "presets": [
+    {
+      "commandOrFunctionNeededToInvoke": "Imported through extendTracePresets(PRESETS, { includeStrokePresets: true }) or extendTracePresets(PRESETS).",
+      "notes": [
+        "Line-art-like preset, likely useful for coloring-page bakeoffs."
+      ],
+      "presetFamily": "lineart",
+      "presetId": "line-clean",
+      "presetName": "Lineart - Clean",
+      "relevantParameters": {
+        "bgColor": "#ffffff",
+        "blurSigma": 0.8,
+        "centerlineMaxTraceSide": 900,
+        "centerlineMinPathLength": 5,
+        "centerlineSimplifyTolerance": 1.1,
+        "centerlineStrokeWidth": 2,
+        "edgeBoost": 1,
+        "invert": false,
+        "lineColor": "#000000",
+        "maxTraceSide": 1200,
+        "optTolerance": 0.34,
+        "preprocess": "none",
+        "strokeOutputMode": "filled",
+        "threshold": 224,
+        "traceMode": "single",
+        "transparent": true,
+        "turdSize": 3,
+        "turnPolicy": "majority"
+      },
+      "shortlistRank": 1,
+      "shortlistReason": "Primary line-art baseline with balanced threshold and moderate cleanup.",
+      "whereDefined": {
+        "arrayName": "TRACE_PRESET_ADDITIONS",
+        "file": "ilovesvg/app/client/lib/converter/presetAdditions.ts",
+        "line": 19
+      }
+    },
+    {
+      "commandOrFunctionNeededToInvoke": "Imported through extendTracePresets(PRESETS, { includeStrokePresets: true }) or extendTracePresets(PRESETS).",
+      "notes": [
+        "Line-art-like preset, likely useful for coloring-page bakeoffs."
+      ],
+      "presetFamily": "lineart",
+      "presetId": "line-smooth",
+      "presetName": "Lineart - Smooth",
+      "relevantParameters": {
+        "bgColor": "#ffffff",
+        "blurSigma": 0.8,
+        "centerlineMaxTraceSide": 900,
+        "centerlineMinPathLength": 5,
+        "centerlineSimplifyTolerance": 1.1,
+        "centerlineStrokeWidth": 2,
+        "edgeBoost": 1,
+        "invert": false,
+        "lineColor": "#000000",
+        "maxTraceSide": 1200,
+        "optTolerance": 0.52,
+        "preprocess": "none",
+        "strokeOutputMode": "filled",
+        "threshold": 218,
+        "traceMode": "single",
+        "transparent": true,
+        "turdSize": 4,
+        "turnPolicy": "majority"
+      },
+      "shortlistRank": 2,
+      "shortlistReason": "Smoother line-art candidate for polished printable outlines.",
+      "whereDefined": {
+        "arrayName": "TRACE_PRESET_ADDITIONS",
+        "file": "ilovesvg/app/client/lib/converter/presetAdditions.ts",
+        "line": 35
+      }
+    },
+    {
+      "commandOrFunctionNeededToInvoke": "Imported through extendTracePresets(PRESETS, { includeStrokePresets: true }) or extendTracePresets(PRESETS).",
+      "notes": [
+        "Line-art-like preset, likely useful for coloring-page bakeoffs."
+      ],
+      "presetFamily": "lineart",
+      "presetId": "line-sharp",
+      "presetName": "Lineart - Sharp",
+      "relevantParameters": {
+        "bgColor": "#ffffff",
+        "blurSigma": 0.8,
+        "centerlineMaxTraceSide": 900,
+        "centerlineMinPathLength": 5,
+        "centerlineSimplifyTolerance": 1.1,
+        "centerlineStrokeWidth": 2,
+        "edgeBoost": 1,
+        "invert": false,
+        "lineColor": "#000000",
+        "maxTraceSide": 1200,
+        "optTolerance": 0.2,
+        "preprocess": "none",
+        "strokeOutputMode": "filled",
+        "threshold": 230,
+        "traceMode": "single",
+        "transparent": true,
+        "turdSize": 1,
+        "turnPolicy": "minority"
+      },
+      "shortlistRank": 3,
+      "shortlistReason": "Sharper line-art candidate for thin or detailed work.",
+      "whereDefined": {
+        "arrayName": "TRACE_PRESET_ADDITIONS",
+        "file": "ilovesvg/app/client/lib/converter/presetAdditions.ts",
+        "line": 49
+      }
+    },
+    {
+      "commandOrFunctionNeededToInvoke": "Imported through extendTracePresets(PRESETS, { includeStrokePresets: true }) or extendTracePresets(PRESETS).",
+      "notes": [
+        "Line-art-like preset, likely useful for coloring-page bakeoffs."
+      ],
+      "presetFamily": "lineart",
+      "presetId": "line-thin",
+      "presetName": "Lineart - Thin",
+      "relevantParameters": {
+        "bgColor": "#ffffff",
+        "blurSigma": 0.8,
+        "centerlineMaxTraceSide": 900,
+        "centerlineMinPathLength": 5,
+        "centerlineSimplifyTolerance": 1.1,
+        "centerlineStrokeWidth": 2,
+        "edgeBoost": 1,
+        "invert": false,
+        "lineColor": "#000000",
+        "maxTraceSide": 1200,
+        "optTolerance": 0.24,
+        "preprocess": "none",
+        "strokeOutputMode": "filled",
+        "threshold": 240,
+        "traceMode": "single",
+        "transparent": true,
+        "turdSize": 1,
+        "turnPolicy": "minority"
+      },
+      "shortlistRank": 4,
+      "shortlistReason": "Thin-line preservation candidate for delicate source art.",
+      "whereDefined": {
+        "arrayName": "TRACE_PRESET_ADDITIONS",
+        "file": "ilovesvg/app/client/lib/converter/presetAdditions.ts",
+        "line": 63
+      }
+    },
+    {
+      "commandOrFunctionNeededToInvoke": "Imported through extendTracePresets(PRESETS, { includeStrokePresets: true }) or extendTracePresets(PRESETS).",
+      "notes": [
+        "Line-art-like preset, likely useful for coloring-page bakeoffs."
+      ],
+      "presetFamily": "lineart",
+      "presetId": "line-thick",
+      "presetName": "Lineart - Thick",
+      "relevantParameters": {
+        "bgColor": "#ffffff",
+        "blurSigma": 0.8,
+        "centerlineMaxTraceSide": 900,
+        "centerlineMinPathLength": 5,
+        "centerlineSimplifyTolerance": 1.1,
+        "centerlineStrokeWidth": 2,
+        "edgeBoost": 1,
+        "invert": false,
+        "lineColor": "#000000",
+        "maxTraceSide": 1200,
+        "optTolerance": 0.44,
+        "preprocess": "none",
+        "strokeOutputMode": "filled",
+        "threshold": 206,
+        "traceMode": "single",
+        "transparent": true,
+        "turdSize": 4,
+        "turnPolicy": "black"
+      },
+      "shortlistRank": 5,
+      "shortlistReason": "Thicker-line candidate for bold output and weak source outlines.",
+      "whereDefined": {
+        "arrayName": "TRACE_PRESET_ADDITIONS",
+        "file": "ilovesvg/app/client/lib/converter/presetAdditions.ts",
+        "line": 77
+      }
+    },
+    {
+      "commandOrFunctionNeededToInvoke": "Imported through extendTracePresets(PRESETS, { includeStrokePresets: true }) or extendTracePresets(PRESETS).",
+      "notes": [
+        "Line-art-like preset, likely useful for coloring-page bakeoffs."
+      ],
+      "presetFamily": "lineart",
+      "presetId": "line-low-noise",
+      "presetName": "Lineart - Low Noise",
+      "relevantParameters": {
+        "bgColor": "#ffffff",
+        "blurSigma": 0.8,
+        "centerlineMaxTraceSide": 900,
+        "centerlineMinPathLength": 5,
+        "centerlineSimplifyTolerance": 1.1,
+        "centerlineStrokeWidth": 2,
+        "edgeBoost": 1,
+        "invert": false,
+        "lineColor": "#000000",
+        "maxTraceSide": 1200,
+        "minIslandPx": 8,
+        "optTolerance": 0.45,
+        "preprocess": "none",
+        "strokeOutputMode": "filled",
+        "threshold": 222,
+        "traceMode": "single",
+        "transparent": true,
+        "turdSize": 6,
+        "turnPolicy": "majority"
+      },
+      "shortlistRank": 6,
+      "shortlistReason": "Noise-reduction line-art candidate for speckles and small islands.",
+      "whereDefined": {
+        "arrayName": "TRACE_PRESET_ADDITIONS",
+        "file": "ilovesvg/app/client/lib/converter/presetAdditions.ts",
+        "line": 106
+      }
+    },
+    {
+      "commandOrFunctionNeededToInvoke": "Imported through extendTracePresets(PRESETS, { includeStrokePresets: true }) or extendTracePresets(PRESETS).",
+      "notes": [
+        "Line-art-like preset, likely useful for coloring-page bakeoffs."
+      ],
+      "presetFamily": "drawing",
+      "presetId": "drawing-ink",
+      "presetName": "Drawing - Ink",
+      "relevantParameters": {
+        "bgColor": "#ffffff",
+        "blurSigma": 0.8,
+        "centerlineMaxTraceSide": 900,
+        "centerlineMinPathLength": 5,
+        "centerlineSimplifyTolerance": 1.1,
+        "centerlineStrokeWidth": 2,
+        "edgeBoost": 1,
+        "invert": false,
+        "lineColor": "#000000",
+        "maxTraceSide": 1200,
+        "optTolerance": 0.34,
+        "preprocess": "none",
+        "strokeOutputMode": "filled",
+        "threshold": 214,
+        "traceMode": "single",
+        "transparent": true,
+        "turdSize": 3,
+        "turnPolicy": "black"
+      },
+      "shortlistRank": 7,
+      "shortlistReason": "Drawing preset tuned for ink-like coloring page sources.",
+      "whereDefined": {
+        "arrayName": "TRACE_PRESET_ADDITIONS",
+        "file": "ilovesvg/app/client/lib/converter/presetAdditions.ts",
+        "line": 152
+      }
+    },
+    {
+      "commandOrFunctionNeededToInvoke": "Imported through extendTracePresets(PRESETS, { includeStrokePresets: true }) or extendTracePresets(PRESETS).",
+      "notes": [
+        "Line-art-like preset, likely useful for coloring-page bakeoffs."
+      ],
+      "presetFamily": "drawing",
+      "presetId": "drawing-smooth-ink",
+      "presetName": "Drawing - Smooth Ink",
+      "relevantParameters": {
+        "bgColor": "#ffffff",
+        "blurSigma": 0.8,
+        "centerlineMaxTraceSide": 900,
+        "centerlineMinPathLength": 5,
+        "centerlineSimplifyTolerance": 1.1,
+        "centerlineStrokeWidth": 2,
+        "edgeBoost": 1,
+        "invert": false,
+        "lineColor": "#000000",
+        "maxTraceSide": 1200,
+        "optTolerance": 0.55,
+        "preprocess": "none",
+        "strokeOutputMode": "filled",
+        "threshold": 212,
+        "traceMode": "single",
+        "transparent": true,
+        "turdSize": 4,
+        "turnPolicy": "majority"
+      },
+      "shortlistRank": 8,
+      "shortlistReason": "Smooth drawing preset for cleaner professional-looking curves.",
+      "whereDefined": {
+        "arrayName": "TRACE_PRESET_ADDITIONS",
+        "file": "ilovesvg/app/client/lib/converter/presetAdditions.ts",
+        "line": 166
+      }
+    },
+    {
+      "commandOrFunctionNeededToInvoke": "Imported through extendTracePresets(PRESETS, { includeStrokePresets: true }) or extendTracePresets(PRESETS).",
+      "notes": [
+        "Centerline or stroke preset, useful to test against clean line art.",
+        "Line-art-like preset, likely useful for coloring-page bakeoffs."
+      ],
+      "presetFamily": "drawing",
+      "presetId": "drawing-bold-strokes",
+      "presetName": "Drawing - Bold Strokes",
+      "relevantParameters": {
+        "bgColor": "#ffffff",
+        "blurSigma": 0.8,
+        "centerlineMaxTraceSide": 900,
+        "centerlineMinPathLength": 5,
+        "centerlineSimplifyTolerance": 1.1,
+        "centerlineStrokeWidth": 2,
+        "edgeBoost": 1,
+        "invert": false,
+        "lineColor": "#000000",
+        "maxTraceSide": 1200,
+        "optTolerance": 0.42,
+        "preprocess": "none",
+        "strokeOutputMode": "filled",
+        "threshold": 204,
+        "traceMode": "single",
+        "transparent": true,
+        "turdSize": 4,
+        "turnPolicy": "black"
+      },
+      "shortlistRank": 9,
+      "shortlistReason": "Bold drawing preset for heavier outlines and subject readability.",
+      "whereDefined": {
+        "arrayName": "TRACE_PRESET_ADDITIONS",
+        "file": "ilovesvg/app/client/lib/converter/presetAdditions.ts",
+        "line": 195
+      }
+    },
+    {
+      "commandOrFunctionNeededToInvoke": "Imported through extendTracePresets(PRESETS, { includeStrokePresets: true }) or extendTracePresets(PRESETS).",
+      "notes": [
+        "Line-art-like preset, likely useful for coloring-page bakeoffs."
+      ],
+      "presetFamily": "sketch",
+      "presetId": "sketch-clean-lines",
+      "presetName": "Sketch - Clean Lines",
+      "relevantParameters": {
+        "bgColor": "#ffffff",
+        "blurSigma": 0.9,
+        "centerlineMaxTraceSide": 900,
+        "centerlineMinPathLength": 5,
+        "centerlineSimplifyTolerance": 1.1,
+        "centerlineStrokeWidth": 2,
+        "edgeBoost": 1.15,
+        "invert": false,
+        "lineColor": "#000000",
+        "maxTraceSide": 1200,
+        "minIslandPx": 6,
+        "optTolerance": 0.4,
+        "preprocess": "edge",
+        "strokeOutputMode": "filled",
+        "threshold": 226,
+        "traceMode": "single",
+        "transparent": true,
+        "turdSize": 4,
+        "turnPolicy": "majority"
+      },
+      "shortlistRank": 10,
+      "shortlistReason": "Sketch cleanup preset for edge-assisted line recovery.",
+      "whereDefined": {
+        "arrayName": "TRACE_PRESET_ADDITIONS",
+        "file": "ilovesvg/app/client/lib/converter/presetAdditions.ts",
+        "line": 276
+      }
+    },
+    {
+      "commandOrFunctionNeededToInvoke": "Imported through extendTracePresets(PRESETS, { includeStrokePresets: true }) or extendTracePresets(PRESETS).",
+      "notes": [
+        "Line-art-like preset, likely useful for coloring-page bakeoffs."
+      ],
+      "presetFamily": "scan",
+      "presetId": "scan-ink-cleanup",
+      "presetName": "Scan - Ink Cleanup",
+      "relevantParameters": {
+        "bgColor": "#ffffff",
+        "blurSigma": 0.8,
+        "centerlineMaxTraceSide": 900,
+        "centerlineMinPathLength": 5,
+        "centerlineSimplifyTolerance": 1.1,
+        "centerlineStrokeWidth": 2,
+        "edgeBoost": 1,
+        "invert": false,
+        "lineColor": "#000000",
+        "maxTraceSide": 1200,
+        "minIslandPx": 6,
+        "optTolerance": 0.35,
+        "preprocess": "none",
+        "strokeOutputMode": "filled",
+        "threshold": 224,
+        "traceMode": "single",
+        "transparent": true,
+        "turdSize": 5,
+        "turnPolicy": "majority"
+      },
+      "shortlistRank": 11,
+      "shortlistReason": "Scan cleanup preset for removing small artifacts.",
+      "whereDefined": {
+        "arrayName": "TRACE_PRESET_ADDITIONS",
+        "file": "ilovesvg/app/client/lib/converter/presetAdditions.ts",
+        "line": 494
+      }
+    },
+    {
+      "commandOrFunctionNeededToInvoke": "Imported through extendTracePresets(PRESETS, { includeStrokePresets: true }) or extendTracePresets(PRESETS).",
+      "notes": [
+        "Line-art-like preset, likely useful for coloring-page bakeoffs."
+      ],
+      "presetFamily": "scan",
+      "presetId": "scan-fine-marks",
+      "presetName": "Scan - Fine Marks",
+      "relevantParameters": {
+        "bgColor": "#ffffff",
+        "blurSigma": 0.8,
+        "centerlineMaxTraceSide": 900,
+        "centerlineMinPathLength": 5,
+        "centerlineSimplifyTolerance": 1.1,
+        "centerlineStrokeWidth": 2,
+        "edgeBoost": 1,
+        "invert": false,
+        "lineColor": "#000000",
+        "maxTraceSide": 1200,
+        "optTolerance": 0.22,
+        "preprocess": "none",
+        "strokeOutputMode": "filled",
+        "threshold": 236,
+        "traceMode": "single",
+        "transparent": true,
+        "turdSize": 1,
+        "turnPolicy": "minority"
+      },
+      "shortlistRank": 12,
+      "shortlistReason": "Scan preset that preserves fine marks and internal detail.",
+      "whereDefined": {
+        "arrayName": "TRACE_PRESET_ADDITIONS",
+        "file": "ilovesvg/app/client/lib/converter/presetAdditions.ts",
+        "line": 509
+      }
+    }
+  ],
+  "selectionRules": [
+    "Avoid brute-forcing all likely candidates.",
+    "Prefer shared line-art, drawing, scan, sketch, and centerline presets.",
+    "Exclude layered color presets from this coloring-page bakeoff shortlist.",
+    "Keep the shortlist modest enough for Stage A calibration."
+  ],
+  "sourceManifest": "pipeline/manifests/conversion-preset-inventory.json",
+  "targetShortlistSize": 12
+}
