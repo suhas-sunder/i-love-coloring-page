@@ -1,0 +1,4928 @@
+{
+  "generatedAt": "2026-05-09",
+  "requestedTargetSize": 250,
+  "actualSampleSize": 250,
+  "strategy": "Stratified by category, with higher allocation for likely human-adjacent categories and deterministic path-hash selection.",
+  "candidates": [
+    {
+      "sourceRelativePath": "images/Animals playing cards/animals-cows-wildlife.png",
+      "category": "Animals playing cards",
+      "nestedCategory": null,
+      "filename": "animals-cows-wildlife.png",
+      "fileSizeBytes": 1722559,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 1,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/Animals playing cards/animals-jaguars.png",
+      "category": "Animals playing cards",
+      "nestedCategory": null,
+      "filename": "animals-jaguars.png",
+      "fileSizeBytes": 1390052,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 2,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/Animals playing cards/animals-moose.png",
+      "category": "Animals playing cards",
+      "nestedCategory": null,
+      "filename": "animals-moose.png",
+      "fileSizeBytes": 1592690,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 3,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/Animals playing cards/animals-possums.png",
+      "category": "Animals playing cards",
+      "nestedCategory": null,
+      "filename": "animals-possums.png",
+      "fileSizeBytes": 1205695,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 4,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/animals/animals-hyenas.png",
+      "category": "animals",
+      "nestedCategory": null,
+      "filename": "animals-hyenas.png",
+      "fileSizeBytes": 1998291,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 5,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/animals/animals-mouse.png",
+      "category": "animals",
+      "nestedCategory": null,
+      "filename": "animals-mouse.png",
+      "fileSizeBytes": 2017985,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 6,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/animals/animals-rabbits.png",
+      "category": "animals",
+      "nestedCategory": null,
+      "filename": "animals-rabbits.png",
+      "fileSizeBytes": 1958200,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 7,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/animals/animals-squirrels.png",
+      "category": "animals",
+      "nestedCategory": null,
+      "filename": "animals-squirrels.png",
+      "fileSizeBytes": 1832300,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 8,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/animals/animals-zebras.png",
+      "category": "animals",
+      "nestedCategory": null,
+      "filename": "animals-zebras.png",
+      "fileSizeBytes": 1276842,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 9,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-asgard-invasion.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-asgard-invasion.png",
+      "fileSizeBytes": 1783044,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 10,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-baboon-hoodie-animal-plushie.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-baboon-hoodie-animal-plushie.png",
+      "fileSizeBytes": 1794707,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 11,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-bear-hoodie-plushie-nature.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-bear-hoodie-plushie-nature.png",
+      "fileSizeBytes": 1568483,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 12,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-brazilian-jiu-jitsu.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-brazilian-jiu-jitsu.png",
+      "fileSizeBytes": 2416773,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 13,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-elephant-hoodie-plushie.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-elephant-hoodie-plushie.png",
+      "fileSizeBytes": 1654584,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 14,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-forward-bending-yoga-pose.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-forward-bending-yoga-pose.png",
+      "fileSizeBytes": 2634982,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 15,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-furisode-japanese-dress.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-furisode-japanese-dress.png",
+      "fileSizeBytes": 1759120,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 16,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-hedgehog-hoodie-plushie-cosplay.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-hedgehog-hoodie-plushie-cosplay.png",
+      "fileSizeBytes": 1466939,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 17,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-hiking-forest.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-hiking-forest.png",
+      "fileSizeBytes": 1839451,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 18,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-iron-tail.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-iron-tail.png",
+      "fileSizeBytes": 1477194,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 19,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-kangaroo-hoodie-plushie.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-kangaroo-hoodie-plushie.png",
+      "fileSizeBytes": 1398403,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 20,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-lich-ritual-interrupt.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-lich-ritual-interrupt.png",
+      "fileSizeBytes": 2362253,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 21,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-muay-thai.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-muay-thai.png",
+      "fileSizeBytes": 3103841,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 22,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-phoenix-hunt.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-phoenix-hunt.png",
+      "fileSizeBytes": 1407849,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 23,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-powering-up.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-powering-up.png",
+      "fileSizeBytes": 1115435,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 24,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-ram-hoodie-kitty-cake.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-ram-hoodie-kitty-cake.png",
+      "fileSizeBytes": 2018390,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 25,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-riding-bicycle.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-riding-bicycle.png",
+      "fileSizeBytes": 2210133,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 26,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-shadow-clone-jutsu-battle-shounin.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-shadow-clone-jutsu-battle-shounin.png",
+      "fileSizeBytes": 3841569,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 27,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-fairies.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-summoning-fairies.png",
+      "fileSizeBytes": 1837709,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 28,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-amphithere-dragon.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-summoning-jutsu-amphithere-dragon.png",
+      "fileSizeBytes": 2236974,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 29,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-baby-dragon-plushies.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-summoning-jutsu-baby-dragon-plushies.png",
+      "fileSizeBytes": 2556628,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 30,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-cows.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-summoning-jutsu-cows.png",
+      "fileSizeBytes": 2254577,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 31,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-dragon-eggs.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-summoning-jutsu-dragon-eggs.png",
+      "fileSizeBytes": 2232081,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 32,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-earth-spirit-dragon.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-summoning-jutsu-earth-spirit-dragon.png",
+      "fileSizeBytes": 1720043,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 33,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-eel-plushies.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-summoning-jutsu-eel-plushies.png",
+      "fileSizeBytes": 1796206,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 34,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-hydra-dragon-plushies.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-summoning-jutsu-hydra-dragon-plushies.png",
+      "fileSizeBytes": 2075969,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 35,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-kawaii-cow-plushies.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-summoning-jutsu-kawaii-cow-plushies.png",
+      "fileSizeBytes": 2665037,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 36,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-spirit-dragon-plushies.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-summoning-jutsu-spirit-dragon-plushies.png",
+      "fileSizeBytes": 1477027,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 37,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-tyrannosaurus-rex.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-summoning-jutsu-tyrannosaurus-rex.png",
+      "fileSizeBytes": 2114407,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 38,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-volcano-erruption.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-summoning-jutsu-volcano-erruption.png",
+      "fileSizeBytes": 1760871,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 39,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-taekwondo-gym.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-taekwondo-gym.png",
+      "fileSizeBytes": 1239998,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 40,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-tiger-hoodie-plushie.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-tiger-hoodie-plushie.png",
+      "fileSizeBytes": 1716958,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 41,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/old-cards/anime-girl-belly-dancing.png",
+      "category": "anime-girls",
+      "nestedCategory": "old-cards",
+      "filename": "anime-girl-belly-dancing.png",
+      "fileSizeBytes": 2213612,
+      "dimensions": {
+        "width": 923,
+        "height": 1385
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 42,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/old-cards/anime-girl-dragon-rider.png",
+      "category": "anime-girls",
+      "nestedCategory": "old-cards",
+      "filename": "anime-girl-dragon-rider.png",
+      "fileSizeBytes": 2602090,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 43,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/old-cards/anime-girl-pull-up-winter.png",
+      "category": "anime-girls",
+      "nestedCategory": "old-cards",
+      "filename": "anime-girl-pull-up-winter.png",
+      "fileSizeBytes": 2373716,
+      "dimensions": {
+        "width": 923,
+        "height": 1385
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 44,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/old-cards/anime-girl-squirrel-hoodie-plushie.png",
+      "category": "anime-girls",
+      "nestedCategory": "old-cards",
+      "filename": "anime-girl-squirrel-hoodie-plushie.png",
+      "fileSizeBytes": 3402217,
+      "dimensions": {
+        "width": 923,
+        "height": 1385
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 45,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/old-cards/anime-girl.png",
+      "category": "anime-girls",
+      "nestedCategory": "old-cards",
+      "filename": "anime-girl.png",
+      "fileSizeBytes": 2070571,
+      "dimensions": {
+        "width": 919,
+        "height": 1379
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 46,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/birds/birds-bald-eagle-taking-flight.png",
+      "category": "birds",
+      "nestedCategory": null,
+      "filename": "birds-bald-eagle-taking-flight.png",
+      "fileSizeBytes": 1670095,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 47,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/birds/birds-booby.png",
+      "category": "birds",
+      "nestedCategory": null,
+      "filename": "birds-booby.png",
+      "fileSizeBytes": 1852521,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 48,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/birds/birds-macaw-parrot-sitting.png",
+      "category": "birds",
+      "nestedCategory": null,
+      "filename": "birds-macaw-parrot-sitting.png",
+      "fileSizeBytes": 1733362,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 49,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/birds/birds-pipit.png",
+      "category": "birds",
+      "nestedCategory": null,
+      "filename": "birds-pipit.png",
+      "fileSizeBytes": 1824672,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 50,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/birds/birds-tern.png",
+      "category": "birds",
+      "nestedCategory": null,
+      "filename": "birds-tern.png",
+      "fileSizeBytes": 1760281,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 51,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/birds/birds-waxwing.png",
+      "category": "birds",
+      "nestedCategory": null,
+      "filename": "birds-waxwing.png",
+      "fileSizeBytes": 1816360,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 52,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-animals-pets-dogs-bull-terrier.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-animals-pets-dogs-bull-terrier.png",
+      "fileSizeBytes": 649951,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "baseline"
+      ],
+      "samplePriority": 53,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-cockatrice.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-cockatrice.png",
+      "fileSizeBytes": 1919098,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 54,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-drake.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-drake.png",
+      "fileSizeBytes": 2104658,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 55,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-dungeon-dark-portal.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-dungeon-dark-portal.png",
+      "fileSizeBytes": 998634,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 56,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-dungeon-dungeon-stairs.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-dungeon-dungeon-stairs.png",
+      "fileSizeBytes": 1473215,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 57,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-dungeon-evil-king.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-dungeon-evil-king.png",
+      "fileSizeBytes": 1298896,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 58,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-dungeon-shadow-beast.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-dungeon-shadow-beast.png",
+      "fileSizeBytes": 939238,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 59,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-flowers-anemone.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-flowers-anemone.png",
+      "fileSizeBytes": 1076066,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 60,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-flowers-bird-of-paradise-kawaii.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-flowers-bird-of-paradise-kawaii.png",
+      "fileSizeBytes": 1072502,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 61,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-flowers-foxglove.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-flowers-foxglove.png",
+      "fileSizeBytes": 1288679,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 62,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-flowers-gerbera.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-flowers-gerbera.png",
+      "fileSizeBytes": 1006004,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 63,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-flowers-liatris.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-flowers-liatris.png",
+      "fileSizeBytes": 1279240,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 64,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-flowers-osteospermum-kawaii.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-flowers-osteospermum-kawaii.png",
+      "fileSizeBytes": 1127688,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 65,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-flowers-rudbeckia-kawaii.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-flowers-rudbeckia-kawaii.png",
+      "fileSizeBytes": 1454440,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 66,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-flowers-yarrow.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-flowers-yarrow.png",
+      "fileSizeBytes": 1251935,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 67,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-flowers-zinnia-kawaii.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-flowers-zinnia-kawaii.png",
+      "fileSizeBytes": 1540763,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 68,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-golems.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-golems.png",
+      "fileSizeBytes": 1668088,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 69,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-holiday-halloween-cauldron-smoke-and-bats-coloring-page.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-holiday-halloween-cauldron-smoke-and-bats-coloring-page.png",
+      "fileSizeBytes": 768765,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "baseline"
+      ],
+      "samplePriority": 70,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-holiday-halloween-mummy-popping-out-of-old-coffin-coloring-page.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-holiday-halloween-mummy-popping-out-of-old-coffin-coloring-page.png",
+      "fileSizeBytes": 996851,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 71,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-holiday-halloween-skeleton-playing-guitar-by-bonfire-coloring-page.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-holiday-halloween-skeleton-playing-guitar-by-bonfire-coloring-page.png",
+      "fileSizeBytes": 1405661,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 72,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-holiday-halloween-trick-or-treat-street-with-lit-lanterns-coloring-page.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-holiday-halloween-trick-or-treat-street-with-lit-lanterns-coloring-page.png",
+      "fileSizeBytes": 1126313,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 73,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-holiday-halloween-witch-flying-over-haunted-village-coloring-page.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-holiday-halloween-witch-flying-over-haunted-village-coloring-page.png",
+      "fileSizeBytes": 1189968,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 74,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-holiday-halloween-zombie-climbing-out-of-swampy-water-coloring-page.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-holiday-halloween-zombie-climbing-out-of-swampy-water-coloring-page.png",
+      "fileSizeBytes": 1045569,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 75,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-knucker-dragon.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-knucker-dragon.png",
+      "fileSizeBytes": 1423227,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 76,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-llama.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-llama.png",
+      "fileSizeBytes": 1694296,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 77,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-midieval-fantasy-dragon.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-midieval-fantasy-dragon.png",
+      "fileSizeBytes": 1221752,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 78,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-mushroom-artists-conk.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-mushroom-artists-conk.png",
+      "fileSizeBytes": 719359,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "baseline"
+      ],
+      "samplePriority": 79,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-mushroom-chanterelle.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-mushroom-chanterelle.png",
+      "fileSizeBytes": 876705,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "baseline"
+      ],
+      "samplePriority": 80,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-plushie-cupcake-character.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-plushie-cupcake-character.png",
+      "fileSizeBytes": 1084447,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 81,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-plushie-fox.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-plushie-fox.png",
+      "fileSizeBytes": 728819,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "baseline"
+      ],
+      "samplePriority": 82,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-plushie-manta-ray.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-plushie-manta-ray.png",
+      "fileSizeBytes": 1364846,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 83,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-plushie-popcorn-character.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-plushie-popcorn-character.png",
+      "fileSizeBytes": 689296,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "baseline"
+      ],
+      "samplePriority": 84,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-plushie-tortoise.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-plushie-tortoise.png",
+      "fileSizeBytes": 753747,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "baseline"
+      ],
+      "samplePriority": 85,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-porcupine.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-porcupine.png",
+      "fileSizeBytes": 1807881,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 86,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-professions-artist.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-professions-artist.png",
+      "fileSizeBytes": 937018,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 87,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-professions-veterinarian.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-professions-veterinarian.png",
+      "fileSizeBytes": 1004736,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 88,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/christmas/christmas-holiday-christmas-sweater.png",
+      "category": "christmas",
+      "nestedCategory": null,
+      "filename": "christmas-holiday-christmas-sweater.png",
+      "fileSizeBytes": 1845036,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 89,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/christmas/holiday-christmas-angel-holding-candle-in-snowy-night-coloring-page.png",
+      "category": "christmas",
+      "nestedCategory": null,
+      "filename": "holiday-christmas-angel-holding-candle-in-snowy-night-coloring-page.png",
+      "fileSizeBytes": 926369,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 90,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/christmas/holiday-christmas-animals-bears.png",
+      "category": "christmas",
+      "nestedCategory": null,
+      "filename": "holiday-christmas-animals-bears.png",
+      "fileSizeBytes": 1032681,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 91,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/christmas/holiday-christmas-animals-kawaii-foxes.png",
+      "category": "christmas",
+      "nestedCategory": null,
+      "filename": "holiday-christmas-animals-kawaii-foxes.png",
+      "fileSizeBytes": 1009503,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 92,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/christmas/holiday-christmas-animals-unicorns.png",
+      "category": "christmas",
+      "nestedCategory": null,
+      "filename": "holiday-christmas-animals-unicorns.png",
+      "fileSizeBytes": 921328,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 93,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/dinosaurs/prehistoric-dunkleosteus.png",
+      "category": "dinosaurs",
+      "nestedCategory": null,
+      "filename": "prehistoric-dunkleosteus.png",
+      "fileSizeBytes": 1771706,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 94,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/dinosaurs/prehistoric-extinction.png",
+      "category": "dinosaurs",
+      "nestedCategory": null,
+      "filename": "prehistoric-extinction.png",
+      "fileSizeBytes": 1424956,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 95,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/dinosaurs/prehistoric-mastodon.png",
+      "category": "dinosaurs",
+      "nestedCategory": null,
+      "filename": "prehistoric-mastodon.png",
+      "fileSizeBytes": 2415244,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 96,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/dinosaurs/prehistoric-mosasaurus.png",
+      "category": "dinosaurs",
+      "nestedCategory": null,
+      "filename": "prehistoric-mosasaurus.png",
+      "fileSizeBytes": 1939247,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 97,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/dogs/dogs-border-collie-playing.png",
+      "category": "dogs",
+      "nestedCategory": null,
+      "filename": "dogs-border-collie-playing.png",
+      "fileSizeBytes": 2548828,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 98,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/dogs/dogs-saluki.png",
+      "category": "dogs",
+      "nestedCategory": null,
+      "filename": "dogs-saluki.png",
+      "fileSizeBytes": 1583280,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 99,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/dogs/dogs-samoyed.png",
+      "category": "dogs",
+      "nestedCategory": null,
+      "filename": "dogs-samoyed.png",
+      "fileSizeBytes": 2105769,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 100,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/dogs/dogs-wirehaired-pointing-griffon.png",
+      "category": "dogs",
+      "nestedCategory": null,
+      "filename": "dogs-wirehaired-pointing-griffon.png",
+      "fileSizeBytes": 1754847,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 101,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/dragons/fantasy-mythology-dragons-spirit-dragon.png",
+      "category": "dragons",
+      "nestedCategory": null,
+      "filename": "fantasy-mythology-dragons-spirit-dragon.png",
+      "fileSizeBytes": 2101787,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 102,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/dragons/fire-breathing-dragon-playing-card.png",
+      "category": "dragons",
+      "nestedCategory": null,
+      "filename": "fire-breathing-dragon-playing-card.png",
+      "fileSizeBytes": 2117403,
+      "dimensions": {
+        "width": 877,
+        "height": 1315
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 103,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/emoji/U+1F605-grinning-face-with-sweat.png",
+      "category": "emoji",
+      "nestedCategory": null,
+      "filename": "U+1F605-grinning-face-with-sweat.png",
+      "fileSizeBytes": 1900595,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 104,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-ancient-colossus.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-ancient-colossus.png",
+      "fileSizeBytes": 2547726,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 105,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-ancient-wolf-spirit.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-ancient-wolf-spirit.png",
+      "fileSizeBytes": 1587905,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 106,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-ancient-wyvern-canyon.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-ancient-wyvern-canyon.png",
+      "fileSizeBytes": 1694182,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 107,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-barbarian-mountain-roar.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-barbarian-mountain-roar.png",
+      "fileSizeBytes": 1431316,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 108,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-centaur-hill-run.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-centaur-hill-run.png",
+      "fileSizeBytes": 1465556,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 109,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-creatures-griffin-soaring.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-creatures-griffin-soaring.png",
+      "fileSizeBytes": 2090936,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 110,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-creatures-necromancer.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-creatures-necromancer.png",
+      "fileSizeBytes": 1924300,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 111,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-creatures-sprite-lantern.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-creatures-sprite-lantern.png",
+      "fileSizeBytes": 2176832,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 112,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-cursed-flaming-armor.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-cursed-flaming-armor.png",
+      "fileSizeBytes": 1210727,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 113,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-cute-earth-dragon-burrow.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-cute-earth-dragon-burrow.png",
+      "fileSizeBytes": 1480286,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "simple_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 114,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-dwarf-forge-working-hard.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-dwarf-forge-working-hard.png",
+      "fileSizeBytes": 1500015,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 115,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-earth-golem-grove.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-earth-golem-grove.png",
+      "fileSizeBytes": 2442167,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 116,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-earth-golem.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-earth-golem.png",
+      "fileSizeBytes": 2919880,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 117,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-floating-runestones.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-floating-runestones.png",
+      "fileSizeBytes": 2000910,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 118,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-forest-guardian-stag.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-forest-guardian-stag.png",
+      "fileSizeBytes": 2439828,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 119,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-lagoon-siren.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-lagoon-siren.png",
+      "fileSizeBytes": 1455754,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 120,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-majestic-ghost-serpent.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-majestic-ghost-serpent.png",
+      "fileSizeBytes": 1454696,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 121,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-minotaur-maze-guardian.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-minotaur-maze-guardian.png",
+      "fileSizeBytes": 1367647,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 122,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-moon-fairy-pond.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-moon-fairy-pond.png",
+      "fileSizeBytes": 1246502,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 123,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-nymph-moon-glade.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-nymph-moon-glade.png",
+      "fileSizeBytes": 1320080,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 124,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-phoenix-nest.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-phoenix-nest.png",
+      "fileSizeBytes": 2087044,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 125,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-sky-dragon-temple.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-sky-dragon-temple.png",
+      "fileSizeBytes": 1720540,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 126,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-sorceress-fire-circle.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-sorceress-fire-circle.png",
+      "fileSizeBytes": 1608726,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 127,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-spirit-shrine.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-spirit-shrine.png",
+      "fileSizeBytes": 1625916,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 128,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-storm-dragon.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-storm-dragon.png",
+      "fileSizeBytes": 1444204,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 129,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-storm-kirin.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-storm-kirin.png",
+      "fileSizeBytes": 1320942,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 130,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-wizard-magic-lab.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-wizard-magic-lab.png",
+      "fileSizeBytes": 1431731,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 131,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-zombie-graveyard.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-zombie-graveyard.png",
+      "fileSizeBytes": 1441458,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 132,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/flowers/ardening-in-field-of-flowers-hellebore.png",
+      "category": "flowers",
+      "nestedCategory": null,
+      "filename": "ardening-in-field-of-flowers-hellebore.png",
+      "fileSizeBytes": 1986192,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 133,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/flowers/flowers-aster.png",
+      "category": "flowers",
+      "nestedCategory": null,
+      "filename": "flowers-aster.png",
+      "fileSizeBytes": 2348587,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 134,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/flowers/flowers-wallflower.png",
+      "category": "flowers",
+      "nestedCategory": null,
+      "filename": "flowers-wallflower.png",
+      "fileSizeBytes": 2140993,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 135,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/flowers/gardening-in-field-of-flowers-ranunculus.png",
+      "category": "flowers",
+      "nestedCategory": null,
+      "filename": "gardening-in-field-of-flowers-ranunculus.png",
+      "fileSizeBytes": 2438736,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 136,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/flowers/gardening-in-field-of-flowers-yarrow.png",
+      "category": "flowers",
+      "nestedCategory": null,
+      "filename": "gardening-in-field-of-flowers-yarrow.png",
+      "fileSizeBytes": 1904708,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 137,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/flowers/lowers-snowdrop.png",
+      "category": "flowers",
+      "nestedCategory": null,
+      "filename": "lowers-snowdrop.png",
+      "fileSizeBytes": 2241761,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 138,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/gardening/gardening-mushroom-bay-bolete.png",
+      "category": "gardening",
+      "nestedCategory": null,
+      "filename": "gardening-mushroom-bay-bolete.png",
+      "fileSizeBytes": 1387341,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 139,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/gardening/gardening-mushroom-candlesnuff-fungus.png",
+      "category": "gardening",
+      "nestedCategory": null,
+      "filename": "gardening-mushroom-candlesnuff-fungus.png",
+      "fileSizeBytes": 1937878,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 140,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/gardening/gardening-mushroom-straw-mushroom.png",
+      "category": "gardening",
+      "nestedCategory": null,
+      "filename": "gardening-mushroom-straw-mushroom.png",
+      "fileSizeBytes": 1626719,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 141,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/gardening/gardening-mushroom-truffle-white.png",
+      "category": "gardening",
+      "nestedCategory": null,
+      "filename": "gardening-mushroom-truffle-white.png",
+      "fileSizeBytes": 2396475,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 142,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/holiday/holiday-birthday-celebration-plushie-monkey-family.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-birthday-celebration-plushie-monkey-family.png",
+      "fileSizeBytes": 1091606,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 143,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/holiday/holiday-birthday-celebration-plushie-sloth-baby-family.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-birthday-celebration-plushie-sloth-baby-family.png",
+      "fileSizeBytes": 915095,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 144,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/holiday/holiday-birthday-celebration-plushie-yeti-family.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-birthday-celebration-plushie-yeti-family.png",
+      "fileSizeBytes": 1109429,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 145,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/holiday/holiday-birthday-celebration-wizard.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-birthday-celebration-wizard.png",
+      "fileSizeBytes": 1218134,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 146,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/holiday/holiday-christmas-dogs-bichon-frise.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-christmas-dogs-bichon-frise.png",
+      "fileSizeBytes": 958288,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 147,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/holiday/holiday-christmas-dogs-siberian-husky-puppies.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-christmas-dogs-siberian-husky-puppies.png",
+      "fileSizeBytes": 992273,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 148,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/holiday/holiday-christmas-plushie-beaver-family.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-christmas-plushie-beaver-family.png",
+      "fileSizeBytes": 806011,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "baseline"
+      ],
+      "samplePriority": 149,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/holiday/holiday-christmas-plushie-hyena-family.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-christmas-plushie-hyena-family.png",
+      "fileSizeBytes": 769828,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "baseline"
+      ],
+      "samplePriority": 150,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/holiday/holiday-christmas-plushie-piglet-family.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-christmas-plushie-piglet-family.png",
+      "fileSizeBytes": 859488,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "baseline"
+      ],
+      "samplePriority": 151,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/holiday/holiday-christmas-plushie-prehistoric-tyrannosaurus-rex-family.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-christmas-plushie-prehistoric-tyrannosaurus-rex-family.png",
+      "fileSizeBytes": 882770,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "baseline"
+      ],
+      "samplePriority": 152,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/holiday/holiday-christmas-plushie-robot-family.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-christmas-plushie-robot-family.png",
+      "fileSizeBytes": 827244,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "baseline"
+      ],
+      "samplePriority": 153,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/holiday/holiday-christmas-plushie-walrus-family.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-christmas-plushie-walrus-family.png",
+      "fileSizeBytes": 810733,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "baseline"
+      ],
+      "samplePriority": 154,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/homes/homes-apartment-building-front-view.png",
+      "category": "homes",
+      "nestedCategory": null,
+      "filename": "homes-apartment-building-front-view.png",
+      "fileSizeBytes": 922483,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 155,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/homes/homes-cape-cod-style-house.png",
+      "category": "homes",
+      "nestedCategory": null,
+      "filename": "homes-cape-cod-style-house.png",
+      "fileSizeBytes": 899076,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "baseline"
+      ],
+      "samplePriority": 156,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/homes/homes-treehouse-with-slide.png",
+      "category": "homes",
+      "nestedCategory": null,
+      "filename": "homes-treehouse-with-slide.png",
+      "fileSizeBytes": 1205866,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 157,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/horror/sasquatch.png",
+      "category": "horror",
+      "nestedCategory": null,
+      "filename": "sasquatch.png",
+      "fileSizeBytes": 2324049,
+      "dimensions": {
+        "width": 923,
+        "height": 1385
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 158,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/indoor-plants/indoor-plants-anthurium-clarinervium.png",
+      "category": "indoor-plants",
+      "nestedCategory": null,
+      "filename": "indoor-plants-anthurium-clarinervium.png",
+      "fileSizeBytes": 1811491,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 159,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/indoor-plants/indoor-plants-anthurium-crystallinum.png",
+      "category": "indoor-plants",
+      "nestedCategory": null,
+      "filename": "indoor-plants-anthurium-crystallinum.png",
+      "fileSizeBytes": 1923766,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 160,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/indoor-plants/indoor-plants-english-ivy.png",
+      "category": "indoor-plants",
+      "nestedCategory": null,
+      "filename": "indoor-plants-english-ivy.png",
+      "fileSizeBytes": 1804541,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 161,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/indoor-plants/indoor-plants-peace-lily.png",
+      "category": "indoor-plants",
+      "nestedCategory": null,
+      "filename": "indoor-plants-peace-lily.png",
+      "fileSizeBytes": 1702014,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 162,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/indoor-plants/indoor-plants-thanksgiving-cactus.png",
+      "category": "indoor-plants",
+      "nestedCategory": null,
+      "filename": "indoor-plants-thanksgiving-cactus.png",
+      "fileSizeBytes": 2173013,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 163,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/Insects/insects-blue-morpho-butterfly-in-rainforest.png",
+      "category": "Insects",
+      "nestedCategory": null,
+      "filename": "insects-blue-morpho-butterfly-in-rainforest.png",
+      "fileSizeBytes": 1930974,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 164,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/Insects/insects-damselfly-perched-on-reed.png",
+      "category": "Insects",
+      "nestedCategory": null,
+      "filename": "insects-damselfly-perched-on-reed.png",
+      "fileSizeBytes": 1737935,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 165,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/Insects/insects-deer-fly.png",
+      "category": "Insects",
+      "nestedCategory": null,
+      "filename": "insects-deer-fly.png",
+      "fileSizeBytes": 1571050,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 166,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/Insects/insects-housefly.png",
+      "category": "Insects",
+      "nestedCategory": null,
+      "filename": "insects-housefly.png",
+      "fileSizeBytes": 1693605,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 167,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/Insects/insects-jumping-spider.png",
+      "category": "Insects",
+      "nestedCategory": null,
+      "filename": "insects-jumping-spider.png",
+      "fileSizeBytes": 2071621,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 168,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-bakery-heart-shaped-cookies.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-bakery-heart-shaped-cookies.png",
+      "fileSizeBytes": 3327186,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 169,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-japan-zen-meditation-garden.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-japan-zen-meditation-garden.png",
+      "fileSizeBytes": 1983497,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 170,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-cinnamon-cap.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-mushroom-cinnamon-cap.png",
+      "fileSizeBytes": 2375257,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 171,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-stinkhorn-fungus.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-mushroom-stinkhorn-fungus.png",
+      "fileSizeBytes": 2030642,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 172,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-plushie-alpaca-animals.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-plushie-alpaca-animals.png",
+      "fileSizeBytes": 2345516,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 173,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cow.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-plushie-cow.png",
+      "fileSizeBytes": 2729239,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 174,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-plushie-lion-animals.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-plushie-lion-animals.png",
+      "fileSizeBytes": 1797419,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 175,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-plushie-mushrooms-nature.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-plushie-mushrooms-nature.png",
+      "fileSizeBytes": 1819410,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 176,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-plushie-prehistoric-megalodon-animal.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-plushie-prehistoric-megalodon-animal.png",
+      "fileSizeBytes": 1512797,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 177,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-plushie-starfisha.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-plushie-starfisha.png",
+      "fileSizeBytes": 4221131,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 178,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-sushi-bamboo-chopstick-rest.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-sushi-bamboo-chopstick-rest.png",
+      "fileSizeBytes": 2314944,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 179,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-sushi-maki-roll.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-sushi-maki-roll.png",
+      "fileSizeBytes": 3509386,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 180,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-sushi-unagi-eel-nigiri.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-sushi-unagi-eel-nigiri.png",
+      "fileSizeBytes": 2955451,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 181,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-excursion-train-crossing-historic-trestle-bridge.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-trains-locomotives-excursion-train-crossing-historic-trestle-bridge.png",
+      "fileSizeBytes": 1642067,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 182,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-steam-train-at-old-town-station.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-trains-locomotives-steam-train-at-old-town-station.png",
+      "fileSizeBytes": 2460892,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 183,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-cars-nascar.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-vehiacle-cars-nascar.png",
+      "fileSizeBytes": 1793359,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 184,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-cars-tesla.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-vehiacle-cars-tesla.png",
+      "fileSizeBytes": 1705577,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 185,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-hot-rod-classic.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-vehicle-cars-hot-rod-classic.png",
+      "fileSizeBytes": 3221020,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 186,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-rivian-r1s.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-vehicle-cars-rivian-r1s.png",
+      "fileSizeBytes": 2546049,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 187,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala/mandala-geometry-patterns-floral-mandala.png",
+      "category": "mandala",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-floral-mandala.png",
+      "fileSizeBytes": 1795867,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 188,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/midieval/midieval-fantasy-alchemist-lab.png",
+      "category": "midieval",
+      "nestedCategory": null,
+      "filename": "midieval-fantasy-alchemist-lab.png",
+      "fileSizeBytes": 1442238,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 189,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/midieval/midieval-fantasy-ancient-grimoire.png",
+      "category": "midieval",
+      "nestedCategory": null,
+      "filename": "midieval-fantasy-ancient-grimoire.png",
+      "fileSizeBytes": 1146629,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 190,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/midieval/midieval-fantasy-ancient-ruins.png",
+      "category": "midieval",
+      "nestedCategory": null,
+      "filename": "midieval-fantasy-ancient-ruins.png",
+      "fileSizeBytes": 1144923,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 191,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/midieval/midieval-fantasy-bandit-camp.png",
+      "category": "midieval",
+      "nestedCategory": null,
+      "filename": "midieval-fantasy-bandit-camp.png",
+      "fileSizeBytes": 1240156,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 192,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/midieval/midieval-fantasy-battlefield-ruins.png",
+      "category": "midieval",
+      "nestedCategory": null,
+      "filename": "midieval-fantasy-battlefield-ruins.png",
+      "fileSizeBytes": 1256102,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 193,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/midieval/midieval-fantasy-black-dragon-citadel.png",
+      "category": "midieval",
+      "nestedCategory": null,
+      "filename": "midieval-fantasy-black-dragon-citadel.png",
+      "fileSizeBytes": 1128848,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 194,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/midieval/midieval-fantasy-castle-gatehouse.png",
+      "category": "midieval",
+      "nestedCategory": null,
+      "filename": "midieval-fantasy-castle-gatehouse.png",
+      "fileSizeBytes": 1142587,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 195,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/midieval/midieval-fantasy-djinn-genie.png",
+      "category": "midieval",
+      "nestedCategory": null,
+      "filename": "midieval-fantasy-djinn-genie.png",
+      "fileSizeBytes": 1447989,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 196,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/midieval/midieval-fantasy-dragon-forged-blade.png",
+      "category": "midieval",
+      "nestedCategory": null,
+      "filename": "midieval-fantasy-dragon-forged-blade.png",
+      "fileSizeBytes": 1572682,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 197,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/midieval/midieval-fantasy-dungeon-door.png",
+      "category": "midieval",
+      "nestedCategory": null,
+      "filename": "midieval-fantasy-dungeon-door.png",
+      "fileSizeBytes": 957904,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 198,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/midieval/midieval-fantasy-fairy-glen.png",
+      "category": "midieval",
+      "nestedCategory": null,
+      "filename": "midieval-fantasy-fairy-glen.png",
+      "fileSizeBytes": 1293194,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 199,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/midieval/midieval-fantasy-healing-potion.png",
+      "category": "midieval",
+      "nestedCategory": null,
+      "filename": "midieval-fantasy-healing-potion.png",
+      "fileSizeBytes": 1059266,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 200,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/midieval/midieval-fantasy-lich.png",
+      "category": "midieval",
+      "nestedCategory": null,
+      "filename": "midieval-fantasy-lich.png",
+      "fileSizeBytes": 1434831,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 201,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/midieval/midieval-fantasy-magical-forest.png",
+      "category": "midieval",
+      "nestedCategory": null,
+      "filename": "midieval-fantasy-magical-forest.png",
+      "fileSizeBytes": 1236801,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 202,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/midieval/midieval-fantasy-mystic-orb.png",
+      "category": "midieval",
+      "nestedCategory": null,
+      "filename": "midieval-fantasy-mystic-orb.png",
+      "fileSizeBytes": 1393824,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 203,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/midieval/midieval-fantasy-witch.png",
+      "category": "midieval",
+      "nestedCategory": null,
+      "filename": "midieval-fantasy-witch.png",
+      "fileSizeBytes": 1310040,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 204,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mythology/fantasy-mythology-dragons-bone-dragon.png",
+      "category": "mythology",
+      "nestedCategory": null,
+      "filename": "fantasy-mythology-dragons-bone-dragon.png",
+      "fileSizeBytes": 2188584,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 205,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mythology/fantasy-mythology-dragons-volcano-dragon.png",
+      "category": "mythology",
+      "nestedCategory": null,
+      "filename": "fantasy-mythology-dragons-volcano-dragon.png",
+      "fileSizeBytes": 1197012,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 206,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mythology/mythology-agni.png",
+      "category": "mythology",
+      "nestedCategory": null,
+      "filename": "mythology-agni.png",
+      "fileSizeBytes": 1151073,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 207,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mythology/mythology-ammit.png",
+      "category": "mythology",
+      "nestedCategory": null,
+      "filename": "mythology-ammit.png",
+      "fileSizeBytes": 1198921,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 208,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mythology/mythology-benu.png",
+      "category": "mythology",
+      "nestedCategory": null,
+      "filename": "mythology-benu.png",
+      "fileSizeBytes": 1300917,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 209,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mythology/mythology-dionysus-bacchus.png",
+      "category": "mythology",
+      "nestedCategory": null,
+      "filename": "mythology-dionysus-bacchus.png",
+      "fileSizeBytes": 1694240,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 210,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mythology/mythology-dullahan.png",
+      "category": "mythology",
+      "nestedCategory": null,
+      "filename": "mythology-dullahan.png",
+      "fileSizeBytes": 1437248,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 211,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mythology/mythology-eir.png",
+      "category": "mythology",
+      "nestedCategory": null,
+      "filename": "mythology-eir.png",
+      "fileSizeBytes": 1161727,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 212,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mythology/mythology-fairy.png",
+      "category": "mythology",
+      "nestedCategory": null,
+      "filename": "mythology-fairy.png",
+      "fileSizeBytes": 2337435,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 213,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mythology/mythology-ganesha.png",
+      "category": "mythology",
+      "nestedCategory": null,
+      "filename": "mythology-ganesha.png",
+      "fileSizeBytes": 1455805,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 214,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mythology/mythology-kanaloa.png",
+      "category": "mythology",
+      "nestedCategory": null,
+      "filename": "mythology-kanaloa.png",
+      "fileSizeBytes": 1570320,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 215,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mythology/mythology-lugh.png",
+      "category": "mythology",
+      "nestedCategory": null,
+      "filename": "mythology-lugh.png",
+      "fileSizeBytes": 1402965,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 216,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mythology/mythology-morpheus.png",
+      "category": "mythology",
+      "nestedCategory": null,
+      "filename": "mythology-morpheus.png",
+      "fileSizeBytes": 1187619,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 217,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mythology/mythology-nidhogg.png",
+      "category": "mythology",
+      "nestedCategory": null,
+      "filename": "mythology-nidhogg.png",
+      "fileSizeBytes": 1260360,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 218,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mythology/mythology-oedipus.png",
+      "category": "mythology",
+      "nestedCategory": null,
+      "filename": "mythology-oedipus.png",
+      "fileSizeBytes": 1165052,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 219,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mythology/mythology-selkie.png",
+      "category": "mythology",
+      "nestedCategory": null,
+      "filename": "mythology-selkie.png",
+      "fileSizeBytes": 1283774,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 220,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mythology/mythology-shiva.png",
+      "category": "mythology",
+      "nestedCategory": null,
+      "filename": "mythology-shiva.png",
+      "fileSizeBytes": 1457537,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 221,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mythology/mythology-the-morrigan.png",
+      "category": "mythology",
+      "nestedCategory": null,
+      "filename": "mythology-the-morrigan.png",
+      "fileSizeBytes": 1584894,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 222,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mythology/mythology-wadjet.png",
+      "category": "mythology",
+      "nestedCategory": null,
+      "filename": "mythology-wadjet.png",
+      "fileSizeBytes": 1305595,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": true,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 223,
+      "notes": [
+        "Oversampled for later anatomy QA."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/Nature/camping-in-the-woods-campfire-marshmellow.png",
+      "category": "Nature",
+      "nestedCategory": null,
+      "filename": "camping-in-the-woods-campfire-marshmellow.png",
+      "fileSizeBytes": 2796819,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 224,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/plushie/plushie-alligator.png",
+      "category": "plushie",
+      "nestedCategory": null,
+      "filename": "plushie-alligator.png",
+      "fileSizeBytes": 1083318,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 225,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/plushie/plushie-dragon-family.png",
+      "category": "plushie",
+      "nestedCategory": null,
+      "filename": "plushie-dragon-family.png",
+      "fileSizeBytes": 865476,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "baseline"
+      ],
+      "samplePriority": 226,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/plushie/plushie-griffin-family.png",
+      "category": "plushie",
+      "nestedCategory": null,
+      "filename": "plushie-griffin-family.png",
+      "fileSizeBytes": 883256,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "baseline"
+      ],
+      "samplePriority": 227,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/plushie/plushie-guinea-pig-family.png",
+      "category": "plushie",
+      "nestedCategory": null,
+      "filename": "plushie-guinea-pig-family.png",
+      "fileSizeBytes": 835035,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "baseline"
+      ],
+      "samplePriority": 228,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/plushie/plushie-hyena.png",
+      "category": "plushie",
+      "nestedCategory": null,
+      "filename": "plushie-hyena.png",
+      "fileSizeBytes": 1155499,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 229,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/plushie/plushie-mouse.png",
+      "category": "plushie",
+      "nestedCategory": null,
+      "filename": "plushie-mouse.png",
+      "fileSizeBytes": 1030063,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 230,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/plushie/plushie-parrot-family.png",
+      "category": "plushie",
+      "nestedCategory": null,
+      "filename": "plushie-parrot-family.png",
+      "fileSizeBytes": 957588,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 231,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/plushie/plushie-prehistoric-mosasaurus.png",
+      "category": "plushie",
+      "nestedCategory": null,
+      "filename": "plushie-prehistoric-mosasaurus.png",
+      "fileSizeBytes": 836556,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "baseline"
+      ],
+      "samplePriority": 232,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/plushie/plushie-prehistoric-pterodactyl-family.png",
+      "category": "plushie",
+      "nestedCategory": null,
+      "filename": "plushie-prehistoric-pterodactyl-family.png",
+      "fileSizeBytes": 1418686,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 233,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/reptiles/reptiles-green-iguana-on-rock.png",
+      "category": "reptiles",
+      "nestedCategory": null,
+      "filename": "reptiles-green-iguana-on-rock.png",
+      "fileSizeBytes": 2501994,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 234,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/reptiles/reptiles-leatherback-turtle.png",
+      "category": "reptiles",
+      "nestedCategory": null,
+      "filename": "reptiles-leatherback-turtle.png",
+      "fileSizeBytes": 2136590,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 235,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/reptiles/reptiles-olm-cave-salamander.png",
+      "category": "reptiles",
+      "nestedCategory": null,
+      "filename": "reptiles-olm-cave-salamander.png",
+      "fileSizeBytes": 1093349,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 236,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/reptiles/reptiles-salamander.png",
+      "category": "reptiles",
+      "nestedCategory": null,
+      "filename": "reptiles-salamander.png",
+      "fileSizeBytes": 2090557,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 237,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/reptiles/reptiles-tortoise-gator-hybrid.png",
+      "category": "reptiles",
+      "nestedCategory": null,
+      "filename": "reptiles-tortoise-gator-hybrid.png",
+      "fileSizeBytes": 1754984,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 238,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/sea-life/sea-life-butterflyfish-pair-in-reef.png",
+      "category": "sea-life",
+      "nestedCategory": null,
+      "filename": "sea-life-butterflyfish-pair-in-reef.png",
+      "fileSizeBytes": 1849501,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 239,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/sea-life/sea-life-clownfish-pair-in-sea-anemone.png",
+      "category": "sea-life",
+      "nestedCategory": null,
+      "filename": "sea-life-clownfish-pair-in-sea-anemone.png",
+      "fileSizeBytes": 2589379,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 240,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/sea-life/sea-life-cuttlefish.png",
+      "category": "sea-life",
+      "nestedCategory": null,
+      "filename": "sea-life-cuttlefish.png",
+      "fileSizeBytes": 1484495,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 241,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/sea-life/sea-life-hammerhead-shark.png",
+      "category": "sea-life",
+      "nestedCategory": null,
+      "filename": "sea-life-hammerhead-shark.png",
+      "fileSizeBytes": 1839996,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 242,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/sea-life/sea-life-stingray.png",
+      "category": "sea-life",
+      "nestedCategory": null,
+      "filename": "sea-life-stingray.png",
+      "fileSizeBytes": 2068480,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 243,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/sea-life/sea-life-tuna.png",
+      "category": "sea-life",
+      "nestedCategory": null,
+      "filename": "sea-life-tuna.png",
+      "fileSizeBytes": 1634517,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 244,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/space/ChatGPT Image May 1, 2025, 12_50_41 AM.png",
+      "category": "space",
+      "nestedCategory": null,
+      "filename": "ChatGPT Image May 1, 2025, 12_50_41 AM.png",
+      "fileSizeBytes": 2571536,
+      "dimensions": {
+        "width": 923,
+        "height": 1385
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 245,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/st-patricks-day/st-patricks-day-pot-of-gold-guarded-by-leprechaun-coloring-page.png",
+      "category": "st-patricks-day",
+      "nestedCategory": null,
+      "filename": "st-patricks-day-pot-of-gold-guarded-by-leprechaun-coloring-page.png",
+      "fileSizeBytes": 903011,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "thick_line_candidate"
+      ],
+      "samplePriority": 246,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/st-patricks-day/st-patricks-day-shamrock-clover-pattern-coloring-page.png",
+      "category": "st-patricks-day",
+      "nestedCategory": null,
+      "filename": "st-patricks-day-shamrock-clover-pattern-coloring-page.png",
+      "fileSizeBytes": 733899,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "high_detail"
+      ],
+      "samplePriority": 247,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/world-landmarks/world-landmarks-eiffel-tower.png",
+      "category": "world-landmarks",
+      "nestedCategory": null,
+      "filename": "world-landmarks-eiffel-tower.png",
+      "fileSizeBytes": 1614715,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "complex_scene",
+        "thick_line_candidate"
+      ],
+      "samplePriority": 248,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/world-landmarks/world-landmarks-hollywood-sign.png",
+      "category": "world-landmarks",
+      "nestedCategory": null,
+      "filename": "world-landmarks-hollywood-sign.png",
+      "fileSizeBytes": 618417,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "baseline"
+      ],
+      "samplePriority": 249,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    },
+    {
+      "sourceRelativePath": "images/world-landmarks/world-landmarks-santorini-blue-domes.png",
+      "category": "world-landmarks",
+      "nestedCategory": null,
+      "filename": "world-landmarks-santorini-blue-domes.png",
+      "fileSizeBytes": 785088,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "likelyHumanAdjacent": false,
+      "selectionSignals": [
+        "baseline"
+      ],
+      "samplePriority": 250,
+      "notes": [
+        "Included for category coverage and conversion bakeoff variety."
+      ]
+    }
+  ]
+}

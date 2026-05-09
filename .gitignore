@@ -1,0 +1,19 @@
+# Local source and reference material
+images/
+ilovesvg/
+
+# Generated image and review outputs stay local or CDN-backed
+pipeline/samples/**
+pipeline/bakeoffs/**
+pipeline/review/**
+pipeline/production/assets/**
+pipeline/production/thumbs/**
+
+# Keep production data manifests commit-eligible
+!pipeline/production/data/
+!pipeline/production/data/**
+
+# Local OS/editor noise
+.DS_Store
+Thumbs.db
+*.log

@@ -1,0 +1,931 @@
+{
+  "generatedAt": "2026-05-09",
+  "folderLocationsFound": {
+    "repositoryRoot": ".",
+    "iloveSvgRepo": "ilovesvg",
+    "sourceImagesFolder": "images",
+    "nextAppRoots": []
+  },
+  "nextJsStatus": "No Next.js app root was detected in the outer workspace.",
+  "commandsDiscovered": {
+    "iloveSvgPackageScripts": {
+      "build": "react-router build",
+      "dev": "cross-env NODE_ENV=development node server.js",
+      "start": "node server.js",
+      "test": "npm run test:conversion-cache && npm run test:trace-engine && npm run test:trace-quality",
+      "test:hybrid-browser": "node scripts/hybrid-browser-smoke.mjs",
+      "test:preset-performance": "node scripts/preset-performance-smoke.mjs",
+      "test:trace-engine": "node scripts/trace-engine-audit.mjs",
+      "test:trace-quality": "node scripts/trace-quality-smoke.mjs",
+      "typecheck": "react-router typegen && tsc -b"
+    },
+    "roundOneValidation": [
+      "node --test pipeline/tests/generate-round-1-manifests.test.mjs",
+      "node pipeline/scripts/generate-round-1-manifests.mjs",
+      "node -e \"const fs=require('fs'); for (const f of ['image-inventory','category-summary','conversion-preset-inventory','sample-candidates','pipeline-assumptions']) JSON.parse(fs.readFileSync('pipeline/manifests/'+f+'.json','utf8'))\""
+    ]
+  },
+  "conversionSystemFound": {
+    "framework": "React Router app inside ilovesvg, not a Next.js app.",
+    "keyDependencies": {
+      "potrace": "^2.1.8",
+      "sharp": "^0.34.3",
+      "wasm_vtracer": "^0.2.0"
+    },
+    "keyRoutes": [
+      "ilovesvg/app/routes/black-and-white-image-to-svg-converter.tsx",
+      "ilovesvg/app/routes/black-and-white-image-to-svg-for-cricut.tsx",
+      "ilovesvg/app/routes/black-and-white-png-to-svg-converter.tsx",
+      "ilovesvg/app/routes/drawing-to-svg-converter.tsx",
+      "ilovesvg/app/routes/drawing-to-svg-for-cricut.tsx",
+      "ilovesvg/app/routes/image-to-svg-outline.tsx",
+      "ilovesvg/app/routes/line-art-to-svg-converter.tsx",
+      "ilovesvg/app/routes/line-art-to-svg-for-cricut.tsx",
+      "ilovesvg/app/routes/photo-to-svg-outline.tsx",
+      "ilovesvg/app/routes/png-to-svg-converter.tsx",
+      "ilovesvg/app/routes/png-to-svg-for-canva.tsx",
+      "ilovesvg/app/routes/png-to-svg-for-cricut-print-then-cut.tsx",
+      "ilovesvg/app/routes/png-to-svg-for-cricut-stickers.tsx",
+      "ilovesvg/app/routes/png-to-svg-for-cricut-vinyl.tsx",
+      "ilovesvg/app/routes/png-to-svg-for-cricut.tsx",
+      "ilovesvg/app/routes/png-to-svg-for-etsy.tsx",
+      "ilovesvg/app/routes/png-to-svg-for-figma.tsx",
+      "ilovesvg/app/routes/png-to-svg-for-glowforge.tsx",
+      "ilovesvg/app/routes/png-to-svg-for-laser-cutting.tsx",
+      "ilovesvg/app/routes/png-to-svg-for-shopify.tsx",
+      "ilovesvg/app/routes/png-to-svg-for-silhouette.tsx",
+      "ilovesvg/app/routes/scan-to-svg-converter.tsx",
+      "ilovesvg/app/routes/sketch-to-svg-converter.tsx",
+      "ilovesvg/app/routes/sketch-to-svg-for-cricut.tsx",
+      "ilovesvg/app/routes/transparent-png-to-svg-converter.tsx"
+    ],
+    "keyUtilities": [
+      "ilovesvg/app/shared/tracing/serverFallback.server.ts",
+      "ilovesvg/app/utils/imagePreprocess.server.ts",
+      "ilovesvg/app/utils/potraceCompat.ts",
+      "ilovesvg/app/utils/svgLayerTrace.server.ts",
+      "ilovesvg/app/shared/tracing/centerlineTrace.ts",
+      "ilovesvg/app/client/lib/converter/presetAdditions.ts",
+      "ilovesvg/app/client/lib/converter/settings.ts",
+      "ilovesvg/app/utils/converterSettings.server.ts"
+    ],
+    "presetCountInventoried": 328,
+    "directBatchReuseAssessment": "Not directly reusable as a clean batch CLI yet. Current conversion is embedded in route actions and browser/client fetch flow. A later adapter should import the shared server utilities and selected preset settings without route UI, rate-limit, or multipart concerns.",
+    "singlePngConversionPath": "Existing app path is to run the ilovesvg server, open /png-to-svg-converter or a related line-art route, upload one PNG, select a preset, and download SVG. Programmatic batch conversion needs a wrapper around shared tracing utilities."
+  },
+  "imageCorpusFindings": {
+    "totalFiles": 6810,
+    "pngImageCount": 6799,
+    "categoryCount": 29,
+    "nonPngFileCount": 11,
+    "nonPngFiles": [
+      "images/anime-girls/anime-girl-cowgirl",
+      "images/chibi/chibi-anime-girl-karate",
+      "images/mandala-geometry-patterns/mandala-geometry-patterns-bakery-bagel.jpeg",
+      "images/mandala-geometry-patterns/mandala-geometry-patterns-bakery-bread-basket.jpeg",
+      "images/mandala-geometry-patterns/mandala-geometry-patterns-bakery-eclair.jpeg",
+      "images/mandala-geometry-patterns/mandala-geometry-patterns-bakery-fruit-tart.jpeg",
+      "images/mandala-geometry-patterns/mandala-geometry-patterns-bakery-lemon-tart.jpeg",
+      "images/mandala-geometry-patterns/mandala-geometry-patterns-bakery-macarons.jpeg",
+      "images/mandala-geometry-patterns/mandala-geometry-patterns-bakery-pretzel.jpeg",
+      "images/mandala-geometry-patterns/mandala-geometry-patterns-bakery-puff-pastry.jpeg",
+      "images/mandala-geometry-patterns/mandala-geometry-patterns-bakery-tart.jpeg"
+    ],
+    "unreadableFileCount": 0,
+    "unreadableFiles": [],
+    "emptyFolders": [],
+    "duplicateFilenameGroupCount": 144,
+    "duplicateFilenameGroups": [
+      {
+        "filename": "animals-armadillo.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-armadillo.png",
+          "images/animals/animals-armadillo.png"
+        ]
+      },
+      {
+        "filename": "animals-armadillos-wildlife.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-armadillos-wildlife.png",
+          "images/animals/animals-armadillos-wildlife.png"
+        ]
+      },
+      {
+        "filename": "animals-armadillos.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-armadillos.png",
+          "images/animals/animals-armadillos.png"
+        ]
+      },
+      {
+        "filename": "animals-baboon.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-baboon.png",
+          "images/animals/animals-baboon.png"
+        ]
+      },
+      {
+        "filename": "animals-baboons-hanging.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-baboons-hanging.png",
+          "images/animals/animals-baboons-hanging.png"
+        ]
+      },
+      {
+        "filename": "animals-baboons.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-baboons.png",
+          "images/animals/animals-baboons.png"
+        ]
+      },
+      {
+        "filename": "animals-badger.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-badger.png",
+          "images/animals/animals-badger.png"
+        ]
+      },
+      {
+        "filename": "animals-badgers-wildlife.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-badgers-wildlife.png",
+          "images/animals/animals-badgers-wildlife.png"
+        ]
+      },
+      {
+        "filename": "animals-badgers.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-badgers.png",
+          "images/animals/animals-badgers.png"
+        ]
+      },
+      {
+        "filename": "animals-bats-wildlife.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-bats-wildlife.png",
+          "images/animals/animals-bats-wildlife.png"
+        ]
+      },
+      {
+        "filename": "animals-bats.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-bats.png",
+          "images/animals/animals-bats.png"
+        ]
+      },
+      {
+        "filename": "animals-bears-wildlife.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-bears-wildlife.png",
+          "images/animals/animals-bears-wildlife.png"
+        ]
+      },
+      {
+        "filename": "animals-bears.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-bears.png",
+          "images/animals/animals-bears.png"
+        ]
+      },
+      {
+        "filename": "animals-beavers-wildlife.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-beavers-wildlife.png",
+          "images/animals/animals-beavers-wildlife.png"
+        ]
+      },
+      {
+        "filename": "animals-beavers.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-beavers.png",
+          "images/animals/animals-beavers.png"
+        ]
+      },
+      {
+        "filename": "animals-bison-wildlife.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-bison-wildlife.png",
+          "images/animals/animals-bison-wildlife.png"
+        ]
+      },
+      {
+        "filename": "animals-bison.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-bison.png",
+          "images/animals/animals-bison.png"
+        ]
+      },
+      {
+        "filename": "animals-boars-wildlife.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-boars-wildlife.png",
+          "images/animals/animals-boars-wildlife.png"
+        ]
+      },
+      {
+        "filename": "animals-boars.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-boars.png",
+          "images/animals/animals-boars.png"
+        ]
+      },
+      {
+        "filename": "animals-bulls-wildlife.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-bulls-wildlife.png",
+          "images/animals/animals-bulls-wildlife.png"
+        ]
+      },
+      {
+        "filename": "animals-bulls.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-bulls.png",
+          "images/animals/animals-bulls.png"
+        ]
+      },
+      {
+        "filename": "animals-camels-wildlife.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-camels-wildlife.png",
+          "images/animals/animals-camels-wildlife.png"
+        ]
+      },
+      {
+        "filename": "animals-camels.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-camels.png",
+          "images/animals/animals-camels.png"
+        ]
+      },
+      {
+        "filename": "animals-cats-wildlife.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-cats-wildlife.png",
+          "images/animals/animals-cats-wildlife.png"
+        ]
+      },
+      {
+        "filename": "animals-cats.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-cats.png",
+          "images/animals/animals-cats.png"
+        ]
+      },
+      {
+        "filename": "animals-cheetahs-wildlife.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-cheetahs-wildlife.png",
+          "images/animals/animals-cheetahs-wildlife.png"
+        ]
+      },
+      {
+        "filename": "animals-cheetahs.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-cheetahs.png",
+          "images/animals/animals-cheetahs.png"
+        ]
+      },
+      {
+        "filename": "animals-chimpanzees-wildlife.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-chimpanzees-wildlife.png",
+          "images/animals/animals-chimpanzees-wildlife.png"
+        ]
+      },
+      {
+        "filename": "animals-cows-wildlife.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-cows-wildlife.png",
+          "images/animals/animals-cows-wildlife.png"
+        ]
+      },
+      {
+        "filename": "animals-cows.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-cows.png",
+          "images/animals/animals-cows.png"
+        ]
+      },
+      {
+        "filename": "animals-donkeys-wildlife.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-donkeys-wildlife.png",
+          "images/animals/animals-donkeys-wildlife.png"
+        ]
+      },
+      {
+        "filename": "animals-donkeys.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-donkeys.png",
+          "images/animals/animals-donkeys.png"
+        ]
+      },
+      {
+        "filename": "animals-elephants-wildlife.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-elephants-wildlife.png",
+          "images/animals/animals-elephants-wildlife.png"
+        ]
+      },
+      {
+        "filename": "animals-elephants.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-elephants.png",
+          "images/animals/animals-elephants.png"
+        ]
+      },
+      {
+        "filename": "animals-foxes-wildlife.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-foxes-wildlife.png",
+          "images/animals/animals-foxes-wildlife.png"
+        ]
+      },
+      {
+        "filename": "animals-foxes.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-foxes.png",
+          "images/animals/animals-foxes.png"
+        ]
+      },
+      {
+        "filename": "animals-giraffes-family.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-giraffes-family.png",
+          "images/animals/animals-giraffes-family.png"
+        ]
+      },
+      {
+        "filename": "animals-giraffes.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-giraffes.png",
+          "images/animals/animals-giraffes.png"
+        ]
+      },
+      {
+        "filename": "animals-gorillas.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-gorillas.png",
+          "images/animals/animals-gorillas.png"
+        ]
+      },
+      {
+        "filename": "animals-hedgehogs.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-hedgehogs.png",
+          "images/animals/animals-hedgehogs.png"
+        ]
+      },
+      {
+        "filename": "animals-hippos.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-hippos.png",
+          "images/animals/animals-hippos.png"
+        ]
+      },
+      {
+        "filename": "animals-horses.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-horses.png",
+          "images/animals/animals-horses.png"
+        ]
+      },
+      {
+        "filename": "animals-jaguars.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-jaguars.png",
+          "images/animals/animals-jaguars.png"
+        ]
+      },
+      {
+        "filename": "animals-kangaroos.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-kangaroos.png",
+          "images/animals/animals-kangaroos.png"
+        ]
+      },
+      {
+        "filename": "animals-kittens.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-kittens.png",
+          "images/animals/animals-kittens.png"
+        ]
+      },
+      {
+        "filename": "animals-koalas.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-koalas.png",
+          "images/animals/animals-koalas.png"
+        ]
+      },
+      {
+        "filename": "animals-lemurs.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-lemurs.png",
+          "images/animals/animals-lemurs.png"
+        ]
+      },
+      {
+        "filename": "animals-llamas.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-llamas.png",
+          "images/animals/animals-llamas.png"
+        ]
+      },
+      {
+        "filename": "animals-moose.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-moose.png",
+          "images/animals/animals-moose.png"
+        ]
+      },
+      {
+        "filename": "animals-mouse.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-mouse.png",
+          "images/animals/animals-mouse.png"
+        ]
+      },
+      {
+        "filename": "animals-orangutans.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-orangutans.png",
+          "images/animals/animals-orangutans.png"
+        ]
+      },
+      {
+        "filename": "animals-pandas.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-pandas.png",
+          "images/animals/animals-pandas.png"
+        ]
+      },
+      {
+        "filename": "animals-panthers.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-panthers.png",
+          "images/animals/animals-panthers.png"
+        ]
+      },
+      {
+        "filename": "animals-porcupines.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-porcupines.png",
+          "images/animals/animals-porcupines.png"
+        ]
+      },
+      {
+        "filename": "animals-possums.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-possums.png",
+          "images/animals/animals-possums.png"
+        ]
+      },
+      {
+        "filename": "animals-pride-of-lions.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-pride-of-lions.png",
+          "images/animals/animals-pride-of-lions.png"
+        ]
+      },
+      {
+        "filename": "animals-rabbits.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-rabbits.png",
+          "images/animals/animals-rabbits.png"
+        ]
+      },
+      {
+        "filename": "animals-raccoons.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-raccoons.png",
+          "images/animals/animals-raccoons.png"
+        ]
+      },
+      {
+        "filename": "animals-rams.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-rams.png",
+          "images/animals/animals-rams.png"
+        ]
+      },
+      {
+        "filename": "animals-rhinos-charging-safari.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-rhinos-charging-safari.png",
+          "images/animals/animals-rhinos-charging-safari.png"
+        ]
+      },
+      {
+        "filename": "animals-sheep-grazing.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-sheep-grazing.png",
+          "images/animals/animals-sheep-grazing.png"
+        ]
+      },
+      {
+        "filename": "animals-skunks.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-skunks.png",
+          "images/animals/animals-skunks.png"
+        ]
+      },
+      {
+        "filename": "animals-sloths.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-sloths.png",
+          "images/animals/animals-sloths.png"
+        ]
+      },
+      {
+        "filename": "animals-squirrels.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-squirrels.png",
+          "images/animals/animals-squirrels.png"
+        ]
+      },
+      {
+        "filename": "animals-tigers.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-tigers.png",
+          "images/animals/animals-tigers.png"
+        ]
+      },
+      {
+        "filename": "animals-wolverines.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-wolverines.png",
+          "images/animals/animals-wolverines.png"
+        ]
+      },
+      {
+        "filename": "animals-wolves.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-wolves.png",
+          "images/animals/animals-wolves.png"
+        ]
+      },
+      {
+        "filename": "animals-zebras.png",
+        "count": 2,
+        "examples": [
+          "images/Animals playing cards/animals-zebras.png",
+          "images/animals/animals-zebras.png"
+        ]
+      },
+      {
+        "filename": "anime-girl-ankylosaurus-hoodie-plushie.png",
+        "count": 2,
+        "examples": [
+          "images/anime-girls/anime-girl-ankylosaurus-hoodie-plushie.png",
+          "images/anime-girls/old-cards/anime-girl-ankylosaurus-hoodie-plushie.png"
+        ]
+      },
+      {
+        "filename": "anime-girl-axolotl-hoodie-plushie.png",
+        "count": 2,
+        "examples": [
+          "images/anime-girls/anime-girl-axolotl-hoodie-plushie.png",
+          "images/anime-girls/old-cards/anime-girl-axolotl-hoodie-plushie.png"
+        ]
+      },
+      {
+        "filename": "anime-girl-beach-bakini.png",
+        "count": 2,
+        "examples": [
+          "images/anime-girls/anime-girl-beach-bakini.png",
+          "images/anime-girls/old-cards/anime-girl-beach-bakini.png"
+        ]
+      },
+      {
+        "filename": "anime-girl-belly-dancing.png",
+        "count": 2,
+        "examples": [
+          "images/anime-girls/anime-girl-belly-dancing.png",
+          "images/anime-girls/old-cards/anime-girl-belly-dancing.png"
+        ]
+      },
+      {
+        "filename": "anime-girl-boxing.png",
+        "count": 2,
+        "examples": [
+          "images/anime-girls/anime-girl-boxing.png",
+          "images/anime-girls/old-cards/anime-girl-boxing.png"
+        ]
+      },
+      {
+        "filename": "anime-girl-brachiosaurus-hoodie-plushie.png",
+        "count": 2,
+        "examples": [
+          "images/anime-girls/anime-girl-brachiosaurus-hoodie-plushie.png",
+          "images/anime-girls/old-cards/anime-girl-brachiosaurus-hoodie-plushie.png"
+        ]
+      },
+      {
+        "filename": "anime-girl-brazilian-jiu-jitsu.png",
+        "count": 2,
+        "examples": [
+          "images/anime-girls/anime-girl-brazilian-jiu-jitsu.png",
+          "images/anime-girls/old-cards/anime-girl-brazilian-jiu-jitsu.png"
+        ]
+      },
+      {
+        "filename": "anime-girl-brontosaurus-hoodie-plushie.png",
+        "count": 2,
+        "examples": [
+          "images/anime-girls/anime-girl-brontosaurus-hoodie-plushie.png",
+          "images/anime-girls/old-cards/anime-girl-brontosaurus-hoodie-plushie.png"
+        ]
+      },
+      {
+        "filename": "anime-girl-cave-climbing.png",
+        "count": 2,
+        "examples": [
+          "images/anime-girls/anime-girl-cave-climbing.png",
+          "images/anime-girls/old-cards/anime-girl-cave-climbing.png"
+        ]
+      },
+      {
+        "filename": "anime-girl-crying.png",
+        "count": 2,
+        "examples": [
+          "images/anime-girls/anime-girl-crying.png",
+          "images/anime-girls/old-cards/anime-girl-crying.png"
+        ]
+      },
+      {
+        "filename": "anime-girl-cyberpunk-armor.png",
+        "count": 2,
+        "examples": [
+          "images/anime-girls/anime-girl-cyberpunk-armor.png",
+          "images/anime-girls/old-cards/anime-girl-cyberpunk-armor.png"
+        ]
+      },
+      {
+        "filename": "anime-girl-deadlift.png",
+        "count": 2,
+        "examples": [
+          "images/anime-girls/anime-girl-deadlift.png",
+          "images/anime-girls/old-cards/anime-girl-deadlift.png"
+        ]
+      },
+      {
+        "filename": "anime-girl-dinosaur-fossil-hoodie-plushie.png",
+        "count": 2,
+        "examples": [
+          "images/anime-girls/anime-girl-dinosaur-fossil-hoodie-plushie.png",
+          "images/anime-girls/old-cards/anime-girl-dinosaur-fossil-hoodie-plushie.png"
+        ]
+      },
+      {
+        "filename": "anime-girl-dips.png",
+        "count": 2,
+        "examples": [
+          "images/anime-girls/anime-girl-dips.png",
+          "images/anime-girls/old-cards/anime-girl-dips.png"
+        ]
+      },
+      {
+        "filename": "anime-girl-dodo-bird-hoodie-plushie.png",
+        "count": 2,
+        "examples": [
+          "images/anime-girls/anime-girl-dodo-bird-hoodie-plushie.png",
+          "images/anime-girls/old-cards/anime-girl-dodo-bird-hoodie-plushie.png"
+        ]
+      },
+      {
+        "filename": "anime-girl-dragon-eggs-hoodie-plushie.png",
+        "count": 2,
+        "examples": [
+          "images/anime-girls/anime-girl-dragon-eggs-hoodie-plushie.png",
+          "images/anime-girls/old-cards/anime-girl-dragon-eggs-hoodie-plushie.png"
+        ]
+      },
+      {
+        "filename": "anime-girl-dragon-hoodie-plushie.png",
+        "count": 2,
+        "examples": [
+          "images/anime-girls/anime-girl-dragon-hoodie-plushie.png",
+          "images/anime-girls/old-cards/anime-girl-dragon-hoodie-plushie.png"
+        ]
+      },
+      {
+        "filename": "anime-girl-dragon-queen.png",
+        "count": 2,
+        "examples": [
+          "images/anime-girls/anime-girl-dragon-queen.png",
+          "images/anime-girls/old-cards/anime-girl-dragon-queen.png"
+        ]
+      },
+      {
+        "filename": "anime-girl-elephant-hoodie-plushie.png",
+        "count": 2,
+        "examples": [
+          "images/anime-girls/anime-girl-elephant-hoodie-plushie.png",
+          "images/anime-girls/old-cards/anime-girl-elephant-hoodie-plushie.png"
+        ]
+      },
+      {
+        "filename": "anime-girl-fishing.png",
+        "count": 2,
+        "examples": [
+          "images/anime-girls/anime-girl-fishing.png",
+          "images/anime-girls/old-cards/anime-girl-fishing.png"
+        ]
+      },
+      {
+        "filename": "anime-girl-fox.png",
+        "count": 2,
+        "examples": [
+          "images/anime-girls/anime-girl-fox.png",
+          "images/anime-girls/old-cards/anime-girl-fox.png"
+        ]
+      },
+      {
+        "filename": "anime-girl-future-mech.png",
+        "count": 2,
+        "examples": [
+          "images/anime-girls/anime-girl-future-mech.png",
+          "images/anime-girls/old-cards/anime-girl-future-mech.png"
+        ]
+      },
+      {
+        "filename": "anime-girl-giraffe-hoodie-plushie.png",
+        "count": 2,
+        "examples": [
+          "images/anime-girls/anime-girl-giraffe-hoodie-plushie.png",
+          "images/anime-girls/old-cards/anime-girl-giraffe-hoodie-plushie.png"
+        ]
+      },
+      {
+        "filename": "anime-girl-gorilla-hoodie-plushie.png",
+        "count": 2,
+        "examples": [
+          "images/anime-girls/anime-girl-gorilla-hoodie-plushie.png",
+          "images/anime-girls/old-cards/anime-girl-gorilla-hoodie-plushie.png"
+        ]
+      },
+      {
+        "filename": "anime-girl-horse-hoodie-plushie.png",
+        "count": 2,
+        "examples": [
+          "images/anime-girls/anime-girl-horse-hoodie-plushie.png",
+          "images/anime-girls/old-cards/anime-girl-horse-hoodie-plushie.png"
+        ]
+      },
+      {
+        "filename": "anime-girl-ice-climbing.png",
+        "count": 2,
+        "examples": [
+          "images/anime-girls/anime-girl-ice-climbing.png",
+          "images/anime-girls/old-cards/anime-girl-ice-climbing.png"
+        ]
+      },
+      {
+        "filename": "anime-girl-koala-hoodie-plushie.png",
+        "count": 2,
+        "examples": [
+          "images/anime-girls/anime-girl-koala-hoodie-plushie.png",
+          "images/anime-girls/old-cards/anime-girl-koala-hoodie-plushie.png"
+        ]
+      },
+      {
+        "filename": "anime-girl-lion-hoodie-plushie.png",
+        "count": 2,
+        "examples": [
+          "images/anime-girls/anime-girl-lion-hoodie-plushie.png",
+          "images/anime-girls/old-cards/anime-girl-lion-hoodie-plushie.png"
+        ]
+      },
+      {
+        "filename": "anime-girl-martial-arts.png",
+        "count": 2,
+        "examples": [
+          "images/anime-girls/anime-girl-martial-arts.png",
+          "images/anime-girls/old-cards/anime-girl-martial-arts.png"
+        ]
+      },
+      {
+        "filename": "anime-girl-megalodon-hoodie-plushie.png",
+        "count": 2,
+        "examples": [
+          "images/anime-girls/anime-girl-megalodon-hoodie-plushie.png",
+          "images/anime-girls/old-cards/anime-girl-megalodon-hoodie-plushie.png"
+        ]
+      },
+      {
+        "filename": "anime-girl-nurse-doing-cpr.png",
+        "count": 2,
+        "examples": [
+          "images/anime-girls/anime-girl-nurse-doing-cpr.png",
+          "images/anime-girls/old-cards/anime-girl-nurse-doing-cpr.png"
+        ]
+      },
+      {
+        "filename": "anime-girl-panda-hoodie-plushie.png",
+        "count": 2,
+        "examples": [
+          "images/anime-girls/anime-girl-panda-hoodie-plushie.png",
+          "images/anime-girls/old-cards/anime-girl-panda-hoodie-plushie.png"
+        ]
+      }
+    ],
+    "humanAdjacentCategories": [
+      "anime-girls",
+      "chibi",
+      "fantasy",
+      "horror",
+      "midieval",
+      "mythology"
+    ]
+  },
+  "sampleStrategy": {
+    "requestedTargetSize": 250,
+    "actualSampleSize": 250,
+    "includesEveryCategory": true,
+    "oversamplesHumanAdjacentCategories": true,
+    "sourceFilesCopied": false
+  },
+  "missingInformation": [
+    "No final conversion preset policy has been selected.",
+    "No visual QA rubric thresholds have been approved yet.",
+    "No Next.js public gallery app exists in this workspace yet.",
+    "No production asset naming or public URL policy has been finalized."
+  ],
+  "risks": [
+    "Human and humanoid categories may contain anatomy defects that are not detectable from filenames or metadata.",
+    "Duplicate filenames across categories require metadata-driven asset IDs before production export.",
+    "Some folders are very small and should be merged into broader hubs unless content quality justifies a niche page.",
+    "The I Love SVG repo is dirty. Reuse should avoid overwriting its current uncommitted work.",
+    "The existing converter has no standalone batch CLI. Batch conversion should start with a small wrapper and a bakeoff batch only."
+  ],
+  "recommendedNextStep": "Round 2 should run a small preset bakeoff on the sample manifest only, write conversion outputs under pipeline/bakeoffs, and produce conversion plus anatomy review manifests before any production asset generation.",
+  "sharpAvailableForInventory": true
+}
