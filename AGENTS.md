@@ -14,6 +14,11 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Always work in small batches first.
 - Always produce manifests and reports for inventory, conversion, review, and production decisions.
 - Always quarantine questionable images instead of silently approving or deleting them.
+- Future production, export, gallery, sitemap, and metadata scripts must consume `pipeline/manifests/round-3a-approved-source-images.json` or a later approved-source manifest. They must not directly glob `images/` for production inputs.
+- Round 2 flagged images are rejected for now.
+- Round 3A rejected images are rejected for now.
+- Rejected images may only be restored by an explicit future approval/update manifest.
+- When uncertain, reject for now.
 
 ## Human And Humanoid QA
 
