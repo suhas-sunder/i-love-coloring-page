@@ -19,6 +19,17 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Round 3A rejected images are rejected for now.
 - Rejected images may only be restored by an explicit future approval/update manifest.
 - When uncertain, reject for now.
+- High-risk category does not mean automatic rejection.
+- Human-adjacent category does not mean automatic rejection.
+- Category membership may increase scrutiny but must not be used as the only rejection reason.
+- Warning images are still eligible unless they have concrete rejection-level issues.
+- Most source images have already been manually reviewed and should be treated as mostly valid.
+- Future source QA should approve by default unless a concrete defect is identified.
+- New source QA rejection counts above 500, excluding previously blocked Round 2 images, require diagnostic failure mode.
+- Future production, export, gallery, sitemap, and metadata scripts should use the latest approved-source manifest, currently `pipeline/manifests/round-3a1-approved-source-images.json`, unless replaced by a later approved manifest.
+- Future blocked-source logic should use the latest blocked-source manifest, currently `pipeline/manifests/round-3a1-blocked-source-images.json`, unless replaced by a later blocked manifest.
+- Duplicate filenames are not duplicate images by themselves; keep same-name images when content differs and use deterministic collision-safe output IDs.
+- Only exact duplicate image content may be excluded as a duplicate, and source files must still never be deleted or moved.
 
 ## Human And Humanoid QA
 

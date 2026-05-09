@@ -1,0 +1,2733 @@
+{
+  "generatedAt": "2026-05-09",
+  "sourceManifest": "pipeline/manifests/round-3a1-approved-source-images.json",
+  "blockedManifest": "pipeline/manifests/round-3a1-blocked-source-images.json",
+  "policyManifest": "pipeline/manifests/round-2-recommended-policy.json",
+  "targetSampleSize": 125,
+  "actualSampleSize": 125,
+  "warningSampleCount": 83,
+  "selectionStrategy": "Approved-source only, includes every category where possible, prioritizes high-value categories without allowing warnings to dominate the sample.",
+  "samples": [
+    {
+      "dryRunSampleId": "r3a1-dryrun-001-animals-animals-butterflies-016ffbb0",
+      "sampleIndex": 1,
+      "sourceRelativePath": "images/animals/animals-butterflies.png",
+      "category": "animals",
+      "nestedCategory": null,
+      "filename": "animals-butterflies.png",
+      "fileSizeBytes": 2441985,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-002-animals-playing-cards-animals-armadillo-1a6eaccd",
+      "sampleIndex": 2,
+      "sourceRelativePath": "images/Animals playing cards/animals-armadillo.png",
+      "category": "Animals playing cards",
+      "nestedCategory": null,
+      "filename": "animals-armadillo.png",
+      "fileSizeBytes": 1564671,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_duplicate_filename_collision_handled",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-003-animals-playing-cards-animals-armadillos-wildlife-f2912c1a",
+      "sampleIndex": 3,
+      "sourceRelativePath": "images/Animals playing cards/animals-armadillos-wildlife.png",
+      "category": "Animals playing cards",
+      "nestedCategory": null,
+      "filename": "animals-armadillos-wildlife.png",
+      "fileSizeBytes": 1803135,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_duplicate_filename_collision_handled",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-004-animals-playing-cards-animals-armadillos-50db4716",
+      "sampleIndex": 4,
+      "sourceRelativePath": "images/Animals playing cards/animals-armadillos.png",
+      "category": "Animals playing cards",
+      "nestedCategory": null,
+      "filename": "animals-armadillos.png",
+      "fileSizeBytes": 2581412,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_duplicate_filename_collision_handled",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-005-animals-playing-cards-animals-baboon-3019f9ef",
+      "sampleIndex": 5,
+      "sourceRelativePath": "images/Animals playing cards/animals-baboon.png",
+      "category": "Animals playing cards",
+      "nestedCategory": null,
+      "filename": "animals-baboon.png",
+      "fileSizeBytes": 1899803,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_duplicate_filename_collision_handled",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-006-animals-playing-cards-animals-baboons-hanging-398854ec",
+      "sampleIndex": 6,
+      "sourceRelativePath": "images/Animals playing cards/animals-baboons-hanging.png",
+      "category": "Animals playing cards",
+      "nestedCategory": null,
+      "filename": "animals-baboons-hanging.png",
+      "fileSizeBytes": 1420611,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_duplicate_filename_collision_handled",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-007-animals-playing-cards-animals-baboons-5f19666c",
+      "sampleIndex": 7,
+      "sourceRelativePath": "images/Animals playing cards/animals-baboons.png",
+      "category": "Animals playing cards",
+      "nestedCategory": null,
+      "filename": "animals-baboons.png",
+      "fileSizeBytes": 1546931,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_duplicate_filename_collision_handled",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-008-animals-playing-cards-animals-badger-46333741",
+      "sampleIndex": 8,
+      "sourceRelativePath": "images/Animals playing cards/animals-badger.png",
+      "category": "Animals playing cards",
+      "nestedCategory": null,
+      "filename": "animals-badger.png",
+      "fileSizeBytes": 2716164,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_duplicate_filename_collision_handled",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-009-animals-playing-cards-animals-badgers-wildlife-d717f795",
+      "sampleIndex": 9,
+      "sourceRelativePath": "images/Animals playing cards/animals-badgers-wildlife.png",
+      "category": "Animals playing cards",
+      "nestedCategory": null,
+      "filename": "animals-badgers-wildlife.png",
+      "fileSizeBytes": 2965234,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_duplicate_filename_collision_handled",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-010-animals-playing-cards-animals-badgers-701e4f01",
+      "sampleIndex": 10,
+      "sourceRelativePath": "images/Animals playing cards/animals-badgers.png",
+      "category": "Animals playing cards",
+      "nestedCategory": null,
+      "filename": "animals-badgers.png",
+      "fileSizeBytes": 1671505,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_duplicate_filename_collision_handled",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-011-animals-playing-cards-cats-playing-cards-c22648db",
+      "sampleIndex": 11,
+      "sourceRelativePath": "images/Animals playing cards/cats-playing-cards.png",
+      "category": "Animals playing cards",
+      "nestedCategory": null,
+      "filename": "cats-playing-cards.png",
+      "fileSizeBytes": 3557584,
+      "dimensions": {
+        "width": 923,
+        "height": 1385
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-012-animals-playing-cards-mice-playing-cards-4c3ddb81",
+      "sampleIndex": 12,
+      "sourceRelativePath": "images/Animals playing cards/mice-playing-cards.png",
+      "category": "Animals playing cards",
+      "nestedCategory": null,
+      "filename": "mice-playing-cards.png",
+      "fileSizeBytes": 2525491,
+      "dimensions": {
+        "width": 923,
+        "height": 1385
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-013-anime-girls-anime-girl-bat-hoodie-plushie-001c0e28",
+      "sampleIndex": 13,
+      "sourceRelativePath": "images/anime-girls/anime-girl-bat-hoodie-plushie.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-bat-hoodie-plushie.png",
+      "fileSizeBytes": 1647508,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-014-anime-girls-anime-girl-cerberus-gate-guard-17fd6275",
+      "sampleIndex": 14,
+      "sourceRelativePath": "images/anime-girls/anime-girl-cerberus-gate-guard.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-cerberus-gate-guard.png",
+      "fileSizeBytes": 2344536,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-015-anime-girls-anime-girl-dancing-ballerina-5a1b3b18",
+      "sampleIndex": 15,
+      "sourceRelativePath": "images/anime-girls/anime-girl-dancing-ballerina.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-dancing-ballerina.png",
+      "fileSizeBytes": 1626424,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-016-anime-girls-anime-girl-summoning-cute-hearts-2cdbd957",
+      "sampleIndex": 16,
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-cute-hearts.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-summoning-cute-hearts.png",
+      "fileSizeBytes": 1752003,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-017-anime-girls-anime-girl-summoning-jutsu-armadillo-plushies-d5cf38eb",
+      "sampleIndex": 17,
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-armadillo-plushies.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-summoning-jutsu-armadillo-plushies.png",
+      "fileSizeBytes": 1813381,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-018-anime-girls-anime-girl-summoning-jutsu-crystal-dragon-ba9a35e4",
+      "sampleIndex": 18,
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-crystal-dragon.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-summoning-jutsu-crystal-dragon.png",
+      "fileSizeBytes": 1945542,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-019-anime-girls-anime-girl-summoning-jutsu-raccoons-443a729e",
+      "sampleIndex": 19,
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-raccoons.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-summoning-jutsu-raccoons.png",
+      "fileSizeBytes": 2396509,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-020-anime-girls-anime-girl-summoning-jutsu-wolves-ff6d1d04",
+      "sampleIndex": 20,
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-wolves.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-summoning-jutsu-wolves.png",
+      "fileSizeBytes": 2560566,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-021-anime-girls-anime-girl-summoning-magic-musical-sword-plushies-72066c4f",
+      "sampleIndex": 21,
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-magic-musical-sword-plushies.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-summoning-magic-musical-sword-plushies.png",
+      "fileSizeBytes": 2784092,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-022-anime-girls-anime-girl-summoning-mushroom-fairy-plushies-a1778cbd",
+      "sampleIndex": 22,
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-mushroom-fairy-plushies.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-summoning-mushroom-fairy-plushies.png",
+      "fileSizeBytes": 2084538,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-023-anime-girls-anime-girl-vampire-siege-e9ce96c8",
+      "sampleIndex": 23,
+      "sourceRelativePath": "images/anime-girls/anime-girl-vampire-siege.png",
+      "category": "anime-girls",
+      "nestedCategory": null,
+      "filename": "anime-girl-vampire-siege.png",
+      "fileSizeBytes": 1694580,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-024-anime-girls-anime-girl-thief-8a5252f8",
+      "sampleIndex": 24,
+      "sourceRelativePath": "images/anime-girls/old-cards/anime-girl-thief.png",
+      "category": "anime-girls",
+      "nestedCategory": "old-cards",
+      "filename": "anime-girl-thief.png",
+      "fileSizeBytes": 2847830,
+      "dimensions": {
+        "width": 877,
+        "height": 1315
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_duplicate_filename_collision_handled",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-025-birds-birds-booby-0116ccb7",
+      "sampleIndex": 25,
+      "sourceRelativePath": "images/birds/birds-booby.png",
+      "category": "birds",
+      "nestedCategory": null,
+      "filename": "birds-booby.png",
+      "fileSizeBytes": 1852521,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-026-birds-birds-cardinal-8fa3cbca",
+      "sampleIndex": 26,
+      "sourceRelativePath": "images/birds/birds-cardinal.png",
+      "category": "birds",
+      "nestedCategory": null,
+      "filename": "birds-cardinal.png",
+      "fileSizeBytes": 1946610,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-027-birds-birds-macaw-parrot-sitting-ffc0bb9e",
+      "sampleIndex": 27,
+      "sourceRelativePath": "images/birds/birds-macaw-parrot-sitting.png",
+      "category": "birds",
+      "nestedCategory": null,
+      "filename": "birds-macaw-parrot-sitting.png",
+      "fileSizeBytes": 1733362,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-028-birds-birds-snow-bunting-55540ffe",
+      "sampleIndex": 28,
+      "sourceRelativePath": "images/birds/birds-snow-bunting.png",
+      "category": "birds",
+      "nestedCategory": null,
+      "filename": "birds-snow-bunting.png",
+      "fileSizeBytes": 1700156,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-029-chibi-chibi-animals-pets-dogs-old-english-sheepdog-ff97a096",
+      "sampleIndex": 29,
+      "sourceRelativePath": "images/chibi/chibi-animals-pets-dogs-old-english-sheepdog.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-animals-pets-dogs-old-english-sheepdog.png",
+      "fileSizeBytes": 709674,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-030-chibi-chibi-dragon-5c5b02a5",
+      "sampleIndex": 30,
+      "sourceRelativePath": "images/chibi/chibi-Dragon.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-Dragon.png",
+      "fileSizeBytes": 1912119,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-031-chibi-chibi-enchanted-forest-fairy-dancing-under-moonlight-00578c25",
+      "sampleIndex": 31,
+      "sourceRelativePath": "images/chibi/chibi-enchanted-forest-fairy-dancing-under-moonlight.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-enchanted-forest-fairy-dancing-under-moonlight.png",
+      "fileSizeBytes": 990726,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-032-chibi-chibi-flowers-paper-daisy-kawaii-14c5b171",
+      "sampleIndex": 32,
+      "sourceRelativePath": "images/chibi/chibi-flowers-paper-daisy-kawaii.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-flowers-paper-daisy-kawaii.png",
+      "fileSizeBytes": 781284,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-033-chibi-chibi-holiday-halloween-ghost-floating-in-haunted-hallway-coloring-page-2ecd4724",
+      "sampleIndex": 33,
+      "sourceRelativePath": "images/chibi/chibi-holiday-halloween-ghost-floating-in-haunted-hallway-coloring-page.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-holiday-halloween-ghost-floating-in-haunted-hallway-coloring-page.png",
+      "fileSizeBytes": 1015873,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-034-chibi-chibi-holiday-halloween-witch-hat-and-potion-bottles-coloring-page-74c58986",
+      "sampleIndex": 34,
+      "sourceRelativePath": "images/chibi/chibi-holiday-halloween-witch-hat-and-potion-bottles-coloring-page.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-holiday-halloween-witch-hat-and-potion-bottles-coloring-page.png",
+      "fileSizeBytes": 1022704,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-035-chibi-chibi-leviathan-dragon-8b4e46e9",
+      "sampleIndex": 35,
+      "sourceRelativePath": "images/chibi/chibi-leviathan-dragon.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-leviathan-dragon.png",
+      "fileSizeBytes": 1844927,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-036-chibi-chibi-mushroom-artists-conk-kawaii-e5ba8823",
+      "sampleIndex": 36,
+      "sourceRelativePath": "images/chibi/chibi-mushroom-artists-conk-kawaii.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-mushroom-artists-conk-kawaii.png",
+      "fileSizeBytes": 856502,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-037-chibi-chibi-mushroom-friend-ce358f4b",
+      "sampleIndex": 37,
+      "sourceRelativePath": "images/chibi/chibi-mushroom-friend.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-mushroom-friend.png",
+      "fileSizeBytes": 697000,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-038-chibi-chibi-plushie-duck-b6c74cea",
+      "sampleIndex": 38,
+      "sourceRelativePath": "images/chibi/chibi-plushie-duck.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-plushie-duck.png",
+      "fileSizeBytes": 824300,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-039-chibi-chibi-plushie-flamingo-a32d6212",
+      "sampleIndex": 39,
+      "sourceRelativePath": "images/chibi/chibi-plushie-flamingo.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-plushie-flamingo.png",
+      "fileSizeBytes": 754344,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-040-chibi-chibi-plushie-kiwi-bird-4205a7df",
+      "sampleIndex": 40,
+      "sourceRelativePath": "images/chibi/chibi-plushie-kiwi-bird.png",
+      "category": "chibi",
+      "nestedCategory": null,
+      "filename": "chibi-plushie-kiwi-bird.png",
+      "fileSizeBytes": 689473,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-041-christmas-holiday-christmas-angel-holding-candle-in-snowy-night-coloring-page-fde31c07",
+      "sampleIndex": 41,
+      "sourceRelativePath": "images/christmas/holiday-christmas-angel-holding-candle-in-snowy-night-coloring-page.png",
+      "category": "christmas",
+      "nestedCategory": null,
+      "filename": "holiday-christmas-angel-holding-candle-in-snowy-night-coloring-page.png",
+      "fileSizeBytes": 926369,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-042-christmas-holiday-christmas-animals-kawaii-foxes-70f122f7",
+      "sampleIndex": 42,
+      "sourceRelativePath": "images/christmas/holiday-christmas-animals-kawaii-foxes.png",
+      "category": "christmas",
+      "nestedCategory": null,
+      "filename": "holiday-christmas-animals-kawaii-foxes.png",
+      "fileSizeBytes": 1009503,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-043-christmas-holiday-christmas-animals-unicorns-000d59a8",
+      "sampleIndex": 43,
+      "sourceRelativePath": "images/christmas/holiday-christmas-animals-unicorns.png",
+      "category": "christmas",
+      "nestedCategory": null,
+      "filename": "holiday-christmas-animals-unicorns.png",
+      "fileSizeBytes": 921328,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-044-dinosaurs-prehistoric-extinction-fb644701",
+      "sampleIndex": 44,
+      "sourceRelativePath": "images/dinosaurs/prehistoric-extinction.png",
+      "category": "dinosaurs",
+      "nestedCategory": null,
+      "filename": "prehistoric-extinction.png",
+      "fileSizeBytes": 1424956,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-045-dinosaurs-prehistoric-mosasaurus-08d7ae3d",
+      "sampleIndex": 45,
+      "sourceRelativePath": "images/dinosaurs/prehistoric-mosasaurus.png",
+      "category": "dinosaurs",
+      "nestedCategory": null,
+      "filename": "prehistoric-mosasaurus.png",
+      "fileSizeBytes": 1939247,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-046-dogs-dogs-border-collie-playing-ff795b9b",
+      "sampleIndex": 46,
+      "sourceRelativePath": "images/dogs/dogs-border-collie-playing.png",
+      "category": "dogs",
+      "nestedCategory": null,
+      "filename": "dogs-border-collie-playing.png",
+      "fileSizeBytes": 2548828,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-047-dogs-dogs-samoyed-016ca48e",
+      "sampleIndex": 47,
+      "sourceRelativePath": "images/dogs/dogs-samoyed.png",
+      "category": "dogs",
+      "nestedCategory": null,
+      "filename": "dogs-samoyed.png",
+      "fileSizeBytes": 2105769,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-048-dragons-fire-dragon-playing-card-bb5d73e9",
+      "sampleIndex": 48,
+      "sourceRelativePath": "images/dragons/fire-dragon-playing-card.png",
+      "category": "dragons",
+      "nestedCategory": null,
+      "filename": "fire-dragon-playing-card.png",
+      "fileSizeBytes": 3150567,
+      "dimensions": {
+        "width": 923,
+        "height": 1385
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-049-emoji-u-1f605-grinning-face-with-sweat-5348e43d",
+      "sampleIndex": 49,
+      "sourceRelativePath": "images/emoji/U+1F605-grinning-face-with-sweat.png",
+      "category": "emoji",
+      "nestedCategory": null,
+      "filename": "U+1F605-grinning-face-with-sweat.png",
+      "fileSizeBytes": 1900595,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-050-fantasy-fantasy-chibi-phoenix-flight-bd83c0d4",
+      "sampleIndex": 50,
+      "sourceRelativePath": "images/fantasy/fantasy-chibi-phoenix-flight.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-chibi-phoenix-flight.png",
+      "fileSizeBytes": 1045533,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-051-fantasy-fantasy-creatures-dragon-3d2c737c",
+      "sampleIndex": 51,
+      "sourceRelativePath": "images/fantasy/fantasy-creatures-dragon.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-creatures-dragon.png",
+      "fileSizeBytes": 1545524,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-052-fantasy-fantasy-creatures-minotaur-dfe85809",
+      "sampleIndex": 52,
+      "sourceRelativePath": "images/fantasy/fantasy-creatures-minotaur.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-creatures-minotaur.png",
+      "fileSizeBytes": 1651912,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-053-fantasy-fantasy-creatures-storm-elemental-5e2dd9a0",
+      "sampleIndex": 53,
+      "sourceRelativePath": "images/fantasy/fantasy-creatures-storm-elemental.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-creatures-storm-elemental.png",
+      "fileSizeBytes": 2185358,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-054-fantasy-fantasy-dark-sorcerer-void-gate-ff7080e5",
+      "sampleIndex": 54,
+      "sourceRelativePath": "images/fantasy/fantasy-dark-sorcerer-void-gate.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-dark-sorcerer-void-gate.png",
+      "fileSizeBytes": 2749671,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-055-fantasy-fantasy-mountain-giant-9d22f5b1",
+      "sampleIndex": 55,
+      "sourceRelativePath": "images/fantasy/fantasy-mountain-giant.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-mountain-giant.png",
+      "fileSizeBytes": 2122806,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-056-fantasy-fantasy-ranger-forest-hunt-1eca4c2d",
+      "sampleIndex": 56,
+      "sourceRelativePath": "images/fantasy/fantasy-ranger-forest-hunt.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-ranger-forest-hunt.png",
+      "fileSizeBytes": 1429818,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-057-fantasy-fantasy-river-guardian-82f7693f",
+      "sampleIndex": 57,
+      "sourceRelativePath": "images/fantasy/fantasy-river-guardian.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-river-guardian.png",
+      "fileSizeBytes": 1973685,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-058-fantasy-fantasy-scout-jungle-hunt-006c2853",
+      "sampleIndex": 58,
+      "sourceRelativePath": "images/fantasy/fantasy-scout-jungle-hunt.png",
+      "category": "fantasy",
+      "nestedCategory": null,
+      "filename": "fantasy-scout-jungle-hunt.png",
+      "fileSizeBytes": 1822660,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-059-flowers-flowers-aster-fe9cc46a",
+      "sampleIndex": 59,
+      "sourceRelativePath": "images/flowers/flowers-aster.png",
+      "category": "flowers",
+      "nestedCategory": null,
+      "filename": "flowers-aster.png",
+      "fileSizeBytes": 2348587,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-060-flowers-flowers-peach-blossom-a8803e35",
+      "sampleIndex": 60,
+      "sourceRelativePath": "images/flowers/flowers-peach-blossom.png",
+      "category": "flowers",
+      "nestedCategory": null,
+      "filename": "flowers-peach-blossom.png",
+      "fileSizeBytes": 1615367,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-061-flowers-gardening-in-field-of-flowers-iceland-5d9b4574",
+      "sampleIndex": 61,
+      "sourceRelativePath": "images/flowers/gardening-in-field-of-flowers-iceland.png",
+      "category": "flowers",
+      "nestedCategory": null,
+      "filename": "gardening-in-field-of-flowers-iceland.png",
+      "fileSizeBytes": 2199917,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-062-flowers-lowers-snowdrop-01c784b5",
+      "sampleIndex": 62,
+      "sourceRelativePath": "images/flowers/lowers-snowdrop.png",
+      "category": "flowers",
+      "nestedCategory": null,
+      "filename": "lowers-snowdrop.png",
+      "fileSizeBytes": 2241761,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-063-gardening-gardening-mushroom-candlesnuff-fungus-fa542d3c",
+      "sampleIndex": 63,
+      "sourceRelativePath": "images/gardening/gardening-mushroom-candlesnuff-fungus.png",
+      "category": "gardening",
+      "nestedCategory": null,
+      "filename": "gardening-mushroom-candlesnuff-fungus.png",
+      "fileSizeBytes": 1937878,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-064-gardening-gardening-mushroom-lions-mane-0719ae2d",
+      "sampleIndex": 64,
+      "sourceRelativePath": "images/gardening/gardening-mushroom-lions-mane.png",
+      "category": "gardening",
+      "nestedCategory": null,
+      "filename": "gardening-mushroom-lions-mane.png",
+      "fileSizeBytes": 1707902,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-065-holiday-holiday-birthday-celebration-plushie-antelope-family-cf8835f9",
+      "sampleIndex": 65,
+      "sourceRelativePath": "images/holiday/holiday-birthday-celebration-plushie-antelope-family.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-birthday-celebration-plushie-antelope-family.png",
+      "fileSizeBytes": 1085295,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-066-holiday-holiday-birthday-celebration-plushie-sloth-baby-family-0031534e",
+      "sampleIndex": 66,
+      "sourceRelativePath": "images/holiday/holiday-birthday-celebration-plushie-sloth-baby-family.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-birthday-celebration-plushie-sloth-baby-family.png",
+      "fileSizeBytes": 915095,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-067-holiday-holiday-birthday-celebration-plushie-tiger-family-3bd99a4c",
+      "sampleIndex": 67,
+      "sourceRelativePath": "images/holiday/holiday-birthday-celebration-plushie-tiger-family.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-birthday-celebration-plushie-tiger-family.png",
+      "fileSizeBytes": 1244305,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-068-holiday-holiday-christmas-plushie-robot-family-ff88fbd9",
+      "sampleIndex": 68,
+      "sourceRelativePath": "images/holiday/holiday-christmas-plushie-robot-family.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-christmas-plushie-robot-family.png",
+      "fileSizeBytes": 827244,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-069-holiday-holiday-christmas-plushie-tortoise-family-5a1ad1e8",
+      "sampleIndex": 69,
+      "sourceRelativePath": "images/holiday/holiday-christmas-plushie-tortoise-family.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-christmas-plushie-tortoise-family.png",
+      "fileSizeBytes": 869452,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-070-holiday-holiday-halloween-costume-plushie-chameleon-family-9b87e124",
+      "sampleIndex": 70,
+      "sourceRelativePath": "images/holiday/holiday-halloween-costume-plushie-chameleon-family.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-halloween-costume-plushie-chameleon-family.png",
+      "fileSizeBytes": 813993,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-071-holiday-holiday-halloween-costume-plushie-peacock-family-7c314086",
+      "sampleIndex": 71,
+      "sourceRelativePath": "images/holiday/holiday-halloween-costume-plushie-peacock-family.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-halloween-costume-plushie-peacock-family.png",
+      "fileSizeBytes": 926421,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-072-holiday-holiday-halloween-costume-plushie-penguin-family-1a247683",
+      "sampleIndex": 72,
+      "sourceRelativePath": "images/holiday/holiday-halloween-costume-plushie-penguin-family.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-halloween-costume-plushie-penguin-family.png",
+      "fileSizeBytes": 908739,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-073-holiday-holiday-halloween-costume-plushie-snail-family-b54dbecf",
+      "sampleIndex": 73,
+      "sourceRelativePath": "images/holiday/holiday-halloween-costume-plushie-snail-family.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-halloween-costume-plushie-snail-family.png",
+      "fileSizeBytes": 863267,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-074-holiday-holiday-halloween-witch-flying-coloring-page-e6790435",
+      "sampleIndex": 74,
+      "sourceRelativePath": "images/holiday/holiday-halloween-witch-flying-coloring-page.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-halloween-witch-flying-coloring-page.png",
+      "fileSizeBytes": 972331,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-075-homes-homes-treehouse-with-slide-0878b9ca",
+      "sampleIndex": 75,
+      "sourceRelativePath": "images/homes/homes-treehouse-with-slide.png",
+      "category": "homes",
+      "nestedCategory": null,
+      "filename": "homes-treehouse-with-slide.png",
+      "fileSizeBytes": 1205866,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-076-horror-zombies-8638f653",
+      "sampleIndex": 76,
+      "sourceRelativePath": "images/horror/zombies.png",
+      "category": "horror",
+      "nestedCategory": null,
+      "filename": "zombies.png",
+      "fileSizeBytes": 2426132,
+      "dimensions": {
+        "width": 923,
+        "height": 1385
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-077-indoor-plants-indoor-plants-english-ivy-fe8b320a",
+      "sampleIndex": 77,
+      "sourceRelativePath": "images/indoor-plants/indoor-plants-english-ivy.png",
+      "category": "indoor-plants",
+      "nestedCategory": null,
+      "filename": "indoor-plants-english-ivy.png",
+      "fileSizeBytes": 1804541,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-078-indoor-plants-indoor-plants-hoya-obovata-6d4f5fa2",
+      "sampleIndex": 78,
+      "sourceRelativePath": "images/indoor-plants/indoor-plants-hoya-obovata.png",
+      "category": "indoor-plants",
+      "nestedCategory": null,
+      "filename": "indoor-plants-hoya-obovata.png",
+      "fileSizeBytes": 1436453,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-079-indoor-plants-indoor-plants-peace-lily-01c9f71c",
+      "sampleIndex": 79,
+      "sourceRelativePath": "images/indoor-plants/indoor-plants-peace-lily.png",
+      "category": "indoor-plants",
+      "nestedCategory": null,
+      "filename": "indoor-plants-peace-lily.png",
+      "fileSizeBytes": 1702014,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-080-insects-insects-blue-morpho-butterfly-in-rainforest-feb57c57",
+      "sampleIndex": 80,
+      "sourceRelativePath": "images/Insects/insects-blue-morpho-butterfly-in-rainforest.png",
+      "category": "Insects",
+      "nestedCategory": null,
+      "filename": "insects-blue-morpho-butterfly-in-rainforest.png",
+      "fileSizeBytes": 1930974,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-081-insects-insects-damselfly-perched-on-reed-0367b38c",
+      "sampleIndex": 81,
+      "sourceRelativePath": "images/Insects/insects-damselfly-perched-on-reed.png",
+      "category": "Insects",
+      "nestedCategory": null,
+      "filename": "insects-damselfly-perched-on-reed.png",
+      "fileSizeBytes": 1737935,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-082-insects-insects-scorpion-904a5e6a",
+      "sampleIndex": 82,
+      "sourceRelativePath": "images/Insects/insects-scorpion.png",
+      "category": "Insects",
+      "nestedCategory": null,
+      "filename": "insects-scorpion.png",
+      "fileSizeBytes": 1620466,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-083-mandala-mandala-geometry-patterns-geometric-mandala-3369a57b",
+      "sampleIndex": 83,
+      "sourceRelativePath": "images/mandala/mandala-geometry-patterns-geometric-mandala.png",
+      "category": "mandala",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-geometric-mandala.png",
+      "fileSizeBytes": 2485954,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-084-mandala-geometry-patterns-mandala-geometry-patterns-bakery-spatula-and-dough-642ca300",
+      "sampleIndex": 84,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-bakery-spatula-and-dough.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-bakery-spatula-and-dough.png",
+      "fileSizeBytes": 1376339,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-085-mandala-geometry-patterns-mandala-geometry-patterns-dogs-english-springer-spaniel-7720e1c9",
+      "sampleIndex": 85,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-dogs-english-springer-spaniel.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-dogs-english-springer-spaniel.png",
+      "fileSizeBytes": 2730281,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-086-mandala-geometry-patterns-mandala-geometry-patterns-emergency-police-car-driving-f10bdc1e",
+      "sampleIndex": 86,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-emergency-police-car-driving.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-emergency-police-car-driving.png",
+      "fileSizeBytes": 2513623,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-087-mandala-geometry-patterns-mandala-geometry-patterns-flowers-protea-402c748e",
+      "sampleIndex": 87,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-flowers-protea.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-flowers-protea.png",
+      "fileSizeBytes": 2059008,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-088-mandala-geometry-patterns-mandala-geometry-patterns-japan-itsukushima-shrine-9b16382a",
+      "sampleIndex": 88,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-japan-itsukushima-shrine.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-japan-itsukushima-shrine.png",
+      "fileSizeBytes": 2105607,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-089-mandala-geometry-patterns-mandala-geometry-patterns-japan-takoyaki-snack-10b7a9eb",
+      "sampleIndex": 89,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-japan-takoyaki-snack.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-japan-takoyaki-snack.png",
+      "fileSizeBytes": 2800394,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-090-mandala-geometry-patterns-mandala-geometry-patterns-mushroom-cracked-cap-boletus-dd7bd7f4",
+      "sampleIndex": 90,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-cracked-cap-boletus.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-mushroom-cracked-cap-boletus.png",
+      "fileSizeBytes": 2202674,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-091-mandala-geometry-patterns-mandala-geometry-patterns-mushroom-ghost-fungus-glowing-caa954fe",
+      "sampleIndex": 91,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-ghost-fungus-glowing.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-mushroom-ghost-fungus-glowing.png",
+      "fileSizeBytes": 3033945,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-092-mandala-geometry-patterns-mandala-geometry-patterns-mushroom-morel-aa9b0f69",
+      "sampleIndex": 92,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-morel.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-mushroom-morel.png",
+      "fileSizeBytes": 2818452,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-093-mandala-geometry-patterns-mandala-geometry-patterns-mushroom-pine-mushroom-scene-bb229050",
+      "sampleIndex": 93,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-pine-mushroom-scene.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-mushroom-pine-mushroom-scene.png",
+      "fileSizeBytes": 2362013,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-094-mandala-geometry-patterns-mandala-geometry-patterns-mushroom-puffball-common-881c0835",
+      "sampleIndex": 94,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-puffball-common.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-mushroom-puffball-common.png",
+      "fileSizeBytes": 1948202,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-095-mandala-geometry-patterns-mandala-geometry-patterns-plushie-alpaca-animals-ffd2a425",
+      "sampleIndex": 95,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-plushie-alpaca-animals.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-plushie-alpaca-animals.png",
+      "fileSizeBytes": 2345516,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-096-mandala-geometry-patterns-mandala-geometry-patterns-sushi-spider-roll-307abddf",
+      "sampleIndex": 96,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-sushi-spider-roll.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-sushi-spider-roll.png",
+      "fileSizeBytes": 2333302,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-097-mandala-geometry-patterns-mandala-geometry-patterns-trains-locomotives-excursion-train-crossing-historic-trestle-bri-00002da0",
+      "sampleIndex": 97,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-excursion-train-crossing-historic-trestle-bridge.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-trains-locomotives-excursion-train-crossing-historic-trestle-bridge.png",
+      "fileSizeBytes": 1642067,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-098-mandala-geometry-patterns-mandala-geometry-patterns-vehicle-cars-audi-r8-209ad97c",
+      "sampleIndex": 98,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-audi-r8.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-vehicle-cars-audi-r8.png",
+      "fileSizeBytes": 1886404,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-099-mandala-geometry-patterns-mandala-geometry-patterns-vehicle-cars-electric-sports-car-charging-545b0f22",
+      "sampleIndex": 99,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-electric-sports-car-charging.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-vehicle-cars-electric-sports-car-charging.png",
+      "fileSizeBytes": 1534136,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-100-midieval-midieval-fantasy-monastery-cloister-60857825",
+      "sampleIndex": 100,
+      "sourceRelativePath": "images/midieval/midieval-fantasy-monastery-cloister.png",
+      "category": "midieval",
+      "nestedCategory": null,
+      "filename": "midieval-fantasy-monastery-cloister.png",
+      "fileSizeBytes": 1786257,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-101-midieval-midieval-fantasy-queen-gown-fd1cc703",
+      "sampleIndex": 101,
+      "sourceRelativePath": "images/midieval/midieval-fantasy-queen-gown.png",
+      "category": "midieval",
+      "nestedCategory": null,
+      "filename": "midieval-fantasy-queen-gown.png",
+      "fileSizeBytes": 1174392,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-102-midieval-midieval-fantasy-stable-boy-025b1221",
+      "sampleIndex": 102,
+      "sourceRelativePath": "images/midieval/midieval-fantasy-stable-boy.png",
+      "category": "midieval",
+      "nestedCategory": null,
+      "filename": "midieval-fantasy-stable-boy.png",
+      "fileSizeBytes": 1369735,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-103-midieval-midieval-fantasy-stone-circle-a9d9dcca",
+      "sampleIndex": 103,
+      "sourceRelativePath": "images/midieval/midieval-fantasy-stone-circle.png",
+      "category": "midieval",
+      "nestedCategory": null,
+      "filename": "midieval-fantasy-stone-circle.png",
+      "fileSizeBytes": 1457687,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-104-mythology-mythology-anansi-3abc71e1",
+      "sampleIndex": 104,
+      "sourceRelativePath": "images/mythology/mythology-anansi.png",
+      "category": "mythology",
+      "nestedCategory": null,
+      "filename": "mythology-anansi.png",
+      "fileSizeBytes": 1593830,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-105-mythology-mythology-aten-77cb657b",
+      "sampleIndex": 105,
+      "sourceRelativePath": "images/mythology/mythology-aten.png",
+      "category": "mythology",
+      "nestedCategory": null,
+      "filename": "mythology-aten.png",
+      "fileSizeBytes": 999663,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-106-mythology-mythology-indra-fef3738b",
+      "sampleIndex": 106,
+      "sourceRelativePath": "images/mythology/mythology-indra.png",
+      "category": "mythology",
+      "nestedCategory": null,
+      "filename": "mythology-indra.png",
+      "fileSizeBytes": 1184434,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-107-mythology-mythology-nanabozho-b7983e7d",
+      "sampleIndex": 107,
+      "sourceRelativePath": "images/mythology/mythology-nanabozho.png",
+      "category": "mythology",
+      "nestedCategory": null,
+      "filename": "mythology-nanabozho.png",
+      "fileSizeBytes": 1478760,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-108-mythology-mythology-nyx-041988d5",
+      "sampleIndex": 108,
+      "sourceRelativePath": "images/mythology/mythology-nyx.png",
+      "category": "mythology",
+      "nestedCategory": null,
+      "filename": "mythology-nyx.png",
+      "fileSizeBytes": 1668151,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_with_warning",
+      "warningCodes": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-109-nature-camping-in-the-woods-campfire-marshmellow-01497ca2",
+      "sampleIndex": 109,
+      "sourceRelativePath": "images/Nature/camping-in-the-woods-campfire-marshmellow.png",
+      "category": "Nature",
+      "nestedCategory": null,
+      "filename": "camping-in-the-woods-campfire-marshmellow.png",
+      "fileSizeBytes": 2796819,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-110-plushie-plushie-baby-kitsune-2e29e185",
+      "sampleIndex": 110,
+      "sourceRelativePath": "images/plushie/plushie-baby-kitsune.png",
+      "category": "plushie",
+      "nestedCategory": null,
+      "filename": "plushie-baby-kitsune.png",
+      "fileSizeBytes": 925080,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-111-plushie-plushie-coyote-d06fcbed",
+      "sampleIndex": 111,
+      "sourceRelativePath": "images/plushie/plushie-coyote.png",
+      "category": "plushie",
+      "nestedCategory": null,
+      "filename": "plushie-coyote.png",
+      "fileSizeBytes": 1128343,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-112-plushie-plushie-mouse-fecc100c",
+      "sampleIndex": 112,
+      "sourceRelativePath": "images/plushie/plushie-mouse.png",
+      "category": "plushie",
+      "nestedCategory": null,
+      "filename": "plushie-mouse.png",
+      "fileSizeBytes": 1030063,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-113-plushie-plushie-prehistoric-megalodon-family-95304a8f",
+      "sampleIndex": 113,
+      "sourceRelativePath": "images/plushie/plushie-prehistoric-megalodon-family.png",
+      "category": "plushie",
+      "nestedCategory": null,
+      "filename": "plushie-prehistoric-megalodon-family.png",
+      "fileSizeBytes": 943359,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-114-plushie-plushie-prehistoric-mosasaurus-01b25e68",
+      "sampleIndex": 114,
+      "sourceRelativePath": "images/plushie/plushie-prehistoric-mosasaurus.png",
+      "category": "plushie",
+      "nestedCategory": null,
+      "filename": "plushie-prehistoric-mosasaurus.png",
+      "fileSizeBytes": 836556,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-115-plushie-plushie-snail-family-62d6d7a9",
+      "sampleIndex": 115,
+      "sourceRelativePath": "images/plushie/plushie-snail-family.png",
+      "category": "plushie",
+      "nestedCategory": null,
+      "filename": "plushie-snail-family.png",
+      "fileSizeBytes": 626670,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-116-reptiles-reptiles-leatherback-turtle-fb44b658",
+      "sampleIndex": 116,
+      "sourceRelativePath": "images/reptiles/reptiles-leatherback-turtle.png",
+      "category": "reptiles",
+      "nestedCategory": null,
+      "filename": "reptiles-leatherback-turtle.png",
+      "fileSizeBytes": 2136590,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-117-reptiles-reptiles-olm-cave-salamander-9283ec6e",
+      "sampleIndex": 117,
+      "sourceRelativePath": "images/reptiles/reptiles-olm-cave-salamander.png",
+      "category": "reptiles",
+      "nestedCategory": null,
+      "filename": "reptiles-olm-cave-salamander.png",
+      "fileSizeBytes": 1093349,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-118-reptiles-reptiles-salamander-0041b7dd",
+      "sampleIndex": 118,
+      "sourceRelativePath": "images/reptiles/reptiles-salamander.png",
+      "category": "reptiles",
+      "nestedCategory": null,
+      "filename": "reptiles-salamander.png",
+      "fileSizeBytes": 2090557,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-119-sea-life-sea-life-angelfish-swimming-in-reef-95e70aed",
+      "sampleIndex": 119,
+      "sourceRelativePath": "images/sea-life/sea-life-angelfish-swimming-in-reef.png",
+      "category": "sea-life",
+      "nestedCategory": null,
+      "filename": "sea-life-angelfish-swimming-in-reef.png",
+      "fileSizeBytes": 1767837,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-120-sea-life-sea-life-clownfish-pair-in-sea-anemone-ff8430fe",
+      "sampleIndex": 120,
+      "sourceRelativePath": "images/sea-life/sea-life-clownfish-pair-in-sea-anemone.png",
+      "category": "sea-life",
+      "nestedCategory": null,
+      "filename": "sea-life-clownfish-pair-in-sea-anemone.png",
+      "fileSizeBytes": 2589379,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-121-sea-life-sea-life-tuna-0303a5da",
+      "sampleIndex": 121,
+      "sourceRelativePath": "images/sea-life/sea-life-tuna.png",
+      "category": "sea-life",
+      "nestedCategory": null,
+      "filename": "sea-life-tuna.png",
+      "fileSizeBytes": 1634517,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-122-space-chatgpt-image-may-1-2025-12-50-41-am-3e13c05f",
+      "sampleIndex": 122,
+      "sourceRelativePath": "images/space/ChatGPT Image May 1, 2025, 12_50_41 AM.png",
+      "category": "space",
+      "nestedCategory": null,
+      "filename": "ChatGPT Image May 1, 2025, 12_50_41 AM.png",
+      "fileSizeBytes": 2571536,
+      "dimensions": {
+        "width": 923,
+        "height": 1385
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-123-st-patricks-day-st-patricks-day-pot-of-gold-guarded-by-leprechaun-coloring-page-0cac522f",
+      "sampleIndex": 123,
+      "sourceRelativePath": "images/st-patricks-day/st-patricks-day-pot-of-gold-guarded-by-leprechaun-coloring-page.png",
+      "category": "st-patricks-day",
+      "nestedCategory": null,
+      "filename": "st-patricks-day-pot-of-gold-guarded-by-leprechaun-coloring-page.png",
+      "fileSizeBytes": 903011,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-124-world-landmarks-world-landmarks-hollywood-sign-0d5347e3",
+      "sampleIndex": 124,
+      "sourceRelativePath": "images/world-landmarks/world-landmarks-hollywood-sign.png",
+      "category": "world-landmarks",
+      "nestedCategory": null,
+      "filename": "world-landmarks-hollywood-sign.png",
+      "fileSizeBytes": 618417,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a1-dryrun-125-world-landmarks-world-landmarks-statue-of-liberty-f153affe",
+      "sampleIndex": 125,
+      "sourceRelativePath": "images/world-landmarks/world-landmarks-statue-of-liberty.png",
+      "category": "world-landmarks",
+      "nestedCategory": null,
+      "filename": "world-landmarks-statue-of-liberty.png",
+      "fileSizeBytes": 763852,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "warningCodes": [],
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A.1."
+      ]
+    }
+  ]
+}
