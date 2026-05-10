@@ -180,6 +180,11 @@ test("public-facing copy avoids internal pipeline wording", async () => {
   }
 });
 
+test("public shell brand link points to the homepage", async () => {
+  const layout = await readText("app/layout.tsx");
+  assert.match(layout, /<Link className="brand" href="\/">/);
+});
+
 test("source images are unchanged and production assets are not copied into public", async () => {
   const inventory = await readJson("pipeline/manifests/image-inventory.json");
   for (const entry of inventory.entries) {

@@ -35,7 +35,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
         <div className="site-shell">
           <header className="site-header">
             <div className="site-header-inner">
-              <Link className="brand" href="/coloring-pages">
+              <Link className="brand" href="/">
                 <span className="brand-mark" aria-hidden="true">IL</span>
                 <span>I Love Coloring Page</span>
               </Link>
