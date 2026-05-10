@@ -147,6 +147,15 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Do not run full scripted uploads without explicit future approval.
 - Do not run remote delete or purge commands without explicit future approval.
 - Do not add backend or API routes for media serving.
+- Real public asset URLs must be verified before full bundle generation.
+- The current verified test asset prefix is `coloring-pages/`.
+- `NEXT_PUBLIC_COLORING_ASSET_BASE_URL` should point to the public asset domain plus `/coloring-pages`.
+- `r2.dev` is allowed only as a temporary test route, not the final production asset domain.
+- Do not use the old Round 4G planning prefix for the current CDN test path.
+- Do not generate or upload the full media set until the 30-record R2 test passes.
+- Placeholder behavior is expected for media not included in partial test uploads.
+- `NEXT_PUBLIC_COLORING_ASSET_BASE_URL` must not point to private endpoints.
+- Existing generated filenames may be cleaned in a later production naming round, but do not rename files during CDN verification.
 
 ## Frontend-Only Deployment
 

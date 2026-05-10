@@ -1,0 +1,19 @@
+{
+  "generatedAt": "2026-05-10",
+  "runId": "round-4h-r2-cdn-delivery-verification",
+  "full_upload_bundle_ready": true,
+  "reasons": {
+    "urlVerificationPassed": true,
+    "staticPreviewPassed": true,
+    "fullBundleGeneratedThisRound": false,
+    "fullCorpusUploadedThisRound": false
+  },
+  "recommendedNextRound": "round-4i-generate-full-r2-upload-bundle",
+  "recommendedFullUploadPrefix": "coloring-pages/",
+  "productionDomainRecommendation": "Replace the temporary r2.dev test route with a custom asset domain before final production launch.",
+  "constraints": [
+    "Do not upload the full corpus until explicitly approved.",
+    "Do not start image sitemap, Open Graph image, or JSON-LD image work until CDN-backed rendering is verified.",
+    "Do not rename generated media files during CDN verification."
+  ]
+}

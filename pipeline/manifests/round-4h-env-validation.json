@@ -1,0 +1,23 @@
+{
+  "generatedAt": "2026-05-10",
+  "runId": "round-4h-r2-cdn-delivery-verification",
+  "assetBaseUrl": "https://pub-1bf18626e66c4e4aa3093fb370122f11.r2.dev/coloring-pages",
+  "valid": true,
+  "checks": {
+    "present": true,
+    "parsesAsUrl": true,
+    "https": true,
+    "publicUrl": true,
+    "hasColoringPagesPrefix": true,
+    "temporaryR2DevAllowedForThisRound": true,
+    "r2DevFinalProductionRecommendation": false,
+    "finalProductionDomainRecommendation": "custom-asset-domain-required-later",
+    "noPrivateR2Endpoint": true,
+    "noOldTestPrefix": true,
+    "noDoubleColoringPagesPrefix": true,
+    "noCredentialsInUrl": true,
+    "noSecretLikeValue": true
+  },
+  "acceptedTemporaryException": "r2.dev is accepted for Round 4H testing only. A custom asset domain remains the production recommendation.",
+  "errors": []
+}

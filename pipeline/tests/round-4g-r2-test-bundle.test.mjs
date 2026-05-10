@@ -208,9 +208,10 @@ test("bundle safety checks exclude full media, public copies, app API routes, an
   assert.match(netlify, /publish\s*=\s*"out"/);
   assert.match(assetResolver, /NEXT_PUBLIC_COLORING_ASSET_BASE_URL/);
   assert.doesNotMatch(assetResolver, /\/api\/coloring-assets|NEXT_PUBLIC_COLORING_USE_LOCAL_ASSET_PROXY/);
-  assert.match(envExample, /NEXT_PUBLIC_COLORING_ASSET_BASE_URL=https:\/\/assets\.example\.com\/coloring\/test-v1/);
+  assert.match(envExample, /NEXT_PUBLIC_COLORING_ASSET_BASE_URL=https:\/\/assets\.example\.com\/coloring-pages/);
   assert.match(envExample, /^CLOUDFLARE_R2_SECRET_ACCESS_KEY=$/m);
-  assert.match(envExample, /^CLOUDFLARE_R2_UPLOAD_PREFIX=coloring\/test-v1$/m);
+  assert.match(envExample, /^CLOUDFLARE_R2_UPLOAD_PREFIX=coloring-pages$/m);
+  assert.doesNotMatch(envExample, /coloring\/test-v1/);
   assert.doesNotMatch(envExample, /AKIA[0-9A-Z]{16}|-----BEGIN [A-Z ]*PRIVATE KEY-----|token\s*=\S+/i);
   assert.doesNotMatch(bundleScript, /wrangler\s+r2|aws\s+s3|curl\s+-T|delete-object|purge/i);
 });

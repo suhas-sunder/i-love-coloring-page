@@ -9,6 +9,10 @@ out/
 dist/
 *.tsbuildinfo
 
+# Local environment values
+.env
+.env*.local
+
 # Generated image and review outputs stay local or CDN-backed
 pipeline/samples/**
 pipeline/bakeoffs/**
