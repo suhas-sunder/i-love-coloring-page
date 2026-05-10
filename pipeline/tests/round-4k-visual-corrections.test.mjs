@@ -110,9 +110,9 @@ test("image cards use clean clickable previews and simplified actions", async ()
   assert.match(imageCard, /href=\{itemHref/);
   assert.match(imageCard, /Print/);
   assert.match(imageCard, /Download/);
-  assert.doesNotMatch(imageCard, />\s*PNG\s*</);
   assert.doesNotMatch(imageCard, />\s*SVG\s*</);
-  assert.doesNotMatch(imageCard, /Download PNG|Download SVG/);
+  assert.match(imageCard, /Download PNG/);
+  assert.doesNotMatch(imageCard, /Download SVG|assetUrls\.svg|pngUrl\s*\|\|\s*svgUrl/);
   assert.match(galleryGrid, /getItemHref/);
   assert.match(assetImage, /className="asset-image"/);
   assert.match(assets, /preview:\s*png\s*\|\|\s*thumbnail/);

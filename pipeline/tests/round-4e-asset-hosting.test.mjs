@@ -147,7 +147,8 @@ test("download and print actions receive URLs from the centralized resolver", as
   assert.match(galleryGrid, /resolveColoringItemAssetUrls/);
   assert.doesNotMatch(imageCard, /resolveColoringAssetUrl|NEXT_PUBLIC_COLORING|\/api\/coloring-assets/);
   assert.match(imageCard, /assetUrls\.png/);
-  assert.match(imageCard, /assetUrls\.svg/);
+  assert.doesNotMatch(imageCard, /Download SVG|assetUrls\.svg|pngUrl\s*\|\|\s*svgUrl/);
+  assert.match(imageCard, /Download PNG/);
   assert.match(imageCard, /Print/);
   assert.doesNotMatch(assetImage, /D:\\|C:\\|pipeline\/production\/full|images\//i);
 });

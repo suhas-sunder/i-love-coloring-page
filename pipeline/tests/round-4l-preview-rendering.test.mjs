@@ -113,9 +113,9 @@ test("asset resolver and image components avoid broken icon states", async () =>
   assert.match(css, /\.asset-image\[data-state="loading"\][\s\S]*opacity:\s*0/);
   assert.match(css, /\.asset-image-fallback/);
   assert.match(imageCard, /Print/);
-  assert.doesNotMatch(imageCard, />\s*PNG\s*</);
   assert.doesNotMatch(imageCard, />\s*SVG\s*</);
-  assert.doesNotMatch(imageCard, /Download PNG|Download SVG/);
+  assert.match(imageCard, /Download PNG/);
+  assert.doesNotMatch(imageCard, /Download SVG|assetUrls\.svg|pngUrl\s*\|\|\s*svgUrl/);
 });
 
 test("static architecture and protected media boundaries remain intact", async () => {

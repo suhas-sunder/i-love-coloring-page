@@ -1,0 +1,46 @@
+{
+  "generatedAt": "2026-05-10T21:54:03.506Z",
+  "runId": "round-4n-nav-downloads",
+  "status": "browser_artifacts_created",
+  "localAssetBaseUrl": "http://127.0.0.1:4175/coloring-pages",
+  "previewCommands": [
+    "python -m http.server 4175 --bind 127.0.0.1 --directory pipeline/r2-upload",
+    "$env:NEXT_PUBLIC_COLORING_ASSET_BASE_URL='http://127.0.0.1:4175/coloring-pages'; npm run build; npx serve out -l 3005",
+    "$env:NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS='1'; $env:NEXT_PUBLIC_COLORING_ASSET_BASE_URL='http://127.0.0.1:4175/coloring-pages'; npm run build; npx serve out -l 3005"
+  ],
+  "pagesPlanned": [
+    "/",
+    "/coloring-pages",
+    "/coloring-pages/animals",
+    "/coloring-pages/geometric",
+    "/coloring-pages/anime-girls",
+    "/coloring-pages/mandalas",
+    "/coloring-pages/chibi",
+    "/coloring-pages/fantasy",
+    "/coloring-pages/christmas",
+    "/coloring-pages/halloween",
+    "/coloring-pages/plushies"
+  ],
+  "screenshots": [
+    "pipeline/review/round-4n/screenshots/animals.png",
+    "pipeline/review/round-4n/screenshots/anime-girls.png",
+    "pipeline/review/round-4n/screenshots/chibi.png",
+    "pipeline/review/round-4n/screenshots/christmas.png",
+    "pipeline/review/round-4n/screenshots/coloring-pages-more-menu.png",
+    "pipeline/review/round-4n/screenshots/fantasy.png",
+    "pipeline/review/round-4n/screenshots/geometric.png",
+    "pipeline/review/round-4n/screenshots/halloween.png",
+    "pipeline/review/round-4n/screenshots/home.png",
+    "pipeline/review/round-4n/screenshots/mandalas.png",
+    "pipeline/review/round-4n/screenshots/plushies.png"
+  ],
+  "checks": [
+    "Top-level nav does not include Coloring Pages.",
+    "Desktop More menu opens at the end of nav.",
+    "More menu search filters generated hub links.",
+    "Mobile Browse menu includes searchable generated hub navigation.",
+    "No ads or affiliate links appear in navigation menus.",
+    "Image cards show Print and Download PNG only.",
+    "Real media still renders from local asset base URL."
+  ]
+}

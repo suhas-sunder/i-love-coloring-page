@@ -7,7 +7,7 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div className="site-footer-inner">
         <div>
-          <span className="site-footer-note">Printable SVG and PNG coloring pages, organized for easy browsing.</span>
+          <span className="site-footer-note">Printable coloring pages, organized for easy browsing and clean PNG downloads.</span>
         </div>
         <nav className="site-footer-nav" aria-label="Footer navigation">
           <Link href="/coloring-pages" prefetch={false}>Coloring Pages</Link>

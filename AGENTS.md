@@ -161,6 +161,17 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Avoid mobile top ads unless a later prompt explicitly approves them because they can crowd the first screen and increase accidental-click risk.
 - Navbar links must use existing generated routes only.
 - Do not add backend or API routes for ads or navigation.
+- SVG is internal infrastructure only and must not be offered as a user-facing download.
+- Public download formats are PNG, JPG/JPEG, and WebP only.
+- If JPG/JPEG/WebP conversion is not implemented and verified, do not show those download options.
+- The top-level navbar should not include a redundant `Coloring Pages` button.
+- The More menu must provide searchable access to generated hub pages.
+- Mobile navigation must include searchable hub navigation.
+- More and mobile navigation must use existing generated routes only.
+- Do not put ads or affiliate content inside navigation menus.
+- Do not change ad placement while working on navigation or download controls.
+- Do not add backend or API routes for downloads or navigation.
+- Browser-side download conversions must remain static-export compatible.
 
 ## Production Asset Hosting
 

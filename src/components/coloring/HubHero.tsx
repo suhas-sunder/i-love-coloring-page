@@ -26,7 +26,7 @@ export function HubHero({ hub, intro, primaryCtaLabel = "Browse gallery", childr
         <p>{intro || hub.intro}</p>
         <ul className="hero-facts" aria-label="Gallery summary">
           <li><strong>{hub.assetCount.toLocaleString()}</strong> printable pages</li>
-          <li>SVG and PNG downloads</li>
+          <li>PNG downloads</li>
           <li>Print from the gallery</li>
         </ul>
         <div className="hero-actions">

@@ -10,7 +10,6 @@ type ImageCardProps = {
     preview: string | null;
     thumbnail?: string | null;
     png: string | null;
-    svg: string | null;
   };
   itemHref?: string;
   priority?: boolean;
@@ -18,9 +17,8 @@ type ImageCardProps = {
 
 export function ImageCard({ item, assetUrls, itemHref = `#asset-${item.assetId}`, priority = false }: ImageCardProps) {
   const pngUrl = assetUrls.png;
-  const svgUrl = assetUrls.svg;
-  const printUrl = pngUrl || svgUrl;
-  const downloadUrl = pngUrl || svgUrl;
+  const printUrl = pngUrl;
+  const downloadUrl = pngUrl;
 
   function printImage() {
     if (!printUrl) return;
@@ -55,8 +53,8 @@ export function ImageCard({ item, assetUrls, itemHref = `#asset-${item.assetId}`
             <span className="button button-disabled button-small">Assets pending</span>
           )}
           {downloadUrl ? (
-            <a className="gallery-download-link" href={downloadUrl} download aria-label={`Download ${item.title}`}>
-              Download
+            <a className="gallery-download-link" href={downloadUrl} download aria-label={`Download PNG for ${item.title}`}>
+              Download PNG
             </a>
           ) : null}
         </div>

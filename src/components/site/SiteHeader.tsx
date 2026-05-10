@@ -1,6 +1,8 @@
 import Link from "next/link";
 
-import { primaryNavLinks } from "@/lib/navigation/siteNav";
+import { moreHubGroups, primaryNavLinks, utilityNavLinks } from "@/lib/navigation/siteNav";
+
+import { MoreHubMenu } from "./MoreHubMenu";
 
 export function SiteHeader() {
   return (
@@ -17,6 +19,7 @@ export function SiteHeader() {
               <span className="nav-label-short">{link.shortLabel || link.label}</span>
             </Link>
           ))}
+          <MoreHubMenu groups={moreHubGroups} utilityLinks={utilityNavLinks} />
         </nav>
         <details className="site-nav-mobile">
           <summary aria-label="Open mobile browse navigation">Browse</summary>
@@ -26,6 +29,12 @@ export function SiteHeader() {
                 {link.label}
               </Link>
             ))}
+            {utilityNavLinks.map((link) => (
+              <Link href={link.href} key={link.href} prefetch={false}>
+                {link.label}
+              </Link>
+            ))}
+            <MoreHubMenu groups={moreHubGroups} utilityLinks={[]} variant="mobile" />
           </nav>
         </details>
       </div>

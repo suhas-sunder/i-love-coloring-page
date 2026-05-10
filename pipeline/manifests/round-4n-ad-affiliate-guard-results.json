@@ -1,0 +1,28 @@
+{
+  "generatedAt": "2026-05-10T21:54:03.505Z",
+  "runId": "round-4n-nav-downloads",
+  "baseline": {
+    "round4mAdSlotCount": 8,
+    "round4mLabels": [
+      "Advertisement"
+    ]
+  },
+  "summary": {
+    "currentAdSlotCount": 8,
+    "adSlotCountUnchanged": true,
+    "adPlacementChanged": false,
+    "adStylingChanged": false,
+    "adLabelsChanged": false,
+    "liveAdCodeAdded": false,
+    "adsInsideNavigation": false,
+    "adsNearPrintDownloadControls": false,
+    "affiliatePlacementChanged": false
+  },
+  "checkedFiles": [
+    "src/components/site/SiteHeader.tsx",
+    "src/components/site/MoreHubMenu.tsx",
+    "src/components/coloring/ImageCard.tsx",
+    "src/components/coloring/GalleryGrid.tsx",
+    "src/components/ads/AdSlot.tsx"
+  ]
+}
