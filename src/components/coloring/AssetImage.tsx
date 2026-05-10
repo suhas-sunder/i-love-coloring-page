@@ -1,37 +1,34 @@
 "use client";
 
-import { useMemo, useState } from "react";
-
-import { resolveColoringAssetUrl } from "@/lib/coloring/assets";
 import type { PublicColoringItem } from "@/lib/coloring/types";
 
 type AssetImageProps = {
   item: PublicColoringItem;
+  imageUrl: string | null;
   priority?: boolean;
 };
 
-export function AssetImage({ item, priority = false }: AssetImageProps) {
-  const [failed, setFailed] = useState(false);
-  const imageUrl = useMemo(
-    () => resolveColoringAssetUrl(item.assetSubpaths.thumbnail || item.assetSubpaths.pngPreview),
-    [item.assetSubpaths.pngPreview, item.assetSubpaths.thumbnail],
-  );
-
-  if (!imageUrl || failed) {
-    return (
-      <div className="asset-placeholder" aria-label={`${item.title} preview unavailable`}>
-        <span>Preview unavailable</span>
-      </div>
-    );
-  }
+export function AssetImage({ item, imageUrl, priority = false }: AssetImageProps) {
+  if (!imageUrl) return <AssetPlaceholder title={item.title} />;
 
   return (
-    <img
-      src={imageUrl}
-      alt={item.altText}
+    <object
+      aria-label={item.altText}
       className="asset-image"
-      loading={priority ? "eager" : "lazy"}
-      onError={() => setFailed(true)}
-    />
+      data={imageUrl}
+      data-priority={priority ? "true" : "false"}
+      role="img"
+      type="image/png"
+    >
+      <AssetPlaceholder title={item.title} />
+    </object>
+  );
+}
+
+function AssetPlaceholder({ title }: { title: string }) {
+  return (
+    <div className="asset-placeholder" aria-label={`${title} preview unavailable`}>
+      <span>Preview unavailable</span>
+    </div>
   );
 }

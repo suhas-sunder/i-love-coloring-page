@@ -1,18 +1,22 @@
 "use client";
 
-import { resolveColoringAssetUrl } from "@/lib/coloring/assets";
 import type { PublicColoringItem } from "@/lib/coloring/types";
 
 import { AssetImage } from "./AssetImage";
 
 type ImageCardProps = {
   item: PublicColoringItem;
+  assetUrls: {
+    preview: string | null;
+    png: string | null;
+    svg: string | null;
+  };
   priority?: boolean;
 };
 
-export function ImageCard({ item, priority = false }: ImageCardProps) {
-  const pngUrl = resolveColoringAssetUrl(item.assetSubpaths.pngPreview);
-  const svgUrl = resolveColoringAssetUrl(item.assetSubpaths.svg);
+export function ImageCard({ item, assetUrls, priority = false }: ImageCardProps) {
+  const pngUrl = assetUrls.png;
+  const svgUrl = assetUrls.svg;
   const printUrl = pngUrl || svgUrl;
 
   function printImage() {
@@ -33,19 +37,19 @@ export function ImageCard({ item, priority = false }: ImageCardProps) {
   return (
     <article className="gallery-item">
       <div className="gallery-item-media">
-        <AssetImage item={item} priority={priority} />
+        <AssetImage item={item} imageUrl={assetUrls.preview} priority={priority} />
       </div>
       <div className="gallery-item-body">
         <h3 className="item-title">{item.title}</h3>
         <div className="gallery-actions" aria-label={`${item.title} actions`}>
           {pngUrl ? (
             <a className="button button-subtle button-small" href={pngUrl} download aria-label={`Download PNG for ${item.title}`}>
-              Download PNG
+              PNG
             </a>
           ) : null}
           {svgUrl ? (
             <a className="button button-subtle button-small" href={svgUrl} download aria-label={`Download SVG for ${item.title}`}>
-              Download SVG
+              SVG
             </a>
           ) : null}
           {printUrl ? (

@@ -41,7 +41,8 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
               </Link>
               <nav className="site-nav" aria-label="Main navigation">
                 <Link className="button button-subtle" href="/coloring-pages">
-                  Browse Coloring Pages
+                  <span className="nav-label-full">Coloring Pages</span>
+                  <span className="nav-label-short">Pages</span>
                 </Link>
               </nav>
             </div>
@@ -50,7 +51,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
           <footer className="site-footer">
             <div className="site-footer-inner">
               <span className="site-footer-note">Printable SVG and PNG coloring pages, organized for easy browsing.</span>
-              <Link href="/coloring-pages">Browse Coloring Pages</Link>
+              <Link href="/coloring-pages">Coloring Pages</Link>
             </div>
           </footer>
         </div>

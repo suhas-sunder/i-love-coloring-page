@@ -26,7 +26,7 @@ export function HubHero({ hub, intro, children }: HubHeroProps) {
         <ul className="hero-facts" aria-label="Gallery summary">
           <li><strong>{hub.assetCount.toLocaleString()}</strong> printable pages</li>
           <li>SVG and PNG downloads</li>
-          <li>Ready for browsing and printing</li>
+          <li>Print from the gallery</li>
         </ul>
       </div>
       {children ? <div className="hero-panel">{children}</div> : null}

@@ -6,7 +6,7 @@ import { GalleryGrid } from "@/components/coloring/GalleryGrid";
 import { HubCard } from "@/components/coloring/HubCard";
 import { HubHero } from "@/components/coloring/HubHero";
 import { RelatedHubs } from "@/components/coloring/RelatedHubs";
-import { hasConfiguredColoringAssetSource } from "@/lib/coloring/assets";
+import { hasConfiguredColoringAssetSource, resolveColoringAssetUrl } from "@/lib/coloring/assets";
 import {
   getAllPhase1Hubs,
   getChildHubs,
@@ -36,7 +36,7 @@ export function generateMetadata(): Metadata {
 export default function ColoringPagesLanding() {
   const rootHub = getRootHub();
   const featuredItems = getFeaturedItems(rootHub).slice(0, 4);
-  const previewItems = getPreviewItems(rootHub);
+  const previewItems = getPreviewItems(rootHub).slice(0, 12);
   const hubs = getAllPhase1Hubs().filter((hub) => hub.route !== "/coloring-pages");
   const featuredHubs = hubs.filter((hub) => ["plushies", "animals", "mandalas", "anime-girls", "chibi", "fantasy", "christmas", "halloween"].includes(hub.slug));
   const popularThemes = hubs.filter((hub) => ["christmas", "halloween", "birthday", "holidays", "fantasy", "mythology", "medieval-fantasy", "st-patricks-day"].includes(hub.slug));
@@ -55,7 +55,11 @@ export default function ColoringPagesLanding() {
           <div className="hero-preview-grid" aria-label="Featured coloring page previews">
             {featuredItems.map((item, index) => (
               <div className="preview-tile" key={item.assetId}>
-                <AssetImage item={item} priority={index < 2} />
+                <AssetImage
+                  item={item}
+                  imageUrl={resolveColoringAssetUrl(item.assetSubpaths.thumbnail || item.assetSubpaths.pngPreview)}
+                  priority={index < 2}
+                />
               </div>
             ))}
           </div>
@@ -66,7 +70,7 @@ export default function ColoringPagesLanding() {
         <div className="section-heading-row">
           <div>
             <h2 className="section-title">Popular coloring page collections</h2>
-            <p>Start with the pages people usually look for first: animals, plushies, mandalas, fantasy themes, and holidays.</p>
+            <p>Start with the broad collections people usually need first: animals, plushies, mandalas, fantasy themes, and holidays.</p>
           </div>
         </div>
         <div className="hub-link-grid">
@@ -78,8 +82,8 @@ export default function ColoringPagesLanding() {
 
       <section className="content-section split-section">
         <div>
-          <h2 className="section-title">Seasonal favorites</h2>
-          <p className="section-copy">Find holiday pages and fantasy themes for classroom activities, parties, or weekend printing.</p>
+            <h2 className="section-title">Seasonal favorites</h2>
+          <p className="section-copy">Find holiday pages and fantasy themes for classrooms, parties, or weekend printing.</p>
         </div>
         <div className="hub-link-grid hub-link-grid-compact">
           {popularThemes.map((hub) => (
@@ -122,7 +126,7 @@ export default function ColoringPagesLanding() {
         <div className="section-heading-row">
           <div>
             <h2 className="section-title">Preview the gallery</h2>
-            <p>Here is a small sample from {rootHub.assetCount.toLocaleString()} printable pages. Larger collections are split into pages so browsing stays quick.</p>
+            <p>A small sample from {rootHub.assetCount.toLocaleString()} printable pages. Open a collection when you are ready to browse more.</p>
           </div>
         </div>
         <FilterChips sections={rootHub.sectionGroupings} />
@@ -130,7 +134,6 @@ export default function ColoringPagesLanding() {
       </section>
 
       <RelatedHubs title="More ways to browse" hubs={childHubs} />
-
     </main>
   );
 }

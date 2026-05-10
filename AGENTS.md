@@ -113,6 +113,12 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Do not copy production assets into `public/`.
 - Large hub pages must use limited rendering or pagination.
 - Any new public page must declare page type, indexability status, metadata strategy, and component variants used.
+- Design-system compliance is not enough for major UI commits; run browser visual QA before committing public gallery changes.
+- New public pages must be checked at desktop and mobile widths.
+- Real asset states and placeholder states must both be checked.
+- The homepage, gallery landing page, and representative hub pages must stay visually aligned.
+- Do not add SEO copy that weakens visual quality or sounds generic.
+- Do not create walls of cards, tags, or links without hierarchy.
 
 ## Conversion Workflow
 

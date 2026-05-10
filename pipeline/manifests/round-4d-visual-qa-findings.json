@@ -1,0 +1,120 @@
+{
+  "runId": "round-4d-public-gallery-visual-polish",
+  "createdAt": "2026-05-10T04:38:15.431Z",
+  "preview": {
+    "port": 3009,
+    "command": "$env:NEXT_PUBLIC_COLORING_USE_LOCAL_ASSET_PROXY='1'; $env:COLORING_ENABLE_LOCAL_ASSET_PROXY='1'; npm run dev -- -p 3009",
+    "localAssetProxyVerified": true,
+    "verifiedAssetUrl": "/api/coloring-assets/thumbs/animals/animals-alligator-4feec8505a-thumb.png"
+  },
+  "summary": {
+    "pagesInspected": 16,
+    "viewportPasses": 48,
+    "viewports": {
+      "desktop": "1440x1000",
+      "tablet": "820x1100",
+      "mobile": "390x900"
+    },
+    "finalHttpStatusFailures": 0,
+    "finalHorizontalOverflowCount": 0,
+    "finalBrokenMediaCount": 0,
+    "finalLocalPathExposureCount": 0,
+    "sitemapRouteCount": 65,
+    "galleryLandingPreviewItems": 12,
+    "hubGalleryPageSize": 48
+  },
+  "screenshotPolicy": {
+    "created": true,
+    "ignoredByGit": true,
+    "reason": "pipeline/review/** is ignored; screenshots are local QA evidence, not repository assets.",
+    "directories": [
+      "pipeline/review/round-4d/screenshots/desktop/",
+      "pipeline/review/round-4d/screenshots/tablet/",
+      "pipeline/review/round-4d/screenshots/mobile/",
+      "pipeline/review/round-4d/screenshots/placeholder/",
+      "pipeline/review/round-4d/screenshots/viewport/"
+    ]
+  },
+  "inspectedRoutes": [
+    { "requested": "/", "actual": "/", "screenshots": ["desktop/home.png", "tablet/home.png", "mobile/home.png"] },
+    { "requested": "/coloring-pages", "actual": "/coloring-pages", "screenshots": ["desktop/coloring-pages.png", "tablet/coloring-pages.png", "mobile/coloring-pages.png"] },
+    { "requested": "/coloring-pages/plushies", "actual": "/coloring-pages/plushies", "screenshots": ["desktop/plushies.png", "tablet/plushies.png", "mobile/plushies.png"] },
+    { "requested": "/coloring-pages/animals", "actual": "/coloring-pages/animals", "screenshots": ["desktop/animals.png", "tablet/animals.png", "mobile/animals.png"] },
+    { "requested": "/coloring-pages/mandalas", "actual": "/coloring-pages/mandalas", "screenshots": ["desktop/mandalas.png", "tablet/mandalas.png", "mobile/mandalas.png"] },
+    { "requested": "/coloring-pages/anime-girls", "actual": "/coloring-pages/anime-girls", "screenshots": ["desktop/anime-girls.png", "tablet/anime-girls.png", "mobile/anime-girls.png"] },
+    { "requested": "/coloring-pages/chibi", "actual": "/coloring-pages/chibi", "screenshots": ["desktop/chibi.png", "tablet/chibi.png", "mobile/chibi.png"] },
+    { "requested": "/coloring-pages/fantasy", "actual": "/coloring-pages/fantasy", "screenshots": ["desktop/fantasy.png", "tablet/fantasy.png", "mobile/fantasy.png"] },
+    { "requested": "/coloring-pages/christmas", "actual": "/coloring-pages/christmas", "screenshots": ["desktop/christmas.png", "tablet/christmas.png", "mobile/christmas.png"] },
+    { "requested": "/coloring-pages/halloween", "actual": "/coloring-pages/halloween", "screenshots": ["desktop/halloween.png", "tablet/halloween.png", "mobile/halloween.png"] },
+    { "requested": "/coloring-pages/prehistoric-animals", "actual": "/coloring-pages/prehistoric-animals", "screenshots": ["desktop/prehistoric-animals.png", "tablet/prehistoric-animals.png", "mobile/prehistoric-animals.png"] },
+    { "requested": "/coloring-pages/plants", "actual": "/coloring-pages/plants", "screenshots": ["desktop/plants.png", "tablet/plants.png", "mobile/plants.png"] },
+    { "requested": "/coloring-pages/indoor-plants", "actual": "/coloring-pages/indoor-plants", "screenshots": ["desktop/indoor-plants.png", "tablet/indoor-plants.png", "mobile/indoor-plants.png"] },
+    { "requested": "/coloring-pages/geometric", "actual": "/coloring-pages/geometric", "screenshots": ["desktop/geometric.png", "tablet/geometric.png", "mobile/geometric.png"] },
+    {
+      "requested": "/coloring-pages/detailed-coloring-pages-for-adults",
+      "actual": "/coloring-pages/detailed-for-adults",
+      "substitutionReason": "Generated Phase 1 route uses the shorter slug.",
+      "screenshots": ["desktop/detailed-for-adults.png", "tablet/detailed-for-adults.png", "mobile/detailed-for-adults.png"]
+    },
+    {
+      "requested": "/coloring-pages/coloring-pages-for-kids",
+      "actual": "/coloring-pages/for-kids",
+      "substitutionReason": "Generated Phase 1 route uses the shorter slug.",
+      "screenshots": ["desktop/for-kids.png", "tablet/for-kids.png", "mobile/for-kids.png"]
+    }
+  ],
+  "findings": [
+    {
+      "id": "r4d-001",
+      "severity": "medium",
+      "status": "fixed",
+      "area": "header and hero rhythm",
+      "finding": "The header-to-hero gap and first-section gap felt accidental, especially on hub pages.",
+      "resolution": "Reduced page top padding, hero padding, default section spacing, and hub hero adjacent section spacing."
+    },
+    {
+      "id": "r4d-002",
+      "severity": "medium",
+      "status": "fixed",
+      "area": "mobile header",
+      "finding": "The mobile nav CTA became a full-width second row, making the header feel heavy.",
+      "resolution": "Kept the header in one row and shortened the mobile nav label to Pages."
+    },
+    {
+      "id": "r4d-003",
+      "severity": "medium",
+      "status": "fixed",
+      "area": "gallery landing density",
+      "finding": "/coloring-pages rendered 48 preview cards, which read like a database dump.",
+      "resolution": "Limited the landing preview grid to 12 items while preserving paginated hub galleries."
+    },
+    {
+      "id": "r4d-004",
+      "severity": "medium",
+      "status": "fixed",
+      "area": "asset state",
+      "finding": "Unavailable media could show broken image behavior before hydration.",
+      "resolution": "Asset previews now receive server-resolved URLs and use media fallback content for intentional placeholders."
+    },
+    {
+      "id": "r4d-005",
+      "severity": "low",
+      "status": "fixed",
+      "area": "copy and browsing hierarchy",
+      "finding": "Some wording and section labels felt mechanical, and hub helper sections duplicated terms.",
+      "resolution": "Rewrote homepage and hub helper copy, removed parent-only hub sections, deduped chips and section terms."
+    }
+  ],
+  "finalChecks": {
+    "noGradientsObserved": true,
+    "noNestedCardsObserved": true,
+    "noDecorativeOutlinesObserved": true,
+    "noLayoutSurfaceBordersObserved": true,
+    "noShadowsOutsideButtonsObserved": true,
+    "visibleFocusStylesPreserved": true,
+    "realAssetStateChecked": true,
+    "placeholderStateChecked": true,
+    "noSourceImagesChanged": true,
+    "noProductionAssetsMovedToPublic": true
+  }
+}
