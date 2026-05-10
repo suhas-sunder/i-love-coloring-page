@@ -127,7 +127,7 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Public gallery asset URLs must use the centralized resolver in `src/lib/coloring/assets.ts`.
 - `NEXT_PUBLIC_COLORING_ASSET_BASE_URL` is the production asset URL source of truth.
 - Cloudflare R2 Standard Storage is the selected initial generated-media storage target unless a later prompt explicitly replaces it.
-- The current R2 test upload workflow uses 30 selected image records under `pipeline/r2-upload-test/coloring/test-v1`.
+- The archived Round 4G planning test upload workflow used a 30-record local test bundle; current CDN verification and full-bundle work uses `coloring-pages/`.
 - Full upload bundle generation requires explicit future approval.
 - R2 credentials must never be committed.
 - `NEXT_PUBLIC_COLORING_ASSET_BASE_URL` must point to the public custom-domain asset base plus prefix, not the private S3 API endpoint.
@@ -156,6 +156,15 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Placeholder behavior is expected for media not included in partial test uploads.
 - `NEXT_PUBLIC_COLORING_ASSET_BASE_URL` must not point to private endpoints.
 - Existing generated filenames may be cleaned in a later production naming round, but do not rename files during CDN verification.
+- The full R2 bundle prefix is `coloring-pages/`.
+- Round 4I full bundle generation prepares local upload media only and does not approve or perform the full upload.
+- Full upload must remain manual or explicitly approved by a later prompt.
+- Generated full upload bundle media under `pipeline/r2-upload/` must not be committed.
+- Generated media must not be copied into `public/`.
+- `r2.dev` remains temporary only; final production should use a custom asset domain.
+- Current generated filenames are preserved until an explicit future production naming cleanup round.
+- Do not start SEO image sitemap or Open Graph image work until the full uploaded media set is verified against public URLs.
+- Cache headers or equivalent Cloudflare caching behavior must be configured and verified before production launch.
 
 ## Frontend-Only Deployment
 
