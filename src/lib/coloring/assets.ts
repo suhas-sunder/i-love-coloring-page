@@ -43,7 +43,7 @@ export function resolveColoringItemAssetUrls(assetSubpaths: AssetSubpathsLike): 
   const svg = resolveSvgAssetUrl(assetSubpaths.svg);
 
   return {
-    preview: thumbnail || png,
+    preview: png || thumbnail,
     thumbnail,
     png,
     svg,

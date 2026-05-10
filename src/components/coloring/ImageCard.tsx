@@ -12,13 +12,15 @@ type ImageCardProps = {
     png: string | null;
     svg: string | null;
   };
+  itemHref?: string;
   priority?: boolean;
 };
 
-export function ImageCard({ item, assetUrls, priority = false }: ImageCardProps) {
+export function ImageCard({ item, assetUrls, itemHref = `#asset-${item.assetId}`, priority = false }: ImageCardProps) {
   const pngUrl = assetUrls.png;
   const svgUrl = assetUrls.svg;
   const printUrl = pngUrl || svgUrl;
+  const downloadUrl = pngUrl || svgUrl;
 
   function printImage() {
     if (!printUrl) return;
@@ -36,30 +38,27 @@ export function ImageCard({ item, assetUrls, priority = false }: ImageCardProps)
   }
 
   return (
-    <article className="gallery-item">
-      <div className="gallery-item-media">
-        <AssetImage item={item} imageUrl={assetUrls.preview} priority={priority} />
-      </div>
+    <article className="gallery-item" id={`asset-${item.assetId}`}>
+      <a className="gallery-item-media-link" href={itemHref} aria-label={`View ${item.title}`}>
+        <span className="gallery-item-media">
+          <AssetImage item={item} imageUrl={assetUrls.preview} priority={priority} />
+        </span>
+      </a>
       <div className="gallery-item-body">
         <h3 className="item-title">{item.title}</h3>
         <div className="gallery-actions" aria-label={`${item.title} actions`}>
-          {pngUrl ? (
-            <a className="button button-subtle button-small" href={pngUrl} download aria-label={`Download PNG for ${item.title}`}>
-              PNG
-            </a>
-          ) : null}
-          {svgUrl ? (
-            <a className="button button-subtle button-small" href={svgUrl} download aria-label={`Download SVG for ${item.title}`}>
-              SVG
-            </a>
-          ) : null}
           {printUrl ? (
-            <button className="button button-ghost button-small" type="button" onClick={printImage} aria-label={`Print ${item.title}`}>
+            <button className="button button-primary button-small" type="button" onClick={printImage} aria-label={`Print ${item.title}`}>
               Print
             </button>
           ) : (
             <span className="button button-disabled button-small">Assets pending</span>
           )}
+          {downloadUrl ? (
+            <a className="gallery-download-link" href={downloadUrl} download aria-label={`Download ${item.title}`}>
+              Download
+            </a>
+          ) : null}
         </div>
       </div>
     </article>

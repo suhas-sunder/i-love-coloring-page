@@ -5,6 +5,7 @@ import itemsJson from "@/generated/coloring/items.json";
 import routesJson from "@/generated/coloring/routes.json";
 import searchIndexJson from "@/generated/coloring/search-index.json";
 import siteMapJson from "@/generated/coloring/site-map.json";
+import titleOverridesJson from "@/generated/coloring/title-overrides.json";
 
 import type {
   ColoringHub,
@@ -48,6 +49,14 @@ type SearchIndexManifest = {
   entries: GallerySearchEntry[];
 };
 
+type TitleOverridesManifest = {
+  overrides: Array<{
+    assetId: string;
+    cleanTitle: string;
+    cleanAltText: string;
+  }>;
+};
+
 const hubsManifest = hubsJson as HubsManifest;
 const itemsManifest = itemsJson as ItemsManifest;
 const routesManifest = routesJson as RoutesManifest;
@@ -55,6 +64,7 @@ const siteMapManifest = siteMapJson as SiteMapManifest;
 const hubFeaturedItemsManifest = hubFeaturedItemsJson as HubFeaturedItemsManifest;
 const hubFilterTagsManifest = hubFilterTagsJson as HubFilterTagsManifest;
 const searchIndexManifest = searchIndexJson as SearchIndexManifest;
+const titleOverridesManifest = titleOverridesJson as TitleOverridesManifest;
 
 const hubsById = new Map(hubsManifest.hubs.map((hub) => [hub.hubId, hub]));
 const hubsBySlug = new Map(hubsManifest.hubs.map((hub) => [hub.slug, hub]));
@@ -62,12 +72,14 @@ const itemsById = new Map(itemsManifest.items.map((item) => [item.assetId, item]
 const featuredByHubId = new Map(hubFeaturedItemsManifest.hubs.map((entry) => [entry.hubId, entry.assetIds]));
 const filterUxByHubId = new Map(hubFilterTagsManifest.hubs.map((entry) => [entry.hubId, entry]));
 const searchEntryByAssetId = new Map(searchIndexManifest.entries.map((entry) => [entry.assetId, entry]));
+const titleOverrideByAssetId = new Map(titleOverridesManifest.overrides.map((entry) => [entry.assetId, entry]));
 
 function toPublicItem(item: ColoringItem): PublicColoringItem {
+  const override = titleOverrideByAssetId.get(item.assetId);
   return {
     assetId: item.assetId,
-    title: item.title,
-    altText: item.altText,
+    title: override?.cleanTitle || item.title,
+    altText: override?.cleanAltText || item.altText,
     assetSubpaths: item.assetSubpaths,
   };
 }
@@ -156,6 +168,10 @@ export function getGeneratedFeaturedItems(hub: ColoringHub) {
   return getPublicItemsByIds(featuredByHubId.get(hub.hubId) || hub.featuredAssetIds, 12);
 }
 
+export function getColoringItemHref(item: Pick<PublicColoringItem, "assetId">, preferredRoute?: string) {
+  return `${preferredRoute || getPrimaryRouteForAsset(item.assetId)}#asset-${item.assetId}`;
+}
+
 export function getHubFilterTags(hub: ColoringHub): { tags: GalleryFilterTag[]; tabs: HubGalleryUx["tabs"] } {
   const ux = filterUxByHubId.get(hub.hubId);
   return {
@@ -222,4 +238,13 @@ export function parseStaticPageParam(value: string | undefined) {
 
 export function getSiteUrl() {
   return process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/+$/, "") || "http://localhost:3005";
+}
+
+function getPrimaryRouteForAsset(assetId: string) {
+  const entry = searchEntryByAssetId.get(assetId);
+  const primaryHub = entry?.hubIds
+    .map((hubId) => hubsById.get(hubId))
+    .find((hub): hub is ColoringHub => Boolean(hub?.route));
+
+  return primaryHub?.route || getRootHub().route;
 }

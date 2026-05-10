@@ -17,6 +17,7 @@ type GallerySearchProps = {
   featuredItems: PublicColoringItem[];
   searchEntries: GallerySearchEntry[];
   filterTags: GalleryFilterTag[];
+  itemHrefBasePath?: string;
   tabs: Array<Pick<GalleryFilterTag, "id" | "label" | "assetCount">>;
 };
 
@@ -30,6 +31,7 @@ export function GallerySearch({
   featuredItems,
   searchEntries,
   filterTags,
+  itemHrefBasePath = "",
   tabs,
 }: GallerySearchProps) {
   const [query, setQuery] = useState("");
@@ -115,7 +117,11 @@ export function GallerySearch({
         {capped ? " Refine the search to narrow the list." : ""}
       </p>
 
-      <GalleryGrid items={resultItems} priorityCount={activeMode === "featured" ? 6 : 4} />
+      <GalleryGrid
+        items={resultItems}
+        getItemHref={(item) => `${itemHrefBasePath}#asset-${item.assetId}`}
+        priorityCount={activeMode === "featured" ? 6 : 4}
+      />
     </div>
   );
 }

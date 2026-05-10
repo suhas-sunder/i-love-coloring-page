@@ -5,10 +5,11 @@ import { ImageCard } from "./ImageCard";
 
 type GalleryGridProps = {
   items: PublicColoringItem[];
+  getItemHref?: (item: PublicColoringItem) => string;
   priorityCount?: number;
 };
 
-export function GalleryGrid({ items, priorityCount = 4 }: GalleryGridProps) {
+export function GalleryGrid({ items, getItemHref, priorityCount = 4 }: GalleryGridProps) {
   if (items.length === 0) {
     return (
       <div className="empty-state">
@@ -24,6 +25,7 @@ export function GalleryGrid({ items, priorityCount = 4 }: GalleryGridProps) {
         <ImageCard
           key={item.assetId}
           item={item}
+          itemHref={getItemHref ? getItemHref(item) : `#asset-${item.assetId}`}
           priority={index < priorityCount}
           assetUrls={resolveColoringItemAssetUrls(item.assetSubpaths)}
         />

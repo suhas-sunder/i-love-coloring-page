@@ -84,8 +84,9 @@ test("focus-visible, governed buttons, and compact gallery actions remain presen
   assert.match(componentsCss, /\.button-ghost/);
   assert.match(componentsCss, /\.button-subtle/);
   assert.match(buttonSource, /"primary" \| "secondary" \| "ghost" \| "subtle"/);
-  assert.match(imageCardSource, /aria-label=\{`Download PNG/);
-  assert.match(imageCardSource, /aria-label=\{`Download SVG/);
+  assert.match(imageCardSource, /aria-label=\{`Download /);
+  assert.doesNotMatch(imageCardSource, />\s*PNG\s*</);
+  assert.doesNotMatch(imageCardSource, />\s*SVG\s*</);
   assert.match(imageCardSource, /Print/);
 });
 

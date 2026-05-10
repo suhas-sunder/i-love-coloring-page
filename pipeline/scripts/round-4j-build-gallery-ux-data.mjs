@@ -130,6 +130,8 @@ async function loadState(repoRoot) {
   const hubItemsByAssetId = new Map(inputs.hubItems.items.map((entry) => [entry.assetId, entry]));
   const hubsById = new Map(inputs.hubs.hubs.map((hub) => [hub.hubId, hub]));
   const itemsById = new Map(inputs.items.items.map((item) => [item.assetId, item]));
+  const titleOverrides = await readJsonIfExists(path.join(repoRoot, "src/generated/coloring/title-overrides.json"));
+  const titleOverrideByAssetId = new Map((titleOverrides?.overrides || []).map((entry) => [entry.assetId, entry]));
 
   return {
     repoRoot,
@@ -140,6 +142,7 @@ async function loadState(repoRoot) {
     hubItemsByAssetId,
     hubsById,
     itemsById,
+    titleOverrideByAssetId,
   };
 }
 
@@ -147,17 +150,20 @@ function buildSearchIndex(state) {
   const entries = state.inputs.items.items
     .filter((item) => state.readyAssetIds.has(item.assetId) && state.successfulAssetIds.has(item.assetId) && !state.quarantinedAssetIds.has(item.assetId))
     .map((item) => {
+      const titleOverride = state.titleOverrideByAssetId.get(item.assetId);
+      const publicTitle = titleOverride?.cleanTitle || item.title;
       const hubItem = state.hubItemsByAssetId.get(item.assetId) || { hubIds: [] };
       const hubNames = (hubItem.hubIds || [])
         .map((hubId) => state.hubsById.get(hubId))
         .filter(Boolean)
         .map((hub) => [hub.title, hub.slug].join(" "));
-      const baseText = normalizeSearchText([item.title, item.filenameSlug, item.categorySlug, ...hubNames].join(" "));
+      const filenameTerms = titleOverride ? cleanFilenameTerms(item.filenameSlug) : item.filenameSlug;
+      const baseText = normalizeSearchText([publicTitle, filenameTerms, item.categorySlug, ...hubNames].join(" "));
       const tagIds = TAG_DEFINITIONS.filter((definition) => definition.id === "printable" || definition.terms.some((term) => baseText.includes(term))).map((definition) => definition.id);
 
       return {
         assetId: item.assetId,
-        title: item.title,
+        title: publicTitle,
         categorySlug: item.categorySlug,
         filenameSlug: item.filenameSlug,
         hubIds: hubItem.hubIds || [],
@@ -339,7 +345,7 @@ async function buildRealMediaAudit(repoRoot, state) {
       appApiRouteRequired: false,
     },
     diagnosis: {
-      placeholderCause: "The asset resolver returns null when NEXT_PUBLIC_COLORING_ASSET_BASE_URL is unset, so AssetImage renders the fallback placeholder. With the local media base set at build time, the generated object data points at real media.",
+      placeholderCause: "The asset resolver returns null when NEXT_PUBLIC_COLORING_ASSET_BASE_URL is unset, so AssetImage renders the fallback placeholder. With the local media base set at build time, the generated image src points at real media.",
       broadUiWorkAllowed: knownPngResult.served && staticBuildUsesLocalAssetBase,
     },
   };
@@ -357,16 +363,16 @@ function buildColorSystemUpdate() {
       tokenOnlyAccentLayer: true,
     },
     tokensAdded: [
-      "creativePlum",
-      "creativeRose",
-      "creativeCoral",
-      "creativeSky",
-      "creativeMint",
-      "creativeYellow",
-      "softRoseSurface",
-      "softSkySurface",
-      "softMintSurface",
-      "softYellowSurface",
+      "plum",
+      "rose",
+      "coral",
+      "sky",
+      "mint",
+      "softRose",
+      "softSky",
+      "softMint",
+      "softPlum",
+      "softPaper",
     ],
     usage: [
       "accent marks in headings",
@@ -504,7 +510,7 @@ Generated: ${ROUND4J_GENERATED_AT}
 
 ## Placeholder Diagnosis
 
-Placeholders appeared before because \`NEXT_PUBLIC_COLORING_ASSET_BASE_URL\` was not configured for the build or preview process. In that state the centralized resolver returns \`null\`, and the gallery shows the fallback placeholder. With the local media server and asset base configured, preview objects point at real PNG and thumbnail URLs.
+Placeholders appeared before because \`NEXT_PUBLIC_COLORING_ASSET_BASE_URL\` was not configured for the build or preview process. In that state the centralized resolver returns \`null\`, and the gallery shows the fallback placeholder. With the local media server and asset base configured, preview images point at real PNG and thumbnail URLs.
 `,
     "pipeline/reports/round-4j-color-system-update.md": `# Round 4J Color System Update
 
@@ -641,6 +647,14 @@ function normalizeSearchText(value) {
     .replace(/[^a-z0-9+]+/g, " ")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+function cleanFilenameTerms(value) {
+  return String(value || "")
+    .replace(/\b(?:failed|chatgpt|openai|image)\b/gi, " ")
+    .replace(/\b(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\b/gi, " ")
+    .replace(/\b(?:am|pm)\b/gi, " ")
+    .replace(/\b\d{1,4}\b/g, " ");
 }
 
 async function tryHeadOrGet(url) {

@@ -1,0 +1,26 @@
+{
+  "runId": "round-4k-gallery-visual-corrections",
+  "generatedAt": "2026-05-10T19:40:36.909Z",
+  "summary": {
+    "nestedCardsRemoved": true,
+    "featuredSectionsUseFullWidthBands": true,
+    "mainPreviewAssetPreference": "pngPreview before thumbnail",
+    "visiblePngSvgPillsRemoved": true,
+    "printActionVisible": true,
+    "compactDownloadControlKept": true,
+    "previewImagesClickable": true,
+    "stableAssetAnchors": true,
+    "publicTitleOverridesGenerated": 3,
+    "sourceFilesRenamed": false,
+    "generatedMediaFilesRenamed": false,
+    "appApiRouteReintroduced": false
+  },
+  "changedSurfaces": [
+    "ImageCard media link and actions",
+    "GalleryGrid item target plumbing",
+    "homepage preview links",
+    "coloring-pages landing preview links",
+    "hub featured preview links",
+    "gallery media CSS"
+  ]
+}

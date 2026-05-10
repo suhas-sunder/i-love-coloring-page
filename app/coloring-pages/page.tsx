@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 import { AssetImage } from "@/components/coloring/AssetImage";
 import { GalleryGrid } from "@/components/coloring/GalleryGrid";
@@ -10,6 +11,7 @@ import { hasConfiguredColoringAssetSource, resolveColoringAssetUrl } from "@/lib
 import {
   getAllPhase1Hubs,
   getChildHubs,
+  getColoringItemHref,
   getGeneratedFeaturedItems,
   getHubFilterTags,
   getHubSearchEntries,
@@ -61,25 +63,33 @@ export default function ColoringPagesLanding() {
           <div className="hero-preview-grid hero-preview-grid-compact" aria-label="Featured coloring page previews">
             {featuredItems.slice(0, 6).map((item, index) => (
               <div className="preview-tile" key={item.assetId}>
-                <AssetImage
-                  item={item}
-                  imageUrl={resolveColoringAssetUrl(item.assetSubpaths.thumbnail || item.assetSubpaths.pngPreview)}
-                  priority={index < 2}
-                />
+                <Link className="preview-tile-link" href={getColoringItemHref(item, rootHub.route)} prefetch={false}>
+                  <AssetImage
+                    item={item}
+                    imageUrl={resolveColoringAssetUrl(item.assetSubpaths.thumbnail || item.assetSubpaths.pngPreview)}
+                    priority={index < 2}
+                  />
+                </Link>
               </div>
             ))}
           </div>
         ) : null}
       </HubHero>
 
-      <section className="content-section featured-strip" aria-labelledby="featured-pages">
-        <div className="section-heading-row">
-          <div>
-            <h2 className="section-title" id="featured-pages">Featured pages</h2>
-            <p>A quick shelf of printable pages so the library starts with artwork, not a directory.</p>
+      <section className="content-section section-band featured-band" aria-labelledby="featured-pages">
+        <div className="section-inner">
+          <div className="section-heading-row">
+            <div>
+              <h2 className="section-title" id="featured-pages">Featured pages</h2>
+              <p>A quick shelf of printable pages so the library starts with artwork, not a directory.</p>
+            </div>
           </div>
+          <GalleryGrid
+            items={featuredItems}
+            getItemHref={(item) => getColoringItemHref(item, rootHub.route)}
+            priorityCount={6}
+          />
         </div>
-        <GalleryGrid items={featuredItems} priorityCount={6} />
       </section>
 
       <section className="content-section gallery-section" id="gallery">
@@ -97,6 +107,7 @@ export default function ColoringPagesLanding() {
           featuredItems={featuredItems}
           searchEntries={searchEntries}
           filterTags={tags}
+          itemHrefBasePath={rootHub.route}
           tabs={tabs}
         />
       </section>

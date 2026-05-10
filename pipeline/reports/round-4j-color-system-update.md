@@ -8,15 +8,15 @@ The Indigo Paper base stays in place. Round 4J adds a restrained creative accent
 
 ## Tokens
 
-- creativePlum
-- creativeRose
-- creativeCoral
-- creativeSky
-- creativeMint
-- creativeYellow
-- softRoseSurface
-- softSkySurface
-- softMintSurface
-- softYellowSurface
+- plum
+- rose
+- coral
+- sky
+- mint
+- softRose
+- softSky
+- softMint
+- softPlum
+- softPaper
 
 No gradients, decorative outlines, or loud rainbow treatments are part of this update.

@@ -81,12 +81,16 @@
 .section-band {
   margin-inline: calc(50% - 50vw);
   padding-block: var(--space-64);
-  background: var(--color-soft-sky-surface);
+  background: var(--color-soft-sky);
 }
 
 .section-band .section-inner {
   display: grid;
   gap: var(--space-40);
+}
+
+.section-band.featured-band {
+  background: var(--color-soft-mint);
 }
 
 .section-heading-row {

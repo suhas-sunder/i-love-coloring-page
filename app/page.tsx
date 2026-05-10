@@ -4,7 +4,7 @@ import { AssetImage } from "@/components/coloring/AssetImage";
 import { GalleryGrid } from "@/components/coloring/GalleryGrid";
 import { HubCard } from "@/components/coloring/HubCard";
 import { hasConfiguredColoringAssetSource, resolveColoringAssetUrl } from "@/lib/coloring/assets";
-import { getAllPhase1Hubs, getGeneratedFeaturedItems, getRootHub } from "@/lib/coloring/data";
+import { getAllPhase1Hubs, getColoringItemHref, getGeneratedFeaturedItems, getRootHub } from "@/lib/coloring/data";
 
 export default function HomePage() {
   const rootHub = getRootHub();
@@ -19,10 +19,10 @@ export default function HomePage() {
       <section className={showHeroPreviews ? "hub-hero" : "hub-hero hub-hero-solo"}>
         <div className="hero-copy">
           <h1 className="page-title">I Love Coloring Page</h1>
-          <p>Printable coloring pages with real previews, quick browsing, and PNG or SVG downloads when you find the right page.</p>
+          <p>Printable coloring pages with real previews, quick browsing, and clean print controls when you find the right page.</p>
           <ul className="hero-facts" aria-label="Gallery summary">
             <li><strong>{rootHub.assetCount.toLocaleString()}</strong> printable pages</li>
-            <li>PNG and SVG files</li>
+            <li>Printable files ready from each card</li>
             <li>Searchable subject collections</li>
           </ul>
           <div className="hero-actions">
@@ -39,11 +39,13 @@ export default function HomePage() {
             <div className="hero-preview-grid hero-preview-grid-compact" aria-label="Featured coloring page previews">
               {featuredItems.slice(0, 6).map((item, index) => (
                 <div className="preview-tile" key={item.assetId}>
-                  <AssetImage
-                    item={item}
-                    imageUrl={resolveColoringAssetUrl(item.assetSubpaths.thumbnail || item.assetSubpaths.pngPreview)}
-                    priority={index < 2}
-                  />
+                  <Link className="preview-tile-link" href={getColoringItemHref(item, rootHub.route)} prefetch={false}>
+                    <AssetImage
+                      item={item}
+                      imageUrl={resolveColoringAssetUrl(item.assetSubpaths.thumbnail || item.assetSubpaths.pngPreview)}
+                      priority={index < 2}
+                    />
+                  </Link>
                 </div>
               ))}
             </div>
@@ -51,14 +53,20 @@ export default function HomePage() {
         ) : null}
       </section>
 
-      <section className="content-section featured-strip">
-        <div className="section-heading-row">
-          <div>
-            <h2 className="section-title">Fresh pages to print</h2>
-            <p>Start with a few strong previews, then jump into the full library when you want more.</p>
+      <section className="content-section section-band featured-band">
+        <div className="section-inner">
+          <div className="section-heading-row">
+            <div>
+              <h2 className="section-title">Fresh pages to print</h2>
+              <p>Start with a few strong previews, then jump into the full library when you want more.</p>
+            </div>
           </div>
+          <GalleryGrid
+            items={featuredItems.slice(0, 8)}
+            getItemHref={(item) => getColoringItemHref(item, rootHub.route)}
+            priorityCount={6}
+          />
         </div>
-        <GalleryGrid items={featuredItems.slice(0, 8)} priorityCount={6} />
       </section>
 
       <section className="content-section collection-section">
@@ -93,7 +101,7 @@ export default function HomePage() {
             </li>
             <li>
               <span>Use the file you need</span>
-              <strong>PNG, SVG, or print from the page</strong>
+              <strong>Download or print from the page</strong>
             </li>
             <li>
               <span>Keep browsing simple</span>

@@ -129,6 +129,19 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Do not make the design corporate, childish, loud, or cluttered.
 - Do not add backend or API routes for search or filters.
 - Search and filters must remain static-export compatible.
+- Round 4K forbids nested cards, especially image grids inside colored rounded section cards.
+- Colored sections must be full-width bands with normal max-width inner layout, not wrapper cards around cards.
+- Do not invent colors outside the approved Round 4K tokens.
+- Do not use random yellow or beige backgrounds.
+- Main image cards must show the image cleanly without visible padding or colored gaps behind it.
+- Main gallery cards should use the best available preview asset.
+- PNG and SVG must not appear as noisy primary action pills.
+- Print may remain the primary visible card action.
+- Displayed preview images must be clickable and show cursor-pointer.
+- Homepage preview images must link to actual item targets.
+- Public titles must not expose ChatGPT, Failed, timestamp, or generic AI export names.
+- Do not rename source files or generated media files without an explicit filename cleanup round.
+- Typography must stay on the locked Google Fonts system: Fraunces for major display headings and Figtree for UI and body text.
 
 ## Production Asset Hosting
 

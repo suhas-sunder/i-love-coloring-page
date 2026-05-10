@@ -1,0 +1,57 @@
+{
+  "runId": "round-4k-gallery-visual-corrections",
+  "generatedAt": "2026-05-10T19:40:36.909Z",
+  "summary": {
+    "nestedCardViolationsFound": true,
+    "randomWarmWrapperColorsFound": true,
+    "imagePreviewBackingGapsFound": true,
+    "typographyMismatchFound": true,
+    "noisyPngSvgControlsFound": true,
+    "clickablePreviewGapsFound": true,
+    "badPublicTitleCount": 3
+  },
+  "findings": [
+    {
+      "issue": "Featured sections used a rounded colored wrapper around image cards.",
+      "files": [
+        "app/page.tsx",
+        "app/coloring-pages/page.tsx",
+        "src/components/coloring/HubPageContent.tsx",
+        "src/styles/components.css"
+      ],
+      "correction": "Replace wrapper cards with full-width section bands and normal inner layout."
+    },
+    {
+      "issue": "Yellow and beige visual treatment felt ad hoc.",
+      "files": [
+        "src/styles/tokens.css",
+        "src/styles/components.css"
+      ],
+      "correction": "Remove yellow tokens and limit color to approved creative tokens and soft bands."
+    },
+    {
+      "issue": "Gallery media showed colored backing around previews and used thumbnail-first preview URLs.",
+      "files": [
+        "src/lib/coloring/assets.ts",
+        "src/components/coloring/ImageCard.tsx",
+        "src/styles/components.css"
+      ],
+      "correction": "Use PNG preview first for cards and white paper media wells with no visible padding."
+    },
+    {
+      "issue": "PNG and SVG controls competed with Print as primary pills.",
+      "files": [
+        "src/components/coloring/ImageCard.tsx"
+      ],
+      "correction": "Keep Print visible and collapse downloading to one quiet secondary action."
+    },
+    {
+      "issue": "Some public titles exposed AI export names.",
+      "files": [
+        "src/generated/coloring/title-overrides.json",
+        "src/lib/coloring/data.ts"
+      ],
+      "correction": "Apply public display title overrides without renaming files."
+    }
+  ]
+}

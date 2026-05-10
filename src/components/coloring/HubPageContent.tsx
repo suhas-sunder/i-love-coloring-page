@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { AssetImage } from "@/components/coloring/AssetImage";
 import { GalleryGrid } from "@/components/coloring/GalleryGrid";
 import { GallerySearch } from "@/components/coloring/GallerySearch";
@@ -8,6 +10,7 @@ import { RelatedHubs } from "@/components/coloring/RelatedHubs";
 import { hasConfiguredColoringAssetSource, resolveColoringAssetUrl } from "@/lib/coloring/assets";
 import {
   getChildHubs,
+  getColoringItemHref,
   getGeneratedFeaturedItems,
   getHubFilterTags,
   getHubSearchEntries,
@@ -40,11 +43,13 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
           <div className="hero-preview-grid hero-preview-grid-compact" aria-label={`${hub.title} featured previews`}>
             {featuredItems.slice(0, 6).map((item) => (
               <div className="preview-tile" key={item.assetId}>
-                <AssetImage
-                  item={item}
-                  imageUrl={resolveColoringAssetUrl(item.assetSubpaths.thumbnail || item.assetSubpaths.pngPreview)}
-                  priority
-                />
+                <Link className="preview-tile-link" href={getColoringItemHref(item, hub.route)} prefetch={false}>
+                  <AssetImage
+                    item={item}
+                    imageUrl={resolveColoringAssetUrl(item.assetSubpaths.thumbnail || item.assetSubpaths.pngPreview)}
+                    priority
+                  />
+                </Link>
               </div>
             ))}
           </div>
@@ -52,14 +57,20 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
       </HubHero>
 
       {featuredItems.length > 0 ? (
-        <section className="content-section featured-strip" aria-labelledby="featured-pages">
-          <div className="section-heading-row">
-            <div>
-              <h2 className="section-title" id="featured-pages">Featured pages</h2>
-              <p>Representative picks from this collection, selected from successful production assets.</p>
+        <section className="content-section section-band featured-band" aria-labelledby="featured-pages">
+          <div className="section-inner">
+            <div className="section-heading-row">
+              <div>
+                <h2 className="section-title" id="featured-pages">Featured pages</h2>
+                <p>Representative picks from this collection, selected from successful production assets.</p>
+              </div>
             </div>
+            <GalleryGrid
+              items={featuredItems}
+              getItemHref={(item) => getColoringItemHref(item, hub.route)}
+              priorityCount={6}
+            />
           </div>
-          <GalleryGrid items={featuredItems} priorityCount={6} />
         </section>
       ) : null}
 
@@ -80,6 +91,7 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
           featuredItems={featuredItems}
           searchEntries={searchEntries}
           filterTags={tags}
+          itemHrefBasePath={hub.route}
           tabs={tabs}
         />
         <Pagination
@@ -111,7 +123,7 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
               </div>
             ) : null}
             {browsingSections.length > 0 ? (
-              <div className="section-list-panel">
+              <div className="section-list-group">
                 <h3 className="supporting-title">Common themes</h3>
                 <ul className="section-list">
                   {browsingSections.map((item) => (
@@ -138,7 +150,7 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
           <ul className="section-list">
             <li>
               <span>Downloads</span>
-              <strong>PNG and SVG</strong>
+              <strong>Downloadable files</strong>
             </li>
             <li>
               <span>Printing</span>
@@ -159,7 +171,7 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
 
 function friendlyHubIntro(title: string) {
   if (title === "Coloring Pages for Kids") {
-    return "Simple printable pages for kids, with PNG and SVG downloads ready when you find one you like.";
+    return "Simple printable pages for kids, with downloads and print controls ready when you find one you like.";
   }
 
   if (title === "Detailed Coloring Pages for Adults") {

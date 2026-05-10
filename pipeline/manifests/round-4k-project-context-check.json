@@ -1,0 +1,56 @@
+{
+  "runId": "round-4k-gallery-visual-corrections",
+  "generatedAt": "2026-05-10T19:40:36.909Z",
+  "summary": {
+    "correctRepository": true,
+    "branch": "version-4",
+    "head": "74265c5c1702a207ccd402c3a6058ee63cc72fd7",
+    "round4jCommitExists": true,
+    "staticExportConfigured": true,
+    "appApiRoutePresent": false,
+    "hubRoutesExist": true,
+    "r2BundleExists": true,
+    "publicGeneratedMediaPresent": false,
+    "imagesClean": true,
+    "ilovesvgClean": true,
+    "sitemapRouteCount": 65
+  },
+  "checks": [
+    {
+      "name": "repository",
+      "expected": "i-love-coloring-page",
+      "actual": "i-love-coloring-page",
+      "passed": true
+    },
+    {
+      "name": "branch",
+      "expected": "version-4",
+      "actual": "version-4",
+      "passed": true
+    },
+    {
+      "name": "round4jCommit",
+      "expected": "74265c5c1702a207ccd402c3a6058ee63cc72fd7",
+      "actual": "found",
+      "passed": true
+    },
+    {
+      "name": "appApi",
+      "expected": "absent",
+      "actual": "absent",
+      "passed": true
+    },
+    {
+      "name": "staticExport",
+      "expected": "configured",
+      "actual": "configured",
+      "passed": true
+    },
+    {
+      "name": "r2Bundle",
+      "expected": "pipeline/r2-upload/coloring-pages",
+      "actual": "exists",
+      "passed": true
+    }
+  ]
+}

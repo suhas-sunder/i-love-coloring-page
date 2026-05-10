@@ -1,5 +1,7 @@
 "use client";
 
+import { useState } from "react";
+
 import type { PublicColoringItem } from "@/lib/coloring/types";
 
 type AssetImageProps = {
@@ -9,19 +11,20 @@ type AssetImageProps = {
 };
 
 export function AssetImage({ item, imageUrl, priority = false }: AssetImageProps) {
-  if (!imageUrl) return <AssetPlaceholder title={item.title} />;
+  const [failed, setFailed] = useState(false);
+
+  if (!imageUrl || failed) return <AssetPlaceholder title={item.title} />;
 
   return (
-    <object
-      aria-label={item.altText}
+    <img
+      alt={item.altText}
       className="asset-image"
-      data={imageUrl}
       data-priority={priority ? "true" : "false"}
-      role="img"
-      type="image/png"
-    >
-      <AssetPlaceholder title={item.title} />
-    </object>
+      decoding="async"
+      loading={priority ? "eager" : "lazy"}
+      onError={() => setFailed(true)}
+      src={imageUrl}
+    />
   );
 }
 

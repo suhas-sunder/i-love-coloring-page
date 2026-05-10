@@ -1,0 +1,92 @@
+{
+  "runId": "round-4k-gallery-visual-corrections",
+  "generatedAt": "2026-05-10T19:40:36.909Z",
+  "summary": {
+    "detectedBadTitleCount": 3,
+    "generatedTitleOverrideCount": 3,
+    "manualReviewFlagCount": 3,
+    "sourceFilesRenamed": false,
+    "generatedMediaFilesRenamed": false
+  },
+  "badTitlePatterns": [
+    "ChatGPT Image",
+    "Failed ChatGPT Image",
+    "OpenAI",
+    "date or timestamp export names",
+    "generic failed or generated names"
+  ],
+  "overrides": [
+    {
+      "assetId": "mandala-geometry-patterns__chatgpt-image-oct-14-2025-11-38-05-pm__ea62e476c5",
+      "originalTitle": "ChatGPT Image Oct 14, 2025, 11 38 05 PM",
+      "originalAltText": "ChatGPT Image Oct 14, 2025, 11 38 05 PM coloring page",
+      "cleanTitle": "Geometric Pattern Coloring Page",
+      "cleanAltText": "Geometric Pattern Coloring Page printable coloring page",
+      "categorySlug": "mandala-geometry-patterns",
+      "hubSlugs": [
+        "",
+        "detailed-for-adults",
+        "geometric",
+        "mandalas"
+      ],
+      "likelyPublicTargets": [
+        "/coloring-pages#asset-mandala-geometry-patterns__chatgpt-image-oct-14-2025-11-38-05-pm__ea62e476c5",
+        "/coloring-pages/detailed-for-adults#asset-mandala-geometry-patterns__chatgpt-image-oct-14-2025-11-38-05-pm__ea62e476c5",
+        "/coloring-pages/geometric#asset-mandala-geometry-patterns__chatgpt-image-oct-14-2025-11-38-05-pm__ea62e476c5",
+        "/coloring-pages/mandalas#asset-mandala-geometry-patterns__chatgpt-image-oct-14-2025-11-38-05-pm__ea62e476c5"
+      ],
+      "confidence": "medium",
+      "reason": "Inferred from category and hub terms matching mandala|geometric|pattern.",
+      "manualReviewRequired": true,
+      "filesRenamed": false,
+      "mediaFilenamesRenamed": false,
+      "flaggedForLaterFilenameCleanup": true
+    },
+    {
+      "assetId": "mandala-geometry-patterns__failed-chatgpt-image-oct-19-2025-10-27-27-pm__a0411d2e82",
+      "originalTitle": "Failed ChatGPT Image Oct 19, 2025, 10 27 27 PM",
+      "originalAltText": "Failed ChatGPT Image Oct 19, 2025, 10 27 27 PM coloring page",
+      "cleanTitle": "Geometric Pattern Coloring Page",
+      "cleanAltText": "Geometric Pattern Coloring Page printable coloring page",
+      "categorySlug": "mandala-geometry-patterns",
+      "hubSlugs": [
+        "",
+        "detailed-for-adults",
+        "geometric",
+        "mandalas"
+      ],
+      "likelyPublicTargets": [
+        "/coloring-pages#asset-mandala-geometry-patterns__failed-chatgpt-image-oct-19-2025-10-27-27-pm__a0411d2e82",
+        "/coloring-pages/detailed-for-adults#asset-mandala-geometry-patterns__failed-chatgpt-image-oct-19-2025-10-27-27-pm__a0411d2e82",
+        "/coloring-pages/geometric#asset-mandala-geometry-patterns__failed-chatgpt-image-oct-19-2025-10-27-27-pm__a0411d2e82",
+        "/coloring-pages/mandalas#asset-mandala-geometry-patterns__failed-chatgpt-image-oct-19-2025-10-27-27-pm__a0411d2e82"
+      ],
+      "confidence": "medium",
+      "reason": "Inferred from category and hub terms matching mandala|geometric|pattern.",
+      "manualReviewRequired": true,
+      "filesRenamed": false,
+      "mediaFilenamesRenamed": false,
+      "flaggedForLaterFilenameCleanup": true
+    },
+    {
+      "assetId": "space__chatgpt-image-may-1-2025-12-50-41-am__3e13c05f13",
+      "originalTitle": "ChatGPT Image May 1, 2025, 12 50 41 AM",
+      "originalAltText": "ChatGPT Image May 1, 2025, 12 50 41 AM coloring page",
+      "cleanTitle": "Space Coloring Page",
+      "cleanAltText": "Space Coloring Page printable coloring page",
+      "categorySlug": "space",
+      "hubSlugs": [
+        ""
+      ],
+      "likelyPublicTargets": [
+        "/coloring-pages#asset-space__chatgpt-image-may-1-2025-12-50-41-am__3e13c05f13"
+      ],
+      "confidence": "medium",
+      "reason": "Inferred from category and hub terms matching space|planet|astronaut|rocket.",
+      "manualReviewRequired": true,
+      "filesRenamed": false,
+      "mediaFilenamesRenamed": false,
+      "flaggedForLaterFilenameCleanup": true
+    }
+  ]
+}
