@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-05-10",
+  "runId": "round-4f-frontend-only-netlify-static",
+  "selectedDeploymentMode": "static-export",
+  "productionBackendRequired": false,
+  "netlifyBuildCommand": "npm run build",
+  "netlifyPublishDirectory": "out",
+  "recommendation": "Use Next static export on Netlify with all media served from NEXT_PUBLIC_COLORING_ASSET_BASE_URL.",
+  "evaluatedOptions": {
+    "staticExport": {
+      "recommended": true,
+      "supportedAfterRound4F": true,
+      "requirements": [
+        "remove production route handlers",
+        "pre-render all public hub pages",
+        "pre-render non-sitemap pagination pages",
+        "serve media from CDN or object storage",
+        "avoid request-time filesystem media reads"
+      ],
+      "tradeoffs": [
+        "pagination becomes path based instead of query based",
+        "asset previews require a configured public asset base URL"
+      ]
+    },
+    "netlifyNextAdapter": {
+      "recommended": false,
+      "supported": true,
+      "reasonNotSelected": "The current public gallery can be exported statically once the local media proxy is removed and pagination is path based."
+    }
+  },
+  "assetProxyDecision": {
+    "appApiProxyRemoved": true,
+    "productionApiMediaDependency": false,
+    "localPreviewStrategy": "Use NEXT_PUBLIC_COLORING_ASSET_BASE_URL with a real CDN URL or a separate local static file server for pipeline/production/full/assets."
+  }
+}

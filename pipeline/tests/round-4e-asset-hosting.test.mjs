@@ -122,20 +122,19 @@ test("asset resolver normalizes base URLs, rejects unsafe paths, and keeps proxy
   assert.equal(defaultResolver.hasConfiguredColoringAssetSource(), false);
   assert.equal(defaultResolver.resolveColoringAssetUrl("svg/animals/file.svg"), null);
 
-  const withProxy = await loadAssetResolver({ NEXT_PUBLIC_COLORING_USE_LOCAL_ASSET_PROXY: "1" });
-  assert.equal(withProxy.resolveColoringAssetUrl("thumbs/animals/file thumb.png"), "/api/coloring-assets/thumbs/animals/file%20thumb.png");
+  const withoutCdn = await loadAssetResolver({ NEXT_PUBLIC_COLORING_USE_LOCAL_ASSET_PROXY: "1" });
+  assert.equal(withoutCdn.hasConfiguredColoringAssetSource(), false);
+  assert.equal(withoutCdn.resolveColoringAssetUrl("thumbs/animals/file thumb.png"), null);
 });
 
-test("local proxy stays development-only and blocks path traversal", async () => {
-  const apiRoute = await readText("app/api/coloring-assets/[...path]/route.ts");
+test("Round 4F removes the App Router local proxy from the production app", async () => {
   const assetsSource = await readText("src/lib/coloring/assets.ts");
+  const decision = await readJson("pipeline/manifests/round-4f-deployment-mode-decision.json");
 
-  assert.match(apiRoute, /COLORING_ENABLE_LOCAL_ASSET_PROXY\s*===\s*"1"/);
-  assert.match(apiRoute, /pipeline",\s*"production",\s*"full",\s*"assets"/);
-  assert.match(apiRoute, /normalizeAssetSubpath/);
-  assert.match(apiRoute, /path\.relative/);
-  assert.doesNotMatch(apiRoute, /COLORING_LOCAL_ASSET_ROOT/);
-  assert.match(apiRoute, /getColoringAssetContentType/);
+  await assert.rejects(readText("app/api/coloring-assets/[...path]/route.ts"), /ENOENT/);
+  assert.equal(decision.assetProxyDecision.appApiProxyRemoved, true);
+  assert.equal(decision.assetProxyDecision.productionApiMediaDependency, false);
+  assert.doesNotMatch(assetsSource, /NEXT_PUBLIC_COLORING_USE_LOCAL_ASSET_PROXY|\/api\/coloring-assets/);
   assert.match(assetsSource, /image\/svg\+xml/);
   assert.match(assetsSource, /image\/png/);
 });

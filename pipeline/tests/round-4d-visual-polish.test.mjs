@@ -89,12 +89,11 @@ test("focus-visible, governed buttons, and compact gallery actions remain presen
   assert.match(imageCardSource, /Print/);
 });
 
-test("asset resolver remains centralized and local proxy stays disabled by default", async () => {
+test("asset resolver remains centralized and frontend-only after Round 4F", async () => {
   const assetsSource = await readText("src/lib/coloring/assets.ts");
-  const apiRoute = await readText("app/api/coloring-assets/[...path]/route.ts");
 
-  assert.match(assetsSource, /NEXT_PUBLIC_COLORING_USE_LOCAL_ASSET_PROXY\s*===\s*"1"/);
-  assert.match(apiRoute, /COLORING_ENABLE_LOCAL_ASSET_PROXY\s*===\s*"1"/);
+  assert.match(assetsSource, /NEXT_PUBLIC_COLORING_ASSET_BASE_URL/);
+  assert.doesNotMatch(assetsSource, /NEXT_PUBLIC_COLORING_USE_LOCAL_ASSET_PROXY|\/api\/coloring-assets/);
 
   const sourceFiles = [
     ...await listFiles(path.join(REPO_ROOT, "app"), [".ts", ".tsx"]),
@@ -105,7 +104,7 @@ test("asset resolver remains centralized and local proxy stays disabled by defau
     const relative = normalizePath(path.relative(REPO_ROOT, file));
     const text = await readFile(file, "utf8");
     if (relative !== "src/lib/coloring/assets.ts") {
-      assert.doesNotMatch(text, /NEXT_PUBLIC_COLORING_USE_LOCAL_ASSET_PROXY/, relative);
+      assert.doesNotMatch(text, /NEXT_PUBLIC_COLORING_USE_LOCAL_ASSET_PROXY|COLORING_ENABLE_LOCAL_ASSET_PROXY|\/api\/coloring-assets/, relative);
     }
   }
 });

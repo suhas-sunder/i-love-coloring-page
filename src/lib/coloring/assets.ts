@@ -12,7 +12,6 @@ export type ResolvedColoringAssetUrls = {
 };
 
 const ASSET_BASE_URL = normalizeColoringAssetBaseUrl(process.env.NEXT_PUBLIC_COLORING_ASSET_BASE_URL);
-const USE_LOCAL_PROXY = process.env.NEXT_PUBLIC_COLORING_USE_LOCAL_ASSET_PROXY === "1";
 const ALLOWED_TOP_LEVEL_FOLDERS = new Set(["svg", "png", "thumbs"]);
 
 export function resolveColoringAssetUrl(assetSubpath: string | null | undefined): string | null {
@@ -21,10 +20,6 @@ export function resolveColoringAssetUrl(assetSubpath: string | null | undefined)
 
   if (ASSET_BASE_URL) {
     return `${ASSET_BASE_URL}/${encodeAssetSubpath(safeSubpath)}`;
-  }
-
-  if (USE_LOCAL_PROXY) {
-    return `/api/coloring-assets/${encodeAssetSubpath(safeSubpath)}`;
   }
 
   return null;
@@ -56,7 +51,7 @@ export function resolveColoringItemAssetUrls(assetSubpaths: AssetSubpathsLike): 
 }
 
 export function hasConfiguredColoringAssetSource() {
-  return Boolean(ASSET_BASE_URL || USE_LOCAL_PROXY);
+  return Boolean(ASSET_BASE_URL);
 }
 
 export function normalizeAssetSubpath(assetSubpath: string | null | undefined): string | null {

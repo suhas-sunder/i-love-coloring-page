@@ -1,0 +1,52 @@
+{
+  "generatedAt": "2026-05-10",
+  "runId": "round-4f-frontend-only-netlify-static",
+  "auditedFiles": [
+    "AGENTS.md",
+    ".env.example",
+    "next.config.mjs",
+    "package.json",
+    "app/sitemap.ts",
+    "app/robots.ts",
+    "app/coloring-pages/page.tsx",
+    "app/coloring-pages/[hubSlug]/page.tsx",
+    "app/coloring-pages/[hubSlug]/page/[page]/page.tsx",
+    "src/lib/coloring/assets.ts",
+    "src/lib/coloring/data.ts",
+    "src/lib/coloring/types.ts",
+    "src/components/coloring/AssetImage.tsx",
+    "src/components/coloring/ImageCard.tsx",
+    "pipeline/reports/round-4e-asset-url-contract.md",
+    "pipeline/reports/round-4e-production-asset-hosting-strategy.md",
+    "pipeline/manifests/round-4e-asset-url-contract.json",
+    "pipeline/manifests/round-4e-asset-publish-manifest.json"
+  ],
+  "findingsBeforeRound4F": {
+    "appApiAssetProxyRoutePresent": true,
+    "requestTimeFilesystemMediaAccess": true,
+    "queryStringServerPagination": true,
+    "staticExportConfigured": false,
+    "productionMediaCouldDependOnApiRouteIfProxyEnvEnabled": true
+  },
+  "findingsAfterRound4F": {
+    "appApiAssetProxyRoutePresent": false,
+    "routeHandlers": 0,
+    "middleware": false,
+    "requestTimeFilesystemMediaAccess": false,
+    "requestHeadersOrCookies": false,
+    "rewrites": false,
+    "runtimeApiDependencies": false,
+    "serverOnlyFilesystemReadsDuringRequests": false,
+    "imageOptimizationServerDependency": false,
+    "productionAssetProxyDependency": false,
+    "generatedDataImportedAtBuildTime": true,
+    "dynamicHubRoutesFullyGenerated": true,
+    "staticPaginationRoutesGenerated": 428
+  },
+  "productionBackendRequired": false,
+  "notes": [
+    "Sitemap and robots remain metadata routes generated at build time.",
+    "Media URLs are direct CDN or object-storage URLs from NEXT_PUBLIC_COLORING_ASSET_BASE_URL.",
+    "If the base URL is unset, gallery media renders clean placeholders and actions are unavailable."
+  ]
+}

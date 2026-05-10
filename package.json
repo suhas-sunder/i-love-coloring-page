@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "typecheck": "tsc --noEmit",
-    "test": "node --test pipeline/tests/round-4a-hub-taxonomy.test.mjs pipeline/tests/round-4b-next-gallery.test.mjs pipeline/tests/round-4c-design-system.test.mjs pipeline/tests/round-4d-visual-polish.test.mjs pipeline/tests/round-4e-asset-hosting.test.mjs"
+    "test": "node --test pipeline/tests/round-4a-hub-taxonomy.test.mjs pipeline/tests/round-4b-next-gallery.test.mjs pipeline/tests/round-4c-design-system.test.mjs pipeline/tests/round-4d-visual-polish.test.mjs pipeline/tests/round-4e-asset-hosting.test.mjs pipeline/tests/round-4f-frontend-deployment.test.mjs"
   },
   "dependencies": {
     "next": "16.2.6",

@@ -137,6 +137,19 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Upload tooling must preserve CDN-relative paths and content types from the publish manifest.
 - Real upload commands require an explicit future prompt and must never add credentials to the repo.
 
+## Frontend-Only Deployment
+
+- The current product stage is frontend-only.
+- Netlify is the frontend hosting target.
+- Prefer static export for the public gallery.
+- Do not add backend or server dependencies for the public printable gallery.
+- Production gallery media must resolve from `NEXT_PUBLIC_COLORING_ASSET_BASE_URL`.
+- Production must not depend on `app/api/coloring-assets`.
+- Local media preview, if needed, must use a separate development-only static file server or a real CDN URL.
+- Generated media stays out of `public/` unless a later explicit prompt approves a temporary strategy.
+- Backend work is deferred until accounts, saves, uploads, payments, admin/moderation, email/account workflows, or server-side processing are required.
+- Do not add API routes, middleware, cookies, auth, database, or payment dependencies for the public printable gallery.
+
 ## Conversion Workflow
 
 - Do not choose a winning preset until a later bakeoff round compares outputs.

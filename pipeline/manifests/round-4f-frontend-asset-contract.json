@@ -1,0 +1,30 @@
+{
+  "generatedAt": "2026-05-10",
+  "runId": "round-4f-frontend-only-netlify-static",
+  "productionAssetBaseUrlVariable": "NEXT_PUBLIC_COLORING_ASSET_BASE_URL",
+  "productionApiRouteDependency": false,
+  "localProxyInAppRouter": false,
+  "clientDataPolicy": {
+    "usesGeneratedRelativeMediaPaths": true,
+    "localFilesystemPathsAllowed": false,
+    "windowsPathsAllowed": false,
+    "sourceImagePathsAllowed": false
+  },
+  "urlResolution": {
+    "centralizedResolver": "src/lib/coloring/assets.ts",
+    "cdnBaseUrlNormalized": true,
+    "pathSegmentsEncoded": true,
+    "unsafePathsRejected": true,
+    "manualComponentUrlConstructionAllowed": false
+  },
+  "unavailableState": {
+    "whenBaseUrlMissing": "render placeholders and omit download or print URLs",
+    "brokenImageIconsAllowed": false
+  },
+  "mediaRoots": [
+    "svg",
+    "png",
+    "thumbs"
+  ],
+  "publishManifest": "pipeline/manifests/round-4e-asset-publish-manifest.json"
+}

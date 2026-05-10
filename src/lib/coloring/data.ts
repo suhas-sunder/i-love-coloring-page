@@ -78,7 +78,7 @@ export function getPublicItemsByIds(assetIds: string[], limit = assetIds.length)
 export function getPagedHubItems(hub: ColoringHub, requestedPage: number): PagedGallery {
   const pageSize = hub.galleryPageSize;
   const totalItems = hub.assetIds.length;
-  const totalPages = Math.max(1, Math.ceil(totalItems / pageSize));
+  const totalPages = getHubPageCount(hub);
   const currentPage = Math.min(Math.max(1, requestedPage), totalPages);
   const start = (currentPage - 1) * pageSize;
   const items = getPublicItemsByIds(hub.assetIds.slice(start, start + pageSize));
@@ -92,6 +92,25 @@ export function getPagedHubItems(hub: ColoringHub, requestedPage: number): Paged
     hasPreviousPage: currentPage > 1,
     hasNextPage: currentPage < totalPages,
   };
+}
+
+export function getHubPageCount(hub: ColoringHub) {
+  return Math.max(1, Math.ceil(hub.assetIds.length / hub.galleryPageSize));
+}
+
+export function getHubPagePath(hub: ColoringHub, page: number) {
+  return page <= 1 ? hub.route : `${hub.route}/page/${page}`;
+}
+
+export function getStaticHubPageParams() {
+  return getNonRootPhase1Hubs().flatMap((hub) => {
+    const totalPages = getHubPageCount(hub);
+    const params: Array<{ hubSlug: string; page: string }> = [];
+    for (let page = 2; page <= totalPages; page += 1) {
+      params.push({ hubSlug: hub.slug, page: String(page) });
+    }
+    return params;
+  });
 }
 
 export function getFeaturedItems(hub: ColoringHub) {
@@ -140,6 +159,12 @@ export function parsePageParam(value: string | string[] | undefined) {
   const raw = Array.isArray(value) ? value[0] : value;
   const parsed = Number.parseInt(raw || "1", 10);
   return Number.isFinite(parsed) && parsed > 0 ? parsed : 1;
+}
+
+export function parseStaticPageParam(value: string | undefined) {
+  if (!value || !/^[1-9]\d*$/.test(value)) return null;
+  const parsed = Number.parseInt(value, 10);
+  return parsed > 1 ? parsed : null;
 }
 
 export function getSiteUrl() {

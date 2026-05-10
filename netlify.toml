@@ -1,0 +1,11 @@
+# Netlify deploys the public gallery as a static frontend.
+# Required Netlify environment variables:
+# - NEXT_PUBLIC_SITE_URL
+# - NEXT_PUBLIC_COLORING_ASSET_BASE_URL
+
+[build]
+  command = "npm run build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "22"

@@ -42,5 +42,5 @@ export function Pagination({ basePath, currentPage, totalPages, hasPreviousPage,
 }
 
 function pageHref(basePath: string, page: number) {
-  return page <= 1 ? basePath : `${basePath}?page=${page}`;
+  return page <= 1 ? basePath : `${basePath}/page/${page}`;
 }
