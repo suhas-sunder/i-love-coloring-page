@@ -1,0 +1,1154 @@
+{
+  "generatedAt": "2026-05-10",
+  "runId": "round-4a-approved-asset-hub-taxonomy",
+  "deterministicRules": {
+    "lowercaseBeforeMatching": true,
+    "splitOnPunctuationAndHyphens": true,
+    "removeNoiseTokens": [
+      "05",
+      "10",
+      "11",
+      "2024",
+      "2025",
+      "2026",
+      "27",
+      "38",
+      "a",
+      "am",
+      "an",
+      "and",
+      "anime",
+      "are",
+      "as",
+      "at",
+      "by",
+      "chatgpt",
+      "collection",
+      "color",
+      "coloring",
+      "failed",
+      "for",
+      "from",
+      "girl",
+      "girls",
+      "illustration",
+      "image",
+      "images",
+      "in",
+      "into",
+      "jpeg",
+      "jpg",
+      "line",
+      "lineart",
+      "oct",
+      "of",
+      "on",
+      "or",
+      "outline",
+      "over",
+      "page",
+      "pages",
+      "pm",
+      "png",
+      "scene",
+      "set",
+      "single",
+      "svg",
+      "the",
+      "thing",
+      "to",
+      "with",
+      "without"
+    ],
+    "normalizePluralTokens": true,
+    "preserveEnoughSpecificVariants": [
+      "puppy is retained as a possible subject while also rolling up under dog",
+      "kitten is retained as a possible subject while also rolling up under cat",
+      "kawaii and cute are related style signals but stay separate tokens"
+    ],
+    "routeSlugsUseAsciiLowercaseHyphenation": true
+  },
+  "phraseNormalizationRules": [
+    {
+      "canonicalTerm": "t-rex",
+      "publicLabel": "T-Rex",
+      "patterns": [
+        "\\bt\\s*rex\\b",
+        "\\btrex\\b",
+        "\\btyrannosaurus(?:\\s+rex)?\\b"
+      ],
+      "reason": "Normalize common Tyrannosaurus Rex variants to a stable public term."
+    },
+    {
+      "canonicalTerm": "anime girl",
+      "publicLabel": "Anime Girls",
+      "patterns": [
+        "\\banime\\s+girls?\\b"
+      ],
+      "reason": "Keep anime girl as a phrase instead of separate generic anime and girl tokens."
+    },
+    {
+      "canonicalTerm": "indoor plant",
+      "publicLabel": "Indoor Plants",
+      "patterns": [
+        "\\bindoor\\s+plants?\\b",
+        "\\bidoor\\s+plants?\\b"
+      ],
+      "reason": "Correct a source filename typo and preserve the houseplant intent phrase."
+    },
+    {
+      "canonicalTerm": "world landmark",
+      "publicLabel": "World Landmarks",
+      "patterns": [
+        "\\bworld\\s+landmarks?\\b"
+      ],
+      "reason": "Preserve world landmark as a public hub phrase."
+    },
+    {
+      "canonicalTerm": "sea life",
+      "publicLabel": "Sea Life",
+      "patterns": [
+        "\\bsea\\s+life\\b",
+        "\\bocean\\s+life\\b"
+      ],
+      "reason": "Group ocean animals and sea-life wording under one stable phrase."
+    },
+    {
+      "canonicalTerm": "st patricks day",
+      "publicLabel": "St. Patrick's Day",
+      "patterns": [
+        "\\bst\\s+patricks?\\s+day\\b",
+        "\\bsaint\\s+patricks?\\s+day\\b"
+      ],
+      "reason": "Normalize apostrophe and saint abbreviations for public routes."
+    },
+    {
+      "canonicalTerm": "saber toothed tiger",
+      "publicLabel": "Saber-Toothed Tigers",
+      "patterns": [
+        "\\bsaber\\s+toothed\\s+tigers?\\b",
+        "\\bsabre\\s+toothed\\s+tigers?\\b"
+      ],
+      "reason": "Keep the prehistoric animal phrase together."
+    },
+    {
+      "canonicalTerm": "playing card",
+      "publicLabel": "Playing Cards",
+      "patterns": [
+        "\\bplaying\\s+cards?\\b"
+      ],
+      "reason": "Keep playing cards as a phrase."
+    },
+    {
+      "canonicalTerm": "birthday party",
+      "publicLabel": "Birthday Party",
+      "patterns": [
+        "\\bbirthday\\s+party\\b",
+        "\\bparty\\s+hats?\\b"
+      ],
+      "reason": "Group birthday celebration filenames under a useful holiday-party phrase."
+    },
+    {
+      "canonicalTerm": "fantasy creature",
+      "publicLabel": "Fantasy Creatures",
+      "patterns": [
+        "\\bfantasy\\s+creatures?\\b",
+        "\\bcreatures?\\b"
+      ],
+      "reason": "Use a public-friendly umbrella for creature-focused fantasy images."
+    }
+  ],
+  "tokenReplacementRules": [
+    {
+      "from": "birds",
+      "to": "bird"
+    },
+    {
+      "from": "cars",
+      "to": "car"
+    },
+    {
+      "from": "cats",
+      "to": "cat"
+    },
+    {
+      "from": "dino",
+      "to": "dinosaur"
+    },
+    {
+      "from": "dinos",
+      "to": "dinosaur"
+    },
+    {
+      "from": "dinosaurs",
+      "to": "dinosaur"
+    },
+    {
+      "from": "dogs",
+      "to": "dog"
+    },
+    {
+      "from": "dragons",
+      "to": "dragon"
+    },
+    {
+      "from": "flowers",
+      "to": "flower"
+    },
+    {
+      "from": "geometry",
+      "to": "geometric"
+    },
+    {
+      "from": "homes",
+      "to": "home"
+    },
+    {
+      "from": "houses",
+      "to": "house"
+    },
+    {
+      "from": "insects",
+      "to": "insect"
+    },
+    {
+      "from": "kittens",
+      "to": "kitten"
+    },
+    {
+      "from": "kitties",
+      "to": "kitten"
+    },
+    {
+      "from": "kitty",
+      "to": "kitten"
+    },
+    {
+      "from": "landmarks",
+      "to": "landmark"
+    },
+    {
+      "from": "locomotives",
+      "to": "locomotive"
+    },
+    {
+      "from": "medival",
+      "to": "medieval"
+    },
+    {
+      "from": "mideival",
+      "to": "medieval"
+    },
+    {
+      "from": "midieval",
+      "to": "medieval"
+    },
+    {
+      "from": "patricks",
+      "to": "patrick"
+    },
+    {
+      "from": "patterns",
+      "to": "pattern"
+    },
+    {
+      "from": "pics",
+      "to": "picture"
+    },
+    {
+      "from": "planes",
+      "to": "plane"
+    },
+    {
+      "from": "plants",
+      "to": "plant"
+    },
+    {
+      "from": "plushies",
+      "to": "plushie"
+    },
+    {
+      "from": "puppies",
+      "to": "puppy"
+    },
+    {
+      "from": "pups",
+      "to": "puppy"
+    },
+    {
+      "from": "reptiles",
+      "to": "reptile"
+    },
+    {
+      "from": "rex",
+      "to": "t-rex"
+    },
+    {
+      "from": "trains",
+      "to": "train"
+    },
+    {
+      "from": "trex",
+      "to": "t-rex"
+    },
+    {
+      "from": "tyrannosaurus",
+      "to": "t-rex"
+    },
+    {
+      "from": "vehiacle",
+      "to": "vehicle"
+    },
+    {
+      "from": "vehicles",
+      "to": "vehicle"
+    },
+    {
+      "from": "xmas",
+      "to": "christmas"
+    }
+  ],
+  "parentSubjectRules": [
+    {
+      "term": "animal",
+      "publicLabel": "Animals",
+      "parent": null,
+      "kind": "parent_subject"
+    },
+    {
+      "term": "anime",
+      "publicLabel": "Anime",
+      "parent": null,
+      "kind": "style_subject"
+    },
+    {
+      "term": "anime girl",
+      "publicLabel": "Anime Girls",
+      "parent": "anime",
+      "kind": "style_subject"
+    },
+    {
+      "term": "bakery",
+      "publicLabel": "Bakery",
+      "parent": "food",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "bee",
+      "publicLabel": "Bees",
+      "parent": "insect",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "beetle",
+      "publicLabel": "Beetles",
+      "parent": "insect",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "bird",
+      "publicLabel": "Birds",
+      "parent": "animal",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "birthday",
+      "publicLabel": "Birthday",
+      "parent": "holiday",
+      "kind": "theme_subject"
+    },
+    {
+      "term": "blossom",
+      "publicLabel": "Blossoms",
+      "parent": "flower",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "brachiosaurus",
+      "publicLabel": "Brachiosaurus",
+      "parent": "dinosaur",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "bridge",
+      "publicLabel": "Bridges",
+      "parent": "landmark",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "building",
+      "publicLabel": "Buildings",
+      "parent": null,
+      "kind": "parent_subject"
+    },
+    {
+      "term": "butterfly",
+      "publicLabel": "Butterflies",
+      "parent": "insect",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "cake",
+      "publicLabel": "Cakes",
+      "parent": "food",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "car",
+      "publicLabel": "Cars",
+      "parent": "vehicle",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "castle",
+      "publicLabel": "Castles",
+      "parent": "building",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "cat",
+      "publicLabel": "Cats",
+      "parent": "animal",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "centaur",
+      "publicLabel": "Centaurs",
+      "parent": "fantasy creature",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "chameleon",
+      "publicLabel": "Chameleons",
+      "parent": "reptile",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "chibi",
+      "publicLabel": "Chibi",
+      "parent": null,
+      "kind": "style_subject"
+    },
+    {
+      "term": "christmas",
+      "publicLabel": "Christmas",
+      "parent": "holiday",
+      "kind": "theme_subject"
+    },
+    {
+      "term": "crab",
+      "publicLabel": "Crabs",
+      "parent": "sea life",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "dinosaur",
+      "publicLabel": "Dinosaurs",
+      "parent": "prehistoric animal",
+      "kind": "parent_subject"
+    },
+    {
+      "term": "diplodocus",
+      "publicLabel": "Diplodocus",
+      "parent": "dinosaur",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "dog",
+      "publicLabel": "Dogs",
+      "parent": "animal",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "dolphin",
+      "publicLabel": "Dolphins",
+      "parent": "sea life",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "dragon",
+      "publicLabel": "Dragons",
+      "parent": "fantasy creature",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "fairy",
+      "publicLabel": "Fairies",
+      "parent": "fantasy creature",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "fantasy",
+      "publicLabel": "Fantasy",
+      "parent": null,
+      "kind": "theme_subject"
+    },
+    {
+      "term": "fantasy creature",
+      "publicLabel": "Fantasy Creatures",
+      "parent": "fantasy",
+      "kind": "parent_subject"
+    },
+    {
+      "term": "fish",
+      "publicLabel": "Fish",
+      "parent": "sea life",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "flower",
+      "publicLabel": "Flowers",
+      "parent": "plant",
+      "kind": "parent_subject"
+    },
+    {
+      "term": "food",
+      "publicLabel": "Food",
+      "parent": null,
+      "kind": "parent_subject"
+    },
+    {
+      "term": "frog",
+      "publicLabel": "Frogs",
+      "parent": "animal",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "griffin",
+      "publicLabel": "Griffins",
+      "parent": "fantasy creature",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "halloween",
+      "publicLabel": "Halloween",
+      "parent": "holiday",
+      "kind": "theme_subject"
+    },
+    {
+      "term": "holiday",
+      "publicLabel": "Holidays",
+      "parent": null,
+      "kind": "theme_subject"
+    },
+    {
+      "term": "home",
+      "publicLabel": "Homes",
+      "parent": "building",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "house",
+      "publicLabel": "Houses",
+      "parent": "building",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "hydra",
+      "publicLabel": "Hydra",
+      "parent": "fantasy creature",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "indoor plant",
+      "publicLabel": "Indoor Plants",
+      "parent": "plant",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "insect",
+      "publicLabel": "Insects",
+      "parent": "animal",
+      "kind": "parent_subject"
+    },
+    {
+      "term": "kitten",
+      "publicLabel": "Kittens",
+      "parent": "cat",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "kraken",
+      "publicLabel": "Kraken",
+      "parent": "fantasy creature",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "landmark",
+      "publicLabel": "Landmarks",
+      "parent": "building",
+      "kind": "parent_subject"
+    },
+    {
+      "term": "lily",
+      "publicLabel": "Lilies",
+      "parent": "flower",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "lizard",
+      "publicLabel": "Lizards",
+      "parent": "reptile",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "locomotive",
+      "publicLabel": "Locomotives",
+      "parent": "train",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "mammoth",
+      "publicLabel": "Mammoths",
+      "parent": "prehistoric animal",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "mandala",
+      "publicLabel": "Mandalas",
+      "parent": "pattern",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "medieval",
+      "publicLabel": "Medieval Fantasy",
+      "parent": "fantasy",
+      "kind": "theme_subject"
+    },
+    {
+      "term": "mermaid",
+      "publicLabel": "Mermaids",
+      "parent": "fantasy creature",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "mythology",
+      "publicLabel": "Mythology",
+      "parent": "fantasy",
+      "kind": "theme_subject"
+    },
+    {
+      "term": "octopus",
+      "publicLabel": "Octopus",
+      "parent": "sea life",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "pattern",
+      "publicLabel": "Patterns",
+      "parent": null,
+      "kind": "parent_subject"
+    },
+    {
+      "term": "pegasus",
+      "publicLabel": "Pegasus",
+      "parent": "fantasy creature",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "phoenix",
+      "publicLabel": "Phoenix",
+      "parent": "fantasy creature",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "plane",
+      "publicLabel": "Planes",
+      "parent": "vehicle",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "plant",
+      "publicLabel": "Plants",
+      "parent": null,
+      "kind": "parent_subject"
+    },
+    {
+      "term": "playing card",
+      "publicLabel": "Playing Cards",
+      "parent": null,
+      "kind": "specific_subject"
+    },
+    {
+      "term": "plushie",
+      "publicLabel": "Plushies",
+      "parent": null,
+      "kind": "style_subject"
+    },
+    {
+      "term": "prehistoric animal",
+      "publicLabel": "Prehistoric Animals",
+      "parent": "animal",
+      "kind": "parent_subject"
+    },
+    {
+      "term": "puppy",
+      "publicLabel": "Puppies",
+      "parent": "dog",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "reptile",
+      "publicLabel": "Reptiles",
+      "parent": "animal",
+      "kind": "parent_subject"
+    },
+    {
+      "term": "rose",
+      "publicLabel": "Roses",
+      "parent": "flower",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "saber toothed tiger",
+      "publicLabel": "Saber-Toothed Tigers",
+      "parent": "prehistoric animal",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "sea life",
+      "publicLabel": "Sea Life",
+      "parent": "animal",
+      "kind": "parent_subject"
+    },
+    {
+      "term": "shark",
+      "publicLabel": "Sharks",
+      "parent": "sea life",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "snake",
+      "publicLabel": "Snakes",
+      "parent": "reptile",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "spider",
+      "publicLabel": "Spiders",
+      "parent": "insect",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "st patricks day",
+      "publicLabel": "St. Patrick's Day",
+      "parent": "holiday",
+      "kind": "theme_subject"
+    },
+    {
+      "term": "stegosaurus",
+      "publicLabel": "Stegosaurus",
+      "parent": "dinosaur",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "sunflower",
+      "publicLabel": "Sunflowers",
+      "parent": "flower",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "sushi",
+      "publicLabel": "Sushi",
+      "parent": "food",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "t-rex",
+      "publicLabel": "T-Rex",
+      "parent": "dinosaur",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "temple",
+      "publicLabel": "Temples",
+      "parent": "landmark",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "train",
+      "publicLabel": "Trains",
+      "parent": "vehicle",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "tree",
+      "publicLabel": "Trees",
+      "parent": "plant",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "triceratops",
+      "publicLabel": "Triceratops",
+      "parent": "dinosaur",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "tulip",
+      "publicLabel": "Tulips",
+      "parent": "flower",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "turtle",
+      "publicLabel": "Turtles",
+      "parent": "reptile",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "unicorn",
+      "publicLabel": "Unicorns",
+      "parent": "fantasy creature",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "vehicle",
+      "publicLabel": "Vehicles",
+      "parent": null,
+      "kind": "parent_subject"
+    },
+    {
+      "term": "velociraptor",
+      "publicLabel": "Velociraptors",
+      "parent": "dinosaur",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "whale",
+      "publicLabel": "Whales",
+      "parent": "sea life",
+      "kind": "specific_subject"
+    },
+    {
+      "term": "world landmark",
+      "publicLabel": "World Landmarks",
+      "parent": "landmark",
+      "kind": "specific_subject"
+    }
+  ],
+  "categorySignalRules": [
+    {
+      "categorySlug": "animals",
+      "subjects": [
+        "animal"
+      ],
+      "parents": [],
+      "styles": [],
+      "themes": []
+    },
+    {
+      "categorySlug": "animals-playing-cards",
+      "subjects": [
+        "animal",
+        "playing card"
+      ],
+      "parents": [
+        "animal"
+      ],
+      "styles": [],
+      "themes": []
+    },
+    {
+      "categorySlug": "anime-girls",
+      "subjects": [
+        "anime girl"
+      ],
+      "parents": [],
+      "styles": [
+        "anime"
+      ],
+      "themes": []
+    },
+    {
+      "categorySlug": "birds",
+      "subjects": [
+        "bird"
+      ],
+      "parents": [
+        "animal"
+      ],
+      "styles": [],
+      "themes": []
+    },
+    {
+      "categorySlug": "chibi",
+      "subjects": [
+        "chibi"
+      ],
+      "parents": [],
+      "styles": [
+        "chibi"
+      ],
+      "themes": []
+    },
+    {
+      "categorySlug": "christmas",
+      "subjects": [
+        "christmas"
+      ],
+      "parents": [
+        "holiday"
+      ],
+      "styles": [],
+      "themes": [
+        "christmas"
+      ]
+    },
+    {
+      "categorySlug": "dinosaurs",
+      "subjects": [
+        "dinosaur"
+      ],
+      "parents": [
+        "prehistoric animal"
+      ],
+      "styles": [],
+      "themes": [
+        "prehistoric"
+      ]
+    },
+    {
+      "categorySlug": "dogs",
+      "subjects": [
+        "dog"
+      ],
+      "parents": [
+        "animal"
+      ],
+      "styles": [],
+      "themes": []
+    },
+    {
+      "categorySlug": "dragons",
+      "subjects": [
+        "dragon"
+      ],
+      "parents": [
+        "fantasy creature"
+      ],
+      "styles": [],
+      "themes": [
+        "fantasy"
+      ]
+    },
+    {
+      "categorySlug": "fantasy",
+      "subjects": [
+        "fantasy"
+      ],
+      "parents": [],
+      "styles": [
+        "fantasy"
+      ],
+      "themes": [
+        "fantasy"
+      ]
+    },
+    {
+      "categorySlug": "flowers",
+      "subjects": [
+        "flower"
+      ],
+      "parents": [
+        "plant"
+      ],
+      "styles": [],
+      "themes": [
+        "garden"
+      ]
+    },
+    {
+      "categorySlug": "gardening",
+      "subjects": [
+        "plant"
+      ],
+      "parents": [],
+      "styles": [],
+      "themes": [
+        "garden"
+      ]
+    },
+    {
+      "categorySlug": "holiday",
+      "subjects": [
+        "holiday"
+      ],
+      "parents": [],
+      "styles": [],
+      "themes": [
+        "holiday"
+      ]
+    },
+    {
+      "categorySlug": "homes",
+      "subjects": [
+        "home"
+      ],
+      "parents": [
+        "building"
+      ],
+      "styles": [],
+      "themes": []
+    },
+    {
+      "categorySlug": "indoor-plants",
+      "subjects": [
+        "indoor plant"
+      ],
+      "parents": [
+        "plant"
+      ],
+      "styles": [],
+      "themes": []
+    },
+    {
+      "categorySlug": "insects",
+      "subjects": [
+        "insect"
+      ],
+      "parents": [
+        "animal"
+      ],
+      "styles": [],
+      "themes": []
+    },
+    {
+      "categorySlug": "mandala",
+      "subjects": [
+        "mandala"
+      ],
+      "parents": [
+        "pattern"
+      ],
+      "styles": [
+        "mandala"
+      ],
+      "themes": []
+    },
+    {
+      "categorySlug": "mandala-geometry-patterns",
+      "subjects": [
+        "mandala",
+        "pattern"
+      ],
+      "parents": [],
+      "styles": [
+        "mandala",
+        "geometric"
+      ],
+      "themes": []
+    },
+    {
+      "categorySlug": "midieval",
+      "subjects": [
+        "medieval"
+      ],
+      "parents": [
+        "fantasy"
+      ],
+      "styles": [
+        "medieval"
+      ],
+      "themes": [
+        "fantasy"
+      ]
+    },
+    {
+      "categorySlug": "mythology",
+      "subjects": [
+        "mythology"
+      ],
+      "parents": [
+        "fantasy"
+      ],
+      "styles": [
+        "fantasy"
+      ],
+      "themes": [
+        "mythology"
+      ]
+    },
+    {
+      "categorySlug": "plushie",
+      "subjects": [
+        "plushie"
+      ],
+      "parents": [],
+      "styles": [
+        "plushie",
+        "cute"
+      ],
+      "themes": []
+    },
+    {
+      "categorySlug": "reptiles",
+      "subjects": [
+        "reptile"
+      ],
+      "parents": [
+        "animal"
+      ],
+      "styles": [],
+      "themes": []
+    },
+    {
+      "categorySlug": "sea-life",
+      "subjects": [
+        "sea life"
+      ],
+      "parents": [
+        "animal"
+      ],
+      "styles": [],
+      "themes": [
+        "ocean"
+      ]
+    },
+    {
+      "categorySlug": "st-patricks-day",
+      "subjects": [
+        "st patricks day"
+      ],
+      "parents": [
+        "holiday"
+      ],
+      "styles": [],
+      "themes": [
+        "st patricks day"
+      ]
+    },
+    {
+      "categorySlug": "world-landmarks",
+      "subjects": [
+        "world landmark"
+      ],
+      "parents": [
+        "landmark"
+      ],
+      "styles": [],
+      "themes": []
+    }
+  ],
+  "publicRouteCleanupRules": [
+    {
+      "input": "midieval",
+      "output": "medieval",
+      "reason": "Correct misspelling before public route planning."
+    },
+    {
+      "input": "vehiacle",
+      "output": "vehicle",
+      "reason": "Correct misspelling before public route planning."
+    },
+    {
+      "input": "xmas",
+      "output": "christmas",
+      "reason": "Use standard public holiday wording."
+    },
+    {
+      "input": "singular/plural variants",
+      "output": "single canonical slug",
+      "reason": "Prevent duplicate indexable hubs."
+    }
+  ]
+}

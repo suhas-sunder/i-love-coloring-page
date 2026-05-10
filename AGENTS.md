@@ -74,6 +74,14 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Optional subhub pages are allowed only when there is enough quality content and distinct user intent.
 - Individual images should exist as static assets and metadata records, not separate indexable HTML pages.
 - Future coloring app or dashboard routes should be kept separate from public SEO gallery pages.
+- Original source folders are not the final public website taxonomy.
+- Public hub pages must be generated from approved production metadata and descriptive filenames, not raw folders alone.
+- Images may belong to multiple public hubs when the filename, subject, style, theme, or metadata supports that assignment.
+- Hub pages must be useful, distinct, and supported by enough approved production assets.
+- Do not create thin SEO pages, duplicate singular/plural routes, or keyword-stuffed hub variants.
+- Do not create indexable per-image pages.
+- Final public route planning should use the approved hub taxonomy, not raw category folders.
+- The Next.js build should consume the Round 4A hub taxonomy and image-to-hub maps.
 
 ## Conversion Workflow
 
