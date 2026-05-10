@@ -142,6 +142,14 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Public titles must not expose ChatGPT, Failed, timestamp, or generic AI export names.
 - Do not rename source files or generated media files without an explicit filename cleanup round.
 - Typography must stay on the locked Google Fonts system: Fraunces for major display headings and Figtree for UI and body text.
+- Round 4L forbids broken browser image icons in public gallery previews.
+- Main gallery previews must use the generated PNG preview URL from the centralized resolver.
+- Asset URL fixes must be audited against actual files under the local R2 upload bundle before visual judgment.
+- If `NEXT_PUBLIC_COLORING_ASSET_BASE_URL` is missing, show intentional placeholders instead of broken image states.
+- If an image URL fails, hide the failed image element and show the intentional fallback.
+- Do not judge gallery design from missing-asset or stale-asset-base states.
+- Do not add backend or API routes to fix media preview issues.
+- Do not move generated media into `public/` to fix preview issues.
 
 ## Production Asset Hosting
 

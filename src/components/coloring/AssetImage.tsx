@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import type { PublicColoringItem } from "@/lib/coloring/types";
 
@@ -12,25 +12,64 @@ type AssetImageProps = {
 
 export function AssetImage({ item, imageUrl, priority = false }: AssetImageProps) {
   const [failed, setFailed] = useState(false);
+  const [loaded, setLoaded] = useState(false);
+  const imageRef = useRef<HTMLImageElement | null>(null);
+
+  useEffect(() => {
+    setFailed(false);
+    setLoaded(false);
+  }, [imageUrl]);
+
+  useEffect(() => {
+    if (!imageUrl) return;
+    const image = imageRef.current;
+    if (!image?.complete) return;
+
+    if (image.naturalWidth > 0) {
+      setLoaded(true);
+    } else {
+      setFailed(true);
+    }
+  }, [imageUrl]);
 
   if (!imageUrl || failed) return <AssetPlaceholder title={item.title} />;
 
+  function handleImageLoad() {
+    setFailed(false);
+    setLoaded(true);
+  }
+
+  function handleImageError() {
+    setLoaded(false);
+    setFailed(true);
+  }
+
   return (
-    <img
-      alt={item.altText}
-      className="asset-image"
-      data-priority={priority ? "true" : "false"}
-      decoding="async"
-      loading={priority ? "eager" : "lazy"}
-      onError={() => setFailed(true)}
-      src={imageUrl}
-    />
+    <span className="asset-image-frame" role="img" aria-label={item.altText} data-state={loaded ? "loaded" : "loading"}>
+      {!loaded ? (
+        <span className="asset-image-fallback" aria-hidden="true">
+          <span>Loading preview</span>
+        </span>
+      ) : null}
+      <img
+        ref={imageRef}
+        alt=""
+        className="asset-image"
+        data-priority={priority ? "true" : "false"}
+        data-state={loaded ? "loaded" : "loading"}
+        decoding="async"
+        loading={priority ? "eager" : "lazy"}
+        onError={handleImageError}
+        onLoad={handleImageLoad}
+        src={imageUrl}
+      />
+    </span>
   );
 }
 
 function AssetPlaceholder({ title }: { title: string }) {
   return (
-    <div className="asset-placeholder" aria-label={`${title} preview unavailable`}>
+    <div className="asset-placeholder" role="img" aria-label={`${title} preview unavailable`}>
       <span>Preview unavailable</span>
     </div>
   );

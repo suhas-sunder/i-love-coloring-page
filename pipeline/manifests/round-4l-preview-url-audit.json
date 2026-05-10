@@ -1,0 +1,310 @@
+{
+  "generatedAt": "2026-05-10T20:29:38.564Z",
+  "runId": "round-4l-preview-rendering-repair",
+  "localAssetBaseUrl": "http://127.0.0.1:4175/coloring-pages",
+  "sourceFilesRead": [
+    "src/generated/coloring/items.json",
+    "src/generated/coloring/hub-items.json",
+    "src/generated/coloring/routes.json",
+    "pipeline/manifests/round-4i-full-r2-object-key-map.json",
+    "pipeline/manifests/round-4i-full-r2-bundle-results.json",
+    "src/lib/coloring/assets.ts",
+    "src/components/coloring/AssetImage.tsx",
+    "src/components/coloring/ImageCard.tsx"
+  ],
+  "env": {
+    "processBaseUrl": "",
+    "envLocalBaseUrl": "http://127.0.0.1:4175/coloring-pages",
+    "expectedLocalAssetBaseUrl": "http://127.0.0.1:4175/coloring-pages",
+    "envLocalUsesTemporaryR2Dev": false,
+    "processBaseUsesLocalMedia": false,
+    "envLocalUsesLocalMedia": true
+  },
+  "staticExport": {
+    "exists": true,
+    "usesLocalBase": true,
+    "usesTemporaryR2Dev": false,
+    "containsOldPrefix": false,
+    "containsDoublePrefix": false,
+    "sampleAssetBase": "http://127.0.0.1:4175/coloring-pages"
+  },
+  "summary": {
+    "itemCount": 6557,
+    "routeCount": 65,
+    "hubItemsCount": 6557,
+    "bundleMediaFileCount": null,
+    "firstPageItemsAudited": 4,
+    "fixtureCount": 70,
+    "fixtureMissingFileCount": 0,
+    "duplicatedPrefixFound": false,
+    "oldTestPrefixFound": false,
+    "sourcePathLeakFound": false,
+    "rootCauseCode": "resolved"
+  },
+  "firstPageVisibleItems": [
+    {
+      "assetId": "animals__animals-alligator__4feec8505a",
+      "title": "Animals Alligator",
+      "categorySlug": "animals",
+      "hubSlugs": [
+        "",
+        "animals"
+      ],
+      "generatedItemDataPaths": {
+        "svg": "svg/animals/animals-alligator-4feec8505a.svg",
+        "pngPreview": "png/animals/animals-alligator-4feec8505a.png",
+        "thumbnail": "thumbs/animals/animals-alligator-4feec8505a-thumb.png"
+      },
+      "expectedPngPreviewRelativePath": "png/animals/animals-alligator-4feec8505a.png",
+      "expectedThumbnailRelativePath": "thumbs/animals/animals-alligator-4feec8505a-thumb.png",
+      "expectedSvgRelativePath": "svg/animals/animals-alligator-4feec8505a.svg",
+      "actualRenderedPreviewUrl": "http://127.0.0.1:4175/coloring-pages/png/animals/animals-alligator-4feec8505a.png",
+      "duplicatedColoringPagesPrefix": false,
+      "oldTestPrefixPresent": false,
+      "missingGeneratedRoot": false,
+      "sourceImagePathLeak": false,
+      "fileChecks": {
+        "pngPreview": {
+          "exists": true,
+          "relativePath": "pipeline/r2-upload/coloring-pages/png/animals/animals-alligator-4feec8505a.png",
+          "fileSize": 112111
+        },
+        "thumbnail": {
+          "exists": true,
+          "relativePath": "pipeline/r2-upload/coloring-pages/thumbs/animals/animals-alligator-4feec8505a-thumb.png",
+          "fileSize": 78984
+        },
+        "svg": {
+          "exists": true,
+          "relativePath": "pipeline/r2-upload/coloring-pages/svg/animals/animals-alligator-4feec8505a.svg",
+          "fileSize": 179486
+        }
+      },
+      "localHttpCheck": {
+        "status": "checked",
+        "pngPreview": {
+          "status": 200,
+          "contentType": "image/png",
+          "contentLength": "112111",
+          "redirected": false
+        },
+        "thumbnail": {
+          "status": 200,
+          "contentType": "image/png",
+          "contentLength": "78984",
+          "redirected": false
+        },
+        "svg": {
+          "status": 200,
+          "contentType": "image/svg+xml",
+          "contentLength": "179486",
+          "redirected": false
+        }
+      }
+    },
+    {
+      "assetId": "animals-playing-cards__animals-armadillo__1a6eaccdef",
+      "title": "Animals Armadillo",
+      "categorySlug": "animals-playing-cards",
+      "hubSlugs": [
+        "",
+        "animals",
+        "playing-cards"
+      ],
+      "generatedItemDataPaths": {
+        "svg": "svg/animals-playing-cards/animals-armadillo-1a6eaccdef.svg",
+        "pngPreview": "png/animals-playing-cards/animals-armadillo-1a6eaccdef.png",
+        "thumbnail": "thumbs/animals-playing-cards/animals-armadillo-1a6eaccdef-thumb.png"
+      },
+      "expectedPngPreviewRelativePath": "png/animals-playing-cards/animals-armadillo-1a6eaccdef.png",
+      "expectedThumbnailRelativePath": "thumbs/animals-playing-cards/animals-armadillo-1a6eaccdef-thumb.png",
+      "expectedSvgRelativePath": "svg/animals-playing-cards/animals-armadillo-1a6eaccdef.svg",
+      "actualRenderedPreviewUrl": "http://127.0.0.1:4175/coloring-pages/png/animals-playing-cards/animals-armadillo-1a6eaccdef.png",
+      "duplicatedColoringPagesPrefix": false,
+      "oldTestPrefixPresent": false,
+      "missingGeneratedRoot": false,
+      "sourceImagePathLeak": false,
+      "fileChecks": {
+        "pngPreview": {
+          "exists": true,
+          "relativePath": "pipeline/r2-upload/coloring-pages/png/animals-playing-cards/animals-armadillo-1a6eaccdef.png",
+          "fileSize": 96988
+        },
+        "thumbnail": {
+          "exists": true,
+          "relativePath": "pipeline/r2-upload/coloring-pages/thumbs/animals-playing-cards/animals-armadillo-1a6eaccdef-thumb.png",
+          "fileSize": 65053
+        },
+        "svg": {
+          "exists": true,
+          "relativePath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-armadillo-1a6eaccdef.svg",
+          "fileSize": 128214
+        }
+      },
+      "localHttpCheck": {
+        "status": "checked",
+        "pngPreview": {
+          "status": 200,
+          "contentType": "image/png",
+          "contentLength": "96988",
+          "redirected": false
+        },
+        "thumbnail": {
+          "status": 200,
+          "contentType": "image/png",
+          "contentLength": "65053",
+          "redirected": false
+        },
+        "svg": {
+          "status": 200,
+          "contentType": "image/svg+xml",
+          "contentLength": "128214",
+          "redirected": false
+        }
+      }
+    },
+    {
+      "assetId": "anime-girls__anime-girl-air-balloon__1f6b5be7bc",
+      "title": "Anime Girl Air Balloon",
+      "categorySlug": "anime-girls",
+      "hubSlugs": [
+        "",
+        "anime-girls"
+      ],
+      "generatedItemDataPaths": {
+        "svg": "svg/anime-girls/anime-girl-air-balloon-1f6b5be7bc.svg",
+        "pngPreview": "png/anime-girls/anime-girl-air-balloon-1f6b5be7bc.png",
+        "thumbnail": "thumbs/anime-girls/anime-girl-air-balloon-1f6b5be7bc-thumb.png"
+      },
+      "expectedPngPreviewRelativePath": "png/anime-girls/anime-girl-air-balloon-1f6b5be7bc.png",
+      "expectedThumbnailRelativePath": "thumbs/anime-girls/anime-girl-air-balloon-1f6b5be7bc-thumb.png",
+      "expectedSvgRelativePath": "svg/anime-girls/anime-girl-air-balloon-1f6b5be7bc.svg",
+      "actualRenderedPreviewUrl": "http://127.0.0.1:4175/coloring-pages/png/anime-girls/anime-girl-air-balloon-1f6b5be7bc.png",
+      "duplicatedColoringPagesPrefix": false,
+      "oldTestPrefixPresent": false,
+      "missingGeneratedRoot": false,
+      "sourceImagePathLeak": false,
+      "fileChecks": {
+        "pngPreview": {
+          "exists": true,
+          "relativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-air-balloon-1f6b5be7bc.png",
+          "fileSize": 111347
+        },
+        "thumbnail": {
+          "exists": true,
+          "relativePath": "pipeline/r2-upload/coloring-pages/thumbs/anime-girls/anime-girl-air-balloon-1f6b5be7bc-thumb.png",
+          "fileSize": 71359
+        },
+        "svg": {
+          "exists": true,
+          "relativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-air-balloon-1f6b5be7bc.svg",
+          "fileSize": 181011
+        }
+      },
+      "localHttpCheck": {
+        "status": "checked",
+        "pngPreview": {
+          "status": 200,
+          "contentType": "image/png",
+          "contentLength": "111347",
+          "redirected": false
+        },
+        "thumbnail": {
+          "status": 200,
+          "contentType": "image/png",
+          "contentLength": "71359",
+          "redirected": false
+        },
+        "svg": {
+          "status": 200,
+          "contentType": "image/svg+xml",
+          "contentLength": "181011",
+          "redirected": false
+        }
+      }
+    },
+    {
+      "assetId": "birds__birds-albatross__2380234539",
+      "title": "Birds Albatross",
+      "categorySlug": "birds",
+      "hubSlugs": [
+        "",
+        "animals",
+        "birds"
+      ],
+      "generatedItemDataPaths": {
+        "svg": "svg/birds/birds-albatross-2380234539.svg",
+        "pngPreview": "png/birds/birds-albatross-2380234539.png",
+        "thumbnail": "thumbs/birds/birds-albatross-2380234539-thumb.png"
+      },
+      "expectedPngPreviewRelativePath": "png/birds/birds-albatross-2380234539.png",
+      "expectedThumbnailRelativePath": "thumbs/birds/birds-albatross-2380234539-thumb.png",
+      "expectedSvgRelativePath": "svg/birds/birds-albatross-2380234539.svg",
+      "actualRenderedPreviewUrl": "http://127.0.0.1:4175/coloring-pages/png/birds/birds-albatross-2380234539.png",
+      "duplicatedColoringPagesPrefix": false,
+      "oldTestPrefixPresent": false,
+      "missingGeneratedRoot": false,
+      "sourceImagePathLeak": false,
+      "fileChecks": {
+        "pngPreview": {
+          "exists": true,
+          "relativePath": "pipeline/r2-upload/coloring-pages/png/birds/birds-albatross-2380234539.png",
+          "fileSize": 63568
+        },
+        "thumbnail": {
+          "exists": true,
+          "relativePath": "pipeline/r2-upload/coloring-pages/thumbs/birds/birds-albatross-2380234539-thumb.png",
+          "fileSize": 46840
+        },
+        "svg": {
+          "exists": true,
+          "relativePath": "pipeline/r2-upload/coloring-pages/svg/birds/birds-albatross-2380234539.svg",
+          "fileSize": 62662
+        }
+      },
+      "localHttpCheck": {
+        "status": "checked",
+        "pngPreview": {
+          "status": 200,
+          "contentType": "image/png",
+          "contentLength": "63568",
+          "redirected": false
+        },
+        "thumbnail": {
+          "status": 200,
+          "contentType": "image/png",
+          "contentLength": "46840",
+          "redirected": false
+        },
+        "svg": {
+          "status": 200,
+          "contentType": "image/svg+xml",
+          "contentLength": "62662",
+          "redirected": false
+        }
+      }
+    }
+  ],
+  "sourceInspection": {
+    "assetsResolverCentralized": true,
+    "previewPrefersPng": true,
+    "resolverNormalizesTrailingSlash": true,
+    "resolverAllowsOnlyGeneratedRoots": true,
+    "imageCardUsesResolvedPreview": true,
+    "imageCardPrintActionPresent": true,
+    "visiblePngSvgPillsAbsent": true,
+    "assetImageHasErrorFallback": true,
+    "assetImageHidesFailedImage": true,
+    "assetImageAvoidsBrokenAltText": true,
+    "assetImageHidesLoadingImage": true
+  },
+  "rootCause": {
+    "code": "resolved",
+    "summary": "Audited preview paths resolve to local full-bundle files and AssetImage hides failed or loading image elements.",
+    "evidence": [
+      "Audited local media files exist.",
+      "Audited local HTTP PNG URLs returned 200.",
+      "A public asset base URL is configured for the local build environment."
+    ]
+  }
+}
