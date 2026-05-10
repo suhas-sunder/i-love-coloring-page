@@ -1,0 +1,81 @@
+{
+  "generatedAt": "2026-05-10",
+  "runId": "round-4e-production-asset-hosting-contract",
+  "recommendedStrategy": "object-storage-cdn",
+  "productionAssetSourceOfTruth": "pipeline/production/full/assets",
+  "productionUrlSourceOfTruth": "NEXT_PUBLIC_COLORING_ASSET_BASE_URL",
+  "options": {
+    "objectStorageCdn": {
+      "recommended": true,
+      "summary": "Publish generated media to object storage behind a CDN and point the deployed app at the CDN base URL.",
+      "pros": [
+        "small app repository",
+        "strong caching",
+        "provider portable path contract",
+        "works with static and server deployments"
+      ],
+      "cons": [
+        "requires a later upload or sync step",
+        "needs public URL verification before SEO image work"
+      ]
+    },
+    "nextPublicFolder": {
+      "recommended": false,
+      "summary": "Do not commit thousands of generated media files to the app repo. Use only as a temporary local experiment if a later prompt approves it.",
+      "pros": [
+        "simple static paths"
+      ],
+      "cons": [
+        "bloats git history",
+        "slows builds",
+        "mixes generated media with application source"
+      ]
+    },
+    "nextApiRouteProduction": {
+      "recommended": false,
+      "summary": "The API route is for local review, not production media serving for this asset set.",
+      "pros": [
+        "useful for protected local previews"
+      ],
+      "cons": [
+        "adds runtime file-serving load",
+        "weaker CDN behavior",
+        "larger attack surface"
+      ]
+    },
+    "vpsFilesystem": {
+      "recommended": false,
+      "summary": "Serving directly from a VPS filesystem couples media storage to app infrastructure and is less portable.",
+      "pros": [
+        "can be made to work with a tuned web server"
+      ],
+      "cons": [
+        "harder cache management",
+        "manual backups",
+        "deployment coupling"
+      ]
+    }
+  },
+  "rejectedStrategies": {
+    "publicFolderProduction": {
+      "recommended": false
+    },
+    "nextApiRouteProduction": {
+      "recommended": false
+    },
+    "vpsFilesystemAsDefault": {
+      "recommended": false
+    }
+  },
+  "deploymentImplications": {
+    "appDeploysWithoutMedia": true,
+    "mediaUploadIsSeparateStep": true,
+    "noProductionMediaCommittedToRepo": true,
+    "providerNeutralPublishManifest": "pipeline/manifests/round-4e-asset-publish-manifest.json"
+  },
+  "futureSeoImpact": {
+    "jsonLdWaitsForStablePublicAssetUrls": true,
+    "openGraphImageWorkWaitsForStablePublicAssetUrls": true,
+    "imageSitemapWorkWaitsForStablePublicAssetUrls": true
+  }
+}

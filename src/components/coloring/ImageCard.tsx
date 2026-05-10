@@ -8,6 +8,7 @@ type ImageCardProps = {
   item: PublicColoringItem;
   assetUrls: {
     preview: string | null;
+    thumbnail?: string | null;
     png: string | null;
     svg: string | null;
   };
@@ -27,7 +28,7 @@ export function ImageCard({ item, assetUrls, priority = false }: ImageCardProps)
       <html>
         <head><title>${escapeHtml(item.title)}</title></head>
         <body style="margin:0;display:grid;place-items:center;min-height:100vh;">
-          <img src="${printUrl}" alt="${escapeHtml(item.altText)}" style="max-width:100%;max-height:100vh;" onload="window.print();" />
+          <img src="${escapeHtml(printUrl)}" alt="${escapeHtml(item.altText)}" style="max-width:100%;max-height:100vh;" onload="window.print();" />
         </body>
       </html>
     `);

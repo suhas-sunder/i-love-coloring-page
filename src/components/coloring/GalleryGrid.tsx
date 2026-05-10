@@ -1,5 +1,5 @@
 import type { PublicColoringItem } from "@/lib/coloring/types";
-import { resolveColoringAssetUrl } from "@/lib/coloring/assets";
+import { resolveColoringItemAssetUrls } from "@/lib/coloring/assets";
 
 import { ImageCard } from "./ImageCard";
 
@@ -25,11 +25,7 @@ export function GalleryGrid({ items, priorityCount = 4 }: GalleryGridProps) {
           key={item.assetId}
           item={item}
           priority={index < priorityCount}
-          assetUrls={{
-            preview: resolveColoringAssetUrl(item.assetSubpaths.thumbnail || item.assetSubpaths.pngPreview),
-            png: resolveColoringAssetUrl(item.assetSubpaths.pngPreview),
-            svg: resolveColoringAssetUrl(item.assetSubpaths.svg),
-          }}
+          assetUrls={resolveColoringItemAssetUrls(item.assetSubpaths)}
         />
       ))}
     </div>

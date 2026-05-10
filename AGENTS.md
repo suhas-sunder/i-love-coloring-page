@@ -120,6 +120,23 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Do not add SEO copy that weakens visual quality or sounds generic.
 - Do not create walls of cards, tags, or links without hierarchy.
 
+## Production Asset Hosting
+
+- Production media must not be committed into the app repo.
+- Production media must not be copied into `public/` unless a later explicit prompt approves a temporary strategy.
+- Public gallery asset URLs must use the centralized resolver in `src/lib/coloring/assets.ts`.
+- `NEXT_PUBLIC_COLORING_ASSET_BASE_URL` is the production asset URL source of truth.
+- Local asset proxy behavior is development-only and disabled by default.
+- Do not enable `NEXT_PUBLIC_COLORING_USE_LOCAL_ASSET_PROXY` or `COLORING_ENABLE_LOCAL_ASSET_PROXY` in production.
+- Do not expose local filesystem paths to users or client-facing generated data.
+- Object storage plus CDN is the preferred production strategy for generated media.
+- SEO image sitemap, Open Graph image, and JSON-LD image work must wait until stable public asset URLs exist.
+- Quarantined assets must never be published.
+- Warning assets are allowed only when they passed production export.
+- Future upload or sync tooling must consume `pipeline/manifests/round-4e-asset-publish-manifest.json` or a later publish manifest.
+- Upload tooling must preserve CDN-relative paths and content types from the publish manifest.
+- Real upload commands require an explicit future prompt and must never add credentials to the repo.
+
 ## Conversion Workflow
 
 - Do not choose a winning preset until a later bakeoff round compares outputs.

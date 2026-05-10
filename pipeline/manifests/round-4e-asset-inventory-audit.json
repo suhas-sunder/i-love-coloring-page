@@ -1,0 +1,59 @@
+{
+  "generatedAt": "2026-05-10",
+  "runId": "round-4e-production-asset-hosting-contract",
+  "inputs": {
+    "round3cProductionAssets": "pipeline/manifests/round-3c-production-assets.json",
+    "round3cProductionGalleryData": "pipeline/manifests/round-3c-production-gallery-data.json",
+    "round3cProductionQuarantine": "pipeline/manifests/round-3c-production-quarantine.json",
+    "round4bAssetResolutionPlan": "pipeline/manifests/round-4b-asset-resolution-plan.json",
+    "generatedItems": "src/generated/coloring/items.json",
+    "generatedRoutes": "src/generated/coloring/routes.json"
+  },
+  "counts": {
+    "successfulAssets": 6557,
+    "svgAssetFiles": 6557,
+    "pngPreviewAssetFiles": 6557,
+    "thumbnailAssetFiles": 6557,
+    "expectedAssetFiles": 19671,
+    "missingAssetFiles": 0,
+    "invalidAssetPaths": 0,
+    "quarantinedAssets": 9,
+    "generatedClientItems": 6557,
+    "sitemapRouteCount": 65
+  },
+  "pathContract": {
+    "productionAssetRoot": "pipeline/production/full/assets",
+    "productionRelativePattern": "pipeline/production/full/assets/{svg|png|thumbs}/{category-slug}/{filename-slug}-{stable-id}.{svg|png}",
+    "cdnRelativePattern": "{svg|png|thumbs}/{category-slug}/{filename-slug}-{stable-id}.{svg|png}",
+    "generatedClientDataUsesSubpathsOnly": true,
+    "sourceLocalAbsolutePathsInClientData": false,
+    "localAbsolutePathLeaksInClientData": 0,
+    "localAbsolutePathAllowedOnlyInPublishManifest": true
+  },
+  "consistency": {
+    "generatedItemsMatchSuccessfulRound3CAssets": true,
+    "generatedSubpathsMatchProductionManifest": true,
+    "unsafeGeneratedSubpaths": 0,
+    "quarantineOverlapWithSuccessfulAssets": 0,
+    "allProductionAssetFilesExist": true,
+    "allProductionAssetPathsAreSafe": true
+  },
+  "samples": {
+    "svg": {
+      "localRelativePath": "pipeline/production/full/assets/svg/animals/animals-alligator-4feec8505a.svg",
+      "cdnRelativePath": "svg/animals/animals-alligator-4feec8505a.svg"
+    },
+    "pngPreview": {
+      "localRelativePath": "pipeline/production/full/assets/png/animals/animals-alligator-4feec8505a.png",
+      "cdnRelativePath": "png/animals/animals-alligator-4feec8505a.png"
+    },
+    "thumbnail": {
+      "localRelativePath": "pipeline/production/full/assets/thumbs/animals/animals-alligator-4feec8505a-thumb.png",
+      "cdnRelativePath": "thumbs/animals/animals-alligator-4feec8505a-thumb.png"
+    }
+  },
+  "missingFiles": [],
+  "invalidPaths": [],
+  "unsafeGeneratedSubpaths": [],
+  "generatedSubpathMismatches": []
+}
