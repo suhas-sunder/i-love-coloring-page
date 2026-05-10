@@ -1,0 +1,826 @@
+{
+  "generatedAt": "2026-05-10",
+  "runId": "round-4g-cloudflare-r2-test-upload-bundle",
+  "status": "not_run",
+  "reason": "dry_run_no_public_upload_yet",
+  "planPath": "pipeline/manifests/round-4g-r2-test-url-verification-plan.json",
+  "summary": {
+    "urlsPlanned": 90,
+    "urlsChecked": 0,
+    "passed": 0,
+    "failed": 0,
+    "skipped": 90
+  },
+  "entries": [
+    {
+      "url": "https://assets.example.com/coloring/test-v1/png/anime-girls/anime-girl-summoning-jutsu-cute-dinosaur-plushies-e958c58eca.png",
+      "assetId": "anime-girls__anime-girl-summoning-jutsu-cute-dinosaur-plushies__e958c58eca",
+      "mediaType": "pngPreview",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/png/anime-girls/anime-girl-summoning-jutsu-cute-dragon-plushies-3f2c634dbf.png",
+      "assetId": "anime-girls__anime-girl-summoning-jutsu-cute-dragon-plushies__3f2c634dbf",
+      "mediaType": "pngPreview",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/png/chibi/chibi-enchanted-forest-fairy-dancing-in-flower-ring-c4cb5961c2.png",
+      "assetId": "chibi__chibi-enchanted-forest-fairy-dancing-in-flower-ring__c4cb5961c2",
+      "mediaType": "pngPreview",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/png/chibi/chibi-flowers-crocus-kawaii-908b17edf5.png",
+      "assetId": "chibi__chibi-flowers-crocus-kawaii__908b17edf5",
+      "mediaType": "pngPreview",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/png/chibi/chibi-flowers-delphinium-fairy-e2952ac2c0.png",
+      "assetId": "chibi__chibi-flowers-delphinium-fairy__e2952ac2c0",
+      "mediaType": "pngPreview",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/png/chibi/chibi-flowers-tulip-garden-68470e6363.png",
+      "assetId": "chibi__chibi-flowers-tulip-garden__68470e6363",
+      "mediaType": "pngPreview",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/png/chibi/chibi-holiday-halloween-tombstone-with-wilted-flowers-coloring-page-dbdec0dd78.png",
+      "assetId": "chibi__chibi-holiday-halloween-tombstone-with-wilted-flowers-coloring-page__dbdec0dd78",
+      "mediaType": "pngPreview",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/png/chibi/chibi-holiday-halloween-trick-or-treat-dog-in-cute-costume-coloring-page-79fa5d8c2d.png",
+      "assetId": "chibi__chibi-holiday-halloween-trick-or-treat-dog-in-cute-costume-coloring-page__79fa5d8c2d",
+      "mediaType": "pngPreview",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/png/holiday/holiday-christmas-plushie-prehistoric-triceratops-family-b942c6ee0e.png",
+      "assetId": "holiday__holiday-christmas-plushie-prehistoric-triceratops-family__b942c6ee0e",
+      "mediaType": "pngPreview",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/png/holiday/holiday-christmas-prehistoric-kawaii-triceratops-9689527143.png",
+      "assetId": "holiday__holiday-christmas-prehistoric-kawaii-triceratops__9689527143",
+      "mediaType": "pngPreview",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/png/indoor-plants/indoor-plants-spider-plant-24e5529d0b.png",
+      "assetId": "indoor-plants__indoor-plants-spider-plant__24e5529d0b",
+      "mediaType": "pngPreview",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-baby-dragon-fe1a69ef1f.png",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-cute-baby-dragon__fe1a69ef1f",
+      "mediaType": "pngPreview",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-dinosaur-d5d6d04105.png",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-cute-dinosaur__d5d6d04105",
+      "mediaType": "pngPreview",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-unicorn-17a29a8e15.png",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-cute-unicorn__17a29a8e15",
+      "mediaType": "pngPreview",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-dragon-animals-bc2052aae7.png",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-dragon-animals__bc2052aae7",
+      "mediaType": "pngPreview",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-pegasus-animals-3068e80aa3.png",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-pegasus-animals__3068e80aa3",
+      "mediaType": "pngPreview",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-prehistoric-triceratops-animal-8412f3b319.png",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-prehistoric-triceratops-animal__8412f3b319",
+      "mediaType": "pngPreview",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-puppy-dog-halloween-e6b03b733b.png",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-puppy-dog-halloween__e6b03b733b",
+      "mediaType": "pngPreview",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-snow-crab-roll-37bf46950d.png",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-sushi-cartoon-snow-crab-roll__37bf46950d",
+      "mediaType": "pngPreview",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-spider-roll-5c40f77da3.png",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-sushi-cartoon-spider-roll__5c40f77da3",
+      "mediaType": "pngPreview",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-planes-kc-46-pegasus-fcc7a92159.png",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehiacle-planes-kc-46-pegasus__fcc7a92159",
+      "mediaType": "pngPreview",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-5efd045f2e.png",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle__5efd045f2e",
+      "mediaType": "pngPreview",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-car-879b59fd65.png",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-car__879b59fd65",
+      "mediaType": "pngPreview",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/png/mythology/mythology-griffin-a1782cca68.png",
+      "assetId": "mythology__mythology-griffin__a1782cca68",
+      "mediaType": "pngPreview",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/png/mythology/mythology-mermaid-476a074c92.png",
+      "assetId": "mythology__mythology-mermaid__476a074c92",
+      "mediaType": "pngPreview",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/png/plushie/plushie-baby-dragon-5ed6730a4b.png",
+      "assetId": "plushie__plushie-baby-dragon__5ed6730a4b",
+      "mediaType": "pngPreview",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/png/plushie/plushie-baby-dragon-family-f216d18d8b.png",
+      "assetId": "plushie__plushie-baby-dragon-family__f216d18d8b",
+      "mediaType": "pngPreview",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/png/plushie/plushie-blue-whale-17d0990688.png",
+      "assetId": "plushie__plushie-blue-whale__17d0990688",
+      "mediaType": "pngPreview",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/png/plushie/plushie-prehistoric-triceratops-cfbd98566a.png",
+      "assetId": "plushie__plushie-prehistoric-triceratops__cfbd98566a",
+      "mediaType": "pngPreview",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/png/plushie/plushie-puppy-dog-4a35ced072.png",
+      "assetId": "plushie__plushie-puppy-dog__4a35ced072",
+      "mediaType": "pngPreview",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/svg/anime-girls/anime-girl-summoning-jutsu-cute-dinosaur-plushies-e958c58eca.svg",
+      "assetId": "anime-girls__anime-girl-summoning-jutsu-cute-dinosaur-plushies__e958c58eca",
+      "mediaType": "svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/svg/anime-girls/anime-girl-summoning-jutsu-cute-dragon-plushies-3f2c634dbf.svg",
+      "assetId": "anime-girls__anime-girl-summoning-jutsu-cute-dragon-plushies__3f2c634dbf",
+      "mediaType": "svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/svg/chibi/chibi-enchanted-forest-fairy-dancing-in-flower-ring-c4cb5961c2.svg",
+      "assetId": "chibi__chibi-enchanted-forest-fairy-dancing-in-flower-ring__c4cb5961c2",
+      "mediaType": "svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/svg/chibi/chibi-flowers-crocus-kawaii-908b17edf5.svg",
+      "assetId": "chibi__chibi-flowers-crocus-kawaii__908b17edf5",
+      "mediaType": "svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/svg/chibi/chibi-flowers-delphinium-fairy-e2952ac2c0.svg",
+      "assetId": "chibi__chibi-flowers-delphinium-fairy__e2952ac2c0",
+      "mediaType": "svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/svg/chibi/chibi-flowers-tulip-garden-68470e6363.svg",
+      "assetId": "chibi__chibi-flowers-tulip-garden__68470e6363",
+      "mediaType": "svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/svg/chibi/chibi-holiday-halloween-tombstone-with-wilted-flowers-coloring-page-dbdec0dd78.svg",
+      "assetId": "chibi__chibi-holiday-halloween-tombstone-with-wilted-flowers-coloring-page__dbdec0dd78",
+      "mediaType": "svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/svg/chibi/chibi-holiday-halloween-trick-or-treat-dog-in-cute-costume-coloring-page-79fa5d8c2d.svg",
+      "assetId": "chibi__chibi-holiday-halloween-trick-or-treat-dog-in-cute-costume-coloring-page__79fa5d8c2d",
+      "mediaType": "svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/svg/holiday/holiday-christmas-plushie-prehistoric-triceratops-family-b942c6ee0e.svg",
+      "assetId": "holiday__holiday-christmas-plushie-prehistoric-triceratops-family__b942c6ee0e",
+      "mediaType": "svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/svg/holiday/holiday-christmas-prehistoric-kawaii-triceratops-9689527143.svg",
+      "assetId": "holiday__holiday-christmas-prehistoric-kawaii-triceratops__9689527143",
+      "mediaType": "svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/svg/indoor-plants/indoor-plants-spider-plant-24e5529d0b.svg",
+      "assetId": "indoor-plants__indoor-plants-spider-plant__24e5529d0b",
+      "mediaType": "svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-baby-dragon-fe1a69ef1f.svg",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-cute-baby-dragon__fe1a69ef1f",
+      "mediaType": "svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-dinosaur-d5d6d04105.svg",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-cute-dinosaur__d5d6d04105",
+      "mediaType": "svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-unicorn-17a29a8e15.svg",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-cute-unicorn__17a29a8e15",
+      "mediaType": "svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-dragon-animals-bc2052aae7.svg",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-dragon-animals__bc2052aae7",
+      "mediaType": "svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-pegasus-animals-3068e80aa3.svg",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-pegasus-animals__3068e80aa3",
+      "mediaType": "svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-prehistoric-triceratops-animal-8412f3b319.svg",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-prehistoric-triceratops-animal__8412f3b319",
+      "mediaType": "svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-puppy-dog-halloween-e6b03b733b.svg",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-puppy-dog-halloween__e6b03b733b",
+      "mediaType": "svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-snow-crab-roll-37bf46950d.svg",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-sushi-cartoon-snow-crab-roll__37bf46950d",
+      "mediaType": "svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-spider-roll-5c40f77da3.svg",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-sushi-cartoon-spider-roll__5c40f77da3",
+      "mediaType": "svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-planes-kc-46-pegasus-fcc7a92159.svg",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehiacle-planes-kc-46-pegasus__fcc7a92159",
+      "mediaType": "svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-5efd045f2e.svg",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle__5efd045f2e",
+      "mediaType": "svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-car-879b59fd65.svg",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-car__879b59fd65",
+      "mediaType": "svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/svg/mythology/mythology-griffin-a1782cca68.svg",
+      "assetId": "mythology__mythology-griffin__a1782cca68",
+      "mediaType": "svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/svg/mythology/mythology-mermaid-476a074c92.svg",
+      "assetId": "mythology__mythology-mermaid__476a074c92",
+      "mediaType": "svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/svg/plushie/plushie-baby-dragon-5ed6730a4b.svg",
+      "assetId": "plushie__plushie-baby-dragon__5ed6730a4b",
+      "mediaType": "svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/svg/plushie/plushie-baby-dragon-family-f216d18d8b.svg",
+      "assetId": "plushie__plushie-baby-dragon-family__f216d18d8b",
+      "mediaType": "svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/svg/plushie/plushie-blue-whale-17d0990688.svg",
+      "assetId": "plushie__plushie-blue-whale__17d0990688",
+      "mediaType": "svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/svg/plushie/plushie-prehistoric-triceratops-cfbd98566a.svg",
+      "assetId": "plushie__plushie-prehistoric-triceratops__cfbd98566a",
+      "mediaType": "svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/svg/plushie/plushie-puppy-dog-4a35ced072.svg",
+      "assetId": "plushie__plushie-puppy-dog__4a35ced072",
+      "mediaType": "svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/thumbs/anime-girls/anime-girl-summoning-jutsu-cute-dinosaur-plushies-e958c58eca-thumb.png",
+      "assetId": "anime-girls__anime-girl-summoning-jutsu-cute-dinosaur-plushies__e958c58eca",
+      "mediaType": "thumbnail",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/thumbs/anime-girls/anime-girl-summoning-jutsu-cute-dragon-plushies-3f2c634dbf-thumb.png",
+      "assetId": "anime-girls__anime-girl-summoning-jutsu-cute-dragon-plushies__3f2c634dbf",
+      "mediaType": "thumbnail",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/thumbs/chibi/chibi-enchanted-forest-fairy-dancing-in-flower-ring-c4cb5961c2-thumb.png",
+      "assetId": "chibi__chibi-enchanted-forest-fairy-dancing-in-flower-ring__c4cb5961c2",
+      "mediaType": "thumbnail",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/thumbs/chibi/chibi-flowers-crocus-kawaii-908b17edf5-thumb.png",
+      "assetId": "chibi__chibi-flowers-crocus-kawaii__908b17edf5",
+      "mediaType": "thumbnail",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/thumbs/chibi/chibi-flowers-delphinium-fairy-e2952ac2c0-thumb.png",
+      "assetId": "chibi__chibi-flowers-delphinium-fairy__e2952ac2c0",
+      "mediaType": "thumbnail",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/thumbs/chibi/chibi-flowers-tulip-garden-68470e6363-thumb.png",
+      "assetId": "chibi__chibi-flowers-tulip-garden__68470e6363",
+      "mediaType": "thumbnail",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/thumbs/chibi/chibi-holiday-halloween-tombstone-with-wilted-flowers-coloring-page-dbdec0dd78-thumb.png",
+      "assetId": "chibi__chibi-holiday-halloween-tombstone-with-wilted-flowers-coloring-page__dbdec0dd78",
+      "mediaType": "thumbnail",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/thumbs/chibi/chibi-holiday-halloween-trick-or-treat-dog-in-cute-costume-coloring-page-79fa5d8c2d-thumb.png",
+      "assetId": "chibi__chibi-holiday-halloween-trick-or-treat-dog-in-cute-costume-coloring-page__79fa5d8c2d",
+      "mediaType": "thumbnail",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/thumbs/holiday/holiday-christmas-plushie-prehistoric-triceratops-family-b942c6ee0e-thumb.png",
+      "assetId": "holiday__holiday-christmas-plushie-prehistoric-triceratops-family__b942c6ee0e",
+      "mediaType": "thumbnail",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/thumbs/holiday/holiday-christmas-prehistoric-kawaii-triceratops-9689527143-thumb.png",
+      "assetId": "holiday__holiday-christmas-prehistoric-kawaii-triceratops__9689527143",
+      "mediaType": "thumbnail",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/thumbs/indoor-plants/indoor-plants-spider-plant-24e5529d0b-thumb.png",
+      "assetId": "indoor-plants__indoor-plants-spider-plant__24e5529d0b",
+      "mediaType": "thumbnail",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-baby-dragon-fe1a69ef1f-thumb.png",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-cute-baby-dragon__fe1a69ef1f",
+      "mediaType": "thumbnail",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-dinosaur-d5d6d04105-thumb.png",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-cute-dinosaur__d5d6d04105",
+      "mediaType": "thumbnail",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-unicorn-17a29a8e15-thumb.png",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-cute-unicorn__17a29a8e15",
+      "mediaType": "thumbnail",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-dragon-animals-bc2052aae7-thumb.png",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-dragon-animals__bc2052aae7",
+      "mediaType": "thumbnail",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-pegasus-animals-3068e80aa3-thumb.png",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-pegasus-animals__3068e80aa3",
+      "mediaType": "thumbnail",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-prehistoric-triceratops-animal-8412f3b319-thumb.png",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-prehistoric-triceratops-animal__8412f3b319",
+      "mediaType": "thumbnail",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-puppy-dog-halloween-e6b03b733b-thumb.png",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-puppy-dog-halloween__e6b03b733b",
+      "mediaType": "thumbnail",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-snow-crab-roll-37bf46950d-thumb.png",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-sushi-cartoon-snow-crab-roll__37bf46950d",
+      "mediaType": "thumbnail",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-spider-roll-5c40f77da3-thumb.png",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-sushi-cartoon-spider-roll__5c40f77da3",
+      "mediaType": "thumbnail",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-planes-kc-46-pegasus-fcc7a92159-thumb.png",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehiacle-planes-kc-46-pegasus__fcc7a92159",
+      "mediaType": "thumbnail",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-5efd045f2e-thumb.png",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle__5efd045f2e",
+      "mediaType": "thumbnail",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-car-879b59fd65-thumb.png",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-car__879b59fd65",
+      "mediaType": "thumbnail",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/thumbs/mythology/mythology-griffin-a1782cca68-thumb.png",
+      "assetId": "mythology__mythology-griffin__a1782cca68",
+      "mediaType": "thumbnail",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/thumbs/mythology/mythology-mermaid-476a074c92-thumb.png",
+      "assetId": "mythology__mythology-mermaid__476a074c92",
+      "mediaType": "thumbnail",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/thumbs/plushie/plushie-baby-dragon-5ed6730a4b-thumb.png",
+      "assetId": "plushie__plushie-baby-dragon__5ed6730a4b",
+      "mediaType": "thumbnail",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/thumbs/plushie/plushie-baby-dragon-family-f216d18d8b-thumb.png",
+      "assetId": "plushie__plushie-baby-dragon-family__f216d18d8b",
+      "mediaType": "thumbnail",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/thumbs/plushie/plushie-blue-whale-17d0990688-thumb.png",
+      "assetId": "plushie__plushie-blue-whale__17d0990688",
+      "mediaType": "thumbnail",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/thumbs/plushie/plushie-prehistoric-triceratops-cfbd98566a-thumb.png",
+      "assetId": "plushie__plushie-prehistoric-triceratops__cfbd98566a",
+      "mediaType": "thumbnail",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "url": "https://assets.example.com/coloring/test-v1/thumbs/plushie/plushie-puppy-dog-4a35ced072-thumb.png",
+      "assetId": "plushie__plushie-puppy-dog__4a35ced072",
+      "mediaType": "thumbnail",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    }
+  ]
+}

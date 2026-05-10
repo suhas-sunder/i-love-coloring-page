@@ -13,22 +13,12 @@ dist/
 pipeline/samples/**
 pipeline/bakeoffs/**
 pipeline/review/**
-pipeline/production/assets/**
-pipeline/production/thumbs/**
-pipeline/production/dry-run/assets/**
-pipeline/production/dry-run/logs/**
-pipeline/production/dry-run/manifests/**
-pipeline/production/dry-run/quarantine/**
-pipeline/production/dry-run/reports/**
-pipeline/production/dry-run/review/**
-pipeline/production/full/assets/**
-pipeline/production/full/logs/**
-pipeline/production/full/manifests/**
-pipeline/production/full/quarantine/**
-pipeline/production/full/reports/**
-pipeline/production/full/review/**
+pipeline/r2-upload-test/**
+pipeline/r2-upload/**
+pipeline/production/**
 
 # Keep production data manifests commit-eligible
+!pipeline/production/
 !pipeline/production/data/
 !pipeline/production/data/**
 

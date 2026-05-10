@@ -126,16 +126,27 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Production media must not be copied into `public/` unless a later explicit prompt approves a temporary strategy.
 - Public gallery asset URLs must use the centralized resolver in `src/lib/coloring/assets.ts`.
 - `NEXT_PUBLIC_COLORING_ASSET_BASE_URL` is the production asset URL source of truth.
+- Cloudflare R2 Standard Storage is the selected initial generated-media storage target unless a later prompt explicitly replaces it.
+- The current R2 test upload workflow uses 30 selected image records under `pipeline/r2-upload-test/coloring/test-v1`.
+- Full upload bundle generation requires explicit future approval.
+- R2 credentials must never be committed.
+- `NEXT_PUBLIC_COLORING_ASSET_BASE_URL` must point to the public custom-domain asset base plus prefix, not the private S3 API endpoint.
+- `r2.dev` is not the intended production media URL.
 - Local asset proxy behavior is development-only and disabled by default.
 - Do not enable `NEXT_PUBLIC_COLORING_USE_LOCAL_ASSET_PROXY` or `COLORING_ENABLE_LOCAL_ASSET_PROXY` in production.
 - Do not expose local filesystem paths to users or client-facing generated data.
 - Object storage plus CDN is the preferred production strategy for generated media.
 - SEO image sitemap, Open Graph image, and JSON-LD image work must wait until stable public asset URLs exist.
+- Do not start image sitemap or Open Graph image work until public asset URLs are verified.
 - Quarantined assets must never be published.
 - Warning assets are allowed only when they passed production export.
 - Future upload or sync tooling must consume `pipeline/manifests/round-4e-asset-publish-manifest.json` or a later publish manifest.
 - Upload tooling must preserve CDN-relative paths and content types from the publish manifest.
 - Real upload commands require an explicit future prompt and must never add credentials to the repo.
+- Do not commit generated media or R2 upload bundle media.
+- Do not run full scripted uploads without explicit future approval.
+- Do not run remote delete or purge commands without explicit future approval.
+- Do not add backend or API routes for media serving.
 
 ## Frontend-Only Deployment
 

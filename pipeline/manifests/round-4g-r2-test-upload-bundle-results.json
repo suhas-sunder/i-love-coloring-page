@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-05-10",
+  "runId": "round-4g-cloudflare-r2-test-upload-bundle",
+  "uploadBundleRoot": "pipeline/r2-upload-test/coloring/test-v1",
+  "uploadPrefix": "coloring/test-v1",
+  "summary": {
+    "selectedImageRecordCount": 30,
+    "createdMediaFileCount": 90,
+    "linkedFileCount": 90,
+    "copiedFileCount": 0,
+    "failedFileCount": 0,
+    "totalBundleBytesRepresented": 14995691,
+    "totalSvgFiles": 30,
+    "totalPngPreviewFiles": 30,
+    "totalThumbnailFiles": 30,
+    "materializationModeRequested": "hardlink",
+    "materializationModeObserved": "hardlink"
+  },
+  "safetyChecks": {
+    "writesConstrainedToR2UploadTest": true,
+    "deletesConstrainedToBundleRoot": true,
+    "sourceAssetImmutabilityConfirmed": true,
+    "publicFolderExclusionConfirmed": true,
+    "fullPublishManifestBundled": false,
+    "fullMediaSetPrepared": false,
+    "sourceImagesIncluded": 0,
+    "quarantinedAssetsIncluded": 0,
+    "blockedAssetsIncluded": 0,
+    "uploadCommandsRun": false,
+    "credentialsRequired": false,
+    "appApiRouteIntroduced": false
+  },
+  "sourceAssetImmutabilityConfirmation": "The script only reads pipeline/production/full/assets and never writes there.",
+  "publicFolderExclusionConfirmation": "The bundle target is pipeline/r2-upload-test only. No public folder writes are performed.",
+  "failedFiles": []
+}

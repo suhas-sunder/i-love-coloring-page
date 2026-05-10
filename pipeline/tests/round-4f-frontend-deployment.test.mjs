@@ -165,7 +165,6 @@ test("no backend, upload, credential, auth, database, or payment dependency is a
 
   const scannedFiles = [
     "netlify.toml",
-    ".env.example",
     "pipeline/reports/round-4f-netlify-deployment-plan.md",
     "pipeline/reports/round-4f-asset-runtime-plan.md",
     "pipeline/manifests/round-4f-netlify-deployment-plan.json",
@@ -176,6 +175,19 @@ test("no backend, upload, credential, auth, database, or payment dependency is a
     assert.doesNotMatch(text, /aws\s+s3|gsutil|rclone|azcopy|doctl|spaces|wrangler\s+r2|curl\s+-T/i, file);
     assert.doesNotMatch(text, /access_key|private_key|api[_-]?key\s*=|token\s*=|secret/i, file);
   }
+
+  const envExample = await readText(".env.example");
+  for (const variableName of [
+    "CLOUDFLARE_ACCOUNT_ID",
+    "CLOUDFLARE_R2_BUCKET",
+    "CLOUDFLARE_R2_ACCESS_KEY_ID",
+    "CLOUDFLARE_R2_SECRET_ACCESS_KEY",
+    "CLOUDFLARE_R2_ENDPOINT",
+  ]) {
+    assert.match(envExample, new RegExp(`^${variableName}=`, "m"));
+    assert.match(envExample, new RegExp(`^${variableName}=$`, "m"));
+  }
+  assert.doesNotMatch(envExample, /AKIA[0-9A-Z]{16}|-----BEGIN [A-Z ]*PRIVATE KEY-----|token\s*=\S+/i);
 });
 
 async function loadAssetResolver(env) {

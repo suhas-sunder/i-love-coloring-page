@@ -1,0 +1,4301 @@
+{
+  "generatedAt": "2026-05-10",
+  "runId": "round-4g-cloudflare-r2-test-upload-bundle",
+  "purpose": "Deterministic 30-record Cloudflare R2 Standard Storage test upload selection.",
+  "inputs": {
+    "publishManifest": "pipeline/manifests/round-4e-asset-publish-manifest.json",
+    "assetUrlContract": "pipeline/manifests/round-4e-asset-url-contract.json",
+    "cachePolicy": "pipeline/manifests/round-4e-cache-and-content-type-policy.json",
+    "hostingDecision": "pipeline/manifests/round-4e-asset-hosting-decision.json",
+    "frontendAssetContract": "pipeline/manifests/round-4f-frontend-asset-contract.json",
+    "productionAssets": "pipeline/manifests/round-3c-production-assets.json",
+    "productionQuarantine": "pipeline/manifests/round-3c-production-quarantine.json",
+    "generatedItems": "src/generated/coloring/items.json",
+    "generatedHubs": "src/generated/coloring/hubs.json",
+    "generatedHubItems": "src/generated/coloring/hub-items.json",
+    "generatedRoutes": "src/generated/coloring/routes.json"
+  },
+  "providerDecision": {
+    "selectedInitialStorageTarget": "cloudflare-r2-standard-storage",
+    "productionServingModel": "Netlify static frontend plus public Cloudflare R2 custom-domain media URLs",
+    "r2DevIntendedProductionUrl": false
+  },
+  "uploadBundleRoot": "pipeline/r2-upload-test/coloring/test-v1",
+  "uploadPrefix": "coloring/test-v1",
+  "expectedPublicBaseUrl": "https://assets.example.com/coloring/test-v1",
+  "summary": {
+    "selectedImageRecordCount": 30,
+    "expectedMediaFileCount": 90,
+    "warningRecordCount": 24,
+    "nonWarningRecordCount": 6,
+    "multiHubRecordCount": 30,
+    "coveredHubSlugs": [
+      "",
+      "animals",
+      "anime-girls",
+      "beetles",
+      "cars",
+      "chibi",
+      "chibi-flowers",
+      "christmas",
+      "crabs",
+      "cute",
+      "detailed-for-adults",
+      "dinosaurs",
+      "dogs",
+      "easy",
+      "fairies",
+      "fantasy",
+      "fantasy-creatures",
+      "flowers",
+      "food",
+      "for-kids",
+      "forest",
+      "garden",
+      "garden-flowers",
+      "geometric",
+      "griffins",
+      "halloween",
+      "holidays",
+      "indoor-plants",
+      "insects",
+      "kawaii",
+      "mandalas",
+      "mermaids",
+      "mythology",
+      "pegasus",
+      "planes",
+      "plants",
+      "plushie-animals",
+      "plushie-dragons",
+      "plushies",
+      "prehistoric-animals",
+      "sea-life",
+      "spiders",
+      "triceratops",
+      "unicorns",
+      "vehicles",
+      "whales"
+    ],
+    "sourceImagesIncluded": 0,
+    "quarantinedAssetsIncluded": 0,
+    "blockedAssetsIncluded": 0
+  },
+  "records": [
+    {
+      "assetId": "anime-girls__anime-girl-summoning-jutsu-cute-dinosaur-plushies__e958c58eca",
+      "displayTitle": "Anime Girl Summoning Jutsu Cute Dinosaur Plushies",
+      "category": "anime-girls",
+      "hubs": [
+        {
+          "hubId": "hub_coloring_pages",
+          "slug": "",
+          "title": "Coloring Pages",
+          "route": "/coloring-pages",
+          "assetCount": 6557,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_animals",
+          "slug": "animals",
+          "title": "Animals Coloring Pages",
+          "route": "/coloring-pages/animals",
+          "assetCount": 1524,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_anime_girls",
+          "slug": "anime-girls",
+          "title": "Anime Girls Coloring Pages",
+          "route": "/coloring-pages/anime-girls",
+          "assetCount": 905,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_cute",
+          "slug": "cute",
+          "title": "Cute Coloring Pages",
+          "route": "/coloring-pages/cute",
+          "assetCount": 375,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_dinosaurs",
+          "slug": "dinosaurs",
+          "title": "Dinosaurs Coloring Pages",
+          "route": "/coloring-pages/dinosaurs",
+          "assetCount": 190,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_easy",
+          "slug": "easy",
+          "title": "Easy Coloring Pages",
+          "route": "/coloring-pages/easy",
+          "assetCount": 1302,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_for_kids",
+          "slug": "for-kids",
+          "title": "Coloring Pages for Kids",
+          "route": "/coloring-pages/for-kids",
+          "assetCount": 1338,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_plushies",
+          "slug": "plushies",
+          "title": "Plushies Coloring Pages",
+          "route": "/coloring-pages/plushies",
+          "assetCount": 1704,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_prehistoric_animals",
+          "slug": "prehistoric-animals",
+          "title": "Prehistoric Animals Coloring Pages",
+          "route": "/coloring-pages/prehistoric-animals",
+          "assetCount": 221,
+          "visibleOnFirstPage": true
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/cute",
+          "title": "Cute Coloring Pages",
+          "reason": "included in the first-page preview set"
+        },
+        {
+          "path": "/coloring-pages/dinosaurs",
+          "title": "Dinosaurs Coloring Pages",
+          "reason": "included in the first-page preview set"
+        },
+        {
+          "path": "/coloring-pages/easy",
+          "title": "Easy Coloring Pages",
+          "reason": "included in the first-page preview set"
+        },
+        {
+          "path": "/coloring-pages/for-kids",
+          "title": "Coloring Pages for Kids",
+          "reason": "included in the first-page preview set"
+        },
+        {
+          "path": "/coloring-pages/prehistoric-animals",
+          "title": "Prehistoric Animals Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "media": {
+        "pngPreview": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/png/anime-girls/anime-girl-summoning-jutsu-cute-dinosaur-plushies-e958c58eca.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/png/anime-girls/anime-girl-summoning-jutsu-cute-dinosaur-plushies-e958c58eca.png",
+          "r2ObjectKey": "coloring/test-v1/png/anime-girls/anime-girl-summoning-jutsu-cute-dinosaur-plushies-e958c58eca.png",
+          "cdnRelativePath": "png/anime-girls/anime-girl-summoning-jutsu-cute-dinosaur-plushies-e958c58eca.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/anime-girls/anime-girl-summoning-jutsu-cute-dinosaur-plushies-e958c58eca.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 162859,
+          "sha256": "4f095b1d6b466c30326703e654cc2f0d742970053903bbcd7fe9f4ffb91a6c2b"
+        },
+        "svg": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/svg/anime-girls/anime-girl-summoning-jutsu-cute-dinosaur-plushies-e958c58eca.svg",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/svg/anime-girls/anime-girl-summoning-jutsu-cute-dinosaur-plushies-e958c58eca.svg",
+          "r2ObjectKey": "coloring/test-v1/svg/anime-girls/anime-girl-summoning-jutsu-cute-dinosaur-plushies-e958c58eca.svg",
+          "cdnRelativePath": "svg/anime-girls/anime-girl-summoning-jutsu-cute-dinosaur-plushies-e958c58eca.svg",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/svg/anime-girls/anime-girl-summoning-jutsu-cute-dinosaur-plushies-e958c58eca.svg",
+          "contentType": "image/svg+xml",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 762374,
+          "sha256": "0957faa1f914dce6a89b573c33e2c3cad9758305adad5d8f40d0b4622ee779de"
+        },
+        "thumbnail": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/thumbs/anime-girls/anime-girl-summoning-jutsu-cute-dinosaur-plushies-e958c58eca-thumb.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/thumbs/anime-girls/anime-girl-summoning-jutsu-cute-dinosaur-plushies-e958c58eca-thumb.png",
+          "r2ObjectKey": "coloring/test-v1/thumbs/anime-girls/anime-girl-summoning-jutsu-cute-dinosaur-plushies-e958c58eca-thumb.png",
+          "cdnRelativePath": "thumbs/anime-girls/anime-girl-summoning-jutsu-cute-dinosaur-plushies-e958c58eca-thumb.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/thumbs/anime-girls/anime-girl-summoning-jutsu-cute-dinosaur-plushies-e958c58eca-thumb.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 93917,
+          "sha256": "d3858e698bf55cac079b020ada13dc597bbd6fe160cbff9ec39ff9d305bcb144"
+        }
+      },
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "selectionReasons": [
+        "representative item for anime-girls",
+        "passed production export with warning metadata preserved",
+        "appears in multiple public hubs"
+      ]
+    },
+    {
+      "assetId": "anime-girls__anime-girl-summoning-jutsu-cute-dragon-plushies__3f2c634dbf",
+      "displayTitle": "Anime Girl Summoning Jutsu Cute Dragon Plushies",
+      "category": "anime-girls",
+      "hubs": [
+        {
+          "hubId": "hub_coloring_pages",
+          "slug": "",
+          "title": "Coloring Pages",
+          "route": "/coloring-pages",
+          "assetCount": 6557,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_anime_girls",
+          "slug": "anime-girls",
+          "title": "Anime Girls Coloring Pages",
+          "route": "/coloring-pages/anime-girls",
+          "assetCount": 905,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_cute",
+          "slug": "cute",
+          "title": "Cute Coloring Pages",
+          "route": "/coloring-pages/cute",
+          "assetCount": 375,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_easy",
+          "slug": "easy",
+          "title": "Easy Coloring Pages",
+          "route": "/coloring-pages/easy",
+          "assetCount": 1302,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_fantasy",
+          "slug": "fantasy",
+          "title": "Fantasy Coloring Pages",
+          "route": "/coloring-pages/fantasy",
+          "assetCount": 1310,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_fantasy_creatures",
+          "slug": "fantasy-creatures",
+          "title": "Fantasy Creatures Coloring Pages",
+          "route": "/coloring-pages/fantasy-creatures",
+          "assetCount": 575,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_for_kids",
+          "slug": "for-kids",
+          "title": "Coloring Pages for Kids",
+          "route": "/coloring-pages/for-kids",
+          "assetCount": 1338,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_plushie_dragons",
+          "slug": "plushie-dragons",
+          "title": "Plushie Dragons Coloring Pages",
+          "route": "/coloring-pages/plushie-dragons",
+          "assetCount": 75,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_plushies",
+          "slug": "plushies",
+          "title": "Plushies Coloring Pages",
+          "route": "/coloring-pages/plushies",
+          "assetCount": 1704,
+          "visibleOnFirstPage": false
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/cute",
+          "title": "Cute Coloring Pages",
+          "reason": "included in the first-page preview set"
+        },
+        {
+          "path": "/coloring-pages/easy",
+          "title": "Easy Coloring Pages",
+          "reason": "included in the first-page preview set"
+        },
+        {
+          "path": "/coloring-pages/fantasy",
+          "title": "Fantasy Coloring Pages",
+          "reason": "included in the first-page preview set"
+        },
+        {
+          "path": "/coloring-pages/fantasy-creatures",
+          "title": "Fantasy Creatures Coloring Pages",
+          "reason": "included in the first-page preview set"
+        },
+        {
+          "path": "/coloring-pages/for-kids",
+          "title": "Coloring Pages for Kids",
+          "reason": "included in the first-page preview set"
+        },
+        {
+          "path": "/coloring-pages/plushie-dragons",
+          "title": "Plushie Dragons Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "media": {
+        "pngPreview": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/png/anime-girls/anime-girl-summoning-jutsu-cute-dragon-plushies-3f2c634dbf.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/png/anime-girls/anime-girl-summoning-jutsu-cute-dragon-plushies-3f2c634dbf.png",
+          "r2ObjectKey": "coloring/test-v1/png/anime-girls/anime-girl-summoning-jutsu-cute-dragon-plushies-3f2c634dbf.png",
+          "cdnRelativePath": "png/anime-girls/anime-girl-summoning-jutsu-cute-dragon-plushies-3f2c634dbf.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/anime-girls/anime-girl-summoning-jutsu-cute-dragon-plushies-3f2c634dbf.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 169158,
+          "sha256": "13da5e4811d7004f70054e2d87a474a378b89c1577ce9eea4f2a5061fe0b6af1"
+        },
+        "svg": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/svg/anime-girls/anime-girl-summoning-jutsu-cute-dragon-plushies-3f2c634dbf.svg",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/svg/anime-girls/anime-girl-summoning-jutsu-cute-dragon-plushies-3f2c634dbf.svg",
+          "r2ObjectKey": "coloring/test-v1/svg/anime-girls/anime-girl-summoning-jutsu-cute-dragon-plushies-3f2c634dbf.svg",
+          "cdnRelativePath": "svg/anime-girls/anime-girl-summoning-jutsu-cute-dragon-plushies-3f2c634dbf.svg",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/svg/anime-girls/anime-girl-summoning-jutsu-cute-dragon-plushies-3f2c634dbf.svg",
+          "contentType": "image/svg+xml",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 904678,
+          "sha256": "e87f16dccc0bcd5d24d1e62636780f8cce3ea8656a5f37fc110c9c801a6fdb01"
+        },
+        "thumbnail": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/thumbs/anime-girls/anime-girl-summoning-jutsu-cute-dragon-plushies-3f2c634dbf-thumb.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/thumbs/anime-girls/anime-girl-summoning-jutsu-cute-dragon-plushies-3f2c634dbf-thumb.png",
+          "r2ObjectKey": "coloring/test-v1/thumbs/anime-girls/anime-girl-summoning-jutsu-cute-dragon-plushies-3f2c634dbf-thumb.png",
+          "cdnRelativePath": "thumbs/anime-girls/anime-girl-summoning-jutsu-cute-dragon-plushies-3f2c634dbf-thumb.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/thumbs/anime-girls/anime-girl-summoning-jutsu-cute-dragon-plushies-3f2c634dbf-thumb.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 96538,
+          "sha256": "742b8f9cf0dd09972b17abb755c1267d7e60b4ab4eead665afbd8b2438c6db3e"
+        }
+      },
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "selectionReasons": [
+        "additional first-page coverage for anime-girls",
+        "passed production export with warning metadata preserved",
+        "appears in multiple public hubs"
+      ]
+    },
+    {
+      "assetId": "chibi__chibi-enchanted-forest-fairy-dancing-in-flower-ring__c4cb5961c2",
+      "displayTitle": "Chibi Enchanted Forest Fairy Dancing In Flower Ring",
+      "category": "chibi",
+      "hubs": [
+        {
+          "hubId": "hub_coloring_pages",
+          "slug": "",
+          "title": "Coloring Pages",
+          "route": "/coloring-pages",
+          "assetCount": 6557,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_chibi",
+          "slug": "chibi",
+          "title": "Chibi Coloring Pages",
+          "route": "/coloring-pages/chibi",
+          "assetCount": 910,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_chibi_flowers",
+          "slug": "chibi-flowers",
+          "title": "Chibi Flowers Coloring Pages",
+          "route": "/coloring-pages/chibi-flowers",
+          "assetCount": 152,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_easy",
+          "slug": "easy",
+          "title": "Easy Coloring Pages",
+          "route": "/coloring-pages/easy",
+          "assetCount": 1302,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_fairies",
+          "slug": "fairies",
+          "title": "Fairies Coloring Pages",
+          "route": "/coloring-pages/fairies",
+          "assetCount": 37,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_fantasy",
+          "slug": "fantasy",
+          "title": "Fantasy Coloring Pages",
+          "route": "/coloring-pages/fantasy",
+          "assetCount": 1310,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_fantasy_creatures",
+          "slug": "fantasy-creatures",
+          "title": "Fantasy Creatures Coloring Pages",
+          "route": "/coloring-pages/fantasy-creatures",
+          "assetCount": 575,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_flowers",
+          "slug": "flowers",
+          "title": "Flowers Coloring Pages",
+          "route": "/coloring-pages/flowers",
+          "assetCount": 417,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_for_kids",
+          "slug": "for-kids",
+          "title": "Coloring Pages for Kids",
+          "route": "/coloring-pages/for-kids",
+          "assetCount": 1338,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_forest",
+          "slug": "forest",
+          "title": "Forest Coloring Pages",
+          "route": "/coloring-pages/forest",
+          "assetCount": 74,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_plants",
+          "slug": "plants",
+          "title": "Plants Coloring Pages",
+          "route": "/coloring-pages/plants",
+          "assetCount": 658,
+          "visibleOnFirstPage": true
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/chibi-flowers",
+          "title": "Chibi Flowers Coloring Pages",
+          "reason": "included in the first-page preview set"
+        },
+        {
+          "path": "/coloring-pages/fairies",
+          "title": "Fairies Coloring Pages",
+          "reason": "included in the first-page preview set"
+        },
+        {
+          "path": "/coloring-pages/flowers",
+          "title": "Flowers Coloring Pages",
+          "reason": "included in the first-page preview set"
+        },
+        {
+          "path": "/coloring-pages/forest",
+          "title": "Forest Coloring Pages",
+          "reason": "included in the first-page preview set"
+        },
+        {
+          "path": "/coloring-pages/plants",
+          "title": "Plants Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "media": {
+        "pngPreview": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/png/chibi/chibi-enchanted-forest-fairy-dancing-in-flower-ring-c4cb5961c2.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/png/chibi/chibi-enchanted-forest-fairy-dancing-in-flower-ring-c4cb5961c2.png",
+          "r2ObjectKey": "coloring/test-v1/png/chibi/chibi-enchanted-forest-fairy-dancing-in-flower-ring-c4cb5961c2.png",
+          "cdnRelativePath": "png/chibi/chibi-enchanted-forest-fairy-dancing-in-flower-ring-c4cb5961c2.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/chibi/chibi-enchanted-forest-fairy-dancing-in-flower-ring-c4cb5961c2.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 133641,
+          "sha256": "a8bd7ed1947bf55ec9b324c7ab7cc440db3c95032622b2ff83610bfe7c8c3f53"
+        },
+        "svg": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/svg/chibi/chibi-enchanted-forest-fairy-dancing-in-flower-ring-c4cb5961c2.svg",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/svg/chibi/chibi-enchanted-forest-fairy-dancing-in-flower-ring-c4cb5961c2.svg",
+          "r2ObjectKey": "coloring/test-v1/svg/chibi/chibi-enchanted-forest-fairy-dancing-in-flower-ring-c4cb5961c2.svg",
+          "cdnRelativePath": "svg/chibi/chibi-enchanted-forest-fairy-dancing-in-flower-ring-c4cb5961c2.svg",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/svg/chibi/chibi-enchanted-forest-fairy-dancing-in-flower-ring-c4cb5961c2.svg",
+          "contentType": "image/svg+xml",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 339363,
+          "sha256": "59e79b22debefcadfcc4cf0e8cb1b06768e15474faa6c73e6c9e4c5477de2a44"
+        },
+        "thumbnail": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/thumbs/chibi/chibi-enchanted-forest-fairy-dancing-in-flower-ring-c4cb5961c2-thumb.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/thumbs/chibi/chibi-enchanted-forest-fairy-dancing-in-flower-ring-c4cb5961c2-thumb.png",
+          "r2ObjectKey": "coloring/test-v1/thumbs/chibi/chibi-enchanted-forest-fairy-dancing-in-flower-ring-c4cb5961c2-thumb.png",
+          "cdnRelativePath": "thumbs/chibi/chibi-enchanted-forest-fairy-dancing-in-flower-ring-c4cb5961c2-thumb.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/thumbs/chibi/chibi-enchanted-forest-fairy-dancing-in-flower-ring-c4cb5961c2-thumb.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 84135,
+          "sha256": "32f099b8240ef71d0f1a5b20748ea42e4358c4d36ffabaaa6eeb7607f7326b64"
+        }
+      },
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "selectionReasons": [
+        "representative item for chibi",
+        "passed production export with warning metadata preserved",
+        "appears in multiple public hubs"
+      ]
+    },
+    {
+      "assetId": "chibi__chibi-flowers-crocus-kawaii__908b17edf5",
+      "displayTitle": "Chibi Flowers Crocus Kawaii",
+      "category": "chibi",
+      "hubs": [
+        {
+          "hubId": "hub_coloring_pages",
+          "slug": "",
+          "title": "Coloring Pages",
+          "route": "/coloring-pages",
+          "assetCount": 6557,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_chibi",
+          "slug": "chibi",
+          "title": "Chibi Coloring Pages",
+          "route": "/coloring-pages/chibi",
+          "assetCount": 910,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_chibi_flowers",
+          "slug": "chibi-flowers",
+          "title": "Chibi Flowers Coloring Pages",
+          "route": "/coloring-pages/chibi-flowers",
+          "assetCount": 152,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_easy",
+          "slug": "easy",
+          "title": "Easy Coloring Pages",
+          "route": "/coloring-pages/easy",
+          "assetCount": 1302,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_flowers",
+          "slug": "flowers",
+          "title": "Flowers Coloring Pages",
+          "route": "/coloring-pages/flowers",
+          "assetCount": 417,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_for_kids",
+          "slug": "for-kids",
+          "title": "Coloring Pages for Kids",
+          "route": "/coloring-pages/for-kids",
+          "assetCount": 1338,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_kawaii",
+          "slug": "kawaii",
+          "title": "Kawaii Coloring Pages",
+          "route": "/coloring-pages/kawaii",
+          "assetCount": 88,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_plants",
+          "slug": "plants",
+          "title": "Plants Coloring Pages",
+          "route": "/coloring-pages/plants",
+          "assetCount": 658,
+          "visibleOnFirstPage": false
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/chibi-flowers",
+          "title": "Chibi Flowers Coloring Pages",
+          "reason": "included in the first-page preview set"
+        },
+        {
+          "path": "/coloring-pages/kawaii",
+          "title": "Kawaii Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "media": {
+        "pngPreview": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/png/chibi/chibi-flowers-crocus-kawaii-908b17edf5.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/png/chibi/chibi-flowers-crocus-kawaii-908b17edf5.png",
+          "r2ObjectKey": "coloring/test-v1/png/chibi/chibi-flowers-crocus-kawaii-908b17edf5.png",
+          "cdnRelativePath": "png/chibi/chibi-flowers-crocus-kawaii-908b17edf5.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/chibi/chibi-flowers-crocus-kawaii-908b17edf5.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 115668,
+          "sha256": "30b5ee08cebb699228d6cb1f2f6ac74b5253e78835914c7ea4d2182bc0481d22"
+        },
+        "svg": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/svg/chibi/chibi-flowers-crocus-kawaii-908b17edf5.svg",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/svg/chibi/chibi-flowers-crocus-kawaii-908b17edf5.svg",
+          "r2ObjectKey": "coloring/test-v1/svg/chibi/chibi-flowers-crocus-kawaii-908b17edf5.svg",
+          "cdnRelativePath": "svg/chibi/chibi-flowers-crocus-kawaii-908b17edf5.svg",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/svg/chibi/chibi-flowers-crocus-kawaii-908b17edf5.svg",
+          "contentType": "image/svg+xml",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 350353,
+          "sha256": "51bd8b497fb532e78ee46950b5bbfe5da273c7d25d6e9412d23394bf9b1a02ed"
+        },
+        "thumbnail": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/thumbs/chibi/chibi-flowers-crocus-kawaii-908b17edf5-thumb.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/thumbs/chibi/chibi-flowers-crocus-kawaii-908b17edf5-thumb.png",
+          "r2ObjectKey": "coloring/test-v1/thumbs/chibi/chibi-flowers-crocus-kawaii-908b17edf5-thumb.png",
+          "cdnRelativePath": "thumbs/chibi/chibi-flowers-crocus-kawaii-908b17edf5-thumb.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/thumbs/chibi/chibi-flowers-crocus-kawaii-908b17edf5-thumb.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 69033,
+          "sha256": "dd922cc9e40cb8ba34e6eaf1d5c09aab78a18407d207f60d4f363cf17cac840a"
+        }
+      },
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "selectionReasons": [
+        "additional first-page coverage for flowers",
+        "passed production export with warning metadata preserved",
+        "appears in multiple public hubs"
+      ]
+    },
+    {
+      "assetId": "chibi__chibi-flowers-delphinium-fairy__e2952ac2c0",
+      "displayTitle": "Chibi Flowers Delphinium Fairy",
+      "category": "chibi",
+      "hubs": [
+        {
+          "hubId": "hub_coloring_pages",
+          "slug": "",
+          "title": "Coloring Pages",
+          "route": "/coloring-pages",
+          "assetCount": 6557,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_chibi",
+          "slug": "chibi",
+          "title": "Chibi Coloring Pages",
+          "route": "/coloring-pages/chibi",
+          "assetCount": 910,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_chibi_flowers",
+          "slug": "chibi-flowers",
+          "title": "Chibi Flowers Coloring Pages",
+          "route": "/coloring-pages/chibi-flowers",
+          "assetCount": 152,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_easy",
+          "slug": "easy",
+          "title": "Easy Coloring Pages",
+          "route": "/coloring-pages/easy",
+          "assetCount": 1302,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_fairies",
+          "slug": "fairies",
+          "title": "Fairies Coloring Pages",
+          "route": "/coloring-pages/fairies",
+          "assetCount": 37,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_fantasy",
+          "slug": "fantasy",
+          "title": "Fantasy Coloring Pages",
+          "route": "/coloring-pages/fantasy",
+          "assetCount": 1310,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_fantasy_creatures",
+          "slug": "fantasy-creatures",
+          "title": "Fantasy Creatures Coloring Pages",
+          "route": "/coloring-pages/fantasy-creatures",
+          "assetCount": 575,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_flowers",
+          "slug": "flowers",
+          "title": "Flowers Coloring Pages",
+          "route": "/coloring-pages/flowers",
+          "assetCount": 417,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_for_kids",
+          "slug": "for-kids",
+          "title": "Coloring Pages for Kids",
+          "route": "/coloring-pages/for-kids",
+          "assetCount": 1338,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_plants",
+          "slug": "plants",
+          "title": "Plants Coloring Pages",
+          "route": "/coloring-pages/plants",
+          "assetCount": 658,
+          "visibleOnFirstPage": false
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/chibi-flowers",
+          "title": "Chibi Flowers Coloring Pages",
+          "reason": "included in the first-page preview set"
+        },
+        {
+          "path": "/coloring-pages/fairies",
+          "title": "Fairies Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "media": {
+        "pngPreview": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/png/chibi/chibi-flowers-delphinium-fairy-e2952ac2c0.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/png/chibi/chibi-flowers-delphinium-fairy-e2952ac2c0.png",
+          "r2ObjectKey": "coloring/test-v1/png/chibi/chibi-flowers-delphinium-fairy-e2952ac2c0.png",
+          "cdnRelativePath": "png/chibi/chibi-flowers-delphinium-fairy-e2952ac2c0.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/chibi/chibi-flowers-delphinium-fairy-e2952ac2c0.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 131499,
+          "sha256": "5c6edd0735096253f8e693e8b917654b335163e540c26c97223b5ed8293b88e3"
+        },
+        "svg": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/svg/chibi/chibi-flowers-delphinium-fairy-e2952ac2c0.svg",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/svg/chibi/chibi-flowers-delphinium-fairy-e2952ac2c0.svg",
+          "r2ObjectKey": "coloring/test-v1/svg/chibi/chibi-flowers-delphinium-fairy-e2952ac2c0.svg",
+          "cdnRelativePath": "svg/chibi/chibi-flowers-delphinium-fairy-e2952ac2c0.svg",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/svg/chibi/chibi-flowers-delphinium-fairy-e2952ac2c0.svg",
+          "contentType": "image/svg+xml",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 309331,
+          "sha256": "51f7f06a3b82c3e0805b33da380bdf3c777e8346033c94b6afe3cab47cb0c6fd"
+        },
+        "thumbnail": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/thumbs/chibi/chibi-flowers-delphinium-fairy-e2952ac2c0-thumb.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/thumbs/chibi/chibi-flowers-delphinium-fairy-e2952ac2c0-thumb.png",
+          "r2ObjectKey": "coloring/test-v1/thumbs/chibi/chibi-flowers-delphinium-fairy-e2952ac2c0-thumb.png",
+          "cdnRelativePath": "thumbs/chibi/chibi-flowers-delphinium-fairy-e2952ac2c0-thumb.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/thumbs/chibi/chibi-flowers-delphinium-fairy-e2952ac2c0-thumb.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 83417,
+          "sha256": "35f79dd33dd34b7e03e312e22fd9a5436c62adc6cb0d6ba16b0551692b7e942c"
+        }
+      },
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "selectionReasons": [
+        "additional first-page coverage for chibi",
+        "passed production export with warning metadata preserved",
+        "appears in multiple public hubs"
+      ]
+    },
+    {
+      "assetId": "chibi__chibi-flowers-tulip-garden__68470e6363",
+      "displayTitle": "Chibi Flowers Tulip Garden",
+      "category": "chibi",
+      "hubs": [
+        {
+          "hubId": "hub_coloring_pages",
+          "slug": "",
+          "title": "Coloring Pages",
+          "route": "/coloring-pages",
+          "assetCount": 6557,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_chibi",
+          "slug": "chibi",
+          "title": "Chibi Coloring Pages",
+          "route": "/coloring-pages/chibi",
+          "assetCount": 910,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_chibi_flowers",
+          "slug": "chibi-flowers",
+          "title": "Chibi Flowers Coloring Pages",
+          "route": "/coloring-pages/chibi-flowers",
+          "assetCount": 152,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_easy",
+          "slug": "easy",
+          "title": "Easy Coloring Pages",
+          "route": "/coloring-pages/easy",
+          "assetCount": 1302,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_flowers",
+          "slug": "flowers",
+          "title": "Flowers Coloring Pages",
+          "route": "/coloring-pages/flowers",
+          "assetCount": 417,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_for_kids",
+          "slug": "for-kids",
+          "title": "Coloring Pages for Kids",
+          "route": "/coloring-pages/for-kids",
+          "assetCount": 1338,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_garden",
+          "slug": "garden",
+          "title": "Garden Coloring Pages",
+          "route": "/coloring-pages/garden",
+          "assetCount": 266,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_garden_flowers",
+          "slug": "garden-flowers",
+          "title": "Garden Flowers Coloring Pages",
+          "route": "/coloring-pages/garden-flowers",
+          "assetCount": 166,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_plants",
+          "slug": "plants",
+          "title": "Plants Coloring Pages",
+          "route": "/coloring-pages/plants",
+          "assetCount": 658,
+          "visibleOnFirstPage": false
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/garden",
+          "title": "Garden Coloring Pages",
+          "reason": "included in the first-page preview set"
+        },
+        {
+          "path": "/coloring-pages/garden-flowers",
+          "title": "Garden Flowers Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "media": {
+        "pngPreview": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/png/chibi/chibi-flowers-tulip-garden-68470e6363.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/png/chibi/chibi-flowers-tulip-garden-68470e6363.png",
+          "r2ObjectKey": "coloring/test-v1/png/chibi/chibi-flowers-tulip-garden-68470e6363.png",
+          "cdnRelativePath": "png/chibi/chibi-flowers-tulip-garden-68470e6363.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/chibi/chibi-flowers-tulip-garden-68470e6363.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 78144,
+          "sha256": "a77cdd616e54b6dd1b2c4ce6346b9524702fd913b6e13433826c93848a8667cc"
+        },
+        "svg": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/svg/chibi/chibi-flowers-tulip-garden-68470e6363.svg",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/svg/chibi/chibi-flowers-tulip-garden-68470e6363.svg",
+          "r2ObjectKey": "coloring/test-v1/svg/chibi/chibi-flowers-tulip-garden-68470e6363.svg",
+          "cdnRelativePath": "svg/chibi/chibi-flowers-tulip-garden-68470e6363.svg",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/svg/chibi/chibi-flowers-tulip-garden-68470e6363.svg",
+          "contentType": "image/svg+xml",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 121689,
+          "sha256": "84de767fb046034e5c663b2b5565cca8f7ed8084a0c2bfeead85b1954cf840ba"
+        },
+        "thumbnail": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/thumbs/chibi/chibi-flowers-tulip-garden-68470e6363-thumb.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/thumbs/chibi/chibi-flowers-tulip-garden-68470e6363-thumb.png",
+          "r2ObjectKey": "coloring/test-v1/thumbs/chibi/chibi-flowers-tulip-garden-68470e6363-thumb.png",
+          "cdnRelativePath": "thumbs/chibi/chibi-flowers-tulip-garden-68470e6363-thumb.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/thumbs/chibi/chibi-flowers-tulip-garden-68470e6363-thumb.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 54438,
+          "sha256": "411f7e2ec894a16ba629e6455309c6120004a6e67ac1167c6c801955087b93db"
+        }
+      },
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "selectionReasons": [
+        "additional first-page coverage for plants",
+        "passed production export with warning metadata preserved",
+        "appears in multiple public hubs"
+      ]
+    },
+    {
+      "assetId": "chibi__chibi-holiday-halloween-tombstone-with-wilted-flowers-coloring-page__dbdec0dd78",
+      "displayTitle": "Chibi Holiday Halloween Tombstone With Wilted Flowers Coloring Page",
+      "category": "chibi",
+      "hubs": [
+        {
+          "hubId": "hub_coloring_pages",
+          "slug": "",
+          "title": "Coloring Pages",
+          "route": "/coloring-pages",
+          "assetCount": 6557,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_chibi",
+          "slug": "chibi",
+          "title": "Chibi Coloring Pages",
+          "route": "/coloring-pages/chibi",
+          "assetCount": 910,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_chibi_flowers",
+          "slug": "chibi-flowers",
+          "title": "Chibi Flowers Coloring Pages",
+          "route": "/coloring-pages/chibi-flowers",
+          "assetCount": 152,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_easy",
+          "slug": "easy",
+          "title": "Easy Coloring Pages",
+          "route": "/coloring-pages/easy",
+          "assetCount": 1302,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_flowers",
+          "slug": "flowers",
+          "title": "Flowers Coloring Pages",
+          "route": "/coloring-pages/flowers",
+          "assetCount": 417,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_for_kids",
+          "slug": "for-kids",
+          "title": "Coloring Pages for Kids",
+          "route": "/coloring-pages/for-kids",
+          "assetCount": 1338,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_halloween",
+          "slug": "halloween",
+          "title": "Halloween Coloring Pages",
+          "route": "/coloring-pages/halloween",
+          "assetCount": 305,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_holidays",
+          "slug": "holidays",
+          "title": "Holidays Coloring Pages",
+          "route": "/coloring-pages/holidays",
+          "assetCount": 874,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_plants",
+          "slug": "plants",
+          "title": "Plants Coloring Pages",
+          "route": "/coloring-pages/plants",
+          "assetCount": 658,
+          "visibleOnFirstPage": false
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/chibi",
+          "title": "Chibi Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/chibi-flowers",
+          "title": "Chibi Flowers Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/easy",
+          "title": "Easy Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/flowers",
+          "title": "Flowers Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/for-kids",
+          "title": "Coloring Pages for Kids",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/halloween",
+          "title": "Halloween Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/holidays",
+          "title": "Holidays Coloring Pages",
+          "reason": "assigned to this hub"
+        }
+      ],
+      "media": {
+        "pngPreview": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/png/chibi/chibi-holiday-halloween-tombstone-with-wilted-flowers-coloring-page-dbdec0dd78.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/png/chibi/chibi-holiday-halloween-tombstone-with-wilted-flowers-coloring-page-dbdec0dd78.png",
+          "r2ObjectKey": "coloring/test-v1/png/chibi/chibi-holiday-halloween-tombstone-with-wilted-flowers-coloring-page-dbdec0dd78.png",
+          "cdnRelativePath": "png/chibi/chibi-holiday-halloween-tombstone-with-wilted-flowers-coloring-page-dbdec0dd78.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/chibi/chibi-holiday-halloween-tombstone-with-wilted-flowers-coloring-page-dbdec0dd78.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 88709,
+          "sha256": "9d04598933a81abe64fdaab11724ce506a7f4f163c64b7eb44a795f519047f8b"
+        },
+        "svg": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/svg/chibi/chibi-holiday-halloween-tombstone-with-wilted-flowers-coloring-page-dbdec0dd78.svg",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/svg/chibi/chibi-holiday-halloween-tombstone-with-wilted-flowers-coloring-page-dbdec0dd78.svg",
+          "r2ObjectKey": "coloring/test-v1/svg/chibi/chibi-holiday-halloween-tombstone-with-wilted-flowers-coloring-page-dbdec0dd78.svg",
+          "cdnRelativePath": "svg/chibi/chibi-holiday-halloween-tombstone-with-wilted-flowers-coloring-page-dbdec0dd78.svg",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/svg/chibi/chibi-holiday-halloween-tombstone-with-wilted-flowers-coloring-page-dbdec0dd78.svg",
+          "contentType": "image/svg+xml",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 192730,
+          "sha256": "bc3594f5435f977072322639b90bed83fb24e29d4c668f1159148d5d7a973e03"
+        },
+        "thumbnail": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/thumbs/chibi/chibi-holiday-halloween-tombstone-with-wilted-flowers-coloring-page-dbdec0dd78-thumb.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/thumbs/chibi/chibi-holiday-halloween-tombstone-with-wilted-flowers-coloring-page-dbdec0dd78-thumb.png",
+          "r2ObjectKey": "coloring/test-v1/thumbs/chibi/chibi-holiday-halloween-tombstone-with-wilted-flowers-coloring-page-dbdec0dd78-thumb.png",
+          "cdnRelativePath": "thumbs/chibi/chibi-holiday-halloween-tombstone-with-wilted-flowers-coloring-page-dbdec0dd78-thumb.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/thumbs/chibi/chibi-holiday-halloween-tombstone-with-wilted-flowers-coloring-page-dbdec0dd78-thumb.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 62626,
+          "sha256": "6d656a689776311a665461532dbc2f63618ca485dc816a4ea030972712b7055a"
+        }
+      },
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "selectionReasons": [
+        "representative item for halloween",
+        "passed production export with warning metadata preserved",
+        "appears in multiple public hubs"
+      ]
+    },
+    {
+      "assetId": "chibi__chibi-holiday-halloween-trick-or-treat-dog-in-cute-costume-coloring-page__79fa5d8c2d",
+      "displayTitle": "Chibi Holiday Halloween Trick Or Treat Dog In Cute Costume Coloring Page",
+      "category": "chibi",
+      "hubs": [
+        {
+          "hubId": "hub_coloring_pages",
+          "slug": "",
+          "title": "Coloring Pages",
+          "route": "/coloring-pages",
+          "assetCount": 6557,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_animals",
+          "slug": "animals",
+          "title": "Animals Coloring Pages",
+          "route": "/coloring-pages/animals",
+          "assetCount": 1524,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_chibi",
+          "slug": "chibi",
+          "title": "Chibi Coloring Pages",
+          "route": "/coloring-pages/chibi",
+          "assetCount": 910,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_cute",
+          "slug": "cute",
+          "title": "Cute Coloring Pages",
+          "route": "/coloring-pages/cute",
+          "assetCount": 375,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_dogs",
+          "slug": "dogs",
+          "title": "Dogs Coloring Pages",
+          "route": "/coloring-pages/dogs",
+          "assetCount": 284,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_easy",
+          "slug": "easy",
+          "title": "Easy Coloring Pages",
+          "route": "/coloring-pages/easy",
+          "assetCount": 1302,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_for_kids",
+          "slug": "for-kids",
+          "title": "Coloring Pages for Kids",
+          "route": "/coloring-pages/for-kids",
+          "assetCount": 1338,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_halloween",
+          "slug": "halloween",
+          "title": "Halloween Coloring Pages",
+          "route": "/coloring-pages/halloween",
+          "assetCount": 305,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_holidays",
+          "slug": "holidays",
+          "title": "Holidays Coloring Pages",
+          "route": "/coloring-pages/holidays",
+          "assetCount": 874,
+          "visibleOnFirstPage": false
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/cute",
+          "title": "Cute Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "media": {
+        "pngPreview": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/png/chibi/chibi-holiday-halloween-trick-or-treat-dog-in-cute-costume-coloring-page-79fa5d8c2d.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/png/chibi/chibi-holiday-halloween-trick-or-treat-dog-in-cute-costume-coloring-page-79fa5d8c2d.png",
+          "r2ObjectKey": "coloring/test-v1/png/chibi/chibi-holiday-halloween-trick-or-treat-dog-in-cute-costume-coloring-page-79fa5d8c2d.png",
+          "cdnRelativePath": "png/chibi/chibi-holiday-halloween-trick-or-treat-dog-in-cute-costume-coloring-page-79fa5d8c2d.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/chibi/chibi-holiday-halloween-trick-or-treat-dog-in-cute-costume-coloring-page-79fa5d8c2d.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 125137,
+          "sha256": "6ad5b90a916e58a8d45d924b712d79afae3393065c18d8f5272468f021ca630d"
+        },
+        "svg": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/svg/chibi/chibi-holiday-halloween-trick-or-treat-dog-in-cute-costume-coloring-page-79fa5d8c2d.svg",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/svg/chibi/chibi-holiday-halloween-trick-or-treat-dog-in-cute-costume-coloring-page-79fa5d8c2d.svg",
+          "r2ObjectKey": "coloring/test-v1/svg/chibi/chibi-holiday-halloween-trick-or-treat-dog-in-cute-costume-coloring-page-79fa5d8c2d.svg",
+          "cdnRelativePath": "svg/chibi/chibi-holiday-halloween-trick-or-treat-dog-in-cute-costume-coloring-page-79fa5d8c2d.svg",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/svg/chibi/chibi-holiday-halloween-trick-or-treat-dog-in-cute-costume-coloring-page-79fa5d8c2d.svg",
+          "contentType": "image/svg+xml",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 269269,
+          "sha256": "3f597b78b0fc24163e9ee93bb243938bca6e210df44d56668df7e184ca98c02a"
+        },
+        "thumbnail": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/thumbs/chibi/chibi-holiday-halloween-trick-or-treat-dog-in-cute-costume-coloring-page-79fa5d8c2d-thumb.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/thumbs/chibi/chibi-holiday-halloween-trick-or-treat-dog-in-cute-costume-coloring-page-79fa5d8c2d-thumb.png",
+          "r2ObjectKey": "coloring/test-v1/thumbs/chibi/chibi-holiday-halloween-trick-or-treat-dog-in-cute-costume-coloring-page-79fa5d8c2d-thumb.png",
+          "cdnRelativePath": "thumbs/chibi/chibi-holiday-halloween-trick-or-treat-dog-in-cute-costume-coloring-page-79fa5d8c2d-thumb.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/thumbs/chibi/chibi-holiday-halloween-trick-or-treat-dog-in-cute-costume-coloring-page-79fa5d8c2d-thumb.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 83007,
+          "sha256": "28afab3b50d1a77c8900380415705c7766d4542af27451705d973ff9c393ccdc"
+        }
+      },
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "selectionReasons": [
+        "additional first-page coverage for halloween",
+        "passed production export with warning metadata preserved",
+        "appears in multiple public hubs"
+      ]
+    },
+    {
+      "assetId": "holiday__holiday-christmas-plushie-prehistoric-triceratops-family__b942c6ee0e",
+      "displayTitle": "Holiday Christmas Plushie Prehistoric Triceratops Family",
+      "category": "holiday",
+      "hubs": [
+        {
+          "hubId": "hub_coloring_pages",
+          "slug": "",
+          "title": "Coloring Pages",
+          "route": "/coloring-pages",
+          "assetCount": 6557,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_animals",
+          "slug": "animals",
+          "title": "Animals Coloring Pages",
+          "route": "/coloring-pages/animals",
+          "assetCount": 1524,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_christmas",
+          "slug": "christmas",
+          "title": "Christmas Coloring Pages",
+          "route": "/coloring-pages/christmas",
+          "assetCount": 332,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_dinosaurs",
+          "slug": "dinosaurs",
+          "title": "Dinosaurs Coloring Pages",
+          "route": "/coloring-pages/dinosaurs",
+          "assetCount": 190,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_holidays",
+          "slug": "holidays",
+          "title": "Holidays Coloring Pages",
+          "route": "/coloring-pages/holidays",
+          "assetCount": 874,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_plushies",
+          "slug": "plushies",
+          "title": "Plushies Coloring Pages",
+          "route": "/coloring-pages/plushies",
+          "assetCount": 1704,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_prehistoric_animals",
+          "slug": "prehistoric-animals",
+          "title": "Prehistoric Animals Coloring Pages",
+          "route": "/coloring-pages/prehistoric-animals",
+          "assetCount": 221,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_triceratops",
+          "slug": "triceratops",
+          "title": "Triceratops Coloring Pages",
+          "route": "/coloring-pages/triceratops",
+          "assetCount": 22,
+          "visibleOnFirstPage": true
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/triceratops",
+          "title": "Triceratops Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "media": {
+        "pngPreview": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/png/holiday/holiday-christmas-plushie-prehistoric-triceratops-family-b942c6ee0e.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/png/holiday/holiday-christmas-plushie-prehistoric-triceratops-family-b942c6ee0e.png",
+          "r2ObjectKey": "coloring/test-v1/png/holiday/holiday-christmas-plushie-prehistoric-triceratops-family-b942c6ee0e.png",
+          "cdnRelativePath": "png/holiday/holiday-christmas-plushie-prehistoric-triceratops-family-b942c6ee0e.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/holiday/holiday-christmas-plushie-prehistoric-triceratops-family-b942c6ee0e.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 112641,
+          "sha256": "a9be6dbe56a25171db89d0d125e209f67e307ed032107f388144d9aae0cb6951"
+        },
+        "svg": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/svg/holiday/holiday-christmas-plushie-prehistoric-triceratops-family-b942c6ee0e.svg",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/svg/holiday/holiday-christmas-plushie-prehistoric-triceratops-family-b942c6ee0e.svg",
+          "r2ObjectKey": "coloring/test-v1/svg/holiday/holiday-christmas-plushie-prehistoric-triceratops-family-b942c6ee0e.svg",
+          "cdnRelativePath": "svg/holiday/holiday-christmas-plushie-prehistoric-triceratops-family-b942c6ee0e.svg",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/svg/holiday/holiday-christmas-plushie-prehistoric-triceratops-family-b942c6ee0e.svg",
+          "contentType": "image/svg+xml",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 292606,
+          "sha256": "1550a1a3401e4608ec12a52752a9befe8e5e700163b61ea40f501415230aef3e"
+        },
+        "thumbnail": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/thumbs/holiday/holiday-christmas-plushie-prehistoric-triceratops-family-b942c6ee0e-thumb.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/thumbs/holiday/holiday-christmas-plushie-prehistoric-triceratops-family-b942c6ee0e-thumb.png",
+          "r2ObjectKey": "coloring/test-v1/thumbs/holiday/holiday-christmas-plushie-prehistoric-triceratops-family-b942c6ee0e-thumb.png",
+          "cdnRelativePath": "thumbs/holiday/holiday-christmas-plushie-prehistoric-triceratops-family-b942c6ee0e-thumb.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/thumbs/holiday/holiday-christmas-plushie-prehistoric-triceratops-family-b942c6ee0e-thumb.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 72855,
+          "sha256": "3648ce729c879d5b768862757d714bb2d9a9f8d696a1e4f16fbb8e1b2af961ad"
+        }
+      },
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "selectionReasons": [
+        "additional first-page coverage for christmas",
+        "passed production export with warning metadata preserved",
+        "appears in multiple public hubs"
+      ]
+    },
+    {
+      "assetId": "holiday__holiday-christmas-prehistoric-kawaii-triceratops__9689527143",
+      "displayTitle": "Holiday Christmas Prehistoric Kawaii Triceratops",
+      "category": "holiday",
+      "hubs": [
+        {
+          "hubId": "hub_coloring_pages",
+          "slug": "",
+          "title": "Coloring Pages",
+          "route": "/coloring-pages",
+          "assetCount": 6557,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_animals",
+          "slug": "animals",
+          "title": "Animals Coloring Pages",
+          "route": "/coloring-pages/animals",
+          "assetCount": 1524,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_christmas",
+          "slug": "christmas",
+          "title": "Christmas Coloring Pages",
+          "route": "/coloring-pages/christmas",
+          "assetCount": 332,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_dinosaurs",
+          "slug": "dinosaurs",
+          "title": "Dinosaurs Coloring Pages",
+          "route": "/coloring-pages/dinosaurs",
+          "assetCount": 190,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_easy",
+          "slug": "easy",
+          "title": "Easy Coloring Pages",
+          "route": "/coloring-pages/easy",
+          "assetCount": 1302,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_for_kids",
+          "slug": "for-kids",
+          "title": "Coloring Pages for Kids",
+          "route": "/coloring-pages/for-kids",
+          "assetCount": 1338,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_holidays",
+          "slug": "holidays",
+          "title": "Holidays Coloring Pages",
+          "route": "/coloring-pages/holidays",
+          "assetCount": 874,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_kawaii",
+          "slug": "kawaii",
+          "title": "Kawaii Coloring Pages",
+          "route": "/coloring-pages/kawaii",
+          "assetCount": 88,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_prehistoric_animals",
+          "slug": "prehistoric-animals",
+          "title": "Prehistoric Animals Coloring Pages",
+          "route": "/coloring-pages/prehistoric-animals",
+          "assetCount": 221,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_triceratops",
+          "slug": "triceratops",
+          "title": "Triceratops Coloring Pages",
+          "route": "/coloring-pages/triceratops",
+          "assetCount": 22,
+          "visibleOnFirstPage": true
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/easy",
+          "title": "Easy Coloring Pages",
+          "reason": "included in the first-page preview set"
+        },
+        {
+          "path": "/coloring-pages/kawaii",
+          "title": "Kawaii Coloring Pages",
+          "reason": "included in the first-page preview set"
+        },
+        {
+          "path": "/coloring-pages/triceratops",
+          "title": "Triceratops Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "media": {
+        "pngPreview": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/png/holiday/holiday-christmas-prehistoric-kawaii-triceratops-9689527143.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/png/holiday/holiday-christmas-prehistoric-kawaii-triceratops-9689527143.png",
+          "r2ObjectKey": "coloring/test-v1/png/holiday/holiday-christmas-prehistoric-kawaii-triceratops-9689527143.png",
+          "cdnRelativePath": "png/holiday/holiday-christmas-prehistoric-kawaii-triceratops-9689527143.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/holiday/holiday-christmas-prehistoric-kawaii-triceratops-9689527143.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 95457,
+          "sha256": "5d6cd5dd7793cb3e809f530d9e9909bb2c3eb1e5822b005270e632ff4498203c"
+        },
+        "svg": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/svg/holiday/holiday-christmas-prehistoric-kawaii-triceratops-9689527143.svg",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/svg/holiday/holiday-christmas-prehistoric-kawaii-triceratops-9689527143.svg",
+          "r2ObjectKey": "coloring/test-v1/svg/holiday/holiday-christmas-prehistoric-kawaii-triceratops-9689527143.svg",
+          "cdnRelativePath": "svg/holiday/holiday-christmas-prehistoric-kawaii-triceratops-9689527143.svg",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/svg/holiday/holiday-christmas-prehistoric-kawaii-triceratops-9689527143.svg",
+          "contentType": "image/svg+xml",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 196729,
+          "sha256": "573345f1fc246bf25bcf607a0f25263dbf6e27b5955aeb3d88a6358b61afa708"
+        },
+        "thumbnail": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/thumbs/holiday/holiday-christmas-prehistoric-kawaii-triceratops-9689527143-thumb.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/thumbs/holiday/holiday-christmas-prehistoric-kawaii-triceratops-9689527143-thumb.png",
+          "r2ObjectKey": "coloring/test-v1/thumbs/holiday/holiday-christmas-prehistoric-kawaii-triceratops-9689527143-thumb.png",
+          "cdnRelativePath": "thumbs/holiday/holiday-christmas-prehistoric-kawaii-triceratops-9689527143-thumb.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/thumbs/holiday/holiday-christmas-prehistoric-kawaii-triceratops-9689527143-thumb.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 62547,
+          "sha256": "4430af59bc9d212f8b3b5b6baeca57ec36df6bfc9e78e5eed80be7515a4d9310"
+        }
+      },
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "selectionReasons": [
+        "representative item for christmas",
+        "passed production export with warning metadata preserved",
+        "appears in multiple public hubs"
+      ]
+    },
+    {
+      "assetId": "indoor-plants__indoor-plants-spider-plant__24e5529d0b",
+      "displayTitle": "Indoor Plants Spider Plant",
+      "category": "indoor-plants",
+      "hubs": [
+        {
+          "hubId": "hub_coloring_pages",
+          "slug": "",
+          "title": "Coloring Pages",
+          "route": "/coloring-pages",
+          "assetCount": 6557,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_animals",
+          "slug": "animals",
+          "title": "Animals Coloring Pages",
+          "route": "/coloring-pages/animals",
+          "assetCount": 1524,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_indoor_plants",
+          "slug": "indoor-plants",
+          "title": "Indoor Plants Coloring Pages",
+          "route": "/coloring-pages/indoor-plants",
+          "assetCount": 129,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_insects",
+          "slug": "insects",
+          "title": "Insects Coloring Pages",
+          "route": "/coloring-pages/insects",
+          "assetCount": 180,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_plants",
+          "slug": "plants",
+          "title": "Plants Coloring Pages",
+          "route": "/coloring-pages/plants",
+          "assetCount": 658,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_spiders",
+          "slug": "spiders",
+          "title": "Spiders Coloring Pages",
+          "route": "/coloring-pages/spiders",
+          "assetCount": 28,
+          "visibleOnFirstPage": true
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/insects",
+          "title": "Insects Coloring Pages",
+          "reason": "included in the first-page preview set"
+        },
+        {
+          "path": "/coloring-pages/spiders",
+          "title": "Spiders Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "media": {
+        "pngPreview": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/png/indoor-plants/indoor-plants-spider-plant-24e5529d0b.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/png/indoor-plants/indoor-plants-spider-plant-24e5529d0b.png",
+          "r2ObjectKey": "coloring/test-v1/png/indoor-plants/indoor-plants-spider-plant-24e5529d0b.png",
+          "cdnRelativePath": "png/indoor-plants/indoor-plants-spider-plant-24e5529d0b.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/indoor-plants/indoor-plants-spider-plant-24e5529d0b.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 179980,
+          "sha256": "760847d7523f3f045371325af141a7977d56636eabc21c36ed109e7d6ba63877"
+        },
+        "svg": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/svg/indoor-plants/indoor-plants-spider-plant-24e5529d0b.svg",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/svg/indoor-plants/indoor-plants-spider-plant-24e5529d0b.svg",
+          "r2ObjectKey": "coloring/test-v1/svg/indoor-plants/indoor-plants-spider-plant-24e5529d0b.svg",
+          "cdnRelativePath": "svg/indoor-plants/indoor-plants-spider-plant-24e5529d0b.svg",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/svg/indoor-plants/indoor-plants-spider-plant-24e5529d0b.svg",
+          "contentType": "image/svg+xml",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 356380,
+          "sha256": "d23f983c5523976aa4c97a4fb5a0d4c0393e1a3f36657bdd5f26a23e89ae9a11"
+        },
+        "thumbnail": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/thumbs/indoor-plants/indoor-plants-spider-plant-24e5529d0b-thumb.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/thumbs/indoor-plants/indoor-plants-spider-plant-24e5529d0b-thumb.png",
+          "r2ObjectKey": "coloring/test-v1/thumbs/indoor-plants/indoor-plants-spider-plant-24e5529d0b-thumb.png",
+          "cdnRelativePath": "thumbs/indoor-plants/indoor-plants-spider-plant-24e5529d0b-thumb.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/thumbs/indoor-plants/indoor-plants-spider-plant-24e5529d0b-thumb.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 107788,
+          "sha256": "4a8dedd287b45573892f18c5249a1806472fb78b8127a54a41163699af0c1f39"
+        }
+      },
+      "warningFlags": [],
+      "selectionReasons": [
+        "representative item for indoor-plants",
+        "passed production export without warning metadata",
+        "appears in multiple public hubs"
+      ]
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-cute-baby-dragon__fe1a69ef1f",
+      "displayTitle": "Mandala Geometry Patterns Plushie Cute Baby Dragon",
+      "category": "mandala-geometry-patterns",
+      "hubs": [
+        {
+          "hubId": "hub_coloring_pages",
+          "slug": "",
+          "title": "Coloring Pages",
+          "route": "/coloring-pages",
+          "assetCount": 6557,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_cute",
+          "slug": "cute",
+          "title": "Cute Coloring Pages",
+          "route": "/coloring-pages/cute",
+          "assetCount": 375,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_detailed_for_adults",
+          "slug": "detailed-for-adults",
+          "title": "Detailed Coloring Pages for Adults",
+          "route": "/coloring-pages/detailed-for-adults",
+          "assetCount": 1461,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_easy",
+          "slug": "easy",
+          "title": "Easy Coloring Pages",
+          "route": "/coloring-pages/easy",
+          "assetCount": 1302,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_fantasy",
+          "slug": "fantasy",
+          "title": "Fantasy Coloring Pages",
+          "route": "/coloring-pages/fantasy",
+          "assetCount": 1310,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_fantasy_creatures",
+          "slug": "fantasy-creatures",
+          "title": "Fantasy Creatures Coloring Pages",
+          "route": "/coloring-pages/fantasy-creatures",
+          "assetCount": 575,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_for_kids",
+          "slug": "for-kids",
+          "title": "Coloring Pages for Kids",
+          "route": "/coloring-pages/for-kids",
+          "assetCount": 1338,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_geometric",
+          "slug": "geometric",
+          "title": "Geometric Coloring Pages",
+          "route": "/coloring-pages/geometric",
+          "assetCount": 1459,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_mandalas",
+          "slug": "mandalas",
+          "title": "Mandalas Coloring Pages",
+          "route": "/coloring-pages/mandalas",
+          "assetCount": 1461,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_plushie_dragons",
+          "slug": "plushie-dragons",
+          "title": "Plushie Dragons Coloring Pages",
+          "route": "/coloring-pages/plushie-dragons",
+          "assetCount": 75,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_plushies",
+          "slug": "plushies",
+          "title": "Plushies Coloring Pages",
+          "route": "/coloring-pages/plushies",
+          "assetCount": 1704,
+          "visibleOnFirstPage": false
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/cute",
+          "title": "Cute Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "media": {
+        "pngPreview": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-baby-dragon-fe1a69ef1f.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-baby-dragon-fe1a69ef1f.png",
+          "r2ObjectKey": "coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-baby-dragon-fe1a69ef1f.png",
+          "cdnRelativePath": "png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-baby-dragon-fe1a69ef1f.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-baby-dragon-fe1a69ef1f.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 157316,
+          "sha256": "55bf5b32ec488cd3209ce47e3414891bad03d54427d4190d5d60da6be15317ab"
+        },
+        "svg": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-baby-dragon-fe1a69ef1f.svg",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-baby-dragon-fe1a69ef1f.svg",
+          "r2ObjectKey": "coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-baby-dragon-fe1a69ef1f.svg",
+          "cdnRelativePath": "svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-baby-dragon-fe1a69ef1f.svg",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-baby-dragon-fe1a69ef1f.svg",
+          "contentType": "image/svg+xml",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 288650,
+          "sha256": "53508bc8641f22e760723f93fc7a3912dd378728229919f84ff4c319c7fc81a2"
+        },
+        "thumbnail": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-baby-dragon-fe1a69ef1f-thumb.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-baby-dragon-fe1a69ef1f-thumb.png",
+          "r2ObjectKey": "coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-baby-dragon-fe1a69ef1f-thumb.png",
+          "cdnRelativePath": "thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-baby-dragon-fe1a69ef1f-thumb.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-baby-dragon-fe1a69ef1f-thumb.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 95475,
+          "sha256": "1c5a7ffabf861a4825bff8d57ef9016ef94c9bc594c1adf115a449482e662453"
+        }
+      },
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "selectionReasons": [
+        "representative item for plushies",
+        "passed production export with warning metadata preserved",
+        "appears in multiple public hubs"
+      ]
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-cute-dinosaur__d5d6d04105",
+      "displayTitle": "Mandala Geometry Patterns Plushie Cute Dinosaur",
+      "category": "mandala-geometry-patterns",
+      "hubs": [
+        {
+          "hubId": "hub_coloring_pages",
+          "slug": "",
+          "title": "Coloring Pages",
+          "route": "/coloring-pages",
+          "assetCount": 6557,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_animals",
+          "slug": "animals",
+          "title": "Animals Coloring Pages",
+          "route": "/coloring-pages/animals",
+          "assetCount": 1524,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_cute",
+          "slug": "cute",
+          "title": "Cute Coloring Pages",
+          "route": "/coloring-pages/cute",
+          "assetCount": 375,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_detailed_for_adults",
+          "slug": "detailed-for-adults",
+          "title": "Detailed Coloring Pages for Adults",
+          "route": "/coloring-pages/detailed-for-adults",
+          "assetCount": 1461,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_dinosaurs",
+          "slug": "dinosaurs",
+          "title": "Dinosaurs Coloring Pages",
+          "route": "/coloring-pages/dinosaurs",
+          "assetCount": 190,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_easy",
+          "slug": "easy",
+          "title": "Easy Coloring Pages",
+          "route": "/coloring-pages/easy",
+          "assetCount": 1302,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_for_kids",
+          "slug": "for-kids",
+          "title": "Coloring Pages for Kids",
+          "route": "/coloring-pages/for-kids",
+          "assetCount": 1338,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_geometric",
+          "slug": "geometric",
+          "title": "Geometric Coloring Pages",
+          "route": "/coloring-pages/geometric",
+          "assetCount": 1459,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_mandalas",
+          "slug": "mandalas",
+          "title": "Mandalas Coloring Pages",
+          "route": "/coloring-pages/mandalas",
+          "assetCount": 1461,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_plushies",
+          "slug": "plushies",
+          "title": "Plushies Coloring Pages",
+          "route": "/coloring-pages/plushies",
+          "assetCount": 1704,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_prehistoric_animals",
+          "slug": "prehistoric-animals",
+          "title": "Prehistoric Animals Coloring Pages",
+          "route": "/coloring-pages/prehistoric-animals",
+          "assetCount": 221,
+          "visibleOnFirstPage": true
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/cute",
+          "title": "Cute Coloring Pages",
+          "reason": "included in the first-page preview set"
+        },
+        {
+          "path": "/coloring-pages/dinosaurs",
+          "title": "Dinosaurs Coloring Pages",
+          "reason": "included in the first-page preview set"
+        },
+        {
+          "path": "/coloring-pages/prehistoric-animals",
+          "title": "Prehistoric Animals Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "media": {
+        "pngPreview": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-dinosaur-d5d6d04105.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-dinosaur-d5d6d04105.png",
+          "r2ObjectKey": "coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-dinosaur-d5d6d04105.png",
+          "cdnRelativePath": "png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-dinosaur-d5d6d04105.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-dinosaur-d5d6d04105.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 183761,
+          "sha256": "be33dacf793df2884b3d5c2339f6c276b0bc0c84b3bc65322206085700f220fd"
+        },
+        "svg": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-dinosaur-d5d6d04105.svg",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-dinosaur-d5d6d04105.svg",
+          "r2ObjectKey": "coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-dinosaur-d5d6d04105.svg",
+          "cdnRelativePath": "svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-dinosaur-d5d6d04105.svg",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-dinosaur-d5d6d04105.svg",
+          "contentType": "image/svg+xml",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 425776,
+          "sha256": "779091842c6f956ab3702bf9db9d6d21e6677aadb3aedb19ac3bde66c986d43b"
+        },
+        "thumbnail": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-dinosaur-d5d6d04105-thumb.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-dinosaur-d5d6d04105-thumb.png",
+          "r2ObjectKey": "coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-dinosaur-d5d6d04105-thumb.png",
+          "cdnRelativePath": "thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-dinosaur-d5d6d04105-thumb.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-dinosaur-d5d6d04105-thumb.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 108335,
+          "sha256": "51071453f1a6828ad7438085da8d4a253a1b6a44e9f7c1af07d39a577b93b11d"
+        }
+      },
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "selectionReasons": [
+        "representative item for animals",
+        "passed production export with warning metadata preserved",
+        "appears in multiple public hubs"
+      ]
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-cute-unicorn__17a29a8e15",
+      "displayTitle": "Mandala Geometry Patterns Plushie Cute Unicorn",
+      "category": "mandala-geometry-patterns",
+      "hubs": [
+        {
+          "hubId": "hub_coloring_pages",
+          "slug": "",
+          "title": "Coloring Pages",
+          "route": "/coloring-pages",
+          "assetCount": 6557,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_cute",
+          "slug": "cute",
+          "title": "Cute Coloring Pages",
+          "route": "/coloring-pages/cute",
+          "assetCount": 375,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_detailed_for_adults",
+          "slug": "detailed-for-adults",
+          "title": "Detailed Coloring Pages for Adults",
+          "route": "/coloring-pages/detailed-for-adults",
+          "assetCount": 1461,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_easy",
+          "slug": "easy",
+          "title": "Easy Coloring Pages",
+          "route": "/coloring-pages/easy",
+          "assetCount": 1302,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_fantasy",
+          "slug": "fantasy",
+          "title": "Fantasy Coloring Pages",
+          "route": "/coloring-pages/fantasy",
+          "assetCount": 1310,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_fantasy_creatures",
+          "slug": "fantasy-creatures",
+          "title": "Fantasy Creatures Coloring Pages",
+          "route": "/coloring-pages/fantasy-creatures",
+          "assetCount": 575,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_for_kids",
+          "slug": "for-kids",
+          "title": "Coloring Pages for Kids",
+          "route": "/coloring-pages/for-kids",
+          "assetCount": 1338,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_geometric",
+          "slug": "geometric",
+          "title": "Geometric Coloring Pages",
+          "route": "/coloring-pages/geometric",
+          "assetCount": 1459,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_mandalas",
+          "slug": "mandalas",
+          "title": "Mandalas Coloring Pages",
+          "route": "/coloring-pages/mandalas",
+          "assetCount": 1461,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_plushies",
+          "slug": "plushies",
+          "title": "Plushies Coloring Pages",
+          "route": "/coloring-pages/plushies",
+          "assetCount": 1704,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_unicorns",
+          "slug": "unicorns",
+          "title": "Unicorns Coloring Pages",
+          "route": "/coloring-pages/unicorns",
+          "assetCount": 38,
+          "visibleOnFirstPage": true
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/cute",
+          "title": "Cute Coloring Pages",
+          "reason": "included in the first-page preview set"
+        },
+        {
+          "path": "/coloring-pages/unicorns",
+          "title": "Unicorns Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "media": {
+        "pngPreview": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-unicorn-17a29a8e15.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-unicorn-17a29a8e15.png",
+          "r2ObjectKey": "coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-unicorn-17a29a8e15.png",
+          "cdnRelativePath": "png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-unicorn-17a29a8e15.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-unicorn-17a29a8e15.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 179712,
+          "sha256": "69b20611b2479d355a3c9e9bafc34e107998248740832201ed9b69f54a6ddde0"
+        },
+        "svg": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-unicorn-17a29a8e15.svg",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-unicorn-17a29a8e15.svg",
+          "r2ObjectKey": "coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-unicorn-17a29a8e15.svg",
+          "cdnRelativePath": "svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-unicorn-17a29a8e15.svg",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-unicorn-17a29a8e15.svg",
+          "contentType": "image/svg+xml",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 338478,
+          "sha256": "88b5e477ad415663b8631bdcec777f7308a0c9ca09e27e665d21124888fff014"
+        },
+        "thumbnail": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-unicorn-17a29a8e15-thumb.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-unicorn-17a29a8e15-thumb.png",
+          "r2ObjectKey": "coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-unicorn-17a29a8e15-thumb.png",
+          "cdnRelativePath": "thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-unicorn-17a29a8e15-thumb.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-unicorn-17a29a8e15-thumb.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 108463,
+          "sha256": "594d73df785f2e8ea6cf701b95f33a9e4e09efb47f0d431015ff1a9605e78406"
+        }
+      },
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "selectionReasons": [
+        "additional first-page coverage for plushies",
+        "passed production export with warning metadata preserved",
+        "appears in multiple public hubs"
+      ]
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-dragon-animals__bc2052aae7",
+      "displayTitle": "Mandala Geometry Patterns Plushie Dragon Animals",
+      "category": "mandala-geometry-patterns",
+      "hubs": [
+        {
+          "hubId": "hub_coloring_pages",
+          "slug": "",
+          "title": "Coloring Pages",
+          "route": "/coloring-pages",
+          "assetCount": 6557,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_animals",
+          "slug": "animals",
+          "title": "Animals Coloring Pages",
+          "route": "/coloring-pages/animals",
+          "assetCount": 1524,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_detailed_for_adults",
+          "slug": "detailed-for-adults",
+          "title": "Detailed Coloring Pages for Adults",
+          "route": "/coloring-pages/detailed-for-adults",
+          "assetCount": 1461,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_fantasy",
+          "slug": "fantasy",
+          "title": "Fantasy Coloring Pages",
+          "route": "/coloring-pages/fantasy",
+          "assetCount": 1310,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_fantasy_creatures",
+          "slug": "fantasy-creatures",
+          "title": "Fantasy Creatures Coloring Pages",
+          "route": "/coloring-pages/fantasy-creatures",
+          "assetCount": 575,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_geometric",
+          "slug": "geometric",
+          "title": "Geometric Coloring Pages",
+          "route": "/coloring-pages/geometric",
+          "assetCount": 1459,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_mandalas",
+          "slug": "mandalas",
+          "title": "Mandalas Coloring Pages",
+          "route": "/coloring-pages/mandalas",
+          "assetCount": 1461,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_plushie_animals",
+          "slug": "plushie-animals",
+          "title": "Plushie Animals Coloring Pages",
+          "route": "/coloring-pages/plushie-animals",
+          "assetCount": 105,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_plushie_dragons",
+          "slug": "plushie-dragons",
+          "title": "Plushie Dragons Coloring Pages",
+          "route": "/coloring-pages/plushie-dragons",
+          "assetCount": 75,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_plushies",
+          "slug": "plushies",
+          "title": "Plushies Coloring Pages",
+          "route": "/coloring-pages/plushies",
+          "assetCount": 1704,
+          "visibleOnFirstPage": false
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/plushie-animals",
+          "title": "Plushie Animals Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "media": {
+        "pngPreview": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-dragon-animals-bc2052aae7.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-dragon-animals-bc2052aae7.png",
+          "r2ObjectKey": "coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-dragon-animals-bc2052aae7.png",
+          "cdnRelativePath": "png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-dragon-animals-bc2052aae7.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-dragon-animals-bc2052aae7.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 144250,
+          "sha256": "7d8eef6929d6304b81ecaa2e30624e80bdff3de6b6a3f0dd3029150e3281fb57"
+        },
+        "svg": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-dragon-animals-bc2052aae7.svg",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-dragon-animals-bc2052aae7.svg",
+          "r2ObjectKey": "coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-dragon-animals-bc2052aae7.svg",
+          "cdnRelativePath": "svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-dragon-animals-bc2052aae7.svg",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-dragon-animals-bc2052aae7.svg",
+          "contentType": "image/svg+xml",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 280221,
+          "sha256": "023a225bdc567714d7c3f25524419f819ec5ffc38344eec2714ee9d7ca2bd702"
+        },
+        "thumbnail": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-dragon-animals-bc2052aae7-thumb.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-dragon-animals-bc2052aae7-thumb.png",
+          "r2ObjectKey": "coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-dragon-animals-bc2052aae7-thumb.png",
+          "cdnRelativePath": "thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-dragon-animals-bc2052aae7-thumb.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-dragon-animals-bc2052aae7-thumb.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 90667,
+          "sha256": "295c282c3c7a6493cc5b44ace0652d0210e14419d8cad7bd21ea51612c9b10d9"
+        }
+      },
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "selectionReasons": [
+        "additional first-page coverage for animals",
+        "passed production export with warning metadata preserved",
+        "appears in multiple public hubs"
+      ]
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-pegasus-animals__3068e80aa3",
+      "displayTitle": "Mandala Geometry Patterns Plushie Pegasus Animals",
+      "category": "mandala-geometry-patterns",
+      "hubs": [
+        {
+          "hubId": "hub_coloring_pages",
+          "slug": "",
+          "title": "Coloring Pages",
+          "route": "/coloring-pages",
+          "assetCount": 6557,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_animals",
+          "slug": "animals",
+          "title": "Animals Coloring Pages",
+          "route": "/coloring-pages/animals",
+          "assetCount": 1524,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_detailed_for_adults",
+          "slug": "detailed-for-adults",
+          "title": "Detailed Coloring Pages for Adults",
+          "route": "/coloring-pages/detailed-for-adults",
+          "assetCount": 1461,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_fantasy",
+          "slug": "fantasy",
+          "title": "Fantasy Coloring Pages",
+          "route": "/coloring-pages/fantasy",
+          "assetCount": 1310,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_fantasy_creatures",
+          "slug": "fantasy-creatures",
+          "title": "Fantasy Creatures Coloring Pages",
+          "route": "/coloring-pages/fantasy-creatures",
+          "assetCount": 575,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_geometric",
+          "slug": "geometric",
+          "title": "Geometric Coloring Pages",
+          "route": "/coloring-pages/geometric",
+          "assetCount": 1459,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_mandalas",
+          "slug": "mandalas",
+          "title": "Mandalas Coloring Pages",
+          "route": "/coloring-pages/mandalas",
+          "assetCount": 1461,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_pegasus",
+          "slug": "pegasus",
+          "title": "Pegasus Coloring Pages",
+          "route": "/coloring-pages/pegasus",
+          "assetCount": 29,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_plushie_animals",
+          "slug": "plushie-animals",
+          "title": "Plushie Animals Coloring Pages",
+          "route": "/coloring-pages/plushie-animals",
+          "assetCount": 105,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_plushies",
+          "slug": "plushies",
+          "title": "Plushies Coloring Pages",
+          "route": "/coloring-pages/plushies",
+          "assetCount": 1704,
+          "visibleOnFirstPage": false
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/pegasus",
+          "title": "Pegasus Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "media": {
+        "pngPreview": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-pegasus-animals-3068e80aa3.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-pegasus-animals-3068e80aa3.png",
+          "r2ObjectKey": "coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-pegasus-animals-3068e80aa3.png",
+          "cdnRelativePath": "png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-pegasus-animals-3068e80aa3.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-pegasus-animals-3068e80aa3.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 124473,
+          "sha256": "393a933c4dacacebb2ebc0c1e11d525a79faa21830870bd940dc0e367d3fd9f6"
+        },
+        "svg": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-pegasus-animals-3068e80aa3.svg",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-pegasus-animals-3068e80aa3.svg",
+          "r2ObjectKey": "coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-pegasus-animals-3068e80aa3.svg",
+          "cdnRelativePath": "svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-pegasus-animals-3068e80aa3.svg",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-pegasus-animals-3068e80aa3.svg",
+          "contentType": "image/svg+xml",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 213040,
+          "sha256": "cf84e60d1080021cc951b3d0f6a62a1b6f4fb6b6a0e915b10389ce8d6f437f35"
+        },
+        "thumbnail": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-pegasus-animals-3068e80aa3-thumb.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-pegasus-animals-3068e80aa3-thumb.png",
+          "r2ObjectKey": "coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-pegasus-animals-3068e80aa3-thumb.png",
+          "cdnRelativePath": "thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-pegasus-animals-3068e80aa3-thumb.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-pegasus-animals-3068e80aa3-thumb.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 77824,
+          "sha256": "4addf7bbdbb6ac141ffcc41b043cd4c120651e68dc422c2fc6424892da8499cd"
+        }
+      },
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "selectionReasons": [
+        "additional first-page coverage for mandalas",
+        "passed production export with warning metadata preserved",
+        "appears in multiple public hubs"
+      ]
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-prehistoric-triceratops-animal__8412f3b319",
+      "displayTitle": "Mandala Geometry Patterns Plushie Prehistoric Triceratops Animal",
+      "category": "mandala-geometry-patterns",
+      "hubs": [
+        {
+          "hubId": "hub_coloring_pages",
+          "slug": "",
+          "title": "Coloring Pages",
+          "route": "/coloring-pages",
+          "assetCount": 6557,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_animals",
+          "slug": "animals",
+          "title": "Animals Coloring Pages",
+          "route": "/coloring-pages/animals",
+          "assetCount": 1524,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_detailed_for_adults",
+          "slug": "detailed-for-adults",
+          "title": "Detailed Coloring Pages for Adults",
+          "route": "/coloring-pages/detailed-for-adults",
+          "assetCount": 1461,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_dinosaurs",
+          "slug": "dinosaurs",
+          "title": "Dinosaurs Coloring Pages",
+          "route": "/coloring-pages/dinosaurs",
+          "assetCount": 190,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_geometric",
+          "slug": "geometric",
+          "title": "Geometric Coloring Pages",
+          "route": "/coloring-pages/geometric",
+          "assetCount": 1459,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_mandalas",
+          "slug": "mandalas",
+          "title": "Mandalas Coloring Pages",
+          "route": "/coloring-pages/mandalas",
+          "assetCount": 1461,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_plushie_animals",
+          "slug": "plushie-animals",
+          "title": "Plushie Animals Coloring Pages",
+          "route": "/coloring-pages/plushie-animals",
+          "assetCount": 105,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_plushies",
+          "slug": "plushies",
+          "title": "Plushies Coloring Pages",
+          "route": "/coloring-pages/plushies",
+          "assetCount": 1704,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_prehistoric_animals",
+          "slug": "prehistoric-animals",
+          "title": "Prehistoric Animals Coloring Pages",
+          "route": "/coloring-pages/prehistoric-animals",
+          "assetCount": 221,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_triceratops",
+          "slug": "triceratops",
+          "title": "Triceratops Coloring Pages",
+          "route": "/coloring-pages/triceratops",
+          "assetCount": 22,
+          "visibleOnFirstPage": true
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/triceratops",
+          "title": "Triceratops Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "media": {
+        "pngPreview": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-prehistoric-triceratops-animal-8412f3b319.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-prehistoric-triceratops-animal-8412f3b319.png",
+          "r2ObjectKey": "coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-prehistoric-triceratops-animal-8412f3b319.png",
+          "cdnRelativePath": "png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-prehistoric-triceratops-animal-8412f3b319.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-prehistoric-triceratops-animal-8412f3b319.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 126122,
+          "sha256": "5f73b58e5b4228e0974709a2f7ac53471a076c083b79e33b2eb7e70a2a9e45d8"
+        },
+        "svg": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-prehistoric-triceratops-animal-8412f3b319.svg",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-prehistoric-triceratops-animal-8412f3b319.svg",
+          "r2ObjectKey": "coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-prehistoric-triceratops-animal-8412f3b319.svg",
+          "cdnRelativePath": "svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-prehistoric-triceratops-animal-8412f3b319.svg",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-prehistoric-triceratops-animal-8412f3b319.svg",
+          "contentType": "image/svg+xml",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 187792,
+          "sha256": "6bc55da421f8d9c1c03604e044bc8e3365b2fbbc716ce055b08ae7dc818cf2be"
+        },
+        "thumbnail": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-prehistoric-triceratops-animal-8412f3b319-thumb.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-prehistoric-triceratops-animal-8412f3b319-thumb.png",
+          "r2ObjectKey": "coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-prehistoric-triceratops-animal-8412f3b319-thumb.png",
+          "cdnRelativePath": "thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-prehistoric-triceratops-animal-8412f3b319-thumb.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-prehistoric-triceratops-animal-8412f3b319-thumb.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 86526,
+          "sha256": "ffc4f2c35ee3ba63561ce66b0da6d6945660ce1ba924c28420ec01f251d5daa7"
+        }
+      },
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "selectionReasons": [
+        "additional first-page coverage for prehistoric-animals",
+        "passed production export with warning metadata preserved",
+        "appears in multiple public hubs"
+      ]
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-puppy-dog-halloween__e6b03b733b",
+      "displayTitle": "Mandala Geometry Patterns Plushie Puppy Dog Halloween",
+      "category": "mandala-geometry-patterns",
+      "hubs": [
+        {
+          "hubId": "hub_coloring_pages",
+          "slug": "",
+          "title": "Coloring Pages",
+          "route": "/coloring-pages",
+          "assetCount": 6557,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_animals",
+          "slug": "animals",
+          "title": "Animals Coloring Pages",
+          "route": "/coloring-pages/animals",
+          "assetCount": 1524,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_detailed_for_adults",
+          "slug": "detailed-for-adults",
+          "title": "Detailed Coloring Pages for Adults",
+          "route": "/coloring-pages/detailed-for-adults",
+          "assetCount": 1461,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_dogs",
+          "slug": "dogs",
+          "title": "Dogs Coloring Pages",
+          "route": "/coloring-pages/dogs",
+          "assetCount": 284,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_for_kids",
+          "slug": "for-kids",
+          "title": "Coloring Pages for Kids",
+          "route": "/coloring-pages/for-kids",
+          "assetCount": 1338,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_geometric",
+          "slug": "geometric",
+          "title": "Geometric Coloring Pages",
+          "route": "/coloring-pages/geometric",
+          "assetCount": 1459,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_halloween",
+          "slug": "halloween",
+          "title": "Halloween Coloring Pages",
+          "route": "/coloring-pages/halloween",
+          "assetCount": 305,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_holidays",
+          "slug": "holidays",
+          "title": "Holidays Coloring Pages",
+          "route": "/coloring-pages/holidays",
+          "assetCount": 874,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_mandalas",
+          "slug": "mandalas",
+          "title": "Mandalas Coloring Pages",
+          "route": "/coloring-pages/mandalas",
+          "assetCount": 1461,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_plushies",
+          "slug": "plushies",
+          "title": "Plushies Coloring Pages",
+          "route": "/coloring-pages/plushies",
+          "assetCount": 1704,
+          "visibleOnFirstPage": false
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/halloween",
+          "title": "Halloween Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "media": {
+        "pngPreview": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-puppy-dog-halloween-e6b03b733b.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-puppy-dog-halloween-e6b03b733b.png",
+          "r2ObjectKey": "coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-puppy-dog-halloween-e6b03b733b.png",
+          "cdnRelativePath": "png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-puppy-dog-halloween-e6b03b733b.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-puppy-dog-halloween-e6b03b733b.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 131518,
+          "sha256": "7aff7cc467e31e2cfde3148280748de2282bb2c7d061a82c9b5d54013b7ab7e9"
+        },
+        "svg": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-puppy-dog-halloween-e6b03b733b.svg",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-puppy-dog-halloween-e6b03b733b.svg",
+          "r2ObjectKey": "coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-puppy-dog-halloween-e6b03b733b.svg",
+          "cdnRelativePath": "svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-puppy-dog-halloween-e6b03b733b.svg",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-puppy-dog-halloween-e6b03b733b.svg",
+          "contentType": "image/svg+xml",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 248530,
+          "sha256": "6d03d1b83343e59b8b7e94de45f75a353f1359d055b15d5ee38492c8ffab01ce"
+        },
+        "thumbnail": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-puppy-dog-halloween-e6b03b733b-thumb.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-puppy-dog-halloween-e6b03b733b-thumb.png",
+          "r2ObjectKey": "coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-puppy-dog-halloween-e6b03b733b-thumb.png",
+          "cdnRelativePath": "thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-puppy-dog-halloween-e6b03b733b-thumb.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-puppy-dog-halloween-e6b03b733b-thumb.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 81206,
+          "sha256": "7321fab33876c73e2850af5316c7c9ce443552590057f191d8a0a34128cc0341"
+        }
+      },
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "selectionReasons": [
+        "additional first-page coverage for dogs",
+        "passed production export with warning metadata preserved",
+        "appears in multiple public hubs"
+      ]
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-sushi-cartoon-snow-crab-roll__37bf46950d",
+      "displayTitle": "Mandala Geometry Patterns Sushi Cartoon Snow Crab Roll",
+      "category": "mandala-geometry-patterns",
+      "hubs": [
+        {
+          "hubId": "hub_coloring_pages",
+          "slug": "",
+          "title": "Coloring Pages",
+          "route": "/coloring-pages",
+          "assetCount": 6557,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_animals",
+          "slug": "animals",
+          "title": "Animals Coloring Pages",
+          "route": "/coloring-pages/animals",
+          "assetCount": 1524,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_crabs",
+          "slug": "crabs",
+          "title": "Crabs Coloring Pages",
+          "route": "/coloring-pages/crabs",
+          "assetCount": 21,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_detailed_for_adults",
+          "slug": "detailed-for-adults",
+          "title": "Detailed Coloring Pages for Adults",
+          "route": "/coloring-pages/detailed-for-adults",
+          "assetCount": 1461,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_easy",
+          "slug": "easy",
+          "title": "Easy Coloring Pages",
+          "route": "/coloring-pages/easy",
+          "assetCount": 1302,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_food",
+          "slug": "food",
+          "title": "Food Coloring Pages",
+          "route": "/coloring-pages/food",
+          "assetCount": 261,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_for_kids",
+          "slug": "for-kids",
+          "title": "Coloring Pages for Kids",
+          "route": "/coloring-pages/for-kids",
+          "assetCount": 1338,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_geometric",
+          "slug": "geometric",
+          "title": "Geometric Coloring Pages",
+          "route": "/coloring-pages/geometric",
+          "assetCount": 1459,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_mandalas",
+          "slug": "mandalas",
+          "title": "Mandalas Coloring Pages",
+          "route": "/coloring-pages/mandalas",
+          "assetCount": 1461,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_sea_life",
+          "slug": "sea-life",
+          "title": "Sea Life Coloring Pages",
+          "route": "/coloring-pages/sea-life",
+          "assetCount": 236,
+          "visibleOnFirstPage": false
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/crabs",
+          "title": "Crabs Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "media": {
+        "pngPreview": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/png/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-snow-crab-roll-37bf46950d.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-snow-crab-roll-37bf46950d.png",
+          "r2ObjectKey": "coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-snow-crab-roll-37bf46950d.png",
+          "cdnRelativePath": "png/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-snow-crab-roll-37bf46950d.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-snow-crab-roll-37bf46950d.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 97703,
+          "sha256": "8db3dd8463a1784fb1544f83a3827278591aee71f1e645b0c8dc879c623028c7"
+        },
+        "svg": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/svg/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-snow-crab-roll-37bf46950d.svg",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-snow-crab-roll-37bf46950d.svg",
+          "r2ObjectKey": "coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-snow-crab-roll-37bf46950d.svg",
+          "cdnRelativePath": "svg/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-snow-crab-roll-37bf46950d.svg",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-snow-crab-roll-37bf46950d.svg",
+          "contentType": "image/svg+xml",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 161602,
+          "sha256": "0b5a6da1465a7ab1bfdc5b4a04679608ea51e454ed6989d72f8735b6b5dccfeb"
+        },
+        "thumbnail": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-snow-crab-roll-37bf46950d-thumb.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-snow-crab-roll-37bf46950d-thumb.png",
+          "r2ObjectKey": "coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-snow-crab-roll-37bf46950d-thumb.png",
+          "cdnRelativePath": "thumbs/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-snow-crab-roll-37bf46950d-thumb.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-snow-crab-roll-37bf46950d-thumb.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 68551,
+          "sha256": "7fa62e435eedf4348079fa95816937e4c9904d07872cee3e27593ed46a4034c3"
+        }
+      },
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "selectionReasons": [
+        "additional first-page coverage for sea-life",
+        "passed production export with warning metadata preserved",
+        "appears in multiple public hubs"
+      ]
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-sushi-cartoon-spider-roll__5c40f77da3",
+      "displayTitle": "Mandala Geometry Patterns Sushi Cartoon Spider Roll",
+      "category": "mandala-geometry-patterns",
+      "hubs": [
+        {
+          "hubId": "hub_coloring_pages",
+          "slug": "",
+          "title": "Coloring Pages",
+          "route": "/coloring-pages",
+          "assetCount": 6557,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_animals",
+          "slug": "animals",
+          "title": "Animals Coloring Pages",
+          "route": "/coloring-pages/animals",
+          "assetCount": 1524,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_detailed_for_adults",
+          "slug": "detailed-for-adults",
+          "title": "Detailed Coloring Pages for Adults",
+          "route": "/coloring-pages/detailed-for-adults",
+          "assetCount": 1461,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_easy",
+          "slug": "easy",
+          "title": "Easy Coloring Pages",
+          "route": "/coloring-pages/easy",
+          "assetCount": 1302,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_food",
+          "slug": "food",
+          "title": "Food Coloring Pages",
+          "route": "/coloring-pages/food",
+          "assetCount": 261,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_for_kids",
+          "slug": "for-kids",
+          "title": "Coloring Pages for Kids",
+          "route": "/coloring-pages/for-kids",
+          "assetCount": 1338,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_geometric",
+          "slug": "geometric",
+          "title": "Geometric Coloring Pages",
+          "route": "/coloring-pages/geometric",
+          "assetCount": 1459,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_insects",
+          "slug": "insects",
+          "title": "Insects Coloring Pages",
+          "route": "/coloring-pages/insects",
+          "assetCount": 180,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_mandalas",
+          "slug": "mandalas",
+          "title": "Mandalas Coloring Pages",
+          "route": "/coloring-pages/mandalas",
+          "assetCount": 1461,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_spiders",
+          "slug": "spiders",
+          "title": "Spiders Coloring Pages",
+          "route": "/coloring-pages/spiders",
+          "assetCount": 28,
+          "visibleOnFirstPage": true
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/spiders",
+          "title": "Spiders Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "media": {
+        "pngPreview": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/png/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-spider-roll-5c40f77da3.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-spider-roll-5c40f77da3.png",
+          "r2ObjectKey": "coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-spider-roll-5c40f77da3.png",
+          "cdnRelativePath": "png/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-spider-roll-5c40f77da3.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-spider-roll-5c40f77da3.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 127328,
+          "sha256": "4ef7425f6e77a8d454efabe45df1c5202c72cb52af9316687a6e97b5bfc49a18"
+        },
+        "svg": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/svg/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-spider-roll-5c40f77da3.svg",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-spider-roll-5c40f77da3.svg",
+          "r2ObjectKey": "coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-spider-roll-5c40f77da3.svg",
+          "cdnRelativePath": "svg/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-spider-roll-5c40f77da3.svg",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-spider-roll-5c40f77da3.svg",
+          "contentType": "image/svg+xml",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 210084,
+          "sha256": "fbb3e0ae9e4bdcf3482cf9f10a36a8fb4398da38786a133e09cfa2d060f2f706"
+        },
+        "thumbnail": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-spider-roll-5c40f77da3-thumb.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-spider-roll-5c40f77da3-thumb.png",
+          "r2ObjectKey": "coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-spider-roll-5c40f77da3-thumb.png",
+          "cdnRelativePath": "thumbs/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-spider-roll-5c40f77da3-thumb.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-sushi-cartoon-spider-roll-5c40f77da3-thumb.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 87374,
+          "sha256": "9b2575babff5b48e660ee7928132804caa3f2c6fc0b380c810d8be15dc0285a2"
+        }
+      },
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "selectionReasons": [
+        "additional first-page coverage for geometric",
+        "passed production export with warning metadata preserved",
+        "appears in multiple public hubs"
+      ]
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehiacle-planes-kc-46-pegasus__fcc7a92159",
+      "displayTitle": "Mandala Geometry Patterns Vehiacle Planes Kc 46 Pegasus",
+      "category": "mandala-geometry-patterns",
+      "hubs": [
+        {
+          "hubId": "hub_coloring_pages",
+          "slug": "",
+          "title": "Coloring Pages",
+          "route": "/coloring-pages",
+          "assetCount": 6557,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_detailed_for_adults",
+          "slug": "detailed-for-adults",
+          "title": "Detailed Coloring Pages for Adults",
+          "route": "/coloring-pages/detailed-for-adults",
+          "assetCount": 1461,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_fantasy",
+          "slug": "fantasy",
+          "title": "Fantasy Coloring Pages",
+          "route": "/coloring-pages/fantasy",
+          "assetCount": 1310,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_fantasy_creatures",
+          "slug": "fantasy-creatures",
+          "title": "Fantasy Creatures Coloring Pages",
+          "route": "/coloring-pages/fantasy-creatures",
+          "assetCount": 575,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_geometric",
+          "slug": "geometric",
+          "title": "Geometric Coloring Pages",
+          "route": "/coloring-pages/geometric",
+          "assetCount": 1459,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_mandalas",
+          "slug": "mandalas",
+          "title": "Mandalas Coloring Pages",
+          "route": "/coloring-pages/mandalas",
+          "assetCount": 1461,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_pegasus",
+          "slug": "pegasus",
+          "title": "Pegasus Coloring Pages",
+          "route": "/coloring-pages/pegasus",
+          "assetCount": 29,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_planes",
+          "slug": "planes",
+          "title": "Planes Coloring Pages",
+          "route": "/coloring-pages/planes",
+          "assetCount": 92,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_vehicles",
+          "slug": "vehicles",
+          "title": "Vehicles Coloring Pages",
+          "route": "/coloring-pages/vehicles",
+          "assetCount": 373,
+          "visibleOnFirstPage": false
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/pegasus",
+          "title": "Pegasus Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "media": {
+        "pngPreview": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/png/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-planes-kc-46-pegasus-fcc7a92159.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-planes-kc-46-pegasus-fcc7a92159.png",
+          "r2ObjectKey": "coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-planes-kc-46-pegasus-fcc7a92159.png",
+          "cdnRelativePath": "png/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-planes-kc-46-pegasus-fcc7a92159.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-planes-kc-46-pegasus-fcc7a92159.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 163821,
+          "sha256": "e465c4d96919762942eddc3113a796f81ea9e5f85d824526334ac037c024c31b"
+        },
+        "svg": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-planes-kc-46-pegasus-fcc7a92159.svg",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-planes-kc-46-pegasus-fcc7a92159.svg",
+          "r2ObjectKey": "coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-planes-kc-46-pegasus-fcc7a92159.svg",
+          "cdnRelativePath": "svg/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-planes-kc-46-pegasus-fcc7a92159.svg",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-planes-kc-46-pegasus-fcc7a92159.svg",
+          "contentType": "image/svg+xml",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 354763,
+          "sha256": "21748bf598151c0772feae9fb82ca24bdc4c6a434a4c5448b0fdf62a95829325"
+        },
+        "thumbnail": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-planes-kc-46-pegasus-fcc7a92159-thumb.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-planes-kc-46-pegasus-fcc7a92159-thumb.png",
+          "r2ObjectKey": "coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-planes-kc-46-pegasus-fcc7a92159-thumb.png",
+          "cdnRelativePath": "thumbs/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-planes-kc-46-pegasus-fcc7a92159-thumb.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-planes-kc-46-pegasus-fcc7a92159-thumb.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 95736,
+          "sha256": "44801db373b6509747c62cd2c4f877d75d755de1cc51ccc6e55b0b5d2d06947b"
+        }
+      },
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "selectionReasons": [
+        "additional first-page coverage for fantasy",
+        "passed production export with warning metadata preserved",
+        "appears in multiple public hubs"
+      ]
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle__5efd045f2e",
+      "displayTitle": "Mandala Geometry Patterns Vehicle Cars Classic Volkswagen Beetle",
+      "category": "mandala-geometry-patterns",
+      "hubs": [
+        {
+          "hubId": "hub_coloring_pages",
+          "slug": "",
+          "title": "Coloring Pages",
+          "route": "/coloring-pages",
+          "assetCount": 6557,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_animals",
+          "slug": "animals",
+          "title": "Animals Coloring Pages",
+          "route": "/coloring-pages/animals",
+          "assetCount": 1524,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_beetles",
+          "slug": "beetles",
+          "title": "Beetles Coloring Pages",
+          "route": "/coloring-pages/beetles",
+          "assetCount": 25,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_cars",
+          "slug": "cars",
+          "title": "Cars Coloring Pages",
+          "route": "/coloring-pages/cars",
+          "assetCount": 193,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_detailed_for_adults",
+          "slug": "detailed-for-adults",
+          "title": "Detailed Coloring Pages for Adults",
+          "route": "/coloring-pages/detailed-for-adults",
+          "assetCount": 1461,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_geometric",
+          "slug": "geometric",
+          "title": "Geometric Coloring Pages",
+          "route": "/coloring-pages/geometric",
+          "assetCount": 1459,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_insects",
+          "slug": "insects",
+          "title": "Insects Coloring Pages",
+          "route": "/coloring-pages/insects",
+          "assetCount": 180,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_mandalas",
+          "slug": "mandalas",
+          "title": "Mandalas Coloring Pages",
+          "route": "/coloring-pages/mandalas",
+          "assetCount": 1461,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_vehicles",
+          "slug": "vehicles",
+          "title": "Vehicles Coloring Pages",
+          "route": "/coloring-pages/vehicles",
+          "assetCount": 373,
+          "visibleOnFirstPage": false
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/beetles",
+          "title": "Beetles Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "media": {
+        "pngPreview": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/png/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-5efd045f2e.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-5efd045f2e.png",
+          "r2ObjectKey": "coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-5efd045f2e.png",
+          "cdnRelativePath": "png/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-5efd045f2e.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-5efd045f2e.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 165627,
+          "sha256": "208441f7afc18cddb35dd4ce78e401eb31282ee56cae3e25ae0d67d821cfe126"
+        },
+        "svg": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-5efd045f2e.svg",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-5efd045f2e.svg",
+          "r2ObjectKey": "coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-5efd045f2e.svg",
+          "cdnRelativePath": "svg/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-5efd045f2e.svg",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-5efd045f2e.svg",
+          "contentType": "image/svg+xml",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 260763,
+          "sha256": "d30931de589f926abca13e3a825ee36f8042f6888dd2a8724ccb4fc00ecc02cb"
+        },
+        "thumbnail": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-5efd045f2e-thumb.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-5efd045f2e-thumb.png",
+          "r2ObjectKey": "coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-5efd045f2e-thumb.png",
+          "cdnRelativePath": "thumbs/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-5efd045f2e-thumb.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-5efd045f2e-thumb.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 100410,
+          "sha256": "fa98fa5b3b23ca3b12aca600e23be431c6fe6b8b2eecf1980fb940a120dfbe24"
+        }
+      },
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "selectionReasons": [
+        "representative item for cars",
+        "passed production export with warning metadata preserved",
+        "appears in multiple public hubs"
+      ]
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-car__879b59fd65",
+      "displayTitle": "Mandala Geometry Patterns Vehicle Cars Classic Volkswagen Beetle Car",
+      "category": "mandala-geometry-patterns",
+      "hubs": [
+        {
+          "hubId": "hub_coloring_pages",
+          "slug": "",
+          "title": "Coloring Pages",
+          "route": "/coloring-pages",
+          "assetCount": 6557,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_animals",
+          "slug": "animals",
+          "title": "Animals Coloring Pages",
+          "route": "/coloring-pages/animals",
+          "assetCount": 1524,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_beetles",
+          "slug": "beetles",
+          "title": "Beetles Coloring Pages",
+          "route": "/coloring-pages/beetles",
+          "assetCount": 25,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_cars",
+          "slug": "cars",
+          "title": "Cars Coloring Pages",
+          "route": "/coloring-pages/cars",
+          "assetCount": 193,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_detailed_for_adults",
+          "slug": "detailed-for-adults",
+          "title": "Detailed Coloring Pages for Adults",
+          "route": "/coloring-pages/detailed-for-adults",
+          "assetCount": 1461,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_geometric",
+          "slug": "geometric",
+          "title": "Geometric Coloring Pages",
+          "route": "/coloring-pages/geometric",
+          "assetCount": 1459,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_insects",
+          "slug": "insects",
+          "title": "Insects Coloring Pages",
+          "route": "/coloring-pages/insects",
+          "assetCount": 180,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_mandalas",
+          "slug": "mandalas",
+          "title": "Mandalas Coloring Pages",
+          "route": "/coloring-pages/mandalas",
+          "assetCount": 1461,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_vehicles",
+          "slug": "vehicles",
+          "title": "Vehicles Coloring Pages",
+          "route": "/coloring-pages/vehicles",
+          "assetCount": 373,
+          "visibleOnFirstPage": false
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/beetles",
+          "title": "Beetles Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "media": {
+        "pngPreview": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/png/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-car-879b59fd65.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-car-879b59fd65.png",
+          "r2ObjectKey": "coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-car-879b59fd65.png",
+          "cdnRelativePath": "png/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-car-879b59fd65.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-car-879b59fd65.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 154925,
+          "sha256": "ab127acb1214e8d38c3baad432e878f65db771a94e695837663884f58006788b"
+        },
+        "svg": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-car-879b59fd65.svg",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-car-879b59fd65.svg",
+          "r2ObjectKey": "coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-car-879b59fd65.svg",
+          "cdnRelativePath": "svg/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-car-879b59fd65.svg",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-car-879b59fd65.svg",
+          "contentType": "image/svg+xml",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 268105,
+          "sha256": "dc3fb4f4c2c7d75f344988a33c50a18f1e657215d7b7a1bfd577b32d8318e31c"
+        },
+        "thumbnail": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-car-879b59fd65-thumb.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-car-879b59fd65-thumb.png",
+          "r2ObjectKey": "coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-car-879b59fd65-thumb.png",
+          "cdnRelativePath": "thumbs/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-car-879b59fd65-thumb.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-car-879b59fd65-thumb.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 98570,
+          "sha256": "4a7981dec93ce4ec6e9543834f67e7a91a98d5b98033046884e4131e56c9d4ff"
+        }
+      },
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ],
+      "selectionReasons": [
+        "additional first-page coverage for cars",
+        "passed production export with warning metadata preserved",
+        "appears in multiple public hubs"
+      ]
+    },
+    {
+      "assetId": "mythology__mythology-griffin__a1782cca68",
+      "displayTitle": "Mythology Griffin",
+      "category": "mythology",
+      "hubs": [
+        {
+          "hubId": "hub_coloring_pages",
+          "slug": "",
+          "title": "Coloring Pages",
+          "route": "/coloring-pages",
+          "assetCount": 6557,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_fantasy",
+          "slug": "fantasy",
+          "title": "Fantasy Coloring Pages",
+          "route": "/coloring-pages/fantasy",
+          "assetCount": 1310,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_fantasy_creatures",
+          "slug": "fantasy-creatures",
+          "title": "Fantasy Creatures Coloring Pages",
+          "route": "/coloring-pages/fantasy-creatures",
+          "assetCount": 575,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_griffins",
+          "slug": "griffins",
+          "title": "Griffins Coloring Pages",
+          "route": "/coloring-pages/griffins",
+          "assetCount": 21,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_mythology",
+          "slug": "mythology",
+          "title": "Mythology Coloring Pages",
+          "route": "/coloring-pages/mythology",
+          "assetCount": 268,
+          "visibleOnFirstPage": false
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/griffins",
+          "title": "Griffins Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "media": {
+        "pngPreview": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/png/mythology/mythology-griffin-a1782cca68.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/png/mythology/mythology-griffin-a1782cca68.png",
+          "r2ObjectKey": "coloring/test-v1/png/mythology/mythology-griffin-a1782cca68.png",
+          "cdnRelativePath": "png/mythology/mythology-griffin-a1782cca68.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/mythology/mythology-griffin-a1782cca68.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 109155,
+          "sha256": "c1cc851ab7ab7862680e29a7b4d0a7dbe445419e8cfb2de0670cf0376d1ec0f5"
+        },
+        "svg": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/svg/mythology/mythology-griffin-a1782cca68.svg",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/svg/mythology/mythology-griffin-a1782cca68.svg",
+          "r2ObjectKey": "coloring/test-v1/svg/mythology/mythology-griffin-a1782cca68.svg",
+          "cdnRelativePath": "svg/mythology/mythology-griffin-a1782cca68.svg",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/svg/mythology/mythology-griffin-a1782cca68.svg",
+          "contentType": "image/svg+xml",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 210459,
+          "sha256": "97fc09c3f976aad81e9c3c02faf559add73245091ac3ee38e2eac9d82c173463"
+        },
+        "thumbnail": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/thumbs/mythology/mythology-griffin-a1782cca68-thumb.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/thumbs/mythology/mythology-griffin-a1782cca68-thumb.png",
+          "r2ObjectKey": "coloring/test-v1/thumbs/mythology/mythology-griffin-a1782cca68-thumb.png",
+          "cdnRelativePath": "thumbs/mythology/mythology-griffin-a1782cca68-thumb.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/thumbs/mythology/mythology-griffin-a1782cca68-thumb.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 71531,
+          "sha256": "5aaf3d8feb22efb4b22cdab688c4cc301e5c3b2209b206510c42ec8e763ea520"
+        }
+      },
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "selectionReasons": [
+        "representative item for mythology",
+        "passed production export with warning metadata preserved",
+        "appears in multiple public hubs"
+      ]
+    },
+    {
+      "assetId": "mythology__mythology-mermaid__476a074c92",
+      "displayTitle": "Mythology Mermaid",
+      "category": "mythology",
+      "hubs": [
+        {
+          "hubId": "hub_coloring_pages",
+          "slug": "",
+          "title": "Coloring Pages",
+          "route": "/coloring-pages",
+          "assetCount": 6557,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_fantasy",
+          "slug": "fantasy",
+          "title": "Fantasy Coloring Pages",
+          "route": "/coloring-pages/fantasy",
+          "assetCount": 1310,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_fantasy_creatures",
+          "slug": "fantasy-creatures",
+          "title": "Fantasy Creatures Coloring Pages",
+          "route": "/coloring-pages/fantasy-creatures",
+          "assetCount": 575,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_mermaids",
+          "slug": "mermaids",
+          "title": "Mermaids Coloring Pages",
+          "route": "/coloring-pages/mermaids",
+          "assetCount": 26,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_mythology",
+          "slug": "mythology",
+          "title": "Mythology Coloring Pages",
+          "route": "/coloring-pages/mythology",
+          "assetCount": 268,
+          "visibleOnFirstPage": false
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/mermaids",
+          "title": "Mermaids Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "media": {
+        "pngPreview": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/png/mythology/mythology-mermaid-476a074c92.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/png/mythology/mythology-mermaid-476a074c92.png",
+          "r2ObjectKey": "coloring/test-v1/png/mythology/mythology-mermaid-476a074c92.png",
+          "cdnRelativePath": "png/mythology/mythology-mermaid-476a074c92.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/mythology/mythology-mermaid-476a074c92.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 103304,
+          "sha256": "9322db5ebb6705606acf5bf9dd57394ce491b3171c705703692afa65996aacdd"
+        },
+        "svg": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/svg/mythology/mythology-mermaid-476a074c92.svg",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/svg/mythology/mythology-mermaid-476a074c92.svg",
+          "r2ObjectKey": "coloring/test-v1/svg/mythology/mythology-mermaid-476a074c92.svg",
+          "cdnRelativePath": "svg/mythology/mythology-mermaid-476a074c92.svg",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/svg/mythology/mythology-mermaid-476a074c92.svg",
+          "contentType": "image/svg+xml",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 137690,
+          "sha256": "3ff86469bc51ad878ef2185d16cad67ef54bdafc62ad9a8fa4c3485f0cc1216d"
+        },
+        "thumbnail": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/thumbs/mythology/mythology-mermaid-476a074c92-thumb.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/thumbs/mythology/mythology-mermaid-476a074c92-thumb.png",
+          "r2ObjectKey": "coloring/test-v1/thumbs/mythology/mythology-mermaid-476a074c92-thumb.png",
+          "cdnRelativePath": "thumbs/mythology/mythology-mermaid-476a074c92-thumb.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/thumbs/mythology/mythology-mermaid-476a074c92-thumb.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 70049,
+          "sha256": "1ed5ff02efd143f8e115725f5bcb04a372ed940b88c1ece79d22737ca074ebb8"
+        }
+      },
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "selectionReasons": [
+        "additional first-page coverage for mythology",
+        "passed production export with warning metadata preserved",
+        "appears in multiple public hubs"
+      ]
+    },
+    {
+      "assetId": "plushie__plushie-baby-dragon__5ed6730a4b",
+      "displayTitle": "Plushie Baby Dragon",
+      "category": "plushie",
+      "hubs": [
+        {
+          "hubId": "hub_coloring_pages",
+          "slug": "",
+          "title": "Coloring Pages",
+          "route": "/coloring-pages",
+          "assetCount": 6557,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_cute",
+          "slug": "cute",
+          "title": "Cute Coloring Pages",
+          "route": "/coloring-pages/cute",
+          "assetCount": 375,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_easy",
+          "slug": "easy",
+          "title": "Easy Coloring Pages",
+          "route": "/coloring-pages/easy",
+          "assetCount": 1302,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_fantasy",
+          "slug": "fantasy",
+          "title": "Fantasy Coloring Pages",
+          "route": "/coloring-pages/fantasy",
+          "assetCount": 1310,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_fantasy_creatures",
+          "slug": "fantasy-creatures",
+          "title": "Fantasy Creatures Coloring Pages",
+          "route": "/coloring-pages/fantasy-creatures",
+          "assetCount": 575,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_for_kids",
+          "slug": "for-kids",
+          "title": "Coloring Pages for Kids",
+          "route": "/coloring-pages/for-kids",
+          "assetCount": 1338,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_plushie_dragons",
+          "slug": "plushie-dragons",
+          "title": "Plushie Dragons Coloring Pages",
+          "route": "/coloring-pages/plushie-dragons",
+          "assetCount": 75,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_plushies",
+          "slug": "plushies",
+          "title": "Plushies Coloring Pages",
+          "route": "/coloring-pages/plushies",
+          "assetCount": 1704,
+          "visibleOnFirstPage": false
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/cute",
+          "title": "Cute Coloring Pages",
+          "reason": "included in the first-page preview set"
+        },
+        {
+          "path": "/coloring-pages/plushie-dragons",
+          "title": "Plushie Dragons Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "media": {
+        "pngPreview": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/png/plushie/plushie-baby-dragon-5ed6730a4b.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/png/plushie/plushie-baby-dragon-5ed6730a4b.png",
+          "r2ObjectKey": "coloring/test-v1/png/plushie/plushie-baby-dragon-5ed6730a4b.png",
+          "cdnRelativePath": "png/plushie/plushie-baby-dragon-5ed6730a4b.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/plushie/plushie-baby-dragon-5ed6730a4b.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 118566,
+          "sha256": "679d053b7b4c671ab66ca688d7a7999e8d730bc4e2aa5a4acd5dfab82fcc529b"
+        },
+        "svg": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/svg/plushie/plushie-baby-dragon-5ed6730a4b.svg",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/svg/plushie/plushie-baby-dragon-5ed6730a4b.svg",
+          "r2ObjectKey": "coloring/test-v1/svg/plushie/plushie-baby-dragon-5ed6730a4b.svg",
+          "cdnRelativePath": "svg/plushie/plushie-baby-dragon-5ed6730a4b.svg",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/svg/plushie/plushie-baby-dragon-5ed6730a4b.svg",
+          "contentType": "image/svg+xml",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 264852,
+          "sha256": "00b6c764ed593f094e5660ee066b4e44b7073ed01e815abf49a8e516a0d98274"
+        },
+        "thumbnail": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/thumbs/plushie/plushie-baby-dragon-5ed6730a4b-thumb.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/thumbs/plushie/plushie-baby-dragon-5ed6730a4b-thumb.png",
+          "r2ObjectKey": "coloring/test-v1/thumbs/plushie/plushie-baby-dragon-5ed6730a4b-thumb.png",
+          "cdnRelativePath": "thumbs/plushie/plushie-baby-dragon-5ed6730a4b-thumb.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/thumbs/plushie/plushie-baby-dragon-5ed6730a4b-thumb.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 81592,
+          "sha256": "0e00293a46c0eb06955ff4835bf9574ad76eeca68d4e03437c8a285c5d81cd68"
+        }
+      },
+      "warningFlags": [],
+      "selectionReasons": [
+        "non-warning production-pass control item",
+        "passed production export without warning metadata",
+        "appears in multiple public hubs"
+      ]
+    },
+    {
+      "assetId": "plushie__plushie-baby-dragon-family__f216d18d8b",
+      "displayTitle": "Plushie Baby Dragon Family",
+      "category": "plushie",
+      "hubs": [
+        {
+          "hubId": "hub_coloring_pages",
+          "slug": "",
+          "title": "Coloring Pages",
+          "route": "/coloring-pages",
+          "assetCount": 6557,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_cute",
+          "slug": "cute",
+          "title": "Cute Coloring Pages",
+          "route": "/coloring-pages/cute",
+          "assetCount": 375,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_easy",
+          "slug": "easy",
+          "title": "Easy Coloring Pages",
+          "route": "/coloring-pages/easy",
+          "assetCount": 1302,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_fantasy",
+          "slug": "fantasy",
+          "title": "Fantasy Coloring Pages",
+          "route": "/coloring-pages/fantasy",
+          "assetCount": 1310,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_fantasy_creatures",
+          "slug": "fantasy-creatures",
+          "title": "Fantasy Creatures Coloring Pages",
+          "route": "/coloring-pages/fantasy-creatures",
+          "assetCount": 575,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_for_kids",
+          "slug": "for-kids",
+          "title": "Coloring Pages for Kids",
+          "route": "/coloring-pages/for-kids",
+          "assetCount": 1338,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_plushie_dragons",
+          "slug": "plushie-dragons",
+          "title": "Plushie Dragons Coloring Pages",
+          "route": "/coloring-pages/plushie-dragons",
+          "assetCount": 75,
+          "visibleOnFirstPage": true
+        },
+        {
+          "hubId": "hub_plushies",
+          "slug": "plushies",
+          "title": "Plushies Coloring Pages",
+          "route": "/coloring-pages/plushies",
+          "assetCount": 1704,
+          "visibleOnFirstPage": false
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/cute",
+          "title": "Cute Coloring Pages",
+          "reason": "included in the first-page preview set"
+        },
+        {
+          "path": "/coloring-pages/plushie-dragons",
+          "title": "Plushie Dragons Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "media": {
+        "pngPreview": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/png/plushie/plushie-baby-dragon-family-f216d18d8b.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/png/plushie/plushie-baby-dragon-family-f216d18d8b.png",
+          "r2ObjectKey": "coloring/test-v1/png/plushie/plushie-baby-dragon-family-f216d18d8b.png",
+          "cdnRelativePath": "png/plushie/plushie-baby-dragon-family-f216d18d8b.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/plushie/plushie-baby-dragon-family-f216d18d8b.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 80118,
+          "sha256": "d5f6411f3b5dbce6047c43cc8bf706d16d80417d12a3ad784f158b3a03b92646"
+        },
+        "svg": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/svg/plushie/plushie-baby-dragon-family-f216d18d8b.svg",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/svg/plushie/plushie-baby-dragon-family-f216d18d8b.svg",
+          "r2ObjectKey": "coloring/test-v1/svg/plushie/plushie-baby-dragon-family-f216d18d8b.svg",
+          "cdnRelativePath": "svg/plushie/plushie-baby-dragon-family-f216d18d8b.svg",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/svg/plushie/plushie-baby-dragon-family-f216d18d8b.svg",
+          "contentType": "image/svg+xml",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 155579,
+          "sha256": "a303eca42fc42242713e50c78c46d23edb709d0c2730b2e2b80e1f03b43d926f"
+        },
+        "thumbnail": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/thumbs/plushie/plushie-baby-dragon-family-f216d18d8b-thumb.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/thumbs/plushie/plushie-baby-dragon-family-f216d18d8b-thumb.png",
+          "r2ObjectKey": "coloring/test-v1/thumbs/plushie/plushie-baby-dragon-family-f216d18d8b-thumb.png",
+          "cdnRelativePath": "thumbs/plushie/plushie-baby-dragon-family-f216d18d8b-thumb.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/thumbs/plushie/plushie-baby-dragon-family-f216d18d8b-thumb.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 54917,
+          "sha256": "143f7729acfe2c4e5512fd73841bffc35faa24331a4af97da1d964fc066b4a09"
+        }
+      },
+      "warningFlags": [],
+      "selectionReasons": [
+        "non-warning production-pass control item",
+        "passed production export without warning metadata",
+        "appears in multiple public hubs"
+      ]
+    },
+    {
+      "assetId": "plushie__plushie-blue-whale__17d0990688",
+      "displayTitle": "Plushie Blue Whale",
+      "category": "plushie",
+      "hubs": [
+        {
+          "hubId": "hub_coloring_pages",
+          "slug": "",
+          "title": "Coloring Pages",
+          "route": "/coloring-pages",
+          "assetCount": 6557,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_animals",
+          "slug": "animals",
+          "title": "Animals Coloring Pages",
+          "route": "/coloring-pages/animals",
+          "assetCount": 1524,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_cute",
+          "slug": "cute",
+          "title": "Cute Coloring Pages",
+          "route": "/coloring-pages/cute",
+          "assetCount": 375,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_easy",
+          "slug": "easy",
+          "title": "Easy Coloring Pages",
+          "route": "/coloring-pages/easy",
+          "assetCount": 1302,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_for_kids",
+          "slug": "for-kids",
+          "title": "Coloring Pages for Kids",
+          "route": "/coloring-pages/for-kids",
+          "assetCount": 1338,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_plushies",
+          "slug": "plushies",
+          "title": "Plushies Coloring Pages",
+          "route": "/coloring-pages/plushies",
+          "assetCount": 1704,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_sea_life",
+          "slug": "sea-life",
+          "title": "Sea Life Coloring Pages",
+          "route": "/coloring-pages/sea-life",
+          "assetCount": 236,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_whales",
+          "slug": "whales",
+          "title": "Whales Coloring Pages",
+          "route": "/coloring-pages/whales",
+          "assetCount": 40,
+          "visibleOnFirstPage": true
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/whales",
+          "title": "Whales Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "media": {
+        "pngPreview": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/png/plushie/plushie-blue-whale-17d0990688.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/png/plushie/plushie-blue-whale-17d0990688.png",
+          "r2ObjectKey": "coloring/test-v1/png/plushie/plushie-blue-whale-17d0990688.png",
+          "cdnRelativePath": "png/plushie/plushie-blue-whale-17d0990688.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/plushie/plushie-blue-whale-17d0990688.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 81349,
+          "sha256": "2f73fe9d984ab1c7fc93f2bb8b5e012f5e55771a6af0671473f3ebbc9c61f055"
+        },
+        "svg": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/svg/plushie/plushie-blue-whale-17d0990688.svg",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/svg/plushie/plushie-blue-whale-17d0990688.svg",
+          "r2ObjectKey": "coloring/test-v1/svg/plushie/plushie-blue-whale-17d0990688.svg",
+          "cdnRelativePath": "svg/plushie/plushie-blue-whale-17d0990688.svg",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/svg/plushie/plushie-blue-whale-17d0990688.svg",
+          "contentType": "image/svg+xml",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 118032,
+          "sha256": "1307a9986fba714fbe0532011ded93c225a618cf7e532a64ebc2d48f96ff73c4"
+        },
+        "thumbnail": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/thumbs/plushie/plushie-blue-whale-17d0990688-thumb.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/thumbs/plushie/plushie-blue-whale-17d0990688-thumb.png",
+          "r2ObjectKey": "coloring/test-v1/thumbs/plushie/plushie-blue-whale-17d0990688-thumb.png",
+          "cdnRelativePath": "thumbs/plushie/plushie-blue-whale-17d0990688-thumb.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/thumbs/plushie/plushie-blue-whale-17d0990688-thumb.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 56157,
+          "sha256": "5e4aeeef11ea43393f5b2703738f7fe58a862dab2150a9429f53e0d3e85abc66"
+        }
+      },
+      "warningFlags": [],
+      "selectionReasons": [
+        "representative item for sea-life",
+        "passed production export without warning metadata",
+        "appears in multiple public hubs"
+      ]
+    },
+    {
+      "assetId": "plushie__plushie-prehistoric-triceratops__cfbd98566a",
+      "displayTitle": "Plushie Prehistoric Triceratops",
+      "category": "plushie",
+      "hubs": [
+        {
+          "hubId": "hub_coloring_pages",
+          "slug": "",
+          "title": "Coloring Pages",
+          "route": "/coloring-pages",
+          "assetCount": 6557,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_animals",
+          "slug": "animals",
+          "title": "Animals Coloring Pages",
+          "route": "/coloring-pages/animals",
+          "assetCount": 1524,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_cute",
+          "slug": "cute",
+          "title": "Cute Coloring Pages",
+          "route": "/coloring-pages/cute",
+          "assetCount": 375,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_dinosaurs",
+          "slug": "dinosaurs",
+          "title": "Dinosaurs Coloring Pages",
+          "route": "/coloring-pages/dinosaurs",
+          "assetCount": 190,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_easy",
+          "slug": "easy",
+          "title": "Easy Coloring Pages",
+          "route": "/coloring-pages/easy",
+          "assetCount": 1302,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_for_kids",
+          "slug": "for-kids",
+          "title": "Coloring Pages for Kids",
+          "route": "/coloring-pages/for-kids",
+          "assetCount": 1338,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_plushies",
+          "slug": "plushies",
+          "title": "Plushies Coloring Pages",
+          "route": "/coloring-pages/plushies",
+          "assetCount": 1704,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_prehistoric_animals",
+          "slug": "prehistoric-animals",
+          "title": "Prehistoric Animals Coloring Pages",
+          "route": "/coloring-pages/prehistoric-animals",
+          "assetCount": 221,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_triceratops",
+          "slug": "triceratops",
+          "title": "Triceratops Coloring Pages",
+          "route": "/coloring-pages/triceratops",
+          "assetCount": 22,
+          "visibleOnFirstPage": true
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/triceratops",
+          "title": "Triceratops Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "media": {
+        "pngPreview": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/png/plushie/plushie-prehistoric-triceratops-cfbd98566a.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/png/plushie/plushie-prehistoric-triceratops-cfbd98566a.png",
+          "r2ObjectKey": "coloring/test-v1/png/plushie/plushie-prehistoric-triceratops-cfbd98566a.png",
+          "cdnRelativePath": "png/plushie/plushie-prehistoric-triceratops-cfbd98566a.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/plushie/plushie-prehistoric-triceratops-cfbd98566a.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 123849,
+          "sha256": "870dc28c60c031c789cb179029e05971e5fae6ffdad49231a75665891f555d71"
+        },
+        "svg": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/svg/plushie/plushie-prehistoric-triceratops-cfbd98566a.svg",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/svg/plushie/plushie-prehistoric-triceratops-cfbd98566a.svg",
+          "r2ObjectKey": "coloring/test-v1/svg/plushie/plushie-prehistoric-triceratops-cfbd98566a.svg",
+          "cdnRelativePath": "svg/plushie/plushie-prehistoric-triceratops-cfbd98566a.svg",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/svg/plushie/plushie-prehistoric-triceratops-cfbd98566a.svg",
+          "contentType": "image/svg+xml",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 277247,
+          "sha256": "3558ff4be6c1a2cac4a7c84d040895b9957d0ca6c888091f43cf33d07b363ed0"
+        },
+        "thumbnail": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/thumbs/plushie/plushie-prehistoric-triceratops-cfbd98566a-thumb.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/thumbs/plushie/plushie-prehistoric-triceratops-cfbd98566a-thumb.png",
+          "r2ObjectKey": "coloring/test-v1/thumbs/plushie/plushie-prehistoric-triceratops-cfbd98566a-thumb.png",
+          "cdnRelativePath": "thumbs/plushie/plushie-prehistoric-triceratops-cfbd98566a-thumb.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/thumbs/plushie/plushie-prehistoric-triceratops-cfbd98566a-thumb.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 82821,
+          "sha256": "fef767c970598d61a1a40f3cfd57aa3068357fef0110970750b740a5adee29b7"
+        }
+      },
+      "warningFlags": [],
+      "selectionReasons": [
+        "non-warning production-pass control item",
+        "passed production export without warning metadata",
+        "appears in multiple public hubs"
+      ]
+    },
+    {
+      "assetId": "plushie__plushie-puppy-dog__4a35ced072",
+      "displayTitle": "Plushie Puppy Dog",
+      "category": "plushie",
+      "hubs": [
+        {
+          "hubId": "hub_coloring_pages",
+          "slug": "",
+          "title": "Coloring Pages",
+          "route": "/coloring-pages",
+          "assetCount": 6557,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_animals",
+          "slug": "animals",
+          "title": "Animals Coloring Pages",
+          "route": "/coloring-pages/animals",
+          "assetCount": 1524,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_cute",
+          "slug": "cute",
+          "title": "Cute Coloring Pages",
+          "route": "/coloring-pages/cute",
+          "assetCount": 375,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_dogs",
+          "slug": "dogs",
+          "title": "Dogs Coloring Pages",
+          "route": "/coloring-pages/dogs",
+          "assetCount": 284,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_easy",
+          "slug": "easy",
+          "title": "Easy Coloring Pages",
+          "route": "/coloring-pages/easy",
+          "assetCount": 1302,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_for_kids",
+          "slug": "for-kids",
+          "title": "Coloring Pages for Kids",
+          "route": "/coloring-pages/for-kids",
+          "assetCount": 1338,
+          "visibleOnFirstPage": false
+        },
+        {
+          "hubId": "hub_plushies",
+          "slug": "plushies",
+          "title": "Plushies Coloring Pages",
+          "route": "/coloring-pages/plushies",
+          "assetCount": 1704,
+          "visibleOnFirstPage": false
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/animals",
+          "title": "Animals Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/cute",
+          "title": "Cute Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/dogs",
+          "title": "Dogs Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/easy",
+          "title": "Easy Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/for-kids",
+          "title": "Coloring Pages for Kids",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/plushies",
+          "title": "Plushies Coloring Pages",
+          "reason": "assigned to this hub"
+        }
+      ],
+      "media": {
+        "pngPreview": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/png/plushie/plushie-puppy-dog-4a35ced072.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/png/plushie/plushie-puppy-dog-4a35ced072.png",
+          "r2ObjectKey": "coloring/test-v1/png/plushie/plushie-puppy-dog-4a35ced072.png",
+          "cdnRelativePath": "png/plushie/plushie-puppy-dog-4a35ced072.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/plushie/plushie-puppy-dog-4a35ced072.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 102117,
+          "sha256": "26edf6d993fc48d3709decbb71f8db91106c46befb7dff2b845b8ffb7eeaf884"
+        },
+        "svg": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/svg/plushie/plushie-puppy-dog-4a35ced072.svg",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/svg/plushie/plushie-puppy-dog-4a35ced072.svg",
+          "r2ObjectKey": "coloring/test-v1/svg/plushie/plushie-puppy-dog-4a35ced072.svg",
+          "cdnRelativePath": "svg/plushie/plushie-puppy-dog-4a35ced072.svg",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/svg/plushie/plushie-puppy-dog-4a35ced072.svg",
+          "contentType": "image/svg+xml",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 175943,
+          "sha256": "6fe116b297cf2402535859e304de905c0a5cb6e81c8635490d200dc6f868d6c8"
+        },
+        "thumbnail": {
+          "sourceLocalRelativePath": "pipeline/production/full/assets/thumbs/plushie/plushie-puppy-dog-4a35ced072-thumb.png",
+          "targetUploadBundleRelativePath": "pipeline/r2-upload-test/coloring/test-v1/thumbs/plushie/plushie-puppy-dog-4a35ced072-thumb.png",
+          "r2ObjectKey": "coloring/test-v1/thumbs/plushie/plushie-puppy-dog-4a35ced072-thumb.png",
+          "cdnRelativePath": "thumbs/plushie/plushie-puppy-dog-4a35ced072-thumb.png",
+          "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/thumbs/plushie/plushie-puppy-dog-4a35ced072-thumb.png",
+          "contentType": "image/png",
+          "recommendedCacheControl": "public, max-age=31536000, immutable",
+          "fileSize": 68171,
+          "sha256": "741a4aca97fa5f3a4c8b7214da12eddbe67045f809bf905e74c5a2ce79a839be"
+        }
+      },
+      "warningFlags": [],
+      "selectionReasons": [
+        "representative item for dogs",
+        "passed production export without warning metadata",
+        "appears in multiple public hubs"
+      ]
+    }
+  ]
+}
