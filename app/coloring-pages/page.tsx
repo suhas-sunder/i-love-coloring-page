@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 import { AssetImage } from "@/components/coloring/AssetImage";
-import { FilterChips } from "@/components/coloring/FilterChips";
 import { GalleryGrid } from "@/components/coloring/GalleryGrid";
+import { GallerySearch } from "@/components/coloring/GallerySearch";
 import { HubCard } from "@/components/coloring/HubCard";
 import { HubHero } from "@/components/coloring/HubHero";
 import { RelatedHubs } from "@/components/coloring/RelatedHubs";
@@ -10,8 +10,11 @@ import { hasConfiguredColoringAssetSource, resolveColoringAssetUrl } from "@/lib
 import {
   getAllPhase1Hubs,
   getChildHubs,
-  getFeaturedItems,
+  getGeneratedFeaturedItems,
+  getHubFilterTags,
+  getHubSearchEntries,
   getPreviewItems,
+  getPublicItemsForHub,
   getRootHub,
   getSiteUrl,
 } from "@/lib/coloring/data";
@@ -35,8 +38,11 @@ export function generateMetadata(): Metadata {
 
 export default function ColoringPagesLanding() {
   const rootHub = getRootHub();
-  const featuredItems = getFeaturedItems(rootHub).slice(0, 4);
-  const previewItems = getPreviewItems(rootHub).slice(0, 12);
+  const featuredItems = getGeneratedFeaturedItems(rootHub);
+  const previewItems = getPreviewItems(rootHub).slice(0, 48);
+  const allRootItems = getPublicItemsForHub(rootHub);
+  const searchEntries = getHubSearchEntries(rootHub);
+  const { tags, tabs } = getHubFilterTags(rootHub);
   const hubs = getAllPhase1Hubs().filter((hub) => hub.route !== "/coloring-pages");
   const featuredHubs = hubs.filter((hub) => ["plushies", "animals", "mandalas", "anime-girls", "chibi", "fantasy", "christmas", "halloween"].includes(hub.slug));
   const popularThemes = hubs.filter((hub) => ["christmas", "halloween", "birthday", "holidays", "fantasy", "mythology", "medieval-fantasy", "st-patricks-day"].includes(hub.slug));
@@ -49,11 +55,11 @@ export default function ColoringPagesLanding() {
     <main className="page-shell">
       <HubHero
         hub={rootHub}
-        intro="Browse printable coloring pages by subject, season, style, and difficulty. Choose a collection, then download or print the pages you like."
+        intro="Browse printable coloring pages by subject, season, style, and difficulty. Search the gallery, pick a favorite, then download or print."
       >
         {showHeroPreviews ? (
-          <div className="hero-preview-grid" aria-label="Featured coloring page previews">
-            {featuredItems.map((item, index) => (
+          <div className="hero-preview-grid hero-preview-grid-compact" aria-label="Featured coloring page previews">
+            {featuredItems.slice(0, 6).map((item, index) => (
               <div className="preview-tile" key={item.assetId}>
                 <AssetImage
                   item={item}
@@ -66,7 +72,36 @@ export default function ColoringPagesLanding() {
         ) : null}
       </HubHero>
 
-      <section className="content-section">
+      <section className="content-section featured-strip" aria-labelledby="featured-pages">
+        <div className="section-heading-row">
+          <div>
+            <h2 className="section-title" id="featured-pages">Featured pages</h2>
+            <p>A quick shelf of printable pages so the library starts with artwork, not a directory.</p>
+          </div>
+        </div>
+        <GalleryGrid items={featuredItems} priorityCount={6} />
+      </section>
+
+      <section className="content-section gallery-section" id="gallery">
+        <div className="section-heading-row">
+          <div>
+            <h2 className="section-title">Find a coloring page</h2>
+            <p>Search across the main library or use a filter for style, season, subject, or difficulty.</p>
+          </div>
+        </div>
+        <GallerySearch
+          hubTitle={rootHub.title}
+          totalItems={rootHub.assetCount}
+          pageItems={previewItems}
+          allItems={allRootItems}
+          featuredItems={featuredItems}
+          searchEntries={searchEntries}
+          filterTags={tags}
+          tabs={tabs}
+        />
+      </section>
+
+      <section className="content-section collection-section">
         <div className="section-heading-row">
           <div>
             <h2 className="section-title">Popular coloring page collections</h2>
@@ -120,17 +155,6 @@ export default function ColoringPagesLanding() {
             <HubCard key={hub.hubId} hub={hub} />
           ))}
         </div>
-      </section>
-
-      <section className="content-section" id="gallery">
-        <div className="section-heading-row">
-          <div>
-            <h2 className="section-title">Preview the gallery</h2>
-            <p>A small sample from {rootHub.assetCount.toLocaleString()} printable pages. Open a collection when you are ready to browse more.</p>
-          </div>
-        </div>
-        <FilterChips sections={rootHub.sectionGroupings} />
-        <GalleryGrid items={previewItems} />
       </section>
 
       <RelatedHubs title="More ways to browse" hubs={childHubs} />

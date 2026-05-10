@@ -26,6 +26,9 @@ export const metadata: Metadata = {
     template: "%s | I Love Coloring Page",
   },
   description: "Printable coloring pages organized by useful subjects, styles, holidays, and themes.",
+  icons: {
+    icon: "/icon.svg",
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
@@ -40,7 +43,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
                 <span>I Love Coloring Page</span>
               </Link>
               <nav className="site-nav" aria-label="Main navigation">
-                <Link className="button button-subtle" href="/coloring-pages">
+                <Link className="button button-subtle" href="/coloring-pages" prefetch={false}>
                   <span className="nav-label-full">Coloring Pages</span>
                   <span className="nav-label-short">Pages</span>
                 </Link>
@@ -51,7 +54,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
           <footer className="site-footer">
             <div className="site-footer-inner">
               <span className="site-footer-note">Printable SVG and PNG coloring pages, organized for easy browsing.</span>
-              <Link href="/coloring-pages">Coloring Pages</Link>
+              <Link href="/coloring-pages" prefetch={false}>Coloring Pages</Link>
             </div>
           </footer>
         </div>

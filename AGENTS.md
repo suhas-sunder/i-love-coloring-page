@@ -119,6 +119,16 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - The homepage, gallery landing page, and representative hub pages must stay visually aligned.
 - Do not add SEO copy that weakens visual quality or sounds generic.
 - Do not create walls of cards, tags, or links without hierarchy.
+- Hub pages must show gallery access near the top.
+- SEO and supporting content should not block gallery access.
+- Large galleries need search and filter UX, not only pagination.
+- Featured and pinned images should be generated deterministically and kept near the top of hub pages.
+- Real-media preview is required before major visual judgments.
+- Placeholder-only screenshots are not enough to approve the design.
+- Add color through approved tokens only.
+- Do not make the design corporate, childish, loud, or cluttered.
+- Do not add backend or API routes for search or filters.
+- Search and filters must remain static-export compatible.
 
 ## Production Asset Hosting
 

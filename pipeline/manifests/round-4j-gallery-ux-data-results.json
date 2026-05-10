@@ -1,0 +1,20 @@
+{
+  "generatedAt": "2026-05-10",
+  "runId": "round-4j-gallery-discovery-ux",
+  "summary": {
+    "hubCount": 65,
+    "searchIndexEntryCount": 6557,
+    "featuredHubCount": 65,
+    "filterHubCount": 65,
+    "routeCount": 65,
+    "noPerImageRoutes": true,
+    "successfulAssetsOnly": true,
+    "quarantinedAssetsExcluded": true,
+    "maxInteractiveResultsRendered": 48
+  },
+  "generatedFiles": [
+    "src/generated/coloring/hub-featured-items.json",
+    "src/generated/coloring/hub-filter-tags.json",
+    "src/generated/coloring/search-index.json"
+  ]
+}

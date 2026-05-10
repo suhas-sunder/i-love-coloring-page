@@ -1,13 +1,14 @@
 import Link from "next/link";
 
 import { AssetImage } from "@/components/coloring/AssetImage";
+import { GalleryGrid } from "@/components/coloring/GalleryGrid";
 import { HubCard } from "@/components/coloring/HubCard";
 import { hasConfiguredColoringAssetSource, resolveColoringAssetUrl } from "@/lib/coloring/assets";
-import { getAllPhase1Hubs, getFeaturedItems, getRootHub } from "@/lib/coloring/data";
+import { getAllPhase1Hubs, getGeneratedFeaturedItems, getRootHub } from "@/lib/coloring/data";
 
 export default function HomePage() {
   const rootHub = getRootHub();
-  const featuredItems = getFeaturedItems(rootHub).slice(0, 4);
+  const featuredItems = getGeneratedFeaturedItems(rootHub);
   const featuredHubs = getAllPhase1Hubs()
     .filter((hub) => ["animals", "plushies", "mandalas", "for-kids", "fantasy", "christmas"].includes(hub.slug))
     .slice(0, 6);
@@ -18,22 +19,25 @@ export default function HomePage() {
       <section className={showHeroPreviews ? "hub-hero" : "hub-hero hub-hero-solo"}>
         <div className="hero-copy">
           <h1 className="page-title">I Love Coloring Page</h1>
-          <p>A calm library of printable coloring pages for classrooms, weekend projects, and quiet creative time.</p>
+          <p>Printable coloring pages with real previews, quick browsing, and PNG or SVG downloads when you find the right page.</p>
           <ul className="hero-facts" aria-label="Gallery summary">
             <li><strong>{rootHub.assetCount.toLocaleString()}</strong> printable pages</li>
             <li>PNG and SVG files</li>
-            <li>Organized by subject and season</li>
+            <li>Searchable subject collections</li>
           </ul>
           <div className="hero-actions">
-            <Link className="button button-primary" href="/coloring-pages">
-              See Coloring Pages
+            <Link className="button button-primary" href="/coloring-pages#gallery" prefetch={false}>
+              Browse gallery
+            </Link>
+            <Link className="button button-ghost" href="/coloring-pages" prefetch={false}>
+              View collections
             </Link>
           </div>
         </div>
         {showHeroPreviews ? (
           <div className="hero-panel">
-            <div className="hero-preview-grid" aria-label="Featured coloring page previews">
-              {featuredItems.map((item, index) => (
+            <div className="hero-preview-grid hero-preview-grid-compact" aria-label="Featured coloring page previews">
+              {featuredItems.slice(0, 6).map((item, index) => (
                 <div className="preview-tile" key={item.assetId}>
                   <AssetImage
                     item={item}
@@ -47,13 +51,23 @@ export default function HomePage() {
         ) : null}
       </section>
 
-      <section className="content-section">
+      <section className="content-section featured-strip">
+        <div className="section-heading-row">
+          <div>
+            <h2 className="section-title">Fresh pages to print</h2>
+            <p>Start with a few strong previews, then jump into the full library when you want more.</p>
+          </div>
+        </div>
+        <GalleryGrid items={featuredItems.slice(0, 8)} priorityCount={6} />
+      </section>
+
+      <section className="content-section collection-section">
         <div className="section-heading-row">
           <div>
             <h2 className="section-title">Good places to start</h2>
-            <p>Choose a familiar collection first, then print a page or download the file you want.</p>
+            <p>Choose a familiar collection, or open the main gallery for search and filters.</p>
           </div>
-          <Link className="button button-ghost" href="/coloring-pages">
+          <Link className="button button-ghost" href="/coloring-pages" prefetch={false}>
             View all collections
           </Link>
         </div>

@@ -17,7 +17,7 @@ export function Pagination({ basePath, currentPage, totalPages, hasPreviousPage,
   return (
     <nav className="pagination" aria-label="Gallery pagination">
       {hasPreviousPage ? (
-        <Link className="button button-subtle" href={pageHref(basePath, previousPage)}>
+        <Link className="button button-subtle" href={pageHref(basePath, previousPage)} prefetch={false}>
           Previous
         </Link>
       ) : (
@@ -29,7 +29,7 @@ export function Pagination({ basePath, currentPage, totalPages, hasPreviousPage,
         Page {currentPage.toLocaleString()} of {totalPages.toLocaleString()}
       </span>
       {hasNextPage ? (
-        <Link className="button button-subtle" href={pageHref(basePath, nextPage)}>
+        <Link className="button button-subtle" href={pageHref(basePath, nextPage)} prefetch={false}>
           Next
         </Link>
       ) : (

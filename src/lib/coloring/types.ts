@@ -26,6 +26,32 @@ export type ColoringItem = {
 
 export type PublicColoringItem = Pick<ColoringItem, "assetId" | "title" | "altText" | "assetSubpaths">;
 
+export type GallerySearchEntry = {
+  assetId: string;
+  title: string;
+  categorySlug: string;
+  filenameSlug: string;
+  hubIds: string[];
+  tags: string[];
+  searchText: string;
+};
+
+export type GalleryFilterTag = {
+  id: string;
+  label: string;
+  group: string;
+  assetCount: number;
+};
+
+export type HubGalleryUx = {
+  hubId: string;
+  slug: string;
+  title: string;
+  assetCount: number;
+  tags: GalleryFilterTag[];
+  tabs: Array<Pick<GalleryFilterTag, "id" | "label" | "assetCount">>;
+};
+
 export type HubSectionItem = {
   label: string;
   term: string;

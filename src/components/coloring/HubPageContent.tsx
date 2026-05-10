@@ -1,12 +1,20 @@
 import { AssetImage } from "@/components/coloring/AssetImage";
-import { FilterChips } from "@/components/coloring/FilterChips";
 import { GalleryGrid } from "@/components/coloring/GalleryGrid";
+import { GallerySearch } from "@/components/coloring/GallerySearch";
 import { HubCard } from "@/components/coloring/HubCard";
 import { HubHero } from "@/components/coloring/HubHero";
 import { Pagination } from "@/components/coloring/Pagination";
 import { RelatedHubs } from "@/components/coloring/RelatedHubs";
 import { hasConfiguredColoringAssetSource, resolveColoringAssetUrl } from "@/lib/coloring/assets";
-import { getChildHubs, getFeaturedItems, getPagedHubItems, getRelatedHubs } from "@/lib/coloring/data";
+import {
+  getChildHubs,
+  getGeneratedFeaturedItems,
+  getHubFilterTags,
+  getHubSearchEntries,
+  getPagedHubItems,
+  getPublicItemsForHub,
+  getRelatedHubs,
+} from "@/lib/coloring/data";
 import type { ColoringHub } from "@/lib/coloring/types";
 
 type HubPageContentProps = {
@@ -16,7 +24,10 @@ type HubPageContentProps = {
 
 export function HubPageContent({ hub, page }: HubPageContentProps) {
   const pagedGallery = getPagedHubItems(hub, page);
-  const featuredItems = getFeaturedItems(hub);
+  const featuredItems = getGeneratedFeaturedItems(hub);
+  const allHubItems = getPublicItemsForHub(hub);
+  const searchEntries = getHubSearchEntries(hub);
+  const { tags, tabs } = getHubFilterTags(hub);
   const relatedHubs = getRelatedHubs(hub, 8);
   const childHubs = getChildHubs(hub, 8);
   const browsingSections = getSectionListItems(hub.sectionGroupings, 10);
@@ -24,10 +35,10 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
 
   return (
     <main className="page-shell">
-      <HubHero hub={hub} intro={friendlyHubIntro(hub.title)}>
+      <HubHero hub={hub} intro={friendlyHubIntro(hub.title)} primaryCtaLabel="Browse gallery">
         {showHeroPreviews ? (
-          <div className="hero-preview-grid" aria-label={`${hub.title} featured previews`}>
-            {featuredItems.slice(0, 4).map((item) => (
+          <div className="hero-preview-grid hero-preview-grid-compact" aria-label={`${hub.title} featured previews`}>
+            {featuredItems.slice(0, 6).map((item) => (
               <div className="preview-tile" key={item.assetId}>
                 <AssetImage
                   item={item}
@@ -40,53 +51,37 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
         ) : null}
       </HubHero>
 
-      {childHubs.length > 0 ? (
-        <section className="content-section">
+      {featuredItems.length > 0 ? (
+        <section className="content-section featured-strip" aria-labelledby="featured-pages">
           <div className="section-heading-row">
             <div>
-              <h2 className="section-title">Browse within this collection</h2>
-              <p>Use these focused collections when you already know the kind of page you want.</p>
+              <h2 className="section-title" id="featured-pages">Featured pages</h2>
+              <p>Representative picks from this collection, selected from successful production assets.</p>
             </div>
           </div>
-          <div className="hub-link-grid hub-link-grid-compact">
-            {childHubs.map((child) => (
-              <HubCard key={child.hubId} hub={child} compact />
-            ))}
-          </div>
+          <GalleryGrid items={featuredItems} priorityCount={6} />
         </section>
       ) : null}
 
-      {browsingSections.length > 0 ? (
-        <section className="content-section section-band">
-          <div className="section-inner split-section">
-            <div>
-              <h2 className="section-title">Ways to browse this collection</h2>
-              <p className="section-copy">These common themes can help you find a page faster.</p>
-            </div>
-            <ul className="section-list">
-              {browsingSections.map((item) => (
-                <li key={item.term}>
-                  <span>{item.label}</span>
-                  <strong>{item.assetCount.toLocaleString()}</strong>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
-      ) : null}
-
-      <section className="content-section" id="gallery">
+      <section className="content-section gallery-section" id="gallery">
         <div className="section-heading-row">
           <div>
             <h2 className="section-title">Printable gallery</h2>
             <p>
-              Showing {pagedGallery.items.length.toLocaleString()} of {pagedGallery.totalItems.toLocaleString()} pages.
-              Use the page controls to keep browsing quick.
+              Search this collection, use a useful filter, or keep browsing page {pagedGallery.currentPage.toLocaleString()}.
             </p>
           </div>
         </div>
-        <FilterChips sections={hub.sectionGroupings} />
-        <GalleryGrid items={pagedGallery.items} />
+        <GallerySearch
+          hubTitle={hub.title}
+          totalItems={pagedGallery.totalItems}
+          pageItems={pagedGallery.items}
+          allItems={allHubItems}
+          featuredItems={featuredItems}
+          searchEntries={searchEntries}
+          filterTags={tags}
+          tabs={tabs}
+        />
         <Pagination
           basePath={hub.route}
           currentPage={pagedGallery.currentPage}
@@ -96,7 +91,68 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
         />
       </section>
 
-      <RelatedHubs title="More coloring pages to try" hubs={relatedHubs} />
+      {childHubs.length > 0 || browsingSections.length > 0 ? (
+        <section className="content-section supporting-browse" aria-labelledby="supporting-browse-title">
+          <div className="section-heading-row">
+            <div>
+              <h2 className="section-title" id="supporting-browse-title">More ways to browse</h2>
+              <p>Use these links after the gallery when you want a narrower collection or a familiar theme.</p>
+            </div>
+          </div>
+          <div className="supporting-browse-grid">
+            {childHubs.length > 0 ? (
+              <div>
+                <h3 className="supporting-title">Related collections</h3>
+                <div className="hub-link-grid hub-link-grid-compact">
+                  {childHubs.map((child) => (
+                    <HubCard key={child.hubId} hub={child} compact />
+                  ))}
+                </div>
+              </div>
+            ) : null}
+            {browsingSections.length > 0 ? (
+              <div className="section-list-panel">
+                <h3 className="supporting-title">Common themes</h3>
+                <ul className="section-list">
+                  {browsingSections.map((item) => (
+                    <li key={item.term}>
+                      <span>{item.label}</span>
+                      <strong>{item.assetCount.toLocaleString()}</strong>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
+          </div>
+        </section>
+      ) : null}
+
+      <section className="content-section section-band">
+        <div className="section-inner split-section">
+          <div>
+            <h2 className="section-title">Print what fits the moment</h2>
+            <p className="section-copy">
+              Keep browsing by page when you want to explore, or use search and filters when you already have a subject, style, or season in mind.
+            </p>
+          </div>
+          <ul className="section-list">
+            <li>
+              <span>Downloads</span>
+              <strong>PNG and SVG</strong>
+            </li>
+            <li>
+              <span>Printing</span>
+              <strong>Available from each image card</strong>
+            </li>
+            <li>
+              <span>Routes</span>
+              <strong>No per-image pages</strong>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <RelatedHubs title="Related collections" hubs={relatedHubs} />
     </main>
   );
 }

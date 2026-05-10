@@ -1,0 +1,30 @@
+{
+  "generatedAt": "2026-05-10",
+  "runId": "round-4j-gallery-discovery-ux",
+  "purpose": "Verify that the full local R2 bundle can serve real gallery media before visual redesign work.",
+  "localMediaBaseUrl": "http://127.0.0.1:4175/coloring-pages",
+  "localBundleRoot": "pipeline/r2-upload/coloring-pages",
+  "knownPngUrl": "http://127.0.0.1:4175/coloring-pages/png/animals/animals-alligator-4feec8505a.png",
+  "knownPngContentType": "image/png",
+  "knownPngStatus": 200,
+  "summary": {
+    "localBundleExists": true,
+    "subdirectories": {
+      "svg": true,
+      "png": true,
+      "thumbs": true
+    },
+    "totalMediaFiles": 19671,
+    "expectedMediaFiles": 19671,
+    "knownPngServed": true,
+    "knownPngNonZeroBytes": true,
+    "staticBuildUsesLocalAssetBase": true,
+    "placeholdersExpectedWithoutAssetBase": true,
+    "placeholdersStillExistAsObjectFallbackMarkup": true,
+    "appApiRouteRequired": false
+  },
+  "diagnosis": {
+    "placeholderCause": "The asset resolver returns null when NEXT_PUBLIC_COLORING_ASSET_BASE_URL is unset, so AssetImage renders the fallback placeholder. With the local media base set at build time, the generated object data points at real media.",
+    "broadUiWorkAllowed": true
+  }
+}

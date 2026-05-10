@@ -81,7 +81,7 @@
 .section-band {
   margin-inline: calc(50% - 50vw);
   padding-block: var(--space-64);
-  background: var(--color-surface);
+  background: var(--color-soft-sky-surface);
 }
 
 .section-band .section-inner {
@@ -114,6 +114,18 @@
   align-items: start;
 }
 
+.supporting-browse {
+  display: grid;
+  gap: var(--space-40);
+}
+
+.supporting-browse-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--space-48);
+  align-items: start;
+}
+
 .utility-note {
   max-width: var(--measure);
   color: var(--color-text-muted);
@@ -138,6 +150,10 @@
   .split-section {
     grid-template-columns: 1fr;
     gap: var(--space-40);
+  }
+
+  .supporting-browse-grid {
+    grid-template-columns: 1fr;
   }
 }
 
