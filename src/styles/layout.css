@@ -67,7 +67,7 @@
 }
 
 .page-shell {
-  padding-block: var(--space-64) var(--space-96);
+  padding-block: var(--space-32) var(--space-96);
 }
 
 .content-section {
@@ -120,7 +120,7 @@
 
 @media (max-width: 900px) {
   .page-shell {
-    padding-block: var(--space-48) var(--space-80);
+    padding-block: var(--space-24) var(--space-80);
   }
 
   .content-section {
@@ -153,7 +153,7 @@
   }
 
   .page-shell {
-    padding-block: var(--space-40) var(--space-64);
+    padding-block: var(--space-20) var(--space-64);
   }
 
   .content-section {
