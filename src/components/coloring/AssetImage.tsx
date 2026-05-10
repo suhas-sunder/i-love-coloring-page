@@ -20,7 +20,7 @@ export function AssetImage({ item, priority = false }: AssetImageProps) {
   if (!imageUrl || failed) {
     return (
       <div className="asset-placeholder" aria-label={`${item.title} preview unavailable`}>
-        <span>{item.title}</span>
+        <span>Preview unavailable</span>
       </div>
     );
   }

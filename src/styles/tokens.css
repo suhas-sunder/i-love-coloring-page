@@ -1,0 +1,80 @@
+:root {
+  --color-canvas: #FBFAF7;
+  --color-surface: #F2EEE8;
+  --color-surface-strong: #E8E1D6;
+  --color-ink: #1B1F3B;
+  --color-text: #39415B;
+  --color-text-muted: #626779;
+  --color-primary: #4F46E5;
+  --color-secondary: #B94728;
+  --color-accent: #0B7A61;
+  --color-success: #18794E;
+  --color-warning: #8A5500;
+  --color-danger: #B42318;
+  --color-info: #155EEF;
+  --color-focus: #1B1F3B;
+  --color-button-text-on-color: #FFFFFF;
+
+  --font-ui: system-ui, sans-serif;
+  --font-display: system-ui, sans-serif;
+
+  --text-xs-size: 0.75rem;
+  --text-xs-line: 1.4;
+  --text-xs-weight: 500;
+  --text-sm-size: 0.875rem;
+  --text-sm-line: 1.5;
+  --text-sm-weight: 500;
+  --text-md-size: 1rem;
+  --text-md-line: 1.6;
+  --text-md-weight: 400;
+  --text-lg-size: 1.125rem;
+  --text-lg-line: 1.6;
+  --text-lg-weight: 400;
+  --text-xl-size: 1.25rem;
+  --text-xl-line: 1.5;
+  --text-xl-weight: 600;
+  --text-2xl-size: 1.5rem;
+  --text-2xl-line: 1.35;
+  --text-2xl-weight: 700;
+  --text-3xl-size: clamp(1.875rem, 1.55rem + 1vw, 2.375rem);
+  --text-3xl-line: 1.2;
+  --text-3xl-weight: 700;
+  --text-4xl-size: clamp(2.25rem, 1.7rem + 2vw, 3.25rem);
+  --text-4xl-line: 1.08;
+  --text-4xl-weight: 750;
+  --text-5xl-size: clamp(2.75rem, 2.05rem + 2.6vw, 4.25rem);
+  --text-5xl-line: 1.02;
+  --text-5xl-weight: 800;
+
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+  --space-64: 64px;
+  --space-80: 80px;
+  --space-96: 96px;
+  --space-128: 128px;
+
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+
+  --layout-max: 1240px;
+  --measure: 68ch;
+  --page-gutter: clamp(var(--space-20), 4vw, var(--space-32));
+  --section-pad-mobile: var(--space-40);
+  --section-pad-desktop: var(--space-80);
+
+  --shadow-button: 0 1px 2px rgba(27, 31, 59, 0.16);
+  --focus-ring-width: 3px;
+  --focus-ring-offset: 4px;
+  --motion-fast: 160ms;
+  --motion-base: 220ms;
+}

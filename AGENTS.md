@@ -90,6 +90,30 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Large hub pages must use pagination or limited initial rendering.
 - Public gallery UI should be structured and useful, not a raw asset dump.
 
+## Public Gallery Visual System
+
+- The Round 4C design system is the source of truth for public gallery UI.
+- The public gallery uses the light "Indigo Paper" shell.
+- Future online coloring workspace routes may use a separate dark shell, but that workspace shell is not part of the public gallery shell.
+- Do not introduce ad hoc colors, fonts, spacing, radius, shadows, outlines, or button styles.
+- Approved public gallery colors, typography, spacing, radii, and component rules live in `pipeline/manifests/round-4c-design-system.json`, `pipeline/manifests/round-4c-typography.json`, and `pipeline/manifests/round-4c-component-rules.json`.
+- CSS implementation should stay centralized in `src/styles/tokens.css`, `src/styles/base.css`, `src/styles/layout.css`, and `src/styles/components.css`.
+- No gradients.
+- No decorative outlines.
+- No resting-state borders on layout surfaces.
+- No shadows except the approved button micro-shadow.
+- Visible `:focus-visible` treatment is mandatory for interactive controls.
+- Do not hide keyboard focus.
+- No nested cards.
+- Do not add unnecessary background colors.
+- Use semantic HTML.
+- Use native buttons and links instead of div-based fake controls.
+- Gallery media must resolve through the centralized asset resolver.
+- No per-image indexable pages.
+- Do not copy production assets into `public/`.
+- Large hub pages must use limited rendering or pagination.
+- Any new public page must declare page type, indexability status, metadata strategy, and component variants used.
+
 ## Conversion Workflow
 
 - Do not choose a winning preset until a later bakeoff round compares outputs.

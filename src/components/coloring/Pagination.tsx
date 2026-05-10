@@ -16,23 +16,27 @@ export function Pagination({ basePath, currentPage, totalPages, hasPreviousPage,
 
   return (
     <nav className="pagination" aria-label="Gallery pagination">
-      <Link
-        className={hasPreviousPage ? "button button-secondary" : "button button-secondary button-disabled"}
-        href={hasPreviousPage ? pageHref(basePath, previousPage) : basePath}
-        aria-disabled={!hasPreviousPage}
-      >
-        Previous
-      </Link>
-      <span>
+      {hasPreviousPage ? (
+        <Link className="button button-subtle" href={pageHref(basePath, previousPage)}>
+          Previous
+        </Link>
+      ) : (
+        <span className="button button-disabled" aria-disabled="true">
+          Previous
+        </span>
+      )}
+      <span className="pagination-status">
         Page {currentPage.toLocaleString()} of {totalPages.toLocaleString()}
       </span>
-      <Link
-        className={hasNextPage ? "button button-secondary" : "button button-secondary button-disabled"}
-        href={hasNextPage ? pageHref(basePath, nextPage) : pageHref(basePath, totalPages)}
-        aria-disabled={!hasNextPage}
-      >
-        Next
-      </Link>
+      {hasNextPage ? (
+        <Link className="button button-subtle" href={pageHref(basePath, nextPage)}>
+          Next
+        </Link>
+      ) : (
+        <span className="button button-disabled" aria-disabled="true">
+          Next
+        </span>
+      )}
     </nav>
   );
 }

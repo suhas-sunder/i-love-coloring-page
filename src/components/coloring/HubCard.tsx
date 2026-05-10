@@ -9,9 +9,9 @@ type HubCardProps = {
 
 export function HubCard({ hub, compact = false }: HubCardProps) {
   return (
-    <Link className={compact ? "hub-card hub-card-compact" : "hub-card"} href={hub.route}>
-      <span>{hub.title.replace(/ Coloring Pages$/, "")}</span>
-      <strong>{hub.assetCount.toLocaleString()} pages</strong>
+    <Link className={compact ? "hub-link hub-link-compact" : "hub-link"} href={hub.route}>
+      <span className="hub-link-title">{hub.title.replace(/ Coloring Pages$/, "")}</span>
+      <strong className="hub-link-count">{hub.assetCount.toLocaleString()} pages</strong>
     </Link>
   );
 }

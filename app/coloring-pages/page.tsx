@@ -6,14 +6,13 @@ import { GalleryGrid } from "@/components/coloring/GalleryGrid";
 import { HubCard } from "@/components/coloring/HubCard";
 import { HubHero } from "@/components/coloring/HubHero";
 import { RelatedHubs } from "@/components/coloring/RelatedHubs";
+import { hasConfiguredColoringAssetSource } from "@/lib/coloring/assets";
 import {
   getAllPhase1Hubs,
-  getBacklogHubCount,
   getChildHubs,
   getFeaturedItems,
   getPreviewItems,
   getRootHub,
-  getSectionOnlyTopicCount,
   getSiteUrl,
 } from "@/lib/coloring/data";
 
@@ -39,34 +38,39 @@ export default function ColoringPagesLanding() {
   const featuredItems = getFeaturedItems(rootHub).slice(0, 4);
   const previewItems = getPreviewItems(rootHub);
   const hubs = getAllPhase1Hubs().filter((hub) => hub.route !== "/coloring-pages");
-  const popularThemes = hubs.filter((hub) => ["christmas", "halloween", "birthday", "holidays", "fantasy", "mythology"].includes(hub.slug));
-  const subjectHubs = hubs.filter((hub) => ["animals", "dinosaurs", "dogs", "cats", "flowers", "birds", "sea-life", "vehicles"].includes(hub.slug));
+  const featuredHubs = hubs.filter((hub) => ["plushies", "animals", "mandalas", "anime-girls", "chibi", "fantasy", "christmas", "halloween"].includes(hub.slug));
+  const popularThemes = hubs.filter((hub) => ["christmas", "halloween", "birthday", "holidays", "fantasy", "mythology", "medieval-fantasy", "st-patricks-day"].includes(hub.slug));
+  const subjectHubs = hubs.filter((hub) => ["animals", "plushies", "dinosaurs", "prehistoric-animals", "plants", "indoor-plants", "sea-life", "vehicles"].includes(hub.slug));
   const styleHubs = hubs.filter((hub) => ["mandalas", "geometric", "cute", "chibi", "kawaii", "detailed-for-adults", "for-kids", "easy"].includes(hub.slug));
   const childHubs = getChildHubs(rootHub, 12);
+  const showHeroPreviews = hasConfiguredColoringAssetSource() && featuredItems.length > 0;
 
   return (
     <main className="page-shell">
-      <HubHero hub={rootHub}>
-        <div className="hero-preview-grid" aria-label="Featured coloring page previews">
-          {featuredItems.map((item, index) => (
-            <div className="image-card" key={item.assetId}>
-              <div className="image-card-media">
+      <HubHero
+        hub={rootHub}
+        intro="Browse printable coloring pages by subject, season, style, and difficulty. Choose a collection, then download or print the pages you like."
+      >
+        {showHeroPreviews ? (
+          <div className="hero-preview-grid" aria-label="Featured coloring page previews">
+            {featuredItems.map((item, index) => (
+              <div className="preview-tile" key={item.assetId}>
                 <AssetImage item={item} priority={index < 2} />
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        ) : null}
       </HubHero>
 
       <section className="content-section">
         <div className="section-heading-row">
           <div>
-            <h2 className="sky-heading">Start with the strongest hubs</h2>
-            <p>These pages are built from the approved Round 4A taxonomy, not the original source folders.</p>
+            <h2 className="section-title">Popular coloring page collections</h2>
+            <p>Start with the pages people usually look for first: animals, plushies, mandalas, fantasy themes, and holidays.</p>
           </div>
         </div>
-        <div className="hub-card-grid">
-          {hubs.slice(0, 12).map((hub) => (
+        <div className="hub-link-grid">
+          {featuredHubs.map((hub) => (
             <HubCard key={hub.hubId} hub={hub} />
           ))}
         </div>
@@ -74,38 +78,40 @@ export default function ColoringPagesLanding() {
 
       <section className="content-section split-section">
         <div>
-          <h2 className="sky-heading">Browse by theme</h2>
-          <p className="section-copy">Seasonal and story-led hubs make it easier to find pages for holidays, classrooms, and weekend printing.</p>
+          <h2 className="section-title">Seasonal favorites</h2>
+          <p className="section-copy">Find holiday pages and fantasy themes for classroom activities, parties, or weekend printing.</p>
         </div>
-        <div className="hub-card-grid compact-grid">
+        <div className="hub-link-grid hub-link-grid-compact">
           {popularThemes.map((hub) => (
             <HubCard key={hub.hubId} hub={hub} compact />
           ))}
         </div>
       </section>
 
-      <section className="content-section">
-        <div className="section-heading-row">
-          <div>
-            <h2 className="sky-heading">Browse by subject</h2>
-            <p>Use subject hubs when you know what you want to print first.</p>
+      <section className="content-section section-band">
+        <div className="section-inner">
+          <div className="section-heading-row">
+            <div>
+              <h2 className="section-title">Browse by subject</h2>
+              <p>Go straight to familiar subjects like animals, plants, vehicles, dinosaurs, sea life, and plushies.</p>
+            </div>
           </div>
-        </div>
-        <div className="hub-card-grid">
-          {subjectHubs.map((hub) => (
-            <HubCard key={hub.hubId} hub={hub} />
-          ))}
+          <div className="hub-link-grid">
+            {subjectHubs.map((hub) => (
+              <HubCard key={hub.hubId} hub={hub} />
+            ))}
+          </div>
         </div>
       </section>
 
       <section className="content-section">
         <div className="section-heading-row">
           <div>
-            <h2 className="sky-heading">Browse by style and difficulty</h2>
-            <p>Choose simple, cute, chibi, detailed, or mandala-style pages without creating thin duplicate routes.</p>
+            <h2 className="section-title">Style and difficulty</h2>
+            <p>Choose simple pages, detailed designs, cute art, chibi characters, geometric patterns, or mandalas.</p>
           </div>
         </div>
-        <div className="hub-card-grid">
+        <div className="hub-link-grid">
           {styleHubs.map((hub) => (
             <HubCard key={hub.hubId} hub={hub} />
           ))}
@@ -115,8 +121,8 @@ export default function ColoringPagesLanding() {
       <section className="content-section" id="gallery">
         <div className="section-heading-row">
           <div>
-            <h2 className="sky-heading">Preview the gallery</h2>
-            <p>Showing a limited first set from {rootHub.assetCount.toLocaleString()} approved coloring pages. Large hubs use pagination instead of loading everything at once.</p>
+            <h2 className="section-title">Preview the gallery</h2>
+            <p>Here is a small sample from {rootHub.assetCount.toLocaleString()} printable pages. Larger collections are split into pages so browsing stays quick.</p>
           </div>
         </div>
         <FilterChips sections={rootHub.sectionGroupings} />
@@ -125,15 +131,6 @@ export default function ColoringPagesLanding() {
 
       <RelatedHubs title="More ways to browse" hubs={childHubs} />
 
-      <section className="content-section">
-        <div className="empty-state">
-          <h2 className="sky-heading">Publishing rules carried forward</h2>
-          <p>
-            Phase 2 has {getBacklogHubCount().toLocaleString()} backlog hubs and {getSectionOnlyTopicCount().toLocaleString()} section-only topics.
-            They stay out of the sitemap until a later promotion pass.
-          </p>
-        </div>
-      </section>
     </main>
   );
 }

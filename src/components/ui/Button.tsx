@@ -1,12 +1,12 @@
 import type { AnchorHTMLAttributes, ButtonHTMLAttributes, ReactNode } from "react";
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
-  variant?: "primary" | "secondary" | "ghost";
+  variant?: "primary" | "secondary" | "ghost" | "subtle";
   children: ReactNode;
 };
 
 type ButtonLinkProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
-  variant?: "primary" | "secondary" | "ghost";
+  variant?: "primary" | "secondary" | "ghost" | "subtle";
   children: ReactNode;
 };
 

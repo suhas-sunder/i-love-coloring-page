@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-05-10",
+  "runId": "round-4c-public-gallery-visual-system",
+  "fonts": {
+    "primary": {
+      "name": "Figtree",
+      "role": "Primary UI, body, nav, and button font.",
+      "loading": "next/font/google",
+      "cssVariable": "--font-figtree"
+    },
+    "display": {
+      "name": "Fraunces",
+      "role": "Optional editorial display accent used sparingly.",
+      "loading": "next/font/google",
+      "cssVariable": "--font-fraunces"
+    }
+  },
+  "rules": [
+    "Do not use CSS @import for Google Fonts.",
+    "Do not use runtime Google Fonts links in document head.",
+    "Do not introduce a third brand font.",
+    "Do not use decorative, childish, novelty, or overly playful fonts.",
+    "Use Fraunces only for selective editorial accents when it improves the design."
+  ],
+  "scale": {
+    "xs": { "fontSize": "0.75rem", "lineHeight": 1.4, "fontWeight": 500 },
+    "sm": { "fontSize": "0.875rem", "lineHeight": 1.5, "fontWeight": 500 },
+    "md": { "fontSize": "1rem", "lineHeight": 1.6, "fontWeight": 400 },
+    "lg": { "fontSize": "1.125rem", "lineHeight": 1.6, "fontWeight": 400 },
+    "xl": { "fontSize": "1.25rem", "lineHeight": 1.5, "fontWeight": 600 },
+    "2xl": { "fontSize": "1.5rem", "lineHeight": 1.35, "fontWeight": 700 },
+    "3xl": { "fontSize": "clamp(1.875rem, 1.55rem + 1vw, 2.375rem)", "lineHeight": 1.2, "fontWeight": 700 },
+    "4xl": { "fontSize": "clamp(2.25rem, 1.7rem + 2vw, 3.25rem)", "lineHeight": 1.08, "fontWeight": 750 },
+    "5xl": { "fontSize": "clamp(2.75rem, 2.05rem + 2.6vw, 4.25rem)", "lineHeight": 1.02, "fontWeight": 800 }
+  }
+}

@@ -1,10 +1,23 @@
 import type { Metadata } from "next";
+import { Figtree, Fraunces } from "next/font/google";
 import Link from "next/link";
 import type { ReactNode } from "react";
 
 import "./globals.css";
 
 import { getSiteUrl } from "@/lib/coloring/data";
+
+const figtree = Figtree({
+  subsets: ["latin"],
+  variable: "--font-figtree",
+  display: "swap",
+});
+
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  variable: "--font-fraunces",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
@@ -18,7 +31,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${figtree.variable} ${fraunces.variable}`}>
         <div className="site-shell">
           <header className="site-header">
             <div className="site-header-inner">
@@ -27,7 +40,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
                 <span>I Love Coloring Page</span>
               </Link>
               <nav className="site-nav" aria-label="Main navigation">
-                <Link className="button button-secondary" href="/coloring-pages">
+                <Link className="button button-subtle" href="/coloring-pages">
                   Browse Coloring Pages
                 </Link>
               </nav>
@@ -35,9 +48,9 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
           </header>
           {children}
           <footer className="site-footer">
-            <div className="site-header-inner">
-              <span>Printable coloring pages from approved gallery data.</span>
-              <Link href="/coloring-pages">Coloring Pages</Link>
+            <div className="site-footer-inner">
+              <span className="site-footer-note">Printable SVG and PNG coloring pages, organized for easy browsing.</span>
+              <Link href="/coloring-pages">Browse Coloring Pages</Link>
             </div>
           </footer>
         </div>

@@ -5,12 +5,13 @@ import type { ColoringHub } from "@/lib/coloring/types";
 
 type HubHeroProps = {
   hub: ColoringHub;
+  intro?: string;
   children?: ReactNode;
 };
 
-export function HubHero({ hub, children }: HubHeroProps) {
+export function HubHero({ hub, intro, children }: HubHeroProps) {
   return (
-    <section className="hub-hero">
+    <section className={children ? "hub-hero" : "hub-hero hub-hero-solo"} aria-labelledby="hub-title">
       <div className="hero-copy">
         <nav className="breadcrumb" aria-label="Breadcrumb">
           {hub.breadcrumbPath.map((crumb, index) => (
@@ -20,13 +21,13 @@ export function HubHero({ hub, children }: HubHeroProps) {
             </span>
           ))}
         </nav>
-        <h1 className="sky-heading">{hub.h1}</h1>
-        <p>{hub.intro}</p>
-        <div className="hero-stats" aria-label="Gallery summary">
-          <span>{hub.assetCount.toLocaleString()} approved pages</span>
-          <span>No image detail pages</span>
-          <span>Print and download ready</span>
-        </div>
+        <h1 className="page-title page-title-wide" id="hub-title">{hub.h1}</h1>
+        <p>{intro || hub.intro}</p>
+        <ul className="hero-facts" aria-label="Gallery summary">
+          <li><strong>{hub.assetCount.toLocaleString()}</strong> printable pages</li>
+          <li>SVG and PNG downloads</li>
+          <li>Ready for browsing and printing</li>
+        </ul>
       </div>
       {children ? <div className="hero-panel">{children}</div> : null}
     </section>

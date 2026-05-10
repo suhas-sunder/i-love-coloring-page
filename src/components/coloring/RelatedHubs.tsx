@@ -1,6 +1,6 @@
-import type { ColoringHub } from "@/lib/coloring/types";
+import Link from "next/link";
 
-import { HubCard } from "./HubCard";
+import type { ColoringHub } from "@/lib/coloring/types";
 
 type RelatedHubsProps = {
   title: string;
@@ -13,11 +13,14 @@ export function RelatedHubs({ title, hubs }: RelatedHubsProps) {
   return (
     <section className="content-section">
       <div className="section-heading-row">
-        <h2 className="sky-heading">{title}</h2>
+        <h2 className="section-title">{title}</h2>
       </div>
-      <div className="hub-card-grid compact-grid">
+      <div className="related-list">
         {hubs.map((hub) => (
-          <HubCard key={hub.hubId} hub={hub} compact />
+          <Link className="related-link" href={hub.route} key={hub.hubId}>
+            <span>{hub.title.replace(/ Coloring Pages$/, "")}</span>
+            <strong>{hub.assetCount.toLocaleString()} pages</strong>
+          </Link>
         ))}
       </div>
     </section>

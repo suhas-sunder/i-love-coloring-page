@@ -11,8 +11,8 @@ export function GalleryGrid({ items, priorityCount = 4 }: GalleryGridProps) {
   if (items.length === 0) {
     return (
       <div className="empty-state">
-        <h2 className="sky-heading">No coloring pages in this view</h2>
-        <p>Try another hub or return to the main coloring pages gallery.</p>
+        <h2 className="section-title">No coloring pages in this view</h2>
+        <p>Try another collection or return to the main coloring pages gallery.</p>
       </div>
     );
   }

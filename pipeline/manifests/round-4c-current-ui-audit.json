@@ -1,0 +1,106 @@
+{
+  "generatedAt": "2026-05-10",
+  "runId": "round-4c-public-gallery-visual-system",
+  "scope": {
+    "round": "4C",
+    "branch": "version-3",
+    "purpose": "Audit current public gallery visual implementation before locking the permanent design system."
+  },
+  "reviewedFiles": [
+    "app/globals.css",
+    "app/layout.tsx",
+    "app/page.tsx",
+    "app/coloring-pages/page.tsx",
+    "app/coloring-pages/[hubSlug]/page.tsx",
+    "src/components/coloring/AssetImage.tsx",
+    "src/components/coloring/FilterChips.tsx",
+    "src/components/coloring/GalleryGrid.tsx",
+    "src/components/coloring/HubCard.tsx",
+    "src/components/coloring/HubHero.tsx",
+    "src/components/coloring/ImageCard.tsx",
+    "src/components/coloring/Pagination.tsx",
+    "src/components/coloring/RelatedHubs.tsx",
+    "src/components/ui/Button.tsx",
+    "src/lib/coloring/assets.ts",
+    "src/lib/coloring/data.ts",
+    "src/lib/coloring/types.ts",
+    "src/generated/coloring/hubs.json",
+    "src/generated/coloring/items.json",
+    "src/generated/coloring/routes.json"
+  ],
+  "currentColors": {
+    "sourceFile": "app/globals.css",
+    "tokens": [
+      { "name": "--bg", "value": "#f7fbff" },
+      { "name": "--surface", "value": "#ffffff" },
+      { "name": "--surface-strong", "value": "#eef7ff" },
+      { "name": "--ink", "value": "#132033" },
+      { "name": "--muted", "value": "#5b6a7f" },
+      { "name": "--line", "value": "#d9e6f2" },
+      { "name": "--sky", "value": "#0e7490" },
+      { "name": "--sky-strong", "value": "#075985" },
+      { "name": "--leaf", "value": "#2f7d5b" },
+      { "name": "--coral", "value": "#d95f45" }
+    ],
+    "finding": "The current blue palette does not match Indigo Paper and token names are visual-theme-specific rather than semantic."
+  },
+  "currentTypography": {
+    "bodyFont": "Arial, Helvetica, sans-serif",
+    "nextFontConfigured": false,
+    "typeScaleGoverned": false,
+    "finding": "Figtree and Fraunces are not configured, and component text sizes are scattered in CSS."
+  },
+  "currentSpacing": {
+    "tokenized": false,
+    "hardcodedValues": ["10px", "12px", "14px", "16px", "18px", "20px", "22px", "24px", "28px", "32px", "34px", "36px", "42px", "52px", "64px"],
+    "finding": "Spacing works functionally but is not governed by the approved 4px scale."
+  },
+  "currentCards": {
+    "components": [
+      "HubHero",
+      "HubCard",
+      "ImageCard",
+      "RelatedHubs",
+      "GalleryGrid empty state"
+    ],
+    "issues": [
+      "Hero is a bordered, shadowed, gradient panel.",
+      "Hub cards use borders and large shadows.",
+      "Image cards use borders and large shadows.",
+      "Hero preview tiles reuse image-card styling inside a larger hero card.",
+      "Related hubs render as another wall of boxed cards."
+    ]
+  },
+  "currentButtons": {
+    "variants": ["primary", "secondary", "ghost", "disabled"],
+    "missingVariants": ["subtle"],
+    "drift": ["mini-button"],
+    "finding": "Small gallery actions use a separate mini-button style instead of the governed button family."
+  },
+  "galleryDensity": {
+    "stableGrid": true,
+    "paginationPresent": true,
+    "issue": "The gallery does not render thousands of items at once, but every image tile is presented as a bordered and shadowed card."
+  },
+  "mobileRisks": [
+    "Header stacks into a full-width button area on small screens.",
+    "Hero type can dominate mobile viewports.",
+    "Repeated card grids make mobile pages feel long and boxed."
+  ],
+  "forbiddenPatternFindings": [
+    { "pattern": "linear-gradient", "file": "app/globals.css", "status": "present" },
+    { "pattern": "large box-shadow", "file": "app/globals.css", "status": "present" },
+    { "pattern": "layout borders", "file": "app/globals.css", "status": "present" },
+    { "pattern": "backdrop-filter", "file": "app/globals.css", "status": "present" },
+    { "pattern": "nested card feel", "file": "app/coloring-pages/page.tsx and app/coloring-pages/[hubSlug]/page.tsx", "status": "present" }
+  ],
+  "requiredRefactors": [
+    "Implement Indigo Paper design tokens.",
+    "Split global CSS into token, base, layout, and component layers.",
+    "Configure Figtree and Fraunces through next/font/google.",
+    "Remove gradients, glass effects, decorative borders, and non-button shadows.",
+    "Refactor public pages around editorial sections, stable gallery rhythm, and image-first previews.",
+    "Centralize button variants and focus-visible treatment.",
+    "Preserve existing data, route, sitemap, asset resolver, local proxy, and no per-image page behavior."
+  ]
+}

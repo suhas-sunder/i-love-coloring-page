@@ -31,29 +31,29 @@ export function ImageCard({ item, priority = false }: ImageCardProps) {
   }
 
   return (
-    <article className="image-card">
-      <div className="image-card-media">
+    <article className="gallery-item">
+      <div className="gallery-item-media">
         <AssetImage item={item} priority={priority} />
       </div>
-      <div className="image-card-body">
-        <h3>{item.title}</h3>
-        <div className="image-card-actions" aria-label={`${item.title} actions`}>
+      <div className="gallery-item-body">
+        <h3 className="item-title">{item.title}</h3>
+        <div className="gallery-actions" aria-label={`${item.title} actions`}>
           {pngUrl ? (
-            <a className="mini-button" href={pngUrl} download aria-label={`Download PNG for ${item.title}`}>
+            <a className="button button-subtle button-small" href={pngUrl} download aria-label={`Download PNG for ${item.title}`}>
               Download PNG
             </a>
           ) : null}
           {svgUrl ? (
-            <a className="mini-button" href={svgUrl} download aria-label={`Download SVG for ${item.title}`}>
+            <a className="button button-subtle button-small" href={svgUrl} download aria-label={`Download SVG for ${item.title}`}>
               Download SVG
             </a>
           ) : null}
           {printUrl ? (
-            <button className="mini-button" type="button" onClick={printImage} aria-label={`Print ${item.title}`}>
+            <button className="button button-ghost button-small" type="button" onClick={printImage} aria-label={`Print ${item.title}`}>
               Print
             </button>
           ) : (
-            <span className="mini-button mini-button-disabled">Assets pending</span>
+            <span className="button button-disabled button-small">Assets pending</span>
           )}
         </div>
       </div>
