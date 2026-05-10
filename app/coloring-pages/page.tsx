@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { AdRail } from "@/components/ads/AdRail";
+import { AdSlot } from "@/components/ads/AdSlot";
 import { AssetImage } from "@/components/coloring/AssetImage";
 import { GalleryGrid } from "@/components/coloring/GalleryGrid";
 import { GallerySearch } from "@/components/coloring/GallerySearch";
@@ -55,6 +57,7 @@ export default function ColoringPagesLanding() {
 
   return (
     <main className="page-shell">
+      <AdRail />
       <HubHero
         hub={rootHub}
         intro="Browse printable coloring pages by subject, season, style, and difficulty. Search the gallery, pick a favorite, then download or print."
@@ -92,6 +95,8 @@ export default function ColoringPagesLanding() {
         </div>
       </section>
 
+      <AdSlot slotId="coloring-pages-after-featured" />
+
       <section className="content-section gallery-section" id="gallery">
         <div className="section-heading-row">
           <div>
@@ -111,6 +116,8 @@ export default function ColoringPagesLanding() {
           tabs={tabs}
         />
       </section>
+
+      <AdSlot slotId="coloring-pages-lower-content" />
 
       <section className="content-section collection-section">
         <div className="section-heading-row">

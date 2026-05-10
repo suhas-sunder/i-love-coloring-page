@@ -1,0 +1,24 @@
+{
+  "generatedAt": "2026-05-10T21:29:16.623Z",
+  "runId": "round-4m-ads-nav-polish",
+  "summary": {
+    "correctRepository": true,
+    "branch": "version-4",
+    "head": "9010c9171b18973aa810ded66b199785690fd6df",
+    "round4lCommitExists": true,
+    "appApiRoutePresent": false,
+    "staticExportConfigured": true,
+    "r2BundleExists": true,
+    "publicGeneratedMediaPresent": false,
+    "wrongTaskContextDetected": false
+  },
+  "checkedIndicators": [
+    "package.json name",
+    "version-4 branch",
+    "Round 4L commit",
+    "static export config",
+    "app/api absence",
+    "R2 local bundle",
+    "public media absence"
+  ]
+}

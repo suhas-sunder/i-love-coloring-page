@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-05-10T21:29:16.624Z",
+  "runId": "round-4m-ads-nav-polish",
+  "summary": {
+    "nestedCardsReintroduced": false,
+    "gradientsIntroduced": false,
+    "randomWarmWrappersIntroduced": false,
+    "visiblePngSvgPillsReintroduced": false,
+    "printActionPreserved": true,
+    "imagePreviewArchitectureChanged": false,
+    "filenamesRenamed": false,
+    "backendAdded": false
+  },
+  "changes": [
+    "Expanded the header navigation with existing static gallery routes.",
+    "Added neutral policy-safe ad placeholders that are hidden by default.",
+    "Kept placeholders outside gallery cards, image grids, navigation, and action rows.",
+    "Kept desktop side rails wide-screen only and non-sticky."
+  ],
+  "remainingManualReview": [
+    "Check the enabled-placeholder layout in a browser before any live ad integration.",
+    "Recheck mobile spacing if a future round enables mobile ad slots.",
+    "Replace r2.dev or local asset bases with a custom asset domain before production launch."
+  ]
+}

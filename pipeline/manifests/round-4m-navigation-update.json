@@ -1,0 +1,78 @@
+{
+  "generatedAt": "2026-05-10T21:29:16.624Z",
+  "runId": "round-4m-ads-nav-polish",
+  "summary": {
+    "primaryLinkCount": 6,
+    "footerLinkCount": 4,
+    "allLinksResolve": true,
+    "mobileNavImplemented": true,
+    "adsInsideNav": false
+  },
+  "links": [
+    {
+      "label": "Coloring Pages",
+      "href": "/coloring-pages",
+      "group": "primary",
+      "routeExists": true
+    },
+    {
+      "label": "Popular",
+      "href": "/coloring-pages/animals",
+      "group": "primary",
+      "routeExists": true
+    },
+    {
+      "label": "Seasonal",
+      "href": "/coloring-pages/christmas",
+      "group": "primary",
+      "routeExists": true
+    },
+    {
+      "label": "For Kids",
+      "href": "/coloring-pages/for-kids",
+      "group": "primary",
+      "routeExists": true
+    },
+    {
+      "label": "For Adults",
+      "href": "/coloring-pages/detailed-for-adults",
+      "group": "primary",
+      "routeExists": true
+    },
+    {
+      "label": "Search/Browse",
+      "href": "/coloring-pages#gallery",
+      "group": "primary",
+      "routeExists": true
+    },
+    {
+      "label": "Animals",
+      "href": "/coloring-pages/animals",
+      "group": "footer",
+      "routeExists": true
+    },
+    {
+      "label": "Mandalas",
+      "href": "/coloring-pages/mandalas",
+      "group": "footer",
+      "routeExists": true
+    },
+    {
+      "label": "Halloween",
+      "href": "/coloring-pages/halloween",
+      "group": "footer",
+      "routeExists": true
+    },
+    {
+      "label": "Plushies",
+      "href": "/coloring-pages/plushies",
+      "group": "footer",
+      "routeExists": true
+    }
+  ],
+  "notes": [
+    "Primary navigation uses existing generated routes only.",
+    "Mobile navigation uses a native details and summary control.",
+    "No ad placeholders are rendered inside header or footer navigation."
+  ]
+}

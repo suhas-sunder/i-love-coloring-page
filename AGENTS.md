@@ -150,6 +150,17 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Do not judge gallery design from missing-asset or stale-asset-base states.
 - Do not add backend or API routes to fix media preview issues.
 - Do not move generated media into `public/` to fix preview issues.
+- Ads must be planned as policy-safe slots, not improvised in content.
+- Do not add live AdSense code, ad scripts, ad client values, or publisher values until a later prompt explicitly requests live ad integration.
+- Ad placeholders must be hidden in production by default and enabled only through an explicit local/public environment flag.
+- Ad placeholders must be clearly labeled `Advertisement`.
+- Do not place ads or ad placeholders inside gallery grids as fake cards.
+- Do not place ads or ad placeholders near Print or Download controls.
+- Do not place ads or ad placeholders inside navigation.
+- Desktop side rails must disappear on smaller screens and must not overlap content, navigation, scrollbars, or other ads.
+- Avoid mobile top ads unless a later prompt explicitly approves them because they can crowd the first screen and increase accidental-click risk.
+- Navbar links must use existing generated routes only.
+- Do not add backend or API routes for ads or navigation.
 
 ## Production Asset Hosting
 

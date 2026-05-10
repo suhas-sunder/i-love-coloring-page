@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { AdRail } from "@/components/ads/AdRail";
+import { AdSlot } from "@/components/ads/AdSlot";
 import { AssetImage } from "@/components/coloring/AssetImage";
 import { GalleryGrid } from "@/components/coloring/GalleryGrid";
 import { HubCard } from "@/components/coloring/HubCard";
@@ -16,6 +18,7 @@ export default function HomePage() {
 
   return (
     <main className="page-shell">
+      <AdRail />
       <section className={showHeroPreviews ? "hub-hero" : "hub-hero hub-hero-solo"}>
         <div className="hero-copy">
           <h1 className="page-title">I Love Coloring Page</h1>
@@ -53,6 +56,8 @@ export default function HomePage() {
         ) : null}
       </section>
 
+      <AdSlot slotId="home-after-hero" />
+
       <section className="content-section section-band featured-band">
         <div className="section-inner">
           <div className="section-heading-row">
@@ -85,6 +90,8 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      <AdSlot slotId="home-lower-content" />
 
       <section className="content-section section-band">
         <div className="section-inner split-section">

@@ -6,7 +6,7 @@
     "dev": "next dev -H localhost -p 3005",
     "build": "next build",
     "typecheck": "tsc --noEmit",
-    "test": "node --test pipeline/tests/round-4a-hub-taxonomy.test.mjs pipeline/tests/round-4b-next-gallery.test.mjs pipeline/tests/round-4c-design-system.test.mjs pipeline/tests/round-4d-visual-polish.test.mjs pipeline/tests/round-4e-asset-hosting.test.mjs pipeline/tests/round-4f-frontend-deployment.test.mjs pipeline/tests/round-4g-r2-test-bundle.test.mjs pipeline/tests/round-4h-r2-cdn-verification.test.mjs pipeline/tests/round-4i-full-r2-bundle.test.mjs pipeline/tests/round-4j-gallery-ux.test.mjs pipeline/tests/round-4k-visual-corrections.test.mjs pipeline/tests/round-4l-preview-rendering.test.mjs"
+    "test": "node --test --test-concurrency=1 pipeline/tests/round-4a-hub-taxonomy.test.mjs pipeline/tests/round-4b-next-gallery.test.mjs pipeline/tests/round-4c-design-system.test.mjs pipeline/tests/round-4d-visual-polish.test.mjs pipeline/tests/round-4e-asset-hosting.test.mjs pipeline/tests/round-4f-frontend-deployment.test.mjs pipeline/tests/round-4g-r2-test-bundle.test.mjs pipeline/tests/round-4h-r2-cdn-verification.test.mjs pipeline/tests/round-4i-full-r2-bundle.test.mjs pipeline/tests/round-4j-gallery-ux.test.mjs pipeline/tests/round-4k-visual-corrections.test.mjs pipeline/tests/round-4l-preview-rendering.test.mjs pipeline/tests/round-4m-ads-nav-polish.test.mjs"
   },
   "dependencies": {
     "next": "16.2.6",

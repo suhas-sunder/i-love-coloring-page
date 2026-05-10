@@ -1,0 +1,79 @@
+{
+  "generatedAt": "2026-05-10T21:29:16.624Z",
+  "runId": "round-4m-ads-nav-polish",
+  "sources": [
+    {
+      "name": "Google AdSense ad placement policies",
+      "url": "https://support.google.com/adsense/answer/1346295/ad-placement-policies?hl=en-GB",
+      "usedFor": "accidental clicks, misleading headings, labels, download and navigation separation, ad mimicry"
+    },
+    {
+      "name": "Google AdSense Program policies",
+      "url": "https://support.google.com/adsense/answer/48182?hl=en-GB",
+      "usedFor": "publisher policy baseline and invalid-click risk"
+    },
+    {
+      "name": "Google AdSense ad formats and behavior guidance",
+      "url": "https://support.google.com/adsense/answer/9183363?hl=en",
+      "usedFor": "auto-format and layout behavior considerations"
+    },
+    {
+      "name": "Google AdSense ad formats FAQ",
+      "url": "https://support.google.com/adsense/answer/10734935?hl=en",
+      "usedFor": "sticky and anchor behavior considerations for future rounds"
+    }
+  ],
+  "allowedLabels": [
+    "Advertisement",
+    "Sponsored Links"
+  ],
+  "forbiddenLabels": [
+    "Recommended",
+    "Helpful Links",
+    "Resources",
+    "Print",
+    "Download",
+    "Start",
+    "Browse"
+  ],
+  "forbiddenPlacements": [
+    "Inside navigation, menus, tabs, search, filters, or page controls",
+    "Inside image grids as fake cards",
+    "Between a coloring-page image and its Print/Download actions",
+    "Under headings that imply editorial recommendations or site navigation",
+    "Beside images in a way that suggests the image points at the ad",
+    "Where mobile users are likely to tap ads by accident"
+  ],
+  "allowedPlacements": [
+    "Inline slots after meaningful content has already appeared",
+    "Lower-content slots near supporting sections",
+    "Wide-desktop side rails outside the main content column",
+    "Future sticky slots only after a dedicated policy and layout pass"
+  ],
+  "mobileRules": [
+    "No mobile top banner by default",
+    "Keep ads away from navigation and touch controls to reduce accidental clicks",
+    "Do not crowd the first screen before gallery access"
+  ],
+  "desktopRules": [
+    "Desktop rails must be outside the main content column",
+    "Inline slots must not interrupt search, filters, or image-card actions",
+    "Top banners may appear below navigation only, never inside navigation"
+  ],
+  "stickyRules": [
+    "Sticky ads are not implemented in Round 4M",
+    "Future sticky ads must not overlap or underlap content, navigation, scrollbars, or other ads",
+    "Future sticky ads need explicit size caps and a separate QA pass"
+  ],
+  "interactionSeparationRules": [
+    "Keep ad slots away from Print/Download action rows",
+    "Keep ad slots away from search inputs and filter chips",
+    "Never style ad placeholders as buttons, cards, or gallery items"
+  ],
+  "placeholderVisibilityRules": [
+    "Hidden by default unless NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS=1 or true",
+    "Visible placeholders are clearly labeled Advertisement",
+    "No external requests, scripts, ad client values, or live ad behavior",
+    "Placeholders are hidden in print styles"
+  ]
+}

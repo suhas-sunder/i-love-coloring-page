@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { Figtree, Fraunces } from "next/font/google";
-import Link from "next/link";
 import type { ReactNode } from "react";
 
 import "./globals.css";
 
+import { SiteFooter } from "@/components/site/SiteFooter";
+import { SiteHeader } from "@/components/site/SiteHeader";
 import { getSiteUrl } from "@/lib/coloring/data";
 
 const figtree = Figtree({
@@ -36,27 +37,9 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
     <html lang="en">
       <body className={`${figtree.variable} ${fraunces.variable}`}>
         <div className="site-shell">
-          <header className="site-header">
-            <div className="site-header-inner">
-              <Link className="brand" href="/">
-                <span className="brand-mark" aria-hidden="true">IL</span>
-                <span>I Love Coloring Page</span>
-              </Link>
-              <nav className="site-nav" aria-label="Main navigation">
-                <Link className="button button-subtle" href="/coloring-pages" prefetch={false}>
-                  <span className="nav-label-full">Coloring Pages</span>
-                  <span className="nav-label-short">Pages</span>
-                </Link>
-              </nav>
-            </div>
-          </header>
+          <SiteHeader />
           {children}
-          <footer className="site-footer">
-            <div className="site-footer-inner">
-              <span className="site-footer-note">Printable SVG and PNG coloring pages, organized for easy browsing.</span>
-              <Link href="/coloring-pages" prefetch={false}>Coloring Pages</Link>
-            </div>
-          </footer>
+          <SiteFooter />
         </div>
       </body>
     </html>

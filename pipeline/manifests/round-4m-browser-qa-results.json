@@ -1,0 +1,129 @@
+{
+  "generatedAt": "2026-05-10T21:29:16.624Z",
+  "runId": "round-4m-ads-nav-polish",
+  "localAssetBaseUrl": "http://127.0.0.1:4175/coloring-pages",
+  "summary": {
+    "status": "screenshots_captured",
+    "pagesPlanned": 11,
+    "screenshotsCaptured": 13,
+    "liveAdCodeAdded": false,
+    "appApiRoutePresent": false
+  },
+  "pages": [
+    {
+      "path": "/",
+      "desktop": "inspected_with_real_media",
+      "wideDesktop": "css_breakpoint_guardrail_checked",
+      "tablet": "css_breakpoint_guardrail_checked",
+      "mobile": "css_breakpoint_guardrail_checked",
+      "screenshot": "pipeline/review/round-4m/screenshots/home-default.png"
+    },
+    {
+      "path": "/coloring-pages",
+      "desktop": "inspected_with_real_media",
+      "wideDesktop": "css_breakpoint_guardrail_checked",
+      "tablet": "css_breakpoint_guardrail_checked",
+      "mobile": "css_breakpoint_guardrail_checked",
+      "screenshot": "pipeline/review/round-4m/screenshots/coloring-pages-default.png"
+    },
+    {
+      "path": "/coloring-pages/animals",
+      "desktop": "inspected_with_real_media",
+      "wideDesktop": "css_breakpoint_guardrail_checked",
+      "tablet": "css_breakpoint_guardrail_checked",
+      "mobile": "css_breakpoint_guardrail_checked",
+      "screenshot": "pipeline/review/round-4m/screenshots/coloring-pages-animals-default.png"
+    },
+    {
+      "path": "/coloring-pages/geometric",
+      "desktop": "inspected_with_real_media",
+      "wideDesktop": "css_breakpoint_guardrail_checked",
+      "tablet": "css_breakpoint_guardrail_checked",
+      "mobile": "css_breakpoint_guardrail_checked",
+      "screenshot": "pipeline/review/round-4m/screenshots/coloring-pages-geometric-default.png"
+    },
+    {
+      "path": "/coloring-pages/anime-girls",
+      "desktop": "inspected_with_real_media",
+      "wideDesktop": "css_breakpoint_guardrail_checked",
+      "tablet": "css_breakpoint_guardrail_checked",
+      "mobile": "css_breakpoint_guardrail_checked",
+      "screenshot": "pipeline/review/round-4m/screenshots/coloring-pages-anime-girls-default.png"
+    },
+    {
+      "path": "/coloring-pages/mandalas",
+      "desktop": "inspected_with_real_media",
+      "wideDesktop": "css_breakpoint_guardrail_checked",
+      "tablet": "css_breakpoint_guardrail_checked",
+      "mobile": "css_breakpoint_guardrail_checked",
+      "screenshot": "pipeline/review/round-4m/screenshots/coloring-pages-mandalas-default.png"
+    },
+    {
+      "path": "/coloring-pages/chibi",
+      "desktop": "inspected_with_real_media",
+      "wideDesktop": "css_breakpoint_guardrail_checked",
+      "tablet": "css_breakpoint_guardrail_checked",
+      "mobile": "css_breakpoint_guardrail_checked",
+      "screenshot": "pipeline/review/round-4m/screenshots/coloring-pages-chibi-default.png"
+    },
+    {
+      "path": "/coloring-pages/fantasy",
+      "desktop": "inspected_with_real_media",
+      "wideDesktop": "css_breakpoint_guardrail_checked",
+      "tablet": "css_breakpoint_guardrail_checked",
+      "mobile": "css_breakpoint_guardrail_checked",
+      "screenshot": "pipeline/review/round-4m/screenshots/coloring-pages-fantasy-default.png"
+    },
+    {
+      "path": "/coloring-pages/christmas",
+      "desktop": "inspected_with_real_media",
+      "wideDesktop": "css_breakpoint_guardrail_checked",
+      "tablet": "css_breakpoint_guardrail_checked",
+      "mobile": "css_breakpoint_guardrail_checked",
+      "screenshot": "pipeline/review/round-4m/screenshots/coloring-pages-christmas-default.png"
+    },
+    {
+      "path": "/coloring-pages/halloween",
+      "desktop": "inspected_with_real_media",
+      "wideDesktop": "css_breakpoint_guardrail_checked",
+      "tablet": "css_breakpoint_guardrail_checked",
+      "mobile": "css_breakpoint_guardrail_checked",
+      "screenshot": "pipeline/review/round-4m/screenshots/coloring-pages-halloween-default.png"
+    },
+    {
+      "path": "/coloring-pages/plushies",
+      "desktop": "inspected_with_real_media",
+      "wideDesktop": "css_breakpoint_guardrail_checked",
+      "tablet": "css_breakpoint_guardrail_checked",
+      "mobile": "css_breakpoint_guardrail_checked",
+      "screenshot": "pipeline/review/round-4m/screenshots/coloring-pages-plushies-default.png"
+    }
+  ],
+  "screenshotPaths": [
+    "pipeline/review/round-4m/screenshots/coloring-pages-ad-placeholders.png",
+    "pipeline/review/round-4m/screenshots/coloring-pages-ad-slot-after-featured-visible.png",
+    "pipeline/review/round-4m/screenshots/coloring-pages-animals-default.png",
+    "pipeline/review/round-4m/screenshots/coloring-pages-anime-girls-default.png",
+    "pipeline/review/round-4m/screenshots/coloring-pages-chibi-default.png",
+    "pipeline/review/round-4m/screenshots/coloring-pages-christmas-default.png",
+    "pipeline/review/round-4m/screenshots/coloring-pages-default.png",
+    "pipeline/review/round-4m/screenshots/coloring-pages-fantasy-default.png",
+    "pipeline/review/round-4m/screenshots/coloring-pages-geometric-default.png",
+    "pipeline/review/round-4m/screenshots/coloring-pages-halloween-default.png",
+    "pipeline/review/round-4m/screenshots/coloring-pages-mandalas-default.png",
+    "pipeline/review/round-4m/screenshots/coloring-pages-plushies-default.png",
+    "pipeline/review/round-4m/screenshots/home-default.png"
+  ],
+  "interactionProof": {
+    "searchFilter": "Search input was filled during browser QA and matching result text was observed.",
+    "placeholdersDisabled": "Default build produced zero ad placeholder nodes in the browser snapshot.",
+    "placeholdersEnabled": true
+  },
+  "checks": [
+    "real media rendering",
+    "ad placeholders hidden by default",
+    "ad placeholders visible with NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS=1",
+    "navigation wraps without overflow",
+    "no app/api route"
+  ]
+}

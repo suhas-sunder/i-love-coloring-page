@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { AdRail } from "@/components/ads/AdRail";
+import { AdSlot } from "@/components/ads/AdSlot";
 import { AssetImage } from "@/components/coloring/AssetImage";
 import { GalleryGrid } from "@/components/coloring/GalleryGrid";
 import { GallerySearch } from "@/components/coloring/GallerySearch";
@@ -38,6 +40,7 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
 
   return (
     <main className="page-shell">
+      <AdRail />
       <HubHero hub={hub} intro={friendlyHubIntro(hub.title)} primaryCtaLabel="Browse gallery">
         {showHeroPreviews ? (
           <div className="hero-preview-grid hero-preview-grid-compact" aria-label={`${hub.title} featured previews`}>
@@ -103,6 +106,8 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
         />
       </section>
 
+      <AdSlot slotId="hub-after-gallery" />
+
       {childHubs.length > 0 || browsingSections.length > 0 ? (
         <section className="content-section supporting-browse" aria-labelledby="supporting-browse-title">
           <div className="section-heading-row">
@@ -138,6 +143,8 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
           </div>
         </section>
       ) : null}
+
+      <AdSlot slotId="hub-lower-content" />
 
       <section className="content-section section-band">
         <div className="section-inner split-section">
