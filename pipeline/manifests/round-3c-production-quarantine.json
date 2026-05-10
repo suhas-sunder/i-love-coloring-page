@@ -1,0 +1,248 @@
+{
+  "generatedAt": "2026-05-09",
+  "runId": "round-3c-approved-production-export-line-thick",
+  "sourceManifest": "pipeline/manifests/round-3a1-approved-source-images.json",
+  "blockedManifest": "pipeline/manifests/round-3a1-blocked-source-images.json",
+  "warningManifest": "pipeline/manifests/round-3a1-warning-source-images.json",
+  "presetPolicyUsed": {
+    "presetId": "line-thick",
+    "presetName": "Lineart - Thick"
+  },
+  "totalQuarantined": 9,
+  "totalSkipped": 0,
+  "countsByFailureReason": {
+    "excessive_svg_complexity": 4,
+    "overfilled_or_blobbed_output": 6,
+    "overfilled_or_overly_dark_output": 6
+  },
+  "entries": [
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-cave-climbing.png",
+      "category": "anime-girls",
+      "assetId": "anime-girls__anime-girl-cave-climbing__9db5af4fb5",
+      "attemptedOutputPaths": {
+        "svgPath": "pipeline/production/full/assets/svg/anime-girls/anime-girl-cave-climbing-9db5af4fb5.svg",
+        "pngPreviewPath": "pipeline/production/full/assets/png/anime-girls/anime-girl-cave-climbing-9db5af4fb5.png",
+        "thumbnailPath": "pipeline/production/full/assets/thumbs/anime-girls/anime-girl-cave-climbing-9db5af4fb5-thumb.png"
+      },
+      "failureStage": "qa",
+      "reasonCodes": [
+        "excessive_svg_complexity"
+      ],
+      "errorSummary": "excessive_svg_complexity",
+      "round3a1WarningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_duplicate_filename_collision_handled",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "conversionTimingMs": 1432,
+      "status": "quarantined_for_now"
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-chidori.png",
+      "category": "anime-girls",
+      "assetId": "anime-girls__anime-girl-chidori__480c0a1add",
+      "attemptedOutputPaths": {
+        "svgPath": "pipeline/production/full/assets/svg/anime-girls/anime-girl-chidori-480c0a1add.svg",
+        "pngPreviewPath": "pipeline/production/full/assets/png/anime-girls/anime-girl-chidori-480c0a1add.png",
+        "thumbnailPath": "pipeline/production/full/assets/thumbs/anime-girls/anime-girl-chidori-480c0a1add-thumb.png"
+      },
+      "failureStage": "qa",
+      "reasonCodes": [
+        "overfilled_or_overly_dark_output",
+        "excessive_svg_complexity",
+        "overfilled_or_blobbed_output"
+      ],
+      "errorSummary": "overfilled_or_overly_dark_output, excessive_svg_complexity, overfilled_or_blobbed_output",
+      "round3a1WarningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "conversionTimingMs": 1221,
+      "status": "quarantined_for_now"
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-rasengan-sea-monster.png",
+      "category": "anime-girls",
+      "assetId": "anime-girls__anime-girl-rasengan-sea-monster__7172ad6217",
+      "attemptedOutputPaths": {
+        "svgPath": "pipeline/production/full/assets/svg/anime-girls/anime-girl-rasengan-sea-monster-7172ad6217.svg",
+        "pngPreviewPath": "pipeline/production/full/assets/png/anime-girls/anime-girl-rasengan-sea-monster-7172ad6217.png",
+        "thumbnailPath": "pipeline/production/full/assets/thumbs/anime-girls/anime-girl-rasengan-sea-monster-7172ad6217-thumb.png"
+      },
+      "failureStage": "qa",
+      "reasonCodes": [
+        "excessive_svg_complexity"
+      ],
+      "errorSummary": "excessive_svg_complexity",
+      "round3a1WarningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "conversionTimingMs": 849,
+      "status": "quarantined_for_now"
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-roller-coaster.png",
+      "category": "anime-girls",
+      "assetId": "anime-girls__anime-girl-roller-coaster__b9aa4a4a27",
+      "attemptedOutputPaths": {
+        "svgPath": "pipeline/production/full/assets/svg/anime-girls/anime-girl-roller-coaster-b9aa4a4a27.svg",
+        "pngPreviewPath": "pipeline/production/full/assets/png/anime-girls/anime-girl-roller-coaster-b9aa4a4a27.png",
+        "thumbnailPath": "pipeline/production/full/assets/thumbs/anime-girls/anime-girl-roller-coaster-b9aa4a4a27-thumb.png"
+      },
+      "failureStage": "qa",
+      "reasonCodes": [
+        "overfilled_or_overly_dark_output",
+        "overfilled_or_blobbed_output"
+      ],
+      "errorSummary": "overfilled_or_overly_dark_output, overfilled_or_blobbed_output",
+      "round3a1WarningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "conversionTimingMs": 314,
+      "status": "quarantined_for_now"
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-dogs.png",
+      "category": "anime-girls",
+      "assetId": "anime-girls__anime-girl-summoning-jutsu-dogs__4dfb8aae1a",
+      "attemptedOutputPaths": {
+        "svgPath": "pipeline/production/full/assets/svg/anime-girls/anime-girl-summoning-jutsu-dogs-4dfb8aae1a.svg",
+        "pngPreviewPath": "pipeline/production/full/assets/png/anime-girls/anime-girl-summoning-jutsu-dogs-4dfb8aae1a.png",
+        "thumbnailPath": "pipeline/production/full/assets/thumbs/anime-girls/anime-girl-summoning-jutsu-dogs-4dfb8aae1a-thumb.png"
+      },
+      "failureStage": "qa",
+      "reasonCodes": [
+        "overfilled_or_overly_dark_output",
+        "overfilled_or_blobbed_output"
+      ],
+      "errorSummary": "overfilled_or_overly_dark_output, overfilled_or_blobbed_output",
+      "round3a1WarningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "conversionTimingMs": 610,
+      "status": "quarantined_for_now"
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-swamp-dragon.png",
+      "category": "anime-girls",
+      "assetId": "anime-girls__anime-girl-summoning-jutsu-swamp-dragon__37c77da5a1",
+      "attemptedOutputPaths": {
+        "svgPath": "pipeline/production/full/assets/svg/anime-girls/anime-girl-summoning-jutsu-swamp-dragon-37c77da5a1.svg",
+        "pngPreviewPath": "pipeline/production/full/assets/png/anime-girls/anime-girl-summoning-jutsu-swamp-dragon-37c77da5a1.png",
+        "thumbnailPath": "pipeline/production/full/assets/thumbs/anime-girls/anime-girl-summoning-jutsu-swamp-dragon-37c77da5a1-thumb.png"
+      },
+      "failureStage": "qa",
+      "reasonCodes": [
+        "excessive_svg_complexity"
+      ],
+      "errorSummary": "excessive_svg_complexity",
+      "round3a1WarningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "conversionTimingMs": 849,
+      "status": "quarantined_for_now"
+    },
+    {
+      "sourceRelativePath": "images/Insects/insects-moth-at-night-around-lantern.png",
+      "category": "Insects",
+      "assetId": "insects__insects-moth-at-night-around-lantern__dbccc8092b",
+      "attemptedOutputPaths": {
+        "svgPath": "pipeline/production/full/assets/svg/insects/insects-moth-at-night-around-lantern-dbccc8092b.svg",
+        "pngPreviewPath": "pipeline/production/full/assets/png/insects/insects-moth-at-night-around-lantern-dbccc8092b.png",
+        "thumbnailPath": "pipeline/production/full/assets/thumbs/insects/insects-moth-at-night-around-lantern-dbccc8092b-thumb.png"
+      },
+      "failureStage": "qa",
+      "reasonCodes": [
+        "overfilled_or_overly_dark_output",
+        "overfilled_or_blobbed_output"
+      ],
+      "errorSummary": "overfilled_or_overly_dark_output, overfilled_or_blobbed_output",
+      "round3a1WarningFlags": [
+        "soft_warning_high_detail",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "conversionTimingMs": 263,
+      "status": "quarantined_for_now"
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-classic-steam-train-nighttime-with-headlight.png",
+      "category": "mandala-geometry-patterns",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-classic-steam-train-nightti__332aec61e3",
+      "attemptedOutputPaths": {
+        "svgPath": "pipeline/production/full/assets/svg/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-classic-steam-train-nightti-332aec61e3.svg",
+        "pngPreviewPath": "pipeline/production/full/assets/png/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-classic-steam-train-nightti-332aec61e3.png",
+        "thumbnailPath": "pipeline/production/full/assets/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-classic-steam-train-nightti-332aec61e3-thumb.png"
+      },
+      "failureStage": "qa",
+      "reasonCodes": [
+        "overfilled_or_overly_dark_output",
+        "overfilled_or_blobbed_output"
+      ],
+      "errorSummary": "overfilled_or_overly_dark_output, overfilled_or_blobbed_output",
+      "round3a1WarningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "conversionTimingMs": 274,
+      "status": "quarantined_for_now"
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-high-speed-bullet-train-night-lights-scene.png",
+      "category": "mandala-geometry-patterns",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-high-speed-bullet-train-nig__4c252569bc",
+      "attemptedOutputPaths": {
+        "svgPath": "pipeline/production/full/assets/svg/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-high-speed-bullet-train-nig-4c252569bc.svg",
+        "pngPreviewPath": "pipeline/production/full/assets/png/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-high-speed-bullet-train-nig-4c252569bc.png",
+        "thumbnailPath": "pipeline/production/full/assets/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-high-speed-bullet-train-nig-4c252569bc-thumb.png"
+      },
+      "failureStage": "qa",
+      "reasonCodes": [
+        "overfilled_or_overly_dark_output",
+        "overfilled_or_blobbed_output"
+      ],
+      "errorSummary": "overfilled_or_overly_dark_output, overfilled_or_blobbed_output",
+      "round3a1WarningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ],
+      "conversionTimingMs": 383,
+      "status": "quarantined_for_now"
+    }
+  ],
+  "skipped": [],
+  "note": "Quarantine is an automated export gate only. It is not a final human aesthetic review."
+}

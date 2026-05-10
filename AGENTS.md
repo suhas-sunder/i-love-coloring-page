@@ -32,6 +32,9 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Blocked images must never be processed unless restored by an explicit later approval manifest.
 - Warning images remain eligible for conversion when they are present in the approved-source manifest; preserve warning metadata instead of treating warnings as rejection.
 - Production dry-run outputs must stay under `pipeline/production/dry-run/` and out of any Next.js `public/` folder.
+- Full production export outputs must stay under `pipeline/production/full/` and out of any Next.js `public/` folder until Round 4 explicitly decides the public asset strategy.
+- Future Next.js builds must consume generated metadata and data files instead of importing thousands of image files directly into React components.
+- Category and gallery pages may be indexable; individual image pages must not be created as indexable pages.
 - Final asset IDs must be deterministic and collision-safe.
 - Duplicate original filenames cannot be trusted as unique IDs.
 - Duplicate filenames are not duplicate images by themselves; keep same-name images when content differs and use deterministic collision-safe output IDs.
