@@ -82,6 +82,13 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Do not create indexable per-image pages.
 - Final public route planning should use the approved hub taxonomy, not raw category folders.
 - The Next.js build should consume the Round 4A hub taxonomy and image-to-hub maps.
+- Next.js gallery pages must consume Round 4A and Round 4B generated data, not raw folders.
+- Phase 2 hubs must stay out of the sitemap until a later prompt explicitly promotes them.
+- Section-only topics must stay non-indexable and should be represented only as sections, filters, or internal data.
+- Do not copy production assets into `public/` unless a later asset-hosting prompt explicitly asks for it.
+- Asset URL logic must stay centralized in the coloring asset resolver.
+- Large hub pages must use pagination or limited initial rendering.
+- Public gallery UI should be structured and useful, not a raw asset dump.
 
 ## Conversion Workflow
 

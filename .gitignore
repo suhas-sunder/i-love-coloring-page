@@ -2,6 +2,13 @@
 images/
 ilovesvg/
 
+# Next.js and package manager outputs
+node_modules/
+.next/
+out/
+dist/
+*.tsbuildinfo
+
 # Generated image and review outputs stay local or CDN-backed
 pipeline/samples/**
 pipeline/bakeoffs/**

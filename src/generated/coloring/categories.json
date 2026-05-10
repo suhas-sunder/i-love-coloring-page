@@ -1,0 +1,607 @@
+{
+  "generatedAt": "2026-05-10",
+  "runId": "round-4b-next-gallery-foundation",
+  "source": "pipeline/manifests/round-3c-production-category-data.json",
+  "summary": {
+    "categoryCount": 29,
+    "categoriesAreInternalGroupingSignals": true
+  },
+  "categories": [
+    {
+      "categorySlug": "animals",
+      "categoryTitle": "Animals",
+      "imageCount": 31,
+      "warningImageCount": 31,
+      "sampleAssetIds": [
+        "animals__animals-antelopes__49a5eb802f",
+        "animals__animals-dolphins__06e09058c7",
+        "animals__animals-falcons__39d20877ca",
+        "animals__animals-frogs__242fdad0e9",
+        "animals__animals-goose__918235b6af",
+        "animals__animals-hyenas__b0e61b6bb7",
+        "animals__animals-leopards__9be94cf823",
+        "animals__animals-owls__73a12387df",
+        "animals__animals-puppies__093b6e6276",
+        "animals__animals-sea-lion__569daf97f7",
+        "animals__animals-turkey__a5e1952cea",
+        "animals__animals-whales__9b53c68a15"
+      ],
+      "finalPublicTaxonomySource": "round-4a-hub-taxonomy",
+      "rawFolderIsNotPublicRoute": true
+    },
+    {
+      "categorySlug": "animals-playing-cards",
+      "categoryTitle": "Animals Playing Cards",
+      "imageCount": 71,
+      "warningImageCount": 69,
+      "sampleAssetIds": [
+        "animals-playing-cards__animals-bats__662bf20796",
+        "animals-playing-cards__animals-cats-wildlife__0bb744d570",
+        "animals-playing-cards__animals-cheetahs__c95563d701",
+        "animals-playing-cards__animals-cheetahs-wildlife__85ac4f4ade",
+        "animals-playing-cards__animals-donkeys__33373fda54",
+        "animals-playing-cards__animals-foxes__147d9e60c8",
+        "animals-playing-cards__animals-kittens__8845a4bedb",
+        "animals-playing-cards__animals-moose__9a63eaf49d",
+        "animals-playing-cards__animals-pandas__4e2fd61c5e",
+        "animals-playing-cards__animals-porcupines__f81b1f4c0b",
+        "animals-playing-cards__animals-wolves__688d55497c",
+        "animals-playing-cards__animals-zebras__f13de62547"
+      ],
+      "finalPublicTaxonomySource": "round-4a-hub-taxonomy",
+      "rawFolderIsNotPublicRoute": true
+    },
+    {
+      "categorySlug": "anime-girls",
+      "categoryTitle": "Anime Girls",
+      "imageCount": 903,
+      "warningImageCount": 903,
+      "sampleAssetIds": [
+        "anime-girls__anime-girl-chess-rook__3ea6076443",
+        "anime-girls__anime-girl-cursed-ruins-standoff__706e3072a4",
+        "anime-girls__anime-girl-field-of-flowers-nature__401fe52b71",
+        "anime-girls__anime-girl-rhino-hoodie-plushie-drinking-milk__bb0cc885d6",
+        "anime-girls__anime-girl-summoning-bone-dragon__25525e8031",
+        "anime-girls__anime-girl-summoning-jutsu-chimpanzee-plushies__8d6c487fd7",
+        "anime-girls__anime-girl-summoning-jutsu-giraffe-plushies__4c0112308c",
+        "anime-girls__anime-girl-summoning-jutsu-grasshopper-plushies__d3d6eb4499",
+        "anime-girls__anime-girl-summoning-jutsu-llama-plushies__10b1e7ec71",
+        "anime-girls__anime-girl-summoning-toad__a28bfa80bb",
+        "anime-girls__anime-girl-triceratops-hoodie-plushie-playing-board-games__a41606b4c0",
+        "anime-girls__anime-girl-witch-riding-broom__75a4274ba0"
+      ],
+      "finalPublicTaxonomySource": "round-4a-hub-taxonomy",
+      "rawFolderIsNotPublicRoute": true
+    },
+    {
+      "categorySlug": "birds",
+      "categoryTitle": "Birds",
+      "imageCount": 165,
+      "warningImageCount": 25,
+      "sampleAssetIds": [
+        "birds__birds-bulbul__8483fff98d",
+        "birds__birds-crow__6df1556e74",
+        "birds__birds-crows__5669dc70ec",
+        "birds__birds-ducks__1dbebbc6d6",
+        "birds__birds-falcon__79c474a40a",
+        "birds__birds-grouse__92549ceea7",
+        "birds__birds-hummingbirds__5b1de95661",
+        "birds__birds-jacana__8b6b0a895d",
+        "birds__birds-nightingale__d7642e0285",
+        "birds__birds-penguin__ae406770d7",
+        "birds__birds-short-eared-owl__8079801fab",
+        "birds__birds-woodpecker__603b858f4f"
+      ],
+      "finalPublicTaxonomySource": "round-4a-hub-taxonomy",
+      "rawFolderIsNotPublicRoute": true
+    },
+    {
+      "categorySlug": "chibi",
+      "categoryTitle": "Chibi",
+      "imageCount": 898,
+      "warningImageCount": 898,
+      "sampleAssetIds": [
+        "chibi__chibi-animals-pets-dogs-afghan-hound__d9a83b6ec9",
+        "chibi__chibi-animals-pets-dogs-akita__202daa2ad3",
+        "chibi__chibi-animals-pets-dogs-shih-tzu__2f951f298d",
+        "chibi__chibi-boar__71b5865a51",
+        "chibi__chibi-dungeon-magic-potion-table__5f5d85baaa",
+        "chibi__chibi-holiday-halloween-skeleton-band-playing-in-graveyard-coloring-page__beeabe84e8",
+        "chibi__chibi-midieval-fantasy-orc__f9cf7569a2",
+        "chibi__chibi-mushroom-porcini__5357dd49de",
+        "chibi__chibi-plushie-dugong__03c2fe95f7",
+        "chibi__chibi-plushie-fennec-fox__3e3791b4fe",
+        "chibi__chibi-plushie-pumpkin__62940acc20",
+        "chibi__chibi-wind-dragon-flying__52388f7147"
+      ],
+      "finalPublicTaxonomySource": "round-4a-hub-taxonomy",
+      "rawFolderIsNotPublicRoute": true
+    },
+    {
+      "categorySlug": "christmas",
+      "categoryTitle": "Christmas",
+      "imageCount": 101,
+      "warningImageCount": 16,
+      "sampleAssetIds": [
+        "christmas__christmas-holiday-candy-canes__6f112e464c",
+        "christmas__christmas-holiday-christmas-wreath__be936df7b8",
+        "christmas__christmas-holiday-christmas-wreath-decorations__484fd4b2af",
+        "christmas__christmas-holiday-rabbit__750430115c",
+        "christmas__christmas-holiday-raccoon__442d99e242",
+        "christmas__holiday-christmas-animals-deer__1ad8990dcd",
+        "christmas__holiday-christmas-christmas-wreath-on-front-door-coloring-page__4c2d9ac697",
+        "christmas__holiday-christmas-dogs-labrador-retriever__bb150ed2c5",
+        "christmas__holiday-christmas-holiday-cookie-decorating-coloring-page__2dd968539b",
+        "christmas__holiday-christmas-polar-bears-wrapping-gifts-coloring-page__4adc12f31d",
+        "christmas__holiday-christmas-santa-workshop-with-elves-packing-toys-coloring-page__17b1894498",
+        "christmas__holiday-christmas-winter-cabin-in-woods-with-smoke-in-chimney-coloring-p__7458ad600d"
+      ],
+      "finalPublicTaxonomySource": "round-4a-hub-taxonomy",
+      "rawFolderIsNotPublicRoute": true
+    },
+    {
+      "categorySlug": "dinosaurs",
+      "categoryTitle": "Dinosaurs",
+      "imageCount": 68,
+      "warningImageCount": 2,
+      "sampleAssetIds": [
+        "dinosaurs__prehistoric-allosaurus__9787e7d0fd",
+        "dinosaurs__prehistoric-camelops__4580f33017",
+        "dinosaurs__prehistoric-coelodonta__388a28edc0",
+        "dinosaurs__prehistoric-diplodocus-happy__a17af9a68d",
+        "dinosaurs__prehistoric-dire-wolf__825d92787d",
+        "dinosaurs__prehistoric-dodo-bird__396845907f",
+        "dinosaurs__prehistoric-fossils__4a0ab1f4d3",
+        "dinosaurs__prehistoric-gorgonopsid__c2f876c4bb",
+        "dinosaurs__prehistoric-irish-elk__68d3c2b380",
+        "dinosaurs__prehistoric-megaloceros__2341fd5c92",
+        "dinosaurs__prehistoric-quetzalcoatlus__6ac9372a4e",
+        "dinosaurs__prehistoric-velociraptor-gardening__22f1a3823e"
+      ],
+      "finalPublicTaxonomySource": "round-4a-hub-taxonomy",
+      "rawFolderIsNotPublicRoute": true
+    },
+    {
+      "categorySlug": "dogs",
+      "categoryTitle": "Dogs",
+      "imageCount": 67,
+      "warningImageCount": 0,
+      "sampleAssetIds": [
+        "dogs__dogs-afghan-hound__cdbb79eb85",
+        "dogs__dogs-border-collie__901304e7d9",
+        "dogs__dogs-bull-terrier__fedf3a0c2d",
+        "dogs__dogs-chesapeake-bay-retriever__2291012e65",
+        "dogs__dogs-cocker-spaniel__84b8ebce83",
+        "dogs__dogs-french-bulldog__2814a49432",
+        "dogs__dogs-great-pyrenees__c84862b5e4",
+        "dogs__dogs-lhasa-apso__2db6341f6d",
+        "dogs__dogs-miniature-schnauzer__20fb8aedcb",
+        "dogs__dogs-pekingese__e025aa08c3",
+        "dogs__dogs-saluki__af92dc344b",
+        "dogs__dogs-shiba-inu__d147a6d1e3"
+      ],
+      "finalPublicTaxonomySource": "round-4a-hub-taxonomy",
+      "rawFolderIsNotPublicRoute": true
+    },
+    {
+      "categorySlug": "dragons",
+      "categoryTitle": "Dragons",
+      "imageCount": 18,
+      "warningImageCount": 15,
+      "sampleAssetIds": [
+        "dragons__fantasy-mythology-dragons-dragon-eggs__8aa104cfe2",
+        "dragons__fantasy-mythology-dragons-gold-hoarding-dragon__9cca9e036c",
+        "dragons__fantasy-mythology-dragons-hydra-dragon__d8e54fd5ef",
+        "dragons__fantasy-mythology-dragons-leviathan-dragon__d1355eb0db",
+        "dragons__fantasy-mythology-dragons-lindwurm-dragon__820353e925",
+        "dragons__fantasy-mythology-dragons-lung-dragon__7cc4db1187",
+        "dragons__fantasy-mythology-dragons-oriental-dragon__5cf04326a1",
+        "dragons__fantasy-mythology-dragons-salamander-dragon__d2f294b9bc",
+        "dragons__fantasy-mythology-dragons-sea-serpent-dragon__69834159c2",
+        "dragons__fantasy-mythology-dragons-spirit-dragon__0702c2588f",
+        "dragons__fantasy-mythology-dragons-undead-dragon__9b26e17c50",
+        "dragons__fire-breathing-dragon-playing-card__f1d4a6a936"
+      ],
+      "finalPublicTaxonomySource": "round-4a-hub-taxonomy",
+      "rawFolderIsNotPublicRoute": true
+    },
+    {
+      "categorySlug": "emoji",
+      "categoryTitle": "Emoji",
+      "imageCount": 6,
+      "warningImageCount": 0,
+      "sampleAssetIds": [
+        "emoji__u-1f601-beaming-face-with-smiling-eyes__97089f2c44",
+        "emoji__u-1f603-grinning-face-with-big-eyes__75c5ee095e",
+        "emoji__u-1f604-grinning-face-with-smiling-eyes__b02ac0053f",
+        "emoji__u-1f605-grinning-face-with-sweat__5348e43db7",
+        "emoji__u-1f606-grinning-squinting-face__e90484312c",
+        "emoji__u-1f923-rolling-on-the-floor-laughing__ff3456346e"
+      ],
+      "finalPublicTaxonomySource": "round-4a-hub-taxonomy",
+      "rawFolderIsNotPublicRoute": true
+    },
+    {
+      "categorySlug": "fantasy",
+      "categoryTitle": "Fantasy",
+      "imageCount": 528,
+      "warningImageCount": 528,
+      "sampleAssetIds": [
+        "fantasy__fantasy-barbarian-storm-peak__4ec4ee7410",
+        "fantasy__fantasy-creatures-centaur-archer__906c4fd1a5",
+        "fantasy__fantasy-creatures-earth-elemental__080ab30b84",
+        "fantasy__fantasy-creatures-flying-unicorn__991af1a5d5",
+        "fantasy__fantasy-creatures-hydra__1085d31837",
+        "fantasy__fantasy-creatures-mermaid-lagoon__bb302393bc",
+        "fantasy__fantasy-creatures-undead-dragon__6b5fab566c",
+        "fantasy__fantasy-forest-sprite-dancing__0ec7ef76fb",
+        "fantasy__fantasy-holy-knight__6ba3c07413",
+        "fantasy__fantasy-necromancer-soul-flame__fe34caeee0",
+        "fantasy__fantasy-river-naiad__8a9b3418f2",
+        "fantasy__fantasy-starborn-dragon__8f7a5c3bea"
+      ],
+      "finalPublicTaxonomySource": "round-4a-hub-taxonomy",
+      "rawFolderIsNotPublicRoute": true
+    },
+    {
+      "categorySlug": "flowers",
+      "categoryTitle": "Flowers",
+      "imageCount": 163,
+      "warningImageCount": 163,
+      "sampleAssetIds": [
+        "flowers__flowers-apple-blossom__80682fcc47",
+        "flowers__flowers-coneflower__74dbf80d6f",
+        "flowers__flowers-foxglove__7522e00ee8",
+        "flowers__flowers-hollyhock__893f186320",
+        "flowers__flowers-rose__37d505f1b0",
+        "flowers__flowers-water-lily__9c55c14242",
+        "flowers__gardening-in-field-of-flowers-azalea__2aeca7510c",
+        "flowers__gardening-in-field-of-flowers-cornflower__0ced306dff",
+        "flowers__gardening-in-field-of-flowers-foxglove__290aeabc21",
+        "flowers__gardening-in-field-of-flowers-narcissus__5b1658bd9f",
+        "flowers__gardening-in-field-of-flowers-sweet-pea__c71bea8674",
+        "flowers__lowers-sunflower__b2e8fc939f"
+      ],
+      "finalPublicTaxonomySource": "round-4a-hub-taxonomy",
+      "rawFolderIsNotPublicRoute": true
+    },
+    {
+      "categorySlug": "gardening",
+      "categoryTitle": "Gardening",
+      "imageCount": 80,
+      "warningImageCount": 21,
+      "sampleAssetIds": [
+        "gardening__gardening-mushroom__e69ff4758c",
+        "gardening__gardening-mushroom-coprinus-comatus-shaggy-mane__7fb65b6f55",
+        "gardening__gardening-mushroom-earthstar-fungus__8996743c7f",
+        "gardening__gardening-mushroom-horn-of-plenty__8bf53428a3",
+        "gardening__gardening-mushroom-king-oyster__b9d5fdc612",
+        "gardening__gardening-mushroom-morel__a540c16ce5",
+        "gardening__gardening-mushroom-person__839f950bf8",
+        "gardening__gardening-mushroom-pine-mushroom-scene__c6ace33614",
+        "gardening__gardening-mushroom-shaggy-parasol__236b5f75e6",
+        "gardening__gardening-mushroom-snow-fungus__830ae63b46",
+        "gardening__gardening-mushroom-truffle-black__96607abd7b",
+        "gardening__gardening-mushroom-wood-ear__d80a1fe13c"
+      ],
+      "finalPublicTaxonomySource": "round-4a-hub-taxonomy",
+      "rawFolderIsNotPublicRoute": true
+    },
+    {
+      "categorySlug": "holiday",
+      "categoryTitle": "Holiday",
+      "imageCount": 642,
+      "warningImageCount": 642,
+      "sampleAssetIds": [
+        "holiday__holiday-birthday-celebration-plushie-butterfly-family__bf9fded621",
+        "holiday__holiday-birthday-superhero-birthday-party__f895bca201",
+        "holiday__holiday-christmas-plushie-sea-lion-family__0401e3c147",
+        "holiday__holiday-christmas-plushie-turkey-family__dd82779fc9",
+        "holiday__holiday-halloween-costume-plushie-cloud-family__2a17bedeb9",
+        "holiday__holiday-halloween-costume-plushie-cougar-family__1b2f0ed20a",
+        "holiday__holiday-halloween-costume-plushie-fennec-fox-family__9c8e86ffd5",
+        "holiday__holiday-halloween-costume-plushie-gerbil-family__b4dbd28f46",
+        "holiday__holiday-halloween-costume-plushie-parrot-family__a09c99f6c4",
+        "holiday__holiday-halloween-costume-plushie-prehistoric-velociraptor-family__1369ecd3a1",
+        "holiday__holiday-halloween-costume-plushie-puppy-dog-family__14b7901b5e",
+        "holiday__holiday-halloween-spooky-forest-path-with-glowing-eyes-coloring-page__16de6b4b56"
+      ],
+      "finalPublicTaxonomySource": "round-4a-hub-taxonomy",
+      "rawFolderIsNotPublicRoute": true
+    },
+    {
+      "categorySlug": "homes",
+      "categoryTitle": "Homes",
+      "imageCount": 39,
+      "warningImageCount": 4,
+      "sampleAssetIds": [
+        "homes__homes-apartment-building-front-view__f69cf800b3",
+        "homes__homes-country-house-with-porch-swing__9573590fc0",
+        "homes__homes-cozy-cottage-in-woods__d9142ebd8e",
+        "homes__homes-hobbit-hole-house-in-hill__2aa0cef775",
+        "homes__homes-japanese-traditional-house-with-garden__7d3da116e5",
+        "homes__homes-log-cabin-in-mountains__7342eb0d74",
+        "homes__homes-mushroom-house-fantasy-style__8cadaf8b39",
+        "homes__homes-townhouse-row-homes-scene__0d580d2465",
+        "homes__homes-treehouse-classic-ladder__0feadae6ce",
+        "homes__homes-treehouse-with-rope-bridge__c35de5fd36",
+        "homes__homes-victorian-house-front-view__681569f1dd",
+        "homes__homes-victorian-house-with-garden__dc6f000456"
+      ],
+      "finalPublicTaxonomySource": "round-4a-hub-taxonomy",
+      "rawFolderIsNotPublicRoute": true
+    },
+    {
+      "categorySlug": "horror",
+      "categoryTitle": "Horror",
+      "imageCount": 3,
+      "warningImageCount": 3,
+      "sampleAssetIds": [
+        "horror__monster-in-closet__8e715af6be",
+        "horror__monster-under-bed__d6fc572ad3",
+        "horror__zombies__8638f6539a"
+      ],
+      "finalPublicTaxonomySource": "round-4a-hub-taxonomy",
+      "rawFolderIsNotPublicRoute": true
+    },
+    {
+      "categorySlug": "indoor-plants",
+      "categoryTitle": "Indoor Plants",
+      "imageCount": 129,
+      "warningImageCount": 42,
+      "sampleAssetIds": [
+        "indoor-plants__indoor-plants-air-plant-xerographica__9c67f0b7ff",
+        "indoor-plants__indoor-plants-alocasia-dragon-scale__03c81c011c",
+        "indoor-plants__indoor-plants-alocasia-silver-dragon__e1f81c706b",
+        "indoor-plants__indoor-plants-bamboo-palm__b182761ba2",
+        "indoor-plants__indoor-plants-calathea-lancifolia-rattlesnake__12aa3ee236",
+        "indoor-plants__indoor-plants-dieffenbachia-dumb-cane__0b9432781b",
+        "indoor-plants__indoor-plants-kalanchoe-blossfeldiana__e2d0b575fe",
+        "indoor-plants__indoor-plants-kalanchoe-luciae-paddle-plant__6fc7da2379",
+        "indoor-plants__indoor-plants-lucky-money-plant-pilea-peperomioides__b96e7482b8",
+        "indoor-plants__indoor-plants-parlor-palm__bf99e09ba5",
+        "indoor-plants__indoor-plants-pilea-moon-valley__c7df19a8f5",
+        "indoor-plants__indoor-plants-snake-plant__cb98f90953"
+      ],
+      "finalPublicTaxonomySource": "round-4a-hub-taxonomy",
+      "rawFolderIsNotPublicRoute": true
+    },
+    {
+      "categorySlug": "insects",
+      "categoryTitle": "Insects",
+      "imageCount": 111,
+      "warningImageCount": 30,
+      "sampleAssetIds": [
+        "insects__insects-booklouse__2a0dd89882",
+        "insects__insects-caterpillar__95b7e25eb8",
+        "insects__insects-deer-fly__b379d4e2b8",
+        "insects__insects-earwig-on-leaf-litter__d5d1f70391",
+        "insects__insects-firefly__86626b9bbb",
+        "insects__insects-fruit-fly__9443f14262",
+        "insects__insects-goliath-beetle__387f85ce32",
+        "insects__insects-jumping-spider-on-flower__80a6380d12",
+        "insects__insects-locust-swarming-over-field__e39540009c",
+        "insects__insects-painted-lady-butterfly__9c359ad5bd",
+        "insects__insects-scorpion-in-grass__60e3655bc9",
+        "insects__insects-spider-with-wolf-head__cabd87e033"
+      ],
+      "finalPublicTaxonomySource": "round-4a-hub-taxonomy",
+      "rawFolderIsNotPublicRoute": true
+    },
+    {
+      "categorySlug": "mandala",
+      "categoryTitle": "Mandala",
+      "imageCount": 6,
+      "warningImageCount": 3,
+      "sampleAssetIds": [
+        "mandala__mandala-geometry-patterns-animal-mandala-fox__3e8e80a2fd",
+        "mandala__mandala-geometry-patterns-celestial-mandala__84d5358083",
+        "mandala__mandala-geometry-patterns-geometric-mandala__3369a57b28",
+        "mandala__mandala-geometry-patterns-hindu-mandala__fc5ca81596",
+        "mandala__mandala-geometry-patterns-nature-mandala__89a2f93a25",
+        "mandala__mandala-geometry-patterns-psychedelic-mandala__9b152d5112"
+      ],
+      "finalPublicTaxonomySource": "round-4a-hub-taxonomy",
+      "rawFolderIsNotPublicRoute": true
+    },
+    {
+      "categorySlug": "mandala-geometry-patterns",
+      "categoryTitle": "Mandala Geometry Patterns",
+      "imageCount": 1453,
+      "warningImageCount": 1453,
+      "sampleAssetIds": [
+        "mandala-geometry-patterns__mandala-geometry-patterns-flower-rose__ed6bcad347",
+        "mandala-geometry-patterns__mandala-geometry-patterns-flowers-magnolia__e36ad307c8",
+        "mandala-geometry-patterns__mandala-geometry-patterns-japan-ninja-silhouette-on-rooftop__4aadc94cd2",
+        "mandala-geometry-patterns__mandala-geometry-patterns-japan-tokyo-tower__9fc300e8a6",
+        "mandala-geometry-patterns__mandala-geometry-patterns-kaleidoscope-pattern__296e89446a",
+        "mandala-geometry-patterns__mandala-geometry-patterns-panda-sitting-patterns__a794148499",
+        "mandala-geometry-patterns__mandala-geometry-patterns-plushie-prehistoric-dodo__791923b8b8",
+        "mandala-geometry-patterns__mandala-geometry-patterns-sushi-cartoon-snow-crab-roll__37bf46950d",
+        "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-electric-train-on-overhead-__8d0469941d",
+        "mandala-geometry-patterns__mandala-geometry-patterns-vehiacle-planes-c-5-galaxy__8706f882d3",
+        "mandala-geometry-patterns__mandala-geometry-patterns-vehicle-cars-hennessey-venom-gt__4187a2bd80",
+        "mandala-geometry-patterns__mandala-geometry-patterns-vehicle-cars-rivian-r1s__72d69ecd42"
+      ],
+      "finalPublicTaxonomySource": "round-4a-hub-taxonomy",
+      "rawFolderIsNotPublicRoute": true
+    },
+    {
+      "categorySlug": "midieval",
+      "categoryTitle": "Midieval",
+      "imageCount": 161,
+      "warningImageCount": 161,
+      "sampleAssetIds": [
+        "midieval__midieval-fantasy-crusader-knight__b8d317b04f",
+        "midieval__midieval-fantasy-ghostly-knight__8ef9f5cb57",
+        "midieval__midieval-fantasy-king__d1c6de7ec7",
+        "midieval__midieval-fantasy-royal-family__6cc1ba79c9",
+        "midieval__midieval-fantasy-royal-knight__8bec3673f1",
+        "midieval__midieval-fantasy-scroll-of-fireball__90efb74ab3",
+        "midieval__midieval-fantasy-shieldmaiden__c06354ccdf",
+        "midieval__midieval-fantasy-sorcerer__351c7e51af",
+        "midieval__midieval-fantasy-squire__fb002df0b0",
+        "midieval__midieval-fantasy-stone-golem__7067ec8788",
+        "midieval__midieval-fantasy-volcanic-dragon-hoarding-gold__6df50897b0",
+        "midieval__midieval-fantasy-warhammer__e468810b92"
+      ],
+      "finalPublicTaxonomySource": "round-4a-hub-taxonomy",
+      "rawFolderIsNotPublicRoute": true
+    },
+    {
+      "categorySlug": "mythology",
+      "categoryTitle": "Mythology",
+      "imageCount": 246,
+      "warningImageCount": 246,
+      "sampleAssetIds": [
+        "mythology__fantasy-mythology-dragons-chimera-dragon__1b5e37475b",
+        "mythology__fantasy-mythology-dragons-crystal-dragon__450bb51833",
+        "mythology__fantasy-mythology-dragons-storm-dragon__288ac1b5b8",
+        "mythology__fantasy-mythology-dragons-swamp-dragon__08f6c6536b",
+        "mythology__fantasy-mythology-dragons-thunder-dragon__ba65683680",
+        "mythology__mythology-hecate__4765b38ddf",
+        "mythology__mythology-heimdall__ef95cf70dc",
+        "mythology__mythology-lakshmi__340304c323",
+        "mythology__mythology-orunmila__eeba576ce3",
+        "mythology__mythology-saraswati__2781308a8a",
+        "mythology__mythology-tangaroa__db8316961c",
+        "mythology__mythology-xolotl__e6c678d3db"
+      ],
+      "finalPublicTaxonomySource": "round-4a-hub-taxonomy",
+      "rawFolderIsNotPublicRoute": true
+    },
+    {
+      "categorySlug": "nature",
+      "categoryTitle": "Nature",
+      "imageCount": 2,
+      "warningImageCount": 0,
+      "sampleAssetIds": [
+        "nature__camping-in-the-woods-campfire-marshmellow__01497ca28a",
+        "nature__forest__0ee1cc3333"
+      ],
+      "finalPublicTaxonomySource": "round-4a-hub-taxonomy",
+      "rawFolderIsNotPublicRoute": true
+    },
+    {
+      "categorySlug": "plushie",
+      "categoryTitle": "Plushie",
+      "imageCount": 355,
+      "warningImageCount": 39,
+      "sampleAssetIds": [
+        "plushie__plushie-bighorn-sheep-family__c418fdb20f",
+        "plushie__plushie-cheetah-family__a3061ec075",
+        "plushie__plushie-fennec-fox__82e912ecfc",
+        "plushie__plushie-giraffe-family__91011633a5",
+        "plushie__plushie-hedgehog-family__1f3b659186",
+        "plushie__plushie-jaguar-family__7fd7ff3a16",
+        "plushie__plushie-lynx__04c58818eb",
+        "plushie__plushie-porcupine__ae035e0c89",
+        "plushie__plushie-prehistoric-velociraptor-family__a55479f748",
+        "plushie__plushie-puppy-dog__4a35ced072",
+        "plushie__plushie-seal-family__e4bf0b32d1",
+        "plushie__plushie-skunk__b9e524ff05"
+      ],
+      "finalPublicTaxonomySource": "round-4a-hub-taxonomy",
+      "rawFolderIsNotPublicRoute": true
+    },
+    {
+      "categorySlug": "reptiles",
+      "categoryTitle": "Reptiles",
+      "imageCount": 98,
+      "warningImageCount": 20,
+      "sampleAssetIds": [
+        "reptiles__reptiles-chameleon__90deb1f1fd",
+        "reptiles__reptiles-crested-gecko__476ca0f7ac",
+        "reptiles__reptiles-desert-iguana-on-a-cactus__a4a44751e8",
+        "reptiles__reptiles-frilled-lizard-with-frill-expanded__f1bd8fd5c1",
+        "reptiles__reptiles-gecko-on-leaf-at-night__f544e30642",
+        "reptiles__reptiles-gila-monster-on-sandy-ground__b48e7d779e",
+        "reptiles__reptiles-gliding-draco-lizard__db965a2779",
+        "reptiles__reptiles-komodo-dragons__276ed454e2",
+        "reptiles__reptiles-newt-swimming-in-pond__da2cdb2b6e",
+        "reptiles__reptiles-salamander__0041b7dd48",
+        "reptiles__reptiles-snapping-turtle-in-pond__d640061f47",
+        "reptiles__reptiles-vipers__60c0d47909"
+      ],
+      "finalPublicTaxonomySource": "round-4a-hub-taxonomy",
+      "rawFolderIsNotPublicRoute": true
+    },
+    {
+      "categorySlug": "sea-life",
+      "categoryTitle": "Sea Life",
+      "imageCount": 145,
+      "warningImageCount": 13,
+      "sampleAssetIds": [
+        "sea-life__sea-life-box-jellyfish__c2997adc54",
+        "sea-life__sea-life-clownfish-pair-in-sea-anemone__ff8430fea7",
+        "sea-life__sea-life-crab-on-sandy-beach__cc0cb06df1",
+        "sea-life__sea-life-jellyfish__ef807e50af",
+        "sea-life__sea-life-lionfish-spiky-fins-warning__04f8952709",
+        "sea-life__sea-life-octopus-hiding-in-coral-reef__f41f6b78fb",
+        "sea-life__sea-life-parrotfish__de861ce0da",
+        "sea-life__sea-life-pufferfish-inflated-defense-mode__6d3789f5f7",
+        "sea-life__sea-life-sea-turtle-green-turtle-in-reef__33b2bd8d1e",
+        "sea-life__sea-life-stingray__d46e9efa0a",
+        "sea-life__sea-life-walrus__8b76d580b9",
+        "sea-life__sea-life-whale-breaching-water-splash__721c1a3e95"
+      ],
+      "finalPublicTaxonomySource": "round-4a-hub-taxonomy",
+      "rawFolderIsNotPublicRoute": true
+    },
+    {
+      "categorySlug": "space",
+      "categoryTitle": "Space",
+      "imageCount": 1,
+      "warningImageCount": 0,
+      "sampleAssetIds": [
+        "space__chatgpt-image-may-1-2025-12-50-41-am__3e13c05f13"
+      ],
+      "finalPublicTaxonomySource": "round-4a-hub-taxonomy",
+      "rawFolderIsNotPublicRoute": true
+    },
+    {
+      "categorySlug": "st-patricks-day",
+      "categoryTitle": "St Patricks Day",
+      "imageCount": 20,
+      "warningImageCount": 2,
+      "sampleAssetIds": [
+        "st-patricks-day__st-patricks-day-celtic-knot-mandala-pattern-coloring-page__46e5c80f77",
+        "st-patricks-day__st-patricks-day-dragon-guarding-pot-of-gold-coloring-page__fcdadb8e6a",
+        "st-patricks-day__st-patricks-day-irish-castle-on-hilltop-coloring-page__862176e869",
+        "st-patricks-day__st-patricks-day-irish-harp-with-shamrocks-coloring-page__118da3d1f5",
+        "st-patricks-day__st-patricks-day-leprechaun-dancing-jig-coloring-page__24da6e22e3",
+        "st-patricks-day__st-patricks-day-leprechaun-rainbow-and-gold-coloring-page__e0a5ebbce1",
+        "st-patricks-day__st-patricks-day-leprechaun-with-pot-of-gold-coloring-page__3da829fc28",
+        "st-patricks-day__st-patricks-day-lucky-clover-field-landscape-coloring-page__606f1c9a7b",
+        "st-patricks-day__st-patricks-day-pot-of-gold-guarded-by-leprechaun-coloring-page__0cac522f50",
+        "st-patricks-day__st-patricks-day-puppy-wearing-leprechaun-hat-coloring-page__16a305e6b2",
+        "st-patricks-day__st-patricks-day-rainbow-over-green-hills-coloring-page__df165a35b6",
+        "st-patricks-day__st-patricks-day-shamrock-clover-pattern-coloring-page__ffa1652840"
+      ],
+      "finalPublicTaxonomySource": "round-4a-hub-taxonomy",
+      "rawFolderIsNotPublicRoute": true
+    },
+    {
+      "categorySlug": "world-landmarks",
+      "categoryTitle": "World Landmarks",
+      "imageCount": 47,
+      "warningImageCount": 7,
+      "sampleAssetIds": [
+        "world-landmarks__world-landmarks__4ccae2c33f",
+        "world-landmarks__world-landmarks-abu-simbel-temples__46e1dff5bc",
+        "world-landmarks__world-landmarks-colosseum__f05d9c502c",
+        "world-landmarks__world-landmarks-hollywood-sign__0d5347e375",
+        "world-landmarks__world-landmarks-kyoto-fushimi-inari-shrine__c47be5eef8",
+        "world-landmarks__world-landmarks-machu-picchu__7482a8c782",
+        "world-landmarks__world-landmarks-marina-bay-sands-singapore__6f7eb78a34",
+        "world-landmarks__world-landmarks-mecca-kaaba__c3a8cf9b69",
+        "world-landmarks__world-landmarks-mount-kilimanjaro__5d3196ad15",
+        "world-landmarks__world-landmarks-santorini-blue-domes__83788b61ae",
+        "world-landmarks__world-landmarks-sydney-opera-house__2198d4879a",
+        "world-landmarks__world-landmarks-vatican-st-peters-basilica__1875793908"
+      ],
+      "finalPublicTaxonomySource": "round-4a-hub-taxonomy",
+      "rawFolderIsNotPublicRoute": true
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-05-10",
+  "runId": "round-4b-next-gallery-foundation",
+  "assetBaseUrlEnvironmentVariable": "NEXT_PUBLIC_COLORING_ASSET_BASE_URL",
+  "localProxyEnvironmentVariable": "COLORING_ENABLE_LOCAL_ASSET_PROXY",
+  "publicClientToggleEnvironmentVariable": "NEXT_PUBLIC_COLORING_USE_LOCAL_ASSET_PROXY",
+  "localProxyRoute": "/api/coloring-assets/[...path]",
+  "localProxyAllowedRoots": [
+    "pipeline/production/full/assets/svg",
+    "pipeline/production/full/assets/png",
+    "pipeline/production/full/assets/thumbs"
+  ],
+  "localProxyAllowsPathTraversal": false,
+  "productionAssetsCopiedToPublic": false,
+  "generatedDataStoresAssetSubpathsOnly": true,
+  "fallbackWhenNoAssetUrl": "render_placeholder_card",
+  "futureRecommendedStrategy": "upload pipeline/production/full assets to CDN or object storage and set NEXT_PUBLIC_COLORING_ASSET_BASE_URL"
+}
