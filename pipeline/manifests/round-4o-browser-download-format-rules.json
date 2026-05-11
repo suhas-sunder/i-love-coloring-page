@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-05-11T01:37:53.361Z",
+  "runId": "round-4o-browser-downloads",
+  "sources": [
+    {
+      "name": "MDN, Use cross-origin images in a canvas",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/How_to/CORS_enabled_image",
+      "usedFor": "canvas tainting and cross-origin image loading requirements"
+    },
+    {
+      "name": "MDN, HTMLImageElement.crossOrigin",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/crossOrigin",
+      "usedFor": "anonymous CORS image loading before drawing to canvas"
+    },
+    {
+      "name": "MDN, HTMLCanvasElement.toBlob",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toBlob",
+      "usedFor": "PNG baseline, JPEG/WebP optional support, null callback, and SecurityError behavior"
+    },
+    {
+      "name": "Cloudflare R2, Configure CORS",
+      "url": "https://developers.cloudflare.com/r2/buckets/cors/",
+      "usedFor": "R2 bucket CORS policy and custom-domain response headers"
+    }
+  ],
+  "rules": {
+    "pngBaseline": "Direct PNG download is already supported by generated preview files and does not require canvas export.",
+    "canvasInput": "Any browser-side conversion must use the PNG preview URL as the image input.",
+    "corsRequired": "Cross-origin image data drawn into canvas requires CORS approval from the asset host.",
+    "crossOriginAnonymous": "The image element must set crossOrigin to anonymous before assigning the source URL.",
+    "toBlobNullHandling": "toBlob may pass null if an image cannot be created and may throw SecurityError for a non-origin-clean canvas.",
+    "jpegWebpOptional": "Browsers are required to support PNG export, while JPEG and WebP support is browser-dependent.",
+    "unsupportedFallback": "If a browser falls back to another MIME type, the UI must treat that format as unsupported.",
+    "svgInternalOnly": "SVG is retained for internal future coloring tools and is not a user-facing download format."
+  }
+}

@@ -162,8 +162,11 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Navbar links must use existing generated routes only.
 - Do not add backend or API routes for ads or navigation.
 - SVG is internal infrastructure only and must not be offered as a user-facing download.
-- Public download formats are PNG, JPG/JPEG, and WebP only.
+- Public download formats are PNG plus verified browser-side JPG/JPEG/WebP only.
 - If JPG/JPEG/WebP conversion is not implemented and verified, do not show those download options.
+- Browser-side conversion must remain static-export compatible.
+- Browser-side conversion must use PNG preview input, not a user-facing SVG path.
+- Do not add backend or API routes for download conversion.
 - The top-level navbar should not include a redundant `Coloring Pages` button.
 - The More menu must provide searchable access to generated hub pages.
 - Mobile navigation must include searchable hub navigation.
