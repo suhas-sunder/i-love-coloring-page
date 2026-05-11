@@ -1,0 +1,19 @@
+{
+  "generatedAt": "2026-05-11T05:41:53.453Z",
+  "runId": "round-4u-ad-density",
+  "summary": {
+    "previousAdDensityIssue": "Round 4T showed three visible wells on mobile and five on wide desktop, including desktop and lower inline wells together.",
+    "newAdVisibilityRules": "Below 1280px, show one post-hero mobile or tablet banner. From 1280px to 1739px, show only the header banner. At 1740px and above, show header banner plus left and right rails.",
+    "mobileVisibleAdCount": 1,
+    "tabletVisibleAdCount": 1,
+    "desktopVisibleAdCount": 1,
+    "wideDesktopVisibleAdCount": 3,
+    "adPlacementCountChanged": true,
+    "configuredSlotCountChanged": false,
+    "slotIdsChanged": false,
+    "adStylingChanged": false,
+    "liveAdCodeAdded": false,
+    "desktopAndMobileModelsOverlap": false,
+    "screenshotsProveFix": true
+  }
+}

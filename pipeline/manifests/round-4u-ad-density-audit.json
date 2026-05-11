@@ -1,0 +1,71 @@
+{
+  "generatedAt": "2026-05-11T05:41:53.453Z",
+  "runId": "round-4u-ad-density",
+  "summary": {
+    "currentAdSlotsByPageType": {
+      "home": [
+        "home-header-banner",
+        "rail-left-desktop",
+        "rail-right-desktop",
+        "home-after-hero",
+        "home-lower-content"
+      ],
+      "galleryLanding": [
+        "coloring-pages-header-banner",
+        "rail-left-desktop",
+        "rail-right-desktop",
+        "coloring-pages-after-featured",
+        "coloring-pages-lower-content"
+      ],
+      "hubPage": [
+        "hub-header-banner",
+        "rail-left-desktop",
+        "rail-right-desktop",
+        "hub-after-gallery",
+        "hub-lower-content"
+      ]
+    },
+    "previousMobileVisibleAdCount": 3,
+    "previousTabletVisibleAdCount": 3,
+    "previousDesktopVisibleAdCount": 3,
+    "previousWideDesktopVisibleAdCount": 5,
+    "currentVisibleCountsByWidth": {
+      "390": 1,
+      "430": 1,
+      "768": 1,
+      "1024": 1,
+      "1280": 1,
+      "1440": 1,
+      "1920": 3,
+      "2560": 3
+    },
+    "currentAboveFoldVisibleAdCount": {
+      "mobileAndTablet": 1,
+      "desktopIntermediate": 1,
+      "wideDesktop": 3
+    },
+    "moreThanThreeAdWellsOnLargeScreens": false,
+    "moreThanOneAdWellOnSmallerScreens": false,
+    "desktopAndMobileAdModelsOverlap": false,
+    "horizontalOverflowFromAds": false,
+    "heroGalleryCrowdedByAds": false,
+    "issueFound": "Round 4T made all configured wells visible, which produced three visible wells on small screens and five on wide desktops."
+  },
+  "inspectedRoutes": [
+    "/",
+    "/coloring-pages",
+    "/coloring-pages/animals",
+    "/coloring-pages/christmas",
+    "/coloring-pages/geometric"
+  ],
+  "inspectedWidths": [
+    390,
+    430,
+    768,
+    1024,
+    1280,
+    1440,
+    1920,
+    2560
+  ]
+}

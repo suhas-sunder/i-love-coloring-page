@@ -1,0 +1,627 @@
+{
+  "generatedAt": "2026-05-11T05:41:53.453Z",
+  "runId": "round-4u-ad-density",
+  "summary": {
+    "ownerAdDensityIssueFixed": true,
+    "noPageShowsFourOrFiveWells": true,
+    "noHorizontalScrollbarAtTestedWidths": true,
+    "adWellsVisibleByDefault": true,
+    "slotIdsChanged": false,
+    "liveAdCodeAdded": false,
+    "appApiRoutePresent": false,
+    "publicAssetsCopied": false,
+    "imagesStatusClean": true,
+    "ilovesvgStatusClean": true,
+    "filenamesRenamed": false
+  },
+  "screenshots": [
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/home-mobile-390.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/mobile/home-mobile-390.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/home-mobile-390.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/home-mobile-430.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/mobile/home-mobile-430.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/home-mobile-430.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/home-tablet-768.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/tablet/home-tablet-768.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/home-tablet-768.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/home-landscape-1024.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/tablet/home-landscape-1024.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/home-landscape-1024.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/home-desktop-1280.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/desktop/home-desktop-1280.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/home-desktop-1280.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/home-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/desktop/home-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/home-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/home-wide-1920.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/wide-desktop/home-wide-1920.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/home-wide-1920.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/home-ultra-2560.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/wide-desktop/home-ultra-2560.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/home-ultra-2560.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-mobile-390.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/mobile/coloring-pages-mobile-390.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-mobile-390.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-mobile-430.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/mobile/coloring-pages-mobile-430.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-mobile-430.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-tablet-768.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/tablet/coloring-pages-tablet-768.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-tablet-768.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-landscape-1024.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/tablet/coloring-pages-landscape-1024.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-landscape-1024.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-desktop-1280.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/desktop/coloring-pages-desktop-1280.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-desktop-1280.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/desktop/coloring-pages-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-wide-1920.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/wide-desktop/coloring-pages-wide-1920.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-wide-1920.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-ultra-2560.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/wide-desktop/coloring-pages-ultra-2560.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-ultra-2560.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-animals-mobile-390.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/mobile/coloring-pages-animals-mobile-390.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-animals-mobile-390.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-animals-mobile-430.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/mobile/coloring-pages-animals-mobile-430.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-animals-mobile-430.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-animals-tablet-768.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/tablet/coloring-pages-animals-tablet-768.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-animals-tablet-768.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-animals-landscape-1024.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/tablet/coloring-pages-animals-landscape-1024.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-animals-landscape-1024.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-animals-desktop-1280.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/desktop/coloring-pages-animals-desktop-1280.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-animals-desktop-1280.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-animals-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/desktop/coloring-pages-animals-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-animals-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-animals-wide-1920.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/wide-desktop/coloring-pages-animals-wide-1920.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-animals-wide-1920.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-animals-ultra-2560.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/wide-desktop/coloring-pages-animals-ultra-2560.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-animals-ultra-2560.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-christmas-mobile-390.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/mobile/coloring-pages-christmas-mobile-390.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-christmas-mobile-390.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-christmas-mobile-430.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/mobile/coloring-pages-christmas-mobile-430.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-christmas-mobile-430.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-christmas-tablet-768.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/tablet/coloring-pages-christmas-tablet-768.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-christmas-tablet-768.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-christmas-landscape-1024.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/tablet/coloring-pages-christmas-landscape-1024.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-christmas-landscape-1024.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-christmas-desktop-1280.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/desktop/coloring-pages-christmas-desktop-1280.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-christmas-desktop-1280.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-christmas-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/desktop/coloring-pages-christmas-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-christmas-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-christmas-wide-1920.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/wide-desktop/coloring-pages-christmas-wide-1920.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-christmas-wide-1920.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-christmas-ultra-2560.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/wide-desktop/coloring-pages-christmas-ultra-2560.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-christmas-ultra-2560.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-geometric-mobile-390.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/mobile/coloring-pages-geometric-mobile-390.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-geometric-mobile-390.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-geometric-mobile-430.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/mobile/coloring-pages-geometric-mobile-430.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-geometric-mobile-430.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-geometric-tablet-768.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/tablet/coloring-pages-geometric-tablet-768.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-geometric-tablet-768.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-geometric-landscape-1024.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/tablet/coloring-pages-geometric-landscape-1024.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-geometric-landscape-1024.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-geometric-desktop-1280.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/desktop/coloring-pages-geometric-desktop-1280.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-geometric-desktop-1280.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-geometric-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/desktop/coloring-pages-geometric-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-geometric-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-geometric-wide-1920.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/wide-desktop/coloring-pages-geometric-wide-1920.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-geometric-wide-1920.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-geometric-ultra-2560.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/wide-desktop/coloring-pages-geometric-ultra-2560.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-geometric-ultra-2560.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/desktop/desktop-more-menu-after-link.png",
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/mobile/mobile-menu-open.png",
+      "committed": false
+    }
+  ]
+}

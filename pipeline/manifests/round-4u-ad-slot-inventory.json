@@ -1,0 +1,344 @@
+{
+  "generatedAt": "2026-05-11T05:41:53.453Z",
+  "runId": "round-4u-ad-density",
+  "summary": {
+    "pageTypes": [
+      "home",
+      "galleryLanding",
+      "hubPage"
+    ],
+    "allSlotIdsUniqueOnPage": true,
+    "visibleCountsByWidth": {
+      "390": 1,
+      "430": 1,
+      "768": 1,
+      "1024": 1,
+      "1280": 1,
+      "1440": 1,
+      "1920": 3,
+      "2560": 3
+    },
+    "liveAdCodePresent": false,
+    "futureActiveUnitCount": 8,
+    "lowerContentUnitsDeferred": true
+  },
+  "countsByPageType": {
+    "home": {
+      "totalConfiguredPlaceholders": 5,
+      "visibleByWidth": {
+        "390": 1,
+        "430": 1,
+        "768": 1,
+        "1024": 1,
+        "1280": 1,
+        "1440": 1,
+        "1920": 3,
+        "2560": 3
+      }
+    },
+    "galleryLanding": {
+      "totalConfiguredPlaceholders": 5,
+      "visibleByWidth": {
+        "390": 1,
+        "430": 1,
+        "768": 1,
+        "1024": 1,
+        "1280": 1,
+        "1440": 1,
+        "1920": 3,
+        "2560": 3
+      }
+    },
+    "hubPage": {
+      "totalConfiguredPlaceholders": 5,
+      "visibleByWidth": {
+        "390": 1,
+        "430": 1,
+        "768": 1,
+        "1024": 1,
+        "1280": 1,
+        "1440": 1,
+        "1920": 3,
+        "2560": 3
+      }
+    }
+  },
+  "pages": [
+    {
+      "pageType": "home",
+      "routeExample": "/",
+      "totalConfiguredPlaceholders": 5,
+      "visibleByWidth": {
+        "390": 1,
+        "430": 1,
+        "768": 1,
+        "1024": 1,
+        "1280": 1,
+        "1440": 1,
+        "1920": 3,
+        "2560": 3
+      },
+      "slots": [
+        {
+          "pageType": "home",
+          "slotId": "home-header-banner",
+          "slotName": "Desktop header banner",
+          "placement": "below nav/header",
+          "visibleBreakpoints": "visible from 1280px and above",
+          "hiddenBreakpoints": "hidden below 1280px",
+          "recommendedFutureAdSenseUnitType": "responsive display ad",
+          "recommendedFutureUnitName": "ilcp-home-header-banner",
+          "viewportClass": "desktop-only",
+          "label": "Advertisement",
+          "hiddenByDefault": false,
+          "notesAboutAccidentalClickSeparation": "Desktop banner sits below navigation and is never shown with the mobile/tablet banner."
+        },
+        {
+          "pageType": "home",
+          "slotId": "rail-left-desktop",
+          "slotName": "Left desktop rail",
+          "placement": "outside left content edge",
+          "visibleBreakpoints": "visible from 1740px and above",
+          "hiddenBreakpoints": "hidden below 1740px",
+          "recommendedFutureAdSenseUnitType": "manual responsive/fixed side rail or Auto ads side rail later",
+          "recommendedFutureUnitName": "ilcp-rail-left-desktop",
+          "viewportClass": "wide-desktop-only",
+          "label": "Advertisement",
+          "hiddenByDefault": false,
+          "notesAboutAccidentalClickSeparation": "Rail keeps a 48px safe content gap and never appears on smaller screens."
+        },
+        {
+          "pageType": "home",
+          "slotId": "rail-right-desktop",
+          "slotName": "Right desktop rail",
+          "placement": "outside right content edge",
+          "visibleBreakpoints": "visible from 1740px and above",
+          "hiddenBreakpoints": "hidden below 1740px",
+          "recommendedFutureAdSenseUnitType": "manual responsive/fixed side rail or Auto ads side rail later",
+          "recommendedFutureUnitName": "ilcp-rail-right-desktop",
+          "viewportClass": "wide-desktop-only",
+          "label": "Advertisement",
+          "hiddenByDefault": false,
+          "notesAboutAccidentalClickSeparation": "Rail keeps a 48px safe content gap and never appears on smaller screens."
+        },
+        {
+          "pageType": "home",
+          "slotId": "home-after-hero",
+          "slotName": "Mobile/tablet lower banner",
+          "placement": "after the intro or first useful content area",
+          "visibleBreakpoints": "visible below 1280px",
+          "hiddenBreakpoints": "hidden from 1280px and above",
+          "recommendedFutureAdSenseUnitType": "responsive display ad",
+          "recommendedFutureUnitName": "ilcp-home-mobile-tablet-after-hero",
+          "viewportClass": "tablet-mobile-only",
+          "label": "Advertisement",
+          "hiddenByDefault": false,
+          "notesAboutAccidentalClickSeparation": "This is the only small-screen ad well and is separated from navigation, grids, and download controls."
+        },
+        {
+          "pageType": "home",
+          "slotId": "home-lower-content",
+          "slotName": "Lower inline reserve",
+          "placement": "later supporting content",
+          "visibleBreakpoints": "not visible in the current density model",
+          "hiddenBreakpoints": "hidden at all tested widths",
+          "recommendedFutureAdSenseUnitType": "defer unit creation",
+          "recommendedFutureUnitName": "ilcp-home-inline-lower",
+          "viewportClass": "inactive-reserve",
+          "label": "Advertisement",
+          "hiddenByDefault": false,
+          "notesAboutAccidentalClickSeparation": "Kept in the stable slot map but hidden to avoid overloading the page."
+        }
+      ]
+    },
+    {
+      "pageType": "galleryLanding",
+      "routeExample": "/coloring-pages",
+      "totalConfiguredPlaceholders": 5,
+      "visibleByWidth": {
+        "390": 1,
+        "430": 1,
+        "768": 1,
+        "1024": 1,
+        "1280": 1,
+        "1440": 1,
+        "1920": 3,
+        "2560": 3
+      },
+      "slots": [
+        {
+          "pageType": "galleryLanding",
+          "slotId": "coloring-pages-header-banner",
+          "slotName": "Desktop header banner",
+          "placement": "below nav/header",
+          "visibleBreakpoints": "visible from 1280px and above",
+          "hiddenBreakpoints": "hidden below 1280px",
+          "recommendedFutureAdSenseUnitType": "responsive display ad",
+          "recommendedFutureUnitName": "ilcp-coloring-pages-header-banner",
+          "viewportClass": "desktop-only",
+          "label": "Advertisement",
+          "hiddenByDefault": false,
+          "notesAboutAccidentalClickSeparation": "Desktop banner sits below navigation and is never shown with the mobile/tablet banner."
+        },
+        {
+          "pageType": "galleryLanding",
+          "slotId": "rail-left-desktop",
+          "slotName": "Left desktop rail",
+          "placement": "outside left content edge",
+          "visibleBreakpoints": "visible from 1740px and above",
+          "hiddenBreakpoints": "hidden below 1740px",
+          "recommendedFutureAdSenseUnitType": "manual responsive/fixed side rail or Auto ads side rail later",
+          "recommendedFutureUnitName": "ilcp-rail-left-desktop",
+          "viewportClass": "wide-desktop-only",
+          "label": "Advertisement",
+          "hiddenByDefault": false,
+          "notesAboutAccidentalClickSeparation": "Rail keeps a 48px safe content gap and never appears on smaller screens."
+        },
+        {
+          "pageType": "galleryLanding",
+          "slotId": "rail-right-desktop",
+          "slotName": "Right desktop rail",
+          "placement": "outside right content edge",
+          "visibleBreakpoints": "visible from 1740px and above",
+          "hiddenBreakpoints": "hidden below 1740px",
+          "recommendedFutureAdSenseUnitType": "manual responsive/fixed side rail or Auto ads side rail later",
+          "recommendedFutureUnitName": "ilcp-rail-right-desktop",
+          "viewportClass": "wide-desktop-only",
+          "label": "Advertisement",
+          "hiddenByDefault": false,
+          "notesAboutAccidentalClickSeparation": "Rail keeps a 48px safe content gap and never appears on smaller screens."
+        },
+        {
+          "pageType": "galleryLanding",
+          "slotId": "coloring-pages-after-featured",
+          "slotName": "Mobile/tablet lower banner",
+          "placement": "after the intro or first useful content area",
+          "visibleBreakpoints": "visible below 1280px",
+          "hiddenBreakpoints": "hidden from 1280px and above",
+          "recommendedFutureAdSenseUnitType": "responsive display ad",
+          "recommendedFutureUnitName": "ilcp-coloring-pages-mobile-tablet-after-featured",
+          "viewportClass": "tablet-mobile-only",
+          "label": "Advertisement",
+          "hiddenByDefault": false,
+          "notesAboutAccidentalClickSeparation": "This is the only small-screen ad well and is separated from navigation, grids, and download controls."
+        },
+        {
+          "pageType": "galleryLanding",
+          "slotId": "coloring-pages-lower-content",
+          "slotName": "Lower inline reserve",
+          "placement": "later supporting content",
+          "visibleBreakpoints": "not visible in the current density model",
+          "hiddenBreakpoints": "hidden at all tested widths",
+          "recommendedFutureAdSenseUnitType": "defer unit creation",
+          "recommendedFutureUnitName": "ilcp-coloring-pages-inline-lower",
+          "viewportClass": "inactive-reserve",
+          "label": "Advertisement",
+          "hiddenByDefault": false,
+          "notesAboutAccidentalClickSeparation": "Kept in the stable slot map but hidden to avoid overloading the page."
+        }
+      ]
+    },
+    {
+      "pageType": "hubPage",
+      "routeExample": "/coloring-pages/animals",
+      "totalConfiguredPlaceholders": 5,
+      "visibleByWidth": {
+        "390": 1,
+        "430": 1,
+        "768": 1,
+        "1024": 1,
+        "1280": 1,
+        "1440": 1,
+        "1920": 3,
+        "2560": 3
+      },
+      "slots": [
+        {
+          "pageType": "hubPage",
+          "slotId": "hub-header-banner",
+          "slotName": "Desktop header banner",
+          "placement": "below nav/header",
+          "visibleBreakpoints": "visible from 1280px and above",
+          "hiddenBreakpoints": "hidden below 1280px",
+          "recommendedFutureAdSenseUnitType": "responsive display ad",
+          "recommendedFutureUnitName": "ilcp-hub-header-banner",
+          "viewportClass": "desktop-only",
+          "label": "Advertisement",
+          "hiddenByDefault": false,
+          "notesAboutAccidentalClickSeparation": "Desktop banner sits below navigation and is never shown with the mobile/tablet banner."
+        },
+        {
+          "pageType": "hubPage",
+          "slotId": "rail-left-desktop",
+          "slotName": "Left desktop rail",
+          "placement": "outside left content edge",
+          "visibleBreakpoints": "visible from 1740px and above",
+          "hiddenBreakpoints": "hidden below 1740px",
+          "recommendedFutureAdSenseUnitType": "manual responsive/fixed side rail or Auto ads side rail later",
+          "recommendedFutureUnitName": "ilcp-rail-left-desktop",
+          "viewportClass": "wide-desktop-only",
+          "label": "Advertisement",
+          "hiddenByDefault": false,
+          "notesAboutAccidentalClickSeparation": "Rail keeps a 48px safe content gap and never appears on smaller screens."
+        },
+        {
+          "pageType": "hubPage",
+          "slotId": "rail-right-desktop",
+          "slotName": "Right desktop rail",
+          "placement": "outside right content edge",
+          "visibleBreakpoints": "visible from 1740px and above",
+          "hiddenBreakpoints": "hidden below 1740px",
+          "recommendedFutureAdSenseUnitType": "manual responsive/fixed side rail or Auto ads side rail later",
+          "recommendedFutureUnitName": "ilcp-rail-right-desktop",
+          "viewportClass": "wide-desktop-only",
+          "label": "Advertisement",
+          "hiddenByDefault": false,
+          "notesAboutAccidentalClickSeparation": "Rail keeps a 48px safe content gap and never appears on smaller screens."
+        },
+        {
+          "pageType": "hubPage",
+          "slotId": "hub-after-gallery",
+          "slotName": "Mobile/tablet lower banner",
+          "placement": "after the intro or first useful content area",
+          "visibleBreakpoints": "visible below 1280px",
+          "hiddenBreakpoints": "hidden from 1280px and above",
+          "recommendedFutureAdSenseUnitType": "responsive display ad",
+          "recommendedFutureUnitName": "ilcp-hub-mobile-tablet-after-gallery",
+          "viewportClass": "tablet-mobile-only",
+          "label": "Advertisement",
+          "hiddenByDefault": false,
+          "notesAboutAccidentalClickSeparation": "This is the only small-screen ad well and is separated from navigation, grids, and download controls."
+        },
+        {
+          "pageType": "hubPage",
+          "slotId": "hub-lower-content",
+          "slotName": "Lower inline reserve",
+          "placement": "later supporting content",
+          "visibleBreakpoints": "not visible in the current density model",
+          "hiddenBreakpoints": "hidden at all tested widths",
+          "recommendedFutureAdSenseUnitType": "defer unit creation",
+          "recommendedFutureUnitName": "ilcp-hub-inline-lower",
+          "viewportClass": "inactive-reserve",
+          "label": "Advertisement",
+          "hiddenByDefault": false,
+          "notesAboutAccidentalClickSeparation": "Kept in the stable slot map but hidden to avoid overloading the page."
+        }
+      ]
+    }
+  ],
+  "futureAdSenseUnitsToCreate": [
+    "ilcp-home-header-banner",
+    "ilcp-home-mobile-tablet-after-hero",
+    "ilcp-coloring-pages-header-banner",
+    "ilcp-coloring-pages-mobile-tablet-after-featured",
+    "ilcp-hub-header-banner",
+    "ilcp-hub-mobile-tablet-after-gallery",
+    "ilcp-rail-left-desktop",
+    "ilcp-rail-right-desktop"
+  ],
+  "deferredUnits": [
+    "ilcp-home-inline-lower",
+    "ilcp-coloring-pages-inline-lower",
+    "ilcp-hub-inline-lower"
+  ]
+}

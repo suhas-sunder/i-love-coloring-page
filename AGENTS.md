@@ -201,6 +201,14 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Placeholder-on QA must count visible `Advertisement` labels.
 - If owner screenshots show no ad placeholders, automated visibility claims are not accepted.
 - No SEO or live-ad work until placeholder visibility matches manual review.
+- Ad density must remain controlled.
+- Wide desktop should use the 3-placement model: header banner plus left and right rails.
+- Mobile and tablet should use one visible ad placeholder, not desktop rails.
+- Do not show desktop and mobile ad models at the same time.
+- Do not show 4 or 5 visible ad wells near the first screen.
+- Ad layout QA must include visible `Advertisement` counts by viewport.
+- Do not proceed to SEO or live ads until the owner accepts the visible ad layout.
+- Normal static builds should still show the selected ad wells by default.
 - More menu must open and close predictably.
 - More menu should use available desktop width responsibly and must not be cramped on large screens.
 - Mobile nav must use a proper hamburger full-screen or near-full-screen panel with search at the top.
