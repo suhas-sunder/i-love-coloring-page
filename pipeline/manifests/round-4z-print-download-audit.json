@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-05-11T20:38:40.642Z",
+  "runId": "round-4z-print-download-quality",
+  "summary": {
+    "previousPrintSource": "assetUrls.png generated PNG preview, commonly 341x512 in current sample data",
+    "samplePngPreviewDimensions": "341x512",
+    "sampleSvgDimensions": "800x1200 vector source, rasterized to 1600x2400 or larger for print",
+    "previousPrintLikelyLowResolution": true,
+    "printNowUsesConversionHelper": true,
+    "printPassesInternalSvgUrl": true,
+    "conversionUtilityUsesInternalSvg": true,
+    "conversionUtilityUsesCanvas": true,
+    "conversionUtilityDetectsCorsFailure": true,
+    "assetResolverProvidesInternalSvg": true,
+    "svgUserDownloadExposed": false,
+    "jpegWebpVisible": false
+  }
+}

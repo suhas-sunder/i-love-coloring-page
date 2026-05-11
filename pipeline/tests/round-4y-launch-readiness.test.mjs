@@ -130,6 +130,7 @@ test("public data and source do not expose forbidden ad, API, media, or download
   assert.equal(publicFiles.some((file) => /(?:^|[\\/])(?:svg|png|thumbs|coloring-pages)[\\/]/i.test(file)), false);
   assert.doesNotMatch(publicSource, /adsbygoogle|pagead2\.googlesyndication|ca-pub-|google_ad_client/i);
   assert.doesNotMatch(publicSource, /Download SVG|SVG download|Download JPG|Download JPEG|Download WebP|assetUrls\.svg|pngUrl\s*\|\|\s*svgUrl/i);
+  assert.match(publicSource, /internalSvgUrl|convertInternalSvgToBlob/);
   assert.doesNotMatch(generatedPublicData, /https?:\/\/[^"'\s]*s3[^"'\s]*amazonaws|r2\.cloudflarestorage\.com|coloring\/test-v1/i);
   assert.equal(trackedR2UploadMedia.trim(), "");
   assert.equal(statusImages.trim(), "");

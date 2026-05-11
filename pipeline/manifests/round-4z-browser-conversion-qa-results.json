@@ -1,0 +1,122 @@
+{
+  "generatedAt": "2026-05-11T20:41:24.251Z",
+  "runId": "round-4z-browser-conversion-qa",
+  "baseUrl": "http://127.0.0.1:3005",
+  "assetBaseUrl": "http://127.0.0.1:4176/coloring-pages",
+  "samples": [
+    {
+      "id": "animals-alligator",
+      "route": "/coloring-pages/animals",
+      "title": "Animals Alligator",
+      "svgUrlLoaded": true,
+      "pngPreviewLoaded": true,
+      "canvasTainted": false,
+      "pngBlobExportSucceeded": true,
+      "jpegBlobExportSucceeded": true,
+      "webpBlobExportSucceeded": true,
+      "outputWidth": 1600,
+      "outputHeight": 2400,
+      "blobTypes": {
+        "png": "image/png",
+        "jpeg": "image/jpeg",
+        "webp": "image/webp"
+      }
+    },
+    {
+      "id": "geometric-mandala",
+      "route": "/coloring-pages/geometric",
+      "title": "Mandala Geometry Patterns Geometric Mandala",
+      "svgUrlLoaded": true,
+      "pngPreviewLoaded": true,
+      "canvasTainted": false,
+      "pngBlobExportSucceeded": true,
+      "jpegBlobExportSucceeded": true,
+      "webpBlobExportSucceeded": true,
+      "outputWidth": 1600,
+      "outputHeight": 2400,
+      "blobTypes": {
+        "png": "image/png",
+        "jpeg": "image/jpeg",
+        "webp": "image/webp"
+      }
+    },
+    {
+      "id": "anime-girl",
+      "route": "/coloring-pages/anime-girls",
+      "title": "Anime Girl Air Balloon",
+      "svgUrlLoaded": true,
+      "pngPreviewLoaded": true,
+      "canvasTainted": false,
+      "pngBlobExportSucceeded": true,
+      "jpegBlobExportSucceeded": true,
+      "webpBlobExportSucceeded": true,
+      "outputWidth": 1600,
+      "outputHeight": 2400,
+      "blobTypes": {
+        "png": "image/png",
+        "jpeg": "image/jpeg",
+        "webp": "image/webp"
+      }
+    },
+    {
+      "id": "christmas",
+      "route": "/coloring-pages/christmas",
+      "title": "Christmas Holiday Advent Calendar",
+      "svgUrlLoaded": true,
+      "pngPreviewLoaded": true,
+      "canvasTainted": false,
+      "pngBlobExportSucceeded": true,
+      "jpegBlobExportSucceeded": true,
+      "webpBlobExportSucceeded": true,
+      "outputWidth": 1600,
+      "outputHeight": 2400,
+      "blobTypes": {
+        "png": "image/png",
+        "jpeg": "image/jpeg",
+        "webp": "image/webp"
+      }
+    },
+    {
+      "id": "high-detail-mandala",
+      "route": "/coloring-pages/mandalas",
+      "title": "Mandala Geometry Patterns Animal Mandala Fox",
+      "svgUrlLoaded": true,
+      "pngPreviewLoaded": true,
+      "canvasTainted": false,
+      "pngBlobExportSucceeded": true,
+      "jpegBlobExportSucceeded": true,
+      "webpBlobExportSucceeded": true,
+      "outputWidth": 1600,
+      "outputHeight": 2400,
+      "blobTypes": {
+        "png": "image/png",
+        "jpeg": "image/jpeg",
+        "webp": "image/webp"
+      }
+    }
+  ],
+  "printFlow": {
+    "popupOpened": true,
+    "usesGeneratedOutput": true,
+    "fallbackUsed": false,
+    "blobUrlUsed": true,
+    "screenshot": "pipeline/review/round-4z/screenshots/print/animals-print-flow.png"
+  },
+  "fallback": {
+    "corsUnavailableFallbackDocumented": true,
+    "fallbackSource": "png-preview-fallback",
+    "reason": "The app falls back to the PNG preview when internal SVG conversion returns a CORS or image-loading failure."
+  },
+  "summary": {
+    "passed": true,
+    "internalSvgLoadsWithCorsServer": true,
+    "canvasTaintedWithCorsServer": false,
+    "pngBlobExportSucceeded": true,
+    "jpegBlobExportSucceeded": true,
+    "webpBlobExportSucceeded": true,
+    "printFlowUsesGeneratedOutput": true,
+    "fallbackWhenCorsUnavailableDocumented": true,
+    "svgUserDownloadAbsent": true,
+    "visibleJpegWebpControlsRemainHidden": true
+  }
+}

@@ -1,4 +1,5 @@
 const DEFAULT_SITE_NAME = "I Love Coloring Page";
+const DEFAULT_CONTACT_EMAIL = "admin@ilovecoloringpage.com";
 const LOCAL_SITE_URL = "http://localhost:3005";
 const COLORING_PREFIX = "/coloring-pages";
 const LEGACY_TEST_PREFIX = ["", "coloring", "test-v1"].join("/");
@@ -24,7 +25,7 @@ type PublicUrlStatus = {
 
 const rawSiteUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim() || "";
 const rawAssetBaseUrl = process.env.NEXT_PUBLIC_COLORING_ASSET_BASE_URL?.trim() || "";
-const rawContactEmail = process.env.NEXT_PUBLIC_CONTACT_EMAIL?.trim() || "";
+const rawContactEmail = process.env.NEXT_PUBLIC_CONTACT_EMAIL?.trim() || DEFAULT_CONTACT_EMAIL;
 
 const siteUrlStatus = getPublicUrlStatus(rawSiteUrl, { requireColoringPagesPrefix: false });
 const assetUrlStatus = getPublicUrlStatus(rawAssetBaseUrl, { requireColoringPagesPrefix: true });
@@ -33,7 +34,7 @@ export const siteConfig = {
   siteName: process.env.NEXT_PUBLIC_SITE_NAME?.trim() || DEFAULT_SITE_NAME,
   siteUrl: siteUrlStatus.normalizedValue || LOCAL_SITE_URL,
   assetBaseUrl: assetUrlStatus.normalizedValue,
-  contactEmail: isUsablePublicEmail(rawContactEmail) ? rawContactEmail : "",
+  contactEmail: isUsablePublicEmail(rawContactEmail) ? rawContactEmail : DEFAULT_CONTACT_EMAIL,
   ownerName: process.env.NEXT_PUBLIC_SITE_OWNER_NAME?.trim() || "",
   jurisdiction: process.env.NEXT_PUBLIC_SITE_JURISDICTION?.trim() || "",
   currentYear: new Date().getFullYear(),

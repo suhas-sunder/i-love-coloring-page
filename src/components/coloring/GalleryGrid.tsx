@@ -21,15 +21,23 @@ export function GalleryGrid({ items, getItemHref, priorityCount = 4 }: GalleryGr
 
   return (
     <div className="gallery-grid">
-      {items.map((item, index) => (
-        <ImageCard
-          key={item.assetId}
-          item={item}
-          itemHref={getItemHref ? getItemHref(item) : `#asset-${item.assetId}`}
-          priority={index < priorityCount}
-          assetUrls={resolveColoringItemAssetUrls(item.assetSubpaths)}
-        />
-      ))}
+      {items.map((item, index) => {
+        const resolvedUrls = resolveColoringItemAssetUrls(item.assetSubpaths);
+        return (
+          <ImageCard
+            key={item.assetId}
+            item={item}
+            itemHref={getItemHref ? getItemHref(item) : `#asset-${item.assetId}`}
+            priority={index < priorityCount}
+            assetUrls={{
+              preview: resolvedUrls.preview,
+              thumbnail: resolvedUrls.thumbnail,
+              png: resolvedUrls.png,
+              internalSvg: resolvedUrls.svg,
+            }}
+          />
+        );
+      })}
     </div>
   );
 }

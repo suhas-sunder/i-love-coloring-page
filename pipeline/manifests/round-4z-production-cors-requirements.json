@@ -1,0 +1,31 @@
+{
+  "generatedAt": "2026-05-11T20:38:40.643Z",
+  "runId": "round-4z-print-download-quality",
+  "summary": {
+    "productionCorsRequiredForFutureJpegWebpUi": true,
+    "corsRequiredForHighQualityPrint": true,
+    "finalAssetDomainStillDeferred": true
+  },
+  "allowedOrigins": [
+    "http://localhost:3005",
+    "http://127.0.0.1:3005",
+    "final production site URL when known"
+  ],
+  "allowedMethods": [
+    "GET",
+    "HEAD"
+  ],
+  "allowedHeaders": [
+    "Origin",
+    "Range"
+  ],
+  "contentTypes": [
+    "image/svg+xml",
+    "image/png"
+  ],
+  "notes": [
+    "Canvas export requires origin-clean SVG and PNG responses.",
+    "R2/custom domain CORS must be configured before exposing JPG/JPEG/WebP controls.",
+    "Full image publishing remains a final production-stage task."
+  ]
+}

@@ -56,17 +56,20 @@ test("Round 4O generated artifacts parse and confirm the requested project conte
   assert.equal(context.summary.r2BundleExists, true);
 });
 
-test("browser download utility is static, PNG-input based, and never exposes SVG as a user format", async () => {
+test("browser download utility is static, keeps SVG internal, and never exposes SVG as a user format", async () => {
   const utility = await readText("src/lib/coloring/browserDownloads.ts");
   const imageCard = await readText("src/components/coloring/ImageCard.tsx");
   const audit = await readJson("pipeline/manifests/round-4o-download-implementation-audit.json");
 
   assert.match(utility, /pngPreviewUrl/);
+  assert.match(utility, /internalSvgUrl/);
+  assert.match(utility, /convertInternalSvgToBlob/);
   assert.match(utility, /crossOrigin\s*=\s*"anonymous"/);
   assert.match(utility, /toBlob/);
+  assert.match(utility, /image\/svg\+xml/);
   assert.match(utility, /image\/jpeg/);
   assert.match(utility, /image\/webp/);
-  assert.doesNotMatch(utility, /svgUrl|image\/svg\+xml|Download SVG|svgPreview/i);
+  assert.doesNotMatch(utility, /Download SVG|downloadSvg|svgDownload/i);
   assert.equal(audit.summary.svgVisibleInPublicUi, false);
   assert.equal(audit.summary.publicDownloadFormats.length, 1);
   assert.deepEqual(audit.summary.publicDownloadFormats, ["PNG"]);

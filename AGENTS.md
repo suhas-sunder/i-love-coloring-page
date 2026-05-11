@@ -258,6 +258,15 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Do not change ad placement while working on navigation or download controls.
 - Do not add backend or API routes for downloads or navigation.
 - Browser-side download conversions must remain static-export compatible.
+- Full image publishing and full R2 upload are final-stage production tasks, not blockers for local print/download feature work.
+- Print must not use thumbnail assets or tiny preview-like assets when a higher-quality internal source is available.
+- SVG is internal infrastructure and may be used for browser-side raster conversion, but it must never be exposed as a user-facing download.
+- Public download formats are PNG plus verified browser-side JPEG/JPG/WebP only.
+- Do not show JPG, JPEG, or WebP controls unless browser conversion and production asset CORS are verified.
+- Browser-side raster conversion requires the final asset domain to provide CORS for the production site origin.
+- The current public contact email is `admin@ilovecoloringpage.com` unless the owner changes it in a later round.
+- Do not add `app/api` or backend routes for downloads, printing, or conversion.
+- Image sitemap, Open Graph image, and live AdSense work must wait until public assets are final and verified.
 
 ## Production Asset Hosting
 

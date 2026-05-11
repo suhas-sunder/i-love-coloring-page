@@ -1118,14 +1118,26 @@
 }
 
 .gallery-download-link {
+  border: 0;
+  background: transparent;
   color: var(--color-text-muted);
+  cursor: pointer;
+  font-family: var(--font-ui);
   font-size: var(--text-sm-size);
   font-weight: 800;
   line-height: var(--text-sm-line);
+  padding: 0;
 }
 
 .gallery-download-link:hover {
   color: var(--color-plum);
+}
+
+.gallery-action-status {
+  color: var(--color-text-muted);
+  font-size: var(--text-xs-size);
+  line-height: var(--text-xs-line);
+  margin: 0;
 }
 
 .filter-chips {

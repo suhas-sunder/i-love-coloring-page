@@ -1,5 +1,8 @@
 "use client";
 
+import { useState } from "react";
+
+import { downloadPng, printFromHighQualitySource } from "@/lib/coloring/browserDownloads";
 import type { PublicColoringItem } from "@/lib/coloring/types";
 
 import { AssetImage } from "./AssetImage";
@@ -10,30 +13,39 @@ type ImageCardProps = {
     preview: string | null;
     thumbnail?: string | null;
     png: string | null;
+    internalSvg?: string | null;
   };
   itemHref?: string;
   priority?: boolean;
 };
 
 export function ImageCard({ item, assetUrls, itemHref = `#asset-${item.assetId}`, priority = false }: ImageCardProps) {
-  const pngUrl = assetUrls.png;
-  const printUrl = pngUrl;
-  const downloadUrl = pngUrl;
+  const [actionStatus, setActionStatus] = useState("");
+  const pngPreviewUrl = assetUrls.png;
+  const internalSvgUrl = assetUrls.internalSvg;
+  const hasPrintableAsset = Boolean(internalSvgUrl || pngPreviewUrl);
 
-  function printImage() {
-    if (!printUrl) return;
-    const printWindow = window.open("", "_blank");
-    if (!printWindow) return;
-    printWindow.opener = null;
-    printWindow.document.write(`
-      <html>
-        <head><title>${escapeHtml(item.title)}</title></head>
-        <body style="margin:0;display:grid;place-items:center;min-height:100vh;">
-          <img src="${escapeHtml(printUrl)}" alt="${escapeHtml(item.altText)}" style="max-width:100%;max-height:100vh;" onload="window.print();" />
-        </body>
-      </html>
-    `);
-    printWindow.document.close();
+  async function printImage() {
+    if (!hasPrintableAsset) return;
+    setActionStatus("");
+    const result = await printFromHighQualitySource({
+      internalSvgUrl,
+      pngPreviewUrl,
+      title: item.title,
+      altText: item.altText,
+    });
+    setActionStatus(result.ok ? result.message || "" : result.message);
+  }
+
+  async function downloadImagePng() {
+    if (!hasPrintableAsset) return;
+    setActionStatus("");
+    const result = await downloadPng({
+      internalSvgUrl,
+      pngPreviewUrl,
+      title: item.title,
+    });
+    setActionStatus(result.ok ? result.message || "" : result.message);
   }
 
   return (
@@ -46,28 +58,25 @@ export function ImageCard({ item, assetUrls, itemHref = `#asset-${item.assetId}`
       <div className="gallery-item-body">
         <h3 className="item-title">{item.title}</h3>
         <div className="gallery-actions" aria-label={`${item.title} actions`}>
-          {printUrl ? (
+          {hasPrintableAsset ? (
             <button className="button button-primary button-small" type="button" onClick={printImage} aria-label={`Print ${item.title}`}>
               Print
             </button>
           ) : (
             <span className="button button-disabled button-small">Assets pending</span>
           )}
-          {downloadUrl ? (
-            <a className="gallery-download-link" href={downloadUrl} download aria-label={`Download PNG for ${item.title}`}>
+          {hasPrintableAsset ? (
+            <button className="gallery-download-link" type="button" onClick={downloadImagePng} aria-label={`Download PNG for ${item.title}`}>
               Download PNG
-            </a>
+            </button>
           ) : null}
         </div>
+        {actionStatus ? (
+          <p className="gallery-action-status" aria-live="polite">
+            {actionStatus}
+          </p>
+        ) : null}
       </div>
     </article>
   );
-}
-
-function escapeHtml(value: string) {
-  return value
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
 }
