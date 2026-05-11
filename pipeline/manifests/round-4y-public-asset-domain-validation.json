@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-05-11T19:59:38.623Z",
+  "runId": "round-4y-public-asset-domain-validation",
+  "configured": false,
+  "ready": false,
+  "status": {
+    "configured": false,
+    "rawValue": "",
+    "normalizedValue": "",
+    "isHttpUrl": false,
+    "isLocalhost": false,
+    "isExampleDomain": false,
+    "isR2Dev": false,
+    "isPrivateR2Endpoint": false,
+    "hasColoringPagesPrefix": false,
+    "hasDuplicateColoringPagesPrefix": false,
+    "hasOldTestPrefix": false,
+    "ready": false,
+    "temporaryOnly": false,
+    "blockers": [
+      "Value is not configured."
+    ]
+  },
+  "planPath": "pipeline/manifests/round-4i-full-r2-url-verification-plan.json",
+  "plannedCheckCount": 0,
+  "executedCheckCount": 0,
+  "passedCheckCount": 0,
+  "failedCheckCount": 0,
+  "skippedReason": "NEXT_PUBLIC_COLORING_ASSET_BASE_URL is not configured.",
+  "checks": [],
+  "cacheHeadersDocumented": false
+}

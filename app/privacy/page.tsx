@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { TrustPage, TrustSection } from "@/components/site/TrustPage";
-import { getSiteUrl } from "@/lib/coloring/data";
+import { getCanonicalUrl, siteConfig } from "@/lib/site/siteConfig";
 
-const canonical = `${getSiteUrl()}/privacy`;
+const canonical = getCanonicalUrl("/privacy");
 const updatedAt = "May 11, 2026";
 
 export const metadata: Metadata = {
@@ -38,7 +38,7 @@ export default function PrivacyPage() {
 
       <TrustSection title="What this site is">
         <p>
-          I Love Coloring Page is currently a static printable coloring page gallery. Visitors can browse collections, preview images, print visible
+          {siteConfig.siteName} is currently a static printable coloring page gallery. Visitors can browse collections, preview images, print visible
           pages, and download PNG files. The current site does not provide accounts, user uploads, comments, saved galleries, payments, or a backend
           contact form.
         </p>
@@ -91,10 +91,18 @@ export default function PrivacyPage() {
       </TrustSection>
 
       <TrustSection title="Contact and updates">
-        <p>
-          Privacy questions should be directed through the <Link href="/contact">contact page</Link>. The owner should provide a real contact method
-          before launch. This policy may be updated as analytics, advertising, affiliate links, or interactive features are added.
-        </p>
+        {siteConfig.contactEmail ? (
+          <p>
+            Privacy questions can be sent to <a href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a> or through the{" "}
+            <Link href="/contact">contact page</Link>. This policy may be updated as analytics, advertising, affiliate links, or interactive features
+            are added.
+          </p>
+        ) : (
+          <p>
+            Privacy questions should be directed through the <Link href="/contact">contact page</Link>. The owner should provide a real contact method
+            before launch. This policy may be updated as analytics, advertising, affiliate links, or interactive features are added.
+          </p>
+        )}
       </TrustSection>
     </TrustPage>
   );

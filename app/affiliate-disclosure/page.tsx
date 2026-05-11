@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { TrustPage, TrustSection } from "@/components/site/TrustPage";
-import { getSiteUrl } from "@/lib/coloring/data";
+import { getCanonicalUrl, siteConfig } from "@/lib/site/siteConfig";
 
-const canonical = `${getSiteUrl()}/affiliate-disclosure`;
+const canonical = getCanonicalUrl("/affiliate-disclosure");
 
 export const metadata: Metadata = {
   title: "Affiliate Disclosure",
@@ -50,9 +50,17 @@ export default function AffiliateDisclosurePage() {
           Future affiliate content should be chosen because it is relevant to printable coloring, crafts, classrooms, or family activities. Affiliate
           compensation should not change the need for useful, honest, and clearly labeled recommendations.
         </p>
-        <p>
-          Questions about affiliate content can be sent through the <Link href="/contact">contact page</Link>.
-        </p>
+        {siteConfig.contactEmail ? (
+          <p>
+            Questions about affiliate content can be sent to <a href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a> or through the{" "}
+            <Link href="/contact">contact page</Link>.
+          </p>
+        ) : (
+          <p>
+            Questions about affiliate content can be sent through the <Link href="/contact">contact page</Link> once the public contact method is
+            configured.
+          </p>
+        )}
       </TrustSection>
     </TrustPage>
   );

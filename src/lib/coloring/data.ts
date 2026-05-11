@@ -9,6 +9,7 @@ import siteMapJson from "@/generated/coloring/site-map.json";
 import seoPagesJson from "@/generated/coloring/seo-pages.json";
 import socialMetadataJson from "@/generated/coloring/social-metadata.json";
 import titleOverridesJson from "@/generated/coloring/title-overrides.json";
+import { getSiteUrl as getConfiguredSiteUrl } from "@/lib/site/siteConfig";
 
 import type {
   ColoringHub,
@@ -296,7 +297,7 @@ export function parseStaticPageParam(value: string | undefined) {
 }
 
 export function getSiteUrl() {
-  return process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/+$/, "") || "http://localhost:3005";
+  return getConfiguredSiteUrl();
 }
 
 function getPrimaryRouteForAsset(assetId: string) {

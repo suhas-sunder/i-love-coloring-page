@@ -233,6 +233,13 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Do not add fake company, contact, address, phone, or legal details.
 - Do not add live AdSense before privacy, contact, and trust pages are accepted.
 - Sitemap may include trust pages but must still exclude per-image routes, Phase 2 hubs, rejected hubs, and image sitemap entries.
+- Public contact method is required before AdSense application.
+- `NEXT_PUBLIC_SITE_URL` must be configured before production launch.
+- `NEXT_PUBLIC_COLORING_ASSET_BASE_URL` must be configured before public media, image sitemap, or Open Graph image work.
+- Trust/legal pages are drafts until owner/legal review.
+- Live AdSense must wait until trust pages, contact method, public domain, and policy review are ready.
+- Public site build must not leak localhost, local file paths, private R2 endpoints, or stale `r2.dev` URLs unless explicitly testing.
+- Do not add image sitemap or Open Graph image work until public asset-domain validation passes.
 - Side rail ad containers must reserve and constrain a fixed safe rail width before real ad code is added.
 - Side rail ad containers must keep a clear gap from the main content and must hide before the viewport becomes unsafe.
 - A wider future ad creative must not overlap page content, create horizontal overflow, or cover navigation, gallery, search, filters, Print, or Download controls.

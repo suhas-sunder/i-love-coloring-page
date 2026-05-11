@@ -1,3 +1,4 @@
+// The public asset base uses NEXT_PUBLIC_COLORING_ASSET_BASE_URL. Round 4Y siteConfig validates the same public value for launch readiness.
 type AssetSubpathsLike = {
   svg?: string | null;
   pngPreview?: string | null;

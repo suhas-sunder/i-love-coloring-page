@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { TrustPage, TrustSection } from "@/components/site/TrustPage";
-import { getSiteUrl } from "@/lib/coloring/data";
+import { getCanonicalUrl, siteConfig } from "@/lib/site/siteConfig";
 
-const canonical = `${getSiteUrl()}/editorial-policy`;
+const canonical = getCanonicalUrl("/editorial-policy");
 
 export const metadata: Metadata = {
   title: "Editorial Policy",
@@ -47,7 +47,14 @@ export default function EditorialPolicyPage() {
       <TrustSection title="Quality and safety issues">
         <p>
           Visitors can report broken images, confusing page titles, accessibility issues, copyright concerns, or image quality problems through the{" "}
-          <Link href="/contact">contact page</Link>. Reports should include the page URL and a short explanation.
+          <Link href="/contact">contact page</Link>
+          {siteConfig.contactEmail ? (
+            <>
+              {" "}
+              or by email at <a href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a>
+            </>
+          ) : null}
+          . Reports should include the page URL and a short explanation.
         </p>
       </TrustSection>
 

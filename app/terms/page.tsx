@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { TrustPage, TrustSection } from "@/components/site/TrustPage";
-import { getSiteUrl } from "@/lib/coloring/data";
+import { getCanonicalUrl, siteConfig } from "@/lib/site/siteConfig";
 
-const canonical = `${getSiteUrl()}/terms`;
+const canonical = getCanonicalUrl("/terms");
 const updatedAt = "May 11, 2026";
 
 export const metadata: Metadata = {
@@ -68,8 +68,14 @@ export default function TermsPage() {
 
       <TrustSection title="Copyright, external links, and affiliate links">
         <p>
-          Copyright or intellectual property concerns should be sent through the <Link href="/contact">contact page</Link>. The site may link to
-          external websites in future content. Affiliate links are not active in this round, but if they are added later, the{" "}
+          Copyright or intellectual property concerns should be sent through the <Link href="/contact">contact page</Link>
+          {siteConfig.contactEmail ? (
+            <>
+              {" "}
+              or by email at <a href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a>
+            </>
+          ) : null}
+          . The site may link to external websites in future content. Affiliate links are not active in this round, but if they are added later, the{" "}
           <Link href="/affiliate-disclosure">Affiliate Disclosure</Link> will describe the relationship.
         </p>
       </TrustSection>

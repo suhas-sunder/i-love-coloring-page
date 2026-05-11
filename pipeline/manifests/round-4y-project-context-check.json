@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-05-11T19:59:38.623Z",
+  "runId": "round-4y-project-context-check",
+  "summary": {
+    "correctRepo": true,
+    "branch": "version-4",
+    "head": "a852cb1",
+    "round4xCommitExists": true,
+    "round4xAncestor": true,
+    "appApiRoutePresent": false,
+    "staticExportConfigured": true,
+    "r2BundleExists": true,
+    "publicContainsGeneratedProductionMedia": false,
+    "imagesStatusClean": true,
+    "ilovesvgStatusClean": true,
+    "publicDownloadsRemainPngOnly": true,
+    "svgExposedToUsers": false,
+    "adWellsVisibleByDefault": true,
+    "liveAdCodeExists": false
+  }
+}

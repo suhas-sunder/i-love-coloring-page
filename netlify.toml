@@ -2,6 +2,11 @@
 # Required Netlify environment variables:
 # - NEXT_PUBLIC_SITE_URL
 # - NEXT_PUBLIC_COLORING_ASSET_BASE_URL
+# - NEXT_PUBLIC_CONTACT_EMAIL before launch or AdSense review
+# Optional public wording:
+# - NEXT_PUBLIC_SITE_NAME
+# - NEXT_PUBLIC_SITE_OWNER_NAME
+# - NEXT_PUBLIC_SITE_JURISDICTION
 
 [build]
   command = "npm run build"

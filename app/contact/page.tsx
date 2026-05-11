@@ -1,24 +1,24 @@
 import type { Metadata } from "next";
 
 import { TrustPage, TrustSection } from "@/components/site/TrustPage";
-import { getSiteUrl } from "@/lib/coloring/data";
+import { getCanonicalUrl, siteConfig } from "@/lib/site/siteConfig";
 
-const canonical = `${getSiteUrl()}/contact`;
-const contactEmail = process.env.NEXT_PUBLIC_SITE_CONTACT_EMAIL;
+const canonical = getCanonicalUrl("/contact");
+const contactEmail = siteConfig.contactEmail;
 
 export const metadata: Metadata = {
-  title: "Contact I Love Coloring Page",
-  description: "Contact I Love Coloring Page about broken pages, image issues, copyright concerns, accessibility issues, partnerships, or affiliate inquiries.",
+  title: `Contact ${siteConfig.siteName}`,
+  description: `Contact ${siteConfig.siteName} about broken pages, image issues, copyright concerns, accessibility issues, partnerships, or affiliate inquiries.`,
   alternates: { canonical },
   openGraph: {
-    title: "Contact I Love Coloring Page",
+    title: `Contact ${siteConfig.siteName}`,
     description: "Contact the site about page issues, image concerns, accessibility, copyright, or partnership questions.",
     url: canonical,
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "Contact I Love Coloring Page",
+    title: `Contact ${siteConfig.siteName}`,
     description: "Contact the site about page issues, image concerns, accessibility, copyright, or partnership questions.",
   },
 };
@@ -29,7 +29,7 @@ export default function ContactPage() {
       eyebrow="Contact"
       title="Contact"
       intro="Use this page for site questions, issue reports, copyright concerns, accessibility notes, and future partnership or affiliate inquiries."
-      reviewNote="Owner input needed: set NEXT_PUBLIC_SITE_CONTACT_EMAIL before launch and AdSense review so this page has a real contact path."
+      reviewNote={contactEmail ? undefined : "Owner input needed: provide a real public contact email before launch and AdSense review."}
     >
       <TrustSection title="Contact details">
         {contactEmail ? (

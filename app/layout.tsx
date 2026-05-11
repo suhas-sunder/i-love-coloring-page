@@ -6,7 +6,7 @@ import "./globals.css";
 
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
-import { getSiteUrl } from "@/lib/coloring/data";
+import { siteConfig } from "@/lib/site/siteConfig";
 
 const figtree = Figtree({
   subsets: ["latin"],
@@ -21,10 +21,10 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(getSiteUrl()),
+  metadataBase: new URL(siteConfig.siteUrl),
   title: {
-    default: "I Love Coloring Page",
-    template: "%s | I Love Coloring Page",
+    default: siteConfig.siteName,
+    template: `%s | ${siteConfig.siteName}`,
   },
   description: "Printable coloring pages organized by useful subjects, styles, holidays, and themes.",
   icons: {

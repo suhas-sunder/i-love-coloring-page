@@ -2,23 +2,23 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { TrustPage, TrustSection } from "@/components/site/TrustPage";
-import { getSiteUrl } from "@/lib/coloring/data";
+import { getCanonicalUrl, siteConfig } from "@/lib/site/siteConfig";
 
-const canonical = `${getSiteUrl()}/about`;
+const canonical = getCanonicalUrl("/about");
 
 export const metadata: Metadata = {
-  title: "About I Love Coloring Page",
-  description: "Learn about I Love Coloring Page, a printable coloring page library organized into useful collections with PNG print and download options.",
+  title: `About ${siteConfig.siteName}`,
+  description: `Learn about ${siteConfig.siteName}, a printable coloring page library organized into useful collections with PNG print and download options.`,
   alternates: { canonical },
   openGraph: {
-    title: "About I Love Coloring Page",
+    title: `About ${siteConfig.siteName}`,
     description: "A printable coloring page library organized into searchable collections with PNG downloads.",
     url: canonical,
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "About I Love Coloring Page",
+    title: `About ${siteConfig.siteName}`,
     description: "A printable coloring page library organized into searchable collections with PNG downloads.",
   },
 };
@@ -27,8 +27,8 @@ export default function AboutPage() {
   return (
     <TrustPage
       eyebrow="About"
-      title="About I Love Coloring Page"
-      intro="I Love Coloring Page is a printable coloring page library built for quick browsing, clear previews, and simple PNG printing or downloads."
+      title={`About ${siteConfig.siteName}`}
+      intro={`${siteConfig.siteName} is a printable coloring page library built for quick browsing, clear previews, and simple PNG printing or downloads.`}
     >
       <TrustSection title="What this site is">
         <p>
