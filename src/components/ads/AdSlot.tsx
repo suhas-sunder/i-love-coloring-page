@@ -21,9 +21,6 @@ export function AdSlot({ slotId, className }: AdSlotProps) {
       data-ad-slot={slot.slotId}
     >
       <span className="ad-slot-label">Advertisement</span>
-      <span className="ad-slot-space" aria-hidden="true">
-        Future ad slot
-      </span>
     </aside>
   );
 }

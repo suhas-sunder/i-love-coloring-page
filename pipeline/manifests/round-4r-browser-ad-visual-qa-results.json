@@ -1,0 +1,424 @@
+{
+  "generatedAt": "2026-05-11T03:45:14.154Z",
+  "runId": "round-4r-ad-placeholder-visuals",
+  "status": "passed",
+  "localMediaBaseUrl": "http://127.0.0.1:4175/coloring-pages",
+  "localAppUrl": "http://127.0.0.1:3005",
+  "pagesInspected": [
+    "/",
+    "/coloring-pages",
+    "/coloring-pages/animals",
+    "/coloring-pages/geometric",
+    "/coloring-pages/anime-girls",
+    "/coloring-pages/mandalas",
+    "/coloring-pages/chibi",
+    "/coloring-pages/fantasy",
+    "/coloring-pages/christmas",
+    "/coloring-pages/halloween",
+    "/coloring-pages/plushies"
+  ],
+  "viewportsInspected": [
+    {
+      "label": "desktop",
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "label": "wide-desktop",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "label": "tablet",
+      "width": 820,
+      "height": 1180
+    },
+    {
+      "label": "mobile",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "screenshotRoots": {
+    "adPlaceholdersOn": "pipeline/review/round-4r/screenshots/ad-placeholders-on",
+    "adPlaceholdersOff": "pipeline/review/round-4r/screenshots/ad-placeholders-off"
+  },
+  "screenshots": {
+    "on": [
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-animals-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-animals-mobile.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-animals-tablet.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-animals-wide-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-anime-girls-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-anime-girls-mobile.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-anime-girls-tablet.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-anime-girls-wide-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-chibi-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-chibi-mobile.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-chibi-tablet.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-chibi-wide-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-christmas-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-christmas-mobile.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-christmas-tablet.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-christmas-wide-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-fantasy-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-fantasy-mobile.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-fantasy-tablet.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-fantasy-wide-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-geometric-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-geometric-mobile.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-geometric-tablet.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-geometric-wide-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-halloween-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-halloween-mobile.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-halloween-tablet.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-halloween-wide-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-mandalas-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-mandalas-mobile.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-mandalas-tablet.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-mandalas-wide-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-mobile.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-plushies-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-plushies-mobile.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-plushies-tablet.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-plushies-wide-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-tablet.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/coloring-pages-wide-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/home-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/home-mobile.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/home-tablet.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-on/home-wide-desktop.png",
+        "committed": false
+      }
+    ],
+    "off": [
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-animals-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-animals-mobile.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-animals-tablet.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-animals-wide-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-anime-girls-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-anime-girls-mobile.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-anime-girls-tablet.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-anime-girls-wide-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-chibi-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-chibi-mobile.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-chibi-tablet.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-chibi-wide-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-christmas-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-christmas-mobile.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-christmas-tablet.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-christmas-wide-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-fantasy-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-fantasy-mobile.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-fantasy-tablet.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-fantasy-wide-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-geometric-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-geometric-mobile.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-geometric-tablet.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-geometric-wide-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-halloween-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-halloween-mobile.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-halloween-tablet.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-halloween-wide-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-mandalas-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-mandalas-mobile.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-mandalas-tablet.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-mandalas-wide-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-mobile.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-plushies-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-plushies-mobile.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-plushies-tablet.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-plushies-wide-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-tablet.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/coloring-pages-wide-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/home-desktop.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/home-mobile.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/home-tablet.png",
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4r/screenshots/ad-placeholders-off/home-wide-desktop.png",
+        "committed": false
+      }
+    ]
+  },
+  "summary": {
+    "placeholderOff": {
+      "noPlaceholdersVisible": true,
+      "noEmptyAdGaps": true,
+      "layoutStillClean": true
+    },
+    "placeholderOn": {
+      "placeholdersVisible": true,
+      "labelsReadable": true,
+      "lookCleanerThanRound4q": true,
+      "noLiveAdCode": true,
+      "noForbiddenPlacements": true,
+      "noOverflow": true,
+      "notContentLike": true,
+      "notButtonLike": true,
+      "sideRailsHaveSafeSpacing": true,
+      "bannerLooksIntentional": true,
+      "inlineSlotsLookIntentional": true
+    }
+  }
+}

@@ -187,6 +187,13 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Side rails must disappear on smaller screens.
 - Small-screen banner ad placeholders may appear below the header, but must not crowd navigation.
 - Every ad placeholder slot needs a stable unique slot ID.
+- Round 4R freezes ad placeholder placement and slot IDs unless a documented bug requires a change.
+- Ad placeholder visual styling may be refined only as a shell polish pass that preserves slot placement, slot IDs, slot count, page coverage, and static export behavior.
+- Ad placeholders must stay clean and visible in QA mode without mimicking content cards, gallery tiles, buttons, or navigation.
+- Ad placeholders must use approved design tokens only.
+- Do not use gradients, shadows, outlines, borders, nested cards, fake ad creative, or random colors in ad placeholders.
+- Ad placeholder screenshots should be reviewed with placeholders ON and OFF before live AdSense work.
+- Live AdSense code remains out of scope until explicitly requested.
 - More menu must open and close predictably.
 - More menu should use available desktop width responsibly and must not be cramped on large screens.
 - Mobile nav must use a proper hamburger menu and search-first layout.

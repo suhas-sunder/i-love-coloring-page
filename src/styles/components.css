@@ -348,13 +348,12 @@
 
 .ad-slot {
   display: grid;
-  gap: var(--space-8);
   place-items: center;
   min-height: 128px;
   margin-top: var(--space-48);
-  border-radius: var(--radius-md);
-  background: var(--color-soft-plum);
-  color: var(--color-ink);
+  border-radius: var(--radius-sm);
+  background: var(--color-paper-soft);
+  color: var(--color-text-muted);
   padding: var(--space-20);
   scroll-margin-top: 88px;
   text-align: center;
@@ -366,31 +365,15 @@
 }
 
 .ad-slot[data-ad-placeholder="true"] {
-  background: var(--color-soft-plum);
-  color: var(--color-ink);
-}
-
-.ad-slot[data-ad-placeholder="true"]::before {
-  display: block;
-  width: 44px;
-  height: 6px;
-  border-radius: var(--radius-pill);
-  background: var(--color-coral);
-  content: "";
+  background: var(--color-paper-soft);
+  color: var(--color-text-muted);
 }
 
 .ad-slot-label {
-  color: var(--color-plum);
+  color: var(--color-text-muted);
   font-size: var(--text-xs-size);
-  font-weight: 800;
-  line-height: var(--text-xs-line);
-}
-
-.ad-slot-space {
-  color: var(--color-ink);
-  font-size: var(--text-sm-size);
   font-weight: 700;
-  line-height: var(--text-sm-line);
+  line-height: var(--text-xs-line);
 }
 
 .ad-slot-leaderboard,

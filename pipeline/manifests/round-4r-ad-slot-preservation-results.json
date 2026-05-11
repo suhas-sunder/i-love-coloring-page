@@ -1,0 +1,269 @@
+{
+  "generatedAt": "2026-05-11T03:45:14.153Z",
+  "runId": "round-4r-ad-placeholder-visuals",
+  "baseline": "Round 4Q ad slot inventory",
+  "summary": {
+    "slotIdsChanged": false,
+    "slotNamesChanged": false,
+    "slotPlacementsChanged": false,
+    "slotCountChanged": false,
+    "pageCoverageChanged": false,
+    "newSlotAdded": false,
+    "slotRemoved": false,
+    "slotMoved": false,
+    "forbiddenPlacementIntroduced": false,
+    "appApiRouteReintroduced": false,
+    "liveAdCodeAdded": false
+  },
+  "expectedSlotIds": [
+    "coloring-pages-after-featured",
+    "coloring-pages-header-banner",
+    "coloring-pages-lower-content",
+    "home-after-hero",
+    "home-header-banner",
+    "home-lower-content",
+    "hub-after-gallery",
+    "hub-header-banner",
+    "hub-lower-content",
+    "rail-left-desktop",
+    "rail-right-desktop"
+  ],
+  "slotIdsInConfig": [
+    "coloring-pages-after-featured",
+    "coloring-pages-header-banner",
+    "coloring-pages-lower-content",
+    "home-after-hero",
+    "home-header-banner",
+    "home-lower-content",
+    "hub-after-gallery",
+    "hub-header-banner",
+    "hub-lower-content",
+    "rail-left-desktop",
+    "rail-right-desktop"
+  ],
+  "missingFromConfig": [],
+  "unexpectedInConfig": [],
+  "expectedCountsByPageTypeAndViewport": {
+    "home": {
+      "desktop": 3,
+      "wideDesktop": 5,
+      "tablet": 3,
+      "mobile": 3
+    },
+    "galleryLanding": {
+      "desktop": 3,
+      "wideDesktop": 5,
+      "tablet": 3,
+      "mobile": 3
+    },
+    "hubPage": {
+      "desktop": 3,
+      "wideDesktop": 5,
+      "tablet": 3,
+      "mobile": 3
+    }
+  },
+  "pages": [
+    {
+      "pageType": "home",
+      "totalPlaceholders": 5,
+      "visibleCounts": {
+        "desktop": 3,
+        "wideDesktop": 5,
+        "tablet": 3,
+        "mobile": 3
+      },
+      "slots": [
+        {
+          "slotId": "home-header-banner",
+          "slotName": "Homepage header banner",
+          "placement": "below header before homepage hero",
+          "desktop": "visible below nav",
+          "wideDesktop": "visible below nav",
+          "tablet": "visible below header",
+          "mobile": "visible below header with reduced height",
+          "hiddenByDefault": true,
+          "futureAdUnitName": "ilcp-home-header-banner"
+        },
+        {
+          "slotId": "rail-left-desktop",
+          "slotName": "Left desktop rail",
+          "placement": "outside left edge of content with safe gap",
+          "desktop": "hidden unless the viewport reaches the wide-desktop rail breakpoint",
+          "wideDesktop": "visible outside the content column with a 48px safe gap",
+          "tablet": "hidden",
+          "mobile": "hidden",
+          "hiddenByDefault": true,
+          "futureAdUnitName": "ilcp-rail-left-desktop"
+        },
+        {
+          "slotId": "rail-right-desktop",
+          "slotName": "Right desktop rail",
+          "placement": "outside right edge of content with safe gap",
+          "desktop": "hidden unless the viewport reaches the wide-desktop rail breakpoint",
+          "wideDesktop": "visible outside the content column with a 48px safe gap",
+          "tablet": "hidden",
+          "mobile": "hidden",
+          "hiddenByDefault": true,
+          "futureAdUnitName": "ilcp-rail-right-desktop"
+        },
+        {
+          "slotId": "home-after-hero",
+          "slotName": "Homepage inline after hero",
+          "placement": "after hero and preview content",
+          "desktop": "visible after meaningful hero content",
+          "wideDesktop": "visible after meaningful hero content",
+          "tablet": "visible after meaningful hero content",
+          "mobile": "visible after meaningful hero content",
+          "hiddenByDefault": true,
+          "futureAdUnitName": "ilcp-home-inline-after-hero"
+        },
+        {
+          "slotId": "home-lower-content",
+          "slotName": "Homepage lower inline",
+          "placement": "after collection links",
+          "desktop": "visible lower in content",
+          "wideDesktop": "visible lower in content",
+          "tablet": "visible lower in content",
+          "mobile": "visible lower in content",
+          "hiddenByDefault": true,
+          "futureAdUnitName": "ilcp-home-inline-lower"
+        }
+      ]
+    },
+    {
+      "pageType": "galleryLanding",
+      "totalPlaceholders": 5,
+      "visibleCounts": {
+        "desktop": 3,
+        "wideDesktop": 5,
+        "tablet": 3,
+        "mobile": 3
+      },
+      "slots": [
+        {
+          "slotId": "coloring-pages-header-banner",
+          "slotName": "Gallery landing header banner",
+          "placement": "below header before gallery landing hero",
+          "desktop": "visible below nav",
+          "wideDesktop": "visible below nav",
+          "tablet": "visible below header",
+          "mobile": "visible below header with reduced height",
+          "hiddenByDefault": true,
+          "futureAdUnitName": "ilcp-coloring-pages-header-banner"
+        },
+        {
+          "slotId": "rail-left-desktop",
+          "slotName": "Left desktop rail",
+          "placement": "outside left edge of content with safe gap",
+          "desktop": "hidden unless the viewport reaches the wide-desktop rail breakpoint",
+          "wideDesktop": "visible outside the content column with a 48px safe gap",
+          "tablet": "hidden",
+          "mobile": "hidden",
+          "hiddenByDefault": true,
+          "futureAdUnitName": "ilcp-rail-left-desktop"
+        },
+        {
+          "slotId": "rail-right-desktop",
+          "slotName": "Right desktop rail",
+          "placement": "outside right edge of content with safe gap",
+          "desktop": "hidden unless the viewport reaches the wide-desktop rail breakpoint",
+          "wideDesktop": "visible outside the content column with a 48px safe gap",
+          "tablet": "hidden",
+          "mobile": "hidden",
+          "hiddenByDefault": true,
+          "futureAdUnitName": "ilcp-rail-right-desktop"
+        },
+        {
+          "slotId": "coloring-pages-after-featured",
+          "slotName": "Gallery landing inline after featured",
+          "placement": "after featured artwork and before search gallery",
+          "desktop": "visible after featured pages",
+          "wideDesktop": "visible after featured pages",
+          "tablet": "visible after featured pages",
+          "mobile": "visible after featured pages",
+          "hiddenByDefault": true,
+          "futureAdUnitName": "ilcp-coloring-pages-inline-after-featured"
+        },
+        {
+          "slotId": "coloring-pages-lower-content",
+          "slotName": "Gallery landing lower inline",
+          "placement": "after search gallery and before collection browse sections",
+          "desktop": "visible lower in content",
+          "wideDesktop": "visible lower in content",
+          "tablet": "visible lower in content",
+          "mobile": "visible lower in content",
+          "hiddenByDefault": true,
+          "futureAdUnitName": "ilcp-coloring-pages-inline-lower"
+        }
+      ]
+    },
+    {
+      "pageType": "hubPage",
+      "totalPlaceholders": 5,
+      "visibleCounts": {
+        "desktop": 3,
+        "wideDesktop": 5,
+        "tablet": 3,
+        "mobile": 3
+      },
+      "slots": [
+        {
+          "slotId": "hub-header-banner",
+          "slotName": "Hub header banner",
+          "placement": "below header before hub hero",
+          "desktop": "visible below nav",
+          "wideDesktop": "visible below nav",
+          "tablet": "visible below header",
+          "mobile": "visible below header with reduced height",
+          "hiddenByDefault": true,
+          "futureAdUnitName": "ilcp-hub-header-banner"
+        },
+        {
+          "slotId": "rail-left-desktop",
+          "slotName": "Left desktop rail",
+          "placement": "outside left edge of content with safe gap",
+          "desktop": "hidden unless the viewport reaches the wide-desktop rail breakpoint",
+          "wideDesktop": "visible outside the content column with a 48px safe gap",
+          "tablet": "hidden",
+          "mobile": "hidden",
+          "hiddenByDefault": true,
+          "futureAdUnitName": "ilcp-rail-left-desktop"
+        },
+        {
+          "slotId": "rail-right-desktop",
+          "slotName": "Right desktop rail",
+          "placement": "outside right edge of content with safe gap",
+          "desktop": "hidden unless the viewport reaches the wide-desktop rail breakpoint",
+          "wideDesktop": "visible outside the content column with a 48px safe gap",
+          "tablet": "hidden",
+          "mobile": "hidden",
+          "hiddenByDefault": true,
+          "futureAdUnitName": "ilcp-rail-right-desktop"
+        },
+        {
+          "slotId": "hub-after-gallery",
+          "slotName": "Hub inline after gallery",
+          "placement": "after search gallery and pagination",
+          "desktop": "visible after gallery and controls",
+          "wideDesktop": "visible after gallery and controls",
+          "tablet": "visible after gallery and controls",
+          "mobile": "visible after gallery and controls",
+          "hiddenByDefault": true,
+          "futureAdUnitName": "ilcp-hub-inline-after-gallery"
+        },
+        {
+          "slotId": "hub-lower-content",
+          "slotName": "Hub lower inline",
+          "placement": "after supporting browse links",
+          "desktop": "visible lower in content",
+          "wideDesktop": "visible lower in content",
+          "tablet": "visible lower in content",
+          "mobile": "visible lower in content",
+          "hiddenByDefault": true,
+          "futureAdUnitName": "ilcp-hub-inline-lower"
+        }
+      ]
+    }
+  ]
+}
