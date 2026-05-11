@@ -1,0 +1,20 @@
+{
+  "generatedAt": "2026-05-11T19:30:00.000Z",
+  "runId": "round-4x-trust-legal-pages",
+  "summary": {
+    "correctRepo": true,
+    "branch": "version-4",
+    "head": "db255fe2554ff0dde71a659c9c38c1f92bf09c14",
+    "round4wCommitExists": true,
+    "appApiRoutePresent": false,
+    "staticExportConfigured": true,
+    "r2BundleExists": true,
+    "publicContainsGeneratedProductionMedia": false,
+    "imagesStatusClean": true,
+    "ilovesvgStatusClean": true,
+    "publicDownloadsRemainPngOnly": true,
+    "visibleSvgDownloadOptions": false,
+    "adWellsVisibleByDefault": true,
+    "liveAdCodeExists": false
+  }
+}

@@ -225,6 +225,14 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Image sitemap and OG image work must wait until stable public asset URLs are verified.
 - JSON-LD must be accurate, visible-content-aligned, and not overused.
 - Live AdSense remains out of scope until explicitly requested.
+- Trust/legal pages are required before AdSense application.
+- Privacy page must be reviewed before live ads.
+- Contact path must be real before launch and AdSense review.
+- Affiliate disclosure must exist before affiliate links are actively used.
+- Policy pages are drafts and require owner/legal review.
+- Do not add fake company, contact, address, phone, or legal details.
+- Do not add live AdSense before privacy, contact, and trust pages are accepted.
+- Sitemap may include trust pages but must still exclude per-image routes, Phase 2 hubs, rejected hubs, and image sitemap entries.
 - Side rail ad containers must reserve and constrain a fixed safe rail width before real ad code is added.
 - Side rail ad containers must keep a clear gap from the main content and must hide before the viewport becomes unsafe.
 - A wider future ad creative must not overlap page content, create horizontal overflow, or cover navigation, gallery, search, filters, Print, or Download controls.

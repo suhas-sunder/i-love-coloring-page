@@ -1,0 +1,316 @@
+{
+  "generatedAt": "2026-05-11T19:03:31.447Z",
+  "runId": "round-4x-browser-qa",
+  "baseUrl": "http://127.0.0.1:3005",
+  "status": "passed",
+  "pagesInspected": [
+    "/about",
+    "/contact",
+    "/privacy",
+    "/terms",
+    "/affiliate-disclosure",
+    "/editorial-policy",
+    "/",
+    "/coloring-pages",
+    "/coloring-pages/animals",
+    "/coloring-pages/christmas"
+  ],
+  "screenshots": [
+    {
+      "path": "pipeline/review/round-4x/screenshots/trust-pages/about-1440.png",
+      "route": "/about",
+      "width": 1440
+    },
+    {
+      "path": "pipeline/review/round-4x/screenshots/trust-pages/contact-1440.png",
+      "route": "/contact",
+      "width": 1440
+    },
+    {
+      "path": "pipeline/review/round-4x/screenshots/trust-pages/privacy-1440.png",
+      "route": "/privacy",
+      "width": 1440
+    },
+    {
+      "path": "pipeline/review/round-4x/screenshots/trust-pages/terms-1440.png",
+      "route": "/terms",
+      "width": 1440
+    },
+    {
+      "path": "pipeline/review/round-4x/screenshots/trust-pages/affiliate-disclosure-1440.png",
+      "route": "/affiliate-disclosure",
+      "width": 1440
+    },
+    {
+      "path": "pipeline/review/round-4x/screenshots/trust-pages/editorial-policy-1440.png",
+      "route": "/editorial-policy",
+      "width": 1440
+    },
+    {
+      "path": "pipeline/review/round-4x/screenshots/ad-layout/coloring-pages-390.png",
+      "route": "/coloring-pages",
+      "width": 390,
+      "visibleAdvertisementLabelCount": 1
+    },
+    {
+      "path": "pipeline/review/round-4x/screenshots/ad-layout/coloring-pages-768.png",
+      "route": "/coloring-pages",
+      "width": 768,
+      "visibleAdvertisementLabelCount": 1
+    },
+    {
+      "path": "pipeline/review/round-4x/screenshots/ad-layout/coloring-pages-1440.png",
+      "route": "/coloring-pages",
+      "width": 1440,
+      "visibleAdvertisementLabelCount": 1
+    },
+    {
+      "path": "pipeline/review/round-4x/screenshots/wide-desktop/coloring-pages-1920.png",
+      "route": "/coloring-pages",
+      "width": 1920,
+      "visibleAdvertisementLabelCount": 3
+    },
+    {
+      "path": "pipeline/review/round-4x/screenshots/nav/more-menu-open.png",
+      "route": "/coloring-pages",
+      "width": 1440
+    },
+    {
+      "path": "pipeline/review/round-4x/screenshots/nav/mobile-nav-open.png",
+      "route": "/coloring-pages",
+      "width": 390
+    },
+    {
+      "path": "pipeline/review/round-4x/screenshots/gallery/animals-print-download-check.png",
+      "route": "/coloring-pages/animals",
+      "width": 1440
+    }
+  ],
+  "pageChecks": [
+    {
+      "route": "/about",
+      "title": "About I Love Coloring Page | I Love Coloring Page",
+      "h1Visible": true,
+      "footerLinkCount": 11,
+      "noHorizontalOverflow": true,
+      "noForbiddenVisualPatterns": true,
+      "liveAdCodeAbsent": true,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4x/screenshots/trust-pages/about-1440.png",
+          "route": "/about",
+          "width": 1440
+        }
+      ]
+    },
+    {
+      "route": "/contact",
+      "title": "Contact I Love Coloring Page | I Love Coloring Page",
+      "h1Visible": true,
+      "footerLinkCount": 11,
+      "noHorizontalOverflow": true,
+      "noForbiddenVisualPatterns": true,
+      "liveAdCodeAbsent": true,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4x/screenshots/trust-pages/contact-1440.png",
+          "route": "/contact",
+          "width": 1440
+        }
+      ]
+    },
+    {
+      "route": "/privacy",
+      "title": "Privacy Policy | I Love Coloring Page",
+      "h1Visible": true,
+      "footerLinkCount": 11,
+      "noHorizontalOverflow": true,
+      "noForbiddenVisualPatterns": true,
+      "liveAdCodeAbsent": true,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4x/screenshots/trust-pages/privacy-1440.png",
+          "route": "/privacy",
+          "width": 1440
+        }
+      ]
+    },
+    {
+      "route": "/terms",
+      "title": "Terms of Use | I Love Coloring Page",
+      "h1Visible": true,
+      "footerLinkCount": 11,
+      "noHorizontalOverflow": true,
+      "noForbiddenVisualPatterns": true,
+      "liveAdCodeAbsent": true,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4x/screenshots/trust-pages/terms-1440.png",
+          "route": "/terms",
+          "width": 1440
+        }
+      ]
+    },
+    {
+      "route": "/affiliate-disclosure",
+      "title": "Affiliate Disclosure | I Love Coloring Page",
+      "h1Visible": true,
+      "footerLinkCount": 11,
+      "noHorizontalOverflow": true,
+      "noForbiddenVisualPatterns": true,
+      "liveAdCodeAbsent": true,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4x/screenshots/trust-pages/affiliate-disclosure-1440.png",
+          "route": "/affiliate-disclosure",
+          "width": 1440
+        }
+      ]
+    },
+    {
+      "route": "/editorial-policy",
+      "title": "Editorial Policy | I Love Coloring Page",
+      "h1Visible": true,
+      "footerLinkCount": 11,
+      "noHorizontalOverflow": true,
+      "noForbiddenVisualPatterns": true,
+      "liveAdCodeAbsent": true,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4x/screenshots/trust-pages/editorial-policy-1440.png",
+          "route": "/editorial-policy",
+          "width": 1440
+        }
+      ]
+    }
+  ],
+  "adChecks": [
+    {
+      "route": "/coloring-pages",
+      "width": 390,
+      "expectedCount": 1,
+      "visibleAdvertisementLabelCount": 1,
+      "expectedCountMatches": true,
+      "noHorizontalOverflow": true,
+      "noForbiddenAdPlacements": true,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4x/screenshots/ad-layout/coloring-pages-390.png",
+          "route": "/coloring-pages",
+          "width": 390,
+          "visibleAdvertisementLabelCount": 1
+        }
+      ]
+    },
+    {
+      "route": "/coloring-pages",
+      "width": 768,
+      "expectedCount": 1,
+      "visibleAdvertisementLabelCount": 1,
+      "expectedCountMatches": true,
+      "noHorizontalOverflow": true,
+      "noForbiddenAdPlacements": true,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4x/screenshots/ad-layout/coloring-pages-768.png",
+          "route": "/coloring-pages",
+          "width": 768,
+          "visibleAdvertisementLabelCount": 1
+        }
+      ]
+    },
+    {
+      "route": "/coloring-pages",
+      "width": 1440,
+      "expectedCount": 1,
+      "visibleAdvertisementLabelCount": 1,
+      "expectedCountMatches": true,
+      "noHorizontalOverflow": true,
+      "noForbiddenAdPlacements": true,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4x/screenshots/ad-layout/coloring-pages-1440.png",
+          "route": "/coloring-pages",
+          "width": 1440,
+          "visibleAdvertisementLabelCount": 1
+        }
+      ]
+    },
+    {
+      "route": "/coloring-pages",
+      "width": 1920,
+      "expectedCount": 3,
+      "visibleAdvertisementLabelCount": 3,
+      "expectedCountMatches": true,
+      "noHorizontalOverflow": true,
+      "noForbiddenAdPlacements": true,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4x/screenshots/wide-desktop/coloring-pages-1920.png",
+          "route": "/coloring-pages",
+          "width": 1920,
+          "visibleAdvertisementLabelCount": 3
+        }
+      ]
+    }
+  ],
+  "nav": {
+    "menuVisible": true,
+    "searchVisible": true,
+    "noAdsInMenu": true,
+    "noHorizontalOverflow": true,
+    "closesOnEscape": true,
+    "screenshots": [
+      {
+        "path": "pipeline/review/round-4x/screenshots/nav/more-menu-open.png",
+        "route": "/coloring-pages",
+        "width": 1440
+      }
+    ]
+  },
+  "mobileNav": {
+    "panelVisible": true,
+    "searchVisible": true,
+    "noAdsInPanel": true,
+    "noHorizontalOverflow": true,
+    "closesOnEscape": true,
+    "screenshots": [
+      {
+        "path": "pipeline/review/round-4x/screenshots/nav/mobile-nav-open.png",
+        "route": "/coloring-pages",
+        "width": 390
+      }
+    ]
+  },
+  "gallery": {
+    "realMediaRenders": true,
+    "printVisible": true,
+    "downloadVisible": true,
+    "downloadHeadOk": true,
+    "noSvgDownload": true,
+    "noJpegWebp": true,
+    "noHorizontalOverflow": true,
+    "screenshots": [
+      {
+        "path": "pipeline/review/round-4x/screenshots/gallery/animals-print-download-check.png",
+        "route": "/coloring-pages/animals",
+        "width": 1440
+      }
+    ]
+  },
+  "summary": {
+    "status": "passed",
+    "trustPagesRender": true,
+    "footerLinksWork": true,
+    "trustPagesFollowDesignSystem": true,
+    "navStillWorks": true,
+    "moreMenuStillWorks": true,
+    "mobileNavStillWorks": true,
+    "adDensityMatchesRound4UPolicy": true,
+    "noHorizontalOverflow": true,
+    "realMediaRenders": true,
+    "pngOnlyDownloadsRemain": true,
+    "noLiveAdCode": true,
+    "appApiRouteAdded": false
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "generatedAt": "2026-05-11T19:30:00.000Z",
+  "runId": "round-4x-trust-page-metadata",
+  "pages": [
+    {
+      "route": "/about",
+      "title": "About I Love Coloring Page",
+      "description": "Learn about I Love Coloring Page, a printable coloring page library organized into useful collections with PNG print and download options.",
+      "canonicalPath": "/about",
+      "robots": "index",
+      "indexable": true
+    },
+    {
+      "route": "/contact",
+      "title": "Contact I Love Coloring Page",
+      "description": "Contact I Love Coloring Page about broken pages, image issues, copyright concerns, accessibility issues, partnerships, or affiliate inquiries.",
+      "canonicalPath": "/contact",
+      "robots": "index",
+      "indexable": true
+    },
+    {
+      "route": "/privacy",
+      "title": "Privacy Policy",
+      "description": "Read the draft privacy policy for I Love Coloring Page, including current static-site behavior and future advertising disclosures.",
+      "canonicalPath": "/privacy",
+      "robots": "index",
+      "indexable": true
+    },
+    {
+      "route": "/terms",
+      "title": "Terms of Use",
+      "description": "Read the draft terms for using I Love Coloring Page printable pages, PNG downloads, and site content.",
+      "canonicalPath": "/terms",
+      "robots": "index",
+      "indexable": true
+    },
+    {
+      "route": "/affiliate-disclosure",
+      "title": "Affiliate Disclosure",
+      "description": "Read the draft affiliate disclosure for future recommendation or referral links on I Love Coloring Page.",
+      "canonicalPath": "/affiliate-disclosure",
+      "robots": "index",
+      "indexable": true
+    },
+    {
+      "route": "/editorial-policy",
+      "title": "Editorial Policy",
+      "description": "Learn how I Love Coloring Page organizes collections, reviews printable page usefulness, and handles issue reports.",
+      "canonicalPath": "/editorial-policy",
+      "robots": "index",
+      "indexable": true
+    }
+  ],
+  "summary": {
+    "routeSpecificMetadataImplemented": true,
+    "allTrustPagesIndexable": true,
+    "ogImagesAdded": false,
+    "jsonLdAdded": false
+  }
+}

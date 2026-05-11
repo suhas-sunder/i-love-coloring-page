@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-05-11T19:30:00.000Z",
+  "runId": "round-4x-legal-review-flags",
+  "summary": {
+    "policyPagesAreDrafts": true,
+    "ownerReviewRequired": true,
+    "legalReviewRecommended": true,
+    "fakeCompanyDetailsAdded": false,
+    "fakeContactDetailsAdded": false,
+    "contactEmailMissing": true
+  },
+  "flags": [
+    "Privacy and Terms pages need owner/legal review before launch.",
+    "Contact page needs a real public email before launch and AdSense review.",
+    "Cookie consent and regional privacy requirements need review before live AdSense.",
+    "Affiliate disclosure should be placed near future affiliate links, not only in the footer."
+  ]
+}

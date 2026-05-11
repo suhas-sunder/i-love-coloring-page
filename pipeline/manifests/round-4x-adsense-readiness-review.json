@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-05-11T19:30:00.000Z",
+  "runId": "round-4x-adsense-readiness-review",
+  "summary": {
+    "uniqueContentPresent": true,
+    "trustPagesPresent": true,
+    "contactPathPresent": true,
+    "privacyPagePresent": true,
+    "termsPresent": true,
+    "affiliateDisclosurePresent": true,
+    "liveAdCodeAbsent": true,
+    "adPlaceholdersPolicySafe": true,
+    "adDensityAccepted": true,
+    "noThinPageObviousBlockers": true,
+    "noBrokenMediaInLocalPreview": "pending browser QA",
+    "noSvgPublicDownload": true,
+    "readyToApplyForAdSenseNow": false
+  },
+  "blockers": [
+    "Owner must provide a real contact path before launch and AdSense review.",
+    "Owner/legal review is required before policy pages are treated as final.",
+    "Public asset-domain verification is still separate from this round."
+  ],
+  "recommendation": "Do not apply for AdSense until owner contact details, policy review, and public asset-domain verification are complete."
+}

@@ -1,5 +1,6 @@
 import routesJson from "@/generated/coloring/routes.json";
 import hubsJson from "@/generated/coloring/hubs.json";
+import { footerTrustLinks } from "@/lib/trust/trustPages";
 
 type RoutesManifest = {
   routes: Array<{ path: string }>;
@@ -57,6 +58,7 @@ export const siteNavLinks = requestedNavLinks.filter((link) => isKnownStaticRout
 export const footerNavLinks = siteNavLinks.filter((link) => link.group === "footer");
 export const primaryNavLinks = siteNavLinks.filter((link) => link.group === "primary");
 export const utilityNavLinks = siteNavLinks.filter((link) => link.group === "utility");
+export const footerPolicyLinks = footerTrustLinks;
 
 const primaryRoutePaths = new Set(primaryNavLinks.map((link) => getRoutePath(link.href)));
 const backlogSlugs = new Set((hubsManifest.backlogHubs || []).map((hub) => hub.slug));

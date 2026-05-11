@@ -1,0 +1,59 @@
+{
+  "generatedAt": "2026-05-11T19:30:00.000Z",
+  "runId": "round-4x-trust-legal-requirements",
+  "sources": [
+    {
+      "name": "Google AdSense required content",
+      "url": "https://support.google.com/adsense/answer/1348695?hl=en",
+      "use": "Privacy policy draft includes Google advertising cookie, personalized advertising, Ads Settings, and aboutads.info disclosures for future live ads."
+    },
+    {
+      "name": "Google AdSense page readiness",
+      "url": "https://support.google.com/adsense/answer/7299563/make-sure-that-your-site-s-pages-are-ready-for-adsense?hl=en-GB",
+      "use": "Trust pages support clear navigation, useful original content, and user confidence before AdSense review."
+    },
+    {
+      "name": "Google Publisher Policies",
+      "url": "https://support.google.com/adsense/answer/10502938?hl=en-EN&ref_topic=1250104",
+      "use": "Reports preserve no live ads, no low-value pages, privacy disclosure planning, and no misrepresentation."
+    },
+    {
+      "name": "Google AdSense ad placement policies",
+      "url": "https://support.google.com/adsense/answer/1346295?hl=en",
+      "use": "No trust page places ads near navigation or controls; existing Advertisement label remains policy-aligned."
+    },
+    {
+      "name": "FTC Disclosures 101",
+      "url": "https://www.ftc.gov/influencers",
+      "use": "Affiliate disclosure page says future disclosures must be easy to see and close to affiliate content."
+    },
+    {
+      "name": "FTC Endorsement Guides FAQ",
+      "url": "https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides",
+      "use": "Affiliate disclosure explains commissions and clear, conspicuous disclosure near links."
+    },
+    {
+      "name": "Google helpful content",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "use": "Pages are concise, visitor-focused, and avoid generic filler."
+    }
+  ],
+  "now": [
+    "Add About, Contact, Privacy, Terms, Affiliate Disclosure, and Editorial Policy pages.",
+    "Add footer access and sitemap inclusion for indexable trust pages.",
+    "Keep policy pages as drafts requiring owner review."
+  ],
+  "later": [
+    "Add a real contact email.",
+    "Review privacy/cookie consent before live AdSense.",
+    "Complete legal review before launch.",
+    "Verify public asset domain before AdSense application."
+  ],
+  "intentionallyDeferred": [
+    "Live AdSense code",
+    "Cookie consent tooling",
+    "JSON-LD",
+    "Image sitemap",
+    "Open Graph image generation"
+  ]
+}
