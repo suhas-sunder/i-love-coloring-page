@@ -1,0 +1,374 @@
+{
+  "generatedAt": "2026-05-11T23:47:22.149Z",
+  "runId": "round-5b-asset-format-rationalization",
+  "summary": {
+    "sourceAssetCount": 6557,
+    "webpPresentAtRoundStart": false,
+    "webpCurrentlyPresent": true,
+    "currentLocalBundleContains": {
+      "svg": true,
+      "png": true,
+      "thumbs": true,
+      "webp": true
+    },
+    "webpAlreadyExistsForAllAssets": true,
+    "thumbnailsCurrentlyUsed": true,
+    "pngPreviewsCurrentlyRequiredForGallery": false,
+    "pngPreviewsCurrentlyRequiredForUserDownloadFallback": true,
+    "pngPreviewsCurrentlyRequiredForPrintFallback": true,
+    "appCanRenderGalleryFromWebpAfterRound": true
+  },
+  "folders": {
+    "svg": {
+      "folder": "pipeline/r2-upload/coloring-pages/svg",
+      "exists": true,
+      "fileCount": 6557,
+      "totalBytes": 1828606924,
+      "averageBytes": 278879,
+      "largestFiles": [
+        {
+          "path": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-summoning-jutsu-fae-dragon-fairy-dragon-high-detail-6c0f7c30b1.svg",
+          "bytes": 1993250
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/svg/fantasy/fantasy-mountain-guardian-339bc727d7.svg",
+          "bytes": 1983964
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-summoning-jutsu-swamp-dragon-plushies-2d5ed605c2.svg",
+          "bytes": 1846161
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-energy-ball-attack-leviathan-battle-shounin-d0a627c243.svg",
+          "bytes": 1826923
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-summoning-jutsu-beetles-13ee413203.svg",
+          "bytes": 1748949
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/svg/fantasy/fantasy-creatures-two-tail-basilisk-in-cave-0e84f76d23.svg",
+          "bytes": 1671933
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-summoning-magic-musical-sword-plushies-72066c4f84.svg",
+          "bytes": 1668277
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-cave-stalactites-and-stalagmites-889feedccf.svg",
+          "bytes": 1618971
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-summoning-jutsu-raccoons-443a729e66.svg",
+          "bytes": 1573224
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-summoning-jutsu-cats-ea0070f014.svg",
+          "bytes": 1559337
+        }
+      ],
+      "categoryCount": 29,
+      "filesByCategory": {
+        "animals": 31,
+        "animals-playing-cards": 71,
+        "anime-girls": 903,
+        "birds": 165,
+        "chibi": 898,
+        "christmas": 101,
+        "dinosaurs": 68,
+        "dogs": 67,
+        "dragons": 18,
+        "emoji": 6,
+        "fantasy": 528,
+        "flowers": 163,
+        "gardening": 80,
+        "holiday": 642,
+        "homes": 39,
+        "horror": 3,
+        "indoor-plants": 129,
+        "insects": 111,
+        "mandala": 6,
+        "mandala-geometry-patterns": 1453,
+        "midieval": 161,
+        "mythology": 246,
+        "nature": 2,
+        "plushie": 355,
+        "reptiles": 98,
+        "sea-life": 145,
+        "space": 1,
+        "st-patricks-day": 20,
+        "world-landmarks": 47
+      }
+    },
+    "png": {
+      "folder": "pipeline/r2-upload/coloring-pages/png",
+      "exists": true,
+      "fileCount": 6557,
+      "totalBytes": 806621170,
+      "averageBytes": 123017,
+      "largestFiles": [
+        {
+          "path": "pipeline/r2-upload/coloring-pages/png/mandala-geometry-patterns/mandala-geometry-patterns-cave-stalactites-and-stalagmites-889feedccf.png",
+          "bytes": 274412
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-summoning-jutsu-fae-dragon-fairy-dragon-high-detail-6c0f7c30b1.png",
+          "bytes": 243246
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-summoning-forest-fairies-4d93ad28c4.png",
+          "bytes": 239482
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-summoning-jutsu-beetles-13ee413203.png",
+          "bytes": 235769
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/png/mandala-geometry-patterns/mandala-geometry-patterns-japan-traditional-house-5903ae39c2.png",
+          "bytes": 234577
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/png/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-tesla-model-x-755c819002.png",
+          "bytes": 232608
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-energy-ball-attack-leviathan-battle-shounin-d0a627c243.png",
+          "bytes": 232239
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/png/mandala-geometry-patterns/mandala-geometry-patterns-japan-nikko-toshogu-shrine-edd659182d.png",
+          "bytes": 232003
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/png/mythology/fantasy-mythology-dragons-storm-dragon-288ac1b5b8.png",
+          "bytes": 230703
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/png/mandala-geometry-patterns/mandala-geometry-patterns-japan-haori-jacket-display-efde9dfa84.png",
+          "bytes": 230638
+        }
+      ],
+      "categoryCount": 29,
+      "filesByCategory": {
+        "animals": 31,
+        "animals-playing-cards": 71,
+        "anime-girls": 903,
+        "birds": 165,
+        "chibi": 898,
+        "christmas": 101,
+        "dinosaurs": 68,
+        "dogs": 67,
+        "dragons": 18,
+        "emoji": 6,
+        "fantasy": 528,
+        "flowers": 163,
+        "gardening": 80,
+        "holiday": 642,
+        "homes": 39,
+        "horror": 3,
+        "indoor-plants": 129,
+        "insects": 111,
+        "mandala": 6,
+        "mandala-geometry-patterns": 1453,
+        "midieval": 161,
+        "mythology": 246,
+        "nature": 2,
+        "plushie": 355,
+        "reptiles": 98,
+        "sea-life": 145,
+        "space": 1,
+        "st-patricks-day": 20,
+        "world-landmarks": 47
+      }
+    },
+    "thumbs": {
+      "folder": "pipeline/r2-upload/coloring-pages/thumbs",
+      "exists": true,
+      "fileCount": 6557,
+      "totalBytes": 513370575,
+      "averageBytes": 78294,
+      "largestFiles": [
+        {
+          "path": "pipeline/r2-upload/coloring-pages/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-cave-stalactites-and-stalagmites-889feedccf-thumb.png",
+          "bytes": 138259
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/thumbs/mandala-geometry-patterns/failed-chatgpt-image-oct-19-2025-10-27-27-pm-a0411d2e82-thumb.png",
+          "bytes": 134949
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-narrow-gauge-railway-train--220bfb7725-thumb.png",
+          "bytes": 128100
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-japan-matsumoto-castle-1655fa0fdb-thumb.png",
+          "bytes": 127903
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-tesla-model-x-755c819002-thumb.png",
+          "bytes": 127170
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/thumbs/anime-girls/anime-girl-summoning-jutsu-fae-dragon-fairy-dragon-high-detail-6c0f7c30b1-thumb.png",
+          "bytes": 126865
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-japan-traditional-house-5903ae39c2-thumb.png",
+          "bytes": 126585
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-japan-hokkaido-lavender-fields-86a4307233-thumb.png",
+          "bytes": 125992
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/thumbs/mythology/fantasy-mythology-dragons-poison-dragon-c11ae50cc0-thumb.png",
+          "bytes": 125117
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-japan-nikko-toshogu-shrine-edd659182d-thumb.png",
+          "bytes": 125014
+        }
+      ],
+      "categoryCount": 29,
+      "filesByCategory": {
+        "animals": 31,
+        "animals-playing-cards": 71,
+        "anime-girls": 903,
+        "birds": 165,
+        "chibi": 898,
+        "christmas": 101,
+        "dinosaurs": 68,
+        "dogs": 67,
+        "dragons": 18,
+        "emoji": 6,
+        "fantasy": 528,
+        "flowers": 163,
+        "gardening": 80,
+        "holiday": 642,
+        "homes": 39,
+        "horror": 3,
+        "indoor-plants": 129,
+        "insects": 111,
+        "mandala": 6,
+        "mandala-geometry-patterns": 1453,
+        "midieval": 161,
+        "mythology": 246,
+        "nature": 2,
+        "plushie": 355,
+        "reptiles": 98,
+        "sea-life": 145,
+        "space": 1,
+        "st-patricks-day": 20,
+        "world-landmarks": 47
+      }
+    },
+    "webp": {
+      "folder": "pipeline/r2-upload/coloring-pages/webp",
+      "exists": true,
+      "fileCount": 6557,
+      "totalBytes": 320130452,
+      "averageBytes": 48823,
+      "largestFiles": [
+        {
+          "path": "pipeline/r2-upload/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-cave-stalactites-and-stalagmites-889feedccf.webp",
+          "bytes": 92478
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-symmetrical-mandala-ac49e50c14.webp",
+          "bytes": 89490
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-tesla-model-x-755c819002.webp",
+          "bytes": 89080
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-plushie-dinosaur-54850ae319.webp",
+          "bytes": 88912
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/webp/mandala-geometry-patterns/failed-chatgpt-image-oct-19-2025-10-27-27-pm-a0411d2e82.webp",
+          "bytes": 87458
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/webp/mandala/mandala-geometry-patterns-psychedelic-mandala-9b152d5112.webp",
+          "bytes": 86866
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-japan-hokkaido-lavender-fields-86a4307233.webp",
+          "bytes": 86712
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-narrow-gauge-railway-train--220bfb7725.webp",
+          "bytes": 85862
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-japan-matsumoto-castle-1655fa0fdb.webp",
+          "bytes": 85718
+        },
+        {
+          "path": "pipeline/r2-upload/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-japan-traditional-house-5903ae39c2.webp",
+          "bytes": 85414
+        }
+      ],
+      "categoryCount": 29,
+      "filesByCategory": {
+        "animals": 31,
+        "animals-playing-cards": 71,
+        "anime-girls": 903,
+        "birds": 165,
+        "chibi": 898,
+        "christmas": 101,
+        "dinosaurs": 68,
+        "dogs": 67,
+        "dragons": 18,
+        "emoji": 6,
+        "fantasy": 528,
+        "flowers": 163,
+        "gardening": 80,
+        "holiday": 642,
+        "homes": 39,
+        "horror": 3,
+        "indoor-plants": 129,
+        "insects": 111,
+        "mandala": 6,
+        "mandala-geometry-patterns": 1453,
+        "midieval": 161,
+        "mythology": 246,
+        "nature": 2,
+        "plushie": 355,
+        "reptiles": 98,
+        "sea-life": 145,
+        "space": 1,
+        "st-patricks-day": 20,
+        "world-landmarks": 47
+      }
+    }
+  },
+  "generatedDataReferences": {
+    "itemCount": 6557,
+    "svgSubpathCount": 6557,
+    "pngPreviewSubpathCount": 6557,
+    "thumbnailSubpathCount": 6557,
+    "explicitWebpPreviewSubpathCount": 0,
+    "derivedWebpPreviewCount": 6557
+  },
+  "codeReferences": {
+    "galleryPrefersPngBeforeRound": false,
+    "galleryPrefersWebpAfterRound": true,
+    "thumbnailUsed": true,
+    "imageCardPreviewSource": "resolved-preview-url",
+    "printSourceBehavior": "internal-svg-preferred-with-png-fallback",
+    "pngDownloadFallbackPresent": true,
+    "printPngFallbackPresent": true,
+    "svgUserDownloadExposed": false,
+    "jpgJpegWebpControlsVisible": false
+  },
+  "answers": {
+    "areWebpPreviewsCurrentlyPresent": false,
+    "areThumbnailsCurrentlyStillUsed": true,
+    "arePngPreviewsCurrentlyStillRequiredForGalleryDisplay": false,
+    "arePngPreviewsRequiredForUserDownloadFallback": true,
+    "arePngPreviewsRequiredForPrintFallback": true,
+    "canTheAppRenderGalleryCardsFromWebpInstead": true
+  }
+}

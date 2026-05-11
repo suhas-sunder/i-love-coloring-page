@@ -31,6 +31,7 @@ export function GalleryGrid({ items, getItemHref, priorityCount = 4 }: GalleryGr
             priority={index < priorityCount}
             assetUrls={{
               preview: resolvedUrls.preview,
+              fallbackPreview: resolvedUrls.previewFallback,
               thumbnail: resolvedUrls.thumbnail,
               png: resolvedUrls.png,
               internalSvg: resolvedUrls.svg,

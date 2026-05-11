@@ -7,21 +7,24 @@ import type { PublicColoringItem } from "@/lib/coloring/types";
 type AssetImageProps = {
   item: PublicColoringItem;
   imageUrl: string | null;
+  fallbackImageUrl?: string | null;
   priority?: boolean;
 };
 
-export function AssetImage({ item, imageUrl, priority = false }: AssetImageProps) {
+export function AssetImage({ item, imageUrl, fallbackImageUrl = null, priority = false }: AssetImageProps) {
+  const [activeImageUrl, setActiveImageUrl] = useState(imageUrl);
   const [failed, setFailed] = useState(false);
   const [loaded, setLoaded] = useState(false);
   const imageRef = useRef<HTMLImageElement | null>(null);
 
   useEffect(() => {
+    setActiveImageUrl(imageUrl);
     setFailed(false);
     setLoaded(false);
-  }, [imageUrl]);
+  }, [imageUrl, fallbackImageUrl]);
 
   useEffect(() => {
-    if (!imageUrl) return;
+    if (!activeImageUrl) return;
     const image = imageRef.current;
     if (!image?.complete) return;
 
@@ -30,9 +33,9 @@ export function AssetImage({ item, imageUrl, priority = false }: AssetImageProps
     } else {
       setFailed(true);
     }
-  }, [imageUrl]);
+  }, [activeImageUrl]);
 
-  if (!imageUrl || failed) return <AssetPlaceholder title={item.title} />;
+  if (!activeImageUrl || failed) return <AssetPlaceholder title={item.title} />;
 
   function handleImageLoad() {
     setFailed(false);
@@ -40,6 +43,13 @@ export function AssetImage({ item, imageUrl, priority = false }: AssetImageProps
   }
 
   function handleImageError() {
+    if (fallbackImageUrl && activeImageUrl !== fallbackImageUrl) {
+      setActiveImageUrl(fallbackImageUrl);
+      setLoaded(false);
+      setFailed(false);
+      return;
+    }
+
     setLoaded(false);
     setFailed(true);
   }
@@ -61,7 +71,7 @@ export function AssetImage({ item, imageUrl, priority = false }: AssetImageProps
         loading={priority ? "eager" : "lazy"}
         onError={handleImageError}
         onLoad={handleImageLoad}
-        src={imageUrl}
+        src={activeImageUrl}
       />
     </span>
   );

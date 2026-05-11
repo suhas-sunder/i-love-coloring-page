@@ -1,0 +1,102 @@
+{
+  "generatedAt": "2026-05-11T23:47:22.149Z",
+  "runId": "round-5b-asset-format-rationalization",
+  "outputRoot": "pipeline/r2-upload/coloring-pages/webp",
+  "sourceRoot": "pipeline/r2-upload/coloring-pages/png",
+  "summary": {
+    "sourceAssetCount": 6557,
+    "processedAssetCount": 6557,
+    "generatedWebpCount": 6557,
+    "existingWebpCount": 0,
+    "missingWebpCount": 0,
+    "totalWebpBytes": 320130452,
+    "quality": 82,
+    "lossless": false,
+    "cleanRun": false,
+    "webpFolderExistedBeforeRun": false,
+    "webpPresentAtRoundStart": false,
+    "elapsedMs": 34089
+  },
+  "webpStats": {
+    "folder": "pipeline/r2-upload/coloring-pages/webp",
+    "exists": true,
+    "fileCount": 6557,
+    "totalBytes": 320130452,
+    "averageBytes": 48823,
+    "largestFiles": [
+      {
+        "path": "pipeline/r2-upload/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-cave-stalactites-and-stalagmites-889feedccf.webp",
+        "bytes": 92478
+      },
+      {
+        "path": "pipeline/r2-upload/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-symmetrical-mandala-ac49e50c14.webp",
+        "bytes": 89490
+      },
+      {
+        "path": "pipeline/r2-upload/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-tesla-model-x-755c819002.webp",
+        "bytes": 89080
+      },
+      {
+        "path": "pipeline/r2-upload/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-plushie-dinosaur-54850ae319.webp",
+        "bytes": 88912
+      },
+      {
+        "path": "pipeline/r2-upload/coloring-pages/webp/mandala-geometry-patterns/failed-chatgpt-image-oct-19-2025-10-27-27-pm-a0411d2e82.webp",
+        "bytes": 87458
+      },
+      {
+        "path": "pipeline/r2-upload/coloring-pages/webp/mandala/mandala-geometry-patterns-psychedelic-mandala-9b152d5112.webp",
+        "bytes": 86866
+      },
+      {
+        "path": "pipeline/r2-upload/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-japan-hokkaido-lavender-fields-86a4307233.webp",
+        "bytes": 86712
+      },
+      {
+        "path": "pipeline/r2-upload/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-narrow-gauge-railway-train--220bfb7725.webp",
+        "bytes": 85862
+      },
+      {
+        "path": "pipeline/r2-upload/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-japan-matsumoto-castle-1655fa0fdb.webp",
+        "bytes": 85718
+      },
+      {
+        "path": "pipeline/r2-upload/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-japan-traditional-house-5903ae39c2.webp",
+        "bytes": 85414
+      }
+    ],
+    "categoryCount": 29,
+    "filesByCategory": {
+      "animals": 31,
+      "animals-playing-cards": 71,
+      "anime-girls": 903,
+      "birds": 165,
+      "chibi": 898,
+      "christmas": 101,
+      "dinosaurs": 68,
+      "dogs": 67,
+      "dragons": 18,
+      "emoji": 6,
+      "fantasy": 528,
+      "flowers": 163,
+      "gardening": 80,
+      "holiday": 642,
+      "homes": 39,
+      "horror": 3,
+      "indoor-plants": 129,
+      "insects": 111,
+      "mandala": 6,
+      "mandala-geometry-patterns": 1453,
+      "midieval": 161,
+      "mythology": 246,
+      "nature": 2,
+      "plushie": 355,
+      "reptiles": 98,
+      "sea-life": 145,
+      "space": 1,
+      "st-patricks-day": 20,
+      "world-landmarks": 47
+    }
+  },
+  "failures": []
+}

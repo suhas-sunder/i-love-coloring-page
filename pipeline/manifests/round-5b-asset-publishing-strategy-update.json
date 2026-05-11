@@ -1,0 +1,20 @@
+{
+  "generatedAt": "2026-05-11T23:47:22.150Z",
+  "runId": "round-5b-asset-format-rationalization",
+  "summary": {
+    "finalUploadUsesSvgAndWebp": true,
+    "pngThumbUploadAvoidedUnlessFutureBlocker": true,
+    "publicCorsStillRequiredForConversion": true,
+    "webpContentTypeRequired": "image/webp",
+    "svgContentTypeRequired": "image/svg+xml",
+    "fullUploadDeferred": true,
+    "adDensityRulesRemainRepresented": true
+  },
+  "rules": [
+    "Final R2 upload should include svg/ and webp/ only unless later evidence reverses the plan.",
+    "SVG stays internal and supplies print, browser conversion, and future coloring workspace source data.",
+    "WebP is the public gallery preview format.",
+    "PNG preview and thumbnail uploads should be avoided for the final plan, but existing local files are retained.",
+    "Image sitemap, Open Graph images, and live ad work wait until final public assets are stable."
+  ]
+}

@@ -273,6 +273,14 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Full image upload remains final-stage production work and must not be required for CORS subset validation.
 - Do not create image sitemap or Open Graph image logic until final public asset URLs are stable.
 - R2/custom-domain CORS settings must be documented before launch.
+- Final R2 strategy is SVG plus WebP unless later evidence reverses it.
+- SVG is the internal source of truth for print, browser-side conversion, and future online coloring work.
+- WebP is the public gallery preview format.
+- PNG previews and thumbnails should not be part of the final upload plan unless a later blocker explicitly justifies them.
+- Do not delete legacy PNG preview or thumbnail files until the migration is fully verified.
+- Gallery previews should prefer WebP when available, then fall back to PNG preview, then thumbnail.
+- Print and public download generation should prefer internal SVG when CORS allows.
+- Full image upload remains final-stage production work.
 
 ## Production Asset Hosting
 

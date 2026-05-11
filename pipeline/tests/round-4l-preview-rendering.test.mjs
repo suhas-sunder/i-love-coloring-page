@@ -98,7 +98,7 @@ test("asset resolver and image components avoid broken icon states", async () =>
   const imageCard = await readText("src/components/coloring/ImageCard.tsx");
   const css = await readText("src/styles/components.css");
 
-  assert.match(assets, /preview:\s*png\s*\|\|\s*thumbnail/);
+  assert.match(assets, /preview:\s*(?:webp\s*\|\|\s*)?png\s*\|\|\s*thumbnail/);
   assert.match(assets, /normalizeColoringAssetBaseUrl/);
   assert.doesNotMatch(assets, /coloring\/test-v1/);
   assert.match(assetImage, /onError=\{handleImageError\}/);

@@ -10,7 +10,7 @@ import { HubCard } from "@/components/coloring/HubCard";
 import { HubHero } from "@/components/coloring/HubHero";
 import { RelatedHubs } from "@/components/coloring/RelatedHubs";
 import { SeoContentSection } from "@/components/coloring/SeoContentSection";
-import { hasConfiguredColoringAssetSource, resolveColoringAssetUrl } from "@/lib/coloring/assets";
+import { hasConfiguredColoringAssetSource, resolveColoringItemAssetUrls } from "@/lib/coloring/assets";
 import {
   getAllPhase1Hubs,
   getChildHubs,
@@ -56,17 +56,21 @@ export default function ColoringPagesLanding() {
       >
         {showHeroPreviews ? (
           <div className="hero-preview-grid hero-preview-grid-compact" aria-label="Featured coloring page previews">
-            {featuredItems.slice(0, 6).map((item, index) => (
-              <div className="preview-tile" key={item.assetId}>
-                <Link className="preview-tile-link" href={getColoringItemHref(item, rootHub.route)} prefetch={false}>
-                  <AssetImage
-                    item={item}
-                    imageUrl={resolveColoringAssetUrl(item.assetSubpaths.thumbnail || item.assetSubpaths.pngPreview)}
-                    priority={index < 2}
-                  />
-                </Link>
-              </div>
-            ))}
+            {featuredItems.slice(0, 6).map((item, index) => {
+              const assetUrls = resolveColoringItemAssetUrls(item.assetSubpaths);
+              return (
+                <div className="preview-tile" key={item.assetId}>
+                  <Link className="preview-tile-link" href={getColoringItemHref(item, rootHub.route)} prefetch={false}>
+                    <AssetImage
+                      item={item}
+                      imageUrl={assetUrls.preview}
+                      fallbackImageUrl={assetUrls.previewFallback}
+                      priority={index < 2}
+                    />
+                  </Link>
+                </div>
+              );
+            })}
           </div>
         ) : null}
       </HubHero>

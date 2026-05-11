@@ -1,6 +1,7 @@
 export type AssetSubpaths = {
   svg: string | null;
   pngPreview: string | null;
+  webpPreview?: string | null;
   thumbnail: string | null;
 };
 

@@ -1,0 +1,235 @@
+{
+  "generatedAt": "2026-05-11T23:36:24.743Z",
+  "runId": "round-5b-browser-qa",
+  "summary": {
+    "browserQaCompleted": true,
+    "galleryUsesWebpWhereAvailable": true,
+    "fallbackToPngVerified": false,
+    "fallbackToPngEvidence": "Runtime fallback is implemented in AssetImage. A forced missing-WebP browser test was not run because Round 5B forbids renaming generated media files.",
+    "printStillWorks": true,
+    "pngDownloadStillWorks": true,
+    "svgDownloadAbsent": true,
+    "jpgJpegWebpControlsAbsent": true,
+    "appApiRoutePresent": false,
+    "horizontalOverflowDetected": false,
+    "adDensityMatchesRound4U": true,
+    "realMediaRenders": true,
+    "currentPublicDownloadFormats": [
+      "PNG"
+    ]
+  },
+  "pages": [
+    {
+      "route": "/coloring-pages",
+      "viewport": {
+        "width": 1440,
+        "height": 1100
+      },
+      "url": "http://127.0.0.1:3005/coloring-pages",
+      "screenshotPath": "pipeline/review/round-5b/screenshots/coloring-pages-1440.png",
+      "metrics": {
+        "title": "Printable Coloring Pages | I Love Coloring Page | I Love Coloring Page",
+        "imageCount": 66,
+        "loadedImageCount": 22,
+        "webpImageCount": 66,
+        "pngImageCount": 0,
+        "firstImageSrc": "http://127.0.0.1:4175/coloring-pages/webp/chibi/chibi-african-dragon-ebdfccdd0d.webp",
+        "horizontalOverflow": false,
+        "htmlClientWidth": 1425,
+        "htmlScrollWidth": 1425,
+        "bodyClientWidth": 1425,
+        "bodyScrollWidth": 1425,
+        "adLabelCount": 1,
+        "totalAdLabelCount": 1,
+        "printControls": 60,
+        "downloadPngControls": 60,
+        "svgDownloadControls": 0,
+        "jpgJpegWebpControls": 0,
+        "appApiRouteInDom": false
+      }
+    },
+    {
+      "route": "/coloring-pages/animals",
+      "viewport": {
+        "width": 1440,
+        "height": 1100
+      },
+      "url": "http://127.0.0.1:3005/coloring-pages/animals",
+      "screenshotPath": "pipeline/review/round-5b/screenshots/animals-1440.png",
+      "metrics": {
+        "title": "Animals Coloring Pages to Print | I Love Coloring Page",
+        "imageCount": 66,
+        "loadedImageCount": 22,
+        "webpImageCount": 66,
+        "pngImageCount": 0,
+        "firstImageSrc": "http://127.0.0.1:4175/coloring-pages/webp/chibi/chibi-animals-pets-dogs-afghan-hound-d9a83b6ec9.webp",
+        "horizontalOverflow": false,
+        "htmlClientWidth": 1425,
+        "htmlScrollWidth": 1425,
+        "bodyClientWidth": 1425,
+        "bodyScrollWidth": 1425,
+        "adLabelCount": 1,
+        "totalAdLabelCount": 1,
+        "printControls": 60,
+        "downloadPngControls": 60,
+        "svgDownloadControls": 0,
+        "jpgJpegWebpControls": 0,
+        "appApiRouteInDom": false
+      }
+    },
+    {
+      "route": "/coloring-pages/geometric",
+      "viewport": {
+        "width": 1440,
+        "height": 1100
+      },
+      "url": "http://127.0.0.1:3005/coloring-pages/geometric",
+      "screenshotPath": "pipeline/review/round-5b/screenshots/geometric-1440.png",
+      "metrics": {
+        "title": "Geometric Coloring Pages to Print | I Love Coloring Page",
+        "imageCount": 66,
+        "loadedImageCount": 22,
+        "webpImageCount": 66,
+        "pngImageCount": 0,
+        "firstImageSrc": "http://127.0.0.1:4175/coloring-pages/webp/mandala-geometry-patterns/chatgpt-image-oct-14-2025-11-38-05-pm-ea62e476c5.webp",
+        "horizontalOverflow": false,
+        "htmlClientWidth": 1425,
+        "htmlScrollWidth": 1425,
+        "bodyClientWidth": 1425,
+        "bodyScrollWidth": 1425,
+        "adLabelCount": 1,
+        "totalAdLabelCount": 1,
+        "printControls": 60,
+        "downloadPngControls": 60,
+        "svgDownloadControls": 0,
+        "jpgJpegWebpControls": 0,
+        "appApiRouteInDom": false
+      }
+    },
+    {
+      "route": "/coloring-pages/anime-girls",
+      "viewport": {
+        "width": 1440,
+        "height": 1100
+      },
+      "url": "http://127.0.0.1:3005/coloring-pages/anime-girls",
+      "screenshotPath": "pipeline/review/round-5b/screenshots/anime-girls-1440.png",
+      "metrics": {
+        "title": "Anime Girls Coloring Pages to Print | I Love Coloring Page",
+        "imageCount": 66,
+        "loadedImageCount": 23,
+        "webpImageCount": 66,
+        "pngImageCount": 0,
+        "firstImageSrc": "http://127.0.0.1:4175/coloring-pages/webp/chibi/chibi-anime-girl-hiking-23c5623800.webp",
+        "horizontalOverflow": false,
+        "htmlClientWidth": 1425,
+        "htmlScrollWidth": 1425,
+        "bodyClientWidth": 1425,
+        "bodyScrollWidth": 1425,
+        "adLabelCount": 1,
+        "totalAdLabelCount": 1,
+        "printControls": 60,
+        "downloadPngControls": 60,
+        "svgDownloadControls": 0,
+        "jpgJpegWebpControls": 0,
+        "appApiRouteInDom": false
+      }
+    },
+    {
+      "route": "/coloring-pages/christmas",
+      "viewport": {
+        "width": 1440,
+        "height": 1100
+      },
+      "url": "http://127.0.0.1:3005/coloring-pages/christmas",
+      "screenshotPath": "pipeline/review/round-5b/screenshots/christmas-1440.png",
+      "metrics": {
+        "title": "Christmas Coloring Pages to Print | I Love Coloring Page",
+        "imageCount": 66,
+        "loadedImageCount": 19,
+        "webpImageCount": 66,
+        "pngImageCount": 0,
+        "firstImageSrc": "http://127.0.0.1:4175/coloring-pages/webp/christmas/christmas-holiday-advent-calendar-a1245c4617.webp",
+        "horizontalOverflow": false,
+        "htmlClientWidth": 1425,
+        "htmlScrollWidth": 1425,
+        "bodyClientWidth": 1425,
+        "bodyScrollWidth": 1425,
+        "adLabelCount": 1,
+        "totalAdLabelCount": 1,
+        "printControls": 60,
+        "downloadPngControls": 60,
+        "svgDownloadControls": 0,
+        "jpgJpegWebpControls": 0,
+        "appApiRouteInDom": false
+      }
+    },
+    {
+      "route": "/coloring-pages/plushies",
+      "viewport": {
+        "width": 1440,
+        "height": 1100
+      },
+      "url": "http://127.0.0.1:3005/coloring-pages/plushies",
+      "screenshotPath": "pipeline/review/round-5b/screenshots/plushies-1440.png",
+      "metrics": {
+        "title": "Plushies Coloring Pages to Print | I Love Coloring Page",
+        "imageCount": 66,
+        "loadedImageCount": 24,
+        "webpImageCount": 66,
+        "pngImageCount": 0,
+        "firstImageSrc": "http://127.0.0.1:4175/coloring-pages/webp/chibi/chibi-plushie-alligator-90926f5c7b.webp",
+        "horizontalOverflow": false,
+        "htmlClientWidth": 1425,
+        "htmlScrollWidth": 1425,
+        "bodyClientWidth": 1425,
+        "bodyScrollWidth": 1425,
+        "adLabelCount": 1,
+        "totalAdLabelCount": 1,
+        "printControls": 60,
+        "downloadPngControls": 60,
+        "svgDownloadControls": 0,
+        "jpgJpegWebpControls": 0,
+        "appApiRouteInDom": false
+      }
+    },
+    {
+      "route": "/coloring-pages",
+      "viewport": {
+        "width": 390,
+        "height": 900
+      },
+      "url": "http://127.0.0.1:3005/coloring-pages",
+      "screenshotPath": "pipeline/review/round-5b/screenshots/coloring-pages-390.png",
+      "metrics": {
+        "title": "Printable Coloring Pages | I Love Coloring Page | I Love Coloring Page",
+        "imageCount": 66,
+        "loadedImageCount": 33,
+        "webpImageCount": 66,
+        "pngImageCount": 0,
+        "firstImageSrc": "http://127.0.0.1:4175/coloring-pages/webp/chibi/chibi-african-dragon-ebdfccdd0d.webp",
+        "horizontalOverflow": false,
+        "htmlClientWidth": 390,
+        "htmlScrollWidth": 390,
+        "bodyClientWidth": 390,
+        "bodyScrollWidth": 390,
+        "adLabelCount": 0,
+        "totalAdLabelCount": 1,
+        "printControls": 60,
+        "downloadPngControls": 60,
+        "svgDownloadControls": 0,
+        "jpgJpegWebpControls": 0,
+        "appApiRouteInDom": false
+      }
+    }
+  ],
+  "screenshotPaths": [
+    "pipeline/review/round-5b/screenshots/coloring-pages-1440.png",
+    "pipeline/review/round-5b/screenshots/animals-1440.png",
+    "pipeline/review/round-5b/screenshots/geometric-1440.png",
+    "pipeline/review/round-5b/screenshots/anime-girls-1440.png",
+    "pipeline/review/round-5b/screenshots/christmas-1440.png",
+    "pipeline/review/round-5b/screenshots/plushies-1440.png",
+    "pipeline/review/round-5b/screenshots/coloring-pages-390.png"
+  ]
+}

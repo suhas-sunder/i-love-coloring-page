@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-05-11T23:46:48.257Z",
+  "runId": "round-5b-asset-format-rationalization",
+  "summary": {
+    "correctRepository": true,
+    "packageName": "i-love-coloring-page",
+    "branch": "version-4",
+    "head": "9c1e2bc25fa2d23fe71a8673474fe636c4a6cc16",
+    "round5aCommitExists": true,
+    "appApiRoutePresent": false,
+    "staticExportConfigured": true,
+    "coloringPagesRouteExists": true,
+    "hubSlugRouteExists": true,
+    "r2BundleExists": true,
+    "localBundleFolders": [
+      "png",
+      "svg",
+      "thumbs",
+      "webp"
+    ],
+    "publicGeneratedMediaPresent": false,
+    "sourceImagesUntouched": true,
+    "ilovesvgUntouched": true,
+    "svgUserDownloadExposed": false,
+    "currentPublicDownloadFormats": [
+      "PNG"
+    ],
+    "adWellsVisibleByDefault": true,
+    "liveAdSenseCodePresent": false,
+    "wrongTaskContextDetected": false,
+    "workingTreeStatus": "M AGENTS.md\n M app/coloring-pages/page.tsx\n M app/page.tsx\n M package.json\n M pipeline/tests/round-4k-visual-corrections.test.mjs\n M pipeline/tests/round-4l-preview-rendering.test.mjs\n M src/components/coloring/AssetImage.tsx\n M src/components/coloring/GalleryGrid.tsx\n M src/components/coloring/HubPageContent.tsx\n M src/components/coloring/ImageCard.tsx\n M src/lib/coloring/assets.ts\n M src/lib/coloring/types.ts\n?? pipeline/manifests/round-5b-asset-publishing-strategy-update.json\n?? pipeline/manifests/round-5b-browser-qa-results.json\n?? pipeline/manifests/round-5b-current-asset-format-audit.json\n?? pipeline/manifests/round-5b-format-comparison.json\n?? pipeline/manifests/round-5b-future-r2-upload-plan.json\n?? pipeline/manifests/round-5b-gallery-preview-source-map.json\n?? pipeline/manifests/round-5b-project-context-check.json\n?? pipeline/manifests/round-5b-webp-generation-results.json\n?? pipeline/manifests/round-5b-webp-missing-assets.json\n?? pipeline/manifests/round-5b-webp-preview-assets.json\n?? pipeline/manifests/round-5b-webp-quality-policy.json\n?? pipeline/reports/round-5b-asset-publishing-strategy-update.md\n?? pipeline/reports/round-5b-browser-qa-report.md\n?? pipeline/reports/round-5b-current-asset-format-audit.md\n?? pipeline/reports/round-5b-format-comparison.md\n?? pipeline/reports/round-5b-future-r2-upload-plan.md\n?? pipeline/reports/round-5b-next-phase-plan.md\n?? pipeline/reports/round-5b-project-context-check.md\n?? pipeline/reports/round-5b-webp-quality-policy.md\n?? pipeline/scripts/round-5b-generate-webp-previews.mjs\n?? pipeline/tests/round-5b-asset-format-rationalization.test.mjs"
+  }
+}

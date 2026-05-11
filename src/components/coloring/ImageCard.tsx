@@ -11,6 +11,7 @@ type ImageCardProps = {
   item: PublicColoringItem;
   assetUrls: {
     preview: string | null;
+    fallbackPreview?: string | null;
     thumbnail?: string | null;
     png: string | null;
     internalSvg?: string | null;
@@ -52,7 +53,7 @@ export function ImageCard({ item, assetUrls, itemHref = `#asset-${item.assetId}`
     <article className="gallery-item" id={`asset-${item.assetId}`}>
       <a className="gallery-item-media-link" href={itemHref} aria-label={`View ${item.title}`}>
         <span className="gallery-item-media">
-          <AssetImage item={item} imageUrl={assetUrls.preview} priority={priority} />
+          <AssetImage item={item} imageUrl={assetUrls.preview} fallbackImageUrl={assetUrls.fallbackPreview} priority={priority} />
         </span>
       </a>
       <div className="gallery-item-body">

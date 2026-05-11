@@ -115,7 +115,7 @@ test("image cards use clean clickable previews and simplified actions", async ()
   assert.doesNotMatch(imageCard, /Download SVG|assetUrls\.svg|pngUrl\s*\|\|\s*svgUrl/);
   assert.match(galleryGrid, /getItemHref/);
   assert.match(assetImage, /className="asset-image"/);
-  assert.match(assets, /preview:\s*png\s*\|\|\s*thumbnail/);
+  assert.match(assets, /preview:\s*(?:webp\s*\|\|\s*)?png\s*\|\|\s*thumbnail/);
   assert.match(components, /\.gallery-item-media-link[\s\S]*cursor:\s*pointer/);
   assert.doesNotMatch(components, /\.gallery-item-media[\s\S]{0,220}padding:/);
 });

@@ -10,7 +10,7 @@ import { HubHero } from "@/components/coloring/HubHero";
 import { Pagination } from "@/components/coloring/Pagination";
 import { RelatedHubs } from "@/components/coloring/RelatedHubs";
 import { SeoContentSection } from "@/components/coloring/SeoContentSection";
-import { hasConfiguredColoringAssetSource, resolveColoringAssetUrl } from "@/lib/coloring/assets";
+import { hasConfiguredColoringAssetSource, resolveColoringItemAssetUrls } from "@/lib/coloring/assets";
 import {
   getChildHubs,
   getColoringItemHref,
@@ -49,17 +49,21 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
       <HubHero hub={hub} intro={friendlyHubIntro(hub.title)} primaryCtaLabel="Browse gallery">
         {showHeroPreviews ? (
           <div className="hero-preview-grid hero-preview-grid-compact" aria-label={`${hub.title} featured previews`}>
-            {featuredItems.slice(0, 6).map((item) => (
-              <div className="preview-tile" key={item.assetId}>
-                <Link className="preview-tile-link" href={getColoringItemHref(item, hub.route)} prefetch={false}>
-                  <AssetImage
-                    item={item}
-                    imageUrl={resolveColoringAssetUrl(item.assetSubpaths.thumbnail || item.assetSubpaths.pngPreview)}
-                    priority
-                  />
-                </Link>
-              </div>
-            ))}
+            {featuredItems.slice(0, 6).map((item) => {
+              const assetUrls = resolveColoringItemAssetUrls(item.assetSubpaths);
+              return (
+                <div className="preview-tile" key={item.assetId}>
+                  <Link className="preview-tile-link" href={getColoringItemHref(item, hub.route)} prefetch={false}>
+                    <AssetImage
+                      item={item}
+                      imageUrl={assetUrls.preview}
+                      fallbackImageUrl={assetUrls.previewFallback}
+                      priority
+                    />
+                  </Link>
+                </div>
+              );
+            })}
           </div>
         ) : null}
       </HubHero>
