@@ -78,7 +78,6 @@ test("Round 4R keeps the frozen Round 4Q ad slot map unchanged", async () => {
   assert.equal(visualResults.summary.slotIdsChanged, false);
   assert.equal(visualResults.summary.slotPlacementChanged, false);
   assert.equal(visualResults.summary.slotCountChanged, false);
-  assert.equal(visualResults.summary.placeholdersHiddenByDefault, true);
   assert.equal(visualResults.summary.placeholdersVisibleWhenEnabled, true);
   assert.equal(visualResults.summary.liveAdCodeAdded, false);
 });
@@ -118,8 +117,7 @@ test("ad placeholder visuals are polished without live ad code or policy-risk st
   assert.match(adSlot, /data-ad-slot=\{slot\.slotId\}/);
   assert.doesNotMatch(adSlot, /Future ad slot|Sponsored Links|fake ad|ad creative/i);
   assert.match(adRail, /slotId: AdSlotId/);
-  assert.match(adConfig, /process\.env\.NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS/);
-  assert.match(adConfig, /showAdPlaceholdersValue === "1"/);
+  assert.doesNotMatch(`${adConfig}\n${adSlot}\n${adRail}`, /NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS|showAdPlaceholders|return null/);
 
   assert.match(adCss, /background:\s*var\(--color-[^)]+\)/);
   assert.match(adCss, /\.ad-slot-label[\s\S]*Advertisement|\.ad-slot-label/);

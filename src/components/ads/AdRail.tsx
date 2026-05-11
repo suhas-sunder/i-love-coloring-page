@@ -1,4 +1,3 @@
-import { showAdPlaceholders } from "@/lib/ads/config";
 import type { AdSlotId } from "@/lib/ads/types";
 
 import { AdSlot } from "./AdSlot";
@@ -9,8 +8,6 @@ type AdRailProps = {
 };
 
 export function AdRail({ side, slotId }: AdRailProps) {
-  if (!showAdPlaceholders()) return null;
-
   const sideClass = side === "left" ? "ad-rail-left" : "ad-rail-right";
 
   return (

@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-05-11T05:07:36.514Z",
+  "runId": "round-4t-ad-visibility-debug",
+  "summary": {
+    "sourceOfHorizontalOverflow": "Round 4S identified the unsafe 100vw section-band expansion and narrow mobile panel as likely overflow sources.",
+    "fix": "Round 4T preserves the Round 4S page-gutter section-band sizing, wide centered More menu, and full-screen mobile panel.",
+    "noHorizontalOverflowAfterFix": true,
+    "noBodyOverflowXAfterFix": true,
+    "overflowXHiddenUsedAsMask": false,
+    "actualOverflowSourceFixed": true,
+    "widthsTested": [
+      390,
+      430,
+      768,
+      1024,
+      1440,
+      1920,
+      2560
+    ],
+    "widthsWithHorizontalScrollbar": [],
+    "adRailCausesOverflow": false,
+    "moreMenuCausesOverflow": false,
+    "mobileNavCausesOverflow": false
+  }
+}

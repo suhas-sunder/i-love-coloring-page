@@ -1,11 +1,5 @@
 import type { AdSlotDefinition, AdSlotId } from "./types";
 
-const showAdPlaceholdersValue = process.env.NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS;
-
-export function showAdPlaceholders() {
-  return showAdPlaceholdersValue === "1" || showAdPlaceholdersValue?.toLowerCase() === "true";
-}
-
 export const AD_SLOT_DEFINITIONS: Record<AdSlotId, AdSlotDefinition> = {
   "rail-left-desktop": {
     slotId: "rail-left-desktop",

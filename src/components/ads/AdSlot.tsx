@@ -1,4 +1,4 @@
-import { getAdSlotDefinition, showAdPlaceholders } from "@/lib/ads/config";
+import { getAdSlotDefinition } from "@/lib/ads/config";
 import type { AdSlotId } from "@/lib/ads/types";
 
 type AdSlotProps = {
@@ -7,8 +7,6 @@ type AdSlotProps = {
 };
 
 export function AdSlot({ slotId, className }: AdSlotProps) {
-  if (!showAdPlaceholders()) return null;
-
   const slot = getAdSlotDefinition(slotId);
   const classes = ["ad-slot", `ad-slot-${slot.placement}`, `ad-slot-${slot.size}`, className].filter(Boolean).join(" ");
 

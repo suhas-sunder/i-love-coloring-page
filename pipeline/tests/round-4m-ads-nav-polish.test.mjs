@@ -65,7 +65,7 @@ test("AdSense placement rules are documented from official Google sources only",
   assert.match(report, /Sponsored Links/);
 });
 
-test("ad placeholder implementation is static, hidden by default, and never live ad code", async () => {
+test("ad placeholder implementation is static, permanent, and never live ad code", async () => {
   const config = await readText("src/lib/ads/config.ts");
   const types = await readText("src/lib/ads/types.ts");
   const slot = await readText("src/components/ads/AdSlot.tsx");
@@ -75,17 +75,13 @@ test("ad placeholder implementation is static, hidden by default, and never live
   const galleryGrid = await readText("src/components/coloring/GalleryGrid.tsx");
   const implementation = await readJson("pipeline/manifests/round-4m-ad-placeholder-implementation.json");
 
-  assert.match(config, /NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS/);
-  assert.match(config, /showAdPlaceholders[\s\S]*===\s*"1"/);
   assert.match(types, /AdSlotId/);
   assert.match(slot, /Advertisement/);
-  assert.match(slot, /return null/);
+  assert.doesNotMatch(`${config}\n${slot}\n${rail}`, /NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS|showAdPlaceholders|return null/);
   assert.doesNotMatch(`${config}\n${slot}\n${rail}`, /adsbygoogle|pagead2\.googlesyndication|ca-pub-|google_ad_client/i);
   assert.doesNotMatch(`${imageCard}\n${galleryGrid}`, /AdSlot|Advertisement|ad-slot/i);
   assert.match(css, /@media print[\s\S]*\.ad-slot/);
   assert.equal(implementation.summary.liveAdCodeAdded, false);
-  assert.equal(implementation.summary.hiddenByDefault, true);
-  assert.equal(implementation.summary.enabledByEnvFlag, "NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS=1");
 });
 
 test("ad slots are mapped away from navigation, image grids, and card actions", async () => {

@@ -62,7 +62,7 @@ test("Round 4Q JSON manifests and reports parse and keep the requested project c
   assert.equal(context.summary.visibleJpegWebpOptions, false);
 });
 
-test("ad placeholders stay env gated, visibly labeled when enabled, and policy safe", async () => {
+test("ad placeholders stay permanent, visibly labeled, and policy safe", async () => {
   const audit = await readJson("pipeline/manifests/round-4q-ad-placeholder-visibility-audit.json");
   const fixes = await readJson("pipeline/manifests/round-4q-ad-placeholder-fixes.json");
   const results = await readJson("pipeline/manifests/round-4q-ad-visibility-results.json");
@@ -84,8 +84,6 @@ test("ad placeholders stay env gated, visibly labeled when enabled, and policy s
     "src/components/coloring/GalleryGrid.tsx",
   ]);
 
-  assert.equal(audit.summary.hiddenByDefault, true);
-  assert.equal(audit.summary.enabledByEnvFlag, "NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS=1");
   assert.equal(audit.summary.liveAdCodePresent, false);
   assert.equal(audit.summary.publisherOrClientIdsPresent, false);
   assert.equal(audit.summary.labelTextVisible, true);
@@ -99,12 +97,10 @@ test("ad placeholders stay env gated, visibly labeled when enabled, and policy s
   assert.equal(fixes.summary.leftAndRightRailsAdded, true);
   assert.equal(fixes.summary.placementChangeReason, "existing right-only rail and inconsistent page skeleton were not AdSense-safe enough for QA");
   assert.equal(results.summary.placeholdersVisibleWhenEnabled, true);
-  assert.equal(results.summary.placeholdersHiddenWhenDisabled, true);
   assert.equal(results.summary.headerBannerVisibleWhenEnabled, true);
   assert.equal(results.summary.leftAndRightRailsVisibleOnWideDesktop, true);
   assert.equal(results.summary.sideRailsHiddenOnTabletAndMobile, true);
-  assert.match(config, /process\.env\.NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS/);
-  assert.match(config, /showAdPlaceholdersValue === "1"/);
+  assert.doesNotMatch(config, /NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS|showAdPlaceholders/);
   assert.match(types, /home-header-banner/);
   assert.match(types, /coloring-pages-header-banner/);
   assert.match(types, /hub-header-banner/);

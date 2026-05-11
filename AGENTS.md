@@ -152,7 +152,8 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Do not move generated media into `public/` to fix preview issues.
 - Ads must be planned as policy-safe slots, not improvised in content.
 - Do not add live AdSense code, ad scripts, ad client values, or publisher values until a later prompt explicitly requests live ad integration.
-- Ad placeholders must be hidden in production by default and enabled only through an explicit local/public environment flag.
+- Ad placeholders are visible by default as permanent layout wells until live ads replace them.
+- Do not rely on `NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS` to show ad placeholders.
 - Ad placeholders must be clearly labeled `Advertisement`.
 - Do not place ads or ad placeholders inside gallery grids as fake cards.
 - Do not place ads or ad placeholders near Print or Download controls.
@@ -168,7 +169,7 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Browser-side conversion must use PNG preview input, not a user-facing SVG path.
 - Do not add backend or API routes for download conversion.
 - Ad placeholders should be QA-tested with real media before live AdSense work.
-- Ad placeholders stay hidden by default unless explicitly enabled.
+- Normal static builds must show `Advertisement`-labeled ad wells.
 - Ad placeholders must not appear inside navigation, image cards, gallery grids, or Print/Download rows.
 - SEO and content expansion must keep gallery access near the top.
 - SEO sections must be useful, unique, intent-matched, and visually aligned with the locked public gallery design system.
@@ -178,9 +179,9 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - The More menu must provide searchable access to generated hub pages.
 - Mobile navigation must include searchable hub navigation.
 - More and mobile navigation must use existing generated routes only.
-- If ad placeholders exist, they must be visibly QA-tested with the environment flag enabled.
-- Ad placeholder QA requires screenshots or explicit browser evidence for enabled and disabled states.
-- Static export environment flags such as `NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS` must be set before `npm run build`.
+- If ad placeholders exist, they must be visibly QA-tested in the normal static build.
+- Ad placeholder QA requires screenshot paths and visible `Advertisement` label counts.
+- Remove `out/` before ad QA builds to avoid stale static exports.
 - Header/banner ad placeholders should sit below nav, not above it.
 - Desktop side rail placeholders should render on both left and right only when enough room exists.
 - Side rail placeholders must have a safe content gap and must not overlap content.
@@ -198,6 +199,8 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Manual screenshots override automated pass claims if visible layout issues remain.
 - Ad placeholders must be obvious enough to see in QA mode.
 - Placeholder-on QA must count visible `Advertisement` labels.
+- If owner screenshots show no ad placeholders, automated visibility claims are not accepted.
+- No SEO or live-ad work until placeholder visibility matches manual review.
 - More menu must open and close predictably.
 - More menu should use available desktop width responsibly and must not be cramped on large screens.
 - Mobile nav must use a proper hamburger full-screen or near-full-screen panel with search at the top.

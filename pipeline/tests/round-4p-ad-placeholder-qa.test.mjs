@@ -41,7 +41,7 @@ test("Round 4P JSON manifests parse and confirm the requested project context", 
   assert.equal(context.summary.visibleJpegWebpOptions, false);
 });
 
-test("ad placeholder inventory keeps placeholders gated, labeled, and outside forbidden surfaces", async () => {
+test("ad placeholder inventory keeps placeholders permanent, labeled, and outside forbidden surfaces", async () => {
   const inventory = await readJson("pipeline/manifests/round-4p-ad-placeholder-inventory.json");
   const policy = await readJson("pipeline/manifests/round-4p-ad-policy-validation.json");
   const qa = await readJson("pipeline/manifests/round-4p-ad-placeholder-qa-results.json");
@@ -53,8 +53,6 @@ test("ad placeholder inventory keeps placeholders gated, labeled, and outside fo
   const header = await readText("src/components/site/SiteHeader.tsx");
   const css = await readText("src/styles/components.css");
 
-  assert.equal(inventory.summary.hiddenByDefault, true);
-  assert.equal(inventory.summary.enabledByEnvFlag, "NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS=1");
   assert.equal(inventory.summary.labelText, "Advertisement");
   assert.equal(inventory.summary.liveAdCodePresent, false);
   assert.equal(inventory.summary.publisherOrClientIdsPresent, false);
@@ -63,13 +61,10 @@ test("ad placeholder inventory keeps placeholders gated, labeled, and outside fo
   assert.equal(policy.summary.adInsideImageCard, false);
   assert.equal(policy.summary.adInsideGalleryGrid, false);
   assert.equal(policy.summary.adAdjacentToPrintDownloadRows, false);
-  assert.equal(qa.summary.placeholdersHiddenWhenDisabled, true);
   assert.equal(qa.summary.placeholdersVisibleWhenEnabled, true);
   assert.match(slot, /aria-label="Advertisement"/);
   assert.match(slot, /data-ad-placeholder="true"/);
-  assert.match(config, /NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS/);
-  assert.match(config, /showAdPlaceholdersValue === "1"/);
-  assert.match(rail, /showAdPlaceholders/);
+  assert.doesNotMatch(`${config}\n${slot}\n${rail}`, /NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS|showAdPlaceholders|return null/);
   assert.match(css, /@media print[\s\S]*\.ad-slot/);
   assert.doesNotMatch(`${header}\n${imageCard}\n${galleryGrid}`, /AdSlot|AdRail|data-ad-placeholder|Advertisement/);
 });

@@ -95,7 +95,6 @@ test("ad placeholders are clearly visible when enabled and remain policy safe", 
     "src/components/coloring/GalleryGrid.tsx",
   ]);
 
-  assert.equal(proof.summary.placeholdersHiddenWhenFlagOff, true);
   assert.equal(proof.summary.placeholdersVisibleWhenFlagOn, true);
   assert.equal(proof.summary.allRequiredPagesHaveVisibleAdvertisementLabels, true);
   assert.equal(proof.summary.noAdCausedHorizontalOverflow, true);
@@ -106,9 +105,7 @@ test("ad placeholders are clearly visible when enabled and remain policy safe", 
   assert.equal(preservation.summary.placementCountChanged, false);
   assert.equal(preservation.summary.sideRailsHiddenOnSmallerScreens, true);
   assert.equal(preservation.summary.sideRailsHaveSafeGap, true);
-  assert.match(adSlot, /if \(!showAdPlaceholders\(\)\) return null/);
-  assert.match(adRail, /if \(!showAdPlaceholders\(\)\) return null/);
-  assert.match(adsConfig, /showAdPlaceholdersValue === "1"/);
+  assert.doesNotMatch(`${adSlot}\n${adRail}\n${adsConfig}`, /NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS|showAdPlaceholders|return null/);
   assert.match(adSlot, /aria-label="Advertisement"/);
   assert.match(adSlot, /data-ad-placeholder="true"/);
   assert.match(adCss, /background:\s*var\(--color-soft-plum\)/);

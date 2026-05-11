@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-05-11T05:07:36.514Z",
+  "runId": "round-4t-ad-visibility-debug",
+  "summary": {
+    "placeholdersVisibleInNormalBuild": true,
+    "labelIsAdvertisement": true,
+    "usesApprovedTokensOnly": true,
+    "noGradients": true,
+    "noShadows": true,
+    "noBordersOrOutlines": true,
+    "noFakeAdCreative": true,
+    "noContentCardMimicry": true,
+    "noButtonMimicry": true,
+    "noExternalRequests": true
+  },
+  "styling": {
+    "backgroundToken": "var(--color-soft-plum)",
+    "labelColorToken": "var(--color-plum)",
+    "label": "Advertisement"
+  }
+}
