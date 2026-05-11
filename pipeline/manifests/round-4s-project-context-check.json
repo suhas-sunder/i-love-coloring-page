@@ -1,0 +1,28 @@
+{
+  "generatedAt": "2026-05-11T04:39:31.141Z",
+  "runId": "round-4s-nav-ad-overflow",
+  "summary": {
+    "correctRepository": true,
+    "branch": "version-4",
+    "head": "4d0052bd3302fb1425463cd7972de7de12239a99",
+    "round4rCommitExists": true,
+    "round4rCommitOnBranch": true,
+    "appApiRoutePresent": false,
+    "srcAppApiRoutePresent": false,
+    "staticExportConfigured": true,
+    "appDirectoryRoutesPresent": true,
+    "r2BundleExists": true,
+    "publicGeneratedMediaPresent": false,
+    "sourceImagesUntouched": true,
+    "referenceRepoUntouched": true,
+    "productionFullAssetsNotStaged": true,
+    "r2UploadMediaNotTracked": true,
+    "filenamesRenamed": false,
+    "currentPublicDownloadFormats": [
+      "PNG"
+    ],
+    "visibleSvgDownloadOptions": false,
+    "visibleJpegWebpOptions": false,
+    "wrongTaskContextDetected": false
+  }
+}

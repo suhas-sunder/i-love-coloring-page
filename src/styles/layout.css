@@ -91,8 +91,8 @@
 }
 
 .section-band {
-  margin-inline: calc(50% - 50vw);
-  padding-block: var(--space-64);
+  margin-inline: calc(var(--page-gutter) * -1);
+  padding: var(--space-64) var(--page-gutter);
   background: var(--color-soft-sky);
 }
 

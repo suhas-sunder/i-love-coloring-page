@@ -72,17 +72,18 @@ export function MobileNav({ ariaLabel = "Mobile browse navigation", groups, prim
 
       {isOpen ? (
         <div className="mobile-nav-panel" id={panelId} ref={panelRef}>
+          <div className="mobile-nav-panel-header">
+            <div className="mobile-nav-panel-title">
+              <span className="brand-mark" aria-hidden="true">IL</span>
+              <span>I Love Coloring Page</span>
+            </div>
+            <button className="mobile-nav-close" type="button" aria-label="Close navigation menu" onClick={closeMenu}>
+              <span aria-hidden="true">Close</span>
+            </button>
+          </div>
           <nav aria-label={ariaLabel}>
-            <MoreHubMenu groups={groups} utilityLinks={[]} variant="mobile" onNavigate={closeMenu} />
+            <MoreHubMenu groups={groups} leadLinks={primaryLinks} utilityLinks={[]} variant="mobile" onNavigate={closeMenu} />
             <div className="mobile-nav-links" aria-label="Primary mobile links">
-              <div className="mobile-nav-link-group">
-                <span className="mobile-nav-link-group-title">Start</span>
-                {primaryLinks.map((link) => (
-                  <Link className="mobile-nav-link" href={link.href} key={link.href} onClick={closeMenu} prefetch={false}>
-                    {link.label}
-                  </Link>
-                ))}
-              </div>
               {utilityLinks.length > 0 ? (
                 <div className="mobile-nav-link-group">
                   <span className="mobile-nav-link-group-title">Library</span>

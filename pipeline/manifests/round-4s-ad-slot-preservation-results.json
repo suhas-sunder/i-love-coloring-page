@@ -1,0 +1,66 @@
+{
+  "generatedAt": "2026-05-11T04:39:31.619Z",
+  "runId": "round-4s-nav-ad-overflow",
+  "baseline": "Round 4R ad slot preservation results",
+  "summary": {
+    "slotIdsChanged": false,
+    "slotCountChanged": false,
+    "placementCountChanged": false,
+    "placementMoved": false,
+    "liveAdCodeAdded": false,
+    "headerBannerBehaviorPreserved": true,
+    "leftRightRailBehaviorPreserved": true,
+    "mobileSmallScreenBannerBehaviorPreserved": true,
+    "inlineSlotBehaviorPreserved": true,
+    "sideRailsHiddenOnSmallerScreens": true,
+    "sideRailsHaveSafeGap": true
+  },
+  "expectedSlotIds": [
+    "coloring-pages-after-featured",
+    "coloring-pages-header-banner",
+    "coloring-pages-lower-content",
+    "home-after-hero",
+    "home-header-banner",
+    "home-lower-content",
+    "hub-after-gallery",
+    "hub-header-banner",
+    "hub-lower-content",
+    "rail-left-desktop",
+    "rail-right-desktop"
+  ],
+  "slotIdsInConfig": [
+    "coloring-pages-after-featured",
+    "coloring-pages-header-banner",
+    "coloring-pages-lower-content",
+    "home-after-hero",
+    "home-header-banner",
+    "home-lower-content",
+    "hub-after-gallery",
+    "hub-header-banner",
+    "hub-lower-content",
+    "rail-left-desktop",
+    "rail-right-desktop"
+  ],
+  "missingFromConfig": [],
+  "unexpectedInConfig": [],
+  "expectedCountsByPageTypeAndViewport": {
+    "home": {
+      "desktop": 3,
+      "wideDesktop": 5,
+      "tablet": 3,
+      "mobile": 3
+    },
+    "galleryLanding": {
+      "desktop": 3,
+      "wideDesktop": 5,
+      "tablet": 3,
+      "mobile": 3
+    },
+    "hubPage": {
+      "desktop": 3,
+      "wideDesktop": 5,
+      "tablet": 3,
+      "mobile": 3
+    }
+  }
+}

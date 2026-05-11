@@ -185,7 +185,8 @@ test("desktop More menu is a controlled, searchable, viewport-centered hub menu"
   assert.match(moreMenu, /pointerdown/);
   assert.match(moreMenu, /onNavigate/);
   assert.match(moreMenu, /type="search"/);
-  assert.match(css, /width:\s*min\(1120px,\s*calc\(100vw - 48px\)\)/);
+  assert.match(css, /width:\s*min\(1320px,\s*calc\(100vw - 96px\)\)/);
+  assert.match(css, /width:\s*min\(960px,\s*calc\(100vw - 48px\)\)/);
   assert.match(css, /left:\s*50%/);
   assert.match(css, /transform:\s*translateX\(-50%\)/);
   assert.doesNotMatch(siteNav, /label:\s*"Coloring Pages"[\s\S]*group:\s*"primary"/);

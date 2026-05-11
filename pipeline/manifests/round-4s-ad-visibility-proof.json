@@ -1,0 +1,54 @@
+{
+  "generatedAt": "2026-05-11T04:39:31.619Z",
+  "runId": "round-4s-nav-ad-overflow",
+  "summary": {
+    "whyPlaceholdersWereHardToSeeBefore": "Round 4R made the shell too quiet by using a paper-soft background and muted label, so manual review could miss the enabled placeholders.",
+    "placeholdersHiddenWhenFlagOff": true,
+    "placeholdersVisibleWhenFlagOn": true,
+    "allRequiredPagesHaveVisibleAdvertisementLabels": true,
+    "visibleAdvertisementLabelCountsByPageType": {
+      "home": {
+        "mobile-390": 3,
+        "mobile-430": 3,
+        "tablet-768": 3,
+        "landscape-1024": 3,
+        "desktop-1440": 3,
+        "wide-1920": 5,
+        "ultra-2560": 5
+      },
+      "galleryLanding": {
+        "mobile-390": 3,
+        "mobile-430": 3,
+        "tablet-768": 3,
+        "landscape-1024": 3,
+        "desktop-1440": 3,
+        "wide-1920": 5,
+        "ultra-2560": 5
+      },
+      "hubPage": {
+        "mobile-390": 3,
+        "mobile-430": 3,
+        "tablet-768": 3,
+        "landscape-1024": 3,
+        "desktop-1440": 3,
+        "wide-1920": 5,
+        "ultra-2560": 5
+      }
+    },
+    "placeholderOffVisibleAdvertisementLabelCount": 0,
+    "noAdCausedHorizontalOverflow": true,
+    "stylingChanged": true,
+    "stylingChangeReason": "Enabled placeholders needed to be obvious enough in QA while staying clean and token-based.",
+    "liveAdCodePresent": false,
+    "publisherOrClientIdsPresent": false,
+    "externalAdRequestsAdded": false,
+    "noAdsInForbiddenSurfaces": true
+  },
+  "screenshotRoots": {
+    "adPlaceholdersOn": "pipeline/review/round-4s/screenshots/ad-placeholders-on",
+    "adPlaceholdersOff": "pipeline/review/round-4s/screenshots/ad-placeholders-off",
+    "navDesktop": "pipeline/review/round-4s/screenshots/nav-desktop",
+    "navMobile": "pipeline/review/round-4s/screenshots/nav-mobile",
+    "overflowChecks": "pipeline/review/round-4s/screenshots/overflow-checks"
+  }
+}

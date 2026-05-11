@@ -7,12 +7,13 @@ import type { HubNavGroup, SiteNavLink } from "@/lib/navigation/siteNav";
 
 type MoreHubMenuProps = {
   groups: HubNavGroup[];
+  leadLinks?: SiteNavLink[];
   utilityLinks: SiteNavLink[];
   variant?: "desktop" | "mobile";
   onNavigate?: () => void;
 };
 
-export function MoreHubMenu({ groups, utilityLinks, variant = "desktop", onNavigate }: MoreHubMenuProps) {
+export function MoreHubMenu({ groups, leadLinks = [], utilityLinks, variant = "desktop", onNavigate }: MoreHubMenuProps) {
   const [query, setQuery] = useState("");
   const [isOpen, setIsOpen] = useState(false);
   const menuId = useId();
@@ -82,6 +83,15 @@ export function MoreHubMenu({ groups, utilityLinks, variant = "desktop", onNavig
           autoComplete="off"
         />
       </div>
+      {leadLinks.length > 0 ? (
+        <div className="hub-menu-lead-links" aria-label="Primary mobile links">
+          {leadLinks.map((link) => (
+            <Link href={link.href} key={link.href} onClick={handleNavigate} prefetch={false}>
+              {link.label}
+            </Link>
+          ))}
+        </div>
+      ) : null}
       <div className="hub-menu-utility" aria-label="Gallery navigation">
         {utilityLinks.map((link) => (
           <Link href={link.href} key={link.href} onClick={handleNavigate} prefetch={false}>

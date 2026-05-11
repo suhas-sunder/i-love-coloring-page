@@ -194,13 +194,20 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Do not use gradients, shadows, outlines, borders, nested cards, fake ad creative, or random colors in ad placeholders.
 - Ad placeholder screenshots should be reviewed with placeholders ON and OFF before live AdSense work.
 - Live AdSense code remains out of scope until explicitly requested.
+- Horizontal page overflow is a blocker.
+- Manual screenshots override automated pass claims if visible layout issues remain.
+- Ad placeholders must be obvious enough to see in QA mode.
+- Placeholder-on QA must count visible `Advertisement` labels.
 - More menu must open and close predictably.
 - More menu should use available desktop width responsibly and must not be cramped on large screens.
-- Mobile nav must use a proper hamburger menu and search-first layout.
+- Mobile nav must use a proper hamburger full-screen or near-full-screen panel with search at the top.
+- Mobile nav must not use a hacky narrow overlay with awkward exposed page space.
 - Burger menu must not use a bordered button style.
 - Nav and menu surfaces must not contain ads.
 - Nav and menu surfaces must not reintroduce a top-level `Coloring Pages` button.
 - Nav and menu surfaces must use generated Phase 1 routes only.
+- Nav and ad fixes must preserve static export and must not add `app/api` routes.
+- Do not mark layout QA complete until manual-screenshot issues are fixed.
 - Do not put ads or affiliate content inside navigation menus.
 - Do not change ad placement while working on navigation or download controls.
 - Do not add backend or API routes for downloads or navigation.
