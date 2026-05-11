@@ -115,3 +115,45 @@ export type PagedGallery = {
   hasPreviousPage: boolean;
   hasNextPage: boolean;
 };
+
+export type SeoContentSectionData = {
+  heading: string;
+  body: string;
+  items?: string[];
+};
+
+export type SeoRelatedHubLink = {
+  label: string;
+  href: string;
+  reason: string;
+  assetCount: number;
+};
+
+export type SeoPageContent = {
+  pageType: "home" | "galleryLanding" | "hubPage";
+  canonicalPath: string;
+  guideTitle: string;
+  shortIntro: string;
+  aboveGalleryValueBullets: string[];
+  belowGallerySections: SeoContentSectionData[];
+  relatedHubLinks: SeoRelatedHubLink[];
+  internalLinkStrategy: string;
+  faqCandidates: string[];
+  pinterestDescription: string;
+};
+
+export type SeoPageMetadata = {
+  pageType: "home" | "galleryLanding" | "hubPage";
+  hubId?: string;
+  slug?: string;
+  path: string;
+  canonicalPath: string;
+  pageTitle: string;
+  metaTitle: string;
+  metaDescription: string;
+  h1: string;
+  shortIntro: string;
+  noIndex: boolean;
+  sitemap: boolean;
+  content: SeoPageContent | null;
+};

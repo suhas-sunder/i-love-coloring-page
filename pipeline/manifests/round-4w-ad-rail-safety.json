@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-05-11T00:00:00.000Z",
+  "phase": "round-4w",
+  "summary": {
+    "placeholderAppearanceChanged": false,
+    "slotIdsChanged": false,
+    "slotCountChanged": false,
+    "placementChanged": false,
+    "railWidthReserved": true,
+    "safeGapReserved": true,
+    "wideCreativeCannotOverlapContent": true,
+    "wideCreativeCannotCreateHorizontalOverflow": true,
+    "railsHiddenBeforeUnsafeWidth": true,
+    "bodyOverflowMaskUsedAsPrimaryFix": false,
+    "clippingUsedInsideRailContainer": true,
+    "clippingDocumentation": "Rail overflow is clipped inside the reserved rail container to keep unexpectedly wide future creative from spilling into the content column. The Advertisement label remains outside any live ad script because live ads are not installed.",
+    "widthsChecked": [
+      1440,
+      1600,
+      1740,
+      1920,
+      2560
+    ]
+  }
+}

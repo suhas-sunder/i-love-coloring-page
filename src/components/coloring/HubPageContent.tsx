@@ -9,6 +9,7 @@ import { HubCard } from "@/components/coloring/HubCard";
 import { HubHero } from "@/components/coloring/HubHero";
 import { Pagination } from "@/components/coloring/Pagination";
 import { RelatedHubs } from "@/components/coloring/RelatedHubs";
+import { SeoContentSection } from "@/components/coloring/SeoContentSection";
 import { hasConfiguredColoringAssetSource, resolveColoringAssetUrl } from "@/lib/coloring/assets";
 import {
   getChildHubs,
@@ -16,6 +17,7 @@ import {
   getGeneratedFeaturedItems,
   getHubFilterTags,
   getHubSearchEntries,
+  getHubSeoContent,
   getPagedHubItems,
   getPublicItemsForHub,
   getRelatedHubs,
@@ -35,6 +37,7 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
   const { tags, tabs } = getHubFilterTags(hub);
   const relatedHubs = getRelatedHubs(hub, 8);
   const childHubs = getChildHubs(hub, 8);
+  const seoContent = getHubSeoContent(hub.hubId);
   const browsingSections = getSectionListItems(hub.sectionGroupings, 10);
   const showHeroPreviews = hasConfiguredColoringAssetSource() && featuredItems.length > 0;
 
@@ -148,30 +151,7 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
 
       <AdSlot slotId="hub-lower-content" />
 
-      <section className="content-section section-band">
-        <div className="section-inner split-section">
-          <div>
-            <h2 className="section-title">Print what fits the moment</h2>
-            <p className="section-copy">
-              Keep browsing by page when you want to explore, or use search and filters when you already have a subject, style, or season in mind.
-            </p>
-          </div>
-          <ul className="section-list">
-            <li>
-              <span>Downloads</span>
-              <strong>Downloadable files</strong>
-            </li>
-            <li>
-              <span>Printing</span>
-              <strong>Available from each image card</strong>
-            </li>
-            <li>
-              <span>Routes</span>
-              <strong>No per-image pages</strong>
-            </li>
-          </ul>
-        </div>
-      </section>
+      <SeoContentSection content={seoContent} />
 
       <RelatedHubs title="Related collections" hubs={relatedHubs} />
     </main>

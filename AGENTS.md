@@ -215,6 +215,20 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Horizontal overflow is a blocker for owner acceptance.
 - Manual screenshots override automated pass claims.
 - Do not proceed to SEO until ad layout, navigation, mobile behavior, and real-media rendering are accepted.
+- SEO content must be useful, unique, intent-matched, and below or secondary to gallery access.
+- Do not create keyword-stuffed or cookie-cutter hub pages.
+- Gallery access must remain near the top.
+- SEO sections must follow the design system: no nested cards, borders, shadows, outlines, gradients, or random colors.
+- Metadata must stay route-specific and accurate.
+- Do not mention SVG downloads publicly.
+- Do not promise online coloring as available until it exists.
+- Image sitemap and OG image work must wait until stable public asset URLs are verified.
+- JSON-LD must be accurate, visible-content-aligned, and not overused.
+- Live AdSense remains out of scope until explicitly requested.
+- Side rail ad containers must reserve and constrain a fixed safe rail width before real ad code is added.
+- Side rail ad containers must keep a clear gap from the main content and must hide before the viewport becomes unsafe.
+- A wider future ad creative must not overlap page content, create horizontal overflow, or cover navigation, gallery, search, filters, Print, or Download controls.
+- Do not rely on body-level horizontal overflow masking as the primary ad rail safety fix.
 - More menu must open and close predictably.
 - More menu should use available desktop width responsibly and must not be cramped on large screens.
 - Mobile nav must use a proper hamburger full-screen or near-full-screen panel with search at the top.

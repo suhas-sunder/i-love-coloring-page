@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-05-11T00:00:00.000Z",
+  "phase": "round-4w",
+  "pageTypes": {
+    "home": {
+      "metadata": "Unique brand and library metadata.",
+      "contentPlacement": "Below the first browse surfaces, replacing generic lower copy.",
+      "sections": [
+        "What the library is built for",
+        "How to browse",
+        "Printing notes"
+      ]
+    },
+    "galleryLanding": {
+      "metadata": "Unique main gallery title and description.",
+      "contentPlacement": "Below the gallery and collection browsing sections.",
+      "sections": [
+        "What you can find",
+        "Choosing a page",
+        "Printing tips"
+      ]
+    },
+    "hubPage": {
+      "metadata": "One unique title and description per Phase 1 hub.",
+      "contentPlacement": "Below the printable gallery and supporting browse links.",
+      "requiredFields": [
+        "pageTitle",
+        "metaTitle",
+        "metaDescription",
+        "h1",
+        "shortIntro",
+        "aboveGalleryValueBullets",
+        "belowGallerySections",
+        "relatedHubLinks",
+        "internalLinkStrategy",
+        "pinterestDescription",
+        "canonicalPath",
+        "noIndex",
+        "sitemap"
+      ]
+    }
+  }
+}

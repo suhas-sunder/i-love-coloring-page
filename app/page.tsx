@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
 import { AdRail } from "@/components/ads/AdRail";
@@ -5,11 +6,18 @@ import { AdSlot } from "@/components/ads/AdSlot";
 import { AssetImage } from "@/components/coloring/AssetImage";
 import { GalleryGrid } from "@/components/coloring/GalleryGrid";
 import { HubCard } from "@/components/coloring/HubCard";
+import { SeoContentSection } from "@/components/coloring/SeoContentSection";
 import { hasConfiguredColoringAssetSource, resolveColoringAssetUrl } from "@/lib/coloring/assets";
-import { getAllPhase1Hubs, getColoringItemHref, getGeneratedFeaturedItems, getRootHub } from "@/lib/coloring/data";
+import { getAllPhase1Hubs, getColoringItemHref, getGeneratedFeaturedItems, getRootHub, getSeoPageContent } from "@/lib/coloring/data";
+import { buildColoringMetadata } from "@/lib/coloring/metadata";
+
+export function generateMetadata(): Metadata {
+  return buildColoringMetadata("/");
+}
 
 export default function HomePage() {
   const rootHub = getRootHub();
+  const seoContent = getSeoPageContent("/");
   const featuredItems = getGeneratedFeaturedItems(rootHub);
   const featuredHubs = getAllPhase1Hubs()
     .filter((hub) => ["animals", "plushies", "mandalas", "for-kids", "fantasy", "christmas"].includes(hub.slug))
@@ -95,30 +103,7 @@ export default function HomePage() {
 
       <AdSlot slotId="home-lower-content" />
 
-      <section className="content-section section-band">
-        <div className="section-inner split-section">
-          <div>
-            <h2 className="section-title">Built for printing first</h2>
-            <p className="section-copy">
-              The public library is focused on finding printable pages quickly. An online coloring workspace can come later as a separate experience.
-            </p>
-          </div>
-          <ul className="section-list">
-            <li>
-              <span>Pick a collection</span>
-              <strong>Animals, mandalas, holidays, and more</strong>
-            </li>
-            <li>
-              <span>Use the file you need</span>
-              <strong>Download or print from the page</strong>
-            </li>
-            <li>
-              <span>Keep browsing simple</span>
-              <strong>Clear collection pages without clutter</strong>
-            </li>
-          </ul>
-        </div>
-      </section>
+      <SeoContentSection content={seoContent} />
     </main>
   );
 }

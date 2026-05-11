@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-05-11T00:00:00.000Z",
+  "phase": "round-4w",
+  "summary": {
+    "beforeRoundHomeHadRouteMetadata": false,
+    "beforeRoundLandingMetadataExisted": true,
+    "beforeRoundHubMetadataExisted": true,
+    "beforeRoundHubCopyMostlyGeneric": true,
+    "beforeRoundBelowGalleryContentUniqueEnough": false,
+    "titleTemplatePresent": true,
+    "canonicalUsesSiteUrlHelper": true,
+    "openGraphMetadataBasicOnly": true,
+    "twitterMetadataBeforeRound": false,
+    "sitemapRouteCount": 65,
+    "sitemapPhase1Only": true,
+    "robotsBlocksPublicPages": false,
+    "perImageRoutesPresent": false,
+    "phase2HubRoutesPresent": false,
+    "imageSitemapPresent": false,
+    "jsonLdPresentBeforeRound": false,
+    "adContentSeparationPreserved": true,
+    "pinterestSocialMetadataReadinessBeforeRound": "partial"
+  },
+  "filesAudited": [
+    "app/layout.tsx",
+    "app/page.tsx",
+    "app/coloring-pages/page.tsx",
+    "app/coloring-pages/[hubSlug]/page.tsx",
+    "app/coloring-pages/[hubSlug]/page/[page]/page.tsx",
+    "app/sitemap.ts",
+    "app/robots.ts",
+    "src/components/coloring/HubPageContent.tsx"
+  ]
+}

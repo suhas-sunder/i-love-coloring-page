@@ -4,7 +4,10 @@ import hubsJson from "@/generated/coloring/hubs.json";
 import itemsJson from "@/generated/coloring/items.json";
 import routesJson from "@/generated/coloring/routes.json";
 import searchIndexJson from "@/generated/coloring/search-index.json";
+import hubSeoContentJson from "@/generated/coloring/hub-seo-content.json";
 import siteMapJson from "@/generated/coloring/site-map.json";
+import seoPagesJson from "@/generated/coloring/seo-pages.json";
+import socialMetadataJson from "@/generated/coloring/social-metadata.json";
 import titleOverridesJson from "@/generated/coloring/title-overrides.json";
 
 import type {
@@ -16,6 +19,8 @@ import type {
   HubGalleryUx,
   PagedGallery,
   PublicColoringItem,
+  SeoPageContent,
+  SeoPageMetadata,
   SiteMapEntry,
 } from "./types";
 
@@ -57,6 +62,38 @@ type TitleOverridesManifest = {
   }>;
 };
 
+type SeoPagesManifest = {
+  pages: SeoPageMetadata[];
+};
+
+type HubSeoContentManifest = {
+  hubs: Array<SeoPageContent & { hubId: string; slug: string; route: string }>;
+};
+
+type SocialMetadataManifest = {
+  pages: Array<{
+    path: string;
+    title: string;
+    description: string;
+    openGraph: {
+      title: string;
+      description: string;
+      urlPath: string;
+      type: "website";
+      images: string[];
+    };
+    twitter: {
+      card: "summary";
+      title: string;
+      description: string;
+    };
+    pinterest: {
+      description: string;
+      richPinCandidate: "article" | "none";
+    };
+  }>;
+};
+
 const hubsManifest = hubsJson as HubsManifest;
 const itemsManifest = itemsJson as ItemsManifest;
 const routesManifest = routesJson as RoutesManifest;
@@ -65,6 +102,9 @@ const hubFeaturedItemsManifest = hubFeaturedItemsJson as HubFeaturedItemsManifes
 const hubFilterTagsManifest = hubFilterTagsJson as HubFilterTagsManifest;
 const searchIndexManifest = searchIndexJson as SearchIndexManifest;
 const titleOverridesManifest = titleOverridesJson as TitleOverridesManifest;
+const seoPagesManifest = seoPagesJson as SeoPagesManifest;
+const hubSeoContentManifest = hubSeoContentJson as HubSeoContentManifest;
+const socialMetadataManifest = socialMetadataJson as SocialMetadataManifest;
 
 const hubsById = new Map(hubsManifest.hubs.map((hub) => [hub.hubId, hub]));
 const hubsBySlug = new Map(hubsManifest.hubs.map((hub) => [hub.slug, hub]));
@@ -73,6 +113,9 @@ const featuredByHubId = new Map(hubFeaturedItemsManifest.hubs.map((entry) => [en
 const filterUxByHubId = new Map(hubFilterTagsManifest.hubs.map((entry) => [entry.hubId, entry]));
 const searchEntryByAssetId = new Map(searchIndexManifest.entries.map((entry) => [entry.assetId, entry]));
 const titleOverrideByAssetId = new Map(titleOverridesManifest.overrides.map((entry) => [entry.assetId, entry]));
+const seoPageByPath = new Map(seoPagesManifest.pages.map((entry) => [entry.path, entry]));
+const hubSeoContentByHubId = new Map(hubSeoContentManifest.hubs.map((entry) => [entry.hubId, entry]));
+const socialMetadataByPath = new Map(socialMetadataManifest.pages.map((entry) => [entry.path, entry]));
 
 function toPublicItem(item: ColoringItem): PublicColoringItem {
   const override = titleOverrideByAssetId.get(item.assetId);
@@ -214,6 +257,22 @@ export function getIndexableRoutes() {
 
 export function getSitemapEntries() {
   return siteMapManifest.entries;
+}
+
+export function getSeoPageMetadata(path: string) {
+  return seoPageByPath.get(path) || null;
+}
+
+export function getSeoPageContent(path: string) {
+  return seoPageByPath.get(path)?.content || null;
+}
+
+export function getHubSeoContent(hubId: string) {
+  return hubSeoContentByHubId.get(hubId) || null;
+}
+
+export function getSocialMetadata(path: string) {
+  return socialMetadataByPath.get(path) || null;
 }
 
 export function getBacklogHubCount() {

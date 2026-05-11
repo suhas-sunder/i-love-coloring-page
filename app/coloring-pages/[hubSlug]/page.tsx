@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { HubPageContent } from "@/components/coloring/HubPageContent";
-import { getHubBySlug, getNonRootPhase1Hubs, getSiteUrl } from "@/lib/coloring/data";
+import { getHubBySlug, getNonRootPhase1Hubs } from "@/lib/coloring/data";
+import { buildColoringMetadata } from "@/lib/coloring/metadata";
 
 type HubPageProps = {
   params: Promise<{ hubSlug: string }>;
@@ -19,19 +20,10 @@ export async function generateMetadata({ params }: HubPageProps): Promise<Metada
   const hub = getHubBySlug(hubSlug);
   if (!hub) return {};
 
-  return {
-    title: hub.metaTitle,
-    description: hub.metaDescription,
-    alternates: {
-      canonical: `${getSiteUrl()}${hub.route}`,
-    },
-    openGraph: {
-      title: hub.metaTitle,
-      description: hub.metaDescription,
-      url: `${getSiteUrl()}${hub.route}`,
-      type: "website",
-    },
-  };
+  return buildColoringMetadata(hub.route, {
+    fallbackTitle: hub.metaTitle,
+    fallbackDescription: hub.metaDescription,
+  });
 }
 
 export default async function HubPage({ params }: HubPageProps) {

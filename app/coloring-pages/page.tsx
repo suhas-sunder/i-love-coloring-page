@@ -9,6 +9,7 @@ import { GallerySearch } from "@/components/coloring/GallerySearch";
 import { HubCard } from "@/components/coloring/HubCard";
 import { HubHero } from "@/components/coloring/HubHero";
 import { RelatedHubs } from "@/components/coloring/RelatedHubs";
+import { SeoContentSection } from "@/components/coloring/SeoContentSection";
 import { hasConfiguredColoringAssetSource, resolveColoringAssetUrl } from "@/lib/coloring/assets";
 import {
   getAllPhase1Hubs,
@@ -20,28 +21,17 @@ import {
   getPreviewItems,
   getPublicItemsForHub,
   getRootHub,
-  getSiteUrl,
+  getSeoPageContent,
 } from "@/lib/coloring/data";
+import { buildColoringMetadata } from "@/lib/coloring/metadata";
 
 export function generateMetadata(): Metadata {
-  const hub = getRootHub();
-  return {
-    title: hub.metaTitle,
-    description: hub.metaDescription,
-    alternates: {
-      canonical: `${getSiteUrl()}${hub.route}`,
-    },
-    openGraph: {
-      title: hub.metaTitle,
-      description: hub.metaDescription,
-      url: `${getSiteUrl()}${hub.route}`,
-      type: "website",
-    },
-  };
+  return buildColoringMetadata("/coloring-pages");
 }
 
 export default function ColoringPagesLanding() {
   const rootHub = getRootHub();
+  const seoContent = getSeoPageContent("/coloring-pages");
   const featuredItems = getGeneratedFeaturedItems(rootHub);
   const previewItems = getPreviewItems(rootHub).slice(0, 48);
   const allRootItems = getPublicItemsForHub(rootHub);
@@ -176,6 +166,8 @@ export default function ColoringPagesLanding() {
           ))}
         </div>
       </section>
+
+      <SeoContentSection content={seoContent} />
 
       <RelatedHubs title="More ways to browse" hubs={childHubs} />
     </main>

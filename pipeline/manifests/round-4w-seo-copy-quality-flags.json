@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-05-11T00:00:00.000Z",
+  "phase": "round-4w",
+  "summary": {
+    "pageCount": 66,
+    "phase1HubCount": 64,
+    "uniqueMetaTitleCount": 66,
+    "uniqueMetaDescriptionCount": 66,
+    "uniqueHubIntroCount": 64,
+    "duplicateMetaTitles": 0,
+    "duplicateMetaDescriptions": 0,
+    "mentionsSvgDownloads": false,
+    "promisesUnavailableOnlineColoring": false,
+    "exposesInternalPipelineTerms": false,
+    "keywordStuffingRisk": false,
+    "cookieCutterRisk": false,
+    "manualReviewRecommended": true
+  },
+  "checks": [
+    "Descriptions include actual hub counts and topic signals.",
+    "Hub sections vary by collection type and deterministic index.",
+    "Related links use generated Phase 1 relationships only.",
+    "Visible copy avoids SVG download language and unavailable online coloring claims."
+  ]
+}

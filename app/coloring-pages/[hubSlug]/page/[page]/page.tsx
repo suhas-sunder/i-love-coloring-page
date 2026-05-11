@@ -6,10 +6,10 @@ import {
   getHubBySlug,
   getHubPageCount,
   getHubPagePath,
-  getSiteUrl,
   getStaticHubPageParams,
   parseStaticPageParam,
 } from "@/lib/coloring/data";
+import { buildColoringMetadata } from "@/lib/coloring/metadata";
 
 type HubPaginationPageProps = {
   params: Promise<{ hubSlug: string; page: string }>;
@@ -29,19 +29,12 @@ export async function generateMetadata({ params }: HubPaginationPageProps): Prom
 
   const path = getHubPagePath(hub, page);
 
-  return {
-    title: `${hub.metaTitle}, Page ${page}`,
-    description: hub.metaDescription,
-    alternates: {
-      canonical: `${getSiteUrl()}${path}`,
-    },
-    openGraph: {
-      title: `${hub.metaTitle}, Page ${page}`,
-      description: hub.metaDescription,
-      url: `${getSiteUrl()}${path}`,
-      type: "website",
-    },
-  };
+  return buildColoringMetadata(hub.route, {
+    page,
+    canonicalPath: path,
+    fallbackTitle: hub.metaTitle,
+    fallbackDescription: hub.metaDescription,
+  });
 }
 
 export default async function HubPaginationPage({ params }: HubPaginationPageProps) {
