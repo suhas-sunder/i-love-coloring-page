@@ -209,6 +209,12 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Ad layout QA must include visible `Advertisement` counts by viewport.
 - Do not proceed to SEO or live ads until the owner accepts the visible ad layout.
 - Normal static builds should still show the selected ad wells by default.
+- SEO/content implementation requires the owner acceptance gate to pass.
+- Browser screenshots must support visual acceptance claims.
+- Round 4U ad density policy must remain in force.
+- Horizontal overflow is a blocker for owner acceptance.
+- Manual screenshots override automated pass claims.
+- Do not proceed to SEO until ad layout, navigation, mobile behavior, and real-media rendering are accepted.
 - More menu must open and close predictably.
 - More menu should use available desktop width responsibly and must not be cramped on large screens.
 - Mobile nav must use a proper hamburger full-screen or near-full-screen panel with search at the top.

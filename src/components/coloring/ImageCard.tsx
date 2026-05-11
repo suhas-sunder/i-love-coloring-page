@@ -22,8 +22,9 @@ export function ImageCard({ item, assetUrls, itemHref = `#asset-${item.assetId}`
 
   function printImage() {
     if (!printUrl) return;
-    const printWindow = window.open("", "_blank", "noopener,noreferrer");
+    const printWindow = window.open("", "_blank");
     if (!printWindow) return;
+    printWindow.opener = null;
     printWindow.document.write(`
       <html>
         <head><title>${escapeHtml(item.title)}</title></head>
