@@ -1,0 +1,22 @@
+# Round 5A Browser QA Report
+
+- Skipped: false
+- Real media renders: true
+- Print uses high-quality conversion if CORS works: true
+- Print fallback clean if CORS missing: true
+- PNG download works: true
+- SVG download absent: true
+- JPG/WebP controls absent: true
+- Ad density matches Round 4U: true
+- No horizontal overflow: true
+- Screenshots:
+- - pipeline/review/round-5a/screenshots/gallery/coloring-pages-1440.png
+- - pipeline/review/round-5a/screenshots/gallery/coloring-pages-animals-1440.png
+- - pipeline/review/round-5a/screenshots/gallery/coloring-pages-geometric-1440.png
+- - pipeline/review/round-5a/screenshots/gallery/coloring-pages-christmas-1440.png
+- - pipeline/review/round-5a/screenshots/trust/contact-1440.png
+- - pipeline/review/round-5a/screenshots/trust/privacy-1440.png
+- - pipeline/review/round-5a/screenshots/ad-layout/coloring-pages-390.png
+- - pipeline/review/round-5a/screenshots/ad-layout/coloring-pages-768.png
+- - pipeline/review/round-5a/screenshots/ad-layout/coloring-pages-1440.png
+- - pipeline/review/round-5a/screenshots/ad-layout/coloring-pages-1920.png

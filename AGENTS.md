@@ -267,6 +267,12 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - The current public contact email is `admin@ilovecoloringpage.com` unless the owner changes it in a later round.
 - Do not add `app/api` or backend routes for downloads, printing, or conversion.
 - Image sitemap, Open Graph image, and live AdSense work must wait until public assets are final and verified.
+- Public asset-domain CORS must be verified before exposing JPG, JPEG, or WebP download controls.
+- Print should continue to prefer internal SVG conversion, with PNG preview fallback only when conversion fails.
+- SVG remains internal-only even when browser-side conversion uses it.
+- Full image upload remains final-stage production work and must not be required for CORS subset validation.
+- Do not create image sitemap or Open Graph image logic until final public asset URLs are stable.
+- R2/custom-domain CORS settings must be documented before launch.
 
 ## Production Asset Hosting
 

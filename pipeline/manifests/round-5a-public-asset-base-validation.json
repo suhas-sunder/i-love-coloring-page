@@ -1,0 +1,29 @@
+{
+  "generatedAt": "2026-05-11T21:15:02.152Z",
+  "runId": "round-5a-public-cors-validation",
+  "public_cors_validation_ready": false,
+  "summary": {
+    "assetBaseUrlConfigured": true,
+    "assetBaseUrlSource": "process.env",
+    "redactedAssetBaseUrl": "http://127.0.0.1:4176/coloring-pages",
+    "isHttpUrl": true,
+    "isLocalhost": true,
+    "isR2Dev": false,
+    "isTemporaryR2Dev": false,
+    "isCustomDomain": false,
+    "isPrivateR2Endpoint": false,
+    "hasColoringPagesPrefix": true,
+    "hasOldTestPrefix": false,
+    "hasDuplicateColoringPagesPrefix": false,
+    "siteUrlConfigured": false,
+    "siteUrlReadyForProduction": false,
+    "publicValidationBlocked": true
+  },
+  "blockers": [
+    "Asset base URL points to localhost, so it is not a public CORS validation target."
+  ],
+  "ownerActionItems": [
+    "Set NEXT_PUBLIC_COLORING_ASSET_BASE_URL to a public R2/custom-domain asset origin ending in /coloring-pages.",
+    "Configure CORS on that asset host, then rerun Round 5A public validation."
+  ]
+}
