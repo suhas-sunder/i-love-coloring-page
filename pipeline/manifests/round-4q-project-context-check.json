@@ -1,0 +1,39 @@
+{
+  "generatedAt": "2026-05-11T02:43:32.540Z",
+  "runId": "round-4q-nav-ad-visibility",
+  "summary": {
+    "correctRepository": true,
+    "branch": "version-4",
+    "head": "acf208e2bb2453a2acdac993e337767f80f41d5c",
+    "round4pCommitExists": true,
+    "round4pCommitOnBranch": true,
+    "appApiRoutePresent": false,
+    "srcAppApiRoutePresent": false,
+    "staticExportConfigured": true,
+    "appDirectoryRoutesPresent": true,
+    "r2BundleExists": true,
+    "publicGeneratedMediaPresent": false,
+    "publicGeneratedMediaFiles": [],
+    "sourceImagesUntouched": true,
+    "ilovesvgUntouched": true,
+    "productionFullAssetsNotStaged": true,
+    "r2UploadMediaNotTracked": true,
+    "currentPublicDownloadFormats": [
+      "PNG"
+    ],
+    "visibleSvgDownloadOptions": false,
+    "visibleJpegWebpOptions": false,
+    "wrongTaskContextDetected": false
+  },
+  "checkedIndicators": [
+    "package name",
+    "version-4 branch",
+    "Round 4P commit",
+    "static export config",
+    "app directory route shape",
+    "app/api absence",
+    "local R2 bundle",
+    "public media absence",
+    "PNG-only public downloads"
+  ]
+}

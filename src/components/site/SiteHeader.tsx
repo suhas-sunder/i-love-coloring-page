@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import { moreHubGroups, primaryNavLinks, utilityNavLinks } from "@/lib/navigation/siteNav";
 
+import { MobileNav } from "./MobileNav";
 import { MoreHubMenu } from "./MoreHubMenu";
 
 export function SiteHeader() {
@@ -21,22 +22,7 @@ export function SiteHeader() {
           ))}
           <MoreHubMenu groups={moreHubGroups} utilityLinks={utilityNavLinks} />
         </nav>
-        <details className="site-nav-mobile">
-          <summary aria-label="Open mobile browse navigation">Browse</summary>
-          <nav aria-label="Mobile browse navigation">
-            {primaryNavLinks.map((link) => (
-              <Link href={link.href} key={link.href} prefetch={false}>
-                {link.label}
-              </Link>
-            ))}
-            {utilityNavLinks.map((link) => (
-              <Link href={link.href} key={link.href} prefetch={false}>
-                {link.label}
-              </Link>
-            ))}
-            <MoreHubMenu groups={moreHubGroups} utilityLinks={[]} variant="mobile" />
-          </nav>
-        </details>
+        <MobileNav ariaLabel="Mobile browse navigation" groups={moreHubGroups} primaryLinks={primaryNavLinks} utilityLinks={utilityNavLinks} />
       </div>
     </header>
   );

@@ -1,0 +1,1058 @@
+{
+  "generatedAt": "2026-05-11T02:43:32.789Z",
+  "runId": "round-4q-nav-ad-visibility",
+  "summary": {
+    "moreMenuControlledState": true,
+    "moreMenuIncludesSearch": true,
+    "topLevelColoringPagesRemoved": true,
+    "mobileHamburgerImplemented": true,
+    "mobileSearchFirst": true,
+    "noAdsInNavigation": true,
+    "noAffiliateInNavigation": true,
+    "moreMenuHubRouteCount": 60,
+    "phase1HubRouteCount": 65
+  },
+  "primaryNavLinks": [
+    {
+      "label": "Popular",
+      "href": "/coloring-pages/animals",
+      "group": "primary",
+      "routeExists": true
+    },
+    {
+      "label": "Seasonal",
+      "href": "/coloring-pages/christmas",
+      "group": "primary",
+      "routeExists": true
+    },
+    {
+      "label": "For Kids",
+      "href": "/coloring-pages/for-kids",
+      "group": "primary",
+      "routeExists": true
+    },
+    {
+      "label": "For Adults",
+      "href": "/coloring-pages/detailed-for-adults",
+      "group": "primary",
+      "routeExists": true
+    },
+    {
+      "label": "Search/Browse",
+      "href": "/coloring-pages#gallery",
+      "group": "primary",
+      "routeExists": true
+    }
+  ],
+  "utilityLinks": [
+    {
+      "label": "All Coloring Pages",
+      "href": "/coloring-pages",
+      "group": "utility",
+      "routeExists": true
+    }
+  ],
+  "moreMenuHubLinks": [
+    {
+      "label": "Anime Girls",
+      "slug": "anime-girls",
+      "href": "/coloring-pages/anime-girls",
+      "assetCount": 905,
+      "group": "Popular",
+      "routeExists": true
+    },
+    {
+      "label": "Beetles",
+      "slug": "beetles",
+      "href": "/coloring-pages/beetles",
+      "assetCount": 25,
+      "group": "Animals & Nature",
+      "routeExists": true
+    },
+    {
+      "label": "Birds",
+      "slug": "birds",
+      "href": "/coloring-pages/birds",
+      "assetCount": 190,
+      "group": "Animals & Nature",
+      "routeExists": true
+    },
+    {
+      "label": "Birthday",
+      "slug": "birthday",
+      "href": "/coloring-pages/birthday",
+      "assetCount": 211,
+      "group": "Seasonal",
+      "routeExists": true
+    },
+    {
+      "label": "Bridges",
+      "slug": "bridges",
+      "href": "/coloring-pages/bridges",
+      "assetCount": 23,
+      "group": "More Collections",
+      "routeExists": true
+    },
+    {
+      "label": "Buildings",
+      "slug": "buildings",
+      "href": "/coloring-pages/buildings",
+      "assetCount": 156,
+      "group": "More Collections",
+      "routeExists": true
+    },
+    {
+      "label": "Butterflies",
+      "slug": "butterflies",
+      "href": "/coloring-pages/butterflies",
+      "assetCount": 26,
+      "group": "More Collections",
+      "routeExists": true
+    },
+    {
+      "label": "Cars",
+      "slug": "cars",
+      "href": "/coloring-pages/cars",
+      "assetCount": 193,
+      "group": "Vehicles & Places",
+      "routeExists": true
+    },
+    {
+      "label": "Cats",
+      "slug": "cats",
+      "href": "/coloring-pages/cats",
+      "assetCount": 58,
+      "group": "Animals & Nature",
+      "routeExists": true
+    },
+    {
+      "label": "Chibi",
+      "slug": "chibi",
+      "href": "/coloring-pages/chibi",
+      "assetCount": 910,
+      "group": "Popular",
+      "routeExists": true
+    },
+    {
+      "label": "Chibi Flowers",
+      "slug": "chibi-flowers",
+      "href": "/coloring-pages/chibi-flowers",
+      "assetCount": 152,
+      "group": "Animals & Nature",
+      "routeExists": true
+    },
+    {
+      "label": "Crabs",
+      "slug": "crabs",
+      "href": "/coloring-pages/crabs",
+      "assetCount": 21,
+      "group": "More Collections",
+      "routeExists": true
+    },
+    {
+      "label": "Cute",
+      "slug": "cute",
+      "href": "/coloring-pages/cute",
+      "assetCount": 375,
+      "group": "Patterns & Adults",
+      "routeExists": true
+    },
+    {
+      "label": "Dinosaurs",
+      "slug": "dinosaurs",
+      "href": "/coloring-pages/dinosaurs",
+      "assetCount": 190,
+      "group": "Animals & Nature",
+      "routeExists": true
+    },
+    {
+      "label": "Dogs",
+      "slug": "dogs",
+      "href": "/coloring-pages/dogs",
+      "assetCount": 284,
+      "group": "Animals & Nature",
+      "routeExists": true
+    },
+    {
+      "label": "Dungeon",
+      "slug": "dungeon",
+      "href": "/coloring-pages/dungeon",
+      "assetCount": 99,
+      "group": "More Collections",
+      "routeExists": true
+    },
+    {
+      "label": "Easy",
+      "slug": "easy",
+      "href": "/coloring-pages/easy",
+      "assetCount": 1302,
+      "group": "Patterns & Adults",
+      "routeExists": true
+    },
+    {
+      "label": "Fairies",
+      "slug": "fairies",
+      "href": "/coloring-pages/fairies",
+      "assetCount": 37,
+      "group": "More Collections",
+      "routeExists": true
+    },
+    {
+      "label": "Fantasy",
+      "slug": "fantasy",
+      "href": "/coloring-pages/fantasy",
+      "assetCount": 1310,
+      "group": "Popular",
+      "routeExists": true
+    },
+    {
+      "label": "Fantasy Creatures",
+      "slug": "fantasy-creatures",
+      "href": "/coloring-pages/fantasy-creatures",
+      "assetCount": 575,
+      "group": "Characters & Fantasy",
+      "routeExists": true
+    },
+    {
+      "label": "Fantasy Dragons",
+      "slug": "fantasy-dragons",
+      "href": "/coloring-pages/fantasy-dragons",
+      "assetCount": 67,
+      "group": "Characters & Fantasy",
+      "routeExists": true
+    },
+    {
+      "label": "Flowers",
+      "slug": "flowers",
+      "href": "/coloring-pages/flowers",
+      "assetCount": 417,
+      "group": "Animals & Nature",
+      "routeExists": true
+    },
+    {
+      "label": "Food",
+      "slug": "food",
+      "href": "/coloring-pages/food",
+      "assetCount": 261,
+      "group": "Vehicles & Places",
+      "routeExists": true
+    },
+    {
+      "label": "Forest",
+      "slug": "forest",
+      "href": "/coloring-pages/forest",
+      "assetCount": 74,
+      "group": "Animals & Nature",
+      "routeExists": true
+    },
+    {
+      "label": "Garden",
+      "slug": "garden",
+      "href": "/coloring-pages/garden",
+      "assetCount": 266,
+      "group": "More Collections",
+      "routeExists": true
+    },
+    {
+      "label": "Garden Flowers",
+      "slug": "garden-flowers",
+      "href": "/coloring-pages/garden-flowers",
+      "assetCount": 166,
+      "group": "Animals & Nature",
+      "routeExists": true
+    },
+    {
+      "label": "Geometric",
+      "slug": "geometric",
+      "href": "/coloring-pages/geometric",
+      "assetCount": 1459,
+      "group": "Popular",
+      "routeExists": true
+    },
+    {
+      "label": "Griffins",
+      "slug": "griffins",
+      "href": "/coloring-pages/griffins",
+      "assetCount": 21,
+      "group": "More Collections",
+      "routeExists": true
+    },
+    {
+      "label": "Halloween",
+      "slug": "halloween",
+      "href": "/coloring-pages/halloween",
+      "assetCount": 305,
+      "group": "Seasonal",
+      "routeExists": true
+    },
+    {
+      "label": "Holidays",
+      "slug": "holidays",
+      "href": "/coloring-pages/holidays",
+      "assetCount": 874,
+      "group": "Seasonal",
+      "routeExists": true
+    },
+    {
+      "label": "Indoor Plants",
+      "slug": "indoor-plants",
+      "href": "/coloring-pages/indoor-plants",
+      "assetCount": 129,
+      "group": "Animals & Nature",
+      "routeExists": true
+    },
+    {
+      "label": "Insects",
+      "slug": "insects",
+      "href": "/coloring-pages/insects",
+      "assetCount": 180,
+      "group": "Animals & Nature",
+      "routeExists": true
+    },
+    {
+      "label": "Kawaii",
+      "slug": "kawaii",
+      "href": "/coloring-pages/kawaii",
+      "assetCount": 88,
+      "group": "Patterns & Adults",
+      "routeExists": true
+    },
+    {
+      "label": "Mammoths",
+      "slug": "mammoths",
+      "href": "/coloring-pages/mammoths",
+      "assetCount": 20,
+      "group": "More Collections",
+      "routeExists": true
+    },
+    {
+      "label": "Mandalas",
+      "slug": "mandalas",
+      "href": "/coloring-pages/mandalas",
+      "assetCount": 1461,
+      "group": "Popular",
+      "routeExists": true
+    },
+    {
+      "label": "Medieval Fantasy",
+      "slug": "medieval-fantasy",
+      "href": "/coloring-pages/medieval-fantasy",
+      "assetCount": 194,
+      "group": "Characters & Fantasy",
+      "routeExists": true
+    },
+    {
+      "label": "Mermaids",
+      "slug": "mermaids",
+      "href": "/coloring-pages/mermaids",
+      "assetCount": 26,
+      "group": "Characters & Fantasy",
+      "routeExists": true
+    },
+    {
+      "label": "Mythology",
+      "slug": "mythology",
+      "href": "/coloring-pages/mythology",
+      "assetCount": 268,
+      "group": "Characters & Fantasy",
+      "routeExists": true
+    },
+    {
+      "label": "Ocean",
+      "slug": "ocean",
+      "href": "/coloring-pages/ocean",
+      "assetCount": 154,
+      "group": "Animals & Nature",
+      "routeExists": true
+    },
+    {
+      "label": "Octopus",
+      "slug": "octopus",
+      "href": "/coloring-pages/octopus",
+      "assetCount": 20,
+      "group": "More Collections",
+      "routeExists": true
+    },
+    {
+      "label": "Pegasus",
+      "slug": "pegasus",
+      "href": "/coloring-pages/pegasus",
+      "assetCount": 29,
+      "group": "More Collections",
+      "routeExists": true
+    },
+    {
+      "label": "Planes",
+      "slug": "planes",
+      "href": "/coloring-pages/planes",
+      "assetCount": 92,
+      "group": "More Collections",
+      "routeExists": true
+    },
+    {
+      "label": "Plants",
+      "slug": "plants",
+      "href": "/coloring-pages/plants",
+      "assetCount": 658,
+      "group": "Animals & Nature",
+      "routeExists": true
+    },
+    {
+      "label": "Playing Cards",
+      "slug": "playing-cards",
+      "href": "/coloring-pages/playing-cards",
+      "assetCount": 86,
+      "group": "Vehicles & Places",
+      "routeExists": true
+    },
+    {
+      "label": "Plushie Animals",
+      "slug": "plushie-animals",
+      "href": "/coloring-pages/plushie-animals",
+      "assetCount": 105,
+      "group": "Animals & Nature",
+      "routeExists": true
+    },
+    {
+      "label": "Plushie Dragons",
+      "slug": "plushie-dragons",
+      "href": "/coloring-pages/plushie-dragons",
+      "assetCount": 75,
+      "group": "Characters & Fantasy",
+      "routeExists": true
+    },
+    {
+      "label": "Plushies",
+      "slug": "plushies",
+      "href": "/coloring-pages/plushies",
+      "assetCount": 1704,
+      "group": "Popular",
+      "routeExists": true
+    },
+    {
+      "label": "Prehistoric Animals",
+      "slug": "prehistoric-animals",
+      "href": "/coloring-pages/prehistoric-animals",
+      "assetCount": 221,
+      "group": "Animals & Nature",
+      "routeExists": true
+    },
+    {
+      "label": "Reptiles",
+      "slug": "reptiles",
+      "href": "/coloring-pages/reptiles",
+      "assetCount": 156,
+      "group": "Animals & Nature",
+      "routeExists": true
+    },
+    {
+      "label": "Sea Life",
+      "slug": "sea-life",
+      "href": "/coloring-pages/sea-life",
+      "assetCount": 236,
+      "group": "Animals & Nature",
+      "routeExists": true
+    },
+    {
+      "label": "Spiders",
+      "slug": "spiders",
+      "href": "/coloring-pages/spiders",
+      "assetCount": 28,
+      "group": "More Collections",
+      "routeExists": true
+    },
+    {
+      "label": "St. Patrick's Day",
+      "slug": "st-patricks-day",
+      "href": "/coloring-pages/st-patricks-day",
+      "assetCount": 20,
+      "group": "More Collections",
+      "routeExists": true
+    },
+    {
+      "label": "Trains",
+      "slug": "trains",
+      "href": "/coloring-pages/trains",
+      "assetCount": 102,
+      "group": "Vehicles & Places",
+      "routeExists": true
+    },
+    {
+      "label": "Trees",
+      "slug": "trees",
+      "href": "/coloring-pages/trees",
+      "assetCount": 38,
+      "group": "More Collections",
+      "routeExists": true
+    },
+    {
+      "label": "Triceratops",
+      "slug": "triceratops",
+      "href": "/coloring-pages/triceratops",
+      "assetCount": 22,
+      "group": "More Collections",
+      "routeExists": true
+    },
+    {
+      "label": "Turtles",
+      "slug": "turtles",
+      "href": "/coloring-pages/turtles",
+      "assetCount": 44,
+      "group": "More Collections",
+      "routeExists": true
+    },
+    {
+      "label": "Unicorns",
+      "slug": "unicorns",
+      "href": "/coloring-pages/unicorns",
+      "assetCount": 38,
+      "group": "Characters & Fantasy",
+      "routeExists": true
+    },
+    {
+      "label": "Vehicles",
+      "slug": "vehicles",
+      "href": "/coloring-pages/vehicles",
+      "assetCount": 373,
+      "group": "Vehicles & Places",
+      "routeExists": true
+    },
+    {
+      "label": "Whales",
+      "slug": "whales",
+      "href": "/coloring-pages/whales",
+      "assetCount": 40,
+      "group": "More Collections",
+      "routeExists": true
+    },
+    {
+      "label": "World Landmarks",
+      "slug": "world-landmarks",
+      "href": "/coloring-pages/world-landmarks",
+      "assetCount": 47,
+      "group": "More Collections",
+      "routeExists": true
+    }
+  ],
+  "moreMenuGroups": [
+    {
+      "label": "Popular",
+      "links": [
+        {
+          "label": "Plushies",
+          "slug": "plushies",
+          "href": "/coloring-pages/plushies",
+          "assetCount": 1704,
+          "group": "Popular",
+          "routeExists": true
+        },
+        {
+          "label": "Mandalas",
+          "slug": "mandalas",
+          "href": "/coloring-pages/mandalas",
+          "assetCount": 1461,
+          "group": "Popular",
+          "routeExists": true
+        },
+        {
+          "label": "Geometric",
+          "slug": "geometric",
+          "href": "/coloring-pages/geometric",
+          "assetCount": 1459,
+          "group": "Popular",
+          "routeExists": true
+        },
+        {
+          "label": "Fantasy",
+          "slug": "fantasy",
+          "href": "/coloring-pages/fantasy",
+          "assetCount": 1310,
+          "group": "Popular",
+          "routeExists": true
+        },
+        {
+          "label": "Chibi",
+          "slug": "chibi",
+          "href": "/coloring-pages/chibi",
+          "assetCount": 910,
+          "group": "Popular",
+          "routeExists": true
+        },
+        {
+          "label": "Anime Girls",
+          "slug": "anime-girls",
+          "href": "/coloring-pages/anime-girls",
+          "assetCount": 905,
+          "group": "Popular",
+          "routeExists": true
+        }
+      ]
+    },
+    {
+      "label": "Animals & Nature",
+      "links": [
+        {
+          "label": "Plants",
+          "slug": "plants",
+          "href": "/coloring-pages/plants",
+          "assetCount": 658,
+          "group": "Animals & Nature",
+          "routeExists": true
+        },
+        {
+          "label": "Flowers",
+          "slug": "flowers",
+          "href": "/coloring-pages/flowers",
+          "assetCount": 417,
+          "group": "Animals & Nature",
+          "routeExists": true
+        },
+        {
+          "label": "Dogs",
+          "slug": "dogs",
+          "href": "/coloring-pages/dogs",
+          "assetCount": 284,
+          "group": "Animals & Nature",
+          "routeExists": true
+        },
+        {
+          "label": "Sea Life",
+          "slug": "sea-life",
+          "href": "/coloring-pages/sea-life",
+          "assetCount": 236,
+          "group": "Animals & Nature",
+          "routeExists": true
+        },
+        {
+          "label": "Prehistoric Animals",
+          "slug": "prehistoric-animals",
+          "href": "/coloring-pages/prehistoric-animals",
+          "assetCount": 221,
+          "group": "Animals & Nature",
+          "routeExists": true
+        },
+        {
+          "label": "Birds",
+          "slug": "birds",
+          "href": "/coloring-pages/birds",
+          "assetCount": 190,
+          "group": "Animals & Nature",
+          "routeExists": true
+        },
+        {
+          "label": "Dinosaurs",
+          "slug": "dinosaurs",
+          "href": "/coloring-pages/dinosaurs",
+          "assetCount": 190,
+          "group": "Animals & Nature",
+          "routeExists": true
+        },
+        {
+          "label": "Insects",
+          "slug": "insects",
+          "href": "/coloring-pages/insects",
+          "assetCount": 180,
+          "group": "Animals & Nature",
+          "routeExists": true
+        },
+        {
+          "label": "Garden Flowers",
+          "slug": "garden-flowers",
+          "href": "/coloring-pages/garden-flowers",
+          "assetCount": 166,
+          "group": "Animals & Nature",
+          "routeExists": true
+        },
+        {
+          "label": "Reptiles",
+          "slug": "reptiles",
+          "href": "/coloring-pages/reptiles",
+          "assetCount": 156,
+          "group": "Animals & Nature",
+          "routeExists": true
+        },
+        {
+          "label": "Ocean",
+          "slug": "ocean",
+          "href": "/coloring-pages/ocean",
+          "assetCount": 154,
+          "group": "Animals & Nature",
+          "routeExists": true
+        },
+        {
+          "label": "Chibi Flowers",
+          "slug": "chibi-flowers",
+          "href": "/coloring-pages/chibi-flowers",
+          "assetCount": 152,
+          "group": "Animals & Nature",
+          "routeExists": true
+        },
+        {
+          "label": "Indoor Plants",
+          "slug": "indoor-plants",
+          "href": "/coloring-pages/indoor-plants",
+          "assetCount": 129,
+          "group": "Animals & Nature",
+          "routeExists": true
+        },
+        {
+          "label": "Plushie Animals",
+          "slug": "plushie-animals",
+          "href": "/coloring-pages/plushie-animals",
+          "assetCount": 105,
+          "group": "Animals & Nature",
+          "routeExists": true
+        },
+        {
+          "label": "Forest",
+          "slug": "forest",
+          "href": "/coloring-pages/forest",
+          "assetCount": 74,
+          "group": "Animals & Nature",
+          "routeExists": true
+        },
+        {
+          "label": "Cats",
+          "slug": "cats",
+          "href": "/coloring-pages/cats",
+          "assetCount": 58,
+          "group": "Animals & Nature",
+          "routeExists": true
+        },
+        {
+          "label": "Beetles",
+          "slug": "beetles",
+          "href": "/coloring-pages/beetles",
+          "assetCount": 25,
+          "group": "Animals & Nature",
+          "routeExists": true
+        }
+      ]
+    },
+    {
+      "label": "Seasonal",
+      "links": [
+        {
+          "label": "Holidays",
+          "slug": "holidays",
+          "href": "/coloring-pages/holidays",
+          "assetCount": 874,
+          "group": "Seasonal",
+          "routeExists": true
+        },
+        {
+          "label": "Halloween",
+          "slug": "halloween",
+          "href": "/coloring-pages/halloween",
+          "assetCount": 305,
+          "group": "Seasonal",
+          "routeExists": true
+        },
+        {
+          "label": "Birthday",
+          "slug": "birthday",
+          "href": "/coloring-pages/birthday",
+          "assetCount": 211,
+          "group": "Seasonal",
+          "routeExists": true
+        }
+      ]
+    },
+    {
+      "label": "More Collections",
+      "links": [
+        {
+          "label": "Garden",
+          "slug": "garden",
+          "href": "/coloring-pages/garden",
+          "assetCount": 266,
+          "group": "More Collections",
+          "routeExists": true
+        },
+        {
+          "label": "Buildings",
+          "slug": "buildings",
+          "href": "/coloring-pages/buildings",
+          "assetCount": 156,
+          "group": "More Collections",
+          "routeExists": true
+        },
+        {
+          "label": "Dungeon",
+          "slug": "dungeon",
+          "href": "/coloring-pages/dungeon",
+          "assetCount": 99,
+          "group": "More Collections",
+          "routeExists": true
+        },
+        {
+          "label": "Planes",
+          "slug": "planes",
+          "href": "/coloring-pages/planes",
+          "assetCount": 92,
+          "group": "More Collections",
+          "routeExists": true
+        },
+        {
+          "label": "World Landmarks",
+          "slug": "world-landmarks",
+          "href": "/coloring-pages/world-landmarks",
+          "assetCount": 47,
+          "group": "More Collections",
+          "routeExists": true
+        },
+        {
+          "label": "Turtles",
+          "slug": "turtles",
+          "href": "/coloring-pages/turtles",
+          "assetCount": 44,
+          "group": "More Collections",
+          "routeExists": true
+        },
+        {
+          "label": "Whales",
+          "slug": "whales",
+          "href": "/coloring-pages/whales",
+          "assetCount": 40,
+          "group": "More Collections",
+          "routeExists": true
+        },
+        {
+          "label": "Trees",
+          "slug": "trees",
+          "href": "/coloring-pages/trees",
+          "assetCount": 38,
+          "group": "More Collections",
+          "routeExists": true
+        },
+        {
+          "label": "Fairies",
+          "slug": "fairies",
+          "href": "/coloring-pages/fairies",
+          "assetCount": 37,
+          "group": "More Collections",
+          "routeExists": true
+        },
+        {
+          "label": "Pegasus",
+          "slug": "pegasus",
+          "href": "/coloring-pages/pegasus",
+          "assetCount": 29,
+          "group": "More Collections",
+          "routeExists": true
+        },
+        {
+          "label": "Spiders",
+          "slug": "spiders",
+          "href": "/coloring-pages/spiders",
+          "assetCount": 28,
+          "group": "More Collections",
+          "routeExists": true
+        },
+        {
+          "label": "Butterflies",
+          "slug": "butterflies",
+          "href": "/coloring-pages/butterflies",
+          "assetCount": 26,
+          "group": "More Collections",
+          "routeExists": true
+        },
+        {
+          "label": "Bridges",
+          "slug": "bridges",
+          "href": "/coloring-pages/bridges",
+          "assetCount": 23,
+          "group": "More Collections",
+          "routeExists": true
+        },
+        {
+          "label": "Triceratops",
+          "slug": "triceratops",
+          "href": "/coloring-pages/triceratops",
+          "assetCount": 22,
+          "group": "More Collections",
+          "routeExists": true
+        },
+        {
+          "label": "Crabs",
+          "slug": "crabs",
+          "href": "/coloring-pages/crabs",
+          "assetCount": 21,
+          "group": "More Collections",
+          "routeExists": true
+        },
+        {
+          "label": "Griffins",
+          "slug": "griffins",
+          "href": "/coloring-pages/griffins",
+          "assetCount": 21,
+          "group": "More Collections",
+          "routeExists": true
+        },
+        {
+          "label": "Mammoths",
+          "slug": "mammoths",
+          "href": "/coloring-pages/mammoths",
+          "assetCount": 20,
+          "group": "More Collections",
+          "routeExists": true
+        },
+        {
+          "label": "Octopus",
+          "slug": "octopus",
+          "href": "/coloring-pages/octopus",
+          "assetCount": 20,
+          "group": "More Collections",
+          "routeExists": true
+        },
+        {
+          "label": "St. Patrick's Day",
+          "slug": "st-patricks-day",
+          "href": "/coloring-pages/st-patricks-day",
+          "assetCount": 20,
+          "group": "More Collections",
+          "routeExists": true
+        }
+      ]
+    },
+    {
+      "label": "Vehicles & Places",
+      "links": [
+        {
+          "label": "Vehicles",
+          "slug": "vehicles",
+          "href": "/coloring-pages/vehicles",
+          "assetCount": 373,
+          "group": "Vehicles & Places",
+          "routeExists": true
+        },
+        {
+          "label": "Food",
+          "slug": "food",
+          "href": "/coloring-pages/food",
+          "assetCount": 261,
+          "group": "Vehicles & Places",
+          "routeExists": true
+        },
+        {
+          "label": "Cars",
+          "slug": "cars",
+          "href": "/coloring-pages/cars",
+          "assetCount": 193,
+          "group": "Vehicles & Places",
+          "routeExists": true
+        },
+        {
+          "label": "Trains",
+          "slug": "trains",
+          "href": "/coloring-pages/trains",
+          "assetCount": 102,
+          "group": "Vehicles & Places",
+          "routeExists": true
+        },
+        {
+          "label": "Playing Cards",
+          "slug": "playing-cards",
+          "href": "/coloring-pages/playing-cards",
+          "assetCount": 86,
+          "group": "Vehicles & Places",
+          "routeExists": true
+        }
+      ]
+    },
+    {
+      "label": "Patterns & Adults",
+      "links": [
+        {
+          "label": "Easy",
+          "slug": "easy",
+          "href": "/coloring-pages/easy",
+          "assetCount": 1302,
+          "group": "Patterns & Adults",
+          "routeExists": true
+        },
+        {
+          "label": "Cute",
+          "slug": "cute",
+          "href": "/coloring-pages/cute",
+          "assetCount": 375,
+          "group": "Patterns & Adults",
+          "routeExists": true
+        },
+        {
+          "label": "Kawaii",
+          "slug": "kawaii",
+          "href": "/coloring-pages/kawaii",
+          "assetCount": 88,
+          "group": "Patterns & Adults",
+          "routeExists": true
+        }
+      ]
+    },
+    {
+      "label": "Characters & Fantasy",
+      "links": [
+        {
+          "label": "Fantasy Creatures",
+          "slug": "fantasy-creatures",
+          "href": "/coloring-pages/fantasy-creatures",
+          "assetCount": 575,
+          "group": "Characters & Fantasy",
+          "routeExists": true
+        },
+        {
+          "label": "Mythology",
+          "slug": "mythology",
+          "href": "/coloring-pages/mythology",
+          "assetCount": 268,
+          "group": "Characters & Fantasy",
+          "routeExists": true
+        },
+        {
+          "label": "Medieval Fantasy",
+          "slug": "medieval-fantasy",
+          "href": "/coloring-pages/medieval-fantasy",
+          "assetCount": 194,
+          "group": "Characters & Fantasy",
+          "routeExists": true
+        },
+        {
+          "label": "Plushie Dragons",
+          "slug": "plushie-dragons",
+          "href": "/coloring-pages/plushie-dragons",
+          "assetCount": 75,
+          "group": "Characters & Fantasy",
+          "routeExists": true
+        },
+        {
+          "label": "Fantasy Dragons",
+          "slug": "fantasy-dragons",
+          "href": "/coloring-pages/fantasy-dragons",
+          "assetCount": 67,
+          "group": "Characters & Fantasy",
+          "routeExists": true
+        },
+        {
+          "label": "Unicorns",
+          "slug": "unicorns",
+          "href": "/coloring-pages/unicorns",
+          "assetCount": 38,
+          "group": "Characters & Fantasy",
+          "routeExists": true
+        },
+        {
+          "label": "Mermaids",
+          "slug": "mermaids",
+          "href": "/coloring-pages/mermaids",
+          "assetCount": 26,
+          "group": "Characters & Fantasy",
+          "routeExists": true
+        }
+      ]
+    }
+  ],
+  "missingPhase1HubRoutes": [],
+  "brokenLinks": [],
+  "phase2OrBacklogLinks": [],
+  "sectionOnlyLinks": []
+}

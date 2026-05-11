@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-05-11T02:43:32.790Z",
+  "runId": "round-4q-nav-ad-visibility",
+  "summary": {
+    "componentFiles": [
+      "src/components/ads/AdSlot.tsx",
+      "src/components/ads/AdRail.tsx"
+    ],
+    "hiddenByDefault": true,
+    "enabledByEnvFlag": "NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS=1",
+    "buildTimeFlagRead": true,
+    "labelText": "Advertisement",
+    "labelTextVisible": true,
+    "hiddenByCssWhenEnabled": false,
+    "tooSubtleBeforeRound4Q": true,
+    "offScreenRiskBeforeRound4Q": "wide desktop rail only appears at the wide breakpoint and inline slots require scrolling",
+    "wideRailBreakpoint": "min-width: 1600px",
+    "printStylesHidePlaceholders": true,
+    "liveAdCodePresent": false,
+    "publisherOrClientIdsPresent": false,
+    "externalAdRequestsAdded": false,
+    "adInsideNav": false,
+    "adInsideMoreMenu": false,
+    "adInsideMobileNav": false,
+    "adInsideImageCards": false,
+    "adInsideGalleryGrid": false
+  },
+  "findings": [
+    {
+      "id": "round-4p-muted-placeholder-style",
+      "status": "fixed",
+      "detail": "Round 4P placeholders used a muted soft-paper surface and muted label color. They were present when enabled, but easy to miss in manual review."
+    },
+    {
+      "id": "wide-rail-breakpoint",
+      "status": "documented",
+      "detail": "The desktop rail is intentionally wide-screen only. Inline placeholders are the primary enabled-state proof on normal desktop, tablet, and mobile widths."
+    }
+  ]
+}

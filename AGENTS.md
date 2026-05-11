@@ -178,6 +178,16 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - The More menu must provide searchable access to generated hub pages.
 - Mobile navigation must include searchable hub navigation.
 - More and mobile navigation must use existing generated routes only.
+- If ad placeholders exist, they must be visibly QA-tested with the environment flag enabled.
+- Ad placeholder QA requires screenshots or explicit browser evidence for enabled and disabled states.
+- Static export environment flags such as `NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS` must be set before `npm run build`.
+- More menu must open and close predictably.
+- More menu should use available desktop width responsibly and must not be cramped on large screens.
+- Mobile nav must use a proper hamburger menu and search-first layout.
+- Burger menu must not use a bordered button style.
+- Nav and menu surfaces must not contain ads.
+- Nav and menu surfaces must not reintroduce a top-level `Coloring Pages` button.
+- Nav and menu surfaces must use generated Phase 1 routes only.
 - Do not put ads or affiliate content inside navigation menus.
 - Do not change ad placement while working on navigation or download controls.
 - Do not add backend or API routes for downloads or navigation.

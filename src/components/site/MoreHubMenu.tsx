@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useId, useMemo, useRef, useState } from "react";
 
 import type { HubNavGroup, SiteNavLink } from "@/lib/navigation/siteNav";
 
@@ -9,10 +9,16 @@ type MoreHubMenuProps = {
   groups: HubNavGroup[];
   utilityLinks: SiteNavLink[];
   variant?: "desktop" | "mobile";
+  onNavigate?: () => void;
 };
 
-export function MoreHubMenu({ groups, utilityLinks, variant = "desktop" }: MoreHubMenuProps) {
+export function MoreHubMenu({ groups, utilityLinks, variant = "desktop", onNavigate }: MoreHubMenuProps) {
   const [query, setQuery] = useState("");
+  const [isOpen, setIsOpen] = useState(false);
+  const menuId = useId();
+  const buttonRef = useRef<HTMLButtonElement | null>(null);
+  const panelRef = useRef<HTMLDivElement | null>(null);
+  const isDesktop = variant === "desktop";
   const searchLabel = variant === "mobile" ? "Search mobile hub pages" : "Search hub pages";
   const filteredGroups = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
@@ -26,8 +32,45 @@ export function MoreHubMenu({ groups, utilityLinks, variant = "desktop" }: MoreH
       .filter((group) => group.links.length > 0);
   }, [groups, query]);
 
+  useEffect(() => {
+    if (!isDesktop || !isOpen) return;
+
+    function handleKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        setIsOpen(false);
+        buttonRef.current?.focus();
+      }
+    }
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [isDesktop, isOpen]);
+
+  useEffect(() => {
+    if (!isDesktop || !isOpen) return;
+
+    function handlePointerDown(event: PointerEvent) {
+      const target = event.target;
+      if (!(target instanceof Node)) return;
+      if (buttonRef.current?.contains(target) || panelRef.current?.contains(target)) return;
+      setIsOpen(false);
+    }
+
+    document.addEventListener("pointerdown", handlePointerDown);
+    return () => document.removeEventListener("pointerdown", handlePointerDown);
+  }, [isDesktop, isOpen]);
+
+  function handleNavigate() {
+    setIsOpen(false);
+    onNavigate?.();
+  }
+
   const menuBody = (
-    <div className={variant === "mobile" ? "hub-menu-panel hub-menu-panel-mobile" : "hub-menu-panel"}>
+    <div
+      className={variant === "mobile" ? "hub-menu-panel hub-menu-panel-mobile" : "hub-menu-panel hub-menu-panel-desktop"}
+      id={isDesktop ? menuId : undefined}
+      ref={isDesktop ? panelRef : undefined}
+    >
       <div className="hub-menu-search-row">
         <label htmlFor={`hub-menu-search-${variant}`}>{searchLabel}</label>
         <input
@@ -41,7 +84,7 @@ export function MoreHubMenu({ groups, utilityLinks, variant = "desktop" }: MoreH
       </div>
       <div className="hub-menu-utility" aria-label="Gallery navigation">
         {utilityLinks.map((link) => (
-          <Link href={link.href} key={link.href} prefetch={false}>
+          <Link href={link.href} key={link.href} onClick={handleNavigate} prefetch={false}>
             {link.label}
           </Link>
         ))}
@@ -54,7 +97,7 @@ export function MoreHubMenu({ groups, utilityLinks, variant = "desktop" }: MoreH
               <ul>
                 {group.links.map((link) => (
                   <li key={link.href}>
-                    <Link href={link.href} prefetch={false}>
+                    <Link href={link.href} onClick={handleNavigate} prefetch={false}>
                       <span>{link.label}</span>
                       <strong>{link.assetCount.toLocaleString()}</strong>
                     </Link>
@@ -75,10 +118,19 @@ export function MoreHubMenu({ groups, utilityLinks, variant = "desktop" }: MoreH
   }
 
   return (
-    <details className="more-hub-menu">
-      <summary className="site-nav-link more-hub-summary">More</summary>
-      {menuBody}
-    </details>
+    <div className="more-hub-menu">
+      <button
+        className="site-nav-link more-hub-button"
+        type="button"
+        aria-expanded={isOpen}
+        aria-controls={menuId}
+        ref={buttonRef}
+        onClick={() => setIsOpen((current) => !current)}
+      >
+        More
+      </button>
+      {isOpen ? menuBody : null}
+    </div>
   );
 }
 

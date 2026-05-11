@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-05-11T02:43:32.790Z",
+  "runId": "round-4q-nav-ad-visibility",
+  "summary": {
+    "rootCause": "The placeholder system existed, but the muted surface, muted label, and wide-only rail made enabled placeholders easy to miss during manual review.",
+    "envLogicChanged": false,
+    "placementCountChanged": false,
+    "placementMoved": false,
+    "stylingChanged": true,
+    "liveAdCodeAdded": false,
+    "adScriptsAdded": false,
+    "publisherOrClientIdsAdded": false,
+    "labelStillAdvertisement": true,
+    "usesApprovedTokensOnly": true
+  },
+  "filesChanged": [
+    "src/styles/components.css"
+  ],
+  "changes": [
+    "Made enabled placeholders use an approved soft plum surface.",
+    "Changed the label to approved plum text so Advertisement is readable.",
+    "Added a small approved coral accent inside the placeholder box.",
+    "Kept all existing placement component calls unchanged."
+  ]
+}
