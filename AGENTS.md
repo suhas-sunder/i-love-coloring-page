@@ -181,6 +181,12 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - If ad placeholders exist, they must be visibly QA-tested with the environment flag enabled.
 - Ad placeholder QA requires screenshots or explicit browser evidence for enabled and disabled states.
 - Static export environment flags such as `NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS` must be set before `npm run build`.
+- Header/banner ad placeholders should sit below nav, not above it.
+- Desktop side rail placeholders should render on both left and right only when enough room exists.
+- Side rail placeholders must have a safe content gap and must not overlap content.
+- Side rails must disappear on smaller screens.
+- Small-screen banner ad placeholders may appear below the header, but must not crowd navigation.
+- Every ad placeholder slot needs a stable unique slot ID.
 - More menu must open and close predictably.
 - More menu should use available desktop width responsibly and must not be cramped on large screens.
 - Mobile nav must use a proper hamburger menu and search-first layout.

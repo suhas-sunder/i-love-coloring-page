@@ -57,7 +57,9 @@ export default function ColoringPagesLanding() {
 
   return (
     <main className="page-shell">
-      <AdRail />
+      <AdSlot slotId="coloring-pages-header-banner" />
+      <AdRail side="left" slotId="rail-left-desktop" />
+      <AdRail side="right" slotId="rail-right-desktop" />
       <HubHero
         hub={rootHub}
         intro="Browse printable coloring pages by subject, season, style, and difficulty. Search the gallery, pick a favorite, then download or print."

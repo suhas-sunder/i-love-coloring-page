@@ -4,14 +4,17 @@ import type { AdSlotId } from "@/lib/ads/types";
 import { AdSlot } from "./AdSlot";
 
 type AdRailProps = {
-  slotId?: AdSlotId;
+  side: "left" | "right";
+  slotId: AdSlotId;
 };
 
-export function AdRail({ slotId = "global-desktop-rail" }: AdRailProps) {
+export function AdRail({ side, slotId }: AdRailProps) {
   if (!showAdPlaceholders()) return null;
 
+  const sideClass = side === "left" ? "ad-rail-left" : "ad-rail-right";
+
   return (
-    <aside className="ad-rail" aria-label="Desktop advertising rail">
+    <aside className={`ad-rail ${sideClass}`} aria-label={`${side} desktop advertising rail`}>
       <AdSlot slotId={slotId} />
     </aside>
   );

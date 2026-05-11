@@ -1,12 +1,16 @@
 {
-  "generatedAt": "2026-05-11T02:43:32.790Z",
+  "generatedAt": "2026-05-11T03:14:00.146Z",
   "runId": "round-4q-nav-ad-visibility",
   "summary": {
-    "rootCause": "The placeholder system existed, but the muted surface, muted label, and wide-only rail made enabled placeholders easy to miss during manual review.",
+    "rootCause": "The placeholder system existed, but the muted style, right-only rail, missing left rail, and missing page-type header banners made enabled placeholders inconsistent during manual review.",
     "envLogicChanged": false,
-    "placementCountChanged": false,
-    "placementMoved": false,
+    "placementCountChanged": true,
+    "placementMoved": true,
+    "placementChangeReason": "existing right-only rail and inconsistent page skeleton were not AdSense-safe enough for QA",
     "stylingChanged": true,
+    "headerBannerSlotsAdded": true,
+    "leftAndRightRailsAdded": true,
+    "mobileSmallScreenBannerBehavior": "page-type header banner remains below the header while side rails are hidden below the wide-desktop breakpoint",
     "liveAdCodeAdded": false,
     "adScriptsAdded": false,
     "publisherOrClientIdsAdded": false,
@@ -14,12 +18,22 @@
     "usesApprovedTokensOnly": true
   },
   "filesChanged": [
+    "app/page.tsx",
+    "app/coloring-pages/page.tsx",
+    "src/components/coloring/HubPageContent.tsx",
+    "src/components/ads/AdRail.tsx",
+    "src/lib/ads/config.ts",
+    "src/lib/ads/types.ts",
     "src/styles/components.css"
   ],
   "changes": [
+    "Added page-type responsive header banner placeholders below the site header.",
+    "Replaced the single global right rail with separate left and right wide-desktop rail placeholders.",
+    "Configured a 48px safe gap between the content column and side rails.",
+    "Kept side rails hidden below the wide-desktop breakpoint.",
     "Made enabled placeholders use an approved soft plum surface.",
     "Changed the label to approved plum text so Advertisement is readable.",
     "Added a small approved coral accent inside the placeholder box.",
-    "Kept all existing placement component calls unchanged."
+    "Kept inline content placeholders outside gallery grids and away from Print/Download controls."
   ]
 }

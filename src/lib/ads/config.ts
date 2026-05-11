@@ -7,12 +7,26 @@ export function showAdPlaceholders() {
 }
 
 export const AD_SLOT_DEFINITIONS: Record<AdSlotId, AdSlotDefinition> = {
-  "global-desktop-rail": {
-    slotId: "global-desktop-rail",
+  "rail-left-desktop": {
+    slotId: "rail-left-desktop",
     label: "Advertisement",
     placement: "desktop-rail",
     size: "side-rail",
-    description: "Optional wide-desktop rail outside the main reading and gallery column.",
+    description: "Wide-desktop left rail outside the main reading and gallery column.",
+  },
+  "rail-right-desktop": {
+    slotId: "rail-right-desktop",
+    label: "Advertisement",
+    placement: "desktop-rail",
+    size: "side-rail",
+    description: "Wide-desktop right rail outside the main reading and gallery column.",
+  },
+  "home-header-banner": {
+    slotId: "home-header-banner",
+    label: "Advertisement",
+    placement: "header-banner",
+    size: "responsive-banner",
+    description: "Homepage responsive banner below the header and above the hero.",
   },
   "home-after-hero": {
     slotId: "home-after-hero",
@@ -28,6 +42,13 @@ export const AD_SLOT_DEFINITIONS: Record<AdSlotId, AdSlotDefinition> = {
     size: "fluid-inline",
     description: "Homepage lower slot after meaningful browse content.",
   },
+  "coloring-pages-header-banner": {
+    slotId: "coloring-pages-header-banner",
+    label: "Advertisement",
+    placement: "header-banner",
+    size: "responsive-banner",
+    description: "Gallery landing responsive banner below the header and above the page hero.",
+  },
   "coloring-pages-after-featured": {
     slotId: "coloring-pages-after-featured",
     label: "Advertisement",
@@ -41,6 +62,13 @@ export const AD_SLOT_DEFINITIONS: Record<AdSlotId, AdSlotDefinition> = {
     placement: "lower-content",
     size: "fluid-inline",
     description: "Coloring pages lower slot after collection groups.",
+  },
+  "hub-header-banner": {
+    slotId: "hub-header-banner",
+    label: "Advertisement",
+    placement: "header-banner",
+    size: "responsive-banner",
+    description: "Hub-page responsive banner below the header and above the hub hero.",
   },
   "hub-after-gallery": {
     slotId: "hub-after-gallery",

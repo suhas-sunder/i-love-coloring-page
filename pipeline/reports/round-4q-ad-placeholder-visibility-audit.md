@@ -7,7 +7,12 @@
 - Label text visibly styled: true
 - Hidden by CSS when enabled: false
 - Too subtle before Round 4Q: true
-- Wide rail breakpoint: min-width: 1600px
+- Wide rail breakpoint: min-width: 1740px
+- Header/banner slots consistent: true
+- Banner below header and outside nav: true
+- Left and right rails configured: true
+- Rail safe gap configured: true
+- Side rails hidden on small screens: true
 - Print styles hide placeholders: true
 - Live ad code present: false
 - Publisher or client IDs present: false

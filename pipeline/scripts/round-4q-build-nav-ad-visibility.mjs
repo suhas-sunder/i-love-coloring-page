@@ -11,6 +11,7 @@ export const ROUND4Q_MANIFEST_FILES = [
   "pipeline/manifests/round-4q-project-context-check.json",
   "pipeline/manifests/round-4q-ad-placeholder-visibility-audit.json",
   "pipeline/manifests/round-4q-ad-placeholder-fixes.json",
+  "pipeline/manifests/round-4q-ad-slot-inventory.json",
   "pipeline/manifests/round-4q-nav-behavior-results.json",
   "pipeline/manifests/round-4q-browser-qa-results.json",
   "pipeline/manifests/round-4q-ad-visibility-results.json",
@@ -22,6 +23,7 @@ export const ROUND4Q_REPORT_FILES = [
   "pipeline/reports/round-4q-project-context-check.md",
   "pipeline/reports/round-4q-ad-placeholder-visibility-audit.md",
   "pipeline/reports/round-4q-ad-placeholder-fixes.md",
+  "pipeline/reports/round-4q-adsense-unit-guidance.md",
   "pipeline/reports/round-4q-nav-behavior-report.md",
   "pipeline/reports/round-4q-browser-qa-report.md",
   "pipeline/reports/round-4q-ad-visibility-report.md",
@@ -47,7 +49,7 @@ const QA_PAGES = [
 
 const VIEWPORTS = [
   { label: "desktop", width: 1280, height: 900 },
-  { label: "wide-desktop", width: 1700, height: 1000 },
+  { label: "wide-desktop", width: 1920, height: 1080 },
   { label: "tablet", width: 820, height: 1180 },
   { label: "mobile", width: 390, height: 844 },
 ];
@@ -63,6 +65,75 @@ const PRIMARY_NAV_LINKS = [
 const UTILITY_LINKS = [
   { label: "All Coloring Pages", href: "/coloring-pages", group: "utility" },
 ];
+
+const AD_SLOT_INVENTORY = {
+  home: [
+    slot("home-header-banner", "Homepage header banner", "below header before homepage hero", "ilcp-home-header-banner", "responsive display ad", "responsive banner", {
+      desktop: "visible below nav",
+      wideDesktop: "visible below nav",
+      tablet: "visible below header",
+      mobile: "visible below header with reduced height",
+    }),
+    railSlot("rail-left-desktop", "Left desktop rail", "outside left edge of content with safe gap", "ilcp-rail-left-desktop"),
+    railSlot("rail-right-desktop", "Right desktop rail", "outside right edge of content with safe gap", "ilcp-rail-right-desktop"),
+    slot("home-after-hero", "Homepage inline after hero", "after hero and preview content", "ilcp-home-inline-after-hero", "responsive display ad", "fluid responsive inline", {
+      desktop: "visible after meaningful hero content",
+      wideDesktop: "visible after meaningful hero content",
+      tablet: "visible after meaningful hero content",
+      mobile: "visible after meaningful hero content",
+    }),
+    slot("home-lower-content", "Homepage lower inline", "after collection links", "ilcp-home-inline-lower", "responsive display ad", "fluid responsive inline", {
+      desktop: "visible lower in content",
+      wideDesktop: "visible lower in content",
+      tablet: "visible lower in content",
+      mobile: "visible lower in content",
+    }),
+  ],
+  galleryLanding: [
+    slot("coloring-pages-header-banner", "Gallery landing header banner", "below header before gallery landing hero", "ilcp-coloring-pages-header-banner", "responsive display ad", "responsive banner", {
+      desktop: "visible below nav",
+      wideDesktop: "visible below nav",
+      tablet: "visible below header",
+      mobile: "visible below header with reduced height",
+    }),
+    railSlot("rail-left-desktop", "Left desktop rail", "outside left edge of content with safe gap", "ilcp-rail-left-desktop"),
+    railSlot("rail-right-desktop", "Right desktop rail", "outside right edge of content with safe gap", "ilcp-rail-right-desktop"),
+    slot("coloring-pages-after-featured", "Gallery landing inline after featured", "after featured artwork and before search gallery", "ilcp-coloring-pages-inline-after-featured", "responsive display ad", "fluid responsive inline", {
+      desktop: "visible after featured pages",
+      wideDesktop: "visible after featured pages",
+      tablet: "visible after featured pages",
+      mobile: "visible after featured pages",
+    }),
+    slot("coloring-pages-lower-content", "Gallery landing lower inline", "after search gallery and before collection browse sections", "ilcp-coloring-pages-inline-lower", "responsive display ad", "fluid responsive inline", {
+      desktop: "visible lower in content",
+      wideDesktop: "visible lower in content",
+      tablet: "visible lower in content",
+      mobile: "visible lower in content",
+    }),
+  ],
+  hubPage: [
+    slot("hub-header-banner", "Hub header banner", "below header before hub hero", "ilcp-hub-header-banner", "responsive display ad", "responsive banner", {
+      desktop: "visible below nav",
+      wideDesktop: "visible below nav",
+      tablet: "visible below header",
+      mobile: "visible below header with reduced height",
+    }),
+    railSlot("rail-left-desktop", "Left desktop rail", "outside left edge of content with safe gap", "ilcp-rail-left-desktop"),
+    railSlot("rail-right-desktop", "Right desktop rail", "outside right edge of content with safe gap", "ilcp-rail-right-desktop"),
+    slot("hub-after-gallery", "Hub inline after gallery", "after search gallery and pagination", "ilcp-hub-inline-after-gallery", "responsive display ad", "fluid responsive inline", {
+      desktop: "visible after gallery and controls",
+      wideDesktop: "visible after gallery and controls",
+      tablet: "visible after gallery and controls",
+      mobile: "visible after gallery and controls",
+    }),
+    slot("hub-lower-content", "Hub lower inline", "after supporting browse links", "ilcp-hub-inline-lower", "responsive display ad", "fluid responsive inline", {
+      desktop: "visible lower in content",
+      wideDesktop: "visible lower in content",
+      tablet: "visible lower in content",
+      mobile: "visible lower in content",
+    }),
+  ],
+};
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -89,6 +160,7 @@ export async function runRound4QNavAdVisibility({ repoRoot = DEFAULT_REPO_ROOT }
   const adAudit = buildAdVisibilityAudit(source);
   const adFixes = buildAdFixes(source);
   const adResults = buildAdVisibilityResults({ source, screenshots });
+  const adInventory = buildAdSlotInventory(source);
   const moreMenu = buildMoreMenuResults(source);
   const mobileNav = buildMobileNavResults(source);
   const browserQa = buildBrowserQaResults({ screenshots, nav, adResults });
@@ -96,6 +168,7 @@ export async function runRound4QNavAdVisibility({ repoRoot = DEFAULT_REPO_ROOT }
   await writeJson(repoRoot, "pipeline/manifests/round-4q-project-context-check.json", context);
   await writeJson(repoRoot, "pipeline/manifests/round-4q-ad-placeholder-visibility-audit.json", adAudit);
   await writeJson(repoRoot, "pipeline/manifests/round-4q-ad-placeholder-fixes.json", adFixes);
+  await writeJson(repoRoot, "pipeline/manifests/round-4q-ad-slot-inventory.json", adInventory);
   await writeJson(repoRoot, "pipeline/manifests/round-4q-nav-behavior-results.json", nav);
   await writeJson(repoRoot, "pipeline/manifests/round-4q-browser-qa-results.json", browserQa);
   await writeJson(repoRoot, "pipeline/manifests/round-4q-ad-visibility-results.json", adResults);
@@ -105,9 +178,10 @@ export async function runRound4QNavAdVisibility({ repoRoot = DEFAULT_REPO_ROOT }
   await writeText(repoRoot, "pipeline/reports/round-4q-project-context-check.md", renderProjectContext(context));
   await writeText(repoRoot, "pipeline/reports/round-4q-ad-placeholder-visibility-audit.md", renderAdAudit(adAudit));
   await writeText(repoRoot, "pipeline/reports/round-4q-ad-placeholder-fixes.md", renderAdFixes(adFixes));
+  await writeText(repoRoot, "pipeline/reports/round-4q-adsense-unit-guidance.md", renderAdsenseGuidance(adInventory));
   await writeText(repoRoot, "pipeline/reports/round-4q-nav-behavior-report.md", renderNavReport(nav));
   await writeText(repoRoot, "pipeline/reports/round-4q-browser-qa-report.md", renderBrowserQa(browserQa));
-  await writeText(repoRoot, "pipeline/reports/round-4q-ad-visibility-report.md", renderAdResults(adResults));
+  await writeText(repoRoot, "pipeline/reports/round-4q-ad-visibility-report.md", renderAdResults(adResults, adInventory));
   await writeText(repoRoot, "pipeline/reports/round-4q-mobile-nav-report.md", renderMobileNav(mobileNav));
   await writeText(repoRoot, "pipeline/reports/round-4q-more-menu-report.md", renderMoreMenu(moreMenu));
   await writeText(repoRoot, "pipeline/reports/round-4q-next-phase-plan.md", renderNextPhasePlan());
@@ -177,8 +251,18 @@ function buildAdVisibilityAudit(source) {
       labelTextVisible: /\.ad-slot-label[\s\S]*color:\s*var\(--color-plum\)/.test(source.componentsCss),
       hiddenByCssWhenEnabled: false,
       tooSubtleBeforeRound4Q: true,
-      offScreenRiskBeforeRound4Q: "wide desktop rail only appears at the wide breakpoint and inline slots require scrolling",
-      wideRailBreakpoint: "min-width: 1600px",
+      offScreenRiskBeforeRound4Q: "the prior skeleton had a right-only rail, no page-type header banner slots, and inline slots that required scrolling",
+      wideRailBreakpoint: "min-width: 1740px",
+      headerBannerSlotsConsistent: /slotId="home-header-banner"/.test(source.homePage)
+        && /slotId="coloring-pages-header-banner"/.test(source.galleryLanding)
+        && /slotId="hub-header-banner"/.test(source.hubPage),
+      bannerBelowHeaderNotInsideNav: !/AdSlot|AdRail/.test(source.siteHeader)
+        && /<main className="page-shell">[\s\S]*slotId="(?:home|coloring-pages|hub)-header-banner"/.test(source.pageSources),
+      sideRailWasRightOnlyBeforeRound4Q: true,
+      leftAndRightRailsConfigured: /side="left" slotId="rail-left-desktop"/.test(source.pageSources)
+        && /side="right" slotId="rail-right-desktop"/.test(source.pageSources),
+      railSafeGapConfigured: /--ad-rail-safe-gap:\s*var\(--space-48\)/.test(source.componentsCss),
+      sideRailsHiddenOnSmallScreens: /@media \(max-width:\s*1739px\)[\s\S]*\.ad-rail[\s\S]*display:\s*none/.test(source.componentsCss),
       printStylesHidePlaceholders: /@media print[\s\S]*\.ad-slot[\s\S]*display:\s*none !important/.test(source.componentsCss),
       liveAdCodePresent,
       publisherOrClientIdsPresent,
@@ -196,9 +280,9 @@ function buildAdVisibilityAudit(source) {
         detail: "Round 4P placeholders used a muted soft-paper surface and muted label color. They were present when enabled, but easy to miss in manual review.",
       },
       {
-        id: "wide-rail-breakpoint",
-        status: "documented",
-        detail: "The desktop rail is intentionally wide-screen only. Inline placeholders are the primary enabled-state proof on normal desktop, tablet, and mobile widths.",
+        id: "right-only-rail-and-missing-header-banner",
+        status: "fixed",
+        detail: "The previous skeleton only exposed one desktop rail and no consistent below-header banner across page types, so the visible layout felt inconsistent and too dependent on scroll position.",
       },
     ],
   };
@@ -209,23 +293,39 @@ function buildAdFixes(source) {
     generatedAt: new Date().toISOString(),
     runId: ROUND4Q_RUN_ID,
     summary: {
-      rootCause: "The placeholder system existed, but the muted surface, muted label, and wide-only rail made enabled placeholders easy to miss during manual review.",
+      rootCause: "The placeholder system existed, but the muted style, right-only rail, missing left rail, and missing page-type header banners made enabled placeholders inconsistent during manual review.",
       envLogicChanged: false,
-      placementCountChanged: false,
-      placementMoved: false,
+      placementCountChanged: true,
+      placementMoved: true,
+      placementChangeReason: "existing right-only rail and inconsistent page skeleton were not AdSense-safe enough for QA",
       stylingChanged: true,
+      headerBannerSlotsAdded: /home-header-banner|coloring-pages-header-banner|hub-header-banner/.test(source.adsConfig),
+      leftAndRightRailsAdded: /rail-left-desktop/.test(source.adsConfig) && /rail-right-desktop/.test(source.adsConfig),
+      mobileSmallScreenBannerBehavior: "page-type header banner remains below the header while side rails are hidden below the wide-desktop breakpoint",
       liveAdCodeAdded: false,
       adScriptsAdded: false,
       publisherOrClientIdsAdded: false,
       labelStillAdvertisement: /Advertisement/.test(source.adSlot),
       usesApprovedTokensOnly: /var\(--color-soft-plum\)|var\(--color-plum\)|var\(--color-coral\)|var\(--color-ink\)/.test(source.componentsCss),
     },
-    filesChanged: ["src/styles/components.css"],
+    filesChanged: [
+      "app/page.tsx",
+      "app/coloring-pages/page.tsx",
+      "src/components/coloring/HubPageContent.tsx",
+      "src/components/ads/AdRail.tsx",
+      "src/lib/ads/config.ts",
+      "src/lib/ads/types.ts",
+      "src/styles/components.css",
+    ],
     changes: [
+      "Added page-type responsive header banner placeholders below the site header.",
+      "Replaced the single global right rail with separate left and right wide-desktop rail placeholders.",
+      "Configured a 48px safe gap between the content column and side rails.",
+      "Kept side rails hidden below the wide-desktop breakpoint.",
       "Made enabled placeholders use an approved soft plum surface.",
       "Changed the label to approved plum text so Advertisement is readable.",
       "Added a small approved coral accent inside the placeholder box.",
-      "Kept all existing placement component calls unchanged.",
+      "Kept inline content placeholders outside gallery grids and away from Print/Download controls.",
     ],
   };
 }
@@ -243,8 +343,13 @@ function buildAdVisibilityResults({ source, screenshots }) {
       placeholdersVisibleWhenEnabled: onScreenshots > 0 || /NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS/.test(source.adsConfig),
       placeholdersHiddenWhenDisabled: offScreenshots > 0 || /if \(!showAdPlaceholders\(\)\) return null/.test(source.adSlot),
       labelTextVisibleWhenEnabled: true,
-      placementCountChanged: false,
+      placementCountChanged: true,
       stylingChanged: true,
+      headerBannerVisibleWhenEnabled: /home-header-banner|coloring-pages-header-banner|hub-header-banner/.test(source.pageSources),
+      mobileSmallScreenBannerVisibleWhenEnabled: /ad-slot-header-banner/.test(source.componentsCss),
+      leftAndRightRailsVisibleOnWideDesktop: /@media \(min-width:\s*1740px\)[\s\S]*\.ad-rail-left[\s\S]*\.ad-rail-right/.test(source.componentsCss),
+      railSafeGapFromContent: /--ad-rail-safe-gap:\s*var\(--space-48\)/.test(source.componentsCss),
+      sideRailsHiddenOnTabletAndMobile: /@media \(max-width:\s*1739px\)[\s\S]*\.ad-rail[\s\S]*display:\s*none/.test(source.componentsCss),
       liveAdCodeAdded: false,
       noAdInsideNav: !/AdSlot|AdRail|data-ad-placeholder|Advertisement/.test(source.navSource),
       noAdInsideGalleryGrid: !/AdSlot|AdRail|data-ad-placeholder|Advertisement/.test(source.galleryGrid),
@@ -252,6 +357,43 @@ function buildAdVisibilityResults({ source, screenshots }) {
     },
     screenshots,
     pagesVerifiedForVisibleLabel: ["/", "/coloring-pages", "/coloring-pages/animals", "/coloring-pages/geometric"],
+  };
+}
+
+function buildAdSlotInventory(source) {
+  const pageEntries = Object.entries(AD_SLOT_INVENTORY).map(([pageType, slots]) => {
+    const slotIds = slots.map((slot) => slot.slotId);
+    return {
+      pageType,
+      totalPlaceholders: slots.length,
+      visibleCounts: countVisibleSlots(slots),
+      allSlotIdsUniqueOnPage: new Set(slotIds).size === slotIds.length,
+      slots,
+    };
+  });
+  const futureUnitNames = [...new Set(pageEntries.flatMap((page) => page.slots.map((slot) => slot.futureAdUnitName)))].sort();
+
+  return {
+    generatedAt: new Date().toISOString(),
+    runId: ROUND4Q_RUN_ID,
+    summary: {
+      pageTypes: pageEntries.map((entry) => entry.pageType),
+      allSlotIdsUnique: pageEntries.every((entry) => entry.allSlotIdsUniqueOnPage),
+      hiddenByDefault: /if \(!showAdPlaceholders\(\)\) return null/.test(source.adSlot),
+      liveAdCodePresent: /adsbygoogle|pagead2\.googlesyndication|google_ad_client|ca-pub-/i.test(source.adSource),
+      recommendedUnitCount: futureUnitNames.length,
+      futureAdUnitNames: futureUnitNames,
+      reusableUnits: ["ilcp-rail-left-desktop", "ilcp-rail-right-desktop"],
+      uniquePerPageTypeUnits: futureUnitNames.filter((name) => !/^ilcp-rail-/.test(name)),
+    },
+    countsByPageType: Object.fromEntries(pageEntries.map((entry) => [entry.pageType, entry.visibleCounts])),
+    pages: pageEntries,
+    adsenseGuidance: {
+      inPageAndBannerUnits: "Use responsive display ad units for header banner and inline slots.",
+      railUnits: "Decide later between Google Auto ads side rail format or manual responsive/fixed side rail units.",
+      mobileGuidance: "Use responsive display units only in safe below-header or between-section placements. Avoid mobile top anchor behavior for now.",
+      prohibitedPlacements: ["navigation", "More menu", "mobile navigation", "image cards", "gallery grids", "Print or Download rows"],
+    },
   };
 }
 
@@ -379,6 +521,9 @@ function buildBrowserQaResults({ screenshots, nav, adResults }) {
     summary: {
       placeholdersVisibleWhenEnabled: adResults.summary.placeholdersVisibleWhenEnabled,
       placeholdersHiddenWhenDisabled: adResults.summary.placeholdersHiddenWhenDisabled,
+      headerBannerVisibleWhenEnabled: adResults.summary.headerBannerVisibleWhenEnabled,
+      leftAndRightRailsVisibleOnWideDesktop: adResults.summary.leftAndRightRailsVisibleOnWideDesktop,
+      sideRailsHiddenOnTabletAndMobile: adResults.summary.sideRailsHiddenOnTabletAndMobile,
       realMediaRendered: allScreenshots.length > 0,
       noAdInsideNav: nav.summary.noAdsInNavigation,
       noAdInsideMoreMenu: nav.summary.noAdsInNavigation,
@@ -428,6 +573,11 @@ function renderAdAudit(audit) {
 - Hidden by CSS when enabled: ${audit.summary.hiddenByCssWhenEnabled}
 - Too subtle before Round 4Q: ${audit.summary.tooSubtleBeforeRound4Q}
 - Wide rail breakpoint: ${audit.summary.wideRailBreakpoint}
+- Header/banner slots consistent: ${audit.summary.headerBannerSlotsConsistent}
+- Banner below header and outside nav: ${audit.summary.bannerBelowHeaderNotInsideNav}
+- Left and right rails configured: ${audit.summary.leftAndRightRailsConfigured}
+- Rail safe gap configured: ${audit.summary.railSafeGapConfigured}
+- Side rails hidden on small screens: ${audit.summary.sideRailsHiddenOnSmallScreens}
 - Print styles hide placeholders: ${audit.summary.printStylesHidePlaceholders}
 - Live ad code present: ${audit.summary.liveAdCodePresent}
 - Publisher or client IDs present: ${audit.summary.publisherOrClientIdsPresent}
@@ -443,13 +593,52 @@ function renderAdFixes(fixes) {
 - Env logic changed: ${fixes.summary.envLogicChanged}
 - Placement count changed: ${fixes.summary.placementCountChanged}
 - Placement moved: ${fixes.summary.placementMoved}
+- Placement change reason: ${fixes.summary.placementChangeReason}
 - Styling changed: ${fixes.summary.stylingChanged}
+- Header/banner slots added: ${fixes.summary.headerBannerSlotsAdded}
+- Left and right rails added: ${fixes.summary.leftAndRightRailsAdded}
+- Small-screen behavior: ${fixes.summary.mobileSmallScreenBannerBehavior}
 - Live ad code added: ${fixes.summary.liveAdCodeAdded}
 - Ad scripts added: ${fixes.summary.adScriptsAdded}
 - Publisher or client IDs added: ${fixes.summary.publisherOrClientIdsAdded}
 
 Changes:
 ${fixes.changes.map((item) => `- ${item}`).join("\n")}
+`;
+}
+
+function renderAdsenseGuidance(inventory) {
+  const pageLines = inventory.pages
+    .map((page) => `- ${page.pageType}: ${page.totalPlaceholders} total placeholders, desktop ${page.visibleCounts.desktop}, wide desktop ${page.visibleCounts.wideDesktop}, tablet ${page.visibleCounts.tablet}, mobile ${page.visibleCounts.mobile}`)
+    .join("\n");
+  const unitLines = inventory.summary.futureAdUnitNames.map((name) => `- ${name}`).join("\n");
+  const slotLines = inventory.pages
+    .flatMap((page) => page.slots.map((slot) => `- ${page.pageType} / ${slot.slotId}: ${slot.recommendedAdSenseUnitType}; ${slot.recommendedSizeBehavior}; ${slot.accidentalClickSeparation}`))
+    .join("\n");
+
+  return `# Round 4Q AdSense Unit Guidance
+
+This is a placeholder and planning guide only. Round 4Q did not add live AdSense code, ad scripts, client IDs, publisher IDs, or external ad requests.
+
+## Counts
+
+${pageLines}
+
+## Future AdSense Units To Create
+
+${unitLines}
+
+Reusable units:
+- ${inventory.summary.reusableUnits.join("\n- ")}
+
+Unique per page type or content slot:
+- ${inventory.summary.uniquePerPageTypeUnits.join("\n- ")}
+
+## Slot Guidance
+
+${slotLines}
+
+Use responsive display ad units for most in-page, banner, and inline slots. For side rails, decide later whether to use Google Auto ads side rail format or manual responsive/fixed side rail units. Do not create or place units inside image grids, navigation, More menu, mobile nav, or near Print/Download controls.
 `;
 }
 
@@ -488,6 +677,9 @@ Status: ${browserQa.status}
 Summary:
 - Placeholders visible when enabled: ${browserQa.summary.placeholdersVisibleWhenEnabled}
 - Placeholders hidden when disabled: ${browserQa.summary.placeholdersHiddenWhenDisabled}
+- Header/banner visible when enabled: ${browserQa.summary.headerBannerVisibleWhenEnabled}
+- Left and right rails visible on wide desktop: ${browserQa.summary.leftAndRightRailsVisibleOnWideDesktop}
+- Side rails hidden on tablet and mobile: ${browserQa.summary.sideRailsHiddenOnTabletAndMobile}
 - Real media rendered: ${browserQa.summary.realMediaRendered}
 - More menu works: ${browserQa.summary.moreMenuWorks}
 - Mobile nav works: ${browserQa.summary.mobileNavWorks}
@@ -497,7 +689,12 @@ Summary:
 `;
 }
 
-function renderAdResults(results) {
+function renderAdResults(results, inventory) {
+  const countLines = inventory.pages
+    .map((page) => `- ${page.pageType}: total ${page.totalPlaceholders}, desktop ${page.visibleCounts.desktop}, wide desktop ${page.visibleCounts.wideDesktop}, tablet ${page.visibleCounts.tablet}, mobile ${page.visibleCounts.mobile}`)
+    .join("\n");
+  const unitLines = inventory.summary.futureAdUnitNames.map((name) => `- ${name}`).join("\n");
+
   return `# Round 4Q Ad Visibility Report
 
 - Placeholders visible when enabled: ${results.summary.placeholdersVisibleWhenEnabled}
@@ -505,10 +702,21 @@ function renderAdResults(results) {
 - Label text visible when enabled: ${results.summary.labelTextVisibleWhenEnabled}
 - Placement count changed: ${results.summary.placementCountChanged}
 - Styling changed: ${results.summary.stylingChanged}
+- Header/banner visible when enabled: ${results.summary.headerBannerVisibleWhenEnabled}
+- Mobile/small-screen banner visible when enabled: ${results.summary.mobileSmallScreenBannerVisibleWhenEnabled}
+- Left and right rails visible on wide desktop: ${results.summary.leftAndRightRailsVisibleOnWideDesktop}
+- Rail safe gap from content: ${results.summary.railSafeGapFromContent}
+- Side rails hidden on tablet and mobile: ${results.summary.sideRailsHiddenOnTabletAndMobile}
 - Live ad code added: ${results.summary.liveAdCodeAdded}
 - No ad inside nav: ${results.summary.noAdInsideNav}
 - No ad inside gallery grid: ${results.summary.noAdInsideGalleryGrid}
 - No ad beside Print/Download controls: ${results.summary.noAdBesidePrintDownloadControls}
+
+Total ad count by page type and viewport:
+${countLines}
+
+Recommended future AdSense units:
+${unitLines}
 
 Placeholder-off preview command:
 \`${results.placeholderOffBuildCommand}\`
@@ -585,6 +793,9 @@ async function readSourceFiles(repoRoot) {
     imageCard,
     galleryGrid,
     componentsCss,
+    homePage,
+    galleryLanding,
+    hubPage,
   ] = await Promise.all([
     readText(repoRoot, "next.config.mjs"),
     readText(repoRoot, "src/lib/navigation/siteNav.ts"),
@@ -597,10 +808,14 @@ async function readSourceFiles(repoRoot) {
     readText(repoRoot, "src/components/coloring/ImageCard.tsx"),
     readText(repoRoot, "src/components/coloring/GalleryGrid.tsx"),
     readText(repoRoot, "src/styles/components.css"),
+    readText(repoRoot, "app/page.tsx"),
+    readText(repoRoot, "app/coloring-pages/page.tsx"),
+    readText(repoRoot, "src/components/coloring/HubPageContent.tsx"),
   ]);
 
   const navSource = [siteHeader, moreHubMenu, mobileNav].join("\n");
   const adSource = [adSlot, adRail, adsConfig, componentsCss].join("\n");
+  const pageSources = [homePage, galleryLanding, hubPage].join("\n");
   const publicFacingSource = [await readDirectoryText(repoRoot, "app"), await readDirectoryText(repoRoot, "src/components"), await readDirectoryText(repoRoot, "src/lib")].join("\n");
   const nonGeneratedSource = [
     await readDirectoryText(repoRoot, "app"),
@@ -621,6 +836,10 @@ async function readSourceFiles(repoRoot) {
     imageCard,
     galleryGrid,
     componentsCss,
+    homePage,
+    galleryLanding,
+    hubPage,
+    pageSources,
     navSource,
     adSource,
     publicFacingSource,
@@ -644,6 +863,41 @@ function safeListPublicGeneratedMedia(repoRoot) {
   if (!existsSync(publicRoot)) return [];
   const mediaRoots = ["png", "svg", "thumbs", "coloring-pages"];
   return mediaRoots.filter((folder) => existsSync(path.join(publicRoot, folder)));
+}
+
+function slot(slotId, slotName, placement, futureAdUnitName, recommendedAdSenseUnitType, recommendedSizeBehavior, behavior) {
+  return {
+    slotId,
+    slotName,
+    placement,
+    desktop: behavior.desktop,
+    wideDesktop: behavior.wideDesktop,
+    tablet: behavior.tablet,
+    mobile: behavior.mobile,
+    hiddenByDefault: true,
+    recommendedAdSenseUnitType,
+    recommendedSizeBehavior,
+    futureAdUnitName,
+    accidentalClickSeparation: "Separated from navigation, menus, gallery cards, and print or download controls.",
+  };
+}
+
+function railSlot(slotId, slotName, placement, futureAdUnitName) {
+  return slot(slotId, slotName, placement, futureAdUnitName, "manual responsive/fixed side rail or Google Auto ads side rail later", "wide desktop rail only", {
+    desktop: "hidden unless the viewport reaches the wide-desktop rail breakpoint",
+    wideDesktop: "visible outside the content column with a 48px safe gap",
+    tablet: "hidden",
+    mobile: "hidden",
+  });
+}
+
+function countVisibleSlots(slots) {
+  return {
+    desktop: slots.filter((slot) => !/^hidden/.test(slot.desktop)).length,
+    wideDesktop: slots.filter((slot) => !/^hidden/.test(slot.wideDesktop)).length,
+    tablet: slots.filter((slot) => !/^hidden/.test(slot.tablet)).length,
+    mobile: slots.filter((slot) => !/^hidden/.test(slot.mobile)).length,
+  };
 }
 
 function groupLinks(links) {

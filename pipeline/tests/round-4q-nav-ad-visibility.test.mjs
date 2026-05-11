@@ -15,6 +15,7 @@ const ROUND4Q_MANIFESTS = [
   "pipeline/manifests/round-4q-project-context-check.json",
   "pipeline/manifests/round-4q-ad-placeholder-visibility-audit.json",
   "pipeline/manifests/round-4q-ad-placeholder-fixes.json",
+  "pipeline/manifests/round-4q-ad-slot-inventory.json",
   "pipeline/manifests/round-4q-nav-behavior-results.json",
   "pipeline/manifests/round-4q-browser-qa-results.json",
   "pipeline/manifests/round-4q-ad-visibility-results.json",
@@ -26,6 +27,7 @@ const ROUND4Q_REPORTS = [
   "pipeline/reports/round-4q-project-context-check.md",
   "pipeline/reports/round-4q-ad-placeholder-visibility-audit.md",
   "pipeline/reports/round-4q-ad-placeholder-fixes.md",
+  "pipeline/reports/round-4q-adsense-unit-guidance.md",
   "pipeline/reports/round-4q-nav-behavior-report.md",
   "pipeline/reports/round-4q-browser-qa-report.md",
   "pipeline/reports/round-4q-ad-visibility-report.md",
@@ -64,10 +66,16 @@ test("ad placeholders stay env gated, visibly labeled when enabled, and policy s
   const audit = await readJson("pipeline/manifests/round-4q-ad-placeholder-visibility-audit.json");
   const fixes = await readJson("pipeline/manifests/round-4q-ad-placeholder-fixes.json");
   const results = await readJson("pipeline/manifests/round-4q-ad-visibility-results.json");
+  const inventory = await readJson("pipeline/manifests/round-4q-ad-slot-inventory.json");
   const slot = await readText("src/components/ads/AdSlot.tsx");
   const rail = await readText("src/components/ads/AdRail.tsx");
   const config = await readText("src/lib/ads/config.ts");
+  const types = await readText("src/lib/ads/types.ts");
   const css = await readText("src/styles/components.css");
+  const homePage = await readText("app/page.tsx");
+  const galleryLanding = await readText("app/coloring-pages/page.tsx");
+  const hubPage = await readText("src/components/coloring/HubPageContent.tsx");
+  const guidance = await readText("pipeline/reports/round-4q-adsense-unit-guidance.md");
   const forbiddenSurfaces = await readProjectText([
     "src/components/site/SiteHeader.tsx",
     "src/components/site/MoreHubMenu.tsx",
@@ -81,18 +89,66 @@ test("ad placeholders stay env gated, visibly labeled when enabled, and policy s
   assert.equal(audit.summary.liveAdCodePresent, false);
   assert.equal(audit.summary.publisherOrClientIdsPresent, false);
   assert.equal(audit.summary.labelTextVisible, true);
-  assert.equal(fixes.summary.placementCountChanged, false);
+  assert.equal(audit.summary.headerBannerSlotsConsistent, true);
+  assert.equal(audit.summary.leftAndRightRailsConfigured, true);
+  assert.equal(audit.summary.railSafeGapConfigured, true);
+  assert.equal(audit.summary.sideRailsHiddenOnSmallScreens, true);
+  assert.equal(fixes.summary.placementCountChanged, true);
   assert.equal(fixes.summary.liveAdCodeAdded, false);
+  assert.equal(fixes.summary.headerBannerSlotsAdded, true);
+  assert.equal(fixes.summary.leftAndRightRailsAdded, true);
+  assert.equal(fixes.summary.placementChangeReason, "existing right-only rail and inconsistent page skeleton were not AdSense-safe enough for QA");
   assert.equal(results.summary.placeholdersVisibleWhenEnabled, true);
   assert.equal(results.summary.placeholdersHiddenWhenDisabled, true);
+  assert.equal(results.summary.headerBannerVisibleWhenEnabled, true);
+  assert.equal(results.summary.leftAndRightRailsVisibleOnWideDesktop, true);
+  assert.equal(results.summary.sideRailsHiddenOnTabletAndMobile, true);
   assert.match(config, /process\.env\.NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS/);
   assert.match(config, /showAdPlaceholdersValue === "1"/);
+  assert.match(types, /home-header-banner/);
+  assert.match(types, /coloring-pages-header-banner/);
+  assert.match(types, /hub-header-banner/);
+  assert.match(types, /rail-left-desktop/);
+  assert.match(types, /rail-right-desktop/);
   assert.match(slot, /aria-label="Advertisement"/);
   assert.match(slot, /data-ad-placeholder="true"/);
-  assert.match(rail, /showAdPlaceholders/);
+  assert.match(slot, /data-ad-slot=\{slot\.slotId\}/);
+  assert.match(rail, /side:\s*"left"\s*\|\s*"right"/);
+  assert.match(rail, /ad-rail-left/);
+  assert.match(rail, /ad-rail-right/);
+  assert.match(homePage, /slotId="home-header-banner"/);
+  assert.match(homePage, /slotId="rail-left-desktop"/);
+  assert.match(homePage, /slotId="rail-right-desktop"/);
+  assert.match(galleryLanding, /slotId="coloring-pages-header-banner"/);
+  assert.match(galleryLanding, /slotId="rail-left-desktop"/);
+  assert.match(galleryLanding, /slotId="rail-right-desktop"/);
+  assert.match(hubPage, /slotId="hub-header-banner"/);
+  assert.match(hubPage, /slotId="rail-left-desktop"/);
+  assert.match(hubPage, /slotId="rail-right-desktop"/);
   assert.match(css, /\.ad-slot\[data-ad-placeholder="true"\]/);
   assert.match(css, /\.ad-slot-label[\s\S]*color:\s*var\(--color-plum\)/);
+  assert.match(css, /\.ad-slot-header-banner/);
+  assert.match(css, /--ad-rail-safe-gap:\s*var\(--space-48\)/);
+  assert.match(css, /\.ad-rail-left/);
+  assert.match(css, /\.ad-rail-right/);
+  assert.match(css, /@media \(min-width:\s*1740px\)/);
+  assert.match(css, /@media \(max-width:\s*1739px\)[\s\S]*\.ad-rail/);
   assert.match(css, /@media print[\s\S]*\.ad-slot/);
+  assert.equal(inventory.summary.pageTypes.length, 3);
+  assert.equal(inventory.summary.allSlotIdsUnique, true);
+  assert.equal(inventory.summary.liveAdCodePresent, false);
+  assert.deepEqual(inventory.summary.pageTypes.sort(), ["galleryLanding", "home", "hubPage"]);
+  assert.equal(inventory.countsByPageType.home.mobile, 3);
+  assert.equal(inventory.countsByPageType.galleryLanding.mobile, 3);
+  assert.equal(inventory.countsByPageType.hubPage.mobile, 3);
+  assert.equal(inventory.countsByPageType.home.wideDesktop, 5);
+  assert.equal(inventory.countsByPageType.galleryLanding.wideDesktop, 5);
+  assert.equal(inventory.countsByPageType.hubPage.wideDesktop, 5);
+  assert.match(guidance, /ilcp-home-header-banner/);
+  assert.match(guidance, /ilcp-coloring-pages-header-banner/);
+  assert.match(guidance, /ilcp-hub-header-banner/);
+  assert.match(guidance, /ilcp-rail-left-desktop/);
+  assert.match(guidance, /ilcp-rail-right-desktop/);
   assert.doesNotMatch(forbiddenSurfaces, /AdSlot|AdRail|data-ad-placeholder|Advertisement/);
   assert.doesNotMatch(await readProjectText(["app", "src/components", "src/lib"]), /adsbygoogle|pagead2\.googlesyndication|ca-pub-|google_ad_client/i);
 });

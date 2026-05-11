@@ -18,7 +18,9 @@ export default function HomePage() {
 
   return (
     <main className="page-shell">
-      <AdRail />
+      <AdSlot slotId="home-header-banner" />
+      <AdRail side="left" slotId="rail-left-desktop" />
+      <AdRail side="right" slotId="rail-right-desktop" />
       <section className={showHeroPreviews ? "hub-hero" : "hub-hero hub-hero-solo"}>
         <div className="hero-copy">
           <h1 className="page-title">I Love Coloring Page</h1>

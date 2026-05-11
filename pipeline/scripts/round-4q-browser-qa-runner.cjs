@@ -24,7 +24,7 @@ const PAGES = [
 
 const VIEWPORTS = [
   { label: "desktop", width: 1280, height: 900 },
-  { label: "wide-desktop", width: 1700, height: 1000 },
+  { label: "wide-desktop", width: 1920, height: 1080 },
   { label: "tablet", width: 820, height: 1180 },
   { label: "mobile", width: 390, height: 844 },
 ];
@@ -80,6 +80,7 @@ async function inspectPage(browser, pagePath, viewport, screenshotRoot) {
     if (MODE === "on") {
       assert.ok(await page.locator('[data-ad-placeholder="true"]:visible').count() > 0, `${pagePath} should show an ad placeholder`);
       assert.ok(await page.locator(".ad-slot-label:visible").count() > 0, `${pagePath} should show Advertisement label`);
+      await assertResponsiveAdSkeleton(page, pagePath, viewport);
     } else {
       assert.equal(await page.locator('[data-ad-placeholder="true"]').count(), 0, `${pagePath} should not render ad placeholders`);
       assert.equal(await page.getByText("Future ad slot").count(), 0, `${pagePath} should not show placeholder copy`);
@@ -91,6 +92,40 @@ async function inspectPage(browser, pagePath, viewport, screenshotRoot) {
     await saveScreenshot(page, screenshotRoot, `${safePageName(pagePath)}-${viewport.label}.png`);
   } finally {
     await context.close();
+  }
+}
+
+async function assertResponsiveAdSkeleton(page, pagePath, viewport) {
+  const headerSlotId = getHeaderSlotId(pagePath);
+  const headerSlot = page.locator(`[data-ad-slot="${headerSlotId}"]:visible`);
+  assert.equal(await headerSlot.count(), 1, `${pagePath} should show one visible header banner slot`);
+
+  const headerPosition = await page.evaluate((slotId) => {
+    const header = document.querySelector(".site-header")?.getBoundingClientRect();
+    const slot = document.querySelector(`[data-ad-slot="${slotId}"]`)?.getBoundingClientRect();
+    return header && slot ? { headerBottom: header.bottom, slotTop: slot.top } : null;
+  }, headerSlotId);
+  assert.ok(headerPosition, `${pagePath} should expose header and slot geometry`);
+  assert.ok(headerPosition.slotTop >= headerPosition.headerBottom - 1, `${pagePath} header banner should sit below the nav`);
+
+  if (viewport.label === "wide-desktop") {
+    assert.equal(await page.locator('.ad-rail-left [data-ad-slot="rail-left-desktop"]:visible').count(), 1, `${pagePath} should show left rail on wide desktop`);
+    assert.equal(await page.locator('.ad-rail-right [data-ad-slot="rail-right-desktop"]:visible').count(), 1, `${pagePath} should show right rail on wide desktop`);
+    const railGaps = await page.evaluate(() => {
+      const content = document.querySelector(".page-shell")?.getBoundingClientRect();
+      const left = document.querySelector(".ad-rail-left")?.getBoundingClientRect();
+      const right = document.querySelector(".ad-rail-right")?.getBoundingClientRect();
+      return content && left && right
+        ? { leftGap: content.left - left.right, rightGap: right.left - content.right, leftViewportGap: left.left, rightViewportGap: window.innerWidth - right.right }
+        : null;
+    });
+    assert.ok(railGaps, `${pagePath} should expose rail geometry`);
+    assert.ok(railGaps.leftGap >= 40, `${pagePath} left rail should keep a safe content gap`);
+    assert.ok(railGaps.rightGap >= 40, `${pagePath} right rail should keep a safe content gap`);
+    assert.ok(railGaps.leftViewportGap >= 0, `${pagePath} left rail should stay inside viewport`);
+    assert.ok(railGaps.rightViewportGap >= 0, `${pagePath} right rail should not cover the scrollbar area`);
+  } else {
+    assert.equal(await page.locator(".ad-rail:visible").count(), 0, `${pagePath} should hide side rails at ${viewport.label}`);
   }
 }
 
@@ -176,6 +211,12 @@ async function inspectMobileNav(browser) {
 
 function toUrl(pagePath) {
   return `${BASE_URL}${pagePath}`;
+}
+
+function getHeaderSlotId(pagePath) {
+  if (pagePath === "/") return "home-header-banner";
+  if (pagePath === "/coloring-pages") return "coloring-pages-header-banner";
+  return "hub-header-banner";
 }
 
 async function waitForRealMedia(page) {

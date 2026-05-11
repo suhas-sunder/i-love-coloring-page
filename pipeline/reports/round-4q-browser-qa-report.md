@@ -5,7 +5,7 @@ Status: browser_artifacts_created
 - Local media base: http://127.0.0.1:4175/coloring-pages
 - Local app URL: http://localhost:3005
 - Pages inspected: /, /coloring-pages, /coloring-pages/animals, /coloring-pages/geometric, /coloring-pages/anime-girls, /coloring-pages/mandalas, /coloring-pages/chibi, /coloring-pages/fantasy, /coloring-pages/christmas, /coloring-pages/halloween, /coloring-pages/plushies
-- Viewports inspected: desktop 1280x900, wide-desktop 1700x1000, tablet 820x1180, mobile 390x844
+- Viewports inspected: desktop 1280x900, wide-desktop 1920x1080, tablet 820x1180, mobile 390x844
 - Placeholder-on screenshot root: pipeline/review/round-4q/screenshots/ad-placeholders-on
 - Placeholder-off screenshot root: pipeline/review/round-4q/screenshots/ad-placeholders-off
 - Desktop nav screenshot root: pipeline/review/round-4q/screenshots/nav-desktop
@@ -14,6 +14,9 @@ Status: browser_artifacts_created
 Summary:
 - Placeholders visible when enabled: true
 - Placeholders hidden when disabled: true
+- Header/banner visible when enabled: true
+- Left and right rails visible on wide desktop: true
+- Side rails hidden on tablet and mobile: true
 - Real media rendered: true
 - More menu works: true
 - Mobile nav works: true

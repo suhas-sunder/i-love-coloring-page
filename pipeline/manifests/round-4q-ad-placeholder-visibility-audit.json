@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-11T02:43:32.790Z",
+  "generatedAt": "2026-05-11T03:14:00.146Z",
   "runId": "round-4q-nav-ad-visibility",
   "summary": {
     "componentFiles": [
@@ -13,8 +13,14 @@
     "labelTextVisible": true,
     "hiddenByCssWhenEnabled": false,
     "tooSubtleBeforeRound4Q": true,
-    "offScreenRiskBeforeRound4Q": "wide desktop rail only appears at the wide breakpoint and inline slots require scrolling",
-    "wideRailBreakpoint": "min-width: 1600px",
+    "offScreenRiskBeforeRound4Q": "the prior skeleton had a right-only rail, no page-type header banner slots, and inline slots that required scrolling",
+    "wideRailBreakpoint": "min-width: 1740px",
+    "headerBannerSlotsConsistent": true,
+    "bannerBelowHeaderNotInsideNav": true,
+    "sideRailWasRightOnlyBeforeRound4Q": true,
+    "leftAndRightRailsConfigured": true,
+    "railSafeGapConfigured": true,
+    "sideRailsHiddenOnSmallScreens": true,
     "printStylesHidePlaceholders": true,
     "liveAdCodePresent": false,
     "publisherOrClientIdsPresent": false,
@@ -32,9 +38,9 @@
       "detail": "Round 4P placeholders used a muted soft-paper surface and muted label color. They were present when enabled, but easy to miss in manual review."
     },
     {
-      "id": "wide-rail-breakpoint",
-      "status": "documented",
-      "detail": "The desktop rail is intentionally wide-screen only. Inline placeholders are the primary enabled-state proof on normal desktop, tablet, and mobile widths."
+      "id": "right-only-rail-and-missing-header-banner",
+      "status": "fixed",
+      "detail": "The previous skeleton only exposed one desktop rail and no consistent below-header banner across page types, so the visible layout felt inconsistent and too dependent on scroll position."
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-11T02:43:32.791Z",
+  "generatedAt": "2026-05-11T03:14:00.147Z",
   "runId": "round-4q-nav-ad-visibility",
   "status": "browser_artifacts_created",
   "localMediaBaseUrl": "http://127.0.0.1:4175/coloring-pages",
@@ -25,8 +25,8 @@
     },
     {
       "label": "wide-desktop",
-      "width": 1700,
-      "height": 1000
+      "width": 1920,
+      "height": 1080
     },
     {
       "label": "tablet",
@@ -150,6 +150,9 @@
   "summary": {
     "placeholdersVisibleWhenEnabled": true,
     "placeholdersHiddenWhenDisabled": true,
+    "headerBannerVisibleWhenEnabled": true,
+    "leftAndRightRailsVisibleOnWideDesktop": true,
+    "sideRailsHiddenOnTabletAndMobile": true,
     "realMediaRendered": true,
     "noAdInsideNav": true,
     "noAdInsideMoreMenu": true,

@@ -40,7 +40,9 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
 
   return (
     <main className="page-shell">
-      <AdRail />
+      <AdSlot slotId="hub-header-banner" />
+      <AdRail side="left" slotId="rail-left-desktop" />
+      <AdRail side="right" slotId="rail-right-desktop" />
       <HubHero hub={hub} intro={friendlyHubIntro(hub.title)} primaryCtaLabel="Browse gallery">
         {showHeroPreviews ? (
           <div className="hero-preview-grid hero-preview-grid-compact" aria-label={`${hub.title} featured previews`}>
