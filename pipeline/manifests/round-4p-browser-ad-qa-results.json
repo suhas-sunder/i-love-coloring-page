@@ -1,0 +1,96 @@
+{
+  "generatedAt": "2026-05-11",
+  "runId": "round-4p-ad-placeholder-layout-qa",
+  "localMediaBaseUrl": "http://127.0.0.1:4175/coloring-pages",
+  "localAppUrl": "http://localhost:3005",
+  "status": "completed",
+  "pagesInspected": [
+    "/",
+    "/coloring-pages",
+    "/coloring-pages/animals",
+    "/coloring-pages/geometric",
+    "/coloring-pages/anime-girls",
+    "/coloring-pages/mandalas",
+    "/coloring-pages/chibi",
+    "/coloring-pages/fantasy",
+    "/coloring-pages/christmas",
+    "/coloring-pages/halloween",
+    "/coloring-pages/plushies"
+  ],
+  "viewportsInspected": [
+    {
+      "label": "desktop",
+      "method": "in-app browser viewport"
+    },
+    {
+      "label": "wide desktop",
+      "width": 1600,
+      "height": 1000
+    },
+    {
+      "label": "tablet",
+      "width": 820,
+      "height": 1180
+    },
+    {
+      "label": "mobile",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "screenshotRoots": {
+    "placeholdersOn": "pipeline/review/round-4p/screenshots/ad-placeholders-on",
+    "placeholdersOff": "pipeline/review/round-4p/screenshots/ad-placeholders-off"
+  },
+  "summary": {
+    "placeholdersVisibleWhenEnabled": true,
+    "placeholdersHiddenWhenDisabled": true,
+    "realMediaRendered": true,
+    "searchAndFiltersWork": true,
+    "moreMenuWorks": true,
+    "mobileNavSourcePresent": true,
+    "printActionPresent": true,
+    "pngDownloadPresent": true,
+    "noSvgJpegWebpOptions": true,
+    "noAdInsideNav": true,
+    "noAdInsideGalleryGrid": true,
+    "noAdBesidePrintDownloadControls": true,
+    "noHorizontalOverflow": true,
+    "noLayoutCollapse": true,
+    "appApiRoutePresent": false,
+    "policyIssuesFound": [],
+    "visualIssuesFound": []
+  },
+  "placeholderOffResults": {
+    "routesChecked": 11,
+    "adPlaceholderCountPerRoute": 0,
+    "svgDownloadCountPerRoute": 0,
+    "jpegWebpDownloadCountPerRoute": 0,
+    "previewUnavailableCountPerRoute": 0
+  },
+  "placeholderOnResults": {
+    "routesChecked": 11,
+    "adPlaceholderCountPerRoute": 3,
+    "labelCountMatchesPlaceholderCount": true,
+    "svgDownloadCountPerRoute": 0,
+    "jpegWebpDownloadCountPerRoute": 0,
+    "previewUnavailableCountPerRoute": 0
+  },
+  "representativeScreenshots": [
+    "pipeline/review/round-4p/screenshots/ad-placeholders-off/home.png",
+    "pipeline/review/round-4p/screenshots/ad-placeholders-off/coloring-pages.png",
+    "pipeline/review/round-4p/screenshots/ad-placeholders-on/coloring-pages.png",
+    "pipeline/review/round-4p/screenshots/ad-placeholders-on/coloring-pages-ad-slot.png",
+    "pipeline/review/round-4p/screenshots/ad-placeholders-on/viewports/coloring-pages-wide.png",
+    "pipeline/review/round-4p/screenshots/ad-placeholders-on/viewports/coloring-pages-tablet.png",
+    "pipeline/review/round-4p/screenshots/ad-placeholders-on/viewports/coloring-pages-mobile.png",
+    "pipeline/review/round-4p/screenshots/ad-placeholders-on/viewports/animals-wide.png",
+    "pipeline/review/round-4p/screenshots/ad-placeholders-on/viewports/animals-mobile.png"
+  ],
+  "notes": [
+    "Wide desktop rail is visible outside the main content column when placeholders are enabled.",
+    "Mobile starts with the page hero and artwork, not a top ad.",
+    "Inline slots appear after meaningful gallery or browse content, not inside image grids.",
+    "No placement or styling change was needed in Round 4P."
+  ]
+}

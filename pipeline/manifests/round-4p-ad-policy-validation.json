@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-05-11T01:54:18.678Z",
+  "runId": "round-4p-ad-placeholder-layout-qa",
+  "sourcePolicyReport": "pipeline/reports/round-4m-adsense-placement-research.md",
+  "officialGoogleRulesAppliedFromRound4M": [
+    "Avoid accidental clicks",
+    "Do not make ads look like navigation, menus, download links, or page controls",
+    "Use clear labels such as Advertisement or Sponsored Links",
+    "Do not use misleading headings",
+    "Do not place ads inside content grids as fake content",
+    "Avoid mobile placements that crowd controls or cause accidental clicks",
+    "Sticky behavior is not implemented in this round"
+  ],
+  "summary": {
+    "passesPolicySafePlaceholderCheck": true,
+    "liveAdCodePresent": false,
+    "publisherOrClientIdsPresent": false,
+    "labelIsAdvertisement": true,
+    "adInsideNav": false,
+    "adInsideImageCard": false,
+    "adInsideGalleryGrid": false,
+    "adAdjacentToPrintDownloadRows": false,
+    "placeholderVisibleWhenDisabled": false,
+    "hiddenWhenEnvFlagOff": true,
+    "visibleWhenEnvFlagOn": true,
+    "overlapsContent": false,
+    "horizontalOverflowObservedInSourceReview": false,
+    "mobileAccidentalClickRiskObservedInSourceReview": false,
+    "sideRailSticky": false,
+    "hiddenInPrintStyles": true,
+    "issuesFound": []
+  }
+}

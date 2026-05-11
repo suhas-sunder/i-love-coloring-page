@@ -167,6 +167,13 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Browser-side conversion must remain static-export compatible.
 - Browser-side conversion must use PNG preview input, not a user-facing SVG path.
 - Do not add backend or API routes for download conversion.
+- Ad placeholders should be QA-tested with real media before live AdSense work.
+- Ad placeholders stay hidden by default unless explicitly enabled.
+- Ad placeholders must not appear inside navigation, image cards, gallery grids, or Print/Download rows.
+- SEO and content expansion must keep gallery access near the top.
+- SEO sections must be useful, unique, intent-matched, and visually aligned with the locked public gallery design system.
+- SEO sections must not use nested cards, shadows, borders, outlines, gradients, or random colors.
+- JSON-LD, image sitemap, and Open Graph image work should wait until the appropriate SEO round.
 - The top-level navbar should not include a redundant `Coloring Pages` button.
 - The More menu must provide searchable access to generated hub pages.
 - Mobile navigation must include searchable hub navigation.
