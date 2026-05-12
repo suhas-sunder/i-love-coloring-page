@@ -286,6 +286,11 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - SVG may be public-addressable for app internals, but must not be shown as a visible user download.
 - Public CORS must be verified on SVG before enabling JPG, JPEG, or WebP download controls.
 - Image sitemap and Open Graph image work must wait until final public asset URLs are stable.
+- Public SVG plus WebP test verification must pass before final SVG plus WebP full upload.
+- WebP is the public gallery preview format.
+- SVG is internal-only and used for conversion/coloring, not visible download.
+- Do not include png/thumbs in new R2 upload plans unless explicitly approved.
+- Public test success does not approve live ads, image sitemap, or Open Graph image work.
 
 ## Production Asset Hosting
 

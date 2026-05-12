@@ -653,12 +653,28 @@ async function readJson(filePath) {
 
 async function writeJson(filePath, payload) {
   await mkdir(path.dirname(filePath), { recursive: true });
-  await writeFile(filePath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
+  await writeFileWithTransientRetry(filePath, `${JSON.stringify(payload, null, 2)}\n`);
 }
 
 async function writeText(filePath, text) {
   await mkdir(path.dirname(filePath), { recursive: true });
-  await writeFile(filePath, text, "utf8");
+  await writeFileWithTransientRetry(filePath, text);
+}
+
+async function writeFileWithTransientRetry(filePath, text) {
+  const retryableCodes = new Set(["EBUSY", "EMFILE", "ENFILE", "EPERM", "UNKNOWN"]);
+  let lastError;
+  for (let attempt = 0; attempt < 5; attempt += 1) {
+    try {
+      await writeFile(filePath, text, "utf8");
+      return;
+    } catch (error) {
+      lastError = error;
+      if (!retryableCodes.has(error?.code) || attempt === 4) break;
+      await new Promise((resolve) => setTimeout(resolve, 75 * (attempt + 1)));
+    }
+  }
+  throw lastError;
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === __filename) {
