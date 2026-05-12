@@ -1,0 +1,56 @@
+{
+  "generatedAt": "2026-05-12T18:20:46.472Z",
+  "runId": "round-5i-browser-custom-domain-qa",
+  "appUrl": "http://127.0.0.1:3005",
+  "publicBaseUrl": "http://127.0.0.1:4175/coloring-pages",
+  "summary": {
+    "status": "not_run",
+    "pagesInspected": 0,
+    "browserPagesRequired": [
+      "/coloring-pages",
+      "/coloring-pages/animals",
+      "/coloring-pages/geometric",
+      "/coloring-pages/anime-girls",
+      "/coloring-pages/christmas",
+      "/coloring-pages/plushies",
+      "/contact",
+      "/privacy"
+    ],
+    "webpPreviewRenders": false,
+    "nonUploadedItemsFallbackGracefully": false,
+    "noBrokenImageIcons": null,
+    "localMediaServerRequired": false,
+    "internalSvgLoads": false,
+    "browserCanvasExportPassed": false,
+    "pngDownloadWorks": false,
+    "jpgDownloadWorks": false,
+    "webpDownloadWorks": false,
+    "printWorks": false,
+    "printUsesGeneratedOutput": false,
+    "fallbackWorksIfConversionFails": true,
+    "svgDownloadAbsent": true,
+    "jpgJpegWebpVisibleThroughDownloadControl": true,
+    "adDensityMatchesRound4U": true,
+    "horizontalOverflowDetected": null,
+    "appApiRoutePresent": false
+  },
+  "pages": [],
+  "conversionResult": {
+    "attempted": false,
+    "passed": false,
+    "details": "Custom-domain env, URL, or SVG CORS checks are not ready, so browser QA was not run."
+  },
+  "downloadResults": [],
+  "printResult": null,
+  "screenshotPaths": [],
+  "blockers": [
+    "Custom-domain env, URL, or SVG CORS checks are not ready, so browser QA was not run.",
+    "NEXT_PUBLIC_SITE_URL is not configured.",
+    "NEXT_PUBLIC_SITE_URL is not a valid URL.",
+    "NEXT_PUBLIC_SITE_URL must be HTTPS for production-like verification.",
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL must be HTTPS.",
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL must not be localhost or loopback.",
+    "Custom-domain URL verification was not run because production-like env validation failed.",
+    "Custom-domain SVG CORS verification was not run because production-like env validation failed."
+  ]
+}

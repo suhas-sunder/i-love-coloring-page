@@ -1,0 +1,49 @@
+{
+  "generatedAt": "2026-05-12T18:20:46.138Z",
+  "runId": "round-5i-production-env-validation",
+  "sourceEnvVars": [
+    "NEXT_PUBLIC_SITE_URL",
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL",
+    "NEXT_PUBLIC_CONTACT_EMAIL"
+  ],
+  "rawValueCaptured": false,
+  "valueSources": {
+    "siteUrl": "missing",
+    "assetBaseUrl": ".env.local",
+    "contactEmail": "default"
+  },
+  "summary": {
+    "nextPublicSiteUrlConfigured": false,
+    "siteUrlRedacted": "",
+    "siteUrlHttps": false,
+    "siteUrlNotLocalhost": true,
+    "siteUrlNotPlaceholder": true,
+    "siteOrigin": "",
+    "nextPublicColoringAssetBaseUrlConfigured": true,
+    "assetBaseUrlRedacted": "http://127.0.0.1:4175/coloring-pages",
+    "assetBaseHttps": false,
+    "assetBaseHasColoringPagesPrefix": true,
+    "assetBaseNotLocalhost": false,
+    "assetBaseNotR2Dev": true,
+    "assetBaseNotPrivateR2Endpoint": true,
+    "assetBaseHasNoOldTestPrefix": true,
+    "assetBaseHasNoDuplicateColoringPagesPrefix": true,
+    "assetBaseNotPlaceholder": true,
+    "assetBaseCustomDomain": false,
+    "noPublicEnvCredentials": true,
+    "contactEmailConfiguredOrDefaulted": true,
+    "contactEmailRedacted": "admin@ilovecoloringpage.com",
+    "r2DevIsProductionReady": false,
+    "production_asset_domain_ready": false
+  },
+  "blockers": [
+    "NEXT_PUBLIC_SITE_URL is not configured.",
+    "NEXT_PUBLIC_SITE_URL is not a valid URL.",
+    "NEXT_PUBLIC_SITE_URL must be HTTPS for production-like verification.",
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL must be HTTPS.",
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL must not be localhost or loopback."
+  ],
+  "notes": [
+    "Custom-domain URL, CORS, cache, browser QA, and production-like static export checks were stopped because required production-like env values are invalid or missing."
+  ]
+}

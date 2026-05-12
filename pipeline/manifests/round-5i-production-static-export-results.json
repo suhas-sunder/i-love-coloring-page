@@ -1,0 +1,38 @@
+{
+  "generatedAt": "2026-05-12T18:20:46.138Z",
+  "runId": "round-5i-production-static-export-results",
+  "command": "npm run build",
+  "env": {
+    "NEXT_PUBLIC_SITE_URL": "",
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL": "http://127.0.0.1:4175/coloring-pages",
+    "NEXT_PUBLIC_CONTACT_EMAIL": "admin@ilovecoloringpage.com"
+  },
+  "summary": {
+    "status": "not_run",
+    "buildExitCode": null,
+    "outFileCount": null,
+    "localhostLeakagePresent": null,
+    "r2DevLeakagePresent": null,
+    "privateR2EndpointLeakagePresent": null,
+    "sourceFilePathLeakagePresent": null,
+    "oldTestPrefixPresent": false,
+    "duplicateColoringPagesPrefixPresent": false,
+    "downloadSvgLabelsOrLinksPresent": false,
+    "appApiRouteReferencesPresent": false,
+    "liveAdSenseCodePresent": false,
+    "badCanonicalUrlsPresent": null,
+    "badSitemapUrlsPresent": null,
+    "staticExportWorks": false
+  },
+  "badCanonicalUrls": [],
+  "stdoutTail": "",
+  "stderrTail": "",
+  "blockers": [
+    "Production-like static export was not run because production-like env validation failed.",
+    "NEXT_PUBLIC_SITE_URL is not configured.",
+    "NEXT_PUBLIC_SITE_URL is not a valid URL.",
+    "NEXT_PUBLIC_SITE_URL must be HTTPS for production-like verification.",
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL must be HTTPS.",
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL must not be localhost or loopback."
+  ]
+}

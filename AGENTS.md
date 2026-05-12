@@ -312,6 +312,12 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - If CORS or canvas conversion fails, user-facing download controls must fail gracefully without exposing technical stack traces or SVG URLs.
 - Full upload remains final-stage production work.
 - A custom asset domain remains required before production launch readiness.
+- Round 5I production download readiness requires custom asset-domain validation, not `r2.dev`.
+- `r2.dev` is temporary testing only and must not be treated as production-ready.
+- SVG plus WebP full upload requires custom-domain content-type, CORS, and cache validation first.
+- PNG, JPG, and WebP downloads must continue to fail gracefully if browser conversion fails.
+- SVG remains internal-only and must never appear as a user-facing download option.
+- Do not start image sitemap, Open Graph image, JSON-LD image expansion, live AdSense, or ad scripts until the production asset domain is accepted.
 
 ## Production Asset Hosting
 
