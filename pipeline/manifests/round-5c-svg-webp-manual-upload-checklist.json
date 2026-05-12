@@ -1,0 +1,101 @@
+{
+  "generatedAt": "2026-05-12T01:41:03.145Z",
+  "runId": "round-5c-svg-webp-r2-test",
+  "exactLocalFolderToUpload": "pipeline/r2-upload-test-svg-webp/coloring-pages",
+  "uploadToBucketRootInstruction": "Upload pipeline/r2-upload-test-svg-webp/coloring-pages to the bucket root so object keys start with coloring-pages/svg and coloring-pages/webp.",
+  "targetR2ObjectPrefix": "coloring-pages",
+  "expectedNextPublicAssetBaseUrl": "https://YOUR-ASSET-DOMAIN.com/coloring-pages",
+  "temporaryR2DevAllowedForTestingOnly": true,
+  "doNotUpload": [
+    "png/",
+    "thumbs/",
+    "pipeline/r2-upload/coloring-pages full library",
+    "public/",
+    "credentials"
+  ],
+  "avoidDoublePrefix": "Do not upload the coloring-pages folder into an existing coloring-pages prefix, because that creates coloring-pages/coloring-pages.",
+  "requiredContentTypes": {
+    "svg": "image/svg+xml",
+    "webp": "image/webp"
+  },
+  "requiredCors": {
+    "reason": "Browser-side SVG-to-canvas conversion needs an origin-clean canvas.",
+    "methods": [
+      "GET",
+      "HEAD"
+    ],
+    "origins": [
+      "http://localhost:3005",
+      "http://127.0.0.1:3005",
+      "final production site origin"
+    ]
+  },
+  "expectedFileCounts": {
+    "records": 30,
+    "svg": 30,
+    "webp": 30,
+    "total": 60
+  },
+  "sampleObjectKeys": [
+    {
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/animals/animals-alligator-4feec8505a.svg",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-eb8de86d73.svg",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-a676a7c044.svg",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-dragon-eggs-hoodie-plushie-b1747e4988.svg",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-dragon-eggs-hoodie-plushie-f41a8578b5.svg",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-dragon-hoodie-plushie-0492bac704.svg",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-dragon-queen-8c2e2a124f.svg",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-dragon-queen-d532fdf0fd.svg",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-saber-toothed-tiger-hoodie-plushie-14e1ec01ad.svg",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-stegosaurus-hoodie-plushie-1d07718adb.svg",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/chibi/chibi-decaying-dragon-b4bbf97bf0.svg",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/chibi/chibi-dungeon-baby-dragon-in-nest-cde9ddcc12.svg",
+      "contentType": "image/svg+xml"
+    }
+  ]
+}

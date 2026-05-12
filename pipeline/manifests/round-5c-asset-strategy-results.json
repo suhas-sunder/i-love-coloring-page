@@ -1,0 +1,24 @@
+{
+  "generatedAt": "2026-05-12T01:41:03.146Z",
+  "runId": "round-5c-svg-webp-r2-test",
+  "summary": {
+    "svgWebpReadinessComplete": true,
+    "svgWebpTestBundleCreated": true,
+    "testBundleRecordCount": 30,
+    "testBundleFileCount": 60,
+    "testBundleTotalBytes": 12316133,
+    "pngThumbsIncludedInTestBundle": false,
+    "webpGalleryPreviewWorksLocally": true,
+    "publicUrlVerificationRan": false,
+    "publicCorsPassed": false,
+    "jpgJpegWebpControlsRemainDeferred": true,
+    "finalFullUploadUsesSvgWebpOnly": true,
+    "fullUploadDeferred": true
+  },
+  "decisions": [
+    "Round 5C creates a small SVG plus WebP test bundle only.",
+    "The full upload plan remains SVG plus WebP only.",
+    "PNG and thumbs stay untouched locally but are excluded from new test and future full upload plans.",
+    "Public CORS must pass before JPG/JPEG/WebP controls are exposed."
+  ]
+}

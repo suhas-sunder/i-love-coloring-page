@@ -281,6 +281,11 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Gallery previews should prefer WebP when available, then fall back to PNG preview, then thumbnail.
 - Print and public download generation should prefer internal SVG when CORS allows.
 - Full image upload remains final-stage production work.
+- R2 test bundles should now use SVG plus WebP only.
+- Do not include PNG previews or thumbnails in new R2 upload bundles unless explicitly approved.
+- SVG may be public-addressable for app internals, but must not be shown as a visible user download.
+- Public CORS must be verified on SVG before enabling JPG, JPEG, or WebP download controls.
+- Image sitemap and Open Graph image work must wait until final public asset URLs are stable.
 
 ## Production Asset Hosting
 

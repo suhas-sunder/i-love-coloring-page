@@ -1,0 +1,29 @@
+{
+  "generatedAt": "2026-05-12T01:41:00.415Z",
+  "runId": "round-5c-svg-webp-r2-test",
+  "summary": {
+    "correctRepository": true,
+    "packageName": "i-love-coloring-page",
+    "branch": "version-4",
+    "head": "da5fc45d007f9e78840b947c095e96a851d0fdc6",
+    "round5bCommitExists": true,
+    "appApiRoutePresent": false,
+    "staticExportConfigured": true,
+    "coloringPagesRouteExists": true,
+    "hubSlugRouteExists": true,
+    "r2UploadExists": true,
+    "localSvgFolderExists": true,
+    "localWebpFolderExists": true,
+    "publicGeneratedMediaPresent": false,
+    "sourceImagesUntouched": true,
+    "ilovesvgUntouched": true,
+    "svgUserDownloadExposed": false,
+    "currentPublicDownloadFormats": [
+      "PNG"
+    ],
+    "jpgJpegWebpControlsVisible": false,
+    "adWellsVisibleByDefault": true,
+    "liveAdSenseCodePresent": false,
+    "wrongTaskContextDetected": false
+  }
+}
