@@ -291,6 +291,10 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - SVG is internal-only and used for conversion/coloring, not visible download.
 - Do not include png/thumbs in new R2 upload plans unless explicitly approved.
 - Public test success does not approve live ads, image sitemap, or Open Graph image work.
+- Round 5E public verification must use `NEXT_PUBLIC_COLORING_ASSET_BASE_URL`; if it is missing, local, private, or not pointed at the uploaded SVG plus WebP test bundle, URL/CORS/browser results must stay `not_run`.
+- Missing or invalid public asset base configuration must keep JPG, JPEG, and WebP controls hidden.
+- `r2.dev` may be used only as a temporary test route; a custom asset domain remains preferred before production readiness claims.
+- Browser public QA must not be claimed unless the static build is served with the configured public asset base and the uploaded WebP/SVG test files are reachable.
 
 ## Production Asset Hosting
 

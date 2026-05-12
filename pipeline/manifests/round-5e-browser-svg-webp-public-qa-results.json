@@ -1,0 +1,38 @@
+{
+  "generatedAt": "2026-05-12T02:42:50.967Z",
+  "runId": "round-5e-browser-svg-webp-public-qa",
+  "appUrl": "http://127.0.0.1:3005",
+  "publicBaseUrl": "",
+  "summary": {
+    "publicBrowserQaStatus": "not_run",
+    "publicAssetBase": "",
+    "pagesInspected": 0,
+    "publicWebpRenders": false,
+    "nonUploadedItemsFallbackGracefully": false,
+    "noBrokenImageIcons": null,
+    "localMediaServerRequired": null,
+    "internalSvgLoads": false,
+    "browserCanvasExportPassed": false,
+    "printUsesGeneratedOutputWhenCorsPasses": false,
+    "fallbackWorksIfConversionFails": true,
+    "svgDownloadAbsent": true,
+    "publicDownloadsRemainPngOnly": true,
+    "jpgJpegWebpControlsHidden": true,
+    "adDensityMatchesRound4U": true,
+    "horizontalOverflowDetected": null,
+    "appApiRoutePresent": false
+  },
+  "conversionResult": {
+    "attempted": false,
+    "passed": false,
+    "details": "Public asset base validation is not ready, so public browser QA was not run."
+  },
+  "pages": [],
+  "screenshotPaths": [],
+  "blockers": [
+    "Public asset base validation is not ready, so public browser QA was not run.",
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL is not configured for this shell. Public SVG/WebP verification was not run.",
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL is not configured for this shell. Public SVG/WebP verification was not run.",
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL is not configured for this shell. Public SVG/WebP verification was not run."
+  ]
+}

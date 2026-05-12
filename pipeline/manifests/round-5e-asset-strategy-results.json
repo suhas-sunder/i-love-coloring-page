@@ -1,0 +1,49 @@
+{
+  "generatedAt": "2026-05-12T02:42:51.396Z",
+  "runId": "round-5e-asset-strategy-results",
+  "summary": {
+    "publicAssetBaseTested": false,
+    "publicBaseType": "missing",
+    "publicAssetBaseConfigured": false,
+    "publicVerificationReady": false,
+    "svgUrlVerificationPassed": false,
+    "webpUrlVerificationPassed": false,
+    "svgContentTypeCorrect": false,
+    "webpContentTypeCorrect": false,
+    "svgCorsPassed": false,
+    "browserCanvasExportPassed": false,
+    "webpGalleryPublicRenderingPassed": false,
+    "printConversionReadyOnPublicBase": false,
+    "jpgJpegWebpControlsRemainDeferred": true,
+    "jpgJpegWebpControlsReadyForOwnerApproval": false,
+    "currentPublicDownloadFormats": [
+      "PNG"
+    ],
+    "svgInternalOnly": true,
+    "finalUploadModel": "svg-plus-webp-only",
+    "finalUploadFolders": [
+      "svg",
+      "webp"
+    ],
+    "excludedUploadFolders": [
+      "png",
+      "thumbs"
+    ],
+    "fullUploadDeferred": true,
+    "imageSitemapDeferred": true,
+    "openGraphImagesDeferred": true,
+    "liveAdsDeferred": true
+  },
+  "decisions": [
+    "Keep SVG internal-only and public-addressable only for app internals.",
+    "Keep WebP as the gallery preview format.",
+    "Keep public downloads PNG-only in this round.",
+    "Do not expose JPG, JPEG, or WebP download controls until public SVG CORS and browser canvas export pass and the owner approves the UI change.",
+    "Keep the final full upload plan SVG + WebP only."
+  ],
+  "blockers": [
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL is not configured for this shell. Public SVG/WebP verification was not run.",
+    "Browser canvas export has not passed against the public SVG + WebP test base."
+  ],
+  "recommendation": "Round 5F should configure NEXT_PUBLIC_COLORING_ASSET_BASE_URL for the uploaded 30-record test bundle and rerun public URL, CORS, and browser conversion verification."
+}
