@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-05-12T03:10:31.249Z",
+  "runId": "round-5f-public-asset-base-validation",
+  "sourceEnvVar": "NEXT_PUBLIC_COLORING_ASSET_BASE_URL",
+  "rawValueCaptured": false,
+  "summary": {
+    "publicBaseUrlConfigured": true,
+    "publicBaseUrlRedacted": "https://pub-1bf18626e66c4e4aa3093fb370122f11.r2.dev/coloring-pages",
+    "publicVerificationReady": true,
+    "isHttpOrHttps": true,
+    "includesColoringPagesPrefix": true,
+    "isLocalhost": false,
+    "hasOldTestPrefix": false,
+    "hasDuplicateColoringPagesPrefix": false,
+    "privateR2Endpoint": false,
+    "isR2Dev": true,
+    "isCustomDomain": false,
+    "credentialsInUrl": false,
+    "noCredentialsAppearInUrl": true,
+    "baseType": "r2.dev"
+  },
+  "blockers": [],
+  "notes": [
+    "r2.dev is acceptable for this temporary test only; production should use a custom asset domain."
+  ]
+}

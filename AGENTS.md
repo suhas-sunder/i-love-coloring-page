@@ -295,6 +295,10 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Missing or invalid public asset base configuration must keep JPG, JPEG, and WebP controls hidden.
 - `r2.dev` may be used only as a temporary test route; a custom asset domain remains preferred before production readiness claims.
 - Browser public QA must not be claimed unless the static build is served with the configured public asset base and the uploaded WebP/SVG test files are reachable.
+- Round 5F uses `r2.dev` only as a temporary public SVG plus WebP test base.
+- Do not validate `png/` as a substitute for missing or failing `webp/` objects in the SVG plus WebP model.
+- Public SVG plus WebP test verification must pass, including SVG CORS and browser canvas export, before JPG, JPEG, or WebP controls are exposed.
+- Public SVG plus WebP test success does not approve full upload, live ads, image sitemap, or Open Graph image work.
 
 ## Production Asset Hosting
 

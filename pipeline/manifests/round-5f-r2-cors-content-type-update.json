@@ -1,0 +1,117 @@
+{
+  "generatedAt": "2026-05-12T03:10:42.028Z",
+  "runId": "round-5f-r2-cors-content-type-update",
+  "source": "Round 5F observed public SVG/WebP test headers",
+  "summary": {
+    "publicBaseType": "r2.dev",
+    "publicVerificationReady": true,
+    "svgCorsPassed": false,
+    "svgInternalOnly": true,
+    "webpPublicGalleryPreview": true,
+    "jpgJpegWebpControlsRemainHidden": true
+  },
+  "expectedContentTypes": {
+    "svg": "image/svg+xml",
+    "webp": "image/webp"
+  },
+  "observedHeaders": {
+    "svg": [
+      {
+        "r2ObjectKey": "coloring-pages/svg/animals/animals-alligator-4feec8505a.svg",
+        "contentType": "image/svg+xml",
+        "cacheControl": "",
+        "accessControlAllowOrigin": "",
+        "accessControlAllowCredentials": ""
+      },
+      {
+        "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-eb8de86d73.svg",
+        "contentType": "image/svg+xml",
+        "cacheControl": "",
+        "accessControlAllowOrigin": "",
+        "accessControlAllowCredentials": ""
+      },
+      {
+        "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-a676a7c044.svg",
+        "contentType": "image/svg+xml",
+        "cacheControl": "",
+        "accessControlAllowOrigin": "",
+        "accessControlAllowCredentials": ""
+      },
+      {
+        "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-dragon-eggs-hoodie-plushie-b1747e4988.svg",
+        "contentType": "image/svg+xml",
+        "cacheControl": "",
+        "accessControlAllowOrigin": "",
+        "accessControlAllowCredentials": ""
+      },
+      {
+        "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-dragon-eggs-hoodie-plushie-f41a8578b5.svg",
+        "contentType": "image/svg+xml",
+        "cacheControl": "",
+        "accessControlAllowOrigin": "",
+        "accessControlAllowCredentials": ""
+      }
+    ],
+    "webp": [
+      {
+        "r2ObjectKey": "coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+        "contentType": "image/webp",
+        "cacheControl": "",
+        "accessControlAllowOrigin": ""
+      },
+      {
+        "r2ObjectKey": "coloring-pages/webp/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-eb8de86d73.webp",
+        "contentType": "image/webp",
+        "cacheControl": "",
+        "accessControlAllowOrigin": ""
+      },
+      {
+        "r2ObjectKey": "coloring-pages/webp/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-a676a7c044.webp",
+        "contentType": "image/webp",
+        "cacheControl": "",
+        "accessControlAllowOrigin": ""
+      },
+      {
+        "r2ObjectKey": "coloring-pages/webp/anime-girls/anime-girl-dragon-eggs-hoodie-plushie-b1747e4988.webp",
+        "contentType": "image/webp",
+        "cacheControl": "",
+        "accessControlAllowOrigin": ""
+      },
+      {
+        "r2ObjectKey": "coloring-pages/webp/anime-girls/anime-girl-dragon-eggs-hoodie-plushie-f41a8578b5.webp",
+        "contentType": "image/webp",
+        "cacheControl": "",
+        "accessControlAllowOrigin": ""
+      }
+    ]
+  },
+  "recommendedCorsPolicy": [
+    {
+      "AllowedOrigins": [
+        "http://localhost:3005",
+        "http://127.0.0.1:3005"
+      ],
+      "AllowedMethods": [
+        "GET",
+        "HEAD"
+      ],
+      "AllowedHeaders": [
+        "*"
+      ],
+      "ExposeHeaders": [
+        "Content-Type",
+        "Cache-Control",
+        "Content-Length"
+      ],
+      "MaxAgeSeconds": 86400
+    }
+  ],
+  "requiredCorrections": [
+    "Set Access-Control-Allow-Origin for the production origin and local preview origin, or use wildcard for public static assets."
+  ],
+  "cacheGuidance": "Use long-lived immutable cache headers for versioned generated assets after final upload.",
+  "verificationCommand": "node pipeline/scripts/round-5f-verify-svg-webp-public-urls.mjs --public-base-url https://pub-1bf18626e66c4e4aa3093fb370122f11.r2.dev/coloring-pages",
+  "notUserFacing": [
+    "SVG remains internal-only and must not be shown as a visible download option."
+  ]
+}

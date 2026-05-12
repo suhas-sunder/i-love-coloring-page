@@ -1,0 +1,236 @@
+{
+  "generatedAt": "2026-05-12T03:10:42.027Z",
+  "runId": "round-5f-svg-cors-results",
+  "summary": {
+    "status": "completed",
+    "svgCorsPassed": false,
+    "svgUrlCount": 30,
+    "svgCheckedCount": 30,
+    "svgGetPassCount": 30,
+    "svgHeadPassCount": 30,
+    "svgCorsHeaderPassCount": 0,
+    "credentialsRequiredCount": 0,
+    "browserCanLoadCrossOriginAnonymous": false,
+    "canvasUntaintedVerifiedInBrowser": false,
+    "publicBaseType": "r2.dev"
+  },
+  "allowedOriginsChecked": [
+    "http://localhost:3005",
+    "http://127.0.0.1:3005"
+  ],
+  "missingOrWrongHeaders": [
+    {
+      "assetId": "animals__animals-alligator__4feec8505a",
+      "r2ObjectKey": "coloring-pages/svg/animals/animals-alligator-4feec8505a.svg",
+      "observedAccessControlAllowOrigin": "",
+      "observedAccessControlAllowCredentials": "",
+      "problem": "missing-access-control-allow-origin"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-ankylosaurus-hoodie-plushie__eb8de86d73",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-eb8de86d73.svg",
+      "observedAccessControlAllowOrigin": "",
+      "observedAccessControlAllowCredentials": "",
+      "problem": "missing-access-control-allow-origin"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-brachiosaurus-hoodie-plushie__a676a7c044",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-a676a7c044.svg",
+      "observedAccessControlAllowOrigin": "",
+      "observedAccessControlAllowCredentials": "",
+      "problem": "missing-access-control-allow-origin"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dragon-eggs-hoodie-plushie__b1747e4988",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-dragon-eggs-hoodie-plushie-b1747e4988.svg",
+      "observedAccessControlAllowOrigin": "",
+      "observedAccessControlAllowCredentials": "",
+      "problem": "missing-access-control-allow-origin"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dragon-eggs-hoodie-plushie__f41a8578b5",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-dragon-eggs-hoodie-plushie-f41a8578b5.svg",
+      "observedAccessControlAllowOrigin": "",
+      "observedAccessControlAllowCredentials": "",
+      "problem": "missing-access-control-allow-origin"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dragon-hoodie-plushie__0492bac704",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-dragon-hoodie-plushie-0492bac704.svg",
+      "observedAccessControlAllowOrigin": "",
+      "observedAccessControlAllowCredentials": "",
+      "problem": "missing-access-control-allow-origin"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dragon-queen__8c2e2a124f",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-dragon-queen-8c2e2a124f.svg",
+      "observedAccessControlAllowOrigin": "",
+      "observedAccessControlAllowCredentials": "",
+      "problem": "missing-access-control-allow-origin"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dragon-queen__d532fdf0fd",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-dragon-queen-d532fdf0fd.svg",
+      "observedAccessControlAllowOrigin": "",
+      "observedAccessControlAllowCredentials": "",
+      "problem": "missing-access-control-allow-origin"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-saber-toothed-tiger-hoodie-plushie__14e1ec01ad",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-saber-toothed-tiger-hoodie-plushie-14e1ec01ad.svg",
+      "observedAccessControlAllowOrigin": "",
+      "observedAccessControlAllowCredentials": "",
+      "problem": "missing-access-control-allow-origin"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-stegosaurus-hoodie-plushie__1d07718adb",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-stegosaurus-hoodie-plushie-1d07718adb.svg",
+      "observedAccessControlAllowOrigin": "",
+      "observedAccessControlAllowCredentials": "",
+      "problem": "missing-access-control-allow-origin"
+    },
+    {
+      "assetId": "chibi__chibi-decaying-dragon__b4bbf97bf0",
+      "r2ObjectKey": "coloring-pages/svg/chibi/chibi-decaying-dragon-b4bbf97bf0.svg",
+      "observedAccessControlAllowOrigin": "",
+      "observedAccessControlAllowCredentials": "",
+      "problem": "missing-access-control-allow-origin"
+    },
+    {
+      "assetId": "chibi__chibi-dungeon-baby-dragon-in-nest__cde9ddcc12",
+      "r2ObjectKey": "coloring-pages/svg/chibi/chibi-dungeon-baby-dragon-in-nest-cde9ddcc12.svg",
+      "observedAccessControlAllowOrigin": "",
+      "observedAccessControlAllowCredentials": "",
+      "problem": "missing-access-control-allow-origin"
+    },
+    {
+      "assetId": "chibi__chibi-flowers-carnation__1b5fa00e2d",
+      "r2ObjectKey": "coloring-pages/svg/chibi/chibi-flowers-carnation-1b5fa00e2d.svg",
+      "observedAccessControlAllowOrigin": "",
+      "observedAccessControlAllowCredentials": "",
+      "problem": "missing-access-control-allow-origin"
+    },
+    {
+      "assetId": "chibi__chibi-flowers-celosia__e0a426bf9d",
+      "r2ObjectKey": "coloring-pages/svg/chibi/chibi-flowers-celosia-e0a426bf9d.svg",
+      "observedAccessControlAllowOrigin": "",
+      "observedAccessControlAllowCredentials": "",
+      "problem": "missing-access-control-allow-origin"
+    },
+    {
+      "assetId": "chibi__chibi-holiday-halloween-pumpkin-patch-with-family-picking-pumpkins-color__01c2f0ce30",
+      "r2ObjectKey": "coloring-pages/svg/chibi/chibi-holiday-halloween-pumpkin-patch-with-family-picking-pumpkins-color-01c2f0ce30.svg",
+      "observedAccessControlAllowOrigin": "",
+      "observedAccessControlAllowCredentials": "",
+      "problem": "missing-access-control-allow-origin"
+    },
+    {
+      "assetId": "chibi__chibi-holiday-halloween-pumpkin-pie-and-spice-decor-scene-coloring-page__7d3c695c2b",
+      "r2ObjectKey": "coloring-pages/svg/chibi/chibi-holiday-halloween-pumpkin-pie-and-spice-decor-scene-coloring-page-7d3c695c2b.svg",
+      "observedAccessControlAllowOrigin": "",
+      "observedAccessControlAllowCredentials": "",
+      "problem": "missing-access-control-allow-origin"
+    },
+    {
+      "assetId": "chibi__chibi-plushie-prehistoric-diplodocus__a6eff46243",
+      "r2ObjectKey": "coloring-pages/svg/chibi/chibi-plushie-prehistoric-diplodocus-a6eff46243.svg",
+      "observedAccessControlAllowOrigin": "",
+      "observedAccessControlAllowCredentials": "",
+      "problem": "missing-access-control-allow-origin"
+    },
+    {
+      "assetId": "chibi__chibi-plushie-prehistoric-tyrannosaurus-rex__2f73f2fae2",
+      "r2ObjectKey": "coloring-pages/svg/chibi/chibi-plushie-prehistoric-tyrannosaurus-rex-2f73f2fae2.svg",
+      "observedAccessControlAllowOrigin": "",
+      "observedAccessControlAllowCredentials": "",
+      "problem": "missing-access-control-allow-origin"
+    },
+    {
+      "assetId": "holiday__holiday-christmas-plushie-baby-dragon-family__b2bcf582a7",
+      "r2ObjectKey": "coloring-pages/svg/holiday/holiday-christmas-plushie-baby-dragon-family-b2bcf582a7.svg",
+      "observedAccessControlAllowOrigin": "",
+      "observedAccessControlAllowCredentials": "",
+      "problem": "missing-access-control-allow-origin"
+    },
+    {
+      "assetId": "holiday__holiday-christmas-plushie-mermaid__f3fb154ad5",
+      "r2ObjectKey": "coloring-pages/svg/holiday/holiday-christmas-plushie-mermaid-f3fb154ad5.svg",
+      "observedAccessControlAllowOrigin": "",
+      "observedAccessControlAllowCredentials": "",
+      "problem": "missing-access-control-allow-origin"
+    },
+    {
+      "assetId": "indoor-plants__indoor-plants-gerbera-daisy__591cf8e859",
+      "r2ObjectKey": "coloring-pages/svg/indoor-plants/indoor-plants-gerbera-daisy-591cf8e859.svg",
+      "observedAccessControlAllowOrigin": "",
+      "observedAccessControlAllowCredentials": "",
+      "problem": "missing-access-control-allow-origin"
+    },
+    {
+      "assetId": "indoor-plants__indoor-plants-philodendron-pink-princess__ab3e85182b",
+      "r2ObjectKey": "coloring-pages/svg/indoor-plants/indoor-plants-philodendron-pink-princess-ab3e85182b.svg",
+      "observedAccessControlAllowOrigin": "",
+      "observedAccessControlAllowCredentials": "",
+      "problem": "missing-access-control-allow-origin"
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-bakery-cutting-board-with-dough__b2b847f8d9",
+      "r2ObjectKey": "coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-bakery-cutting-board-with-dough-b2b847f8d9.svg",
+      "observedAccessControlAllowOrigin": "",
+      "observedAccessControlAllowCredentials": "",
+      "problem": "missing-access-control-allow-origin"
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-bakery-display-case__922f88ea65",
+      "r2ObjectKey": "coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-bakery-display-case-922f88ea65.svg",
+      "observedAccessControlAllowOrigin": "",
+      "observedAccessControlAllowCredentials": "",
+      "problem": "missing-access-control-allow-origin"
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-bakery-focaccia__988a6bf6e1",
+      "r2ObjectKey": "coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-bakery-focaccia-988a6bf6e1.svg",
+      "observedAccessControlAllowOrigin": "",
+      "observedAccessControlAllowCredentials": "",
+      "problem": "missing-access-control-allow-origin"
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-high-speed-bullet-train-on-__5e359d2a25",
+      "r2ObjectKey": "coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-high-speed-bullet-train-on--5e359d2a25.svg",
+      "observedAccessControlAllowOrigin": "",
+      "observedAccessControlAllowCredentials": "",
+      "problem": "missing-access-control-allow-origin"
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-indian-palace-on-wheels-tra__fa10f9553b",
+      "r2ObjectKey": "coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-indian-palace-on-wheels-tra-fa10f9553b.svg",
+      "observedAccessControlAllowOrigin": "",
+      "observedAccessControlAllowCredentials": "",
+      "problem": "missing-access-control-allow-origin"
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehiacle-cars-pagani-huayra__974ebd3a07",
+      "r2ObjectKey": "coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-cars-pagani-huayra-974ebd3a07.svg",
+      "observedAccessControlAllowOrigin": "",
+      "observedAccessControlAllowCredentials": "",
+      "problem": "missing-access-control-allow-origin"
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehiacle-cars-toyota-supra__d87bfd042b",
+      "r2ObjectKey": "coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-cars-toyota-supra-d87bfd042b.svg",
+      "observedAccessControlAllowOrigin": "",
+      "observedAccessControlAllowCredentials": "",
+      "problem": "missing-access-control-allow-origin"
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehiacle-planes-supersonic-jet__bfd2f21c17",
+      "r2ObjectKey": "coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-planes-supersonic-jet-bfd2f21c17.svg",
+      "observedAccessControlAllowOrigin": "",
+      "observedAccessControlAllowCredentials": "",
+      "problem": "missing-access-control-allow-origin"
+    }
+  ],
+  "blockers": [
+    "SVG CORS did not pass for every uploaded test SVG. Canvas conversion must remain gated."
+  ]
+}
