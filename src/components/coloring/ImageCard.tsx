@@ -2,10 +2,11 @@
 
 import { useState } from "react";
 
-import { downloadPng, printFromHighQualitySource } from "@/lib/coloring/browserDownloads";
+import { printFromHighQualitySource } from "@/lib/coloring/browserDownloads";
 import type { PublicColoringItem } from "@/lib/coloring/types";
 
 import { AssetImage } from "./AssetImage";
+import { DownloadMenu } from "./DownloadMenu";
 
 type ImageCardProps = {
   item: PublicColoringItem;
@@ -38,17 +39,6 @@ export function ImageCard({ item, assetUrls, itemHref = `#asset-${item.assetId}`
     setActionStatus(result.ok ? result.message || "" : result.message);
   }
 
-  async function downloadImagePng() {
-    if (!hasPrintableAsset) return;
-    setActionStatus("");
-    const result = await downloadPng({
-      internalSvgUrl,
-      pngPreviewUrl,
-      title: item.title,
-    });
-    setActionStatus(result.ok ? result.message || "" : result.message);
-  }
-
   return (
     <article className="gallery-item" id={`asset-${item.assetId}`}>
       <a className="gallery-item-media-link" href={itemHref} aria-label={`View ${item.title}`}>
@@ -67,9 +57,13 @@ export function ImageCard({ item, assetUrls, itemHref = `#asset-${item.assetId}`
             <span className="button button-disabled button-small">Assets pending</span>
           )}
           {hasPrintableAsset ? (
-            <button className="gallery-download-link" type="button" onClick={downloadImagePng} aria-label={`Download PNG for ${item.title}`}>
-              Download PNG
-            </button>
+            <DownloadMenu
+              title={item.title}
+              internalSvgUrl={internalSvgUrl}
+              pngPreviewUrl={pngPreviewUrl}
+              aria-label={`Download PNG, JPG, or WebP for ${item.title}`}
+              onStatus={setActionStatus}
+            />
           ) : null}
         </div>
         {actionStatus ? (

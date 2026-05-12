@@ -1,0 +1,29 @@
+{
+  "generatedAt": "2026-05-12T04:25:09.343Z",
+  "runId": "round-5h-browser-qa",
+  "summary": {
+    "localQaStatus": "completed",
+    "publicQaStatus": "completed",
+    "localPngDownloadWorks": true,
+    "localJpgDownloadWorks": true,
+    "localWebpDownloadWorks": true,
+    "publicPngDownloadWorks": true,
+    "publicJpgDownloadWorks": true,
+    "publicWebpDownloadWorks": true,
+    "printWorksLocally": true,
+    "printWorksPublic": true,
+    "svgDownloadAbsent": true,
+    "appApiRoutePresent": false,
+    "screenshots": [
+      "pipeline/review/round-5h/screenshots/coloring-pages-local-1440.png",
+      "pipeline/review/round-5h/screenshots/coloring-pages-animals-local-1440.png",
+      "pipeline/review/round-5h/screenshots/coloring-pages-geometric-local-1440.png",
+      "pipeline/review/round-5h/screenshots/coloring-pages-christmas-local-1440.png",
+      "pipeline/review/round-5h/screenshots/coloring-pages-public-1440.png",
+      "pipeline/review/round-5h/screenshots/coloring-pages-animals-public-1440.png",
+      "pipeline/review/round-5h/screenshots/coloring-pages-geometric-public-1440.png",
+      "pipeline/review/round-5h/screenshots/coloring-pages-christmas-public-1440.png",
+      "pipeline/review/round-5h/screenshots/coloring-pages-plushies-public-1440.png"
+    ]
+  }
+}

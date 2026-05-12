@@ -82,13 +82,21 @@ test("decision keeps JPG and WebP hidden until the current public conversion gat
   const conversion = await readJson("pipeline/manifests/round-4o-browser-conversion-test-results.json");
   const ui = await readJson("pipeline/manifests/round-4o-download-ui-results.json");
   const round5gReadiness = await readJsonIfExists("pipeline/manifests/round-5g-download-format-readiness.json");
+  const round5hExposure = await readJsonIfExists("pipeline/manifests/round-5h-download-format-exposure-results.json");
   const imageCard = await readText("src/components/coloring/ImageCard.tsx");
+  const round5hControlsExposed = round5hExposure?.summary?.controlsExposedAfterVerification === true;
 
   assert.equal(decision.summary.implementedJpegWebp, false);
   assert.equal(decision.summary.deferredJpegWebp, true);
   assert.equal(decision.summary.svgInternalOnly, true);
   assert.equal(decision.summary.requiresCorsBeforeUiExposure, true);
-  assert.equal(conversion.summary.localCorsAllowsCanvasExport, false);
+  if (round5hControlsExposed) {
+    assert.equal(typeof conversion.summary.localCorsAllowsCanvasExport, "boolean");
+    assert.deepEqual(round5hExposure.summary.currentPublicDownloadFormats, ["PNG", "JPG", "WebP"]);
+    assert.equal(round5hExposure.summary.svgExposed, false);
+  } else {
+    assert.equal(conversion.summary.localCorsAllowsCanvasExport, false);
+  }
   if (conversion.summary.temporaryR2CorsAllowsCanvasExport) {
     assert.equal(round5gReadiness?.summary?.browserConversionReady, true);
     assert.equal(round5gReadiness?.summary?.jpgJpegWebpControlsRemainHidden, true);

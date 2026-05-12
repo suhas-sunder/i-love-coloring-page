@@ -60,6 +60,7 @@ type DownloadOptions = {
   internalSvgUrl: string | null | undefined;
   pngPreviewUrl: string | null | undefined;
   title: string;
+  quality?: number;
 };
 
 type PrintOptions = DownloadOptions & {
@@ -84,7 +85,8 @@ const CANVAS_FORMATS: Record<RasterDownloadFormat, FormatConfig> = {
 };
 
 export const VERIFIED_PUBLIC_DOWNLOAD_FORMATS: readonly PublicDownloadFormat[] = ["png"];
-export const DEFERRED_CANVAS_DOWNLOAD_FORMATS: readonly CanvasDownloadFormat[] = ["jpg", "webp"];
+export const EXPOSED_PUBLIC_DOWNLOAD_FORMATS: readonly PublicDownloadFormat[] = ["png", "jpg", "webp"];
+export const DEFERRED_CANVAS_DOWNLOAD_FORMATS: readonly CanvasDownloadFormat[] = [];
 
 export function getVisibleDownloadFormats(options: { canvasConversionVerified: boolean; supportsJpeg?: boolean; supportsWebp?: boolean }) {
   if (!options.canvasConversionVerified) return VERIFIED_PUBLIC_DOWNLOAD_FORMATS;
@@ -96,7 +98,12 @@ export function getVisibleDownloadFormats(options: { canvasConversionVerified: b
 }
 
 export function getSupportedDownloadFormats() {
-  return VERIFIED_PUBLIC_DOWNLOAD_FORMATS;
+  if (!canUseCanvasExport()) return VERIFIED_PUBLIC_DOWNLOAD_FORMATS;
+
+  const formats: PublicDownloadFormat[] = ["png"];
+  if (supportsCanvasMimeType("image/jpeg")) formats.push("jpg");
+  if (supportsCanvasMimeType("image/webp")) formats.push("webp");
+  return formats;
 }
 
 export function canUseCanvasExport() {
@@ -118,6 +125,20 @@ export function buildDownloadFilename(title: string, format: PublicDownloadForma
     .slice(0, 96);
 
   return `${slug || "coloring-page"}.${extension}`;
+}
+
+export async function downloadRasterImage(options: DownloadOptions & { format: PublicDownloadFormat }): Promise<BrowserDownloadResult> {
+  switch (options.format) {
+    case "png":
+      return downloadPng(options);
+    case "jpg":
+    case "jpeg":
+      return downloadJpeg(options);
+    case "webp":
+      return downloadWebp(options);
+    default:
+      return failure("unsupported-format", "This download format is not supported.");
+  }
 }
 
 export async function convertInternalSvgToBlob(options: BrowserRasterOptions): Promise<BrowserRasterResult> {
@@ -217,6 +238,7 @@ export async function downloadPng(options: DownloadOptions): Promise<BrowserDown
     internalSvgUrl: options.internalSvgUrl,
     title: options.title,
     format: "png",
+    quality: options.quality,
     targetLongEdge: DOWNLOAD_TARGET_LONG_EDGE,
   });
 
@@ -237,7 +259,7 @@ export async function downloadPng(options: DownloadOptions): Promise<BrowserDown
     filename: buildDownloadFilename(options.title, "png"),
     format: "png",
     source: "png-preview-fallback",
-    message: "Downloaded the PNG preview fallback. High-quality browser export needs asset CORS.",
+    message: "Downloaded the best available PNG file for this page.",
   };
 }
 
@@ -254,7 +276,7 @@ export async function printFromHighQualitySource(options: PrintOptions): Promise
     return failure("browser-api-unavailable", "Browser print APIs are unavailable.");
   }
 
-  const printWindow = window.open("", "_blank", "noopener,noreferrer");
+  const printWindow = window.open("", "_blank");
   if (!printWindow) return failure("popup-blocked", "The browser blocked the print window.");
   printWindow.opener = null;
   writePreparingDocument(printWindow, options.title);
@@ -293,7 +315,7 @@ export async function printFromHighQualitySource(options: PrintOptions): Promise
   return {
     ok: true,
     source: "png-preview-fallback",
-    message: "Printing from the PNG preview fallback. High-quality SVG conversion needs asset CORS.",
+    message: "Printing from the best available preview because the high-quality file could not be prepared.",
   };
 }
 
@@ -302,6 +324,7 @@ async function downloadConvertedCanvasFormat(options: DownloadOptions, format: C
     internalSvgUrl: options.internalSvgUrl,
     title: options.title,
     format,
+    quality: options.quality,
     targetLongEdge: DOWNLOAD_TARGET_LONG_EDGE,
   });
 
@@ -337,6 +360,20 @@ function triggerUrlDownload(url: string, filename: string) {
   document.body.append(link);
   link.click();
   link.remove();
+}
+
+function supportsCanvasMimeType(mimeType: "image/png" | "image/jpeg" | "image/webp") {
+  if (mimeType === "image/png") return true;
+  if (typeof document === "undefined") return false;
+
+  try {
+    const canvas = document.createElement("canvas");
+    canvas.width = 1;
+    canvas.height = 1;
+    return canvas.toDataURL(mimeType).startsWith(`data:${mimeType}`);
+  } catch {
+    return false;
+  }
 }
 
 function loadCorsImage(imageUrl: string) {

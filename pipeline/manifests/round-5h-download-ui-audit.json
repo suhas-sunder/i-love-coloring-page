@@ -1,0 +1,24 @@
+{
+  "generatedAt": "2026-05-12T04:15:49.656Z",
+  "runId": "round-5h-download-ui-audit",
+  "summary": {
+    "round5gBrowserConversionReady": true,
+    "round5gPngJpegWebpBlobExportPassed": true,
+    "currentPrintUsesInternalSvgConversion": true,
+    "currentPngDownloadUsesInternalSvgFirst": true,
+    "browserDownloadApiSupportsJpeg": true,
+    "browserDownloadApiSupportsWebp": true,
+    "supportDetectionImplemented": true,
+    "structuredErrorHandling": true,
+    "svgUserDownloadExposed": false,
+    "compactDownloadMenuImplemented": true,
+    "pngOptionImplemented": true,
+    "jpgOptionImplemented": true,
+    "webpOptionImplemented": true,
+    "mobileLayoutRisk": "low",
+    "controlsNearAdWells": false,
+    "controlsSeparateFromAds": true,
+    "galleryPreviewUsesWebpFallbackPng": true,
+    "galleryGridUsesCentralResolver": true
+  }
+}

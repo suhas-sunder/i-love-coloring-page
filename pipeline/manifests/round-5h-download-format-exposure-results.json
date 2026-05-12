@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-05-12T04:25:09.345Z",
+  "runId": "round-5h-download-format-exposure",
+  "summary": {
+    "pngExposed": true,
+    "jpgJpegExposed": true,
+    "webpExposed": true,
+    "svgExposed": false,
+    "currentPublicDownloadFormats": [
+      "PNG",
+      "JPG",
+      "WebP"
+    ],
+    "controlsExposedAfterVerification": true,
+    "localConversionPassed": true,
+    "publicConversionPassed": true,
+    "fallbackBehavior": "PNG can fall back to the best available PNG preview. JPG and WebP report a short user message if browser SVG conversion cannot be prepared.",
+    "remainingProductionBlockers": [
+      "custom asset domain",
+      "full SVG plus WebP upload",
+      "production cache headers",
+      "final production CORS"
+    ],
+    "ownerApprovalForImplementation": true
+  }
+}

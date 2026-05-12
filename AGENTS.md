@@ -304,6 +304,14 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - `r2.dev` remains temporary testing only; a custom asset domain remains preferred for production.
 - SVG remains internal-only and WebP remains the gallery preview format.
 - Full upload remains final-stage production work.
+- Round 5H public download controls may include PNG, JPG or JPEG, and WebP after verified browser conversion.
+- SVG must remain internal-only and must never appear as a user-facing download format.
+- Print must use internal SVG conversion when possible, with fallback only when conversion cannot be prepared.
+- Download conversion must remain frontend-only and static-export compatible.
+- Do not add an `app/api` route, backend service, or server-side conversion path for image downloads.
+- If CORS or canvas conversion fails, user-facing download controls must fail gracefully without exposing technical stack traces or SVG URLs.
+- Full upload remains final-stage production work.
+- A custom asset domain remains required before production launch readiness.
 
 ## Production Asset Hosting
 
