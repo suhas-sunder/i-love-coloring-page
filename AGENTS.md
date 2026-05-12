@@ -299,6 +299,11 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Do not validate `png/` as a substitute for missing or failing `webp/` objects in the SVG plus WebP model.
 - Public SVG plus WebP test verification must pass, including SVG CORS and browser canvas export, before JPG, JPEG, or WebP controls are exposed.
 - Public SVG plus WebP test success does not approve full upload, live ads, image sitemap, or Open Graph image work.
+- Round 5G CORS verification must send an `Origin` header. Missing CORS headers from a request without `Origin` must not be treated as conclusive failure.
+- Public browser conversion must pass before JPG, JPEG, or WebP controls are exposed.
+- `r2.dev` remains temporary testing only; a custom asset domain remains preferred for production.
+- SVG remains internal-only and WebP remains the gallery preview format.
+- Full upload remains final-stage production work.
 
 ## Production Asset Hosting
 

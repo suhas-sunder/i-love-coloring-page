@@ -77,10 +77,11 @@ test("browser download utility is static, keeps SVG internal, and never exposes 
   assert.doesNotMatch(imageCard, /Download SVG|assetUrls\.svg|pngUrl\s*\|\|\s*svgUrl/);
 });
 
-test("decision keeps JPG and WebP hidden when CORS canvas conversion is not safely verified", async () => {
+test("decision keeps JPG and WebP hidden until the current public conversion gate allows owner review", async () => {
   const decision = await readJson("pipeline/manifests/round-4o-download-format-decision.json");
   const conversion = await readJson("pipeline/manifests/round-4o-browser-conversion-test-results.json");
   const ui = await readJson("pipeline/manifests/round-4o-download-ui-results.json");
+  const round5gReadiness = await readJsonIfExists("pipeline/manifests/round-5g-download-format-readiness.json");
   const imageCard = await readText("src/components/coloring/ImageCard.tsx");
 
   assert.equal(decision.summary.implementedJpegWebp, false);
@@ -88,7 +89,12 @@ test("decision keeps JPG and WebP hidden when CORS canvas conversion is not safe
   assert.equal(decision.summary.svgInternalOnly, true);
   assert.equal(decision.summary.requiresCorsBeforeUiExposure, true);
   assert.equal(conversion.summary.localCorsAllowsCanvasExport, false);
-  assert.equal(conversion.summary.temporaryR2CorsAllowsCanvasExport, false);
+  if (conversion.summary.temporaryR2CorsAllowsCanvasExport) {
+    assert.equal(round5gReadiness?.summary?.browserConversionReady, true);
+    assert.equal(round5gReadiness?.summary?.jpgJpegWebpControlsRemainHidden, true);
+  } else {
+    assert.equal(conversion.summary.temporaryR2CorsAllowsCanvasExport, false);
+  }
   assert.equal(ui.summary.visibleJpegWebpOptions, false);
   assert.equal(ui.summary.visibleSvgOptions, false);
   assert.equal(ui.summary.printActionPresent, true);
@@ -126,6 +132,15 @@ test("Round 4O keeps ad placement, static export, and protected media boundaries
 
 async function readJson(relativePath) {
   return JSON.parse(await readText(relativePath));
+}
+
+async function readJsonIfExists(relativePath) {
+  try {
+    return await readJson(relativePath);
+  } catch (error) {
+    if (error?.code === "ENOENT") return null;
+    throw error;
+  }
 }
 
 async function readText(relativePath) {

@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-05-12T03:43:07.898Z",
+  "runId": "round-5g-download-format-readiness",
+  "summary": {
+    "browserConversionReady": true,
+    "publicWebpUrlsPassed": true,
+    "publicSvgUrlsPassed": true,
+    "svgCorsPassed": true,
+    "originAwareCorsChecked": true,
+    "browserCanvasExportPassed": true,
+    "jpgJpegWebpControlsReadyForOwnerApproval": true,
+    "jpgJpegWebpControlsRemainHidden": true,
+    "svgUserDownloadExposed": false,
+    "currentPublicDownloadFormats": [
+      "PNG"
+    ],
+    "publicDownloadsRemainPngOnly": true
+  },
+  "decision": "Public conversion is technically ready for owner review, but controls remain hidden in Round 5G by default.",
+  "blockers": []
+}
