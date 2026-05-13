@@ -337,6 +337,14 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Do not switch runtime paths until the clean bundle is generated, uploaded, and verified.
 - Do not upload full assets before the owner approves the object-key review.
 - Manual-review items may be excluded from the first upload only with explicit owner approval.
+- Round 5N first clean full upload bundle excludes manual-review records unless the owner explicitly approves them.
+- The 205 manual-review records are deferred, not deleted, and may be handled in a later upload round.
+- Do not switch runtime app paths to clean object keys until the clean upload is uploaded, publicly verified, and browser-tested.
+- Clean upload bundles must be SVG plus WebP only.
+- Do not include `png/` or `thumbs/` in clean upload bundles.
+- Do not upload assets from Codex unless explicitly approved.
+- `pipeline/r2-upload-clean/` is generated media and must not be committed.
+- Runtime path switching requires a separate verified round after upload.
 
 ## Production Asset Hosting
 

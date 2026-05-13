@@ -1,0 +1,39 @@
+{
+  "generatedAt": "2026-05-13T03:28:11.261Z",
+  "runId": "round-5n-input-audit",
+  "inputs": {
+    "finalMap": "pipeline/manifests/round-5l-final-svg-webp-object-key-map.json",
+    "proposals": "pipeline/manifests/round-5l-clean-object-key-proposals.json",
+    "manualReview5l": "pipeline/manifests/round-5l-manual-review-filename-items.json",
+    "mustReview5m": "pipeline/manifests/round-5m-must-review-candidates.json",
+    "readiness5m": "pipeline/manifests/round-5m-round-5n-readiness-gate.json",
+    "ownerTemplate5m": "pipeline/manifests/round-5m-owner-decision-template.json",
+    "ownerReport5m": "pipeline/reports/round-5m-manual-review-owner-report.md",
+    "ownerCsv5m": "pipeline/reports/round-5m-manual-review-items.csv",
+    "webpPreviewAssets": "pipeline/manifests/round-5b-webp-preview-assets.json",
+    "webpGenerationResults": "pipeline/manifests/round-5b-webp-generation-results.json",
+    "galleryPreviewSourceMap": "pipeline/manifests/round-5b-gallery-preview-source-map.json",
+    "round5mManualReviewFilenameItems": {
+      "path": "pipeline/manifests/round-5m-manual-review-filename-items.json",
+      "exists": false,
+      "note": "Round 5M produced must-review and owner-facing artifacts; Round 5N uses the Round 5L manual-review source plus Round 5M must-review/readiness data."
+    }
+  },
+  "summary": {
+    "finalObjectKeyMapRecords": 6557,
+    "manualReviewCount": 205,
+    "readyCount": 6352,
+    "ownerDecisionDefersAllManualReviewRecords": true,
+    "unresolvedCollisions": 0,
+    "finalUploadModel": "SVG + WebP only",
+    "pngExcluded": true,
+    "thumbsExcluded": true,
+    "round5mReadinessGateWasFalse": true,
+    "round5mOwnerTemplatePresent": true,
+    "round5mOwnerReportPresent": true,
+    "round5mOwnerCsvPresent": true,
+    "webpManifestRecords": 6557,
+    "webpGenerationQuality": 82,
+    "webpSourceFolderCurrentlyExists": false
+  }
+}

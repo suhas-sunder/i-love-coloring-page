@@ -1,0 +1,48 @@
+{
+  "generatedAt": "2026-05-13T03:28:11.261Z",
+  "runId": "round-5n-working-tree-audit",
+  "commands": {
+    "statusShort": "git status --short",
+    "diffStat": "git diff --stat",
+    "diffNameOnly": "git diff --name-only"
+  },
+  "summary": {
+    "statusEntryCount": 5,
+    "generatedValidationDriftCount": 0,
+    "localArtifactDriftCount": 0,
+    "intendedRound5NDriftCount": 5,
+    "riskyUnrelatedDriftCount": 0,
+    "safeToProceed": true
+  },
+  "statusShort": " M .gitignore\n M AGENTS.md\n M package.json\n?? pipeline/scripts/round-5n-build-clean-upload-bundle.mjs\n?? pipeline/tests/round-5n-clean-upload-bundle.test.mjs\n",
+  "diffStat": " .gitignore   | 1 +\n AGENTS.md    | 8 ++++++++\n package.json | 2 +-\n 3 files changed, 10 insertions(+), 1 deletion(-)\n",
+  "diffNameOnly": ".gitignore\nAGENTS.md\npackage.json\n",
+  "entries": [
+    {
+      "raw": " M .gitignore",
+      "path": ".gitignore",
+      "classification": "intended_round_5n_artifact"
+    },
+    {
+      "raw": " M AGENTS.md",
+      "path": "AGENTS.md",
+      "classification": "intended_round_5n_artifact"
+    },
+    {
+      "raw": " M package.json",
+      "path": "package.json",
+      "classification": "intended_round_5n_artifact"
+    },
+    {
+      "raw": "?? pipeline/scripts/round-5n-build-clean-upload-bundle.mjs",
+      "path": "pipeline/scripts/round-5n-build-clean-upload-bundle.mjs",
+      "classification": "intended_round_5n_artifact"
+    },
+    {
+      "raw": "?? pipeline/tests/round-5n-clean-upload-bundle.test.mjs",
+      "path": "pipeline/tests/round-5n-clean-upload-bundle.test.mjs",
+      "classification": "intended_round_5n_artifact"
+    }
+  ],
+  "riskyUnrelatedDrift": []
+}

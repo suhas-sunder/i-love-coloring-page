@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-05-13T03:28:11.261Z",
+  "runId": "round-5n-runtime-switch-readiness",
+  "clean_bundle_created": true,
+  "clean_bundle_uploaded": false,
+  "public_urls_verified": false,
+  "app_runtime_paths_switched": false,
+  "ready_to_switch_runtime_paths": false,
+  "blockers": [
+    "Clean bundle has not been uploaded.",
+    "Public URLs have not been verified.",
+    "CORS, content-type, cache, and browser QA have not been rerun against uploaded clean keys."
+  ]
+}

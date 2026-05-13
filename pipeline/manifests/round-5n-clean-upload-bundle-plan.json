@@ -1,0 +1,22 @@
+{
+  "generatedAt": "2026-05-13T03:28:11.261Z",
+  "runId": "round-5n-clean-upload-bundle-plan",
+  "bundleRoot": "pipeline/r2-upload-clean/coloring-pages",
+  "cleanOptionUsed": true,
+  "verifyOptionUsed": true,
+  "limit": 0,
+  "summary": {
+    "includedRecordCount": 6352,
+    "deferredRecordCount": 205,
+    "expectedSvgFiles": 6352,
+    "expectedWebpFiles": 6352,
+    "expectedTotalFiles": 12704,
+    "svgAndWebpOnly": true,
+    "noPng": true,
+    "noThumbs": true,
+    "noManualReviewRecords": true,
+    "webpSourceFolderExists": false,
+    "webpFallbackSource": "Round 5B WebP manifest with PNG preview regeneration when full WebP source files are absent",
+    "finalObjectKeyMapSha256": "60dc413c72096e933fc001af6979834773c67cd6a18ccf56a7a08aa3f6084ee9"
+  }
+}
