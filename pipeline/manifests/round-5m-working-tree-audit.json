@@ -1,0 +1,154 @@
+{
+  "generatedAt": "2026-05-13T03:11:55.234Z",
+  "runId": "round-5m-working-tree-audit",
+  "commands": {
+    "statusShort": "git status --short",
+    "diffStat": "git diff --stat",
+    "diffNameOnly": "git diff --name-only"
+  },
+  "summary": {
+    "statusEntryCount": 26,
+    "generatedValidationDriftCount": 0,
+    "localArtifactDriftCount": 0,
+    "intendedRound5MDriftCount": 26,
+    "riskyUnrelatedDriftCount": 0,
+    "safeToProceed": true,
+    "note": "Only intended Round 5M artifacts should be committed."
+  },
+  "statusShort": "M  AGENTS.md\nM  package.json\nA  pipeline/manifests/round-5m-contact-sheet-results.json\nA  pipeline/manifests/round-5m-future-upload-review-dependency.json\nA  pipeline/manifests/round-5m-manual-review-groups.json\nA  pipeline/manifests/round-5m-must-review-candidates.json\nA  pipeline/manifests/round-5m-owner-decision-template.json\nA  pipeline/manifests/round-5m-project-context-check.json\nA  pipeline/manifests/round-5m-review-input-audit.json\nA  pipeline/manifests/round-5m-round-5n-readiness-gate.json\nA  pipeline/manifests/round-5m-safe-auto-approval-candidates.json\nA  pipeline/manifests/round-5m-working-tree-audit.json\nA  pipeline/reports/round-5m-contact-sheet-report.md\nA  pipeline/reports/round-5m-future-upload-review-dependency.md\nA  pipeline/reports/round-5m-manual-review-groups.md\nA  pipeline/reports/round-5m-manual-review-items.csv\nA  pipeline/reports/round-5m-manual-review-owner-report.md\nA  pipeline/reports/round-5m-must-review-candidates.md\nA  pipeline/reports/round-5m-owner-decision-template.md\nA  pipeline/reports/round-5m-project-context-check.md\nA  pipeline/reports/round-5m-review-input-audit.md\nA  pipeline/reports/round-5m-round-5n-readiness-gate.md\nA  pipeline/reports/round-5m-safe-auto-approval-candidates.md\nA  pipeline/reports/round-5m-working-tree-audit.md\nAM pipeline/scripts/round-5m-build-manual-review-package.mjs\nA  pipeline/tests/round-5m-manual-review-package.test.mjs\n",
+  "diffStat": " pipeline/scripts/round-5m-build-manual-review-package.mjs | 3 ++-\n 1 file changed, 2 insertions(+), 1 deletion(-)\n",
+  "diffNameOnly": "pipeline/scripts/round-5m-build-manual-review-package.mjs\n",
+  "entries": [
+    {
+      "raw": "M  AGENTS.md",
+      "path": "AGENTS.md",
+      "classification": "intended_round_5m_artifact"
+    },
+    {
+      "raw": "M  package.json",
+      "path": "package.json",
+      "classification": "intended_round_5m_artifact"
+    },
+    {
+      "raw": "A  pipeline/manifests/round-5m-contact-sheet-results.json",
+      "path": "pipeline/manifests/round-5m-contact-sheet-results.json",
+      "classification": "intended_round_5m_artifact"
+    },
+    {
+      "raw": "A  pipeline/manifests/round-5m-future-upload-review-dependency.json",
+      "path": "pipeline/manifests/round-5m-future-upload-review-dependency.json",
+      "classification": "intended_round_5m_artifact"
+    },
+    {
+      "raw": "A  pipeline/manifests/round-5m-manual-review-groups.json",
+      "path": "pipeline/manifests/round-5m-manual-review-groups.json",
+      "classification": "intended_round_5m_artifact"
+    },
+    {
+      "raw": "A  pipeline/manifests/round-5m-must-review-candidates.json",
+      "path": "pipeline/manifests/round-5m-must-review-candidates.json",
+      "classification": "intended_round_5m_artifact"
+    },
+    {
+      "raw": "A  pipeline/manifests/round-5m-owner-decision-template.json",
+      "path": "pipeline/manifests/round-5m-owner-decision-template.json",
+      "classification": "intended_round_5m_artifact"
+    },
+    {
+      "raw": "A  pipeline/manifests/round-5m-project-context-check.json",
+      "path": "pipeline/manifests/round-5m-project-context-check.json",
+      "classification": "intended_round_5m_artifact"
+    },
+    {
+      "raw": "A  pipeline/manifests/round-5m-review-input-audit.json",
+      "path": "pipeline/manifests/round-5m-review-input-audit.json",
+      "classification": "intended_round_5m_artifact"
+    },
+    {
+      "raw": "A  pipeline/manifests/round-5m-round-5n-readiness-gate.json",
+      "path": "pipeline/manifests/round-5m-round-5n-readiness-gate.json",
+      "classification": "intended_round_5m_artifact"
+    },
+    {
+      "raw": "A  pipeline/manifests/round-5m-safe-auto-approval-candidates.json",
+      "path": "pipeline/manifests/round-5m-safe-auto-approval-candidates.json",
+      "classification": "intended_round_5m_artifact"
+    },
+    {
+      "raw": "A  pipeline/manifests/round-5m-working-tree-audit.json",
+      "path": "pipeline/manifests/round-5m-working-tree-audit.json",
+      "classification": "intended_round_5m_artifact"
+    },
+    {
+      "raw": "A  pipeline/reports/round-5m-contact-sheet-report.md",
+      "path": "pipeline/reports/round-5m-contact-sheet-report.md",
+      "classification": "intended_round_5m_artifact"
+    },
+    {
+      "raw": "A  pipeline/reports/round-5m-future-upload-review-dependency.md",
+      "path": "pipeline/reports/round-5m-future-upload-review-dependency.md",
+      "classification": "intended_round_5m_artifact"
+    },
+    {
+      "raw": "A  pipeline/reports/round-5m-manual-review-groups.md",
+      "path": "pipeline/reports/round-5m-manual-review-groups.md",
+      "classification": "intended_round_5m_artifact"
+    },
+    {
+      "raw": "A  pipeline/reports/round-5m-manual-review-items.csv",
+      "path": "pipeline/reports/round-5m-manual-review-items.csv",
+      "classification": "intended_round_5m_artifact"
+    },
+    {
+      "raw": "A  pipeline/reports/round-5m-manual-review-owner-report.md",
+      "path": "pipeline/reports/round-5m-manual-review-owner-report.md",
+      "classification": "intended_round_5m_artifact"
+    },
+    {
+      "raw": "A  pipeline/reports/round-5m-must-review-candidates.md",
+      "path": "pipeline/reports/round-5m-must-review-candidates.md",
+      "classification": "intended_round_5m_artifact"
+    },
+    {
+      "raw": "A  pipeline/reports/round-5m-owner-decision-template.md",
+      "path": "pipeline/reports/round-5m-owner-decision-template.md",
+      "classification": "intended_round_5m_artifact"
+    },
+    {
+      "raw": "A  pipeline/reports/round-5m-project-context-check.md",
+      "path": "pipeline/reports/round-5m-project-context-check.md",
+      "classification": "intended_round_5m_artifact"
+    },
+    {
+      "raw": "A  pipeline/reports/round-5m-review-input-audit.md",
+      "path": "pipeline/reports/round-5m-review-input-audit.md",
+      "classification": "intended_round_5m_artifact"
+    },
+    {
+      "raw": "A  pipeline/reports/round-5m-round-5n-readiness-gate.md",
+      "path": "pipeline/reports/round-5m-round-5n-readiness-gate.md",
+      "classification": "intended_round_5m_artifact"
+    },
+    {
+      "raw": "A  pipeline/reports/round-5m-safe-auto-approval-candidates.md",
+      "path": "pipeline/reports/round-5m-safe-auto-approval-candidates.md",
+      "classification": "intended_round_5m_artifact"
+    },
+    {
+      "raw": "A  pipeline/reports/round-5m-working-tree-audit.md",
+      "path": "pipeline/reports/round-5m-working-tree-audit.md",
+      "classification": "intended_round_5m_artifact"
+    },
+    {
+      "raw": "AM pipeline/scripts/round-5m-build-manual-review-package.mjs",
+      "path": "pipeline/scripts/round-5m-build-manual-review-package.mjs",
+      "classification": "intended_round_5m_artifact"
+    },
+    {
+      "raw": "A  pipeline/tests/round-5m-manual-review-package.test.mjs",
+      "path": "pipeline/tests/round-5m-manual-review-package.test.mjs",
+      "classification": "intended_round_5m_artifact"
+    }
+  ],
+  "riskyUnrelatedDrift": []
+}

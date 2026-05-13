@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-05-13T03:11:55.234Z",
+  "runId": "round-5m-review-input-audit",
+  "inputs": {
+    "manualReview": "pipeline/manifests/round-5l-manual-review-filename-items.json",
+    "finalMap": "pipeline/manifests/round-5l-final-svg-webp-object-key-map.json",
+    "proposals": "pipeline/manifests/round-5l-clean-object-key-proposals.json",
+    "collisions": "pipeline/manifests/round-5l-clean-object-key-collisions.json",
+    "manualReviewReport": "pipeline/reports/round-5l-manual-review-filename-items.md",
+    "titleOverrides": "src/generated/coloring/title-overrides.json",
+    "items": "src/generated/coloring/items.json",
+    "hubs": "src/generated/coloring/hubs.json",
+    "hubItems": "src/generated/coloring/hub-items.json",
+    "routes": "src/generated/coloring/routes.json"
+  },
+  "summary": {
+    "manualReviewCount": 205,
+    "expectedManualReviewCount": 205,
+    "manualReviewCountMatchesExpected": true,
+    "finalObjectKeyMapRecords": 6557,
+    "cleanObjectKeyProposalRecords": 6557,
+    "unresolvedCollisions": 0,
+    "pngExcluded": true,
+    "thumbsExcluded": true,
+    "appRuntimePathsUsingFutureCleanKeys": false,
+    "finalObjectKeyMapSha256": "60dc413c72096e933fc001af6979834773c67cd6a18ccf56a7a08aa3f6084ee9",
+    "manualReviewInputSha256": "2b25eb5576ac63c2486fa2db165bf7dbe81001b806161a07827c61c6c1806206",
+    "titleOverridesPresent": true,
+    "hubRoutesPresent": true,
+    "noRuntimePathSwitch": true
+  }
+}

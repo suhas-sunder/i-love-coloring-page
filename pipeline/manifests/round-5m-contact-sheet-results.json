@@ -1,0 +1,70 @@
+{
+  "generatedAt": "2026-05-13T03:11:55.234Z",
+  "runId": "round-5m-contact-sheet-results",
+  "summary": {
+    "contactSheetRoot": "pipeline/review/round-5m/manual-review-contact-sheets",
+    "reviewArtifactRootIgnored": true,
+    "contactSheetGroupsCreated": 7,
+    "contactSheetsCommitted": false,
+    "usesWebpWhenAvailable": true,
+    "usesPngFallback": true
+  },
+  "contactSheets": [
+    {
+      "group": "category_mismatch",
+      "path": "pipeline/review/round-5m/manual-review-contact-sheets/category_mismatch.html",
+      "itemCount": 204,
+      "renderedTileCount": 204,
+      "previewSourcePreference": "webp if present, otherwise png fallback",
+      "committed": false
+    },
+    {
+      "group": "spelling_issue",
+      "path": "pipeline/review/round-5m/manual-review-contact-sheets/spelling_issue.html",
+      "itemCount": 1,
+      "renderedTileCount": 1,
+      "previewSourcePreference": "webp if present, otherwise png fallback",
+      "committed": false
+    },
+    {
+      "group": "ai_export_name_failed_timestamp",
+      "path": "pipeline/review/round-5m/manual-review-contact-sheets/ai_export_name_failed_timestamp.html",
+      "itemCount": 4,
+      "renderedTileCount": 4,
+      "previewSourcePreference": "webp if present, otherwise png fallback",
+      "committed": false
+    },
+    {
+      "group": "generic_vague",
+      "path": "pipeline/review/round-5m/manual-review-contact-sheets/generic_vague.html",
+      "itemCount": 4,
+      "renderedTileCount": 4,
+      "previewSourcePreference": "webp if present, otherwise png fallback",
+      "committed": false
+    },
+    {
+      "group": "duplicate_tokens",
+      "path": "pipeline/review/round-5m/manual-review-contact-sheets/duplicate_tokens.html",
+      "itemCount": 1,
+      "renderedTileCount": 1,
+      "previewSourcePreference": "webp if present, otherwise png fallback",
+      "committed": false
+    },
+    {
+      "group": "mixed_low_confidence",
+      "path": "pipeline/review/round-5m/manual-review-contact-sheets/mixed_low_confidence.html",
+      "itemCount": 205,
+      "renderedTileCount": 80,
+      "previewSourcePreference": "webp if present, otherwise png fallback",
+      "committed": false
+    },
+    {
+      "group": "random_sample",
+      "path": "pipeline/review/round-5m/manual-review-contact-sheets/random_sample.html",
+      "itemCount": 36,
+      "renderedTileCount": 36,
+      "previewSourcePreference": "webp if present, otherwise png fallback",
+      "committed": false
+    }
+  ]
+}

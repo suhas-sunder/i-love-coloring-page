@@ -331,6 +331,12 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Clean key mapping must preserve `assetId` values and public page route stability.
 - Full upload remains final-stage production work and still requires explicit approval.
 - Image sitemap and Open Graph image work must wait until clean public URLs are uploaded and verified.
+- Round 5M manual-review filename items require an owner decision before final clean upload bundle generation.
+- Do not auto-approve low-confidence clean object keys.
+- Contact sheets and review CSVs are review artifacts, not source of truth unless the owner approves them.
+- Do not switch runtime paths until the clean bundle is generated, uploaded, and verified.
+- Do not upload full assets before the owner approves the object-key review.
+- Manual-review items may be excluded from the first upload only with explicit owner approval.
 
 ## Production Asset Hosting
 

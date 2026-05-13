@@ -1,0 +1,39 @@
+{
+  "generatedAt": "2026-05-13T03:11:55.234Z",
+  "runId": "round-5m-future-upload-review-dependency",
+  "summary": {
+    "finalUploadBundleDependsOnOwnerDecision": true,
+    "manualReviewRecords": 205,
+    "safeAutoApprovalCandidates": 0,
+    "mustReviewCandidates": 205,
+    "fullUploadBundleCreated": false,
+    "uploadPerformed": false,
+    "runtimePathsChanged": false
+  },
+  "options": [
+    {
+      "option": "A",
+      "label": "approve all proposed keys",
+      "risk": "Fastest path, but owner accepts every manual-review proposal as-is.",
+      "round5nAction": "Apply approvals, generate clean SVG plus WebP bundle, then verify before switching runtime paths."
+    },
+    {
+      "option": "B",
+      "label": "approve only safe candidates and defer must-review items",
+      "risk": "Conservative, but first upload omits some assets and gallery coverage may be partial until later.",
+      "round5nAction": "Generate a clean bundle for approved items only if the owner explicitly approves exclusion."
+    },
+    {
+      "option": "C",
+      "label": "revise selected keys",
+      "risk": "Best public URL quality, but requires exact owner-provided replacements and collision checks.",
+      "round5nAction": "Validate revised clean stems, regenerate map, then bundle approved records."
+    },
+    {
+      "option": "D",
+      "label": "exclude manual-review items from first upload",
+      "risk": "Avoids uncertain filenames, but 205 assets are deferred from the first full public upload.",
+      "round5nAction": "Bundle 6,352 ready records only after explicit owner approval."
+    }
+  ]
+}

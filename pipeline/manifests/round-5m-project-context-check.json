@@ -1,0 +1,31 @@
+{
+  "generatedAt": "2026-05-13T03:11:55.234Z",
+  "runId": "round-5m-project-context-check",
+  "summary": {
+    "correctRepository": true,
+    "repoName": "i-love-coloring-page",
+    "branch": "version-4",
+    "round5lCommitExists": true,
+    "appApiRoutePresent": false,
+    "staticExportConfigured": true,
+    "coloringPagesRouteExists": true,
+    "hubRouteExists": true,
+    "r2UploadColoringPagesExists": true,
+    "r2UploadSvgExists": true,
+    "r2UploadWebpExists": false,
+    "publicContainsGeneratedProductionMedia": false,
+    "imagesStatusClean": true,
+    "ilovesvgStatusClean": true,
+    "svgInternalOnly": true,
+    "publicDownloadsPngJpgWebp": true,
+    "adWellsVisibleByDefault": true,
+    "liveAdSenseCodePresent": false,
+    "imageSitemapPresent": false,
+    "openGraphImageGenerationPresent": false,
+    "wrongContextIndicatorsPresent": false
+  },
+  "notes": [
+    "Round 5M is review packaging only.",
+    "The full pipeline/r2-upload/coloring-pages/webp folder may remain absent because the final clean SVG plus WebP upload bundle is deferred."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "generatedAt": "2026-05-13T03:11:55.234Z",
+  "runId": "round-5m-safe-auto-approval-candidates",
+  "summary": {
+    "totalManualReviewRecords": 205,
+    "totalSafeAutoApprovalCandidates": 0,
+    "ownerApproved": false,
+    "proposedAutoApproveOnly": true,
+    "finalMapMutated": false,
+    "criteria": [
+      "minor duplicate token or obvious spelling correction",
+      "strong title, category, or hub support",
+      "no category mismatch",
+      "no vague subject issue",
+      "no AI, export, failure, or timestamp term remains",
+      "no collision risk"
+    ]
+  },
+  "records": []
+}

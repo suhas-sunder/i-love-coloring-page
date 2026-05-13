@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-05-13T03:11:55.234Z",
+  "runId": "round-5m-round-5n-readiness-gate",
+  "ready_to_generate_clean_full_upload_bundle": false,
+  "totalRecords": 6557,
+  "readyRecords": 6352,
+  "manualReviewRecords": 205,
+  "safeAutoApprovalCandidates": 0,
+  "mustReviewCandidates": 205,
+  "unresolvedCollisions": 0,
+  "ownerDecisionFileRequired": true,
+  "canProceedIfManualReviewExcluded": true,
+  "recommendedNextAction": "Owner should review the CSV, owner report, and contact sheets, then provide an explicit decision manifest before Round 5N.",
+  "blockers": [
+    "Owner decision file is not present.",
+    "Round 5M must not generate or upload the final full bundle."
+  ]
+}
