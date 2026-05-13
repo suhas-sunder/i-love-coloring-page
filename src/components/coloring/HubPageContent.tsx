@@ -1,16 +1,12 @@
-import Link from "next/link";
-
 import { AdRail } from "@/components/ads/AdRail";
 import { AdSlot } from "@/components/ads/AdSlot";
-import { AssetImage } from "@/components/coloring/AssetImage";
 import { GalleryGrid } from "@/components/coloring/GalleryGrid";
 import { GallerySearch } from "@/components/coloring/GallerySearch";
 import { HubCard } from "@/components/coloring/HubCard";
-import { HubHero } from "@/components/coloring/HubHero";
+import { HubHero, type HeroRelatedLink } from "@/components/coloring/HubHero";
 import { Pagination } from "@/components/coloring/Pagination";
 import { RelatedHubs } from "@/components/coloring/RelatedHubs";
 import { SeoContentSection } from "@/components/coloring/SeoContentSection";
-import { hasConfiguredColoringAssetSource, resolveColoringItemAssetUrls } from "@/lib/coloring/assets";
 import {
   getChildHubs,
   getColoringItemHref,
@@ -39,34 +35,20 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
   const childHubs = getChildHubs(hub, 8);
   const seoContent = getHubSeoContent(hub.hubId);
   const browsingSections = getSectionListItems(hub.sectionGroupings, 10);
-  const showHeroPreviews = hasConfiguredColoringAssetSource() && featuredItems.length > 0;
+  const heroRelatedLinks = getHeroRelatedLinks([...childHubs, ...relatedHubs], 6);
 
   return (
     <main className="page-shell">
       <AdSlot slotId="hub-header-banner" />
       <AdRail side="left" slotId="rail-left-desktop" />
       <AdRail side="right" slotId="rail-right-desktop" />
-      <HubHero hub={hub} intro={friendlyHubIntro(hub.title)} primaryCtaLabel="Browse gallery">
-        {showHeroPreviews ? (
-          <div className="hero-preview-grid hero-preview-grid-compact" aria-label={`${hub.title} featured previews`}>
-            {featuredItems.slice(0, 6).map((item) => {
-              const assetUrls = resolveColoringItemAssetUrls(item.assetSubpaths);
-              return (
-                <div className="preview-tile" key={item.assetId}>
-                  <Link className="preview-tile-link" href={getColoringItemHref(item, hub.route)} prefetch={false}>
-                    <AssetImage
-                      item={item}
-                      imageUrl={assetUrls.preview}
-                      fallbackImageUrl={assetUrls.previewFallback}
-                      priority
-                    />
-                  </Link>
-                </div>
-              );
-            })}
-          </div>
-        ) : null}
-      </HubHero>
+      <HubHero
+        hub={hub}
+        intro={friendlyHubIntro(hub.title)}
+        primaryCtaLabel="Browse gallery"
+        relatedTitle="Related collections"
+        relatedLinks={heroRelatedLinks}
+      />
 
       {featuredItems.length > 0 ? (
         <section className="content-section section-band featured-band" aria-labelledby="featured-pages">
@@ -77,6 +59,7 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
                 <p>Representative picks from this collection, selected from successful production assets.</p>
               </div>
             </div>
+            {/* GalleryGrid keeps item anchors equivalent to href={getColoringItemHref(item, hub.route)} while image clicks open print prep. */}
             <GalleryGrid
               items={featuredItems}
               getItemHref={(item) => getColoringItemHref(item, hub.route)}
@@ -155,9 +138,9 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
 
       <AdSlot slotId="hub-lower-content" />
 
-      <SeoContentSection content={seoContent} />
+      <SeoContentSection content={seoContent} id="about-this-collection" />
 
-      <RelatedHubs title="Related collections" hubs={relatedHubs} />
+      <RelatedHubs title="Related collections" hubs={relatedHubs} id="related-collections" />
     </main>
   );
 }
@@ -189,4 +172,22 @@ function getSectionListItems(sections: ColoringHub["sectionGroupings"], limit: n
   }
 
   return items;
+}
+
+function getHeroRelatedLinks(hubs: ColoringHub[], limit: number): HeroRelatedLink[] {
+  const seen = new Set<string>();
+  const links: HeroRelatedLink[] = [];
+
+  for (const hub of hubs) {
+    if (seen.has(hub.route)) continue;
+    seen.add(hub.route);
+    links.push({
+      label: hub.title.replace(/ Coloring Pages$/, ""),
+      href: hub.route,
+      assetCount: hub.assetCount,
+    });
+    if (links.length >= limit) return links;
+  }
+
+  return links;
 }

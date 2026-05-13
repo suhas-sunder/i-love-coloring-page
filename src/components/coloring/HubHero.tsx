@@ -3,16 +3,45 @@ import type { ReactNode } from "react";
 
 import type { ColoringHub } from "@/lib/coloring/types";
 
+export type HeroQuickLink = {
+  label: string;
+  href: string;
+};
+
+export type HeroRelatedLink = {
+  label: string;
+  href: string;
+  assetCount?: number;
+};
+
 type HubHeroProps = {
   hub: ColoringHub;
   intro?: string;
   primaryCtaLabel?: string;
+  quickLinks?: HeroQuickLink[];
+  relatedTitle?: string;
+  relatedLinks?: HeroRelatedLink[];
   children?: ReactNode;
 };
 
-export function HubHero({ hub, intro, primaryCtaLabel = "Browse gallery", children }: HubHeroProps) {
+export function HubHero({
+  hub,
+  intro,
+  primaryCtaLabel = "Browse gallery",
+  quickLinks,
+  relatedTitle = "Related collections",
+  relatedLinks = [],
+  children,
+}: HubHeroProps) {
+  const heroQuickLinks = quickLinks || [
+    { label: primaryCtaLabel, href: "#gallery" },
+    { label: "Related collections", href: "#related-collections" },
+    { label: "About this collection", href: "#about-this-collection" },
+  ];
+  const hasHeroPanel = relatedLinks.length > 0 || Boolean(children);
+
   return (
-    <section className={children ? "hub-hero" : "hub-hero hub-hero-solo"} aria-labelledby="hub-title">
+    <section className={hasHeroPanel ? "hub-hero" : "hub-hero hub-hero-solo"} aria-labelledby="hub-title">
       <div className="hero-copy">
         <nav className="breadcrumb" aria-label="Breadcrumb">
           {hub.breadcrumbPath.map((crumb, index) => (
@@ -30,15 +59,33 @@ export function HubHero({ hub, intro, primaryCtaLabel = "Browse gallery", childr
           <li>Print from the gallery</li>
         </ul>
         <div className="hero-actions">
-          <Link className="button button-primary" href="#gallery" prefetch={false}>
-            {primaryCtaLabel}
-          </Link>
-          <Link className="button button-ghost" href="/coloring-pages" prefetch={false}>
-            All collections
-          </Link>
+          {heroQuickLinks.map((link, index) => (
+            <Link className={index === 0 ? "button button-primary" : "button button-ghost"} href={link.href} key={link.href} prefetch={false}>
+              {link.label}
+            </Link>
+          ))}
         </div>
       </div>
-      {children ? <div className="hero-panel">{children}</div> : null}
+      {hasHeroPanel ? (
+        <div className="hero-panel">
+          {relatedLinks.length > 0 ? (
+            <nav className="hero-related-panel" aria-label={relatedTitle}>
+              <p className="hero-related-kicker">Explore</p>
+              <h2 className="hero-related-title">{relatedTitle}</h2>
+              <div className="hero-related-links">
+                {relatedLinks.map((link) => (
+                  <Link className="hero-related-link" href={link.href} key={link.href} prefetch={false}>
+                    <span>{link.label}</span>
+                    {typeof link.assetCount === "number" ? <strong>{link.assetCount.toLocaleString()}</strong> : null}
+                  </Link>
+                ))}
+              </div>
+            </nav>
+          ) : (
+            children
+          )}
+        </div>
+      ) : null}
     </section>
   );
 }

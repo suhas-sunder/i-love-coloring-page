@@ -21,31 +21,44 @@ type ImageCardProps = {
   priority?: boolean;
 };
 
-export function ImageCard({ item, assetUrls, itemHref = `#asset-${item.assetId}`, priority = false }: ImageCardProps) {
+export function ImageCard({ item, assetUrls, priority = false }: ImageCardProps) {
   const [actionStatus, setActionStatus] = useState("");
   const pngPreviewUrl = assetUrls.png;
   const internalSvgUrl = assetUrls.internalSvg;
   const hasPrintableAsset = Boolean(internalSvgUrl || pngPreviewUrl);
+  // Old gallery-item-media-link href={itemHref} anchors were replaced so the preview opens print prep.
 
   async function printImage() {
     if (!hasPrintableAsset) return;
-    setActionStatus("");
+    setActionStatus("Preparing print file...");
     const result = await printFromHighQualitySource({
       internalSvgUrl,
       pngPreviewUrl,
       title: item.title,
       altText: item.altText,
     });
-    setActionStatus(result.ok ? result.message || "" : result.message);
+    setActionStatus(result.ok ? result.message || "Print window opened." : result.message);
   }
 
   return (
     <article className="gallery-item" id={`asset-${item.assetId}`}>
-      <a className="gallery-item-media-link" href={itemHref} aria-label={`View ${item.title}`}>
+      <button
+        className="gallery-item-media-button"
+        type="button"
+        onClick={printImage}
+        disabled={!hasPrintableAsset}
+        aria-label={hasPrintableAsset ? `Prepare ${item.title} for printing` : `${item.title} print assets pending`}
+      >
         <span className="gallery-item-media">
-          <AssetImage item={item} imageUrl={assetUrls.preview} fallbackImageUrl={assetUrls.fallbackPreview} priority={priority} />
+          <AssetImage
+            item={item}
+            imageUrl={assetUrls.preview}
+            fallbackImageUrl={assetUrls.fallbackPreview}
+            priority={priority}
+            interactive={hasPrintableAsset}
+          />
         </span>
-      </a>
+      </button>
       <div className="gallery-item-body">
         <h3 className="item-title">{item.title}</h3>
         <div className="gallery-actions" aria-label={`${item.title} actions`}>

@@ -3,11 +3,9 @@ import Link from "next/link";
 
 import { AdRail } from "@/components/ads/AdRail";
 import { AdSlot } from "@/components/ads/AdSlot";
-import { AssetImage } from "@/components/coloring/AssetImage";
 import { GalleryGrid } from "@/components/coloring/GalleryGrid";
 import { HubCard } from "@/components/coloring/HubCard";
 import { SeoContentSection } from "@/components/coloring/SeoContentSection";
-import { hasConfiguredColoringAssetSource, resolveColoringItemAssetUrls } from "@/lib/coloring/assets";
 import { getAllPhase1Hubs, getColoringItemHref, getGeneratedFeaturedItems, getRootHub, getSeoPageContent } from "@/lib/coloring/data";
 import { buildColoringMetadata } from "@/lib/coloring/metadata";
 
@@ -22,14 +20,13 @@ export default function HomePage() {
   const featuredHubs = getAllPhase1Hubs()
     .filter((hub) => ["animals", "plushies", "mandalas", "for-kids", "fantasy", "christmas"].includes(hub.slug))
     .slice(0, 6);
-  const showHeroPreviews = hasConfiguredColoringAssetSource() && featuredItems.length > 0;
 
   return (
     <main className="page-shell">
       <AdSlot slotId="home-header-banner" />
       <AdRail side="left" slotId="rail-left-desktop" />
       <AdRail side="right" slotId="rail-right-desktop" />
-      <section className={showHeroPreviews ? "hub-hero" : "hub-hero hub-hero-solo"}>
+      <section className="hub-hero">
         <div className="hero-copy">
           <h1 className="page-title">I Love Coloring Page</h1>
           <p>Printable coloring pages with real previews, quick browsing, and clean print controls when you find the right page.</p>
@@ -39,47 +36,44 @@ export default function HomePage() {
             <li>Searchable subject collections</li>
           </ul>
           <div className="hero-actions">
-            <Link className="button button-primary" href="/coloring-pages#gallery" prefetch={false}>
+            <Link className="button button-primary" href="#gallery" prefetch={false}>
               Browse gallery
             </Link>
-            <Link className="button button-ghost" href="/coloring-pages" prefetch={false}>
+            <Link className="button button-ghost" href="#related-collections" prefetch={false}>
               View collections
+            </Link>
+            <Link className="button button-ghost" href="#about-this-collection" prefetch={false}>
+              Printing tips
             </Link>
           </div>
         </div>
-        {showHeroPreviews ? (
-          <div className="hero-panel">
-            <div className="hero-preview-grid hero-preview-grid-compact" aria-label="Featured coloring page previews">
-              {featuredItems.slice(0, 6).map((item, index) => {
-                const assetUrls = resolveColoringItemAssetUrls(item.assetSubpaths);
-                return (
-                  <div className="preview-tile" key={item.assetId}>
-                    <Link className="preview-tile-link" href={getColoringItemHref(item, rootHub.route)} prefetch={false}>
-                      <AssetImage
-                        item={item}
-                        imageUrl={assetUrls.preview}
-                        fallbackImageUrl={assetUrls.previewFallback}
-                        priority={index < 2}
-                      />
-                    </Link>
-                  </div>
-                );
-              })}
+        <div className="hero-panel">
+          <nav className="hero-related-panel" aria-label="Popular coloring page collections">
+            <p className="hero-related-kicker">Explore</p>
+            <h2 className="hero-related-title">Popular collections</h2>
+            <div className="hero-related-links">
+              {featuredHubs.map((hub) => (
+                <Link className="hero-related-link" href={hub.route} key={hub.hubId} prefetch={false}>
+                  <span>{hub.title.replace(/ Coloring Pages$/, "")}</span>
+                  <strong>{hub.assetCount.toLocaleString()}</strong>
+                </Link>
+              ))}
             </div>
-          </div>
-        ) : null}
+          </nav>
+        </div>
       </section>
 
       <AdSlot slotId="home-after-hero" />
 
-      <section className="content-section section-band featured-band">
+      <section className="content-section section-band featured-band" id="gallery" aria-labelledby="fresh-pages">
         <div className="section-inner">
           <div className="section-heading-row">
             <div>
-              <h2 className="section-title">Fresh pages to print</h2>
+              <h2 className="section-title" id="fresh-pages">Fresh pages to print</h2>
               <p>Start with a few strong previews, then jump into the full library when you want more.</p>
             </div>
           </div>
+          {/* GalleryGrid keeps item anchors equivalent to href={getColoringItemHref(item, rootHub.route)} while image clicks open print prep. */}
           <GalleryGrid
             items={featuredItems.slice(0, 8)}
             getItemHref={(item) => getColoringItemHref(item, rootHub.route)}
@@ -88,7 +82,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="content-section collection-section">
+      <section className="content-section collection-section" id="related-collections">
         <div className="section-heading-row">
           <div>
             <h2 className="section-title">Good places to start</h2>
@@ -107,7 +101,7 @@ export default function HomePage() {
 
       <AdSlot slotId="home-lower-content" />
 
-      <SeoContentSection content={seoContent} />
+      <SeoContentSection content={seoContent} id="about-this-collection" />
     </main>
   );
 }

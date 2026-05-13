@@ -1,0 +1,23 @@
+{
+  "generatedAt": "2026-05-13T23:42:47.077Z",
+  "runId": "ux-polish",
+  "summary": {
+    "previousImageClickAnchoredToItemFragment": true,
+    "imageClickNowStartsPrintFlow": true,
+    "previousDownloadButtonWasAlwaysVisible": true,
+    "downloadControlNowCompactFormatsMenu": true,
+    "printPrepPreviouslySparse": true,
+    "printPrepNowBrandedAndNonBlank": true,
+    "heroPreviewCollageRemovedFromPages": true,
+    "heroRelatedLinksPresent": true,
+    "moreMenuGroupedByIntent": true,
+    "mobileMoreMenuKeepsSearch": true
+  },
+  "findings": [
+    "Image cards previously used the preview as a fragment link, which could feel like an odd jump.",
+    "The Download summary competed visually with the primary Print button on every card.",
+    "The print helper had timeout protection, but its prep and failure pages were sparse.",
+    "Hero thumbnail panels repeated the gallery immediately below.",
+    "The More menu had useful search, but its long-tail grouping needed more intent-specific sections."
+  ]
+}

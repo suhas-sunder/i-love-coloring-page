@@ -99,10 +99,13 @@ function groupHubLinks(links: HubNavLink[]): HubNavGroup[] {
     "Popular",
     "Seasonal",
     "Animals & Nature",
-    "Characters & Fantasy",
-    "Patterns & Adults",
+    "Dinosaurs & Prehistoric",
+    "Fantasy & Characters",
+    "Food & Cute Objects",
     "Vehicles & Places",
-    "More Collections",
+    "Patterns & Detailed",
+    "Kids & Easy",
+    "More Specific Collections",
   ];
   const groups = new Map(groupOrder.map((label) => [label, [] as HubNavLink[]]));
 
@@ -119,29 +122,41 @@ function groupHubLinks(links: HubNavLink[]): HubNavGroup[] {
 }
 
 function getHubGroup(slug: string) {
-  if (/^(animals|plushies|mandalas|geometric|anime-girls|chibi|fantasy)$/.test(slug)) {
+  if (/^(animals|plushies|mandalas|geometric|anime-girls|chibi|fantasy|dragons|unicorns)$/.test(slug)) {
     return "Popular";
   }
 
-  if (/(christmas|halloween|easter|thanksgiving|valentine|seasonal|holiday|summer|winter|spring|autumn|fall|birthday)/.test(slug)) {
+  if (/(christmas|halloween|easter|thanksgiving|valentine|seasonal|holiday|holidays|summer|winter|spring|autumn|fall|birthday|pumpkin|santa|reindeer|st-patricks)/.test(slug)) {
     return "Seasonal";
   }
 
-  if (/(animal|bird|cat|dog|horse|fish|sea|ocean|dinosaur|prehistoric|plant|flower|nature|farm|forest|butterfly|beetle|insect|reptile|mammal)/.test(slug)) {
+  if (/(mandala|geometric|pattern|adult|detailed|zentangle|abstract)/.test(slug)) {
+    return "Patterns & Detailed";
+  }
+
+  if (/(for-kids|easy|simple)/.test(slug)) {
+    return "Kids & Easy";
+  }
+
+  if (/(bakery|cake|food|sushi|cute|kawaii|plushie|playing-card|chess)/.test(slug)) {
+    return "Food & Cute Objects";
+  }
+
+  if (/(dinosaur|prehistoric|brachiosaurus|diplodocus|stegosaurus|triceratops|velociraptor|t-rex|mammoth|megalodon)/.test(slug)) {
+    return "Dinosaurs & Prehistoric";
+  }
+
+  if (/(anime|chibi|fantasy|fairy|princess|myth|dragon|monster|robot|superhero|character|unicorn|mermaid|magic|wizard|witch|griffin|hydra|phoenix|pegasus|wyvern|knight|medieval|dungeon|castle)/.test(slug)) {
+    return "Fantasy & Characters";
+  }
+
+  if (/(animal|bird|cat|dog|horse|fish|sea|ocean|plant|flower|nature|farm|forest|butterfly|beetle|insect|reptile|mammal|bat|bear|bee|cow|crab|deer|dolphin|duck|eagle|elephant|fox|garden|giraffe|hedgehog|hippo|koala|lion|lizard|llama|monkey|moose|mushroom|octopus|otter|owl|panda|penguin|rabbit|rose|shark|sheep|sloth|snake|spider|tiger|tree|turtle|whale|wolf|zebra)/.test(slug)) {
     return "Animals & Nature";
   }
 
-  if (/(anime|chibi|fantasy|fairy|princess|myth|dragon|monster|robot|superhero|character|unicorn|mermaid|magic)/.test(slug)) {
-    return "Characters & Fantasy";
-  }
-
-  if (/(mandala|geometric|pattern|adult|detailed|simple|easy|zentangle|abstract|kawaii|cute)/.test(slug)) {
-    return "Patterns & Adults";
-  }
-
-  if (/(car|vehicle|truck|train|airplane|ship|boat|city|house|place|space|sports|food|school)/.test(slug)) {
+  if (/(car|vehicle|truck|train|airplane|plane|ship|boat|city|house|place|space|sports|school|bridge|building|landmark)/.test(slug)) {
     return "Vehicles & Places";
   }
 
-  return "More Collections";
+  return "More Specific Collections";
 }

@@ -481,6 +481,22 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Netlify publish directory must remain `out`.
 - Repo root, `pipeline/`, source folders, and generated reports must never be published as the production site.
 
+## UX Polish Gate
+
+- Image cards should have intuitive click behavior.
+- Clicking a printable image should open the print/prep flow, not jump to an odd fragment anchor.
+- Keep a visible Print action available for accessibility.
+- Download formats should remain PNG, JPG, and WebP, but SVG must remain internal-only and must never be a user-facing download.
+- Print output must be polished, centered, framed cleanly, and must not hang indefinitely on a preparing state.
+- Print prep and failure pages should show the image title, concise user-safe status copy, and subtle I Love Coloring Page branding.
+- Browser-native print headers and footers cannot be fully controlled by the app, but the app must not add extra random UI text to the printed artwork.
+- Hero thumbnails should not duplicate the gallery immediately below.
+- Hero right-side content should help users navigate to related collections.
+- Hero quick links should target real sections on the current page.
+- The More menu must group long-tail hubs by intent and must not dump all hubs into one broad list.
+- Navigation menus must keep search near the top, remain accessible, and contain no ads.
+- Do not start image sitemap, Open Graph image, JSON-LD expansion, or live ads until UX polish QA passes.
+
 ## Conversion Workflow
 
 - Do not choose a winning preset until a later bakeoff round compares outputs.

@@ -67,7 +67,7 @@ export function DownloadMenu({ title, internalSvgUrl, pngPreviewUrl, "aria-label
   return (
     <details className="download-menu" ref={detailsRef} open={open} onToggle={(event) => setOpen(event.currentTarget.open)}>
       <summary className="button button-subtle button-small download-menu-summary" aria-expanded={open}>
-        Download
+        Formats
       </summary>
       <div className="download-menu-panel" role="menu" aria-label={ariaLabel}>
         {visibleOptions.map((option) => (

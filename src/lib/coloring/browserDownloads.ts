@@ -421,16 +421,58 @@ function getTargetDimensions(sourceWidth: number, sourceHeight: number, targetLo
 }
 
 function writePreparingDocument(printWindow: Window, title: string) {
+  const escapedTitle = escapeHtml(title);
   printWindow.document.open();
   printWindow.document.write(`
     <!doctype html>
     <html>
       <head>
-        <title>${escapeHtml(title)}</title>
+        <title>${escapedTitle}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+          * { box-sizing: border-box; }
+          body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            background: white;
+            color: rgb(38 31 47);
+            font-family: Arial, sans-serif;
+            padding: 2rem;
+            text-align: center;
+          }
+          .print-prep-card {
+            display: grid;
+            gap: 0.75rem;
+            max-width: 28rem;
+          }
+          .print-brand {
+            color: rgb(107 74 127);
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 0;
+            text-transform: uppercase;
+          }
+          h1 {
+            margin: 0;
+            font-family: Georgia, serif;
+            font-size: clamp(1.5rem, 4vw, 2.25rem);
+            line-height: 1.1;
+          }
+          p {
+            margin: 0;
+            color: rgb(92 86 101);
+            line-height: 1.5;
+          }
+        </style>
       </head>
-      <body style="margin:0;min-height:100vh;display:grid;place-items:center;font-family:sans-serif;">
-        Preparing print file...
+      <body>
+        <main class="print-prep-card" aria-live="polite">
+          <p class="print-brand">I Love Coloring Page</p>
+          <h1>${escapedTitle}</h1>
+          <p>Preparing print file...</p>
+        </main>
       </body>
     </html>
   `);
@@ -438,16 +480,58 @@ function writePreparingDocument(printWindow: Window, title: string) {
 }
 
 function writePrintFailureDocument(printWindow: Window, title: string) {
+  const escapedTitle = escapeHtml(title);
   printWindow.document.open();
   printWindow.document.write(`
     <!doctype html>
     <html>
       <head>
-        <title>${escapeHtml(title)}</title>
+        <title>${escapedTitle}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+          * { box-sizing: border-box; }
+          body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            background: white;
+            color: rgb(38 31 47);
+            font-family: Arial, sans-serif;
+            padding: 2rem;
+            text-align: center;
+          }
+          main {
+            display: grid;
+            gap: 0.75rem;
+            max-width: 28rem;
+          }
+          .print-brand {
+            color: rgb(107 74 127);
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 0;
+            text-transform: uppercase;
+          }
+          h1 {
+            margin: 0;
+            font-family: Georgia, serif;
+            font-size: 1.75rem;
+            line-height: 1.15;
+          }
+          p {
+            margin: 0;
+            color: rgb(92 86 101);
+            line-height: 1.5;
+          }
+        </style>
       </head>
-      <body style="margin:0;min-height:100vh;display:grid;place-items:center;font-family:sans-serif;text-align:center;padding:2rem;">
-        <p>Print file could not be prepared. Please try a download instead.</p>
+      <body>
+        <main>
+          <p class="print-brand">I Love Coloring Page</p>
+          <h1>${escapedTitle}</h1>
+          <p>Print file could not be prepared. Please try a download instead.</p>
+        </main>
       </body>
     </html>
   `);
@@ -468,8 +552,9 @@ function writePrintDocument(
   const escapedAlt = escapeHtml(options.altText);
   const escapedImageUrl = escapeAttribute(options.imageUrl);
   const escapedFailureMessage = escapeHtml("Print file could not be prepared. Please try a download instead.");
+  const revokeUrl = JSON.stringify(options.imageUrl);
   const revokeScript = options.revokeObjectUrl
-    ? `window.addEventListener("afterprint", function(){ setTimeout(function(){ URL.revokeObjectURL("${escapedImageUrl}"); }, 500); });`
+    ? `window.addEventListener("afterprint", function(){ setTimeout(function(){ URL.revokeObjectURL(${revokeUrl}); }, 500); });`
     : "";
 
   printWindow.document.open();
@@ -480,41 +565,131 @@ function writePrintDocument(
         <title>${escapedTitle}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <style>
-          @page { margin: 0.35in; }
+          @page { size: auto; margin: 0.35in; }
           * { box-sizing: border-box; }
           html, body { min-height: 100%; }
           body {
             margin: 0;
             background: white;
+            color: rgb(38 31 47);
+            font-family: Arial, sans-serif;
+          }
+          .print-shell {
             display: grid;
             min-height: 100vh;
             place-items: center;
+            padding: 24px;
+          }
+          .screen-only {
+            display: grid;
+            gap: 0.35rem;
+            margin-bottom: 1rem;
+            text-align: center;
+          }
+          .screen-only strong {
+            color: rgb(38 31 47);
+            font-family: Georgia, serif;
+            font-size: 1.2rem;
+            line-height: 1.2;
+          }
+          .screen-only span {
+            color: rgb(92 86 101);
+            font-size: 0.9rem;
+            line-height: 1.4;
+          }
+          .print-page {
+            width: min(100%, 8in);
+            min-height: calc(100vh - 48px);
+            display: grid;
+            grid-template-rows: minmax(0, 1fr) auto;
+            gap: 0.16in;
+          }
+          .print-artwork {
+            display: grid;
+            min-height: 0;
+            place-items: center;
+          }
+          .print-artwork-frame {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            place-items: center;
+            border: 1px solid rgb(221 216 229);
+            padding: 0.12in;
           }
           img {
             display: block;
             max-width: 100%;
-            max-height: calc(100vh - 0.7in);
+            max-height: calc(100vh - 1.15in);
             object-fit: contain;
           }
+          .print-brand {
+            margin: 0;
+            color: rgb(107 74 127);
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 0;
+            line-height: 1.2;
+            text-align: center;
+            text-transform: uppercase;
+          }
           @media print {
-            body { min-height: 100vh; }
+            html,
+            body {
+              width: 100%;
+              min-height: 100%;
+            }
+            body {
+              background: white;
+            }
+            .screen-only {
+              display: none !important;
+            }
+            .print-shell {
+              min-height: 100vh;
+              padding: 0;
+            }
+            .print-page {
+              width: 100%;
+              min-height: calc(100vh - 0.7in);
+            }
+            .print-artwork-frame {
+              height: calc(100vh - 1.1in);
+            }
+            img {
+              max-height: 100%;
+            }
           }
         </style>
       </head>
       <body data-print-source="${options.source}">
-        <img id="print-image" src="${escapedImageUrl}" alt="${escapedAlt}" />
+        <main class="print-shell">
+          <section class="screen-only" aria-live="polite">
+            <strong>${escapedTitle}</strong>
+            <span>Print dialog opening...</span>
+          </section>
+          <section class="print-page" aria-label="${escapedTitle}">
+            <div class="print-artwork">
+              <div class="print-artwork-frame">
+                <img id="print-image" src="${escapedImageUrl}" alt="${escapedAlt}" />
+              </div>
+            </div>
+            <p class="print-brand">I Love Coloring Page</p>
+          </section>
+        </main>
         <script>
           (function(){
+            var PRINT_PREPARE_TIMEOUT_MS = ${PRINT_PREPARE_TIMEOUT_MS};
             var image = document.getElementById("print-image");
             var failed = false;
             function showFailure() {
               if (failed) return;
               failed = true;
               document.body.removeAttribute("data-print-source");
-              document.body.style.cssText = "margin:0;min-height:100vh;display:grid;place-items:center;font-family:sans-serif;text-align:center;padding:2rem;";
-              document.body.innerHTML = "<p>${escapedFailureMessage}</p>";
+              document.body.style.cssText = "margin:0;min-height:100vh;display:grid;place-items:center;font-family:Arial,sans-serif;text-align:center;padding:2rem;color:rgb(38 31 47);background:white;";
+              document.body.innerHTML = "<main><p class=\\"print-brand\\" style=\\"color:rgb(107 74 127);font-size:.78rem;font-weight:800;text-transform:uppercase;\\">I Love Coloring Page</p><p>${escapedFailureMessage}</p></main>";
             }
-            var timer = window.setTimeout(showFailure, ${PRINT_PREPARE_TIMEOUT_MS});
+            var timer = window.setTimeout(showFailure, PRINT_PREPARE_TIMEOUT_MS);
             image.addEventListener("load", function(){
               window.clearTimeout(timer);
               setTimeout(function(){ window.focus(); window.print(); }, 80);

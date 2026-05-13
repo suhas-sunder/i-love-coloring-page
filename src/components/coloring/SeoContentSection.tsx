@@ -4,15 +4,16 @@ import type { SeoPageContent } from "@/lib/coloring/types";
 
 type SeoContentSectionProps = {
   content: SeoPageContent | null;
+  id?: string;
 };
 
-export function SeoContentSection({ content }: SeoContentSectionProps) {
+export function SeoContentSection({ content, id = "about-this-collection" }: SeoContentSectionProps) {
   if (!content) return null;
 
   const headingId = `${content.pageType}-guide`;
 
   return (
-    <section className="content-section seo-content-section" aria-labelledby={headingId}>
+    <section className="content-section seo-content-section" id={id} aria-labelledby={headingId}>
       <div className="seo-content-header">
         <h2 className="section-title" id={headingId}>
           {content.guideTitle}

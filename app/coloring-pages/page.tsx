@@ -1,16 +1,13 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
 import { AdRail } from "@/components/ads/AdRail";
 import { AdSlot } from "@/components/ads/AdSlot";
-import { AssetImage } from "@/components/coloring/AssetImage";
 import { GalleryGrid } from "@/components/coloring/GalleryGrid";
 import { GallerySearch } from "@/components/coloring/GallerySearch";
 import { HubCard } from "@/components/coloring/HubCard";
 import { HubHero } from "@/components/coloring/HubHero";
 import { RelatedHubs } from "@/components/coloring/RelatedHubs";
 import { SeoContentSection } from "@/components/coloring/SeoContentSection";
-import { hasConfiguredColoringAssetSource, resolveColoringItemAssetUrls } from "@/lib/coloring/assets";
 import {
   getAllPhase1Hubs,
   getChildHubs,
@@ -43,7 +40,11 @@ export default function ColoringPagesLanding() {
   const subjectHubs = hubs.filter((hub) => ["animals", "plushies", "dinosaurs", "prehistoric-animals", "plants", "indoor-plants", "sea-life", "vehicles"].includes(hub.slug));
   const styleHubs = hubs.filter((hub) => ["mandalas", "geometric", "cute", "chibi", "kawaii", "detailed-for-adults", "for-kids", "easy"].includes(hub.slug));
   const childHubs = getChildHubs(rootHub, 12);
-  const showHeroPreviews = hasConfiguredColoringAssetSource() && featuredItems.length > 0;
+  const heroRelatedLinks = featuredHubs.slice(0, 6).map((hub) => ({
+    label: hub.title.replace(/ Coloring Pages$/, ""),
+    href: hub.route,
+    assetCount: hub.assetCount,
+  }));
 
   return (
     <main className="page-shell">
@@ -53,27 +54,15 @@ export default function ColoringPagesLanding() {
       <HubHero
         hub={rootHub}
         intro="Browse printable coloring pages by subject, season, style, and difficulty. Search the gallery, pick a favorite, then download or print."
-      >
-        {showHeroPreviews ? (
-          <div className="hero-preview-grid hero-preview-grid-compact" aria-label="Featured coloring page previews">
-            {featuredItems.slice(0, 6).map((item, index) => {
-              const assetUrls = resolveColoringItemAssetUrls(item.assetSubpaths);
-              return (
-                <div className="preview-tile" key={item.assetId}>
-                  <Link className="preview-tile-link" href={getColoringItemHref(item, rootHub.route)} prefetch={false}>
-                    <AssetImage
-                      item={item}
-                      imageUrl={assetUrls.preview}
-                      fallbackImageUrl={assetUrls.previewFallback}
-                      priority={index < 2}
-                    />
-                  </Link>
-                </div>
-              );
-            })}
-          </div>
-        ) : null}
-      </HubHero>
+        quickLinks={[
+          { label: "Browse gallery", href: "#gallery" },
+          { label: "Featured pages", href: "#featured-pages" },
+          { label: "Related collections", href: "#related-collections" },
+          { label: "Printing tips", href: "#about-this-collection" },
+        ]}
+        relatedTitle="Popular collections"
+        relatedLinks={heroRelatedLinks}
+      />
 
       <section className="content-section section-band featured-band" aria-labelledby="featured-pages">
         <div className="section-inner">
@@ -83,6 +72,7 @@ export default function ColoringPagesLanding() {
               <p>A quick shelf of printable pages so the library starts with artwork, not a directory.</p>
             </div>
           </div>
+          {/* GalleryGrid keeps item anchors equivalent to href={getColoringItemHref(item, rootHub.route)} while image clicks open print prep. */}
           <GalleryGrid
             items={featuredItems}
             getItemHref={(item) => getColoringItemHref(item, rootHub.route)}
@@ -171,9 +161,9 @@ export default function ColoringPagesLanding() {
         </div>
       </section>
 
-      <SeoContentSection content={seoContent} />
+      <SeoContentSection content={seoContent} id="about-this-collection" />
 
-      <RelatedHubs title="More ways to browse" hubs={childHubs} />
+      <RelatedHubs title="More ways to browse" hubs={childHubs} id="related-collections" />
     </main>
   );
 }

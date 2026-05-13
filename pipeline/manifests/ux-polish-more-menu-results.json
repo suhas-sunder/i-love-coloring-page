@@ -1,0 +1,58 @@
+{
+  "generatedAt": "2026-05-13T23:42:47.079Z",
+  "runId": "ux-polish",
+  "groupCount": 10,
+  "largestGroupCount": 54,
+  "fallbackCount": 3,
+  "groups": [
+    {
+      "label": "Popular",
+      "count": 8
+    },
+    {
+      "label": "Seasonal",
+      "count": 8
+    },
+    {
+      "label": "Animals & Nature",
+      "count": 54
+    },
+    {
+      "label": "Dinosaurs & Prehistoric",
+      "count": 10
+    },
+    {
+      "label": "Fantasy & Characters",
+      "count": 18
+    },
+    {
+      "label": "Food & Cute Objects",
+      "count": 15
+    },
+    {
+      "label": "Vehicles & Places",
+      "count": 8
+    },
+    {
+      "label": "Patterns & Detailed",
+      "count": 1
+    },
+    {
+      "label": "Kids & Easy",
+      "count": 1
+    },
+    {
+      "label": "More Specific Collections",
+      "count": 3
+    }
+  ],
+  "summary": {
+    "groupedByIntent": true,
+    "noBroadMoreCollectionsDump": true,
+    "fallbackGroupBounded": true,
+    "largestGroupBelowOneColumnDumpRisk": true,
+    "desktopSearchPresent": true,
+    "mobileSearchPresent": true,
+    "noAdsInNavigation": true
+  }
+}

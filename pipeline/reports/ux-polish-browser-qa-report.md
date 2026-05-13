@@ -1,0 +1,21 @@
+# UX Polish Browser QA
+
+- Status: completed
+- Passed: true
+- Pages inspected: 44
+- Viewports checked: mobile-390, tablet-768, desktop-1440, wide-1920
+- Image click starts print flow: true
+- Print does not hang: true
+- PNG download works: true
+- JPG download works: true
+- WebP download works: true
+- SVG download absent: true
+- Visible card UI cleaner: true
+- Hero quick links work: true
+- Hero related links work: true
+- More menu grouped: true
+- Mobile menu works: true
+- Ad density unchanged: true
+- Horizontal overflow absent: true
+- Screenshot directory: pipeline/review/ux-polish/screenshots/
+- Blockers: none
