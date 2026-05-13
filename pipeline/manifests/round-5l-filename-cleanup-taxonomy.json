@@ -1,0 +1,94 @@
+{
+  "generatedAt": "2026-05-13T02:54:55.918Z",
+  "runId": "round-5l-filename-cleanup-taxonomy",
+  "reasonCodes": [
+    {
+      "code": "ai_export_name",
+      "description": "Filename exposes AI tool or generated-export wording such as ChatGPT, GPT, OpenAI, DALL-E, or ai-generated."
+    },
+    {
+      "code": "failed_name",
+      "description": "Filename exposes failed, failure, retry, or similar internal production status language."
+    },
+    {
+      "code": "timestamp_name",
+      "description": "Filename appears to be date or timestamp driven rather than subject driven."
+    },
+    {
+      "code": "generic_name",
+      "description": "Filename is too generic for a durable public object key."
+    },
+    {
+      "code": "duplicate_tokens",
+      "description": "Filename repeats adjacent tokens awkwardly."
+    },
+    {
+      "code": "category_mismatch",
+      "description": "Filename and category folder appear inconsistent and should not be moved automatically in this round."
+    },
+    {
+      "code": "spelling_issue",
+      "description": "Filename contains a safely detectable spelling issue."
+    },
+    {
+      "code": "overly_long",
+      "description": "Filename is longer than needed for a professional public URL."
+    },
+    {
+      "code": "internal_pipeline_term",
+      "description": "Filename exposes internal pipeline, upload, trace, or object-key wording."
+    },
+    {
+      "code": "vague_subject",
+      "description": "Filename does not contain enough subject detail for a confident clean key."
+    },
+    {
+      "code": "collision_risk",
+      "description": "Clean base stem would collide without a stable suffix."
+    },
+    {
+      "code": "safe_existing_name",
+      "description": "Current filename is already acceptable for public use."
+    },
+    {
+      "code": "manual_review_required",
+      "description": "Owner or later cleanup round should review before final upload."
+    }
+  ],
+  "confidenceLevels": [
+    {
+      "level": "high",
+      "description": "The issue or clean name is strongly supported by existing metadata."
+    },
+    {
+      "level": "medium",
+      "description": "The clean name is likely acceptable but should be reviewed if the asset is important."
+    },
+    {
+      "level": "low",
+      "description": "The clean name uses conservative inference and should not be treated as final without review."
+    },
+    {
+      "level": "manual_review",
+      "description": "The item needs owner review or a later visual/name pass before final upload."
+    }
+  ],
+  "actions": [
+    {
+      "action": "keep",
+      "description": "Keep the current public object key stem."
+    },
+    {
+      "action": "clean_public_object_key",
+      "description": "Use a generated clean future object key while leaving current files unchanged."
+    },
+    {
+      "action": "manual_review_before_full_upload",
+      "description": "Review before the final full upload or exclude from that upload."
+    },
+    {
+      "action": "defer",
+      "description": "Do not decide the final name in this round."
+    }
+  ]
+}

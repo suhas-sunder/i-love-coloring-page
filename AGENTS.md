@@ -324,6 +324,13 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - SVG remains internal-only and must never be shown as a user-facing download option.
 - Do not start image sitemap, Open Graph image, live ads, ad scripts, or JSON-LD image expansion until the production asset domain is accepted.
 - Do not validate PNG as a substitute for WebP in SVG plus WebP custom-domain verification.
+- Round 5L public R2 object keys should not expose AI, export, failure, timestamp, or internal pipeline names.
+- Do not rename source images or current generated media without explicit owner approval.
+- Future full upload should use the clean SVG plus WebP object-key mapping, not raw AI/export filenames.
+- Do not switch app runtime paths to clean object keys until matching uploaded files exist and pass public URL verification.
+- Clean key mapping must preserve `assetId` values and public page route stability.
+- Full upload remains final-stage production work and still requires explicit approval.
+- Image sitemap and Open Graph image work must wait until clean public URLs are uploaded and verified.
 
 ## Production Asset Hosting
 

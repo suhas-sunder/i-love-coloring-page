@@ -1,0 +1,30 @@
+{
+  "generatedAt": "2026-05-13T02:54:57.347Z",
+  "runId": "round-5l-app-path-mapping-plan",
+  "summary": {
+    "appRuntimePathsChanged": false,
+    "cleanUploadBundleExists": false,
+    "safeToSwitchRuntimeNow": false,
+    "finalMapRecords": 6557,
+    "imageSitemapDeferred": true,
+    "openGraphImagesDeferred": true
+  },
+  "currentState": [
+    "Current app runtime paths continue to use the existing generated item data.",
+    "Round 5L does not change app pages, asset resolver, download behavior, print behavior, metadata, or generated runtime asset paths.",
+    "The clean object-key map is a future upload source of truth only."
+  ],
+  "migrationSteps": [
+    "Generate clean key map.",
+    "Generate clean SVG plus WebP upload bundle from existing local media without renaming source files.",
+    "Upload clean bundle after explicit approval.",
+    "Verify clean public URLs, content types, CORS, and cache headers.",
+    "Switch app generated data to clean public keys only after files exist in R2.",
+    "Rebuild static site.",
+    "Run browser QA for WebP gallery rendering, SVG conversion, Print, and PNG/JPG/WebP downloads.",
+    "Then consider image sitemap and Open Graph images."
+  ],
+  "blockers": [
+    "Do not point the app at clean keys until the matching clean files exist on the custom asset domain."
+  ]
+}
