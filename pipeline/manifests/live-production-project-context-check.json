@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-05-13T07:40:24.863Z",
+  "runId": "live-production-project-context-check",
+  "root": "D:/PROJECTS-and-WORK/work-projects/all_projects/i-love-coloring-page",
+  "summary": {
+    "correctRepo": true,
+    "branch": "version-4",
+    "branchExpected": true,
+    "runtimeSwitchCommitExists": true,
+    "noAppApiRoute": true,
+    "coloringPagesRouteExists": true,
+    "hubRouteExists": true,
+    "staticExportConfigured": true,
+    "runtimeGeneratedDataExists": true,
+    "publicContainsGeneratedProductionMedia": false,
+    "imagesStatusClean": true,
+    "ilovesvgStatusClean": true,
+    "svgUserDownloadAbsent": true,
+    "publicDownloadsArePngJpgWebp": true,
+    "liveAdSenseCodeAbsent": true,
+    "imageSitemapAbsent": true,
+    "ogImageGenerationAbsent": true,
+    "runtimeDataLayerUsed": true
+  }
+}

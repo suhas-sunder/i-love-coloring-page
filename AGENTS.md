@@ -373,6 +373,13 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Image sitemap and Open Graph image work may only start after runtime switch browser QA passes on the custom asset domain.
 - SVG remains internal-only after the runtime switch and must not appear as a user-facing download option.
 - PNG previews and thumbnails must not become the primary public gallery source after the clean WebP/SVG runtime switch.
+- Public-safe production config values must have hardcoded defaults and must not require Netlify environment variables.
+- R2 upload credentials are local-only and must never be used by website runtime, Netlify build config, or public generated data.
+- Production deployment QA must pass on the live Netlify site before image sitemap, Open Graph image, JSON-LD expansion, or live ads begin.
+- Live production screenshots and HTTP responses override local-only production readiness claims.
+- The runtime asset switch must be verified on Netlify production, not only in local static export.
+- Do not proceed to image sitemap work until live clean WebP and internal SVG URLs render correctly from the production site.
+- Do not proceed to live ads until production layout, trust pages, contact details, and ad placeholder behavior are accepted.
 
 ## Production Asset Hosting
 

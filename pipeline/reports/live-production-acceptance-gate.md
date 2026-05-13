@@ -1,0 +1,26 @@
+# Live Production Acceptance Gate
+
+- Public config defaults passed: pass
+- Build without public env passed: pass
+- Production site reachable: fail
+- Runtime asset switch active: fail
+- WebP gallery rendering passed: fail
+- SVG conversion passed: fail
+- PNG download passed: fail
+- JPG download passed: fail
+- WebP download passed: fail
+- Print passed: fail
+- Deferred records hidden: fail
+- Sampled URL checks passed: pass
+- Sitemap and robots passed: fail
+- Metadata passed: fail
+- Ad layout passed: fail
+- No SVG download: pass
+- No app/api: pass
+- No horizontal overflow: pass
+- Ready for image sitemap round: fail
+- Ready for OG image round: fail
+- Ready for JSON-LD round: fail
+- Ready for live ads round: fail
+- Blockers: production_site_reachable, production_runtime_asset_switch_active, gallery_webp_rendering_passed, svg_conversion_passed, png_download_passed, jpg_download_passed, webp_download_passed, print_passed, deferred_records_hidden, sitemap_robots_passed, metadata_passed, ad_layout_passed
+- Result: fail

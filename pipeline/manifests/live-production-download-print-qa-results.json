@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-05-13T07:58:20.043Z",
+  "sourceAssetId": null,
+  "sourceSvgUrl": null,
+  "controls": {
+    "printPresent": false,
+    "pngPresent": false,
+    "jpgPresent": false,
+    "webpPresent": false,
+    "svgDownloadPresent": false,
+    "labels": []
+  },
+  "conversion": {
+    "pngMagicOk": false,
+    "jpgMagicOk": false,
+    "webpMagicOk": false
+  },
+  "downloadAttempts": {},
+  "print": {
+    "buttonPresent": false,
+    "popupOpened": false,
+    "conversionReady": false,
+    "passed": false,
+    "error": "runtimePaths.find is not a function"
+  },
+  "error": "runtimePaths.find is not a function",
+  "passed": false
+}

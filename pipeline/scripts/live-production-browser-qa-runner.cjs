@@ -466,7 +466,10 @@ async function runSitemapRobotsCheck() {
     sitemapResponse.text(),
     robotsResponse.text(),
   ]);
-  const runtimeRoutes = await readJson(path.join("src", "generated", "coloring", "runtime-routes.json"), []);
+  const runtimeRoutesPayload = await readJson(path.join("src", "generated", "coloring", "runtime-routes.json"), []);
+  const runtimeRoutes = Array.isArray(runtimeRoutesPayload)
+    ? runtimeRoutesPayload
+    : runtimeRoutesPayload.routes || [];
   const phase2 = await readJson(path.join("pipeline", "manifests", "round-4a-phase-2-hub-backlog.json"), { hubs: [] });
   const phase2Routes = Array.isArray(phase2.hubs)
     ? phase2.hubs.map((hub) => `/coloring-pages/${hub.slug}`).filter(Boolean)
@@ -661,10 +664,10 @@ async function main() {
       await context.close();
     }
 
-    const interactionChecks = await runInteractionChecks(browser);
-    downloadPrint = await runDownloadAndPrintChecks(browser);
+    const interactionChecks = await safeRunInteractionChecks(browser);
+    downloadPrint = await safeRunDownloadAndPrintChecks(browser);
     sitemapRobots = await runSitemapRobotsCheck();
-    metadata = await collectMetadata(browser);
+    metadata = await safeCollectMetadata(browser);
     adLayout = evaluateAdLayout(pageResults.filter((result) => result.metrics));
 
     const homeDesktop = pageResults.find((result) => result.route === "/" && result.viewport.label === "desktop-1440");
@@ -896,8 +899,8 @@ async function main() {
     const blockers = [];
     const gate = {
       checkedAt: new Date().toISOString(),
-      public_config_defaults_passed: configAudit.passed === true,
-      build_without_public_env_passed: noEnvBuild.passed === true,
+      public_config_defaults_passed: configAudit.summary?.publicSafeDefaultsPassed === true,
+      build_without_public_env_passed: noEnvBuild.summary?.passed === true,
       production_site_reachable: deployment.productionSiteReachable,
       production_runtime_asset_switch_active: deployment.latestRuntimeSwitchAppearsActive,
       gallery_webp_rendering_passed: browserQa.summary.webpGalleryPreviewsRender,
@@ -907,7 +910,7 @@ async function main() {
       webp_download_passed: Boolean(downloadPrint.downloadAttempts.webp?.extensionOk),
       print_passed: downloadPrint.print.passed,
       deferred_records_hidden: browserQa.summary.deferredRecordsHidden,
-      sampled_url_checks_passed: sampledAsset.passed === true,
+      sampled_url_checks_passed: sampledAsset.summary?.passed === true,
       sitemap_robots_passed: sitemapRobots.passed,
       metadata_passed: metadata.passed,
       ad_layout_passed: adLayout.passed,
@@ -919,7 +922,7 @@ async function main() {
     };
     for (const [key, value] of Object.entries(gate)) {
       if (key === "blockers" || key.startsWith("ready_for_")) continue;
-      if (value !== true) blockers.push(key);
+      if (typeof value === "boolean" && value !== true) blockers.push(key);
     }
     const corePassed = blockers.length === 0;
     gate.ready_for_image_sitemap_round = corePassed;
@@ -962,6 +965,89 @@ async function main() {
     }
   } finally {
     await browser.close();
+  }
+}
+
+async function safeRunInteractionChecks(browser) {
+  try {
+    return await runInteractionChecks(browser);
+  } catch (error) {
+    const message = error.message.replace(/[A-Za-z0-9+/=]{24,}/g, "[redacted]");
+    return {
+      search: { attempted: true, passed: false, details: message },
+      filter: { attempted: true, passed: false, details: message },
+      pagination: { attempted: true, passed: false, details: message },
+      moreMenu: { attempted: true, passed: false, details: message },
+      mobileNav: { attempted: true, passed: false, details: message },
+      error: message,
+    };
+  }
+}
+
+async function safeRunDownloadAndPrintChecks(browser) {
+  try {
+    return await runDownloadAndPrintChecks(browser);
+  } catch (error) {
+    const message = error.message.replace(/[A-Za-z0-9+/=]{24,}/g, "[redacted]");
+    return {
+      checkedAt: new Date().toISOString(),
+      sourceAssetId: null,
+      sourceSvgUrl: null,
+      controls: {
+        printPresent: false,
+        pngPresent: false,
+        jpgPresent: false,
+        webpPresent: false,
+        svgDownloadPresent: false,
+        labels: [],
+      },
+      conversion: {
+        pngMagicOk: false,
+        jpgMagicOk: false,
+        webpMagicOk: false,
+      },
+      downloadAttempts: {},
+      print: {
+        buttonPresent: false,
+        popupOpened: false,
+        conversionReady: false,
+        passed: false,
+        error: message,
+      },
+      error: message,
+      passed: false,
+    };
+  }
+}
+
+async function safeCollectMetadata(browser) {
+  try {
+    return await collectMetadata(browser);
+  } catch (error) {
+    const message = error.message.replace(/[A-Za-z0-9+/=]{24,}/g, "[redacted]");
+    const checks = {
+      titlesPresent: false,
+      descriptionsPresent: false,
+      canonicalsPresent: false,
+      canonicalsUseSiteUrl: false,
+      noOgImageDependency: false,
+      noSvgDownloadCopy: true,
+      noOnlineColoringPromise: true,
+      noInternalPipelineWording: true,
+      noLocalhost: true,
+      noR2Dev: true,
+      noObviousDuplicateTitles: false,
+      noObviousDuplicateDescriptions: false,
+    };
+    return {
+      checkedAt: new Date().toISOString(),
+      records: [],
+      duplicateTitles: [],
+      duplicateDescriptions: [],
+      checks,
+      error: message,
+      passed: false,
+    };
   }
 }
 

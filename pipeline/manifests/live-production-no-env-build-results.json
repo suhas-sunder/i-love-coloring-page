@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-05-13T07:40:24.863Z",
+  "runId": "live-production-no-env-build-results",
+  "summary": {
+    "command": "npm run build with NEXT_PUBLIC_SITE_URL, NEXT_PUBLIC_COLORING_ASSET_BASE_URL, and NEXT_PUBLIC_CONTACT_EMAIL set to empty strings",
+    "buildExitCode": 0,
+    "outputFileCount": 5281,
+    "siteUrlDefaultUsed": true,
+    "assetBaseDefaultUsed": true,
+    "contactEmailDefaultUsed": true,
+    "forbiddenMatchCount": 0,
+    "passed": true
+  },
+  "forbiddenMatches": [],
+  "buildOutputTail": "\n> i-love-coloring-page@0.1.0 build\n> next build\n\n▲ Next.js 16.2.6 (Turbopack)\n- Environments: .env.local\n\n  Creating an optimized production build ...\n✓ Compiled successfully in 2.2s\n  Running TypeScript ...\n  Finished TypeScript in 4.5s ...\n  Collecting page data using 16 workers ...\n  Generating static pages using 16 workers (0/496) ...\n  Generating static pages using 16 workers (124/496) \r\n  Generating static pages using 16 workers (248/496) \r\n  Generating static pages using 16 workers (372/496) \r\n✓ Generating static pages using 16 workers (496/496) in 8.3s\n  Finalizing page optimization ...\n\nRoute (app)\n┌ ○ /\n├ ○ /_not-found\n├ ○ /about\n├ ○ /affiliate-disclosure\n├ ○ /coloring-pages\n├ ● /coloring-pages/[hubSlug]\n│ ├ /coloring-pages/animals\n│ ├ /coloring-pages/anime-girls\n│ ├ /coloring-pages/beetles\n│ └ [+61 more paths]\n├ ● /coloring-pages/[hubSlug]/page/[page]\n│ ├ /coloring-pages/animals/page/2\n│ ├ /coloring-pages/animals/page/3\n│ ├ /coloring-pages/animals/page/4\n│ └ [+416 more paths]\n├ ○ /contact\n├ ○ /editorial-policy\n├ ○ /icon.svg\n├ ○ /privacy\n├ ○ /robots.txt\n├ ○ /sitemap.xml\n└ ○ /terms\n\n\n○  (Static)  prerendered as static content\n●  (SSG)     prerendered as static HTML (uses generateStaticParams)\n\n"
+}

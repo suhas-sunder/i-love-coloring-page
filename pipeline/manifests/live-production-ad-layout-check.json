@@ -1,0 +1,36 @@
+{
+  "checkedAt": "2026-05-13T07:58:21.786Z",
+  "counts": [
+    {
+      "route": "/",
+      "viewport": "mobile-390",
+      "adCount": 0
+    },
+    {
+      "route": "/",
+      "viewport": "tablet-768",
+      "adCount": 0
+    },
+    {
+      "route": "/",
+      "viewport": "desktop-1440",
+      "adCount": 0
+    },
+    {
+      "route": "/",
+      "viewport": "wide-1920",
+      "adCount": 0
+    }
+  ],
+  "checks": {
+    "visibleByDefault": false,
+    "noLiveAds": true,
+    "noNavAds": true,
+    "noGalleryAds": true,
+    "mobileTabletSingleWell": false,
+    "desktopControlled": false,
+    "wideControlled": false,
+    "noHorizontalOverflow": true
+  },
+  "passed": false
+}

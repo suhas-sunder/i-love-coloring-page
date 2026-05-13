@@ -1,0 +1,935 @@
+{
+  "checkedAt": "2026-05-13T07:58:21.787Z",
+  "siteUrl": "https://www.ilovecoloringpage.com",
+  "pages": [
+    "/",
+    "/coloring-pages",
+    "/coloring-pages/animals",
+    "/coloring-pages/geometric",
+    "/coloring-pages/anime-girls",
+    "/coloring-pages/christmas",
+    "/coloring-pages/plushies",
+    "/contact",
+    "/privacy",
+    "/about",
+    "/terms"
+  ],
+  "viewports": [
+    {
+      "label": "mobile-390",
+      "width": 390,
+      "height": 900
+    },
+    {
+      "label": "tablet-768",
+      "width": 768,
+      "height": 1000
+    },
+    {
+      "label": "desktop-1440",
+      "width": 1440,
+      "height": 1100
+    },
+    {
+      "label": "wide-1920",
+      "width": 1920,
+      "height": 1100
+    }
+  ],
+  "screenshotsDirectory": "pipeline/review/live-production/screenshots",
+  "pageResults": [
+    {
+      "route": "/",
+      "url": "https://www.ilovecoloringpage.com/",
+      "status": 200,
+      "viewport": {
+        "label": "mobile-390",
+        "width": 390,
+        "height": 900
+      },
+      "metrics": {
+        "screenshotPath": "pipeline/review/live-production/screenshots/mobile-390-home.png",
+        "title": "I Love Coloring Page | Free Printable Coloring Pages for Kids & Adults",
+        "description": "Browse thousands of free printable coloring pages: animals, flowers, mandalas, dinosaurs, ocean life, holidays, fantasy creatures, cartoon characters, geometric patterns, and more. Download or print instantly without signup.",
+        "canonical": "https://ilovecoloringpage.com/",
+        "ogTitle": "I Love Coloring Page | Free Printable Coloring Pages for Kids & Adults",
+        "ogDescription": "Browse thousands of free printable coloring pages: animals, flowers, mandalas, dinosaurs, ocean life, holidays, fantasy creatures, cartoon characters, geometric patterns, and more. Download or print instantly without signup.",
+        "ogImage": "https://ilovecoloringpage.com/og-image.jpg",
+        "statusText": "I Love Coloring Page\n\nDiscover thousands of free printable coloring pages for kids, teens, and adults. Choose from animals, flowers, fantasy creatures, dinosaurs, ocean life, geometric mandalas, seasonal holidays, cartoon characters, and more. Every page is clean black-and-white line art ready to download or print instantly for classrooms, craft time, or stress-relief coloring.\n\nUpdated 5/13/2026\n\nFeatured Coloring Categories\nAnimals\nFlowers\nDinosaurs\nButterflies\nBirds\nInsects\nFantasy & Dragons\nMythical Creatures\nOcean Life\nSea Shells & Coral\nMandalas & Geometric Patterns\nOptical-Illusion Patterns\nHolidays & Seasons\nChristmas & Winter\nHalloween & Autumn\nSpring & Summer Scenes\nCartoon Characters\nCute Chibi Characters\nSpace & Planets\nVehicles & Transportation\nBuildings & Landmarks\nFruits & Vegetables\nFood & Desserts\nAlphabet & Numbers\nFarm Scenes\nForest & Wildlife\nUnderwater Fantasy\nFairy-Tale Castles\nMermaids & Unicorns\nFree Printable Coloring Pages for All Ages\n\nI Love Coloring Page was built for families, teachers, hobbyists, and anyone who loves to relax with crayons, pencils, or markers. All designs use bold, crisp outlines with no shading so your colors pop on the page. The library covers everything from easy toddler animals to detailed adult mandalas and holiday scenes.\n\nEach image downloads in high-resolution PNG or PDF sized to 8.5 × 11-inch US-Letter or A4 paper for ink-friendly home printing. Seasonal collections keep the library fresh - think pumpkins for autumn, sn",
+        "bodyContains6352": false,
+        "bodyContains6557": false,
+        "contactEmailPresent": false,
+        "previewImageCount": 0,
+        "loadedPreviewImageCount": 0,
+        "brokenPreviewImageCount": 0,
+        "previewUnavailableVisibleCount": 0,
+        "customAssetPreviewCount": 0,
+        "nonCustomAssetPreviewCount": 0,
+        "visibleAdvertisementLabels": 0,
+        "navContainsAdvertisement": false,
+        "galleryContainsAdvertisement": false,
+        "hasHorizontalOverflow": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "linksToAssetBase": false,
+        "leakedValues": {
+          "localhost": false,
+          "r2Dev": false,
+          "privateR2Endpoint": false,
+          "duplicatePrefix": false,
+          "sourcePath": false,
+          "liveAds": false
+        },
+        "appApiRefs": false,
+        "svgDownloadVisible": false,
+        "downloadLabels": [
+          "Animals",
+          "Flowers",
+          "Dinosaurs",
+          "Butterflies",
+          "Birds",
+          "Insects",
+          "Fantasy & Dragons",
+          "Mythical Creatures",
+          "Ocean Life",
+          "Sea Shells & Coral",
+          "Mandalas & Geometric Patterns",
+          "Optical-Illusion Patterns",
+          "Holidays & Seasons",
+          "Christmas & Winter",
+          "Halloween & Autumn",
+          "Spring & Summer Scenes",
+          "Cartoon Characters",
+          "Cute Chibi Characters",
+          "Space & Planets",
+          "Vehicles & Transportation",
+          "Buildings & Landmarks",
+          "Fruits & Vegetables",
+          "Food & Desserts",
+          "Alphabet & Numbers",
+          "Farm Scenes",
+          "Forest & Wildlife",
+          "Underwater Fantasy",
+          "Fairy-Tale Castles",
+          "Mermaids & Unicorns",
+          "Are all coloring pages free to print?",
+          "Can teachers use these in classrooms?",
+          "What file formats and sizes are available?",
+          "Are there designs for adults?"
+        ],
+        "canonicalUsesSiteUrl": false
+      },
+      "error": ""
+    },
+    {
+      "route": "/coloring-pages",
+      "url": "https://www.ilovecoloringpage.com/coloring-pages",
+      "status": 0,
+      "viewport": {
+        "label": "mobile-390",
+        "width": 390,
+        "height": 900
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/coloring-pages\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/coloring-pages\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/coloring-pages/animals",
+      "url": "https://www.ilovecoloringpage.com/coloring-pages/animals",
+      "status": 0,
+      "viewport": {
+        "label": "mobile-390",
+        "width": 390,
+        "height": 900
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/coloring-pages/animals\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/coloring-pages/animals\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/coloring-pages/geometric",
+      "url": "https://www.ilovecoloringpage.com/coloring-pages/geometric",
+      "status": 0,
+      "viewport": {
+        "label": "mobile-390",
+        "width": 390,
+        "height": 900
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/coloring-pages/geometric\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/coloring-pages/geometric\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/coloring-pages/anime-girls",
+      "url": "https://www.ilovecoloringpage.com/coloring-pages/anime-girls",
+      "status": 0,
+      "viewport": {
+        "label": "mobile-390",
+        "width": 390,
+        "height": 900
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/coloring-pages/anime-girls\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/coloring-pages/anime-girls\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/coloring-pages/christmas",
+      "url": "https://www.ilovecoloringpage.com/coloring-pages/christmas",
+      "status": 0,
+      "viewport": {
+        "label": "mobile-390",
+        "width": 390,
+        "height": 900
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/coloring-pages/christmas\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/coloring-pages/christmas\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/coloring-pages/plushies",
+      "url": "https://www.ilovecoloringpage.com/coloring-pages/plushies",
+      "status": 0,
+      "viewport": {
+        "label": "mobile-390",
+        "width": 390,
+        "height": 900
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/coloring-pages/plushies\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/coloring-pages/plushies\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/contact",
+      "url": "https://www.ilovecoloringpage.com/contact",
+      "status": 0,
+      "viewport": {
+        "label": "mobile-390",
+        "width": 390,
+        "height": 900
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/contact\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/contact\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/privacy",
+      "url": "https://www.ilovecoloringpage.com/privacy",
+      "status": 0,
+      "viewport": {
+        "label": "mobile-390",
+        "width": 390,
+        "height": 900
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/privacy\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/privacy\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/about",
+      "url": "https://www.ilovecoloringpage.com/about",
+      "status": 0,
+      "viewport": {
+        "label": "mobile-390",
+        "width": 390,
+        "height": 900
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/about\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/about\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/terms",
+      "url": "https://www.ilovecoloringpage.com/terms",
+      "status": 0,
+      "viewport": {
+        "label": "mobile-390",
+        "width": 390,
+        "height": 900
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/terms\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/terms\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/",
+      "url": "https://www.ilovecoloringpage.com/",
+      "status": 200,
+      "viewport": {
+        "label": "tablet-768",
+        "width": 768,
+        "height": 1000
+      },
+      "metrics": {
+        "screenshotPath": "pipeline/review/live-production/screenshots/tablet-768-home.png",
+        "title": "I Love Coloring Page | Free Printable Coloring Pages for Kids & Adults",
+        "description": "Browse thousands of free printable coloring pages: animals, flowers, mandalas, dinosaurs, ocean life, holidays, fantasy creatures, cartoon characters, geometric patterns, and more. Download or print instantly without signup.",
+        "canonical": "https://ilovecoloringpage.com/",
+        "ogTitle": "I Love Coloring Page | Free Printable Coloring Pages for Kids & Adults",
+        "ogDescription": "Browse thousands of free printable coloring pages: animals, flowers, mandalas, dinosaurs, ocean life, holidays, fantasy creatures, cartoon characters, geometric patterns, and more. Download or print instantly without signup.",
+        "ogImage": "https://ilovecoloringpage.com/og-image.jpg",
+        "statusText": "I Love Coloring Page\n\nDiscover thousands of free printable coloring pages for kids, teens, and adults. Choose from animals, flowers, fantasy creatures, dinosaurs, ocean life, geometric mandalas, seasonal holidays, cartoon characters, and more. Every page is clean black-and-white line art ready to download or print instantly for classrooms, craft time, or stress-relief coloring.\n\nUpdated 5/13/2026\n\nFeatured Coloring Categories\nAnimals\nFlowers\nDinosaurs\nButterflies\nBirds\nInsects\nFantasy & Dragons\nMythical Creatures\nOcean Life\nSea Shells & Coral\nMandalas & Geometric Patterns\nOptical-Illusion Patterns\nHolidays & Seasons\nChristmas & Winter\nHalloween & Autumn\nSpring & Summer Scenes\nCartoon Characters\nCute Chibi Characters\nSpace & Planets\nVehicles & Transportation\nBuildings & Landmarks\nFruits & Vegetables\nFood & Desserts\nAlphabet & Numbers\nFarm Scenes\nForest & Wildlife\nUnderwater Fantasy\nFairy-Tale Castles\nMermaids & Unicorns\nFree Printable Coloring Pages for All Ages\n\nI Love Coloring Page was built for families, teachers, hobbyists, and anyone who loves to relax with crayons, pencils, or markers. All designs use bold, crisp outlines with no shading so your colors pop on the page. The library covers everything from easy toddler animals to detailed adult mandalas and holiday scenes.\n\nEach image downloads in high-resolution PNG or PDF sized to 8.5 × 11-inch US-Letter or A4 paper for ink-friendly home printing. Seasonal collections keep the library fresh - think pumpkins for autumn, sn",
+        "bodyContains6352": false,
+        "bodyContains6557": false,
+        "contactEmailPresent": false,
+        "previewImageCount": 0,
+        "loadedPreviewImageCount": 0,
+        "brokenPreviewImageCount": 0,
+        "previewUnavailableVisibleCount": 0,
+        "customAssetPreviewCount": 0,
+        "nonCustomAssetPreviewCount": 0,
+        "visibleAdvertisementLabels": 0,
+        "navContainsAdvertisement": false,
+        "galleryContainsAdvertisement": false,
+        "hasHorizontalOverflow": false,
+        "scrollWidth": 768,
+        "clientWidth": 768,
+        "linksToAssetBase": false,
+        "leakedValues": {
+          "localhost": false,
+          "r2Dev": false,
+          "privateR2Endpoint": false,
+          "duplicatePrefix": false,
+          "sourcePath": false,
+          "liveAds": false
+        },
+        "appApiRefs": false,
+        "svgDownloadVisible": false,
+        "downloadLabels": [
+          "Animals",
+          "Flowers",
+          "Dinosaurs",
+          "Butterflies",
+          "Birds",
+          "Insects",
+          "Fantasy & Dragons",
+          "Mythical Creatures",
+          "Ocean Life",
+          "Sea Shells & Coral",
+          "Mandalas & Geometric Patterns",
+          "Optical-Illusion Patterns",
+          "Holidays & Seasons",
+          "Christmas & Winter",
+          "Halloween & Autumn",
+          "Spring & Summer Scenes",
+          "Cartoon Characters",
+          "Cute Chibi Characters",
+          "Space & Planets",
+          "Vehicles & Transportation",
+          "Buildings & Landmarks",
+          "Fruits & Vegetables",
+          "Food & Desserts",
+          "Alphabet & Numbers",
+          "Farm Scenes",
+          "Forest & Wildlife",
+          "Underwater Fantasy",
+          "Fairy-Tale Castles",
+          "Mermaids & Unicorns",
+          "Are all coloring pages free to print?",
+          "Can teachers use these in classrooms?",
+          "What file formats and sizes are available?",
+          "Are there designs for adults?"
+        ],
+        "canonicalUsesSiteUrl": false
+      },
+      "error": ""
+    },
+    {
+      "route": "/coloring-pages",
+      "url": "https://www.ilovecoloringpage.com/coloring-pages",
+      "status": 0,
+      "viewport": {
+        "label": "tablet-768",
+        "width": 768,
+        "height": 1000
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/coloring-pages\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/coloring-pages\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/coloring-pages/animals",
+      "url": "https://www.ilovecoloringpage.com/coloring-pages/animals",
+      "status": 0,
+      "viewport": {
+        "label": "tablet-768",
+        "width": 768,
+        "height": 1000
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/coloring-pages/animals\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/coloring-pages/animals\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/coloring-pages/geometric",
+      "url": "https://www.ilovecoloringpage.com/coloring-pages/geometric",
+      "status": 0,
+      "viewport": {
+        "label": "tablet-768",
+        "width": 768,
+        "height": 1000
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/coloring-pages/geometric\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/coloring-pages/geometric\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/coloring-pages/anime-girls",
+      "url": "https://www.ilovecoloringpage.com/coloring-pages/anime-girls",
+      "status": 0,
+      "viewport": {
+        "label": "tablet-768",
+        "width": 768,
+        "height": 1000
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/coloring-pages/anime-girls\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/coloring-pages/anime-girls\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/coloring-pages/christmas",
+      "url": "https://www.ilovecoloringpage.com/coloring-pages/christmas",
+      "status": 0,
+      "viewport": {
+        "label": "tablet-768",
+        "width": 768,
+        "height": 1000
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/coloring-pages/christmas\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/coloring-pages/christmas\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/coloring-pages/plushies",
+      "url": "https://www.ilovecoloringpage.com/coloring-pages/plushies",
+      "status": 0,
+      "viewport": {
+        "label": "tablet-768",
+        "width": 768,
+        "height": 1000
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/coloring-pages/plushies\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/coloring-pages/plushies\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/contact",
+      "url": "https://www.ilovecoloringpage.com/contact",
+      "status": 0,
+      "viewport": {
+        "label": "tablet-768",
+        "width": 768,
+        "height": 1000
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/contact\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/contact\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/privacy",
+      "url": "https://www.ilovecoloringpage.com/privacy",
+      "status": 0,
+      "viewport": {
+        "label": "tablet-768",
+        "width": 768,
+        "height": 1000
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/privacy\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/privacy\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/about",
+      "url": "https://www.ilovecoloringpage.com/about",
+      "status": 0,
+      "viewport": {
+        "label": "tablet-768",
+        "width": 768,
+        "height": 1000
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/about\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/about\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/terms",
+      "url": "https://www.ilovecoloringpage.com/terms",
+      "status": 0,
+      "viewport": {
+        "label": "tablet-768",
+        "width": 768,
+        "height": 1000
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/terms\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/terms\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/",
+      "url": "https://www.ilovecoloringpage.com/",
+      "status": 200,
+      "viewport": {
+        "label": "desktop-1440",
+        "width": 1440,
+        "height": 1100
+      },
+      "metrics": {
+        "screenshotPath": "pipeline/review/live-production/screenshots/desktop-1440-home.png",
+        "title": "I Love Coloring Page | Free Printable Coloring Pages for Kids & Adults",
+        "description": "Browse thousands of free printable coloring pages: animals, flowers, mandalas, dinosaurs, ocean life, holidays, fantasy creatures, cartoon characters, geometric patterns, and more. Download or print instantly without signup.",
+        "canonical": "https://ilovecoloringpage.com/",
+        "ogTitle": "I Love Coloring Page | Free Printable Coloring Pages for Kids & Adults",
+        "ogDescription": "Browse thousands of free printable coloring pages: animals, flowers, mandalas, dinosaurs, ocean life, holidays, fantasy creatures, cartoon characters, geometric patterns, and more. Download or print instantly without signup.",
+        "ogImage": "https://ilovecoloringpage.com/og-image.jpg",
+        "statusText": "I Love Coloring Page\n\nDiscover thousands of free printable coloring pages for kids, teens, and adults. Choose from animals, flowers, fantasy creatures, dinosaurs, ocean life, geometric mandalas, seasonal holidays, cartoon characters, and more. Every page is clean black-and-white line art ready to download or print instantly for classrooms, craft time, or stress-relief coloring.\n\nUpdated 5/13/2026\n\nFeatured Coloring Categories\nAnimals\nFlowers\nDinosaurs\nButterflies\nBirds\nInsects\nFantasy & Dragons\nMythical Creatures\nOcean Life\nSea Shells & Coral\nMandalas & Geometric Patterns\nOptical-Illusion Patterns\nHolidays & Seasons\nChristmas & Winter\nHalloween & Autumn\nSpring & Summer Scenes\nCartoon Characters\nCute Chibi Characters\nSpace & Planets\nVehicles & Transportation\nBuildings & Landmarks\nFruits & Vegetables\nFood & Desserts\nAlphabet & Numbers\nFarm Scenes\nForest & Wildlife\nUnderwater Fantasy\nFairy-Tale Castles\nMermaids & Unicorns\nFree Printable Coloring Pages for All Ages\n\nI Love Coloring Page was built for families, teachers, hobbyists, and anyone who loves to relax with crayons, pencils, or markers. All designs use bold, crisp outlines with no shading so your colors pop on the page. The library covers everything from easy toddler animals to detailed adult mandalas and holiday scenes.\n\nEach image downloads in high-resolution PNG or PDF sized to 8.5 × 11-inch US-Letter or A4 paper for ink-friendly home printing. Seasonal collections keep the library fresh - think pumpkins for autumn, sn",
+        "bodyContains6352": false,
+        "bodyContains6557": false,
+        "contactEmailPresent": false,
+        "previewImageCount": 0,
+        "loadedPreviewImageCount": 0,
+        "brokenPreviewImageCount": 0,
+        "previewUnavailableVisibleCount": 0,
+        "customAssetPreviewCount": 0,
+        "nonCustomAssetPreviewCount": 0,
+        "visibleAdvertisementLabels": 0,
+        "navContainsAdvertisement": false,
+        "galleryContainsAdvertisement": false,
+        "hasHorizontalOverflow": false,
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "linksToAssetBase": false,
+        "leakedValues": {
+          "localhost": false,
+          "r2Dev": false,
+          "privateR2Endpoint": false,
+          "duplicatePrefix": false,
+          "sourcePath": false,
+          "liveAds": false
+        },
+        "appApiRefs": false,
+        "svgDownloadVisible": false,
+        "downloadLabels": [
+          "Animals",
+          "Flowers",
+          "Dinosaurs",
+          "Butterflies",
+          "Birds",
+          "Insects",
+          "Fantasy & Dragons",
+          "Mythical Creatures",
+          "Ocean Life",
+          "Sea Shells & Coral",
+          "Mandalas & Geometric Patterns",
+          "Optical-Illusion Patterns",
+          "Holidays & Seasons",
+          "Christmas & Winter",
+          "Halloween & Autumn",
+          "Spring & Summer Scenes",
+          "Cartoon Characters",
+          "Cute Chibi Characters",
+          "Space & Planets",
+          "Vehicles & Transportation",
+          "Buildings & Landmarks",
+          "Fruits & Vegetables",
+          "Food & Desserts",
+          "Alphabet & Numbers",
+          "Farm Scenes",
+          "Forest & Wildlife",
+          "Underwater Fantasy",
+          "Fairy-Tale Castles",
+          "Mermaids & Unicorns",
+          "Are all coloring pages free to print?",
+          "Can teachers use these in classrooms?",
+          "What file formats and sizes are available?",
+          "Are there designs for adults?"
+        ],
+        "canonicalUsesSiteUrl": false
+      },
+      "error": ""
+    },
+    {
+      "route": "/coloring-pages",
+      "url": "https://www.ilovecoloringpage.com/coloring-pages",
+      "status": 0,
+      "viewport": {
+        "label": "desktop-1440",
+        "width": 1440,
+        "height": 1100
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/coloring-pages\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/coloring-pages\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/coloring-pages/animals",
+      "url": "https://www.ilovecoloringpage.com/coloring-pages/animals",
+      "status": 0,
+      "viewport": {
+        "label": "desktop-1440",
+        "width": 1440,
+        "height": 1100
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/coloring-pages/animals\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/coloring-pages/animals\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/coloring-pages/geometric",
+      "url": "https://www.ilovecoloringpage.com/coloring-pages/geometric",
+      "status": 0,
+      "viewport": {
+        "label": "desktop-1440",
+        "width": 1440,
+        "height": 1100
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/coloring-pages/geometric\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/coloring-pages/geometric\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/coloring-pages/anime-girls",
+      "url": "https://www.ilovecoloringpage.com/coloring-pages/anime-girls",
+      "status": 0,
+      "viewport": {
+        "label": "desktop-1440",
+        "width": 1440,
+        "height": 1100
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/coloring-pages/anime-girls\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/coloring-pages/anime-girls\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/coloring-pages/christmas",
+      "url": "https://www.ilovecoloringpage.com/coloring-pages/christmas",
+      "status": 0,
+      "viewport": {
+        "label": "desktop-1440",
+        "width": 1440,
+        "height": 1100
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/coloring-pages/christmas\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/coloring-pages/christmas\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/coloring-pages/plushies",
+      "url": "https://www.ilovecoloringpage.com/coloring-pages/plushies",
+      "status": 0,
+      "viewport": {
+        "label": "desktop-1440",
+        "width": 1440,
+        "height": 1100
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/coloring-pages/plushies\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/coloring-pages/plushies\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/contact",
+      "url": "https://www.ilovecoloringpage.com/contact",
+      "status": 0,
+      "viewport": {
+        "label": "desktop-1440",
+        "width": 1440,
+        "height": 1100
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/contact\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/contact\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/privacy",
+      "url": "https://www.ilovecoloringpage.com/privacy",
+      "status": 0,
+      "viewport": {
+        "label": "desktop-1440",
+        "width": 1440,
+        "height": 1100
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/privacy\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/privacy\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/about",
+      "url": "https://www.ilovecoloringpage.com/about",
+      "status": 0,
+      "viewport": {
+        "label": "desktop-1440",
+        "width": 1440,
+        "height": 1100
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/about\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/about\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/terms",
+      "url": "https://www.ilovecoloringpage.com/terms",
+      "status": 0,
+      "viewport": {
+        "label": "desktop-1440",
+        "width": 1440,
+        "height": 1100
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/terms\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/terms\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/",
+      "url": "https://www.ilovecoloringpage.com/",
+      "status": 200,
+      "viewport": {
+        "label": "wide-1920",
+        "width": 1920,
+        "height": 1100
+      },
+      "metrics": {
+        "screenshotPath": "pipeline/review/live-production/screenshots/wide-1920-home.png",
+        "title": "I Love Coloring Page | Free Printable Coloring Pages for Kids & Adults",
+        "description": "Browse thousands of free printable coloring pages: animals, flowers, mandalas, dinosaurs, ocean life, holidays, fantasy creatures, cartoon characters, geometric patterns, and more. Download or print instantly without signup.",
+        "canonical": "https://ilovecoloringpage.com/",
+        "ogTitle": "I Love Coloring Page | Free Printable Coloring Pages for Kids & Adults",
+        "ogDescription": "Browse thousands of free printable coloring pages: animals, flowers, mandalas, dinosaurs, ocean life, holidays, fantasy creatures, cartoon characters, geometric patterns, and more. Download or print instantly without signup.",
+        "ogImage": "https://ilovecoloringpage.com/og-image.jpg",
+        "statusText": "I Love Coloring Page\n\nDiscover thousands of free printable coloring pages for kids, teens, and adults. Choose from animals, flowers, fantasy creatures, dinosaurs, ocean life, geometric mandalas, seasonal holidays, cartoon characters, and more. Every page is clean black-and-white line art ready to download or print instantly for classrooms, craft time, or stress-relief coloring.\n\nUpdated 5/13/2026\n\nFeatured Coloring Categories\nAnimals\nFlowers\nDinosaurs\nButterflies\nBirds\nInsects\nFantasy & Dragons\nMythical Creatures\nOcean Life\nSea Shells & Coral\nMandalas & Geometric Patterns\nOptical-Illusion Patterns\nHolidays & Seasons\nChristmas & Winter\nHalloween & Autumn\nSpring & Summer Scenes\nCartoon Characters\nCute Chibi Characters\nSpace & Planets\nVehicles & Transportation\nBuildings & Landmarks\nFruits & Vegetables\nFood & Desserts\nAlphabet & Numbers\nFarm Scenes\nForest & Wildlife\nUnderwater Fantasy\nFairy-Tale Castles\nMermaids & Unicorns\nFree Printable Coloring Pages for All Ages\n\nI Love Coloring Page was built for families, teachers, hobbyists, and anyone who loves to relax with crayons, pencils, or markers. All designs use bold, crisp outlines with no shading so your colors pop on the page. The library covers everything from easy toddler animals to detailed adult mandalas and holiday scenes.\n\nEach image downloads in high-resolution PNG or PDF sized to 8.5 × 11-inch US-Letter or A4 paper for ink-friendly home printing. Seasonal collections keep the library fresh - think pumpkins for autumn, sn",
+        "bodyContains6352": false,
+        "bodyContains6557": false,
+        "contactEmailPresent": false,
+        "previewImageCount": 0,
+        "loadedPreviewImageCount": 0,
+        "brokenPreviewImageCount": 0,
+        "previewUnavailableVisibleCount": 0,
+        "customAssetPreviewCount": 0,
+        "nonCustomAssetPreviewCount": 0,
+        "visibleAdvertisementLabels": 0,
+        "navContainsAdvertisement": false,
+        "galleryContainsAdvertisement": false,
+        "hasHorizontalOverflow": false,
+        "scrollWidth": 1920,
+        "clientWidth": 1920,
+        "linksToAssetBase": false,
+        "leakedValues": {
+          "localhost": false,
+          "r2Dev": false,
+          "privateR2Endpoint": false,
+          "duplicatePrefix": false,
+          "sourcePath": false,
+          "liveAds": false
+        },
+        "appApiRefs": false,
+        "svgDownloadVisible": false,
+        "downloadLabels": [
+          "Animals",
+          "Flowers",
+          "Dinosaurs",
+          "Butterflies",
+          "Birds",
+          "Insects",
+          "Fantasy & Dragons",
+          "Mythical Creatures",
+          "Ocean Life",
+          "Sea Shells & Coral",
+          "Mandalas & Geometric Patterns",
+          "Optical-Illusion Patterns",
+          "Holidays & Seasons",
+          "Christmas & Winter",
+          "Halloween & Autumn",
+          "Spring & Summer Scenes",
+          "Cartoon Characters",
+          "Cute Chibi Characters",
+          "Space & Planets",
+          "Vehicles & Transportation",
+          "Buildings & Landmarks",
+          "Fruits & Vegetables",
+          "Food & Desserts",
+          "Alphabet & Numbers",
+          "Farm Scenes",
+          "Forest & Wildlife",
+          "Underwater Fantasy",
+          "Fairy-Tale Castles",
+          "Mermaids & Unicorns",
+          "Are all coloring pages free to print?",
+          "Can teachers use these in classrooms?",
+          "What file formats and sizes are available?",
+          "Are there designs for adults?"
+        ],
+        "canonicalUsesSiteUrl": false
+      },
+      "error": ""
+    },
+    {
+      "route": "/coloring-pages",
+      "url": "https://www.ilovecoloringpage.com/coloring-pages",
+      "status": 0,
+      "viewport": {
+        "label": "wide-1920",
+        "width": 1920,
+        "height": 1100
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/coloring-pages\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/coloring-pages\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/coloring-pages/animals",
+      "url": "https://www.ilovecoloringpage.com/coloring-pages/animals",
+      "status": 0,
+      "viewport": {
+        "label": "wide-1920",
+        "width": 1920,
+        "height": 1100
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/coloring-pages/animals\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/coloring-pages/animals\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/coloring-pages/geometric",
+      "url": "https://www.ilovecoloringpage.com/coloring-pages/geometric",
+      "status": 0,
+      "viewport": {
+        "label": "wide-1920",
+        "width": 1920,
+        "height": 1100
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/coloring-pages/geometric\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/coloring-pages/geometric\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/coloring-pages/anime-girls",
+      "url": "https://www.ilovecoloringpage.com/coloring-pages/anime-girls",
+      "status": 0,
+      "viewport": {
+        "label": "wide-1920",
+        "width": 1920,
+        "height": 1100
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/coloring-pages/anime-girls\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/coloring-pages/anime-girls\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/coloring-pages/christmas",
+      "url": "https://www.ilovecoloringpage.com/coloring-pages/christmas",
+      "status": 0,
+      "viewport": {
+        "label": "wide-1920",
+        "width": 1920,
+        "height": 1100
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/coloring-pages/christmas\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/coloring-pages/christmas\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/coloring-pages/plushies",
+      "url": "https://www.ilovecoloringpage.com/coloring-pages/plushies",
+      "status": 0,
+      "viewport": {
+        "label": "wide-1920",
+        "width": 1920,
+        "height": 1100
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/coloring-pages/plushies\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/coloring-pages/plushies\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/contact",
+      "url": "https://www.ilovecoloringpage.com/contact",
+      "status": 0,
+      "viewport": {
+        "label": "wide-1920",
+        "width": 1920,
+        "height": 1100
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/contact\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/contact\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/privacy",
+      "url": "https://www.ilovecoloringpage.com/privacy",
+      "status": 0,
+      "viewport": {
+        "label": "wide-1920",
+        "width": 1920,
+        "height": 1100
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/privacy\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/privacy\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/about",
+      "url": "https://www.ilovecoloringpage.com/about",
+      "status": 0,
+      "viewport": {
+        "label": "wide-1920",
+        "width": 1920,
+        "height": 1100
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/about\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/about\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "route": "/terms",
+      "url": "https://www.ilovecoloringpage.com/terms",
+      "status": 0,
+      "viewport": {
+        "label": "wide-1920",
+        "width": 1920,
+        "height": 1100
+      },
+      "metrics": null,
+      "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/terms\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/terms\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    }
+  ],
+  "interactionChecks": {
+    "search": {
+      "attempted": true,
+      "passed": false,
+      "details": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/coloring-pages/animals\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/coloring-pages/animals\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    "filter": {
+      "attempted": true,
+      "passed": false,
+      "details": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/coloring-pages/animals\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/coloring-pages/animals\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    "pagination": {
+      "attempted": true,
+      "passed": false,
+      "details": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/coloring-pages/animals\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/coloring-pages/animals\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    "moreMenu": {
+      "attempted": true,
+      "passed": false,
+      "details": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/coloring-pages/animals\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/coloring-pages/animals\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    "mobileNav": {
+      "attempted": true,
+      "passed": false,
+      "details": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/coloring-pages/animals\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/coloring-pages/animals\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/coloring-pages/animals\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/coloring-pages/animals\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  },
+  "summary": {
+    "webpGalleryPreviewsRender": false,
+    "noPreviewUnavailableVisible": true,
+    "noBrokenImageIcons": true,
+    "deferredRecordsHidden": false,
+    "homepageCountShows6352": false,
+    "coloringPagesCountShows6352": false,
+    "searchWorks": false,
+    "filterWorks": false,
+    "paginationWorks": false,
+    "moreMenuWorks": false,
+    "mobileNavWorks": false,
+    "noHorizontalOverflow": true,
+    "trustPagesRender": false,
+    "contactEmailAppears": true,
+    "svgUserDownloadAbsent": true
+  },
+  "galleryPreviewFailures": [
+    {
+      "route": "/",
+      "viewport": "mobile-390",
+      "loadedPreviewImageCount": 0,
+      "brokenPreviewImageCount": 0,
+      "previewUnavailableVisibleCount": 0,
+      "nonCustomAssetPreviewCount": 0
+    },
+    {
+      "route": "/",
+      "viewport": "tablet-768",
+      "loadedPreviewImageCount": 0,
+      "brokenPreviewImageCount": 0,
+      "previewUnavailableVisibleCount": 0,
+      "nonCustomAssetPreviewCount": 0
+    },
+    {
+      "route": "/",
+      "viewport": "desktop-1440",
+      "loadedPreviewImageCount": 0,
+      "brokenPreviewImageCount": 0,
+      "previewUnavailableVisibleCount": 0,
+      "nonCustomAssetPreviewCount": 0
+    },
+    {
+      "route": "/",
+      "viewport": "wide-1920",
+      "loadedPreviewImageCount": 0,
+      "brokenPreviewImageCount": 0,
+      "previewUnavailableVisibleCount": 0,
+      "nonCustomAssetPreviewCount": 0
+    }
+  ],
+  "horizontalOverflowPages": [],
+  "passed": false
+}
