@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-05-11T03:45:14.153Z",
+  "runId": "round-4r-ad-placeholder-visuals",
+  "summary": {
+    "stylingChanged": true,
+    "stylingChangedDetails": [
+      "Removed the coral accent mark from enabled placeholders.",
+      "Removed secondary helper copy so Advertisement is the only visible placeholder label.",
+      "Switched the placeholder shell to the approved paper-soft surface and muted text token.",
+      "Kept existing dimensions, margins, rail breakpoint, and safe gap rules."
+    ],
+    "stylingNotChanged": [
+      "slot placement",
+      "slot IDs",
+      "slot names",
+      "slot count",
+      "page coverage",
+      "env flag behavior"
+    ],
+    "slotIdsChanged": false,
+    "slotPlacementChanged": false,
+    "slotCountChanged": false,
+    "placeholdersHiddenByDefault": true,
+    "placeholdersVisibleWhenEnabled": true,
+    "labelRemainsAdvertisement": true,
+    "usesApprovedTokensOnly": true,
+    "noGradients": true,
+    "noShadows": true,
+    "noBordersOrOutlines": true,
+    "noNestedCards": true,
+    "noFakeAdCreative": true,
+    "liveAdCodeAdded": false,
+    "policyRiskIntroduced": false,
+    "appApiRouteReintroduced": false,
+    "externalAdRequestsAdded": false
+  },
+  "pagesInspectedInSource": [
+    "home",
+    "galleryLanding",
+    "hubPage"
+  ]
+}

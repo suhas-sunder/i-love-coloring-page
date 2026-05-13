@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-05-11T05:07:36.514Z",
+  "runId": "round-4t-ad-visibility-debug",
+  "summary": {
+    "leftRailVisibleAtWideDesktop": true,
+    "rightRailVisibleAtWideDesktop": true,
+    "visibleAt1920And2560": true,
+    "hiddenOnSmallerWidths": true,
+    "safeGapFromContent": true,
+    "noHorizontalScrollbarCausedByRails": true,
+    "noLiveAdCodeAdded": true
+  },
+  "slotIds": [
+    "rail-left-desktop",
+    "rail-right-desktop"
+  ]
+}

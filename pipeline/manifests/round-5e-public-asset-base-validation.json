@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-05-12T02:42:51.395Z",
+  "runId": "round-5e-public-asset-base-validation",
+  "sourceEnvVar": "NEXT_PUBLIC_COLORING_ASSET_BASE_URL",
+  "rawValueCaptured": false,
+  "summary": {
+    "publicBaseUrlConfigured": false,
+    "publicBaseUrlRedacted": "",
+    "publicVerificationReady": false,
+    "isHttpOrHttps": false,
+    "includesColoringPagesPrefix": false,
+    "isLocalhost": false,
+    "hasOldTestPrefix": false,
+    "hasDuplicateColoringPagesPrefix": false,
+    "privateR2Endpoint": false,
+    "isR2Dev": false,
+    "isCustomDomain": false,
+    "credentialsInUrl": false,
+    "noCredentialsAppearInUrl": true,
+    "baseType": "missing"
+  },
+  "blockers": [
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL is not configured for this shell. Public SVG/WebP verification was not run."
+  ],
+  "notes": []
+}

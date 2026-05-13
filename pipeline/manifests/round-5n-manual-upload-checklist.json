@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-05-13T03:28:11.261Z",
+  "runId": "round-5n-manual-upload-checklist",
+  "localFolderToUpload": "pipeline/r2-upload-clean/coloring-pages",
+  "uploadDestination": "bucket root",
+  "expectedObjectKeyPrefixes": [
+    "coloring-pages/svg/",
+    "coloring-pages/webp/"
+  ],
+  "warnings": [
+    "Do not upload the parent pipeline/r2-upload-clean folder.",
+    "Avoid duplicate prefix coloring-pages/coloring-pages.",
+    "Do not upload png/.",
+    "Do not upload thumbs/.",
+    "Do not upload deferred manual-review items.",
+    "Do not switch runtime app paths until public verification passes."
+  ],
+  "expectedCounts": {
+    "records": 6352,
+    "deferredRecords": 205,
+    "svgFiles": 6352,
+    "webpFiles": 6352,
+    "totalFiles": 12704,
+    "totalBytes": 2089425709
+  },
+  "contentTypes": {
+    "svg": "image/svg+xml",
+    "webp": "image/webp"
+  },
+  "cacheControl": "public, max-age=31536000, immutable",
+  "cors": "Allow GET/HEAD from https://www.ilovecoloringpage.com, http://localhost:3005, http://127.0.0.1:3005, or use an intentional wildcard for public static assets.",
+  "verificationCommandAfterUpload": "node pipeline/scripts/round-5k-verify-custom-domain-assets.mjs --public-base-url https://assets.ilovecoloringpage.com/coloring-pages",
+  "uploadPerformedByCodex": false
+}

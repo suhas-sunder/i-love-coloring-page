@@ -1,0 +1,29 @@
+# Live Production Rerun Acceptance Gate
+
+- Production site reachable: pass
+- Production deploy current: fail
+- Non-root routes 200: fail
+- Sitemap current: fail
+- Runtime asset switch active: fail
+- WebP rendering passed: fail
+- No preview unavailable for visible records: fail
+- SVG conversion passed: fail
+- PNG download passed: fail
+- JPG download passed: fail
+- WebP download passed: fail
+- Print passed: fail
+- Print no hang: fail
+- Deferred records hidden: fail
+- Sitemap and robots passed: fail
+- Metadata passed: fail
+- Ad layout passed: fail
+- No SVG download: pass
+- No app/api: pass
+- No horizontal overflow: fail
+- Sampled asset check passed: pass
+- Ready for image sitemap round: fail
+- Ready for OG image round: fail
+- Ready for JSON-LD round: fail
+- Ready for live ads round: fail
+- Blockers: production_deploy_current, non_root_routes_200, sitemap_current, production_runtime_asset_switch_active, gallery_webp_rendering_passed, no_preview_unavailable_for_visible_records, svg_conversion_passed, png_download_passed, jpg_download_passed, webp_download_passed, print_passed, print_no_hang, deferred_records_hidden, sitemap_robots_passed, metadata_passed, ad_layout_passed, no_horizontal_overflow
+- Result: fail

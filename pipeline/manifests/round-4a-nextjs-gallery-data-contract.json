@@ -1,0 +1,448 @@
+{
+  "generatedAt": "2026-05-10",
+  "runId": "round-4a-approved-asset-hub-taxonomy",
+  "noPerImageIndexPages": true,
+  "sourceDataForRound4B": {
+    "hubTaxonomy": "pipeline/manifests/round-4a-approved-hub-taxonomy.json",
+    "imageToHubMap": "pipeline/manifests/round-4a-image-to-hub-map.json",
+    "routePlan": "pipeline/manifests/round-4a-hub-route-plan.json",
+    "productionGalleryData": "pipeline/manifests/round-3c-production-gallery-data.json",
+    "productionAssets": "pipeline/manifests/round-3c-production-assets.json"
+  },
+  "warningMetadataPolicy": "internal_metadata_only",
+  "routeContract": {
+    "baseRoute": "/coloring-pages",
+    "hubRoutePattern": "/coloring-pages/[hubSlug]",
+    "deepNestingDefault": false,
+    "individualImageRouteIndexable": false
+  },
+  "hubRecordShape": {
+    "hubId": "stable string",
+    "slug": "stable lowercase route segment",
+    "route": "/coloring-pages/[hubSlug]",
+    "canonicalTitle": "string",
+    "h1": "string",
+    "metaTitleCandidate": "string",
+    "metaDescriptionCandidate": "string",
+    "introCopyCandidate": "string",
+    "assetIds": "string[]",
+    "featuredAssetIds": "string[]",
+    "sectionGroupings": "array",
+    "relatedHubIds": "string[]",
+    "parentHubId": "string|null",
+    "childHubIds": "string[]",
+    "breadcrumbPath": "array",
+    "internalLinkingTargets": "string[]",
+    "indexabilityRecommendation": "indexable|noindex|section_only",
+    "sitemapRecommendation": "include|exclude",
+    "noPerImageIndexableRoute": "true"
+  },
+  "galleryBehaviorRecommendation": {
+    "largeHubThreshold": 120,
+    "defaultInitialVisibleCards": 48,
+    "galleryPagination": "load_more_or_cursor_pagination",
+    "filters": [
+      "style",
+      "difficulty",
+      "subject",
+      "theme"
+    ],
+    "cardActions": [
+      "print",
+      "download"
+    ],
+    "emptyState": "Show a concise empty state and link back to related hubs. Do not create thin fallback pages."
+  },
+  "phase1Hubs": [
+    {
+      "hubId": "hub_coloring_pages",
+      "slug": "",
+      "route": "/coloring-pages",
+      "assetCount": 6557
+    },
+    {
+      "hubId": "hub_plushies",
+      "slug": "plushies",
+      "route": "/coloring-pages/plushies",
+      "assetCount": 1704
+    },
+    {
+      "hubId": "hub_mandalas",
+      "slug": "mandalas",
+      "route": "/coloring-pages/mandalas",
+      "assetCount": 1461
+    },
+    {
+      "hubId": "hub_fantasy",
+      "slug": "fantasy",
+      "route": "/coloring-pages/fantasy",
+      "assetCount": 1310
+    },
+    {
+      "hubId": "hub_chibi",
+      "slug": "chibi",
+      "route": "/coloring-pages/chibi",
+      "assetCount": 910
+    },
+    {
+      "hubId": "hub_anime_girls",
+      "slug": "anime-girls",
+      "route": "/coloring-pages/anime-girls",
+      "assetCount": 905
+    },
+    {
+      "hubId": "hub_holidays",
+      "slug": "holidays",
+      "route": "/coloring-pages/holidays",
+      "assetCount": 874
+    },
+    {
+      "hubId": "hub_christmas",
+      "slug": "christmas",
+      "route": "/coloring-pages/christmas",
+      "assetCount": 332
+    },
+    {
+      "hubId": "hub_halloween",
+      "slug": "halloween",
+      "route": "/coloring-pages/halloween",
+      "assetCount": 305
+    },
+    {
+      "hubId": "hub_mythology",
+      "slug": "mythology",
+      "route": "/coloring-pages/mythology",
+      "assetCount": 268
+    },
+    {
+      "hubId": "hub_birthday",
+      "slug": "birthday",
+      "route": "/coloring-pages/birthday",
+      "assetCount": 211
+    },
+    {
+      "hubId": "hub_medieval_fantasy",
+      "slug": "medieval-fantasy",
+      "route": "/coloring-pages/medieval-fantasy",
+      "assetCount": 194
+    },
+    {
+      "hubId": "hub_trains",
+      "slug": "trains",
+      "route": "/coloring-pages/trains",
+      "assetCount": 102
+    },
+    {
+      "hubId": "hub_animals",
+      "slug": "animals",
+      "route": "/coloring-pages/animals",
+      "assetCount": 1524
+    },
+    {
+      "hubId": "hub_plants",
+      "slug": "plants",
+      "route": "/coloring-pages/plants",
+      "assetCount": 658
+    },
+    {
+      "hubId": "hub_geometric",
+      "slug": "geometric",
+      "route": "/coloring-pages/geometric",
+      "assetCount": 1459
+    },
+    {
+      "hubId": "hub_vehicles",
+      "slug": "vehicles",
+      "route": "/coloring-pages/vehicles",
+      "assetCount": 373
+    },
+    {
+      "hubId": "hub_garden",
+      "slug": "garden",
+      "route": "/coloring-pages/garden",
+      "assetCount": 266
+    },
+    {
+      "hubId": "hub_food",
+      "slug": "food",
+      "route": "/coloring-pages/food",
+      "assetCount": 261
+    },
+    {
+      "hubId": "hub_indoor_plants",
+      "slug": "indoor-plants",
+      "route": "/coloring-pages/indoor-plants",
+      "assetCount": 129
+    },
+    {
+      "hubId": "hub_cars",
+      "slug": "cars",
+      "route": "/coloring-pages/cars",
+      "assetCount": 193
+    },
+    {
+      "hubId": "hub_birds",
+      "slug": "birds",
+      "route": "/coloring-pages/birds",
+      "assetCount": 190
+    },
+    {
+      "hubId": "hub_playing_cards",
+      "slug": "playing-cards",
+      "route": "/coloring-pages/playing-cards",
+      "assetCount": 86
+    },
+    {
+      "hubId": "hub_detailed_for_adults",
+      "slug": "detailed-for-adults",
+      "route": "/coloring-pages/detailed-for-adults",
+      "assetCount": 1461
+    },
+    {
+      "hubId": "hub_for_kids",
+      "slug": "for-kids",
+      "route": "/coloring-pages/for-kids",
+      "assetCount": 1338
+    },
+    {
+      "hubId": "hub_easy",
+      "slug": "easy",
+      "route": "/coloring-pages/easy",
+      "assetCount": 1302
+    },
+    {
+      "hubId": "hub_fantasy_creatures",
+      "slug": "fantasy-creatures",
+      "route": "/coloring-pages/fantasy-creatures",
+      "assetCount": 575
+    },
+    {
+      "hubId": "hub_cute",
+      "slug": "cute",
+      "route": "/coloring-pages/cute",
+      "assetCount": 375
+    },
+    {
+      "hubId": "hub_buildings",
+      "slug": "buildings",
+      "route": "/coloring-pages/buildings",
+      "assetCount": 156
+    },
+    {
+      "hubId": "hub_ocean",
+      "slug": "ocean",
+      "route": "/coloring-pages/ocean",
+      "assetCount": 154
+    },
+    {
+      "hubId": "hub_dogs",
+      "slug": "dogs",
+      "route": "/coloring-pages/dogs",
+      "assetCount": 284
+    },
+    {
+      "hubId": "hub_prehistoric_animals",
+      "slug": "prehistoric-animals",
+      "route": "/coloring-pages/prehistoric-animals",
+      "assetCount": 221
+    },
+    {
+      "hubId": "hub_garden_flowers",
+      "slug": "garden-flowers",
+      "route": "/coloring-pages/garden-flowers",
+      "assetCount": 166
+    },
+    {
+      "hubId": "hub_cats",
+      "slug": "cats",
+      "route": "/coloring-pages/cats",
+      "assetCount": 58
+    },
+    {
+      "hubId": "hub_turtles",
+      "slug": "turtles",
+      "route": "/coloring-pages/turtles",
+      "assetCount": 44
+    },
+    {
+      "hubId": "hub_whales",
+      "slug": "whales",
+      "route": "/coloring-pages/whales",
+      "assetCount": 40
+    },
+    {
+      "hubId": "hub_insects",
+      "slug": "insects",
+      "route": "/coloring-pages/insects",
+      "assetCount": 180
+    },
+    {
+      "hubId": "hub_reptiles",
+      "slug": "reptiles",
+      "route": "/coloring-pages/reptiles",
+      "assetCount": 156
+    },
+    {
+      "hubId": "hub_forest",
+      "slug": "forest",
+      "route": "/coloring-pages/forest",
+      "assetCount": 74
+    },
+    {
+      "hubId": "hub_plushie_animals",
+      "slug": "plushie-animals",
+      "route": "/coloring-pages/plushie-animals",
+      "assetCount": 105
+    },
+    {
+      "hubId": "hub_flowers",
+      "slug": "flowers",
+      "route": "/coloring-pages/flowers",
+      "assetCount": 417
+    },
+    {
+      "hubId": "hub_sea_life",
+      "slug": "sea-life",
+      "route": "/coloring-pages/sea-life",
+      "assetCount": 236
+    },
+    {
+      "hubId": "hub_dungeon",
+      "slug": "dungeon",
+      "route": "/coloring-pages/dungeon",
+      "assetCount": 99
+    },
+    {
+      "hubId": "hub_kawaii",
+      "slug": "kawaii",
+      "route": "/coloring-pages/kawaii",
+      "assetCount": 88
+    },
+    {
+      "hubId": "hub_plushie_dragons",
+      "slug": "plushie-dragons",
+      "route": "/coloring-pages/plushie-dragons",
+      "assetCount": 75
+    },
+    {
+      "hubId": "hub_dinosaurs",
+      "slug": "dinosaurs",
+      "route": "/coloring-pages/dinosaurs",
+      "assetCount": 190
+    },
+    {
+      "hubId": "hub_planes",
+      "slug": "planes",
+      "route": "/coloring-pages/planes",
+      "assetCount": 92
+    },
+    {
+      "hubId": "hub_fantasy_dragons",
+      "slug": "fantasy-dragons",
+      "route": "/coloring-pages/fantasy-dragons",
+      "assetCount": 67
+    },
+    {
+      "hubId": "hub_trees",
+      "slug": "trees",
+      "route": "/coloring-pages/trees",
+      "assetCount": 38
+    },
+    {
+      "hubId": "hub_unicorns",
+      "slug": "unicorns",
+      "route": "/coloring-pages/unicorns",
+      "assetCount": 38
+    },
+    {
+      "hubId": "hub_fairies",
+      "slug": "fairies",
+      "route": "/coloring-pages/fairies",
+      "assetCount": 37
+    },
+    {
+      "hubId": "hub_pegasus",
+      "slug": "pegasus",
+      "route": "/coloring-pages/pegasus",
+      "assetCount": 29
+    },
+    {
+      "hubId": "hub_spiders",
+      "slug": "spiders",
+      "route": "/coloring-pages/spiders",
+      "assetCount": 28
+    },
+    {
+      "hubId": "hub_butterflies",
+      "slug": "butterflies",
+      "route": "/coloring-pages/butterflies",
+      "assetCount": 26
+    },
+    {
+      "hubId": "hub_mermaids",
+      "slug": "mermaids",
+      "route": "/coloring-pages/mermaids",
+      "assetCount": 26
+    },
+    {
+      "hubId": "hub_bridges",
+      "slug": "bridges",
+      "route": "/coloring-pages/bridges",
+      "assetCount": 23
+    },
+    {
+      "hubId": "hub_triceratops",
+      "slug": "triceratops",
+      "route": "/coloring-pages/triceratops",
+      "assetCount": 22
+    },
+    {
+      "hubId": "hub_crabs",
+      "slug": "crabs",
+      "route": "/coloring-pages/crabs",
+      "assetCount": 21
+    },
+    {
+      "hubId": "hub_griffins",
+      "slug": "griffins",
+      "route": "/coloring-pages/griffins",
+      "assetCount": 21
+    },
+    {
+      "hubId": "hub_mammoths",
+      "slug": "mammoths",
+      "route": "/coloring-pages/mammoths",
+      "assetCount": 20
+    },
+    {
+      "hubId": "hub_octopus",
+      "slug": "octopus",
+      "route": "/coloring-pages/octopus",
+      "assetCount": 20
+    },
+    {
+      "hubId": "hub_world_landmarks",
+      "slug": "world-landmarks",
+      "route": "/coloring-pages/world-landmarks",
+      "assetCount": 47
+    },
+    {
+      "hubId": "hub_chibi_flowers",
+      "slug": "chibi-flowers",
+      "route": "/coloring-pages/chibi-flowers",
+      "assetCount": 152
+    },
+    {
+      "hubId": "hub_beetles",
+      "slug": "beetles",
+      "route": "/coloring-pages/beetles",
+      "assetCount": 25
+    },
+    {
+      "hubId": "hub_st_patricks_day",
+      "slug": "st-patricks-day",
+      "route": "/coloring-pages/st-patricks-day",
+      "assetCount": 20
+    }
+  ]
+}

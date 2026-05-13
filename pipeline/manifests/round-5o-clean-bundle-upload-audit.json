@@ -1,0 +1,31 @@
+{
+  "generatedAt": "2026-05-13T04:54:33.529Z",
+  "runId": "round-5o-clean-bundle-upload-audit",
+  "inputs": {
+    "objectKeyMap": "pipeline/manifests/round-5n-clean-upload-object-key-map.json",
+    "bundleResults": "pipeline/manifests/round-5n-clean-upload-bundle-results.json",
+    "bundleIntegrity": "pipeline/manifests/round-5n-clean-bundle-integrity.json",
+    "deferredManualReview": "pipeline/manifests/round-5n-deferred-manual-review-records.json"
+  },
+  "summary": {
+    "includedRecords": 6352,
+    "deferredRecords": 205,
+    "svgFiles": 6352,
+    "webpFiles": 6352,
+    "totalFiles": 12704,
+    "pngFiles": 0,
+    "thumbFiles": 0,
+    "manualReviewAssetIdsIncluded": 0,
+    "missingLocalFiles": 0,
+    "objectKeysStartWithExpectedPrefixes": true,
+    "duplicateObjectKeys": 0,
+    "uploadSource": "optimized",
+    "uploadSourceRoot": "pipeline/r2-upload-optimized/coloring-pages",
+    "expectedTotalBytes": 1495772065,
+    "actualTotalBytes": 1495772065,
+    "mediaFilesStagedInGit": false,
+    "noPngOrThumbs": true
+  },
+  "duplicateObjectKeys": [],
+  "missingLocalFiles": []
+}

@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-05-12T02:42:51.395Z",
+  "runId": "round-5e-final-upload-readiness",
+  "finalR2Folders": [
+    "svg",
+    "webp"
+  ],
+  "excludedFolders": [
+    "png",
+    "thumbs"
+  ],
+  "summary": {
+    "svgWebpTestPassed": false,
+    "svgWebpOnlyModelStillValid": true,
+    "pngThumbsCanStayExcluded": true,
+    "contentTypesCorrect": false,
+    "corsCorrect": false,
+    "cacheHeadersAcceptable": false,
+    "finalCustomDomainStillNeeded": true,
+    "fullUploadDeferred": true,
+    "readyForFullUpload": false,
+    "imageSitemapDeferred": true,
+    "openGraphImagesDeferred": true,
+    "liveAdsDeferred": true
+  },
+  "beforeFullUpload": [
+    "Upload only after the owner approves the public SVG plus WebP test results.",
+    "Configure SVG as image/svg+xml and WebP as image/webp.",
+    "Configure R2/custom-domain CORS for SVG conversion.",
+    "Use a final custom asset domain before image sitemap or Open Graph image work.",
+    "Do not include png/ or thumbs/ unless a later blocker explicitly reverses the SVG plus WebP plan."
+  ]
+}

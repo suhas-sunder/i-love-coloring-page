@@ -1,0 +1,61 @@
+{
+  "generatedAt": "2026-05-11T21:15:02.192Z",
+  "runId": "round-5a-public-cors-validation",
+  "officialSources": [
+    "https://developers.cloudflare.com/r2/buckets/cors/",
+    "https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/cors/"
+  ],
+  "requiredOrigins": [
+    "http://localhost:3005",
+    "http://127.0.0.1:3005"
+  ],
+  "requiredMethods": [
+    "GET",
+    "HEAD"
+  ],
+  "requiredHeaders": [
+    "Origin",
+    "Range"
+  ],
+  "exposeHeaders": [
+    "Content-Type",
+    "Content-Length",
+    "Cache-Control",
+    "ETag"
+  ],
+  "maxAgeSeconds": 3600,
+  "requiredContentTypes": [
+    "image/svg+xml",
+    "image/png"
+  ],
+  "examplePolicy": [
+    {
+      "AllowedOrigins": [
+        "http://localhost:3005",
+        "http://127.0.0.1:3005"
+      ],
+      "AllowedMethods": [
+        "GET",
+        "HEAD"
+      ],
+      "AllowedHeaders": [
+        "Origin",
+        "Range"
+      ],
+      "ExposeHeaders": [
+        "Content-Type",
+        "Content-Length",
+        "Cache-Control",
+        "ETag"
+      ],
+      "MaxAgeSeconds": 3600
+    }
+  ],
+  "notes": [
+    "Access-Control-Allow-Origin must be present on browser requests that include an Origin header.",
+    "No credentials are needed for public static image reads.",
+    "SVG remains internal action data and must not be exposed as a user download.",
+    "Full asset upload remains a final-stage production task.",
+    "A custom asset domain is preferred for production."
+  ]
+}

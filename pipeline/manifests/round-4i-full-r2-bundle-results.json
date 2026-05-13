@@ -1,0 +1,30 @@
+{
+  "generatedAt": "2026-05-10",
+  "runId": "round-4i-full-cloudflare-r2-upload-bundle",
+  "uploadBundleRoot": "pipeline/r2-upload/coloring-pages",
+  "uploadPrefix": "coloring-pages",
+  "summary": {
+    "imageRecordCount": 6557,
+    "createdMediaFileCount": 19671,
+    "linkedFileCount": 19671,
+    "copiedFileCount": 0,
+    "failedFileCount": 0,
+    "totalBundleBytesRepresented": 3148598669,
+    "totalSvgFiles": 6557,
+    "totalPngPreviewFiles": 6557,
+    "totalThumbnailFiles": 6557,
+    "materializationModeRequested": "hardlink",
+    "materializationModeObserved": "hardlink"
+  },
+  "failedFiles": [],
+  "safetyChecks": {
+    "sourceAssetImmutabilityConfirmed": true,
+    "sourceImagesUnchangedConfirmed": true,
+    "publicFolderExclusionConfirmed": true,
+    "oldPrefixExcluded": true,
+    "filenamePreservationConfirmed": true,
+    "sourceImagesIncluded": false,
+    "remoteUploadPerformed": false,
+    "credentialsRequired": false
+  }
+}

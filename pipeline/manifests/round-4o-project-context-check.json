@@ -1,0 +1,22 @@
+{
+  "generatedAt": "2026-05-11T01:37:53.268Z",
+  "runId": "round-4o-browser-downloads",
+  "summary": {
+    "correctRepository": true,
+    "branch": "version-4",
+    "head": "64a018dd98eb9e0c8d0d8fa577f54055190ac322",
+    "round4nCommitExists": true,
+    "appApiRoutePresent": false,
+    "staticExportConfigured": true,
+    "publicDownloadUiExposesSvg": false,
+    "currentPublicDownloadFormats": [
+      "PNG"
+    ],
+    "printActionPresent": true,
+    "r2BundleExists": true,
+    "publicGeneratedMediaPresent": false,
+    "sourceImagesUntouched": true,
+    "ilovesvgUntouched": true,
+    "wrongTaskContextDetected": false
+  }
+}

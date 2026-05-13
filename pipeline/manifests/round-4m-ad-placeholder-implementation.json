@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-05-10T21:29:16.624Z",
+  "runId": "round-4m-ads-nav-polish",
+  "summary": {
+    "componentsCreated": [
+      "src/components/ads/AdSlot.tsx",
+      "src/components/ads/AdRail.tsx"
+    ],
+    "configCreated": [
+      "src/lib/ads/config.ts",
+      "src/lib/ads/types.ts"
+    ],
+    "liveAdCodeAdded": false,
+    "hiddenByDefault": true,
+    "enabledByEnvFlag": "NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS=1",
+    "externalRequestsAdded": false,
+    "trackingAdded": false,
+    "printStylesHideAds": true
+  },
+  "placementRulesEnforced": [
+    "Ad placeholders return null unless the public placeholder flag is set.",
+    "ImageCard and GalleryGrid do not render ad placeholders.",
+    "Ad placeholders are labeled Advertisement.",
+    "Desktop rails are not sticky.",
+    "No live ad scripts or ad client values are included."
+  ]
+}

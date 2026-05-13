@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-05-13T20:55:39.028Z",
+  "runId": "netlify-branch-fix-merge-results",
+  "summary": {
+    "mergeState": "pending",
+    "currentBranch": "version-4",
+    "head": "be845ea",
+    "version4Commit": "be845ea",
+    "version1Commit": "ec994c1",
+    "usedNoFfMerge": false,
+    "rewroteHistory": false,
+    "forcePushRequired": false,
+    "conflicts": "none",
+    "statusShortBranch": "## version-4...origin/version-4\n M AGENTS.md\n M package.json\n?? pipeline/manifests/netlify-branch-fix-context-check.json\n?? pipeline/manifests/netlify-branch-fix-merge-results.json\n?? pipeline/manifests/netlify-branch-fix-netlify-config.json\n?? pipeline/manifests/netlify-branch-fix-version1-audit.json\n?? pipeline/manifests/netlify-branch-fix-version1-validation.json\n?? pipeline/manifests/netlify-branch-fix-version4-validation.json\n?? pipeline/reports/netlify-branch-fix-context-check.md\n?? pipeline/reports/netlify-branch-fix-merge-results.md\n?? pipeline/reports/netlify-branch-fix-netlify-config.md\n?? pipeline/reports/netlify-branch-fix-version1-audit.md\n?? pipeline/reports/netlify-branch-fix-version1-validation.md\n?? pipeline/reports/netlify-branch-fix-version4-validation.md\n?? pipeline/scripts/netlify-branch-fix-check.mjs\n?? pipeline/tests/netlify-production-branch-build.test.mjs",
+    "result": "pending"
+  }
+}

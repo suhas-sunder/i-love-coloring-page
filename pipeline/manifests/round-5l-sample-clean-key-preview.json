@@ -1,0 +1,110 @@
+{
+  "generatedAt": "2026-05-13T02:54:57.347Z",
+  "runId": "round-5l-sample-clean-key-preview",
+  "summary": {
+    "requestedSampleGroups": 10,
+    "sampleCount": 10
+  },
+  "samples": [
+    {
+      "group": "animals",
+      "assetId": "animals__animals-alligator__4feec8505a",
+      "currentFilename": "animals-alligator-4feec8505a.svg",
+      "proposedCleanFilename": "animals-alligator-4feec8505a.svg",
+      "reason": "safe existing public filename",
+      "confidence": "high",
+      "futureSvgObjectKey": "coloring-pages/svg/animals/animals-alligator-4feec8505a.svg",
+      "futureWebpObjectKey": "coloring-pages/webp/animals/animals-alligator-4feec8505a.webp"
+    },
+    {
+      "group": "anime-girls",
+      "assetId": "anime-girls__anime-girl-air-balloon__1f6b5be7bc",
+      "currentFilename": "anime-girl-air-balloon-1f6b5be7bc.svg",
+      "proposedCleanFilename": "anime-girl-air-balloon-1f6b5be7bc.svg",
+      "reason": "safe existing public filename",
+      "confidence": "high",
+      "futureSvgObjectKey": "coloring-pages/svg/anime-girls/anime-girl-air-balloon-1f6b5be7bc.svg",
+      "futureWebpObjectKey": "coloring-pages/webp/anime-girls/anime-girl-air-balloon-1f6b5be7bc.webp"
+    },
+    {
+      "group": "chibi",
+      "assetId": "chibi__chibi-african-dragon__ebdfccdd0d",
+      "currentFilename": "chibi-african-dragon-ebdfccdd0d.svg",
+      "proposedCleanFilename": "chibi-african-dragon-ebdfccdd0d.svg",
+      "reason": "safe existing public filename",
+      "confidence": "high",
+      "futureSvgObjectKey": "coloring-pages/svg/chibi/chibi-african-dragon-ebdfccdd0d.svg",
+      "futureWebpObjectKey": "coloring-pages/webp/chibi/chibi-african-dragon-ebdfccdd0d.webp"
+    },
+    {
+      "group": "fantasy",
+      "assetId": "fantasy__fantasy-abyss-wyrm__7a01eb3636",
+      "currentFilename": "fantasy-abyss-wyrm-7a01eb3636.svg",
+      "proposedCleanFilename": "fantasy-abyss-wyrm-7a01eb3636.svg",
+      "reason": "safe existing public filename",
+      "confidence": "high",
+      "futureSvgObjectKey": "coloring-pages/svg/fantasy/fantasy-abyss-wyrm-7a01eb3636.svg",
+      "futureWebpObjectKey": "coloring-pages/webp/fantasy/fantasy-abyss-wyrm-7a01eb3636.webp"
+    },
+    {
+      "group": "christmas",
+      "assetId": "christmas__christmas-holiday-advent-calendar__a1245c4617",
+      "currentFilename": "christmas-holiday-advent-calendar-a1245c4617.svg",
+      "proposedCleanFilename": "christmas-holiday-advent-calendar-a1245c4617.svg",
+      "reason": "safe existing public filename",
+      "confidence": "high",
+      "futureSvgObjectKey": "coloring-pages/svg/christmas/christmas-holiday-advent-calendar-a1245c4617.svg",
+      "futureWebpObjectKey": "coloring-pages/webp/christmas/christmas-holiday-advent-calendar-a1245c4617.webp"
+    },
+    {
+      "group": "halloween",
+      "assetId": "holiday__holiday-halloween-bat-colony-flying-in-night-sky-coloring-page__b88ffd2d89",
+      "currentFilename": "holiday-halloween-bat-colony-flying-in-night-sky-coloring-page-b88ffd2d89.svg",
+      "proposedCleanFilename": "holiday-halloween-bat-colony-flying-in-night-sky-b88ffd2d89.svg",
+      "reason": "cleaned from existing metadata after filename cleanup",
+      "confidence": "high",
+      "futureSvgObjectKey": "coloring-pages/svg/holiday/holiday-halloween-bat-colony-flying-in-night-sky-b88ffd2d89.svg",
+      "futureWebpObjectKey": "coloring-pages/webp/holiday/holiday-halloween-bat-colony-flying-in-night-sky-b88ffd2d89.webp"
+    },
+    {
+      "group": "geometric-mandalas",
+      "assetId": "mandala__mandala-geometry-patterns-animal-mandala-fox__3e8e80a2fd",
+      "currentFilename": "mandala-geometry-patterns-animal-mandala-fox-3e8e80a2fd.svg",
+      "proposedCleanFilename": "mandala-geometry-patterns-animal-mandala-fox-3e8e80a2fd.svg",
+      "reason": "safe existing public filename",
+      "confidence": "high",
+      "futureSvgObjectKey": "coloring-pages/svg/mandala/mandala-geometry-patterns-animal-mandala-fox-3e8e80a2fd.svg",
+      "futureWebpObjectKey": "coloring-pages/webp/mandala/mandala-geometry-patterns-animal-mandala-fox-3e8e80a2fd.webp"
+    },
+    {
+      "group": "plushies",
+      "assetId": "plushie__plushie-alligator__7a469a9dce",
+      "currentFilename": "plushie-alligator-7a469a9dce.svg",
+      "proposedCleanFilename": "plushie-alligator-7a469a9dce.svg",
+      "reason": "safe existing public filename",
+      "confidence": "high",
+      "futureSvgObjectKey": "coloring-pages/svg/plushie/plushie-alligator-7a469a9dce.svg",
+      "futureWebpObjectKey": "coloring-pages/webp/plushie/plushie-alligator-7a469a9dce.webp"
+    },
+    {
+      "group": "cars-vehicles",
+      "assetId": "anime-girls__anime-girl-driving-race-car__df63803a40",
+      "currentFilename": "anime-girl-driving-race-car-df63803a40.svg",
+      "proposedCleanFilename": "anime-girl-driving-race-car-df63803a40.svg",
+      "reason": "safe existing public filename",
+      "confidence": "high",
+      "futureSvgObjectKey": "coloring-pages/svg/anime-girls/anime-girl-driving-race-car-df63803a40.svg",
+      "futureWebpObjectKey": "coloring-pages/webp/anime-girls/anime-girl-driving-race-car-df63803a40.webp"
+    },
+    {
+      "group": "plants-indoor-plants",
+      "assetId": "indoor-plants__idoor-plants-clivia-miniata__5e5f40bdaa",
+      "currentFilename": "idoor-plants-clivia-miniata-5e5f40bdaa.svg",
+      "proposedCleanFilename": "indoor-plants-clivia-miniata-5e5f40bdaa.svg",
+      "reason": "manual review required for spelling_issue, category_mismatch, manual_review_required",
+      "confidence": "manual_review",
+      "futureSvgObjectKey": "coloring-pages/svg/indoor-plants/indoor-plants-clivia-miniata-5e5f40bdaa.svg",
+      "futureWebpObjectKey": "coloring-pages/webp/indoor-plants/indoor-plants-clivia-miniata-5e5f40bdaa.webp"
+    }
+  ]
+}

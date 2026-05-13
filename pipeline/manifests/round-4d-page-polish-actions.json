@@ -1,0 +1,89 @@
+{
+  "runId": "round-4d-public-gallery-visual-polish",
+  "createdAt": "2026-05-10T04:38:15.431Z",
+  "scope": {
+    "changedTaxonomy": false,
+    "promotedPhase2Hubs": false,
+    "createdPerImagePages": false,
+    "movedAssetsIntoPublic": false,
+    "changedProductionExportPipeline": false,
+    "changedSourceImages": false,
+    "changedIlovesvg": false
+  },
+  "actions": [
+    {
+      "id": "r4d-action-001",
+      "area": "public shell",
+      "files": ["app/layout.tsx", "src/styles/layout.css", "src/styles/components.css"],
+      "changes": [
+        "Reduced header height and page top padding.",
+        "Kept mobile header in one row with a shorter mobile nav label.",
+        "Preserved focus-visible styles and Indigo Paper tokens."
+      ]
+    },
+    {
+      "id": "r4d-action-002",
+      "area": "homepage",
+      "files": ["app/page.tsx"],
+      "changes": [
+        "Expanded the homepage from a placeholder-feeling intro into a concise public library entry point.",
+        "Added a printing-first section that mentions the future online coloring workspace without implementing or overpromising it.",
+        "Reworked CTA and section copy to sound more direct and human."
+      ]
+    },
+    {
+      "id": "r4d-action-003",
+      "area": "gallery landing",
+      "files": ["app/coloring-pages/page.tsx"],
+      "changes": [
+        "Limited the preview gallery from 48 items to 12 items.",
+        "Tightened browsing hierarchy across popular, seasonal, subject, style, and preview sections.",
+        "Documented the generated route substitutions for adult detailed pages and kids pages."
+      ]
+    },
+    {
+      "id": "r4d-action-004",
+      "area": "hub pages",
+      "files": ["app/coloring-pages/[hubSlug]/page.tsx", "src/components/coloring/HubHero.tsx"],
+      "changes": [
+        "Removed parent-only navigation blocks that created sparse gaps.",
+        "Kept child hub navigation only when it adds useful browsing depth.",
+        "Improved hub intro wording for standard, kids, and detailed adult collections.",
+        "Deduped section term lists before rendering them."
+      ]
+    },
+    {
+      "id": "r4d-action-005",
+      "area": "media cards and controls",
+      "files": [
+        "src/components/coloring/AssetImage.tsx",
+        "src/components/coloring/GalleryGrid.tsx",
+        "src/components/coloring/ImageCard.tsx",
+        "src/components/coloring/FilterChips.tsx"
+      ],
+      "changes": [
+        "Moved asset URL resolution into server-rendered callers while keeping the resolver centralized.",
+        "Used media fallback content so unavailable assets display clean placeholders.",
+        "Kept Download PNG, Download SVG, and Print support without exposing local filesystem paths.",
+        "Shortened visible card action labels to PNG, SVG, and Print while preserving download aria labels.",
+        "Reduced and deduped filter chips."
+      ]
+    },
+    {
+      "id": "r4d-action-006",
+      "area": "governance and tests",
+      "files": ["AGENTS.md", "pipeline/tests/round-4d-visual-polish.test.mjs", "package.json"],
+      "changes": [
+        "Added durable browser visual QA rules.",
+        "Added deterministic Round 4D visual/design guardrail tests.",
+        "Included the Round 4D test in npm test."
+      ]
+    }
+  ],
+  "browserEvidence": {
+    "realAssetScreenshots": "pipeline/review/round-4d/screenshots/",
+    "placeholderScreenshot": "pipeline/review/round-4d/screenshots/placeholder/mobile-coloring-pages-placeholder.png",
+    "browserMetrics": "pipeline/review/round-4d/browser-qa-results.json",
+    "committedScreenshots": false
+  }
+}

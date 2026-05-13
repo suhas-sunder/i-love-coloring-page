@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-05-11T19:59:38.623Z",
+  "runId": "round-4y-adsense-readiness-review",
+  "trust_pages_present": true,
+  "about_page_exists": true,
+  "contact_page_exists": true,
+  "real_contact_method_configured": false,
+  "privacy_page_exists": true,
+  "terms_page_exists": true,
+  "affiliate_disclosure_exists": true,
+  "editorial_policy_exists": true,
+  "trust_pages_linked_in_footer": true,
+  "sitemap_includes_trust_pages": true,
+  "unique_hub_content_exists": true,
+  "ad_wells_visible_but_no_live_ads": true,
+  "ad_density_accepted": true,
+  "live_ad_code_absent": true,
+  "no_low_value_obvious_blocker_from_missing_trust_pages": true,
+  "public_site_domain_configured": false,
+  "public_asset_domain_configured": false,
+  "policy_drafts_need_owner_legal_review": true,
+  "adsense_ready_to_apply": false,
+  "inherited_round4x_blockers": [
+    "Owner must provide a real contact path before launch and AdSense review.",
+    "Owner/legal review is required before policy pages are treated as final.",
+    "Public asset-domain verification is still separate from this round."
+  ],
+  "blockers": [
+    "Final public NEXT_PUBLIC_SITE_URL is not configured.",
+    "Final public NEXT_PUBLIC_COLORING_ASSET_BASE_URL is not configured or not production-ready.",
+    "Public NEXT_PUBLIC_CONTACT_EMAIL is not configured.",
+    "Policy pages remain drafts and need owner/legal review."
+  ]
+}

@@ -1,0 +1,1114 @@
+{
+  "generatedAt": "2026-05-13T03:11:55.234Z",
+  "runId": "round-5m-manual-review-groups",
+  "summary": {
+    "totalManualReviewRecords": 205,
+    "groupCount": 12,
+    "groupsWithItems": 10
+  },
+  "groups": {
+    "category_mismatch": {
+      "count": 204,
+      "examples": [
+        {
+          "assetId": "animals-playing-cards__animals-armadillo__1a6eaccdef",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-armadillo-1a6eaccdef.svg",
+          "displayTitle": "Animals Armadillo",
+          "proposedCleanStem": "animals-armadillo-1a6eaccdef",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-armadillo-1a6eaccdef.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-armadillo-1a6eaccdef.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-armadillos__50db4716e5",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-armadillos-50db4716e5.svg",
+          "displayTitle": "Animals Armadillos",
+          "proposedCleanStem": "animals-armadillos-50db4716e5",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-armadillos-50db4716e5.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-armadillos-50db4716e5.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-armadillos-wildlife__f2912c1ad5",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-armadillos-wildlife-f2912c1ad5.svg",
+          "displayTitle": "Animals Armadillos Wildlife",
+          "proposedCleanStem": "animals-armadillos-wildlife-f2912c1ad5",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-armadillos-wildlife-f2912c1ad5.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-armadillos-wildlife-f2912c1ad5.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-baboon__3019f9ef3d",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-baboon-3019f9ef3d.svg",
+          "displayTitle": "Animals Baboon",
+          "proposedCleanStem": "animals-baboon-3019f9ef3d",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-baboon-3019f9ef3d.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-baboon-3019f9ef3d.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-baboons__5f19666c69",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-baboons-5f19666c69.svg",
+          "displayTitle": "Animals Baboons",
+          "proposedCleanStem": "animals-baboons-5f19666c69",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-baboons-5f19666c69.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-baboons-5f19666c69.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-baboons-hanging__398854ec28",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-baboons-hanging-398854ec28.svg",
+          "displayTitle": "Animals Baboons Hanging",
+          "proposedCleanStem": "animals-baboons-hanging-398854ec28",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-baboons-hanging-398854ec28.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-baboons-hanging-398854ec28.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-badger__46333741c3",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-badger-46333741c3.svg",
+          "displayTitle": "Animals Badger",
+          "proposedCleanStem": "animals-badger-46333741c3",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-badger-46333741c3.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-badger-46333741c3.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-badgers__701e4f01fa",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-badgers-701e4f01fa.svg",
+          "displayTitle": "Animals Badgers",
+          "proposedCleanStem": "animals-badgers-701e4f01fa",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-badgers-701e4f01fa.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-badgers-701e4f01fa.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-badgers-wildlife__d717f79524",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-badgers-wildlife-d717f79524.svg",
+          "displayTitle": "Animals Badgers Wildlife",
+          "proposedCleanStem": "animals-badgers-wildlife-d717f79524",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-badgers-wildlife-d717f79524.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-badgers-wildlife-d717f79524.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-bats__662bf20796",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-bats-662bf20796.svg",
+          "displayTitle": "Animals Bats",
+          "proposedCleanStem": "animals-bats-662bf20796",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-bats-662bf20796.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-bats-662bf20796.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-bats-wildlife__1da9adbd04",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-bats-wildlife-1da9adbd04.svg",
+          "displayTitle": "Animals Bats Wildlife",
+          "proposedCleanStem": "animals-bats-wildlife-1da9adbd04",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-bats-wildlife-1da9adbd04.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-bats-wildlife-1da9adbd04.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-bears__eec9e5fdad",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-bears-eec9e5fdad.svg",
+          "displayTitle": "Animals Bears",
+          "proposedCleanStem": "animals-bears-eec9e5fdad",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-bears-eec9e5fdad.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-bears-eec9e5fdad.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        }
+      ],
+      "likelyFixType": "Confirm the category folder and public object key should stay as proposed, or revise/exclude.",
+      "ownerReviewRequired": true,
+      "conservativeAutoApprovalPossible": false,
+      "excludeFromFullUploadUntilReviewed": true
+    },
+    "spelling_issue": {
+      "count": 1,
+      "examples": [
+        {
+          "assetId": "indoor-plants__idoor-plants-clivia-miniata__5e5f40bdaa",
+          "category": "indoor-plants",
+          "currentFilename": "idoor-plants-clivia-miniata-5e5f40bdaa.svg",
+          "displayTitle": "Idoor Plants Clivia Miniata",
+          "proposedCleanStem": "indoor-plants-clivia-miniata-5e5f40bdaa",
+          "proposedSvgObjectKey": "coloring-pages/svg/indoor-plants/indoor-plants-clivia-miniata-5e5f40bdaa.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/indoor-plants/indoor-plants-clivia-miniata-5e5f40bdaa.webp",
+          "reasonCodes": [
+            "spelling_issue",
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages",
+            "/coloring-pages/indoor-plants",
+            "/coloring-pages/plants"
+          ]
+        }
+      ],
+      "likelyFixType": "Confirm the corrected spelling does not change the subject.",
+      "ownerReviewRequired": true,
+      "conservativeAutoApprovalPossible": false,
+      "excludeFromFullUploadUntilReviewed": false
+    },
+    "ai_export_name": {
+      "count": 3,
+      "examples": [
+        {
+          "assetId": "mandala-geometry-patterns__chatgpt-image-oct-14-2025-11-38-05-pm__ea62e476c5",
+          "category": "mandala-geometry-patterns",
+          "currentFilename": "chatgpt-image-oct-14-2025-11-38-05-pm-ea62e476c5.svg",
+          "displayTitle": "ChatGPT Image Oct 14, 2025, 11 38 05 PM",
+          "proposedCleanStem": "geometric-mandala-pattern-ea62e476c5",
+          "proposedSvgObjectKey": "coloring-pages/svg/mandala-geometry-patterns/geometric-mandala-pattern-ea62e476c5.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/mandala-geometry-patterns/geometric-mandala-pattern-ea62e476c5.webp",
+          "reasonCodes": [
+            "ai_export_name",
+            "generic_name",
+            "timestamp_name",
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages",
+            "/coloring-pages/detailed-for-adults",
+            "/coloring-pages/geometric",
+            "/coloring-pages/mandalas"
+          ]
+        },
+        {
+          "assetId": "mandala-geometry-patterns__failed-chatgpt-image-oct-19-2025-10-27-27-pm__a0411d2e82",
+          "category": "mandala-geometry-patterns",
+          "currentFilename": "failed-chatgpt-image-oct-19-2025-10-27-27-pm-a0411d2e82.svg",
+          "displayTitle": "Failed ChatGPT Image Oct 19, 2025, 10 27 27 PM",
+          "proposedCleanStem": "geometric-mandala-pattern-a0411d2e82",
+          "proposedSvgObjectKey": "coloring-pages/svg/mandala-geometry-patterns/geometric-mandala-pattern-a0411d2e82.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/mandala-geometry-patterns/geometric-mandala-pattern-a0411d2e82.webp",
+          "reasonCodes": [
+            "ai_export_name",
+            "failed_name",
+            "generic_name",
+            "timestamp_name",
+            "duplicate_tokens",
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages",
+            "/coloring-pages/detailed-for-adults",
+            "/coloring-pages/geometric",
+            "/coloring-pages/mandalas"
+          ]
+        },
+        {
+          "assetId": "space__chatgpt-image-may-1-2025-12-50-41-am__3e13c05f13",
+          "category": "space",
+          "currentFilename": "chatgpt-image-may-1-2025-12-50-41-am-3e13c05f13.svg",
+          "displayTitle": "ChatGPT Image May 1, 2025, 12 50 41 AM",
+          "proposedCleanStem": "space-3e13c05f13",
+          "proposedSvgObjectKey": "coloring-pages/svg/space/space-3e13c05f13.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/space/space-3e13c05f13.webp",
+          "reasonCodes": [
+            "ai_export_name",
+            "generic_name",
+            "timestamp_name",
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages"
+          ]
+        }
+      ],
+      "likelyFixType": "Confirm the inferred subject because the original name exposes AI/export wording.",
+      "ownerReviewRequired": true,
+      "conservativeAutoApprovalPossible": false,
+      "excludeFromFullUploadUntilReviewed": true
+    },
+    "failed_name": {
+      "count": 2,
+      "examples": [
+        {
+          "assetId": "mandala-geometry-patterns__failed-chatgpt-image-oct-19-2025-10-27-27-pm__a0411d2e82",
+          "category": "mandala-geometry-patterns",
+          "currentFilename": "failed-chatgpt-image-oct-19-2025-10-27-27-pm-a0411d2e82.svg",
+          "displayTitle": "Failed ChatGPT Image Oct 19, 2025, 10 27 27 PM",
+          "proposedCleanStem": "geometric-mandala-pattern-a0411d2e82",
+          "proposedSvgObjectKey": "coloring-pages/svg/mandala-geometry-patterns/geometric-mandala-pattern-a0411d2e82.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/mandala-geometry-patterns/geometric-mandala-pattern-a0411d2e82.webp",
+          "reasonCodes": [
+            "ai_export_name",
+            "failed_name",
+            "generic_name",
+            "timestamp_name",
+            "duplicate_tokens",
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages",
+            "/coloring-pages/detailed-for-adults",
+            "/coloring-pages/geometric",
+            "/coloring-pages/mandalas"
+          ]
+        },
+        {
+          "assetId": "mythology__failed-mythology-janus__6016a175dd",
+          "category": "mythology",
+          "currentFilename": "failed-mythology-janus-6016a175dd.svg",
+          "displayTitle": "Failed Mythology Janus",
+          "proposedCleanStem": "mythology-janus-6016a175dd",
+          "proposedSvgObjectKey": "coloring-pages/svg/mythology/mythology-janus-6016a175dd.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/mythology/mythology-janus-6016a175dd.webp",
+          "reasonCodes": [
+            "failed_name",
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages",
+            "/coloring-pages/fantasy",
+            "/coloring-pages/mythology"
+          ]
+        }
+      ],
+      "likelyFixType": "Confirm the asset should be published at all because the original name used failed/failure wording.",
+      "ownerReviewRequired": true,
+      "conservativeAutoApprovalPossible": false,
+      "excludeFromFullUploadUntilReviewed": true
+    },
+    "timestamp_name": {
+      "count": 3,
+      "examples": [
+        {
+          "assetId": "mandala-geometry-patterns__chatgpt-image-oct-14-2025-11-38-05-pm__ea62e476c5",
+          "category": "mandala-geometry-patterns",
+          "currentFilename": "chatgpt-image-oct-14-2025-11-38-05-pm-ea62e476c5.svg",
+          "displayTitle": "ChatGPT Image Oct 14, 2025, 11 38 05 PM",
+          "proposedCleanStem": "geometric-mandala-pattern-ea62e476c5",
+          "proposedSvgObjectKey": "coloring-pages/svg/mandala-geometry-patterns/geometric-mandala-pattern-ea62e476c5.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/mandala-geometry-patterns/geometric-mandala-pattern-ea62e476c5.webp",
+          "reasonCodes": [
+            "ai_export_name",
+            "generic_name",
+            "timestamp_name",
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages",
+            "/coloring-pages/detailed-for-adults",
+            "/coloring-pages/geometric",
+            "/coloring-pages/mandalas"
+          ]
+        },
+        {
+          "assetId": "mandala-geometry-patterns__failed-chatgpt-image-oct-19-2025-10-27-27-pm__a0411d2e82",
+          "category": "mandala-geometry-patterns",
+          "currentFilename": "failed-chatgpt-image-oct-19-2025-10-27-27-pm-a0411d2e82.svg",
+          "displayTitle": "Failed ChatGPT Image Oct 19, 2025, 10 27 27 PM",
+          "proposedCleanStem": "geometric-mandala-pattern-a0411d2e82",
+          "proposedSvgObjectKey": "coloring-pages/svg/mandala-geometry-patterns/geometric-mandala-pattern-a0411d2e82.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/mandala-geometry-patterns/geometric-mandala-pattern-a0411d2e82.webp",
+          "reasonCodes": [
+            "ai_export_name",
+            "failed_name",
+            "generic_name",
+            "timestamp_name",
+            "duplicate_tokens",
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages",
+            "/coloring-pages/detailed-for-adults",
+            "/coloring-pages/geometric",
+            "/coloring-pages/mandalas"
+          ]
+        },
+        {
+          "assetId": "space__chatgpt-image-may-1-2025-12-50-41-am__3e13c05f13",
+          "category": "space",
+          "currentFilename": "chatgpt-image-may-1-2025-12-50-41-am-3e13c05f13.svg",
+          "displayTitle": "ChatGPT Image May 1, 2025, 12 50 41 AM",
+          "proposedCleanStem": "space-3e13c05f13",
+          "proposedSvgObjectKey": "coloring-pages/svg/space/space-3e13c05f13.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/space/space-3e13c05f13.webp",
+          "reasonCodes": [
+            "ai_export_name",
+            "generic_name",
+            "timestamp_name",
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages"
+          ]
+        }
+      ],
+      "likelyFixType": "Replace timestamp-driven naming with a real subject name.",
+      "ownerReviewRequired": true,
+      "conservativeAutoApprovalPossible": false,
+      "excludeFromFullUploadUntilReviewed": true
+    },
+    "generic_name": {
+      "count": 3,
+      "examples": [
+        {
+          "assetId": "mandala-geometry-patterns__chatgpt-image-oct-14-2025-11-38-05-pm__ea62e476c5",
+          "category": "mandala-geometry-patterns",
+          "currentFilename": "chatgpt-image-oct-14-2025-11-38-05-pm-ea62e476c5.svg",
+          "displayTitle": "ChatGPT Image Oct 14, 2025, 11 38 05 PM",
+          "proposedCleanStem": "geometric-mandala-pattern-ea62e476c5",
+          "proposedSvgObjectKey": "coloring-pages/svg/mandala-geometry-patterns/geometric-mandala-pattern-ea62e476c5.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/mandala-geometry-patterns/geometric-mandala-pattern-ea62e476c5.webp",
+          "reasonCodes": [
+            "ai_export_name",
+            "generic_name",
+            "timestamp_name",
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages",
+            "/coloring-pages/detailed-for-adults",
+            "/coloring-pages/geometric",
+            "/coloring-pages/mandalas"
+          ]
+        },
+        {
+          "assetId": "mandala-geometry-patterns__failed-chatgpt-image-oct-19-2025-10-27-27-pm__a0411d2e82",
+          "category": "mandala-geometry-patterns",
+          "currentFilename": "failed-chatgpt-image-oct-19-2025-10-27-27-pm-a0411d2e82.svg",
+          "displayTitle": "Failed ChatGPT Image Oct 19, 2025, 10 27 27 PM",
+          "proposedCleanStem": "geometric-mandala-pattern-a0411d2e82",
+          "proposedSvgObjectKey": "coloring-pages/svg/mandala-geometry-patterns/geometric-mandala-pattern-a0411d2e82.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/mandala-geometry-patterns/geometric-mandala-pattern-a0411d2e82.webp",
+          "reasonCodes": [
+            "ai_export_name",
+            "failed_name",
+            "generic_name",
+            "timestamp_name",
+            "duplicate_tokens",
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages",
+            "/coloring-pages/detailed-for-adults",
+            "/coloring-pages/geometric",
+            "/coloring-pages/mandalas"
+          ]
+        },
+        {
+          "assetId": "space__chatgpt-image-may-1-2025-12-50-41-am__3e13c05f13",
+          "category": "space",
+          "currentFilename": "chatgpt-image-may-1-2025-12-50-41-am-3e13c05f13.svg",
+          "displayTitle": "ChatGPT Image May 1, 2025, 12 50 41 AM",
+          "proposedCleanStem": "space-3e13c05f13",
+          "proposedSvgObjectKey": "coloring-pages/svg/space/space-3e13c05f13.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/space/space-3e13c05f13.webp",
+          "reasonCodes": [
+            "ai_export_name",
+            "generic_name",
+            "timestamp_name",
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages"
+          ]
+        }
+      ],
+      "likelyFixType": "Confirm or improve the subject-specific clean key.",
+      "ownerReviewRequired": true,
+      "conservativeAutoApprovalPossible": false,
+      "excludeFromFullUploadUntilReviewed": true
+    },
+    "duplicate_tokens": {
+      "count": 1,
+      "examples": [
+        {
+          "assetId": "mandala-geometry-patterns__failed-chatgpt-image-oct-19-2025-10-27-27-pm__a0411d2e82",
+          "category": "mandala-geometry-patterns",
+          "currentFilename": "failed-chatgpt-image-oct-19-2025-10-27-27-pm-a0411d2e82.svg",
+          "displayTitle": "Failed ChatGPT Image Oct 19, 2025, 10 27 27 PM",
+          "proposedCleanStem": "geometric-mandala-pattern-a0411d2e82",
+          "proposedSvgObjectKey": "coloring-pages/svg/mandala-geometry-patterns/geometric-mandala-pattern-a0411d2e82.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/mandala-geometry-patterns/geometric-mandala-pattern-a0411d2e82.webp",
+          "reasonCodes": [
+            "ai_export_name",
+            "failed_name",
+            "generic_name",
+            "timestamp_name",
+            "duplicate_tokens",
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages",
+            "/coloring-pages/detailed-for-adults",
+            "/coloring-pages/geometric",
+            "/coloring-pages/mandalas"
+          ]
+        }
+      ],
+      "likelyFixType": "Approve duplicate-token cleanup only when the subject remains clear.",
+      "ownerReviewRequired": true,
+      "conservativeAutoApprovalPossible": false,
+      "excludeFromFullUploadUntilReviewed": false
+    },
+    "vague_subject": {
+      "count": 1,
+      "examples": [
+        {
+          "assetId": "birds__birds__0e59b2890e",
+          "category": "birds",
+          "currentFilename": "birds-0e59b2890e.svg",
+          "displayTitle": "Birds",
+          "proposedCleanStem": "birds-0e59b2890e",
+          "proposedSvgObjectKey": "coloring-pages/svg/birds/birds-0e59b2890e.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/birds/birds-0e59b2890e.webp",
+          "reasonCodes": [
+            "vague_subject",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages/birds",
+            "/coloring-pages"
+          ]
+        }
+      ],
+      "likelyFixType": "Owner must identify or approve the conservative subject.",
+      "ownerReviewRequired": true,
+      "conservativeAutoApprovalPossible": false,
+      "excludeFromFullUploadUntilReviewed": true
+    },
+    "low_confidence_subject": {
+      "count": 205,
+      "examples": [
+        {
+          "assetId": "animals-playing-cards__animals-armadillo__1a6eaccdef",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-armadillo-1a6eaccdef.svg",
+          "displayTitle": "Animals Armadillo",
+          "proposedCleanStem": "animals-armadillo-1a6eaccdef",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-armadillo-1a6eaccdef.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-armadillo-1a6eaccdef.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-armadillos__50db4716e5",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-armadillos-50db4716e5.svg",
+          "displayTitle": "Animals Armadillos",
+          "proposedCleanStem": "animals-armadillos-50db4716e5",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-armadillos-50db4716e5.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-armadillos-50db4716e5.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-armadillos-wildlife__f2912c1ad5",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-armadillos-wildlife-f2912c1ad5.svg",
+          "displayTitle": "Animals Armadillos Wildlife",
+          "proposedCleanStem": "animals-armadillos-wildlife-f2912c1ad5",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-armadillos-wildlife-f2912c1ad5.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-armadillos-wildlife-f2912c1ad5.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-baboon__3019f9ef3d",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-baboon-3019f9ef3d.svg",
+          "displayTitle": "Animals Baboon",
+          "proposedCleanStem": "animals-baboon-3019f9ef3d",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-baboon-3019f9ef3d.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-baboon-3019f9ef3d.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-baboons__5f19666c69",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-baboons-5f19666c69.svg",
+          "displayTitle": "Animals Baboons",
+          "proposedCleanStem": "animals-baboons-5f19666c69",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-baboons-5f19666c69.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-baboons-5f19666c69.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-baboons-hanging__398854ec28",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-baboons-hanging-398854ec28.svg",
+          "displayTitle": "Animals Baboons Hanging",
+          "proposedCleanStem": "animals-baboons-hanging-398854ec28",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-baboons-hanging-398854ec28.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-baboons-hanging-398854ec28.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-badger__46333741c3",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-badger-46333741c3.svg",
+          "displayTitle": "Animals Badger",
+          "proposedCleanStem": "animals-badger-46333741c3",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-badger-46333741c3.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-badger-46333741c3.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-badgers__701e4f01fa",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-badgers-701e4f01fa.svg",
+          "displayTitle": "Animals Badgers",
+          "proposedCleanStem": "animals-badgers-701e4f01fa",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-badgers-701e4f01fa.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-badgers-701e4f01fa.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-badgers-wildlife__d717f79524",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-badgers-wildlife-d717f79524.svg",
+          "displayTitle": "Animals Badgers Wildlife",
+          "proposedCleanStem": "animals-badgers-wildlife-d717f79524",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-badgers-wildlife-d717f79524.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-badgers-wildlife-d717f79524.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-bats__662bf20796",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-bats-662bf20796.svg",
+          "displayTitle": "Animals Bats",
+          "proposedCleanStem": "animals-bats-662bf20796",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-bats-662bf20796.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-bats-662bf20796.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-bats-wildlife__1da9adbd04",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-bats-wildlife-1da9adbd04.svg",
+          "displayTitle": "Animals Bats Wildlife",
+          "proposedCleanStem": "animals-bats-wildlife-1da9adbd04",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-bats-wildlife-1da9adbd04.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-bats-wildlife-1da9adbd04.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-bears__eec9e5fdad",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-bears-eec9e5fdad.svg",
+          "displayTitle": "Animals Bears",
+          "proposedCleanStem": "animals-bears-eec9e5fdad",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-bears-eec9e5fdad.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-bears-eec9e5fdad.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        }
+      ],
+      "likelyFixType": "Owner must approve, revise, exclude, or defer.",
+      "ownerReviewRequired": true,
+      "conservativeAutoApprovalPossible": false,
+      "excludeFromFullUploadUntilReviewed": true
+    },
+    "collision_risk": {
+      "count": 0,
+      "examples": [],
+      "likelyFixType": "Confirm the resolved suffix strategy.",
+      "ownerReviewRequired": true,
+      "conservativeAutoApprovalPossible": false,
+      "excludeFromFullUploadUntilReviewed": true
+    },
+    "manual_review_required": {
+      "count": 205,
+      "examples": [
+        {
+          "assetId": "animals-playing-cards__animals-armadillo__1a6eaccdef",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-armadillo-1a6eaccdef.svg",
+          "displayTitle": "Animals Armadillo",
+          "proposedCleanStem": "animals-armadillo-1a6eaccdef",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-armadillo-1a6eaccdef.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-armadillo-1a6eaccdef.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-armadillos__50db4716e5",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-armadillos-50db4716e5.svg",
+          "displayTitle": "Animals Armadillos",
+          "proposedCleanStem": "animals-armadillos-50db4716e5",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-armadillos-50db4716e5.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-armadillos-50db4716e5.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-armadillos-wildlife__f2912c1ad5",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-armadillos-wildlife-f2912c1ad5.svg",
+          "displayTitle": "Animals Armadillos Wildlife",
+          "proposedCleanStem": "animals-armadillos-wildlife-f2912c1ad5",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-armadillos-wildlife-f2912c1ad5.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-armadillos-wildlife-f2912c1ad5.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-baboon__3019f9ef3d",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-baboon-3019f9ef3d.svg",
+          "displayTitle": "Animals Baboon",
+          "proposedCleanStem": "animals-baboon-3019f9ef3d",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-baboon-3019f9ef3d.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-baboon-3019f9ef3d.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-baboons__5f19666c69",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-baboons-5f19666c69.svg",
+          "displayTitle": "Animals Baboons",
+          "proposedCleanStem": "animals-baboons-5f19666c69",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-baboons-5f19666c69.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-baboons-5f19666c69.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-baboons-hanging__398854ec28",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-baboons-hanging-398854ec28.svg",
+          "displayTitle": "Animals Baboons Hanging",
+          "proposedCleanStem": "animals-baboons-hanging-398854ec28",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-baboons-hanging-398854ec28.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-baboons-hanging-398854ec28.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-badger__46333741c3",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-badger-46333741c3.svg",
+          "displayTitle": "Animals Badger",
+          "proposedCleanStem": "animals-badger-46333741c3",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-badger-46333741c3.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-badger-46333741c3.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-badgers__701e4f01fa",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-badgers-701e4f01fa.svg",
+          "displayTitle": "Animals Badgers",
+          "proposedCleanStem": "animals-badgers-701e4f01fa",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-badgers-701e4f01fa.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-badgers-701e4f01fa.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-badgers-wildlife__d717f79524",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-badgers-wildlife-d717f79524.svg",
+          "displayTitle": "Animals Badgers Wildlife",
+          "proposedCleanStem": "animals-badgers-wildlife-d717f79524",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-badgers-wildlife-d717f79524.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-badgers-wildlife-d717f79524.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-bats__662bf20796",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-bats-662bf20796.svg",
+          "displayTitle": "Animals Bats",
+          "proposedCleanStem": "animals-bats-662bf20796",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-bats-662bf20796.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-bats-662bf20796.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-bats-wildlife__1da9adbd04",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-bats-wildlife-1da9adbd04.svg",
+          "displayTitle": "Animals Bats Wildlife",
+          "proposedCleanStem": "animals-bats-wildlife-1da9adbd04",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-bats-wildlife-1da9adbd04.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-bats-wildlife-1da9adbd04.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-bears__eec9e5fdad",
+          "category": "animals-playing-cards",
+          "currentFilename": "animals-bears-eec9e5fdad.svg",
+          "displayTitle": "Animals Bears",
+          "proposedCleanStem": "animals-bears-eec9e5fdad",
+          "proposedSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-bears-eec9e5fdad.svg",
+          "proposedWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-bears-eec9e5fdad.webp",
+          "reasonCodes": [
+            "category_mismatch",
+            "manual_review_required"
+          ],
+          "confidence": "manual_review",
+          "likelyHubPages": [
+            "/coloring-pages/animals",
+            "/coloring-pages",
+            "/coloring-pages/playing-cards"
+          ]
+        }
+      ],
+      "likelyFixType": "Owner decision required before final upload.",
+      "ownerReviewRequired": true,
+      "conservativeAutoApprovalPossible": false,
+      "excludeFromFullUploadUntilReviewed": true
+    },
+    "other": {
+      "count": 0,
+      "examples": [],
+      "likelyFixType": "Inspect individually.",
+      "ownerReviewRequired": true,
+      "conservativeAutoApprovalPossible": false,
+      "excludeFromFullUploadUntilReviewed": true
+    }
+  }
+}

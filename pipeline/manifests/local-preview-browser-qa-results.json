@@ -1,0 +1,393 @@
+{
+  "generatedAt": "2026-05-13T19:14:36.979Z",
+  "runId": "local-preview-browser-qa",
+  "origin": "http://127.0.0.1:3005",
+  "mode": "qa",
+  "screenshotDirectory": "pipeline/review/local-preview-bugfix/screenshots",
+  "screenshots": [
+    "pipeline/review/local-preview-bugfix/screenshots/home.png",
+    "pipeline/review/local-preview-bugfix/screenshots/coloring-pages.png",
+    "pipeline/review/local-preview-bugfix/screenshots/coloring-pages-animals.png",
+    "pipeline/review/local-preview-bugfix/screenshots/coloring-pages-geometric.png",
+    "pipeline/review/local-preview-bugfix/screenshots/coloring-pages-anime-girls.png",
+    "pipeline/review/local-preview-bugfix/screenshots/coloring-pages-christmas.png",
+    "pipeline/review/local-preview-bugfix/screenshots/coloring-pages-plushies.png",
+    "pipeline/review/local-preview-bugfix/screenshots/contact.png",
+    "pipeline/review/local-preview-bugfix/screenshots/privacy.png"
+  ],
+  "pages": [
+    {
+      "route": "/",
+      "url": "http://127.0.0.1:3005/",
+      "status": 200,
+      "previewUnavailableCount": 0,
+      "assetImageCount": 14,
+      "renderedAssetImageCount": 14,
+      "customDomainImageCount": 14,
+      "brokenImageCount": 0,
+      "firstAssetImageSrcs": [
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/chibi/chibi-african-dragon-ebdfccdd0d.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-air-balloon-1f6b5be7bc.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/birds/birds-albatross-2380234539.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/christmas/christmas-holiday-advent-calendar-a1245c4617.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/dinosaurs/prehistoric-allosaurus-9787e7d0fd.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/chibi/chibi-african-dragon-ebdfccdd0d.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp"
+      ],
+      "bodyTextIncludes6352": true,
+      "bodyTextIncludesPreviewUnavailable": false,
+      "totalAdLabels": 5,
+      "visibleAdLabels": 2,
+      "horizontalOverflowDetected": false,
+      "consoleErrors": [],
+      "networkFailures": [],
+      "animalsAlligator": {
+        "appears": true,
+        "hasImg": true,
+        "imgSrc": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+        "renders": true
+      },
+      "screenshot": "pipeline/review/local-preview-bugfix/screenshots/home.png"
+    },
+    {
+      "route": "/coloring-pages",
+      "url": "http://127.0.0.1:3005/coloring-pages",
+      "status": 200,
+      "previewUnavailableCount": 0,
+      "assetImageCount": 66,
+      "renderedAssetImageCount": 30,
+      "customDomainImageCount": 66,
+      "brokenImageCount": 0,
+      "firstAssetImageSrcs": [
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/chibi/chibi-african-dragon-ebdfccdd0d.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-air-balloon-1f6b5be7bc.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/birds/birds-albatross-2380234539.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/christmas/christmas-holiday-advent-calendar-a1245c4617.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/dinosaurs/prehistoric-allosaurus-9787e7d0fd.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/chibi/chibi-african-dragon-ebdfccdd0d.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp"
+      ],
+      "bodyTextIncludes6352": true,
+      "bodyTextIncludesPreviewUnavailable": false,
+      "totalAdLabels": 5,
+      "visibleAdLabels": 2,
+      "horizontalOverflowDetected": false,
+      "consoleErrors": [],
+      "networkFailures": [
+        {
+          "url": "http://127.0.0.1:3005/",
+          "failure": "net::ERR_ABORTED"
+        }
+      ],
+      "animalsAlligator": {
+        "appears": true,
+        "hasImg": true,
+        "imgSrc": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+        "renders": true
+      },
+      "screenshot": "pipeline/review/local-preview-bugfix/screenshots/coloring-pages.png"
+    },
+    {
+      "route": "/coloring-pages/animals",
+      "url": "http://127.0.0.1:3005/coloring-pages/animals",
+      "status": 200,
+      "previewUnavailableCount": 0,
+      "assetImageCount": 66,
+      "renderedAssetImageCount": 30,
+      "customDomainImageCount": 66,
+      "brokenImageCount": 0,
+      "firstAssetImageSrcs": [
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/chibi/chibi-animals-pets-dogs-afghan-hound-d9a83b6ec9.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-armadillo-hoodie-animal-plushie-d2e31ff395.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/christmas/christmas-holiday-kitten-9c698f8609.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/birds/birds-albatross-2380234539.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/dinosaurs/prehistoric-allosaurus-9787e7d0fd.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/chibi/chibi-animals-pets-dogs-afghan-hound-d9a83b6ec9.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-armadillo-hoodie-animal-plushie-d2e31ff395.webp"
+      ],
+      "bodyTextIncludes6352": true,
+      "bodyTextIncludesPreviewUnavailable": false,
+      "totalAdLabels": 5,
+      "visibleAdLabels": 2,
+      "horizontalOverflowDetected": false,
+      "consoleErrors": [],
+      "networkFailures": [
+        {
+          "url": "http://127.0.0.1:3005/",
+          "failure": "net::ERR_ABORTED"
+        }
+      ],
+      "animalsAlligator": {
+        "appears": true,
+        "hasImg": true,
+        "imgSrc": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+        "renders": true
+      },
+      "screenshot": "pipeline/review/local-preview-bugfix/screenshots/coloring-pages-animals.png"
+    },
+    {
+      "route": "/coloring-pages/geometric",
+      "url": "http://127.0.0.1:3005/coloring-pages/geometric",
+      "status": 200,
+      "previewUnavailableCount": 0,
+      "assetImageCount": 66,
+      "renderedAssetImageCount": 30,
+      "customDomainImageCount": 66,
+      "brokenImageCount": 0,
+      "firstAssetImageSrcs": [
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/mandala/mandala-geometry-patterns-animal-mandala-fox-3e8e80a2fd.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-abstract-mandala-29dbb1eecf.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/mandala/mandala-geometry-patterns-hindu-mandala-fc5ca81596.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/mandala/mandala-geometry-patterns-celestial-mandala-84d5358083.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/mandala/mandala-geometry-patterns-nature-mandala-89a2f93a25.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/mandala/mandala-geometry-patterns-geometric-mandala-3369a57b28.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/mandala/mandala-geometry-patterns-animal-mandala-fox-3e8e80a2fd.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-abstract-mandala-29dbb1eecf.webp"
+      ],
+      "bodyTextIncludes6352": true,
+      "bodyTextIncludesPreviewUnavailable": false,
+      "totalAdLabels": 5,
+      "visibleAdLabels": 2,
+      "horizontalOverflowDetected": false,
+      "consoleErrors": [],
+      "networkFailures": [
+        {
+          "url": "http://127.0.0.1:3005/",
+          "failure": "net::ERR_ABORTED"
+        }
+      ],
+      "animalsAlligator": {
+        "appears": false,
+        "hasImg": false,
+        "imgSrc": "",
+        "renders": false
+      },
+      "screenshot": "pipeline/review/local-preview-bugfix/screenshots/coloring-pages-geometric.png"
+    },
+    {
+      "route": "/coloring-pages/anime-girls",
+      "url": "http://127.0.0.1:3005/coloring-pages/anime-girls",
+      "status": 200,
+      "previewUnavailableCount": 0,
+      "assetImageCount": 66,
+      "renderedAssetImageCount": 30,
+      "customDomainImageCount": 66,
+      "brokenImageCount": 0,
+      "firstAssetImageSrcs": [
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/chibi/chibi-anime-girl-hiking-23c5623800.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/chibi/chibi-anime-girl-karate-fighting-0e15e66f5d.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-c819919e77.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-air-balloon-1f6b5be7bc.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-arctic-fox-hoodie-plushie-snow-6a9f81e6c3.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-airship-dogfight-154332e8ac.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/chibi/chibi-anime-girl-hiking-23c5623800.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/chibi/chibi-anime-girl-karate-fighting-0e15e66f5d.webp"
+      ],
+      "bodyTextIncludes6352": true,
+      "bodyTextIncludesPreviewUnavailable": false,
+      "totalAdLabels": 5,
+      "visibleAdLabels": 2,
+      "horizontalOverflowDetected": false,
+      "consoleErrors": [],
+      "networkFailures": [
+        {
+          "url": "http://127.0.0.1:3005/",
+          "failure": "net::ERR_ABORTED"
+        }
+      ],
+      "animalsAlligator": {
+        "appears": false,
+        "hasImg": false,
+        "imgSrc": "",
+        "renders": false
+      },
+      "screenshot": "pipeline/review/local-preview-bugfix/screenshots/coloring-pages-anime-girls.png"
+    },
+    {
+      "route": "/coloring-pages/christmas",
+      "url": "http://127.0.0.1:3005/coloring-pages/christmas",
+      "status": 200,
+      "previewUnavailableCount": 0,
+      "assetImageCount": 66,
+      "renderedAssetImageCount": 30,
+      "customDomainImageCount": 66,
+      "brokenImageCount": 0,
+      "firstAssetImageSrcs": [
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/christmas/christmas-holiday-advent-calendar-a1245c4617.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/holiday/holiday-christmas-dogs-australian-shepherd-324967ed9d.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/indoor-plants/indoor-plants-christmas-cactus-150b46b5de.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/christmas/christmas-holiday-candy-canes-6f112e464c.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-sushi-holiday-christmas-roll-44ec0c8f04.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/gardening/gardening-mushroom-reindeer-lichen-reindeer-gardener-christmas-284b794095.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/christmas/christmas-holiday-advent-calendar-a1245c4617.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/holiday/holiday-christmas-dogs-australian-shepherd-324967ed9d.webp"
+      ],
+      "bodyTextIncludes6352": true,
+      "bodyTextIncludesPreviewUnavailable": false,
+      "totalAdLabels": 5,
+      "visibleAdLabels": 2,
+      "horizontalOverflowDetected": false,
+      "consoleErrors": [],
+      "networkFailures": [
+        {
+          "url": "http://127.0.0.1:3005/",
+          "failure": "net::ERR_ABORTED"
+        }
+      ],
+      "animalsAlligator": {
+        "appears": false,
+        "hasImg": false,
+        "imgSrc": "",
+        "renders": false
+      },
+      "screenshot": "pipeline/review/local-preview-bugfix/screenshots/coloring-pages-christmas.png"
+    },
+    {
+      "route": "/coloring-pages/plushies",
+      "url": "http://127.0.0.1:3005/coloring-pages/plushies",
+      "status": 200,
+      "previewUnavailableCount": 0,
+      "assetImageCount": 66,
+      "renderedAssetImageCount": 30,
+      "customDomainImageCount": 66,
+      "brokenImageCount": 0,
+      "firstAssetImageSrcs": [
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/chibi/chibi-plushie-alligator-90926f5c7b.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/plushie/plushie-alligator-family-76ee38269b.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-c819919e77.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/chibi/chibi-plushie-alpaca-2860177e32.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/plushie/plushie-alligator-7a469a9dce.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-animal-plushie-hippo-12a7febf5c.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/chibi/chibi-plushie-alligator-90926f5c7b.webp",
+        "https://assets.ilovecoloringpage.com/coloring-pages/webp/plushie/plushie-alligator-family-76ee38269b.webp"
+      ],
+      "bodyTextIncludes6352": true,
+      "bodyTextIncludesPreviewUnavailable": false,
+      "totalAdLabels": 5,
+      "visibleAdLabels": 2,
+      "horizontalOverflowDetected": false,
+      "consoleErrors": [],
+      "networkFailures": [
+        {
+          "url": "http://127.0.0.1:3005/",
+          "failure": "net::ERR_ABORTED"
+        }
+      ],
+      "animalsAlligator": {
+        "appears": false,
+        "hasImg": false,
+        "imgSrc": "",
+        "renders": false
+      },
+      "screenshot": "pipeline/review/local-preview-bugfix/screenshots/coloring-pages-plushies.png"
+    },
+    {
+      "route": "/contact",
+      "url": "http://127.0.0.1:3005/contact",
+      "status": 200,
+      "previewUnavailableCount": 0,
+      "assetImageCount": 0,
+      "renderedAssetImageCount": 0,
+      "customDomainImageCount": 0,
+      "brokenImageCount": 0,
+      "firstAssetImageSrcs": [],
+      "bodyTextIncludes6352": false,
+      "bodyTextIncludesPreviewUnavailable": false,
+      "totalAdLabels": 0,
+      "visibleAdLabels": 0,
+      "horizontalOverflowDetected": false,
+      "consoleErrors": [],
+      "networkFailures": [
+        {
+          "url": "http://127.0.0.1:3005/",
+          "failure": "net::ERR_ABORTED"
+        }
+      ],
+      "animalsAlligator": {
+        "appears": false,
+        "hasImg": false,
+        "imgSrc": "",
+        "renders": false
+      },
+      "screenshot": "pipeline/review/local-preview-bugfix/screenshots/contact.png"
+    },
+    {
+      "route": "/privacy",
+      "url": "http://127.0.0.1:3005/privacy",
+      "status": 200,
+      "previewUnavailableCount": 0,
+      "assetImageCount": 0,
+      "renderedAssetImageCount": 0,
+      "customDomainImageCount": 0,
+      "brokenImageCount": 0,
+      "firstAssetImageSrcs": [],
+      "bodyTextIncludes6352": false,
+      "bodyTextIncludesPreviewUnavailable": false,
+      "totalAdLabels": 0,
+      "visibleAdLabels": 0,
+      "horizontalOverflowDetected": false,
+      "consoleErrors": [],
+      "networkFailures": [
+        {
+          "url": "http://127.0.0.1:3005/",
+          "failure": "net::ERR_ABORTED"
+        }
+      ],
+      "animalsAlligator": {
+        "appears": false,
+        "hasImg": false,
+        "imgSrc": "",
+        "renders": false
+      },
+      "screenshot": "pipeline/review/local-preview-bugfix/screenshots/privacy.png"
+    }
+  ],
+  "summary": {
+    "pagesChecked": 9,
+    "visibleUploadedRuntimeRecords": 410,
+    "previewUnavailableForVisibleUploadedRuntimeRecords": 0,
+    "webpPreviewsRender": true,
+    "animalsAlligatorAppears": true,
+    "animalsAlligatorHasImg": true,
+    "animalsAlligatorPreviewRenders": true,
+    "animalsAlligatorImgSrc": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+    "brokenImageCount": 0,
+    "consoleErrorCount": 0,
+    "networkFailureCount": 8,
+    "homepageCount6352": true,
+    "galleryLandingCount6352": true,
+    "deferredRecordsHidden": true,
+    "adDensityMatchesRound4U": true,
+    "horizontalOverflowDetected": false,
+    "printWorks": true,
+    "pngDownloadWorks": true,
+    "jpgDownloadWorks": true,
+    "webpDownloadWorks": true,
+    "svgDownloadAbsent": true,
+    "searchWorks": true,
+    "filterWorks": true,
+    "paginationWorks": true,
+    "allPassed": true
+  },
+  "interactions": {
+    "print": {
+      "result": "passed",
+      "stillPreparing": false,
+      "imageCount": 1,
+      "source": "internal-svg",
+      "bodyText": ""
+    },
+    "downloads": {
+      "png": "passed",
+      "jpg": "passed",
+      "webp": "passed"
+    },
+    "svgDownloadAbsent": true,
+    "searchWorks": true,
+    "filterWorks": true,
+    "paginationWorks": true
+  }
+}

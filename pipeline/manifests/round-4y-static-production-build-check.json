@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-05-11T19:59:38.623Z",
+  "runId": "round-4y-static-production-build-check",
+  "productionEnvValuesPresent": false,
+  "buildMode": "local-preview-or-blocked",
+  "outDirectoryExistsAtGenerationTime": true,
+  "productionReadinessBlocked": true,
+  "localhostLeakageInOut": true,
+  "localFilePathLeakageInOut": true,
+  "privateR2EndpointLeakageInOut": false,
+  "r2DevLeakageInOut": false,
+  "svgDownloadLinksInOut": false,
+  "noLiveAdCodeInOut": true,
+  "note": "Production readiness is blocked because public site URL, public asset URL, or public contact email is missing."
+}

@@ -1,0 +1,44 @@
+{
+  "generatedAt": "2026-05-12T04:15:49.656Z",
+  "runId": "round-5h-project-context-check",
+  "summary": {
+    "correctRepository": true,
+    "repoName": "i-love-coloring-page",
+    "branch": "version-4",
+    "head": "3625c3a",
+    "round5gCommitExists": true,
+    "appApiRoutePresent": false,
+    "staticExportConfigured": true,
+    "coloringPagesRouteExists": true,
+    "hubRouteExists": true,
+    "r2ColoringPagesExists": true,
+    "r2SvgExists": true,
+    "r2WebpExists": false,
+    "r2WebpFolderNote": "Full local WebP folder is absent in this checkout; the Round 5C test bundle WebP folder is present and public r2.dev QA covers uploaded WebP previews.",
+    "testBundleExists": true,
+    "testBundleSvgExists": true,
+    "testBundleWebpExists": true,
+    "publicContainsGeneratedMedia": false,
+    "imagesStatusClean": true,
+    "ilovesvgStatusClean": true,
+    "svgUserDownloadExposedBeforeChanges": false,
+    "svgUserDownloadExposedAfterChanges": false,
+    "publicDownloadFormatsBeforeChanges": [
+      "PNG"
+    ],
+    "currentPublicDownloadFormats": [
+      "PNG",
+      "JPG",
+      "WebP"
+    ],
+    "jpgJpegWebpControlsAlreadyVisible": false,
+    "jpgJpegWebpControlsVisibleAfterChanges": true,
+    "adWellsVisibleByDefault": true,
+    "liveAdsenseCodeAbsent": true
+  },
+  "wrongContext": {
+    "checked": true,
+    "actualWrongRoutesFound": false,
+    "note": "Broad guard-pattern hits in pipeline scripts are expected because prior rounds store wrong-context checks there."
+  }
+}

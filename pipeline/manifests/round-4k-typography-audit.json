@@ -1,0 +1,30 @@
+{
+  "runId": "round-4k-gallery-visual-corrections",
+  "generatedAt": "2026-05-10T19:40:36.909Z",
+  "summary": {
+    "nextFontGoogleUsed": true,
+    "figtreeConfigured": true,
+    "frauncesConfigured": true,
+    "atkinsonConfigured": false,
+    "runtimeGoogleFontLinksPresent": false
+  },
+  "lockedFonts": [
+    {
+      "font": "Fraunces",
+      "role": "display headings only"
+    },
+    {
+      "font": "Figtree",
+      "role": "body, nav, buttons, filters, card titles, and normal UI"
+    },
+    {
+      "font": "Atkinson Hyperlegible",
+      "role": "documented as unused in Round 4K"
+    }
+  ],
+  "notes": [
+    "Fraunces remains reserved for H1 and major editorial headings.",
+    "Figtree is the default UI font and is used for cards and controls.",
+    "Atkinson Hyperlegible was not added because it created unnecessary typography complexity for this pass."
+  ]
+}

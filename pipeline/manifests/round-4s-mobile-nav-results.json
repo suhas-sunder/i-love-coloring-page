@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-05-11T04:39:31.619Z",
+  "runId": "round-4s-nav-ad-overflow",
+  "summary": {
+    "hamburgerButtonImplemented": true,
+    "hamburgerButtonHasNoBorder": true,
+    "usesFullScreenOrNearFullScreenPanel": true,
+    "searchAtTop": true,
+    "noAwkwardExposedSideGutter": true,
+    "noNarrowPanelCss": true,
+    "noHorizontalOverflow": true,
+    "closesOnButton": true,
+    "closesOnEscape": true,
+    "closesOnLinkClick": true,
+    "noAdsInMobileNav": true
+  },
+  "browserGeometry": {
+    "left": 0,
+    "right": 390,
+    "width": 390,
+    "height": 844,
+    "viewportWidth": 390,
+    "viewportHeight": 844,
+    "searchTop": 113,
+    "overflowX": "hidden",
+    "overflowY": "auto"
+  },
+  "screenshots": [
+    {
+      "path": "pipeline/review/round-4s/screenshots/nav-mobile/mobile-menu-open.png",
+      "committed": false
+    }
+  ]
+}

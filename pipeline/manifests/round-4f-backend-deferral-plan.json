@@ -1,0 +1,35 @@
+{
+  "generatedAt": "2026-05-10",
+  "runId": "round-4f-frontend-only-netlify-static",
+  "backendDeferred": true,
+  "featuresThatDoNotNeedBackendNow": [
+    "public printable gallery pages",
+    "hub browsing",
+    "static pagination",
+    "download links to CDN media",
+    "print from resolved media URLs",
+    "sitemap and robots output"
+  ],
+  "featuresThatNeedBackendLater": [
+    "user accounts",
+    "saved coloring projects",
+    "cloud saves",
+    "payments",
+    "user uploads",
+    "admin and moderation tools",
+    "server-side image processing",
+    "email and account workflows"
+  ],
+  "risksOfAddingBackendTooEarly": [
+    "more deploy surfaces before product need",
+    "avoidable function cost and operational work",
+    "larger security review surface",
+    "harder static cache behavior for the public gallery"
+  ],
+  "futureMigrationPath": [
+    "keep the public gallery static while adding a separate app shell for account features",
+    "introduce API routes or external services only for authenticated user workflows",
+    "keep CDN media URLs stable so public SEO pages do not need to move",
+    "continue to keep generated production media out of the app repository"
+  ]
+}

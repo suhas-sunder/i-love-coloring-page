@@ -1,0 +1,23 @@
+{
+  "generatedAt": "2026-05-12T04:15:49.656Z",
+  "runId": "round-5h-browser-download-api",
+  "summary": {
+    "pngDownloadApiExists": true,
+    "jpgDownloadApiExists": true,
+    "webpDownloadApiExists": true,
+    "genericRasterDownloadApiExists": true,
+    "printApiExists": true,
+    "internalSvgConversionPreferred": true,
+    "svgDownloadHelperExposed": false,
+    "pngMimeSupported": true,
+    "jpegMimeSupported": true,
+    "webpMimeSupported": true,
+    "jpegExtensionChosen": ".jpg",
+    "qualityConfigurationSupported": true,
+    "unsupportedMimeDetection": true,
+    "corsFailureDetection": true,
+    "structuredResults": true,
+    "staticExportCompatible": true,
+    "appApiRoutePresent": false
+  }
+}

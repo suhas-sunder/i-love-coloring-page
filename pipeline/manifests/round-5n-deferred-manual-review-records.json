@@ -1,0 +1,2895 @@
+{
+  "generatedAt": "2026-05-13T03:28:11.261Z",
+  "runId": "round-5n-deferred-manual-review-records",
+  "summary": {
+    "deferredRecordCount": 205,
+    "expectedDeferredRecordCount": 205,
+    "deferredNotDeleted": true,
+    "deferredCanBeUploadedLater": true
+  },
+  "records": [
+    {
+      "assetId": "animals-playing-cards__animals-armadillo__1a6eaccdef",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-armadillo-1a6eaccdef.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-armadillo-1a6eaccdef.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-armadillo-1a6eaccdef.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-armadillo-1a6eaccdef.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-armadillos__50db4716e5",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-armadillos-50db4716e5.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-armadillos-50db4716e5.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-armadillos-50db4716e5.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-armadillos-50db4716e5.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-armadillos-wildlife__f2912c1ad5",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-armadillos-wildlife-f2912c1ad5.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-armadillos-wildlife-f2912c1ad5.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-armadillos-wildlife-f2912c1ad5.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-armadillos-wildlife-f2912c1ad5.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-baboon__3019f9ef3d",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-baboon-3019f9ef3d.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-baboon-3019f9ef3d.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-baboon-3019f9ef3d.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-baboon-3019f9ef3d.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-baboons__5f19666c69",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-baboons-5f19666c69.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-baboons-5f19666c69.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-baboons-5f19666c69.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-baboons-5f19666c69.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-baboons-hanging__398854ec28",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-baboons-hanging-398854ec28.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-baboons-hanging-398854ec28.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-baboons-hanging-398854ec28.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-baboons-hanging-398854ec28.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-badger__46333741c3",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-badger-46333741c3.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-badger-46333741c3.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-badger-46333741c3.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-badger-46333741c3.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-badgers__701e4f01fa",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-badgers-701e4f01fa.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-badgers-701e4f01fa.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-badgers-701e4f01fa.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-badgers-701e4f01fa.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-badgers-wildlife__d717f79524",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-badgers-wildlife-d717f79524.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-badgers-wildlife-d717f79524.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-badgers-wildlife-d717f79524.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-badgers-wildlife-d717f79524.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-bats__662bf20796",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-bats-662bf20796.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-bats-662bf20796.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-bats-662bf20796.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-bats-662bf20796.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-bats-wildlife__1da9adbd04",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-bats-wildlife-1da9adbd04.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-bats-wildlife-1da9adbd04.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-bats-wildlife-1da9adbd04.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-bats-wildlife-1da9adbd04.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-bears__eec9e5fdad",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-bears-eec9e5fdad.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-bears-eec9e5fdad.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-bears-eec9e5fdad.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-bears-eec9e5fdad.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-bears-wildlife__f504693e9a",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-bears-wildlife-f504693e9a.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-bears-wildlife-f504693e9a.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-bears-wildlife-f504693e9a.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-bears-wildlife-f504693e9a.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-beavers__b3a02e4662",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-beavers-b3a02e4662.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-beavers-b3a02e4662.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-beavers-b3a02e4662.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-beavers-b3a02e4662.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-beavers-wildlife__402c4ecf7e",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-beavers-wildlife-402c4ecf7e.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-beavers-wildlife-402c4ecf7e.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-beavers-wildlife-402c4ecf7e.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-beavers-wildlife-402c4ecf7e.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-bison__574d4e5137",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-bison-574d4e5137.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-bison-574d4e5137.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-bison-574d4e5137.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-bison-574d4e5137.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-bison-wildlife__f5af85fae9",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-bison-wildlife-f5af85fae9.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-bison-wildlife-f5af85fae9.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-bison-wildlife-f5af85fae9.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-bison-wildlife-f5af85fae9.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-boars__a0d894a697",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-boars-a0d894a697.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-boars-a0d894a697.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-boars-a0d894a697.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-boars-a0d894a697.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-boars-wildlife__f67c35ffa2",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-boars-wildlife-f67c35ffa2.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-boars-wildlife-f67c35ffa2.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-boars-wildlife-f67c35ffa2.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-boars-wildlife-f67c35ffa2.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-bulls__1e3ae6a92b",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-bulls-1e3ae6a92b.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-bulls-1e3ae6a92b.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-bulls-1e3ae6a92b.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-bulls-1e3ae6a92b.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-bulls-wildlife__6a7dc74e68",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-bulls-wildlife-6a7dc74e68.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-bulls-wildlife-6a7dc74e68.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-bulls-wildlife-6a7dc74e68.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-bulls-wildlife-6a7dc74e68.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-camels__4eea853f1d",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-camels-4eea853f1d.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-camels-4eea853f1d.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-camels-4eea853f1d.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-camels-4eea853f1d.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-camels-wildlife__3f56804078",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-camels-wildlife-3f56804078.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-camels-wildlife-3f56804078.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-camels-wildlife-3f56804078.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-camels-wildlife-3f56804078.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-cats__5549bb6efc",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-cats-5549bb6efc.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-cats-5549bb6efc.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-cats-5549bb6efc.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-cats-5549bb6efc.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-cats-wildlife__0bb744d570",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-cats-wildlife-0bb744d570.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-cats-wildlife-0bb744d570.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-cats-wildlife-0bb744d570.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-cats-wildlife-0bb744d570.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-cheetahs__c95563d701",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-cheetahs-c95563d701.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-cheetahs-c95563d701.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-cheetahs-c95563d701.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-cheetahs-c95563d701.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-cheetahs-wildlife__85ac4f4ade",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-cheetahs-wildlife-85ac4f4ade.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-cheetahs-wildlife-85ac4f4ade.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-cheetahs-wildlife-85ac4f4ade.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-cheetahs-wildlife-85ac4f4ade.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-chimpanzees-wildlife__ba86bc198c",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-chimpanzees-wildlife-ba86bc198c.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-chimpanzees-wildlife-ba86bc198c.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-chimpanzees-wildlife-ba86bc198c.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-chimpanzees-wildlife-ba86bc198c.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-cows__78bb274ac3",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-cows-78bb274ac3.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-cows-78bb274ac3.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-cows-78bb274ac3.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-cows-78bb274ac3.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-cows-wildlife__4123d8762a",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-cows-wildlife-4123d8762a.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-cows-wildlife-4123d8762a.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-cows-wildlife-4123d8762a.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-cows-wildlife-4123d8762a.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-donkeys__33373fda54",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-donkeys-33373fda54.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-donkeys-33373fda54.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-donkeys-33373fda54.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-donkeys-33373fda54.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-donkeys-wildlife__45fa146cf7",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-donkeys-wildlife-45fa146cf7.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-donkeys-wildlife-45fa146cf7.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-donkeys-wildlife-45fa146cf7.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-donkeys-wildlife-45fa146cf7.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-elephants__98bfda132d",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-elephants-98bfda132d.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-elephants-98bfda132d.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-elephants-98bfda132d.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-elephants-98bfda132d.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-elephants-wildlife__2c329b3eeb",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-elephants-wildlife-2c329b3eeb.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-elephants-wildlife-2c329b3eeb.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-elephants-wildlife-2c329b3eeb.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-elephants-wildlife-2c329b3eeb.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-foxes__147d9e60c8",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-foxes-147d9e60c8.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-foxes-147d9e60c8.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-foxes-147d9e60c8.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-foxes-147d9e60c8.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-foxes-wildlife__115be421d7",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-foxes-wildlife-115be421d7.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-foxes-wildlife-115be421d7.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-foxes-wildlife-115be421d7.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-foxes-wildlife-115be421d7.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-giraffes__a8e6c42325",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-giraffes-a8e6c42325.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-giraffes-a8e6c42325.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-giraffes-a8e6c42325.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-giraffes-a8e6c42325.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-giraffes-family__217606f66f",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-giraffes-family-217606f66f.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-giraffes-family-217606f66f.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-giraffes-family-217606f66f.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-giraffes-family-217606f66f.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-gorillas__479f3e2984",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-gorillas-479f3e2984.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-gorillas-479f3e2984.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-gorillas-479f3e2984.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-gorillas-479f3e2984.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-hedgehogs__b83a3575d1",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-hedgehogs-b83a3575d1.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-hedgehogs-b83a3575d1.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-hedgehogs-b83a3575d1.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-hedgehogs-b83a3575d1.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-hippos__82dc1fb042",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-hippos-82dc1fb042.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-hippos-82dc1fb042.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-hippos-82dc1fb042.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-hippos-82dc1fb042.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-horses__c3a6ea4b1f",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-horses-c3a6ea4b1f.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-horses-c3a6ea4b1f.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-horses-c3a6ea4b1f.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-horses-c3a6ea4b1f.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-jaguars__042765b64b",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-jaguars-042765b64b.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-jaguars-042765b64b.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-jaguars-042765b64b.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-jaguars-042765b64b.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-kangaroos__b389b10d26",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-kangaroos-b389b10d26.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-kangaroos-b389b10d26.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-kangaroos-b389b10d26.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-kangaroos-b389b10d26.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-kittens__8845a4bedb",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-kittens-8845a4bedb.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-kittens-8845a4bedb.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-kittens-8845a4bedb.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-kittens-8845a4bedb.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-koalas__6452f2615c",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-koalas-6452f2615c.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-koalas-6452f2615c.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-koalas-6452f2615c.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-koalas-6452f2615c.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-lemurs__ae21a8b90b",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-lemurs-ae21a8b90b.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-lemurs-ae21a8b90b.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-lemurs-ae21a8b90b.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-lemurs-ae21a8b90b.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-llamas__1585238a2a",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-llamas-1585238a2a.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-llamas-1585238a2a.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-llamas-1585238a2a.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-llamas-1585238a2a.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-moose__9a63eaf49d",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-moose-9a63eaf49d.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-moose-9a63eaf49d.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-moose-9a63eaf49d.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-moose-9a63eaf49d.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-mouse__22d1041af7",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-mouse-22d1041af7.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-mouse-22d1041af7.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-mouse-22d1041af7.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-mouse-22d1041af7.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-orangutans__413827cb31",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-orangutans-413827cb31.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-orangutans-413827cb31.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-orangutans-413827cb31.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-orangutans-413827cb31.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-pandas__4e2fd61c5e",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-pandas-4e2fd61c5e.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-pandas-4e2fd61c5e.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-pandas-4e2fd61c5e.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-pandas-4e2fd61c5e.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-panthers__1de2e09061",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-panthers-1de2e09061.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-panthers-1de2e09061.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-panthers-1de2e09061.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-panthers-1de2e09061.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-porcupines__f81b1f4c0b",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-porcupines-f81b1f4c0b.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-porcupines-f81b1f4c0b.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-porcupines-f81b1f4c0b.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-porcupines-f81b1f4c0b.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-possums__f9a6b3153f",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-possums-f9a6b3153f.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-possums-f9a6b3153f.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-possums-f9a6b3153f.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-possums-f9a6b3153f.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-pride-of-lions__ce74e725e8",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-pride-of-lions-ce74e725e8.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-pride-of-lions-ce74e725e8.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-pride-of-lions-ce74e725e8.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-pride-of-lions-ce74e725e8.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-rabbits__b4d3aea3a8",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-rabbits-b4d3aea3a8.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-rabbits-b4d3aea3a8.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-rabbits-b4d3aea3a8.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-rabbits-b4d3aea3a8.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-raccoons__9ff6a3f65e",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-raccoons-9ff6a3f65e.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-raccoons-9ff6a3f65e.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-raccoons-9ff6a3f65e.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-raccoons-9ff6a3f65e.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-rams__3ace98d68f",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-rams-3ace98d68f.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-rams-3ace98d68f.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-rams-3ace98d68f.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-rams-3ace98d68f.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-rhinos-charging-safari__1c9398e6e2",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-rhinos-charging-safari-1c9398e6e2.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-rhinos-charging-safari-1c9398e6e2.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-rhinos-charging-safari-1c9398e6e2.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-rhinos-charging-safari-1c9398e6e2.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-sheep-grazing__14002743a6",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-sheep-grazing-14002743a6.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-sheep-grazing-14002743a6.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-sheep-grazing-14002743a6.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-sheep-grazing-14002743a6.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-skunks__52b1166b6f",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-skunks-52b1166b6f.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-skunks-52b1166b6f.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-skunks-52b1166b6f.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-skunks-52b1166b6f.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-sloths__1347b1b12f",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-sloths-1347b1b12f.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-sloths-1347b1b12f.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-sloths-1347b1b12f.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-sloths-1347b1b12f.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-squirrels__94607cbbd3",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-squirrels-94607cbbd3.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-squirrels-94607cbbd3.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-squirrels-94607cbbd3.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-squirrels-94607cbbd3.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-tigers__10e4256793",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-tigers-10e4256793.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-tigers-10e4256793.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-tigers-10e4256793.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-tigers-10e4256793.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-wolverines__e09f9209c8",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-wolverines-e09f9209c8.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-wolverines-e09f9209c8.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-wolverines-e09f9209c8.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-wolverines-e09f9209c8.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-wolves__688d55497c",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-wolves-688d55497c.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-wolves-688d55497c.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-wolves-688d55497c.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-wolves-688d55497c.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-zebras__f13de62547",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-zebras-f13de62547.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/animals-zebras-f13de62547.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/animals-zebras-f13de62547.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/animals-zebras-f13de62547.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__mice-playing-cards__4c3ddb81e4",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/mice-playing-cards-4c3ddb81e4.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/mice-playing-cards-4c3ddb81e4.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/mice-playing-cards-4c3ddb81e4.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/mice-playing-cards-4c3ddb81e4.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "animals-playing-cards__nimals-chimpanzees__07231edf82",
+      "category": "animals-playing-cards",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/nimals-chimpanzees-07231edf82.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/animals-playing-cards/nimals-chimpanzees-07231edf82.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/animals-playing-cards/nimals-chimpanzees-07231edf82.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/animals-playing-cards/nimals-chimpanzees-07231edf82.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "birds__birds__0e59b2890e",
+      "category": "birds",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/birds/birds-0e59b2890e.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/birds/birds-0e59b2890e.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/birds/birds-0e59b2890e.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/birds/birds-0e59b2890e.webp",
+      "reasonCodes": [
+        "vague_subject",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "chibi__hibi-amphithere__a300b5a5e4",
+      "category": "chibi",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/chibi/hibi-amphithere-a300b5a5e4.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/chibi/hibi-amphithere-a300b5a5e4.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/chibi/hibi-amphithere-a300b5a5e4.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/chibi/hibi-amphithere-a300b5a5e4.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "chibi__hibi-stegosaurus__ac10af3209",
+      "category": "chibi",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/chibi/hibi-stegosaurus-ac10af3209.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/chibi/hibi-stegosaurus-ac10af3209.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/chibi/hibi-stegosaurus-ac10af3209.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/chibi/hibi-stegosaurus-ac10af3209.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "dragons__dragon-playing-card__dcfa490187",
+      "category": "dragons",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/dragons/dragon-playing-card-dcfa490187.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/dragons/dragon-playing-card-dcfa490187.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/dragons/dragon-playing-card-dcfa490187.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/dragons/dragon-playing-card-dcfa490187.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "dragons__fantasy-mythology-dragons-dragon-eggs__8aa104cfe2",
+      "category": "dragons",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/dragons/fantasy-mythology-dragons-dragon-eggs-8aa104cfe2.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/dragons/fantasy-mythology-dragons-dragon-eggs-8aa104cfe2.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/dragons/fantasy-mythology-dragons-dragon-eggs-8aa104cfe2.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/dragons/fantasy-mythology-dragons-dragon-eggs-8aa104cfe2.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "dragons__fantasy-mythology-dragons-drake-dragon__969a5e4fdd",
+      "category": "dragons",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/dragons/fantasy-mythology-dragons-drake-dragon-969a5e4fdd.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/dragons/fantasy-mythology-dragons-drake-dragon-969a5e4fdd.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/dragons/fantasy-mythology-dragons-drake-dragon-969a5e4fdd.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/dragons/fantasy-mythology-dragons-drake-dragon-969a5e4fdd.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "dragons__fantasy-mythology-dragons-gold-hoarding-dragon__9cca9e036c",
+      "category": "dragons",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/dragons/fantasy-mythology-dragons-gold-hoarding-dragon-9cca9e036c.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/dragons/fantasy-mythology-dragons-gold-hoarding-dragon-9cca9e036c.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/dragons/fantasy-mythology-dragons-gold-hoarding-dragon-9cca9e036c.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/dragons/fantasy-mythology-dragons-gold-hoarding-dragon-9cca9e036c.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "dragons__fantasy-mythology-dragons-hydra-dragon__d8e54fd5ef",
+      "category": "dragons",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/dragons/fantasy-mythology-dragons-hydra-dragon-d8e54fd5ef.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/dragons/fantasy-mythology-dragons-hydra-dragon-d8e54fd5ef.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/dragons/fantasy-mythology-dragons-hydra-dragon-d8e54fd5ef.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/dragons/fantasy-mythology-dragons-hydra-dragon-d8e54fd5ef.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "dragons__fantasy-mythology-dragons-kirin-dragon__5a022c9956",
+      "category": "dragons",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/dragons/fantasy-mythology-dragons-kirin-dragon-5a022c9956.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/dragons/fantasy-mythology-dragons-kirin-dragon-5a022c9956.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/dragons/fantasy-mythology-dragons-kirin-dragon-5a022c9956.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/dragons/fantasy-mythology-dragons-kirin-dragon-5a022c9956.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "dragons__fantasy-mythology-dragons-leviathan-dragon__d1355eb0db",
+      "category": "dragons",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/dragons/fantasy-mythology-dragons-leviathan-dragon-d1355eb0db.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/dragons/fantasy-mythology-dragons-leviathan-dragon-d1355eb0db.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/dragons/fantasy-mythology-dragons-leviathan-dragon-d1355eb0db.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/dragons/fantasy-mythology-dragons-leviathan-dragon-d1355eb0db.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "dragons__fantasy-mythology-dragons-lindwurm-dragon__820353e925",
+      "category": "dragons",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/dragons/fantasy-mythology-dragons-lindwurm-dragon-820353e925.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/dragons/fantasy-mythology-dragons-lindwurm-dragon-820353e925.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/dragons/fantasy-mythology-dragons-lindwurm-dragon-820353e925.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/dragons/fantasy-mythology-dragons-lindwurm-dragon-820353e925.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "dragons__fantasy-mythology-dragons-lung-dragon__7cc4db1187",
+      "category": "dragons",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/dragons/fantasy-mythology-dragons-lung-dragon-7cc4db1187.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/dragons/fantasy-mythology-dragons-lung-dragon-7cc4db1187.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/dragons/fantasy-mythology-dragons-lung-dragon-7cc4db1187.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/dragons/fantasy-mythology-dragons-lung-dragon-7cc4db1187.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "dragons__fantasy-mythology-dragons-oriental-dragon__5cf04326a1",
+      "category": "dragons",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/dragons/fantasy-mythology-dragons-oriental-dragon-5cf04326a1.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/dragons/fantasy-mythology-dragons-oriental-dragon-5cf04326a1.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/dragons/fantasy-mythology-dragons-oriental-dragon-5cf04326a1.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/dragons/fantasy-mythology-dragons-oriental-dragon-5cf04326a1.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "dragons__fantasy-mythology-dragons-quetzalcoatl-dragon__69eaa4baee",
+      "category": "dragons",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/dragons/fantasy-mythology-dragons-quetzalcoatl-dragon-69eaa4baee.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/dragons/fantasy-mythology-dragons-quetzalcoatl-dragon-69eaa4baee.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/dragons/fantasy-mythology-dragons-quetzalcoatl-dragon-69eaa4baee.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/dragons/fantasy-mythology-dragons-quetzalcoatl-dragon-69eaa4baee.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "dragons__fantasy-mythology-dragons-salamander-dragon__d2f294b9bc",
+      "category": "dragons",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/dragons/fantasy-mythology-dragons-salamander-dragon-d2f294b9bc.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/dragons/fantasy-mythology-dragons-salamander-dragon-d2f294b9bc.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/dragons/fantasy-mythology-dragons-salamander-dragon-d2f294b9bc.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/dragons/fantasy-mythology-dragons-salamander-dragon-d2f294b9bc.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "dragons__fantasy-mythology-dragons-sea-serpent-dragon__69834159c2",
+      "category": "dragons",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/dragons/fantasy-mythology-dragons-sea-serpent-dragon-69834159c2.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/dragons/fantasy-mythology-dragons-sea-serpent-dragon-69834159c2.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/dragons/fantasy-mythology-dragons-sea-serpent-dragon-69834159c2.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/dragons/fantasy-mythology-dragons-sea-serpent-dragon-69834159c2.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "dragons__fantasy-mythology-dragons-spirit-dragon__0702c2588f",
+      "category": "dragons",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/dragons/fantasy-mythology-dragons-spirit-dragon-0702c2588f.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/dragons/fantasy-mythology-dragons-spirit-dragon-0702c2588f.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/dragons/fantasy-mythology-dragons-spirit-dragon-0702c2588f.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/dragons/fantasy-mythology-dragons-spirit-dragon-0702c2588f.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "dragons__fantasy-mythology-dragons-undead-dragon__9b26e17c50",
+      "category": "dragons",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/dragons/fantasy-mythology-dragons-undead-dragon-9b26e17c50.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/dragons/fantasy-mythology-dragons-undead-dragon-9b26e17c50.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/dragons/fantasy-mythology-dragons-undead-dragon-9b26e17c50.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/dragons/fantasy-mythology-dragons-undead-dragon-9b26e17c50.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "dragons__fire-breathing-dragon-playing-card__f1d4a6a936",
+      "category": "dragons",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/dragons/fire-breathing-dragon-playing-card-f1d4a6a936.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/dragons/fire-breathing-dragon-playing-card-f1d4a6a936.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/dragons/fire-breathing-dragon-playing-card-f1d4a6a936.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/dragons/fire-breathing-dragon-playing-card-f1d4a6a936.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "dragons__fire-dragon-playing-card__bb5d73e94b",
+      "category": "dragons",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/dragons/fire-dragon-playing-card-bb5d73e94b.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/dragons/fire-dragon-playing-card-bb5d73e94b.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/dragons/fire-dragon-playing-card-bb5d73e94b.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/dragons/fire-dragon-playing-card-bb5d73e94b.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "dragons__ice-dragon-playing-card__d7e0eb6895",
+      "category": "dragons",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/dragons/ice-dragon-playing-card-d7e0eb6895.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/dragons/ice-dragon-playing-card-d7e0eb6895.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/dragons/ice-dragon-playing-card-d7e0eb6895.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/dragons/ice-dragon-playing-card-d7e0eb6895.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "emoji__u-1f601-beaming-face-with-smiling-eyes__97089f2c44",
+      "category": "emoji",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/emoji/u-1f601-beaming-face-with-smiling-eyes-97089f2c44.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/emoji/u-1f601-beaming-face-with-smiling-eyes-97089f2c44.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/emoji/u-1f601-beaming-face-with-smiling-eyes-97089f2c44.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/emoji/u-1f601-beaming-face-with-smiling-eyes-97089f2c44.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "emoji__u-1f603-grinning-face-with-big-eyes__75c5ee095e",
+      "category": "emoji",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/emoji/u-1f603-grinning-face-with-big-eyes-75c5ee095e.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/emoji/u-1f603-grinning-face-with-big-eyes-75c5ee095e.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/emoji/u-1f603-grinning-face-with-big-eyes-75c5ee095e.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/emoji/u-1f603-grinning-face-with-big-eyes-75c5ee095e.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "emoji__u-1f604-grinning-face-with-smiling-eyes__b02ac0053f",
+      "category": "emoji",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/emoji/u-1f604-grinning-face-with-smiling-eyes-b02ac0053f.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/emoji/u-1f604-grinning-face-with-smiling-eyes-b02ac0053f.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/emoji/u-1f604-grinning-face-with-smiling-eyes-b02ac0053f.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/emoji/u-1f604-grinning-face-with-smiling-eyes-b02ac0053f.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "emoji__u-1f605-grinning-face-with-sweat__5348e43db7",
+      "category": "emoji",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/emoji/u-1f605-grinning-face-with-sweat-5348e43db7.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/emoji/u-1f605-grinning-face-with-sweat-5348e43db7.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/emoji/u-1f605-grinning-face-with-sweat-5348e43db7.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/emoji/u-1f605-grinning-face-with-sweat-5348e43db7.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "emoji__u-1f606-grinning-squinting-face__e90484312c",
+      "category": "emoji",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/emoji/u-1f606-grinning-squinting-face-e90484312c.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/emoji/u-1f606-grinning-squinting-face-e90484312c.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/emoji/u-1f606-grinning-squinting-face-e90484312c.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/emoji/u-1f606-grinning-squinting-face-e90484312c.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "emoji__u-1f923-rolling-on-the-floor-laughing__ff3456346e",
+      "category": "emoji",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/emoji/u-1f923-rolling-on-the-floor-laughing-ff3456346e.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/emoji/u-1f923-rolling-on-the-floor-laughing-ff3456346e.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/emoji/u-1f923-rolling-on-the-floor-laughing-ff3456346e.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/emoji/u-1f923-rolling-on-the-floor-laughing-ff3456346e.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__ardening-in-field-of-flowers-gaillardia__d881b07c2c",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/ardening-in-field-of-flowers-gaillardia-d881b07c2c.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/ardening-in-field-of-flowers-gaillardia-d881b07c2c.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/ardening-in-field-of-flowers-gaillardia-d881b07c2c.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/ardening-in-field-of-flowers-gaillardia-d881b07c2c.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__ardening-in-field-of-flowers-hellebore__7148bfe0ba",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/ardening-in-field-of-flowers-hellebore-7148bfe0ba.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/ardening-in-field-of-flowers-hellebore-7148bfe0ba.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/ardening-in-field-of-flowers-hellebore-7148bfe0ba.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/ardening-in-field-of-flowers-hellebore-7148bfe0ba.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-amaryllis__fad7128aa1",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-amaryllis-fad7128aa1.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-amaryllis-fad7128aa1.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-amaryllis-fad7128aa1.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-amaryllis-fad7128aa1.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-anemone__167008a22b",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-anemone-167008a22b.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-anemone-167008a22b.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-anemone-167008a22b.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-anemone-167008a22b.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-aster__1d8b36efce",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-aster-1d8b36efce.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-aster-1d8b36efce.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-aster-1d8b36efce.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-aster-1d8b36efce.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-azalea__2aeca7510c",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-azalea-2aeca7510c.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-azalea-2aeca7510c.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-azalea-2aeca7510c.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-azalea-2aeca7510c.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-azalea-nature__93f33eeb4f",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-azalea-nature-93f33eeb4f.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-azalea-nature-93f33eeb4f.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-azalea-nature-93f33eeb4f.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-azalea-nature-93f33eeb4f.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-bellflower__f405ac2aeb",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-bellflower-f405ac2aeb.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-bellflower-f405ac2aeb.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-bellflower-f405ac2aeb.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-bellflower-f405ac2aeb.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-bird__2072afbb25",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-bird-2072afbb25.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-bird-2072afbb25.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-bird-2072afbb25.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-bird-2072afbb25.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-bleeding-hearts__d4dbbeaecc",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-bleeding-hearts-d4dbbeaecc.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-bleeding-hearts-d4dbbeaecc.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-bleeding-hearts-d4dbbeaecc.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-bleeding-hearts-d4dbbeaecc.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-calendula__1b1b5180fc",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-calendula-1b1b5180fc.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-calendula-1b1b5180fc.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-calendula-1b1b5180fc.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-calendula-1b1b5180fc.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-camellia__63df9fdc2b",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-camellia-63df9fdc2b.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-camellia-63df9fdc2b.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-camellia-63df9fdc2b.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-camellia-63df9fdc2b.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-celosia__e070064b2e",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-celosia-e070064b2e.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-celosia-e070064b2e.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-celosia-e070064b2e.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-celosia-e070064b2e.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-chrysanthemum__0da2ad8457",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-chrysanthemum-0da2ad8457.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-chrysanthemum-0da2ad8457.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-chrysanthemum-0da2ad8457.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-chrysanthemum-0da2ad8457.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-columbine__7f37fe2163",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-columbine-7f37fe2163.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-columbine-7f37fe2163.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-columbine-7f37fe2163.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-columbine-7f37fe2163.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-coneflower__f1cb47e704",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-coneflower-f1cb47e704.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-coneflower-f1cb47e704.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-coneflower-f1cb47e704.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-coneflower-f1cb47e704.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-cornflower__0ced306dff",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-cornflower-0ced306dff.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-cornflower-0ced306dff.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-cornflower-0ced306dff.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-cornflower-0ced306dff.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-crocus__77f6995faa",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-crocus-77f6995faa.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-crocus-77f6995faa.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-crocus-77f6995faa.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-crocus-77f6995faa.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-delphinium__cbba9adb89",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-delphinium-cbba9adb89.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-delphinium-cbba9adb89.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-delphinium-cbba9adb89.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-delphinium-cbba9adb89.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-forget-me-nots__edbbee5700",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-forget-me-nots-edbbee5700.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-forget-me-nots-edbbee5700.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-forget-me-nots-edbbee5700.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-forget-me-nots-edbbee5700.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-foxglove__290aeabc21",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-foxglove-290aeabc21.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-foxglove-290aeabc21.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-foxglove-290aeabc21.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-foxglove-290aeabc21.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-freesia__a7ca4b0306",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-freesia-a7ca4b0306.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-freesia-a7ca4b0306.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-freesia-a7ca4b0306.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-freesia-a7ca4b0306.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-fuchsia__adfef15871",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-fuchsia-adfef15871.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-fuchsia-adfef15871.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-fuchsia-adfef15871.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-fuchsia-adfef15871.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-gazania__7d41cd17bd",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-gazania-7d41cd17bd.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-gazania-7d41cd17bd.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-gazania-7d41cd17bd.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-gazania-7d41cd17bd.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-gerbera__1d67f789fd",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-gerbera-1d67f789fd.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-gerbera-1d67f789fd.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-gerbera-1d67f789fd.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-gerbera-1d67f789fd.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-hollyhock__1b31167a71",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-hollyhock-1b31167a71.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-hollyhock-1b31167a71.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-hollyhock-1b31167a71.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-hollyhock-1b31167a71.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-hyacinth__654d79a099",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-hyacinth-654d79a099.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-hyacinth-654d79a099.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-hyacinth-654d79a099.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-hyacinth-654d79a099.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-iceland__5d9b45744f",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-iceland-5d9b45744f.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-iceland-5d9b45744f.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-iceland-5d9b45744f.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-iceland-5d9b45744f.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-lavende__254ea81883",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-lavende-254ea81883.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-lavende-254ea81883.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-lavende-254ea81883.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-lavende-254ea81883.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-lavender__5d79a58ee0",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-lavender-5d79a58ee0.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-lavender-5d79a58ee0.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-lavender-5d79a58ee0.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-lavender-5d79a58ee0.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-liatris__fdb42909dd",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-liatris-fdb42909dd.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-liatris-fdb42909dd.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-liatris-fdb42909dd.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-liatris-fdb42909dd.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-lilac__6e0c2d928f",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-lilac-6e0c2d928f.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-lilac-6e0c2d928f.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-lilac-6e0c2d928f.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-lilac-6e0c2d928f.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-lisianthus__025988738d",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-lisianthus-025988738d.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-lisianthus-025988738d.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-lisianthus-025988738d.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-lisianthus-025988738d.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-magnolias__f093bc596e",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-magnolias-f093bc596e.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-magnolias-f093bc596e.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-magnolias-f093bc596e.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-magnolias-f093bc596e.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-marigold__747173a4da",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-marigold-747173a4da.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-marigold-747173a4da.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-marigold-747173a4da.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-marigold-747173a4da.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-morning-glory__78f400c313",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-morning-glory-78f400c313.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-morning-glory-78f400c313.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-morning-glory-78f400c313.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-morning-glory-78f400c313.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-narcissus__5b1658bd9f",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-narcissus-5b1658bd9f.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-narcissus-5b1658bd9f.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-narcissus-5b1658bd9f.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-narcissus-5b1658bd9f.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-nasturtium__17b378cbb7",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-nasturtium-17b378cbb7.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-nasturtium-17b378cbb7.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-nasturtium-17b378cbb7.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-nasturtium-17b378cbb7.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-osteospermum__23e9c41523",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-osteospermum-23e9c41523.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-osteospermum-23e9c41523.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-osteospermum-23e9c41523.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-osteospermum-23e9c41523.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-paper__6eb6e378a1",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-paper-6eb6e378a1.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-paper-6eb6e378a1.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-paper-6eb6e378a1.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-paper-6eb6e378a1.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-passionflower__fe661099b7",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-passionflower-fe661099b7.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-passionflower-fe661099b7.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-passionflower-fe661099b7.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-passionflower-fe661099b7.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-petunia__5aee24e1f3",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-petunia-5aee24e1f3.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-petunia-5aee24e1f3.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-petunia-5aee24e1f3.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-petunia-5aee24e1f3.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-primrose__cee4baf857",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-primrose-cee4baf857.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-primrose-cee4baf857.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-primrose-cee4baf857.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-primrose-cee4baf857.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-primrose-garden__2730debbbe",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-primrose-garden-2730debbbe.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-primrose-garden-2730debbbe.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-primrose-garden-2730debbbe.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-primrose-garden-2730debbbe.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-protea__a91ef82d30",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-protea-a91ef82d30.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-protea-a91ef82d30.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-protea-a91ef82d30.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-protea-a91ef82d30.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-queen-annes-lace__7b3a6667cd",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-queen-annes-lace-7b3a6667cd.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-queen-annes-lace-7b3a6667cd.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-queen-annes-lace-7b3a6667cd.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-queen-annes-lace-7b3a6667cd.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-ranunculus__2cf55bcd5e",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-ranunculus-2cf55bcd5e.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-ranunculus-2cf55bcd5e.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-ranunculus-2cf55bcd5e.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-ranunculus-2cf55bcd5e.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-red-maple__5170694cb2",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-red-maple-5170694cb2.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-red-maple-5170694cb2.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-red-maple-5170694cb2.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-red-maple-5170694cb2.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-rudbeckia__df5df576ee",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-rudbeckia-df5df576ee.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-rudbeckia-df5df576ee.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-rudbeckia-df5df576ee.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-rudbeckia-df5df576ee.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-sakura__3feb7d4af1",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-sakura-3feb7d4af1.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-sakura-3feb7d4af1.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-sakura-3feb7d4af1.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-sakura-3feb7d4af1.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-salvia__aef28ab8d0",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-salvia-aef28ab8d0.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-salvia-aef28ab8d0.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-salvia-aef28ab8d0.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-salvia-aef28ab8d0.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-snapdragon__a04a3fa49c",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-snapdragon-a04a3fa49c.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-snapdragon-a04a3fa49c.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-snapdragon-a04a3fa49c.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-snapdragon-a04a3fa49c.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-snowdrop__58681f659d",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-snowdrop-58681f659d.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-snowdrop-58681f659d.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-snowdrop-58681f659d.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-snowdrop-58681f659d.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-sweet-pea__c71bea8674",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-sweet-pea-c71bea8674.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-sweet-pea-c71bea8674.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-sweet-pea-c71bea8674.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-sweet-pea-c71bea8674.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-thistle__83147f02b5",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-thistle-83147f02b5.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-thistle-83147f02b5.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-thistle-83147f02b5.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-thistle-83147f02b5.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-wisteria__7b7b532e8a",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-wisteria-7b7b532e8a.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-wisteria-7b7b532e8a.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-wisteria-7b7b532e8a.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-wisteria-7b7b532e8a.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-xeranthemum__3f6949db09",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-xeranthemum-3f6949db09.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-xeranthemum-3f6949db09.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-xeranthemum-3f6949db09.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-xeranthemum-3f6949db09.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-yarrow__9a0ed3a81b",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-yarrow-9a0ed3a81b.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-yarrow-9a0ed3a81b.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-yarrow-9a0ed3a81b.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-yarrow-9a0ed3a81b.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-yucca__998cc3864e",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-yucca-998cc3864e.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-yucca-998cc3864e.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-yucca-998cc3864e.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-yucca-998cc3864e.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-zantedeschia__3767bd2809",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-zantedeschia-3767bd2809.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-zantedeschia-3767bd2809.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-zantedeschia-3767bd2809.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-zantedeschia-3767bd2809.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-zephyranthes__211479f632",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-zephyranthes-211479f632.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-zephyranthes-211479f632.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-zephyranthes-211479f632.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-zephyranthes-211479f632.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__gardening-in-field-of-flowers-zinnia__be70d70a3f",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/gardening-in-field-of-flowers-zinnia-be70d70a3f.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/gardening-in-field-of-flowers-zinnia-be70d70a3f.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/gardening-in-field-of-flowers-zinnia-be70d70a3f.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/gardening-in-field-of-flowers-zinnia-be70d70a3f.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__lowers-amaryllis__76de4c5fd6",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/lowers-amaryllis-76de4c5fd6.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/lowers-amaryllis-76de4c5fd6.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/lowers-amaryllis-76de4c5fd6.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/lowers-amaryllis-76de4c5fd6.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__lowers-columbine__47b9b149e1",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/lowers-columbine-47b9b149e1.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/lowers-columbine-47b9b149e1.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/lowers-columbine-47b9b149e1.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/lowers-columbine-47b9b149e1.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__lowers-liatris__b17acc27d4",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/lowers-liatris-b17acc27d4.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/lowers-liatris-b17acc27d4.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/lowers-liatris-b17acc27d4.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/lowers-liatris-b17acc27d4.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__lowers-marigold__d26587b7af",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/lowers-marigold-d26587b7af.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/lowers-marigold-d26587b7af.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/lowers-marigold-d26587b7af.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/lowers-marigold-d26587b7af.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__lowers-poppy__09601366ff",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/lowers-poppy-09601366ff.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/lowers-poppy-09601366ff.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/lowers-poppy-09601366ff.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/lowers-poppy-09601366ff.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__lowers-ranunculus__21ed1e14cb",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/lowers-ranunculus-21ed1e14cb.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/lowers-ranunculus-21ed1e14cb.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/lowers-ranunculus-21ed1e14cb.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/lowers-ranunculus-21ed1e14cb.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__lowers-snapdragon__5e8f3a2c5e",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/lowers-snapdragon-5e8f3a2c5e.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/lowers-snapdragon-5e8f3a2c5e.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/lowers-snapdragon-5e8f3a2c5e.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/lowers-snapdragon-5e8f3a2c5e.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__lowers-snowdrop__01c784b5b3",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/lowers-snowdrop-01c784b5b3.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/lowers-snowdrop-01c784b5b3.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/lowers-snowdrop-01c784b5b3.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/lowers-snowdrop-01c784b5b3.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "flowers__lowers-sunflower__b2e8fc939f",
+      "category": "flowers",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/flowers/lowers-sunflower-b2e8fc939f.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/flowers/lowers-sunflower-b2e8fc939f.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/flowers/lowers-sunflower-b2e8fc939f.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/flowers/lowers-sunflower-b2e8fc939f.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "horror__monster-in-closet__8e715af6be",
+      "category": "horror",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/horror/monster-in-closet-8e715af6be.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/horror/monster-in-closet-8e715af6be.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/horror/monster-in-closet-8e715af6be.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/horror/monster-in-closet-8e715af6be.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "horror__monster-under-bed__d6fc572ad3",
+      "category": "horror",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/horror/monster-under-bed-d6fc572ad3.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/horror/monster-under-bed-d6fc572ad3.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/horror/monster-under-bed-d6fc572ad3.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/horror/monster-under-bed-d6fc572ad3.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "horror__zombies__8638f6539a",
+      "category": "horror",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/horror/zombies-8638f6539a.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/horror/zombies-8638f6539a.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/horror/zombies-8638f6539a.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/horror/zombies-8638f6539a.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "indoor-plants__idoor-plants-clivia-miniata__5e5f40bdaa",
+      "category": "indoor-plants",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/indoor-plants/idoor-plants-clivia-miniata-5e5f40bdaa.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/indoor-plants/idoor-plants-clivia-miniata-5e5f40bdaa.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/indoor-plants/indoor-plants-clivia-miniata-5e5f40bdaa.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/indoor-plants/indoor-plants-clivia-miniata-5e5f40bdaa.webp",
+      "reasonCodes": [
+        "spelling_issue",
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "insects__bees__1ecb9f6ea1",
+      "category": "insects",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/insects/bees-1ecb9f6ea1.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/insects/bees-1ecb9f6ea1.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/insects/bees-1ecb9f6ea1.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/insects/bees-1ecb9f6ea1.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "mandala-geometry-patterns__chatgpt-image-oct-14-2025-11-38-05-pm__ea62e476c5",
+      "category": "mandala-geometry-patterns",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/mandala-geometry-patterns/chatgpt-image-oct-14-2025-11-38-05-pm-ea62e476c5.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/mandala-geometry-patterns/chatgpt-image-oct-14-2025-11-38-05-pm-ea62e476c5.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/mandala-geometry-patterns/geometric-mandala-pattern-ea62e476c5.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/mandala-geometry-patterns/geometric-mandala-pattern-ea62e476c5.webp",
+      "reasonCodes": [
+        "ai_export_name",
+        "generic_name",
+        "timestamp_name",
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "mandala-geometry-patterns__failed-chatgpt-image-oct-19-2025-10-27-27-pm__a0411d2e82",
+      "category": "mandala-geometry-patterns",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/mandala-geometry-patterns/failed-chatgpt-image-oct-19-2025-10-27-27-pm-a0411d2e82.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/mandala-geometry-patterns/failed-chatgpt-image-oct-19-2025-10-27-27-pm-a0411d2e82.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/mandala-geometry-patterns/geometric-mandala-pattern-a0411d2e82.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/mandala-geometry-patterns/geometric-mandala-pattern-a0411d2e82.webp",
+      "reasonCodes": [
+        "ai_export_name",
+        "failed_name",
+        "generic_name",
+        "timestamp_name",
+        "duplicate_tokens",
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "mythology__failed-mythology-janus__6016a175dd",
+      "category": "mythology",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/mythology/failed-mythology-janus-6016a175dd.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/mythology/failed-mythology-janus-6016a175dd.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/mythology/mythology-janus-6016a175dd.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/mythology/mythology-janus-6016a175dd.webp",
+      "reasonCodes": [
+        "failed_name",
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "mythology__fantasy-mythology-dragons-acid-dragon__53530f85b9",
+      "category": "mythology",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/mythology/fantasy-mythology-dragons-acid-dragon-53530f85b9.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/mythology/fantasy-mythology-dragons-acid-dragon-53530f85b9.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/mythology/fantasy-mythology-dragons-acid-dragon-53530f85b9.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/mythology/fantasy-mythology-dragons-acid-dragon-53530f85b9.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "mythology__fantasy-mythology-dragons-battle-worn-treasure-dragon__cb0dc0d909",
+      "category": "mythology",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/mythology/fantasy-mythology-dragons-battle-worn-treasure-dragon-cb0dc0d909.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/mythology/fantasy-mythology-dragons-battle-worn-treasure-dragon-cb0dc0d909.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/mythology/fantasy-mythology-dragons-battle-worn-treasure-dragon-cb0dc0d909.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/mythology/fantasy-mythology-dragons-battle-worn-treasure-dragon-cb0dc0d909.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "mythology__fantasy-mythology-dragons-celestial-dragon__44c49b9ef2",
+      "category": "mythology",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/mythology/fantasy-mythology-dragons-celestial-dragon-44c49b9ef2.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/mythology/fantasy-mythology-dragons-celestial-dragon-44c49b9ef2.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/mythology/fantasy-mythology-dragons-celestial-dragon-44c49b9ef2.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/mythology/fantasy-mythology-dragons-celestial-dragon-44c49b9ef2.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "mythology__fantasy-mythology-dragons-celestial-koi-dragon__96ca27dd00",
+      "category": "mythology",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/mythology/fantasy-mythology-dragons-celestial-koi-dragon-96ca27dd00.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/mythology/fantasy-mythology-dragons-celestial-koi-dragon-96ca27dd00.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/mythology/fantasy-mythology-dragons-celestial-koi-dragon-96ca27dd00.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/mythology/fantasy-mythology-dragons-celestial-koi-dragon-96ca27dd00.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "mythology__fantasy-mythology-dragons-chimera-dragon__1b5e37475b",
+      "category": "mythology",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/mythology/fantasy-mythology-dragons-chimera-dragon-1b5e37475b.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/mythology/fantasy-mythology-dragons-chimera-dragon-1b5e37475b.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/mythology/fantasy-mythology-dragons-chimera-dragon-1b5e37475b.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/mythology/fantasy-mythology-dragons-chimera-dragon-1b5e37475b.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "mythology__fantasy-mythology-dragons-crystal-dragon__450bb51833",
+      "category": "mythology",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/mythology/fantasy-mythology-dragons-crystal-dragon-450bb51833.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/mythology/fantasy-mythology-dragons-crystal-dragon-450bb51833.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/mythology/fantasy-mythology-dragons-crystal-dragon-450bb51833.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/mythology/fantasy-mythology-dragons-crystal-dragon-450bb51833.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "mythology__fantasy-mythology-dragons-desert-dragon__f9d7135acc",
+      "category": "mythology",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/mythology/fantasy-mythology-dragons-desert-dragon-f9d7135acc.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/mythology/fantasy-mythology-dragons-desert-dragon-f9d7135acc.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/mythology/fantasy-mythology-dragons-desert-dragon-f9d7135acc.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/mythology/fantasy-mythology-dragons-desert-dragon-f9d7135acc.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "mythology__fantasy-mythology-dragons-emerald-dragon__6d1518293b",
+      "category": "mythology",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/mythology/fantasy-mythology-dragons-emerald-dragon-6d1518293b.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/mythology/fantasy-mythology-dragons-emerald-dragon-6d1518293b.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/mythology/fantasy-mythology-dragons-emerald-dragon-6d1518293b.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/mythology/fantasy-mythology-dragons-emerald-dragon-6d1518293b.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "mythology__fantasy-mythology-dragons-forest-dragon__6aac54a573",
+      "category": "mythology",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/mythology/fantasy-mythology-dragons-forest-dragon-6aac54a573.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/mythology/fantasy-mythology-dragons-forest-dragon-6aac54a573.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/mythology/fantasy-mythology-dragons-forest-dragon-6aac54a573.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/mythology/fantasy-mythology-dragons-forest-dragon-6aac54a573.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "mythology__fantasy-mythology-dragons-icefire-dragon__45b553e37f",
+      "category": "mythology",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/mythology/fantasy-mythology-dragons-icefire-dragon-45b553e37f.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/mythology/fantasy-mythology-dragons-icefire-dragon-45b553e37f.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/mythology/fantasy-mythology-dragons-icefire-dragon-45b553e37f.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/mythology/fantasy-mythology-dragons-icefire-dragon-45b553e37f.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "mythology__fantasy-mythology-dragons-moon-dragon__c3cde44d14",
+      "category": "mythology",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/mythology/fantasy-mythology-dragons-moon-dragon-c3cde44d14.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/mythology/fantasy-mythology-dragons-moon-dragon-c3cde44d14.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/mythology/fantasy-mythology-dragons-moon-dragon-c3cde44d14.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/mythology/fantasy-mythology-dragons-moon-dragon-c3cde44d14.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "mythology__fantasy-mythology-dragons-mountain-dragon__6a735fdcf9",
+      "category": "mythology",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/mythology/fantasy-mythology-dragons-mountain-dragon-6a735fdcf9.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/mythology/fantasy-mythology-dragons-mountain-dragon-6a735fdcf9.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/mythology/fantasy-mythology-dragons-mountain-dragon-6a735fdcf9.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/mythology/fantasy-mythology-dragons-mountain-dragon-6a735fdcf9.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "mythology__fantasy-mythology-dragons-mutant-dragon__4138e5df6c",
+      "category": "mythology",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/mythology/fantasy-mythology-dragons-mutant-dragon-4138e5df6c.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/mythology/fantasy-mythology-dragons-mutant-dragon-4138e5df6c.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/mythology/fantasy-mythology-dragons-mutant-dragon-4138e5df6c.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/mythology/fantasy-mythology-dragons-mutant-dragon-4138e5df6c.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "mythology__fantasy-mythology-dragons-nightmare-dragon__74fe4cc494",
+      "category": "mythology",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/mythology/fantasy-mythology-dragons-nightmare-dragon-74fe4cc494.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/mythology/fantasy-mythology-dragons-nightmare-dragon-74fe4cc494.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/mythology/fantasy-mythology-dragons-nightmare-dragon-74fe4cc494.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/mythology/fantasy-mythology-dragons-nightmare-dragon-74fe4cc494.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "mythology__fantasy-mythology-dragons-obsidian-dragon__497192e27e",
+      "category": "mythology",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/mythology/fantasy-mythology-dragons-obsidian-dragon-497192e27e.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/mythology/fantasy-mythology-dragons-obsidian-dragon-497192e27e.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/mythology/fantasy-mythology-dragons-obsidian-dragon-497192e27e.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/mythology/fantasy-mythology-dragons-obsidian-dragon-497192e27e.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "mythology__fantasy-mythology-dragons-phantom-dragon__f203b16801",
+      "category": "mythology",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/mythology/fantasy-mythology-dragons-phantom-dragon-f203b16801.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/mythology/fantasy-mythology-dragons-phantom-dragon-f203b16801.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/mythology/fantasy-mythology-dragons-phantom-dragon-f203b16801.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/mythology/fantasy-mythology-dragons-phantom-dragon-f203b16801.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "mythology__fantasy-mythology-dragons-poison-dragon__c11ae50cc0",
+      "category": "mythology",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/mythology/fantasy-mythology-dragons-poison-dragon-c11ae50cc0.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/mythology/fantasy-mythology-dragons-poison-dragon-c11ae50cc0.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/mythology/fantasy-mythology-dragons-poison-dragon-c11ae50cc0.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/mythology/fantasy-mythology-dragons-poison-dragon-c11ae50cc0.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "mythology__fantasy-mythology-dragons-river-dragon__251adf6741",
+      "category": "mythology",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/mythology/fantasy-mythology-dragons-river-dragon-251adf6741.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/mythology/fantasy-mythology-dragons-river-dragon-251adf6741.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/mythology/fantasy-mythology-dragons-river-dragon-251adf6741.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/mythology/fantasy-mythology-dragons-river-dragon-251adf6741.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "mythology__fantasy-mythology-dragons-ruby-dragon__4a4ef9b99f",
+      "category": "mythology",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/mythology/fantasy-mythology-dragons-ruby-dragon-4a4ef9b99f.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/mythology/fantasy-mythology-dragons-ruby-dragon-4a4ef9b99f.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/mythology/fantasy-mythology-dragons-ruby-dragon-4a4ef9b99f.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/mythology/fantasy-mythology-dragons-ruby-dragon-4a4ef9b99f.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "mythology__fantasy-mythology-dragons-shadow-dragon__75002e2861",
+      "category": "mythology",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/mythology/fantasy-mythology-dragons-shadow-dragon-75002e2861.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/mythology/fantasy-mythology-dragons-shadow-dragon-75002e2861.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/mythology/fantasy-mythology-dragons-shadow-dragon-75002e2861.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/mythology/fantasy-mythology-dragons-shadow-dragon-75002e2861.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "mythology__fantasy-mythology-dragons-skeletal-dragon__d608fc022a",
+      "category": "mythology",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/mythology/fantasy-mythology-dragons-skeletal-dragon-d608fc022a.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/mythology/fantasy-mythology-dragons-skeletal-dragon-d608fc022a.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/mythology/fantasy-mythology-dragons-skeletal-dragon-d608fc022a.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/mythology/fantasy-mythology-dragons-skeletal-dragon-d608fc022a.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "mythology__fantasy-mythology-dragons-stone-dragon__17b622a032",
+      "category": "mythology",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/mythology/fantasy-mythology-dragons-stone-dragon-17b622a032.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/mythology/fantasy-mythology-dragons-stone-dragon-17b622a032.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/mythology/fantasy-mythology-dragons-stone-dragon-17b622a032.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/mythology/fantasy-mythology-dragons-stone-dragon-17b622a032.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "mythology__fantasy-mythology-dragons-storm-dragon__288ac1b5b8",
+      "category": "mythology",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/mythology/fantasy-mythology-dragons-storm-dragon-288ac1b5b8.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/mythology/fantasy-mythology-dragons-storm-dragon-288ac1b5b8.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/mythology/fantasy-mythology-dragons-storm-dragon-288ac1b5b8.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/mythology/fantasy-mythology-dragons-storm-dragon-288ac1b5b8.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "mythology__fantasy-mythology-dragons-sun-dragon__419f76c99f",
+      "category": "mythology",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/mythology/fantasy-mythology-dragons-sun-dragon-419f76c99f.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/mythology/fantasy-mythology-dragons-sun-dragon-419f76c99f.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/mythology/fantasy-mythology-dragons-sun-dragon-419f76c99f.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/mythology/fantasy-mythology-dragons-sun-dragon-419f76c99f.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "mythology__fantasy-mythology-dragons-swamp-dragon__08f6c6536b",
+      "category": "mythology",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/mythology/fantasy-mythology-dragons-swamp-dragon-08f6c6536b.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/mythology/fantasy-mythology-dragons-swamp-dragon-08f6c6536b.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/mythology/fantasy-mythology-dragons-swamp-dragon-08f6c6536b.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/mythology/fantasy-mythology-dragons-swamp-dragon-08f6c6536b.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "mythology__fantasy-mythology-dragons-thunder-dragon__ba65683680",
+      "category": "mythology",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/mythology/fantasy-mythology-dragons-thunder-dragon-ba65683680.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/mythology/fantasy-mythology-dragons-thunder-dragon-ba65683680.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/mythology/fantasy-mythology-dragons-thunder-dragon-ba65683680.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/mythology/fantasy-mythology-dragons-thunder-dragon-ba65683680.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "nature__camping-in-the-woods-campfire-marshmellow__01497ca28a",
+      "category": "nature",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/nature/camping-in-the-woods-campfire-marshmellow-01497ca28a.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/nature/camping-in-the-woods-campfire-marshmellow-01497ca28a.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/nature/camping-in-the-woods-campfire-marshmellow-01497ca28a.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/nature/camping-in-the-woods-campfire-marshmellow-01497ca28a.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "nature__forest__0ee1cc3333",
+      "category": "nature",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/nature/forest-0ee1cc3333.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/nature/forest-0ee1cc3333.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/nature/forest-0ee1cc3333.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/nature/forest-0ee1cc3333.webp",
+      "reasonCodes": [
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    },
+    {
+      "assetId": "space__chatgpt-image-may-1-2025-12-50-41-am__3e13c05f13",
+      "category": "space",
+      "currentSvgLocalPath": "pipeline/r2-upload/coloring-pages/svg/space/chatgpt-image-may-1-2025-12-50-41-am-3e13c05f13.svg",
+      "currentWebpLocalPath": "pipeline/r2-upload/coloring-pages/webp/space/chatgpt-image-may-1-2025-12-50-41-am-3e13c05f13.webp",
+      "proposedFutureSvgObjectKey": "coloring-pages/svg/space/space-3e13c05f13.svg",
+      "proposedFutureWebpObjectKey": "coloring-pages/webp/space/space-3e13c05f13.webp",
+      "reasonCodes": [
+        "ai_export_name",
+        "generic_name",
+        "timestamp_name",
+        "category_mismatch",
+        "manual_review_required"
+      ],
+      "confidence": "manual_review",
+      "status": "deferred_manual_review"
+    }
+  ]
+}

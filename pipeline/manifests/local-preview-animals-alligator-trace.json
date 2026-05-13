@@ -1,0 +1,195 @@
+{
+  "generatedAt": "2026-05-13T19:11:46.599Z",
+  "runId": "local-preview-animals-alligator-trace",
+  "assetId": "animals__animals-alligator__4feec8505a",
+  "expected": {
+    "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+    "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-alligator-4feec8505a.svg",
+    "svgCorsOrigin": "http://localhost:3005"
+  },
+  "effectivePublicEnv": {
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL": "http://127.0.0.1:4175/coloring-pages"
+  },
+  "sourceItemRecord": {
+    "assetId": "animals__animals-alligator__4feec8505a",
+    "title": "Animals Alligator",
+    "altText": "Animals Alligator coloring page",
+    "categorySlug": "animals",
+    "filenameSlug": "animals-alligator",
+    "assetSubpaths": {
+      "svg": "svg/animals/animals-alligator-4feec8505a.svg",
+      "pngPreview": null,
+      "webpPreview": "webp/animals/animals-alligator-4feec8505a.webp",
+      "thumbnail": null
+    },
+    "dimensions": {
+      "source": {
+        "width": 1024,
+        "height": 1536
+      },
+      "svg": {
+        "width": 800,
+        "height": 1200,
+        "viewBox": "0 0 800 1200"
+      },
+      "pngPreview": null,
+      "thumbnail": null
+    },
+    "downloadAvailable": true,
+    "printAvailable": true,
+    "indexablePerImageRoute": false,
+    "warningFlags": [
+      "soft_warning_category_high_value_spot_check"
+    ],
+    "warningMetadataPolicy": "internal_metadata_only",
+    "runtimeAssetStatus": "uploaded_clean_svg_webp"
+  },
+  "runtimeAvailableItemRecord": {
+    "assetId": "animals__animals-alligator__4feec8505a",
+    "title": "Animals Alligator",
+    "altText": "Animals Alligator coloring page",
+    "categorySlug": "animals",
+    "filenameSlug": "animals-alligator",
+    "assetSubpaths": {
+      "svg": "svg/animals/animals-alligator-4feec8505a.svg",
+      "pngPreview": null,
+      "webpPreview": "webp/animals/animals-alligator-4feec8505a.webp",
+      "thumbnail": null
+    },
+    "dimensions": {
+      "source": {
+        "width": 1024,
+        "height": 1536
+      },
+      "svg": {
+        "width": 800,
+        "height": 1200,
+        "viewBox": "0 0 800 1200"
+      },
+      "pngPreview": null,
+      "thumbnail": null
+    },
+    "downloadAvailable": true,
+    "printAvailable": true,
+    "indexablePerImageRoute": false,
+    "warningFlags": [
+      "soft_warning_category_high_value_spot_check"
+    ],
+    "warningMetadataPolicy": "internal_metadata_only",
+    "runtimeAssetStatus": "uploaded_clean_svg_webp"
+  },
+  "runtimeAssetPathRecord": {
+    "assetId": "animals__animals-alligator__4feec8505a",
+    "category": "animals",
+    "webpPreviewSubpath": "webp/animals/animals-alligator-4feec8505a.webp",
+    "internalSvgSubpath": "svg/animals/animals-alligator-4feec8505a.svg",
+    "cleanWebpObjectKey": "coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+    "cleanSvgObjectKey": "coloring-pages/svg/animals/animals-alligator-4feec8505a.svg",
+    "expectedPublicWebpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+    "expectedPublicSvgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-alligator-4feec8505a.svg",
+    "status": "runtime_available"
+  },
+  "hubMembership": {
+    "assetId": "animals__animals-alligator__4feec8505a",
+    "hubIds": [
+      "hub_animals",
+      "hub_coloring_pages"
+    ],
+    "phase2HubIds": [],
+    "sectionOnlyTopicIds": []
+  },
+  "hubMembershipDetails": [
+    {
+      "hubId": "hub_coloring_pages",
+      "slug": "",
+      "route": "/coloring-pages",
+      "title": "Coloring Pages",
+      "assetCount": 6352
+    },
+    {
+      "hubId": "hub_animals",
+      "slug": "animals",
+      "route": "/coloring-pages/animals",
+      "title": "Animals Coloring Pages",
+      "assetCount": 1450
+    }
+  ],
+  "currentGalleryItemData": {
+    "assetId": "animals__animals-alligator__4feec8505a",
+    "title": "Animals Alligator",
+    "altText": "Animals Alligator coloring page",
+    "assetSubpaths": {
+      "svg": "svg/animals/animals-alligator-4feec8505a.svg",
+      "pngPreview": null,
+      "webpPreview": "webp/animals/animals-alligator-4feec8505a.webp",
+      "thumbnail": null
+    }
+  },
+  "searchEntry": {
+    "assetId": "animals__animals-alligator__4feec8505a",
+    "title": "Animals Alligator",
+    "categorySlug": "animals",
+    "filenameSlug": "animals-alligator",
+    "hubIds": [
+      "hub_animals",
+      "hub_coloring_pages"
+    ],
+    "tags": [
+      "animals",
+      "printable"
+    ],
+    "searchText": "animals alligator animals alligator animals animals coloring pages animals coloring pages animals printable"
+  },
+  "resolvedUrls": {
+    "webpRelativePath": "webp/animals/animals-alligator-4feec8505a.webp",
+    "webpAbsoluteUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+    "svgRelativePath": "svg/animals/animals-alligator-4feec8505a.svg",
+    "svgAbsoluteUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-alligator-4feec8505a.svg",
+    "pngFallbackPath": null,
+    "pngFallbackUrl": null,
+    "previewUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+    "fallbackPreviewUrl": null
+  },
+  "http": {
+    "webp": {
+      "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+      "ok": true,
+      "status": 200,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000, immutable",
+      "accessControlAllowOrigin": "",
+      "location": ""
+    },
+    "svg": {
+      "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-alligator-4feec8505a.svg",
+      "ok": true,
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "cacheControl": "public, max-age=31536000, immutable",
+      "accessControlAllowOrigin": "",
+      "location": ""
+    },
+    "svgCorsWithLocalOrigin": {
+      "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-alligator-4feec8505a.svg",
+      "ok": true,
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "cacheControl": "public, max-age=31536000, immutable",
+      "accessControlAllowOrigin": "http://localhost:3005",
+      "location": ""
+    }
+  },
+  "summary": {
+    "itemFound": true,
+    "runtimeAssetPathFound": true,
+    "hubMembershipFound": true,
+    "webpUrlMatchesExpected": true,
+    "svgUrlMatchesExpected": true,
+    "webpHttpOk": true,
+    "svgHttpOk": true,
+    "svgCorsAllowsLocalOrigin": true,
+    "duplicateColoringPagesPrefix": false,
+    "localUrlUsed": false,
+    "r2DevUsed": false
+  }
+}

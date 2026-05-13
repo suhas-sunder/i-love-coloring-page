@@ -1,0 +1,60 @@
+# Round 5P Working Tree Audit
+
+- Status entries: 51
+- Intended Round 5P entries: 51
+- Generated validation drift: 0
+- Local artifact drift: 0
+- Risky unrelated drift: 0
+- Safe to proceed: true
+
+-  M .gitignore: intended_round_5p_artifact
+-  M AGENTS.md: intended_round_5p_artifact
+-  M package-lock.json: intended_round_5p_artifact
+-  M package.json: intended_round_5p_artifact
+-  M pipeline/manifests/round-5o-clean-bundle-upload-audit.json: intended_round_5p_artifact
+-  M pipeline/manifests/round-5o-local-uploader-lifecycle.json: intended_round_5p_artifact
+-  M pipeline/manifests/round-5o-post-upload-verifier-plan.json: intended_round_5p_artifact
+-  M pipeline/manifests/round-5o-project-context-check.json: intended_round_5p_artifact
+-  M pipeline/manifests/round-5o-upload-dry-run-results.json: intended_round_5p_artifact
+-  M pipeline/manifests/round-5o-upload-failures.json: intended_round_5p_artifact
+-  M pipeline/manifests/round-5o-upload-operation-estimate.json: intended_round_5p_artifact
+-  M pipeline/manifests/round-5o-working-tree-audit.json: intended_round_5p_artifact
+-  M pipeline/reports/round-5o-clean-bundle-upload-audit.md: intended_round_5p_artifact
+-  M pipeline/reports/round-5o-owner-upload-runbook.md: intended_round_5p_artifact
+-  M pipeline/reports/round-5o-project-context-check.md: intended_round_5p_artifact
+-  M pipeline/reports/round-5o-upload-dry-run-report.md: intended_round_5p_artifact
+-  M pipeline/reports/round-5o-upload-operation-estimate.md: intended_round_5p_artifact
+-  M pipeline/reports/round-5o-working-tree-audit.md: intended_round_5p_artifact
+-  M pipeline/scripts/round-4z-cors-media-server.mjs: intended_round_5p_artifact
+-  M pipeline/scripts/round-5o-upload-clean-bundle-to-r2.mjs: intended_round_5p_artifact
+-  M pipeline/tests/round-5o-local-r2-uploader.test.mjs: intended_round_5p_artifact
+- ?? pipeline/config/: intended_round_5p_artifact
+- ?? pipeline/manifests/round-5p-browser-qa-results.json: intended_round_5p_artifact
+- ?? pipeline/manifests/round-5p-clean-bundle-size-audit.json: intended_round_5p_artifact
+- ?? pipeline/manifests/round-5p-compression-acceptance-gate.json: intended_round_5p_artifact
+- ?? pipeline/manifests/round-5p-compression-strategy.json: intended_round_5p_artifact
+- ?? pipeline/manifests/round-5p-contact-sheet-results.json: intended_round_5p_artifact
+- ?? pipeline/manifests/round-5p-optimization-failures.json: intended_round_5p_artifact
+- ?? pipeline/manifests/round-5p-optimized-bundle-integrity.json: intended_round_5p_artifact
+- ?? pipeline/manifests/round-5p-optimized-upload-operation-estimate.json: intended_round_5p_artifact
+- ?? pipeline/manifests/round-5p-project-context-check.json: intended_round_5p_artifact
+- ?? pipeline/manifests/round-5p-svg-optimization-results.json: intended_round_5p_artifact
+- ?? pipeline/manifests/round-5p-webp-optimization-policy.json: intended_round_5p_artifact
+- ?? pipeline/manifests/round-5p-webp-optimization-results.json: intended_round_5p_artifact
+- ?? pipeline/manifests/round-5p-working-tree-audit.json: intended_round_5p_artifact
+- ?? pipeline/reports/round-5p-browser-qa-report.md: intended_round_5p_artifact
+- ?? pipeline/reports/round-5p-clean-bundle-size-audit.md: intended_round_5p_artifact
+- ?? pipeline/reports/round-5p-compression-acceptance-gate.md: intended_round_5p_artifact
+- ?? pipeline/reports/round-5p-compression-strategy.md: intended_round_5p_artifact
+- ?? pipeline/reports/round-5p-contact-sheet-report.md: intended_round_5p_artifact
+- ?? pipeline/reports/round-5p-optimized-bundle-integrity.md: intended_round_5p_artifact
+- ?? pipeline/reports/round-5p-optimized-upload-operation-estimate.md: intended_round_5p_artifact
+- ?? pipeline/reports/round-5p-project-context-check.md: intended_round_5p_artifact
+- ?? pipeline/reports/round-5p-svg-optimization-report.md: intended_round_5p_artifact
+- ?? pipeline/reports/round-5p-webp-optimization-policy.md: intended_round_5p_artifact
+- ?? pipeline/reports/round-5p-webp-optimization-report.md: intended_round_5p_artifact
+- ?? pipeline/reports/round-5p-working-tree-audit.md: intended_round_5p_artifact
+- ?? pipeline/scripts/round-5p-audit-clean-bundle-size.mjs: intended_round_5p_artifact
+- ?? pipeline/scripts/round-5p-browser-qa-runner.cjs: intended_round_5p_artifact
+- ?? pipeline/scripts/round-5p-build-optimized-upload-bundle.mjs: intended_round_5p_artifact
+- ?? pipeline/tests/round-5p-compression.test.mjs: intended_round_5p_artifact

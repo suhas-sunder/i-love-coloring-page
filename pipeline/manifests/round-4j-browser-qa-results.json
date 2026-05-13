@@ -1,0 +1,282 @@
+{
+  "generatedAt": "2026-05-10",
+  "runId": "round-4j-gallery-discovery-ux",
+  "status": "completed_real_media_browser_qa",
+  "localPreview": {
+    "mediaBaseUrl": "http://127.0.0.1:4175/coloring-pages",
+    "staticPreviewUrl": "http://localhost:3005",
+    "mediaServerCommand": "python -m http.server 4175 --bind 127.0.0.1 --directory pipeline/r2-upload",
+    "staticPreviewCommand": "$env:NEXT_PUBLIC_COLORING_ASSET_BASE_URL='http://127.0.0.1:4175/coloring-pages'; npm run build; npx serve out -l 3005"
+  },
+  "pagesInspected": [
+    {
+      "path": "/",
+      "desktop": {
+        "status": "passed",
+        "objects": 14,
+        "localObjects": 14,
+        "searchInputs": 0,
+        "filters": 0,
+        "tabs": 0,
+        "downloadLinks": 16,
+        "printButtons": 8
+      },
+      "mobile": "not_required_for_every_page"
+    },
+    {
+      "path": "/coloring-pages",
+      "desktop": {
+        "status": "passed",
+        "objects": 66,
+        "localObjects": 66,
+        "searchInputs": 1,
+        "filters": 10,
+        "tabs": 7,
+        "downloadLinks": 120,
+        "printButtons": 60
+      },
+      "mobile": {
+        "status": "passed",
+        "viewport": "390x844"
+      }
+    },
+    {
+      "path": "/coloring-pages/plushies",
+      "desktop": {
+        "status": "passed",
+        "objects": 66,
+        "localObjects": 66,
+        "searchInputs": 1,
+        "filters": 9,
+        "tabs": 6,
+        "downloadLinks": 120,
+        "printButtons": 60
+      },
+      "mobile": "not_required_for_every_page"
+    },
+    {
+      "path": "/coloring-pages/animals",
+      "desktop": {
+        "status": "passed",
+        "objects": 66,
+        "localObjects": 66,
+        "searchInputs": 1,
+        "filters": 10,
+        "tabs": 7,
+        "downloadLinks": 120,
+        "printButtons": 60
+      },
+      "mobile": {
+        "status": "passed",
+        "viewport": "390x844",
+        "objects": 66,
+        "localObjects": 66,
+        "filters": 10
+      }
+    },
+    {
+      "path": "/coloring-pages/mandalas",
+      "desktop": {
+        "status": "passed",
+        "objects": 66,
+        "localObjects": 66,
+        "searchInputs": 1,
+        "filters": 8,
+        "tabs": 4,
+        "downloadLinks": 120,
+        "printButtons": 60
+      },
+      "mobile": "not_required_for_every_page"
+    },
+    {
+      "path": "/coloring-pages/anime-girls",
+      "desktop": {
+        "status": "passed",
+        "objects": 66,
+        "localObjects": 66,
+        "searchInputs": 1,
+        "filters": 5,
+        "tabs": 3,
+        "downloadLinks": 120,
+        "printButtons": 60
+      },
+      "mobile": "not_required_for_every_page"
+    },
+    {
+      "path": "/coloring-pages/chibi",
+      "desktop": {
+        "status": "passed",
+        "objects": 66,
+        "localObjects": 66,
+        "searchInputs": 1,
+        "filters": 6,
+        "tabs": 3,
+        "downloadLinks": 120,
+        "printButtons": 60
+      },
+      "mobile": "not_required_for_every_page"
+    },
+    {
+      "path": "/coloring-pages/fantasy",
+      "desktop": {
+        "status": "passed",
+        "objects": 66,
+        "localObjects": 66,
+        "searchInputs": 1,
+        "filters": 8,
+        "tabs": 7,
+        "downloadLinks": 120,
+        "printButtons": 60
+      },
+      "mobile": "not_required_for_every_page"
+    },
+    {
+      "path": "/coloring-pages/christmas",
+      "desktop": {
+        "status": "passed",
+        "objects": 66,
+        "localObjects": 66,
+        "searchInputs": 1,
+        "filters": 6,
+        "tabs": 4,
+        "downloadLinks": 120,
+        "printButtons": 60
+      },
+      "mobile": "not_required_for_every_page"
+    },
+    {
+      "path": "/coloring-pages/halloween",
+      "desktop": {
+        "status": "passed",
+        "objects": 66,
+        "localObjects": 66,
+        "searchInputs": 1,
+        "filters": 6,
+        "tabs": 4,
+        "downloadLinks": 120,
+        "printButtons": 60
+      },
+      "mobile": "not_required_for_every_page"
+    },
+    {
+      "path": "/coloring-pages/geometric",
+      "desktop": {
+        "status": "passed",
+        "objects": 66,
+        "localObjects": 66,
+        "searchInputs": 1,
+        "filters": 8,
+        "tabs": 4,
+        "downloadLinks": 120,
+        "printButtons": 60
+      },
+      "mobile": "not_required_for_every_page"
+    },
+    {
+      "path": "/coloring-pages/cars",
+      "desktop": {
+        "status": "passed",
+        "objects": 66,
+        "localObjects": 66,
+        "searchInputs": 1,
+        "filters": 3,
+        "tabs": 4,
+        "downloadLinks": 120,
+        "printButtons": 60
+      },
+      "mobile": "not_required_for_every_page"
+    },
+    {
+      "path": "/coloring-pages/dinosaurs",
+      "desktop": {
+        "status": "passed",
+        "objects": 66,
+        "localObjects": 66,
+        "searchInputs": 1,
+        "filters": 7,
+        "tabs": 7,
+        "downloadLinks": 120,
+        "printButtons": 60
+      },
+      "mobile": "not_required_for_every_page"
+    },
+    {
+      "path": "/coloring-pages/indoor-plants",
+      "desktop": {
+        "status": "passed",
+        "objects": 66,
+        "localObjects": 66,
+        "searchInputs": 1,
+        "filters": 0,
+        "tabs": 2,
+        "downloadLinks": 120,
+        "printButtons": 60
+      },
+      "mobile": "not_required_for_every_page"
+    }
+  ],
+  "interactionChecks": {
+    "search": {
+      "status": "passed",
+      "page": "/coloring-pages/fantasy",
+      "query": "dragon",
+      "resultText": "Showing 48 of 304 matching pages. Refine the search to narrow the list.",
+      "galleryRenderedCards": 48
+    },
+    "filters": {
+      "status": "passed",
+      "page": "/coloring-pages/fantasy",
+      "selectedFilter": "Cute",
+      "resultText": "Showing 48 of 138 matching pages. Refine the search to narrow the list.",
+      "galleryRenderedCards": 48
+    },
+    "downloadLinks": {
+      "status": "passed",
+      "finding": "PNG and SVG download links used the configured local media base URL where assets were available."
+    },
+    "printButtons": {
+      "status": "passed",
+      "finding": "Print controls were present only on cards with usable PNG or SVG assets."
+    }
+  },
+  "screenshotDirectory": "pipeline/review/round-4j/screenshots",
+  "screenshots": [
+    "pipeline/review/round-4j/screenshots/home-desktop.png",
+    "pipeline/review/round-4j/screenshots/coloring-pages-desktop.png",
+    "pipeline/review/round-4j/screenshots/coloring-pages-plushies-desktop.png",
+    "pipeline/review/round-4j/screenshots/coloring-pages-animals-desktop.png",
+    "pipeline/review/round-4j/screenshots/coloring-pages-mandalas-desktop.png",
+    "pipeline/review/round-4j/screenshots/coloring-pages-anime-girls-desktop.png",
+    "pipeline/review/round-4j/screenshots/coloring-pages-chibi-desktop.png",
+    "pipeline/review/round-4j/screenshots/coloring-pages-fantasy-desktop.png",
+    "pipeline/review/round-4j/screenshots/coloring-pages-christmas-desktop.png",
+    "pipeline/review/round-4j/screenshots/coloring-pages-halloween-desktop.png",
+    "pipeline/review/round-4j/screenshots/coloring-pages-geometric-desktop.png",
+    "pipeline/review/round-4j/screenshots/coloring-pages-cars-desktop.png",
+    "pipeline/review/round-4j/screenshots/coloring-pages-dinosaurs-desktop.png",
+    "pipeline/review/round-4j/screenshots/coloring-pages-indoor-plants-desktop.png",
+    "pipeline/review/round-4j/screenshots/coloring-pages-mobile.png",
+    "pipeline/review/round-4j/screenshots/animals-mobile.png",
+    "pipeline/review/round-4j/screenshots/fantasy-search-dragon.png"
+  ],
+  "summary": {
+    "realMediaRendered": true,
+    "firstScreenGalleryAccess": true,
+    "searchBehaviorPassed": true,
+    "filterBehaviorPassed": true,
+    "featuredImagesRendered": true,
+    "mobileLayoutPassed": true,
+    "appApiRoutePresent": false,
+    "localFilesystemPathLeakFound": false,
+    "oldPrefixFound": false,
+    "doublePrefixFound": false,
+    "previewUnavailableVisible": false,
+    "screenshotsCommitted": false
+  },
+  "notes": [
+    "The homepage, landing page, and inspected hubs rendered real local media from the configured 4175 media server.",
+    "The indoor-plants hub had search and tabs but no visible filter chips because generated non-empty filters did not meet the per-hub threshold.",
+    "Screenshots are local review artifacts under ignored pipeline review folders and are not intended for commit.",
+    "No app/api route, old test prefix, local filesystem path, or repeated coloring-pages prefix was found in inspected pages."
+  ]
+}

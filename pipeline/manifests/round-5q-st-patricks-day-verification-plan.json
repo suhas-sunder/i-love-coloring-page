@@ -1,0 +1,29 @@
+{
+  "generatedAt": "2026-05-13T05:40:53.988Z",
+  "runId": "round-5q-st-patricks-day-verification-plan",
+  "summary": {
+    "category": "st-patricks-day",
+    "publicBaseUrl": "https://assets.ilovecoloringpage.com/coloring-pages",
+    "selectedObjectCount": 40,
+    "svgCount": 20,
+    "webpCount": 20,
+    "allowedPrefixes": [
+      "coloring-pages/svg/st-patricks-day/",
+      "coloring-pages/webp/st-patricks-day/"
+    ],
+    "contentTypes": {
+      "svg": "image/svg+xml",
+      "webp": "image/webp"
+    },
+    "corsOriginsForSvg": [
+      "https://www.ilovecoloringpage.com",
+      "http://localhost:3005",
+      "http://127.0.0.1:3005"
+    ],
+    "noPngOrThumbKeys": true,
+    "noDuplicatePrefix": true
+  },
+  "commands": {
+    "category": "node pipeline/scripts/round-5o-verify-clean-upload-r2.mjs --category st-patricks-day --public-base-url https://assets.ilovecoloringpage.com/coloring-pages"
+  }
+}

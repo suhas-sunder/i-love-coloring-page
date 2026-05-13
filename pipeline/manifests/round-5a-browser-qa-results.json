@@ -1,0 +1,270 @@
+{
+  "generatedAt": "2026-05-11T21:14:38.403Z",
+  "runId": "round-5a-browser-qa",
+  "baseUrl": "http://127.0.0.1:3005",
+  "assetBaseUrl": "http://127.0.0.1:4176/coloring-pages",
+  "pagesInspected": [
+    "/coloring-pages",
+    "/coloring-pages/animals",
+    "/coloring-pages/geometric",
+    "/coloring-pages/christmas",
+    "/contact",
+    "/privacy"
+  ],
+  "screenshots": [
+    {
+      "path": "pipeline/review/round-5a/screenshots/gallery/coloring-pages-1440.png",
+      "route": "/coloring-pages",
+      "width": 1440
+    },
+    {
+      "path": "pipeline/review/round-5a/screenshots/gallery/coloring-pages-animals-1440.png",
+      "route": "/coloring-pages/animals",
+      "width": 1440
+    },
+    {
+      "path": "pipeline/review/round-5a/screenshots/gallery/coloring-pages-geometric-1440.png",
+      "route": "/coloring-pages/geometric",
+      "width": 1440
+    },
+    {
+      "path": "pipeline/review/round-5a/screenshots/gallery/coloring-pages-christmas-1440.png",
+      "route": "/coloring-pages/christmas",
+      "width": 1440
+    },
+    {
+      "path": "pipeline/review/round-5a/screenshots/trust/contact-1440.png",
+      "route": "/contact",
+      "width": 1440
+    },
+    {
+      "path": "pipeline/review/round-5a/screenshots/trust/privacy-1440.png",
+      "route": "/privacy",
+      "width": 1440
+    },
+    {
+      "path": "pipeline/review/round-5a/screenshots/ad-layout/coloring-pages-390.png",
+      "route": "/coloring-pages",
+      "width": 390,
+      "visibleAdvertisementLabelCount": 1
+    },
+    {
+      "path": "pipeline/review/round-5a/screenshots/ad-layout/coloring-pages-768.png",
+      "route": "/coloring-pages",
+      "width": 768,
+      "visibleAdvertisementLabelCount": 1
+    },
+    {
+      "path": "pipeline/review/round-5a/screenshots/ad-layout/coloring-pages-1440.png",
+      "route": "/coloring-pages",
+      "width": 1440,
+      "visibleAdvertisementLabelCount": 1
+    },
+    {
+      "path": "pipeline/review/round-5a/screenshots/ad-layout/coloring-pages-1920.png",
+      "route": "/coloring-pages",
+      "width": 1920,
+      "visibleAdvertisementLabelCount": 3
+    }
+  ],
+  "pageChecks": [
+    {
+      "route": "/coloring-pages",
+      "title": "Printable Coloring Pages | I Love Coloring Page | I Love Coloring Page",
+      "h1Visible": true,
+      "contactEmailVisible": true,
+      "realMediaRenders": true,
+      "printPresent": true,
+      "pngDownloadPresent": true,
+      "noSvgDownload": true,
+      "noJpegWebp": true,
+      "noHorizontalOverflow": true,
+      "liveAdCodeAbsent": true,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-5a/screenshots/gallery/coloring-pages-1440.png",
+          "route": "/coloring-pages",
+          "width": 1440
+        }
+      ]
+    },
+    {
+      "route": "/coloring-pages/animals",
+      "title": "Animals Coloring Pages to Print | I Love Coloring Page",
+      "h1Visible": true,
+      "contactEmailVisible": true,
+      "realMediaRenders": true,
+      "printPresent": true,
+      "pngDownloadPresent": true,
+      "noSvgDownload": true,
+      "noJpegWebp": true,
+      "noHorizontalOverflow": true,
+      "liveAdCodeAbsent": true,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-5a/screenshots/gallery/coloring-pages-animals-1440.png",
+          "route": "/coloring-pages/animals",
+          "width": 1440
+        }
+      ]
+    },
+    {
+      "route": "/coloring-pages/geometric",
+      "title": "Geometric Coloring Pages to Print | I Love Coloring Page",
+      "h1Visible": true,
+      "contactEmailVisible": true,
+      "realMediaRenders": true,
+      "printPresent": true,
+      "pngDownloadPresent": true,
+      "noSvgDownload": true,
+      "noJpegWebp": true,
+      "noHorizontalOverflow": true,
+      "liveAdCodeAbsent": true,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-5a/screenshots/gallery/coloring-pages-geometric-1440.png",
+          "route": "/coloring-pages/geometric",
+          "width": 1440
+        }
+      ]
+    },
+    {
+      "route": "/coloring-pages/christmas",
+      "title": "Christmas Coloring Pages to Print | I Love Coloring Page",
+      "h1Visible": true,
+      "contactEmailVisible": true,
+      "realMediaRenders": true,
+      "printPresent": true,
+      "pngDownloadPresent": true,
+      "noSvgDownload": true,
+      "noJpegWebp": true,
+      "noHorizontalOverflow": true,
+      "liveAdCodeAbsent": true,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-5a/screenshots/gallery/coloring-pages-christmas-1440.png",
+          "route": "/coloring-pages/christmas",
+          "width": 1440
+        }
+      ]
+    },
+    {
+      "route": "/contact",
+      "title": "Contact I Love Coloring Page | I Love Coloring Page",
+      "h1Visible": true,
+      "contactEmailVisible": true,
+      "realMediaRenders": true,
+      "printPresent": true,
+      "pngDownloadPresent": true,
+      "noSvgDownload": true,
+      "noJpegWebp": true,
+      "noHorizontalOverflow": true,
+      "liveAdCodeAbsent": true,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-5a/screenshots/trust/contact-1440.png",
+          "route": "/contact",
+          "width": 1440
+        }
+      ]
+    },
+    {
+      "route": "/privacy",
+      "title": "Privacy Policy | I Love Coloring Page",
+      "h1Visible": true,
+      "contactEmailVisible": true,
+      "realMediaRenders": true,
+      "printPresent": true,
+      "pngDownloadPresent": true,
+      "noSvgDownload": true,
+      "noJpegWebp": true,
+      "noHorizontalOverflow": true,
+      "liveAdCodeAbsent": true,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-5a/screenshots/trust/privacy-1440.png",
+          "route": "/privacy",
+          "width": 1440
+        }
+      ]
+    }
+  ],
+  "adChecks": [
+    {
+      "route": "/coloring-pages",
+      "width": 390,
+      "expectedCount": 1,
+      "visibleAdvertisementLabelCount": 1,
+      "expectedCountMatches": true,
+      "noHorizontalOverflow": true,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-5a/screenshots/ad-layout/coloring-pages-390.png",
+          "route": "/coloring-pages",
+          "width": 390,
+          "visibleAdvertisementLabelCount": 1
+        }
+      ]
+    },
+    {
+      "route": "/coloring-pages",
+      "width": 768,
+      "expectedCount": 1,
+      "visibleAdvertisementLabelCount": 1,
+      "expectedCountMatches": true,
+      "noHorizontalOverflow": true,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-5a/screenshots/ad-layout/coloring-pages-768.png",
+          "route": "/coloring-pages",
+          "width": 768,
+          "visibleAdvertisementLabelCount": 1
+        }
+      ]
+    },
+    {
+      "route": "/coloring-pages",
+      "width": 1440,
+      "expectedCount": 1,
+      "visibleAdvertisementLabelCount": 1,
+      "expectedCountMatches": true,
+      "noHorizontalOverflow": true,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-5a/screenshots/ad-layout/coloring-pages-1440.png",
+          "route": "/coloring-pages",
+          "width": 1440,
+          "visibleAdvertisementLabelCount": 1
+        }
+      ]
+    },
+    {
+      "route": "/coloring-pages",
+      "width": 1920,
+      "expectedCount": 3,
+      "visibleAdvertisementLabelCount": 3,
+      "expectedCountMatches": true,
+      "noHorizontalOverflow": true,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-5a/screenshots/ad-layout/coloring-pages-1920.png",
+          "route": "/coloring-pages",
+          "width": 1920,
+          "visibleAdvertisementLabelCount": 3
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "passed": true,
+    "realMediaRenders": true,
+    "printUsesHighQualityConversionIfCorsWorks": true,
+    "printFallbackCleanIfCorsMissing": true,
+    "pngDownloadWorks": true,
+    "svgDownloadAbsent": true,
+    "jpegWebpControlsAbsent": true,
+    "adDensityMatchesRound4U": true,
+    "noHorizontalOverflow": true,
+    "appApiRouteAdded": false
+  }
+}

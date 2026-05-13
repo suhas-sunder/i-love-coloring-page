@@ -1,0 +1,1778 @@
+{
+  "generatedAt": "2026-05-09",
+  "runId": "round-3b-approved-production-dry-run-line-thick",
+  "dryRunOnly": true,
+  "fullApprovedCorpusProcessed": false,
+  "sourceManifest": "pipeline/manifests/round-3a1-approved-source-images.json",
+  "blockedManifest": "pipeline/manifests/round-3a1-blocked-source-images.json",
+  "warningManifest": "pipeline/manifests/round-3a1-warning-source-images.json",
+  "dryRunSampleManifest": "pipeline/manifests/round-3a1-approved-production-dry-run-sample.json",
+  "totalApprovedCandidateCount": 6566,
+  "totalBlockedSourceCount": 244,
+  "totalWarningSourceCount": 5345,
+  "totalRequested": 125,
+  "totalProcessed": 125,
+  "totalPassed": 125,
+  "totalQuarantined": 0,
+  "totalSkipped": 0,
+  "warningImageCount": 83,
+  "countsByCategory": {
+    "animals": {
+      "requested": 1,
+      "processed": 1,
+      "passed": 1,
+      "quarantined": 0,
+      "skipped": 0,
+      "warningImages": 1
+    },
+    "Animals playing cards": {
+      "requested": 11,
+      "processed": 11,
+      "passed": 11,
+      "quarantined": 0,
+      "skipped": 0,
+      "warningImages": 9
+    },
+    "anime-girls": {
+      "requested": 12,
+      "processed": 12,
+      "passed": 12,
+      "quarantined": 0,
+      "skipped": 0,
+      "warningImages": 12
+    },
+    "birds": {
+      "requested": 4,
+      "processed": 4,
+      "passed": 4,
+      "quarantined": 0,
+      "skipped": 0,
+      "warningImages": 0
+    },
+    "chibi": {
+      "requested": 12,
+      "processed": 12,
+      "passed": 12,
+      "quarantined": 0,
+      "skipped": 0,
+      "warningImages": 12
+    },
+    "christmas": {
+      "requested": 3,
+      "processed": 3,
+      "passed": 3,
+      "quarantined": 0,
+      "skipped": 0,
+      "warningImages": 0
+    },
+    "dinosaurs": {
+      "requested": 2,
+      "processed": 2,
+      "passed": 2,
+      "quarantined": 0,
+      "skipped": 0,
+      "warningImages": 0
+    },
+    "dogs": {
+      "requested": 2,
+      "processed": 2,
+      "passed": 2,
+      "quarantined": 0,
+      "skipped": 0,
+      "warningImages": 0
+    },
+    "dragons": {
+      "requested": 1,
+      "processed": 1,
+      "passed": 1,
+      "quarantined": 0,
+      "skipped": 0,
+      "warningImages": 0
+    },
+    "emoji": {
+      "requested": 1,
+      "processed": 1,
+      "passed": 1,
+      "quarantined": 0,
+      "skipped": 0,
+      "warningImages": 0
+    },
+    "fantasy": {
+      "requested": 9,
+      "processed": 9,
+      "passed": 9,
+      "quarantined": 0,
+      "skipped": 0,
+      "warningImages": 9
+    },
+    "flowers": {
+      "requested": 4,
+      "processed": 4,
+      "passed": 4,
+      "quarantined": 0,
+      "skipped": 0,
+      "warningImages": 4
+    },
+    "gardening": {
+      "requested": 2,
+      "processed": 2,
+      "passed": 2,
+      "quarantined": 0,
+      "skipped": 0,
+      "warningImages": 0
+    },
+    "holiday": {
+      "requested": 10,
+      "processed": 10,
+      "passed": 10,
+      "quarantined": 0,
+      "skipped": 0,
+      "warningImages": 10
+    },
+    "homes": {
+      "requested": 1,
+      "processed": 1,
+      "passed": 1,
+      "quarantined": 0,
+      "skipped": 0,
+      "warningImages": 0
+    },
+    "horror": {
+      "requested": 1,
+      "processed": 1,
+      "passed": 1,
+      "quarantined": 0,
+      "skipped": 0,
+      "warningImages": 1
+    },
+    "indoor-plants": {
+      "requested": 3,
+      "processed": 3,
+      "passed": 3,
+      "quarantined": 0,
+      "skipped": 0,
+      "warningImages": 0
+    },
+    "Insects": {
+      "requested": 3,
+      "processed": 3,
+      "passed": 3,
+      "quarantined": 0,
+      "skipped": 0,
+      "warningImages": 0
+    },
+    "mandala": {
+      "requested": 1,
+      "processed": 1,
+      "passed": 1,
+      "quarantined": 0,
+      "skipped": 0,
+      "warningImages": 0
+    },
+    "mandala-geometry-patterns": {
+      "requested": 16,
+      "processed": 16,
+      "passed": 16,
+      "quarantined": 0,
+      "skipped": 0,
+      "warningImages": 16
+    },
+    "midieval": {
+      "requested": 4,
+      "processed": 4,
+      "passed": 4,
+      "quarantined": 0,
+      "skipped": 0,
+      "warningImages": 4
+    },
+    "mythology": {
+      "requested": 5,
+      "processed": 5,
+      "passed": 5,
+      "quarantined": 0,
+      "skipped": 0,
+      "warningImages": 5
+    },
+    "Nature": {
+      "requested": 1,
+      "processed": 1,
+      "passed": 1,
+      "quarantined": 0,
+      "skipped": 0,
+      "warningImages": 0
+    },
+    "plushie": {
+      "requested": 6,
+      "processed": 6,
+      "passed": 6,
+      "quarantined": 0,
+      "skipped": 0,
+      "warningImages": 0
+    },
+    "reptiles": {
+      "requested": 3,
+      "processed": 3,
+      "passed": 3,
+      "quarantined": 0,
+      "skipped": 0,
+      "warningImages": 0
+    },
+    "sea-life": {
+      "requested": 3,
+      "processed": 3,
+      "passed": 3,
+      "quarantined": 0,
+      "skipped": 0,
+      "warningImages": 0
+    },
+    "space": {
+      "requested": 1,
+      "processed": 1,
+      "passed": 1,
+      "quarantined": 0,
+      "skipped": 0,
+      "warningImages": 0
+    },
+    "st-patricks-day": {
+      "requested": 1,
+      "processed": 1,
+      "passed": 1,
+      "quarantined": 0,
+      "skipped": 0,
+      "warningImages": 0
+    },
+    "world-landmarks": {
+      "requested": 2,
+      "processed": 2,
+      "passed": 2,
+      "quarantined": 0,
+      "skipped": 0,
+      "warningImages": 0
+    }
+  },
+  "countsByFailureReason": {},
+  "presetPolicyUsed": {
+    "recommendationType": "single_default_preset",
+    "presetId": "line-thick",
+    "presetName": "Lineart - Thick",
+    "relevantParameters": {
+      "traceMode": "single",
+      "preprocess": "none",
+      "threshold": 206,
+      "turdSize": 4,
+      "optTolerance": 0.44,
+      "turnPolicy": "black"
+    }
+  },
+  "conversionWrapperUsed": {
+    "modulePath": "pipeline/scripts/round-2-bakeoff.mjs",
+    "exportName": "runSingleConversion",
+    "runtimeExportName": "loadIloveSvgRuntime",
+    "underlyingPath": "ilovesvg/app/shared/tracing/serverFallback.server.ts",
+    "underlyingFunctions": [
+      "runSharedRasterNormalization",
+      "runSharedPotraceSvgTrace",
+      "annotateSharedSingleTraceSvg",
+      "applyTraceSvgOutputSettings"
+    ]
+  },
+  "validation": {
+    "isValid": true,
+    "totalSamples": 125,
+    "approvedSampleCount": 125,
+    "blockedSamplePaths": [],
+    "missingApprovedPaths": [],
+    "duplicateSamplePaths": [],
+    "warningApprovedPaths": [
+      "images/animals/animals-butterflies.png",
+      "images/Animals playing cards/animals-armadillo.png",
+      "images/Animals playing cards/animals-armadillos-wildlife.png",
+      "images/Animals playing cards/animals-armadillos.png",
+      "images/Animals playing cards/animals-baboon.png",
+      "images/Animals playing cards/animals-baboons-hanging.png",
+      "images/Animals playing cards/animals-baboons.png",
+      "images/Animals playing cards/animals-badger.png",
+      "images/Animals playing cards/animals-badgers-wildlife.png",
+      "images/Animals playing cards/animals-badgers.png",
+      "images/anime-girls/anime-girl-bat-hoodie-plushie.png",
+      "images/anime-girls/anime-girl-cerberus-gate-guard.png",
+      "images/anime-girls/anime-girl-dancing-ballerina.png",
+      "images/anime-girls/anime-girl-summoning-cute-hearts.png",
+      "images/anime-girls/anime-girl-summoning-jutsu-armadillo-plushies.png",
+      "images/anime-girls/anime-girl-summoning-jutsu-crystal-dragon.png",
+      "images/anime-girls/anime-girl-summoning-jutsu-raccoons.png",
+      "images/anime-girls/anime-girl-summoning-jutsu-wolves.png",
+      "images/anime-girls/anime-girl-summoning-magic-musical-sword-plushies.png",
+      "images/anime-girls/anime-girl-summoning-mushroom-fairy-plushies.png",
+      "images/anime-girls/anime-girl-vampire-siege.png",
+      "images/anime-girls/old-cards/anime-girl-thief.png",
+      "images/chibi/chibi-animals-pets-dogs-old-english-sheepdog.png",
+      "images/chibi/chibi-Dragon.png",
+      "images/chibi/chibi-enchanted-forest-fairy-dancing-under-moonlight.png",
+      "images/chibi/chibi-flowers-paper-daisy-kawaii.png",
+      "images/chibi/chibi-holiday-halloween-ghost-floating-in-haunted-hallway-coloring-page.png",
+      "images/chibi/chibi-holiday-halloween-witch-hat-and-potion-bottles-coloring-page.png",
+      "images/chibi/chibi-leviathan-dragon.png",
+      "images/chibi/chibi-mushroom-artists-conk-kawaii.png",
+      "images/chibi/chibi-mushroom-friend.png",
+      "images/chibi/chibi-plushie-duck.png",
+      "images/chibi/chibi-plushie-flamingo.png",
+      "images/chibi/chibi-plushie-kiwi-bird.png",
+      "images/fantasy/fantasy-chibi-phoenix-flight.png",
+      "images/fantasy/fantasy-creatures-dragon.png",
+      "images/fantasy/fantasy-creatures-minotaur.png",
+      "images/fantasy/fantasy-creatures-storm-elemental.png",
+      "images/fantasy/fantasy-dark-sorcerer-void-gate.png",
+      "images/fantasy/fantasy-mountain-giant.png",
+      "images/fantasy/fantasy-ranger-forest-hunt.png",
+      "images/fantasy/fantasy-river-guardian.png",
+      "images/fantasy/fantasy-scout-jungle-hunt.png",
+      "images/flowers/flowers-aster.png",
+      "images/flowers/flowers-peach-blossom.png",
+      "images/flowers/gardening-in-field-of-flowers-iceland.png",
+      "images/flowers/lowers-snowdrop.png",
+      "images/holiday/holiday-birthday-celebration-plushie-antelope-family.png",
+      "images/holiday/holiday-birthday-celebration-plushie-sloth-baby-family.png",
+      "images/holiday/holiday-birthday-celebration-plushie-tiger-family.png",
+      "images/holiday/holiday-christmas-plushie-robot-family.png",
+      "images/holiday/holiday-christmas-plushie-tortoise-family.png",
+      "images/holiday/holiday-halloween-costume-plushie-chameleon-family.png",
+      "images/holiday/holiday-halloween-costume-plushie-peacock-family.png",
+      "images/holiday/holiday-halloween-costume-plushie-penguin-family.png",
+      "images/holiday/holiday-halloween-costume-plushie-snail-family.png",
+      "images/holiday/holiday-halloween-witch-flying-coloring-page.png",
+      "images/horror/zombies.png",
+      "images/mandala-geometry-patterns/mandala-geometry-patterns-bakery-spatula-and-dough.png",
+      "images/mandala-geometry-patterns/mandala-geometry-patterns-dogs-english-springer-spaniel.png",
+      "images/mandala-geometry-patterns/mandala-geometry-patterns-emergency-police-car-driving.png",
+      "images/mandala-geometry-patterns/mandala-geometry-patterns-flowers-protea.png",
+      "images/mandala-geometry-patterns/mandala-geometry-patterns-japan-itsukushima-shrine.png",
+      "images/mandala-geometry-patterns/mandala-geometry-patterns-japan-takoyaki-snack.png",
+      "images/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-cracked-cap-boletus.png",
+      "images/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-ghost-fungus-glowing.png",
+      "images/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-morel.png",
+      "images/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-pine-mushroom-scene.png",
+      "images/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-puffball-common.png",
+      "images/mandala-geometry-patterns/mandala-geometry-patterns-plushie-alpaca-animals.png",
+      "images/mandala-geometry-patterns/mandala-geometry-patterns-sushi-spider-roll.png",
+      "images/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-excursion-train-crossing-historic-trestle-bridge.png",
+      "images/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-audi-r8.png",
+      "images/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-electric-sports-car-charging.png",
+      "images/midieval/midieval-fantasy-monastery-cloister.png",
+      "images/midieval/midieval-fantasy-queen-gown.png",
+      "images/midieval/midieval-fantasy-stable-boy.png",
+      "images/midieval/midieval-fantasy-stone-circle.png",
+      "images/mythology/mythology-anansi.png",
+      "images/mythology/mythology-aten.png",
+      "images/mythology/mythology-indra.png",
+      "images/mythology/mythology-nanabozho.png",
+      "images/mythology/mythology-nyx.png"
+    ]
+  },
+  "representativeOutputExamples": [
+    {
+      "assetId": "animals__animals-butterflies__016ffbb0de",
+      "category": "animals",
+      "svgPath": "pipeline/production/dry-run/assets/svg/animals/animals-butterflies-016ffbb0de.svg",
+      "pngPreviewPath": "pipeline/production/dry-run/assets/png/animals/animals-butterflies-016ffbb0de.png",
+      "thumbnailPath": "pipeline/production/dry-run/assets/thumbs/animals/animals-butterflies-016ffbb0de-thumb.png"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-armadillo__1a6eaccdef",
+      "category": "Animals playing cards",
+      "svgPath": "pipeline/production/dry-run/assets/svg/animals-playing-cards/animals-armadillo-1a6eaccdef.svg",
+      "pngPreviewPath": "pipeline/production/dry-run/assets/png/animals-playing-cards/animals-armadillo-1a6eaccdef.png",
+      "thumbnailPath": "pipeline/production/dry-run/assets/thumbs/animals-playing-cards/animals-armadillo-1a6eaccdef-thumb.png"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-armadillos__50db4716e5",
+      "category": "Animals playing cards",
+      "svgPath": "pipeline/production/dry-run/assets/svg/animals-playing-cards/animals-armadillos-50db4716e5.svg",
+      "pngPreviewPath": "pipeline/production/dry-run/assets/png/animals-playing-cards/animals-armadillos-50db4716e5.png",
+      "thumbnailPath": "pipeline/production/dry-run/assets/thumbs/animals-playing-cards/animals-armadillos-50db4716e5-thumb.png"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-armadillos-wildlife__f2912c1ad5",
+      "category": "Animals playing cards",
+      "svgPath": "pipeline/production/dry-run/assets/svg/animals-playing-cards/animals-armadillos-wildlife-f2912c1ad5.svg",
+      "pngPreviewPath": "pipeline/production/dry-run/assets/png/animals-playing-cards/animals-armadillos-wildlife-f2912c1ad5.png",
+      "thumbnailPath": "pipeline/production/dry-run/assets/thumbs/animals-playing-cards/animals-armadillos-wildlife-f2912c1ad5-thumb.png"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-baboon__3019f9ef3d",
+      "category": "Animals playing cards",
+      "svgPath": "pipeline/production/dry-run/assets/svg/animals-playing-cards/animals-baboon-3019f9ef3d.svg",
+      "pngPreviewPath": "pipeline/production/dry-run/assets/png/animals-playing-cards/animals-baboon-3019f9ef3d.png",
+      "thumbnailPath": "pipeline/production/dry-run/assets/thumbs/animals-playing-cards/animals-baboon-3019f9ef3d-thumb.png"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-baboons__5f19666c69",
+      "category": "Animals playing cards",
+      "svgPath": "pipeline/production/dry-run/assets/svg/animals-playing-cards/animals-baboons-5f19666c69.svg",
+      "pngPreviewPath": "pipeline/production/dry-run/assets/png/animals-playing-cards/animals-baboons-5f19666c69.png",
+      "thumbnailPath": "pipeline/production/dry-run/assets/thumbs/animals-playing-cards/animals-baboons-5f19666c69-thumb.png"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-baboons-hanging__398854ec28",
+      "category": "Animals playing cards",
+      "svgPath": "pipeline/production/dry-run/assets/svg/animals-playing-cards/animals-baboons-hanging-398854ec28.svg",
+      "pngPreviewPath": "pipeline/production/dry-run/assets/png/animals-playing-cards/animals-baboons-hanging-398854ec28.png",
+      "thumbnailPath": "pipeline/production/dry-run/assets/thumbs/animals-playing-cards/animals-baboons-hanging-398854ec28-thumb.png"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-badger__46333741c3",
+      "category": "Animals playing cards",
+      "svgPath": "pipeline/production/dry-run/assets/svg/animals-playing-cards/animals-badger-46333741c3.svg",
+      "pngPreviewPath": "pipeline/production/dry-run/assets/png/animals-playing-cards/animals-badger-46333741c3.png",
+      "thumbnailPath": "pipeline/production/dry-run/assets/thumbs/animals-playing-cards/animals-badger-46333741c3-thumb.png"
+    }
+  ],
+  "records": [
+    {
+      "sourceRelativePath": "images/animals/animals-butterflies.png",
+      "category": "animals",
+      "assetId": "animals__animals-butterflies__016ffbb0de",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/Animals playing cards/animals-armadillo.png",
+      "category": "Animals playing cards",
+      "assetId": "animals-playing-cards__animals-armadillo__1a6eaccdef",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_duplicate_filename_collision_handled",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/Animals playing cards/animals-armadillos-wildlife.png",
+      "category": "Animals playing cards",
+      "assetId": "animals-playing-cards__animals-armadillos-wildlife__f2912c1ad5",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_duplicate_filename_collision_handled",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/Animals playing cards/animals-armadillos.png",
+      "category": "Animals playing cards",
+      "assetId": "animals-playing-cards__animals-armadillos__50db4716e5",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_duplicate_filename_collision_handled",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/Animals playing cards/animals-baboon.png",
+      "category": "Animals playing cards",
+      "assetId": "animals-playing-cards__animals-baboon__3019f9ef3d",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_duplicate_filename_collision_handled",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/Animals playing cards/animals-baboons-hanging.png",
+      "category": "Animals playing cards",
+      "assetId": "animals-playing-cards__animals-baboons-hanging__398854ec28",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_duplicate_filename_collision_handled",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/Animals playing cards/animals-baboons.png",
+      "category": "Animals playing cards",
+      "assetId": "animals-playing-cards__animals-baboons__5f19666c69",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_duplicate_filename_collision_handled",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/Animals playing cards/animals-badger.png",
+      "category": "Animals playing cards",
+      "assetId": "animals-playing-cards__animals-badger__46333741c3",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_duplicate_filename_collision_handled",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/Animals playing cards/animals-badgers-wildlife.png",
+      "category": "Animals playing cards",
+      "assetId": "animals-playing-cards__animals-badgers-wildlife__d717f79524",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_duplicate_filename_collision_handled",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/Animals playing cards/animals-badgers.png",
+      "category": "Animals playing cards",
+      "assetId": "animals-playing-cards__animals-badgers__701e4f01fa",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_duplicate_filename_collision_handled",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/Animals playing cards/cats-playing-cards.png",
+      "category": "Animals playing cards",
+      "assetId": "animals-playing-cards__cats-playing-cards__c22648db9b",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/Animals playing cards/mice-playing-cards.png",
+      "category": "Animals playing cards",
+      "assetId": "animals-playing-cards__mice-playing-cards__4c3ddb81e4",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-bat-hoodie-plushie.png",
+      "category": "anime-girls",
+      "assetId": "anime-girls__anime-girl-bat-hoodie-plushie__001c0e28be",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-cerberus-gate-guard.png",
+      "category": "anime-girls",
+      "assetId": "anime-girls__anime-girl-cerberus-gate-guard__17fd627531",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-dancing-ballerina.png",
+      "category": "anime-girls",
+      "assetId": "anime-girls__anime-girl-dancing-ballerina__5a1b3b183a",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-cute-hearts.png",
+      "category": "anime-girls",
+      "assetId": "anime-girls__anime-girl-summoning-cute-hearts__2cdbd95749",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-armadillo-plushies.png",
+      "category": "anime-girls",
+      "assetId": "anime-girls__anime-girl-summoning-jutsu-armadillo-plushies__d5cf38eb87",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-crystal-dragon.png",
+      "category": "anime-girls",
+      "assetId": "anime-girls__anime-girl-summoning-jutsu-crystal-dragon__ba9a35e40b",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-raccoons.png",
+      "category": "anime-girls",
+      "assetId": "anime-girls__anime-girl-summoning-jutsu-raccoons__443a729e66",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-wolves.png",
+      "category": "anime-girls",
+      "assetId": "anime-girls__anime-girl-summoning-jutsu-wolves__ff6d1d0488",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-magic-musical-sword-plushies.png",
+      "category": "anime-girls",
+      "assetId": "anime-girls__anime-girl-summoning-magic-musical-sword-plushies__72066c4f84",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-summoning-mushroom-fairy-plushies.png",
+      "category": "anime-girls",
+      "assetId": "anime-girls__anime-girl-summoning-mushroom-fairy-plushies__a1778cbdbd",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/anime-girl-vampire-siege.png",
+      "category": "anime-girls",
+      "assetId": "anime-girls__anime-girl-vampire-siege__e9ce96c8ad",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/anime-girls/old-cards/anime-girl-thief.png",
+      "category": "anime-girls",
+      "assetId": "anime-girls__anime-girl-thief__8a5252f8da",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_duplicate_filename_collision_handled",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/birds/birds-booby.png",
+      "category": "birds",
+      "assetId": "birds__birds-booby__0116ccb712",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/birds/birds-cardinal.png",
+      "category": "birds",
+      "assetId": "birds__birds-cardinal__8fa3cbca04",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/birds/birds-macaw-parrot-sitting.png",
+      "category": "birds",
+      "assetId": "birds__birds-macaw-parrot-sitting__ffc0bb9e57",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/birds/birds-snow-bunting.png",
+      "category": "birds",
+      "assetId": "birds__birds-snow-bunting__55540ffe00",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-animals-pets-dogs-old-english-sheepdog.png",
+      "category": "chibi",
+      "assetId": "chibi__chibi-animals-pets-dogs-old-english-sheepdog__ff97a096c3",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-Dragon.png",
+      "category": "chibi",
+      "assetId": "chibi__chibi-dragon__5c5b02a5f9",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-enchanted-forest-fairy-dancing-under-moonlight.png",
+      "category": "chibi",
+      "assetId": "chibi__chibi-enchanted-forest-fairy-dancing-under-moonlight__00578c2506",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-flowers-paper-daisy-kawaii.png",
+      "category": "chibi",
+      "assetId": "chibi__chibi-flowers-paper-daisy-kawaii__14c5b1714c",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-holiday-halloween-ghost-floating-in-haunted-hallway-coloring-page.png",
+      "category": "chibi",
+      "assetId": "chibi__chibi-holiday-halloween-ghost-floating-in-haunted-hallway-coloring-page__2ecd4724a1",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-holiday-halloween-witch-hat-and-potion-bottles-coloring-page.png",
+      "category": "chibi",
+      "assetId": "chibi__chibi-holiday-halloween-witch-hat-and-potion-bottles-coloring-page__74c5898630",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-leviathan-dragon.png",
+      "category": "chibi",
+      "assetId": "chibi__chibi-leviathan-dragon__8b4e46e982",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-mushroom-artists-conk-kawaii.png",
+      "category": "chibi",
+      "assetId": "chibi__chibi-mushroom-artists-conk-kawaii__e5ba88231b",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-mushroom-friend.png",
+      "category": "chibi",
+      "assetId": "chibi__chibi-mushroom-friend__ce358f4b21",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-plushie-duck.png",
+      "category": "chibi",
+      "assetId": "chibi__chibi-plushie-duck__b6c74cea43",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-plushie-flamingo.png",
+      "category": "chibi",
+      "assetId": "chibi__chibi-plushie-flamingo__a32d621260",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/chibi/chibi-plushie-kiwi-bird.png",
+      "category": "chibi",
+      "assetId": "chibi__chibi-plushie-kiwi-bird__4205a7df9c",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/christmas/holiday-christmas-angel-holding-candle-in-snowy-night-coloring-page.png",
+      "category": "christmas",
+      "assetId": "christmas__holiday-christmas-angel-holding-candle-in-snowy-night-coloring-page__fde31c074f",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/christmas/holiday-christmas-animals-kawaii-foxes.png",
+      "category": "christmas",
+      "assetId": "christmas__holiday-christmas-animals-kawaii-foxes__70f122f707",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/christmas/holiday-christmas-animals-unicorns.png",
+      "category": "christmas",
+      "assetId": "christmas__holiday-christmas-animals-unicorns__000d59a861",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/dinosaurs/prehistoric-extinction.png",
+      "category": "dinosaurs",
+      "assetId": "dinosaurs__prehistoric-extinction__fb644701eb",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/dinosaurs/prehistoric-mosasaurus.png",
+      "category": "dinosaurs",
+      "assetId": "dinosaurs__prehistoric-mosasaurus__08d7ae3d1a",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/dogs/dogs-border-collie-playing.png",
+      "category": "dogs",
+      "assetId": "dogs__dogs-border-collie-playing__ff795b9bb4",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/dogs/dogs-samoyed.png",
+      "category": "dogs",
+      "assetId": "dogs__dogs-samoyed__016ca48e4a",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/dragons/fire-dragon-playing-card.png",
+      "category": "dragons",
+      "assetId": "dragons__fire-dragon-playing-card__bb5d73e94b",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/emoji/U+1F605-grinning-face-with-sweat.png",
+      "category": "emoji",
+      "assetId": "emoji__u-1f605-grinning-face-with-sweat__5348e43db7",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-chibi-phoenix-flight.png",
+      "category": "fantasy",
+      "assetId": "fantasy__fantasy-chibi-phoenix-flight__bd83c0d408",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-creatures-dragon.png",
+      "category": "fantasy",
+      "assetId": "fantasy__fantasy-creatures-dragon__3d2c737c54",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-creatures-minotaur.png",
+      "category": "fantasy",
+      "assetId": "fantasy__fantasy-creatures-minotaur__dfe8580916",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-creatures-storm-elemental.png",
+      "category": "fantasy",
+      "assetId": "fantasy__fantasy-creatures-storm-elemental__5e2dd9a074",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-dark-sorcerer-void-gate.png",
+      "category": "fantasy",
+      "assetId": "fantasy__fantasy-dark-sorcerer-void-gate__ff7080e573",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-mountain-giant.png",
+      "category": "fantasy",
+      "assetId": "fantasy__fantasy-mountain-giant__9d22f5b1ae",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-ranger-forest-hunt.png",
+      "category": "fantasy",
+      "assetId": "fantasy__fantasy-ranger-forest-hunt__1eca4c2d96",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-river-guardian.png",
+      "category": "fantasy",
+      "assetId": "fantasy__fantasy-river-guardian__82f7693f64",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/fantasy/fantasy-scout-jungle-hunt.png",
+      "category": "fantasy",
+      "assetId": "fantasy__fantasy-scout-jungle-hunt__006c2853eb",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/flowers/flowers-aster.png",
+      "category": "flowers",
+      "assetId": "flowers__flowers-aster__fe9cc46a65",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/flowers/flowers-peach-blossom.png",
+      "category": "flowers",
+      "assetId": "flowers__flowers-peach-blossom__a8803e3513",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/flowers/gardening-in-field-of-flowers-iceland.png",
+      "category": "flowers",
+      "assetId": "flowers__gardening-in-field-of-flowers-iceland__5d9b45744f",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/flowers/lowers-snowdrop.png",
+      "category": "flowers",
+      "assetId": "flowers__lowers-snowdrop__01c784b5b3",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/gardening/gardening-mushroom-candlesnuff-fungus.png",
+      "category": "gardening",
+      "assetId": "gardening__gardening-mushroom-candlesnuff-fungus__fa542d3cd7",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/gardening/gardening-mushroom-lions-mane.png",
+      "category": "gardening",
+      "assetId": "gardening__gardening-mushroom-lions-mane__0719ae2d97",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/holiday/holiday-birthday-celebration-plushie-antelope-family.png",
+      "category": "holiday",
+      "assetId": "holiday__holiday-birthday-celebration-plushie-antelope-family__cf8835f947",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/holiday/holiday-birthday-celebration-plushie-sloth-baby-family.png",
+      "category": "holiday",
+      "assetId": "holiday__holiday-birthday-celebration-plushie-sloth-baby-family__0031534ec6",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/holiday/holiday-birthday-celebration-plushie-tiger-family.png",
+      "category": "holiday",
+      "assetId": "holiday__holiday-birthday-celebration-plushie-tiger-family__3bd99a4ccd",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/holiday/holiday-christmas-plushie-robot-family.png",
+      "category": "holiday",
+      "assetId": "holiday__holiday-christmas-plushie-robot-family__ff88fbd969",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/holiday/holiday-christmas-plushie-tortoise-family.png",
+      "category": "holiday",
+      "assetId": "holiday__holiday-christmas-plushie-tortoise-family__5a1ad1e8fe",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/holiday/holiday-halloween-costume-plushie-chameleon-family.png",
+      "category": "holiday",
+      "assetId": "holiday__holiday-halloween-costume-plushie-chameleon-family__9b87e124ef",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/holiday/holiday-halloween-costume-plushie-peacock-family.png",
+      "category": "holiday",
+      "assetId": "holiday__holiday-halloween-costume-plushie-peacock-family__7c3140864f",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/holiday/holiday-halloween-costume-plushie-penguin-family.png",
+      "category": "holiday",
+      "assetId": "holiday__holiday-halloween-costume-plushie-penguin-family__1a247683b4",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/holiday/holiday-halloween-costume-plushie-snail-family.png",
+      "category": "holiday",
+      "assetId": "holiday__holiday-halloween-costume-plushie-snail-family__b54dbecfd6",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/holiday/holiday-halloween-witch-flying-coloring-page.png",
+      "category": "holiday",
+      "assetId": "holiday__holiday-halloween-witch-flying-coloring-page__e67904355e",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/homes/homes-treehouse-with-slide.png",
+      "category": "homes",
+      "assetId": "homes__homes-treehouse-with-slide__0878b9ca71",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/horror/zombies.png",
+      "category": "horror",
+      "assetId": "horror__zombies__8638f6539a",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/indoor-plants/indoor-plants-english-ivy.png",
+      "category": "indoor-plants",
+      "assetId": "indoor-plants__indoor-plants-english-ivy__fe8b320a05",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/indoor-plants/indoor-plants-hoya-obovata.png",
+      "category": "indoor-plants",
+      "assetId": "indoor-plants__indoor-plants-hoya-obovata__6d4f5fa27f",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/indoor-plants/indoor-plants-peace-lily.png",
+      "category": "indoor-plants",
+      "assetId": "indoor-plants__indoor-plants-peace-lily__01c9f71c71",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/Insects/insects-blue-morpho-butterfly-in-rainforest.png",
+      "category": "Insects",
+      "assetId": "insects__insects-blue-morpho-butterfly-in-rainforest__feb57c5778",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/Insects/insects-damselfly-perched-on-reed.png",
+      "category": "Insects",
+      "assetId": "insects__insects-damselfly-perched-on-reed__0367b38c15",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/Insects/insects-scorpion.png",
+      "category": "Insects",
+      "assetId": "insects__insects-scorpion__904a5e6afa",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/mandala/mandala-geometry-patterns-geometric-mandala.png",
+      "category": "mandala",
+      "assetId": "mandala__mandala-geometry-patterns-geometric-mandala__3369a57b28",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-bakery-spatula-and-dough.png",
+      "category": "mandala-geometry-patterns",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-bakery-spatula-and-dough__642ca300c7",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-dogs-english-springer-spaniel.png",
+      "category": "mandala-geometry-patterns",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-dogs-english-springer-spaniel__7720e1c921",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-emergency-police-car-driving.png",
+      "category": "mandala-geometry-patterns",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-emergency-police-car-driving__f10bdc1e5a",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-flowers-protea.png",
+      "category": "mandala-geometry-patterns",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-flowers-protea__402c748e10",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-japan-itsukushima-shrine.png",
+      "category": "mandala-geometry-patterns",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-japan-itsukushima-shrine__9b16382a41",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-japan-takoyaki-snack.png",
+      "category": "mandala-geometry-patterns",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-japan-takoyaki-snack__10b7a9eb2e",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-cracked-cap-boletus.png",
+      "category": "mandala-geometry-patterns",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-mushroom-cracked-cap-boletus__dd7bd7f449",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-ghost-fungus-glowing.png",
+      "category": "mandala-geometry-patterns",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-mushroom-ghost-fungus-glowing__caa954feb8",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-morel.png",
+      "category": "mandala-geometry-patterns",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-mushroom-morel__aa9b0f6932",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-pine-mushroom-scene.png",
+      "category": "mandala-geometry-patterns",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-mushroom-pine-mushroom-scene__bb22905097",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-puffball-common.png",
+      "category": "mandala-geometry-patterns",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-mushroom-puffball-common__881c0835ce",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-plushie-alpaca-animals.png",
+      "category": "mandala-geometry-patterns",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-alpaca-animals__ffd2a425f4",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-sushi-spider-roll.png",
+      "category": "mandala-geometry-patterns",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-sushi-spider-roll__307abddfe7",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-excursion-train-crossing-historic-trestle-bridge.png",
+      "category": "mandala-geometry-patterns",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-excursion-train-crossing-hi__00002da099",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-audi-r8.png",
+      "category": "mandala-geometry-patterns",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehicle-cars-audi-r8__209ad97c54",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-electric-sports-car-charging.png",
+      "category": "mandala-geometry-patterns",
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehicle-cars-electric-sports-car-charging__545b0f228c",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/midieval/midieval-fantasy-monastery-cloister.png",
+      "category": "midieval",
+      "assetId": "midieval__midieval-fantasy-monastery-cloister__608578259b",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/midieval/midieval-fantasy-queen-gown.png",
+      "category": "midieval",
+      "assetId": "midieval__midieval-fantasy-queen-gown__fd1cc7038c",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/midieval/midieval-fantasy-stable-boy.png",
+      "category": "midieval",
+      "assetId": "midieval__midieval-fantasy-stable-boy__025b122195",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/midieval/midieval-fantasy-stone-circle.png",
+      "category": "midieval",
+      "assetId": "midieval__midieval-fantasy-stone-circle__a9d9dcca7d",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_high_detail",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_possible_complexity",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mythology/mythology-anansi.png",
+      "category": "mythology",
+      "assetId": "mythology__mythology-anansi__3abc71e1a4",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mythology/mythology-aten.png",
+      "category": "mythology",
+      "assetId": "mythology__mythology-aten__77cb657bc2",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mythology/mythology-indra.png",
+      "category": "mythology",
+      "assetId": "mythology__mythology-indra__fef3738b04",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mythology/mythology-nanabozho.png",
+      "category": "mythology",
+      "assetId": "mythology__mythology-nanabozho__b7983e7d0a",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/mythology/mythology-nyx.png",
+      "category": "mythology",
+      "assetId": "mythology__mythology-nyx__041988d5ee",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": [
+        "soft_warning_category_high_value_spot_check",
+        "soft_warning_human_adjacent",
+        "soft_warning_needs_spot_check",
+        "soft_warning_restored_from_round_3a_blocked"
+      ]
+    },
+    {
+      "sourceRelativePath": "images/Nature/camping-in-the-woods-campfire-marshmellow.png",
+      "category": "Nature",
+      "assetId": "nature__camping-in-the-woods-campfire-marshmellow__01497ca28a",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/plushie/plushie-baby-kitsune.png",
+      "category": "plushie",
+      "assetId": "plushie__plushie-baby-kitsune__2e29e1859a",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/plushie/plushie-coyote.png",
+      "category": "plushie",
+      "assetId": "plushie__plushie-coyote__d06fcbed29",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/plushie/plushie-mouse.png",
+      "category": "plushie",
+      "assetId": "plushie__plushie-mouse__fecc100c29",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/plushie/plushie-prehistoric-megalodon-family.png",
+      "category": "plushie",
+      "assetId": "plushie__plushie-prehistoric-megalodon-family__95304a8f2d",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/plushie/plushie-prehistoric-mosasaurus.png",
+      "category": "plushie",
+      "assetId": "plushie__plushie-prehistoric-mosasaurus__01b25e6877",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/plushie/plushie-snail-family.png",
+      "category": "plushie",
+      "assetId": "plushie__plushie-snail-family__62d6d7a905",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/reptiles/reptiles-leatherback-turtle.png",
+      "category": "reptiles",
+      "assetId": "reptiles__reptiles-leatherback-turtle__fb44b658b0",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/reptiles/reptiles-olm-cave-salamander.png",
+      "category": "reptiles",
+      "assetId": "reptiles__reptiles-olm-cave-salamander__9283ec6efd",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/reptiles/reptiles-salamander.png",
+      "category": "reptiles",
+      "assetId": "reptiles__reptiles-salamander__0041b7dd48",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/sea-life/sea-life-angelfish-swimming-in-reef.png",
+      "category": "sea-life",
+      "assetId": "sea-life__sea-life-angelfish-swimming-in-reef__95e70aed68",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/sea-life/sea-life-clownfish-pair-in-sea-anemone.png",
+      "category": "sea-life",
+      "assetId": "sea-life__sea-life-clownfish-pair-in-sea-anemone__ff8430fea7",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/sea-life/sea-life-tuna.png",
+      "category": "sea-life",
+      "assetId": "sea-life__sea-life-tuna__0303a5dafd",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/space/ChatGPT Image May 1, 2025, 12_50_41 AM.png",
+      "category": "space",
+      "assetId": "space__chatgpt-image-may-1-2025-12-50-41-am__3e13c05f13",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/st-patricks-day/st-patricks-day-pot-of-gold-guarded-by-leprechaun-coloring-page.png",
+      "category": "st-patricks-day",
+      "assetId": "st-patricks-day__st-patricks-day-pot-of-gold-guarded-by-leprechaun-coloring-page__0cac522f50",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/world-landmarks/world-landmarks-hollywood-sign.png",
+      "category": "world-landmarks",
+      "assetId": "world-landmarks__world-landmarks-hollywood-sign__0d5347e375",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    },
+    {
+      "sourceRelativePath": "images/world-landmarks/world-landmarks-statue-of-liberty.png",
+      "category": "world-landmarks",
+      "assetId": "world-landmarks__world-landmarks-statue-of-liberty__f153affe51",
+      "status": "passed_dry_run",
+      "reasonCodes": [],
+      "warningFlags": []
+    }
+  ]
+}

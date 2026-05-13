@@ -1,0 +1,60 @@
+{
+  "generatedAt": "2026-05-10",
+  "runId": "round-4c-public-gallery-visual-system",
+  "buttonVariants": ["primary", "secondary", "ghost", "subtle", "disabled"],
+  "buttonRules": [
+    "Buttons and button-like anchors use cursor pointer unless disabled.",
+    "Buttons have clear hover states.",
+    "Buttons have visible focus-visible states.",
+    "Button styling is centralized.",
+    "Do not add one-off button variants.",
+    "Button shadows, if used, must be tiny and precise."
+  ],
+  "sectionRules": [
+    "Use page canvas, whitespace, typography, and alignment before adding surfaces.",
+    "Use filled section bands sparingly.",
+    "Do not wrap every section in a rounded panel.",
+    "Do not use gradients, noisy backgrounds, or decorative blobs."
+  ],
+  "galleryRules": [
+    "Gallery pages are image-first.",
+    "Use stable grid rhythm, not masonry.",
+    "Large hubs must use pagination or limited initial rendering.",
+    "Image tiles use one preview canvas with text and actions below.",
+    "Do not create indexable per-image pages."
+  ],
+  "cardRules": [
+    "No nested cards.",
+    "No resting-state borders on layout surfaces.",
+    "No shadows outside buttons.",
+    "Hub promos should feel like editorial navigation, not generic SaaS cards.",
+    "Use cards only for individual repeated items, modals, or genuinely framed tools."
+  ],
+  "focusVisibleRules": [
+    "Every interactive control must have a visible focus-visible treatment.",
+    "The focus-visible outline is the only allowed outline or ring exception.",
+    "Do not use outline: none unless an equivalent accessible focus style is present."
+  ],
+  "forbiddenPatterns": [
+    "gradients",
+    "glassmorphism",
+    "decorative outlines",
+    "resting-state borders on layout surfaces",
+    "non-button shadows",
+    "nested cards",
+    "random decorative blobs",
+    "unnecessary background colors",
+    "ad hoc colors",
+    "ad hoc fonts",
+    "ad hoc spacing",
+    "ad hoc radius values",
+    "div-based fake controls"
+  ],
+  "pageLevelRules": [
+    "Public gallery pages use the light Indigo Paper shell.",
+    "Use semantic HTML.",
+    "Use native links and buttons for interactions.",
+    "Gallery media resolves through the centralized asset resolver.",
+    "Any new public page must declare page type, indexability status, metadata strategy, and component variants used."
+  ]
+}

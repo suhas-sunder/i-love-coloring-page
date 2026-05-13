@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-05-13T02:54:55.918Z",
+  "runId": "round-5l-project-context-check",
+  "summary": {
+    "correctRepository": true,
+    "repoName": "i-love-coloring-page",
+    "branch": "version-4",
+    "round5kCommitExists": true,
+    "appApiRoutePresent": false,
+    "staticExportConfigured": true,
+    "coloringPagesRouteExists": true,
+    "hubRouteExists": true,
+    "r2UploadColoringPagesExists": true,
+    "r2UploadSvgExists": true,
+    "r2UploadWebpExists": false,
+    "r2UploadPngExists": true,
+    "r2UploadThumbsExists": true,
+    "publicContainsGeneratedProductionMedia": false,
+    "imagesStatusClean": true,
+    "ilovesvgStatusClean": true,
+    "svgInternalOnly": true,
+    "publicDownloadsPngJpgWebp": true,
+    "adWellsVisibleByDefault": true,
+    "liveAdSenseCodePresent": false,
+    "imageSitemapPresent": false,
+    "openGraphImageGenerationPresent": false,
+    "wrongContextIndicatorsPresent": false
+  },
+  "notes": [
+    "pipeline/r2-upload/coloring-pages/webp is expected for a materialized full WebP upload folder, but Round 5L must not create it.",
+    "The future clean WebP map uses Round 5B WebP manifests when the current full WebP media folder is absent."
+  ]
+}

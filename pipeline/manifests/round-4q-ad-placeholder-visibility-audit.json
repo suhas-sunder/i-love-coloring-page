@@ -1,0 +1,46 @@
+{
+  "generatedAt": "2026-05-11T03:14:00.146Z",
+  "runId": "round-4q-nav-ad-visibility",
+  "summary": {
+    "componentFiles": [
+      "src/components/ads/AdSlot.tsx",
+      "src/components/ads/AdRail.tsx"
+    ],
+    "hiddenByDefault": true,
+    "enabledByEnvFlag": "NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS=1",
+    "buildTimeFlagRead": true,
+    "labelText": "Advertisement",
+    "labelTextVisible": true,
+    "hiddenByCssWhenEnabled": false,
+    "tooSubtleBeforeRound4Q": true,
+    "offScreenRiskBeforeRound4Q": "the prior skeleton had a right-only rail, no page-type header banner slots, and inline slots that required scrolling",
+    "wideRailBreakpoint": "min-width: 1740px",
+    "headerBannerSlotsConsistent": true,
+    "bannerBelowHeaderNotInsideNav": true,
+    "sideRailWasRightOnlyBeforeRound4Q": true,
+    "leftAndRightRailsConfigured": true,
+    "railSafeGapConfigured": true,
+    "sideRailsHiddenOnSmallScreens": true,
+    "printStylesHidePlaceholders": true,
+    "liveAdCodePresent": false,
+    "publisherOrClientIdsPresent": false,
+    "externalAdRequestsAdded": false,
+    "adInsideNav": false,
+    "adInsideMoreMenu": false,
+    "adInsideMobileNav": false,
+    "adInsideImageCards": false,
+    "adInsideGalleryGrid": false
+  },
+  "findings": [
+    {
+      "id": "round-4p-muted-placeholder-style",
+      "status": "fixed",
+      "detail": "Round 4P placeholders used a muted soft-paper surface and muted label color. They were present when enabled, but easy to miss in manual review."
+    },
+    {
+      "id": "right-only-rail-and-missing-header-banner",
+      "status": "fixed",
+      "detail": "The previous skeleton only exposed one desktop rail and no consistent below-header banner across page types, so the visible layout felt inconsistent and too dependent on scroll position."
+    }
+  ]
+}

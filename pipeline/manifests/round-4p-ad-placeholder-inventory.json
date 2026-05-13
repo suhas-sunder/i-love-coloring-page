@@ -1,0 +1,116 @@
+{
+  "generatedAt": "2026-05-11T01:54:18.678Z",
+  "runId": "round-4p-ad-placeholder-layout-qa",
+  "summary": {
+    "componentFiles": [
+      "src/components/ads/AdSlot.tsx",
+      "src/components/ads/AdRail.tsx"
+    ],
+    "configFiles": [
+      "src/lib/ads/config.ts",
+      "src/lib/ads/types.ts"
+    ],
+    "currentSlotDefinitionCount": 7,
+    "round4mPlannedSlotCount": 8,
+    "hiddenByDefault": true,
+    "enabledByEnvFlag": "NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS=1",
+    "labelText": "Advertisement",
+    "liveAdCodePresent": false,
+    "publisherOrClientIdsPresent": false,
+    "hiddenInPrintStyles": true,
+    "insideNavigation": false,
+    "insideImageCards": false,
+    "insideGalleryGrid": false,
+    "mimicsContentCard": false,
+    "adjacentToPrintDownloadControls": false,
+    "desktopSideRailBehavior": "visible only at the wide desktop media query when placeholders are enabled, non-sticky, outside the page column",
+    "tabletBehavior": "inline placeholders appear only when enabled; side rail stays hidden",
+    "mobileBehavior": "inline placeholders appear only when enabled; no mobile top ad; side rail stays hidden",
+    "printBehavior": "ad placeholders and rails are hidden in print CSS",
+    "spacingSummary": "inline slots use existing section spacing and do not sit inside image grids or card actions",
+    "currentImplementationNote": "Round 4M planned a wide-hub-rail slot, while the current code reuses global-desktop-rail as the wide rail on every page. Round 4P does not add or move slots."
+  },
+  "slots": [
+    {
+      "slotId": "global-desktop-rail",
+      "placement": "desktop-rail",
+      "size": "side-rail",
+      "label": "Advertisement"
+    },
+    {
+      "slotId": "home-after-hero",
+      "placement": "inline",
+      "size": "fluid-inline",
+      "label": "Advertisement"
+    },
+    {
+      "slotId": "home-lower-content",
+      "placement": "lower-content",
+      "size": "fluid-inline",
+      "label": "Advertisement"
+    },
+    {
+      "slotId": "coloring-pages-after-featured",
+      "placement": "inline",
+      "size": "fluid-inline",
+      "label": "Advertisement"
+    },
+    {
+      "slotId": "coloring-pages-lower-content",
+      "placement": "lower-content",
+      "size": "fluid-inline",
+      "label": "Advertisement"
+    },
+    {
+      "slotId": "hub-after-gallery",
+      "placement": "inline",
+      "size": "fluid-inline",
+      "label": "Advertisement"
+    },
+    {
+      "slotId": "hub-lower-content",
+      "placement": "lower-content",
+      "size": "fluid-inline",
+      "label": "Advertisement"
+    }
+  ],
+  "routePlacements": [
+    {
+      "route": "/",
+      "slots": [
+        "global-desktop-rail",
+        "home-after-hero",
+        "home-lower-content"
+      ],
+      "desktopPlacement": "global rail outside page column plus inline and lower-content slots",
+      "mobilePlacement": "inline and lower-content slots only when explicitly enabled"
+    },
+    {
+      "route": "/coloring-pages",
+      "slots": [
+        "global-desktop-rail",
+        "coloring-pages-after-featured",
+        "coloring-pages-lower-content"
+      ],
+      "desktopPlacement": "global rail outside page column plus inline and lower-content slots",
+      "mobilePlacement": "inline and lower-content slots only when explicitly enabled"
+    },
+    {
+      "route": "/coloring-pages/[hubSlug]",
+      "slots": [
+        "global-desktop-rail",
+        "hub-after-gallery",
+        "hub-lower-content"
+      ],
+      "desktopPlacement": "global rail outside page column plus post-gallery and lower-content slots",
+      "mobilePlacement": "post-gallery and lower-content slots only when explicitly enabled"
+    }
+  ],
+  "forbiddenPlacementChecks": {
+    "insideNav": false,
+    "insideGalleryGrid": false,
+    "insideImageCard": false,
+    "nearPrintDownloadControls": false,
+    "mimicsImageOrContentCard": false
+  }
+}

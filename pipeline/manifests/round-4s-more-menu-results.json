@@ -1,0 +1,31 @@
+{
+  "generatedAt": "2026-05-11T04:39:31.619Z",
+  "runId": "round-4s-nav-ad-overflow",
+  "summary": {
+    "opensAndClosesReliably": true,
+    "closesOnButton": true,
+    "closesOnEscape": true,
+    "closesOnOutsideClick": true,
+    "closesOnLinkClick": true,
+    "searchWorks": true,
+    "noHorizontalOverflow": true,
+    "usesWideDesktopLayout": true,
+    "usesMediumScreenLayout": true,
+    "usesResponsiveColumns": true,
+    "noAdsInMenu": true,
+    "noTopLevelColoringPagesButton": true
+  },
+  "browserGeometry": {
+    "left": 300,
+    "right": 1620,
+    "width": 1320,
+    "viewportWidth": 1920,
+    "columns": 6
+  },
+  "screenshots": [
+    {
+      "path": "pipeline/review/round-4s/screenshots/nav-desktop/more-menu-open-wide.png",
+      "committed": false
+    }
+  ]
+}

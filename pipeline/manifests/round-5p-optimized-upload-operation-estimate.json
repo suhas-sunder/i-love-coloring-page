@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-05-13T04:42:52.044Z",
+  "runId": "round-5p-optimized-upload-operation-estimate",
+  "summary": {
+    "putObjectOperations": 12704,
+    "headObjectOperationsWithSkipExisting": 12704,
+    "optimizedStorageBytes": 1495772065,
+    "optimizedStorageGB": 1.496,
+    "cleanStorageBytes": 2089425709,
+    "savingsVsCleanBytes": 593653644,
+    "savingsVsCleanPercent": 28.41,
+    "operationCountsUnchanged": true,
+    "transferReductionBytes": 593653644,
+    "rerunWarning": "Use --skip-existing for reruns; repeated full uploads without it can repeat PutObject transfer.",
+    "deleteOperations": 0
+  }
+}

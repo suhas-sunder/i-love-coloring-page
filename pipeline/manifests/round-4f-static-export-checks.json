@@ -1,0 +1,35 @@
+{
+  "generatedAt": "2026-05-10",
+  "runId": "round-4f-frontend-only-netlify-static",
+  "staticExportSupported": true,
+  "productionRouteHandlersRemaining": 0,
+  "nextConfig": {
+    "output": "export",
+    "trailingSlash": true,
+    "imagesUnoptimized": true
+  },
+  "routes": {
+    "staticHome": true,
+    "staticColoringPagesLanding": true,
+    "phase1HubRoutes": 65,
+    "phase1SlugHubRoutes": 64,
+    "sitemapRouteCount": 65,
+    "staticPaginationRoutes": 428,
+    "paginationRoutesInSitemap": false,
+    "phase2RoutesPromoted": false,
+    "perImageRoutesCreated": false
+  },
+  "runtime": {
+    "productionRouteHandlersRemaining": 0,
+    "middlewareRemaining": false,
+    "requestTimeFilesystemReads": false,
+    "requestHeadersOrCookies": false,
+    "productionApiMediaProxy": false
+  },
+  "assetBehavior": {
+    "requiresAssetBaseUrlForRealMedia": true,
+    "placeholderWhenAssetBaseUrlMissing": true,
+    "localFilesystemPathsExposed": false,
+    "productionAssetsCopiedToPublic": false
+  }
+}

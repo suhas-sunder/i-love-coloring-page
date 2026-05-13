@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-05-10",
+  "runId": "round-4i-full-cloudflare-r2-upload-bundle",
+  "checks": {
+    "envLocalTracked": false,
+    "envLocalIgnored": true,
+    "envIgnored": true,
+    "envDevelopmentLocalIgnored": true,
+    "envProductionLocalIgnored": true,
+    "gitignoreKeepsEnvPrivate": true,
+    "noCredentialsRequiredForThisRound": true,
+    "credentialsPrinted": false,
+    "credentialsWritten": false
+  },
+  "valid": true,
+  "remediation": "No action required. .env.local is ignored and untracked."
+}

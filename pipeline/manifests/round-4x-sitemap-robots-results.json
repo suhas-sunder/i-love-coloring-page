@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-05-11T19:30:00.000Z",
+  "runId": "round-4x-sitemap-robots-results",
+  "summary": {
+    "trustPagesIncluded": true,
+    "totalSitemapRoutes": 72,
+    "galleryRouteCount": 65,
+    "homepageIncluded": true,
+    "noPerImageRoutes": true,
+    "noPhase2HubRoutes": true,
+    "noRejectedHubs": true,
+    "noImageSitemap": true,
+    "robotsAllowsPublicPages": true
+  },
+  "routes": {
+    "includedTrustPages": [
+      "/about",
+      "/contact",
+      "/privacy",
+      "/terms",
+      "/affiliate-disclosure",
+      "/editorial-policy"
+    ],
+    "excludedRouteTypes": [
+      "per-image pages",
+      "Phase 2 hubs",
+      "section-only topics",
+      "rejected hubs",
+      "image sitemap"
+    ]
+  }
+}

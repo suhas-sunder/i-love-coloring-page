@@ -1,0 +1,159 @@
+{
+  "generatedAt": "2026-05-13T02:54:55.918Z",
+  "runId": "round-5l-working-tree-audit",
+  "commands": {
+    "statusShort": "git status --short",
+    "diffStat": "git diff --stat",
+    "diffNameOnly": "git diff --name-only"
+  },
+  "summary": {
+    "statusEntryCount": 27,
+    "generatedValidationDriftCount": 0,
+    "localArtifactDriftCount": 0,
+    "intendedRound5LDriftCount": 27,
+    "riskyUnrelatedDriftCount": 0,
+    "safeToProceed": true,
+    "note": "Only intended Round 5L artifacts or generated/local drift should be committed or ignored."
+  },
+  "statusShort": " M AGENTS.md\n M package.json\n?? pipeline/manifests/round-5l-app-path-mapping-plan.json\n?? pipeline/manifests/round-5l-clean-object-key-collisions.json\n?? pipeline/manifests/round-5l-clean-object-key-proposals.json\n?? pipeline/manifests/round-5l-current-asset-filename-audit.json\n?? pipeline/manifests/round-5l-filename-cleanup-taxonomy.json\n?? pipeline/manifests/round-5l-final-svg-webp-object-key-map.json\n?? pipeline/manifests/round-5l-future-full-upload-plan.json\n?? pipeline/manifests/round-5l-manual-review-filename-items.json\n?? pipeline/manifests/round-5l-project-context-check.json\n?? pipeline/manifests/round-5l-sample-clean-key-preview.json\n?? pipeline/manifests/round-5l-working-tree-audit.json\n?? pipeline/reports/round-5l-app-path-mapping-plan.md\n?? pipeline/reports/round-5l-clean-object-key-collisions.md\n?? pipeline/reports/round-5l-clean-object-key-proposals.md\n?? pipeline/reports/round-5l-current-asset-filename-audit.md\n?? pipeline/reports/round-5l-filename-cleanup-taxonomy.md\n?? pipeline/reports/round-5l-final-svg-webp-object-key-map.md\n?? pipeline/reports/round-5l-future-full-upload-plan.md\n?? pipeline/reports/round-5l-manual-review-filename-items.md\n?? pipeline/reports/round-5l-project-context-check.md\n?? pipeline/reports/round-5l-sample-clean-key-preview.md\n?? pipeline/reports/round-5l-working-tree-audit.md\n?? pipeline/scripts/round-5l-audit-asset-filenames.mjs\n?? pipeline/scripts/round-5l-build-clean-object-key-map.mjs\n?? pipeline/tests/round-5l-clean-object-key-map.test.mjs\n",
+  "diffStat": " AGENTS.md    | 7 +++++++\n package.json | 2 +-\n 2 files changed, 8 insertions(+), 1 deletion(-)\n",
+  "diffNameOnly": "AGENTS.md\npackage.json\n",
+  "entries": [
+    {
+      "raw": " M AGENTS.md",
+      "path": "AGENTS.md",
+      "classification": "intended_round_5l_artifact"
+    },
+    {
+      "raw": " M package.json",
+      "path": "package.json",
+      "classification": "intended_round_5l_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/round-5l-app-path-mapping-plan.json",
+      "path": "pipeline/manifests/round-5l-app-path-mapping-plan.json",
+      "classification": "intended_round_5l_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/round-5l-clean-object-key-collisions.json",
+      "path": "pipeline/manifests/round-5l-clean-object-key-collisions.json",
+      "classification": "intended_round_5l_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/round-5l-clean-object-key-proposals.json",
+      "path": "pipeline/manifests/round-5l-clean-object-key-proposals.json",
+      "classification": "intended_round_5l_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/round-5l-current-asset-filename-audit.json",
+      "path": "pipeline/manifests/round-5l-current-asset-filename-audit.json",
+      "classification": "intended_round_5l_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/round-5l-filename-cleanup-taxonomy.json",
+      "path": "pipeline/manifests/round-5l-filename-cleanup-taxonomy.json",
+      "classification": "intended_round_5l_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/round-5l-final-svg-webp-object-key-map.json",
+      "path": "pipeline/manifests/round-5l-final-svg-webp-object-key-map.json",
+      "classification": "intended_round_5l_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/round-5l-future-full-upload-plan.json",
+      "path": "pipeline/manifests/round-5l-future-full-upload-plan.json",
+      "classification": "intended_round_5l_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/round-5l-manual-review-filename-items.json",
+      "path": "pipeline/manifests/round-5l-manual-review-filename-items.json",
+      "classification": "intended_round_5l_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/round-5l-project-context-check.json",
+      "path": "pipeline/manifests/round-5l-project-context-check.json",
+      "classification": "intended_round_5l_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/round-5l-sample-clean-key-preview.json",
+      "path": "pipeline/manifests/round-5l-sample-clean-key-preview.json",
+      "classification": "intended_round_5l_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/round-5l-working-tree-audit.json",
+      "path": "pipeline/manifests/round-5l-working-tree-audit.json",
+      "classification": "intended_round_5l_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/round-5l-app-path-mapping-plan.md",
+      "path": "pipeline/reports/round-5l-app-path-mapping-plan.md",
+      "classification": "intended_round_5l_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/round-5l-clean-object-key-collisions.md",
+      "path": "pipeline/reports/round-5l-clean-object-key-collisions.md",
+      "classification": "intended_round_5l_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/round-5l-clean-object-key-proposals.md",
+      "path": "pipeline/reports/round-5l-clean-object-key-proposals.md",
+      "classification": "intended_round_5l_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/round-5l-current-asset-filename-audit.md",
+      "path": "pipeline/reports/round-5l-current-asset-filename-audit.md",
+      "classification": "intended_round_5l_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/round-5l-filename-cleanup-taxonomy.md",
+      "path": "pipeline/reports/round-5l-filename-cleanup-taxonomy.md",
+      "classification": "intended_round_5l_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/round-5l-final-svg-webp-object-key-map.md",
+      "path": "pipeline/reports/round-5l-final-svg-webp-object-key-map.md",
+      "classification": "intended_round_5l_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/round-5l-future-full-upload-plan.md",
+      "path": "pipeline/reports/round-5l-future-full-upload-plan.md",
+      "classification": "intended_round_5l_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/round-5l-manual-review-filename-items.md",
+      "path": "pipeline/reports/round-5l-manual-review-filename-items.md",
+      "classification": "intended_round_5l_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/round-5l-project-context-check.md",
+      "path": "pipeline/reports/round-5l-project-context-check.md",
+      "classification": "intended_round_5l_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/round-5l-sample-clean-key-preview.md",
+      "path": "pipeline/reports/round-5l-sample-clean-key-preview.md",
+      "classification": "intended_round_5l_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/round-5l-working-tree-audit.md",
+      "path": "pipeline/reports/round-5l-working-tree-audit.md",
+      "classification": "intended_round_5l_artifact"
+    },
+    {
+      "raw": "?? pipeline/scripts/round-5l-audit-asset-filenames.mjs",
+      "path": "pipeline/scripts/round-5l-audit-asset-filenames.mjs",
+      "classification": "intended_round_5l_artifact"
+    },
+    {
+      "raw": "?? pipeline/scripts/round-5l-build-clean-object-key-map.mjs",
+      "path": "pipeline/scripts/round-5l-build-clean-object-key-map.mjs",
+      "classification": "intended_round_5l_artifact"
+    },
+    {
+      "raw": "?? pipeline/tests/round-5l-clean-object-key-map.test.mjs",
+      "path": "pipeline/tests/round-5l-clean-object-key-map.test.mjs",
+      "classification": "intended_round_5l_artifact"
+    }
+  ],
+  "riskyUnrelatedDrift": []
+}

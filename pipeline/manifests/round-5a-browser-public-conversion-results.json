@@ -1,0 +1,126 @@
+{
+  "generatedAt": "2026-05-11T21:14:38.402Z",
+  "runId": "round-5a-browser-public-conversion",
+  "baseUrl": "http://127.0.0.1:3005",
+  "assetBaseUrl": "http://127.0.0.1:4176/coloring-pages",
+  "publicAssetBaseReady": false,
+  "publicConversionSkipped": true,
+  "skippedReason": "Asset base URL points to localhost, so it is not a public CORS validation target.",
+  "samples": [
+    {
+      "id": "animals-alligator",
+      "route": "/coloring-pages/animals",
+      "title": "Animals Alligator",
+      "publicReady": false,
+      "svgUrlLoaded": true,
+      "pngPreviewLoaded": true,
+      "canvasTainted": false,
+      "pngBlobExportSucceeded": true,
+      "jpegBlobExportSucceeded": true,
+      "webpBlobExportSucceeded": true,
+      "outputWidth": 1600,
+      "outputHeight": 2400,
+      "blobTypes": {
+        "png": "image/png",
+        "jpeg": "image/jpeg",
+        "webp": "image/webp"
+      }
+    },
+    {
+      "id": "geometric-or-mandala",
+      "route": "/coloring-pages/geometric",
+      "title": "Mandala Geometry Patterns Animal Mandala Fox",
+      "publicReady": false,
+      "svgUrlLoaded": true,
+      "pngPreviewLoaded": true,
+      "canvasTainted": false,
+      "pngBlobExportSucceeded": true,
+      "jpegBlobExportSucceeded": true,
+      "webpBlobExportSucceeded": true,
+      "outputWidth": 1600,
+      "outputHeight": 2400,
+      "blobTypes": {
+        "png": "image/png",
+        "jpeg": "image/jpeg",
+        "webp": "image/webp"
+      }
+    },
+    {
+      "id": "anime-girls",
+      "route": "/coloring-pages/anime-girls",
+      "title": "Anime Girl Air Balloon",
+      "publicReady": false,
+      "svgUrlLoaded": true,
+      "pngPreviewLoaded": true,
+      "canvasTainted": false,
+      "pngBlobExportSucceeded": true,
+      "jpegBlobExportSucceeded": true,
+      "webpBlobExportSucceeded": true,
+      "outputWidth": 1600,
+      "outputHeight": 2400,
+      "blobTypes": {
+        "png": "image/png",
+        "jpeg": "image/jpeg",
+        "webp": "image/webp"
+      }
+    },
+    {
+      "id": "christmas",
+      "route": "/coloring-pages/christmas",
+      "title": "Christmas Holiday Advent Calendar",
+      "publicReady": false,
+      "svgUrlLoaded": true,
+      "pngPreviewLoaded": true,
+      "canvasTainted": false,
+      "pngBlobExportSucceeded": true,
+      "jpegBlobExportSucceeded": true,
+      "webpBlobExportSucceeded": true,
+      "outputWidth": 1600,
+      "outputHeight": 2400,
+      "blobTypes": {
+        "png": "image/png",
+        "jpeg": "image/jpeg",
+        "webp": "image/webp"
+      }
+    },
+    {
+      "id": "high-detail",
+      "route": "/coloring-pages/mandalas",
+      "title": "Anime Girl Climbing A Dragon",
+      "publicReady": false,
+      "svgUrlLoaded": true,
+      "pngPreviewLoaded": true,
+      "canvasTainted": false,
+      "pngBlobExportSucceeded": true,
+      "jpegBlobExportSucceeded": true,
+      "webpBlobExportSucceeded": true,
+      "outputWidth": 1600,
+      "outputHeight": 2400,
+      "blobTypes": {
+        "png": "image/png",
+        "jpeg": "image/jpeg",
+        "webp": "image/webp"
+      }
+    }
+  ],
+  "printFlow": {
+    "popupOpened": true,
+    "usesGeneratedOutput": true,
+    "fallbackUsed": false,
+    "blobUrlUsed": true,
+    "screenshot": "pipeline/review/round-5a/screenshots/print/animals-print-flow.png"
+  },
+  "summary": {
+    "publicBrowserConversionPass": false,
+    "publicInternalSvgLoads": false,
+    "publicCanvasTainted": null,
+    "publicPngBlobExportSucceeded": false,
+    "publicJpegBlobExportSucceeded": false,
+    "publicWebpBlobExportSucceeded": false,
+    "printFlowUsesGeneratedOutput": true,
+    "localCorsRegressionPass": true,
+    "fallbackWorksWhenCorsUnavailable": true,
+    "svgUserDownloadAbsent": true,
+    "visibleJpegWebpControlsRemainHidden": true
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-05-11T21:15:02.192Z",
+  "runId": "round-5a-public-cors-validation",
+  "summary": {
+    "publicCorsHeadersPass": false,
+    "publicBrowserConversionPass": false,
+    "technicallySafeToExposeJpgJpegWebp": false,
+    "jpgJpegWebpControlsExposed": false,
+    "currentPublicDownloadFormats": [
+      "PNG"
+    ],
+    "svgInternalOnly": true,
+    "defaultDecision": "Keep public downloads PNG-only because public CORS/browser conversion is not verified."
+  },
+  "blockers": [
+    "Public asset CORS and browser canvas export must pass before JPG/JPEG/WebP controls can be shown."
+  ]
+}

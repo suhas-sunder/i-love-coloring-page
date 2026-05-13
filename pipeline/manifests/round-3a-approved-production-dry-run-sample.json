@@ -1,0 +1,2260 @@
+{
+  "generatedAt": "2026-05-09",
+  "sourceManifest": "pipeline/manifests/round-3a-approved-source-images.json",
+  "policyManifest": "pipeline/manifests/round-2-recommended-policy.json",
+  "targetSampleSize": 125,
+  "actualSampleSize": 125,
+  "selectionStrategy": "Approved-source only, preserves category coverage where possible, excludes Round 2 and Round 3A blocked paths.",
+  "samples": [
+    {
+      "dryRunSampleId": "r3a-dryrun-001-animals-animals-butterflies-016ffbb0",
+      "sampleIndex": 1,
+      "sourceRelativePath": "images/animals/animals-butterflies.png",
+      "category": "animals",
+      "nestedCategory": null,
+      "filename": "animals-butterflies.png",
+      "fileSizeBytes": 2441985,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-002-animals-animals-polarbear-fb2c193a",
+      "sampleIndex": 2,
+      "sourceRelativePath": "images/animals/animals-polarbear.png",
+      "category": "animals",
+      "nestedCategory": null,
+      "filename": "animals-polarbear.png",
+      "fileSizeBytes": 2032467,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-003-animals-animals-sea-lion-569daf97",
+      "sampleIndex": 3,
+      "sourceRelativePath": "images/animals/animals-sea-lion.png",
+      "category": "animals",
+      "nestedCategory": null,
+      "filename": "animals-sea-lion.png",
+      "fileSizeBytes": 1643494,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-004-animals-playing-cards-mice-playing-cards-4c3ddb81",
+      "sampleIndex": 4,
+      "sourceRelativePath": "images/Animals playing cards/mice-playing-cards.png",
+      "category": "Animals playing cards",
+      "nestedCategory": null,
+      "filename": "mice-playing-cards.png",
+      "fileSizeBytes": 2525491,
+      "dimensions": {
+        "width": 923,
+        "height": 1385
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-005-birds-birds-booby-0116ccb7",
+      "sampleIndex": 5,
+      "sourceRelativePath": "images/birds/birds-booby.png",
+      "category": "birds",
+      "nestedCategory": null,
+      "filename": "birds-booby.png",
+      "fileSizeBytes": 1852521,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-006-birds-birds-cardinal-8fa3cbca",
+      "sampleIndex": 6,
+      "sourceRelativePath": "images/birds/birds-cardinal.png",
+      "category": "birds",
+      "nestedCategory": null,
+      "filename": "birds-cardinal.png",
+      "fileSizeBytes": 1946610,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-007-birds-birds-gannet-c7b3625a",
+      "sampleIndex": 7,
+      "sourceRelativePath": "images/birds/birds-gannet.png",
+      "category": "birds",
+      "nestedCategory": null,
+      "filename": "birds-gannet.png",
+      "fileSizeBytes": 2676002,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-008-birds-birds-macaw-parrot-sitting-ffc0bb9e",
+      "sampleIndex": 8,
+      "sourceRelativePath": "images/birds/birds-macaw-parrot-sitting.png",
+      "category": "birds",
+      "nestedCategory": null,
+      "filename": "birds-macaw-parrot-sitting.png",
+      "fileSizeBytes": 1733362,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-009-birds-birds-snow-bunting-55540ffe",
+      "sampleIndex": 9,
+      "sourceRelativePath": "images/birds/birds-snow-bunting.png",
+      "category": "birds",
+      "nestedCategory": null,
+      "filename": "birds-snow-bunting.png",
+      "fileSizeBytes": 1700156,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-010-birds-birds-swan-7418cb8a",
+      "sampleIndex": 10,
+      "sourceRelativePath": "images/birds/birds-swan.png",
+      "category": "birds",
+      "nestedCategory": null,
+      "filename": "birds-swan.png",
+      "fileSizeBytes": 1619697,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-011-birds-birds-swift-3541dd46",
+      "sampleIndex": 11,
+      "sourceRelativePath": "images/birds/birds-swift.png",
+      "category": "birds",
+      "nestedCategory": null,
+      "filename": "birds-swift.png",
+      "fileSizeBytes": 1615890,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-012-christmas-christmas-holiday-wolf-8a8eb735",
+      "sampleIndex": 12,
+      "sourceRelativePath": "images/christmas/christmas-holiday-wolf.png",
+      "category": "christmas",
+      "nestedCategory": null,
+      "filename": "christmas-holiday-wolf.png",
+      "fileSizeBytes": 2332706,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-013-christmas-holiday-christmas-angel-holding-candle-in-snowy-night-coloring-page-fde31c07",
+      "sampleIndex": 13,
+      "sourceRelativePath": "images/christmas/holiday-christmas-angel-holding-candle-in-snowy-night-coloring-page.png",
+      "category": "christmas",
+      "nestedCategory": null,
+      "filename": "holiday-christmas-angel-holding-candle-in-snowy-night-coloring-page.png",
+      "fileSizeBytes": 926369,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-014-christmas-holiday-christmas-animals-dinosaurs-c6a90713",
+      "sampleIndex": 14,
+      "sourceRelativePath": "images/christmas/holiday-christmas-animals-dinosaurs.png",
+      "category": "christmas",
+      "nestedCategory": null,
+      "filename": "holiday-christmas-animals-dinosaurs.png",
+      "fileSizeBytes": 887263,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-015-christmas-holiday-christmas-animals-dogs-604b134b",
+      "sampleIndex": 15,
+      "sourceRelativePath": "images/christmas/holiday-christmas-animals-dogs.png",
+      "category": "christmas",
+      "nestedCategory": null,
+      "filename": "holiday-christmas-animals-dogs.png",
+      "fileSizeBytes": 900673,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-016-christmas-holiday-christmas-animals-unicorns-000d59a8",
+      "sampleIndex": 16,
+      "sourceRelativePath": "images/christmas/holiday-christmas-animals-unicorns.png",
+      "category": "christmas",
+      "nestedCategory": null,
+      "filename": "holiday-christmas-animals-unicorns.png",
+      "fileSizeBytes": 921328,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-017-christmas-holiday-christmas-kids-building-snow-fort-in-yard-coloring-page-40834841",
+      "sampleIndex": 17,
+      "sourceRelativePath": "images/christmas/holiday-christmas-kids-building-snow-fort-in-yard-coloring-page.png",
+      "category": "christmas",
+      "nestedCategory": null,
+      "filename": "holiday-christmas-kids-building-snow-fort-in-yard-coloring-page.png",
+      "fileSizeBytes": 990737,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-018-dinosaurs-prehistoric-diprotodon-765022c8",
+      "sampleIndex": 18,
+      "sourceRelativePath": "images/dinosaurs/prehistoric-diprotodon.png",
+      "category": "dinosaurs",
+      "nestedCategory": null,
+      "filename": "prehistoric-diprotodon.png",
+      "fileSizeBytes": 2678539,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-019-dinosaurs-prehistoric-extinction-fb644701",
+      "sampleIndex": 19,
+      "sourceRelativePath": "images/dinosaurs/prehistoric-extinction.png",
+      "category": "dinosaurs",
+      "nestedCategory": null,
+      "filename": "prehistoric-extinction.png",
+      "fileSizeBytes": 1424956,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-020-dinosaurs-prehistoric-megaladon-3df46b9d",
+      "sampleIndex": 20,
+      "sourceRelativePath": "images/dinosaurs/prehistoric-megaladon.png",
+      "category": "dinosaurs",
+      "nestedCategory": null,
+      "filename": "prehistoric-megaladon.png",
+      "fileSizeBytes": 1190875,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-021-dinosaurs-prehistoric-mosasaurus-08d7ae3d",
+      "sampleIndex": 21,
+      "sourceRelativePath": "images/dinosaurs/prehistoric-mosasaurus.png",
+      "category": "dinosaurs",
+      "nestedCategory": null,
+      "filename": "prehistoric-mosasaurus.png",
+      "fileSizeBytes": 1939247,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-022-dinosaurs-prehistoric-woolly-mammoth-a4fb9ca3",
+      "sampleIndex": 22,
+      "sourceRelativePath": "images/dinosaurs/prehistoric-woolly-mammoth.png",
+      "category": "dinosaurs",
+      "nestedCategory": null,
+      "filename": "prehistoric-woolly-mammoth.png",
+      "fileSizeBytes": 2147045,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-023-dogs-dogs-border-collie-playing-ff795b9b",
+      "sampleIndex": 23,
+      "sourceRelativePath": "images/dogs/dogs-border-collie-playing.png",
+      "category": "dogs",
+      "nestedCategory": null,
+      "filename": "dogs-border-collie-playing.png",
+      "fileSizeBytes": 2548828,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-024-dogs-dogs-great-pyrenees-c84862b5",
+      "sampleIndex": 24,
+      "sourceRelativePath": "images/dogs/dogs-great-pyrenees.png",
+      "category": "dogs",
+      "nestedCategory": null,
+      "filename": "dogs-great-pyrenees.png",
+      "fileSizeBytes": 2001038,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-025-dogs-dogs-portuguese-water-dog-89720b4d",
+      "sampleIndex": 25,
+      "sourceRelativePath": "images/dogs/dogs-portuguese-water-dog.png",
+      "category": "dogs",
+      "nestedCategory": null,
+      "filename": "dogs-portuguese-water-dog.png",
+      "fileSizeBytes": 1729356,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-026-dogs-dogs-rhodesian-ridgeback-40fff3ca",
+      "sampleIndex": 26,
+      "sourceRelativePath": "images/dogs/dogs-rhodesian-ridgeback.png",
+      "category": "dogs",
+      "nestedCategory": null,
+      "filename": "dogs-rhodesian-ridgeback.png",
+      "fileSizeBytes": 1890404,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-027-dogs-dogs-samoyed-016ca48e",
+      "sampleIndex": 27,
+      "sourceRelativePath": "images/dogs/dogs-samoyed.png",
+      "category": "dogs",
+      "nestedCategory": null,
+      "filename": "dogs-samoyed.png",
+      "fileSizeBytes": 2105769,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-028-dragons-fire-dragon-11091b49",
+      "sampleIndex": 28,
+      "sourceRelativePath": "images/dragons/fire-dragon.png",
+      "category": "dragons",
+      "nestedCategory": null,
+      "filename": "fire-dragon.png",
+      "fileSizeBytes": 3150567,
+      "dimensions": {
+        "width": 923,
+        "height": 1385
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-029-emoji-u-1f605-grinning-face-with-sweat-5348e43d",
+      "sampleIndex": 29,
+      "sourceRelativePath": "images/emoji/U+1F605-grinning-face-with-sweat.png",
+      "category": "emoji",
+      "nestedCategory": null,
+      "filename": "U+1F605-grinning-face-with-sweat.png",
+      "fileSizeBytes": 1900595,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-030-flowers-flowers-aster-fe9cc46a",
+      "sampleIndex": 30,
+      "sourceRelativePath": "images/flowers/flowers-aster.png",
+      "category": "flowers",
+      "nestedCategory": null,
+      "filename": "flowers-aster.png",
+      "fileSizeBytes": 2348587,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-031-flowers-flowers-wisteria-9c0d7c3f",
+      "sampleIndex": 31,
+      "sourceRelativePath": "images/flowers/flowers-wisteria.png",
+      "category": "flowers",
+      "nestedCategory": null,
+      "filename": "flowers-wisteria.png",
+      "fileSizeBytes": 2159317,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-032-flowers-gardening-in-field-of-flowers-bleeding-hearts-d4dbbeae",
+      "sampleIndex": 32,
+      "sourceRelativePath": "images/flowers/gardening-in-field-of-flowers-bleeding-hearts.png",
+      "category": "flowers",
+      "nestedCategory": null,
+      "filename": "gardening-in-field-of-flowers-bleeding-hearts.png",
+      "fileSizeBytes": 1743346,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-033-flowers-gardening-in-field-of-flowers-hyacinth-654d79a0",
+      "sampleIndex": 33,
+      "sourceRelativePath": "images/flowers/gardening-in-field-of-flowers-hyacinth.png",
+      "category": "flowers",
+      "nestedCategory": null,
+      "filename": "gardening-in-field-of-flowers-hyacinth.png",
+      "fileSizeBytes": 1344345,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-034-flowers-gardening-in-field-of-flowers-primrose-garden-2730debb",
+      "sampleIndex": 34,
+      "sourceRelativePath": "images/flowers/gardening-in-field-of-flowers-primrose-garden.png",
+      "category": "flowers",
+      "nestedCategory": null,
+      "filename": "gardening-in-field-of-flowers-primrose-garden.png",
+      "fileSizeBytes": 2188651,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-035-flowers-lowers-snowdrop-01c784b5",
+      "sampleIndex": 35,
+      "sourceRelativePath": "images/flowers/lowers-snowdrop.png",
+      "category": "flowers",
+      "nestedCategory": null,
+      "filename": "lowers-snowdrop.png",
+      "fileSizeBytes": 2241761,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-036-gardening-gardening-mushroom-birch-polypore-337bc52c",
+      "sampleIndex": 36,
+      "sourceRelativePath": "images/gardening/gardening-mushroom-birch-polypore.png",
+      "category": "gardening",
+      "nestedCategory": null,
+      "filename": "gardening-mushroom-birch-polypore.png",
+      "fileSizeBytes": 2875224,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-037-gardening-gardening-mushroom-candlesnuff-fungus-fa542d3c",
+      "sampleIndex": 37,
+      "sourceRelativePath": "images/gardening/gardening-mushroom-candlesnuff-fungus.png",
+      "category": "gardening",
+      "nestedCategory": null,
+      "filename": "gardening-mushroom-candlesnuff-fungus.png",
+      "fileSizeBytes": 1937878,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-038-gardening-gardening-mushroom-coprinus-comatus-shaggy-mane-7fb65b6f",
+      "sampleIndex": 38,
+      "sourceRelativePath": "images/gardening/gardening-mushroom-coprinus-comatus-shaggy-mane.png",
+      "category": "gardening",
+      "nestedCategory": null,
+      "filename": "gardening-mushroom-coprinus-comatus-shaggy-mane.png",
+      "fileSizeBytes": 1982962,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-039-gardening-gardening-mushroom-lions-mane-0719ae2d",
+      "sampleIndex": 39,
+      "sourceRelativePath": "images/gardening/gardening-mushroom-lions-mane.png",
+      "category": "gardening",
+      "nestedCategory": null,
+      "filename": "gardening-mushroom-lions-mane.png",
+      "fileSizeBytes": 1707902,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-040-gardening-gardening-mushroom-pine-mushroom-scene-c6ace336",
+      "sampleIndex": 40,
+      "sourceRelativePath": "images/gardening/gardening-mushroom-pine-mushroom-scene.png",
+      "category": "gardening",
+      "nestedCategory": null,
+      "filename": "gardening-mushroom-pine-mushroom-scene.png",
+      "fileSizeBytes": 1882093,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-041-holiday-holiday-birthday-celebration-plushie-alligator-family-88ffd48d",
+      "sampleIndex": 41,
+      "sourceRelativePath": "images/holiday/holiday-birthday-celebration-plushie-alligator-family.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-birthday-celebration-plushie-alligator-family.png",
+      "fileSizeBytes": 1072155,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-042-holiday-holiday-birthday-celebration-plushie-bobcat-family-c08cbd11",
+      "sampleIndex": 42,
+      "sourceRelativePath": "images/holiday/holiday-birthday-celebration-plushie-bobcat-family.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-birthday-celebration-plushie-bobcat-family.png",
+      "fileSizeBytes": 1183651,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-043-holiday-holiday-birthday-celebration-plushie-eagle-family-7bca94ef",
+      "sampleIndex": 43,
+      "sourceRelativePath": "images/holiday/holiday-birthday-celebration-plushie-eagle-family.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-birthday-celebration-plushie-eagle-family.png",
+      "fileSizeBytes": 1134081,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-044-holiday-holiday-birthday-celebration-plushie-sloth-baby-family-0031534e",
+      "sampleIndex": 44,
+      "sourceRelativePath": "images/holiday/holiday-birthday-celebration-plushie-sloth-baby-family.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-birthday-celebration-plushie-sloth-baby-family.png",
+      "fileSizeBytes": 915095,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-045-holiday-holiday-birthday-celebration-saber-toothed-tiger-4e4755b9",
+      "sampleIndex": 45,
+      "sourceRelativePath": "images/holiday/holiday-birthday-celebration-saber-toothed-tiger.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-birthday-celebration-saber-toothed-tiger.png",
+      "fileSizeBytes": 848847,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-046-holiday-holiday-birthday-celebration-sloths-3bbcf00c",
+      "sampleIndex": 46,
+      "sourceRelativePath": "images/holiday/holiday-birthday-celebration-sloths.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-birthday-celebration-sloths.png",
+      "fileSizeBytes": 997541,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-047-holiday-holiday-christmas-dogs-cavalier-king-charles-spaniel-b1cfbaf1",
+      "sampleIndex": 47,
+      "sourceRelativePath": "images/holiday/holiday-christmas-dogs-cavalier-king-charles-spaniel.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-christmas-dogs-cavalier-king-charles-spaniel.png",
+      "fileSizeBytes": 965219,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-048-holiday-holiday-christmas-dogs-jack-russell-terrier-ce6fe3f9",
+      "sampleIndex": 48,
+      "sourceRelativePath": "images/holiday/holiday-christmas-dogs-jack-russell-terrier.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-christmas-dogs-jack-russell-terrier.png",
+      "fileSizeBytes": 881691,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-049-holiday-holiday-christmas-plushie-alpaca-family-63b9b19a",
+      "sampleIndex": 49,
+      "sourceRelativePath": "images/holiday/holiday-christmas-plushie-alpaca-family.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-christmas-plushie-alpaca-family.png",
+      "fileSizeBytes": 835694,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-050-holiday-holiday-christmas-plushie-baby-dragon-13a91bb8",
+      "sampleIndex": 50,
+      "sourceRelativePath": "images/holiday/holiday-christmas-plushie-baby-dragon.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-christmas-plushie-baby-dragon.png",
+      "fileSizeBytes": 910775,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-051-holiday-holiday-christmas-plushie-robot-family-ff88fbd9",
+      "sampleIndex": 51,
+      "sourceRelativePath": "images/holiday/holiday-christmas-plushie-robot-family.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-christmas-plushie-robot-family.png",
+      "fileSizeBytes": 827244,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-052-holiday-holiday-christmas-prehistoric-plesiosaurus-9ea37026",
+      "sampleIndex": 52,
+      "sourceRelativePath": "images/holiday/holiday-christmas-prehistoric-plesiosaurus.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-christmas-prehistoric-plesiosaurus.png",
+      "fileSizeBytes": 734534,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-053-holiday-holiday-halloween-costume-plushie-rat-family-23726d52",
+      "sampleIndex": 53,
+      "sourceRelativePath": "images/holiday/holiday-halloween-costume-plushie-rat-family.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-halloween-costume-plushie-rat-family.png",
+      "fileSizeBytes": 1035836,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-054-holiday-holiday-halloween-graveyard-with-bats-and-foggy-moonlight-coloring-page-eeafc519",
+      "sampleIndex": 54,
+      "sourceRelativePath": "images/holiday/holiday-halloween-graveyard-with-bats-and-foggy-moonlight-coloring-page.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-halloween-graveyard-with-bats-and-foggy-moonlight-coloring-page.png",
+      "fileSizeBytes": 961400,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-055-holiday-holiday-halloween-jack-o-lantern-lined-front-porch-coloring-page-dffc2763",
+      "sampleIndex": 55,
+      "sourceRelativePath": "images/holiday/holiday-halloween-jack-o-lantern-lined-front-porch-coloring-page.png",
+      "category": "holiday",
+      "nestedCategory": null,
+      "filename": "holiday-halloween-jack-o-lantern-lined-front-porch-coloring-page.png",
+      "fileSizeBytes": 998139,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-056-homes-homes-apartment-building-front-view-f69cf800",
+      "sampleIndex": 56,
+      "sourceRelativePath": "images/homes/homes-apartment-building-front-view.png",
+      "category": "homes",
+      "nestedCategory": null,
+      "filename": "homes-apartment-building-front-view.png",
+      "fileSizeBytes": 922483,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-057-homes-homes-cape-cod-style-house-901a62a7",
+      "sampleIndex": 57,
+      "sourceRelativePath": "images/homes/homes-cape-cod-style-house.png",
+      "category": "homes",
+      "nestedCategory": null,
+      "filename": "homes-cape-cod-style-house.png",
+      "fileSizeBytes": 899076,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-058-homes-homes-treehouse-with-slide-0878b9ca",
+      "sampleIndex": 58,
+      "sourceRelativePath": "images/homes/homes-treehouse-with-slide.png",
+      "category": "homes",
+      "nestedCategory": null,
+      "filename": "homes-treehouse-with-slide.png",
+      "fileSizeBytes": 1205866,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-059-indoor-plants-indoor-plants-african-violet-633e0af2",
+      "sampleIndex": 59,
+      "sourceRelativePath": "images/indoor-plants/indoor-plants-african-violet.png",
+      "category": "indoor-plants",
+      "nestedCategory": null,
+      "filename": "indoor-plants-african-violet.png",
+      "fileSizeBytes": 1634060,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-060-indoor-plants-indoor-plants-birds-nest-fern-a308eaca",
+      "sampleIndex": 60,
+      "sourceRelativePath": "images/indoor-plants/indoor-plants-birds-nest-fern.png",
+      "category": "indoor-plants",
+      "nestedCategory": null,
+      "filename": "indoor-plants-birds-nest-fern.png",
+      "fileSizeBytes": 1691470,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-061-indoor-plants-indoor-plants-english-ivy-fe8b320a",
+      "sampleIndex": 61,
+      "sourceRelativePath": "images/indoor-plants/indoor-plants-english-ivy.png",
+      "category": "indoor-plants",
+      "nestedCategory": null,
+      "filename": "indoor-plants-english-ivy.png",
+      "fileSizeBytes": 1804541,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-062-indoor-plants-indoor-plants-orchid-dendrobium-da23c9ce",
+      "sampleIndex": 62,
+      "sourceRelativePath": "images/indoor-plants/indoor-plants-orchid-dendrobium.png",
+      "category": "indoor-plants",
+      "nestedCategory": null,
+      "filename": "indoor-plants-orchid-dendrobium.png",
+      "fileSizeBytes": 1425755,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-063-indoor-plants-indoor-plants-peace-lily-01c9f71c",
+      "sampleIndex": 63,
+      "sourceRelativePath": "images/indoor-plants/indoor-plants-peace-lily.png",
+      "category": "indoor-plants",
+      "nestedCategory": null,
+      "filename": "indoor-plants-peace-lily.png",
+      "fileSizeBytes": 1702014,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-064-indoor-plants-indoor-plants-phlebodium-blue-star-fern-22f0c4be",
+      "sampleIndex": 64,
+      "sourceRelativePath": "images/indoor-plants/indoor-plants-phlebodium-blue-star-fern.png",
+      "category": "indoor-plants",
+      "nestedCategory": null,
+      "filename": "indoor-plants-phlebodium-blue-star-fern.png",
+      "fileSizeBytes": 1622436,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-065-insects-insects-blue-morpho-butterfly-in-rainforest-feb57c57",
+      "sampleIndex": 65,
+      "sourceRelativePath": "images/Insects/insects-blue-morpho-butterfly-in-rainforest.png",
+      "category": "Insects",
+      "nestedCategory": null,
+      "filename": "insects-blue-morpho-butterfly-in-rainforest.png",
+      "fileSizeBytes": 1930974,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-066-insects-insects-cicada-on-tree-bark-9da846ac",
+      "sampleIndex": 66,
+      "sourceRelativePath": "images/Insects/insects-cicada-on-tree-bark.png",
+      "category": "Insects",
+      "nestedCategory": null,
+      "filename": "insects-cicada-on-tree-bark.png",
+      "fileSizeBytes": 2028868,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-067-insects-insects-damselfly-perched-on-reed-0367b38c",
+      "sampleIndex": 67,
+      "sourceRelativePath": "images/Insects/insects-damselfly-perched-on-reed.png",
+      "category": "Insects",
+      "nestedCategory": null,
+      "filename": "insects-damselfly-perched-on-reed.png",
+      "fileSizeBytes": 1737935,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-068-insects-insects-leafcutter-ant-cf3cbdea",
+      "sampleIndex": 68,
+      "sourceRelativePath": "images/Insects/insects-leafcutter-ant.png",
+      "category": "Insects",
+      "nestedCategory": null,
+      "filename": "insects-leafcutter-ant.png",
+      "fileSizeBytes": 2340970,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-069-insects-insects-millipede-on-moss-40127745",
+      "sampleIndex": 69,
+      "sourceRelativePath": "images/Insects/insects-millipede-on-moss.png",
+      "category": "Insects",
+      "nestedCategory": null,
+      "filename": "insects-millipede-on-moss.png",
+      "fileSizeBytes": 2256801,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-070-insects-insects-scissor-tailed-caddisfly-77f0f5e6",
+      "sampleIndex": 70,
+      "sourceRelativePath": "images/Insects/insects-scissor-tailed-caddisfly.png",
+      "category": "Insects",
+      "nestedCategory": null,
+      "filename": "insects-scissor-tailed-caddisfly.png",
+      "fileSizeBytes": 1516807,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-071-mandala-mandala-geometry-patterns-geometric-mandala-3369a57b",
+      "sampleIndex": 71,
+      "sourceRelativePath": "images/mandala/mandala-geometry-patterns-geometric-mandala.png",
+      "category": "mandala",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-geometric-mandala.png",
+      "fileSizeBytes": 2485954,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-072-mandala-geometry-patterns-mandala-geometry-patterns-bakery-slice-of-cake-54241513",
+      "sampleIndex": 72,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-bakery-slice-of-cake.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-bakery-slice-of-cake.png",
+      "fileSizeBytes": 1811927,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-073-mandala-geometry-patterns-mandala-geometry-patterns-dogs-collie-45cf36f7",
+      "sampleIndex": 73,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-dogs-collie.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-dogs-collie.png",
+      "fileSizeBytes": 1651160,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-074-mandala-geometry-patterns-mandala-geometry-patterns-dogs-maltese-2f814152",
+      "sampleIndex": 74,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-dogs-maltese.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-dogs-maltese.png",
+      "fileSizeBytes": 2961579,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-075-mandala-geometry-patterns-mandala-geometry-patterns-flowers-hellebore-17efdb6c",
+      "sampleIndex": 75,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-flowers-hellebore.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-flowers-hellebore.png",
+      "fileSizeBytes": 2286998,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-076-mandala-geometry-patterns-mandala-geometry-patterns-insects-butterfly-a9ae5dd1",
+      "sampleIndex": 76,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-insects-butterfly.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-insects-butterfly.png",
+      "fileSizeBytes": 1891225,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-077-mandala-geometry-patterns-mandala-geometry-patterns-mushroom-honey-fungus-cluster-e921bdcf",
+      "sampleIndex": 77,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-honey-fungus-cluster.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-mushroom-honey-fungus-cluster.png",
+      "fileSizeBytes": 2165124,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-078-mandala-geometry-patterns-mandala-geometry-patterns-plushie-alpaca-animals-ffd2a425",
+      "sampleIndex": 78,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-plushie-alpaca-animals.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-plushie-alpaca-animals.png",
+      "fileSizeBytes": 2345516,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-079-mandala-geometry-patterns-mandala-geometry-patterns-plushie-ferret-animals-c0ff2bdd",
+      "sampleIndex": 79,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-plushie-ferret-animals.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-plushie-ferret-animals.png",
+      "fileSizeBytes": 1776390,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-080-mandala-geometry-patterns-mandala-geometry-patterns-plushie-prehistoric-stegosaurus-animal-21fed113",
+      "sampleIndex": 80,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-plushie-prehistoric-stegosaurus-animal.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-plushie-prehistoric-stegosaurus-animal.png",
+      "fileSizeBytes": 2115368,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-081-mandala-geometry-patterns-mandala-geometry-patterns-plushie-prehistoric-tyrannosaurus-rex-animal-857cd4f4",
+      "sampleIndex": 81,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-plushie-prehistoric-tyrannosaurus-rex-animal.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-plushie-prehistoric-tyrannosaurus-rex-animal.png",
+      "fileSizeBytes": 2065210,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-082-mandala-geometry-patterns-mandala-geometry-patterns-plushie-squirrel-f516f027",
+      "sampleIndex": 82,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-plushie-squirrel.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-plushie-squirrel.png",
+      "fileSizeBytes": 2378756,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-083-mandala-geometry-patterns-mandala-geometry-patterns-prehistoric-dire-wolf-90dfef86",
+      "sampleIndex": 83,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-prehistoric-dire-wolf.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-prehistoric-dire-wolf.png",
+      "fileSizeBytes": 2347843,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-084-mandala-geometry-patterns-mandala-geometry-patterns-python-face-patterns-b4ebf7d0",
+      "sampleIndex": 84,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-python-face-patterns.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-python-face-patterns.png",
+      "fileSizeBytes": 2051431,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-085-mandala-geometry-patterns-mandala-geometry-patterns-sushi-hand-roll-veggie-roll-tuna-d9e94ecd",
+      "sampleIndex": 85,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-sushi-hand-roll-veggie-roll-tuna.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-sushi-hand-roll-veggie-roll-tuna.png",
+      "fileSizeBytes": 1458302,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-086-mandala-geometry-patterns-mandala-geometry-patterns-sushi-roll-0bd4cd71",
+      "sampleIndex": 86,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-sushi-roll.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-sushi-roll.png",
+      "fileSizeBytes": 2800613,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-087-mandala-geometry-patterns-mandala-geometry-patterns-trains-locomotives-excursion-train-crossing-historic-trestle-bri-00002da0",
+      "sampleIndex": 87,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-excursion-train-crossing-historic-trestle-bridge.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-trains-locomotives-excursion-train-crossing-historic-trestle-bridge.png",
+      "fileSizeBytes": 1642067,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-088-mandala-geometry-patterns-mandala-geometry-patterns-trains-locomotives-passenger-train-arriving-at-station-37d1d6ce",
+      "sampleIndex": 88,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-passenger-train-arriving-at-station.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-trains-locomotives-passenger-train-arriving-at-station.png",
+      "fileSizeBytes": 2612226,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-089-mandala-geometry-patterns-mandala-geometry-patterns-vehiacle-cars-porsche-6b7f6eee",
+      "sampleIndex": 89,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-cars-porsche.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-vehiacle-cars-porsche.png",
+      "fileSizeBytes": 2799170,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-090-mandala-geometry-patterns-mandala-geometry-patterns-vehiacle-planes-antonov-an-225-77b9c44e",
+      "sampleIndex": 90,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-planes-antonov-an-225.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-vehiacle-planes-antonov-an-225.png",
+      "fileSizeBytes": 1664105,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-091-mandala-geometry-patterns-mandala-geometry-patterns-vehiacle-planes-passenger-plane-cd876c9f",
+      "sampleIndex": 91,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-planes-passenger-plane.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-vehiacle-planes-passenger-plane.png",
+      "fileSizeBytes": 2352273,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-092-mandala-geometry-patterns-mandala-geometry-patterns-vehicle-cars-bmw-m3-9dc25911",
+      "sampleIndex": 92,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-bmw-m3.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-vehicle-cars-bmw-m3.png",
+      "fileSizeBytes": 2556692,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-093-mandala-geometry-patterns-mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-5efd045f",
+      "sampleIndex": 93,
+      "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle.png",
+      "category": "mandala-geometry-patterns",
+      "nestedCategory": null,
+      "filename": "mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle.png",
+      "fileSizeBytes": 2452078,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-094-nature-camping-in-the-woods-campfire-marshmellow-01497ca2",
+      "sampleIndex": 94,
+      "sourceRelativePath": "images/Nature/camping-in-the-woods-campfire-marshmellow.png",
+      "category": "Nature",
+      "nestedCategory": null,
+      "filename": "camping-in-the-woods-campfire-marshmellow.png",
+      "fileSizeBytes": 2796819,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-095-plushie-plushie-badger-family-2d335fc9",
+      "sampleIndex": 95,
+      "sourceRelativePath": "images/plushie/plushie-badger-family.png",
+      "category": "plushie",
+      "nestedCategory": null,
+      "filename": "plushie-badger-family.png",
+      "fileSizeBytes": 784348,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-096-plushie-plushie-chinchilla-family-175153d4",
+      "sampleIndex": 96,
+      "sourceRelativePath": "images/plushie/plushie-chinchilla-family.png",
+      "category": "plushie",
+      "nestedCategory": null,
+      "filename": "plushie-chinchilla-family.png",
+      "fileSizeBytes": 816776,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-097-plushie-plushie-cloud-character-6f97d59e",
+      "sampleIndex": 97,
+      "sourceRelativePath": "images/plushie/plushie-cloud-character.png",
+      "category": "plushie",
+      "nestedCategory": null,
+      "filename": "plushie-cloud-character.png",
+      "fileSizeBytes": 1036207,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-098-plushie-plushie-fennec-fox-82e912ec",
+      "sampleIndex": 98,
+      "sourceRelativePath": "images/plushie/plushie-fennec-fox.png",
+      "category": "plushie",
+      "nestedCategory": null,
+      "filename": "plushie-fennec-fox.png",
+      "fileSizeBytes": 1094702,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-099-plushie-plushie-jellyfish-family-d5093829",
+      "sampleIndex": 99,
+      "sourceRelativePath": "images/plushie/plushie-jellyfish-family.png",
+      "category": "plushie",
+      "nestedCategory": null,
+      "filename": "plushie-jellyfish-family.png",
+      "fileSizeBytes": 768490,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-100-plushie-plushie-mouse-fecc100c",
+      "sampleIndex": 100,
+      "sourceRelativePath": "images/plushie/plushie-mouse.png",
+      "category": "plushie",
+      "nestedCategory": null,
+      "filename": "plushie-mouse.png",
+      "fileSizeBytes": 1030063,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-101-plushie-plushie-piglet-family-a23efd52",
+      "sampleIndex": 101,
+      "sourceRelativePath": "images/plushie/plushie-piglet-family.png",
+      "category": "plushie",
+      "nestedCategory": null,
+      "filename": "plushie-piglet-family.png",
+      "fileSizeBytes": 813547,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-102-plushie-plushie-piglet-5cb5f985",
+      "sampleIndex": 102,
+      "sourceRelativePath": "images/plushie/plushie-piglet.png",
+      "category": "plushie",
+      "nestedCategory": null,
+      "filename": "plushie-piglet.png",
+      "fileSizeBytes": 913061,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-103-plushie-plushie-prehistoric-mosasaurus-01b25e68",
+      "sampleIndex": 103,
+      "sourceRelativePath": "images/plushie/plushie-prehistoric-mosasaurus.png",
+      "category": "plushie",
+      "nestedCategory": null,
+      "filename": "plushie-prehistoric-mosasaurus.png",
+      "fileSizeBytes": 836556,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-104-plushie-plushie-skunk-b9e524ff",
+      "sampleIndex": 104,
+      "sourceRelativePath": "images/plushie/plushie-skunk.png",
+      "category": "plushie",
+      "nestedCategory": null,
+      "filename": "plushie-skunk.png",
+      "fileSizeBytes": 1277213,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-105-plushie-plushie-snake-family-e6f58b4c",
+      "sampleIndex": 105,
+      "sourceRelativePath": "images/plushie/plushie-snake-family.png",
+      "category": "plushie",
+      "nestedCategory": null,
+      "filename": "plushie-snake-family.png",
+      "fileSizeBytes": 1241486,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-106-plushie-plushie-starfish-42c6fc6c",
+      "sampleIndex": 106,
+      "sourceRelativePath": "images/plushie/plushie-starfish.png",
+      "category": "plushie",
+      "nestedCategory": null,
+      "filename": "plushie-starfish.png",
+      "fileSizeBytes": 1045154,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-107-reptiles-reptiles-komodo-dragon-509072eb",
+      "sampleIndex": 107,
+      "sourceRelativePath": "images/reptiles/reptiles-komodo-dragon.png",
+      "category": "reptiles",
+      "nestedCategory": null,
+      "filename": "reptiles-komodo-dragon.png",
+      "fileSizeBytes": 1851892,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-108-reptiles-reptiles-leatherback-turtle-fb44b658",
+      "sampleIndex": 108,
+      "sourceRelativePath": "images/reptiles/reptiles-leatherback-turtle.png",
+      "category": "reptiles",
+      "nestedCategory": null,
+      "filename": "reptiles-leatherback-turtle.png",
+      "fileSizeBytes": 2136590,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-109-reptiles-reptiles-olm-cave-salamander-9283ec6e",
+      "sampleIndex": 109,
+      "sourceRelativePath": "images/reptiles/reptiles-olm-cave-salamander.png",
+      "category": "reptiles",
+      "nestedCategory": null,
+      "filename": "reptiles-olm-cave-salamander.png",
+      "fileSizeBytes": 1093349,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-110-reptiles-reptiles-salamander-0041b7dd",
+      "sampleIndex": 110,
+      "sourceRelativePath": "images/reptiles/reptiles-salamander.png",
+      "category": "reptiles",
+      "nestedCategory": null,
+      "filename": "reptiles-salamander.png",
+      "fileSizeBytes": 2090557,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-111-reptiles-reptiles-tortoise-gator-hybrid-c5e69d29",
+      "sampleIndex": 111,
+      "sourceRelativePath": "images/reptiles/reptiles-tortoise-gator-hybrid.png",
+      "category": "reptiles",
+      "nestedCategory": null,
+      "filename": "reptiles-tortoise-gator-hybrid.png",
+      "fileSizeBytes": 1754984,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-112-sea-life-sea-life-angelfish-swimming-in-reef-95e70aed",
+      "sampleIndex": 112,
+      "sourceRelativePath": "images/sea-life/sea-life-angelfish-swimming-in-reef.png",
+      "category": "sea-life",
+      "nestedCategory": null,
+      "filename": "sea-life-angelfish-swimming-in-reef.png",
+      "fileSizeBytes": 1767837,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-113-sea-life-sea-life-barracuda-3904b9ea",
+      "sampleIndex": 113,
+      "sourceRelativePath": "images/sea-life/sea-life-barracuda.png",
+      "category": "sea-life",
+      "nestedCategory": null,
+      "filename": "sea-life-barracuda.png",
+      "fileSizeBytes": 1496239,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-114-sea-life-sea-life-cartoon-sea-urchin-b67b36c3",
+      "sampleIndex": 114,
+      "sourceRelativePath": "images/sea-life/sea-life-cartoon-sea-urchin.png",
+      "category": "sea-life",
+      "nestedCategory": null,
+      "filename": "sea-life-cartoon-sea-urchin.png",
+      "fileSizeBytes": 1645720,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-115-sea-life-sea-life-clownfish-pair-in-sea-anemone-ff8430fe",
+      "sampleIndex": 115,
+      "sourceRelativePath": "images/sea-life/sea-life-clownfish-pair-in-sea-anemone.png",
+      "category": "sea-life",
+      "nestedCategory": null,
+      "filename": "sea-life-clownfish-pair-in-sea-anemone.png",
+      "fileSizeBytes": 2589379,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-116-sea-life-sea-life-oyster-dd280d8a",
+      "sampleIndex": 116,
+      "sourceRelativePath": "images/sea-life/sea-life-oyster.png",
+      "category": "sea-life",
+      "nestedCategory": null,
+      "filename": "sea-life-oyster.png",
+      "fileSizeBytes": 2185886,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-117-sea-life-sea-life-sea-turtle-706dff4a",
+      "sampleIndex": 117,
+      "sourceRelativePath": "images/sea-life/sea-life-sea-turtle.png",
+      "category": "sea-life",
+      "nestedCategory": null,
+      "filename": "sea-life-sea-turtle.png",
+      "fileSizeBytes": 2064066,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-118-sea-life-sea-life-tuna-0303a5da",
+      "sampleIndex": 118,
+      "sourceRelativePath": "images/sea-life/sea-life-tuna.png",
+      "category": "sea-life",
+      "nestedCategory": null,
+      "filename": "sea-life-tuna.png",
+      "fileSizeBytes": 1634517,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-119-space-chatgpt-image-may-1-2025-12-50-41-am-3e13c05f",
+      "sampleIndex": 119,
+      "sourceRelativePath": "images/space/ChatGPT Image May 1, 2025, 12_50_41 AM.png",
+      "category": "space",
+      "nestedCategory": null,
+      "filename": "ChatGPT Image May 1, 2025, 12_50_41 AM.png",
+      "fileSizeBytes": 2571536,
+      "dimensions": {
+        "width": 923,
+        "height": 1385
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-120-st-patricks-day-st-patricks-day-pot-of-gold-guarded-by-leprechaun-coloring-page-0cac522f",
+      "sampleIndex": 120,
+      "sourceRelativePath": "images/st-patricks-day/st-patricks-day-pot-of-gold-guarded-by-leprechaun-coloring-page.png",
+      "category": "st-patricks-day",
+      "nestedCategory": null,
+      "filename": "st-patricks-day-pot-of-gold-guarded-by-leprechaun-coloring-page.png",
+      "fileSizeBytes": 903011,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-121-st-patricks-day-st-patricks-day-shamrock-clover-pattern-coloring-page-ffa16528",
+      "sampleIndex": 121,
+      "sourceRelativePath": "images/st-patricks-day/st-patricks-day-shamrock-clover-pattern-coloring-page.png",
+      "category": "st-patricks-day",
+      "nestedCategory": null,
+      "filename": "st-patricks-day-shamrock-clover-pattern-coloring-page.png",
+      "fileSizeBytes": 733899,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-122-world-landmarks-world-landmarks-burj-khalifa-6416a6d4",
+      "sampleIndex": 122,
+      "sourceRelativePath": "images/world-landmarks/world-landmarks-burj-khalifa.png",
+      "category": "world-landmarks",
+      "nestedCategory": null,
+      "filename": "world-landmarks-burj-khalifa.png",
+      "fileSizeBytes": 796812,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-123-world-landmarks-world-landmarks-grand-canyon-ad761e8a",
+      "sampleIndex": 123,
+      "sourceRelativePath": "images/world-landmarks/world-landmarks-grand-canyon.png",
+      "category": "world-landmarks",
+      "nestedCategory": null,
+      "filename": "world-landmarks-grand-canyon.png",
+      "fileSizeBytes": 983173,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-124-world-landmarks-world-landmarks-hollywood-sign-0d5347e3",
+      "sampleIndex": 124,
+      "sourceRelativePath": "images/world-landmarks/world-landmarks-hollywood-sign.png",
+      "category": "world-landmarks",
+      "nestedCategory": null,
+      "filename": "world-landmarks-hollywood-sign.png",
+      "fileSizeBytes": 618417,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    },
+    {
+      "dryRunSampleId": "r3a-dryrun-125-world-landmarks-world-landmarks-statue-of-liberty-f153affe",
+      "sampleIndex": 125,
+      "sourceRelativePath": "images/world-landmarks/world-landmarks-statue-of-liberty.png",
+      "category": "world-landmarks",
+      "nestedCategory": null,
+      "filename": "world-landmarks-statue-of-liberty.png",
+      "fileSizeBytes": 763852,
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "status": "approved_candidate",
+      "futurePolicyPresetId": "line-thick",
+      "notes": [
+        "Approved-source dry-run candidate only. Do not process full corpus in Round 3A."
+      ]
+    }
+  ]
+}

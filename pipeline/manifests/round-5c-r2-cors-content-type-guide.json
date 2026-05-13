@@ -1,0 +1,65 @@
+{
+  "generatedAt": "2026-05-12T01:41:03.146Z",
+  "runId": "round-5c-svg-webp-r2-test",
+  "officialSources": [
+    "https://developers.cloudflare.com/r2/buckets/cors/"
+  ],
+  "requiredContentTypes": {
+    "svg": "image/svg+xml",
+    "webp": "image/webp"
+  },
+  "corsRequirements": {
+    "svg": "required for internal SVG-to-canvas conversion and future online coloring reads",
+    "webp": "not required for normal image display, but recommended if future canvas flows use WebP",
+    "allowedOrigins": [
+      "http://localhost:3005",
+      "http://127.0.0.1:3005",
+      "final production site origin"
+    ],
+    "allowedMethods": [
+      "GET",
+      "HEAD"
+    ],
+    "allowedHeaders": [
+      "Origin",
+      "Range"
+    ],
+    "exposeHeaders": [
+      "Content-Type",
+      "Content-Length",
+      "Cache-Control",
+      "ETag"
+    ],
+    "maxAgeSeconds": 3600
+  },
+  "examplePolicy": [
+    {
+      "AllowedOrigins": [
+        "http://localhost:3005",
+        "http://127.0.0.1:3005",
+        "https://YOUR-SITE-DOMAIN.com"
+      ],
+      "AllowedMethods": [
+        "GET",
+        "HEAD"
+      ],
+      "AllowedHeaders": [
+        "Origin",
+        "Range"
+      ],
+      "ExposeHeaders": [
+        "Content-Type",
+        "Content-Length",
+        "Cache-Control",
+        "ETag"
+      ],
+      "MaxAgeSeconds": 3600
+    }
+  ],
+  "notes": [
+    "No credentials are needed for public static image reads.",
+    "SVG is public-addressable for app internals but must not be presented as a visible download format.",
+    "Use a custom asset domain for production. r2.dev is temporary testing only.",
+    "Verify with the Round 5C public URL verifier after manual upload."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "generatedAt": "2026-05-13T02:54:57.347Z",
+  "runId": "round-5l-future-full-upload-plan",
+  "summary": {
+    "useCleanObjectKeys": true,
+    "uploadSvgAndWebpOnly": true,
+    "excludePng": true,
+    "excludeThumbs": true,
+    "sourceFilesRemainUnchanged": true,
+    "generatedLocalMediaRemainUnchangedUntilCleanBundleGeneration": true,
+    "fullUploadFinalStageOnly": true,
+    "explicitApprovalRequired": true,
+    "imageSitemapDeferredUntilCleanPublicUrlsVerified": true,
+    "openGraphImagesDeferredUntilCleanPublicUrlsVerified": true,
+    "liveAdsSeparate": true,
+    "expectedRecords": 6557,
+    "expectedUploadFiles": 13114,
+    "expectedUploadBytes": 2148737376
+  },
+  "uploadFolders": [
+    "coloring-pages/svg",
+    "coloring-pages/webp"
+  ],
+  "excludedFolders": [
+    "coloring-pages/png",
+    "coloring-pages/thumbs"
+  ],
+  "checklist": [
+    "Review manual-review naming items or approve conservative fallback names.",
+    "Generate a clean upload bundle using round-5l-final-svg-webp-object-key-map.json.",
+    "Verify bundle contains exactly SVG and WebP files.",
+    "Upload only after explicit owner approval.",
+    "Run URL, CORS, cache, static export, and browser QA before any sitemap, OG, JSON-LD image expansion, or live ad work."
+  ]
+}

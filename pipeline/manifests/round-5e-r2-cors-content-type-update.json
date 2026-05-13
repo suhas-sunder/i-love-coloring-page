@@ -1,0 +1,50 @@
+{
+  "generatedAt": "2026-05-12T02:42:51.396Z",
+  "runId": "round-5e-r2-cors-content-type-update",
+  "source": "Round 5E observed public SVG/WebP test headers",
+  "summary": {
+    "publicBaseType": "missing",
+    "publicVerificationReady": false,
+    "svgCorsPassed": false,
+    "svgInternalOnly": true,
+    "webpPublicGalleryPreview": true,
+    "jpgJpegWebpControlsRemainHidden": true
+  },
+  "expectedContentTypes": {
+    "svg": "image/svg+xml",
+    "webp": "image/webp"
+  },
+  "observedHeaders": {
+    "svg": [],
+    "webp": []
+  },
+  "recommendedCorsPolicy": [
+    {
+      "AllowedOrigins": [
+        "http://localhost:3005",
+        "http://127.0.0.1:3005"
+      ],
+      "AllowedMethods": [
+        "GET",
+        "HEAD"
+      ],
+      "AllowedHeaders": [
+        "*"
+      ],
+      "ExposeHeaders": [
+        "Content-Type",
+        "Cache-Control",
+        "Content-Length"
+      ],
+      "MaxAgeSeconds": 86400
+    }
+  ],
+  "requiredCorrections": [
+    "Set Access-Control-Allow-Origin for the production origin and local preview origin, or use wildcard for public static assets."
+  ],
+  "cacheGuidance": "Use long-lived immutable cache headers for versioned generated assets after final upload.",
+  "verificationCommand": "node pipeline/scripts/round-5e-verify-svg-webp-public-urls.mjs --public-base-url https://YOUR-ASSET-DOMAIN.com/coloring-pages",
+  "notUserFacing": [
+    "SVG remains internal-only and must not be shown as a visible download option."
+  ]
+}

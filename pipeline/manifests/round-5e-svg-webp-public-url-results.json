@@ -1,0 +1,51 @@
+{
+  "generatedAt": "2026-05-12T02:42:51.395Z",
+  "runId": "round-5e-svg-webp-public-url-results",
+  "sourcePlan": "pipeline/manifests/round-5c-svg-webp-url-verification-plan.json",
+  "publicBaseValidationSummary": {
+    "publicBaseUrlConfigured": false,
+    "publicBaseUrlRedacted": "",
+    "publicVerificationReady": false,
+    "isHttpOrHttps": false,
+    "includesColoringPagesPrefix": false,
+    "isLocalhost": false,
+    "hasOldTestPrefix": false,
+    "hasDuplicateColoringPagesPrefix": false,
+    "privateR2Endpoint": false,
+    "isR2Dev": false,
+    "isCustomDomain": false,
+    "credentialsInUrl": false,
+    "noCredentialsAppearInUrl": true,
+    "baseType": "missing"
+  },
+  "summary": {
+    "status": "not_run",
+    "publicBaseUrlConfigured": false,
+    "publicBaseUrlRedacted": "",
+    "baseType": "missing",
+    "publicUrlVerificationPassed": false,
+    "plannedUrlCount": 60,
+    "plannedSvgUrlCount": 30,
+    "plannedWebpUrlCount": 30,
+    "checkedUrlCount": 0,
+    "svgCheckedCount": 0,
+    "webpCheckedCount": 0,
+    "http200Count": 0,
+    "headOkCount": 0,
+    "svgContentTypePassCount": 0,
+    "webpContentTypePassCount": 0,
+    "nonZeroByteCount": 0,
+    "svgCorsPassCount": 0,
+    "noAccessDeniedXml": true,
+    "noCloudflareErrorHtml": true,
+    "noPrivateEndpointRedirect": true,
+    "noOldTestPrefix": true,
+    "noDoubleColoringPagesPrefix": true,
+    "noLocalFilesystemPathLeak": true,
+    "cacheHeadersObserved": []
+  },
+  "checks": [],
+  "blockers": [
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL is not configured for this shell. Public SVG/WebP verification was not run."
+  ]
+}

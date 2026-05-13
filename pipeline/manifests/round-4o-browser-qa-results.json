@@ -1,0 +1,95 @@
+{
+  "generatedAt": "2026-05-11",
+  "runId": "round-4o-browser-downloads",
+  "localAppUrl": "http://localhost:3005",
+  "localMediaBaseUrl": "http://127.0.0.1:4175/coloring-pages",
+  "pagesInspected": [
+    "/coloring-pages",
+    "/coloring-pages/animals",
+    "/coloring-pages/anime-girls",
+    "/coloring-pages/geometric",
+    "/coloring-pages/christmas",
+    "/coloring-pages/plushies"
+  ],
+  "summary": {
+    "realMediaRendered": true,
+    "brokenImagePreviewsObserved": false,
+    "visibleSvgDownloadOptions": false,
+    "visibleJpegWebpOptions": false,
+    "printActionPresent": true,
+    "pngDownloadPresent": true,
+    "sampledPngDownloadLinksOk": true,
+    "sampledPngDownloadContentType": "image/png",
+    "appApiRouteObserved": false,
+    "adPlacementChanged": false,
+    "adStylingChanged": false
+  },
+  "sampledPages": [
+    {
+      "route": "/coloring-pages",
+      "imageCount": 66,
+      "downloadPngCount": 60,
+      "printCount": 66,
+      "svgDownloadCount": 0,
+      "jpegWebpDownloadCount": 0,
+      "previewUnavailableCount": 0,
+      "sampledImageStatusFailures": 0,
+      "screenshot": "pipeline/review/round-4o/screenshots/coloring-pages.png"
+    },
+    {
+      "route": "/coloring-pages/animals",
+      "imageCount": 66,
+      "downloadPngCount": 60,
+      "printCount": 67,
+      "svgDownloadCount": 0,
+      "jpegWebpDownloadCount": 0,
+      "previewUnavailableCount": 0,
+      "sampledImageStatusFailures": 0,
+      "screenshot": "pipeline/review/round-4o/screenshots/coloring-pages-animals.png"
+    },
+    {
+      "route": "/coloring-pages/anime-girls",
+      "imageCount": 66,
+      "downloadPngCount": 60,
+      "printCount": 67,
+      "svgDownloadCount": 0,
+      "jpegWebpDownloadCount": 0,
+      "previewUnavailableCount": 0,
+      "sampledImageStatusFailures": 0,
+      "screenshot": "pipeline/review/round-4o/screenshots/coloring-pages-anime-girls.png"
+    },
+    {
+      "route": "/coloring-pages/geometric",
+      "imageCount": 66,
+      "downloadPngCount": 60,
+      "printCount": 67,
+      "svgDownloadCount": 0,
+      "jpegWebpDownloadCount": 0,
+      "previewUnavailableCount": 0,
+      "sampledImageStatusFailures": 0,
+      "screenshot": "pipeline/review/round-4o/screenshots/coloring-pages-geometric.png"
+    },
+    {
+      "route": "/coloring-pages/christmas",
+      "imageCount": 66,
+      "downloadPngCount": 60,
+      "printCount": 67,
+      "svgDownloadCount": 0,
+      "jpegWebpDownloadCount": 0,
+      "previewUnavailableCount": 0,
+      "sampledImageStatusFailures": 0,
+      "screenshot": "pipeline/review/round-4o/screenshots/coloring-pages-christmas.png"
+    },
+    {
+      "route": "/coloring-pages/plushies",
+      "imageCount": 66,
+      "downloadPngCount": 60,
+      "printCount": 67,
+      "svgDownloadCount": 0,
+      "jpegWebpDownloadCount": 0,
+      "previewUnavailableCount": 0,
+      "sampledImageStatusFailures": 0,
+      "screenshot": "pipeline/review/round-4o/screenshots/coloring-pages-plushies.png"
+    }
+  ]
+}

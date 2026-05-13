@@ -1,0 +1,124 @@
+{
+  "generatedAt": "2026-05-11T19:30:00.000Z",
+  "runId": "round-4x-trust-page-plan",
+  "pages": [
+    {
+      "route": "/about",
+      "indexability": "index",
+      "purpose": "Explain the printable coloring page library and build visitor trust.",
+      "h1": "About I Love Coloring Page",
+      "metaTitle": "About I Love Coloring Page",
+      "metaDescription": "Learn about I Love Coloring Page, a printable coloring page library organized into useful collections with PNG print and download options.",
+      "contentSections": [
+        "What this site is",
+        "How the library is organized",
+        "What you can do here",
+        "What is not available yet"
+      ],
+      "footerLinkLabel": "About",
+      "requiredBeforeAdsense": true,
+      "ownerReviewRequired": true,
+      "legalReviewRecommended": false,
+      "mentionsAdsCookiesAffiliate": false
+    },
+    {
+      "route": "/contact",
+      "indexability": "index",
+      "purpose": "Provide a public issue-report and owner-contact path before launch.",
+      "h1": "Contact",
+      "metaTitle": "Contact I Love Coloring Page",
+      "metaDescription": "Contact I Love Coloring Page about broken pages, image issues, copyright concerns, accessibility issues, partnerships, or affiliate inquiries.",
+      "contentSections": [
+        "Contact details",
+        "Reasons to contact",
+        "Copyright and image concerns"
+      ],
+      "footerLinkLabel": "Contact",
+      "requiredBeforeAdsense": true,
+      "ownerReviewRequired": true,
+      "legalReviewRecommended": false,
+      "mentionsAdsCookiesAffiliate": false
+    },
+    {
+      "route": "/privacy",
+      "indexability": "index",
+      "purpose": "Disclose current static-site behavior and future Google advertising cookie requirements.",
+      "h1": "Privacy Policy",
+      "metaTitle": "Privacy Policy",
+      "metaDescription": "Read the draft privacy policy for I Love Coloring Page, including current static-site behavior and future advertising disclosures.",
+      "contentSections": [
+        "Last updated",
+        "What this site is",
+        "Information currently collected",
+        "Analytics, advertising, and cookies",
+        "Affiliate links",
+        "Children's privacy",
+        "Contact and updates"
+      ],
+      "footerLinkLabel": "Privacy",
+      "requiredBeforeAdsense": true,
+      "ownerReviewRequired": true,
+      "legalReviewRecommended": true,
+      "mentionsAdsCookiesAffiliate": true
+    },
+    {
+      "route": "/terms",
+      "indexability": "index",
+      "purpose": "Set practical use rules for PNG downloads, printing, and site content.",
+      "h1": "Terms of Use",
+      "metaTitle": "Terms of Use",
+      "metaDescription": "Read the draft terms for using I Love Coloring Page printable pages, PNG downloads, and site content.",
+      "contentSections": [
+        "Last updated",
+        "Permitted personal and classroom use",
+        "Restrictions",
+        "Downloads and availability",
+        "Future tools",
+        "Copyright, external links, and affiliate links",
+        "Draft limitation language"
+      ],
+      "footerLinkLabel": "Terms",
+      "requiredBeforeAdsense": true,
+      "ownerReviewRequired": true,
+      "legalReviewRecommended": true,
+      "mentionsAdsCookiesAffiliate": true
+    },
+    {
+      "route": "/affiliate-disclosure",
+      "indexability": "index",
+      "purpose": "Prepare for future affiliate links without adding affiliate links or scripts.",
+      "h1": "Affiliate Disclosure",
+      "metaTitle": "Affiliate Disclosure",
+      "metaDescription": "Read the draft affiliate disclosure for future recommendation or referral links on I Love Coloring Page.",
+      "contentSections": [
+        "How affiliate links may work",
+        "Where disclosures should appear",
+        "Editorial independence"
+      ],
+      "footerLinkLabel": "Affiliate Disclosure",
+      "requiredBeforeAdsense": false,
+      "ownerReviewRequired": true,
+      "legalReviewRecommended": true,
+      "mentionsAdsCookiesAffiliate": true
+    },
+    {
+      "route": "/editorial-policy",
+      "indexability": "index",
+      "purpose": "Explain collection organization, quality expectations, and visitor issue reports.",
+      "h1": "Editorial Policy",
+      "metaTitle": "Editorial Policy",
+      "metaDescription": "Learn how I Love Coloring Page organizes collections, reviews printable page usefulness, and handles issue reports.",
+      "contentSections": [
+        "How collections are organized",
+        "How page usefulness is reviewed",
+        "Quality and safety issues",
+        "Advertising and affiliate separation"
+      ],
+      "footerLinkLabel": "Editorial Policy",
+      "requiredBeforeAdsense": false,
+      "ownerReviewRequired": true,
+      "legalReviewRecommended": false,
+      "mentionsAdsCookiesAffiliate": false
+    }
+  ]
+}

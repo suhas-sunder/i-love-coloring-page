@@ -14,6 +14,31 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Always work in small batches first.
 - Always produce manifests and reports for inventory, conversion, review, and production decisions.
 - Always quarantine questionable images instead of silently approving or deleting them.
+- Future production, export, gallery, sitemap, and metadata scripts must consume `pipeline/manifests/round-3a-approved-source-images.json` or a later approved-source manifest. They must not directly glob `images/` for production inputs.
+- Round 2 flagged images are rejected for now.
+- Round 3A rejected images are rejected for now.
+- Rejected images may only be restored by an explicit future approval/update manifest.
+- When uncertain, reject for now.
+- High-risk category does not mean automatic rejection.
+- Human-adjacent category does not mean automatic rejection.
+- Category membership may increase scrutiny but must not be used as the only rejection reason.
+- Warning images are still eligible unless they have concrete rejection-level issues.
+- Most source images have already been manually reviewed and should be treated as mostly valid.
+- Future source QA should approve by default unless a concrete defect is identified.
+- New source QA rejection counts above 500, excluding previously blocked Round 2 images, require diagnostic failure mode.
+- Future production, export, gallery, sitemap, and metadata scripts should use the latest approved-source manifest, currently `pipeline/manifests/round-3a1-approved-source-images.json`, unless replaced by a later approved manifest.
+- Future blocked-source logic should use the latest blocked-source manifest, currently `pipeline/manifests/round-3a1-blocked-source-images.json`, unless replaced by a later blocked manifest.
+- Production exporters must validate every input against the latest approved-source manifest before processing.
+- Blocked images must never be processed unless restored by an explicit later approval manifest.
+- Warning images remain eligible for conversion when they are present in the approved-source manifest; preserve warning metadata instead of treating warnings as rejection.
+- Production dry-run outputs must stay under `pipeline/production/dry-run/` and out of any Next.js `public/` folder.
+- Full production export outputs must stay under `pipeline/production/full/` and out of any Next.js `public/` folder until Round 4 explicitly decides the public asset strategy.
+- Future Next.js builds must consume generated metadata and data files instead of importing thousands of image files directly into React components.
+- Category and gallery pages may be indexable; individual image pages must not be created as indexable pages.
+- Final asset IDs must be deterministic and collision-safe.
+- Duplicate original filenames cannot be trusted as unique IDs.
+- Duplicate filenames are not duplicate images by themselves; keep same-name images when content differs and use deterministic collision-safe output IDs.
+- Only exact duplicate image content may be excluded as a duplicate, and source files must still never be deleted or moved.
 
 ## Human And Humanoid QA
 
@@ -49,6 +74,396 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Optional subhub pages are allowed only when there is enough quality content and distinct user intent.
 - Individual images should exist as static assets and metadata records, not separate indexable HTML pages.
 - Future coloring app or dashboard routes should be kept separate from public SEO gallery pages.
+- Original source folders are not the final public website taxonomy.
+- Public hub pages must be generated from approved production metadata and descriptive filenames, not raw folders alone.
+- Images may belong to multiple public hubs when the filename, subject, style, theme, or metadata supports that assignment.
+- Hub pages must be useful, distinct, and supported by enough approved production assets.
+- Do not create thin SEO pages, duplicate singular/plural routes, or keyword-stuffed hub variants.
+- Do not create indexable per-image pages.
+- Final public route planning should use the approved hub taxonomy, not raw category folders.
+- The Next.js build should consume the Round 4A hub taxonomy and image-to-hub maps.
+- Next.js gallery pages must consume Round 4A and Round 4B generated data, not raw folders.
+- Phase 2 hubs must stay out of the sitemap until a later prompt explicitly promotes them.
+- Section-only topics must stay non-indexable and should be represented only as sections, filters, or internal data.
+- Do not copy production assets into `public/` unless a later asset-hosting prompt explicitly asks for it.
+- Asset URL logic must stay centralized in the coloring asset resolver.
+- Large hub pages must use pagination or limited initial rendering.
+- Public gallery UI should be structured and useful, not a raw asset dump.
+
+## Public Gallery Visual System
+
+- The Round 4C design system is the source of truth for public gallery UI.
+- The public gallery uses the light "Indigo Paper" shell.
+- Future online coloring workspace routes may use a separate dark shell, but that workspace shell is not part of the public gallery shell.
+- Do not introduce ad hoc colors, fonts, spacing, radius, shadows, outlines, or button styles.
+- Approved public gallery colors, typography, spacing, radii, and component rules live in `pipeline/manifests/round-4c-design-system.json`, `pipeline/manifests/round-4c-typography.json`, and `pipeline/manifests/round-4c-component-rules.json`.
+- CSS implementation should stay centralized in `src/styles/tokens.css`, `src/styles/base.css`, `src/styles/layout.css`, and `src/styles/components.css`.
+- No gradients.
+- No decorative outlines.
+- No resting-state borders on layout surfaces.
+- No shadows except the approved button micro-shadow.
+- Visible `:focus-visible` treatment is mandatory for interactive controls.
+- Do not hide keyboard focus.
+- No nested cards.
+- Do not add unnecessary background colors.
+- Use semantic HTML.
+- Use native buttons and links instead of div-based fake controls.
+- Gallery media must resolve through the centralized asset resolver.
+- No per-image indexable pages.
+- Do not copy production assets into `public/`.
+- Large hub pages must use limited rendering or pagination.
+- Any new public page must declare page type, indexability status, metadata strategy, and component variants used.
+- Design-system compliance is not enough for major UI commits; run browser visual QA before committing public gallery changes.
+- New public pages must be checked at desktop and mobile widths.
+- Real asset states and placeholder states must both be checked.
+- The homepage, gallery landing page, and representative hub pages must stay visually aligned.
+- Do not add SEO copy that weakens visual quality or sounds generic.
+- Do not create walls of cards, tags, or links without hierarchy.
+- Hub pages must show gallery access near the top.
+- SEO and supporting content should not block gallery access.
+- Large galleries need search and filter UX, not only pagination.
+- Featured and pinned images should be generated deterministically and kept near the top of hub pages.
+- Real-media preview is required before major visual judgments.
+- Placeholder-only screenshots are not enough to approve the design.
+- Add color through approved tokens only.
+- Do not make the design corporate, childish, loud, or cluttered.
+- Do not add backend or API routes for search or filters.
+- Search and filters must remain static-export compatible.
+- Round 4K forbids nested cards, especially image grids inside colored rounded section cards.
+- Colored sections must be full-width bands with normal max-width inner layout, not wrapper cards around cards.
+- Do not invent colors outside the approved Round 4K tokens.
+- Do not use random yellow or beige backgrounds.
+- Main image cards must show the image cleanly without visible padding or colored gaps behind it.
+- Main gallery cards should use the best available preview asset.
+- PNG and SVG must not appear as noisy primary action pills.
+- Print may remain the primary visible card action.
+- Displayed preview images must be clickable and show cursor-pointer.
+- Homepage preview images must link to actual item targets.
+- Public titles must not expose ChatGPT, Failed, timestamp, or generic AI export names.
+- Do not rename source files or generated media files without an explicit filename cleanup round.
+- Typography must stay on the locked Google Fonts system: Fraunces for major display headings and Figtree for UI and body text.
+- Round 4L forbids broken browser image icons in public gallery previews.
+- Main gallery previews must use the generated WebP preview URL from the centralized resolver when available.
+- Asset URL fixes must be audited against actual files under the local R2 upload bundle before visual judgment.
+- If `NEXT_PUBLIC_COLORING_ASSET_BASE_URL` is missing, show intentional placeholders instead of broken image states.
+- If an image URL fails, hide the failed image element and show the intentional fallback.
+- Do not judge gallery design from missing-asset or stale-asset-base states.
+- Do not add backend or API routes to fix media preview issues.
+- Do not move generated media into `public/` to fix preview issues.
+- Ads must be planned as policy-safe slots, not improvised in content.
+- Do not add live AdSense code, ad scripts, ad client values, or publisher values until a later prompt explicitly requests live ad integration.
+- Ad placeholders are visible by default as permanent layout wells until live ads replace them.
+- Do not rely on `NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS` to show ad placeholders.
+- Ad placeholders must be clearly labeled `Advertisement`.
+- Do not place ads or ad placeholders inside gallery grids as fake cards.
+- Do not place ads or ad placeholders near Print or Download controls.
+- Do not place ads or ad placeholders inside navigation.
+- Desktop side rails must disappear on smaller screens and must not overlap content, navigation, scrollbars, or other ads.
+- Avoid mobile top ads unless a later prompt explicitly approves them because they can crowd the first screen and increase accidental-click risk.
+- Navbar links must use existing generated routes only.
+- Do not add backend or API routes for ads or navigation.
+- SVG is internal infrastructure only and must not be offered as a user-facing download.
+- Public download formats are PNG plus verified browser-side JPG/JPEG/WebP only.
+- If JPG/JPEG/WebP conversion is not implemented and verified, do not show those download options.
+- Browser-side conversion must remain static-export compatible.
+- Browser-side conversion must use PNG preview input, not a user-facing SVG path.
+- Do not add backend or API routes for download conversion.
+- Ad placeholders should be QA-tested with real media before live AdSense work.
+- Normal static builds must show `Advertisement`-labeled ad wells.
+- Ad placeholders must not appear inside navigation, image cards, gallery grids, or Print/Download rows.
+- SEO and content expansion must keep gallery access near the top.
+- SEO sections must be useful, unique, intent-matched, and visually aligned with the locked public gallery design system.
+- SEO sections must not use nested cards, shadows, borders, outlines, gradients, or random colors.
+- JSON-LD, image sitemap, and Open Graph image work should wait until the appropriate SEO round.
+- The top-level navbar should not include a redundant `Coloring Pages` button.
+- The More menu must provide searchable access to generated hub pages.
+- Mobile navigation must include searchable hub navigation.
+- More and mobile navigation must use existing generated routes only.
+- If ad placeholders exist, they must be visibly QA-tested in the normal static build.
+- Ad placeholder QA requires screenshot paths and visible `Advertisement` label counts.
+- Remove `out/` before ad QA builds to avoid stale static exports.
+- Header/banner ad placeholders should sit below nav, not above it.
+- Desktop side rail placeholders should render on both left and right only when enough room exists.
+- Side rail placeholders must have a safe content gap and must not overlap content.
+- Side rails must disappear on smaller screens.
+- Small-screen banner ad placeholders may appear below the header, but must not crowd navigation.
+- Every ad placeholder slot needs a stable unique slot ID.
+- Round 4R freezes ad placeholder placement and slot IDs unless a documented bug requires a change.
+- Ad placeholder visual styling may be refined only as a shell polish pass that preserves slot placement, slot IDs, slot count, page coverage, and static export behavior.
+- Ad placeholders must stay clean and visible in QA mode without mimicking content cards, gallery tiles, buttons, or navigation.
+- Ad placeholders must use approved design tokens only.
+- Do not use gradients, shadows, outlines, borders, nested cards, fake ad creative, or random colors in ad placeholders.
+- Ad placeholder screenshots should be reviewed with placeholders ON and OFF before live AdSense work.
+- Live AdSense code remains out of scope until explicitly requested.
+- Horizontal page overflow is a blocker.
+- Manual screenshots override automated pass claims if visible layout issues remain.
+- Ad placeholders must be obvious enough to see in QA mode.
+- Placeholder-on QA must count visible `Advertisement` labels.
+- If owner screenshots show no ad placeholders, automated visibility claims are not accepted.
+- No SEO or live-ad work until placeholder visibility matches manual review.
+- Ad density must remain controlled.
+- Wide desktop should use the 3-placement model: header banner plus left and right rails.
+- Mobile and tablet should use one visible ad placeholder, not desktop rails.
+- Do not show desktop and mobile ad models at the same time.
+- Do not show 4 or 5 visible ad wells near the first screen.
+- Ad layout QA must include visible `Advertisement` counts by viewport.
+- Do not proceed to SEO or live ads until the owner accepts the visible ad layout.
+- Normal static builds should still show the selected ad wells by default.
+- SEO/content implementation requires the owner acceptance gate to pass.
+- Browser screenshots must support visual acceptance claims.
+- Round 4U ad density policy must remain in force.
+- Horizontal overflow is a blocker for owner acceptance.
+- Manual screenshots override automated pass claims.
+- Do not proceed to SEO until ad layout, navigation, mobile behavior, and real-media rendering are accepted.
+- SEO content must be useful, unique, intent-matched, and below or secondary to gallery access.
+- Do not create keyword-stuffed or cookie-cutter hub pages.
+- Gallery access must remain near the top.
+- SEO sections must follow the design system: no nested cards, borders, shadows, outlines, gradients, or random colors.
+- Metadata must stay route-specific and accurate.
+- Do not mention SVG downloads publicly.
+- Do not promise online coloring as available until it exists.
+- Image sitemap and OG image work must wait until stable public asset URLs are verified.
+- JSON-LD must be accurate, visible-content-aligned, and not overused.
+- Live AdSense remains out of scope until explicitly requested.
+- Trust/legal pages are required before AdSense application.
+- Privacy page must be reviewed before live ads.
+- Contact path must be real before launch and AdSense review.
+- Affiliate disclosure must exist before affiliate links are actively used.
+- Policy pages are drafts and require owner/legal review.
+- Do not add fake company, contact, address, phone, or legal details.
+- Do not add live AdSense before privacy, contact, and trust pages are accepted.
+- Sitemap may include trust pages but must still exclude per-image routes, Phase 2 hubs, rejected hubs, and image sitemap entries.
+- Public contact method is required before AdSense application.
+- `NEXT_PUBLIC_SITE_URL` must be configured before production launch.
+- `NEXT_PUBLIC_COLORING_ASSET_BASE_URL` must be configured before public media, image sitemap, or Open Graph image work.
+- Trust/legal pages are drafts until owner/legal review.
+- Live AdSense must wait until trust pages, contact method, public domain, and policy review are ready.
+- Public site build must not leak localhost, local file paths, private R2 endpoints, or stale `r2.dev` URLs unless explicitly testing.
+- Do not add image sitemap or Open Graph image work until public asset-domain validation passes.
+- Side rail ad containers must reserve and constrain a fixed safe rail width before real ad code is added.
+- Side rail ad containers must keep a clear gap from the main content and must hide before the viewport becomes unsafe.
+- A wider future ad creative must not overlap page content, create horizontal overflow, or cover navigation, gallery, search, filters, Print, or Download controls.
+- Do not rely on body-level horizontal overflow masking as the primary ad rail safety fix.
+- More menu must open and close predictably.
+- More menu should use available desktop width responsibly and must not be cramped on large screens.
+- Mobile nav must use a proper hamburger full-screen or near-full-screen panel with search at the top.
+- Mobile nav must not use a hacky narrow overlay with awkward exposed page space.
+- Burger menu must not use a bordered button style.
+- Nav and menu surfaces must not contain ads.
+- Nav and menu surfaces must not reintroduce a top-level `Coloring Pages` button.
+- Nav and menu surfaces must use generated Phase 1 routes only.
+- Nav and ad fixes must preserve static export and must not add `app/api` routes.
+- Do not mark layout QA complete until manual-screenshot issues are fixed.
+- Do not put ads or affiliate content inside navigation menus.
+- Do not change ad placement while working on navigation or download controls.
+- Do not add backend or API routes for downloads or navigation.
+- Browser-side download conversions must remain static-export compatible.
+- Full image publishing and full R2 upload are final-stage production tasks, not blockers for local print/download feature work.
+- Print must not use thumbnail assets or tiny preview-like assets when a higher-quality internal source is available.
+- SVG is internal infrastructure and may be used for browser-side raster conversion, but it must never be exposed as a user-facing download.
+- Public download formats are PNG plus verified browser-side JPEG/JPG/WebP only.
+- Do not show JPG, JPEG, or WebP controls unless browser conversion and production asset CORS are verified.
+- Browser-side raster conversion requires the final asset domain to provide CORS for the production site origin.
+- The current public contact email is `admin@ilovecoloringpage.com` unless the owner changes it in a later round.
+- Do not add `app/api` or backend routes for downloads, printing, or conversion.
+- Image sitemap, Open Graph image, and live AdSense work must wait until public assets are final and verified.
+- Public asset-domain CORS must be verified before exposing JPG, JPEG, or WebP download controls.
+- Print should continue to prefer internal SVG conversion, with PNG preview fallback only when conversion fails.
+- SVG remains internal-only even when browser-side conversion uses it.
+- Full image upload remains final-stage production work and must not be required for CORS subset validation.
+- Do not create image sitemap or Open Graph image logic until final public asset URLs are stable.
+- R2/custom-domain CORS settings must be documented before launch.
+- Final R2 strategy is SVG plus WebP unless later evidence reverses it.
+- SVG is the internal source of truth for print, browser-side conversion, and future online coloring work.
+- WebP is the public gallery preview format.
+- PNG previews and thumbnails should not be part of the final upload plan unless a later blocker explicitly justifies them.
+- Do not delete legacy PNG preview or thumbnail files until the migration is fully verified.
+- Gallery previews should prefer WebP when available, then fall back to PNG preview, then thumbnail.
+- Print and public download generation should prefer internal SVG when CORS allows.
+- Full image upload remains final-stage production work.
+- R2 test bundles should now use SVG plus WebP only.
+- Do not include PNG previews or thumbnails in new R2 upload bundles unless explicitly approved.
+- SVG may be public-addressable for app internals, but must not be shown as a visible user download.
+- Public CORS must be verified on SVG before enabling JPG, JPEG, or WebP download controls.
+- Image sitemap and Open Graph image work must wait until final public asset URLs are stable.
+- Public SVG plus WebP test verification must pass before final SVG plus WebP full upload.
+- WebP is the public gallery preview format.
+- SVG is internal-only and used for conversion/coloring, not visible download.
+- Do not include png/thumbs in new R2 upload plans unless explicitly approved.
+- Public test success does not approve live ads, image sitemap, or Open Graph image work.
+- Round 5E public verification must use `NEXT_PUBLIC_COLORING_ASSET_BASE_URL`; if it is missing, local, private, or not pointed at the uploaded SVG plus WebP test bundle, URL/CORS/browser results must stay `not_run`.
+- Missing or invalid public asset base configuration must keep JPG, JPEG, and WebP controls hidden.
+- `r2.dev` may be used only as a temporary test route; a custom asset domain remains preferred before production readiness claims.
+- Browser public QA must not be claimed unless the static build is served with the configured public asset base and the uploaded WebP/SVG test files are reachable.
+- Round 5F uses `r2.dev` only as a temporary public SVG plus WebP test base.
+- Do not validate `png/` as a substitute for missing or failing `webp/` objects in the SVG plus WebP model.
+- Public SVG plus WebP test verification must pass, including SVG CORS and browser canvas export, before JPG, JPEG, or WebP controls are exposed.
+- Public SVG plus WebP test success does not approve full upload, live ads, image sitemap, or Open Graph image work.
+- Round 5G CORS verification must send an `Origin` header. Missing CORS headers from a request without `Origin` must not be treated as conclusive failure.
+- Public browser conversion must pass before JPG, JPEG, or WebP controls are exposed.
+- `r2.dev` remains temporary testing only; a custom asset domain remains preferred for production.
+- SVG remains internal-only and WebP remains the gallery preview format.
+- Full upload remains final-stage production work.
+- Round 5H public download controls may include PNG, JPG or JPEG, and WebP after verified browser conversion.
+- SVG must remain internal-only and must never appear as a user-facing download format.
+- Print must use internal SVG conversion when possible, with fallback only when conversion cannot be prepared.
+- Download conversion must remain frontend-only and static-export compatible.
+- Do not add an `app/api` route, backend service, or server-side conversion path for image downloads.
+- If CORS or canvas conversion fails, user-facing download controls must fail gracefully without exposing technical stack traces or SVG URLs.
+- Full upload remains final-stage production work.
+- A custom asset domain remains required before production launch readiness.
+- Round 5I production download readiness requires custom asset-domain validation, not `r2.dev`.
+- `r2.dev` is temporary testing only and must not be treated as production-ready.
+- SVG plus WebP full upload requires custom-domain content-type, CORS, and cache validation first.
+- PNG, JPG, and WebP downloads must continue to fail gracefully if browser conversion fails.
+- SVG remains internal-only and must never appear as a user-facing download option.
+- Do not start image sitemap, Open Graph image, JSON-LD image expansion, live AdSense, or ad scripts until the production asset domain is accepted.
+- Round 5K production download readiness still requires custom asset-domain validation, not `r2.dev`.
+- Round 5K SVG plus WebP full upload requires custom-domain content-type, Origin-aware CORS, and cache validation.
+- PNG, JPG, and WebP downloads must continue to fail gracefully if SVG browser conversion fails.
+- SVG remains internal-only and must never be shown as a user-facing download option.
+- Do not start image sitemap, Open Graph image, live ads, ad scripts, or JSON-LD image expansion until the production asset domain is accepted.
+- Do not validate PNG as a substitute for WebP in SVG plus WebP custom-domain verification.
+- Round 5L public R2 object keys should not expose AI, export, failure, timestamp, or internal pipeline names.
+- Do not rename source images or current generated media without explicit owner approval.
+- Future full upload should use the clean SVG plus WebP object-key mapping, not raw AI/export filenames.
+- Do not switch app runtime paths to clean object keys until matching uploaded files exist and pass public URL verification.
+- Clean key mapping must preserve `assetId` values and public page route stability.
+- Full upload remains final-stage production work and still requires explicit approval.
+- Image sitemap and Open Graph image work must wait until clean public URLs are uploaded and verified.
+- Round 5M manual-review filename items require an owner decision before final clean upload bundle generation.
+- Do not auto-approve low-confidence clean object keys.
+- Contact sheets and review CSVs are review artifacts, not source of truth unless the owner approves them.
+- Do not switch runtime paths until the clean bundle is generated, uploaded, and verified.
+- Do not upload full assets before the owner approves the object-key review.
+- Manual-review items may be excluded from the first upload only with explicit owner approval.
+- Round 5N first clean full upload bundle excludes manual-review records unless the owner explicitly approves them.
+- The 205 manual-review records are deferred, not deleted, and may be handled in a later upload round.
+- Do not switch runtime app paths to clean object keys until the clean upload is uploaded, publicly verified, and browser-tested.
+- Clean upload bundles must be SVG plus WebP only.
+- Do not include `png/` or `thumbs/` in clean upload bundles.
+- Do not upload assets from Codex unless explicitly approved.
+- `pipeline/r2-upload-clean/` is generated media and must not be committed.
+- Runtime path switching requires a separate verified round after upload.
+- Round 5O R2 upload utility is local-only and temporary.
+- Upload scripts must default to dry-run.
+- Real upload requires explicit `--execute` plus exact bucket, prefix, and file-count confirmation flags.
+- R2 credentials must come from local environment only and must never be committed, logged, or written to reports.
+- R2 upload bucket must be `i-love-coloring-page` and prefix must be `coloring-pages` unless explicitly approved.
+- Upload scripts must never delete remote objects.
+- Upload scripts must never upload `png/` or `thumbs/`.
+- Upload scripts must never include deferred manual-review records.
+- Full upload should be run by the owner locally, not automatically by Codex.
+- Runtime paths must not switch until post-upload verification passes.
+- Round 5P requires conservative SVG plus WebP optimization before final upload.
+- SVG optimization must be deterministic and must never remove `viewBox` or break scaling, strokes, fills, paths, black line art, browser canvas conversion, or future coloring/editing potential.
+- Byte savings must never override visual correctness; if optimized output is risky, larger, or fails validation, use the original clean asset in the optimized bundle.
+- Optimized upload media must live separately under `pipeline/r2-upload-optimized/`; the original clean bundle remains the fallback and must not be overwritten.
+- Upload scripts should prefer `pipeline/r2-upload-optimized/coloring-pages` only after the Round 5P compression acceptance gate passes.
+- Contact sheets and screenshots under `pipeline/review/round-5p/` are ignored review artifacts and must not be committed.
+- Full upload remains owner-controlled after optimized bundle review and dry-run verification.
+- Round 5Q category upload smoke tests must use both `--category` and matching `--confirm-category`.
+- Never test-upload the full bundle by accident; category smoke uploads must report the exact confirm file count before execution.
+- The `st-patricks-day` smoke upload is limited to SVG plus WebP under `coloring-pages/svg/st-patricks-day/` and `coloring-pages/webp/st-patricks-day/`.
+- Category upload smoke tests must never include `png/`, `thumbs/`, deferred manual-review records, duplicate `coloring-pages/coloring-pages/` prefixes, old `coloring/test-v1/` keys, or source image paths.
+- The owner must run category `--execute` upload commands manually unless they explicitly approve Codex to run a real upload.
+- Runtime public galleries must use verified clean WebP preview keys and internal SVG keys after the clean upload is accepted.
+- Deferred manual-review records must stay hidden from public gallery output until they are reviewed, uploaded, and verified.
+- Do not show broken public cards for missing deferred assets; hide unavailable records and update hub, route, search, filter, and page counts.
+- Image sitemap and Open Graph image work may only start after runtime switch browser QA passes on the custom asset domain.
+- SVG remains internal-only after the runtime switch and must not appear as a user-facing download option.
+- PNG previews and thumbnails must not become the primary public gallery source after the clean WebP/SVG runtime switch.
+- Public-safe production config values must have hardcoded defaults and must not require Netlify environment variables.
+- R2 upload credentials are local-only and must never be used by website runtime, Netlify build config, or public generated data.
+- Production deployment QA must pass on the live Netlify site before image sitemap, Open Graph image, JSON-LD expansion, or live ads begin.
+- Live production screenshots and HTTP responses override local-only production readiness claims.
+- The runtime asset switch must be verified on Netlify production, not only in local static export.
+- Do not proceed to image sitemap work until live clean WebP and internal SVG URLs render correctly from the production site.
+- Do not proceed to live ads until production layout, trust pages, contact details, and ad placeholder behavior are accepted.
+
+## Production Asset Hosting
+
+- Production media must not be committed into the app repo.
+- Production media must not be copied into `public/` unless a later explicit prompt approves a temporary strategy.
+- Public gallery asset URLs must use the centralized resolver in `src/lib/coloring/assets.ts`.
+- `NEXT_PUBLIC_COLORING_ASSET_BASE_URL` is the production asset URL source of truth.
+- Cloudflare R2 Standard Storage is the selected initial generated-media storage target unless a later prompt explicitly replaces it.
+- The archived Round 4G planning test upload workflow used a 30-record local test bundle; current CDN verification and full-bundle work uses `coloring-pages/`.
+- Full upload bundle generation requires explicit future approval.
+- R2 credentials must never be committed.
+- `NEXT_PUBLIC_COLORING_ASSET_BASE_URL` must point to the public custom-domain asset base plus prefix, not the private S3 API endpoint.
+- `r2.dev` is not the intended production media URL.
+- Local asset proxy behavior is development-only and disabled by default.
+- Do not enable `NEXT_PUBLIC_COLORING_USE_LOCAL_ASSET_PROXY` or `COLORING_ENABLE_LOCAL_ASSET_PROXY` in production.
+- Do not expose local filesystem paths to users or client-facing generated data.
+- Object storage plus CDN is the preferred production strategy for generated media.
+- SEO image sitemap, Open Graph image, and JSON-LD image work must wait until stable public asset URLs exist.
+- Do not start image sitemap or Open Graph image work until public asset URLs are verified.
+- Quarantined assets must never be published.
+- Warning assets are allowed only when they passed production export.
+- Future upload or sync tooling must consume `pipeline/manifests/round-4e-asset-publish-manifest.json` or a later publish manifest.
+- Upload tooling must preserve CDN-relative paths and content types from the publish manifest.
+- Real upload commands require an explicit future prompt and must never add credentials to the repo.
+- Do not commit generated media or R2 upload bundle media.
+- Do not run full scripted uploads without explicit future approval.
+- Do not run remote delete or purge commands without explicit future approval.
+- Do not add backend or API routes for media serving.
+- Real public asset URLs must be verified before full bundle generation.
+- The current verified test asset prefix is `coloring-pages/`.
+- `NEXT_PUBLIC_COLORING_ASSET_BASE_URL` should point to the public asset domain plus `/coloring-pages`.
+- `r2.dev` is allowed only as a temporary test route, not the final production asset domain.
+- Do not use the old Round 4G planning prefix for the current CDN test path.
+- Do not generate or upload the full media set until the 30-record R2 test passes.
+- Placeholder behavior is expected for media not included in partial test uploads.
+- `NEXT_PUBLIC_COLORING_ASSET_BASE_URL` must not point to private endpoints.
+- Existing generated filenames may be cleaned in a later production naming round, but do not rename files during CDN verification.
+- The full R2 bundle prefix is `coloring-pages/`.
+- Round 4I full bundle generation prepares local upload media only and does not approve or perform the full upload.
+- Full upload must remain manual or explicitly approved by a later prompt.
+- Generated full upload bundle media under `pipeline/r2-upload/` must not be committed.
+- Generated media must not be copied into `public/`.
+- `r2.dev` remains temporary only; final production should use a custom asset domain.
+- Current generated filenames are preserved until an explicit future production naming cleanup round.
+- Do not start SEO image sitemap or Open Graph image work until the full uploaded media set is verified against public URLs.
+- Cache headers or equivalent Cloudflare caching behavior must be configured and verified before production launch.
+
+## Frontend-Only Deployment
+
+- The current product stage is frontend-only.
+- Netlify is the frontend hosting target.
+- Prefer static export for the public gallery.
+- Do not add backend or server dependencies for the public printable gallery.
+- Production gallery media must resolve from `NEXT_PUBLIC_COLORING_ASSET_BASE_URL`.
+- Production must not depend on `app/api/coloring-assets`.
+- Local media preview, if needed, must use a separate development-only static file server or a real CDN URL.
+- Generated media stays out of `public/` unless a later explicit prompt approves a temporary strategy.
+- Backend work is deferred until accounts, saves, uploads, payments, admin/moderation, email/account workflows, or server-side processing are required.
+- Do not add API routes, middleware, cookies, auth, database, or payment dependencies for the public printable gallery.
+
+## Live Production Routing
+
+- Local static preview must pass before live production verification.
+- If a direct asset URL works but a gallery card says `Preview unavailable`, debug app resolver and component logic before changing upload state.
+- The Animals Alligator URLs are regression fixtures: `https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp` and `https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-alligator-4feec8505a.svg`.
+- `AssetImage` must not hide valid WebP previews.
+- Print and browser conversion flows must never hang indefinitely on a preparing state.
+- Do not proceed to deployment, SEO, image sitemap, Open Graph images, JSON-LD expansion, or live ads until local gallery previews render from the custom asset domain.
+- Live production routing must be verified before image sitemap, Open Graph image, JSON-LD expansion, or live ads work resumes.
+- Live production rerun must pass after the local preview bug fix before image sitemap, Open Graph image, JSON-LD expansion, or live ads work resumes.
+- `Preview unavailable` on live pages is a production blocker for visible uploaded runtime records.
+- Print hanging on live pages is a production blocker.
+- Live production route and sitemap freshness are required before launch QA acceptance.
+- Do not treat a local pass as a production pass.
+- If live sitemap is stale but the local static-export sitemap is current, suspect Netlify deploy, branch, or domain configuration before changing app logic.
+- Static export routing, trailing-slash behavior, canonical URLs, and sitemap URLs must stay consistent with each other.
+- Do not accept live production QA while non-root pages self-redirect, fail to serve 200, or serve stale deploy output.
+- Production deploy must serve the latest `version-4` commit before launch QA can pass.
+- Netlify currently deploys production from `version-1` unless the owner changes Netlify settings.
+- If the production branch remains `version-1`, keep `version-1` in sync with `version-4` production code.
+- Do not assume pushing `version-4` updates production unless Netlify production branch is changed.
+- Do not force-push deployment branches.
+- Netlify publish directory must remain `out`.
+- Repo root, `pipeline/`, source folders, and generated reports must never be published as the production site.
 
 ## Conversion Workflow
 

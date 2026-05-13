@@ -1,0 +1,405 @@
+{
+  "generatedAt": "2026-05-12T01:27:08.565Z",
+  "runId": "round-5c-browser-svg-webp-qa",
+  "appUrl": "http://127.0.0.1:3005",
+  "assetBaseUrl": "http://127.0.0.1:4175/coloring-pages",
+  "summary": {
+    "browserQaCompleted": true,
+    "localPreviewInspected": true,
+    "publicPreviewInspected": false,
+    "galleryUsesWebpWhereAvailable": true,
+    "fallbackWorks": true,
+    "printStillWorks": true,
+    "pngDownloadStillWorks": true,
+    "svgDownloadAbsent": true,
+    "jpgJpegWebpControlsAbsent": true,
+    "adDensityMatchesRound4U": true,
+    "horizontalOverflowDetected": false,
+    "appApiRoutePresent": false,
+    "localWebpFetchPass": true,
+    "localWebpContentTypeIsImageWebp": false,
+    "localContentTypeNote": "The Python local media server returns application/octet-stream for WebP, so production R2 must set image/webp even though local browser rendering works."
+  },
+  "pages": [
+    {
+      "route": "/coloring-pages",
+      "htmlBytes": 7426630,
+      "webpReferenceCount": 90,
+      "pngReferenceCount": 30,
+      "printLabelCount": 142,
+      "pngDownloadLabelCount": 120,
+      "svgDownloadLabelCount": 0,
+      "extraDownloadLabelCount": 0,
+      "advertisementLabelCount": 20,
+      "sampleWebpFetchChecks": [
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/chibi/chibi-african-dragon-ebdfccdd0d.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/animals-playing-cards/animals-armadillo-1a6eaccdef.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/anime-girls/anime-girl-air-balloon-1f6b5be7bc.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/birds/birds-albatross-2380234539.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/christmas/christmas-holiday-advent-calendar-a1245c4617.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/dinosaurs/prehistoric-allosaurus-9787e7d0fd.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/dogs/dogs-afghan-hound-cdbb79eb85.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        }
+      ],
+      "screenshotPath": "pipeline/review/round-5c/screenshots/coloring-pages.png"
+    },
+    {
+      "route": "/coloring-pages/animals",
+      "htmlBytes": 1831074,
+      "webpReferenceCount": 93,
+      "pngReferenceCount": 30,
+      "printLabelCount": 138,
+      "pngDownloadLabelCount": 120,
+      "svgDownloadLabelCount": 0,
+      "extraDownloadLabelCount": 0,
+      "advertisementLabelCount": 20,
+      "sampleWebpFetchChecks": [
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/chibi/chibi-animals-pets-dogs-afghan-hound-d9a83b6ec9.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/anime-girls/anime-girl-armadillo-hoodie-animal-plushie-d2e31ff395.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/christmas/christmas-holiday-kitten-9c698f8609.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/animals-playing-cards/animals-armadillo-1a6eaccdef.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/birds/birds-albatross-2380234539.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/animals-playing-cards/animals-armadillos-wildlife-f2912c1ad5.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/animals-playing-cards/animals-armadillos-50db4716e5.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        }
+      ],
+      "screenshotPath": "pipeline/review/round-5c/screenshots/coloring-pages-animals.png"
+    },
+    {
+      "route": "/coloring-pages/geometric",
+      "htmlBytes": 2325805,
+      "webpReferenceCount": 92,
+      "pngReferenceCount": 30,
+      "printLabelCount": 141,
+      "pngDownloadLabelCount": 120,
+      "svgDownloadLabelCount": 0,
+      "extraDownloadLabelCount": 0,
+      "advertisementLabelCount": 20,
+      "sampleWebpFetchChecks": [
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/mandala-geometry-patterns/chatgpt-image-oct-14-2025-11-38-05-pm-ea62e476c5.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/mandala/mandala-geometry-patterns-animal-mandala-fox-3e8e80a2fd.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-abstract-mandala-29dbb1eecf.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/mandala/mandala-geometry-patterns-hindu-mandala-fc5ca81596.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/mandala/mandala-geometry-patterns-celestial-mandala-84d5358083.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/mandala/mandala-geometry-patterns-nature-mandala-89a2f93a25.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/mandala-geometry-patterns/failed-chatgpt-image-oct-19-2025-10-27-27-pm-a0411d2e82.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-abstract-shapes-96fa3013f6.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        }
+      ],
+      "screenshotPath": "pipeline/review/round-5c/screenshots/coloring-pages-geometric.png"
+    },
+    {
+      "route": "/coloring-pages/anime-girls",
+      "htmlBytes": 1090845,
+      "webpReferenceCount": 92,
+      "pngReferenceCount": 30,
+      "printLabelCount": 141,
+      "pngDownloadLabelCount": 120,
+      "svgDownloadLabelCount": 0,
+      "extraDownloadLabelCount": 0,
+      "advertisementLabelCount": 20,
+      "sampleWebpFetchChecks": [
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/chibi/chibi-anime-girl-hiking-23c5623800.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/chibi/chibi-anime-girl-karate-fighting-0e15e66f5d.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-c819919e77.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/anime-girls/anime-girl-air-balloon-1f6b5be7bc.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/anime-girls/anime-girl-arctic-fox-hoodie-plushie-snow-6a9f81e6c3.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/anime-girls/anime-girl-airship-dogfight-154332e8ac.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/anime-girls/anime-girl-alien-invasion-battle-99f106ca9d.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/anime-girls/anime-girl-alien-invasion-5fc2e9d331.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        }
+      ],
+      "screenshotPath": "pipeline/review/round-5c/screenshots/coloring-pages-anime-girls.png"
+    },
+    {
+      "route": "/coloring-pages/christmas",
+      "htmlBytes": 546438,
+      "webpReferenceCount": 92,
+      "pngReferenceCount": 30,
+      "printLabelCount": 138,
+      "pngDownloadLabelCount": 120,
+      "svgDownloadLabelCount": 0,
+      "extraDownloadLabelCount": 0,
+      "advertisementLabelCount": 20,
+      "sampleWebpFetchChecks": [
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/christmas/christmas-holiday-advent-calendar-a1245c4617.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/holiday/holiday-christmas-dogs-australian-shepherd-324967ed9d.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/indoor-plants/indoor-plants-christmas-cactus-150b46b5de.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/christmas/christmas-holiday-candy-canes-6f112e464c.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-sushi-holiday-christmas-roll-44ec0c8f04.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/gardening/gardening-mushroom-reindeer-lichen-reindeer-gardener-christmas-284b794095.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/christmas/christmas-holiday-carolers-50a8cc6073.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/christmas/christmas-holiday-christmas-cards-cc6fed095e.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        }
+      ],
+      "screenshotPath": "pipeline/review/round-5c/screenshots/coloring-pages-christmas.png"
+    },
+    {
+      "route": "/coloring-pages/plushies",
+      "htmlBytes": 2169595,
+      "webpReferenceCount": 93,
+      "pngReferenceCount": 30,
+      "printLabelCount": 138,
+      "pngDownloadLabelCount": 120,
+      "svgDownloadLabelCount": 0,
+      "extraDownloadLabelCount": 0,
+      "advertisementLabelCount": 20,
+      "sampleWebpFetchChecks": [
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/chibi/chibi-plushie-alligator-90926f5c7b.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/plushie/plushie-alligator-family-76ee38269b.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-c819919e77.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/chibi/chibi-plushie-alpaca-2860177e32.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/plushie/plushie-alligator-7a469a9dce.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-animal-plushie-hippo-12a7febf5c.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/anime-girls/anime-girl-arctic-fox-hoodie-plushie-snow-6a9f81e6c3.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/anime-girls/anime-girl-arctic-fox-hoodie-plushie-ebaacda689.webp",
+          "status": 200,
+          "contentType": "application/octet-stream",
+          "ok": true
+        }
+      ],
+      "screenshotPath": "pipeline/review/round-5c/screenshots/coloring-pages-plushies.png"
+    }
+  ],
+  "screenshotPaths": [
+    "pipeline/review/round-5c/screenshots/coloring-pages.png",
+    "pipeline/review/round-5c/screenshots/coloring-pages-animals.png",
+    "pipeline/review/round-5c/screenshots/coloring-pages-geometric.png",
+    "pipeline/review/round-5c/screenshots/coloring-pages-anime-girls.png",
+    "pipeline/review/round-5c/screenshots/coloring-pages-christmas.png",
+    "pipeline/review/round-5c/screenshots/coloring-pages-plushies.png"
+  ]
+}

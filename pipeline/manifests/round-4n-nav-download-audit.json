@@ -1,0 +1,35 @@
+{
+  "generatedAt": "2026-05-10T21:54:03.505Z",
+  "runId": "round-4n-nav-downloads",
+  "navigation": {
+    "desktopTopLevelLabels": [
+      "Popular",
+      "Seasonal",
+      "For Kids",
+      "For Adults",
+      "Search/Browse"
+    ],
+    "mobileTopLevelLabels": [
+      "Popular",
+      "Seasonal",
+      "For Kids",
+      "For Adults",
+      "Search/Browse"
+    ],
+    "topLevelColoringPagesPresent": false,
+    "moreMenuPresent": true,
+    "moreMenuSearchPresent": true,
+    "mobileSearchPresent": true,
+    "brokenNavLinks": [],
+    "horizontalOverflowRisk": "guarded by max-width and overflow rules on the menu panel",
+    "adOrAffiliateInNavigation": false
+  },
+  "downloads": {
+    "visibleSvgLabels": [],
+    "imageCardUsesSvgFallbackForPublicActions": false,
+    "printActionPresent": true,
+    "pngDownloadPresent": true,
+    "jpegWebpSupportPresent": false,
+    "adsAffectedByDownloadControls": false
+  }
+}

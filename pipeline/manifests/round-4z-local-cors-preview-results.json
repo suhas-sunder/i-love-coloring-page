@@ -1,0 +1,13 @@
+{
+  "generatedAt": "2026-05-11T20:38:40.643Z",
+  "runId": "round-4z-print-download-quality",
+  "summary": {
+    "scriptPath": "pipeline/scripts/round-4z-cors-media-server.mjs",
+    "servesRoot": "pipeline/r2-upload",
+    "pathTraversalProtected": true,
+    "localhostCorsOnly": true,
+    "productionDependency": false,
+    "appApiRouteAdded": false
+  },
+  "command": "node pipeline/scripts/round-4z-cors-media-server.mjs --root pipeline/r2-upload --port 4176"
+}

@@ -1,0 +1,57 @@
+{
+  "generatedAt": "2026-05-13T04:42:52.044Z",
+  "runId": "round-5p-webp-optimization-policy",
+  "summary": {
+    "baseline": "current WebP from clean bundle",
+    "candidates": [
+      {
+        "quality": 92,
+        "effort": 6,
+        "sampleCount": 120,
+        "decodedCount": 120,
+        "originalBytes": 5789912,
+        "optimizedBytes": 6857818,
+        "savingsBytes": -1067906,
+        "savingsPercent": -18.44
+      },
+      {
+        "quality": 88,
+        "effort": 6,
+        "sampleCount": 120,
+        "decodedCount": 120,
+        "originalBytes": 5789912,
+        "optimizedBytes": 6431764,
+        "savingsBytes": -641852,
+        "savingsPercent": -11.09
+      },
+      {
+        "quality": 85,
+        "effort": 6,
+        "sampleCount": 120,
+        "decodedCount": 120,
+        "originalBytes": 5789912,
+        "optimizedBytes": 6035060,
+        "savingsBytes": -245148,
+        "savingsPercent": -4.23
+      },
+      {
+        "quality": 82,
+        "effort": 6,
+        "sampleCount": 120,
+        "decodedCount": 120,
+        "originalBytes": 5789912,
+        "optimizedBytes": 5768930,
+        "savingsBytes": 20982,
+        "savingsPercent": 0.36
+      }
+    ],
+    "selectedSetting": {
+      "quality": 82,
+      "effort": 6,
+      "smartSubsample": true
+    },
+    "selectedReason": "Conservative preview-only setting; per-file fallback keeps the original if recompression is larger or fails decode.",
+    "webpPreviewOnly": true,
+    "printAndDownloadsUseSvg": true
+  }
+}

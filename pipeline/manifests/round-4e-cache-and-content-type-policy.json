@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-05-10",
+  "runId": "round-4e-production-asset-hosting-contract",
+  "contentTypes": {
+    "svg": "image/svg+xml",
+    "pngPreview": "image/png",
+    "thumbnail": "image/png"
+  },
+  "recommendedHeaders": {
+    "versionedImmutableRelease": {
+      "cacheControl": "public, max-age=31536000, immutable",
+      "requirement": "Only use when the CDN base URL or object key prefix is versioned and published files are not replaced in place."
+    },
+    "unversionedOrReplaceableRelease": {
+      "cacheControl": "public, max-age=86400, stale-while-revalidate=604800",
+      "requirement": "Use when files may be replaced under the same URL."
+    }
+  },
+  "selectedPublishManifestPolicy": {
+    "cacheControl": "public, max-age=31536000, immutable",
+    "reason": "The publish manifest represents a release artifact and assumes upload under a versioned CDN base URL.",
+    "fallbackIfNoVersionedPrefix": "public, max-age=86400, stale-while-revalidate=604800"
+  },
+  "downloadPolicy": {
+    "safeFilenamesUseCdnRelativeBasename": true,
+    "localAbsolutePathsInDownloadNames": false,
+    "unapprovedOrQuarantinedPathsServed": false
+  },
+  "securityPolicy": {
+    "approvedRootsOnly": true,
+    "userUploadsShareThisMechanism": false,
+    "pathTraversalAllowed": false
+  }
+}

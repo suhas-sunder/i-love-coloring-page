@@ -1,0 +1,29 @@
+{
+  "generatedAt": "2026-05-11T05:41:53.453Z",
+  "runId": "round-4u-ad-density",
+  "summary": {
+    "correctRepo": true,
+    "branch": "version-4",
+    "round4tCommitExists": true,
+    "appApiRoutePresent": false,
+    "staticExportConfigured": true,
+    "coloringLandingExists": true,
+    "hubRouteExists": true,
+    "r2BundleExists": true,
+    "publicContainsGeneratedProductionMedia": false,
+    "imagesStatusClean": true,
+    "ilovesvgStatusClean": true,
+    "currentPublicDownloadFormats": [
+      "PNG"
+    ],
+    "visibleSvgDownloadOptions": false,
+    "visibleJpegWebpOptions": false,
+    "adWellsVisibleByDefault": true,
+    "wrongTaskContextDetected": false
+  },
+  "verifiedPaths": {
+    "coloringLanding": "app/coloring-pages/page.tsx",
+    "hubRoute": "app/coloring-pages/[hubSlug]/page.tsx",
+    "r2Bundle": "pipeline/r2-upload/coloring-pages"
+  }
+}

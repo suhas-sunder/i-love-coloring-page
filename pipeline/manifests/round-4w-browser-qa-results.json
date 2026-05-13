@@ -1,0 +1,1952 @@
+{
+  "generatedAt": "2026-05-11T18:26:42.397Z",
+  "phase": "round-4w",
+  "baseUrl": "http://127.0.0.1:3005",
+  "status": "passed",
+  "pagesInspected": [
+    "/",
+    "/coloring-pages",
+    "/coloring-pages/animals",
+    "/coloring-pages/geometric",
+    "/coloring-pages/anime-girls",
+    "/coloring-pages/mandalas",
+    "/coloring-pages/chibi",
+    "/coloring-pages/fantasy",
+    "/coloring-pages/christmas",
+    "/coloring-pages/halloween",
+    "/coloring-pages/plushies"
+  ],
+  "screenshotRoot": "pipeline/review/round-4w/screenshots",
+  "screenshots": [
+    {
+      "path": "pipeline/review/round-4w/screenshots/mobile/coloring-pages-mobile-390.png",
+      "visibleAdvertisementLabelCount": 1,
+      "expectedAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4w/screenshots/tablet/coloring-pages-tablet-768.png",
+      "visibleAdvertisementLabelCount": 1,
+      "expectedAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4w/screenshots/desktop/home-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "expectedAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4w/screenshots/desktop/coloring-pages-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "expectedAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4w/screenshots/desktop/coloring-pages-animals-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "expectedAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4w/screenshots/desktop/coloring-pages-geometric-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "expectedAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4w/screenshots/desktop/coloring-pages-anime-girls-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "expectedAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4w/screenshots/desktop/coloring-pages-mandalas-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "expectedAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4w/screenshots/desktop/coloring-pages-chibi-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "expectedAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4w/screenshots/desktop/coloring-pages-fantasy-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "expectedAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4w/screenshots/desktop/coloring-pages-christmas-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "expectedAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4w/screenshots/desktop/coloring-pages-halloween-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "expectedAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4w/screenshots/desktop/coloring-pages-plushies-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "expectedAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4w/screenshots/wide-desktop/coloring-pages-wide-1920.png",
+      "visibleAdvertisementLabelCount": 3,
+      "expectedAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4w/screenshots/mobile/coloring-pages-mobile-390.png",
+      "visibleAdvertisementLabelCount": 1,
+      "expectedAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4w/screenshots/mobile/coloring-pages-mobile-430.png",
+      "visibleAdvertisementLabelCount": 1,
+      "expectedAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4w/screenshots/tablet/coloring-pages-tablet-768.png",
+      "visibleAdvertisementLabelCount": 1,
+      "expectedAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4w/screenshots/tablet/coloring-pages-landscape-1024.png",
+      "visibleAdvertisementLabelCount": 1,
+      "expectedAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4w/screenshots/desktop/coloring-pages-desktop-1280.png",
+      "visibleAdvertisementLabelCount": 1,
+      "expectedAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4w/screenshots/desktop/coloring-pages-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "expectedAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4w/screenshots/wide-desktop/coloring-pages-wide-1920.png",
+      "visibleAdvertisementLabelCount": 3,
+      "expectedAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4w/screenshots/wide-desktop/coloring-pages-ultra-2560.png",
+      "visibleAdvertisementLabelCount": 3,
+      "expectedAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4w/screenshots/nav/desktop-more-menu-open.png",
+      "visibleAdvertisementLabelCount": null,
+      "expectedAdvertisementLabelCount": null,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4w/screenshots/nav/mobile-nav-open.png",
+      "visibleAdvertisementLabelCount": null,
+      "expectedAdvertisementLabelCount": null,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4w/screenshots/desktop/animals-print-download-check.png",
+      "visibleAdvertisementLabelCount": null,
+      "expectedAdvertisementLabelCount": null,
+      "committed": false
+    }
+  ],
+  "pageChecks": [
+    {
+      "pagePath": "/",
+      "viewport": {
+        "label": "mobile-390",
+        "width": 390,
+        "height": 844,
+        "group": "mobile"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 390,
+      "viewportWidth": 390,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages",
+      "viewport": {
+        "label": "mobile-390",
+        "width": 390,
+        "height": 844,
+        "group": "mobile"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4w/screenshots/mobile/coloring-pages-mobile-390.png",
+          "visibleAdvertisementLabelCount": 1,
+          "expectedAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 390,
+      "viewportWidth": 390,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/animals",
+      "viewport": {
+        "label": "mobile-390",
+        "width": 390,
+        "height": 844,
+        "group": "mobile"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 390,
+      "viewportWidth": 390,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/geometric",
+      "viewport": {
+        "label": "mobile-390",
+        "width": 390,
+        "height": 844,
+        "group": "mobile"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 390,
+      "viewportWidth": 390,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/anime-girls",
+      "viewport": {
+        "label": "mobile-390",
+        "width": 390,
+        "height": 844,
+        "group": "mobile"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 390,
+      "viewportWidth": 390,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/mandalas",
+      "viewport": {
+        "label": "mobile-390",
+        "width": 390,
+        "height": 844,
+        "group": "mobile"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 390,
+      "viewportWidth": 390,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/chibi",
+      "viewport": {
+        "label": "mobile-390",
+        "width": 390,
+        "height": 844,
+        "group": "mobile"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 390,
+      "viewportWidth": 390,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/fantasy",
+      "viewport": {
+        "label": "mobile-390",
+        "width": 390,
+        "height": 844,
+        "group": "mobile"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 390,
+      "viewportWidth": 390,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/christmas",
+      "viewport": {
+        "label": "mobile-390",
+        "width": 390,
+        "height": 844,
+        "group": "mobile"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 390,
+      "viewportWidth": 390,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/halloween",
+      "viewport": {
+        "label": "mobile-390",
+        "width": 390,
+        "height": 844,
+        "group": "mobile"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 390,
+      "viewportWidth": 390,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/plushies",
+      "viewport": {
+        "label": "mobile-390",
+        "width": 390,
+        "height": 844,
+        "group": "mobile"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 390,
+      "viewportWidth": 390,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/",
+      "viewport": {
+        "label": "tablet-768",
+        "width": 768,
+        "height": 1024,
+        "group": "tablet"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 768,
+      "viewportWidth": 768,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages",
+      "viewport": {
+        "label": "tablet-768",
+        "width": 768,
+        "height": 1024,
+        "group": "tablet"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4w/screenshots/tablet/coloring-pages-tablet-768.png",
+          "visibleAdvertisementLabelCount": 1,
+          "expectedAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 768,
+      "viewportWidth": 768,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/animals",
+      "viewport": {
+        "label": "tablet-768",
+        "width": 768,
+        "height": 1024,
+        "group": "tablet"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 768,
+      "viewportWidth": 768,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/geometric",
+      "viewport": {
+        "label": "tablet-768",
+        "width": 768,
+        "height": 1024,
+        "group": "tablet"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 768,
+      "viewportWidth": 768,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/anime-girls",
+      "viewport": {
+        "label": "tablet-768",
+        "width": 768,
+        "height": 1024,
+        "group": "tablet"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 768,
+      "viewportWidth": 768,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/mandalas",
+      "viewport": {
+        "label": "tablet-768",
+        "width": 768,
+        "height": 1024,
+        "group": "tablet"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 768,
+      "viewportWidth": 768,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/chibi",
+      "viewport": {
+        "label": "tablet-768",
+        "width": 768,
+        "height": 1024,
+        "group": "tablet"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 768,
+      "viewportWidth": 768,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/fantasy",
+      "viewport": {
+        "label": "tablet-768",
+        "width": 768,
+        "height": 1024,
+        "group": "tablet"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 768,
+      "viewportWidth": 768,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/christmas",
+      "viewport": {
+        "label": "tablet-768",
+        "width": 768,
+        "height": 1024,
+        "group": "tablet"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 768,
+      "viewportWidth": 768,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/halloween",
+      "viewport": {
+        "label": "tablet-768",
+        "width": 768,
+        "height": 1024,
+        "group": "tablet"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 768,
+      "viewportWidth": 768,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/plushies",
+      "viewport": {
+        "label": "tablet-768",
+        "width": 768,
+        "height": 1024,
+        "group": "tablet"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 768,
+      "viewportWidth": 768,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/",
+      "viewport": {
+        "label": "desktop-1440",
+        "width": 1440,
+        "height": 960,
+        "group": "desktop"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4w/screenshots/desktop/home-desktop-1440.png",
+          "visibleAdvertisementLabelCount": 1,
+          "expectedAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 1440,
+      "viewportWidth": 1440,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages",
+      "viewport": {
+        "label": "desktop-1440",
+        "width": 1440,
+        "height": 960,
+        "group": "desktop"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4w/screenshots/desktop/coloring-pages-desktop-1440.png",
+          "visibleAdvertisementLabelCount": 1,
+          "expectedAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 1440,
+      "viewportWidth": 1440,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/animals",
+      "viewport": {
+        "label": "desktop-1440",
+        "width": 1440,
+        "height": 960,
+        "group": "desktop"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4w/screenshots/desktop/coloring-pages-animals-desktop-1440.png",
+          "visibleAdvertisementLabelCount": 1,
+          "expectedAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 1440,
+      "viewportWidth": 1440,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/geometric",
+      "viewport": {
+        "label": "desktop-1440",
+        "width": 1440,
+        "height": 960,
+        "group": "desktop"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4w/screenshots/desktop/coloring-pages-geometric-desktop-1440.png",
+          "visibleAdvertisementLabelCount": 1,
+          "expectedAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 1440,
+      "viewportWidth": 1440,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/anime-girls",
+      "viewport": {
+        "label": "desktop-1440",
+        "width": 1440,
+        "height": 960,
+        "group": "desktop"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4w/screenshots/desktop/coloring-pages-anime-girls-desktop-1440.png",
+          "visibleAdvertisementLabelCount": 1,
+          "expectedAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 1440,
+      "viewportWidth": 1440,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/mandalas",
+      "viewport": {
+        "label": "desktop-1440",
+        "width": 1440,
+        "height": 960,
+        "group": "desktop"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4w/screenshots/desktop/coloring-pages-mandalas-desktop-1440.png",
+          "visibleAdvertisementLabelCount": 1,
+          "expectedAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 1440,
+      "viewportWidth": 1440,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/chibi",
+      "viewport": {
+        "label": "desktop-1440",
+        "width": 1440,
+        "height": 960,
+        "group": "desktop"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4w/screenshots/desktop/coloring-pages-chibi-desktop-1440.png",
+          "visibleAdvertisementLabelCount": 1,
+          "expectedAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 1440,
+      "viewportWidth": 1440,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/fantasy",
+      "viewport": {
+        "label": "desktop-1440",
+        "width": 1440,
+        "height": 960,
+        "group": "desktop"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4w/screenshots/desktop/coloring-pages-fantasy-desktop-1440.png",
+          "visibleAdvertisementLabelCount": 1,
+          "expectedAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 1440,
+      "viewportWidth": 1440,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/christmas",
+      "viewport": {
+        "label": "desktop-1440",
+        "width": 1440,
+        "height": 960,
+        "group": "desktop"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4w/screenshots/desktop/coloring-pages-christmas-desktop-1440.png",
+          "visibleAdvertisementLabelCount": 1,
+          "expectedAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 1440,
+      "viewportWidth": 1440,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/halloween",
+      "viewport": {
+        "label": "desktop-1440",
+        "width": 1440,
+        "height": 960,
+        "group": "desktop"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4w/screenshots/desktop/coloring-pages-halloween-desktop-1440.png",
+          "visibleAdvertisementLabelCount": 1,
+          "expectedAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 1440,
+      "viewportWidth": 1440,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/plushies",
+      "viewport": {
+        "label": "desktop-1440",
+        "width": 1440,
+        "height": 960,
+        "group": "desktop"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4w/screenshots/desktop/coloring-pages-plushies-desktop-1440.png",
+          "visibleAdvertisementLabelCount": 1,
+          "expectedAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 1440,
+      "viewportWidth": 1440,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/",
+      "viewport": {
+        "label": "wide-1920",
+        "width": 1920,
+        "height": 1080,
+        "group": "wide-desktop"
+      },
+      "expectedAdvertisementLabelCount": 3,
+      "screenshots": [],
+      "visibleAdvertisementLabelCount": 3,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 1920,
+      "viewportWidth": 1920,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages",
+      "viewport": {
+        "label": "wide-1920",
+        "width": 1920,
+        "height": 1080,
+        "group": "wide-desktop"
+      },
+      "expectedAdvertisementLabelCount": 3,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4w/screenshots/wide-desktop/coloring-pages-wide-1920.png",
+          "visibleAdvertisementLabelCount": 3,
+          "expectedAdvertisementLabelCount": 3,
+          "committed": false
+        }
+      ],
+      "visibleAdvertisementLabelCount": 3,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 1920,
+      "viewportWidth": 1920,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/animals",
+      "viewport": {
+        "label": "wide-1920",
+        "width": 1920,
+        "height": 1080,
+        "group": "wide-desktop"
+      },
+      "expectedAdvertisementLabelCount": 3,
+      "screenshots": [],
+      "visibleAdvertisementLabelCount": 3,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 1920,
+      "viewportWidth": 1920,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/geometric",
+      "viewport": {
+        "label": "wide-1920",
+        "width": 1920,
+        "height": 1080,
+        "group": "wide-desktop"
+      },
+      "expectedAdvertisementLabelCount": 3,
+      "screenshots": [],
+      "visibleAdvertisementLabelCount": 3,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 1920,
+      "viewportWidth": 1920,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/anime-girls",
+      "viewport": {
+        "label": "wide-1920",
+        "width": 1920,
+        "height": 1080,
+        "group": "wide-desktop"
+      },
+      "expectedAdvertisementLabelCount": 3,
+      "screenshots": [],
+      "visibleAdvertisementLabelCount": 3,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 1920,
+      "viewportWidth": 1920,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/mandalas",
+      "viewport": {
+        "label": "wide-1920",
+        "width": 1920,
+        "height": 1080,
+        "group": "wide-desktop"
+      },
+      "expectedAdvertisementLabelCount": 3,
+      "screenshots": [],
+      "visibleAdvertisementLabelCount": 3,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 1920,
+      "viewportWidth": 1920,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/chibi",
+      "viewport": {
+        "label": "wide-1920",
+        "width": 1920,
+        "height": 1080,
+        "group": "wide-desktop"
+      },
+      "expectedAdvertisementLabelCount": 3,
+      "screenshots": [],
+      "visibleAdvertisementLabelCount": 3,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 1920,
+      "viewportWidth": 1920,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/fantasy",
+      "viewport": {
+        "label": "wide-1920",
+        "width": 1920,
+        "height": 1080,
+        "group": "wide-desktop"
+      },
+      "expectedAdvertisementLabelCount": 3,
+      "screenshots": [],
+      "visibleAdvertisementLabelCount": 3,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 1920,
+      "viewportWidth": 1920,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/christmas",
+      "viewport": {
+        "label": "wide-1920",
+        "width": 1920,
+        "height": 1080,
+        "group": "wide-desktop"
+      },
+      "expectedAdvertisementLabelCount": 3,
+      "screenshots": [],
+      "visibleAdvertisementLabelCount": 3,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 1920,
+      "viewportWidth": 1920,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/halloween",
+      "viewport": {
+        "label": "wide-1920",
+        "width": 1920,
+        "height": 1080,
+        "group": "wide-desktop"
+      },
+      "expectedAdvertisementLabelCount": 3,
+      "screenshots": [],
+      "visibleAdvertisementLabelCount": 3,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 1920,
+      "viewportWidth": 1920,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages/plushies",
+      "viewport": {
+        "label": "wide-1920",
+        "width": 1920,
+        "height": 1080,
+        "group": "wide-desktop"
+      },
+      "expectedAdvertisementLabelCount": 3,
+      "screenshots": [],
+      "visibleAdvertisementLabelCount": 3,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 1920,
+      "viewportWidth": 1920,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    }
+  ],
+  "viewportChecks": [
+    {
+      "pagePath": "/coloring-pages",
+      "viewport": {
+        "label": "mobile-390",
+        "width": 390,
+        "height": 844,
+        "group": "mobile"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4w/screenshots/mobile/coloring-pages-mobile-390.png",
+          "visibleAdvertisementLabelCount": 1,
+          "expectedAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 390,
+      "viewportWidth": 390,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages",
+      "viewport": {
+        "label": "mobile-430",
+        "width": 430,
+        "height": 932,
+        "group": "mobile"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4w/screenshots/mobile/coloring-pages-mobile-430.png",
+          "visibleAdvertisementLabelCount": 1,
+          "expectedAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 430,
+      "viewportWidth": 430,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages",
+      "viewport": {
+        "label": "tablet-768",
+        "width": 768,
+        "height": 1024,
+        "group": "tablet"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4w/screenshots/tablet/coloring-pages-tablet-768.png",
+          "visibleAdvertisementLabelCount": 1,
+          "expectedAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 768,
+      "viewportWidth": 768,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages",
+      "viewport": {
+        "label": "landscape-1024",
+        "width": 1024,
+        "height": 900,
+        "group": "tablet"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4w/screenshots/tablet/coloring-pages-landscape-1024.png",
+          "visibleAdvertisementLabelCount": 1,
+          "expectedAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 1024,
+      "viewportWidth": 1024,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages",
+      "viewport": {
+        "label": "desktop-1280",
+        "width": 1280,
+        "height": 900,
+        "group": "desktop"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4w/screenshots/desktop/coloring-pages-desktop-1280.png",
+          "visibleAdvertisementLabelCount": 1,
+          "expectedAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 1280,
+      "viewportWidth": 1280,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages",
+      "viewport": {
+        "label": "desktop-1440",
+        "width": 1440,
+        "height": 960,
+        "group": "desktop"
+      },
+      "expectedAdvertisementLabelCount": 1,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4w/screenshots/desktop/coloring-pages-desktop-1440.png",
+          "visibleAdvertisementLabelCount": 1,
+          "expectedAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ],
+      "visibleAdvertisementLabelCount": 1,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 1440,
+      "viewportWidth": 1440,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages",
+      "viewport": {
+        "label": "wide-1920",
+        "width": 1920,
+        "height": 1080,
+        "group": "wide-desktop"
+      },
+      "expectedAdvertisementLabelCount": 3,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4w/screenshots/wide-desktop/coloring-pages-wide-1920.png",
+          "visibleAdvertisementLabelCount": 3,
+          "expectedAdvertisementLabelCount": 3,
+          "committed": false
+        }
+      ],
+      "visibleAdvertisementLabelCount": 3,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 1920,
+      "viewportWidth": 1920,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    },
+    {
+      "pagePath": "/coloring-pages",
+      "viewport": {
+        "label": "ultra-2560",
+        "width": 2560,
+        "height": 1440,
+        "group": "wide-desktop"
+      },
+      "expectedAdvertisementLabelCount": 3,
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4w/screenshots/wide-desktop/coloring-pages-ultra-2560.png",
+          "visibleAdvertisementLabelCount": 3,
+          "expectedAdvertisementLabelCount": 3,
+          "committed": false
+        }
+      ],
+      "visibleAdvertisementLabelCount": 3,
+      "visibleAdLabelsReadable": true,
+      "noHorizontalOverflow": true,
+      "overflowWidth": 2560,
+      "viewportWidth": 2560,
+      "galleryBeforeSeo": true,
+      "seoContentPresent": true,
+      "realImagesRender": true,
+      "brokenImageCount": 0,
+      "noSvgDownloadAppears": true,
+      "noJpegWebpDownloadAppears": true,
+      "printVisible": true,
+      "downloadPngVisible": true,
+      "noForbiddenAdPlacements": true,
+      "nestedCardsAbsent": true,
+      "pass": true
+    }
+  ],
+  "railSafetyChecks": [
+    {
+      "width": 1440,
+      "expectedRails": 0,
+      "screenshot": {
+        "path": "pipeline/review/round-4w/screenshots/ad-rail-safety/coloring-pages-rail-wide-creative-1440.png",
+        "visibleAdvertisementLabelCount": null,
+        "expectedAdvertisementLabelCount": null,
+        "committed": false
+      },
+      "visibleRailCount": 0,
+      "noHorizontalOverflow": true,
+      "noOverlap": true,
+      "constrained": true,
+      "overflowWidth": 1440,
+      "viewportWidth": 1440,
+      "contentLeft": 100,
+      "contentRight": 1340,
+      "railRects": [],
+      "pass": true
+    },
+    {
+      "width": 1600,
+      "expectedRails": 0,
+      "screenshot": {
+        "path": "pipeline/review/round-4w/screenshots/ad-rail-safety/coloring-pages-rail-wide-creative-1600.png",
+        "visibleAdvertisementLabelCount": null,
+        "expectedAdvertisementLabelCount": null,
+        "committed": false
+      },
+      "visibleRailCount": 0,
+      "noHorizontalOverflow": true,
+      "noOverlap": true,
+      "constrained": true,
+      "overflowWidth": 1600,
+      "viewportWidth": 1600,
+      "contentLeft": 180,
+      "contentRight": 1420,
+      "railRects": [],
+      "pass": true
+    },
+    {
+      "width": 1740,
+      "expectedRails": 2,
+      "screenshot": {
+        "path": "pipeline/review/round-4w/screenshots/ad-rail-safety/coloring-pages-rail-wide-creative-1740.png",
+        "visibleAdvertisementLabelCount": null,
+        "expectedAdvertisementLabelCount": null,
+        "committed": false
+      },
+      "visibleRailCount": 2,
+      "noHorizontalOverflow": true,
+      "noOverlap": true,
+      "constrained": true,
+      "overflowWidth": 1740,
+      "viewportWidth": 1740,
+      "contentLeft": 250,
+      "contentRight": 1490,
+      "railRects": [
+        {
+          "left": 42,
+          "right": 202,
+          "width": 160
+        },
+        {
+          "left": 1538,
+          "right": 1698,
+          "width": 160
+        }
+      ],
+      "pass": true
+    },
+    {
+      "width": 1920,
+      "expectedRails": 2,
+      "screenshot": {
+        "path": "pipeline/review/round-4w/screenshots/ad-rail-safety/coloring-pages-rail-wide-creative-1920.png",
+        "visibleAdvertisementLabelCount": null,
+        "expectedAdvertisementLabelCount": null,
+        "committed": false
+      },
+      "visibleRailCount": 2,
+      "noHorizontalOverflow": true,
+      "noOverlap": true,
+      "constrained": true,
+      "overflowWidth": 1920,
+      "viewportWidth": 1920,
+      "contentLeft": 340,
+      "contentRight": 1580,
+      "railRects": [
+        {
+          "left": 132,
+          "right": 292,
+          "width": 160
+        },
+        {
+          "left": 1628,
+          "right": 1788,
+          "width": 160
+        }
+      ],
+      "pass": true
+    },
+    {
+      "width": 2560,
+      "expectedRails": 2,
+      "screenshot": {
+        "path": "pipeline/review/round-4w/screenshots/ad-rail-safety/coloring-pages-rail-wide-creative-2560.png",
+        "visibleAdvertisementLabelCount": null,
+        "expectedAdvertisementLabelCount": null,
+        "committed": false
+      },
+      "visibleRailCount": 2,
+      "noHorizontalOverflow": true,
+      "noOverlap": true,
+      "constrained": true,
+      "overflowWidth": 2560,
+      "viewportWidth": 2560,
+      "contentLeft": 660,
+      "contentRight": 1900,
+      "railRects": [
+        {
+          "left": 452,
+          "right": 612,
+          "width": 160
+        },
+        {
+          "left": 1948,
+          "right": 2108,
+          "width": 160
+        }
+      ],
+      "pass": true
+    }
+  ],
+  "nav": {
+    "screenshots": [
+      {
+        "path": "pipeline/review/round-4w/screenshots/nav/desktop-more-menu-open.png",
+        "visibleAdvertisementLabelCount": null,
+        "expectedAdvertisementLabelCount": null,
+        "committed": false
+      },
+      {
+        "path": "pipeline/review/round-4w/screenshots/nav/mobile-nav-open.png",
+        "visibleAdvertisementLabelCount": null,
+        "expectedAdvertisementLabelCount": null,
+        "committed": false
+      }
+    ],
+    "desktopMoreMenu": {
+      "open": true,
+      "searchWorks": true,
+      "noAdsInMenu": true,
+      "noHorizontalOverflow": true,
+      "usesAvailableWidth": true,
+      "closesOnEscape": true,
+      "pass": true
+    },
+    "mobileNav": {
+      "open": true,
+      "searchAtTop": true,
+      "searchWorks": true,
+      "noAdsInMenu": true,
+      "noAwkwardSideGutter": true,
+      "noHorizontalOverflow": true,
+      "burgerIconHasNoVisibleBorder": true,
+      "closesOnButton": true,
+      "pass": true
+    }
+  },
+  "printDownload": {
+    "screenshots": [
+      {
+        "path": "pipeline/review/round-4w/screenshots/desktop/animals-print-download-check.png",
+        "visibleAdvertisementLabelCount": null,
+        "expectedAdvertisementLabelCount": null,
+        "committed": false
+      }
+    ],
+    "printWorks": true,
+    "downloadPngWorks": true,
+    "suggestedFilename": "chibi-animals-pets-dogs-afghan-hound-d9a83b6ec9.png",
+    "noSvgDownloadAppears": true,
+    "noJpegWebpDownloadAppears": true
+  },
+  "summary": {
+    "pass": true,
+    "screenshotsCreated": true,
+    "galleryFirstUxPreserved": true,
+    "seoContentPresent": true,
+    "noNestedCards": true,
+    "noHorizontalOverflow": true,
+    "widthsWithHorizontalScrollbar": [],
+    "visibleCountsByWidth": {
+      "390": 1,
+      "430": 1,
+      "768": 1,
+      "1024": 1,
+      "1280": 1,
+      "1440": 1,
+      "1920": 3,
+      "2560": 3
+    },
+    "adDensityMatchesRound4UPolicy": true,
+    "allVisibleAdLabelsReadable": true,
+    "noForbiddenAdPlacements": true,
+    "realMediaRenders": true,
+    "noSvgDownloadAppears": true,
+    "noJpegWebpDownloadAppears": true,
+    "printWorks": true,
+    "downloadPngWorks": true,
+    "desktopMoreMenuAccepted": true,
+    "mobileNavAccepted": true,
+    "railSafetyAccepted": true,
+    "liveAdCodeAdded": false,
+    "appApiRouteAdded": false
+  }
+}

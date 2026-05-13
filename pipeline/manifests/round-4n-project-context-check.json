@@ -1,0 +1,24 @@
+{
+  "generatedAt": "2026-05-10T21:54:03.504Z",
+  "runId": "round-4n-nav-downloads",
+  "summary": {
+    "correctRepository": true,
+    "branch": "version-4",
+    "head": "b90b4a004b647ccb1274637d4eb8c36387f965fd",
+    "round4mCommitExists": true,
+    "appApiRoutePresent": false,
+    "staticExportConfigured": true,
+    "r2BundleExists": true,
+    "publicGeneratedMediaPresent": false,
+    "wrongTaskContextDetected": false
+  },
+  "checkedIndicators": [
+    "package.json name",
+    "version-4 branch",
+    "Round 4M commit",
+    "static export config",
+    "app/api absence",
+    "R2 local bundle",
+    "public media absence"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "generatedAt": "2026-05-10",
+  "runId": "round-4e-production-asset-hosting-contract",
+  "name": "Coloring Asset URL Contract",
+  "environment": {
+    "productionBaseUrlVariable": "NEXT_PUBLIC_COLORING_ASSET_BASE_URL",
+    "localProxyPublicToggle": "NEXT_PUBLIC_COLORING_USE_LOCAL_ASSET_PROXY",
+    "localProxyServerToggle": "COLORING_ENABLE_LOCAL_ASSET_PROXY",
+    "localProxyRoute": "/api/coloring-assets/[...path]",
+    "siteUrlVariable": "NEXT_PUBLIC_SITE_URL"
+  },
+  "pathRoots": {
+    "localProductionAssetRoot": "pipeline/production/full/assets",
+    "cdnRelativeRoots": [
+      "svg",
+      "png",
+      "thumbs"
+    ],
+    "clientDataRootPolicy": "subpaths only, never local pipeline paths"
+  },
+  "mediaUrlHelpers": {
+    "svg": "resolveSvgAssetUrl(assetSubpaths.svg)",
+    "pngPreview": "resolvePngPreviewAssetUrl(assetSubpaths.pngPreview)",
+    "thumbnail": "resolveThumbnailAssetUrl(assetSubpaths.thumbnail)",
+    "itemBundle": "resolveColoringItemAssetUrls(assetSubpaths)"
+  },
+  "generationRules": [
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL is trimmed of trailing slashes.",
+    "CDN URLs are built by joining the normalized base URL with encoded path segments.",
+    "Local proxy URLs are built only when NEXT_PUBLIC_COLORING_USE_LOCAL_ASSET_PROXY is exactly 1.",
+    "Unsafe paths return null and never produce a public URL.",
+    "Components must receive resolved URLs instead of building them directly."
+  ],
+  "clientDataPolicy": {
+    "localFilesystemPathsAllowed": false,
+    "windowsAbsolutePathsAllowed": false,
+    "sourceRelativePathsAllowed": false,
+    "stableRelativeAssetSubpathsRequired": true
+  },
+  "localProxy": {
+    "disabledByDefault": true,
+    "developmentOnly": true,
+    "serverToggleRequired": true,
+    "publicToggleRequiredForClientRendering": true,
+    "pathTraversalAllowed": false,
+    "allowedLocalRoots": [
+      "pipeline/production/full/assets/svg",
+      "pipeline/production/full/assets/png",
+      "pipeline/production/full/assets/thumbs"
+    ]
+  },
+  "unavailableState": {
+    "behavior": "render intentional placeholder and hide download or print actions when URLs are unavailable",
+    "brokenImageIconsAllowed": false
+  },
+  "forbiddenPatterns": [
+    "hardcoded local filesystem paths in client code",
+    "manual asset URL construction in gallery components",
+    "serving quarantined assets",
+    "copying production media into public",
+    "using the local proxy as production media hosting"
+  ]
+}

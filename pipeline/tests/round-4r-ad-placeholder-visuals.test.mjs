@@ -1,0 +1,279 @@
+import assert from "node:assert/strict";
+import { access, readdir, readFile, stat } from "node:fs/promises";
+import { execFile } from "node:child_process";
+import path from "node:path";
+import { promisify } from "node:util";
+import { fileURLToPath } from "node:url";
+import { test } from "node:test";
+
+const execFileAsync = promisify(execFile);
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const REPO_ROOT = path.resolve(__dirname, "..", "..");
+
+const ROUND4R_MANIFESTS = [
+  "pipeline/manifests/round-4r-project-context-check.json",
+  "pipeline/manifests/round-4r-ad-placeholder-visual-audit.json",
+  "pipeline/manifests/round-4r-ad-slot-preservation-check.json",
+  "pipeline/manifests/round-4r-browser-ad-visual-qa-results.json",
+  "pipeline/manifests/round-4r-ad-placeholder-visual-results.json",
+  "pipeline/manifests/round-4r-ad-slot-preservation-results.json",
+];
+
+const ROUND4R_REPORTS = [
+  "pipeline/reports/round-4r-project-context-check.md",
+  "pipeline/reports/round-4r-ad-placeholder-visual-audit.md",
+  "pipeline/reports/round-4r-browser-ad-visual-qa-report.md",
+  "pipeline/reports/round-4r-ad-placeholder-visual-results.md",
+  "pipeline/reports/round-4r-ad-slot-preservation-report.md",
+  "pipeline/reports/round-4r-next-phase-plan.md",
+];
+
+test("Round 4R manifests and reports parse and preserve the verified project context", async () => {
+  for (const relativePath of ROUND4R_MANIFESTS) {
+    const raw = await readText(relativePath);
+    const parsed = JSON.parse(raw);
+    assert.ok(parsed, relativePath);
+    assert.doesNotMatch(raw, /client-\d+|ca-pub-|google_ad_client|adsbygoogle|[A-Za-z]:\\|ilovesvg\//i, relativePath);
+  }
+
+  for (const relativePath of ROUND4R_REPORTS) {
+    const text = await readText(relativePath);
+    assert.match(text, /Round 4R/i, relativePath);
+    assert.doesNotMatch(text, /client-\d+|ca-pub-|google_ad_client|adsbygoogle|[A-Za-z]:\\|ilovesvg\//i, relativePath);
+  }
+
+  const context = await readJson("pipeline/manifests/round-4r-project-context-check.json");
+  assert.equal(context.summary.correctRepository, true);
+  assert.equal(context.summary.branch, "version-4");
+  assert.equal(context.summary.round4qCommitExists, true);
+  assert.equal(context.summary.appApiRoutePresent, false);
+  assert.equal(context.summary.staticExportConfigured, true);
+  assert.equal(context.summary.r2BundleExists, true);
+  assert.equal(context.summary.round4qAdSlotInventoryExists, true);
+  assert.deepEqual(context.summary.currentPublicDownloadFormats, ["PNG"]);
+  assert.equal(context.summary.visibleSvgDownloadOptions, false);
+});
+
+test("Round 4R keeps the frozen Round 4Q ad slot map unchanged", async () => {
+  const inventory = await readJson("pipeline/manifests/round-4q-ad-slot-inventory.json");
+  const preservationCheck = await readJson("pipeline/manifests/round-4r-ad-slot-preservation-check.json");
+  const preservationResults = await readJson("pipeline/manifests/round-4r-ad-slot-preservation-results.json");
+  const visualResults = await readJson("pipeline/manifests/round-4r-ad-placeholder-visual-results.json");
+
+  assert.deepEqual(preservationCheck.pageTypes, inventory.pages.map((page) => page.pageType));
+  assert.deepEqual(preservationCheck.expectedCountsByPageTypeAndViewport, inventory.countsByPageType);
+  assert.deepEqual(normalizeSlotPages(preservationCheck.pages), normalizeSlotPages(inventory.pages));
+
+  assert.equal(preservationResults.summary.slotIdsChanged, false);
+  assert.equal(preservationResults.summary.slotNamesChanged, false);
+  assert.equal(preservationResults.summary.slotPlacementsChanged, false);
+  assert.equal(preservationResults.summary.slotCountChanged, false);
+  assert.equal(preservationResults.summary.pageCoverageChanged, false);
+  assert.equal(preservationResults.summary.newSlotAdded, false);
+  assert.equal(preservationResults.summary.slotRemoved, false);
+  assert.equal(preservationResults.summary.slotMoved, false);
+  assert.equal(preservationResults.summary.forbiddenPlacementIntroduced, false);
+
+  assert.equal(visualResults.summary.slotIdsChanged, false);
+  assert.equal(visualResults.summary.slotPlacementChanged, false);
+  assert.equal(visualResults.summary.slotCountChanged, false);
+  assert.equal(visualResults.summary.placeholdersVisibleWhenEnabled, true);
+  assert.equal(visualResults.summary.liveAdCodeAdded, false);
+});
+
+test("ad placeholder visuals are polished without live ad code or policy-risk styling", async () => {
+  const audit = await readJson("pipeline/manifests/round-4r-ad-placeholder-visual-audit.json");
+  const visualResults = await readJson("pipeline/manifests/round-4r-ad-placeholder-visual-results.json");
+  const adSlot = await readText("src/components/ads/AdSlot.tsx");
+  const adRail = await readText("src/components/ads/AdRail.tsx");
+  const adConfig = await readText("src/lib/ads/config.ts");
+  const componentsCss = await readText("src/styles/components.css");
+  const layoutCss = await readText("src/styles/layout.css");
+  const adCss = extractAdCss(componentsCss);
+  const forbiddenSurfaces = await readProjectText([
+    "src/components/site/SiteHeader.tsx",
+    "src/components/site/MoreHubMenu.tsx",
+    "src/components/site/MobileNav.tsx",
+    "src/components/coloring/ImageCard.tsx",
+    "src/components/coloring/GalleryGrid.tsx",
+  ]);
+
+  assert.equal(audit.summary.labelText, "Advertisement");
+  assert.equal(audit.summary.tooContentLikeBefore, true);
+  assert.equal(audit.summary.noisyAccentBefore, true);
+  assert.equal(audit.summary.mimickedImageCardsBefore, false);
+  assert.equal(audit.summary.liveAdCodePresent, false);
+  assert.equal(visualResults.summary.stylingChanged, true);
+  assert.equal(visualResults.summary.usesApprovedTokensOnly, true);
+  assert.equal(visualResults.summary.noGradients, true);
+  assert.equal(visualResults.summary.noShadows, true);
+  assert.equal(visualResults.summary.noBordersOrOutlines, true);
+  assert.equal(visualResults.summary.noFakeAdCreative, true);
+  assert.equal(visualResults.summary.policyRiskIntroduced, false);
+
+  assert.match(adSlot, /aria-label="Advertisement"/);
+  assert.match(adSlot, /data-ad-placeholder="true"/);
+  assert.match(adSlot, /data-ad-slot=\{slot\.slotId\}/);
+  assert.doesNotMatch(adSlot, /Future ad slot|Sponsored Links|fake ad|ad creative/i);
+  assert.match(adRail, /slotId: AdSlotId/);
+  assert.doesNotMatch(`${adConfig}\n${adSlot}\n${adRail}`, /NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS|showAdPlaceholders|return null/);
+
+  assert.match(adCss, /background:\s*var\(--color-[^)]+\)/);
+  assert.match(adCss, /\.ad-slot-label[\s\S]*Advertisement|\.ad-slot-label/);
+  assert.doesNotMatch(adCss, /#[0-9a-f]{3,8}/i);
+  assert.doesNotMatch(adCss, /\b(?:yellow|beige|tan|cream)\b/i);
+  assert.doesNotMatch(adCss, /gradient/i);
+  assert.doesNotMatch(adCss, /box-shadow\s*:/i);
+  assert.doesNotMatch(adCss, /\bborder\s*:/i);
+  assert.doesNotMatch(adCss, /\boutline\s*:/i);
+  assert.doesNotMatch(adCss, /color-coral|::before[\s\S]{0,220}content:\s*""/i);
+  assert.doesNotMatch(`${adCss}\n${adSlot}`, /\b(?:card|tile|button|cta)\b/i);
+  assert.doesNotMatch(layoutCss, /ad-slot[\s\S]{0,260}(?:box-shadow|gradient|\bborder\s*:|\boutline\s*:)/i);
+  assert.doesNotMatch(forbiddenSurfaces, /AdSlot|AdRail|data-ad-placeholder|Advertisement/);
+  assert.doesNotMatch(await readProjectText(["app", "src/components", "src/lib"]), /adsbygoogle|pagead2\.googlesyndication|ca-pub-|google_ad_client/i);
+});
+
+test("Round 4R browser QA evidence covers placeholder-on and placeholder-off visual states", async () => {
+  const qa = await readJson("pipeline/manifests/round-4r-browser-ad-visual-qa-results.json");
+
+  assert.equal(qa.summary.placeholderOff.noPlaceholdersVisible, true);
+  assert.equal(qa.summary.placeholderOff.noEmptyAdGaps, true);
+  assert.equal(qa.summary.placeholderOn.placeholdersVisible, true);
+  assert.equal(qa.summary.placeholderOn.labelsReadable, true);
+  assert.equal(qa.summary.placeholderOn.lookCleanerThanRound4q, true);
+  assert.equal(qa.summary.placeholderOn.noLiveAdCode, true);
+  assert.equal(qa.summary.placeholderOn.noForbiddenPlacements, true);
+  assert.equal(qa.summary.placeholderOn.noOverflow, true);
+  assert.ok(qa.screenshots.on.length >= 11);
+  assert.ok(qa.screenshots.off.length >= 11);
+
+  for (const screenshot of [...qa.screenshots.on, ...qa.screenshots.off]) {
+    assert.equal(screenshot.committed, false, screenshot.path);
+    assert.match(screenshot.path, /^pipeline\/review\/round-4r\/screenshots\/ad-placeholders-(?:on|off)\//);
+  }
+});
+
+test("Round 4R keeps static export, media boundaries, route boundaries, and download limits intact", async () => {
+  const nextConfig = await readText("next.config.mjs");
+  const packageJson = await readJson("package.json");
+  const routes = await readJson("src/generated/coloring/routes.json");
+  const imageCard = await readText("src/components/coloring/ImageCard.tsx");
+  const appFiles = await listFilesIfExists(path.join(REPO_ROOT, "app"));
+  const publicFiles = await listFilesIfExists(path.join(REPO_ROOT, "public"));
+  const sourceText = await readProjectText(["app", "src/components", "src/lib/navigation", "src/lib/ads"]);
+  const trackedR2UploadMedia = await gitLsFiles("pipeline/r2-upload");
+  const statusImages = await gitStatusFor("images");
+  const statusIlovesvg = await gitStatusFor("ilovesvg");
+  const statusProductionFull = await gitStatusFor("pipeline/production/full");
+  const renameStatus = await gitStatus();
+
+  assert.match(nextConfig, /output:\s*"export"/);
+  assert.equal(routes.noPerImageRoutes, true);
+  assert.equal(appFiles.some((file) => normalizePath(file).includes("/api/")), false);
+  assert.equal(publicFiles.some((file) => /(?:^|[\\/])(?:svg|png|thumbs|coloring-pages)[\\/]/i.test(file)), false);
+  assert.deepEqual(Object.keys(packageJson.dependencies).sort(), ["next", "react", "react-dom"]);
+  assert.match(imageCard, /Download PNG/);
+  assert.match(imageCard, /Print/);
+  assert.doesNotMatch(sourceText, /Download SVG|SVG download|Download JPG|Download JPEG|Download WebP|assetUrls\.svg|pngUrl\s*\|\|\s*svgUrl/i);
+  assert.doesNotMatch(sourceText, /application\/ld\+json|ImageObject|BreadcrumbList|FAQPage|image-sitemap|opengraph-image/i);
+  assert.equal(trackedR2UploadMedia.trim(), "");
+  assert.equal(statusImages.trim(), "");
+  assert.equal(statusIlovesvg.trim(), "");
+  assert.equal(statusProductionFull.trim(), "");
+  assert.equal(renameStatus.split(/\r?\n/).some((line) => /^R/.test(line.trim())), false);
+});
+
+async function readJson(relativePath) {
+  return JSON.parse(await readText(relativePath));
+}
+
+async function readText(relativePath) {
+  return readFile(path.join(REPO_ROOT, relativePath), "utf8");
+}
+
+async function listFilesIfExists(root) {
+  try {
+    await access(root);
+  } catch {
+    return [];
+  }
+
+  const results = [];
+  async function walk(directory) {
+    for (const entry of await readdir(directory, { withFileTypes: true })) {
+      const entryPath = path.join(directory, entry.name);
+      if (entry.isDirectory()) await walk(entryPath);
+      else results.push(path.relative(REPO_ROOT, entryPath));
+    }
+  }
+
+  await walk(root);
+  return results;
+}
+
+async function readProjectText(relativeRoots) {
+  const chunks = [];
+  for (const relativeRoot of relativeRoots) {
+    const root = path.join(REPO_ROOT, relativeRoot);
+    const rootStat = await stat(root);
+    if (rootStat.isFile()) {
+      chunks.push(await readText(relativeRoot));
+      continue;
+    }
+
+    const files = await listFilesIfExists(root);
+    for (const file of files) {
+      if (!/\.(?:ts|tsx|css|json|md)$/.test(file)) continue;
+      if (normalizePath(file).startsWith("src/generated/coloring/items.json")) continue;
+      chunks.push(await readText(file));
+    }
+  }
+  return chunks.join("\n");
+}
+
+async function gitLsFiles(relativePath) {
+  const { stdout } = await execFileAsync("git", ["ls-files", "--", relativePath], { cwd: REPO_ROOT });
+  return stdout;
+}
+
+async function gitStatusFor(relativePath) {
+  const { stdout } = await execFileAsync("git", ["status", "--short", "--", relativePath], { cwd: REPO_ROOT });
+  return stdout;
+}
+
+async function gitStatus() {
+  const { stdout } = await execFileAsync("git", ["status", "--short"], { cwd: REPO_ROOT });
+  return stdout;
+}
+
+function extractAdCss(css) {
+  const start = css.indexOf(".ad-slot {");
+  const end = css.indexOf(".button:hover", start);
+  assert.notEqual(start, -1, "ad CSS start marker missing");
+  assert.notEqual(end, -1, "ad CSS end marker missing");
+  return css.slice(start, end);
+}
+
+function normalizePath(filePath) {
+  return filePath.replaceAll("\\", "/");
+}
+
+function normalizeSlotPages(pages) {
+  return pages.map((page) => ({
+    pageType: page.pageType,
+    totalPlaceholders: page.totalPlaceholders,
+    visibleCounts: page.visibleCounts,
+    slots: page.slots.map((slot) => ({
+      slotId: slot.slotId,
+      slotName: slot.slotName,
+      placement: slot.placement,
+      desktop: slot.desktop,
+      wideDesktop: slot.wideDesktop,
+      tablet: slot.tablet,
+      mobile: slot.mobile,
+      hiddenByDefault: slot.hiddenByDefault,
+      futureAdUnitName: slot.futureAdUnitName,
+    })),
+  }));
+}

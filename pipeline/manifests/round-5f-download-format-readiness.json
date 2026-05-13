@@ -1,0 +1,23 @@
+{
+  "generatedAt": "2026-05-12T03:10:42.027Z",
+  "runId": "round-5f-download-format-readiness",
+  "summary": {
+    "browserConversionReady": false,
+    "publicWebpUrlsPassed": true,
+    "publicSvgUrlsPassed": true,
+    "svgCorsPassed": false,
+    "browserCanvasExportPassed": false,
+    "jpgJpegWebpControlsReadyForOwnerApproval": false,
+    "jpgJpegWebpControlsRemainHidden": true,
+    "svgUserDownloadExposed": false,
+    "currentPublicDownloadFormats": [
+      "PNG"
+    ],
+    "publicDownloadsRemainPngOnly": true
+  },
+  "decision": "Keep public downloads PNG-only. Do not expose JPG, JPEG, or WebP controls until public SVG CORS and browser canvas export both pass.",
+  "blockers": [
+    "SVG CORS did not pass for every uploaded test SVG. Canvas conversion must remain gated.",
+    "Browser canvas export has not passed against the public test asset base."
+  ]
+}

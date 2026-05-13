@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-05-11T03:45:13.751Z",
+  "runId": "round-4r-ad-placeholder-visuals",
+  "summary": {
+    "correctRepository": true,
+    "branch": "version-4",
+    "head": "869b6ae32e28cd136a0a74ee780aa1c24a9c230f",
+    "round4qCommitExists": true,
+    "round4qCommitOnBranch": true,
+    "appApiRoutePresent": false,
+    "srcAppApiRoutePresent": false,
+    "staticExportConfigured": true,
+    "appDirectoryRoutesPresent": true,
+    "r2BundleExists": true,
+    "publicGeneratedMediaPresent": false,
+    "publicGeneratedMediaFiles": [],
+    "sourceImagesUntouched": true,
+    "referenceRepoUntouched": true,
+    "productionFullAssetsNotStaged": true,
+    "r2UploadMediaNotTracked": true,
+    "filenamesRenamed": false,
+    "currentPublicDownloadFormats": [
+      "PNG"
+    ],
+    "visibleSvgDownloadOptions": false,
+    "visibleJpegWebpOptions": false,
+    "round4qAdSlotInventoryExists": true,
+    "wrongTaskContextDetected": false
+  },
+  "checkedIndicators": [
+    "package name",
+    "version-4 branch",
+    "Round 4Q commit",
+    "static export config",
+    "app directory route shape",
+    "app/api absence",
+    "local R2 bundle",
+    "public media absence",
+    "PNG-only public downloads",
+    "Round 4Q ad slot inventory"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-05-12T18:20:46.138Z",
+  "runId": "round-5i-project-context-check",
+  "summary": {
+    "correctRepository": true,
+    "repoName": "i-love-coloring-page",
+    "branch": "version-4",
+    "head": "49c9365",
+    "round5hCommitExists": true,
+    "appApiRoutePresent": false,
+    "staticExportConfigured": true,
+    "coloringPagesRouteExists": true,
+    "hubRouteExists": true,
+    "r2UploadColoringPagesExists": true,
+    "r2UploadSvgExists": true,
+    "r2UploadPngExists": true,
+    "r2UploadThumbsExists": true,
+    "testBundleExists": true,
+    "testBundleSvgExists": true,
+    "testBundleWebpExists": true,
+    "testBundleSvgCount": 30,
+    "testBundleWebpCount": 30,
+    "publicContainsGeneratedMedia": false,
+    "imagesStatusClean": true,
+    "ilovesvgStatusClean": true,
+    "currentPublicDownloadFormats": [
+      "PNG",
+      "JPG",
+      "WebP"
+    ],
+    "pngJpgWebpControlsPresent": true,
+    "svgUserDownloadExposed": false,
+    "printUsesInternalSvg": true,
+    "adWellsVisibleByDefault": true,
+    "liveAdSenseCodePresent": false,
+    "uploadCommandRunByCodex": false
+  },
+  "wrongContext": {
+    "checked": true,
+    "actualWrongRoutesFound": false,
+    "note": "Wrong-context guards are checked only against app and src source, not historical pipeline scripts."
+  }
+}

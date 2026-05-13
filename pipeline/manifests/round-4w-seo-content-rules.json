@@ -1,0 +1,71 @@
+{
+  "generatedAt": "2026-05-11T00:00:00.000Z",
+  "phase": "round-4w",
+  "sources": [
+    {
+      "name": "Google Search Central helpful content",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "use": "Write people-first content that helps visitors choose and print pages instead of search-engine-first filler."
+    },
+    {
+      "name": "Google image SEO best practices",
+      "url": "https://developers.google.com/search/docs/appearance/google-images",
+      "use": "Keep images in HTML, maintain useful landing-page text and metadata, and defer image sitemap work until public asset URLs are stable."
+    },
+    {
+      "name": "Google structured data general guidelines",
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/sd-policies",
+      "use": "Only add structured data that represents visible page content and defer image/FAQ markup that is not ready."
+    },
+    {
+      "name": "Google AdSense page readiness",
+      "url": "https://support.google.com/adsense/answer/7299563/make-sure-that-your-site-s-pages-are-ready-for-adsense?hl=en-GB",
+      "use": "Improve unique, relevant content, clear navigation, and page usefulness before live ad integration."
+    },
+    {
+      "name": "Google Publisher Policies",
+      "url": "https://support.google.com/adsense/answer/10502938",
+      "use": "Keep ads separated from navigation and actions, avoid low-value screens, and keep publisher content heavier than ad wells."
+    },
+    {
+      "name": "Pinterest Rich Pins overview",
+      "url": "https://developers.pinterest.com/docs/web-features/rich-pins-overview/",
+      "use": "Use basic page metadata now and defer Pinterest images/templates until stable public asset URLs exist."
+    }
+  ],
+  "rules": {
+    "doNow": [
+      "Create concise route-specific metadata for the homepage, gallery landing page, and Phase 1 hub pages.",
+      "Add useful below-gallery guidance that helps visitors choose, print, and browse pages.",
+      "Keep gallery access and real previews near the top of every page.",
+      "Use generated Phase 1 relationships for internal links."
+    ],
+    "defer": [
+      "Image sitemap until stable public asset URLs and Search Console property coverage are verified.",
+      "Open Graph image generation until public asset URLs are stable.",
+      "FAQPage structured data until real visible FAQ content exists.",
+      "ImageObject markup until the image landing strategy and public URLs are stable.",
+      "Live AdSense until the owner explicitly requests it."
+    ],
+    "doNotDo": [
+      "Do not create keyword-stuffed or cookie-cutter hub copy.",
+      "Do not add per-image routes or Phase 2 hub routes.",
+      "Do not mention SVG downloads publicly.",
+      "Do not promise online coloring as an available feature.",
+      "Do not add nested cards, borders, shadows, outlines, gradients, or random colors."
+    ],
+    "jsonLdStatus": {
+      "safeNow": [],
+      "riskyNow": [
+        "FAQPage",
+        "ImageObject",
+        "CreativeWork for every image",
+        "CollectionPage over-markup"
+      ],
+      "deferredSafeCandidates": [
+        "WebSite",
+        "BreadcrumbList"
+      ]
+    }
+  }
+}

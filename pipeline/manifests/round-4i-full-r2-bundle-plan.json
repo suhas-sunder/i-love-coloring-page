@@ -1,0 +1,48 @@
+{
+  "generatedAt": "2026-05-10",
+  "runId": "round-4i-full-cloudflare-r2-upload-bundle",
+  "uploadBundleRoot": "pipeline/r2-upload/coloring-pages",
+  "uploadPrefix": "coloring-pages",
+  "expectedPublicBaseUrlPattern": "https://YOUR-ASSET-DOMAIN.com/coloring-pages",
+  "temporaryTestBaseUrl": "https://pub-1bf18626e66c4e4aa3093fb370122f11.r2.dev/coloring-pages",
+  "r2DevProductionRecommendation": "temporary-test-only",
+  "hardlinkOrCopyModeUsed": "hardlink",
+  "sourceManifest": "pipeline/manifests/round-4e-asset-publish-manifest.json",
+  "readinessSource": "pipeline/manifests/round-4h-full-upload-readiness.json",
+  "filters": {
+    "category": null,
+    "limit": null,
+    "fullRun": true
+  },
+  "expectedFullBundle": {
+    "imageRecordCount": 6557,
+    "mediaFileCount": 19671,
+    "svgFileCount": 6557,
+    "pngPreviewFileCount": 6557,
+    "thumbnailFileCount": 6557,
+    "totalBytesRepresented": 3148598669
+  },
+  "summary": {
+    "totalImageRecordsPlanned": 6557,
+    "totalMediaFilesPlanned": 19671,
+    "totalBytesRepresented": 3148598669,
+    "totalSvgFiles": 6557,
+    "totalPngPreviewFiles": 6557,
+    "totalThumbnailFiles": 6557,
+    "skippedFiles": [],
+    "invalidFiles": [],
+    "successfulProductionAssetsIncluded": 6557,
+    "quarantinedAssetsIncluded": 0,
+    "sourceImagesIncluded": 0,
+    "oldPrefixIncluded": false,
+    "filenamesPreserved": true
+  },
+  "safetyChecks": {
+    "writesOnlyUnder": "pipeline/r2-upload",
+    "deletesOnlyUnder": "pipeline/r2-upload/coloring-pages",
+    "sourceAssetRootReadOnly": "pipeline/production/full/assets",
+    "publicFolderExcluded": true,
+    "noUploadPerformed": true,
+    "noCredentialsRequired": true
+  }
+}

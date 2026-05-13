@@ -1,0 +1,45 @@
+{
+  "generatedAt": "2026-05-10",
+  "runId": "round-4j-gallery-discovery-ux",
+  "summary": {
+    "staticExportCompatible": true,
+    "noBackendRequired": true,
+    "noApiRouteRequired": true,
+    "currentHubOnlySearch": true,
+    "largeHubDomLimit": 48,
+    "filterHubCount": 65,
+    "routesUnchanged": 65
+  },
+  "behavior": {
+    "searchMatches": [
+      "title",
+      "filename terms",
+      "category",
+      "hub names",
+      "generated tags"
+    ],
+    "filterTags": [
+      "simple",
+      "detailed",
+      "cute",
+      "seasonal",
+      "animals",
+      "characters",
+      "patterns",
+      "fantasy",
+      "flowers",
+      "dinosaurs",
+      "vehicles"
+    ],
+    "tabs": [
+      "Featured",
+      "All",
+      "Simple",
+      "Detailed",
+      "Cute",
+      "Seasonal",
+      "Patterns"
+    ],
+    "fallbackWithoutJavaScript": "The server-rendered current gallery page and pagination remain available."
+  }
+}

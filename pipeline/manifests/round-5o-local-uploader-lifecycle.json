@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-05-13T04:54:33.529Z",
+  "runId": "round-5o-local-uploader-lifecycle",
+  "summary": {
+    "localOnlyUtility": true,
+    "temporaryOneTimeHelper": true,
+    "usedByAppRuntime": false,
+    "usedByBuild": false,
+    "neededForInitialCleanUploadOnly": true,
+    "safeToRemoveAfterSuccessfulUploadIfOwnerChooses": true,
+    "invokedAutomatically": false,
+    "recurringTask": false,
+    "backgroundWatcher": false,
+    "deletesRemoteObjects": false
+  }
+}

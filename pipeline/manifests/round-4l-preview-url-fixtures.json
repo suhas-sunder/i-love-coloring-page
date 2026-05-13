@@ -1,0 +1,1828 @@
+{
+  "generatedAt": "2026-05-10T20:29:38.565Z",
+  "runId": "round-4l-preview-rendering-repair",
+  "localAssetBaseUrl": "http://127.0.0.1:4175/coloring-pages",
+  "summary": {
+    "fixtureCount": 70,
+    "requiredHubSlugs": [
+      "animals",
+      "anime-girls",
+      "birds",
+      "geometric",
+      "mandalas",
+      "chibi",
+      "fantasy",
+      "christmas",
+      "cars",
+      "plushies"
+    ],
+    "coveredHubSlugs": [
+      "",
+      "animals",
+      "anime-girls",
+      "beetles",
+      "birds",
+      "birthday",
+      "bridges",
+      "buildings",
+      "butterflies",
+      "cars",
+      "cats",
+      "chibi",
+      "christmas",
+      "cute",
+      "detailed-for-adults",
+      "dinosaurs",
+      "dogs",
+      "dungeon",
+      "easy",
+      "fantasy",
+      "fantasy-creatures",
+      "fantasy-dragons",
+      "flowers",
+      "food",
+      "for-kids",
+      "forest",
+      "garden",
+      "garden-flowers",
+      "geometric",
+      "holidays",
+      "indoor-plants",
+      "insects",
+      "mandalas",
+      "mythology",
+      "ocean",
+      "plants",
+      "playing-cards",
+      "plushie-animals",
+      "plushies",
+      "prehistoric-animals",
+      "trains",
+      "trees",
+      "vehicles"
+    ]
+  },
+  "fixtures": [
+    {
+      "assetId": "animals__animals-alligator__4feec8505a",
+      "title": "Animals Alligator",
+      "hubSlugs": [
+        "",
+        "animals"
+      ],
+      "expectedPngUrlPath": "/png/animals/animals-alligator-4feec8505a.png",
+      "expectedSvgUrlPath": "/svg/animals/animals-alligator-4feec8505a.svg",
+      "expectedThumbnailUrlPath": "/thumbs/animals/animals-alligator-4feec8505a-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/animals/animals-alligator-4feec8505a.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/animals/animals-alligator-4feec8505a.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/animals/animals-alligator-4feec8505a-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/animals/animals-alligator-4feec8505a.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/animals/animals-alligator-4feec8505a.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/animals/animals-alligator-4feec8505a-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "animals-playing-cards__animals-armadillo__1a6eaccdef",
+      "title": "Animals Armadillo",
+      "hubSlugs": [
+        "",
+        "animals",
+        "playing-cards"
+      ],
+      "expectedPngUrlPath": "/png/animals-playing-cards/animals-armadillo-1a6eaccdef.png",
+      "expectedSvgUrlPath": "/svg/animals-playing-cards/animals-armadillo-1a6eaccdef.svg",
+      "expectedThumbnailUrlPath": "/thumbs/animals-playing-cards/animals-armadillo-1a6eaccdef-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/animals-playing-cards/animals-armadillo-1a6eaccdef.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-armadillo-1a6eaccdef.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/animals-playing-cards/animals-armadillo-1a6eaccdef-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/animals-playing-cards/animals-armadillo-1a6eaccdef.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/animals-playing-cards/animals-armadillo-1a6eaccdef.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/animals-playing-cards/animals-armadillo-1a6eaccdef-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "anime-girls__anime-girl-air-balloon__1f6b5be7bc",
+      "title": "Anime Girl Air Balloon",
+      "hubSlugs": [
+        "",
+        "anime-girls"
+      ],
+      "expectedPngUrlPath": "/png/anime-girls/anime-girl-air-balloon-1f6b5be7bc.png",
+      "expectedSvgUrlPath": "/svg/anime-girls/anime-girl-air-balloon-1f6b5be7bc.svg",
+      "expectedThumbnailUrlPath": "/thumbs/anime-girls/anime-girl-air-balloon-1f6b5be7bc-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-air-balloon-1f6b5be7bc.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-air-balloon-1f6b5be7bc.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/anime-girls/anime-girl-air-balloon-1f6b5be7bc-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/anime-girls/anime-girl-air-balloon-1f6b5be7bc.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/anime-girls/anime-girl-air-balloon-1f6b5be7bc.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/anime-girls/anime-girl-air-balloon-1f6b5be7bc-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "birds__birds-albatross__2380234539",
+      "title": "Birds Albatross",
+      "hubSlugs": [
+        "",
+        "animals",
+        "birds"
+      ],
+      "expectedPngUrlPath": "/png/birds/birds-albatross-2380234539.png",
+      "expectedSvgUrlPath": "/svg/birds/birds-albatross-2380234539.svg",
+      "expectedThumbnailUrlPath": "/thumbs/birds/birds-albatross-2380234539-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/birds/birds-albatross-2380234539.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/birds/birds-albatross-2380234539.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/birds/birds-albatross-2380234539-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/birds/birds-albatross-2380234539.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/birds/birds-albatross-2380234539.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/birds/birds-albatross-2380234539-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "animals-playing-cards__animals-armadillos-wildlife__f2912c1ad5",
+      "title": "Animals Armadillos Wildlife",
+      "hubSlugs": [
+        "",
+        "animals",
+        "playing-cards"
+      ],
+      "expectedPngUrlPath": "/png/animals-playing-cards/animals-armadillos-wildlife-f2912c1ad5.png",
+      "expectedSvgUrlPath": "/svg/animals-playing-cards/animals-armadillos-wildlife-f2912c1ad5.svg",
+      "expectedThumbnailUrlPath": "/thumbs/animals-playing-cards/animals-armadillos-wildlife-f2912c1ad5-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/animals-playing-cards/animals-armadillos-wildlife-f2912c1ad5.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-armadillos-wildlife-f2912c1ad5.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/animals-playing-cards/animals-armadillos-wildlife-f2912c1ad5-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/animals-playing-cards/animals-armadillos-wildlife-f2912c1ad5.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/animals-playing-cards/animals-armadillos-wildlife-f2912c1ad5.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/animals-playing-cards/animals-armadillos-wildlife-f2912c1ad5-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "animals-playing-cards__animals-armadillos__50db4716e5",
+      "title": "Animals Armadillos",
+      "hubSlugs": [
+        "",
+        "animals",
+        "playing-cards"
+      ],
+      "expectedPngUrlPath": "/png/animals-playing-cards/animals-armadillos-50db4716e5.png",
+      "expectedSvgUrlPath": "/svg/animals-playing-cards/animals-armadillos-50db4716e5.svg",
+      "expectedThumbnailUrlPath": "/thumbs/animals-playing-cards/animals-armadillos-50db4716e5-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/animals-playing-cards/animals-armadillos-50db4716e5.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-armadillos-50db4716e5.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/animals-playing-cards/animals-armadillos-50db4716e5-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/animals-playing-cards/animals-armadillos-50db4716e5.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/animals-playing-cards/animals-armadillos-50db4716e5.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/animals-playing-cards/animals-armadillos-50db4716e5-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "animals-playing-cards__animals-baboon__3019f9ef3d",
+      "title": "Animals Baboon",
+      "hubSlugs": [
+        "",
+        "animals",
+        "playing-cards"
+      ],
+      "expectedPngUrlPath": "/png/animals-playing-cards/animals-baboon-3019f9ef3d.png",
+      "expectedSvgUrlPath": "/svg/animals-playing-cards/animals-baboon-3019f9ef3d.svg",
+      "expectedThumbnailUrlPath": "/thumbs/animals-playing-cards/animals-baboon-3019f9ef3d-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/animals-playing-cards/animals-baboon-3019f9ef3d.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-baboon-3019f9ef3d.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/animals-playing-cards/animals-baboon-3019f9ef3d-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/animals-playing-cards/animals-baboon-3019f9ef3d.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/animals-playing-cards/animals-baboon-3019f9ef3d.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/animals-playing-cards/animals-baboon-3019f9ef3d-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "animals-playing-cards__animals-baboons-hanging__398854ec28",
+      "title": "Animals Baboons Hanging",
+      "hubSlugs": [
+        "",
+        "animals",
+        "playing-cards"
+      ],
+      "expectedPngUrlPath": "/png/animals-playing-cards/animals-baboons-hanging-398854ec28.png",
+      "expectedSvgUrlPath": "/svg/animals-playing-cards/animals-baboons-hanging-398854ec28.svg",
+      "expectedThumbnailUrlPath": "/thumbs/animals-playing-cards/animals-baboons-hanging-398854ec28-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/animals-playing-cards/animals-baboons-hanging-398854ec28.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-baboons-hanging-398854ec28.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/animals-playing-cards/animals-baboons-hanging-398854ec28-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/animals-playing-cards/animals-baboons-hanging-398854ec28.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/animals-playing-cards/animals-baboons-hanging-398854ec28.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/animals-playing-cards/animals-baboons-hanging-398854ec28-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "animals-playing-cards__animals-baboons__5f19666c69",
+      "title": "Animals Baboons",
+      "hubSlugs": [
+        "",
+        "animals",
+        "playing-cards"
+      ],
+      "expectedPngUrlPath": "/png/animals-playing-cards/animals-baboons-5f19666c69.png",
+      "expectedSvgUrlPath": "/svg/animals-playing-cards/animals-baboons-5f19666c69.svg",
+      "expectedThumbnailUrlPath": "/thumbs/animals-playing-cards/animals-baboons-5f19666c69-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/animals-playing-cards/animals-baboons-5f19666c69.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-baboons-5f19666c69.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/animals-playing-cards/animals-baboons-5f19666c69-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/animals-playing-cards/animals-baboons-5f19666c69.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/animals-playing-cards/animals-baboons-5f19666c69.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/animals-playing-cards/animals-baboons-5f19666c69-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "animals-playing-cards__animals-badger__46333741c3",
+      "title": "Animals Badger",
+      "hubSlugs": [
+        "",
+        "animals",
+        "playing-cards"
+      ],
+      "expectedPngUrlPath": "/png/animals-playing-cards/animals-badger-46333741c3.png",
+      "expectedSvgUrlPath": "/svg/animals-playing-cards/animals-badger-46333741c3.svg",
+      "expectedThumbnailUrlPath": "/thumbs/animals-playing-cards/animals-badger-46333741c3-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/animals-playing-cards/animals-badger-46333741c3.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-badger-46333741c3.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/animals-playing-cards/animals-badger-46333741c3-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/animals-playing-cards/animals-badger-46333741c3.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/animals-playing-cards/animals-badger-46333741c3.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/animals-playing-cards/animals-badger-46333741c3-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "animals-playing-cards__animals-badgers-wildlife__d717f79524",
+      "title": "Animals Badgers Wildlife",
+      "hubSlugs": [
+        "",
+        "animals",
+        "playing-cards"
+      ],
+      "expectedPngUrlPath": "/png/animals-playing-cards/animals-badgers-wildlife-d717f79524.png",
+      "expectedSvgUrlPath": "/svg/animals-playing-cards/animals-badgers-wildlife-d717f79524.svg",
+      "expectedThumbnailUrlPath": "/thumbs/animals-playing-cards/animals-badgers-wildlife-d717f79524-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/animals-playing-cards/animals-badgers-wildlife-d717f79524.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-badgers-wildlife-d717f79524.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/animals-playing-cards/animals-badgers-wildlife-d717f79524-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/animals-playing-cards/animals-badgers-wildlife-d717f79524.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/animals-playing-cards/animals-badgers-wildlife-d717f79524.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/animals-playing-cards/animals-badgers-wildlife-d717f79524-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "animals-playing-cards__animals-badgers__701e4f01fa",
+      "title": "Animals Badgers",
+      "hubSlugs": [
+        "",
+        "animals",
+        "playing-cards"
+      ],
+      "expectedPngUrlPath": "/png/animals-playing-cards/animals-badgers-701e4f01fa.png",
+      "expectedSvgUrlPath": "/svg/animals-playing-cards/animals-badgers-701e4f01fa.svg",
+      "expectedThumbnailUrlPath": "/thumbs/animals-playing-cards/animals-badgers-701e4f01fa-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/animals-playing-cards/animals-badgers-701e4f01fa.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-badgers-701e4f01fa.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/animals-playing-cards/animals-badgers-701e4f01fa-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/animals-playing-cards/animals-badgers-701e4f01fa.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/animals-playing-cards/animals-badgers-701e4f01fa.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/animals-playing-cards/animals-badgers-701e4f01fa-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "animals-playing-cards__animals-bats-wildlife__1da9adbd04",
+      "title": "Animals Bats Wildlife",
+      "hubSlugs": [
+        "",
+        "animals",
+        "playing-cards"
+      ],
+      "expectedPngUrlPath": "/png/animals-playing-cards/animals-bats-wildlife-1da9adbd04.png",
+      "expectedSvgUrlPath": "/svg/animals-playing-cards/animals-bats-wildlife-1da9adbd04.svg",
+      "expectedThumbnailUrlPath": "/thumbs/animals-playing-cards/animals-bats-wildlife-1da9adbd04-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/animals-playing-cards/animals-bats-wildlife-1da9adbd04.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-bats-wildlife-1da9adbd04.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/animals-playing-cards/animals-bats-wildlife-1da9adbd04-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/animals-playing-cards/animals-bats-wildlife-1da9adbd04.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/animals-playing-cards/animals-bats-wildlife-1da9adbd04.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/animals-playing-cards/animals-bats-wildlife-1da9adbd04-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "animals-playing-cards__animals-bats__662bf20796",
+      "title": "Animals Bats",
+      "hubSlugs": [
+        "",
+        "animals",
+        "playing-cards"
+      ],
+      "expectedPngUrlPath": "/png/animals-playing-cards/animals-bats-662bf20796.png",
+      "expectedSvgUrlPath": "/svg/animals-playing-cards/animals-bats-662bf20796.svg",
+      "expectedThumbnailUrlPath": "/thumbs/animals-playing-cards/animals-bats-662bf20796-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/animals-playing-cards/animals-bats-662bf20796.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-bats-662bf20796.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/animals-playing-cards/animals-bats-662bf20796-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/animals-playing-cards/animals-bats-662bf20796.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/animals-playing-cards/animals-bats-662bf20796.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/animals-playing-cards/animals-bats-662bf20796-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "animals-playing-cards__animals-bears-wildlife__f504693e9a",
+      "title": "Animals Bears Wildlife",
+      "hubSlugs": [
+        "",
+        "animals",
+        "playing-cards"
+      ],
+      "expectedPngUrlPath": "/png/animals-playing-cards/animals-bears-wildlife-f504693e9a.png",
+      "expectedSvgUrlPath": "/svg/animals-playing-cards/animals-bears-wildlife-f504693e9a.svg",
+      "expectedThumbnailUrlPath": "/thumbs/animals-playing-cards/animals-bears-wildlife-f504693e9a-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/animals-playing-cards/animals-bears-wildlife-f504693e9a.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-bears-wildlife-f504693e9a.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/animals-playing-cards/animals-bears-wildlife-f504693e9a-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/animals-playing-cards/animals-bears-wildlife-f504693e9a.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/animals-playing-cards/animals-bears-wildlife-f504693e9a.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/animals-playing-cards/animals-bears-wildlife-f504693e9a-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "animals-playing-cards__animals-bears__eec9e5fdad",
+      "title": "Animals Bears",
+      "hubSlugs": [
+        "",
+        "animals",
+        "playing-cards"
+      ],
+      "expectedPngUrlPath": "/png/animals-playing-cards/animals-bears-eec9e5fdad.png",
+      "expectedSvgUrlPath": "/svg/animals-playing-cards/animals-bears-eec9e5fdad.svg",
+      "expectedThumbnailUrlPath": "/thumbs/animals-playing-cards/animals-bears-eec9e5fdad-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/animals-playing-cards/animals-bears-eec9e5fdad.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-bears-eec9e5fdad.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/animals-playing-cards/animals-bears-eec9e5fdad-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/animals-playing-cards/animals-bears-eec9e5fdad.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/animals-playing-cards/animals-bears-eec9e5fdad.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/animals-playing-cards/animals-bears-eec9e5fdad-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "animals-playing-cards__animals-beavers-wildlife__402c4ecf7e",
+      "title": "Animals Beavers Wildlife",
+      "hubSlugs": [
+        "",
+        "animals",
+        "playing-cards"
+      ],
+      "expectedPngUrlPath": "/png/animals-playing-cards/animals-beavers-wildlife-402c4ecf7e.png",
+      "expectedSvgUrlPath": "/svg/animals-playing-cards/animals-beavers-wildlife-402c4ecf7e.svg",
+      "expectedThumbnailUrlPath": "/thumbs/animals-playing-cards/animals-beavers-wildlife-402c4ecf7e-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/animals-playing-cards/animals-beavers-wildlife-402c4ecf7e.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-beavers-wildlife-402c4ecf7e.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/animals-playing-cards/animals-beavers-wildlife-402c4ecf7e-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/animals-playing-cards/animals-beavers-wildlife-402c4ecf7e.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/animals-playing-cards/animals-beavers-wildlife-402c4ecf7e.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/animals-playing-cards/animals-beavers-wildlife-402c4ecf7e-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "animals-playing-cards__animals-beavers__b3a02e4662",
+      "title": "Animals Beavers",
+      "hubSlugs": [
+        "",
+        "animals",
+        "playing-cards"
+      ],
+      "expectedPngUrlPath": "/png/animals-playing-cards/animals-beavers-b3a02e4662.png",
+      "expectedSvgUrlPath": "/svg/animals-playing-cards/animals-beavers-b3a02e4662.svg",
+      "expectedThumbnailUrlPath": "/thumbs/animals-playing-cards/animals-beavers-b3a02e4662-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/animals-playing-cards/animals-beavers-b3a02e4662.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-beavers-b3a02e4662.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/animals-playing-cards/animals-beavers-b3a02e4662-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/animals-playing-cards/animals-beavers-b3a02e4662.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/animals-playing-cards/animals-beavers-b3a02e4662.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/animals-playing-cards/animals-beavers-b3a02e4662-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "animals-playing-cards__animals-bison-wildlife__f5af85fae9",
+      "title": "Animals Bison Wildlife",
+      "hubSlugs": [
+        "",
+        "animals",
+        "playing-cards"
+      ],
+      "expectedPngUrlPath": "/png/animals-playing-cards/animals-bison-wildlife-f5af85fae9.png",
+      "expectedSvgUrlPath": "/svg/animals-playing-cards/animals-bison-wildlife-f5af85fae9.svg",
+      "expectedThumbnailUrlPath": "/thumbs/animals-playing-cards/animals-bison-wildlife-f5af85fae9-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/animals-playing-cards/animals-bison-wildlife-f5af85fae9.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-bison-wildlife-f5af85fae9.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/animals-playing-cards/animals-bison-wildlife-f5af85fae9-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/animals-playing-cards/animals-bison-wildlife-f5af85fae9.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/animals-playing-cards/animals-bison-wildlife-f5af85fae9.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/animals-playing-cards/animals-bison-wildlife-f5af85fae9-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "chibi__chibi-african-dragon__ebdfccdd0d",
+      "title": "Chibi African Dragon",
+      "hubSlugs": [
+        "",
+        "chibi",
+        "easy",
+        "fantasy",
+        "fantasy-creatures",
+        "for-kids"
+      ],
+      "expectedPngUrlPath": "/png/chibi/chibi-african-dragon-ebdfccdd0d.png",
+      "expectedSvgUrlPath": "/svg/chibi/chibi-african-dragon-ebdfccdd0d.svg",
+      "expectedThumbnailUrlPath": "/thumbs/chibi/chibi-african-dragon-ebdfccdd0d-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/chibi/chibi-african-dragon-ebdfccdd0d.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/chibi/chibi-african-dragon-ebdfccdd0d.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/chibi/chibi-african-dragon-ebdfccdd0d-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/chibi/chibi-african-dragon-ebdfccdd0d.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/chibi/chibi-african-dragon-ebdfccdd0d.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/chibi/chibi-african-dragon-ebdfccdd0d-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "christmas__christmas-holiday-advent-calendar__a1245c4617",
+      "title": "Christmas Holiday Advent Calendar",
+      "hubSlugs": [
+        "",
+        "christmas",
+        "holidays"
+      ],
+      "expectedPngUrlPath": "/png/christmas/christmas-holiday-advent-calendar-a1245c4617.png",
+      "expectedSvgUrlPath": "/svg/christmas/christmas-holiday-advent-calendar-a1245c4617.svg",
+      "expectedThumbnailUrlPath": "/thumbs/christmas/christmas-holiday-advent-calendar-a1245c4617-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/christmas/christmas-holiday-advent-calendar-a1245c4617.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/christmas/christmas-holiday-advent-calendar-a1245c4617.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/christmas/christmas-holiday-advent-calendar-a1245c4617-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/christmas/christmas-holiday-advent-calendar-a1245c4617.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/christmas/christmas-holiday-advent-calendar-a1245c4617.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/christmas/christmas-holiday-advent-calendar-a1245c4617-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "dinosaurs__prehistoric-allosaurus__9787e7d0fd",
+      "title": "Prehistoric Allosaurus",
+      "hubSlugs": [
+        "",
+        "animals",
+        "dinosaurs",
+        "prehistoric-animals"
+      ],
+      "expectedPngUrlPath": "/png/dinosaurs/prehistoric-allosaurus-9787e7d0fd.png",
+      "expectedSvgUrlPath": "/svg/dinosaurs/prehistoric-allosaurus-9787e7d0fd.svg",
+      "expectedThumbnailUrlPath": "/thumbs/dinosaurs/prehistoric-allosaurus-9787e7d0fd-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/dinosaurs/prehistoric-allosaurus-9787e7d0fd.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/dinosaurs/prehistoric-allosaurus-9787e7d0fd.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/dinosaurs/prehistoric-allosaurus-9787e7d0fd-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/dinosaurs/prehistoric-allosaurus-9787e7d0fd.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/dinosaurs/prehistoric-allosaurus-9787e7d0fd.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/dinosaurs/prehistoric-allosaurus-9787e7d0fd-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "dogs__dogs-afghan-hound__cdbb79eb85",
+      "title": "Dogs Afghan Hound",
+      "hubSlugs": [
+        "",
+        "animals",
+        "dogs"
+      ],
+      "expectedPngUrlPath": "/png/dogs/dogs-afghan-hound-cdbb79eb85.png",
+      "expectedSvgUrlPath": "/svg/dogs/dogs-afghan-hound-cdbb79eb85.svg",
+      "expectedThumbnailUrlPath": "/thumbs/dogs/dogs-afghan-hound-cdbb79eb85-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/dogs/dogs-afghan-hound-cdbb79eb85.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/dogs/dogs-afghan-hound-cdbb79eb85.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/dogs/dogs-afghan-hound-cdbb79eb85-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/dogs/dogs-afghan-hound-cdbb79eb85.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/dogs/dogs-afghan-hound-cdbb79eb85.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/dogs/dogs-afghan-hound-cdbb79eb85-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "dragons__dragon-playing-card__dcfa490187",
+      "title": "Dragon Playing Card",
+      "hubSlugs": [
+        "",
+        "fantasy",
+        "fantasy-creatures",
+        "fantasy-dragons",
+        "playing-cards"
+      ],
+      "expectedPngUrlPath": "/png/dragons/dragon-playing-card-dcfa490187.png",
+      "expectedSvgUrlPath": "/svg/dragons/dragon-playing-card-dcfa490187.svg",
+      "expectedThumbnailUrlPath": "/thumbs/dragons/dragon-playing-card-dcfa490187-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/dragons/dragon-playing-card-dcfa490187.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/dragons/dragon-playing-card-dcfa490187.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/dragons/dragon-playing-card-dcfa490187-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/dragons/dragon-playing-card-dcfa490187.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/dragons/dragon-playing-card-dcfa490187.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/dragons/dragon-playing-card-dcfa490187-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "emoji__u-1f601-beaming-face-with-smiling-eyes__97089f2c44",
+      "title": "U+1F601 Beaming Face With Smiling Eyes",
+      "hubSlugs": [
+        ""
+      ],
+      "expectedPngUrlPath": "/png/emoji/u-1f601-beaming-face-with-smiling-eyes-97089f2c44.png",
+      "expectedSvgUrlPath": "/svg/emoji/u-1f601-beaming-face-with-smiling-eyes-97089f2c44.svg",
+      "expectedThumbnailUrlPath": "/thumbs/emoji/u-1f601-beaming-face-with-smiling-eyes-97089f2c44-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/emoji/u-1f601-beaming-face-with-smiling-eyes-97089f2c44.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/emoji/u-1f601-beaming-face-with-smiling-eyes-97089f2c44.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/emoji/u-1f601-beaming-face-with-smiling-eyes-97089f2c44-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/emoji/u-1f601-beaming-face-with-smiling-eyes-97089f2c44.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/emoji/u-1f601-beaming-face-with-smiling-eyes-97089f2c44.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/emoji/u-1f601-beaming-face-with-smiling-eyes-97089f2c44-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "fantasy__fantasy-abyss-wyrm__7a01eb3636",
+      "title": "Fantasy Abyss Wyrm",
+      "hubSlugs": [
+        "",
+        "fantasy"
+      ],
+      "expectedPngUrlPath": "/png/fantasy/fantasy-abyss-wyrm-7a01eb3636.png",
+      "expectedSvgUrlPath": "/svg/fantasy/fantasy-abyss-wyrm-7a01eb3636.svg",
+      "expectedThumbnailUrlPath": "/thumbs/fantasy/fantasy-abyss-wyrm-7a01eb3636-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/fantasy/fantasy-abyss-wyrm-7a01eb3636.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/fantasy/fantasy-abyss-wyrm-7a01eb3636.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/fantasy/fantasy-abyss-wyrm-7a01eb3636-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/fantasy/fantasy-abyss-wyrm-7a01eb3636.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/fantasy/fantasy-abyss-wyrm-7a01eb3636.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/fantasy/fantasy-abyss-wyrm-7a01eb3636-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "flowers__ardening-in-field-of-flowers-gaillardia__d881b07c2c",
+      "title": "Ardening In Field Of Flowers Gaillardia",
+      "hubSlugs": [
+        "",
+        "flowers",
+        "garden",
+        "garden-flowers",
+        "plants"
+      ],
+      "expectedPngUrlPath": "/png/flowers/ardening-in-field-of-flowers-gaillardia-d881b07c2c.png",
+      "expectedSvgUrlPath": "/svg/flowers/ardening-in-field-of-flowers-gaillardia-d881b07c2c.svg",
+      "expectedThumbnailUrlPath": "/thumbs/flowers/ardening-in-field-of-flowers-gaillardia-d881b07c2c-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/flowers/ardening-in-field-of-flowers-gaillardia-d881b07c2c.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/flowers/ardening-in-field-of-flowers-gaillardia-d881b07c2c.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/flowers/ardening-in-field-of-flowers-gaillardia-d881b07c2c-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/flowers/ardening-in-field-of-flowers-gaillardia-d881b07c2c.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/flowers/ardening-in-field-of-flowers-gaillardia-d881b07c2c.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/flowers/ardening-in-field-of-flowers-gaillardia-d881b07c2c-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "chibi__chibi-animals-pets-dogs-afghan-hound__d9a83b6ec9",
+      "title": "Chibi Animals Pets Dogs Afghan Hound",
+      "hubSlugs": [
+        "",
+        "animals",
+        "chibi",
+        "dogs",
+        "easy",
+        "for-kids"
+      ],
+      "expectedPngUrlPath": "/png/chibi/chibi-animals-pets-dogs-afghan-hound-d9a83b6ec9.png",
+      "expectedSvgUrlPath": "/svg/chibi/chibi-animals-pets-dogs-afghan-hound-d9a83b6ec9.svg",
+      "expectedThumbnailUrlPath": "/thumbs/chibi/chibi-animals-pets-dogs-afghan-hound-d9a83b6ec9-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/chibi/chibi-animals-pets-dogs-afghan-hound-d9a83b6ec9.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/chibi/chibi-animals-pets-dogs-afghan-hound-d9a83b6ec9.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/chibi/chibi-animals-pets-dogs-afghan-hound-d9a83b6ec9-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/chibi/chibi-animals-pets-dogs-afghan-hound-d9a83b6ec9.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/chibi/chibi-animals-pets-dogs-afghan-hound-d9a83b6ec9.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/chibi/chibi-animals-pets-dogs-afghan-hound-d9a83b6ec9-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "anime-girls__anime-girl-armadillo-hoodie-animal-plushie__d2e31ff395",
+      "title": "Anime Girl Armadillo Hoodie Animal Plushie",
+      "hubSlugs": [
+        "",
+        "animals",
+        "anime-girls",
+        "plushie-animals",
+        "plushies"
+      ],
+      "expectedPngUrlPath": "/png/anime-girls/anime-girl-armadillo-hoodie-animal-plushie-d2e31ff395.png",
+      "expectedSvgUrlPath": "/svg/anime-girls/anime-girl-armadillo-hoodie-animal-plushie-d2e31ff395.svg",
+      "expectedThumbnailUrlPath": "/thumbs/anime-girls/anime-girl-armadillo-hoodie-animal-plushie-d2e31ff395-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-armadillo-hoodie-animal-plushie-d2e31ff395.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-armadillo-hoodie-animal-plushie-d2e31ff395.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/anime-girls/anime-girl-armadillo-hoodie-animal-plushie-d2e31ff395-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/anime-girls/anime-girl-armadillo-hoodie-animal-plushie-d2e31ff395.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/anime-girls/anime-girl-armadillo-hoodie-animal-plushie-d2e31ff395.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/anime-girls/anime-girl-armadillo-hoodie-animal-plushie-d2e31ff395-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "chibi__chibi-anime-girl-hiking__23c5623800",
+      "title": "Chibi Anime Girl Hiking",
+      "hubSlugs": [
+        "",
+        "anime-girls",
+        "chibi",
+        "easy",
+        "for-kids"
+      ],
+      "expectedPngUrlPath": "/png/chibi/chibi-anime-girl-hiking-23c5623800.png",
+      "expectedSvgUrlPath": "/svg/chibi/chibi-anime-girl-hiking-23c5623800.svg",
+      "expectedThumbnailUrlPath": "/thumbs/chibi/chibi-anime-girl-hiking-23c5623800-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/chibi/chibi-anime-girl-hiking-23c5623800.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/chibi/chibi-anime-girl-hiking-23c5623800.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/chibi/chibi-anime-girl-hiking-23c5623800-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/chibi/chibi-anime-girl-hiking-23c5623800.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/chibi/chibi-anime-girl-hiking-23c5623800.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/chibi/chibi-anime-girl-hiking-23c5623800-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "chibi__chibi-anime-girl-karate-fighting__0e15e66f5d",
+      "title": "Chibi Anime Girl Karate Fighting",
+      "hubSlugs": [
+        "",
+        "anime-girls",
+        "chibi",
+        "easy",
+        "for-kids"
+      ],
+      "expectedPngUrlPath": "/png/chibi/chibi-anime-girl-karate-fighting-0e15e66f5d.png",
+      "expectedSvgUrlPath": "/svg/chibi/chibi-anime-girl-karate-fighting-0e15e66f5d.svg",
+      "expectedThumbnailUrlPath": "/thumbs/chibi/chibi-anime-girl-karate-fighting-0e15e66f5d-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/chibi/chibi-anime-girl-karate-fighting-0e15e66f5d.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/chibi/chibi-anime-girl-karate-fighting-0e15e66f5d.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/chibi/chibi-anime-girl-karate-fighting-0e15e66f5d-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/chibi/chibi-anime-girl-karate-fighting-0e15e66f5d.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/chibi/chibi-anime-girl-karate-fighting-0e15e66f5d.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/chibi/chibi-anime-girl-karate-fighting-0e15e66f5d-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-insects-beetle__b5e0280d2d",
+      "title": "Mandala Geometry Patterns Insects Beetle",
+      "hubSlugs": [
+        "",
+        "animals",
+        "beetles",
+        "detailed-for-adults",
+        "geometric",
+        "insects",
+        "mandalas"
+      ],
+      "expectedPngUrlPath": "/png/mandala-geometry-patterns/mandala-geometry-patterns-insects-beetle-b5e0280d2d.png",
+      "expectedSvgUrlPath": "/svg/mandala-geometry-patterns/mandala-geometry-patterns-insects-beetle-b5e0280d2d.svg",
+      "expectedThumbnailUrlPath": "/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-insects-beetle-b5e0280d2d-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/mandala-geometry-patterns/mandala-geometry-patterns-insects-beetle-b5e0280d2d.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-insects-beetle-b5e0280d2d.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-insects-beetle-b5e0280d2d-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/mandala-geometry-patterns/mandala-geometry-patterns-insects-beetle-b5e0280d2d.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-insects-beetle-b5e0280d2d.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-insects-beetle-b5e0280d2d-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "anime-girls__anime-girl-summoning-jutsu-beetles__13ee413203",
+      "title": "Anime Girl Summoning Jutsu Beetles",
+      "hubSlugs": [
+        "",
+        "animals",
+        "anime-girls",
+        "beetles",
+        "insects"
+      ],
+      "expectedPngUrlPath": "/png/anime-girls/anime-girl-summoning-jutsu-beetles-13ee413203.png",
+      "expectedSvgUrlPath": "/svg/anime-girls/anime-girl-summoning-jutsu-beetles-13ee413203.svg",
+      "expectedThumbnailUrlPath": "/thumbs/anime-girls/anime-girl-summoning-jutsu-beetles-13ee413203-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-summoning-jutsu-beetles-13ee413203.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-summoning-jutsu-beetles-13ee413203.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/anime-girls/anime-girl-summoning-jutsu-beetles-13ee413203-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/anime-girls/anime-girl-summoning-jutsu-beetles-13ee413203.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/anime-girls/anime-girl-summoning-jutsu-beetles-13ee413203.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/anime-girls/anime-girl-summoning-jutsu-beetles-13ee413203-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "chibi__chibi-dodo-birds__8aec652364",
+      "title": "Chibi Dodo Birds",
+      "hubSlugs": [
+        "",
+        "animals",
+        "birds",
+        "chibi",
+        "easy",
+        "for-kids"
+      ],
+      "expectedPngUrlPath": "/png/chibi/chibi-dodo-birds-8aec652364.png",
+      "expectedSvgUrlPath": "/svg/chibi/chibi-dodo-birds-8aec652364.svg",
+      "expectedThumbnailUrlPath": "/thumbs/chibi/chibi-dodo-birds-8aec652364-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/chibi/chibi-dodo-birds-8aec652364.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/chibi/chibi-dodo-birds-8aec652364.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/chibi/chibi-dodo-birds-8aec652364-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/chibi/chibi-dodo-birds-8aec652364.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/chibi/chibi-dodo-birds-8aec652364.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/chibi/chibi-dodo-birds-8aec652364-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "plushie__plushie-kiwi-bird-family__149d70d668",
+      "title": "Plushie Kiwi Bird Family",
+      "hubSlugs": [
+        "",
+        "animals",
+        "birds",
+        "cute",
+        "easy",
+        "for-kids",
+        "plushies"
+      ],
+      "expectedPngUrlPath": "/png/plushie/plushie-kiwi-bird-family-149d70d668.png",
+      "expectedSvgUrlPath": "/svg/plushie/plushie-kiwi-bird-family-149d70d668.svg",
+      "expectedThumbnailUrlPath": "/thumbs/plushie/plushie-kiwi-bird-family-149d70d668-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/plushie/plushie-kiwi-bird-family-149d70d668.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/plushie/plushie-kiwi-bird-family-149d70d668.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/plushie/plushie-kiwi-bird-family-149d70d668-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/plushie/plushie-kiwi-bird-family-149d70d668.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/plushie/plushie-kiwi-bird-family-149d70d668.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/plushie/plushie-kiwi-bird-family-149d70d668-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "anime-girls__anime-girl-birthday-cake__a75fa3e263",
+      "title": "Anime Girl Birthday Cake",
+      "hubSlugs": [
+        "",
+        "anime-girls",
+        "birthday",
+        "food",
+        "holidays"
+      ],
+      "expectedPngUrlPath": "/png/anime-girls/anime-girl-birthday-cake-a75fa3e263.png",
+      "expectedSvgUrlPath": "/svg/anime-girls/anime-girl-birthday-cake-a75fa3e263.svg",
+      "expectedThumbnailUrlPath": "/thumbs/anime-girls/anime-girl-birthday-cake-a75fa3e263-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-birthday-cake-a75fa3e263.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-birthday-cake-a75fa3e263.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/anime-girls/anime-girl-birthday-cake-a75fa3e263-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/anime-girls/anime-girl-birthday-cake-a75fa3e263.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/anime-girls/anime-girl-birthday-cake-a75fa3e263.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/anime-girls/anime-girl-birthday-cake-a75fa3e263-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bunny-birthday-party__4a4860c7ac",
+      "title": "Anime Girl Bunny Birthday Party",
+      "hubSlugs": [
+        "",
+        "anime-girls",
+        "birthday",
+        "holidays"
+      ],
+      "expectedPngUrlPath": "/png/anime-girls/anime-girl-bunny-birthday-party-4a4860c7ac.png",
+      "expectedSvgUrlPath": "/svg/anime-girls/anime-girl-bunny-birthday-party-4a4860c7ac.svg",
+      "expectedThumbnailUrlPath": "/thumbs/anime-girls/anime-girl-bunny-birthday-party-4a4860c7ac-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-bunny-birthday-party-4a4860c7ac.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-bunny-birthday-party-4a4860c7ac.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/anime-girls/anime-girl-bunny-birthday-party-4a4860c7ac-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/anime-girls/anime-girl-bunny-birthday-party-4a4860c7ac.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/anime-girls/anime-girl-bunny-birthday-party-4a4860c7ac.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/anime-girls/anime-girl-bunny-birthday-party-4a4860c7ac-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "chibi__chibi-dungeon-adventure-bridge-over-lava__906729f5e5",
+      "title": "Chibi Dungeon Adventure Bridge Over Lava",
+      "hubSlugs": [
+        "",
+        "bridges",
+        "buildings",
+        "chibi",
+        "dungeon",
+        "easy",
+        "for-kids"
+      ],
+      "expectedPngUrlPath": "/png/chibi/chibi-dungeon-adventure-bridge-over-lava-906729f5e5.png",
+      "expectedSvgUrlPath": "/svg/chibi/chibi-dungeon-adventure-bridge-over-lava-906729f5e5.svg",
+      "expectedThumbnailUrlPath": "/thumbs/chibi/chibi-dungeon-adventure-bridge-over-lava-906729f5e5-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/chibi/chibi-dungeon-adventure-bridge-over-lava-906729f5e5.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/chibi/chibi-dungeon-adventure-bridge-over-lava-906729f5e5.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/chibi/chibi-dungeon-adventure-bridge-over-lava-906729f5e5-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/chibi/chibi-dungeon-adventure-bridge-over-lava-906729f5e5.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/chibi/chibi-dungeon-adventure-bridge-over-lava-906729f5e5.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/chibi/chibi-dungeon-adventure-bridge-over-lava-906729f5e5-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "chibi__chibi-dungeon-torch-lit-bridge__f3d6daee01",
+      "title": "Chibi Dungeon Torch Lit Bridge",
+      "hubSlugs": [
+        "",
+        "bridges",
+        "buildings",
+        "chibi",
+        "dungeon",
+        "easy",
+        "for-kids"
+      ],
+      "expectedPngUrlPath": "/png/chibi/chibi-dungeon-torch-lit-bridge-f3d6daee01.png",
+      "expectedSvgUrlPath": "/svg/chibi/chibi-dungeon-torch-lit-bridge-f3d6daee01.svg",
+      "expectedThumbnailUrlPath": "/thumbs/chibi/chibi-dungeon-torch-lit-bridge-f3d6daee01-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/chibi/chibi-dungeon-torch-lit-bridge-f3d6daee01.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/chibi/chibi-dungeon-torch-lit-bridge-f3d6daee01.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/chibi/chibi-dungeon-torch-lit-bridge-f3d6daee01-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/chibi/chibi-dungeon-torch-lit-bridge-f3d6daee01.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/chibi/chibi-dungeon-torch-lit-bridge-f3d6daee01.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/chibi/chibi-dungeon-torch-lit-bridge-f3d6daee01-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "chibi__chibi-castle__d763e81619",
+      "title": "Chibi Castle",
+      "hubSlugs": [
+        "",
+        "buildings",
+        "chibi",
+        "easy",
+        "for-kids"
+      ],
+      "expectedPngUrlPath": "/png/chibi/chibi-castle-d763e81619.png",
+      "expectedSvgUrlPath": "/svg/chibi/chibi-castle-d763e81619.svg",
+      "expectedThumbnailUrlPath": "/thumbs/chibi/chibi-castle-d763e81619-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/chibi/chibi-castle-d763e81619.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/chibi/chibi-castle-d763e81619.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/chibi/chibi-castle-d763e81619-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/chibi/chibi-castle-d763e81619.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/chibi/chibi-castle-d763e81619.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/chibi/chibi-castle-d763e81619-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "chibi__chibi-plushie-butterfly__e50cf71397",
+      "title": "Chibi Plushie Butterfly",
+      "hubSlugs": [
+        "",
+        "animals",
+        "butterflies",
+        "chibi",
+        "easy",
+        "for-kids",
+        "insects",
+        "plushies"
+      ],
+      "expectedPngUrlPath": "/png/chibi/chibi-plushie-butterfly-e50cf71397.png",
+      "expectedSvgUrlPath": "/svg/chibi/chibi-plushie-butterfly-e50cf71397.svg",
+      "expectedThumbnailUrlPath": "/thumbs/chibi/chibi-plushie-butterfly-e50cf71397-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/chibi/chibi-plushie-butterfly-e50cf71397.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/chibi/chibi-plushie-butterfly-e50cf71397.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/chibi/chibi-plushie-butterfly-e50cf71397-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/chibi/chibi-plushie-butterfly-e50cf71397.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/chibi/chibi-plushie-butterfly-e50cf71397.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/chibi/chibi-plushie-butterfly-e50cf71397-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "plushie__plushie-butterfly-family__4f50832a37",
+      "title": "Plushie Butterfly Family",
+      "hubSlugs": [
+        "",
+        "animals",
+        "butterflies",
+        "cute",
+        "easy",
+        "for-kids",
+        "insects",
+        "plushies"
+      ],
+      "expectedPngUrlPath": "/png/plushie/plushie-butterfly-family-4f50832a37.png",
+      "expectedSvgUrlPath": "/svg/plushie/plushie-butterfly-family-4f50832a37.svg",
+      "expectedThumbnailUrlPath": "/thumbs/plushie/plushie-butterfly-family-4f50832a37-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/plushie/plushie-butterfly-family-4f50832a37.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/plushie/plushie-butterfly-family-4f50832a37.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/plushie/plushie-butterfly-family-4f50832a37-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/plushie/plushie-butterfly-family-4f50832a37.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/plushie/plushie-butterfly-family-4f50832a37.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/plushie/plushie-butterfly-family-4f50832a37-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "anime-girls__anime-girl-driving-race-car-driving__07de9e75de",
+      "title": "Anime Girl Driving Race Car Driving",
+      "hubSlugs": [
+        "",
+        "anime-girls",
+        "cars",
+        "vehicles"
+      ],
+      "expectedPngUrlPath": "/png/anime-girls/anime-girl-driving-race-car-driving-07de9e75de.png",
+      "expectedSvgUrlPath": "/svg/anime-girls/anime-girl-driving-race-car-driving-07de9e75de.svg",
+      "expectedThumbnailUrlPath": "/thumbs/anime-girls/anime-girl-driving-race-car-driving-07de9e75de-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-driving-race-car-driving-07de9e75de.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-driving-race-car-driving-07de9e75de.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/anime-girls/anime-girl-driving-race-car-driving-07de9e75de-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/anime-girls/anime-girl-driving-race-car-driving-07de9e75de.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/anime-girls/anime-girl-driving-race-car-driving-07de9e75de.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/anime-girls/anime-girl-driving-race-car-driving-07de9e75de-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-emergency-police-car-driving__f10bdc1e5a",
+      "title": "Mandala Geometry Patterns Emergency Police Car Driving",
+      "hubSlugs": [
+        "",
+        "cars",
+        "detailed-for-adults",
+        "geometric",
+        "mandalas",
+        "vehicles"
+      ],
+      "expectedPngUrlPath": "/png/mandala-geometry-patterns/mandala-geometry-patterns-emergency-police-car-driving-f10bdc1e5a.png",
+      "expectedSvgUrlPath": "/svg/mandala-geometry-patterns/mandala-geometry-patterns-emergency-police-car-driving-f10bdc1e5a.svg",
+      "expectedThumbnailUrlPath": "/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-emergency-police-car-driving-f10bdc1e5a-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/mandala-geometry-patterns/mandala-geometry-patterns-emergency-police-car-driving-f10bdc1e5a.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-emergency-police-car-driving-f10bdc1e5a.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-emergency-police-car-driving-f10bdc1e5a-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/mandala-geometry-patterns/mandala-geometry-patterns-emergency-police-car-driving-f10bdc1e5a.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-emergency-police-car-driving-f10bdc1e5a.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-emergency-police-car-driving-f10bdc1e5a-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "chibi__chibi-cat__3abcbe3ef5",
+      "title": "Chibi Cat",
+      "hubSlugs": [
+        "",
+        "animals",
+        "cats",
+        "chibi",
+        "easy",
+        "for-kids"
+      ],
+      "expectedPngUrlPath": "/png/chibi/chibi-cat-3abcbe3ef5.png",
+      "expectedSvgUrlPath": "/svg/chibi/chibi-cat-3abcbe3ef5.svg",
+      "expectedThumbnailUrlPath": "/thumbs/chibi/chibi-cat-3abcbe3ef5-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/chibi/chibi-cat-3abcbe3ef5.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/chibi/chibi-cat-3abcbe3ef5.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/chibi/chibi-cat-3abcbe3ef5-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/chibi/chibi-cat-3abcbe3ef5.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/chibi/chibi-cat-3abcbe3ef5.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/chibi/chibi-cat-3abcbe3ef5-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "anime-girls__anime-girl-cat-hoodie-plushie__62ed67bd39",
+      "title": "Anime Girl Cat Hoodie Plushie",
+      "hubSlugs": [
+        "",
+        "animals",
+        "anime-girls",
+        "cats",
+        "plushies"
+      ],
+      "expectedPngUrlPath": "/png/anime-girls/anime-girl-cat-hoodie-plushie-62ed67bd39.png",
+      "expectedSvgUrlPath": "/svg/anime-girls/anime-girl-cat-hoodie-plushie-62ed67bd39.svg",
+      "expectedThumbnailUrlPath": "/thumbs/anime-girls/anime-girl-cat-hoodie-plushie-62ed67bd39-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-cat-hoodie-plushie-62ed67bd39.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-cat-hoodie-plushie-62ed67bd39.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/anime-girls/anime-girl-cat-hoodie-plushie-62ed67bd39-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/anime-girls/anime-girl-cat-hoodie-plushie-62ed67bd39.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/anime-girls/anime-girl-cat-hoodie-plushie-62ed67bd39.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/anime-girls/anime-girl-cat-hoodie-plushie-62ed67bd39-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "anime-girls__anime-girl-chibi-bear-summon__443fa88c61",
+      "title": "Anime Girl Chibi Bear Summon",
+      "hubSlugs": [
+        "",
+        "anime-girls",
+        "chibi",
+        "easy",
+        "for-kids"
+      ],
+      "expectedPngUrlPath": "/png/anime-girls/anime-girl-chibi-bear-summon-443fa88c61.png",
+      "expectedSvgUrlPath": "/svg/anime-girls/anime-girl-chibi-bear-summon-443fa88c61.svg",
+      "expectedThumbnailUrlPath": "/thumbs/anime-girls/anime-girl-chibi-bear-summon-443fa88c61-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-chibi-bear-summon-443fa88c61.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-chibi-bear-summon-443fa88c61.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/anime-girls/anime-girl-chibi-bear-summon-443fa88c61-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/anime-girls/anime-girl-chibi-bear-summon-443fa88c61.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/anime-girls/anime-girl-chibi-bear-summon-443fa88c61.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/anime-girls/anime-girl-chibi-bear-summon-443fa88c61-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "anime-girls__anime-girl-birds-duck__5c61314642",
+      "title": "Anime Girl Birds Duck",
+      "hubSlugs": [
+        "",
+        "animals",
+        "anime-girls",
+        "birds"
+      ],
+      "expectedPngUrlPath": "/png/anime-girls/anime-girl-birds-duck-5c61314642.png",
+      "expectedSvgUrlPath": "/svg/anime-girls/anime-girl-birds-duck-5c61314642.svg",
+      "expectedThumbnailUrlPath": "/thumbs/anime-girls/anime-girl-birds-duck-5c61314642-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-birds-duck-5c61314642.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-birds-duck-5c61314642.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/anime-girls/anime-girl-birds-duck-5c61314642-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/anime-girls/anime-girl-birds-duck-5c61314642.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/anime-girls/anime-girl-birds-duck-5c61314642.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/anime-girls/anime-girl-birds-duck-5c61314642-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "mandala-geometry-patterns__chatgpt-image-oct-14-2025-11-38-05-pm__ea62e476c5",
+      "title": "ChatGPT Image Oct 14, 2025, 11 38 05 PM",
+      "hubSlugs": [
+        "",
+        "detailed-for-adults",
+        "geometric",
+        "mandalas"
+      ],
+      "expectedPngUrlPath": "/png/mandala-geometry-patterns/chatgpt-image-oct-14-2025-11-38-05-pm-ea62e476c5.png",
+      "expectedSvgUrlPath": "/svg/mandala-geometry-patterns/chatgpt-image-oct-14-2025-11-38-05-pm-ea62e476c5.svg",
+      "expectedThumbnailUrlPath": "/thumbs/mandala-geometry-patterns/chatgpt-image-oct-14-2025-11-38-05-pm-ea62e476c5-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/mandala-geometry-patterns/chatgpt-image-oct-14-2025-11-38-05-pm-ea62e476c5.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/mandala-geometry-patterns/chatgpt-image-oct-14-2025-11-38-05-pm-ea62e476c5.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/mandala-geometry-patterns/chatgpt-image-oct-14-2025-11-38-05-pm-ea62e476c5-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/mandala-geometry-patterns/chatgpt-image-oct-14-2025-11-38-05-pm-ea62e476c5.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/mandala-geometry-patterns/chatgpt-image-oct-14-2025-11-38-05-pm-ea62e476c5.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/mandala-geometry-patterns/chatgpt-image-oct-14-2025-11-38-05-pm-ea62e476c5-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "anime-girls__anime-girl-centaur-standoff__d462b8fcc6",
+      "title": "Anime Girl Centaur Standoff",
+      "hubSlugs": [
+        "",
+        "anime-girls",
+        "fantasy",
+        "fantasy-creatures"
+      ],
+      "expectedPngUrlPath": "/png/anime-girls/anime-girl-centaur-standoff-d462b8fcc6.png",
+      "expectedSvgUrlPath": "/svg/anime-girls/anime-girl-centaur-standoff-d462b8fcc6.svg",
+      "expectedThumbnailUrlPath": "/thumbs/anime-girls/anime-girl-centaur-standoff-d462b8fcc6-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-centaur-standoff-d462b8fcc6.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-centaur-standoff-d462b8fcc6.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/anime-girls/anime-girl-centaur-standoff-d462b8fcc6-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/anime-girls/anime-girl-centaur-standoff-d462b8fcc6.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/anime-girls/anime-girl-centaur-standoff-d462b8fcc6.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/anime-girls/anime-girl-centaur-standoff-d462b8fcc6-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "anime-girls__anime-girl-ankylosaurus-hoodie-plushie__c819919e77",
+      "title": "Anime Girl Ankylosaurus Hoodie Plushie",
+      "hubSlugs": [
+        "",
+        "anime-girls",
+        "plushies"
+      ],
+      "expectedPngUrlPath": "/png/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-c819919e77.png",
+      "expectedSvgUrlPath": "/svg/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-c819919e77.svg",
+      "expectedThumbnailUrlPath": "/thumbs/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-c819919e77-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-c819919e77.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-c819919e77.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-c819919e77-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-c819919e77.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-c819919e77.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-c819919e77-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "indoor-plants__indoor-plants-dieffenbachia-dumb-cane__0b9432781b",
+      "title": "Indoor Plants Dieffenbachia Dumb Cane",
+      "hubSlugs": [
+        "",
+        "indoor-plants",
+        "plants"
+      ],
+      "expectedPngUrlPath": "/png/indoor-plants/indoor-plants-dieffenbachia-dumb-cane-0b9432781b.png",
+      "expectedSvgUrlPath": "/svg/indoor-plants/indoor-plants-dieffenbachia-dumb-cane-0b9432781b.svg",
+      "expectedThumbnailUrlPath": "/thumbs/indoor-plants/indoor-plants-dieffenbachia-dumb-cane-0b9432781b-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/indoor-plants/indoor-plants-dieffenbachia-dumb-cane-0b9432781b.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/indoor-plants/indoor-plants-dieffenbachia-dumb-cane-0b9432781b.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/indoor-plants/indoor-plants-dieffenbachia-dumb-cane-0b9432781b-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/indoor-plants/indoor-plants-dieffenbachia-dumb-cane-0b9432781b.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/indoor-plants/indoor-plants-dieffenbachia-dumb-cane-0b9432781b.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/indoor-plants/indoor-plants-dieffenbachia-dumb-cane-0b9432781b-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "birds__birds-ostrich__6f2ef75630",
+      "title": "Birds Ostrich",
+      "hubSlugs": [
+        "",
+        "animals",
+        "birds"
+      ],
+      "expectedPngUrlPath": "/png/birds/birds-ostrich-6f2ef75630.png",
+      "expectedSvgUrlPath": "/svg/birds/birds-ostrich-6f2ef75630.svg",
+      "expectedThumbnailUrlPath": "/thumbs/birds/birds-ostrich-6f2ef75630-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/birds/birds-ostrich-6f2ef75630.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/birds/birds-ostrich-6f2ef75630.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/birds/birds-ostrich-6f2ef75630-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/birds/birds-ostrich-6f2ef75630.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/birds/birds-ostrich-6f2ef75630.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/birds/birds-ostrich-6f2ef75630-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-sushi-hotate-scallop__89da046633",
+      "title": "Mandala Geometry Patterns Sushi Hotate Scallop",
+      "hubSlugs": [
+        "",
+        "detailed-for-adults",
+        "food",
+        "geometric",
+        "mandalas"
+      ],
+      "expectedPngUrlPath": "/png/mandala-geometry-patterns/mandala-geometry-patterns-sushi-hotate-scallop-89da046633.png",
+      "expectedSvgUrlPath": "/svg/mandala-geometry-patterns/mandala-geometry-patterns-sushi-hotate-scallop-89da046633.svg",
+      "expectedThumbnailUrlPath": "/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-sushi-hotate-scallop-89da046633-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/mandala-geometry-patterns/mandala-geometry-patterns-sushi-hotate-scallop-89da046633.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-sushi-hotate-scallop-89da046633.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-sushi-hotate-scallop-89da046633-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/mandala-geometry-patterns/mandala-geometry-patterns-sushi-hotate-scallop-89da046633.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-sushi-hotate-scallop-89da046633.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-sushi-hotate-scallop-89da046633-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "plushie__plushie-alligator__7a469a9dce",
+      "title": "Plushie Alligator",
+      "hubSlugs": [
+        "",
+        "cute",
+        "easy",
+        "for-kids",
+        "plushies"
+      ],
+      "expectedPngUrlPath": "/png/plushie/plushie-alligator-7a469a9dce.png",
+      "expectedSvgUrlPath": "/svg/plushie/plushie-alligator-7a469a9dce.svg",
+      "expectedThumbnailUrlPath": "/thumbs/plushie/plushie-alligator-7a469a9dce-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/plushie/plushie-alligator-7a469a9dce.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/plushie/plushie-alligator-7a469a9dce.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/plushie/plushie-alligator-7a469a9dce-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/plushie/plushie-alligator-7a469a9dce.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/plushie/plushie-alligator-7a469a9dce.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/plushie/plushie-alligator-7a469a9dce-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "chibi__chibi-plushie-gazelle__7f25487674",
+      "title": "Chibi Plushie Gazelle",
+      "hubSlugs": [
+        "",
+        "chibi",
+        "easy",
+        "for-kids",
+        "plushies"
+      ],
+      "expectedPngUrlPath": "/png/chibi/chibi-plushie-gazelle-7f25487674.png",
+      "expectedSvgUrlPath": "/svg/chibi/chibi-plushie-gazelle-7f25487674.svg",
+      "expectedThumbnailUrlPath": "/thumbs/chibi/chibi-plushie-gazelle-7f25487674-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/chibi/chibi-plushie-gazelle-7f25487674.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/chibi/chibi-plushie-gazelle-7f25487674.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/chibi/chibi-plushie-gazelle-7f25487674-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/chibi/chibi-plushie-gazelle-7f25487674.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/chibi/chibi-plushie-gazelle-7f25487674.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/chibi/chibi-plushie-gazelle-7f25487674-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-bakery-candy-cane-cookies__b08ddaca23",
+      "title": "Mandala Geometry Patterns Bakery Candy Cane Cookies",
+      "hubSlugs": [
+        "",
+        "detailed-for-adults",
+        "food",
+        "geometric",
+        "mandalas"
+      ],
+      "expectedPngUrlPath": "/png/mandala-geometry-patterns/mandala-geometry-patterns-bakery-candy-cane-cookies-b08ddaca23.png",
+      "expectedSvgUrlPath": "/svg/mandala-geometry-patterns/mandala-geometry-patterns-bakery-candy-cane-cookies-b08ddaca23.svg",
+      "expectedThumbnailUrlPath": "/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-bakery-candy-cane-cookies-b08ddaca23-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/mandala-geometry-patterns/mandala-geometry-patterns-bakery-candy-cane-cookies-b08ddaca23.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-bakery-candy-cane-cookies-b08ddaca23.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-bakery-candy-cane-cookies-b08ddaca23-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/mandala-geometry-patterns/mandala-geometry-patterns-bakery-candy-cane-cookies-b08ddaca23.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-bakery-candy-cane-cookies-b08ddaca23.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-bakery-candy-cane-cookies-b08ddaca23-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "fantasy__fantasy-paladin-angel-guard__df0da49424",
+      "title": "Fantasy Paladin Angel Guard",
+      "hubSlugs": [
+        "",
+        "fantasy"
+      ],
+      "expectedPngUrlPath": "/png/fantasy/fantasy-paladin-angel-guard-df0da49424.png",
+      "expectedSvgUrlPath": "/svg/fantasy/fantasy-paladin-angel-guard-df0da49424.svg",
+      "expectedThumbnailUrlPath": "/thumbs/fantasy/fantasy-paladin-angel-guard-df0da49424-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/fantasy/fantasy-paladin-angel-guard-df0da49424.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/fantasy/fantasy-paladin-angel-guard-df0da49424.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/fantasy/fantasy-paladin-angel-guard-df0da49424-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/fantasy/fantasy-paladin-angel-guard-df0da49424.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/fantasy/fantasy-paladin-angel-guard-df0da49424.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/fantasy/fantasy-paladin-angel-guard-df0da49424-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "chibi__chibi-plushie-wolf__dd5081ce9f",
+      "title": "Chibi Plushie Wolf",
+      "hubSlugs": [
+        "",
+        "chibi",
+        "easy",
+        "for-kids",
+        "plushies"
+      ],
+      "expectedPngUrlPath": "/png/chibi/chibi-plushie-wolf-dd5081ce9f.png",
+      "expectedSvgUrlPath": "/svg/chibi/chibi-plushie-wolf-dd5081ce9f.svg",
+      "expectedThumbnailUrlPath": "/thumbs/chibi/chibi-plushie-wolf-dd5081ce9f-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/chibi/chibi-plushie-wolf-dd5081ce9f.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/chibi/chibi-plushie-wolf-dd5081ce9f.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/chibi/chibi-plushie-wolf-dd5081ce9f-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/chibi/chibi-plushie-wolf-dd5081ce9f.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/chibi/chibi-plushie-wolf-dd5081ce9f.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/chibi/chibi-plushie-wolf-dd5081ce9f-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "fantasy__fantasy-bard-forest-melody__0a0212ec64",
+      "title": "Fantasy Bard Forest Melody",
+      "hubSlugs": [
+        "",
+        "fantasy",
+        "forest"
+      ],
+      "expectedPngUrlPath": "/png/fantasy/fantasy-bard-forest-melody-0a0212ec64.png",
+      "expectedSvgUrlPath": "/svg/fantasy/fantasy-bard-forest-melody-0a0212ec64.svg",
+      "expectedThumbnailUrlPath": "/thumbs/fantasy/fantasy-bard-forest-melody-0a0212ec64-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/fantasy/fantasy-bard-forest-melody-0a0212ec64.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/fantasy/fantasy-bard-forest-melody-0a0212ec64.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/fantasy/fantasy-bard-forest-melody-0a0212ec64-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/fantasy/fantasy-bard-forest-melody-0a0212ec64.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/fantasy/fantasy-bard-forest-melody-0a0212ec64.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/fantasy/fantasy-bard-forest-melody-0a0212ec64-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-honeybee__373f3022f9",
+      "title": "Mandala Geometry Patterns Honeybee",
+      "hubSlugs": [
+        "",
+        "detailed-for-adults",
+        "geometric",
+        "mandalas"
+      ],
+      "expectedPngUrlPath": "/png/mandala-geometry-patterns/mandala-geometry-patterns-honeybee-373f3022f9.png",
+      "expectedSvgUrlPath": "/svg/mandala-geometry-patterns/mandala-geometry-patterns-honeybee-373f3022f9.svg",
+      "expectedThumbnailUrlPath": "/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-honeybee-373f3022f9-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/mandala-geometry-patterns/mandala-geometry-patterns-honeybee-373f3022f9.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-honeybee-373f3022f9.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-honeybee-373f3022f9-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/mandala-geometry-patterns/mandala-geometry-patterns-honeybee-373f3022f9.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-honeybee-373f3022f9.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-honeybee-373f3022f9-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "mythology__fantasy-mythology-dragons-obsidian-dragon__497192e27e",
+      "title": "Fantasy Mythology Dragons Obsidian Dragon",
+      "hubSlugs": [
+        "",
+        "fantasy",
+        "fantasy-creatures",
+        "mythology"
+      ],
+      "expectedPngUrlPath": "/png/mythology/fantasy-mythology-dragons-obsidian-dragon-497192e27e.png",
+      "expectedSvgUrlPath": "/svg/mythology/fantasy-mythology-dragons-obsidian-dragon-497192e27e.svg",
+      "expectedThumbnailUrlPath": "/thumbs/mythology/fantasy-mythology-dragons-obsidian-dragon-497192e27e-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/mythology/fantasy-mythology-dragons-obsidian-dragon-497192e27e.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/mythology/fantasy-mythology-dragons-obsidian-dragon-497192e27e.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/mythology/fantasy-mythology-dragons-obsidian-dragon-497192e27e-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/mythology/fantasy-mythology-dragons-obsidian-dragon-497192e27e.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/mythology/fantasy-mythology-dragons-obsidian-dragon-497192e27e.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/mythology/fantasy-mythology-dragons-obsidian-dragon-497192e27e-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-vintage-steam-train-through__0d8ed0a223",
+      "title": "Mandala Geometry Patterns Trains Locomotives Vintage Steam Train Through Mountains",
+      "hubSlugs": [
+        "",
+        "detailed-for-adults",
+        "geometric",
+        "mandalas",
+        "trains",
+        "vehicles"
+      ],
+      "expectedPngUrlPath": "/png/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-vintage-steam-train-through-0d8ed0a223.png",
+      "expectedSvgUrlPath": "/svg/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-vintage-steam-train-through-0d8ed0a223.svg",
+      "expectedThumbnailUrlPath": "/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-vintage-steam-train-through-0d8ed0a223-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-vintage-steam-train-through-0d8ed0a223.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-vintage-steam-train-through-0d8ed0a223.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-vintage-steam-train-through-0d8ed0a223-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-vintage-steam-train-through-0d8ed0a223.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-vintage-steam-train-through-0d8ed0a223.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-vintage-steam-train-through-0d8ed0a223-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "chibi__chibi-dungeon-secret-stone-door__3133159983",
+      "title": "Chibi Dungeon Secret Stone Door",
+      "hubSlugs": [
+        "",
+        "chibi",
+        "dungeon",
+        "easy",
+        "for-kids"
+      ],
+      "expectedPngUrlPath": "/png/chibi/chibi-dungeon-secret-stone-door-3133159983.png",
+      "expectedSvgUrlPath": "/svg/chibi/chibi-dungeon-secret-stone-door-3133159983.svg",
+      "expectedThumbnailUrlPath": "/thumbs/chibi/chibi-dungeon-secret-stone-door-3133159983-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/chibi/chibi-dungeon-secret-stone-door-3133159983.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/chibi/chibi-dungeon-secret-stone-door-3133159983.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/chibi/chibi-dungeon-secret-stone-door-3133159983-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/chibi/chibi-dungeon-secret-stone-door-3133159983.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/chibi/chibi-dungeon-secret-stone-door-3133159983.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/chibi/chibi-dungeon-secret-stone-door-3133159983-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "anime-girls__anime-girl-studying-with-plushie-tapir__bfb67083ed",
+      "title": "Anime Girl Studying With Plushie Tapir",
+      "hubSlugs": [
+        "",
+        "anime-girls",
+        "plushies"
+      ],
+      "expectedPngUrlPath": "/png/anime-girls/anime-girl-studying-with-plushie-tapir-bfb67083ed.png",
+      "expectedSvgUrlPath": "/svg/anime-girls/anime-girl-studying-with-plushie-tapir-bfb67083ed.svg",
+      "expectedThumbnailUrlPath": "/thumbs/anime-girls/anime-girl-studying-with-plushie-tapir-bfb67083ed-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-studying-with-plushie-tapir-bfb67083ed.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-studying-with-plushie-tapir-bfb67083ed.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/anime-girls/anime-girl-studying-with-plushie-tapir-bfb67083ed-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/anime-girls/anime-girl-studying-with-plushie-tapir-bfb67083ed.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/anime-girls/anime-girl-studying-with-plushie-tapir-bfb67083ed.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/anime-girls/anime-girl-studying-with-plushie-tapir-bfb67083ed-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "animals-playing-cards__animals-hippos__82dc1fb042",
+      "title": "Animals Hippos",
+      "hubSlugs": [
+        "",
+        "animals",
+        "playing-cards"
+      ],
+      "expectedPngUrlPath": "/png/animals-playing-cards/animals-hippos-82dc1fb042.png",
+      "expectedSvgUrlPath": "/svg/animals-playing-cards/animals-hippos-82dc1fb042.svg",
+      "expectedThumbnailUrlPath": "/thumbs/animals-playing-cards/animals-hippos-82dc1fb042-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/animals-playing-cards/animals-hippos-82dc1fb042.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/animals-hippos-82dc1fb042.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/animals-playing-cards/animals-hippos-82dc1fb042-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/animals-playing-cards/animals-hippos-82dc1fb042.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/animals-playing-cards/animals-hippos-82dc1fb042.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/animals-playing-cards/animals-hippos-82dc1fb042-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "fantasy__fantasy-tree-spirit-awakening__9eeb879ced",
+      "title": "Fantasy Tree Spirit Awakening",
+      "hubSlugs": [
+        "",
+        "fantasy",
+        "plants",
+        "trees"
+      ],
+      "expectedPngUrlPath": "/png/fantasy/fantasy-tree-spirit-awakening-9eeb879ced.png",
+      "expectedSvgUrlPath": "/svg/fantasy/fantasy-tree-spirit-awakening-9eeb879ced.svg",
+      "expectedThumbnailUrlPath": "/thumbs/fantasy/fantasy-tree-spirit-awakening-9eeb879ced-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/fantasy/fantasy-tree-spirit-awakening-9eeb879ced.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/fantasy/fantasy-tree-spirit-awakening-9eeb879ced.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/fantasy/fantasy-tree-spirit-awakening-9eeb879ced-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/fantasy/fantasy-tree-spirit-awakening-9eeb879ced.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/fantasy/fantasy-tree-spirit-awakening-9eeb879ced.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/fantasy/fantasy-tree-spirit-awakening-9eeb879ced-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "christmas__holiday-christmas-polar-bears-wrapping-gifts-coloring-page__4adc12f31d",
+      "title": "Holiday Christmas Polar Bears Wrapping Gifts Coloring Page",
+      "hubSlugs": [
+        "",
+        "christmas",
+        "holidays"
+      ],
+      "expectedPngUrlPath": "/png/christmas/holiday-christmas-polar-bears-wrapping-gifts-coloring-page-4adc12f31d.png",
+      "expectedSvgUrlPath": "/svg/christmas/holiday-christmas-polar-bears-wrapping-gifts-coloring-page-4adc12f31d.svg",
+      "expectedThumbnailUrlPath": "/thumbs/christmas/holiday-christmas-polar-bears-wrapping-gifts-coloring-page-4adc12f31d-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/christmas/holiday-christmas-polar-bears-wrapping-gifts-coloring-page-4adc12f31d.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/christmas/holiday-christmas-polar-bears-wrapping-gifts-coloring-page-4adc12f31d.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/christmas/holiday-christmas-polar-bears-wrapping-gifts-coloring-page-4adc12f31d-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/christmas/holiday-christmas-polar-bears-wrapping-gifts-coloring-page-4adc12f31d.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/christmas/holiday-christmas-polar-bears-wrapping-gifts-coloring-page-4adc12f31d.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/christmas/holiday-christmas-polar-bears-wrapping-gifts-coloring-page-4adc12f31d-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-geckoa__0d2b755955",
+      "title": "Mandala Geometry Patterns Plushie Geckoa",
+      "hubSlugs": [
+        "",
+        "detailed-for-adults",
+        "geometric",
+        "mandalas",
+        "plushies"
+      ],
+      "expectedPngUrlPath": "/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-geckoa-0d2b755955.png",
+      "expectedSvgUrlPath": "/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-geckoa-0d2b755955.svg",
+      "expectedThumbnailUrlPath": "/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-geckoa-0d2b755955-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-geckoa-0d2b755955.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-geckoa-0d2b755955.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-geckoa-0d2b755955-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-geckoa-0d2b755955.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-geckoa-0d2b755955.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-geckoa-0d2b755955-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    },
+    {
+      "assetId": "anime-girls__anime-girl-tentacle-yoga-in-ocean-smiling__dc79a75b99",
+      "title": "Anime Girl Tentacle Yoga In Ocean Smiling",
+      "hubSlugs": [
+        "",
+        "anime-girls",
+        "ocean"
+      ],
+      "expectedPngUrlPath": "/png/anime-girls/anime-girl-tentacle-yoga-in-ocean-smiling-dc79a75b99.png",
+      "expectedSvgUrlPath": "/svg/anime-girls/anime-girl-tentacle-yoga-in-ocean-smiling-dc79a75b99.svg",
+      "expectedThumbnailUrlPath": "/thumbs/anime-girls/anime-girl-tentacle-yoga-in-ocean-smiling-dc79a75b99-thumb.png",
+      "expectedLocalPngFilesystemPath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-tentacle-yoga-in-ocean-smiling-dc79a75b99.png",
+      "expectedLocalSvgFilesystemPath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-tentacle-yoga-in-ocean-smiling-dc79a75b99.svg",
+      "expectedLocalThumbnailFilesystemPath": "pipeline/r2-upload/coloring-pages/thumbs/anime-girls/anime-girl-tentacle-yoga-in-ocean-smiling-dc79a75b99-thumb.png",
+      "expectedLocalHttpPngUrl": "http://127.0.0.1:4175/coloring-pages/png/anime-girls/anime-girl-tentacle-yoga-in-ocean-smiling-dc79a75b99.png",
+      "expectedLocalHttpSvgUrl": "http://127.0.0.1:4175/coloring-pages/svg/anime-girls/anime-girl-tentacle-yoga-in-ocean-smiling-dc79a75b99.svg",
+      "expectedLocalHttpThumbnailUrl": "http://127.0.0.1:4175/coloring-pages/thumbs/anime-girls/anime-girl-tentacle-yoga-in-ocean-smiling-dc79a75b99-thumb.png",
+      "expectedStatusIfMediaServerRunning": 200,
+      "filesExist": {
+        "pngPreview": true,
+        "svg": true,
+        "thumbnail": true
+      }
+    }
+  ]
+}

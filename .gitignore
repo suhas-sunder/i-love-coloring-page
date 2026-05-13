@@ -2,14 +2,33 @@
 images/
 ilovesvg/
 
+# Next.js and package manager outputs
+node_modules/
+.next/
+out/
+dist/
+.playwright-cli/
+*.tsbuildinfo
+
+# Local environment values
+.env
+.env*.local
+.env.r2-upload
+.env.r2-upload.local
+
 # Generated image and review outputs stay local or CDN-backed
 pipeline/samples/**
 pipeline/bakeoffs/**
 pipeline/review/**
-pipeline/production/assets/**
-pipeline/production/thumbs/**
+pipeline/r2-upload-test/**
+pipeline/r2-upload-test-svg-webp/**
+pipeline/r2-upload/**
+pipeline/r2-upload-clean/**
+pipeline/r2-upload-optimized/**
+pipeline/production/**
 
 # Keep production data manifests commit-eligible
+!pipeline/production/
 !pipeline/production/data/
 !pipeline/production/data/**
 

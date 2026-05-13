@@ -1,0 +1,22 @@
+{
+  "generatedAt": "2026-05-13T03:28:11.261Z",
+  "runId": "round-5n-owner-decision",
+  "source": "Owner instruction in Round 5N prompt",
+  "excludeManualReviewFromFirstUpload": true,
+  "approveAllReadyRecords": true,
+  "approveSafeAutoCandidates": false,
+  "includeManualReviewRecords": false,
+  "manualReviewDecision": "defer",
+  "totalReadyRecordsExpected": 6352,
+  "totalDeferredManualReviewExpected": 205,
+  "effects": {
+    "deletesDeferredAssets": false,
+    "preventsFutureUploadOfDeferredAssets": false,
+    "switchesRuntimePaths": false,
+    "uploadsAssets": false
+  },
+  "notes": [
+    "Deferred manual-review assets remain in the source manifests and can be handled in a later review/upload round.",
+    "The first clean upload bundle is lower-risk because it contains ready records only."
+  ]
+}

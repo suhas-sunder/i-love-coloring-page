@@ -1,0 +1,28 @@
+{
+  "generatedAt": "2026-05-13T19:14:36.979Z",
+  "runId": "local-preview-bug-context-check",
+  "summary": {
+    "correctRepository": true,
+    "repoRoot": "D:/PROJECTS-and-WORK/work-projects/all_projects/i-love-coloring-page",
+    "branch": "version-4",
+    "branchExpected": true,
+    "runtimeSwitchCommitExists": true,
+    "appApiRoutePresent": false,
+    "staticExportConfigured": true,
+    "runtimeGeneratedDataExists": true,
+    "runtimeAvailableCount": 6352,
+    "runtimeDeferredCount": 205,
+    "siteUrlDefaultPresent": true,
+    "assetBaseUrlDefaultPresent": true,
+    "contactEmailDefaultPresent": true,
+    "publicContainsGeneratedProductionMedia": false,
+    "imagesStatusClean": true,
+    "ilovesvgStatusClean": true,
+    "svgUserDownloadExposed": false,
+    "publicDownloadsPngJpgWebp": true,
+    "liveAdSenseCodePresent": false,
+    "imageSitemapPresent": false,
+    "ogImageGenerationPresent": false,
+    "browserDownloadFormats": true
+  }
+}

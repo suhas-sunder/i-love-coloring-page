@@ -1,0 +1,62 @@
+{
+  "generatedAt": "2026-05-11T03:45:14.152Z",
+  "runId": "round-4r-ad-placeholder-visuals",
+  "summary": {
+    "auditedComponents": [
+      "AdSlot",
+      "AdRail"
+    ],
+    "labelText": "Advertisement",
+    "hiddenByDefault": true,
+    "enabledByEnvFlag": "NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS=1",
+    "buildTimeFlagRead": true,
+    "tooUglyBefore": true,
+    "tooSubtleBefore": false,
+    "tooNoisyBefore": true,
+    "tooContentLikeBefore": true,
+    "noisyAccentBefore": true,
+    "mimickedImageCardsBefore": false,
+    "visualConflictWithDesignSystemBefore": true,
+    "consistentDimensionsBefore": true,
+    "preservesSpacingWhenEnabled": true,
+    "disappearsWithoutLayoutGapsWhenDisabled": true,
+    "currentUsesApprovedTokensOnly": true,
+    "currentGradientsPresent": false,
+    "currentBoxShadowsPresent": false,
+    "currentDecorativeBordersOrOutlinesPresent": false,
+    "currentFakeCreativePresent": false,
+    "liveAdCodePresent": false,
+    "publisherOrClientIdsPresent": false,
+    "externalAdRequestsAdded": false
+  },
+  "auditedAreas": [
+    "header/banner slot appearance",
+    "inline slot appearance",
+    "left and right rail appearance",
+    "small-screen banner appearance",
+    "label styling",
+    "approved token usage",
+    "forbidden CSS effects",
+    "hidden and enabled behavior"
+  ],
+  "findings": [
+    {
+      "id": "round-4q-coral-accent",
+      "severity": "medium",
+      "status": "fixed",
+      "detail": "Round 4Q used a small coral accent in each placeholder. It made the QA marker more visible, but it drew unnecessary attention for an ad well."
+    },
+    {
+      "id": "round-4q-secondary-copy",
+      "severity": "medium",
+      "status": "fixed",
+      "detail": "Round 4Q displayed secondary helper text inside the placeholder. That made the ad shell feel closer to a content module than a quiet reserved ad area."
+    },
+    {
+      "id": "round-4q-strong-plum-surface",
+      "severity": "low",
+      "status": "fixed",
+      "detail": "The soft plum surface was visible but more promotional than necessary. Round 4R switches to the approved paper-soft token for a quieter well."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "generatedAt": "2026-05-13T19:14:36.979Z",
+  "runId": "local-preview-runtime-data-audit",
+  "animalsAlligator": {
+    "assetId": "animals__animals-alligator__4feec8505a",
+    "title": "Animals Alligator",
+    "altText": "Animals Alligator coloring page",
+    "categorySlug": "animals",
+    "filenameSlug": "animals-alligator",
+    "assetSubpaths": {
+      "svg": "svg/animals/animals-alligator-4feec8505a.svg",
+      "pngPreview": null,
+      "webpPreview": "webp/animals/animals-alligator-4feec8505a.webp",
+      "thumbnail": null
+    },
+    "dimensions": {
+      "source": {
+        "width": 1024,
+        "height": 1536
+      },
+      "svg": {
+        "width": 800,
+        "height": 1200,
+        "viewBox": "0 0 800 1200"
+      },
+      "pngPreview": null,
+      "thumbnail": null
+    },
+    "downloadAvailable": true,
+    "printAvailable": true,
+    "indexablePerImageRoute": false,
+    "warningFlags": [
+      "soft_warning_category_high_value_spot_check"
+    ],
+    "warningMetadataPolicy": "internal_metadata_only",
+    "runtimeAssetStatus": "uploaded_clean_svg_webp"
+  },
+  "summary": {
+    "availableRecords": 6352,
+    "deferredRecords": 205,
+    "deferredRecordsHiddenFromAvailable": true,
+    "deferredRecordsHiddenFromHubItems": true,
+    "runtimeAvailableItemsUsed": true,
+    "runtimeAssetPathsUsedForTrace": true,
+    "imageCardReceivesWebpPreviewUrl": true,
+    "imageCardReceivesInternalSvgUrl": true,
+    "primaryPreviewUsesWebpFirst": true,
+    "assetResolverHasPublicDefault": true,
+    "noDuplicatePrefixInRuntimePaths": true,
+    "noLocalhostInRuntimePaths": true,
+    "noR2DevInRuntimePaths": true,
+    "assetImageHasErrorFallback": true,
+    "svgUserDownloadAbsent": true
+  }
+}

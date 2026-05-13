@@ -1,0 +1,327 @@
+{
+  "generatedAt": "2026-05-11T03:14:00.146Z",
+  "runId": "round-4q-nav-ad-visibility",
+  "summary": {
+    "pageTypes": [
+      "home",
+      "galleryLanding",
+      "hubPage"
+    ],
+    "allSlotIdsUnique": true,
+    "hiddenByDefault": true,
+    "liveAdCodePresent": false,
+    "recommendedUnitCount": 11,
+    "futureAdUnitNames": [
+      "ilcp-coloring-pages-header-banner",
+      "ilcp-coloring-pages-inline-after-featured",
+      "ilcp-coloring-pages-inline-lower",
+      "ilcp-home-header-banner",
+      "ilcp-home-inline-after-hero",
+      "ilcp-home-inline-lower",
+      "ilcp-hub-header-banner",
+      "ilcp-hub-inline-after-gallery",
+      "ilcp-hub-inline-lower",
+      "ilcp-rail-left-desktop",
+      "ilcp-rail-right-desktop"
+    ],
+    "reusableUnits": [
+      "ilcp-rail-left-desktop",
+      "ilcp-rail-right-desktop"
+    ],
+    "uniquePerPageTypeUnits": [
+      "ilcp-coloring-pages-header-banner",
+      "ilcp-coloring-pages-inline-after-featured",
+      "ilcp-coloring-pages-inline-lower",
+      "ilcp-home-header-banner",
+      "ilcp-home-inline-after-hero",
+      "ilcp-home-inline-lower",
+      "ilcp-hub-header-banner",
+      "ilcp-hub-inline-after-gallery",
+      "ilcp-hub-inline-lower"
+    ]
+  },
+  "countsByPageType": {
+    "home": {
+      "desktop": 3,
+      "wideDesktop": 5,
+      "tablet": 3,
+      "mobile": 3
+    },
+    "galleryLanding": {
+      "desktop": 3,
+      "wideDesktop": 5,
+      "tablet": 3,
+      "mobile": 3
+    },
+    "hubPage": {
+      "desktop": 3,
+      "wideDesktop": 5,
+      "tablet": 3,
+      "mobile": 3
+    }
+  },
+  "pages": [
+    {
+      "pageType": "home",
+      "totalPlaceholders": 5,
+      "visibleCounts": {
+        "desktop": 3,
+        "wideDesktop": 5,
+        "tablet": 3,
+        "mobile": 3
+      },
+      "allSlotIdsUniqueOnPage": true,
+      "slots": [
+        {
+          "slotId": "home-header-banner",
+          "slotName": "Homepage header banner",
+          "placement": "below header before homepage hero",
+          "desktop": "visible below nav",
+          "wideDesktop": "visible below nav",
+          "tablet": "visible below header",
+          "mobile": "visible below header with reduced height",
+          "hiddenByDefault": true,
+          "recommendedAdSenseUnitType": "responsive display ad",
+          "recommendedSizeBehavior": "responsive banner",
+          "futureAdUnitName": "ilcp-home-header-banner",
+          "accidentalClickSeparation": "Separated from navigation, menus, gallery cards, and print or download controls."
+        },
+        {
+          "slotId": "rail-left-desktop",
+          "slotName": "Left desktop rail",
+          "placement": "outside left edge of content with safe gap",
+          "desktop": "hidden unless the viewport reaches the wide-desktop rail breakpoint",
+          "wideDesktop": "visible outside the content column with a 48px safe gap",
+          "tablet": "hidden",
+          "mobile": "hidden",
+          "hiddenByDefault": true,
+          "recommendedAdSenseUnitType": "manual responsive/fixed side rail or Google Auto ads side rail later",
+          "recommendedSizeBehavior": "wide desktop rail only",
+          "futureAdUnitName": "ilcp-rail-left-desktop",
+          "accidentalClickSeparation": "Separated from navigation, menus, gallery cards, and print or download controls."
+        },
+        {
+          "slotId": "rail-right-desktop",
+          "slotName": "Right desktop rail",
+          "placement": "outside right edge of content with safe gap",
+          "desktop": "hidden unless the viewport reaches the wide-desktop rail breakpoint",
+          "wideDesktop": "visible outside the content column with a 48px safe gap",
+          "tablet": "hidden",
+          "mobile": "hidden",
+          "hiddenByDefault": true,
+          "recommendedAdSenseUnitType": "manual responsive/fixed side rail or Google Auto ads side rail later",
+          "recommendedSizeBehavior": "wide desktop rail only",
+          "futureAdUnitName": "ilcp-rail-right-desktop",
+          "accidentalClickSeparation": "Separated from navigation, menus, gallery cards, and print or download controls."
+        },
+        {
+          "slotId": "home-after-hero",
+          "slotName": "Homepage inline after hero",
+          "placement": "after hero and preview content",
+          "desktop": "visible after meaningful hero content",
+          "wideDesktop": "visible after meaningful hero content",
+          "tablet": "visible after meaningful hero content",
+          "mobile": "visible after meaningful hero content",
+          "hiddenByDefault": true,
+          "recommendedAdSenseUnitType": "responsive display ad",
+          "recommendedSizeBehavior": "fluid responsive inline",
+          "futureAdUnitName": "ilcp-home-inline-after-hero",
+          "accidentalClickSeparation": "Separated from navigation, menus, gallery cards, and print or download controls."
+        },
+        {
+          "slotId": "home-lower-content",
+          "slotName": "Homepage lower inline",
+          "placement": "after collection links",
+          "desktop": "visible lower in content",
+          "wideDesktop": "visible lower in content",
+          "tablet": "visible lower in content",
+          "mobile": "visible lower in content",
+          "hiddenByDefault": true,
+          "recommendedAdSenseUnitType": "responsive display ad",
+          "recommendedSizeBehavior": "fluid responsive inline",
+          "futureAdUnitName": "ilcp-home-inline-lower",
+          "accidentalClickSeparation": "Separated from navigation, menus, gallery cards, and print or download controls."
+        }
+      ]
+    },
+    {
+      "pageType": "galleryLanding",
+      "totalPlaceholders": 5,
+      "visibleCounts": {
+        "desktop": 3,
+        "wideDesktop": 5,
+        "tablet": 3,
+        "mobile": 3
+      },
+      "allSlotIdsUniqueOnPage": true,
+      "slots": [
+        {
+          "slotId": "coloring-pages-header-banner",
+          "slotName": "Gallery landing header banner",
+          "placement": "below header before gallery landing hero",
+          "desktop": "visible below nav",
+          "wideDesktop": "visible below nav",
+          "tablet": "visible below header",
+          "mobile": "visible below header with reduced height",
+          "hiddenByDefault": true,
+          "recommendedAdSenseUnitType": "responsive display ad",
+          "recommendedSizeBehavior": "responsive banner",
+          "futureAdUnitName": "ilcp-coloring-pages-header-banner",
+          "accidentalClickSeparation": "Separated from navigation, menus, gallery cards, and print or download controls."
+        },
+        {
+          "slotId": "rail-left-desktop",
+          "slotName": "Left desktop rail",
+          "placement": "outside left edge of content with safe gap",
+          "desktop": "hidden unless the viewport reaches the wide-desktop rail breakpoint",
+          "wideDesktop": "visible outside the content column with a 48px safe gap",
+          "tablet": "hidden",
+          "mobile": "hidden",
+          "hiddenByDefault": true,
+          "recommendedAdSenseUnitType": "manual responsive/fixed side rail or Google Auto ads side rail later",
+          "recommendedSizeBehavior": "wide desktop rail only",
+          "futureAdUnitName": "ilcp-rail-left-desktop",
+          "accidentalClickSeparation": "Separated from navigation, menus, gallery cards, and print or download controls."
+        },
+        {
+          "slotId": "rail-right-desktop",
+          "slotName": "Right desktop rail",
+          "placement": "outside right edge of content with safe gap",
+          "desktop": "hidden unless the viewport reaches the wide-desktop rail breakpoint",
+          "wideDesktop": "visible outside the content column with a 48px safe gap",
+          "tablet": "hidden",
+          "mobile": "hidden",
+          "hiddenByDefault": true,
+          "recommendedAdSenseUnitType": "manual responsive/fixed side rail or Google Auto ads side rail later",
+          "recommendedSizeBehavior": "wide desktop rail only",
+          "futureAdUnitName": "ilcp-rail-right-desktop",
+          "accidentalClickSeparation": "Separated from navigation, menus, gallery cards, and print or download controls."
+        },
+        {
+          "slotId": "coloring-pages-after-featured",
+          "slotName": "Gallery landing inline after featured",
+          "placement": "after featured artwork and before search gallery",
+          "desktop": "visible after featured pages",
+          "wideDesktop": "visible after featured pages",
+          "tablet": "visible after featured pages",
+          "mobile": "visible after featured pages",
+          "hiddenByDefault": true,
+          "recommendedAdSenseUnitType": "responsive display ad",
+          "recommendedSizeBehavior": "fluid responsive inline",
+          "futureAdUnitName": "ilcp-coloring-pages-inline-after-featured",
+          "accidentalClickSeparation": "Separated from navigation, menus, gallery cards, and print or download controls."
+        },
+        {
+          "slotId": "coloring-pages-lower-content",
+          "slotName": "Gallery landing lower inline",
+          "placement": "after search gallery and before collection browse sections",
+          "desktop": "visible lower in content",
+          "wideDesktop": "visible lower in content",
+          "tablet": "visible lower in content",
+          "mobile": "visible lower in content",
+          "hiddenByDefault": true,
+          "recommendedAdSenseUnitType": "responsive display ad",
+          "recommendedSizeBehavior": "fluid responsive inline",
+          "futureAdUnitName": "ilcp-coloring-pages-inline-lower",
+          "accidentalClickSeparation": "Separated from navigation, menus, gallery cards, and print or download controls."
+        }
+      ]
+    },
+    {
+      "pageType": "hubPage",
+      "totalPlaceholders": 5,
+      "visibleCounts": {
+        "desktop": 3,
+        "wideDesktop": 5,
+        "tablet": 3,
+        "mobile": 3
+      },
+      "allSlotIdsUniqueOnPage": true,
+      "slots": [
+        {
+          "slotId": "hub-header-banner",
+          "slotName": "Hub header banner",
+          "placement": "below header before hub hero",
+          "desktop": "visible below nav",
+          "wideDesktop": "visible below nav",
+          "tablet": "visible below header",
+          "mobile": "visible below header with reduced height",
+          "hiddenByDefault": true,
+          "recommendedAdSenseUnitType": "responsive display ad",
+          "recommendedSizeBehavior": "responsive banner",
+          "futureAdUnitName": "ilcp-hub-header-banner",
+          "accidentalClickSeparation": "Separated from navigation, menus, gallery cards, and print or download controls."
+        },
+        {
+          "slotId": "rail-left-desktop",
+          "slotName": "Left desktop rail",
+          "placement": "outside left edge of content with safe gap",
+          "desktop": "hidden unless the viewport reaches the wide-desktop rail breakpoint",
+          "wideDesktop": "visible outside the content column with a 48px safe gap",
+          "tablet": "hidden",
+          "mobile": "hidden",
+          "hiddenByDefault": true,
+          "recommendedAdSenseUnitType": "manual responsive/fixed side rail or Google Auto ads side rail later",
+          "recommendedSizeBehavior": "wide desktop rail only",
+          "futureAdUnitName": "ilcp-rail-left-desktop",
+          "accidentalClickSeparation": "Separated from navigation, menus, gallery cards, and print or download controls."
+        },
+        {
+          "slotId": "rail-right-desktop",
+          "slotName": "Right desktop rail",
+          "placement": "outside right edge of content with safe gap",
+          "desktop": "hidden unless the viewport reaches the wide-desktop rail breakpoint",
+          "wideDesktop": "visible outside the content column with a 48px safe gap",
+          "tablet": "hidden",
+          "mobile": "hidden",
+          "hiddenByDefault": true,
+          "recommendedAdSenseUnitType": "manual responsive/fixed side rail or Google Auto ads side rail later",
+          "recommendedSizeBehavior": "wide desktop rail only",
+          "futureAdUnitName": "ilcp-rail-right-desktop",
+          "accidentalClickSeparation": "Separated from navigation, menus, gallery cards, and print or download controls."
+        },
+        {
+          "slotId": "hub-after-gallery",
+          "slotName": "Hub inline after gallery",
+          "placement": "after search gallery and pagination",
+          "desktop": "visible after gallery and controls",
+          "wideDesktop": "visible after gallery and controls",
+          "tablet": "visible after gallery and controls",
+          "mobile": "visible after gallery and controls",
+          "hiddenByDefault": true,
+          "recommendedAdSenseUnitType": "responsive display ad",
+          "recommendedSizeBehavior": "fluid responsive inline",
+          "futureAdUnitName": "ilcp-hub-inline-after-gallery",
+          "accidentalClickSeparation": "Separated from navigation, menus, gallery cards, and print or download controls."
+        },
+        {
+          "slotId": "hub-lower-content",
+          "slotName": "Hub lower inline",
+          "placement": "after supporting browse links",
+          "desktop": "visible lower in content",
+          "wideDesktop": "visible lower in content",
+          "tablet": "visible lower in content",
+          "mobile": "visible lower in content",
+          "hiddenByDefault": true,
+          "recommendedAdSenseUnitType": "responsive display ad",
+          "recommendedSizeBehavior": "fluid responsive inline",
+          "futureAdUnitName": "ilcp-hub-inline-lower",
+          "accidentalClickSeparation": "Separated from navigation, menus, gallery cards, and print or download controls."
+        }
+      ]
+    }
+  ],
+  "adsenseGuidance": {
+    "inPageAndBannerUnits": "Use responsive display ad units for header banner and inline slots.",
+    "railUnits": "Decide later between Google Auto ads side rail format or manual responsive/fixed side rail units.",
+    "mobileGuidance": "Use responsive display units only in safe below-header or between-section placements. Avoid mobile top anchor behavior for now.",
+    "prohibitedPlacements": [
+      "navigation",
+      "More menu",
+      "mobile navigation",
+      "image cards",
+      "gallery grids",
+      "Print or Download rows"
+    ]
+  }
+}

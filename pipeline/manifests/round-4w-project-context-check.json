@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-05-11T00:00:00.000Z",
+  "phase": "round-4w",
+  "summary": {
+    "correctRepo": true,
+    "branch": "version-4",
+    "round4vCommitExists": true,
+    "appApiRoutePresent": false,
+    "staticExportConfigured": true,
+    "coloringPagesRouteExists": true,
+    "hubRouteExists": true,
+    "r2BundleExists": true,
+    "publicGeneratedMediaPresent": false,
+    "protectedPathsClean": true,
+    "imagesUntouched": true,
+    "nestedReferenceUntouched": true,
+    "currentPublicDownloadFormats": [
+      "PNG"
+    ],
+    "visibleSvgDownloadOptions": false,
+    "adWellsVisibleByDefault": true,
+    "liveAdCodeExists": false,
+    "wrongContextIndicatorsFound": false
+  }
+}

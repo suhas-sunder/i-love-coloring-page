@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-05-11T01:37:53.361Z",
+  "runId": "round-4o-browser-downloads",
+  "summary": {
+    "imageCardUsesPngUrl": true,
+    "printUsesPngOnly": true,
+    "pngDownloadPresent": true,
+    "publicDownloadFormats": [
+      "PNG"
+    ],
+    "svgVisibleInPublicUi": false,
+    "jpegWebpLabelsVisible": false,
+    "assetResolverPreservesInternalSvg": true,
+    "conversionUtilityPresent": true,
+    "conversionUtilityUsesPngPreviewInput": true,
+    "conversionUtilitySetsCrossOriginAnonymous": true,
+    "currentLocalMediaServerCorsTestableWithoutFalsePositives": false
+  },
+  "visibleSvgLabels": [],
+  "visibleJpegWebpLabels": [],
+  "checkedFiles": [
+    "src/components/coloring/ImageCard.tsx",
+    "src/lib/coloring/assets.ts",
+    "src/lib/coloring/browserDownloads.ts"
+  ]
+}

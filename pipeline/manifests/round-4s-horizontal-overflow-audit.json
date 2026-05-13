@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-05-11T04:39:31.618Z",
+  "runId": "round-4s-nav-ad-overflow",
+  "summary": {
+    "reproducedBeforeFix": true,
+    "rootCause": "Unsafe viewport-width full-bleed section-band math could exceed the layout viewport, while the mobile nav used a narrow right-side fixed panel that exposed page content.",
+    "sourceOfHorizontalOverflow": "section-band used calc(50% - 50vw); mobile nav and menu geometry were also audited as possible overflow contributors.",
+    "fix": "Replaced 100vw section-band expansion with page-gutter expansion, widened and centered the More menu, and converted mobile nav to a full-screen panel.",
+    "noHorizontalOverflowAfterFix": true,
+    "noBodyOverflowXAfterFix": true,
+    "overflowXHiddenUsedAsMask": false,
+    "actualOverflowSourceFixed": true,
+    "widthsTested": [
+      390,
+      430,
+      768,
+      1024,
+      1440,
+      1920,
+      2560
+    ],
+    "widthsWithHorizontalScrollbar": [],
+    "adRailCausesOverflow": false,
+    "moreMenuCausesOverflow": false,
+    "mobileNavCausesOverflow": false
+  },
+  "auditedAreas": [
+    "html/body overflow",
+    "section bands",
+    "wide ad rails",
+    "desktop More menu",
+    "mobile nav panel",
+    "gallery grids",
+    "fixed-width elements"
+  ]
+}

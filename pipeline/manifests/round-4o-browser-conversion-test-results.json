@@ -1,0 +1,39 @@
+{
+  "generatedAt": "2026-05-11T01:37:53.635Z",
+  "runId": "round-4o-browser-downloads",
+  "appOrigin": "http://localhost:3005",
+  "sampleUrls": {
+    "local": "http://127.0.0.1:4175/coloring-pages/png/birds/birds-albatross-2380234539.png",
+    "temporaryR2": "https://pub-1bf18626e66c4e4aa3093fb370122f11.r2.dev/coloring-pages/png/anime-girls/anime-girl-summoning-jutsu-cute-dinosaur-plushies-e958c58eca.png"
+  },
+  "probes": {
+    "local": {
+      "url": "http://127.0.0.1:4175/coloring-pages/png/birds/birds-albatross-2380234539.png",
+      "status": 200,
+      "ok": true,
+      "contentType": "image/png",
+      "accessControlAllowOrigin": "",
+      "accessControlAllowMethods": "",
+      "vary": "",
+      "checkedWithOrigin": "http://localhost:3005"
+    },
+    "temporaryR2": {
+      "url": "https://pub-1bf18626e66c4e4aa3093fb370122f11.r2.dev/coloring-pages/png/anime-girls/anime-girl-summoning-jutsu-cute-dinosaur-plushies-e958c58eca.png",
+      "status": 200,
+      "ok": true,
+      "contentType": "image/png",
+      "accessControlAllowOrigin": "",
+      "accessControlAllowMethods": "",
+      "vary": "",
+      "checkedWithOrigin": "http://localhost:3005"
+    }
+  },
+  "summary": {
+    "localCorsAllowsCanvasExport": false,
+    "temporaryR2CorsAllowsCanvasExport": false,
+    "browserCanvasConversionVerified": false,
+    "jpegConversionSafeToExpose": false,
+    "webpConversionSafeToExpose": false,
+    "reason": "No currently configured test asset source returned CORS headers that allow the app origin, so canvas export cannot be verified safely."
+  }
+}

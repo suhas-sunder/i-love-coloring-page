@@ -1,0 +1,2854 @@
+{
+  "generatedAt": "2026-05-11T00:00:00.000Z",
+  "phase": "round-4w",
+  "pages": [
+    {
+      "path": "/",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "featured Phase 1 collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "featured Phase 1 collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "featured Phase 1 collection",
+          "assetCount": 1461
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "featured Phase 1 collection",
+          "assetCount": 1310
+        },
+        {
+          "label": "Christmas Coloring Pages",
+          "href": "/coloring-pages/christmas",
+          "reason": "featured Phase 1 collection",
+          "assetCount": 332
+        },
+        {
+          "label": "Halloween Coloring Pages",
+          "href": "/coloring-pages/halloween",
+          "reason": "featured Phase 1 collection",
+          "assetCount": 305
+        }
+      ],
+      "strategy": "Homepage links point to broad, popular Phase 1 collections and the main gallery."
+    },
+    {
+      "path": "/coloring-pages",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "featured Phase 1 collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Anime Girls Coloring Pages",
+          "href": "/coloring-pages/anime-girls",
+          "reason": "featured Phase 1 collection",
+          "assetCount": 905
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "featured Phase 1 collection",
+          "assetCount": 1461
+        },
+        {
+          "label": "Chibi Coloring Pages",
+          "href": "/coloring-pages/chibi",
+          "reason": "featured Phase 1 collection",
+          "assetCount": 910
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "featured Phase 1 collection",
+          "assetCount": 1310
+        },
+        {
+          "label": "Geometric Coloring Pages",
+          "href": "/coloring-pages/geometric",
+          "reason": "featured Phase 1 collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Christmas Coloring Pages",
+          "href": "/coloring-pages/christmas",
+          "reason": "featured Phase 1 collection",
+          "assetCount": 332
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "featured Phase 1 collection",
+          "assetCount": 1704
+        }
+      ],
+      "strategy": "Gallery landing links mix subject, style, seasonal, and popular collections."
+    },
+    {
+      "path": "/coloring-pages/animals",
+      "hubId": "hub_animals",
+      "links": [
+        {
+          "label": "Birds Coloring Pages",
+          "href": "/coloring-pages/birds",
+          "reason": "narrower collection",
+          "assetCount": 190
+        },
+        {
+          "label": "Cats Coloring Pages",
+          "href": "/coloring-pages/cats",
+          "reason": "narrower collection",
+          "assetCount": 58
+        },
+        {
+          "label": "Dogs Coloring Pages",
+          "href": "/coloring-pages/dogs",
+          "reason": "narrower collection",
+          "assetCount": 284
+        },
+        {
+          "label": "Insects Coloring Pages",
+          "href": "/coloring-pages/insects",
+          "reason": "narrower collection",
+          "assetCount": 180
+        },
+        {
+          "label": "Plushie Animals Coloring Pages",
+          "href": "/coloring-pages/plushie-animals",
+          "reason": "narrower collection",
+          "assetCount": 105
+        },
+        {
+          "label": "Prehistoric Animals Coloring Pages",
+          "href": "/coloring-pages/prehistoric-animals",
+          "reason": "narrower collection",
+          "assetCount": 221
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/anime-girls",
+      "hubId": "hub_anime_girls",
+      "links": [
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related printable collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related printable collection",
+          "assetCount": 1310
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related printable collection",
+          "assetCount": 1461
+        },
+        {
+          "label": "Christmas Coloring Pages",
+          "href": "/coloring-pages/christmas",
+          "reason": "related printable collection",
+          "assetCount": 332
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/beetles",
+      "hubId": "hub_beetles",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Insects Coloring Pages",
+          "href": "/coloring-pages/insects",
+          "reason": "related printable collection",
+          "assetCount": 180
+        },
+        {
+          "label": "Buildings Coloring Pages",
+          "href": "/coloring-pages/buildings",
+          "reason": "related printable collection",
+          "assetCount": 156
+        },
+        {
+          "label": "Butterflies Coloring Pages",
+          "href": "/coloring-pages/butterflies",
+          "reason": "related printable collection",
+          "assetCount": 26
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related printable collection",
+          "assetCount": 1302
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/birds",
+      "hubId": "hub_birds",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related printable collection",
+          "assetCount": 1310
+        },
+        {
+          "label": "Fantasy Creatures Coloring Pages",
+          "href": "/coloring-pages/fantasy-creatures",
+          "reason": "related printable collection",
+          "assetCount": 575
+        },
+        {
+          "label": "Plants Coloring Pages",
+          "href": "/coloring-pages/plants",
+          "reason": "related printable collection",
+          "assetCount": 658
+        },
+        {
+          "label": "Buildings Coloring Pages",
+          "href": "/coloring-pages/buildings",
+          "reason": "related printable collection",
+          "assetCount": 156
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/birthday",
+      "hubId": "hub_birthday",
+      "links": [
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Holidays Coloring Pages",
+          "href": "/coloring-pages/holidays",
+          "reason": "related printable collection",
+          "assetCount": 874
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related printable collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related printable collection",
+          "assetCount": 1461
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related printable collection",
+          "assetCount": 1310
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/bridges",
+      "hubId": "hub_bridges",
+      "links": [
+        {
+          "label": "Buildings Coloring Pages",
+          "href": "/coloring-pages/buildings",
+          "reason": "related printable collection",
+          "assetCount": 156
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Fairies Coloring Pages",
+          "href": "/coloring-pages/fairies",
+          "reason": "related printable collection",
+          "assetCount": 37
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related printable collection",
+          "assetCount": 1310
+        },
+        {
+          "label": "Fantasy Creatures Coloring Pages",
+          "href": "/coloring-pages/fantasy-creatures",
+          "reason": "related printable collection",
+          "assetCount": 575
+        },
+        {
+          "label": "Forest Coloring Pages",
+          "href": "/coloring-pages/forest",
+          "reason": "related printable collection",
+          "assetCount": 74
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/buildings",
+      "hubId": "hub_buildings",
+      "links": [
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related printable collection",
+          "assetCount": 1310
+        },
+        {
+          "label": "Fantasy Creatures Coloring Pages",
+          "href": "/coloring-pages/fantasy-creatures",
+          "reason": "related printable collection",
+          "assetCount": 575
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related printable collection",
+          "assetCount": 1338
+        },
+        {
+          "label": "Forest Coloring Pages",
+          "href": "/coloring-pages/forest",
+          "reason": "related printable collection",
+          "assetCount": 74
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/butterflies",
+      "hubId": "hub_butterflies",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Insects Coloring Pages",
+          "href": "/coloring-pages/insects",
+          "reason": "related printable collection",
+          "assetCount": 180
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related printable collection",
+          "assetCount": 1338
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related printable collection",
+          "assetCount": 1302
+        },
+        {
+          "label": "Birds Coloring Pages",
+          "href": "/coloring-pages/birds",
+          "reason": "related printable collection",
+          "assetCount": 190
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/cars",
+      "hubId": "hub_cars",
+      "links": [
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Vehicles Coloring Pages",
+          "href": "/coloring-pages/vehicles",
+          "reason": "related printable collection",
+          "assetCount": 373
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related printable collection",
+          "assetCount": 1461
+        },
+        {
+          "label": "Geometric Coloring Pages",
+          "href": "/coloring-pages/geometric",
+          "reason": "related printable collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related printable collection",
+          "assetCount": 1461
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/cats",
+      "hubId": "hub_cats",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related printable collection",
+          "assetCount": 1338
+        },
+        {
+          "label": "Birds Coloring Pages",
+          "href": "/coloring-pages/birds",
+          "reason": "related printable collection",
+          "assetCount": 190
+        },
+        {
+          "label": "Dinosaurs Coloring Pages",
+          "href": "/coloring-pages/dinosaurs",
+          "reason": "related printable collection",
+          "assetCount": 190
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related printable collection",
+          "assetCount": 1461
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/chibi",
+      "hubId": "hub_chibi",
+      "links": [
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related printable collection",
+          "assetCount": 1302
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related printable collection",
+          "assetCount": 1338
+        },
+        {
+          "label": "Chibi Flowers Coloring Pages",
+          "href": "/coloring-pages/chibi-flowers",
+          "reason": "related printable collection",
+          "assetCount": 152
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Flowers Coloring Pages",
+          "href": "/coloring-pages/flowers",
+          "reason": "related printable collection",
+          "assetCount": 417
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/chibi-flowers",
+      "hubId": "hub_chibi_flowers",
+      "links": [
+        {
+          "label": "Chibi Coloring Pages",
+          "href": "/coloring-pages/chibi",
+          "reason": "related printable collection",
+          "assetCount": 910
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related printable collection",
+          "assetCount": 1302
+        },
+        {
+          "label": "Flowers Coloring Pages",
+          "href": "/coloring-pages/flowers",
+          "reason": "related printable collection",
+          "assetCount": 417
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related printable collection",
+          "assetCount": 1338
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/christmas",
+      "hubId": "hub_christmas",
+      "links": [
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Holidays Coloring Pages",
+          "href": "/coloring-pages/holidays",
+          "reason": "related printable collection",
+          "assetCount": 874
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related printable collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related printable collection",
+          "assetCount": 1461
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related printable collection",
+          "assetCount": 1310
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/crabs",
+      "hubId": "hub_crabs",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Sea Life Coloring Pages",
+          "href": "/coloring-pages/sea-life",
+          "reason": "related printable collection",
+          "assetCount": 236
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related printable collection",
+          "assetCount": 1302
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related printable collection",
+          "assetCount": 1310
+        },
+        {
+          "label": "Fantasy Creatures Coloring Pages",
+          "href": "/coloring-pages/fantasy-creatures",
+          "reason": "related printable collection",
+          "assetCount": 575
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/cute",
+      "hubId": "hub_cute",
+      "links": [
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related printable collection",
+          "assetCount": 1302
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related printable collection",
+          "assetCount": 1338
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related printable collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related printable collection",
+          "assetCount": 1461
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/detailed-for-adults",
+      "hubId": "hub_detailed_for_adults",
+      "links": [
+        {
+          "label": "Geometric Coloring Pages",
+          "href": "/coloring-pages/geometric",
+          "reason": "narrower collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "narrower collection",
+          "assetCount": 1461
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related printable collection",
+          "assetCount": 1310
+        },
+        {
+          "label": "Christmas Coloring Pages",
+          "href": "/coloring-pages/christmas",
+          "reason": "related printable collection",
+          "assetCount": 332
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/dinosaurs",
+      "hubId": "hub_dinosaurs",
+      "links": [
+        {
+          "label": "Triceratops Coloring Pages",
+          "href": "/coloring-pages/triceratops",
+          "reason": "narrower collection",
+          "assetCount": 22
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Prehistoric Animals Coloring Pages",
+          "href": "/coloring-pages/prehistoric-animals",
+          "reason": "related printable collection",
+          "assetCount": 221
+        },
+        {
+          "label": "Cats Coloring Pages",
+          "href": "/coloring-pages/cats",
+          "reason": "related printable collection",
+          "assetCount": 58
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related printable collection",
+          "assetCount": 1704
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/dogs",
+      "hubId": "hub_dogs",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related printable collection",
+          "assetCount": 1338
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related printable collection",
+          "assetCount": 1302
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related printable collection",
+          "assetCount": 1461
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related printable collection",
+          "assetCount": 1310
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/dungeon",
+      "hubId": "hub_dungeon",
+      "links": [
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Chibi Coloring Pages",
+          "href": "/coloring-pages/chibi",
+          "reason": "related printable collection",
+          "assetCount": 910
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related printable collection",
+          "assetCount": 1302
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related printable collection",
+          "assetCount": 1338
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Birds Coloring Pages",
+          "href": "/coloring-pages/birds",
+          "reason": "related printable collection",
+          "assetCount": 190
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/easy",
+      "hubId": "hub_easy",
+      "links": [
+        {
+          "label": "Chibi Coloring Pages",
+          "href": "/coloring-pages/chibi",
+          "reason": "narrower collection",
+          "assetCount": 910
+        },
+        {
+          "label": "Cute Coloring Pages",
+          "href": "/coloring-pages/cute",
+          "reason": "narrower collection",
+          "assetCount": 375
+        },
+        {
+          "label": "Kawaii Coloring Pages",
+          "href": "/coloring-pages/kawaii",
+          "reason": "narrower collection",
+          "assetCount": 88
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related printable collection",
+          "assetCount": 1338
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/fairies",
+      "hubId": "hub_fairies",
+      "links": [
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related printable collection",
+          "assetCount": 1310
+        },
+        {
+          "label": "Fantasy Creatures Coloring Pages",
+          "href": "/coloring-pages/fantasy-creatures",
+          "reason": "related printable collection",
+          "assetCount": 575
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Forest Coloring Pages",
+          "href": "/coloring-pages/forest",
+          "reason": "related printable collection",
+          "assetCount": 74
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Birds Coloring Pages",
+          "href": "/coloring-pages/birds",
+          "reason": "related printable collection",
+          "assetCount": 190
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/fantasy",
+      "hubId": "hub_fantasy",
+      "links": [
+        {
+          "label": "Fantasy Creatures Coloring Pages",
+          "href": "/coloring-pages/fantasy-creatures",
+          "reason": "narrower collection",
+          "assetCount": 575
+        },
+        {
+          "label": "Medieval Fantasy Coloring Pages",
+          "href": "/coloring-pages/medieval-fantasy",
+          "reason": "narrower collection",
+          "assetCount": 194
+        },
+        {
+          "label": "Mythology Coloring Pages",
+          "href": "/coloring-pages/mythology",
+          "reason": "narrower collection",
+          "assetCount": 268
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related printable collection",
+          "assetCount": 1338
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related printable collection",
+          "assetCount": 1302
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/fantasy-creatures",
+      "hubId": "hub_fantasy_creatures",
+      "links": [
+        {
+          "label": "Fairies Coloring Pages",
+          "href": "/coloring-pages/fairies",
+          "reason": "narrower collection",
+          "assetCount": 37
+        },
+        {
+          "label": "Fantasy Dragons Coloring Pages",
+          "href": "/coloring-pages/fantasy-dragons",
+          "reason": "narrower collection",
+          "assetCount": 67
+        },
+        {
+          "label": "Griffins Coloring Pages",
+          "href": "/coloring-pages/griffins",
+          "reason": "narrower collection",
+          "assetCount": 21
+        },
+        {
+          "label": "Mermaids Coloring Pages",
+          "href": "/coloring-pages/mermaids",
+          "reason": "narrower collection",
+          "assetCount": 26
+        },
+        {
+          "label": "Pegasus Coloring Pages",
+          "href": "/coloring-pages/pegasus",
+          "reason": "narrower collection",
+          "assetCount": 29
+        },
+        {
+          "label": "Plushie Dragons Coloring Pages",
+          "href": "/coloring-pages/plushie-dragons",
+          "reason": "narrower collection",
+          "assetCount": 75
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/fantasy-dragons",
+      "hubId": "hub_fantasy_dragons",
+      "links": [
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related printable collection",
+          "assetCount": 1310
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related printable collection",
+          "assetCount": 1461
+        },
+        {
+          "label": "Christmas Coloring Pages",
+          "href": "/coloring-pages/christmas",
+          "reason": "related printable collection",
+          "assetCount": 332
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related printable collection",
+          "assetCount": 1704
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/flowers",
+      "hubId": "hub_flowers",
+      "links": [
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Garden Flowers Coloring Pages",
+          "href": "/coloring-pages/garden-flowers",
+          "reason": "related printable collection",
+          "assetCount": 166
+        },
+        {
+          "label": "Plants Coloring Pages",
+          "href": "/coloring-pages/plants",
+          "reason": "related printable collection",
+          "assetCount": 658
+        },
+        {
+          "label": "Garden Coloring Pages",
+          "href": "/coloring-pages/garden",
+          "reason": "related printable collection",
+          "assetCount": 266
+        },
+        {
+          "label": "Chibi Flowers Coloring Pages",
+          "href": "/coloring-pages/chibi-flowers",
+          "reason": "related printable collection",
+          "assetCount": 152
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related printable collection",
+          "assetCount": 1302
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/food",
+      "hubId": "hub_food",
+      "links": [
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related printable collection",
+          "assetCount": 1461
+        },
+        {
+          "label": "Geometric Coloring Pages",
+          "href": "/coloring-pages/geometric",
+          "reason": "related printable collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related printable collection",
+          "assetCount": 1461
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Birds Coloring Pages",
+          "href": "/coloring-pages/birds",
+          "reason": "related printable collection",
+          "assetCount": 190
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/for-kids",
+      "hubId": "hub_for_kids",
+      "links": [
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "narrower collection",
+          "assetCount": 1302
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Cute Coloring Pages",
+          "href": "/coloring-pages/cute",
+          "reason": "related printable collection",
+          "assetCount": 375
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related printable collection",
+          "assetCount": 1310
+        },
+        {
+          "label": "Fantasy Creatures Coloring Pages",
+          "href": "/coloring-pages/fantasy-creatures",
+          "reason": "related printable collection",
+          "assetCount": 575
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/forest",
+      "hubId": "hub_forest",
+      "links": [
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related printable collection",
+          "assetCount": 1310
+        },
+        {
+          "label": "Fantasy Creatures Coloring Pages",
+          "href": "/coloring-pages/fantasy-creatures",
+          "reason": "related printable collection",
+          "assetCount": 575
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Buildings Coloring Pages",
+          "href": "/coloring-pages/buildings",
+          "reason": "related printable collection",
+          "assetCount": 156
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related printable collection",
+          "assetCount": 1302
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/garden",
+      "hubId": "hub_garden",
+      "links": [
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Garden Flowers Coloring Pages",
+          "href": "/coloring-pages/garden-flowers",
+          "reason": "related printable collection",
+          "assetCount": 166
+        },
+        {
+          "label": "Plants Coloring Pages",
+          "href": "/coloring-pages/plants",
+          "reason": "related printable collection",
+          "assetCount": 658
+        },
+        {
+          "label": "Flowers Coloring Pages",
+          "href": "/coloring-pages/flowers",
+          "reason": "related printable collection",
+          "assetCount": 417
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related printable collection",
+          "assetCount": 1310
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/garden-flowers",
+      "hubId": "hub_garden_flowers",
+      "links": [
+        {
+          "label": "Flowers Coloring Pages",
+          "href": "/coloring-pages/flowers",
+          "reason": "related printable collection",
+          "assetCount": 417
+        },
+        {
+          "label": "Garden Coloring Pages",
+          "href": "/coloring-pages/garden",
+          "reason": "related printable collection",
+          "assetCount": 266
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Plants Coloring Pages",
+          "href": "/coloring-pages/plants",
+          "reason": "related printable collection",
+          "assetCount": 658
+        },
+        {
+          "label": "Chibi Flowers Coloring Pages",
+          "href": "/coloring-pages/chibi-flowers",
+          "reason": "related printable collection",
+          "assetCount": 152
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/geometric",
+      "hubId": "hub_geometric",
+      "links": [
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related printable collection",
+          "assetCount": 1461
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related printable collection",
+          "assetCount": 1461
+        },
+        {
+          "label": "Cars Coloring Pages",
+          "href": "/coloring-pages/cars",
+          "reason": "related printable collection",
+          "assetCount": 193
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Food Coloring Pages",
+          "href": "/coloring-pages/food",
+          "reason": "related printable collection",
+          "assetCount": 261
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/griffins",
+      "hubId": "hub_griffins",
+      "links": [
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related printable collection",
+          "assetCount": 1310
+        },
+        {
+          "label": "Fantasy Creatures Coloring Pages",
+          "href": "/coloring-pages/fantasy-creatures",
+          "reason": "related printable collection",
+          "assetCount": 575
+        },
+        {
+          "label": "Pegasus Coloring Pages",
+          "href": "/coloring-pages/pegasus",
+          "reason": "related printable collection",
+          "assetCount": 29
+        },
+        {
+          "label": "Unicorns Coloring Pages",
+          "href": "/coloring-pages/unicorns",
+          "reason": "related printable collection",
+          "assetCount": 38
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/halloween",
+      "hubId": "hub_halloween",
+      "links": [
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Holidays Coloring Pages",
+          "href": "/coloring-pages/holidays",
+          "reason": "related printable collection",
+          "assetCount": 874
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related printable collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related printable collection",
+          "assetCount": 1302
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related printable collection",
+          "assetCount": 1338
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/holidays",
+      "hubId": "hub_holidays",
+      "links": [
+        {
+          "label": "Birthday Coloring Pages",
+          "href": "/coloring-pages/birthday",
+          "reason": "narrower collection",
+          "assetCount": 211
+        },
+        {
+          "label": "Christmas Coloring Pages",
+          "href": "/coloring-pages/christmas",
+          "reason": "narrower collection",
+          "assetCount": 332
+        },
+        {
+          "label": "Halloween Coloring Pages",
+          "href": "/coloring-pages/halloween",
+          "reason": "narrower collection",
+          "assetCount": 305
+        },
+        {
+          "label": "St. Patrick's Day Coloring Pages",
+          "href": "/coloring-pages/st-patricks-day",
+          "reason": "narrower collection",
+          "assetCount": 20
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/indoor-plants",
+      "hubId": "hub_indoor_plants",
+      "links": [
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Plants Coloring Pages",
+          "href": "/coloring-pages/plants",
+          "reason": "related printable collection",
+          "assetCount": 658
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Birds Coloring Pages",
+          "href": "/coloring-pages/birds",
+          "reason": "related printable collection",
+          "assetCount": 190
+        },
+        {
+          "label": "Christmas Coloring Pages",
+          "href": "/coloring-pages/christmas",
+          "reason": "related printable collection",
+          "assetCount": 332
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related printable collection",
+          "assetCount": 1310
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/insects",
+      "hubId": "hub_insects",
+      "links": [
+        {
+          "label": "Beetles Coloring Pages",
+          "href": "/coloring-pages/beetles",
+          "reason": "narrower collection",
+          "assetCount": 25
+        },
+        {
+          "label": "Butterflies Coloring Pages",
+          "href": "/coloring-pages/butterflies",
+          "reason": "narrower collection",
+          "assetCount": 26
+        },
+        {
+          "label": "Spiders Coloring Pages",
+          "href": "/coloring-pages/spiders",
+          "reason": "narrower collection",
+          "assetCount": 28
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related printable collection",
+          "assetCount": 1338
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/kawaii",
+      "hubId": "hub_kawaii",
+      "links": [
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related printable collection",
+          "assetCount": 1302
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related printable collection",
+          "assetCount": 1338
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Plants Coloring Pages",
+          "href": "/coloring-pages/plants",
+          "reason": "related printable collection",
+          "assetCount": 658
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Cats Coloring Pages",
+          "href": "/coloring-pages/cats",
+          "reason": "related printable collection",
+          "assetCount": 58
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/mammoths",
+      "hubId": "hub_mammoths",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Prehistoric Animals Coloring Pages",
+          "href": "/coloring-pages/prehistoric-animals",
+          "reason": "related printable collection",
+          "assetCount": 221
+        },
+        {
+          "label": "Birds Coloring Pages",
+          "href": "/coloring-pages/birds",
+          "reason": "related printable collection",
+          "assetCount": 190
+        },
+        {
+          "label": "Cats Coloring Pages",
+          "href": "/coloring-pages/cats",
+          "reason": "related printable collection",
+          "assetCount": 58
+        },
+        {
+          "label": "Dinosaurs Coloring Pages",
+          "href": "/coloring-pages/dinosaurs",
+          "reason": "related printable collection",
+          "assetCount": 190
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/mandalas",
+      "hubId": "hub_mandalas",
+      "links": [
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "narrower collection",
+          "assetCount": 1461
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Geometric Coloring Pages",
+          "href": "/coloring-pages/geometric",
+          "reason": "related printable collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related printable collection",
+          "assetCount": 1310
+        },
+        {
+          "label": "Christmas Coloring Pages",
+          "href": "/coloring-pages/christmas",
+          "reason": "related printable collection",
+          "assetCount": 332
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/medieval-fantasy",
+      "hubId": "hub_medieval_fantasy",
+      "links": [
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related printable collection",
+          "assetCount": 1310
+        },
+        {
+          "label": "Fantasy Creatures Coloring Pages",
+          "href": "/coloring-pages/fantasy-creatures",
+          "reason": "related printable collection",
+          "assetCount": 575
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Birds Coloring Pages",
+          "href": "/coloring-pages/birds",
+          "reason": "related printable collection",
+          "assetCount": 190
+        },
+        {
+          "label": "Buildings Coloring Pages",
+          "href": "/coloring-pages/buildings",
+          "reason": "related printable collection",
+          "assetCount": 156
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/mermaids",
+      "hubId": "hub_mermaids",
+      "links": [
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related printable collection",
+          "assetCount": 1310
+        },
+        {
+          "label": "Fantasy Creatures Coloring Pages",
+          "href": "/coloring-pages/fantasy-creatures",
+          "reason": "related printable collection",
+          "assetCount": 575
+        },
+        {
+          "label": "Unicorns Coloring Pages",
+          "href": "/coloring-pages/unicorns",
+          "reason": "related printable collection",
+          "assetCount": 38
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Birds Coloring Pages",
+          "href": "/coloring-pages/birds",
+          "reason": "related printable collection",
+          "assetCount": 190
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/mythology",
+      "hubId": "hub_mythology",
+      "links": [
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related printable collection",
+          "assetCount": 1310
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Fantasy Creatures Coloring Pages",
+          "href": "/coloring-pages/fantasy-creatures",
+          "reason": "related printable collection",
+          "assetCount": 575
+        },
+        {
+          "label": "Forest Coloring Pages",
+          "href": "/coloring-pages/forest",
+          "reason": "related printable collection",
+          "assetCount": 74
+        },
+        {
+          "label": "Mermaids Coloring Pages",
+          "href": "/coloring-pages/mermaids",
+          "reason": "related printable collection",
+          "assetCount": 26
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/ocean",
+      "hubId": "hub_ocean",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Sea Life Coloring Pages",
+          "href": "/coloring-pages/sea-life",
+          "reason": "related printable collection",
+          "assetCount": 236
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related printable collection",
+          "assetCount": 1302
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related printable collection",
+          "assetCount": 1310
+        },
+        {
+          "label": "Fantasy Creatures Coloring Pages",
+          "href": "/coloring-pages/fantasy-creatures",
+          "reason": "related printable collection",
+          "assetCount": 575
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/octopus",
+      "hubId": "hub_octopus",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Sea Life Coloring Pages",
+          "href": "/coloring-pages/sea-life",
+          "reason": "related printable collection",
+          "assetCount": 236
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related printable collection",
+          "assetCount": 1302
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related printable collection",
+          "assetCount": 1310
+        },
+        {
+          "label": "Fantasy Creatures Coloring Pages",
+          "href": "/coloring-pages/fantasy-creatures",
+          "reason": "related printable collection",
+          "assetCount": 575
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/pegasus",
+      "hubId": "hub_pegasus",
+      "links": [
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related printable collection",
+          "assetCount": 1310
+        },
+        {
+          "label": "Fantasy Creatures Coloring Pages",
+          "href": "/coloring-pages/fantasy-creatures",
+          "reason": "related printable collection",
+          "assetCount": 575
+        },
+        {
+          "label": "Griffins Coloring Pages",
+          "href": "/coloring-pages/griffins",
+          "reason": "related printable collection",
+          "assetCount": 21
+        },
+        {
+          "label": "Unicorns Coloring Pages",
+          "href": "/coloring-pages/unicorns",
+          "reason": "related printable collection",
+          "assetCount": 38
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/planes",
+      "hubId": "hub_planes",
+      "links": [
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related printable collection",
+          "assetCount": 1461
+        },
+        {
+          "label": "Geometric Coloring Pages",
+          "href": "/coloring-pages/geometric",
+          "reason": "related printable collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related printable collection",
+          "assetCount": 1461
+        },
+        {
+          "label": "Vehicles Coloring Pages",
+          "href": "/coloring-pages/vehicles",
+          "reason": "related printable collection",
+          "assetCount": 373
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/plants",
+      "hubId": "hub_plants",
+      "links": [
+        {
+          "label": "Chibi Flowers Coloring Pages",
+          "href": "/coloring-pages/chibi-flowers",
+          "reason": "narrower collection",
+          "assetCount": 152
+        },
+        {
+          "label": "Flowers Coloring Pages",
+          "href": "/coloring-pages/flowers",
+          "reason": "narrower collection",
+          "assetCount": 417
+        },
+        {
+          "label": "Garden Flowers Coloring Pages",
+          "href": "/coloring-pages/garden-flowers",
+          "reason": "narrower collection",
+          "assetCount": 166
+        },
+        {
+          "label": "Indoor Plants Coloring Pages",
+          "href": "/coloring-pages/indoor-plants",
+          "reason": "narrower collection",
+          "assetCount": 129
+        },
+        {
+          "label": "Trees Coloring Pages",
+          "href": "/coloring-pages/trees",
+          "reason": "narrower collection",
+          "assetCount": 38
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/playing-cards",
+      "hubId": "hub_playing_cards",
+      "links": [
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Cats Coloring Pages",
+          "href": "/coloring-pages/cats",
+          "reason": "related printable collection",
+          "assetCount": 58
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related printable collection",
+          "assetCount": 1310
+        },
+        {
+          "label": "Fantasy Creatures Coloring Pages",
+          "href": "/coloring-pages/fantasy-creatures",
+          "reason": "related printable collection",
+          "assetCount": 575
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related printable collection",
+          "assetCount": 1338
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/plushie-animals",
+      "hubId": "hub_plushie_animals",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related printable collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Plushie Dragons Coloring Pages",
+          "href": "/coloring-pages/plushie-dragons",
+          "reason": "related printable collection",
+          "assetCount": 75
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related printable collection",
+          "assetCount": 1461
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related printable collection",
+          "assetCount": 1310
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/plushie-dragons",
+      "hubId": "hub_plushie_dragons",
+      "links": [
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related printable collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Plushie Animals Coloring Pages",
+          "href": "/coloring-pages/plushie-animals",
+          "reason": "related printable collection",
+          "assetCount": 105
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related printable collection",
+          "assetCount": 1461
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related printable collection",
+          "assetCount": 1310
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/plushies",
+      "hubId": "hub_plushies",
+      "links": [
+        {
+          "label": "Plushie Dragons Coloring Pages",
+          "href": "/coloring-pages/plushie-dragons",
+          "reason": "related printable collection",
+          "assetCount": 75
+        },
+        {
+          "label": "Plushie Animals Coloring Pages",
+          "href": "/coloring-pages/plushie-animals",
+          "reason": "related printable collection",
+          "assetCount": 105
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Cute Coloring Pages",
+          "href": "/coloring-pages/cute",
+          "reason": "related printable collection",
+          "assetCount": 375
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related printable collection",
+          "assetCount": 1461
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/prehistoric-animals",
+      "hubId": "hub_prehistoric_animals",
+      "links": [
+        {
+          "label": "Dinosaurs Coloring Pages",
+          "href": "/coloring-pages/dinosaurs",
+          "reason": "narrower collection",
+          "assetCount": 190
+        },
+        {
+          "label": "Mammoths Coloring Pages",
+          "href": "/coloring-pages/mammoths",
+          "reason": "narrower collection",
+          "assetCount": 20
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related printable collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Cats Coloring Pages",
+          "href": "/coloring-pages/cats",
+          "reason": "related printable collection",
+          "assetCount": 58
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/reptiles",
+      "hubId": "hub_reptiles",
+      "links": [
+        {
+          "label": "Turtles Coloring Pages",
+          "href": "/coloring-pages/turtles",
+          "reason": "narrower collection",
+          "assetCount": 44
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related printable collection",
+          "assetCount": 1310
+        },
+        {
+          "label": "Fantasy Creatures Coloring Pages",
+          "href": "/coloring-pages/fantasy-creatures",
+          "reason": "related printable collection",
+          "assetCount": 575
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related printable collection",
+          "assetCount": 1302
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/sea-life",
+      "hubId": "hub_sea_life",
+      "links": [
+        {
+          "label": "Crabs Coloring Pages",
+          "href": "/coloring-pages/crabs",
+          "reason": "narrower collection",
+          "assetCount": 21
+        },
+        {
+          "label": "Octopus Coloring Pages",
+          "href": "/coloring-pages/octopus",
+          "reason": "narrower collection",
+          "assetCount": 20
+        },
+        {
+          "label": "Whales Coloring Pages",
+          "href": "/coloring-pages/whales",
+          "reason": "narrower collection",
+          "assetCount": 40
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related printable collection",
+          "assetCount": 1338
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/spiders",
+      "hubId": "hub_spiders",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Insects Coloring Pages",
+          "href": "/coloring-pages/insects",
+          "reason": "related printable collection",
+          "assetCount": 180
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related printable collection",
+          "assetCount": 1302
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related printable collection",
+          "assetCount": 1310
+        },
+        {
+          "label": "Fantasy Creatures Coloring Pages",
+          "href": "/coloring-pages/fantasy-creatures",
+          "reason": "related printable collection",
+          "assetCount": 575
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/st-patricks-day",
+      "hubId": "hub_st_patricks_day",
+      "links": [
+        {
+          "label": "Holidays Coloring Pages",
+          "href": "/coloring-pages/holidays",
+          "reason": "related printable collection",
+          "assetCount": 874
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Buildings Coloring Pages",
+          "href": "/coloring-pages/buildings",
+          "reason": "related printable collection",
+          "assetCount": 156
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related printable collection",
+          "assetCount": 1461
+        },
+        {
+          "label": "Dogs Coloring Pages",
+          "href": "/coloring-pages/dogs",
+          "reason": "related printable collection",
+          "assetCount": 284
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related printable collection",
+          "assetCount": 1310
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/trains",
+      "hubId": "hub_trains",
+      "links": [
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Vehicles Coloring Pages",
+          "href": "/coloring-pages/vehicles",
+          "reason": "related printable collection",
+          "assetCount": 373
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related printable collection",
+          "assetCount": 1461
+        },
+        {
+          "label": "Geometric Coloring Pages",
+          "href": "/coloring-pages/geometric",
+          "reason": "related printable collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related printable collection",
+          "assetCount": 1461
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/trees",
+      "hubId": "hub_trees",
+      "links": [
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Plants Coloring Pages",
+          "href": "/coloring-pages/plants",
+          "reason": "related printable collection",
+          "assetCount": 658
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Buildings Coloring Pages",
+          "href": "/coloring-pages/buildings",
+          "reason": "related printable collection",
+          "assetCount": 156
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related printable collection",
+          "assetCount": 1302
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related printable collection",
+          "assetCount": 1310
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/triceratops",
+      "hubId": "hub_triceratops",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Dinosaurs Coloring Pages",
+          "href": "/coloring-pages/dinosaurs",
+          "reason": "related printable collection",
+          "assetCount": 190
+        },
+        {
+          "label": "Prehistoric Animals Coloring Pages",
+          "href": "/coloring-pages/prehistoric-animals",
+          "reason": "related printable collection",
+          "assetCount": 221
+        },
+        {
+          "label": "Birds Coloring Pages",
+          "href": "/coloring-pages/birds",
+          "reason": "related printable collection",
+          "assetCount": 190
+        },
+        {
+          "label": "Cats Coloring Pages",
+          "href": "/coloring-pages/cats",
+          "reason": "related printable collection",
+          "assetCount": 58
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/turtles",
+      "hubId": "hub_turtles",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Reptiles Coloring Pages",
+          "href": "/coloring-pages/reptiles",
+          "reason": "related printable collection",
+          "assetCount": 156
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related printable collection",
+          "assetCount": 1310
+        },
+        {
+          "label": "Fantasy Creatures Coloring Pages",
+          "href": "/coloring-pages/fantasy-creatures",
+          "reason": "related printable collection",
+          "assetCount": 575
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related printable collection",
+          "assetCount": 1302
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/unicorns",
+      "hubId": "hub_unicorns",
+      "links": [
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related printable collection",
+          "assetCount": 1310
+        },
+        {
+          "label": "Fantasy Creatures Coloring Pages",
+          "href": "/coloring-pages/fantasy-creatures",
+          "reason": "related printable collection",
+          "assetCount": 575
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Buildings Coloring Pages",
+          "href": "/coloring-pages/buildings",
+          "reason": "related printable collection",
+          "assetCount": 156
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related printable collection",
+          "assetCount": 1338
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/vehicles",
+      "hubId": "hub_vehicles",
+      "links": [
+        {
+          "label": "Cars Coloring Pages",
+          "href": "/coloring-pages/cars",
+          "reason": "narrower collection",
+          "assetCount": 193
+        },
+        {
+          "label": "Planes Coloring Pages",
+          "href": "/coloring-pages/planes",
+          "reason": "narrower collection",
+          "assetCount": 92
+        },
+        {
+          "label": "Trains Coloring Pages",
+          "href": "/coloring-pages/trains",
+          "reason": "narrower collection",
+          "assetCount": 102
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related printable collection",
+          "assetCount": 1461
+        },
+        {
+          "label": "Geometric Coloring Pages",
+          "href": "/coloring-pages/geometric",
+          "reason": "related printable collection",
+          "assetCount": 1459
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/whales",
+      "hubId": "hub_whales",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Sea Life Coloring Pages",
+          "href": "/coloring-pages/sea-life",
+          "reason": "related printable collection",
+          "assetCount": 236
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related printable collection",
+          "assetCount": 1338
+        },
+        {
+          "label": "Insects Coloring Pages",
+          "href": "/coloring-pages/insects",
+          "reason": "related printable collection",
+          "assetCount": 180
+        },
+        {
+          "label": "Butterflies Coloring Pages",
+          "href": "/coloring-pages/butterflies",
+          "reason": "related printable collection",
+          "assetCount": 26
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/world-landmarks",
+      "hubId": "hub_world_landmarks",
+      "links": [
+        {
+          "label": "Buildings Coloring Pages",
+          "href": "/coloring-pages/buildings",
+          "reason": "related printable collection",
+          "assetCount": 156
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related printable collection",
+          "assetCount": 6557
+        },
+        {
+          "label": "Bridges Coloring Pages",
+          "href": "/coloring-pages/bridges",
+          "reason": "related printable collection",
+          "assetCount": 23
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related printable collection",
+          "assetCount": 1524
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related printable collection",
+          "assetCount": 1461
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related printable collection",
+          "assetCount": 1310
+        }
+      ],
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    }
+  ]
+}

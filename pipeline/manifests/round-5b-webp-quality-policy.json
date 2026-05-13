@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-05-11T23:47:22.150Z",
+  "runId": "round-5b-asset-format-rationalization",
+  "targetUse": "gallery-preview-only",
+  "notIntendedFor": [
+    "print-source",
+    "source-of-truth",
+    "direct-download-source"
+  ],
+  "targetDimensions": "match current PNG preview dimensions, typically 341x512",
+  "quality": 82,
+  "mode": "lossy",
+  "acceptableFileSizeRangeBytes": {
+    "minimum": 1000,
+    "preferredMaximum": 90000,
+    "hardMaximumReviewThreshold": 250000
+  },
+  "transparencyAndBackground": "Current PNG previews are white-background printable line art, so WebP previews preserve that appearance.",
+  "visualQualityExpectations": [
+    "Line art remains readable at card size.",
+    "No broken image icons or missing previews.",
+    "WebP should match the current gallery appearance because it is generated from the accepted PNG preview.",
+    "SVG remains the source of truth for print and conversion."
+  ],
+  "fallbackBehavior": "Use WebP first when available, then PNG preview, then thumbnail as the last display fallback."
+}

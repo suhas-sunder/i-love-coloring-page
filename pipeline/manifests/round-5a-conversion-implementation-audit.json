@@ -1,0 +1,22 @@
+{
+  "generatedAt": "2026-05-11T21:15:02.151Z",
+  "runId": "round-5a-public-cors-validation",
+  "summary": {
+    "internalSvgConversionPathPresent": true,
+    "pngFallbackPresent": true,
+    "printPrefersHighQualitySource": true,
+    "supportedFormatDetectionPresent": true,
+    "corsFailureHandlingPresent": true,
+    "userFacingSvgDownloadHidden": true,
+    "jpgJpegWebpControlsHidden": true,
+    "appApiAbsent": true,
+    "galleryPassesInternalSvgOnlyToActions": true,
+    "centralizedAssetResolverUsed": true,
+    "round4zLocalConversionPassed": true,
+    "round4zProductionCorsRequired": true
+  },
+  "notes": [
+    "Print uses the internal SVG as action data for conversion, not as a user-facing download.",
+    "PNG remains the only visible public download format until public CORS and browser export are accepted."
+  ]
+}

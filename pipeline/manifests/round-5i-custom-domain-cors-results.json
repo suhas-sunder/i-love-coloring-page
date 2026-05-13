@@ -1,0 +1,38 @@
+{
+  "generatedAt": "2026-05-12T18:20:46.138Z",
+  "runId": "round-5i-custom-domain-cors-results",
+  "sourcePlan": "pipeline/manifests/round-5c-svg-webp-url-verification-plan.json",
+  "originsChecked": [
+    "http://localhost:3005",
+    "http://127.0.0.1:3005"
+  ],
+  "summary": {
+    "status": "not_run",
+    "svgUrlCount": 30,
+    "originsChecked": [
+      "http://localhost:3005",
+      "http://127.0.0.1:3005"
+    ],
+    "checkedOriginRequestCount": 0,
+    "getOkCount": 0,
+    "headOkCount": 0,
+    "headUnavailableCount": 0,
+    "corsOkCount": 0,
+    "noCredentialsRequiredCount": 0,
+    "staleCachedMissingHeaderCount": 0,
+    "svg_cors_passed": false,
+    "browserCorsFailureExpected": true
+  },
+  "checks": [],
+  "blockers": [
+    "Custom-domain SVG CORS verification was not run because production-like env validation failed.",
+    "NEXT_PUBLIC_SITE_URL is not configured.",
+    "NEXT_PUBLIC_SITE_URL is not a valid URL.",
+    "NEXT_PUBLIC_SITE_URL must be HTTPS for production-like verification.",
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL must be HTTPS.",
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL must not be localhost or loopback."
+  ],
+  "requiredFix": [
+    "Configure NEXT_PUBLIC_SITE_URL and NEXT_PUBLIC_COLORING_ASSET_BASE_URL with final HTTPS custom domains, then rerun Round 5I."
+  ]
+}

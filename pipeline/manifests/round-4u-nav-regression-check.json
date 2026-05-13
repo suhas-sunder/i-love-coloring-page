@@ -1,0 +1,62 @@
+{
+  "generatedAt": "2026-05-11T05:41:53.453Z",
+  "runId": "round-4u-ad-density",
+  "summary": {
+    "moreMenuClosesReliably": true,
+    "moreMenuSearchWorks": true,
+    "moreMenuWideAndResponsive": true,
+    "mobileNavFullScreenOrNearFullScreen": true,
+    "mobileNavSearchAtTop": true,
+    "noAdsInNavigation": true,
+    "noTopLevelColoringPagesButton": true
+  },
+  "moreMenu": {
+    "opens": true,
+    "closesOnButton": true,
+    "closesOnEscape": true,
+    "closesOnOutsideClick": true,
+    "closesOnLinkClick": true,
+    "searchWorks": true,
+    "noAdsInMenu": true,
+    "geometry": {
+      "left": 300,
+      "right": 1620,
+      "width": 1320,
+      "viewportWidth": 1920,
+      "columns": "193.328px 193.328px 193.328px 193.344px 193.328px 193.328px"
+    },
+    "screenshots": [
+      {
+        "path": "pipeline/review/round-4u/screenshots/desktop/desktop-more-menu-after-link.png",
+        "committed": false
+      }
+    ]
+  },
+  "mobileNav": {
+    "opens": true,
+    "closesOnButton": true,
+    "closesOnEscape": true,
+    "closesOnLinkClick": true,
+    "searchWorks": true,
+    "noAdsInMobileNav": true,
+    "noAwkwardExposedSideGutter": true,
+    "noHorizontalOverflow": true,
+    "geometry": {
+      "left": 0,
+      "right": 390,
+      "width": 390,
+      "height": 844,
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "searchTop": 113,
+      "overflowX": "hidden",
+      "overflowY": "auto"
+    },
+    "screenshots": [
+      {
+        "path": "pipeline/review/round-4u/screenshots/mobile/mobile-menu-open.png",
+        "committed": false
+      }
+    ]
+  }
+}

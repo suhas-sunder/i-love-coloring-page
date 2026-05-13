@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-05-12T02:16:43.862Z",
+  "runId": "round-5d-svg-cors-results",
+  "summary": {
+    "status": "not_run",
+    "svgCorsPassed": false,
+    "svgUrlCount": 30,
+    "svgCheckedCount": 0,
+    "svgGetPassCount": 0,
+    "svgHeadPassCount": 0,
+    "svgCorsHeaderPassCount": 0,
+    "credentialsRequiredCount": 0,
+    "browserCanLoadCrossOriginAnonymous": false,
+    "canvasUntaintedVerifiedInBrowser": false,
+    "publicBaseType": "missing"
+  },
+  "allowedOriginsChecked": [
+    "http://localhost:3005",
+    "http://127.0.0.1:3005"
+  ],
+  "missingOrWrongHeaders": [],
+  "blockers": [
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL is not configured for this shell. Public SVG/WebP verification was not run."
+  ]
+}

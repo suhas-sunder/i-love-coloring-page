@@ -1,0 +1,120 @@
+{
+  "generatedAt": "2026-05-11T21:15:02.191Z",
+  "runId": "round-5a-public-cors-validation",
+  "assetBaseUrl": "http://127.0.0.1:4176/coloring-pages",
+  "publicAssetBaseReady": false,
+  "selectedCount": 5,
+  "publicSubsetAssumption": "Selection is prepared from generated metadata, but public CORS probing is blocked until a public asset base URL is configured.",
+  "records": [
+    {
+      "sampleId": "animals-alligator",
+      "route": "/coloring-pages/animals",
+      "assetId": "animals__animals-alligator__4feec8505a",
+      "title": "Animals Alligator",
+      "sourceHub": "animals",
+      "svg": {
+        "subpath": "svg/animals/animals-alligator-4feec8505a.svg",
+        "expectedContentType": "image/svg+xml",
+        "url": "http://127.0.0.1:4176/coloring-pages/svg/animals/animals-alligator-4feec8505a.svg"
+      },
+      "pngPreview": {
+        "subpath": "png/animals/animals-alligator-4feec8505a.png",
+        "expectedContentType": "image/png",
+        "url": "http://127.0.0.1:4176/coloring-pages/png/animals/animals-alligator-4feec8505a.png"
+      },
+      "thumbnail": {
+        "subpath": "thumbs/animals/animals-alligator-4feec8505a-thumb.png",
+        "expectedContentType": "image/png",
+        "url": "http://127.0.0.1:4176/coloring-pages/thumbs/animals/animals-alligator-4feec8505a-thumb.png"
+      }
+    },
+    {
+      "sampleId": "geometric-or-mandala",
+      "route": "/coloring-pages/geometric",
+      "assetId": "mandala__mandala-geometry-patterns-animal-mandala-fox__3e8e80a2fd",
+      "title": "Mandala Geometry Patterns Animal Mandala Fox",
+      "sourceHub": "mandala",
+      "svg": {
+        "subpath": "svg/mandala/mandala-geometry-patterns-animal-mandala-fox-3e8e80a2fd.svg",
+        "expectedContentType": "image/svg+xml",
+        "url": "http://127.0.0.1:4176/coloring-pages/svg/mandala/mandala-geometry-patterns-animal-mandala-fox-3e8e80a2fd.svg"
+      },
+      "pngPreview": {
+        "subpath": "png/mandala/mandala-geometry-patterns-animal-mandala-fox-3e8e80a2fd.png",
+        "expectedContentType": "image/png",
+        "url": "http://127.0.0.1:4176/coloring-pages/png/mandala/mandala-geometry-patterns-animal-mandala-fox-3e8e80a2fd.png"
+      },
+      "thumbnail": {
+        "subpath": "thumbs/mandala/mandala-geometry-patterns-animal-mandala-fox-3e8e80a2fd-thumb.png",
+        "expectedContentType": "image/png",
+        "url": "http://127.0.0.1:4176/coloring-pages/thumbs/mandala/mandala-geometry-patterns-animal-mandala-fox-3e8e80a2fd-thumb.png"
+      }
+    },
+    {
+      "sampleId": "anime-girls",
+      "route": "/coloring-pages/anime-girls",
+      "assetId": "anime-girls__anime-girl-air-balloon__1f6b5be7bc",
+      "title": "Anime Girl Air Balloon",
+      "sourceHub": "anime-girls",
+      "svg": {
+        "subpath": "svg/anime-girls/anime-girl-air-balloon-1f6b5be7bc.svg",
+        "expectedContentType": "image/svg+xml",
+        "url": "http://127.0.0.1:4176/coloring-pages/svg/anime-girls/anime-girl-air-balloon-1f6b5be7bc.svg"
+      },
+      "pngPreview": {
+        "subpath": "png/anime-girls/anime-girl-air-balloon-1f6b5be7bc.png",
+        "expectedContentType": "image/png",
+        "url": "http://127.0.0.1:4176/coloring-pages/png/anime-girls/anime-girl-air-balloon-1f6b5be7bc.png"
+      },
+      "thumbnail": {
+        "subpath": "thumbs/anime-girls/anime-girl-air-balloon-1f6b5be7bc-thumb.png",
+        "expectedContentType": "image/png",
+        "url": "http://127.0.0.1:4176/coloring-pages/thumbs/anime-girls/anime-girl-air-balloon-1f6b5be7bc-thumb.png"
+      }
+    },
+    {
+      "sampleId": "christmas",
+      "route": "/coloring-pages/christmas",
+      "assetId": "christmas__christmas-holiday-advent-calendar__a1245c4617",
+      "title": "Christmas Holiday Advent Calendar",
+      "sourceHub": "christmas",
+      "svg": {
+        "subpath": "svg/christmas/christmas-holiday-advent-calendar-a1245c4617.svg",
+        "expectedContentType": "image/svg+xml",
+        "url": "http://127.0.0.1:4176/coloring-pages/svg/christmas/christmas-holiday-advent-calendar-a1245c4617.svg"
+      },
+      "pngPreview": {
+        "subpath": "png/christmas/christmas-holiday-advent-calendar-a1245c4617.png",
+        "expectedContentType": "image/png",
+        "url": "http://127.0.0.1:4176/coloring-pages/png/christmas/christmas-holiday-advent-calendar-a1245c4617.png"
+      },
+      "thumbnail": {
+        "subpath": "thumbs/christmas/christmas-holiday-advent-calendar-a1245c4617-thumb.png",
+        "expectedContentType": "image/png",
+        "url": "http://127.0.0.1:4176/coloring-pages/thumbs/christmas/christmas-holiday-advent-calendar-a1245c4617-thumb.png"
+      }
+    },
+    {
+      "sampleId": "high-detail",
+      "route": "/coloring-pages/mandalas",
+      "assetId": "anime-girls__anime-girl-climbing-a-dragon__308a121c86",
+      "title": "Anime Girl Climbing A Dragon",
+      "sourceHub": "anime-girls",
+      "svg": {
+        "subpath": "svg/anime-girls/anime-girl-climbing-a-dragon-308a121c86.svg",
+        "expectedContentType": "image/svg+xml",
+        "url": "http://127.0.0.1:4176/coloring-pages/svg/anime-girls/anime-girl-climbing-a-dragon-308a121c86.svg"
+      },
+      "pngPreview": {
+        "subpath": "png/anime-girls/anime-girl-climbing-a-dragon-308a121c86.png",
+        "expectedContentType": "image/png",
+        "url": "http://127.0.0.1:4176/coloring-pages/png/anime-girls/anime-girl-climbing-a-dragon-308a121c86.png"
+      },
+      "thumbnail": {
+        "subpath": "thumbs/anime-girls/anime-girl-climbing-a-dragon-308a121c86-thumb.png",
+        "expectedContentType": "image/png",
+        "url": "http://127.0.0.1:4176/coloring-pages/thumbs/anime-girls/anime-girl-climbing-a-dragon-308a121c86-thumb.png"
+      }
+    }
+  ]
+}

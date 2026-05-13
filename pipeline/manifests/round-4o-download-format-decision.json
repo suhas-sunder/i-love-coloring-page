@@ -1,0 +1,19 @@
+{
+  "generatedAt": "2026-05-11T01:37:53.635Z",
+  "runId": "round-4o-browser-downloads",
+  "summary": {
+    "implementedJpegWebp": false,
+    "deferredJpegWebp": true,
+    "svgInternalOnly": true,
+    "publicDownloadFormats": [
+      "PNG"
+    ],
+    "requiresCorsBeforeUiExposure": true,
+    "decisionReason": "No currently configured test asset source returned CORS headers that allow the app origin, so canvas export cannot be verified safely."
+  },
+  "requiredBeforeExposingJpegWebp": [
+    "Configure the production asset host to send Access-Control-Allow-Origin for the app origin.",
+    "Retest actual browser canvas export from CDN PNG previews.",
+    "Show JPG/WebP controls only after format support and export success are confirmed in the browser."
+  ]
+}

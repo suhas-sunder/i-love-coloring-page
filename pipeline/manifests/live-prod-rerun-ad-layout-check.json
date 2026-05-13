@@ -1,0 +1,42 @@
+{
+  "checkedAt": "2026-05-13T20:26:37.403Z",
+  "runId": "live-prod-rerun-ad-layout",
+  "fullQaAllowed": false,
+  "counts": [
+    {
+      "route": "/",
+      "viewport": "mobile-390",
+      "width": 390,
+      "visibleAdvertisementLabels": 0
+    },
+    {
+      "route": "/",
+      "viewport": "tablet-768",
+      "width": 768,
+      "visibleAdvertisementLabels": 0
+    },
+    {
+      "route": "/",
+      "viewport": "desktop-1440",
+      "width": 1440,
+      "visibleAdvertisementLabels": 0
+    },
+    {
+      "route": "/",
+      "viewport": "wide-1920",
+      "width": 1920,
+      "visibleAdvertisementLabels": 0
+    }
+  ],
+  "checks": {
+    "adWellsVisibleByDefault": false,
+    "noLiveAdSenseScript": true,
+    "noAdClientIds": true,
+    "wideDesktopHeaderPlusSideRails": false,
+    "mobileTabletOneAdWell": false,
+    "noAdsInsideNav": true,
+    "noAdsInsideGalleryGrids": true,
+    "noOverlapOrHorizontalOverflow": false
+  },
+  "passed": false
+}

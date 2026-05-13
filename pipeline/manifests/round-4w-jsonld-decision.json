@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-05-11T00:00:00.000Z",
+  "phase": "round-4w",
+  "summary": {
+    "implementedJsonLd": false,
+    "websiteSchemaDeferred": true,
+    "breadcrumbListDeferred": true,
+    "collectionPageDeferred": true,
+    "webpageSchemaDeferred": true,
+    "faqPageDeferred": true,
+    "imageObjectDeferred": true,
+    "creativeWorkImageMarkupDeferred": true,
+    "reason": "Round 4W focuses on route metadata and visible content. JSON-LD will be safer after public URL, breadcrumb display, and content acceptance are stable."
+  },
+  "futureConditions": [
+    "Stable final site URL is configured.",
+    "Public asset URLs are verified.",
+    "Visible breadcrumb or site-search content is confirmed if marking it up.",
+    "Any FAQ markup is backed by visible, useful FAQ content."
+  ]
+}

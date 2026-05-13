@@ -1,0 +1,217 @@
+.site-shell {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--color-canvas);
+}
+
+.site-header-inner,
+.site-footer-inner,
+.page-shell,
+.section-inner {
+  width: min(var(--layout-max), calc(100% - (var(--page-gutter) * 2)));
+  margin-inline: auto;
+}
+
+.site-header-inner {
+  display: flex;
+  min-height: 64px;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-20);
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-12);
+}
+
+.site-nav-mobile {
+  display: none;
+}
+
+.site-footer {
+  margin-top: auto;
+  padding-block: var(--space-48);
+  background: var(--color-ink);
+  color: var(--color-button-text-on-color);
+}
+
+.site-footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-24);
+}
+
+.site-footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-16);
+  justify-content: flex-end;
+}
+
+.site-footer a {
+  color: var(--color-button-text-on-color);
+  font-size: var(--text-sm-size);
+  font-weight: 700;
+  line-height: var(--text-sm-line);
+}
+
+.site-footer a:hover {
+  color: var(--color-surface-strong);
+}
+
+.site-footer-note {
+  max-width: var(--measure);
+  color: var(--color-surface-strong);
+  font-size: var(--text-sm-size);
+  font-weight: var(--text-sm-weight);
+  line-height: var(--text-sm-line);
+}
+
+.page-shell {
+  position: relative;
+  padding-block: var(--space-16) var(--space-96);
+}
+
+.content-section {
+  margin-top: var(--space-64);
+}
+
+.hub-hero + .content-section {
+  margin-top: var(--space-40);
+}
+
+.section-band {
+  margin-inline: calc(var(--page-gutter) * -1);
+  padding: var(--space-64) var(--page-gutter);
+  background: var(--color-soft-sky);
+}
+
+.section-band .section-inner {
+  display: grid;
+  gap: var(--space-40);
+}
+
+.section-band.featured-band {
+  background: var(--color-soft-mint);
+}
+
+.section-heading-row {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: var(--space-32);
+  margin-bottom: var(--space-32);
+}
+
+.section-heading-row p,
+.section-copy {
+  max-width: var(--measure);
+  margin-top: var(--space-12);
+  color: var(--color-text-muted);
+  font-size: var(--text-lg-size);
+  font-weight: var(--text-lg-weight);
+  line-height: var(--text-lg-line);
+}
+
+.split-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.84fr) minmax(0, 1.16fr);
+  gap: var(--space-64);
+  align-items: start;
+}
+
+.supporting-browse {
+  display: grid;
+  gap: var(--space-40);
+}
+
+.supporting-browse-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--space-48);
+  align-items: start;
+}
+
+.utility-note {
+  max-width: var(--measure);
+  color: var(--color-text-muted);
+  font-size: var(--text-sm-size);
+  font-weight: var(--text-sm-weight);
+  line-height: var(--text-sm-line);
+}
+
+@media (max-width: 900px) {
+  .page-shell {
+    padding-block: var(--space-16) var(--space-80);
+  }
+
+  .content-section {
+    margin-top: var(--space-48);
+  }
+
+  .section-band {
+    padding-block: var(--space-64);
+  }
+
+  .split-section {
+    grid-template-columns: 1fr;
+    gap: var(--space-40);
+  }
+
+  .supporting-browse-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .site-header-inner {
+    min-height: 60px;
+    gap: var(--space-12);
+  }
+
+  .site-nav-desktop {
+    display: none;
+  }
+
+  .site-nav-mobile {
+    display: block;
+    flex: 0 0 auto;
+  }
+
+  .site-footer-inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .site-footer-nav {
+    justify-content: flex-start;
+  }
+
+  .page-shell {
+    padding-block: var(--space-12) var(--space-64);
+  }
+
+  .content-section {
+    margin-top: var(--space-48);
+  }
+
+  .hub-hero + .content-section {
+    margin-top: var(--space-32);
+  }
+
+  .section-heading-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: var(--space-16);
+  }
+}

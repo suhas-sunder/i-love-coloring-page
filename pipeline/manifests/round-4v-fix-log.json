@@ -1,0 +1,19 @@
+{
+  "generatedAt": "2026-05-11T06:29:55.583Z",
+  "runId": "round-4v-owner-acceptance",
+  "summary": {
+    "fixCount": 1,
+    "clearVisibleBugsFound": true,
+    "productionCodeChanged": true
+  },
+  "fixes": [
+    {
+      "area": "Print action",
+      "issue": "The printable popup opened as about:blank with no image because the noopener popup feature prevented the component from receiving a writable window handle.",
+      "fix": "Open the same-origin temporary print popup with a writable handle, then clear opener before writing the PNG-only print document.",
+      "filesChanged": [
+        "src/components/coloring/ImageCard.tsx"
+      ]
+    }
+  ]
+}

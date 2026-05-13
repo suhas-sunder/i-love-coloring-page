@@ -1,0 +1,13 @@
+{
+  "generatedAt": "2026-05-13T19:14:36.979Z",
+  "runId": "local-preview-print-fix",
+  "summary": {
+    "rootCause": "The print popup wrote a preparing page before SVG conversion and did not replace it when conversion failed or stalled.",
+    "printWorks": true,
+    "pngDownloadWorks": true,
+    "jpgDownloadWorks": true,
+    "webpDownloadWorks": true,
+    "svgDownloadAbsent": true,
+    "noUncaughtPromiseRejectionsObserved": true
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "generatedAt": "2026-05-13T05:40:53.988Z",
+  "runId": "round-5q-st-patricks-day-upload-plan",
+  "summary": {
+    "category": "st-patricks-day",
+    "includedRecords": 20,
+    "svgCount": 20,
+    "webpCount": 20,
+    "totalFileCount": 40,
+    "totalBytes": 3747503,
+    "objectKeyPrefixes": [
+      "coloring-pages/svg/st-patricks-day/",
+      "coloring-pages/webp/st-patricks-day/"
+    ],
+    "confirmFileCountRequired": 40,
+    "uploadSource": "optimized",
+    "uploadSourceRoot": "pipeline/r2-upload-optimized/coloring-pages",
+    "uploadPerformed": false,
+    "deletePerformed": false,
+    "expectedUploadCommand": "node pipeline/scripts/round-5o-upload-clean-bundle-to-r2.mjs --execute --confirm-bucket i-love-coloring-page --confirm-prefix coloring-pages --confirm-category st-patricks-day --confirm-file-count 40 --category st-patricks-day --skip-existing",
+    "expectedVerificationCommand": "node pipeline/scripts/round-5o-verify-clean-upload-r2.mjs --category st-patricks-day --public-base-url https://assets.ilovecoloringpage.com/coloring-pages",
+    "credentialsPrinted": false
+  },
+  "records": [
+    {
+      "assetId": "st-patricks-day__st-patricks-day-celtic-knot-mandala-pattern-coloring-page__46e5c80f77",
+      "category": "st-patricks-day",
+      "svgObjectKey": "coloring-pages/svg/st-patricks-day/st-patricks-day-celtic-knot-mandala-pattern-46e5c80f77.svg",
+      "webpObjectKey": "coloring-pages/webp/st-patricks-day/st-patricks-day-celtic-knot-mandala-pattern-46e5c80f77.webp"
+    },
+    {
+      "assetId": "st-patricks-day__st-patricks-day-dragon-guarding-pot-of-gold-coloring-page__fcdadb8e6a",
+      "category": "st-patricks-day",
+      "svgObjectKey": "coloring-pages/svg/st-patricks-day/st-patricks-day-dragon-guarding-pot-of-gold-fcdadb8e6a.svg",
+      "webpObjectKey": "coloring-pages/webp/st-patricks-day/st-patricks-day-dragon-guarding-pot-of-gold-fcdadb8e6a.webp"
+    },
+    {
+      "assetId": "st-patricks-day__st-patricks-day-irish-castle-on-hilltop-coloring-page__862176e869",
+      "category": "st-patricks-day",
+      "svgObjectKey": "coloring-pages/svg/st-patricks-day/st-patricks-day-irish-castle-on-hilltop-862176e869.svg",
+      "webpObjectKey": "coloring-pages/webp/st-patricks-day/st-patricks-day-irish-castle-on-hilltop-862176e869.webp"
+    },
+    {
+      "assetId": "st-patricks-day__st-patricks-day-irish-harp-with-shamrocks-coloring-page__118da3d1f5",
+      "category": "st-patricks-day",
+      "svgObjectKey": "coloring-pages/svg/st-patricks-day/st-patricks-day-irish-harp-with-shamrocks-118da3d1f5.svg",
+      "webpObjectKey": "coloring-pages/webp/st-patricks-day/st-patricks-day-irish-harp-with-shamrocks-118da3d1f5.webp"
+    },
+    {
+      "assetId": "st-patricks-day__st-patricks-day-kids-dressed-as-leprechauns-coloring-page__fa10cf2184",
+      "category": "st-patricks-day",
+      "svgObjectKey": "coloring-pages/svg/st-patricks-day/st-patricks-day-kids-dressed-as-leprechauns-fa10cf2184.svg",
+      "webpObjectKey": "coloring-pages/webp/st-patricks-day/st-patricks-day-kids-dressed-as-leprechauns-fa10cf2184.webp"
+    },
+    {
+      "assetId": "st-patricks-day__st-patricks-day-leprechaun-dancing-jig-coloring-page__24da6e22e3",
+      "category": "st-patricks-day",
+      "svgObjectKey": "coloring-pages/svg/st-patricks-day/st-patricks-day-leprechaun-dancing-jig-24da6e22e3.svg",
+      "webpObjectKey": "coloring-pages/webp/st-patricks-day/st-patricks-day-leprechaun-dancing-jig-24da6e22e3.webp"
+    },
+    {
+      "assetId": "st-patricks-day__st-patricks-day-leprechaun-holding-shamrock-coloring-page__f607fb59c7",
+      "category": "st-patricks-day",
+      "svgObjectKey": "coloring-pages/svg/st-patricks-day/st-patricks-day-leprechaun-holding-shamrock-f607fb59c7.svg",
+      "webpObjectKey": "coloring-pages/webp/st-patricks-day/st-patricks-day-leprechaun-holding-shamrock-f607fb59c7.webp"
+    },
+    {
+      "assetId": "st-patricks-day__st-patricks-day-leprechaun-rainbow-and-gold-coloring-page__e0a5ebbce1",
+      "category": "st-patricks-day",
+      "svgObjectKey": "coloring-pages/svg/st-patricks-day/st-patricks-day-leprechaun-rainbow-and-gold-e0a5ebbce1.svg",
+      "webpObjectKey": "coloring-pages/webp/st-patricks-day/st-patricks-day-leprechaun-rainbow-and-gold-e0a5ebbce1.webp"
+    },
+    {
+      "assetId": "st-patricks-day__st-patricks-day-leprechaun-with-pot-of-gold-coloring-page__3da829fc28",
+      "category": "st-patricks-day",
+      "svgObjectKey": "coloring-pages/svg/st-patricks-day/st-patricks-day-leprechaun-with-pot-of-gold-3da829fc28.svg",
+      "webpObjectKey": "coloring-pages/webp/st-patricks-day/st-patricks-day-leprechaun-with-pot-of-gold-3da829fc28.webp"
+    },
+    {
+      "assetId": "st-patricks-day__st-patricks-day-lucky-clover-field-landscape-coloring-page__606f1c9a7b",
+      "category": "st-patricks-day",
+      "svgObjectKey": "coloring-pages/svg/st-patricks-day/st-patricks-day-lucky-clover-field-landscape-606f1c9a7b.svg",
+      "webpObjectKey": "coloring-pages/webp/st-patricks-day/st-patricks-day-lucky-clover-field-landscape-606f1c9a7b.webp"
+    },
+    {
+      "assetId": "st-patricks-day__st-patricks-day-lucky-gnome-holding-pot-of-gold-coloring-page__a4cb083c40",
+      "category": "st-patricks-day",
+      "svgObjectKey": "coloring-pages/svg/st-patricks-day/st-patricks-day-lucky-gnome-holding-pot-of-gold-a4cb083c40.svg",
+      "webpObjectKey": "coloring-pages/webp/st-patricks-day/st-patricks-day-lucky-gnome-holding-pot-of-gold-a4cb083c40.webp"
+    },
+    {
+      "assetId": "st-patricks-day__st-patricks-day-lucky-horseshoe-with-clovers-coloring-page__7c1f426b75",
+      "category": "st-patricks-day",
+      "svgObjectKey": "coloring-pages/svg/st-patricks-day/st-patricks-day-lucky-horseshoe-with-clovers-7c1f426b75.svg",
+      "webpObjectKey": "coloring-pages/webp/st-patricks-day/st-patricks-day-lucky-horseshoe-with-clovers-7c1f426b75.webp"
+    },
+    {
+      "assetId": "st-patricks-day__st-patricks-day-pot-of-gold-guarded-by-leprechaun-coloring-page__0cac522f50",
+      "category": "st-patricks-day",
+      "svgObjectKey": "coloring-pages/svg/st-patricks-day/st-patricks-day-pot-of-gold-guarded-by-leprechaun-0cac522f50.svg",
+      "webpObjectKey": "coloring-pages/webp/st-patricks-day/st-patricks-day-pot-of-gold-guarded-by-leprechaun-0cac522f50.webp"
+    },
+    {
+      "assetId": "st-patricks-day__st-patricks-day-pot-of-gold-under-rainbow-coloring-page__1dad44bef5",
+      "category": "st-patricks-day",
+      "svgObjectKey": "coloring-pages/svg/st-patricks-day/st-patricks-day-pot-of-gold-under-rainbow-1dad44bef5.svg",
+      "webpObjectKey": "coloring-pages/webp/st-patricks-day/st-patricks-day-pot-of-gold-under-rainbow-1dad44bef5.webp"
+    },
+    {
+      "assetId": "st-patricks-day__st-patricks-day-puppy-wearing-leprechaun-hat-coloring-page__16a305e6b2",
+      "category": "st-patricks-day",
+      "svgObjectKey": "coloring-pages/svg/st-patricks-day/st-patricks-day-puppy-wearing-leprechaun-hat-16a305e6b2.svg",
+      "webpObjectKey": "coloring-pages/webp/st-patricks-day/st-patricks-day-puppy-wearing-leprechaun-hat-16a305e6b2.webp"
+    },
+    {
+      "assetId": "st-patricks-day__st-patricks-day-rainbow-arch-with-gold-coins-coloring-page__b0dcaa0204",
+      "category": "st-patricks-day",
+      "svgObjectKey": "coloring-pages/svg/st-patricks-day/st-patricks-day-rainbow-arch-with-gold-coins-b0dcaa0204.svg",
+      "webpObjectKey": "coloring-pages/webp/st-patricks-day/st-patricks-day-rainbow-arch-with-gold-coins-b0dcaa0204.webp"
+    },
+    {
+      "assetId": "st-patricks-day__st-patricks-day-rainbow-over-green-hills-coloring-page__df165a35b6",
+      "category": "st-patricks-day",
+      "svgObjectKey": "coloring-pages/svg/st-patricks-day/st-patricks-day-rainbow-over-green-hills-df165a35b6.svg",
+      "webpObjectKey": "coloring-pages/webp/st-patricks-day/st-patricks-day-rainbow-over-green-hills-df165a35b6.webp"
+    },
+    {
+      "assetId": "st-patricks-day__st-patricks-day-shamrock-clover-pattern-coloring-page__ffa1652840",
+      "category": "st-patricks-day",
+      "svgObjectKey": "coloring-pages/svg/st-patricks-day/st-patricks-day-shamrock-clover-pattern-ffa1652840.svg",
+      "webpObjectKey": "coloring-pages/webp/st-patricks-day/st-patricks-day-shamrock-clover-pattern-ffa1652840.webp"
+    },
+    {
+      "assetId": "st-patricks-day__st-patricks-day-shamrock-mandala-pattern-coloring-page__8993f17565",
+      "category": "st-patricks-day",
+      "svgObjectKey": "coloring-pages/svg/st-patricks-day/st-patricks-day-shamrock-mandala-pattern-8993f17565.svg",
+      "webpObjectKey": "coloring-pages/webp/st-patricks-day/st-patricks-day-shamrock-mandala-pattern-8993f17565.webp"
+    },
+    {
+      "assetId": "st-patricks-day__st-patricks-day-unicorn-with-shamrock-mane-coloring-page__1805eaf83d",
+      "category": "st-patricks-day",
+      "svgObjectKey": "coloring-pages/svg/st-patricks-day/st-patricks-day-unicorn-with-shamrock-mane-1805eaf83d.svg",
+      "webpObjectKey": "coloring-pages/webp/st-patricks-day/st-patricks-day-unicorn-with-shamrock-mane-1805eaf83d.webp"
+    }
+  ],
+  "objectKeys": [
+    "coloring-pages/svg/st-patricks-day/st-patricks-day-celtic-knot-mandala-pattern-46e5c80f77.svg",
+    "coloring-pages/svg/st-patricks-day/st-patricks-day-dragon-guarding-pot-of-gold-fcdadb8e6a.svg",
+    "coloring-pages/svg/st-patricks-day/st-patricks-day-irish-castle-on-hilltop-862176e869.svg",
+    "coloring-pages/svg/st-patricks-day/st-patricks-day-irish-harp-with-shamrocks-118da3d1f5.svg",
+    "coloring-pages/svg/st-patricks-day/st-patricks-day-kids-dressed-as-leprechauns-fa10cf2184.svg",
+    "coloring-pages/svg/st-patricks-day/st-patricks-day-leprechaun-dancing-jig-24da6e22e3.svg",
+    "coloring-pages/svg/st-patricks-day/st-patricks-day-leprechaun-holding-shamrock-f607fb59c7.svg",
+    "coloring-pages/svg/st-patricks-day/st-patricks-day-leprechaun-rainbow-and-gold-e0a5ebbce1.svg",
+    "coloring-pages/svg/st-patricks-day/st-patricks-day-leprechaun-with-pot-of-gold-3da829fc28.svg",
+    "coloring-pages/svg/st-patricks-day/st-patricks-day-lucky-clover-field-landscape-606f1c9a7b.svg",
+    "coloring-pages/svg/st-patricks-day/st-patricks-day-lucky-gnome-holding-pot-of-gold-a4cb083c40.svg",
+    "coloring-pages/svg/st-patricks-day/st-patricks-day-lucky-horseshoe-with-clovers-7c1f426b75.svg",
+    "coloring-pages/svg/st-patricks-day/st-patricks-day-pot-of-gold-guarded-by-leprechaun-0cac522f50.svg",
+    "coloring-pages/svg/st-patricks-day/st-patricks-day-pot-of-gold-under-rainbow-1dad44bef5.svg",
+    "coloring-pages/svg/st-patricks-day/st-patricks-day-puppy-wearing-leprechaun-hat-16a305e6b2.svg",
+    "coloring-pages/svg/st-patricks-day/st-patricks-day-rainbow-arch-with-gold-coins-b0dcaa0204.svg",
+    "coloring-pages/svg/st-patricks-day/st-patricks-day-rainbow-over-green-hills-df165a35b6.svg",
+    "coloring-pages/svg/st-patricks-day/st-patricks-day-shamrock-clover-pattern-ffa1652840.svg",
+    "coloring-pages/svg/st-patricks-day/st-patricks-day-shamrock-mandala-pattern-8993f17565.svg",
+    "coloring-pages/svg/st-patricks-day/st-patricks-day-unicorn-with-shamrock-mane-1805eaf83d.svg",
+    "coloring-pages/webp/st-patricks-day/st-patricks-day-celtic-knot-mandala-pattern-46e5c80f77.webp",
+    "coloring-pages/webp/st-patricks-day/st-patricks-day-dragon-guarding-pot-of-gold-fcdadb8e6a.webp",
+    "coloring-pages/webp/st-patricks-day/st-patricks-day-irish-castle-on-hilltop-862176e869.webp",
+    "coloring-pages/webp/st-patricks-day/st-patricks-day-irish-harp-with-shamrocks-118da3d1f5.webp",
+    "coloring-pages/webp/st-patricks-day/st-patricks-day-kids-dressed-as-leprechauns-fa10cf2184.webp",
+    "coloring-pages/webp/st-patricks-day/st-patricks-day-leprechaun-dancing-jig-24da6e22e3.webp",
+    "coloring-pages/webp/st-patricks-day/st-patricks-day-leprechaun-holding-shamrock-f607fb59c7.webp",
+    "coloring-pages/webp/st-patricks-day/st-patricks-day-leprechaun-rainbow-and-gold-e0a5ebbce1.webp",
+    "coloring-pages/webp/st-patricks-day/st-patricks-day-leprechaun-with-pot-of-gold-3da829fc28.webp",
+    "coloring-pages/webp/st-patricks-day/st-patricks-day-lucky-clover-field-landscape-606f1c9a7b.webp",
+    "coloring-pages/webp/st-patricks-day/st-patricks-day-lucky-gnome-holding-pot-of-gold-a4cb083c40.webp",
+    "coloring-pages/webp/st-patricks-day/st-patricks-day-lucky-horseshoe-with-clovers-7c1f426b75.webp",
+    "coloring-pages/webp/st-patricks-day/st-patricks-day-pot-of-gold-guarded-by-leprechaun-0cac522f50.webp",
+    "coloring-pages/webp/st-patricks-day/st-patricks-day-pot-of-gold-under-rainbow-1dad44bef5.webp",
+    "coloring-pages/webp/st-patricks-day/st-patricks-day-puppy-wearing-leprechaun-hat-16a305e6b2.webp",
+    "coloring-pages/webp/st-patricks-day/st-patricks-day-rainbow-arch-with-gold-coins-b0dcaa0204.webp",
+    "coloring-pages/webp/st-patricks-day/st-patricks-day-rainbow-over-green-hills-df165a35b6.webp",
+    "coloring-pages/webp/st-patricks-day/st-patricks-day-shamrock-clover-pattern-ffa1652840.webp",
+    "coloring-pages/webp/st-patricks-day/st-patricks-day-shamrock-mandala-pattern-8993f17565.webp",
+    "coloring-pages/webp/st-patricks-day/st-patricks-day-unicorn-with-shamrock-mane-1805eaf83d.webp"
+  ]
+}

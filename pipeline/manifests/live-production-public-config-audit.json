@@ -1,0 +1,35 @@
+{
+  "generatedAt": "2026-05-13T07:40:24.863Z",
+  "runId": "live-production-public-config-audit",
+  "expectedDefaults": {
+    "siteUrl": "https://www.ilovecoloringpage.com",
+    "assetBaseUrl": "https://assets.ilovecoloringpage.com/coloring-pages",
+    "contactEmail": "admin@ilovecoloringpage.com"
+  },
+  "filesAudited": [
+    "siteConfig",
+    "assets",
+    "metadata",
+    "layout",
+    "sitemap",
+    "robots",
+    "contact",
+    "privacy",
+    "terms",
+    "envExample",
+    "netlify"
+  ],
+  "summary": {
+    "siteUrlDefaultPresent": true,
+    "assetBaseDefaultPresent": true,
+    "contactEmailDefaultPresent": true,
+    "nextPublicSiteUrlOptional": true,
+    "nextPublicAssetBaseOptional": true,
+    "nextPublicContactEmailOptional": true,
+    "missingPublicEnvDoesNotBlockProductionBuild": true,
+    "uploadCredentialNamesInAppRuntime": false,
+    "uploadCredentialNamesInNetlify": false,
+    "uploadCredentialNamesInClientFacingCode": false,
+    "publicSafeDefaultsPassed": true
+  }
+}

@@ -1,0 +1,300 @@
+{
+  "checkedAt": "2026-05-13T20:26:37.430Z",
+  "runId": "live-prod-rerun-browser-qa",
+  "siteUrl": "https://www.ilovecoloringpage.com",
+  "screenshotDirectory": "pipeline/review/live-prod-rerun/screenshots",
+  "routes": [
+    "/"
+  ],
+  "viewports": [
+    {
+      "label": "mobile-390",
+      "width": 390,
+      "height": 900
+    },
+    {
+      "label": "tablet-768",
+      "width": 768,
+      "height": 1000
+    },
+    {
+      "label": "desktop-1440",
+      "width": 1440,
+      "height": 1100
+    },
+    {
+      "label": "wide-1920",
+      "width": 1920,
+      "height": 1100
+    }
+  ],
+  "pageResults": [
+    {
+      "route": "/",
+      "url": "https://www.ilovecoloringpage.com/",
+      "status": 200,
+      "viewport": {
+        "label": "mobile-390",
+        "width": 390,
+        "height": 900
+      },
+      "metrics": {
+        "screenshotPath": "pipeline/review/live-prod-rerun/screenshots/mobile-390-home.png",
+        "title": "I Love Coloring Page | Free Printable Coloring Pages for Kids & Adults",
+        "description": "Browse thousands of free printable coloring pages: animals, flowers, mandalas, dinosaurs, ocean life, holidays, fantasy creatures, cartoon characters, geometric patterns, and more. Download or print instantly without signup.",
+        "canonical": "https://ilovecoloringpage.com/",
+        "ogTitle": "I Love Coloring Page | Free Printable Coloring Pages for Kids & Adults",
+        "ogDescription": "Browse thousands of free printable coloring pages: animals, flowers, mandalas, dinosaurs, ocean life, holidays, fantasy creatures, cartoon characters, geometric patterns, and more. Download or print instantly without signup.",
+        "ogImage": "https://ilovecoloringpage.com/og-image.jpg",
+        "bodyContains6352": false,
+        "bodyContains6557": false,
+        "contactEmailPresent": false,
+        "webpPreviewCount": 0,
+        "loadedWebpPreviewCount": 0,
+        "brokenWebpPreviewCount": 0,
+        "previewUnavailableVisibleCount": 0,
+        "customAssetPreviewCount": 0,
+        "nonCustomAssetPreviewCount": 0,
+        "animalsAlligatorAppears": false,
+        "animalsAlligatorImgSrc": "",
+        "animalsAlligatorPreviewRenders": false,
+        "visibleAdvertisementLabels": 0,
+        "navContainsAdvertisement": false,
+        "galleryContainsAdvertisement": false,
+        "hasHorizontalOverflow": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "liveAdSensePresent": false,
+        "localhostPresent": false,
+        "r2DevPresent": false,
+        "duplicatePrefixPresent": false,
+        "appApiRefs": false,
+        "svgDownloadVisible": false,
+        "canonicalUsesSiteUrl": false
+      },
+      "error": ""
+    },
+    {
+      "route": "/",
+      "url": "https://www.ilovecoloringpage.com/",
+      "status": 200,
+      "viewport": {
+        "label": "tablet-768",
+        "width": 768,
+        "height": 1000
+      },
+      "metrics": {
+        "screenshotPath": "pipeline/review/live-prod-rerun/screenshots/tablet-768-home.png",
+        "title": "I Love Coloring Page | Free Printable Coloring Pages for Kids & Adults",
+        "description": "Browse thousands of free printable coloring pages: animals, flowers, mandalas, dinosaurs, ocean life, holidays, fantasy creatures, cartoon characters, geometric patterns, and more. Download or print instantly without signup.",
+        "canonical": "https://ilovecoloringpage.com/",
+        "ogTitle": "I Love Coloring Page | Free Printable Coloring Pages for Kids & Adults",
+        "ogDescription": "Browse thousands of free printable coloring pages: animals, flowers, mandalas, dinosaurs, ocean life, holidays, fantasy creatures, cartoon characters, geometric patterns, and more. Download or print instantly without signup.",
+        "ogImage": "https://ilovecoloringpage.com/og-image.jpg",
+        "bodyContains6352": false,
+        "bodyContains6557": false,
+        "contactEmailPresent": false,
+        "webpPreviewCount": 0,
+        "loadedWebpPreviewCount": 0,
+        "brokenWebpPreviewCount": 0,
+        "previewUnavailableVisibleCount": 0,
+        "customAssetPreviewCount": 0,
+        "nonCustomAssetPreviewCount": 0,
+        "animalsAlligatorAppears": false,
+        "animalsAlligatorImgSrc": "",
+        "animalsAlligatorPreviewRenders": false,
+        "visibleAdvertisementLabels": 0,
+        "navContainsAdvertisement": false,
+        "galleryContainsAdvertisement": false,
+        "hasHorizontalOverflow": false,
+        "scrollWidth": 768,
+        "clientWidth": 768,
+        "liveAdSensePresent": false,
+        "localhostPresent": false,
+        "r2DevPresent": false,
+        "duplicatePrefixPresent": false,
+        "appApiRefs": false,
+        "svgDownloadVisible": false,
+        "canonicalUsesSiteUrl": false
+      },
+      "error": ""
+    },
+    {
+      "route": "/",
+      "url": "https://www.ilovecoloringpage.com/",
+      "status": 200,
+      "viewport": {
+        "label": "desktop-1440",
+        "width": 1440,
+        "height": 1100
+      },
+      "metrics": {
+        "screenshotPath": "pipeline/review/live-prod-rerun/screenshots/desktop-1440-home.png",
+        "title": "I Love Coloring Page | Free Printable Coloring Pages for Kids & Adults",
+        "description": "Browse thousands of free printable coloring pages: animals, flowers, mandalas, dinosaurs, ocean life, holidays, fantasy creatures, cartoon characters, geometric patterns, and more. Download or print instantly without signup.",
+        "canonical": "https://ilovecoloringpage.com/",
+        "ogTitle": "I Love Coloring Page | Free Printable Coloring Pages for Kids & Adults",
+        "ogDescription": "Browse thousands of free printable coloring pages: animals, flowers, mandalas, dinosaurs, ocean life, holidays, fantasy creatures, cartoon characters, geometric patterns, and more. Download or print instantly without signup.",
+        "ogImage": "https://ilovecoloringpage.com/og-image.jpg",
+        "bodyContains6352": false,
+        "bodyContains6557": false,
+        "contactEmailPresent": false,
+        "webpPreviewCount": 0,
+        "loadedWebpPreviewCount": 0,
+        "brokenWebpPreviewCount": 0,
+        "previewUnavailableVisibleCount": 0,
+        "customAssetPreviewCount": 0,
+        "nonCustomAssetPreviewCount": 0,
+        "animalsAlligatorAppears": false,
+        "animalsAlligatorImgSrc": "",
+        "animalsAlligatorPreviewRenders": false,
+        "visibleAdvertisementLabels": 0,
+        "navContainsAdvertisement": false,
+        "galleryContainsAdvertisement": false,
+        "hasHorizontalOverflow": false,
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "liveAdSensePresent": false,
+        "localhostPresent": false,
+        "r2DevPresent": false,
+        "duplicatePrefixPresent": false,
+        "appApiRefs": false,
+        "svgDownloadVisible": false,
+        "canonicalUsesSiteUrl": false
+      },
+      "error": ""
+    },
+    {
+      "route": "/",
+      "url": "https://www.ilovecoloringpage.com/",
+      "status": 200,
+      "viewport": {
+        "label": "wide-1920",
+        "width": 1920,
+        "height": 1100
+      },
+      "metrics": {
+        "screenshotPath": "pipeline/review/live-prod-rerun/screenshots/wide-1920-home.png",
+        "title": "I Love Coloring Page | Free Printable Coloring Pages for Kids & Adults",
+        "description": "Browse thousands of free printable coloring pages: animals, flowers, mandalas, dinosaurs, ocean life, holidays, fantasy creatures, cartoon characters, geometric patterns, and more. Download or print instantly without signup.",
+        "canonical": "https://ilovecoloringpage.com/",
+        "ogTitle": "I Love Coloring Page | Free Printable Coloring Pages for Kids & Adults",
+        "ogDescription": "Browse thousands of free printable coloring pages: animals, flowers, mandalas, dinosaurs, ocean life, holidays, fantasy creatures, cartoon characters, geometric patterns, and more. Download or print instantly without signup.",
+        "ogImage": "https://ilovecoloringpage.com/og-image.jpg",
+        "bodyContains6352": false,
+        "bodyContains6557": false,
+        "contactEmailPresent": false,
+        "webpPreviewCount": 0,
+        "loadedWebpPreviewCount": 0,
+        "brokenWebpPreviewCount": 0,
+        "previewUnavailableVisibleCount": 0,
+        "customAssetPreviewCount": 0,
+        "nonCustomAssetPreviewCount": 0,
+        "animalsAlligatorAppears": false,
+        "animalsAlligatorImgSrc": "",
+        "animalsAlligatorPreviewRenders": false,
+        "visibleAdvertisementLabels": 0,
+        "navContainsAdvertisement": false,
+        "galleryContainsAdvertisement": false,
+        "hasHorizontalOverflow": false,
+        "scrollWidth": 1920,
+        "clientWidth": 1920,
+        "liveAdSensePresent": false,
+        "localhostPresent": false,
+        "r2DevPresent": false,
+        "duplicatePrefixPresent": false,
+        "appApiRefs": false,
+        "svgDownloadVisible": false,
+        "canonicalUsesSiteUrl": false
+      },
+      "error": ""
+    }
+  ],
+  "interactions": {
+    "search": {
+      "attempted": false,
+      "passed": false,
+      "details": "Live production deployment is stale or non-root routes are blocked, so live browser interactions, print, and downloads are not accepted."
+    },
+    "filter": {
+      "attempted": false,
+      "passed": false,
+      "details": "Live production deployment is stale or non-root routes are blocked, so live browser interactions, print, and downloads are not accepted."
+    },
+    "pagination": {
+      "attempted": false,
+      "passed": false,
+      "details": "Live production deployment is stale or non-root routes are blocked, so live browser interactions, print, and downloads are not accepted."
+    },
+    "moreMenu": {
+      "attempted": false,
+      "passed": false,
+      "details": "Live production deployment is stale or non-root routes are blocked, so live browser interactions, print, and downloads are not accepted."
+    },
+    "mobileNav": {
+      "attempted": false,
+      "passed": false,
+      "details": "Live production deployment is stale or non-root routes are blocked, so live browser interactions, print, and downloads are not accepted."
+    }
+  },
+  "summary": {
+    "fullQaAllowed": false,
+    "blockedByStaleDeployment": true,
+    "pagesInspected": 4,
+    "webpGalleryPreviewsRender": false,
+    "homepagePreviewGridRendersImages": false,
+    "coloringPagesGalleryRendersImages": false,
+    "animalsAlligatorPreviewRenders": false,
+    "noPreviewUnavailableForVisibleUploadedRecords": false,
+    "noBrokenImageIcons": false,
+    "deferredRecordsHidden": false,
+    "homepageCountShows6352": false,
+    "coloringPagesCountShows6352": false,
+    "searchWorks": false,
+    "filterWorks": true,
+    "paginationWorks": true,
+    "moreMenuWorks": false,
+    "mobileNavWorks": false,
+    "noHorizontalOverflow": false,
+    "trustPagesRender": false,
+    "contactEmailAppears": false,
+    "noLiveAdSenseCode": true,
+    "svgUserDownloadAbsent": true
+  },
+  "galleryFailures": [
+    {
+      "route": "/",
+      "viewport": "mobile-390",
+      "loadedWebpPreviewCount": 0,
+      "brokenWebpPreviewCount": 0,
+      "previewUnavailableVisibleCount": 0,
+      "nonCustomAssetPreviewCount": 0
+    },
+    {
+      "route": "/",
+      "viewport": "tablet-768",
+      "loadedWebpPreviewCount": 0,
+      "brokenWebpPreviewCount": 0,
+      "previewUnavailableVisibleCount": 0,
+      "nonCustomAssetPreviewCount": 0
+    },
+    {
+      "route": "/",
+      "viewport": "desktop-1440",
+      "loadedWebpPreviewCount": 0,
+      "brokenWebpPreviewCount": 0,
+      "previewUnavailableVisibleCount": 0,
+      "nonCustomAssetPreviewCount": 0
+    },
+    {
+      "route": "/",
+      "viewport": "wide-1920",
+      "loadedWebpPreviewCount": 0,
+      "brokenWebpPreviewCount": 0,
+      "previewUnavailableVisibleCount": 0,
+      "nonCustomAssetPreviewCount": 0
+    }
+  ],
+  "horizontalOverflowPages": [],
+  "passed": false
+}

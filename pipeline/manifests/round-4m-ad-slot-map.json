@@ -1,0 +1,112 @@
+{
+  "generatedAt": "2026-05-10T21:29:16.624Z",
+  "runId": "round-4m-ads-nav-polish",
+  "uploadOrAdCodeExecuted": false,
+  "summary": {
+    "slotCount": 8,
+    "liveAdCodeAdded": false,
+    "desktopRailsSticky": false,
+    "hiddenByDefault": true,
+    "enabledByEnvFlag": "NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS=1"
+  },
+  "slots": [
+    {
+      "slotId": "global-desktop-rail",
+      "pageScope": "global shell",
+      "placement": "desktop-rail",
+      "label": "Advertisement",
+      "targetObject": "future display ad",
+      "viewport": "wide desktop only",
+      "nearPrintDownloadControls": false,
+      "liveAdCode": false
+    },
+    {
+      "slotId": "home-after-hero",
+      "pageScope": "/",
+      "placement": "inline",
+      "label": "Advertisement",
+      "targetObject": "future inline display ad",
+      "viewport": "desktop, tablet, mobile when explicitly enabled",
+      "nearPrintDownloadControls": false,
+      "liveAdCode": false
+    },
+    {
+      "slotId": "home-lower-content",
+      "pageScope": "/",
+      "placement": "lower-content",
+      "label": "Advertisement",
+      "targetObject": "future inline display ad",
+      "viewport": "desktop, tablet, mobile when explicitly enabled",
+      "nearPrintDownloadControls": false,
+      "liveAdCode": false
+    },
+    {
+      "slotId": "coloring-pages-after-featured",
+      "pageScope": "/coloring-pages",
+      "placement": "inline",
+      "label": "Advertisement",
+      "targetObject": "future inline display ad",
+      "viewport": "desktop, tablet, mobile when explicitly enabled",
+      "nearPrintDownloadControls": false,
+      "liveAdCode": false
+    },
+    {
+      "slotId": "coloring-pages-lower-content",
+      "pageScope": "/coloring-pages",
+      "placement": "lower-content",
+      "label": "Advertisement",
+      "targetObject": "future inline display ad",
+      "viewport": "desktop, tablet, mobile when explicitly enabled",
+      "nearPrintDownloadControls": false,
+      "liveAdCode": false
+    },
+    {
+      "slotId": "hub-after-gallery",
+      "pageScope": "/coloring-pages/[hubSlug]",
+      "placement": "inline",
+      "label": "Advertisement",
+      "targetObject": "future inline display ad",
+      "viewport": "desktop, tablet, mobile when explicitly enabled",
+      "nearPrintDownloadControls": false,
+      "liveAdCode": false
+    },
+    {
+      "slotId": "hub-lower-content",
+      "pageScope": "/coloring-pages/[hubSlug]",
+      "placement": "lower-content",
+      "label": "Advertisement",
+      "targetObject": "future inline display ad",
+      "viewport": "desktop, tablet, mobile when explicitly enabled",
+      "nearPrintDownloadControls": false,
+      "liveAdCode": false
+    },
+    {
+      "slotId": "wide-hub-rail",
+      "pageScope": "/coloring-pages/[hubSlug]",
+      "placement": "desktop-rail",
+      "label": "Advertisement",
+      "targetObject": "future display ad",
+      "viewport": "wide desktop only",
+      "nearPrintDownloadControls": false,
+      "liveAdCode": false
+    }
+  ],
+  "forbiddenPlacements": [
+    "Inside gallery grids as fake cards",
+    "Inside image cards",
+    "Inside navigation",
+    "Beside Print/Download controls",
+    "Between image preview and action row"
+  ],
+  "mobileBehavior": [
+    "No mobile top banner by default",
+    "Inline slots remain hidden unless explicitly enabled for QA",
+    "No ad slot is placed near the mobile menu trigger"
+  ],
+  "desktopSideRailBehavior": [
+    "Only visible when placeholders are enabled",
+    "Only visible on wide desktop breakpoints",
+    "Not sticky in Round 4M",
+    "Placed outside the main content column"
+  ]
+}

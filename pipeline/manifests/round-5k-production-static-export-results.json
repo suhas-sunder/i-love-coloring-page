@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-05-13T01:39:41.132Z",
+  "runId": "round-5k-production-static-export-results",
+  "command": "npm run build",
+  "env": {
+    "NEXT_PUBLIC_SITE_URL": "https://www.ilovecoloringpage.com",
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL": "https://assets.ilovecoloringpage.com/coloring-pages",
+    "NEXT_PUBLIC_CONTACT_EMAIL": "admin@ilovecoloringpage.com"
+  },
+  "summary": {
+    "status": "completed",
+    "buildExitCode": 0,
+    "staticExportWorks": true,
+    "outFileCount": 5381,
+    "localhostLeakagePresent": false,
+    "r2DevLeakagePresent": false,
+    "privateR2EndpointLeakagePresent": false,
+    "sourceFilePathLeakagePresent": false,
+    "oldTestPrefixPresent": false,
+    "duplicateColoringPagesPrefixPresent": false,
+    "downloadSvgLabelsOrLinksPresent": false,
+    "appApiRouteReferencesPresent": false,
+    "liveAdSenseCodePresent": false,
+    "badCanonicalUrlsPresent": false,
+    "badSitemapUrlsPresent": false,
+    "contactEmailPresent": true,
+    "wrongContactEmailPresent": false
+  },
+  "badCanonicalUrls": [],
+  "badSitemapUrls": [],
+  "stdoutTail": "\n> i-love-coloring-page@0.1.0 build\n> next build\n\n▲ Next.js 16.2.6 (Turbopack)\n- Environments: .env.local\n\n  Creating an optimized production build ...\n✓ Compiled successfully in 3.0s\n  Running TypeScript ...\n  Finished TypeScript in 6.7s ...\n  Collecting page data using 16 workers ...\n  Generating static pages using 16 workers (0/505) ...\n  Generating static pages using 16 workers (126/505) \n  Generating static pages using 16 workers (252/505) \n  Generating static pages using 16 workers (378/505) \n✓ Generating static pages using 16 workers (505/505) in 10.9s\n  Finalizing page optimization ...\n\nRoute (app)\n┌ ○ /\n├ ○ /_not-found\n├ ○ /about\n├ ○ /affiliate-disclosure\n├ ○ /coloring-pages\n├ ● /coloring-pages/[hubSlug]\n│ ├ /coloring-pages/animals\n│ ├ /coloring-pages/anime-girls\n│ ├ /coloring-pages/beetles\n│ └ [+61 more paths]\n├ ● /coloring-pages/[hubSlug]/page/[page]\n│ ├ /coloring-pages/animals/page/2\n│ ├ /coloring-pages/animals/page/3\n│ ├ /coloring-pages/animals/page/4\n│ └ [+425 more paths]\n├ ○ /contact\n├ ○ /editorial-policy\n├ ○ /icon.svg\n├ ○ /privacy\n├ ○ /robots.txt\n├ ○ /sitemap.xml\n└ ○ /terms\n\n\n○  (Static)  prerendered as static content\n●  (SSG)     prerendered as static HTML (uses generateStaticParams)\n\n",
+  "stderrTail": "",
+  "blockers": []
+}

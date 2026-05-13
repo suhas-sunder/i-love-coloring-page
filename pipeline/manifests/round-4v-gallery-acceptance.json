@@ -1,0 +1,432 @@
+{
+  "generatedAt": "2026-05-11T06:29:55.583Z",
+  "runId": "round-4v-owner-acceptance",
+  "pagesInspected": [
+    "/",
+    "/coloring-pages",
+    "/coloring-pages/animals",
+    "/coloring-pages/geometric",
+    "/coloring-pages/anime-girls",
+    "/coloring-pages/mandalas",
+    "/coloring-pages/chibi",
+    "/coloring-pages/fantasy",
+    "/coloring-pages/christmas",
+    "/coloring-pages/halloween",
+    "/coloring-pages/plushies"
+  ],
+  "summary": {
+    "accepted": true,
+    "realImagesRender": true,
+    "noBrokenImageIcons": true,
+    "noBrokenAltTextPlaceholders": true,
+    "hubSearchFilterWorks": true,
+    "imageClickAnchorsWork": true,
+    "printVisible": true,
+    "printWorks": true,
+    "downloadPngVisible": true,
+    "downloadPngWorks": true,
+    "noDownloadSvgExists": true,
+    "noJpegWebpOptionsAppear": true,
+    "noLayoutShiftFromImageCards": true,
+    "mobileGalleryDoesNotOverflow": true
+  },
+  "galleryChecks": [
+    {
+      "pagePath": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "mediaState": {
+        "loadedImageCount": 14,
+        "assetImageCount": 14,
+        "assetPlaceholderCount": 0
+      },
+      "imageState": {
+        "assetImageCount": 14,
+        "loadedImageCount": 14,
+        "brokenImageCount": 0,
+        "brokenAltTextPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 1440,
+        "documentScrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4v/screenshots/desktop/home-gallery-desktop-1440.png",
+          "visibleAdvertisementLabelCount": null,
+          "expectedAdvertisementLabelCount": null,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "mediaState": {
+        "loadedImageCount": 26,
+        "assetImageCount": 66,
+        "assetPlaceholderCount": 0
+      },
+      "imageState": {
+        "assetImageCount": 66,
+        "loadedImageCount": 26,
+        "brokenImageCount": 0,
+        "brokenAltTextPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 1440,
+        "documentScrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4v/screenshots/desktop/coloring-pages-gallery-desktop-1440.png",
+          "visibleAdvertisementLabelCount": null,
+          "expectedAdvertisementLabelCount": null,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages/animals",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "mediaState": {
+        "loadedImageCount": 26,
+        "assetImageCount": 66,
+        "assetPlaceholderCount": 0
+      },
+      "imageState": {
+        "assetImageCount": 66,
+        "loadedImageCount": 26,
+        "brokenImageCount": 0,
+        "brokenAltTextPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 1440,
+        "documentScrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4v/screenshots/desktop/coloring-pages-animals-gallery-desktop-1440.png",
+          "visibleAdvertisementLabelCount": null,
+          "expectedAdvertisementLabelCount": null,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages/geometric",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "mediaState": {
+        "loadedImageCount": 26,
+        "assetImageCount": 66,
+        "assetPlaceholderCount": 0
+      },
+      "imageState": {
+        "assetImageCount": 66,
+        "loadedImageCount": 26,
+        "brokenImageCount": 0,
+        "brokenAltTextPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 1440,
+        "documentScrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4v/screenshots/desktop/coloring-pages-geometric-gallery-desktop-1440.png",
+          "visibleAdvertisementLabelCount": null,
+          "expectedAdvertisementLabelCount": null,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages/anime-girls",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "mediaState": {
+        "loadedImageCount": 26,
+        "assetImageCount": 66,
+        "assetPlaceholderCount": 0
+      },
+      "imageState": {
+        "assetImageCount": 66,
+        "loadedImageCount": 26,
+        "brokenImageCount": 0,
+        "brokenAltTextPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 1440,
+        "documentScrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4v/screenshots/desktop/coloring-pages-anime-girls-gallery-desktop-1440.png",
+          "visibleAdvertisementLabelCount": null,
+          "expectedAdvertisementLabelCount": null,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages/mandalas",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "mediaState": {
+        "loadedImageCount": 26,
+        "assetImageCount": 66,
+        "assetPlaceholderCount": 0
+      },
+      "imageState": {
+        "assetImageCount": 66,
+        "loadedImageCount": 26,
+        "brokenImageCount": 0,
+        "brokenAltTextPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 1440,
+        "documentScrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4v/screenshots/desktop/coloring-pages-mandalas-gallery-desktop-1440.png",
+          "visibleAdvertisementLabelCount": null,
+          "expectedAdvertisementLabelCount": null,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages/chibi",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "mediaState": {
+        "loadedImageCount": 26,
+        "assetImageCount": 66,
+        "assetPlaceholderCount": 0
+      },
+      "imageState": {
+        "assetImageCount": 66,
+        "loadedImageCount": 26,
+        "brokenImageCount": 0,
+        "brokenAltTextPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 1440,
+        "documentScrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4v/screenshots/desktop/coloring-pages-chibi-gallery-desktop-1440.png",
+          "visibleAdvertisementLabelCount": null,
+          "expectedAdvertisementLabelCount": null,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages/fantasy",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "mediaState": {
+        "loadedImageCount": 26,
+        "assetImageCount": 66,
+        "assetPlaceholderCount": 0
+      },
+      "imageState": {
+        "assetImageCount": 66,
+        "loadedImageCount": 26,
+        "brokenImageCount": 0,
+        "brokenAltTextPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 1440,
+        "documentScrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4v/screenshots/desktop/coloring-pages-fantasy-gallery-desktop-1440.png",
+          "visibleAdvertisementLabelCount": null,
+          "expectedAdvertisementLabelCount": null,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages/christmas",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "mediaState": {
+        "loadedImageCount": 26,
+        "assetImageCount": 66,
+        "assetPlaceholderCount": 0
+      },
+      "imageState": {
+        "assetImageCount": 66,
+        "loadedImageCount": 26,
+        "brokenImageCount": 0,
+        "brokenAltTextPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 1440,
+        "documentScrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4v/screenshots/desktop/coloring-pages-christmas-gallery-desktop-1440.png",
+          "visibleAdvertisementLabelCount": null,
+          "expectedAdvertisementLabelCount": null,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages/halloween",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "mediaState": {
+        "loadedImageCount": 26,
+        "assetImageCount": 66,
+        "assetPlaceholderCount": 0
+      },
+      "imageState": {
+        "assetImageCount": 66,
+        "loadedImageCount": 26,
+        "brokenImageCount": 0,
+        "brokenAltTextPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 1440,
+        "documentScrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4v/screenshots/desktop/coloring-pages-halloween-gallery-desktop-1440.png",
+          "visibleAdvertisementLabelCount": null,
+          "expectedAdvertisementLabelCount": null,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages/plushies",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "mediaState": {
+        "loadedImageCount": 26,
+        "assetImageCount": 66,
+        "assetPlaceholderCount": 0
+      },
+      "imageState": {
+        "assetImageCount": 66,
+        "loadedImageCount": 26,
+        "brokenImageCount": 0,
+        "brokenAltTextPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 1440,
+        "documentScrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4v/screenshots/desktop/coloring-pages-plushies-gallery-desktop-1440.png",
+          "visibleAdvertisementLabelCount": null,
+          "expectedAdvertisementLabelCount": null,
+          "committed": false
+        }
+      ]
+    }
+  ],
+  "printDownload": {
+    "route": "/coloring-pages/animals",
+    "hubSearchFilterWorks": true,
+    "imageClickAnchorsWork": true,
+    "printVisible": true,
+    "printWorks": true,
+    "printPopupImageLoaded": true,
+    "downloadPngVisible": true,
+    "downloadPngWorks": true,
+    "downloadPngHttpStatus": 200,
+    "downloadPngContentType": "image/png",
+    "suggestedFilename": "chibi-animals-pets-dogs-afghan-hound-d9a83b6ec9.png",
+    "noDownloadSvgExists": true,
+    "noJpegWebpOptionsAppear": true,
+    "screenshots": [
+      {
+        "path": "pipeline/review/round-4v/screenshots/desktop/animals-print-download-verified.png",
+        "visibleAdvertisementLabelCount": null,
+        "expectedAdvertisementLabelCount": null,
+        "committed": false
+      }
+    ]
+  }
+}

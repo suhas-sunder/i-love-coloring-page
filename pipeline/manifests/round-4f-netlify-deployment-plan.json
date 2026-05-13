@@ -1,0 +1,28 @@
+{
+  "generatedAt": "2026-05-10",
+  "runId": "round-4f-frontend-only-netlify-static",
+  "hostingTarget": "Netlify",
+  "deploymentMode": "static-export",
+  "build": {
+    "command": "npm run build",
+    "publishDirectory": "out",
+    "nodeVersion": "22"
+  },
+  "requiredEnvironmentVariables": [
+    "NEXT_PUBLIC_SITE_URL",
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL"
+  ],
+  "optionalEnvironmentVariables": [],
+  "functionsRequired": false,
+  "edgeFunctionsRequired": false,
+  "mediaRuntime": {
+    "servedByApp": false,
+    "servedByCdnOrObjectStorage": true,
+    "assetBaseUrlVariable": "NEXT_PUBLIC_COLORING_ASSET_BASE_URL"
+  },
+  "preview": {
+    "withPublicMedia": "Set NEXT_PUBLIC_COLORING_ASSET_BASE_URL to the CDN or object-storage base URL before build.",
+    "withLocalMediaNoBackend": "Serve pipeline/production/full/assets with a separate static file server and use that URL as NEXT_PUBLIC_COLORING_ASSET_BASE_URL.",
+    "withoutMediaBaseUrl": "Gallery pages render clean placeholders and no download or print URLs."
+  }
+}

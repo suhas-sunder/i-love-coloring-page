@@ -1,0 +1,37 @@
+{
+  "generatedAt": "2026-05-12T18:20:46.138Z",
+  "runId": "round-5i-custom-domain-url-results",
+  "sourcePlan": "pipeline/manifests/round-5c-svg-webp-url-verification-plan.json",
+  "summary": {
+    "status": "not_run",
+    "plannedUrlCount": 60,
+    "plannedSvgUrlCount": 30,
+    "plannedWebpUrlCount": 30,
+    "checkedUrlCount": 0,
+    "http200Count": 0,
+    "headOkCount": 0,
+    "svgContentTypePassCount": 0,
+    "webpContentTypePassCount": 0,
+    "nonZeroByteCount": 0,
+    "noAccessDeniedXml": null,
+    "noCloudflareR2ErrorHtml": null,
+    "noPrivateEndpointRedirect": null,
+    "noOldTestPrefix": true,
+    "noDuplicateColoringPagesPrefix": true,
+    "noLocalFilesystemPathLeak": null,
+    "cacheHeadersObserved": [],
+    "corsHeadersObserved": [],
+    "svg_urls_passed": false,
+    "webp_urls_passed": false,
+    "customDomainUrlVerificationPassed": false
+  },
+  "checks": [],
+  "blockers": [
+    "Custom-domain URL verification was not run because production-like env validation failed.",
+    "NEXT_PUBLIC_SITE_URL is not configured.",
+    "NEXT_PUBLIC_SITE_URL is not a valid URL.",
+    "NEXT_PUBLIC_SITE_URL must be HTTPS for production-like verification.",
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL must be HTTPS.",
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL must not be localhost or loopback."
+  ]
+}

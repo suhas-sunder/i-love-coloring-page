@@ -1,0 +1,2719 @@
+{
+  "generatedAt": "2026-05-10",
+  "runId": "round-4i-full-cloudflare-r2-upload-bundle",
+  "status": "not_run",
+  "reason": "dry_run_full_upload_not_completed",
+  "planPath": "pipeline/manifests/round-4i-full-r2-url-verification-plan.json",
+  "summary": {
+    "urlsPlanned": 300,
+    "urlsChecked": 0,
+    "passed": 0,
+    "failed": 0,
+    "skipped": 300,
+    "oldPrefixFailures": 0,
+    "doublePrefixFailures": 0,
+    "privateEndpointRedirects": 0
+  },
+  "entries": [
+    {
+      "assetId": "animals-playing-cards__animals-armadillo__1a6eaccdef",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals-playing-cards/animals-armadillo-1a6eaccdef.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-armadillo__1a6eaccdef",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals-playing-cards/animals-armadillo-1a6eaccdef.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-armadillo__1a6eaccdef",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals-playing-cards/animals-armadillo-1a6eaccdef-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-ankylosaurus-hoodie-plushie__c819919e77",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-c819919e77.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-ankylosaurus-hoodie-plushie__c819919e77",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-c819919e77.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-ankylosaurus-hoodie-plushie__c819919e77",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-c819919e77-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-armadillos-wildlife__f2912c1ad5",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals-playing-cards/animals-armadillos-wildlife-f2912c1ad5.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-armadillos-wildlife__f2912c1ad5",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals-playing-cards/animals-armadillos-wildlife-f2912c1ad5.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-armadillos-wildlife__f2912c1ad5",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals-playing-cards/animals-armadillos-wildlife-f2912c1ad5-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "mandala-geometry-patterns__chatgpt-image-oct-14-2025-11-38-05-pm__ea62e476c5",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/mandala-geometry-patterns/chatgpt-image-oct-14-2025-11-38-05-pm-ea62e476c5.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "mandala-geometry-patterns__chatgpt-image-oct-14-2025-11-38-05-pm__ea62e476c5",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/mandala-geometry-patterns/chatgpt-image-oct-14-2025-11-38-05-pm-ea62e476c5.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "mandala-geometry-patterns__chatgpt-image-oct-14-2025-11-38-05-pm__ea62e476c5",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/mandala-geometry-patterns/chatgpt-image-oct-14-2025-11-38-05-pm-ea62e476c5-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "mandala-geometry-patterns__failed-chatgpt-image-oct-19-2025-10-27-27-pm__a0411d2e82",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/mandala-geometry-patterns/failed-chatgpt-image-oct-19-2025-10-27-27-pm-a0411d2e82.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "mandala-geometry-patterns__failed-chatgpt-image-oct-19-2025-10-27-27-pm__a0411d2e82",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/mandala-geometry-patterns/failed-chatgpt-image-oct-19-2025-10-27-27-pm-a0411d2e82.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "mandala-geometry-patterns__failed-chatgpt-image-oct-19-2025-10-27-27-pm__a0411d2e82",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/mandala-geometry-patterns/failed-chatgpt-image-oct-19-2025-10-27-27-pm-a0411d2e82-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-abstract-mandala__29dbb1eecf",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/mandala-geometry-patterns/mandala-geometry-patterns-abstract-mandala-29dbb1eecf.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-abstract-mandala__29dbb1eecf",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/mandala-geometry-patterns/mandala-geometry-patterns-abstract-mandala-29dbb1eecf.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-abstract-mandala__29dbb1eecf",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-abstract-mandala-29dbb1eecf-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-kittens__8845a4bedb",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals-playing-cards/animals-kittens-8845a4bedb.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-kittens__8845a4bedb",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals-playing-cards/animals-kittens-8845a4bedb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-kittens__8845a4bedb",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals-playing-cards/animals-kittens-8845a4bedb-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-centaur-standoff__d462b8fcc6",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-centaur-standoff-d462b8fcc6.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-centaur-standoff__d462b8fcc6",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-centaur-standoff-d462b8fcc6.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-centaur-standoff__d462b8fcc6",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-centaur-standoff-d462b8fcc6-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-chibi-bear-summon__443fa88c61",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-chibi-bear-summon-443fa88c61.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-chibi-bear-summon__443fa88c61",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-chibi-bear-summon-443fa88c61.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-chibi-bear-summon__443fa88c61",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-chibi-bear-summon-443fa88c61-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-chibi-cow-summon__4b2d037f54",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-chibi-cow-summon-4b2d037f54.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-chibi-cow-summon__4b2d037f54",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-chibi-cow-summon-4b2d037f54.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-chibi-cow-summon__4b2d037f54",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-chibi-cow-summon-4b2d037f54-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-air-balloon__1f6b5be7bc",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-air-balloon-1f6b5be7bc.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-air-balloon__1f6b5be7bc",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-air-balloon-1f6b5be7bc.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-air-balloon__1f6b5be7bc",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-air-balloon-1f6b5be7bc-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-birthday-cake__a75fa3e263",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-birthday-cake-a75fa3e263.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-birthday-cake__a75fa3e263",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-birthday-cake-a75fa3e263.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-birthday-cake__a75fa3e263",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-birthday-cake-a75fa3e263-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-field-of-flowers-nature__401fe52b71",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-field-of-flowers-nature-401fe52b71.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-field-of-flowers-nature__401fe52b71",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-field-of-flowers-nature-401fe52b71.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-field-of-flowers-nature__401fe52b71",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-field-of-flowers-nature-401fe52b71-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-climbing-dragon__f3f56244b8",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-climbing-dragon-f3f56244b8.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-climbing-dragon__f3f56244b8",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-climbing-dragon-f3f56244b8.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-climbing-dragon__f3f56244b8",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-climbing-dragon-f3f56244b8-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-field-of-flowers__c6343aeefe",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-field-of-flowers-c6343aeefe.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-field-of-flowers__c6343aeefe",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-field-of-flowers-c6343aeefe.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-field-of-flowers__c6343aeefe",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-field-of-flowers-c6343aeefe-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-cute-teddy-bear-plushie__9e3171aa9b",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-cute-teddy-bear-plushie-9e3171aa9b.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-cute-teddy-bear-plushie__9e3171aa9b",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-cute-teddy-bear-plushie-9e3171aa9b.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-cute-teddy-bear-plushie__9e3171aa9b",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-cute-teddy-bear-plushie-9e3171aa9b-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-driving-race-car-driving__07de9e75de",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-driving-race-car-driving-07de9e75de.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-driving-race-car-driving__07de9e75de",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-driving-race-car-driving-07de9e75de.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-driving-race-car-driving__07de9e75de",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-driving-race-car-driving-07de9e75de-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "christmas__christmas-holiday-advent-calendar__a1245c4617",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/christmas/christmas-holiday-advent-calendar-a1245c4617.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "christmas__christmas-holiday-advent-calendar__a1245c4617",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/christmas/christmas-holiday-advent-calendar-a1245c4617.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "christmas__christmas-holiday-advent-calendar__a1245c4617",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/christmas/christmas-holiday-advent-calendar-a1245c4617-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-zombie-halloween-png__93ec2c4c40",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-zombie-halloween-png-93ec2c4c40.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-zombie-halloween-png__93ec2c4c40",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-zombie-halloween-png-93ec2c4c40.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-zombie-halloween-png__93ec2c4c40",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-zombie-halloween-png-93ec2c4c40-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-dog__18819a83c1",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals/animals-dog-18819a83c1.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-dog__18819a83c1",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals/animals-dog-18819a83c1.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-dog__18819a83c1",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals/animals-dog-18819a83c1-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-greek-mythology__d024d88a00",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-greek-mythology-d024d88a00.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-greek-mythology__d024d88a00",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-greek-mythology-d024d88a00.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-greek-mythology__d024d88a00",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-greek-mythology-d024d88a00-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-smelling-daisies-in-garden__8e712687ca",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-smelling-daisies-in-garden-8e712687ca.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-smelling-daisies-in-garden__8e712687ca",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-smelling-daisies-in-garden-8e712687ca.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-smelling-daisies-in-garden__8e712687ca",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-smelling-daisies-in-garden-8e712687ca-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-celetbrating-birthday-cake__3e754f4081",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-celetbrating-birthday-cake-3e754f4081.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-celetbrating-birthday-cake__3e754f4081",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-celetbrating-birthday-cake-3e754f4081.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-celetbrating-birthday-cake__3e754f4081",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-celetbrating-birthday-cake-3e754f4081-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-dolphins__06e09058c7",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals/animals-dolphins-06e09058c7.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-dolphins__06e09058c7",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals/animals-dolphins-06e09058c7.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-dolphins__06e09058c7",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals/animals-dolphins-06e09058c7-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-brachiosaurus-hoodie-plushie__73442e8b67",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-73442e8b67.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-brachiosaurus-hoodie-plushie__73442e8b67",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-73442e8b67.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-brachiosaurus-hoodie-plushie__73442e8b67",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-73442e8b67-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bunny-birthday-party__4a4860c7ac",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-bunny-birthday-party-4a4860c7ac.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bunny-birthday-party__4a4860c7ac",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-bunny-birthday-party-4a4860c7ac.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bunny-birthday-party__4a4860c7ac",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-bunny-birthday-party-4a4860c7ac-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-medieval-knight-armor__55bc056bae",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-medieval-knight-armor-55bc056bae.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-medieval-knight-armor__55bc056bae",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-medieval-knight-armor-55bc056bae.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-medieval-knight-armor__55bc056bae",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-medieval-knight-armor-55bc056bae-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-driving-race-car__df63803a40",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-driving-race-car-df63803a40.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-driving-race-car__df63803a40",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-driving-race-car-df63803a40.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-driving-race-car__df63803a40",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-driving-race-car-df63803a40-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-birds-duck__5c61314642",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-birds-duck-5c61314642.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-birds-duck__5c61314642",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-birds-duck-5c61314642.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-birds-duck__5c61314642",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-birds-duck-5c61314642-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dinosaur-fossil-hoodie-plushie__a77e1d62f4",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-dinosaur-fossil-hoodie-plushie-a77e1d62f4.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dinosaur-fossil-hoodie-plushie__a77e1d62f4",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-dinosaur-fossil-hoodie-plushie-a77e1d62f4.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dinosaur-fossil-hoodie-plushie__a77e1d62f4",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-dinosaur-fossil-hoodie-plushie-a77e1d62f4-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-butterflies__016ffbb0de",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals/animals-butterflies-016ffbb0de.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-butterflies__016ffbb0de",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals/animals-butterflies-016ffbb0de.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-butterflies__016ffbb0de",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals/animals-butterflies-016ffbb0de-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "chibi__chibi-flowers-tulip-garden__68470e6363",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/chibi/chibi-flowers-tulip-garden-68470e6363.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "chibi__chibi-flowers-tulip-garden__68470e6363",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/chibi/chibi-flowers-tulip-garden-68470e6363.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "chibi__chibi-flowers-tulip-garden__68470e6363",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/chibi/chibi-flowers-tulip-garden-68470e6363-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-journaling-at-home__4243797a12",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-journaling-at-home-4243797a12.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-journaling-at-home__4243797a12",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-journaling-at-home-4243797a12.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-journaling-at-home__4243797a12",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-journaling-at-home-4243797a12-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-reptile-martial-arts__8927e39f70",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-reptile-martial-arts-8927e39f70.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-reptile-martial-arts__8927e39f70",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-reptile-martial-arts-8927e39f70.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-reptile-martial-arts__8927e39f70",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-reptile-martial-arts-8927e39f70-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-tentacle-yoga-in-ocean-smiling__dc79a75b99",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-tentacle-yoga-in-ocean-smiling-dc79a75b99.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-tentacle-yoga-in-ocean-smiling__dc79a75b99",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-tentacle-yoga-in-ocean-smiling-dc79a75b99.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-tentacle-yoga-in-ocean-smiling__dc79a75b99",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-tentacle-yoga-in-ocean-smiling-dc79a75b99-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "chibi__chibi-enchanted-forest-fairy-dancing-in-flower-ring__c4cb5961c2",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/chibi/chibi-enchanted-forest-fairy-dancing-in-flower-ring-c4cb5961c2.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "chibi__chibi-enchanted-forest-fairy-dancing-in-flower-ring__c4cb5961c2",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/chibi/chibi-enchanted-forest-fairy-dancing-in-flower-ring-c4cb5961c2.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "chibi__chibi-enchanted-forest-fairy-dancing-in-flower-ring__c4cb5961c2",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/chibi/chibi-enchanted-forest-fairy-dancing-in-flower-ring-c4cb5961c2-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "indoor-plants__idoor-plants-clivia-miniata__5e5f40bdaa",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/indoor-plants/idoor-plants-clivia-miniata-5e5f40bdaa.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "indoor-plants__idoor-plants-clivia-miniata__5e5f40bdaa",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/indoor-plants/idoor-plants-clivia-miniata-5e5f40bdaa.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "indoor-plants__idoor-plants-clivia-miniata__5e5f40bdaa",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/indoor-plants/idoor-plants-clivia-miniata-5e5f40bdaa-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-armadillo-hoodie-animal-plushie__d2e31ff395",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-armadillo-hoodie-animal-plushie-d2e31ff395.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-armadillo-hoodie-animal-plushie__d2e31ff395",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-armadillo-hoodie-animal-plushie-d2e31ff395.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-armadillo-hoodie-animal-plushie__d2e31ff395",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-armadillo-hoodie-animal-plushie-d2e31ff395-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "chibi__chibi-holiday-halloween-ghostly-train-passing-through-tunnel-coloring-pa__e62e0a874f",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/chibi/chibi-holiday-halloween-ghostly-train-passing-through-tunnel-coloring-pa-e62e0a874f.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "chibi__chibi-holiday-halloween-ghostly-train-passing-through-tunnel-coloring-pa__e62e0a874f",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/chibi/chibi-holiday-halloween-ghostly-train-passing-through-tunnel-coloring-pa-e62e0a874f.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "chibi__chibi-holiday-halloween-ghostly-train-passing-through-tunnel-coloring-pa__e62e0a874f",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/chibi/chibi-holiday-halloween-ghostly-train-passing-through-tunnel-coloring-pa-e62e0a874f-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "chibi__chibi-dungeon-adventure-bridge-over-lava__906729f5e5",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/chibi/chibi-dungeon-adventure-bridge-over-lava-906729f5e5.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "chibi__chibi-dungeon-adventure-bridge-over-lava__906729f5e5",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/chibi/chibi-dungeon-adventure-bridge-over-lava-906729f5e5.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "chibi__chibi-dungeon-adventure-bridge-over-lava__906729f5e5",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/chibi/chibi-dungeon-adventure-bridge-over-lava-906729f5e5-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehiacle-planes-a-10-thunderbolt-ii__2b4b4c8bc7",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-planes-a-10-thunderbolt-ii-2b4b4c8bc7.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehiacle-planes-a-10-thunderbolt-ii__2b4b4c8bc7",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-planes-a-10-thunderbolt-ii-2b4b4c8bc7.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehiacle-planes-a-10-thunderbolt-ii__2b4b4c8bc7",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-planes-a-10-thunderbolt-ii-2b4b4c8bc7-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-fluffy-clothes-kawaii__09f36541df",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-fluffy-clothes-kawaii-09f36541df.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-fluffy-clothes-kawaii__09f36541df",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-fluffy-clothes-kawaii-09f36541df.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-fluffy-clothes-kawaii__09f36541df",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-fluffy-clothes-kawaii-09f36541df-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-armadillos__50db4716e5",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals-playing-cards/animals-armadillos-50db4716e5.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-armadillos__50db4716e5",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals-playing-cards/animals-armadillos-50db4716e5.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-armadillos__50db4716e5",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals-playing-cards/animals-armadillos-50db4716e5-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dragon-eggs-hoodie-plushie__b1747e4988",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-dragon-eggs-hoodie-plushie-b1747e4988.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dragon-eggs-hoodie-plushie__b1747e4988",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-dragon-eggs-hoodie-plushie-b1747e4988.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dragon-eggs-hoodie-plushie__b1747e4988",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-dragon-eggs-hoodie-plushie-b1747e4988-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-enchanted-forest-ambush__e6f3722767",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-enchanted-forest-ambush-e6f3722767.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-enchanted-forest-ambush__e6f3722767",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-enchanted-forest-ambush-e6f3722767.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-enchanted-forest-ambush__e6f3722767",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-enchanted-forest-ambush-e6f3722767-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "dragons__dragon-playing-card__dcfa490187",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/dragons/dragon-playing-card-dcfa490187.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "dragons__dragon-playing-card__dcfa490187",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/dragons/dragon-playing-card-dcfa490187.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "dragons__dragon-playing-card__dcfa490187",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/dragons/dragon-playing-card-dcfa490187-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-cats-wildlife__0bb744d570",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals-playing-cards/animals-cats-wildlife-0bb744d570.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-cats-wildlife__0bb744d570",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals-playing-cards/animals-cats-wildlife-0bb744d570.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-cats-wildlife__0bb744d570",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals-playing-cards/animals-cats-wildlife-0bb744d570-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "world-landmarks__world-landmarks-abu-simbel-temples__46e1dff5bc",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/world-landmarks/world-landmarks-abu-simbel-temples-46e1dff5bc.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "world-landmarks__world-landmarks-abu-simbel-temples__46e1dff5bc",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/world-landmarks/world-landmarks-abu-simbel-temples-46e1dff5bc.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "world-landmarks__world-landmarks-abu-simbel-temples__46e1dff5bc",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/world-landmarks/world-landmarks-abu-simbel-temples-46e1dff5bc-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "chibi__chibi-plushie-sea-turtle-hatchling__5ca385e431",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/chibi/chibi-plushie-sea-turtle-hatchling-5ca385e431.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "chibi__chibi-plushie-sea-turtle-hatchling__5ca385e431",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/chibi/chibi-plushie-sea-turtle-hatchling-5ca385e431.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "chibi__chibi-plushie-sea-turtle-hatchling__5ca385e431",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/chibi/chibi-plushie-sea-turtle-hatchling-5ca385e431-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-whales__9b53c68a15",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals/animals-whales-9b53c68a15.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-whales__9b53c68a15",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals/animals-whales-9b53c68a15.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-whales__9b53c68a15",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals/animals-whales-9b53c68a15-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-summoning-jutsu-kittens-sitting-on-tree__8caa305aa0",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-summoning-jutsu-kittens-sitting-on-tree-8caa305aa0.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-summoning-jutsu-kittens-sitting-on-tree__8caa305aa0",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-summoning-jutsu-kittens-sitting-on-tree-8caa305aa0.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-summoning-jutsu-kittens-sitting-on-tree__8caa305aa0",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-summoning-jutsu-kittens-sitting-on-tree-8caa305aa0-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-summoning-unicorn-plushies__2038d034d6",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-summoning-unicorn-plushies-2038d034d6.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-summoning-unicorn-plushies__2038d034d6",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-summoning-unicorn-plushies-2038d034d6.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-summoning-unicorn-plushies__2038d034d6",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-summoning-unicorn-plushies-2038d034d6-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-summoning-fairy-plushies__0c86dd4c47",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-summoning-fairy-plushies-0c86dd4c47.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-summoning-fairy-plushies__0c86dd4c47",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-summoning-fairy-plushies-0c86dd4c47.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-summoning-fairy-plushies__0c86dd4c47",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-summoning-fairy-plushies-0c86dd4c47-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "chibi__chibi-flying-pegasus__3b3b6b5009",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/chibi/chibi-flying-pegasus-3b3b6b5009.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "chibi__chibi-flying-pegasus__3b3b6b5009",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/chibi/chibi-flying-pegasus-3b3b6b5009.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "chibi__chibi-flying-pegasus__3b3b6b5009",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/chibi/chibi-flying-pegasus-3b3b6b5009-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-summoning-jutsu-spiders__22b5057f1f",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-summoning-jutsu-spiders-22b5057f1f.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-summoning-jutsu-spiders__22b5057f1f",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-summoning-jutsu-spiders-22b5057f1f.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-summoning-jutsu-spiders__22b5057f1f",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-summoning-jutsu-spiders-22b5057f1f-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-summoning-butterflies__45da814617",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-summoning-butterflies-45da814617.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-summoning-butterflies__45da814617",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-summoning-butterflies-45da814617.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-summoning-butterflies__45da814617",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-summoning-butterflies-45da814617-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-mermaid-scale-armor__887218d4ed",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-mermaid-scale-armor-887218d4ed.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-mermaid-scale-armor__887218d4ed",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-mermaid-scale-armor-887218d4ed.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-mermaid-scale-armor__887218d4ed",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-mermaid-scale-armor-887218d4ed-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-summoning-jutsu-beetles__13ee413203",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-summoning-jutsu-beetles-13ee413203.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-summoning-jutsu-beetles__13ee413203",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-summoning-jutsu-beetles-13ee413203.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-summoning-jutsu-beetles__13ee413203",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-summoning-jutsu-beetles-13ee413203-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "chibi__chibi-dungeon-torch-lit-bridge__f3d6daee01",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/chibi/chibi-dungeon-torch-lit-bridge-f3d6daee01.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "chibi__chibi-dungeon-torch-lit-bridge__f3d6daee01",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/chibi/chibi-dungeon-torch-lit-bridge-f3d6daee01.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "chibi__chibi-dungeon-torch-lit-bridge__f3d6daee01",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/chibi/chibi-dungeon-torch-lit-bridge-f3d6daee01-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-summoning-jutsu-triceratops-dino__62a38d00e9",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-summoning-jutsu-triceratops-dino-62a38d00e9.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-summoning-jutsu-triceratops-dino__62a38d00e9",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-summoning-jutsu-triceratops-dino-62a38d00e9.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-summoning-jutsu-triceratops-dino__62a38d00e9",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-summoning-jutsu-triceratops-dino-62a38d00e9-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "chibi__chibi-plushie-crab__0a927497b6",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/chibi/chibi-plushie-crab-0a927497b6.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "chibi__chibi-plushie-crab__0a927497b6",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/chibi/chibi-plushie-crab-0a927497b6.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "chibi__chibi-plushie-crab__0a927497b6",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/chibi/chibi-plushie-crab-0a927497b6-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "chibi__chibi-dungeon-pet-griffin__7156ac6ffb",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/chibi/chibi-dungeon-pet-griffin-7156ac6ffb.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "chibi__chibi-dungeon-pet-griffin__7156ac6ffb",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/chibi/chibi-dungeon-pet-griffin-7156ac6ffb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "chibi__chibi-dungeon-pet-griffin__7156ac6ffb",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/chibi/chibi-dungeon-pet-griffin-7156ac6ffb-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-summoning-jutsu-woolly-mammoth-kawaii-plushies__06dda78301",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-summoning-jutsu-woolly-mammoth-kawaii-plushies-06dda78301.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-summoning-jutsu-woolly-mammoth-kawaii-plushies__06dda78301",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-summoning-jutsu-woolly-mammoth-kawaii-plushies-06dda78301.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-summoning-jutsu-woolly-mammoth-kawaii-plushies__06dda78301",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-summoning-jutsu-woolly-mammoth-kawaii-plushies-06dda78301-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-octopus-hoodie-plushie__6202e52d7f",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/anime-girls/anime-girl-octopus-hoodie-plushie-6202e52d7f.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-octopus-hoodie-plushie__6202e52d7f",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/anime-girls/anime-girl-octopus-hoodie-plushie-6202e52d7f.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-octopus-hoodie-plushie__6202e52d7f",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/anime-girls/anime-girl-octopus-hoodie-plushie-6202e52d7f-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "st-patricks-day__st-patricks-day-celtic-knot-mandala-pattern-coloring-page__46e5c80f77",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/st-patricks-day/st-patricks-day-celtic-knot-mandala-pattern-coloring-page-46e5c80f77.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "st-patricks-day__st-patricks-day-celtic-knot-mandala-pattern-coloring-page__46e5c80f77",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/st-patricks-day/st-patricks-day-celtic-knot-mandala-pattern-coloring-page-46e5c80f77.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "st-patricks-day__st-patricks-day-celtic-knot-mandala-pattern-coloring-page__46e5c80f77",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/st-patricks-day/st-patricks-day-celtic-knot-mandala-pattern-coloring-page-46e5c80f77-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-alligator__4feec8505a",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals/animals-alligator-4feec8505a.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-alligator__4feec8505a",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals/animals-alligator-4feec8505a.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-alligator__4feec8505a",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals/animals-alligator-4feec8505a-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-antelopes__49a5eb802f",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals/animals-antelopes-49a5eb802f.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-antelopes__49a5eb802f",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals/animals-antelopes-49a5eb802f.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-antelopes__49a5eb802f",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals/animals-antelopes-49a5eb802f-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-buffalo__42947367b4",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals/animals-buffalo-42947367b4.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-buffalo__42947367b4",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals/animals-buffalo-42947367b4.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-buffalo__42947367b4",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals/animals-buffalo-42947367b4-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-chickens__1d898c58de",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals/animals-chickens-1d898c58de.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-chickens__1d898c58de",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals/animals-chickens-1d898c58de.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-chickens__1d898c58de",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals/animals-chickens-1d898c58de-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-crocodile__0389692b30",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals/animals-crocodile-0389692b30.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-crocodile__0389692b30",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals/animals-crocodile-0389692b30.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-crocodile__0389692b30",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals/animals-crocodile-0389692b30-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-duck__f46c4f4007",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals/animals-duck-f46c4f4007.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-duck__f46c4f4007",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals/animals-duck-f46c4f4007.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-duck__f46c4f4007",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals/animals-duck-f46c4f4007-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-eagle__0e2698945b",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals/animals-eagle-0e2698945b.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-eagle__0e2698945b",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals/animals-eagle-0e2698945b.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-eagle__0e2698945b",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals/animals-eagle-0e2698945b-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-eagles__9c48219eed",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals/animals-eagles-9c48219eed.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-eagles__9c48219eed",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals/animals-eagles-9c48219eed.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-eagles__9c48219eed",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals/animals-eagles-9c48219eed-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-elephants__44cfe62b98",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals/animals-elephants-44cfe62b98.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-elephants__44cfe62b98",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals/animals-elephants-44cfe62b98.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-elephants__44cfe62b98",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals/animals-elephants-44cfe62b98-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-falcons__39d20877ca",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals/animals-falcons-39d20877ca.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-falcons__39d20877ca",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals/animals-falcons-39d20877ca.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-falcons__39d20877ca",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals/animals-falcons-39d20877ca-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-frogs__242fdad0e9",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals/animals-frogs-242fdad0e9.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-frogs__242fdad0e9",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals/animals-frogs-242fdad0e9.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-frogs__242fdad0e9",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals/animals-frogs-242fdad0e9-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-gazelles__2ad6b27392",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals/animals-gazelles-2ad6b27392.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-gazelles__2ad6b27392",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals/animals-gazelles-2ad6b27392.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-gazelles__2ad6b27392",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals/animals-gazelles-2ad6b27392-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-goat__74e02be085",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals/animals-goat-74e02be085.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-goat__74e02be085",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals/animals-goat-74e02be085.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-goat__74e02be085",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals/animals-goat-74e02be085-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-goose__918235b6af",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals/animals-goose-918235b6af.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-goose__918235b6af",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals/animals-goose-918235b6af.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-goose__918235b6af",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals/animals-goose-918235b6af-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-hawk__bb1442ad50",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals/animals-hawk-bb1442ad50.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-hawk__bb1442ad50",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals/animals-hawk-bb1442ad50.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-hawk__bb1442ad50",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals/animals-hawk-bb1442ad50-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-hyenas__b0e61b6bb7",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals/animals-hyenas-b0e61b6bb7.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-hyenas__b0e61b6bb7",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals/animals-hyenas-b0e61b6bb7.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-hyenas__b0e61b6bb7",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals/animals-hyenas-b0e61b6bb7-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-leopards__9be94cf823",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals/animals-leopards-9be94cf823.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-leopards__9be94cf823",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals/animals-leopards-9be94cf823.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-leopards__9be94cf823",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals/animals-leopards-9be94cf823-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-otter__60dca506d6",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals/animals-otter-60dca506d6.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-otter__60dca506d6",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals/animals-otter-60dca506d6.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-otter__60dca506d6",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals/animals-otter-60dca506d6-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-owls__73a12387df",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals/animals-owls-73a12387df.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-owls__73a12387df",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals/animals-owls-73a12387df.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-owls__73a12387df",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals/animals-owls-73a12387df-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-penguins__9c3dda80d1",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals/animals-penguins-9c3dda80d1.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-penguins__9c3dda80d1",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals/animals-penguins-9c3dda80d1.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-penguins__9c3dda80d1",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals/animals-penguins-9c3dda80d1-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-pig__67546b89c3",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals/animals-pig-67546b89c3.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-pig__67546b89c3",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals/animals-pig-67546b89c3.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-pig__67546b89c3",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals/animals-pig-67546b89c3-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-polarbear__fb2c193ae5",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals/animals-polarbear-fb2c193ae5.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-polarbear__fb2c193ae5",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals/animals-polarbear-fb2c193ae5.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-polarbear__fb2c193ae5",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals/animals-polarbear-fb2c193ae5-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-puppies__093b6e6276",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals/animals-puppies-093b6e6276.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-puppies__093b6e6276",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals/animals-puppies-093b6e6276.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-puppies__093b6e6276",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals/animals-puppies-093b6e6276-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-sea-lion__569daf97f7",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals/animals-sea-lion-569daf97f7.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-sea-lion__569daf97f7",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals/animals-sea-lion-569daf97f7.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-sea-lion__569daf97f7",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals/animals-sea-lion-569daf97f7-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-seal__02d2527a31",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals/animals-seal-02d2527a31.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-seal__02d2527a31",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals/animals-seal-02d2527a31.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-seal__02d2527a31",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals/animals-seal-02d2527a31-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-turkey__a5e1952cea",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals/animals-turkey-a5e1952cea.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-turkey__a5e1952cea",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals/animals-turkey-a5e1952cea.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-turkey__a5e1952cea",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals/animals-turkey-a5e1952cea-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-walrus__9d072cd3d9",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals/animals-walrus-9d072cd3d9.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-walrus__9d072cd3d9",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals/animals-walrus-9d072cd3d9.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals__animals-walrus__9d072cd3d9",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals/animals-walrus-9d072cd3d9-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-baboon__3019f9ef3d",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals-playing-cards/animals-baboon-3019f9ef3d.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-baboon__3019f9ef3d",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals-playing-cards/animals-baboon-3019f9ef3d.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-baboon__3019f9ef3d",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals-playing-cards/animals-baboon-3019f9ef3d-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-baboons__5f19666c69",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals-playing-cards/animals-baboons-5f19666c69.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-baboons__5f19666c69",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals-playing-cards/animals-baboons-5f19666c69.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-baboons__5f19666c69",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals-playing-cards/animals-baboons-5f19666c69-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-baboons-hanging__398854ec28",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals-playing-cards/animals-baboons-hanging-398854ec28.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-baboons-hanging__398854ec28",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals-playing-cards/animals-baboons-hanging-398854ec28.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-baboons-hanging__398854ec28",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals-playing-cards/animals-baboons-hanging-398854ec28-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-badger__46333741c3",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals-playing-cards/animals-badger-46333741c3.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-badger__46333741c3",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals-playing-cards/animals-badger-46333741c3.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-badger__46333741c3",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals-playing-cards/animals-badger-46333741c3-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-badgers__701e4f01fa",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals-playing-cards/animals-badgers-701e4f01fa.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-badgers__701e4f01fa",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals-playing-cards/animals-badgers-701e4f01fa.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-badgers__701e4f01fa",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals-playing-cards/animals-badgers-701e4f01fa-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-badgers-wildlife__d717f79524",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals-playing-cards/animals-badgers-wildlife-d717f79524.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-badgers-wildlife__d717f79524",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals-playing-cards/animals-badgers-wildlife-d717f79524.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-badgers-wildlife__d717f79524",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals-playing-cards/animals-badgers-wildlife-d717f79524-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-bats__662bf20796",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals-playing-cards/animals-bats-662bf20796.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-bats__662bf20796",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals-playing-cards/animals-bats-662bf20796.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-bats__662bf20796",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals-playing-cards/animals-bats-662bf20796-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-bats-wildlife__1da9adbd04",
+      "mediaType": "svg",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/svg/animals-playing-cards/animals-bats-wildlife-1da9adbd04.svg",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-bats-wildlife__1da9adbd04",
+      "mediaType": "pngPreview",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/png/animals-playing-cards/animals-bats-wildlife-1da9adbd04.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "assetId": "animals-playing-cards__animals-bats-wildlife__1da9adbd04",
+      "mediaType": "thumbnail",
+      "urlPattern": "${NEXT_PUBLIC_COLORING_ASSET_BASE_URL}/thumbs/animals-playing-cards/animals-bats-wildlife-1da9adbd04-thumb.png",
+      "status": "not_run",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/png",
+      "expectedCacheControl": "public, max-age=31536000, immutable"
+    }
+  ]
+}

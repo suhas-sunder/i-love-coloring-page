@@ -1,0 +1,328 @@
+{
+  "generatedAt": "2026-05-10",
+  "runId": "round-4g-cloudflare-r2-test-upload-bundle",
+  "title": "Round 4G Cloudflare R2 Manual Test Upload Checklist",
+  "exactLocalFolderToUpload": "pipeline/r2-upload-test/coloring/test-v1",
+  "targetR2BucketPrefix": "coloring/test-v1",
+  "expectedNextPublicAssetBaseUrl": "https://assets.example.com/coloring/test-v1",
+  "uploadChoices": [
+    {
+      "method": "Upload the pipeline/r2-upload-test/coloring folder to the bucket root.",
+      "result": "Object keys include coloring/test-v1/svg, coloring/test-v1/png, and coloring/test-v1/thumbs."
+    },
+    {
+      "method": "Upload the contents of pipeline/r2-upload-test/coloring/test-v1 into an existing coloring/test-v1 prefix.",
+      "result": "Object keys still include exactly one coloring/test-v1 prefix."
+    }
+  ],
+  "doNotUpload": [
+    "Do not upload pipeline/r2-upload-test/coloring/test-v1 into an already selected coloring/test-v1 prefix.",
+    "Do not upload pipeline/production/full/assets for this test round.",
+    "Do not copy generated media into public/.",
+    "Do not use r2.dev as the intended production media URL.",
+    "Do not commit credentials or generated upload bundle media."
+  ],
+  "commonMistakesToAvoid": [
+    "Double prefixing object keys as coloring/test-v1/coloring/test-v1/...",
+    "Pointing NEXT_PUBLIC_COLORING_ASSET_BASE_URL at the private S3 API endpoint.",
+    "Uploading only svg files without the matching png and thumbs roots.",
+    "Replacing this 30-record bundle with the full 6557-record asset set before R2 URL checks pass."
+  ],
+  "finalObjectKeyExamples": [
+    {
+      "mediaType": "pngPreview",
+      "localFile": "pipeline/r2-upload-test/coloring/test-v1/png/anime-girls/anime-girl-summoning-jutsu-cute-dinosaur-plushies-e958c58eca.png",
+      "expectedR2ObjectKey": "coloring/test-v1/png/anime-girls/anime-girl-summoning-jutsu-cute-dinosaur-plushies-e958c58eca.png",
+      "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/anime-girls/anime-girl-summoning-jutsu-cute-dinosaur-plushies-e958c58eca.png"
+    },
+    {
+      "mediaType": "pngPreview",
+      "localFile": "pipeline/r2-upload-test/coloring/test-v1/png/anime-girls/anime-girl-summoning-jutsu-cute-dragon-plushies-3f2c634dbf.png",
+      "expectedR2ObjectKey": "coloring/test-v1/png/anime-girls/anime-girl-summoning-jutsu-cute-dragon-plushies-3f2c634dbf.png",
+      "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/anime-girls/anime-girl-summoning-jutsu-cute-dragon-plushies-3f2c634dbf.png"
+    },
+    {
+      "mediaType": "pngPreview",
+      "localFile": "pipeline/r2-upload-test/coloring/test-v1/png/chibi/chibi-enchanted-forest-fairy-dancing-in-flower-ring-c4cb5961c2.png",
+      "expectedR2ObjectKey": "coloring/test-v1/png/chibi/chibi-enchanted-forest-fairy-dancing-in-flower-ring-c4cb5961c2.png",
+      "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/chibi/chibi-enchanted-forest-fairy-dancing-in-flower-ring-c4cb5961c2.png"
+    },
+    {
+      "mediaType": "pngPreview",
+      "localFile": "pipeline/r2-upload-test/coloring/test-v1/png/chibi/chibi-flowers-crocus-kawaii-908b17edf5.png",
+      "expectedR2ObjectKey": "coloring/test-v1/png/chibi/chibi-flowers-crocus-kawaii-908b17edf5.png",
+      "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/chibi/chibi-flowers-crocus-kawaii-908b17edf5.png"
+    },
+    {
+      "mediaType": "pngPreview",
+      "localFile": "pipeline/r2-upload-test/coloring/test-v1/png/chibi/chibi-flowers-delphinium-fairy-e2952ac2c0.png",
+      "expectedR2ObjectKey": "coloring/test-v1/png/chibi/chibi-flowers-delphinium-fairy-e2952ac2c0.png",
+      "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/chibi/chibi-flowers-delphinium-fairy-e2952ac2c0.png"
+    },
+    {
+      "mediaType": "pngPreview",
+      "localFile": "pipeline/r2-upload-test/coloring/test-v1/png/chibi/chibi-flowers-tulip-garden-68470e6363.png",
+      "expectedR2ObjectKey": "coloring/test-v1/png/chibi/chibi-flowers-tulip-garden-68470e6363.png",
+      "expectedPublicUrl": "https://assets.example.com/coloring/test-v1/png/chibi/chibi-flowers-tulip-garden-68470e6363.png"
+    }
+  ],
+  "verificationUrls": [
+    {
+      "mediaType": "pngPreview",
+      "url": "https://assets.example.com/coloring/test-v1/png/anime-girls/anime-girl-summoning-jutsu-cute-dinosaur-plushies-e958c58eca.png",
+      "expectedContentType": "image/png"
+    },
+    {
+      "mediaType": "pngPreview",
+      "url": "https://assets.example.com/coloring/test-v1/png/anime-girls/anime-girl-summoning-jutsu-cute-dragon-plushies-3f2c634dbf.png",
+      "expectedContentType": "image/png"
+    },
+    {
+      "mediaType": "pngPreview",
+      "url": "https://assets.example.com/coloring/test-v1/png/chibi/chibi-enchanted-forest-fairy-dancing-in-flower-ring-c4cb5961c2.png",
+      "expectedContentType": "image/png"
+    },
+    {
+      "mediaType": "pngPreview",
+      "url": "https://assets.example.com/coloring/test-v1/png/chibi/chibi-flowers-crocus-kawaii-908b17edf5.png",
+      "expectedContentType": "image/png"
+    },
+    {
+      "mediaType": "pngPreview",
+      "url": "https://assets.example.com/coloring/test-v1/png/chibi/chibi-flowers-delphinium-fairy-e2952ac2c0.png",
+      "expectedContentType": "image/png"
+    },
+    {
+      "mediaType": "pngPreview",
+      "url": "https://assets.example.com/coloring/test-v1/png/chibi/chibi-flowers-tulip-garden-68470e6363.png",
+      "expectedContentType": "image/png"
+    },
+    {
+      "mediaType": "pngPreview",
+      "url": "https://assets.example.com/coloring/test-v1/png/chibi/chibi-holiday-halloween-tombstone-with-wilted-flowers-coloring-page-dbdec0dd78.png",
+      "expectedContentType": "image/png"
+    },
+    {
+      "mediaType": "pngPreview",
+      "url": "https://assets.example.com/coloring/test-v1/png/chibi/chibi-holiday-halloween-trick-or-treat-dog-in-cute-costume-coloring-page-79fa5d8c2d.png",
+      "expectedContentType": "image/png"
+    },
+    {
+      "mediaType": "pngPreview",
+      "url": "https://assets.example.com/coloring/test-v1/png/holiday/holiday-christmas-plushie-prehistoric-triceratops-family-b942c6ee0e.png",
+      "expectedContentType": "image/png"
+    },
+    {
+      "mediaType": "pngPreview",
+      "url": "https://assets.example.com/coloring/test-v1/png/holiday/holiday-christmas-prehistoric-kawaii-triceratops-9689527143.png",
+      "expectedContentType": "image/png"
+    },
+    {
+      "mediaType": "pngPreview",
+      "url": "https://assets.example.com/coloring/test-v1/png/indoor-plants/indoor-plants-spider-plant-24e5529d0b.png",
+      "expectedContentType": "image/png"
+    },
+    {
+      "mediaType": "pngPreview",
+      "url": "https://assets.example.com/coloring/test-v1/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cute-baby-dragon-fe1a69ef1f.png",
+      "expectedContentType": "image/png"
+    }
+  ],
+  "pagesToOpenAfterUpload": [
+    {
+      "path": "/coloring-pages",
+      "title": "Coloring Pages",
+      "reason": "root gallery includes approved production items",
+      "selectedAssetIds": [
+        "mandala-geometry-patterns__mandala-geometry-patterns-plushie-cute-baby-dragon__fe1a69ef1f",
+        "mandala-geometry-patterns__mandala-geometry-patterns-plushie-cute-dinosaur__d5d6d04105",
+        "anime-girls__anime-girl-summoning-jutsu-cute-dinosaur-plushies__e958c58eca",
+        "chibi__chibi-enchanted-forest-fairy-dancing-in-flower-ring__c4cb5961c2",
+        "holiday__holiday-christmas-prehistoric-kawaii-triceratops__9689527143",
+        "chibi__chibi-holiday-halloween-tombstone-with-wilted-flowers-coloring-page__dbdec0dd78",
+        "mandala-geometry-patterns__mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle__5efd045f2e",
+        "plushie__plushie-blue-whale__17d0990688",
+        "plushie__plushie-puppy-dog__4a35ced072",
+        "mythology__mythology-griffin__a1782cca68",
+        "indoor-plants__indoor-plants-spider-plant__24e5529d0b",
+        "plushie__plushie-prehistoric-triceratops__cfbd98566a",
+        "plushie__plushie-baby-dragon__5ed6730a4b",
+        "plushie__plushie-baby-dragon-family__f216d18d8b",
+        "mandala-geometry-patterns__mandala-geometry-patterns-plushie-cute-unicorn__17a29a8e15",
+        "mandala-geometry-patterns__mandala-geometry-patterns-plushie-dragon-animals__bc2052aae7",
+        "mandala-geometry-patterns__mandala-geometry-patterns-plushie-pegasus-animals__3068e80aa3",
+        "anime-girls__anime-girl-summoning-jutsu-cute-dragon-plushies__3f2c634dbf",
+        "chibi__chibi-flowers-delphinium-fairy__e2952ac2c0",
+        "mandala-geometry-patterns__mandala-geometry-patterns-vehiacle-planes-kc-46-pegasus__fcc7a92159",
+        "holiday__holiday-christmas-plushie-prehistoric-triceratops-family__b942c6ee0e",
+        "chibi__chibi-holiday-halloween-trick-or-treat-dog-in-cute-costume-coloring-page__79fa5d8c2d",
+        "mandala-geometry-patterns__mandala-geometry-patterns-plushie-prehistoric-triceratops-animal__8412f3b319",
+        "chibi__chibi-flowers-tulip-garden__68470e6363",
+        "chibi__chibi-flowers-crocus-kawaii__908b17edf5",
+        "mandala-geometry-patterns__mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-car__879b59fd65",
+        "mandala-geometry-patterns__mandala-geometry-patterns-sushi-cartoon-snow-crab-roll__37bf46950d",
+        "mandala-geometry-patterns__mandala-geometry-patterns-plushie-puppy-dog-halloween__e6b03b733b",
+        "mythology__mythology-mermaid__476a074c92",
+        "mandala-geometry-patterns__mandala-geometry-patterns-sushi-cartoon-spider-roll__5c40f77da3"
+      ]
+    },
+    {
+      "path": "/coloring-pages/animals",
+      "title": "Animals Coloring Pages",
+      "reason": "assigned to this hub",
+      "selectedAssetIds": [
+        "plushie__plushie-puppy-dog__4a35ced072"
+      ]
+    },
+    {
+      "path": "/coloring-pages/beetles",
+      "title": "Beetles Coloring Pages",
+      "reason": "included in the first-page preview set",
+      "selectedAssetIds": [
+        "mandala-geometry-patterns__mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle__5efd045f2e",
+        "mandala-geometry-patterns__mandala-geometry-patterns-vehicle-cars-classic-volkswagen-beetle-car__879b59fd65"
+      ]
+    },
+    {
+      "path": "/coloring-pages/chibi",
+      "title": "Chibi Coloring Pages",
+      "reason": "assigned to this hub",
+      "selectedAssetIds": [
+        "chibi__chibi-holiday-halloween-tombstone-with-wilted-flowers-coloring-page__dbdec0dd78"
+      ]
+    },
+    {
+      "path": "/coloring-pages/chibi-flowers",
+      "title": "Chibi Flowers Coloring Pages",
+      "reason": "included in the first-page preview set",
+      "selectedAssetIds": [
+        "chibi__chibi-enchanted-forest-fairy-dancing-in-flower-ring__c4cb5961c2",
+        "chibi__chibi-holiday-halloween-tombstone-with-wilted-flowers-coloring-page__dbdec0dd78",
+        "chibi__chibi-flowers-delphinium-fairy__e2952ac2c0",
+        "chibi__chibi-flowers-crocus-kawaii__908b17edf5"
+      ]
+    },
+    {
+      "path": "/coloring-pages/crabs",
+      "title": "Crabs Coloring Pages",
+      "reason": "included in the first-page preview set",
+      "selectedAssetIds": [
+        "mandala-geometry-patterns__mandala-geometry-patterns-sushi-cartoon-snow-crab-roll__37bf46950d"
+      ]
+    },
+    {
+      "path": "/coloring-pages/cute",
+      "title": "Cute Coloring Pages",
+      "reason": "included in the first-page preview set",
+      "selectedAssetIds": [
+        "mandala-geometry-patterns__mandala-geometry-patterns-plushie-cute-baby-dragon__fe1a69ef1f",
+        "mandala-geometry-patterns__mandala-geometry-patterns-plushie-cute-dinosaur__d5d6d04105",
+        "anime-girls__anime-girl-summoning-jutsu-cute-dinosaur-plushies__e958c58eca",
+        "plushie__plushie-puppy-dog__4a35ced072",
+        "plushie__plushie-baby-dragon__5ed6730a4b",
+        "plushie__plushie-baby-dragon-family__f216d18d8b",
+        "mandala-geometry-patterns__mandala-geometry-patterns-plushie-cute-unicorn__17a29a8e15",
+        "anime-girls__anime-girl-summoning-jutsu-cute-dragon-plushies__3f2c634dbf",
+        "chibi__chibi-holiday-halloween-trick-or-treat-dog-in-cute-costume-coloring-page__79fa5d8c2d"
+      ]
+    },
+    {
+      "path": "/coloring-pages/dinosaurs",
+      "title": "Dinosaurs Coloring Pages",
+      "reason": "included in the first-page preview set",
+      "selectedAssetIds": [
+        "mandala-geometry-patterns__mandala-geometry-patterns-plushie-cute-dinosaur__d5d6d04105",
+        "anime-girls__anime-girl-summoning-jutsu-cute-dinosaur-plushies__e958c58eca"
+      ]
+    },
+    {
+      "path": "/coloring-pages/dogs",
+      "title": "Dogs Coloring Pages",
+      "reason": "assigned to this hub",
+      "selectedAssetIds": [
+        "plushie__plushie-puppy-dog__4a35ced072"
+      ]
+    },
+    {
+      "path": "/coloring-pages/easy",
+      "title": "Easy Coloring Pages",
+      "reason": "included in the first-page preview set",
+      "selectedAssetIds": [
+        "anime-girls__anime-girl-summoning-jutsu-cute-dinosaur-plushies__e958c58eca",
+        "holiday__holiday-christmas-prehistoric-kawaii-triceratops__9689527143",
+        "chibi__chibi-holiday-halloween-tombstone-with-wilted-flowers-coloring-page__dbdec0dd78",
+        "plushie__plushie-puppy-dog__4a35ced072",
+        "anime-girls__anime-girl-summoning-jutsu-cute-dragon-plushies__3f2c634dbf"
+      ]
+    },
+    {
+      "path": "/coloring-pages/fairies",
+      "title": "Fairies Coloring Pages",
+      "reason": "included in the first-page preview set",
+      "selectedAssetIds": [
+        "chibi__chibi-enchanted-forest-fairy-dancing-in-flower-ring__c4cb5961c2",
+        "chibi__chibi-flowers-delphinium-fairy__e2952ac2c0"
+      ]
+    },
+    {
+      "path": "/coloring-pages/fantasy",
+      "title": "Fantasy Coloring Pages",
+      "reason": "included in the first-page preview set",
+      "selectedAssetIds": [
+        "anime-girls__anime-girl-summoning-jutsu-cute-dragon-plushies__3f2c634dbf"
+      ]
+    },
+    {
+      "path": "/coloring-pages/fantasy-creatures",
+      "title": "Fantasy Creatures Coloring Pages",
+      "reason": "included in the first-page preview set",
+      "selectedAssetIds": [
+        "anime-girls__anime-girl-summoning-jutsu-cute-dragon-plushies__3f2c634dbf"
+      ]
+    },
+    {
+      "path": "/coloring-pages/flowers",
+      "title": "Flowers Coloring Pages",
+      "reason": "included in the first-page preview set",
+      "selectedAssetIds": [
+        "chibi__chibi-enchanted-forest-fairy-dancing-in-flower-ring__c4cb5961c2",
+        "chibi__chibi-holiday-halloween-tombstone-with-wilted-flowers-coloring-page__dbdec0dd78"
+      ]
+    },
+    {
+      "path": "/coloring-pages/for-kids",
+      "title": "Coloring Pages for Kids",
+      "reason": "included in the first-page preview set",
+      "selectedAssetIds": [
+        "anime-girls__anime-girl-summoning-jutsu-cute-dinosaur-plushies__e958c58eca",
+        "chibi__chibi-holiday-halloween-tombstone-with-wilted-flowers-coloring-page__dbdec0dd78",
+        "plushie__plushie-puppy-dog__4a35ced072",
+        "anime-girls__anime-girl-summoning-jutsu-cute-dragon-plushies__3f2c634dbf"
+      ]
+    },
+    {
+      "path": "/coloring-pages/forest",
+      "title": "Forest Coloring Pages",
+      "reason": "included in the first-page preview set",
+      "selectedAssetIds": [
+        "chibi__chibi-enchanted-forest-fairy-dancing-in-flower-ring__c4cb5961c2"
+      ]
+    },
+    {
+      "path": "/coloring-pages/garden",
+      "title": "Garden Coloring Pages",
+      "reason": "included in the first-page preview set",
+      "selectedAssetIds": [
+        "chibi__chibi-flowers-tulip-garden__68470e6363"
+      ]
+    },
+    {
+      "path": "/coloring-pages/garden-flowers",
+      "title": "Garden Flowers Coloring Pages",
+      "reason": "included in the first-page preview set",
+      "selectedAssetIds": [
+        "chibi__chibi-flowers-tulip-garden__68470e6363"
+      ]
+    }
+  ]
+}

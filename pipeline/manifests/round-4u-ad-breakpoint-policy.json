@@ -1,0 +1,53 @@
+{
+  "generatedAt": "2026-05-11T05:41:53.453Z",
+  "runId": "round-4u-ad-density",
+  "summary": {
+    "policyName": "one small-screen banner, one desktop header, rails only when safe",
+    "mobileTabletVisibleCount": 1,
+    "desktopIntermediateVisibleCount": 1,
+    "wideDesktopVisibleCount": 3,
+    "desktopAndMobileModelsNeverOverlap": true,
+    "selectedFromBrowserEvidence": true
+  },
+  "breakpoints": {
+    "mobileTabletBannerMaxWidth": 1279,
+    "desktopHeaderBannerMinWidth": 1280,
+    "wideDesktopRailsMinWidth": 1740,
+    "sideRailSafeGap": "var(--space-48)",
+    "sideRailWidth": "160px"
+  },
+  "behaviorByWidth": {
+    "390": {
+      "visibleCount": 1,
+      "visibleModel": "mobile-tablet-lower-banner"
+    },
+    "430": {
+      "visibleCount": 1,
+      "visibleModel": "mobile-tablet-lower-banner"
+    },
+    "768": {
+      "visibleCount": 1,
+      "visibleModel": "mobile-tablet-lower-banner"
+    },
+    "1024": {
+      "visibleCount": 1,
+      "visibleModel": "mobile-tablet-lower-banner"
+    },
+    "1280": {
+      "visibleCount": 1,
+      "visibleModel": "desktop-header-only"
+    },
+    "1440": {
+      "visibleCount": 1,
+      "visibleModel": "desktop-header-only"
+    },
+    "1920": {
+      "visibleCount": 3,
+      "visibleModel": "desktop-header-plus-rails"
+    },
+    "2560": {
+      "visibleCount": 3,
+      "visibleModel": "desktop-header-plus-rails"
+    }
+  }
+}

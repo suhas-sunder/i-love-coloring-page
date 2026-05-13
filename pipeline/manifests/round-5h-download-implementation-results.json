@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-05-12T04:15:49.656Z",
+  "runId": "round-5h-download-implementation",
+  "summary": {
+    "downloadControlsAdded": true,
+    "compactDownloadMenuAdded": true,
+    "currentPublicDownloadFormats": [
+      "PNG",
+      "JPG",
+      "WebP"
+    ],
+    "svgInternalOnly": true,
+    "frontendOnly": true,
+    "staticExportCompatible": true,
+    "appApiRoutePresent": false,
+    "printQualityPreserved": true,
+    "fullUploadDeferred": true,
+    "customAssetDomainStillRequiredForProduction": true,
+    "r2DevTemporaryOnly": true
+  },
+  "filesChanged": [
+    "src/lib/coloring/browserDownloads.ts",
+    "src/components/coloring/ImageCard.tsx",
+    "src/components/coloring/DownloadMenu.tsx",
+    "src/styles/components.css"
+  ]
+}

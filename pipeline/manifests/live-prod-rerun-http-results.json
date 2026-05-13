@@ -1,0 +1,394 @@
+{
+  "generatedAt": "2026-05-13T20:26:19.439Z",
+  "runId": "live-prod-rerun-http-check",
+  "siteUrl": "https://www.ilovecoloringpage.com",
+  "checkedUrls": [
+    "https://www.ilovecoloringpage.com/",
+    "https://www.ilovecoloringpage.com/coloring-pages",
+    "https://www.ilovecoloringpage.com/coloring-pages/",
+    "https://www.ilovecoloringpage.com/coloring-pages/animals",
+    "https://www.ilovecoloringpage.com/coloring-pages/animals/",
+    "https://www.ilovecoloringpage.com/coloring-pages/geometric",
+    "https://www.ilovecoloringpage.com/coloring-pages/christmas",
+    "https://www.ilovecoloringpage.com/contact",
+    "https://www.ilovecoloringpage.com/privacy",
+    "https://www.ilovecoloringpage.com/sitemap.xml",
+    "https://www.ilovecoloringpage.com/robots.txt"
+  ],
+  "summary": {
+    "checkedUrlCount": 11,
+    "liveRootReachable": true,
+    "nonRootRoutesReachable": false,
+    "nonRootRoutes200OrCanonicalRedirectTo200": false,
+    "selfRedirectDetected": true,
+    "selfRedirectUrls": [
+      "https://www.ilovecoloringpage.com/coloring-pages",
+      "https://www.ilovecoloringpage.com/coloring-pages/",
+      "https://www.ilovecoloringpage.com/coloring-pages/animals",
+      "https://www.ilovecoloringpage.com/coloring-pages/animals/",
+      "https://www.ilovecoloringpage.com/coloring-pages/geometric",
+      "https://www.ilovecoloringpage.com/coloring-pages/christmas",
+      "https://www.ilovecoloringpage.com/contact",
+      "https://www.ilovecoloringpage.com/privacy"
+    ],
+    "sitemapCurrent": false,
+    "robotsReachable": true,
+    "runtimeSwitchActiveInLiveHtml": false,
+    "animalsAlligatorWebpInLiveHtml": false,
+    "previewUnavailableInLiveHtml": false,
+    "stalePageUrls": [
+      "https://www.ilovecoloringpage.com/",
+      "https://www.ilovecoloringpage.com/coloring-pages",
+      "https://www.ilovecoloringpage.com/coloring-pages/",
+      "https://www.ilovecoloringpage.com/coloring-pages/animals",
+      "https://www.ilovecoloringpage.com/coloring-pages/animals/",
+      "https://www.ilovecoloringpage.com/coloring-pages/geometric",
+      "https://www.ilovecoloringpage.com/coloring-pages/christmas",
+      "https://www.ilovecoloringpage.com/contact",
+      "https://www.ilovecoloringpage.com/privacy",
+      "https://www.ilovecoloringpage.com/sitemap.xml"
+    ],
+    "likelyStaleDeployment": true
+  },
+  "checks": [
+    {
+      "url": "https://www.ilovecoloringpage.com/",
+      "status": 200,
+      "finalStatus": 200,
+      "finalUrl": "https://www.ilovecoloringpage.com/",
+      "redirectCount": 0,
+      "location": "",
+      "contentType": "text/html",
+      "expectedRouteMarker": "I Love Coloring Page",
+      "bodyContainsExpectedRouteMarker": true,
+      "bodyContainsRuntimeCount6352": false,
+      "bodyContainsOldCount6557": false,
+      "bodyContainsAssetBaseUrl": false,
+      "bodyContainsAnimalsAlligatorWebp": false,
+      "bodyContainsPreviewUnavailable": false,
+      "pageAppearsStale": true,
+      "selfRedirectDetected": false,
+      "sitemapLocCount": null,
+      "elapsedMs": 306,
+      "chain": [
+        {
+          "url": "https://www.ilovecoloringpage.com/",
+          "status": 200,
+          "location": "",
+          "contentType": "text/html",
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.ilovecoloringpage.com/coloring-pages",
+      "status": 301,
+      "finalStatus": 301,
+      "finalUrl": "https://www.ilovecoloringpage.com/coloring-pages",
+      "redirectCount": 0,
+      "location": "/coloring-pages",
+      "contentType": "text/plain; charset=utf-8",
+      "expectedRouteMarker": "Find a coloring page",
+      "bodyContainsExpectedRouteMarker": false,
+      "bodyContainsRuntimeCount6352": false,
+      "bodyContainsOldCount6557": false,
+      "bodyContainsAssetBaseUrl": false,
+      "bodyContainsAnimalsAlligatorWebp": false,
+      "bodyContainsPreviewUnavailable": false,
+      "pageAppearsStale": true,
+      "selfRedirectDetected": true,
+      "sitemapLocCount": null,
+      "elapsedMs": 105,
+      "chain": [
+        {
+          "url": "https://www.ilovecoloringpage.com/coloring-pages",
+          "status": 301,
+          "location": "/coloring-pages",
+          "contentType": "text/plain; charset=utf-8",
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.ilovecoloringpage.com/coloring-pages/",
+      "status": 301,
+      "finalStatus": 301,
+      "finalUrl": "https://www.ilovecoloringpage.com/coloring-pages/",
+      "redirectCount": 0,
+      "location": "/coloring-pages/",
+      "contentType": "text/plain; charset=utf-8",
+      "expectedRouteMarker": "Find a coloring page",
+      "bodyContainsExpectedRouteMarker": false,
+      "bodyContainsRuntimeCount6352": false,
+      "bodyContainsOldCount6557": false,
+      "bodyContainsAssetBaseUrl": false,
+      "bodyContainsAnimalsAlligatorWebp": false,
+      "bodyContainsPreviewUnavailable": false,
+      "pageAppearsStale": true,
+      "selfRedirectDetected": true,
+      "sitemapLocCount": null,
+      "elapsedMs": 138,
+      "chain": [
+        {
+          "url": "https://www.ilovecoloringpage.com/coloring-pages/",
+          "status": 301,
+          "location": "/coloring-pages/",
+          "contentType": "text/plain; charset=utf-8",
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.ilovecoloringpage.com/coloring-pages/animals",
+      "status": 301,
+      "finalStatus": 301,
+      "finalUrl": "https://www.ilovecoloringpage.com/coloring-pages/animals",
+      "redirectCount": 0,
+      "location": "/coloring-pages/animals",
+      "contentType": "text/plain; charset=utf-8",
+      "expectedRouteMarker": "Animals",
+      "bodyContainsExpectedRouteMarker": false,
+      "bodyContainsRuntimeCount6352": false,
+      "bodyContainsOldCount6557": false,
+      "bodyContainsAssetBaseUrl": false,
+      "bodyContainsAnimalsAlligatorWebp": false,
+      "bodyContainsPreviewUnavailable": false,
+      "pageAppearsStale": true,
+      "selfRedirectDetected": true,
+      "sitemapLocCount": null,
+      "elapsedMs": 82,
+      "chain": [
+        {
+          "url": "https://www.ilovecoloringpage.com/coloring-pages/animals",
+          "status": 301,
+          "location": "/coloring-pages/animals",
+          "contentType": "text/plain; charset=utf-8",
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.ilovecoloringpage.com/coloring-pages/animals/",
+      "status": 301,
+      "finalStatus": 301,
+      "finalUrl": "https://www.ilovecoloringpage.com/coloring-pages/animals/",
+      "redirectCount": 0,
+      "location": "/coloring-pages/animals/",
+      "contentType": "text/plain; charset=utf-8",
+      "expectedRouteMarker": "Animals",
+      "bodyContainsExpectedRouteMarker": false,
+      "bodyContainsRuntimeCount6352": false,
+      "bodyContainsOldCount6557": false,
+      "bodyContainsAssetBaseUrl": false,
+      "bodyContainsAnimalsAlligatorWebp": false,
+      "bodyContainsPreviewUnavailable": false,
+      "pageAppearsStale": true,
+      "selfRedirectDetected": true,
+      "sitemapLocCount": null,
+      "elapsedMs": 59,
+      "chain": [
+        {
+          "url": "https://www.ilovecoloringpage.com/coloring-pages/animals/",
+          "status": 301,
+          "location": "/coloring-pages/animals/",
+          "contentType": "text/plain; charset=utf-8",
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.ilovecoloringpage.com/coloring-pages/geometric",
+      "status": 301,
+      "finalStatus": 301,
+      "finalUrl": "https://www.ilovecoloringpage.com/coloring-pages/geometric",
+      "redirectCount": 0,
+      "location": "/coloring-pages/geometric",
+      "contentType": "text/plain; charset=utf-8",
+      "expectedRouteMarker": "Geometric",
+      "bodyContainsExpectedRouteMarker": false,
+      "bodyContainsRuntimeCount6352": false,
+      "bodyContainsOldCount6557": false,
+      "bodyContainsAssetBaseUrl": false,
+      "bodyContainsAnimalsAlligatorWebp": false,
+      "bodyContainsPreviewUnavailable": false,
+      "pageAppearsStale": true,
+      "selfRedirectDetected": true,
+      "sitemapLocCount": null,
+      "elapsedMs": 70,
+      "chain": [
+        {
+          "url": "https://www.ilovecoloringpage.com/coloring-pages/geometric",
+          "status": 301,
+          "location": "/coloring-pages/geometric",
+          "contentType": "text/plain; charset=utf-8",
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.ilovecoloringpage.com/coloring-pages/christmas",
+      "status": 301,
+      "finalStatus": 301,
+      "finalUrl": "https://www.ilovecoloringpage.com/coloring-pages/christmas",
+      "redirectCount": 0,
+      "location": "/coloring-pages/christmas",
+      "contentType": "text/plain; charset=utf-8",
+      "expectedRouteMarker": "Christmas",
+      "bodyContainsExpectedRouteMarker": false,
+      "bodyContainsRuntimeCount6352": false,
+      "bodyContainsOldCount6557": false,
+      "bodyContainsAssetBaseUrl": false,
+      "bodyContainsAnimalsAlligatorWebp": false,
+      "bodyContainsPreviewUnavailable": false,
+      "pageAppearsStale": true,
+      "selfRedirectDetected": true,
+      "sitemapLocCount": null,
+      "elapsedMs": 76,
+      "chain": [
+        {
+          "url": "https://www.ilovecoloringpage.com/coloring-pages/christmas",
+          "status": 301,
+          "location": "/coloring-pages/christmas",
+          "contentType": "text/plain; charset=utf-8",
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.ilovecoloringpage.com/contact",
+      "status": 301,
+      "finalStatus": 301,
+      "finalUrl": "https://www.ilovecoloringpage.com/contact",
+      "redirectCount": 0,
+      "location": "/contact",
+      "contentType": "text/plain; charset=utf-8",
+      "expectedRouteMarker": "Contact",
+      "bodyContainsExpectedRouteMarker": false,
+      "bodyContainsRuntimeCount6352": false,
+      "bodyContainsOldCount6557": false,
+      "bodyContainsAssetBaseUrl": false,
+      "bodyContainsAnimalsAlligatorWebp": false,
+      "bodyContainsPreviewUnavailable": false,
+      "pageAppearsStale": true,
+      "selfRedirectDetected": true,
+      "sitemapLocCount": null,
+      "elapsedMs": 54,
+      "chain": [
+        {
+          "url": "https://www.ilovecoloringpage.com/contact",
+          "status": 301,
+          "location": "/contact",
+          "contentType": "text/plain; charset=utf-8",
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.ilovecoloringpage.com/privacy",
+      "status": 301,
+      "finalStatus": 301,
+      "finalUrl": "https://www.ilovecoloringpage.com/privacy",
+      "redirectCount": 0,
+      "location": "/privacy",
+      "contentType": "text/plain; charset=utf-8",
+      "expectedRouteMarker": "Privacy",
+      "bodyContainsExpectedRouteMarker": false,
+      "bodyContainsRuntimeCount6352": false,
+      "bodyContainsOldCount6557": false,
+      "bodyContainsAssetBaseUrl": false,
+      "bodyContainsAnimalsAlligatorWebp": false,
+      "bodyContainsPreviewUnavailable": false,
+      "pageAppearsStale": true,
+      "selfRedirectDetected": true,
+      "sitemapLocCount": null,
+      "elapsedMs": 66,
+      "chain": [
+        {
+          "url": "https://www.ilovecoloringpage.com/privacy",
+          "status": 301,
+          "location": "/privacy",
+          "contentType": "text/plain; charset=utf-8",
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.ilovecoloringpage.com/sitemap.xml",
+      "status": 200,
+      "finalStatus": 200,
+      "finalUrl": "https://www.ilovecoloringpage.com/sitemap.xml",
+      "redirectCount": 0,
+      "location": "",
+      "contentType": "application/xml",
+      "expectedRouteMarker": "<urlset",
+      "bodyContainsExpectedRouteMarker": true,
+      "bodyContainsRuntimeCount6352": false,
+      "bodyContainsOldCount6557": false,
+      "bodyContainsAssetBaseUrl": false,
+      "bodyContainsAnimalsAlligatorWebp": false,
+      "bodyContainsPreviewUnavailable": false,
+      "pageAppearsStale": true,
+      "selfRedirectDetected": false,
+      "sitemapLocCount": 1,
+      "sitemapLocs": [
+        "https://ilovecoloringpage.com/"
+      ],
+      "elapsedMs": 40,
+      "chain": [
+        {
+          "url": "https://www.ilovecoloringpage.com/sitemap.xml",
+          "status": 200,
+          "location": "",
+          "contentType": "application/xml",
+          "error": ""
+        }
+      ],
+      "error": ""
+    },
+    {
+      "url": "https://www.ilovecoloringpage.com/robots.txt",
+      "status": 200,
+      "finalStatus": 200,
+      "finalUrl": "https://www.ilovecoloringpage.com/robots.txt",
+      "redirectCount": 0,
+      "location": "",
+      "contentType": "text/plain; charset=UTF-8",
+      "expectedRouteMarker": "Sitemap: https://www.ilovecoloringpage.com/sitemap.xml",
+      "bodyContainsExpectedRouteMarker": true,
+      "bodyContainsRuntimeCount6352": false,
+      "bodyContainsOldCount6557": false,
+      "bodyContainsAssetBaseUrl": false,
+      "bodyContainsAnimalsAlligatorWebp": false,
+      "bodyContainsPreviewUnavailable": false,
+      "pageAppearsStale": false,
+      "selfRedirectDetected": false,
+      "sitemapLocCount": null,
+      "elapsedMs": 197,
+      "chain": [
+        {
+          "url": "https://www.ilovecoloringpage.com/robots.txt",
+          "status": 200,
+          "location": "",
+          "contentType": "text/plain; charset=UTF-8",
+          "error": ""
+        }
+      ],
+      "error": ""
+    }
+  ],
+  "blockers": [
+    "One or more non-root pages are stale, redirecting, or not serving clean 200 responses.",
+    "Self-referential redirects remain: https://www.ilovecoloringpage.com/coloring-pages, https://www.ilovecoloringpage.com/coloring-pages/, https://www.ilovecoloringpage.com/coloring-pages/animals, https://www.ilovecoloringpage.com/coloring-pages/animals/, https://www.ilovecoloringpage.com/coloring-pages/geometric, https://www.ilovecoloringpage.com/coloring-pages/christmas, https://www.ilovecoloringpage.com/contact, https://www.ilovecoloringpage.com/privacy.",
+    "Live sitemap is stale or missing generated routes and trust pages.",
+    "Live HTML does not show the 08fd170 runtime asset behavior."
+  ]
+}

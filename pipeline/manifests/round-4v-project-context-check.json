@@ -1,0 +1,31 @@
+{
+  "generatedAt": "2026-05-11T06:29:55.583Z",
+  "runId": "round-4v-owner-acceptance",
+  "summary": {
+    "correctRepo": true,
+    "branch": "version-4",
+    "round4uCommitExists": true,
+    "appApiRoutePresent": false,
+    "staticExportConfigured": true,
+    "coloringLandingExists": true,
+    "hubRouteExists": true,
+    "r2BundleExists": true,
+    "publicContainsGeneratedProductionMedia": false,
+    "imagesStatusClean": true,
+    "ilovesvgStatusClean": true,
+    "productionFullStatusClean": true,
+    "currentPublicDownloadFormats": [
+      "PNG"
+    ],
+    "visibleSvgDownloadOptions": false,
+    "visibleJpegWebpOptions": false,
+    "adWellsVisibleByDefault": true,
+    "noLiveAdCode": true,
+    "noSeoImplementationStarted": true
+  },
+  "verifiedPaths": {
+    "coloringLanding": "app/coloring-pages/page.tsx",
+    "hubRoute": "app/coloring-pages/[hubSlug]/page.tsx",
+    "r2Bundle": "pipeline/r2-upload/coloring-pages"
+  }
+}

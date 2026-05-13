@@ -1,0 +1,3723 @@
+{
+  "generatedAt": "2026-05-13T19:11:46.442Z",
+  "runId": "local-preview-sampled-url-check",
+  "sampleSize": 100,
+  "expectedAssetBase": "https://assets.ilovecoloringpage.com/coloring-pages",
+  "origin": "http://localhost:3005",
+  "checks": [
+    {
+      "assetId": "animals__animals-alligator__4feec8505a",
+      "title": "Animals Alligator",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-alligator-4feec8505a.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-alligator-4feec8505a.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-alligator-4feec8505a.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "animals__animals-antelopes__49a5eb802f",
+      "title": "Animals Antelopes",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-antelopes-49a5eb802f.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-antelopes-49a5eb802f.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-antelopes-49a5eb802f.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-antelopes-49a5eb802f.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-antelopes-49a5eb802f.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "animals__animals-buffalo__42947367b4",
+      "title": "Animals Buffalo",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-buffalo-42947367b4.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-buffalo-42947367b4.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-buffalo-42947367b4.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-buffalo-42947367b4.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-buffalo-42947367b4.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "animals__animals-butterflies__016ffbb0de",
+      "title": "Animals Butterflies",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-butterflies-016ffbb0de.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-butterflies-016ffbb0de.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-butterflies-016ffbb0de.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-butterflies-016ffbb0de.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-butterflies-016ffbb0de.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "animals__animals-chickens__1d898c58de",
+      "title": "Animals Chickens",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-chickens-1d898c58de.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-chickens-1d898c58de.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-chickens-1d898c58de.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-chickens-1d898c58de.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-chickens-1d898c58de.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "animals__animals-crocodile__0389692b30",
+      "title": "Animals Crocodile",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-crocodile-0389692b30.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-crocodile-0389692b30.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-crocodile-0389692b30.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-crocodile-0389692b30.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-crocodile-0389692b30.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "animals__animals-dog__18819a83c1",
+      "title": "Animals Dog",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-dog-18819a83c1.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-dog-18819a83c1.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-dog-18819a83c1.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-dog-18819a83c1.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-dog-18819a83c1.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "animals__animals-dolphins__06e09058c7",
+      "title": "Animals Dolphins",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-dolphins-06e09058c7.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-dolphins-06e09058c7.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-dolphins-06e09058c7.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-dolphins-06e09058c7.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-dolphins-06e09058c7.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "animals__animals-duck__f46c4f4007",
+      "title": "Animals Duck",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-duck-f46c4f4007.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-duck-f46c4f4007.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-duck-f46c4f4007.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-duck-f46c4f4007.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-duck-f46c4f4007.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "animals__animals-eagle__0e2698945b",
+      "title": "Animals Eagle",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-eagle-0e2698945b.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-eagle-0e2698945b.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-eagle-0e2698945b.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-eagle-0e2698945b.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-eagle-0e2698945b.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "animals__animals-eagles__9c48219eed",
+      "title": "Animals Eagles",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-eagles-9c48219eed.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-eagles-9c48219eed.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-eagles-9c48219eed.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-eagles-9c48219eed.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-eagles-9c48219eed.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "animals__animals-elephants__44cfe62b98",
+      "title": "Animals Elephants",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-elephants-44cfe62b98.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-elephants-44cfe62b98.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-elephants-44cfe62b98.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-elephants-44cfe62b98.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-elephants-44cfe62b98.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "animals__animals-falcons__39d20877ca",
+      "title": "Animals Falcons",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-falcons-39d20877ca.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-falcons-39d20877ca.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-falcons-39d20877ca.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-falcons-39d20877ca.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-falcons-39d20877ca.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "animals__animals-frogs__242fdad0e9",
+      "title": "Animals Frogs",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-frogs-242fdad0e9.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-frogs-242fdad0e9.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-frogs-242fdad0e9.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-frogs-242fdad0e9.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-frogs-242fdad0e9.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "animals__animals-gazelles__2ad6b27392",
+      "title": "Animals Gazelles",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-gazelles-2ad6b27392.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-gazelles-2ad6b27392.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-gazelles-2ad6b27392.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-gazelles-2ad6b27392.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-gazelles-2ad6b27392.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "animals__animals-goat__74e02be085",
+      "title": "Animals Goat",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-goat-74e02be085.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-goat-74e02be085.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-goat-74e02be085.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-goat-74e02be085.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-goat-74e02be085.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "animals__animals-goose__918235b6af",
+      "title": "Animals Goose",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-goose-918235b6af.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-goose-918235b6af.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-goose-918235b6af.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-goose-918235b6af.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-goose-918235b6af.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "animals__animals-hawk__bb1442ad50",
+      "title": "Animals Hawk",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-hawk-bb1442ad50.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-hawk-bb1442ad50.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-hawk-bb1442ad50.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-hawk-bb1442ad50.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-hawk-bb1442ad50.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "animals__animals-hyenas__b0e61b6bb7",
+      "title": "Animals Hyenas",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-hyenas-b0e61b6bb7.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-hyenas-b0e61b6bb7.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-hyenas-b0e61b6bb7.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-hyenas-b0e61b6bb7.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-hyenas-b0e61b6bb7.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "animals__animals-leopards__9be94cf823",
+      "title": "Animals Leopards",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-leopards-9be94cf823.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-leopards-9be94cf823.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-leopards-9be94cf823.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-leopards-9be94cf823.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-leopards-9be94cf823.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "animals__animals-otter__60dca506d6",
+      "title": "Animals Otter",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-otter-60dca506d6.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-otter-60dca506d6.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-otter-60dca506d6.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-otter-60dca506d6.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-otter-60dca506d6.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "animals__animals-owls__73a12387df",
+      "title": "Animals Owls",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-owls-73a12387df.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-owls-73a12387df.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-owls-73a12387df.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-owls-73a12387df.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-owls-73a12387df.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "animals__animals-penguins__9c3dda80d1",
+      "title": "Animals Penguins",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-penguins-9c3dda80d1.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-penguins-9c3dda80d1.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-penguins-9c3dda80d1.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-penguins-9c3dda80d1.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-penguins-9c3dda80d1.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "animals__animals-pig__67546b89c3",
+      "title": "Animals Pig",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-pig-67546b89c3.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-pig-67546b89c3.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-pig-67546b89c3.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-pig-67546b89c3.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-pig-67546b89c3.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "animals__animals-polarbear__fb2c193ae5",
+      "title": "Animals Polarbear",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-polar-bear-fb2c193ae5.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-polar-bear-fb2c193ae5.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-polar-bear-fb2c193ae5.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-polar-bear-fb2c193ae5.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-polar-bear-fb2c193ae5.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "animals__animals-puppies__093b6e6276",
+      "title": "Animals Puppies",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-puppies-093b6e6276.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-puppies-093b6e6276.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-puppies-093b6e6276.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-puppies-093b6e6276.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-puppies-093b6e6276.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "animals__animals-sea-lion__569daf97f7",
+      "title": "Animals Sea Lion",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-sea-lion-569daf97f7.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-sea-lion-569daf97f7.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-sea-lion-569daf97f7.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-sea-lion-569daf97f7.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-sea-lion-569daf97f7.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "animals__animals-seal__02d2527a31",
+      "title": "Animals Seal",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-seal-02d2527a31.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-seal-02d2527a31.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-seal-02d2527a31.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-seal-02d2527a31.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-seal-02d2527a31.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "animals__animals-turkey__a5e1952cea",
+      "title": "Animals Turkey",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-turkey-a5e1952cea.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-turkey-a5e1952cea.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-turkey-a5e1952cea.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-turkey-a5e1952cea.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-turkey-a5e1952cea.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "animals__animals-walrus__9d072cd3d9",
+      "title": "Animals Walrus",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-walrus-9d072cd3d9.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-walrus-9d072cd3d9.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-walrus-9d072cd3d9.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-walrus-9d072cd3d9.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-walrus-9d072cd3d9.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "animals__animals-whales__9b53c68a15",
+      "title": "Animals Whales",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-whales-9b53c68a15.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-whales-9b53c68a15.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-whales-9b53c68a15.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-whales-9b53c68a15.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-whales-9b53c68a15.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "animals-playing-cards__cats-playing-cards__c22648db9b",
+      "title": "Cats Playing Cards",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals-playing-cards/cats-playing-cards-c22648db9b.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals-playing-cards/cats-playing-cards-c22648db9b.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals-playing-cards/cats-playing-cards-c22648db9b.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals-playing-cards/cats-playing-cards-c22648db9b.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals-playing-cards/cats-playing-cards-c22648db9b.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-air-balloon__1f6b5be7bc",
+      "title": "Anime Girl Air Balloon",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-air-balloon-1f6b5be7bc.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-air-balloon-1f6b5be7bc.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-air-balloon-1f6b5be7bc.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-air-balloon-1f6b5be7bc.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-air-balloon-1f6b5be7bc.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-airship-dogfight__154332e8ac",
+      "title": "Anime Girl Airship Dogfight",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-airship-dogfight-154332e8ac.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-airship-dogfight-154332e8ac.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-airship-dogfight-154332e8ac.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-airship-dogfight-154332e8ac.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-airship-dogfight-154332e8ac.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-alien-invasion__5fc2e9d331",
+      "title": "Anime Girl Alien Invasion",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-alien-invasion-5fc2e9d331.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-alien-invasion-5fc2e9d331.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-alien-invasion-5fc2e9d331.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-alien-invasion-5fc2e9d331.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-alien-invasion-5fc2e9d331.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-alien-invasion-battle__99f106ca9d",
+      "title": "Anime Girl Alien Invasion Battle",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-alien-invasion-battle-99f106ca9d.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-alien-invasion-battle-99f106ca9d.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-alien-invasion-battle-99f106ca9d.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-alien-invasion-battle-99f106ca9d.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-alien-invasion-battle-99f106ca9d.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-ankylosaurus-hoodie-plushie__c819919e77",
+      "title": "Anime Girl Ankylosaurus Hoodie Plushie",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-c819919e77.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-c819919e77.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-c819919e77.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-c819919e77.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-c819919e77.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-ankylosaurus-hoodie-plushie__eb8de86d73",
+      "title": "Anime Girl Ankylosaurus Hoodie Plushie",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-eb8de86d73.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-eb8de86d73.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-eb8de86d73.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-eb8de86d73.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-eb8de86d73.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-anubis-trial__d01e669614",
+      "title": "Anime Girl Anubis Trial",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-anubis-trial-d01e669614.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-anubis-trial-d01e669614.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-anubis-trial-d01e669614.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-anubis-trial-d01e669614.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-anubis-trial-d01e669614.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-applying-makeup__f2861b9ce7",
+      "title": "Anime Girl Applying Makeup",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-applying-makeup-f2861b9ce7.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-applying-makeup-f2861b9ce7.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-applying-makeup-f2861b9ce7.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-applying-makeup-f2861b9ce7.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-applying-makeup-f2861b9ce7.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-arctic-fox-hoodie-plushie__ebaacda689",
+      "title": "Anime Girl Arctic Fox Hoodie Plushie",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-arctic-fox-hoodie-plushie-ebaacda689.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-arctic-fox-hoodie-plushie-ebaacda689.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-arctic-fox-hoodie-plushie-ebaacda689.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-arctic-fox-hoodie-plushie-ebaacda689.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-arctic-fox-hoodie-plushie-ebaacda689.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-arctic-fox-hoodie-plushie-snow__6a9f81e6c3",
+      "title": "Anime Girl Arctic Fox Hoodie Plushie Snow",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-arctic-fox-hoodie-plushie-snow-6a9f81e6c3.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-arctic-fox-hoodie-plushie-snow-6a9f81e6c3.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-arctic-fox-hoodie-plushie-snow-6a9f81e6c3.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-arctic-fox-hoodie-plushie-snow-6a9f81e6c3.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-arctic-fox-hoodie-plushie-snow-6a9f81e6c3.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-armadillo-hoodie-animal-plushie__d2e31ff395",
+      "title": "Anime Girl Armadillo Hoodie Animal Plushie",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-armadillo-hoodie-animal-plushie-d2e31ff395.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-armadillo-hoodie-animal-plushie-d2e31ff395.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-armadillo-hoodie-animal-plushie-d2e31ff395.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-armadillo-hoodie-animal-plushie-d2e31ff395.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-armadillo-hoodie-animal-plushie-d2e31ff395.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-armadillo-hoodie-plushie__4388d15510",
+      "title": "Anime Girl Armadillo Hoodie Plushie",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-armadillo-hoodie-plushie-4388d15510.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-armadillo-hoodie-plushie-4388d15510.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-armadillo-hoodie-plushie-4388d15510.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-armadillo-hoodie-plushie-4388d15510.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-armadillo-hoodie-plushie-4388d15510.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-axolotl-hoodie-plushie__10dcbb08c2",
+      "title": "Anime Girl Axolotl Hoodie Plushie",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-axolotl-hoodie-plushie-10dcbb08c2.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-axolotl-hoodie-plushie-10dcbb08c2.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-axolotl-hoodie-plushie-10dcbb08c2.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-axolotl-hoodie-plushie-10dcbb08c2.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-axolotl-hoodie-plushie-10dcbb08c2.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-axolotl-hoodie-plushie__4fbeebbbf9",
+      "title": "Anime Girl Axolotl Hoodie Plushie",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-axolotl-hoodie-plushie-4fbeebbbf9.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-axolotl-hoodie-plushie-4fbeebbbf9.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-axolotl-hoodie-plushie-4fbeebbbf9.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-axolotl-hoodie-plushie-4fbeebbbf9.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-axolotl-hoodie-plushie-4fbeebbbf9.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-baboon-hoodie-plushie__162c0f194f",
+      "title": "Anime Girl Baboon Hoodie Plushie",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-baboon-hoodie-plushie-162c0f194f.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-baboon-hoodie-plushie-162c0f194f.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-baboon-hoodie-plushie-162c0f194f.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-baboon-hoodie-plushie-162c0f194f.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-baboon-hoodie-plushie-162c0f194f.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bakini-lab-coat-scientist__b11297a303",
+      "title": "Anime Girl Bakini Lab Coat Scientist",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-bakini-lab-coat-scientist-b11297a303.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bakini-lab-coat-scientist-b11297a303.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-bakini-lab-coat-scientist-b11297a303.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bakini-lab-coat-scientist-b11297a303.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bakini-lab-coat-scientist-b11297a303.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-baseball-player__2acbb88cef",
+      "title": "Anime Girl Baseball Player",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-baseball-player-2acbb88cef.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-baseball-player-2acbb88cef.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-baseball-player-2acbb88cef.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-baseball-player-2acbb88cef.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-baseball-player-2acbb88cef.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bat-hoodie-plushie__001c0e28be",
+      "title": "Anime Girl Bat Hoodie Plushie",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-bat-hoodie-plushie-001c0e28be.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bat-hoodie-plushie-001c0e28be.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-bat-hoodie-plushie-001c0e28be.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bat-hoodie-plushie-001c0e28be.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bat-hoodie-plushie-001c0e28be.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-battle-claws__f9d7c62766",
+      "title": "Anime Girl Battle Claws",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-battle-claws-f9d7c62766.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-battle-claws-f9d7c62766.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-battle-claws-f9d7c62766.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-battle-claws-f9d7c62766.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-battle-claws-f9d7c62766.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-battle-worn-claws__1fef7847b3",
+      "title": "Anime Girl Battle Worn Claws",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-battle-worn-claws-1fef7847b3.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-battle-worn-claws-1fef7847b3.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-battle-worn-claws-1fef7847b3.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-battle-worn-claws-1fef7847b3.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-battle-worn-claws-1fef7847b3.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-beach__e5492e3687",
+      "title": "Anime Girl Beach",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-beach-e5492e3687.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-beach-e5492e3687.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-beach-e5492e3687.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-beach-e5492e3687.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-beach-e5492e3687.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-beach-bakini__1d77abd2f3",
+      "title": "Anime Girl Beach Bakini",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-beach-bakini-1d77abd2f3.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-beach-bakini-1d77abd2f3.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-beach-bakini-1d77abd2f3.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-beach-bakini-1d77abd2f3.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-beach-bakini-1d77abd2f3.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-beach-bakini__b9ede8c4db",
+      "title": "Anime Girl Beach Bakini",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-beach-bakini-b9ede8c4db.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-beach-bakini-b9ede8c4db.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-beach-bakini-b9ede8c4db.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-beach-bakini-b9ede8c4db.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-beach-bakini-b9ede8c4db.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-beach-bakini-1__b471567c78",
+      "title": "Anime Girl Beach Bakini 1",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-beach-bakini-1-b471567c78.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-beach-bakini-1-b471567c78.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-beach-bakini-1-b471567c78.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-beach-bakini-1-b471567c78.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-beach-bakini-1-b471567c78.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bear-hoodie-plushie__4e33c8392d",
+      "title": "Anime Girl Bear Hoodie Plushie",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-bear-hoodie-plushie-4e33c8392d.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bear-hoodie-plushie-4e33c8392d.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-bear-hoodie-plushie-4e33c8392d.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bear-hoodie-plushie-4e33c8392d.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bear-hoodie-plushie-4e33c8392d.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-beast-berserker-armor__6a6db4fb14",
+      "title": "Anime Girl Beast Berserker Armor",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-beast-berserker-armor-6a6db4fb14.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-beast-berserker-armor-6a6db4fb14.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-beast-berserker-armor-6a6db4fb14.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-beast-berserker-armor-6a6db4fb14.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-beast-berserker-armor-6a6db4fb14.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-beast-hide-armor__31fe047f7d",
+      "title": "Anime Girl Beast Hide Armor",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-beast-hide-armor-31fe047f7d.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-beast-hide-armor-31fe047f7d.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-beast-hide-armor-31fe047f7d.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-beast-hide-armor-31fe047f7d.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-beast-hide-armor-31fe047f7d.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-beastmaster-duel__e77b8fd28b",
+      "title": "Anime Girl Beastmaster Duel",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-beastmaster-duel-e77b8fd28b.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-beastmaster-duel-e77b8fd28b.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-beastmaster-duel-e77b8fd28b.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-beastmaster-duel-e77b8fd28b.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-beastmaster-duel-e77b8fd28b.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bed-with-plush-toys__de6487a823",
+      "title": "Anime Girl Bed With Plush Toys",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-bed-with-plush-toys-de6487a823.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bed-with-plush-toys-de6487a823.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-bed-with-plush-toys-de6487a823.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bed-with-plush-toys-de6487a823.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bed-with-plush-toys-de6487a823.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bed-with-plush-toys-relaxing__bbab5fa342",
+      "title": "Anime Girl Bed With Plush Toys Relaxing",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-bed-with-plush-toys-relaxing-bbab5fa342.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bed-with-plush-toys-relaxing-bbab5fa342.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-bed-with-plush-toys-relaxing-bbab5fa342.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bed-with-plush-toys-relaxing-bbab5fa342.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bed-with-plush-toys-relaxing-bbab5fa342.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bedtime-stories__36d92c5b6a",
+      "title": "Anime Girl Bedtime Stories",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-bedtime-stories-36d92c5b6a.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bedtime-stories-36d92c5b6a.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-bedtime-stories-36d92c5b6a.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bedtime-stories-36d92c5b6a.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bedtime-stories-36d92c5b6a.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bee-hoodie-plushie__0f4839d334",
+      "title": "Anime Girl Bee Hoodie Plushie",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-bee-hoodie-plushie-0f4839d334.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bee-hoodie-plushie-0f4839d334.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-bee-hoodie-plushie-0f4839d334.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bee-hoodie-plushie-0f4839d334.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bee-hoodie-plushie-0f4839d334.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-belly-dancing__cd39615108",
+      "title": "Anime Girl Belly Dancing",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-belly-dancing-cd39615108.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-belly-dancing-cd39615108.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-belly-dancing-cd39615108.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-belly-dancing-cd39615108.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-belly-dancing-cd39615108.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-beluga-whale-hoodie-plushie__54ab43e09e",
+      "title": "Anime Girl Beluga Whale Hoodie Plushie",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-beluga-whale-hoodie-plushie-54ab43e09e.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-beluga-whale-hoodie-plushie-54ab43e09e.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-beluga-whale-hoodie-plushie-54ab43e09e.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-beluga-whale-hoodie-plushie-54ab43e09e.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-beluga-whale-hoodie-plushie-54ab43e09e.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-beluga-whale-hoodie-plushie-swimming-cold__a598161908",
+      "title": "Anime Girl Beluga Whale Hoodie Plushie Swimming Cold",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-beluga-whale-hoodie-plushie-swimming-cold-a598161908.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-beluga-whale-hoodie-plushie-swimming-cold-a598161908.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-beluga-whale-hoodie-plushie-swimming-cold-a598161908.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-beluga-whale-hoodie-plushie-swimming-cold-a598161908.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-beluga-whale-hoodie-plushie-swimming-cold-a598161908.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-birds-duck__5c61314642",
+      "title": "Anime Girl Birds Duck",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-birds-duck-5c61314642.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-birds-duck-5c61314642.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-birds-duck-5c61314642.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-birds-duck-5c61314642.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-birds-duck-5c61314642.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-birthday-cake__a75fa3e263",
+      "title": "Anime Girl Birthday Cake",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-birthday-cake-a75fa3e263.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-birthday-cake-a75fa3e263.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-birthday-cake-a75fa3e263.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-birthday-cake-a75fa3e263.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-birthday-cake-a75fa3e263.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bison-hoodie-plushie__eb4dc63297",
+      "title": "Anime Girl Bison Hoodie Plushie",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-bison-hoodie-plushie-eb4dc63297.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bison-hoodie-plushie-eb4dc63297.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-bison-hoodie-plushie-eb4dc63297.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bison-hoodie-plushie-eb4dc63297.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bison-hoodie-plushie-eb4dc63297.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-boar-hoodie-animal-plushie__97f056d8b6",
+      "title": "Anime Girl Boar Hoodie Animal Plushie",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-boar-hoodie-animal-plushie-97f056d8b6.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-boar-hoodie-animal-plushie-97f056d8b6.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-boar-hoodie-animal-plushie-97f056d8b6.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-boar-hoodie-animal-plushie-97f056d8b6.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-boar-hoodie-animal-plushie-97f056d8b6.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-boar-hoodie-plushie__2ade8446fa",
+      "title": "Anime Girl Boar Hoodie Plushie",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-boar-hoodie-plushie-2ade8446fa.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-boar-hoodie-plushie-2ade8446fa.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-boar-hoodie-plushie-2ade8446fa.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-boar-hoodie-plushie-2ade8446fa.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-boar-hoodie-plushie-2ade8446fa.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bowling__b2fb110d93",
+      "title": "Anime Girl Bowling",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-bowling-b2fb110d93.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bowling-b2fb110d93.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-bowling-b2fb110d93.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bowling-b2fb110d93.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bowling-b2fb110d93.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bowling-trick-shot__aaa558e9a6",
+      "title": "Anime Girl Bowling Trick Shot",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-bowling-trick-shot-aaa558e9a6.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bowling-trick-shot-aaa558e9a6.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-bowling-trick-shot-aaa558e9a6.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bowling-trick-shot-aaa558e9a6.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bowling-trick-shot-aaa558e9a6.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-boxing__31e8b864b6",
+      "title": "Anime Girl Boxing",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-boxing-31e8b864b6.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-boxing-31e8b864b6.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-boxing-31e8b864b6.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-boxing-31e8b864b6.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-boxing-31e8b864b6.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-boxing__a787e2192f",
+      "title": "Anime Girl Boxing",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-boxing-a787e2192f.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-boxing-a787e2192f.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-boxing-a787e2192f.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-boxing-a787e2192f.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-boxing-a787e2192f.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-brachiosaurus-hoodie-plushie__73442e8b67",
+      "title": "Anime Girl Brachiosaurus Hoodie Plushie",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-73442e8b67.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-73442e8b67.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-73442e8b67.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-73442e8b67.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-73442e8b67.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-brachiosaurus-hoodie-plushie__a676a7c044",
+      "title": "Anime Girl Brachiosaurus Hoodie Plushie",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-a676a7c044.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-a676a7c044.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-a676a7c044.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-a676a7c044.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-a676a7c044.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-brazilian-jiu-jitsu__5a40029b84",
+      "title": "Anime Girl Brazilian Jiu Jitsu",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-brazilian-jiu-jitsu-5a40029b84.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-brazilian-jiu-jitsu-5a40029b84.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-brazilian-jiu-jitsu-5a40029b84.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-brazilian-jiu-jitsu-5a40029b84.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-brazilian-jiu-jitsu-5a40029b84.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-brontosaurus-hoodie-plushie__3ad488831a",
+      "title": "Anime Girl Brontosaurus Hoodie Plushie",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-brontosaurus-hoodie-plushie-3ad488831a.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-brontosaurus-hoodie-plushie-3ad488831a.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-brontosaurus-hoodie-plushie-3ad488831a.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-brontosaurus-hoodie-plushie-3ad488831a.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-brontosaurus-hoodie-plushie-3ad488831a.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-brontosaurus-hoodie-plushie__6175891702",
+      "title": "Anime Girl Brontosaurus Hoodie Plushie",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-brontosaurus-hoodie-plushie-6175891702.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-brontosaurus-hoodie-plushie-6175891702.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-brontosaurus-hoodie-plushie-6175891702.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-brontosaurus-hoodie-plushie-6175891702.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-brontosaurus-hoodie-plushie-6175891702.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bull-hoodie-anima-plushie__98a7f4acd1",
+      "title": "Anime Girl Bull Hoodie Anima Plushie",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-bull-hoodie-anima-plushie-98a7f4acd1.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bull-hoodie-anima-plushie-98a7f4acd1.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-bull-hoodie-anima-plushie-98a7f4acd1.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bull-hoodie-anima-plushie-98a7f4acd1.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bull-hoodie-anima-plushie-98a7f4acd1.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bull-hoodie-plushie__3edf39627f",
+      "title": "Anime Girl Bull Hoodie Plushie",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-bull-hoodie-plushie-3edf39627f.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bull-hoodie-plushie-3edf39627f.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-bull-hoodie-plushie-3edf39627f.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bull-hoodie-plushie-3edf39627f.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bull-hoodie-plushie-3edf39627f.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bull-hoodie-plushie-cosplay__e76780baaf",
+      "title": "Anime Girl Bull Hoodie Plushie Cosplay",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-bull-hoodie-plushie-cosplay-e76780baaf.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bull-hoodie-plushie-cosplay-e76780baaf.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-bull-hoodie-plushie-cosplay-e76780baaf.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bull-hoodie-plushie-cosplay-e76780baaf.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bull-hoodie-plushie-cosplay-e76780baaf.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bunny-birthday-party__4a4860c7ac",
+      "title": "Anime Girl Bunny Birthday Party",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-bunny-birthday-party-4a4860c7ac.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bunny-birthday-party-4a4860c7ac.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-bunny-birthday-party-4a4860c7ac.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bunny-birthday-party-4a4860c7ac.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-bunny-birthday-party-4a4860c7ac.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-camel-hoodie-animal-plushie__76c784f3af",
+      "title": "Anime Girl Camel Hoodie Animal Plushie",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-camel-hoodie-animal-plushie-76c784f3af.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-camel-hoodie-animal-plushie-76c784f3af.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-camel-hoodie-animal-plushie-76c784f3af.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-camel-hoodie-animal-plushie-76c784f3af.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-camel-hoodie-animal-plushie-76c784f3af.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-camel-hoodie-plushie__97eab53f78",
+      "title": "Anime Girl Camel Hoodie Plushie",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-camel-hoodie-plushie-97eab53f78.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-camel-hoodie-plushie-97eab53f78.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-camel-hoodie-plushie-97eab53f78.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-camel-hoodie-plushie-97eab53f78.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-camel-hoodie-plushie-97eab53f78.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-camping__b345386f54",
+      "title": "Anime Girl Camping",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-camping-b345386f54.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-camping-b345386f54.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-camping-b345386f54.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-camping-b345386f54.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-camping-b345386f54.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-camping-in-the-woods__42a57fe961",
+      "title": "Anime Girl Camping In The Woods",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-camping-in-the-woods-42a57fe961.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-camping-in-the-woods-42a57fe961.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-camping-in-the-woods-42a57fe961.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-camping-in-the-woods-42a57fe961.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-camping-in-the-woods-42a57fe961.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-cat__3794ff8eaa",
+      "title": "Anime Girl Cat",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-cat-3794ff8eaa.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-cat-3794ff8eaa.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-cat-3794ff8eaa.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-cat-3794ff8eaa.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-cat-3794ff8eaa.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-cat-hoodie-plushie__62ed67bd39",
+      "title": "Anime Girl Cat Hoodie Plushie",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-cat-hoodie-plushie-62ed67bd39.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-cat-hoodie-plushie-62ed67bd39.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-cat-hoodie-plushie-62ed67bd39.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-cat-hoodie-plushie-62ed67bd39.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-cat-hoodie-plushie-62ed67bd39.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-cat-hoodie-plushie__82a3c178ef",
+      "title": "Anime Girl Cat Hoodie Plushie",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-cat-hoodie-plushie-82a3c178ef.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-cat-hoodie-plushie-82a3c178ef.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-cat-hoodie-plushie-82a3c178ef.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-cat-hoodie-plushie-82a3c178ef.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-cat-hoodie-plushie-82a3c178ef.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-catching-fish__481cf18423",
+      "title": "Anime Girl Catching Fish",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-catching-fish-481cf18423.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-catching-fish-481cf18423.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-catching-fish-481cf18423.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-catching-fish-481cf18423.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-catching-fish-481cf18423.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-cave-climbing__14a25b5a14",
+      "title": "Anime Girl Cave Climbing",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-cave-climbing-14a25b5a14.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-cave-climbing-14a25b5a14.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-cave-climbing-14a25b5a14.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-cave-climbing-14a25b5a14.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-cave-climbing-14a25b5a14.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-cave-climbing-1__fa2d0c4eb0",
+      "title": "Anime Girl Cave Climbing 1",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-cave-climbing-1-fa2d0c4eb0.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-cave-climbing-1-fa2d0c4eb0.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-cave-climbing-1-fa2d0c4eb0.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-cave-climbing-1-fa2d0c4eb0.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-cave-climbing-1-fa2d0c4eb0.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-celestial-paladin-armor__e770ba34fc",
+      "title": "Anime Girl Celestial Paladin Armor",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-celestial-paladin-armor-e770ba34fc.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-celestial-paladin-armor-e770ba34fc.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-celestial-paladin-armor-e770ba34fc.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-celestial-paladin-armor-e770ba34fc.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-celestial-paladin-armor-e770ba34fc.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-celetbrating-birthday-cake__3e754f4081",
+      "title": "Anime Girl Celetbrating Birthday Cake",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-celetbrating-birthday-cake-3e754f4081.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-celetbrating-birthday-cake-3e754f4081.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-celetbrating-birthday-cake-3e754f4081.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-celetbrating-birthday-cake-3e754f4081.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-celetbrating-birthday-cake-3e754f4081.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-celtic-tribal-armor__a378a14a1a",
+      "title": "Anime Girl Celtic Tribal Armor",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-celtic-tribal-armor-a378a14a1a.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-celtic-tribal-armor-a378a14a1a.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-celtic-tribal-armor-a378a14a1a.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-celtic-tribal-armor-a378a14a1a.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-celtic-tribal-armor-a378a14a1a.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-centaur-standoff__d462b8fcc6",
+      "title": "Anime Girl Centaur Standoff",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-centaur-standoff-d462b8fcc6.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-centaur-standoff-d462b8fcc6.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-centaur-standoff-d462b8fcc6.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-centaur-standoff-d462b8fcc6.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-centaur-standoff-d462b8fcc6.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-cerberus-gate-guard__17fd627531",
+      "title": "Anime Girl Cerberus Gate Guard",
+      "webpUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-cerberus-gate-guard-17fd627531.webp",
+      "svgUrl": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-cerberus-gate-guard-17fd627531.svg",
+      "webp": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-cerberus-gate-guard-17fd627531.webp",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/webp",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svg": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-cerberus-gate-guard-17fd627531.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "svgCors": {
+        "url": "https://assets.ilovecoloringpage.com/coloring-pages/svg/anime-girls/anime-girl-cerberus-gate-guard-17fd627531.svg",
+        "ok": true,
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "accessControlAllowOrigin": "http://localhost:3005",
+        "cacheControl": "public, max-age=31536000, immutable",
+        "location": ""
+      },
+      "noDuplicatePrefix": true,
+      "noLocalUrl": true,
+      "noR2Dev": true,
+      "noPngGallerySubstitute": true
+    }
+  ],
+  "summary": {
+    "sampledRecords": 100,
+    "animalsAlligatorIncluded": true,
+    "webpHttp200": 100,
+    "webpImageWebp": 100,
+    "svgHttp200": 100,
+    "svgImageSvg": 100,
+    "svgCorsWithLocalOrigin": 100,
+    "duplicatePrefixCount": 0,
+    "localUrlCount": 0,
+    "r2DevCount": 0,
+    "pngSubstituteCount": 0,
+    "allPassed": true
+  }
+}

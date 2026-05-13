@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-05-11T21:15:02.193Z",
+  "runId": "round-5a-public-cors-validation",
+  "public_asset_cors_ready": false,
+  "jpg_webp_downloads_ready": false,
+  "print_quality_ready": true,
+  "ready_for_full_asset_upload": false,
+  "ready_for_image_sitemap": false,
+  "ready_for_og_images": false,
+  "ready_for_live_ads": false,
+  "summary": {
+    "publicAssetBaseReady": false,
+    "publicCorsHeadersPass": false,
+    "publicBrowserConversionPass": false,
+    "round4uAdDensityStillRequired": true,
+    "adDensityPolicy": "Round 4U ad density remains in force during public CORS validation.",
+    "fullAssetUploadDeferred": true,
+    "imageSitemapDeferred": true,
+    "openGraphImageDeferred": true,
+    "liveAdsDeferred": true
+  },
+  "blockers": [
+    "Asset base URL points to localhost, so it is not a public CORS validation target.",
+    "Public asset-domain CORS and browser canvas export are not fully verified.",
+    "Full asset upload remains deferred until final production staging.",
+    "Image sitemap, Open Graph images, and live AdSense remain deferred."
+  ],
+  "ownerActionItems": [
+    "Provide or confirm the final public asset domain ending in /coloring-pages.",
+    "Configure R2/custom-domain CORS for the local preview and final site origins.",
+    "Rerun Round 5A against the public asset base before exposing JPG/WebP downloads."
+  ]
+}

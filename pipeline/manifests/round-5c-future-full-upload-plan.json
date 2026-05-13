@@ -1,0 +1,37 @@
+{
+  "generatedAt": "2026-05-12T01:41:03.146Z",
+  "runId": "round-5c-svg-webp-r2-test",
+  "finalR2Folders": [
+    "svg",
+    "webp"
+  ],
+  "excludedFolders": [
+    "png",
+    "thumbs"
+  ],
+  "expectedObjectKeyStructure": [
+    "coloring-pages/svg/<category>/<filename>.svg",
+    "coloring-pages/webp/<category>/<filename>.webp"
+  ],
+  "summary": {
+    "usesSvgAndWebpOnly": true,
+    "fullUploadDeferred": true,
+    "totalPlannedFiles": 13114,
+    "totalPlannedBytes": 2148737376,
+    "svgFiles": 6557,
+    "webpFiles": 6557,
+    "excludesPngFiles": 6557,
+    "excludesThumbFiles": 6557,
+    "publicCorsRequiredBeforeJpgJpegWebpDownloads": true,
+    "imageSitemapDeferred": true,
+    "openGraphImageDeferred": true,
+    "uploadCommandRun": false
+  },
+  "launchDependencies": [
+    "Final public asset base URL must be stable.",
+    "SVG content type must be image/svg+xml.",
+    "WebP content type must be image/webp.",
+    "CORS must allow the production site origin before browser export controls expand.",
+    "Cache headers should be verified before launch."
+  ]
+}

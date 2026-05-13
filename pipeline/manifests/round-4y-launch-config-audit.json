@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-05-11T19:59:38.623Z",
+  "runId": "round-4y-launch-config-audit",
+  "env": {
+    "NEXT_PUBLIC_SITE_URL": "",
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL": "",
+    "NEXT_PUBLIC_CONTACT_EMAIL": "",
+    "NEXT_PUBLIC_SITE_NAME": "",
+    "NEXT_PUBLIC_SITE_OWNER_NAME": "",
+    "NEXT_PUBLIC_SITE_JURISDICTION": ""
+  },
+  "usage": {
+    "siteUrlReferences": [
+      ".env.example",
+      "src/lib/site/siteConfig.ts"
+    ],
+    "assetBaseUrlReferences": [
+      ".env.example",
+      "src/lib/site/siteConfig.ts"
+    ],
+    "contactEmailReferences": [
+      ".env.example",
+      "src/lib/site/siteConfig.ts"
+    ]
+  },
+  "checks": {
+    "siteConfigCentralized": true,
+    "oldContactEnvReferenceRemoved": true,
+    "sitemapUsesConfiguredSiteUrl": true,
+    "robotsUsesConfiguredSiteUrl": true,
+    "canonicalUsesConfiguredSiteUrl": true,
+    "localUrlLeakageInSource": true,
+    "r2DevReferencesInProductionCode": true,
+    "privateR2EndpointReferences": false,
+    "fakeContactOrBusinessDetails": false,
+    "missingOwnerInputs": [
+      "NEXT_PUBLIC_SITE_URL",
+      "NEXT_PUBLIC_COLORING_ASSET_BASE_URL",
+      "NEXT_PUBLIC_CONTACT_EMAIL",
+      "Owner/legal review of Privacy Policy, Terms, and Affiliate Disclosure"
+    ]
+  }
+}

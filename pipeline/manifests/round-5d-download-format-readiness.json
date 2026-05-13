@@ -1,0 +1,23 @@
+{
+  "generatedAt": "2026-05-12T02:16:43.862Z",
+  "runId": "round-5d-download-format-readiness",
+  "summary": {
+    "browserConversionReady": false,
+    "publicWebpUrlsPassed": false,
+    "publicSvgUrlsPassed": false,
+    "svgCorsPassed": false,
+    "browserCanvasExportPassed": false,
+    "jpgJpegWebpControlsReadyForOwnerApproval": false,
+    "jpgJpegWebpControlsRemainHidden": true,
+    "svgUserDownloadExposed": false,
+    "currentPublicDownloadFormats": [
+      "PNG"
+    ],
+    "publicDownloadsRemainPngOnly": true
+  },
+  "decision": "Keep public downloads PNG-only. Do not expose JPG, JPEG, or WebP controls until public SVG CORS and browser canvas export both pass.",
+  "blockers": [
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL is not configured for this shell. Public SVG/WebP verification was not run.",
+    "Browser canvas export has not passed against the public test asset base."
+  ]
+}

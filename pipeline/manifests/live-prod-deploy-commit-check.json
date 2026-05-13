@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-05-13T20:26:19.439Z",
+  "runId": "live-prod-deploy-commit-check",
+  "siteUrl": "https://www.ilovecoloringpage.com",
+  "summary": {
+    "expectedCommit": "08fd170",
+    "productionDeployCurrent": false,
+    "appearsToIncludeLocalPreviewFixBehavior": false,
+    "homepageCount6352": false,
+    "liveAssetBaseIsCustomDomain": false,
+    "localhostAbsent": true,
+    "r2DevAbsent": true,
+    "liveSitemapCurrent": false,
+    "nonRootPagesReachable": false,
+    "netlifyDeploymentStale": true
+  },
+  "blockers": [
+    "Live production does not appear to serve commit 08fd170 behavior.",
+    "Owner action required: verify Netlify production branch is version-4, publish directory is out, then trigger a fresh deploy from the latest version-4 commit."
+  ]
+}

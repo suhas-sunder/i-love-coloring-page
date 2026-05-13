@@ -1,0 +1,60 @@
+{
+  "generatedAt": "2026-05-11T19:59:38.623Z",
+  "runId": "round-4y-site-config-results",
+  "configFile": "src/lib/site/siteConfig.ts",
+  "summary": {
+    "siteNameConfigured": false,
+    "siteNameFallback": "I Love Coloring Page",
+    "publicSiteUrlConfigured": false,
+    "productionSiteUrlReady": false,
+    "publicAssetBaseUrlConfigured": false,
+    "productionAssetUrlReady": false,
+    "publicContactConfigured": false,
+    "ownerNameConfigured": false,
+    "jurisdictionConfigured": false,
+    "noFakeFallbackContactEmail": true,
+    "publicValuesOnly": true
+  },
+  "siteUrlStatus": {
+    "configured": false,
+    "rawValue": "",
+    "normalizedValue": "",
+    "isHttpUrl": false,
+    "isLocalhost": false,
+    "isExampleDomain": false,
+    "isR2Dev": false,
+    "isPrivateR2Endpoint": false,
+    "hasColoringPagesPrefix": false,
+    "hasDuplicateColoringPagesPrefix": false,
+    "hasOldTestPrefix": false,
+    "ready": false,
+    "temporaryOnly": false,
+    "blockers": [
+      "Value is not configured."
+    ]
+  },
+  "assetStatus": {
+    "configured": false,
+    "rawValue": "",
+    "normalizedValue": "",
+    "isHttpUrl": false,
+    "isLocalhost": false,
+    "isExampleDomain": false,
+    "isR2Dev": false,
+    "isPrivateR2Endpoint": false,
+    "hasColoringPagesPrefix": false,
+    "hasDuplicateColoringPagesPrefix": false,
+    "hasOldTestPrefix": false,
+    "ready": false,
+    "temporaryOnly": false,
+    "blockers": [
+      "Value is not configured."
+    ]
+  },
+  "contactStatus": {
+    "configured": false,
+    "valuePublicIfSet": "",
+    "ready": false,
+    "missingReason": "NEXT_PUBLIC_CONTACT_EMAIL is missing or not a usable public email."
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-05-11T19:59:38.623Z",
+  "runId": "round-4y-public-site-url-validation",
+  "configured": false,
+  "rawValue": "",
+  "normalizedValue": "",
+  "isHttpUrl": false,
+  "isLocalhost": false,
+  "isExampleDomain": false,
+  "isR2Dev": false,
+  "isPrivateR2Endpoint": false,
+  "hasColoringPagesPrefix": false,
+  "hasDuplicateColoringPagesPrefix": false,
+  "hasOldTestPrefix": false,
+  "ready": false,
+  "temporaryOnly": false,
+  "blockers": [
+    "Value is not configured."
+  ],
+  "canonical_uses_configured_site_url": true,
+  "sitemap_uses_configured_site_url": true,
+  "robots_references_sitemap": true,
+  "no_duplicate_slashes_expected": true,
+  "no_per_image_routes": true,
+  "no_phase2_hub_routes": true,
+  "no_image_sitemap": true
+}

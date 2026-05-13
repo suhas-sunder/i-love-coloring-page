@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-05-13T03:11:55.234Z",
+  "runId": "round-5m-owner-decision-template",
+  "instructions": "Copy this template into a future owner decision manifest and fill itemDecisions before Round 5N generates a clean upload bundle.",
+  "approveAllHighConfidence": false,
+  "approveSafeAutoCandidates": false,
+  "excludeManualReviewFromFirstUpload": false,
+  "itemDecisions": [],
+  "itemDecisionShape": {
+    "assetId": "",
+    "decision": "approve | revise | exclude | defer",
+    "revisedCleanStem": "",
+    "notes": ""
+  },
+  "allowedDecisions": [
+    "approve",
+    "revise",
+    "exclude",
+    "defer"
+  ]
+}

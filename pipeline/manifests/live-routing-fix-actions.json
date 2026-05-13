@@ -1,0 +1,51 @@
+{
+  "generatedAt": "2026-05-13T09:11:59.993Z",
+  "runId": "live-routing-fix-actions",
+  "summary": {
+    "rootCause": "Local static export is current and routeable, while live production is stale or misrouted at Netlify/domain level.",
+    "routingConfigChanged": false,
+    "appLogicChanged": false,
+    "localIssueFound": false,
+    "liveIssueFound": true,
+    "ownerActionRequired": true,
+    "selfRedirectFixedLocally": true,
+    "liveSelfRedirectStillObserved": true
+  },
+  "filesChanged": [
+    "AGENTS.md",
+    "package.json",
+    "pipeline/scripts/live-routing-http-check.mjs",
+    "pipeline/scripts/live-routing-local-export-check.mjs",
+    "pipeline/tests/live-routing-fix.test.mjs",
+    "pipeline/manifests/live-routing-http-results.json",
+    "pipeline/reports/live-routing-http-report.md",
+    "pipeline/manifests/live-routing-project-context-check.json",
+    "pipeline/manifests/live-routing-config-audit.json",
+    "pipeline/manifests/live-routing-local-export-results.json",
+    "pipeline/manifests/live-routing-sitemap-local-check.json",
+    "pipeline/manifests/live-routing-runtime-build-check.json",
+    "pipeline/manifests/live-routing-fix-actions.json",
+    "pipeline/manifests/live-routing-post-fix-live-check.json",
+    "pipeline/manifests/live-routing-acceptance-gate.json",
+    "pipeline/reports/live-routing-project-context-check.md",
+    "pipeline/reports/live-routing-config-audit.md",
+    "pipeline/reports/live-routing-local-export-report.md",
+    "pipeline/reports/live-routing-sitemap-local-check.md",
+    "pipeline/reports/live-routing-runtime-build-check.md",
+    "pipeline/reports/live-routing-fix-actions.md",
+    "pipeline/reports/live-routing-post-fix-live-check.md",
+    "pipeline/reports/live-routing-acceptance-gate.md"
+  ],
+  "localBeforeAfter": {
+    "before": "No repository routing config patch was applied because the clean local export serves non-root routes.",
+    "after": "Local static export route behavior remains clean; production needs a fresh/correct Netlify deploy before live QA can pass."
+  },
+  "ownerActions": [
+    "Verify Netlify is deploying the version-4 branch.",
+    "Trigger a fresh Netlify deploy from the latest version-4 commit.",
+    "Confirm the Netlify publish directory is out.",
+    "Clear or replace the stale deploy if needed.",
+    "Check domain redirect settings for apex and www.",
+    "Verify the deployed commit SHA matches the latest pushed version-4 commit before rerunning live QA."
+  ]
+}

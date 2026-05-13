@@ -1,0 +1,23 @@
+{
+  "generatedAt": "2026-05-11T00:00:00.000Z",
+  "phase": "round-4w",
+  "generatedFiles": [
+    "src/generated/coloring/seo-pages.json",
+    "src/generated/coloring/hub-seo-content.json",
+    "src/generated/coloring/internal-linking.json",
+    "src/generated/coloring/social-metadata.json"
+  ],
+  "summary": {
+    "seoPageCount": 66,
+    "phase1HubContentCount": 64,
+    "internalLinkingPageCount": 66,
+    "socialMetadataPageCount": 66,
+    "generatedFromActualHubData": true,
+    "usesAssetCounts": true,
+    "usesRelatedHubs": true,
+    "usesTopicSignals": true,
+    "keywordStuffingAvoided": true,
+    "publicSvgDownloadMentioned": false,
+    "unavailableOnlineColoringPromised": false
+  }
+}

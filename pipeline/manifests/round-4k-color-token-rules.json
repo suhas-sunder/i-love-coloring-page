@@ -1,0 +1,49 @@
+{
+  "runId": "round-4k-gallery-visual-corrections",
+  "generatedAt": "2026-05-10T19:40:36.909Z",
+  "summary": {
+    "approvedBaseTokenCount": 13,
+    "approvedSoftBandCount": 5,
+    "randomYellowBeigeBanned": true,
+    "gradientsAllowed": false,
+    "componentLocalHexAllowed": false,
+    "coloredSectionStyle": "full-width section bands only"
+  },
+  "approvedBaseTokens": [
+    "canvas",
+    "paper",
+    "paperSoft",
+    "ink",
+    "text",
+    "textMuted",
+    "plum",
+    "coral",
+    "sky",
+    "mint",
+    "rose",
+    "deepNavy",
+    "focus"
+  ],
+  "approvedSoftSectionBands": [
+    "softSky",
+    "softMint",
+    "softRose",
+    "softPlum",
+    "softPaper"
+  ],
+  "forbiddenPatterns": [
+    "random yellow or beige wrapper cards",
+    "section-local hex colors",
+    "component-local hex colors",
+    "gradients",
+    "decorative outlines",
+    "layout shadows",
+    "image cards nested inside colored rounded wrapper cards"
+  ],
+  "usageRules": [
+    "Primary buttons use plum or deepNavy.",
+    "Small accents may use coral.",
+    "Active filters may use plum or mint where contrast is readable.",
+    "Colored sections must be full-width bands with normal max-width inner layout."
+  ]
+}

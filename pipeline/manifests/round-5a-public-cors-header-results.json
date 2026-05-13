@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-05-11T21:15:02.192Z",
+  "runId": "round-5a-public-cors-validation",
+  "assetBaseUrl": "http://127.0.0.1:4176/coloring-pages",
+  "publicAssetBaseReady": false,
+  "originsTested": [
+    "http://localhost:3005",
+    "http://127.0.0.1:3005"
+  ],
+  "checks": [],
+  "skipped": true,
+  "skippedReason": "Asset base URL points to localhost, so it is not a public CORS validation target.",
+  "summary": {
+    "publicCorsHeadersPass": false,
+    "totalAssetsChecked": 0,
+    "status200Count": 0,
+    "contentTypeOkCount": 0,
+    "accessControlAllowOriginOkCount": 0,
+    "cacheHeaderDocumentedCount": 0,
+    "noXmlAccessDenied": true,
+    "noR2ErrorHtml": true,
+    "noPrivateEndpointRedirect": true,
+    "noStaleOldPrefix": true,
+    "noDoubleColoringPagesPrefix": true
+  }
+}

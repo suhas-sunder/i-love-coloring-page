@@ -1,0 +1,22 @@
+# Live Routing Project Context Check
+
+- Correct repository: true
+- Repository: i-love-coloring-page
+- Branch: version-4
+- Correct branch: true
+- Runtime switch commit exists: true
+- Live verification commits exist: true
+- Static export configured: true
+- app/api present: false
+- Runtime generated data exists: true
+- Runtime available records: 6352
+- Public contains generated production media: false
+- images clean: true
+- ilovesvg clean: true
+- SVG user download exposed: false
+- Public downloads: PNG, JPG, WebP
+- Live AdSense code absent: true
+- Image sitemap absent: true
+- OG image generation absent: true
+- Public defaults hardcoded: true
+- R2 credential names in runtime: false

@@ -1,0 +1,323 @@
+import assert from "node:assert/strict";
+import { access, readdir, readFile, stat } from "node:fs/promises";
+import path from "node:path";
+import { execFile } from "node:child_process";
+import { promisify } from "node:util";
+import { test } from "node:test";
+
+const execFileAsync = promisify(execFile);
+const REPO_ROOT = process.cwd();
+
+const REQUIRED_JSON = [
+  "pipeline/manifests/round-4w-project-context-check.json",
+  "pipeline/manifests/round-4w-seo-content-rules.json",
+  "pipeline/manifests/round-4w-current-seo-audit.json",
+  "pipeline/manifests/round-4w-seo-content-model.json",
+  "pipeline/manifests/round-4w-seo-generation-results.json",
+  "pipeline/manifests/round-4w-seo-copy-quality-flags.json",
+  "pipeline/manifests/round-4w-jsonld-decision.json",
+  "pipeline/manifests/round-4w-sitemap-robots-validation.json",
+  "pipeline/manifests/round-4w-adsense-content-readiness.json",
+  "pipeline/manifests/round-4w-pinterest-social-readiness.json",
+  "pipeline/manifests/round-4w-ad-rail-safety.json",
+  "pipeline/manifests/round-4w-browser-qa-results.json",
+  "pipeline/manifests/round-4w-seo-implementation-results.json",
+  "pipeline/manifests/round-4w-content-quality-results.json",
+  "pipeline/manifests/round-4w-metadata-results.json",
+];
+
+const REQUIRED_REPORTS = [
+  "pipeline/reports/round-4w-project-context-check.md",
+  "pipeline/reports/round-4w-seo-content-research.md",
+  "pipeline/reports/round-4w-current-seo-audit.md",
+  "pipeline/reports/round-4w-seo-content-model.md",
+  "pipeline/reports/round-4w-jsonld-decision.md",
+  "pipeline/reports/round-4w-sitemap-robots-validation.md",
+  "pipeline/reports/round-4w-adsense-content-readiness.md",
+  "pipeline/reports/round-4w-pinterest-social-readiness.md",
+  "pipeline/reports/round-4w-ad-rail-safety.md",
+  "pipeline/reports/round-4w-browser-qa-report.md",
+  "pipeline/reports/round-4w-seo-implementation-report.md",
+  "pipeline/reports/round-4w-content-quality-report.md",
+  "pipeline/reports/round-4w-metadata-report.md",
+  "pipeline/reports/round-4w-next-phase-plan.md",
+];
+
+const GENERATED_JSON = [
+  "src/generated/coloring/seo-pages.json",
+  "src/generated/coloring/hub-seo-content.json",
+  "src/generated/coloring/internal-linking.json",
+  "src/generated/coloring/social-metadata.json",
+];
+
+const ROUND_4U_COUNTS = {
+  "390": 1,
+  "430": 1,
+  "768": 1,
+  "1024": 1,
+  "1280": 1,
+  "1440": 1,
+  "1920": 3,
+  "2560": 3,
+};
+
+test("Round 4W JSON manifests, reports, and generated SEO data parse", async () => {
+  for (const relativePath of [...REQUIRED_JSON, ...GENERATED_JSON]) {
+    const raw = await readText(relativePath);
+    assert.doesNotMatch(raw, /client-\d+|ca-pub-|google_ad_client|adsbygoogle|[A-Za-z]:\\|ilovesvg\//i, relativePath);
+    JSON.parse(raw);
+  }
+
+  for (const relativePath of REQUIRED_REPORTS) {
+    const text = await readText(relativePath);
+    assert.match(text, /\S/, relativePath);
+    assert.doesNotMatch(text, /client-\d+|ca-pub-|google_ad_client|adsbygoogle|[A-Za-z]:\\|ilovesvg\//i, relativePath);
+  }
+
+  const context = await readJson("pipeline/manifests/round-4w-project-context-check.json");
+  assert.equal(context.summary.correctRepo, true);
+  assert.equal(context.summary.branch, "version-4");
+  assert.equal(context.summary.round4vCommitExists, true);
+  assert.equal(context.summary.appApiRoutePresent, false);
+  assert.equal(context.summary.staticExportConfigured, true);
+  assert.equal(context.summary.r2BundleExists, true);
+  assert.equal(context.summary.adWellsVisibleByDefault, true);
+  assert.equal(context.summary.liveAdCodeExists, false);
+  assert.deepEqual(context.summary.currentPublicDownloadFormats, ["PNG"]);
+  assert.equal(context.summary.visibleSvgDownloadOptions, false);
+});
+
+test("generated metadata covers homepage, gallery landing, and every Phase 1 hub uniquely enough", async () => {
+  const hubs = await readJson("src/generated/coloring/hubs.json");
+  const routes = await readJson("src/generated/coloring/routes.json");
+  const seoPages = await readJson("src/generated/coloring/seo-pages.json");
+  const hubContent = await readJson("src/generated/coloring/hub-seo-content.json");
+  const social = await readJson("src/generated/coloring/social-metadata.json");
+  const metadataResults = await readJson("pipeline/manifests/round-4w-metadata-results.json");
+  const contentResults = await readJson("pipeline/manifests/round-4w-content-quality-results.json");
+
+  const pageByPath = new Map(seoPages.pages.map((page) => [page.canonicalPath, page]));
+  assert.ok(pageByPath.has("/"), "homepage metadata missing");
+  assert.ok(pageByPath.has("/coloring-pages"), "gallery landing metadata missing");
+
+  const phase1Routes = routes.routes.map((route) => route.path);
+  assert.equal(phase1Routes.length, 65);
+  for (const routePath of phase1Routes) {
+    assert.ok(pageByPath.has(routePath), `${routePath} metadata missing`);
+  }
+
+  const nonRootHubs = hubs.hubs.filter((hub) => hub.route !== "/coloring-pages");
+  assert.equal(hubContent.hubs.length, nonRootHubs.length);
+  for (const hub of nonRootHubs) {
+    const content = hubContent.hubs.find((entry) => entry.hubId === hub.hubId);
+    assert.ok(content, `${hub.slug} content missing`);
+    assert.equal(content.canonicalPath, hub.route);
+    assert.equal(content.noIndex, false);
+    assert.equal(content.sitemap, true);
+    assert.ok(content.shortIntro.length >= 80, `${hub.slug} intro too short`);
+    assert.ok(content.belowGallerySections.length >= 3, `${hub.slug} below-gallery sections missing`);
+    assert.ok(content.relatedHubLinks.length >= 3, `${hub.slug} related links missing`);
+  }
+
+  assert.equal(social.pages.length, seoPages.pages.length);
+  assert.equal(metadataResults.summary.homepageMetadataImplemented, true);
+  assert.equal(metadataResults.summary.galleryLandingMetadataImplemented, true);
+  assert.equal(metadataResults.summary.phase1HubMetadataCount, nonRootHubs.length);
+  assert.equal(metadataResults.summary.uniqueMetaTitleCount, seoPages.pages.length);
+  assert.equal(metadataResults.summary.uniqueMetaDescriptionCount, seoPages.pages.length);
+  assert.equal(contentResults.summary.phase1HubsWithUniqueBelowGalleryContent, nonRootHubs.length);
+  assert.equal(contentResults.summary.galleryFirstUxPreserved, true);
+
+  const titles = seoPages.pages.map((page) => page.metaTitle);
+  const descriptions = seoPages.pages.map((page) => page.metaDescription);
+  assert.equal(new Set(titles).size, titles.length);
+  assert.equal(new Set(descriptions).size, descriptions.length);
+  assert.doesNotMatch(JSON.stringify(seoPages), /SVG download|Download SVG|online coloring is available|color online now/i);
+  assert.doesNotMatch(JSON.stringify(hubContent), /SVG download|Download SVG|online coloring is available|color online now|pipeline|source path|warning flag/i);
+});
+
+test("metadata, sitemap, JSON-LD, and social decisions stay static-export safe", async () => {
+  const jsonLd = await readJson("pipeline/manifests/round-4w-jsonld-decision.json");
+  const sitemap = await readJson("pipeline/manifests/round-4w-sitemap-robots-validation.json");
+  const social = await readJson("pipeline/manifests/round-4w-pinterest-social-readiness.json");
+  const seoImpl = await readJson("pipeline/manifests/round-4w-seo-implementation-results.json");
+  const sourceText = await readProjectText(["app", "src/components", "src/lib", "src/generated/coloring/seo-pages.json", "src/generated/coloring/hub-seo-content.json"]);
+
+  assert.equal(jsonLd.summary.implementedJsonLd, false);
+  assert.equal(jsonLd.summary.websiteSchemaDeferred, true);
+  assert.equal(jsonLd.summary.breadcrumbListDeferred, true);
+  assert.equal(jsonLd.summary.imageObjectDeferred, true);
+  assert.equal(jsonLd.summary.faqPageDeferred, true);
+  assert.doesNotMatch(sourceText, /application\/ld\+json|FAQPage|ImageObject|BreadcrumbList|"@type":\s*"WebSite"/i);
+
+  assert.equal(sitemap.summary.routeCount, 65);
+  assert.equal(sitemap.summary.includesHomepage, true);
+  assert.equal(sitemap.summary.includesColoringPagesLanding, true);
+  assert.equal(sitemap.summary.phase1HubRoutesOnly, true);
+  assert.equal(sitemap.summary.noPerImageRoutes, true);
+  assert.equal(sitemap.summary.noPhase2HubRoutes, true);
+  assert.equal(sitemap.summary.noImageSitemap, true);
+  assert.equal(sitemap.summary.robotsAllowsPublicPages, true);
+
+  assert.equal(social.summary.metadataLevelReady, true);
+  assert.equal(social.summary.openGraphImagesDeferred, true);
+  assert.equal(social.summary.pinterestImageCreationDeferred, true);
+  assert.equal(seoImpl.summary.openGraphImagesAdded, false);
+  assert.equal(seoImpl.summary.imageSitemapAdded, false);
+  assert.equal(seoImpl.summary.liveAdCodeAdded, false);
+});
+
+test("below-gallery SEO content is integrated without breaking design or ad density", async () => {
+  const homePage = await readText("app/page.tsx");
+  const landingPage = await readText("app/coloring-pages/page.tsx");
+  const hubPageContent = await readText("src/components/coloring/HubPageContent.tsx");
+  const seoComponent = await readText("src/components/coloring/SeoContentSection.tsx");
+  const componentsCss = await readText("src/styles/components.css");
+  const layoutCss = await readText("src/styles/layout.css");
+  const browserQa = await readJson("pipeline/manifests/round-4w-browser-qa-results.json");
+
+  assert.match(homePage, /getSeoPageContent\("\/"\)/);
+  assert.match(landingPage, /getSeoPageContent\("\/coloring-pages"\)/);
+  assert.match(hubPageContent, /getHubSeoContent\(hub\.hubId\)/);
+  assert.match(seoComponent, /<section className="content-section seo-content-section/);
+  assert.match(seoComponent, /relatedHubLinks/);
+  assert.doesNotMatch(seoComponent, /card|shadow|border|outline|gradient/i);
+  assert.doesNotMatch(`${componentsCss}\n${layoutCss}`, /\.seo-[^{]+{[^}]*box-shadow|\.seo-[^{]+{[^}]*border:|\.seo-[^{]+{[^}]*linear-gradient/i);
+  assert.equal(browserQa.summary.galleryFirstUxPreserved, true);
+  assert.equal(browserQa.summary.noNestedCards, true);
+  assert.equal(browserQa.summary.noHorizontalOverflow, true);
+  assert.deepEqual(browserQa.summary.visibleCountsByWidth, ROUND_4U_COUNTS);
+});
+
+test("side rail safety reserves and constrains real ad space without changing placeholder visuals", async () => {
+  const adRailSafety = await readJson("pipeline/manifests/round-4w-ad-rail-safety.json");
+  const componentsCss = await readText("src/styles/components.css");
+  const adSlot = await readText("src/components/ads/AdSlot.tsx");
+  const adsConfig = await readText("src/lib/ads/config.ts");
+
+  assert.equal(adRailSafety.summary.placeholderAppearanceChanged, false);
+  assert.equal(adRailSafety.summary.slotIdsChanged, false);
+  assert.equal(adRailSafety.summary.slotCountChanged, false);
+  assert.equal(adRailSafety.summary.railWidthReserved, true);
+  assert.equal(adRailSafety.summary.safeGapReserved, true);
+  assert.equal(adRailSafety.summary.wideCreativeCannotOverlapContent, true);
+  assert.equal(adRailSafety.summary.wideCreativeCannotCreateHorizontalOverflow, true);
+  assert.deepEqual(adRailSafety.summary.widthsChecked, [1440, 1600, 1740, 1920, 2560]);
+
+  assert.match(componentsCss, /--ad-rail-width:\s*160px/);
+  assert.match(componentsCss, /--ad-rail-gap:\s*var\(--space-48\)/);
+  assert.match(componentsCss, /--content-max-width:\s*var\(--layout-max\)/);
+  assert.match(componentsCss, /--ad-wide-min-viewport:\s*1740px/);
+  assert.match(componentsCss, /\.ad-rail\s*{[\s\S]*max-width:\s*var\(--ad-rail-width\)/);
+  assert.match(componentsCss, /\.ad-rail\s*{[\s\S]*overflow:\s*clip/);
+  assert.match(componentsCss, /\.ad-rail \.ad-slot\s*{[\s\S]*max-width:\s*100%/);
+  assert.match(componentsCss, /calc\(-1 \* \(var\(--ad-rail-width\) \+ var\(--ad-rail-gap\)\)\)/);
+  assert.doesNotMatch(`${adSlot}\n${adsConfig}`, /NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS|return null|showAdPlaceholders/);
+});
+
+test("Round 4W keeps route, media, source, download, and ad boundaries intact", async () => {
+  const nextConfig = await readText("next.config.mjs");
+  const imageCard = await readText("src/components/coloring/ImageCard.tsx");
+  const appFiles = await listFilesIfExists(path.join(REPO_ROOT, "app"));
+  const publicFiles = await listFilesIfExists(path.join(REPO_ROOT, "public"));
+  const forbiddenSurfaces = await readProjectText([
+    "src/components/site/SiteHeader.tsx",
+    "src/components/site/MoreHubMenu.tsx",
+    "src/components/site/MobileNav.tsx",
+    "src/components/coloring/ImageCard.tsx",
+    "src/components/coloring/GalleryGrid.tsx",
+  ]);
+  const publicSource = await readProjectText(["app", "src/components", "src/lib", "src/generated/coloring"]);
+  const trackedR2UploadMedia = await gitLsFiles("pipeline/r2-upload");
+  const statusImages = await gitStatusFor("images");
+  const statusIlovesvg = await gitStatusFor("ilovesvg");
+  const statusProductionFull = await gitStatusFor("pipeline/production/full");
+  const renameStatus = await gitStatus();
+
+  assert.match(nextConfig, /output:\s*"export"/);
+  assert.equal(appFiles.some((file) => normalizePath(file).includes("/api/")), false);
+  assert.equal(publicFiles.some((file) => /(?:^|[\\/])(?:svg|png|thumbs|coloring-pages)[\\/]/i.test(file)), false);
+  assert.match(imageCard, /Print/);
+  assert.match(imageCard, /Download PNG/);
+  assert.doesNotMatch(publicSource, /Download SVG|SVG download|Download JPG|Download JPEG|Download WebP|assetUrls\.svg|pngUrl\s*\|\|\s*svgUrl/i);
+  assert.doesNotMatch(publicSource, /adsbygoogle|pagead2\.googlesyndication|ca-pub-|google_ad_client/i);
+  assert.doesNotMatch(forbiddenSurfaces, /AdSlot|AdRail|data-ad-placeholder|Advertisement|affiliate/i);
+  assert.equal(trackedR2UploadMedia.trim(), "");
+  assert.equal(statusImages.trim(), "");
+  assert.equal(statusIlovesvg.trim(), "");
+  assert.equal(statusProductionFull.trim(), "");
+  assert.equal(renameStatus.split(/\r?\n/).some((line) => /^R/.test(line.trim())), false);
+});
+
+async function readJson(relativePath) {
+  return JSON.parse(await readText(relativePath));
+}
+
+async function readText(relativePath) {
+  return readFile(path.join(REPO_ROOT, relativePath), "utf8");
+}
+
+async function listFilesIfExists(root) {
+  try {
+    await access(root);
+  } catch {
+    return [];
+  }
+
+  const results = [];
+  async function walk(directory) {
+    for (const entry of await readdir(directory, { withFileTypes: true })) {
+      const absolute = path.join(directory, entry.name);
+      if (entry.isDirectory()) {
+        await walk(absolute);
+      } else {
+        results.push(path.relative(REPO_ROOT, absolute));
+      }
+    }
+  }
+  await walk(root);
+  return results;
+}
+
+async function readProjectText(relativeRoots) {
+  const chunks = [];
+  for (const relativeRoot of relativeRoots) {
+    const root = path.join(REPO_ROOT, relativeRoot);
+    try {
+      const rootStat = await stat(root);
+      if (rootStat.isFile()) {
+        chunks.push(await readText(relativeRoot));
+        continue;
+      }
+
+      const files = await listFilesIfExists(root);
+      for (const file of files) {
+        if (!/\.(?:ts|tsx|css|json|md)$/.test(file)) continue;
+        if (normalizePath(file).startsWith("src/generated/coloring/items.json")) continue;
+        chunks.push(await readText(file));
+      }
+    } catch {
+      continue;
+    }
+  }
+  return chunks.join("\n");
+}
+
+async function gitLsFiles(relativePath) {
+  const { stdout } = await execFileAsync("git", ["ls-files", "--", relativePath], { cwd: REPO_ROOT });
+  return stdout;
+}
+
+async function gitStatusFor(relativePath) {
+  const { stdout } = await execFileAsync("git", ["status", "--short", "--", relativePath], { cwd: REPO_ROOT });
+  return stdout;
+}
+
+async function gitStatus() {
+  const { stdout } = await execFileAsync("git", ["status", "--short"], { cwd: REPO_ROOT });
+  return stdout;
+}
+
+function normalizePath(filePath) {
+  return filePath.replaceAll("\\", "/");
+}

@@ -1,0 +1,46 @@
+{
+  "generatedAt": "2026-05-11T05:07:36.514Z",
+  "runId": "round-4t-ad-visibility-debug",
+  "summary": {
+    "whyPlaceholdersWereNotVisibleInOwnerScreenshot": "The previous placeholder system depended on a build-time environment flag, so a normal static build exported no ad wells. Stale exported HTML could also preserve that hidden state.",
+    "likelyCause": "env flag and stale static export",
+    "placeholdersVisibleByDefault": true,
+    "oldEnvGatedPlaceholderOffBehaviorRemoved": true,
+    "visibleAdvertisementLabelCounts": {
+      "home": {
+        "mobile-390": 3,
+        "mobile-430": 3,
+        "tablet-768": 3,
+        "landscape-1024": 3,
+        "desktop-1440": 3,
+        "wide-1920": 5,
+        "ultra-2560": 5
+      },
+      "galleryLanding": {
+        "mobile-390": 3,
+        "mobile-430": 3,
+        "tablet-768": 3,
+        "landscape-1024": 3,
+        "desktop-1440": 3,
+        "wide-1920": 5,
+        "ultra-2560": 5
+      },
+      "hubPage": {
+        "mobile-390": 3,
+        "mobile-430": 3,
+        "tablet-768": 3,
+        "landscape-1024": 3,
+        "desktop-1440": 3,
+        "wide-1920": 5,
+        "ultra-2560": 5
+      }
+    },
+    "headerBannerVisible": true,
+    "sideRailsVisible": true,
+    "inlineSlotsVisible": true,
+    "adPlacementCountChanged": false,
+    "adStylingChanged": false,
+    "slotIdsChanged": false,
+    "liveAdCodeAdded": false
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "generatedAt": "2026-05-10",
+  "runId": "round-4b-next-gallery-foundation",
+  "appStructure": {
+    "nextAppExistedBeforeRound4B": false,
+    "appRouterScaffolded": true,
+    "generatedDataDirectory": "src/generated/coloring"
+  },
+  "inputs": {
+    "round3cAssets": "pipeline/manifests/round-3c-production-assets.json",
+    "round3cGallery": "pipeline/manifests/round-3c-production-gallery-data.json",
+    "round3cCategories": "pipeline/manifests/round-3c-production-category-data.json",
+    "round3cQuarantine": "pipeline/manifests/round-3c-production-quarantine.json",
+    "round3cNextjsContract": "pipeline/manifests/round-3c-nextjs-data-contract.json",
+    "round4aTaxonomy": "pipeline/manifests/round-4a-approved-hub-taxonomy.json",
+    "round4aImageToHubMap": "pipeline/manifests/round-4a-image-to-hub-map.json",
+    "round4aRoutePlan": "pipeline/manifests/round-4a-hub-route-plan.json",
+    "round4aPhase1Hubs": "pipeline/manifests/round-4a-phase-1-hubs.json",
+    "round4aPhase2Backlog": "pipeline/manifests/round-4a-phase-2-hub-backlog.json",
+    "round4aSectionOnly": "pipeline/manifests/round-4a-section-only-topics.json",
+    "round4aRejected": "pipeline/manifests/round-4a-rejected-hub-candidates.json",
+    "round4aNextjsContract": "pipeline/manifests/round-4a-nextjs-gallery-data-contract.json"
+  },
+  "outputs": {
+    "generatedDataFiles": [
+      "src/generated/coloring/hubs.json",
+      "src/generated/coloring/items.json",
+      "src/generated/coloring/hub-items.json",
+      "src/generated/coloring/routes.json",
+      "src/generated/coloring/categories.json",
+      "src/generated/coloring/site-map.json"
+    ],
+    "manifests": [
+      "pipeline/manifests/round-4b-next-gallery-build-results.json",
+      "pipeline/manifests/round-4b-next-route-validation.json",
+      "pipeline/manifests/round-4b-asset-resolution-plan.json"
+    ],
+    "reports": [
+      "pipeline/reports/round-4b-asset-hosting-plan.md",
+      "pipeline/reports/round-4b-next-gallery-report.md",
+      "pipeline/reports/round-4b-route-and-seo-report.md",
+      "pipeline/reports/round-4b-next-phase-plan.md"
+    ]
+  },
+  "counts": {
+    "successfulAssetsAnalyzed": 6557,
+    "generatedItems": 6557,
+    "phase1HubRoutes": 65,
+    "phase1SlugRoutes": 64,
+    "phase2BacklogHubs": 67,
+    "sectionOnlyTopics": 41,
+    "rejectedCandidates": 10,
+    "quarantinedAssetsExcluded": 9
+  },
+  "validation": {
+    "dataGenerator": "passed at Round 4B closeout",
+    "round4aTaxonomyTests": "passed at Round 4B closeout",
+    "round4bGalleryTests": "passed at Round 4B closeout",
+    "npmTest": "passed at Round 4B closeout",
+    "typecheck": "passed at Round 4B closeout",
+    "build": "passed at Round 4B closeout",
+    "lint": "not_configured",
+    "audit": "passed at Round 4B closeout",
+    "visualQa": "browser smoke checked with placeholder assets; full asset rendering QA is pending asset base URL or local proxy environment variables"
+  },
+  "policy": {
+    "usesRound4AHubTaxonomy": true,
+    "rawFoldersAreNotPublicTaxonomy": true,
+    "noIndexablePerImagePages": true,
+    "productionAssetsMovedToPublic": false,
+    "warningFlagsInternalOnly": true
+  }
+}

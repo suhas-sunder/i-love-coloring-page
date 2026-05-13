@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-05-10T21:54:03.505Z",
+  "runId": "round-4n-nav-downloads",
+  "implementedNow": [
+    "PNG"
+  ],
+  "deferredFormats": [
+    "JPG",
+    "JPEG",
+    "WebP"
+  ],
+  "summary": {
+    "svgInternalOnly": true,
+    "jpegWebpDeferred": true,
+    "noFakeFormatLabels": true,
+    "frontendOnlyPlan": true
+  },
+  "futurePlan": [
+    "Use the generated PNG preview as the browser-safe source image.",
+    "Fetch with CORS enabled from the public asset domain.",
+    "Draw the decoded image to a canvas and export image/jpeg or image/webp only when the browser reports a supported output.",
+    "Hide unsupported or blocked conversion formats instead of showing broken controls.",
+    "Keep SVG metadata available internally for future online coloring tools without surfacing it as a user download."
+  ]
+}

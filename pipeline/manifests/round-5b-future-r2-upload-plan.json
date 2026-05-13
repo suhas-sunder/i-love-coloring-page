@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-05-11T23:47:22.150Z",
+  "runId": "round-5b-asset-format-rationalization",
+  "finalR2Folders": [
+    "svg",
+    "webp"
+  ],
+  "excludedFolders": [
+    "png",
+    "thumbs"
+  ],
+  "expectedObjectKeyStructure": [
+    "coloring-pages/svg/<category>/<filename>.svg",
+    "coloring-pages/webp/<category>/<filename>.webp"
+  ],
+  "summary": {
+    "usesSvgAndWebpOnly": true,
+    "svgInternalOnly": true,
+    "webpGalleryPreviewFormat": true,
+    "fullUploadDeferred": true,
+    "totalPlannedFiles": 13114,
+    "totalPlannedBytes": 2148737376,
+    "svgFiles": 6557,
+    "webpFiles": 6557,
+    "excludesPngFiles": 6557,
+    "excludesThumbFiles": 6557
+  },
+  "corsDependencies": {
+    "publicAssetCorsRequiredForBrowserConversion": true,
+    "jpgJpegWebpDownloadControlsRemainDeferred": true,
+    "imageSitemapAndOgImagesRemainDeferred": true
+  }
+}

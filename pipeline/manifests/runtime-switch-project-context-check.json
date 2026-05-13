@@ -1,0 +1,28 @@
+{
+  "generatedAt": "2026-05-13T06:45:46.794Z",
+  "runId": "runtime-switch-project-context-check",
+  "summary": {
+    "correctRepository": true,
+    "repoName": "i-love-coloring-page",
+    "branch": "version-4",
+    "appApiRoutePresent": false,
+    "staticExportConfigured": true,
+    "coloringPagesRouteExists": true,
+    "hubRouteExists": true,
+    "cleanUploadObjectKeyMapExists": true,
+    "cleanUploadInclusionManifestExists": true,
+    "deferredManifestExists": true,
+    "cleanBundleExists": true,
+    "optimizedBundleExists": true,
+    "publicContainsGeneratedProductionMedia": false,
+    "imagesStatusClean": true,
+    "ilovesvgStatusClean": true,
+    "svgInternalOnly": true,
+    "publicDownloadsPngJpgWebp": true,
+    "adWellsVisibleByDefault": true,
+    "liveAdSenseCodePresent": false,
+    "imageSitemapPresent": false,
+    "openGraphImageGenerationPresent": false,
+    "wrongContextIndicatorsPresent": false
+  }
+}

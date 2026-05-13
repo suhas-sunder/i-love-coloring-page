@@ -1,0 +1,46 @@
+# Round 5O Working Tree Audit
+
+- Status entries: 37
+- Intended Round 5O entries: 35
+- Generated validation drift: 0
+- Local artifact drift: 0
+- Risky unrelated drift: 2
+- Safe to proceed: false
+
+-  M .gitignore: intended_round_5o_artifact
+-  M AGENTS.md: intended_round_5o_artifact
+-  M package-lock.json: intended_round_5o_artifact
+-  M package.json: intended_round_5o_artifact
+-  M pipeline/scripts/round-4z-cors-media-server.mjs: risky_unrelated_drift
+-  M pipeline/scripts/round-5o-upload-clean-bundle-to-r2.mjs: intended_round_5o_artifact
+-  M pipeline/tests/round-5o-local-r2-uploader.test.mjs: intended_round_5o_artifact
+- ?? pipeline/config/: risky_unrelated_drift
+- ?? pipeline/manifests/round-5p-browser-qa-results.json: intended_round_5o_artifact
+- ?? pipeline/manifests/round-5p-clean-bundle-size-audit.json: intended_round_5o_artifact
+- ?? pipeline/manifests/round-5p-compression-acceptance-gate.json: intended_round_5o_artifact
+- ?? pipeline/manifests/round-5p-compression-strategy.json: intended_round_5o_artifact
+- ?? pipeline/manifests/round-5p-contact-sheet-results.json: intended_round_5o_artifact
+- ?? pipeline/manifests/round-5p-optimization-failures.json: intended_round_5o_artifact
+- ?? pipeline/manifests/round-5p-optimized-bundle-integrity.json: intended_round_5o_artifact
+- ?? pipeline/manifests/round-5p-optimized-upload-operation-estimate.json: intended_round_5o_artifact
+- ?? pipeline/manifests/round-5p-project-context-check.json: intended_round_5o_artifact
+- ?? pipeline/manifests/round-5p-svg-optimization-results.json: intended_round_5o_artifact
+- ?? pipeline/manifests/round-5p-webp-optimization-policy.json: intended_round_5o_artifact
+- ?? pipeline/manifests/round-5p-webp-optimization-results.json: intended_round_5o_artifact
+- ?? pipeline/manifests/round-5p-working-tree-audit.json: intended_round_5o_artifact
+- ?? pipeline/reports/round-5p-browser-qa-report.md: intended_round_5o_artifact
+- ?? pipeline/reports/round-5p-clean-bundle-size-audit.md: intended_round_5o_artifact
+- ?? pipeline/reports/round-5p-compression-acceptance-gate.md: intended_round_5o_artifact
+- ?? pipeline/reports/round-5p-compression-strategy.md: intended_round_5o_artifact
+- ?? pipeline/reports/round-5p-contact-sheet-report.md: intended_round_5o_artifact
+- ?? pipeline/reports/round-5p-optimized-bundle-integrity.md: intended_round_5o_artifact
+- ?? pipeline/reports/round-5p-optimized-upload-operation-estimate.md: intended_round_5o_artifact
+- ?? pipeline/reports/round-5p-project-context-check.md: intended_round_5o_artifact
+- ?? pipeline/reports/round-5p-svg-optimization-report.md: intended_round_5o_artifact
+- ?? pipeline/reports/round-5p-webp-optimization-policy.md: intended_round_5o_artifact
+- ?? pipeline/reports/round-5p-webp-optimization-report.md: intended_round_5o_artifact
+- ?? pipeline/reports/round-5p-working-tree-audit.md: intended_round_5o_artifact
+- ?? pipeline/scripts/round-5p-audit-clean-bundle-size.mjs: intended_round_5o_artifact
+- ?? pipeline/scripts/round-5p-browser-qa-runner.cjs: intended_round_5o_artifact
+- ?? pipeline/scripts/round-5p-build-optimized-upload-bundle.mjs: intended_round_5o_artifact
+- ?? pipeline/tests/round-5p-compression.test.mjs: intended_round_5o_artifact

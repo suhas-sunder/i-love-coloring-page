@@ -1,0 +1,63 @@
+{
+  "generatedAt": "2026-05-10",
+  "runId": "round-4c-public-gallery-visual-system",
+  "name": "Indigo Paper",
+  "status": "locked_public_gallery_foundation",
+  "scope": "Public coloring-page gallery routes and shared public shell.",
+  "futureStudioShell": {
+    "status": "not_implemented_in_round_4c",
+    "note": "The future online coloring workspace may use a separate darker, focused shell. That shell must not replace or bleed into the public gallery shell."
+  },
+  "colors": {
+    "canvas": "#FBFAF7",
+    "surface": "#F2EEE8",
+    "surfaceStrong": "#E8E1D6",
+    "ink": "#1B1F3B",
+    "text": "#39415B",
+    "textMuted": "#626779",
+    "primary": "#4F46E5",
+    "secondary": "#B94728",
+    "accent": "#0B7A61",
+    "success": "#18794E",
+    "warning": "#8A5500",
+    "danger": "#B42318",
+    "info": "#155EEF",
+    "focus": "#1B1F3B",
+    "buttonTextOnColor": "#FFFFFF"
+  },
+  "colorRules": [
+    "Neutral colors carry most of the public interface.",
+    "Primary is reserved for main CTAs, active states, important links, and selected chips.",
+    "Secondary is reserved for warm editorial emphasis and seasonal highlights.",
+    "Accent is reserved for supportive positive or action cues.",
+    "Headings use ink by default.",
+    "Do not use all accent colors at equal strength in the same viewport.",
+    "Do not use color alone to communicate state."
+  ],
+  "spacingPx": [4, 8, 12, 16, 20, 24, 32, 40, 48, 64, 80, 96, 128],
+  "radii": {
+    "sm": "10px",
+    "md": "14px",
+    "lg": "20px",
+    "xl": "28px",
+    "pill": "999px"
+  },
+  "layoutTargets": {
+    "mobileSectionPadding": "32px to 48px",
+    "desktopSectionPadding": "64px to 96px",
+    "mobilePageGutter": "20px to 24px",
+    "desktopContentMaxWidth": "1200px to 1280px",
+    "paragraphMaxWidth": "60ch to 72ch",
+    "galleryGrid": "Stable grid rhythm, not masonry.",
+    "largeHubRule": "Use pagination or limited initial rendering."
+  },
+  "effects": {
+    "gradients": "forbidden",
+    "glassmorphism": "forbidden",
+    "decorativeOutlines": "forbidden",
+    "layoutSurfaceRestingBorders": "forbidden",
+    "nonButtonShadows": "forbidden",
+    "buttonMicroShadow": "allowed_only_for_buttons",
+    "focusVisibleOutline": "required"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-05-13T07:58:21.786Z",
+  "records": [],
+  "duplicateTitles": [],
+  "duplicateDescriptions": [],
+  "checks": {
+    "titlesPresent": false,
+    "descriptionsPresent": false,
+    "canonicalsPresent": false,
+    "canonicalsUseSiteUrl": false,
+    "noOgImageDependency": false,
+    "noSvgDownloadCopy": true,
+    "noOnlineColoringPromise": true,
+    "noInternalPipelineWording": true,
+    "noLocalhost": true,
+    "noR2Dev": true,
+    "noObviousDuplicateTitles": false,
+    "noObviousDuplicateDescriptions": false
+  },
+  "error": "page.goto: net::ERR_TOO_MANY_REDIRECTS at https://www.ilovecoloringpage.com/coloring-pages\nCall log:\n\u001b[2m  - navigating to \"https://www.ilovecoloringpage.com/coloring-pages\", waiting until \"domcontentloaded\"\u001b[22m\n",
+  "passed": false
+}

@@ -1,0 +1,23 @@
+{
+  "generatedAt": "2026-05-11T03:14:00.147Z",
+  "runId": "round-4q-nav-ad-visibility",
+  "summary": {
+    "implementedAsClientComponent": true,
+    "controlledState": true,
+    "includesSearchInput": true,
+    "closesOnButton": true,
+    "closesOnEscape": true,
+    "closesOnOutsideClick": true,
+    "closesOnLinkClick": true,
+    "ariaExpanded": true,
+    "ariaControls": true,
+    "usesWideDesktopLayout": true,
+    "centeredInViewport": true,
+    "noAdsInMenu": true
+  },
+  "sizing": {
+    "desktopWidthRule": "width: min(1120px, calc(100vw - 48px))",
+    "desktopPositionRule": "fixed below the sticky header and centered with left 50 percent plus translateX(-50 percent)",
+    "tabletBehavior": "panel width is viewport capped and scrolls internally"
+  }
+}

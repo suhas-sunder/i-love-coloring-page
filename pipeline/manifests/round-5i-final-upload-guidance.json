@@ -1,0 +1,84 @@
+{
+  "generatedAt": "2026-05-12T18:20:46.138Z",
+  "runId": "round-5i-final-upload-guidance",
+  "summary": {
+    "finalSvgWebpModelConfirmed": false,
+    "pngThumbsCanRemainExcluded": true,
+    "svgInternalOnly": true,
+    "fullUploadStillFinalStage": true,
+    "explicitApprovalRequiredBeforeFullUpload": true,
+    "imageSitemapDeferred": true,
+    "openGraphImagesDeferred": true,
+    "liveAdSenseDeferred": true
+  },
+  "finalUploadFolders": [
+    "svg",
+    "webp"
+  ],
+  "excludedFolders": [
+    "png",
+    "thumbs"
+  ],
+  "objectKeyPattern": "coloring-pages/{svg|webp}/{category-or-group}/{deterministic-filename-with-hash}.{svg|webp}",
+  "customAssetDomainPattern": "https://assets.ilovecoloringpage.com/coloring-pages",
+  "testedAssetDomain": "http://127.0.0.1:4175/coloring-pages",
+  "requiredContentTypes": {
+    "svg": "image/svg+xml",
+    "webp": "image/webp"
+  },
+  "requiredCors": {
+    "origins": [
+      "http://localhost:3005",
+      "http://127.0.0.1:3005"
+    ],
+    "methods": [
+      "GET",
+      "HEAD"
+    ],
+    "credentialsRequired": false,
+    "acceptableAccessControlAllowOrigin": [
+      "*",
+      "exact requesting Origin"
+    ]
+  },
+  "cacheHeaderRecommendation": {
+    "cacheControl": "public, max-age=31536000, immutable",
+    "reason": "Generated filenames include deterministic hashes, so long-lived caching is safe when object keys are versioned.",
+    "etagOrLastModifiedRecommended": true,
+    "purgeNeededAfterHeaderChange": true
+  },
+  "fullUploadChecklist": [
+    "Confirm Round 5I custom-domain URL checks pass for all 60 test URLs.",
+    "Confirm SVG CORS passes with Origin headers for local preview and the production site origin.",
+    "Confirm WebP gallery rendering and browser SVG-to-canvas export pass on the custom asset domain.",
+    "Upload only SVG and WebP folders under coloring-pages/ after explicit approval.",
+    "Do not include png/ or thumbs/ in new upload bundles unless a later blocker justifies it.",
+    "Do not expose SVG as a user-facing download.",
+    "Do not add image sitemap, Open Graph image generation, live ads, backend routes, or app/api."
+  ],
+  "verificationCommandsAfterFullUpload": [
+    "node pipeline/scripts/round-5i-verify-custom-domain-assets.mjs",
+    "node pipeline/scripts/round-5i-browser-custom-domain-qa-runner.cjs --app-url http://127.0.0.1:3005",
+    "node --test pipeline/tests/round-5i-custom-asset-domain.test.mjs",
+    "npm run build"
+  ],
+  "currentEvidence": {
+    "customDomainUrlStatus": "not_run",
+    "svgUrlsPassed": false,
+    "webpUrlsPassed": false,
+    "svgCorsPassed": false,
+    "cacheHeadersAcceptable": false,
+    "browserCanvasExportPassed": false
+  },
+  "blockers": [
+    "NEXT_PUBLIC_SITE_URL is not configured.",
+    "NEXT_PUBLIC_SITE_URL is not a valid URL.",
+    "NEXT_PUBLIC_SITE_URL must be HTTPS for production-like verification.",
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL must be HTTPS.",
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL must not be localhost or loopback.",
+    "Custom-domain URL verification was not run because production-like env validation failed.",
+    "Custom-domain SVG CORS verification was not run because production-like env validation failed.",
+    "Cache and content-type checks were not run because production-like env validation failed.",
+    "Custom-domain browser QA was not run because production-like env validation failed."
+  ]
+}

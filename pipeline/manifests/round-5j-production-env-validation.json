@@ -1,0 +1,66 @@
+{
+  "generatedAt": "2026-05-12T23:22:19.371Z",
+  "runId": "round-5j-production-env-validation",
+  "expectedEnv": {
+    "NEXT_PUBLIC_SITE_URL": "https://www.ilovecoloringpage.com",
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL": "https://assets.ilovecoloringpage.com/coloring-pages",
+    "NEXT_PUBLIC_CONTACT_EMAIL": "admin@ilovecoloringpage.com"
+  },
+  "rawValueCaptured": false,
+  "values": {
+    "NEXT_PUBLIC_SITE_URL": {
+      "configured": false,
+      "source": "missing",
+      "redactedValue": "",
+      "matchesExpected": false
+    },
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL": {
+      "configured": true,
+      "source": ".env.local",
+      "redactedValue": "http://127.0.0.1:4175/coloring-pages",
+      "matchesExpected": false
+    },
+    "NEXT_PUBLIC_CONTACT_EMAIL": {
+      "configured": false,
+      "source": "missing",
+      "redactedValue": "",
+      "matchesExpected": false
+    }
+  },
+  "summary": {
+    "siteUrlConfigured": false,
+    "siteUrlMatchesExpected": false,
+    "siteUrlHttps": false,
+    "siteUrlNotLocalhost": true,
+    "siteUrlNotPlaceholder": true,
+    "siteOrigin": "",
+    "assetBaseConfigured": true,
+    "assetBaseMatchesExpected": false,
+    "assetBaseHttps": false,
+    "assetBaseHasColoringPagesPrefix": true,
+    "assetBaseNotLocalhost": false,
+    "assetBaseNotR2Dev": true,
+    "assetBaseNotPrivateR2Endpoint": true,
+    "assetBaseHasNoOldTestPrefix": true,
+    "assetBaseHasNoDuplicateColoringPagesPrefix": true,
+    "assetBaseCustomDomain": false,
+    "contactEmailConfigured": false,
+    "contactEmailMatchesExpected": false,
+    "noPublicEnvCredentials": true,
+    "r2DevIsProductionReady": false,
+    "production_env_ready": false,
+    "production_asset_domain_ready": false
+  },
+  "blockers": [
+    "NEXT_PUBLIC_SITE_URL is not configured in process env, .env, or .env.local.",
+    "NEXT_PUBLIC_SITE_URL does not match https://www.ilovecoloringpage.com.",
+    "NEXT_PUBLIC_SITE_URL is not a valid URL.",
+    "NEXT_PUBLIC_SITE_URL must be HTTPS.",
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL does not match https://assets.ilovecoloringpage.com/coloring-pages.",
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL must be HTTPS.",
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL must not be localhost or loopback.",
+    "NEXT_PUBLIC_CONTACT_EMAIL is not configured in process env, .env, or .env.local.",
+    "NEXT_PUBLIC_CONTACT_EMAIL does not match admin@ilovecoloringpage.com."
+  ],
+  "stopReason": "Required Round 5J production-like env values are not configured, so custom-domain URL, CORS, browser, print, and download verification were not run."
+}

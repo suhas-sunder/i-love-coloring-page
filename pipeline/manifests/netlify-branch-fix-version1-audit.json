@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-05-13T20:55:38.726Z",
+  "runId": "netlify-branch-fix-version1-audit",
+  "summary": {
+    "localCommit": "ec994c1",
+    "remoteCommit": "ec994c1",
+    "version4Commit": "be845ea",
+    "localMatchesRemote": true,
+    "version1IsCurrentVersion4": false,
+    "version1BuildCommand": "",
+    "version1PublishDirectory": "",
+    "version1StaticExportConfigured": false,
+    "version1PackageName": "",
+    "version1HasAppRoutes": false,
+    "version1HasPipelineDirectory": true,
+    "version1HasRuntimeData": true,
+    "version1Stale": true,
+    "version1LikelyExplainsWrongNetlifyDeploy": true
+  },
+  "version1Log": "ec994c1 (origin/version-1, version-1) Add round 2 bakeoff workflow\n62a4956 Add coloring pipeline inventory foundation"
+}

@@ -1,0 +1,1624 @@
+{
+  "generatedAt": "2026-05-13T03:28:11.261Z",
+  "runId": "round-5n-clean-upload-bundle-results",
+  "summary": {
+    "bundleRoot": "pipeline/r2-upload-clean/coloring-pages",
+    "processedRecordCount": 6352,
+    "expectedFileCount": 12704,
+    "hardlinkCount": 6352,
+    "copyCount": 0,
+    "generatedWebpCount": 6352,
+    "skippedExistingCount": 0,
+    "failureCount": 0,
+    "cleanOptionUsed": true,
+    "verifyOptionUsed": true,
+    "elapsedMs": 173993,
+    "uploadPerformed": false,
+    "runtimePathsChanged": false,
+    "currentR2UploadModified": false,
+    "sourceMediaModified": false
+  },
+  "operations": [
+    {
+      "assetId": "animals__animals-alligator__4feec8505a",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/animals/animals-alligator-4feec8505a.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/animals/animals-alligator-4feec8505a.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "animals__animals-alligator__4feec8505a",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/animals/animals-alligator-4feec8505a.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "animals__animals-antelopes__49a5eb802f",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/animals/animals-antelopes-49a5eb802f.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/animals/animals-antelopes-49a5eb802f.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "animals__animals-antelopes__49a5eb802f",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/animals/animals-antelopes-49a5eb802f.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/animals/animals-antelopes-49a5eb802f.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "animals__animals-buffalo__42947367b4",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/animals/animals-buffalo-42947367b4.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/animals/animals-buffalo-42947367b4.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "animals__animals-buffalo__42947367b4",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/animals/animals-buffalo-42947367b4.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/animals/animals-buffalo-42947367b4.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "animals__animals-butterflies__016ffbb0de",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/animals/animals-butterflies-016ffbb0de.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/animals/animals-butterflies-016ffbb0de.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "animals__animals-butterflies__016ffbb0de",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/animals/animals-butterflies-016ffbb0de.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/animals/animals-butterflies-016ffbb0de.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "animals__animals-chickens__1d898c58de",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/animals/animals-chickens-1d898c58de.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/animals/animals-chickens-1d898c58de.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "animals__animals-chickens__1d898c58de",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/animals/animals-chickens-1d898c58de.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/animals/animals-chickens-1d898c58de.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "animals__animals-crocodile__0389692b30",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/animals/animals-crocodile-0389692b30.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/animals/animals-crocodile-0389692b30.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "animals__animals-crocodile__0389692b30",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/animals/animals-crocodile-0389692b30.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/animals/animals-crocodile-0389692b30.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "animals__animals-dog__18819a83c1",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/animals/animals-dog-18819a83c1.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/animals/animals-dog-18819a83c1.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "animals__animals-dog__18819a83c1",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/animals/animals-dog-18819a83c1.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/animals/animals-dog-18819a83c1.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "animals__animals-dolphins__06e09058c7",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/animals/animals-dolphins-06e09058c7.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/animals/animals-dolphins-06e09058c7.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "animals__animals-dolphins__06e09058c7",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/animals/animals-dolphins-06e09058c7.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/animals/animals-dolphins-06e09058c7.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "animals__animals-duck__f46c4f4007",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/animals/animals-duck-f46c4f4007.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/animals/animals-duck-f46c4f4007.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "animals__animals-duck__f46c4f4007",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/animals/animals-duck-f46c4f4007.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/animals/animals-duck-f46c4f4007.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "animals__animals-eagle__0e2698945b",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/animals/animals-eagle-0e2698945b.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/animals/animals-eagle-0e2698945b.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "animals__animals-eagle__0e2698945b",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/animals/animals-eagle-0e2698945b.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/animals/animals-eagle-0e2698945b.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "animals__animals-eagles__9c48219eed",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/animals/animals-eagles-9c48219eed.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/animals/animals-eagles-9c48219eed.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "animals__animals-eagles__9c48219eed",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/animals/animals-eagles-9c48219eed.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/animals/animals-eagles-9c48219eed.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "animals__animals-elephants__44cfe62b98",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/animals/animals-elephants-44cfe62b98.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/animals/animals-elephants-44cfe62b98.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "animals__animals-elephants__44cfe62b98",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/animals/animals-elephants-44cfe62b98.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/animals/animals-elephants-44cfe62b98.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "animals__animals-falcons__39d20877ca",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/animals/animals-falcons-39d20877ca.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/animals/animals-falcons-39d20877ca.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "animals__animals-falcons__39d20877ca",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/animals/animals-falcons-39d20877ca.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/animals/animals-falcons-39d20877ca.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "animals__animals-frogs__242fdad0e9",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/animals/animals-frogs-242fdad0e9.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/animals/animals-frogs-242fdad0e9.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "animals__animals-frogs__242fdad0e9",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/animals/animals-frogs-242fdad0e9.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/animals/animals-frogs-242fdad0e9.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "animals__animals-gazelles__2ad6b27392",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/animals/animals-gazelles-2ad6b27392.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/animals/animals-gazelles-2ad6b27392.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "animals__animals-gazelles__2ad6b27392",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/animals/animals-gazelles-2ad6b27392.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/animals/animals-gazelles-2ad6b27392.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "animals__animals-goat__74e02be085",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/animals/animals-goat-74e02be085.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/animals/animals-goat-74e02be085.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "animals__animals-goat__74e02be085",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/animals/animals-goat-74e02be085.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/animals/animals-goat-74e02be085.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "animals__animals-goose__918235b6af",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/animals/animals-goose-918235b6af.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/animals/animals-goose-918235b6af.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "animals__animals-goose__918235b6af",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/animals/animals-goose-918235b6af.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/animals/animals-goose-918235b6af.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "animals__animals-hawk__bb1442ad50",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/animals/animals-hawk-bb1442ad50.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/animals/animals-hawk-bb1442ad50.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "animals__animals-hawk__bb1442ad50",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/animals/animals-hawk-bb1442ad50.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/animals/animals-hawk-bb1442ad50.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "animals__animals-hyenas__b0e61b6bb7",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/animals/animals-hyenas-b0e61b6bb7.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/animals/animals-hyenas-b0e61b6bb7.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "animals__animals-hyenas__b0e61b6bb7",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/animals/animals-hyenas-b0e61b6bb7.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/animals/animals-hyenas-b0e61b6bb7.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "animals__animals-leopards__9be94cf823",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/animals/animals-leopards-9be94cf823.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/animals/animals-leopards-9be94cf823.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "animals__animals-leopards__9be94cf823",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/animals/animals-leopards-9be94cf823.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/animals/animals-leopards-9be94cf823.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "animals__animals-otter__60dca506d6",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/animals/animals-otter-60dca506d6.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/animals/animals-otter-60dca506d6.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "animals__animals-otter__60dca506d6",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/animals/animals-otter-60dca506d6.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/animals/animals-otter-60dca506d6.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "animals__animals-owls__73a12387df",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/animals/animals-owls-73a12387df.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/animals/animals-owls-73a12387df.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "animals__animals-owls__73a12387df",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/animals/animals-owls-73a12387df.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/animals/animals-owls-73a12387df.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "animals__animals-penguins__9c3dda80d1",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/animals/animals-penguins-9c3dda80d1.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/animals/animals-penguins-9c3dda80d1.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "animals__animals-penguins__9c3dda80d1",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/animals/animals-penguins-9c3dda80d1.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/animals/animals-penguins-9c3dda80d1.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "animals__animals-pig__67546b89c3",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/animals/animals-pig-67546b89c3.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/animals/animals-pig-67546b89c3.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "animals__animals-pig__67546b89c3",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/animals/animals-pig-67546b89c3.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/animals/animals-pig-67546b89c3.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "animals__animals-polarbear__fb2c193ae5",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/animals/animals-polarbear-fb2c193ae5.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/animals/animals-polar-bear-fb2c193ae5.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "animals__animals-polarbear__fb2c193ae5",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/animals/animals-polarbear-fb2c193ae5.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/animals/animals-polar-bear-fb2c193ae5.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "animals__animals-puppies__093b6e6276",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/animals/animals-puppies-093b6e6276.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/animals/animals-puppies-093b6e6276.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "animals__animals-puppies__093b6e6276",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/animals/animals-puppies-093b6e6276.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/animals/animals-puppies-093b6e6276.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "animals__animals-sea-lion__569daf97f7",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/animals/animals-sea-lion-569daf97f7.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/animals/animals-sea-lion-569daf97f7.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "animals__animals-sea-lion__569daf97f7",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/animals/animals-sea-lion-569daf97f7.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/animals/animals-sea-lion-569daf97f7.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "animals__animals-seal__02d2527a31",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/animals/animals-seal-02d2527a31.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/animals/animals-seal-02d2527a31.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "animals__animals-seal__02d2527a31",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/animals/animals-seal-02d2527a31.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/animals/animals-seal-02d2527a31.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "animals__animals-turkey__a5e1952cea",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/animals/animals-turkey-a5e1952cea.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/animals/animals-turkey-a5e1952cea.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "animals__animals-turkey__a5e1952cea",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/animals/animals-turkey-a5e1952cea.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/animals/animals-turkey-a5e1952cea.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "animals__animals-walrus__9d072cd3d9",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/animals/animals-walrus-9d072cd3d9.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/animals/animals-walrus-9d072cd3d9.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "animals__animals-walrus__9d072cd3d9",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/animals/animals-walrus-9d072cd3d9.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/animals/animals-walrus-9d072cd3d9.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "animals__animals-whales__9b53c68a15",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/animals/animals-whales-9b53c68a15.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/animals/animals-whales-9b53c68a15.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "animals__animals-whales__9b53c68a15",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/animals/animals-whales-9b53c68a15.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/animals/animals-whales-9b53c68a15.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "animals-playing-cards__cats-playing-cards__c22648db9b",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/animals-playing-cards/cats-playing-cards-c22648db9b.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/animals-playing-cards/cats-playing-cards-c22648db9b.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "animals-playing-cards__cats-playing-cards__c22648db9b",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/animals-playing-cards/cats-playing-cards-c22648db9b.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/animals-playing-cards/cats-playing-cards-c22648db9b.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-air-balloon__1f6b5be7bc",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-air-balloon-1f6b5be7bc.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-air-balloon-1f6b5be7bc.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-air-balloon__1f6b5be7bc",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-air-balloon-1f6b5be7bc.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-air-balloon-1f6b5be7bc.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-airship-dogfight__154332e8ac",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-airship-dogfight-154332e8ac.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-airship-dogfight-154332e8ac.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-airship-dogfight__154332e8ac",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-airship-dogfight-154332e8ac.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-airship-dogfight-154332e8ac.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-alien-invasion__5fc2e9d331",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-alien-invasion-5fc2e9d331.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-alien-invasion-5fc2e9d331.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-alien-invasion__5fc2e9d331",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-alien-invasion-5fc2e9d331.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-alien-invasion-5fc2e9d331.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-alien-invasion-battle__99f106ca9d",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-alien-invasion-battle-99f106ca9d.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-alien-invasion-battle-99f106ca9d.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-alien-invasion-battle__99f106ca9d",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-alien-invasion-battle-99f106ca9d.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-alien-invasion-battle-99f106ca9d.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-ankylosaurus-hoodie-plushie__c819919e77",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-c819919e77.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-c819919e77.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-ankylosaurus-hoodie-plushie__c819919e77",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-c819919e77.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-c819919e77.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-ankylosaurus-hoodie-plushie__eb8de86d73",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-eb8de86d73.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-eb8de86d73.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-ankylosaurus-hoodie-plushie__eb8de86d73",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-eb8de86d73.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-eb8de86d73.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-anubis-trial__d01e669614",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-anubis-trial-d01e669614.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-anubis-trial-d01e669614.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-anubis-trial__d01e669614",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-anubis-trial-d01e669614.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-anubis-trial-d01e669614.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-applying-makeup__f2861b9ce7",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-applying-makeup-f2861b9ce7.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-applying-makeup-f2861b9ce7.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-applying-makeup__f2861b9ce7",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-applying-makeup-f2861b9ce7.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-applying-makeup-f2861b9ce7.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-arctic-fox-hoodie-plushie__ebaacda689",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-arctic-fox-hoodie-plushie-ebaacda689.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-arctic-fox-hoodie-plushie-ebaacda689.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-arctic-fox-hoodie-plushie__ebaacda689",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-arctic-fox-hoodie-plushie-ebaacda689.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-arctic-fox-hoodie-plushie-ebaacda689.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-arctic-fox-hoodie-plushie-snow__6a9f81e6c3",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-arctic-fox-hoodie-plushie-snow-6a9f81e6c3.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-arctic-fox-hoodie-plushie-snow-6a9f81e6c3.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-arctic-fox-hoodie-plushie-snow__6a9f81e6c3",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-arctic-fox-hoodie-plushie-snow-6a9f81e6c3.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-arctic-fox-hoodie-plushie-snow-6a9f81e6c3.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-armadillo-hoodie-animal-plushie__d2e31ff395",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-armadillo-hoodie-animal-plushie-d2e31ff395.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-armadillo-hoodie-animal-plushie-d2e31ff395.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-armadillo-hoodie-animal-plushie__d2e31ff395",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-armadillo-hoodie-animal-plushie-d2e31ff395.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-armadillo-hoodie-animal-plushie-d2e31ff395.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-armadillo-hoodie-plushie__4388d15510",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-armadillo-hoodie-plushie-4388d15510.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-armadillo-hoodie-plushie-4388d15510.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-armadillo-hoodie-plushie__4388d15510",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-armadillo-hoodie-plushie-4388d15510.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-armadillo-hoodie-plushie-4388d15510.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-axolotl-hoodie-plushie__10dcbb08c2",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-axolotl-hoodie-plushie-10dcbb08c2.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-axolotl-hoodie-plushie-10dcbb08c2.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-axolotl-hoodie-plushie__10dcbb08c2",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-axolotl-hoodie-plushie-10dcbb08c2.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-axolotl-hoodie-plushie-10dcbb08c2.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-axolotl-hoodie-plushie__4fbeebbbf9",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-axolotl-hoodie-plushie-4fbeebbbf9.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-axolotl-hoodie-plushie-4fbeebbbf9.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-axolotl-hoodie-plushie__4fbeebbbf9",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-axolotl-hoodie-plushie-4fbeebbbf9.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-axolotl-hoodie-plushie-4fbeebbbf9.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-baboon-hoodie-plushie__162c0f194f",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-baboon-hoodie-plushie-162c0f194f.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-baboon-hoodie-plushie-162c0f194f.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-baboon-hoodie-plushie__162c0f194f",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-baboon-hoodie-plushie-162c0f194f.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-baboon-hoodie-plushie-162c0f194f.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bakini-lab-coat-scientist__b11297a303",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-bakini-lab-coat-scientist-b11297a303.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-bakini-lab-coat-scientist-b11297a303.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bakini-lab-coat-scientist__b11297a303",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-bakini-lab-coat-scientist-b11297a303.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-bakini-lab-coat-scientist-b11297a303.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-baseball-player__2acbb88cef",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-baseball-player-2acbb88cef.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-baseball-player-2acbb88cef.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-baseball-player__2acbb88cef",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-baseball-player-2acbb88cef.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-baseball-player-2acbb88cef.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bat-hoodie-plushie__001c0e28be",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-bat-hoodie-plushie-001c0e28be.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-bat-hoodie-plushie-001c0e28be.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bat-hoodie-plushie__001c0e28be",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-bat-hoodie-plushie-001c0e28be.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-bat-hoodie-plushie-001c0e28be.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-battle-claws__f9d7c62766",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-battle-claws-f9d7c62766.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-battle-claws-f9d7c62766.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-battle-claws__f9d7c62766",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-battle-claws-f9d7c62766.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-battle-claws-f9d7c62766.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-battle-worn-claws__1fef7847b3",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-battle-worn-claws-1fef7847b3.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-battle-worn-claws-1fef7847b3.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-battle-worn-claws__1fef7847b3",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-battle-worn-claws-1fef7847b3.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-battle-worn-claws-1fef7847b3.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-beach__e5492e3687",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-beach-e5492e3687.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-beach-e5492e3687.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-beach__e5492e3687",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-beach-e5492e3687.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-beach-e5492e3687.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-beach-bakini__1d77abd2f3",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-beach-bakini-1d77abd2f3.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-beach-bakini-1d77abd2f3.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-beach-bakini__1d77abd2f3",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-beach-bakini-1d77abd2f3.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-beach-bakini-1d77abd2f3.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-beach-bakini__b9ede8c4db",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-beach-bakini-b9ede8c4db.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-beach-bakini-b9ede8c4db.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-beach-bakini__b9ede8c4db",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-beach-bakini-b9ede8c4db.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-beach-bakini-b9ede8c4db.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-beach-bakini-1__b471567c78",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-beach-bakini-1-b471567c78.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-beach-bakini-1-b471567c78.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-beach-bakini-1__b471567c78",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-beach-bakini-1-b471567c78.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-beach-bakini-1-b471567c78.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bear-hoodie-plushie__4e33c8392d",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-bear-hoodie-plushie-4e33c8392d.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-bear-hoodie-plushie-4e33c8392d.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bear-hoodie-plushie__4e33c8392d",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-bear-hoodie-plushie-4e33c8392d.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-bear-hoodie-plushie-4e33c8392d.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-beast-berserker-armor__6a6db4fb14",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-beast-berserker-armor-6a6db4fb14.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-beast-berserker-armor-6a6db4fb14.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-beast-berserker-armor__6a6db4fb14",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-beast-berserker-armor-6a6db4fb14.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-beast-berserker-armor-6a6db4fb14.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-beast-hide-armor__31fe047f7d",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-beast-hide-armor-31fe047f7d.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-beast-hide-armor-31fe047f7d.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-beast-hide-armor__31fe047f7d",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-beast-hide-armor-31fe047f7d.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-beast-hide-armor-31fe047f7d.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-beastmaster-duel__e77b8fd28b",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-beastmaster-duel-e77b8fd28b.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-beastmaster-duel-e77b8fd28b.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-beastmaster-duel__e77b8fd28b",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-beastmaster-duel-e77b8fd28b.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-beastmaster-duel-e77b8fd28b.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bed-with-plush-toys__de6487a823",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-bed-with-plush-toys-de6487a823.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-bed-with-plush-toys-de6487a823.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bed-with-plush-toys__de6487a823",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-bed-with-plush-toys-de6487a823.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-bed-with-plush-toys-de6487a823.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bed-with-plush-toys-relaxing__bbab5fa342",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-bed-with-plush-toys-relaxing-bbab5fa342.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-bed-with-plush-toys-relaxing-bbab5fa342.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bed-with-plush-toys-relaxing__bbab5fa342",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-bed-with-plush-toys-relaxing-bbab5fa342.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-bed-with-plush-toys-relaxing-bbab5fa342.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bedtime-stories__36d92c5b6a",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-bedtime-stories-36d92c5b6a.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-bedtime-stories-36d92c5b6a.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bedtime-stories__36d92c5b6a",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-bedtime-stories-36d92c5b6a.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-bedtime-stories-36d92c5b6a.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bee-hoodie-plushie__0f4839d334",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-bee-hoodie-plushie-0f4839d334.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-bee-hoodie-plushie-0f4839d334.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bee-hoodie-plushie__0f4839d334",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-bee-hoodie-plushie-0f4839d334.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-bee-hoodie-plushie-0f4839d334.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-belly-dancing__cd39615108",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-belly-dancing-cd39615108.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-belly-dancing-cd39615108.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-belly-dancing__cd39615108",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-belly-dancing-cd39615108.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-belly-dancing-cd39615108.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-beluga-whale-hoodie-plushie__54ab43e09e",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-beluga-whale-hoodie-plushie-54ab43e09e.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-beluga-whale-hoodie-plushie-54ab43e09e.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-beluga-whale-hoodie-plushie__54ab43e09e",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-beluga-whale-hoodie-plushie-54ab43e09e.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-beluga-whale-hoodie-plushie-54ab43e09e.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-beluga-whale-hoodie-plushie-swimming-cold__a598161908",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-beluga-whale-hoodie-plushie-swimming-cold-a598161908.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-beluga-whale-hoodie-plushie-swimming-cold-a598161908.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-beluga-whale-hoodie-plushie-swimming-cold__a598161908",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-beluga-whale-hoodie-plushie-swimming-cold-a598161908.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-beluga-whale-hoodie-plushie-swimming-cold-a598161908.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-birds-duck__5c61314642",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-birds-duck-5c61314642.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-birds-duck-5c61314642.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-birds-duck__5c61314642",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-birds-duck-5c61314642.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-birds-duck-5c61314642.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-birthday-cake__a75fa3e263",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-birthday-cake-a75fa3e263.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-birthday-cake-a75fa3e263.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-birthday-cake__a75fa3e263",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-birthday-cake-a75fa3e263.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-birthday-cake-a75fa3e263.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bison-hoodie-plushie__eb4dc63297",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-bison-hoodie-plushie-eb4dc63297.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-bison-hoodie-plushie-eb4dc63297.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bison-hoodie-plushie__eb4dc63297",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-bison-hoodie-plushie-eb4dc63297.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-bison-hoodie-plushie-eb4dc63297.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-boar-hoodie-animal-plushie__97f056d8b6",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-boar-hoodie-animal-plushie-97f056d8b6.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-boar-hoodie-animal-plushie-97f056d8b6.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-boar-hoodie-animal-plushie__97f056d8b6",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-boar-hoodie-animal-plushie-97f056d8b6.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-boar-hoodie-animal-plushie-97f056d8b6.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-boar-hoodie-plushie__2ade8446fa",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-boar-hoodie-plushie-2ade8446fa.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-boar-hoodie-plushie-2ade8446fa.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-boar-hoodie-plushie__2ade8446fa",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-boar-hoodie-plushie-2ade8446fa.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-boar-hoodie-plushie-2ade8446fa.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bowling__b2fb110d93",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-bowling-b2fb110d93.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-bowling-b2fb110d93.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bowling__b2fb110d93",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-bowling-b2fb110d93.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-bowling-b2fb110d93.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bowling-trick-shot__aaa558e9a6",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-bowling-trick-shot-aaa558e9a6.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-bowling-trick-shot-aaa558e9a6.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bowling-trick-shot__aaa558e9a6",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-bowling-trick-shot-aaa558e9a6.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-bowling-trick-shot-aaa558e9a6.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-boxing__31e8b864b6",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-boxing-31e8b864b6.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-boxing-31e8b864b6.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-boxing__31e8b864b6",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-boxing-31e8b864b6.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-boxing-31e8b864b6.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-boxing__a787e2192f",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-boxing-a787e2192f.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-boxing-a787e2192f.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-boxing__a787e2192f",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-boxing-a787e2192f.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-boxing-a787e2192f.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-brachiosaurus-hoodie-plushie__73442e8b67",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-73442e8b67.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-73442e8b67.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-brachiosaurus-hoodie-plushie__73442e8b67",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-73442e8b67.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-73442e8b67.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-brachiosaurus-hoodie-plushie__a676a7c044",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-a676a7c044.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-a676a7c044.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-brachiosaurus-hoodie-plushie__a676a7c044",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-a676a7c044.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-a676a7c044.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-brazilian-jiu-jitsu__5a40029b84",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-brazilian-jiu-jitsu-5a40029b84.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-brazilian-jiu-jitsu-5a40029b84.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-brazilian-jiu-jitsu__5a40029b84",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-brazilian-jiu-jitsu-5a40029b84.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-brazilian-jiu-jitsu-5a40029b84.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-brontosaurus-hoodie-plushie__3ad488831a",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-brontosaurus-hoodie-plushie-3ad488831a.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-brontosaurus-hoodie-plushie-3ad488831a.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-brontosaurus-hoodie-plushie__3ad488831a",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-brontosaurus-hoodie-plushie-3ad488831a.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-brontosaurus-hoodie-plushie-3ad488831a.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-brontosaurus-hoodie-plushie__6175891702",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-brontosaurus-hoodie-plushie-6175891702.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-brontosaurus-hoodie-plushie-6175891702.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-brontosaurus-hoodie-plushie__6175891702",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-brontosaurus-hoodie-plushie-6175891702.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-brontosaurus-hoodie-plushie-6175891702.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bull-hoodie-anima-plushie__98a7f4acd1",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-bull-hoodie-anima-plushie-98a7f4acd1.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-bull-hoodie-anima-plushie-98a7f4acd1.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bull-hoodie-anima-plushie__98a7f4acd1",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-bull-hoodie-anima-plushie-98a7f4acd1.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-bull-hoodie-anima-plushie-98a7f4acd1.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bull-hoodie-plushie__3edf39627f",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-bull-hoodie-plushie-3edf39627f.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-bull-hoodie-plushie-3edf39627f.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bull-hoodie-plushie__3edf39627f",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-bull-hoodie-plushie-3edf39627f.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-bull-hoodie-plushie-3edf39627f.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bull-hoodie-plushie-cosplay__e76780baaf",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-bull-hoodie-plushie-cosplay-e76780baaf.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-bull-hoodie-plushie-cosplay-e76780baaf.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bull-hoodie-plushie-cosplay__e76780baaf",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-bull-hoodie-plushie-cosplay-e76780baaf.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-bull-hoodie-plushie-cosplay-e76780baaf.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bunny-birthday-party__4a4860c7ac",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-bunny-birthday-party-4a4860c7ac.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-bunny-birthday-party-4a4860c7ac.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-bunny-birthday-party__4a4860c7ac",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-bunny-birthday-party-4a4860c7ac.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-bunny-birthday-party-4a4860c7ac.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-camel-hoodie-animal-plushie__76c784f3af",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-camel-hoodie-animal-plushie-76c784f3af.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-camel-hoodie-animal-plushie-76c784f3af.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-camel-hoodie-animal-plushie__76c784f3af",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-camel-hoodie-animal-plushie-76c784f3af.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-camel-hoodie-animal-plushie-76c784f3af.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-camel-hoodie-plushie__97eab53f78",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-camel-hoodie-plushie-97eab53f78.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-camel-hoodie-plushie-97eab53f78.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-camel-hoodie-plushie__97eab53f78",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-camel-hoodie-plushie-97eab53f78.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-camel-hoodie-plushie-97eab53f78.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-camping__b345386f54",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-camping-b345386f54.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-camping-b345386f54.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-camping__b345386f54",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-camping-b345386f54.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-camping-b345386f54.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-camping-in-the-woods__42a57fe961",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-camping-in-the-woods-42a57fe961.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-camping-in-the-woods-42a57fe961.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-camping-in-the-woods__42a57fe961",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-camping-in-the-woods-42a57fe961.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-camping-in-the-woods-42a57fe961.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-cat__3794ff8eaa",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-cat-3794ff8eaa.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-cat-3794ff8eaa.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-cat__3794ff8eaa",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-cat-3794ff8eaa.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-cat-3794ff8eaa.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-cat-hoodie-plushie__62ed67bd39",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-cat-hoodie-plushie-62ed67bd39.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-cat-hoodie-plushie-62ed67bd39.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-cat-hoodie-plushie__62ed67bd39",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-cat-hoodie-plushie-62ed67bd39.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-cat-hoodie-plushie-62ed67bd39.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-cat-hoodie-plushie__82a3c178ef",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-cat-hoodie-plushie-82a3c178ef.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-cat-hoodie-plushie-82a3c178ef.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-cat-hoodie-plushie__82a3c178ef",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-cat-hoodie-plushie-82a3c178ef.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-cat-hoodie-plushie-82a3c178ef.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-catching-fish__481cf18423",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-catching-fish-481cf18423.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-catching-fish-481cf18423.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-catching-fish__481cf18423",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-catching-fish-481cf18423.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-catching-fish-481cf18423.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-cave-climbing__14a25b5a14",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-cave-climbing-14a25b5a14.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-cave-climbing-14a25b5a14.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-cave-climbing__14a25b5a14",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-cave-climbing-14a25b5a14.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-cave-climbing-14a25b5a14.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-cave-climbing-1__fa2d0c4eb0",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-cave-climbing-1-fa2d0c4eb0.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-cave-climbing-1-fa2d0c4eb0.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-cave-climbing-1__fa2d0c4eb0",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-cave-climbing-1-fa2d0c4eb0.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-cave-climbing-1-fa2d0c4eb0.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-celestial-paladin-armor__e770ba34fc",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-celestial-paladin-armor-e770ba34fc.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-celestial-paladin-armor-e770ba34fc.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-celestial-paladin-armor__e770ba34fc",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-celestial-paladin-armor-e770ba34fc.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-celestial-paladin-armor-e770ba34fc.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-celetbrating-birthday-cake__3e754f4081",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-celetbrating-birthday-cake-3e754f4081.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-celetbrating-birthday-cake-3e754f4081.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-celetbrating-birthday-cake__3e754f4081",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-celetbrating-birthday-cake-3e754f4081.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-celetbrating-birthday-cake-3e754f4081.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-celtic-tribal-armor__a378a14a1a",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-celtic-tribal-armor-a378a14a1a.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-celtic-tribal-armor-a378a14a1a.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-celtic-tribal-armor__a378a14a1a",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-celtic-tribal-armor-a378a14a1a.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-celtic-tribal-armor-a378a14a1a.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-centaur-standoff__d462b8fcc6",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-centaur-standoff-d462b8fcc6.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-centaur-standoff-d462b8fcc6.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-centaur-standoff__d462b8fcc6",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-centaur-standoff-d462b8fcc6.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-centaur-standoff-d462b8fcc6.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-cerberus-gate-guard__17fd627531",
+      "type": "svg",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/svg/anime-girls/anime-girl-cerberus-gate-guard-17fd627531.svg",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-cerberus-gate-guard-17fd627531.svg",
+      "status": "ok",
+      "method": "hardlink"
+    },
+    {
+      "assetId": "anime-girls__anime-girl-cerberus-gate-guard__17fd627531",
+      "type": "webp",
+      "sourceRelativePath": "pipeline/r2-upload/coloring-pages/png/anime-girls/anime-girl-cerberus-gate-guard-17fd627531.png",
+      "destinationRelativePath": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-cerberus-gate-guard-17fd627531.webp",
+      "status": "ok",
+      "method": "generate-from-png"
+    }
+  ],
+  "failures": []
+}

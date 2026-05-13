@@ -1,0 +1,47 @@
+{
+  "generatedAt": "2026-05-13T09:11:59.993Z",
+  "runId": "live-routing-project-context-check",
+  "expected": {
+    "repoName": "i-love-coloring-page",
+    "branch": "version-4",
+    "runtimeSwitchCommit": "275dd6d33d64223f14e519ffb57d67825a7f5c19",
+    "liveProductionVerificationCommits": [
+      "f64918d",
+      "168a761"
+    ],
+    "siteUrl": "https://www.ilovecoloringpage.com",
+    "assetBaseUrl": "https://assets.ilovecoloringpage.com/coloring-pages",
+    "contactEmail": "admin@ilovecoloringpage.com"
+  },
+  "summary": {
+    "repoRoot": "D:/PROJECTS-and-WORK/work-projects/all_projects/i-love-coloring-page",
+    "repoName": "i-love-coloring-page",
+    "correctRepository": true,
+    "branch": "version-4",
+    "correctBranch": true,
+    "head": "168a76170705b09c4df3f518cb3a67bd2aa379e5",
+    "runtimeSwitchCommitExists": true,
+    "liveProductionVerificationCommitsExist": true,
+    "frontendOnlyNextStaticExport": true,
+    "appApiRoutePresent": false,
+    "runtimeGeneratedDataExists": true,
+    "runtimeAvailableRecords": 6352,
+    "runtimeAssetRecords": 6352,
+    "publicDirectoryExists": false,
+    "publicContainsGeneratedProductionMedia": false,
+    "imagesStatusClean": true,
+    "ilovesvgStatusClean": true,
+    "svgUserDownloadExposed": false,
+    "publicDownloads": [
+      "PNG",
+      "JPG",
+      "WebP"
+    ],
+    "liveAdSenseCodeAbsent": true,
+    "imageSitemapAbsent": true,
+    "openGraphImageGenerationAbsent": true,
+    "wrongRepoIndicatorsFound": false,
+    "publicDefaultsHardcoded": true,
+    "r2CredentialNamesInRuntime": false
+  }
+}

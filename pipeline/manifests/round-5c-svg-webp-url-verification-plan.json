@@ -1,0 +1,3902 @@
+{
+  "generatedAt": "2026-05-12T01:41:03.145Z",
+  "runId": "round-5c-svg-webp-r2-test",
+  "purpose": "Public URL checks to run after manually uploading the 30-record SVG plus WebP R2 test bundle.",
+  "uploadPrefix": "coloring-pages",
+  "publicBaseUrlTemplate": "https://YOUR-ASSET-DOMAIN.com/coloring-pages",
+  "expectedStatus": 200,
+  "expectedNoPrivateEndpointRedirects": true,
+  "summary": {
+    "selectedRecordCount": 30,
+    "plannedUrlCount": 60,
+    "svgUrlCount": 30,
+    "webpUrlCount": 30,
+    "pngUrlCount": 0,
+    "thumbUrlCount": 0,
+    "representativeHubSlugs": [
+      "",
+      "animals",
+      "anime-girls",
+      "cars",
+      "chibi",
+      "chibi-flowers",
+      "christmas",
+      "detailed-for-adults",
+      "dinosaurs",
+      "dungeon",
+      "easy",
+      "fantasy",
+      "fantasy-creatures",
+      "flowers",
+      "food",
+      "for-kids",
+      "geometric",
+      "halloween",
+      "holidays",
+      "indoor-plants",
+      "mandalas",
+      "mermaids",
+      "planes",
+      "plants",
+      "plushie-dragons",
+      "plushies",
+      "prehistoric-animals",
+      "trains",
+      "vehicles"
+    ]
+  },
+  "records": [
+    {
+      "assetId": "animals__animals-alligator__4feec8505a",
+      "displayTitle": "Animals Alligator",
+      "category": "animals",
+      "hubs": [
+        {
+          "slug": "",
+          "route": "/coloring-pages",
+          "title": "Coloring Pages"
+        },
+        {
+          "slug": "animals",
+          "route": "/coloring-pages/animals",
+          "title": "Animals Coloring Pages"
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "included in the first-page preview set"
+        },
+        {
+          "path": "/coloring-pages/animals",
+          "title": "Animals Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "urls": [
+        {
+          "assetId": "animals__animals-alligator__4feec8505a",
+          "displayTitle": "Animals Alligator",
+          "mediaType": "svg",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/animals/animals-alligator-4feec8505a.svg",
+          "r2ObjectKey": "coloring-pages/svg/animals/animals-alligator-4feec8505a.svg",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/svg+xml",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": true,
+          "galleryFacing": false,
+          "internalOnly": true,
+          "expectedByteSizeRange": {
+            "min": 170511,
+            "max": 188461
+          }
+        },
+        {
+          "assetId": "animals__animals-alligator__4feec8505a",
+          "displayTitle": "Animals Alligator",
+          "mediaType": "webp",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+          "r2ObjectKey": "coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/webp",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": false,
+          "galleryFacing": true,
+          "internalOnly": false,
+          "expectedByteSizeRange": {
+            "min": 46916,
+            "max": 51856
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "anime-girls__anime-girl-ankylosaurus-hoodie-plushie__eb8de86d73",
+      "displayTitle": "Anime Girl Ankylosaurus Hoodie Plushie",
+      "category": "anime-girls",
+      "hubs": [
+        {
+          "slug": "",
+          "route": "/coloring-pages",
+          "title": "Coloring Pages"
+        },
+        {
+          "slug": "anime-girls",
+          "route": "/coloring-pages/anime-girls",
+          "title": "Anime Girls Coloring Pages"
+        },
+        {
+          "slug": "plushies",
+          "route": "/coloring-pages/plushies",
+          "title": "Plushies Coloring Pages"
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/anime-girls",
+          "title": "Anime Girls Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/plushies",
+          "title": "Plushies Coloring Pages",
+          "reason": "assigned to this hub"
+        }
+      ],
+      "urls": [
+        {
+          "assetId": "anime-girls__anime-girl-ankylosaurus-hoodie-plushie__eb8de86d73",
+          "displayTitle": "Anime Girl Ankylosaurus Hoodie Plushie",
+          "mediaType": "svg",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-eb8de86d73.svg",
+          "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-eb8de86d73.svg",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/svg+xml",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": true,
+          "galleryFacing": false,
+          "internalOnly": true,
+          "expectedByteSizeRange": {
+            "min": 183830,
+            "max": 203182
+          }
+        },
+        {
+          "assetId": "anime-girls__anime-girl-ankylosaurus-hoodie-plushie__eb8de86d73",
+          "displayTitle": "Anime Girl Ankylosaurus Hoodie Plushie",
+          "mediaType": "webp",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-eb8de86d73.webp",
+          "r2ObjectKey": "coloring-pages/webp/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-eb8de86d73.webp",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/webp",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": false,
+          "galleryFacing": true,
+          "internalOnly": false,
+          "expectedByteSizeRange": {
+            "min": 39493,
+            "max": 43651
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "anime-girls__anime-girl-brachiosaurus-hoodie-plushie__a676a7c044",
+      "displayTitle": "Anime Girl Brachiosaurus Hoodie Plushie",
+      "category": "anime-girls",
+      "hubs": [
+        {
+          "slug": "",
+          "route": "/coloring-pages",
+          "title": "Coloring Pages"
+        },
+        {
+          "slug": "animals",
+          "route": "/coloring-pages/animals",
+          "title": "Animals Coloring Pages"
+        },
+        {
+          "slug": "anime-girls",
+          "route": "/coloring-pages/anime-girls",
+          "title": "Anime Girls Coloring Pages"
+        },
+        {
+          "slug": "dinosaurs",
+          "route": "/coloring-pages/dinosaurs",
+          "title": "Dinosaurs Coloring Pages"
+        },
+        {
+          "slug": "plushies",
+          "route": "/coloring-pages/plushies",
+          "title": "Plushies Coloring Pages"
+        },
+        {
+          "slug": "prehistoric-animals",
+          "route": "/coloring-pages/prehistoric-animals",
+          "title": "Prehistoric Animals Coloring Pages"
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/dinosaurs",
+          "title": "Dinosaurs Coloring Pages",
+          "reason": "included in the first-page preview set"
+        },
+        {
+          "path": "/coloring-pages/prehistoric-animals",
+          "title": "Prehistoric Animals Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "urls": [
+        {
+          "assetId": "anime-girls__anime-girl-brachiosaurus-hoodie-plushie__a676a7c044",
+          "displayTitle": "Anime Girl Brachiosaurus Hoodie Plushie",
+          "mediaType": "svg",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-a676a7c044.svg",
+          "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-a676a7c044.svg",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/svg+xml",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": true,
+          "galleryFacing": false,
+          "internalOnly": true,
+          "expectedByteSizeRange": {
+            "min": 213011,
+            "max": 235435
+          }
+        },
+        {
+          "assetId": "anime-girls__anime-girl-brachiosaurus-hoodie-plushie__a676a7c044",
+          "displayTitle": "Anime Girl Brachiosaurus Hoodie Plushie",
+          "mediaType": "webp",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-a676a7c044.webp",
+          "r2ObjectKey": "coloring-pages/webp/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-a676a7c044.webp",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/webp",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": false,
+          "galleryFacing": true,
+          "internalOnly": false,
+          "expectedByteSizeRange": {
+            "min": 34724,
+            "max": 38380
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dragon-eggs-hoodie-plushie__b1747e4988",
+      "displayTitle": "Anime Girl Dragon Eggs Hoodie Plushie",
+      "category": "anime-girls",
+      "hubs": [
+        {
+          "slug": "",
+          "route": "/coloring-pages",
+          "title": "Coloring Pages"
+        },
+        {
+          "slug": "anime-girls",
+          "route": "/coloring-pages/anime-girls",
+          "title": "Anime Girls Coloring Pages"
+        },
+        {
+          "slug": "fantasy",
+          "route": "/coloring-pages/fantasy",
+          "title": "Fantasy Coloring Pages"
+        },
+        {
+          "slug": "fantasy-creatures",
+          "route": "/coloring-pages/fantasy-creatures",
+          "title": "Fantasy Creatures Coloring Pages"
+        },
+        {
+          "slug": "plushie-dragons",
+          "route": "/coloring-pages/plushie-dragons",
+          "title": "Plushie Dragons Coloring Pages"
+        },
+        {
+          "slug": "plushies",
+          "route": "/coloring-pages/plushies",
+          "title": "Plushies Coloring Pages"
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/fantasy",
+          "title": "Fantasy Coloring Pages",
+          "reason": "included in the first-page preview set"
+        },
+        {
+          "path": "/coloring-pages/fantasy-creatures",
+          "title": "Fantasy Creatures Coloring Pages",
+          "reason": "included in the first-page preview set"
+        },
+        {
+          "path": "/coloring-pages/plushie-dragons",
+          "title": "Plushie Dragons Coloring Pages",
+          "reason": "included in the first-page preview set"
+        },
+        {
+          "path": "/coloring-pages/plushies",
+          "title": "Plushies Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "urls": [
+        {
+          "assetId": "anime-girls__anime-girl-dragon-eggs-hoodie-plushie__b1747e4988",
+          "displayTitle": "Anime Girl Dragon Eggs Hoodie Plushie",
+          "mediaType": "svg",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/anime-girls/anime-girl-dragon-eggs-hoodie-plushie-b1747e4988.svg",
+          "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-dragon-eggs-hoodie-plushie-b1747e4988.svg",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/svg+xml",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": true,
+          "galleryFacing": false,
+          "internalOnly": true,
+          "expectedByteSizeRange": {
+            "min": 155627,
+            "max": 172009
+          }
+        },
+        {
+          "assetId": "anime-girls__anime-girl-dragon-eggs-hoodie-plushie__b1747e4988",
+          "displayTitle": "Anime Girl Dragon Eggs Hoodie Plushie",
+          "mediaType": "webp",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/anime-girls/anime-girl-dragon-eggs-hoodie-plushie-b1747e4988.webp",
+          "r2ObjectKey": "coloring-pages/webp/anime-girls/anime-girl-dragon-eggs-hoodie-plushie-b1747e4988.webp",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/webp",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": false,
+          "galleryFacing": true,
+          "internalOnly": false,
+          "expectedByteSizeRange": {
+            "min": 38370,
+            "max": 42410
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dragon-eggs-hoodie-plushie__f41a8578b5",
+      "displayTitle": "Anime Girl Dragon Eggs Hoodie Plushie",
+      "category": "anime-girls",
+      "hubs": [
+        {
+          "slug": "",
+          "route": "/coloring-pages",
+          "title": "Coloring Pages"
+        },
+        {
+          "slug": "anime-girls",
+          "route": "/coloring-pages/anime-girls",
+          "title": "Anime Girls Coloring Pages"
+        },
+        {
+          "slug": "fantasy",
+          "route": "/coloring-pages/fantasy",
+          "title": "Fantasy Coloring Pages"
+        },
+        {
+          "slug": "fantasy-creatures",
+          "route": "/coloring-pages/fantasy-creatures",
+          "title": "Fantasy Creatures Coloring Pages"
+        },
+        {
+          "slug": "plushie-dragons",
+          "route": "/coloring-pages/plushie-dragons",
+          "title": "Plushie Dragons Coloring Pages"
+        },
+        {
+          "slug": "plushies",
+          "route": "/coloring-pages/plushies",
+          "title": "Plushies Coloring Pages"
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/anime-girls",
+          "title": "Anime Girls Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/fantasy",
+          "title": "Fantasy Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/fantasy-creatures",
+          "title": "Fantasy Creatures Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/plushie-dragons",
+          "title": "Plushie Dragons Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/plushies",
+          "title": "Plushies Coloring Pages",
+          "reason": "assigned to this hub"
+        }
+      ],
+      "urls": [
+        {
+          "assetId": "anime-girls__anime-girl-dragon-eggs-hoodie-plushie__f41a8578b5",
+          "displayTitle": "Anime Girl Dragon Eggs Hoodie Plushie",
+          "mediaType": "svg",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/anime-girls/anime-girl-dragon-eggs-hoodie-plushie-f41a8578b5.svg",
+          "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-dragon-eggs-hoodie-plushie-f41a8578b5.svg",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/svg+xml",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": true,
+          "galleryFacing": false,
+          "internalOnly": true,
+          "expectedByteSizeRange": {
+            "min": 925661,
+            "max": 1023099
+          }
+        },
+        {
+          "assetId": "anime-girls__anime-girl-dragon-eggs-hoodie-plushie__f41a8578b5",
+          "displayTitle": "Anime Girl Dragon Eggs Hoodie Plushie",
+          "mediaType": "webp",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/anime-girls/anime-girl-dragon-eggs-hoodie-plushie-f41a8578b5.webp",
+          "r2ObjectKey": "coloring-pages/webp/anime-girls/anime-girl-dragon-eggs-hoodie-plushie-f41a8578b5.webp",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/webp",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": false,
+          "galleryFacing": true,
+          "internalOnly": false,
+          "expectedByteSizeRange": {
+            "min": 44712,
+            "max": 49420
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dragon-hoodie-plushie__0492bac704",
+      "displayTitle": "Anime Girl Dragon Hoodie Plushie",
+      "category": "anime-girls",
+      "hubs": [
+        {
+          "slug": "",
+          "route": "/coloring-pages",
+          "title": "Coloring Pages"
+        },
+        {
+          "slug": "anime-girls",
+          "route": "/coloring-pages/anime-girls",
+          "title": "Anime Girls Coloring Pages"
+        },
+        {
+          "slug": "fantasy",
+          "route": "/coloring-pages/fantasy",
+          "title": "Fantasy Coloring Pages"
+        },
+        {
+          "slug": "fantasy-creatures",
+          "route": "/coloring-pages/fantasy-creatures",
+          "title": "Fantasy Creatures Coloring Pages"
+        },
+        {
+          "slug": "plushie-dragons",
+          "route": "/coloring-pages/plushie-dragons",
+          "title": "Plushie Dragons Coloring Pages"
+        },
+        {
+          "slug": "plushies",
+          "route": "/coloring-pages/plushies",
+          "title": "Plushies Coloring Pages"
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/anime-girls",
+          "title": "Anime Girls Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/fantasy",
+          "title": "Fantasy Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/fantasy-creatures",
+          "title": "Fantasy Creatures Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/plushie-dragons",
+          "title": "Plushie Dragons Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/plushies",
+          "title": "Plushies Coloring Pages",
+          "reason": "assigned to this hub"
+        }
+      ],
+      "urls": [
+        {
+          "assetId": "anime-girls__anime-girl-dragon-hoodie-plushie__0492bac704",
+          "displayTitle": "Anime Girl Dragon Hoodie Plushie",
+          "mediaType": "svg",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/anime-girls/anime-girl-dragon-hoodie-plushie-0492bac704.svg",
+          "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-dragon-hoodie-plushie-0492bac704.svg",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/svg+xml",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": true,
+          "galleryFacing": false,
+          "internalOnly": true,
+          "expectedByteSizeRange": {
+            "min": 277139,
+            "max": 306313
+          }
+        },
+        {
+          "assetId": "anime-girls__anime-girl-dragon-hoodie-plushie__0492bac704",
+          "displayTitle": "Anime Girl Dragon Hoodie Plushie",
+          "mediaType": "webp",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/anime-girls/anime-girl-dragon-hoodie-plushie-0492bac704.webp",
+          "r2ObjectKey": "coloring-pages/webp/anime-girls/anime-girl-dragon-hoodie-plushie-0492bac704.webp",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/webp",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": false,
+          "galleryFacing": true,
+          "internalOnly": false,
+          "expectedByteSizeRange": {
+            "min": 41159,
+            "max": 45493
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dragon-queen__8c2e2a124f",
+      "displayTitle": "Anime Girl Dragon Queen",
+      "category": "anime-girls",
+      "hubs": [
+        {
+          "slug": "",
+          "route": "/coloring-pages",
+          "title": "Coloring Pages"
+        },
+        {
+          "slug": "anime-girls",
+          "route": "/coloring-pages/anime-girls",
+          "title": "Anime Girls Coloring Pages"
+        },
+        {
+          "slug": "fantasy",
+          "route": "/coloring-pages/fantasy",
+          "title": "Fantasy Coloring Pages"
+        },
+        {
+          "slug": "fantasy-creatures",
+          "route": "/coloring-pages/fantasy-creatures",
+          "title": "Fantasy Creatures Coloring Pages"
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/fantasy",
+          "title": "Fantasy Coloring Pages",
+          "reason": "included in the first-page preview set"
+        },
+        {
+          "path": "/coloring-pages/fantasy-creatures",
+          "title": "Fantasy Creatures Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "urls": [
+        {
+          "assetId": "anime-girls__anime-girl-dragon-queen__8c2e2a124f",
+          "displayTitle": "Anime Girl Dragon Queen",
+          "mediaType": "svg",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/anime-girls/anime-girl-dragon-queen-8c2e2a124f.svg",
+          "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-dragon-queen-8c2e2a124f.svg",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/svg+xml",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": true,
+          "galleryFacing": false,
+          "internalOnly": true,
+          "expectedByteSizeRange": {
+            "min": 228545,
+            "max": 252603
+          }
+        },
+        {
+          "assetId": "anime-girls__anime-girl-dragon-queen__8c2e2a124f",
+          "displayTitle": "Anime Girl Dragon Queen",
+          "mediaType": "webp",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/anime-girls/anime-girl-dragon-queen-8c2e2a124f.webp",
+          "r2ObjectKey": "coloring-pages/webp/anime-girls/anime-girl-dragon-queen-8c2e2a124f.webp",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/webp",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": false,
+          "galleryFacing": true,
+          "internalOnly": false,
+          "expectedByteSizeRange": {
+            "min": 47351,
+            "max": 52337
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dragon-queen__d532fdf0fd",
+      "displayTitle": "Anime Girl Dragon Queen",
+      "category": "anime-girls",
+      "hubs": [
+        {
+          "slug": "",
+          "route": "/coloring-pages",
+          "title": "Coloring Pages"
+        },
+        {
+          "slug": "anime-girls",
+          "route": "/coloring-pages/anime-girls",
+          "title": "Anime Girls Coloring Pages"
+        },
+        {
+          "slug": "fantasy",
+          "route": "/coloring-pages/fantasy",
+          "title": "Fantasy Coloring Pages"
+        },
+        {
+          "slug": "fantasy-creatures",
+          "route": "/coloring-pages/fantasy-creatures",
+          "title": "Fantasy Creatures Coloring Pages"
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/anime-girls",
+          "title": "Anime Girls Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/fantasy",
+          "title": "Fantasy Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/fantasy-creatures",
+          "title": "Fantasy Creatures Coloring Pages",
+          "reason": "assigned to this hub"
+        }
+      ],
+      "urls": [
+        {
+          "assetId": "anime-girls__anime-girl-dragon-queen__d532fdf0fd",
+          "displayTitle": "Anime Girl Dragon Queen",
+          "mediaType": "svg",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/anime-girls/anime-girl-dragon-queen-d532fdf0fd.svg",
+          "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-dragon-queen-d532fdf0fd.svg",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/svg+xml",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": true,
+          "galleryFacing": false,
+          "internalOnly": true,
+          "expectedByteSizeRange": {
+            "min": 279712,
+            "max": 309156
+          }
+        },
+        {
+          "assetId": "anime-girls__anime-girl-dragon-queen__d532fdf0fd",
+          "displayTitle": "Anime Girl Dragon Queen",
+          "mediaType": "webp",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/anime-girls/anime-girl-dragon-queen-d532fdf0fd.webp",
+          "r2ObjectKey": "coloring-pages/webp/anime-girls/anime-girl-dragon-queen-d532fdf0fd.webp",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/webp",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": false,
+          "galleryFacing": true,
+          "internalOnly": false,
+          "expectedByteSizeRange": {
+            "min": 40511,
+            "max": 44777
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "anime-girls__anime-girl-saber-toothed-tiger-hoodie-plushie__14e1ec01ad",
+      "displayTitle": "Anime Girl Saber Toothed Tiger Hoodie Plushie",
+      "category": "anime-girls",
+      "hubs": [
+        {
+          "slug": "",
+          "route": "/coloring-pages",
+          "title": "Coloring Pages"
+        },
+        {
+          "slug": "animals",
+          "route": "/coloring-pages/animals",
+          "title": "Animals Coloring Pages"
+        },
+        {
+          "slug": "anime-girls",
+          "route": "/coloring-pages/anime-girls",
+          "title": "Anime Girls Coloring Pages"
+        },
+        {
+          "slug": "plushies",
+          "route": "/coloring-pages/plushies",
+          "title": "Plushies Coloring Pages"
+        },
+        {
+          "slug": "prehistoric-animals",
+          "route": "/coloring-pages/prehistoric-animals",
+          "title": "Prehistoric Animals Coloring Pages"
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/animals",
+          "title": "Animals Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/anime-girls",
+          "title": "Anime Girls Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/plushies",
+          "title": "Plushies Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/prehistoric-animals",
+          "title": "Prehistoric Animals Coloring Pages",
+          "reason": "assigned to this hub"
+        }
+      ],
+      "urls": [
+        {
+          "assetId": "anime-girls__anime-girl-saber-toothed-tiger-hoodie-plushie__14e1ec01ad",
+          "displayTitle": "Anime Girl Saber Toothed Tiger Hoodie Plushie",
+          "mediaType": "svg",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/anime-girls/anime-girl-saber-toothed-tiger-hoodie-plushie-14e1ec01ad.svg",
+          "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-saber-toothed-tiger-hoodie-plushie-14e1ec01ad.svg",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/svg+xml",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": true,
+          "galleryFacing": false,
+          "internalOnly": true,
+          "expectedByteSizeRange": {
+            "min": 411038,
+            "max": 454306
+          }
+        },
+        {
+          "assetId": "anime-girls__anime-girl-saber-toothed-tiger-hoodie-plushie__14e1ec01ad",
+          "displayTitle": "Anime Girl Saber Toothed Tiger Hoodie Plushie",
+          "mediaType": "webp",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/anime-girls/anime-girl-saber-toothed-tiger-hoodie-plushie-14e1ec01ad.webp",
+          "r2ObjectKey": "coloring-pages/webp/anime-girls/anime-girl-saber-toothed-tiger-hoodie-plushie-14e1ec01ad.webp",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/webp",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": false,
+          "galleryFacing": true,
+          "internalOnly": false,
+          "expectedByteSizeRange": {
+            "min": 40789,
+            "max": 45083
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "anime-girls__anime-girl-stegosaurus-hoodie-plushie__1d07718adb",
+      "displayTitle": "Anime Girl Stegosaurus Hoodie Plushie",
+      "category": "anime-girls",
+      "hubs": [
+        {
+          "slug": "",
+          "route": "/coloring-pages",
+          "title": "Coloring Pages"
+        },
+        {
+          "slug": "animals",
+          "route": "/coloring-pages/animals",
+          "title": "Animals Coloring Pages"
+        },
+        {
+          "slug": "anime-girls",
+          "route": "/coloring-pages/anime-girls",
+          "title": "Anime Girls Coloring Pages"
+        },
+        {
+          "slug": "dinosaurs",
+          "route": "/coloring-pages/dinosaurs",
+          "title": "Dinosaurs Coloring Pages"
+        },
+        {
+          "slug": "plushies",
+          "route": "/coloring-pages/plushies",
+          "title": "Plushies Coloring Pages"
+        },
+        {
+          "slug": "prehistoric-animals",
+          "route": "/coloring-pages/prehistoric-animals",
+          "title": "Prehistoric Animals Coloring Pages"
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/dinosaurs",
+          "title": "Dinosaurs Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "urls": [
+        {
+          "assetId": "anime-girls__anime-girl-stegosaurus-hoodie-plushie__1d07718adb",
+          "displayTitle": "Anime Girl Stegosaurus Hoodie Plushie",
+          "mediaType": "svg",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/anime-girls/anime-girl-stegosaurus-hoodie-plushie-1d07718adb.svg",
+          "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-stegosaurus-hoodie-plushie-1d07718adb.svg",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/svg+xml",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": true,
+          "galleryFacing": false,
+          "internalOnly": true,
+          "expectedByteSizeRange": {
+            "min": 378545,
+            "max": 418393
+          }
+        },
+        {
+          "assetId": "anime-girls__anime-girl-stegosaurus-hoodie-plushie__1d07718adb",
+          "displayTitle": "Anime Girl Stegosaurus Hoodie Plushie",
+          "mediaType": "webp",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/anime-girls/anime-girl-stegosaurus-hoodie-plushie-1d07718adb.webp",
+          "r2ObjectKey": "coloring-pages/webp/anime-girls/anime-girl-stegosaurus-hoodie-plushie-1d07718adb.webp",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/webp",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": false,
+          "galleryFacing": true,
+          "internalOnly": false,
+          "expectedByteSizeRange": {
+            "min": 43947,
+            "max": 48573
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "chibi__chibi-decaying-dragon__b4bbf97bf0",
+      "displayTitle": "Chibi Decaying Dragon",
+      "category": "chibi",
+      "hubs": [
+        {
+          "slug": "",
+          "route": "/coloring-pages",
+          "title": "Coloring Pages"
+        },
+        {
+          "slug": "chibi",
+          "route": "/coloring-pages/chibi",
+          "title": "Chibi Coloring Pages"
+        },
+        {
+          "slug": "easy",
+          "route": "/coloring-pages/easy",
+          "title": "Easy Coloring Pages"
+        },
+        {
+          "slug": "fantasy",
+          "route": "/coloring-pages/fantasy",
+          "title": "Fantasy Coloring Pages"
+        },
+        {
+          "slug": "fantasy-creatures",
+          "route": "/coloring-pages/fantasy-creatures",
+          "title": "Fantasy Creatures Coloring Pages"
+        },
+        {
+          "slug": "for-kids",
+          "route": "/coloring-pages/for-kids",
+          "title": "Coloring Pages for Kids"
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/chibi",
+          "title": "Chibi Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/easy",
+          "title": "Easy Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/fantasy",
+          "title": "Fantasy Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/fantasy-creatures",
+          "title": "Fantasy Creatures Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/for-kids",
+          "title": "Coloring Pages for Kids",
+          "reason": "assigned to this hub"
+        }
+      ],
+      "urls": [
+        {
+          "assetId": "chibi__chibi-decaying-dragon__b4bbf97bf0",
+          "displayTitle": "Chibi Decaying Dragon",
+          "mediaType": "svg",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/chibi/chibi-decaying-dragon-b4bbf97bf0.svg",
+          "r2ObjectKey": "coloring-pages/svg/chibi/chibi-decaying-dragon-b4bbf97bf0.svg",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/svg+xml",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": true,
+          "galleryFacing": false,
+          "internalOnly": true,
+          "expectedByteSizeRange": {
+            "min": 249892,
+            "max": 276198
+          }
+        },
+        {
+          "assetId": "chibi__chibi-decaying-dragon__b4bbf97bf0",
+          "displayTitle": "Chibi Decaying Dragon",
+          "mediaType": "webp",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/chibi/chibi-decaying-dragon-b4bbf97bf0.webp",
+          "r2ObjectKey": "coloring-pages/webp/chibi/chibi-decaying-dragon-b4bbf97bf0.webp",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/webp",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": false,
+          "galleryFacing": true,
+          "internalOnly": false,
+          "expectedByteSizeRange": {
+            "min": 45254,
+            "max": 50018
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "chibi__chibi-dungeon-baby-dragon-in-nest__cde9ddcc12",
+      "displayTitle": "Chibi Dungeon Baby Dragon In Nest",
+      "category": "chibi",
+      "hubs": [
+        {
+          "slug": "",
+          "route": "/coloring-pages",
+          "title": "Coloring Pages"
+        },
+        {
+          "slug": "chibi",
+          "route": "/coloring-pages/chibi",
+          "title": "Chibi Coloring Pages"
+        },
+        {
+          "slug": "dungeon",
+          "route": "/coloring-pages/dungeon",
+          "title": "Dungeon Coloring Pages"
+        },
+        {
+          "slug": "easy",
+          "route": "/coloring-pages/easy",
+          "title": "Easy Coloring Pages"
+        },
+        {
+          "slug": "fantasy",
+          "route": "/coloring-pages/fantasy",
+          "title": "Fantasy Coloring Pages"
+        },
+        {
+          "slug": "fantasy-creatures",
+          "route": "/coloring-pages/fantasy-creatures",
+          "title": "Fantasy Creatures Coloring Pages"
+        },
+        {
+          "slug": "for-kids",
+          "route": "/coloring-pages/for-kids",
+          "title": "Coloring Pages for Kids"
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/dungeon",
+          "title": "Dungeon Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "urls": [
+        {
+          "assetId": "chibi__chibi-dungeon-baby-dragon-in-nest__cde9ddcc12",
+          "displayTitle": "Chibi Dungeon Baby Dragon In Nest",
+          "mediaType": "svg",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/chibi/chibi-dungeon-baby-dragon-in-nest-cde9ddcc12.svg",
+          "r2ObjectKey": "coloring-pages/svg/chibi/chibi-dungeon-baby-dragon-in-nest-cde9ddcc12.svg",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/svg+xml",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": true,
+          "galleryFacing": false,
+          "internalOnly": true,
+          "expectedByteSizeRange": {
+            "min": 237595,
+            "max": 262605
+          }
+        },
+        {
+          "assetId": "chibi__chibi-dungeon-baby-dragon-in-nest__cde9ddcc12",
+          "displayTitle": "Chibi Dungeon Baby Dragon In Nest",
+          "mediaType": "webp",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/chibi/chibi-dungeon-baby-dragon-in-nest-cde9ddcc12.webp",
+          "r2ObjectKey": "coloring-pages/webp/chibi/chibi-dungeon-baby-dragon-in-nest-cde9ddcc12.webp",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/webp",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": false,
+          "galleryFacing": true,
+          "internalOnly": false,
+          "expectedByteSizeRange": {
+            "min": 45539,
+            "max": 50333
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "chibi__chibi-flowers-carnation__1b5fa00e2d",
+      "displayTitle": "Chibi Flowers Carnation",
+      "category": "chibi",
+      "hubs": [
+        {
+          "slug": "",
+          "route": "/coloring-pages",
+          "title": "Coloring Pages"
+        },
+        {
+          "slug": "chibi",
+          "route": "/coloring-pages/chibi",
+          "title": "Chibi Coloring Pages"
+        },
+        {
+          "slug": "chibi-flowers",
+          "route": "/coloring-pages/chibi-flowers",
+          "title": "Chibi Flowers Coloring Pages"
+        },
+        {
+          "slug": "easy",
+          "route": "/coloring-pages/easy",
+          "title": "Easy Coloring Pages"
+        },
+        {
+          "slug": "flowers",
+          "route": "/coloring-pages/flowers",
+          "title": "Flowers Coloring Pages"
+        },
+        {
+          "slug": "for-kids",
+          "route": "/coloring-pages/for-kids",
+          "title": "Coloring Pages for Kids"
+        },
+        {
+          "slug": "plants",
+          "route": "/coloring-pages/plants",
+          "title": "Plants Coloring Pages"
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/chibi-flowers",
+          "title": "Chibi Flowers Coloring Pages",
+          "reason": "included in the first-page preview set"
+        },
+        {
+          "path": "/coloring-pages/flowers",
+          "title": "Flowers Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "urls": [
+        {
+          "assetId": "chibi__chibi-flowers-carnation__1b5fa00e2d",
+          "displayTitle": "Chibi Flowers Carnation",
+          "mediaType": "svg",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/chibi/chibi-flowers-carnation-1b5fa00e2d.svg",
+          "r2ObjectKey": "coloring-pages/svg/chibi/chibi-flowers-carnation-1b5fa00e2d.svg",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/svg+xml",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": true,
+          "galleryFacing": false,
+          "internalOnly": true,
+          "expectedByteSizeRange": {
+            "min": 428561,
+            "max": 473673
+          }
+        },
+        {
+          "assetId": "chibi__chibi-flowers-carnation__1b5fa00e2d",
+          "displayTitle": "Chibi Flowers Carnation",
+          "mediaType": "webp",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/chibi/chibi-flowers-carnation-1b5fa00e2d.webp",
+          "r2ObjectKey": "coloring-pages/webp/chibi/chibi-flowers-carnation-1b5fa00e2d.webp",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/webp",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": false,
+          "galleryFacing": true,
+          "internalOnly": false,
+          "expectedByteSizeRange": {
+            "min": 46969,
+            "max": 51915
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "chibi__chibi-flowers-celosia__e0a426bf9d",
+      "displayTitle": "Chibi Flowers Celosia",
+      "category": "chibi",
+      "hubs": [
+        {
+          "slug": "",
+          "route": "/coloring-pages",
+          "title": "Coloring Pages"
+        },
+        {
+          "slug": "chibi",
+          "route": "/coloring-pages/chibi",
+          "title": "Chibi Coloring Pages"
+        },
+        {
+          "slug": "chibi-flowers",
+          "route": "/coloring-pages/chibi-flowers",
+          "title": "Chibi Flowers Coloring Pages"
+        },
+        {
+          "slug": "easy",
+          "route": "/coloring-pages/easy",
+          "title": "Easy Coloring Pages"
+        },
+        {
+          "slug": "flowers",
+          "route": "/coloring-pages/flowers",
+          "title": "Flowers Coloring Pages"
+        },
+        {
+          "slug": "for-kids",
+          "route": "/coloring-pages/for-kids",
+          "title": "Coloring Pages for Kids"
+        },
+        {
+          "slug": "plants",
+          "route": "/coloring-pages/plants",
+          "title": "Plants Coloring Pages"
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/chibi-flowers",
+          "title": "Chibi Flowers Coloring Pages",
+          "reason": "included in the first-page preview set"
+        },
+        {
+          "path": "/coloring-pages/flowers",
+          "title": "Flowers Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "urls": [
+        {
+          "assetId": "chibi__chibi-flowers-celosia__e0a426bf9d",
+          "displayTitle": "Chibi Flowers Celosia",
+          "mediaType": "svg",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/chibi/chibi-flowers-celosia-e0a426bf9d.svg",
+          "r2ObjectKey": "coloring-pages/svg/chibi/chibi-flowers-celosia-e0a426bf9d.svg",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/svg+xml",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": true,
+          "galleryFacing": false,
+          "internalOnly": true,
+          "expectedByteSizeRange": {
+            "min": 307413,
+            "max": 339773
+          }
+        },
+        {
+          "assetId": "chibi__chibi-flowers-celosia__e0a426bf9d",
+          "displayTitle": "Chibi Flowers Celosia",
+          "mediaType": "webp",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/chibi/chibi-flowers-celosia-e0a426bf9d.webp",
+          "r2ObjectKey": "coloring-pages/webp/chibi/chibi-flowers-celosia-e0a426bf9d.webp",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/webp",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": false,
+          "galleryFacing": true,
+          "internalOnly": false,
+          "expectedByteSizeRange": {
+            "min": 39863,
+            "max": 44061
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "chibi__chibi-holiday-halloween-pumpkin-patch-with-family-picking-pumpkins-color__01c2f0ce30",
+      "displayTitle": "Chibi Holiday Halloween Pumpkin Patch With Family Picking Pumpkins Coloring Page",
+      "category": "chibi",
+      "hubs": [
+        {
+          "slug": "",
+          "route": "/coloring-pages",
+          "title": "Coloring Pages"
+        },
+        {
+          "slug": "chibi",
+          "route": "/coloring-pages/chibi",
+          "title": "Chibi Coloring Pages"
+        },
+        {
+          "slug": "easy",
+          "route": "/coloring-pages/easy",
+          "title": "Easy Coloring Pages"
+        },
+        {
+          "slug": "for-kids",
+          "route": "/coloring-pages/for-kids",
+          "title": "Coloring Pages for Kids"
+        },
+        {
+          "slug": "halloween",
+          "route": "/coloring-pages/halloween",
+          "title": "Halloween Coloring Pages"
+        },
+        {
+          "slug": "holidays",
+          "route": "/coloring-pages/holidays",
+          "title": "Holidays Coloring Pages"
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/chibi",
+          "title": "Chibi Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/easy",
+          "title": "Easy Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/for-kids",
+          "title": "Coloring Pages for Kids",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/halloween",
+          "title": "Halloween Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/holidays",
+          "title": "Holidays Coloring Pages",
+          "reason": "assigned to this hub"
+        }
+      ],
+      "urls": [
+        {
+          "assetId": "chibi__chibi-holiday-halloween-pumpkin-patch-with-family-picking-pumpkins-color__01c2f0ce30",
+          "displayTitle": "Chibi Holiday Halloween Pumpkin Patch With Family Picking Pumpkins Coloring Page",
+          "mediaType": "svg",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/chibi/chibi-holiday-halloween-pumpkin-patch-with-family-picking-pumpkins-color-01c2f0ce30.svg",
+          "r2ObjectKey": "coloring-pages/svg/chibi/chibi-holiday-halloween-pumpkin-patch-with-family-picking-pumpkins-color-01c2f0ce30.svg",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/svg+xml",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": true,
+          "galleryFacing": false,
+          "internalOnly": true,
+          "expectedByteSizeRange": {
+            "min": 422655,
+            "max": 467145
+          }
+        },
+        {
+          "assetId": "chibi__chibi-holiday-halloween-pumpkin-patch-with-family-picking-pumpkins-color__01c2f0ce30",
+          "displayTitle": "Chibi Holiday Halloween Pumpkin Patch With Family Picking Pumpkins Coloring Page",
+          "mediaType": "webp",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/chibi/chibi-holiday-halloween-pumpkin-patch-with-family-picking-pumpkins-color-01c2f0ce30.webp",
+          "r2ObjectKey": "coloring-pages/webp/chibi/chibi-holiday-halloween-pumpkin-patch-with-family-picking-pumpkins-color-01c2f0ce30.webp",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/webp",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": false,
+          "galleryFacing": true,
+          "internalOnly": false,
+          "expectedByteSizeRange": {
+            "min": 55248,
+            "max": 61064
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "chibi__chibi-holiday-halloween-pumpkin-pie-and-spice-decor-scene-coloring-page__7d3c695c2b",
+      "displayTitle": "Chibi Holiday Halloween Pumpkin Pie And Spice Decor Scene Coloring Page",
+      "category": "chibi",
+      "hubs": [
+        {
+          "slug": "",
+          "route": "/coloring-pages",
+          "title": "Coloring Pages"
+        },
+        {
+          "slug": "chibi",
+          "route": "/coloring-pages/chibi",
+          "title": "Chibi Coloring Pages"
+        },
+        {
+          "slug": "easy",
+          "route": "/coloring-pages/easy",
+          "title": "Easy Coloring Pages"
+        },
+        {
+          "slug": "for-kids",
+          "route": "/coloring-pages/for-kids",
+          "title": "Coloring Pages for Kids"
+        },
+        {
+          "slug": "halloween",
+          "route": "/coloring-pages/halloween",
+          "title": "Halloween Coloring Pages"
+        },
+        {
+          "slug": "holidays",
+          "route": "/coloring-pages/holidays",
+          "title": "Holidays Coloring Pages"
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/chibi",
+          "title": "Chibi Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/easy",
+          "title": "Easy Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/for-kids",
+          "title": "Coloring Pages for Kids",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/halloween",
+          "title": "Halloween Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/holidays",
+          "title": "Holidays Coloring Pages",
+          "reason": "assigned to this hub"
+        }
+      ],
+      "urls": [
+        {
+          "assetId": "chibi__chibi-holiday-halloween-pumpkin-pie-and-spice-decor-scene-coloring-page__7d3c695c2b",
+          "displayTitle": "Chibi Holiday Halloween Pumpkin Pie And Spice Decor Scene Coloring Page",
+          "mediaType": "svg",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/chibi/chibi-holiday-halloween-pumpkin-pie-and-spice-decor-scene-coloring-page-7d3c695c2b.svg",
+          "r2ObjectKey": "coloring-pages/svg/chibi/chibi-holiday-halloween-pumpkin-pie-and-spice-decor-scene-coloring-page-7d3c695c2b.svg",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/svg+xml",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": true,
+          "galleryFacing": false,
+          "internalOnly": true,
+          "expectedByteSizeRange": {
+            "min": 255589,
+            "max": 282495
+          }
+        },
+        {
+          "assetId": "chibi__chibi-holiday-halloween-pumpkin-pie-and-spice-decor-scene-coloring-page__7d3c695c2b",
+          "displayTitle": "Chibi Holiday Halloween Pumpkin Pie And Spice Decor Scene Coloring Page",
+          "mediaType": "webp",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/chibi/chibi-holiday-halloween-pumpkin-pie-and-spice-decor-scene-coloring-page-7d3c695c2b.webp",
+          "r2ObjectKey": "coloring-pages/webp/chibi/chibi-holiday-halloween-pumpkin-pie-and-spice-decor-scene-coloring-page-7d3c695c2b.webp",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/webp",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": false,
+          "galleryFacing": true,
+          "internalOnly": false,
+          "expectedByteSizeRange": {
+            "min": 40071,
+            "max": 44289
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "chibi__chibi-plushie-prehistoric-diplodocus__a6eff46243",
+      "displayTitle": "Chibi Plushie Prehistoric Diplodocus",
+      "category": "chibi",
+      "hubs": [
+        {
+          "slug": "",
+          "route": "/coloring-pages",
+          "title": "Coloring Pages"
+        },
+        {
+          "slug": "animals",
+          "route": "/coloring-pages/animals",
+          "title": "Animals Coloring Pages"
+        },
+        {
+          "slug": "chibi",
+          "route": "/coloring-pages/chibi",
+          "title": "Chibi Coloring Pages"
+        },
+        {
+          "slug": "dinosaurs",
+          "route": "/coloring-pages/dinosaurs",
+          "title": "Dinosaurs Coloring Pages"
+        },
+        {
+          "slug": "easy",
+          "route": "/coloring-pages/easy",
+          "title": "Easy Coloring Pages"
+        },
+        {
+          "slug": "for-kids",
+          "route": "/coloring-pages/for-kids",
+          "title": "Coloring Pages for Kids"
+        },
+        {
+          "slug": "plushies",
+          "route": "/coloring-pages/plushies",
+          "title": "Plushies Coloring Pages"
+        },
+        {
+          "slug": "prehistoric-animals",
+          "route": "/coloring-pages/prehistoric-animals",
+          "title": "Prehistoric Animals Coloring Pages"
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/animals",
+          "title": "Animals Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/chibi",
+          "title": "Chibi Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/dinosaurs",
+          "title": "Dinosaurs Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/easy",
+          "title": "Easy Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/for-kids",
+          "title": "Coloring Pages for Kids",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/plushies",
+          "title": "Plushies Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/prehistoric-animals",
+          "title": "Prehistoric Animals Coloring Pages",
+          "reason": "assigned to this hub"
+        }
+      ],
+      "urls": [
+        {
+          "assetId": "chibi__chibi-plushie-prehistoric-diplodocus__a6eff46243",
+          "displayTitle": "Chibi Plushie Prehistoric Diplodocus",
+          "mediaType": "svg",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/chibi/chibi-plushie-prehistoric-diplodocus-a6eff46243.svg",
+          "r2ObjectKey": "coloring-pages/svg/chibi/chibi-plushie-prehistoric-diplodocus-a6eff46243.svg",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/svg+xml",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": true,
+          "galleryFacing": false,
+          "internalOnly": true,
+          "expectedByteSizeRange": {
+            "min": 636424,
+            "max": 703416
+          }
+        },
+        {
+          "assetId": "chibi__chibi-plushie-prehistoric-diplodocus__a6eff46243",
+          "displayTitle": "Chibi Plushie Prehistoric Diplodocus",
+          "mediaType": "webp",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/chibi/chibi-plushie-prehistoric-diplodocus-a6eff46243.webp",
+          "r2ObjectKey": "coloring-pages/webp/chibi/chibi-plushie-prehistoric-diplodocus-a6eff46243.webp",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/webp",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": false,
+          "galleryFacing": true,
+          "internalOnly": false,
+          "expectedByteSizeRange": {
+            "min": 46911,
+            "max": 51849
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "chibi__chibi-plushie-prehistoric-tyrannosaurus-rex__2f73f2fae2",
+      "displayTitle": "Chibi Plushie Prehistoric Tyrannosaurus Rex",
+      "category": "chibi",
+      "hubs": [
+        {
+          "slug": "",
+          "route": "/coloring-pages",
+          "title": "Coloring Pages"
+        },
+        {
+          "slug": "animals",
+          "route": "/coloring-pages/animals",
+          "title": "Animals Coloring Pages"
+        },
+        {
+          "slug": "chibi",
+          "route": "/coloring-pages/chibi",
+          "title": "Chibi Coloring Pages"
+        },
+        {
+          "slug": "dinosaurs",
+          "route": "/coloring-pages/dinosaurs",
+          "title": "Dinosaurs Coloring Pages"
+        },
+        {
+          "slug": "easy",
+          "route": "/coloring-pages/easy",
+          "title": "Easy Coloring Pages"
+        },
+        {
+          "slug": "for-kids",
+          "route": "/coloring-pages/for-kids",
+          "title": "Coloring Pages for Kids"
+        },
+        {
+          "slug": "plushies",
+          "route": "/coloring-pages/plushies",
+          "title": "Plushies Coloring Pages"
+        },
+        {
+          "slug": "prehistoric-animals",
+          "route": "/coloring-pages/prehistoric-animals",
+          "title": "Prehistoric Animals Coloring Pages"
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/animals",
+          "title": "Animals Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/chibi",
+          "title": "Chibi Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/dinosaurs",
+          "title": "Dinosaurs Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/easy",
+          "title": "Easy Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/for-kids",
+          "title": "Coloring Pages for Kids",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/plushies",
+          "title": "Plushies Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/prehistoric-animals",
+          "title": "Prehistoric Animals Coloring Pages",
+          "reason": "assigned to this hub"
+        }
+      ],
+      "urls": [
+        {
+          "assetId": "chibi__chibi-plushie-prehistoric-tyrannosaurus-rex__2f73f2fae2",
+          "displayTitle": "Chibi Plushie Prehistoric Tyrannosaurus Rex",
+          "mediaType": "svg",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/chibi/chibi-plushie-prehistoric-tyrannosaurus-rex-2f73f2fae2.svg",
+          "r2ObjectKey": "coloring-pages/svg/chibi/chibi-plushie-prehistoric-tyrannosaurus-rex-2f73f2fae2.svg",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/svg+xml",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": true,
+          "galleryFacing": false,
+          "internalOnly": true,
+          "expectedByteSizeRange": {
+            "min": 438220,
+            "max": 484350
+          }
+        },
+        {
+          "assetId": "chibi__chibi-plushie-prehistoric-tyrannosaurus-rex__2f73f2fae2",
+          "displayTitle": "Chibi Plushie Prehistoric Tyrannosaurus Rex",
+          "mediaType": "webp",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/chibi/chibi-plushie-prehistoric-tyrannosaurus-rex-2f73f2fae2.webp",
+          "r2ObjectKey": "coloring-pages/webp/chibi/chibi-plushie-prehistoric-tyrannosaurus-rex-2f73f2fae2.webp",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/webp",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": false,
+          "galleryFacing": true,
+          "internalOnly": false,
+          "expectedByteSizeRange": {
+            "min": 45723,
+            "max": 50537
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "holiday__holiday-christmas-plushie-baby-dragon-family__b2bcf582a7",
+      "displayTitle": "Holiday Christmas Plushie Baby Dragon Family",
+      "category": "holiday",
+      "hubs": [
+        {
+          "slug": "",
+          "route": "/coloring-pages",
+          "title": "Coloring Pages"
+        },
+        {
+          "slug": "christmas",
+          "route": "/coloring-pages/christmas",
+          "title": "Christmas Coloring Pages"
+        },
+        {
+          "slug": "fantasy",
+          "route": "/coloring-pages/fantasy",
+          "title": "Fantasy Coloring Pages"
+        },
+        {
+          "slug": "fantasy-creatures",
+          "route": "/coloring-pages/fantasy-creatures",
+          "title": "Fantasy Creatures Coloring Pages"
+        },
+        {
+          "slug": "holidays",
+          "route": "/coloring-pages/holidays",
+          "title": "Holidays Coloring Pages"
+        },
+        {
+          "slug": "plushie-dragons",
+          "route": "/coloring-pages/plushie-dragons",
+          "title": "Plushie Dragons Coloring Pages"
+        },
+        {
+          "slug": "plushies",
+          "route": "/coloring-pages/plushies",
+          "title": "Plushies Coloring Pages"
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/christmas",
+          "title": "Christmas Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/fantasy",
+          "title": "Fantasy Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/fantasy-creatures",
+          "title": "Fantasy Creatures Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/holidays",
+          "title": "Holidays Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/plushie-dragons",
+          "title": "Plushie Dragons Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/plushies",
+          "title": "Plushies Coloring Pages",
+          "reason": "assigned to this hub"
+        }
+      ],
+      "urls": [
+        {
+          "assetId": "holiday__holiday-christmas-plushie-baby-dragon-family__b2bcf582a7",
+          "displayTitle": "Holiday Christmas Plushie Baby Dragon Family",
+          "mediaType": "svg",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/holiday/holiday-christmas-plushie-baby-dragon-family-b2bcf582a7.svg",
+          "r2ObjectKey": "coloring-pages/svg/holiday/holiday-christmas-plushie-baby-dragon-family-b2bcf582a7.svg",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/svg+xml",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": true,
+          "galleryFacing": false,
+          "internalOnly": true,
+          "expectedByteSizeRange": {
+            "min": 343291,
+            "max": 379427
+          }
+        },
+        {
+          "assetId": "holiday__holiday-christmas-plushie-baby-dragon-family__b2bcf582a7",
+          "displayTitle": "Holiday Christmas Plushie Baby Dragon Family",
+          "mediaType": "webp",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/holiday/holiday-christmas-plushie-baby-dragon-family-b2bcf582a7.webp",
+          "r2ObjectKey": "coloring-pages/webp/holiday/holiday-christmas-plushie-baby-dragon-family-b2bcf582a7.webp",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/webp",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": false,
+          "galleryFacing": true,
+          "internalOnly": false,
+          "expectedByteSizeRange": {
+            "min": 49481,
+            "max": 54691
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "holiday__holiday-christmas-plushie-mermaid__f3fb154ad5",
+      "displayTitle": "Holiday Christmas Plushie Mermaid",
+      "category": "holiday",
+      "hubs": [
+        {
+          "slug": "",
+          "route": "/coloring-pages",
+          "title": "Coloring Pages"
+        },
+        {
+          "slug": "christmas",
+          "route": "/coloring-pages/christmas",
+          "title": "Christmas Coloring Pages"
+        },
+        {
+          "slug": "fantasy",
+          "route": "/coloring-pages/fantasy",
+          "title": "Fantasy Coloring Pages"
+        },
+        {
+          "slug": "fantasy-creatures",
+          "route": "/coloring-pages/fantasy-creatures",
+          "title": "Fantasy Creatures Coloring Pages"
+        },
+        {
+          "slug": "holidays",
+          "route": "/coloring-pages/holidays",
+          "title": "Holidays Coloring Pages"
+        },
+        {
+          "slug": "mermaids",
+          "route": "/coloring-pages/mermaids",
+          "title": "Mermaids Coloring Pages"
+        },
+        {
+          "slug": "plushies",
+          "route": "/coloring-pages/plushies",
+          "title": "Plushies Coloring Pages"
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/mermaids",
+          "title": "Mermaids Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "urls": [
+        {
+          "assetId": "holiday__holiday-christmas-plushie-mermaid__f3fb154ad5",
+          "displayTitle": "Holiday Christmas Plushie Mermaid",
+          "mediaType": "svg",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/holiday/holiday-christmas-plushie-mermaid-f3fb154ad5.svg",
+          "r2ObjectKey": "coloring-pages/svg/holiday/holiday-christmas-plushie-mermaid-f3fb154ad5.svg",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/svg+xml",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": true,
+          "galleryFacing": false,
+          "internalOnly": true,
+          "expectedByteSizeRange": {
+            "min": 209538,
+            "max": 231596
+          }
+        },
+        {
+          "assetId": "holiday__holiday-christmas-plushie-mermaid__f3fb154ad5",
+          "displayTitle": "Holiday Christmas Plushie Mermaid",
+          "mediaType": "webp",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/holiday/holiday-christmas-plushie-mermaid-f3fb154ad5.webp",
+          "r2ObjectKey": "coloring-pages/webp/holiday/holiday-christmas-plushie-mermaid-f3fb154ad5.webp",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/webp",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": false,
+          "galleryFacing": true,
+          "internalOnly": false,
+          "expectedByteSizeRange": {
+            "min": 36037,
+            "max": 39831
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "indoor-plants__indoor-plants-gerbera-daisy__591cf8e859",
+      "displayTitle": "Indoor Plants Gerbera Daisy",
+      "category": "indoor-plants",
+      "hubs": [
+        {
+          "slug": "",
+          "route": "/coloring-pages",
+          "title": "Coloring Pages"
+        },
+        {
+          "slug": "indoor-plants",
+          "route": "/coloring-pages/indoor-plants",
+          "title": "Indoor Plants Coloring Pages"
+        },
+        {
+          "slug": "plants",
+          "route": "/coloring-pages/plants",
+          "title": "Plants Coloring Pages"
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/indoor-plants",
+          "title": "Indoor Plants Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/plants",
+          "title": "Plants Coloring Pages",
+          "reason": "assigned to this hub"
+        }
+      ],
+      "urls": [
+        {
+          "assetId": "indoor-plants__indoor-plants-gerbera-daisy__591cf8e859",
+          "displayTitle": "Indoor Plants Gerbera Daisy",
+          "mediaType": "svg",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/indoor-plants/indoor-plants-gerbera-daisy-591cf8e859.svg",
+          "r2ObjectKey": "coloring-pages/svg/indoor-plants/indoor-plants-gerbera-daisy-591cf8e859.svg",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/svg+xml",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": true,
+          "galleryFacing": false,
+          "internalOnly": true,
+          "expectedByteSizeRange": {
+            "min": 178569,
+            "max": 197367
+          }
+        },
+        {
+          "assetId": "indoor-plants__indoor-plants-gerbera-daisy__591cf8e859",
+          "displayTitle": "Indoor Plants Gerbera Daisy",
+          "mediaType": "webp",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/indoor-plants/indoor-plants-gerbera-daisy-591cf8e859.webp",
+          "r2ObjectKey": "coloring-pages/webp/indoor-plants/indoor-plants-gerbera-daisy-591cf8e859.webp",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/webp",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": false,
+          "galleryFacing": true,
+          "internalOnly": false,
+          "expectedByteSizeRange": {
+            "min": 40186,
+            "max": 44418
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "indoor-plants__indoor-plants-philodendron-pink-princess__ab3e85182b",
+      "displayTitle": "Indoor Plants Philodendron Pink Princess",
+      "category": "indoor-plants",
+      "hubs": [
+        {
+          "slug": "",
+          "route": "/coloring-pages",
+          "title": "Coloring Pages"
+        },
+        {
+          "slug": "indoor-plants",
+          "route": "/coloring-pages/indoor-plants",
+          "title": "Indoor Plants Coloring Pages"
+        },
+        {
+          "slug": "plants",
+          "route": "/coloring-pages/plants",
+          "title": "Plants Coloring Pages"
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/indoor-plants",
+          "title": "Indoor Plants Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/plants",
+          "title": "Plants Coloring Pages",
+          "reason": "assigned to this hub"
+        }
+      ],
+      "urls": [
+        {
+          "assetId": "indoor-plants__indoor-plants-philodendron-pink-princess__ab3e85182b",
+          "displayTitle": "Indoor Plants Philodendron Pink Princess",
+          "mediaType": "svg",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/indoor-plants/indoor-plants-philodendron-pink-princess-ab3e85182b.svg",
+          "r2ObjectKey": "coloring-pages/svg/indoor-plants/indoor-plants-philodendron-pink-princess-ab3e85182b.svg",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/svg+xml",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": true,
+          "galleryFacing": false,
+          "internalOnly": true,
+          "expectedByteSizeRange": {
+            "min": 265440,
+            "max": 293382
+          }
+        },
+        {
+          "assetId": "indoor-plants__indoor-plants-philodendron-pink-princess__ab3e85182b",
+          "displayTitle": "Indoor Plants Philodendron Pink Princess",
+          "mediaType": "webp",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/indoor-plants/indoor-plants-philodendron-pink-princess-ab3e85182b.webp",
+          "r2ObjectKey": "coloring-pages/webp/indoor-plants/indoor-plants-philodendron-pink-princess-ab3e85182b.webp",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/webp",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": false,
+          "galleryFacing": true,
+          "internalOnly": false,
+          "expectedByteSizeRange": {
+            "min": 43255,
+            "max": 47809
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-bakery-cutting-board-with-dough__b2b847f8d9",
+      "displayTitle": "Mandala Geometry Patterns Bakery Cutting Board With Dough",
+      "category": "mandala-geometry-patterns",
+      "hubs": [
+        {
+          "slug": "",
+          "route": "/coloring-pages",
+          "title": "Coloring Pages"
+        },
+        {
+          "slug": "detailed-for-adults",
+          "route": "/coloring-pages/detailed-for-adults",
+          "title": "Detailed Coloring Pages for Adults"
+        },
+        {
+          "slug": "food",
+          "route": "/coloring-pages/food",
+          "title": "Food Coloring Pages"
+        },
+        {
+          "slug": "geometric",
+          "route": "/coloring-pages/geometric",
+          "title": "Geometric Coloring Pages"
+        },
+        {
+          "slug": "mandalas",
+          "route": "/coloring-pages/mandalas",
+          "title": "Mandalas Coloring Pages"
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/food",
+          "title": "Food Coloring Pages",
+          "reason": "included in the first-page preview set"
+        },
+        {
+          "path": "/coloring-pages/geometric",
+          "title": "Geometric Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "urls": [
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-bakery-cutting-board-with-dough__b2b847f8d9",
+          "displayTitle": "Mandala Geometry Patterns Bakery Cutting Board With Dough",
+          "mediaType": "svg",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-bakery-cutting-board-with-dough-b2b847f8d9.svg",
+          "r2ObjectKey": "coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-bakery-cutting-board-with-dough-b2b847f8d9.svg",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/svg+xml",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": true,
+          "galleryFacing": false,
+          "internalOnly": true,
+          "expectedByteSizeRange": {
+            "min": 187042,
+            "max": 206732
+          }
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-bakery-cutting-board-with-dough__b2b847f8d9",
+          "displayTitle": "Mandala Geometry Patterns Bakery Cutting Board With Dough",
+          "mediaType": "webp",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-bakery-cutting-board-with-dough-b2b847f8d9.webp",
+          "r2ObjectKey": "coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-bakery-cutting-board-with-dough-b2b847f8d9.webp",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/webp",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": false,
+          "galleryFacing": true,
+          "internalOnly": false,
+          "expectedByteSizeRange": {
+            "min": 45755,
+            "max": 50573
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-bakery-display-case__922f88ea65",
+      "displayTitle": "Mandala Geometry Patterns Bakery Display Case",
+      "category": "mandala-geometry-patterns",
+      "hubs": [
+        {
+          "slug": "",
+          "route": "/coloring-pages",
+          "title": "Coloring Pages"
+        },
+        {
+          "slug": "detailed-for-adults",
+          "route": "/coloring-pages/detailed-for-adults",
+          "title": "Detailed Coloring Pages for Adults"
+        },
+        {
+          "slug": "food",
+          "route": "/coloring-pages/food",
+          "title": "Food Coloring Pages"
+        },
+        {
+          "slug": "geometric",
+          "route": "/coloring-pages/geometric",
+          "title": "Geometric Coloring Pages"
+        },
+        {
+          "slug": "mandalas",
+          "route": "/coloring-pages/mandalas",
+          "title": "Mandalas Coloring Pages"
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/food",
+          "title": "Food Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "urls": [
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-bakery-display-case__922f88ea65",
+          "displayTitle": "Mandala Geometry Patterns Bakery Display Case",
+          "mediaType": "svg",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-bakery-display-case-922f88ea65.svg",
+          "r2ObjectKey": "coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-bakery-display-case-922f88ea65.svg",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/svg+xml",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": true,
+          "galleryFacing": false,
+          "internalOnly": true,
+          "expectedByteSizeRange": {
+            "min": 325223,
+            "max": 359459
+          }
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-bakery-display-case__922f88ea65",
+          "displayTitle": "Mandala Geometry Patterns Bakery Display Case",
+          "mediaType": "webp",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-bakery-display-case-922f88ea65.webp",
+          "r2ObjectKey": "coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-bakery-display-case-922f88ea65.webp",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/webp",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": false,
+          "galleryFacing": true,
+          "internalOnly": false,
+          "expectedByteSizeRange": {
+            "min": 62584,
+            "max": 69172
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-bakery-focaccia__988a6bf6e1",
+      "displayTitle": "Mandala Geometry Patterns Bakery Focaccia",
+      "category": "mandala-geometry-patterns",
+      "hubs": [
+        {
+          "slug": "",
+          "route": "/coloring-pages",
+          "title": "Coloring Pages"
+        },
+        {
+          "slug": "detailed-for-adults",
+          "route": "/coloring-pages/detailed-for-adults",
+          "title": "Detailed Coloring Pages for Adults"
+        },
+        {
+          "slug": "food",
+          "route": "/coloring-pages/food",
+          "title": "Food Coloring Pages"
+        },
+        {
+          "slug": "geometric",
+          "route": "/coloring-pages/geometric",
+          "title": "Geometric Coloring Pages"
+        },
+        {
+          "slug": "mandalas",
+          "route": "/coloring-pages/mandalas",
+          "title": "Mandalas Coloring Pages"
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/detailed-for-adults",
+          "title": "Detailed Coloring Pages for Adults",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/food",
+          "title": "Food Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/geometric",
+          "title": "Geometric Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/mandalas",
+          "title": "Mandalas Coloring Pages",
+          "reason": "assigned to this hub"
+        }
+      ],
+      "urls": [
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-bakery-focaccia__988a6bf6e1",
+          "displayTitle": "Mandala Geometry Patterns Bakery Focaccia",
+          "mediaType": "svg",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-bakery-focaccia-988a6bf6e1.svg",
+          "r2ObjectKey": "coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-bakery-focaccia-988a6bf6e1.svg",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/svg+xml",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": true,
+          "galleryFacing": false,
+          "internalOnly": true,
+          "expectedByteSizeRange": {
+            "min": 393834,
+            "max": 435292
+          }
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-bakery-focaccia__988a6bf6e1",
+          "displayTitle": "Mandala Geometry Patterns Bakery Focaccia",
+          "mediaType": "webp",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-bakery-focaccia-988a6bf6e1.webp",
+          "r2ObjectKey": "coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-bakery-focaccia-988a6bf6e1.webp",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/webp",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": false,
+          "galleryFacing": true,
+          "internalOnly": false,
+          "expectedByteSizeRange": {
+            "min": 68092,
+            "max": 75260
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-high-speed-bullet-train-on-__5e359d2a25",
+      "displayTitle": "Mandala Geometry Patterns Trains Locomotives High Speed Bullet Train On Track",
+      "category": "mandala-geometry-patterns",
+      "hubs": [
+        {
+          "slug": "",
+          "route": "/coloring-pages",
+          "title": "Coloring Pages"
+        },
+        {
+          "slug": "detailed-for-adults",
+          "route": "/coloring-pages/detailed-for-adults",
+          "title": "Detailed Coloring Pages for Adults"
+        },
+        {
+          "slug": "geometric",
+          "route": "/coloring-pages/geometric",
+          "title": "Geometric Coloring Pages"
+        },
+        {
+          "slug": "mandalas",
+          "route": "/coloring-pages/mandalas",
+          "title": "Mandalas Coloring Pages"
+        },
+        {
+          "slug": "trains",
+          "route": "/coloring-pages/trains",
+          "title": "Trains Coloring Pages"
+        },
+        {
+          "slug": "vehicles",
+          "route": "/coloring-pages/vehicles",
+          "title": "Vehicles Coloring Pages"
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/trains",
+          "title": "Trains Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "urls": [
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-high-speed-bullet-train-on-__5e359d2a25",
+          "displayTitle": "Mandala Geometry Patterns Trains Locomotives High Speed Bullet Train On Track",
+          "mediaType": "svg",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-high-speed-bullet-train-on--5e359d2a25.svg",
+          "r2ObjectKey": "coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-high-speed-bullet-train-on--5e359d2a25.svg",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/svg+xml",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": true,
+          "galleryFacing": false,
+          "internalOnly": true,
+          "expectedByteSizeRange": {
+            "min": 410345,
+            "max": 453541
+          }
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-high-speed-bullet-train-on-__5e359d2a25",
+          "displayTitle": "Mandala Geometry Patterns Trains Locomotives High Speed Bullet Train On Track",
+          "mediaType": "webp",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-high-speed-bullet-train-on--5e359d2a25.webp",
+          "r2ObjectKey": "coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-high-speed-bullet-train-on--5e359d2a25.webp",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/webp",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": false,
+          "galleryFacing": true,
+          "internalOnly": false,
+          "expectedByteSizeRange": {
+            "min": 66121,
+            "max": 73083
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-indian-palace-on-wheels-tra__fa10f9553b",
+      "displayTitle": "Mandala Geometry Patterns Trains Locomotives Indian Palace On Wheels Train",
+      "category": "mandala-geometry-patterns",
+      "hubs": [
+        {
+          "slug": "",
+          "route": "/coloring-pages",
+          "title": "Coloring Pages"
+        },
+        {
+          "slug": "detailed-for-adults",
+          "route": "/coloring-pages/detailed-for-adults",
+          "title": "Detailed Coloring Pages for Adults"
+        },
+        {
+          "slug": "geometric",
+          "route": "/coloring-pages/geometric",
+          "title": "Geometric Coloring Pages"
+        },
+        {
+          "slug": "mandalas",
+          "route": "/coloring-pages/mandalas",
+          "title": "Mandalas Coloring Pages"
+        },
+        {
+          "slug": "trains",
+          "route": "/coloring-pages/trains",
+          "title": "Trains Coloring Pages"
+        },
+        {
+          "slug": "vehicles",
+          "route": "/coloring-pages/vehicles",
+          "title": "Vehicles Coloring Pages"
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "root gallery includes approved production items"
+        },
+        {
+          "path": "/coloring-pages/trains",
+          "title": "Trains Coloring Pages",
+          "reason": "included in the first-page preview set"
+        }
+      ],
+      "urls": [
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-indian-palace-on-wheels-tra__fa10f9553b",
+          "displayTitle": "Mandala Geometry Patterns Trains Locomotives Indian Palace On Wheels Train",
+          "mediaType": "svg",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-indian-palace-on-wheels-tra-fa10f9553b.svg",
+          "r2ObjectKey": "coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-indian-palace-on-wheels-tra-fa10f9553b.svg",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/svg+xml",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": true,
+          "galleryFacing": false,
+          "internalOnly": true,
+          "expectedByteSizeRange": {
+            "min": 424157,
+            "max": 468807
+          }
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-indian-palace-on-wheels-tra__fa10f9553b",
+          "displayTitle": "Mandala Geometry Patterns Trains Locomotives Indian Palace On Wheels Train",
+          "mediaType": "webp",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-indian-palace-on-wheels-tra-fa10f9553b.webp",
+          "r2ObjectKey": "coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-indian-palace-on-wheels-tra-fa10f9553b.webp",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/webp",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": false,
+          "galleryFacing": true,
+          "internalOnly": false,
+          "expectedByteSizeRange": {
+            "min": 73854,
+            "max": 81630
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehiacle-cars-pagani-huayra__974ebd3a07",
+      "displayTitle": "Mandala Geometry Patterns Vehiacle Cars Pagani Huayra",
+      "category": "mandala-geometry-patterns",
+      "hubs": [
+        {
+          "slug": "",
+          "route": "/coloring-pages",
+          "title": "Coloring Pages"
+        },
+        {
+          "slug": "cars",
+          "route": "/coloring-pages/cars",
+          "title": "Cars Coloring Pages"
+        },
+        {
+          "slug": "detailed-for-adults",
+          "route": "/coloring-pages/detailed-for-adults",
+          "title": "Detailed Coloring Pages for Adults"
+        },
+        {
+          "slug": "geometric",
+          "route": "/coloring-pages/geometric",
+          "title": "Geometric Coloring Pages"
+        },
+        {
+          "slug": "mandalas",
+          "route": "/coloring-pages/mandalas",
+          "title": "Mandalas Coloring Pages"
+        },
+        {
+          "slug": "vehicles",
+          "route": "/coloring-pages/vehicles",
+          "title": "Vehicles Coloring Pages"
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/cars",
+          "title": "Cars Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/detailed-for-adults",
+          "title": "Detailed Coloring Pages for Adults",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/geometric",
+          "title": "Geometric Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/mandalas",
+          "title": "Mandalas Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/vehicles",
+          "title": "Vehicles Coloring Pages",
+          "reason": "assigned to this hub"
+        }
+      ],
+      "urls": [
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehiacle-cars-pagani-huayra__974ebd3a07",
+          "displayTitle": "Mandala Geometry Patterns Vehiacle Cars Pagani Huayra",
+          "mediaType": "svg",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-cars-pagani-huayra-974ebd3a07.svg",
+          "r2ObjectKey": "coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-cars-pagani-huayra-974ebd3a07.svg",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/svg+xml",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": true,
+          "galleryFacing": false,
+          "internalOnly": true,
+          "expectedByteSizeRange": {
+            "min": 518298,
+            "max": 572856
+          }
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehiacle-cars-pagani-huayra__974ebd3a07",
+          "displayTitle": "Mandala Geometry Patterns Vehiacle Cars Pagani Huayra",
+          "mediaType": "webp",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-cars-pagani-huayra-974ebd3a07.webp",
+          "r2ObjectKey": "coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-cars-pagani-huayra-974ebd3a07.webp",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/webp",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": false,
+          "galleryFacing": true,
+          "internalOnly": false,
+          "expectedByteSizeRange": {
+            "min": 70826,
+            "max": 78282
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehiacle-cars-toyota-supra__d87bfd042b",
+      "displayTitle": "Mandala Geometry Patterns Vehiacle Cars Toyota Supra",
+      "category": "mandala-geometry-patterns",
+      "hubs": [
+        {
+          "slug": "",
+          "route": "/coloring-pages",
+          "title": "Coloring Pages"
+        },
+        {
+          "slug": "cars",
+          "route": "/coloring-pages/cars",
+          "title": "Cars Coloring Pages"
+        },
+        {
+          "slug": "detailed-for-adults",
+          "route": "/coloring-pages/detailed-for-adults",
+          "title": "Detailed Coloring Pages for Adults"
+        },
+        {
+          "slug": "geometric",
+          "route": "/coloring-pages/geometric",
+          "title": "Geometric Coloring Pages"
+        },
+        {
+          "slug": "mandalas",
+          "route": "/coloring-pages/mandalas",
+          "title": "Mandalas Coloring Pages"
+        },
+        {
+          "slug": "vehicles",
+          "route": "/coloring-pages/vehicles",
+          "title": "Vehicles Coloring Pages"
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/cars",
+          "title": "Cars Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/detailed-for-adults",
+          "title": "Detailed Coloring Pages for Adults",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/geometric",
+          "title": "Geometric Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/mandalas",
+          "title": "Mandalas Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/vehicles",
+          "title": "Vehicles Coloring Pages",
+          "reason": "assigned to this hub"
+        }
+      ],
+      "urls": [
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehiacle-cars-toyota-supra__d87bfd042b",
+          "displayTitle": "Mandala Geometry Patterns Vehiacle Cars Toyota Supra",
+          "mediaType": "svg",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-cars-toyota-supra-d87bfd042b.svg",
+          "r2ObjectKey": "coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-cars-toyota-supra-d87bfd042b.svg",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/svg+xml",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": true,
+          "galleryFacing": false,
+          "internalOnly": true,
+          "expectedByteSizeRange": {
+            "min": 530278,
+            "max": 586098
+          }
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehiacle-cars-toyota-supra__d87bfd042b",
+          "displayTitle": "Mandala Geometry Patterns Vehiacle Cars Toyota Supra",
+          "mediaType": "webp",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-cars-toyota-supra-d87bfd042b.webp",
+          "r2ObjectKey": "coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-cars-toyota-supra-d87bfd042b.webp",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/webp",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": false,
+          "galleryFacing": true,
+          "internalOnly": false,
+          "expectedByteSizeRange": {
+            "min": 67636,
+            "max": 74756
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehiacle-planes-supersonic-jet__bfd2f21c17",
+      "displayTitle": "Mandala Geometry Patterns Vehiacle Planes Supersonic Jet",
+      "category": "mandala-geometry-patterns",
+      "hubs": [
+        {
+          "slug": "",
+          "route": "/coloring-pages",
+          "title": "Coloring Pages"
+        },
+        {
+          "slug": "detailed-for-adults",
+          "route": "/coloring-pages/detailed-for-adults",
+          "title": "Detailed Coloring Pages for Adults"
+        },
+        {
+          "slug": "geometric",
+          "route": "/coloring-pages/geometric",
+          "title": "Geometric Coloring Pages"
+        },
+        {
+          "slug": "mandalas",
+          "route": "/coloring-pages/mandalas",
+          "title": "Mandalas Coloring Pages"
+        },
+        {
+          "slug": "planes",
+          "route": "/coloring-pages/planes",
+          "title": "Planes Coloring Pages"
+        },
+        {
+          "slug": "vehicles",
+          "route": "/coloring-pages/vehicles",
+          "title": "Vehicles Coloring Pages"
+        }
+      ],
+      "likelyPages": [
+        {
+          "path": "/coloring-pages",
+          "title": "Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/detailed-for-adults",
+          "title": "Detailed Coloring Pages for Adults",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/geometric",
+          "title": "Geometric Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/mandalas",
+          "title": "Mandalas Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/planes",
+          "title": "Planes Coloring Pages",
+          "reason": "assigned to this hub"
+        },
+        {
+          "path": "/coloring-pages/vehicles",
+          "title": "Vehicles Coloring Pages",
+          "reason": "assigned to this hub"
+        }
+      ],
+      "urls": [
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehiacle-planes-supersonic-jet__bfd2f21c17",
+          "displayTitle": "Mandala Geometry Patterns Vehiacle Planes Supersonic Jet",
+          "mediaType": "svg",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-planes-supersonic-jet-bfd2f21c17.svg",
+          "r2ObjectKey": "coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-planes-supersonic-jet-bfd2f21c17.svg",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/svg+xml",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": true,
+          "galleryFacing": false,
+          "internalOnly": true,
+          "expectedByteSizeRange": {
+            "min": 251222,
+            "max": 277668
+          }
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehiacle-planes-supersonic-jet__bfd2f21c17",
+          "displayTitle": "Mandala Geometry Patterns Vehiacle Planes Supersonic Jet",
+          "mediaType": "webp",
+          "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-planes-supersonic-jet-bfd2f21c17.webp",
+          "r2ObjectKey": "coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-planes-supersonic-jet-bfd2f21c17.webp",
+          "expectedHttpStatus": 200,
+          "expectedContentType": "image/webp",
+          "expectedCacheControl": "public, max-age=31536000, immutable",
+          "expectedCorsRequired": false,
+          "galleryFacing": true,
+          "internalOnly": false,
+          "expectedByteSizeRange": {
+            "min": 55715,
+            "max": 61581
+          }
+        }
+      ]
+    }
+  ],
+  "allUrls": [
+    {
+      "assetId": "animals__animals-alligator__4feec8505a",
+      "displayTitle": "Animals Alligator",
+      "mediaType": "svg",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/animals/animals-alligator-4feec8505a.svg",
+      "r2ObjectKey": "coloring-pages/svg/animals/animals-alligator-4feec8505a.svg",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": true,
+      "galleryFacing": false,
+      "internalOnly": true,
+      "expectedByteSizeRange": {
+        "min": 170511,
+        "max": 188461
+      }
+    },
+    {
+      "assetId": "anime-girls__anime-girl-ankylosaurus-hoodie-plushie__eb8de86d73",
+      "displayTitle": "Anime Girl Ankylosaurus Hoodie Plushie",
+      "mediaType": "svg",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-eb8de86d73.svg",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-eb8de86d73.svg",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": true,
+      "galleryFacing": false,
+      "internalOnly": true,
+      "expectedByteSizeRange": {
+        "min": 183830,
+        "max": 203182
+      }
+    },
+    {
+      "assetId": "anime-girls__anime-girl-brachiosaurus-hoodie-plushie__a676a7c044",
+      "displayTitle": "Anime Girl Brachiosaurus Hoodie Plushie",
+      "mediaType": "svg",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-a676a7c044.svg",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-a676a7c044.svg",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": true,
+      "galleryFacing": false,
+      "internalOnly": true,
+      "expectedByteSizeRange": {
+        "min": 213011,
+        "max": 235435
+      }
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dragon-eggs-hoodie-plushie__b1747e4988",
+      "displayTitle": "Anime Girl Dragon Eggs Hoodie Plushie",
+      "mediaType": "svg",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/anime-girls/anime-girl-dragon-eggs-hoodie-plushie-b1747e4988.svg",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-dragon-eggs-hoodie-plushie-b1747e4988.svg",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": true,
+      "galleryFacing": false,
+      "internalOnly": true,
+      "expectedByteSizeRange": {
+        "min": 155627,
+        "max": 172009
+      }
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dragon-eggs-hoodie-plushie__f41a8578b5",
+      "displayTitle": "Anime Girl Dragon Eggs Hoodie Plushie",
+      "mediaType": "svg",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/anime-girls/anime-girl-dragon-eggs-hoodie-plushie-f41a8578b5.svg",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-dragon-eggs-hoodie-plushie-f41a8578b5.svg",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": true,
+      "galleryFacing": false,
+      "internalOnly": true,
+      "expectedByteSizeRange": {
+        "min": 925661,
+        "max": 1023099
+      }
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dragon-hoodie-plushie__0492bac704",
+      "displayTitle": "Anime Girl Dragon Hoodie Plushie",
+      "mediaType": "svg",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/anime-girls/anime-girl-dragon-hoodie-plushie-0492bac704.svg",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-dragon-hoodie-plushie-0492bac704.svg",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": true,
+      "galleryFacing": false,
+      "internalOnly": true,
+      "expectedByteSizeRange": {
+        "min": 277139,
+        "max": 306313
+      }
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dragon-queen__8c2e2a124f",
+      "displayTitle": "Anime Girl Dragon Queen",
+      "mediaType": "svg",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/anime-girls/anime-girl-dragon-queen-8c2e2a124f.svg",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-dragon-queen-8c2e2a124f.svg",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": true,
+      "galleryFacing": false,
+      "internalOnly": true,
+      "expectedByteSizeRange": {
+        "min": 228545,
+        "max": 252603
+      }
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dragon-queen__d532fdf0fd",
+      "displayTitle": "Anime Girl Dragon Queen",
+      "mediaType": "svg",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/anime-girls/anime-girl-dragon-queen-d532fdf0fd.svg",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-dragon-queen-d532fdf0fd.svg",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": true,
+      "galleryFacing": false,
+      "internalOnly": true,
+      "expectedByteSizeRange": {
+        "min": 279712,
+        "max": 309156
+      }
+    },
+    {
+      "assetId": "anime-girls__anime-girl-saber-toothed-tiger-hoodie-plushie__14e1ec01ad",
+      "displayTitle": "Anime Girl Saber Toothed Tiger Hoodie Plushie",
+      "mediaType": "svg",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/anime-girls/anime-girl-saber-toothed-tiger-hoodie-plushie-14e1ec01ad.svg",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-saber-toothed-tiger-hoodie-plushie-14e1ec01ad.svg",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": true,
+      "galleryFacing": false,
+      "internalOnly": true,
+      "expectedByteSizeRange": {
+        "min": 411038,
+        "max": 454306
+      }
+    },
+    {
+      "assetId": "anime-girls__anime-girl-stegosaurus-hoodie-plushie__1d07718adb",
+      "displayTitle": "Anime Girl Stegosaurus Hoodie Plushie",
+      "mediaType": "svg",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/anime-girls/anime-girl-stegosaurus-hoodie-plushie-1d07718adb.svg",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-stegosaurus-hoodie-plushie-1d07718adb.svg",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": true,
+      "galleryFacing": false,
+      "internalOnly": true,
+      "expectedByteSizeRange": {
+        "min": 378545,
+        "max": 418393
+      }
+    },
+    {
+      "assetId": "chibi__chibi-decaying-dragon__b4bbf97bf0",
+      "displayTitle": "Chibi Decaying Dragon",
+      "mediaType": "svg",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/chibi/chibi-decaying-dragon-b4bbf97bf0.svg",
+      "r2ObjectKey": "coloring-pages/svg/chibi/chibi-decaying-dragon-b4bbf97bf0.svg",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": true,
+      "galleryFacing": false,
+      "internalOnly": true,
+      "expectedByteSizeRange": {
+        "min": 249892,
+        "max": 276198
+      }
+    },
+    {
+      "assetId": "chibi__chibi-dungeon-baby-dragon-in-nest__cde9ddcc12",
+      "displayTitle": "Chibi Dungeon Baby Dragon In Nest",
+      "mediaType": "svg",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/chibi/chibi-dungeon-baby-dragon-in-nest-cde9ddcc12.svg",
+      "r2ObjectKey": "coloring-pages/svg/chibi/chibi-dungeon-baby-dragon-in-nest-cde9ddcc12.svg",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": true,
+      "galleryFacing": false,
+      "internalOnly": true,
+      "expectedByteSizeRange": {
+        "min": 237595,
+        "max": 262605
+      }
+    },
+    {
+      "assetId": "chibi__chibi-flowers-carnation__1b5fa00e2d",
+      "displayTitle": "Chibi Flowers Carnation",
+      "mediaType": "svg",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/chibi/chibi-flowers-carnation-1b5fa00e2d.svg",
+      "r2ObjectKey": "coloring-pages/svg/chibi/chibi-flowers-carnation-1b5fa00e2d.svg",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": true,
+      "galleryFacing": false,
+      "internalOnly": true,
+      "expectedByteSizeRange": {
+        "min": 428561,
+        "max": 473673
+      }
+    },
+    {
+      "assetId": "chibi__chibi-flowers-celosia__e0a426bf9d",
+      "displayTitle": "Chibi Flowers Celosia",
+      "mediaType": "svg",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/chibi/chibi-flowers-celosia-e0a426bf9d.svg",
+      "r2ObjectKey": "coloring-pages/svg/chibi/chibi-flowers-celosia-e0a426bf9d.svg",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": true,
+      "galleryFacing": false,
+      "internalOnly": true,
+      "expectedByteSizeRange": {
+        "min": 307413,
+        "max": 339773
+      }
+    },
+    {
+      "assetId": "chibi__chibi-holiday-halloween-pumpkin-patch-with-family-picking-pumpkins-color__01c2f0ce30",
+      "displayTitle": "Chibi Holiday Halloween Pumpkin Patch With Family Picking Pumpkins Coloring Page",
+      "mediaType": "svg",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/chibi/chibi-holiday-halloween-pumpkin-patch-with-family-picking-pumpkins-color-01c2f0ce30.svg",
+      "r2ObjectKey": "coloring-pages/svg/chibi/chibi-holiday-halloween-pumpkin-patch-with-family-picking-pumpkins-color-01c2f0ce30.svg",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": true,
+      "galleryFacing": false,
+      "internalOnly": true,
+      "expectedByteSizeRange": {
+        "min": 422655,
+        "max": 467145
+      }
+    },
+    {
+      "assetId": "chibi__chibi-holiday-halloween-pumpkin-pie-and-spice-decor-scene-coloring-page__7d3c695c2b",
+      "displayTitle": "Chibi Holiday Halloween Pumpkin Pie And Spice Decor Scene Coloring Page",
+      "mediaType": "svg",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/chibi/chibi-holiday-halloween-pumpkin-pie-and-spice-decor-scene-coloring-page-7d3c695c2b.svg",
+      "r2ObjectKey": "coloring-pages/svg/chibi/chibi-holiday-halloween-pumpkin-pie-and-spice-decor-scene-coloring-page-7d3c695c2b.svg",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": true,
+      "galleryFacing": false,
+      "internalOnly": true,
+      "expectedByteSizeRange": {
+        "min": 255589,
+        "max": 282495
+      }
+    },
+    {
+      "assetId": "chibi__chibi-plushie-prehistoric-diplodocus__a6eff46243",
+      "displayTitle": "Chibi Plushie Prehistoric Diplodocus",
+      "mediaType": "svg",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/chibi/chibi-plushie-prehistoric-diplodocus-a6eff46243.svg",
+      "r2ObjectKey": "coloring-pages/svg/chibi/chibi-plushie-prehistoric-diplodocus-a6eff46243.svg",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": true,
+      "galleryFacing": false,
+      "internalOnly": true,
+      "expectedByteSizeRange": {
+        "min": 636424,
+        "max": 703416
+      }
+    },
+    {
+      "assetId": "chibi__chibi-plushie-prehistoric-tyrannosaurus-rex__2f73f2fae2",
+      "displayTitle": "Chibi Plushie Prehistoric Tyrannosaurus Rex",
+      "mediaType": "svg",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/chibi/chibi-plushie-prehistoric-tyrannosaurus-rex-2f73f2fae2.svg",
+      "r2ObjectKey": "coloring-pages/svg/chibi/chibi-plushie-prehistoric-tyrannosaurus-rex-2f73f2fae2.svg",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": true,
+      "galleryFacing": false,
+      "internalOnly": true,
+      "expectedByteSizeRange": {
+        "min": 438220,
+        "max": 484350
+      }
+    },
+    {
+      "assetId": "holiday__holiday-christmas-plushie-baby-dragon-family__b2bcf582a7",
+      "displayTitle": "Holiday Christmas Plushie Baby Dragon Family",
+      "mediaType": "svg",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/holiday/holiday-christmas-plushie-baby-dragon-family-b2bcf582a7.svg",
+      "r2ObjectKey": "coloring-pages/svg/holiday/holiday-christmas-plushie-baby-dragon-family-b2bcf582a7.svg",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": true,
+      "galleryFacing": false,
+      "internalOnly": true,
+      "expectedByteSizeRange": {
+        "min": 343291,
+        "max": 379427
+      }
+    },
+    {
+      "assetId": "holiday__holiday-christmas-plushie-mermaid__f3fb154ad5",
+      "displayTitle": "Holiday Christmas Plushie Mermaid",
+      "mediaType": "svg",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/holiday/holiday-christmas-plushie-mermaid-f3fb154ad5.svg",
+      "r2ObjectKey": "coloring-pages/svg/holiday/holiday-christmas-plushie-mermaid-f3fb154ad5.svg",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": true,
+      "galleryFacing": false,
+      "internalOnly": true,
+      "expectedByteSizeRange": {
+        "min": 209538,
+        "max": 231596
+      }
+    },
+    {
+      "assetId": "indoor-plants__indoor-plants-gerbera-daisy__591cf8e859",
+      "displayTitle": "Indoor Plants Gerbera Daisy",
+      "mediaType": "svg",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/indoor-plants/indoor-plants-gerbera-daisy-591cf8e859.svg",
+      "r2ObjectKey": "coloring-pages/svg/indoor-plants/indoor-plants-gerbera-daisy-591cf8e859.svg",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": true,
+      "galleryFacing": false,
+      "internalOnly": true,
+      "expectedByteSizeRange": {
+        "min": 178569,
+        "max": 197367
+      }
+    },
+    {
+      "assetId": "indoor-plants__indoor-plants-philodendron-pink-princess__ab3e85182b",
+      "displayTitle": "Indoor Plants Philodendron Pink Princess",
+      "mediaType": "svg",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/indoor-plants/indoor-plants-philodendron-pink-princess-ab3e85182b.svg",
+      "r2ObjectKey": "coloring-pages/svg/indoor-plants/indoor-plants-philodendron-pink-princess-ab3e85182b.svg",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": true,
+      "galleryFacing": false,
+      "internalOnly": true,
+      "expectedByteSizeRange": {
+        "min": 265440,
+        "max": 293382
+      }
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-bakery-cutting-board-with-dough__b2b847f8d9",
+      "displayTitle": "Mandala Geometry Patterns Bakery Cutting Board With Dough",
+      "mediaType": "svg",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-bakery-cutting-board-with-dough-b2b847f8d9.svg",
+      "r2ObjectKey": "coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-bakery-cutting-board-with-dough-b2b847f8d9.svg",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": true,
+      "galleryFacing": false,
+      "internalOnly": true,
+      "expectedByteSizeRange": {
+        "min": 187042,
+        "max": 206732
+      }
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-bakery-display-case__922f88ea65",
+      "displayTitle": "Mandala Geometry Patterns Bakery Display Case",
+      "mediaType": "svg",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-bakery-display-case-922f88ea65.svg",
+      "r2ObjectKey": "coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-bakery-display-case-922f88ea65.svg",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": true,
+      "galleryFacing": false,
+      "internalOnly": true,
+      "expectedByteSizeRange": {
+        "min": 325223,
+        "max": 359459
+      }
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-bakery-focaccia__988a6bf6e1",
+      "displayTitle": "Mandala Geometry Patterns Bakery Focaccia",
+      "mediaType": "svg",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-bakery-focaccia-988a6bf6e1.svg",
+      "r2ObjectKey": "coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-bakery-focaccia-988a6bf6e1.svg",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": true,
+      "galleryFacing": false,
+      "internalOnly": true,
+      "expectedByteSizeRange": {
+        "min": 393834,
+        "max": 435292
+      }
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-high-speed-bullet-train-on-__5e359d2a25",
+      "displayTitle": "Mandala Geometry Patterns Trains Locomotives High Speed Bullet Train On Track",
+      "mediaType": "svg",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-high-speed-bullet-train-on--5e359d2a25.svg",
+      "r2ObjectKey": "coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-high-speed-bullet-train-on--5e359d2a25.svg",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": true,
+      "galleryFacing": false,
+      "internalOnly": true,
+      "expectedByteSizeRange": {
+        "min": 410345,
+        "max": 453541
+      }
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-indian-palace-on-wheels-tra__fa10f9553b",
+      "displayTitle": "Mandala Geometry Patterns Trains Locomotives Indian Palace On Wheels Train",
+      "mediaType": "svg",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-indian-palace-on-wheels-tra-fa10f9553b.svg",
+      "r2ObjectKey": "coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-indian-palace-on-wheels-tra-fa10f9553b.svg",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": true,
+      "galleryFacing": false,
+      "internalOnly": true,
+      "expectedByteSizeRange": {
+        "min": 424157,
+        "max": 468807
+      }
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehiacle-cars-pagani-huayra__974ebd3a07",
+      "displayTitle": "Mandala Geometry Patterns Vehiacle Cars Pagani Huayra",
+      "mediaType": "svg",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-cars-pagani-huayra-974ebd3a07.svg",
+      "r2ObjectKey": "coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-cars-pagani-huayra-974ebd3a07.svg",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": true,
+      "galleryFacing": false,
+      "internalOnly": true,
+      "expectedByteSizeRange": {
+        "min": 518298,
+        "max": 572856
+      }
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehiacle-cars-toyota-supra__d87bfd042b",
+      "displayTitle": "Mandala Geometry Patterns Vehiacle Cars Toyota Supra",
+      "mediaType": "svg",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-cars-toyota-supra-d87bfd042b.svg",
+      "r2ObjectKey": "coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-cars-toyota-supra-d87bfd042b.svg",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": true,
+      "galleryFacing": false,
+      "internalOnly": true,
+      "expectedByteSizeRange": {
+        "min": 530278,
+        "max": 586098
+      }
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehiacle-planes-supersonic-jet__bfd2f21c17",
+      "displayTitle": "Mandala Geometry Patterns Vehiacle Planes Supersonic Jet",
+      "mediaType": "svg",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-planes-supersonic-jet-bfd2f21c17.svg",
+      "r2ObjectKey": "coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-planes-supersonic-jet-bfd2f21c17.svg",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/svg+xml",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": true,
+      "galleryFacing": false,
+      "internalOnly": true,
+      "expectedByteSizeRange": {
+        "min": 251222,
+        "max": 277668
+      }
+    },
+    {
+      "assetId": "animals__animals-alligator__4feec8505a",
+      "displayTitle": "Animals Alligator",
+      "mediaType": "webp",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+      "r2ObjectKey": "coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/webp",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": false,
+      "galleryFacing": true,
+      "internalOnly": false,
+      "expectedByteSizeRange": {
+        "min": 46916,
+        "max": 51856
+      }
+    },
+    {
+      "assetId": "anime-girls__anime-girl-ankylosaurus-hoodie-plushie__eb8de86d73",
+      "displayTitle": "Anime Girl Ankylosaurus Hoodie Plushie",
+      "mediaType": "webp",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-eb8de86d73.webp",
+      "r2ObjectKey": "coloring-pages/webp/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-eb8de86d73.webp",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/webp",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": false,
+      "galleryFacing": true,
+      "internalOnly": false,
+      "expectedByteSizeRange": {
+        "min": 39493,
+        "max": 43651
+      }
+    },
+    {
+      "assetId": "anime-girls__anime-girl-brachiosaurus-hoodie-plushie__a676a7c044",
+      "displayTitle": "Anime Girl Brachiosaurus Hoodie Plushie",
+      "mediaType": "webp",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-a676a7c044.webp",
+      "r2ObjectKey": "coloring-pages/webp/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-a676a7c044.webp",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/webp",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": false,
+      "galleryFacing": true,
+      "internalOnly": false,
+      "expectedByteSizeRange": {
+        "min": 34724,
+        "max": 38380
+      }
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dragon-eggs-hoodie-plushie__b1747e4988",
+      "displayTitle": "Anime Girl Dragon Eggs Hoodie Plushie",
+      "mediaType": "webp",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/anime-girls/anime-girl-dragon-eggs-hoodie-plushie-b1747e4988.webp",
+      "r2ObjectKey": "coloring-pages/webp/anime-girls/anime-girl-dragon-eggs-hoodie-plushie-b1747e4988.webp",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/webp",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": false,
+      "galleryFacing": true,
+      "internalOnly": false,
+      "expectedByteSizeRange": {
+        "min": 38370,
+        "max": 42410
+      }
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dragon-eggs-hoodie-plushie__f41a8578b5",
+      "displayTitle": "Anime Girl Dragon Eggs Hoodie Plushie",
+      "mediaType": "webp",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/anime-girls/anime-girl-dragon-eggs-hoodie-plushie-f41a8578b5.webp",
+      "r2ObjectKey": "coloring-pages/webp/anime-girls/anime-girl-dragon-eggs-hoodie-plushie-f41a8578b5.webp",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/webp",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": false,
+      "galleryFacing": true,
+      "internalOnly": false,
+      "expectedByteSizeRange": {
+        "min": 44712,
+        "max": 49420
+      }
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dragon-hoodie-plushie__0492bac704",
+      "displayTitle": "Anime Girl Dragon Hoodie Plushie",
+      "mediaType": "webp",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/anime-girls/anime-girl-dragon-hoodie-plushie-0492bac704.webp",
+      "r2ObjectKey": "coloring-pages/webp/anime-girls/anime-girl-dragon-hoodie-plushie-0492bac704.webp",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/webp",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": false,
+      "galleryFacing": true,
+      "internalOnly": false,
+      "expectedByteSizeRange": {
+        "min": 41159,
+        "max": 45493
+      }
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dragon-queen__8c2e2a124f",
+      "displayTitle": "Anime Girl Dragon Queen",
+      "mediaType": "webp",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/anime-girls/anime-girl-dragon-queen-8c2e2a124f.webp",
+      "r2ObjectKey": "coloring-pages/webp/anime-girls/anime-girl-dragon-queen-8c2e2a124f.webp",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/webp",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": false,
+      "galleryFacing": true,
+      "internalOnly": false,
+      "expectedByteSizeRange": {
+        "min": 47351,
+        "max": 52337
+      }
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dragon-queen__d532fdf0fd",
+      "displayTitle": "Anime Girl Dragon Queen",
+      "mediaType": "webp",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/anime-girls/anime-girl-dragon-queen-d532fdf0fd.webp",
+      "r2ObjectKey": "coloring-pages/webp/anime-girls/anime-girl-dragon-queen-d532fdf0fd.webp",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/webp",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": false,
+      "galleryFacing": true,
+      "internalOnly": false,
+      "expectedByteSizeRange": {
+        "min": 40511,
+        "max": 44777
+      }
+    },
+    {
+      "assetId": "anime-girls__anime-girl-saber-toothed-tiger-hoodie-plushie__14e1ec01ad",
+      "displayTitle": "Anime Girl Saber Toothed Tiger Hoodie Plushie",
+      "mediaType": "webp",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/anime-girls/anime-girl-saber-toothed-tiger-hoodie-plushie-14e1ec01ad.webp",
+      "r2ObjectKey": "coloring-pages/webp/anime-girls/anime-girl-saber-toothed-tiger-hoodie-plushie-14e1ec01ad.webp",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/webp",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": false,
+      "galleryFacing": true,
+      "internalOnly": false,
+      "expectedByteSizeRange": {
+        "min": 40789,
+        "max": 45083
+      }
+    },
+    {
+      "assetId": "anime-girls__anime-girl-stegosaurus-hoodie-plushie__1d07718adb",
+      "displayTitle": "Anime Girl Stegosaurus Hoodie Plushie",
+      "mediaType": "webp",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/anime-girls/anime-girl-stegosaurus-hoodie-plushie-1d07718adb.webp",
+      "r2ObjectKey": "coloring-pages/webp/anime-girls/anime-girl-stegosaurus-hoodie-plushie-1d07718adb.webp",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/webp",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": false,
+      "galleryFacing": true,
+      "internalOnly": false,
+      "expectedByteSizeRange": {
+        "min": 43947,
+        "max": 48573
+      }
+    },
+    {
+      "assetId": "chibi__chibi-decaying-dragon__b4bbf97bf0",
+      "displayTitle": "Chibi Decaying Dragon",
+      "mediaType": "webp",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/chibi/chibi-decaying-dragon-b4bbf97bf0.webp",
+      "r2ObjectKey": "coloring-pages/webp/chibi/chibi-decaying-dragon-b4bbf97bf0.webp",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/webp",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": false,
+      "galleryFacing": true,
+      "internalOnly": false,
+      "expectedByteSizeRange": {
+        "min": 45254,
+        "max": 50018
+      }
+    },
+    {
+      "assetId": "chibi__chibi-dungeon-baby-dragon-in-nest__cde9ddcc12",
+      "displayTitle": "Chibi Dungeon Baby Dragon In Nest",
+      "mediaType": "webp",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/chibi/chibi-dungeon-baby-dragon-in-nest-cde9ddcc12.webp",
+      "r2ObjectKey": "coloring-pages/webp/chibi/chibi-dungeon-baby-dragon-in-nest-cde9ddcc12.webp",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/webp",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": false,
+      "galleryFacing": true,
+      "internalOnly": false,
+      "expectedByteSizeRange": {
+        "min": 45539,
+        "max": 50333
+      }
+    },
+    {
+      "assetId": "chibi__chibi-flowers-carnation__1b5fa00e2d",
+      "displayTitle": "Chibi Flowers Carnation",
+      "mediaType": "webp",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/chibi/chibi-flowers-carnation-1b5fa00e2d.webp",
+      "r2ObjectKey": "coloring-pages/webp/chibi/chibi-flowers-carnation-1b5fa00e2d.webp",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/webp",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": false,
+      "galleryFacing": true,
+      "internalOnly": false,
+      "expectedByteSizeRange": {
+        "min": 46969,
+        "max": 51915
+      }
+    },
+    {
+      "assetId": "chibi__chibi-flowers-celosia__e0a426bf9d",
+      "displayTitle": "Chibi Flowers Celosia",
+      "mediaType": "webp",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/chibi/chibi-flowers-celosia-e0a426bf9d.webp",
+      "r2ObjectKey": "coloring-pages/webp/chibi/chibi-flowers-celosia-e0a426bf9d.webp",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/webp",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": false,
+      "galleryFacing": true,
+      "internalOnly": false,
+      "expectedByteSizeRange": {
+        "min": 39863,
+        "max": 44061
+      }
+    },
+    {
+      "assetId": "chibi__chibi-holiday-halloween-pumpkin-patch-with-family-picking-pumpkins-color__01c2f0ce30",
+      "displayTitle": "Chibi Holiday Halloween Pumpkin Patch With Family Picking Pumpkins Coloring Page",
+      "mediaType": "webp",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/chibi/chibi-holiday-halloween-pumpkin-patch-with-family-picking-pumpkins-color-01c2f0ce30.webp",
+      "r2ObjectKey": "coloring-pages/webp/chibi/chibi-holiday-halloween-pumpkin-patch-with-family-picking-pumpkins-color-01c2f0ce30.webp",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/webp",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": false,
+      "galleryFacing": true,
+      "internalOnly": false,
+      "expectedByteSizeRange": {
+        "min": 55248,
+        "max": 61064
+      }
+    },
+    {
+      "assetId": "chibi__chibi-holiday-halloween-pumpkin-pie-and-spice-decor-scene-coloring-page__7d3c695c2b",
+      "displayTitle": "Chibi Holiday Halloween Pumpkin Pie And Spice Decor Scene Coloring Page",
+      "mediaType": "webp",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/chibi/chibi-holiday-halloween-pumpkin-pie-and-spice-decor-scene-coloring-page-7d3c695c2b.webp",
+      "r2ObjectKey": "coloring-pages/webp/chibi/chibi-holiday-halloween-pumpkin-pie-and-spice-decor-scene-coloring-page-7d3c695c2b.webp",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/webp",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": false,
+      "galleryFacing": true,
+      "internalOnly": false,
+      "expectedByteSizeRange": {
+        "min": 40071,
+        "max": 44289
+      }
+    },
+    {
+      "assetId": "chibi__chibi-plushie-prehistoric-diplodocus__a6eff46243",
+      "displayTitle": "Chibi Plushie Prehistoric Diplodocus",
+      "mediaType": "webp",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/chibi/chibi-plushie-prehistoric-diplodocus-a6eff46243.webp",
+      "r2ObjectKey": "coloring-pages/webp/chibi/chibi-plushie-prehistoric-diplodocus-a6eff46243.webp",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/webp",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": false,
+      "galleryFacing": true,
+      "internalOnly": false,
+      "expectedByteSizeRange": {
+        "min": 46911,
+        "max": 51849
+      }
+    },
+    {
+      "assetId": "chibi__chibi-plushie-prehistoric-tyrannosaurus-rex__2f73f2fae2",
+      "displayTitle": "Chibi Plushie Prehistoric Tyrannosaurus Rex",
+      "mediaType": "webp",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/chibi/chibi-plushie-prehistoric-tyrannosaurus-rex-2f73f2fae2.webp",
+      "r2ObjectKey": "coloring-pages/webp/chibi/chibi-plushie-prehistoric-tyrannosaurus-rex-2f73f2fae2.webp",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/webp",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": false,
+      "galleryFacing": true,
+      "internalOnly": false,
+      "expectedByteSizeRange": {
+        "min": 45723,
+        "max": 50537
+      }
+    },
+    {
+      "assetId": "holiday__holiday-christmas-plushie-baby-dragon-family__b2bcf582a7",
+      "displayTitle": "Holiday Christmas Plushie Baby Dragon Family",
+      "mediaType": "webp",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/holiday/holiday-christmas-plushie-baby-dragon-family-b2bcf582a7.webp",
+      "r2ObjectKey": "coloring-pages/webp/holiday/holiday-christmas-plushie-baby-dragon-family-b2bcf582a7.webp",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/webp",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": false,
+      "galleryFacing": true,
+      "internalOnly": false,
+      "expectedByteSizeRange": {
+        "min": 49481,
+        "max": 54691
+      }
+    },
+    {
+      "assetId": "holiday__holiday-christmas-plushie-mermaid__f3fb154ad5",
+      "displayTitle": "Holiday Christmas Plushie Mermaid",
+      "mediaType": "webp",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/holiday/holiday-christmas-plushie-mermaid-f3fb154ad5.webp",
+      "r2ObjectKey": "coloring-pages/webp/holiday/holiday-christmas-plushie-mermaid-f3fb154ad5.webp",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/webp",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": false,
+      "galleryFacing": true,
+      "internalOnly": false,
+      "expectedByteSizeRange": {
+        "min": 36037,
+        "max": 39831
+      }
+    },
+    {
+      "assetId": "indoor-plants__indoor-plants-gerbera-daisy__591cf8e859",
+      "displayTitle": "Indoor Plants Gerbera Daisy",
+      "mediaType": "webp",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/indoor-plants/indoor-plants-gerbera-daisy-591cf8e859.webp",
+      "r2ObjectKey": "coloring-pages/webp/indoor-plants/indoor-plants-gerbera-daisy-591cf8e859.webp",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/webp",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": false,
+      "galleryFacing": true,
+      "internalOnly": false,
+      "expectedByteSizeRange": {
+        "min": 40186,
+        "max": 44418
+      }
+    },
+    {
+      "assetId": "indoor-plants__indoor-plants-philodendron-pink-princess__ab3e85182b",
+      "displayTitle": "Indoor Plants Philodendron Pink Princess",
+      "mediaType": "webp",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/indoor-plants/indoor-plants-philodendron-pink-princess-ab3e85182b.webp",
+      "r2ObjectKey": "coloring-pages/webp/indoor-plants/indoor-plants-philodendron-pink-princess-ab3e85182b.webp",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/webp",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": false,
+      "galleryFacing": true,
+      "internalOnly": false,
+      "expectedByteSizeRange": {
+        "min": 43255,
+        "max": 47809
+      }
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-bakery-cutting-board-with-dough__b2b847f8d9",
+      "displayTitle": "Mandala Geometry Patterns Bakery Cutting Board With Dough",
+      "mediaType": "webp",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-bakery-cutting-board-with-dough-b2b847f8d9.webp",
+      "r2ObjectKey": "coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-bakery-cutting-board-with-dough-b2b847f8d9.webp",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/webp",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": false,
+      "galleryFacing": true,
+      "internalOnly": false,
+      "expectedByteSizeRange": {
+        "min": 45755,
+        "max": 50573
+      }
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-bakery-display-case__922f88ea65",
+      "displayTitle": "Mandala Geometry Patterns Bakery Display Case",
+      "mediaType": "webp",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-bakery-display-case-922f88ea65.webp",
+      "r2ObjectKey": "coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-bakery-display-case-922f88ea65.webp",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/webp",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": false,
+      "galleryFacing": true,
+      "internalOnly": false,
+      "expectedByteSizeRange": {
+        "min": 62584,
+        "max": 69172
+      }
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-bakery-focaccia__988a6bf6e1",
+      "displayTitle": "Mandala Geometry Patterns Bakery Focaccia",
+      "mediaType": "webp",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-bakery-focaccia-988a6bf6e1.webp",
+      "r2ObjectKey": "coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-bakery-focaccia-988a6bf6e1.webp",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/webp",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": false,
+      "galleryFacing": true,
+      "internalOnly": false,
+      "expectedByteSizeRange": {
+        "min": 68092,
+        "max": 75260
+      }
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-high-speed-bullet-train-on-__5e359d2a25",
+      "displayTitle": "Mandala Geometry Patterns Trains Locomotives High Speed Bullet Train On Track",
+      "mediaType": "webp",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-high-speed-bullet-train-on--5e359d2a25.webp",
+      "r2ObjectKey": "coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-high-speed-bullet-train-on--5e359d2a25.webp",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/webp",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": false,
+      "galleryFacing": true,
+      "internalOnly": false,
+      "expectedByteSizeRange": {
+        "min": 66121,
+        "max": 73083
+      }
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-indian-palace-on-wheels-tra__fa10f9553b",
+      "displayTitle": "Mandala Geometry Patterns Trains Locomotives Indian Palace On Wheels Train",
+      "mediaType": "webp",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-indian-palace-on-wheels-tra-fa10f9553b.webp",
+      "r2ObjectKey": "coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-indian-palace-on-wheels-tra-fa10f9553b.webp",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/webp",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": false,
+      "galleryFacing": true,
+      "internalOnly": false,
+      "expectedByteSizeRange": {
+        "min": 73854,
+        "max": 81630
+      }
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehiacle-cars-pagani-huayra__974ebd3a07",
+      "displayTitle": "Mandala Geometry Patterns Vehiacle Cars Pagani Huayra",
+      "mediaType": "webp",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-cars-pagani-huayra-974ebd3a07.webp",
+      "r2ObjectKey": "coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-cars-pagani-huayra-974ebd3a07.webp",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/webp",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": false,
+      "galleryFacing": true,
+      "internalOnly": false,
+      "expectedByteSizeRange": {
+        "min": 70826,
+        "max": 78282
+      }
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehiacle-cars-toyota-supra__d87bfd042b",
+      "displayTitle": "Mandala Geometry Patterns Vehiacle Cars Toyota Supra",
+      "mediaType": "webp",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-cars-toyota-supra-d87bfd042b.webp",
+      "r2ObjectKey": "coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-cars-toyota-supra-d87bfd042b.webp",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/webp",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": false,
+      "galleryFacing": true,
+      "internalOnly": false,
+      "expectedByteSizeRange": {
+        "min": 67636,
+        "max": 74756
+      }
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehiacle-planes-supersonic-jet__bfd2f21c17",
+      "displayTitle": "Mandala Geometry Patterns Vehiacle Planes Supersonic Jet",
+      "mediaType": "webp",
+      "url": "https://YOUR-ASSET-DOMAIN.com/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-planes-supersonic-jet-bfd2f21c17.webp",
+      "r2ObjectKey": "coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-planes-supersonic-jet-bfd2f21c17.webp",
+      "expectedHttpStatus": 200,
+      "expectedContentType": "image/webp",
+      "expectedCacheControl": "public, max-age=31536000, immutable",
+      "expectedCorsRequired": false,
+      "galleryFacing": true,
+      "internalOnly": false,
+      "expectedByteSizeRange": {
+        "min": 55715,
+        "max": 61581
+      }
+    }
+  ]
+}

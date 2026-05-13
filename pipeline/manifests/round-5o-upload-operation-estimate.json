@@ -1,0 +1,19 @@
+{
+  "generatedAt": "2026-05-13T04:54:33.529Z",
+  "runId": "round-5o-upload-operation-estimate",
+  "summary": {
+    "putObjectOperations": 12704,
+    "headObjectOperationsWithSkipExisting": 12704,
+    "uploadSource": "optimized",
+    "uploadSourceRoot": "pipeline/r2-upload-optimized/coloring-pages",
+    "totalUploadBytes": 1495772065,
+    "expectedTotalStorageGB": 1.496,
+    "classAOperationCountEstimate": 12704,
+    "classBOperationCountEstimate": 12704,
+    "deleteOperations": 0,
+    "repeatedRerunRisk": "Repeated full uploads without --skip-existing can repeat all PutObject operations and transfer the full bundle again.",
+    "dryRunShouldBeReviewedFirst": true,
+    "limit10SmokeUploadUsefulOnlyIfOwnerChooses": true,
+    "noDeleteOperationIncluded": true
+  }
+}

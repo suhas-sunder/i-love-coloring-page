@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-05-12T03:42:48.403Z",
+  "runId": "round-5g-cors-failure-audit",
+  "summary": {
+    "round5fSvgCorsPassed": false,
+    "round5fVerifierSentOriginHeaders": true,
+    "round5fMissingAccessControlAllowOriginCount": 30,
+    "missingAcaoCouldHaveBeenBareRequestArtifact": false,
+    "round5fBrowserQaMadeCrossOriginImageRequest": true,
+    "round5fBrowserCanvasExportPassed": false,
+    "r2CorsNowExpectedConfigured": true,
+    "cacheRefreshMayBeNeededAfterCorsChange": true
+  },
+  "originsRequiredForRound5g": [
+    "http://localhost:3005",
+    "http://127.0.0.1:3005"
+  ],
+  "previousRoundEvidence": {
+    "urlStatus": "completed",
+    "svgContentTypePassCount": 30,
+    "webpContentTypePassCount": 30,
+    "svgCorsHeaderPassCount": 0
+  },
+  "decision": "Round 5F did send an Origin header for URL/CORS checks, so missing Access-Control-Allow-Origin was not caused by a bare non-CORS request in that verifier."
+}

@@ -1,0 +1,4064 @@
+{
+  "generatedAt": "2026-05-11T05:40:22.665Z",
+  "runId": "round-4u-ad-density",
+  "status": "passed",
+  "localAppUrl": "http://127.0.0.1:3005",
+  "localMediaBaseUrl": "http://127.0.0.1:4175/coloring-pages",
+  "nextPublicShowAdPlaceholders": null,
+  "pagesInspected": [
+    "/",
+    "/coloring-pages",
+    "/coloring-pages/animals",
+    "/coloring-pages/christmas",
+    "/coloring-pages/geometric"
+  ],
+  "viewportsInspected": [
+    {
+      "label": "mobile-390",
+      "width": 390,
+      "height": 844,
+      "screenshotGroup": "mobile"
+    },
+    {
+      "label": "mobile-430",
+      "width": 430,
+      "height": 932,
+      "screenshotGroup": "mobile"
+    },
+    {
+      "label": "tablet-768",
+      "width": 768,
+      "height": 1024,
+      "screenshotGroup": "tablet"
+    },
+    {
+      "label": "landscape-1024",
+      "width": 1024,
+      "height": 900,
+      "screenshotGroup": "tablet"
+    },
+    {
+      "label": "desktop-1280",
+      "width": 1280,
+      "height": 900,
+      "screenshotGroup": "desktop"
+    },
+    {
+      "label": "desktop-1440",
+      "width": 1440,
+      "height": 960,
+      "screenshotGroup": "desktop"
+    },
+    {
+      "label": "wide-1920",
+      "width": 1920,
+      "height": 1080,
+      "screenshotGroup": "wide-desktop"
+    },
+    {
+      "label": "ultra-2560",
+      "width": 2560,
+      "height": 1440,
+      "screenshotGroup": "wide-desktop"
+    }
+  ],
+  "screenshotRoots": {
+    "adDensity": "pipeline/review/round-4u/screenshots/ad-density",
+    "mobile": "pipeline/review/round-4u/screenshots/mobile",
+    "tablet": "pipeline/review/round-4u/screenshots/tablet",
+    "desktop": "pipeline/review/round-4u/screenshots/desktop",
+    "wideDesktop": "pipeline/review/round-4u/screenshots/wide-desktop",
+    "overflow": "pipeline/review/round-4u/screenshots/overflow"
+  },
+  "pages": [
+    {
+      "pagePath": "/",
+      "pageType": "home",
+      "viewport": {
+        "label": "mobile-390",
+        "width": 390,
+        "height": 844,
+        "screenshotGroup": "mobile"
+      },
+      "mediaState": {
+        "loadedImageCount": 12,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 390,
+        "documentScrollWidth": 390,
+        "bodyScrollWidth": 390,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 1,
+        "visibleAdvertisementLabelCount": 1,
+        "expectedVisiblePlaceholderCount": 1,
+        "expectedVisibleSlotIds": [
+          "home-after-hero"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "home-after-hero",
+            "className": "ad-slot ad-slot-inline ad-slot-fluid-inline",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 350,
+            "height": 120,
+            "top": 1270.125,
+            "bottom": 1390.125
+          }
+        ],
+        "visibleSlotIds": [
+          "home-after-hero"
+        ],
+        "headerBannerVisible": false,
+        "mobileLowerBannerVisible": true,
+        "lowerContentVisible": false,
+        "leftRailVisible": false,
+        "rightRailVisible": false,
+        "leftGap": 20,
+        "rightGap": -370
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/home-mobile-390.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/mobile/home-mobile-390.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/home-mobile-390.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/",
+      "pageType": "home",
+      "viewport": {
+        "label": "mobile-430",
+        "width": 430,
+        "height": 932,
+        "screenshotGroup": "mobile"
+      },
+      "mediaState": {
+        "loadedImageCount": 12,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 430,
+        "documentScrollWidth": 430,
+        "bodyScrollWidth": 430,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 1,
+        "visibleAdvertisementLabelCount": 1,
+        "expectedVisiblePlaceholderCount": 1,
+        "expectedVisibleSlotIds": [
+          "home-after-hero"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "home-after-hero",
+            "className": "ad-slot ad-slot-inline ad-slot-fluid-inline",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 390,
+            "height": 120,
+            "top": 1278.265625,
+            "bottom": 1398.265625
+          }
+        ],
+        "visibleSlotIds": [
+          "home-after-hero"
+        ],
+        "headerBannerVisible": false,
+        "mobileLowerBannerVisible": true,
+        "lowerContentVisible": false,
+        "leftRailVisible": false,
+        "rightRailVisible": false,
+        "leftGap": 20,
+        "rightGap": -410
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/home-mobile-430.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/mobile/home-mobile-430.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/home-mobile-430.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/",
+      "pageType": "home",
+      "viewport": {
+        "label": "tablet-768",
+        "width": 768,
+        "height": 1024,
+        "screenshotGroup": "tablet"
+      },
+      "mediaState": {
+        "loadedImageCount": 14,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 768,
+        "documentScrollWidth": 768,
+        "bodyScrollWidth": 768,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 1,
+        "visibleAdvertisementLabelCount": 1,
+        "expectedVisiblePlaceholderCount": 1,
+        "expectedVisibleSlotIds": [
+          "home-after-hero"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "home-after-hero",
+            "className": "ad-slot ad-slot-inline ad-slot-fluid-inline",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 706.546875,
+            "height": 120,
+            "top": 1057.03125,
+            "bottom": 1177.03125
+          }
+        ],
+        "visibleSlotIds": [
+          "home-after-hero"
+        ],
+        "headerBannerVisible": false,
+        "mobileLowerBannerVisible": true,
+        "lowerContentVisible": false,
+        "leftRailVisible": false,
+        "rightRailVisible": false,
+        "leftGap": 30.71875,
+        "rightGap": -737.265625
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/home-tablet-768.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/tablet/home-tablet-768.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/home-tablet-768.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/",
+      "pageType": "home",
+      "viewport": {
+        "label": "landscape-1024",
+        "width": 1024,
+        "height": 900,
+        "screenshotGroup": "tablet"
+      },
+      "mediaState": {
+        "loadedImageCount": 14,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 1024,
+        "documentScrollWidth": 1024,
+        "bodyScrollWidth": 1024,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 1,
+        "visibleAdvertisementLabelCount": 1,
+        "expectedVisiblePlaceholderCount": 1,
+        "expectedVisibleSlotIds": [
+          "home-after-hero"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "home-after-hero",
+            "className": "ad-slot ad-slot-inline ad-slot-fluid-inline",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 960,
+            "height": 120,
+            "top": 533,
+            "bottom": 653
+          }
+        ],
+        "visibleSlotIds": [
+          "home-after-hero"
+        ],
+        "headerBannerVisible": false,
+        "mobileLowerBannerVisible": true,
+        "lowerContentVisible": false,
+        "leftRailVisible": false,
+        "rightRailVisible": false,
+        "leftGap": 32,
+        "rightGap": -992
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/home-landscape-1024.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/tablet/home-landscape-1024.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/home-landscape-1024.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/",
+      "pageType": "home",
+      "viewport": {
+        "label": "desktop-1280",
+        "width": 1280,
+        "height": 900,
+        "screenshotGroup": "desktop"
+      },
+      "mediaState": {
+        "loadedImageCount": 14,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 1280,
+        "documentScrollWidth": 1280,
+        "bodyScrollWidth": 1280,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 1,
+        "visibleAdvertisementLabelCount": 1,
+        "expectedVisiblePlaceholderCount": 1,
+        "expectedVisibleSlotIds": [
+          "home-header-banner"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "home-header-banner",
+            "className": "ad-slot ad-slot-header-banner ad-slot-responsive-banner",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 1216,
+            "height": 92,
+            "top": 80,
+            "bottom": 172
+          }
+        ],
+        "visibleSlotIds": [
+          "home-header-banner"
+        ],
+        "headerBannerVisible": true,
+        "mobileLowerBannerVisible": false,
+        "lowerContentVisible": false,
+        "leftRailVisible": false,
+        "rightRailVisible": false,
+        "leftGap": 32,
+        "rightGap": -1248
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/home-desktop-1280.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/desktop/home-desktop-1280.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/home-desktop-1280.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/",
+      "pageType": "home",
+      "viewport": {
+        "label": "desktop-1440",
+        "width": 1440,
+        "height": 960,
+        "screenshotGroup": "desktop"
+      },
+      "mediaState": {
+        "loadedImageCount": 14,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 1440,
+        "documentScrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 1,
+        "visibleAdvertisementLabelCount": 1,
+        "expectedVisiblePlaceholderCount": 1,
+        "expectedVisibleSlotIds": [
+          "home-header-banner"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "home-header-banner",
+            "className": "ad-slot ad-slot-header-banner ad-slot-responsive-banner",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 1240,
+            "height": 92,
+            "top": 80,
+            "bottom": 172
+          }
+        ],
+        "visibleSlotIds": [
+          "home-header-banner"
+        ],
+        "headerBannerVisible": true,
+        "mobileLowerBannerVisible": false,
+        "lowerContentVisible": false,
+        "leftRailVisible": false,
+        "rightRailVisible": false,
+        "leftGap": 100,
+        "rightGap": -1340
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/home-desktop-1440.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/desktop/home-desktop-1440.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/home-desktop-1440.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/",
+      "pageType": "home",
+      "viewport": {
+        "label": "wide-1920",
+        "width": 1920,
+        "height": 1080,
+        "screenshotGroup": "wide-desktop"
+      },
+      "mediaState": {
+        "loadedImageCount": 14,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 1920,
+        "documentScrollWidth": 1920,
+        "bodyScrollWidth": 1920,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 3,
+        "visibleAdvertisementLabelCount": 3,
+        "expectedVisiblePlaceholderCount": 3,
+        "expectedVisibleSlotIds": [
+          "home-header-banner",
+          "rail-left-desktop",
+          "rail-right-desktop"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "home-header-banner",
+            "className": "ad-slot ad-slot-header-banner ad-slot-responsive-banner",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 1240,
+            "height": 92,
+            "top": 80,
+            "bottom": 172
+          },
+          {
+            "slotId": "rail-left-desktop",
+            "className": "ad-slot ad-slot-desktop-rail ad-slot-side-rail",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 160,
+            "height": 600,
+            "top": 160,
+            "bottom": 760
+          },
+          {
+            "slotId": "rail-right-desktop",
+            "className": "ad-slot ad-slot-desktop-rail ad-slot-side-rail",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 160,
+            "height": 600,
+            "top": 160,
+            "bottom": 760
+          }
+        ],
+        "visibleSlotIds": [
+          "home-header-banner",
+          "rail-left-desktop",
+          "rail-right-desktop"
+        ],
+        "headerBannerVisible": true,
+        "mobileLowerBannerVisible": false,
+        "lowerContentVisible": false,
+        "leftRailVisible": true,
+        "rightRailVisible": true,
+        "leftGap": 48,
+        "rightGap": 48
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/home-wide-1920.png",
+          "visibleAdvertisementLabelCount": 3,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/wide-desktop/home-wide-1920.png",
+          "visibleAdvertisementLabelCount": 3,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/home-wide-1920.png",
+          "visibleAdvertisementLabelCount": 3,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/",
+      "pageType": "home",
+      "viewport": {
+        "label": "ultra-2560",
+        "width": 2560,
+        "height": 1440,
+        "screenshotGroup": "wide-desktop"
+      },
+      "mediaState": {
+        "loadedImageCount": 14,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 2560,
+        "documentScrollWidth": 2560,
+        "bodyScrollWidth": 2560,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 3,
+        "visibleAdvertisementLabelCount": 3,
+        "expectedVisiblePlaceholderCount": 3,
+        "expectedVisibleSlotIds": [
+          "home-header-banner",
+          "rail-left-desktop",
+          "rail-right-desktop"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "home-header-banner",
+            "className": "ad-slot ad-slot-header-banner ad-slot-responsive-banner",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 1240,
+            "height": 92,
+            "top": 80,
+            "bottom": 172
+          },
+          {
+            "slotId": "rail-left-desktop",
+            "className": "ad-slot ad-slot-desktop-rail ad-slot-side-rail",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 160,
+            "height": 600,
+            "top": 160,
+            "bottom": 760
+          },
+          {
+            "slotId": "rail-right-desktop",
+            "className": "ad-slot ad-slot-desktop-rail ad-slot-side-rail",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 160,
+            "height": 600,
+            "top": 160,
+            "bottom": 760
+          }
+        ],
+        "visibleSlotIds": [
+          "home-header-banner",
+          "rail-left-desktop",
+          "rail-right-desktop"
+        ],
+        "headerBannerVisible": true,
+        "mobileLowerBannerVisible": false,
+        "lowerContentVisible": false,
+        "leftRailVisible": true,
+        "rightRailVisible": true,
+        "leftGap": 48,
+        "rightGap": 48
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/home-ultra-2560.png",
+          "visibleAdvertisementLabelCount": 3,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/wide-desktop/home-ultra-2560.png",
+          "visibleAdvertisementLabelCount": 3,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/home-ultra-2560.png",
+          "visibleAdvertisementLabelCount": 3,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages",
+      "pageType": "galleryLanding",
+      "viewport": {
+        "label": "mobile-390",
+        "width": 390,
+        "height": 844,
+        "screenshotGroup": "mobile"
+      },
+      "mediaState": {
+        "loadedImageCount": 16,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 390,
+        "documentScrollWidth": 390,
+        "bodyScrollWidth": 390,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 1,
+        "visibleAdvertisementLabelCount": 1,
+        "expectedVisiblePlaceholderCount": 1,
+        "expectedVisibleSlotIds": [
+          "coloring-pages-after-featured"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "coloring-pages-after-featured",
+            "className": "ad-slot ad-slot-inline ad-slot-fluid-inline",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 350,
+            "height": 120,
+            "top": 8071.5,
+            "bottom": 8191.5
+          }
+        ],
+        "visibleSlotIds": [
+          "coloring-pages-after-featured"
+        ],
+        "headerBannerVisible": false,
+        "mobileLowerBannerVisible": true,
+        "lowerContentVisible": false,
+        "leftRailVisible": false,
+        "rightRailVisible": false,
+        "leftGap": 20,
+        "rightGap": -370
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-mobile-390.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/mobile/coloring-pages-mobile-390.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-mobile-390.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages",
+      "pageType": "galleryLanding",
+      "viewport": {
+        "label": "mobile-430",
+        "width": 430,
+        "height": 932,
+        "screenshotGroup": "mobile"
+      },
+      "mediaState": {
+        "loadedImageCount": 16,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 430,
+        "documentScrollWidth": 430,
+        "bodyScrollWidth": 430,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 1,
+        "visibleAdvertisementLabelCount": 1,
+        "expectedVisiblePlaceholderCount": 1,
+        "expectedVisibleSlotIds": [
+          "coloring-pages-after-featured"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "coloring-pages-after-featured",
+            "className": "ad-slot ad-slot-inline ad-slot-fluid-inline",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 390,
+            "height": 120,
+            "top": 8733.859375,
+            "bottom": 8853.859375
+          }
+        ],
+        "visibleSlotIds": [
+          "coloring-pages-after-featured"
+        ],
+        "headerBannerVisible": false,
+        "mobileLowerBannerVisible": true,
+        "lowerContentVisible": false,
+        "leftRailVisible": false,
+        "rightRailVisible": false,
+        "leftGap": 20,
+        "rightGap": -410
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-mobile-430.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/mobile/coloring-pages-mobile-430.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-mobile-430.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages",
+      "pageType": "galleryLanding",
+      "viewport": {
+        "label": "tablet-768",
+        "width": 768,
+        "height": 1024,
+        "screenshotGroup": "tablet"
+      },
+      "mediaState": {
+        "loadedImageCount": 22,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 768,
+        "documentScrollWidth": 768,
+        "bodyScrollWidth": 768,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 1,
+        "visibleAdvertisementLabelCount": 1,
+        "expectedVisiblePlaceholderCount": 1,
+        "expectedVisibleSlotIds": [
+          "coloring-pages-after-featured"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "coloring-pages-after-featured",
+            "className": "ad-slot ad-slot-inline ad-slot-fluid-inline",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 706.546875,
+            "height": 120,
+            "top": 4608.578125,
+            "bottom": 4728.578125
+          }
+        ],
+        "visibleSlotIds": [
+          "coloring-pages-after-featured"
+        ],
+        "headerBannerVisible": false,
+        "mobileLowerBannerVisible": true,
+        "lowerContentVisible": false,
+        "leftRailVisible": false,
+        "rightRailVisible": false,
+        "leftGap": 30.71875,
+        "rightGap": -737.265625
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-tablet-768.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/tablet/coloring-pages-tablet-768.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-tablet-768.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages",
+      "pageType": "galleryLanding",
+      "viewport": {
+        "label": "landscape-1024",
+        "width": 1024,
+        "height": 900,
+        "screenshotGroup": "tablet"
+      },
+      "mediaState": {
+        "loadedImageCount": 30,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 1024,
+        "documentScrollWidth": 1024,
+        "bodyScrollWidth": 1024,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 1,
+        "visibleAdvertisementLabelCount": 1,
+        "expectedVisiblePlaceholderCount": 1,
+        "expectedVisibleSlotIds": [
+          "coloring-pages-after-featured"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "coloring-pages-after-featured",
+            "className": "ad-slot ad-slot-inline ad-slot-fluid-inline",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 960,
+            "height": 120,
+            "top": 2069.78125,
+            "bottom": 2189.78125
+          }
+        ],
+        "visibleSlotIds": [
+          "coloring-pages-after-featured"
+        ],
+        "headerBannerVisible": false,
+        "mobileLowerBannerVisible": true,
+        "lowerContentVisible": false,
+        "leftRailVisible": false,
+        "rightRailVisible": false,
+        "leftGap": 32,
+        "rightGap": -992
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-landscape-1024.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/tablet/coloring-pages-landscape-1024.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-landscape-1024.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages",
+      "pageType": "galleryLanding",
+      "viewport": {
+        "label": "desktop-1280",
+        "width": 1280,
+        "height": 900,
+        "screenshotGroup": "desktop"
+      },
+      "mediaState": {
+        "loadedImageCount": 26,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 1280,
+        "documentScrollWidth": 1280,
+        "bodyScrollWidth": 1280,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 1,
+        "visibleAdvertisementLabelCount": 1,
+        "expectedVisiblePlaceholderCount": 1,
+        "expectedVisibleSlotIds": [
+          "coloring-pages-header-banner"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "coloring-pages-header-banner",
+            "className": "ad-slot ad-slot-header-banner ad-slot-responsive-banner",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 1216,
+            "height": 92,
+            "top": 80,
+            "bottom": 172
+          }
+        ],
+        "visibleSlotIds": [
+          "coloring-pages-header-banner"
+        ],
+        "headerBannerVisible": true,
+        "mobileLowerBannerVisible": false,
+        "lowerContentVisible": false,
+        "leftRailVisible": false,
+        "rightRailVisible": false,
+        "leftGap": 32,
+        "rightGap": -1248
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-desktop-1280.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/desktop/coloring-pages-desktop-1280.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-desktop-1280.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages",
+      "pageType": "galleryLanding",
+      "viewport": {
+        "label": "desktop-1440",
+        "width": 1440,
+        "height": 960,
+        "screenshotGroup": "desktop"
+      },
+      "mediaState": {
+        "loadedImageCount": 26,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 1440,
+        "documentScrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 1,
+        "visibleAdvertisementLabelCount": 1,
+        "expectedVisiblePlaceholderCount": 1,
+        "expectedVisibleSlotIds": [
+          "coloring-pages-header-banner"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "coloring-pages-header-banner",
+            "className": "ad-slot ad-slot-header-banner ad-slot-responsive-banner",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 1240,
+            "height": 92,
+            "top": 80,
+            "bottom": 172
+          }
+        ],
+        "visibleSlotIds": [
+          "coloring-pages-header-banner"
+        ],
+        "headerBannerVisible": true,
+        "mobileLowerBannerVisible": false,
+        "lowerContentVisible": false,
+        "leftRailVisible": false,
+        "rightRailVisible": false,
+        "leftGap": 100,
+        "rightGap": -1340
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-desktop-1440.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/desktop/coloring-pages-desktop-1440.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-desktop-1440.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages",
+      "pageType": "galleryLanding",
+      "viewport": {
+        "label": "wide-1920",
+        "width": 1920,
+        "height": 1080,
+        "screenshotGroup": "wide-desktop"
+      },
+      "mediaState": {
+        "loadedImageCount": 30,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 1920,
+        "documentScrollWidth": 1920,
+        "bodyScrollWidth": 1920,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 3,
+        "visibleAdvertisementLabelCount": 3,
+        "expectedVisiblePlaceholderCount": 3,
+        "expectedVisibleSlotIds": [
+          "coloring-pages-header-banner",
+          "rail-left-desktop",
+          "rail-right-desktop"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "coloring-pages-header-banner",
+            "className": "ad-slot ad-slot-header-banner ad-slot-responsive-banner",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 1240,
+            "height": 92,
+            "top": 80,
+            "bottom": 172
+          },
+          {
+            "slotId": "rail-left-desktop",
+            "className": "ad-slot ad-slot-desktop-rail ad-slot-side-rail",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 160,
+            "height": 600,
+            "top": 160,
+            "bottom": 760
+          },
+          {
+            "slotId": "rail-right-desktop",
+            "className": "ad-slot ad-slot-desktop-rail ad-slot-side-rail",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 160,
+            "height": 600,
+            "top": 160,
+            "bottom": 760
+          }
+        ],
+        "visibleSlotIds": [
+          "coloring-pages-header-banner",
+          "rail-left-desktop",
+          "rail-right-desktop"
+        ],
+        "headerBannerVisible": true,
+        "mobileLowerBannerVisible": false,
+        "lowerContentVisible": false,
+        "leftRailVisible": true,
+        "rightRailVisible": true,
+        "leftGap": 48,
+        "rightGap": 48
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-wide-1920.png",
+          "visibleAdvertisementLabelCount": 3,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/wide-desktop/coloring-pages-wide-1920.png",
+          "visibleAdvertisementLabelCount": 3,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-wide-1920.png",
+          "visibleAdvertisementLabelCount": 3,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages",
+      "pageType": "galleryLanding",
+      "viewport": {
+        "label": "ultra-2560",
+        "width": 2560,
+        "height": 1440,
+        "screenshotGroup": "wide-desktop"
+      },
+      "mediaState": {
+        "loadedImageCount": 30,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 2560,
+        "documentScrollWidth": 2560,
+        "bodyScrollWidth": 2560,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 3,
+        "visibleAdvertisementLabelCount": 3,
+        "expectedVisiblePlaceholderCount": 3,
+        "expectedVisibleSlotIds": [
+          "coloring-pages-header-banner",
+          "rail-left-desktop",
+          "rail-right-desktop"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "coloring-pages-header-banner",
+            "className": "ad-slot ad-slot-header-banner ad-slot-responsive-banner",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 1240,
+            "height": 92,
+            "top": 80,
+            "bottom": 172
+          },
+          {
+            "slotId": "rail-left-desktop",
+            "className": "ad-slot ad-slot-desktop-rail ad-slot-side-rail",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 160,
+            "height": 600,
+            "top": 160,
+            "bottom": 760
+          },
+          {
+            "slotId": "rail-right-desktop",
+            "className": "ad-slot ad-slot-desktop-rail ad-slot-side-rail",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 160,
+            "height": 600,
+            "top": 160,
+            "bottom": 760
+          }
+        ],
+        "visibleSlotIds": [
+          "coloring-pages-header-banner",
+          "rail-left-desktop",
+          "rail-right-desktop"
+        ],
+        "headerBannerVisible": true,
+        "mobileLowerBannerVisible": false,
+        "lowerContentVisible": false,
+        "leftRailVisible": true,
+        "rightRailVisible": true,
+        "leftGap": 48,
+        "rightGap": 48
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-ultra-2560.png",
+          "visibleAdvertisementLabelCount": 3,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/wide-desktop/coloring-pages-ultra-2560.png",
+          "visibleAdvertisementLabelCount": 3,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-ultra-2560.png",
+          "visibleAdvertisementLabelCount": 3,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages/animals",
+      "pageType": "hubPage",
+      "viewport": {
+        "label": "mobile-390",
+        "width": 390,
+        "height": 844,
+        "screenshotGroup": "mobile"
+      },
+      "mediaState": {
+        "loadedImageCount": 16,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 390,
+        "documentScrollWidth": 390,
+        "bodyScrollWidth": 390,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 1,
+        "visibleAdvertisementLabelCount": 1,
+        "expectedVisiblePlaceholderCount": 1,
+        "expectedVisibleSlotIds": [
+          "hub-after-gallery"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "hub-after-gallery",
+            "className": "ad-slot ad-slot-inline ad-slot-fluid-inline",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 350,
+            "height": 120,
+            "top": 37389.359375,
+            "bottom": 37509.359375
+          }
+        ],
+        "visibleSlotIds": [
+          "hub-after-gallery"
+        ],
+        "headerBannerVisible": false,
+        "mobileLowerBannerVisible": true,
+        "lowerContentVisible": false,
+        "leftRailVisible": false,
+        "rightRailVisible": false,
+        "leftGap": 20,
+        "rightGap": -370
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-animals-mobile-390.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/mobile/coloring-pages-animals-mobile-390.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-animals-mobile-390.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages/animals",
+      "pageType": "hubPage",
+      "viewport": {
+        "label": "mobile-430",
+        "width": 430,
+        "height": 932,
+        "screenshotGroup": "mobile"
+      },
+      "mediaState": {
+        "loadedImageCount": 16,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 430,
+        "documentScrollWidth": 430,
+        "bodyScrollWidth": 430,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 1,
+        "visibleAdvertisementLabelCount": 1,
+        "expectedVisiblePlaceholderCount": 1,
+        "expectedVisibleSlotIds": [
+          "hub-after-gallery"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "hub-after-gallery",
+            "className": "ad-slot ad-slot-inline ad-slot-fluid-inline",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 390,
+            "height": 120,
+            "top": 40603.21875,
+            "bottom": 40723.21875
+          }
+        ],
+        "visibleSlotIds": [
+          "hub-after-gallery"
+        ],
+        "headerBannerVisible": false,
+        "mobileLowerBannerVisible": true,
+        "lowerContentVisible": false,
+        "leftRailVisible": false,
+        "rightRailVisible": false,
+        "leftGap": 20,
+        "rightGap": -410
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-animals-mobile-430.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/mobile/coloring-pages-animals-mobile-430.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-animals-mobile-430.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages/animals",
+      "pageType": "hubPage",
+      "viewport": {
+        "label": "tablet-768",
+        "width": 768,
+        "height": 1024,
+        "screenshotGroup": "tablet"
+      },
+      "mediaState": {
+        "loadedImageCount": 20,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 768,
+        "documentScrollWidth": 768,
+        "bodyScrollWidth": 768,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 1,
+        "visibleAdvertisementLabelCount": 1,
+        "expectedVisiblePlaceholderCount": 1,
+        "expectedVisibleSlotIds": [
+          "hub-after-gallery"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "hub-after-gallery",
+            "className": "ad-slot ad-slot-inline ad-slot-fluid-inline",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 706.546875,
+            "height": 120,
+            "top": 19207.484375,
+            "bottom": 19327.484375
+          }
+        ],
+        "visibleSlotIds": [
+          "hub-after-gallery"
+        ],
+        "headerBannerVisible": false,
+        "mobileLowerBannerVisible": true,
+        "lowerContentVisible": false,
+        "leftRailVisible": false,
+        "rightRailVisible": false,
+        "leftGap": 30.71875,
+        "rightGap": -737.265625
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-animals-tablet-768.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/tablet/coloring-pages-animals-tablet-768.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-animals-tablet-768.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages/animals",
+      "pageType": "hubPage",
+      "viewport": {
+        "label": "landscape-1024",
+        "width": 1024,
+        "height": 900,
+        "screenshotGroup": "tablet"
+      },
+      "mediaState": {
+        "loadedImageCount": 34,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 1024,
+        "documentScrollWidth": 1024,
+        "bodyScrollWidth": 1024,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 1,
+        "visibleAdvertisementLabelCount": 1,
+        "expectedVisiblePlaceholderCount": 1,
+        "expectedVisibleSlotIds": [
+          "hub-after-gallery"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "hub-after-gallery",
+            "className": "ad-slot ad-slot-inline ad-slot-fluid-inline",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 960,
+            "height": 120,
+            "top": 7655.140625,
+            "bottom": 7775.140625
+          }
+        ],
+        "visibleSlotIds": [
+          "hub-after-gallery"
+        ],
+        "headerBannerVisible": false,
+        "mobileLowerBannerVisible": true,
+        "lowerContentVisible": false,
+        "leftRailVisible": false,
+        "rightRailVisible": false,
+        "leftGap": 32,
+        "rightGap": -992
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-animals-landscape-1024.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/tablet/coloring-pages-animals-landscape-1024.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-animals-landscape-1024.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages/animals",
+      "pageType": "hubPage",
+      "viewport": {
+        "label": "desktop-1280",
+        "width": 1280,
+        "height": 900,
+        "screenshotGroup": "desktop"
+      },
+      "mediaState": {
+        "loadedImageCount": 26,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 1280,
+        "documentScrollWidth": 1280,
+        "bodyScrollWidth": 1280,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 1,
+        "visibleAdvertisementLabelCount": 1,
+        "expectedVisiblePlaceholderCount": 1,
+        "expectedVisibleSlotIds": [
+          "hub-header-banner"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "hub-header-banner",
+            "className": "ad-slot ad-slot-header-banner ad-slot-responsive-banner",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 1216,
+            "height": 92,
+            "top": 80,
+            "bottom": 172
+          }
+        ],
+        "visibleSlotIds": [
+          "hub-header-banner"
+        ],
+        "headerBannerVisible": true,
+        "mobileLowerBannerVisible": false,
+        "lowerContentVisible": false,
+        "leftRailVisible": false,
+        "rightRailVisible": false,
+        "leftGap": 32,
+        "rightGap": -1248
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-animals-desktop-1280.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/desktop/coloring-pages-animals-desktop-1280.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-animals-desktop-1280.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages/animals",
+      "pageType": "hubPage",
+      "viewport": {
+        "label": "desktop-1440",
+        "width": 1440,
+        "height": 960,
+        "screenshotGroup": "desktop"
+      },
+      "mediaState": {
+        "loadedImageCount": 26,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 1440,
+        "documentScrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 1,
+        "visibleAdvertisementLabelCount": 1,
+        "expectedVisiblePlaceholderCount": 1,
+        "expectedVisibleSlotIds": [
+          "hub-header-banner"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "hub-header-banner",
+            "className": "ad-slot ad-slot-header-banner ad-slot-responsive-banner",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 1240,
+            "height": 92,
+            "top": 80,
+            "bottom": 172
+          }
+        ],
+        "visibleSlotIds": [
+          "hub-header-banner"
+        ],
+        "headerBannerVisible": true,
+        "mobileLowerBannerVisible": false,
+        "lowerContentVisible": false,
+        "leftRailVisible": false,
+        "rightRailVisible": false,
+        "leftGap": 100,
+        "rightGap": -1340
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-animals-desktop-1440.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/desktop/coloring-pages-animals-desktop-1440.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-animals-desktop-1440.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages/animals",
+      "pageType": "hubPage",
+      "viewport": {
+        "label": "wide-1920",
+        "width": 1920,
+        "height": 1080,
+        "screenshotGroup": "wide-desktop"
+      },
+      "mediaState": {
+        "loadedImageCount": 30,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 1920,
+        "documentScrollWidth": 1920,
+        "bodyScrollWidth": 1920,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 3,
+        "visibleAdvertisementLabelCount": 3,
+        "expectedVisiblePlaceholderCount": 3,
+        "expectedVisibleSlotIds": [
+          "hub-header-banner",
+          "rail-left-desktop",
+          "rail-right-desktop"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "hub-header-banner",
+            "className": "ad-slot ad-slot-header-banner ad-slot-responsive-banner",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 1240,
+            "height": 92,
+            "top": 80,
+            "bottom": 172
+          },
+          {
+            "slotId": "rail-left-desktop",
+            "className": "ad-slot ad-slot-desktop-rail ad-slot-side-rail",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 160,
+            "height": 600,
+            "top": 160,
+            "bottom": 760
+          },
+          {
+            "slotId": "rail-right-desktop",
+            "className": "ad-slot ad-slot-desktop-rail ad-slot-side-rail",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 160,
+            "height": 600,
+            "top": 160,
+            "bottom": 760
+          }
+        ],
+        "visibleSlotIds": [
+          "hub-header-banner",
+          "rail-left-desktop",
+          "rail-right-desktop"
+        ],
+        "headerBannerVisible": true,
+        "mobileLowerBannerVisible": false,
+        "lowerContentVisible": false,
+        "leftRailVisible": true,
+        "rightRailVisible": true,
+        "leftGap": 48,
+        "rightGap": 48
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-animals-wide-1920.png",
+          "visibleAdvertisementLabelCount": 3,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/wide-desktop/coloring-pages-animals-wide-1920.png",
+          "visibleAdvertisementLabelCount": 3,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-animals-wide-1920.png",
+          "visibleAdvertisementLabelCount": 3,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages/animals",
+      "pageType": "hubPage",
+      "viewport": {
+        "label": "ultra-2560",
+        "width": 2560,
+        "height": 1440,
+        "screenshotGroup": "wide-desktop"
+      },
+      "mediaState": {
+        "loadedImageCount": 30,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 2560,
+        "documentScrollWidth": 2560,
+        "bodyScrollWidth": 2560,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 3,
+        "visibleAdvertisementLabelCount": 3,
+        "expectedVisiblePlaceholderCount": 3,
+        "expectedVisibleSlotIds": [
+          "hub-header-banner",
+          "rail-left-desktop",
+          "rail-right-desktop"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "hub-header-banner",
+            "className": "ad-slot ad-slot-header-banner ad-slot-responsive-banner",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 1240,
+            "height": 92,
+            "top": 80,
+            "bottom": 172
+          },
+          {
+            "slotId": "rail-left-desktop",
+            "className": "ad-slot ad-slot-desktop-rail ad-slot-side-rail",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 160,
+            "height": 600,
+            "top": 160,
+            "bottom": 760
+          },
+          {
+            "slotId": "rail-right-desktop",
+            "className": "ad-slot ad-slot-desktop-rail ad-slot-side-rail",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 160,
+            "height": 600,
+            "top": 160,
+            "bottom": 760
+          }
+        ],
+        "visibleSlotIds": [
+          "hub-header-banner",
+          "rail-left-desktop",
+          "rail-right-desktop"
+        ],
+        "headerBannerVisible": true,
+        "mobileLowerBannerVisible": false,
+        "lowerContentVisible": false,
+        "leftRailVisible": true,
+        "rightRailVisible": true,
+        "leftGap": 48,
+        "rightGap": 48
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-animals-ultra-2560.png",
+          "visibleAdvertisementLabelCount": 3,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/wide-desktop/coloring-pages-animals-ultra-2560.png",
+          "visibleAdvertisementLabelCount": 3,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-animals-ultra-2560.png",
+          "visibleAdvertisementLabelCount": 3,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages/christmas",
+      "pageType": "hubPage",
+      "viewport": {
+        "label": "mobile-390",
+        "width": 390,
+        "height": 844,
+        "screenshotGroup": "mobile"
+      },
+      "mediaState": {
+        "loadedImageCount": 16,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 390,
+        "documentScrollWidth": 390,
+        "bodyScrollWidth": 390,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 1,
+        "visibleAdvertisementLabelCount": 1,
+        "expectedVisiblePlaceholderCount": 1,
+        "expectedVisibleSlotIds": [
+          "hub-after-gallery"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "hub-after-gallery",
+            "className": "ad-slot ad-slot-inline ad-slot-fluid-inline",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 350,
+            "height": 120,
+            "top": 37359.328125,
+            "bottom": 37479.328125
+          }
+        ],
+        "visibleSlotIds": [
+          "hub-after-gallery"
+        ],
+        "headerBannerVisible": false,
+        "mobileLowerBannerVisible": true,
+        "lowerContentVisible": false,
+        "leftRailVisible": false,
+        "rightRailVisible": false,
+        "leftGap": 20,
+        "rightGap": -370
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-christmas-mobile-390.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/mobile/coloring-pages-christmas-mobile-390.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-christmas-mobile-390.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages/christmas",
+      "pageType": "hubPage",
+      "viewport": {
+        "label": "mobile-430",
+        "width": 430,
+        "height": 932,
+        "screenshotGroup": "mobile"
+      },
+      "mediaState": {
+        "loadedImageCount": 16,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 430,
+        "documentScrollWidth": 430,
+        "bodyScrollWidth": 430,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 1,
+        "visibleAdvertisementLabelCount": 1,
+        "expectedVisiblePlaceholderCount": 1,
+        "expectedVisibleSlotIds": [
+          "hub-after-gallery"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "hub-after-gallery",
+            "className": "ad-slot ad-slot-inline ad-slot-fluid-inline",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 390,
+            "height": 120,
+            "top": 40548.59375,
+            "bottom": 40668.59375
+          }
+        ],
+        "visibleSlotIds": [
+          "hub-after-gallery"
+        ],
+        "headerBannerVisible": false,
+        "mobileLowerBannerVisible": true,
+        "lowerContentVisible": false,
+        "leftRailVisible": false,
+        "rightRailVisible": false,
+        "leftGap": 20,
+        "rightGap": -410
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-christmas-mobile-430.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/mobile/coloring-pages-christmas-mobile-430.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-christmas-mobile-430.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages/christmas",
+      "pageType": "hubPage",
+      "viewport": {
+        "label": "tablet-768",
+        "width": 768,
+        "height": 1024,
+        "screenshotGroup": "tablet"
+      },
+      "mediaState": {
+        "loadedImageCount": 20,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 768,
+        "documentScrollWidth": 768,
+        "bodyScrollWidth": 768,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 1,
+        "visibleAdvertisementLabelCount": 1,
+        "expectedVisiblePlaceholderCount": 1,
+        "expectedVisibleSlotIds": [
+          "hub-after-gallery"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "hub-after-gallery",
+            "className": "ad-slot ad-slot-inline ad-slot-fluid-inline",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 706.546875,
+            "height": 120,
+            "top": 19200.8125,
+            "bottom": 19320.8125
+          }
+        ],
+        "visibleSlotIds": [
+          "hub-after-gallery"
+        ],
+        "headerBannerVisible": false,
+        "mobileLowerBannerVisible": true,
+        "lowerContentVisible": false,
+        "leftRailVisible": false,
+        "rightRailVisible": false,
+        "leftGap": 30.71875,
+        "rightGap": -737.265625
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-christmas-tablet-768.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/tablet/coloring-pages-christmas-tablet-768.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-christmas-tablet-768.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages/christmas",
+      "pageType": "hubPage",
+      "viewport": {
+        "label": "landscape-1024",
+        "width": 1024,
+        "height": 900,
+        "screenshotGroup": "tablet"
+      },
+      "mediaState": {
+        "loadedImageCount": 34,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 1024,
+        "documentScrollWidth": 1024,
+        "bodyScrollWidth": 1024,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 1,
+        "visibleAdvertisementLabelCount": 1,
+        "expectedVisiblePlaceholderCount": 1,
+        "expectedVisibleSlotIds": [
+          "hub-after-gallery"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "hub-after-gallery",
+            "className": "ad-slot ad-slot-inline ad-slot-fluid-inline",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 960,
+            "height": 120,
+            "top": 7924.640625,
+            "bottom": 8044.640625
+          }
+        ],
+        "visibleSlotIds": [
+          "hub-after-gallery"
+        ],
+        "headerBannerVisible": false,
+        "mobileLowerBannerVisible": true,
+        "lowerContentVisible": false,
+        "leftRailVisible": false,
+        "rightRailVisible": false,
+        "leftGap": 32,
+        "rightGap": -992
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-christmas-landscape-1024.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/tablet/coloring-pages-christmas-landscape-1024.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-christmas-landscape-1024.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages/christmas",
+      "pageType": "hubPage",
+      "viewport": {
+        "label": "desktop-1280",
+        "width": 1280,
+        "height": 900,
+        "screenshotGroup": "desktop"
+      },
+      "mediaState": {
+        "loadedImageCount": 26,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 1280,
+        "documentScrollWidth": 1280,
+        "bodyScrollWidth": 1280,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 1,
+        "visibleAdvertisementLabelCount": 1,
+        "expectedVisiblePlaceholderCount": 1,
+        "expectedVisibleSlotIds": [
+          "hub-header-banner"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "hub-header-banner",
+            "className": "ad-slot ad-slot-header-banner ad-slot-responsive-banner",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 1216,
+            "height": 92,
+            "top": 80,
+            "bottom": 172
+          }
+        ],
+        "visibleSlotIds": [
+          "hub-header-banner"
+        ],
+        "headerBannerVisible": true,
+        "mobileLowerBannerVisible": false,
+        "lowerContentVisible": false,
+        "leftRailVisible": false,
+        "rightRailVisible": false,
+        "leftGap": 32,
+        "rightGap": -1248
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-christmas-desktop-1280.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/desktop/coloring-pages-christmas-desktop-1280.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-christmas-desktop-1280.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages/christmas",
+      "pageType": "hubPage",
+      "viewport": {
+        "label": "desktop-1440",
+        "width": 1440,
+        "height": 960,
+        "screenshotGroup": "desktop"
+      },
+      "mediaState": {
+        "loadedImageCount": 26,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 1440,
+        "documentScrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 1,
+        "visibleAdvertisementLabelCount": 1,
+        "expectedVisiblePlaceholderCount": 1,
+        "expectedVisibleSlotIds": [
+          "hub-header-banner"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "hub-header-banner",
+            "className": "ad-slot ad-slot-header-banner ad-slot-responsive-banner",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 1240,
+            "height": 92,
+            "top": 80,
+            "bottom": 172
+          }
+        ],
+        "visibleSlotIds": [
+          "hub-header-banner"
+        ],
+        "headerBannerVisible": true,
+        "mobileLowerBannerVisible": false,
+        "lowerContentVisible": false,
+        "leftRailVisible": false,
+        "rightRailVisible": false,
+        "leftGap": 100,
+        "rightGap": -1340
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-christmas-desktop-1440.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/desktop/coloring-pages-christmas-desktop-1440.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-christmas-desktop-1440.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages/christmas",
+      "pageType": "hubPage",
+      "viewport": {
+        "label": "wide-1920",
+        "width": 1920,
+        "height": 1080,
+        "screenshotGroup": "wide-desktop"
+      },
+      "mediaState": {
+        "loadedImageCount": 30,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 1920,
+        "documentScrollWidth": 1920,
+        "bodyScrollWidth": 1920,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 3,
+        "visibleAdvertisementLabelCount": 3,
+        "expectedVisiblePlaceholderCount": 3,
+        "expectedVisibleSlotIds": [
+          "hub-header-banner",
+          "rail-left-desktop",
+          "rail-right-desktop"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "hub-header-banner",
+            "className": "ad-slot ad-slot-header-banner ad-slot-responsive-banner",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 1240,
+            "height": 92,
+            "top": 80,
+            "bottom": 172
+          },
+          {
+            "slotId": "rail-left-desktop",
+            "className": "ad-slot ad-slot-desktop-rail ad-slot-side-rail",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 160,
+            "height": 600,
+            "top": 160,
+            "bottom": 760
+          },
+          {
+            "slotId": "rail-right-desktop",
+            "className": "ad-slot ad-slot-desktop-rail ad-slot-side-rail",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 160,
+            "height": 600,
+            "top": 160,
+            "bottom": 760
+          }
+        ],
+        "visibleSlotIds": [
+          "hub-header-banner",
+          "rail-left-desktop",
+          "rail-right-desktop"
+        ],
+        "headerBannerVisible": true,
+        "mobileLowerBannerVisible": false,
+        "lowerContentVisible": false,
+        "leftRailVisible": true,
+        "rightRailVisible": true,
+        "leftGap": 48,
+        "rightGap": 48
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-christmas-wide-1920.png",
+          "visibleAdvertisementLabelCount": 3,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/wide-desktop/coloring-pages-christmas-wide-1920.png",
+          "visibleAdvertisementLabelCount": 3,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-christmas-wide-1920.png",
+          "visibleAdvertisementLabelCount": 3,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages/christmas",
+      "pageType": "hubPage",
+      "viewport": {
+        "label": "ultra-2560",
+        "width": 2560,
+        "height": 1440,
+        "screenshotGroup": "wide-desktop"
+      },
+      "mediaState": {
+        "loadedImageCount": 30,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 2560,
+        "documentScrollWidth": 2560,
+        "bodyScrollWidth": 2560,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 3,
+        "visibleAdvertisementLabelCount": 3,
+        "expectedVisiblePlaceholderCount": 3,
+        "expectedVisibleSlotIds": [
+          "hub-header-banner",
+          "rail-left-desktop",
+          "rail-right-desktop"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "hub-header-banner",
+            "className": "ad-slot ad-slot-header-banner ad-slot-responsive-banner",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 1240,
+            "height": 92,
+            "top": 80,
+            "bottom": 172
+          },
+          {
+            "slotId": "rail-left-desktop",
+            "className": "ad-slot ad-slot-desktop-rail ad-slot-side-rail",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 160,
+            "height": 600,
+            "top": 160,
+            "bottom": 760
+          },
+          {
+            "slotId": "rail-right-desktop",
+            "className": "ad-slot ad-slot-desktop-rail ad-slot-side-rail",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 160,
+            "height": 600,
+            "top": 160,
+            "bottom": 760
+          }
+        ],
+        "visibleSlotIds": [
+          "hub-header-banner",
+          "rail-left-desktop",
+          "rail-right-desktop"
+        ],
+        "headerBannerVisible": true,
+        "mobileLowerBannerVisible": false,
+        "lowerContentVisible": false,
+        "leftRailVisible": true,
+        "rightRailVisible": true,
+        "leftGap": 48,
+        "rightGap": 48
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-christmas-ultra-2560.png",
+          "visibleAdvertisementLabelCount": 3,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/wide-desktop/coloring-pages-christmas-ultra-2560.png",
+          "visibleAdvertisementLabelCount": 3,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-christmas-ultra-2560.png",
+          "visibleAdvertisementLabelCount": 3,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages/geometric",
+      "pageType": "hubPage",
+      "viewport": {
+        "label": "mobile-390",
+        "width": 390,
+        "height": 844,
+        "screenshotGroup": "mobile"
+      },
+      "mediaState": {
+        "loadedImageCount": 16,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 390,
+        "documentScrollWidth": 390,
+        "bodyScrollWidth": 390,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 1,
+        "visibleAdvertisementLabelCount": 1,
+        "expectedVisiblePlaceholderCount": 1,
+        "expectedVisibleSlotIds": [
+          "hub-after-gallery"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "hub-after-gallery",
+            "className": "ad-slot ad-slot-inline ad-slot-fluid-inline",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 350,
+            "height": 120,
+            "top": 38073.734375,
+            "bottom": 38193.734375
+          }
+        ],
+        "visibleSlotIds": [
+          "hub-after-gallery"
+        ],
+        "headerBannerVisible": false,
+        "mobileLowerBannerVisible": true,
+        "lowerContentVisible": false,
+        "leftRailVisible": false,
+        "rightRailVisible": false,
+        "leftGap": 20,
+        "rightGap": -370
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-geometric-mobile-390.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/mobile/coloring-pages-geometric-mobile-390.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-geometric-mobile-390.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages/geometric",
+      "pageType": "hubPage",
+      "viewport": {
+        "label": "mobile-430",
+        "width": 430,
+        "height": 932,
+        "screenshotGroup": "mobile"
+      },
+      "mediaState": {
+        "loadedImageCount": 16,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 430,
+        "documentScrollWidth": 430,
+        "bodyScrollWidth": 430,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 1,
+        "visibleAdvertisementLabelCount": 1,
+        "expectedVisiblePlaceholderCount": 1,
+        "expectedVisibleSlotIds": [
+          "hub-after-gallery"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "hub-after-gallery",
+            "className": "ad-slot ad-slot-inline ad-slot-fluid-inline",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 390,
+            "height": 120,
+            "top": 41051.875,
+            "bottom": 41171.875
+          }
+        ],
+        "visibleSlotIds": [
+          "hub-after-gallery"
+        ],
+        "headerBannerVisible": false,
+        "mobileLowerBannerVisible": true,
+        "lowerContentVisible": false,
+        "leftRailVisible": false,
+        "rightRailVisible": false,
+        "leftGap": 20,
+        "rightGap": -410
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-geometric-mobile-430.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/mobile/coloring-pages-geometric-mobile-430.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-geometric-mobile-430.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages/geometric",
+      "pageType": "hubPage",
+      "viewport": {
+        "label": "tablet-768",
+        "width": 768,
+        "height": 1024,
+        "screenshotGroup": "tablet"
+      },
+      "mediaState": {
+        "loadedImageCount": 20,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 768,
+        "documentScrollWidth": 768,
+        "bodyScrollWidth": 768,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 1,
+        "visibleAdvertisementLabelCount": 1,
+        "expectedVisiblePlaceholderCount": 1,
+        "expectedVisibleSlotIds": [
+          "hub-after-gallery"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "hub-after-gallery",
+            "className": "ad-slot ad-slot-inline ad-slot-fluid-inline",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 706.546875,
+            "height": 120,
+            "top": 19699.265625,
+            "bottom": 19819.265625
+          }
+        ],
+        "visibleSlotIds": [
+          "hub-after-gallery"
+        ],
+        "headerBannerVisible": false,
+        "mobileLowerBannerVisible": true,
+        "lowerContentVisible": false,
+        "leftRailVisible": false,
+        "rightRailVisible": false,
+        "leftGap": 30.71875,
+        "rightGap": -737.265625
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-geometric-tablet-768.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/tablet/coloring-pages-geometric-tablet-768.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-geometric-tablet-768.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages/geometric",
+      "pageType": "hubPage",
+      "viewport": {
+        "label": "landscape-1024",
+        "width": 1024,
+        "height": 900,
+        "screenshotGroup": "tablet"
+      },
+      "mediaState": {
+        "loadedImageCount": 34,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 1024,
+        "documentScrollWidth": 1024,
+        "bodyScrollWidth": 1024,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 1,
+        "visibleAdvertisementLabelCount": 1,
+        "expectedVisiblePlaceholderCount": 1,
+        "expectedVisibleSlotIds": [
+          "hub-after-gallery"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "hub-after-gallery",
+            "className": "ad-slot ad-slot-inline ad-slot-fluid-inline",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 960,
+            "height": 120,
+            "top": 8032.609375,
+            "bottom": 8152.609375
+          }
+        ],
+        "visibleSlotIds": [
+          "hub-after-gallery"
+        ],
+        "headerBannerVisible": false,
+        "mobileLowerBannerVisible": true,
+        "lowerContentVisible": false,
+        "leftRailVisible": false,
+        "rightRailVisible": false,
+        "leftGap": 32,
+        "rightGap": -992
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-geometric-landscape-1024.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/tablet/coloring-pages-geometric-landscape-1024.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-geometric-landscape-1024.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages/geometric",
+      "pageType": "hubPage",
+      "viewport": {
+        "label": "desktop-1280",
+        "width": 1280,
+        "height": 900,
+        "screenshotGroup": "desktop"
+      },
+      "mediaState": {
+        "loadedImageCount": 26,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 1280,
+        "documentScrollWidth": 1280,
+        "bodyScrollWidth": 1280,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 1,
+        "visibleAdvertisementLabelCount": 1,
+        "expectedVisiblePlaceholderCount": 1,
+        "expectedVisibleSlotIds": [
+          "hub-header-banner"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "hub-header-banner",
+            "className": "ad-slot ad-slot-header-banner ad-slot-responsive-banner",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 1216,
+            "height": 92,
+            "top": 80,
+            "bottom": 172
+          }
+        ],
+        "visibleSlotIds": [
+          "hub-header-banner"
+        ],
+        "headerBannerVisible": true,
+        "mobileLowerBannerVisible": false,
+        "lowerContentVisible": false,
+        "leftRailVisible": false,
+        "rightRailVisible": false,
+        "leftGap": 32,
+        "rightGap": -1248
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-geometric-desktop-1280.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/desktop/coloring-pages-geometric-desktop-1280.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-geometric-desktop-1280.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages/geometric",
+      "pageType": "hubPage",
+      "viewport": {
+        "label": "desktop-1440",
+        "width": 1440,
+        "height": 960,
+        "screenshotGroup": "desktop"
+      },
+      "mediaState": {
+        "loadedImageCount": 26,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 1440,
+        "documentScrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 1,
+        "visibleAdvertisementLabelCount": 1,
+        "expectedVisiblePlaceholderCount": 1,
+        "expectedVisibleSlotIds": [
+          "hub-header-banner"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "hub-header-banner",
+            "className": "ad-slot ad-slot-header-banner ad-slot-responsive-banner",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 1240,
+            "height": 92,
+            "top": 80,
+            "bottom": 172
+          }
+        ],
+        "visibleSlotIds": [
+          "hub-header-banner"
+        ],
+        "headerBannerVisible": true,
+        "mobileLowerBannerVisible": false,
+        "lowerContentVisible": false,
+        "leftRailVisible": false,
+        "rightRailVisible": false,
+        "leftGap": 100,
+        "rightGap": -1340
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-geometric-desktop-1440.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/desktop/coloring-pages-geometric-desktop-1440.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-geometric-desktop-1440.png",
+          "visibleAdvertisementLabelCount": 1,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages/geometric",
+      "pageType": "hubPage",
+      "viewport": {
+        "label": "wide-1920",
+        "width": 1920,
+        "height": 1080,
+        "screenshotGroup": "wide-desktop"
+      },
+      "mediaState": {
+        "loadedImageCount": 30,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 1920,
+        "documentScrollWidth": 1920,
+        "bodyScrollWidth": 1920,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 3,
+        "visibleAdvertisementLabelCount": 3,
+        "expectedVisiblePlaceholderCount": 3,
+        "expectedVisibleSlotIds": [
+          "hub-header-banner",
+          "rail-left-desktop",
+          "rail-right-desktop"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "hub-header-banner",
+            "className": "ad-slot ad-slot-header-banner ad-slot-responsive-banner",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 1240,
+            "height": 92,
+            "top": 80,
+            "bottom": 172
+          },
+          {
+            "slotId": "rail-left-desktop",
+            "className": "ad-slot ad-slot-desktop-rail ad-slot-side-rail",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 160,
+            "height": 600,
+            "top": 160,
+            "bottom": 760
+          },
+          {
+            "slotId": "rail-right-desktop",
+            "className": "ad-slot ad-slot-desktop-rail ad-slot-side-rail",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 160,
+            "height": 600,
+            "top": 160,
+            "bottom": 760
+          }
+        ],
+        "visibleSlotIds": [
+          "hub-header-banner",
+          "rail-left-desktop",
+          "rail-right-desktop"
+        ],
+        "headerBannerVisible": true,
+        "mobileLowerBannerVisible": false,
+        "lowerContentVisible": false,
+        "leftRailVisible": true,
+        "rightRailVisible": true,
+        "leftGap": 48,
+        "rightGap": 48
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-geometric-wide-1920.png",
+          "visibleAdvertisementLabelCount": 3,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/wide-desktop/coloring-pages-geometric-wide-1920.png",
+          "visibleAdvertisementLabelCount": 3,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-geometric-wide-1920.png",
+          "visibleAdvertisementLabelCount": 3,
+          "committed": false
+        }
+      ]
+    },
+    {
+      "pagePath": "/coloring-pages/geometric",
+      "pageType": "hubPage",
+      "viewport": {
+        "label": "ultra-2560",
+        "width": 2560,
+        "height": 1440,
+        "screenshotGroup": "wide-desktop"
+      },
+      "mediaState": {
+        "loadedImageCount": 30,
+        "assetPlaceholderCount": 0
+      },
+      "overflow": {
+        "viewportWidth": 2560,
+        "documentScrollWidth": 2560,
+        "bodyScrollWidth": 2560,
+        "hasHorizontalOverflow": false,
+        "overflowingElements": []
+      },
+      "adState": {
+        "visiblePlaceholderCount": 3,
+        "visibleAdvertisementLabelCount": 3,
+        "expectedVisiblePlaceholderCount": 3,
+        "expectedVisibleSlotIds": [
+          "hub-header-banner",
+          "rail-left-desktop",
+          "rail-right-desktop"
+        ],
+        "visibleSlots": [
+          {
+            "slotId": "hub-header-banner",
+            "className": "ad-slot ad-slot-header-banner ad-slot-responsive-banner",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 1240,
+            "height": 92,
+            "top": 80,
+            "bottom": 172
+          },
+          {
+            "slotId": "rail-left-desktop",
+            "className": "ad-slot ad-slot-desktop-rail ad-slot-side-rail",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 160,
+            "height": 600,
+            "top": 160,
+            "bottom": 760
+          },
+          {
+            "slotId": "rail-right-desktop",
+            "className": "ad-slot ad-slot-desktop-rail ad-slot-side-rail",
+            "backgroundColor": "rgb(238, 229, 241)",
+            "backgroundImage": "none",
+            "cursor": "auto",
+            "width": 160,
+            "height": 600,
+            "top": 160,
+            "bottom": 760
+          }
+        ],
+        "visibleSlotIds": [
+          "hub-header-banner",
+          "rail-left-desktop",
+          "rail-right-desktop"
+        ],
+        "headerBannerVisible": true,
+        "mobileLowerBannerVisible": false,
+        "lowerContentVisible": false,
+        "leftRailVisible": true,
+        "rightRailVisible": true,
+        "leftGap": 48,
+        "rightGap": 48
+      },
+      "adRequests": [],
+      "consoleIssues": [],
+      "screenshots": [
+        {
+          "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-geometric-ultra-2560.png",
+          "visibleAdvertisementLabelCount": 3,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/wide-desktop/coloring-pages-geometric-ultra-2560.png",
+          "visibleAdvertisementLabelCount": 3,
+          "committed": false
+        },
+        {
+          "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-geometric-ultra-2560.png",
+          "visibleAdvertisementLabelCount": 3,
+          "committed": false
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/home-mobile-390.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/mobile/home-mobile-390.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/home-mobile-390.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/home-mobile-430.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/mobile/home-mobile-430.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/home-mobile-430.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/home-tablet-768.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/tablet/home-tablet-768.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/home-tablet-768.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/home-landscape-1024.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/tablet/home-landscape-1024.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/home-landscape-1024.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/home-desktop-1280.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/desktop/home-desktop-1280.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/home-desktop-1280.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/home-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/desktop/home-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/home-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/home-wide-1920.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/wide-desktop/home-wide-1920.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/home-wide-1920.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/home-ultra-2560.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/wide-desktop/home-ultra-2560.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/home-ultra-2560.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-mobile-390.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/mobile/coloring-pages-mobile-390.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-mobile-390.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-mobile-430.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/mobile/coloring-pages-mobile-430.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-mobile-430.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-tablet-768.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/tablet/coloring-pages-tablet-768.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-tablet-768.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-landscape-1024.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/tablet/coloring-pages-landscape-1024.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-landscape-1024.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-desktop-1280.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/desktop/coloring-pages-desktop-1280.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-desktop-1280.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/desktop/coloring-pages-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-wide-1920.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/wide-desktop/coloring-pages-wide-1920.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-wide-1920.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-ultra-2560.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/wide-desktop/coloring-pages-ultra-2560.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-ultra-2560.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-animals-mobile-390.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/mobile/coloring-pages-animals-mobile-390.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-animals-mobile-390.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-animals-mobile-430.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/mobile/coloring-pages-animals-mobile-430.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-animals-mobile-430.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-animals-tablet-768.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/tablet/coloring-pages-animals-tablet-768.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-animals-tablet-768.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-animals-landscape-1024.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/tablet/coloring-pages-animals-landscape-1024.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-animals-landscape-1024.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-animals-desktop-1280.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/desktop/coloring-pages-animals-desktop-1280.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-animals-desktop-1280.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-animals-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/desktop/coloring-pages-animals-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-animals-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-animals-wide-1920.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/wide-desktop/coloring-pages-animals-wide-1920.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-animals-wide-1920.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-animals-ultra-2560.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/wide-desktop/coloring-pages-animals-ultra-2560.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-animals-ultra-2560.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-christmas-mobile-390.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/mobile/coloring-pages-christmas-mobile-390.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-christmas-mobile-390.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-christmas-mobile-430.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/mobile/coloring-pages-christmas-mobile-430.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-christmas-mobile-430.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-christmas-tablet-768.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/tablet/coloring-pages-christmas-tablet-768.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-christmas-tablet-768.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-christmas-landscape-1024.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/tablet/coloring-pages-christmas-landscape-1024.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-christmas-landscape-1024.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-christmas-desktop-1280.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/desktop/coloring-pages-christmas-desktop-1280.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-christmas-desktop-1280.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-christmas-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/desktop/coloring-pages-christmas-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-christmas-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-christmas-wide-1920.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/wide-desktop/coloring-pages-christmas-wide-1920.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-christmas-wide-1920.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-christmas-ultra-2560.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/wide-desktop/coloring-pages-christmas-ultra-2560.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-christmas-ultra-2560.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-geometric-mobile-390.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/mobile/coloring-pages-geometric-mobile-390.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-geometric-mobile-390.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-geometric-mobile-430.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/mobile/coloring-pages-geometric-mobile-430.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-geometric-mobile-430.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-geometric-tablet-768.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/tablet/coloring-pages-geometric-tablet-768.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-geometric-tablet-768.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-geometric-landscape-1024.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/tablet/coloring-pages-geometric-landscape-1024.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-geometric-landscape-1024.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-geometric-desktop-1280.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/desktop/coloring-pages-geometric-desktop-1280.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-geometric-desktop-1280.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-geometric-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/desktop/coloring-pages-geometric-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-geometric-desktop-1440.png",
+      "visibleAdvertisementLabelCount": 1,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-geometric-wide-1920.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/wide-desktop/coloring-pages-geometric-wide-1920.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-geometric-wide-1920.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-geometric-ultra-2560.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/wide-desktop/coloring-pages-geometric-ultra-2560.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/overflow/coloring-pages-geometric-ultra-2560.png",
+      "visibleAdvertisementLabelCount": 3,
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/desktop/desktop-more-menu-after-link.png",
+      "committed": false
+    },
+    {
+      "path": "pipeline/review/round-4u/screenshots/mobile/mobile-menu-open.png",
+      "committed": false
+    }
+  ],
+  "moreMenu": {
+    "opens": true,
+    "closesOnButton": true,
+    "closesOnEscape": true,
+    "closesOnOutsideClick": true,
+    "closesOnLinkClick": true,
+    "searchWorks": true,
+    "noAdsInMenu": true,
+    "geometry": {
+      "left": 300,
+      "right": 1620,
+      "width": 1320,
+      "viewportWidth": 1920,
+      "columns": "193.328px 193.328px 193.328px 193.344px 193.328px 193.328px"
+    },
+    "screenshots": [
+      {
+        "path": "pipeline/review/round-4u/screenshots/desktop/desktop-more-menu-after-link.png",
+        "committed": false
+      }
+    ]
+  },
+  "mobileNav": {
+    "opens": true,
+    "closesOnButton": true,
+    "closesOnEscape": true,
+    "closesOnLinkClick": true,
+    "searchWorks": true,
+    "noAdsInMobileNav": true,
+    "noAwkwardExposedSideGutter": true,
+    "noHorizontalOverflow": true,
+    "geometry": {
+      "left": 0,
+      "right": 390,
+      "width": 390,
+      "height": 844,
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "searchTop": 113,
+      "overflowX": "hidden",
+      "overflowY": "auto"
+    },
+    "screenshots": [
+      {
+        "path": "pipeline/review/round-4u/screenshots/mobile/mobile-menu-open.png",
+        "committed": false
+      }
+    ]
+  },
+  "summary": {
+    "pass": true,
+    "visibleCountsByWidth": {
+      "390": 1,
+      "430": 1,
+      "768": 1,
+      "1024": 1,
+      "1280": 1,
+      "1440": 1,
+      "1920": 3,
+      "2560": 3
+    },
+    "labelCountsByPageAndWidth": {
+      "/@390": 1,
+      "/@430": 1,
+      "/@768": 1,
+      "/@1024": 1,
+      "/@1280": 1,
+      "/@1440": 1,
+      "/@1920": 3,
+      "/@2560": 3,
+      "/coloring-pages@390": 1,
+      "/coloring-pages@430": 1,
+      "/coloring-pages@768": 1,
+      "/coloring-pages@1024": 1,
+      "/coloring-pages@1280": 1,
+      "/coloring-pages@1440": 1,
+      "/coloring-pages@1920": 3,
+      "/coloring-pages@2560": 3,
+      "/coloring-pages/animals@390": 1,
+      "/coloring-pages/animals@430": 1,
+      "/coloring-pages/animals@768": 1,
+      "/coloring-pages/animals@1024": 1,
+      "/coloring-pages/animals@1280": 1,
+      "/coloring-pages/animals@1440": 1,
+      "/coloring-pages/animals@1920": 3,
+      "/coloring-pages/animals@2560": 3,
+      "/coloring-pages/christmas@390": 1,
+      "/coloring-pages/christmas@430": 1,
+      "/coloring-pages/christmas@768": 1,
+      "/coloring-pages/christmas@1024": 1,
+      "/coloring-pages/christmas@1280": 1,
+      "/coloring-pages/christmas@1440": 1,
+      "/coloring-pages/christmas@1920": 3,
+      "/coloring-pages/christmas@2560": 3,
+      "/coloring-pages/geometric@390": 1,
+      "/coloring-pages/geometric@430": 1,
+      "/coloring-pages/geometric@768": 1,
+      "/coloring-pages/geometric@1024": 1,
+      "/coloring-pages/geometric@1280": 1,
+      "/coloring-pages/geometric@1440": 1,
+      "/coloring-pages/geometric@1920": 3,
+      "/coloring-pages/geometric@2560": 3
+    },
+    "labelCountsByScreenshot": {
+      "pipeline/review/round-4u/screenshots/ad-density/home-mobile-390.png": 1,
+      "pipeline/review/round-4u/screenshots/mobile/home-mobile-390.png": 1,
+      "pipeline/review/round-4u/screenshots/overflow/home-mobile-390.png": 1,
+      "pipeline/review/round-4u/screenshots/ad-density/home-mobile-430.png": 1,
+      "pipeline/review/round-4u/screenshots/mobile/home-mobile-430.png": 1,
+      "pipeline/review/round-4u/screenshots/overflow/home-mobile-430.png": 1,
+      "pipeline/review/round-4u/screenshots/ad-density/home-tablet-768.png": 1,
+      "pipeline/review/round-4u/screenshots/tablet/home-tablet-768.png": 1,
+      "pipeline/review/round-4u/screenshots/overflow/home-tablet-768.png": 1,
+      "pipeline/review/round-4u/screenshots/ad-density/home-landscape-1024.png": 1,
+      "pipeline/review/round-4u/screenshots/tablet/home-landscape-1024.png": 1,
+      "pipeline/review/round-4u/screenshots/overflow/home-landscape-1024.png": 1,
+      "pipeline/review/round-4u/screenshots/ad-density/home-desktop-1280.png": 1,
+      "pipeline/review/round-4u/screenshots/desktop/home-desktop-1280.png": 1,
+      "pipeline/review/round-4u/screenshots/overflow/home-desktop-1280.png": 1,
+      "pipeline/review/round-4u/screenshots/ad-density/home-desktop-1440.png": 1,
+      "pipeline/review/round-4u/screenshots/desktop/home-desktop-1440.png": 1,
+      "pipeline/review/round-4u/screenshots/overflow/home-desktop-1440.png": 1,
+      "pipeline/review/round-4u/screenshots/ad-density/home-wide-1920.png": 3,
+      "pipeline/review/round-4u/screenshots/wide-desktop/home-wide-1920.png": 3,
+      "pipeline/review/round-4u/screenshots/overflow/home-wide-1920.png": 3,
+      "pipeline/review/round-4u/screenshots/ad-density/home-ultra-2560.png": 3,
+      "pipeline/review/round-4u/screenshots/wide-desktop/home-ultra-2560.png": 3,
+      "pipeline/review/round-4u/screenshots/overflow/home-ultra-2560.png": 3,
+      "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-mobile-390.png": 1,
+      "pipeline/review/round-4u/screenshots/mobile/coloring-pages-mobile-390.png": 1,
+      "pipeline/review/round-4u/screenshots/overflow/coloring-pages-mobile-390.png": 1,
+      "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-mobile-430.png": 1,
+      "pipeline/review/round-4u/screenshots/mobile/coloring-pages-mobile-430.png": 1,
+      "pipeline/review/round-4u/screenshots/overflow/coloring-pages-mobile-430.png": 1,
+      "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-tablet-768.png": 1,
+      "pipeline/review/round-4u/screenshots/tablet/coloring-pages-tablet-768.png": 1,
+      "pipeline/review/round-4u/screenshots/overflow/coloring-pages-tablet-768.png": 1,
+      "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-landscape-1024.png": 1,
+      "pipeline/review/round-4u/screenshots/tablet/coloring-pages-landscape-1024.png": 1,
+      "pipeline/review/round-4u/screenshots/overflow/coloring-pages-landscape-1024.png": 1,
+      "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-desktop-1280.png": 1,
+      "pipeline/review/round-4u/screenshots/desktop/coloring-pages-desktop-1280.png": 1,
+      "pipeline/review/round-4u/screenshots/overflow/coloring-pages-desktop-1280.png": 1,
+      "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-desktop-1440.png": 1,
+      "pipeline/review/round-4u/screenshots/desktop/coloring-pages-desktop-1440.png": 1,
+      "pipeline/review/round-4u/screenshots/overflow/coloring-pages-desktop-1440.png": 1,
+      "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-wide-1920.png": 3,
+      "pipeline/review/round-4u/screenshots/wide-desktop/coloring-pages-wide-1920.png": 3,
+      "pipeline/review/round-4u/screenshots/overflow/coloring-pages-wide-1920.png": 3,
+      "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-ultra-2560.png": 3,
+      "pipeline/review/round-4u/screenshots/wide-desktop/coloring-pages-ultra-2560.png": 3,
+      "pipeline/review/round-4u/screenshots/overflow/coloring-pages-ultra-2560.png": 3,
+      "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-animals-mobile-390.png": 1,
+      "pipeline/review/round-4u/screenshots/mobile/coloring-pages-animals-mobile-390.png": 1,
+      "pipeline/review/round-4u/screenshots/overflow/coloring-pages-animals-mobile-390.png": 1,
+      "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-animals-mobile-430.png": 1,
+      "pipeline/review/round-4u/screenshots/mobile/coloring-pages-animals-mobile-430.png": 1,
+      "pipeline/review/round-4u/screenshots/overflow/coloring-pages-animals-mobile-430.png": 1,
+      "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-animals-tablet-768.png": 1,
+      "pipeline/review/round-4u/screenshots/tablet/coloring-pages-animals-tablet-768.png": 1,
+      "pipeline/review/round-4u/screenshots/overflow/coloring-pages-animals-tablet-768.png": 1,
+      "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-animals-landscape-1024.png": 1,
+      "pipeline/review/round-4u/screenshots/tablet/coloring-pages-animals-landscape-1024.png": 1,
+      "pipeline/review/round-4u/screenshots/overflow/coloring-pages-animals-landscape-1024.png": 1,
+      "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-animals-desktop-1280.png": 1,
+      "pipeline/review/round-4u/screenshots/desktop/coloring-pages-animals-desktop-1280.png": 1,
+      "pipeline/review/round-4u/screenshots/overflow/coloring-pages-animals-desktop-1280.png": 1,
+      "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-animals-desktop-1440.png": 1,
+      "pipeline/review/round-4u/screenshots/desktop/coloring-pages-animals-desktop-1440.png": 1,
+      "pipeline/review/round-4u/screenshots/overflow/coloring-pages-animals-desktop-1440.png": 1,
+      "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-animals-wide-1920.png": 3,
+      "pipeline/review/round-4u/screenshots/wide-desktop/coloring-pages-animals-wide-1920.png": 3,
+      "pipeline/review/round-4u/screenshots/overflow/coloring-pages-animals-wide-1920.png": 3,
+      "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-animals-ultra-2560.png": 3,
+      "pipeline/review/round-4u/screenshots/wide-desktop/coloring-pages-animals-ultra-2560.png": 3,
+      "pipeline/review/round-4u/screenshots/overflow/coloring-pages-animals-ultra-2560.png": 3,
+      "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-christmas-mobile-390.png": 1,
+      "pipeline/review/round-4u/screenshots/mobile/coloring-pages-christmas-mobile-390.png": 1,
+      "pipeline/review/round-4u/screenshots/overflow/coloring-pages-christmas-mobile-390.png": 1,
+      "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-christmas-mobile-430.png": 1,
+      "pipeline/review/round-4u/screenshots/mobile/coloring-pages-christmas-mobile-430.png": 1,
+      "pipeline/review/round-4u/screenshots/overflow/coloring-pages-christmas-mobile-430.png": 1,
+      "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-christmas-tablet-768.png": 1,
+      "pipeline/review/round-4u/screenshots/tablet/coloring-pages-christmas-tablet-768.png": 1,
+      "pipeline/review/round-4u/screenshots/overflow/coloring-pages-christmas-tablet-768.png": 1,
+      "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-christmas-landscape-1024.png": 1,
+      "pipeline/review/round-4u/screenshots/tablet/coloring-pages-christmas-landscape-1024.png": 1,
+      "pipeline/review/round-4u/screenshots/overflow/coloring-pages-christmas-landscape-1024.png": 1,
+      "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-christmas-desktop-1280.png": 1,
+      "pipeline/review/round-4u/screenshots/desktop/coloring-pages-christmas-desktop-1280.png": 1,
+      "pipeline/review/round-4u/screenshots/overflow/coloring-pages-christmas-desktop-1280.png": 1,
+      "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-christmas-desktop-1440.png": 1,
+      "pipeline/review/round-4u/screenshots/desktop/coloring-pages-christmas-desktop-1440.png": 1,
+      "pipeline/review/round-4u/screenshots/overflow/coloring-pages-christmas-desktop-1440.png": 1,
+      "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-christmas-wide-1920.png": 3,
+      "pipeline/review/round-4u/screenshots/wide-desktop/coloring-pages-christmas-wide-1920.png": 3,
+      "pipeline/review/round-4u/screenshots/overflow/coloring-pages-christmas-wide-1920.png": 3,
+      "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-christmas-ultra-2560.png": 3,
+      "pipeline/review/round-4u/screenshots/wide-desktop/coloring-pages-christmas-ultra-2560.png": 3,
+      "pipeline/review/round-4u/screenshots/overflow/coloring-pages-christmas-ultra-2560.png": 3,
+      "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-geometric-mobile-390.png": 1,
+      "pipeline/review/round-4u/screenshots/mobile/coloring-pages-geometric-mobile-390.png": 1,
+      "pipeline/review/round-4u/screenshots/overflow/coloring-pages-geometric-mobile-390.png": 1,
+      "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-geometric-mobile-430.png": 1,
+      "pipeline/review/round-4u/screenshots/mobile/coloring-pages-geometric-mobile-430.png": 1,
+      "pipeline/review/round-4u/screenshots/overflow/coloring-pages-geometric-mobile-430.png": 1,
+      "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-geometric-tablet-768.png": 1,
+      "pipeline/review/round-4u/screenshots/tablet/coloring-pages-geometric-tablet-768.png": 1,
+      "pipeline/review/round-4u/screenshots/overflow/coloring-pages-geometric-tablet-768.png": 1,
+      "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-geometric-landscape-1024.png": 1,
+      "pipeline/review/round-4u/screenshots/tablet/coloring-pages-geometric-landscape-1024.png": 1,
+      "pipeline/review/round-4u/screenshots/overflow/coloring-pages-geometric-landscape-1024.png": 1,
+      "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-geometric-desktop-1280.png": 1,
+      "pipeline/review/round-4u/screenshots/desktop/coloring-pages-geometric-desktop-1280.png": 1,
+      "pipeline/review/round-4u/screenshots/overflow/coloring-pages-geometric-desktop-1280.png": 1,
+      "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-geometric-desktop-1440.png": 1,
+      "pipeline/review/round-4u/screenshots/desktop/coloring-pages-geometric-desktop-1440.png": 1,
+      "pipeline/review/round-4u/screenshots/overflow/coloring-pages-geometric-desktop-1440.png": 1,
+      "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-geometric-wide-1920.png": 3,
+      "pipeline/review/round-4u/screenshots/wide-desktop/coloring-pages-geometric-wide-1920.png": 3,
+      "pipeline/review/round-4u/screenshots/overflow/coloring-pages-geometric-wide-1920.png": 3,
+      "pipeline/review/round-4u/screenshots/ad-density/coloring-pages-geometric-ultra-2560.png": 3,
+      "pipeline/review/round-4u/screenshots/wide-desktop/coloring-pages-geometric-ultra-2560.png": 3,
+      "pipeline/review/round-4u/screenshots/overflow/coloring-pages-geometric-ultra-2560.png": 3
+    },
+    "expectedCountsByWidth": {
+      "390": 1,
+      "430": 1,
+      "768": 1,
+      "1024": 1,
+      "1280": 1,
+      "1440": 1,
+      "1920": 3,
+      "2560": 3
+    },
+    "mobileLowerBannerVisibleBelowDesktop": true,
+    "desktopHeaderBannerHiddenBelowDesktop": true,
+    "mobileLowerBannerHiddenAtDesktop": true,
+    "desktopHeaderBannerVisibleAtDesktop": true,
+    "leftRightRailsHiddenBelowWideDesktop": true,
+    "leftRightRailsVisibleAtWideDesktop": true,
+    "noPageShowsFourOrFiveWells": true,
+    "desktopAndMobileModelsOverlap": false,
+    "ownerAdDensityIssueFixed": true,
+    "overflow": {
+      "widthsTested": [
+        390,
+        430,
+        768,
+        1024,
+        1280,
+        1440,
+        1920,
+        2560
+      ],
+      "widthsWithHorizontalScrollbar": [],
+      "noHorizontalScrollbarAtTestedWidths": true
+    },
+    "moreMenu": {
+      "opens": true,
+      "closesOnButton": true,
+      "closesOnEscape": true,
+      "closesOnOutsideClick": true,
+      "closesOnLinkClick": true,
+      "searchWorks": true,
+      "noAdsInMenu": true
+    },
+    "mobileNav": {
+      "opens": true,
+      "closesOnButton": true,
+      "closesOnEscape": true,
+      "closesOnLinkClick": true,
+      "searchWorks": true,
+      "noAdsInMobileNav": true,
+      "noAwkwardExposedSideGutter": true,
+      "noHorizontalOverflow": true
+    },
+    "failures": []
+  }
+}

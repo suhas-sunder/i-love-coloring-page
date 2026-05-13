@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-05-12T01:41:03.235Z",
+  "runId": "round-5c-svg-webp-r2-public-url-verification",
+  "sourcePlan": "pipeline/manifests/round-5c-svg-webp-url-verification-plan.json",
+  "validation": {
+    "configured": false,
+    "ready": false,
+    "isHttpUrl": false,
+    "isLocalhost": false,
+    "isR2Dev": false,
+    "isPrivateR2Endpoint": false,
+    "hasColoringPagesPrefix": false,
+    "hasOldTestPrefix": false,
+    "hasDuplicateColoringPagesPrefix": false,
+    "blockers": [
+      "NEXT_PUBLIC_COLORING_ASSET_BASE_URL or --public-base-url is not configured."
+    ]
+  },
+  "summary": {
+    "status": "not_run",
+    "publicBaseUrlConfigured": false,
+    "publicBaseUrlIsLocalhost": false,
+    "publicBaseUrlRedacted": "",
+    "publicUrlVerificationPassed": false,
+    "plannedUrlCount": 60,
+    "checkedUrlCount": 0,
+    "status200Count": 0,
+    "contentTypePassCount": 0,
+    "svgCorsPassCount": 0,
+    "webpCorsDocumentedCount": 0,
+    "noPrivateEndpointRedirect": true,
+    "noAccessDeniedXml": true,
+    "noCloudflareErrorHtml": true,
+    "noOldTestPrefix": true,
+    "noDoubleColoringPagesPrefix": true,
+    "r2DevTemporaryOnly": false,
+    "customDomainPreferred": false
+  },
+  "checks": [],
+  "blockers": [
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL or --public-base-url is not configured."
+  ]
+}

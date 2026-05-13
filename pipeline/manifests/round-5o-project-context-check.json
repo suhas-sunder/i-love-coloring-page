@@ -1,0 +1,31 @@
+{
+  "generatedAt": "2026-05-13T04:54:33.529Z",
+  "runId": "round-5o-project-context-check",
+  "summary": {
+    "correctRepository": true,
+    "repoName": "i-love-coloring-page",
+    "branch": "version-4",
+    "round5nCommitExists": true,
+    "appApiRoutePresent": false,
+    "staticExportConfigured": true,
+    "coloringPagesRouteExists": true,
+    "hubRouteExists": true,
+    "cleanBundleExists": true,
+    "cleanBundleSvgExists": true,
+    "cleanBundleWebpExists": true,
+    "optimizedBundleExists": true,
+    "uploadSource": "optimized",
+    "uploadSourceRoot": "pipeline/r2-upload-optimized/coloring-pages",
+    "round5pGatePassedForOptimizedSource": true,
+    "publicContainsGeneratedProductionMedia": false,
+    "imagesStatusClean": true,
+    "ilovesvgStatusClean": true,
+    "svgInternalOnly": true,
+    "publicDownloadsPngJpgWebp": true,
+    "adWellsVisibleByDefault": true,
+    "liveAdSenseCodePresent": false,
+    "imageSitemapPresent": false,
+    "openGraphImageGenerationPresent": false,
+    "wrongContextIndicatorsPresent": false
+  }
+}

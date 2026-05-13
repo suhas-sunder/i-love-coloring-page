@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-05-13T20:57:57.634Z",
+  "runId": "netlify-branch-fix-netlify-config",
+  "summary": {
+    "buildCommand": "npm run build",
+    "publishDirectory": "out",
+    "baseDirectory": "",
+    "buildCommandCorrect": true,
+    "publishDirectoryOut": true,
+    "noBaseDirectoryConfigured": true,
+    "selfRedirectRulePresent": false,
+    "generatedRedirectsExists": false,
+    "generatedRedirectsSelfRedirect": false,
+    "repoRootPublishConfigured": false,
+    "passed": true
+  },
+  "redirectRules": []
+}

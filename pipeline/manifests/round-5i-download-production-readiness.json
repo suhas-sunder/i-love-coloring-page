@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-05-12T18:20:46.475Z",
+  "runId": "round-5i-download-production-readiness",
+  "custom_domain_verified": false,
+  "svg_urls_passed": false,
+  "webp_urls_passed": false,
+  "svg_cors_passed": false,
+  "browser_canvas_export_passed": false,
+  "print_ready": false,
+  "png_download_ready": false,
+  "jpg_download_ready": false,
+  "webp_download_ready": false,
+  "svg_user_download_absent": true,
+  "cache_headers_acceptable": false,
+  "ready_for_full_upload": false,
+  "ready_for_image_sitemap": false,
+  "ready_for_og_images": false,
+  "live_ads_in_scope": false,
+  "blockers": [
+    "NEXT_PUBLIC_SITE_URL is not configured.",
+    "NEXT_PUBLIC_SITE_URL is not a valid URL.",
+    "NEXT_PUBLIC_SITE_URL must be HTTPS for production-like verification.",
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL must be HTTPS.",
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL must not be localhost or loopback.",
+    "Custom-domain URL verification was not run because production-like env validation failed.",
+    "Custom-domain SVG CORS verification was not run because production-like env validation failed.",
+    "Cache and content-type checks were not run because production-like env validation failed.",
+    "Custom-domain browser QA was not run because production-like env validation failed.",
+    "Custom-domain env, URL, or SVG CORS checks are not ready, so browser QA was not run."
+  ],
+  "decision": "Production download readiness is blocked until final custom site and asset domains pass URL, CORS, cache, static export, and browser QA."
+}

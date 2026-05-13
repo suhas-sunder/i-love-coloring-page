@@ -1,0 +1,2644 @@
+{
+  "generatedAt": "2026-05-09",
+  "runId": "round-3b-approved-production-dry-run-line-thick",
+  "noIndexablePerImageRoutes": true,
+  "intendedConsumer": "future Next.js hub and gallery data, not per-image HTML pages",
+  "categories": [
+    {
+      "category": "animals",
+      "categorySlug": "animals",
+      "categoryTitle": "Animals",
+      "imageCount": 1,
+      "sampleItemIds": [
+        "animals__animals-butterflies__016ffbb0de"
+      ],
+      "items": [
+        {
+          "assetId": "animals__animals-butterflies__016ffbb0de",
+          "sourceRelativePath": "images/animals/animals-butterflies.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/animals/animals-butterflies-016ffbb0de.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/animals/animals-butterflies-016ffbb0de.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/animals/animals-butterflies-016ffbb0de-thumb.png"
+          },
+          "altTextCandidate": "Animals Butterflies coloring page",
+          "titleCandidate": "Animals Butterflies",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Animals playing cards",
+      "categorySlug": "animals-playing-cards",
+      "categoryTitle": "Animals Playing Cards",
+      "imageCount": 11,
+      "sampleItemIds": [
+        "animals-playing-cards__animals-armadillo__1a6eaccdef",
+        "animals-playing-cards__animals-armadillos__50db4716e5",
+        "animals-playing-cards__animals-armadillos-wildlife__f2912c1ad5",
+        "animals-playing-cards__animals-baboon__3019f9ef3d",
+        "animals-playing-cards__animals-baboons__5f19666c69",
+        "animals-playing-cards__animals-baboons-hanging__398854ec28",
+        "animals-playing-cards__animals-badger__46333741c3",
+        "animals-playing-cards__animals-badgers__701e4f01fa",
+        "animals-playing-cards__animals-badgers-wildlife__d717f79524",
+        "animals-playing-cards__cats-playing-cards__c22648db9b",
+        "animals-playing-cards__mice-playing-cards__4c3ddb81e4"
+      ],
+      "items": [
+        {
+          "assetId": "animals-playing-cards__animals-armadillo__1a6eaccdef",
+          "sourceRelativePath": "images/Animals playing cards/animals-armadillo.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/animals-playing-cards/animals-armadillo-1a6eaccdef.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/animals-playing-cards/animals-armadillo-1a6eaccdef.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/animals-playing-cards/animals-armadillo-1a6eaccdef-thumb.png"
+          },
+          "altTextCandidate": "Animals Armadillo coloring page",
+          "titleCandidate": "Animals Armadillo",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_duplicate_filename_collision_handled",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-armadillos__50db4716e5",
+          "sourceRelativePath": "images/Animals playing cards/animals-armadillos.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/animals-playing-cards/animals-armadillos-50db4716e5.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/animals-playing-cards/animals-armadillos-50db4716e5.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/animals-playing-cards/animals-armadillos-50db4716e5-thumb.png"
+          },
+          "altTextCandidate": "Animals Armadillos coloring page",
+          "titleCandidate": "Animals Armadillos",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_duplicate_filename_collision_handled",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-armadillos-wildlife__f2912c1ad5",
+          "sourceRelativePath": "images/Animals playing cards/animals-armadillos-wildlife.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/animals-playing-cards/animals-armadillos-wildlife-f2912c1ad5.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/animals-playing-cards/animals-armadillos-wildlife-f2912c1ad5.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/animals-playing-cards/animals-armadillos-wildlife-f2912c1ad5-thumb.png"
+          },
+          "altTextCandidate": "Animals Armadillos Wildlife coloring page",
+          "titleCandidate": "Animals Armadillos Wildlife",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_duplicate_filename_collision_handled",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-baboon__3019f9ef3d",
+          "sourceRelativePath": "images/Animals playing cards/animals-baboon.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/animals-playing-cards/animals-baboon-3019f9ef3d.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/animals-playing-cards/animals-baboon-3019f9ef3d.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/animals-playing-cards/animals-baboon-3019f9ef3d-thumb.png"
+          },
+          "altTextCandidate": "Animals Baboon coloring page",
+          "titleCandidate": "Animals Baboon",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_duplicate_filename_collision_handled",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-baboons__5f19666c69",
+          "sourceRelativePath": "images/Animals playing cards/animals-baboons.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/animals-playing-cards/animals-baboons-5f19666c69.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/animals-playing-cards/animals-baboons-5f19666c69.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/animals-playing-cards/animals-baboons-5f19666c69-thumb.png"
+          },
+          "altTextCandidate": "Animals Baboons coloring page",
+          "titleCandidate": "Animals Baboons",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_duplicate_filename_collision_handled",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-baboons-hanging__398854ec28",
+          "sourceRelativePath": "images/Animals playing cards/animals-baboons-hanging.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/animals-playing-cards/animals-baboons-hanging-398854ec28.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/animals-playing-cards/animals-baboons-hanging-398854ec28.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/animals-playing-cards/animals-baboons-hanging-398854ec28-thumb.png"
+          },
+          "altTextCandidate": "Animals Baboons Hanging coloring page",
+          "titleCandidate": "Animals Baboons Hanging",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_duplicate_filename_collision_handled",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-badger__46333741c3",
+          "sourceRelativePath": "images/Animals playing cards/animals-badger.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/animals-playing-cards/animals-badger-46333741c3.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/animals-playing-cards/animals-badger-46333741c3.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/animals-playing-cards/animals-badger-46333741c3-thumb.png"
+          },
+          "altTextCandidate": "Animals Badger coloring page",
+          "titleCandidate": "Animals Badger",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_duplicate_filename_collision_handled",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-badgers__701e4f01fa",
+          "sourceRelativePath": "images/Animals playing cards/animals-badgers.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/animals-playing-cards/animals-badgers-701e4f01fa.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/animals-playing-cards/animals-badgers-701e4f01fa.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/animals-playing-cards/animals-badgers-701e4f01fa-thumb.png"
+          },
+          "altTextCandidate": "Animals Badgers coloring page",
+          "titleCandidate": "Animals Badgers",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_duplicate_filename_collision_handled",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__animals-badgers-wildlife__d717f79524",
+          "sourceRelativePath": "images/Animals playing cards/animals-badgers-wildlife.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/animals-playing-cards/animals-badgers-wildlife-d717f79524.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/animals-playing-cards/animals-badgers-wildlife-d717f79524.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/animals-playing-cards/animals-badgers-wildlife-d717f79524-thumb.png"
+          },
+          "altTextCandidate": "Animals Badgers Wildlife coloring page",
+          "titleCandidate": "Animals Badgers Wildlife",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_duplicate_filename_collision_handled",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "animals-playing-cards__cats-playing-cards__c22648db9b",
+          "sourceRelativePath": "images/Animals playing cards/cats-playing-cards.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/animals-playing-cards/cats-playing-cards-c22648db9b.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/animals-playing-cards/cats-playing-cards-c22648db9b.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/animals-playing-cards/cats-playing-cards-c22648db9b-thumb.png"
+          },
+          "altTextCandidate": "Cats Playing Cards coloring page",
+          "titleCandidate": "Cats Playing Cards",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        },
+        {
+          "assetId": "animals-playing-cards__mice-playing-cards__4c3ddb81e4",
+          "sourceRelativePath": "images/Animals playing cards/mice-playing-cards.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/animals-playing-cards/mice-playing-cards-4c3ddb81e4.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/animals-playing-cards/mice-playing-cards-4c3ddb81e4.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/animals-playing-cards/mice-playing-cards-4c3ddb81e4-thumb.png"
+          },
+          "altTextCandidate": "Mice Playing Cards coloring page",
+          "titleCandidate": "Mice Playing Cards",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        }
+      ]
+    },
+    {
+      "category": "anime-girls",
+      "categorySlug": "anime-girls",
+      "categoryTitle": "Anime Girls",
+      "imageCount": 12,
+      "sampleItemIds": [
+        "anime-girls__anime-girl-bat-hoodie-plushie__001c0e28be",
+        "anime-girls__anime-girl-cerberus-gate-guard__17fd627531",
+        "anime-girls__anime-girl-dancing-ballerina__5a1b3b183a",
+        "anime-girls__anime-girl-summoning-cute-hearts__2cdbd95749",
+        "anime-girls__anime-girl-summoning-jutsu-armadillo-plushies__d5cf38eb87",
+        "anime-girls__anime-girl-summoning-jutsu-crystal-dragon__ba9a35e40b",
+        "anime-girls__anime-girl-summoning-jutsu-raccoons__443a729e66",
+        "anime-girls__anime-girl-summoning-jutsu-wolves__ff6d1d0488",
+        "anime-girls__anime-girl-summoning-magic-musical-sword-plushies__72066c4f84",
+        "anime-girls__anime-girl-summoning-mushroom-fairy-plushies__a1778cbdbd",
+        "anime-girls__anime-girl-thief__8a5252f8da",
+        "anime-girls__anime-girl-vampire-siege__e9ce96c8ad"
+      ],
+      "items": [
+        {
+          "assetId": "anime-girls__anime-girl-bat-hoodie-plushie__001c0e28be",
+          "sourceRelativePath": "images/anime-girls/anime-girl-bat-hoodie-plushie.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/anime-girls/anime-girl-bat-hoodie-plushie-001c0e28be.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/anime-girls/anime-girl-bat-hoodie-plushie-001c0e28be.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/anime-girls/anime-girl-bat-hoodie-plushie-001c0e28be-thumb.png"
+          },
+          "altTextCandidate": "Anime Girl Bat Hoodie Plushie coloring page",
+          "titleCandidate": "Anime Girl Bat Hoodie Plushie",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "anime-girls__anime-girl-cerberus-gate-guard__17fd627531",
+          "sourceRelativePath": "images/anime-girls/anime-girl-cerberus-gate-guard.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/anime-girls/anime-girl-cerberus-gate-guard-17fd627531.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/anime-girls/anime-girl-cerberus-gate-guard-17fd627531.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/anime-girls/anime-girl-cerberus-gate-guard-17fd627531-thumb.png"
+          },
+          "altTextCandidate": "Anime Girl Cerberus Gate Guard coloring page",
+          "titleCandidate": "Anime Girl Cerberus Gate Guard",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "anime-girls__anime-girl-dancing-ballerina__5a1b3b183a",
+          "sourceRelativePath": "images/anime-girls/anime-girl-dancing-ballerina.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/anime-girls/anime-girl-dancing-ballerina-5a1b3b183a.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/anime-girls/anime-girl-dancing-ballerina-5a1b3b183a.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/anime-girls/anime-girl-dancing-ballerina-5a1b3b183a-thumb.png"
+          },
+          "altTextCandidate": "Anime Girl Dancing Ballerina coloring page",
+          "titleCandidate": "Anime Girl Dancing Ballerina",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "anime-girls__anime-girl-summoning-cute-hearts__2cdbd95749",
+          "sourceRelativePath": "images/anime-girls/anime-girl-summoning-cute-hearts.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/anime-girls/anime-girl-summoning-cute-hearts-2cdbd95749.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/anime-girls/anime-girl-summoning-cute-hearts-2cdbd95749.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/anime-girls/anime-girl-summoning-cute-hearts-2cdbd95749-thumb.png"
+          },
+          "altTextCandidate": "Anime Girl Summoning Cute Hearts coloring page",
+          "titleCandidate": "Anime Girl Summoning Cute Hearts",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "anime-girls__anime-girl-summoning-jutsu-armadillo-plushies__d5cf38eb87",
+          "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-armadillo-plushies.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/anime-girls/anime-girl-summoning-jutsu-armadillo-plushies-d5cf38eb87.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/anime-girls/anime-girl-summoning-jutsu-armadillo-plushies-d5cf38eb87.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/anime-girls/anime-girl-summoning-jutsu-armadillo-plushies-d5cf38eb87-thumb.png"
+          },
+          "altTextCandidate": "Anime Girl Summoning Jutsu Armadillo Plushies coloring page",
+          "titleCandidate": "Anime Girl Summoning Jutsu Armadillo Plushies",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_high_detail",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_possible_complexity",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "anime-girls__anime-girl-summoning-jutsu-crystal-dragon__ba9a35e40b",
+          "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-crystal-dragon.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/anime-girls/anime-girl-summoning-jutsu-crystal-dragon-ba9a35e40b.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/anime-girls/anime-girl-summoning-jutsu-crystal-dragon-ba9a35e40b.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/anime-girls/anime-girl-summoning-jutsu-crystal-dragon-ba9a35e40b-thumb.png"
+          },
+          "altTextCandidate": "Anime Girl Summoning Jutsu Crystal Dragon coloring page",
+          "titleCandidate": "Anime Girl Summoning Jutsu Crystal Dragon",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_high_detail",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_possible_complexity",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "anime-girls__anime-girl-summoning-jutsu-raccoons__443a729e66",
+          "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-raccoons.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/anime-girls/anime-girl-summoning-jutsu-raccoons-443a729e66.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/anime-girls/anime-girl-summoning-jutsu-raccoons-443a729e66.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/anime-girls/anime-girl-summoning-jutsu-raccoons-443a729e66-thumb.png"
+          },
+          "altTextCandidate": "Anime Girl Summoning Jutsu Raccoons coloring page",
+          "titleCandidate": "Anime Girl Summoning Jutsu Raccoons",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_high_detail",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_possible_complexity",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "anime-girls__anime-girl-summoning-jutsu-wolves__ff6d1d0488",
+          "sourceRelativePath": "images/anime-girls/anime-girl-summoning-jutsu-wolves.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/anime-girls/anime-girl-summoning-jutsu-wolves-ff6d1d0488.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/anime-girls/anime-girl-summoning-jutsu-wolves-ff6d1d0488.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/anime-girls/anime-girl-summoning-jutsu-wolves-ff6d1d0488-thumb.png"
+          },
+          "altTextCandidate": "Anime Girl Summoning Jutsu Wolves coloring page",
+          "titleCandidate": "Anime Girl Summoning Jutsu Wolves",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_high_detail",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_possible_complexity",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "anime-girls__anime-girl-summoning-magic-musical-sword-plushies__72066c4f84",
+          "sourceRelativePath": "images/anime-girls/anime-girl-summoning-magic-musical-sword-plushies.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/anime-girls/anime-girl-summoning-magic-musical-sword-plushies-72066c4f84.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/anime-girls/anime-girl-summoning-magic-musical-sword-plushies-72066c4f84.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/anime-girls/anime-girl-summoning-magic-musical-sword-plushies-72066c4f84-thumb.png"
+          },
+          "altTextCandidate": "Anime Girl Summoning Magic Musical Sword Plushies coloring page",
+          "titleCandidate": "Anime Girl Summoning Magic Musical Sword Plushies",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_high_detail",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_possible_complexity",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "anime-girls__anime-girl-summoning-mushroom-fairy-plushies__a1778cbdbd",
+          "sourceRelativePath": "images/anime-girls/anime-girl-summoning-mushroom-fairy-plushies.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/anime-girls/anime-girl-summoning-mushroom-fairy-plushies-a1778cbdbd.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/anime-girls/anime-girl-summoning-mushroom-fairy-plushies-a1778cbdbd.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/anime-girls/anime-girl-summoning-mushroom-fairy-plushies-a1778cbdbd-thumb.png"
+          },
+          "altTextCandidate": "Anime Girl Summoning Mushroom Fairy Plushies coloring page",
+          "titleCandidate": "Anime Girl Summoning Mushroom Fairy Plushies",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_high_detail",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_possible_complexity",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "anime-girls__anime-girl-thief__8a5252f8da",
+          "sourceRelativePath": "images/anime-girls/old-cards/anime-girl-thief.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/anime-girls/anime-girl-thief-8a5252f8da.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/anime-girls/anime-girl-thief-8a5252f8da.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/anime-girls/anime-girl-thief-8a5252f8da-thumb.png"
+          },
+          "altTextCandidate": "Anime Girl Thief coloring page",
+          "titleCandidate": "Anime Girl Thief",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_duplicate_filename_collision_handled",
+            "soft_warning_high_detail",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_possible_complexity",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "anime-girls__anime-girl-vampire-siege__e9ce96c8ad",
+          "sourceRelativePath": "images/anime-girls/anime-girl-vampire-siege.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/anime-girls/anime-girl-vampire-siege-e9ce96c8ad.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/anime-girls/anime-girl-vampire-siege-e9ce96c8ad.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/anime-girls/anime-girl-vampire-siege-e9ce96c8ad-thumb.png"
+          },
+          "altTextCandidate": "Anime Girl Vampire Siege coloring page",
+          "titleCandidate": "Anime Girl Vampire Siege",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "birds",
+      "categorySlug": "birds",
+      "categoryTitle": "Birds",
+      "imageCount": 4,
+      "sampleItemIds": [
+        "birds__birds-booby__0116ccb712",
+        "birds__birds-cardinal__8fa3cbca04",
+        "birds__birds-macaw-parrot-sitting__ffc0bb9e57",
+        "birds__birds-snow-bunting__55540ffe00"
+      ],
+      "items": [
+        {
+          "assetId": "birds__birds-booby__0116ccb712",
+          "sourceRelativePath": "images/birds/birds-booby.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/birds/birds-booby-0116ccb712.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/birds/birds-booby-0116ccb712.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/birds/birds-booby-0116ccb712-thumb.png"
+          },
+          "altTextCandidate": "Birds Booby coloring page",
+          "titleCandidate": "Birds Booby",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        },
+        {
+          "assetId": "birds__birds-cardinal__8fa3cbca04",
+          "sourceRelativePath": "images/birds/birds-cardinal.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/birds/birds-cardinal-8fa3cbca04.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/birds/birds-cardinal-8fa3cbca04.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/birds/birds-cardinal-8fa3cbca04-thumb.png"
+          },
+          "altTextCandidate": "Birds Cardinal coloring page",
+          "titleCandidate": "Birds Cardinal",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        },
+        {
+          "assetId": "birds__birds-macaw-parrot-sitting__ffc0bb9e57",
+          "sourceRelativePath": "images/birds/birds-macaw-parrot-sitting.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/birds/birds-macaw-parrot-sitting-ffc0bb9e57.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/birds/birds-macaw-parrot-sitting-ffc0bb9e57.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/birds/birds-macaw-parrot-sitting-ffc0bb9e57-thumb.png"
+          },
+          "altTextCandidate": "Birds Macaw Parrot Sitting coloring page",
+          "titleCandidate": "Birds Macaw Parrot Sitting",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        },
+        {
+          "assetId": "birds__birds-snow-bunting__55540ffe00",
+          "sourceRelativePath": "images/birds/birds-snow-bunting.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/birds/birds-snow-bunting-55540ffe00.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/birds/birds-snow-bunting-55540ffe00.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/birds/birds-snow-bunting-55540ffe00-thumb.png"
+          },
+          "altTextCandidate": "Birds Snow Bunting coloring page",
+          "titleCandidate": "Birds Snow Bunting",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        }
+      ]
+    },
+    {
+      "category": "chibi",
+      "categorySlug": "chibi",
+      "categoryTitle": "Chibi",
+      "imageCount": 12,
+      "sampleItemIds": [
+        "chibi__chibi-animals-pets-dogs-old-english-sheepdog__ff97a096c3",
+        "chibi__chibi-dragon__5c5b02a5f9",
+        "chibi__chibi-enchanted-forest-fairy-dancing-under-moonlight__00578c2506",
+        "chibi__chibi-flowers-paper-daisy-kawaii__14c5b1714c",
+        "chibi__chibi-holiday-halloween-ghost-floating-in-haunted-hallway-coloring-page__2ecd4724a1",
+        "chibi__chibi-holiday-halloween-witch-hat-and-potion-bottles-coloring-page__74c5898630",
+        "chibi__chibi-leviathan-dragon__8b4e46e982",
+        "chibi__chibi-mushroom-artists-conk-kawaii__e5ba88231b",
+        "chibi__chibi-mushroom-friend__ce358f4b21",
+        "chibi__chibi-plushie-duck__b6c74cea43",
+        "chibi__chibi-plushie-flamingo__a32d621260",
+        "chibi__chibi-plushie-kiwi-bird__4205a7df9c"
+      ],
+      "items": [
+        {
+          "assetId": "chibi__chibi-animals-pets-dogs-old-english-sheepdog__ff97a096c3",
+          "sourceRelativePath": "images/chibi/chibi-animals-pets-dogs-old-english-sheepdog.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/chibi/chibi-animals-pets-dogs-old-english-sheepdog-ff97a096c3.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/chibi/chibi-animals-pets-dogs-old-english-sheepdog-ff97a096c3.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/chibi/chibi-animals-pets-dogs-old-english-sheepdog-ff97a096c3-thumb.png"
+          },
+          "altTextCandidate": "Chibi Animals Pets Dogs Old English Sheepdog coloring page",
+          "titleCandidate": "Chibi Animals Pets Dogs Old English Sheepdog",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "chibi__chibi-dragon__5c5b02a5f9",
+          "sourceRelativePath": "images/chibi/chibi-Dragon.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/chibi/chibi-dragon-5c5b02a5f9.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/chibi/chibi-dragon-5c5b02a5f9.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/chibi/chibi-dragon-5c5b02a5f9-thumb.png"
+          },
+          "altTextCandidate": "Chibi Dragon coloring page",
+          "titleCandidate": "Chibi Dragon",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "chibi__chibi-enchanted-forest-fairy-dancing-under-moonlight__00578c2506",
+          "sourceRelativePath": "images/chibi/chibi-enchanted-forest-fairy-dancing-under-moonlight.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/chibi/chibi-enchanted-forest-fairy-dancing-under-moonlight-00578c2506.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/chibi/chibi-enchanted-forest-fairy-dancing-under-moonlight-00578c2506.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/chibi/chibi-enchanted-forest-fairy-dancing-under-moonlight-00578c2506-thumb.png"
+          },
+          "altTextCandidate": "Chibi Enchanted Forest Fairy Dancing Under Moonlight coloring page",
+          "titleCandidate": "Chibi Enchanted Forest Fairy Dancing Under Moonlight",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "chibi__chibi-flowers-paper-daisy-kawaii__14c5b1714c",
+          "sourceRelativePath": "images/chibi/chibi-flowers-paper-daisy-kawaii.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/chibi/chibi-flowers-paper-daisy-kawaii-14c5b1714c.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/chibi/chibi-flowers-paper-daisy-kawaii-14c5b1714c.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/chibi/chibi-flowers-paper-daisy-kawaii-14c5b1714c-thumb.png"
+          },
+          "altTextCandidate": "Chibi Flowers Paper Daisy Kawaii coloring page",
+          "titleCandidate": "Chibi Flowers Paper Daisy Kawaii",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "chibi__chibi-holiday-halloween-ghost-floating-in-haunted-hallway-coloring-page__2ecd4724a1",
+          "sourceRelativePath": "images/chibi/chibi-holiday-halloween-ghost-floating-in-haunted-hallway-coloring-page.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/chibi/chibi-holiday-halloween-ghost-floating-in-haunted-hallway-coloring-page-2ecd4724a1.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/chibi/chibi-holiday-halloween-ghost-floating-in-haunted-hallway-coloring-page-2ecd4724a1.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/chibi/chibi-holiday-halloween-ghost-floating-in-haunted-hallway-coloring-page-2ecd4724a1-thumb.png"
+          },
+          "altTextCandidate": "Chibi Holiday Halloween Ghost Floating In Haunted Hallway Coloring Page coloring page",
+          "titleCandidate": "Chibi Holiday Halloween Ghost Floating In Haunted Hallway Coloring Page",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "chibi__chibi-holiday-halloween-witch-hat-and-potion-bottles-coloring-page__74c5898630",
+          "sourceRelativePath": "images/chibi/chibi-holiday-halloween-witch-hat-and-potion-bottles-coloring-page.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/chibi/chibi-holiday-halloween-witch-hat-and-potion-bottles-coloring-page-74c5898630.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/chibi/chibi-holiday-halloween-witch-hat-and-potion-bottles-coloring-page-74c5898630.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/chibi/chibi-holiday-halloween-witch-hat-and-potion-bottles-coloring-page-74c5898630-thumb.png"
+          },
+          "altTextCandidate": "Chibi Holiday Halloween Witch Hat And Potion Bottles Coloring Page coloring page",
+          "titleCandidate": "Chibi Holiday Halloween Witch Hat And Potion Bottles Coloring Page",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "chibi__chibi-leviathan-dragon__8b4e46e982",
+          "sourceRelativePath": "images/chibi/chibi-leviathan-dragon.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/chibi/chibi-leviathan-dragon-8b4e46e982.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/chibi/chibi-leviathan-dragon-8b4e46e982.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/chibi/chibi-leviathan-dragon-8b4e46e982-thumb.png"
+          },
+          "altTextCandidate": "Chibi Leviathan Dragon coloring page",
+          "titleCandidate": "Chibi Leviathan Dragon",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "chibi__chibi-mushroom-artists-conk-kawaii__e5ba88231b",
+          "sourceRelativePath": "images/chibi/chibi-mushroom-artists-conk-kawaii.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/chibi/chibi-mushroom-artists-conk-kawaii-e5ba88231b.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/chibi/chibi-mushroom-artists-conk-kawaii-e5ba88231b.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/chibi/chibi-mushroom-artists-conk-kawaii-e5ba88231b-thumb.png"
+          },
+          "altTextCandidate": "Chibi Mushroom Artists Conk Kawaii coloring page",
+          "titleCandidate": "Chibi Mushroom Artists Conk Kawaii",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "chibi__chibi-mushroom-friend__ce358f4b21",
+          "sourceRelativePath": "images/chibi/chibi-mushroom-friend.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/chibi/chibi-mushroom-friend-ce358f4b21.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/chibi/chibi-mushroom-friend-ce358f4b21.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/chibi/chibi-mushroom-friend-ce358f4b21-thumb.png"
+          },
+          "altTextCandidate": "Chibi Mushroom Friend coloring page",
+          "titleCandidate": "Chibi Mushroom Friend",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "chibi__chibi-plushie-duck__b6c74cea43",
+          "sourceRelativePath": "images/chibi/chibi-plushie-duck.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/chibi/chibi-plushie-duck-b6c74cea43.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/chibi/chibi-plushie-duck-b6c74cea43.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/chibi/chibi-plushie-duck-b6c74cea43-thumb.png"
+          },
+          "altTextCandidate": "Chibi Plushie Duck coloring page",
+          "titleCandidate": "Chibi Plushie Duck",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "chibi__chibi-plushie-flamingo__a32d621260",
+          "sourceRelativePath": "images/chibi/chibi-plushie-flamingo.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/chibi/chibi-plushie-flamingo-a32d621260.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/chibi/chibi-plushie-flamingo-a32d621260.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/chibi/chibi-plushie-flamingo-a32d621260-thumb.png"
+          },
+          "altTextCandidate": "Chibi Plushie Flamingo coloring page",
+          "titleCandidate": "Chibi Plushie Flamingo",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "chibi__chibi-plushie-kiwi-bird__4205a7df9c",
+          "sourceRelativePath": "images/chibi/chibi-plushie-kiwi-bird.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/chibi/chibi-plushie-kiwi-bird-4205a7df9c.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/chibi/chibi-plushie-kiwi-bird-4205a7df9c.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/chibi/chibi-plushie-kiwi-bird-4205a7df9c-thumb.png"
+          },
+          "altTextCandidate": "Chibi Plushie Kiwi Bird coloring page",
+          "titleCandidate": "Chibi Plushie Kiwi Bird",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "christmas",
+      "categorySlug": "christmas",
+      "categoryTitle": "Christmas",
+      "imageCount": 3,
+      "sampleItemIds": [
+        "christmas__holiday-christmas-angel-holding-candle-in-snowy-night-coloring-page__fde31c074f",
+        "christmas__holiday-christmas-animals-kawaii-foxes__70f122f707",
+        "christmas__holiday-christmas-animals-unicorns__000d59a861"
+      ],
+      "items": [
+        {
+          "assetId": "christmas__holiday-christmas-angel-holding-candle-in-snowy-night-coloring-page__fde31c074f",
+          "sourceRelativePath": "images/christmas/holiday-christmas-angel-holding-candle-in-snowy-night-coloring-page.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/christmas/holiday-christmas-angel-holding-candle-in-snowy-night-coloring-page-fde31c074f.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/christmas/holiday-christmas-angel-holding-candle-in-snowy-night-coloring-page-fde31c074f.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/christmas/holiday-christmas-angel-holding-candle-in-snowy-night-coloring-page-fde31c074f-thumb.png"
+          },
+          "altTextCandidate": "Holiday Christmas Angel Holding Candle In Snowy Night Coloring Page coloring page",
+          "titleCandidate": "Holiday Christmas Angel Holding Candle In Snowy Night Coloring Page",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        },
+        {
+          "assetId": "christmas__holiday-christmas-animals-kawaii-foxes__70f122f707",
+          "sourceRelativePath": "images/christmas/holiday-christmas-animals-kawaii-foxes.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/christmas/holiday-christmas-animals-kawaii-foxes-70f122f707.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/christmas/holiday-christmas-animals-kawaii-foxes-70f122f707.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/christmas/holiday-christmas-animals-kawaii-foxes-70f122f707-thumb.png"
+          },
+          "altTextCandidate": "Holiday Christmas Animals Kawaii Foxes coloring page",
+          "titleCandidate": "Holiday Christmas Animals Kawaii Foxes",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        },
+        {
+          "assetId": "christmas__holiday-christmas-animals-unicorns__000d59a861",
+          "sourceRelativePath": "images/christmas/holiday-christmas-animals-unicorns.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/christmas/holiday-christmas-animals-unicorns-000d59a861.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/christmas/holiday-christmas-animals-unicorns-000d59a861.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/christmas/holiday-christmas-animals-unicorns-000d59a861-thumb.png"
+          },
+          "altTextCandidate": "Holiday Christmas Animals Unicorns coloring page",
+          "titleCandidate": "Holiday Christmas Animals Unicorns",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        }
+      ]
+    },
+    {
+      "category": "dinosaurs",
+      "categorySlug": "dinosaurs",
+      "categoryTitle": "Dinosaurs",
+      "imageCount": 2,
+      "sampleItemIds": [
+        "dinosaurs__prehistoric-extinction__fb644701eb",
+        "dinosaurs__prehistoric-mosasaurus__08d7ae3d1a"
+      ],
+      "items": [
+        {
+          "assetId": "dinosaurs__prehistoric-extinction__fb644701eb",
+          "sourceRelativePath": "images/dinosaurs/prehistoric-extinction.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/dinosaurs/prehistoric-extinction-fb644701eb.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/dinosaurs/prehistoric-extinction-fb644701eb.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/dinosaurs/prehistoric-extinction-fb644701eb-thumb.png"
+          },
+          "altTextCandidate": "Prehistoric Extinction coloring page",
+          "titleCandidate": "Prehistoric Extinction",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        },
+        {
+          "assetId": "dinosaurs__prehistoric-mosasaurus__08d7ae3d1a",
+          "sourceRelativePath": "images/dinosaurs/prehistoric-mosasaurus.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/dinosaurs/prehistoric-mosasaurus-08d7ae3d1a.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/dinosaurs/prehistoric-mosasaurus-08d7ae3d1a.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/dinosaurs/prehistoric-mosasaurus-08d7ae3d1a-thumb.png"
+          },
+          "altTextCandidate": "Prehistoric Mosasaurus coloring page",
+          "titleCandidate": "Prehistoric Mosasaurus",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        }
+      ]
+    },
+    {
+      "category": "dogs",
+      "categorySlug": "dogs",
+      "categoryTitle": "Dogs",
+      "imageCount": 2,
+      "sampleItemIds": [
+        "dogs__dogs-border-collie-playing__ff795b9bb4",
+        "dogs__dogs-samoyed__016ca48e4a"
+      ],
+      "items": [
+        {
+          "assetId": "dogs__dogs-border-collie-playing__ff795b9bb4",
+          "sourceRelativePath": "images/dogs/dogs-border-collie-playing.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/dogs/dogs-border-collie-playing-ff795b9bb4.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/dogs/dogs-border-collie-playing-ff795b9bb4.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/dogs/dogs-border-collie-playing-ff795b9bb4-thumb.png"
+          },
+          "altTextCandidate": "Dogs Border Collie Playing coloring page",
+          "titleCandidate": "Dogs Border Collie Playing",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        },
+        {
+          "assetId": "dogs__dogs-samoyed__016ca48e4a",
+          "sourceRelativePath": "images/dogs/dogs-samoyed.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/dogs/dogs-samoyed-016ca48e4a.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/dogs/dogs-samoyed-016ca48e4a.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/dogs/dogs-samoyed-016ca48e4a-thumb.png"
+          },
+          "altTextCandidate": "Dogs Samoyed coloring page",
+          "titleCandidate": "Dogs Samoyed",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        }
+      ]
+    },
+    {
+      "category": "dragons",
+      "categorySlug": "dragons",
+      "categoryTitle": "Dragons",
+      "imageCount": 1,
+      "sampleItemIds": [
+        "dragons__fire-dragon-playing-card__bb5d73e94b"
+      ],
+      "items": [
+        {
+          "assetId": "dragons__fire-dragon-playing-card__bb5d73e94b",
+          "sourceRelativePath": "images/dragons/fire-dragon-playing-card.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/dragons/fire-dragon-playing-card-bb5d73e94b.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/dragons/fire-dragon-playing-card-bb5d73e94b.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/dragons/fire-dragon-playing-card-bb5d73e94b-thumb.png"
+          },
+          "altTextCandidate": "Fire Dragon Playing Card coloring page",
+          "titleCandidate": "Fire Dragon Playing Card",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        }
+      ]
+    },
+    {
+      "category": "emoji",
+      "categorySlug": "emoji",
+      "categoryTitle": "Emoji",
+      "imageCount": 1,
+      "sampleItemIds": [
+        "emoji__u-1f605-grinning-face-with-sweat__5348e43db7"
+      ],
+      "items": [
+        {
+          "assetId": "emoji__u-1f605-grinning-face-with-sweat__5348e43db7",
+          "sourceRelativePath": "images/emoji/U+1F605-grinning-face-with-sweat.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/emoji/u-1f605-grinning-face-with-sweat-5348e43db7.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/emoji/u-1f605-grinning-face-with-sweat-5348e43db7.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/emoji/u-1f605-grinning-face-with-sweat-5348e43db7-thumb.png"
+          },
+          "altTextCandidate": "U+1F605 Grinning Face With Sweat coloring page",
+          "titleCandidate": "U+1F605 Grinning Face With Sweat",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        }
+      ]
+    },
+    {
+      "category": "fantasy",
+      "categorySlug": "fantasy",
+      "categoryTitle": "Fantasy",
+      "imageCount": 9,
+      "sampleItemIds": [
+        "fantasy__fantasy-chibi-phoenix-flight__bd83c0d408",
+        "fantasy__fantasy-creatures-dragon__3d2c737c54",
+        "fantasy__fantasy-creatures-minotaur__dfe8580916",
+        "fantasy__fantasy-creatures-storm-elemental__5e2dd9a074",
+        "fantasy__fantasy-dark-sorcerer-void-gate__ff7080e573",
+        "fantasy__fantasy-mountain-giant__9d22f5b1ae",
+        "fantasy__fantasy-ranger-forest-hunt__1eca4c2d96",
+        "fantasy__fantasy-river-guardian__82f7693f64",
+        "fantasy__fantasy-scout-jungle-hunt__006c2853eb"
+      ],
+      "items": [
+        {
+          "assetId": "fantasy__fantasy-chibi-phoenix-flight__bd83c0d408",
+          "sourceRelativePath": "images/fantasy/fantasy-chibi-phoenix-flight.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/fantasy/fantasy-chibi-phoenix-flight-bd83c0d408.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/fantasy/fantasy-chibi-phoenix-flight-bd83c0d408.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/fantasy/fantasy-chibi-phoenix-flight-bd83c0d408-thumb.png"
+          },
+          "altTextCandidate": "Fantasy Chibi Phoenix Flight coloring page",
+          "titleCandidate": "Fantasy Chibi Phoenix Flight",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "fantasy__fantasy-creatures-dragon__3d2c737c54",
+          "sourceRelativePath": "images/fantasy/fantasy-creatures-dragon.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/fantasy/fantasy-creatures-dragon-3d2c737c54.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/fantasy/fantasy-creatures-dragon-3d2c737c54.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/fantasy/fantasy-creatures-dragon-3d2c737c54-thumb.png"
+          },
+          "altTextCandidate": "Fantasy Creatures Dragon coloring page",
+          "titleCandidate": "Fantasy Creatures Dragon",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "fantasy__fantasy-creatures-minotaur__dfe8580916",
+          "sourceRelativePath": "images/fantasy/fantasy-creatures-minotaur.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/fantasy/fantasy-creatures-minotaur-dfe8580916.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/fantasy/fantasy-creatures-minotaur-dfe8580916.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/fantasy/fantasy-creatures-minotaur-dfe8580916-thumb.png"
+          },
+          "altTextCandidate": "Fantasy Creatures Minotaur coloring page",
+          "titleCandidate": "Fantasy Creatures Minotaur",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "fantasy__fantasy-creatures-storm-elemental__5e2dd9a074",
+          "sourceRelativePath": "images/fantasy/fantasy-creatures-storm-elemental.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/fantasy/fantasy-creatures-storm-elemental-5e2dd9a074.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/fantasy/fantasy-creatures-storm-elemental-5e2dd9a074.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/fantasy/fantasy-creatures-storm-elemental-5e2dd9a074-thumb.png"
+          },
+          "altTextCandidate": "Fantasy Creatures Storm Elemental coloring page",
+          "titleCandidate": "Fantasy Creatures Storm Elemental",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "fantasy__fantasy-dark-sorcerer-void-gate__ff7080e573",
+          "sourceRelativePath": "images/fantasy/fantasy-dark-sorcerer-void-gate.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/fantasy/fantasy-dark-sorcerer-void-gate-ff7080e573.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/fantasy/fantasy-dark-sorcerer-void-gate-ff7080e573.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/fantasy/fantasy-dark-sorcerer-void-gate-ff7080e573-thumb.png"
+          },
+          "altTextCandidate": "Fantasy Dark Sorcerer Void Gate coloring page",
+          "titleCandidate": "Fantasy Dark Sorcerer Void Gate",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_high_detail",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_possible_complexity",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "fantasy__fantasy-mountain-giant__9d22f5b1ae",
+          "sourceRelativePath": "images/fantasy/fantasy-mountain-giant.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/fantasy/fantasy-mountain-giant-9d22f5b1ae.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/fantasy/fantasy-mountain-giant-9d22f5b1ae.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/fantasy/fantasy-mountain-giant-9d22f5b1ae-thumb.png"
+          },
+          "altTextCandidate": "Fantasy Mountain Giant coloring page",
+          "titleCandidate": "Fantasy Mountain Giant",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_high_detail",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_possible_complexity",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "fantasy__fantasy-ranger-forest-hunt__1eca4c2d96",
+          "sourceRelativePath": "images/fantasy/fantasy-ranger-forest-hunt.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/fantasy/fantasy-ranger-forest-hunt-1eca4c2d96.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/fantasy/fantasy-ranger-forest-hunt-1eca4c2d96.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/fantasy/fantasy-ranger-forest-hunt-1eca4c2d96-thumb.png"
+          },
+          "altTextCandidate": "Fantasy Ranger Forest Hunt coloring page",
+          "titleCandidate": "Fantasy Ranger Forest Hunt",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "fantasy__fantasy-river-guardian__82f7693f64",
+          "sourceRelativePath": "images/fantasy/fantasy-river-guardian.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/fantasy/fantasy-river-guardian-82f7693f64.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/fantasy/fantasy-river-guardian-82f7693f64.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/fantasy/fantasy-river-guardian-82f7693f64-thumb.png"
+          },
+          "altTextCandidate": "Fantasy River Guardian coloring page",
+          "titleCandidate": "Fantasy River Guardian",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_high_detail",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_possible_complexity",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "fantasy__fantasy-scout-jungle-hunt__006c2853eb",
+          "sourceRelativePath": "images/fantasy/fantasy-scout-jungle-hunt.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/fantasy/fantasy-scout-jungle-hunt-006c2853eb.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/fantasy/fantasy-scout-jungle-hunt-006c2853eb.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/fantasy/fantasy-scout-jungle-hunt-006c2853eb-thumb.png"
+          },
+          "altTextCandidate": "Fantasy Scout Jungle Hunt coloring page",
+          "titleCandidate": "Fantasy Scout Jungle Hunt",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "flowers",
+      "categorySlug": "flowers",
+      "categoryTitle": "Flowers",
+      "imageCount": 4,
+      "sampleItemIds": [
+        "flowers__flowers-aster__fe9cc46a65",
+        "flowers__flowers-peach-blossom__a8803e3513",
+        "flowers__gardening-in-field-of-flowers-iceland__5d9b45744f",
+        "flowers__lowers-snowdrop__01c784b5b3"
+      ],
+      "items": [
+        {
+          "assetId": "flowers__flowers-aster__fe9cc46a65",
+          "sourceRelativePath": "images/flowers/flowers-aster.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/flowers/flowers-aster-fe9cc46a65.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/flowers/flowers-aster-fe9cc46a65.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/flowers/flowers-aster-fe9cc46a65-thumb.png"
+          },
+          "altTextCandidate": "Flowers Aster coloring page",
+          "titleCandidate": "Flowers Aster",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check"
+          ]
+        },
+        {
+          "assetId": "flowers__flowers-peach-blossom__a8803e3513",
+          "sourceRelativePath": "images/flowers/flowers-peach-blossom.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/flowers/flowers-peach-blossom-a8803e3513.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/flowers/flowers-peach-blossom-a8803e3513.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/flowers/flowers-peach-blossom-a8803e3513-thumb.png"
+          },
+          "altTextCandidate": "Flowers Peach Blossom coloring page",
+          "titleCandidate": "Flowers Peach Blossom",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_high_detail",
+            "soft_warning_possible_complexity",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "flowers__gardening-in-field-of-flowers-iceland__5d9b45744f",
+          "sourceRelativePath": "images/flowers/gardening-in-field-of-flowers-iceland.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/flowers/gardening-in-field-of-flowers-iceland-5d9b45744f.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/flowers/gardening-in-field-of-flowers-iceland-5d9b45744f.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/flowers/gardening-in-field-of-flowers-iceland-5d9b45744f-thumb.png"
+          },
+          "altTextCandidate": "Gardening In Field Of Flowers Iceland coloring page",
+          "titleCandidate": "Gardening In Field Of Flowers Iceland",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_high_detail",
+            "soft_warning_possible_complexity",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "flowers__lowers-snowdrop__01c784b5b3",
+          "sourceRelativePath": "images/flowers/lowers-snowdrop.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/flowers/lowers-snowdrop-01c784b5b3.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/flowers/lowers-snowdrop-01c784b5b3.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/flowers/lowers-snowdrop-01c784b5b3-thumb.png"
+          },
+          "altTextCandidate": "Lowers Snowdrop coloring page",
+          "titleCandidate": "Lowers Snowdrop",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "gardening",
+      "categorySlug": "gardening",
+      "categoryTitle": "Gardening",
+      "imageCount": 2,
+      "sampleItemIds": [
+        "gardening__gardening-mushroom-candlesnuff-fungus__fa542d3cd7",
+        "gardening__gardening-mushroom-lions-mane__0719ae2d97"
+      ],
+      "items": [
+        {
+          "assetId": "gardening__gardening-mushroom-candlesnuff-fungus__fa542d3cd7",
+          "sourceRelativePath": "images/gardening/gardening-mushroom-candlesnuff-fungus.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/gardening/gardening-mushroom-candlesnuff-fungus-fa542d3cd7.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/gardening/gardening-mushroom-candlesnuff-fungus-fa542d3cd7.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/gardening/gardening-mushroom-candlesnuff-fungus-fa542d3cd7-thumb.png"
+          },
+          "altTextCandidate": "Gardening Mushroom Candlesnuff Fungus coloring page",
+          "titleCandidate": "Gardening Mushroom Candlesnuff Fungus",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        },
+        {
+          "assetId": "gardening__gardening-mushroom-lions-mane__0719ae2d97",
+          "sourceRelativePath": "images/gardening/gardening-mushroom-lions-mane.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/gardening/gardening-mushroom-lions-mane-0719ae2d97.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/gardening/gardening-mushroom-lions-mane-0719ae2d97.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/gardening/gardening-mushroom-lions-mane-0719ae2d97-thumb.png"
+          },
+          "altTextCandidate": "Gardening Mushroom Lions Mane coloring page",
+          "titleCandidate": "Gardening Mushroom Lions Mane",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        }
+      ]
+    },
+    {
+      "category": "holiday",
+      "categorySlug": "holiday",
+      "categoryTitle": "Holiday",
+      "imageCount": 10,
+      "sampleItemIds": [
+        "holiday__holiday-birthday-celebration-plushie-antelope-family__cf8835f947",
+        "holiday__holiday-birthday-celebration-plushie-sloth-baby-family__0031534ec6",
+        "holiday__holiday-birthday-celebration-plushie-tiger-family__3bd99a4ccd",
+        "holiday__holiday-christmas-plushie-robot-family__ff88fbd969",
+        "holiday__holiday-christmas-plushie-tortoise-family__5a1ad1e8fe",
+        "holiday__holiday-halloween-costume-plushie-chameleon-family__9b87e124ef",
+        "holiday__holiday-halloween-costume-plushie-peacock-family__7c3140864f",
+        "holiday__holiday-halloween-costume-plushie-penguin-family__1a247683b4",
+        "holiday__holiday-halloween-costume-plushie-snail-family__b54dbecfd6",
+        "holiday__holiday-halloween-witch-flying-coloring-page__e67904355e"
+      ],
+      "items": [
+        {
+          "assetId": "holiday__holiday-birthday-celebration-plushie-antelope-family__cf8835f947",
+          "sourceRelativePath": "images/holiday/holiday-birthday-celebration-plushie-antelope-family.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/holiday/holiday-birthday-celebration-plushie-antelope-family-cf8835f947.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/holiday/holiday-birthday-celebration-plushie-antelope-family-cf8835f947.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/holiday/holiday-birthday-celebration-plushie-antelope-family-cf8835f947-thumb.png"
+          },
+          "altTextCandidate": "Holiday Birthday Celebration Plushie Antelope Family coloring page",
+          "titleCandidate": "Holiday Birthday Celebration Plushie Antelope Family",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check"
+          ]
+        },
+        {
+          "assetId": "holiday__holiday-birthday-celebration-plushie-sloth-baby-family__0031534ec6",
+          "sourceRelativePath": "images/holiday/holiday-birthday-celebration-plushie-sloth-baby-family.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/holiday/holiday-birthday-celebration-plushie-sloth-baby-family-0031534ec6.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/holiday/holiday-birthday-celebration-plushie-sloth-baby-family-0031534ec6.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/holiday/holiday-birthday-celebration-plushie-sloth-baby-family-0031534ec6-thumb.png"
+          },
+          "altTextCandidate": "Holiday Birthday Celebration Plushie Sloth Baby Family coloring page",
+          "titleCandidate": "Holiday Birthday Celebration Plushie Sloth Baby Family",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check"
+          ]
+        },
+        {
+          "assetId": "holiday__holiday-birthday-celebration-plushie-tiger-family__3bd99a4ccd",
+          "sourceRelativePath": "images/holiday/holiday-birthday-celebration-plushie-tiger-family.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/holiday/holiday-birthday-celebration-plushie-tiger-family-3bd99a4ccd.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/holiday/holiday-birthday-celebration-plushie-tiger-family-3bd99a4ccd.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/holiday/holiday-birthday-celebration-plushie-tiger-family-3bd99a4ccd-thumb.png"
+          },
+          "altTextCandidate": "Holiday Birthday Celebration Plushie Tiger Family coloring page",
+          "titleCandidate": "Holiday Birthday Celebration Plushie Tiger Family",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check"
+          ]
+        },
+        {
+          "assetId": "holiday__holiday-christmas-plushie-robot-family__ff88fbd969",
+          "sourceRelativePath": "images/holiday/holiday-christmas-plushie-robot-family.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/holiday/holiday-christmas-plushie-robot-family-ff88fbd969.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/holiday/holiday-christmas-plushie-robot-family-ff88fbd969.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/holiday/holiday-christmas-plushie-robot-family-ff88fbd969-thumb.png"
+          },
+          "altTextCandidate": "Holiday Christmas Plushie Robot Family coloring page",
+          "titleCandidate": "Holiday Christmas Plushie Robot Family",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check"
+          ]
+        },
+        {
+          "assetId": "holiday__holiday-christmas-plushie-tortoise-family__5a1ad1e8fe",
+          "sourceRelativePath": "images/holiday/holiday-christmas-plushie-tortoise-family.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/holiday/holiday-christmas-plushie-tortoise-family-5a1ad1e8fe.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/holiday/holiday-christmas-plushie-tortoise-family-5a1ad1e8fe.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/holiday/holiday-christmas-plushie-tortoise-family-5a1ad1e8fe-thumb.png"
+          },
+          "altTextCandidate": "Holiday Christmas Plushie Tortoise Family coloring page",
+          "titleCandidate": "Holiday Christmas Plushie Tortoise Family",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_high_detail",
+            "soft_warning_possible_complexity",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "holiday__holiday-halloween-costume-plushie-chameleon-family__9b87e124ef",
+          "sourceRelativePath": "images/holiday/holiday-halloween-costume-plushie-chameleon-family.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/holiday/holiday-halloween-costume-plushie-chameleon-family-9b87e124ef.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/holiday/holiday-halloween-costume-plushie-chameleon-family-9b87e124ef.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/holiday/holiday-halloween-costume-plushie-chameleon-family-9b87e124ef-thumb.png"
+          },
+          "altTextCandidate": "Holiday Halloween Costume Plushie Chameleon Family coloring page",
+          "titleCandidate": "Holiday Halloween Costume Plushie Chameleon Family",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check"
+          ]
+        },
+        {
+          "assetId": "holiday__holiday-halloween-costume-plushie-peacock-family__7c3140864f",
+          "sourceRelativePath": "images/holiday/holiday-halloween-costume-plushie-peacock-family.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/holiday/holiday-halloween-costume-plushie-peacock-family-7c3140864f.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/holiday/holiday-halloween-costume-plushie-peacock-family-7c3140864f.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/holiday/holiday-halloween-costume-plushie-peacock-family-7c3140864f-thumb.png"
+          },
+          "altTextCandidate": "Holiday Halloween Costume Plushie Peacock Family coloring page",
+          "titleCandidate": "Holiday Halloween Costume Plushie Peacock Family",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check"
+          ]
+        },
+        {
+          "assetId": "holiday__holiday-halloween-costume-plushie-penguin-family__1a247683b4",
+          "sourceRelativePath": "images/holiday/holiday-halloween-costume-plushie-penguin-family.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/holiday/holiday-halloween-costume-plushie-penguin-family-1a247683b4.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/holiday/holiday-halloween-costume-plushie-penguin-family-1a247683b4.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/holiday/holiday-halloween-costume-plushie-penguin-family-1a247683b4-thumb.png"
+          },
+          "altTextCandidate": "Holiday Halloween Costume Plushie Penguin Family coloring page",
+          "titleCandidate": "Holiday Halloween Costume Plushie Penguin Family",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check"
+          ]
+        },
+        {
+          "assetId": "holiday__holiday-halloween-costume-plushie-snail-family__b54dbecfd6",
+          "sourceRelativePath": "images/holiday/holiday-halloween-costume-plushie-snail-family.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/holiday/holiday-halloween-costume-plushie-snail-family-b54dbecfd6.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/holiday/holiday-halloween-costume-plushie-snail-family-b54dbecfd6.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/holiday/holiday-halloween-costume-plushie-snail-family-b54dbecfd6-thumb.png"
+          },
+          "altTextCandidate": "Holiday Halloween Costume Plushie Snail Family coloring page",
+          "titleCandidate": "Holiday Halloween Costume Plushie Snail Family",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check"
+          ]
+        },
+        {
+          "assetId": "holiday__holiday-halloween-witch-flying-coloring-page__e67904355e",
+          "sourceRelativePath": "images/holiday/holiday-halloween-witch-flying-coloring-page.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/holiday/holiday-halloween-witch-flying-coloring-page-e67904355e.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/holiday/holiday-halloween-witch-flying-coloring-page-e67904355e.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/holiday/holiday-halloween-witch-flying-coloring-page-e67904355e-thumb.png"
+          },
+          "altTextCandidate": "Holiday Halloween Witch Flying Coloring Page coloring page",
+          "titleCandidate": "Holiday Halloween Witch Flying Coloring Page",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "homes",
+      "categorySlug": "homes",
+      "categoryTitle": "Homes",
+      "imageCount": 1,
+      "sampleItemIds": [
+        "homes__homes-treehouse-with-slide__0878b9ca71"
+      ],
+      "items": [
+        {
+          "assetId": "homes__homes-treehouse-with-slide__0878b9ca71",
+          "sourceRelativePath": "images/homes/homes-treehouse-with-slide.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/homes/homes-treehouse-with-slide-0878b9ca71.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/homes/homes-treehouse-with-slide-0878b9ca71.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/homes/homes-treehouse-with-slide-0878b9ca71-thumb.png"
+          },
+          "altTextCandidate": "Homes Treehouse With Slide coloring page",
+          "titleCandidate": "Homes Treehouse With Slide",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        }
+      ]
+    },
+    {
+      "category": "horror",
+      "categorySlug": "horror",
+      "categoryTitle": "Horror",
+      "imageCount": 1,
+      "sampleItemIds": [
+        "horror__zombies__8638f6539a"
+      ],
+      "items": [
+        {
+          "assetId": "horror__zombies__8638f6539a",
+          "sourceRelativePath": "images/horror/zombies.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/horror/zombies-8638f6539a.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/horror/zombies-8638f6539a.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/horror/zombies-8638f6539a-thumb.png"
+          },
+          "altTextCandidate": "Zombies coloring page",
+          "titleCandidate": "Zombies",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_high_detail",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_possible_complexity",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "indoor-plants",
+      "categorySlug": "indoor-plants",
+      "categoryTitle": "Indoor Plants",
+      "imageCount": 3,
+      "sampleItemIds": [
+        "indoor-plants__indoor-plants-english-ivy__fe8b320a05",
+        "indoor-plants__indoor-plants-hoya-obovata__6d4f5fa27f",
+        "indoor-plants__indoor-plants-peace-lily__01c9f71c71"
+      ],
+      "items": [
+        {
+          "assetId": "indoor-plants__indoor-plants-english-ivy__fe8b320a05",
+          "sourceRelativePath": "images/indoor-plants/indoor-plants-english-ivy.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/indoor-plants/indoor-plants-english-ivy-fe8b320a05.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/indoor-plants/indoor-plants-english-ivy-fe8b320a05.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/indoor-plants/indoor-plants-english-ivy-fe8b320a05-thumb.png"
+          },
+          "altTextCandidate": "Indoor Plants English Ivy coloring page",
+          "titleCandidate": "Indoor Plants English Ivy",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        },
+        {
+          "assetId": "indoor-plants__indoor-plants-hoya-obovata__6d4f5fa27f",
+          "sourceRelativePath": "images/indoor-plants/indoor-plants-hoya-obovata.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/indoor-plants/indoor-plants-hoya-obovata-6d4f5fa27f.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/indoor-plants/indoor-plants-hoya-obovata-6d4f5fa27f.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/indoor-plants/indoor-plants-hoya-obovata-6d4f5fa27f-thumb.png"
+          },
+          "altTextCandidate": "Indoor Plants Hoya Obovata coloring page",
+          "titleCandidate": "Indoor Plants Hoya Obovata",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        },
+        {
+          "assetId": "indoor-plants__indoor-plants-peace-lily__01c9f71c71",
+          "sourceRelativePath": "images/indoor-plants/indoor-plants-peace-lily.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/indoor-plants/indoor-plants-peace-lily-01c9f71c71.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/indoor-plants/indoor-plants-peace-lily-01c9f71c71.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/indoor-plants/indoor-plants-peace-lily-01c9f71c71-thumb.png"
+          },
+          "altTextCandidate": "Indoor Plants Peace Lily coloring page",
+          "titleCandidate": "Indoor Plants Peace Lily",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        }
+      ]
+    },
+    {
+      "category": "Insects",
+      "categorySlug": "insects",
+      "categoryTitle": "Insects",
+      "imageCount": 3,
+      "sampleItemIds": [
+        "insects__insects-blue-morpho-butterfly-in-rainforest__feb57c5778",
+        "insects__insects-damselfly-perched-on-reed__0367b38c15",
+        "insects__insects-scorpion__904a5e6afa"
+      ],
+      "items": [
+        {
+          "assetId": "insects__insects-blue-morpho-butterfly-in-rainforest__feb57c5778",
+          "sourceRelativePath": "images/Insects/insects-blue-morpho-butterfly-in-rainforest.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/insects/insects-blue-morpho-butterfly-in-rainforest-feb57c5778.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/insects/insects-blue-morpho-butterfly-in-rainforest-feb57c5778.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/insects/insects-blue-morpho-butterfly-in-rainforest-feb57c5778-thumb.png"
+          },
+          "altTextCandidate": "Insects Blue Morpho Butterfly In Rainforest coloring page",
+          "titleCandidate": "Insects Blue Morpho Butterfly In Rainforest",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        },
+        {
+          "assetId": "insects__insects-damselfly-perched-on-reed__0367b38c15",
+          "sourceRelativePath": "images/Insects/insects-damselfly-perched-on-reed.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/insects/insects-damselfly-perched-on-reed-0367b38c15.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/insects/insects-damselfly-perched-on-reed-0367b38c15.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/insects/insects-damselfly-perched-on-reed-0367b38c15-thumb.png"
+          },
+          "altTextCandidate": "Insects Damselfly Perched On Reed coloring page",
+          "titleCandidate": "Insects Damselfly Perched On Reed",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        },
+        {
+          "assetId": "insects__insects-scorpion__904a5e6afa",
+          "sourceRelativePath": "images/Insects/insects-scorpion.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/insects/insects-scorpion-904a5e6afa.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/insects/insects-scorpion-904a5e6afa.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/insects/insects-scorpion-904a5e6afa-thumb.png"
+          },
+          "altTextCandidate": "Insects Scorpion coloring page",
+          "titleCandidate": "Insects Scorpion",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        }
+      ]
+    },
+    {
+      "category": "mandala",
+      "categorySlug": "mandala",
+      "categoryTitle": "Mandala",
+      "imageCount": 1,
+      "sampleItemIds": [
+        "mandala__mandala-geometry-patterns-geometric-mandala__3369a57b28"
+      ],
+      "items": [
+        {
+          "assetId": "mandala__mandala-geometry-patterns-geometric-mandala__3369a57b28",
+          "sourceRelativePath": "images/mandala/mandala-geometry-patterns-geometric-mandala.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/mandala/mandala-geometry-patterns-geometric-mandala-3369a57b28.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/mandala/mandala-geometry-patterns-geometric-mandala-3369a57b28.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/mandala/mandala-geometry-patterns-geometric-mandala-3369a57b28-thumb.png"
+          },
+          "altTextCandidate": "Mandala Geometry Patterns Geometric Mandala coloring page",
+          "titleCandidate": "Mandala Geometry Patterns Geometric Mandala",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        }
+      ]
+    },
+    {
+      "category": "mandala-geometry-patterns",
+      "categorySlug": "mandala-geometry-patterns",
+      "categoryTitle": "Mandala Geometry Patterns",
+      "imageCount": 16,
+      "sampleItemIds": [
+        "mandala-geometry-patterns__mandala-geometry-patterns-bakery-spatula-and-dough__642ca300c7",
+        "mandala-geometry-patterns__mandala-geometry-patterns-dogs-english-springer-spaniel__7720e1c921",
+        "mandala-geometry-patterns__mandala-geometry-patterns-emergency-police-car-driving__f10bdc1e5a",
+        "mandala-geometry-patterns__mandala-geometry-patterns-flowers-protea__402c748e10",
+        "mandala-geometry-patterns__mandala-geometry-patterns-japan-itsukushima-shrine__9b16382a41",
+        "mandala-geometry-patterns__mandala-geometry-patterns-japan-takoyaki-snack__10b7a9eb2e",
+        "mandala-geometry-patterns__mandala-geometry-patterns-mushroom-cracked-cap-boletus__dd7bd7f449",
+        "mandala-geometry-patterns__mandala-geometry-patterns-mushroom-ghost-fungus-glowing__caa954feb8",
+        "mandala-geometry-patterns__mandala-geometry-patterns-mushroom-morel__aa9b0f6932",
+        "mandala-geometry-patterns__mandala-geometry-patterns-mushroom-pine-mushroom-scene__bb22905097",
+        "mandala-geometry-patterns__mandala-geometry-patterns-mushroom-puffball-common__881c0835ce",
+        "mandala-geometry-patterns__mandala-geometry-patterns-plushie-alpaca-animals__ffd2a425f4",
+        "mandala-geometry-patterns__mandala-geometry-patterns-sushi-spider-roll__307abddfe7",
+        "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-excursion-train-crossing-hi__00002da099",
+        "mandala-geometry-patterns__mandala-geometry-patterns-vehicle-cars-audi-r8__209ad97c54",
+        "mandala-geometry-patterns__mandala-geometry-patterns-vehicle-cars-electric-sports-car-charging__545b0f228c"
+      ],
+      "items": [
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-bakery-spatula-and-dough__642ca300c7",
+          "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-bakery-spatula-and-dough.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/mandala-geometry-patterns/mandala-geometry-patterns-bakery-spatula-and-dough-642ca300c7.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/mandala-geometry-patterns/mandala-geometry-patterns-bakery-spatula-and-dough-642ca300c7.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-bakery-spatula-and-dough-642ca300c7-thumb.png"
+          },
+          "altTextCandidate": "Mandala Geometry Patterns Bakery Spatula And Dough coloring page",
+          "titleCandidate": "Mandala Geometry Patterns Bakery Spatula And Dough",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check"
+          ]
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-dogs-english-springer-spaniel__7720e1c921",
+          "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-dogs-english-springer-spaniel.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/mandala-geometry-patterns/mandala-geometry-patterns-dogs-english-springer-spaniel-7720e1c921.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/mandala-geometry-patterns/mandala-geometry-patterns-dogs-english-springer-spaniel-7720e1c921.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-dogs-english-springer-spaniel-7720e1c921-thumb.png"
+          },
+          "altTextCandidate": "Mandala Geometry Patterns Dogs English Springer Spaniel coloring page",
+          "titleCandidate": "Mandala Geometry Patterns Dogs English Springer Spaniel",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check"
+          ]
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-emergency-police-car-driving__f10bdc1e5a",
+          "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-emergency-police-car-driving.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/mandala-geometry-patterns/mandala-geometry-patterns-emergency-police-car-driving-f10bdc1e5a.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/mandala-geometry-patterns/mandala-geometry-patterns-emergency-police-car-driving-f10bdc1e5a.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-emergency-police-car-driving-f10bdc1e5a-thumb.png"
+          },
+          "altTextCandidate": "Mandala Geometry Patterns Emergency Police Car Driving coloring page",
+          "titleCandidate": "Mandala Geometry Patterns Emergency Police Car Driving",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check"
+          ]
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-flowers-protea__402c748e10",
+          "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-flowers-protea.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/mandala-geometry-patterns/mandala-geometry-patterns-flowers-protea-402c748e10.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/mandala-geometry-patterns/mandala-geometry-patterns-flowers-protea-402c748e10.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-flowers-protea-402c748e10-thumb.png"
+          },
+          "altTextCandidate": "Mandala Geometry Patterns Flowers Protea coloring page",
+          "titleCandidate": "Mandala Geometry Patterns Flowers Protea",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check"
+          ]
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-japan-itsukushima-shrine__9b16382a41",
+          "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-japan-itsukushima-shrine.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/mandala-geometry-patterns/mandala-geometry-patterns-japan-itsukushima-shrine-9b16382a41.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/mandala-geometry-patterns/mandala-geometry-patterns-japan-itsukushima-shrine-9b16382a41.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-japan-itsukushima-shrine-9b16382a41-thumb.png"
+          },
+          "altTextCandidate": "Mandala Geometry Patterns Japan Itsukushima Shrine coloring page",
+          "titleCandidate": "Mandala Geometry Patterns Japan Itsukushima Shrine",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check"
+          ]
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-japan-takoyaki-snack__10b7a9eb2e",
+          "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-japan-takoyaki-snack.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/mandala-geometry-patterns/mandala-geometry-patterns-japan-takoyaki-snack-10b7a9eb2e.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/mandala-geometry-patterns/mandala-geometry-patterns-japan-takoyaki-snack-10b7a9eb2e.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-japan-takoyaki-snack-10b7a9eb2e-thumb.png"
+          },
+          "altTextCandidate": "Mandala Geometry Patterns Japan Takoyaki Snack coloring page",
+          "titleCandidate": "Mandala Geometry Patterns Japan Takoyaki Snack",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check"
+          ]
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-mushroom-cracked-cap-boletus__dd7bd7f449",
+          "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-cracked-cap-boletus.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-cracked-cap-boletus-dd7bd7f449.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-cracked-cap-boletus-dd7bd7f449.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-cracked-cap-boletus-dd7bd7f449-thumb.png"
+          },
+          "altTextCandidate": "Mandala Geometry Patterns Mushroom Cracked Cap Boletus coloring page",
+          "titleCandidate": "Mandala Geometry Patterns Mushroom Cracked Cap Boletus",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check"
+          ]
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-mushroom-ghost-fungus-glowing__caa954feb8",
+          "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-ghost-fungus-glowing.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-ghost-fungus-glowing-caa954feb8.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-ghost-fungus-glowing-caa954feb8.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-ghost-fungus-glowing-caa954feb8-thumb.png"
+          },
+          "altTextCandidate": "Mandala Geometry Patterns Mushroom Ghost Fungus Glowing coloring page",
+          "titleCandidate": "Mandala Geometry Patterns Mushroom Ghost Fungus Glowing",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check"
+          ]
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-mushroom-morel__aa9b0f6932",
+          "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-morel.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-morel-aa9b0f6932.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-morel-aa9b0f6932.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-morel-aa9b0f6932-thumb.png"
+          },
+          "altTextCandidate": "Mandala Geometry Patterns Mushroom Morel coloring page",
+          "titleCandidate": "Mandala Geometry Patterns Mushroom Morel",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check"
+          ]
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-mushroom-pine-mushroom-scene__bb22905097",
+          "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-pine-mushroom-scene.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-pine-mushroom-scene-bb22905097.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-pine-mushroom-scene-bb22905097.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-pine-mushroom-scene-bb22905097-thumb.png"
+          },
+          "altTextCandidate": "Mandala Geometry Patterns Mushroom Pine Mushroom Scene coloring page",
+          "titleCandidate": "Mandala Geometry Patterns Mushroom Pine Mushroom Scene",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check"
+          ]
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-mushroom-puffball-common__881c0835ce",
+          "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-puffball-common.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-puffball-common-881c0835ce.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-puffball-common-881c0835ce.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-mushroom-puffball-common-881c0835ce-thumb.png"
+          },
+          "altTextCandidate": "Mandala Geometry Patterns Mushroom Puffball Common coloring page",
+          "titleCandidate": "Mandala Geometry Patterns Mushroom Puffball Common",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check"
+          ]
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-alpaca-animals__ffd2a425f4",
+          "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-plushie-alpaca-animals.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/mandala-geometry-patterns/mandala-geometry-patterns-plushie-alpaca-animals-ffd2a425f4.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/mandala-geometry-patterns/mandala-geometry-patterns-plushie-alpaca-animals-ffd2a425f4.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-plushie-alpaca-animals-ffd2a425f4-thumb.png"
+          },
+          "altTextCandidate": "Mandala Geometry Patterns Plushie Alpaca Animals coloring page",
+          "titleCandidate": "Mandala Geometry Patterns Plushie Alpaca Animals",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check"
+          ]
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-sushi-spider-roll__307abddfe7",
+          "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-sushi-spider-roll.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/mandala-geometry-patterns/mandala-geometry-patterns-sushi-spider-roll-307abddfe7.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/mandala-geometry-patterns/mandala-geometry-patterns-sushi-spider-roll-307abddfe7.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-sushi-spider-roll-307abddfe7-thumb.png"
+          },
+          "altTextCandidate": "Mandala Geometry Patterns Sushi Spider Roll coloring page",
+          "titleCandidate": "Mandala Geometry Patterns Sushi Spider Roll",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check"
+          ]
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-excursion-train-crossing-hi__00002da099",
+          "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-excursion-train-crossing-historic-trestle-bridge.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-excursion-train-crossing-hi-00002da099.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-excursion-train-crossing-hi-00002da099.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-excursion-train-crossing-hi-00002da099-thumb.png"
+          },
+          "altTextCandidate": "Mandala Geometry Patterns Trains Locomotives Excursion Train Crossing Historic Trestle Bridge coloring page",
+          "titleCandidate": "Mandala Geometry Patterns Trains Locomotives Excursion Train Crossing Historic Trestle Bridge",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check"
+          ]
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehicle-cars-audi-r8__209ad97c54",
+          "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-audi-r8.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-audi-r8-209ad97c54.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-audi-r8-209ad97c54.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-audi-r8-209ad97c54-thumb.png"
+          },
+          "altTextCandidate": "Mandala Geometry Patterns Vehicle Cars Audi R8 coloring page",
+          "titleCandidate": "Mandala Geometry Patterns Vehicle Cars Audi R8",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_high_detail",
+            "soft_warning_possible_complexity",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehicle-cars-electric-sports-car-charging__545b0f228c",
+          "sourceRelativePath": "images/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-electric-sports-car-charging.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-electric-sports-car-charging-545b0f228c.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-electric-sports-car-charging-545b0f228c.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-electric-sports-car-charging-545b0f228c-thumb.png"
+          },
+          "altTextCandidate": "Mandala Geometry Patterns Vehicle Cars Electric Sports Car Charging coloring page",
+          "titleCandidate": "Mandala Geometry Patterns Vehicle Cars Electric Sports Car Charging",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "midieval",
+      "categorySlug": "midieval",
+      "categoryTitle": "Midieval",
+      "imageCount": 4,
+      "sampleItemIds": [
+        "midieval__midieval-fantasy-monastery-cloister__608578259b",
+        "midieval__midieval-fantasy-queen-gown__fd1cc7038c",
+        "midieval__midieval-fantasy-stable-boy__025b122195",
+        "midieval__midieval-fantasy-stone-circle__a9d9dcca7d"
+      ],
+      "items": [
+        {
+          "assetId": "midieval__midieval-fantasy-monastery-cloister__608578259b",
+          "sourceRelativePath": "images/midieval/midieval-fantasy-monastery-cloister.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/midieval/midieval-fantasy-monastery-cloister-608578259b.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/midieval/midieval-fantasy-monastery-cloister-608578259b.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/midieval/midieval-fantasy-monastery-cloister-608578259b-thumb.png"
+          },
+          "altTextCandidate": "Midieval Fantasy Monastery Cloister coloring page",
+          "titleCandidate": "Midieval Fantasy Monastery Cloister",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_high_detail",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_possible_complexity",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "midieval__midieval-fantasy-queen-gown__fd1cc7038c",
+          "sourceRelativePath": "images/midieval/midieval-fantasy-queen-gown.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/midieval/midieval-fantasy-queen-gown-fd1cc7038c.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/midieval/midieval-fantasy-queen-gown-fd1cc7038c.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/midieval/midieval-fantasy-queen-gown-fd1cc7038c-thumb.png"
+          },
+          "altTextCandidate": "Midieval Fantasy Queen Gown coloring page",
+          "titleCandidate": "Midieval Fantasy Queen Gown",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "midieval__midieval-fantasy-stable-boy__025b122195",
+          "sourceRelativePath": "images/midieval/midieval-fantasy-stable-boy.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/midieval/midieval-fantasy-stable-boy-025b122195.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/midieval/midieval-fantasy-stable-boy-025b122195.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/midieval/midieval-fantasy-stable-boy-025b122195-thumb.png"
+          },
+          "altTextCandidate": "Midieval Fantasy Stable Boy coloring page",
+          "titleCandidate": "Midieval Fantasy Stable Boy",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "midieval__midieval-fantasy-stone-circle__a9d9dcca7d",
+          "sourceRelativePath": "images/midieval/midieval-fantasy-stone-circle.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/midieval/midieval-fantasy-stone-circle-a9d9dcca7d.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/midieval/midieval-fantasy-stone-circle-a9d9dcca7d.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/midieval/midieval-fantasy-stone-circle-a9d9dcca7d-thumb.png"
+          },
+          "altTextCandidate": "Midieval Fantasy Stone Circle coloring page",
+          "titleCandidate": "Midieval Fantasy Stone Circle",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_high_detail",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_possible_complexity",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "mythology",
+      "categorySlug": "mythology",
+      "categoryTitle": "Mythology",
+      "imageCount": 5,
+      "sampleItemIds": [
+        "mythology__mythology-anansi__3abc71e1a4",
+        "mythology__mythology-aten__77cb657bc2",
+        "mythology__mythology-indra__fef3738b04",
+        "mythology__mythology-nanabozho__b7983e7d0a",
+        "mythology__mythology-nyx__041988d5ee"
+      ],
+      "items": [
+        {
+          "assetId": "mythology__mythology-anansi__3abc71e1a4",
+          "sourceRelativePath": "images/mythology/mythology-anansi.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/mythology/mythology-anansi-3abc71e1a4.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/mythology/mythology-anansi-3abc71e1a4.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/mythology/mythology-anansi-3abc71e1a4-thumb.png"
+          },
+          "altTextCandidate": "Mythology Anansi coloring page",
+          "titleCandidate": "Mythology Anansi",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "mythology__mythology-aten__77cb657bc2",
+          "sourceRelativePath": "images/mythology/mythology-aten.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/mythology/mythology-aten-77cb657bc2.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/mythology/mythology-aten-77cb657bc2.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/mythology/mythology-aten-77cb657bc2-thumb.png"
+          },
+          "altTextCandidate": "Mythology Aten coloring page",
+          "titleCandidate": "Mythology Aten",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "mythology__mythology-indra__fef3738b04",
+          "sourceRelativePath": "images/mythology/mythology-indra.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/mythology/mythology-indra-fef3738b04.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/mythology/mythology-indra-fef3738b04.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/mythology/mythology-indra-fef3738b04-thumb.png"
+          },
+          "altTextCandidate": "Mythology Indra coloring page",
+          "titleCandidate": "Mythology Indra",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "mythology__mythology-nanabozho__b7983e7d0a",
+          "sourceRelativePath": "images/mythology/mythology-nanabozho.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/mythology/mythology-nanabozho-b7983e7d0a.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/mythology/mythology-nanabozho-b7983e7d0a.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/mythology/mythology-nanabozho-b7983e7d0a-thumb.png"
+          },
+          "altTextCandidate": "Mythology Nanabozho coloring page",
+          "titleCandidate": "Mythology Nanabozho",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        },
+        {
+          "assetId": "mythology__mythology-nyx__041988d5ee",
+          "sourceRelativePath": "images/mythology/mythology-nyx.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/mythology/mythology-nyx-041988d5ee.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/mythology/mythology-nyx-041988d5ee.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/mythology/mythology-nyx-041988d5ee-thumb.png"
+          },
+          "altTextCandidate": "Mythology Nyx coloring page",
+          "titleCandidate": "Mythology Nyx",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": [
+            "soft_warning_category_high_value_spot_check",
+            "soft_warning_human_adjacent",
+            "soft_warning_needs_spot_check",
+            "soft_warning_restored_from_round_3a_blocked"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Nature",
+      "categorySlug": "nature",
+      "categoryTitle": "Nature",
+      "imageCount": 1,
+      "sampleItemIds": [
+        "nature__camping-in-the-woods-campfire-marshmellow__01497ca28a"
+      ],
+      "items": [
+        {
+          "assetId": "nature__camping-in-the-woods-campfire-marshmellow__01497ca28a",
+          "sourceRelativePath": "images/Nature/camping-in-the-woods-campfire-marshmellow.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/nature/camping-in-the-woods-campfire-marshmellow-01497ca28a.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/nature/camping-in-the-woods-campfire-marshmellow-01497ca28a.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/nature/camping-in-the-woods-campfire-marshmellow-01497ca28a-thumb.png"
+          },
+          "altTextCandidate": "Camping In The Woods Campfire Marshmellow coloring page",
+          "titleCandidate": "Camping In The Woods Campfire Marshmellow",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        }
+      ]
+    },
+    {
+      "category": "plushie",
+      "categorySlug": "plushie",
+      "categoryTitle": "Plushie",
+      "imageCount": 6,
+      "sampleItemIds": [
+        "plushie__plushie-baby-kitsune__2e29e1859a",
+        "plushie__plushie-coyote__d06fcbed29",
+        "plushie__plushie-mouse__fecc100c29",
+        "plushie__plushie-prehistoric-megalodon-family__95304a8f2d",
+        "plushie__plushie-prehistoric-mosasaurus__01b25e6877",
+        "plushie__plushie-snail-family__62d6d7a905"
+      ],
+      "items": [
+        {
+          "assetId": "plushie__plushie-baby-kitsune__2e29e1859a",
+          "sourceRelativePath": "images/plushie/plushie-baby-kitsune.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/plushie/plushie-baby-kitsune-2e29e1859a.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/plushie/plushie-baby-kitsune-2e29e1859a.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/plushie/plushie-baby-kitsune-2e29e1859a-thumb.png"
+          },
+          "altTextCandidate": "Plushie Baby Kitsune coloring page",
+          "titleCandidate": "Plushie Baby Kitsune",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        },
+        {
+          "assetId": "plushie__plushie-coyote__d06fcbed29",
+          "sourceRelativePath": "images/plushie/plushie-coyote.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/plushie/plushie-coyote-d06fcbed29.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/plushie/plushie-coyote-d06fcbed29.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/plushie/plushie-coyote-d06fcbed29-thumb.png"
+          },
+          "altTextCandidate": "Plushie Coyote coloring page",
+          "titleCandidate": "Plushie Coyote",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        },
+        {
+          "assetId": "plushie__plushie-mouse__fecc100c29",
+          "sourceRelativePath": "images/plushie/plushie-mouse.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/plushie/plushie-mouse-fecc100c29.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/plushie/plushie-mouse-fecc100c29.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/plushie/plushie-mouse-fecc100c29-thumb.png"
+          },
+          "altTextCandidate": "Plushie Mouse coloring page",
+          "titleCandidate": "Plushie Mouse",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        },
+        {
+          "assetId": "plushie__plushie-prehistoric-megalodon-family__95304a8f2d",
+          "sourceRelativePath": "images/plushie/plushie-prehistoric-megalodon-family.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/plushie/plushie-prehistoric-megalodon-family-95304a8f2d.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/plushie/plushie-prehistoric-megalodon-family-95304a8f2d.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/plushie/plushie-prehistoric-megalodon-family-95304a8f2d-thumb.png"
+          },
+          "altTextCandidate": "Plushie Prehistoric Megalodon Family coloring page",
+          "titleCandidate": "Plushie Prehistoric Megalodon Family",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        },
+        {
+          "assetId": "plushie__plushie-prehistoric-mosasaurus__01b25e6877",
+          "sourceRelativePath": "images/plushie/plushie-prehistoric-mosasaurus.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/plushie/plushie-prehistoric-mosasaurus-01b25e6877.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/plushie/plushie-prehistoric-mosasaurus-01b25e6877.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/plushie/plushie-prehistoric-mosasaurus-01b25e6877-thumb.png"
+          },
+          "altTextCandidate": "Plushie Prehistoric Mosasaurus coloring page",
+          "titleCandidate": "Plushie Prehistoric Mosasaurus",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        },
+        {
+          "assetId": "plushie__plushie-snail-family__62d6d7a905",
+          "sourceRelativePath": "images/plushie/plushie-snail-family.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/plushie/plushie-snail-family-62d6d7a905.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/plushie/plushie-snail-family-62d6d7a905.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/plushie/plushie-snail-family-62d6d7a905-thumb.png"
+          },
+          "altTextCandidate": "Plushie Snail Family coloring page",
+          "titleCandidate": "Plushie Snail Family",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        }
+      ]
+    },
+    {
+      "category": "reptiles",
+      "categorySlug": "reptiles",
+      "categoryTitle": "Reptiles",
+      "imageCount": 3,
+      "sampleItemIds": [
+        "reptiles__reptiles-leatherback-turtle__fb44b658b0",
+        "reptiles__reptiles-olm-cave-salamander__9283ec6efd",
+        "reptiles__reptiles-salamander__0041b7dd48"
+      ],
+      "items": [
+        {
+          "assetId": "reptiles__reptiles-leatherback-turtle__fb44b658b0",
+          "sourceRelativePath": "images/reptiles/reptiles-leatherback-turtle.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/reptiles/reptiles-leatherback-turtle-fb44b658b0.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/reptiles/reptiles-leatherback-turtle-fb44b658b0.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/reptiles/reptiles-leatherback-turtle-fb44b658b0-thumb.png"
+          },
+          "altTextCandidate": "Reptiles Leatherback Turtle coloring page",
+          "titleCandidate": "Reptiles Leatherback Turtle",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        },
+        {
+          "assetId": "reptiles__reptiles-olm-cave-salamander__9283ec6efd",
+          "sourceRelativePath": "images/reptiles/reptiles-olm-cave-salamander.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/reptiles/reptiles-olm-cave-salamander-9283ec6efd.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/reptiles/reptiles-olm-cave-salamander-9283ec6efd.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/reptiles/reptiles-olm-cave-salamander-9283ec6efd-thumb.png"
+          },
+          "altTextCandidate": "Reptiles Olm Cave Salamander coloring page",
+          "titleCandidate": "Reptiles Olm Cave Salamander",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        },
+        {
+          "assetId": "reptiles__reptiles-salamander__0041b7dd48",
+          "sourceRelativePath": "images/reptiles/reptiles-salamander.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/reptiles/reptiles-salamander-0041b7dd48.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/reptiles/reptiles-salamander-0041b7dd48.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/reptiles/reptiles-salamander-0041b7dd48-thumb.png"
+          },
+          "altTextCandidate": "Reptiles Salamander coloring page",
+          "titleCandidate": "Reptiles Salamander",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        }
+      ]
+    },
+    {
+      "category": "sea-life",
+      "categorySlug": "sea-life",
+      "categoryTitle": "Sea Life",
+      "imageCount": 3,
+      "sampleItemIds": [
+        "sea-life__sea-life-angelfish-swimming-in-reef__95e70aed68",
+        "sea-life__sea-life-clownfish-pair-in-sea-anemone__ff8430fea7",
+        "sea-life__sea-life-tuna__0303a5dafd"
+      ],
+      "items": [
+        {
+          "assetId": "sea-life__sea-life-angelfish-swimming-in-reef__95e70aed68",
+          "sourceRelativePath": "images/sea-life/sea-life-angelfish-swimming-in-reef.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/sea-life/sea-life-angelfish-swimming-in-reef-95e70aed68.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/sea-life/sea-life-angelfish-swimming-in-reef-95e70aed68.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/sea-life/sea-life-angelfish-swimming-in-reef-95e70aed68-thumb.png"
+          },
+          "altTextCandidate": "Sea Life Angelfish Swimming In Reef coloring page",
+          "titleCandidate": "Sea Life Angelfish Swimming In Reef",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        },
+        {
+          "assetId": "sea-life__sea-life-clownfish-pair-in-sea-anemone__ff8430fea7",
+          "sourceRelativePath": "images/sea-life/sea-life-clownfish-pair-in-sea-anemone.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/sea-life/sea-life-clownfish-pair-in-sea-anemone-ff8430fea7.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/sea-life/sea-life-clownfish-pair-in-sea-anemone-ff8430fea7.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/sea-life/sea-life-clownfish-pair-in-sea-anemone-ff8430fea7-thumb.png"
+          },
+          "altTextCandidate": "Sea Life Clownfish Pair In Sea Anemone coloring page",
+          "titleCandidate": "Sea Life Clownfish Pair In Sea Anemone",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        },
+        {
+          "assetId": "sea-life__sea-life-tuna__0303a5dafd",
+          "sourceRelativePath": "images/sea-life/sea-life-tuna.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/sea-life/sea-life-tuna-0303a5dafd.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/sea-life/sea-life-tuna-0303a5dafd.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/sea-life/sea-life-tuna-0303a5dafd-thumb.png"
+          },
+          "altTextCandidate": "Sea Life Tuna coloring page",
+          "titleCandidate": "Sea Life Tuna",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        }
+      ]
+    },
+    {
+      "category": "space",
+      "categorySlug": "space",
+      "categoryTitle": "Space",
+      "imageCount": 1,
+      "sampleItemIds": [
+        "space__chatgpt-image-may-1-2025-12-50-41-am__3e13c05f13"
+      ],
+      "items": [
+        {
+          "assetId": "space__chatgpt-image-may-1-2025-12-50-41-am__3e13c05f13",
+          "sourceRelativePath": "images/space/ChatGPT Image May 1, 2025, 12_50_41 AM.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/space/chatgpt-image-may-1-2025-12-50-41-am-3e13c05f13.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/space/chatgpt-image-may-1-2025-12-50-41-am-3e13c05f13.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/space/chatgpt-image-may-1-2025-12-50-41-am-3e13c05f13-thumb.png"
+          },
+          "altTextCandidate": "ChatGPT Image May 1, 2025, 12 50 41 AM coloring page",
+          "titleCandidate": "ChatGPT Image May 1, 2025, 12 50 41 AM",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        }
+      ]
+    },
+    {
+      "category": "st-patricks-day",
+      "categorySlug": "st-patricks-day",
+      "categoryTitle": "St Patricks Day",
+      "imageCount": 1,
+      "sampleItemIds": [
+        "st-patricks-day__st-patricks-day-pot-of-gold-guarded-by-leprechaun-coloring-page__0cac522f50"
+      ],
+      "items": [
+        {
+          "assetId": "st-patricks-day__st-patricks-day-pot-of-gold-guarded-by-leprechaun-coloring-page__0cac522f50",
+          "sourceRelativePath": "images/st-patricks-day/st-patricks-day-pot-of-gold-guarded-by-leprechaun-coloring-page.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/st-patricks-day/st-patricks-day-pot-of-gold-guarded-by-leprechaun-coloring-page-0cac522f50.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/st-patricks-day/st-patricks-day-pot-of-gold-guarded-by-leprechaun-coloring-page-0cac522f50.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/st-patricks-day/st-patricks-day-pot-of-gold-guarded-by-leprechaun-coloring-page-0cac522f50-thumb.png"
+          },
+          "altTextCandidate": "St Patricks Day Pot Of Gold Guarded By Leprechaun Coloring Page coloring page",
+          "titleCandidate": "St Patricks Day Pot Of Gold Guarded By Leprechaun Coloring Page",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        }
+      ]
+    },
+    {
+      "category": "world-landmarks",
+      "categorySlug": "world-landmarks",
+      "categoryTitle": "World Landmarks",
+      "imageCount": 2,
+      "sampleItemIds": [
+        "world-landmarks__world-landmarks-hollywood-sign__0d5347e375",
+        "world-landmarks__world-landmarks-statue-of-liberty__f153affe51"
+      ],
+      "items": [
+        {
+          "assetId": "world-landmarks__world-landmarks-hollywood-sign__0d5347e375",
+          "sourceRelativePath": "images/world-landmarks/world-landmarks-hollywood-sign.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/world-landmarks/world-landmarks-hollywood-sign-0d5347e375.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/world-landmarks/world-landmarks-hollywood-sign-0d5347e375.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/world-landmarks/world-landmarks-hollywood-sign-0d5347e375-thumb.png"
+          },
+          "altTextCandidate": "World Landmarks Hollywood Sign coloring page",
+          "titleCandidate": "World Landmarks Hollywood Sign",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        },
+        {
+          "assetId": "world-landmarks__world-landmarks-statue-of-liberty__f153affe51",
+          "sourceRelativePath": "images/world-landmarks/world-landmarks-statue-of-liberty.png",
+          "assetPaths": {
+            "svg": "pipeline/production/dry-run/assets/svg/world-landmarks/world-landmarks-statue-of-liberty-f153affe51.svg",
+            "pngPreview": "pipeline/production/dry-run/assets/png/world-landmarks/world-landmarks-statue-of-liberty-f153affe51.png",
+            "thumbnail": "pipeline/production/dry-run/assets/thumbs/world-landmarks/world-landmarks-statue-of-liberty-f153affe51-thumb.png"
+          },
+          "altTextCandidate": "World Landmarks Statue Of Liberty coloring page",
+          "titleCandidate": "World Landmarks Statue Of Liberty",
+          "downloadAvailable": true,
+          "printAvailable": true,
+          "indexablePerImageRoute": false,
+          "warningFlags": []
+        }
+      ]
+    }
+  ]
+}
