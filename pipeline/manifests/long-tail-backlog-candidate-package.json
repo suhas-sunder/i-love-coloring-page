@@ -1,0 +1,511 @@
+{
+  "generatedAt": "2026-05-13T23:00:23.354Z",
+  "runId": "long-tail-acceptance-gate",
+  "summary": {
+    "candidateCount": 50,
+    "expectedCandidateCount": 50,
+    "notPromotedThisRound": true
+  },
+  "candidates": [
+    {
+      "slug": "geometric-sushi",
+      "title": "Geometric Sushi Coloring Pages",
+      "assetCount": 158,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub sushi.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "food",
+      "estimatedValue": "high",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "mandala-sushi",
+      "title": "Mandala Sushi Coloring Pages",
+      "assetCount": 158,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub sushi.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "food",
+      "estimatedValue": "high",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "geometric-bakery",
+      "title": "Geometric Bakery Coloring Pages",
+      "assetCount": 93,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub bakery.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "food",
+      "estimatedValue": "high",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "mandala-bakery",
+      "title": "Mandala Bakery Coloring Pages",
+      "assetCount": 93,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub bakery.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "food",
+      "estimatedValue": "high",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "mandala-dogs",
+      "title": "Mandala Dogs Coloring Pages",
+      "assetCount": 85,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub geometric-dogs.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "animals",
+      "estimatedValue": "high",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "geometric-mushrooms",
+      "title": "Geometric Mushrooms Coloring Pages",
+      "assetCount": 79,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub mushrooms.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "plants",
+      "estimatedValue": "high",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "mandala-mushrooms",
+      "title": "Mandala Mushrooms Coloring Pages",
+      "assetCount": 77,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub mushrooms.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "plants",
+      "estimatedValue": "high",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "chibi-dragons",
+      "title": "Chibi Dragons Coloring Pages",
+      "assetCount": 64,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub dragons.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "fantasy",
+      "estimatedValue": "high",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "chibi-mushrooms",
+      "title": "Chibi Mushrooms Coloring Pages",
+      "assetCount": 45,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub mushrooms.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "plants",
+      "estimatedValue": "high",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-bears",
+      "title": "Plushie Bears Coloring Pages",
+      "assetCount": 43,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub bears.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "animals",
+      "estimatedValue": "high",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "halloween-bats",
+      "title": "Halloween Bats Coloring Pages",
+      "assetCount": 13,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub bats.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "animals",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-foxes",
+      "title": "Plushie Foxes Coloring Pages",
+      "assetCount": 22,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub foxes.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "animals",
+      "estimatedValue": "high",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-pandas",
+      "title": "Plushie Pandas Coloring Pages",
+      "assetCount": 22,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub pandas.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "animals",
+      "estimatedValue": "high",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-tigers",
+      "title": "Plushie Tigers Coloring Pages",
+      "assetCount": 22,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub tigers.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "animals",
+      "estimatedValue": "high",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-koalas",
+      "title": "Plushie Koalas Coloring Pages",
+      "assetCount": 20,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub koalas.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "animals",
+      "estimatedValue": "high",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-sloths",
+      "title": "Plushie Sloths Coloring Pages",
+      "assetCount": 19,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub sloths.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "animals",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-lions",
+      "title": "Plushie Lions Coloring Pages",
+      "assetCount": 18,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub lions.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "animals",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-otters",
+      "title": "Plushie Otters Coloring Pages",
+      "assetCount": 18,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub otters.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "animals",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "geometric-cakes",
+      "title": "Geometric Cakes Coloring Pages",
+      "assetCount": 16,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub cakes.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "food",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "mandala-cakes",
+      "title": "Mandala Cakes Coloring Pages",
+      "assetCount": 16,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub cakes.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "food",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-giraffes",
+      "title": "Plushie Giraffes Coloring Pages",
+      "assetCount": 14,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub giraffes.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "animals",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-hippos",
+      "title": "Plushie Hippos Coloring Pages",
+      "assetCount": 14,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub hippos.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "animals",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-rabbits",
+      "title": "Plushie Rabbits Coloring Pages",
+      "assetCount": 14,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub rabbits.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "animals",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-wolves",
+      "title": "Plushie Wolves Coloring Pages",
+      "assetCount": 14,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub wolves.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "animals",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-cows",
+      "title": "Plushie Cows Coloring Pages",
+      "assetCount": 13,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub cows.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "animals",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-moose",
+      "title": "Plushie Moose Coloring Pages",
+      "assetCount": 13,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub moose.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "animals",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "halloween-witches",
+      "title": "Halloween Witches Coloring Pages",
+      "assetCount": 11,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub witches.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "halloween",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "christmas-bears",
+      "title": "Christmas Bears Coloring Pages",
+      "assetCount": 10,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub bears.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "animals",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-stegosaurus",
+      "title": "Plushie Stegosaurus Coloring Pages",
+      "assetCount": 12,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub stegosaurus.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "dinosaurs",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-t-rex",
+      "title": "Plushie T-Rex Coloring Pages",
+      "assetCount": 12,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub t-rex.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "dinosaurs",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-zebras",
+      "title": "Plushie Zebras Coloring Pages",
+      "assetCount": 12,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub zebras.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "animals",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "chibi-bats",
+      "title": "Chibi Bats Coloring Pages",
+      "assetCount": 11,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub bats.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "animals",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "chibi-witches",
+      "title": "Chibi Witches Coloring Pages",
+      "assetCount": 11,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub witches.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "halloween",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-bees",
+      "title": "Plushie Bees Coloring Pages",
+      "assetCount": 11,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub bees.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "insects",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-brachiosaurus",
+      "title": "Plushie Brachiosaurus Coloring Pages",
+      "assetCount": 11,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub brachiosaurus.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "dinosaurs",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-elephants",
+      "title": "Plushie Elephants Coloring Pages",
+      "assetCount": 11,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub elephants.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "animals",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-horses",
+      "title": "Plushie Horses Coloring Pages",
+      "assetCount": 11,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub horses.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "animals",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-megalodon",
+      "title": "Plushie Megalodon Coloring Pages",
+      "assetCount": 11,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub megalodon.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "prehistoric-animals",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-monkeys",
+      "title": "Plushie Monkeys Coloring Pages",
+      "assetCount": 11,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub monkeys.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "animals",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-mushrooms",
+      "title": "Plushie Mushrooms Coloring Pages",
+      "assetCount": 11,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub mushrooms.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "plants",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-penguins",
+      "title": "Plushie Penguins Coloring Pages",
+      "assetCount": 11,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub penguins.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "birds",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-sheep",
+      "title": "Plushie Sheep Coloring Pages",
+      "assetCount": 11,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub sheep.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "animals",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "chibi-knights",
+      "title": "Chibi Knights Coloring Pages",
+      "assetCount": 10,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub knights.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "medieval-fantasy",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-bats",
+      "title": "Plushie Bats Coloring Pages",
+      "assetCount": 10,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub bats.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "animals",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-deer",
+      "title": "Plushie Deer Coloring Pages",
+      "assetCount": 10,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub deer.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "animals",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-ducks",
+      "title": "Plushie Ducks Coloring Pages",
+      "assetCount": 10,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub ducks.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "birds",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-hedgehogs",
+      "title": "Plushie Hedgehogs Coloring Pages",
+      "assetCount": 10,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub hedgehogs.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "animals",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-llamas",
+      "title": "Plushie Llamas Coloring Pages",
+      "assetCount": 10,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub llamas.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "animals",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-snakes",
+      "title": "Plushie Snakes Coloring Pages",
+      "assetCount": 10,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub snakes.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "reptiles",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-velociraptors",
+      "title": "Plushie Velociraptors Coloring Pages",
+      "assetCount": 10,
+      "reasonBacklog": "Meets asset minimum, has clear intent, and passes overlap checks. Deferred because it overlaps heavily with selected hub velociraptors.",
+      "whatWouldMakeItPromotableLater": "Needs stronger public naming, intent clarity, or a future owner-approved expansion pass.",
+      "likelyParentHub": "dinosaurs",
+      "estimatedValue": "medium",
+      "ownerNotes": ""
+    }
+  ]
+}

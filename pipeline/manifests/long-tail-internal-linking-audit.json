@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-05-13T23:00:23.354Z",
+  "runId": "long-tail-acceptance-gate",
+  "summary": {
+    "promotedHubCount": 66,
+    "moreMenuFindsNewHubs": true,
+    "relatedHubsUseful": true,
+    "parentChildRelationshipsValid": true,
+    "noBrokenLinks": true,
+    "noBacklogManualReviewLinks": true,
+    "noDuplicateNavEntries": true,
+    "sitemapAndInternalLinksAgree": true,
+    "moreMenuLinkCount": 126,
+    "mobileNavUsesSameGeneratedHubSet": true,
+    "passed": true
+  },
+  "brokenInternalLinks": [],
+  "backlogManualReviewLinks": [],
+  "missingPromotedInternalLinks": [],
+  "parentChildProblems": [],
+  "nonRoutedParentMetadata": [
+    {
+      "slug": "bridges",
+      "parentHubId": "hub_landmarks"
+    },
+    {
+      "slug": "world-landmarks",
+      "parentHubId": "hub_landmarks"
+    }
+  ],
+  "duplicateNavEntries": []
+}

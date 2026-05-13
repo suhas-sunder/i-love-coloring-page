@@ -1,0 +1,1204 @@
+{
+  "generatedAt": "2026-05-13T23:00:23.354Z",
+  "runId": "long-tail-acceptance-gate",
+  "summary": {
+    "candidateCount": 21,
+    "expectedCandidateCount": 21,
+    "notPromotedThisRound": true,
+    "ownerDecisionOptions": [
+      "approve",
+      "revise",
+      "backlog",
+      "reject",
+      "merge-with-existing"
+    ]
+  },
+  "candidates": [
+    {
+      "slug": "birthday-cakes",
+      "title": "Birthday Cakes Coloring Pages",
+      "assetCount": 7,
+      "strongestMatchingAssets": [
+        {
+          "assetId": "anime-girls__anime-girl-birthday-cake__a75fa3e263",
+          "title": "Anime Girl Birthday Cake",
+          "categorySlug": "anime-girls"
+        },
+        {
+          "assetId": "anime-girls__anime-girl-celetbrating-birthday-cake__3e754f4081",
+          "title": "Anime Girl Celetbrating Birthday Cake",
+          "categorySlug": "anime-girls"
+        },
+        {
+          "assetId": "holiday__holiday-birthday-cake-with-candles__fa85526c3e",
+          "title": "Holiday Birthday Cake With Candles",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "holiday__holiday-birthday-cupcake__d0219b233b",
+          "title": "Holiday Birthday Cupcake",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "holiday__holiday-birthday-dog-with-birthday-cake__7fabf79cbe",
+          "title": "Holiday Birthday Dog With Birthday Cake",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-bakery-birthday-cake__63baabceb3",
+          "title": "Mandala Geometry Patterns Bakery Birthday Cake",
+          "categorySlug": "mandala-geometry-patterns"
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-bakery-birthday-cupcake__775c363bbe",
+          "title": "Mandala Geometry Patterns Bakery Birthday Cupcake",
+          "categorySlug": "mandala-geometry-patterns"
+        }
+      ],
+      "likelyParentHubs": [
+        "food",
+        "birthday",
+        "holidays"
+      ],
+      "reasonForManualReview": "Below combination minimum of 10 assets but above absolute minimum.",
+      "overlapScore": {
+        "maxExistingOverlapRatio": 1,
+        "maxComparableOverlapRatio": 0
+      },
+      "seoIntent": "Birthday Cakes printable coloring pages for visitors who want both the subject and the style or season.",
+      "risk": "below normal asset threshold",
+      "ownerDecision": "",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "halloween-cats",
+      "title": "Halloween Cats Coloring Pages",
+      "assetCount": 7,
+      "strongestMatchingAssets": [
+        {
+          "assetId": "chibi__chibi-holiday-halloween-black-cat-peeking-out-of-pumpkin-coloring-page__c47ea723e5",
+          "title": "Chibi Holiday Halloween Black Cat Peeking Out Of Pumpkin Coloring Page",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-holiday-halloween-black-cat-sitting-on-fence-under-moon-coloring-p__81d2ff4c89",
+          "title": "Chibi Holiday Halloween Black Cat Sitting On Fence Under Moon Coloring Page",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-holiday-halloween-cute-halloween-ghost-cat-bat-friends-coloring-pa__1cc339c68a",
+          "title": "Chibi Holiday Halloween Cute Halloween Ghost Cat Bat Friends Coloring Page",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-holiday-halloween-mummy-running-away-from-black-cat-coloring-page__3d6746f90b",
+          "title": "Chibi Holiday Halloween Mummy Running Away From Black Cat Coloring Page",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-holiday-halloween-witch-with-black-cat-on-shoulder-coloring-page__09368c189e",
+          "title": "Chibi Holiday Halloween Witch With Black Cat On Shoulder Coloring Page",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "holiday__holiday-halloween-black-cat-sitting-on-fence-under-moon-coloring-page__108e733c60",
+          "title": "Holiday Halloween Black Cat Sitting On Fence Under Moon Coloring Page",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "holiday__holiday-halloween-costume-plushie-kitten-cat-family__38b29f880c",
+          "title": "Holiday Halloween Costume Plushie Kitten Cat Family",
+          "categorySlug": "holiday"
+        }
+      ],
+      "likelyParentHubs": [
+        "animals",
+        "cats",
+        "halloween"
+      ],
+      "reasonForManualReview": "Below combination minimum of 10 assets but above absolute minimum.",
+      "overlapScore": {
+        "maxExistingOverlapRatio": 1,
+        "maxComparableOverlapRatio": 0
+      },
+      "seoIntent": "Halloween Cats printable coloring pages for visitors who want both the subject and the style or season.",
+      "risk": "below normal asset threshold",
+      "ownerDecision": "",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "halloween-houses",
+      "title": "Halloween Houses Coloring Pages",
+      "assetCount": 7,
+      "strongestMatchingAssets": [
+        {
+          "assetId": "chibi__chibi-holiday-halloween-haunted-house-coloring-page__c0eae7d121",
+          "title": "Chibi Holiday Halloween Haunted House Coloring Page",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-holiday-halloween-haunted-house-on-hill-coloring-page__c7aba2cae1",
+          "title": "Chibi Holiday Halloween Haunted House On Hill Coloring Page",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-holiday-halloween-haunted-house-on-hill-under-full-moon-coloring-p__6de4b2a74b",
+          "title": "Chibi Holiday Halloween Haunted House On Hill Under Full Moon Coloring Page",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-holiday-halloween-haunted-house-on-stilts-in-swamp-coloring-page__362fdd250c",
+          "title": "Chibi Holiday Halloween Haunted House On Stilts In Swamp Coloring Page",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-holiday-halloween-haunted-house-with-bats-flying-around-coloring-p__1cb79db677",
+          "title": "Chibi Holiday Halloween Haunted House With Bats Flying Around Coloring Page",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-holiday-halloween-haunted-house-with-broken-fence-coloring-page__c23ca248b8",
+          "title": "Chibi Holiday Halloween Haunted House With Broken Fence Coloring Page",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "holiday__holiday-halloween-haunted-house-on-hill-under-full-moon-coloring-page__4846172bbc",
+          "title": "Holiday Halloween Haunted House On Hill Under Full Moon Coloring Page",
+          "categorySlug": "holiday"
+        }
+      ],
+      "likelyParentHubs": [
+        "buildings",
+        "halloween",
+        "holidays"
+      ],
+      "reasonForManualReview": "Below combination minimum of 10 assets but above absolute minimum.",
+      "overlapScore": {
+        "maxExistingOverlapRatio": 1,
+        "maxComparableOverlapRatio": 0
+      },
+      "seoIntent": "Halloween Houses printable coloring pages for visitors who want both the subject and the style or season.",
+      "risk": "below normal asset threshold",
+      "ownerDecision": "",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "birthday-dragons",
+      "title": "Birthday Dragons Coloring Pages",
+      "assetCount": 6,
+      "strongestMatchingAssets": [
+        {
+          "assetId": "holiday__holiday-birthday-celebration-dragon__bc7966ef21",
+          "title": "Holiday Birthday Celebration Dragon",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "holiday__holiday-birthday-celebration-fire-dragon__de6f8bbf33",
+          "title": "Holiday Birthday Celebration Fire Dragon",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "holiday__holiday-birthday-celebration-ice-dragon__a135872bdb",
+          "title": "Holiday Birthday Celebration Ice Dragon",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "holiday__holiday-birthday-celebration-plushie-baby-dragon-family__2bfeee327f",
+          "title": "Holiday Birthday Celebration Plushie Baby Dragon Family",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "holiday__holiday-birthday-celebration-plushie-dragon-family__cbfe50b576",
+          "title": "Holiday Birthday Celebration Plushie Dragon Family",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "holiday__holiday-birthday-celebration-plushie-komodo-dragon-family__8319ab1593",
+          "title": "Holiday Birthday Celebration Plushie Komodo Dragon Family",
+          "categorySlug": "holiday"
+        }
+      ],
+      "likelyParentHubs": [
+        "fantasy",
+        "birthday",
+        "fantasy-creatures"
+      ],
+      "reasonForManualReview": "Below combination minimum of 10 assets but above absolute minimum.",
+      "overlapScore": {
+        "maxExistingOverlapRatio": 1,
+        "maxComparableOverlapRatio": 0
+      },
+      "seoIntent": "Birthday Dragons printable coloring pages for visitors who want both the subject and the style or season.",
+      "risk": "below normal asset threshold",
+      "ownerDecision": "",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "christmas-dragons",
+      "title": "Christmas Dragons Coloring Pages",
+      "assetCount": 6,
+      "strongestMatchingAssets": [
+        {
+          "assetId": "christmas__holiday-christmas-animals-dragons__b1e9ada7ea",
+          "title": "Holiday Christmas Animals Dragons",
+          "categorySlug": "christmas"
+        },
+        {
+          "assetId": "holiday__holiday-christmas-plushie-baby-dragon-family__b2bcf582a7",
+          "title": "Holiday Christmas Plushie Baby Dragon Family",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "holiday__holiday-christmas-plushie-baby-dragon__13a91bb803",
+          "title": "Holiday Christmas Plushie Baby Dragon",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "holiday__holiday-christmas-plushie-dragon-family__2b39beede8",
+          "title": "Holiday Christmas Plushie Dragon Family",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "holiday__holiday-christmas-plushie-dragon__b1babc8f9f",
+          "title": "Holiday Christmas Plushie Dragon",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "holiday__holiday-christmas-plushie-komodo-dragon-family__d67afb97e4",
+          "title": "Holiday Christmas Plushie Komodo Dragon Family",
+          "categorySlug": "holiday"
+        }
+      ],
+      "likelyParentHubs": [
+        "fantasy",
+        "christmas",
+        "fantasy-creatures"
+      ],
+      "reasonForManualReview": "Below combination minimum of 10 assets but above absolute minimum.",
+      "overlapScore": {
+        "maxExistingOverlapRatio": 1,
+        "maxComparableOverlapRatio": 0
+      },
+      "seoIntent": "Christmas Dragons printable coloring pages for visitors who want both the subject and the style or season.",
+      "risk": "below normal asset threshold",
+      "ownerDecision": "",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "snowmen",
+      "title": "Snowmen Coloring Pages",
+      "assetCount": 7,
+      "strongestMatchingAssets": [
+        {
+          "assetId": "chibi__chibi-plushie-snowman-character__07cc3bcf2b",
+          "title": "Chibi Plushie Snowman Character",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "christmas__christmas-holiday-snowman__1e875a8af7",
+          "title": "Christmas Holiday Snowman",
+          "categorySlug": "christmas"
+        },
+        {
+          "assetId": "christmas__holiday-christmas-snowman-decorated-with-string-lights-coloring-page__4a97e6a224",
+          "title": "Holiday Christmas Snowman Decorated With String Lights Coloring Page",
+          "categorySlug": "christmas"
+        },
+        {
+          "assetId": "christmas__holiday-christmas-snowman-hugging-small-penguin-friend-coloring-page__00540e278f",
+          "title": "Holiday Christmas Snowman Hugging Small Penguin Friend Coloring Page",
+          "categorySlug": "christmas"
+        },
+        {
+          "assetId": "christmas__holiday-christmas-snowman-ice-skating-on-frozen-pond-coloring-page__e25f11f9cf",
+          "title": "Holiday Christmas Snowman Ice Skating On Frozen Pond Coloring Page",
+          "categorySlug": "christmas"
+        },
+        {
+          "assetId": "christmas__holiday-christmas-snowman-with-carrot-nose-and-top-hat-coloring-page__d73bbba3f2",
+          "title": "Holiday Christmas Snowman With Carrot Nose And Top Hat Coloring Page",
+          "categorySlug": "christmas"
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-snowman-character__5a2fc9c406",
+          "title": "Mandala Geometry Patterns Plushie Snowman Character",
+          "categorySlug": "mandala-geometry-patterns"
+        }
+      ],
+      "likelyParentHubs": [
+        "christmas",
+        "holidays"
+      ],
+      "reasonForManualReview": "Below seasonal minimum of 8 assets but above absolute minimum.",
+      "overlapScore": {
+        "maxExistingOverlapRatio": 0.714,
+        "maxComparableOverlapRatio": 0
+      },
+      "seoIntent": "Snowman coloring pages for winter and Christmas themes.",
+      "risk": "below normal asset threshold",
+      "ownerDecision": "",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "chibi-cats",
+      "title": "Chibi Cats Coloring Pages",
+      "assetCount": 9,
+      "strongestMatchingAssets": [
+        {
+          "assetId": "chibi__chibi-cat__3abcbe3ef5",
+          "title": "Chibi Cat",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-holiday-halloween-black-cat-peeking-out-of-pumpkin-coloring-page__c47ea723e5",
+          "title": "Chibi Holiday Halloween Black Cat Peeking Out Of Pumpkin Coloring Page",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-holiday-halloween-black-cat-sitting-on-fence-under-moon-coloring-p__81d2ff4c89",
+          "title": "Chibi Holiday Halloween Black Cat Sitting On Fence Under Moon Coloring Page",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-holiday-halloween-cute-halloween-ghost-cat-bat-friends-coloring-pa__1cc339c68a",
+          "title": "Chibi Holiday Halloween Cute Halloween Ghost Cat Bat Friends Coloring Page",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-holiday-halloween-mummy-running-away-from-black-cat-coloring-page__3d6746f90b",
+          "title": "Chibi Holiday Halloween Mummy Running Away From Black Cat Coloring Page",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-holiday-halloween-witch-with-black-cat-on-shoulder-coloring-page__09368c189e",
+          "title": "Chibi Holiday Halloween Witch With Black Cat On Shoulder Coloring Page",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-kitten__aec37cad01",
+          "title": "Chibi Kitten",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-plushie-kitten-cat__de2f96f241",
+          "title": "Chibi Plushie Kitten Cat",
+          "categorySlug": "chibi"
+        }
+      ],
+      "likelyParentHubs": [
+        "animals",
+        "cats",
+        "chibi"
+      ],
+      "reasonForManualReview": "Below combination minimum of 10 assets but above absolute minimum.",
+      "overlapScore": {
+        "maxExistingOverlapRatio": 1,
+        "maxComparableOverlapRatio": 0
+      },
+      "seoIntent": "Chibi Cats printable coloring pages for visitors who want both the subject and the style or season.",
+      "risk": "below normal asset threshold",
+      "ownerDecision": "",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-butterflies",
+      "title": "Plushie Butterflies Coloring Pages",
+      "assetCount": 9,
+      "strongestMatchingAssets": [
+        {
+          "assetId": "anime-girls__anime-girl-summoning-butterfly-plushies__3ff3f20a00",
+          "title": "Anime Girl Summoning Butterfly Plushies",
+          "categorySlug": "anime-girls"
+        },
+        {
+          "assetId": "chibi__chibi-plushie-butterfly__e50cf71397",
+          "title": "Chibi Plushie Butterfly",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "holiday__holiday-birthday-celebration-plushie-butterfly-family__bf9fded621",
+          "title": "Holiday Birthday Celebration Plushie Butterfly Family",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "holiday__holiday-christmas-plushie-butterfly-family__859e59cfba",
+          "title": "Holiday Christmas Plushie Butterfly Family",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "holiday__holiday-halloween-costume-plushie-butterfly-family__bf507afcce",
+          "title": "Holiday Halloween Costume Plushie Butterfly Family",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-butterfly-insects__5e70a62d34",
+          "title": "Mandala Geometry Patterns Plushie Butterfly Insects",
+          "categorySlug": "mandala-geometry-patterns"
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-butterfly__d9e42d988b",
+          "title": "Mandala Geometry Patterns Plushie Butterfly",
+          "categorySlug": "mandala-geometry-patterns"
+        },
+        {
+          "assetId": "plushie__plushie-butterfly-family__4f50832a37",
+          "title": "Plushie Butterfly Family",
+          "categorySlug": "plushie"
+        }
+      ],
+      "likelyParentHubs": [
+        "insects",
+        "animals",
+        "butterflies"
+      ],
+      "reasonForManualReview": "Below combination minimum of 10 assets but above absolute minimum.",
+      "overlapScore": {
+        "maxExistingOverlapRatio": 1,
+        "maxComparableOverlapRatio": 0
+      },
+      "seoIntent": "Plushie Butterflies printable coloring pages for visitors who want both the subject and the style or season.",
+      "risk": "below normal asset threshold",
+      "ownerDecision": "",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-diplodocus",
+      "title": "Plushie Diplodocus Coloring Pages",
+      "assetCount": 9,
+      "strongestMatchingAssets": [
+        {
+          "assetId": "anime-girls__anime-girl-summoning-jutsu-diplodocus-plushies__fdcb2f94dc",
+          "title": "Anime Girl Summoning Jutsu Diplodocus Plushies",
+          "categorySlug": "anime-girls"
+        },
+        {
+          "assetId": "chibi__chibi-plushie-prehistoric-diplodocus__a6eff46243",
+          "title": "Chibi Plushie Prehistoric Diplodocus",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "holiday__holiday-birthday-celebration-plushie-prehistoric-diplodocus-family__c487548c5d",
+          "title": "Holiday Birthday Celebration Plushie Prehistoric Diplodocus Family",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "holiday__holiday-christmas-plushie-prehistoric-diplodocus-family__51ae1a2235",
+          "title": "Holiday Christmas Plushie Prehistoric Diplodocus Family",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "holiday__holiday-halloween-costume-plushie-prehistoric-diplodocus-family__b42a0d68dc",
+          "title": "Holiday Halloween Costume Plushie Prehistoric Diplodocus Family",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-prehistoric-diplodocus-animal__62376b3847",
+          "title": "Mandala Geometry Patterns Plushie Prehistoric Diplodocus Animal",
+          "categorySlug": "mandala-geometry-patterns"
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-prehistoric-diplodocus__4d2588117b",
+          "title": "Mandala Geometry Patterns Plushie Prehistoric Diplodocus",
+          "categorySlug": "mandala-geometry-patterns"
+        },
+        {
+          "assetId": "plushie__plushie-prehistoric-diplodocus-family__b058376ac2",
+          "title": "Plushie Prehistoric Diplodocus Family",
+          "categorySlug": "plushie"
+        }
+      ],
+      "likelyParentHubs": [
+        "dinosaurs",
+        "animals",
+        "plushies"
+      ],
+      "reasonForManualReview": "Below combination minimum of 10 assets but above absolute minimum.",
+      "overlapScore": {
+        "maxExistingOverlapRatio": 1,
+        "maxComparableOverlapRatio": 0
+      },
+      "seoIntent": "Plushie Diplodocus printable coloring pages for visitors who want both the subject and the style or season.",
+      "risk": "below normal asset threshold",
+      "ownerDecision": "",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-lizards",
+      "title": "Plushie Lizards Coloring Pages",
+      "assetCount": 9,
+      "strongestMatchingAssets": [
+        {
+          "assetId": "anime-girls__anime-girl-summoning-australian-throny-devil-lizard-plushies__b0d3d85b97",
+          "title": "Anime Girl Summoning Australian Throny Devil Lizard Plushies",
+          "categorySlug": "anime-girls"
+        },
+        {
+          "assetId": "anime-girls__anime-girl-summoning-frilled-lizard-plushies__d018b1541b",
+          "title": "Anime Girl Summoning Frilled Lizard Plushies",
+          "categorySlug": "anime-girls"
+        },
+        {
+          "assetId": "chibi__chibi-plushie-iguana__3bc9de7ca7",
+          "title": "Chibi Plushie Iguana",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "holiday__holiday-birthday-celebration-plushie-iguana-family__9e447e3694",
+          "title": "Holiday Birthday Celebration Plushie Iguana Family",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "holiday__holiday-christmas-plushie-iguana-family__ca96461f58",
+          "title": "Holiday Christmas Plushie Iguana Family",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "holiday__holiday-halloween-costume-plushie-iguana-family__68da030e80",
+          "title": "Holiday Halloween Costume Plushie Iguana Family",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-iguana__2aa74b6976",
+          "title": "Mandala Geometry Patterns Plushie Iguana",
+          "categorySlug": "mandala-geometry-patterns"
+        },
+        {
+          "assetId": "plushie__plushie-iguana-family__9f4c50c81e",
+          "title": "Plushie Iguana Family",
+          "categorySlug": "plushie"
+        }
+      ],
+      "likelyParentHubs": [
+        "reptiles",
+        "plushies"
+      ],
+      "reasonForManualReview": "Below combination minimum of 10 assets but above absolute minimum.",
+      "overlapScore": {
+        "maxExistingOverlapRatio": 1,
+        "maxComparableOverlapRatio": 0
+      },
+      "seoIntent": "Plushie Lizards printable coloring pages for visitors who want both the subject and the style or season.",
+      "risk": "below normal asset threshold",
+      "ownerDecision": "",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-owls",
+      "title": "Plushie Owls Coloring Pages",
+      "assetCount": 9,
+      "strongestMatchingAssets": [
+        {
+          "assetId": "chibi__chibi-plushie-owl__449895fb8b",
+          "title": "Chibi Plushie Owl",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "holiday__holiday-birthday-celebration-plushie-owl-family__1e1482a59c",
+          "title": "Holiday Birthday Celebration Plushie Owl Family",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "holiday__holiday-christmas-plushie-owl-family__ba07e3d5fe",
+          "title": "Holiday Christmas Plushie Owl Family",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "holiday__holiday-halloween-costume-plushie-owl-family__88977c6ed5",
+          "title": "Holiday Halloween Costume Plushie Owl Family",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "holiday__holiday-halloween-plushie-owl-family__2aa840edf0",
+          "title": "Holiday Halloween Plushie Owl Family",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-owl-animals__861e789b81",
+          "title": "Mandala Geometry Patterns Plushie Owl Animals",
+          "categorySlug": "mandala-geometry-patterns"
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-owl__0d06a9b14f",
+          "title": "Mandala Geometry Patterns Plushie Owl",
+          "categorySlug": "mandala-geometry-patterns"
+        },
+        {
+          "assetId": "plushie__plushie-owl-family__68ef197d31",
+          "title": "Plushie Owl Family",
+          "categorySlug": "plushie"
+        }
+      ],
+      "likelyParentHubs": [
+        "birds",
+        "plushies"
+      ],
+      "reasonForManualReview": "Below combination minimum of 10 assets but above absolute minimum.",
+      "overlapScore": {
+        "maxExistingOverlapRatio": 1,
+        "maxComparableOverlapRatio": 0
+      },
+      "seoIntent": "Plushie Owls printable coloring pages for visitors who want both the subject and the style or season.",
+      "risk": "below normal asset threshold",
+      "ownerDecision": "",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "chibi-bears",
+      "title": "Chibi Bears Coloring Pages",
+      "assetCount": 8,
+      "strongestMatchingAssets": [
+        {
+          "assetId": "anime-girls__anime-girl-chibi-bear-summon__443fa88c61",
+          "title": "Anime Girl Chibi Bear Summon",
+          "categorySlug": "anime-girls"
+        },
+        {
+          "assetId": "chibi__chibi-bear__24adcef6cd",
+          "title": "Chibi Bear",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-cave-bear__34458b23d1",
+          "title": "Chibi Cave Bear",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-plushie-kawaii-polar-bear__938c4d4db3",
+          "title": "Chibi Plushie Kawaii Polar Bear",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-plushie-koala-bear__683bc7db01",
+          "title": "Chibi Plushie Koala Bear",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-plushie-panda-bear__99b2188092",
+          "title": "Chibi Plushie Panda Bear",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-plushie-polar-bear__64be79dc44",
+          "title": "Chibi Plushie Polar Bear",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-plushie-teddy-bear__614914bb45",
+          "title": "Chibi Plushie Teddy Bear",
+          "categorySlug": "chibi"
+        }
+      ],
+      "likelyParentHubs": [
+        "animals",
+        "chibi",
+        "easy",
+        "for-kids"
+      ],
+      "reasonForManualReview": "Below combination minimum of 10 assets but above absolute minimum.",
+      "overlapScore": {
+        "maxExistingOverlapRatio": 1,
+        "maxComparableOverlapRatio": 0
+      },
+      "seoIntent": "Chibi Bears printable coloring pages for visitors who want both the subject and the style or season.",
+      "risk": "below normal asset threshold",
+      "ownerDecision": "",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-dolphins",
+      "title": "Plushie Dolphins Coloring Pages",
+      "assetCount": 8,
+      "strongestMatchingAssets": [
+        {
+          "assetId": "chibi__chibi-plushie-dolphin__4549f6ccf9",
+          "title": "Chibi Plushie Dolphin",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "holiday__holiday-birthday-celebration-plushie-dolphin-family__dacc79d19d",
+          "title": "Holiday Birthday Celebration Plushie Dolphin Family",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "holiday__holiday-christmas-plushie-dolphin-family__befc0fe70f",
+          "title": "Holiday Christmas Plushie Dolphin Family",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "holiday__holiday-halloween-costume-plushie-dolphin-family__73f89850db",
+          "title": "Holiday Halloween Costume Plushie Dolphin Family",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-dolphin-animals__5c8dd38278",
+          "title": "Mandala Geometry Patterns Plushie Dolphin Animals",
+          "categorySlug": "mandala-geometry-patterns"
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-dolphin__5a6624526e",
+          "title": "Mandala Geometry Patterns Plushie Dolphin",
+          "categorySlug": "mandala-geometry-patterns"
+        },
+        {
+          "assetId": "plushie__plushie-dolphin-family__ee9ebd659c",
+          "title": "Plushie Dolphin Family",
+          "categorySlug": "plushie"
+        },
+        {
+          "assetId": "plushie__plushie-dolphin__844c216c6c",
+          "title": "Plushie Dolphin",
+          "categorySlug": "plushie"
+        }
+      ],
+      "likelyParentHubs": [
+        "sea-life",
+        "animals",
+        "plushies"
+      ],
+      "reasonForManualReview": "Below combination minimum of 10 assets but above absolute minimum.",
+      "overlapScore": {
+        "maxExistingOverlapRatio": 1,
+        "maxComparableOverlapRatio": 0
+      },
+      "seoIntent": "Plushie Dolphins printable coloring pages for visitors who want both the subject and the style or season.",
+      "risk": "below normal asset threshold",
+      "ownerDecision": "",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-eagles",
+      "title": "Plushie Eagles Coloring Pages",
+      "assetCount": 8,
+      "strongestMatchingAssets": [
+        {
+          "assetId": "chibi__chibi-plushie-eagle__42eb783c83",
+          "title": "Chibi Plushie Eagle",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "holiday__holiday-birthday-celebration-plushie-eagle-family__7bca94efae",
+          "title": "Holiday Birthday Celebration Plushie Eagle Family",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "holiday__holiday-christmas-plushie-eagle-family__ccc48f9272",
+          "title": "Holiday Christmas Plushie Eagle Family",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "holiday__holiday-halloween-costume-plushie-eagle-family__5739572709",
+          "title": "Holiday Halloween Costume Plushie Eagle Family",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-eagle-be-creative__b046c81418",
+          "title": "Mandala Geometry Patterns Plushie Eagle Be Creative",
+          "categorySlug": "mandala-geometry-patterns"
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-eagle__d032970d34",
+          "title": "Mandala Geometry Patterns Plushie Eagle",
+          "categorySlug": "mandala-geometry-patterns"
+        },
+        {
+          "assetId": "plushie__plushie-eagle-family__766bc08b7f",
+          "title": "Plushie Eagle Family",
+          "categorySlug": "plushie"
+        },
+        {
+          "assetId": "plushie__plushie-eagle__ed562bc967",
+          "title": "Plushie Eagle",
+          "categorySlug": "plushie"
+        }
+      ],
+      "likelyParentHubs": [
+        "birds",
+        "plushies"
+      ],
+      "reasonForManualReview": "Below combination minimum of 10 assets but above absolute minimum.",
+      "overlapScore": {
+        "maxExistingOverlapRatio": 1,
+        "maxComparableOverlapRatio": 0
+      },
+      "seoIntent": "Plushie Eagles printable coloring pages for visitors who want both the subject and the style or season.",
+      "risk": "below normal asset threshold",
+      "ownerDecision": "",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "plushie-robots",
+      "title": "Plushie Robots Coloring Pages",
+      "assetCount": 8,
+      "strongestMatchingAssets": [
+        {
+          "assetId": "chibi__chibi-plushie-robot__7e5c419a1b",
+          "title": "Chibi Plushie Robot",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "holiday__holiday-birthday-celebration-plushie-robot-family__0c03589e4f",
+          "title": "Holiday Birthday Celebration Plushie Robot Family",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "holiday__holiday-christmas-plushie-robot-family__ff88fbd969",
+          "title": "Holiday Christmas Plushie Robot Family",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "holiday__holiday-halloween-costume-plushie-robot-family__9d0b24cb4f",
+          "title": "Holiday Halloween Costume Plushie Robot Family",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-robot-animal__04474f9dd3",
+          "title": "Mandala Geometry Patterns Plushie Robot Animal",
+          "categorySlug": "mandala-geometry-patterns"
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-plushie-robot__3761befce4",
+          "title": "Mandala Geometry Patterns Plushie Robot",
+          "categorySlug": "mandala-geometry-patterns"
+        },
+        {
+          "assetId": "plushie__plushie-robot-family__39a52a2d15",
+          "title": "Plushie Robot Family",
+          "categorySlug": "plushie"
+        },
+        {
+          "assetId": "plushie__plushie-robot__03bc6c06ce",
+          "title": "Plushie Robot",
+          "categorySlug": "plushie"
+        }
+      ],
+      "likelyParentHubs": [
+        "fantasy",
+        "plushies"
+      ],
+      "reasonForManualReview": "Below combination minimum of 10 assets but above absolute minimum.",
+      "overlapScore": {
+        "maxExistingOverlapRatio": 1,
+        "maxComparableOverlapRatio": 0
+      },
+      "seoIntent": "Plushie Robots printable coloring pages for visitors who want both the subject and the style or season.",
+      "risk": "below normal asset threshold",
+      "ownerDecision": "",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "chibi-castles",
+      "title": "Chibi Castles Coloring Pages",
+      "assetCount": 7,
+      "strongestMatchingAssets": [
+        {
+          "assetId": "chibi__chibi-castle__d763e81619",
+          "title": "Chibi Castle",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-dungeon-castle-gate-defender__d3cd88319b",
+          "title": "Chibi Dungeon Castle Gate Defender",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-dungeon-castle-gate-guardian__d54b7a9b36",
+          "title": "Chibi Dungeon Castle Gate Guardian",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-holiday-halloween-creepy-castle-with-torch-lit-windows-coloring-pa__08e80ab431",
+          "title": "Chibi Holiday Halloween Creepy Castle With Torch Lit Windows Coloring Page",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-holiday-halloween-dracula-flying-as-bat-over-castle-coloring-page__16b1ef94ce",
+          "title": "Chibi Holiday Halloween Dracula Flying As Bat Over Castle Coloring Page",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-hydra-castle-pet__49e2d5c525",
+          "title": "Chibi Hydra Castle Pet",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-midieval-fantasy-castle__b91a8926a6",
+          "title": "Chibi Midieval Fantasy Castle",
+          "categorySlug": "chibi"
+        }
+      ],
+      "likelyParentHubs": [
+        "buildings",
+        "chibi",
+        "easy"
+      ],
+      "reasonForManualReview": "Below combination minimum of 10 assets but above absolute minimum.",
+      "overlapScore": {
+        "maxExistingOverlapRatio": 1,
+        "maxComparableOverlapRatio": 0
+      },
+      "seoIntent": "Chibi Castles printable coloring pages for visitors who want both the subject and the style or season.",
+      "risk": "below normal asset threshold",
+      "ownerDecision": "",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "chibi-houses",
+      "title": "Chibi Houses Coloring Pages",
+      "assetCount": 6,
+      "strongestMatchingAssets": [
+        {
+          "assetId": "chibi__chibi-holiday-halloween-haunted-house-coloring-page__c0eae7d121",
+          "title": "Chibi Holiday Halloween Haunted House Coloring Page",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-holiday-halloween-haunted-house-on-hill-coloring-page__c7aba2cae1",
+          "title": "Chibi Holiday Halloween Haunted House On Hill Coloring Page",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-holiday-halloween-haunted-house-on-hill-under-full-moon-coloring-p__6de4b2a74b",
+          "title": "Chibi Holiday Halloween Haunted House On Hill Under Full Moon Coloring Page",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-holiday-halloween-haunted-house-on-stilts-in-swamp-coloring-page__362fdd250c",
+          "title": "Chibi Holiday Halloween Haunted House On Stilts In Swamp Coloring Page",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-holiday-halloween-haunted-house-with-bats-flying-around-coloring-p__1cb79db677",
+          "title": "Chibi Holiday Halloween Haunted House With Bats Flying Around Coloring Page",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-holiday-halloween-haunted-house-with-broken-fence-coloring-page__c23ca248b8",
+          "title": "Chibi Holiday Halloween Haunted House With Broken Fence Coloring Page",
+          "categorySlug": "chibi"
+        }
+      ],
+      "likelyParentHubs": [
+        "buildings",
+        "chibi",
+        "easy"
+      ],
+      "reasonForManualReview": "Below combination minimum of 10 assets but above absolute minimum.",
+      "overlapScore": {
+        "maxExistingOverlapRatio": 1,
+        "maxComparableOverlapRatio": 0
+      },
+      "seoIntent": "Chibi Houses printable coloring pages for visitors who want both the subject and the style or season.",
+      "risk": "below normal asset threshold",
+      "ownerDecision": "",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "chibi-tigers",
+      "title": "Chibi Tigers Coloring Pages",
+      "assetCount": 6,
+      "strongestMatchingAssets": [
+        {
+          "assetId": "chibi__chibi-megalodon-tiger-shark__976f35ce44",
+          "title": "Chibi Megalodon Tiger Shark",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-plushie-prehistoric-saber-toothed-tiger__b1b54abff8",
+          "title": "Chibi Plushie Prehistoric Saber Toothed Tiger",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-plushie-tiger__d61bd17544",
+          "title": "Chibi Plushie Tiger",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-saber-toothed-tiger__d449186160",
+          "title": "Chibi Saber Toothed Tiger",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-tiger__5687e401c3",
+          "title": "Chibi Tiger",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-wooly-tiger-mammoth__fb823dda66",
+          "title": "Chibi Wooly Tiger Mammoth",
+          "categorySlug": "chibi"
+        }
+      ],
+      "likelyParentHubs": [
+        "animals",
+        "chibi",
+        "easy",
+        "for-kids"
+      ],
+      "reasonForManualReview": "Below combination minimum of 10 assets but above absolute minimum.",
+      "overlapScore": {
+        "maxExistingOverlapRatio": 1,
+        "maxComparableOverlapRatio": 0
+      },
+      "seoIntent": "Chibi Tigers printable coloring pages for visitors who want both the subject and the style or season.",
+      "risk": "below normal asset threshold",
+      "ownerDecision": "",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "chibi-wizards",
+      "title": "Chibi Wizards Coloring Pages",
+      "assetCount": 6,
+      "strongestMatchingAssets": [
+        {
+          "assetId": "chibi__chibi-dark-wizard__74938cda04",
+          "title": "Chibi Dark Wizard",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-dungeon-wizard-and-magic-book__674b4fb637",
+          "title": "Chibi Dungeon Wizard And Magic Book",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-dungeon-wizard-casting-spell__60bcc3c082",
+          "title": "Chibi Dungeon Wizard Casting Spell",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-dungeon-wizard-tower-room__f624d1911c",
+          "title": "Chibi Dungeon Wizard Tower Room",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-midieval-fantasy-sorcerer__1f994253a1",
+          "title": "Chibi Midieval Fantasy Sorcerer",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "chibi__chibi-midieval-fantasy-wizard__5737cee6c0",
+          "title": "Chibi Midieval Fantasy Wizard",
+          "categorySlug": "chibi"
+        }
+      ],
+      "likelyParentHubs": [
+        "fantasy",
+        "chibi",
+        "easy",
+        "for-kids"
+      ],
+      "reasonForManualReview": "Below combination minimum of 10 assets but above absolute minimum.",
+      "overlapScore": {
+        "maxExistingOverlapRatio": 1,
+        "maxComparableOverlapRatio": 0
+      },
+      "seoIntent": "Chibi Wizards printable coloring pages for visitors who want both the subject and the style or season.",
+      "risk": "below normal asset threshold",
+      "ownerDecision": "",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "princesses",
+      "title": "Princesses Coloring Pages",
+      "assetCount": 7,
+      "strongestMatchingAssets": [
+        {
+          "assetId": "chibi__chibi-midieval-fantasy-princess__7098f8a8b2",
+          "title": "Chibi Midieval Fantasy Princess",
+          "categorySlug": "chibi"
+        },
+        {
+          "assetId": "fantasy__fantasy-mermaid-princess-coral-throne__9da6f15653",
+          "title": "Fantasy Mermaid Princess Coral Throne",
+          "categorySlug": "fantasy"
+        },
+        {
+          "assetId": "holiday__holiday-birthday-princess-birthday-party__e90de00d84",
+          "title": "Holiday Birthday Princess Birthday Party",
+          "categorySlug": "holiday"
+        },
+        {
+          "assetId": "indoor-plants__indoor-plants-philodendron-pink-princess__ab3e85182b",
+          "title": "Indoor Plants Philodendron Pink Princess",
+          "categorySlug": "indoor-plants"
+        },
+        {
+          "assetId": "indoor-plants__indoor-plants-philodendron-white-princess__b49d72c279",
+          "title": "Indoor Plants Philodendron White Princess",
+          "categorySlug": "indoor-plants"
+        },
+        {
+          "assetId": "midieval__midieval-fantasy-princess-tower__5cdfb57b0e",
+          "title": "Midieval Fantasy Princess Tower",
+          "categorySlug": "midieval"
+        },
+        {
+          "assetId": "midieval__midieval-fantasy-princess__c85ec2b877",
+          "title": "Midieval Fantasy Princess",
+          "categorySlug": "midieval"
+        }
+      ],
+      "likelyParentHubs": [
+        "fantasy"
+      ],
+      "reasonForManualReview": "Below theme minimum of 8 assets but above absolute minimum.",
+      "overlapScore": {
+        "maxExistingOverlapRatio": 0.571,
+        "maxComparableOverlapRatio": 0
+      },
+      "seoIntent": "Princess coloring pages for character and fantasy themes.",
+      "risk": "below normal asset threshold",
+      "ownerDecision": "",
+      "ownerNotes": ""
+    },
+    {
+      "slug": "cactus",
+      "title": "Cactus Coloring Pages",
+      "assetCount": 6,
+      "strongestMatchingAssets": [
+        {
+          "assetId": "indoor-plants__indoor-plants-christmas-cactus__150b46b5de",
+          "title": "Indoor Plants Christmas Cactus",
+          "categorySlug": "indoor-plants"
+        },
+        {
+          "assetId": "indoor-plants__indoor-plants-coral-cactus__6b3cd1f552",
+          "title": "Indoor Plants Coral Cactus",
+          "categorySlug": "indoor-plants"
+        },
+        {
+          "assetId": "indoor-plants__indoor-plants-easter-cactus__0860e67067",
+          "title": "Indoor Plants Easter Cactus",
+          "categorySlug": "indoor-plants"
+        },
+        {
+          "assetId": "indoor-plants__indoor-plants-thanksgiving-cactus__7091abea60",
+          "title": "Indoor Plants Thanksgiving Cactus",
+          "categorySlug": "indoor-plants"
+        },
+        {
+          "assetId": "reptiles__reptiles-desert-iguana-on-a-cactus__a4a44751e8",
+          "title": "Reptiles Desert Iguana On A Cactus",
+          "categorySlug": "reptiles"
+        },
+        {
+          "assetId": "reptiles__reptiles-desert-iguana-on-cactus__d5c5a5d9e4",
+          "title": "Reptiles Desert Iguana On Cactus",
+          "categorySlug": "reptiles"
+        }
+      ],
+      "likelyParentHubs": [
+        "plants",
+        "indoor-plants"
+      ],
+      "reasonForManualReview": "Below object minimum of 8 assets but above absolute minimum.",
+      "overlapScore": {
+        "maxExistingOverlapRatio": 0.667,
+        "maxComparableOverlapRatio": 0
+      },
+      "seoIntent": "Cactus coloring pages for plant browsing.",
+      "risk": "below normal asset threshold",
+      "ownerDecision": "",
+      "ownerNotes": ""
+    }
+  ]
+}

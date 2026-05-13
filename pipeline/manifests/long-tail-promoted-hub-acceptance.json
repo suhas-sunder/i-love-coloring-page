@@ -1,0 +1,611 @@
+{
+  "generatedAt": "2026-05-13T23:00:23.354Z",
+  "runId": "long-tail-acceptance-gate",
+  "summary": {
+    "promotedHubCount": 66,
+    "acceptedCount": 66,
+    "needsCopyFixCount": 0,
+    "needsRouteFixCount": 0,
+    "needsCountFixCount": 0,
+    "shouldDemoteCount": 0,
+    "ownerReviewNeededCount": 0,
+    "nonAcceptedCount": 0,
+    "noAutomaticSubjectiveDemotion": true
+  },
+  "hubs": [
+    {
+      "slug": "christmas-dogs",
+      "title": "Christmas Dogs Coloring Pages",
+      "status": "accepted",
+      "assetCount": 36,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "geometric-dogs",
+      "title": "Geometric Dogs Coloring Pages",
+      "status": "accepted",
+      "assetCount": 85,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "chibi-dogs",
+      "title": "Chibi Dogs Coloring Pages",
+      "status": "accepted",
+      "assetCount": 79,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "dragons",
+      "title": "Dragons Coloring Pages",
+      "status": "accepted",
+      "assetCount": 259,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "mushrooms",
+      "title": "Mushrooms Coloring Pages",
+      "status": "accepted",
+      "assetCount": 218,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "sushi",
+      "title": "Sushi Coloring Pages",
+      "status": "accepted",
+      "assetCount": 161,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "bakery",
+      "title": "Bakery Coloring Pages",
+      "status": "accepted",
+      "assetCount": 93,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "bears",
+      "title": "Bears Coloring Pages",
+      "status": "accepted",
+      "assetCount": 60,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "houses",
+      "title": "Houses Coloring Pages",
+      "status": "accepted",
+      "assetCount": 54,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "pumpkins",
+      "title": "Pumpkins Coloring Pages",
+      "status": "accepted",
+      "assetCount": 23,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "wolves",
+      "title": "Wolves Coloring Pages",
+      "status": "accepted",
+      "assetCount": 45,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "tigers",
+      "title": "Tigers Coloring Pages",
+      "status": "accepted",
+      "assetCount": 43,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "foxes",
+      "title": "Foxes Coloring Pages",
+      "status": "accepted",
+      "assetCount": 40,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "knights",
+      "title": "Knights Coloring Pages",
+      "status": "accepted",
+      "assetCount": 39,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "plushie-whales",
+      "title": "Plushie Whales Coloring Pages",
+      "status": "accepted",
+      "assetCount": 27,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "reindeer",
+      "title": "Reindeer Coloring Pages",
+      "status": "accepted",
+      "assetCount": 15,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "lions",
+      "title": "Lions Coloring Pages",
+      "status": "accepted",
+      "assetCount": 32,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "lizards",
+      "title": "Lizards Coloring Pages",
+      "status": "accepted",
+      "assetCount": 32,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "witches",
+      "title": "Witches Coloring Pages",
+      "status": "accepted",
+      "assetCount": 32,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "pandas",
+      "title": "Pandas Coloring Pages",
+      "status": "accepted",
+      "assetCount": 30,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "wizards",
+      "title": "Wizards Coloring Pages",
+      "status": "accepted",
+      "assetCount": 30,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "owls",
+      "title": "Owls Coloring Pages",
+      "status": "accepted",
+      "assetCount": 28,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "sloths",
+      "title": "Sloths Coloring Pages",
+      "status": "accepted",
+      "assetCount": 28,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "bats",
+      "title": "Bats Coloring Pages",
+      "status": "accepted",
+      "assetCount": 27,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "castles",
+      "title": "Castles Coloring Pages",
+      "status": "accepted",
+      "assetCount": 25,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "plushie-cats",
+      "title": "Plushie Cats Coloring Pages",
+      "status": "accepted",
+      "assetCount": 21,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "chess",
+      "title": "Chess Coloring Pages",
+      "status": "accepted",
+      "assetCount": 23,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "eagles",
+      "title": "Eagles Coloring Pages",
+      "status": "accepted",
+      "assetCount": 22,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "koalas",
+      "title": "Koalas Coloring Pages",
+      "status": "accepted",
+      "assetCount": 22,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "rabbits",
+      "title": "Rabbits Coloring Pages",
+      "status": "accepted",
+      "assetCount": 22,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "cakes",
+      "title": "Cakes Coloring Pages",
+      "status": "accepted",
+      "assetCount": 21,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "otters",
+      "title": "Otters Coloring Pages",
+      "status": "accepted",
+      "assetCount": 21,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "penguins",
+      "title": "Penguins Coloring Pages",
+      "status": "accepted",
+      "assetCount": 20,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "ducks",
+      "title": "Ducks Coloring Pages",
+      "status": "accepted",
+      "assetCount": 19,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "giraffes",
+      "title": "Giraffes Coloring Pages",
+      "status": "accepted",
+      "assetCount": 19,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "sharks",
+      "title": "Sharks Coloring Pages",
+      "status": "accepted",
+      "assetCount": 19,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "zebras",
+      "title": "Zebras Coloring Pages",
+      "status": "accepted",
+      "assetCount": 19,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "plushie-unicorns",
+      "title": "Plushie Unicorns Coloring Pages",
+      "status": "accepted",
+      "assetCount": 14,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "moose",
+      "title": "Moose Coloring Pages",
+      "status": "accepted",
+      "assetCount": 18,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "phoenix",
+      "title": "Phoenix Coloring Pages",
+      "status": "accepted",
+      "assetCount": 18,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "snakes",
+      "title": "Snakes Coloring Pages",
+      "status": "accepted",
+      "assetCount": 18,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "elephants",
+      "title": "Elephants Coloring Pages",
+      "status": "accepted",
+      "assetCount": 17,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "plushie-triceratops",
+      "title": "Plushie Triceratops Coloring Pages",
+      "status": "accepted",
+      "assetCount": 13,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "fish",
+      "title": "Fish Coloring Pages",
+      "status": "accepted",
+      "assetCount": 16,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "hippos",
+      "title": "Hippos Coloring Pages",
+      "status": "accepted",
+      "assetCount": 16,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "horses",
+      "title": "Horses Coloring Pages",
+      "status": "accepted",
+      "assetCount": 16,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "bees",
+      "title": "Bees Coloring Pages",
+      "status": "accepted",
+      "assetCount": 15,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "deer",
+      "title": "Deer Coloring Pages",
+      "status": "accepted",
+      "assetCount": 15,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "hedgehogs",
+      "title": "Hedgehogs Coloring Pages",
+      "status": "accepted",
+      "assetCount": 15,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "hydras",
+      "title": "Hydras Coloring Pages",
+      "status": "accepted",
+      "assetCount": 15,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "llamas",
+      "title": "Llamas Coloring Pages",
+      "status": "accepted",
+      "assetCount": 15,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "wyverns",
+      "title": "Wyverns Coloring Pages",
+      "status": "accepted",
+      "assetCount": 15,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "cows",
+      "title": "Cows Coloring Pages",
+      "status": "accepted",
+      "assetCount": 14,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "dolphins",
+      "title": "Dolphins Coloring Pages",
+      "status": "accepted",
+      "assetCount": 14,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "monkeys",
+      "title": "Monkeys Coloring Pages",
+      "status": "accepted",
+      "assetCount": 14,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "sheep",
+      "title": "Sheep Coloring Pages",
+      "status": "accepted",
+      "assetCount": 14,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "velociraptors",
+      "title": "Velociraptors Coloring Pages",
+      "status": "accepted",
+      "assetCount": 22,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "t-rex",
+      "title": "T-Rex Coloring Pages",
+      "status": "accepted",
+      "assetCount": 18,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "stegosaurus",
+      "title": "Stegosaurus Coloring Pages",
+      "status": "accepted",
+      "assetCount": 17,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "santa",
+      "title": "Santa Coloring Pages",
+      "status": "accepted",
+      "assetCount": 10,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "diplodocus",
+      "title": "Diplodocus Coloring Pages",
+      "status": "accepted",
+      "assetCount": 16,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "megalodon",
+      "title": "Megalodon Coloring Pages",
+      "status": "accepted",
+      "assetCount": 16,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "brachiosaurus",
+      "title": "Brachiosaurus Coloring Pages",
+      "status": "accepted",
+      "assetCount": 15,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "plushie-dogs",
+      "title": "Plushie Dogs Coloring Pages",
+      "status": "accepted",
+      "assetCount": 12,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "robots",
+      "title": "Robots Coloring Pages",
+      "status": "accepted",
+      "assetCount": 9,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    },
+    {
+      "slug": "roses",
+      "title": "Roses Coloring Pages",
+      "status": "accepted",
+      "assetCount": 9,
+      "problem": [],
+      "recommendedAction": [],
+      "actionApplied": false
+    }
+  ]
+}

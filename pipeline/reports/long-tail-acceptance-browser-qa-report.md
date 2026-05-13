@@ -1,0 +1,23 @@
+# Long-Tail Acceptance Browser QA
+
+- Status: completed
+- Passed: true
+- Pages inspected: 19
+- Required routes checked: /coloring-pages, /coloring-pages/t-rex, /coloring-pages/dragons, /coloring-pages/mushrooms, /coloring-pages/sushi, /coloring-pages/bakery, /coloring-pages/bears, /coloring-pages/pumpkins, /coloring-pages/wolves, /coloring-pages/velociraptors, /coloring-pages/christmas-dogs, /coloring-pages/animals, /coloring-pages/geometric, /coloring-pages/anime-girls, /coloring-pages/christmas, /coloring-pages/plushies
+- WebP previews render: true
+- No broken images: true
+- Preview unavailable absent: true
+- Deferred records hidden: true
+- Counts accurate: true
+- Search/filter smoke passed: true
+- Pagination works where applicable: true
+- Print smoke passed: true
+- PNG/JPG/WebP controls visible: true
+- SVG download absent: true
+- Ad density follows rules: true
+- Horizontal overflow absent: true
+- SEO section below gallery: true
+- More menu works: true
+- Mobile nav works: true
+- Screenshot directory: pipeline/review/long-tail-acceptance/screenshots/
+- Blockers: none

@@ -1991,7 +1991,7 @@ function makeMetaDescription(candidate) {
 
 function makeIntro(candidate) {
   const name = collectionName(candidate.title).toLowerCase();
-  return `${candidate.title} gathers ${formatNumber(candidate.assetCount)} printable ${name} pages from the approved runtime library. Start with the gallery, then use search and filters to narrow the set.`;
+  return `${candidate.title} gathers ${formatNumber(candidate.assetCount)} printable ${name} pages from the gallery. Start with the artwork previews, then use search and filters to narrow the set.`;
 }
 
 function makeBelowGallerySections(candidate) {

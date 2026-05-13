@@ -1,0 +1,28 @@
+{
+  "generatedAt": "2026-05-13T23:00:23.354Z",
+  "runId": "long-tail-acceptance-gate",
+  "summary": {
+    "promoted_hub_count": 66,
+    "accepted_hub_count": 66,
+    "needs_fix_count": 0,
+    "should_demote_count": 0,
+    "owner_review_count": 0,
+    "manual_review_candidates_packaged": true,
+    "backlog_candidates_packaged": true,
+    "sitemap_routes_passed": true,
+    "seo_content_passed": true,
+    "internal_linking_passed": true,
+    "browser_qa_passed": true,
+    "sampled_url_check_passed": true,
+    "ready_for_image_sitemap_round": true,
+    "ready_for_og_image_round": true,
+    "ready_for_jsonld_round": true,
+    "ready_for_live_ads_round": false,
+    "blockers": []
+  },
+  "inputs": {
+    "browserQaManifest": "pipeline/manifests/long-tail-acceptance-browser-qa-results.json",
+    "sampledUrlCheckManifest": "pipeline/manifests/long-tail-acceptance-sampled-url-check-results.json",
+    "liveAdsDeferredUntilExplicitApproval": true
+  }
+}

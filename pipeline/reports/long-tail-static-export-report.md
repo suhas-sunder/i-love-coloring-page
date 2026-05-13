@@ -10,4 +10,4 @@
 - No route slug collisions: yes
 - No localhost or r2.dev output URLs: yes
 
-Static export results refreshed after the final npm run build.
+Static export files were present when this script ran. Re-run after npm run build for fresh evidence.

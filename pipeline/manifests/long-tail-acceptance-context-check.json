@@ -1,0 +1,46 @@
+{
+  "generatedAt": "2026-05-13T23:00:23.354Z",
+  "runId": "long-tail-acceptance-gate",
+  "summary": {
+    "correctRepository": true,
+    "currentBranch": "ver-5-deployed-may-13-2026",
+    "commitIncludes2e2206d": true,
+    "headCommit": "2e2206d",
+    "staticExportConfigured": true,
+    "appApiRoutePresent": false,
+    "coloringPagesRouteExists": true,
+    "hubSlugRouteExists": true,
+    "runtimeGeneratedCleanAssetDataExists": true,
+    "longTailGenerationSystemExists": true,
+    "runtimeAvailableRecords": 6352,
+    "deferredManualReviewRecords": 205,
+    "publicAssetBaseUrl": "https://assets.ilovecoloringpage.com/coloring-pages",
+    "publicSiteUrl": "https://www.ilovecoloringpage.com",
+    "generatedProductionMediaInPublic": 0,
+    "imagesGitStatusClean": true,
+    "ilovesvgGitStatusClean": true,
+    "svgUserFacingDownloadAbsent": true,
+    "publicDownloadsPngJpgWebp": true,
+    "liveAdsenseCodePresent": false,
+    "imageSitemapPresent": false,
+    "openGraphImageGenerationPresent": false,
+    "jsonLdExpansionDeferred": true,
+    "currentRuntimeHubCount": 131,
+    "currentRuntimeSitemapRouteCount": 131
+  },
+  "routeFiles": {
+    "homepage": true,
+    "coloringPages": true,
+    "hubSlug": true
+  },
+  "checkedFiles": {
+    "longTailFiles": [
+      "pipeline/scripts/build-long-tail-hub-candidates.mjs",
+      "pipeline/scripts/long-tail-hub-browser-qa-runner.cjs",
+      "pipeline/tests/long-tail-hub-expansion.test.mjs"
+    ],
+    "publicMediaFindings": [],
+    "appFilesChecked": 15,
+    "publicFilesChecked": 0
+  }
+}

@@ -101,6 +101,10 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Sitemap entries must include only promoted indexable hubs.
 - Backlog, manual-review, section-only, rejected, spam, and thin candidates must not be routed.
 - Do not proceed to image sitemap, Open Graph image generation, JSON-LD image expansion, live AdSense, or ad scripts until long-tail sitemap expansion passes browser QA and static export validation.
+- Long-tail hub expansion also requires an acceptance gate before image sitemap, Open Graph image, JSON-LD, or live ad work resumes.
+- Manual-review and backlog hub candidates must be packaged for owner review and must not be silently promoted.
+- Reordered duplicate hubs and token-only hub names should be blocked before routing.
+- New hub pages must preserve gallery-first UX and useful non-spam SEO copy.
 
 ## Public Gallery Visual System
 

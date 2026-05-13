@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-13T22:12:32.940Z",
+  "generatedAt": "2026-05-13T22:53:14.447Z",
   "runId": "long-tail-static-export",
   "summary": {
     "status": "export_present",
@@ -45,5 +45,5 @@
   "perImageRoutes": [],
   "badOutputUrls": [],
   "noindexInSitemap": [],
-  "note": "Static export results refreshed after the final npm run build."
+  "note": "Static export files were present when this script ran. Re-run after npm run build for fresh evidence."
 }

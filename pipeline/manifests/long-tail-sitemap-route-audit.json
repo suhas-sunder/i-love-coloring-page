@@ -1,0 +1,55 @@
+{
+  "generatedAt": "2026-05-13T23:00:23.354Z",
+  "runId": "long-tail-acceptance-gate",
+  "summary": {
+    "runtimeIndexableHubCount": 131,
+    "expectedRuntimeIndexableHubCount": 131,
+    "runtimeSitemapRouteCount": 131,
+    "exportedSitemapLocCount": 138,
+    "expectedExportedSitemapLocCount": 138,
+    "homepageExists": true,
+    "coloringPagesExists": true,
+    "allPromotedRoutesExist": true,
+    "trustPagesExist": true,
+    "noPerImageRoutes": true,
+    "noSectionOnlyTopicRoutes": true,
+    "noRejectedRoutes": true,
+    "noBacklogManualReviewRoutesInSitemap": true,
+    "imageSitemapAbsent": true,
+    "noLocalhost": true,
+    "noR2Dev": true,
+    "noDuplicateRoutes": true,
+    "noTrailingCanonicalInconsistency": true
+  },
+  "missingPromotedPaths": [],
+  "duplicateRoutes": [],
+  "duplicateSitemapPaths": [],
+  "backlogManualInSitemap": [],
+  "rejectedInSitemap": [],
+  "trustPages": [
+    {
+      "path": "/about",
+      "indexable": true
+    },
+    {
+      "path": "/contact",
+      "indexable": true
+    },
+    {
+      "path": "/privacy",
+      "indexable": true
+    },
+    {
+      "path": "/terms",
+      "indexable": true
+    },
+    {
+      "path": "/affiliate-disclosure",
+      "indexable": true
+    },
+    {
+      "path": "/editorial-policy",
+      "indexable": true
+    }
+  ]
+}
