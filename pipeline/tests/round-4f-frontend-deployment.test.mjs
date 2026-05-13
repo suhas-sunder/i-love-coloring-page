@@ -125,15 +125,19 @@ test("hub pagination is static-path based and generated at build time", async ()
 
 test("generated data is used and client-facing data contains no local paths", async () => {
   const dataSource = await readText("src/lib/coloring/data.ts");
-  assert.match(dataSource, /@\/generated\/coloring\/hubs\.json/);
-  assert.match(dataSource, /@\/generated\/coloring\/items\.json/);
-  assert.match(dataSource, /@\/generated\/coloring\/routes\.json/);
+  assert.match(dataSource, /@\/generated\/coloring\/(?:runtime-)?hubs\.json/);
+  assert.match(dataSource, /@\/generated\/coloring\/(?:runtime-available-)?items\.json/);
+  assert.match(dataSource, /@\/generated\/coloring\/(?:runtime-)?routes\.json/);
 
   for (const generatedPath of [
     "src/generated/coloring/items.json",
     "src/generated/coloring/hubs.json",
     "src/generated/coloring/hub-items.json",
     "src/generated/coloring/routes.json",
+    "src/generated/coloring/runtime-available-items.json",
+    "src/generated/coloring/runtime-hubs.json",
+    "src/generated/coloring/runtime-hub-items.json",
+    "src/generated/coloring/runtime-routes.json",
   ]) {
     const text = await readText(generatedPath);
     assert.doesNotMatch(text, /[A-Za-z]:[\\/]|pipeline\/production\/full|images\/|ilovesvg\/|sourceRelativePath/i, generatedPath);

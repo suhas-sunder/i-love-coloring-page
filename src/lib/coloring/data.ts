@@ -1,13 +1,13 @@
-import hubFeaturedItemsJson from "@/generated/coloring/hub-featured-items.json";
-import hubFilterTagsJson from "@/generated/coloring/hub-filter-tags.json";
-import hubsJson from "@/generated/coloring/hubs.json";
-import itemsJson from "@/generated/coloring/items.json";
-import routesJson from "@/generated/coloring/routes.json";
-import searchIndexJson from "@/generated/coloring/search-index.json";
-import hubSeoContentJson from "@/generated/coloring/hub-seo-content.json";
-import siteMapJson from "@/generated/coloring/site-map.json";
-import seoPagesJson from "@/generated/coloring/seo-pages.json";
-import socialMetadataJson from "@/generated/coloring/social-metadata.json";
+import hubFeaturedItemsJson from "@/generated/coloring/runtime-hub-featured-items.json";
+import hubFilterTagsJson from "@/generated/coloring/runtime-hub-filter-tags.json";
+import hubsJson from "@/generated/coloring/runtime-hubs.json";
+import itemsJson from "@/generated/coloring/runtime-available-items.json";
+import routesJson from "@/generated/coloring/runtime-routes.json";
+import searchIndexJson from "@/generated/coloring/runtime-search-index.json";
+import hubSeoContentJson from "@/generated/coloring/runtime-hub-seo-content.json";
+import siteMapJson from "@/generated/coloring/runtime-site-map.json";
+import seoPagesJson from "@/generated/coloring/runtime-seo-pages.json";
+import socialMetadataJson from "@/generated/coloring/runtime-social-metadata.json";
 import titleOverridesJson from "@/generated/coloring/title-overrides.json";
 import { getSiteUrl as getConfiguredSiteUrl } from "@/lib/site/siteConfig";
 

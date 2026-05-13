@@ -1,0 +1,456 @@
+{
+  "generatedAt": "2026-05-13T06:45:46.794Z",
+  "runId": "runtime-switch-count-diff",
+  "summary": {
+    "previousRootCount": 6557,
+    "runtimeRootCount": 6352,
+    "availableRecords": 6352,
+    "deferredRecordsHidden": 205,
+    "emptyHubCount": 0,
+    "routeCountBefore": 65,
+    "routeCountAfter": 65
+  },
+  "majorPages": [
+    {
+      "path": "/",
+      "previousCount": 6557,
+      "runtimeCount": 6352,
+      "hiddenDeferredCount": 205
+    },
+    {
+      "path": "/coloring-pages",
+      "previousCount": 6557,
+      "runtimeCount": 6352,
+      "hiddenDeferredCount": 205
+    },
+    {
+      "path": "/coloring-pages/animals",
+      "previousCount": 1524,
+      "runtimeCount": 1450,
+      "hiddenDeferredCount": 74
+    },
+    {
+      "path": "/coloring-pages/geometric",
+      "previousCount": 1459,
+      "runtimeCount": 1457,
+      "hiddenDeferredCount": 2
+    },
+    {
+      "path": "/coloring-pages/anime-girls",
+      "previousCount": 905,
+      "runtimeCount": 905,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/christmas",
+      "previousCount": 332,
+      "runtimeCount": 332,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/plushies",
+      "previousCount": 1704,
+      "runtimeCount": 1704,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/st-patricks-day",
+      "previousCount": 20,
+      "runtimeCount": 20,
+      "hiddenDeferredCount": 0
+    }
+  ],
+  "allRoutes": [
+    {
+      "path": "/coloring-pages",
+      "previousCount": 6557,
+      "runtimeCount": 6352,
+      "hiddenDeferredCount": 205
+    },
+    {
+      "path": "/coloring-pages/animals",
+      "previousCount": 1524,
+      "runtimeCount": 1450,
+      "hiddenDeferredCount": 74
+    },
+    {
+      "path": "/coloring-pages/anime-girls",
+      "previousCount": 905,
+      "runtimeCount": 905,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/beetles",
+      "previousCount": 25,
+      "runtimeCount": 25,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/birds",
+      "previousCount": 190,
+      "runtimeCount": 188,
+      "hiddenDeferredCount": 2
+    },
+    {
+      "path": "/coloring-pages/birthday",
+      "previousCount": 211,
+      "runtimeCount": 211,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/bridges",
+      "previousCount": 23,
+      "runtimeCount": 23,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/buildings",
+      "previousCount": 156,
+      "runtimeCount": 156,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/butterflies",
+      "previousCount": 26,
+      "runtimeCount": 26,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/cars",
+      "previousCount": 193,
+      "runtimeCount": 193,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/cats",
+      "previousCount": 58,
+      "runtimeCount": 55,
+      "hiddenDeferredCount": 3
+    },
+    {
+      "path": "/coloring-pages/chibi",
+      "previousCount": 910,
+      "runtimeCount": 908,
+      "hiddenDeferredCount": 2
+    },
+    {
+      "path": "/coloring-pages/chibi-flowers",
+      "previousCount": 152,
+      "runtimeCount": 152,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/christmas",
+      "previousCount": 332,
+      "runtimeCount": 332,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/crabs",
+      "previousCount": 21,
+      "runtimeCount": 21,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/cute",
+      "previousCount": 375,
+      "runtimeCount": 375,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/detailed-for-adults",
+      "previousCount": 1461,
+      "runtimeCount": 1459,
+      "hiddenDeferredCount": 2
+    },
+    {
+      "path": "/coloring-pages/dinosaurs",
+      "previousCount": 190,
+      "runtimeCount": 189,
+      "hiddenDeferredCount": 1
+    },
+    {
+      "path": "/coloring-pages/dogs",
+      "previousCount": 284,
+      "runtimeCount": 284,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/dungeon",
+      "previousCount": 99,
+      "runtimeCount": 99,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/easy",
+      "previousCount": 1302,
+      "runtimeCount": 1300,
+      "hiddenDeferredCount": 2
+    },
+    {
+      "path": "/coloring-pages/fairies",
+      "previousCount": 37,
+      "runtimeCount": 37,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/fantasy",
+      "previousCount": 1310,
+      "runtimeCount": 1265,
+      "hiddenDeferredCount": 45
+    },
+    {
+      "path": "/coloring-pages/fantasy-creatures",
+      "previousCount": 575,
+      "runtimeCount": 531,
+      "hiddenDeferredCount": 44
+    },
+    {
+      "path": "/coloring-pages/fantasy-dragons",
+      "previousCount": 67,
+      "runtimeCount": 49,
+      "hiddenDeferredCount": 18
+    },
+    {
+      "path": "/coloring-pages/flowers",
+      "previousCount": 417,
+      "runtimeCount": 346,
+      "hiddenDeferredCount": 71
+    },
+    {
+      "path": "/coloring-pages/food",
+      "previousCount": 261,
+      "runtimeCount": 261,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/for-kids",
+      "previousCount": 1338,
+      "runtimeCount": 1335,
+      "hiddenDeferredCount": 3
+    },
+    {
+      "path": "/coloring-pages/forest",
+      "previousCount": 74,
+      "runtimeCount": 72,
+      "hiddenDeferredCount": 2
+    },
+    {
+      "path": "/coloring-pages/garden",
+      "previousCount": 266,
+      "runtimeCount": 195,
+      "hiddenDeferredCount": 71
+    },
+    {
+      "path": "/coloring-pages/garden-flowers",
+      "previousCount": 166,
+      "runtimeCount": 95,
+      "hiddenDeferredCount": 71
+    },
+    {
+      "path": "/coloring-pages/geometric",
+      "previousCount": 1459,
+      "runtimeCount": 1457,
+      "hiddenDeferredCount": 2
+    },
+    {
+      "path": "/coloring-pages/griffins",
+      "previousCount": 21,
+      "runtimeCount": 21,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/halloween",
+      "previousCount": 305,
+      "runtimeCount": 305,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/holidays",
+      "previousCount": 874,
+      "runtimeCount": 874,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/indoor-plants",
+      "previousCount": 129,
+      "runtimeCount": 128,
+      "hiddenDeferredCount": 1
+    },
+    {
+      "path": "/coloring-pages/insects",
+      "previousCount": 180,
+      "runtimeCount": 179,
+      "hiddenDeferredCount": 1
+    },
+    {
+      "path": "/coloring-pages/kawaii",
+      "previousCount": 88,
+      "runtimeCount": 88,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/mammoths",
+      "previousCount": 20,
+      "runtimeCount": 20,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/mandalas",
+      "previousCount": 1461,
+      "runtimeCount": 1459,
+      "hiddenDeferredCount": 2
+    },
+    {
+      "path": "/coloring-pages/medieval-fantasy",
+      "previousCount": 194,
+      "runtimeCount": 194,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/mermaids",
+      "previousCount": 26,
+      "runtimeCount": 26,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/mythology",
+      "previousCount": 268,
+      "runtimeCount": 227,
+      "hiddenDeferredCount": 41
+    },
+    {
+      "path": "/coloring-pages/ocean",
+      "previousCount": 154,
+      "runtimeCount": 154,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/octopus",
+      "previousCount": 20,
+      "runtimeCount": 20,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/pegasus",
+      "previousCount": 29,
+      "runtimeCount": 29,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/planes",
+      "previousCount": 92,
+      "runtimeCount": 92,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/plants",
+      "previousCount": 658,
+      "runtimeCount": 586,
+      "hiddenDeferredCount": 72
+    },
+    {
+      "path": "/coloring-pages/playing-cards",
+      "previousCount": 86,
+      "runtimeCount": 12,
+      "hiddenDeferredCount": 74
+    },
+    {
+      "path": "/coloring-pages/plushie-animals",
+      "previousCount": 105,
+      "runtimeCount": 105,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/plushie-dragons",
+      "previousCount": 75,
+      "runtimeCount": 75,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/plushies",
+      "previousCount": 1704,
+      "runtimeCount": 1704,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/prehistoric-animals",
+      "previousCount": 221,
+      "runtimeCount": 220,
+      "hiddenDeferredCount": 1
+    },
+    {
+      "path": "/coloring-pages/reptiles",
+      "previousCount": 156,
+      "runtimeCount": 156,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/sea-life",
+      "previousCount": 236,
+      "runtimeCount": 236,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/spiders",
+      "previousCount": 28,
+      "runtimeCount": 28,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/st-patricks-day",
+      "previousCount": 20,
+      "runtimeCount": 20,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/trains",
+      "previousCount": 102,
+      "runtimeCount": 102,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/trees",
+      "previousCount": 38,
+      "runtimeCount": 38,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/triceratops",
+      "previousCount": 22,
+      "runtimeCount": 22,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/turtles",
+      "previousCount": 44,
+      "runtimeCount": 44,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/unicorns",
+      "previousCount": 38,
+      "runtimeCount": 38,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/vehicles",
+      "previousCount": 373,
+      "runtimeCount": 373,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/whales",
+      "previousCount": 40,
+      "runtimeCount": 40,
+      "hiddenDeferredCount": 0
+    },
+    {
+      "path": "/coloring-pages/world-landmarks",
+      "previousCount": 47,
+      "runtimeCount": 47,
+      "hiddenDeferredCount": 0
+    }
+  ],
+  "emptyHubs": []
+}

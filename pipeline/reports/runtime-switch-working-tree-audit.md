@@ -1,0 +1,45 @@
+# Runtime Switch Working Tree Audit
+
+- Status entries: 36
+- Intended runtime-switch entries: 36
+- Generated upload/verifier drift: 0
+- Local artifact drift: 0
+- Risky unrelated drift: 0
+- Safe to proceed: true
+
+-  M AGENTS.md: intended_runtime_switch_artifact
+-  M package.json: intended_runtime_switch_artifact
+-  M pipeline/tests/round-4f-frontend-deployment.test.mjs: intended_runtime_switch_artifact
+-  M src/lib/coloring/data.ts: intended_runtime_switch_artifact
+- ?? pipeline/manifests/runtime-switch-available-items.json: intended_runtime_switch_artifact
+- ?? pipeline/manifests/runtime-switch-browser-qa-results.json: intended_runtime_switch_artifact
+- ?? pipeline/manifests/runtime-switch-count-diff.json: intended_runtime_switch_artifact
+- ?? pipeline/manifests/runtime-switch-deferred-items.json: intended_runtime_switch_artifact
+- ?? pipeline/manifests/runtime-switch-project-context-check.json: intended_runtime_switch_artifact
+- ?? pipeline/manifests/runtime-switch-readiness.json: intended_runtime_switch_artifact
+- ?? pipeline/manifests/runtime-switch-sampled-url-check-results.json: intended_runtime_switch_artifact
+- ?? pipeline/manifests/runtime-switch-working-tree-audit.json: intended_runtime_switch_artifact
+- ?? pipeline/reports/runtime-switch-browser-qa-report.md: intended_runtime_switch_artifact
+- ?? pipeline/reports/runtime-switch-count-diff.md: intended_runtime_switch_artifact
+- ?? pipeline/reports/runtime-switch-data-report.md: intended_runtime_switch_artifact
+- ?? pipeline/reports/runtime-switch-project-context-check.md: intended_runtime_switch_artifact
+- ?? pipeline/reports/runtime-switch-readiness.md: intended_runtime_switch_artifact
+- ?? pipeline/reports/runtime-switch-sampled-url-check-report.md: intended_runtime_switch_artifact
+- ?? pipeline/reports/runtime-switch-working-tree-audit.md: intended_runtime_switch_artifact
+- ?? pipeline/scripts/build-runtime-clean-asset-data.mjs: intended_runtime_switch_artifact
+- ?? pipeline/scripts/runtime-switch-browser-qa-runner.cjs: intended_runtime_switch_artifact
+- ?? pipeline/scripts/runtime-switch-sampled-url-check.mjs: intended_runtime_switch_artifact
+- ?? pipeline/tests/runtime-clean-asset-switch.test.mjs: intended_runtime_switch_artifact
+- ?? src/generated/coloring/runtime-asset-paths.json: intended_runtime_switch_artifact
+- ?? src/generated/coloring/runtime-available-items.json: intended_runtime_switch_artifact
+- ?? src/generated/coloring/runtime-deferred-items.json: intended_runtime_switch_artifact
+- ?? src/generated/coloring/runtime-hub-featured-items.json: intended_runtime_switch_artifact
+- ?? src/generated/coloring/runtime-hub-filter-tags.json: intended_runtime_switch_artifact
+- ?? src/generated/coloring/runtime-hub-items.json: intended_runtime_switch_artifact
+- ?? src/generated/coloring/runtime-hub-seo-content.json: intended_runtime_switch_artifact
+- ?? src/generated/coloring/runtime-hubs.json: intended_runtime_switch_artifact
+- ?? src/generated/coloring/runtime-routes.json: intended_runtime_switch_artifact
+- ?? src/generated/coloring/runtime-search-index.json: intended_runtime_switch_artifact
+- ?? src/generated/coloring/runtime-seo-pages.json: intended_runtime_switch_artifact
+- ?? src/generated/coloring/runtime-site-map.json: intended_runtime_switch_artifact
+- ?? src/generated/coloring/runtime-social-metadata.json: intended_runtime_switch_artifact

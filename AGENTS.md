@@ -367,6 +367,12 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - The `st-patricks-day` smoke upload is limited to SVG plus WebP under `coloring-pages/svg/st-patricks-day/` and `coloring-pages/webp/st-patricks-day/`.
 - Category upload smoke tests must never include `png/`, `thumbs/`, deferred manual-review records, duplicate `coloring-pages/coloring-pages/` prefixes, old `coloring/test-v1/` keys, or source image paths.
 - The owner must run category `--execute` upload commands manually unless they explicitly approve Codex to run a real upload.
+- Runtime public galleries must use verified clean WebP preview keys and internal SVG keys after the clean upload is accepted.
+- Deferred manual-review records must stay hidden from public gallery output until they are reviewed, uploaded, and verified.
+- Do not show broken public cards for missing deferred assets; hide unavailable records and update hub, route, search, filter, and page counts.
+- Image sitemap and Open Graph image work may only start after runtime switch browser QA passes on the custom asset domain.
+- SVG remains internal-only after the runtime switch and must not appear as a user-facing download option.
+- PNG previews and thumbnails must not become the primary public gallery source after the clean WebP/SVG runtime switch.
 
 ## Production Asset Hosting
 

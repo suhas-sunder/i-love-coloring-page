@@ -1,0 +1,202 @@
+{
+  "generatedAt": "2026-05-13T06:45:46.794Z",
+  "runId": "runtime-switch-working-tree-audit",
+  "summary": {
+    "statusEntryCount": 36,
+    "intendedRuntimeSwitchCount": 36,
+    "generatedUploadDriftCount": 0,
+    "localArtifactDriftCount": 0,
+    "riskyUnrelatedDriftCount": 0,
+    "safeToProceed": true
+  },
+  "commands": {
+    "statusShort": "git status --short",
+    "diffStat": "git diff --stat",
+    "diffNameOnly": "git diff --name-only"
+  },
+  "statusShort": " M AGENTS.md\n M package.json\n M pipeline/tests/round-4f-frontend-deployment.test.mjs\n M src/lib/coloring/data.ts\n?? pipeline/manifests/runtime-switch-available-items.json\n?? pipeline/manifests/runtime-switch-browser-qa-results.json\n?? pipeline/manifests/runtime-switch-count-diff.json\n?? pipeline/manifests/runtime-switch-deferred-items.json\n?? pipeline/manifests/runtime-switch-project-context-check.json\n?? pipeline/manifests/runtime-switch-readiness.json\n?? pipeline/manifests/runtime-switch-sampled-url-check-results.json\n?? pipeline/manifests/runtime-switch-working-tree-audit.json\n?? pipeline/reports/runtime-switch-browser-qa-report.md\n?? pipeline/reports/runtime-switch-count-diff.md\n?? pipeline/reports/runtime-switch-data-report.md\n?? pipeline/reports/runtime-switch-project-context-check.md\n?? pipeline/reports/runtime-switch-readiness.md\n?? pipeline/reports/runtime-switch-sampled-url-check-report.md\n?? pipeline/reports/runtime-switch-working-tree-audit.md\n?? pipeline/scripts/build-runtime-clean-asset-data.mjs\n?? pipeline/scripts/runtime-switch-browser-qa-runner.cjs\n?? pipeline/scripts/runtime-switch-sampled-url-check.mjs\n?? pipeline/tests/runtime-clean-asset-switch.test.mjs\n?? src/generated/coloring/runtime-asset-paths.json\n?? src/generated/coloring/runtime-available-items.json\n?? src/generated/coloring/runtime-deferred-items.json\n?? src/generated/coloring/runtime-hub-featured-items.json\n?? src/generated/coloring/runtime-hub-filter-tags.json\n?? src/generated/coloring/runtime-hub-items.json\n?? src/generated/coloring/runtime-hub-seo-content.json\n?? src/generated/coloring/runtime-hubs.json\n?? src/generated/coloring/runtime-routes.json\n?? src/generated/coloring/runtime-search-index.json\n?? src/generated/coloring/runtime-seo-pages.json\n?? src/generated/coloring/runtime-site-map.json\n?? src/generated/coloring/runtime-social-metadata.json\n",
+  "diffStat": " AGENTS.md                                            |  6 ++++++\n package.json                                         |  2 +-\n pipeline/tests/round-4f-frontend-deployment.test.mjs | 10 +++++++---\n src/lib/coloring/data.ts                             | 20 ++++++++++----------\n 4 files changed, 24 insertions(+), 14 deletions(-)\n",
+  "diffNameOnly": "AGENTS.md\npackage.json\npipeline/tests/round-4f-frontend-deployment.test.mjs\nsrc/lib/coloring/data.ts\n",
+  "entries": [
+    {
+      "raw": " M AGENTS.md",
+      "path": "AGENTS.md",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": " M package.json",
+      "path": "package.json",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": " M pipeline/tests/round-4f-frontend-deployment.test.mjs",
+      "path": "pipeline/tests/round-4f-frontend-deployment.test.mjs",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": " M src/lib/coloring/data.ts",
+      "path": "src/lib/coloring/data.ts",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/runtime-switch-available-items.json",
+      "path": "pipeline/manifests/runtime-switch-available-items.json",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/runtime-switch-browser-qa-results.json",
+      "path": "pipeline/manifests/runtime-switch-browser-qa-results.json",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/runtime-switch-count-diff.json",
+      "path": "pipeline/manifests/runtime-switch-count-diff.json",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/runtime-switch-deferred-items.json",
+      "path": "pipeline/manifests/runtime-switch-deferred-items.json",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/runtime-switch-project-context-check.json",
+      "path": "pipeline/manifests/runtime-switch-project-context-check.json",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/runtime-switch-readiness.json",
+      "path": "pipeline/manifests/runtime-switch-readiness.json",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/runtime-switch-sampled-url-check-results.json",
+      "path": "pipeline/manifests/runtime-switch-sampled-url-check-results.json",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/runtime-switch-working-tree-audit.json",
+      "path": "pipeline/manifests/runtime-switch-working-tree-audit.json",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/runtime-switch-browser-qa-report.md",
+      "path": "pipeline/reports/runtime-switch-browser-qa-report.md",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/runtime-switch-count-diff.md",
+      "path": "pipeline/reports/runtime-switch-count-diff.md",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/runtime-switch-data-report.md",
+      "path": "pipeline/reports/runtime-switch-data-report.md",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/runtime-switch-project-context-check.md",
+      "path": "pipeline/reports/runtime-switch-project-context-check.md",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/runtime-switch-readiness.md",
+      "path": "pipeline/reports/runtime-switch-readiness.md",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/runtime-switch-sampled-url-check-report.md",
+      "path": "pipeline/reports/runtime-switch-sampled-url-check-report.md",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/runtime-switch-working-tree-audit.md",
+      "path": "pipeline/reports/runtime-switch-working-tree-audit.md",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": "?? pipeline/scripts/build-runtime-clean-asset-data.mjs",
+      "path": "pipeline/scripts/build-runtime-clean-asset-data.mjs",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": "?? pipeline/scripts/runtime-switch-browser-qa-runner.cjs",
+      "path": "pipeline/scripts/runtime-switch-browser-qa-runner.cjs",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": "?? pipeline/scripts/runtime-switch-sampled-url-check.mjs",
+      "path": "pipeline/scripts/runtime-switch-sampled-url-check.mjs",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": "?? pipeline/tests/runtime-clean-asset-switch.test.mjs",
+      "path": "pipeline/tests/runtime-clean-asset-switch.test.mjs",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": "?? src/generated/coloring/runtime-asset-paths.json",
+      "path": "src/generated/coloring/runtime-asset-paths.json",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": "?? src/generated/coloring/runtime-available-items.json",
+      "path": "src/generated/coloring/runtime-available-items.json",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": "?? src/generated/coloring/runtime-deferred-items.json",
+      "path": "src/generated/coloring/runtime-deferred-items.json",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": "?? src/generated/coloring/runtime-hub-featured-items.json",
+      "path": "src/generated/coloring/runtime-hub-featured-items.json",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": "?? src/generated/coloring/runtime-hub-filter-tags.json",
+      "path": "src/generated/coloring/runtime-hub-filter-tags.json",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": "?? src/generated/coloring/runtime-hub-items.json",
+      "path": "src/generated/coloring/runtime-hub-items.json",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": "?? src/generated/coloring/runtime-hub-seo-content.json",
+      "path": "src/generated/coloring/runtime-hub-seo-content.json",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": "?? src/generated/coloring/runtime-hubs.json",
+      "path": "src/generated/coloring/runtime-hubs.json",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": "?? src/generated/coloring/runtime-routes.json",
+      "path": "src/generated/coloring/runtime-routes.json",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": "?? src/generated/coloring/runtime-search-index.json",
+      "path": "src/generated/coloring/runtime-search-index.json",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": "?? src/generated/coloring/runtime-seo-pages.json",
+      "path": "src/generated/coloring/runtime-seo-pages.json",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": "?? src/generated/coloring/runtime-site-map.json",
+      "path": "src/generated/coloring/runtime-site-map.json",
+      "classification": "intended_runtime_switch_artifact"
+    },
+    {
+      "raw": "?? src/generated/coloring/runtime-social-metadata.json",
+      "path": "src/generated/coloring/runtime-social-metadata.json",
+      "classification": "intended_runtime_switch_artifact"
+    }
+  ]
+}
