@@ -1,0 +1,105 @@
+{
+  "generatedAt": "2026-05-13T09:11:59.993Z",
+  "runId": "live-routing-local-export-results",
+  "command": "npm run build",
+  "summary": {
+    "cleanOutRemovedBeforeBuild": true,
+    "buildExitCode": 0,
+    "buildSucceeded": true,
+    "exportedFileCount": 5281,
+    "localStaticExportRoutesPassed": true,
+    "noSlashPrimaryRoutesPassed": true,
+    "slashVariantRoutesPassed": true,
+    "localRedirectCount": 0,
+    "localSelfRedirectCount": 0,
+    "sitemapStatus": 200,
+    "robotsStatus": 200
+  },
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "location": "",
+      "contentType": "text/html; charset=utf-8",
+      "bodyContainsExpectedMarker": true,
+      "selfRedirect": false,
+      "backingFile": "index.html"
+    },
+    {
+      "path": "/coloring-pages",
+      "status": 200,
+      "location": "",
+      "contentType": "text/html; charset=utf-8",
+      "bodyContainsExpectedMarker": false,
+      "selfRedirect": false,
+      "backingFile": "coloring-pages.html"
+    },
+    {
+      "path": "/coloring-pages/",
+      "status": 200,
+      "location": "",
+      "contentType": "text/html; charset=utf-8",
+      "bodyContainsExpectedMarker": false,
+      "selfRedirect": false,
+      "backingFile": "coloring-pages.html"
+    },
+    {
+      "path": "/coloring-pages/animals",
+      "status": 200,
+      "location": "",
+      "contentType": "text/html; charset=utf-8",
+      "bodyContainsExpectedMarker": true,
+      "selfRedirect": false,
+      "backingFile": "coloring-pages/animals.html"
+    },
+    {
+      "path": "/coloring-pages/animals/",
+      "status": 200,
+      "location": "",
+      "contentType": "text/html; charset=utf-8",
+      "bodyContainsExpectedMarker": true,
+      "selfRedirect": false,
+      "backingFile": "coloring-pages/animals.html"
+    },
+    {
+      "path": "/contact",
+      "status": 200,
+      "location": "",
+      "contentType": "text/html; charset=utf-8",
+      "bodyContainsExpectedMarker": true,
+      "selfRedirect": false,
+      "backingFile": "contact.html"
+    },
+    {
+      "path": "/contact/",
+      "status": 200,
+      "location": "",
+      "contentType": "text/html; charset=utf-8",
+      "bodyContainsExpectedMarker": true,
+      "selfRedirect": false,
+      "backingFile": "contact.html"
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "location": "",
+      "contentType": "application/xml; charset=utf-8",
+      "bodyContainsExpectedMarker": true,
+      "selfRedirect": false,
+      "backingFile": "sitemap.xml"
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "location": "",
+      "contentType": "text/plain; charset=utf-8",
+      "bodyContainsExpectedMarker": true,
+      "selfRedirect": false,
+      "backingFile": "robots.txt"
+    }
+  ],
+  "buildOutputTail": {
+    "stdout": "\n> i-love-coloring-page@0.1.0 build\n> next build\n\n Next.js 16.2.6 (Turbopack)\n- Environments: .env.local\n\n  Creating an optimized production build ...\n Compiled successfully in 2.2s\n  Running TypeScript ...\n  Finished TypeScript in 4.4s ...\n  Collecting page data using 16 workers ...\n  Generating static pages using 16 workers (0/496) ...\n  Generating static pages using 16 workers (124/496) \n  Generating static pages using 16 workers (248/496) \n  Generating static pages using 16 workers (372/496) \n Generating static pages using 16 workers (496/496) in 8.9s\n  Finalizing page optimization ...\n\nRoute (app)\n  /\n  /_not-found\n  /about\n  /affiliate-disclosure\n  /coloring-pages\n  /coloring-pages/[hubSlug]\n  /coloring-pages/animals\n  /coloring-pages/anime-girls\n  /coloring-pages/beetles\n  [+61 more paths]\n  /coloring-pages/[hubSlug]/page/[page]\n  /coloring-pages/animals/page/2\n  /coloring-pages/animals/page/3\n  /coloring-pages/animals/page/4\n  [+416 more paths]\n  /contact\n  /editorial-policy\n  /icon.svg\n  /privacy\n  /robots.txt\n  /sitemap.xml\n  /terms\n\n\n  (Static)  prerendered as static content\n  (SSG)     prerendered as static HTML (uses generateStaticParams)\n\n",
+    "stderr": ""
+  }
+}

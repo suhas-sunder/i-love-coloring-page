@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-05-13T09:11:59.993Z",
+  "runId": "live-routing-acceptance-gate",
+  "local_static_export_routes_passed": true,
+  "local_sitemap_current": true,
+  "live_root_reachable": true,
+  "live_non_root_routes_200": false,
+  "live_sitemap_current": false,
+  "live_runtime_switch_active": false,
+  "self_redirect_fixed": false,
+  "netlify_deployment_stale": true,
+  "owner_action_required": true,
+  "ready_to_resume_live_production_qa": false,
+  "ready_for_image_sitemap_round": false,
+  "ready_for_og_image_round": false,
+  "ready_for_jsonld_round": false,
+  "ready_for_live_ads_round": false,
+  "post_fix_live_status": "pending_deployment",
+  "blockers": [
+    "Live non-root routes are not serving clean HTTP 200 responses.",
+    "Live sitemap is stale or incomplete.",
+    "Live self-redirect behavior is still observed.",
+    "Owner action is required in Netlify before live QA can be accepted."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "generatedAt": "2026-05-13T09:11:59.993Z",
+  "runId": "live-routing-post-fix-live-check",
+  "summary": {
+    "status": "pending_deployment",
+    "liveHttpResultsAvailable": true,
+    "liveRootReachable": true,
+    "liveNonRootRoutes200": false,
+    "liveSitemapCurrent": false,
+    "selfRedirectFixed": false,
+    "liveRuntimeSwitchActive": false,
+    "liveBrowserQaRun": false,
+    "sampledAssetCheckRun": false,
+    "netlifyRedeployRequired": true
+  },
+  "blockers": [
+    "Live production still needs a fresh/correct Netlify deployment before browser QA, sampled asset checks, image sitemap, OG images, JSON-LD expansion, or live ads can proceed."
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "generatedAt": "2026-05-13T09:11:59.993Z",
+  "runId": "live-routing-config-audit",
+  "inspected": [
+    "next.config.mjs",
+    "netlify.toml",
+    "package.json",
+    "app/sitemap.ts",
+    "app/robots.ts",
+    "app/layout.tsx",
+    "app/coloring-pages/page.tsx",
+    "app/coloring-pages/[hubSlug]/page.tsx",
+    "app/coloring-pages/[hubSlug]/page/[page]/page.tsx",
+    "out/",
+    "out/_redirects",
+    "out/_headers"
+  ],
+  "summary": {
+    "staticExportConfigured": true,
+    "trailingSlashConfigured": false,
+    "nextImagesUnoptimized": true,
+    "netlifyPublishDirectory": "out",
+    "netlifyBuildCommand": "npm run build",
+    "packageBuildCommand": "next build",
+    "exportedNoSlashHtmlExists": true,
+    "exportedSlashIndexHtmlExists": false,
+    "exportedColoringPagesHtmlExists": true,
+    "exportedColoringPagesIndexHtmlExists": false,
+    "exportedSitemapExists": true,
+    "exportedRobotsExists": true,
+    "generatedRedirectsFileExists": false,
+    "generatedHeadersFileExists": false,
+    "netlifyRedirectRuleCount": 0,
+    "selfRedirectRulePresent": false,
+    "prettyUrlsWorkLocally": true,
+    "slashUrlsWorkLocally": true,
+    "canonicalUrlsUseNoTrailingSlash": true,
+    "sitemapPathsUseNoTrailingSlash": true,
+    "sitemapPathsMatchExportedPaths": true,
+    "netlifyPublishesOut": true,
+    "netlifyBuildCommandCorrect": true,
+    "sitemapStaticExportSafe": true,
+    "robotsStaticExportSafe": true,
+    "rootDomainRedirectConfiguredInRepo": false,
+    "liveSitemapStaleSuggestsWrongDeploymentOrBranch": true
+  },
+  "redirectRules": [],
+  "exportedRepresentativeFiles": {
+    "noSlashRepresentative": "out/coloring-pages/animals.html",
+    "slashRepresentative": "out/coloring-pages/animals/index.html"
+  }
+}

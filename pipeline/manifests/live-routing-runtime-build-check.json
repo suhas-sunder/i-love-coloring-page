@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-05-13T09:11:59.993Z",
+  "runId": "live-routing-runtime-build-check",
+  "summary": {
+    "runtimeAvailableRecords": 6352,
+    "runtimeAssetRecords": 6352,
+    "runtimeBuildCurrent": true,
+    "primaryPublicPagesContain6352": true,
+    "primaryPublicPagesContain6557": false,
+    "primaryPublicPagesUseAssetBaseUrl": true,
+    "outContainsLocalhost": false,
+    "outContainsR2Dev": false,
+    "outContainsDownloadSvg": false,
+    "outContainsAppApiReference": false,
+    "outContainsContactEmail": true,
+    "outContainsLiveAdsenseCode": false,
+    "exportedPrimaryFileCount": 12
+  },
+  "primaryFiles": [
+    "out/index.html",
+    "out/index.txt",
+    "out/coloring-pages.html",
+    "out/coloring-pages.txt",
+    "out/coloring-pages/animals.html",
+    "out/coloring-pages/animals.txt",
+    "out/coloring-pages/geometric.html",
+    "out/coloring-pages/geometric.txt",
+    "out/contact.html",
+    "out/contact.txt",
+    "out/sitemap.xml",
+    "out/robots.txt"
+  ]
+}

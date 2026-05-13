@@ -440,6 +440,14 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Backend work is deferred until accounts, saves, uploads, payments, admin/moderation, email/account workflows, or server-side processing are required.
 - Do not add API routes, middleware, cookies, auth, database, or payment dependencies for the public printable gallery.
 
+## Live Production Routing
+
+- Live production routing must be verified before image sitemap, Open Graph image, JSON-LD expansion, or live ads work resumes.
+- If live sitemap is stale but the local static-export sitemap is current, suspect Netlify deploy, branch, or domain configuration before changing app logic.
+- Static export routing, trailing-slash behavior, canonical URLs, and sitemap URLs must stay consistent with each other.
+- Do not accept live production QA while non-root pages self-redirect, fail to serve 200, or serve stale deploy output.
+- Production deploy must serve the latest `version-4` commit before launch QA can pass.
+
 ## Conversion Workflow
 
 - Do not choose a winning preset until a later bakeoff round compares outputs.

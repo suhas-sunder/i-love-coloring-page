@@ -1,0 +1,45 @@
+{
+  "generatedAt": "2026-05-13T09:11:59.993Z",
+  "runId": "live-routing-sitemap-local-check",
+  "summary": {
+    "localSitemapExists": true,
+    "localSitemapCurrent": true,
+    "sitemapLocCount": 72,
+    "expectedLocCount": 72,
+    "includesHomepage": true,
+    "includesColoringPages": true,
+    "includesPhase1HubRoutes": true,
+    "includesTrustPages": true,
+    "noPerImageRoutes": true,
+    "noPhase2HubRoutes": true,
+    "noSectionOnlyTopicRoutes": true,
+    "noRejectedRoutes": true,
+    "noImageSitemap": true
+  },
+  "samples": {
+    "firstTenLocs": [
+      "https://www.ilovecoloringpage.com",
+      "https://www.ilovecoloringpage.com/coloring-pages",
+      "https://www.ilovecoloringpage.com/coloring-pages/animals",
+      "https://www.ilovecoloringpage.com/coloring-pages/anime-girls",
+      "https://www.ilovecoloringpage.com/coloring-pages/beetles",
+      "https://www.ilovecoloringpage.com/coloring-pages/birds",
+      "https://www.ilovecoloringpage.com/coloring-pages/birthday",
+      "https://www.ilovecoloringpage.com/coloring-pages/bridges",
+      "https://www.ilovecoloringpage.com/coloring-pages/buildings",
+      "https://www.ilovecoloringpage.com/coloring-pages/butterflies"
+    ],
+    "trustRoutes": [
+      "/about",
+      "/contact",
+      "/privacy",
+      "/terms",
+      "/affiliate-disclosure",
+      "/editorial-policy"
+    ],
+    "phase1RouteCount": 65,
+    "phase2RouteCount": 67,
+    "sectionOnlyRouteCount": 41,
+    "rejectedRouteCount": 9
+  }
+}
