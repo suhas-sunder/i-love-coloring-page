@@ -318,6 +318,12 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - PNG, JPG, and WebP downloads must continue to fail gracefully if browser conversion fails.
 - SVG remains internal-only and must never appear as a user-facing download option.
 - Do not start image sitemap, Open Graph image, JSON-LD image expansion, live AdSense, or ad scripts until the production asset domain is accepted.
+- Round 5K production download readiness still requires custom asset-domain validation, not `r2.dev`.
+- Round 5K SVG plus WebP full upload requires custom-domain content-type, Origin-aware CORS, and cache validation.
+- PNG, JPG, and WebP downloads must continue to fail gracefully if SVG browser conversion fails.
+- SVG remains internal-only and must never be shown as a user-facing download option.
+- Do not start image sitemap, Open Graph image, live ads, ad scripts, or JSON-LD image expansion until the production asset domain is accepted.
+- Do not validate PNG as a substitute for WebP in SVG plus WebP custom-domain verification.
 
 ## Production Asset Hosting
 

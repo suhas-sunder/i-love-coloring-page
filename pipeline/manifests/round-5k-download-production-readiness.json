@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-05-13T02:08:29.061Z",
+  "runId": "round-5k-download-production-readiness",
+  "custom_domain_verified": true,
+  "svg_urls_passed": true,
+  "webp_urls_passed": true,
+  "svg_cors_passed": true,
+  "browser_canvas_export_passed": true,
+  "print_ready": true,
+  "png_download_ready": true,
+  "jpg_download_ready": true,
+  "webp_download_ready": true,
+  "svg_user_download_absent": true,
+  "cache_headers_acceptable": true,
+  "ready_for_full_upload": true,
+  "ready_for_image_sitemap": false,
+  "ready_for_og_images": false,
+  "live_ads_in_scope": false,
+  "blockers": [],
+  "decision": "Round 5K custom asset-domain checks passed for the 30-record SVG plus WebP test bundle. Full upload still requires explicit approval."
+}

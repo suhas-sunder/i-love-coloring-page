@@ -1,0 +1,569 @@
+{
+  "generatedAt": "2026-05-13T01:39:41.132Z",
+  "runId": "round-5k-cache-content-type-results",
+  "summary": {
+    "status": "completed",
+    "checkedUrlCount": 60,
+    "svgContentTypeOk": true,
+    "webpContentTypeOk": true,
+    "cacheHeadersPresentCount": 60,
+    "cacheHeadersObserved": [
+      "max-age=31536000"
+    ],
+    "validationHeaderPresentCount": 60,
+    "validationHeadersObserved": [
+      "ETag",
+      "Last-Modified"
+    ],
+    "versionedAssetKeys": true,
+    "longLivedCachingSafeForVersionedFilenames": true,
+    "longLivedCacheHeaderCount": 60,
+    "cache_headers_acceptable": true,
+    "cache_readiness": "ready",
+    "content_type_behavior_acceptable": true,
+    "cachePurgeOrObjectKeyVersioningNeeded": "Object keys include hashes, so long-lived immutable caching is safe."
+  },
+  "checks": [
+    {
+      "assetId": "animals__animals-alligator__4feec8505a",
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/animals/animals-alligator-4feec8505a.svg",
+      "contentType": "image/svg+xml",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-ankylosaurus-hoodie-plushie__eb8de86d73",
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-eb8de86d73.svg",
+      "contentType": "image/svg+xml",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-brachiosaurus-hoodie-plushie__a676a7c044",
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-a676a7c044.svg",
+      "contentType": "image/svg+xml",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dragon-eggs-hoodie-plushie__b1747e4988",
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-dragon-eggs-hoodie-plushie-b1747e4988.svg",
+      "contentType": "image/svg+xml",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dragon-eggs-hoodie-plushie__f41a8578b5",
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-dragon-eggs-hoodie-plushie-f41a8578b5.svg",
+      "contentType": "image/svg+xml",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dragon-hoodie-plushie__0492bac704",
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-dragon-hoodie-plushie-0492bac704.svg",
+      "contentType": "image/svg+xml",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dragon-queen__8c2e2a124f",
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-dragon-queen-8c2e2a124f.svg",
+      "contentType": "image/svg+xml",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dragon-queen__d532fdf0fd",
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-dragon-queen-d532fdf0fd.svg",
+      "contentType": "image/svg+xml",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-saber-toothed-tiger-hoodie-plushie__14e1ec01ad",
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-saber-toothed-tiger-hoodie-plushie-14e1ec01ad.svg",
+      "contentType": "image/svg+xml",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-stegosaurus-hoodie-plushie__1d07718adb",
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/anime-girls/anime-girl-stegosaurus-hoodie-plushie-1d07718adb.svg",
+      "contentType": "image/svg+xml",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "chibi__chibi-decaying-dragon__b4bbf97bf0",
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/chibi/chibi-decaying-dragon-b4bbf97bf0.svg",
+      "contentType": "image/svg+xml",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "chibi__chibi-dungeon-baby-dragon-in-nest__cde9ddcc12",
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/chibi/chibi-dungeon-baby-dragon-in-nest-cde9ddcc12.svg",
+      "contentType": "image/svg+xml",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "chibi__chibi-flowers-carnation__1b5fa00e2d",
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/chibi/chibi-flowers-carnation-1b5fa00e2d.svg",
+      "contentType": "image/svg+xml",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "chibi__chibi-flowers-celosia__e0a426bf9d",
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/chibi/chibi-flowers-celosia-e0a426bf9d.svg",
+      "contentType": "image/svg+xml",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "chibi__chibi-holiday-halloween-pumpkin-patch-with-family-picking-pumpkins-color__01c2f0ce30",
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/chibi/chibi-holiday-halloween-pumpkin-patch-with-family-picking-pumpkins-color-01c2f0ce30.svg",
+      "contentType": "image/svg+xml",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "chibi__chibi-holiday-halloween-pumpkin-pie-and-spice-decor-scene-coloring-page__7d3c695c2b",
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/chibi/chibi-holiday-halloween-pumpkin-pie-and-spice-decor-scene-coloring-page-7d3c695c2b.svg",
+      "contentType": "image/svg+xml",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "chibi__chibi-plushie-prehistoric-diplodocus__a6eff46243",
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/chibi/chibi-plushie-prehistoric-diplodocus-a6eff46243.svg",
+      "contentType": "image/svg+xml",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "chibi__chibi-plushie-prehistoric-tyrannosaurus-rex__2f73f2fae2",
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/chibi/chibi-plushie-prehistoric-tyrannosaurus-rex-2f73f2fae2.svg",
+      "contentType": "image/svg+xml",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "holiday__holiday-christmas-plushie-baby-dragon-family__b2bcf582a7",
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/holiday/holiday-christmas-plushie-baby-dragon-family-b2bcf582a7.svg",
+      "contentType": "image/svg+xml",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "holiday__holiday-christmas-plushie-mermaid__f3fb154ad5",
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/holiday/holiday-christmas-plushie-mermaid-f3fb154ad5.svg",
+      "contentType": "image/svg+xml",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "indoor-plants__indoor-plants-gerbera-daisy__591cf8e859",
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/indoor-plants/indoor-plants-gerbera-daisy-591cf8e859.svg",
+      "contentType": "image/svg+xml",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "indoor-plants__indoor-plants-philodendron-pink-princess__ab3e85182b",
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/indoor-plants/indoor-plants-philodendron-pink-princess-ab3e85182b.svg",
+      "contentType": "image/svg+xml",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-bakery-cutting-board-with-dough__b2b847f8d9",
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-bakery-cutting-board-with-dough-b2b847f8d9.svg",
+      "contentType": "image/svg+xml",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-bakery-display-case__922f88ea65",
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-bakery-display-case-922f88ea65.svg",
+      "contentType": "image/svg+xml",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-bakery-focaccia__988a6bf6e1",
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-bakery-focaccia-988a6bf6e1.svg",
+      "contentType": "image/svg+xml",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-high-speed-bullet-train-on-__5e359d2a25",
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-high-speed-bullet-train-on--5e359d2a25.svg",
+      "contentType": "image/svg+xml",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-indian-palace-on-wheels-tra__fa10f9553b",
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-indian-palace-on-wheels-tra-fa10f9553b.svg",
+      "contentType": "image/svg+xml",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehiacle-cars-pagani-huayra__974ebd3a07",
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-cars-pagani-huayra-974ebd3a07.svg",
+      "contentType": "image/svg+xml",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehiacle-cars-toyota-supra__d87bfd042b",
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-cars-toyota-supra-d87bfd042b.svg",
+      "contentType": "image/svg+xml",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehiacle-planes-supersonic-jet__bfd2f21c17",
+      "mediaType": "svg",
+      "r2ObjectKey": "coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-planes-supersonic-jet-bfd2f21c17.svg",
+      "contentType": "image/svg+xml",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "animals__animals-alligator__4feec8505a",
+      "mediaType": "webp",
+      "r2ObjectKey": "coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+      "contentType": "image/webp",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-ankylosaurus-hoodie-plushie__eb8de86d73",
+      "mediaType": "webp",
+      "r2ObjectKey": "coloring-pages/webp/anime-girls/anime-girl-ankylosaurus-hoodie-plushie-eb8de86d73.webp",
+      "contentType": "image/webp",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-brachiosaurus-hoodie-plushie__a676a7c044",
+      "mediaType": "webp",
+      "r2ObjectKey": "coloring-pages/webp/anime-girls/anime-girl-brachiosaurus-hoodie-plushie-a676a7c044.webp",
+      "contentType": "image/webp",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dragon-eggs-hoodie-plushie__b1747e4988",
+      "mediaType": "webp",
+      "r2ObjectKey": "coloring-pages/webp/anime-girls/anime-girl-dragon-eggs-hoodie-plushie-b1747e4988.webp",
+      "contentType": "image/webp",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dragon-eggs-hoodie-plushie__f41a8578b5",
+      "mediaType": "webp",
+      "r2ObjectKey": "coloring-pages/webp/anime-girls/anime-girl-dragon-eggs-hoodie-plushie-f41a8578b5.webp",
+      "contentType": "image/webp",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dragon-hoodie-plushie__0492bac704",
+      "mediaType": "webp",
+      "r2ObjectKey": "coloring-pages/webp/anime-girls/anime-girl-dragon-hoodie-plushie-0492bac704.webp",
+      "contentType": "image/webp",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dragon-queen__8c2e2a124f",
+      "mediaType": "webp",
+      "r2ObjectKey": "coloring-pages/webp/anime-girls/anime-girl-dragon-queen-8c2e2a124f.webp",
+      "contentType": "image/webp",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-dragon-queen__d532fdf0fd",
+      "mediaType": "webp",
+      "r2ObjectKey": "coloring-pages/webp/anime-girls/anime-girl-dragon-queen-d532fdf0fd.webp",
+      "contentType": "image/webp",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-saber-toothed-tiger-hoodie-plushie__14e1ec01ad",
+      "mediaType": "webp",
+      "r2ObjectKey": "coloring-pages/webp/anime-girls/anime-girl-saber-toothed-tiger-hoodie-plushie-14e1ec01ad.webp",
+      "contentType": "image/webp",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "anime-girls__anime-girl-stegosaurus-hoodie-plushie__1d07718adb",
+      "mediaType": "webp",
+      "r2ObjectKey": "coloring-pages/webp/anime-girls/anime-girl-stegosaurus-hoodie-plushie-1d07718adb.webp",
+      "contentType": "image/webp",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "chibi__chibi-decaying-dragon__b4bbf97bf0",
+      "mediaType": "webp",
+      "r2ObjectKey": "coloring-pages/webp/chibi/chibi-decaying-dragon-b4bbf97bf0.webp",
+      "contentType": "image/webp",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "chibi__chibi-dungeon-baby-dragon-in-nest__cde9ddcc12",
+      "mediaType": "webp",
+      "r2ObjectKey": "coloring-pages/webp/chibi/chibi-dungeon-baby-dragon-in-nest-cde9ddcc12.webp",
+      "contentType": "image/webp",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "chibi__chibi-flowers-carnation__1b5fa00e2d",
+      "mediaType": "webp",
+      "r2ObjectKey": "coloring-pages/webp/chibi/chibi-flowers-carnation-1b5fa00e2d.webp",
+      "contentType": "image/webp",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "chibi__chibi-flowers-celosia__e0a426bf9d",
+      "mediaType": "webp",
+      "r2ObjectKey": "coloring-pages/webp/chibi/chibi-flowers-celosia-e0a426bf9d.webp",
+      "contentType": "image/webp",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "chibi__chibi-holiday-halloween-pumpkin-patch-with-family-picking-pumpkins-color__01c2f0ce30",
+      "mediaType": "webp",
+      "r2ObjectKey": "coloring-pages/webp/chibi/chibi-holiday-halloween-pumpkin-patch-with-family-picking-pumpkins-color-01c2f0ce30.webp",
+      "contentType": "image/webp",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "chibi__chibi-holiday-halloween-pumpkin-pie-and-spice-decor-scene-coloring-page__7d3c695c2b",
+      "mediaType": "webp",
+      "r2ObjectKey": "coloring-pages/webp/chibi/chibi-holiday-halloween-pumpkin-pie-and-spice-decor-scene-coloring-page-7d3c695c2b.webp",
+      "contentType": "image/webp",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "chibi__chibi-plushie-prehistoric-diplodocus__a6eff46243",
+      "mediaType": "webp",
+      "r2ObjectKey": "coloring-pages/webp/chibi/chibi-plushie-prehistoric-diplodocus-a6eff46243.webp",
+      "contentType": "image/webp",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "chibi__chibi-plushie-prehistoric-tyrannosaurus-rex__2f73f2fae2",
+      "mediaType": "webp",
+      "r2ObjectKey": "coloring-pages/webp/chibi/chibi-plushie-prehistoric-tyrannosaurus-rex-2f73f2fae2.webp",
+      "contentType": "image/webp",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "holiday__holiday-christmas-plushie-baby-dragon-family__b2bcf582a7",
+      "mediaType": "webp",
+      "r2ObjectKey": "coloring-pages/webp/holiday/holiday-christmas-plushie-baby-dragon-family-b2bcf582a7.webp",
+      "contentType": "image/webp",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "holiday__holiday-christmas-plushie-mermaid__f3fb154ad5",
+      "mediaType": "webp",
+      "r2ObjectKey": "coloring-pages/webp/holiday/holiday-christmas-plushie-mermaid-f3fb154ad5.webp",
+      "contentType": "image/webp",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "indoor-plants__indoor-plants-gerbera-daisy__591cf8e859",
+      "mediaType": "webp",
+      "r2ObjectKey": "coloring-pages/webp/indoor-plants/indoor-plants-gerbera-daisy-591cf8e859.webp",
+      "contentType": "image/webp",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "indoor-plants__indoor-plants-philodendron-pink-princess__ab3e85182b",
+      "mediaType": "webp",
+      "r2ObjectKey": "coloring-pages/webp/indoor-plants/indoor-plants-philodendron-pink-princess-ab3e85182b.webp",
+      "contentType": "image/webp",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-bakery-cutting-board-with-dough__b2b847f8d9",
+      "mediaType": "webp",
+      "r2ObjectKey": "coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-bakery-cutting-board-with-dough-b2b847f8d9.webp",
+      "contentType": "image/webp",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-bakery-display-case__922f88ea65",
+      "mediaType": "webp",
+      "r2ObjectKey": "coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-bakery-display-case-922f88ea65.webp",
+      "contentType": "image/webp",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-bakery-focaccia__988a6bf6e1",
+      "mediaType": "webp",
+      "r2ObjectKey": "coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-bakery-focaccia-988a6bf6e1.webp",
+      "contentType": "image/webp",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-high-speed-bullet-train-on-__5e359d2a25",
+      "mediaType": "webp",
+      "r2ObjectKey": "coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-high-speed-bullet-train-on--5e359d2a25.webp",
+      "contentType": "image/webp",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-indian-palace-on-wheels-tra__fa10f9553b",
+      "mediaType": "webp",
+      "r2ObjectKey": "coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-indian-palace-on-wheels-tra-fa10f9553b.webp",
+      "contentType": "image/webp",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehiacle-cars-pagani-huayra__974ebd3a07",
+      "mediaType": "webp",
+      "r2ObjectKey": "coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-cars-pagani-huayra-974ebd3a07.webp",
+      "contentType": "image/webp",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehiacle-cars-toyota-supra__d87bfd042b",
+      "mediaType": "webp",
+      "r2ObjectKey": "coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-cars-toyota-supra-d87bfd042b.webp",
+      "contentType": "image/webp",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    },
+    {
+      "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-vehiacle-planes-supersonic-jet__bfd2f21c17",
+      "mediaType": "webp",
+      "r2ObjectKey": "coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-vehiacle-planes-supersonic-jet-bfd2f21c17.webp",
+      "contentType": "image/webp",
+      "cacheControl": "max-age=31536000",
+      "etagPresent": true,
+      "lastModifiedPresent": true
+    }
+  ],
+  "launchTasks": []
+}

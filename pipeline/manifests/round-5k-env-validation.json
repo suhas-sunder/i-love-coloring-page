@@ -1,0 +1,45 @@
+{
+  "generatedAt": "2026-05-13T01:39:41.132Z",
+  "runId": "round-5k-env-validation",
+  "expected": {
+    "NEXT_PUBLIC_SITE_URL": "https://www.ilovecoloringpage.com",
+    "NEXT_PUBLIC_COLORING_ASSET_BASE_URL": "https://assets.ilovecoloringpage.com/coloring-pages",
+    "NEXT_PUBLIC_CONTACT_EMAIL": "admin@ilovecoloringpage.com"
+  },
+  "rawValueCaptured": false,
+  "valueSources": {
+    "siteUrl": "cli",
+    "assetBaseUrl": "cli",
+    "contactEmail": "cli"
+  },
+  "values": {
+    "siteUrl": "https://www.ilovecoloringpage.com",
+    "assetBaseUrl": "https://assets.ilovecoloringpage.com/coloring-pages",
+    "contactEmail": "admin@ilovecoloringpage.com"
+  },
+  "summary": {
+    "siteUrlSet": true,
+    "siteUrlMatchesExpected": true,
+    "siteUrlHttps": true,
+    "siteUrlNotLocalhost": true,
+    "siteOrigin": "https://www.ilovecoloringpage.com",
+    "assetBaseSet": true,
+    "assetBaseMatchesExpected": true,
+    "assetBaseHttps": true,
+    "assetBaseHasColoringPagesPrefix": true,
+    "assetBaseNotLocalhost": true,
+    "assetBaseNotR2Dev": true,
+    "assetBaseNotPrivateR2Endpoint": true,
+    "assetBaseHasNoOldTestPrefix": true,
+    "assetBaseHasNoDuplicateColoringPagesPrefix": true,
+    "assetBaseCustomDomain": true,
+    "contactEmailSet": true,
+    "contactEmailMatchesExpected": true,
+    "noPublicEnvCredentials": true,
+    "r2DevIsProductionReady": false,
+    "production_env_ready": true,
+    "production_asset_domain_ready": true
+  },
+  "blockers": [],
+  "notes": []
+}
