@@ -17,6 +17,7 @@ export async function buildR2UploadConfig({
   confirmBucket = "",
   confirmPrefix = "",
   confirmFileCount = 0,
+  expectedFileCount = EXPECTED_R2_FILE_COUNT,
   concurrency,
   allowDangerousBucketOverride = false,
   allowHighConcurrency = false,
@@ -34,7 +35,7 @@ export async function buildR2UploadConfig({
     : DEFAULT_R2_CONCURRENCY;
 
   if (execute) {
-    validateExecuteConfirmations({ confirmBucket, confirmPrefix, confirmFileCount });
+    validateExecuteConfirmations({ confirmBucket, confirmPrefix, confirmFileCount, expectedFileCount });
   }
   validateBucket(bucket, allowDangerousBucketOverride);
   validatePrefix(prefix);
@@ -63,6 +64,7 @@ export async function buildR2UploadConfig({
     skipExisting: parseBoolean(mergedEnv.R2_UPLOAD_SKIP_EXISTING),
     maxFiles: parsePositiveInteger(mergedEnv.R2_UPLOAD_MAX_FILES),
     maxBytes: parsePositiveInteger(mergedEnv.R2_UPLOAD_MAX_BYTES),
+    expectedFileCount,
     localEnvFileLoaded: Object.keys(localEnv).length > 0,
     execute,
   };
@@ -88,11 +90,16 @@ export async function loadLocalR2Env(repoRoot = process.cwd()) {
   return parsed;
 }
 
-export function validateExecuteConfirmations({ confirmBucket, confirmPrefix, confirmFileCount }) {
+export function validateExecuteConfirmations({
+  confirmBucket,
+  confirmPrefix,
+  confirmFileCount,
+  expectedFileCount = EXPECTED_R2_FILE_COUNT,
+}) {
   const missing = [];
   if (confirmBucket !== EXPECTED_R2_BUCKET) missing.push(`--confirm-bucket ${EXPECTED_R2_BUCKET}`);
   if (normalizeR2Prefix(confirmPrefix) !== EXPECTED_R2_PREFIX) missing.push(`--confirm-prefix ${EXPECTED_R2_PREFIX}`);
-  if (Number(confirmFileCount) !== EXPECTED_R2_FILE_COUNT) missing.push(`--confirm-file-count ${EXPECTED_R2_FILE_COUNT}`);
+  if (Number(confirmFileCount) !== Number(expectedFileCount)) missing.push(`--confirm-file-count ${expectedFileCount}`);
   if (missing.length) {
     throw new Error(`Execute mode requires exact confirmation flags: ${missing.join(", ")}`);
   }

@@ -362,6 +362,11 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Upload scripts should prefer `pipeline/r2-upload-optimized/coloring-pages` only after the Round 5P compression acceptance gate passes.
 - Contact sheets and screenshots under `pipeline/review/round-5p/` are ignored review artifacts and must not be committed.
 - Full upload remains owner-controlled after optimized bundle review and dry-run verification.
+- Round 5Q category upload smoke tests must use both `--category` and matching `--confirm-category`.
+- Never test-upload the full bundle by accident; category smoke uploads must report the exact confirm file count before execution.
+- The `st-patricks-day` smoke upload is limited to SVG plus WebP under `coloring-pages/svg/st-patricks-day/` and `coloring-pages/webp/st-patricks-day/`.
+- Category upload smoke tests must never include `png/`, `thumbs/`, deferred manual-review records, duplicate `coloring-pages/coloring-pages/` prefixes, old `coloring/test-v1/` keys, or source image paths.
+- The owner must run category `--execute` upload commands manually unless they explicitly approve Codex to run a real upload.
 
 ## Production Asset Hosting
 

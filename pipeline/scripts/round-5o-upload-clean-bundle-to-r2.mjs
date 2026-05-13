@@ -23,6 +23,7 @@ const __dirname = path.dirname(__filename);
 const REPO_ROOT = path.resolve(__dirname, "..", "..");
 const GENERATED_AT = new Date().toISOString();
 const ROUND_5N_COMMIT = "13e04ed";
+const ROUND_5P_COMMIT = "3176df7ed6ea0a8f27c520f80d5cc2a4a7beb3bb";
 const CLEAN_SOURCE_BASE = "pipeline/r2-upload-clean";
 const CLEAN_BUNDLE_ROOT = `${CLEAN_SOURCE_BASE}/coloring-pages`;
 const CLEAN_BUNDLE_ABSOLUTE = path.resolve(REPO_ROOT, CLEAN_BUNDLE_ROOT);
@@ -70,6 +71,20 @@ const REPORTS = {
   lifecycle: "pipeline/reports/round-5o-local-uploader-lifecycle.md",
 };
 
+const ROUND_5Q_OUTPUTS = {
+  projectContext: "pipeline/manifests/round-5q-project-context-check.json",
+  uploadPlan: "pipeline/manifests/round-5q-st-patricks-day-upload-plan.json",
+  dryRun: "pipeline/manifests/round-5q-st-patricks-day-dry-run-results.json",
+  verificationPlan: "pipeline/manifests/round-5q-st-patricks-day-verification-plan.json",
+};
+
+const ROUND_5Q_REPORTS = {
+  projectContext: "pipeline/reports/round-5q-project-context-check.md",
+  uploadPlan: "pipeline/reports/round-5q-st-patricks-day-upload-plan.md",
+  dryRun: "pipeline/reports/round-5q-st-patricks-day-dry-run-report.md",
+  verificationPlan: "pipeline/reports/round-5q-st-patricks-day-verification-plan.md",
+};
+
 const args = parseArgs(process.argv.slice(2));
 const executeRequested = args.execute === true;
 const mode = executeRequested ? "execute" : "dry-run";
@@ -80,28 +95,31 @@ main().catch((error) => {
 });
 
 async function main() {
+  const uploadSource = resolveUploadSource(args);
+  const data = await loadInputs();
+  const projectContext = await buildProjectContext(uploadSource);
+  const workingTree = buildWorkingTreeAudit();
+  const allUploads = await buildUploadPlan(data.objectKeyMap.records, data.deferredManualReview.records, uploadSource);
+  const categoryUploads = applyCategoryFilter(allUploads, args.category);
+  const expectedConfirmFileCount = categoryUploads.length;
+  validateCategoryConfirmations(args, expectedConfirmFileCount);
   const config = await buildR2UploadConfig({
     repoRoot: REPO_ROOT,
     execute: executeRequested,
     confirmBucket: args.confirmBucket,
     confirmPrefix: args.confirmPrefix,
     confirmFileCount: args.confirmFileCount,
+    expectedFileCount: expectedConfirmFileCount,
     concurrency: args.concurrency,
     allowDangerousBucketOverride: args.allowDangerousBucketOverride,
     allowHighConcurrency: args.allowHighConcurrency,
   });
-
-  const uploadSource = resolveUploadSource(args);
-  const data = await loadInputs();
-  const projectContext = await buildProjectContext(uploadSource);
-  const workingTree = buildWorkingTreeAudit();
-  const allUploads = await buildUploadPlan(data.objectKeyMap.records, data.deferredManualReview.records, uploadSource);
-  const resumeUploads = args.resumeFromManifest ? await applyResumeManifest(allUploads, args.resumeFromManifest) : allUploads;
+  const resumeUploads = args.resumeFromManifest ? await applyResumeManifest(categoryUploads, args.resumeFromManifest) : categoryUploads;
   const plannedUploads = applyUploadFilters(resumeUploads, config, args);
-  validateUploadPlan(plannedUploads, allUploads, data, args, uploadSource);
+  validateUploadPlan(plannedUploads, allUploads, data, args, uploadSource, expectedConfirmFileCount);
   const bundleAudit = await buildBundleAudit(data, allUploads, uploadSource);
   const estimate = buildOperationEstimate(allUploads, uploadSource);
-  const verifierPlan = buildVerifierPlan(allUploads);
+  const verifierPlan = buildVerifierPlan(allUploads, args.category);
   const lifecycle = buildLifecycle();
 
   const failures = [];
@@ -110,7 +128,16 @@ async function main() {
     executionSummary = await executeUploads(plannedUploads, config, failures);
   }
 
-  const dryRunManifest = buildDryRunManifest({ plannedUploads, allUploads, config, executionSummary, failures, uploadSource });
+  const dryRunManifest = buildDryRunManifest({
+    plannedUploads,
+    allUploads,
+    config,
+    executionSummary,
+    failures,
+    uploadSource,
+    category: args.category,
+    expectedConfirmFileCount,
+  });
   const failuresManifest = {
     generatedAt: GENERATED_AT,
     runId: "round-5o-upload-failures",
@@ -119,22 +146,36 @@ async function main() {
     failures,
   };
 
-  await writeJson(OUTPUTS.projectContext, projectContext);
-  await writeText(REPORTS.projectContext, renderProjectContextReport(projectContext));
-  await writeJson(OUTPUTS.workingTree, workingTree);
-  await writeText(REPORTS.workingTree, renderWorkingTreeReport(workingTree));
-  await writeJson(OUTPUTS.bundleAudit, bundleAudit);
-  await writeText(REPORTS.bundleAudit, renderBundleAuditReport(bundleAudit));
-  await writeJson(OUTPUTS.dryRun, dryRunManifest);
-  await writeJson(OUTPUTS.failures, failuresManifest);
-  await writeText(REPORTS.dryRun, renderDryRunReport(dryRunManifest));
-  await writeJson(OUTPUTS.estimate, estimate);
-  await writeText(REPORTS.estimate, renderOperationEstimateReport(estimate));
-  await writeJson(OUTPUTS.verifierPlan, verifierPlan);
-  await writeText(REPORTS.verifierPlan, renderVerifierPlanReport(verifierPlan));
-  await writeText(REPORTS.ownerRunbook, renderOwnerRunbook(uploadSource));
-  await writeJson(OUTPUTS.lifecycle, lifecycle);
-  await writeText(REPORTS.lifecycle, renderLifecycleReport(lifecycle));
+  if (args.category) {
+    const categoryPlan = buildCategoryUploadPlan(plannedUploads, uploadSource, args.category, expectedConfirmFileCount);
+    const categoryVerificationPlan = buildCategoryVerificationPlan(plannedUploads, args.category);
+    const categoryContext = buildRound5QProjectContext(projectContext, uploadSource);
+    await writeJson(ROUND_5Q_OUTPUTS.projectContext, categoryContext);
+    await writeText(ROUND_5Q_REPORTS.projectContext, renderRound5QProjectContextReport(categoryContext));
+    await writeJson(ROUND_5Q_OUTPUTS.uploadPlan, categoryPlan);
+    await writeText(ROUND_5Q_REPORTS.uploadPlan, renderRound5QUploadPlanReport(categoryPlan));
+    await writeJson(ROUND_5Q_OUTPUTS.dryRun, dryRunManifest);
+    await writeText(ROUND_5Q_REPORTS.dryRun, renderRound5QDryRunReport(dryRunManifest));
+    await writeJson(ROUND_5Q_OUTPUTS.verificationPlan, categoryVerificationPlan);
+    await writeText(ROUND_5Q_REPORTS.verificationPlan, renderRound5QVerificationPlanReport(categoryVerificationPlan));
+  } else {
+    await writeJson(OUTPUTS.projectContext, projectContext);
+    await writeText(REPORTS.projectContext, renderProjectContextReport(projectContext));
+    await writeJson(OUTPUTS.workingTree, workingTree);
+    await writeText(REPORTS.workingTree, renderWorkingTreeReport(workingTree));
+    await writeJson(OUTPUTS.bundleAudit, bundleAudit);
+    await writeText(REPORTS.bundleAudit, renderBundleAuditReport(bundleAudit));
+    await writeJson(OUTPUTS.dryRun, dryRunManifest);
+    await writeJson(OUTPUTS.failures, failuresManifest);
+    await writeText(REPORTS.dryRun, renderDryRunReport(dryRunManifest));
+    await writeJson(OUTPUTS.estimate, estimate);
+    await writeText(REPORTS.estimate, renderOperationEstimateReport(estimate));
+    await writeJson(OUTPUTS.verifierPlan, verifierPlan);
+    await writeText(REPORTS.verifierPlan, renderVerifierPlanReport(verifierPlan));
+    await writeText(REPORTS.ownerRunbook, renderOwnerRunbook(uploadSource));
+    await writeJson(OUTPUTS.lifecycle, lifecycle);
+    await writeText(REPORTS.lifecycle, renderLifecycleReport(lifecycle));
+  }
 
   console.log(JSON.stringify({
     runId: "round-5o-upload-clean-bundle-to-r2",
@@ -143,6 +184,7 @@ async function main() {
     bucket: config.bucket,
     prefix: config.prefix,
     uploadSource: uploadSource.label,
+    category: args.category || null,
     plannedFiles: plannedUploads.length,
     svgFiles: plannedUploads.filter((entry) => entry.kind === "svg").length,
     webpFiles: plannedUploads.filter((entry) => entry.kind === "webp").length,
@@ -211,6 +253,32 @@ async function buildUploadPlan(records, deferredRecords, uploadSource) {
   return uploads;
 }
 
+function applyCategoryFilter(allUploads, category) {
+  if (!category) return allUploads;
+  const selected = allUploads.filter((entry) => entry.category === category);
+  if (!selected.length) throw new Error(`Category filter returned 0 files: ${category}`);
+  const allowedPrefixes = [`coloring-pages/svg/${category}/`, `coloring-pages/webp/${category}/`];
+  const unsafe = selected.filter((entry) => !allowedPrefixes.some((prefix) => entry.objectKey.startsWith(prefix)));
+  if (unsafe.length) {
+    throw new Error(`Category filter selected keys outside ${category}: ${unsafe.slice(0, 5).map((entry) => entry.objectKey).join(", ")}`);
+  }
+  const leaked = allUploads.filter((entry) => !selected.includes(entry) && allowedPrefixes.some((prefix) => entry.objectKey.startsWith(prefix)));
+  if (leaked.length) {
+    throw new Error(`Category filter mismatch for ${category}: ${leaked.length} prefix-matching files were not selected.`);
+  }
+  return selected;
+}
+
+function validateCategoryConfirmations(parsedArgs, expectedConfirmFileCount) {
+  if (!parsedArgs.category) return;
+  if (executeRequested && parsedArgs.confirmCategory !== parsedArgs.category) {
+    throw new Error(`Execute mode with --category ${parsedArgs.category} requires --confirm-category ${parsedArgs.category}.`);
+  }
+  if (executeRequested && Number(parsedArgs.confirmFileCount) !== Number(expectedConfirmFileCount)) {
+    throw new Error(`Execute mode with --category ${parsedArgs.category} requires --confirm-file-count ${expectedConfirmFileCount}.`);
+  }
+}
+
 async function buildUploadEntry(record, kind, objectKey, localPath, uploadSource) {
   const absolutePath = path.resolve(REPO_ROOT, localPath);
   assertLocalBundlePath(absolutePath, uploadSource);
@@ -269,7 +337,7 @@ async function applyResumeManifest(allUploads, manifestPath) {
   return filtered;
 }
 
-function validateUploadPlan(plannedUploads, allUploads, data, parsedArgs, uploadSource) {
+function validateUploadPlan(plannedUploads, allUploads, data, parsedArgs, uploadSource, expectedConfirmFileCount = EXPECTED_R2_FILE_COUNT) {
   if (allUploads.length !== EXPECTED_R2_FILE_COUNT) {
     throw new Error(`Refusing upload map with ${allUploads.length} files. Expected ${EXPECTED_R2_FILE_COUNT}.`);
   }
@@ -290,8 +358,14 @@ function validateUploadPlan(plannedUploads, allUploads, data, parsedArgs, upload
   if (data.deferredManualReview.summary.deferredRecordCount !== EXPECTED_DEFERRED_RECORDS) {
     throw new Error("Refusing upload because deferred manual-review count changed.");
   }
-  if (parsedArgs.execute && parsedArgs.confirmFileCount !== EXPECTED_R2_FILE_COUNT) {
-    throw new Error(`Execute requires --confirm-file-count ${EXPECTED_R2_FILE_COUNT}.`);
+  if (parsedArgs.category) {
+    const outsideCategory = plannedUploads.filter((entry) => !entry.objectKey.startsWith(`coloring-pages/${entry.kind}/${parsedArgs.category}/`));
+    if (outsideCategory.length) {
+      throw new Error(`Refusing category upload with keys outside ${parsedArgs.category}.`);
+    }
+  }
+  if (parsedArgs.execute && parsedArgs.confirmFileCount !== expectedConfirmFileCount) {
+    throw new Error(`Execute requires --confirm-file-count ${expectedConfirmFileCount}.`);
   }
 }
 
@@ -486,7 +560,16 @@ async function buildBundleAudit(data, allUploads, uploadSource) {
   };
 }
 
-function buildDryRunManifest({ plannedUploads, allUploads, config, executionSummary, failures, uploadSource }) {
+function buildDryRunManifest({
+  plannedUploads,
+  allUploads,
+  config,
+  executionSummary,
+  failures,
+  uploadSource,
+  category = "",
+  expectedConfirmFileCount = EXPECTED_R2_FILE_COUNT,
+}) {
   const svgFileCount = plannedUploads.filter((entry) => entry.kind === "svg").length;
   const webpFileCount = plannedUploads.filter((entry) => entry.kind === "webp").length;
   const pngFileCount = plannedUploads.filter((entry) => entry.objectKey.includes("/png/") || entry.localPath.endsWith(".png")).length;
@@ -504,6 +587,7 @@ function buildDryRunManifest({ plannedUploads, allUploads, config, executionSumm
       endpointConfigured: Boolean(config.endpoint),
       uploadSource: uploadSource.label,
       uploadSourceRoot: uploadSource.bundleRoot,
+      category: category || null,
       optimizedSourceGatePassed: uploadSource.round5pGatePassed,
       credentialsRequiredForExecuteOnly: true,
       plannedFileCount: plannedUploads.length,
@@ -526,7 +610,8 @@ function buildDryRunManifest({ plannedUploads, allUploads, config, executionSumm
       skipExisting: Boolean(args.skipExisting || config.skipExisting),
       classAOperationsEstimate: plannedUploads.length,
       classBOperationsEstimate: args.skipExisting || config.skipExisting ? plannedUploads.length : 0,
-      readyForOwnerExecuteReview: !executeRequested && plannedUploads.length === EXPECTED_R2_FILE_COUNT && failures.length === 0,
+      requiredConfirmFileCount: expectedConfirmFileCount,
+      readyForOwnerExecuteReview: !executeRequested && plannedUploads.length === expectedConfirmFileCount && failures.length === 0,
     },
     executionSummary,
     plannedUploads,
@@ -557,15 +642,19 @@ function buildOperationEstimate(allUploads, uploadSource) {
   };
 }
 
-function buildVerifierPlan(allUploads) {
-  const categories = [...new Set(allUploads.map((entry) => entry.category))].sort();
+function buildVerifierPlan(allUploads, category = "") {
+  const selectedUploads = category ? applyCategoryFilter(allUploads, category) : allUploads;
+  const categories = [...new Set(selectedUploads.map((entry) => entry.category))].sort();
+  const categoryFlag = category ? ` --category ${category}` : "";
+  const fullFlag = category ? "" : " --full";
   return {
     generatedAt: GENERATED_AT,
     runId: "round-5o-post-upload-verifier-plan",
     summary: {
       publicBaseUrl: PUBLIC_ASSET_BASE,
-      fullVerificationCount: allUploads.length,
-      recommendedSampleSize: Math.min(300, allUploads.length),
+      category: category || null,
+      fullVerificationCount: selectedUploads.length,
+      recommendedSampleSize: Math.min(300, selectedUploads.length),
       categoriesRepresented: categories.length,
       svgContentType: "image/svg+xml",
       webpContentType: "image/webp",
@@ -575,8 +664,8 @@ function buildVerifierPlan(allUploads) {
       noDuplicatePrefix: true,
     },
     commands: {
-      full: "node pipeline/scripts/round-5o-verify-clean-upload-r2.mjs --full --public-base-url https://assets.ilovecoloringpage.com/coloring-pages",
-      sample: "node pipeline/scripts/round-5o-verify-clean-upload-r2.mjs --sample --public-base-url https://assets.ilovecoloringpage.com/coloring-pages",
+      full: `node pipeline/scripts/round-5o-verify-clean-upload-r2.mjs${fullFlag}${categoryFlag} --public-base-url https://assets.ilovecoloringpage.com/coloring-pages`,
+      sample: `node pipeline/scripts/round-5o-verify-clean-upload-r2.mjs --sample${categoryFlag} --public-base-url https://assets.ilovecoloringpage.com/coloring-pages`,
     },
   };
 }
@@ -596,6 +685,100 @@ function buildLifecycle() {
       recurringTask: false,
       backgroundWatcher: false,
       deletesRemoteObjects: false,
+    },
+  };
+}
+
+function buildRound5QProjectContext(projectContext, uploadSource) {
+  const envR2UploadLocalIgnored = commandSucceeds("git", ["check-ignore", "-q", ".env.r2-upload.local"]);
+  const statusShort = git(["status", "--short"]);
+  const entries = statusShort.split(/\r?\n/).filter(Boolean);
+  return {
+    generatedAt: GENERATED_AT,
+    runId: "round-5q-project-context-check",
+    summary: {
+      ...projectContext.summary,
+      round5pCommitExists: commandSucceeds("git", ["cat-file", "-e", `${ROUND_5P_COMMIT}^{commit}`]),
+      uploadScriptExists: existsSync(path.join(REPO_ROOT, "pipeline/scripts/round-5o-upload-clean-bundle-to-r2.mjs")),
+      optimizedBundleSvgExists: existsSync(path.join(OPTIMIZED_BUNDLE_ABSOLUTE, "svg")),
+      optimizedBundleWebpExists: existsSync(path.join(OPTIMIZED_BUNDLE_ABSOLUTE, "webp")),
+      envR2UploadLocalIgnored,
+      uploadSource: uploadSource.label,
+      uploadSourceRoot: uploadSource.bundleRoot,
+      preExistingEnvExampleDriftPresent: entries.some((entry) => entry.endsWith(".env.r2-upload.example")),
+      generatedValidationDriftCleanedBeforeRound5Q: true,
+    },
+    checks: {
+      repo: "git rev-parse --show-toplevel",
+      branch: "git branch --show-current",
+      round5pCommit: `git cat-file -e ${ROUND_5P_COMMIT}^{commit}`,
+      envIgnore: "git check-ignore -q .env.r2-upload.local",
+    },
+  };
+}
+
+function buildCategoryUploadPlan(plannedUploads, uploadSource, category, expectedConfirmFileCount) {
+  const assetIds = [...new Set(plannedUploads.map((entry) => entry.assetId))].sort();
+  const svgCount = plannedUploads.filter((entry) => entry.kind === "svg").length;
+  const webpCount = plannedUploads.filter((entry) => entry.kind === "webp").length;
+  const totalBytes = sumBytes(plannedUploads);
+  const expectedUploadCommand = `node pipeline/scripts/round-5o-upload-clean-bundle-to-r2.mjs --execute --confirm-bucket ${EXPECTED_R2_BUCKET} --confirm-prefix ${EXPECTED_R2_PREFIX} --confirm-category ${category} --confirm-file-count ${expectedConfirmFileCount} --category ${category} --skip-existing`;
+  const expectedVerificationCommand = `node pipeline/scripts/round-5o-verify-clean-upload-r2.mjs --category ${category} --public-base-url ${PUBLIC_ASSET_BASE}`;
+  return {
+    generatedAt: GENERATED_AT,
+    runId: "round-5q-st-patricks-day-upload-plan",
+    summary: {
+      category,
+      includedRecords: assetIds.length,
+      svgCount,
+      webpCount,
+      totalFileCount: plannedUploads.length,
+      totalBytes,
+      objectKeyPrefixes: [`coloring-pages/svg/${category}/`, `coloring-pages/webp/${category}/`],
+      confirmFileCountRequired: expectedConfirmFileCount,
+      uploadSource: uploadSource.label,
+      uploadSourceRoot: uploadSource.bundleRoot,
+      uploadPerformed: false,
+      deletePerformed: false,
+      expectedUploadCommand,
+      expectedVerificationCommand,
+      credentialsPrinted: false,
+    },
+    records: assetIds.map((assetId) => {
+      const entries = plannedUploads.filter((entry) => entry.assetId === assetId);
+      return {
+        assetId,
+        category,
+        svgObjectKey: entries.find((entry) => entry.kind === "svg")?.objectKey || "",
+        webpObjectKey: entries.find((entry) => entry.kind === "webp")?.objectKey || "",
+      };
+    }),
+    objectKeys: plannedUploads.map((entry) => entry.objectKey),
+  };
+}
+
+function buildCategoryVerificationPlan(plannedUploads, category) {
+  const selectedObjectCount = plannedUploads.length;
+  return {
+    generatedAt: GENERATED_AT,
+    runId: "round-5q-st-patricks-day-verification-plan",
+    summary: {
+      category,
+      publicBaseUrl: PUBLIC_ASSET_BASE,
+      selectedObjectCount,
+      svgCount: plannedUploads.filter((entry) => entry.kind === "svg").length,
+      webpCount: plannedUploads.filter((entry) => entry.kind === "webp").length,
+      allowedPrefixes: [`coloring-pages/svg/${category}/`, `coloring-pages/webp/${category}/`],
+      contentTypes: {
+        svg: "image/svg+xml",
+        webp: "image/webp",
+      },
+      corsOriginsForSvg: ["https://www.ilovecoloringpage.com", "http://localhost:3005", "http://127.0.0.1:3005"],
+      noPngOrThumbKeys: true,
+      noDuplicatePrefix: true,
+    },
+    commands: {
+      category: `node pipeline/scripts/round-5o-verify-clean-upload-r2.mjs --category ${category} --public-base-url ${PUBLIC_ASSET_BASE}`,
     },
   };
 }
@@ -801,6 +984,94 @@ This utility is only for the initial clean SVG plus WebP upload and can be remov
 `;
 }
 
+function renderRound5QProjectContextReport(payload) {
+  return `# Round 5Q Project Context Check
+
+- Repository: ${payload.summary.repoName}
+- Branch: ${payload.summary.branch}
+- Round 5P commit exists: ${payload.summary.round5pCommitExists}
+- Static export configured: ${payload.summary.staticExportConfigured}
+- app/api present: ${payload.summary.appApiRoutePresent}
+- Upload script exists: ${payload.summary.uploadScriptExists}
+- Optimized bundle present: ${payload.summary.optimizedBundleExists}
+- Optimized SVG folder present: ${payload.summary.optimizedBundleSvgExists}
+- Optimized WebP folder present: ${payload.summary.optimizedBundleWebpExists}
+- Clean bundle present: ${payload.summary.cleanBundleExists}
+- .env.r2-upload.local ignored: ${payload.summary.envR2UploadLocalIgnored}
+- Upload source: ${payload.summary.uploadSource}
+- Wrong task indicators present: ${payload.summary.wrongContextIndicatorsPresent}
+
+Pre-existing local env example drift was detected and left unstaged without printing values: ${payload.summary.preExistingEnvExampleDriftPresent}.
+`;
+}
+
+function renderRound5QUploadPlanReport(payload) {
+  return `# Round 5Q St Patricks Day Upload Plan
+
+- Category: ${payload.summary.category}
+- Included records: ${payload.summary.includedRecords}
+- SVG files: ${payload.summary.svgCount}
+- WebP files: ${payload.summary.webpCount}
+- Total files: ${payload.summary.totalFileCount}
+- Total bytes: ${payload.summary.totalBytes}
+- Required confirm file count: ${payload.summary.confirmFileCountRequired}
+- Upload source: ${payload.summary.uploadSourceRoot}
+- Upload performed: ${payload.summary.uploadPerformed}
+
+Allowed prefixes:
+
+${payload.summary.objectKeyPrefixes.map((prefix) => `- \`${prefix}\``).join("\n")}
+
+Owner smoke upload command:
+
+\`${payload.summary.expectedUploadCommand}\`
+
+Post-upload verification command:
+
+\`${payload.summary.expectedVerificationCommand}\`
+`;
+}
+
+function renderRound5QDryRunReport(payload) {
+  return `# Round 5Q St Patricks Day Dry-Run Report
+
+- Mode: ${payload.mode}
+- Category: ${payload.summary.category}
+- Upload performed: ${payload.uploadPerformed}
+- Delete performed: ${payload.deletePerformed}
+- Bucket: ${payload.summary.bucket}
+- Prefix: ${payload.summary.prefix}
+- Upload source: ${payload.summary.uploadSourceRoot}
+- Planned files: ${payload.summary.plannedFileCount}
+- SVG files: ${payload.summary.svgFileCount}
+- WebP files: ${payload.summary.webpFileCount}
+- PNG files: ${payload.summary.pngFileCount}
+- Thumb files: ${payload.summary.thumbFileCount}
+- Manual-review asset IDs included: ${payload.summary.manualReviewAssetIdsIncluded}
+- Total bytes: ${payload.summary.totalBytes}
+- Required confirm file count: ${payload.summary.requiredConfirmFileCount}
+
+No real upload ran in this dry-run, and no secrets are written to this report.
+`;
+}
+
+function renderRound5QVerificationPlanReport(payload) {
+  return `# Round 5Q St Patricks Day Verification Plan
+
+- Category: ${payload.summary.category}
+- Public base URL: ${payload.summary.publicBaseUrl}
+- Selected object count: ${payload.summary.selectedObjectCount}
+- SVG files: ${payload.summary.svgCount}
+- WebP files: ${payload.summary.webpCount}
+- Expected SVG content type: ${payload.summary.contentTypes.svg}
+- Expected WebP content type: ${payload.summary.contentTypes.webp}
+
+Run after the owner smoke upload:
+
+\`${payload.commands.category}\`
+`;
+}
+
 function classifyWorkingTreePath(pathName) {
   if (!pathName) return "unknown";
   if (pathName === ".gitignore" || pathName === "AGENTS.md" || pathName === "package.json" || pathName === "package-lock.json" || pathName === ".env.r2-upload.example") return "intended_round_5o_artifact";
@@ -825,6 +1096,8 @@ function parseArgs(rawArgs) {
     confirmBucket: "",
     confirmPrefix: "",
     confirmFileCount: 0,
+    category: "",
+    confirmCategory: "",
     allowDangerousBucketOverride: false,
     allowHighConcurrency: false,
     source: "auto",
@@ -846,12 +1119,21 @@ function parseArgs(rawArgs) {
     else if (arg === "--confirm-bucket") parsed.confirmBucket = rawArgs[++index] || "";
     else if (arg === "--confirm-prefix") parsed.confirmPrefix = normalizeR2Prefix(rawArgs[++index] || "");
     else if (arg === "--confirm-file-count") parsed.confirmFileCount = parsePositiveInteger(rawArgs[++index]);
+    else if (arg === "--category") parsed.category = normalizeCategory(rawArgs[++index] || "");
+    else if (arg === "--confirm-category") parsed.confirmCategory = normalizeCategory(rawArgs[++index] || "");
     else if (arg === "--dangerously-allow-bucket-override") parsed.allowDangerousBucketOverride = true;
     else if (arg === "--allow-high-concurrency") parsed.allowHighConcurrency = true;
   }
   if (!["all", "svg", "webp"].includes(parsed.only)) throw new Error(`Invalid --only value: ${parsed.only}`);
   if (!["auto", "clean", "optimized"].includes(parsed.source)) throw new Error(`Invalid --source value: ${parsed.source}`);
   return parsed;
+}
+
+function normalizeCategory(value) {
+  const category = String(value || "").trim().toLowerCase().replace(/^\/+|\/+$/g, "");
+  if (!category) return "";
+  if (!/^[a-z0-9-]+$/.test(category)) throw new Error(`Invalid --category value: ${category}`);
+  return category;
 }
 
 function readJsonIfExists(relativePath) {

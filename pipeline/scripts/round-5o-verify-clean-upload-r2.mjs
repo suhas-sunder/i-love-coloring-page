@@ -12,6 +12,7 @@ const DEFAULT_PUBLIC_BASE_URL = "https://assets.ilovecoloringpage.com/coloring-p
 const OBJECT_KEY_MAP = "pipeline/manifests/round-5n-clean-upload-object-key-map.json";
 const OUTPUT_JSON = "pipeline/manifests/round-5o-post-upload-verifier-results.json";
 const OUTPUT_REPORT = "pipeline/reports/round-5o-post-upload-verifier-results.md";
+const CATEGORY_EXAMPLE = "st-patricks-day";
 const SVG_CORS_ORIGINS = [
   "https://www.ilovecoloringpage.com",
   "http://localhost:3005",
@@ -28,7 +29,9 @@ main().catch((error) => {
 
 async function main() {
   const objectMap = await readJson(OBJECT_KEY_MAP);
-  const allChecks = buildChecks(objectMap.records, args.publicBaseUrl);
+  const records = args.category ? objectMap.records.filter((record) => record.category === args.category) : objectMap.records;
+  if (args.category && records.length === 0) throw new Error(`No records found for --category ${args.category}. Example: ${CATEGORY_EXAMPLE}`);
+  const allChecks = buildChecks(records, args.publicBaseUrl);
   const checks = selectChecks(allChecks, args);
   if (!checks.length) throw new Error("No objects selected for verification.");
 
@@ -47,6 +50,7 @@ async function main() {
     generatedAt: GENERATED_AT,
     runId: "round-5o-post-upload-verifier-results",
     publicBaseUrl: args.publicBaseUrl,
+    category: args.category || null,
     mode: args.full ? "full" : "sample",
     selectedObjectCount: checks.length,
     summary,
@@ -82,7 +86,9 @@ function buildChecks(records, publicBaseUrl) {
 
 function selectChecks(allChecks, parsedArgs) {
   let selected = allChecks;
-  if (!parsedArgs.full) {
+  if (parsedArgs.category) {
+    selected = allChecks;
+  } else if (!parsedArgs.full) {
     const byCategory = new Map();
     for (const check of allChecks) {
       const key = `${check.category}:${check.kind}`;
@@ -158,6 +164,7 @@ function renderReport(payload) {
   return `# Round 5O Post-Upload Verifier Results
 
 - Public base URL: ${payload.publicBaseUrl}
+- Category: ${payload.category || "all"}
 - Mode: ${payload.mode}
 - Selected object count: ${payload.selectedObjectCount}
 - URL checks: ${payload.summary.urlChecks}
@@ -173,6 +180,7 @@ function parseArgs(rawArgs) {
     sample: false,
     sampleSize: 300,
     limit: 0,
+    category: "",
     publicBaseUrl: DEFAULT_PUBLIC_BASE_URL,
   };
   for (let index = 0; index < rawArgs.length; index += 1) {
@@ -181,11 +189,19 @@ function parseArgs(rawArgs) {
     else if (arg === "--sample") parsed.sample = true;
     else if (arg === "--sample-size") parsed.sampleSize = Number(rawArgs[++index] || 300);
     else if (arg === "--limit") parsed.limit = Number(rawArgs[++index] || 0);
+    else if (arg === "--category") parsed.category = normalizeCategory(rawArgs[++index] || "");
     else if (arg === "--public-base-url") parsed.publicBaseUrl = rawArgs[++index] || DEFAULT_PUBLIC_BASE_URL;
   }
   parsed.sampleSize = Number.isFinite(parsed.sampleSize) && parsed.sampleSize > 0 ? Math.floor(parsed.sampleSize) : 300;
   parsed.limit = Number.isFinite(parsed.limit) && parsed.limit > 0 ? Math.floor(parsed.limit) : 0;
   return parsed;
+}
+
+function normalizeCategory(value) {
+  const category = String(value || "").trim().toLowerCase().replace(/^\/+|\/+$/g, "");
+  if (!category) return "";
+  if (!/^[a-z0-9-]+$/.test(category)) throw new Error(`Invalid --category value: ${category}`);
+  return category;
 }
 
 async function readJson(relativePath) {
