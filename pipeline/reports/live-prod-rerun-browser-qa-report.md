@@ -1,0 +1,24 @@
+# Live Production Rerun Browser QA
+
+- Full QA allowed: fail
+- Blocked by stale deployment: pass
+- Pages inspected: 4
+- Screenshots: pipeline/review/live-prod-rerun/screenshots
+- WebP gallery previews render: fail
+- Homepage preview grid renders images: fail
+- Gallery landing renders images: fail
+- Animals Alligator preview renders: fail
+- No preview unavailable for visible uploaded records: fail
+- No broken image icons: fail
+- Deferred records hidden: fail
+- Homepage count shows 6,352: fail
+- Gallery count shows 6,352: fail
+- Search works: fail
+- Filter works: pass
+- Pagination works: pass
+- More menu works: fail
+- Mobile nav works: fail
+- No horizontal overflow: fail
+- Trust pages render: fail
+- Contact email appears where relevant: fail
+- Result: fail

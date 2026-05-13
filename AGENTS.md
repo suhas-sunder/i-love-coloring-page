@@ -449,6 +449,11 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Print and browser conversion flows must never hang indefinitely on a preparing state.
 - Do not proceed to deployment, SEO, image sitemap, Open Graph images, JSON-LD expansion, or live ads until local gallery previews render from the custom asset domain.
 - Live production routing must be verified before image sitemap, Open Graph image, JSON-LD expansion, or live ads work resumes.
+- Live production rerun must pass after the local preview bug fix before image sitemap, Open Graph image, JSON-LD expansion, or live ads work resumes.
+- `Preview unavailable` on live pages is a production blocker for visible uploaded runtime records.
+- Print hanging on live pages is a production blocker.
+- Live production route and sitemap freshness are required before launch QA acceptance.
+- Do not treat a local pass as a production pass.
 - If live sitemap is stale but the local static-export sitemap is current, suspect Netlify deploy, branch, or domain configuration before changing app logic.
 - Static export routing, trailing-slash behavior, canonical URLs, and sitemap URLs must stay consistent with each other.
 - Do not accept live production QA while non-root pages self-redirect, fail to serve 200, or serve stale deploy output.

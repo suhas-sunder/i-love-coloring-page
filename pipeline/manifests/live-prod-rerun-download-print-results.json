@@ -1,0 +1,33 @@
+{
+  "checkedAt": "2026-05-13T20:26:37.312Z",
+  "runId": "live-prod-rerun-download-print",
+  "attempted": false,
+  "blockedByStaleDeployment": true,
+  "notRunReason": "Live production deployment is stale or non-root routes are blocked, so live browser interactions, print, and downloads are not accepted.",
+  "sourceAssetId": null,
+  "sourceSvgUrl": null,
+  "controls": {
+    "printPresent": false,
+    "pngPresent": false,
+    "jpgPresent": false,
+    "webpPresent": false,
+    "svgDownloadPresent": false,
+    "labels": []
+  },
+  "conversion": {
+    "pngMagicOk": false,
+    "jpgMagicOk": false,
+    "webpMagicOk": false
+  },
+  "downloads": {},
+  "print": {
+    "buttonPresent": false,
+    "popupOpened": false,
+    "noHang": false,
+    "passed": false,
+    "error": "Live production deployment is stale or non-root routes are blocked, so live browser interactions, print, and downloads are not accepted."
+  },
+  "noAppApiUsed": true,
+  "consoleErrors": [],
+  "passed": false
+}
