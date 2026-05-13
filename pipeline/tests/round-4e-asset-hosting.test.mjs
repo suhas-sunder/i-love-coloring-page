@@ -119,12 +119,18 @@ test("asset resolver normalizes base URLs, rejects unsafe paths, and keeps proxy
   assert.equal(withCdn.normalizeAssetSubpath("C:/assets/file.svg"), null);
 
   const defaultResolver = await loadAssetResolver({});
-  assert.equal(defaultResolver.hasConfiguredColoringAssetSource(), false);
-  assert.equal(defaultResolver.resolveColoringAssetUrl("svg/animals/file.svg"), null);
+  assert.equal(defaultResolver.hasConfiguredColoringAssetSource(), true);
+  assert.equal(
+    defaultResolver.resolveColoringAssetUrl("svg/animals/file.svg"),
+    "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/file.svg",
+  );
 
   const withoutCdn = await loadAssetResolver({ NEXT_PUBLIC_COLORING_USE_LOCAL_ASSET_PROXY: "1" });
-  assert.equal(withoutCdn.hasConfiguredColoringAssetSource(), false);
-  assert.equal(withoutCdn.resolveColoringAssetUrl("thumbs/animals/file thumb.png"), null);
+  assert.equal(withoutCdn.hasConfiguredColoringAssetSource(), true);
+  assert.equal(
+    withoutCdn.resolveColoringAssetUrl("thumbs/animals/file thumb.png"),
+    "https://assets.ilovecoloringpage.com/coloring-pages/thumbs/animals/file%20thumb.png",
+  );
 });
 
 test("Round 4F removes the App Router local proxy from the production app", async () => {

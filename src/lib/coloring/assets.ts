@@ -1,4 +1,5 @@
-// The public asset base uses NEXT_PUBLIC_COLORING_ASSET_BASE_URL. Round 4Y siteConfig validates the same public value for launch readiness.
+// The public asset base uses the production custom asset domain by default.
+// NEXT_PUBLIC_COLORING_ASSET_BASE_URL remains an optional local/dev override.
 type AssetSubpathsLike = {
   svg?: string | null;
   pngPreview?: string | null;
@@ -15,7 +16,8 @@ export type ResolvedColoringAssetUrls = {
   svg: string | null;
 };
 
-const ASSET_BASE_URL = normalizeColoringAssetBaseUrl(process.env.NEXT_PUBLIC_COLORING_ASSET_BASE_URL);
+const DEFAULT_COLORING_ASSET_BASE_URL = "https://assets.ilovecoloringpage.com/coloring-pages";
+const ASSET_BASE_URL = normalizeColoringAssetBaseUrl(process.env.NEXT_PUBLIC_COLORING_ASSET_BASE_URL || DEFAULT_COLORING_ASSET_BASE_URL);
 const ALLOWED_TOP_LEVEL_FOLDERS = new Set(["svg", "png", "thumbs", "webp"]);
 
 export function resolveColoringAssetUrl(assetSubpath: string | null | undefined): string | null {

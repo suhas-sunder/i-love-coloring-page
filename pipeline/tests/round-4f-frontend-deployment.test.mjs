@@ -48,7 +48,7 @@ test("Netlify and Next config match static export deployment mode", async () => 
   const netlify = await readText("netlify.toml");
 
   assert.match(nextConfig, /output:\s*"export"/);
-  assert.match(nextConfig, /trailingSlash:\s*true/);
+  assert.match(nextConfig, /trailingSlash:\s*false/);
   assert.match(nextConfig, /unoptimized:\s*true/);
   assert.match(netlify, /command\s*=\s*"npm run build"/);
   assert.match(netlify, /publish\s*=\s*"out"/);
@@ -85,8 +85,11 @@ test("asset resolver is CDN-only in production and returns unavailable state wit
   assert.equal(withCdn.normalizeAssetSubpath("svg\\animals\\file.svg"), null);
 
   const withoutCdn = await loadAssetResolver({ NEXT_PUBLIC_COLORING_USE_LOCAL_ASSET_PROXY: "1" });
-  assert.equal(withoutCdn.hasConfiguredColoringAssetSource(), false);
-  assert.equal(withoutCdn.resolveColoringAssetUrl("svg/animals/file.svg"), null);
+  assert.equal(withoutCdn.hasConfiguredColoringAssetSource(), true);
+  assert.equal(
+    withoutCdn.resolveColoringAssetUrl("svg/animals/file.svg"),
+    "https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/file.svg",
+  );
 });
 
 test("public routes remain Phase 1 only and no per-image routes are created", async () => {
@@ -181,16 +184,7 @@ test("no backend, upload, credential, auth, database, or payment dependency is a
   }
 
   const envExample = await readText(".env.example");
-  for (const variableName of [
-    "CLOUDFLARE_ACCOUNT_ID",
-    "CLOUDFLARE_R2_BUCKET",
-    "CLOUDFLARE_R2_ACCESS_KEY_ID",
-    "CLOUDFLARE_R2_SECRET_ACCESS_KEY",
-    "CLOUDFLARE_R2_ENDPOINT",
-  ]) {
-    assert.match(envExample, new RegExp(`^${variableName}=`, "m"));
-    assert.match(envExample, new RegExp(`^${variableName}=$`, "m"));
-  }
+  assert.doesNotMatch(envExample, /CLOUDFLARE_R2_ACCESS_KEY_ID|CLOUDFLARE_R2_SECRET_ACCESS_KEY|R2_ACCESS_KEY_ID|R2_SECRET_ACCESS_KEY/);
   assert.doesNotMatch(envExample, /AKIA[0-9A-Z]{16}|-----BEGIN [A-Z ]*PRIVATE KEY-----|token\s*=\S+/i);
 });
 
