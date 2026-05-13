@@ -8,6 +8,7 @@ import { test } from "node:test";
 
 const execFileAsync = promisify(execFile);
 const REPO_ROOT = process.cwd();
+const ALLOWED_PRODUCTION_BRANCHES = new Set(["version-4", "version-1"]);
 
 const REQUIRED_JSON = [
   "pipeline/manifests/round-5m-project-context-check.json",
@@ -32,7 +33,7 @@ test("Round 5M JSON manifests parse and confirm context", async () => {
   const context = await readJson("pipeline/manifests/round-5m-project-context-check.json");
   assert.equal(context.summary.correctRepository, true);
   assert.equal(context.summary.repoName, "i-love-coloring-page");
-  assert.equal(context.summary.branch, "version-4");
+  assert.ok(ALLOWED_PRODUCTION_BRANCHES.has(context.summary.branch), `unexpected branch ${context.summary.branch}`);
   assert.equal(context.summary.round5lCommitExists, true);
   assert.equal(context.summary.appApiRoutePresent, false);
   assert.equal(context.summary.staticExportConfigured, true);
@@ -203,7 +204,7 @@ async function gitStatus() {
 
 async function sha256FromText(value) {
   const { createHash } = await import("node:crypto");
-  return createHash("sha256").update(value).digest("hex");
+  return createHash("sha256").update(value.replace(/\r\n/g, "\n")).digest("hex");
 }
 
 function normalizePath(filePath) {

@@ -17,6 +17,7 @@ const execFileAsync = promisify(execFile);
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const REPO_ROOT = path.resolve(__dirname, "..", "..");
+const ALLOWED_PRODUCTION_BRANCHES = new Set(["version-4", "version-1"]);
 
 test("Round 4O generated artifacts parse and confirm the requested project context", async () => {
   const result = await runRound4OBrowserDownloads({ repoRoot: REPO_ROOT });
@@ -49,7 +50,7 @@ test("Round 4O generated artifacts parse and confirm the requested project conte
 
   const context = await readJson("pipeline/manifests/round-4o-project-context-check.json");
   assert.equal(context.summary.correctRepository, true);
-  assert.equal(context.summary.branch, "version-4");
+  assert.ok(ALLOWED_PRODUCTION_BRANCHES.has(context.summary.branch), `unexpected branch ${context.summary.branch}`);
   assert.equal(context.summary.round4nCommitExists, true);
   assert.equal(context.summary.appApiRoutePresent, false);
   assert.equal(context.summary.staticExportConfigured, true);

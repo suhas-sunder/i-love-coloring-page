@@ -18,6 +18,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const REPO_ROOT = path.resolve(__dirname, "..", "..");
 const BAD_TITLE_PATTERN = /\b(?:Failed\s+)?ChatGPT Image\b|\bOpenAI\b|\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2},?\s+20\d{2}|\b\d{1,2}-\d{1,2}-20\d{2}\b/i;
+const ALLOWED_PRODUCTION_BRANCHES = new Set(["version-4", "version-1"]);
 
 test("Round 4K generated artifacts parse and confirm the requested project context", async () => {
   const result = await runRound4KDisplayTitleCleanup({ repoRoot: REPO_ROOT });
@@ -38,7 +39,7 @@ test("Round 4K generated artifacts parse and confirm the requested project conte
 
   const context = await readJson("pipeline/manifests/round-4k-project-context-check.json");
   assert.equal(context.summary.correctRepository, true);
-  assert.equal(context.summary.branch, "version-4");
+  assert.ok(ALLOWED_PRODUCTION_BRANCHES.has(context.summary.branch), `unexpected branch ${context.summary.branch}`);
   assert.equal(context.summary.round4jCommitExists, true);
   assert.equal(context.summary.appApiRoutePresent, false);
   assert.equal(context.summary.staticExportConfigured, true);

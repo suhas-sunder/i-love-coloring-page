@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-05-13T20:55:38.726Z",
+  "generatedAt": "2026-05-13T21:01:27.326Z",
   "runId": "netlify-branch-fix-version1-audit",
   "summary": {
-    "localCommit": "ec994c1",
+    "localCommit": "f6bd337",
     "remoteCommit": "ec994c1",
-    "version4Commit": "be845ea",
-    "localMatchesRemote": true,
+    "version4Commit": "1ff6819",
+    "localMatchesRemote": false,
     "version1IsCurrentVersion4": false,
-    "version1BuildCommand": "",
-    "version1PublishDirectory": "",
-    "version1StaticExportConfigured": false,
-    "version1PackageName": "",
-    "version1HasAppRoutes": false,
+    "version1BuildCommand": "npm run build",
+    "version1PublishDirectory": "out",
+    "version1StaticExportConfigured": true,
+    "version1PackageName": "i-love-coloring-page",
+    "version1HasAppRoutes": true,
     "version1HasPipelineDirectory": true,
     "version1HasRuntimeData": true,
     "version1Stale": true,
     "version1LikelyExplainsWrongNetlifyDeploy": true
   },
-  "version1Log": "ec994c1 (origin/version-1, version-1) Add round 2 bakeoff workflow\n62a4956 Add coloring pipeline inventory foundation"
+  "version1Log": "f6bd337 (HEAD -> version-1) Merge version-4 production site into version-1\n1ff6819 (origin/version-4, version-4) Add Netlify production branch guard\nbe845ea Verify live production after preview fix\n08fd170 Fix local runtime asset previews\nbc0e830 Fix live static routing verification blockers\n168a761 Verify live production runtime assets\nf64918d Use public production defaults\n275dd6d Switch runtime to clean uploaded assets\n09725a6 Add category-limited R2 upload smoke test\n3176df7 Optimize SVG WebP upload bundle"
 }
