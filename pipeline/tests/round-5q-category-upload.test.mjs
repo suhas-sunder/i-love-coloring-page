@@ -15,6 +15,7 @@ const EXPECTED_BUCKET = "i-love-coloring-page";
 const EXPECTED_PREFIX = "coloring-pages";
 const SCRIPT = "pipeline/scripts/round-5o-upload-clean-bundle-to-r2.mjs";
 const VERIFY_SCRIPT = "pipeline/scripts/round-5o-verify-clean-upload-r2.mjs";
+const ALLOWED_PRODUCTION_BRANCHES = new Set(["version-4", "version-1"]);
 const REQUIRED_JSON = [
   "pipeline/manifests/round-5q-project-context-check.json",
   "pipeline/manifests/round-5q-st-patricks-day-upload-plan.json",
@@ -39,7 +40,7 @@ test("Round 5Q category dry-run creates st-patricks-day SVG and WebP upload arti
   const verification = await readJson("pipeline/manifests/round-5q-st-patricks-day-verification-plan.json");
 
   assert.equal(context.summary.correctRepository, true);
-  assert.equal(context.summary.branch, "version-4");
+  assert.ok(ALLOWED_PRODUCTION_BRANCHES.has(context.summary.branch), `unexpected branch ${context.summary.branch}`);
   assert.equal(context.summary.round5pCommitExists, true);
   assert.equal(context.summary.uploadScriptExists, true);
   assert.equal(context.summary.optimizedBundleExists, true);

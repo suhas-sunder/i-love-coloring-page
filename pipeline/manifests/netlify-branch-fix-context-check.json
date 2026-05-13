@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-05-13T20:55:38.061Z",
+  "generatedAt": "2026-05-13T21:14:41.359Z",
   "runId": "netlify-branch-fix-context-check",
   "ownerObservedProductionBranch": "version-1@ec994c",
   "commands": {
-    "statusShortBranch": "## version-4...origin/version-4\n M AGENTS.md\n M package.json\n?? pipeline/manifests/netlify-branch-fix-context-check.json\n?? pipeline/manifests/netlify-branch-fix-merge-results.json\n?? pipeline/manifests/netlify-branch-fix-netlify-config.json\n?? pipeline/manifests/netlify-branch-fix-version1-audit.json\n?? pipeline/manifests/netlify-branch-fix-version1-validation.json\n?? pipeline/manifests/netlify-branch-fix-version4-validation.json\n?? pipeline/reports/netlify-branch-fix-context-check.md\n?? pipeline/reports/netlify-branch-fix-merge-results.md\n?? pipeline/reports/netlify-branch-fix-netlify-config.md\n?? pipeline/reports/netlify-branch-fix-version1-audit.md\n?? pipeline/reports/netlify-branch-fix-version1-validation.md\n?? pipeline/reports/netlify-branch-fix-version4-validation.md\n?? pipeline/scripts/netlify-branch-fix-check.mjs\n?? pipeline/tests/netlify-production-branch-build.test.mjs",
+    "statusShortBranch": "## version-4...origin/version-4 [ahead 1]",
     "currentBranch": "version-4",
     "branches": "version-1\n  version-2\n  version-3\n* version-4\n  remotes/origin/version-1\n  remotes/origin/version-2\n  remotes/origin/version-3\n  remotes/origin/version-4",
     "remotes": "origin\thttps://github.com/suhas-sunder/i-love-coloring-page.git (fetch)\norigin\thttps://github.com/suhas-sunder/i-love-coloring-page.git (push)",
-    "recentLog": "be845ea (HEAD -> version-4, origin/version-4) Verify live production after preview fix\n08fd170 Fix local runtime asset previews\nbc0e830 Fix live static routing verification blockers\n168a761 Verify live production runtime assets\nf64918d Use public production defaults\n275dd6d Switch runtime to clean uploaded assets\n09725a6 Add category-limited R2 upload smoke test\n3176df7 Optimize SVG WebP upload bundle\n587e215 Add safe local R2 upload utility\n13e04ed Generate clean SVG WebP upload bundle"
+    "recentLog": "67fea49 (HEAD -> version-4) Validate Netlify production branch mirror\n1ff6819 (origin/version-4) Add Netlify production branch guard\nbe845ea Verify live production after preview fix\n08fd170 Fix local runtime asset previews\nbc0e830 Fix live static routing verification blockers\n168a761 Verify live production runtime assets\nf64918d Use public production defaults\n275dd6d Switch runtime to clean uploaded assets\n09725a6 Add category-limited R2 upload smoke test\n3176df7 Optimize SVG WebP upload bundle"
   },
   "summary": {
     "repoRoot": "D:/PROJECTS-and-WORK/work-projects/all_projects/i-love-coloring-page",
@@ -18,9 +18,9 @@
     "version4ExistsRemote": true,
     "version1ExistsLocal": true,
     "version1ExistsRemote": true,
-    "workingTreeClean": false,
+    "workingTreeClean": true,
     "workingTreeCleanOrIntendedBranchFixDrift": true,
-    "statusLineCount": 16,
+    "statusLineCount": 0,
     "appApiAbsent": true,
     "staticExportConfigured": true,
     "packageBuildCorrect": true,

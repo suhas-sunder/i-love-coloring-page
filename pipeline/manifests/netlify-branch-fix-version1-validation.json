@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-05-13T20:55:39.174Z",
+  "generatedAt": "2026-05-13T21:11:09.835Z",
   "runId": "netlify-branch-fix-version1-validation",
   "summary": {
     "label": "version1",
-    "branch": "version-4",
-    "head": "be845ea",
-    "validationState": "pending",
-    "npmTestPassed": false,
-    "typecheckPassed": false,
-    "buildPassed": false,
+    "branch": "version-1",
+    "head": "f6bd337",
+    "validationState": "passed",
+    "npmTestPassed": true,
+    "typecheckPassed": true,
+    "buildPassed": true,
     "appApiAbsent": true,
     "staticExportConfigured": true,
     "packageBuildCorrect": true,
@@ -90,13 +90,8 @@
     "runtimeGeneratedDataAvailable": true,
     "count6352Present": true,
     "webpAssetUrlsUseCustomDomain": true,
-    "passed": false
+    "passed": true
   },
   "outFileCount": 5281,
-  "blockers": [
-    "npmTestPassed",
-    "typecheckPassed",
-    "buildPassed",
-    "outPublishesRepoSource"
-  ]
+  "blockers": []
 }
