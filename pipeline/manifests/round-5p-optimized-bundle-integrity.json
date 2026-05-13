@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-05-13T04:42:52.044Z",
+  "runId": "round-5p-optimized-bundle-integrity",
+  "summary": {
+    "optimizedSvgCount": 6352,
+    "optimizedWebpCount": 6352,
+    "totalFileCount": 12704,
+    "pngFileCount": 0,
+    "thumbFileCount": 0,
+    "manualReviewAssetIdsIncluded": 0,
+    "missingFiles": 0,
+    "duplicateObjectKeys": 0,
+    "sameObjectKeyPathsAsCleanBundle": true,
+    "originalCleanBytes": 2089425709,
+    "optimizedBytes": 1495772065,
+    "totalSavingsBytes": 593653644,
+    "totalSavingsPercent": 28.41,
+    "svgOriginalBytes": 1778814437,
+    "svgOptimizedBytes": 1186408355,
+    "svgSavingsBytes": 592406082,
+    "svgSavingsPercent": 33.3,
+    "webpOriginalBytes": 310611272,
+    "webpOptimizedBytes": 309363710,
+    "webpSavingsBytes": 1247562,
+    "webpSavingsPercent": 0.4,
+    "fallbackCount": 500,
+    "failedOptimizationCount": 0,
+    "readyForUploader": true,
+    "blockers": []
+  },
+  "missing": [],
+  "duplicateObjectKeys": []
+}

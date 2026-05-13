@@ -24,6 +24,7 @@ pipeline/r2-upload-test/**
 pipeline/r2-upload-test-svg-webp/**
 pipeline/r2-upload/**
 pipeline/r2-upload-clean/**
+pipeline/r2-upload-optimized/**
 pipeline/production/**
 
 # Keep production data manifests commit-eligible

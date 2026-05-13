@@ -1,0 +1,58 @@
+{
+  "generatedAt": "2026-05-13T04:42:52.044Z",
+  "runId": "round-5p-contact-sheet-results",
+  "summary": {
+    "contactSheetRoot": "pipeline/review/round-5p/contact-sheets",
+    "screenshotRoot": "pipeline/review/round-5p/screenshots",
+    "reviewArtifactsIgnored": true,
+    "contactSheetCount": 9,
+    "optimizedBundleBytes": 1495772065
+  },
+  "contactSheets": [
+    {
+      "id": "high-savings",
+      "path": "pipeline/review/round-5p/contact-sheets/high-savings.png",
+      "itemCount": 12
+    },
+    {
+      "id": "largest-svg",
+      "path": "pipeline/review/round-5p/contact-sheets/largest-svg.png",
+      "itemCount": 12
+    },
+    {
+      "id": "largest-webp",
+      "path": "pipeline/review/round-5p/contact-sheets/largest-webp.png",
+      "itemCount": 12
+    },
+    {
+      "id": "random-sample",
+      "path": "pipeline/review/round-5p/contact-sheets/random-sample.png",
+      "itemCount": 12
+    },
+    {
+      "id": "animals",
+      "path": "pipeline/review/round-5p/contact-sheets/animals.png",
+      "itemCount": 12
+    },
+    {
+      "id": "anime-girls",
+      "path": "pipeline/review/round-5p/contact-sheets/anime-girls.png",
+      "itemCount": 12
+    },
+    {
+      "id": "geometric-mandalas",
+      "path": "pipeline/review/round-5p/contact-sheets/geometric-mandalas.png",
+      "itemCount": 12
+    },
+    {
+      "id": "christmas",
+      "path": "pipeline/review/round-5p/contact-sheets/christmas.png",
+      "itemCount": 12
+    },
+    {
+      "id": "high-detail",
+      "path": "pipeline/review/round-5p/contact-sheets/high-detail.png",
+      "itemCount": 12
+    }
+  ]
+}

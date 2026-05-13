@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-13T04:13:14.806Z",
+  "generatedAt": "2026-05-13T04:54:33.529Z",
   "runId": "round-5o-project-context-check",
   "summary": {
     "correctRepository": true,
@@ -13,6 +13,10 @@
     "cleanBundleExists": true,
     "cleanBundleSvgExists": true,
     "cleanBundleWebpExists": true,
+    "optimizedBundleExists": true,
+    "uploadSource": "optimized",
+    "uploadSourceRoot": "pipeline/r2-upload-optimized/coloring-pages",
+    "round5pGatePassedForOptimizedSource": true,
     "publicContainsGeneratedProductionMedia": false,
     "imagesStatusClean": true,
     "ilovesvgStatusClean": true,

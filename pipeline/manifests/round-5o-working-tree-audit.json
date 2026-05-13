@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-05-13T04:13:14.806Z",
+  "generatedAt": "2026-05-13T04:54:33.529Z",
   "runId": "round-5o-working-tree-audit",
   "summary": {
-    "statusEntryCount": 25,
-    "intendedRound5OCount": 24,
+    "statusEntryCount": 37,
+    "intendedRound5OCount": 35,
     "generatedValidationDriftCount": 0,
     "localArtifactDriftCount": 0,
-    "riskyUnrelatedDriftCount": 1,
+    "riskyUnrelatedDriftCount": 2,
     "safeToProceed": false
   },
   "commands": {
@@ -14,9 +14,9 @@
     "diffStat": "git diff --stat",
     "diffNameOnly": "git diff --name-only"
   },
-  "statusShort": " M .gitignore\n M AGENTS.md\n M package-lock.json\n M package.json\n?? .env.r2-upload.example\n?? pipeline/lib/\n?? pipeline/manifests/round-5o-clean-bundle-upload-audit.json\n?? pipeline/manifests/round-5o-local-uploader-lifecycle.json\n?? pipeline/manifests/round-5o-post-upload-verifier-plan.json\n?? pipeline/manifests/round-5o-project-context-check.json\n?? pipeline/manifests/round-5o-upload-dry-run-results.json\n?? pipeline/manifests/round-5o-upload-failures.json\n?? pipeline/manifests/round-5o-upload-operation-estimate.json\n?? pipeline/manifests/round-5o-working-tree-audit.json\n?? pipeline/reports/round-5o-clean-bundle-upload-audit.md\n?? pipeline/reports/round-5o-local-uploader-lifecycle.md\n?? pipeline/reports/round-5o-owner-upload-runbook.md\n?? pipeline/reports/round-5o-post-upload-verifier-plan.md\n?? pipeline/reports/round-5o-project-context-check.md\n?? pipeline/reports/round-5o-upload-dry-run-report.md\n?? pipeline/reports/round-5o-upload-operation-estimate.md\n?? pipeline/reports/round-5o-working-tree-audit.md\n?? pipeline/scripts/round-5o-upload-clean-bundle-to-r2.mjs\n?? pipeline/scripts/round-5o-verify-clean-upload-r2.mjs\n?? pipeline/tests/round-5o-local-r2-uploader.test.mjs\n",
-  "diffStat": " .gitignore        |    2 +\n AGENTS.md         |   10 +\n package-lock.json | 2279 ++++++++++++++++++++++++++++++++++++++++++++---------\n package.json      |    3 +-\n 4 files changed, 1906 insertions(+), 388 deletions(-)\n",
-  "diffNameOnly": ".gitignore\nAGENTS.md\npackage-lock.json\npackage.json\n",
+  "statusShort": " M .gitignore\n M AGENTS.md\n M package-lock.json\n M package.json\n M pipeline/scripts/round-4z-cors-media-server.mjs\n M pipeline/scripts/round-5o-upload-clean-bundle-to-r2.mjs\n M pipeline/tests/round-5o-local-r2-uploader.test.mjs\n?? pipeline/config/\n?? pipeline/manifests/round-5p-browser-qa-results.json\n?? pipeline/manifests/round-5p-clean-bundle-size-audit.json\n?? pipeline/manifests/round-5p-compression-acceptance-gate.json\n?? pipeline/manifests/round-5p-compression-strategy.json\n?? pipeline/manifests/round-5p-contact-sheet-results.json\n?? pipeline/manifests/round-5p-optimization-failures.json\n?? pipeline/manifests/round-5p-optimized-bundle-integrity.json\n?? pipeline/manifests/round-5p-optimized-upload-operation-estimate.json\n?? pipeline/manifests/round-5p-project-context-check.json\n?? pipeline/manifests/round-5p-svg-optimization-results.json\n?? pipeline/manifests/round-5p-webp-optimization-policy.json\n?? pipeline/manifests/round-5p-webp-optimization-results.json\n?? pipeline/manifests/round-5p-working-tree-audit.json\n?? pipeline/reports/round-5p-browser-qa-report.md\n?? pipeline/reports/round-5p-clean-bundle-size-audit.md\n?? pipeline/reports/round-5p-compression-acceptance-gate.md\n?? pipeline/reports/round-5p-compression-strategy.md\n?? pipeline/reports/round-5p-contact-sheet-report.md\n?? pipeline/reports/round-5p-optimized-bundle-integrity.md\n?? pipeline/reports/round-5p-optimized-upload-operation-estimate.md\n?? pipeline/reports/round-5p-project-context-check.md\n?? pipeline/reports/round-5p-svg-optimization-report.md\n?? pipeline/reports/round-5p-webp-optimization-policy.md\n?? pipeline/reports/round-5p-webp-optimization-report.md\n?? pipeline/reports/round-5p-working-tree-audit.md\n?? pipeline/scripts/round-5p-audit-clean-bundle-size.mjs\n?? pipeline/scripts/round-5p-browser-qa-runner.cjs\n?? pipeline/scripts/round-5p-build-optimized-upload-bundle.mjs\n?? pipeline/tests/round-5p-compression.test.mjs\n",
+  "diffStat": " .gitignore                                         |   1 +\n AGENTS.md                                          |   7 +\n package-lock.json                                  | 260 ++++++++++++++++++++-\n package.json                                       |   4 +-\n pipeline/scripts/round-4z-cors-media-server.mjs    |   1 +\n .../scripts/round-5o-upload-clean-bundle-to-r2.mjs | 145 +++++++++---\n pipeline/tests/round-5o-local-r2-uploader.test.mjs |   9 +-\n 7 files changed, 390 insertions(+), 37 deletions(-)\n",
+  "diffNameOnly": ".gitignore\nAGENTS.md\npackage-lock.json\npackage.json\npipeline/scripts/round-4z-cors-media-server.mjs\npipeline/scripts/round-5o-upload-clean-bundle-to-r2.mjs\npipeline/tests/round-5o-local-r2-uploader.test.mjs\n",
   "entries": [
     {
       "raw": " M .gitignore",
@@ -39,115 +39,180 @@
       "classification": "intended_round_5o_artifact"
     },
     {
-      "raw": "?? .env.r2-upload.example",
-      "path": ".env.r2-upload.example",
-      "classification": "intended_round_5o_artifact"
-    },
-    {
-      "raw": "?? pipeline/lib/",
-      "path": "pipeline/lib/",
+      "raw": " M pipeline/scripts/round-4z-cors-media-server.mjs",
+      "path": "pipeline/scripts/round-4z-cors-media-server.mjs",
       "classification": "risky_unrelated_drift"
     },
     {
-      "raw": "?? pipeline/manifests/round-5o-clean-bundle-upload-audit.json",
-      "path": "pipeline/manifests/round-5o-clean-bundle-upload-audit.json",
-      "classification": "intended_round_5o_artifact"
-    },
-    {
-      "raw": "?? pipeline/manifests/round-5o-local-uploader-lifecycle.json",
-      "path": "pipeline/manifests/round-5o-local-uploader-lifecycle.json",
-      "classification": "intended_round_5o_artifact"
-    },
-    {
-      "raw": "?? pipeline/manifests/round-5o-post-upload-verifier-plan.json",
-      "path": "pipeline/manifests/round-5o-post-upload-verifier-plan.json",
-      "classification": "intended_round_5o_artifact"
-    },
-    {
-      "raw": "?? pipeline/manifests/round-5o-project-context-check.json",
-      "path": "pipeline/manifests/round-5o-project-context-check.json",
-      "classification": "intended_round_5o_artifact"
-    },
-    {
-      "raw": "?? pipeline/manifests/round-5o-upload-dry-run-results.json",
-      "path": "pipeline/manifests/round-5o-upload-dry-run-results.json",
-      "classification": "intended_round_5o_artifact"
-    },
-    {
-      "raw": "?? pipeline/manifests/round-5o-upload-failures.json",
-      "path": "pipeline/manifests/round-5o-upload-failures.json",
-      "classification": "intended_round_5o_artifact"
-    },
-    {
-      "raw": "?? pipeline/manifests/round-5o-upload-operation-estimate.json",
-      "path": "pipeline/manifests/round-5o-upload-operation-estimate.json",
-      "classification": "intended_round_5o_artifact"
-    },
-    {
-      "raw": "?? pipeline/manifests/round-5o-working-tree-audit.json",
-      "path": "pipeline/manifests/round-5o-working-tree-audit.json",
-      "classification": "intended_round_5o_artifact"
-    },
-    {
-      "raw": "?? pipeline/reports/round-5o-clean-bundle-upload-audit.md",
-      "path": "pipeline/reports/round-5o-clean-bundle-upload-audit.md",
-      "classification": "intended_round_5o_artifact"
-    },
-    {
-      "raw": "?? pipeline/reports/round-5o-local-uploader-lifecycle.md",
-      "path": "pipeline/reports/round-5o-local-uploader-lifecycle.md",
-      "classification": "intended_round_5o_artifact"
-    },
-    {
-      "raw": "?? pipeline/reports/round-5o-owner-upload-runbook.md",
-      "path": "pipeline/reports/round-5o-owner-upload-runbook.md",
-      "classification": "intended_round_5o_artifact"
-    },
-    {
-      "raw": "?? pipeline/reports/round-5o-post-upload-verifier-plan.md",
-      "path": "pipeline/reports/round-5o-post-upload-verifier-plan.md",
-      "classification": "intended_round_5o_artifact"
-    },
-    {
-      "raw": "?? pipeline/reports/round-5o-project-context-check.md",
-      "path": "pipeline/reports/round-5o-project-context-check.md",
-      "classification": "intended_round_5o_artifact"
-    },
-    {
-      "raw": "?? pipeline/reports/round-5o-upload-dry-run-report.md",
-      "path": "pipeline/reports/round-5o-upload-dry-run-report.md",
-      "classification": "intended_round_5o_artifact"
-    },
-    {
-      "raw": "?? pipeline/reports/round-5o-upload-operation-estimate.md",
-      "path": "pipeline/reports/round-5o-upload-operation-estimate.md",
-      "classification": "intended_round_5o_artifact"
-    },
-    {
-      "raw": "?? pipeline/reports/round-5o-working-tree-audit.md",
-      "path": "pipeline/reports/round-5o-working-tree-audit.md",
-      "classification": "intended_round_5o_artifact"
-    },
-    {
-      "raw": "?? pipeline/scripts/round-5o-upload-clean-bundle-to-r2.mjs",
+      "raw": " M pipeline/scripts/round-5o-upload-clean-bundle-to-r2.mjs",
       "path": "pipeline/scripts/round-5o-upload-clean-bundle-to-r2.mjs",
       "classification": "intended_round_5o_artifact"
     },
     {
-      "raw": "?? pipeline/scripts/round-5o-verify-clean-upload-r2.mjs",
-      "path": "pipeline/scripts/round-5o-verify-clean-upload-r2.mjs",
+      "raw": " M pipeline/tests/round-5o-local-r2-uploader.test.mjs",
+      "path": "pipeline/tests/round-5o-local-r2-uploader.test.mjs",
       "classification": "intended_round_5o_artifact"
     },
     {
-      "raw": "?? pipeline/tests/round-5o-local-r2-uploader.test.mjs",
-      "path": "pipeline/tests/round-5o-local-r2-uploader.test.mjs",
+      "raw": "?? pipeline/config/",
+      "path": "pipeline/config/",
+      "classification": "risky_unrelated_drift"
+    },
+    {
+      "raw": "?? pipeline/manifests/round-5p-browser-qa-results.json",
+      "path": "pipeline/manifests/round-5p-browser-qa-results.json",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/round-5p-clean-bundle-size-audit.json",
+      "path": "pipeline/manifests/round-5p-clean-bundle-size-audit.json",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/round-5p-compression-acceptance-gate.json",
+      "path": "pipeline/manifests/round-5p-compression-acceptance-gate.json",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/round-5p-compression-strategy.json",
+      "path": "pipeline/manifests/round-5p-compression-strategy.json",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/round-5p-contact-sheet-results.json",
+      "path": "pipeline/manifests/round-5p-contact-sheet-results.json",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/round-5p-optimization-failures.json",
+      "path": "pipeline/manifests/round-5p-optimization-failures.json",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/round-5p-optimized-bundle-integrity.json",
+      "path": "pipeline/manifests/round-5p-optimized-bundle-integrity.json",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/round-5p-optimized-upload-operation-estimate.json",
+      "path": "pipeline/manifests/round-5p-optimized-upload-operation-estimate.json",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/round-5p-project-context-check.json",
+      "path": "pipeline/manifests/round-5p-project-context-check.json",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/round-5p-svg-optimization-results.json",
+      "path": "pipeline/manifests/round-5p-svg-optimization-results.json",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/round-5p-webp-optimization-policy.json",
+      "path": "pipeline/manifests/round-5p-webp-optimization-policy.json",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/round-5p-webp-optimization-results.json",
+      "path": "pipeline/manifests/round-5p-webp-optimization-results.json",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/round-5p-working-tree-audit.json",
+      "path": "pipeline/manifests/round-5p-working-tree-audit.json",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/round-5p-browser-qa-report.md",
+      "path": "pipeline/reports/round-5p-browser-qa-report.md",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/round-5p-clean-bundle-size-audit.md",
+      "path": "pipeline/reports/round-5p-clean-bundle-size-audit.md",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/round-5p-compression-acceptance-gate.md",
+      "path": "pipeline/reports/round-5p-compression-acceptance-gate.md",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/round-5p-compression-strategy.md",
+      "path": "pipeline/reports/round-5p-compression-strategy.md",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/round-5p-contact-sheet-report.md",
+      "path": "pipeline/reports/round-5p-contact-sheet-report.md",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/round-5p-optimized-bundle-integrity.md",
+      "path": "pipeline/reports/round-5p-optimized-bundle-integrity.md",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/round-5p-optimized-upload-operation-estimate.md",
+      "path": "pipeline/reports/round-5p-optimized-upload-operation-estimate.md",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/round-5p-project-context-check.md",
+      "path": "pipeline/reports/round-5p-project-context-check.md",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/round-5p-svg-optimization-report.md",
+      "path": "pipeline/reports/round-5p-svg-optimization-report.md",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/round-5p-webp-optimization-policy.md",
+      "path": "pipeline/reports/round-5p-webp-optimization-policy.md",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/round-5p-webp-optimization-report.md",
+      "path": "pipeline/reports/round-5p-webp-optimization-report.md",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/round-5p-working-tree-audit.md",
+      "path": "pipeline/reports/round-5p-working-tree-audit.md",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/scripts/round-5p-audit-clean-bundle-size.mjs",
+      "path": "pipeline/scripts/round-5p-audit-clean-bundle-size.mjs",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/scripts/round-5p-browser-qa-runner.cjs",
+      "path": "pipeline/scripts/round-5p-browser-qa-runner.cjs",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/scripts/round-5p-build-optimized-upload-bundle.mjs",
+      "path": "pipeline/scripts/round-5p-build-optimized-upload-bundle.mjs",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/tests/round-5p-compression.test.mjs",
+      "path": "pipeline/tests/round-5p-compression.test.mjs",
       "classification": "intended_round_5o_artifact"
     }
   ],
   "riskyUnrelatedDrift": [
     {
-      "raw": "?? pipeline/lib/",
-      "path": "pipeline/lib/",
+      "raw": " M pipeline/scripts/round-4z-cors-media-server.mjs",
+      "path": "pipeline/scripts/round-4z-cors-media-server.mjs",
+      "classification": "risky_unrelated_drift"
+    },
+    {
+      "raw": "?? pipeline/config/",
+      "path": "pipeline/config/",
       "classification": "risky_unrelated_drift"
     }
   ]

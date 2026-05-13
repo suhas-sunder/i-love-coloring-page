@@ -1,0 +1,492 @@
+{
+  "generatedAt": "2026-05-13T05:01:08.877Z",
+  "runId": "round-5p-clean-bundle-size-audit",
+  "root": "pipeline/r2-upload-clean/coloring-pages",
+  "summary": {
+    "svgFileCount": 6352,
+    "webpFileCount": 6352,
+    "totalFileCount": 12704,
+    "totalSvgBytes": 1778814437,
+    "totalWebpBytes": 310611272,
+    "totalBundleBytes": 2089425709,
+    "averageSvgSize": 280040,
+    "averageWebpSize": 48900,
+    "expectedUploadOperationCount": 12704,
+    "estimatedStorageGB": 2.089,
+    "estimatedTransferImpactGB": 2.089
+  },
+  "largestSvgFiles": [
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-summoning-jutsu-fae-dragon-fairy-dragon-high-detail-6c0f7c30b1.svg",
+      "type": "svg",
+      "category": "anime-girls",
+      "bytes": 1993250
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/svg/fantasy/fantasy-mountain-guardian-339bc727d7.svg",
+      "type": "svg",
+      "category": "fantasy",
+      "bytes": 1983964
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-summoning-jutsu-swamp-dragon-plushies-2d5ed605c2.svg",
+      "type": "svg",
+      "category": "anime-girls",
+      "bytes": 1846161
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-energy-ball-attack-leviathan-battle-shounin-d0a627c243.svg",
+      "type": "svg",
+      "category": "anime-girls",
+      "bytes": 1826923
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-summoning-jutsu-beetles-13ee413203.svg",
+      "type": "svg",
+      "category": "anime-girls",
+      "bytes": 1748949
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/svg/fantasy/fantasy-creatures-two-tail-basilisk-in-cave-0e84f76d23.svg",
+      "type": "svg",
+      "category": "fantasy",
+      "bytes": 1671933
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-summoning-magic-musical-sword-plushies-72066c4f84.svg",
+      "type": "svg",
+      "category": "anime-girls",
+      "bytes": 1668277
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/svg/mandala-geometry-patterns/mandala-geometry-patterns-cave-stalactites-and-stalagmites-889feedccf.svg",
+      "type": "svg",
+      "category": "mandala-geometry-patterns",
+      "bytes": 1618971
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-summoning-jutsu-raccoons-443a729e66.svg",
+      "type": "svg",
+      "category": "anime-girls",
+      "bytes": 1573224
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-summoning-jutsu-cats-ea0070f014.svg",
+      "type": "svg",
+      "category": "anime-girls",
+      "bytes": 1559337
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-summoning-jutsu-armadillo-e15ffd9428.svg",
+      "type": "svg",
+      "category": "anime-girls",
+      "bytes": 1557351
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-summoning-jutsu-eight-sided-dice-95a7d9bfd5.svg",
+      "type": "svg",
+      "category": "anime-girls",
+      "bytes": 1556791
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-summoning-jutsu-forest-dragon-8f164c4221.svg",
+      "type": "svg",
+      "category": "anime-girls",
+      "bytes": 1551351
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-future-mech-48efe0fb8e.svg",
+      "type": "svg",
+      "category": "anime-girls",
+      "bytes": 1509041
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-summoning-forest-fairies-4d93ad28c4.svg",
+      "type": "svg",
+      "category": "anime-girls",
+      "bytes": 1506220
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-summoning-jutsu-hydra-dragon-ea2cbdd841.svg",
+      "type": "svg",
+      "category": "anime-girls",
+      "bytes": 1484655
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/svg/sea-life/sea-life-lobster-in-crevice-187615c2cb.svg",
+      "type": "svg",
+      "category": "sea-life",
+      "bytes": 1453008
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-summoning-ladybird-plushies-1200462004.svg",
+      "type": "svg",
+      "category": "anime-girls",
+      "bytes": 1452604
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-summoning-jutsu-chess-pieces-knight-battle-armor-22bd388a6f.svg",
+      "type": "svg",
+      "category": "anime-girls",
+      "bytes": 1450459
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-summoning-jutsu-badger-plushies-40a29129f2.svg",
+      "type": "svg",
+      "category": "anime-girls",
+      "bytes": 1433752
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-summoning-jutsu-eight-sided-dice-plushies-a8a4c1cb0f.svg",
+      "type": "svg",
+      "category": "anime-girls",
+      "bytes": 1405117
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-megalodon-hoodie-plushie-e1e622c3a6.svg",
+      "type": "svg",
+      "category": "anime-girls",
+      "bytes": 1368889
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-ninja-teleporting-to-monster-battle-shounin-562cbae255.svg",
+      "type": "svg",
+      "category": "anime-girls",
+      "bytes": 1357434
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-summoning-jutsu-wasps-fa45fb4a82.svg",
+      "type": "svg",
+      "category": "anime-girls",
+      "bytes": 1354032
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/svg/anime-girls/anime-girl-summoning-jutsu-rabbits-c31332f139.svg",
+      "type": "svg",
+      "category": "anime-girls",
+      "bytes": 1342067
+    }
+  ],
+  "largestWebpFiles": [
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-cave-stalactites-and-stalagmites-889feedccf.webp",
+      "type": "webp",
+      "category": "mandala-geometry-patterns",
+      "bytes": 92478
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-symmetrical-mandala-ac49e50c14.webp",
+      "type": "webp",
+      "category": "mandala-geometry-patterns",
+      "bytes": 89490
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-tesla-model-x-755c819002.webp",
+      "type": "webp",
+      "category": "mandala-geometry-patterns",
+      "bytes": 89080
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-plushie-dinosaur-54850ae319.webp",
+      "type": "webp",
+      "category": "mandala-geometry-patterns",
+      "bytes": 88912
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/webp/mandala/mandala-geometry-patterns-psychedelic-mandala-9b152d5112.webp",
+      "type": "webp",
+      "category": "mandala",
+      "bytes": 86866
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-japan-hokkaido-lavender-fields-86a4307233.webp",
+      "type": "webp",
+      "category": "mandala-geometry-patterns",
+      "bytes": 86712
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-trains-locomotives-narrow-gauge-railway-train-220bfb7725.webp",
+      "type": "webp",
+      "category": "mandala-geometry-patterns",
+      "bytes": 85862
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-japan-matsumoto-castle-1655fa0fdb.webp",
+      "type": "webp",
+      "category": "mandala-geometry-patterns",
+      "bytes": 85718
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-japan-traditional-house-5903ae39c2.webp",
+      "type": "webp",
+      "category": "mandala-geometry-patterns",
+      "bytes": 85414
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/webp/mandala/mandala-geometry-patterns-animal-mandala-fox-3e8e80a2fd.webp",
+      "type": "webp",
+      "category": "mandala",
+      "bytes": 84536
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-plushie-cupcake-character-e512aaabfa.webp",
+      "type": "webp",
+      "category": "mandala-geometry-patterns",
+      "bytes": 84146
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-japan-nikko-toshogu-shrine-edd659182d.webp",
+      "type": "webp",
+      "category": "mandala-geometry-patterns",
+      "bytes": 83992
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-flowers-carnation-08f897193d.webp",
+      "type": "webp",
+      "category": "mandala-geometry-patterns",
+      "bytes": 83918
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-bentley-continental-f8b19b37fe.webp",
+      "type": "webp",
+      "category": "mandala-geometry-patterns",
+      "bytes": 83844
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-japan-osaka-castle-6e9ac0ec4f.webp",
+      "type": "webp",
+      "category": "mandala-geometry-patterns",
+      "bytes": 83828
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-sushi-platter-roll-tuna-8c2e5aadac.webp",
+      "type": "webp",
+      "category": "mandala-geometry-patterns",
+      "bytes": 83720
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-japan-summer-festival-fireworks-3337d33d89.webp",
+      "type": "webp",
+      "category": "mandala-geometry-patterns",
+      "bytes": 82902
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-plushie-panda-bear-fbd3c63bc8.webp",
+      "type": "webp",
+      "category": "mandala-geometry-patterns",
+      "bytes": 82268
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-plushie-koala-a0fbae42cb.webp",
+      "type": "webp",
+      "category": "mandala-geometry-patterns",
+      "bytes": 82080
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-cars-lexus-lfa-ed1dd6c1d8.webp",
+      "type": "webp",
+      "category": "mandala-geometry-patterns",
+      "bytes": 81796
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-plushie-reindeer-animals-2878a77170.webp",
+      "type": "webp",
+      "category": "mandala-geometry-patterns",
+      "bytes": 81100
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-japan-autumn-maple-leaves-8af9f820a8.webp",
+      "type": "webp",
+      "category": "mandala-geometry-patterns",
+      "bytes": 80914
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-plushie-animals-giraffe-093a0cd46c.webp",
+      "type": "webp",
+      "category": "mandala-geometry-patterns",
+      "bytes": 80914
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-vehicle-planes-ch-47-chinook-9cf94f61a5.webp",
+      "type": "webp",
+      "category": "mandala-geometry-patterns",
+      "bytes": 80778
+    },
+    {
+      "file": "pipeline/r2-upload-clean/coloring-pages/webp/anime-girls/anime-girl-summoning-jutsu-fae-dragon-fairy-dragon-high-detail-6c0f7c30b1.webp",
+      "type": "webp",
+      "category": "anime-girls",
+      "bytes": 80620
+    }
+  ],
+  "largestCategories": [
+    {
+      "category": "mandala-geometry-patterns",
+      "totalBytes": 523661206,
+      "svgBytes": 432923748,
+      "webpBytes": 90737458,
+      "fileCount": 2902
+    },
+    {
+      "category": "anime-girls",
+      "totalBytes": 435079970,
+      "svgBytes": 393142934,
+      "webpBytes": 41937036,
+      "fileCount": 1806
+    },
+    {
+      "category": "chibi",
+      "totalBytes": 235032886,
+      "svgBytes": 198569426,
+      "webpBytes": 36463460,
+      "fileCount": 1792
+    },
+    {
+      "category": "fantasy",
+      "totalBytes": 188479035,
+      "svgBytes": 161002555,
+      "webpBytes": 27476480,
+      "fileCount": 1056
+    },
+    {
+      "category": "holiday",
+      "totalBytes": 181029052,
+      "svgBytes": 154580184,
+      "webpBytes": 26448868,
+      "fileCount": 1284
+    },
+    {
+      "category": "plushie",
+      "totalBytes": 97610695,
+      "svgBytes": 82360777,
+      "webpBytes": 15249918,
+      "fileCount": 710
+    },
+    {
+      "category": "mythology",
+      "totalBytes": 71834357,
+      "svgBytes": 60802277,
+      "webpBytes": 11032080,
+      "fileCount": 438
+    },
+    {
+      "category": "midieval",
+      "totalBytes": 65650718,
+      "svgBytes": 56613978,
+      "webpBytes": 9036740,
+      "fileCount": 322
+    },
+    {
+      "category": "birds",
+      "totalBytes": 35866963,
+      "svgBytes": 28857839,
+      "webpBytes": 7009124,
+      "fileCount": 328
+    },
+    {
+      "category": "indoor-plants",
+      "totalBytes": 32888598,
+      "svgBytes": 26817828,
+      "webpBytes": 6070770,
+      "fileCount": 256
+    },
+    {
+      "category": "sea-life",
+      "totalBytes": 28536644,
+      "svgBytes": 22645326,
+      "webpBytes": 5891318,
+      "fileCount": 290
+    },
+    {
+      "category": "christmas",
+      "totalBytes": 26868490,
+      "svgBytes": 22508014,
+      "webpBytes": 4360476,
+      "fileCount": 202
+    },
+    {
+      "category": "flowers",
+      "totalBytes": 25326165,
+      "svgBytes": 20928665,
+      "webpBytes": 4397500,
+      "fileCount": 184
+    },
+    {
+      "category": "insects",
+      "totalBytes": 24824170,
+      "svgBytes": 19891218,
+      "webpBytes": 4932952,
+      "fileCount": 220
+    },
+    {
+      "category": "reptiles",
+      "totalBytes": 23560712,
+      "svgBytes": 19191234,
+      "webpBytes": 4369478,
+      "fileCount": 196
+    },
+    {
+      "category": "gardening",
+      "totalBytes": 22878911,
+      "svgBytes": 18899445,
+      "webpBytes": 3979466,
+      "fileCount": 160
+    },
+    {
+      "category": "world-landmarks",
+      "totalBytes": 16312230,
+      "svgBytes": 14396276,
+      "webpBytes": 1915954,
+      "fileCount": 94
+    },
+    {
+      "category": "homes",
+      "totalBytes": 14940085,
+      "svgBytes": 13139811,
+      "webpBytes": 1800274,
+      "fileCount": 78
+    },
+    {
+      "category": "dinosaurs",
+      "totalBytes": 13651177,
+      "svgBytes": 10889195,
+      "webpBytes": 2761982,
+      "fileCount": 136
+    },
+    {
+      "category": "dogs",
+      "totalBytes": 11739602,
+      "svgBytes": 9475604,
+      "webpBytes": 2263998,
+      "fileCount": 134
+    },
+    {
+      "category": "animals",
+      "totalBytes": 6127651,
+      "svgBytes": 4898687,
+      "webpBytes": 1228964,
+      "fileCount": 62
+    },
+    {
+      "category": "st-patricks-day",
+      "totalBytes": 5120961,
+      "svgBytes": 4326659,
+      "webpBytes": 794302,
+      "fileCount": 40
+    },
+    {
+      "category": "mandala",
+      "totalBytes": 2104141,
+      "svgBytes": 1683983,
+      "webpBytes": 420158,
+      "fileCount": 12
+    },
+    {
+      "category": "animals-playing-cards",
+      "totalBytes": 301290,
+      "svgBytes": 268774,
+      "webpBytes": 32516,
+      "fileCount": 2
+    }
+  ]
+}

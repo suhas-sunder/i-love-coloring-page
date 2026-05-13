@@ -355,6 +355,13 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Upload scripts must never include deferred manual-review records.
 - Full upload should be run by the owner locally, not automatically by Codex.
 - Runtime paths must not switch until post-upload verification passes.
+- Round 5P requires conservative SVG plus WebP optimization before final upload.
+- SVG optimization must be deterministic and must never remove `viewBox` or break scaling, strokes, fills, paths, black line art, browser canvas conversion, or future coloring/editing potential.
+- Byte savings must never override visual correctness; if optimized output is risky, larger, or fails validation, use the original clean asset in the optimized bundle.
+- Optimized upload media must live separately under `pipeline/r2-upload-optimized/`; the original clean bundle remains the fallback and must not be overwritten.
+- Upload scripts should prefer `pipeline/r2-upload-optimized/coloring-pages` only after the Round 5P compression acceptance gate passes.
+- Contact sheets and screenshots under `pipeline/review/round-5p/` are ignored review artifacts and must not be committed.
+- Full upload remains owner-controlled after optimized bundle review and dry-run verification.
 
 ## Production Asset Hosting
 

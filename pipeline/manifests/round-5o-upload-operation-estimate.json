@@ -1,11 +1,13 @@
 {
-  "generatedAt": "2026-05-13T04:13:14.806Z",
+  "generatedAt": "2026-05-13T04:54:33.529Z",
   "runId": "round-5o-upload-operation-estimate",
   "summary": {
     "putObjectOperations": 12704,
     "headObjectOperationsWithSkipExisting": 12704,
-    "totalUploadBytes": 2089425709,
-    "expectedTotalStorageGB": 2.089,
+    "uploadSource": "optimized",
+    "uploadSourceRoot": "pipeline/r2-upload-optimized/coloring-pages",
+    "totalUploadBytes": 1495772065,
+    "expectedTotalStorageGB": 1.496,
     "classAOperationCountEstimate": 12704,
     "classBOperationCountEstimate": 12704,
     "deleteOperations": 0,

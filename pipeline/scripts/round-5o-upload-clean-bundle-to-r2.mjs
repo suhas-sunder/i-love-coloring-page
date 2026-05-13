@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { createReadStream, existsSync, statSync } from "node:fs";
+import { createReadStream, existsSync, readFileSync, statSync } from "node:fs";
 import { mkdir, readFile, readdir, stat, writeFile } from "node:fs/promises";
 import { execFileSync } from "node:child_process";
 import path from "node:path";
@@ -23,8 +23,14 @@ const __dirname = path.dirname(__filename);
 const REPO_ROOT = path.resolve(__dirname, "..", "..");
 const GENERATED_AT = new Date().toISOString();
 const ROUND_5N_COMMIT = "13e04ed";
-const CLEAN_BUNDLE_ROOT = "pipeline/r2-upload-clean/coloring-pages";
+const CLEAN_SOURCE_BASE = "pipeline/r2-upload-clean";
+const CLEAN_BUNDLE_ROOT = `${CLEAN_SOURCE_BASE}/coloring-pages`;
 const CLEAN_BUNDLE_ABSOLUTE = path.resolve(REPO_ROOT, CLEAN_BUNDLE_ROOT);
+const OPTIMIZED_SOURCE_BASE = "pipeline/r2-upload-optimized";
+const OPTIMIZED_BUNDLE_ROOT = `${OPTIMIZED_SOURCE_BASE}/coloring-pages`;
+const OPTIMIZED_BUNDLE_ABSOLUTE = path.resolve(REPO_ROOT, OPTIMIZED_BUNDLE_ROOT);
+const ROUND_5P_GATE = "pipeline/manifests/round-5p-compression-acceptance-gate.json";
+const ROUND_5P_INTEGRITY = "pipeline/manifests/round-5p-optimized-bundle-integrity.json";
 const PUBLIC_ASSET_BASE = "https://assets.ilovecoloringpage.com/coloring-pages";
 const CACHE_CONTROL = "public, max-age=31536000, immutable";
 const EXPECTED_INCLUDED_RECORDS = 6352;
@@ -85,15 +91,16 @@ async function main() {
     allowHighConcurrency: args.allowHighConcurrency,
   });
 
+  const uploadSource = resolveUploadSource(args);
   const data = await loadInputs();
-  const projectContext = await buildProjectContext();
+  const projectContext = await buildProjectContext(uploadSource);
   const workingTree = buildWorkingTreeAudit();
-  const allUploads = await buildUploadPlan(data.objectKeyMap.records, data.deferredManualReview.records);
+  const allUploads = await buildUploadPlan(data.objectKeyMap.records, data.deferredManualReview.records, uploadSource);
   const resumeUploads = args.resumeFromManifest ? await applyResumeManifest(allUploads, args.resumeFromManifest) : allUploads;
   const plannedUploads = applyUploadFilters(resumeUploads, config, args);
-  validateUploadPlan(plannedUploads, allUploads, data, args);
-  const bundleAudit = await buildBundleAudit(data, allUploads);
-  const estimate = buildOperationEstimate(allUploads);
+  validateUploadPlan(plannedUploads, allUploads, data, args, uploadSource);
+  const bundleAudit = await buildBundleAudit(data, allUploads, uploadSource);
+  const estimate = buildOperationEstimate(allUploads, uploadSource);
   const verifierPlan = buildVerifierPlan(allUploads);
   const lifecycle = buildLifecycle();
 
@@ -103,7 +110,7 @@ async function main() {
     executionSummary = await executeUploads(plannedUploads, config, failures);
   }
 
-  const dryRunManifest = buildDryRunManifest({ plannedUploads, allUploads, config, executionSummary, failures });
+  const dryRunManifest = buildDryRunManifest({ plannedUploads, allUploads, config, executionSummary, failures, uploadSource });
   const failuresManifest = {
     generatedAt: GENERATED_AT,
     runId: "round-5o-upload-failures",
@@ -125,7 +132,7 @@ async function main() {
   await writeText(REPORTS.estimate, renderOperationEstimateReport(estimate));
   await writeJson(OUTPUTS.verifierPlan, verifierPlan);
   await writeText(REPORTS.verifierPlan, renderVerifierPlanReport(verifierPlan));
-  await writeText(REPORTS.ownerRunbook, renderOwnerRunbook());
+  await writeText(REPORTS.ownerRunbook, renderOwnerRunbook(uploadSource));
   await writeJson(OUTPUTS.lifecycle, lifecycle);
   await writeText(REPORTS.lifecycle, renderLifecycleReport(lifecycle));
 
@@ -135,6 +142,7 @@ async function main() {
     uploadPerformed: Boolean(executionSummary),
     bucket: config.bucket,
     prefix: config.prefix,
+    uploadSource: uploadSource.label,
     plannedFiles: plannedUploads.length,
     svgFiles: plannedUploads.filter((entry) => entry.kind === "svg").length,
     webpFiles: plannedUploads.filter((entry) => entry.kind === "webp").length,
@@ -154,23 +162,58 @@ async function loadInputs() {
   };
 }
 
-async function buildUploadPlan(records, deferredRecords) {
+function resolveUploadSource(parsedArgs) {
+  const cleanSource = {
+    label: "clean",
+    sourceBase: CLEAN_SOURCE_BASE,
+    bundleRoot: CLEAN_BUNDLE_ROOT,
+    absoluteBundleRoot: CLEAN_BUNDLE_ABSOLUTE,
+    expectedTotalBytes: EXPECTED_TOTAL_BYTES,
+    round5pGatePassed: false,
+    explicitCleanFallback: parsedArgs.source === "clean",
+  };
+  const optimizedGate = readJsonIfExists(ROUND_5P_GATE);
+  const optimizedIntegrity = readJsonIfExists(ROUND_5P_INTEGRITY);
+  const optimizedReady = Boolean(
+    optimizedGate?.use_optimized_bundle_for_upload === true &&
+      optimizedGate?.optimized_bundle_ready_for_upload === true &&
+      optimizedIntegrity?.summary?.readyForUploader === true &&
+      existsSync(OPTIMIZED_BUNDLE_ABSOLUTE)
+  );
+  const optimizedSource = {
+    label: "optimized",
+    sourceBase: OPTIMIZED_SOURCE_BASE,
+    bundleRoot: OPTIMIZED_BUNDLE_ROOT,
+    absoluteBundleRoot: OPTIMIZED_BUNDLE_ABSOLUTE,
+    expectedTotalBytes: optimizedIntegrity?.summary?.optimizedBytes || EXPECTED_TOTAL_BYTES,
+    round5pGatePassed: optimizedReady,
+    explicitCleanFallback: false,
+  };
+  if (parsedArgs.source === "clean") return cleanSource;
+  if (parsedArgs.source === "optimized" && !optimizedReady) {
+    throw new Error("Refusing optimized upload source because the Round 5P compression gate has not passed.");
+  }
+  if (parsedArgs.source === "optimized") return optimizedSource;
+  return optimizedReady ? optimizedSource : cleanSource;
+}
+
+async function buildUploadPlan(records, deferredRecords, uploadSource) {
   const deferredIds = new Set(deferredRecords.map((record) => record.assetId));
   const uploads = [];
   for (const record of records) {
     if (deferredIds.has(record.assetId)) {
       throw new Error(`Refusing deferred manual-review asset in upload map: ${record.assetId}`);
     }
-    uploads.push(await buildUploadEntry(record, "svg", record.cleanSvgObjectKey, record.localCleanBundleSvgPath));
-    uploads.push(await buildUploadEntry(record, "webp", record.cleanWebpObjectKey, record.localCleanBundleWebpPath));
+    uploads.push(await buildUploadEntry(record, "svg", record.cleanSvgObjectKey, localPathForObjectKey(uploadSource, record.cleanSvgObjectKey), uploadSource));
+    uploads.push(await buildUploadEntry(record, "webp", record.cleanWebpObjectKey, localPathForObjectKey(uploadSource, record.cleanWebpObjectKey), uploadSource));
   }
   uploads.sort((left, right) => left.objectKey.localeCompare(right.objectKey) || left.assetId.localeCompare(right.assetId));
   return uploads;
 }
 
-async function buildUploadEntry(record, kind, objectKey, localPath) {
+async function buildUploadEntry(record, kind, objectKey, localPath, uploadSource) {
   const absolutePath = path.resolve(REPO_ROOT, localPath);
-  assertLocalBundlePath(absolutePath);
+  assertLocalBundlePath(absolutePath, uploadSource);
   assertSafeObjectKey(objectKey, kind);
   if (!existsSync(absolutePath)) throw new Error(`Missing local upload file: ${localPath}`);
   const fileStat = await stat(absolutePath);
@@ -181,10 +224,16 @@ async function buildUploadEntry(record, kind, objectKey, localPath) {
     kind,
     objectKey,
     localPath,
+    uploadSource: uploadSource.label,
     bytes: fileStat.size,
     contentType: kind === "svg" ? "image/svg+xml" : "image/webp",
     cacheControl: CACHE_CONTROL,
   };
+}
+
+function localPathForObjectKey(uploadSource, objectKey) {
+  if (!objectKey.startsWith("coloring-pages/")) throw new Error(`Invalid object key: ${objectKey}`);
+  return slash(path.join(uploadSource.sourceBase, objectKey));
 }
 
 function applyUploadFilters(allUploads, config, parsedArgs) {
@@ -220,12 +269,12 @@ async function applyResumeManifest(allUploads, manifestPath) {
   return filtered;
 }
 
-function validateUploadPlan(plannedUploads, allUploads, data, parsedArgs) {
+function validateUploadPlan(plannedUploads, allUploads, data, parsedArgs, uploadSource) {
   if (allUploads.length !== EXPECTED_R2_FILE_COUNT) {
     throw new Error(`Refusing upload map with ${allUploads.length} files. Expected ${EXPECTED_R2_FILE_COUNT}.`);
   }
   if (allUploads.length > EXPECTED_R2_FILE_COUNT) throw new Error("Refusing upload map with more files than expected.");
-  if (sumBytes(allUploads) > EXPECTED_TOTAL_BYTES + BYTE_TOLERANCE) {
+  if (sumBytes(allUploads) > uploadSource.expectedTotalBytes + BYTE_TOLERANCE) {
     throw new Error("Refusing upload map because bytes exceed expected total plus tolerance.");
   }
   if (plannedUploads.length === 0) throw new Error("Refusing empty upload list.");
@@ -325,7 +374,7 @@ async function putObjectWithRetry(client, bucket, entry) {
   throw lastError;
 }
 
-async function buildProjectContext() {
+async function buildProjectContext(uploadSource) {
   const repoRoot = git(["rev-parse", "--show-toplevel"]).trim();
   const repoName = path.basename(repoRoot);
   const branch = git(["branch", "--show-current"]).trim();
@@ -350,6 +399,10 @@ async function buildProjectContext() {
       cleanBundleExists: existsSync(CLEAN_BUNDLE_ABSOLUTE),
       cleanBundleSvgExists: existsSync(path.join(CLEAN_BUNDLE_ABSOLUTE, "svg")),
       cleanBundleWebpExists: existsSync(path.join(CLEAN_BUNDLE_ABSOLUTE, "webp")),
+      optimizedBundleExists: existsSync(OPTIMIZED_BUNDLE_ABSOLUTE),
+      uploadSource: uploadSource.label,
+      uploadSourceRoot: uploadSource.bundleRoot,
+      round5pGatePassedForOptimizedSource: uploadSource.round5pGatePassed,
       publicContainsGeneratedProductionMedia: publicFiles.some((file) => /(?:^|[\\/])(?:coloring-pages|svg|webp|png|thumbs)[\\/]/i.test(file)),
       imagesStatusClean: git(["status", "--short", "--", "images"]).trim() === "",
       ilovesvgStatusClean: git(["status", "--short", "--", "ilovesvg"]).trim() === "",
@@ -397,8 +450,8 @@ function buildWorkingTreeAudit() {
   };
 }
 
-async function buildBundleAudit(data, allUploads) {
-  const files = await listFilesIfExists(CLEAN_BUNDLE_ABSOLUTE);
+async function buildBundleAudit(data, allUploads, uploadSource) {
+  const files = await listFilesIfExists(uploadSource.absoluteBundleRoot);
   const svgFiles = files.filter((file) => file.endsWith(".svg"));
   const webpFiles = files.filter((file) => file.endsWith(".webp"));
   const pngFiles = files.filter((file) => file.endsWith(".png"));
@@ -421,9 +474,11 @@ async function buildBundleAudit(data, allUploads) {
       missingLocalFiles: missingLocalFiles.length,
       objectKeysStartWithExpectedPrefixes: allUploads.every((entry) => /^coloring-pages\/(?:svg|webp)\//.test(entry.objectKey)),
       duplicateObjectKeys: duplicateObjectKeys.length,
-      expectedTotalBytes: EXPECTED_TOTAL_BYTES,
+      uploadSource: uploadSource.label,
+      uploadSourceRoot: uploadSource.bundleRoot,
+      expectedTotalBytes: uploadSource.expectedTotalBytes,
       actualTotalBytes: sumBytes(allUploads),
-      mediaFilesStagedInGit: git(["status", "--short", "--", "pipeline/r2-upload-clean"]).trim() !== "",
+      mediaFilesStagedInGit: git(["status", "--short", "--", uploadSource.sourceBase]).trim() !== "",
       noPngOrThumbs: pngFiles.length === 0 && thumbFiles.length === 0,
     },
     duplicateObjectKeys,
@@ -431,7 +486,7 @@ async function buildBundleAudit(data, allUploads) {
   };
 }
 
-function buildDryRunManifest({ plannedUploads, allUploads, config, executionSummary, failures }) {
+function buildDryRunManifest({ plannedUploads, allUploads, config, executionSummary, failures, uploadSource }) {
   const svgFileCount = plannedUploads.filter((entry) => entry.kind === "svg").length;
   const webpFileCount = plannedUploads.filter((entry) => entry.kind === "webp").length;
   const pngFileCount = plannedUploads.filter((entry) => entry.objectKey.includes("/png/") || entry.localPath.endsWith(".png")).length;
@@ -447,6 +502,9 @@ function buildDryRunManifest({ plannedUploads, allUploads, config, executionSumm
       bucket: config.bucket,
       prefix: config.prefix,
       endpointConfigured: Boolean(config.endpoint),
+      uploadSource: uploadSource.label,
+      uploadSourceRoot: uploadSource.bundleRoot,
+      optimizedSourceGatePassed: uploadSource.round5pGatePassed,
       credentialsRequiredForExecuteOnly: true,
       plannedFileCount: plannedUploads.length,
       fullBundleFileCount: allUploads.length,
@@ -476,7 +534,7 @@ function buildDryRunManifest({ plannedUploads, allUploads, config, executionSumm
   };
 }
 
-function buildOperationEstimate(allUploads) {
+function buildOperationEstimate(allUploads, uploadSource) {
   const totalUploadBytes = sumBytes(allUploads);
   return {
     generatedAt: GENERATED_AT,
@@ -484,6 +542,8 @@ function buildOperationEstimate(allUploads) {
     summary: {
       putObjectOperations: allUploads.length,
       headObjectOperationsWithSkipExisting: allUploads.length,
+      uploadSource: uploadSource.label,
+      uploadSourceRoot: uploadSource.bundleRoot,
       totalUploadBytes,
       expectedTotalStorageGB: Number((totalUploadBytes / 1_000_000_000).toFixed(3)),
       classAOperationCountEstimate: allUploads.length,
@@ -560,9 +620,9 @@ function assertSafeObjectKey(objectKey, kind) {
   if (!objectKey.endsWith(kind === "svg" ? ".svg" : ".webp")) throw new Error(`Unexpected extension in object key: ${objectKey}`);
 }
 
-function assertLocalBundlePath(absolutePath) {
-  if (!absolutePath.startsWith(`${CLEAN_BUNDLE_ABSOLUTE}${path.sep}`)) {
-    throw new Error(`Refusing local path outside ${CLEAN_BUNDLE_ROOT}: ${absolutePath}`);
+function assertLocalBundlePath(absolutePath, uploadSource) {
+  if (!absolutePath.startsWith(`${uploadSource.absoluteBundleRoot}${path.sep}`)) {
+    throw new Error(`Refusing local path outside ${uploadSource.bundleRoot}: ${absolutePath}`);
   }
 }
 
@@ -577,6 +637,8 @@ function renderProjectContextReport(payload) {
 - Clean bundle present: ${payload.summary.cleanBundleExists}
 - Clean SVG folder present: ${payload.summary.cleanBundleSvgExists}
 - Clean WebP folder present: ${payload.summary.cleanBundleWebpExists}
+- Upload source: ${payload.summary.uploadSource}
+- Upload source root: ${payload.summary.uploadSourceRoot}
 - Wrong task indicators present: ${payload.summary.wrongContextIndicatorsPresent}
 `;
 }
@@ -608,6 +670,8 @@ function renderBundleAuditReport(payload) {
 - Manual-review asset IDs included: ${payload.summary.manualReviewAssetIdsIncluded}
 - Missing local files: ${payload.summary.missingLocalFiles}
 - Duplicate object keys: ${payload.summary.duplicateObjectKeys}
+- Upload source: ${payload.summary.uploadSource}
+- Upload source root: ${payload.summary.uploadSourceRoot}
 - Actual total bytes: ${payload.summary.actualTotalBytes}
 - Media files staged in Git: ${payload.summary.mediaFilesStagedInGit}
 `;
@@ -621,6 +685,8 @@ function renderDryRunReport(payload) {
 - Delete performed: ${payload.deletePerformed}
 - Bucket: ${payload.summary.bucket}
 - Prefix: ${payload.summary.prefix}
+- Upload source: ${payload.summary.uploadSource}
+- Upload source root: ${payload.summary.uploadSourceRoot}
 - Planned files: ${payload.summary.plannedFileCount}
 - SVG files: ${payload.summary.svgFileCount}
 - WebP files: ${payload.summary.webpFileCount}
@@ -638,6 +704,8 @@ function renderOperationEstimateReport(payload) {
 
 - PutObject operations for full execute: ${payload.summary.putObjectOperations}
 - HeadObject operations if \`--skip-existing\` is used: ${payload.summary.headObjectOperationsWithSkipExisting}
+- Upload source: ${payload.summary.uploadSource}
+- Upload source root: ${payload.summary.uploadSourceRoot}
 - Total upload bytes: ${payload.summary.totalUploadBytes}
 - Expected storage GB: ${payload.summary.expectedTotalStorageGB}
 - Class A estimate: ${payload.summary.classAOperationCountEstimate}
@@ -664,8 +732,10 @@ Run after owner upload:
 `;
 }
 
-function renderOwnerRunbook() {
+function renderOwnerRunbook(uploadSource) {
   return `# Round 5O Owner Upload Runbook
+
+Round 5P now makes the optimized bundle the default upload source once the compression gate passes.
 
 ## A. When API Details Are Needed
 
@@ -687,6 +757,12 @@ Use terminal environment variables, or put them in \`.env.r2-upload.local\`. Tha
 
 \`node pipeline/scripts/round-5o-upload-clean-bundle-to-r2.mjs --dry-run\`
 
+Default source after Round 5P gate: \`${uploadSource.bundleRoot}\`
+
+Clean fallback source, only if owner rejects the optimized bundle:
+
+\`node pipeline/scripts/round-5o-upload-clean-bundle-to-r2.mjs --dry-run --source clean\`
+
 ## E. Optional Smoke Upload Command
 
 \`node pipeline/scripts/round-5o-upload-clean-bundle-to-r2.mjs --execute --confirm-bucket i-love-coloring-page --confirm-prefix coloring-pages --confirm-file-count 12704 --limit 10 --skip-existing\`
@@ -705,7 +781,7 @@ Use terminal environment variables, or put them in \`.env.r2-upload.local\`. Tha
 - Do not use dashboard upload for the full bundle.
 - Do not delete existing objects unless explicitly planned later.
 - Do not upload \`png/\` or \`thumbs/\`.
-- Do not upload the parent folder incorrectly. Upload \`pipeline/r2-upload-clean/coloring-pages\` to the bucket root.
+- Do not upload the parent folder incorrectly. Upload \`pipeline/r2-upload-optimized/coloring-pages\` to the bucket root after Round 5P acceptance, or \`pipeline/r2-upload-clean/coloring-pages\` only as an explicit fallback.
 `;
 }
 
@@ -728,8 +804,8 @@ This utility is only for the initial clean SVG plus WebP upload and can be remov
 function classifyWorkingTreePath(pathName) {
   if (!pathName) return "unknown";
   if (pathName === ".gitignore" || pathName === "AGENTS.md" || pathName === "package.json" || pathName === "package-lock.json" || pathName === ".env.r2-upload.example") return "intended_round_5o_artifact";
-  if (/^pipeline\/(?:lib|scripts|tests|manifests|reports)\/round-5o/.test(pathName)) return "intended_round_5o_artifact";
-  if (/^pipeline\/r2-upload-clean\//.test(pathName)) return "local_artifact_drift";
+  if (/^pipeline\/(?:lib|scripts|tests|manifests|reports)\/round-5[op]/.test(pathName) || /^pipeline\/config\/svgo\.conservative\.config\.mjs$/.test(pathName)) return "intended_round_5o_artifact";
+  if (/^pipeline\/r2-upload-(?:clean|optimized)\//.test(pathName) || /^pipeline\/review\/round-5p\//.test(pathName)) return "local_artifact_drift";
   if (/^pipeline\/manifests\/round-4|^pipeline\/reports\/round-4|^src\/generated\/coloring\//.test(pathName)) return "generated_validation_drift";
   return "risky_unrelated_drift";
 }
@@ -751,6 +827,7 @@ function parseArgs(rawArgs) {
     confirmFileCount: 0,
     allowDangerousBucketOverride: false,
     allowHighConcurrency: false,
+    source: "auto",
   };
   for (let index = 0; index < rawArgs.length; index += 1) {
     const arg = rawArgs[index];
@@ -765,6 +842,7 @@ function parseArgs(rawArgs) {
     else if (arg === "--max-bytes") parsed.maxBytes = parsePositiveInteger(rawArgs[++index]);
     else if (arg === "--concurrency") parsed.concurrency = parsePositiveInteger(rawArgs[++index]);
     else if (arg === "--only") parsed.only = rawArgs[++index] || "all";
+    else if (arg === "--source") parsed.source = rawArgs[++index] || "auto";
     else if (arg === "--confirm-bucket") parsed.confirmBucket = rawArgs[++index] || "";
     else if (arg === "--confirm-prefix") parsed.confirmPrefix = normalizeR2Prefix(rawArgs[++index] || "");
     else if (arg === "--confirm-file-count") parsed.confirmFileCount = parsePositiveInteger(rawArgs[++index]);
@@ -772,7 +850,14 @@ function parseArgs(rawArgs) {
     else if (arg === "--allow-high-concurrency") parsed.allowHighConcurrency = true;
   }
   if (!["all", "svg", "webp"].includes(parsed.only)) throw new Error(`Invalid --only value: ${parsed.only}`);
+  if (!["auto", "clean", "optimized"].includes(parsed.source)) throw new Error(`Invalid --source value: ${parsed.source}`);
   return parsed;
+}
+
+function readJsonIfExists(relativePath) {
+  const absolutePath = path.join(REPO_ROOT, relativePath);
+  if (!existsSync(absolutePath)) return null;
+  return JSON.parse(readFileSync(absolutePath, "utf8"));
 }
 
 async function readJson(relativePath) {

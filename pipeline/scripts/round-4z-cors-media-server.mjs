@@ -11,6 +11,7 @@ const LOCAL_ORIGIN_PATTERN = /^https?:\/\/(?:localhost|127\.0\.0\.1|\[::1\])(?::
 
 const CONTENT_TYPES = new Map([
   [".svg", "image/svg+xml; charset=utf-8"],
+  [".webp", "image/webp"],
   [".png", "image/png"],
   [".json", "application/json; charset=utf-8"],
   [".txt", "text/plain; charset=utf-8"],

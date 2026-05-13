@@ -8,4 +8,6 @@
 - Clean bundle present: true
 - Clean SVG folder present: true
 - Clean WebP folder present: true
+- Upload source: optimized
+- Upload source root: pipeline/r2-upload-optimized/coloring-pages
 - Wrong task indicators present: false

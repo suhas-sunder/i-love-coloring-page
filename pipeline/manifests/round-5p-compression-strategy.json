@@ -1,0 +1,46 @@
+{
+  "generatedAt": "2026-05-13T05:01:08.877Z",
+  "runId": "round-5p-compression-strategy",
+  "summary": {
+    "conservative": true,
+    "svgRemainsSourceOfTruth": true,
+    "webpPreviewOnly": true,
+    "removeViewBoxAllowed": false,
+    "pathSimplificationAggressive": false,
+    "idRemovalAggressive": false,
+    "rasterizesSvg": false,
+    "rollbackUsesOriginalCleanBundle": true
+  },
+  "svgApproach": [
+    "Use SVGO only for conservative metadata/comment cleanup and safe numeric cleanup.",
+    "Preserve viewBox, dimensions, strokes, fills, styles, paths, and IDs.",
+    "Disable removeViewBox, cleanupIds, mergePaths, aggressive convertPathData, and style-altering plugins."
+  ],
+  "webpApproach": [
+    "Use Sharp to test conservative WebP quality candidates on a representative sample.",
+    "Default to the safest candidate that saves bytes without reducing gallery readability.",
+    "Use original WebP when optimized output is larger or fails decode validation."
+  ],
+  "dangerousSvgPluginsToAvoid": [
+    "removeViewBox",
+    "cleanupIds aggressive removal/minification",
+    "mergePaths",
+    "convertPathData aggressive simplification",
+    "removeUnknownsAndDefaults when it may affect line art",
+    "style inlining/minification when it may affect rendering"
+  ],
+  "qualityThresholds": {
+    "svgMustParse": true,
+    "svgMustKeepViewBoxOrDimensions": true,
+    "svgMustNotBeEmpty": true,
+    "webpMustDecode": true,
+    "webpDimensionsMustMatch": true,
+    "visualContactSheetsRequired": true,
+    "browserQaRequired": true
+  },
+  "expectedSavings": {
+    "ownerSvgSampleSavingsPercent": 30,
+    "ownerWebpSampleSavingsPercent": 14,
+    "actualSavingsMeasuredByRound5P": true
+  }
+}

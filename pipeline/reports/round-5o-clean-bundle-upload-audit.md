@@ -10,5 +10,7 @@
 - Manual-review asset IDs included: 0
 - Missing local files: 0
 - Duplicate object keys: 0
-- Actual total bytes: 2089425709
+- Upload source: optimized
+- Upload source root: pipeline/r2-upload-optimized/coloring-pages
+- Actual total bytes: 1495772065
 - Media files staged in Git: false

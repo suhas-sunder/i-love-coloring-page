@@ -85,8 +85,11 @@ test("Round 5O clean bundle audit and dry-run upload manifest cover SVG plus Web
   assert.equal(dryRun.summary.oldTestPrefixCount, 0);
   assert.equal(dryRun.summary.bucket, EXPECTED_BUCKET);
   assert.equal(dryRun.summary.prefix, EXPECTED_PREFIX);
+  assert.ok(["clean", "optimized"].includes(dryRun.summary.uploadSource || "clean"));
+  assert.match(dryRun.summary.uploadSourceRoot || "pipeline/r2-upload-clean/coloring-pages", /^pipeline\/r2-upload-(?:clean|optimized)\/coloring-pages$/);
   assert.equal(dryRun.summary.readyForOwnerExecuteReview, true);
-  assert.ok(dryRun.summary.totalBytes > 2_000_000_000);
+  assert.ok(dryRun.summary.totalBytes > 0);
+  assert.ok(dryRun.summary.totalBytes <= audit.summary.expectedTotalBytes + 1024 * 1024 * 20);
   assert.equal(dryRun.plannedUploads.length, EXPECTED_FILES);
   assert.equal(failures.uploadExecuted, false);
   assert.deepEqual(failures.failures, []);
@@ -143,7 +146,9 @@ test("Round 5O operation estimate, verifier plan, lifecycle, and runbook are pre
 
   assert.equal(estimate.summary.putObjectOperations, EXPECTED_FILES);
   assert.equal(estimate.summary.headObjectOperationsWithSkipExisting, EXPECTED_FILES);
-  assert.ok(estimate.summary.totalUploadBytes > 2_000_000_000);
+  assert.ok(["clean", "optimized"].includes(estimate.summary.uploadSource || "clean"));
+  assert.match(estimate.summary.uploadSourceRoot || "pipeline/r2-upload-clean/coloring-pages", /^pipeline\/r2-upload-(?:clean|optimized)\/coloring-pages$/);
+  assert.ok(estimate.summary.totalUploadBytes > 0);
   assert.equal(estimate.summary.deleteOperations, 0);
   assert.equal(verifierPlan.summary.publicBaseUrl, "https://assets.ilovecoloringpage.com/coloring-pages");
   assert.equal(verifierPlan.summary.fullVerificationCount, EXPECTED_FILES);

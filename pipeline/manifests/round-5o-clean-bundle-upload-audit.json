@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-13T04:13:14.806Z",
+  "generatedAt": "2026-05-13T04:54:33.529Z",
   "runId": "round-5o-clean-bundle-upload-audit",
   "inputs": {
     "objectKeyMap": "pipeline/manifests/round-5n-clean-upload-object-key-map.json",
@@ -19,8 +19,10 @@
     "missingLocalFiles": 0,
     "objectKeysStartWithExpectedPrefixes": true,
     "duplicateObjectKeys": 0,
-    "expectedTotalBytes": 2089425709,
-    "actualTotalBytes": 2089425709,
+    "uploadSource": "optimized",
+    "uploadSourceRoot": "pipeline/r2-upload-optimized/coloring-pages",
+    "expectedTotalBytes": 1495772065,
+    "actualTotalBytes": 1495772065,
     "mediaFilesStagedInGit": false,
     "noPngOrThumbs": true
   },

@@ -1,5 +1,7 @@
 # Round 5O Owner Upload Runbook
 
+Round 5P now makes the optimized bundle the default upload source once the compression gate passes.
+
 ## A. When API Details Are Needed
 
 API details are needed only after the dry-run passes and only on the local machine. Never paste keys into ChatGPT. Never commit keys.
@@ -20,6 +22,12 @@ Use terminal environment variables, or put them in `.env.r2-upload.local`. That 
 
 `node pipeline/scripts/round-5o-upload-clean-bundle-to-r2.mjs --dry-run`
 
+Default source after Round 5P gate: `pipeline/r2-upload-optimized/coloring-pages`
+
+Clean fallback source, only if owner rejects the optimized bundle:
+
+`node pipeline/scripts/round-5o-upload-clean-bundle-to-r2.mjs --dry-run --source clean`
+
 ## E. Optional Smoke Upload Command
 
 `node pipeline/scripts/round-5o-upload-clean-bundle-to-r2.mjs --execute --confirm-bucket i-love-coloring-page --confirm-prefix coloring-pages --confirm-file-count 12704 --limit 10 --skip-existing`
@@ -38,4 +46,4 @@ Use terminal environment variables, or put them in `.env.r2-upload.local`. That 
 - Do not use dashboard upload for the full bundle.
 - Do not delete existing objects unless explicitly planned later.
 - Do not upload `png/` or `thumbs/`.
-- Do not upload the parent folder incorrectly. Upload `pipeline/r2-upload-clean/coloring-pages` to the bucket root.
+- Do not upload the parent folder incorrectly. Upload `pipeline/r2-upload-optimized/coloring-pages` to the bucket root after Round 5P acceptance, or `pipeline/r2-upload-clean/coloring-pages` only as an explicit fallback.
