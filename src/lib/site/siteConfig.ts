@@ -34,7 +34,7 @@ const assetUrlStatus = getPublicUrlStatus(rawAssetBaseUrl, { requireColoringPage
 export const siteConfig = {
   siteName: process.env.NEXT_PUBLIC_SITE_NAME?.trim() || DEFAULT_SITE_NAME,
   siteUrl: siteUrlStatus.normalizedValue || DEFAULT_SITE_URL,
-  assetBaseUrl: assetUrlStatus.normalizedValue || DEFAULT_COLORING_ASSET_BASE_URL,
+  assetBaseUrl: assetUrlStatus.ready ? assetUrlStatus.normalizedValue : DEFAULT_COLORING_ASSET_BASE_URL,
   contactEmail: isUsablePublicEmail(rawContactEmail) ? rawContactEmail : DEFAULT_CONTACT_EMAIL,
   ownerName: process.env.NEXT_PUBLIC_SITE_OWNER_NAME?.trim() || "",
   jurisdiction: process.env.NEXT_PUBLIC_SITE_JURISDICTION?.trim() || "",

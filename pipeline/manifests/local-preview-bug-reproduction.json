@@ -1,0 +1,845 @@
+{
+  "generatedAt": "2026-05-13T18:59:13.080Z",
+  "runId": "local-preview-bug-reproduction",
+  "origin": "http://127.0.0.1:3005",
+  "mode": "reproduction",
+  "screenshotDirectory": null,
+  "screenshots": [],
+  "pages": [
+    {
+      "route": "/",
+      "url": "http://127.0.0.1:3005/",
+      "status": 200,
+      "previewUnavailableCount": 14,
+      "assetImageCount": 0,
+      "renderedAssetImageCount": 0,
+      "customDomainImageCount": 0,
+      "brokenImageCount": 0,
+      "firstAssetImageSrcs": [],
+      "bodyTextIncludes6352": true,
+      "bodyTextIncludesPreviewUnavailable": true,
+      "visibleAdLabels": 5,
+      "horizontalOverflowDetected": false,
+      "consoleErrors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        }
+      ],
+      "networkFailures": [
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/chibi/chibi-african-dragon-ebdfccdd0d.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/anime-girls/anime-girl-air-balloon-1f6b5be7bc.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/birds/birds-albatross-2380234539.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/christmas/christmas-holiday-advent-calendar-a1245c4617.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/dinosaurs/prehistoric-allosaurus-9787e7d0fd.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/dogs/dogs-afghan-hound-cdbb79eb85.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/fantasy/fantasy-abyss-wyrm-7a01eb3636.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        }
+      ],
+      "animalsAlligator": {
+        "appears": true,
+        "hasImg": false,
+        "imgSrc": "",
+        "renders": false
+      }
+    },
+    {
+      "route": "/coloring-pages",
+      "url": "http://127.0.0.1:3005/coloring-pages",
+      "status": 200,
+      "previewUnavailableCount": 30,
+      "assetImageCount": 36,
+      "renderedAssetImageCount": 0,
+      "customDomainImageCount": 0,
+      "brokenImageCount": 0,
+      "firstAssetImageSrcs": [
+        "http://127.0.0.1:4175/coloring-pages/webp/animals/animals-chickens-1d898c58de.webp",
+        "http://127.0.0.1:4175/coloring-pages/webp/animals/animals-crocodile-0389692b30.webp",
+        "http://127.0.0.1:4175/coloring-pages/webp/animals/animals-dog-18819a83c1.webp",
+        "http://127.0.0.1:4175/coloring-pages/webp/animals/animals-dolphins-06e09058c7.webp",
+        "http://127.0.0.1:4175/coloring-pages/webp/animals/animals-duck-f46c4f4007.webp",
+        "http://127.0.0.1:4175/coloring-pages/webp/animals/animals-eagle-0e2698945b.webp",
+        "http://127.0.0.1:4175/coloring-pages/webp/animals/animals-eagles-9c48219eed.webp",
+        "http://127.0.0.1:4175/coloring-pages/webp/animals/animals-elephants-44cfe62b98.webp"
+      ],
+      "bodyTextIncludes6352": true,
+      "bodyTextIncludesPreviewUnavailable": true,
+      "visibleAdLabels": 5,
+      "horizontalOverflowDetected": false,
+      "consoleErrors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        }
+      ],
+      "networkFailures": [
+        {
+          "url": "http://127.0.0.1:3005/",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/chibi/chibi-african-dragon-ebdfccdd0d.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/anime-girls/anime-girl-air-balloon-1f6b5be7bc.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/birds/birds-albatross-2380234539.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/christmas/christmas-holiday-advent-calendar-a1245c4617.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/dinosaurs/prehistoric-allosaurus-9787e7d0fd.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/dogs/dogs-afghan-hound-cdbb79eb85.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/fantasy/fantasy-abyss-wyrm-7a01eb3636.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/animals-playing-cards/cats-playing-cards-c22648db9b.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/animals/animals-antelopes-49a5eb802f.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/animals/animals-buffalo-42947367b4.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/animals/animals-butterflies-016ffbb0de.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        }
+      ],
+      "animalsAlligator": {
+        "appears": true,
+        "hasImg": false,
+        "imgSrc": "",
+        "renders": false
+      }
+    },
+    {
+      "route": "/coloring-pages/animals",
+      "url": "http://127.0.0.1:3005/coloring-pages/animals",
+      "status": 200,
+      "previewUnavailableCount": 30,
+      "assetImageCount": 36,
+      "renderedAssetImageCount": 0,
+      "customDomainImageCount": 0,
+      "brokenImageCount": 0,
+      "firstAssetImageSrcs": [
+        "http://127.0.0.1:4175/coloring-pages/webp/animals/animals-elephants-44cfe62b98.webp",
+        "http://127.0.0.1:4175/coloring-pages/webp/animals/animals-falcons-39d20877ca.webp",
+        "http://127.0.0.1:4175/coloring-pages/webp/animals/animals-frogs-242fdad0e9.webp",
+        "http://127.0.0.1:4175/coloring-pages/webp/animals/animals-gazelles-2ad6b27392.webp",
+        "http://127.0.0.1:4175/coloring-pages/webp/animals/animals-goat-74e02be085.webp",
+        "http://127.0.0.1:4175/coloring-pages/webp/animals/animals-goose-918235b6af.webp",
+        "http://127.0.0.1:4175/coloring-pages/webp/animals/animals-hawk-bb1442ad50.webp",
+        "http://127.0.0.1:4175/coloring-pages/webp/animals/animals-hyenas-b0e61b6bb7.webp"
+      ],
+      "bodyTextIncludes6352": true,
+      "bodyTextIncludesPreviewUnavailable": true,
+      "visibleAdLabels": 5,
+      "horizontalOverflowDetected": false,
+      "consoleErrors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        }
+      ],
+      "networkFailures": [
+        {
+          "url": "http://127.0.0.1:3005/",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/chibi/chibi-animals-pets-dogs-afghan-hound-d9a83b6ec9.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/anime-girls/anime-girl-armadillo-hoodie-animal-plushie-d2e31ff395.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/christmas/christmas-holiday-kitten-9c698f8609.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/birds/birds-albatross-2380234539.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/dinosaurs/prehistoric-allosaurus-9787e7d0fd.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/animals-playing-cards/cats-playing-cards-c22648db9b.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/animals/animals-antelopes-49a5eb802f.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/animals/animals-buffalo-42947367b4.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/dogs/dogs-afghan-hound-cdbb79eb85.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/fantasy/fantasy-animal-fox-rogue-night-market-5073be9dee.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/flowers/flowers-bird-of-paradise-d3dda83342.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/indoor-plants/indoor-plants-bird-of-paradise-6af898d102.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/animals/animals-butterflies-016ffbb0de.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/animals/animals-chickens-1d898c58de.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/animals/animals-crocodile-0389692b30.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/animals/animals-dog-18819a83c1.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/animals/animals-dolphins-06e09058c7.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/animals/animals-duck-f46c4f4007.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/animals/animals-eagle-0e2698945b.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/animals/animals-eagles-9c48219eed.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        }
+      ],
+      "animalsAlligator": {
+        "appears": true,
+        "hasImg": false,
+        "imgSrc": "",
+        "renders": false
+      }
+    },
+    {
+      "route": "/coloring-pages/geometric",
+      "url": "http://127.0.0.1:3005/coloring-pages/geometric",
+      "status": 200,
+      "previewUnavailableCount": 30,
+      "assetImageCount": 36,
+      "renderedAssetImageCount": 0,
+      "customDomainImageCount": 0,
+      "brokenImageCount": 0,
+      "firstAssetImageSrcs": [
+        "http://127.0.0.1:4175/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-bakery-banana-bread-b966f4a2ee.webp",
+        "http://127.0.0.1:4175/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-bakery-birthday-cake-63baabceb3.webp",
+        "http://127.0.0.1:4175/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-bakery-birthday-cupcake-775c363bbe.webp",
+        "http://127.0.0.1:4175/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-bakery-biscotti-5ce75299d7.webp",
+        "http://127.0.0.1:4175/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-bakery-blueberry-muffin-1cedb880e9.webp",
+        "http://127.0.0.1:4175/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-bakery-bread-loaf-11bac2244d.webp",
+        "http://127.0.0.1:4175/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-bakery-bread-slicing-board-09d11226d0.webp",
+        "http://127.0.0.1:4175/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-bakery-breadsticks-in-basket-b49a7becfa.webp"
+      ],
+      "bodyTextIncludes6352": true,
+      "bodyTextIncludesPreviewUnavailable": true,
+      "visibleAdLabels": 5,
+      "horizontalOverflowDetected": false,
+      "consoleErrors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        }
+      ],
+      "networkFailures": [
+        {
+          "url": "http://127.0.0.1:3005/",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/mandala/mandala-geometry-patterns-animal-mandala-fox-3e8e80a2fd.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-abstract-mandala-29dbb1eecf.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/mandala/mandala-geometry-patterns-hindu-mandala-fc5ca81596.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/mandala/mandala-geometry-patterns-celestial-mandala-84d5358083.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/mandala/mandala-geometry-patterns-nature-mandala-89a2f93a25.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/mandala/mandala-geometry-patterns-geometric-mandala-3369a57b28.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-abstract-shapes-96fa3013f6.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-animal-plushie-hippo-12a7febf5c.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-bakery-animal-shaped-cookies-02c4796fed.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-bakery-apple-pie-572ed1fcfb.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/mandala/mandala-geometry-patterns-psychedelic-mandala-9b152d5112.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-bald-eagle-cd94a6a15f.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-bakery-wedding-cake-f6db51bfb8.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-buddhist-mandala-8e4e5ac1a0.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-bakery-baguette-f3931efe05.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-bakery-baker-hat-85eb9a820b.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-bakery-baker-holding-bread-b1725567be.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-bakery-shop-front-81c0dea658.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-bakery-shop-interior-e25e3e5dee.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-bakery-baking-classroom-0a96a3953d.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-bakery-baking-sheet-full-of-cookies-5f372cefe8.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        }
+      ],
+      "animalsAlligator": {
+        "appears": false,
+        "hasImg": false,
+        "imgSrc": "",
+        "renders": false
+      }
+    },
+    {
+      "route": "/coloring-pages/christmas",
+      "url": "http://127.0.0.1:3005/coloring-pages/christmas",
+      "status": 200,
+      "previewUnavailableCount": 30,
+      "assetImageCount": 36,
+      "renderedAssetImageCount": 0,
+      "customDomainImageCount": 0,
+      "brokenImageCount": 0,
+      "firstAssetImageSrcs": [
+        "http://127.0.0.1:4175/coloring-pages/webp/christmas/christmas-holiday-christmas-stockings-a71271c320.webp",
+        "http://127.0.0.1:4175/coloring-pages/webp/christmas/christmas-holiday-christmas-sweater-4661674d18.webp",
+        "http://127.0.0.1:4175/coloring-pages/webp/christmas/christmas-holiday-christmas-wreath-decorations-484fd4b2af.webp",
+        "http://127.0.0.1:4175/coloring-pages/webp/christmas/christmas-holiday-christmas-wreath-be936df7b8.webp",
+        "http://127.0.0.1:4175/coloring-pages/webp/christmas/christmas-holiday-gingerbread-house-2e315f039b.webp",
+        "http://127.0.0.1:4175/coloring-pages/webp/christmas/christmas-holiday-kitten-9c698f8609.webp",
+        "http://127.0.0.1:4175/coloring-pages/webp/christmas/christmas-holiday-llama-e65842f553.webp",
+        "http://127.0.0.1:4175/coloring-pages/webp/christmas/christmas-holiday-mistletoe-cbb006ed4c.webp"
+      ],
+      "bodyTextIncludes6352": true,
+      "bodyTextIncludesPreviewUnavailable": true,
+      "visibleAdLabels": 5,
+      "horizontalOverflowDetected": false,
+      "consoleErrors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+        }
+      ],
+      "networkFailures": [
+        {
+          "url": "http://127.0.0.1:3005/",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/christmas/christmas-holiday-advent-calendar-a1245c4617.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/holiday/holiday-christmas-dogs-australian-shepherd-324967ed9d.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/indoor-plants/indoor-plants-christmas-cactus-150b46b5de.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/christmas/christmas-holiday-candy-canes-6f112e464c.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-sushi-holiday-christmas-roll-44ec0c8f04.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/gardening/gardening-mushroom-reindeer-lichen-reindeer-gardener-christmas-284b794095.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/christmas/christmas-holiday-carolers-50a8cc6073.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/christmas/christmas-holiday-christmas-cards-cc6fed095e.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/holiday/holiday-christmas-dogs-beagle-2ecc7d9e3b.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/holiday/holiday-christmas-dogs-bichon-frise-172fd234c8.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/christmas/christmas-holiday-christmas-carols-d1dfbb8bc8.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/christmas/christmas-holiday-christmas-day-671e7e3cef.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/christmas/christmas-holiday-christmas-decorations-210beddaf3.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/christmas/christmas-holiday-christmas-eve-eddd380bbc.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/christmas/christmas-holiday-christmas-lights-f742a925a8.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/christmas/christmas-holiday-christmas-ornaments-404524eba7.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/christmas/christmas-holiday-christmas-presents-53bc9f83a6.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        },
+        {
+          "url": "http://127.0.0.1:4175/coloring-pages/webp/christmas/christmas-holiday-christmas-songs-3c9136a458.webp",
+          "failure": "net::ERR_CONNECTION_REFUSED"
+        }
+      ],
+      "animalsAlligator": {
+        "appears": false,
+        "hasImg": false,
+        "imgSrc": "",
+        "renders": false
+      }
+    }
+  ],
+  "summary": {
+    "pagesChecked": 5,
+    "visibleUploadedRuntimeRecords": 144,
+    "previewUnavailableForVisibleUploadedRuntimeRecords": 134,
+    "webpPreviewsRender": false,
+    "animalsAlligatorAppears": true,
+    "animalsAlligatorHasImg": false,
+    "animalsAlligatorPreviewRenders": false,
+    "animalsAlligatorImgSrc": "",
+    "brokenImageCount": 0,
+    "consoleErrorCount": 80,
+    "networkFailureCount": 84,
+    "homepageCount6352": true,
+    "galleryLandingCount6352": true,
+    "deferredRecordsHidden": true,
+    "adDensityMatchesRound4U": false,
+    "horizontalOverflowDetected": false
+  }
+}

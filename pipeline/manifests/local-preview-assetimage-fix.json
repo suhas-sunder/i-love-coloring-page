@@ -1,0 +1,12 @@
+{
+  "generatedAt": "2026-05-13T19:14:36.979Z",
+  "runId": "local-preview-assetimage-fix",
+  "summary": {
+    "rootCause": "The preview resolver honored a localhost .env.local public asset override during static preview instead of falling back to the custom asset-domain default.",
+    "validWebpPreviewsRender": true,
+    "previewUnavailableForVisibleUploadedRuntimeRecords": 0,
+    "animalsAlligatorPreviewRenders": true,
+    "noBrokenImageIcons": true,
+    "noAppApiAdded": true
+  }
+}

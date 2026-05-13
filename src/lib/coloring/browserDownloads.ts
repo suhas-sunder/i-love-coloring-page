@@ -54,6 +54,7 @@ type BrowserRasterOptions = {
   format: RasterDownloadFormat;
   quality?: number;
   targetLongEdge?: number;
+  imageLoadTimeoutMs?: number;
 };
 
 type DownloadOptions = {
@@ -75,6 +76,8 @@ type FormatConfig = {
 
 const PRINT_TARGET_LONG_EDGE = 2400;
 const DOWNLOAD_TARGET_LONG_EDGE = 2400;
+const IMAGE_LOAD_TIMEOUT_MS = 12_000;
+const PRINT_PREPARE_TIMEOUT_MS = 15_000;
 export const INTERNAL_SVG_CONTENT_TYPE = "image/svg+xml";
 
 const CANVAS_FORMATS: Record<RasterDownloadFormat, FormatConfig> = {
@@ -147,7 +150,7 @@ export async function convertInternalSvgToBlob(options: BrowserRasterOptions): P
   if (!options.internalSvgUrl) return failure("missing-internal-svg", "The internal SVG source is unavailable for high-quality conversion.");
   if (!canUseCanvasExport()) return failure("browser-api-unavailable", "Browser image conversion APIs are unavailable.");
 
-  const image = await loadCorsImage(options.internalSvgUrl);
+  const image = await loadCorsImage(options.internalSvgUrl, options.imageLoadTimeoutMs ?? IMAGE_LOAD_TIMEOUT_MS);
   if (!image) return failure("image-load-failed", "The internal SVG source could not be loaded for conversion.");
 
   const sourceWidth = image.naturalWidth || image.width || 800;
@@ -195,7 +198,7 @@ export async function convertPngPreviewToBrowserDownload(options: {
   if (!options.pngPreviewUrl) return failure("missing-png-preview", "PNG preview is unavailable.");
   if (!canUseCanvasExport()) return failure("browser-api-unavailable", "Browser image conversion APIs are unavailable.");
 
-  const image = await loadCorsImage(options.pngPreviewUrl);
+  const image = await loadCorsImage(options.pngPreviewUrl, IMAGE_LOAD_TIMEOUT_MS);
   if (!image) return failure("image-load-failed", "The PNG preview could not be loaded for conversion.");
 
   const formatConfig = CANVAS_FORMATS[options.format];
@@ -286,6 +289,7 @@ export async function printFromHighQualitySource(options: PrintOptions): Promise
     title: options.title,
     format: "png",
     targetLongEdge: PRINT_TARGET_LONG_EDGE,
+    imageLoadTimeoutMs: PRINT_PREPARE_TIMEOUT_MS,
   });
 
   if (converted.ok) {
@@ -303,7 +307,10 @@ export async function printFromHighQualitySource(options: PrintOptions): Promise
     };
   }
 
-  if (!options.pngPreviewUrl) return converted;
+  if (!options.pngPreviewUrl) {
+    writePrintFailureDocument(printWindow, options.title);
+    return converted;
+  }
   writePrintDocument(printWindow, {
     title: options.title,
     altText: options.altText,
@@ -376,13 +383,24 @@ function supportsCanvasMimeType(mimeType: "image/png" | "image/jpeg" | "image/we
   }
 }
 
-function loadCorsImage(imageUrl: string) {
+function loadCorsImage(imageUrl: string, timeoutMs = IMAGE_LOAD_TIMEOUT_MS) {
   return new Promise<HTMLImageElement | null>((resolve) => {
     const image = new Image();
+    const timeout = window.setTimeout(() => {
+      image.onload = null;
+      image.onerror = null;
+      resolve(null);
+    }, timeoutMs);
     image.crossOrigin = "anonymous";
     image.decoding = "async";
-    image.onload = () => resolve(image);
-    image.onerror = () => resolve(null);
+    image.onload = () => {
+      window.clearTimeout(timeout);
+      resolve(image);
+    };
+    image.onerror = () => {
+      window.clearTimeout(timeout);
+      resolve(null);
+    };
     image.src = imageUrl;
   });
 }
@@ -419,6 +437,23 @@ function writePreparingDocument(printWindow: Window, title: string) {
   printWindow.document.close();
 }
 
+function writePrintFailureDocument(printWindow: Window, title: string) {
+  printWindow.document.open();
+  printWindow.document.write(`
+    <!doctype html>
+    <html>
+      <head>
+        <title>${escapeHtml(title)}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
+      <body style="margin:0;min-height:100vh;display:grid;place-items:center;font-family:sans-serif;text-align:center;padding:2rem;">
+        <p>Print file could not be prepared. Please try a download instead.</p>
+      </body>
+    </html>
+  `);
+  printWindow.document.close();
+}
+
 function writePrintDocument(
   printWindow: Window,
   options: {
@@ -432,6 +467,7 @@ function writePrintDocument(
   const escapedTitle = escapeHtml(options.title);
   const escapedAlt = escapeHtml(options.altText);
   const escapedImageUrl = escapeAttribute(options.imageUrl);
+  const escapedFailureMessage = escapeHtml("Print file could not be prepared. Please try a download instead.");
   const revokeScript = options.revokeObjectUrl
     ? `window.addEventListener("afterprint", function(){ setTimeout(function(){ URL.revokeObjectURL("${escapedImageUrl}"); }, 500); });`
     : "";
@@ -466,8 +502,27 @@ function writePrintDocument(
         </style>
       </head>
       <body data-print-source="${options.source}">
-        <img src="${escapedImageUrl}" alt="${escapedAlt}" onload="setTimeout(function(){ window.focus(); window.print(); }, 80)" />
-        <script>${revokeScript}</script>
+        <img id="print-image" src="${escapedImageUrl}" alt="${escapedAlt}" />
+        <script>
+          (function(){
+            var image = document.getElementById("print-image");
+            var failed = false;
+            function showFailure() {
+              if (failed) return;
+              failed = true;
+              document.body.removeAttribute("data-print-source");
+              document.body.style.cssText = "margin:0;min-height:100vh;display:grid;place-items:center;font-family:sans-serif;text-align:center;padding:2rem;";
+              document.body.innerHTML = "<p>${escapedFailureMessage}</p>";
+            }
+            var timer = window.setTimeout(showFailure, ${PRINT_PREPARE_TIMEOUT_MS});
+            image.addEventListener("load", function(){
+              window.clearTimeout(timer);
+              setTimeout(function(){ window.focus(); window.print(); }, 80);
+            });
+            image.addEventListener("error", showFailure);
+          })();
+          ${revokeScript}
+        </script>
       </body>
     </html>
   `);

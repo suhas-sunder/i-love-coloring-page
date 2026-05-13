@@ -1,0 +1,22 @@
+# Local Preview Browser QA Report
+
+- Origin: http://127.0.0.1:3005
+- Screenshots: pipeline/review/local-preview-bugfix/screenshots
+- Pages checked: 9
+- WebP previews render: true
+- Preview unavailable labels for visible uploaded records: 0
+- Animals Alligator preview renders: true
+- Broken image count: 0
+- Homepage count 6,352: true
+- Gallery landing count 6,352: true
+- Print works: true
+- PNG download works: true
+- JPG download works: true
+- WebP download works: true
+- SVG download absent: true
+- Search works: true
+- Filter works: true
+- Pagination works: true
+- Ad density follows Round 4U: true
+- Horizontal overflow detected: false
+- All passed: true

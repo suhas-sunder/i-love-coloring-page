@@ -143,7 +143,7 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Do not rename source files or generated media files without an explicit filename cleanup round.
 - Typography must stay on the locked Google Fonts system: Fraunces for major display headings and Figtree for UI and body text.
 - Round 4L forbids broken browser image icons in public gallery previews.
-- Main gallery previews must use the generated PNG preview URL from the centralized resolver.
+- Main gallery previews must use the generated WebP preview URL from the centralized resolver when available.
 - Asset URL fixes must be audited against actual files under the local R2 upload bundle before visual judgment.
 - If `NEXT_PUBLIC_COLORING_ASSET_BASE_URL` is missing, show intentional placeholders instead of broken image states.
 - If an image URL fails, hide the failed image element and show the intentional fallback.
@@ -442,6 +442,12 @@ This repository is the foundation for a future Next.js coloring page website. Th
 
 ## Live Production Routing
 
+- Local static preview must pass before live production verification.
+- If a direct asset URL works but a gallery card says `Preview unavailable`, debug app resolver and component logic before changing upload state.
+- The Animals Alligator URLs are regression fixtures: `https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp` and `https://assets.ilovecoloringpage.com/coloring-pages/svg/animals/animals-alligator-4feec8505a.svg`.
+- `AssetImage` must not hide valid WebP previews.
+- Print and browser conversion flows must never hang indefinitely on a preparing state.
+- Do not proceed to deployment, SEO, image sitemap, Open Graph images, JSON-LD expansion, or live ads until local gallery previews render from the custom asset domain.
 - Live production routing must be verified before image sitemap, Open Graph image, JSON-LD expansion, or live ads work resumes.
 - If live sitemap is stale but the local static-export sitemap is current, suspect Netlify deploy, branch, or domain configuration before changing app logic.
 - Static export routing, trailing-slash behavior, canonical URLs, and sitemap URLs must stay consistent with each other.

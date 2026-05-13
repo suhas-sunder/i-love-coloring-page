@@ -1,5 +1,5 @@
 // The public asset base uses the production custom asset domain by default.
-// NEXT_PUBLIC_COLORING_ASSET_BASE_URL remains an optional local/dev override.
+// NEXT_PUBLIC_COLORING_ASSET_BASE_URL remains an optional public CDN override.
 type AssetSubpathsLike = {
   svg?: string | null;
   pngPreview?: string | null;
@@ -17,7 +17,9 @@ export type ResolvedColoringAssetUrls = {
 };
 
 const DEFAULT_COLORING_ASSET_BASE_URL = "https://assets.ilovecoloringpage.com/coloring-pages";
-const ASSET_BASE_URL = normalizeColoringAssetBaseUrl(process.env.NEXT_PUBLIC_COLORING_ASSET_BASE_URL || DEFAULT_COLORING_ASSET_BASE_URL);
+const PRIVATE_STORAGE_HOST_PATTERNS = ["r2.cloudflarestorage.com", "amazonaws.com"];
+const LEGACY_TEST_PREFIX = ["", "coloring", "test-v1"].join("/");
+const ASSET_BASE_URL = resolveConfiguredColoringAssetBaseUrl(getPublicAssetBaseUrlOverride());
 const ALLOWED_TOP_LEVEL_FOLDERS = new Set(["svg", "png", "thumbs", "webp"]);
 
 export function resolveColoringAssetUrl(assetSubpath: string | null | undefined): string | null {
@@ -97,6 +99,12 @@ export function normalizeColoringAssetBaseUrl(value: string | null | undefined):
   return value?.trim().replace(/\/+$/, "") || "";
 }
 
+export function resolveConfiguredColoringAssetBaseUrl(value: string | null | undefined): string {
+  const normalized = normalizeColoringAssetBaseUrl(value);
+  if (!normalized) return DEFAULT_COLORING_ASSET_BASE_URL;
+  return isUsablePublicAssetBaseUrl(normalized) ? normalized : DEFAULT_COLORING_ASSET_BASE_URL;
+}
+
 function resolveTypedAssetUrl(expectedRoot: "svg" | "png" | "thumbs" | "webp", assetSubpath: string | null | undefined) {
   const safeSubpath = normalizeAssetSubpath(assetSubpath);
   if (!safeSubpath || !safeSubpath.startsWith(`${expectedRoot}/`)) return null;
@@ -108,4 +116,29 @@ function encodeAssetSubpath(assetSubpath: string) {
     .split("/")
     .map((segment) => encodeURIComponent(segment))
     .join("/");
+}
+
+function isUsablePublicAssetBaseUrl(value: string) {
+  try {
+    const url = new URL(value);
+    const hostname = url.hostname.toLowerCase();
+    const pathname = url.pathname.toLowerCase();
+    return (
+      url.protocol === "https:" &&
+      hostname !== "localhost" &&
+      hostname !== "127.0.0.1" &&
+      hostname !== "::1" &&
+      !hostname.endsWith(".r2.dev") &&
+      !PRIVATE_STORAGE_HOST_PATTERNS.some((pattern) => hostname.includes(pattern)) &&
+      !pathname.includes(LEGACY_TEST_PREFIX) &&
+      !pathname.includes("/coloring-pages/coloring-pages")
+    );
+  } catch {
+    return false;
+  }
+}
+
+function getPublicAssetBaseUrlOverride() {
+  const runtimeProcess = globalThis.process as { env?: Record<string, string | undefined> } | undefined;
+  return runtimeProcess?.env?.NEXT_PUBLIC_COLORING_ASSET_BASE_URL;
 }
