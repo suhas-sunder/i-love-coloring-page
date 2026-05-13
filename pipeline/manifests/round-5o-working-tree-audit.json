@@ -1,0 +1,154 @@
+{
+  "generatedAt": "2026-05-13T04:13:14.806Z",
+  "runId": "round-5o-working-tree-audit",
+  "summary": {
+    "statusEntryCount": 25,
+    "intendedRound5OCount": 24,
+    "generatedValidationDriftCount": 0,
+    "localArtifactDriftCount": 0,
+    "riskyUnrelatedDriftCount": 1,
+    "safeToProceed": false
+  },
+  "commands": {
+    "statusShort": "git status --short",
+    "diffStat": "git diff --stat",
+    "diffNameOnly": "git diff --name-only"
+  },
+  "statusShort": " M .gitignore\n M AGENTS.md\n M package-lock.json\n M package.json\n?? .env.r2-upload.example\n?? pipeline/lib/\n?? pipeline/manifests/round-5o-clean-bundle-upload-audit.json\n?? pipeline/manifests/round-5o-local-uploader-lifecycle.json\n?? pipeline/manifests/round-5o-post-upload-verifier-plan.json\n?? pipeline/manifests/round-5o-project-context-check.json\n?? pipeline/manifests/round-5o-upload-dry-run-results.json\n?? pipeline/manifests/round-5o-upload-failures.json\n?? pipeline/manifests/round-5o-upload-operation-estimate.json\n?? pipeline/manifests/round-5o-working-tree-audit.json\n?? pipeline/reports/round-5o-clean-bundle-upload-audit.md\n?? pipeline/reports/round-5o-local-uploader-lifecycle.md\n?? pipeline/reports/round-5o-owner-upload-runbook.md\n?? pipeline/reports/round-5o-post-upload-verifier-plan.md\n?? pipeline/reports/round-5o-project-context-check.md\n?? pipeline/reports/round-5o-upload-dry-run-report.md\n?? pipeline/reports/round-5o-upload-operation-estimate.md\n?? pipeline/reports/round-5o-working-tree-audit.md\n?? pipeline/scripts/round-5o-upload-clean-bundle-to-r2.mjs\n?? pipeline/scripts/round-5o-verify-clean-upload-r2.mjs\n?? pipeline/tests/round-5o-local-r2-uploader.test.mjs\n",
+  "diffStat": " .gitignore        |    2 +\n AGENTS.md         |   10 +\n package-lock.json | 2279 ++++++++++++++++++++++++++++++++++++++++++++---------\n package.json      |    3 +-\n 4 files changed, 1906 insertions(+), 388 deletions(-)\n",
+  "diffNameOnly": ".gitignore\nAGENTS.md\npackage-lock.json\npackage.json\n",
+  "entries": [
+    {
+      "raw": " M .gitignore",
+      "path": ".gitignore",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": " M AGENTS.md",
+      "path": "AGENTS.md",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": " M package-lock.json",
+      "path": "package-lock.json",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": " M package.json",
+      "path": "package.json",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? .env.r2-upload.example",
+      "path": ".env.r2-upload.example",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/lib/",
+      "path": "pipeline/lib/",
+      "classification": "risky_unrelated_drift"
+    },
+    {
+      "raw": "?? pipeline/manifests/round-5o-clean-bundle-upload-audit.json",
+      "path": "pipeline/manifests/round-5o-clean-bundle-upload-audit.json",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/round-5o-local-uploader-lifecycle.json",
+      "path": "pipeline/manifests/round-5o-local-uploader-lifecycle.json",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/round-5o-post-upload-verifier-plan.json",
+      "path": "pipeline/manifests/round-5o-post-upload-verifier-plan.json",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/round-5o-project-context-check.json",
+      "path": "pipeline/manifests/round-5o-project-context-check.json",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/round-5o-upload-dry-run-results.json",
+      "path": "pipeline/manifests/round-5o-upload-dry-run-results.json",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/round-5o-upload-failures.json",
+      "path": "pipeline/manifests/round-5o-upload-failures.json",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/round-5o-upload-operation-estimate.json",
+      "path": "pipeline/manifests/round-5o-upload-operation-estimate.json",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/manifests/round-5o-working-tree-audit.json",
+      "path": "pipeline/manifests/round-5o-working-tree-audit.json",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/round-5o-clean-bundle-upload-audit.md",
+      "path": "pipeline/reports/round-5o-clean-bundle-upload-audit.md",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/round-5o-local-uploader-lifecycle.md",
+      "path": "pipeline/reports/round-5o-local-uploader-lifecycle.md",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/round-5o-owner-upload-runbook.md",
+      "path": "pipeline/reports/round-5o-owner-upload-runbook.md",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/round-5o-post-upload-verifier-plan.md",
+      "path": "pipeline/reports/round-5o-post-upload-verifier-plan.md",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/round-5o-project-context-check.md",
+      "path": "pipeline/reports/round-5o-project-context-check.md",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/round-5o-upload-dry-run-report.md",
+      "path": "pipeline/reports/round-5o-upload-dry-run-report.md",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/round-5o-upload-operation-estimate.md",
+      "path": "pipeline/reports/round-5o-upload-operation-estimate.md",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/reports/round-5o-working-tree-audit.md",
+      "path": "pipeline/reports/round-5o-working-tree-audit.md",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/scripts/round-5o-upload-clean-bundle-to-r2.mjs",
+      "path": "pipeline/scripts/round-5o-upload-clean-bundle-to-r2.mjs",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/scripts/round-5o-verify-clean-upload-r2.mjs",
+      "path": "pipeline/scripts/round-5o-verify-clean-upload-r2.mjs",
+      "classification": "intended_round_5o_artifact"
+    },
+    {
+      "raw": "?? pipeline/tests/round-5o-local-r2-uploader.test.mjs",
+      "path": "pipeline/tests/round-5o-local-r2-uploader.test.mjs",
+      "classification": "intended_round_5o_artifact"
+    }
+  ],
+  "riskyUnrelatedDrift": [
+    {
+      "raw": "?? pipeline/lib/",
+      "path": "pipeline/lib/",
+      "classification": "risky_unrelated_drift"
+    }
+  ]
+}

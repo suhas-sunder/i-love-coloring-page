@@ -345,6 +345,16 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Do not upload assets from Codex unless explicitly approved.
 - `pipeline/r2-upload-clean/` is generated media and must not be committed.
 - Runtime path switching requires a separate verified round after upload.
+- Round 5O R2 upload utility is local-only and temporary.
+- Upload scripts must default to dry-run.
+- Real upload requires explicit `--execute` plus exact bucket, prefix, and file-count confirmation flags.
+- R2 credentials must come from local environment only and must never be committed, logged, or written to reports.
+- R2 upload bucket must be `i-love-coloring-page` and prefix must be `coloring-pages` unless explicitly approved.
+- Upload scripts must never delete remote objects.
+- Upload scripts must never upload `png/` or `thumbs/`.
+- Upload scripts must never include deferred manual-review records.
+- Full upload should be run by the owner locally, not automatically by Codex.
+- Runtime paths must not switch until post-upload verification passes.
 
 ## Production Asset Hosting
 

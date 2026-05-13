@@ -1,0 +1,34 @@
+# Round 5O Working Tree Audit
+
+- Status entries: 25
+- Intended Round 5O entries: 24
+- Generated validation drift: 0
+- Local artifact drift: 0
+- Risky unrelated drift: 1
+- Safe to proceed: false
+
+-  M .gitignore: intended_round_5o_artifact
+-  M AGENTS.md: intended_round_5o_artifact
+-  M package-lock.json: intended_round_5o_artifact
+-  M package.json: intended_round_5o_artifact
+- ?? .env.r2-upload.example: intended_round_5o_artifact
+- ?? pipeline/lib/: risky_unrelated_drift
+- ?? pipeline/manifests/round-5o-clean-bundle-upload-audit.json: intended_round_5o_artifact
+- ?? pipeline/manifests/round-5o-local-uploader-lifecycle.json: intended_round_5o_artifact
+- ?? pipeline/manifests/round-5o-post-upload-verifier-plan.json: intended_round_5o_artifact
+- ?? pipeline/manifests/round-5o-project-context-check.json: intended_round_5o_artifact
+- ?? pipeline/manifests/round-5o-upload-dry-run-results.json: intended_round_5o_artifact
+- ?? pipeline/manifests/round-5o-upload-failures.json: intended_round_5o_artifact
+- ?? pipeline/manifests/round-5o-upload-operation-estimate.json: intended_round_5o_artifact
+- ?? pipeline/manifests/round-5o-working-tree-audit.json: intended_round_5o_artifact
+- ?? pipeline/reports/round-5o-clean-bundle-upload-audit.md: intended_round_5o_artifact
+- ?? pipeline/reports/round-5o-local-uploader-lifecycle.md: intended_round_5o_artifact
+- ?? pipeline/reports/round-5o-owner-upload-runbook.md: intended_round_5o_artifact
+- ?? pipeline/reports/round-5o-post-upload-verifier-plan.md: intended_round_5o_artifact
+- ?? pipeline/reports/round-5o-project-context-check.md: intended_round_5o_artifact
+- ?? pipeline/reports/round-5o-upload-dry-run-report.md: intended_round_5o_artifact
+- ?? pipeline/reports/round-5o-upload-operation-estimate.md: intended_round_5o_artifact
+- ?? pipeline/reports/round-5o-working-tree-audit.md: intended_round_5o_artifact
+- ?? pipeline/scripts/round-5o-upload-clean-bundle-to-r2.mjs: intended_round_5o_artifact
+- ?? pipeline/scripts/round-5o-verify-clean-upload-r2.mjs: intended_round_5o_artifact
+- ?? pipeline/tests/round-5o-local-r2-uploader.test.mjs: intended_round_5o_artifact
