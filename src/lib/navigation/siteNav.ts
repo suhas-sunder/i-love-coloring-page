@@ -1,5 +1,5 @@
-import routesJson from "@/generated/coloring/routes.json";
-import hubsJson from "@/generated/coloring/hubs.json";
+import routesJson from "@/generated/coloring/runtime-routes.json";
+import hubsJson from "@/generated/coloring/runtime-hubs.json";
 import { footerTrustLinks } from "@/lib/trust/trustPages";
 
 type RoutesManifest = {

@@ -1,0 +1,47 @@
+{
+  "runId": "long-tail-hub-expansion",
+  "generatedAt": "2026-05-13T22:11:05.131Z",
+  "summary": {
+    "purpose": "Promote long-tail coloring page hubs from real runtime inventory while avoiding doorway pages and token spam.",
+    "currentRuntimeRecordSource": "src/generated/coloring/runtime-available-items.json",
+    "deferredRecordsExcluded": true
+  },
+  "minimums": {
+    "subject": 8,
+    "object": 8,
+    "theme": 8,
+    "seasonal": 8,
+    "style": 20,
+    "audience": 20,
+    "combination": 10
+  },
+  "absoluteMinimumAssets": 6,
+  "maxPromotedNewHubs": 128,
+  "uniqueness": {
+    "rejectReorderedDuplicateTitles": true,
+    "rejectExistingSlugDuplicates": true,
+    "comparableHubOverlapBlockerRatio": 0.9,
+    "broadParentOverlapAllowedWhenCandidateIntentIsDistinct": true,
+    "manualReviewOverlapRatio": 0.8
+  },
+  "sitemapInclusionRules": [
+    "Only promote_now hubs are indexable and included in the sitemap.",
+    "Backlog, manual-review, section-only, and rejected candidates are not routed.",
+    "No per-image routes are created."
+  ],
+  "namingRules": [
+    "Use stable public wording based on subject intent, not raw filenames.",
+    "Do not expose AI export terms, timestamps, internal clean-key names, or source paths.",
+    "Use one canonical slug per intent and avoid singular/plural duplicates."
+  ],
+  "internalLinkingRules": [
+    "Specific hubs link to their parent hub and close sibling hubs.",
+    "Broad hubs can list high-confidence specific hubs below the gallery.",
+    "Navigation uses generated hub routes and stays bounded through the More menu."
+  ],
+  "noindexBacklogRules": [
+    "Candidates below minimum inventory stay out of routes unless a documented exception exists.",
+    "High-overlap or ambiguous candidates are backlog or manual-review only.",
+    "Spammy token-only candidates are rejected and never routed."
+  ]
+}

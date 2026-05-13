@@ -1,0 +1,3245 @@
+{
+  "generatedAt": "2026-05-13T22:11:05.131Z",
+  "runId": "long-tail-hub-expansion",
+  "summary": {
+    "manualReviewCandidateCount": 71,
+    "includesSixToNineAssetUnclearCandidates": true,
+    "includesHighOverlapCandidates": true,
+    "notRouted": true
+  },
+  "candidates": [
+    {
+      "slug": "geometric-sushi",
+      "title": "Geometric Sushi Coloring Pages",
+      "kind": "combination",
+      "assetCount": 158,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub sushi."
+      ],
+      "exampleAssetTitles": [
+        "Mandala Geometry Patterns Japan Sushi Chef",
+        "Mandala Geometry Patterns Sushi Aburi Ebi Nigiri",
+        "Mandala Geometry Patterns Sushi Aburi Salmon Nigiri",
+        "Mandala Geometry Patterns Sushi Aburi Tuna Nigiri",
+        "Mandala Geometry Patterns Sushi Alaska Roll",
+        "Mandala Geometry Patterns Sushi Amaebi Sweet Shrimp",
+        "Mandala Geometry Patterns Sushi Avocado Dragon Roll",
+        "Mandala Geometry Patterns Sushi Avocado Maki"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "detailed-for-adults",
+          "existingTitle": "Detailed Coloring Pages for Adults",
+          "existingAssetCount": 1459,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.108,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "food",
+          "existingTitle": "Food Coloring Pages",
+          "existingAssetCount": 261,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.605,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "geometric",
+          "existingTitle": "Geometric Coloring Pages",
+          "existingAssetCount": 1457,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.108,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "mandalas",
+          "existingTitle": "Mandalas Coloring Pages",
+          "existingAssetCount": 1459,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.108,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "mandala-sushi",
+      "title": "Mandala Sushi Coloring Pages",
+      "kind": "combination",
+      "assetCount": 158,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub sushi."
+      ],
+      "exampleAssetTitles": [
+        "Mandala Geometry Patterns Japan Sushi Chef",
+        "Mandala Geometry Patterns Sushi Aburi Ebi Nigiri",
+        "Mandala Geometry Patterns Sushi Aburi Salmon Nigiri",
+        "Mandala Geometry Patterns Sushi Aburi Tuna Nigiri",
+        "Mandala Geometry Patterns Sushi Alaska Roll",
+        "Mandala Geometry Patterns Sushi Amaebi Sweet Shrimp",
+        "Mandala Geometry Patterns Sushi Avocado Dragon Roll",
+        "Mandala Geometry Patterns Sushi Avocado Maki"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "detailed-for-adults",
+          "existingTitle": "Detailed Coloring Pages for Adults",
+          "existingAssetCount": 1459,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.108,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "food",
+          "existingTitle": "Food Coloring Pages",
+          "existingAssetCount": 261,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.605,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "geometric",
+          "existingTitle": "Geometric Coloring Pages",
+          "existingAssetCount": 1457,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.108,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "mandalas",
+          "existingTitle": "Mandalas Coloring Pages",
+          "existingAssetCount": 1459,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.108,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "geometric-bakery",
+      "title": "Geometric Bakery Coloring Pages",
+      "kind": "combination",
+      "assetCount": 93,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub bakery."
+      ],
+      "exampleAssetTitles": [
+        "Mandala Geometry Patterns Bakery Animal Shaped Cookies",
+        "Mandala Geometry Patterns Bakery Apple Pie",
+        "Mandala Geometry Patterns Bakery Baguette",
+        "Mandala Geometry Patterns Bakery Baker Hat",
+        "Mandala Geometry Patterns Bakery Baker Holding Bread",
+        "Mandala Geometry Patterns Bakery Bakery Shop Front",
+        "Mandala Geometry Patterns Bakery Bakery Shop Interior",
+        "Mandala Geometry Patterns Bakery Baking Classroom"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "detailed-for-adults",
+          "existingTitle": "Detailed Coloring Pages for Adults",
+          "existingAssetCount": 1459,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.064,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "food",
+          "existingTitle": "Food Coloring Pages",
+          "existingAssetCount": 261,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.356,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "geometric",
+          "existingTitle": "Geometric Coloring Pages",
+          "existingAssetCount": 1457,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.064,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "mandalas",
+          "existingTitle": "Mandalas Coloring Pages",
+          "existingAssetCount": 1459,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.064,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "mandala-bakery",
+      "title": "Mandala Bakery Coloring Pages",
+      "kind": "combination",
+      "assetCount": 93,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub bakery."
+      ],
+      "exampleAssetTitles": [
+        "Mandala Geometry Patterns Bakery Animal Shaped Cookies",
+        "Mandala Geometry Patterns Bakery Apple Pie",
+        "Mandala Geometry Patterns Bakery Baguette",
+        "Mandala Geometry Patterns Bakery Baker Hat",
+        "Mandala Geometry Patterns Bakery Baker Holding Bread",
+        "Mandala Geometry Patterns Bakery Bakery Shop Front",
+        "Mandala Geometry Patterns Bakery Bakery Shop Interior",
+        "Mandala Geometry Patterns Bakery Baking Classroom"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "detailed-for-adults",
+          "existingTitle": "Detailed Coloring Pages for Adults",
+          "existingAssetCount": 1459,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.064,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "food",
+          "existingTitle": "Food Coloring Pages",
+          "existingAssetCount": 261,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.356,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "geometric",
+          "existingTitle": "Geometric Coloring Pages",
+          "existingAssetCount": 1457,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.064,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "mandalas",
+          "existingTitle": "Mandalas Coloring Pages",
+          "existingAssetCount": 1459,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.064,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "mandala-dogs",
+      "title": "Mandala Dogs Coloring Pages",
+      "kind": "combination",
+      "assetCount": 85,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub geometric-dogs."
+      ],
+      "exampleAssetTitles": [
+        "Mandala Geometry Patterns Dogs Afghan Hound",
+        "Mandala Geometry Patterns Dogs Akita Creative",
+        "Mandala Geometry Patterns Dogs Alaskan Malamute",
+        "Mandala Geometry Patterns Dogs American Staffordshire Terrier",
+        "Mandala Geometry Patterns Dogs Anatolian Shepherd Dog",
+        "Mandala Geometry Patterns Dogs Australian Cattle Dog",
+        "Mandala Geometry Patterns Dogs Australian Shepherd",
+        "Mandala Geometry Patterns Dogs Basenji"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "animals",
+          "existingTitle": "Animals Coloring Pages",
+          "existingAssetCount": 1450,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.059,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "detailed-for-adults",
+          "existingTitle": "Detailed Coloring Pages for Adults",
+          "existingAssetCount": 1459,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.058,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "dogs",
+          "existingTitle": "Dogs Coloring Pages",
+          "existingAssetCount": 284,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.299,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "geometric",
+          "existingTitle": "Geometric Coloring Pages",
+          "existingAssetCount": 1457,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.058,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "mandalas",
+          "existingTitle": "Mandalas Coloring Pages",
+          "existingAssetCount": 1459,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.058,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "geometric-mushrooms",
+      "title": "Geometric Mushrooms Coloring Pages",
+      "kind": "combination",
+      "assetCount": 79,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub mushrooms."
+      ],
+      "exampleAssetTitles": [
+        "Chibi Mushroom Spore Print Pattern",
+        "Gardening Mushroom Spore Print Pattern",
+        "Mandala Geometry Patterns Mushroom Artists Conk",
+        "Mandala Geometry Patterns Mushroom Bay Bolete",
+        "Mandala Geometry Patterns Mushroom Beech Mushroom",
+        "Mandala Geometry Patterns Mushroom Biolu­Minescent Forest Scene",
+        "Mandala Geometry Patterns Mushroom Birch Bolete",
+        "Mandala Geometry Patterns Mushroom Birch Polypore"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "detailed-for-adults",
+          "existingTitle": "Detailed Coloring Pages for Adults",
+          "existingAssetCount": 1459,
+          "candidateOverlapRatio": 0.975,
+          "existingHubCoveredRatio": 0.053,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "geometric",
+          "existingTitle": "Geometric Coloring Pages",
+          "existingAssetCount": 1457,
+          "candidateOverlapRatio": 0.975,
+          "existingHubCoveredRatio": 0.053,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "mandalas",
+          "existingTitle": "Mandalas Coloring Pages",
+          "existingAssetCount": 1459,
+          "candidateOverlapRatio": 0.975,
+          "existingHubCoveredRatio": 0.053,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "mandala-mushrooms",
+      "title": "Mandala Mushrooms Coloring Pages",
+      "kind": "combination",
+      "assetCount": 77,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub mushrooms."
+      ],
+      "exampleAssetTitles": [
+        "Mandala Geometry Patterns Mushroom Artists Conk",
+        "Mandala Geometry Patterns Mushroom Bay Bolete",
+        "Mandala Geometry Patterns Mushroom Beech Mushroom",
+        "Mandala Geometry Patterns Mushroom Biolu­Minescent Forest Scene",
+        "Mandala Geometry Patterns Mushroom Birch Bolete",
+        "Mandala Geometry Patterns Mushroom Birch Polypore",
+        "Mandala Geometry Patterns Mushroom Black Trumpet",
+        "Mandala Geometry Patterns Mushroom Bleeding Tooth"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "detailed-for-adults",
+          "existingTitle": "Detailed Coloring Pages for Adults",
+          "existingAssetCount": 1459,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.053,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "geometric",
+          "existingTitle": "Geometric Coloring Pages",
+          "existingAssetCount": 1457,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.053,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "mandalas",
+          "existingTitle": "Mandalas Coloring Pages",
+          "existingAssetCount": 1459,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.053,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "chibi-dragons",
+      "title": "Chibi Dragons Coloring Pages",
+      "kind": "combination",
+      "assetCount": 64,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub dragons."
+      ],
+      "exampleAssetTitles": [
+        "Chibi African Dragon",
+        "Chibi Air Dragon",
+        "Chibi Amphithere Dragon",
+        "Chibi Bee Dragon",
+        "Chibi Cockatrice Dragon",
+        "Chibi Decaying Dragon",
+        "Chibi Dragon Rider Knight",
+        "Chibi Dragon"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "chibi",
+          "existingTitle": "Chibi Coloring Pages",
+          "existingAssetCount": 908,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.07,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "easy",
+          "existingTitle": "Easy Coloring Pages",
+          "existingAssetCount": 1300,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.049,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "fantasy",
+          "existingTitle": "Fantasy Coloring Pages",
+          "existingAssetCount": 1265,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.051,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "fantasy-creatures",
+          "existingTitle": "Fantasy Creatures Coloring Pages",
+          "existingAssetCount": 531,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.121,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "for-kids",
+          "existingTitle": "Coloring Pages for Kids",
+          "existingAssetCount": 1335,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.048,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "chibi-mushrooms",
+      "title": "Chibi Mushrooms Coloring Pages",
+      "kind": "combination",
+      "assetCount": 45,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub mushrooms."
+      ],
+      "exampleAssetTitles": [
+        "Chibi Mushroom Artists Conk Kawaii",
+        "Chibi Mushroom Artists Conk Painter",
+        "Chibi Mushroom Biolu­Minescent Forest Scene",
+        "Chibi Mushroom Black Trumpet",
+        "Chibi Mushroom Bleeding Tooth",
+        "Chibi Mushroom Button Mushroom",
+        "Chibi Mushroom Chicken Of The Woods",
+        "Chibi Mushroom Coprinus Comatus Shaggy Mane"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "chibi",
+          "existingTitle": "Chibi Coloring Pages",
+          "existingAssetCount": 908,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.05,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "easy",
+          "existingTitle": "Easy Coloring Pages",
+          "existingAssetCount": 1300,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.035,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "for-kids",
+          "existingTitle": "Coloring Pages for Kids",
+          "existingAssetCount": 1335,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.034,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "plushie-bears",
+      "title": "Plushie Bears Coloring Pages",
+      "kind": "combination",
+      "assetCount": 43,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub bears."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Bear Hoodie Plushie",
+        "Anime Girl Cute Teddy Bear Plushie",
+        "Anime Girl Polar Bear Hoodie Plushie",
+        "Anime Girl Polar Bear Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Bear Plushies",
+        "Chibi Plushie Kawaii Polar Bear",
+        "Chibi Plushie Koala Bear",
+        "Chibi Plushie Panda Bear"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.025,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "halloween-bats",
+      "title": "Halloween Bats Coloring Pages",
+      "kind": "combination",
+      "assetCount": 13,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub bats."
+      ],
+      "exampleAssetTitles": [
+        "Chibi Holiday Halloween Bat Colony Flying In Night Sky Coloring Page",
+        "Chibi Holiday Halloween Cauldron With Green Smoke And Bats Coloring Page",
+        "Chibi Holiday Halloween Cute Halloween Ghost Cat Bat Friends Coloring Page",
+        "Chibi Holiday Halloween Dracula Flying As Bat Over Castle Coloring Page",
+        "Chibi Holiday Halloween Dracula In Coffin With Bats Coloring Page",
+        "Chibi Holiday Halloween Graveyard With Bats And Foggy Moonlight Coloring Page",
+        "Chibi Holiday Halloween Haunted House With Bats Flying Around Coloring Page",
+        "Chibi Holiday Halloween Vampire Standing With Bat Cloak Coloring Page"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "halloween",
+          "existingTitle": "Halloween Coloring Pages",
+          "existingAssetCount": 305,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.043,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "holidays",
+          "existingTitle": "Holidays Coloring Pages",
+          "existingAssetCount": 874,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.015,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "chibi",
+          "existingTitle": "Chibi Coloring Pages",
+          "existingAssetCount": 908,
+          "candidateOverlapRatio": 0.615,
+          "existingHubCoveredRatio": 0.009,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "easy",
+          "existingTitle": "Easy Coloring Pages",
+          "existingAssetCount": 1300,
+          "candidateOverlapRatio": 0.615,
+          "existingHubCoveredRatio": 0.006,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "for-kids",
+          "existingTitle": "Coloring Pages for Kids",
+          "existingAssetCount": 1335,
+          "candidateOverlapRatio": 0.615,
+          "existingHubCoveredRatio": 0.006,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "plushie-foxes",
+      "title": "Plushie Foxes Coloring Pages",
+      "kind": "combination",
+      "assetCount": 22,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub foxes."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Arctic Fox Hoodie Plushie Snow",
+        "Anime Girl Arctic Fox Hoodie Plushie",
+        "Anime Girl Fox Hoodie Animal Plushie",
+        "Anime Girl Fox Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Fox Plushies",
+        "Chibi Plushie Fennec Fox",
+        "Holiday Birthday Celebration Plushie Fennec Fox Family",
+        "Holiday Birthday Celebration Plushie Fox Family"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.013,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "plushie-pandas",
+      "title": "Plushie Pandas Coloring Pages",
+      "kind": "combination",
+      "assetCount": 22,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub pandas."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Panda Hoodie Plushie",
+        "Anime Girl Panda Hoodie Plushie",
+        "Anime Girl Studying With Plushie Red Panda",
+        "Anime Girl Summoning Jutsu Panda Plushies",
+        "Chibi Plushie Panda Bear",
+        "Chibi Plushie Red Panda",
+        "Holiday Birthday Celebration Plushie Panda Bear Family",
+        "Holiday Birthday Celebration Plushie Red Panda Family"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.013,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "plushie-tigers",
+      "title": "Plushie Tigers Coloring Pages",
+      "kind": "combination",
+      "assetCount": 22,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub tigers."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Saber Toothed Tiger Hoodie Plushie",
+        "Anime Girl Saber Toothed Tiger Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Saber Toothed Tiger Plushies",
+        "Anime Girl Summoning Jutsu Tiger Plushies",
+        "Anime Girl Tiger Hoodie Plushie",
+        "Chibi Plushie Prehistoric Saber Toothed Tiger",
+        "Chibi Plushie Tiger",
+        "Holiday Birthday Celebration Plushie Prehistoric Saber Toothed Tiger Family"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.013,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "animals",
+          "existingTitle": "Animals Coloring Pages",
+          "existingAssetCount": 1450,
+          "candidateOverlapRatio": 0.545,
+          "existingHubCoveredRatio": 0.008,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "plushie-koalas",
+      "title": "Plushie Koalas Coloring Pages",
+      "kind": "combination",
+      "assetCount": 20,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub koalas."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Koala Hoodie Plushie Australia",
+        "Anime Girl Koala Hoodie Plushie Cosplay",
+        "Anime Girl Koala Hoodie Plushie",
+        "Anime Girl Koala Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Koala Plushies",
+        "Chibi Plushie Koala Bear",
+        "Chibi Plushie Koala Joey",
+        "Holiday Birthday Celebration Plushie Koala Bear Family"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.012,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "plushie-sloths",
+      "title": "Plushie Sloths Coloring Pages",
+      "kind": "combination",
+      "assetCount": 19,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub sloths."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Sloth Hoodie Plushie",
+        "Anime Girl Sloth Hoodie Plushie",
+        "Anime Girl Studying With Plushie Sloth Baby",
+        "Anime Girl Summoning Jutsu Sloth Plushies",
+        "Chibi Plushie Sloth Baby",
+        "Chibi Plushie Sloth",
+        "Holiday Birthday Celebration Plushie Sloth Baby Family",
+        "Holiday Birthday Celebration Plushie Sloth Family"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.011,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "plushie-lions",
+      "title": "Plushie Lions Coloring Pages",
+      "kind": "combination",
+      "assetCount": 18,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub lions."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Lion Hoodie Plushie",
+        "Anime Girl Lion Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Lion Plushies",
+        "Chibi Plushie Lion",
+        "Chibi Plushie Sea Lion",
+        "Holiday Birthday Celebration Plushie Lion Family",
+        "Holiday Christmas Plushie Lion Family",
+        "Holiday Christmas Plushie Sea Lion Family"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.011,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "plushie-otters",
+      "title": "Plushie Otters Coloring Pages",
+      "kind": "combination",
+      "assetCount": 18,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub otters."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Studying With Plushie Otter",
+        "Chibi Plushie Otter",
+        "Chibi Plushie Sea Otter",
+        "Holiday Birthday Celebration Plushie Otter Family",
+        "Holiday Birthday Celebration Plushie Sea Otter Family",
+        "Holiday Christmas Plushie Otter Family",
+        "Holiday Christmas Plushie Sea Otter Family",
+        "Holiday Halloween Costume Plushie Sea Otter Family"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.011,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "geometric-cakes",
+      "title": "Geometric Cakes Coloring Pages",
+      "kind": "combination",
+      "assetCount": 16,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub cakes."
+      ],
+      "exampleAssetTitles": [
+        "Mandala Geometry Patterns Bakery Birthday Cake",
+        "Mandala Geometry Patterns Bakery Birthday Cupcake",
+        "Mandala Geometry Patterns Bakery Bundt Cake",
+        "Mandala Geometry Patterns Bakery Cake Stand",
+        "Mandala Geometry Patterns Bakery Carrot Cake Slice",
+        "Mandala Geometry Patterns Bakery Chocolate Cupcake",
+        "Mandala Geometry Patterns Bakery Cupcake",
+        "Mandala Geometry Patterns Bakery Fruit Cupcake"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "detailed-for-adults",
+          "existingTitle": "Detailed Coloring Pages for Adults",
+          "existingAssetCount": 1459,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.011,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "geometric",
+          "existingTitle": "Geometric Coloring Pages",
+          "existingAssetCount": 1457,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.011,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "mandalas",
+          "existingTitle": "Mandalas Coloring Pages",
+          "existingAssetCount": 1459,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.011,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "food",
+          "existingTitle": "Food Coloring Pages",
+          "existingAssetCount": 261,
+          "candidateOverlapRatio": 0.875,
+          "existingHubCoveredRatio": 0.054,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "mandala-cakes",
+      "title": "Mandala Cakes Coloring Pages",
+      "kind": "combination",
+      "assetCount": 16,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub cakes."
+      ],
+      "exampleAssetTitles": [
+        "Mandala Geometry Patterns Bakery Birthday Cake",
+        "Mandala Geometry Patterns Bakery Birthday Cupcake",
+        "Mandala Geometry Patterns Bakery Bundt Cake",
+        "Mandala Geometry Patterns Bakery Cake Stand",
+        "Mandala Geometry Patterns Bakery Carrot Cake Slice",
+        "Mandala Geometry Patterns Bakery Chocolate Cupcake",
+        "Mandala Geometry Patterns Bakery Cupcake",
+        "Mandala Geometry Patterns Bakery Fruit Cupcake"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "detailed-for-adults",
+          "existingTitle": "Detailed Coloring Pages for Adults",
+          "existingAssetCount": 1459,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.011,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "geometric",
+          "existingTitle": "Geometric Coloring Pages",
+          "existingAssetCount": 1457,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.011,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "mandalas",
+          "existingTitle": "Mandalas Coloring Pages",
+          "existingAssetCount": 1459,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.011,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "food",
+          "existingTitle": "Food Coloring Pages",
+          "existingAssetCount": 261,
+          "candidateOverlapRatio": 0.875,
+          "existingHubCoveredRatio": 0.054,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "plushie-giraffes",
+      "title": "Plushie Giraffes Coloring Pages",
+      "kind": "combination",
+      "assetCount": 14,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub giraffes."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Giraffe Hoodie Animal Plushie",
+        "Anime Girl Giraffe Hoodie Plushie Cosplay",
+        "Anime Girl Giraffe Hoodie Plushie",
+        "Anime Girl Giraffe Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Cute Giraffe Plushies",
+        "Anime Girl Summoning Jutsu Giraffe Plushies",
+        "Chibi Plushie Giraffe",
+        "Holiday Birthday Celebration Plushie Giraffe Family"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.008,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "plushie-hippos",
+      "title": "Plushie Hippos Coloring Pages",
+      "kind": "combination",
+      "assetCount": 14,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub hippos."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Hippo Hoodie Animal Plushie",
+        "Anime Girl Hippo Hoodie Plushie Cosplay",
+        "Anime Girl Hippo Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Hippo Plushies",
+        "Chibi Plushie Hippo",
+        "Holiday Birthday Celebration Plushie Hippo Family",
+        "Holiday Christmas Plushie Hippo Family",
+        "Holiday Christmas Plushie Hippo"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.008,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "plushie-rabbits",
+      "title": "Plushie Rabbits Coloring Pages",
+      "kind": "combination",
+      "assetCount": 14,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub rabbits."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Rabbit Hoodie Plushie",
+        "Anime Girl Rabbit Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Rabbit Plushies",
+        "Chibi Plushie Bunny Rabbit",
+        "Holiday Birthday Celebration Plushie Bunny Rabbit Family",
+        "Holiday Christmas Plushie Bunny Rabbit Family",
+        "Holiday Christmas Plushie Bunny Rabbit",
+        "Holiday Christmas Plushie Bunny"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.008,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "plushie-wolves",
+      "title": "Plushie Wolves Coloring Pages",
+      "kind": "combination",
+      "assetCount": 14,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub wolves."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Summoning Jutsu Dire Wolf Plushies",
+        "Anime Girl Summoning Jutsu Wolf Plushies",
+        "Anime Girl Wolf Hoodie Plushie",
+        "Anime Girl Wolf Hoodie Plushie",
+        "Chibi Plushie Wolf",
+        "Holiday Birthday Celebration Plushie Wolf Family",
+        "Holiday Christmas Plushie Wolf Family",
+        "Holiday Christmas Plushie Wolf"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.008,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "plushie-cows",
+      "title": "Plushie Cows Coloring Pages",
+      "kind": "combination",
+      "assetCount": 13,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub cows."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Cow Hoodie Plushie Farm",
+        "Anime Girl Cow Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Cow Plushies",
+        "Chibi Plushie Cow",
+        "Holiday Birthday Celebration Plushie Cow Family",
+        "Holiday Birthday Celebration Plushie Cow Jumps Over The Moon",
+        "Holiday Christmas Plushie Cow Family",
+        "Holiday Halloween Costume Plushie Cow Family"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.008,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "plushie-moose",
+      "title": "Plushie Moose Coloring Pages",
+      "kind": "combination",
+      "assetCount": 13,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub moose."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Moose Hoodie Plushie Cosplay",
+        "Anime Girl Moose Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Moose Plushies",
+        "Chibi Plushie Moose",
+        "Holiday Birthday Celebration Plushie Moose Family",
+        "Holiday Christmas Plushie Happy Moose Family",
+        "Holiday Christmas Plushie Moose Family",
+        "Holiday Halloween Costume Plushie Moose Family"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.008,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "halloween-witches",
+      "title": "Halloween Witches Coloring Pages",
+      "kind": "combination",
+      "assetCount": 11,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub witches."
+      ],
+      "exampleAssetTitles": [
+        "Chibi Holiday Halloween Ghost Riding On Broom With Witch Coloring Page",
+        "Chibi Holiday Halloween Witch Cooking Potion In Cauldron Coloring Page",
+        "Chibi Holiday Halloween Witch Cottage In Forest Scene Coloring Page",
+        "Chibi Holiday Halloween Witch Flying On Broomstick Across Moon Coloring Page",
+        "Chibi Holiday Halloween Witch Hat And Potion Bottles Coloring Page",
+        "Chibi Holiday Halloween Witch Reading Spellbook Near Cauldron Coloring Page",
+        "Chibi Holiday Halloween Witch With Black Cat On Shoulder Coloring Page",
+        "Holiday Halloween Witch Cooking Potion In Cauldron Coloring Page"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "halloween",
+          "existingTitle": "Halloween Coloring Pages",
+          "existingAssetCount": 305,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.036,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "holidays",
+          "existingTitle": "Holidays Coloring Pages",
+          "existingAssetCount": 874,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.013,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "chibi",
+          "existingTitle": "Chibi Coloring Pages",
+          "existingAssetCount": 908,
+          "candidateOverlapRatio": 0.636,
+          "existingHubCoveredRatio": 0.008,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "easy",
+          "existingTitle": "Easy Coloring Pages",
+          "existingAssetCount": 1300,
+          "candidateOverlapRatio": 0.636,
+          "existingHubCoveredRatio": 0.005,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "for-kids",
+          "existingTitle": "Coloring Pages for Kids",
+          "existingAssetCount": 1335,
+          "candidateOverlapRatio": 0.636,
+          "existingHubCoveredRatio": 0.005,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "christmas-bears",
+      "title": "Christmas Bears Coloring Pages",
+      "kind": "combination",
+      "assetCount": 10,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub bears."
+      ],
+      "exampleAssetTitles": [
+        "Holiday Christmas Animals Bears",
+        "Holiday Christmas Animals Polar Bears",
+        "Holiday Christmas Polar Bears Wrapping Gifts Coloring Page",
+        "Holiday Christmas Plushie Koala Bear Family",
+        "Holiday Christmas Plushie Panda Bear Family",
+        "Holiday Christmas Plushie Panda Bear",
+        "Holiday Christmas Plushie Polar Bear Family",
+        "Holiday Christmas Plushie Polar Bear"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "christmas",
+          "existingTitle": "Christmas Coloring Pages",
+          "existingAssetCount": 332,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.03,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "holidays",
+          "existingTitle": "Holidays Coloring Pages",
+          "existingAssetCount": 874,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.011,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 0.7,
+          "existingHubCoveredRatio": 0.004,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "plushie-stegosaurus",
+      "title": "Plushie Stegosaurus Coloring Pages",
+      "kind": "combination",
+      "assetCount": 12,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub stegosaurus."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Stegosaurus Hoodie Plushie",
+        "Anime Girl Stegosaurus Hoodie Plushie",
+        "Anime Girl Stegosaurus Hoodie Plushies",
+        "Anime Girl Summoning Jutsu Stegosaurus Plushies",
+        "Chibi Plushie Prehistoric Stegosaurus",
+        "Holiday Birthday Celebration Plushie Prehistoric Stegosaurus Family",
+        "Holiday Christmas Plushie Prehistoric Stegosaurus Family",
+        "Holiday Halloween Costume Plushie Prehistoric Stegosaurus Family"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "animals",
+          "existingTitle": "Animals Coloring Pages",
+          "existingAssetCount": 1450,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.008,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "dinosaurs",
+          "existingTitle": "Dinosaurs Coloring Pages",
+          "existingAssetCount": 189,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.063,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.007,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "prehistoric-animals",
+          "existingTitle": "Prehistoric Animals Coloring Pages",
+          "existingAssetCount": 220,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.055,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "plushie-t-rex",
+      "title": "Plushie T-Rex Coloring Pages",
+      "kind": "combination",
+      "assetCount": 12,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub t-rex."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl T Rex Hoodie Plushie Back Yard",
+        "Anime Girl T Rex Hoodie Plushie Volcano",
+        "Anime Girl T Rex Hoodie Plushie",
+        "Anime Girl T Rex Hoodie Plushie",
+        "Chibi Plushie Prehistoric Tyrannosaurus Rex",
+        "Holiday Birthday Celebration Plushie Prehistoric Tyrannosaurus Rex Family",
+        "Holiday Christmas Plushie Prehistoric Tyrannosaurus Rex Family",
+        "Holiday Halloween Costume Plushie Prehistoric Tyrannosaurus Rex Family"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "animals",
+          "existingTitle": "Animals Coloring Pages",
+          "existingAssetCount": 1450,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.008,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "dinosaurs",
+          "existingTitle": "Dinosaurs Coloring Pages",
+          "existingAssetCount": 189,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.063,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.007,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "prehistoric-animals",
+          "existingTitle": "Prehistoric Animals Coloring Pages",
+          "existingAssetCount": 220,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.055,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "plushie-zebras",
+      "title": "Plushie Zebras Coloring Pages",
+      "kind": "combination",
+      "assetCount": 12,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub zebras."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Summoning Jutsu Zebra Plushies",
+        "Anime Girl Zebra Hoodie Plushie Blowing Bubbles",
+        "Anime Girl Zebra Hoodie Plushie",
+        "Anime Girl Zebra Hoodie Plushie",
+        "Chibi Plushie Zebra",
+        "Holiday Birthday Celebration Plushie Zebra Family",
+        "Holiday Christmas Plushie Zebra Family",
+        "Holiday Halloween Costume Plushie Zebra Family"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.007,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "chibi-bats",
+      "title": "Chibi Bats Coloring Pages",
+      "kind": "combination",
+      "assetCount": 11,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub bats."
+      ],
+      "exampleAssetTitles": [
+        "Chibi Bat",
+        "Chibi Dungeon Giant Bat Swarm",
+        "Chibi Holiday Halloween Bat Colony Flying In Night Sky Coloring Page",
+        "Chibi Holiday Halloween Cauldron With Green Smoke And Bats Coloring Page",
+        "Chibi Holiday Halloween Cute Halloween Ghost Cat Bat Friends Coloring Page",
+        "Chibi Holiday Halloween Dracula Flying As Bat Over Castle Coloring Page",
+        "Chibi Holiday Halloween Dracula In Coffin With Bats Coloring Page",
+        "Chibi Holiday Halloween Graveyard With Bats And Foggy Moonlight Coloring Page"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "chibi",
+          "existingTitle": "Chibi Coloring Pages",
+          "existingAssetCount": 908,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.012,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "easy",
+          "existingTitle": "Easy Coloring Pages",
+          "existingAssetCount": 1300,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.008,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "for-kids",
+          "existingTitle": "Coloring Pages for Kids",
+          "existingAssetCount": 1335,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.008,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "halloween",
+          "existingTitle": "Halloween Coloring Pages",
+          "existingAssetCount": 305,
+          "candidateOverlapRatio": 0.727,
+          "existingHubCoveredRatio": 0.026,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "holidays",
+          "existingTitle": "Holidays Coloring Pages",
+          "existingAssetCount": 874,
+          "candidateOverlapRatio": 0.727,
+          "existingHubCoveredRatio": 0.009,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "chibi-witches",
+      "title": "Chibi Witches Coloring Pages",
+      "kind": "combination",
+      "assetCount": 11,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub witches."
+      ],
+      "exampleAssetTitles": [
+        "Chibi Holiday Halloween Ghost Riding On Broom With Witch Coloring Page",
+        "Chibi Holiday Halloween Witch Cooking Potion In Cauldron Coloring Page",
+        "Chibi Holiday Halloween Witch Cottage In Forest Scene Coloring Page",
+        "Chibi Holiday Halloween Witch Flying On Broomstick Across Moon Coloring Page",
+        "Chibi Holiday Halloween Witch Hat And Potion Bottles Coloring Page",
+        "Chibi Holiday Halloween Witch Reading Spellbook Near Cauldron Coloring Page",
+        "Chibi Holiday Halloween Witch With Black Cat On Shoulder Coloring Page",
+        "Chibi Midieval Fantasy Witch"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "chibi",
+          "existingTitle": "Chibi Coloring Pages",
+          "existingAssetCount": 908,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.012,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "easy",
+          "existingTitle": "Easy Coloring Pages",
+          "existingAssetCount": 1300,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.008,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "for-kids",
+          "existingTitle": "Coloring Pages for Kids",
+          "existingAssetCount": 1335,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.008,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "halloween",
+          "existingTitle": "Halloween Coloring Pages",
+          "existingAssetCount": 305,
+          "candidateOverlapRatio": 0.636,
+          "existingHubCoveredRatio": 0.023,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "holidays",
+          "existingTitle": "Holidays Coloring Pages",
+          "existingAssetCount": 874,
+          "candidateOverlapRatio": 0.636,
+          "existingHubCoveredRatio": 0.008,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "plushie-bees",
+      "title": "Plushie Bees Coloring Pages",
+      "kind": "combination",
+      "assetCount": 11,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub bees."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Bee Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Bumble Bee Battle Armor Plushies",
+        "Anime Girl Summoning Killer Bee Plushies",
+        "Chibi Plushie Bee",
+        "Holiday Birthday Celebration Plushie Bee Family",
+        "Holiday Christmas Plushie Bee Family",
+        "Holiday Halloween Costume Plushie Bee Family",
+        "Mandala Geometry Patterns Plushie Bee Insects"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "animals",
+          "existingTitle": "Animals Coloring Pages",
+          "existingAssetCount": 1450,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.008,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "insects",
+          "existingTitle": "Insects Coloring Pages",
+          "existingAssetCount": 179,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.061,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.006,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "plushie-brachiosaurus",
+      "title": "Plushie Brachiosaurus Coloring Pages",
+      "kind": "combination",
+      "assetCount": 11,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub brachiosaurus."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Brachiosaurus Hoodie Plushie",
+        "Anime Girl Brachiosaurus Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Brachiosaurus Plushies",
+        "Chibi Plushie Prehistoric Brachiosaurus",
+        "Holiday Birthday Celebration Plushie Prehistoric Brachiosaurus Family",
+        "Holiday Christmas Plushie Prehistoric Brachiosaurus Family",
+        "Holiday Halloween Costume Plushie Prehistoric Brachiosaurus Family",
+        "Mandala Geometry Patterns Plushie Prehistoric Brachiosaurus Animal"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "animals",
+          "existingTitle": "Animals Coloring Pages",
+          "existingAssetCount": 1450,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.008,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "dinosaurs",
+          "existingTitle": "Dinosaurs Coloring Pages",
+          "existingAssetCount": 189,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.058,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.006,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "prehistoric-animals",
+          "existingTitle": "Prehistoric Animals Coloring Pages",
+          "existingAssetCount": 220,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.05,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "plushie-elephants",
+      "title": "Plushie Elephants Coloring Pages",
+      "kind": "combination",
+      "assetCount": 11,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub elephants."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Elephant Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Elephant Plushies",
+        "Chibi Plushie Elephant",
+        "Holiday Birthday Celebration Plushie Elephant Family",
+        "Holiday Christmas Plushie Elephant Family",
+        "Holiday Halloween Costume Plushie Elephant Family",
+        "Mandala Geometry Patterns Plushie Animals Elephant",
+        "Mandala Geometry Patterns Plushie Elephant Animals"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.006,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "plushie-horses",
+      "title": "Plushie Horses Coloring Pages",
+      "kind": "combination",
+      "assetCount": 11,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub horses."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Horse Hoodie Plushie",
+        "Anime Girl Horse Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Horse Plushies",
+        "Chibi Plushie Horse",
+        "Holiday Birthday Celebration Plushie Horse Family",
+        "Holiday Christmas Plushie Horse Family",
+        "Holiday Halloween Costume Plushie Horse Family",
+        "Mandala Geometry Patterns Plushie Horse Animals"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.006,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "plushie-megalodon",
+      "title": "Plushie Megalodon Coloring Pages",
+      "kind": "combination",
+      "assetCount": 11,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub megalodon."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Megalodon Hoodie Plushie",
+        "Anime Girl Megalodon Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Megalodon Plushies",
+        "Chibi Plushie Prehistoric Megalodon",
+        "Holiday Birthday Celebration Plushie Prehistoric Megalodon Family",
+        "Holiday Christmas Plushie Prehistoric Megalodon Family",
+        "Holiday Halloween Costume Plushie Prehistoric Megalodon Family",
+        "Mandala Geometry Patterns Plushie Prehistoric Megalodon Animal"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.006,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "plushie-monkeys",
+      "title": "Plushie Monkeys Coloring Pages",
+      "kind": "combination",
+      "assetCount": 11,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub monkeys."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Monkey Hoodie Animal Plushie",
+        "Anime Girl Monkey Hoodie Plushie",
+        "Chibi Plushie Monkey",
+        "Holiday Birthday Celebration Plushie Monkey Family",
+        "Holiday Christmas Plushie Monkey Family",
+        "Holiday Halloween Costume Plushie Monkey Family",
+        "Mandala Geometry Patterns Plushie Animal Monkey",
+        "Mandala Geometry Patterns Plushie Monkey Animals"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.006,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "plushie-mushrooms",
+      "title": "Plushie Mushrooms Coloring Pages",
+      "kind": "combination",
+      "assetCount": 11,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub mushrooms."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Summoning Jutsu Mushroom Dragon Plushies",
+        "Anime Girl Summoning Mushroom Creature Plushies",
+        "Anime Girl Summoning Mushroom Fairy Plushies",
+        "Chibi Plushie Mushroom Character",
+        "Holiday Birthday Celebration Plushie Mushroom Family",
+        "Holiday Christmas Plushie Mushroom Family",
+        "Holiday Halloween Costume Plushie Mushroom Family",
+        "Mandala Geometry Patterns Plushie Mushrooms Nature"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.006,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "plushie-penguins",
+      "title": "Plushie Penguins Coloring Pages",
+      "kind": "combination",
+      "assetCount": 11,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub penguins."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Penguin Hoodie Plushie",
+        "Chibi Plushie Penguin",
+        "Holiday Birthday Celebration Plushie Penguin Family",
+        "Holiday Christmas Plushie Penguin Family",
+        "Holiday Christmas Plushie Penguin",
+        "Holiday Halloween Costume Plushie Penguin Family",
+        "Mandala Geometry Patterns Plushie Animals Penguin",
+        "Mandala Geometry Patterns Plushie Penguin Animals"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.006,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "plushie-sheep",
+      "title": "Plushie Sheep Coloring Pages",
+      "kind": "combination",
+      "assetCount": 11,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub sheep."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Sheep Hoodie Plushie",
+        "Anime Girl Sheep Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Sheep Plushies",
+        "Chibi Plushie Bighorn Sheep",
+        "Holiday Birthday Celebration Plushie Bighorn Sheep Family",
+        "Holiday Christmas Plushie Bighorn Sheep Family",
+        "Holiday Halloween Costume Plushie Bighorn Sheep Family",
+        "Plushie Bighorn Sheep Family"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.006,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "chibi-knights",
+      "title": "Chibi Knights Coloring Pages",
+      "kind": "combination",
+      "assetCount": 10,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub knights."
+      ],
+      "exampleAssetTitles": [
+        "Chibi Dragon Rider Knight",
+        "Chibi Dungeon Dragon Vs Knight",
+        "Chibi Dungeon Knight In Armor",
+        "Chibi Dungeon Undead Warrior Knight",
+        "Chibi Knight",
+        "Chibi Knights Battle",
+        "Chibi Knights",
+        "Chibi Midieval Fantasy Knight King"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "chibi",
+          "existingTitle": "Chibi Coloring Pages",
+          "existingAssetCount": 908,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.011,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "easy",
+          "existingTitle": "Easy Coloring Pages",
+          "existingAssetCount": 1300,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.008,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "for-kids",
+          "existingTitle": "Coloring Pages for Kids",
+          "existingAssetCount": 1335,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.007,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "fantasy",
+          "existingTitle": "Fantasy Coloring Pages",
+          "existingAssetCount": 1265,
+          "candidateOverlapRatio": 0.5,
+          "existingHubCoveredRatio": 0.004,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "plushie-bats",
+      "title": "Plushie Bats Coloring Pages",
+      "kind": "combination",
+      "assetCount": 10,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub bats."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Bat Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Bat Plushies",
+        "Chibi Plushie Bat",
+        "Holiday Birthday Celebration Plushie Bat Family",
+        "Holiday Christmas Plushie Bat Family",
+        "Holiday Halloween Costume Plushie Bat Family",
+        "Mandala Geometry Patterns Plushie Bat Animals",
+        "Mandala Geometry Patterns Plushie Bat"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.006,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "plushie-deer",
+      "title": "Plushie Deer Coloring Pages",
+      "kind": "combination",
+      "assetCount": 10,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub deer."
+      ],
+      "exampleAssetTitles": [
+        "Chibi Plushie Deer",
+        "Holiday Birthday Celebration Plushie Deer Family",
+        "Holiday Christmas Plushie Deer Family",
+        "Holiday Christmas Plushie Deer",
+        "Holiday Halloween Costume Plushie Deer Family",
+        "Mandala Geometry Patterns Plushie Animals Deer",
+        "Mandala Geometry Patterns Plushie Deer",
+        "Plushie Arctic Deer Family"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.006,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "plushie-ducks",
+      "title": "Plushie Ducks Coloring Pages",
+      "kind": "combination",
+      "assetCount": 10,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub ducks."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Duck Hoodie Plushie",
+        "Chibi Plushie Duck",
+        "Holiday Birthday Celebration Plushie Duck Family",
+        "Holiday Christmas Plushie Duck Family",
+        "Holiday Halloween Costume Plushie Duck Family",
+        "Mandala Geometry Patterns Plushie Duck Animals",
+        "Mandala Geometry Patterns Plushie Duck",
+        "Mandala Geometry Patterns Plushie Happy Duck"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.006,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "plushie-hedgehogs",
+      "title": "Plushie Hedgehogs Coloring Pages",
+      "kind": "combination",
+      "assetCount": 10,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub hedgehogs."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Hedgehog Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Hedgehog Plushies",
+        "Holiday Birthday Celebration Plushie Hedgehog Family",
+        "Holiday Christmas Plushie Hedgehog Family",
+        "Holiday Halloween Costume Plushie Hedgehog Family",
+        "Mandala Geometry Patterns Plushie Animals Hedgehog",
+        "Mandala Geometry Patterns Plushie Hedgehog Animals",
+        "Mandala Geometry Patterns Plushie Hedgehog"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.006,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "plushie-llamas",
+      "title": "Plushie Llamas Coloring Pages",
+      "kind": "combination",
+      "assetCount": 10,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub llamas."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Llama Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Llama Plushies",
+        "Chibi Plushie Llama",
+        "Holiday Birthday Celebration Plushie Llama Family",
+        "Holiday Christmas Plushie Llama Family",
+        "Holiday Halloween Costume Plushie Llama Family",
+        "Mandala Geometry Patterns Plushie Llama Animals",
+        "Mandala Geometry Patterns Plushie Llama"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.006,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "plushie-snakes",
+      "title": "Plushie Snakes Coloring Pages",
+      "kind": "combination",
+      "assetCount": 10,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub snakes."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Snake Hoodie Plushie",
+        "Anime Girl Snake Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Snake Plushies",
+        "Chibi Plushie Snake",
+        "Holiday Birthday Celebration Plushie Snake Family",
+        "Holiday Christmas Plushie Snake Family",
+        "Mandala Geometry Patterns Plushie Snake Animals",
+        "Mandala Geometry Patterns Plushie Snake"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "animals",
+          "existingTitle": "Animals Coloring Pages",
+          "existingAssetCount": 1450,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.007,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.006,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "reptiles",
+          "existingTitle": "Reptiles Coloring Pages",
+          "existingAssetCount": 156,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.064,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "plushie-velociraptors",
+      "title": "Plushie Velociraptors Coloring Pages",
+      "kind": "combination",
+      "assetCount": 10,
+      "classification": "backlog_later",
+      "reasons": [
+        "Meets asset minimum, has clear intent, and passes overlap checks.",
+        "Deferred because it overlaps heavily with selected hub velociraptors."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Velociraptor Hoodie Plushie",
+        "Anime Girl Velociraptor Hoodie Plushie",
+        "Chibi Plushie Prehistoric Velociraptor",
+        "Holiday Birthday Celebration Plushie Prehistoric Velociraptor Family",
+        "Holiday Christmas Plushie Prehistoric Velociraptor Family",
+        "Holiday Halloween Costume Plushie Prehistoric Velociraptor Family",
+        "Mandala Geometry Patterns Plushie Prehistoric Velociraptor Animal",
+        "Mandala Geometry Patterns Plushie Prehistoric Velociraptor"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "animals",
+          "existingTitle": "Animals Coloring Pages",
+          "existingAssetCount": 1450,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.007,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "dinosaurs",
+          "existingTitle": "Dinosaurs Coloring Pages",
+          "existingAssetCount": 189,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.053,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.006,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "prehistoric-animals",
+          "existingTitle": "Prehistoric Animals Coloring Pages",
+          "existingAssetCount": 220,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.045,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": false
+    },
+    {
+      "slug": "birthday-cakes",
+      "title": "Birthday Cakes Coloring Pages",
+      "kind": "combination",
+      "assetCount": 7,
+      "classification": "manual_review",
+      "reasons": [
+        "Below combination minimum of 10 assets but above absolute minimum."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Birthday Cake",
+        "Anime Girl Celetbrating Birthday Cake",
+        "Holiday Birthday Cake With Candles",
+        "Holiday Birthday Cupcake",
+        "Holiday Birthday Dog With Birthday Cake",
+        "Mandala Geometry Patterns Bakery Birthday Cake",
+        "Mandala Geometry Patterns Bakery Birthday Cupcake"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "birthday",
+          "existingTitle": "Birthday Coloring Pages",
+          "existingAssetCount": 211,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.033,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "holidays",
+          "existingTitle": "Holidays Coloring Pages",
+          "existingAssetCount": 874,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.008,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "food",
+          "existingTitle": "Food Coloring Pages",
+          "existingAssetCount": 261,
+          "candidateOverlapRatio": 0.857,
+          "existingHubCoveredRatio": 0.023,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": true
+    },
+    {
+      "slug": "halloween-cats",
+      "title": "Halloween Cats Coloring Pages",
+      "kind": "combination",
+      "assetCount": 7,
+      "classification": "manual_review",
+      "reasons": [
+        "Below combination minimum of 10 assets but above absolute minimum."
+      ],
+      "exampleAssetTitles": [
+        "Chibi Holiday Halloween Black Cat Peeking Out Of Pumpkin Coloring Page",
+        "Chibi Holiday Halloween Black Cat Sitting On Fence Under Moon Coloring Page",
+        "Chibi Holiday Halloween Cute Halloween Ghost Cat Bat Friends Coloring Page",
+        "Chibi Holiday Halloween Mummy Running Away From Black Cat Coloring Page",
+        "Chibi Holiday Halloween Witch With Black Cat On Shoulder Coloring Page",
+        "Holiday Halloween Black Cat Sitting On Fence Under Moon Coloring Page",
+        "Holiday Halloween Costume Plushie Kitten Cat Family"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "animals",
+          "existingTitle": "Animals Coloring Pages",
+          "existingAssetCount": 1450,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.005,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "cats",
+          "existingTitle": "Cats Coloring Pages",
+          "existingAssetCount": 55,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.127,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "halloween",
+          "existingTitle": "Halloween Coloring Pages",
+          "existingAssetCount": 305,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.023,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "holidays",
+          "existingTitle": "Holidays Coloring Pages",
+          "existingAssetCount": 874,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.008,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "for-kids",
+          "existingTitle": "Coloring Pages for Kids",
+          "existingAssetCount": 1335,
+          "candidateOverlapRatio": 0.857,
+          "existingHubCoveredRatio": 0.004,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "chibi",
+          "existingTitle": "Chibi Coloring Pages",
+          "existingAssetCount": 908,
+          "candidateOverlapRatio": 0.714,
+          "existingHubCoveredRatio": 0.006,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": true
+    },
+    {
+      "slug": "halloween-houses",
+      "title": "Halloween Houses Coloring Pages",
+      "kind": "combination",
+      "assetCount": 7,
+      "classification": "manual_review",
+      "reasons": [
+        "Below combination minimum of 10 assets but above absolute minimum."
+      ],
+      "exampleAssetTitles": [
+        "Chibi Holiday Halloween Haunted House Coloring Page",
+        "Chibi Holiday Halloween Haunted House On Hill Coloring Page",
+        "Chibi Holiday Halloween Haunted House On Hill Under Full Moon Coloring Page",
+        "Chibi Holiday Halloween Haunted House On Stilts In Swamp Coloring Page",
+        "Chibi Holiday Halloween Haunted House With Bats Flying Around Coloring Page",
+        "Chibi Holiday Halloween Haunted House With Broken Fence Coloring Page",
+        "Holiday Halloween Haunted House On Hill Under Full Moon Coloring Page"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "buildings",
+          "existingTitle": "Buildings Coloring Pages",
+          "existingAssetCount": 156,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.045,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "halloween",
+          "existingTitle": "Halloween Coloring Pages",
+          "existingAssetCount": 305,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.023,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "holidays",
+          "existingTitle": "Holidays Coloring Pages",
+          "existingAssetCount": 874,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.008,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "chibi",
+          "existingTitle": "Chibi Coloring Pages",
+          "existingAssetCount": 908,
+          "candidateOverlapRatio": 0.857,
+          "existingHubCoveredRatio": 0.007,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "easy",
+          "existingTitle": "Easy Coloring Pages",
+          "existingAssetCount": 1300,
+          "candidateOverlapRatio": 0.857,
+          "existingHubCoveredRatio": 0.005,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "for-kids",
+          "existingTitle": "Coloring Pages for Kids",
+          "existingAssetCount": 1335,
+          "candidateOverlapRatio": 0.857,
+          "existingHubCoveredRatio": 0.004,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": true
+    },
+    {
+      "slug": "birthday-dragons",
+      "title": "Birthday Dragons Coloring Pages",
+      "kind": "combination",
+      "assetCount": 6,
+      "classification": "manual_review",
+      "reasons": [
+        "Below combination minimum of 10 assets but above absolute minimum."
+      ],
+      "exampleAssetTitles": [
+        "Holiday Birthday Celebration Dragon",
+        "Holiday Birthday Celebration Fire Dragon",
+        "Holiday Birthday Celebration Ice Dragon",
+        "Holiday Birthday Celebration Plushie Baby Dragon Family",
+        "Holiday Birthday Celebration Plushie Dragon Family",
+        "Holiday Birthday Celebration Plushie Komodo Dragon Family"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "birthday",
+          "existingTitle": "Birthday Coloring Pages",
+          "existingAssetCount": 211,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.028,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "fantasy",
+          "existingTitle": "Fantasy Coloring Pages",
+          "existingAssetCount": 1265,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.005,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "fantasy-creatures",
+          "existingTitle": "Fantasy Creatures Coloring Pages",
+          "existingAssetCount": 531,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.011,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "holidays",
+          "existingTitle": "Holidays Coloring Pages",
+          "existingAssetCount": 874,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.007,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "plushie-dragons",
+          "existingTitle": "Plushie Dragons Coloring Pages",
+          "existingAssetCount": 75,
+          "candidateOverlapRatio": 0.5,
+          "existingHubCoveredRatio": 0.04,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 0.5,
+          "existingHubCoveredRatio": 0.002,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": true
+    },
+    {
+      "slug": "christmas-dragons",
+      "title": "Christmas Dragons Coloring Pages",
+      "kind": "combination",
+      "assetCount": 6,
+      "classification": "manual_review",
+      "reasons": [
+        "Below combination minimum of 10 assets but above absolute minimum."
+      ],
+      "exampleAssetTitles": [
+        "Holiday Christmas Animals Dragons",
+        "Holiday Christmas Plushie Baby Dragon Family",
+        "Holiday Christmas Plushie Baby Dragon",
+        "Holiday Christmas Plushie Dragon Family",
+        "Holiday Christmas Plushie Dragon",
+        "Holiday Christmas Plushie Komodo Dragon Family"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "christmas",
+          "existingTitle": "Christmas Coloring Pages",
+          "existingAssetCount": 332,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.018,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "fantasy",
+          "existingTitle": "Fantasy Coloring Pages",
+          "existingAssetCount": 1265,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.005,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "fantasy-creatures",
+          "existingTitle": "Fantasy Creatures Coloring Pages",
+          "existingAssetCount": 531,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.011,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "holidays",
+          "existingTitle": "Holidays Coloring Pages",
+          "existingAssetCount": 874,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.007,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "plushie-dragons",
+          "existingTitle": "Plushie Dragons Coloring Pages",
+          "existingAssetCount": 75,
+          "candidateOverlapRatio": 0.833,
+          "existingHubCoveredRatio": 0.067,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 0.833,
+          "existingHubCoveredRatio": 0.003,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": true
+    },
+    {
+      "slug": "snowmen",
+      "title": "Snowmen Coloring Pages",
+      "kind": "seasonal",
+      "assetCount": 7,
+      "classification": "manual_review",
+      "reasons": [
+        "Below seasonal minimum of 8 assets but above absolute minimum."
+      ],
+      "exampleAssetTitles": [
+        "Chibi Plushie Snowman Character",
+        "Christmas Holiday Snowman",
+        "Holiday Christmas Snowman Decorated With String Lights Coloring Page",
+        "Holiday Christmas Snowman Hugging Small Penguin Friend Coloring Page",
+        "Holiday Christmas Snowman Ice Skating On Frozen Pond Coloring Page",
+        "Holiday Christmas Snowman With Carrot Nose And Top Hat Coloring Page",
+        "Mandala Geometry Patterns Plushie Snowman Character"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "christmas",
+          "existingTitle": "Christmas Coloring Pages",
+          "existingAssetCount": 332,
+          "candidateOverlapRatio": 0.714,
+          "existingHubCoveredRatio": 0.015,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "holidays",
+          "existingTitle": "Holidays Coloring Pages",
+          "existingAssetCount": 874,
+          "candidateOverlapRatio": 0.714,
+          "existingHubCoveredRatio": 0.006,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": true
+    },
+    {
+      "slug": "chibi-cats",
+      "title": "Chibi Cats Coloring Pages",
+      "kind": "combination",
+      "assetCount": 9,
+      "classification": "manual_review",
+      "reasons": [
+        "Below combination minimum of 10 assets but above absolute minimum."
+      ],
+      "exampleAssetTitles": [
+        "Chibi Cat",
+        "Chibi Holiday Halloween Black Cat Peeking Out Of Pumpkin Coloring Page",
+        "Chibi Holiday Halloween Black Cat Sitting On Fence Under Moon Coloring Page",
+        "Chibi Holiday Halloween Cute Halloween Ghost Cat Bat Friends Coloring Page",
+        "Chibi Holiday Halloween Mummy Running Away From Black Cat Coloring Page",
+        "Chibi Holiday Halloween Witch With Black Cat On Shoulder Coloring Page",
+        "Chibi Kitten",
+        "Chibi Plushie Kitten Cat"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "animals",
+          "existingTitle": "Animals Coloring Pages",
+          "existingAssetCount": 1450,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.006,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "cats",
+          "existingTitle": "Cats Coloring Pages",
+          "existingAssetCount": 55,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.164,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "chibi",
+          "existingTitle": "Chibi Coloring Pages",
+          "existingAssetCount": 908,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.01,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "easy",
+          "existingTitle": "Easy Coloring Pages",
+          "existingAssetCount": 1300,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.007,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "for-kids",
+          "existingTitle": "Coloring Pages for Kids",
+          "existingAssetCount": 1335,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.007,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "halloween",
+          "existingTitle": "Halloween Coloring Pages",
+          "existingAssetCount": 305,
+          "candidateOverlapRatio": 0.556,
+          "existingHubCoveredRatio": 0.016,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": true
+    },
+    {
+      "slug": "plushie-butterflies",
+      "title": "Plushie Butterflies Coloring Pages",
+      "kind": "combination",
+      "assetCount": 9,
+      "classification": "manual_review",
+      "reasons": [
+        "Below combination minimum of 10 assets but above absolute minimum."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Summoning Butterfly Plushies",
+        "Chibi Plushie Butterfly",
+        "Holiday Birthday Celebration Plushie Butterfly Family",
+        "Holiday Christmas Plushie Butterfly Family",
+        "Holiday Halloween Costume Plushie Butterfly Family",
+        "Mandala Geometry Patterns Plushie Butterfly Insects",
+        "Mandala Geometry Patterns Plushie Butterfly",
+        "Plushie Butterfly Family"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "animals",
+          "existingTitle": "Animals Coloring Pages",
+          "existingAssetCount": 1450,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.006,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "butterflies",
+          "existingTitle": "Butterflies Coloring Pages",
+          "existingAssetCount": 26,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.346,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "insects",
+          "existingTitle": "Insects Coloring Pages",
+          "existingAssetCount": 179,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.05,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.005,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": true
+    },
+    {
+      "slug": "plushie-diplodocus",
+      "title": "Plushie Diplodocus Coloring Pages",
+      "kind": "combination",
+      "assetCount": 9,
+      "classification": "manual_review",
+      "reasons": [
+        "Below combination minimum of 10 assets but above absolute minimum."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Summoning Jutsu Diplodocus Plushies",
+        "Chibi Plushie Prehistoric Diplodocus",
+        "Holiday Birthday Celebration Plushie Prehistoric Diplodocus Family",
+        "Holiday Christmas Plushie Prehistoric Diplodocus Family",
+        "Holiday Halloween Costume Plushie Prehistoric Diplodocus Family",
+        "Mandala Geometry Patterns Plushie Prehistoric Diplodocus Animal",
+        "Mandala Geometry Patterns Plushie Prehistoric Diplodocus",
+        "Plushie Prehistoric Diplodocus Family"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "animals",
+          "existingTitle": "Animals Coloring Pages",
+          "existingAssetCount": 1450,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.006,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "dinosaurs",
+          "existingTitle": "Dinosaurs Coloring Pages",
+          "existingAssetCount": 189,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.048,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.005,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "prehistoric-animals",
+          "existingTitle": "Prehistoric Animals Coloring Pages",
+          "existingAssetCount": 220,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.041,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": true
+    },
+    {
+      "slug": "plushie-lizards",
+      "title": "Plushie Lizards Coloring Pages",
+      "kind": "combination",
+      "assetCount": 9,
+      "classification": "manual_review",
+      "reasons": [
+        "Below combination minimum of 10 assets but above absolute minimum."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Summoning Australian Throny Devil Lizard Plushies",
+        "Anime Girl Summoning Frilled Lizard Plushies",
+        "Chibi Plushie Iguana",
+        "Holiday Birthday Celebration Plushie Iguana Family",
+        "Holiday Christmas Plushie Iguana Family",
+        "Holiday Halloween Costume Plushie Iguana Family",
+        "Mandala Geometry Patterns Plushie Iguana",
+        "Plushie Iguana Family"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.005,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": true
+    },
+    {
+      "slug": "plushie-owls",
+      "title": "Plushie Owls Coloring Pages",
+      "kind": "combination",
+      "assetCount": 9,
+      "classification": "manual_review",
+      "reasons": [
+        "Below combination minimum of 10 assets but above absolute minimum."
+      ],
+      "exampleAssetTitles": [
+        "Chibi Plushie Owl",
+        "Holiday Birthday Celebration Plushie Owl Family",
+        "Holiday Christmas Plushie Owl Family",
+        "Holiday Halloween Costume Plushie Owl Family",
+        "Holiday Halloween Plushie Owl Family",
+        "Mandala Geometry Patterns Plushie Owl Animals",
+        "Mandala Geometry Patterns Plushie Owl",
+        "Plushie Owl Family"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.005,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": true
+    },
+    {
+      "slug": "chibi-bears",
+      "title": "Chibi Bears Coloring Pages",
+      "kind": "combination",
+      "assetCount": 8,
+      "classification": "manual_review",
+      "reasons": [
+        "Below combination minimum of 10 assets but above absolute minimum."
+      ],
+      "exampleAssetTitles": [
+        "Anime Girl Chibi Bear Summon",
+        "Chibi Bear",
+        "Chibi Cave Bear",
+        "Chibi Plushie Kawaii Polar Bear",
+        "Chibi Plushie Koala Bear",
+        "Chibi Plushie Panda Bear",
+        "Chibi Plushie Polar Bear",
+        "Chibi Plushie Teddy Bear"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "chibi",
+          "existingTitle": "Chibi Coloring Pages",
+          "existingAssetCount": 908,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.009,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "easy",
+          "existingTitle": "Easy Coloring Pages",
+          "existingAssetCount": 1300,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.006,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "for-kids",
+          "existingTitle": "Coloring Pages for Kids",
+          "existingAssetCount": 1335,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.006,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 0.625,
+          "existingHubCoveredRatio": 0.003,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": true
+    },
+    {
+      "slug": "plushie-dolphins",
+      "title": "Plushie Dolphins Coloring Pages",
+      "kind": "combination",
+      "assetCount": 8,
+      "classification": "manual_review",
+      "reasons": [
+        "Below combination minimum of 10 assets but above absolute minimum."
+      ],
+      "exampleAssetTitles": [
+        "Chibi Plushie Dolphin",
+        "Holiday Birthday Celebration Plushie Dolphin Family",
+        "Holiday Christmas Plushie Dolphin Family",
+        "Holiday Halloween Costume Plushie Dolphin Family",
+        "Mandala Geometry Patterns Plushie Dolphin Animals",
+        "Mandala Geometry Patterns Plushie Dolphin",
+        "Plushie Dolphin Family",
+        "Plushie Dolphin"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "animals",
+          "existingTitle": "Animals Coloring Pages",
+          "existingAssetCount": 1450,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.006,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.005,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "sea-life",
+          "existingTitle": "Sea Life Coloring Pages",
+          "existingAssetCount": 236,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.034,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": true
+    },
+    {
+      "slug": "plushie-eagles",
+      "title": "Plushie Eagles Coloring Pages",
+      "kind": "combination",
+      "assetCount": 8,
+      "classification": "manual_review",
+      "reasons": [
+        "Below combination minimum of 10 assets but above absolute minimum."
+      ],
+      "exampleAssetTitles": [
+        "Chibi Plushie Eagle",
+        "Holiday Birthday Celebration Plushie Eagle Family",
+        "Holiday Christmas Plushie Eagle Family",
+        "Holiday Halloween Costume Plushie Eagle Family",
+        "Mandala Geometry Patterns Plushie Eagle Be Creative",
+        "Mandala Geometry Patterns Plushie Eagle",
+        "Plushie Eagle Family",
+        "Plushie Eagle"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.005,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": true
+    },
+    {
+      "slug": "plushie-robots",
+      "title": "Plushie Robots Coloring Pages",
+      "kind": "combination",
+      "assetCount": 8,
+      "classification": "manual_review",
+      "reasons": [
+        "Below combination minimum of 10 assets but above absolute minimum."
+      ],
+      "exampleAssetTitles": [
+        "Chibi Plushie Robot",
+        "Holiday Birthday Celebration Plushie Robot Family",
+        "Holiday Christmas Plushie Robot Family",
+        "Holiday Halloween Costume Plushie Robot Family",
+        "Mandala Geometry Patterns Plushie Robot Animal",
+        "Mandala Geometry Patterns Plushie Robot",
+        "Plushie Robot Family",
+        "Plushie Robot"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "plushies",
+          "existingTitle": "Plushies Coloring Pages",
+          "existingAssetCount": 1704,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.005,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": true
+    },
+    {
+      "slug": "chibi-castles",
+      "title": "Chibi Castles Coloring Pages",
+      "kind": "combination",
+      "assetCount": 7,
+      "classification": "manual_review",
+      "reasons": [
+        "Below combination minimum of 10 assets but above absolute minimum."
+      ],
+      "exampleAssetTitles": [
+        "Chibi Castle",
+        "Chibi Dungeon Castle Gate Defender",
+        "Chibi Dungeon Castle Gate Guardian",
+        "Chibi Holiday Halloween Creepy Castle With Torch Lit Windows Coloring Page",
+        "Chibi Holiday Halloween Dracula Flying As Bat Over Castle Coloring Page",
+        "Chibi Hydra Castle Pet",
+        "Chibi Midieval Fantasy Castle"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "buildings",
+          "existingTitle": "Buildings Coloring Pages",
+          "existingAssetCount": 156,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.045,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "chibi",
+          "existingTitle": "Chibi Coloring Pages",
+          "existingAssetCount": 908,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.008,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "easy",
+          "existingTitle": "Easy Coloring Pages",
+          "existingAssetCount": 1300,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.005,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "for-kids",
+          "existingTitle": "Coloring Pages for Kids",
+          "existingAssetCount": 1335,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.005,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": true
+    },
+    {
+      "slug": "chibi-houses",
+      "title": "Chibi Houses Coloring Pages",
+      "kind": "combination",
+      "assetCount": 6,
+      "classification": "manual_review",
+      "reasons": [
+        "Below combination minimum of 10 assets but above absolute minimum."
+      ],
+      "exampleAssetTitles": [
+        "Chibi Holiday Halloween Haunted House Coloring Page",
+        "Chibi Holiday Halloween Haunted House On Hill Coloring Page",
+        "Chibi Holiday Halloween Haunted House On Hill Under Full Moon Coloring Page",
+        "Chibi Holiday Halloween Haunted House On Stilts In Swamp Coloring Page",
+        "Chibi Holiday Halloween Haunted House With Bats Flying Around Coloring Page",
+        "Chibi Holiday Halloween Haunted House With Broken Fence Coloring Page"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "buildings",
+          "existingTitle": "Buildings Coloring Pages",
+          "existingAssetCount": 156,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.038,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "chibi",
+          "existingTitle": "Chibi Coloring Pages",
+          "existingAssetCount": 908,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.007,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "easy",
+          "existingTitle": "Easy Coloring Pages",
+          "existingAssetCount": 1300,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.005,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "for-kids",
+          "existingTitle": "Coloring Pages for Kids",
+          "existingAssetCount": 1335,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.004,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "halloween",
+          "existingTitle": "Halloween Coloring Pages",
+          "existingAssetCount": 305,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.02,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "holidays",
+          "existingTitle": "Holidays Coloring Pages",
+          "existingAssetCount": 874,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.007,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": true
+    },
+    {
+      "slug": "chibi-tigers",
+      "title": "Chibi Tigers Coloring Pages",
+      "kind": "combination",
+      "assetCount": 6,
+      "classification": "manual_review",
+      "reasons": [
+        "Below combination minimum of 10 assets but above absolute minimum."
+      ],
+      "exampleAssetTitles": [
+        "Chibi Megalodon Tiger Shark",
+        "Chibi Plushie Prehistoric Saber Toothed Tiger",
+        "Chibi Plushie Tiger",
+        "Chibi Saber Toothed Tiger",
+        "Chibi Tiger",
+        "Chibi Wooly Tiger Mammoth"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "chibi",
+          "existingTitle": "Chibi Coloring Pages",
+          "existingAssetCount": 908,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.007,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "easy",
+          "existingTitle": "Easy Coloring Pages",
+          "existingAssetCount": 1300,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.005,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "for-kids",
+          "existingTitle": "Coloring Pages for Kids",
+          "existingAssetCount": 1335,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.004,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "animals",
+          "existingTitle": "Animals Coloring Pages",
+          "existingAssetCount": 1450,
+          "candidateOverlapRatio": 0.667,
+          "existingHubCoveredRatio": 0.003,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "prehistoric-animals",
+          "existingTitle": "Prehistoric Animals Coloring Pages",
+          "existingAssetCount": 220,
+          "candidateOverlapRatio": 0.5,
+          "existingHubCoveredRatio": 0.014,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": true
+    },
+    {
+      "slug": "chibi-wizards",
+      "title": "Chibi Wizards Coloring Pages",
+      "kind": "combination",
+      "assetCount": 6,
+      "classification": "manual_review",
+      "reasons": [
+        "Below combination minimum of 10 assets but above absolute minimum."
+      ],
+      "exampleAssetTitles": [
+        "Chibi Dark Wizard",
+        "Chibi Dungeon Wizard And Magic Book",
+        "Chibi Dungeon Wizard Casting Spell",
+        "Chibi Dungeon Wizard Tower Room",
+        "Chibi Midieval Fantasy Sorcerer",
+        "Chibi Midieval Fantasy Wizard"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "chibi",
+          "existingTitle": "Chibi Coloring Pages",
+          "existingAssetCount": 908,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.007,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "easy",
+          "existingTitle": "Easy Coloring Pages",
+          "existingAssetCount": 1300,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.005,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "for-kids",
+          "existingTitle": "Coloring Pages for Kids",
+          "existingAssetCount": 1335,
+          "candidateOverlapRatio": 1,
+          "existingHubCoveredRatio": 0.004,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "dungeon",
+          "existingTitle": "Dungeon Coloring Pages",
+          "existingAssetCount": 99,
+          "candidateOverlapRatio": 0.5,
+          "existingHubCoveredRatio": 0.03,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": true
+    },
+    {
+      "slug": "princesses",
+      "title": "Princesses Coloring Pages",
+      "kind": "theme",
+      "assetCount": 7,
+      "classification": "manual_review",
+      "reasons": [
+        "Below theme minimum of 8 assets but above absolute minimum."
+      ],
+      "exampleAssetTitles": [
+        "Chibi Midieval Fantasy Princess",
+        "Fantasy Mermaid Princess Coral Throne",
+        "Holiday Birthday Princess Birthday Party",
+        "Indoor Plants Philodendron Pink Princess",
+        "Indoor Plants Philodendron White Princess",
+        "Midieval Fantasy Princess Tower",
+        "Midieval Fantasy Princess"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "fantasy",
+          "existingTitle": "Fantasy Coloring Pages",
+          "existingAssetCount": 1265,
+          "candidateOverlapRatio": 0.571,
+          "existingHubCoveredRatio": 0.003,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": true
+    },
+    {
+      "slug": "cactus",
+      "title": "Cactus Coloring Pages",
+      "kind": "object",
+      "assetCount": 6,
+      "classification": "manual_review",
+      "reasons": [
+        "Below object minimum of 8 assets but above absolute minimum."
+      ],
+      "exampleAssetTitles": [
+        "Indoor Plants Christmas Cactus",
+        "Indoor Plants Coral Cactus",
+        "Indoor Plants Easter Cactus",
+        "Indoor Plants Thanksgiving Cactus",
+        "Reptiles Desert Iguana On A Cactus",
+        "Reptiles Desert Iguana On Cactus"
+      ],
+      "overlapNotes": [
+        {
+          "existingSlug": "indoor-plants",
+          "existingTitle": "Indoor Plants Coloring Pages",
+          "existingAssetCount": 128,
+          "candidateOverlapRatio": 0.667,
+          "existingHubCoveredRatio": 0.031,
+          "relationship": "broad parent overlap"
+        },
+        {
+          "existingSlug": "plants",
+          "existingTitle": "Plants Coloring Pages",
+          "existingAssetCount": 586,
+          "candidateOverlapRatio": 0.667,
+          "existingHubCoveredRatio": 0.007,
+          "relationship": "broad parent overlap"
+        }
+      ],
+      "ownerDecisionNeeded": true
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-13T06:45:46.794Z",
-  "runId": "runtime-switch-routes",
+  "generatedAt": "2026-05-13T22:11:05.131Z",
+  "runId": "runtime-switch-routes+long-tail+long-tail+long-tail+long-tail",
   "source": "src/generated/coloring/routes.json",
   "routePattern": "/coloring-pages/[hubSlug]",
   "rootRoute": "/coloring-pages",
@@ -37,6 +37,42 @@
       "assetCount": 905
     },
     {
+      "hubId": "hub_bakery",
+      "slug": "bakery",
+      "path": "/coloring-pages/bakery",
+      "title": "Bakery Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 93
+    },
+    {
+      "hubId": "hub_bats",
+      "slug": "bats",
+      "path": "/coloring-pages/bats",
+      "title": "Bats Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 27
+    },
+    {
+      "hubId": "hub_bears",
+      "slug": "bears",
+      "path": "/coloring-pages/bears",
+      "title": "Bears Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 60
+    },
+    {
+      "hubId": "hub_bees",
+      "slug": "bees",
+      "path": "/coloring-pages/bees",
+      "title": "Bees Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 15
+    },
+    {
       "hubId": "hub_beetles",
       "slug": "beetles",
       "path": "/coloring-pages/beetles",
@@ -62,6 +98,15 @@
       "indexable": true,
       "sitemap": true,
       "assetCount": 211
+    },
+    {
+      "hubId": "hub_brachiosaurus",
+      "slug": "brachiosaurus",
+      "path": "/coloring-pages/brachiosaurus",
+      "title": "Brachiosaurus Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 15
     },
     {
       "hubId": "hub_bridges",
@@ -91,6 +136,15 @@
       "assetCount": 26
     },
     {
+      "hubId": "hub_cakes",
+      "slug": "cakes",
+      "path": "/coloring-pages/cakes",
+      "title": "Cakes Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 21
+    },
+    {
       "hubId": "hub_cars",
       "slug": "cars",
       "path": "/coloring-pages/cars",
@@ -98,6 +152,15 @@
       "indexable": true,
       "sitemap": true,
       "assetCount": 193
+    },
+    {
+      "hubId": "hub_castles",
+      "slug": "castles",
+      "path": "/coloring-pages/castles",
+      "title": "Castles Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 25
     },
     {
       "hubId": "hub_cats",
@@ -109,6 +172,15 @@
       "assetCount": 55
     },
     {
+      "hubId": "hub_chess",
+      "slug": "chess",
+      "path": "/coloring-pages/chess",
+      "title": "Chess Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 23
+    },
+    {
       "hubId": "hub_chibi",
       "slug": "chibi",
       "path": "/coloring-pages/chibi",
@@ -116,6 +188,15 @@
       "indexable": true,
       "sitemap": true,
       "assetCount": 908
+    },
+    {
+      "hubId": "hub_chibi_dogs",
+      "slug": "chibi-dogs",
+      "path": "/coloring-pages/chibi-dogs",
+      "title": "Chibi Dogs Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 79
     },
     {
       "hubId": "hub_chibi_flowers",
@@ -136,6 +217,24 @@
       "assetCount": 332
     },
     {
+      "hubId": "hub_christmas_dogs",
+      "slug": "christmas-dogs",
+      "path": "/coloring-pages/christmas-dogs",
+      "title": "Christmas Dogs Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 36
+    },
+    {
+      "hubId": "hub_cows",
+      "slug": "cows",
+      "path": "/coloring-pages/cows",
+      "title": "Cows Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 14
+    },
+    {
       "hubId": "hub_crabs",
       "slug": "crabs",
       "path": "/coloring-pages/crabs",
@@ -152,6 +251,15 @@
       "indexable": true,
       "sitemap": true,
       "assetCount": 375
+    },
+    {
+      "hubId": "hub_deer",
+      "slug": "deer",
+      "path": "/coloring-pages/deer",
+      "title": "Deer Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 15
     },
     {
       "hubId": "hub_detailed_for_adults",
@@ -172,6 +280,15 @@
       "assetCount": 189
     },
     {
+      "hubId": "hub_diplodocus",
+      "slug": "diplodocus",
+      "path": "/coloring-pages/diplodocus",
+      "title": "Diplodocus Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 16
+    },
+    {
       "hubId": "hub_dogs",
       "slug": "dogs",
       "path": "/coloring-pages/dogs",
@@ -179,6 +296,33 @@
       "indexable": true,
       "sitemap": true,
       "assetCount": 284
+    },
+    {
+      "hubId": "hub_dolphins",
+      "slug": "dolphins",
+      "path": "/coloring-pages/dolphins",
+      "title": "Dolphins Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 14
+    },
+    {
+      "hubId": "hub_dragons",
+      "slug": "dragons",
+      "path": "/coloring-pages/dragons",
+      "title": "Dragons Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 259
+    },
+    {
+      "hubId": "hub_ducks",
+      "slug": "ducks",
+      "path": "/coloring-pages/ducks",
+      "title": "Ducks Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 19
     },
     {
       "hubId": "hub_dungeon",
@@ -190,6 +334,15 @@
       "assetCount": 99
     },
     {
+      "hubId": "hub_eagles",
+      "slug": "eagles",
+      "path": "/coloring-pages/eagles",
+      "title": "Eagles Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 22
+    },
+    {
       "hubId": "hub_easy",
       "slug": "easy",
       "path": "/coloring-pages/easy",
@@ -197,6 +350,15 @@
       "indexable": true,
       "sitemap": true,
       "assetCount": 1300
+    },
+    {
+      "hubId": "hub_elephants",
+      "slug": "elephants",
+      "path": "/coloring-pages/elephants",
+      "title": "Elephants Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 17
     },
     {
       "hubId": "hub_fairies",
@@ -235,6 +397,15 @@
       "assetCount": 49
     },
     {
+      "hubId": "hub_fish",
+      "slug": "fish",
+      "path": "/coloring-pages/fish",
+      "title": "Fish Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 16
+    },
+    {
       "hubId": "hub_flowers",
       "slug": "flowers",
       "path": "/coloring-pages/flowers",
@@ -271,6 +442,15 @@
       "assetCount": 72
     },
     {
+      "hubId": "hub_foxes",
+      "slug": "foxes",
+      "path": "/coloring-pages/foxes",
+      "title": "Foxes Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 40
+    },
+    {
       "hubId": "hub_garden",
       "slug": "garden",
       "path": "/coloring-pages/garden",
@@ -298,6 +478,24 @@
       "assetCount": 1457
     },
     {
+      "hubId": "hub_geometric_dogs",
+      "slug": "geometric-dogs",
+      "path": "/coloring-pages/geometric-dogs",
+      "title": "Geometric Dogs Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 85
+    },
+    {
+      "hubId": "hub_giraffes",
+      "slug": "giraffes",
+      "path": "/coloring-pages/giraffes",
+      "title": "Giraffes Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 19
+    },
+    {
       "hubId": "hub_griffins",
       "slug": "griffins",
       "path": "/coloring-pages/griffins",
@@ -316,6 +514,24 @@
       "assetCount": 305
     },
     {
+      "hubId": "hub_hedgehogs",
+      "slug": "hedgehogs",
+      "path": "/coloring-pages/hedgehogs",
+      "title": "Hedgehogs Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 15
+    },
+    {
+      "hubId": "hub_hippos",
+      "slug": "hippos",
+      "path": "/coloring-pages/hippos",
+      "title": "Hippos Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 16
+    },
+    {
       "hubId": "hub_holidays",
       "slug": "holidays",
       "path": "/coloring-pages/holidays",
@@ -323,6 +539,33 @@
       "indexable": true,
       "sitemap": true,
       "assetCount": 874
+    },
+    {
+      "hubId": "hub_horses",
+      "slug": "horses",
+      "path": "/coloring-pages/horses",
+      "title": "Horses Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 16
+    },
+    {
+      "hubId": "hub_houses",
+      "slug": "houses",
+      "path": "/coloring-pages/houses",
+      "title": "Houses Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 54
+    },
+    {
+      "hubId": "hub_hydras",
+      "slug": "hydras",
+      "path": "/coloring-pages/hydras",
+      "title": "Hydras Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 15
     },
     {
       "hubId": "hub_indoor_plants",
@@ -352,6 +595,51 @@
       "assetCount": 88
     },
     {
+      "hubId": "hub_knights",
+      "slug": "knights",
+      "path": "/coloring-pages/knights",
+      "title": "Knights Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 39
+    },
+    {
+      "hubId": "hub_koalas",
+      "slug": "koalas",
+      "path": "/coloring-pages/koalas",
+      "title": "Koalas Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 22
+    },
+    {
+      "hubId": "hub_lions",
+      "slug": "lions",
+      "path": "/coloring-pages/lions",
+      "title": "Lions Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 32
+    },
+    {
+      "hubId": "hub_lizards",
+      "slug": "lizards",
+      "path": "/coloring-pages/lizards",
+      "title": "Lizards Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 32
+    },
+    {
+      "hubId": "hub_llamas",
+      "slug": "llamas",
+      "path": "/coloring-pages/llamas",
+      "title": "Llamas Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 15
+    },
+    {
       "hubId": "hub_mammoths",
       "slug": "mammoths",
       "path": "/coloring-pages/mammoths",
@@ -379,6 +667,15 @@
       "assetCount": 194
     },
     {
+      "hubId": "hub_megalodon",
+      "slug": "megalodon",
+      "path": "/coloring-pages/megalodon",
+      "title": "Megalodon Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 16
+    },
+    {
       "hubId": "hub_mermaids",
       "slug": "mermaids",
       "path": "/coloring-pages/mermaids",
@@ -386,6 +683,33 @@
       "indexable": true,
       "sitemap": true,
       "assetCount": 26
+    },
+    {
+      "hubId": "hub_monkeys",
+      "slug": "monkeys",
+      "path": "/coloring-pages/monkeys",
+      "title": "Monkeys Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 14
+    },
+    {
+      "hubId": "hub_moose",
+      "slug": "moose",
+      "path": "/coloring-pages/moose",
+      "title": "Moose Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 18
+    },
+    {
+      "hubId": "hub_mushrooms",
+      "slug": "mushrooms",
+      "path": "/coloring-pages/mushrooms",
+      "title": "Mushrooms Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 218
     },
     {
       "hubId": "hub_mythology",
@@ -415,6 +739,33 @@
       "assetCount": 20
     },
     {
+      "hubId": "hub_otters",
+      "slug": "otters",
+      "path": "/coloring-pages/otters",
+      "title": "Otters Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 21
+    },
+    {
+      "hubId": "hub_owls",
+      "slug": "owls",
+      "path": "/coloring-pages/owls",
+      "title": "Owls Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 28
+    },
+    {
+      "hubId": "hub_pandas",
+      "slug": "pandas",
+      "path": "/coloring-pages/pandas",
+      "title": "Pandas Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 30
+    },
+    {
       "hubId": "hub_pegasus",
       "slug": "pegasus",
       "path": "/coloring-pages/pegasus",
@@ -422,6 +773,24 @@
       "indexable": true,
       "sitemap": true,
       "assetCount": 29
+    },
+    {
+      "hubId": "hub_penguins",
+      "slug": "penguins",
+      "path": "/coloring-pages/penguins",
+      "title": "Penguins Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 20
+    },
+    {
+      "hubId": "hub_phoenix",
+      "slug": "phoenix",
+      "path": "/coloring-pages/phoenix",
+      "title": "Phoenix Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 18
     },
     {
       "hubId": "hub_planes",
@@ -460,6 +829,24 @@
       "assetCount": 105
     },
     {
+      "hubId": "hub_plushie_cats",
+      "slug": "plushie-cats",
+      "path": "/coloring-pages/plushie-cats",
+      "title": "Plushie Cats Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 21
+    },
+    {
+      "hubId": "hub_plushie_dogs",
+      "slug": "plushie-dogs",
+      "path": "/coloring-pages/plushie-dogs",
+      "title": "Plushie Dogs Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 12
+    },
+    {
       "hubId": "hub_plushie_dragons",
       "slug": "plushie-dragons",
       "path": "/coloring-pages/plushie-dragons",
@@ -467,6 +854,33 @@
       "indexable": true,
       "sitemap": true,
       "assetCount": 75
+    },
+    {
+      "hubId": "hub_plushie_triceratops",
+      "slug": "plushie-triceratops",
+      "path": "/coloring-pages/plushie-triceratops",
+      "title": "Plushie Triceratops Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 13
+    },
+    {
+      "hubId": "hub_plushie_unicorns",
+      "slug": "plushie-unicorns",
+      "path": "/coloring-pages/plushie-unicorns",
+      "title": "Plushie Unicorns Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 14
+    },
+    {
+      "hubId": "hub_plushie_whales",
+      "slug": "plushie-whales",
+      "path": "/coloring-pages/plushie-whales",
+      "title": "Plushie Whales Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 27
     },
     {
       "hubId": "hub_plushies",
@@ -487,6 +901,33 @@
       "assetCount": 220
     },
     {
+      "hubId": "hub_pumpkins",
+      "slug": "pumpkins",
+      "path": "/coloring-pages/pumpkins",
+      "title": "Pumpkins Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 23
+    },
+    {
+      "hubId": "hub_rabbits",
+      "slug": "rabbits",
+      "path": "/coloring-pages/rabbits",
+      "title": "Rabbits Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 22
+    },
+    {
+      "hubId": "hub_reindeer",
+      "slug": "reindeer",
+      "path": "/coloring-pages/reindeer",
+      "title": "Reindeer Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 15
+    },
+    {
       "hubId": "hub_reptiles",
       "slug": "reptiles",
       "path": "/coloring-pages/reptiles",
@@ -496,6 +937,33 @@
       "assetCount": 156
     },
     {
+      "hubId": "hub_robots",
+      "slug": "robots",
+      "path": "/coloring-pages/robots",
+      "title": "Robots Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 9
+    },
+    {
+      "hubId": "hub_roses",
+      "slug": "roses",
+      "path": "/coloring-pages/roses",
+      "title": "Roses Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 9
+    },
+    {
+      "hubId": "hub_santa",
+      "slug": "santa",
+      "path": "/coloring-pages/santa",
+      "title": "Santa Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 10
+    },
+    {
       "hubId": "hub_sea_life",
       "slug": "sea-life",
       "path": "/coloring-pages/sea-life",
@@ -503,6 +971,42 @@
       "indexable": true,
       "sitemap": true,
       "assetCount": 236
+    },
+    {
+      "hubId": "hub_sharks",
+      "slug": "sharks",
+      "path": "/coloring-pages/sharks",
+      "title": "Sharks Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 19
+    },
+    {
+      "hubId": "hub_sheep",
+      "slug": "sheep",
+      "path": "/coloring-pages/sheep",
+      "title": "Sheep Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 14
+    },
+    {
+      "hubId": "hub_sloths",
+      "slug": "sloths",
+      "path": "/coloring-pages/sloths",
+      "title": "Sloths Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 28
+    },
+    {
+      "hubId": "hub_snakes",
+      "slug": "snakes",
+      "path": "/coloring-pages/snakes",
+      "title": "Snakes Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 18
     },
     {
       "hubId": "hub_spiders",
@@ -521,6 +1025,42 @@
       "indexable": true,
       "sitemap": true,
       "assetCount": 20
+    },
+    {
+      "hubId": "hub_stegosaurus",
+      "slug": "stegosaurus",
+      "path": "/coloring-pages/stegosaurus",
+      "title": "Stegosaurus Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 17
+    },
+    {
+      "hubId": "hub_sushi",
+      "slug": "sushi",
+      "path": "/coloring-pages/sushi",
+      "title": "Sushi Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 161
+    },
+    {
+      "hubId": "hub_t_rex",
+      "slug": "t-rex",
+      "path": "/coloring-pages/t-rex",
+      "title": "T-Rex Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 18
+    },
+    {
+      "hubId": "hub_tigers",
+      "slug": "tigers",
+      "path": "/coloring-pages/tigers",
+      "title": "Tigers Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 43
     },
     {
       "hubId": "hub_trains",
@@ -577,6 +1117,15 @@
       "assetCount": 373
     },
     {
+      "hubId": "hub_velociraptors",
+      "slug": "velociraptors",
+      "path": "/coloring-pages/velociraptors",
+      "title": "Velociraptors Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 22
+    },
+    {
       "hubId": "hub_whales",
       "slug": "whales",
       "path": "/coloring-pages/whales",
@@ -586,6 +1135,33 @@
       "assetCount": 40
     },
     {
+      "hubId": "hub_witches",
+      "slug": "witches",
+      "path": "/coloring-pages/witches",
+      "title": "Witches Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 32
+    },
+    {
+      "hubId": "hub_wizards",
+      "slug": "wizards",
+      "path": "/coloring-pages/wizards",
+      "title": "Wizards Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 30
+    },
+    {
+      "hubId": "hub_wolves",
+      "slug": "wolves",
+      "path": "/coloring-pages/wolves",
+      "title": "Wolves Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 45
+    },
+    {
       "hubId": "hub_world_landmarks",
       "slug": "world-landmarks",
       "path": "/coloring-pages/world-landmarks",
@@ -593,6 +1169,24 @@
       "indexable": true,
       "sitemap": true,
       "assetCount": 47
+    },
+    {
+      "hubId": "hub_wyverns",
+      "slug": "wyverns",
+      "path": "/coloring-pages/wyverns",
+      "title": "Wyverns Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 15
+    },
+    {
+      "hubId": "hub_zebras",
+      "slug": "zebras",
+      "path": "/coloring-pages/zebras",
+      "title": "Zebras Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 19
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-13T06:45:46.794Z",
-  "runId": "runtime-switch-site-map",
+  "generatedAt": "2026-05-13T22:11:05.131Z",
+  "runId": "runtime-switch-site-map+long-tail+long-tail+long-tail+long-tail",
   "source": "src/generated/coloring/site-map.json",
   "entries": [
     {
@@ -19,6 +19,26 @@
       "priority": 0.8
     },
     {
+      "path": "/coloring-pages/bakery",
+      "changeFrequency": "weekly",
+      "priority": 0.7
+    },
+    {
+      "path": "/coloring-pages/bats",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
+      "path": "/coloring-pages/bears",
+      "changeFrequency": "weekly",
+      "priority": 0.7
+    },
+    {
+      "path": "/coloring-pages/bees",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
       "path": "/coloring-pages/beetles",
       "changeFrequency": "monthly",
       "priority": 0.8
@@ -32,6 +52,11 @@
       "path": "/coloring-pages/birthday",
       "changeFrequency": "monthly",
       "priority": 0.8
+    },
+    {
+      "path": "/coloring-pages/brachiosaurus",
+      "changeFrequency": "monthly",
+      "priority": 0.6
     },
     {
       "path": "/coloring-pages/bridges",
@@ -49,9 +74,19 @@
       "priority": 0.8
     },
     {
+      "path": "/coloring-pages/cakes",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
       "path": "/coloring-pages/cars",
       "changeFrequency": "monthly",
       "priority": 0.8
+    },
+    {
+      "path": "/coloring-pages/castles",
+      "changeFrequency": "monthly",
+      "priority": 0.6
     },
     {
       "path": "/coloring-pages/cats",
@@ -59,9 +94,19 @@
       "priority": 0.8
     },
     {
+      "path": "/coloring-pages/chess",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
       "path": "/coloring-pages/chibi",
       "changeFrequency": "monthly",
       "priority": 0.8
+    },
+    {
+      "path": "/coloring-pages/chibi-dogs",
+      "changeFrequency": "weekly",
+      "priority": 0.7
     },
     {
       "path": "/coloring-pages/chibi-flowers",
@@ -74,6 +119,16 @@
       "priority": 0.8
     },
     {
+      "path": "/coloring-pages/christmas-dogs",
+      "changeFrequency": "weekly",
+      "priority": 0.7
+    },
+    {
+      "path": "/coloring-pages/cows",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
       "path": "/coloring-pages/crabs",
       "changeFrequency": "monthly",
       "priority": 0.8
@@ -82,6 +137,11 @@
       "path": "/coloring-pages/cute",
       "changeFrequency": "monthly",
       "priority": 0.8
+    },
+    {
+      "path": "/coloring-pages/deer",
+      "changeFrequency": "monthly",
+      "priority": 0.6
     },
     {
       "path": "/coloring-pages/detailed-for-adults",
@@ -94,9 +154,29 @@
       "priority": 0.8
     },
     {
+      "path": "/coloring-pages/diplodocus",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
       "path": "/coloring-pages/dogs",
       "changeFrequency": "monthly",
       "priority": 0.8
+    },
+    {
+      "path": "/coloring-pages/dolphins",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
+      "path": "/coloring-pages/dragons",
+      "changeFrequency": "weekly",
+      "priority": 0.7
+    },
+    {
+      "path": "/coloring-pages/ducks",
+      "changeFrequency": "monthly",
+      "priority": 0.6
     },
     {
       "path": "/coloring-pages/dungeon",
@@ -104,9 +184,19 @@
       "priority": 0.8
     },
     {
+      "path": "/coloring-pages/eagles",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
       "path": "/coloring-pages/easy",
       "changeFrequency": "monthly",
       "priority": 0.8
+    },
+    {
+      "path": "/coloring-pages/elephants",
+      "changeFrequency": "monthly",
+      "priority": 0.6
     },
     {
       "path": "/coloring-pages/fairies",
@@ -129,6 +219,11 @@
       "priority": 0.8
     },
     {
+      "path": "/coloring-pages/fish",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
       "path": "/coloring-pages/flowers",
       "changeFrequency": "monthly",
       "priority": 0.8
@@ -149,6 +244,11 @@
       "priority": 0.8
     },
     {
+      "path": "/coloring-pages/foxes",
+      "changeFrequency": "weekly",
+      "priority": 0.7
+    },
+    {
       "path": "/coloring-pages/garden",
       "changeFrequency": "monthly",
       "priority": 0.8
@@ -164,6 +264,16 @@
       "priority": 0.8
     },
     {
+      "path": "/coloring-pages/geometric-dogs",
+      "changeFrequency": "weekly",
+      "priority": 0.7
+    },
+    {
+      "path": "/coloring-pages/giraffes",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
       "path": "/coloring-pages/griffins",
       "changeFrequency": "monthly",
       "priority": 0.8
@@ -174,9 +284,34 @@
       "priority": 0.8
     },
     {
+      "path": "/coloring-pages/hedgehogs",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
+      "path": "/coloring-pages/hippos",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
       "path": "/coloring-pages/holidays",
       "changeFrequency": "monthly",
       "priority": 0.8
+    },
+    {
+      "path": "/coloring-pages/horses",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
+      "path": "/coloring-pages/houses",
+      "changeFrequency": "weekly",
+      "priority": 0.7
+    },
+    {
+      "path": "/coloring-pages/hydras",
+      "changeFrequency": "monthly",
+      "priority": 0.6
     },
     {
       "path": "/coloring-pages/indoor-plants",
@@ -194,6 +329,31 @@
       "priority": 0.8
     },
     {
+      "path": "/coloring-pages/knights",
+      "changeFrequency": "weekly",
+      "priority": 0.7
+    },
+    {
+      "path": "/coloring-pages/koalas",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
+      "path": "/coloring-pages/lions",
+      "changeFrequency": "weekly",
+      "priority": 0.7
+    },
+    {
+      "path": "/coloring-pages/lizards",
+      "changeFrequency": "weekly",
+      "priority": 0.7
+    },
+    {
+      "path": "/coloring-pages/llamas",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
       "path": "/coloring-pages/mammoths",
       "changeFrequency": "monthly",
       "priority": 0.8
@@ -209,9 +369,29 @@
       "priority": 0.8
     },
     {
+      "path": "/coloring-pages/megalodon",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
       "path": "/coloring-pages/mermaids",
       "changeFrequency": "monthly",
       "priority": 0.8
+    },
+    {
+      "path": "/coloring-pages/monkeys",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
+      "path": "/coloring-pages/moose",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
+      "path": "/coloring-pages/mushrooms",
+      "changeFrequency": "weekly",
+      "priority": 0.7
     },
     {
       "path": "/coloring-pages/mythology",
@@ -229,9 +409,34 @@
       "priority": 0.8
     },
     {
+      "path": "/coloring-pages/otters",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
+      "path": "/coloring-pages/owls",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
+      "path": "/coloring-pages/pandas",
+      "changeFrequency": "weekly",
+      "priority": 0.7
+    },
+    {
       "path": "/coloring-pages/pegasus",
       "changeFrequency": "monthly",
       "priority": 0.8
+    },
+    {
+      "path": "/coloring-pages/penguins",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
+      "path": "/coloring-pages/phoenix",
+      "changeFrequency": "monthly",
+      "priority": 0.6
     },
     {
       "path": "/coloring-pages/planes",
@@ -254,9 +459,34 @@
       "priority": 0.8
     },
     {
+      "path": "/coloring-pages/plushie-cats",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
+      "path": "/coloring-pages/plushie-dogs",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
       "path": "/coloring-pages/plushie-dragons",
       "changeFrequency": "monthly",
       "priority": 0.8
+    },
+    {
+      "path": "/coloring-pages/plushie-triceratops",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
+      "path": "/coloring-pages/plushie-unicorns",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
+      "path": "/coloring-pages/plushie-whales",
+      "changeFrequency": "monthly",
+      "priority": 0.6
     },
     {
       "path": "/coloring-pages/plushies",
@@ -269,14 +499,64 @@
       "priority": 0.8
     },
     {
+      "path": "/coloring-pages/pumpkins",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
+      "path": "/coloring-pages/rabbits",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
+      "path": "/coloring-pages/reindeer",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
       "path": "/coloring-pages/reptiles",
       "changeFrequency": "monthly",
       "priority": 0.8
     },
     {
+      "path": "/coloring-pages/robots",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
+      "path": "/coloring-pages/roses",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
+      "path": "/coloring-pages/santa",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
       "path": "/coloring-pages/sea-life",
       "changeFrequency": "monthly",
       "priority": 0.8
+    },
+    {
+      "path": "/coloring-pages/sharks",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
+      "path": "/coloring-pages/sheep",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
+      "path": "/coloring-pages/sloths",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
+      "path": "/coloring-pages/snakes",
+      "changeFrequency": "monthly",
+      "priority": 0.6
     },
     {
       "path": "/coloring-pages/spiders",
@@ -287,6 +567,26 @@
       "path": "/coloring-pages/st-patricks-day",
       "changeFrequency": "monthly",
       "priority": 0.8
+    },
+    {
+      "path": "/coloring-pages/stegosaurus",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
+      "path": "/coloring-pages/sushi",
+      "changeFrequency": "weekly",
+      "priority": 0.7
+    },
+    {
+      "path": "/coloring-pages/t-rex",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
+      "path": "/coloring-pages/tigers",
+      "changeFrequency": "weekly",
+      "priority": 0.7
     },
     {
       "path": "/coloring-pages/trains",
@@ -319,14 +619,44 @@
       "priority": 0.8
     },
     {
+      "path": "/coloring-pages/velociraptors",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
       "path": "/coloring-pages/whales",
       "changeFrequency": "monthly",
       "priority": 0.8
     },
     {
+      "path": "/coloring-pages/witches",
+      "changeFrequency": "weekly",
+      "priority": 0.7
+    },
+    {
+      "path": "/coloring-pages/wizards",
+      "changeFrequency": "weekly",
+      "priority": 0.7
+    },
+    {
+      "path": "/coloring-pages/wolves",
+      "changeFrequency": "weekly",
+      "priority": 0.7
+    },
+    {
       "path": "/coloring-pages/world-landmarks",
       "changeFrequency": "monthly",
       "priority": 0.8
+    },
+    {
+      "path": "/coloring-pages/wyverns",
+      "changeFrequency": "monthly",
+      "priority": 0.6
+    },
+    {
+      "path": "/coloring-pages/zebras",
+      "changeFrequency": "monthly",
+      "priority": 0.6
     }
   ]
 }

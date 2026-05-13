@@ -1,0 +1,5513 @@
+{
+  "generatedAt": "2026-05-13T22:11:05.131Z",
+  "runId": "long-tail-hub-expansion",
+  "source": "src/generated/coloring/runtime-available-items.json",
+  "summary": {
+    "availableRuntimeRecords": 6352,
+    "uniqueTokenCount": 1208,
+    "stopTokensExcluded": 51,
+    "tokenReplacementCount": 73
+  },
+  "tokens": [
+    {
+      "token": "plushie",
+      "assetCount": 1704,
+      "exampleTitles": [
+        "Anime Girl Ankylosaurus Hoodie Plushie",
+        "Anime Girl Ankylosaurus Hoodie Plushie",
+        "Anime Girl Arctic Fox Hoodie Plushie",
+        "Anime Girl Arctic Fox Hoodie Plushie Snow",
+        "Anime Girl Armadillo Hoodie Animal Plushie"
+      ]
+    },
+    {
+      "token": "pattern",
+      "assetCount": 1467,
+      "exampleTitles": [
+        "Chibi Holiday Halloween Candy Corn Pattern Background Coloring Page",
+        "Chibi Mushroom Spore Print Pattern",
+        "Holiday Christmas Christmas Ornaments Pattern Coloring Page",
+        "Holiday Christmas Holly Berries And Leaves Pattern Coloring Page",
+        "Gardening Mushroom Spore Print Pattern"
+      ]
+    },
+    {
+      "token": "mandala",
+      "assetCount": 1459,
+      "exampleTitles": [
+        "Mandala Geometry Patterns Animal Mandala Fox",
+        "Mandala Geometry Patterns Celestial Mandala",
+        "Mandala Geometry Patterns Geometric Mandala",
+        "Mandala Geometry Patterns Hindu Mandala",
+        "Mandala Geometry Patterns Nature Mandala"
+      ]
+    },
+    {
+      "token": "geometric",
+      "assetCount": 1457,
+      "exampleTitles": [
+        "Mandala Geometry Patterns Animal Mandala Fox",
+        "Mandala Geometry Patterns Celestial Mandala",
+        "Mandala Geometry Patterns Geometric Mandala",
+        "Mandala Geometry Patterns Hindu Mandala",
+        "Mandala Geometry Patterns Nature Mandala"
+      ]
+    },
+    {
+      "token": "girl",
+      "assetCount": 910,
+      "exampleTitles": [
+        "Anime Girl Air Balloon",
+        "Anime Girl Airship Dogfight",
+        "Anime Girl Alien Invasion",
+        "Anime Girl Alien Invasion Battle",
+        "Anime Girl Ankylosaurus Hoodie Plushie"
+      ]
+    },
+    {
+      "token": "chibi",
+      "assetCount": 908,
+      "exampleTitles": [
+        "Anime Girl Chibi Bear Summon",
+        "Anime Girl Chibi Cow Summon",
+        "Chibi African Dragon",
+        "Chibi Air Dragon",
+        "Chibi Amphithere Dragon"
+      ]
+    },
+    {
+      "token": "anime",
+      "assetCount": 905,
+      "exampleTitles": [
+        "Anime Girl Air Balloon",
+        "Anime Girl Airship Dogfight",
+        "Anime Girl Alien Invasion",
+        "Anime Girl Alien Invasion Battle",
+        "Anime Girl Ankylosaurus Hoodie Plushie"
+      ]
+    },
+    {
+      "token": "girls",
+      "assetCount": 903,
+      "exampleTitles": [
+        "Anime Girl Air Balloon",
+        "Anime Girl Airship Dogfight",
+        "Anime Girl Alien Invasion",
+        "Anime Girl Alien Invasion Battle",
+        "Anime Girl Ankylosaurus Hoodie Plushie"
+      ]
+    },
+    {
+      "token": "holiday",
+      "assetCount": 844,
+      "exampleTitles": [
+        "Chibi Holiday Halloween Bat Colony Flying In Night Sky Coloring Page",
+        "Chibi Holiday Halloween Black Cat Peeking Out Of Pumpkin Coloring Page",
+        "Chibi Holiday Halloween Black Cat Sitting On Fence Under Moon Coloring Page",
+        "Chibi Holiday Halloween Candy Bucket Filled With Treats Coloring Page",
+        "Chibi Holiday Halloween Candy Corn Pattern Background Coloring Page"
+      ]
+    },
+    {
+      "token": "fantasy",
+      "assetCount": 729,
+      "exampleTitles": [
+        "Anime Girl Transforming Into Fantasy Werewolf",
+        "Anime Girl Transforming Into Fantasy Werewolf Full Moon",
+        "Chibi Dungeon Fantasy Archer",
+        "Chibi Midieval Fantasy Ancient Ruins",
+        "Chibi Midieval Fantasy Basilisk"
+      ]
+    },
+    {
+      "token": "summoning",
+      "assetCount": 336,
+      "exampleTitles": [
+        "Anime Girl Demon Summoning",
+        "Anime Girl Shadow Sprit Summoning",
+        "Anime Girl Summoning Angler Fish",
+        "Anime Girl Summoning Angler Fish Plushies",
+        "Anime Girl Summoning Ants"
+      ]
+    },
+    {
+      "token": "christmas",
+      "assetCount": 332,
+      "exampleTitles": [
+        "Christmas Holiday Advent Calendar",
+        "Christmas Holiday Candy Canes",
+        "Christmas Holiday Carolers",
+        "Christmas Holiday Christmas Cards",
+        "Christmas Holiday Christmas Carols"
+      ]
+    },
+    {
+      "token": "flower",
+      "assetCount": 332,
+      "exampleTitles": [
+        "Anime Girl Field Of Flowers",
+        "Anime Girl Field Of Flowers Nature",
+        "Anime Girl Gardening Flowers",
+        "Anime Girl Laying On Field Of Flowers",
+        "Anime Girl Laying On Flowers"
+      ]
+    },
+    {
+      "token": "halloween",
+      "assetCount": 305,
+      "exampleTitles": [
+        "Anime Girl Zombie Halloween.Png",
+        "Chibi Holiday Halloween Bat Colony Flying In Night Sky Coloring Page",
+        "Chibi Holiday Halloween Black Cat Peeking Out Of Pumpkin Coloring Page",
+        "Chibi Holiday Halloween Black Cat Sitting On Fence Under Moon Coloring Page",
+        "Chibi Holiday Halloween Candy Bucket Filled With Treats Coloring Page"
+      ]
+    },
+    {
+      "token": "dog",
+      "assetCount": 280,
+      "exampleTitles": [
+        "Animals Dog",
+        "Anime Girl Walking Dogs",
+        "Anime Girl Walking Dogs In Park",
+        "Anime Girl Yoga Downward Dog Pose",
+        "Anime Girl Yoga Downward Dog Pose"
+      ]
+    },
+    {
+      "token": "jutsu",
+      "assetCount": 267,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu African Dragon",
+        "Anime Girl Summoning Jutsu African Dragon Plushies",
+        "Anime Girl Summoning Jutsu Air Dragon",
+        "Anime Girl Summoning Jutsu Air Dragon Plushies",
+        "Anime Girl Summoning Jutsu Amphithere Dragon Plushies"
+      ]
+    },
+    {
+      "token": "vehicle",
+      "assetCount": 267,
+      "exampleTitles": [
+        "Mandala Geometry Patterns Vehiacle Cars Aston Martin",
+        "Mandala Geometry Patterns Vehiacle Cars Audi",
+        "Mandala Geometry Patterns Vehiacle Cars Bentley Continental",
+        "Mandala Geometry Patterns Vehiacle Cars Bmw",
+        "Mandala Geometry Patterns Vehiacle Cars Bugatti Chiron"
+      ]
+    },
+    {
+      "token": "dragon",
+      "assetCount": 259,
+      "exampleTitles": [
+        "Anime Girl Climbing A Dragon",
+        "Anime Girl Climbing Dragon",
+        "Anime Girl Dragon Claw",
+        "Anime Girl Dragon Claw Armor",
+        "Anime Girl Dragon Crying"
+      ]
+    },
+    {
+      "token": "prehistoric",
+      "assetCount": 234,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu Prehistoric Kitty",
+        "Anime Girl Summoning Jutsu Prehistoric Kitty Plushies",
+        "Chibi Mastodon Prehistoric",
+        "Chibi Plushie Prehistoric Ankylosaurus",
+        "Chibi Plushie Prehistoric Brachiosaurus"
+      ]
+    },
+    {
+      "token": "mythology",
+      "assetCount": 227,
+      "exampleTitles": [
+        "Anime Girl Greek Mythology",
+        "Fantasy Mythology Dragons Earth Dragon",
+        "Fantasy Mythology Dragons Fire Dragon",
+        "Fantasy Mythology Dragons Ice Dragon",
+        "Fantasy Mythology Dragons Lava Dragon"
+      ]
+    },
+    {
+      "token": "mushroom",
+      "assetCount": 218,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu Mushroom Dragon",
+        "Anime Girl Summoning Jutsu Mushroom Dragon Plushies",
+        "Anime Girl Summoning Mushroom Creature Plushies",
+        "Anime Girl Summoning Mushroom Creatures",
+        "Anime Girl Summoning Mushroom Fairies"
+      ]
+    },
+    {
+      "token": "birthday",
+      "assetCount": 211,
+      "exampleTitles": [
+        "Anime Girl Birthday Cake",
+        "Anime Girl Bunny Birthday Party",
+        "Anime Girl Celetbrating Birthday Cake",
+        "Holiday Birthday Animals Wearing Party Hats",
+        "Holiday Birthday Balloons Bunch"
+      ]
+    },
+    {
+      "token": "animals",
+      "assetCount": 210,
+      "exampleTitles": [
+        "Animals Alligator",
+        "Animals Antelopes",
+        "Animals Buffalo",
+        "Animals Butterflies",
+        "Animals Chickens"
+      ]
+    },
+    {
+      "token": "sea",
+      "assetCount": 199,
+      "exampleTitles": [
+        "Animals Sea Lion",
+        "Anime Girl Summoning Jutsu Sea Serpent Dragon",
+        "Anime Girl Summoning Jutsu Sea Serpent Dragon Plushies",
+        "Chibi Plushie Sea Anemone",
+        "Chibi Plushie Sea Lion"
+      ]
+    },
+    {
+      "token": "medieval",
+      "assetCount": 194,
+      "exampleTitles": [
+        "Anime Girl Medieval Knight Armor",
+        "Chibi Midieval Fantasy Ancient Ruins",
+        "Chibi Midieval Fantasy Basilisk",
+        "Chibi Midieval Fantasy Castle",
+        "Chibi Midieval Fantasy Centaur"
+      ]
+    },
+    {
+      "token": "car",
+      "assetCount": 193,
+      "exampleTitles": [
+        "Anime Girl Driving Race Car",
+        "Anime Girl Driving Race Car Driving",
+        "Mandala Geometry Patterns Emergency Police Car",
+        "Mandala Geometry Patterns Emergency Police Car Driving",
+        "Mandala Geometry Patterns Trains Locomotives Cable Car Climbing Mountain Hillside"
+      ]
+    },
+    {
+      "token": "celebration",
+      "assetCount": 190,
+      "exampleTitles": [
+        "Holiday Birthday Celebration Cat",
+        "Holiday Birthday Celebration Dogs",
+        "Holiday Birthday Celebration Dragon",
+        "Holiday Birthday Celebration Elf",
+        "Holiday Birthday Celebration Fairy"
+      ]
+    },
+    {
+      "token": "birds",
+      "assetCount": 169,
+      "exampleTitles": [
+        "Anime Girl Birds Duck",
+        "Anime Girl Photography Birds In Nature",
+        "Birds Albatross",
+        "Birds Auk",
+        "Birds Auklet"
+      ]
+    },
+    {
+      "token": "costume",
+      "assetCount": 166,
+      "exampleTitles": [
+        "Anime Girl Teddy Bear Costume",
+        "Chibi Holiday Halloween Trick Or Treat Dog In Cute Costume Coloring Page",
+        "Holiday Christmas Santa Claus Costume Coloring Page",
+        "Holiday Halloween Costume Plushie Alligator Family",
+        "Holiday Halloween Costume Plushie Alpaca Family"
+      ]
+    },
+    {
+      "token": "sushi",
+      "assetCount": 161,
+      "exampleTitles": [
+        "Anime Girl Eating Sushi",
+        "Anime Girl Eating Tasty Sushi",
+        "Anime Girl Sushi Kimono Dress",
+        "Mandala Geometry Patterns Japan Sushi Chef",
+        "Mandala Geometry Patterns Sushi"
+      ]
+    },
+    {
+      "token": "hoodie",
+      "assetCount": 159,
+      "exampleTitles": [
+        "Anime Girl Ankylosaurus Hoodie Plushie",
+        "Anime Girl Ankylosaurus Hoodie Plushie",
+        "Anime Girl Arctic Fox Hoodie Plushie",
+        "Anime Girl Arctic Fox Hoodie Plushie Snow",
+        "Anime Girl Armadillo Hoodie Animal Plushie"
+      ]
+    },
+    {
+      "token": "life",
+      "assetCount": 146,
+      "exampleTitles": [
+        "Mandala Geometry Patterns Tree Of Life Mandala",
+        "Sea Life Abalone",
+        "Sea Life Anchovy",
+        "Sea Life Anemone With Clownfish",
+        "Sea Life Angelfish"
+      ]
+    },
+    {
+      "token": "insects",
+      "assetCount": 138,
+      "exampleTitles": [
+        "Insects Angry Soldier Ant",
+        "Insects Ant",
+        "Insects Ant Carrying Leaves",
+        "Insects Ants",
+        "Insects Army Ant Cartoon"
+      ]
+    },
+    {
+      "token": "plant",
+      "assetCount": 129,
+      "exampleTitles": [
+        "Indoor Plants African Violet",
+        "Indoor Plants Aglaonema Pink Dalmation",
+        "Indoor Plants Aglaonema Siam Aurora",
+        "Indoor Plants Air Plant Tillandsia",
+        "Indoor Plants Air Plant Xerographica"
+      ]
+    },
+    {
+      "token": "indoor",
+      "assetCount": 128,
+      "exampleTitles": [
+        "Indoor Plants African Violet",
+        "Indoor Plants Aglaonema Pink Dalmation",
+        "Indoor Plants Aglaonema Siam Aurora",
+        "Indoor Plants Air Plant Tillandsia",
+        "Indoor Plants Air Plant Xerographica"
+      ]
+    },
+    {
+      "token": "japan",
+      "assetCount": 111,
+      "exampleTitles": [
+        "Mandala Geometry Patterns Japan Archer In Kyudo Style",
+        "Mandala Geometry Patterns Japan Autumn Maple Leaves",
+        "Mandala Geometry Patterns Japan Awa Odori Dance",
+        "Mandala Geometry Patterns Japan Bamboo Forest",
+        "Mandala Geometry Patterns Japan Bon Odori Dancers"
+      ]
+    },
+    {
+      "token": "train",
+      "assetCount": 102,
+      "exampleTitles": [
+        "Chibi Holiday Halloween Ghostly Train Passing Through Tunnel Coloring Page",
+        "Mandala Geometry Patterns Japan Shinkansen Bullet Train",
+        "Mandala Geometry Patterns Japan Shinkansen Bullet Train Mountain Scene",
+        "Mandala Geometry Patterns Trains Locomotives African Savanna Safari Train",
+        "Mandala Geometry Patterns Trains Locomotives Arctic Train On Snowy Ice Route"
+      ]
+    },
+    {
+      "token": "dungeon",
+      "assetCount": 99,
+      "exampleTitles": [
+        "Chibi Dungeon Adventure Bridge Over Lava",
+        "Chibi Dungeon Adventurer",
+        "Chibi Dungeon Adventurer Crystal Cavern",
+        "Chibi Dungeon Adventurer Party",
+        "Chibi Dungeon Ancient Altar"
+      ]
+    },
+    {
+      "token": "locomotive",
+      "assetCount": 99,
+      "exampleTitles": [
+        "Mandala Geometry Patterns Trains Locomotives African Savanna Safari Train",
+        "Mandala Geometry Patterns Trains Locomotives Arctic Train On Snowy Ice Route",
+        "Mandala Geometry Patterns Trains Locomotives Australian Outback Ghan Train",
+        "Mandala Geometry Patterns Trains Locomotives British Steam Heritage Train",
+        "Mandala Geometry Patterns Trains Locomotives Cable Car Climbing Mountain Hillside"
+      ]
+    },
+    {
+      "token": "reptiles",
+      "assetCount": 98,
+      "exampleTitles": [
+        "Reptiles Aligator With Turtle Shell",
+        "Reptiles Alligator Basking On Riverbank",
+        "Reptiles Alligator Snapping Turtle",
+        "Reptiles American Crocodile In Swamp",
+        "Reptiles Anole Lizard On Flower Branch"
+      ]
+    },
+    {
+      "token": "dinosaur",
+      "assetCount": 95,
+      "exampleTitles": [
+        "Anime Girl Dinosaur Fossil Hoodie Plushie",
+        "Anime Girl Dinosaur Fossil Hoodie Plushie",
+        "Anime Girl Dinosaur Fossil Hoodie Plushie Holding Egg",
+        "Anime Girl Stegasaurus Hoodie Plushie At Dino Theme Park",
+        "Anime Girl Summoning Jutsu Cute Dinosaur Plushies"
+      ]
+    },
+    {
+      "token": "bakery",
+      "assetCount": 93,
+      "exampleTitles": [
+        "Mandala Geometry Patterns Bakery Animal Shaped Cookies",
+        "Mandala Geometry Patterns Bakery Apple Pie",
+        "Mandala Geometry Patterns Bakery Baguette",
+        "Mandala Geometry Patterns Bakery Baker Hat",
+        "Mandala Geometry Patterns Bakery Baker Holding Bread"
+      ]
+    },
+    {
+      "token": "plane",
+      "assetCount": 92,
+      "exampleTitles": [
+        "Mandala Geometry Patterns Vehiacle Planes A 10 Thunderbolt Ii",
+        "Mandala Geometry Patterns Vehiacle Planes Agricultural Crop Duster",
+        "Mandala Geometry Patterns Vehiacle Planes Ah 64 Apache",
+        "Mandala Geometry Patterns Vehiacle Planes Air Ambulance Helicopter",
+        "Mandala Geometry Patterns Vehiacle Planes Airbus A380"
+      ]
+    },
+    {
+      "token": "creatures",
+      "assetCount": 91,
+      "exampleTitles": [
+        "Anime Girl Summoning Mushroom Creatures",
+        "Fantasy Creatures Banshee Mist",
+        "Fantasy Creatures Basilisk",
+        "Fantasy Creatures Centaur",
+        "Fantasy Creatures Centaur Archer"
+      ]
+    },
+    {
+      "token": "kawaii",
+      "assetCount": 88,
+      "exampleTitles": [
+        "Anime Girl Fluffy Clothes Kawaii",
+        "Anime Girl Summoning Jutsu Woolly Mammoth Kawaii Plushies",
+        "Anime Girl Teddy Bear Outfit Kawaii",
+        "Chibi Flowers Anemone Kawaii",
+        "Chibi Flowers Azalea Kawaii"
+      ]
+    },
+    {
+      "token": "gardening",
+      "assetCount": 85,
+      "exampleTitles": [
+        "Anime Girl Gardening",
+        "Anime Girl Gardening Flowers",
+        "Prehistoric Stegosaurus Gardening",
+        "Prehistoric Triceratops Gardening",
+        "Prehistoric Velociraptor Gardening"
+      ]
+    },
+    {
+      "token": "pets",
+      "assetCount": 79,
+      "exampleTitles": [
+        "Anime Girl Cyber Punk Hoodie And Robot Pets",
+        "Chibi Animals Pets Dogs Afghan Hound",
+        "Chibi Animals Pets Dogs Akita",
+        "Chibi Animals Pets Dogs Alaskan Malamute",
+        "Chibi Animals Pets Dogs American Staffordshire Terrier"
+      ]
+    },
+    {
+      "token": "forest",
+      "assetCount": 72,
+      "exampleTitles": [
+        "Anime Girl Enchanted Forest Ambush",
+        "Anime Girl Summoning Forest Fairies",
+        "Anime Girl Summoning Forest Fairy Plushies",
+        "Anime Girl Summoning Jutsu Forest Dragon",
+        "Anime Girl Summoning Jutsu Forest Dragon Plushies"
+      ]
+    },
+    {
+      "token": "roll",
+      "assetCount": 71,
+      "exampleTitles": [
+        "Mandala Geometry Patterns Bakery Cinnamon Roll",
+        "Mandala Geometry Patterns Sushi Alaska Roll",
+        "Mandala Geometry Patterns Sushi Avocado Dragon Roll",
+        "Mandala Geometry Patterns Sushi Baked Scallop Roll",
+        "Mandala Geometry Patterns Sushi Bento Box Kawaii Roll Tuna"
+      ]
+    },
+    {
+      "token": "bear",
+      "assetCount": 60,
+      "exampleTitles": [
+        "Animals Polarbear",
+        "Anime Girl Bear Hoodie Plushie",
+        "Anime Girl Chibi Bear Summon",
+        "Anime Girl Cute Teddy Bear Plushie",
+        "Anime Girl Hugging Teddy Bear"
+      ]
+    },
+    {
+      "token": "character",
+      "assetCount": 52,
+      "exampleTitles": [
+        "Chibi Plushie Bubble Tea Character",
+        "Chibi Plushie Cloud Character",
+        "Chibi Plushie Cookie Character",
+        "Chibi Plushie Donut Character",
+        "Chibi Plushie Earth Globe Character"
+      ]
+    },
+    {
+      "token": "baby",
+      "assetCount": 47,
+      "exampleTitles": [
+        "Anime Girl Studying With Plushie Sloth Baby",
+        "Anime Girl Summoning Jutsu Baby Pteranodon Plushies",
+        "Chibi Baby Rat",
+        "Chibi Dungeon Baby Dragon In Nest",
+        "Chibi Plushie Baby Alien"
+      ]
+    },
+    {
+      "token": "landmarks",
+      "assetCount": 47,
+      "exampleTitles": [
+        "World Landmarks",
+        "World Landmarks Abu Simbel Temples",
+        "World Landmarks Angkor Wat",
+        "World Landmarks Big Ben",
+        "World Landmarks Burj Khalifa"
+      ]
+    },
+    {
+      "token": "world",
+      "assetCount": 47,
+      "exampleTitles": [
+        "World Landmarks",
+        "World Landmarks Abu Simbel Temples",
+        "World Landmarks Angkor Wat",
+        "World Landmarks Big Ben",
+        "World Landmarks Burj Khalifa"
+      ]
+    },
+    {
+      "token": "wolf",
+      "assetCount": 45,
+      "exampleTitles": [
+        "Anime Girl Climbing A Wolf",
+        "Anime Girl Riding A Wolf",
+        "Anime Girl Riding A Wolf 1",
+        "Anime Girl Riding A Wolf 2",
+        "Anime Girl Summoning Jutsu Dire Wolf"
+      ]
+    },
+    {
+      "token": "tiger",
+      "assetCount": 43,
+      "exampleTitles": [
+        "Anime Girl Saber Toothed Tiger Hoodie Plushie",
+        "Anime Girl Saber Toothed Tiger Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Saber Toothed Tiger",
+        "Anime Girl Summoning Jutsu Saber Toothed Tiger Plushies",
+        "Anime Girl Summoning Jutsu Tiger Plushies"
+      ]
+    },
+    {
+      "token": "turtle",
+      "assetCount": 42,
+      "exampleTitles": [
+        "Chibi Plushie Sea Turtle Hatchling",
+        "Chibi Plushie Turtle",
+        "Holiday Birthday Celebration Plushie Turtle Family",
+        "Holiday Christmas Plushie Sea Turtle Family",
+        "Holiday Christmas Plushie Turtle Family"
+      ]
+    },
+    {
+      "token": "fox",
+      "assetCount": 40,
+      "exampleTitles": [
+        "Anime Girl Arctic Fox Hoodie Plushie",
+        "Anime Girl Arctic Fox Hoodie Plushie Snow",
+        "Anime Girl Fox",
+        "Anime Girl Fox",
+        "Anime Girl Fox Hoodie Animal Plushie"
+      ]
+    },
+    {
+      "token": "home",
+      "assetCount": 40,
+      "exampleTitles": [
+        "Anime Girl Journaling At Home",
+        "Homes Apartment Building Front View",
+        "Homes Beach House On Stilts",
+        "Homes Cabin In The Woods",
+        "Homes Cabin In Winter Scene"
+      ]
+    },
+    {
+      "token": "knight",
+      "assetCount": 39,
+      "exampleTitles": [
+        "Anime Girl Chess Knight",
+        "Anime Girl Chess Knight Cosplay",
+        "Anime Girl Knights Templar",
+        "Anime Girl Medieval Knight Armor",
+        "Anime Girl Summoning Jutsu Chess Pieces Knight"
+      ]
+    },
+    {
+      "token": "whale",
+      "assetCount": 39,
+      "exampleTitles": [
+        "Anime Girl Beluga Whale Hoodie Plushie",
+        "Anime Girl Beluga Whale Hoodie Plushie Swimming Cold",
+        "Chibi Plushie Blue Whale",
+        "Chibi Plushie Humpback Whale",
+        "Chibi Plushie Kawaii Blue Whale"
+      ]
+    },
+    {
+      "token": "tree",
+      "assetCount": 38,
+      "exampleTitles": [
+        "Anime Girl Chin Up Outdoor Tree Winter",
+        "Anime Girl Kitten Hoodie Plushie Climbing Tree",
+        "Anime Girl Kitten Hoodie Plushie Climbing Tree Smiling",
+        "Anime Girl Kitten Hoodie Plushie Sitting On Tree",
+        "Anime Girl Ninja Claws Leaping From Tree"
+      ]
+    },
+    {
+      "token": "unicorn",
+      "assetCount": 38,
+      "exampleTitles": [
+        "Anime Girl Summoning Unicorn Plushies",
+        "Anime Girl Summoning Unicorns",
+        "Anime Girl Unicorn Hoodie Plushie",
+        "Chibi Flying Unicorn",
+        "Chibi Midieval Fantasy Unicorn"
+      ]
+    },
+    {
+      "token": "cat",
+      "assetCount": 36,
+      "exampleTitles": [
+        "Cats Playing Cards",
+        "Anime Girl Cat",
+        "Anime Girl Cat Hoodie Plushie",
+        "Anime Girl Cat Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Cat Plushies"
+      ]
+    },
+    {
+      "token": "yoga",
+      "assetCount": 36,
+      "exampleTitles": [
+        "Anime Girl Tentacle Yoga In Ocean",
+        "Anime Girl Tentacle Yoga In Ocean Smiling",
+        "Anime Girl Yoga",
+        "Anime Girl Yoga Adho Mukha Svanasana",
+        "Anime Girl Yoga Adho Mukha Svanasana"
+      ]
+    },
+    {
+      "token": "face",
+      "assetCount": 35,
+      "exampleTitles": [
+        "Anime Girl Summoning Face With Emoji Plushies",
+        "Anime Girl Summoning Face With Emojis",
+        "Mandala Geometry Patterns Bald Eagle Face Patterns",
+        "Mandala Geometry Patterns Butterfly Face Patterns",
+        "Mandala Geometry Patterns Chameleon Face Patterns"
+      ]
+    },
+    {
+      "token": "magic",
+      "assetCount": 35,
+      "exampleTitles": [
+        "Anime Girl Summoning Magic Cats",
+        "Anime Girl Summoning Magic Musical Sword Plushies",
+        "Anime Girl Summoning Magic Musical Swords",
+        "Chibi Dungeon Floating Magic Crystals",
+        "Chibi Dungeon Haunted Magic Sword"
+      ]
+    },
+    {
+      "token": "cave",
+      "assetCount": 34,
+      "exampleTitles": [
+        "Anime Girl Cave Climbing",
+        "Anime Girl Cave Climbing 1",
+        "Chibi Cave Bear",
+        "Chibi Cave Lion",
+        "Chibi Cave Paintaings"
+      ]
+    },
+    {
+      "token": "fairy",
+      "assetCount": 34,
+      "exampleTitles": [
+        "Anime Girl Summoning Fairy Plushies",
+        "Anime Girl Summoning Forest Fairy Plushies",
+        "Anime Girl Summoning Jutsu Fae Dragon Fairy Dragon",
+        "Anime Girl Summoning Jutsu Fae Dragon Fairy Dragon High Detail",
+        "Anime Girl Summoning Jutsu Fae Dragon Fairy Dragon Plushies"
+      ]
+    },
+    {
+      "token": "house",
+      "assetCount": 33,
+      "exampleTitles": [
+        "Birds House Finch",
+        "Chibi Holiday Halloween Haunted House Coloring Page",
+        "Chibi Holiday Halloween Haunted House On Hill Coloring Page",
+        "Chibi Holiday Halloween Haunted House On Hill Under Full Moon Coloring Page",
+        "Chibi Holiday Halloween Haunted House On Stilts In Swamp Coloring Page"
+      ]
+    },
+    {
+      "token": "armor",
+      "assetCount": 32,
+      "exampleTitles": [
+        "Anime Girl Beast Berserker Armor",
+        "Anime Girl Beast Hide Armor",
+        "Anime Girl Celestial Paladin Armor",
+        "Anime Girl Celtic Tribal Armor",
+        "Anime Girl Chainmail Armor Mace Battle"
+      ]
+    },
+    {
+      "token": "lion",
+      "assetCount": 32,
+      "exampleTitles": [
+        "Animals Sea Lion",
+        "Anime Girl Lion Hoodie Plushie",
+        "Anime Girl Lion Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Lion Plushies",
+        "Anime Girl Summoning Jutsu Lions"
+      ]
+    },
+    {
+      "token": "tuna",
+      "assetCount": 32,
+      "exampleTitles": [
+        "Mandala Geometry Patterns Sushi Aburi Tuna Nigiri",
+        "Mandala Geometry Patterns Sushi Bento Box Kawaii Roll Tuna",
+        "Mandala Geometry Patterns Sushi Chutoro Medium Fatty Tuna",
+        "Mandala Geometry Patterns Sushi Cutting Board And Knife Roll Tuna",
+        "Mandala Geometry Patterns Sushi Edamame Roll Tuna"
+      ]
+    },
+    {
+      "token": "guardian",
+      "assetCount": 31,
+      "exampleTitles": [
+        "Chibi Dungeon Castle Gate Guardian",
+        "Chibi Dungeon Treasure Guardian Statue",
+        "Fantasy Cat Moon Guardian",
+        "Fantasy Cave Guardian",
+        "Fantasy Cave Scale Guardian"
+      ]
+    },
+    {
+      "token": "witch",
+      "assetCount": 31,
+      "exampleTitles": [
+        "Anime Girl Wicked Witch",
+        "Anime Girl Witch",
+        "Anime Girl Witch Hunter Attire",
+        "Anime Girl Witch Riding Broom",
+        "Anime Girl Witch Riding Broom"
+      ]
+    },
+    {
+      "token": "animal",
+      "assetCount": 30,
+      "exampleTitles": [
+        "Anime Girl Armadillo Hoodie Animal Plushie",
+        "Anime Girl Boar Hoodie Animal Plushie",
+        "Anime Girl Camel Hoodie Animal Plushie",
+        "Anime Girl Cheetah Hoodie Animal Plushie",
+        "Anime Girl Chimpanzee Hoodie Animal Plushie"
+      ]
+    },
+    {
+      "token": "flying",
+      "assetCount": 30,
+      "exampleTitles": [
+        "Anime Girl Flying Kite",
+        "Anime Girl Flying Kite Happy",
+        "Anime Girl Pilot Flying",
+        "Birds Bald Eagle Flying",
+        "Birds Falcon Flying"
+      ]
+    },
+    {
+      "token": "panda",
+      "assetCount": 30,
+      "exampleTitles": [
+        "Anime Girl Panda Hoodie Plushie",
+        "Anime Girl Panda Hoodie Plushie",
+        "Anime Girl Studying With Plushie Red Panda",
+        "Anime Girl Summoning Jutsu Panda Plushies",
+        "Anime Girl Summoning Jutsu Pandas"
+      ]
+    },
+    {
+      "token": "moon",
+      "assetCount": 29,
+      "exampleTitles": [
+        "Anime Girl Transforming Into Fantasy Werewolf Full Moon",
+        "Chibi Holiday Halloween Black Cat Sitting On Fence Under Moon Coloring Page",
+        "Chibi Holiday Halloween Haunted House On Hill Under Full Moon Coloring Page",
+        "Chibi Holiday Halloween Vampire Holding Goblet Under Crescent Moon Coloring Page",
+        "Chibi Holiday Halloween Werewolf Howling Under Full Moon Coloring Page"
+      ]
+    },
+    {
+      "token": "mountain",
+      "assetCount": 29,
+      "exampleTitles": [
+        "Anime Girl Yoga Mountain Pose",
+        "Anime Girl Yoga Mountain Pose",
+        "Birds Snow Bunting Mountain Landscape",
+        "Chibi Animals Pets Dogs Bernese Mountain Dog",
+        "Chibi Plushie Mountain Goat"
+      ]
+    },
+    {
+      "token": "pegasus",
+      "assetCount": 29,
+      "exampleTitles": [
+        "Chibi Flying Pegasus",
+        "Chibi Midieval Fantasy Pegasus",
+        "Chibi Pegasus",
+        "Chibi Plushie Pegasus",
+        "Chibi Samurai Pegasus"
+      ]
+    },
+    {
+      "token": "terrier",
+      "assetCount": 29,
+      "exampleTitles": [
+        "Chibi Animals Pets Dogs American Staffordshire Terrier",
+        "Chibi Animals Pets Dogs Border Terrier",
+        "Chibi Animals Pets Dogs Boston Terrier",
+        "Chibi Animals Pets Dogs Cairn Terrier",
+        "Chibi Animals Pets Dogs Jack Russell Terrier"
+      ]
+    },
+    {
+      "token": "cute",
+      "assetCount": 28,
+      "exampleTitles": [
+        "Anime Girl Cute Teddy Bear Plushie",
+        "Anime Girl Summoning Cute Heart Plushies",
+        "Anime Girl Summoning Cute Hearts",
+        "Anime Girl Summoning Jutsu Cute Dinosaur Plushies",
+        "Anime Girl Summoning Jutsu Cute Dragon Plushies"
+      ]
+    },
+    {
+      "token": "owl",
+      "assetCount": 28,
+      "exampleTitles": [
+        "Animals Owls",
+        "Birds Barn Owl",
+        "Birds Great Horned Owl",
+        "Birds Long Eared Owl",
+        "Birds Owl"
+      ]
+    },
+    {
+      "token": "bat",
+      "assetCount": 27,
+      "exampleTitles": [
+        "Anime Girl Bat Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Bat Plushies",
+        "Anime Girl Summoning Jutsu Bats",
+        "Chibi Bat",
+        "Chibi Dungeon Giant Bat Swarm"
+      ]
+    },
+    {
+      "token": "crystal",
+      "assetCount": 27,
+      "exampleTitles": [
+        "Anime Girl Crystal Palace Defense",
+        "Anime Girl Summoning Jutsu Crystal Dragon",
+        "Anime Girl Summoning Jutsu Crystal Dragon Plushies",
+        "Chibi Dungeon Adventurer Crystal Cavern",
+        "Chibi Dungeon Crystal Cave Dragon"
+      ]
+    },
+    {
+      "token": "japanese",
+      "assetCount": 27,
+      "exampleTitles": [
+        "Anime Girl Houmongi Japanese Dress",
+        "Anime Girl Junihitoe Japanese Dress",
+        "Anime Girl Uchikake Japanese Dress",
+        "Homes Japanese Traditional House With Garden",
+        "Mandala Geometry Patterns Japan Japanese Bridge"
+      ]
+    },
+    {
+      "token": "professions",
+      "assetCount": 27,
+      "exampleTitles": [
+        "Chibi Professions Architect",
+        "Chibi Professions Chef",
+        "Chibi Professions Construction Worker",
+        "Chibi Professions Dancer",
+        "Chibi Professions Dentist"
+      ]
+    },
+    {
+      "token": "snow",
+      "assetCount": 27,
+      "exampleTitles": [
+        "Anime Girl Arctic Fox Hoodie Plushie Snow",
+        "Birds Snow Bunting",
+        "Birds Snow Bunting Mountain Landscape",
+        "Chibi Mushroom Snow Fungus",
+        "Chibi Plushie Snow Leopard"
+      ]
+    },
+    {
+      "token": "spider",
+      "assetCount": 27,
+      "exampleTitles": [
+        "Chibi Dungeon Cave Spider Nest",
+        "Chibi Holiday Halloween Cobweb In Corner With Spider Coloring Page",
+        "Chibi Holiday Halloween Giant Spider Crawling On Wall Coloring Page",
+        "Holiday Halloween Cobweb In Corner With Spider Coloring Page",
+        "Holiday Halloween Giant Spider Crawling On Wall Coloring Page"
+      ]
+    },
+    {
+      "token": "battle",
+      "assetCount": 26,
+      "exampleTitles": [
+        "Anime Girl Alien Invasion Battle",
+        "Anime Girl Battle Claws",
+        "Anime Girl Battle Worn Claws",
+        "Anime Girl Chainmail Armor Mace Battle",
+        "Anime Girl Energy Ball Attack Leviathan Battle Shounin"
+      ]
+    },
+    {
+      "token": "ice",
+      "assetCount": 26,
+      "exampleTitles": [
+        "Anime Girl Ice Alchemy",
+        "Anime Girl Ice Beam",
+        "Anime Girl Ice Climbing",
+        "Anime Girl Ice Climbing",
+        "Anime Girl Summoning Jutsu Ice Dragon"
+      ]
+    },
+    {
+      "token": "mermaid",
+      "assetCount": 26,
+      "exampleTitles": [
+        "Anime Girl Mermaid Scale Armor",
+        "Anime Girl Mermaid Surprise",
+        "Chibi Mermaid",
+        "Chibi Plushie Mermaid",
+        "Fantasy Creatures Mermaid"
+      ]
+    },
+    {
+      "token": "sloth",
+      "assetCount": 26,
+      "exampleTitles": [
+        "Anime Girl Sloth Hoodie Plushie",
+        "Anime Girl Sloth Hoodie Plushie",
+        "Anime Girl Studying With Plushie Sloth Baby",
+        "Anime Girl Summoning Jutsu Sloth Plushies",
+        "Chibi Plushie Sloth"
+      ]
+    },
+    {
+      "token": "castle",
+      "assetCount": 25,
+      "exampleTitles": [
+        "Chibi Castle",
+        "Chibi Dungeon Castle Gate Defender",
+        "Chibi Dungeon Castle Gate Guardian",
+        "Chibi Holiday Halloween Creepy Castle With Torch Lit Windows Coloring Page",
+        "Chibi Holiday Halloween Dracula Flying As Bat Over Castle Coloring Page"
+      ]
+    },
+    {
+      "token": "day",
+      "assetCount": 25,
+      "exampleTitles": [
+        "Anime Girl Summoning Valentines Day Hearts",
+        "Christmas Holiday Christmas Day",
+        "Mandala Geometry Patterns Japan Origami Valentines Day Heart",
+        "Mandala Geometry Patterns Japan Origami Valentines Day Teddybear Holding Heart",
+        "Reptiles Day Gecko"
+      ]
+    },
+    {
+      "token": "fungus",
+      "assetCount": 25,
+      "exampleTitles": [
+        "Chibi Mushroom Coral Fungus",
+        "Chibi Mushroom Earthstar Fungus",
+        "Chibi Mushroom Ghost Fungus Glowing",
+        "Chibi Mushroom Honey Fungus Cluster",
+        "Chibi Mushroom Snow Fungus"
+      ]
+    },
+    {
+      "token": "giant",
+      "assetCount": 25,
+      "exampleTitles": [
+        "Chibi Dungeon Giant Bat Swarm",
+        "Chibi Holiday Halloween Giant Spider Crawling On Wall Coloring Page",
+        "Chibi Mushroom Puffball Giant",
+        "Fantasy Creatures Frost Giant",
+        "Fantasy Forest Giant"
+      ]
+    },
+    {
+      "token": "butterfly",
+      "assetCount": 24,
+      "exampleTitles": [
+        "Anime Girl Summoning Butterfly Plushies",
+        "Chibi Plushie Butterfly",
+        "Fantasy Butterfly Fairy Meadow",
+        "Holiday Birthday Celebration Plushie Butterfly Family",
+        "Holiday Christmas Plushie Butterfly Family"
+      ]
+    },
+    {
+      "token": "classic",
+      "assetCount": 24,
+      "exampleTitles": [
+        "Homes Classic Bungalow With Porch",
+        "Homes Treehouse Classic Ladder",
+        "Mandala Geometry Patterns Trains Locomotives Classic Steam Engine Front View",
+        "Mandala Geometry Patterns Trains Locomotives Classic Steam Engine Side View",
+        "Mandala Geometry Patterns Trains Locomotives Classic Steam Engine With Smoke Stack"
+      ]
+    },
+    {
+      "token": "beetle",
+      "assetCount": 23,
+      "exampleTitles": [
+        "Insects Beetle",
+        "Insects Beetle On Log",
+        "Insects Beetle Spider Hybrid",
+        "Insects Dung Beetle",
+        "Insects Dung Beetle Rolling Ball"
+      ]
+    },
+    {
+      "token": "bridge",
+      "assetCount": 23,
+      "exampleTitles": [
+        "Chibi Dungeon Adventure Bridge Over Lava",
+        "Chibi Dungeon Torch Lit Bridge",
+        "Fantasy Astral Bridge",
+        "Fantasy Creatures Troll Bridge",
+        "Fantasy Troll Bridge"
+      ]
+    },
+    {
+      "token": "chess",
+      "assetCount": 23,
+      "exampleTitles": [
+        "Anime Girl Chess",
+        "Anime Girl Chess Bishop",
+        "Anime Girl Chess King",
+        "Anime Girl Chess King Cosplay",
+        "Anime Girl Chess Knight"
+      ]
+    },
+    {
+      "token": "garden",
+      "assetCount": 23,
+      "exampleTitles": [
+        "Anime Girl Smelling Daisies In Garden",
+        "Anime Girl Smelling Roses In Garden",
+        "Birds Canary Garden",
+        "Chibi Flowers Tulip Garden",
+        "Fantasy Fairy Garden"
+      ]
+    },
+    {
+      "token": "kitten",
+      "assetCount": 23,
+      "exampleTitles": [
+        "Anime Girl Kitten Hoodie Plushie",
+        "Anime Girl Kitten Hoodie Plushie Climbing Tree",
+        "Anime Girl Kitten Hoodie Plushie Climbing Tree Smiling",
+        "Anime Girl Kitten Hoodie Plushie Sitting On Tree",
+        "Anime Girl Summoning Jutsu Kitten Plushies"
+      ]
+    },
+    {
+      "token": "pumpkin",
+      "assetCount": 23,
+      "exampleTitles": [
+        "Chibi Holiday Halloween Black Cat Peeking Out Of Pumpkin Coloring Page",
+        "Chibi Holiday Halloween Ghost Peeking From Pumpkin Coloring Page",
+        "Chibi Holiday Halloween Halloween Market Stall With Pumpkins Coloring Page",
+        "Chibi Holiday Halloween Happy Pumpkin Patch Scene Coloring Page",
+        "Chibi Holiday Halloween Jack O Lantern Stack Of Three Pumpkins Coloring Page"
+      ]
+    },
+    {
+      "token": "salamander",
+      "assetCount": 23,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu Salamander Dragon",
+        "Anime Girl Summoning Jutsu Salamander Dragon Plushies",
+        "Chibi Plushie Kawaii Salamander",
+        "Chibi Plushie Salamander",
+        "Chibi Poison Salamander Dragon"
+      ]
+    },
+    {
+      "token": "woolly",
+      "assetCount": 23,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu Woolly Mammoth",
+        "Anime Girl Summoning Jutsu Woolly Mammoth Kawaii Plushies",
+        "Anime Girl Summoning Jutsu Woolly Mammoth Plushies",
+        "Anime Girl Summoning Jutsu Woolly Rhinoceros",
+        "Anime Girl Summoning Jutsu Woolly Rhinoceros Plushies"
+      ]
+    },
+    {
+      "token": "eagle",
+      "assetCount": 22,
+      "exampleTitles": [
+        "Animals Eagle",
+        "Animals Eagles",
+        "Birds Bald Eagle",
+        "Birds Bald Eagle Flying",
+        "Birds Bald Eagle Taking Flight"
+      ]
+    },
+    {
+      "token": "haunted",
+      "assetCount": 22,
+      "exampleTitles": [
+        "Chibi Dungeon Haunted Armor",
+        "Chibi Dungeon Haunted Magic Sword",
+        "Chibi Dungeon Haunted Throne Room",
+        "Chibi Holiday Halloween Candy Trail Leading To Haunted Door Coloring Page",
+        "Chibi Holiday Halloween Ghost Floating In Haunted Hallway Coloring Page"
+      ]
+    },
+    {
+      "token": "king",
+      "assetCount": 22,
+      "exampleTitles": [
+        "Anime Girl Chess King",
+        "Anime Girl Chess King Cosplay",
+        "Anime Girl Summoning Jutsu Chess Pieces King",
+        "Anime Girl Summoning Jutsu Chess Pieces King Plushies",
+        "Chibi Animals Pets Dogs Cavalier King Charles Spaniel"
+      ]
+    },
+    {
+      "token": "playing",
+      "assetCount": 22,
+      "exampleTitles": [
+        "Cats Playing Cards",
+        "Anime Girl Playing Cards",
+        "Anime Girl Playing Cards Professionally",
+        "Anime Girl Playing Flute",
+        "Anime Girl Playing Piano"
+      ]
+    },
+    {
+      "token": "triceratops",
+      "assetCount": 22,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu Triceratops",
+        "Anime Girl Summoning Jutsu Triceratops Dino",
+        "Anime Girl Triceratops Hoodie Plushie",
+        "Anime Girl Triceratops Hoodie Plushie",
+        "Anime Girl Triceratops Hoodie Plushie In Park"
+      ]
+    },
+    {
+      "token": "crab",
+      "assetCount": 21,
+      "exampleTitles": [
+        "Chibi Plushie Crab",
+        "Holiday Birthday Celebration Plushie Crab Family",
+        "Holiday Christmas Plushie Crab Family",
+        "Holiday Halloween Costume Plushie Crab Family",
+        "Mandala Geometry Patterns Plushie Crab"
+      ]
+    },
+    {
+      "token": "griffin",
+      "assetCount": 21,
+      "exampleTitles": [
+        "Chibi Dungeon Pet Griffin",
+        "Chibi Midieval Fantasy Griffin",
+        "Chibi Plushie Griffin",
+        "Fantasy Chibi Griffin Nest",
+        "Fantasy Dawn Griffin"
+      ]
+    },
+    {
+      "token": "koala",
+      "assetCount": 21,
+      "exampleTitles": [
+        "Anime Girl Koala Hoodie Plushie",
+        "Anime Girl Koala Hoodie Plushie",
+        "Anime Girl Koala Hoodie Plushie Australia",
+        "Anime Girl Koala Hoodie Plushie Cosplay",
+        "Anime Girl Summoning Jutsu Koala Plushies"
+      ]
+    },
+    {
+      "token": "otter",
+      "assetCount": 21,
+      "exampleTitles": [
+        "Animals Otter",
+        "Anime Girl Studying With Plushie Otter",
+        "Chibi Plushie Otter",
+        "Chibi Plushie Sea Otter",
+        "Holiday Birthday Celebration Plushie Otter Family"
+      ]
+    },
+    {
+      "token": "blue",
+      "assetCount": 20,
+      "exampleTitles": [
+        "Birds Blue Jay",
+        "Birds Blue Jay Perched On Branch",
+        "Birds Blue Jays",
+        "Chibi Plushie Blue Whale",
+        "Chibi Plushie Kawaii Blue Whale"
+      ]
+    },
+    {
+      "token": "fire",
+      "assetCount": 20,
+      "exampleTitles": [
+        "Anime Girl Chariot Of Fire Raid",
+        "Anime Girl Fire Fighter Rescue",
+        "Anime Girl Fire Juggler",
+        "Anime Girl Fire Juggler Carnival",
+        "Anime Girl Summoning Jutsu Fire Dragon"
+      ]
+    },
+    {
+      "token": "mammoth",
+      "assetCount": 20,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu Woolly Mammoth",
+        "Anime Girl Summoning Jutsu Woolly Mammoth Kawaii Plushies",
+        "Anime Girl Summoning Jutsu Woolly Mammoth Plushies",
+        "Anime Girl Woolly Mammoth Hoodie Plushie",
+        "Anime Girl Woolly Mammoth Hoodie Plushie"
+      ]
+    },
+    {
+      "token": "octopus",
+      "assetCount": 20,
+      "exampleTitles": [
+        "Anime Girl Octopus Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Ringed Octopus",
+        "Anime Girl Summoning Jutsu Ringed Octopus Plushies",
+        "Chibi Plushie Baby Octopus",
+        "Chibi Plushie Octopus"
+      ]
+    },
+    {
+      "token": "over",
+      "assetCount": 20,
+      "exampleTitles": [
+        "Chibi Dungeon Adventure Bridge Over Lava",
+        "Chibi Holiday Halloween Cauldron Bubbling Over Firewood Coloring Page",
+        "Chibi Holiday Halloween Dracula Flying As Bat Over Castle Coloring Page",
+        "Chibi Holiday Halloween Pumpkin Patch With Crows Flying Over Coloring Page",
+        "Chibi Holiday Halloween Werewolf Jumping Over Haunted Fence Coloring Page"
+      ]
+    },
+    {
+      "token": "patrick",
+      "assetCount": 20,
+      "exampleTitles": [
+        "St Patricks Day Celtic Knot Mandala Pattern Coloring Page",
+        "St Patricks Day Dragon Guarding Pot Of Gold Coloring Page",
+        "St Patricks Day Irish Castle On Hilltop Coloring Page",
+        "St Patricks Day Irish Harp With Shamrocks Coloring Page",
+        "St Patricks Day Kids Dressed As Leprechauns Coloring Page"
+      ]
+    },
+    {
+      "token": "penguin",
+      "assetCount": 20,
+      "exampleTitles": [
+        "Animals Penguins",
+        "Anime Girl Penguin Hoodie Plushie",
+        "Birds Penguin",
+        "Birds Penguin On Ice",
+        "Chibi Plushie Penguin"
+      ]
+    },
+    {
+      "token": "red",
+      "assetCount": 20,
+      "exampleTitles": [
+        "Anime Girl Studying With Plushie Red Panda",
+        "Chibi Flowers Red Maple",
+        "Chibi Plushie Red Panda",
+        "Holiday Christmas Reindeer Rudolph With Red Nose Coloring Page",
+        "Flowers Red Maple"
+      ]
+    },
+    {
+      "token": "steam",
+      "assetCount": 20,
+      "exampleTitles": [
+        "Mandala Geometry Patterns Trains Locomotives British Steam Heritage Train",
+        "Mandala Geometry Patterns Trains Locomotives Cartoon Smiling Steam Engine For Kids",
+        "Mandala Geometry Patterns Trains Locomotives Classic Steam Engine Front View",
+        "Mandala Geometry Patterns Trains Locomotives Classic Steam Engine Side View",
+        "Mandala Geometry Patterns Trains Locomotives Classic Steam Engine With Smoke Stack"
+      ]
+    },
+    {
+      "token": "water",
+      "assetCount": 20,
+      "exampleTitles": [
+        "Anime Girl Lifeguard Going Down Water Slide",
+        "Chibi Animals Pets Dogs Portuguese Water Dog",
+        "Chibi Dungeon Water Elemental",
+        "Dogs Portuguese Water Dog",
+        "Fantasy Cleric Water Sanctum"
+      ]
+    },
+    {
+      "token": "bird",
+      "assetCount": 19,
+      "exampleTitles": [
+        "Anime Girl Dodo Bird Hoodie Plushie",
+        "Anime Girl Dodo Bird Hoodie Plushie",
+        "Chibi Flowers Bird Of Paradise",
+        "Chibi Plushie Kiwi Bird",
+        "Prehistoric Dodo Bird"
+      ]
+    },
+    {
+      "token": "climbing",
+      "assetCount": 19,
+      "exampleTitles": [
+        "Anime Girl Cave Climbing",
+        "Anime Girl Cave Climbing 1",
+        "Anime Girl Climbing A Dragon",
+        "Anime Girl Climbing A Wolf",
+        "Anime Girl Climbing Dragon"
+      ]
+    },
+    {
+      "token": "duck",
+      "assetCount": 19,
+      "exampleTitles": [
+        "Animals Duck",
+        "Anime Girl Birds Duck",
+        "Anime Girl Duck Hoodie Plushie",
+        "Anime Girl Duck Outfit",
+        "Birds Ducks"
+      ]
+    },
+    {
+      "token": "giraffe",
+      "assetCount": 19,
+      "exampleTitles": [
+        "Anime Girl Giraffe Hoodie Animal Plushie",
+        "Anime Girl Giraffe Hoodie Plushie",
+        "Anime Girl Giraffe Hoodie Plushie",
+        "Anime Girl Giraffe Hoodie Plushie Cosplay",
+        "Anime Girl Summoning Jutsu Cute Giraffe Plushies"
+      ]
+    },
+    {
+      "token": "heart",
+      "assetCount": 19,
+      "exampleTitles": [
+        "Anime Girl Summoning Broken Heart Emoji Plushies",
+        "Anime Girl Summoning Broken Heart Emojis",
+        "Anime Girl Summoning Cute Heart Plushies",
+        "Anime Girl Summoning Emoji Heart Plushies",
+        "Anime Girl Summoning Heart Emoji Plushies"
+      ]
+    },
+    {
+      "token": "rabbit",
+      "assetCount": 19,
+      "exampleTitles": [
+        "Anime Girl Rabbit",
+        "Anime Girl Rabbit Hoodie Plushie",
+        "Anime Girl Rabbit Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Rabbit Plushies",
+        "Anime Girl Summoning Jutsu Rabbits"
+      ]
+    },
+    {
+      "token": "shark",
+      "assetCount": 19,
+      "exampleTitles": [
+        "Anime Girl Shark Hoodie Plushie",
+        "Anime Girl Shark Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Great White Shark Plushies",
+        "Chibi Megalodon Tiger Shark",
+        "Mandala Geometry Patterns Shark"
+      ]
+    },
+    {
+      "token": "air",
+      "assetCount": 18,
+      "exampleTitles": [
+        "Anime Girl Air Balloon",
+        "Anime Girl Riding Air Balloon",
+        "Anime Girl Summoning Jutsu Air Dragon",
+        "Anime Girl Summoning Jutsu Air Dragon Plushies",
+        "Chibi Air Dragon"
+      ]
+    },
+    {
+      "token": "ancient",
+      "assetCount": 18,
+      "exampleTitles": [
+        "Chibi Dungeon Ancient Altar",
+        "Chibi Dungeon Ancient Dungeon Map",
+        "Chibi Dungeon Ancient Runestone",
+        "Chibi Dungeon Ancient Treasure Map",
+        "Chibi Midieval Fantasy Ancient Ruins"
+      ]
+    },
+    {
+      "token": "centaur",
+      "assetCount": 18,
+      "exampleTitles": [
+        "Anime Girl Centaur Standoff",
+        "Chibi Centaur",
+        "Chibi Centaur Archer",
+        "Chibi Elf Centaur",
+        "Chibi Midieval Fantasy Centaur"
+      ]
+    },
+    {
+      "token": "gate",
+      "assetCount": 18,
+      "exampleTitles": [
+        "Anime Girl Cerberus Gate Guard",
+        "Chibi Dungeon Castle Gate Defender",
+        "Chibi Dungeon Castle Gate Guardian",
+        "Chibi Dungeon Magic Mirror Gate",
+        "Chibi Holiday Halloween Haunted Mansion With Creaky Gate Coloring Page"
+      ]
+    },
+    {
+      "token": "lizard",
+      "assetCount": 18,
+      "exampleTitles": [
+        "Anime Girl Summoning Australian Throny Devil Lizard",
+        "Anime Girl Summoning Australian Throny Devil Lizard Plushies",
+        "Anime Girl Summoning Frilled Lizard Plushies",
+        "Anime Girl Summoning Frilled Lizards",
+        "Reptiles Anole Lizard On Flower Branch"
+      ]
+    },
+    {
+      "token": "moose",
+      "assetCount": 18,
+      "exampleTitles": [
+        "Anime Girl Moose Hoodie Plushie",
+        "Anime Girl Moose Hoodie Plushie Cosplay",
+        "Anime Girl Summoning Jutsu Moose",
+        "Anime Girl Summoning Jutsu Moose Plushies",
+        "Chibi Dino Moose"
+      ]
+    },
+    {
+      "token": "phoenix",
+      "assetCount": 18,
+      "exampleTitles": [
+        "Anime Girl Phoenix Rebirth Battle",
+        "Anime Girl Phoenix Spirit",
+        "Chibi Flaming Phoenix",
+        "Chibi Phoenix",
+        "Chibi Plushie Phoenix"
+      ]
+    },
+    {
+      "token": "pose",
+      "assetCount": 18,
+      "exampleTitles": [
+        "Anime Girl Yoga Cat Pose",
+        "Anime Girl Yoga Cat Pose",
+        "Anime Girl Yoga Crane Pose",
+        "Anime Girl Yoga Crane Pose",
+        "Anime Girl Yoga Crow Pose"
+      ]
+    },
+    {
+      "token": "queen",
+      "assetCount": 18,
+      "exampleTitles": [
+        "Anime Girl Chess Queen",
+        "Anime Girl Chess Queen Cosplay",
+        "Anime Girl Dragon Queen",
+        "Anime Girl Dragon Queen",
+        "Anime Girl Summoning Jutsu Chess Pieces Queen"
+      ]
+    },
+    {
+      "token": "rex",
+      "assetCount": 18,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu Tyrannosaurus Rex Dinosaur",
+        "Anime Girl T Rex Hoodie Plushie",
+        "Anime Girl T Rex Hoodie Plushie",
+        "Anime Girl T Rex Hoodie Plushie Back Yard",
+        "Anime Girl T Rex Hoodie Plushie Volcano"
+      ]
+    },
+    {
+      "token": "saber",
+      "assetCount": 18,
+      "exampleTitles": [
+        "Anime Girl Saber Toothed Tiger Hoodie Plushie",
+        "Anime Girl Saber Toothed Tiger Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Saber Toothed Tiger",
+        "Anime Girl Summoning Jutsu Saber Toothed Tiger Plushies",
+        "Chibi Plushie Prehistoric Saber Toothed Tiger"
+      ]
+    },
+    {
+      "token": "snake",
+      "assetCount": 18,
+      "exampleTitles": [
+        "Anime Girl Snake Charming",
+        "Anime Girl Snake Hoodie Plushie",
+        "Anime Girl Snake Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Snake Plushies",
+        "Anime Girl Summoning Jutsu Snakes"
+      ]
+    },
+    {
+      "token": "toothed",
+      "assetCount": 18,
+      "exampleTitles": [
+        "Anime Girl Saber Toothed Tiger Hoodie Plushie",
+        "Anime Girl Saber Toothed Tiger Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Saber Toothed Tiger",
+        "Anime Girl Summoning Jutsu Saber Toothed Tiger Plushies",
+        "Chibi Plushie Prehistoric Saber Toothed Tiger"
+      ]
+    },
+    {
+      "token": "zebra",
+      "assetCount": 18,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu Zebra Plushies",
+        "Anime Girl Zebra Hoodie Plushie",
+        "Anime Girl Zebra Hoodie Plushie",
+        "Anime Girl Zebra Hoodie Plushie Blowing Bubbles",
+        "Chibi Plushie Zebra"
+      ]
+    },
+    {
+      "token": "elephant",
+      "assetCount": 17,
+      "exampleTitles": [
+        "Animals Elephants",
+        "Anime Girl Elephant Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Elephant Plushies",
+        "Anime Girl Summoning Jutsu Elephants",
+        "Chibi Elephant"
+      ]
+    },
+    {
+      "token": "ghost",
+      "assetCount": 17,
+      "exampleTitles": [
+        "Chibi Ghost Pirates",
+        "Chibi Holiday Halloween Cute Halloween Ghost Cat Bat Friends Coloring Page",
+        "Chibi Holiday Halloween Ghost Family Coloring Page",
+        "Chibi Holiday Halloween Ghost Family With Smiling Faces Coloring Page",
+        "Chibi Holiday Halloween Ghost Floating Above Graveyard Coloring Page"
+      ]
+    },
+    {
+      "token": "lantern",
+      "assetCount": 17,
+      "exampleTitles": [
+        "Anime Girl Lantern Festival",
+        "Chibi Holiday Halloween Haunted Mansion With Lantern Lit Path Coloring Page",
+        "Chibi Holiday Halloween Jack O Lantern Faces Variety Coloring Page",
+        "Chibi Holiday Halloween Jack O Lantern Glowing In Window Coloring Page",
+        "Chibi Holiday Halloween Jack O Lantern Lined Front Porch Coloring Page"
+      ]
+    },
+    {
+      "token": "raccoon",
+      "assetCount": 17,
+      "exampleTitles": [
+        "Anime Girl Raccoon",
+        "Anime Girl Raccoon",
+        "Anime Girl Raccoon Eating Sandwitch",
+        "Anime Girl Raccoon Hoodie Plushie",
+        "Anime Girl Raccoon Hoodie Plushie"
+      ]
+    },
+    {
+      "token": "shadow",
+      "assetCount": 17,
+      "exampleTitles": [
+        "Anime Girl Shadow Ball",
+        "Anime Girl Shadow Rebellion",
+        "Anime Girl Shadow Sprit Summoning",
+        "Chibi Holiday Halloween Vampire With Spooky Shadow On Wall Coloring Page",
+        "Fantasy Chibi Shadow Knight"
+      ]
+    },
+    {
+      "token": "stegosaurus",
+      "assetCount": 17,
+      "exampleTitles": [
+        "Anime Girl Stegosaurus Hoodie Plushie",
+        "Anime Girl Stegosaurus Hoodie Plushie",
+        "Anime Girl Stegosaurus Hoodie Plushies",
+        "Anime Girl Summoning Jutsu Stegosaurus",
+        "Anime Girl Summoning Jutsu Stegosaurus Plushies"
+      ]
+    },
+    {
+      "token": "swimming",
+      "assetCount": 17,
+      "exampleTitles": [
+        "Anime Girl Beluga Whale Hoodie Plushie Swimming Cold",
+        "Anime Girl Swimming",
+        "Anime Girl Swimming At Beach",
+        "Anime Girl Swimming Olympics",
+        "Birds Swan Swimming"
+      ]
+    },
+    {
+      "token": "velociraptor",
+      "assetCount": 17,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu Velociraptor",
+        "Anime Girl Summoning Jutsu Velociraptor Dinosaur",
+        "Anime Girl Velociraptor Hoodie Plushie",
+        "Anime Girl Velociraptor Hoodie Plushie",
+        "Chibi Plushie Prehistoric Velociraptor"
+      ]
+    },
+    {
+      "token": "coral",
+      "assetCount": 16,
+      "exampleTitles": [
+        "Chibi Mushroom Coral Fungus",
+        "Fantasy Mermaid Coral Throne",
+        "Fantasy Mermaid Princess Coral Throne",
+        "Gardening Mushroom Coral Fungus",
+        "Indoor Plants Coral Cactus"
+      ]
+    },
+    {
+      "token": "diplodocus",
+      "assetCount": 16,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu Diplodocus",
+        "Anime Girl Summoning Jutsu Diplodocus Plushies",
+        "Chibi Diplodocus",
+        "Chibi Plushie Prehistoric Diplodocus",
+        "Prehistoric Diplodocus"
+      ]
+    },
+    {
+      "token": "fish",
+      "assetCount": 16,
+      "exampleTitles": [
+        "Anime Girl Catching Fish",
+        "Anime Girl Fish Net Clothes Fishing",
+        "Anime Girl Fish Net Stocking",
+        "Anime Girl Summoning Angler Fish",
+        "Anime Girl Summoning Angler Fish Plushies"
+      ]
+    },
+    {
+      "token": "horse",
+      "assetCount": 16,
+      "exampleTitles": [
+        "Anime Girl Horse Hoodie Plushie",
+        "Anime Girl Horse Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Horse Plushies",
+        "Anime Girl Summoning Jutsu Horses",
+        "Chibi Horse"
+      ]
+    },
+    {
+      "token": "megalodon",
+      "assetCount": 16,
+      "exampleTitles": [
+        "Anime Girl Megalodon Hoodie Plushie",
+        "Anime Girl Megalodon Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Megalodon",
+        "Anime Girl Summoning Jutsu Megalodon Plushies",
+        "Chibi Megalodon Fish"
+      ]
+    },
+    {
+      "token": "nigiri",
+      "assetCount": 16,
+      "exampleTitles": [
+        "Mandala Geometry Patterns Sushi Aburi Ebi Nigiri",
+        "Mandala Geometry Patterns Sushi Aburi Salmon Nigiri",
+        "Mandala Geometry Patterns Sushi Aburi Tuna Nigiri",
+        "Mandala Geometry Patterns Sushi Avocado Nigiri",
+        "Mandala Geometry Patterns Sushi Chef Shaping Nigiri"
+      ]
+    },
+    {
+      "token": "polar",
+      "assetCount": 16,
+      "exampleTitles": [
+        "Animals Polarbear",
+        "Anime Girl Polar Bear Hoodie Plushie",
+        "Anime Girl Polar Bear Hoodie Plushie",
+        "Chibi Plushie Kawaii Polar Bear",
+        "Chibi Plushie Polar Bear"
+      ]
+    },
+    {
+      "token": "sky",
+      "assetCount": 16,
+      "exampleTitles": [
+        "Anime Girl Sky Diving",
+        "Anime Girl Sky Diving Clouds",
+        "Chibi Holiday Halloween Bat Colony Flying In Night Sky Coloring Page",
+        "Holiday Christmas Winter Night Sky With Northern Lights Coloring Page",
+        "Fantasy Creatures Roc Sky"
+      ]
+    },
+    {
+      "token": "spirit",
+      "assetCount": 16,
+      "exampleTitles": [
+        "Anime Girl Phoenix Spirit",
+        "Anime Girl Summoning Jutsu Spirit Dragon",
+        "Chibi Spirit Dragon",
+        "Fantasy Creatures Forest Spirit",
+        "Fantasy Fire Spirit Forge"
+      ]
+    },
+    {
+      "token": "arcane",
+      "assetCount": 15,
+      "exampleTitles": [
+        "Fantasy Arcane Crystals",
+        "Fantasy Arcane Crystals Growing",
+        "Fantasy Arcane Elk",
+        "Fantasy Arcane Fountain",
+        "Fantasy Arcane Lantern"
+      ]
+    },
+    {
+      "token": "bee",
+      "assetCount": 15,
+      "exampleTitles": [
+        "Anime Girl Bee Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Bumble Bee Battle Armor",
+        "Anime Girl Summoning Jutsu Bumble Bee Battle Armor Plushies",
+        "Anime Girl Summoning Killer Bee Plushies",
+        "Anime Girl Summoning Killer Bees"
+      ]
+    },
+    {
+      "token": "brachiosaurus",
+      "assetCount": 15,
+      "exampleTitles": [
+        "Anime Girl Brachiosaurus Hoodie Plushie",
+        "Anime Girl Brachiosaurus Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Brachiosaurus",
+        "Anime Girl Summoning Jutsu Brachiosaurus Plushies",
+        "Chibi Brachiosaurus"
+      ]
+    },
+    {
+      "token": "chef",
+      "assetCount": 15,
+      "exampleTitles": [
+        "Anime Girl Cooking Food Chef",
+        "Chibi Professions Chef",
+        "Mandala Geometry Patterns Bakery Pastry Chef",
+        "Mandala Geometry Patterns Japan Sushi Chef",
+        "Mandala Geometry Patterns Sushi Chef Cutting Rolls"
+      ]
+    },
+    {
+      "token": "circle",
+      "assetCount": 15,
+      "exampleTitles": [
+        "Chibi Dungeon Engraved Rune Circle",
+        "Chibi Dungeon Summoning Circle",
+        "Chibi Holiday Halloween Ghosts Holding Hands In Circle Coloring Page",
+        "Fantasy Glade Unicorn Circle",
+        "Fantasy Mage Rune Circle"
+      ]
+    },
+    {
+      "token": "deer",
+      "assetCount": 15,
+      "exampleTitles": [
+        "Chibi Plushie Deer",
+        "Holiday Christmas Animals Deer",
+        "Gardening Mushroom Deer Mushroom",
+        "Holiday Birthday Celebration Plushie Deer Family",
+        "Holiday Christmas Plushie Deer"
+      ]
+    },
+    {
+      "token": "enchanted",
+      "assetCount": 15,
+      "exampleTitles": [
+        "Anime Girl Enchanted Forest Ambush",
+        "Chibi Dungeon Enchanted Book",
+        "Chibi Enchanted Forest Fairy Dancing In Flower Ring",
+        "Chibi Enchanted Forest Fairy Dancing Under Moonlight",
+        "Chibi Enchanted Forest Fairy Sitting On Toadstool"
+      ]
+    },
+    {
+      "token": "happy",
+      "assetCount": 15,
+      "exampleTitles": [
+        "Anime Girl Flying Kite Happy",
+        "Anime Girl Hugging Teddy Bear Happy",
+        "Anime Girl Panther Hoodie Plushie Happy",
+        "Chibi Happy African Dragon",
+        "Chibi Happy Dragon"
+      ]
+    },
+    {
+      "token": "hippo",
+      "assetCount": 15,
+      "exampleTitles": [
+        "Anime Girl Hippo Hoodie Animal Plushie",
+        "Anime Girl Hippo Hoodie Plushie",
+        "Anime Girl Hippo Hoodie Plushie Cosplay",
+        "Anime Girl Summoning Jutsu Hippo Plushies",
+        "Chibi Hippo"
+      ]
+    },
+    {
+      "token": "hydra",
+      "assetCount": 15,
+      "exampleTitles": [
+        "Anime Girl Hydra Hunt",
+        "Anime Girl Summoning Jutsu Hydra Dragon",
+        "Chibi Dungeon Hydra Dragon",
+        "Chibi Hydra",
+        "Chibi Hydra Castle Pet"
+      ]
+    },
+    {
+      "token": "party",
+      "assetCount": 15,
+      "exampleTitles": [
+        "Anime Girl Bunny Birthday Party",
+        "Anime Girl Porcupine Hoodie Plushie Party",
+        "Chibi Dungeon Adventurer Party",
+        "Chibi Holiday Halloween Halloween Party With Balloons And Streamers Coloring Page",
+        "Chibi Holiday Halloween Pumpkin Carving Party Coloring Page"
+      ]
+    },
+    {
+      "token": "puppy",
+      "assetCount": 15,
+      "exampleTitles": [
+        "Animals Puppies",
+        "Chibi Plushie Puppy Dog",
+        "Holiday Christmas Animals Puppies",
+        "Holiday Birthday Celebration Plushie Puppy Dog Family",
+        "Holiday Christmas Dogs Siberian Husky Puppies"
+      ]
+    },
+    {
+      "token": "reindeer",
+      "assetCount": 15,
+      "exampleTitles": [
+        "Chibi Plushie Reindeer",
+        "Chibi Plushie Reindeer Rudolph",
+        "Holiday Christmas Reindeer Rudolph With Red Nose Coloring Page",
+        "Holiday Christmas Reindeer Team Pulling Sleigh Over Rooftops Coloring Page",
+        "Gardening Mushroom Reindeer Lichen Reindeer Gardener Christmas"
+      ]
+    },
+    {
+      "token": "riding",
+      "assetCount": 15,
+      "exampleTitles": [
+        "Anime Girl Riding A Kraken 1",
+        "Anime Girl Riding A Wolf",
+        "Anime Girl Riding A Wolf 1",
+        "Anime Girl Riding A Wolf 2",
+        "Anime Girl Riding Air Balloon"
+      ]
+    },
+    {
+      "token": "rune",
+      "assetCount": 15,
+      "exampleTitles": [
+        "Chibi Dungeon Engraved Rune Circle",
+        "Fantasy Alchemist Rune Cauldron",
+        "Fantasy Bard Rune Song",
+        "Fantasy Mage Rune Circle",
+        "Fantasy Rogue Rune Poison"
+      ]
+    },
+    {
+      "token": "sitting",
+      "assetCount": 15,
+      "exampleTitles": [
+        "Anime Girl Kitten Hoodie Plushie Sitting On Tree",
+        "Anime Girl Summoning Jutsu Kittens Sitting On Tree",
+        "Birds Macaw Parrot Sitting",
+        "Chibi Earth Dragon Sitting",
+        "Chibi Enchanted Forest Fairy Sitting On Toadstool"
+      ]
+    },
+    {
+      "token": "smiling",
+      "assetCount": 15,
+      "exampleTitles": [
+        "Anime Girl Kitten Hoodie Plushie Climbing Tree Smiling",
+        "Anime Girl Summoning Smiling Emoji Plushies",
+        "Anime Girl Summoning Smiling Emojis",
+        "Anime Girl Tentacle Yoga In Ocean Smiling",
+        "Anime Girl Yoga Forward Bending Pose Smiling"
+      ]
+    },
+    {
+      "token": "sorcerer",
+      "assetCount": 15,
+      "exampleTitles": [
+        "Chibi Midieval Fantasy Sorcerer",
+        "Fantasy Animal Fox Sorcerer Magic Storm",
+        "Fantasy Dark Sorcerer Void Gate",
+        "Fantasy Owl Sorcerer Tower",
+        "Fantasy Sorcerer Arcane Sorcery"
+      ]
+    },
+    {
+      "token": "teddy",
+      "assetCount": 15,
+      "exampleTitles": [
+        "Anime Girl Cute Teddy Bear Plushie",
+        "Anime Girl Hugging Teddy Bear",
+        "Anime Girl Hugging Teddy Bear Happy",
+        "Anime Girl Teddy Bear Costume",
+        "Anime Girl Teddy Bear Outfit Kawaii"
+      ]
+    },
+    {
+      "token": "wizard",
+      "assetCount": 15,
+      "exampleTitles": [
+        "Anime Girl Wizard War",
+        "Chibi Dark Wizard",
+        "Chibi Dungeon Wizard And Magic Book",
+        "Chibi Dungeon Wizard Casting Spell",
+        "Chibi Dungeon Wizard Tower Room"
+      ]
+    },
+    {
+      "token": "wyvern",
+      "assetCount": 15,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu Wyvern Dragon",
+        "Anime Girl Summoning Jutsu Wyvern Dragon Plushies",
+        "Chibi Dungeon Wyvern",
+        "Chibi Midieval Fantasy Wyvern",
+        "Chibi Wyvern"
+      ]
+    },
+    {
+      "token": "black",
+      "assetCount": 14,
+      "exampleTitles": [
+        "Chibi Holiday Halloween Black Cat Peeking Out Of Pumpkin Coloring Page",
+        "Chibi Holiday Halloween Black Cat Sitting On Fence Under Moon Coloring Page",
+        "Chibi Holiday Halloween Mummy Running Away From Black Cat Coloring Page",
+        "Chibi Holiday Halloween Witch With Black Cat On Shoulder Coloring Page",
+        "Chibi Mushroom Black Trumpet"
+      ]
+    },
+    {
+      "token": "cow",
+      "assetCount": 14,
+      "exampleTitles": [
+        "Anime Girl Chibi Cow Summon",
+        "Anime Girl Cow Hoodie Plushie",
+        "Anime Girl Cow Hoodie Plushie Farm",
+        "Anime Girl Summoning Jutsu Cow Plushies",
+        "Chibi Plushie Cow"
+      ]
+    },
+    {
+      "token": "dolphin",
+      "assetCount": 14,
+      "exampleTitles": [
+        "Animals Dolphins",
+        "Chibi Plushie Dolphin",
+        "Holiday Birthday Celebration Plushie Dolphin Family",
+        "Holiday Christmas Plushie Dolphin Family",
+        "Holiday Halloween Costume Plushie Dolphin Family"
+      ]
+    },
+    {
+      "token": "floating",
+      "assetCount": 14,
+      "exampleTitles": [
+        "Chibi Dungeon Floating Magic Crystals",
+        "Chibi Holiday Halloween Ghost Floating Above Graveyard Coloring Page",
+        "Chibi Holiday Halloween Ghost Floating In Haunted Hallway Coloring Page",
+        "Fantasy Floating Archipelago",
+        "Fantasy Floating Castle"
+      ]
+    },
+    {
+      "token": "frog",
+      "assetCount": 14,
+      "exampleTitles": [
+        "Animals Frogs",
+        "Anime Girl Frog",
+        "Anime Girl Frog Tongue",
+        "Anime Girl Summoning Frog",
+        "Chibi Plushie Frog"
+      ]
+    },
+    {
+      "token": "hedgehog",
+      "assetCount": 14,
+      "exampleTitles": [
+        "Anime Girl Hedgehog Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Hedgehog Plushies",
+        "Chibi Hedgehog",
+        "Chibi Mushroom Hedgehog Tooth",
+        "Gardening Mushroom Hedgehog Tooth"
+      ]
+    },
+    {
+      "token": "iguana",
+      "assetCount": 14,
+      "exampleTitles": [
+        "Chibi Plushie Iguana",
+        "Holiday Birthday Celebration Plushie Iguana Family",
+        "Holiday Christmas Plushie Iguana Family",
+        "Holiday Halloween Costume Plushie Iguana Family",
+        "Mandala Geometry Patterns Iguana"
+      ]
+    },
+    {
+      "token": "lemur",
+      "assetCount": 14,
+      "exampleTitles": [
+        "Anime Girl Lemur Hoodie Plushie",
+        "Anime Girl Studying With Plushie Lemur",
+        "Anime Girl Summoning Jutsu Lemur Plushies",
+        "Anime Girl Summoning Jutsu Ring Tail Lemur",
+        "Anime Girl Summoning Jutsu Ring Tail Lemur Plushies"
+      ]
+    },
+    {
+      "token": "lily",
+      "assetCount": 14,
+      "exampleTitles": [
+        "Chibi Flowers Calla Lily",
+        "Chibi Flowers Calla Lily Kawaii",
+        "Chibi Flowers Kawaii Calla Lily",
+        "Chibi Flowers Lily",
+        "Chibi Flowers Lily Kawaii"
+      ]
+    },
+    {
+      "token": "llama",
+      "assetCount": 14,
+      "exampleTitles": [
+        "Anime Girl Llama Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Llama Plushies",
+        "Chibi Plushie Llama",
+        "Christmas Holiday Llama",
+        "Holiday Birthday Celebration Plushie Llama Family"
+      ]
+    },
+    {
+      "token": "monkey",
+      "assetCount": 14,
+      "exampleTitles": [
+        "Anime Girl Monkey Hoodie Animal Plushie",
+        "Anime Girl Monkey Hoodie Plushie",
+        "Chibi Monkey King",
+        "Chibi Monkey King Clouds",
+        "Chibi Plushie Monkey"
+      ]
+    },
+    {
+      "token": "reef",
+      "assetCount": 14,
+      "exampleTitles": [
+        "Fantasy Ocean Reef Spirits",
+        "Fantasy Ocean Spirits Reef",
+        "Reptiles Hawksbill Sea Turtle On Coral Reef",
+        "Sea Life Angelfish Swimming In Reef",
+        "Sea Life Butterflyfish Pair In Reef"
+      ]
+    },
+    {
+      "token": "river",
+      "assetCount": 14,
+      "exampleTitles": [
+        "Chibi Dungeon Lava River",
+        "Fantasy Creatures Naga River",
+        "Fantasy Dragon River Guardian",
+        "Fantasy Magic River",
+        "Fantasy Magic River Flowing"
+      ]
+    },
+    {
+      "token": "rock",
+      "assetCount": 14,
+      "exampleTitles": [
+        "Anime Girl Rock Climbing",
+        "Anime Girl Rock Climbing",
+        "Anime Girl Rock Climbing Action Packed",
+        "Birds Falcon On Rock",
+        "Birds Rock Dove"
+      ]
+    },
+    {
+      "token": "serpent",
+      "assetCount": 14,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu Sea Serpent Dragon",
+        "Anime Girl Summoning Jutsu Sea Serpent Dragon Plushies",
+        "Chibi Sea Serpent",
+        "Fantasy Ember Serpent",
+        "Fantasy Ethereal Serpent"
+      ]
+    },
+    {
+      "token": "sheep",
+      "assetCount": 14,
+      "exampleTitles": [
+        "Anime Girl Sheep Hoodie Plushie",
+        "Anime Girl Sheep Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Sheep",
+        "Anime Girl Summoning Jutsu Sheep Plushies",
+        "Chibi Plushie Bighorn Sheep"
+      ]
+    },
+    {
+      "token": "stone",
+      "assetCount": 14,
+      "exampleTitles": [
+        "Chibi Dungeon Runic Stone Door",
+        "Chibi Dungeon Secret Stone Door",
+        "Chibi Dungeon Sword In Stone",
+        "Fantasy Creatures Golem Stone",
+        "Fantasy Monk Stone Steps"
+      ]
+    },
+    {
+      "token": "t-rex",
+      "assetCount": 14,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu Tyrannosaurus Rex Dinosaur",
+        "Chibi Plushie Prehistoric Tyrannosaurus Rex",
+        "Chibi Tyrannosaurus Rex",
+        "Prehistoric Tyrannosaurus Rex",
+        "Holiday Birthday Celebration Plushie Prehistoric Tyrannosaurus Rex Family"
+      ]
+    },
+    {
+      "token": "tortoise",
+      "assetCount": 14,
+      "exampleTitles": [
+        "Holiday Birthday Celebration Plushie Tortoise Family",
+        "Holiday Christmas Plushie Tortoise Family",
+        "Holiday Halloween Costume Plushie Tortoise Family",
+        "Mandala Geometry Patterns Plushie Tortoise",
+        "Plushie Cute Tortoise"
+      ]
+    },
+    {
+      "token": "werewolf",
+      "assetCount": 14,
+      "exampleTitles": [
+        "Anime Girl Transforming Into Fantasy Werewolf",
+        "Anime Girl Transforming Into Fantasy Werewolf Full Moon",
+        "Anime Girl Werewolf",
+        "Chibi Holiday Halloween Werewolf Howling Under Full Moon Coloring Page",
+        "Chibi Holiday Halloween Werewolf In Forest With Fireflies Coloring Page"
+      ]
+    },
+    {
+      "token": "anemone",
+      "assetCount": 13,
+      "exampleTitles": [
+        "Chibi Flowers Anemone Kawaii",
+        "Chibi Plushie Sea Anemone",
+        "Flowers Anemone",
+        "Holiday Birthday Celebration Plushie Sea Anemone Family",
+        "Holiday Christmas Plushie Sea Anemone Family"
+      ]
+    },
+    {
+      "token": "armadillo",
+      "assetCount": 13,
+      "exampleTitles": [
+        "Anime Girl Armadillo Hoodie Animal Plushie",
+        "Anime Girl Armadillo Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Armadillo",
+        "Anime Girl Summoning Jutsu Armadillo Plushies",
+        "Chibi Armadillo"
+      ]
+    },
+    {
+      "token": "cards",
+      "assetCount": 13,
+      "exampleTitles": [
+        "Cats Playing Cards",
+        "Anime Girl Playing Cards",
+        "Anime Girl Playing Cards Professionally",
+        "Christmas Holiday Christmas Cards",
+        "Fantasy Creatures Flying Unicorn Playing Cards"
+      ]
+    },
+    {
+      "token": "cartoon",
+      "assetCount": 13,
+      "exampleTitles": [
+        "Chibi Mushroom Magic Forest Mushroom Cartoon",
+        "Gardening Mushroom Magic Forest Mushroom Cartoon",
+        "Insects Army Ant Cartoon",
+        "Insects Armyworm Caterpillar Cartoon",
+        "Mandala Geometry Patterns Mushroom Magic Forest Mushroom Cartoon"
+      ]
+    },
+    {
+      "token": "celestial",
+      "assetCount": 13,
+      "exampleTitles": [
+        "Anime Girl Celestial Paladin Armor",
+        "Fantasy Celestial Dragon",
+        "Fantasy Celestial Dragon Flying",
+        "Fantasy Celestial Fox",
+        "Fantasy Celestial Island Owl"
+      ]
+    },
+    {
+      "token": "chameleon",
+      "assetCount": 13,
+      "exampleTitles": [
+        "Chibi Plushie Chameleon",
+        "Holiday Birthday Celebration Plushie Chameleon Family",
+        "Holiday Christmas Plushie Chameleon Family",
+        "Holiday Halloween Costume Plushie Chameleon Family",
+        "Mandala Geometry Patterns Chameleon"
+      ]
+    },
+    {
+      "token": "chinese",
+      "assetCount": 13,
+      "exampleTitles": [
+        "Anime Girl Chinese Fan",
+        "Anime Girl Summoning Jutsu Chinese Dragon",
+        "Anime Girl Summoning Jutsu Chinese Dragon Plushies",
+        "Chibi Animals Pets Dogs Chinese Crested",
+        "Dogs Chinese Crested"
+      ]
+    },
+    {
+      "token": "cosplay",
+      "assetCount": 13,
+      "exampleTitles": [
+        "Anime Girl Bull Hoodie Plushie Cosplay",
+        "Anime Girl Chess King Cosplay",
+        "Anime Girl Chess Knight Cosplay",
+        "Anime Girl Chess Pawn Cosplay",
+        "Anime Girl Chess Queen Cosplay"
+      ]
+    },
+    {
+      "token": "dancing",
+      "assetCount": 13,
+      "exampleTitles": [
+        "Anime Girl Belly Dancing",
+        "Anime Girl Dancing",
+        "Anime Girl Dancing Ballerina",
+        "Anime Girl Dancing In Studio",
+        "Anime Girl Dancing Studio"
+      ]
+    },
+    {
+      "token": "desert",
+      "assetCount": 13,
+      "exampleTitles": [
+        "Fantasy Creatures Manticore Desert",
+        "Fantasy Scout Desert Camp",
+        "Insects Desert Scorpion",
+        "Mandala Geometry Patterns Trains Locomotives Desert Safari Train Crossing Dunes",
+        "Mandala Geometry Patterns Trains Locomotives Long Distance Passenger Train In Desert"
+      ]
+    },
+    {
+      "token": "electric",
+      "assetCount": 13,
+      "exampleTitles": [
+        "Anime Girl Summoning Electric Eel Plushies",
+        "Anime Girl Summoning Electric Eels",
+        "Mandala Geometry Patterns Trains Locomotives Electric Commuter Train At Sunset",
+        "Mandala Geometry Patterns Trains Locomotives Electric Light Rail Train On Bridge",
+        "Mandala Geometry Patterns Trains Locomotives Electric Locomotive On Railway"
+      ]
+    },
+    {
+      "token": "elemental",
+      "assetCount": 13,
+      "exampleTitles": [
+        "Anime Girl Elemental Clash",
+        "Chibi Dungeon Water Elemental",
+        "Fantasy Creatures Earth Elemental",
+        "Fantasy Creatures Fire Elemental",
+        "Fantasy Creatures Storm Elemental"
+      ]
+    },
+    {
+      "token": "elf",
+      "assetCount": 13,
+      "exampleTitles": [
+        "Chibi Elf",
+        "Chibi Elf Centaur",
+        "Chibi Midieval Fantasy Elf",
+        "Fantasy Creatures Elf",
+        "Fantasy Elf Crystal Mage"
+      ]
+    },
+    {
+      "token": "festival",
+      "assetCount": 13,
+      "exampleTitles": [
+        "Anime Girl Lantern Festival",
+        "Chibi Holiday Halloween Candy Stall At Halloween Festival Coloring Page",
+        "Mandala Geometry Patterns Japan Cherry Blossom Festival",
+        "Mandala Geometry Patterns Japan Festival Lanterns",
+        "Mandala Geometry Patterns Japan Golden Week Festival"
+      ]
+    },
+    {
+      "token": "gecko",
+      "assetCount": 13,
+      "exampleTitles": [
+        "Chibi Plushie Gecko",
+        "Holiday Birthday Celebration Plushie Gecko Family",
+        "Holiday Christmas Plushie Gecko Family",
+        "Holiday Halloween Costume Plushie Gecko Family",
+        "Mandala Geometry Patterns Plushie Gecko"
+      ]
+    },
+    {
+      "token": "golden",
+      "assetCount": 13,
+      "exampleTitles": [
+        "Birds Golden Eagle",
+        "Chibi Animals Pets Dogs Golden Retriever",
+        "Chibi Dungeon Golden Coins And Gems",
+        "Chibi Dungeon Golden Treasure Idol",
+        "Holiday Christmas Dogs Golden Retriever"
+      ]
+    },
+    {
+      "token": "golem",
+      "assetCount": 13,
+      "exampleTitles": [
+        "Chibi Dungeon Earth Golem",
+        "Fantasy Artificer Mech Golem",
+        "Fantasy Clockwork Golem",
+        "Fantasy Creatures Golem",
+        "Fantasy Creatures Golem Stone"
+      ]
+    },
+    {
+      "token": "great",
+      "assetCount": 13,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu Great White Shark Plushies",
+        "Birds Great Horned Owl",
+        "Chibi Animals Pets Dogs Great Dane",
+        "Chibi Animals Pets Dogs Great Pyrenees",
+        "Dogs Great Dane"
+      ]
+    },
+    {
+      "token": "jaguar",
+      "assetCount": 13,
+      "exampleTitles": [
+        "Anime Girl Jaguar Hoodie Plushie",
+        "Anime Girl Jaguar Hoodie Plushie Cosplay",
+        "Anime Girl Summoning Jutsu Jaguar Plushies",
+        "Chibi Jaguar",
+        "Chibi Plushie Jaguar"
+      ]
+    },
+    {
+      "token": "kraken",
+      "assetCount": 13,
+      "exampleTitles": [
+        "Anime Girl Riding A Kraken 1",
+        "Anime Girl Riding Tentacle Kraken Monster",
+        "Chibi Plushie Baby Kraken",
+        "Fantasy Ancient Kraken Ocean Depths",
+        "Fantasy Chibi Kraken Playful"
+      ]
+    },
+    {
+      "token": "leaf",
+      "assetCount": 13,
+      "exampleTitles": [
+        "Chibi Enchanted Forest Fairy Sleeping On Leaf Bed",
+        "Fantasy Leaf Fairy Shrine",
+        "Indoor Plants Fiddle Leaf Fig",
+        "Insects Earwig On Leaf Litter",
+        "Insects Lacewing On Leaf"
+      ]
+    },
+    {
+      "token": "mage",
+      "assetCount": 13,
+      "exampleTitles": [
+        "Chibi Dungeon Mage Casting Fireball",
+        "Chibi Midieval Fantasy Mage",
+        "Fantasy Animal Mage Fire Summon",
+        "Fantasy Dungeon Shadow Mage",
+        "Fantasy Elf Crystal Mage"
+      ]
+    },
+    {
+      "token": "rat",
+      "assetCount": 13,
+      "exampleTitles": [
+        "Anime Girl Rat Hoodie Plushie",
+        "Anime Girl Rat Hoodie Plushie Eating Cheese",
+        "Anime Girl Summoning Jutsu Rat Plushies",
+        "Chibi Baby Rat",
+        "Chibi Plushie Rat"
+      ]
+    },
+    {
+      "token": "seal",
+      "assetCount": 13,
+      "exampleTitles": [
+        "Animals Seal",
+        "Chibi Plushie Seal",
+        "Holiday Birthday Celebration Plushie Seal Family",
+        "Holiday Christmas Plushie Seal Family",
+        "Holiday Halloween Costume Plushie Seal Family"
+      ]
+    },
+    {
+      "token": "skeleton",
+      "assetCount": 13,
+      "exampleTitles": [
+        "Anime Girl Skeleton",
+        "Anime Girl Skeleton Outfit",
+        "Chibi Dungeon Skeleton Archer",
+        "Chibi Dungeon Skeleton Guard",
+        "Chibi Holiday Halloween Skeleton Band Playing In Graveyard Coloring Page"
+      ]
+    },
+    {
+      "token": "star",
+      "assetCount": 13,
+      "exampleTitles": [
+        "Chibi Plushie Star Character",
+        "Holiday Christmas Christmas Tree With Star And Ornaments Coloring Page",
+        "Fantasy Astral Star Pegasus",
+        "Holiday Birthday Celebration Plushie Star Family",
+        "Holiday Christmas Plushie Star Family"
+      ]
+    },
+    {
+      "token": "sun",
+      "assetCount": 13,
+      "exampleTitles": [
+        "Anime Girl Sun Flower",
+        "Chibi Plushie Sun Character",
+        "Fantasy Artifact Sun Orb",
+        "Fantasy Cleric Sun Disc",
+        "Fantasy Elf Sun Swordsman"
+      ]
+    },
+    {
+      "token": "temple",
+      "assetCount": 13,
+      "exampleTitles": [
+        "Fantasy Celestial Temple",
+        "Fantasy Monk Temple Garden",
+        "Fantasy Paladin Temple Guardian",
+        "Fantasy Ruins Ancient Temple",
+        "Fantasy Ruins Ancient Temple Dragon Guard"
+      ]
+    },
+    {
+      "token": "turkey",
+      "assetCount": 13,
+      "exampleTitles": [
+        "Animals Turkey",
+        "Birds Turkey",
+        "Chibi Mushroom Turkey Tail",
+        "Chibi Plushie Turkey",
+        "Gardening Mushroom Turkey Tail"
+      ]
+    },
+    {
+      "token": "undead",
+      "assetCount": 13,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu Undead Dinosaur Fossil Plushies",
+        "Anime Girl Summoning Jutsu Undead Dinosaur Fossils",
+        "Anime Girl Summoning Jutsu Undead Dragon",
+        "Anime Girl Summoning Jutsu Undead Dragon Plushies",
+        "Anime Girl Undead Uprising"
+      ]
+    },
+    {
+      "token": "warrior",
+      "assetCount": 13,
+      "exampleTitles": [
+        "Anime Girl Kimono Warrior Smoke Pipe",
+        "Anime Girl Yoga Warrior I",
+        "Anime Girl Yoga Warrior I",
+        "Anime Girl Yoga Warrior Ii",
+        "Chibi Dungeon Crystal Cave Warrior"
+      ]
+    },
+    {
+      "token": "winter",
+      "assetCount": 13,
+      "exampleTitles": [
+        "Anime Girl Chin Up Outdoor Tree Winter",
+        "Anime Girl Skiing Winter",
+        "Christmas Holiday Winter Wonderland",
+        "Holiday Christmas Winter Cabin In Woods With Smoke In Chimney Coloring Page",
+        "Holiday Christmas Winter Ice Skating Rink In Village Square Coloring Page"
+      ]
+    },
+    {
+      "token": "woods",
+      "assetCount": 13,
+      "exampleTitles": [
+        "Anime Girl Camping In The Woods",
+        "Chibi Mushroom Chicken Of The Woods",
+        "Chibi Mushroom Maitake Hen Of The Woods",
+        "Holiday Christmas Winter Cabin In Woods With Smoke In Chimney Coloring Page",
+        "Fantasy Elven Archer Woods"
+      ]
+    },
+    {
+      "token": "alligator",
+      "assetCount": 12,
+      "exampleTitles": [
+        "Animals Alligator",
+        "Chibi Plushie Alligator",
+        "Holiday Birthday Celebration Plushie Alligator Family",
+        "Holiday Christmas Plushie Alligator Family",
+        "Holiday Halloween Costume Plushie Alligator Family"
+      ]
+    },
+    {
+      "token": "beluga",
+      "assetCount": 12,
+      "exampleTitles": [
+        "Anime Girl Beluga Whale Hoodie Plushie",
+        "Anime Girl Beluga Whale Hoodie Plushie Swimming Cold",
+        "Chibi Plushie Beluga",
+        "Holiday Birthday Celebration Plushie Beluga Family",
+        "Holiday Christmas Plushie Beluga Family"
+      ]
+    },
+    {
+      "token": "bunny",
+      "assetCount": 12,
+      "exampleTitles": [
+        "Anime Girl Bunny Birthday Party",
+        "Chibi Plushie Bunny Rabbit",
+        "Holiday Birthday Celebration Plushie Bunny Rabbit Family",
+        "Holiday Christmas Plushie Bunny",
+        "Holiday Christmas Plushie Bunny Rabbit"
+      ]
+    },
+    {
+      "token": "cake",
+      "assetCount": 12,
+      "exampleTitles": [
+        "Anime Girl Birthday Cake",
+        "Anime Girl Celetbrating Birthday Cake",
+        "Holiday Birthday Cake With Candles",
+        "Holiday Birthday Dog With Birthday Cake",
+        "Mandala Geometry Patterns Bakery Birthday Cake"
+      ]
+    },
+    {
+      "token": "camel",
+      "assetCount": 12,
+      "exampleTitles": [
+        "Anime Girl Camel Hoodie Animal Plushie",
+        "Anime Girl Camel Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Camel Plushies",
+        "Chibi Camel",
+        "Chibi Plushie Camel"
+      ]
+    },
+    {
+      "token": "cap",
+      "assetCount": 12,
+      "exampleTitles": [
+        "Chibi Mushroom Inky Cap",
+        "Gardening Mushroom Cinnamon Cap",
+        "Gardening Mushroom Cracked Cap Boletus",
+        "Gardening Mushroom Death Cap Amanita",
+        "Gardening Mushroom Inky Cap"
+      ]
+    },
+    {
+      "token": "earth",
+      "assetCount": 12,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu Earth Dragon",
+        "Anime Girl Summoning Jutsu Earth Dragon Plushies",
+        "Chibi Dungeon Earth Golem",
+        "Chibi Earth Dragon",
+        "Chibi Earth Dragon Sitting"
+      ]
+    },
+    {
+      "token": "goblin",
+      "assetCount": 12,
+      "exampleTitles": [
+        "Chibi Dungeon Goblin Archer",
+        "Chibi Dungeon Goblin Warrior",
+        "Chibi Midieval Fantasy Goblin",
+        "Fantasy Chibi Goblin Cooking",
+        "Fantasy Creatures Goblin"
+      ]
+    },
+    {
+      "token": "komodo",
+      "assetCount": 12,
+      "exampleTitles": [
+        "Chibi Plushie Komodo Dragon",
+        "Holiday Birthday Celebration Plushie Komodo Dragon Family",
+        "Holiday Christmas Plushie Komodo Dragon Family",
+        "Holiday Halloween Costume Plushie Komodo Dragon Family",
+        "Mandala Geometry Patterns Komodo Dragon"
+      ]
+    },
+    {
+      "token": "leopard",
+      "assetCount": 12,
+      "exampleTitles": [
+        "Chibi Animals Pets Dogs Catahoula Leopard Dog",
+        "Chibi Plushie Snow Leopard",
+        "Dogs Catahoula Leopard Dog",
+        "Holiday Birthday Celebration Plushie Snow Leopard Family",
+        "Holiday Christmas Plushie Snow Leopard Family"
+      ]
+    },
+    {
+      "token": "light",
+      "assetCount": 12,
+      "exampleTitles": [
+        "Anime Girl Elven Light Armor",
+        "Chibi Dungeon Healer Casting Light",
+        "Chibi Dungeon Lord Of Light",
+        "Fantasy Cleric Healing Light",
+        "Fantasy Happy Light Spirit Shrine"
+      ]
+    },
+    {
+      "token": "log",
+      "assetCount": 12,
+      "exampleTitles": [
+        "Chibi Mushroom Mossy Log With Mushrooms",
+        "Christmas Holiday Yule Log",
+        "Holiday Christmas Winter Log Cabin With Glowing Windows Coloring Page",
+        "Gardening Mushroom Mossy Log With Mushrooms",
+        "Homes Log Cabin By Lake"
+      ]
+    },
+    {
+      "token": "monster",
+      "assetCount": 12,
+      "exampleTitles": [
+        "Anime Girl Ninja Teleporting To Monster Battle Shounin",
+        "Anime Girl Riding Tentacle Kraken Monster",
+        "Chibi Dungeon Chained Monster",
+        "Chibi Dungeon Monster Egg Hatching",
+        "Chibi Dungeon Slime Monster"
+      ]
+    },
+    {
+      "token": "newt",
+      "assetCount": 12,
+      "exampleTitles": [
+        "Chibi Plushie Newt",
+        "Holiday Birthday Celebration Newt Family",
+        "Holiday Birthday Celebration Plushie Newt Family",
+        "Holiday Christmas Plushie Newt Family",
+        "Holiday Halloween Costume Plushie Newt Family"
+      ]
+    },
+    {
+      "token": "paladin",
+      "assetCount": 12,
+      "exampleTitles": [
+        "Anime Girl Celestial Paladin Armor",
+        "Fantasy Paladin Angel Guard",
+        "Fantasy Paladin Hammer Guardian",
+        "Fantasy Paladin Holy Aura",
+        "Fantasy Paladin Holy Hammer"
+      ]
+    },
+    {
+      "token": "panther",
+      "assetCount": 12,
+      "exampleTitles": [
+        "Anime Girl Panther Hoodie Plushie",
+        "Anime Girl Panther Hoodie Plushie Happy",
+        "Anime Girl Summoning Jutsu Panther Plushies",
+        "Chibi Panther",
+        "Chibi Plushie Panther"
+      ]
+    },
+    {
+      "token": "potion",
+      "assetCount": 12,
+      "exampleTitles": [
+        "Anime Girl Nurse Drinking Health Potion",
+        "Anime Girl Potion Shop",
+        "Anime Girl Potion Shop",
+        "Anime Girl Potion Shop 1",
+        "Chibi Dungeon Magic Health Potion"
+      ]
+    },
+    {
+      "token": "retriever",
+      "assetCount": 12,
+      "exampleTitles": [
+        "Chibi Animals Pets Dogs Chesapeake Bay Retriever",
+        "Chibi Animals Pets Dogs Golden Retriever",
+        "Chibi Animals Pets Dogs Labrador Retriever",
+        "Holiday Christmas Dogs Golden Retriever",
+        "Holiday Christmas Dogs Labrador Retriever"
+      ]
+    },
+    {
+      "token": "seahorse",
+      "assetCount": 12,
+      "exampleTitles": [
+        "Chibi Plushie Seahorse",
+        "Holiday Birthday Celebration Plushie Seahorse Family",
+        "Holiday Christmas Plushie Seahorse Family",
+        "Holiday Halloween Costume Plushie Seahorse Family",
+        "Mandala Geometry Patterns Plushie Seahorse"
+      ]
+    },
+    {
+      "token": "sword",
+      "assetCount": 12,
+      "exampleTitles": [
+        "Anime Girl Summoning Magic Musical Sword Plushies",
+        "Anime Girl Sword Battle",
+        "Anime Girl Sword Fighting",
+        "Anime Girl Sword Fighting Action",
+        "Chibi Dungeon Haunted Magic Sword"
+      ]
+    },
+    {
+      "token": "trick",
+      "assetCount": 12,
+      "exampleTitles": [
+        "Anime Girl Bowling Trick Shot",
+        "Chibi Holiday Halloween Trick Or Treat Children With Pumpkin Bags Coloring Page",
+        "Chibi Holiday Halloween Trick Or Treat Dog In Cute Costume Coloring Page",
+        "Chibi Holiday Halloween Trick Or Treat Doorstep With Carved Pumpkins Coloring Page",
+        "Chibi Holiday Halloween Trick Or Treat Front Porch Decorated Coloring Page"
+      ]
+    },
+    {
+      "token": "under",
+      "assetCount": 12,
+      "exampleTitles": [
+        "Chibi Enchanted Forest Fairy Dancing Under Moonlight",
+        "Chibi Holiday Halloween Black Cat Sitting On Fence Under Moon Coloring Page",
+        "Chibi Holiday Halloween Haunted House On Hill Under Full Moon Coloring Page",
+        "Chibi Holiday Halloween Vampire Holding Goblet Under Crescent Moon Coloring Page",
+        "Chibi Holiday Halloween Werewolf Howling Under Full Moon Coloring Page"
+      ]
+    },
+    {
+      "token": "ankylosaurus",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Anime Girl Ankylosaurus Hoodie Plushie",
+        "Anime Girl Ankylosaurus Hoodie Plushie",
+        "Chibi Plushie Prehistoric Ankylosaurus",
+        "Prehistoric Ankylosaurus",
+        "Holiday Birthday Celebration Plushie Prehistoric Ankylosaurus Family"
+      ]
+    },
+    {
+      "token": "axolotl",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Anime Girl Axolotl Hoodie Plushie",
+        "Anime Girl Axolotl Hoodie Plushie",
+        "Chibi Plushie Axolotl",
+        "Holiday Birthday Celebration Plushie Axolotl Family",
+        "Holiday Christmas Plushie Axolotl Family"
+      ]
+    },
+    {
+      "token": "bard",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Fantasy Bard Camping",
+        "Fantasy Bard Forest Melody",
+        "Fantasy Bard Lute Magic",
+        "Fantasy Bard Melody",
+        "Fantasy Bard Mystic Stage"
+      ]
+    },
+    {
+      "token": "basilisk",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Chibi Basilisk",
+        "Chibi Basilisk Angry",
+        "Chibi Midieval Fantasy Basilisk",
+        "Fantasy Basilisk Cave",
+        "Fantasy Creatures Basilisk"
+      ]
+    },
+    {
+      "token": "blossom",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Flowers Apple Blossom",
+        "Flowers Apple Blossom With Apples",
+        "Flowers Cherry Blossom",
+        "Flowers Peach Blossom",
+        "Flowers Peach Blossom With Large Peach"
+      ]
+    },
+    {
+      "token": "candy",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Chibi Holiday Halloween Candy Bucket Filled With Treats Coloring Page",
+        "Chibi Holiday Halloween Candy Corn Pattern Background Coloring Page",
+        "Chibi Holiday Halloween Candy Stall At Halloween Festival Coloring Page",
+        "Chibi Holiday Halloween Candy Trail Leading To Haunted Door Coloring Page",
+        "Christmas Holiday Candy Canes"
+      ]
+    },
+    {
+      "token": "cauldron",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Chibi Holiday Halloween Cauldron Bubbling Over Firewood Coloring Page",
+        "Chibi Holiday Halloween Cauldron Bubbling With Green Slime Coloring Page",
+        "Chibi Holiday Halloween Cauldron Surrounded By Potion Bottles Coloring Page",
+        "Chibi Holiday Halloween Cauldron With Green Smoke And Bats Coloring Page",
+        "Chibi Holiday Halloween Witch Cooking Potion In Cauldron Coloring Page"
+      ]
+    },
+    {
+      "token": "chimera",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Chibi Chimera",
+        "Chibi Chimera Skull",
+        "Chibi Dino Chimera",
+        "Fantasy Angry Chimera Lair",
+        "Fantasy Chimera Lair"
+      ]
+    },
+    {
+      "token": "cookie",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Chibi Plushie Cookie Character",
+        "Holiday Christmas Gingerbread Cookie Decorating Scene Coloring Page",
+        "Holiday Christmas Gingerbread Cookie Family In Snow Scene Coloring Page",
+        "Holiday Christmas Holiday Cookie Decorating Coloring Page",
+        "Holiday Christmas Holiday Cookie Decorating With Kids Coloring Page"
+      ]
+    },
+    {
+      "token": "dodo",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Anime Girl Dodo Bird Hoodie Plushie",
+        "Anime Girl Dodo Bird Hoodie Plushie",
+        "Chibi Dodo Birds",
+        "Chibi Plushie Prehistoric Dodo",
+        "Prehistoric Dodo Bird"
+      ]
+    },
+    {
+      "token": "eating",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Anime Girl Eating A Buffet",
+        "Anime Girl Eating A Buffet At Restaurant",
+        "Anime Girl Eating Sushi",
+        "Anime Girl Eating Tasty Sushi",
+        "Anime Girl Kimono Eating Rice Balls"
+      ]
+    },
+    {
+      "token": "flamingo",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Birds Flamingo",
+        "Chibi Plushie Flamingo",
+        "Holiday Birthday Celebration Plushie Flamingo Family",
+        "Holiday Christmas Plushie Flamingo Family",
+        "Holiday Halloween Costume Plushie Flamingo Family"
+      ]
+    },
+    {
+      "token": "ford",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Mandala Geometry Patterns Vehiacle Cars Ford",
+        "Mandala Geometry Patterns Vehicle Cars Classic Ford Model T",
+        "Mandala Geometry Patterns Vehicle Cars Classic Ford Model T Car",
+        "Mandala Geometry Patterns Vehicle Cars Classic Ford Thunderbird",
+        "Mandala Geometry Patterns Vehicle Cars Ford Bronco"
+      ]
+    },
+    {
+      "token": "front",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Chibi Holiday Halloween Jack O Lantern Lined Front Porch Coloring Page",
+        "Chibi Holiday Halloween Trick Or Treat Front Porch Decorated Coloring Page",
+        "Holiday Christmas Christmas Wreath On Front Door Coloring Page",
+        "Holiday Halloween Jack O Lantern Lined Front Porch Coloring Page",
+        "Holiday Halloween Trick Or Treat Front Porch Decorated Coloring Page"
+      ]
+    },
+    {
+      "token": "gold",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu Gold Hoarding Dragon",
+        "Anime Girl Summoning Jutsu Gold Hoarding Dragon Plushies",
+        "Chibi Gold Hoarding Dragon",
+        "Midieval Fantasy Volcanic Dragon Hoarding Gold",
+        "St Patricks Day Dragon Guarding Pot Of Gold Coloring Page"
+      ]
+    },
+    {
+      "token": "high",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu Fae Dragon Fairy Dragon High Detail",
+        "Anime Girl Western High Noon Showdown",
+        "Anime Girl Western High Noon Showdown Cosplay",
+        "Mandala Geometry Patterns Trains Locomotives Chinese High Speed Crh Train",
+        "Mandala Geometry Patterns Trains Locomotives French Tgv High Speed Train"
+      ]
+    },
+    {
+      "token": "irish",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Chibi Animals Pets Dogs Irish Setter",
+        "Chibi Animals Pets Dogs Irish Wolfhound",
+        "Chibi Irish Elk",
+        "Prehistoric Irish Elk",
+        "Dogs Irish Setter"
+      ]
+    },
+    {
+      "token": "jack",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Chibi Animals Pets Dogs Jack Russell Terrier",
+        "Chibi Holiday Halloween Jack O Lantern Faces Variety Coloring Page",
+        "Chibi Holiday Halloween Jack O Lantern Glowing In Window Coloring Page",
+        "Chibi Holiday Halloween Jack O Lantern Lined Front Porch Coloring Page",
+        "Chibi Holiday Halloween Jack O Lantern Stack Of Three Pumpkins Coloring Page"
+      ]
+    },
+    {
+      "token": "joey",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Chibi Plushie Baby Kangaroo Joey",
+        "Chibi Plushie Koala Joey",
+        "Holiday Birthday Celebration Plushie Baby Kangaroo Joey Family",
+        "Holiday Birthday Celebration Plushie Koala Joey Family",
+        "Holiday Christmas Plushie Baby Kangaroo Joey Family"
+      ]
+    },
+    {
+      "token": "lobster",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Chibi Plushie Lobster",
+        "Holiday Birthday Celebration Plushie Lobster Family",
+        "Holiday Christmas Plushie Lobster Family",
+        "Holiday Halloween Costume Plushie Lobster Family",
+        "Mandala Geometry Patterns Plushie Lobster"
+      ]
+    },
+    {
+      "token": "night",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Anime Girl Sleeping In Bed At Night",
+        "Chibi Holiday Halloween Bat Colony Flying In Night Sky Coloring Page",
+        "Holiday Christmas Angel Holding Candle In Snowy Night Coloring Page",
+        "Holiday Christmas Winter Night Sky With Northern Lights Coloring Page",
+        "Fantasy Animal Fox Rogue Night Market"
+      ]
+    },
+    {
+      "token": "parrot",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Birds Macaw Parrot",
+        "Birds Macaw Parrot Sitting",
+        "Birds Parrot",
+        "Chibi Plushie Parrot",
+        "Holiday Birthday Celebration Plushie Parrot Family"
+      ]
+    },
+    {
+      "token": "pieces",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu Chess Pieces Bishop",
+        "Anime Girl Summoning Jutsu Chess Pieces Bishop Plushies",
+        "Anime Girl Summoning Jutsu Chess Pieces King",
+        "Anime Girl Summoning Jutsu Chess Pieces King Plushies",
+        "Anime Girl Summoning Jutsu Chess Pieces Knight"
+      ]
+    },
+    {
+      "token": "pond",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Anime Girl Fishing In Pond",
+        "Holiday Christmas Snowman Ice Skating On Frozen Pond Coloring Page",
+        "Insects Dragonfly Hovering Over Pond",
+        "Insects Water Strider On Pond",
+        "Mandala Geometry Patterns Japan Koi Pond"
+      ]
+    },
+    {
+      "token": "possum",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Anime Girl Possum Hoodie Plushie",
+        "Anime Girl Possum Hoodie Plushie Outdoors",
+        "Chibi Plushie Possum",
+        "Chibi Possum",
+        "Holiday Birthday Celebration Plushie Possum Family"
+      ]
+    },
+    {
+      "token": "royal",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Fantasy Royal Griffin",
+        "Fantasy Royal Griffin Pet",
+        "Midieval Fantasy Royal Banner",
+        "Midieval Fantasy Royal Carriage",
+        "Midieval Fantasy Royal Courtyard"
+      ]
+    },
+    {
+      "token": "ruins",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Anime Girl Cursed Ruins Standoff",
+        "Chibi Midieval Fantasy Ancient Ruins",
+        "Fantasy Ruins Ancient Temple",
+        "Fantasy Ruins Ancient Temple Dragon Guard",
+        "Fantasy Ruins Dragon Throne"
+      ]
+    },
+    {
+      "token": "running",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Anime Girl Running",
+        "Anime Girl Running",
+        "Anime Girl Running Fast",
+        "Anime Girl Running In Park",
+        "Anime Girl Running Track"
+      ]
+    },
+    {
+      "token": "salmon",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Mandala Geometry Patterns Sushi Aburi Salmon Nigiri",
+        "Mandala Geometry Patterns Sushi Chef Torching Aburi Salmon",
+        "Mandala Geometry Patterns Sushi Gunkan Sushi Salmon Roe",
+        "Mandala Geometry Patterns Sushi Hand Roll Salmon",
+        "Mandala Geometry Patterns Sushi Ikura Salmon Roe"
+      ]
+    },
+    {
+      "token": "shepherd",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Chibi Animals Pets Dogs Anatolian Shepherd Dog",
+        "Chibi Animals Pets Dogs Australian Shepherd",
+        "Chibi Animals Pets Dogs German Shepherd",
+        "Holiday Christmas Dogs German Shepherd",
+        "Dogs Anatolian Shepherd Dog"
+      ]
+    },
+    {
+      "token": "skunk",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Anime Girl Skunk Hoodie Plushie",
+        "Anime Girl Skunk Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Skunk Plushies",
+        "Chibi Plushie Skunk",
+        "Chibi Skunk"
+      ]
+    },
+    {
+      "token": "squirrel",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Anime Girl Squirrel Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Squirrel Plushies",
+        "Chibi Plushie Squirrel",
+        "Chibi Squirrel",
+        "Christmas Holiday Squirrel"
+      ]
+    },
+    {
+      "token": "style",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Anime Girl Cyber Punk Style",
+        "Chibi Holiday Halloween Vintage Halloween Postcard Style Scene Coloring Page",
+        "Fantasy Monk Dragon Style",
+        "Homes Cape Cod Style House",
+        "Homes Cape Cod Style House With Dormers"
+      ]
+    },
+    {
+      "token": "swan",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Birds Swan",
+        "Birds Swan Swimming",
+        "Chibi Plushie Swan",
+        "Holiday Birthday Celebration Plushie Swan Family",
+        "Holiday Christmas Plushie Happy Swan Family"
+      ]
+    },
+    {
+      "token": "tower",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Chibi Dungeon Wizard Tower Room",
+        "Fantasy Creatures Gargoyle Tower",
+        "Fantasy Owl Sorcerer Tower",
+        "Fantasy Sorcerer Tower",
+        "Fantasy Wizard Tower Library"
+      ]
+    },
+    {
+      "token": "treasure",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Chibi Dungeon Ancient Treasure Map",
+        "Chibi Dungeon Dragon Guarding Treasure",
+        "Chibi Dungeon Golden Treasure Idol",
+        "Chibi Dungeon Hidden Treasure Behind Wall",
+        "Chibi Dungeon Hidden Treasure Room"
+      ]
+    },
+    {
+      "token": "treat",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Chibi Holiday Halloween Trick Or Treat Children With Pumpkin Bags Coloring Page",
+        "Chibi Holiday Halloween Trick Or Treat Dog In Cute Costume Coloring Page",
+        "Chibi Holiday Halloween Trick Or Treat Doorstep With Carved Pumpkins Coloring Page",
+        "Chibi Holiday Halloween Trick Or Treat Front Porch Decorated Coloring Page",
+        "Chibi Holiday Halloween Trick Or Treat Walkway Lined With Lanterns Coloring Page"
+      ]
+    },
+    {
+      "token": "walrus",
+      "assetCount": 11,
+      "exampleTitles": [
+        "Animals Walrus",
+        "Chibi Plushie Walrus",
+        "Holiday Birthday Celebration Plushie Walrus Family",
+        "Holiday Christmas Plushie Walrus Family",
+        "Holiday Halloween Costume Plushie Walrus Family"
+      ]
+    },
+    {
+      "token": "alien",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Anime Girl Alien Invasion",
+        "Anime Girl Alien Invasion Battle",
+        "Chibi Plushie Baby Alien",
+        "Holiday Birthday Celebration Plushie Baby Alien Family",
+        "Holiday Christmas Plushie Baby Alien Family"
+      ]
+    },
+    {
+      "token": "angelfish",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Chibi Plushie Angelfish",
+        "Holiday Birthday Celebration Plushie Angelfish Family",
+        "Holiday Christmas Plushie Angelfish Family",
+        "Holiday Halloween Costume Plushie Angelfish Family",
+        "Mandala Geometry Patterns Plushie Angelfish"
+      ]
+    },
+    {
+      "token": "archer",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Chibi Centaur Archer",
+        "Chibi Dungeon Fantasy Archer",
+        "Chibi Dungeon Goblin Archer",
+        "Chibi Dungeon Skeleton Archer",
+        "Fantasy Creatures Centaur Archer"
+      ]
+    },
+    {
+      "token": "australian",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Anime Girl Summoning Australian Throny Devil Lizard",
+        "Anime Girl Summoning Australian Throny Devil Lizard Plushies",
+        "Chibi Animals Pets Dogs Australian Cattle Dog",
+        "Chibi Animals Pets Dogs Australian Shepherd",
+        "Dogs Australian Cattle Dog"
+      ]
+    },
+    {
+      "token": "badger",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu Badger Plushies",
+        "Chibi Badger",
+        "Chibi Plushie Badger",
+        "Holiday Birthday Celebration Plushie Badger Family",
+        "Holiday Christmas Plushie Badger Family"
+      ]
+    },
+    {
+      "token": "beach",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Anime Girl Beach",
+        "Anime Girl Beach Bakini",
+        "Anime Girl Beach Bakini",
+        "Anime Girl Beach Bakini 1",
+        "Anime Girl Enjoying Scenic Beach"
+      ]
+    },
+    {
+      "token": "beaver",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu Beaver Plushies",
+        "Chibi Beaver",
+        "Chibi Plushie Beaver",
+        "Holiday Birthday Celebration Plushie Beaver Family",
+        "Holiday Christmas Plushie Beaver Family"
+      ]
+    },
+    {
+      "token": "bull",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Anime Girl Bull Hoodie Anima Plushie",
+        "Anime Girl Bull Hoodie Plushie",
+        "Anime Girl Bull Hoodie Plushie Cosplay",
+        "Anime Girl Summoning Jutsu Bull Plushies",
+        "Chibi Animals Pets Dogs Staffordshire Bull Terrier"
+      ]
+    },
+    {
+      "token": "cheetah",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Anime Girl Cheetah Hoodie Animal Plushie",
+        "Anime Girl Cheetah Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Cheetah Plushies",
+        "Chibi Plushie Cheetah",
+        "Holiday Birthday Celebration Plushie Cheetah Family"
+      ]
+    },
+    {
+      "token": "claus",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Christmas Holiday Santa Claus",
+        "Holiday Christmas Mrs Claus Baking Holiday Cookies Coloring Page",
+        "Holiday Christmas Mrs Claus Serving Hot Cocoa To Santa Coloring Page",
+        "Holiday Christmas Santa Claus Coming Down Chimney Coloring Page",
+        "Holiday Christmas Santa Claus Costume Coloring Page"
+      ]
+    },
+    {
+      "token": "daisy",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Chibi Flowers Daisy",
+        "Chibi Flowers Daisy Kawaii",
+        "Chibi Flowers Paper Daisy",
+        "Chibi Flowers Paper Daisy Kawaii",
+        "Flowers Daisy"
+      ]
+    },
+    {
+      "token": "dodge",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Fantasy Rogue Smoke Dodge",
+        "Fantasy Thief Smoke Dodge",
+        "Mandala Geometry Patterns Vehiacle Cars Dodge Challenger",
+        "Mandala Geometry Patterns Vehiacle Cars Dodge Ram Truck",
+        "Mandala Geometry Patterns Vehicle Cars Classic Dodge Dart"
+      ]
+    },
+    {
+      "token": "field",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Anime Girl Field Of Flowers",
+        "Anime Girl Field Of Flowers Nature",
+        "Anime Girl Laying On Field Of Flowers",
+        "Chibi Holiday Halloween Scarecrow Guarding Pumpkin Field Coloring Page",
+        "Fantasy Centaur Starlit Field"
+      ]
+    },
+    {
+      "token": "gingerbread",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Chibi Plushie Gingerbread Character",
+        "Christmas Holiday Gingerbread House",
+        "Holiday Christmas Gingerbread City Village With Candy Streets Coloring Page",
+        "Holiday Christmas Gingerbread Cookie Decorating Scene Coloring Page",
+        "Holiday Christmas Gingerbread Cookie Family In Snow Scene Coloring Page"
+      ]
+    },
+    {
+      "token": "goose",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Animals Goose",
+        "Birds Goose",
+        "Chibi Plushie Goose",
+        "Holiday Birthday Celebration Plushie Goose Family",
+        "Holiday Christmas Plushie Goose Family"
+      ]
+    },
+    {
+      "token": "graveyard",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Chibi Holiday Halloween Ghost Floating Above Graveyard Coloring Page",
+        "Chibi Holiday Halloween Graveyard With Bats And Foggy Moonlight Coloring Page",
+        "Chibi Holiday Halloween Graveyard With Creepy Crows Coloring Page",
+        "Chibi Holiday Halloween Graveyard With Creepy Crows On Crosses Coloring Page",
+        "Chibi Holiday Halloween Skeleton Band Playing In Graveyard Coloring Page"
+      ]
+    },
+    {
+      "token": "green",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Chibi Holiday Halloween Cauldron Bubbling With Green Slime Coloring Page",
+        "Chibi Holiday Halloween Cauldron With Green Smoke And Bats Coloring Page",
+        "Gardening Mushroom Green Spored Parasol",
+        "Indoor Plants Peperomia Green",
+        "Mandala Geometry Patterns Mushroom Green Spored Parasol"
+      ]
+    },
+    {
+      "token": "hummingbird",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Birds Hummingbird",
+        "Chibi Plushie Hummingbird",
+        "Holiday Birthday Celebration Plushie Hummingbird Family",
+        "Holiday Christmas Plushie Hummingbird Family",
+        "Holiday Halloween Costume Plushie Hummingbird Family"
+      ]
+    },
+    {
+      "token": "humpback",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Chibi Plushie Humpback Whale",
+        "Chibi Plushie Kawaii Humpback Whale",
+        "Holiday Birthday Celebration Plushie Humpback Whale Family",
+        "Holiday Christmas Plushie Humpback Whale Family",
+        "Holiday Halloween Costume Plushie Humpback Whale Family"
+      ]
+    },
+    {
+      "token": "kangaroo",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Anime Girl Kangaroo Hoodie Plushie Boxing",
+        "Anime Girl Summoning Jutsu Kangaroo Plushies",
+        "Chibi Kangaroo",
+        "Chibi Plushie Baby Kangaroo Joey",
+        "Holiday Birthday Celebration Plushie Baby Kangaroo Joey Family"
+      ]
+    },
+    {
+      "token": "mouse",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Anime Girl Mouse Hoodie Plushie",
+        "Chibi Plushie Mouse",
+        "Christmas Holiday Mouse",
+        "Holiday Birthday Celebration Plushie Mouse Family",
+        "Holiday Christmas Plushie Mouse Family"
+      ]
+    },
+    {
+      "token": "nest",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Chibi Dungeon Baby Dragon In Nest",
+        "Chibi Dungeon Cave Spider Nest",
+        "Fantasy Chibi Griffin Nest",
+        "Fantasy Creatures Cockatrice Nest",
+        "Fantasy Phoenix Feather Nest"
+      ]
+    },
+    {
+      "token": "ocean",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Anime Girl Tentacle Yoga In Ocean",
+        "Anime Girl Tentacle Yoga In Ocean Smiling",
+        "Fantasy Ancient Kraken Ocean Depths",
+        "Fantasy Creatures Leviathan Ocean Depths",
+        "Fantasy Kraken Ocean Depths"
+      ]
+    },
+    {
+      "token": "orca",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Chibi Plushie Orca",
+        "Holiday Birthday Celebration Plushie Orca Family",
+        "Holiday Christmas Plushie Orca Family",
+        "Holiday Halloween Costume Plushie Orca Family",
+        "Mandala Geometry Patterns Plushie Orca"
+      ]
+    },
+    {
+      "token": "origami",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Holiday Birthday Celebration Origami Cranes",
+        "Holiday Birthday Celebration Origami Hearts",
+        "Mandala Geometry Patterns Japan Origami Cranes",
+        "Mandala Geometry Patterns Japan Origami Dragon",
+        "Mandala Geometry Patterns Japan Origami Flowers"
+      ]
+    },
+    {
+      "token": "oyster",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Chibi Mushroom King Oyster",
+        "Chibi Mushroom Oyster Mushroom",
+        "Gardening Mushroom King Oyster",
+        "Gardening Mushroom Oyster Mushroom",
+        "Gardening Mushroom Oyster Shelf Bracket"
+      ]
+    },
+    {
+      "token": "park",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Anime Girl Riding Bicycle In Park",
+        "Anime Girl Running In Park",
+        "Anime Girl Stegasaurus Hoodie Plushie At Dino Theme Park",
+        "Anime Girl Triceratops Hoodie Plushie In Park",
+        "Anime Girl Walking Dogs In Park"
+      ]
+    },
+    {
+      "token": "peacock",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Birds Peacock",
+        "Chibi Plushie Peacock",
+        "Holiday Birthday Celebration Plushie Peacock Family",
+        "Holiday Christmas Plushie Peacock Family",
+        "Holiday Halloween Costume Plushie Peacock Family"
+      ]
+    },
+    {
+      "token": "pig",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Animals Pig",
+        "Chibi Plushie Guinea Pig",
+        "Holiday Birthday Celebration Plushie Guinea Pig Family",
+        "Holiday Christmas Plushie Guinea Pig Family",
+        "Holiday Halloween Costume Plushie Guinea Pig Family"
+      ]
+    },
+    {
+      "token": "porcupine",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Anime Girl Porcupine Hoodie Plushie",
+        "Anime Girl Porcupine Hoodie Plushie Party",
+        "Chibi Plushie Porcupine",
+        "Holiday Birthday Celebration Plushie Porcupine Family",
+        "Holiday Christmas Plushie Porcupine Family"
+      ]
+    },
+    {
+      "token": "portal",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Anime Girl Portal Invasion",
+        "Chibi Dungeon Portal With Runes",
+        "Fantasy Forest Glade Portal",
+        "Fantasy Forest Portal Glade",
+        "Fantasy Magic Portal"
+      ]
+    },
+    {
+      "token": "ray",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Holiday Birthday Celebration Plushie Manta Ray Family",
+        "Holiday Christmas Plushie Manta Ray Family",
+        "Holiday Halloween Costume Plushie Manta Ray Family",
+        "Mandala Geometry Patterns Plushie Manta Ray",
+        "Plushie Manta Ray"
+      ]
+    },
+    {
+      "token": "rogue",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Chibi Dungeon Rogue Picking Lock",
+        "Fantasy Animal Fox Rogue Night Market",
+        "Fantasy Rogue Dagger Strike",
+        "Fantasy Rogue Lockpick Chest",
+        "Fantasy Rogue Magician Lockpicking"
+      ]
+    },
+    {
+      "token": "santa",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Christmas Holiday Santa Claus",
+        "Holiday Christmas Mrs Claus Serving Hot Cocoa To Santa Coloring Page",
+        "Holiday Christmas Santa Claus Coming Down Chimney Coloring Page",
+        "Holiday Christmas Santa Claus Costume Coloring Page",
+        "Holiday Christmas Santa Claus Delivering Gifts By Fireplace Coloring Page"
+      ]
+    },
+    {
+      "token": "shrimp",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Anime Girl Pistol Shrimp Hoodie Plushie",
+        "Anime Girl Pistol Shrimp Hoodie Plushie",
+        "Anime Girl Shrimp Hoodie Plushie",
+        "Mandala Geometry Patterns Sushi Amaebi Sweet Shrimp",
+        "Mandala Geometry Patterns Sushi Panko Shrimp Roll"
+      ]
+    },
+    {
+      "token": "shrine",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Fantasy Cleric Forest Shrine",
+        "Fantasy Happy Light Spirit Shrine",
+        "Fantasy Leaf Fairy Shrine",
+        "Fantasy Light Spirit Shrine",
+        "Mandala Geometry Patterns Japan Itsukushima Shrine"
+      ]
+    },
+    {
+      "token": "snail",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Anime Girl Summoning Snail Plushies",
+        "Chibi Plushie Snail",
+        "Holiday Birthday Celebration Plushie Snail Family",
+        "Holiday Christmas Plushie Snail Family",
+        "Holiday Halloween Costume Plushie Snail Family"
+      ]
+    },
+    {
+      "token": "starfish",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Chibi Plushie Starfish",
+        "Holiday Birthday Celebration Plushie Starfish Family",
+        "Holiday Christmas Plushie Starfish Family",
+        "Holiday Halloween Costume Plushie Starfish Family",
+        "Mandala Geometry Patterns Plushie Starfish"
+      ]
+    },
+    {
+      "token": "urchin",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Chibi Plushie Sea Urchin",
+        "Holiday Birthday Celebration Plushie Sea Urchin Family",
+        "Holiday Christmas Plushie Sea Urchin Family",
+        "Holiday Halloween Costume Plushie Sea Urchin Family",
+        "Mandala Geometry Patterns Plushie Sea Urchin"
+      ]
+    },
+    {
+      "token": "vampire",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Anime Girl Vampire Siege",
+        "Chibi Holiday Halloween Vampire Holding Goblet Under Crescent Moon Coloring Page",
+        "Chibi Holiday Halloween Vampire Standing With Bat Cloak Coloring Page",
+        "Chibi Holiday Halloween Vampire With Spooky Shadow On Wall Coloring Page",
+        "Chibi Midieval Fantasy Vampire"
+      ]
+    },
+    {
+      "token": "vintage",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Chibi Holiday Halloween Vintage Halloween Postcard Style Scene Coloring Page",
+        "Mandala Geometry Patterns Trains Locomotives Vintage Caboose Carriage",
+        "Mandala Geometry Patterns Trains Locomotives Vintage Circus Train With Animal Cars",
+        "Mandala Geometry Patterns Trains Locomotives Vintage Coal Car With Shovel",
+        "Mandala Geometry Patterns Trains Locomotives Vintage Logging Train Carrying Logs"
+      ]
+    },
+    {
+      "token": "wind",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu Wind Dragon",
+        "Anime Girl Summoning Jutsu Wind Dragon Plushies",
+        "Chibi Wind Dragon",
+        "Chibi Wind Dragon Flying",
+        "Fantasy Bard Wind Harp"
+      ]
+    },
+    {
+      "token": "wolverine",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu Wolverine Plushies",
+        "Chibi Plushie Wolverine",
+        "Chibi Wolverine",
+        "Holiday Birthday Celebration Plushie Wolverine Family",
+        "Holiday Birthday Celebration Wolverine"
+      ]
+    },
+    {
+      "token": "yeti",
+      "assetCount": 10,
+      "exampleTitles": [
+        "Chibi Plushie Yeti",
+        "Fantasy Creatures Yeti",
+        "Holiday Birthday Celebration Plushie Yeti Family",
+        "Holiday Christmas Plushie Yeti Family",
+        "Holiday Halloween Costume Plushie Yeti Family"
+      ]
+    },
+    {
+      "token": "antelope",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Chibi Plushie Antelope",
+        "Holiday Birthday Celebration Plushie Antelope Family",
+        "Holiday Christmas Plushie Antelope Family",
+        "Holiday Halloween Costume Plushie Antelope Family",
+        "Mandala Geometry Patterns Plushie Antelope"
+      ]
+    },
+    {
+      "token": "barbarian",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Fantasy Barbarian Battle Axe",
+        "Fantasy Barbarian Battle Charge",
+        "Fantasy Barbarian Firecamp",
+        "Fantasy Barbarian Storm Peak",
+        "Fantasy Barbarian War Drum"
+      ]
+    },
+    {
+      "token": "box",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Holiday Birthday Gift Box With Bow",
+        "Mandala Geometry Patterns Sushi Bento Box Kawaii Roll Tuna",
+        "Mandala Geometry Patterns Sushi Cartoon Combo Box",
+        "Mandala Geometry Patterns Sushi Character Bento Box",
+        "Mandala Geometry Patterns Sushi Combo Box"
+      ]
+    },
+    {
+      "token": "buffalo",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Animals Buffalo",
+        "Chibi Plushie Buffalo",
+        "Holiday Birthday Celebration Plushie Buffalo Family",
+        "Holiday Christmas Plushie Buffalo Family",
+        "Holiday Halloween Costume Plushie Buffalo Family"
+      ]
+    },
+    {
+      "token": "chevrolet",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Mandala Geometry Patterns Vehiacle Cars Chevrolet",
+        "Mandala Geometry Patterns Vehiacle Cars Chevrolet Silverado",
+        "Mandala Geometry Patterns Vehicle Cars Chevrolet Blazer",
+        "Mandala Geometry Patterns Vehicle Cars Chevrolet Blazer Ev",
+        "Mandala Geometry Patterns Vehicle Cars Chevrolet Camaro"
+      ]
+    },
+    {
+      "token": "cup",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Gardening Mushroom Angry Cup Fungus Character",
+        "Gardening Mushroom Cup Fungus",
+        "Gardening Mushroom Lichen Cup",
+        "Mandala Geometry Patterns Bakery Cup Measuring Set",
+        "Mandala Geometry Patterns Mushroom Cup Fungus"
+      ]
+    },
+    {
+      "token": "dice",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu Eight Sided Dice",
+        "Anime Girl Summoning Jutsu Eight Sided Dice Plushies",
+        "Anime Girl Summoning Jutsu Four Sided Dice",
+        "Anime Girl Summoning Jutsu Four Sided Dice Plushies",
+        "Anime Girl Summoning Jutsu Six Sided Dice"
+      ]
+    },
+    {
+      "token": "english",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Chibi Animals Pets Dogs English Mastiff",
+        "Chibi Animals Pets Dogs English Springer Spaniel",
+        "Chibi Animals Pets Dogs Old English Sheepdog",
+        "Dogs English Mastiff",
+        "Dogs English Springer Spaniel"
+      ]
+    },
+    {
+      "token": "gerbil",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Chibi Plushie Gerbil",
+        "Holiday Birthday Celebration Plushie Gerbil Family",
+        "Holiday Christmas Plushie Gerbil Family",
+        "Holiday Halloween Costume Plushie Gerbil Family",
+        "Mandala Geometry Patterns Plushie Gerbil"
+      ]
+    },
+    {
+      "token": "glyptodon",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Chibi Glyptodon",
+        "Chibi Plushie Prehistoric Glyptodon",
+        "Prehistoric Glyptodon",
+        "Holiday Birthday Celebration Plushie Prehistoric Glyptodon Family",
+        "Holiday Christmas Plushie Prehistoric Glyptodon Family"
+      ]
+    },
+    {
+      "token": "guard",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Anime Girl Cerberus Gate Guard",
+        "Chibi Dungeon Skeleton Guard",
+        "Chibi Dungeon Troll Guard",
+        "Fantasy Knight Castle Guard",
+        "Fantasy Paladin Angel Guard"
+      ]
+    },
+    {
+      "token": "hearts",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Anime Girl Summoning Cute Hearts",
+        "Anime Girl Summoning Valentines Day Hearts",
+        "Chibi Flowers Bleeding Hearts",
+        "Chibi Flowers Bleeding Hearts Kawaii",
+        "Flowers Bleeding Hearts"
+      ]
+    },
+    {
+      "token": "hill",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Anime Girl Running Up Hill",
+        "Chibi Holiday Halloween Haunted House On Hill Coloring Page",
+        "Chibi Holiday Halloween Haunted House On Hill Under Full Moon Coloring Page",
+        "Holiday Christmas Winter Kids Sledding Down Hill In Park Coloring Page",
+        "Fantasy Hill Giant Feast"
+      ]
+    },
+    {
+      "token": "holding",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Anime Girl Dinosaur Fossil Hoodie Plushie Holding Egg",
+        "Chibi Holiday Halloween Ghosts Holding Hands In Circle Coloring Page",
+        "Chibi Holiday Halloween Vampire Holding Goblet Under Crescent Moon Coloring Page",
+        "Holiday Christmas Angel Holding Candle In Snowy Night Coloring Page",
+        "Mandala Geometry Patterns Bakery Baker Holding Bread"
+      ]
+    },
+    {
+      "token": "jellyfish",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Chibi Plushie Jellyfish",
+        "Holiday Birthday Celebration Plushie Jellyfish Family",
+        "Holiday Christmas Plushie Jellyfish Family",
+        "Holiday Halloween Costume Plushie Jellyfish Family",
+        "Plushie Jellyfish"
+      ]
+    },
+    {
+      "token": "kids",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Holiday Christmas Holiday Cookie Decorating With Kids Coloring Page",
+        "Holiday Christmas Kids Building Snow Fort In Yard Coloring Page",
+        "Holiday Christmas Winter Kids Sledding Down Hill In Park Coloring Page",
+        "Holiday Halloween Trick Or Treat Kids In Costumes Coloring Page",
+        "Mandala Geometry Patterns Sushi Kids Making Sushi"
+      ]
+    },
+    {
+      "token": "kitsune",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Chibi Plushie Baby Kitsune",
+        "Fantasy Chibi Kitsune Forest",
+        "Fantasy Creatures Kitsune Foxfire",
+        "Fantasy Forest Kitsune",
+        "Mandala Geometry Patterns Plushie Baby Kitsune"
+      ]
+    },
+    {
+      "token": "lamb",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Chibi Plushie Lamb",
+        "Holiday Birthday Celebration Plushie Lamb Family",
+        "Holiday Christmas Plushie Lamb Family",
+        "Holiday Halloween Costume Plushie Lamb Family",
+        "Mandala Geometry Patterns Plushie Cute Lamb"
+      ]
+    },
+    {
+      "token": "macaw",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Birds Macaw Parrot",
+        "Birds Macaw Parrot Sitting",
+        "Chibi Plushie Macaw",
+        "Holiday Birthday Celebration Plushie Macaw Family",
+        "Holiday Christmas Plushie Macaw Family"
+      ]
+    },
+    {
+      "token": "manta",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Holiday Birthday Celebration Plushie Manta Ray Family",
+        "Holiday Christmas Plushie Manta Ray Family",
+        "Holiday Halloween Costume Plushie Manta Ray Family",
+        "Mandala Geometry Patterns Plushie Manta Ray",
+        "Mandala Geometry Patterns Plushie Manta Raya"
+      ]
+    },
+    {
+      "token": "market",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Chibi Holiday Halloween Halloween Market Stall With Pumpkins Coloring Page",
+        "Holiday Christmas Christmas Village Market With Stalls Coloring Page",
+        "Fantasy Animal Fox Rogue Night Market",
+        "Fantasy Goblin Market",
+        "Fantasy Rogue Night Market"
+      ]
+    },
+    {
+      "token": "mosasaurus",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Chibi Plushie Prehistoric Mosasaurus",
+        "Prehistoric Mosasaurus",
+        "Holiday Birthday Celebration Plushie Prehistoric Mosasaurus Family",
+        "Holiday Christmas Plushie Prehistoric Mosasaurus Family",
+        "Holiday Christmas Prehistoric Mosasaurus"
+      ]
+    },
+    {
+      "token": "orchid",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Chibi Flowers Orchid",
+        "Flowers Orchid",
+        "Flowers Orchid Gardener",
+        "Indoor Plants Orchid Cattleya",
+        "Indoor Plants Orchid Dendrobium"
+      ]
+    },
+    {
+      "token": "paper",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Chibi Flowers Paper Daisy",
+        "Chibi Flowers Paper Daisy Kawaii",
+        "Flowers Paper Daisy",
+        "Mandala Geometry Patterns Flowers Paper Daisy",
+        "Mandala Geometry Patterns Japan Paper Folding Workshop"
+      ]
+    },
+    {
+      "token": "parasol",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Chibi Mushroom Shaggy Parasol",
+        "Gardening Mushroom Green Spored Parasol",
+        "Gardening Mushroom Parasol Macrolepiota",
+        "Gardening Mushroom Shaggy Parasol",
+        "Mandala Geometry Patterns Japan Geisha With Parasol"
+      ]
+    },
+    {
+      "token": "platter",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Mandala Geometry Patterns Bakery Holiday Pastry Platter",
+        "Mandala Geometry Patterns Japan Japanese Food Platter",
+        "Mandala Geometry Patterns Japan Tempura Platter",
+        "Mandala Geometry Patterns Sushi Chef Holding Platter",
+        "Mandala Geometry Patterns Sushi Platter With Ginger Rose"
+      ]
+    },
+    {
+      "token": "plesiosaurus",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Chibi Plushie Prehistoric Plesiosaurus",
+        "Prehistoric Plesiosaurus",
+        "Holiday Birthday Celebration Plushie Prehistoric Plesiosaurus Family",
+        "Holiday Christmas Plushie Prehistoric Plesiosaurus Family",
+        "Holiday Christmas Prehistoric Plesiosaurus"
+      ]
+    },
+    {
+      "token": "pterodactyl",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Anime Girl Pterodactyl Hoodie Plushie",
+        "Anime Girl Pterodactyl Hoodie Plushie",
+        "Chibi Plushie Prehistoric Pterodactyl",
+        "Holiday Birthday Celebration Plushie Prehistoric Pterodactyl Family",
+        "Holiday Christmas Plushie Prehistoric Pterodactyl Family"
+      ]
+    },
+    {
+      "token": "pufferfish",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Chibi Plushie Pufferfish",
+        "Holiday Birthday Celebration Plushie Pufferfish Family",
+        "Holiday Christmas Plushie Pufferfish Family",
+        "Holiday Halloween Costume Plushie Pufferfish Family",
+        "Mandala Geometry Patterns Plushie Pufferfish"
+      ]
+    },
+    {
+      "token": "railway",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Mandala Geometry Patterns Trains Locomotives Cogwheel Train On Alpine Railway",
+        "Mandala Geometry Patterns Trains Locomotives Electric Locomotive On Railway",
+        "Mandala Geometry Patterns Trains Locomotives Mountain Rack Railway Train Climbing Slope",
+        "Mandala Geometry Patterns Trains Locomotives Narrow Gauge Railway Train In Jungle",
+        "Mandala Geometry Patterns Trains Locomotives Railway Bridge Over River Scene"
+      ]
+    },
+    {
+      "token": "ranger",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Fantasy Ranger Cliff Scout",
+        "Fantasy Ranger Eagle Companion",
+        "Fantasy Ranger Elf Moonlit Woods",
+        "Fantasy Ranger Forest Hunt",
+        "Fantasy Ranger Forest Hunt Bow Drawn"
+      ]
+    },
+    {
+      "token": "ring",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu Ring Tail Lemur",
+        "Anime Girl Summoning Jutsu Ring Tail Lemur Plushies",
+        "Chibi Enchanted Forest Fairy Dancing In Flower Ring",
+        "Chibi Mushroom Forest Fairy Ring",
+        "Fantasy Creatures Fairy Ring"
+      ]
+    },
+    {
+      "token": "robot",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Anime Girl Cyber Punk Hoodie And Robot Pets",
+        "Chibi Plushie Robot",
+        "Holiday Birthday Celebration Plushie Robot Family",
+        "Holiday Christmas Plushie Robot Family",
+        "Holiday Halloween Costume Plushie Robot Family"
+      ]
+    },
+    {
+      "token": "rose",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Anime Girl Smelling Rose",
+        "Anime Girl Smelling Roses In Garden",
+        "Chibi Flowers Rose",
+        "Chibi Flowers Rose Kawaii",
+        "Flowers Rose"
+      ]
+    },
+    {
+      "token": "scorpion",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Anime Girl Summoning Scorpion",
+        "Anime Girl Summoning Scorpion Plushies",
+        "Insects Desert Scorpion",
+        "Insects Scorpion",
+        "Insects Scorpion In Grass"
+      ]
+    },
+    {
+      "token": "shield",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Chibi Dungeon Shield And Sword",
+        "Fantasy Knight Lion Shield Crest",
+        "Fantasy Knight Shield Crest",
+        "Fantasy Rune Shield Sanctuary",
+        "Fantasy Rune Shield Summon"
+      ]
+    },
+    {
+      "token": "sided",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu Eight Sided Dice",
+        "Anime Girl Summoning Jutsu Eight Sided Dice Plushies",
+        "Anime Girl Summoning Jutsu Four Sided Dice",
+        "Anime Girl Summoning Jutsu Four Sided Dice Plushies",
+        "Anime Girl Summoning Jutsu Six Sided Dice"
+      ]
+    },
+    {
+      "token": "spaniel",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Chibi Animals Pets Dogs Cavalier King Charles Spaniel",
+        "Chibi Animals Pets Dogs Cocker Spaniel",
+        "Chibi Animals Pets Dogs English Springer Spaniel",
+        "Dogs Cocker Spaniel",
+        "Dogs English Springer Spaniel"
+      ]
+    },
+    {
+      "token": "tapir",
+      "assetCount": 9,
+      "exampleTitles": [
+        "Anime Girl Studying With Plushie Tapir",
+        "Chibi Plushie Tapir",
+        "Holiday Birthday Celebration Plushie Tapir Family",
+        "Holiday Christmas Plushie Tapir Family",
+        "Holiday Halloween Costume Plushie Tapir Family"
+      ]
+    },
+    {
+      "token": "african",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu African Dragon",
+        "Anime Girl Summoning Jutsu African Dragon Plushies",
+        "Chibi African Dragon",
+        "Chibi Happy African Dragon",
+        "Indoor Plants African Violet"
+      ]
+    },
+    {
+      "token": "alpaca",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Chibi Plushie Alpaca",
+        "Holiday Birthday Celebration Plushie Alpaca Family",
+        "Holiday Christmas Plushie Alpaca Family",
+        "Holiday Halloween Costume Plushie Alpaca Family",
+        "Mandala Geometry Patterns Plushie Alpaca"
+      ]
+    },
+    {
+      "token": "ant",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Fantasy Guardian Ant Knight",
+        "Insects Angry Soldier Ant",
+        "Insects Ant",
+        "Insects Ant Carrying Leaves",
+        "Insects Army Ant Cartoon"
+      ]
+    },
+    {
+      "token": "anteater",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Chibi Plushie Anteater",
+        "Holiday Birthday Celebration Plushie Anteater Family",
+        "Holiday Christmas Plushie Anteater Family",
+        "Holiday Halloween Costume Plushie Anteater Family",
+        "Mandala Geometry Patterns Plushie Anteater"
+      ]
+    },
+    {
+      "token": "belgian",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Chibi Animals Pets Dogs Belgian Malinois",
+        "Chibi Animals Pets Dogs Belgian Tervuren",
+        "Dogs Belgian Malinois",
+        "Dogs Belgian Sheepdog",
+        "Dogs Belgian Tervuren"
+      ]
+    },
+    {
+      "token": "bleeding",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Chibi Flowers Bleeding Hearts",
+        "Chibi Flowers Bleeding Hearts Kawaii",
+        "Chibi Mushroom Bleeding Tooth",
+        "Flowers Bleeding Hearts",
+        "Gardening Mushroom Bleeding Tooth"
+      ]
+    },
+    {
+      "token": "bulldog",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Chibi Animals Pets Dogs Bulldog",
+        "Chibi Animals Pets Dogs French Bulldog",
+        "Dogs Bulldog",
+        "Dogs French Bulldog",
+        "Holiday Christmas Dogs Bulldog"
+      ]
+    },
+    {
+      "token": "bullet",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Mandala Geometry Patterns Japan Shinkansen Bullet Train",
+        "Mandala Geometry Patterns Japan Shinkansen Bullet Train Mountain Scene",
+        "Mandala Geometry Patterns Trains Locomotives Cartoon Smiling Bullet Train For Kids",
+        "Mandala Geometry Patterns Trains Locomotives High Speed Bullet Train At Modern Station",
+        "Mandala Geometry Patterns Trains Locomotives High Speed Bullet Train Crossing Bridge"
+      ]
+    },
+    {
+      "token": "capibara",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Chibi Plushie Capibara",
+        "Holiday Birthday Celebration Plushie Capibara Family",
+        "Holiday Christmas Plushie Capibara Family",
+        "Holiday Halloween Costume Plushie Capibara Family",
+        "Mandala Geometry Patterns Plushie Capibara"
+      ]
+    },
+    {
+      "token": "caribou",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Chibi Plushie Caribou",
+        "Holiday Birthday Celebration Plushie Caribou Family",
+        "Holiday Christmas Plushie Caribou Family",
+        "Holiday Halloween Costume Plushie Caribou Family",
+        "Mandala Geometry Patterns Plushie Caribou"
+      ]
+    },
+    {
+      "token": "cavern",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Chibi Dungeon Adventurer Crystal Cavern",
+        "Fantasy Crystal Cavern",
+        "Fantasy Crystal Cavern Fox Fairy",
+        "Fantasy Crystal Fairy Cavern",
+        "Fantasy Ice Dragon Cavern"
+      ]
+    },
+    {
+      "token": "chick",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Chibi Plushie Chick",
+        "Holiday Birthday Celebration Plushie Chick Family",
+        "Holiday Christmas Plushie Chick Family",
+        "Holiday Halloween Costume Plushie Chick Family",
+        "Mandala Geometry Patterns Plushie Animals Chick"
+      ]
+    },
+    {
+      "token": "chinchilla",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Chibi Plushie Chinchilla",
+        "Holiday Birthday Celebration Plushie Chinchilla Family",
+        "Holiday Christmas Plushie Chinchilla Family",
+        "Holiday Halloween Costume Plushie Chinchilla Family",
+        "Mandala Geometry Patterns Plushie Chinchilla"
+      ]
+    },
+    {
+      "token": "chipmunk",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Chibi Plushie Chipmunk",
+        "Holiday Birthday Celebration Plushie Chipmunk Family",
+        "Holiday Christmas Plushie Chipmunk Family",
+        "Holiday Halloween Costume Plushie Chipmunk Family",
+        "Mandala Geometry Patterns Plushie Chipmunk"
+      ]
+    },
+    {
+      "token": "cloud",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Chibi Plushie Cloud Character",
+        "Holiday Birthday Celebration Plushie Cloud Family",
+        "Holiday Christmas Plushie Cloud Family",
+        "Holiday Halloween Costume Plushie Cloud Family",
+        "Mandala Geometry Patterns Plushie Cloud"
+      ]
+    },
+    {
+      "token": "collie",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Chibi Animals Pets Dogs Border Collie",
+        "Chibi Animals Pets Dogs Collie",
+        "Dogs Border Collie",
+        "Dogs Border Collie Playing",
+        "Dogs Collie"
+      ]
+    },
+    {
+      "token": "crocodile",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Animals Crocodile",
+        "Mandala Geometry Patterns Crocodile",
+        "Mandala Geometry Patterns Crocodile Face Patterns",
+        "Reptiles American Crocodile In Swamp",
+        "Reptiles Crocodile"
+      ]
+    },
+    {
+      "token": "crossing",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Mandala Geometry Patterns Trains Locomotives Desert Safari Train Crossing Dunes",
+        "Mandala Geometry Patterns Trains Locomotives Excursion Train Crossing Historic Trestle Bridge",
+        "Mandala Geometry Patterns Trains Locomotives High Speed Bullet Train Crossing Bridge",
+        "Mandala Geometry Patterns Trains Locomotives Intercity Passenger Train Crossing River Bridge",
+        "Mandala Geometry Patterns Trains Locomotives Railway Crossing With Flashing Lights"
+      ]
+    },
+    {
+      "token": "cupcake",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Holiday Birthday Cupcake",
+        "Mandala Geometry Patterns Bakery Birthday Cupcake",
+        "Mandala Geometry Patterns Bakery Chocolate Cupcake",
+        "Mandala Geometry Patterns Bakery Cupcake",
+        "Mandala Geometry Patterns Bakery Fruit Cupcake"
+      ]
+    },
+    {
+      "token": "eel",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Anime Girl Summoning Electric Eel Plushies",
+        "Anime Girl Summoning Jutsu Eel",
+        "Mandala Geometry Patterns Sushi Eel Sauce Drizzle",
+        "Mandala Geometry Patterns Sushi Unagi Eel Nigiri",
+        "Sea Life Eel"
+      ]
+    },
+    {
+      "token": "engine",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Mandala Geometry Patterns Trains Locomotives Cartoon Smiling Diesel Engine For Kids",
+        "Mandala Geometry Patterns Trains Locomotives Cartoon Smiling Steam Engine For Kids",
+        "Mandala Geometry Patterns Trains Locomotives Classic Steam Engine Front View",
+        "Mandala Geometry Patterns Trains Locomotives Classic Steam Engine Side View",
+        "Mandala Geometry Patterns Trains Locomotives Classic Steam Engine With Smoke Stack"
+      ]
+    },
+    {
+      "token": "ferret",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Chibi Plushie Ferret",
+        "Holiday Birthday Celebration Plushie Ferret Family",
+        "Holiday Christmas Plushie Ferret Family",
+        "Holiday Halloween Costume Plushie Ferret Family",
+        "Mandala Geometry Patterns Plushie Ferret"
+      ]
+    },
+    {
+      "token": "flight",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Birds Bald Eagle Taking Flight",
+        "Fantasy Chibi Phoenix Flight",
+        "Fantasy Creatures Hippogriff Flight",
+        "Fantasy Creatures Pegasus Flight",
+        "Fantasy Pegasus Flight"
+      ]
+    },
+    {
+      "token": "forge",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Fantasy Cyclops Forge",
+        "Fantasy Dwarf Forge",
+        "Fantasy Dwarf Hammer Forge",
+        "Fantasy Fire Spirit Forge",
+        "Fantasy Legendary Cyclops Forge"
+      ]
+    },
+    {
+      "token": "full",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Anime Girl Transforming Into Fantasy Werewolf Full Moon",
+        "Chibi Holiday Halloween Haunted House On Hill Under Full Moon Coloring Page",
+        "Chibi Holiday Halloween Werewolf Howling Under Full Moon Coloring Page",
+        "Holiday Halloween Haunted House On Hill Under Full Moon Coloring Page",
+        "Holiday Halloween Werewolf Howling Under Full Moon Coloring Page"
+      ]
+    },
+    {
+      "token": "gazelle",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Chibi Plushie Gazelle",
+        "Holiday Birthday Celebration Plushie Gazelle Family",
+        "Holiday Christmas Plushie Gazelle Family",
+        "Holiday Halloween Costume Plushie Gazelle Family",
+        "Mandala Geometry Patterns Plushie Gazelle"
+      ]
+    },
+    {
+      "token": "glowing",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Chibi Holiday Halloween Jack O Lantern Glowing In Window Coloring Page",
+        "Chibi Holiday Halloween Spooky Forest Path With Glowing Eyes Coloring Page",
+        "Chibi Mushroom Ghost Fungus Glowing",
+        "Holiday Christmas Winter Log Cabin With Glowing Windows Coloring Page",
+        "Holiday Halloween Spooky Forest Path With Glowing Eyes Coloring Page"
+      ]
+    },
+    {
+      "token": "guinea",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Chibi Plushie Guinea Pig",
+        "Holiday Birthday Celebration Plushie Guinea Pig Family",
+        "Holiday Christmas Plushie Guinea Pig Family",
+        "Holiday Halloween Costume Plushie Guinea Pig Family",
+        "Mandala Geometry Patterns Plushie Guinea Pig"
+      ]
+    },
+    {
+      "token": "hamster",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Chibi Plushie Hamster",
+        "Holiday Birthday Celebration Plushie Hamster Family",
+        "Holiday Christmas Plushie Hamster Family",
+        "Holiday Halloween Costume Plushie Hamster Family",
+        "Mandala Geometry Patterns Plushie Hamster"
+      ]
+    },
+    {
+      "token": "horned",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu Cute Horned Dragon Plushies",
+        "Anime Girl Summoning Jutsu Horned Dragon Plushies",
+        "Birds Great Horned Owl",
+        "Chibi Horned Dragon",
+        "Plushie Horned Sheep Family"
+      ]
+    },
+    {
+      "token": "iguanodon",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Chibi Plushie Prehistoric Iguanodon",
+        "Prehistoric Iguanodon",
+        "Holiday Birthday Celebration Plushie Prehistoric Iguanodon Family",
+        "Holiday Christmas Plushie Prehistoric Iguanodon Family",
+        "Holiday Halloween Costume Plushie Prehistoric Iguanodon Family"
+      ]
+    },
+    {
+      "token": "kiwi",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Birds Kiwi",
+        "Chibi Plushie Kiwi Bird",
+        "Holiday Birthday Celebration Plushie Kiwi Bird Family",
+        "Holiday Christmas Plushie Kiwi Bird Family",
+        "Holiday Halloween Costume Plushie Kiwi Bird Family"
+      ]
+    },
+    {
+      "token": "koi",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Mandala Geometry Patterns Japan Koi Pond",
+        "Mandala Geometry Patterns Koi",
+        "Mandala Geometry Patterns Koi Face Patterns",
+        "Mandala Geometry Patterns Sushi Koi Fish At Restaurant",
+        "Mandala Geometry Patterns Sushi Koi Pond Garden Scene"
+      ]
+    },
+    {
+      "token": "lake",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Birds Kingfisher Lake",
+        "Fantasy Lake Guardian",
+        "Fantasy Lake Naiad",
+        "Fantasy Lake Serpant Guardian",
+        "Homes Lake House With Dock"
+      ]
+    },
+    {
+      "token": "lamborghini",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Mandala Geometry Patterns Vehiacle Cars Lamborghini",
+        "Mandala Geometry Patterns Vehiacle Cars Lamborghini Aventador",
+        "Mandala Geometry Patterns Vehiacle Cars Lamborghini Sports Car",
+        "Mandala Geometry Patterns Vehicle Cars Lamborghini Gallardo",
+        "Mandala Geometry Patterns Vehicle Cars Lamborghini Huracan"
+      ]
+    },
+    {
+      "token": "leprechaun",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Fantasy Creatures Leprechaun",
+        "Mythology Leprechaun",
+        "St Patricks Day Leprechaun Dancing Jig Coloring Page",
+        "St Patricks Day Leprechaun Holding Shamrock Coloring Page",
+        "St Patricks Day Leprechaun Rainbow And Gold Coloring Page"
+      ]
+    },
+    {
+      "token": "leviathan",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Anime Girl Energy Ball Attack Leviathan Battle Shounin",
+        "Anime Girl Summoning Jutsu Leviathan Dragon",
+        "Anime Girl Summoning Jutsu Leviathan Dragon Plushies",
+        "Chibi Leviathan",
+        "Chibi Leviathan Dragon"
+      ]
+    },
+    {
+      "token": "lightning",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Anime Girl Lightning Alchemy",
+        "Anime Girl Summoning Jutsu Lightning Dragon",
+        "Anime Girl Summoning Jutsu Lightning Dragon Plushies",
+        "Chibi Lightning Dragon",
+        "Fantasy Mythology Dragons Lightning Dragon"
+      ]
+    },
+    {
+      "token": "long",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu Long Neck Dino",
+        "Anime Girl Summoning Jutsu Long Neck Dino Plushies",
+        "Birds Long Eared Owl",
+        "Mandala Geometry Patterns Trains Locomotives Long Distance Passenger Train In Desert",
+        "Mandala Geometry Patterns Trains Locomotives Train Passing Over Long Viaduct Bridge"
+      ]
+    },
+    {
+      "token": "manatee",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Chibi Plushie Manatee",
+        "Holiday Christmas Plushie Manatee Family",
+        "Holiday Halloween Costume Plushie Manatee Family",
+        "Mandala Geometry Patterns Plushie Manatee",
+        "Plushie Manatee"
+      ]
+    },
+    {
+      "token": "mantis",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Anime Girl Summoning Mantis",
+        "Anime Girl Summoning Mantis Plushies",
+        "Anime Girl Summoning Praying Mantis",
+        "Anime Girl Summoning Praying Mantis Plushiesa",
+        "Insects Praying Mantis"
+      ]
+    },
+    {
+      "token": "model",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Mandala Geometry Patterns Vehiacle Cars Tesla Model S",
+        "Mandala Geometry Patterns Vehiacle Planes Rc Model Plane",
+        "Mandala Geometry Patterns Vehicle Cars Classic Ford Model T",
+        "Mandala Geometry Patterns Vehicle Cars Classic Ford Model T Car",
+        "Mandala Geometry Patterns Vehicle Cars Future Concept Model Car"
+      ]
+    },
+    {
+      "token": "necromancer",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Anime Girl Necromancer Robes",
+        "Chibi Midieval Fantasy Necromancer",
+        "Chibi Necromancer",
+        "Fantasy Creatures Necromancer Playing Cards",
+        "Fantasy Necromancer Bone Army"
+      ]
+    },
+    {
+      "token": "ninja",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Anime Girl Cyber Ninja Assault",
+        "Anime Girl Ninja",
+        "Anime Girl Ninja Claws Leaping From Tree",
+        "Anime Girl Ninja Teleporting To Monster Battle Shounin",
+        "Mandala Geometry Patterns Japan Ninja Silhouette On Rooftop"
+      ]
+    },
+    {
+      "token": "ogre",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Chibi Dungeon Ogre In Dungeon",
+        "Chibi Dungeon Warrior Vs Ogre",
+        "Fantasy Angry Ogre Camping",
+        "Fantasy Creatures Ogre",
+        "Fantasy Creatures Ogre Camp"
+      ]
+    },
+    {
+      "token": "okapi",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Chibi Plushie Okapi",
+        "Holiday Birthday Celebration Plushie Okapi Family",
+        "Holiday Christmas Plushie Okapi Family",
+        "Holiday Halloween Costume Plushie Okapi Family",
+        "Mandala Geometry Patterns Plushie Okapi"
+      ]
+    },
+    {
+      "token": "orb",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Chibi Dungeon Magic Crystal Orb",
+        "Fantasy Artifact Moon Orb",
+        "Fantasy Artifact Runic Orb",
+        "Fantasy Artifact Sun Orb",
+        "Fantasy Eldritch Orb"
+      ]
+    },
+    {
+      "token": "pag",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Chibi Holiday Halloween Candy Trail Leading To Haunted Door Coloring Page",
+        "Chibi Holiday Halloween Halloween Maze With Cornfield Paths Coloring Page",
+        "Chibi Holiday Halloween Werewolf Jumping Over Haunted Fence Coloring Page",
+        "Chibi Holiday Halloween Zombie With Torn Trick Or Treat Bag Coloring Page",
+        "Holiday Christmas Holiday Morning Gift Opening By Fireplace Coloring Page"
+      ]
+    },
+    {
+      "token": "piglet",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Chibi Plushie Piglet",
+        "Holiday Birthday Celebration Plushie Piglet Family",
+        "Holiday Christmas Plushie Piglet Family",
+        "Holiday Halloween Costume Plushie Piglet Family",
+        "Mandala Geometry Patterns Plushie Piglet"
+      ]
+    },
+    {
+      "token": "porch",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Chibi Holiday Halloween Jack O Lantern Lined Front Porch Coloring Page",
+        "Chibi Holiday Halloween Trick Or Treat Front Porch Decorated Coloring Page",
+        "Holiday Christmas Christmas Candle In Lantern On Snowy Porch Coloring Page",
+        "Holiday Halloween Jack O Lantern Lined Front Porch Coloring Page",
+        "Holiday Halloween Trick Or Treat Front Porch Decorated Coloring Page"
+      ]
+    },
+    {
+      "token": "rainbow",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Fantasy Pegasus Rainbow Ridge",
+        "Mandala Geometry Patterns Rainbow Mandala",
+        "Mandala Geometry Patterns Sushi Rainbow Roll",
+        "Mandala Geometry Patterns Sushi Rainbow Sashimi Roll",
+        "St Patricks Day Leprechaun Rainbow And Gold Coloring Page"
+      ]
+    },
+    {
+      "token": "samurai",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Anime Girl Samurai Armor",
+        "Anime Girl Samurai Walking Across Rainy Battlefield",
+        "Chibi Samurai",
+        "Chibi Samurai Pegasus",
+        "Mandala Geometry Patterns Japan Samurai Armor Display"
+      ]
+    },
+    {
+      "token": "smoke",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Anime Girl Kimono Warrior Smoke Pipe",
+        "Chibi Holiday Halloween Cauldron With Green Smoke And Bats Coloring Page",
+        "Holiday Christmas Winter Cabin In Woods With Smoke In Chimney Coloring Page",
+        "Fantasy Rogue Smoke Dodge",
+        "Fantasy Thief Smoke Dodge"
+      ]
+    },
+    {
+      "token": "sphinx",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Chibi Sphinx",
+        "Chibi Sphinx Monument",
+        "Fantasy Creatures Sphinx",
+        "Fantasy Creatures Sphinx Riddle",
+        "Fantasy Sphinx Riddle"
+      ]
+    },
+    {
+      "token": "storm",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Fantasy Animal Fox Sorcerer Magic Storm",
+        "Fantasy Artifact Storm Core",
+        "Fantasy Barbarian Storm Peak",
+        "Fantasy Creatures Storm Elemental",
+        "Fantasy Sorcerer Magic Storm"
+      ]
+    },
+    {
+      "token": "summon",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Anime Girl Chibi Bear Summon",
+        "Anime Girl Chibi Cow Summon",
+        "Fantasy Animal Mage Fire Summon",
+        "Fantasy Ethereal Serpent Summon",
+        "Fantasy Rune Shield Summon"
+      ]
+    },
+    {
+      "token": "tail",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu Ring Tail Lemur",
+        "Anime Girl Summoning Jutsu Ring Tail Lemur Plushies",
+        "Chibi Mushroom Turkey Tail",
+        "Fantasy Creatures Two Tail Basilisk In Cave",
+        "Gardening Mushroom Turkey Tail"
+      ]
+    },
+    {
+      "token": "toucan",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Birds Toucan",
+        "Chibi Plushie Toucan",
+        "Holiday Birthday Celebration Plushie Toucan Family",
+        "Holiday Christmas Plushie Toucan Family",
+        "Holiday Halloween Costume Plushie Toucan Family"
+      ]
+    },
+    {
+      "token": "toyota",
+      "assetCount": 8,
+      "exampleTitles": [
+        "Mandala Geometry Patterns Vehiacle Cars Toyota",
+        "Mandala Geometry Patterns Vehiacle Cars Toyota Supra",
+        "Mandala Geometry Patterns Vehicle Cars Toyota 4runner",
+        "Mandala Geometry Patterns Vehicle Cars Toyota Celica Classic",
+        "Mandala Geometry Patterns Vehicle Cars Toyota Gr86"
+      ]
+    },
+    {
+      "token": "bamboo",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Indoor Plants Bamboo Palm",
+        "Indoor Plants Lucky Bamboo",
+        "Mandala Geometry Patterns Japan Bamboo Forest",
+        "Mandala Geometry Patterns Japan Kyoto Bamboo Grove Path",
+        "Mandala Geometry Patterns Sushi Bamboo Chopstick Rest"
+      ]
+    },
+    {
+      "token": "bay",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Chibi Animals Pets Dogs Chesapeake Bay Retriever",
+        "Dogs Chesapeake Bay Retriever",
+        "Gardening Mushroom Bay Bolete",
+        "Mandala Geometry Patterns Dogs Chesapeake Bay Retriever",
+        "Mandala Geometry Patterns Mushroom Bay Bolete"
+      ]
+    },
+    {
+      "token": "bmw",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Mandala Geometry Patterns Vehiacle Cars Bmw",
+        "Mandala Geometry Patterns Vehicle Cars Bmw I8 Hybrid",
+        "Mandala Geometry Patterns Vehicle Cars Bmw Ix",
+        "Mandala Geometry Patterns Vehicle Cars Bmw M3",
+        "Mandala Geometry Patterns Vehicle Cars Bmw X5"
+      ]
+    },
+    {
+      "token": "bobcat",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Chibi Plushie Bobcat",
+        "Holiday Birthday Celebration Plushie Bobcat Family",
+        "Holiday Christmas Plushie Bobcat Family",
+        "Holiday Halloween Costume Plushie Bobcat Family",
+        "Mandala Geometry Patterns Plushie Bobcat"
+      ]
+    },
+    {
+      "token": "border",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Chibi Animals Pets Dogs Border Collie",
+        "Chibi Animals Pets Dogs Border Terrier",
+        "Dogs Border Collie",
+        "Dogs Border Collie Playing",
+        "Holiday Christmas Dogs Border Collie"
+      ]
+    },
+    {
+      "token": "branch",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Birds Blue Jay Perched On Branch",
+        "Holiday Halloween Owl Sitting On Tree Branch At Night Coloring Page",
+        "Insects Stag Beetle Fighting On Branch",
+        "Reptiles Anole Lizard On Flower Branch",
+        "Reptiles Chameleon On Tree Branch"
+      ]
+    },
+    {
+      "token": "bread",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Mandala Geometry Patterns Bakery Baker Holding Bread",
+        "Mandala Geometry Patterns Bakery Banana Bread",
+        "Mandala Geometry Patterns Bakery Bread Loaf",
+        "Mandala Geometry Patterns Bakery Bread Slicing Board",
+        "Mandala Geometry Patterns Bakery Milk Bread Loaf"
+      ]
+    },
+    {
+      "token": "cabin",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Holiday Christmas Winter Cabin In Woods With Smoke In Chimney Coloring Page",
+        "Holiday Christmas Winter Log Cabin With Glowing Windows Coloring Page",
+        "Homes Cabin In The Woods",
+        "Homes Cabin In Winter Scene",
+        "Homes Cabin With Smoke From Chimney"
+      ]
+    },
+    {
+      "token": "caterpillar",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu Caterpillar Plushies",
+        "Insects Armyworm Caterpillar",
+        "Insects Armyworm Caterpillar Cartoon",
+        "Insects Caterpillar",
+        "Insects Cutworm Caterpillar"
+      ]
+    },
+    {
+      "token": "coyote",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Chibi Plushie Coyote",
+        "Holiday Birthday Celebration Plushie Coyote Family",
+        "Holiday Christmas Plushie Coyote Family",
+        "Holiday Halloween Costume Plushie Coyote Family",
+        "Mandala Geometry Patterns Plushie Coyote"
+      ]
+    },
+    {
+      "token": "decorated",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Chibi Holiday Halloween Halloween Garland And Decorated Door Coloring Page",
+        "Chibi Holiday Halloween Trick Or Treat Front Porch Decorated Coloring Page",
+        "Holiday Christmas Christmas Wreath Decorated With Bells And Bow Coloring Page",
+        "Holiday Christmas Gingerbread House Decorated With Candy Coloring Page",
+        "Holiday Christmas Snowman Decorated With String Lights Coloring Page"
+      ]
+    },
+    {
+      "token": "donut",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Chibi Plushie Donut Character",
+        "Mandala Geometry Patterns Bakery Donut",
+        "Mandala Geometry Patterns Bakery Glazed Donut",
+        "Mandala Geometry Patterns Bakery Jelly Filled Donut",
+        "Mandala Geometry Patterns Bakery Sprinkle Donut"
+      ]
+    },
+    {
+      "token": "dugong",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Chibi Plushie Dugong",
+        "Holiday Christmas Plushie Dugong Family",
+        "Holiday Halloween Costume Plushie Dugong Family",
+        "Mandala Geometry Patterns Plushie Dugong",
+        "Plushie Dugong"
+      ]
+    },
+    {
+      "token": "egg",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Anime Girl Dinosaur Fossil Hoodie Plushie Holding Egg",
+        "Anime Girl Lifeguard Easter Egg Hunt",
+        "Anime Girl Summoning Jutsu Dragon Hatching Egg Plushies",
+        "Chibi Dungeon Monster Egg Hatching",
+        "Chibi Plushie Easter Egg Character"
+      ]
+    },
+    {
+      "token": "emoji",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Anime Girl Summoning Broken Heart Emoji Plushies",
+        "Anime Girl Summoning Emoji Heart Plushies",
+        "Anime Girl Summoning Emoji Plushies",
+        "Anime Girl Summoning Face With Emoji Plushies",
+        "Anime Girl Summoning Heart Emoji Plushies"
+      ]
+    },
+    {
+      "token": "fennec",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Chibi Plushie Fennec Fox",
+        "Holiday Birthday Celebration Plushie Fennec Fox Family",
+        "Holiday Christmas Plushie Fennec Fox Family",
+        "Holiday Halloween Costume Plushie Fennec Fox Family",
+        "Mandala Geometry Patterns Plushie Fennec Fox"
+      ]
+    },
+    {
+      "token": "fern",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Indoor Plants Asparagus Fern",
+        "Indoor Plants Birds Nest Fern",
+        "Indoor Plants Boston Fern",
+        "Indoor Plants Kimberly Queen Fern",
+        "Indoor Plants Maidenhair Fern"
+      ]
+    },
+    {
+      "token": "fly",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Chibi Mushroom Fly Agaric Amanita",
+        "Gardening Mushroom Fly Agaric Amanita",
+        "Insects Deer Fly",
+        "Insects Fly Forest Fire",
+        "Insects Fruit Fly"
+      ]
+    },
+    {
+      "token": "goat",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Animals Goat",
+        "Chibi Plushie Mountain Goat",
+        "Holiday Birthday Celebration Plushie Mountain Goat Family",
+        "Holiday Christmas Plushie Mountain Goat Family",
+        "Holiday Halloween Costume Plushie Mountain Goat Family"
+      ]
+    },
+    {
+      "token": "hippogriff",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Chibi Plushie Happy Hippogriff",
+        "Chibi Plushie Hippogriff",
+        "Fantasy Creatures Hippogriff",
+        "Fantasy Creatures Hippogriff Flight",
+        "Mandala Geometry Patterns Plushie Hippogriff"
+      ]
+    },
+    {
+      "token": "honda",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Mandala Geometry Patterns Vehiacle Cars Honda",
+        "Mandala Geometry Patterns Vehicle Cars Honda Civic Type R",
+        "Mandala Geometry Patterns Vehicle Cars Honda Civic Type R Car",
+        "Mandala Geometry Patterns Vehicle Cars Honda Crv",
+        "Mandala Geometry Patterns Vehicle Cars Honda Pilot"
+      ]
+    },
+    {
+      "token": "jackal",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Chibi Plushie Jackal",
+        "Holiday Birthday Celebration Plushie Jackal Family",
+        "Holiday Christmas Plushie Jackal Family",
+        "Holiday Halloween Costume Plushie Jackal Family",
+        "Mandala Geometry Patterns Plushie Jackal"
+      ]
+    },
+    {
+      "token": "kimono",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Anime Girl Kimono Eating Rice Balls",
+        "Anime Girl Kimono Eating Tasty Rice Balls",
+        "Anime Girl Kimono Warrior Smoke Pipe",
+        "Anime Girl Sushi Kimono Dress",
+        "Mandala Geometry Patterns Japan Kimono Boy"
+      ]
+    },
+    {
+      "token": "ladybug",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Anime Girl Summoning Ladybug Plushies",
+        "Insects Ladybug",
+        "Insects Ladybug Flying With Spread Wings",
+        "Insects Ladybug On Daisy",
+        "Mandala Geometry Patterns Insects Ladybug"
+      ]
+    },
+    {
+      "token": "lanterns",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Chibi Holiday Halloween Trick Or Treat Walkway Lined With Lanterns Coloring Page",
+        "Holiday Halloween Trick Or Treat Walkway Lined With Lanterns Coloring Page",
+        "Holiday Halloween Trick Or Treat With Lanterns Coloring Page",
+        "Mandala Geometry Patterns Japan Festival Lanterns",
+        "Mandala Geometry Patterns Plushie Lanterns"
+      ]
+    },
+    {
+      "token": "lava",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu Lava Dragon",
+        "Chibi Dungeon Adventure Bridge Over Lava",
+        "Chibi Dungeon Lava River",
+        "Chibi Lava Dragon",
+        "Fantasy Mythology Dragons Lava Dragon"
+      ]
+    },
+    {
+      "token": "lynx",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Chibi Plushie Lynx",
+        "Holiday Birthday Celebration Plushie Lynx Family",
+        "Holiday Christmas Plushie Lynx Family",
+        "Holiday Halloween Costume Plushie Lynx Family",
+        "Mandala Geometry Patterns Plushie Lynx"
+      ]
+    },
+    {
+      "token": "maki",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Mandala Geometry Patterns Sushi Avocado Maki",
+        "Mandala Geometry Patterns Sushi Cucumber Maki",
+        "Mandala Geometry Patterns Sushi Dancing Maki Roll",
+        "Mandala Geometry Patterns Sushi Maki Roll",
+        "Mandala Geometry Patterns Sushi Salmon Maki"
+      ]
+    },
+    {
+      "token": "mane",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Chibi Mushroom Coprinus Comatus Shaggy Mane",
+        "Chibi Mushroom Lions Mane",
+        "Gardening Mushroom Coprinus Comatus Shaggy Mane",
+        "Gardening Mushroom Lions Mane",
+        "Mandala Geometry Patterns Mushroom Coprinus Comatus Shaggy Mane"
+      ]
+    },
+    {
+      "token": "meerkat",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Chibi Plushie Meerkat",
+        "Holiday Birthday Celebration Plushie Meerkat Family",
+        "Holiday Christmas Plushie Meerkat Family",
+        "Holiday Halloween Costume Plushie Meerkat Family",
+        "Mandala Geometry Patterns Plushie Meerkat"
+      ]
+    },
+    {
+      "token": "near",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Chibi Holiday Halloween Witch Reading Spellbook Near Cauldron Coloring Page",
+        "Mandala Geometry Patterns Trains Locomotives Mountain Tourist Train Near Waterfall",
+        "Sea Life Blue Whale Swimming Near Surface",
+        "Sea Life Damselfish School Near Coral",
+        "Sea Life Dugong Near Mangrove Shore"
+      ]
+    },
+    {
+      "token": "nurse",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Anime Girl Nurse",
+        "Anime Girl Nurse Doing Cpr",
+        "Anime Girl Nurse Doing Cpr",
+        "Anime Girl Nurse Drinking Health Potion",
+        "Anime Girl Nurse With Needle"
+      ]
+    },
+    {
+      "token": "pangolin",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Chibi Plushie Pangolin",
+        "Holiday Birthday Celebration Plushie Pangolin Family",
+        "Holiday Christmas Plushie Pangolin Family",
+        "Holiday Halloween Costume Plushie Pangolin Family",
+        "Mandala Geometry Patterns Plushie Pangolin"
+      ]
+    },
+    {
+      "token": "passenger",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Mandala Geometry Patterns Trains Locomotives Double Decker Passenger Train On Track",
+        "Mandala Geometry Patterns Trains Locomotives Double Decker Passenger Train At Platform",
+        "Mandala Geometry Patterns Trains Locomotives Intercity Passenger Train Crossing River Bridge",
+        "Mandala Geometry Patterns Trains Locomotives Long Distance Passenger Train In Desert",
+        "Mandala Geometry Patterns Trains Locomotives Passenger Train Arriving At Station"
+      ]
+    },
+    {
+      "token": "poppy",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Chibi Flowers Iceland Poppy",
+        "Chibi Flowers Iceland Poppy Kawaii",
+        "Chibi Flowers Poppy",
+        "Chibi Flowers Poppy Kawaii",
+        "Flowers Iceland Poppy"
+      ]
+    },
+    {
+      "token": "porsche",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Mandala Geometry Patterns Vehiacle Cars Porsche",
+        "Mandala Geometry Patterns Vehiacle Cars Porsche 911",
+        "Mandala Geometry Patterns Vehicle Cars Porsche 718 Cayman",
+        "Mandala Geometry Patterns Vehicle Cars Porsche Cayenne",
+        "Mandala Geometry Patterns Vehicle Cars Porsche Cayman"
+      ]
+    },
+    {
+      "token": "princess",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Chibi Midieval Fantasy Princess",
+        "Fantasy Mermaid Princess Coral Throne",
+        "Holiday Birthday Princess Birthday Party",
+        "Indoor Plants Philodendron Pink Princess",
+        "Indoor Plants Philodendron White Princess"
+      ]
+    },
+    {
+      "token": "rhinoceros",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu Woolly Rhinoceros",
+        "Anime Girl Summoning Jutsu Woolly Rhinoceros Plushies",
+        "Chibi Woolly Rhinoceros",
+        "Prehistoric Woolly Rhinoceros",
+        "Insects Rhinoceros Beetle"
+      ]
+    },
+    {
+      "token": "rooster",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Chibi Plushie Rooster",
+        "Holiday Birthday Celebration Plushie Rooster Family",
+        "Holiday Christmas Plushie Rooster Family",
+        "Holiday Halloween Costume Plushie Rooster Family",
+        "Mandala Geometry Patterns Plushie Rooster"
+      ]
+    },
+    {
+      "token": "snowman",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Chibi Plushie Snowman Character",
+        "Christmas Holiday Snowman",
+        "Holiday Christmas Snowman Decorated With String Lights Coloring Page",
+        "Holiday Christmas Snowman Hugging Small Penguin Friend Coloring Page",
+        "Holiday Christmas Snowman Ice Skating On Frozen Pond Coloring Page"
+      ]
+    },
+    {
+      "token": "snowy",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Birds Snowy Owl",
+        "Holiday Christmas Angel Holding Candle In Snowy Night Coloring Page",
+        "Holiday Christmas Christmas Candle In Lantern On Snowy Porch Coloring Page",
+        "Holiday Christmas Christmas Village With Snowy Houses Coloring Page",
+        "Mandala Geometry Patterns Trains Locomotives Arctic Train On Snowy Ice Route"
+      ]
+    },
+    {
+      "token": "speed",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Mandala Geometry Patterns Trains Locomotives Chinese High Speed Crh Train",
+        "Mandala Geometry Patterns Trains Locomotives French Tgv High Speed Train",
+        "Mandala Geometry Patterns Trains Locomotives German Ice High Speed Train",
+        "Mandala Geometry Patterns Trains Locomotives High Speed Bullet Train At Modern Station",
+        "Mandala Geometry Patterns Trains Locomotives High Speed Bullet Train Crossing Bridge"
+      ]
+    },
+    {
+      "token": "spell",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Anime Girl Magical Spell",
+        "Chibi Dungeon Wizard Casting Spell",
+        "Fantasy Mage Ice Spell",
+        "Fantasy Magic Portal Spell Book",
+        "Fantasy Owl Spell Tome"
+      ]
+    },
+    {
+      "token": "sports",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Anime Girl Snowboarding Sports",
+        "Anime Girl Soccer Sports",
+        "Mandala Geometry Patterns Vehiacle Cars Lamborghini Sports Car",
+        "Mandala Geometry Patterns Vehiacle Cars Sports Car",
+        "Mandala Geometry Patterns Vehicle Cars Electric Sports Car"
+      ]
+    },
+    {
+      "token": "studying",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Anime Girl Studying",
+        "Anime Girl Studying Focused",
+        "Anime Girl Studying With Plushie Lemur",
+        "Anime Girl Studying With Plushie Otter",
+        "Anime Girl Studying With Plushie Red Panda"
+      ]
+    },
+    {
+      "token": "through",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Chibi Holiday Halloween Ghostly Train Passing Through Tunnel Coloring Page",
+        "Chibi Holiday Halloween Skeleton Riding Bicycle Through Town Coloring Page",
+        "Christmas Holiday Rudolph Dashing Through The Snow",
+        "Mandala Geometry Patterns Trains Locomotives Luxury Tourist Train Through Alps",
+        "Mandala Geometry Patterns Trains Locomotives Train Passing Through Snowy Mountains"
+      ]
+    },
+    {
+      "token": "underground",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Anime Girl Mining Underground",
+        "Anime Girl Mining Underground Digging",
+        "Anime Girl Underground Rebellion",
+        "Chibi Dungeon Underground Waterfall",
+        "Mandala Geometry Patterns Cave Underground River Scene"
+      ]
+    },
+    {
+      "token": "village",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Holiday Christmas Christmas Village Market With Stalls Coloring Page",
+        "Holiday Christmas Christmas Village With Snowy Houses Coloring Page",
+        "Holiday Christmas Gingerbread City Village With Candy Streets Coloring Page",
+        "Holiday Christmas Winter Ice Skating Rink In Village Square Coloring Page",
+        "Fantasy Mushroom Village"
+      ]
+    },
+    {
+      "token": "walking",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Anime Girl Samurai Walking Across Rainy Battlefield",
+        "Anime Girl Walking Dogs",
+        "Anime Girl Walking Dogs In Park",
+        "Chibi Holiday Halloween Mummy Walking With Bandages Loose Coloring Page",
+        "Chibi Holiday Halloween Zombie Walking With Pumpkin Bucket Coloring Page"
+      ]
+    },
+    {
+      "token": "wall",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Chibi Dungeon Arrow Trap Wall",
+        "Chibi Dungeon Hidden Treasure Behind Wall",
+        "Chibi Holiday Halloween Giant Spider Crawling On Wall Coloring Page",
+        "Chibi Holiday Halloween Vampire With Spooky Shadow On Wall Coloring Page",
+        "Holiday Halloween Giant Spider Crawling On Wall Coloring Page"
+      ]
+    },
+    {
+      "token": "wyrm",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Anime Girl Summoning Jutsu Wyrm Dragon",
+        "Anime Girl Summoning Jutsu Wyrm Dragon Plushies",
+        "Chibi Wyrm",
+        "Chibi Wyrm Dragon",
+        "Fantasy Abyss Wyrm"
+      ]
+    },
+    {
+      "token": "yak",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Chibi Plushie Yak",
+        "Holiday Birthday Celebration Plushie Yak Family",
+        "Holiday Christmas Plushie Yak Family",
+        "Holiday Halloween Costume Plushie Yak Family",
+        "Mandala Geometry Patterns Plushie Yak"
+      ]
+    },
+    {
+      "token": "zombie",
+      "assetCount": 7,
+      "exampleTitles": [
+        "Anime Girl Zombie",
+        "Anime Girl Zombie Halloween.Png",
+        "Anime Girl Zombie Horde",
+        "Chibi Holiday Halloween Zombie Peeking Out Of Ground Coloring Page",
+        "Chibi Holiday Halloween Zombie Walking With Pumpkin Bucket Coloring Page"
+      ]
+    },
+    {
+      "token": "angry",
+      "assetCount": 6,
+      "exampleTitles": [
+        "Chibi Basilisk Angry",
+        "Fantasy Angry Chimera Lair",
+        "Fantasy Angry Ogre Camping",
+        "Fantasy Angry Volcano Dragon",
+        "Gardening Mushroom Angry Cup Fungus Character"
+      ]
+    },
+    {
+      "token": "bed",
+      "assetCount": 6,
+      "exampleTitles": [
+        "Anime Girl Bed With Plush Toys",
+        "Anime Girl Bed With Plush Toys Relaxing",
+        "Anime Girl Sleeping In Bed",
+        "Anime Girl Sleeping In Bed At Night",
+        "Chibi Enchanted Forest Fairy Sleeping On Leaf Bed"
+      ]
+    },
+    {
+      "token": "bighorn",
+      "assetCount": 6,
+      "exampleTitles": [
+        "Chibi Plushie Bighorn Sheep",
+        "Holiday Birthday Celebration Plushie Bighorn Sheep Family",
+        "Holiday Christmas Plushie Bighorn Sheep Family",
+        "Holiday Halloween Costume Plushie Bighorn Sheep Family",
+        "Plushie Bighorn Sheep"
+      ]
+    },
+    {
+      "token": "birch",
+      "assetCount": 6,
+      "exampleTitles": [
+        "Gardening Mushroom Birch Bolete",
+        "Gardening Mushroom Birch Polypore",
+        "Gardening Mushroom Orange Birch Bolete",
+        "Mandala Geometry Patterns Mushroom Birch Bolete",
+        "Mandala Geometry Patterns Mushroom Birch Polypore"
+      ]
+    },
+    {
+      "token": "bolete",
+      "assetCount": 6,
+      "exampleTitles": [
+        "Gardening Mushroom Bay Bolete",
+        "Gardening Mushroom Birch Bolete",
+        "Gardening Mushroom Orange Birch Bolete",
+        "Mandala Geometry Patterns Mushroom Bay Bolete",
+        "Mandala Geometry Patterns Mushroom Birch Bolete"
+      ]
+    },
+    {
+      "token": "cactus",
+      "assetCount": 6,
+      "exampleTitles": [
+        "Indoor Plants Christmas Cactus",
+        "Indoor Plants Coral Cactus",
+        "Indoor Plants Easter Cactus",
+        "Indoor Plants Thanksgiving Cactus",
+        "Reptiles Desert Iguana On A Cactus"
+      ]
+    }
+  ]
+}

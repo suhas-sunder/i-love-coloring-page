@@ -90,6 +90,18 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Large hub pages must use pagination or limited initial rendering.
 - Public gallery UI should be structured and useful, not a raw asset dump.
 
+## Long-Tail Hub Expansion Rules
+
+- Long-tail hubs must be generated from real available runtime inventory, not raw `images/` globs or deferred manual-review records.
+- Do not create spammy token-only hub pages, doorway pages, reordered duplicate hubs, or near-duplicate singular/plural routes.
+- Minimum asset thresholds and overlap rules must be enforced before any hub becomes indexable.
+- Do not create per-image pages.
+- New indexable hubs need unique metadata, a useful short intro, related links, and supporting content below or secondary to the gallery.
+- Gallery access must remain near the top of every hub page.
+- Sitemap entries must include only promoted indexable hubs.
+- Backlog, manual-review, section-only, rejected, spam, and thin candidates must not be routed.
+- Do not proceed to image sitemap, Open Graph image generation, JSON-LD image expansion, live AdSense, or ad scripts until long-tail sitemap expansion passes browser QA and static export validation.
+
 ## Public Gallery Visual System
 
 - The Round 4C design system is the source of truth for public gallery UI.

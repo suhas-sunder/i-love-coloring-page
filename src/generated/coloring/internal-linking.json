@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-11T00:00:00.000Z",
+  "generatedAt": "2026-05-13T22:11:05.131Z",
   "phase": "round-4w",
   "pages": [
     {
@@ -94,6 +94,78 @@
           "href": "/coloring-pages/plushies",
           "reason": "featured Phase 1 collection",
           "assetCount": 1704
+        },
+        {
+          "label": "Dragons Coloring Pages",
+          "href": "/coloring-pages/dragons",
+          "reason": "new long-tail collection",
+          "assetCount": 259
+        },
+        {
+          "label": "Mushrooms Coloring Pages",
+          "href": "/coloring-pages/mushrooms",
+          "reason": "new long-tail collection",
+          "assetCount": 218
+        },
+        {
+          "label": "Sushi Coloring Pages",
+          "href": "/coloring-pages/sushi",
+          "reason": "new long-tail collection",
+          "assetCount": 161
+        },
+        {
+          "label": "Bakery Coloring Pages",
+          "href": "/coloring-pages/bakery",
+          "reason": "new long-tail collection",
+          "assetCount": 93
+        },
+        {
+          "label": "Geometric Dogs Coloring Pages",
+          "href": "/coloring-pages/geometric-dogs",
+          "reason": "new long-tail collection",
+          "assetCount": 85
+        },
+        {
+          "label": "Chibi Dogs Coloring Pages",
+          "href": "/coloring-pages/chibi-dogs",
+          "reason": "new long-tail collection",
+          "assetCount": 79
+        },
+        {
+          "label": "Bears Coloring Pages",
+          "href": "/coloring-pages/bears",
+          "reason": "new long-tail collection",
+          "assetCount": 60
+        },
+        {
+          "label": "Houses Coloring Pages",
+          "href": "/coloring-pages/houses",
+          "reason": "new long-tail collection",
+          "assetCount": 54
+        },
+        {
+          "label": "Wolves Coloring Pages",
+          "href": "/coloring-pages/wolves",
+          "reason": "new long-tail collection",
+          "assetCount": 45
+        },
+        {
+          "label": "Tigers Coloring Pages",
+          "href": "/coloring-pages/tigers",
+          "reason": "new long-tail collection",
+          "assetCount": 43
+        },
+        {
+          "label": "Foxes Coloring Pages",
+          "href": "/coloring-pages/foxes",
+          "reason": "new long-tail collection",
+          "assetCount": 40
+        },
+        {
+          "label": "Knights Coloring Pages",
+          "href": "/coloring-pages/knights",
+          "reason": "new long-tail collection",
+          "assetCount": 39
         }
       ],
       "strategy": "Gallery landing links mix subject, style, seasonal, and popular collections."
@@ -137,9 +209,57 @@
           "href": "/coloring-pages/prehistoric-animals",
           "reason": "narrower collection",
           "assetCount": 221
+        },
+        {
+          "label": "Geometric Dogs Coloring Pages",
+          "href": "/coloring-pages/geometric-dogs",
+          "reason": "specific long-tail collection",
+          "assetCount": 85
+        },
+        {
+          "label": "Chibi Dogs Coloring Pages",
+          "href": "/coloring-pages/chibi-dogs",
+          "reason": "specific long-tail collection",
+          "assetCount": 79
+        },
+        {
+          "label": "Bears Coloring Pages",
+          "href": "/coloring-pages/bears",
+          "reason": "specific long-tail collection",
+          "assetCount": 60
+        },
+        {
+          "label": "Wolves Coloring Pages",
+          "href": "/coloring-pages/wolves",
+          "reason": "specific long-tail collection",
+          "assetCount": 45
+        },
+        {
+          "label": "Tigers Coloring Pages",
+          "href": "/coloring-pages/tigers",
+          "reason": "specific long-tail collection",
+          "assetCount": 43
+        },
+        {
+          "label": "Foxes Coloring Pages",
+          "href": "/coloring-pages/foxes",
+          "reason": "specific long-tail collection",
+          "assetCount": 40
+        },
+        {
+          "label": "Christmas Dogs Coloring Pages",
+          "href": "/coloring-pages/christmas-dogs",
+          "reason": "specific long-tail collection",
+          "assetCount": 36
+        },
+        {
+          "label": "Lions Coloring Pages",
+          "href": "/coloring-pages/lions",
+          "reason": "specific long-tail collection",
+          "assetCount": 32
         }
       ],
-      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it."
     },
     {
       "path": "/coloring-pages/anime-girls",
@@ -266,9 +386,33 @@
           "href": "/coloring-pages/buildings",
           "reason": "related printable collection",
           "assetCount": 156
+        },
+        {
+          "label": "Owls Coloring Pages",
+          "href": "/coloring-pages/owls",
+          "reason": "specific long-tail collection",
+          "assetCount": 28
+        },
+        {
+          "label": "Eagles Coloring Pages",
+          "href": "/coloring-pages/eagles",
+          "reason": "specific long-tail collection",
+          "assetCount": 22
+        },
+        {
+          "label": "Penguins Coloring Pages",
+          "href": "/coloring-pages/penguins",
+          "reason": "specific long-tail collection",
+          "assetCount": 20
+        },
+        {
+          "label": "Ducks Coloring Pages",
+          "href": "/coloring-pages/ducks",
+          "reason": "specific long-tail collection",
+          "assetCount": 19
         }
       ],
-      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it."
     },
     {
       "path": "/coloring-pages/birthday",
@@ -395,9 +539,21 @@
           "href": "/coloring-pages/forest",
           "reason": "related printable collection",
           "assetCount": 74
+        },
+        {
+          "label": "Houses Coloring Pages",
+          "href": "/coloring-pages/houses",
+          "reason": "specific long-tail collection",
+          "assetCount": 54
+        },
+        {
+          "label": "Castles Coloring Pages",
+          "href": "/coloring-pages/castles",
+          "reason": "specific long-tail collection",
+          "assetCount": 25
         }
       ],
-      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it."
     },
     {
       "path": "/coloring-pages/butterflies",
@@ -653,9 +809,21 @@
           "href": "/coloring-pages/fantasy",
           "reason": "related printable collection",
           "assetCount": 1310
+        },
+        {
+          "label": "Reindeer Coloring Pages",
+          "href": "/coloring-pages/reindeer",
+          "reason": "specific long-tail collection",
+          "assetCount": 15
+        },
+        {
+          "label": "Santa Coloring Pages",
+          "href": "/coloring-pages/santa",
+          "reason": "specific long-tail collection",
+          "assetCount": 10
         }
       ],
-      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it."
     },
     {
       "path": "/coloring-pages/crabs",
@@ -825,9 +993,45 @@
           "href": "/coloring-pages/plushies",
           "reason": "related printable collection",
           "assetCount": 1704
+        },
+        {
+          "label": "Velociraptors Coloring Pages",
+          "href": "/coloring-pages/velociraptors",
+          "reason": "specific long-tail collection",
+          "assetCount": 22
+        },
+        {
+          "label": "T-Rex Coloring Pages",
+          "href": "/coloring-pages/t-rex",
+          "reason": "specific long-tail collection",
+          "assetCount": 18
+        },
+        {
+          "label": "Stegosaurus Coloring Pages",
+          "href": "/coloring-pages/stegosaurus",
+          "reason": "specific long-tail collection",
+          "assetCount": 17
+        },
+        {
+          "label": "Diplodocus Coloring Pages",
+          "href": "/coloring-pages/diplodocus",
+          "reason": "specific long-tail collection",
+          "assetCount": 16
+        },
+        {
+          "label": "Brachiosaurus Coloring Pages",
+          "href": "/coloring-pages/brachiosaurus",
+          "reason": "specific long-tail collection",
+          "assetCount": 15
+        },
+        {
+          "label": "Plushie Triceratops Coloring Pages",
+          "href": "/coloring-pages/plushie-triceratops",
+          "reason": "specific long-tail collection",
+          "assetCount": 13
         }
       ],
-      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it."
     },
     {
       "path": "/coloring-pages/dogs",
@@ -1040,9 +1244,51 @@
           "href": "/coloring-pages/easy",
           "reason": "related printable collection",
           "assetCount": 1302
+        },
+        {
+          "label": "Dragons Coloring Pages",
+          "href": "/coloring-pages/dragons",
+          "reason": "specific long-tail collection",
+          "assetCount": 259
+        },
+        {
+          "label": "Wizards Coloring Pages",
+          "href": "/coloring-pages/wizards",
+          "reason": "specific long-tail collection",
+          "assetCount": 30
+        },
+        {
+          "label": "Phoenix Coloring Pages",
+          "href": "/coloring-pages/phoenix",
+          "reason": "specific long-tail collection",
+          "assetCount": 18
+        },
+        {
+          "label": "Hydras Coloring Pages",
+          "href": "/coloring-pages/hydras",
+          "reason": "specific long-tail collection",
+          "assetCount": 15
+        },
+        {
+          "label": "Wyverns Coloring Pages",
+          "href": "/coloring-pages/wyverns",
+          "reason": "specific long-tail collection",
+          "assetCount": 15
+        },
+        {
+          "label": "Plushie Unicorns Coloring Pages",
+          "href": "/coloring-pages/plushie-unicorns",
+          "reason": "specific long-tail collection",
+          "assetCount": 14
+        },
+        {
+          "label": "Robots Coloring Pages",
+          "href": "/coloring-pages/robots",
+          "reason": "specific long-tail collection",
+          "assetCount": 9
         }
       ],
-      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it."
     },
     {
       "path": "/coloring-pages/fantasy-creatures",
@@ -1169,9 +1415,15 @@
           "href": "/coloring-pages/easy",
           "reason": "related printable collection",
           "assetCount": 1302
+        },
+        {
+          "label": "Roses Coloring Pages",
+          "href": "/coloring-pages/roses",
+          "reason": "specific long-tail collection",
+          "assetCount": 9
         }
       ],
-      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it."
     },
     {
       "path": "/coloring-pages/food",
@@ -1212,9 +1464,27 @@
           "href": "/coloring-pages/birds",
           "reason": "related printable collection",
           "assetCount": 190
+        },
+        {
+          "label": "Sushi Coloring Pages",
+          "href": "/coloring-pages/sushi",
+          "reason": "specific long-tail collection",
+          "assetCount": 161
+        },
+        {
+          "label": "Bakery Coloring Pages",
+          "href": "/coloring-pages/bakery",
+          "reason": "specific long-tail collection",
+          "assetCount": 93
+        },
+        {
+          "label": "Cakes Coloring Pages",
+          "href": "/coloring-pages/cakes",
+          "reason": "specific long-tail collection",
+          "assetCount": 21
         }
       ],
-      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it."
     },
     {
       "path": "/coloring-pages/for-kids",
@@ -1513,9 +1783,21 @@
           "href": "/coloring-pages/animals",
           "reason": "related printable collection",
           "assetCount": 1524
+        },
+        {
+          "label": "Witches Coloring Pages",
+          "href": "/coloring-pages/witches",
+          "reason": "specific long-tail collection",
+          "assetCount": 32
+        },
+        {
+          "label": "Pumpkins Coloring Pages",
+          "href": "/coloring-pages/pumpkins",
+          "reason": "specific long-tail collection",
+          "assetCount": 23
         }
       ],
-      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it."
     },
     {
       "path": "/coloring-pages/holidays",
@@ -1642,9 +1924,15 @@
           "href": "/coloring-pages/for-kids",
           "reason": "related printable collection",
           "assetCount": 1338
+        },
+        {
+          "label": "Bees Coloring Pages",
+          "href": "/coloring-pages/bees",
+          "reason": "specific long-tail collection",
+          "assetCount": 15
         }
       ],
-      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it."
     },
     {
       "path": "/coloring-pages/kawaii",
@@ -1814,9 +2102,15 @@
           "href": "/coloring-pages/buildings",
           "reason": "related printable collection",
           "assetCount": 156
+        },
+        {
+          "label": "Knights Coloring Pages",
+          "href": "/coloring-pages/knights",
+          "reason": "specific long-tail collection",
+          "assetCount": 39
         }
       ],
-      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it."
     },
     {
       "path": "/coloring-pages/mermaids",
@@ -2115,9 +2409,15 @@
           "href": "/coloring-pages",
           "reason": "related printable collection",
           "assetCount": 6557
+        },
+        {
+          "label": "Mushrooms Coloring Pages",
+          "href": "/coloring-pages/mushrooms",
+          "reason": "specific long-tail collection",
+          "assetCount": 218
         }
       ],
-      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it."
     },
     {
       "path": "/coloring-pages/playing-cards",
@@ -2158,9 +2458,15 @@
           "href": "/coloring-pages/for-kids",
           "reason": "related printable collection",
           "assetCount": 1338
+        },
+        {
+          "label": "Chess Coloring Pages",
+          "href": "/coloring-pages/chess",
+          "reason": "specific long-tail collection",
+          "assetCount": 23
         }
       ],
-      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it."
     },
     {
       "path": "/coloring-pages/plushie-animals",
@@ -2330,9 +2636,15 @@
           "href": "/coloring-pages/cats",
           "reason": "related printable collection",
           "assetCount": 58
+        },
+        {
+          "label": "Megalodon Coloring Pages",
+          "href": "/coloring-pages/megalodon",
+          "reason": "specific long-tail collection",
+          "assetCount": 16
         }
       ],
-      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it."
     },
     {
       "path": "/coloring-pages/reptiles",
@@ -2373,9 +2685,21 @@
           "href": "/coloring-pages/easy",
           "reason": "related printable collection",
           "assetCount": 1302
+        },
+        {
+          "label": "Lizards Coloring Pages",
+          "href": "/coloring-pages/lizards",
+          "reason": "specific long-tail collection",
+          "assetCount": 32
+        },
+        {
+          "label": "Snakes Coloring Pages",
+          "href": "/coloring-pages/snakes",
+          "reason": "specific long-tail collection",
+          "assetCount": 18
         }
       ],
-      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it."
     },
     {
       "path": "/coloring-pages/sea-life",
@@ -2416,9 +2740,33 @@
           "href": "/coloring-pages/for-kids",
           "reason": "related printable collection",
           "assetCount": 1338
+        },
+        {
+          "label": "Plushie Whales Coloring Pages",
+          "href": "/coloring-pages/plushie-whales",
+          "reason": "specific long-tail collection",
+          "assetCount": 27
+        },
+        {
+          "label": "Sharks Coloring Pages",
+          "href": "/coloring-pages/sharks",
+          "reason": "specific long-tail collection",
+          "assetCount": 19
+        },
+        {
+          "label": "Fish Coloring Pages",
+          "href": "/coloring-pages/fish",
+          "reason": "specific long-tail collection",
+          "assetCount": 16
+        },
+        {
+          "label": "Dolphins Coloring Pages",
+          "href": "/coloring-pages/dolphins",
+          "reason": "specific long-tail collection",
+          "assetCount": 14
         }
       ],
-      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+      "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it. Long-tail children were added after the gallery, not above it."
     },
     {
       "path": "/coloring-pages/spiders",
@@ -2849,6 +3197,3277 @@
         }
       ],
       "strategy": "Hub links are generated from Phase 1 related and child hub relationships, never from Phase 2 backlog topics."
+    },
+    {
+      "path": "/coloring-pages/christmas-dogs",
+      "hubId": "hub_christmas_dogs",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Holidays Coloring Pages",
+          "href": "/coloring-pages/holidays",
+          "reason": "related parent or sibling collection",
+          "assetCount": 874
+        },
+        {
+          "label": "Christmas Coloring Pages",
+          "href": "/coloring-pages/christmas",
+          "reason": "related parent or sibling collection",
+          "assetCount": 332
+        },
+        {
+          "label": "Dogs Coloring Pages",
+          "href": "/coloring-pages/dogs",
+          "reason": "related parent or sibling collection",
+          "assetCount": 284
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        },
+        {
+          "label": "Plushie Dogs Coloring Pages",
+          "href": "/coloring-pages/plushie-dogs",
+          "reason": "related long-tail collection",
+          "assetCount": 12
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/geometric-dogs",
+      "hubId": "hub_geometric_dogs",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Geometric Coloring Pages",
+          "href": "/coloring-pages/geometric",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1457
+        },
+        {
+          "label": "Dogs Coloring Pages",
+          "href": "/coloring-pages/dogs",
+          "reason": "related parent or sibling collection",
+          "assetCount": 284
+        },
+        {
+          "label": "Plushie Dogs Coloring Pages",
+          "href": "/coloring-pages/plushie-dogs",
+          "reason": "related long-tail collection",
+          "assetCount": 12
+        },
+        {
+          "label": "Foxes Coloring Pages",
+          "href": "/coloring-pages/foxes",
+          "reason": "related long-tail collection",
+          "assetCount": 40
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/chibi-dogs",
+      "hubId": "hub_chibi_dogs",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1300
+        },
+        {
+          "label": "Chibi Coloring Pages",
+          "href": "/coloring-pages/chibi",
+          "reason": "related parent or sibling collection",
+          "assetCount": 908
+        },
+        {
+          "label": "Dogs Coloring Pages",
+          "href": "/coloring-pages/dogs",
+          "reason": "related parent or sibling collection",
+          "assetCount": 284
+        },
+        {
+          "label": "Foxes Coloring Pages",
+          "href": "/coloring-pages/foxes",
+          "reason": "related long-tail collection",
+          "assetCount": 40
+        },
+        {
+          "label": "Plushie Dogs Coloring Pages",
+          "href": "/coloring-pages/plushie-dogs",
+          "reason": "related long-tail collection",
+          "assetCount": 12
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/dragons",
+      "hubId": "hub_dragons",
+      "links": [
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1265
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Fantasy Creatures Coloring Pages",
+          "href": "/coloring-pages/fantasy-creatures",
+          "reason": "related parent or sibling collection",
+          "assetCount": 531
+        },
+        {
+          "label": "Anime Girls Coloring Pages",
+          "href": "/coloring-pages/anime-girls",
+          "reason": "related parent or sibling collection",
+          "assetCount": 905
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Plushie Dragons Coloring Pages",
+          "href": "/coloring-pages/plushie-dragons",
+          "reason": "related parent or sibling collection",
+          "assetCount": 75
+        },
+        {
+          "label": "Knights Coloring Pages",
+          "href": "/coloring-pages/knights",
+          "reason": "related long-tail collection",
+          "assetCount": 39
+        },
+        {
+          "label": "Hydras Coloring Pages",
+          "href": "/coloring-pages/hydras",
+          "reason": "related long-tail collection",
+          "assetCount": 15
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/mushrooms",
+      "hubId": "hub_mushrooms",
+      "links": [
+        {
+          "label": "Plants Coloring Pages",
+          "href": "/coloring-pages/plants",
+          "reason": "related parent or sibling collection",
+          "assetCount": 586
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Garden Coloring Pages",
+          "href": "/coloring-pages/garden",
+          "reason": "related parent or sibling collection",
+          "assetCount": 195
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Geometric Coloring Pages",
+          "href": "/coloring-pages/geometric",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1457
+        },
+        {
+          "label": "Witches Coloring Pages",
+          "href": "/coloring-pages/witches",
+          "reason": "related long-tail collection",
+          "assetCount": 32
+        },
+        {
+          "label": "Lions Coloring Pages",
+          "href": "/coloring-pages/lions",
+          "reason": "related long-tail collection",
+          "assetCount": 32
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/sushi",
+      "hubId": "hub_sushi",
+      "links": [
+        {
+          "label": "Food Coloring Pages",
+          "href": "/coloring-pages/food",
+          "reason": "related parent or sibling collection",
+          "assetCount": 261
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Geometric Coloring Pages",
+          "href": "/coloring-pages/geometric",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1457
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Fish Coloring Pages",
+          "href": "/coloring-pages/fish",
+          "reason": "related long-tail collection",
+          "assetCount": 16
+        },
+        {
+          "label": "Dragons Coloring Pages",
+          "href": "/coloring-pages/dragons",
+          "reason": "related long-tail collection",
+          "assetCount": 259
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/bakery",
+      "hubId": "hub_bakery",
+      "links": [
+        {
+          "label": "Food Coloring Pages",
+          "href": "/coloring-pages/food",
+          "reason": "related parent or sibling collection",
+          "assetCount": 261
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Geometric Coloring Pages",
+          "href": "/coloring-pages/geometric",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1457
+        },
+        {
+          "label": "Holidays Coloring Pages",
+          "href": "/coloring-pages/holidays",
+          "reason": "related parent or sibling collection",
+          "assetCount": 874
+        },
+        {
+          "label": "Cakes Coloring Pages",
+          "href": "/coloring-pages/cakes",
+          "reason": "related long-tail collection",
+          "assetCount": 21
+        },
+        {
+          "label": "Houses Coloring Pages",
+          "href": "/coloring-pages/houses",
+          "reason": "related long-tail collection",
+          "assetCount": 54
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/bears",
+      "hubId": "hub_bears",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1300
+        },
+        {
+          "label": "Holidays Coloring Pages",
+          "href": "/coloring-pages/holidays",
+          "reason": "related parent or sibling collection",
+          "assetCount": 874
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Pandas Coloring Pages",
+          "href": "/coloring-pages/pandas",
+          "reason": "related long-tail collection",
+          "assetCount": 30
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/houses",
+      "hubId": "hub_houses",
+      "links": [
+        {
+          "label": "Buildings Coloring Pages",
+          "href": "/coloring-pages/buildings",
+          "reason": "related parent or sibling collection",
+          "assetCount": 156
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Holidays Coloring Pages",
+          "href": "/coloring-pages/holidays",
+          "reason": "related parent or sibling collection",
+          "assetCount": 874
+        },
+        {
+          "label": "Halloween Coloring Pages",
+          "href": "/coloring-pages/halloween",
+          "reason": "related parent or sibling collection",
+          "assetCount": 305
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1300
+        },
+        {
+          "label": "Mushrooms Coloring Pages",
+          "href": "/coloring-pages/mushrooms",
+          "reason": "related long-tail collection",
+          "assetCount": 218
+        },
+        {
+          "label": "Bakery Coloring Pages",
+          "href": "/coloring-pages/bakery",
+          "reason": "related long-tail collection",
+          "assetCount": 93
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/pumpkins",
+      "hubId": "hub_pumpkins",
+      "links": [
+        {
+          "label": "Halloween Coloring Pages",
+          "href": "/coloring-pages/halloween",
+          "reason": "related parent or sibling collection",
+          "assetCount": 305
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Holidays Coloring Pages",
+          "href": "/coloring-pages/holidays",
+          "reason": "related parent or sibling collection",
+          "assetCount": 874
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1300
+        },
+        {
+          "label": "Chibi Coloring Pages",
+          "href": "/coloring-pages/chibi",
+          "reason": "related parent or sibling collection",
+          "assetCount": 908
+        },
+        {
+          "label": "Sushi Coloring Pages",
+          "href": "/coloring-pages/sushi",
+          "reason": "related long-tail collection",
+          "assetCount": 161
+        },
+        {
+          "label": "Bakery Coloring Pages",
+          "href": "/coloring-pages/bakery",
+          "reason": "related long-tail collection",
+          "assetCount": 93
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/wolves",
+      "hubId": "hub_wolves",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1265
+        },
+        {
+          "label": "Anime Girls Coloring Pages",
+          "href": "/coloring-pages/anime-girls",
+          "reason": "related parent or sibling collection",
+          "assetCount": 905
+        },
+        {
+          "label": "Holidays Coloring Pages",
+          "href": "/coloring-pages/holidays",
+          "reason": "related parent or sibling collection",
+          "assetCount": 874
+        },
+        {
+          "label": "Knights Coloring Pages",
+          "href": "/coloring-pages/knights",
+          "reason": "related long-tail collection",
+          "assetCount": 39
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/tigers",
+      "hubId": "hub_tigers",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Prehistoric Animals Coloring Pages",
+          "href": "/coloring-pages/prehistoric-animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 220
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1300
+        },
+        {
+          "label": "Sharks Coloring Pages",
+          "href": "/coloring-pages/sharks",
+          "reason": "related long-tail collection",
+          "assetCount": 19
+        },
+        {
+          "label": "Sushi Coloring Pages",
+          "href": "/coloring-pages/sushi",
+          "reason": "related long-tail collection",
+          "assetCount": 161
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/foxes",
+      "hubId": "hub_foxes",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Holidays Coloring Pages",
+          "href": "/coloring-pages/holidays",
+          "reason": "related parent or sibling collection",
+          "assetCount": 874
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1300
+        },
+        {
+          "label": "Mushrooms Coloring Pages",
+          "href": "/coloring-pages/mushrooms",
+          "reason": "related long-tail collection",
+          "assetCount": 218
+        },
+        {
+          "label": "Geometric Dogs Coloring Pages",
+          "href": "/coloring-pages/geometric-dogs",
+          "reason": "related long-tail collection",
+          "assetCount": 85
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/knights",
+      "hubId": "hub_knights",
+      "links": [
+        {
+          "label": "Medieval Fantasy Coloring Pages",
+          "href": "/coloring-pages/medieval-fantasy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 194
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1265
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1300
+        },
+        {
+          "label": "Chibi Coloring Pages",
+          "href": "/coloring-pages/chibi",
+          "reason": "related parent or sibling collection",
+          "assetCount": 908
+        },
+        {
+          "label": "Chess Coloring Pages",
+          "href": "/coloring-pages/chess",
+          "reason": "related long-tail collection",
+          "assetCount": 23
+        },
+        {
+          "label": "Dragons Coloring Pages",
+          "href": "/coloring-pages/dragons",
+          "reason": "related long-tail collection",
+          "assetCount": 259
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/plushie-whales",
+      "hubId": "hub_plushie_whales",
+      "links": [
+        {
+          "label": "Sea Life Coloring Pages",
+          "href": "/coloring-pages/sea-life",
+          "reason": "related parent or sibling collection",
+          "assetCount": 236
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Whales Coloring Pages",
+          "href": "/coloring-pages/whales",
+          "reason": "related parent or sibling collection",
+          "assetCount": 40
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/reindeer",
+      "hubId": "hub_reindeer",
+      "links": [
+        {
+          "label": "Christmas Coloring Pages",
+          "href": "/coloring-pages/christmas",
+          "reason": "related parent or sibling collection",
+          "assetCount": 332
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Holidays Coloring Pages",
+          "href": "/coloring-pages/holidays",
+          "reason": "related parent or sibling collection",
+          "assetCount": 874
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Mushrooms Coloring Pages",
+          "href": "/coloring-pages/mushrooms",
+          "reason": "related long-tail collection",
+          "assetCount": 218
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/lions",
+      "hubId": "hub_lions",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1300
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Mushrooms Coloring Pages",
+          "href": "/coloring-pages/mushrooms",
+          "reason": "related long-tail collection",
+          "assetCount": 218
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/lizards",
+      "hubId": "hub_lizards",
+      "links": [
+        {
+          "label": "Reptiles Coloring Pages",
+          "href": "/coloring-pages/reptiles",
+          "reason": "related parent or sibling collection",
+          "assetCount": 156
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Anime Girls Coloring Pages",
+          "href": "/coloring-pages/anime-girls",
+          "reason": "related parent or sibling collection",
+          "assetCount": 905
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Snakes Coloring Pages",
+          "href": "/coloring-pages/snakes",
+          "reason": "related long-tail collection",
+          "assetCount": 18
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/witches",
+      "hubId": "hub_witches",
+      "links": [
+        {
+          "label": "Halloween Coloring Pages",
+          "href": "/coloring-pages/halloween",
+          "reason": "related parent or sibling collection",
+          "assetCount": 305
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1300
+        },
+        {
+          "label": "Chibi Coloring Pages",
+          "href": "/coloring-pages/chibi",
+          "reason": "related parent or sibling collection",
+          "assetCount": 908
+        },
+        {
+          "label": "Holidays Coloring Pages",
+          "href": "/coloring-pages/holidays",
+          "reason": "related parent or sibling collection",
+          "assetCount": 874
+        },
+        {
+          "label": "Mushrooms Coloring Pages",
+          "href": "/coloring-pages/mushrooms",
+          "reason": "related long-tail collection",
+          "assetCount": 218
+        },
+        {
+          "label": "Plushie Cats Coloring Pages",
+          "href": "/coloring-pages/plushie-cats",
+          "reason": "related long-tail collection",
+          "assetCount": 21
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/pandas",
+      "hubId": "hub_pandas",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Geometric Coloring Pages",
+          "href": "/coloring-pages/geometric",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1457
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        },
+        {
+          "label": "Bears Coloring Pages",
+          "href": "/coloring-pages/bears",
+          "reason": "related long-tail collection",
+          "assetCount": 60
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/wizards",
+      "hubId": "hub_wizards",
+      "links": [
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1265
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1300
+        },
+        {
+          "label": "Chibi Coloring Pages",
+          "href": "/coloring-pages/chibi",
+          "reason": "related parent or sibling collection",
+          "assetCount": 908
+        },
+        {
+          "label": "Medieval Fantasy Coloring Pages",
+          "href": "/coloring-pages/medieval-fantasy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 194
+        },
+        {
+          "label": "Owls Coloring Pages",
+          "href": "/coloring-pages/owls",
+          "reason": "related long-tail collection",
+          "assetCount": 28
+        },
+        {
+          "label": "Foxes Coloring Pages",
+          "href": "/coloring-pages/foxes",
+          "reason": "related long-tail collection",
+          "assetCount": 40
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/owls",
+      "hubId": "hub_owls",
+      "links": [
+        {
+          "label": "Birds Coloring Pages",
+          "href": "/coloring-pages/birds",
+          "reason": "related parent or sibling collection",
+          "assetCount": 188
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1265
+        },
+        {
+          "label": "Holidays Coloring Pages",
+          "href": "/coloring-pages/holidays",
+          "reason": "related parent or sibling collection",
+          "assetCount": 874
+        },
+        {
+          "label": "Wizards Coloring Pages",
+          "href": "/coloring-pages/wizards",
+          "reason": "related long-tail collection",
+          "assetCount": 30
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/sloths",
+      "hubId": "hub_sloths",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1300
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/bats",
+      "hubId": "hub_bats",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Holidays Coloring Pages",
+          "href": "/coloring-pages/holidays",
+          "reason": "related parent or sibling collection",
+          "assetCount": 874
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1300
+        },
+        {
+          "label": "Halloween Coloring Pages",
+          "href": "/coloring-pages/halloween",
+          "reason": "related parent or sibling collection",
+          "assetCount": 305
+        },
+        {
+          "label": "Chibi Coloring Pages",
+          "href": "/coloring-pages/chibi",
+          "reason": "related parent or sibling collection",
+          "assetCount": 908
+        },
+        {
+          "label": "Houses Coloring Pages",
+          "href": "/coloring-pages/houses",
+          "reason": "related long-tail collection",
+          "assetCount": 54
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/castles",
+      "hubId": "hub_castles",
+      "links": [
+        {
+          "label": "Buildings Coloring Pages",
+          "href": "/coloring-pages/buildings",
+          "reason": "related parent or sibling collection",
+          "assetCount": 156
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1265
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1300
+        },
+        {
+          "label": "Chibi Coloring Pages",
+          "href": "/coloring-pages/chibi",
+          "reason": "related parent or sibling collection",
+          "assetCount": 908
+        },
+        {
+          "label": "Knights Coloring Pages",
+          "href": "/coloring-pages/knights",
+          "reason": "related long-tail collection",
+          "assetCount": 39
+        },
+        {
+          "label": "Bats Coloring Pages",
+          "href": "/coloring-pages/bats",
+          "reason": "related long-tail collection",
+          "assetCount": 27
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/plushie-cats",
+      "hubId": "hub_plushie_cats",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Cats Coloring Pages",
+          "href": "/coloring-pages/cats",
+          "reason": "related parent or sibling collection",
+          "assetCount": 55
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        },
+        {
+          "label": "Anime Girls Coloring Pages",
+          "href": "/coloring-pages/anime-girls",
+          "reason": "related parent or sibling collection",
+          "assetCount": 905
+        },
+        {
+          "label": "Witches Coloring Pages",
+          "href": "/coloring-pages/witches",
+          "reason": "related long-tail collection",
+          "assetCount": 32
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/chess",
+      "hubId": "hub_chess",
+      "links": [
+        {
+          "label": "Playing Cards Coloring Pages",
+          "href": "/coloring-pages/playing-cards",
+          "reason": "related parent or sibling collection",
+          "assetCount": 12
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Anime Girls Coloring Pages",
+          "href": "/coloring-pages/anime-girls",
+          "reason": "related parent or sibling collection",
+          "assetCount": 905
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Knights Coloring Pages",
+          "href": "/coloring-pages/knights",
+          "reason": "related long-tail collection",
+          "assetCount": 39
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/eagles",
+      "hubId": "hub_eagles",
+      "links": [
+        {
+          "label": "Birds Coloring Pages",
+          "href": "/coloring-pages/birds",
+          "reason": "related parent or sibling collection",
+          "assetCount": 188
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/koalas",
+      "hubId": "hub_koalas",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1300
+        },
+        {
+          "label": "Anime Girls Coloring Pages",
+          "href": "/coloring-pages/anime-girls",
+          "reason": "related parent or sibling collection",
+          "assetCount": 905
+        },
+        {
+          "label": "Holidays Coloring Pages",
+          "href": "/coloring-pages/holidays",
+          "reason": "related parent or sibling collection",
+          "assetCount": 874
+        },
+        {
+          "label": "Bears Coloring Pages",
+          "href": "/coloring-pages/bears",
+          "reason": "related long-tail collection",
+          "assetCount": 60
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/rabbits",
+      "hubId": "hub_rabbits",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Holidays Coloring Pages",
+          "href": "/coloring-pages/holidays",
+          "reason": "related parent or sibling collection",
+          "assetCount": 874
+        },
+        {
+          "label": "Anime Girls Coloring Pages",
+          "href": "/coloring-pages/anime-girls",
+          "reason": "related parent or sibling collection",
+          "assetCount": 905
+        },
+        {
+          "label": "Christmas Coloring Pages",
+          "href": "/coloring-pages/christmas",
+          "reason": "related parent or sibling collection",
+          "assetCount": 332
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/cakes",
+      "hubId": "hub_cakes",
+      "links": [
+        {
+          "label": "Food Coloring Pages",
+          "href": "/coloring-pages/food",
+          "reason": "related parent or sibling collection",
+          "assetCount": 261
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Geometric Coloring Pages",
+          "href": "/coloring-pages/geometric",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1457
+        },
+        {
+          "label": "Holidays Coloring Pages",
+          "href": "/coloring-pages/holidays",
+          "reason": "related parent or sibling collection",
+          "assetCount": 874
+        },
+        {
+          "label": "Bakery Coloring Pages",
+          "href": "/coloring-pages/bakery",
+          "reason": "related long-tail collection",
+          "assetCount": 93
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/otters",
+      "hubId": "hub_otters",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1300
+        },
+        {
+          "label": "Cute Coloring Pages",
+          "href": "/coloring-pages/cute",
+          "reason": "related parent or sibling collection",
+          "assetCount": 375
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/penguins",
+      "hubId": "hub_penguins",
+      "links": [
+        {
+          "label": "Birds Coloring Pages",
+          "href": "/coloring-pages/birds",
+          "reason": "related parent or sibling collection",
+          "assetCount": 188
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Holidays Coloring Pages",
+          "href": "/coloring-pages/holidays",
+          "reason": "related parent or sibling collection",
+          "assetCount": 874
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/ducks",
+      "hubId": "hub_ducks",
+      "links": [
+        {
+          "label": "Birds Coloring Pages",
+          "href": "/coloring-pages/birds",
+          "reason": "related parent or sibling collection",
+          "assetCount": 188
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/giraffes",
+      "hubId": "hub_giraffes",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Anime Girls Coloring Pages",
+          "href": "/coloring-pages/anime-girls",
+          "reason": "related parent or sibling collection",
+          "assetCount": 905
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1300
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/sharks",
+      "hubId": "hub_sharks",
+      "links": [
+        {
+          "label": "Sea Life Coloring Pages",
+          "href": "/coloring-pages/sea-life",
+          "reason": "related parent or sibling collection",
+          "assetCount": 236
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Ocean Coloring Pages",
+          "href": "/coloring-pages/ocean",
+          "reason": "related parent or sibling collection",
+          "assetCount": 154
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Anime Girls Coloring Pages",
+          "href": "/coloring-pages/anime-girls",
+          "reason": "related parent or sibling collection",
+          "assetCount": 905
+        },
+        {
+          "label": "Tigers Coloring Pages",
+          "href": "/coloring-pages/tigers",
+          "reason": "related long-tail collection",
+          "assetCount": 43
+        },
+        {
+          "label": "Megalodon Coloring Pages",
+          "href": "/coloring-pages/megalodon",
+          "reason": "related long-tail collection",
+          "assetCount": 16
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/zebras",
+      "hubId": "hub_zebras",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Anime Girls Coloring Pages",
+          "href": "/coloring-pages/anime-girls",
+          "reason": "related parent or sibling collection",
+          "assetCount": 905
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Geometric Coloring Pages",
+          "href": "/coloring-pages/geometric",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1457
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/plushie-unicorns",
+      "hubId": "hub_plushie_unicorns",
+      "links": [
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1265
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Fantasy Creatures Coloring Pages",
+          "href": "/coloring-pages/fantasy-creatures",
+          "reason": "related parent or sibling collection",
+          "assetCount": 531
+        },
+        {
+          "label": "Unicorns Coloring Pages",
+          "href": "/coloring-pages/unicorns",
+          "reason": "related parent or sibling collection",
+          "assetCount": 38
+        },
+        {
+          "label": "Holidays Coloring Pages",
+          "href": "/coloring-pages/holidays",
+          "reason": "related parent or sibling collection",
+          "assetCount": 874
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/moose",
+      "hubId": "hub_moose",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1300
+        },
+        {
+          "label": "Holidays Coloring Pages",
+          "href": "/coloring-pages/holidays",
+          "reason": "related parent or sibling collection",
+          "assetCount": 874
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/phoenix",
+      "hubId": "hub_phoenix",
+      "links": [
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1265
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Fantasy Creatures Coloring Pages",
+          "href": "/coloring-pages/fantasy-creatures",
+          "reason": "related parent or sibling collection",
+          "assetCount": 531
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1300
+        },
+        {
+          "label": "Chibi Coloring Pages",
+          "href": "/coloring-pages/chibi",
+          "reason": "related parent or sibling collection",
+          "assetCount": 908
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/snakes",
+      "hubId": "hub_snakes",
+      "links": [
+        {
+          "label": "Reptiles Coloring Pages",
+          "href": "/coloring-pages/reptiles",
+          "reason": "related parent or sibling collection",
+          "assetCount": 156
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Anime Girls Coloring Pages",
+          "href": "/coloring-pages/anime-girls",
+          "reason": "related parent or sibling collection",
+          "assetCount": 905
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Lizards Coloring Pages",
+          "href": "/coloring-pages/lizards",
+          "reason": "related long-tail collection",
+          "assetCount": 32
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/elephants",
+      "hubId": "hub_elephants",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Geometric Coloring Pages",
+          "href": "/coloring-pages/geometric",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1457
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/plushie-triceratops",
+      "hubId": "hub_plushie_triceratops",
+      "links": [
+        {
+          "label": "Dinosaurs Coloring Pages",
+          "href": "/coloring-pages/dinosaurs",
+          "reason": "related parent or sibling collection",
+          "assetCount": 189
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Prehistoric Animals Coloring Pages",
+          "href": "/coloring-pages/prehistoric-animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 220
+        },
+        {
+          "label": "Triceratops Coloring Pages",
+          "href": "/coloring-pages/triceratops",
+          "reason": "related parent or sibling collection",
+          "assetCount": 22
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/fish",
+      "hubId": "hub_fish",
+      "links": [
+        {
+          "label": "Sea Life Coloring Pages",
+          "href": "/coloring-pages/sea-life",
+          "reason": "related parent or sibling collection",
+          "assetCount": 236
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Geometric Coloring Pages",
+          "href": "/coloring-pages/geometric",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1457
+        },
+        {
+          "label": "Sushi Coloring Pages",
+          "href": "/coloring-pages/sushi",
+          "reason": "related long-tail collection",
+          "assetCount": 161
+        },
+        {
+          "label": "Megalodon Coloring Pages",
+          "href": "/coloring-pages/megalodon",
+          "reason": "related long-tail collection",
+          "assetCount": 16
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/hippos",
+      "hubId": "hub_hippos",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Anime Girls Coloring Pages",
+          "href": "/coloring-pages/anime-girls",
+          "reason": "related parent or sibling collection",
+          "assetCount": 905
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1300
+        },
+        {
+          "label": "Holidays Coloring Pages",
+          "href": "/coloring-pages/holidays",
+          "reason": "related parent or sibling collection",
+          "assetCount": 874
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/horses",
+      "hubId": "hub_horses",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1300
+        },
+        {
+          "label": "Anime Girls Coloring Pages",
+          "href": "/coloring-pages/anime-girls",
+          "reason": "related parent or sibling collection",
+          "assetCount": 905
+        },
+        {
+          "label": "Holidays Coloring Pages",
+          "href": "/coloring-pages/holidays",
+          "reason": "related parent or sibling collection",
+          "assetCount": 874
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/bees",
+      "hubId": "hub_bees",
+      "links": [
+        {
+          "label": "Insects Coloring Pages",
+          "href": "/coloring-pages/insects",
+          "reason": "related parent or sibling collection",
+          "assetCount": 179
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Anime Girls Coloring Pages",
+          "href": "/coloring-pages/anime-girls",
+          "reason": "related parent or sibling collection",
+          "assetCount": 905
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        },
+        {
+          "label": "Dragons Coloring Pages",
+          "href": "/coloring-pages/dragons",
+          "reason": "related long-tail collection",
+          "assetCount": 259
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/deer",
+      "hubId": "hub_deer",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Holidays Coloring Pages",
+          "href": "/coloring-pages/holidays",
+          "reason": "related parent or sibling collection",
+          "assetCount": 874
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Geometric Coloring Pages",
+          "href": "/coloring-pages/geometric",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1457
+        },
+        {
+          "label": "Mushrooms Coloring Pages",
+          "href": "/coloring-pages/mushrooms",
+          "reason": "related long-tail collection",
+          "assetCount": 218
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/hedgehogs",
+      "hubId": "hub_hedgehogs",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Geometric Coloring Pages",
+          "href": "/coloring-pages/geometric",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1457
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        },
+        {
+          "label": "Mushrooms Coloring Pages",
+          "href": "/coloring-pages/mushrooms",
+          "reason": "related long-tail collection",
+          "assetCount": 218
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/hydras",
+      "hubId": "hub_hydras",
+      "links": [
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1265
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Fantasy Creatures Coloring Pages",
+          "href": "/coloring-pages/fantasy-creatures",
+          "reason": "related parent or sibling collection",
+          "assetCount": 531
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1300
+        },
+        {
+          "label": "Chibi Coloring Pages",
+          "href": "/coloring-pages/chibi",
+          "reason": "related parent or sibling collection",
+          "assetCount": 908
+        },
+        {
+          "label": "Dragons Coloring Pages",
+          "href": "/coloring-pages/dragons",
+          "reason": "related long-tail collection",
+          "assetCount": 259
+        },
+        {
+          "label": "Castles Coloring Pages",
+          "href": "/coloring-pages/castles",
+          "reason": "related long-tail collection",
+          "assetCount": 25
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/llamas",
+      "hubId": "hub_llamas",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Geometric Coloring Pages",
+          "href": "/coloring-pages/geometric",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1457
+        },
+        {
+          "label": "Holidays Coloring Pages",
+          "href": "/coloring-pages/holidays",
+          "reason": "related parent or sibling collection",
+          "assetCount": 874
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/wyverns",
+      "hubId": "hub_wyverns",
+      "links": [
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1265
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1300
+        },
+        {
+          "label": "Chibi Coloring Pages",
+          "href": "/coloring-pages/chibi",
+          "reason": "related parent or sibling collection",
+          "assetCount": 908
+        },
+        {
+          "label": "Fantasy Creatures Coloring Pages",
+          "href": "/coloring-pages/fantasy-creatures",
+          "reason": "related parent or sibling collection",
+          "assetCount": 531
+        },
+        {
+          "label": "Dragons Coloring Pages",
+          "href": "/coloring-pages/dragons",
+          "reason": "related long-tail collection",
+          "assetCount": 259
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/cows",
+      "hubId": "hub_cows",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1300
+        },
+        {
+          "label": "Anime Girls Coloring Pages",
+          "href": "/coloring-pages/anime-girls",
+          "reason": "related parent or sibling collection",
+          "assetCount": 905
+        },
+        {
+          "label": "Holidays Coloring Pages",
+          "href": "/coloring-pages/holidays",
+          "reason": "related parent or sibling collection",
+          "assetCount": 874
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/dolphins",
+      "hubId": "hub_dolphins",
+      "links": [
+        {
+          "label": "Sea Life Coloring Pages",
+          "href": "/coloring-pages/sea-life",
+          "reason": "related parent or sibling collection",
+          "assetCount": 236
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/monkeys",
+      "hubId": "hub_monkeys",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1300
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/sheep",
+      "hubId": "hub_sheep",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1300
+        },
+        {
+          "label": "Anime Girls Coloring Pages",
+          "href": "/coloring-pages/anime-girls",
+          "reason": "related parent or sibling collection",
+          "assetCount": 905
+        },
+        {
+          "label": "Holidays Coloring Pages",
+          "href": "/coloring-pages/holidays",
+          "reason": "related parent or sibling collection",
+          "assetCount": 874
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/velociraptors",
+      "hubId": "hub_velociraptors",
+      "links": [
+        {
+          "label": "Dinosaurs Coloring Pages",
+          "href": "/coloring-pages/dinosaurs",
+          "reason": "related parent or sibling collection",
+          "assetCount": 189
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Prehistoric Animals Coloring Pages",
+          "href": "/coloring-pages/prehistoric-animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 220
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/t-rex",
+      "hubId": "hub_t_rex",
+      "links": [
+        {
+          "label": "Dinosaurs Coloring Pages",
+          "href": "/coloring-pages/dinosaurs",
+          "reason": "related parent or sibling collection",
+          "assetCount": 189
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Prehistoric Animals Coloring Pages",
+          "href": "/coloring-pages/prehistoric-animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 220
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Anime Girls Coloring Pages",
+          "href": "/coloring-pages/anime-girls",
+          "reason": "related parent or sibling collection",
+          "assetCount": 905
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/stegosaurus",
+      "hubId": "hub_stegosaurus",
+      "links": [
+        {
+          "label": "Dinosaurs Coloring Pages",
+          "href": "/coloring-pages/dinosaurs",
+          "reason": "related parent or sibling collection",
+          "assetCount": 189
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Prehistoric Animals Coloring Pages",
+          "href": "/coloring-pages/prehistoric-animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 220
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Anime Girls Coloring Pages",
+          "href": "/coloring-pages/anime-girls",
+          "reason": "related parent or sibling collection",
+          "assetCount": 905
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/santa",
+      "hubId": "hub_santa",
+      "links": [
+        {
+          "label": "Christmas Coloring Pages",
+          "href": "/coloring-pages/christmas",
+          "reason": "related parent or sibling collection",
+          "assetCount": 332
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Holidays Coloring Pages",
+          "href": "/coloring-pages/holidays",
+          "reason": "related parent or sibling collection",
+          "assetCount": 874
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/diplodocus",
+      "hubId": "hub_diplodocus",
+      "links": [
+        {
+          "label": "Dinosaurs Coloring Pages",
+          "href": "/coloring-pages/dinosaurs",
+          "reason": "related parent or sibling collection",
+          "assetCount": 189
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Prehistoric Animals Coloring Pages",
+          "href": "/coloring-pages/prehistoric-animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 220
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/megalodon",
+      "hubId": "hub_megalodon",
+      "links": [
+        {
+          "label": "Prehistoric Animals Coloring Pages",
+          "href": "/coloring-pages/prehistoric-animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 220
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1300
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Anime Girls Coloring Pages",
+          "href": "/coloring-pages/anime-girls",
+          "reason": "related parent or sibling collection",
+          "assetCount": 905
+        },
+        {
+          "label": "Tigers Coloring Pages",
+          "href": "/coloring-pages/tigers",
+          "reason": "related long-tail collection",
+          "assetCount": 43
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/brachiosaurus",
+      "hubId": "hub_brachiosaurus",
+      "links": [
+        {
+          "label": "Dinosaurs Coloring Pages",
+          "href": "/coloring-pages/dinosaurs",
+          "reason": "related parent or sibling collection",
+          "assetCount": 189
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Prehistoric Animals Coloring Pages",
+          "href": "/coloring-pages/prehistoric-animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 220
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/plushie-dogs",
+      "hubId": "hub_plushie_dogs",
+      "links": [
+        {
+          "label": "Animals Coloring Pages",
+          "href": "/coloring-pages/animals",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1450
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        },
+        {
+          "label": "Dogs Coloring Pages",
+          "href": "/coloring-pages/dogs",
+          "reason": "related parent or sibling collection",
+          "assetCount": 284
+        },
+        {
+          "label": "Holidays Coloring Pages",
+          "href": "/coloring-pages/holidays",
+          "reason": "related parent or sibling collection",
+          "assetCount": 874
+        },
+        {
+          "label": "Geometric Dogs Coloring Pages",
+          "href": "/coloring-pages/geometric-dogs",
+          "reason": "related long-tail collection",
+          "assetCount": 85
+        },
+        {
+          "label": "Christmas Dogs Coloring Pages",
+          "href": "/coloring-pages/christmas-dogs",
+          "reason": "related long-tail collection",
+          "assetCount": 36
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/robots",
+      "hubId": "hub_robots",
+      "links": [
+        {
+          "label": "Fantasy Coloring Pages",
+          "href": "/coloring-pages/fantasy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1265
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Plushies Coloring Pages",
+          "href": "/coloring-pages/plushies",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1704
+        },
+        {
+          "label": "Coloring Pages for Kids",
+          "href": "/coloring-pages/for-kids",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1335
+        },
+        {
+          "label": "Easy Coloring Pages",
+          "href": "/coloring-pages/easy",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1300
+        },
+        {
+          "label": "Holidays Coloring Pages",
+          "href": "/coloring-pages/holidays",
+          "reason": "related parent or sibling collection",
+          "assetCount": 874
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
+    },
+    {
+      "path": "/coloring-pages/roses",
+      "hubId": "hub_roses",
+      "links": [
+        {
+          "label": "Flowers Coloring Pages",
+          "href": "/coloring-pages/flowers",
+          "reason": "related parent or sibling collection",
+          "assetCount": 346
+        },
+        {
+          "label": "Coloring Pages",
+          "href": "/coloring-pages",
+          "reason": "related parent or sibling collection",
+          "assetCount": 6352
+        },
+        {
+          "label": "Plants Coloring Pages",
+          "href": "/coloring-pages/plants",
+          "reason": "related parent or sibling collection",
+          "assetCount": 586
+        },
+        {
+          "label": "Detailed Coloring Pages for Adults",
+          "href": "/coloring-pages/detailed-for-adults",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Mandalas Coloring Pages",
+          "href": "/coloring-pages/mandalas",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1459
+        },
+        {
+          "label": "Geometric Coloring Pages",
+          "href": "/coloring-pages/geometric",
+          "reason": "related parent or sibling collection",
+          "assetCount": 1457
+        },
+        {
+          "label": "Sushi Coloring Pages",
+          "href": "/coloring-pages/sushi",
+          "reason": "related long-tail collection",
+          "assetCount": 161
+        }
+      ],
+      "strategy": "Long-tail hub links point to parent, sibling, and closely related promoted collections."
     }
-  ]
+  ],
+  "runId": "long-tail-hub-expansion+long-tail+long-tail+long-tail"
 }
