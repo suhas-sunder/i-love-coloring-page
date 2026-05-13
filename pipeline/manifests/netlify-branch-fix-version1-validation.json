@@ -1,0 +1,102 @@
+{
+  "generatedAt": "2026-05-13T20:55:39.174Z",
+  "runId": "netlify-branch-fix-version1-validation",
+  "summary": {
+    "label": "version1",
+    "branch": "version-4",
+    "head": "be845ea",
+    "validationState": "pending",
+    "npmTestPassed": false,
+    "typecheckPassed": false,
+    "buildPassed": false,
+    "appApiAbsent": true,
+    "staticExportConfigured": true,
+    "packageBuildCorrect": true,
+    "netlifyPublishesOut": true,
+    "outExists": true,
+    "outContainsIndexHtml": true,
+    "outContainsColoringPages": true,
+    "outContainsAnimals": true,
+    "outContainsContact": true,
+    "outContainsSitemap": true,
+    "outContainsRobots": true,
+    "outPublishesRepoSource": false,
+    "localRoutesPassed": true,
+    "routeChecks": [
+      {
+        "path": "/",
+        "status": 200,
+        "contentType": "text/html",
+        "expectedMarker": "I Love Coloring Page",
+        "expectedMarkerFound": true
+      },
+      {
+        "path": "/coloring-pages",
+        "status": 200,
+        "contentType": "text/html",
+        "expectedMarker": "Find a coloring page",
+        "expectedMarkerFound": true
+      },
+      {
+        "path": "/coloring-pages/animals",
+        "status": 200,
+        "contentType": "text/html",
+        "expectedMarker": "Animals",
+        "expectedMarkerFound": true
+      },
+      {
+        "path": "/coloring-pages/geometric",
+        "status": 200,
+        "contentType": "text/html",
+        "expectedMarker": "Geometric",
+        "expectedMarkerFound": true
+      },
+      {
+        "path": "/contact",
+        "status": 200,
+        "contentType": "text/html",
+        "expectedMarker": "Contact",
+        "expectedMarkerFound": true
+      },
+      {
+        "path": "/privacy",
+        "status": 200,
+        "contentType": "text/html",
+        "expectedMarker": "Privacy",
+        "expectedMarkerFound": true
+      },
+      {
+        "path": "/sitemap.xml",
+        "status": 200,
+        "contentType": "application/xml",
+        "expectedMarker": "<urlset",
+        "expectedMarkerFound": true
+      },
+      {
+        "path": "/robots.txt",
+        "status": 200,
+        "contentType": "text/plain",
+        "expectedMarker": "Sitemap: https://www.ilovecoloringpage.com/sitemap.xml",
+        "expectedMarkerFound": true
+      }
+    ],
+    "sitemapIncludesRouteSet": true,
+    "noLocalhostLeakage": true,
+    "noR2DevLeakage": true,
+    "noSvgDownload": true,
+    "pngJpgWebpControlsPresent": true,
+    "runtimeAvailableRecords": 6352,
+    "runtimeAssetRecords": 6352,
+    "runtimeGeneratedDataAvailable": true,
+    "count6352Present": true,
+    "webpAssetUrlsUseCustomDomain": true,
+    "passed": false
+  },
+  "outFileCount": 5281,
+  "blockers": [
+    "npmTestPassed",
+    "typecheckPassed",
+    "buildPassed",
+    "outPublishesRepoSource"
+  ]
+}

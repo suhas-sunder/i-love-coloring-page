@@ -458,6 +458,12 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Static export routing, trailing-slash behavior, canonical URLs, and sitemap URLs must stay consistent with each other.
 - Do not accept live production QA while non-root pages self-redirect, fail to serve 200, or serve stale deploy output.
 - Production deploy must serve the latest `version-4` commit before launch QA can pass.
+- Netlify currently deploys production from `version-1` unless the owner changes Netlify settings.
+- If the production branch remains `version-1`, keep `version-1` in sync with `version-4` production code.
+- Do not assume pushing `version-4` updates production unless Netlify production branch is changed.
+- Do not force-push deployment branches.
+- Netlify publish directory must remain `out`.
+- Repo root, `pipeline/`, source folders, and generated reports must never be published as the production site.
 
 ## Conversion Workflow
 
