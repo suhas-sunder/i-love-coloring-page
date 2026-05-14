@@ -545,6 +545,19 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - JSON-LD expansion may start only after OG acceptance passes and sitemap regressions remain clear.
 - Live ads remain separate and require explicit owner approval.
 
+## JSON-LD Gate
+
+- JSON-LD must match visible page content and current site behavior.
+- Use conservative route-level schema only: site, organization, webpage, collection, breadcrumb, limited visible item lists, and appropriate trust-page types.
+- Do not add fake ratings, reviews, products, offers, prices, authors, dates, or FAQ schema.
+- Do not add `SearchAction` unless there is a real URL-addressable search route.
+- Do not create per-image pages or per-image schema spam.
+- ItemList schema must stay capped to visible featured or gallery items, not all runtime records on every page.
+- SVG remains internal and must not be used as a public structured data image.
+- JSON-LD URLs must use canonical `https://www.ilovecoloringpage.com` URLs and must not include localhost, `r2.dev`, or private storage endpoints.
+- Structured data must remain static-export compatible and must not require `app/api`, backend routes, middleware, or server runtime.
+- Live ads remain separate and require explicit owner approval.
+
 ## Conversion Workflow
 
 - Do not choose a winning preset until a later bakeoff round compares outputs.

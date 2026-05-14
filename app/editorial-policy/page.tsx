@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { JsonLdScript } from "@/components/seo/JsonLdScript";
 import { TrustPage, TrustSection } from "@/components/site/TrustPage";
+import { buildTrustPageJsonLd } from "@/lib/seo/pageJsonLd";
 import { getCanonicalUrl, siteConfig } from "@/lib/site/siteConfig";
 
 const canonical = getCanonicalUrl("/editorial-policy");
@@ -30,6 +32,15 @@ export default function EditorialPolicyPage() {
       title="Editorial Policy"
       intro="This page explains how the public coloring page library is organized and how visitors can report issues."
     >
+      <JsonLdScript
+        id="jsonld-editorial-policy"
+        data={buildTrustPageJsonLd({
+          path: "/editorial-policy",
+          title: "Editorial Policy",
+          description: metadata.description as string,
+          schemaType: "WebPage",
+        })}
+      />
       <TrustSection title="How collections are organized">
         <p>
           Collections are organized around useful visitor intent, such as animals, seasonal topics, fantasy subjects, simple pages for kids, and more

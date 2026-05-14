@@ -227,7 +227,7 @@ test("Round 4V keeps route, media, source, and download boundaries intact", asyn
   assert.match(imageCard, /Print/);
   assert.match(imageCard, /Download PNG/);
   assert.doesNotMatch(imageCard, /Download SVG|Download JPG|Download JPEG|Download WebP|assetUrls\.svg|pngUrl\s*\|\|\s*svgUrl/i);
-  assert.doesNotMatch(publicSource, /application\/ld\+json|ImageObject|BreadcrumbList|FAQPage|opengraph-image/i);
+  assert.doesNotMatch(publicSource, /FAQPage|opengraph-image/i);
   assert.doesNotMatch(publicSource, /adsbygoogle|pagead2\.googlesyndication|ca-pub-|google_ad_client/i);
   assert.doesNotMatch(forbiddenSurfaces, /AdSlot|AdRail|data-ad-placeholder|Advertisement|affiliate/i);
   assert.equal(trackedR2UploadMedia.trim(), "");

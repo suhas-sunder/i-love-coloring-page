@@ -1,0 +1,83 @@
+{
+  "generatedAt": "2026-05-14T04:18:04.342Z",
+  "phase": "jsonld",
+  "baseUrl": "http://127.0.0.1:49976",
+  "summary": {
+    "staticExportPassed": true,
+    "sampledStaticHtmlContainsJsonLd": true,
+    "jsonLdScriptCountExpected": true,
+    "regularSitemapStillWorks": true,
+    "imageSitemapStillWorks": true,
+    "ogMetadataStillWorks": true,
+    "noLocalhostInMetadata": true,
+    "noR2DevInMetadata": true,
+    "appApiRoutePresent": false,
+    "liveAdsenseCodePresent": false,
+    "pagesChecked": 7
+  },
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "jsonLdScriptCount": 1,
+      "containsOgImage": true,
+      "containsLocalhostInMetadata": false,
+      "containsR2DevInMetadata": false,
+      "containsLiveAdsenseCode": false
+    },
+    {
+      "path": "/coloring-pages",
+      "status": 200,
+      "jsonLdScriptCount": 1,
+      "containsOgImage": true,
+      "containsLocalhostInMetadata": false,
+      "containsR2DevInMetadata": false,
+      "containsLiveAdsenseCode": false
+    },
+    {
+      "path": "/coloring-pages/animals",
+      "status": 200,
+      "jsonLdScriptCount": 1,
+      "containsOgImage": true,
+      "containsLocalhostInMetadata": false,
+      "containsR2DevInMetadata": false,
+      "containsLiveAdsenseCode": false
+    },
+    {
+      "path": "/coloring-pages/t-rex",
+      "status": 200,
+      "jsonLdScriptCount": 1,
+      "containsOgImage": true,
+      "containsLocalhostInMetadata": false,
+      "containsR2DevInMetadata": false,
+      "containsLiveAdsenseCode": false
+    },
+    {
+      "path": "/about",
+      "status": 200,
+      "jsonLdScriptCount": 1,
+      "containsOgImage": false,
+      "containsLocalhostInMetadata": false,
+      "containsR2DevInMetadata": false,
+      "containsLiveAdsenseCode": false
+    },
+    {
+      "path": "/contact",
+      "status": 200,
+      "jsonLdScriptCount": 1,
+      "containsOgImage": false,
+      "containsLocalhostInMetadata": false,
+      "containsR2DevInMetadata": false,
+      "containsLiveAdsenseCode": false
+    },
+    {
+      "path": "/privacy",
+      "status": 200,
+      "jsonLdScriptCount": 1,
+      "containsOgImage": false,
+      "containsLocalhostInMetadata": false,
+      "containsR2DevInMetadata": false,
+      "containsLiveAdsenseCode": false
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "generatedAt": "2026-05-14T04:06:18.918Z",
+  "phase": "jsonld",
+  "summary": {
+    "seoPageCount": 132,
+    "runtimeRouteCount": 131,
+    "trustPageCount": 6,
+    "routeSpecificOgImages": 132,
+    "canonicalDomain": "https://www.ilovecoloringpage.com",
+    "metadataHasLocalhostLeak": false,
+    "metadataHasR2DevLeak": false,
+    "structuredDataWouldMatchVisibleContent": true
+  },
+  "sampledRoutes": [
+    {
+      "path": "/",
+      "title": "I Love Coloring Page | Printable Coloring Pages",
+      "description": "Browse 6,352 printable coloring pages across animals, holidays, mandalas, fantasy themes, plushies, and more. Search, preview, print, or download PNG, JPG, or WebP files.",
+      "canonicalUrl": "https://www.ilovecoloringpage.com",
+      "ogImage": "https://www.ilovecoloringpage.com/og/home.jpg",
+      "visibleSections": [
+        "hero",
+        "fresh pages",
+        "collections",
+        "printing tips"
+      ]
+    },
+    {
+      "path": "/coloring-pages",
+      "title": "Printable Coloring Pages | I Love Coloring Page",
+      "description": "Search 6,352 printable coloring pages by subject, season, style, and difficulty. Preview real gallery art, then print or download PNG, JPG, or WebP pages.",
+      "canonicalUrl": "https://www.ilovecoloringpage.com/coloring-pages",
+      "ogImage": "https://www.ilovecoloringpage.com/og/coloring-pages.jpg",
+      "visibleSections": [
+        "hero",
+        "featured pages",
+        "search",
+        "gallery",
+        "related collections",
+        "printing tips"
+      ]
+    },
+    {
+      "path": "/coloring-pages/animals",
+      "title": "Animals Coloring Pages to Print",
+      "description": "Print 1,450 animals coloring pages with plushies, animals, patterns, and mandalas. Search the gallery, preview real art, and download PNG, JPG, or WebP files for simple printing.",
+      "canonicalUrl": "https://www.ilovecoloringpage.com/coloring-pages/animals",
+      "ogImage": "https://www.ilovecoloringpage.com/og/hubs/animals.jpg",
+      "visibleSections": [
+        "hero",
+        "featured pages",
+        "search",
+        "gallery",
+        "related collections",
+        "about this collection"
+      ]
+    },
+    {
+      "path": "/coloring-pages/t-rex",
+      "title": "T-Rex Coloring Pages to Print",
+      "description": "Browse 18 t-rex coloring pages with real previews, gallery search, and PNG, JPG, or WebP downloads for printing.",
+      "canonicalUrl": "https://www.ilovecoloringpage.com/coloring-pages/t-rex",
+      "ogImage": "https://www.ilovecoloringpage.com/og/hubs/t-rex.jpg",
+      "visibleSections": [
+        "hero",
+        "featured pages",
+        "search",
+        "gallery",
+        "related collections",
+        "about this collection"
+      ]
+    },
+    {
+      "path": "/coloring-pages/dragons",
+      "title": "Dragons Coloring Pages to Print",
+      "description": "Browse 259 dragons coloring pages with real previews, gallery search, and PNG, JPG, or WebP downloads for printing.",
+      "canonicalUrl": "https://www.ilovecoloringpage.com/coloring-pages/dragons",
+      "ogImage": "https://www.ilovecoloringpage.com/og/hubs/dragons.jpg",
+      "visibleSections": [
+        "hero",
+        "featured pages",
+        "search",
+        "gallery",
+        "related collections",
+        "about this collection"
+      ]
+    }
+  ],
+  "trustPages": [
+    {
+      "path": "/about",
+      "title": "About I Love Coloring Page",
+      "description": "Learn about I Love Coloring Page, a printable coloring page library organized into useful collections with PNG print and download options.",
+      "selectedSchemaTypes": [
+        "AboutPage"
+      ],
+      "visibleContentSupportsSchema": true,
+      "ogImage": "https://www.ilovecoloringpage.com/og/home.jpg"
+    },
+    {
+      "path": "/contact",
+      "title": "Contact I Love Coloring Page",
+      "description": "Contact I Love Coloring Page about broken pages, image issues, copyright concerns, accessibility issues, partnerships, or affiliate inquiries.",
+      "selectedSchemaTypes": [
+        "ContactPage"
+      ],
+      "visibleContentSupportsSchema": true,
+      "ogImage": "https://www.ilovecoloringpage.com/og/home.jpg"
+    },
+    {
+      "path": "/privacy",
+      "title": "Privacy Policy",
+      "description": "Read the draft privacy policy for I Love Coloring Page, including current static-site behavior and future advertising disclosures.",
+      "selectedSchemaTypes": [
+        "PrivacyPolicy"
+      ],
+      "visibleContentSupportsSchema": true,
+      "ogImage": "https://www.ilovecoloringpage.com/og/home.jpg"
+    },
+    {
+      "path": "/terms",
+      "title": "Terms of Use",
+      "description": "Read the draft terms for using I Love Coloring Page printable pages, PNG downloads, and site content.",
+      "selectedSchemaTypes": [
+        "TermsOfService"
+      ],
+      "visibleContentSupportsSchema": true,
+      "ogImage": "https://www.ilovecoloringpage.com/og/home.jpg"
+    },
+    {
+      "path": "/affiliate-disclosure",
+      "title": "Affiliate Disclosure",
+      "description": "Read the draft affiliate disclosure for future recommendation or referral links on I Love Coloring Page.",
+      "selectedSchemaTypes": [
+        "WebPage"
+      ],
+      "visibleContentSupportsSchema": true,
+      "ogImage": "https://www.ilovecoloringpage.com/og/home.jpg"
+    },
+    {
+      "path": "/editorial-policy",
+      "title": "Editorial Policy",
+      "description": "Learn how I Love Coloring Page organizes collections, reviews printable page usefulness, and handles issue reports.",
+      "selectedSchemaTypes": [
+        "WebPage"
+      ],
+      "visibleContentSupportsSchema": true,
+      "ogImage": "https://www.ilovecoloringpage.com/og/home.jpg"
+    }
+  ]
+}

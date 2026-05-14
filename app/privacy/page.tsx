@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { JsonLdScript } from "@/components/seo/JsonLdScript";
 import { TrustPage, TrustSection } from "@/components/site/TrustPage";
+import { buildTrustPageJsonLd } from "@/lib/seo/pageJsonLd";
 import { getCanonicalUrl, siteConfig } from "@/lib/site/siteConfig";
 
 const canonical = getCanonicalUrl("/privacy");
@@ -32,6 +34,15 @@ export default function PrivacyPage() {
       intro="This draft privacy policy describes the current static coloring page site and the disclosures that will need owner and legal review before launch or live advertising."
       reviewNote="Draft requiring owner/legal review before launch. This page is practical website policy copy, not final legal advice."
     >
+      <JsonLdScript
+        id="jsonld-privacy"
+        data={buildTrustPageJsonLd({
+          path: "/privacy",
+          title: "Privacy Policy",
+          description: metadata.description as string,
+          schemaType: "PrivacyPolicy",
+        })}
+      />
       <TrustSection title="Last updated">
         <p>{updatedAt}</p>
       </TrustSection>

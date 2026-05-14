@@ -7,6 +7,7 @@ import { Pagination } from "@/components/coloring/Pagination";
 import { RelatedHubs } from "@/components/coloring/RelatedHubs";
 import { RotatingFeaturedGrid } from "@/components/coloring/RotatingFeaturedGrid";
 import { SeoContentSection } from "@/components/coloring/SeoContentSection";
+import { JsonLdScript } from "@/components/seo/JsonLdScript";
 import {
   getChildHubs,
   getFeaturedRotationCandidateItems,
@@ -19,6 +20,7 @@ import {
   getRelatedHubs,
 } from "@/lib/coloring/data";
 import type { ColoringHub } from "@/lib/coloring/types";
+import { buildHubPageJsonLd } from "@/lib/seo/pageJsonLd";
 
 type HubPageContentProps = {
   hub: ColoringHub;
@@ -37,9 +39,18 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
   const seoContent = getHubSeoContent(hub.hubId);
   const browsingSections = getSectionListItems(hub.sectionGroupings, 10);
   const heroRelatedLinks = getHeroRelatedLinks([...childHubs, ...relatedHubs], 6);
+  const jsonLdItems = page === 1 && featuredItems.length > 0 ? featuredItems : pagedGallery.items;
 
   return (
     <main className="page-shell">
+      <JsonLdScript
+        id={`jsonld-hub-${hub.slug}-${page}`}
+        data={buildHubPageJsonLd({
+          hub,
+          page,
+          visibleItems: jsonLdItems,
+        })}
+      />
       <AdSlot slotId="hub-header-banner" />
       <AdRail side="left" slotId="rail-left-desktop" />
       <AdRail side="right" slotId="rail-right-desktop" />

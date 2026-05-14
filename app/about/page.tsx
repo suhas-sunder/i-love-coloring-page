@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { JsonLdScript } from "@/components/seo/JsonLdScript";
 import { TrustPage, TrustSection } from "@/components/site/TrustPage";
+import { buildTrustPageJsonLd } from "@/lib/seo/pageJsonLd";
 import { getCanonicalUrl, siteConfig } from "@/lib/site/siteConfig";
 
 const canonical = getCanonicalUrl("/about");
@@ -30,6 +32,15 @@ export default function AboutPage() {
       title={`About ${siteConfig.siteName}`}
       intro={`${siteConfig.siteName} is a printable coloring page library built for quick browsing, clear previews, and simple PNG printing or downloads.`}
     >
+      <JsonLdScript
+        id="jsonld-about"
+        data={buildTrustPageJsonLd({
+          path: "/about",
+          title: `About ${siteConfig.siteName}`,
+          description: metadata.description as string,
+          schemaType: "AboutPage",
+        })}
+      />
       <TrustSection title="What this site is">
         <p>
           The site organizes coloring pages into practical collections, including animals, seasonal themes, fantasy subjects, detailed pages for adults,

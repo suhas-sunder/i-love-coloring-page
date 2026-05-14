@@ -1,0 +1,179 @@
+{
+  "generatedAt": "2026-05-14T04:06:18.918Z",
+  "phase": "jsonld",
+  "summary": {
+    "selectedSchemaTypes": [
+      "WebSite",
+      "Organization",
+      "WebPage",
+      "CollectionPage",
+      "BreadcrumbList",
+      "ItemList",
+      "AboutPage",
+      "ContactPage",
+      "PrivacyPolicy",
+      "TermsOfService",
+      "ImageObject"
+    ],
+    "rejectedSchemaTypes": [
+      "Review",
+      "AggregateRating",
+      "Product",
+      "Offer",
+      "FAQPage",
+      "SearchAction"
+    ],
+    "searchActionUsed": false,
+    "perImageSchemaAvoided": true,
+    "jsonLdFormatSelected": true,
+    "staticExportSafe": true,
+    "visibleContentOnly": true
+  },
+  "officialReferences": [
+    {
+      "source": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+      "use": "JSON-LD is the selected format because Google recommends it when supported by the site setup."
+    },
+    {
+      "source": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/sd-policies",
+      "use": "Structured data must describe visible, relevant, non-misleading page content."
+    },
+    {
+      "source": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/breadcrumb",
+      "use": "BreadcrumbList is appropriate on collection and hub routes with visible breadcrumb navigation."
+    },
+    {
+      "source": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/faqpage",
+      "use": "FAQPage is rejected because the site is not a government or health authority FAQ surface and the visible pages do not contain public FAQ blocks."
+    },
+    {
+      "source": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/review-snippet",
+      "use": "Review and AggregateRating are rejected because the site does not show real visitor reviews or ratings."
+    },
+    {
+      "source": "Schema.org",
+      "url": "https://schema.org/CollectionPage",
+      "use": "CollectionPage represents the gallery and hub pages."
+    },
+    {
+      "source": "Schema.org",
+      "url": "https://schema.org/ItemList",
+      "use": "ItemList represents a capped list of visible gallery or featured items."
+    }
+  ],
+  "selectedTypes": [
+    {
+      "type": "WebSite",
+      "routes": [
+        "/"
+      ],
+      "reason": "The homepage describes the site as a whole."
+    },
+    {
+      "type": "Organization",
+      "routes": [
+        "/"
+      ],
+      "reason": "Minimal publisher identity only, using public site name and URL."
+    },
+    {
+      "type": "WebPage",
+      "routes": [
+        "/",
+        "/affiliate-disclosure",
+        "/editorial-policy"
+      ],
+      "reason": "General page identity for routes without a safer specific type."
+    },
+    {
+      "type": "CollectionPage",
+      "routes": [
+        "/coloring-pages",
+        "hub routes"
+      ],
+      "reason": "Gallery and hub routes are visible collections."
+    },
+    {
+      "type": "BreadcrumbList",
+      "routes": [
+        "/coloring-pages",
+        "hub routes"
+      ],
+      "reason": "Visible breadcrumb hierarchy exists on collection and hub pages."
+    },
+    {
+      "type": "ItemList",
+      "routes": [
+        "/coloring-pages",
+        "hub routes"
+      ],
+      "reason": "A limited visible set of gallery items is shown on the route."
+    },
+    {
+      "type": "AboutPage",
+      "routes": [
+        "/about"
+      ],
+      "reason": "About page content is visible."
+    },
+    {
+      "type": "ContactPage",
+      "routes": [
+        "/contact"
+      ],
+      "reason": "Contact page content and email are visible."
+    },
+    {
+      "type": "PrivacyPolicy",
+      "routes": [
+        "/privacy"
+      ],
+      "reason": "Privacy policy page content is visible."
+    },
+    {
+      "type": "TermsOfService",
+      "routes": [
+        "/terms"
+      ],
+      "reason": "Terms page content is visible."
+    },
+    {
+      "type": "ImageObject",
+      "routes": [
+        "route-level social images"
+      ],
+      "reason": "Only the route-level OG image is used where an image property is helpful."
+    }
+  ],
+  "rejectedTypes": [
+    {
+      "type": "Review",
+      "reason": "No visible reviews exist."
+    },
+    {
+      "type": "AggregateRating",
+      "reason": "No visible aggregate ratings exist."
+    },
+    {
+      "type": "Product",
+      "reason": "The pages are free printable galleries, not product offer pages."
+    },
+    {
+      "type": "Offer",
+      "reason": "No pricing or offers are shown."
+    },
+    {
+      "type": "FAQPage",
+      "reason": "No visible FAQ blocks are added, and Google has narrowed FAQ rich result availability."
+    },
+    {
+      "type": "SearchAction",
+      "reason": "Gallery search is client-side state, not a URL-addressable search route."
+    }
+  ]
+}

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 
+import { JsonLdScript } from "@/components/seo/JsonLdScript";
 import { TrustPage, TrustSection } from "@/components/site/TrustPage";
+import { buildTrustPageJsonLd } from "@/lib/seo/pageJsonLd";
 import { getCanonicalUrl, siteConfig } from "@/lib/site/siteConfig";
 
 const canonical = getCanonicalUrl("/contact");
@@ -31,6 +33,16 @@ export default function ContactPage() {
       intro="Use this page for site questions, issue reports, copyright concerns, accessibility notes, and future partnership or affiliate inquiries."
       reviewNote={contactEmail ? undefined : "Owner input needed: provide a real public contact email before launch and AdSense review."}
     >
+      <JsonLdScript
+        id="jsonld-contact"
+        data={buildTrustPageJsonLd({
+          path: "/contact",
+          title: `Contact ${siteConfig.siteName}`,
+          description: metadata.description as string,
+          schemaType: "ContactPage",
+          contactEmail,
+        })}
+      />
       <TrustSection title="Contact details">
         {contactEmail ? (
           <p>

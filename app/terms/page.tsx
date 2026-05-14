@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { JsonLdScript } from "@/components/seo/JsonLdScript";
 import { TrustPage, TrustSection } from "@/components/site/TrustPage";
+import { buildTrustPageJsonLd } from "@/lib/seo/pageJsonLd";
 import { getCanonicalUrl, siteConfig } from "@/lib/site/siteConfig";
 
 const canonical = getCanonicalUrl("/terms");
@@ -32,6 +34,15 @@ export default function TermsPage() {
       intro="These draft terms outline practical use rules for browsing, printing, and downloading pages from I Love Coloring Page."
       reviewNote="Draft requiring owner/legal review before launch. This page is practical website policy copy, not final legal advice."
     >
+      <JsonLdScript
+        id="jsonld-terms"
+        data={buildTrustPageJsonLd({
+          path: "/terms",
+          title: "Terms of Use",
+          description: metadata.description as string,
+          schemaType: "TermsOfService",
+        })}
+      />
       <TrustSection title="Last updated">
         <p>{updatedAt}</p>
       </TrustSection>

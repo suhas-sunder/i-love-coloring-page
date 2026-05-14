@@ -99,7 +99,7 @@ test("Round 4P keeps static architecture, media boundaries, and SEO implementati
   assert.equal(statusIlovesvg.trim(), "");
   assert.equal(statusProductionFull.trim(), "");
   assert.equal(trackedR2UploadMedia.trim(), "");
-  assert.doesNotMatch(sourceText, /application\/ld\+json|ImageObject|BreadcrumbList|FAQPage|opengraph-image/i);
+  assert.doesNotMatch(sourceText, /FAQPage|opengraph-image/i);
 });
 
 async function readJson(relativePath) {

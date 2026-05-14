@@ -142,13 +142,21 @@ test("metadata, sitemap, JSON-LD, and social decisions stay static-export safe",
   const social = await readJson("pipeline/manifests/round-4w-pinterest-social-readiness.json");
   const seoImpl = await readJson("pipeline/manifests/round-4w-seo-implementation-results.json");
   const sourceText = await readProjectText(["app", "src/components", "src/lib", "src/generated/coloring/seo-pages.json", "src/generated/coloring/hub-seo-content.json"]);
+  const currentJsonLdGate = await readJson("pipeline/manifests/jsonld-acceptance-gate.json").catch(() => null);
 
-  assert.equal(jsonLd.summary.implementedJsonLd, false);
-  assert.equal(jsonLd.summary.websiteSchemaDeferred, true);
-  assert.equal(jsonLd.summary.breadcrumbListDeferred, true);
-  assert.equal(jsonLd.summary.imageObjectDeferred, true);
-  assert.equal(jsonLd.summary.faqPageDeferred, true);
-  assert.doesNotMatch(sourceText, /application\/ld\+json|FAQPage|ImageObject|BreadcrumbList|"@type":\s*"WebSite"/i);
+  if (currentJsonLdGate?.summary?.jsonld_added) {
+    assert.equal(currentJsonLdGate.summary.validation_passed, true);
+    assert.equal(currentJsonLdGate.summary.static_export_passed, true);
+    assert.equal(currentJsonLdGate.summary.browser_qa_passed, true);
+    assert.doesNotMatch(sourceText, /"@type":\s*"(?:FAQPage|Review|AggregateRating|Product|Offer)"|opengraph-image/i);
+  } else {
+    assert.equal(jsonLd.summary.implementedJsonLd, false);
+    assert.equal(jsonLd.summary.websiteSchemaDeferred, true);
+    assert.equal(jsonLd.summary.breadcrumbListDeferred, true);
+    assert.equal(jsonLd.summary.imageObjectDeferred, true);
+    assert.equal(jsonLd.summary.faqPageDeferred, true);
+    assert.doesNotMatch(sourceText, /application\/ld\+json|FAQPage|ImageObject|BreadcrumbList|"@type":\s*"WebSite"/i);
+  }
 
   assert.equal(sitemap.summary.routeCount, 65);
   assert.equal(sitemap.summary.includesHomepage, true);

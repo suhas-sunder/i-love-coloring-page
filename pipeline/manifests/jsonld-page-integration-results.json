@@ -1,0 +1,53 @@
+{
+  "generatedAt": "2026-05-14T04:06:18.947Z",
+  "phase": "jsonld",
+  "summary": {
+    "homepageIntegrated": true,
+    "coloringPagesIntegrated": true,
+    "hubPagesIntegrated": true,
+    "trustPagesIntegrated": true,
+    "noDuplicateConflictingSchemas": true,
+    "noAppApi": true,
+    "noPerImageRouteSchema": true,
+    "staticExportCompatible": true,
+    "routeDataEntries": 139
+  },
+  "files": [
+    {
+      "file": "app/page.tsx",
+      "usesJsonLdScript": true
+    },
+    {
+      "file": "app/coloring-pages/page.tsx",
+      "usesJsonLdScript": true
+    },
+    {
+      "file": "src/components/coloring/HubPageContent.tsx",
+      "usesJsonLdScript": true
+    },
+    {
+      "file": "app/about/page.tsx",
+      "usesJsonLdScript": true
+    },
+    {
+      "file": "app/contact/page.tsx",
+      "usesJsonLdScript": true
+    },
+    {
+      "file": "app/privacy/page.tsx",
+      "usesJsonLdScript": true
+    },
+    {
+      "file": "app/terms/page.tsx",
+      "usesJsonLdScript": true
+    },
+    {
+      "file": "app/affiliate-disclosure/page.tsx",
+      "usesJsonLdScript": true
+    },
+    {
+      "file": "app/editorial-policy/page.tsx",
+      "usesJsonLdScript": true
+    }
+  ]
+}

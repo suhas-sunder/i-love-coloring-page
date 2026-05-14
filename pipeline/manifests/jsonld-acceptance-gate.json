@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-05-14T04:18:24.552Z",
+  "phase": "jsonld",
+  "summary": {
+    "jsonld_added": true,
+    "selected_schema_types": [
+      "WebSite",
+      "Organization",
+      "WebPage",
+      "CollectionPage",
+      "BreadcrumbList",
+      "ItemList",
+      "AboutPage",
+      "ContactPage",
+      "PrivacyPolicy",
+      "TermsOfService",
+      "ImageObject"
+    ],
+    "rejected_schema_types": [
+      "Review",
+      "AggregateRating",
+      "Product",
+      "Offer",
+      "FAQPage",
+      "SearchAction"
+    ],
+    "homepage_passed": true,
+    "coloring_pages_passed": true,
+    "hub_pages_passed": true,
+    "trust_pages_passed": true,
+    "validation_passed": true,
+    "static_export_passed": true,
+    "browser_qa_passed": true,
+    "regular_sitemap_still_valid": true,
+    "image_sitemap_still_valid": true,
+    "og_metadata_still_valid": true,
+    "ready_for_live_ads_round": false,
+    "blockers": []
+  }
+}

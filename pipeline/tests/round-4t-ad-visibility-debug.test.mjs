@@ -172,7 +172,7 @@ test("Round 4T keeps static export, media boundaries, route boundaries, and down
   assert.match(imageCard, /Download PNG/);
   assert.match(imageCard, /Print/);
   assert.doesNotMatch(sourceText, /Download SVG|SVG download|downloadSvg\b|assetUrls\.svg|pngUrl\s*\|\|\s*svgUrl/i);
-  assert.doesNotMatch(sourceText, /application\/ld\+json|ImageObject|BreadcrumbList|FAQPage|opengraph-image/i);
+  assert.doesNotMatch(sourceText, /FAQPage|opengraph-image/i);
   assert.equal(trackedR2UploadMedia.trim(), "");
   assert.equal(statusImages.trim(), "");
   assert.equal(statusIlovesvg.trim(), "");

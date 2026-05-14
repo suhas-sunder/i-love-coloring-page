@@ -166,7 +166,7 @@ test("download controls, static export, media boundaries, ads, and deferred SEO 
   assert.match(browserDownloads, /EXPOSED_PUBLIC_DOWNLOAD_FORMATS:\s*readonly PublicDownloadFormat\[\]\s*=\s*\["png", "jpg", "webp"\]/);
   assert.doesNotMatch(`${imageCard}\n${downloadMenu}\n${browserDownloads}`, /Download SVG|downloadSvg|svgDownload/i);
   assert.doesNotMatch(projectText, /adsbygoogle|pagead2\.googlesyndication|ca-pub-|google_ad_client/i);
-  assert.doesNotMatch(projectText, /application\/ld\+json|ImageResponse|opengraph-image|twitter-image/i);
+  assert.doesNotMatch(projectText, /ImageResponse|opengraph-image|twitter-image|"@type":\s*"(?:FAQPage|AggregateRating|Product|Offer)"/i);
   assert.equal(trackedR2UploadMedia.trim(), "");
   assert.equal(trackedTestBundleMedia.trim(), "");
   assert.equal(statusImages.trim(), "");

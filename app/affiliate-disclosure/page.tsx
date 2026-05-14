@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { JsonLdScript } from "@/components/seo/JsonLdScript";
 import { TrustPage, TrustSection } from "@/components/site/TrustPage";
+import { buildTrustPageJsonLd } from "@/lib/seo/pageJsonLd";
 import { getCanonicalUrl, siteConfig } from "@/lib/site/siteConfig";
 
 const canonical = getCanonicalUrl("/affiliate-disclosure");
@@ -31,6 +33,15 @@ export default function AffiliateDisclosurePage() {
       intro="Affiliate links are not active in this round, but this page prepares the site for future recommendation or referral content."
       reviewNote="Draft requiring owner/legal review before affiliate links are used."
     >
+      <JsonLdScript
+        id="jsonld-affiliate-disclosure"
+        data={buildTrustPageJsonLd({
+          path: "/affiliate-disclosure",
+          title: "Affiliate Disclosure",
+          description: metadata.description as string,
+          schemaType: "WebPage",
+        })}
+      />
       <TrustSection title="How affiliate links may work">
         <p>
           In the future, I Love Coloring Page may link to products, supplies, books, printing tools, or other resources. If an affiliate relationship is

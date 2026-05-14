@@ -1,0 +1,29 @@
+{
+  "generatedAt": "2026-05-14T04:06:18.921Z",
+  "phase": "jsonld",
+  "summary": {
+    "helperExists": true,
+    "componentExists": true,
+    "pureHelperFunctionsPresent": true,
+    "safeSerializationPresent": true,
+    "noBrowserGlobals": true,
+    "staticExportCompatible": true,
+    "jsonLdScriptUsesApplicationLdJson": true,
+    "duplicateScriptGuard": true
+  },
+  "helper": {
+    "path": "src/lib/seo/jsonLd.ts",
+    "requiredFunctions": [
+      "buildHomeJsonLdSchemas",
+      "buildCollectionPageJsonLdSchemas",
+      "buildTrustPageJsonLdSchema",
+      "buildBreadcrumbListJsonLd",
+      "buildItemListJsonLd",
+      "serializeJsonLd"
+    ]
+  },
+  "component": {
+    "path": "src/components/seo/JsonLdScript.tsx",
+    "rendersMultipleObjects": true
+  }
+}

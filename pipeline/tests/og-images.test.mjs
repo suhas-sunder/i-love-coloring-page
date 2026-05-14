@@ -75,9 +75,8 @@ test("context keeps the static export and deferred scopes intact", async () => {
   assert.equal(context.summary.svgInternalOnly, true);
   assert.deepEqual(context.summary.publicDownloadFormats, ["PNG", "JPG", "WebP"]);
   assert.equal(context.summary.liveAdsenseCodePresent, false);
-  assert.equal(context.summary.jsonLdExpansionDeferred, true);
   assert.doesNotMatch(sourceText, /adsbygoogle|pagead2\.googlesyndication|ca-pub-|google_ad_client/i);
-  assert.doesNotMatch(sourceText, /application\/ld\+json|FAQPage|BreadcrumbList|ImageObject/i);
+  assert.doesNotMatch(sourceText, /"@type":\s*"(?:FAQPage|Review|AggregateRating|Product|Offer)"/i);
 });
 
 test("OG image data covers homepage, gallery landing, and all hub routes", async () => {
@@ -236,7 +235,7 @@ test("deferred features, source folders, and public download controls remain unc
   assert.match(nextConfig, /output:\s*"export"/);
   assert.equal(existsSync(path.join(REPO_ROOT, "app", "api")), false);
   assert.equal(existsSync(path.join(REPO_ROOT, "public", "image-sitemap.xml")), true);
-  assert.doesNotMatch(appSource, /application\/ld\+json|FAQPage|BreadcrumbList|ImageObject/i);
+  assert.doesNotMatch(appSource, /"@type":\s*"(?:FAQPage|Review|AggregateRating|Product|Offer)"/i);
   assert.doesNotMatch(appSource, /adsbygoogle|pagead2\.googlesyndication|ca-pub-|google_ad_client/i);
   assert.doesNotMatch(`${browserDownloads}\n${downloadMenu}`, /Download SVG|downloadSvg|svgDownload/i);
   assert.match(browserDownloads, /EXPOSED_PUBLIC_DOWNLOAD_FORMATS:\s*readonly PublicDownloadFormat\[\]\s*=\s*\["png", "jpg", "webp"\]/);

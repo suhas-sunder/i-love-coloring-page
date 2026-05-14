@@ -8,6 +8,7 @@ import { HubHero } from "@/components/coloring/HubHero";
 import { RelatedHubs } from "@/components/coloring/RelatedHubs";
 import { RotatingFeaturedGrid } from "@/components/coloring/RotatingFeaturedGrid";
 import { SeoContentSection } from "@/components/coloring/SeoContentSection";
+import { JsonLdScript } from "@/components/seo/JsonLdScript";
 import {
   getAllPhase1Hubs,
   getChildHubs,
@@ -21,6 +22,7 @@ import {
   getSeoPageContent,
 } from "@/lib/coloring/data";
 import { buildColoringMetadata } from "@/lib/coloring/metadata";
+import { buildGalleryLandingJsonLd } from "@/lib/seo/pageJsonLd";
 
 export function generateMetadata(): Metadata {
   return buildColoringMetadata("/coloring-pages");
@@ -50,6 +52,14 @@ export default function ColoringPagesLanding() {
 
   return (
     <main className="page-shell">
+      <JsonLdScript
+        id="jsonld-coloring-pages"
+        data={buildGalleryLandingJsonLd({
+          hub: rootHub,
+          visibleItems: featuredItems.length > 0 ? featuredItems : previewItems,
+          description: "Browse printable coloring pages by subject, season, style, and difficulty. Search the gallery, pick a favorite, then download or print.",
+        })}
+      />
       <AdSlot slotId="coloring-pages-header-banner" />
       <AdRail side="left" slotId="rail-left-desktop" />
       <AdRail side="right" slotId="rail-right-desktop" />

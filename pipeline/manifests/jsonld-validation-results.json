@@ -1,0 +1,266 @@
+{
+  "generatedAt": "2026-05-14T04:06:48.524Z",
+  "phase": "jsonld",
+  "summary": {
+    "validationPassed": true,
+    "sampledPageCount": 13,
+    "allJsonParses": true,
+    "allContextsValid": true,
+    "allTypesAllowed": true,
+    "allUrlsAbsolute": true,
+    "noLocalhost": true,
+    "noR2Dev": true,
+    "noPrivateR2Endpoint": true,
+    "noSvgUrls": true,
+    "noPngThumbUrls": true,
+    "noDeferredRecords": true,
+    "noForbiddenSchemaTypes": true,
+    "noFaqSchema": true,
+    "noDuplicateCanonicalMismatch": true,
+    "breadcrumbsCorrect": true,
+    "routeDataRouteCount": 139
+  },
+  "sampledPages": [
+    {
+      "path": "/",
+      "scriptCount": 1,
+      "schemaTypes": [
+        "WebSite",
+        "ImageObject",
+        "Organization",
+        "WebPage"
+      ],
+      "allJsonParses": true,
+      "contextsValid": true,
+      "typesAllowed": true,
+      "urlsAbsolute": true,
+      "deferredRecordReferenced": false,
+      "noForbiddenSchemaTypes": true,
+      "canonicalMatchesRoute": true,
+      "breadcrumbsCorrect": true,
+      "passed": true
+    },
+    {
+      "path": "/coloring-pages",
+      "scriptCount": 1,
+      "schemaTypes": [
+        "CollectionPage",
+        "ImageObject",
+        "BreadcrumbList",
+        "ListItem",
+        "ItemList"
+      ],
+      "allJsonParses": true,
+      "contextsValid": true,
+      "typesAllowed": true,
+      "urlsAbsolute": true,
+      "deferredRecordReferenced": false,
+      "noForbiddenSchemaTypes": true,
+      "canonicalMatchesRoute": true,
+      "breadcrumbsCorrect": true,
+      "passed": true
+    },
+    {
+      "path": "/coloring-pages/animals",
+      "scriptCount": 1,
+      "schemaTypes": [
+        "CollectionPage",
+        "ImageObject",
+        "BreadcrumbList",
+        "ListItem",
+        "ItemList"
+      ],
+      "allJsonParses": true,
+      "contextsValid": true,
+      "typesAllowed": true,
+      "urlsAbsolute": true,
+      "deferredRecordReferenced": false,
+      "noForbiddenSchemaTypes": true,
+      "canonicalMatchesRoute": true,
+      "breadcrumbsCorrect": true,
+      "passed": true
+    },
+    {
+      "path": "/coloring-pages/t-rex",
+      "scriptCount": 1,
+      "schemaTypes": [
+        "CollectionPage",
+        "ImageObject",
+        "BreadcrumbList",
+        "ListItem",
+        "ItemList"
+      ],
+      "allJsonParses": true,
+      "contextsValid": true,
+      "typesAllowed": true,
+      "urlsAbsolute": true,
+      "deferredRecordReferenced": false,
+      "noForbiddenSchemaTypes": true,
+      "canonicalMatchesRoute": true,
+      "breadcrumbsCorrect": true,
+      "passed": true
+    },
+    {
+      "path": "/coloring-pages/dragons",
+      "scriptCount": 1,
+      "schemaTypes": [
+        "CollectionPage",
+        "ImageObject",
+        "BreadcrumbList",
+        "ListItem",
+        "ItemList"
+      ],
+      "allJsonParses": true,
+      "contextsValid": true,
+      "typesAllowed": true,
+      "urlsAbsolute": true,
+      "deferredRecordReferenced": false,
+      "noForbiddenSchemaTypes": true,
+      "canonicalMatchesRoute": true,
+      "breadcrumbsCorrect": true,
+      "passed": true
+    },
+    {
+      "path": "/coloring-pages/christmas",
+      "scriptCount": 1,
+      "schemaTypes": [
+        "CollectionPage",
+        "ImageObject",
+        "BreadcrumbList",
+        "ListItem",
+        "ItemList"
+      ],
+      "allJsonParses": true,
+      "contextsValid": true,
+      "typesAllowed": true,
+      "urlsAbsolute": true,
+      "deferredRecordReferenced": false,
+      "noForbiddenSchemaTypes": true,
+      "canonicalMatchesRoute": true,
+      "breadcrumbsCorrect": true,
+      "passed": true
+    },
+    {
+      "path": "/coloring-pages/geometric",
+      "scriptCount": 1,
+      "schemaTypes": [
+        "CollectionPage",
+        "ImageObject",
+        "BreadcrumbList",
+        "ListItem",
+        "ItemList"
+      ],
+      "allJsonParses": true,
+      "contextsValid": true,
+      "typesAllowed": true,
+      "urlsAbsolute": true,
+      "deferredRecordReferenced": false,
+      "noForbiddenSchemaTypes": true,
+      "canonicalMatchesRoute": true,
+      "breadcrumbsCorrect": true,
+      "passed": true
+    },
+    {
+      "path": "/about",
+      "scriptCount": 1,
+      "schemaTypes": [
+        "AboutPage",
+        "ImageObject"
+      ],
+      "allJsonParses": true,
+      "contextsValid": true,
+      "typesAllowed": true,
+      "urlsAbsolute": true,
+      "deferredRecordReferenced": false,
+      "noForbiddenSchemaTypes": true,
+      "canonicalMatchesRoute": true,
+      "breadcrumbsCorrect": true,
+      "passed": true
+    },
+    {
+      "path": "/contact",
+      "scriptCount": 1,
+      "schemaTypes": [
+        "ContactPage",
+        "ImageObject"
+      ],
+      "allJsonParses": true,
+      "contextsValid": true,
+      "typesAllowed": true,
+      "urlsAbsolute": true,
+      "deferredRecordReferenced": false,
+      "noForbiddenSchemaTypes": true,
+      "canonicalMatchesRoute": true,
+      "breadcrumbsCorrect": true,
+      "passed": true
+    },
+    {
+      "path": "/privacy",
+      "scriptCount": 1,
+      "schemaTypes": [
+        "PrivacyPolicy",
+        "ImageObject"
+      ],
+      "allJsonParses": true,
+      "contextsValid": true,
+      "typesAllowed": true,
+      "urlsAbsolute": true,
+      "deferredRecordReferenced": false,
+      "noForbiddenSchemaTypes": true,
+      "canonicalMatchesRoute": true,
+      "breadcrumbsCorrect": true,
+      "passed": true
+    },
+    {
+      "path": "/terms",
+      "scriptCount": 1,
+      "schemaTypes": [
+        "TermsOfService",
+        "ImageObject"
+      ],
+      "allJsonParses": true,
+      "contextsValid": true,
+      "typesAllowed": true,
+      "urlsAbsolute": true,
+      "deferredRecordReferenced": false,
+      "noForbiddenSchemaTypes": true,
+      "canonicalMatchesRoute": true,
+      "breadcrumbsCorrect": true,
+      "passed": true
+    },
+    {
+      "path": "/affiliate-disclosure",
+      "scriptCount": 1,
+      "schemaTypes": [
+        "WebPage",
+        "ImageObject"
+      ],
+      "allJsonParses": true,
+      "contextsValid": true,
+      "typesAllowed": true,
+      "urlsAbsolute": true,
+      "deferredRecordReferenced": false,
+      "noForbiddenSchemaTypes": true,
+      "canonicalMatchesRoute": true,
+      "breadcrumbsCorrect": true,
+      "passed": true
+    },
+    {
+      "path": "/editorial-policy",
+      "scriptCount": 1,
+      "schemaTypes": [
+        "WebPage",
+        "ImageObject"
+      ],
+      "allJsonParses": true,
+      "contextsValid": true,
+      "typesAllowed": true,
+      "urlsAbsolute": true,
+      "deferredRecordReferenced": false,
+      "noForbiddenSchemaTypes": true,
+      "canonicalMatchesRoute": true,
+      "breadcrumbsCorrect": true,
+      "passed": true
+    }
+  ]
+}

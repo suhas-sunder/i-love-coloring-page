@@ -6,8 +6,10 @@ import { AdSlot } from "@/components/ads/AdSlot";
 import { HubCard } from "@/components/coloring/HubCard";
 import { RotatingFeaturedGrid } from "@/components/coloring/RotatingFeaturedGrid";
 import { SeoContentSection } from "@/components/coloring/SeoContentSection";
+import { JsonLdScript } from "@/components/seo/JsonLdScript";
 import { getAllPhase1Hubs, getFeaturedRotationCandidateItems, getGeneratedFeaturedItems, getRootHub, getSeoPageContent } from "@/lib/coloring/data";
 import { buildColoringMetadata } from "@/lib/coloring/metadata";
+import { buildHomePageJsonLd } from "@/lib/seo/pageJsonLd";
 
 export function generateMetadata(): Metadata {
   return buildColoringMetadata("/");
@@ -25,6 +27,7 @@ export default function HomePage() {
 
   return (
     <main className="page-shell">
+      <JsonLdScript id="jsonld-home" data={buildHomePageJsonLd()} />
       <AdSlot slotId="home-header-banner" />
       <AdRail side="left" slotId="rail-left-desktop" />
       <AdRail side="right" slotId="rail-right-desktop" />

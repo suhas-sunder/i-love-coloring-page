@@ -1,0 +1,38 @@
+{
+  "generatedAt": "2026-05-14T04:06:18.916Z",
+  "phase": "jsonld",
+  "summary": {
+    "correctRepository": true,
+    "currentBranch": "ver-5-deployed-may-13-2026",
+    "commitAca3dc2Exists": true,
+    "staticExportConfigured": true,
+    "appApiRoutePresent": false,
+    "coloringPagesRoutePresent": true,
+    "hubRoutePresent": true,
+    "runtimeGeneratedDataExists": true,
+    "runtimeAvailableRecords": 6352,
+    "deferredManualReviewRecords": 205,
+    "runtimeIndexableHubs": 131,
+    "regularSitemapExists": true,
+    "imageSitemapExists": true,
+    "ogImagesExist": true,
+    "ogImageCount": 133,
+    "siteUrl": "https://www.ilovecoloringpage.com",
+    "publicAssetBaseUrl": "https://assets.ilovecoloringpage.com/coloring-pages",
+    "contactEmail": "admin@ilovecoloringpage.com",
+    "svgInternalOnly": true,
+    "publicDownloadFormats": [
+      "PNG",
+      "JPG",
+      "WebP"
+    ],
+    "liveAdsenseCodePresent": false,
+    "jsonLdWorkStarted": true
+  },
+  "checks": {
+    "availableRecordCountExpected": 6352,
+    "deferredRecordCountExpected": 205,
+    "publicFilesChecked": 134,
+    "mediaCopiedToPublicBeyondXmlAndOg": []
+  }
+}
