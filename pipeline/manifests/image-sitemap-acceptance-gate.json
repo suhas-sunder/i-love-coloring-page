@@ -1,0 +1,20 @@
+{
+  "generatedAt": "2026-05-13T22:53:14.447Z",
+  "runId": "image-sitemap-acceptance-gate",
+  "summary": {
+    "image_sitemap_created": true,
+    "static_export_compatible": true,
+    "robots_references_image_sitemap": true,
+    "regular_sitemap_still_valid": true,
+    "image_url_sample_passed": true,
+    "xml_validation_passed": true,
+    "deferred_records_excluded": true,
+    "svg_excluded": true,
+    "png_thumbs_excluded": true,
+    "per_image_routes_absent": true,
+    "ready_for_og_image_round": true,
+    "ready_for_jsonld_round": true,
+    "ready_for_live_ads_round": false,
+    "blockers": []
+  }
+}

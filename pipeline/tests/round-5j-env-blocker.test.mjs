@@ -149,7 +149,7 @@ test("Round 5J preserves media boundaries, SVG hidden status, and deferred launc
   assert.match(downloadMenu, /label: "WebP"/);
   assert.doesNotMatch(`${browserDownloads}\n${downloadMenu}`, /Download SVG|downloadSvg|svgDownload/i);
   assert.doesNotMatch(projectText, /adsbygoogle|pagead2\.googlesyndication|ca-pub-|google_ad_client/i);
-  assert.doesNotMatch(projectText, /image-sitemap|ImageSitemap|opengraph-image|twitter-image|ImageResponse/i);
+  assert.doesNotMatch(projectText, /opengraph-image|twitter-image|ImageResponse/i);
   assert.equal(trackedR2UploadMedia.trim(), "");
   assert.equal(trackedTestBundleMedia.trim(), "");
   assert.equal(statusImages.trim(), "");

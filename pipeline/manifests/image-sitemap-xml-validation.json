@@ -1,0 +1,67 @@
+{
+  "generatedAt": "2026-05-13T22:53:14.447Z",
+  "runId": "image-sitemap-xml-validation",
+  "summary": {
+    "xmlValidationPassed": true,
+    "fileCount": 1,
+    "pageUrlCount": 131,
+    "imageEntryCount": 6352,
+    "namespaceCorrect": true,
+    "tagBalanceValid": true,
+    "xmlDeclarationPresent": true,
+    "noFileExceedsLimits": true,
+    "noUrlExceedsImageLimit": true,
+    "allPageLocsAbsolute": true,
+    "allImageLocsAbsolute": true,
+    "noSvgImageUrls": true,
+    "noPngThumbImageUrls": true,
+    "noLocalUrls": true,
+    "noR2DevUrls": true,
+    "noDuplicatePrefix": true,
+    "noPerImageRoutes": true,
+    "noDuplicateImageUrls": true,
+    "noDuplicatePageUrls": true,
+    "noDeprecatedImageTags": true,
+    "noObviousInvalidTitlesCaptions": true,
+    "noPrivateInternalData": true,
+    "fileSizeBytes": 1201552,
+    "maxImagesOnPage": 492
+  },
+  "files": [
+    {
+      "path": "public/image-sitemap.xml",
+      "pageUrlCount": 131,
+      "imageEntryCount": 6352,
+      "fileSizeBytes": 1201552
+    }
+  ],
+  "errors": [],
+  "samples": {
+    "firstPageLocs": [
+      "https://www.ilovecoloringpage.com/coloring-pages",
+      "https://www.ilovecoloringpage.com/coloring-pages/animals",
+      "https://www.ilovecoloringpage.com/coloring-pages/anime-girls",
+      "https://www.ilovecoloringpage.com/coloring-pages/bakery",
+      "https://www.ilovecoloringpage.com/coloring-pages/bats"
+    ],
+    "firstImageLocs": [
+      "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-antelopes-49a5eb802f.webp",
+      "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+      "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-buffalo-42947367b4.webp",
+      "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-chickens-1d898c58de.webp",
+      "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-crocodile-0389692b30.webp"
+    ],
+    "largestImageCounts": [
+      492,
+      277,
+      224,
+      213,
+      207,
+      204,
+      175,
+      166,
+      159,
+      153
+    ]
+  }
+}

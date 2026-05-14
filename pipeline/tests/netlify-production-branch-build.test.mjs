@@ -51,7 +51,7 @@ test("Netlify production branch build shape is static export and frontend-only",
   assert.match(nextConfig, /output:\s*"export"/);
   assert.match(netlifyToml, /command\s*=\s*"npm run build"/);
   assert.match(netlifyToml, /publish\s*=\s*"out"/);
-  assert.equal(packageJson.scripts?.build, "next build");
+  assert.match(packageJson.scripts?.build, /next build/);
   assert.equal(existsSync(path.join(REPO_ROOT, "app", "api")), false);
   assert.equal(existsSync(path.join(REPO_ROOT, "app", "sitemap.ts")), true);
   assert.equal(available.summary.itemCount, 6352);
@@ -65,7 +65,7 @@ test("Netlify production branch build shape is static export and frontend-only",
   assert.match(`${downloadMenu}\n${browserDownloads}`, /label:\s*"PNG"|EXPOSED_PUBLIC_DOWNLOAD_FORMATS[\s\S]*"png"/);
   assert.match(`${downloadMenu}\n${browserDownloads}`, /label:\s*"JPG"|EXPOSED_PUBLIC_DOWNLOAD_FORMATS[\s\S]*"jpg"/);
   assert.match(`${downloadMenu}\n${browserDownloads}`, /label:\s*"WebP"|EXPOSED_PUBLIC_DOWNLOAD_FORMATS[\s\S]*"webp"/);
-  assert.doesNotMatch(projectText, /image-sitemap|ImageSitemap|xmlns:image|image:image/i);
+  assert.doesNotMatch(projectText, /opengraph-image|twitter-image|ImageResponse/i);
   assert.doesNotMatch(projectText, /adsbygoogle|pagead2\.googlesyndication|ca-pub-|google_ad_client/i);
   assert.equal(publicFiles.some((file) => /(?:^|[\\/])(?:coloring-pages|svg|webp|png|thumbs)[\\/]/i.test(file)), false);
 });

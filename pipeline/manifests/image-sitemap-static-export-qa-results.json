@@ -1,0 +1,93 @@
+{
+  "generatedAt": "2026-05-13T22:53:14.447Z",
+  "runId": "image-sitemap-static-export-qa",
+  "summary": {
+    "staticExportQaPassed": true,
+    "buildCommand": "npm run build",
+    "buildExitCode": 0,
+    "buildGeneratedOutDirectory": true,
+    "imageSitemapAccessibleLocally": true,
+    "robotsTxtAccessibleLocally": true,
+    "sitemapXmlAccessibleLocally": true,
+    "robotsTxtReferencesImageSitemap": true,
+    "robotsTxtReferencesRegularSitemap": true,
+    "regularSitemapStillAccessible": true,
+    "imageSitemapImageCount": 6352,
+    "imageSitemapExpectedImageCount": 6352,
+    "imageSitemapCountMatchesData": true,
+    "sampleHubPagesStillWork": true,
+    "galleryImagesStillRender": true,
+    "downloadPrintControlsPresent": true,
+    "noRouteRegression": true
+  },
+  "localOrigin": "http://127.0.0.1:57810",
+  "httpResults": [
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "ok": true,
+      "contentType": "application/xml; charset=utf-8",
+      "bodySample": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n<url>\n<loc>https://www.ilovecoloringpage.com</loc>\n<lastmod>2026-05-11T00:00:00.000Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>1</"
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "ok": true,
+      "contentType": "text/plain; charset=utf-8",
+      "bodySample": "User-Agent: *\nAllow: /\nAllow: /coloring-pages\n\nSitemap: https://www.ilovecoloringpage.com/sitemap.xml\nSitemap: https://www.ilovecoloringpage.com/image-sitemap.xml\n"
+    },
+    {
+      "path": "/image-sitemap.xml",
+      "status": 200,
+      "ok": true,
+      "contentType": "application/xml; charset=utf-8",
+      "bodySample": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\" xmlns:image=\"http://www.google.com/schemas/sitemap-image/1.1\">\n  <url>\n    <loc>https://www.ilovecoloringpage.com/coloring-pages</loc>\n    <i"
+    }
+  ],
+  "pageResults": [
+    {
+      "path": "/",
+      "status": 200,
+      "ok": true,
+      "imageRendered": true,
+      "printPresent": true,
+      "formatsPresent": true
+    },
+    {
+      "path": "/coloring-pages",
+      "status": 200,
+      "ok": true,
+      "imageRendered": true,
+      "printPresent": true,
+      "formatsPresent": true
+    },
+    {
+      "path": "/coloring-pages/animals",
+      "status": 200,
+      "ok": true,
+      "imageRendered": true,
+      "printPresent": true,
+      "formatsPresent": true
+    },
+    {
+      "path": "/coloring-pages/t-rex",
+      "status": 200,
+      "ok": true,
+      "imageRendered": true,
+      "printPresent": true,
+      "formatsPresent": true
+    },
+    {
+      "path": "/coloring-pages/dragons",
+      "status": 200,
+      "ok": true,
+      "imageRendered": true,
+      "printPresent": true,
+      "formatsPresent": true
+    }
+  ],
+  "buildOutput": {
+    "stdoutTail": "\n> i-love-coloring-page@0.1.0 build\n> node pipeline/scripts/build-image-sitemap-data.mjs && node pipeline/scripts/build-image-sitemap-xml.mjs && next build\n\n▲ Next.js 16.2.6 (Turbopack)\n- Environments: .env.local\n\n  Creating an optimized production build ...\n✓ Compiled successfully in 1950ms\n  Running TypeScript ...\n  Finished TypeScript in 4.3s ...\n  Collecting page data using 16 workers ...\n  Generating static pages using 16 workers (0/579) ...\n  Generating static pages using 16 workers (144/579) \r\n  Generating static pages using 16 workers (289/579) \r\n  Generating static pages using 16 workers (434/579) \r\n✓ Generating static pages using 16 workers (579/579) in 10.1s\n  Finalizing page optimization ...\n\nRoute (app)\n┌ ○ /\n├ ○ /_not-found\n├ ○ /about\n├ ○ /affiliate-disclosure\n├ ○ /coloring-pages\n├ ● /coloring-pages/[hubSlug]\n│ ├ /coloring-pages/animals\n│ ├ /coloring-pages/anime-girls\n│ ├ /coloring-pages/bakery\n│ └ [+127 more paths]\n├ ● /coloring-pages/[hubSlug]/page/[page]\n│ ├ /coloring-pages/animals/page/2\n│ ├ /coloring-pages/animals/page/3\n│ ├ /coloring-pages/animals/page/4\n│ └ [+433 more paths]\n├ ○ /contact\n├ ○ /editorial-policy\n├ ○ /icon.svg\n├ ○ /privacy\n├ ○ /robots.txt\n├ ○ /sitemap.xml\n└ ○ /terms\n\n\n○  (Static)  prerendered as static content\n●  (SSG)     prerendered as static HTML (uses generateStaticParams)\n\n",
+    "stderrTail": ""
+  }
+}

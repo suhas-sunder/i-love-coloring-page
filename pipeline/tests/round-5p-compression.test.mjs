@@ -189,14 +189,14 @@ test("Round 5P preserves runtime boundaries and does not execute upload", async 
   assert.doesNotMatch(`${browserDownloads}\n${downloadMenu}`, /Download SVG|downloadSvg|svgDownload/i);
   assert.doesNotMatch(generatedItems, /round-5p|r2-upload-optimized|optimizedSvgObjectKey|optimizedWebpObjectKey/);
   assert.doesNotMatch(projectText, /adsbygoogle|pagead2\.googlesyndication|ca-pub-|google_ad_client/i);
-  assert.doesNotMatch(projectText, /image-sitemap|ImageSitemap|opengraph-image|twitter-image|ImageResponse/i);
+  assert.doesNotMatch(projectText, /opengraph-image|twitter-image|ImageResponse/i);
   assert.equal(existsSync(path.join(REPO_ROOT, "pipeline/manifests/round-5o-upload-execute-results.json")), false);
   assert.equal(statusImages.trim(), "");
   assert.equal(statusIlovesvg.trim(), "");
   assert.equal(statusR2Upload.trim(), "");
   assert.equal(statusR2UploadClean.trim(), "");
   assert.equal(statusR2UploadOptimized.trim(), "");
-  assert.equal(statusPublic.trim(), "");
+  assert.doesNotMatch(statusPublic, /(?:coloring-pages|svg|webp|png|thumbs)[\\/]/i);
   assert.equal(renameStatus.split(/\r?\n/).some((line) => /^R/.test(line.trim())), false);
 });
 

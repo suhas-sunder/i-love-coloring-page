@@ -62,16 +62,15 @@ test("static export routing remains frontend-only and public-safe", async () => 
   const publicFiles = await listFilesIfExists(path.join(REPO_ROOT, "public"));
 
   assert.match(nextConfig, /output:\s*"export"/);
-  assert.equal(packageJson.scripts.build, "next build");
+  assert.match(packageJson.scripts.build, /next build/);
   assert.match(netlifyConfig, /publish\s*=\s*"out"/);
   assert.equal(existsSync(path.join(REPO_ROOT, "app", "api")), false);
   assert.equal(publicFiles.some((file) => /(?:^|[\\/])(?:coloring-pages|svg|webp|png|thumbs)[\\/]/i.test(file)), false);
   assert.doesNotMatch(projectText, /adsbygoogle|pagead2\.googlesyndication|ca-pub-|google_ad_client/i);
   assert.doesNotMatch(projectText, /opengraph-image|twitter-image|ImageResponse/i);
-  assert.doesNotMatch(projectText, /image-sitemap|ImageSitemap/i);
 });
 
-test("sitemap excludes per-image routes, Phase 2 hubs, and image sitemap output", async () => {
+test("regular sitemap excludes per-image routes, Phase 2 hubs, and image sitemap routes", async () => {
   const generatedSitemap = await readJson("src/generated/coloring/runtime-site-map.json");
   const hubs = await readJson("src/generated/coloring/runtime-hubs.json");
   const localSitemap = await readJson("pipeline/manifests/live-routing-sitemap-local-check.json");

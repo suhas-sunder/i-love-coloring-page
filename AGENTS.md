@@ -497,6 +497,19 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Navigation menus must keep search near the top, remain accessible, and contain no ads.
 - Do not start image sitemap, Open Graph image, JSON-LD expansion, or live ads until UX polish QA passes.
 
+## Image Sitemap Gate
+
+- Image sitemap XML must use uploaded clean WebP preview URLs only.
+- SVG remains internal-only and should not appear as an image sitemap URL.
+- PNG preview and thumbnail URLs should not appear in image sitemap XML.
+- Deferred manual-review records must not appear in the image sitemap.
+- Do not create per-image pages for image discovery.
+- Image sitemap generation must remain static-export compatible and must not require app/api or server runtime.
+- Robots and sitemap references must use the canonical `https://www.ilovecoloringpage.com` domain.
+- The image sitemap should attach images to existing public hub URLs, not fragment anchors or per-image routes.
+- Open Graph image work and JSON-LD expansion may only start after image sitemap acceptance passes.
+- Live ads remain separate and require explicit owner approval.
+
 ## Conversion Workflow
 
 - Do not choose a winning preset until a later bakeoff round compares outputs.

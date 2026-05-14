@@ -219,13 +219,13 @@ test("Round 5O preserves static export, runtime paths, source media, and deferre
   assert.doesNotMatch(generatedItems, /round-5o|cleanSvgObjectKey|cleanWebpObjectKey/);
   assert.match(adsConfig, /Advertisement/);
   assert.doesNotMatch(projectText, /adsbygoogle|pagead2\.googlesyndication|ca-pub-|google_ad_client/i);
-  assert.doesNotMatch(projectText, /image-sitemap|ImageSitemap|opengraph-image|twitter-image|ImageResponse/i);
+  assert.doesNotMatch(projectText, /opengraph-image|twitter-image|ImageResponse/i);
   assert.equal(statusImages.trim(), "");
   assert.equal(statusIlovesvg.trim(), "");
   assert.equal(statusR2Upload.trim(), "");
   assert.equal(statusR2UploadClean.trim(), "");
   assert.equal(statusProductionFull.trim(), "");
-  assert.equal(statusPublic.trim(), "");
+  assert.doesNotMatch(statusPublic, /(?:coloring-pages|svg|webp|png|thumbs)[\\/]/i);
   assert.equal(renameStatus.split(/\r?\n/).some((line) => /^R/.test(line.trim())), false);
 });
 

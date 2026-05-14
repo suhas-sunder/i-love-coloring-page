@@ -160,7 +160,7 @@ test("Round 5B does not create image sitemap, OG image generation, app API, uplo
   assert.match(script, /sharp/);
   assert.match(script, /webp/);
   assert.doesNotMatch(script, /wrangler\s+r2\s+object\s+put|cloudflare\.request|bucket\s+cors\s+set/i);
-  assert.doesNotMatch(allPublicSource, /ImageResponse|opengraph-image|twitter-image|image sitemap|ImageSitemap/i);
+  assert.doesNotMatch(allPublicSource, /ImageResponse|opengraph-image|twitter-image/i);
   assert.doesNotMatch(allPublicSource, /adsbygoogle|pagead2\.googlesyndication|ca-pub-/i);
 });
 

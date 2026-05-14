@@ -140,7 +140,7 @@ test("Round 5M preserves static export, runtime paths, media boundaries, and def
   assert.equal(appPlan.summary.safeToSwitchRuntimeNow, false);
   assert.match(adsConfig, /Advertisement/);
   assert.doesNotMatch(projectText, /adsbygoogle|pagead2\.googlesyndication|ca-pub-|google_ad_client/i);
-  assert.doesNotMatch(projectText, /image-sitemap|ImageSitemap|opengraph-image|twitter-image|ImageResponse/i);
+  assert.doesNotMatch(projectText, /opengraph-image|twitter-image|ImageResponse/i);
   assert.equal(trackedR2UploadMedia.trim(), "");
   assert.equal(statusImages.trim(), "");
   assert.equal(statusIlovesvg.trim(), "");

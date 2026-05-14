@@ -82,7 +82,6 @@ test("static-export and runtime safety boundaries remain intact", async () => {
   assert.equal(publicFiles.some((file) => /(?:^|[\\/])(?:coloring-pages|svg|webp|png|thumbs)[\\/]/i.test(file)), false);
   assert.doesNotMatch(projectText, /adsbygoogle|pagead2\.googlesyndication|ca-pub-|google_ad_client/i);
   assert.doesNotMatch(projectText, /opengraph-image|twitter-image|ImageResponse/i);
-  assert.doesNotMatch(projectText, /image-sitemap|ImageSitemap/i);
   assert.equal(await gitStatusFor("images"), "");
   assert.equal(await gitStatusFor("ilovesvg"), "");
 });

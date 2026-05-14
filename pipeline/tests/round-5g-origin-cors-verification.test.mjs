@@ -165,7 +165,7 @@ test("static export, media boundaries, downloads, ads, and deferred SEO work rem
   assert.doesNotMatch(imageCard + browserDownloads, /Download SVG|downloadSvg|svgDownload/i);
   assert.doesNotMatch(imageCard, /\bDownload JPG\b|\bDownload JPEG\b|\bDownload WebP\b/);
   assert.doesNotMatch(projectText, /adsbygoogle|pagead2\.googlesyndication|ca-pub-|google_ad_client/i);
-  assert.doesNotMatch(projectText, /ImageResponse|opengraph-image|twitter-image|image sitemap|ImageSitemap/i);
+  assert.doesNotMatch(projectText, /ImageResponse|opengraph-image|twitter-image/i);
   assert.equal(existsSync(path.join(REPO_ROOT, "app", "api")), false);
   assert.equal(trackedR2UploadMedia.trim(), "");
   assert.equal(trackedTestBundleMedia.trim(), "");

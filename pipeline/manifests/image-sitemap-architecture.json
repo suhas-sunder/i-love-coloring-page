@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-05-13T22:53:14.447Z",
+  "runId": "image-sitemap-architecture",
+  "summary": {
+    "selectedArchitecture": "generated-static-public-xml",
+    "staticExportCompatible": true,
+    "appApiRequired": false,
+    "serverRuntimeRequired": false,
+    "deterministic": true,
+    "publicFilePath": "public/image-sitemap.xml",
+    "publicUrl": "https://www.ilovecoloringpage.com/image-sitemap.xml",
+    "regularSitemapUrl": "https://www.ilovecoloringpage.com/sitemap.xml",
+    "packageBuildRegeneratesXml": true,
+    "mediaCopiedToPublic": false,
+    "xmlOnlyPublicFiles": [
+      "public/image-sitemap.xml"
+    ],
+    "splitSitemapIndexPlannedIfNeeded": true
+  },
+  "decision": {
+    "reason": "Next static export reliably copies public XML files into out/, while app route handlers would add unnecessary static-export risk.",
+    "rejectedOptions": [
+      {
+        "option": "app route handler",
+        "reason": "Avoided because this site has no backend routes and the round explicitly requires static-export safety."
+      },
+      {
+        "option": "app/api route",
+        "reason": "Rejected because app/api is forbidden and unnecessary for static XML."
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-05-13T22:53:14.447Z",
+  "runId": "image-sitemap-xml-build",
+  "summary": {
+    "imageSitemapCreated": true,
+    "outputArchitecture": "single-static-xml-file",
+    "generatedFiles": [
+      "public/image-sitemap.xml"
+    ],
+    "splitCount": 0,
+    "sitemapIndexCreated": false,
+    "pageUrlCount": 131,
+    "imageEntryCount": 6352,
+    "uniqueImageUrlCount": 6352,
+    "fileSizeBytes": 1201552,
+    "maxImagesPerPage": 492,
+    "xmlWithinUrlLimit": true,
+    "xmlWithinSizeLimit": true,
+    "noEmptySitemapFiles": true,
+    "allLocUrlsAbsolute": true,
+    "allImageLocUrlsAbsolute": true,
+    "noLocalUrls": true,
+    "noR2Dev": true,
+    "noSvgImageUrls": true,
+    "noPngThumbImageUrls": true,
+    "noDuplicateImageUrls": true,
+    "noPerImageHtmlRoutes": true,
+    "emptyPageCount": 0,
+    "overImageLimitPageCount": 0
+  },
+  "files": [
+    {
+      "path": "public/image-sitemap.xml",
+      "publicUrl": "https://www.ilovecoloringpage.com/image-sitemap.xml",
+      "type": "urlset",
+      "pageUrlCount": 131,
+      "imageEntryCount": 6352,
+      "fileSizeBytes": 1201552
+    }
+  ],
+  "emptyPages": [],
+  "overImageLimitPages": []
+}

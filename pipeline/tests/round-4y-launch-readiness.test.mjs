@@ -109,7 +109,7 @@ test("footer, sitemap, and static export boundaries remain launch-safe", async (
   }
 
   assert.match(nextConfig, /output:\s*"export"/);
-  assert.doesNotMatch(sitemapSource + robotsSource, /\/image-sitemap|\/coloring-pages\/[^"']+\/[^"']+#[^"']+/i);
+  assert.doesNotMatch(sitemapSource + robotsSource, /\/coloring-pages\/[^"']+\/[^"']+#[^"']+/i);
   assert.equal(sitemapResults.no_per_image_routes, true);
   assert.equal(sitemapResults.no_phase2_hub_routes, true);
   assert.equal(sitemapResults.no_image_sitemap, true);

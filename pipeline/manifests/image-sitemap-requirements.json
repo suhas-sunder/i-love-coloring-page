@@ -1,0 +1,53 @@
+{
+  "generatedAt": "2026-05-13T22:53:14.447Z",
+  "runId": "image-sitemap-requirements",
+  "sources": [
+    {
+      "title": "Image sitemaps",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/image-sitemaps"
+    },
+    {
+      "title": "Image SEO best practices",
+      "url": "https://developers.google.com/search/docs/appearance/google-images"
+    },
+    {
+      "title": "Build and submit a sitemap",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap"
+    },
+    {
+      "title": "Manage sitemaps with sitemap index files",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/large-sitemaps"
+    }
+  ],
+  "summary": {
+    "officialGoogleDocsOnly": true,
+    "imageNamespace": "http://www.google.com/schemas/sitemap-image/1.1",
+    "requiredImageTags": [
+      "image:image",
+      "image:loc"
+    ],
+    "deprecatedImageTagsExcluded": [
+      "image:caption",
+      "image:geo_location",
+      "image:title",
+      "image:license"
+    ],
+    "maxImagesPerUrl": 1000,
+    "maxUrlsPerSitemap": 50000,
+    "maxUncompressedBytesPerSitemap": 52428800,
+    "absoluteUrlsRequired": true,
+    "webpAcceptedByGoogleSearch": true,
+    "cdnImageUrlsAllowedWhenVerified": true,
+    "sitemapIndexNeeded": false,
+    "svgExcludedReason": "SVG is internal-only for this product and the owner asked the image sitemap to prefer WebP preview URLs.",
+    "perImagePagesCreated": false,
+    "deferredRecordsExcludedReason": "The 205 deferred records are hidden from public runtime and are not verified for public discovery."
+  },
+  "notes": [
+    "Google's current image sitemap reference only requires image:image and image:loc.",
+    "Google's image documentation lists WebP among supported image formats.",
+    "Google's current image sitemap reference marks image:title and image:caption as deprecated, so titles and captions are retained in the data manifest but not emitted in XML.",
+    "Generic sitemap guidance requires absolute URLs and entity escaping.",
+    "A sitemap index is only needed if the generated sitemap exceeds URL or size limits."
+  ]
+}

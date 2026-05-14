@@ -178,7 +178,7 @@ test("static export, media boundaries, route boundaries, and deferred production
   assert.equal(appFiles.some((file) => normalizePath(file).includes("/api/")), false);
   assert.equal(publicFiles.some((file) => /(?:^|[\\/])(?:svg|png|thumbs|webp|coloring-pages)[\\/]/i.test(file)), false);
   assert.doesNotMatch(projectText, /adsbygoogle|pagead2\.googlesyndication|ca-pub-|google_ad_client/i);
-  assert.doesNotMatch(projectText, /ImageResponse|opengraph-image|twitter-image|image sitemap|ImageSitemap/i);
+  assert.doesNotMatch(projectText, /ImageResponse|opengraph-image|twitter-image/i);
   assert.equal(futurePlan.summary.imageSitemapDeferred, true);
   assert.equal(futurePlan.summary.openGraphImageDeferred, true);
   assert.equal(trackedR2UploadMedia.trim(), "");

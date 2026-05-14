@@ -122,7 +122,7 @@ test("static export, media boundaries, ads, and deferred SEO work remain intact"
   assert.equal(publicFiles.some((file) => /(?:^|[\\/])(?:svg|png|thumbs|webp|coloring-pages)[\\/]/i.test(file)), false);
   assert.doesNotMatch(projectText, /Download SVG|SVG download|downloadSvg|svgDownload/i);
   assert.doesNotMatch(projectText, /adsbygoogle|pagead2\.googlesyndication|ca-pub-|google_ad_client/i);
-  assert.doesNotMatch(projectText, /ImageResponse|opengraph-image|twitter-image|image sitemap|ImageSitemap/i);
+  assert.doesNotMatch(projectText, /ImageResponse|opengraph-image|twitter-image/i);
   assert.equal(trackedR2UploadMedia.trim(), "");
   assert.equal(trackedTestBundleMedia.trim(), "");
   assert.equal(statusImages.trim(), "");
