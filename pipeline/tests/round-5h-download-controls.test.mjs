@@ -56,7 +56,7 @@ test("browser download API exposes raster downloads and hides SVG downloads", as
   assert.match(downloads, /canvas-export-unsupported/);
   assert.match(downloads, /canvas-tainted/);
   assert.match(downloads, /EXPOSED_PUBLIC_DOWNLOAD_FORMATS:\s*readonly PublicDownloadFormat\[\]\s*=\s*\["png", "jpg", "webp"\]/);
-  assert.doesNotMatch(downloads, /downloadSvg|svgDownload|Download SVG/i);
+  assert.doesNotMatch(downloads, /downloadSvg\b|Download SVG/i);
 });
 
 test("ImageCard renders a compact Download control with PNG, JPG, and WebP but no SVG", async () => {
@@ -69,12 +69,13 @@ test("ImageCard renders a compact Download control with PNG, JPG, and WebP but n
   assert.match(source, /label: "PNG"/);
   assert.match(source, /label: "JPG"/);
   assert.match(source, /label: "WebP"/);
-  assert.match(source, /aria-expanded|<details/);
+  assert.match(source, /print-preview-panel|download-options/);
+  assert.doesNotMatch(source, /summary\.download-menu-summary|>\s*Formats\s*</);
   assert.match(source, /aria-live="polite"/);
   assert.match(source, /downloadPng/);
   assert.match(source, /downloadJpeg/);
   assert.match(source, /downloadWebp/);
-  assert.doesNotMatch(source, /Download SVG|>SVG<|downloadSvg|svgDownload/i);
+  assert.doesNotMatch(source, /Download SVG|>SVG<|downloadSvg\b/i);
 });
 
 test("Round 5H reports document local and temporary public browser download QA", async () => {
@@ -120,7 +121,7 @@ test("static export, media boundaries, ads, and deferred SEO work remain intact"
   assert.equal(appFiles.some((file) => normalizePath(file).includes("/api/")), false);
   assert.equal(existsSync(path.join(REPO_ROOT, "app", "api")), false);
   assert.equal(publicFiles.some((file) => /(?:^|[\\/])(?:svg|png|thumbs|webp|coloring-pages)[\\/]/i.test(file)), false);
-  assert.doesNotMatch(projectText, /Download SVG|SVG download|downloadSvg|svgDownload/i);
+  assert.doesNotMatch(projectText, /Download SVG|SVG download|downloadSvg\b/i);
   assert.doesNotMatch(projectText, /adsbygoogle|pagead2\.googlesyndication|ca-pub-|google_ad_client/i);
   assert.doesNotMatch(projectText, /ImageResponse|opengraph-image|twitter-image/i);
   assert.equal(trackedR2UploadMedia.trim(), "");

@@ -75,8 +75,8 @@ export function HubHero({
               <div className="hero-related-links">
                 {relatedLinks.map((link) => (
                   <Link className="hero-related-link" href={link.href} key={link.href} prefetch={false}>
-                    <span>{link.label}</span>
-                    {typeof link.assetCount === "number" ? <strong>{link.assetCount.toLocaleString()}</strong> : null}
+                    <span className="hero-related-label">{link.label}</span>
+                    {typeof link.assetCount === "number" ? <strong className="hero-related-count">{link.assetCount.toLocaleString()}</strong> : null}
                   </Link>
                 ))}
               </div>

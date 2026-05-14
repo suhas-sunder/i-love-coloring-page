@@ -1,0 +1,207 @@
+{
+  "generatedAt": "2026-05-14T02:35:08.335Z",
+  "runId": "ux-corrective-print-qa",
+  "summary": {
+    "printQaPassed": true,
+    "samplesChecked": 6,
+    "printWorkflowOpens": true,
+    "titleAndPreviewMeaningfulBeforePrint": true,
+    "generatedPrintDocumentOnePageOriented": true,
+    "noBlankPrintPagesExpected": true,
+    "imageCentered": true,
+    "frameAndBrandingVisible": true,
+    "noAppUiControlsInPrintOutput": true,
+    "svgDownloadAbsent": true,
+    "noInfinitePreparingState": true,
+    "noUnexplainedAboutBlank": true,
+    "actualPrintDialogPageCountInspectable": false,
+    "printDialogLimitation": "Browser-native print headers and footers are controlled by browser settings. QA validates generated print DOM, print CSS, and headless PDF page count."
+  },
+  "samples": [
+    {
+      "label": "Animals Alligator",
+      "route": "/coloring-pages/animals",
+      "query": "alligator",
+      "beforePrint": {
+        "titleVisible": true,
+        "previewImageReady": true,
+        "svgDownloadAbsent": true,
+        "preparingStateVisible": false
+      },
+      "printDom": {
+        "printCalls": 1,
+        "bodyPrintClass": true,
+        "printDocumentExists": true,
+        "imageExists": true,
+        "imageCenteredByCss": true,
+        "frameVisible": true,
+        "brandVisible": true,
+        "appUiControlsHiddenInPrint": true,
+        "printDocumentOverflowHidden": true,
+        "printDocumentBreakAvoid": true,
+        "noDownloadControlsInPrintDom": true
+      },
+      "pdfPageCount": 1,
+      "screenshotPath": "pipeline/review/ux-corrective/screenshots/animals-alligator-print.png",
+      "pdfPath": "pipeline/review/ux-corrective/print-pdfs/animals-alligator.pdf",
+      "passed": true
+    },
+    {
+      "label": "Anime Girl Air Balloon",
+      "route": "/coloring-pages/anime-girls",
+      "query": "air balloon",
+      "beforePrint": {
+        "titleVisible": true,
+        "previewImageReady": true,
+        "svgDownloadAbsent": true,
+        "preparingStateVisible": false
+      },
+      "printDom": {
+        "printCalls": 1,
+        "bodyPrintClass": true,
+        "printDocumentExists": true,
+        "imageExists": true,
+        "imageCenteredByCss": true,
+        "frameVisible": true,
+        "brandVisible": true,
+        "appUiControlsHiddenInPrint": true,
+        "printDocumentOverflowHidden": true,
+        "printDocumentBreakAvoid": true,
+        "noDownloadControlsInPrintDom": true
+      },
+      "pdfPageCount": 1,
+      "screenshotPath": "pipeline/review/ux-corrective/screenshots/anime-girl-air-balloon-print.png",
+      "pdfPath": "pipeline/review/ux-corrective/print-pdfs/anime-girl-air-balloon.pdf",
+      "passed": true
+    },
+    {
+      "label": "St Patricks Day Celtic Knot Mandala Pattern",
+      "route": "/coloring-pages/st-patricks-day",
+      "query": "celtic knot",
+      "beforePrint": {
+        "titleVisible": true,
+        "previewImageReady": true,
+        "svgDownloadAbsent": true,
+        "preparingStateVisible": false
+      },
+      "printDom": {
+        "printCalls": 1,
+        "bodyPrintClass": true,
+        "printDocumentExists": true,
+        "imageExists": true,
+        "imageCenteredByCss": true,
+        "frameVisible": true,
+        "brandVisible": true,
+        "appUiControlsHiddenInPrint": true,
+        "printDocumentOverflowHidden": true,
+        "printDocumentBreakAvoid": true,
+        "noDownloadControlsInPrintDom": true
+      },
+      "pdfPageCount": 1,
+      "screenshotPath": "pipeline/review/ux-corrective/screenshots/st-patricks-day-celtic-knot-mandala-pattern-print.png",
+      "pdfPath": "pipeline/review/ux-corrective/print-pdfs/st-patricks-day-celtic-knot-mandala-pattern.pdf",
+      "passed": true
+    },
+    {
+      "label": "T-Rex sample",
+      "route": "/coloring-pages/t-rex",
+      "query": "t-rex",
+      "beforePrint": {
+        "titleVisible": true,
+        "previewImageReady": true,
+        "svgDownloadAbsent": true,
+        "preparingStateVisible": false
+      },
+      "printDom": {
+        "printCalls": 1,
+        "bodyPrintClass": true,
+        "printDocumentExists": true,
+        "imageExists": true,
+        "imageCenteredByCss": true,
+        "frameVisible": true,
+        "brandVisible": true,
+        "appUiControlsHiddenInPrint": true,
+        "printDocumentOverflowHidden": true,
+        "printDocumentBreakAvoid": true,
+        "noDownloadControlsInPrintDom": true
+      },
+      "pdfPageCount": 1,
+      "screenshotPath": "pipeline/review/ux-corrective/screenshots/t-rex-sample-print.png",
+      "pdfPath": "pipeline/review/ux-corrective/print-pdfs/t-rex-sample.pdf",
+      "passed": true
+    },
+    {
+      "label": "Christmas sample",
+      "route": "/coloring-pages/christmas",
+      "query": "santa",
+      "beforePrint": {
+        "titleVisible": true,
+        "previewImageReady": true,
+        "svgDownloadAbsent": true,
+        "preparingStateVisible": false
+      },
+      "printDom": {
+        "printCalls": 1,
+        "bodyPrintClass": true,
+        "printDocumentExists": true,
+        "imageExists": true,
+        "imageCenteredByCss": true,
+        "frameVisible": true,
+        "brandVisible": true,
+        "appUiControlsHiddenInPrint": true,
+        "printDocumentOverflowHidden": true,
+        "printDocumentBreakAvoid": true,
+        "noDownloadControlsInPrintDom": true
+      },
+      "pdfPageCount": 1,
+      "screenshotPath": "pipeline/review/ux-corrective/screenshots/christmas-sample-print.png",
+      "pdfPath": "pipeline/review/ux-corrective/print-pdfs/christmas-sample.pdf",
+      "passed": true
+    },
+    {
+      "label": "High-detail geometric sample",
+      "route": "/coloring-pages/geometric",
+      "query": "mandala",
+      "beforePrint": {
+        "titleVisible": true,
+        "previewImageReady": true,
+        "svgDownloadAbsent": true,
+        "preparingStateVisible": false
+      },
+      "printDom": {
+        "printCalls": 1,
+        "bodyPrintClass": true,
+        "printDocumentExists": true,
+        "imageExists": true,
+        "imageCenteredByCss": true,
+        "frameVisible": true,
+        "brandVisible": true,
+        "appUiControlsHiddenInPrint": true,
+        "printDocumentOverflowHidden": true,
+        "printDocumentBreakAvoid": true,
+        "noDownloadControlsInPrintDom": true
+      },
+      "pdfPageCount": 1,
+      "screenshotPath": "pipeline/review/ux-corrective/screenshots/high-detail-geometric-sample-print.png",
+      "pdfPath": "pipeline/review/ux-corrective/print-pdfs/high-detail-geometric-sample.pdf",
+      "passed": true
+    }
+  ],
+  "screenshotPaths": [
+    "pipeline/review/ux-corrective/screenshots/animals-alligator-print.png",
+    "pipeline/review/ux-corrective/screenshots/anime-girl-air-balloon-print.png",
+    "pipeline/review/ux-corrective/screenshots/st-patricks-day-celtic-knot-mandala-pattern-print.png",
+    "pipeline/review/ux-corrective/screenshots/t-rex-sample-print.png",
+    "pipeline/review/ux-corrective/screenshots/christmas-sample-print.png",
+    "pipeline/review/ux-corrective/screenshots/high-detail-geometric-sample-print.png"
+  ],
+  "pdfPaths": [
+    "pipeline/review/ux-corrective/print-pdfs/animals-alligator.pdf",
+    "pipeline/review/ux-corrective/print-pdfs/anime-girl-air-balloon.pdf",
+    "pipeline/review/ux-corrective/print-pdfs/st-patricks-day-celtic-knot-mandala-pattern.pdf",
+    "pipeline/review/ux-corrective/print-pdfs/t-rex-sample.pdf",
+    "pipeline/review/ux-corrective/print-pdfs/christmas-sample.pdf",
+    "pipeline/review/ux-corrective/print-pdfs/high-detail-geometric-sample.pdf"
+  ],
+  "blockers": []
+}

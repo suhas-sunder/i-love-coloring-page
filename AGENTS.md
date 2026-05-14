@@ -485,17 +485,24 @@ This repository is the foundation for a future Next.js coloring page website. Th
 
 - Image cards should have intuitive click behavior.
 - Clicking a printable image should open the print/prep flow, not jump to an odd fragment anchor.
+- Card grids must prioritize print-first interaction.
+- Do not put noisy format controls beside every card.
+- Download formats should remain available without cluttering the gallery grid.
 - Keep a visible Print action available for accessibility.
 - Download formats should remain PNG, JPG, and WebP, but SVG must remain internal-only and must never be a user-facing download.
 - Print output must be polished, centered, framed cleanly, and must not hang indefinitely on a preparing state.
+- Print output must not produce blank pages for a single artwork.
+- Avoid unexplained `about:blank` print UX when a better static-export-safe panel or route can handle the workflow.
 - Print prep and failure pages should show the image title, concise user-safe status copy, and subtle I Love Coloring Page branding.
 - Browser-native print headers and footers cannot be fully controlled by the app, but the app must not add extra random UI text to the printed artwork.
 - Hero thumbnails should not duplicate the gallery immediately below.
 - Hero right-side content should help users navigate to related collections.
 - Hero quick links should target real sections on the current page.
+- Related collections must be readable navigation, not cramped pills.
 - The More menu must group long-tail hubs by intent and must not dump all hubs into one broad list.
+- The More menu must use available desktop space and must not ellipsize important hub titles.
 - Navigation menus must keep search near the top, remain accessible, and contain no ads.
-- Do not start image sitemap, Open Graph image, JSON-LD expansion, or live ads until UX polish QA passes.
+- Do not start Open Graph image work, JSON-LD expansion, or live ads until corrective UX QA passes.
 
 ## Image Sitemap Gate
 

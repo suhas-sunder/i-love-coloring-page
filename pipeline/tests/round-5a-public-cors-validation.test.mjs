@@ -111,7 +111,7 @@ test("static export, app boundaries, media boundaries, ad rules, and contact con
   assert.equal(appFiles.some((file) => normalizePath(file).includes("/api/")), false);
   assert.equal(publicFiles.some((file) => /(?:^|[\\/])(?:svg|png|thumbs|coloring-pages)[\\/]/i.test(file)), false);
   assert.doesNotMatch(publicSource, /adsbygoogle|pagead2\.googlesyndication|ca-pub-|google_ad_client/i);
-  assert.doesNotMatch(publicSource, /Download SVG|SVG download|Download JPG|Download JPEG|Download WebP/i);
+  assert.doesNotMatch(publicSource, /Download SVG|SVG download|downloadSvg\b/i);
   assert.match(publicSource, /Round 4U|ad density/i);
   assert.equal(trackedR2UploadMedia.trim(), "");
   assert.equal(statusImages.trim(), "");
@@ -126,7 +126,7 @@ test("Round 5A scripts exist and do not upload, mutate media, or use app API rou
 
   assert.match(publicValidator, /NEXT_PUBLIC_COLORING_ASSET_BASE_URL/);
   assert.match(publicValidator, /Access-Control-Allow-Origin/);
-  assert.match(browserRunner, /convertInternalSvgToBlob|printFromHighQualitySource|data-print-source/);
+  assert.match(browserRunner, /convertInternalSvgToBlob|printFromHighQualitySource|prepareHighQualityPrintImage|data-print-source/);
   assert.doesNotMatch(publicValidator + browserRunner, /wrangler\s+r2\s+object\s+put|bucket\s+cors\s+set|cloudflare\.request|app\/api|src\/app\/api/i);
 });
 

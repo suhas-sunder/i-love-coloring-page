@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 import {
   downloadJpeg,
@@ -37,8 +37,6 @@ const DOWNLOADERS = {
 };
 
 export function DownloadMenu({ title, internalSvgUrl, pngPreviewUrl, "aria-label": ariaLabel, onStatus }: DownloadMenuProps) {
-  const detailsRef = useRef<HTMLDetailsElement>(null);
-  const [open, setOpen] = useState(false);
   const [busyFormat, setBusyFormat] = useState<DownloadOption["format"] | null>(null);
   const [supportedFormats, setSupportedFormats] = useState<readonly PublicDownloadFormat[]>(["png"]);
 
@@ -60,32 +58,30 @@ export function DownloadMenu({ title, internalSvgUrl, pngPreviewUrl, "aria-label
 
     onStatus(getDownloadStatusMessage(result, option.label));
     setBusyFormat(null);
-    setOpen(false);
-    if (detailsRef.current) detailsRef.current.open = false;
   }
 
   return (
-    <details className="download-menu" ref={detailsRef} open={open} onToggle={(event) => setOpen(event.currentTarget.open)}>
-      <summary className="button button-subtle button-small download-menu-summary" aria-expanded={open}>
-        Formats
-      </summary>
-      <div className="download-menu-panel" role="menu" aria-label={ariaLabel}>
-        {visibleOptions.map((option) => (
-          <button
-            className="download-menu-option"
-            type="button"
-            role="menuitem"
-            key={option.format}
-            onClick={() => downloadFormat(option)}
-            disabled={busyFormat !== null}
-            aria-label={option.format === "png" ? `Download PNG for ${title}` : `${option.label} download for ${title}`}
-          >
-            {busyFormat === option.format ? "Preparing" : option.label}
-          </button>
-        ))}
-      </div>
-    </details>
+    <div className="download-options" role="group" aria-label={ariaLabel}>
+      {visibleOptions.map((option) => (
+        <button
+          className="download-option-button"
+          type="button"
+          key={option.format}
+          onClick={() => downloadFormat(option)}
+          disabled={busyFormat !== null}
+          aria-label={`Download ${option.label} for ${title}`}
+        >
+          {busyFormat === option.format ? `Preparing ${option.label}` : getDownloadButtonLabel(option.label)}
+        </button>
+      ))}
+    </div>
   );
+}
+
+function getDownloadButtonLabel(label: DownloadOption["label"]) {
+  if (label === "PNG") return "Download PNG";
+  if (label === "JPG") return "Download JPG";
+  return "Download WebP";
 }
 
 function getDownloadStatusMessage(result: BrowserDownloadResult, label: DownloadOption["label"]) {

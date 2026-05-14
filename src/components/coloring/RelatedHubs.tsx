@@ -19,8 +19,8 @@ export function RelatedHubs({ title, hubs, id = "related-collections" }: Related
       <div className="related-list">
         {hubs.map((hub) => (
           <Link className="related-link" href={hub.route} key={hub.hubId} prefetch={false}>
-            <span>{hub.title.replace(/ Coloring Pages$/, "")}</span>
-            <strong>{hub.assetCount.toLocaleString()} pages</strong>
+            <span className="related-link-label">{hub.title.replace(/ Coloring Pages$/, "")}</span>
+            <strong className="related-link-count">{hub.assetCount.toLocaleString()} pages</strong>
           </Link>
         ))}
       </div>

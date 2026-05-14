@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-05-14T02:33:44.120Z",
+  "runId": "ux-corrective-context-check",
+  "summary": {
+    "correctRepository": true,
+    "currentBranch": "ver-5-deployed-may-13-2026",
+    "appApiRoutePresent": false,
+    "staticExportConfigured": true,
+    "runtimeGeneratedDataExists": true,
+    "runtimeAvailableRecords": 6352,
+    "runtimeHubCount": 131,
+    "siteUrlDefaultPresent": true,
+    "assetBaseDefaultPresent": true,
+    "publicContainsOnlyApprovedXml": true,
+    "imagesUntouched": true,
+    "ilovesvgUntouched": true,
+    "svgInternalOnly": true,
+    "publicDownloads": [
+      "PNG",
+      "JPG",
+      "WebP"
+    ],
+    "liveAdsenseCodePresent": false,
+    "openGraphImageGenerationPresent": false,
+    "jsonLdExpansionDeferred": true
+  }
+}

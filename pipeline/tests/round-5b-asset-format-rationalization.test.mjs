@@ -144,7 +144,7 @@ test("static export, app boundaries, source media boundaries, ad rules, and defe
   assert.equal(appFiles.some((file) => normalizePath(file).includes("/api/")), false);
   assert.equal(publicFiles.some((file) => /(?:^|[\\/])(?:svg|png|thumbs|webp|coloring-pages)[\\/]/i.test(file)), false);
   assert.doesNotMatch(projectText, /adsbygoogle|pagead2\.googlesyndication|ca-pub-|google_ad_client/i);
-  assert.doesNotMatch(projectText, /Download SVG|SVG download|Download JPG|Download JPEG|Download WebP/i);
+  assert.doesNotMatch(projectText, /Download SVG|SVG download|downloadSvg\b/i);
   assert.equal(publishingStrategy.summary.adDensityRulesRemainRepresented, true);
   assert.equal(trackedR2UploadMedia.trim(), "");
   assert.equal(statusImages.trim(), "");

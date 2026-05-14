@@ -107,8 +107,8 @@ test("image cards use clean clickable previews and simplified actions", async ()
   const components = await readText("src/styles/components.css");
 
   assert.match(imageCard, /id=\{`asset-\$\{item\.assetId\}`\}/);
-  assert.match(imageCard, /gallery-item-media-link/);
-  assert.match(imageCard, /href=\{itemHref/);
+  assert.match(imageCard, /gallery-item-media-button/);
+  assert.match(imageCard, /onClick=\{openPrintPreview\}/);
   assert.match(imageCard, /Print/);
   assert.match(imageCard, /Download/);
   assert.doesNotMatch(imageCard, />\s*SVG\s*</);
@@ -117,7 +117,7 @@ test("image cards use clean clickable previews and simplified actions", async ()
   assert.match(galleryGrid, /getItemHref/);
   assert.match(assetImage, /className="asset-image"/);
   assert.match(assets, /preview:\s*(?:webp\s*\|\|\s*)?png\s*\|\|\s*thumbnail/);
-  assert.match(components, /\.gallery-item-media-link[\s\S]*cursor:\s*pointer/);
+  assert.match(components, /\.gallery-item-media-button[\s\S]*cursor:\s*pointer/);
   assert.doesNotMatch(components, /\.gallery-item-media[\s\S]{0,220}padding:/);
 });
 

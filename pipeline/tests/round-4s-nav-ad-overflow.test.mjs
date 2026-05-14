@@ -141,9 +141,9 @@ test("desktop More menu uses wide responsive layout and reliable controlled clos
   assert.match(moreMenu, /event\.key === "Escape"/);
   assert.match(moreMenu, /pointerdown/);
   assert.match(moreMenu, /type="search"/);
-  assert.match(componentsCss, /width:\s*min\(1320px,\s*calc\(100vw - 96px\)\)/);
-  assert.match(componentsCss, /width:\s*min\(960px,\s*calc\(100vw - 48px\)\)/);
-  assert.match(componentsCss, /grid-template-columns:\s*repeat\(auto-fit,\s*minmax\(180px,\s*1fr\)\)/);
+  assert.match(componentsCss, /width:\s*min\(1500px,\s*calc\(100vw - 64px\)\)/);
+  assert.match(componentsCss, /width:\s*min\(1100px,\s*calc\(100vw - 48px\)\)/);
+  assert.match(componentsCss, /grid-template-columns:\s*repeat\(auto-fit,\s*minmax\(240px,\s*1fr\)\)/);
   assert.doesNotMatch(siteNav, /label:\s*"Coloring Pages"[\s\S]*group:\s*"primary"/);
   assert.doesNotMatch(moreMenu, /AdSlot|AdRail|data-ad-placeholder|affiliate/i);
 });
@@ -204,7 +204,7 @@ test("Round 4S keeps static export, media boundaries, route boundaries, and down
   assert.deepEqual(Object.keys(packageJson.dependencies).sort(), ["next", "react", "react-dom"]);
   assert.match(imageCard, /Download PNG/);
   assert.match(imageCard, /Print/);
-  assert.doesNotMatch(sourceText, /Download SVG|SVG download|Download JPG|Download JPEG|Download WebP|assetUrls\.svg|pngUrl\s*\|\|\s*svgUrl/i);
+  assert.doesNotMatch(sourceText, /Download SVG|SVG download|downloadSvg\b|assetUrls\.svg|pngUrl\s*\|\|\s*svgUrl/i);
   assert.doesNotMatch(sourceText, /application\/ld\+json|ImageObject|BreadcrumbList|FAQPage|opengraph-image/i);
   assert.equal(trackedR2UploadMedia.trim(), "");
   assert.equal(statusImages.trim(), "");

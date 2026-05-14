@@ -108,8 +108,8 @@ export function MoreHubMenu({ groups, leadLinks = [], utilityLinks, variant = "d
                 {group.links.map((link) => (
                   <li key={link.href}>
                     <Link href={link.href} onClick={handleNavigate} prefetch={false}>
-                      <span>{link.label}</span>
-                      <strong>{link.assetCount.toLocaleString()}</strong>
+                      <span className="hub-menu-link-label">{link.label}</span>
+                      <strong className="hub-menu-link-count">{link.assetCount.toLocaleString()}</strong>
                     </Link>
                   </li>
                 ))}

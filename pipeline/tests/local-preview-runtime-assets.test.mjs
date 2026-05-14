@@ -100,7 +100,8 @@ test("print conversion has timeout and failure UI guards instead of hanging on t
   const browserDownloads = await readText("src/lib/coloring/browserDownloads.ts");
 
   assert.match(browserDownloads, /PRINT_PREPARE_TIMEOUT_MS/);
-  assert.match(browserDownloads, /writePrintFailureDocument/);
+  assert.match(browserDownloads, /prepareHighQualityPrintImage/);
+  assert.match(browserDownloads, /Print preview could not be prepared|image-load-failed|missing-png-preview/);
   assert.match(browserDownloads, /loadCorsImage\([^)]*timeoutMs/);
   assert.match(browserDownloads, /window\.setTimeout/);
 });

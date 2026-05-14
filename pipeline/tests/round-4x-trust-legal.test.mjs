@@ -87,7 +87,7 @@ test("trust and policy pages exist with draft-safe metadata and content", async 
     const text = await readText(pageFile);
     assert.match(text, /export const metadata/i, `${pageFile} metadata missing`);
     assert.match(text, /alternates:\s*{[\s\S]*canonical/i, `${pageFile} canonical missing`);
-    assert.doesNotMatch(text, /online coloring is available|Download SVG|SVG download|Download JPG|Download JPEG|Download WebP/i, pageFile);
+    assert.doesNotMatch(text, /online coloring is available|Download SVG|SVG download|downloadSvg\b/i, pageFile);
     assert.doesNotMatch(text, /123 Main|555-|fake address|fake phone|support@example\.com/i, pageFile);
     assert.doesNotMatch(text, /linear-gradient|box-shadow|border:|outline:/i, pageFile);
   }
@@ -200,7 +200,7 @@ test("static export, no API routes, PNG-only downloads, and protected media boun
   assert.equal(publicFiles.some((file) => /(?:^|[\\/])(?:svg|png|thumbs|coloring-pages)[\\/]/i.test(file)), false);
   assert.match(imageCard, /Print/);
   assert.match(imageCard, /Download PNG/);
-  assert.doesNotMatch(publicSource, /Download SVG|SVG download|Download JPG|Download JPEG|Download WebP|assetUrls\.svg|pngUrl\s*\|\|\s*svgUrl/i);
+  assert.doesNotMatch(publicSource, /Download SVG|SVG download|downloadSvg\b|assetUrls\.svg|pngUrl\s*\|\|\s*svgUrl/i);
   assert.doesNotMatch(publicSource, /adsbygoogle|pagead2\.googlesyndication|ca-pub-|google_ad_client/i);
   assert.equal(trackedR2UploadMedia.trim(), "");
   assert.equal(statusImages.trim(), "");

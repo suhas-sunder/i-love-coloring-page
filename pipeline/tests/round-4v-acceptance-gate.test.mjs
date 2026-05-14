@@ -168,8 +168,8 @@ test("navigation and gallery acceptance cover the owner-sensitive flows", async 
   assert.equal(nav.mobileNav.noAdsInMobileNav, true);
 
   assert.match(moreMenu, /aria-expanded=\{isOpen\}/);
-  assert.match(componentsCss, /width:\s*min\(1320px,\s*calc\(100vw - 96px\)\)/);
-  assert.match(componentsCss, /grid-template-columns:\s*repeat\(auto-fit,\s*minmax\(180px,\s*1fr\)\)/);
+  assert.match(componentsCss, /width:\s*min\(1500px,\s*calc\(100vw - 64px\)\)/);
+  assert.match(componentsCss, /grid-template-columns:\s*repeat\(auto-fit,\s*minmax\(240px,\s*1fr\)\)/);
   assert.match(mobileNav, /className="mobile-nav-toggle"/);
   assert.match(componentsCss, /\.mobile-nav-panel\s*{[\s\S]*width:\s*100vw/);
   assert.match(componentsCss, /\.mobile-nav-panel\s*{[\s\S]*max-width:\s*none/);

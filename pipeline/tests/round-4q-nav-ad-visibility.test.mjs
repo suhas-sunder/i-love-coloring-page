@@ -181,8 +181,8 @@ test("desktop More menu is a controlled, searchable, viewport-centered hub menu"
   assert.match(moreMenu, /pointerdown/);
   assert.match(moreMenu, /onNavigate/);
   assert.match(moreMenu, /type="search"/);
-  assert.match(css, /width:\s*min\(1320px,\s*calc\(100vw - 96px\)\)/);
-  assert.match(css, /width:\s*min\(960px,\s*calc\(100vw - 48px\)\)/);
+  assert.match(css, /width:\s*min\(1500px,\s*calc\(100vw - 64px\)\)/);
+  assert.match(css, /width:\s*min\(1100px,\s*calc\(100vw - 48px\)\)/);
   assert.match(css, /left:\s*50%/);
   assert.match(css, /transform:\s*translateX\(-50%\)/);
   assert.doesNotMatch(siteNav, /label:\s*"Coloring Pages"[\s\S]*group:\s*"primary"/);
@@ -253,7 +253,7 @@ test("Round 4Q keeps static export, media boundaries, route boundaries, and down
   assert.deepEqual(Object.keys(packageJson.dependencies).sort(), ["next", "react", "react-dom"]);
   assert.match(imageCard, /Download PNG/);
   assert.match(imageCard, /Print/);
-  assert.doesNotMatch(sourceText, /Download SVG|SVG download|Download JPG|Download JPEG|Download WebP|assetUrls\.svg|pngUrl\s*\|\|\s*svgUrl/i);
+  assert.doesNotMatch(sourceText, /Download SVG|SVG download|downloadSvg\b|assetUrls\.svg|pngUrl\s*\|\|\s*svgUrl/i);
   assert.doesNotMatch(sourceText, /application\/ld\+json|ImageObject|BreadcrumbList|FAQPage|opengraph-image/i);
   assert.equal(trackedR2UploadMedia.trim(), "");
   assert.equal(statusImages.trim(), "");

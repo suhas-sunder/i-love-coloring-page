@@ -48,6 +48,16 @@ export type BrowserPrintResult =
     }
   | Extract<BrowserRasterResult, { ok: false }>;
 
+export type PreparedPrintImageResult =
+  | {
+      ok: true;
+      imageUrl: string;
+      source: "internal-svg" | "png-preview-fallback";
+      revokeObjectUrl: boolean;
+      message?: string;
+    }
+  | Extract<BrowserRasterResult, { ok: false }>;
+
 type BrowserRasterOptions = {
   internalSvgUrl: string | null | undefined;
   title: string;
@@ -77,7 +87,7 @@ type FormatConfig = {
 const PRINT_TARGET_LONG_EDGE = 2400;
 const DOWNLOAD_TARGET_LONG_EDGE = 2400;
 const IMAGE_LOAD_TIMEOUT_MS = 12_000;
-const PRINT_PREPARE_TIMEOUT_MS = 15_000;
+export const PRINT_PREPARE_TIMEOUT_MS = 15_000;
 export const INTERNAL_SVG_CONTENT_TYPE = "image/svg+xml";
 
 const CANVAS_FORMATS: Record<RasterDownloadFormat, FormatConfig> = {
@@ -274,16 +284,7 @@ export async function downloadWebp(options: DownloadOptions): Promise<BrowserDow
   return downloadConvertedCanvasFormat(options, "webp");
 }
 
-export async function printFromHighQualitySource(options: PrintOptions): Promise<BrowserPrintResult> {
-  if (typeof window === "undefined" || typeof document === "undefined") {
-    return failure("browser-api-unavailable", "Browser print APIs are unavailable.");
-  }
-
-  const printWindow = window.open("", "_blank");
-  if (!printWindow) return failure("popup-blocked", "The browser blocked the print window.");
-  printWindow.opener = null;
-  writePreparingDocument(printWindow, options.title);
-
+export async function prepareHighQualityPrintImage(options: PrintOptions): Promise<PreparedPrintImageResult> {
   const converted = await convertInternalSvgToBlob({
     internalSvgUrl: options.internalSvgUrl,
     title: options.title,
@@ -294,36 +295,40 @@ export async function printFromHighQualitySource(options: PrintOptions): Promise
 
   if (converted.ok) {
     const objectUrl = URL.createObjectURL(converted.blob);
-    writePrintDocument(printWindow, {
-      title: options.title,
-      altText: options.altText,
+    return {
+      ok: true,
       imageUrl: objectUrl,
       source: "internal-svg",
       revokeObjectUrl: true,
-    });
-    return {
-      ok: true,
-      source: "internal-svg",
     };
   }
 
   if (!options.pngPreviewUrl) {
-    writePrintFailureDocument(printWindow, options.title);
     return converted;
   }
-  writePrintDocument(printWindow, {
-    title: options.title,
-    altText: options.altText,
-    imageUrl: options.pngPreviewUrl,
-    source: "png-preview-fallback",
-    revokeObjectUrl: false,
-  });
 
   return {
     ok: true,
+    imageUrl: options.pngPreviewUrl,
     source: "png-preview-fallback",
+    revokeObjectUrl: false,
     message: "Printing from the best available preview because the high-quality file could not be prepared.",
   };
+}
+
+export async function printFromHighQualitySource(options: PrintOptions): Promise<BrowserPrintResult> {
+  const prepared = await prepareHighQualityPrintImage(options);
+  if (!prepared.ok) return prepared;
+  return {
+    ok: true,
+    source: prepared.source,
+    message: prepared.message || "Print preview is ready.",
+  };
+}
+
+export function revokePreparedPrintImage(prepared: PreparedPrintImageResult | null | undefined) {
+  if (!prepared?.ok || !prepared.revokeObjectUrl || typeof URL === "undefined") return;
+  URL.revokeObjectURL(prepared.imageUrl);
 }
 
 async function downloadConvertedCanvasFormat(options: DownloadOptions, format: CanvasDownloadFormat): Promise<BrowserDownloadResult> {
@@ -420,306 +425,10 @@ function getTargetDimensions(sourceWidth: number, sourceHeight: number, targetLo
   };
 }
 
-function writePreparingDocument(printWindow: Window, title: string) {
-  const escapedTitle = escapeHtml(title);
-  printWindow.document.open();
-  printWindow.document.write(`
-    <!doctype html>
-    <html>
-      <head>
-        <title>${escapedTitle}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <style>
-          * { box-sizing: border-box; }
-          body {
-            margin: 0;
-            min-height: 100vh;
-            display: grid;
-            place-items: center;
-            background: white;
-            color: rgb(38 31 47);
-            font-family: Arial, sans-serif;
-            padding: 2rem;
-            text-align: center;
-          }
-          .print-prep-card {
-            display: grid;
-            gap: 0.75rem;
-            max-width: 28rem;
-          }
-          .print-brand {
-            color: rgb(107 74 127);
-            font-size: 0.78rem;
-            font-weight: 800;
-            letter-spacing: 0;
-            text-transform: uppercase;
-          }
-          h1 {
-            margin: 0;
-            font-family: Georgia, serif;
-            font-size: clamp(1.5rem, 4vw, 2.25rem);
-            line-height: 1.1;
-          }
-          p {
-            margin: 0;
-            color: rgb(92 86 101);
-            line-height: 1.5;
-          }
-        </style>
-      </head>
-      <body>
-        <main class="print-prep-card" aria-live="polite">
-          <p class="print-brand">I Love Coloring Page</p>
-          <h1>${escapedTitle}</h1>
-          <p>Preparing print file...</p>
-        </main>
-      </body>
-    </html>
-  `);
-  printWindow.document.close();
-}
-
-function writePrintFailureDocument(printWindow: Window, title: string) {
-  const escapedTitle = escapeHtml(title);
-  printWindow.document.open();
-  printWindow.document.write(`
-    <!doctype html>
-    <html>
-      <head>
-        <title>${escapedTitle}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <style>
-          * { box-sizing: border-box; }
-          body {
-            margin: 0;
-            min-height: 100vh;
-            display: grid;
-            place-items: center;
-            background: white;
-            color: rgb(38 31 47);
-            font-family: Arial, sans-serif;
-            padding: 2rem;
-            text-align: center;
-          }
-          main {
-            display: grid;
-            gap: 0.75rem;
-            max-width: 28rem;
-          }
-          .print-brand {
-            color: rgb(107 74 127);
-            font-size: 0.78rem;
-            font-weight: 800;
-            letter-spacing: 0;
-            text-transform: uppercase;
-          }
-          h1 {
-            margin: 0;
-            font-family: Georgia, serif;
-            font-size: 1.75rem;
-            line-height: 1.15;
-          }
-          p {
-            margin: 0;
-            color: rgb(92 86 101);
-            line-height: 1.5;
-          }
-        </style>
-      </head>
-      <body>
-        <main>
-          <p class="print-brand">I Love Coloring Page</p>
-          <h1>${escapedTitle}</h1>
-          <p>Print file could not be prepared. Please try a download instead.</p>
-        </main>
-      </body>
-    </html>
-  `);
-  printWindow.document.close();
-}
-
-function writePrintDocument(
-  printWindow: Window,
-  options: {
-    title: string;
-    altText: string;
-    imageUrl: string;
-    source: "internal-svg" | "png-preview-fallback";
-    revokeObjectUrl: boolean;
-  },
-) {
-  const escapedTitle = escapeHtml(options.title);
-  const escapedAlt = escapeHtml(options.altText);
-  const escapedImageUrl = escapeAttribute(options.imageUrl);
-  const escapedFailureMessage = escapeHtml("Print file could not be prepared. Please try a download instead.");
-  const revokeUrl = JSON.stringify(options.imageUrl);
-  const revokeScript = options.revokeObjectUrl
-    ? `window.addEventListener("afterprint", function(){ setTimeout(function(){ URL.revokeObjectURL(${revokeUrl}); }, 500); });`
-    : "";
-
-  printWindow.document.open();
-  printWindow.document.write(`
-    <!doctype html>
-    <html>
-      <head>
-        <title>${escapedTitle}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <style>
-          @page { size: auto; margin: 0.35in; }
-          * { box-sizing: border-box; }
-          html, body { min-height: 100%; }
-          body {
-            margin: 0;
-            background: white;
-            color: rgb(38 31 47);
-            font-family: Arial, sans-serif;
-          }
-          .print-shell {
-            display: grid;
-            min-height: 100vh;
-            place-items: center;
-            padding: 24px;
-          }
-          .screen-only {
-            display: grid;
-            gap: 0.35rem;
-            margin-bottom: 1rem;
-            text-align: center;
-          }
-          .screen-only strong {
-            color: rgb(38 31 47);
-            font-family: Georgia, serif;
-            font-size: 1.2rem;
-            line-height: 1.2;
-          }
-          .screen-only span {
-            color: rgb(92 86 101);
-            font-size: 0.9rem;
-            line-height: 1.4;
-          }
-          .print-page {
-            width: min(100%, 8in);
-            min-height: calc(100vh - 48px);
-            display: grid;
-            grid-template-rows: minmax(0, 1fr) auto;
-            gap: 0.16in;
-          }
-          .print-artwork {
-            display: grid;
-            min-height: 0;
-            place-items: center;
-          }
-          .print-artwork-frame {
-            width: 100%;
-            height: 100%;
-            display: grid;
-            place-items: center;
-            border: 1px solid rgb(221 216 229);
-            padding: 0.12in;
-          }
-          img {
-            display: block;
-            max-width: 100%;
-            max-height: calc(100vh - 1.15in);
-            object-fit: contain;
-          }
-          .print-brand {
-            margin: 0;
-            color: rgb(107 74 127);
-            font-size: 0.72rem;
-            font-weight: 800;
-            letter-spacing: 0;
-            line-height: 1.2;
-            text-align: center;
-            text-transform: uppercase;
-          }
-          @media print {
-            html,
-            body {
-              width: 100%;
-              min-height: 100%;
-            }
-            body {
-              background: white;
-            }
-            .screen-only {
-              display: none !important;
-            }
-            .print-shell {
-              min-height: 100vh;
-              padding: 0;
-            }
-            .print-page {
-              width: 100%;
-              min-height: calc(100vh - 0.7in);
-            }
-            .print-artwork-frame {
-              height: calc(100vh - 1.1in);
-            }
-            img {
-              max-height: 100%;
-            }
-          }
-        </style>
-      </head>
-      <body data-print-source="${options.source}">
-        <main class="print-shell">
-          <section class="screen-only" aria-live="polite">
-            <strong>${escapedTitle}</strong>
-            <span>Print dialog opening...</span>
-          </section>
-          <section class="print-page" aria-label="${escapedTitle}">
-            <div class="print-artwork">
-              <div class="print-artwork-frame">
-                <img id="print-image" src="${escapedImageUrl}" alt="${escapedAlt}" />
-              </div>
-            </div>
-            <p class="print-brand">I Love Coloring Page</p>
-          </section>
-        </main>
-        <script>
-          (function(){
-            var PRINT_PREPARE_TIMEOUT_MS = ${PRINT_PREPARE_TIMEOUT_MS};
-            var image = document.getElementById("print-image");
-            var failed = false;
-            function showFailure() {
-              if (failed) return;
-              failed = true;
-              document.body.removeAttribute("data-print-source");
-              document.body.style.cssText = "margin:0;min-height:100vh;display:grid;place-items:center;font-family:Arial,sans-serif;text-align:center;padding:2rem;color:rgb(38 31 47);background:white;";
-              document.body.innerHTML = "<main><p class=\\"print-brand\\" style=\\"color:rgb(107 74 127);font-size:.78rem;font-weight:800;text-transform:uppercase;\\">I Love Coloring Page</p><p>${escapedFailureMessage}</p></main>";
-            }
-            var timer = window.setTimeout(showFailure, PRINT_PREPARE_TIMEOUT_MS);
-            image.addEventListener("load", function(){
-              window.clearTimeout(timer);
-              setTimeout(function(){ window.focus(); window.print(); }, 80);
-            });
-            image.addEventListener("error", showFailure);
-          })();
-          ${revokeScript}
-        </script>
-      </body>
-    </html>
-  `);
-  printWindow.document.close();
-}
-
 function failure(reason: Extract<BrowserRasterResult, { ok: false }>["reason"], message: string): Extract<BrowserRasterResult, { ok: false }> {
   return {
     ok: false,
     reason,
     message,
   };
-}
-
-function escapeHtml(value: string) {
-  return value
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
-}
-
-function escapeAttribute(value: string) {
-  return escapeHtml(value).replace(/'/g, "&#39;");
 }

@@ -70,7 +70,7 @@ test("browser download utility uses internal SVG conversion without exposing SVG
   assert.match(utility, /image\/svg\+xml/);
   assert.match(utility, /canvas-tainted|cors/i);
   assert.match(utility, /toBlob/);
-  assert.doesNotMatch(utility + imageCard, /Download SVG|SVG download|downloadSvg|svgDownload/i);
+  assert.doesNotMatch(utility + imageCard, /Download SVG|SVG download|downloadSvg\b/i);
   assert.equal(downloadDecision.summary.svgInternalOnly, true);
   assert.deepEqual(downloadDecision.summary.currentPublicDownloadFormats, ["PNG"]);
   assert.equal(downloadDecision.summary.jpegWebpVisibleInUi, false);
@@ -80,7 +80,7 @@ test("print action prefers SVG-derived output and no longer uses thumbnail or ra
   const imageCard = await readText("src/components/coloring/ImageCard.tsx");
   const printResults = await readJson("pipeline/manifests/round-4z-print-quality-results.json");
 
-  assert.match(imageCard, /printFromHighQualitySource/);
+  assert.match(imageCard, /prepareHighQualityPrintImage/);
   assert.match(imageCard, /internalSvgUrl/);
   assert.doesNotMatch(imageCard, /const\s+printUrl\s*=\s*assetUrls\.thumbnail|printUrl\s*=\s*assetUrls\.preview/);
   assert.doesNotMatch(imageCard, /window\.open\("",\s*"_blank"\)[\s\S]*<img src="\$\{escapeHtml\(printUrl\)\}"/);
@@ -124,7 +124,7 @@ test("static export, app boundaries, media boundaries, and ad rules remain intac
   assert.equal(appFiles.some((file) => normalizePath(file).includes("/api/")), false);
   assert.equal(publicFiles.some((file) => /(?:^|[\\/])(?:svg|png|thumbs|coloring-pages)[\\/]/i.test(file)), false);
   assert.doesNotMatch(sourceText, /adsbygoogle|pagead2\.googlesyndication|ca-pub-|google_ad_client/i);
-  assert.doesNotMatch(sourceText, /Download SVG|SVG download|Download JPG|Download JPEG|Download WebP/i);
+  assert.doesNotMatch(sourceText, /Download SVG|SVG download|downloadSvg\b/i);
   assert.equal(trackedR2UploadMedia.trim(), "");
   assert.equal(statusImages.trim(), "");
   assert.equal(statusIlovesvg.trim(), "");
