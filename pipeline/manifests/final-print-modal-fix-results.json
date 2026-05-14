@@ -1,0 +1,316 @@
+{
+  "generatedAt": "2026-05-14T20:58:19.497Z",
+  "runId": "final-print-modal-fix-results",
+  "artifactDirectory": "pipeline/review/final-print-modal-fix",
+  "sourceChecks": {
+    "standaloneDownloadLabelRemoved": true,
+    "pngJpgWebpControlsPresent": true,
+    "svgDownloadAbsent": true,
+    "previewUsesContain": true,
+    "oneBorderConfigured": true,
+    "brandTextConfigured": true,
+    "brandPlacementConfigured": true,
+    "noFooterRowReserved": true,
+    "knockoutConfigured": true
+  },
+  "browserChecks": {
+    "build": {
+      "buildRan": true,
+      "outDir": "D:\\PROJECTS-and-WORK\\work-projects\\all_projects\\i-love-coloring-page\\out",
+      "startedAt": "2026-05-14T20:57:35.912Z",
+      "finishedAt": "2026-05-14T20:58:06.223Z"
+    },
+    "samples": [
+      {
+        "key": "geometric-mandala",
+        "label": "Geometric/Mandala item",
+        "route": "/coloring-pages/geometric",
+        "assetId": "mandala__mandala-geometry-patterns-animal-mandala-fox__3e8e80a2fd",
+        "title": "Mandala Geometry Patterns Animal Mandala Fox",
+        "modal": {
+          "standaloneDownloadLabelCount": 0,
+          "panelHasUnnecessaryScrollbar": false,
+          "previewObjectFit": "contain",
+          "previewWidth": 1052,
+          "previewHeight": 1578,
+          "previewNaturalWidth": 1600,
+          "previewNaturalHeight": 2400,
+          "previewImageLoaded": true,
+          "mediaWidth": 1052,
+          "mediaHeight": 700
+        },
+        "printSnapshot": {
+          "pageCount": 1,
+          "pageSize": "letter-portrait",
+          "pdfByteLength": 11521107,
+          "artworkBox": {
+            "x": 15,
+            "y": 15,
+            "width": 582,
+            "height": 762
+          },
+          "imageBox": {
+            "width": 508,
+            "height": 762,
+            "x": 52,
+            "y": 15
+          },
+          "brandBox": {
+            "x": 267.78,
+            "y": 7.62,
+            "width": 76.44,
+            "height": 7
+          },
+          "brandPlacement": "bottom-frame-label",
+          "brandingOverlapsArtwork": false,
+          "appUiControlsIncluded": false,
+          "printableBorderCount": 1,
+          "metadataTitle": "Mandala Geometry Patterns Animal Mandala Fox - iLoveColoringPage.com",
+          "source": "internal-svg"
+        },
+        "pdf": {
+          "path": "pipeline\\review\\final-print-modal-fix\\geometric-mandala.pdf",
+          "byteLength": 11521107,
+          "pageCount": 1,
+          "oneSlimBorderOnly": true,
+          "logoVisible": true,
+          "logoKnockoutPresent": true,
+          "logoOverlapsArtwork": false,
+          "artworkUsesMorePageSpaceThanBefore": true,
+          "appUiControlsIncluded": false
+        },
+        "downloads": {
+          "png": true,
+          "jpg": true,
+          "webp": true
+        },
+        "svgDownloadAbsent": true
+      },
+      {
+        "key": "animals-alligator",
+        "label": "Animals Alligator",
+        "route": "/coloring-pages/animals",
+        "assetId": "animals__animals-alligator__4feec8505a",
+        "title": "Animals Alligator",
+        "modal": {
+          "standaloneDownloadLabelCount": 0,
+          "panelHasUnnecessaryScrollbar": false,
+          "previewObjectFit": "contain",
+          "previewWidth": 1052,
+          "previewHeight": 1578,
+          "previewNaturalWidth": 1600,
+          "previewNaturalHeight": 2400,
+          "previewImageLoaded": true,
+          "mediaWidth": 1052,
+          "mediaHeight": 700
+        },
+        "printSnapshot": {
+          "pageCount": 1,
+          "pageSize": "letter-portrait",
+          "pdfByteLength": 11521080,
+          "artworkBox": {
+            "x": 15,
+            "y": 15,
+            "width": 582,
+            "height": 762
+          },
+          "imageBox": {
+            "width": 508,
+            "height": 762,
+            "x": 52,
+            "y": 15
+          },
+          "brandBox": {
+            "x": 267.78,
+            "y": 7.62,
+            "width": 76.44,
+            "height": 7
+          },
+          "brandPlacement": "bottom-frame-label",
+          "brandingOverlapsArtwork": false,
+          "appUiControlsIncluded": false,
+          "printableBorderCount": 1,
+          "metadataTitle": "Animals Alligator - iLoveColoringPage.com",
+          "source": "internal-svg"
+        },
+        "pdf": {
+          "path": "pipeline\\review\\final-print-modal-fix\\animals-alligator.pdf",
+          "byteLength": 11521080,
+          "pageCount": 1,
+          "oneSlimBorderOnly": true,
+          "logoVisible": true,
+          "logoKnockoutPresent": true,
+          "logoOverlapsArtwork": false,
+          "artworkUsesMorePageSpaceThanBefore": true,
+          "appUiControlsIncluded": false
+        },
+        "downloads": {
+          "png": true,
+          "jpg": true,
+          "webp": true
+        },
+        "svgDownloadAbsent": true
+      },
+      {
+        "key": "tall-portrait",
+        "label": "Tall portrait item",
+        "route": "/coloring-pages/anime-girls",
+        "assetId": "anime-girls__anime-girl-air-balloon__1f6b5be7bc",
+        "title": "Anime Girl Air Balloon",
+        "modal": {
+          "standaloneDownloadLabelCount": 0,
+          "panelHasUnnecessaryScrollbar": false,
+          "previewObjectFit": "contain",
+          "previewWidth": 1052,
+          "previewHeight": 1578,
+          "previewNaturalWidth": 1600,
+          "previewNaturalHeight": 2400,
+          "previewImageLoaded": true,
+          "mediaWidth": 1052,
+          "mediaHeight": 700
+        },
+        "printSnapshot": {
+          "pageCount": 1,
+          "pageSize": "letter-portrait",
+          "pdfByteLength": 11521085,
+          "artworkBox": {
+            "x": 15,
+            "y": 15,
+            "width": 582,
+            "height": 762
+          },
+          "imageBox": {
+            "width": 508,
+            "height": 762,
+            "x": 52,
+            "y": 15
+          },
+          "brandBox": {
+            "x": 267.78,
+            "y": 7.62,
+            "width": 76.44,
+            "height": 7
+          },
+          "brandPlacement": "bottom-frame-label",
+          "brandingOverlapsArtwork": false,
+          "appUiControlsIncluded": false,
+          "printableBorderCount": 1,
+          "metadataTitle": "Anime Girl Air Balloon - iLoveColoringPage.com",
+          "source": "internal-svg"
+        },
+        "pdf": {
+          "path": "pipeline\\review\\final-print-modal-fix\\tall-portrait.pdf",
+          "byteLength": 11521085,
+          "pageCount": 1,
+          "oneSlimBorderOnly": true,
+          "logoVisible": true,
+          "logoKnockoutPresent": true,
+          "logoOverlapsArtwork": false,
+          "artworkUsesMorePageSpaceThanBefore": true,
+          "appUiControlsIncluded": false
+        },
+        "downloads": {
+          "png": true,
+          "jpg": true,
+          "webp": true
+        },
+        "svgDownloadAbsent": true
+      },
+      {
+        "key": "high-detail",
+        "label": "High-detail item",
+        "route": "/coloring-pages/detailed-for-adults",
+        "assetId": "mandala__mandala-geometry-patterns-hindu-mandala__fc5ca81596",
+        "title": "Mandala Geometry Patterns Hindu Mandala",
+        "modal": {
+          "standaloneDownloadLabelCount": 0,
+          "panelHasUnnecessaryScrollbar": false,
+          "previewObjectFit": "contain",
+          "previewWidth": 1052,
+          "previewHeight": 1578,
+          "previewNaturalWidth": 1600,
+          "previewNaturalHeight": 2400,
+          "previewImageLoaded": true,
+          "mediaWidth": 1052,
+          "mediaHeight": 700
+        },
+        "printSnapshot": {
+          "pageCount": 1,
+          "pageSize": "letter-portrait",
+          "pdfByteLength": 11521102,
+          "artworkBox": {
+            "x": 15,
+            "y": 15,
+            "width": 582,
+            "height": 762
+          },
+          "imageBox": {
+            "width": 508,
+            "height": 762,
+            "x": 52,
+            "y": 15
+          },
+          "brandBox": {
+            "x": 267.78,
+            "y": 7.62,
+            "width": 76.44,
+            "height": 7
+          },
+          "brandPlacement": "bottom-frame-label",
+          "brandingOverlapsArtwork": false,
+          "appUiControlsIncluded": false,
+          "printableBorderCount": 1,
+          "metadataTitle": "Mandala Geometry Patterns Hindu Mandala - iLoveColoringPage.com",
+          "source": "internal-svg"
+        },
+        "pdf": {
+          "path": "pipeline\\review\\final-print-modal-fix\\high-detail.pdf",
+          "byteLength": 11521102,
+          "pageCount": 1,
+          "oneSlimBorderOnly": true,
+          "logoVisible": true,
+          "logoKnockoutPresent": true,
+          "logoOverlapsArtwork": false,
+          "artworkUsesMorePageSpaceThanBefore": true,
+          "appUiControlsIncluded": false
+        },
+        "downloads": {
+          "png": true,
+          "jpg": true,
+          "webp": true
+        },
+        "svgDownloadAbsent": true
+      }
+    ],
+    "consoleErrors": [],
+    "summary": {
+      "sampleCount": 4,
+      "requiredSamplesCovered": true,
+      "modalDownloadLabelRemoved": true,
+      "modalPreviewNotCropped": true,
+      "modalPreviewShowsFullImage": true,
+      "pdfOnePage": true,
+      "oneSlimBorderOnly": true,
+      "logoIntegratedIntoBottomFrame": true,
+      "logoOverlapsArtwork": false,
+      "artworkUsesMorePageSpaceThanBefore": true,
+      "pngJpgWebpDownloadsWork": true,
+      "svgDownloadAbsent": true,
+      "noConsoleErrors": true
+    }
+  },
+  "summary": {
+    "modalDownloadLabelRemoved": true,
+    "modalPreviewNotCropped": true,
+    "modalPreviewShowsFullImage": true,
+    "pdfOnePage": true,
+    "oneSlimBorderOnly": true,
+    "logoIntegratedIntoBottomFrame": true,
+    "logoOverlapsArtwork": false,
+    "artworkUsesMorePageSpaceThanBefore": true,
+    "pngJpgWebpDownloadsWork": true,
+    "svgDownloadAbsent": true,
+    "noConsoleErrors": true,
+    "focusedQaPassed": true
+  }
+}

@@ -87,6 +87,7 @@ export type PreparedPrintPdfResult =
       artworkBox: PrintDocumentBox;
       imageBox: PrintDocumentBox;
       brandBox: PrintDocumentBox;
+      brandPlacement: "bottom-frame-label";
       brandingOverlapsArtwork: false;
       appUiControlsIncluded: false;
       printableBorderCount: 1;
@@ -135,6 +136,8 @@ type PrintPdfLayout = {
   artworkBox: PrintDocumentBox;
   imageBox: PrintDocumentBox;
   brandBox: PrintDocumentBox;
+  brandKnockoutBox: PrintDocumentBox;
+  brandPlacement: "bottom-frame-label";
   printableBorderCount: 1;
 };
 
@@ -145,6 +148,7 @@ type PrintDocumentQaSnapshot = {
   artworkBox: PrintDocumentBox;
   imageBox: PrintDocumentBox;
   brandBox: PrintDocumentBox;
+  brandPlacement: "bottom-frame-label";
   brandingOverlapsArtwork: false;
   appUiControlsIncluded: false;
   printableBorderCount: 1;
@@ -166,6 +170,7 @@ export const INTERNAL_SVG_CONTENT_TYPE = "image/svg+xml";
 export const PRINT_DOCUMENT_BRAND = "iLoveColoringPage.com";
 const PRINT_PAGE_WIDTH_PT = 612;
 const PRINT_PAGE_HEIGHT_PT = 792;
+const PRINT_BRAND_FONT_SIZE = 7;
 
 const CANVAS_FORMATS: Record<RasterDownloadFormat, FormatConfig> = {
   png: { mimeType: "image/png", extension: "png" },
@@ -422,6 +427,7 @@ export async function prepareOnePagePrintPdf(options: PrintOptions): Promise<Pre
       artworkBox: layout.artworkBox,
       imageBox: layout.imageBox,
       brandBox: layout.brandBox,
+      brandPlacement: layout.brandPlacement,
       brandingOverlapsArtwork: false,
       appUiControlsIncluded: false,
       printableBorderCount: layout.printableBorderCount,
@@ -642,19 +648,28 @@ function buildPrintPdfTitle(title: string) {
 
 function getPrintPdfLayout(imageWidth: number, imageHeight: number): PrintPdfLayout {
   const outerFrame = {
-    x: 14,
-    y: 14,
-    width: PRINT_PAGE_WIDTH_PT - 28,
-    height: PRINT_PAGE_HEIGHT_PT - 28,
+    x: 10,
+    y: 10,
+    width: PRINT_PAGE_WIDTH_PT - 20,
+    height: PRINT_PAGE_HEIGHT_PT - 20,
   };
-  const footerHeight = 18;
-  const safePadding = 6;
+  const safePadding = 5;
+  const brandTextWidth = estimatePdfTextWidth(PRINT_DOCUMENT_BRAND, PRINT_BRAND_FONT_SIZE);
+  const brandKnockoutPaddingX = 4;
+  const brandKnockoutPaddingY = 1;
+  const brandKnockoutBox = {
+    x: roundPdfNumber(outerFrame.x + (outerFrame.width - brandTextWidth) / 2 - brandKnockoutPaddingX),
+    y: roundPdfNumber(outerFrame.y - PRINT_BRAND_FONT_SIZE * 0.55 - brandKnockoutPaddingY),
+    width: roundPdfNumber(brandTextWidth + brandKnockoutPaddingX * 2),
+    height: roundPdfNumber(PRINT_BRAND_FONT_SIZE + brandKnockoutPaddingY * 2),
+  };
   const artworkBox = {
     x: outerFrame.x + safePadding,
-    y: outerFrame.y + footerHeight + safePadding,
+    y: roundPdfNumber(Math.max(outerFrame.y + safePadding, brandKnockoutBox.y + brandKnockoutBox.height + 0.5)),
     width: outerFrame.width - safePadding * 2,
-    height: outerFrame.height - footerHeight - safePadding * 2,
+    height: 0,
   };
+  artworkBox.height = roundPdfNumber(outerFrame.y + outerFrame.height - safePadding - artworkBox.y);
   const imageScale = Math.min(artworkBox.width / imageWidth, artworkBox.height / imageHeight);
   const imageBox = {
     width: roundPdfNumber(imageWidth * imageScale),
@@ -668,11 +683,13 @@ function getPrintPdfLayout(imageWidth: number, imageHeight: number): PrintPdfLay
     artworkBox,
     imageBox,
     brandBox: {
-      x: outerFrame.x,
-      y: outerFrame.y,
-      width: outerFrame.width,
-      height: footerHeight,
+      x: roundPdfNumber(outerFrame.x + (outerFrame.width - brandTextWidth) / 2),
+      y: roundPdfNumber(outerFrame.y - PRINT_BRAND_FONT_SIZE * 0.34),
+      width: roundPdfNumber(brandTextWidth),
+      height: PRINT_BRAND_FONT_SIZE,
     },
+    brandKnockoutBox,
+    brandPlacement: "bottom-frame-label",
     printableBorderCount: 1,
   };
 }
@@ -767,11 +784,6 @@ function buildPrintPdfBytes(canvas: HTMLCanvasElement, layout: PrintPdfLayout, m
 }
 
 function buildPrintPdfContentStream(layout: PrintPdfLayout) {
-  const brandFontSize = 8;
-  const estimatedBrandWidth = PRINT_DOCUMENT_BRAND.length * brandFontSize * 0.52;
-  const brandX = layout.brandBox.x + (layout.brandBox.width - estimatedBrandWidth) / 2;
-  const brandY = layout.brandBox.y + 5;
-
   return [
     "q",
     "0.76 0.73 0.82 RG",
@@ -782,10 +794,14 @@ function buildPrintPdfContentStream(layout: PrintPdfLayout) {
     `${formatPdfNumber(layout.imageBox.width)} 0 0 ${formatPdfNumber(layout.imageBox.height)} ${formatPdfNumber(layout.imageBox.x)} ${formatPdfNumber(layout.imageBox.y)} cm`,
     "/Im0 Do",
     "Q",
+    "q",
+    "1 1 1 rg",
+    `${boxCommand(layout.brandKnockoutBox)} f`,
+    "Q",
     "BT",
-    "/F1 8 Tf",
+    `/F1 ${PRINT_BRAND_FONT_SIZE} Tf`,
     "0.42 0.29 0.50 rg",
-    `${formatPdfNumber(brandX)} ${formatPdfNumber(brandY)} Td`,
+    `${formatPdfNumber(layout.brandBox.x)} ${formatPdfNumber(layout.brandBox.y)} Td`,
     `(${escapePdfText(PRINT_DOCUMENT_BRAND)}) Tj`,
     "ET",
   ].join("\n");
@@ -818,6 +834,10 @@ function roundPdfNumber(value: number) {
   return Math.round(value * 100) / 100;
 }
 
+function estimatePdfTextWidth(value: string, fontSize: number) {
+  return roundPdfNumber(value.length * fontSize * 0.52);
+}
+
 function recordPrintDocumentQa(prepared: Extract<PreparedPrintPdfResult, { ok: true }>) {
   if (typeof window === "undefined") return;
   window.__ILCP_LAST_PRINT_DOCUMENT__ = {
@@ -827,6 +847,7 @@ function recordPrintDocumentQa(prepared: Extract<PreparedPrintPdfResult, { ok: t
     artworkBox: prepared.artworkBox,
     imageBox: prepared.imageBox,
     brandBox: prepared.brandBox,
+    brandPlacement: prepared.brandPlacement,
     brandingOverlapsArtwork: prepared.brandingOverlapsArtwork,
     appUiControlsIncluded: prepared.appUiControlsIncluded,
     printableBorderCount: prepared.printableBorderCount,
