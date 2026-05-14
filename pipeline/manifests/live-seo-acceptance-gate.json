@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-05-14T05:05:57.977Z",
+  "phase": "live-seo-verification",
+  "summary": {
+    "production_site_reachable": true,
+    "production_deploy_current": false,
+    "route_check_passed": false,
+    "regular_sitemap_passed": false,
+    "image_sitemap_passed": false,
+    "robots_passed": false,
+    "og_metadata_passed": false,
+    "jsonld_passed": false,
+    "browser_qa_passed": false,
+    "sampled_asset_check_passed": true,
+    "no_svg_download": true,
+    "no_app_api": true,
+    "no_horizontal_overflow": true,
+    "ready_for_gsc_submission": false,
+    "ready_for_manual_social_validation": false,
+    "ready_for_live_ads_round": false,
+    "blockers": [
+      "production deployment appears stale or missing current JSON-LD/OG/image sitemap behavior",
+      "live HTTP route check did not pass",
+      "regular sitemap check did not pass",
+      "image sitemap check did not pass",
+      "robots.txt check did not pass",
+      "OG metadata check did not pass",
+      "JSON-LD check did not pass",
+      "browser QA did not pass"
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "generatedAt": "2026-05-14T04:51:07.730Z",
+  "phase": "live-seo-verification",
+  "summary": {
+    "productionSiteReachable": true,
+    "productionDeployCurrent": false,
+    "jsonLdScriptTagsPresent": false,
+    "ogImageMetadataPresent": false,
+    "robotsReferencesBothSitemaps": false,
+    "liveImageSitemapExists": false,
+    "liveRegularSitemapExists": true,
+    "noLocalhostLeak": true,
+    "noR2DevLeak": true,
+    "noPrivateR2EndpointLeak": true,
+    "noAppApiReferences": true,
+    "noSvgDownloadLabelsOrLinks": true,
+    "ownerActionIfStale": "Trigger a fresh Netlify production deploy from ver-5-deployed-may-13-2026 at commit 0e18282 or later."
+  },
+  "evidence": [
+    {
+      "url": "https://www.ilovecoloringpage.com/",
+      "status": 200,
+      "finalUrl": "https://www.ilovecoloringpage.com/",
+      "hasJsonLd": false,
+      "hasOgImage": false,
+      "bodySize": 69956
+    },
+    {
+      "url": "https://www.ilovecoloringpage.com/coloring-pages",
+      "status": 200,
+      "finalUrl": "https://www.ilovecoloringpage.com/coloring-pages",
+      "hasJsonLd": false,
+      "hasOgImage": false,
+      "bodySize": 6888540
+    },
+    {
+      "url": "https://www.ilovecoloringpage.com/coloring-pages/animals",
+      "status": 200,
+      "finalUrl": "https://www.ilovecoloringpage.com/coloring-pages/animals",
+      "hasJsonLd": false,
+      "hasOgImage": false,
+      "bodySize": 1706714
+    },
+    {
+      "url": "https://www.ilovecoloringpage.com/coloring-pages/t-rex",
+      "status": 404,
+      "finalUrl": "https://www.ilovecoloringpage.com/coloring-pages/t-rex",
+      "hasJsonLd": false,
+      "hasOgImage": false,
+      "bodySize": 26984
+    },
+    {
+      "url": "https://www.ilovecoloringpage.com/coloring-pages/dragons",
+      "status": 404,
+      "finalUrl": "https://www.ilovecoloringpage.com/coloring-pages/dragons",
+      "hasJsonLd": false,
+      "hasOgImage": false,
+      "bodySize": 26984
+    },
+    {
+      "url": "https://www.ilovecoloringpage.com/contact",
+      "status": 200,
+      "finalUrl": "https://www.ilovecoloringpage.com/contact",
+      "hasJsonLd": false,
+      "hasOgImage": false,
+      "bodySize": 31662
+    },
+    {
+      "url": "https://www.ilovecoloringpage.com/privacy",
+      "status": 200,
+      "finalUrl": "https://www.ilovecoloringpage.com/privacy",
+      "hasJsonLd": false,
+      "hasOgImage": false,
+      "bodySize": 37704
+    },
+    {
+      "url": "https://www.ilovecoloringpage.com/sitemap.xml",
+      "status": 200,
+      "finalUrl": "https://www.ilovecoloringpage.com/sitemap.xml",
+      "hasJsonLd": false,
+      "hasOgImage": false,
+      "bodySize": 13280
+    },
+    {
+      "url": "https://www.ilovecoloringpage.com/image-sitemap.xml",
+      "status": 404,
+      "finalUrl": "https://www.ilovecoloringpage.com/image-sitemap.xml",
+      "hasJsonLd": false,
+      "hasOgImage": false,
+      "bodySize": 26984
+    },
+    {
+      "url": "https://www.ilovecoloringpage.com/robots.txt",
+      "status": 200,
+      "finalUrl": "https://www.ilovecoloringpage.com/robots.txt",
+      "hasJsonLd": false,
+      "hasOgImage": false,
+      "bodySize": 102
+    }
+  ]
+}

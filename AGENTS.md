@@ -558,6 +558,16 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Structured data must remain static-export compatible and must not require `app/api`, backend routes, middleware, or server runtime.
 - Live ads remain separate and require explicit owner approval.
 
+## Live SEO Verification Gate
+
+- Live SEO verification must pass before GSC submission or manual social preview validation.
+- Local sitemap, image sitemap, OG, and JSON-LD validation is not enough; production pages must be checked after deployment.
+- Stale production deployments block SEO acceptance claims, even when local validation passes.
+- Live verification must check routes, redirects, `robots.txt`, the regular sitemap, image sitemap, OG metadata, JSON-LD, WebP gallery previews, print, and PNG/JPG/WebP downloads.
+- Production checks must confirm no localhost, `r2.dev`, private storage endpoint, `app/api`, per-image route, or SVG download leakage.
+- Do not start live ads until live sitemap, image sitemap, OG, JSON-LD, trust pages, downloads, print, and layout are accepted.
+- Live ads remain separate and require explicit owner approval.
+
 ## Conversion Workflow
 
 - Do not choose a winning preset until a later bakeoff round compares outputs.

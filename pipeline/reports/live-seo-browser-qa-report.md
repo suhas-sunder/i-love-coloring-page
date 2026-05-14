@@ -1,0 +1,26 @@
+# Live SEO Browser QA Report
+
+- Pages checked: 20
+- Viewports checked: 390, 1440
+- Browser QA passed: false
+- WebP gallery previews render: true
+- No Preview unavailable for visible uploaded records: true
+- No broken image icons: true
+- Deferred records hidden: true
+- Counts show 6,352 where applicable: true
+- Featured rotation works: false
+- Search/filter works: false
+- Pagination works: false
+- More menu works: false
+- Mobile nav works: false
+- Print works: false
+- PNG download works: false
+- JPG download works: false
+- WebP download works: false
+- SVG download absent: true
+- Ad wells visible with accepted density: true
+- No horizontal overflow: true
+- Trust pages render: true
+- Contact email appears correctly: true
+- Screenshots: D:\PROJECTS-and-WORK\work-projects\all_projects\i-love-coloring-page\pipeline\review\live-seo-verification\screenshots
+- Blockers: production deployment appears stale, so interactive print/download/navigation checks were recorded as blocked
