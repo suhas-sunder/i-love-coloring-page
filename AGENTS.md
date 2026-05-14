@@ -522,6 +522,10 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Print PDF output must have one slim border, minimal safe padding, and small `iLoveColoringPage.com` branding outside the artwork area.
 - Print branding must never overlap, obscure, or watermark the coloring artwork.
 - Related and browsing link sections must be professionally spaced, purposeful, and readable, with counts separated from labels.
+- Popular and related collection link sections must use polished spacing and separate count alignment.
+- Do not create lazy duplicate browse sections; each browse or related section needs a distinct purpose.
+- Do not ellipsize important hub names in the More menu; allow long labels to wrap cleanly.
+- Use available desktop space for large navigation menus while keeping grouped sections and search near the top.
 - Do not prompt for deployment until the final local UX browser and print gates pass.
 
 ## Image Sitemap Gate

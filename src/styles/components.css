@@ -57,15 +57,37 @@
   font-size: var(--text-sm-size);
   font-weight: 800;
   line-height: var(--text-sm-line);
+  overflow: hidden;
   padding: var(--space-8) var(--space-12);
-  transition: background-color var(--motion-fast) ease, color var(--motion-fast) ease, transform var(--motion-fast) ease;
+  transition: background-color var(--motion-fast) ease, color var(--motion-fast) ease;
+}
+
+.site-nav-link::after {
+  position: absolute;
+  right: var(--space-12);
+  bottom: 5px;
+  left: var(--space-12);
+  height: 2px;
+  border-radius: var(--radius-pill);
+  background: currentColor;
+  content: "";
+  opacity: 0;
+  transform: scaleX(0.45);
+  transform-origin: center;
+  transition: opacity var(--motion-fast) ease, transform var(--motion-fast) ease;
 }
 
 .site-nav-link:hover,
 .more-hub-button[aria-expanded="true"] {
   background: var(--color-soft-plum);
   color: var(--color-plum);
-  transform: translateY(-1px);
+}
+
+.site-nav-link:hover::after,
+.site-nav-link:focus-visible::after,
+.more-hub-button[aria-expanded="true"]::after {
+  opacity: 0.5;
+  transform: scaleX(1);
 }
 
 .more-hub-menu {
@@ -82,7 +104,7 @@
 .hub-menu-panel {
   z-index: 40;
   display: grid;
-  gap: var(--space-20);
+  gap: var(--space-16);
   overflow: auto;
   border-radius: var(--radius-md);
   background: var(--color-paper);
@@ -170,7 +192,7 @@
 .hub-menu-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: var(--space-32) var(--space-40);
+  gap: var(--space-24) var(--space-32);
 }
 
 .hub-menu-group {
@@ -197,7 +219,7 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr) max-content;
   align-items: start;
-  gap: var(--space-10);
+  gap: var(--space-16);
   min-height: 40px;
   border-radius: var(--radius-sm);
   color: var(--color-ink);
@@ -214,7 +236,7 @@
 
 .hub-menu-link-label {
   min-width: 0;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
 }
 
 .hub-menu-link-count {
@@ -899,7 +921,7 @@
 
 .hero-related-label {
   min-width: 0;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
 }
 
 .hero-related-count {
@@ -1041,25 +1063,28 @@
 }
 
 .hub-link {
-  display: flex;
-  min-height: 112px;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: var(--space-20);
-  padding-block: var(--space-4) var(--space-16);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) max-content;
+  min-height: 72px;
+  align-items: start;
+  gap: var(--space-16);
+  border-radius: var(--radius-sm);
   color: var(--color-ink);
-  transition: color var(--motion-fast) ease, transform var(--motion-fast) ease;
+  padding: var(--space-12);
+  transition: background-color var(--motion-fast) ease, color var(--motion-fast) ease;
 }
 
 .hub-link:hover {
+  background: var(--color-soft-sky);
   color: var(--color-plum);
-  transform: translateY(-2px);
 }
 
 .hub-link-title {
-  font-size: var(--text-xl-size);
-  font-weight: var(--text-xl-weight);
-  line-height: var(--text-xl-line);
+  min-width: 0;
+  overflow-wrap: break-word;
+  font-size: var(--text-lg-size);
+  font-weight: 800;
+  line-height: var(--text-lg-line);
 }
 
 .hub-link-count {
@@ -1067,10 +1092,12 @@
   font-size: var(--text-sm-size);
   font-weight: 700;
   line-height: var(--text-sm-line);
+  text-align: right;
+  white-space: nowrap;
 }
 
 .hub-link-compact {
-  min-height: 84px;
+  min-height: 56px;
 }
 
 .hub-link-compact .hub-link-title {
@@ -1494,13 +1521,15 @@
 }
 
 .section-list li {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) max-content;
   align-items: baseline;
-  justify-content: space-between;
   gap: var(--space-16);
 }
 
 .section-list span {
+  min-width: 0;
+  overflow-wrap: break-word;
   color: var(--color-ink);
   font-weight: 700;
 }
@@ -1509,6 +1538,9 @@
   color: var(--color-text-muted);
   font-size: var(--text-sm-size);
   font-weight: 700;
+  line-height: var(--text-sm-line);
+  text-align: right;
+  white-space: nowrap;
 }
 
 .related-list {
@@ -1537,7 +1569,7 @@
 
 .related-link-label {
   min-width: 0;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
   font-weight: 800;
   line-height: 1.3;
 }

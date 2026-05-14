@@ -1,0 +1,30 @@
+{
+  "generatedAt": "2026-05-14T21:36:01.890Z",
+  "runId": "final-link-nav-polish-context-check",
+  "git": {
+    "topLevel": "D:/PROJECTS-and-WORK/work-projects/all_projects/i-love-coloring-page",
+    "branch": "ver-5-deployed-may-13-2026",
+    "status": "## ver-5-deployed-may-13-2026...origin/ver-5-deployed-may-13-2026\n M AGENTS.md\n M src/styles/components.css\n?? pipeline/manifests/final-link-nav-browser-qa-results.json\n?? pipeline/manifests/final-link-nav-card-action-results.json\n?? pipeline/manifests/final-link-nav-header-hover-results.json\n?? pipeline/manifests/final-link-nav-more-menu-results.json\n?? pipeline/manifests/final-link-nav-more-ways-results.json\n?? pipeline/manifests/final-link-nav-polish-context-check.json\n?? pipeline/manifests/final-link-nav-polish-current-audit.json\n?? pipeline/manifests/final-link-nav-popular-results.json\n?? pipeline/manifests/final-link-nav-related-results.json\n?? pipeline/reports/final-link-nav-browser-qa-report.md\n?? pipeline/reports/final-link-nav-card-action-report.md\n?? pipeline/reports/final-link-nav-header-hover-report.md\n?? pipeline/reports/final-link-nav-more-menu-report.md\n?? pipeline/reports/final-link-nav-more-ways-report.md\n?? pipeline/reports/final-link-nav-polish-context-check.md\n?? pipeline/reports/final-link-nav-polish-current-audit.md\n?? pipeline/reports/final-link-nav-popular-report.md\n?? pipeline/reports/final-link-nav-related-report.md\n?? pipeline/scripts/final-link-nav-browser-qa-runner.cjs\n?? pipeline/tests/final-link-nav-polish.test.mjs",
+    "latestCommit": "17f507ef51f9edcfac763b6c23b3b3c7ff27c764"
+  },
+  "summary": {
+    "repoProjectCorrect": true,
+    "branchCorrect": true,
+    "latestPrintModalFixCommitExists": true,
+    "appApiAbsent": true,
+    "staticExportConfigured": true,
+    "runtimeGeneratedDataExists": true,
+    "availableRuntimeRecords": 6352,
+    "runtimeIndexableHubs": 131,
+    "imageSitemapExists": true,
+    "ogImagesExist": true,
+    "jsonLdExists": true,
+    "publicSafeDefaultsExist": true,
+    "svgInternalOnly": true,
+    "publicDownloadsPngJpgWebp": true,
+    "liveAdSenseAbsent": true,
+    "imagesUntouched": true,
+    "ilovesvgUntouched": true,
+    "contextPassed": true
+  }
+}
