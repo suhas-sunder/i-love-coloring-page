@@ -5,6 +5,7 @@ import { createPortal } from "react-dom";
 
 import {
   prepareHighQualityPrintImage,
+  printOnePagePdf,
   revokePreparedPrintImage,
   type PreparedPrintImageResult,
 } from "@/lib/coloring/browserDownloads";
@@ -30,6 +31,7 @@ export function ImageCard({ item, assetUrls, priority = false }: ImageCardProps)
   const [actionStatus, setActionStatus] = useState("");
   const [isPreviewOpen, setIsPreviewOpen] = useState(false);
   const [isPreparingPrint, setIsPreparingPrint] = useState(false);
+  const [isPrintingPdf, setIsPrintingPdf] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [preparedPrintImage, setPreparedPrintImage] = useState<PreparedPrintImageResult | null>(null);
   const prepareRunId = useRef(0);
@@ -40,18 +42,6 @@ export function ImageCard({ item, assetUrls, priority = false }: ImageCardProps)
 
   useEffect(() => {
     setMounted(true);
-  }, []);
-
-  useEffect(() => {
-    function handleAfterPrint() {
-      document.body.classList.remove("printing-coloring-page");
-    }
-
-    window.addEventListener("afterprint", handleAfterPrint);
-    return () => {
-      window.removeEventListener("afterprint", handleAfterPrint);
-      document.body.classList.remove("printing-coloring-page");
-    };
   }, []);
 
   useEffect(() => {
@@ -103,9 +93,9 @@ export function ImageCard({ item, assetUrls, priority = false }: ImageCardProps)
 
   function closePrintPreview() {
     prepareRunId.current += 1;
-    document.body.classList.remove("printing-coloring-page");
     setIsPreviewOpen(false);
     setIsPreparingPrint(false);
+    setIsPrintingPdf(false);
     setActionStatus("");
     setPreparedPrintImage((current) => {
       revokePreparedPrintImage(current);
@@ -113,25 +103,51 @@ export function ImageCard({ item, assetUrls, priority = false }: ImageCardProps)
     });
   }
 
-  function printPreparedPreview() {
-    if (!preparedPrintImage?.ok) return;
-    document.body.classList.add("printing-coloring-page");
-    window.setTimeout(() => {
-      window.print();
-    }, 50);
+  async function printPreparedPreview() {
+    if (!preparedPrintImage?.ok || isPrintingPdf) return;
+    if (!internalSvgUrl) {
+      setActionStatus("Print could not be prepared. Try a PNG download instead.");
+      return;
+    }
+
+    setIsPrintingPdf(true);
+    setActionStatus("Preparing printable PDF...");
+
+    const result = await printOnePagePdf({
+      internalSvgUrl,
+      pngPreviewUrl,
+      title: item.title,
+      altText: item.altText,
+    });
+
+    setActionStatus(result.ok ? result.message || "Printable PDF is ready." : result.message);
+    setIsPrintingPdf(false);
   }
 
   const previewWorkflow =
     isPreviewOpen && mounted
-      ? createPortal(
+        ? createPortal(
           <div className="print-preview-overlay" role="presentation" onMouseDown={(event) => {
             if (event.target === event.currentTarget) closePrintPreview();
           }}>
             <section className="print-preview-panel" role="dialog" aria-modal="true" aria-labelledby={titleId}>
-              <div className="print-preview-copy">
-                <p className="print-preview-kicker">I Love Coloring Page</p>
-                <h2 id={titleId}>{item.title}</h2>
-                <p>Preview the printable page, then print or download a copy.</p>
+              <div className="print-preview-header">
+                <div className="print-preview-copy">
+                  <h2 id={titleId}>{item.title}</h2>
+                </div>
+                <div className="print-preview-actions">
+                  <button
+                    className="button button-primary"
+                    type="button"
+                    onClick={printPreparedPreview}
+                    disabled={!preparedPrintImage?.ok || isPrintingPdf || !internalSvgUrl}
+                  >
+                    {isPrintingPdf ? "Preparing PDF" : "Print"}
+                  </button>
+                  <button className="button button-ghost" type="button" onClick={closePrintPreview}>
+                    Close
+                  </button>
+                </div>
               </div>
 
               <div className="print-preview-media" aria-live="polite">
@@ -150,39 +166,22 @@ export function ImageCard({ item, assetUrls, priority = false }: ImageCardProps)
                 )}
               </div>
 
-              <div className="print-preview-actions">
-                <button className="button button-primary" type="button" onClick={printPreparedPreview} disabled={!preparedPrintImage?.ok}>
-                  Print
-                </button>
-                <button className="button button-ghost" type="button" onClick={closePrintPreview}>
-                  Close
-                </button>
+              <div className="print-preview-downloads">
+                <span className="print-preview-download-title">Download</span>
+                <DownloadMenu
+                  title={item.title}
+                  internalSvgUrl={internalSvgUrl}
+                  pngPreviewUrl={pngPreviewUrl}
+                  aria-label={`Download PNG, JPG, or WebP for ${item.title}`}
+                  onStatus={setActionStatus}
+                />
               </div>
-
-              <DownloadMenu
-                title={item.title}
-                internalSvgUrl={internalSvgUrl}
-                pngPreviewUrl={pngPreviewUrl}
-                aria-label={`Download PNG, JPG, or WebP for ${item.title}`}
-                onStatus={setActionStatus}
-              />
               {actionStatus ? (
                 <p className="print-preview-status" aria-live="polite">
                   {actionStatus}
                 </p>
               ) : null}
             </section>
-
-            {preparedPrintImage?.ok ? (
-              <section className="print-document" aria-label={`${item.title} printable page`}>
-                <div className="print-document-artwork">
-                  <div className="print-document-frame">
-                    <img src={preparedPrintImage.imageUrl} alt={item.altText} />
-                  </div>
-                </div>
-                <p className="print-document-brand">I Love Coloring Page</p>
-              </section>
-            ) : null}
           </div>,
           document.body,
         )

@@ -1,0 +1,29 @@
+{
+  "generatedAt": "2026-05-14T18:53:03.289Z",
+  "runId": "predeploy-print-current-audit",
+  "summary": {
+    "auditedFiles": [
+      "src/lib/coloring/browserDownloads.ts",
+      "src/components/coloring/ImageCard.tsx",
+      "src/components/coloring/DownloadMenu.tsx",
+      "src/components/coloring/AssetImage.tsx",
+      "src/styles/components.css"
+    ],
+    "baselinePrintTriggeredByWindowPrint": true,
+    "baselineOpenedAboutBlankPopup": false,
+    "baselineHtmlPrintDocumentCouldInheritBrowserHeadersFooters": true,
+    "baselineBlankPageRisk": true,
+    "currentPdfStylePrintPathPresent": true,
+    "currentWindowPrintPathRemovedFromImageCard": true,
+    "currentAboutBlankPopupAbsent": true,
+    "currentBrandingText": true,
+    "modalScrollbarRiskReduced": true,
+    "controlsTopRight": true,
+    "pngJpgWebpDownloadsAccessible": true,
+    "svgExposedAnywhereInPrintOrDownloadUi": false
+  },
+  "findings": [
+    "The baseline card print action used browser HTML printing through window.print, so the round replaced it with generated one-page PDF output.",
+    "The current implementation has a generated PDF print path."
+  ]
+}

@@ -1239,25 +1239,34 @@
   z-index: 80;
   display: grid;
   place-items: center;
-  overflow: auto;
+  overflow: hidden;
   background: rgb(31 28 36 / 0.38);
   padding: var(--space-24);
 }
 
 .print-preview-panel {
   display: grid;
-  width: min(920px, 100%);
-  max-height: min(88vh, 920px);
-  gap: var(--space-20);
-  overflow: auto;
+  grid-template-rows: auto minmax(0, 1fr) auto auto;
+  width: min(980px, 100%);
+  max-height: min(92dvh, 920px);
+  gap: var(--space-16);
+  overflow: hidden;
   border-radius: var(--radius-md);
   background: var(--color-paper);
   padding: var(--space-24);
 }
 
+.print-preview-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: var(--space-16);
+  align-items: start;
+}
+
 .print-preview-copy {
   display: grid;
   gap: var(--space-8);
+  min-width: 0;
 }
 
 .print-preview-kicker {
@@ -1272,9 +1281,9 @@
 .print-preview-copy h2 {
   color: var(--color-ink);
   font-family: var(--font-display);
-  font-size: var(--text-2xl-size);
-  font-weight: var(--text-2xl-weight);
-  line-height: var(--text-2xl-line);
+  font-size: var(--text-xl-size);
+  font-weight: var(--text-xl-weight);
+  line-height: var(--text-xl-line);
 }
 
 .print-preview-copy p {
@@ -1286,7 +1295,8 @@
 
 .print-preview-media {
   display: grid;
-  min-height: min(58vh, 620px);
+  min-height: 0;
+  height: min(64dvh, 650px);
   place-items: center;
   overflow: hidden;
   border-radius: var(--radius-sm);
@@ -1297,7 +1307,7 @@
 .print-preview-media img {
   display: block;
   max-width: 100%;
-  max-height: min(56vh, 590px);
+  max-height: 100%;
   object-fit: contain;
 }
 
@@ -1320,6 +1330,21 @@
   flex-wrap: wrap;
   gap: var(--space-12);
   align-items: center;
+  justify-content: flex-end;
+}
+
+.print-preview-downloads {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: var(--space-12);
+  align-items: center;
+}
+
+.print-preview-download-title {
+  color: var(--color-text-muted);
+  font-size: var(--text-sm-size);
+  font-weight: 900;
+  line-height: var(--text-sm-line);
 }
 
 .print-preview-status {
@@ -1327,10 +1352,6 @@
   color: var(--color-text-muted);
   font-size: var(--text-sm-size);
   line-height: var(--text-sm-line);
-}
-
-.print-document {
-  display: none;
 }
 
 .gallery-action-status {
@@ -1611,6 +1632,34 @@
     flex: 1 1 72px;
   }
 
+  .print-preview-overlay {
+    padding: var(--space-12);
+  }
+
+  .print-preview-panel {
+    max-height: calc(100dvh - var(--space-24));
+    gap: var(--space-12);
+    padding: var(--space-16);
+  }
+
+  .print-preview-header,
+  .print-preview-downloads {
+    grid-template-columns: 1fr;
+  }
+
+  .print-preview-actions {
+    justify-content: flex-start;
+  }
+
+  .print-preview-media {
+    height: min(54dvh, 520px);
+    padding: var(--space-12);
+  }
+
+  .download-options {
+    grid-template-columns: 1fr;
+  }
+
   .ad-slot-header-banner,
   .ad-slot-responsive-banner {
     min-height: 72px;
@@ -1641,81 +1690,5 @@
   .ad-slot,
   .ad-rail {
     display: none !important;
-  }
-
-  body.printing-coloring-page {
-    background: white;
-  }
-
-  body.printing-coloring-page .site-shell {
-    display: none !important;
-  }
-
-  body.printing-coloring-page .print-preview-overlay {
-    position: static !important;
-    display: block !important;
-    width: 100% !important;
-    min-height: 0 !important;
-    overflow: visible !important;
-    background: white !important;
-    padding: 0 !important;
-  }
-
-  body.printing-coloring-page .print-preview-panel {
-    display: none !important;
-  }
-
-  body.printing-coloring-page .print-document {
-    position: static !important;
-    display: grid !important;
-    width: 100% !important;
-    height: calc(100vh - 0.7in);
-    max-height: 10.2in;
-    grid-template-rows: minmax(0, 1fr) auto;
-    gap: 0.14in;
-    overflow: hidden;
-    page-break-inside: avoid;
-    break-inside: avoid;
-    background: white;
-  }
-
-  body.printing-coloring-page .print-document-artwork {
-    display: grid;
-    min-height: 0;
-    place-items: center;
-    page-break-inside: avoid;
-    break-inside: avoid;
-  }
-
-  body.printing-coloring-page .print-document-frame {
-    display: grid;
-    width: 100%;
-    height: 100%;
-    place-items: center;
-    background: rgb(221 216 229);
-    padding: 0.12in;
-    page-break-inside: avoid;
-    break-inside: avoid;
-  }
-
-  body.printing-coloring-page .print-document img {
-    display: block;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    page-break-inside: avoid;
-    break-inside: avoid;
-  }
-
-  body.printing-coloring-page .print-document-brand {
-    margin: 0;
-    color: rgb(107 74 127);
-    font-family: Arial, sans-serif;
-    font-size: 0.72rem;
-    font-weight: 800;
-    letter-spacing: 0;
-    line-height: 1.2;
-    text-align: center;
-    text-transform: uppercase;
   }
 }

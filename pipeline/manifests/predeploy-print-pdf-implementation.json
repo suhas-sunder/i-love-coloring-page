@@ -1,0 +1,22 @@
+{
+  "generatedAt": "2026-05-14T18:53:03.291Z",
+  "runId": "predeploy-print-pdf-implementation",
+  "summary": {
+    "pdfStyleOutputImplemented": true,
+    "printButtonUsesPdfWorkflow": true,
+    "frontendOnly": true,
+    "dependencyAdded": false,
+    "pageSize": "letter-portrait",
+    "onePagePdfMetadata": true,
+    "artworkFramePresent": true,
+    "brandTextPresent": true,
+    "brandingOutsideArtworkByLayout": true,
+    "noWatermarkOverArtwork": true,
+    "noSvgUserDownload": true,
+    "pngJpgWebpDownloadsStillPresent": true
+  },
+  "notes": [
+    "The PDF writer is local client code and embeds an SVG-rendered canvas as a single image XObject on a Letter page.",
+    "No new PDF dependency was added; this keeps the app frontend-only and static-export compatible."
+  ]
+}

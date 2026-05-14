@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-05-14T18:53:03.243Z",
+  "runId": "predeploy-local-context-check",
+  "summary": {
+    "correctRepository": true,
+    "branch": "ver-5-deployed-may-13-2026",
+    "expectedBranch": "ver-5-deployed-may-13-2026",
+    "branchMatchesExpected": true,
+    "appApiRoutePresent": false,
+    "staticExportConfigured": true,
+    "runtimeGeneratedDataExists": true,
+    "runtimeAvailableRecords": 6352,
+    "runtimeIndexableHubs": 131,
+    "runtimeRoutes": 131,
+    "imageSitemapExists": true,
+    "imageSitemapWebpEntryCount": 6352,
+    "ogImagesExist": true,
+    "ogImageCount": 133,
+    "jsonLdExists": true,
+    "siteUrlDefaultExists": true,
+    "assetBaseDefaultExists": true,
+    "contactEmailDefaultExists": true,
+    "svgInternalOnly": true,
+    "publicDownloadFormats": [
+      "PNG",
+      "JPG",
+      "WebP"
+    ],
+    "liveAdSenseCodePresent": false,
+    "imagesStatusClean": true,
+    "ilovesvgStatusClean": true
+  },
+  "git": {
+    "topLevel": "D:/PROJECTS-and-WORK/work-projects/all_projects/i-love-coloring-page",
+    "branch": "ver-5-deployed-may-13-2026",
+    "status": "## ver-5-deployed-may-13-2026...origin/ver-5-deployed-may-13-2026\n M AGENTS.md\n M app/page.tsx\n M pipeline/manifests/image-sitemap-context-check.json\n M pipeline/reports/image-sitemap-context-check.md\n M src/components/coloring/HubHero.tsx\n M src/components/coloring/ImageCard.tsx\n M src/lib/coloring/browserDownloads.ts\n M src/styles/components.css\n?? pipeline/manifests/predeploy-ad-placeholder-local-qa.json\n?? pipeline/manifests/predeploy-link-section-ui-results.json\n?? pipeline/manifests/predeploy-local-acceptance-gate.json\n?? pipeline/manifests/predeploy-local-browser-qa-results.json\n?? pipeline/manifests/predeploy-local-context-check.json\n?? pipeline/manifests/predeploy-local-seo-qa-results.json\n?? pipeline/manifests/predeploy-print-current-audit.json\n?? pipeline/manifests/predeploy-print-modal-polish.json\n?? pipeline/manifests/predeploy-print-pdf-implementation.json\n?? pipeline/manifests/predeploy-print-qa-results.json\n?? pipeline/manifests/predeploy-trust-legal-local-review.json\n?? pipeline/reports/predeploy-ad-placeholder-local-qa.md\n?? pipeline/reports/predeploy-link-section-ui-report.md\n?? pipeline/reports/predeploy-local-acceptance-gate.md\n?? pipeline/reports/predeploy-local-browser-qa-report.md\n?? pipeline/reports/predeploy-local-context-check.md\n?? pipeline/reports/predeploy-local-seo-qa-report.md\n?? pipeline/reports/predeploy-print-current-audit.md\n?? pipeline/reports/predeploy-print-modal-polish-report.md\n?? pipeline/reports/predeploy-print-pdf-implementation-report.md\n?? pipeline/reports/predeploy-print-qa-report.md\n?? pipeline/reports/predeploy-trust-legal-local-review.md\n?? pipeline/scripts/predeploy-local-browser-qa-runner.cjs\n?? pipeline/scripts/predeploy-local-seo-qa.mjs\n?? pipeline/scripts/predeploy-local-utils.cjs\n?? pipeline/scripts/predeploy-print-qa-runner.cjs\n?? pipeline/tests/predeploy-local-acceptance.test.mjs"
+  },
+  "files": {
+    "contextManifest": "pipeline/manifests/predeploy-local-context-check.json",
+    "contextReport": "pipeline/reports/predeploy-local-context-check.md"
+  }
+}

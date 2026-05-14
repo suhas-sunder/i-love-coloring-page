@@ -1,0 +1,369 @@
+{
+  "generatedAt": "2026-05-14T18:53:42.680Z",
+  "runId": "predeploy-print-qa-results",
+  "build": {
+    "buildRan": true,
+    "outDir": "D:\\PROJECTS-and-WORK\\work-projects\\all_projects\\i-love-coloring-page\\out",
+    "startedAt": "2026-05-14T18:53:04.095Z",
+    "finishedAt": "2026-05-14T18:53:27.033Z"
+  },
+  "artifactDirectory": "pipeline/review/predeploy-local/print",
+  "samples": [
+    {
+      "key": "animals-alligator",
+      "label": "Animals Alligator",
+      "route": "/coloring-pages/animals",
+      "assetId": "animals__animals-alligator__4feec8505a",
+      "title": "Animals Alligator",
+      "printFlowOpened": true,
+      "pdf": {
+        "path": "pipeline\\review\\predeploy-local\\print\\animals-alligator.pdf",
+        "byteLength": 11520946,
+        "pageCount": 1,
+        "dimensionsLetterPortrait": true,
+        "hasImageXObject": true,
+        "hasContentStream": true,
+        "borderFrameVisible": true,
+        "brandingVisible": true,
+        "brandingOverlapsArtwork": false,
+        "appUiControlsIncluded": false,
+        "artworkCentered": true,
+        "artworkUsesMostOfPage": true,
+        "qaSnapshot": {
+          "pageCount": 1,
+          "pageSize": "letter-portrait",
+          "pdfByteLength": 11520946,
+          "artworkBox": {
+            "x": 30,
+            "y": 58,
+            "width": 552,
+            "height": 704
+          },
+          "imageBox": {
+            "width": 469.33,
+            "height": 704,
+            "x": 71.33,
+            "y": 58
+          },
+          "brandBox": {
+            "x": 18,
+            "y": 18,
+            "width": 576,
+            "height": 28
+          },
+          "brandingOverlapsArtwork": false,
+          "appUiControlsIncluded": false,
+          "source": "internal-svg"
+        }
+      },
+      "downloads": {
+        "png": true,
+        "jpg": true,
+        "webp": true
+      },
+      "svgDownloadAbsent": true,
+      "screenshotPath": "pipeline\\review\\predeploy-local\\print\\animals-alligator-modal.png"
+    },
+    {
+      "key": "t-rex",
+      "label": "T-Rex item",
+      "route": "/coloring-pages/t-rex",
+      "assetId": "anime-girls__anime-girl-summoning-jutsu-tyrannosaurus-rex-dinosaur__f9c57f8569",
+      "title": "Anime Girl Summoning Jutsu Tyrannosaurus Rex Dinosaur",
+      "printFlowOpened": true,
+      "pdf": {
+        "path": "pipeline\\review\\predeploy-local\\print\\t-rex.pdf",
+        "byteLength": 11520946,
+        "pageCount": 1,
+        "dimensionsLetterPortrait": true,
+        "hasImageXObject": true,
+        "hasContentStream": true,
+        "borderFrameVisible": true,
+        "brandingVisible": true,
+        "brandingOverlapsArtwork": false,
+        "appUiControlsIncluded": false,
+        "artworkCentered": true,
+        "artworkUsesMostOfPage": true,
+        "qaSnapshot": {
+          "pageCount": 1,
+          "pageSize": "letter-portrait",
+          "pdfByteLength": 11520946,
+          "artworkBox": {
+            "x": 30,
+            "y": 58,
+            "width": 552,
+            "height": 704
+          },
+          "imageBox": {
+            "width": 469.33,
+            "height": 704,
+            "x": 71.33,
+            "y": 58
+          },
+          "brandBox": {
+            "x": 18,
+            "y": 18,
+            "width": 576,
+            "height": 28
+          },
+          "brandingOverlapsArtwork": false,
+          "appUiControlsIncluded": false,
+          "source": "internal-svg"
+        }
+      },
+      "downloads": {
+        "png": true,
+        "jpg": true,
+        "webp": true
+      },
+      "svgDownloadAbsent": true,
+      "screenshotPath": "pipeline\\review\\predeploy-local\\print\\t-rex-modal.png"
+    },
+    {
+      "key": "christmas",
+      "label": "Christmas item",
+      "route": "/coloring-pages/christmas",
+      "assetId": "christmas__christmas-holiday-advent-calendar__a1245c4617",
+      "title": "Christmas Holiday Advent Calendar",
+      "printFlowOpened": true,
+      "pdf": {
+        "path": "pipeline\\review\\predeploy-local\\print\\christmas.pdf",
+        "byteLength": 11520946,
+        "pageCount": 1,
+        "dimensionsLetterPortrait": true,
+        "hasImageXObject": true,
+        "hasContentStream": true,
+        "borderFrameVisible": true,
+        "brandingVisible": true,
+        "brandingOverlapsArtwork": false,
+        "appUiControlsIncluded": false,
+        "artworkCentered": true,
+        "artworkUsesMostOfPage": true,
+        "qaSnapshot": {
+          "pageCount": 1,
+          "pageSize": "letter-portrait",
+          "pdfByteLength": 11520946,
+          "artworkBox": {
+            "x": 30,
+            "y": 58,
+            "width": 552,
+            "height": 704
+          },
+          "imageBox": {
+            "width": 469.33,
+            "height": 704,
+            "x": 71.33,
+            "y": 58
+          },
+          "brandBox": {
+            "x": 18,
+            "y": 18,
+            "width": 576,
+            "height": 28
+          },
+          "brandingOverlapsArtwork": false,
+          "appUiControlsIncluded": false,
+          "source": "internal-svg"
+        }
+      },
+      "downloads": {
+        "png": true,
+        "jpg": true,
+        "webp": true
+      },
+      "svgDownloadAbsent": true,
+      "screenshotPath": "pipeline\\review\\predeploy-local\\print\\christmas-modal.png"
+    },
+    {
+      "key": "anime-girls",
+      "label": "Anime Girls item",
+      "route": "/coloring-pages/anime-girls",
+      "assetId": "anime-girls__anime-girl-air-balloon__1f6b5be7bc",
+      "title": "Anime Girl Air Balloon",
+      "printFlowOpened": true,
+      "pdf": {
+        "path": "pipeline\\review\\predeploy-local\\print\\anime-girls.pdf",
+        "byteLength": 11520946,
+        "pageCount": 1,
+        "dimensionsLetterPortrait": true,
+        "hasImageXObject": true,
+        "hasContentStream": true,
+        "borderFrameVisible": true,
+        "brandingVisible": true,
+        "brandingOverlapsArtwork": false,
+        "appUiControlsIncluded": false,
+        "artworkCentered": true,
+        "artworkUsesMostOfPage": true,
+        "qaSnapshot": {
+          "pageCount": 1,
+          "pageSize": "letter-portrait",
+          "pdfByteLength": 11520946,
+          "artworkBox": {
+            "x": 30,
+            "y": 58,
+            "width": 552,
+            "height": 704
+          },
+          "imageBox": {
+            "width": 469.33,
+            "height": 704,
+            "x": 71.33,
+            "y": 58
+          },
+          "brandBox": {
+            "x": 18,
+            "y": 18,
+            "width": 576,
+            "height": 28
+          },
+          "brandingOverlapsArtwork": false,
+          "appUiControlsIncluded": false,
+          "source": "internal-svg"
+        }
+      },
+      "downloads": {
+        "png": true,
+        "jpg": true,
+        "webp": true
+      },
+      "svgDownloadAbsent": true,
+      "screenshotPath": "pipeline\\review\\predeploy-local\\print\\anime-girls-modal.png"
+    },
+    {
+      "key": "geometric-mandala",
+      "label": "Geometric/Mandala item",
+      "route": "/coloring-pages/geometric",
+      "assetId": "mandala__mandala-geometry-patterns-animal-mandala-fox__3e8e80a2fd",
+      "title": "Mandala Geometry Patterns Animal Mandala Fox",
+      "printFlowOpened": true,
+      "pdf": {
+        "path": "pipeline\\review\\predeploy-local\\print\\geometric-mandala.pdf",
+        "byteLength": 11520946,
+        "pageCount": 1,
+        "dimensionsLetterPortrait": true,
+        "hasImageXObject": true,
+        "hasContentStream": true,
+        "borderFrameVisible": true,
+        "brandingVisible": true,
+        "brandingOverlapsArtwork": false,
+        "appUiControlsIncluded": false,
+        "artworkCentered": true,
+        "artworkUsesMostOfPage": true,
+        "qaSnapshot": {
+          "pageCount": 1,
+          "pageSize": "letter-portrait",
+          "pdfByteLength": 11520946,
+          "artworkBox": {
+            "x": 30,
+            "y": 58,
+            "width": 552,
+            "height": 704
+          },
+          "imageBox": {
+            "width": 469.33,
+            "height": 704,
+            "x": 71.33,
+            "y": 58
+          },
+          "brandBox": {
+            "x": 18,
+            "y": 18,
+            "width": 576,
+            "height": 28
+          },
+          "brandingOverlapsArtwork": false,
+          "appUiControlsIncluded": false,
+          "source": "internal-svg"
+        }
+      },
+      "downloads": {
+        "png": true,
+        "jpg": true,
+        "webp": true
+      },
+      "svgDownloadAbsent": true,
+      "screenshotPath": "pipeline\\review\\predeploy-local\\print\\geometric-mandala-modal.png"
+    },
+    {
+      "key": "high-detail",
+      "label": "High-detail item",
+      "route": "/coloring-pages/detailed-for-adults",
+      "assetId": "mandala__mandala-geometry-patterns-animal-mandala-fox__3e8e80a2fd",
+      "title": "Mandala Geometry Patterns Animal Mandala Fox",
+      "printFlowOpened": true,
+      "pdf": {
+        "path": "pipeline\\review\\predeploy-local\\print\\high-detail.pdf",
+        "byteLength": 11520946,
+        "pageCount": 1,
+        "dimensionsLetterPortrait": true,
+        "hasImageXObject": true,
+        "hasContentStream": true,
+        "borderFrameVisible": true,
+        "brandingVisible": true,
+        "brandingOverlapsArtwork": false,
+        "appUiControlsIncluded": false,
+        "artworkCentered": true,
+        "artworkUsesMostOfPage": true,
+        "qaSnapshot": {
+          "pageCount": 1,
+          "pageSize": "letter-portrait",
+          "pdfByteLength": 11520946,
+          "artworkBox": {
+            "x": 30,
+            "y": 58,
+            "width": 552,
+            "height": 704
+          },
+          "imageBox": {
+            "width": 469.33,
+            "height": 704,
+            "x": 71.33,
+            "y": 58
+          },
+          "brandBox": {
+            "x": 18,
+            "y": 18,
+            "width": 576,
+            "height": 28
+          },
+          "brandingOverlapsArtwork": false,
+          "appUiControlsIncluded": false,
+          "source": "internal-svg"
+        }
+      },
+      "downloads": {
+        "png": true,
+        "jpg": true,
+        "webp": true
+      },
+      "svgDownloadAbsent": true,
+      "screenshotPath": "pipeline\\review\\predeploy-local\\print\\high-detail-modal.png"
+    }
+  ],
+  "consoleErrors": [],
+  "summary": {
+    "sampleCount": 6,
+    "printFlowOpens": true,
+    "generatedPrintablePageCount": 1,
+    "allGeneratedPrintableDocumentsOnePage": true,
+    "noBlankPrintPages": true,
+    "artworkCentered": true,
+    "artworkUsesMostOfPage": true,
+    "borderFrameVisible": true,
+    "brandingVisible": true,
+    "brandingOverlapsArtwork": false,
+    "appUiControlsInPrintableOutput": false,
+    "pngDownloadWorks": true,
+    "jpgDownloadWorks": true,
+    "webpDownloadWorks": true,
+    "publicDownloadFormats": [
+      "PNG",
+      "JPG",
+      "WebP"
+    ],
+    "svgDownloadAbsent": true,
+    "noConsoleErrors": true,
+    "browserHeadersFootersAvoidedByPdfWorkflow": true,
+    "manualBrowserSettingLimitation": "Browser print dialogs may still expose user printer settings, but the generated artifact is a one-page PDF rather than raw browser HTML."
+  }
+}

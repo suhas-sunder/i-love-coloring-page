@@ -70,7 +70,6 @@ export function HubHero({
         <div className="hero-panel">
           {relatedLinks.length > 0 ? (
             <nav className="hero-related-panel" aria-label={relatedTitle}>
-              <p className="hero-related-kicker">Explore</p>
               <h2 className="hero-related-title">{relatedTitle}</h2>
               <div className="hero-related-links">
                 {relatedLinks.map((link) => (

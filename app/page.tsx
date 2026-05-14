@@ -54,13 +54,12 @@ export default function HomePage() {
         </div>
         <div className="hero-panel">
           <nav className="hero-related-panel" aria-label="Popular coloring page collections">
-            <p className="hero-related-kicker">Explore</p>
             <h2 className="hero-related-title">Popular collections</h2>
             <div className="hero-related-links">
               {featuredHubs.map((hub) => (
                 <Link className="hero-related-link" href={hub.route} key={hub.hubId} prefetch={false}>
-                  <span>{hub.title.replace(/ Coloring Pages$/, "")}</span>
-                  <strong>{hub.assetCount.toLocaleString()}</strong>
+                  <span className="hero-related-label">{hub.title.replace(/ Coloring Pages$/, "")}</span>
+                  <strong className="hero-related-count">{hub.assetCount.toLocaleString()}</strong>
                 </Link>
               ))}
             </div>

@@ -504,6 +504,16 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Navigation menus must keep search near the top, remain accessible, and contain no ads.
 - Do not start Open Graph image work, JSON-LD expansion, or live ads until corrective UX QA passes.
 
+## Local Predeployment Gate
+
+- Do not ask the owner to deploy to Netlify until the local predeploy acceptance gate passes.
+- Local product-quality blockers must be finished before any further Netlify deployment, GSC submission, social validation, live ads, or launch QA.
+- Print output must be clean, one page, framed, and must not obscure or overlap the coloring artwork.
+- Browser header and footer limitations must be handled by a generated PDF/document workflow, not ignored or delegated to raw browser HTML printing.
+- Print and preview modals must keep Print and Close controls in the top-right, avoid unnecessary scrollbars, and stay clean on desktop and mobile.
+- Link sections must be purposeful, properly spaced, readable, and distinct; avoid lazy duplicate sections, useless eyebrow labels, cramped related links, and ellipsized important hub titles.
+- Live ads remain deferred until the owner explicitly approves a live ads round.
+
 ## Image Sitemap Gate
 
 - Image sitemap XML must use uploaded clean WebP preview URLs only.

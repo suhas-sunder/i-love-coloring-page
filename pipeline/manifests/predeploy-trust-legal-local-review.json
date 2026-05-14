@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-05-14T18:54:48.568Z",
+  "runId": "predeploy-trust-legal-local-review",
+  "summary": {
+    "pagesReviewed": [
+      "/about",
+      "/contact",
+      "/privacy",
+      "/terms",
+      "/affiliate-disclosure",
+      "/editorial-policy"
+    ],
+    "pagesExist": true,
+    "pagesRenderedLocally": true,
+    "contactEmail": "admin@ilovecoloringpage.com",
+    "contactEmailPresent": true,
+    "fakeAddressOrPhonePresent": false,
+    "privacyMentionsAdsOrCookies": true,
+    "privacyDraftSafe": true,
+    "termsDraftSafe": true,
+    "affiliateDisclosureExists": true,
+    "editorialPolicyExists": true,
+    "legalReviewStillRecommended": true,
+    "liveAdsAdded": false,
+    "trustPagesPassed": true
+  }
+}
