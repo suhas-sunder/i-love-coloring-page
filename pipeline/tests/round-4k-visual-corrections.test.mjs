@@ -125,10 +125,12 @@ test("homepage, landing, and featured previews link to real static anchors", asy
   const home = await readText("app/page.tsx");
   const landing = await readText("app/coloring-pages/page.tsx");
   const hubContent = await readText("src/components/coloring/HubPageContent.tsx");
+  const rotatingFeaturedGrid = await readText("src/components/coloring/RotatingFeaturedGrid.tsx");
 
-  assert.match(home, /href=\{getColoringItemHref\(item, rootHub\.route\)\}/);
-  assert.match(landing, /href=\{getColoringItemHref\(item, rootHub\.route\)\}/);
-  assert.match(hubContent, /href=\{getColoringItemHref\(item, hub\.route\)\}/);
+  assert.ok(/href=\{getColoringItemHref\(item, rootHub\.route\)\}/.test(home) || /itemHrefBasePath=\{rootHub\.route\}/.test(home));
+  assert.ok(/href=\{getColoringItemHref\(item, rootHub\.route\)\}/.test(landing) || /itemHrefBasePath=\{rootHub\.route\}/.test(landing));
+  assert.ok(/href=\{getColoringItemHref\(item, hub\.route\)\}/.test(hubContent) || /itemHrefBasePath=\{hub\.route\}/.test(hubContent));
+  assert.match(rotatingFeaturedGrid, /`\$\{itemHrefBasePath\}#asset-\$\{item\.assetId\}`/);
   assert.doesNotMatch(`${home}\n${landing}\n${hubContent}`, /\[assetId\]|\/image\//i);
 });
 

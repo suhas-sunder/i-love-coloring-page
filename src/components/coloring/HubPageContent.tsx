@@ -1,15 +1,15 @@
 import { AdRail } from "@/components/ads/AdRail";
 import { AdSlot } from "@/components/ads/AdSlot";
-import { GalleryGrid } from "@/components/coloring/GalleryGrid";
 import { GallerySearch } from "@/components/coloring/GallerySearch";
 import { HubCard } from "@/components/coloring/HubCard";
 import { HubHero, type HeroRelatedLink } from "@/components/coloring/HubHero";
 import { Pagination } from "@/components/coloring/Pagination";
 import { RelatedHubs } from "@/components/coloring/RelatedHubs";
+import { RotatingFeaturedGrid } from "@/components/coloring/RotatingFeaturedGrid";
 import { SeoContentSection } from "@/components/coloring/SeoContentSection";
 import {
   getChildHubs,
-  getColoringItemHref,
+  getFeaturedRotationCandidateItems,
   getGeneratedFeaturedItems,
   getHubFilterTags,
   getHubSearchEntries,
@@ -28,6 +28,7 @@ type HubPageContentProps = {
 export function HubPageContent({ hub, page }: HubPageContentProps) {
   const pagedGallery = getPagedHubItems(hub, page);
   const featuredItems = getGeneratedFeaturedItems(hub);
+  const featuredRotationCandidates = getFeaturedRotationCandidateItems(hub, 96);
   const allHubItems = getPublicItemsForHub(hub);
   const searchEntries = getHubSearchEntries(hub);
   const { tags, tabs } = getHubFilterTags(hub);
@@ -59,10 +60,12 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
                 <p>Representative picks from this collection, selected from successful production assets.</p>
               </div>
             </div>
-            {/* GalleryGrid keeps item anchors equivalent to href={getColoringItemHref(item, hub.route)} while image clicks open print prep. */}
-            <GalleryGrid
-              items={featuredItems}
-              getItemHref={(item) => getColoringItemHref(item, hub.route)}
+            <RotatingFeaturedGrid
+              fallbackItems={featuredItems}
+              candidateItems={featuredRotationCandidates}
+              mode="hub-three-day"
+              hubSlug={hub.slug}
+              itemHrefBasePath={hub.route}
               priorityCount={6}
             />
           </div>

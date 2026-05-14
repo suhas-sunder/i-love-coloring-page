@@ -1,0 +1,13 @@
+{
+  "generatedAt": "2026-05-14T03:01:50.908Z",
+  "runId": "featured-rotation-utility-results",
+  "summary": {
+    "utilityCreated": true,
+    "pureHelpersPresent": true,
+    "browserGlobalsGuarded": true,
+    "inputArraysNotMutated": true,
+    "nodeTestable": true,
+    "sameSeedStable": true,
+    "differentSeedChangesWhenEnoughItemsExist": true
+  }
+}

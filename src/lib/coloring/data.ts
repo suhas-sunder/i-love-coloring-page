@@ -212,6 +212,15 @@ export function getGeneratedFeaturedItems(hub: ColoringHub) {
   return getPublicItemsByIds(featuredByHubId.get(hub.hubId) || hub.featuredAssetIds, 12);
 }
 
+export function getFeaturedRotationCandidateItems(hub: ColoringHub, limit = 96) {
+  const generatedFeaturedIds = featuredByHubId.get(hub.hubId) || [];
+  const candidateIds = getDiverseRotationAssetIds(
+    [...generatedFeaturedIds, ...hub.previewAssetIds, ...hub.assetIds],
+    limit,
+  );
+  return getPublicItemsByIds(candidateIds, candidateIds.length);
+}
+
 export function getColoringItemHref(item: Pick<PublicColoringItem, "assetId">, preferredRoute?: string) {
   return `${preferredRoute || getPrimaryRouteForAsset(item.assetId)}#asset-${item.assetId}`;
 }
@@ -307,4 +316,49 @@ function getPrimaryRouteForAsset(assetId: string) {
     .find((hub): hub is ColoringHub => Boolean(hub?.route));
 
   return primaryHub?.route || getRootHub().route;
+}
+
+function getDiverseRotationAssetIds(assetIds: string[], limit: number) {
+  const safeLimit = Math.max(0, limit);
+  if (safeLimit === 0) return [];
+
+  const seenIds = new Set<string>();
+  const buckets = new Map<string, string[]>();
+
+  for (const assetId of assetIds) {
+    if (seenIds.has(assetId) || !itemsById.has(assetId)) continue;
+    seenIds.add(assetId);
+
+    const bucketKey = getRotationBucketKey(assetId);
+    const bucket = buckets.get(bucketKey) || [];
+    bucket.push(assetId);
+    buckets.set(bucketKey, bucket);
+  }
+
+  const selected: string[] = [];
+  const bucketKeys = Array.from(buckets.keys());
+  let cursor = 0;
+
+  while (selected.length < safeLimit && bucketKeys.length > 0) {
+    const bucketKey = bucketKeys[cursor % bucketKeys.length];
+    const bucket = buckets.get(bucketKey) || [];
+    const nextId = bucket.shift();
+
+    if (nextId) selected.push(nextId);
+    if (bucket.length === 0) {
+      buckets.delete(bucketKey);
+      bucketKeys.splice(cursor % bucketKeys.length, 1);
+      if (bucketKeys.length === 0) break;
+      cursor %= bucketKeys.length;
+    } else {
+      cursor = (cursor + 1) % bucketKeys.length;
+    }
+  }
+
+  return selected;
+}
+
+function getRotationBucketKey(assetId: string) {
+  const categoryPrefix = assetId.split("__")[0];
+  return categoryPrefix || "misc";
 }

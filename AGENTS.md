@@ -517,6 +517,19 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Open Graph image work and JSON-LD expansion may only start after image sitemap acceptance passes.
 - Live ads remain separate and require explicit owner approval.
 
+## Featured Rotation Gate
+
+- Homepage Fresh pages should rotate on browser reload only, using a client-side seed after hydration and a valid static fallback before hydration.
+- Hub Featured pages should rotate deterministically every 3 days using the hub slug plus a UTC 3-day window key.
+- Featured rotation must not require rebuilds, backend services, middleware, or `app/api` routes.
+- Featured rotation must not create hydration mismatches; static HTML and the first client render should use the same fallback items.
+- Featured rotation must use only uploaded runtime-available records and must never include deferred manual-review records.
+- Rotated featured cards must preserve WebP preview URLs and internal SVG paths for print/download conversion.
+- SVG must remain internal-only and must not appear as a user-facing download.
+- PNG, JPG, and WebP downloads must remain available through the print preview workflow.
+- Do not add per-image routes, taxonomy changes, Open Graph image generation, JSON-LD expansion, live ads, or ad scripts as part of featured rotation work.
+- Do not proceed to Open Graph image work, JSON-LD expansion, or live ads until featured rotation browser QA and sampled URL checks pass.
+
 ## Conversion Workflow
 
 - Do not choose a winning preset until a later bakeoff round compares outputs.

@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-05-14T03:01:50.908Z",
+  "runId": "featured-rotation-context-check",
+  "summary": {
+    "correctRepository": true,
+    "currentBranch": "ver-5-deployed-may-13-2026",
+    "expectedBranch": "ver-5-deployed-may-13-2026",
+    "branchMatchesExpected": true,
+    "latestCorrectiveUxCommitExists": true,
+    "appApiRoutePresent": false,
+    "staticExportConfigured": true,
+    "runtimeGeneratedDataExists": true,
+    "availableRuntimeRecords": 6352,
+    "deferredRuntimeRecordsHidden": 205,
+    "runtimeIndexableHubs": 131,
+    "publicSafeSiteDefaultPresent": true,
+    "publicSafeAssetBaseDefaultPresent": true,
+    "publicContainsOnlyApprovedXmlFiles": true,
+    "imagesUntouched": true,
+    "ilovesvgUntouched": true,
+    "svgInternalOnly": true,
+    "publicDownloadsPngJpgWebp": true,
+    "liveAdsenseCodeAbsent": true,
+    "ogImageGenerationAbsent": true,
+    "jsonLdExpansionDeferred": true
+  }
+}

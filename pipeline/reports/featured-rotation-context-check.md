@@ -1,0 +1,25 @@
+# Featured Rotation Context Check
+
+| Check | Result |
+| --- | --- |
+| correctRepository | pass |
+| currentBranch | ver-5-deployed-may-13-2026 |
+| expectedBranch | ver-5-deployed-may-13-2026 |
+| branchMatchesExpected | pass |
+| latestCorrectiveUxCommitExists | pass |
+| appApiRoutePresent | fail |
+| staticExportConfigured | pass |
+| runtimeGeneratedDataExists | pass |
+| availableRuntimeRecords | 6352 |
+| deferredRuntimeRecordsHidden | 205 |
+| runtimeIndexableHubs | 131 |
+| publicSafeSiteDefaultPresent | pass |
+| publicSafeAssetBaseDefaultPresent | pass |
+| publicContainsOnlyApprovedXmlFiles | pass |
+| imagesUntouched | pass |
+| ilovesvgUntouched | pass |
+| svgInternalOnly | pass |
+| publicDownloadsPngJpgWebp | pass |
+| liveAdsenseCodeAbsent | pass |
+| ogImageGenerationAbsent | pass |
+| jsonLdExpansionDeferred | pass |

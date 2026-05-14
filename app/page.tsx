@@ -3,10 +3,10 @@ import Link from "next/link";
 
 import { AdRail } from "@/components/ads/AdRail";
 import { AdSlot } from "@/components/ads/AdSlot";
-import { GalleryGrid } from "@/components/coloring/GalleryGrid";
 import { HubCard } from "@/components/coloring/HubCard";
+import { RotatingFeaturedGrid } from "@/components/coloring/RotatingFeaturedGrid";
 import { SeoContentSection } from "@/components/coloring/SeoContentSection";
-import { getAllPhase1Hubs, getColoringItemHref, getGeneratedFeaturedItems, getRootHub, getSeoPageContent } from "@/lib/coloring/data";
+import { getAllPhase1Hubs, getFeaturedRotationCandidateItems, getGeneratedFeaturedItems, getRootHub, getSeoPageContent } from "@/lib/coloring/data";
 import { buildColoringMetadata } from "@/lib/coloring/metadata";
 
 export function generateMetadata(): Metadata {
@@ -17,6 +17,8 @@ export default function HomePage() {
   const rootHub = getRootHub();
   const seoContent = getSeoPageContent("/");
   const featuredItems = getGeneratedFeaturedItems(rootHub);
+  const featuredRotationCandidates = getFeaturedRotationCandidateItems(rootHub, 192);
+  const rootHubSlug = rootHub.slug || "coloring-pages";
   const featuredHubs = getAllPhase1Hubs()
     .filter((hub) => ["animals", "plushies", "mandalas", "for-kids", "fantasy", "christmas"].includes(hub.slug))
     .slice(0, 6);
@@ -73,10 +75,12 @@ export default function HomePage() {
               <p>Start with a few strong previews, then jump into the full library when you want more.</p>
             </div>
           </div>
-          {/* GalleryGrid keeps item anchors equivalent to href={getColoringItemHref(item, rootHub.route)} while image clicks open print prep. */}
-          <GalleryGrid
-            items={featuredItems.slice(0, 8)}
-            getItemHref={(item) => getColoringItemHref(item, rootHub.route)}
+          <RotatingFeaturedGrid
+            fallbackItems={featuredItems.slice(0, 8)}
+            candidateItems={featuredRotationCandidates}
+            mode="homepage-random"
+            hubSlug={rootHubSlug}
+            itemHrefBasePath={rootHub.route}
             priorityCount={6}
           />
         </div>
