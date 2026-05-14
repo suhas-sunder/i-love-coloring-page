@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-05-14T19:48:41.713Z",
+  "runId": "final-gsc-submission-readiness",
+  "regular_sitemap_ready": false,
+  "image_sitemap_ready": false,
+  "robots_ready": false,
+  "canonicals_ready": false,
+  "no_per_image_routes": true,
+  "trust_pages_ready_for_owner_review": true,
+  "ready_for_owner_gsc_submission": false,
+  "blockers": [
+    "Live regular sitemap is not GSC-ready.",
+    "Live image sitemap is not GSC-ready.",
+    "Live robots.txt is not GSC-ready.",
+    "Live canonical URLs are not ready for GSC submission."
+  ],
+  "manualSubmissionUrls": [
+    "https://www.ilovecoloringpage.com/sitemap.xml",
+    "https://www.ilovecoloringpage.com/image-sitemap.xml"
+  ]
+}

@@ -573,9 +573,13 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Live SEO verification must pass before GSC submission or manual social preview validation.
 - Local sitemap, image sitemap, OG, and JSON-LD validation is not enough; production pages must be checked after deployment.
 - Stale production deployments block SEO acceptance claims, even when local validation passes.
+- Final GSC readiness requires live `sitemap.xml`, `image-sitemap.xml`, `robots.txt`, canonical URLs, and trust page review to pass together.
+- GSC submission is a manual owner step unless a later prompt explicitly asks for automation.
+- Do not claim live verification passed when the deployed site is stale, missing current routes, missing image sitemap, missing OG metadata, or missing JSON-LD.
 - Live verification must check routes, redirects, `robots.txt`, the regular sitemap, image sitemap, OG metadata, JSON-LD, WebP gallery previews, print, and PNG/JPG/WebP downloads.
 - Production checks must confirm no localhost, `r2.dev`, private storage endpoint, `app/api`, per-image route, or SVG download leakage.
-- Do not start live ads until live sitemap, image sitemap, OG, JSON-LD, trust pages, downloads, print, and layout are accepted.
+- Optional later work and social preview validation are skipped unless the owner explicitly reopens them.
+- Do not proceed with live ads unless the owner explicitly reopens a live ads round after live sitemap, image sitemap, OG, JSON-LD, trust pages, downloads, print, and layout are accepted.
 - Live ads remain separate and require explicit owner approval.
 
 ## Conversion Workflow

@@ -1,0 +1,31 @@
+{
+  "generatedAt": "2026-05-14T19:48:42.497Z",
+  "runId": "final-live-deployment-freshness",
+  "summary": {
+    "siteUrl": "https://www.ilovecoloringpage.com",
+    "expectedPredeployCommit": "74fea5ec0e451c22bb970c9665ee8bdb9c9b141d",
+    "expectedPredeployShortCommit": "74fea5e",
+    "productionSiteReachable": true,
+    "liveAppearsToIncludeCommitBehavior": true,
+    "livePagesIncludeFinalPrintDownloadUx": true,
+    "livePagesIncludeJsonLd": false,
+    "livePagesIncludeOgImageMetadata": false,
+    "liveRobotsReferencesRegularSitemap": true,
+    "liveRobotsReferencesImageSitemap": false,
+    "liveImageSitemapExists": false,
+    "liveRegularSitemapExists": true,
+    "noLocalhostLeakage": true,
+    "noR2DevOrPrivateStorageLeakage": true,
+    "noAppApiReferences": true,
+    "noDownloadSvgLabelsOrLinks": true,
+    "productionDeployCurrent": false
+  },
+  "blockers": [
+    "Production does not appear to fully serve commit 74fea5e behavior.",
+    "Live /image-sitemap.xml is missing or not serving XML.",
+    "Live robots.txt does not reference /image-sitemap.xml.",
+    "Live sampled pages do not include JSON-LD script tags.",
+    "Live sampled pages do not include OG image metadata.",
+    "Owner action: trigger a fresh Netlify deploy from commit 74fea5ec0e451c22bb970c9665ee8bdb9c9b141d before GSC submission."
+  ]
+}
