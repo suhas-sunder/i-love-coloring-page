@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 
+import ogImagesJson from "@/generated/coloring/og-images.json";
+
 import { getSeoPageMetadata, getSiteUrl } from "./data";
 
 type ColoringMetadataOptions = {
@@ -8,6 +10,27 @@ type ColoringMetadataOptions = {
   fallbackTitle?: string;
   fallbackDescription?: string;
 };
+
+type OgImageMetadata = {
+  ogImagePath: string;
+  ogImageUrl: string;
+  width: number;
+  height: number;
+  alt: string;
+};
+
+type OgImagesManifest = {
+  defaults: {
+    fallbackPath: string;
+    fallbackUrl: string;
+    width: number;
+    height: number;
+    alt: string;
+  };
+  metadataByPath: Record<string, OgImageMetadata>;
+};
+
+const ogImagesManifest = ogImagesJson as OgImagesManifest;
 
 export function buildColoringMetadata(path: string, options: ColoringMetadataOptions = {}): Metadata {
   const page = getSeoPageMetadata(path);
@@ -21,6 +44,7 @@ export function buildColoringMetadata(path: string, options: ColoringMetadataOpt
       ? `${baseDescription} Continue browsing page ${options.page} of this printable collection.`
       : baseDescription;
   const url = `${getSiteUrl()}${canonicalPath}`;
+  const ogImage = getOgImageMetadata(path);
 
   return {
     title,
@@ -33,11 +57,35 @@ export function buildColoringMetadata(path: string, options: ColoringMetadataOpt
       description,
       url,
       type: "website",
+      images: [
+        {
+          url: ogImage.ogImageUrl,
+          width: 1200,
+          height: 630,
+          alt: ogImage.alt,
+        },
+      ],
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       title,
       description,
+      images: [
+        {
+          url: ogImage.ogImageUrl,
+          alt: ogImage.alt,
+        },
+      ],
     },
+  };
+}
+
+function getOgImageMetadata(path: string): OgImageMetadata {
+  return ogImagesManifest.metadataByPath[path] || {
+    ogImagePath: ogImagesManifest.defaults.fallbackPath,
+    ogImageUrl: ogImagesManifest.defaults.fallbackUrl,
+    width: ogImagesManifest.defaults.width,
+    height: ogImagesManifest.defaults.height,
+    alt: ogImagesManifest.defaults.alt,
   };
 }

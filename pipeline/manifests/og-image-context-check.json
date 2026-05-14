@@ -1,0 +1,46 @@
+{
+  "generatedAt": "2026-05-14T03:37:23.355Z",
+  "phase": "og-image",
+  "summary": {
+    "correctRepository": true,
+    "packageName": "i-love-coloring-page",
+    "repoRoot": "D:\\PROJECTS-and-WORK\\work-projects\\all_projects\\i-love-coloring-page",
+    "currentBranch": "ver-5-deployed-may-13-2026",
+    "commitDfba4f6Exists": true,
+    "commitAf716a5Exists": true,
+    "commit10161e3Exists": true,
+    "staticExportConfigured": true,
+    "appApiRoutePresent": false,
+    "coloringPagesRoutePresent": true,
+    "hubRoutePresent": true,
+    "runtimeGeneratedDataPresent": true,
+    "runtimeAvailableRecords": 6352,
+    "runtimeDeferredRecords": 205,
+    "runtimeIndexableHubs": 131,
+    "imageSitemapPresent": true,
+    "imageSitemapUsesWebpPreviewUrls": true,
+    "siteUrl": "https://www.ilovecoloringpage.com",
+    "publicAssetBaseUrl": "https://assets.ilovecoloringpage.com/coloring-pages",
+    "contactEmail": "admin@ilovecoloringpage.com",
+    "svgInternalOnly": true,
+    "publicDownloadFormats": [
+      "PNG",
+      "JPG",
+      "WebP"
+    ],
+    "liveAdsenseCodePresent": false,
+    "jsonLdExpansionDeferred": true,
+    "publicMediaOutsideApproved": [],
+    "publicMediaOutsideApprovedPresent": false,
+    "imagesGitStatus": "",
+    "ilovesvgGitStatus": ""
+  },
+  "checks": [
+    "Repository, branch, and prior commits verified before OG work.",
+    "Static export and app/api absence verified.",
+    "Runtime generated records and hub counts verified.",
+    "Image sitemap exists and uses WebP preview URLs.",
+    "SVG remains internal-only and public downloads remain PNG/JPG/WebP.",
+    "JSON-LD expansion and live ads remain deferred."
+  ]
+}

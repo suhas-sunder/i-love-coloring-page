@@ -530,6 +530,21 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Do not add per-image routes, taxonomy changes, Open Graph image generation, JSON-LD expansion, live ads, or ad scripts as part of featured rotation work.
 - Do not proceed to Open Graph image work, JSON-LD expansion, or live ads until featured rotation browser QA and sampled URL checks pass.
 
+## Open Graph Image Gate
+
+- OG images must be static generated assets under `public/og`.
+- OG images should be route-level only: homepage, `/coloring-pages`, and public hub routes.
+- Do not create per-image OG files, per-image pages, or indexable per-image routes.
+- OG metadata must use canonical `https://www.ilovecoloringpage.com` URLs.
+- OG image generation must not require server runtime, dynamic Next OG image routes, `ImageResponse`, backend services, middleware, or `app/api`.
+- OG images must not use SVG source URLs as the social image.
+- SVG remains internal-only and must not appear as a user-facing download.
+- OG source artwork must come from runtime-available uploaded WebP previews and must not include deferred manual-review records.
+- Generated OG assets must stay small, deterministic, and intentionally tracked.
+- Do not copy the full coloring media library into `public/`; only controlled OG assets and approved XML sitemap files belong there.
+- JSON-LD expansion may start only after OG acceptance passes and sitemap regressions remain clear.
+- Live ads remain separate and require explicit owner approval.
+
 ## Conversion Workflow
 
 - Do not choose a winning preset until a later bakeoff round compares outputs.

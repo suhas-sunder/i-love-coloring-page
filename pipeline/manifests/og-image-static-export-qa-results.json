@@ -1,0 +1,165 @@
+{
+  "generatedAt": "2026-05-14T03:38:01.590Z",
+  "phase": "og-image",
+  "summary": {
+    "staticExportPassed": true,
+    "homeOgImageAccessible": true,
+    "coloringPagesOgImageAccessible": true,
+    "sampleHubOgImagesAccessible": true,
+    "homeHtmlIncludesOgImage": true,
+    "coloringPagesHtmlIncludesOgImage": true,
+    "sampleHubHtmlIncludesOgImage": true,
+    "twitterImagePresent": true,
+    "ogImageDimensionsPresent": true,
+    "noRouteReferencesMissingOgFile": true,
+    "noLocalOrR2DevUrls": true,
+    "regularSitemapStillWorks": true,
+    "imageSitemapStillWorks": true,
+    "appApiRoutePresent": false,
+    "staticExportQaPassed": true
+  },
+  "build": {
+    "exitCode": 0,
+    "stdoutTail": "✓ Compiled successfully in 2.6s\n  Running TypeScript ...\n  Finished TypeScript in 5.7s ...\n  Collecting page data using 16 workers ...\n  Generating static pages using 16 workers (0/579) ...\n  Generating static pages using 16 workers (144/579) \n  Generating static pages using 16 workers (289/579) \n  Generating static pages using 16 workers (434/579) \n✓ Generating static pages using 16 workers (579/579) in 10.2s\n  Finalizing page optimization ...\n\nRoute (app)\n┌ ○ /\n├ ○ /_not-found\n├ ○ /about\n├ ○ /affiliate-disclosure\n├ ○ /coloring-pages\n├ ● /coloring-pages/[hubSlug]\n│ ├ /coloring-pages/animals\n│ ├ /coloring-pages/anime-girls\n│ ├ /coloring-pages/bakery\n│ └ [+127 more paths]\n├ ● /coloring-pages/[hubSlug]/page/[page]\n│ ├ /coloring-pages/animals/page/2\n│ ├ /coloring-pages/animals/page/3\n│ ├ /coloring-pages/animals/page/4\n│ └ [+433 more paths]\n├ ○ /contact\n├ ○ /editorial-policy\n├ ○ /icon.svg\n├ ○ /privacy\n├ ○ /robots.txt\n├ ○ /sitemap.xml\n└ ○ /terms\n\n\n○  (Static)  prerendered as static content\n●  (SSG)     prerendered as static HTML (uses generateStaticParams)\n\n",
+    "stderrTail": ""
+  },
+  "imageChecks": [
+    {
+      "url": "http://127.0.0.1:4183/og/home.jpg",
+      "status": 200,
+      "ok": true,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4183/og/coloring-pages.jpg",
+      "status": 200,
+      "ok": true,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4183/og/hubs/animals.jpg",
+      "status": 200,
+      "ok": true,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4183/og/hubs/t-rex.jpg",
+      "status": 200,
+      "ok": true,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "http://127.0.0.1:4183/og/hubs/dragons.jpg",
+      "status": 200,
+      "ok": true,
+      "contentType": "image/jpeg"
+    }
+  ],
+  "htmlChecks": [
+    {
+      "path": "/",
+      "status": 200,
+      "ok": true,
+      "hasOgImage": true,
+      "hasTwitterImage": true,
+      "hasOgWidth": true,
+      "hasOgHeight": true,
+      "noLocalhost": true,
+      "noR2Dev": true
+    },
+    {
+      "path": "/coloring-pages",
+      "status": 200,
+      "ok": true,
+      "hasOgImage": true,
+      "hasTwitterImage": true,
+      "hasOgWidth": true,
+      "hasOgHeight": true,
+      "noLocalhost": true,
+      "noR2Dev": true
+    },
+    {
+      "path": "/coloring-pages/animals",
+      "status": 200,
+      "ok": true,
+      "hasOgImage": true,
+      "hasTwitterImage": true,
+      "hasOgWidth": true,
+      "hasOgHeight": true,
+      "noLocalhost": true,
+      "noR2Dev": true
+    },
+    {
+      "path": "/coloring-pages/t-rex",
+      "status": 200,
+      "ok": true,
+      "hasOgImage": true,
+      "hasTwitterImage": true,
+      "hasOgWidth": true,
+      "hasOgHeight": true,
+      "noLocalhost": true,
+      "noR2Dev": true
+    },
+    {
+      "path": "/coloring-pages/dragons",
+      "status": 200,
+      "ok": true,
+      "hasOgImage": true,
+      "hasTwitterImage": true,
+      "hasOgWidth": true,
+      "hasOgHeight": true,
+      "noLocalhost": true,
+      "noR2Dev": true
+    },
+    {
+      "path": "/coloring-pages/geometric",
+      "status": 200,
+      "ok": true,
+      "hasOgImage": true,
+      "hasTwitterImage": true,
+      "hasOgWidth": true,
+      "hasOgHeight": true,
+      "noLocalhost": true,
+      "noR2Dev": true
+    },
+    {
+      "path": "/coloring-pages/christmas",
+      "status": 200,
+      "ok": true,
+      "hasOgImage": true,
+      "hasTwitterImage": true,
+      "hasOgWidth": true,
+      "hasOgHeight": true,
+      "noLocalhost": true,
+      "noR2Dev": true
+    },
+    {
+      "path": "/coloring-pages/plushies",
+      "status": 200,
+      "ok": true,
+      "hasOgImage": true,
+      "hasTwitterImage": true,
+      "hasOgWidth": true,
+      "hasOgHeight": true,
+      "noLocalhost": true,
+      "noR2Dev": true
+    }
+  ],
+  "sitemap": {
+    "url": "http://127.0.0.1:4183/sitemap.xml",
+    "status": 200,
+    "ok": true,
+    "contentType": "application/xml; charset=utf-8"
+  },
+  "imageSitemap": {
+    "url": "http://127.0.0.1:4183/image-sitemap.xml",
+    "status": 200,
+    "ok": true,
+    "contentType": "application/xml; charset=utf-8"
+  },
+  "robots": {
+    "status": 200,
+    "ok": true,
+    "referencesImageSitemap": true
+  }
+}

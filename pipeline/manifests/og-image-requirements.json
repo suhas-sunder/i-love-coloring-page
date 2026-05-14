@@ -1,0 +1,64 @@
+{
+  "generatedAt": "2026-05-14T03:37:23.355Z",
+  "phase": "og-image",
+  "summary": {
+    "chosenDimensions": {
+      "width": 1200,
+      "height": 630
+    },
+    "chosenOutputFormat": "jpg",
+    "metadataTags": [
+      "og:title",
+      "og:description",
+      "og:url",
+      "og:type",
+      "og:image",
+      "og:image:width",
+      "og:image:height",
+      "og:image:alt",
+      "twitter:card",
+      "twitter:title",
+      "twitter:description",
+      "twitter:image"
+    ],
+    "staticGenerationRequired": true,
+    "svgSocialImagesExcluded": true,
+    "perImagePagesCreated": false
+  },
+  "sources": [
+    {
+      "name": "Open Graph protocol",
+      "url": "https://ogp.me/",
+      "notes": [
+        "Use route title, type, URL, and image fields. Width, height, and alt text are structured image properties."
+      ]
+    },
+    {
+      "name": "X Summary Card with Large Image",
+      "url": "https://developer.x.com/cards/types/summary-large-image",
+      "notes": [
+        "Use twitter:card summary_large_image and a route-specific image. SVG is not used for broad card compatibility."
+      ]
+    },
+    {
+      "name": "Pinterest Rich Pins overview",
+      "url": "https://developers.pinterest.com/docs/web-features/rich-pins-overview/",
+      "notes": [
+        "Pinterest supports page metadata through Open Graph or Schema.org. This round uses Open Graph only and keeps JSON-LD deferred."
+      ]
+    },
+    {
+      "name": "Next.js Metadata and OG images",
+      "url": "https://nextjs.org/docs/app/getting-started/metadata-and-og-images",
+      "notes": [
+        "Next metadata exports generate head tags at build time for prerendered static routes. Dynamic ImageResponse routes are avoided for static export."
+      ]
+    }
+  ],
+  "decisions": [
+    "Generate 1200 x 630 JPG files to keep files broadly compatible and reasonably small.",
+    "Use static files under public/og so the exported site can serve them without app/api or server runtime.",
+    "Use WebP preview artwork as source material, but never reference SVG source URLs as social images.",
+    "Create route-level OG images only: homepage, gallery landing, and public hub routes. No per-image social pages are created."
+  ]
+}

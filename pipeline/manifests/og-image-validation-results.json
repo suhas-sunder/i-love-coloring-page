@@ -1,0 +1,957 @@
+{
+  "generatedAt": "2026-05-14T03:37:58.014Z",
+  "phase": "og-image",
+  "summary": {
+    "validationPassed": true,
+    "expectedImageCount": 133,
+    "generatedImageCount": 133,
+    "missingImageCount": 0,
+    "invalidImageCount": 0,
+    "unexpectedImageCount": 0,
+    "width": 1200,
+    "height": 630,
+    "noSvgOutput": true,
+    "noPathsOutsidePublicOg": true,
+    "noLocalhostReferences": true,
+    "noR2DevReferences": true,
+    "noGeneratedImageCountExplosion": true,
+    "maxFileSizeBytes": 113365,
+    "averageFileSizeBytes": 102055
+  },
+  "missing": [],
+  "unexpected": [],
+  "invalid": [],
+  "sizeRecords": [
+    {
+      "path": "public/og/coloring-pages.jpg",
+      "bytes": 103657,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/home.jpg",
+      "bytes": 109709,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/animals.jpg",
+      "bytes": 100513,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/anime-girls.jpg",
+      "bytes": 100754,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/bakery.jpg",
+      "bytes": 111057,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/bats.jpg",
+      "bytes": 98926,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/bears.jpg",
+      "bytes": 102066,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/bees.jpg",
+      "bytes": 103684,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/beetles.jpg",
+      "bytes": 110159,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/birds.jpg",
+      "bytes": 100104,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/birthday.jpg",
+      "bytes": 95892,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/brachiosaurus.jpg",
+      "bytes": 102459,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/bridges.jpg",
+      "bytes": 108088,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/buildings.jpg",
+      "bytes": 99631,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/butterflies.jpg",
+      "bytes": 102056,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/cakes.jpg",
+      "bytes": 103083,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/cars.jpg",
+      "bytes": 107781,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/castles.jpg",
+      "bytes": 100496,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/cats.jpg",
+      "bytes": 99146,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/chess.jpg",
+      "bytes": 98008,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/chibi-dogs.jpg",
+      "bytes": 93839,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/chibi-flowers.jpg",
+      "bytes": 97970,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/chibi.jpg",
+      "bytes": 102404,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/christmas-dogs.jpg",
+      "bytes": 98856,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/christmas.jpg",
+      "bytes": 101049,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/coloring-pages.jpg",
+      "bytes": 100835,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/cows.jpg",
+      "bytes": 97405,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/crabs.jpg",
+      "bytes": 97872,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/cute.jpg",
+      "bytes": 96051,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/deer.jpg",
+      "bytes": 100072,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/detailed-for-adults.jpg",
+      "bytes": 107199,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/dinosaurs.jpg",
+      "bytes": 97614,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/diplodocus.jpg",
+      "bytes": 99376,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/dogs.jpg",
+      "bytes": 99204,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/dolphins.jpg",
+      "bytes": 100104,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/dragons.jpg",
+      "bytes": 103596,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/ducks.jpg",
+      "bytes": 99330,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/dungeon.jpg",
+      "bytes": 110676,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/eagles.jpg",
+      "bytes": 98456,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/easy.jpg",
+      "bytes": 98438,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/elephants.jpg",
+      "bytes": 101889,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/fairies.jpg",
+      "bytes": 103952,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/fantasy-creatures.jpg",
+      "bytes": 104565,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/fantasy-dragons.jpg",
+      "bytes": 109893,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/fantasy.jpg",
+      "bytes": 104047,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/fish.jpg",
+      "bytes": 103477,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/flowers.jpg",
+      "bytes": 101378,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/food.jpg",
+      "bytes": 99469,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/for-kids.jpg",
+      "bytes": 100943,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/forest.jpg",
+      "bytes": 106253,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/foxes.jpg",
+      "bytes": 98061,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/garden-flowers.jpg",
+      "bytes": 105227,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/garden.jpg",
+      "bytes": 101173,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/geometric-dogs.jpg",
+      "bytes": 113039,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/geometric.jpg",
+      "bytes": 113365,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/giraffes.jpg",
+      "bytes": 102139,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/griffins.jpg",
+      "bytes": 103913,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/halloween.jpg",
+      "bytes": 102210,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/hedgehogs.jpg",
+      "bytes": 103464,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/hippos.jpg",
+      "bytes": 102373,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/holidays.jpg",
+      "bytes": 97986,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/horses.jpg",
+      "bytes": 101776,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/houses.jpg",
+      "bytes": 99238,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/hydras.jpg",
+      "bytes": 106231,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/indoor-plants.jpg",
+      "bytes": 97383,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/insects.jpg",
+      "bytes": 103446,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/kawaii.jpg",
+      "bytes": 98998,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/knights.jpg",
+      "bytes": 105280,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/koalas.jpg",
+      "bytes": 101370,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/lions.jpg",
+      "bytes": 102678,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/lizards.jpg",
+      "bytes": 103418,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/llamas.jpg",
+      "bytes": 101368,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/mammoths.jpg",
+      "bytes": 104668,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/mandalas.jpg",
+      "bytes": 104282,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/medieval-fantasy.jpg",
+      "bytes": 106543,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/megalodon.jpg",
+      "bytes": 101128,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/mermaids.jpg",
+      "bytes": 102553,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/monkeys.jpg",
+      "bytes": 104236,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/moose.jpg",
+      "bytes": 99174,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/mushrooms.jpg",
+      "bytes": 104318,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/mythology.jpg",
+      "bytes": 104664,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/ocean.jpg",
+      "bytes": 99679,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/octopus.jpg",
+      "bytes": 96013,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/otters.jpg",
+      "bytes": 101495,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/owls.jpg",
+      "bytes": 98947,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/pandas.jpg",
+      "bytes": 105258,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/pegasus.jpg",
+      "bytes": 100999,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/penguins.jpg",
+      "bytes": 95014,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/phoenix.jpg",
+      "bytes": 103529,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/planes.jpg",
+      "bytes": 106092,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/plants.jpg",
+      "bytes": 102698,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/playing-cards.jpg",
+      "bytes": 99058,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/plushie-animals.jpg",
+      "bytes": 103281,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/plushie-cats.jpg",
+      "bytes": 100614,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/plushie-dogs.jpg",
+      "bytes": 99277,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/plushie-dragons.jpg",
+      "bytes": 100729,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/plushie-triceratops.jpg",
+      "bytes": 102909,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/plushie-unicorns.jpg",
+      "bytes": 107106,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/plushie-whales.jpg",
+      "bytes": 96282,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/plushies.jpg",
+      "bytes": 99887,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/prehistoric-animals.jpg",
+      "bytes": 101097,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/pumpkins.jpg",
+      "bytes": 103017,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/rabbits.jpg",
+      "bytes": 104281,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/reindeer.jpg",
+      "bytes": 102818,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/reptiles.jpg",
+      "bytes": 98312,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/robots.jpg",
+      "bytes": 98970,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/roses.jpg",
+      "bytes": 100002,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/santa.jpg",
+      "bytes": 100543,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/sea-life.jpg",
+      "bytes": 98384,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/sharks.jpg",
+      "bytes": 100517,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/sheep.jpg",
+      "bytes": 95615,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/sloths.jpg",
+      "bytes": 104775,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/snakes.jpg",
+      "bytes": 105933,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/spiders.jpg",
+      "bytes": 105546,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/st-patricks-day.jpg",
+      "bytes": 91988,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/stegosaurus.jpg",
+      "bytes": 103018,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/sushi.jpg",
+      "bytes": 104816,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/t-rex.jpg",
+      "bytes": 99382,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/tigers.jpg",
+      "bytes": 103009,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/trains.jpg",
+      "bytes": 107451,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/trees.jpg",
+      "bytes": 103112,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/triceratops.jpg",
+      "bytes": 104707,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/turtles.jpg",
+      "bytes": 97631,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/unicorns.jpg",
+      "bytes": 101765,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/vehicles.jpg",
+      "bytes": 105714,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/velociraptors.jpg",
+      "bytes": 106381,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/whales.jpg",
+      "bytes": 97862,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/witches.jpg",
+      "bytes": 104592,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/wizards.jpg",
+      "bytes": 105266,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/wolves.jpg",
+      "bytes": 102416,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/world-landmarks.jpg",
+      "bytes": 92389,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/wyverns.jpg",
+      "bytes": 104761,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    },
+    {
+      "path": "public/og/hubs/zebras.jpg",
+      "bytes": 109232,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg"
+    }
+  ]
+}
