@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-05-14T00:00:00.000Z",
+  "runId": "final-ux-fix-context-check",
+  "summary": {
+    "correctRepository": true,
+    "repository": "i-love-coloring-page",
+    "branch": "ver-5-deployed-may-13-2026",
+    "branchMatchesExpected": true,
+    "appApiRoutePresent": false,
+    "staticExportConfigured": true,
+    "runtimeGeneratedDataExists": true,
+    "runtimeAvailableRecords": 6352,
+    "runtimeIndexableHubs": 131,
+    "runtimeRoutes": 131,
+    "imageSitemapExists": true,
+    "ogImagesExist": true,
+    "ogImageCount": 133,
+    "jsonLdExists": true,
+    "siteUrlDefaultExists": true,
+    "assetBaseDefaultExists": true,
+    "contactEmailDefaultExists": true,
+    "siteUrlDefault": "https://www.ilovecoloringpage.com",
+    "assetBaseDefault": "https://assets.ilovecoloringpage.com/coloring-pages",
+    "contactEmailDefault": "admin@ilovecoloringpage.com",
+    "svgInternalOnly": true,
+    "publicDownloadFormats": ["PNG", "JPG", "WebP"],
+    "liveAdSenseCodePresent": false,
+    "imagesStatusClean": true,
+    "ilovesvgStatusClean": true,
+    "localOnlyRound": true
+  },
+  "notes": [
+    "No deployment, live production QA, GSC submission, asset upload, live ad integration, app/api route, or backend work is part of this round.",
+    "The working tree was checked before production UI edits; images/ and ilovesvg/ were clean."
+  ]
+}

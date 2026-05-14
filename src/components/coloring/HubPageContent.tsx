@@ -118,14 +118,14 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
         <section className="content-section supporting-browse" aria-labelledby="supporting-browse-title">
           <div className="section-heading-row">
             <div>
-              <h2 className="section-title" id="supporting-browse-title">More ways to browse</h2>
-              <p>Use these links after the gallery when you want a narrower collection or a familiar theme.</p>
+              <h2 className="section-title" id="supporting-browse-title">Narrower ways to browse</h2>
+              <p>Use these after the gallery when a specific subcollection or repeated theme would be faster than filtering again.</p>
             </div>
           </div>
           <div className="supporting-browse-grid">
             {childHubs.length > 0 ? (
               <div>
-                <h3 className="supporting-title">Related collections</h3>
+                <h3 className="supporting-title">Subcollections</h3>
                 <div className="hub-link-grid hub-link-grid-compact">
                   {childHubs.map((child) => (
                     <HubCard key={child.hubId} hub={child} compact />

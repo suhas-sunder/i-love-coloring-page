@@ -1,0 +1,20 @@
+{
+  "generatedAt": "2026-05-14T20:28:58.936Z",
+  "runId": "final-ux-print-pdf-results",
+  "summary": {
+    "onePagePdfWorkflowPresent": true,
+    "frontendOnly": true,
+    "letterPortrait": true,
+    "oneSlimBorderOnly": true,
+    "doubleBorderRemoved": true,
+    "minimalSafeMargin": true,
+    "brandingTextPresent": true,
+    "brandingOutsideArtwork": true,
+    "brandingOverlapsArtwork": false,
+    "appUiControlsIncluded": false,
+    "metadataTitleSupported": true,
+    "pngJpgWebpDownloadsStillWorkInUi": true,
+    "svgDownloadAbsent": true,
+    "printPdfPassed": true
+  }
+}

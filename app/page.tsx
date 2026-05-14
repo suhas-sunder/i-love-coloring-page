@@ -37,7 +37,7 @@ export default function HomePage() {
           <p>Printable coloring pages with real previews, quick browsing, and clean print controls when you find the right page.</p>
           <ul className="hero-facts" aria-label="Gallery summary">
             <li><strong>{rootHub.assetCount.toLocaleString()}</strong> printable pages</li>
-            <li>Printable files ready from each card</li>
+            <li>Image previews open print controls</li>
             <li>Searchable subject collections</li>
           </ul>
           <div className="hero-actions">

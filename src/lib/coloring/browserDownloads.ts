@@ -89,6 +89,8 @@ export type PreparedPrintPdfResult =
       brandBox: PrintDocumentBox;
       brandingOverlapsArtwork: false;
       appUiControlsIncluded: false;
+      printableBorderCount: 1;
+      metadataTitle: string;
     }
   | Extract<BrowserRasterResult, { ok: false }>;
 
@@ -133,7 +135,7 @@ type PrintPdfLayout = {
   artworkBox: PrintDocumentBox;
   imageBox: PrintDocumentBox;
   brandBox: PrintDocumentBox;
-  dividerY: number;
+  printableBorderCount: 1;
 };
 
 type PrintDocumentQaSnapshot = {
@@ -145,6 +147,8 @@ type PrintDocumentQaSnapshot = {
   brandBox: PrintDocumentBox;
   brandingOverlapsArtwork: false;
   appUiControlsIncluded: false;
+  printableBorderCount: 1;
+  metadataTitle: string;
   source: "internal-svg";
 };
 
@@ -397,7 +401,8 @@ export async function prepareOnePagePrintPdf(options: PrintOptions): Promise<Pre
 
   try {
     const layout = getPrintPdfLayout(rendered.width, rendered.height);
-    const pdfBytes = buildPrintPdfBytes(rendered.canvas, layout);
+    const metadataTitle = buildPrintPdfTitle(options.title);
+    const pdfBytes = buildPrintPdfBytes(rendered.canvas, layout, metadataTitle);
     const pdfBlob = new Blob([pdfBytes], { type: "application/pdf" });
     const pdfUrl = URL.createObjectURL(pdfBlob);
     const result: Extract<PreparedPrintPdfResult, { ok: true }> = {
@@ -419,6 +424,8 @@ export async function prepareOnePagePrintPdf(options: PrintOptions): Promise<Pre
       brandBox: layout.brandBox,
       brandingOverlapsArtwork: false,
       appUiControlsIncluded: false,
+      printableBorderCount: layout.printableBorderCount,
+      metadataTitle,
     };
     recordPrintDocumentQa(result);
     return result;
@@ -628,19 +635,25 @@ function buildPrintPdfFilename(title: string) {
   return buildDownloadFilename(title, "png").replace(/\.png$/i, ".pdf");
 }
 
+function buildPrintPdfTitle(title: string) {
+  const cleanTitle = title.trim() || "Coloring Page";
+  return `${cleanTitle} - ${PRINT_DOCUMENT_BRAND}`;
+}
+
 function getPrintPdfLayout(imageWidth: number, imageHeight: number): PrintPdfLayout {
   const outerFrame = {
-    x: 18,
-    y: 18,
-    width: PRINT_PAGE_WIDTH_PT - 36,
-    height: PRINT_PAGE_HEIGHT_PT - 36,
+    x: 14,
+    y: 14,
+    width: PRINT_PAGE_WIDTH_PT - 28,
+    height: PRINT_PAGE_HEIGHT_PT - 28,
   };
-  const footerHeight = 28;
+  const footerHeight = 18;
+  const safePadding = 6;
   const artworkBox = {
-    x: outerFrame.x + 12,
-    y: outerFrame.y + footerHeight + 12,
-    width: outerFrame.width - 24,
-    height: outerFrame.height - footerHeight - 24,
+    x: outerFrame.x + safePadding,
+    y: outerFrame.y + footerHeight + safePadding,
+    width: outerFrame.width - safePadding * 2,
+    height: outerFrame.height - footerHeight - safePadding * 2,
   };
   const imageScale = Math.min(artworkBox.width / imageWidth, artworkBox.height / imageHeight);
   const imageBox = {
@@ -660,11 +673,11 @@ function getPrintPdfLayout(imageWidth: number, imageHeight: number): PrintPdfLay
       width: outerFrame.width,
       height: footerHeight,
     },
-    dividerY: outerFrame.y + footerHeight,
+    printableBorderCount: 1,
   };
 }
 
-function buildPrintPdfBytes(canvas: HTMLCanvasElement, layout: PrintPdfLayout) {
+function buildPrintPdfBytes(canvas: HTMLCanvasElement, layout: PrintPdfLayout, metadataTitle: string) {
   const context = canvas.getContext("2d");
   if (!context) throw new Error("Canvas context unavailable.");
 
@@ -734,12 +747,15 @@ function buildPrintPdfBytes(canvas: HTMLCanvasElement, layout: PrintPdfLayout) {
   appendBytes(contentBytes);
   appendAscii("\nendstream\nendobj\n");
 
+  startObject(7);
+  appendAscii(`<< /Title (${escapePdfText(metadataTitle)}) /Creator (${escapePdfText(PRINT_DOCUMENT_BRAND)}) >>\nendobj\n`);
+
   const xrefOffset = byteLength;
-  appendAscii("xref\n0 7\n0000000000 65535 f \n");
-  for (let id = 1; id <= 6; id += 1) {
+  appendAscii("xref\n0 8\n0000000000 65535 f \n");
+  for (let id = 1; id <= 7; id += 1) {
     appendAscii(`${String(offsets[id]).padStart(10, "0")} 00000 n \n`);
   }
-  appendAscii(`trailer\n<< /Size 7 /Root 1 0 R >>\nstartxref\n${xrefOffset}\n%%EOF`);
+  appendAscii(`trailer\n<< /Size 8 /Root 1 0 R /Info 7 0 R >>\nstartxref\n${xrefOffset}\n%%EOF`);
 
   const output = new Uint8Array(byteLength);
   let offset = 0;
@@ -751,25 +767,23 @@ function buildPrintPdfBytes(canvas: HTMLCanvasElement, layout: PrintPdfLayout) {
 }
 
 function buildPrintPdfContentStream(layout: PrintPdfLayout) {
-  const brandFontSize = 9;
+  const brandFontSize = 8;
   const estimatedBrandWidth = PRINT_DOCUMENT_BRAND.length * brandFontSize * 0.52;
   const brandX = layout.brandBox.x + (layout.brandBox.width - estimatedBrandWidth) / 2;
-  const brandY = layout.brandBox.y + 10;
+  const brandY = layout.brandBox.y + 5;
 
   return [
     "q",
     "0.76 0.73 0.82 RG",
-    "0.8 w",
+    "0.55 w",
     `${boxCommand(layout.outerFrame)} S`,
-    `${formatPdfNumber(layout.outerFrame.x)} ${formatPdfNumber(layout.dividerY)} m ${formatPdfNumber(layout.outerFrame.x + layout.outerFrame.width)} ${formatPdfNumber(layout.dividerY)} l S`,
-    `${boxCommand(layout.artworkBox)} S`,
     "Q",
     "q",
     `${formatPdfNumber(layout.imageBox.width)} 0 0 ${formatPdfNumber(layout.imageBox.height)} ${formatPdfNumber(layout.imageBox.x)} ${formatPdfNumber(layout.imageBox.y)} cm`,
     "/Im0 Do",
     "Q",
     "BT",
-    "/F1 9 Tf",
+    "/F1 8 Tf",
     "0.42 0.29 0.50 rg",
     `${formatPdfNumber(brandX)} ${formatPdfNumber(brandY)} Td`,
     `(${escapePdfText(PRINT_DOCUMENT_BRAND)}) Tj`,
@@ -815,6 +829,8 @@ function recordPrintDocumentQa(prepared: Extract<PreparedPrintPdfResult, { ok: t
     brandBox: prepared.brandBox,
     brandingOverlapsArtwork: prepared.brandingOverlapsArtwork,
     appUiControlsIncluded: prepared.appUiControlsIncluded,
+    printableBorderCount: prepared.printableBorderCount,
+    metadataTitle: prepared.metadataTitle,
     source: prepared.source,
   };
 }

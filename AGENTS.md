@@ -514,6 +514,16 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Link sections must be purposeful, properly spaced, readable, and distinct; avoid lazy duplicate sections, useless eyebrow labels, cramped related links, and ellipsized important hub titles.
 - Live ads remain deferred until the owner explicitly approves a live ads round.
 
+## Final Local UX Gate
+
+- Do not show a redundant card-level Print button when clicking the image already opens print preview.
+- Card images should be the primary print and preview trigger, with a subtle visual cue on the image surface.
+- Download formats must remain available in the modal without cluttering every gallery card.
+- Print PDF output must have one slim border, minimal safe padding, and small `iLoveColoringPage.com` branding outside the artwork area.
+- Print branding must never overlap, obscure, or watermark the coloring artwork.
+- Related and browsing link sections must be professionally spaced, purposeful, and readable, with counts separated from labels.
+- Do not prompt for deployment until the final local UX browser and print gates pass.
+
 ## Image Sitemap Gate
 
 - Image sitemap XML must use uploaded clean WebP preview URLs only.

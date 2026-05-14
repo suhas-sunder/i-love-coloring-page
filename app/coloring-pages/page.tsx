@@ -5,13 +5,11 @@ import { AdSlot } from "@/components/ads/AdSlot";
 import { GallerySearch } from "@/components/coloring/GallerySearch";
 import { HubCard } from "@/components/coloring/HubCard";
 import { HubHero } from "@/components/coloring/HubHero";
-import { RelatedHubs } from "@/components/coloring/RelatedHubs";
 import { RotatingFeaturedGrid } from "@/components/coloring/RotatingFeaturedGrid";
 import { SeoContentSection } from "@/components/coloring/SeoContentSection";
 import { JsonLdScript } from "@/components/seo/JsonLdScript";
 import {
   getAllPhase1Hubs,
-  getChildHubs,
   getFeaturedRotationCandidateItems,
   getGeneratedFeaturedItems,
   getHubFilterTags,
@@ -43,7 +41,6 @@ export default function ColoringPagesLanding() {
   const popularThemes = hubs.filter((hub) => ["christmas", "halloween", "birthday", "holidays", "fantasy", "mythology", "medieval-fantasy", "st-patricks-day"].includes(hub.slug));
   const subjectHubs = hubs.filter((hub) => ["animals", "plushies", "dinosaurs", "prehistoric-animals", "plants", "indoor-plants", "sea-life", "vehicles"].includes(hub.slug));
   const styleHubs = hubs.filter((hub) => ["mandalas", "geometric", "cute", "chibi", "kawaii", "detailed-for-adults", "for-kids", "easy"].includes(hub.slug));
-  const childHubs = getChildHubs(rootHub, 12);
   const heroRelatedLinks = featuredHubs.slice(0, 6).map((hub) => ({
     label: hub.title.replace(/ Coloring Pages$/, ""),
     href: hub.route,
@@ -119,7 +116,7 @@ export default function ColoringPagesLanding() {
 
       <AdSlot slotId="coloring-pages-lower-content" />
 
-      <section className="content-section collection-section">
+      <section className="content-section collection-section" id="related-collections">
         <div className="section-heading-row">
           <div>
             <h2 className="section-title">Popular coloring page collections</h2>
@@ -176,8 +173,6 @@ export default function ColoringPagesLanding() {
       </section>
 
       <SeoContentSection content={seoContent} id="about-this-collection" />
-
-      <RelatedHubs title="More ways to browse" hubs={childHubs} id="related-collections" />
     </main>
   );
 }

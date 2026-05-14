@@ -1,0 +1,49 @@
+{
+  "generatedAt": "2026-05-14T00:00:00.000Z",
+  "runId": "final-ux-fix-current-audit",
+  "auditedFiles": [
+    "src/components/coloring/ImageCard.tsx",
+    "src/components/coloring/AssetImage.tsx",
+    "src/components/coloring/DownloadMenu.tsx",
+    "src/lib/coloring/browserDownloads.ts",
+    "src/components/coloring/HubHero.tsx",
+    "src/components/coloring/RelatedHubs.tsx",
+    "src/components/coloring/SeoContentSection.tsx",
+    "src/components/coloring/HubPageContent.tsx",
+    "src/components/site/MoreHubMenu.tsx",
+    "src/components/site/MobileNav.tsx",
+    "src/lib/navigation/siteNav.ts",
+    "src/styles/components.css",
+    "src/styles/layout.css",
+    "app/page.tsx",
+    "app/coloring-pages/page.tsx",
+    "app/coloring-pages/[hubSlug]/page.tsx"
+  ],
+  "summary": {
+    "headerNavHoverStatesPresentButWeak": true,
+    "cardImagePaddingOrGapsFromComponentCss": true,
+    "cardLevelPrintButtonPresent": true,
+    "imageClickOpensModal": true,
+    "overlayCuePresent": false,
+    "modalTopRightControlsPresent": true,
+    "modalScrollbarRisk": true,
+    "downloadLabelBesideButtonsPresent": true,
+    "downloadButtonsAvailable": true,
+    "svgDownloadExposed": false,
+    "pdfUsesOnePageWorkflow": true,
+    "pdfBorderCountBeforeFix": 3,
+    "pdfHasExcessivePaddingBeforeFix": true,
+    "pdfBrandingOutsideArtworkByLayout": true,
+    "relatedCollectionsCramped": true,
+    "moreWaysDuplicateRisk": true,
+    "moreMenuGrouped": true,
+    "moreMenuTitleTruncationRisk": true
+  },
+  "findings": [
+    "Image cards already use an image button to open the print preview, but they also keep a visible card-level Print button, creating a redundant two-step print flow.",
+    "The image surface lacks a clear overlay cue that communicates preview and print without adding another competing button.",
+    "The modal keeps Print and Close in the top-right, but the desktop panel has avoidable scroll/height risk and includes an unnecessary Download label beside the format buttons.",
+    "The PDF workflow is frontend-only and one-page, but the content stream draws an outer frame, divider, and artwork box, which violates the one-slim-border requirement.",
+    "Related and browse link sections use several link styles that can make counts crowd labels, and the More menu needs more desktop breathing room with wrapped titles instead of truncation risk."
+  ]
+}

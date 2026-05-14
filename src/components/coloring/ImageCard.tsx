@@ -167,7 +167,6 @@ export function ImageCard({ item, assetUrls, priority = false }: ImageCardProps)
               </div>
 
               <div className="print-preview-downloads">
-                <span className="print-preview-download-title">Download</span>
                 <DownloadMenu
                   title={item.title}
                   internalSvgUrl={internalSvgUrl}
@@ -204,19 +203,13 @@ export function ImageCard({ item, assetUrls, priority = false }: ImageCardProps)
             priority={priority}
             interactive={hasPrintableAsset}
           />
+          <span className="gallery-item-print-cue" aria-hidden="true">
+            {hasPrintableAsset ? "Preview & print" : "Assets pending"}
+          </span>
         </span>
       </button>
       <div className="gallery-item-body">
         <h3 className="item-title">{item.title}</h3>
-        <div className="gallery-actions" aria-label={`${item.title} actions`}>
-          {hasPrintableAsset ? (
-            <button className="button button-primary button-small" type="button" onClick={openPrintPreview} aria-label={`Preview and print ${item.title}`}>
-              Print
-            </button>
-          ) : (
-            <span className="button button-disabled button-small">Assets pending</span>
-          )}
-        </div>
         {actionStatus ? (
           <p className="gallery-action-status" aria-live="polite">
             {actionStatus}
