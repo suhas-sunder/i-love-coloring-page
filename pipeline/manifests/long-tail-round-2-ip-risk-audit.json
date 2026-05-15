@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-05-14T23:46:55.619Z",
+  "runId": "long-tail-round-2-ip-risk-audit",
+  "blockedTerms": [
+    "naruto",
+    "mario",
+    "pokemon",
+    "disney",
+    "marvel",
+    "dc",
+    "sonic",
+    "minecraft",
+    "roblox",
+    "paw patrol",
+    "bluey"
+  ],
+  "summary": {
+    "noPromotedRouteUsesFranchiseNames": true,
+    "noPromotedTitleUsesFranchiseNames": true,
+    "noPublicRouteImpliesProtectedFranchise": true,
+    "riskyCandidatesRejectedOrManualOnly": true,
+    "ipRiskBlockedCount": 0
+  },
+  "riskyCandidates": [],
+  "promotedRiskCandidates": []
+}

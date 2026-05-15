@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-05-13T22:53:14.447Z",
-  "runId": "runtime-switch-hub-filter-tags+long-tail+long-tail+long-tail+long-tail+long-tail+long-tail",
+  "generatedAt": "2026-05-14T23:46:55.619Z",
+  "runId": "runtime-switch-hub-filter-tags+long-tail+long-tail+long-tail+long-tail+long-tail+long-tail+long-tail-round-2",
   "summary": {
-    "hubCount": 131,
+    "hubCount": 163,
     "deferredRecordsHidden": true,
     "noUnavailableAssetCounts": true,
     "longTailHubsIncluded": true
@@ -7646,6 +7646,1675 @@
           "id": "patterns",
           "label": "Patterns",
           "assetCount": 4
+        }
+      ]
+    },
+    {
+      "hubId": "hub_dodo",
+      "slug": "dodo",
+      "title": "Dodo Coloring Pages",
+      "assetCount": 11,
+      "tags": [
+        {
+          "id": "animals",
+          "label": "Animals",
+          "group": "subject",
+          "assetCount": 11
+        },
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 9
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 2
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 2
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 2
+        }
+      ],
+      "tabs": [
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 9
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 2
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 2
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 2
+        }
+      ]
+    },
+    {
+      "hubId": "hub_bamboo",
+      "slug": "bamboo",
+      "title": "Bamboo Coloring Pages",
+      "assetCount": 7,
+      "tags": [
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 5
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 5
+        },
+        {
+          "id": "flowers",
+          "label": "Flowers",
+          "group": "subject",
+          "assetCount": 2
+        }
+      ],
+      "tabs": [
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 5
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 5
+        }
+      ]
+    },
+    {
+      "hubId": "hub_steam_train",
+      "slug": "steam-train",
+      "title": "Steam Train Coloring Pages",
+      "assetCount": 15,
+      "tags": [
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 15
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 15
+        }
+      ],
+      "tabs": [
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 15
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 15
+        }
+      ]
+    },
+    {
+      "hubId": "hub_birthday_celebration",
+      "slug": "birthday-celebration",
+      "title": "Birthday Celebration Coloring Pages",
+      "assetCount": 190,
+      "tags": [
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 190
+        },
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 157
+        },
+        {
+          "id": "animals",
+          "label": "Animals",
+          "group": "subject",
+          "assetCount": 28
+        },
+        {
+          "id": "fantasy",
+          "label": "Fantasy",
+          "group": "theme",
+          "assetCount": 7
+        }
+      ],
+      "tabs": [
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 190
+        },
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 157
+        }
+      ]
+    },
+    {
+      "hubId": "hub_christmas_plushie",
+      "slug": "christmas-plushie",
+      "title": "Christmas Plushies Coloring Pages",
+      "assetCount": 183,
+      "tags": [
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 183
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 183
+        },
+        {
+          "id": "animals",
+          "label": "Animals",
+          "group": "subject",
+          "assetCount": 28
+        },
+        {
+          "id": "fantasy",
+          "label": "Fantasy",
+          "group": "theme",
+          "assetCount": 5
+        }
+      ],
+      "tabs": [
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 183
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 183
+        }
+      ]
+    },
+    {
+      "hubId": "hub_halloween_costume",
+      "slug": "halloween-costume",
+      "title": "Halloween Costumes Coloring Pages",
+      "assetCount": 161,
+      "tags": [
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 161
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 161
+        },
+        {
+          "id": "animals",
+          "label": "Animals",
+          "group": "subject",
+          "assetCount": 26
+        },
+        {
+          "id": "fantasy",
+          "label": "Fantasy",
+          "group": "theme",
+          "assetCount": 3
+        }
+      ],
+      "tabs": [
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 161
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 161
+        }
+      ]
+    },
+    {
+      "hubId": "hub_summoning",
+      "slug": "summoning",
+      "title": "Summoning Coloring Pages",
+      "assetCount": 336,
+      "tags": [
+        {
+          "id": "fantasy",
+          "label": "Fantasy",
+          "group": "theme",
+          "assetCount": 336
+        },
+        {
+          "id": "animals",
+          "label": "Animals",
+          "group": "subject",
+          "assetCount": 16
+        },
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 8
+        }
+      ],
+      "tabs": [
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 8
+        }
+      ]
+    },
+    {
+      "hubId": "hub_terrier",
+      "slug": "terrier",
+      "title": "Terrier Coloring Pages",
+      "assetCount": 29,
+      "tags": [
+        {
+          "id": "animals",
+          "label": "Animals",
+          "group": "subject",
+          "assetCount": 29
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 12
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 12
+        },
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 9
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 3
+        }
+      ],
+      "tabs": [
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 12
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 12
+        },
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 9
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 3
+        }
+      ]
+    },
+    {
+      "hubId": "hub_woolly_mammoth",
+      "slug": "woolly-mammoth",
+      "title": "Woolly Mammoth Coloring Pages",
+      "assetCount": 19,
+      "tags": [
+        {
+          "id": "animals",
+          "label": "Animals",
+          "group": "subject",
+          "assetCount": 12
+        },
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 12
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 5
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 3
+        },
+        {
+          "id": "fantasy",
+          "label": "Fantasy",
+          "group": "theme",
+          "assetCount": 3
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 3
+        }
+      ],
+      "tabs": [
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 12
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 5
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 3
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 3
+        }
+      ]
+    },
+    {
+      "hubId": "hub_saber_toothed_tiger",
+      "slug": "saber-toothed-tiger",
+      "title": "Saber Toothed Tiger Coloring Pages",
+      "assetCount": 13,
+      "tags": [
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 10
+        },
+        {
+          "id": "animals",
+          "label": "Animals",
+          "group": "subject",
+          "assetCount": 7
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 4
+        },
+        {
+          "id": "fantasy",
+          "label": "Fantasy",
+          "group": "theme",
+          "assetCount": 2
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 1
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 1
+        }
+      ],
+      "tabs": [
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 10
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 4
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 1
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 1
+        }
+      ]
+    },
+    {
+      "hubId": "hub_magic",
+      "slug": "magic",
+      "title": "Magic Coloring Pages",
+      "assetCount": 35,
+      "tags": [
+        {
+          "id": "fantasy",
+          "label": "Fantasy",
+          "group": "theme",
+          "assetCount": 35
+        },
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 10
+        },
+        {
+          "id": "animals",
+          "label": "Animals",
+          "group": "subject",
+          "assetCount": 2
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 1
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 1
+        }
+      ],
+      "tabs": [
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 10
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 1
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 1
+        }
+      ]
+    },
+    {
+      "hubId": "hub_ankylosaurus",
+      "slug": "ankylosaurus",
+      "title": "Ankylosaurus Coloring Pages",
+      "assetCount": 11,
+      "tags": [
+        {
+          "id": "animals",
+          "label": "Animals",
+          "group": "subject",
+          "assetCount": 9
+        },
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 9
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 4
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 1
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 1
+        }
+      ],
+      "tabs": [
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 9
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 4
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 1
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 1
+        }
+      ]
+    },
+    {
+      "hubId": "hub_trick_or_treat",
+      "slug": "trick-or-treat",
+      "title": "Trick or Treat Coloring Pages",
+      "assetCount": 11,
+      "tags": [
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 11
+        },
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 7
+        },
+        {
+          "id": "animals",
+          "label": "Animals",
+          "group": "subject",
+          "assetCount": 2
+        }
+      ],
+      "tabs": [
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 11
+        },
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 7
+        }
+      ]
+    },
+    {
+      "hubId": "hub_lily",
+      "slug": "lily",
+      "title": "Lily Coloring Pages",
+      "assetCount": 14,
+      "tags": [
+        {
+          "id": "flowers",
+          "label": "Flowers",
+          "group": "subject",
+          "assetCount": 14
+        },
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 5
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 2
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 2
+        },
+        {
+          "id": "animals",
+          "label": "Animals",
+          "group": "subject",
+          "assetCount": 1
+        }
+      ],
+      "tabs": [
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 5
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 2
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 2
+        }
+      ]
+    },
+    {
+      "hubId": "hub_forget_me_not",
+      "slug": "forget-me-not",
+      "title": "Forget-Me-Not Coloring Pages",
+      "assetCount": 6,
+      "tags": [
+        {
+          "id": "flowers",
+          "label": "Flowers",
+          "group": "subject",
+          "assetCount": 6
+        },
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 3
+        },
+        {
+          "id": "fantasy",
+          "label": "Fantasy",
+          "group": "theme",
+          "assetCount": 1
+        }
+      ],
+      "tabs": [
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 3
+        }
+      ]
+    },
+    {
+      "hubId": "hub_mosasaurus",
+      "slug": "mosasaurus",
+      "title": "Mosasaurus Coloring Pages",
+      "assetCount": 9,
+      "tags": [
+        {
+          "id": "animals",
+          "label": "Animals",
+          "group": "subject",
+          "assetCount": 9
+        },
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 7
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 4
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 1
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 1
+        }
+      ],
+      "tabs": [
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 7
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 4
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 1
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 1
+        }
+      ]
+    },
+    {
+      "hubId": "hub_plesiosaurus",
+      "slug": "plesiosaurus",
+      "title": "Plesiosaurus Coloring Pages",
+      "assetCount": 9,
+      "tags": [
+        {
+          "id": "animals",
+          "label": "Animals",
+          "group": "subject",
+          "assetCount": 9
+        },
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 7
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 4
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 1
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 1
+        }
+      ],
+      "tabs": [
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 7
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 4
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 1
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 1
+        }
+      ]
+    },
+    {
+      "hubId": "hub_pterodactyl",
+      "slug": "pterodactyl",
+      "title": "Pterodactyl Coloring Pages",
+      "assetCount": 9,
+      "tags": [
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 9
+        },
+        {
+          "id": "animals",
+          "label": "Animals",
+          "group": "subject",
+          "assetCount": 7
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 3
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 1
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 1
+        }
+      ],
+      "tabs": [
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 9
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 3
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 1
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 1
+        }
+      ]
+    },
+    {
+      "hubId": "hub_iguanodon",
+      "slug": "iguanodon",
+      "title": "Iguanodon Coloring Pages",
+      "assetCount": 8,
+      "tags": [
+        {
+          "id": "animals",
+          "label": "Animals",
+          "group": "subject",
+          "assetCount": 8
+        },
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 7
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 3
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 1
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 1
+        }
+      ],
+      "tabs": [
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 7
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 3
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 1
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 1
+        }
+      ]
+    },
+    {
+      "hubId": "hub_bulldog",
+      "slug": "bulldog",
+      "title": "Bulldog Coloring Pages",
+      "assetCount": 8,
+      "tags": [
+        {
+          "id": "animals",
+          "label": "Animals",
+          "group": "subject",
+          "assetCount": 8
+        },
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 2
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 2
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 2
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 2
+        }
+      ],
+      "tabs": [
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 2
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 2
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 2
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 2
+        }
+      ]
+    },
+    {
+      "hubId": "hub_collie",
+      "slug": "collie",
+      "title": "Collie Coloring Pages",
+      "assetCount": 8,
+      "tags": [
+        {
+          "id": "animals",
+          "label": "Animals",
+          "group": "subject",
+          "assetCount": 8
+        },
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 2
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 2
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 2
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 1
+        }
+      ],
+      "tabs": [
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 2
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 2
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 2
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 1
+        }
+      ]
+    },
+    {
+      "hubId": "hub_cookie",
+      "slug": "cookie",
+      "title": "Cookie Coloring Pages",
+      "assetCount": 17,
+      "tags": [
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 11
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 11
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 6
+        },
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 2
+        },
+        {
+          "id": "animals",
+          "label": "Animals",
+          "group": "subject",
+          "assetCount": 1
+        }
+      ],
+      "tabs": [
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 11
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 11
+        },
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 6
+        },
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 2
+        }
+      ]
+    },
+    {
+      "hubId": "hub_daisy",
+      "slug": "daisy",
+      "title": "Daisy Coloring Pages",
+      "assetCount": 10,
+      "tags": [
+        {
+          "id": "flowers",
+          "label": "Flowers",
+          "group": "subject",
+          "assetCount": 10
+        },
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 4
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 2
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 2
+        },
+        {
+          "id": "animals",
+          "label": "Animals",
+          "group": "subject",
+          "assetCount": 1
+        }
+      ],
+      "tabs": [
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 4
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 2
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 2
+        }
+      ]
+    },
+    {
+      "hubId": "hub_pteranodon",
+      "slug": "pteranodon",
+      "title": "Pteranodon Coloring Pages",
+      "assetCount": 6,
+      "tags": [
+        {
+          "id": "fantasy",
+          "label": "Fantasy",
+          "group": "theme",
+          "assetCount": 3
+        },
+        {
+          "id": "animals",
+          "label": "Animals",
+          "group": "subject",
+          "assetCount": 2
+        },
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 1
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 1
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 1
+        }
+      ],
+      "tabs": [
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 1
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 1
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 1
+        }
+      ]
+    },
+    {
+      "hubId": "hub_nigiri",
+      "slug": "nigiri",
+      "title": "Nigiri Coloring Pages",
+      "assetCount": 16,
+      "tags": [
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 16
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 16
+        },
+        {
+          "id": "flowers",
+          "label": "Flowers",
+          "group": "subject",
+          "assetCount": 1
+        }
+      ],
+      "tabs": [
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 16
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 16
+        }
+      ]
+    },
+    {
+      "hubId": "hub_orchid",
+      "slug": "orchid",
+      "title": "Orchid Coloring Pages",
+      "assetCount": 9,
+      "tags": [
+        {
+          "id": "flowers",
+          "label": "Flowers",
+          "group": "subject",
+          "assetCount": 9
+        },
+        {
+          "id": "animals",
+          "label": "Animals",
+          "group": "subject",
+          "assetCount": 1
+        },
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 1
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 1
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 1
+        }
+      ],
+      "tabs": [
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 1
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 1
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 1
+        }
+      ]
+    },
+    {
+      "hubId": "hub_poppy",
+      "slug": "poppy",
+      "title": "Poppy Coloring Pages",
+      "assetCount": 7,
+      "tags": [
+        {
+          "id": "flowers",
+          "label": "Flowers",
+          "group": "subject",
+          "assetCount": 7
+        },
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 4
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 2
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 2
+        }
+      ],
+      "tabs": [
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 4
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 2
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 2
+        }
+      ]
+    },
+    {
+      "hubId": "hub_lotus",
+      "slug": "lotus",
+      "title": "Lotus Coloring Pages",
+      "assetCount": 6,
+      "tags": [
+        {
+          "id": "flowers",
+          "label": "Flowers",
+          "group": "subject",
+          "assetCount": 6
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 3
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 3
+        },
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 2
+        }
+      ],
+      "tabs": [
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 3
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 3
+        },
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 2
+        }
+      ]
+    },
+    {
+      "hubId": "hub_palm",
+      "slug": "palm",
+      "title": "Palm Coloring Pages",
+      "assetCount": 6,
+      "tags": [
+        {
+          "id": "flowers",
+          "label": "Flowers",
+          "group": "subject",
+          "assetCount": 6
+        }
+      ],
+      "tabs": []
+    },
+    {
+      "hubId": "hub_leprechaun",
+      "slug": "leprechaun",
+      "title": "Leprechaun Coloring Pages",
+      "assetCount": 9,
+      "tags": [
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 7
+        },
+        {
+          "id": "fantasy",
+          "label": "Fantasy",
+          "group": "theme",
+          "assetCount": 1
+        }
+      ],
+      "tabs": [
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 7
+        }
+      ]
+    },
+    {
+      "hubId": "hub_salmon",
+      "slug": "salmon",
+      "title": "Salmon Coloring Pages",
+      "assetCount": 11,
+      "tags": [
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 10
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 10
+        }
+      ],
+      "tabs": [
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 10
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 10
+        }
+      ]
+    },
+    {
+      "hubId": "hub_gingerbread",
+      "slug": "gingerbread",
+      "title": "Gingerbread Coloring Pages",
+      "assetCount": 10,
+      "tags": [
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 10
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 4
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 4
+        },
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 2
+        }
+      ],
+      "tabs": [
+        {
+          "id": "seasonal",
+          "label": "Seasonal",
+          "group": "theme",
+          "assetCount": 10
+        },
+        {
+          "id": "detailed",
+          "label": "Detailed",
+          "group": "difficulty",
+          "assetCount": 4
+        },
+        {
+          "id": "patterns",
+          "label": "Patterns",
+          "group": "style",
+          "assetCount": 4
+        },
+        {
+          "id": "cute",
+          "label": "Cute",
+          "group": "style",
+          "assetCount": 2
         }
       ]
     }

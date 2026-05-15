@@ -93,6 +93,11 @@ This repository is the foundation for a future Next.js coloring page website. Th
 ## Long-Tail Hub Expansion Rules
 
 - Long-tail hubs must be generated from real available runtime inventory, not raw `images/` globs or deferred manual-review records.
+- Long-tail hub expansion must be data-driven from actual runtime assets, not generic prompt examples or category wishlists.
+- Unsupported requested concepts must be explicitly reported, not silently promoted.
+- "Anime boys" and similar audience or character categories require actual asset wording and sufficient runtime evidence before promotion.
+- Dog breeds, flower names, dinosaur species, anime/fantasy/summoning, and other subject hubs should be discovered from data, not forced.
+- Franchise/IP route names are blocked.
 - Do not create spammy token-only hub pages, doorway pages, reordered duplicate hubs, or near-duplicate singular/plural routes.
 - Minimum asset thresholds and overlap rules must be enforced before any hub becomes indexable.
 - Do not create per-image pages.
@@ -103,6 +108,7 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Do not proceed to image sitemap, Open Graph image generation, JSON-LD image expansion, live AdSense, or ad scripts until long-tail sitemap expansion passes browser QA and static export validation.
 - Long-tail hub expansion also requires an acceptance gate before image sitemap, Open Graph image, JSON-LD, or live ad work resumes.
 - Manual-review and backlog hub candidates must be packaged for owner review and must not be silently promoted.
+- Manual-review/backlog candidates must not be silently routed or promoted.
 - Reordered duplicate hubs and token-only hub names should be blocked before routing.
 - New hub pages must preserve gallery-first UX and useful non-spam SEO copy.
 

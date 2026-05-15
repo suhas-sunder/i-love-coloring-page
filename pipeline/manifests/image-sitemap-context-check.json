@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-13T22:53:14.447Z",
+  "generatedAt": "2026-05-14T23:46:55.619Z",
   "runId": "image-sitemap-context-check",
   "summary": {
     "correctRepository": true,
@@ -12,8 +12,8 @@
     "runtimeGeneratedDataExists": true,
     "runtimeAvailableRecords": 6352,
     "deferredManualReviewRecords": 205,
-    "runtimeIndexableHubs": 131,
-    "regularSitemapLocCountBeforeRound": 138,
+    "runtimeIndexableHubs": 163,
+    "regularSitemapLocCountBeforeRound": 170,
     "siteUrl": "https://www.ilovecoloringpage.com",
     "publicAssetBaseUrl": "https://assets.ilovecoloringpage.com/coloring-pages",
     "contactEmail": "admin@ilovecoloringpage.com",
@@ -25,7 +25,7 @@
     ],
     "liveAdsenseCodePresent": false,
     "openGraphImageGenerationPresent": false,
-    "jsonLdExpansionDeferred": true,
+    "jsonLdExpansionDeferred": false,
     "imageSitemapPresentBeforeRound": false,
     "currentImageSitemapFilePresent": true
   },
@@ -33,7 +33,7 @@
     "packageName": "i-love-coloring-page",
     "branch": "ver-5-deployed-may-13-2026",
     "regularSitemapFormula": "homepage + runtime sitemap entries + indexable trust pages",
-    "regularSitemapRuntimeEntries": 131,
+    "regularSitemapRuntimeEntries": 163,
     "indexableTrustPageCount": 6,
     "previousUxContextManifest": "pipeline/manifests/ux-polish-context-check.json"
   }

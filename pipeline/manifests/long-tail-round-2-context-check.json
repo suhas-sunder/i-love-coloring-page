@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-05-14T23:46:55.619Z",
+  "runId": "long-tail-round-2-context-check",
+  "git": {
+    "repoRoot": "D:/PROJECTS-and-WORK/work-projects/all_projects/i-love-coloring-page",
+    "branch": "ver-5-deployed-may-13-2026",
+    "head": "7190c41160d0ef5013c18931675a6ee8bf76cdd0",
+    "requiredCommit": "7190c41160d0ef5013c18931675a6ee8bf76cdd0",
+    "latestFinalLinkNavCommitExists": true
+  },
+  "summary": {
+    "repoProjectCorrect": true,
+    "branchCorrect": true,
+    "latestFinalLinkNavCommitExists": true,
+    "appApiAbsent": true,
+    "staticExportConfigured": true,
+    "frontendOnlyNextStaticExport": true,
+    "runtimeAvailableRecordsLoaded": true,
+    "runtimeAvailableRecords": 6352,
+    "deferredRecordCount": 205,
+    "deferredRecordsExcluded": true,
+    "currentHubCountBefore": 131,
+    "currentSitemapCountBefore": 131,
+    "svgInternalOnly": true,
+    "publicDownloads": [
+      "png",
+      "jpg",
+      "webp"
+    ],
+    "imageSitemapExists": true,
+    "ogImagesExist": true,
+    "jsonLdExists": true,
+    "liveAdSenseAbsent": true,
+    "publicSafeDefaultsExist": true
+  }
+}

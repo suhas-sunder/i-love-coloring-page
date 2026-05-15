@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-05-13T22:53:14.447Z",
-  "runId": "runtime-switch-hub-featured-items+long-tail+long-tail+long-tail+long-tail+long-tail+long-tail",
+  "generatedAt": "2026-05-14T23:46:55.619Z",
+  "runId": "runtime-switch-hub-featured-items+long-tail+long-tail+long-tail+long-tail+long-tail+long-tail+long-tail-round-2",
   "summary": {
-    "hubCount": 131,
+    "hubCount": 163,
     "maxFeaturedItemsPerHub": 12,
     "successfulAssetsOnly": true,
     "deferredRecordsHidden": true,
@@ -2883,6 +2883,641 @@
       ],
       "warningFlagsPreservedInternally": true,
       "selectionRule": "deterministic long-tail selection using title clarity, clean runtime assets, and stable asset ids"
+    },
+    {
+      "hubId": "hub_dodo",
+      "slug": "dodo",
+      "title": "Dodo Coloring Pages",
+      "assetCount": 11,
+      "assetIds": [
+        "anime-girls__anime-girl-dodo-bird-hoodie-plushie__18189d3f2f",
+        "anime-girls__anime-girl-dodo-bird-hoodie-plushie__5314caa215",
+        "chibi__chibi-dodo-birds__8aec652364",
+        "chibi__chibi-plushie-prehistoric-dodo__971a0a50fe",
+        "holiday__holiday-birthday-celebration-plushie-prehistoric-dodo-family__d8807d872d",
+        "holiday__holiday-halloween-costume-plushie-prehistoric-dodo-family__495d9df119",
+        "mandala-geometry-patterns__mandala-geometry-patterns-plushie-prehistoric-dodo__791923b8b8",
+        "mandala-geometry-patterns__mandala-geometry-patterns-prehistoric-dodo-bird__b31714da2e",
+        "plushie__plushie-prehistoric-dodo__5dab4996f4",
+        "plushie__plushie-prehistoric-dodo-family__b9c90d1a10",
+        "dinosaurs__prehistoric-dodo-bird__396845907f"
+      ],
+      "warningFlagsPreservedInternally": true,
+      "selectionRule": "deterministic Round 2 long-tail selection from runtime asset titles and filenames"
+    },
+    {
+      "hubId": "hub_bamboo",
+      "slug": "bamboo",
+      "title": "Bamboo Coloring Pages",
+      "assetCount": 7,
+      "assetIds": [
+        "indoor-plants__indoor-plants-bamboo-palm__b182761ba2",
+        "indoor-plants__indoor-plants-lucky-bamboo__23d308a776",
+        "mandala-geometry-patterns__mandala-geometry-patterns-japan-bamboo-forest__c0b4b1ffdf",
+        "mandala-geometry-patterns__mandala-geometry-patterns-japan-kyoto-bamboo-grove-path__5f81cfd846",
+        "mandala-geometry-patterns__mandala-geometry-patterns-sushi-bamboo-chopstick-rest__5468fd1dab",
+        "mandala-geometry-patterns__mandala-geometry-patterns-sushi-bamboo-sushi-steamer__5322b09b7a",
+        "mandala-geometry-patterns__mandala-geometry-patterns-sushi-nigiri-on-bamboo-leaf__eeff6e5baf"
+      ],
+      "warningFlagsPreservedInternally": true,
+      "selectionRule": "deterministic Round 2 long-tail selection from runtime asset titles and filenames"
+    },
+    {
+      "hubId": "hub_steam_train",
+      "slug": "steam-train",
+      "title": "Steam Train Coloring Pages",
+      "assetCount": 15,
+      "assetIds": [
+        "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-classic-steam-train-at-smal__937925e879",
+        "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-classic-steam-train-in-wint__a4f8bc4dbb",
+        "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-classic-steam-train-puffing__7e878a4bef",
+        "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-classic-steam-train-with-di__77162dcc9f",
+        "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-classic-steam-train-with-sl__01e70c6de0",
+        "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-steam-train-at-old-town-sta__0e1a4d8bf2",
+        "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-steam-train-blowing-whistle__f01d80e633",
+        "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-steam-train-on-coastal-rout__e2f4dddeaa",
+        "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-steam-train-on-forest-trest__2af0e9fe71",
+        "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-steam-train-with-open-air-c__ebd043ca33",
+        "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-steam-train-with-open-air-c__54a35e5c29",
+        "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-steam-train-with-open-coal-__e8ec35f3aa"
+      ],
+      "warningFlagsPreservedInternally": true,
+      "selectionRule": "deterministic Round 2 long-tail selection from runtime asset titles and filenames"
+    },
+    {
+      "hubId": "hub_birthday_celebration",
+      "slug": "birthday-celebration",
+      "title": "Birthday Celebration Coloring Pages",
+      "assetCount": 190,
+      "assetIds": [
+        "holiday__holiday-birthday-celebration-cat__d6e01d08ac",
+        "holiday__holiday-birthday-celebration-dogs__88ef0db510",
+        "holiday__holiday-birthday-celebration-dragon__bc7966ef21",
+        "holiday__holiday-birthday-celebration-elf__ee13c4bcbe",
+        "holiday__holiday-birthday-celebration-fairy__0d952911e9",
+        "holiday__holiday-birthday-celebration-fire-dragon__de6f8bbf33",
+        "holiday__holiday-birthday-celebration-foxes__690e06eaa1",
+        "holiday__holiday-birthday-celebration-gnome__835212f9b9",
+        "holiday__holiday-birthday-celebration-horses__9d909d631e",
+        "holiday__holiday-birthday-celebration-ice-dragon__a135872bdb",
+        "holiday__holiday-birthday-celebration-kittens__ed2debfba8",
+        "holiday__holiday-birthday-celebration-knight__e011af4dc8"
+      ],
+      "warningFlagsPreservedInternally": true,
+      "selectionRule": "deterministic Round 2 long-tail selection from runtime asset titles and filenames"
+    },
+    {
+      "hubId": "hub_christmas_plushie",
+      "slug": "christmas-plushie",
+      "title": "Christmas Plushies Coloring Pages",
+      "assetCount": 183,
+      "assetIds": [
+        "holiday__holiday-christmas-plushie-alligator-family__e57629ca9d",
+        "holiday__holiday-christmas-plushie-alpaca-family__63b9b19a29",
+        "holiday__holiday-christmas-plushie-angelfish-family__cf957a69b5",
+        "holiday__holiday-christmas-plushie-anteater-family__5a1c5ed154",
+        "holiday__holiday-christmas-plushie-antelope-family__7a59ed3259",
+        "holiday__holiday-christmas-plushie-armadillo-family__1f1c5806aa",
+        "holiday__holiday-christmas-plushie-axolotl-family__0cc3764936",
+        "holiday__holiday-christmas-plushie-baby-alien-family__766caa4fec",
+        "holiday__holiday-christmas-plushie-baby-dragon__13a91bb803",
+        "holiday__holiday-christmas-plushie-baby-dragon-family__b2bcf582a7",
+        "holiday__holiday-christmas-plushie-baby-kangaroo-joey-family__2936137b39",
+        "holiday__holiday-christmas-plushie-badger-family__e27dcad05c"
+      ],
+      "warningFlagsPreservedInternally": true,
+      "selectionRule": "deterministic Round 2 long-tail selection from runtime asset titles and filenames"
+    },
+    {
+      "hubId": "hub_halloween_costume",
+      "slug": "halloween-costume",
+      "title": "Halloween Costumes Coloring Pages",
+      "assetCount": 161,
+      "assetIds": [
+        "holiday__holiday-halloween-costume-plushie-alligator-family__34d6f58480",
+        "holiday__holiday-halloween-costume-plushie-alpaca-family__e871be9a53",
+        "holiday__holiday-halloween-costume-plushie-angelfish-family__69d0a12846",
+        "holiday__holiday-halloween-costume-plushie-anteater-family__1bcc40ecca",
+        "holiday__holiday-halloween-costume-plushie-antelope-family__6d1c6cb120",
+        "holiday__holiday-halloween-costume-plushie-armadillo-family__920cbb892f",
+        "holiday__holiday-halloween-costume-plushie-axolotl-family__934101625f",
+        "holiday__holiday-halloween-costume-plushie-baby-alien-family__2b6b4c6303",
+        "holiday__holiday-halloween-costume-plushie-baby-dragon-family__c067c935d8",
+        "holiday__holiday-halloween-costume-plushie-baby-kangaroo-joey-family__6f9b1745a9",
+        "holiday__holiday-halloween-costume-plushie-badger-family__ca4d39443d",
+        "holiday__holiday-halloween-costume-plushie-bat-family__c51b53ebbc"
+      ],
+      "warningFlagsPreservedInternally": true,
+      "selectionRule": "deterministic Round 2 long-tail selection from runtime asset titles and filenames"
+    },
+    {
+      "hubId": "hub_summoning",
+      "slug": "summoning",
+      "title": "Summoning Coloring Pages",
+      "assetCount": 336,
+      "assetIds": [
+        "anime-girls__anime-girl-demon-summoning__86bc23e91f",
+        "anime-girls__anime-girl-shadow-sprit-summoning__2b7f59c981",
+        "anime-girls__anime-girl-summoning-angler-fish__89420344d6",
+        "anime-girls__anime-girl-summoning-angler-fish-plushies__120c0d8870",
+        "anime-girls__anime-girl-summoning-ants__6e07db07e6",
+        "anime-girls__anime-girl-summoning-australian-throny-devil-lizard__f64b34131c",
+        "anime-girls__anime-girl-summoning-australian-throny-devil-lizard-plushies__b0d3d85b97",
+        "anime-girls__anime-girl-summoning-bone-dragon__25525e8031",
+        "anime-girls__anime-girl-summoning-bone-dragon-plushies__ac4b8bc72d",
+        "anime-girls__anime-girl-summoning-broken-heart-emoji-plushies__eced4f0e1f",
+        "anime-girls__anime-girl-summoning-broken-heart-emojis__33e510fae7",
+        "anime-girls__anime-girl-summoning-bumblebee-plushies__130922d19b"
+      ],
+      "warningFlagsPreservedInternally": true,
+      "selectionRule": "deterministic Round 2 long-tail selection from runtime asset titles and filenames"
+    },
+    {
+      "hubId": "hub_terrier",
+      "slug": "terrier",
+      "title": "Terrier Coloring Pages",
+      "assetCount": 29,
+      "assetIds": [
+        "chibi__chibi-animals-pets-dogs-american-staffordshire-terrier__0d5f95f4f2",
+        "chibi__chibi-animals-pets-dogs-border-terrier__43cfd795ea",
+        "chibi__chibi-animals-pets-dogs-boston-terrier__3232802ad1",
+        "chibi__chibi-animals-pets-dogs-cairn-terrier__7faba12ef3",
+        "chibi__chibi-animals-pets-dogs-jack-russell-terrier__90937679a3",
+        "chibi__chibi-animals-pets-dogs-scottish-terrier__341d994df6",
+        "chibi__chibi-animals-pets-dogs-staffordshire-bull-terrier__7b8d7a0b1f",
+        "chibi__chibi-animals-pets-dogs-toy-fox-terrier__b31c35388c",
+        "chibi__chibi-animals-pets-dogs-yorkshire-terrier__0e4582d5cf",
+        "dogs__dogs-american-staffordshire-terrier__f16997ca25",
+        "dogs__dogs-bull-terrier__fedf3a0c2d",
+        "dogs__dogs-jack-russell-terrier__06260e578f"
+      ],
+      "warningFlagsPreservedInternally": true,
+      "selectionRule": "deterministic Round 2 long-tail selection from runtime asset titles and filenames"
+    },
+    {
+      "hubId": "hub_woolly_mammoth",
+      "slug": "woolly-mammoth",
+      "title": "Woolly Mammoth Coloring Pages",
+      "assetCount": 19,
+      "assetIds": [
+        "anime-girls__anime-girl-summoning-jutsu-woolly-mammoth__49c45dca6d",
+        "anime-girls__anime-girl-summoning-jutsu-woolly-mammoth-kawaii-plushies__06dda78301",
+        "anime-girls__anime-girl-summoning-jutsu-woolly-mammoth-plushies__40525455d2",
+        "anime-girls__anime-girl-woolly-mammoth-hoodie-plushie__4e018104ac",
+        "anime-girls__anime-girl-woolly-mammoth-hoodie-plushie__f4b9879b0d",
+        "chibi__chibi-plushie-prehistoric-woolly-mammoth__88facd460e",
+        "chibi__chibi-woolly-mammoth__a06ffbc753",
+        "holiday__holiday-birthday-celebration-plushie-prehistoric-woolly-mammoth-family__a6c80ba9ba",
+        "holiday__holiday-birthday-celebration-woolly-mammoth__fb30303e2c",
+        "holiday__holiday-christmas-plushie-prehistoric-woolly-mammoth-family__2d3480db77",
+        "holiday__holiday-christmas-prehistoric-woolly-mammoth__85126ae777",
+        "holiday__holiday-halloween-costume-plushie-prehistoric-woolly-mammoth-family__dee76f3f72"
+      ],
+      "warningFlagsPreservedInternally": true,
+      "selectionRule": "deterministic Round 2 long-tail selection from runtime asset titles and filenames"
+    },
+    {
+      "hubId": "hub_saber_toothed_tiger",
+      "slug": "saber-toothed-tiger",
+      "title": "Saber Toothed Tiger Coloring Pages",
+      "assetCount": 13,
+      "assetIds": [
+        "anime-girls__anime-girl-saber-toothed-tiger-hoodie-plushie__0df82031f8",
+        "anime-girls__anime-girl-saber-toothed-tiger-hoodie-plushie__14e1ec01ad",
+        "anime-girls__anime-girl-summoning-jutsu-saber-toothed-tiger__11270f5fc7",
+        "anime-girls__anime-girl-summoning-jutsu-saber-toothed-tiger-plushies__40d1c7a0f7",
+        "chibi__chibi-plushie-prehistoric-saber-toothed-tiger__b1b54abff8",
+        "chibi__chibi-saber-toothed-tiger__d449186160",
+        "holiday__holiday-birthday-celebration-plushie-prehistoric-saber-toothed-tiger-fam__709b072757",
+        "holiday__holiday-birthday-celebration-saber-toothed-tiger__4e4755b959",
+        "holiday__holiday-christmas-plushie-prehistoric-saber-toothed-tiger-family__fb7c518c4d",
+        "holiday__holiday-halloween-costume-plushie-prehistoric-saber-toothed-tiger-family__e3f19d8502",
+        "mandala-geometry-patterns__mandala-geometry-patterns-plushie-prehistoric-saber-toothed-tiger__bec95ffbcc",
+        "plushie__plushie-prehistoric-saber-toothed-tiger__2e07a63ef0"
+      ],
+      "warningFlagsPreservedInternally": true,
+      "selectionRule": "deterministic Round 2 long-tail selection from runtime asset titles and filenames"
+    },
+    {
+      "hubId": "hub_magic",
+      "slug": "magic",
+      "title": "Magic Coloring Pages",
+      "assetCount": 35,
+      "assetIds": [
+        "anime-girls__anime-girl-summoning-magic-cats__be349530e6",
+        "anime-girls__anime-girl-summoning-magic-musical-sword-plushies__72066c4f84",
+        "anime-girls__anime-girl-summoning-magic-musical-swords__d3bbfaf158",
+        "chibi__chibi-dungeon-floating-magic-crystals__9806fcc6f6",
+        "chibi__chibi-dungeon-haunted-magic-sword__8d7144eff4",
+        "chibi__chibi-dungeon-magic-crystal-orb__54682316ed",
+        "chibi__chibi-dungeon-magic-crystal-staff__349438bde2",
+        "chibi__chibi-dungeon-magic-health-potion__99dae6814e",
+        "chibi__chibi-dungeon-magic-mirror-gate__21f64614e7",
+        "chibi__chibi-dungeon-magic-potion-table__5f5d85baaa",
+        "chibi__chibi-dungeon-magic-scrolls__b3f3c88ca4",
+        "chibi__chibi-dungeon-wizard-and-magic-book__674b4fb637"
+      ],
+      "warningFlagsPreservedInternally": true,
+      "selectionRule": "deterministic Round 2 long-tail selection from runtime asset titles and filenames"
+    },
+    {
+      "hubId": "hub_ankylosaurus",
+      "slug": "ankylosaurus",
+      "title": "Ankylosaurus Coloring Pages",
+      "assetCount": 11,
+      "assetIds": [
+        "anime-girls__anime-girl-ankylosaurus-hoodie-plushie__c819919e77",
+        "anime-girls__anime-girl-ankylosaurus-hoodie-plushie__eb8de86d73",
+        "chibi__chibi-plushie-prehistoric-ankylosaurus__3a15949a44",
+        "holiday__holiday-birthday-celebration-plushie-prehistoric-ankylosaurus-family__440c9a2924",
+        "holiday__holiday-christmas-plushie-prehistoric-ankylosaurus-family__d45213567d",
+        "holiday__holiday-christmas-prehistoric-ankylosaurus__6f72d21d58",
+        "holiday__holiday-halloween-costume-plushie-prehistoric-ankylosaurus-family__d3a39e2f32",
+        "mandala-geometry-patterns__mandala-geometry-patterns-plushie-prehistoric-ankylosaurus__bae744a23b",
+        "plushie__plushie-prehistoric-ankylosaurus__09cacc6e89",
+        "plushie__plushie-prehistoric-ankylosaurus-family__ab128ccabe",
+        "dinosaurs__prehistoric-ankylosaurus__7ab6597726"
+      ],
+      "warningFlagsPreservedInternally": true,
+      "selectionRule": "deterministic Round 2 long-tail selection from runtime asset titles and filenames"
+    },
+    {
+      "hubId": "hub_trick_or_treat",
+      "slug": "trick-or-treat",
+      "title": "Trick or Treat Coloring Pages",
+      "assetCount": 11,
+      "assetIds": [
+        "chibi__chibi-holiday-halloween-trick-or-treat-children-with-pumpkin-bags-colori__abe00661e0",
+        "chibi__chibi-holiday-halloween-trick-or-treat-dog-in-cute-costume-coloring-page__79fa5d8c2d",
+        "chibi__chibi-holiday-halloween-trick-or-treat-doorstep-with-carved-pumpkins-col__764a39620c",
+        "chibi__chibi-holiday-halloween-trick-or-treat-front-porch-decorated-coloring-pa__aad2950ba7",
+        "chibi__chibi-holiday-halloween-trick-or-treat-walkway-lined-with-lanterns-color__604d716265",
+        "chibi__chibi-holiday-halloween-zombie-with-torn-trick-or-treat-bag-coloring-pag__1862dece82",
+        "holiday__holiday-halloween-trick-or-treat-dog-in-cute-costume-coloring-page__1914e85657",
+        "holiday__holiday-halloween-trick-or-treat-front-porch-decorated-coloring-page__92e42d44a8",
+        "holiday__holiday-halloween-trick-or-treat-kids-in-costumes-coloring-page__00504a7b54",
+        "holiday__holiday-halloween-trick-or-treat-walkway-lined-with-lanterns-coloring-pa__ac8d74f0a9",
+        "holiday__holiday-halloween-trick-or-treat-with-lanterns-coloring-page__0b0a06368b"
+      ],
+      "warningFlagsPreservedInternally": true,
+      "selectionRule": "deterministic Round 2 long-tail selection from runtime asset titles and filenames"
+    },
+    {
+      "hubId": "hub_lily",
+      "slug": "lily",
+      "title": "Lily Coloring Pages",
+      "assetCount": 14,
+      "assetIds": [
+        "chibi__chibi-flowers-calla-lily__94920a8fca",
+        "chibi__chibi-flowers-calla-lily-kawaii__82a3b3f4e3",
+        "chibi__chibi-flowers-kawaii-calla-lily__748201306b",
+        "chibi__chibi-flowers-lily__551499878f",
+        "chibi__chibi-flowers-lily-kawaii__aed3de2c3c",
+        "flowers__flowers-calla-lily__c2b3044292",
+        "flowers__flowers-lily__840952043c",
+        "flowers__flowers-water-lily__9c55c14242",
+        "indoor-plants__indoor-plants-peace-lily__01c9f71c71",
+        "indoor-plants__indoor-plants-peace-lily-domino__085271dfa2",
+        "indoor-plants__indoor-plants-peace-lily-sensation__02c20ab15e",
+        "mandala-geometry-patterns__mandala-geometry-patterns-flowers-calla-lily__ab773dc0f6"
+      ],
+      "warningFlagsPreservedInternally": true,
+      "selectionRule": "deterministic Round 2 long-tail selection from runtime asset titles and filenames"
+    },
+    {
+      "hubId": "hub_forget_me_not",
+      "slug": "forget-me-not",
+      "title": "Forget-Me-Not Coloring Pages",
+      "assetCount": 6,
+      "assetIds": [
+        "chibi__chibi-flowers-forget-me-not__bc7c2e01c7",
+        "chibi__chibi-flowers-forget-me-not-kawaii__7f1650e53a",
+        "chibi__chibi-flowers-kawaii-forget-me-not__b6c86d0b57",
+        "flowers__flowers-forget-me-not__79ceb6c0d3",
+        "flowers__flowers-forget-me-not-dragon__65213a584e",
+        "flowers__flowers-spell-book-featuring-forget-me-not-ingredient__99d0d94f99"
+      ],
+      "warningFlagsPreservedInternally": true,
+      "selectionRule": "deterministic Round 2 long-tail selection from runtime asset titles and filenames"
+    },
+    {
+      "hubId": "hub_mosasaurus",
+      "slug": "mosasaurus",
+      "title": "Mosasaurus Coloring Pages",
+      "assetCount": 9,
+      "assetIds": [
+        "chibi__chibi-plushie-prehistoric-mosasaurus__e7c98f3020",
+        "holiday__holiday-birthday-celebration-plushie-prehistoric-mosasaurus-family__dc3b8890cd",
+        "holiday__holiday-christmas-plushie-prehistoric-mosasaurus-family__4fa47852fb",
+        "holiday__holiday-christmas-prehistoric-mosasaurus__180e1cd4fc",
+        "holiday__holiday-halloween-costume-plushie-prehistoric-mosasaurus-family__f0b8aabeee",
+        "mandala-geometry-patterns__mandala-geometry-patterns-plushie-prehistoric-mosasaurus__079e399e24",
+        "plushie__plushie-prehistoric-mosasaurus__01b25e6877",
+        "plushie__plushie-prehistoric-mosasaurus-family__2e21ed9326",
+        "dinosaurs__prehistoric-mosasaurus__08d7ae3d1a"
+      ],
+      "warningFlagsPreservedInternally": true,
+      "selectionRule": "deterministic Round 2 long-tail selection from runtime asset titles and filenames"
+    },
+    {
+      "hubId": "hub_plesiosaurus",
+      "slug": "plesiosaurus",
+      "title": "Plesiosaurus Coloring Pages",
+      "assetCount": 9,
+      "assetIds": [
+        "chibi__chibi-plushie-prehistoric-plesiosaurus__ea6db596f6",
+        "holiday__holiday-birthday-celebration-plushie-prehistoric-plesiosaurus-family__364483705b",
+        "holiday__holiday-christmas-plushie-prehistoric-plesiosaurus-family__e47f78748d",
+        "holiday__holiday-christmas-prehistoric-plesiosaurus__9ea370264a",
+        "holiday__holiday-halloween-costume-plushie-prehistoric-plesiosaurus-family__21badd2723",
+        "mandala-geometry-patterns__mandala-geometry-patterns-plushie-prehistoric-plesiosaurus__260a1c9a0d",
+        "plushie__plushie-prehistoric-plesiosaurus__647139d0a1",
+        "plushie__plushie-prehistoric-plesiosaurus-family__e72b02f5ea",
+        "dinosaurs__prehistoric-plesiosaurus__9f0fa50b11"
+      ],
+      "warningFlagsPreservedInternally": true,
+      "selectionRule": "deterministic Round 2 long-tail selection from runtime asset titles and filenames"
+    },
+    {
+      "hubId": "hub_pterodactyl",
+      "slug": "pterodactyl",
+      "title": "Pterodactyl Coloring Pages",
+      "assetCount": 9,
+      "assetIds": [
+        "anime-girls__anime-girl-pterodactyl-hoodie-plushie__2b4315b24b",
+        "anime-girls__anime-girl-pterodactyl-hoodie-plushie__6b078f0b47",
+        "chibi__chibi-plushie-prehistoric-pterodactyl__c0e1f19702",
+        "holiday__holiday-birthday-celebration-plushie-prehistoric-pterodactyl-family__f728c58c65",
+        "holiday__holiday-christmas-plushie-prehistoric-pterodactyl-family__f7e60e81bf",
+        "holiday__holiday-halloween-costume-plushie-prehistoric-pterodactyl-family__c76a552b77",
+        "mandala-geometry-patterns__mandala-geometry-patterns-plushie-prehistoric-pterodactyl__ace6e4cc4b",
+        "plushie__plushie-prehistoric-pterodactyl__02b477d371",
+        "plushie__plushie-prehistoric-pterodactyl-family__60e25e5c60"
+      ],
+      "warningFlagsPreservedInternally": true,
+      "selectionRule": "deterministic Round 2 long-tail selection from runtime asset titles and filenames"
+    },
+    {
+      "hubId": "hub_iguanodon",
+      "slug": "iguanodon",
+      "title": "Iguanodon Coloring Pages",
+      "assetCount": 8,
+      "assetIds": [
+        "chibi__chibi-plushie-prehistoric-iguanodon__d835d9df5c",
+        "holiday__holiday-birthday-celebration-plushie-prehistoric-iguanodon-family__ef97a70766",
+        "holiday__holiday-christmas-plushie-prehistoric-iguanodon-family__f9fc273f22",
+        "holiday__holiday-halloween-costume-plushie-prehistoric-iguanodon-family__d581ec8658",
+        "mandala-geometry-patterns__mandala-geometry-patterns-plushie-prehistoric-iguanodon__03899dedf5",
+        "plushie__plushie-prehistoric-iguanodon__e7b84e5ffd",
+        "plushie__plushie-prehistoric-iguanodon-family__c4187c932f",
+        "dinosaurs__prehistoric-iguanodon__2a3dda4f6c"
+      ],
+      "warningFlagsPreservedInternally": true,
+      "selectionRule": "deterministic Round 2 long-tail selection from runtime asset titles and filenames"
+    },
+    {
+      "hubId": "hub_bulldog",
+      "slug": "bulldog",
+      "title": "Bulldog Coloring Pages",
+      "assetCount": 8,
+      "assetIds": [
+        "chibi__chibi-animals-pets-dogs-bulldog__82dca02cef",
+        "chibi__chibi-animals-pets-dogs-french-bulldog__f72835a638",
+        "dogs__dogs-bulldog__05faf7f8dd",
+        "dogs__dogs-french-bulldog__2814a49432",
+        "holiday__holiday-christmas-dogs-bulldog__218220f35a",
+        "holiday__holiday-christmas-dogs-french-bulldog__5b74b7ee7c",
+        "mandala-geometry-patterns__mandala-geometry-patterns-dogs-bulldog__e65568f719",
+        "mandala-geometry-patterns__mandala-geometry-patterns-dogs-french-bulldog__1d903fe801"
+      ],
+      "warningFlagsPreservedInternally": true,
+      "selectionRule": "deterministic Round 2 long-tail selection from runtime asset titles and filenames"
+    },
+    {
+      "hubId": "hub_collie",
+      "slug": "collie",
+      "title": "Collie Coloring Pages",
+      "assetCount": 8,
+      "assetIds": [
+        "chibi__chibi-animals-pets-dogs-border-collie__d66dc03111",
+        "chibi__chibi-animals-pets-dogs-collie__5980fb6203",
+        "dogs__dogs-border-collie__901304e7d9",
+        "dogs__dogs-border-collie-playing__ff795b9bb4",
+        "dogs__dogs-collie__3e1963afc2",
+        "holiday__holiday-christmas-dogs-border-collie__2c2410c8e7",
+        "mandala-geometry-patterns__mandala-geometry-patterns-dogs-border-collie__211cb87a10",
+        "mandala-geometry-patterns__mandala-geometry-patterns-dogs-collie__45cf36f706"
+      ],
+      "warningFlagsPreservedInternally": true,
+      "selectionRule": "deterministic Round 2 long-tail selection from runtime asset titles and filenames"
+    },
+    {
+      "hubId": "hub_cookie",
+      "slug": "cookie",
+      "title": "Cookie Coloring Pages",
+      "assetCount": 17,
+      "assetIds": [
+        "chibi__chibi-plushie-cookie-character__cbbcab378b",
+        "christmas__holiday-christmas-gingerbread-cookie-decorating-scene-coloring-page__19a6c72dea",
+        "christmas__holiday-christmas-gingerbread-cookie-family-in-snow-scene-coloring-page__5e8fe7c930",
+        "christmas__holiday-christmas-holiday-cookie-decorating-coloring-page__2dd968539b",
+        "christmas__holiday-christmas-holiday-cookie-decorating-with-kids-coloring-page__f5f66ac510",
+        "christmas__holiday-christmas-mrs-claus-baking-holiday-cookies-coloring-page__4843cecb87",
+        "mandala-geometry-patterns__mandala-geometry-patterns-bakery-animal-shaped-cookies__02c4796fed",
+        "mandala-geometry-patterns__mandala-geometry-patterns-bakery-baking-sheet-full-of-cookies__5f372cefe8",
+        "mandala-geometry-patterns__mandala-geometry-patterns-bakery-candy-cane-cookies__b08ddaca23",
+        "mandala-geometry-patterns__mandala-geometry-patterns-bakery-chocolate-chip-cookie__4c88ab37fb",
+        "mandala-geometry-patterns__mandala-geometry-patterns-bakery-cookie-decorating__ff7e1640d4",
+        "mandala-geometry-patterns__mandala-geometry-patterns-bakery-cookie-jar__abfddaff0c"
+      ],
+      "warningFlagsPreservedInternally": true,
+      "selectionRule": "deterministic Round 2 long-tail selection from runtime asset titles and filenames"
+    },
+    {
+      "hubId": "hub_daisy",
+      "slug": "daisy",
+      "title": "Daisy Coloring Pages",
+      "assetCount": 10,
+      "assetIds": [
+        "chibi__chibi-flowers-daisy__4e83fb3127",
+        "chibi__chibi-flowers-daisy-kawaii__94c5961825",
+        "chibi__chibi-flowers-paper-daisy__735e683ad4",
+        "chibi__chibi-flowers-paper-daisy-kawaii__14c5b1714c",
+        "flowers__flowers-daisy__6cbc96e281",
+        "flowers__flowers-paper-daisy__72442e2738",
+        "indoor-plants__indoor-plants-gerbera-daisy__591cf8e859",
+        "insects__insects-ladybug-on-daisy__5a620e7456",
+        "mandala-geometry-patterns__mandala-geometry-patterns-flowers-daisy__538ea20938",
+        "mandala-geometry-patterns__mandala-geometry-patterns-flowers-paper-daisy__13f3be6617"
+      ],
+      "warningFlagsPreservedInternally": true,
+      "selectionRule": "deterministic Round 2 long-tail selection from runtime asset titles and filenames"
+    },
+    {
+      "hubId": "hub_pteranodon",
+      "slug": "pteranodon",
+      "title": "Pteranodon Coloring Pages",
+      "assetCount": 6,
+      "assetIds": [
+        "anime-girls__anime-girl-summoning-jutsu-baby-pteranodon-plushies__b8eca7a99c",
+        "anime-girls__anime-girl-summoning-jutsu-pteranodon__77b47a14af",
+        "anime-girls__anime-girl-summoning-jutsu-pteranodon-plushies__e8beaf371a",
+        "chibi__chibi-pteranodon__4a6b9cc388",
+        "mandala-geometry-patterns__mandala-geometry-patterns-prehistoric-pteranodon__d590ce1142",
+        "dinosaurs__prehistoric-pteranodon__c8a7e33ffb"
+      ],
+      "warningFlagsPreservedInternally": true,
+      "selectionRule": "deterministic Round 2 long-tail selection from runtime asset titles and filenames"
+    },
+    {
+      "hubId": "hub_nigiri",
+      "slug": "nigiri",
+      "title": "Nigiri Coloring Pages",
+      "assetCount": 16,
+      "assetIds": [
+        "mandala-geometry-patterns__mandala-geometry-patterns-sushi-aburi-ebi-nigiri__e6a7198dae",
+        "mandala-geometry-patterns__mandala-geometry-patterns-sushi-aburi-salmon-nigiri__6009e02cb8",
+        "mandala-geometry-patterns__mandala-geometry-patterns-sushi-aburi-tuna-nigiri__9b61ce7e48",
+        "mandala-geometry-patterns__mandala-geometry-patterns-sushi-avocado-nigiri__288a9fc35f",
+        "mandala-geometry-patterns__mandala-geometry-patterns-sushi-chef-shaping-nigiri__27b23b7c83",
+        "mandala-geometry-patterns__mandala-geometry-patterns-sushi-crab-stick-nigiri__dc30d0670d",
+        "mandala-geometry-patterns__mandala-geometry-patterns-sushi-egg-tamago-nigiri__8f8f764ac0",
+        "mandala-geometry-patterns__mandala-geometry-patterns-sushi-nigiri-on-bamboo-leaf__eeff6e5baf",
+        "mandala-geometry-patterns__mandala-geometry-patterns-sushi-nigiri-on-lotus-leaf__8317d93647",
+        "mandala-geometry-patterns__mandala-geometry-patterns-sushi-octopus-nigiri__29d634566c",
+        "mandala-geometry-patterns__mandala-geometry-patterns-sushi-salmon-nigiri__106552eae9",
+        "mandala-geometry-patterns__mandala-geometry-patterns-sushi-scallop-nigiri__68b438d585"
+      ],
+      "warningFlagsPreservedInternally": true,
+      "selectionRule": "deterministic Round 2 long-tail selection from runtime asset titles and filenames"
+    },
+    {
+      "hubId": "hub_orchid",
+      "slug": "orchid",
+      "title": "Orchid Coloring Pages",
+      "assetCount": 9,
+      "assetIds": [
+        "chibi__chibi-flowers-orchid__8683825abb",
+        "flowers__flowers-orchid__dc56db2468",
+        "flowers__flowers-orchid-gardener__b24cab3082",
+        "indoor-plants__indoor-plants-orchid-cattleya__0a395ae9fd",
+        "indoor-plants__indoor-plants-orchid-dendrobium__da23c9ce0d",
+        "indoor-plants__indoor-plants-orchid-oncidium__ecd71eb7c8",
+        "indoor-plants__indoor-plants-orchid-phalaenopsis__bfdd444fcb",
+        "indoor-plants__indoor-plants-orchid-vanda__7f08260a18",
+        "mandala-geometry-patterns__mandala-geometry-patterns-flowers-orchid__3709e60faf"
+      ],
+      "warningFlagsPreservedInternally": true,
+      "selectionRule": "deterministic Round 2 long-tail selection from runtime asset titles and filenames"
+    },
+    {
+      "hubId": "hub_poppy",
+      "slug": "poppy",
+      "title": "Poppy Coloring Pages",
+      "assetCount": 7,
+      "assetIds": [
+        "chibi__chibi-flowers-iceland-poppy__c450d66a03",
+        "chibi__chibi-flowers-iceland-poppy-kawaii__66fcbf16fb",
+        "chibi__chibi-flowers-poppy__69a7927d41",
+        "chibi__chibi-flowers-poppy-kawaii__3814cae262",
+        "flowers__flowers-iceland-poppy__861b1bb59a",
+        "mandala-geometry-patterns__mandala-geometry-patterns-flowers-iceland-poppy__f252973e02",
+        "mandala-geometry-patterns__mandala-geometry-patterns-flowers-poppy__b519928155"
+      ],
+      "warningFlagsPreservedInternally": true,
+      "selectionRule": "deterministic Round 2 long-tail selection from runtime asset titles and filenames"
+    },
+    {
+      "hubId": "hub_lotus",
+      "slug": "lotus",
+      "title": "Lotus Coloring Pages",
+      "assetCount": 6,
+      "assetIds": [
+        "chibi__chibi-flowers-lotus__0d87de91bc",
+        "chibi__chibi-flowers-lotus-kawaii__0e0fa19a21",
+        "flowers__flowers-lotus__76705cae88",
+        "mandala-geometry-patterns__mandala-geometry-patterns-flowers-lotus__1e19f377e6",
+        "mandala-geometry-patterns__mandala-geometry-patterns-lotus-mandala__807eb9a8f2",
+        "mandala-geometry-patterns__mandala-geometry-patterns-sushi-nigiri-on-lotus-leaf__8317d93647"
+      ],
+      "warningFlagsPreservedInternally": true,
+      "selectionRule": "deterministic Round 2 long-tail selection from runtime asset titles and filenames"
+    },
+    {
+      "hubId": "hub_palm",
+      "slug": "palm",
+      "title": "Palm Coloring Pages",
+      "assetCount": 6,
+      "assetIds": [
+        "indoor-plants__indoor-plants-areca-palm__454f9da715",
+        "indoor-plants__indoor-plants-bamboo-palm__b182761ba2",
+        "indoor-plants__indoor-plants-kentia-palm__e494b3102f",
+        "indoor-plants__indoor-plants-majesty-palm__43fd79f00b",
+        "indoor-plants__indoor-plants-parlor-palm__bf99e09ba5",
+        "indoor-plants__indoor-plants-sago-palm__8fe29fd4ad"
+      ],
+      "warningFlagsPreservedInternally": true,
+      "selectionRule": "deterministic Round 2 long-tail selection from runtime asset titles and filenames"
+    },
+    {
+      "hubId": "hub_leprechaun",
+      "slug": "leprechaun",
+      "title": "Leprechaun Coloring Pages",
+      "assetCount": 9,
+      "assetIds": [
+        "fantasy__fantasy-creatures-leprechaun__37036955f1",
+        "mythology__mythology-leprechaun__ace28cc9ac",
+        "st-patricks-day__st-patricks-day-kids-dressed-as-leprechauns-coloring-page__fa10cf2184",
+        "st-patricks-day__st-patricks-day-leprechaun-dancing-jig-coloring-page__24da6e22e3",
+        "st-patricks-day__st-patricks-day-leprechaun-holding-shamrock-coloring-page__f607fb59c7",
+        "st-patricks-day__st-patricks-day-leprechaun-rainbow-and-gold-coloring-page__e0a5ebbce1",
+        "st-patricks-day__st-patricks-day-leprechaun-with-pot-of-gold-coloring-page__3da829fc28",
+        "st-patricks-day__st-patricks-day-pot-of-gold-guarded-by-leprechaun-coloring-page__0cac522f50",
+        "st-patricks-day__st-patricks-day-puppy-wearing-leprechaun-hat-coloring-page__16a305e6b2"
+      ],
+      "warningFlagsPreservedInternally": true,
+      "selectionRule": "deterministic Round 2 long-tail selection from runtime asset titles and filenames"
+    },
+    {
+      "hubId": "hub_salmon",
+      "slug": "salmon",
+      "title": "Salmon Coloring Pages",
+      "assetCount": 11,
+      "assetIds": [
+        "mandala-geometry-patterns__mandala-geometry-patterns-sushi-aburi-salmon-nigiri__6009e02cb8",
+        "mandala-geometry-patterns__mandala-geometry-patterns-sushi-chef-torching-aburi-salmon__5868663f6f",
+        "mandala-geometry-patterns__mandala-geometry-patterns-sushi-gunkan-sushi-salmon-roe__45d2bb243d",
+        "mandala-geometry-patterns__mandala-geometry-patterns-sushi-hand-roll-salmon__a72f6a2c5a",
+        "mandala-geometry-patterns__mandala-geometry-patterns-sushi-ikura-salmon-roe__f287d54387",
+        "mandala-geometry-patterns__mandala-geometry-patterns-sushi-onigiri-with-salmon__aded18a643",
+        "mandala-geometry-patterns__mandala-geometry-patterns-sushi-salmon-maki__99d9b50ecc",
+        "mandala-geometry-patterns__mandala-geometry-patterns-sushi-salmon-nigiri__106552eae9",
+        "mandala-geometry-patterns__mandala-geometry-patterns-sushi-salmon-skin-roll__f6a7d1bd6d",
+        "mandala-geometry-patterns__mandala-geometry-patterns-sushi-sashimi-salmon-roll-tuna__b8a5051892",
+        "sea-life__sea-life-orca-hunting-salmon__d2895d5187"
+      ],
+      "warningFlagsPreservedInternally": true,
+      "selectionRule": "deterministic Round 2 long-tail selection from runtime asset titles and filenames"
+    },
+    {
+      "hubId": "hub_gingerbread",
+      "slug": "gingerbread",
+      "title": "Gingerbread Coloring Pages",
+      "assetCount": 10,
+      "assetIds": [
+        "chibi__chibi-plushie-gingerbread-character__31a1a21871",
+        "christmas__christmas-holiday-gingerbread-house__2e315f039b",
+        "christmas__holiday-christmas-gingerbread-city-village-with-candy-streets-coloring-p__c3fff62b55",
+        "christmas__holiday-christmas-gingerbread-cookie-decorating-scene-coloring-page__19a6c72dea",
+        "christmas__holiday-christmas-gingerbread-cookie-family-in-snow-scene-coloring-page__5e8fe7c930",
+        "christmas__holiday-christmas-gingerbread-house-decorated-with-candy-coloring-page__4648bc3409",
+        "mandala-geometry-patterns__mandala-geometry-patterns-bakery-gingerbread-cookie__a800891e54",
+        "mandala-geometry-patterns__mandala-geometry-patterns-bakery-gingerbread-house__eb26483f58",
+        "mandala-geometry-patterns__mandala-geometry-patterns-bakery-gingerbread-men-decorating__0a023b7919",
+        "mandala-geometry-patterns__mandala-geometry-patterns-plushie-gingerbread-character__783e807997"
+      ],
+      "warningFlagsPreservedInternally": true,
+      "selectionRule": "deterministic Round 2 long-tail selection from runtime asset titles and filenames"
     }
   ]
 }

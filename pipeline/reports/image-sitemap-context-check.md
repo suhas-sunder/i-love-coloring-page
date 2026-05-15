@@ -12,8 +12,8 @@
 | runtimeGeneratedDataExists | true |
 | runtimeAvailableRecords | 6352 |
 | deferredManualReviewRecords | 205 |
-| runtimeIndexableHubs | 131 |
-| regularSitemapLocCountBeforeRound | 138 |
+| runtimeIndexableHubs | 163 |
+| regularSitemapLocCountBeforeRound | 170 |
 | siteUrl | https://www.ilovecoloringpage.com |
 | publicAssetBaseUrl | https://assets.ilovecoloringpage.com/coloring-pages |
 | contactEmail | admin@ilovecoloringpage.com |
@@ -21,7 +21,7 @@
 | publicDownloadFormats | PNG, JPG, WebP |
 | liveAdsenseCodePresent | false |
 | openGraphImageGenerationPresent | false |
-| jsonLdExpansionDeferred | true |
+| jsonLdExpansionDeferred | false |
 | imageSitemapPresentBeforeRound | false |
 | currentImageSitemapFilePresent | true |
 

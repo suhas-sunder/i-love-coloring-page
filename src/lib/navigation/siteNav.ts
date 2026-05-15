@@ -126,7 +126,7 @@ function getHubGroup(slug: string) {
     return "Popular";
   }
 
-  if (/(christmas|halloween|easter|thanksgiving|valentine|seasonal|holiday|holidays|summer|winter|spring|autumn|fall|birthday|pumpkin|santa|reindeer|st-patricks)/.test(slug)) {
+  if (/(christmas|halloween|halloween-costume|easter|thanksgiving|valentine|seasonal|holiday|holidays|summer|winter|spring|autumn|fall|birthday|pumpkin|santa|reindeer|st-patricks|trick-or-treat|leprechaun|gingerbread)/.test(slug)) {
     return "Seasonal";
   }
 
@@ -138,11 +138,11 @@ function getHubGroup(slug: string) {
     return "Kids & Easy";
   }
 
-  if (/(bakery|cake|food|sushi|cute|kawaii|plushie|playing-card|chess)/.test(slug)) {
+  if (/(bakery|cake|cupcake|cookie|food|sushi|nigiri|salmon|cute|kawaii|plushie|playing-card|chess|gingerbread)/.test(slug)) {
     return "Food & Cute Objects";
   }
 
-  if (/(dinosaur|prehistoric|brachiosaurus|diplodocus|stegosaurus|triceratops|velociraptor|t-rex|mammoth|megalodon)/.test(slug)) {
+  if (/(dinosaur|prehistoric|ankylosaurus|brachiosaurus|diplodocus|iguanodon|mosasaurus|plesiosaurus|pteranodon|pterodactyl|stegosaurus|triceratops|velociraptor|t-rex|mammoth|saber-toothed|megalodon|dodo)/.test(slug)) {
     return "Dinosaurs & Prehistoric";
   }
 
@@ -150,7 +150,7 @@ function getHubGroup(slug: string) {
     return "Fantasy & Characters";
   }
 
-  if (/(animal|bird|cat|dog|horse|fish|sea|ocean|plant|flower|nature|farm|forest|butterfly|beetle|insect|reptile|mammal|bat|bear|bee|cow|crab|deer|dolphin|duck|eagle|elephant|fox|garden|giraffe|hedgehog|hippo|koala|lion|lizard|llama|monkey|moose|mushroom|octopus|otter|owl|panda|penguin|rabbit|rose|shark|sheep|sloth|snake|spider|tiger|tree|turtle|whale|wolf|zebra)/.test(slug)) {
+  if (/(animal|bird|cat|dog|terrier|bulldog|collie|horse|fish|sea|ocean|plant|flower|lily|daisy|orchid|poppy|lotus|forget-me-not|bamboo|palm|nature|farm|forest|butterfly|beetle|insect|reptile|mammal|bat|bear|bee|cow|crab|deer|dolphin|duck|eagle|elephant|fox|garden|giraffe|hedgehog|hippo|koala|lion|lizard|llama|monkey|moose|mushroom|octopus|otter|owl|panda|penguin|rabbit|rose|shark|sheep|sloth|snake|spider|tiger|tree|turtle|whale|wolf|zebra)/.test(slug)) {
     return "Animals & Nature";
   }
 

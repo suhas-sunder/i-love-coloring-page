@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-13T22:53:14.447Z",
-  "runId": "runtime-switch-routes+long-tail+long-tail+long-tail+long-tail+long-tail+long-tail",
+  "generatedAt": "2026-05-14T23:46:55.619Z",
+  "runId": "runtime-switch-routes+long-tail+long-tail+long-tail+long-tail+long-tail+long-tail+long-tail-round-2",
   "source": "src/generated/coloring/routes.json",
   "routePattern": "/coloring-pages/[hubSlug]",
   "rootRoute": "/coloring-pages",
@@ -37,6 +37,15 @@
       "assetCount": 905
     },
     {
+      "hubId": "hub_ankylosaurus",
+      "slug": "ankylosaurus",
+      "path": "/coloring-pages/ankylosaurus",
+      "title": "Ankylosaurus Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 11
+    },
+    {
       "hubId": "hub_bakery",
       "slug": "bakery",
       "path": "/coloring-pages/bakery",
@@ -44,6 +53,15 @@
       "indexable": true,
       "sitemap": true,
       "assetCount": 93
+    },
+    {
+      "hubId": "hub_bamboo",
+      "slug": "bamboo",
+      "path": "/coloring-pages/bamboo",
+      "title": "Bamboo Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 7
     },
     {
       "hubId": "hub_bats",
@@ -100,6 +118,15 @@
       "assetCount": 211
     },
     {
+      "hubId": "hub_birthday_celebration",
+      "slug": "birthday-celebration",
+      "path": "/coloring-pages/birthday-celebration",
+      "title": "Birthday Celebration Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 190
+    },
+    {
       "hubId": "hub_brachiosaurus",
       "slug": "brachiosaurus",
       "path": "/coloring-pages/brachiosaurus",
@@ -125,6 +152,15 @@
       "indexable": true,
       "sitemap": true,
       "assetCount": 156
+    },
+    {
+      "hubId": "hub_bulldog",
+      "slug": "bulldog",
+      "path": "/coloring-pages/bulldog",
+      "title": "Bulldog Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 8
     },
     {
       "hubId": "hub_butterflies",
@@ -226,6 +262,33 @@
       "assetCount": 36
     },
     {
+      "hubId": "hub_christmas_plushie",
+      "slug": "christmas-plushie",
+      "path": "/coloring-pages/christmas-plushie",
+      "title": "Christmas Plushies Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 183
+    },
+    {
+      "hubId": "hub_collie",
+      "slug": "collie",
+      "path": "/coloring-pages/collie",
+      "title": "Collie Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 8
+    },
+    {
+      "hubId": "hub_cookie",
+      "slug": "cookie",
+      "path": "/coloring-pages/cookie",
+      "title": "Cookie Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 17
+    },
+    {
       "hubId": "hub_cows",
       "slug": "cows",
       "path": "/coloring-pages/cows",
@@ -251,6 +314,15 @@
       "indexable": true,
       "sitemap": true,
       "assetCount": 375
+    },
+    {
+      "hubId": "hub_daisy",
+      "slug": "daisy",
+      "path": "/coloring-pages/daisy",
+      "title": "Daisy Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 10
     },
     {
       "hubId": "hub_deer",
@@ -287,6 +359,15 @@
       "indexable": true,
       "sitemap": true,
       "assetCount": 16
+    },
+    {
+      "hubId": "hub_dodo",
+      "slug": "dodo",
+      "path": "/coloring-pages/dodo",
+      "title": "Dodo Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 11
     },
     {
       "hubId": "hub_dogs",
@@ -442,6 +523,15 @@
       "assetCount": 72
     },
     {
+      "hubId": "hub_forget_me_not",
+      "slug": "forget-me-not",
+      "path": "/coloring-pages/forget-me-not",
+      "title": "Forget-Me-Not Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 6
+    },
+    {
       "hubId": "hub_foxes",
       "slug": "foxes",
       "path": "/coloring-pages/foxes",
@@ -487,6 +577,15 @@
       "assetCount": 85
     },
     {
+      "hubId": "hub_gingerbread",
+      "slug": "gingerbread",
+      "path": "/coloring-pages/gingerbread",
+      "title": "Gingerbread Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 10
+    },
+    {
       "hubId": "hub_giraffes",
       "slug": "giraffes",
       "path": "/coloring-pages/giraffes",
@@ -512,6 +611,15 @@
       "indexable": true,
       "sitemap": true,
       "assetCount": 305
+    },
+    {
+      "hubId": "hub_halloween_costume",
+      "slug": "halloween-costume",
+      "path": "/coloring-pages/halloween-costume",
+      "title": "Halloween Costumes Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 161
     },
     {
       "hubId": "hub_hedgehogs",
@@ -568,6 +676,15 @@
       "assetCount": 15
     },
     {
+      "hubId": "hub_iguanodon",
+      "slug": "iguanodon",
+      "path": "/coloring-pages/iguanodon",
+      "title": "Iguanodon Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 8
+    },
+    {
       "hubId": "hub_indoor_plants",
       "slug": "indoor-plants",
       "path": "/coloring-pages/indoor-plants",
@@ -613,6 +730,24 @@
       "assetCount": 22
     },
     {
+      "hubId": "hub_leprechaun",
+      "slug": "leprechaun",
+      "path": "/coloring-pages/leprechaun",
+      "title": "Leprechaun Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 9
+    },
+    {
+      "hubId": "hub_lily",
+      "slug": "lily",
+      "path": "/coloring-pages/lily",
+      "title": "Lily Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 14
+    },
+    {
       "hubId": "hub_lions",
       "slug": "lions",
       "path": "/coloring-pages/lions",
@@ -638,6 +773,24 @@
       "indexable": true,
       "sitemap": true,
       "assetCount": 15
+    },
+    {
+      "hubId": "hub_lotus",
+      "slug": "lotus",
+      "path": "/coloring-pages/lotus",
+      "title": "Lotus Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 6
+    },
+    {
+      "hubId": "hub_magic",
+      "slug": "magic",
+      "path": "/coloring-pages/magic",
+      "title": "Magic Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 35
     },
     {
       "hubId": "hub_mammoths",
@@ -703,6 +856,15 @@
       "assetCount": 18
     },
     {
+      "hubId": "hub_mosasaurus",
+      "slug": "mosasaurus",
+      "path": "/coloring-pages/mosasaurus",
+      "title": "Mosasaurus Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 9
+    },
+    {
       "hubId": "hub_mushrooms",
       "slug": "mushrooms",
       "path": "/coloring-pages/mushrooms",
@@ -719,6 +881,15 @@
       "indexable": true,
       "sitemap": true,
       "assetCount": 227
+    },
+    {
+      "hubId": "hub_nigiri",
+      "slug": "nigiri",
+      "path": "/coloring-pages/nigiri",
+      "title": "Nigiri Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 16
     },
     {
       "hubId": "hub_ocean",
@@ -739,6 +910,15 @@
       "assetCount": 20
     },
     {
+      "hubId": "hub_orchid",
+      "slug": "orchid",
+      "path": "/coloring-pages/orchid",
+      "title": "Orchid Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 9
+    },
+    {
       "hubId": "hub_otters",
       "slug": "otters",
       "path": "/coloring-pages/otters",
@@ -755,6 +935,15 @@
       "indexable": true,
       "sitemap": true,
       "assetCount": 28
+    },
+    {
+      "hubId": "hub_palm",
+      "slug": "palm",
+      "path": "/coloring-pages/palm",
+      "title": "Palm Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 6
     },
     {
       "hubId": "hub_pandas",
@@ -818,6 +1007,15 @@
       "indexable": true,
       "sitemap": true,
       "assetCount": 12
+    },
+    {
+      "hubId": "hub_plesiosaurus",
+      "slug": "plesiosaurus",
+      "path": "/coloring-pages/plesiosaurus",
+      "title": "Plesiosaurus Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 9
     },
     {
       "hubId": "hub_plushie_animals",
@@ -892,6 +1090,15 @@
       "assetCount": 1704
     },
     {
+      "hubId": "hub_poppy",
+      "slug": "poppy",
+      "path": "/coloring-pages/poppy",
+      "title": "Poppy Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 7
+    },
+    {
       "hubId": "hub_prehistoric_animals",
       "slug": "prehistoric-animals",
       "path": "/coloring-pages/prehistoric-animals",
@@ -899,6 +1106,24 @@
       "indexable": true,
       "sitemap": true,
       "assetCount": 220
+    },
+    {
+      "hubId": "hub_pteranodon",
+      "slug": "pteranodon",
+      "path": "/coloring-pages/pteranodon",
+      "title": "Pteranodon Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 6
+    },
+    {
+      "hubId": "hub_pterodactyl",
+      "slug": "pterodactyl",
+      "path": "/coloring-pages/pterodactyl",
+      "title": "Pterodactyl Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 9
     },
     {
       "hubId": "hub_pumpkins",
@@ -953,6 +1178,24 @@
       "indexable": true,
       "sitemap": true,
       "assetCount": 9
+    },
+    {
+      "hubId": "hub_saber_toothed_tiger",
+      "slug": "saber-toothed-tiger",
+      "path": "/coloring-pages/saber-toothed-tiger",
+      "title": "Saber Toothed Tiger Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 13
+    },
+    {
+      "hubId": "hub_salmon",
+      "slug": "salmon",
+      "path": "/coloring-pages/salmon",
+      "title": "Salmon Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 11
     },
     {
       "hubId": "hub_santa",
@@ -1027,6 +1270,15 @@
       "assetCount": 20
     },
     {
+      "hubId": "hub_steam_train",
+      "slug": "steam-train",
+      "path": "/coloring-pages/steam-train",
+      "title": "Steam Train Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 15
+    },
+    {
       "hubId": "hub_stegosaurus",
       "slug": "stegosaurus",
       "path": "/coloring-pages/stegosaurus",
@@ -1034,6 +1286,15 @@
       "indexable": true,
       "sitemap": true,
       "assetCount": 17
+    },
+    {
+      "hubId": "hub_summoning",
+      "slug": "summoning",
+      "path": "/coloring-pages/summoning",
+      "title": "Summoning Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 336
     },
     {
       "hubId": "hub_sushi",
@@ -1052,6 +1313,15 @@
       "indexable": true,
       "sitemap": true,
       "assetCount": 18
+    },
+    {
+      "hubId": "hub_terrier",
+      "slug": "terrier",
+      "path": "/coloring-pages/terrier",
+      "title": "Terrier Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 29
     },
     {
       "hubId": "hub_tigers",
@@ -1088,6 +1358,15 @@
       "indexable": true,
       "sitemap": true,
       "assetCount": 22
+    },
+    {
+      "hubId": "hub_trick_or_treat",
+      "slug": "trick-or-treat",
+      "path": "/coloring-pages/trick-or-treat",
+      "title": "Trick or Treat Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 11
     },
     {
       "hubId": "hub_turtles",
@@ -1162,6 +1441,15 @@
       "assetCount": 45
     },
     {
+      "hubId": "hub_woolly_mammoth",
+      "slug": "woolly-mammoth",
+      "path": "/coloring-pages/woolly-mammoth",
+      "title": "Woolly Mammoth Coloring Pages",
+      "indexable": true,
+      "sitemap": true,
+      "assetCount": 19
+    },
+    {
       "hubId": "hub_world_landmarks",
       "slug": "world-landmarks",
       "path": "/coloring-pages/world-landmarks",
@@ -1188,5 +1476,10 @@
       "sitemap": true,
       "assetCount": 19
     }
-  ]
+  ],
+  "summary": {
+    "routeCount": 163,
+    "noPerImageRoutes": true,
+    "longTailRound2PromotedRoutes": 32
+  }
 }

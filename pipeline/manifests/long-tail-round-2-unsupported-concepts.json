@@ -1,0 +1,541 @@
+{
+  "generatedAt": "2026-05-14T23:46:55.619Z",
+  "runId": "long-tail-round-2-unsupported-concepts",
+  "summary": {
+    "conceptsReviewed": 13,
+    "animeBoysPromoted": false,
+    "animeBoysWasNotPromoted": true,
+    "unsupportedRequestedConceptsCount": 4
+  },
+  "concepts": [
+    {
+      "concept": "anime boys",
+      "supported": false,
+      "evidenceCount": 0,
+      "exampleAssets": [],
+      "promotedRoute": null,
+      "reason": "anime boys was not promoted because runtime assets did not contain sufficient clear anime boy, anime boys, male anime, or boy character evidence."
+    },
+    {
+      "concept": "anime magic",
+      "supported": false,
+      "evidenceCount": 0,
+      "exampleAssets": [],
+      "promotedRoute": null,
+      "reason": "anime magic was not promoted because the evidence count was below the required threshold or the wording was not clearly present in runtime assets."
+    },
+    {
+      "concept": "anime summoning",
+      "supported": false,
+      "evidenceCount": 0,
+      "exampleAssets": [],
+      "promotedRoute": null,
+      "reason": "anime summoning was not promoted because the evidence count was below the required threshold or the wording was not clearly present in runtime assets."
+    },
+    {
+      "concept": "summoning magic",
+      "supported": false,
+      "evidenceCount": 3,
+      "exampleAssets": [
+        {
+          "assetId": "anime-girls__anime-girl-summoning-magic-cats__be349530e6",
+          "title": "Anime Girl Summoning Magic Cats",
+          "filename": "anime-girl-summoning-magic-cats"
+        },
+        {
+          "assetId": "anime-girls__anime-girl-summoning-magic-musical-sword-plushies__72066c4f84",
+          "title": "Anime Girl Summoning Magic Musical Sword Plushies",
+          "filename": "anime-girl-summoning-magic-musical-sword-plushies"
+        },
+        {
+          "assetId": "anime-girls__anime-girl-summoning-magic-musical-swords__d3bbfaf158",
+          "title": "Anime Girl Summoning Magic Musical Swords",
+          "filename": "anime-girl-summoning-magic-musical-swords"
+        }
+      ],
+      "promotedRoute": null,
+      "reason": "summoning magic was not promoted because the evidence count was below the required threshold or the wording was not clearly present in runtime assets."
+    },
+    {
+      "concept": "dog breeds",
+      "supported": true,
+      "evidenceCount": 55,
+      "exampleAssets": [
+        {
+          "assetId": "chibi__chibi-animals-pets-dogs-american-staffordshire-terrier__0d5f95f4f2",
+          "title": "Chibi Animals Pets Dogs American Staffordshire Terrier",
+          "candidate": "terrier"
+        },
+        {
+          "assetId": "chibi__chibi-animals-pets-dogs-border-terrier__43cfd795ea",
+          "title": "Chibi Animals Pets Dogs Border Terrier",
+          "candidate": "terrier"
+        },
+        {
+          "assetId": "chibi__chibi-animals-pets-dogs-bulldog__82dca02cef",
+          "title": "Chibi Animals Pets Dogs Bulldog",
+          "candidate": "bulldog"
+        },
+        {
+          "assetId": "chibi__chibi-animals-pets-dogs-french-bulldog__f72835a638",
+          "title": "Chibi Animals Pets Dogs French Bulldog",
+          "candidate": "bulldog"
+        },
+        {
+          "assetId": "chibi__chibi-animals-pets-dogs-border-collie__d66dc03111",
+          "title": "Chibi Animals Pets Dogs Border Collie",
+          "candidate": "collie"
+        },
+        {
+          "assetId": "chibi__chibi-animals-pets-dogs-collie__5980fb6203",
+          "title": "Chibi Animals Pets Dogs Collie",
+          "candidate": "collie"
+        },
+        {
+          "assetId": "chibi__chibi-animals-pets-dogs-border-collie__d66dc03111",
+          "title": "Chibi Animals Pets Dogs Border Collie",
+          "candidate": "border-collie"
+        },
+        {
+          "assetId": "dogs__dogs-border-collie__901304e7d9",
+          "title": "Dogs Border Collie",
+          "candidate": "border-collie"
+        }
+      ],
+      "promotedRoute": "/coloring-pages/terrier",
+      "promotedRoutes": [
+        "/coloring-pages/terrier",
+        "/coloring-pages/bulldog",
+        "/coloring-pages/collie"
+      ],
+      "reason": "dog breeds is supported by promoted runtime-backed hubs such as terrier, bulldog, collie."
+    },
+    {
+      "concept": "flower names",
+      "supported": true,
+      "evidenceCount": 78,
+      "exampleAssets": [
+        {
+          "assetId": "chibi__chibi-flowers-calla-lily__94920a8fca",
+          "title": "Chibi Flowers Calla Lily",
+          "candidate": "lily"
+        },
+        {
+          "assetId": "chibi__chibi-flowers-calla-lily-kawaii__82a3b3f4e3",
+          "title": "Chibi Flowers Calla Lily Kawaii",
+          "candidate": "lily"
+        },
+        {
+          "assetId": "chibi__chibi-flowers-forget-me-not__bc7c2e01c7",
+          "title": "Chibi Flowers Forget Me Not",
+          "candidate": "forget-me-not"
+        },
+        {
+          "assetId": "chibi__chibi-flowers-forget-me-not-kawaii__7f1650e53a",
+          "title": "Chibi Flowers Forget Me Not Kawaii",
+          "candidate": "forget-me-not"
+        },
+        {
+          "assetId": "chibi__chibi-flowers-daisy__4e83fb3127",
+          "title": "Chibi Flowers Daisy",
+          "candidate": "daisy"
+        },
+        {
+          "assetId": "chibi__chibi-flowers-daisy-kawaii__94c5961825",
+          "title": "Chibi Flowers Daisy Kawaii",
+          "candidate": "daisy"
+        },
+        {
+          "assetId": "chibi__chibi-flowers-orchid__8683825abb",
+          "title": "Chibi Flowers Orchid",
+          "candidate": "orchid"
+        },
+        {
+          "assetId": "flowers__flowers-orchid__dc56db2468",
+          "title": "Flowers Orchid",
+          "candidate": "orchid"
+        }
+      ],
+      "promotedRoute": "/coloring-pages/lily",
+      "promotedRoutes": [
+        "/coloring-pages/lily",
+        "/coloring-pages/forget-me-not",
+        "/coloring-pages/daisy",
+        "/coloring-pages/orchid",
+        "/coloring-pages/poppy",
+        "/coloring-pages/lotus",
+        "/coloring-pages/palm"
+      ],
+      "reason": "flower names is supported by promoted runtime-backed hubs such as lily, forget-me-not, daisy, orchid, poppy."
+    },
+    {
+      "concept": "dinosaur species",
+      "supported": true,
+      "evidenceCount": 84,
+      "exampleAssets": [
+        {
+          "assetId": "anime-girls__anime-girl-summoning-jutsu-woolly-mammoth__49c45dca6d",
+          "title": "Anime Girl Summoning Jutsu Woolly Mammoth",
+          "candidate": "woolly-mammoth"
+        },
+        {
+          "assetId": "anime-girls__anime-girl-summoning-jutsu-woolly-mammoth-kawaii-plushies__06dda78301",
+          "title": "Anime Girl Summoning Jutsu Woolly Mammoth Kawaii Plushies",
+          "candidate": "woolly-mammoth"
+        },
+        {
+          "assetId": "anime-girls__anime-girl-saber-toothed-tiger-hoodie-plushie__0df82031f8",
+          "title": "Anime Girl Saber Toothed Tiger Hoodie Plushie",
+          "candidate": "saber-toothed-tiger"
+        },
+        {
+          "assetId": "anime-girls__anime-girl-saber-toothed-tiger-hoodie-plushie__14e1ec01ad",
+          "title": "Anime Girl Saber Toothed Tiger Hoodie Plushie",
+          "candidate": "saber-toothed-tiger"
+        },
+        {
+          "assetId": "anime-girls__anime-girl-ankylosaurus-hoodie-plushie__c819919e77",
+          "title": "Anime Girl Ankylosaurus Hoodie Plushie",
+          "candidate": "ankylosaurus"
+        },
+        {
+          "assetId": "anime-girls__anime-girl-ankylosaurus-hoodie-plushie__eb8de86d73",
+          "title": "Anime Girl Ankylosaurus Hoodie Plushie",
+          "candidate": "ankylosaurus"
+        },
+        {
+          "assetId": "chibi__chibi-plushie-prehistoric-mosasaurus__e7c98f3020",
+          "title": "Chibi Plushie Prehistoric Mosasaurus",
+          "candidate": "mosasaurus"
+        },
+        {
+          "assetId": "holiday__holiday-birthday-celebration-plushie-prehistoric-mosasaurus-family__dc3b8890cd",
+          "title": "Holiday Birthday Celebration Plushie Prehistoric Mosasaurus Family",
+          "candidate": "mosasaurus"
+        }
+      ],
+      "promotedRoute": "/coloring-pages/woolly-mammoth",
+      "promotedRoutes": [
+        "/coloring-pages/woolly-mammoth",
+        "/coloring-pages/saber-toothed-tiger",
+        "/coloring-pages/ankylosaurus",
+        "/coloring-pages/mosasaurus",
+        "/coloring-pages/plesiosaurus",
+        "/coloring-pages/pterodactyl",
+        "/coloring-pages/iguanodon",
+        "/coloring-pages/pteranodon"
+      ],
+      "reason": "dinosaur species is supported by promoted runtime-backed hubs such as woolly-mammoth, saber-toothed-tiger, ankylosaurus, mosasaurus, plesiosaurus."
+    },
+    {
+      "concept": "specific animal types",
+      "supported": true,
+      "evidenceCount": 2452,
+      "exampleAssets": [
+        {
+          "assetId": "anime-girls__anime-girl-dodo-bird-hoodie-plushie__18189d3f2f",
+          "title": "Anime Girl Dodo Bird Hoodie Plushie",
+          "candidate": "dodo"
+        },
+        {
+          "assetId": "anime-girls__anime-girl-dodo-bird-hoodie-plushie__5314caa215",
+          "title": "Anime Girl Dodo Bird Hoodie Plushie",
+          "candidate": "dodo"
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-abstract-mandala__29dbb1eecf",
+          "title": "Mandala Geometry Patterns Abstract Mandala",
+          "candidate": "geometry"
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-abstract-shapes__96fa3013f6",
+          "title": "Mandala Geometry Patterns Abstract Shapes",
+          "candidate": "geometry"
+        },
+        {
+          "assetId": "chibi__chibi-plushie-sea-turtle-hatchling__5ca385e431",
+          "title": "Chibi Plushie Sea Turtle Hatchling",
+          "candidate": "turtle"
+        },
+        {
+          "assetId": "chibi__chibi-plushie-turtle__f01d2fc6fa",
+          "title": "Chibi Plushie Turtle",
+          "candidate": "turtle"
+        },
+        {
+          "assetId": "anime-girls__anime-girl-summoning-face-with-emoji-plushies__d5a99f95db",
+          "title": "Anime Girl Summoning Face With Emoji Plushies",
+          "candidate": "face"
+        },
+        {
+          "assetId": "anime-girls__anime-girl-summoning-face-with-emojis__2d4ebd87f5",
+          "title": "Anime Girl Summoning Face With Emojis",
+          "candidate": "face"
+        }
+      ],
+      "promotedRoute": "/coloring-pages/dodo",
+      "promotedRoutes": [
+        "/coloring-pages/dodo"
+      ],
+      "reason": "specific animal types is supported by promoted runtime-backed hubs such as dodo."
+    },
+    {
+      "concept": "food/dessert subjects",
+      "supported": true,
+      "evidenceCount": 613,
+      "exampleAssets": [
+        {
+          "assetId": "chibi__chibi-plushie-cookie-character__cbbcab378b",
+          "title": "Chibi Plushie Cookie Character",
+          "candidate": "cookie"
+        },
+        {
+          "assetId": "christmas__holiday-christmas-gingerbread-cookie-decorating-scene-coloring-page__19a6c72dea",
+          "title": "Holiday Christmas Gingerbread Cookie Decorating Scene Coloring Page",
+          "candidate": "cookie"
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-sushi-aburi-ebi-nigiri__e6a7198dae",
+          "title": "Mandala Geometry Patterns Sushi Aburi Ebi Nigiri",
+          "candidate": "nigiri"
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-sushi-aburi-salmon-nigiri__6009e02cb8",
+          "title": "Mandala Geometry Patterns Sushi Aburi Salmon Nigiri",
+          "candidate": "nigiri"
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-sushi-aburi-salmon-nigiri__6009e02cb8",
+          "title": "Mandala Geometry Patterns Sushi Aburi Salmon Nigiri",
+          "candidate": "salmon"
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-sushi-chef-torching-aburi-salmon__5868663f6f",
+          "title": "Mandala Geometry Patterns Sushi Chef Torching Aburi Salmon",
+          "candidate": "salmon"
+        },
+        {
+          "assetId": "chibi__chibi-plushie-gingerbread-character__31a1a21871",
+          "title": "Chibi Plushie Gingerbread Character",
+          "candidate": "gingerbread"
+        },
+        {
+          "assetId": "christmas__christmas-holiday-gingerbread-house__2e315f039b",
+          "title": "Christmas Holiday Gingerbread House",
+          "candidate": "gingerbread"
+        }
+      ],
+      "promotedRoute": "/coloring-pages/cookie",
+      "promotedRoutes": [
+        "/coloring-pages/cookie",
+        "/coloring-pages/nigiri",
+        "/coloring-pages/salmon",
+        "/coloring-pages/gingerbread"
+      ],
+      "reason": "food/dessert subjects is supported by promoted runtime-backed hubs such as cookie, nigiri, salmon, gingerbread."
+    },
+    {
+      "concept": "holiday subthemes",
+      "supported": true,
+      "evidenceCount": 2828,
+      "exampleAssets": [
+        {
+          "assetId": "holiday__holiday-birthday-celebration-cat__d6e01d08ac",
+          "title": "Holiday Birthday Celebration Cat",
+          "candidate": "birthday-celebration"
+        },
+        {
+          "assetId": "holiday__holiday-birthday-celebration-dogs__88ef0db510",
+          "title": "Holiday Birthday Celebration Dogs",
+          "candidate": "birthday-celebration"
+        },
+        {
+          "assetId": "holiday__holiday-christmas-plushie-alligator-family__e57629ca9d",
+          "title": "Holiday Christmas Plushie Alligator Family",
+          "candidate": "christmas-plushie"
+        },
+        {
+          "assetId": "holiday__holiday-christmas-plushie-alpaca-family__63b9b19a29",
+          "title": "Holiday Christmas Plushie Alpaca Family",
+          "candidate": "christmas-plushie"
+        },
+        {
+          "assetId": "holiday__holiday-halloween-costume-plushie-alligator-family__34d6f58480",
+          "title": "Holiday Halloween Costume Plushie Alligator Family",
+          "candidate": "halloween-costume"
+        },
+        {
+          "assetId": "holiday__holiday-halloween-costume-plushie-alpaca-family__e871be9a53",
+          "title": "Holiday Halloween Costume Plushie Alpaca Family",
+          "candidate": "halloween-costume"
+        },
+        {
+          "assetId": "chibi__chibi-holiday-halloween-trick-or-treat-children-with-pumpkin-bags-colori__abe00661e0",
+          "title": "Chibi Holiday Halloween Trick Or Treat Children With Pumpkin Bags Coloring Page",
+          "candidate": "trick-or-treat"
+        },
+        {
+          "assetId": "chibi__chibi-holiday-halloween-trick-or-treat-dog-in-cute-costume-coloring-page__79fa5d8c2d",
+          "title": "Chibi Holiday Halloween Trick Or Treat Dog In Cute Costume Coloring Page",
+          "candidate": "trick-or-treat"
+        }
+      ],
+      "promotedRoute": "/coloring-pages/birthday-celebration",
+      "promotedRoutes": [
+        "/coloring-pages/birthday-celebration",
+        "/coloring-pages/christmas-plushie",
+        "/coloring-pages/halloween-costume",
+        "/coloring-pages/trick-or-treat",
+        "/coloring-pages/leprechaun"
+      ],
+      "reason": "holiday subthemes is supported by promoted runtime-backed hubs such as birthday-celebration, christmas-plushie, halloween-costume, trick-or-treat, leprechaun."
+    },
+    {
+      "concept": "fantasy and magic clusters",
+      "supported": true,
+      "evidenceCount": 2793,
+      "exampleAssets": [
+        {
+          "assetId": "anime-girls__anime-girl-demon-summoning__86bc23e91f",
+          "title": "Anime Girl Demon Summoning",
+          "candidate": "summoning"
+        },
+        {
+          "assetId": "anime-girls__anime-girl-shadow-sprit-summoning__2b7f59c981",
+          "title": "Anime Girl Shadow Sprit Summoning",
+          "candidate": "summoning"
+        },
+        {
+          "assetId": "anime-girls__anime-girl-summoning-magic-cats__be349530e6",
+          "title": "Anime Girl Summoning Magic Cats",
+          "candidate": "magic"
+        },
+        {
+          "assetId": "anime-girls__anime-girl-summoning-magic-musical-sword-plushies__72066c4f84",
+          "title": "Anime Girl Summoning Magic Musical Sword Plushies",
+          "candidate": "magic"
+        },
+        {
+          "assetId": "anime-girls__anime-girl-summoning-angler-fish__89420344d6",
+          "title": "Anime Girl Summoning Angler Fish",
+          "candidate": "anime-girl-summoning"
+        },
+        {
+          "assetId": "anime-girls__anime-girl-summoning-angler-fish-plushies__120c0d8870",
+          "title": "Anime Girl Summoning Angler Fish Plushies",
+          "candidate": "anime-girl-summoning"
+        },
+        {
+          "assetId": "anime-girls__anime-girl-summoning-angler-fish__89420344d6",
+          "title": "Anime Girl Summoning Angler Fish",
+          "candidate": "girl-summoning"
+        },
+        {
+          "assetId": "anime-girls__anime-girl-summoning-angler-fish-plushies__120c0d8870",
+          "title": "Anime Girl Summoning Angler Fish Plushies",
+          "candidate": "girl-summoning"
+        }
+      ],
+      "promotedRoute": "/coloring-pages/summoning",
+      "promotedRoutes": [
+        "/coloring-pages/summoning",
+        "/coloring-pages/magic"
+      ],
+      "reason": "fantasy and magic clusters is supported by promoted runtime-backed hubs such as summoning, magic."
+    },
+    {
+      "concept": "plant names",
+      "supported": true,
+      "evidenceCount": 22,
+      "exampleAssets": [
+        {
+          "assetId": "indoor-plants__indoor-plants-bamboo-palm__b182761ba2",
+          "title": "Indoor Plants Bamboo Palm",
+          "candidate": "bamboo"
+        },
+        {
+          "assetId": "indoor-plants__indoor-plants-lucky-bamboo__23d308a776",
+          "title": "Indoor Plants Lucky Bamboo",
+          "candidate": "bamboo"
+        },
+        {
+          "assetId": "indoor-plants__indoor-plants-alocasia-dragon-scale__03c81c011c",
+          "title": "Indoor Plants Alocasia Dragon Scale",
+          "candidate": "alocasia"
+        },
+        {
+          "assetId": "indoor-plants__indoor-plants-alocasia-polly-african-mask__b2541755af",
+          "title": "Indoor Plants Alocasia Polly African Mask",
+          "candidate": "alocasia"
+        },
+        {
+          "assetId": "flowers__flowers-anthurium__f11b179d14",
+          "title": "Flowers Anthurium",
+          "candidate": "anthurium"
+        },
+        {
+          "assetId": "indoor-plants__indoor-plants-anthurium-clarinervium__c714fd8470",
+          "title": "Indoor Plants Anthurium Clarinervium",
+          "candidate": "anthurium"
+        },
+        {
+          "assetId": "indoor-plants__indoor-plants-calathea-lancifolia-rattlesnake__12aa3ee236",
+          "title": "Indoor Plants Calathea Lancifolia Rattlesnake",
+          "candidate": "calathea"
+        },
+        {
+          "assetId": "indoor-plants__indoor-plants-calathea-makoyana-peacock__2475a01006",
+          "title": "Indoor Plants Calathea Makoyana Peacock",
+          "candidate": "calathea"
+        }
+      ],
+      "promotedRoute": "/coloring-pages/bamboo",
+      "promotedRoutes": [
+        "/coloring-pages/bamboo"
+      ],
+      "reason": "plant names is supported by promoted runtime-backed hubs such as bamboo."
+    },
+    {
+      "concept": "vehicle subjects",
+      "supported": true,
+      "evidenceCount": 33,
+      "exampleAssets": [
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-classic-steam-train-at-smal__937925e879",
+          "title": "Mandala Geometry Patterns Trains Locomotives Classic Steam Train At Small Town Station",
+          "candidate": "steam-train"
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-classic-steam-train-in-wint__a4f8bc4dbb",
+          "title": "Mandala Geometry Patterns Trains Locomotives Classic Steam Train In Winter Snow",
+          "candidate": "steam-train"
+        },
+        {
+          "assetId": "anime-girls__anime-girl-playing-cards__0c676c2206",
+          "title": "Anime Girl Playing Cards",
+          "candidate": "cards"
+        },
+        {
+          "assetId": "anime-girls__anime-girl-playing-cards-professionally__1d1ba96ada",
+          "title": "Anime Girl Playing Cards Professionally",
+          "candidate": "cards"
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-classic-steam-train-at-smal__937925e879",
+          "title": "Mandala Geometry Patterns Trains Locomotives Classic Steam Train At Small Town Station",
+          "candidate": "classic-steam-train"
+        },
+        {
+          "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-classic-steam-train-in-wint__a4f8bc4dbb",
+          "title": "Mandala Geometry Patterns Trains Locomotives Classic Steam Train In Winter Snow",
+          "candidate": "classic-steam-train"
+        }
+      ],
+      "promotedRoute": "/coloring-pages/steam-train",
+      "promotedRoutes": [
+        "/coloring-pages/steam-train"
+      ],
+      "reason": "vehicle subjects is supported by promoted runtime-backed hubs such as steam-train."
+    }
+  ]
+}
