@@ -1,0 +1,35 @@
+{
+  "generatedAt": "2026-05-15T03:13:08.384Z",
+  "runId": "final-html-sitemap-results",
+  "summary": {
+    "routePath": "/sitemap",
+    "routeRendersInStaticExport": true,
+    "groupedReadableLayout": true,
+    "publicHubRoutesIncluded": 163,
+    "expectedPublicHubRoutes": 163,
+    "allPublicHubRoutesIncluded": true,
+    "includesMajorTrustPages": true,
+    "noPerImageRoutes": true,
+    "noManualReviewBacklogRejectedRoutes": true,
+    "noApiRoutes": true,
+    "noHugeUnstructuredDump": true,
+    "noCrampedPills": true,
+    "htmlSitemapPassed": true
+  },
+  "missingHubRoutes": [],
+  "groups": [
+    "Main pages",
+    "Popular",
+    "Seasonal",
+    "Animals & Nature",
+    "Dinosaurs & Prehistoric",
+    "Fantasy & Characters",
+    "Food & Cute Objects",
+    "Vehicles & Places",
+    "Patterns & Detailed",
+    "Kids & Easy",
+    "More Collections",
+    "Site information"
+  ],
+  "blockers": []
+}

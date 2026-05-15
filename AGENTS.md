@@ -240,6 +240,13 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Horizontal overflow is a blocker for owner acceptance.
 - Manual screenshots override automated pass claims.
 - Do not proceed to SEO until ad layout, navigation, mobile behavior, and real-media rendering are accepted.
+- Related Collections must not be a cramped pill dump.
+- Counts in link sections must align separately from labels.
+- The HTML sitemap page exists at `/sitemap` and must remain grouped, readable, and useful for users.
+- The XML sitemap remains `/sitemap.xml`.
+- Do not create `/sitemaps.xml` unless explicitly requested.
+- `robots.txt` should reference both `/sitemap.xml` and `/image-sitemap.xml`.
+- Deployment waits until local sitemap and Related Collections UI QA passes.
 - SEO content must be useful, unique, intent-matched, and below or secondary to gallery access.
 - Do not create keyword-stuffed or cookie-cutter hub pages.
 - Gallery access must remain near the top.

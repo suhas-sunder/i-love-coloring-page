@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-05-15T03:13:08.362Z",
+  "runId": "final-sitemap-related-context-check",
+  "topLevel": "D:/PROJECTS-and-WORK/work-projects/all_projects/i-love-coloring-page",
+  "branch": "ver-5-deployed-may-13-2026",
+  "expectedCommit": "9f9802cbc661b12c966fc78a0c91a4ccfc0073b6",
+  "summary": {
+    "correctRepo": true,
+    "correctBranch": true,
+    "latestFinalLocalAcceptanceCommitExists": true,
+    "appApiAbsent": true,
+    "staticExportConfigured": true,
+    "runtimeGeneratedDataExists": true,
+    "runtimeAvailableRecords": 6352,
+    "runtimeAvailableRecordsPassed": true,
+    "runtimeHubCount": 163,
+    "runtimeHubCountPassed": true,
+    "imageSitemapExists": true,
+    "imageSitemapWebpEntries": 6352,
+    "ogImagesExist": true,
+    "ogJpgCount": 165,
+    "jsonLdExists": true,
+    "publicSafeDefaultsExist": true,
+    "svgRemainsInternalOnly": true,
+    "publicDownloadsArePngJpgWebp": true,
+    "liveAdsenseAbsent": true,
+    "noDisallowedPublicMedia": true,
+    "imagesUntouched": true,
+    "ilovesvgUntouched": true,
+    "contextPassed": true
+  },
+  "blockers": []
+}

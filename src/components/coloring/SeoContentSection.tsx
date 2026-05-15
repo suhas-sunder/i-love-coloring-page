@@ -43,8 +43,8 @@ export function SeoContentSection({ content, id = "about-this-collection" }: Seo
           <div className="seo-related-link-list">
             {content.relatedHubLinks.map((link) => (
               <Link className="seo-related-link" href={link.href} key={link.href} prefetch={false}>
-                <span>{link.label}</span>
-                <strong>{link.assetCount.toLocaleString()}</strong>
+                <span className="seo-related-link-label">{link.label}</span>
+                <strong className="seo-related-link-count">{link.assetCount.toLocaleString()}</strong>
               </Link>
             ))}
           </div>

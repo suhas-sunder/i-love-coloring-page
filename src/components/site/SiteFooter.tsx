@@ -11,6 +11,7 @@ export function SiteFooter() {
         </div>
         <nav className="site-footer-nav" aria-label="Footer navigation">
           <Link href="/coloring-pages" prefetch={false}>Coloring Pages</Link>
+          <Link href="/sitemap" prefetch={false}>Sitemap</Link>
           {footerNavLinks.map((link) => (
             <Link href={link.href} key={link.href} prefetch={false}>
               {link.label}

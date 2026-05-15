@@ -78,6 +78,10 @@ export const phase1HubLinks = hubsManifest.hubs
 
 export const moreHubLinks = phase1HubLinks.filter((link) => !primaryRoutePaths.has(link.href));
 export const moreHubGroups = groupHubLinks(moreHubLinks);
+export const sitemapHubGroups = groupHubLinks(phase1HubLinks.filter((link) => link.href !== "/coloring-pages")).map((group) => ({
+  ...group,
+  label: group.label === "More Specific Collections" ? "More Collections" : group.label,
+}));
 
 export function isKnownStaticRoute(href: string) {
   if (href === "/") return true;

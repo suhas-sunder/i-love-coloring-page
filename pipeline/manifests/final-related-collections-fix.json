@@ -1,0 +1,20 @@
+{
+  "generatedAt": "2026-05-15T03:13:08.363Z",
+  "runId": "final-related-collections-fix",
+  "summary": {
+    "relatedComponentHasSeparatedLabelAndCount": true,
+    "seoRelatedComponentHasSeparatedLabelAndCount": true,
+    "seoRelatedListUsesGrid": true,
+    "seoRelatedLinkUsesAlignedColumns": true,
+    "noCrampedPillDump": true,
+    "countsAlignedSeparately": true,
+    "importantLabelsNotEllipsized": true,
+    "noHeavyBordersShadowsGradients": true,
+    "relatedCollectionsPassed": true
+  },
+  "implementation": {
+    "changedSection": "SeoContentSection related collections now use a grid list with labels and counts in separate columns.",
+    "relatedHubsSection": "Bottom RelatedHubs section already uses an aligned grid and remains in that pattern."
+  },
+  "blockers": []
+}

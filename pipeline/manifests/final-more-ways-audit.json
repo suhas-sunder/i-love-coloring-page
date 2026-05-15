@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-05-15T03:13:08.364Z",
+  "runId": "final-more-ways-audit",
+  "summary": {
+    "moreWaysToBrowseAbsent": true,
+    "narrowerWaysToBrowseDistinct": true,
+    "noDuplicateRelatedHeading": true,
+    "supportingBrowseUsesGroupedLayout": false,
+    "countsAlignedInThemeList": true,
+    "moreWaysAuditPassed": false
+  },
+  "decision": "The old More ways to browse wording is absent. The remaining Narrower ways to browse section has a distinct subcollection and repeated-theme purpose.",
+  "blockers": [
+    "supportingBrowseUsesGroupedLayout failed."
+  ]
+}
