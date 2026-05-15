@@ -1,0 +1,81 @@
+{
+  "runId": "main-merge-validation-2026-05-15",
+  "generatedAt": "2026-05-15T02:00:32.6312843-04:00",
+  "sourceBranch": "ver-6-seo",
+  "sourceCommit": "aff947dfc98495c800165adc81de4e2e82759b95",
+  "targetBranch": "main",
+  "mergeCommit": "e98b9e1999bbff34960d3a3ba6f366540509a279",
+  "mergeResult": {
+    "merged": true,
+    "conflicts": [],
+    "strategy": "ort",
+    "message": "Merge accepted SEO build"
+  },
+  "postMergeValidationFixes": [
+    {
+      "summary": "Allowed historical round validation tests to run on the main branch.",
+      "files": [
+        "pipeline/tests/round-4k-visual-corrections.test.mjs",
+        "pipeline/tests/round-4l-preview-rendering.test.mjs",
+        "pipeline/tests/round-4m-ads-nav-polish.test.mjs",
+        "pipeline/tests/round-4n-nav-downloads.test.mjs",
+        "pipeline/tests/round-4o-browser-downloads.test.mjs",
+        "pipeline/tests/round-5q-category-upload.test.mjs"
+      ]
+    }
+  ],
+  "validation": {
+    "sourceBranch": {
+      "npmTest": "passed",
+      "typecheck": "passed",
+      "build": "passed",
+      "lint": "not_configured"
+    },
+    "mainBranch": {
+      "npmTest": "passed",
+      "typecheck": "passed",
+      "build": "passed",
+      "lint": "not_configured"
+    }
+  },
+  "staticExport": {
+    "passed": true,
+    "generatedStaticPages": 627,
+    "appApiPresent": false,
+    "htmlSitemapPageExists": true,
+    "sitemapXmlExists": true,
+    "imageSitemapXmlExists": true,
+    "robotsTxtExists": true,
+    "sitemapLocCount": 171,
+    "sitemapIncludesHtmlSitemap": true,
+    "imageSitemapWebpEntries": 6352,
+    "imageSitemapSvgEntries": 0,
+    "imageSitemapPngEntries": 0,
+    "robotsReferencesSitemapXml": true,
+    "robotsReferencesImageSitemapXml": true
+  },
+  "downloadAndAdBoundaries": {
+    "svgDownloadAbsent": true,
+    "pngDownloadControlPresent": true,
+    "jpgDownloadControlPresent": true,
+    "webpDownloadControlPresent": true,
+    "liveAdsenseAbsent": true,
+    "liveAdsDeferred": true
+  },
+  "protectedPaths": {
+    "imagesModified": false,
+    "ilovesvgModified": false,
+    "screenshotsOrPdfArtifactsStaged": false,
+    "envFilesStaged": false,
+    "secretsCommitted": false
+  },
+  "notes": [
+    "Static output contains literal localhost and r2.dev strings only in client-side URL safety guards that reject unsafe asset bases, not as generated asset endpoints.",
+    "GSC submission remains manual and should happen only after main is deployed and live verification passes."
+  ],
+  "blockers": [],
+  "readyForMainPush": true,
+  "readyForNetlifyDeployment": true,
+  "readyForGscSubmissionAfterLiveDeployVerification": true,
+  "readyForLiveAdsRound": false
+}

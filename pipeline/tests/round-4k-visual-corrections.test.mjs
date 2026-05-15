@@ -18,7 +18,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const REPO_ROOT = path.resolve(__dirname, "..", "..");
 const BAD_TITLE_PATTERN = /\b(?:Failed\s+)?ChatGPT Image\b|\bOpenAI\b|\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2},?\s+20\d{2}|\b\d{1,2}-\d{1,2}-20\d{2}\b/i;
-const ALLOWED_PRODUCTION_BRANCHES = new Set(["version-4", "version-1", "ver-5-deployed-may-13-2026", "ver-6-seo"]);
+const ALLOWED_PRODUCTION_BRANCHES = new Set(["main", "version-4", "version-1", "ver-5-deployed-may-13-2026", "ver-6-seo"]);
 
 test("Round 4K generated artifacts parse and confirm the requested project context", async () => {
   const result = await runRound4KDisplayTitleCleanup({ repoRoot: REPO_ROOT });
