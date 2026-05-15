@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-05-15T05:30:38.545Z",
+  "runId": "final-seo-local-acceptance-context-check",
+  "repo": {
+    "topLevel": "D:/PROJECTS-and-WORK/work-projects/all_projects/i-love-coloring-page",
+    "branch": "ver-6-seo",
+    "expectedCommit": "b64aa261bad422c4f070572687ef2f98c8a717be"
+  },
+  "counts": {
+    "availableRecords": 6352,
+    "runtimeHubs": 163,
+    "qualityRecords": 163,
+    "imageSitemapWebpEntries": 6352,
+    "ogJpgCount": 165
+  },
+  "checks": {
+    "correctRepo": true,
+    "branchIsVer6Seo": true,
+    "expectedCommitExists": true,
+    "appApiAbsent": true,
+    "staticExportConfigured": true,
+    "runtimeAvailableRecords": true,
+    "runtimeHubCount": true,
+    "hubContentQualityExists": true,
+    "htmlSitemapPageExists": true,
+    "xmlSitemapExists": true,
+    "imageSitemapExists": true,
+    "imageSitemapWebpEntries": true,
+    "ogImagesExist": true,
+    "jsonLdExists": true,
+    "publicSafeDefaults": true,
+    "pngJpgWebpDownloads": true,
+    "svgInternalOnly": true,
+    "liveAdsenseAbsent": true,
+    "imagesUntouched": true,
+    "ilovesvgUntouched": true
+  },
+  "summary": {
+    "context_check_passed": true,
+    "blockers": []
+  }
+}

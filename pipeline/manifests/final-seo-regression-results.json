@@ -1,0 +1,220 @@
+{
+  "generatedAt": "2026-05-15T05:31:12.062Z",
+  "runId": "final-seo-regression",
+  "sitemapLocCount": 171,
+  "imageSitemapWebpEntries": 6352,
+  "sampledRoutes": [
+    {
+      "route": "/",
+      "jsonLdCount": 1,
+      "jsonLdParses": true,
+      "jsonLdTypes": [
+        "WebSite",
+        "ImageObject",
+        "Organization",
+        "ImageObject",
+        "WebPage",
+        "ImageObject"
+      ],
+      "canonicalWwwDomain": true
+    },
+    {
+      "route": "/coloring-pages",
+      "jsonLdCount": 1,
+      "jsonLdParses": true,
+      "jsonLdTypes": [
+        "CollectionPage",
+        "ImageObject",
+        "BreadcrumbList",
+        "ListItem",
+        "ItemList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "canonicalWwwDomain": true
+    },
+    {
+      "route": "/coloring-pages/animals",
+      "jsonLdCount": 1,
+      "jsonLdParses": true,
+      "jsonLdTypes": [
+        "CollectionPage",
+        "ImageObject",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ItemList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "canonicalWwwDomain": true
+    },
+    {
+      "route": "/coloring-pages/t-rex",
+      "jsonLdCount": 1,
+      "jsonLdParses": true,
+      "jsonLdTypes": [
+        "CollectionPage",
+        "ImageObject",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ItemList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "canonicalWwwDomain": true
+    },
+    {
+      "route": "/coloring-pages/dragons",
+      "jsonLdCount": 1,
+      "jsonLdParses": true,
+      "jsonLdTypes": [
+        "CollectionPage",
+        "ImageObject",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ItemList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "canonicalWwwDomain": true
+    },
+    {
+      "route": "/coloring-pages/dodo",
+      "jsonLdCount": 1,
+      "jsonLdParses": true,
+      "jsonLdTypes": [
+        "CollectionPage",
+        "ImageObject",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ItemList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "canonicalWwwDomain": true
+    },
+    {
+      "route": "/coloring-pages/magic",
+      "jsonLdCount": 1,
+      "jsonLdParses": true,
+      "jsonLdTypes": [
+        "CollectionPage",
+        "ImageObject",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ItemList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "canonicalWwwDomain": true
+    },
+    {
+      "route": "/sitemap",
+      "jsonLdCount": 1,
+      "jsonLdParses": true,
+      "jsonLdTypes": [
+        "WebPage",
+        "ImageObject"
+      ],
+      "canonicalWwwDomain": true
+    },
+    {
+      "route": "/about",
+      "jsonLdCount": 1,
+      "jsonLdParses": true,
+      "jsonLdTypes": [
+        "AboutPage",
+        "ImageObject"
+      ],
+      "canonicalWwwDomain": true
+    },
+    {
+      "route": "/contact",
+      "jsonLdCount": 1,
+      "jsonLdParses": true,
+      "jsonLdTypes": [
+        "ContactPage",
+        "ImageObject"
+      ],
+      "canonicalWwwDomain": true
+    },
+    {
+      "route": "/privacy",
+      "jsonLdCount": 1,
+      "jsonLdParses": true,
+      "jsonLdTypes": [
+        "PrivacyPolicy",
+        "ImageObject"
+      ],
+      "canonicalWwwDomain": true
+    }
+  ],
+  "ogMissing": [],
+  "checks": {
+    "sitemapXmlExists": true,
+    "sitemapLocCountCurrent": true,
+    "htmlSitemapIncluded": true,
+    "all163HubRoutesIncluded": true,
+    "trustPagesIncluded": true,
+    "noPerImageRoutes": true,
+    "noManualReviewBacklogRoutes": true,
+    "imageSitemapExists": true,
+    "imageSitemapWebpEntries": true,
+    "imageSitemapExcludesSvgPngThumbs": true,
+    "robotsReferencesBothSitemaps": true,
+    "ogImagesExistForRouteLevelPages": true,
+    "jsonLdExistsForSampledPages": true,
+    "noForbiddenSchemaTypes": true,
+    "canonicalUrlsUseWww": true,
+    "noUnsafeEndpoints": true
+  },
+  "summary": {
+    "seo_assets_passed": true,
+    "blockers": []
+  }
+}

@@ -255,6 +255,10 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Do not invent claims not supported by the image collection.
 - Every hub content update must pass duplicate, boilerplate, unsupported-claim, and keyword-stuffing checks.
 - AdSense readiness requires content quality, clear navigation, trust pages, ad placeholder balance, and layout checks, but local checks do not guarantee approval.
+- Final local acceptance must be rerun after hub content quality changes.
+- Content quality is a deployment blocker.
+- Gallery-first UX must be preserved after SEO content additions.
+- Compact-wide side rail behavior must be verified before deployment.
 - Gallery access must remain near the top.
 - SEO sections must follow the design system: no nested cards, borders, shadows, outlines, gradients, or random colors.
 - Metadata must stay route-specific and accurate.
