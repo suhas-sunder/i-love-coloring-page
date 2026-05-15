@@ -109,6 +109,9 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Long-tail hub expansion also requires an acceptance gate before image sitemap, Open Graph image, JSON-LD, or live ad work resumes.
 - Manual-review and backlog hub candidates must be packaged for owner review and must not be silently promoted.
 - Manual-review/backlog candidates must not be silently routed or promoted.
+- Any newly promoted hubs must trigger route metadata synchronization for the regular sitemap, image sitemap, OG metadata/images, JSON-LD, internal links, navigation/search, and browser QA before deployment, GSC, social preview, or ads work resumes.
+- Do not proceed to deploy or GSC readiness after hub expansion until the post-expansion metadata sync and local browser acceptance gate pass.
+- Manual-review, backlog, rejected, and deferred candidates must not leak into public route, sitemap, image sitemap, OG, JSON-LD, navigation, or search metadata.
 - Reordered duplicate hubs and token-only hub names should be blocked before routing.
 - New hub pages must preserve gallery-first UX and useful non-spam SEO copy.
 

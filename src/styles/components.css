@@ -14,8 +14,6 @@
 }
 
 .brand:focus-visible,
-.site-nav-link:focus-visible,
-.more-hub-button:focus-visible,
 .hub-menu-panel a:focus-visible,
 .hub-menu-search-row input:focus-visible,
 .mobile-nav-toggle:focus-visible,
@@ -57,37 +55,19 @@
   font-size: var(--text-sm-size);
   font-weight: 800;
   line-height: var(--text-sm-line);
-  overflow: hidden;
   padding: var(--space-8) var(--space-12);
+  text-decoration: none;
   transition: background-color var(--motion-fast) ease, color var(--motion-fast) ease;
 }
 
-.site-nav-link::after {
-  position: absolute;
-  right: var(--space-12);
-  bottom: 5px;
-  left: var(--space-12);
-  height: 2px;
-  border-radius: var(--radius-pill);
-  background: currentColor;
-  content: "";
-  opacity: 0;
-  transform: scaleX(0.45);
-  transform-origin: center;
-  transition: opacity var(--motion-fast) ease, transform var(--motion-fast) ease;
-}
-
 .site-nav-link:hover,
+.site-nav-link:focus-visible,
+.more-hub-button:focus-visible,
 .more-hub-button[aria-expanded="true"] {
+  outline: 0;
   background: var(--color-soft-plum);
   color: var(--color-plum);
-}
-
-.site-nav-link:hover::after,
-.site-nav-link:focus-visible::after,
-.more-hub-button[aria-expanded="true"]::after {
-  opacity: 0.5;
-  transform: scaleX(1);
+  text-decoration: none;
 }
 
 .more-hub-menu {
@@ -693,9 +673,6 @@
 .gallery-item-media-button:focus-visible,
 .gallery-search input:focus-visible,
 .gallery-tab:focus-visible,
-.hero-related-link:focus-visible,
-.hub-link:focus-visible,
-.related-link:focus-visible,
 .trust-section a:focus-visible {
   outline: var(--focus-ring-width) solid var(--color-focus);
   outline-offset: var(--focus-ring-offset);
@@ -910,12 +887,17 @@
   font-size: var(--text-sm-size);
   font-weight: 900;
   line-height: 1.28;
-  padding: var(--space-10) var(--space-12);
+  padding: var(--space-8) 0;
   transition: background-color var(--motion-fast) ease, color var(--motion-fast) ease;
 }
 
 .hero-related-link:hover {
-  background: var(--color-soft-sky);
+  color: var(--color-plum);
+}
+
+.hero-related-link:focus-visible {
+  outline: 0;
+  background: var(--color-soft-plum);
   color: var(--color-plum);
 }
 
@@ -1075,7 +1057,12 @@
 }
 
 .hub-link:hover {
-  background: var(--color-soft-sky);
+  color: var(--color-plum);
+}
+
+.hub-link:focus-visible {
+  outline: 0;
+  background: var(--color-soft-plum);
   color: var(--color-plum);
 }
 
@@ -1545,26 +1532,30 @@
 
 .related-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: var(--space-16) var(--space-32);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-20) var(--space-40);
 }
 
 .related-link {
   display: grid;
   grid-template-columns: minmax(0, 1fr) max-content;
-  gap: var(--space-16);
+  gap: var(--space-20);
   align-items: start;
-  min-height: 64px;
+  min-height: 52px;
   border-radius: var(--radius-sm);
   color: var(--color-ink);
-  padding: var(--space-12);
+  padding: var(--space-8) 0;
   transition: color var(--motion-fast) ease, transform var(--motion-fast) ease;
 }
 
 .related-link:hover {
-  background: var(--color-soft-sky);
   color: var(--color-plum);
-  transform: translateY(-2px);
+}
+
+.related-link:focus-visible {
+  outline: 0;
+  background: var(--color-soft-plum);
+  color: var(--color-plum);
 }
 
 .related-link-label {

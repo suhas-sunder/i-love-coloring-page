@@ -1,15 +1,15 @@
 # OG Image Data Report
 
-Generated: 2026-05-14T03:37:23.355Z
+Generated: 2026-05-15T01:31:52.796Z
 
 - Available runtime records: 6,352
-- Runtime hub count: 131
-- Expected OG image count: 133
-- Route records: 133
+- Runtime hub count: 163
+- Expected OG image count: 165
+- Route records: 165
 - Homepage images: 1
 - Gallery landing images: 1
-- Hub images: 131
-- Unique preview assets selected: 559
+- Hub images: 163
+- Unique preview assets selected: 701
 - Output: 1200 x 630 JPG
 - Deferred records excluded: true
 - SVG source URLs excluded from social images: true

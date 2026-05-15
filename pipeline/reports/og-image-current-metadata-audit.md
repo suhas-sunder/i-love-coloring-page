@@ -1,6 +1,6 @@
 # OG Image Current Metadata Audit
 
-Generated: 2026-05-14T03:37:23.355Z
+Generated: 2026-05-15T01:31:52.796Z
 
 - metadataBase present: true
 - metadataBase uses canonical www default: true
@@ -8,8 +8,8 @@ Generated: 2026-05-14T03:37:23.355Z
 - Open Graph metadata present: true
 - Twitter metadata present: true
 - Twitter large image configured before this run: true
-- Runtime social metadata pages: 132
-- Runtime social pages with empty OG images: 132
+- Runtime social metadata pages: 164
+- Runtime social pages with empty OG images: 164
 - Localhost leaks present: true
 - r2.dev leaks present: true
 - No-index pages excluded from target set: true

@@ -1,0 +1,692 @@
+{
+  "generatedAt": "2026-05-15T01:43:12.070Z",
+  "runId": "post-long-tail-r2-jsonld-sync",
+  "summary": {
+    "routeCount": 171,
+    "promotedHubJsonLdPresent": 32,
+    "promotedHubJsonLdPassed": 32,
+    "hubPagesWithJsonLd": 163,
+    "maxItemListItems": 8,
+    "noForbiddenSchemaTypes": true,
+    "noSvgUrls": true,
+    "noDeferredRecords": true,
+    "noLocalhostR2Dev": true,
+    "canonicalWwwRoutes": true,
+    "jsonldPassed": true
+  },
+  "promoted": [
+    {
+      "slug": "dodo",
+      "routePath": "/coloring-pages/dodo",
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList"
+      ],
+      "itemListCount": 8,
+      "checks": {
+        "jsonLdExists": true,
+        "hasCollectionPage": true,
+        "hasBreadcrumbList": true,
+        "hasItemList": true,
+        "itemListCapped": true,
+        "canonicalWww": true,
+        "noSvgUrls": true,
+        "noDeferredRecords": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "bamboo",
+      "routePath": "/coloring-pages/bamboo",
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList"
+      ],
+      "itemListCount": 7,
+      "checks": {
+        "jsonLdExists": true,
+        "hasCollectionPage": true,
+        "hasBreadcrumbList": true,
+        "hasItemList": true,
+        "itemListCapped": true,
+        "canonicalWww": true,
+        "noSvgUrls": true,
+        "noDeferredRecords": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "steam-train",
+      "routePath": "/coloring-pages/steam-train",
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList"
+      ],
+      "itemListCount": 8,
+      "checks": {
+        "jsonLdExists": true,
+        "hasCollectionPage": true,
+        "hasBreadcrumbList": true,
+        "hasItemList": true,
+        "itemListCapped": true,
+        "canonicalWww": true,
+        "noSvgUrls": true,
+        "noDeferredRecords": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "birthday-celebration",
+      "routePath": "/coloring-pages/birthday-celebration",
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList"
+      ],
+      "itemListCount": 8,
+      "checks": {
+        "jsonLdExists": true,
+        "hasCollectionPage": true,
+        "hasBreadcrumbList": true,
+        "hasItemList": true,
+        "itemListCapped": true,
+        "canonicalWww": true,
+        "noSvgUrls": true,
+        "noDeferredRecords": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "christmas-plushie",
+      "routePath": "/coloring-pages/christmas-plushie",
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList"
+      ],
+      "itemListCount": 8,
+      "checks": {
+        "jsonLdExists": true,
+        "hasCollectionPage": true,
+        "hasBreadcrumbList": true,
+        "hasItemList": true,
+        "itemListCapped": true,
+        "canonicalWww": true,
+        "noSvgUrls": true,
+        "noDeferredRecords": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "halloween-costume",
+      "routePath": "/coloring-pages/halloween-costume",
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList"
+      ],
+      "itemListCount": 8,
+      "checks": {
+        "jsonLdExists": true,
+        "hasCollectionPage": true,
+        "hasBreadcrumbList": true,
+        "hasItemList": true,
+        "itemListCapped": true,
+        "canonicalWww": true,
+        "noSvgUrls": true,
+        "noDeferredRecords": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "summoning",
+      "routePath": "/coloring-pages/summoning",
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList"
+      ],
+      "itemListCount": 8,
+      "checks": {
+        "jsonLdExists": true,
+        "hasCollectionPage": true,
+        "hasBreadcrumbList": true,
+        "hasItemList": true,
+        "itemListCapped": true,
+        "canonicalWww": true,
+        "noSvgUrls": true,
+        "noDeferredRecords": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "terrier",
+      "routePath": "/coloring-pages/terrier",
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList"
+      ],
+      "itemListCount": 8,
+      "checks": {
+        "jsonLdExists": true,
+        "hasCollectionPage": true,
+        "hasBreadcrumbList": true,
+        "hasItemList": true,
+        "itemListCapped": true,
+        "canonicalWww": true,
+        "noSvgUrls": true,
+        "noDeferredRecords": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "woolly-mammoth",
+      "routePath": "/coloring-pages/woolly-mammoth",
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList"
+      ],
+      "itemListCount": 8,
+      "checks": {
+        "jsonLdExists": true,
+        "hasCollectionPage": true,
+        "hasBreadcrumbList": true,
+        "hasItemList": true,
+        "itemListCapped": true,
+        "canonicalWww": true,
+        "noSvgUrls": true,
+        "noDeferredRecords": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "saber-toothed-tiger",
+      "routePath": "/coloring-pages/saber-toothed-tiger",
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList"
+      ],
+      "itemListCount": 8,
+      "checks": {
+        "jsonLdExists": true,
+        "hasCollectionPage": true,
+        "hasBreadcrumbList": true,
+        "hasItemList": true,
+        "itemListCapped": true,
+        "canonicalWww": true,
+        "noSvgUrls": true,
+        "noDeferredRecords": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "magic",
+      "routePath": "/coloring-pages/magic",
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList"
+      ],
+      "itemListCount": 8,
+      "checks": {
+        "jsonLdExists": true,
+        "hasCollectionPage": true,
+        "hasBreadcrumbList": true,
+        "hasItemList": true,
+        "itemListCapped": true,
+        "canonicalWww": true,
+        "noSvgUrls": true,
+        "noDeferredRecords": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "ankylosaurus",
+      "routePath": "/coloring-pages/ankylosaurus",
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList"
+      ],
+      "itemListCount": 8,
+      "checks": {
+        "jsonLdExists": true,
+        "hasCollectionPage": true,
+        "hasBreadcrumbList": true,
+        "hasItemList": true,
+        "itemListCapped": true,
+        "canonicalWww": true,
+        "noSvgUrls": true,
+        "noDeferredRecords": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "trick-or-treat",
+      "routePath": "/coloring-pages/trick-or-treat",
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList"
+      ],
+      "itemListCount": 8,
+      "checks": {
+        "jsonLdExists": true,
+        "hasCollectionPage": true,
+        "hasBreadcrumbList": true,
+        "hasItemList": true,
+        "itemListCapped": true,
+        "canonicalWww": true,
+        "noSvgUrls": true,
+        "noDeferredRecords": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "lily",
+      "routePath": "/coloring-pages/lily",
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList"
+      ],
+      "itemListCount": 8,
+      "checks": {
+        "jsonLdExists": true,
+        "hasCollectionPage": true,
+        "hasBreadcrumbList": true,
+        "hasItemList": true,
+        "itemListCapped": true,
+        "canonicalWww": true,
+        "noSvgUrls": true,
+        "noDeferredRecords": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "forget-me-not",
+      "routePath": "/coloring-pages/forget-me-not",
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList"
+      ],
+      "itemListCount": 6,
+      "checks": {
+        "jsonLdExists": true,
+        "hasCollectionPage": true,
+        "hasBreadcrumbList": true,
+        "hasItemList": true,
+        "itemListCapped": true,
+        "canonicalWww": true,
+        "noSvgUrls": true,
+        "noDeferredRecords": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "mosasaurus",
+      "routePath": "/coloring-pages/mosasaurus",
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList"
+      ],
+      "itemListCount": 8,
+      "checks": {
+        "jsonLdExists": true,
+        "hasCollectionPage": true,
+        "hasBreadcrumbList": true,
+        "hasItemList": true,
+        "itemListCapped": true,
+        "canonicalWww": true,
+        "noSvgUrls": true,
+        "noDeferredRecords": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "plesiosaurus",
+      "routePath": "/coloring-pages/plesiosaurus",
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList"
+      ],
+      "itemListCount": 8,
+      "checks": {
+        "jsonLdExists": true,
+        "hasCollectionPage": true,
+        "hasBreadcrumbList": true,
+        "hasItemList": true,
+        "itemListCapped": true,
+        "canonicalWww": true,
+        "noSvgUrls": true,
+        "noDeferredRecords": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "pterodactyl",
+      "routePath": "/coloring-pages/pterodactyl",
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList"
+      ],
+      "itemListCount": 8,
+      "checks": {
+        "jsonLdExists": true,
+        "hasCollectionPage": true,
+        "hasBreadcrumbList": true,
+        "hasItemList": true,
+        "itemListCapped": true,
+        "canonicalWww": true,
+        "noSvgUrls": true,
+        "noDeferredRecords": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "iguanodon",
+      "routePath": "/coloring-pages/iguanodon",
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList"
+      ],
+      "itemListCount": 8,
+      "checks": {
+        "jsonLdExists": true,
+        "hasCollectionPage": true,
+        "hasBreadcrumbList": true,
+        "hasItemList": true,
+        "itemListCapped": true,
+        "canonicalWww": true,
+        "noSvgUrls": true,
+        "noDeferredRecords": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "bulldog",
+      "routePath": "/coloring-pages/bulldog",
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList"
+      ],
+      "itemListCount": 8,
+      "checks": {
+        "jsonLdExists": true,
+        "hasCollectionPage": true,
+        "hasBreadcrumbList": true,
+        "hasItemList": true,
+        "itemListCapped": true,
+        "canonicalWww": true,
+        "noSvgUrls": true,
+        "noDeferredRecords": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "collie",
+      "routePath": "/coloring-pages/collie",
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList"
+      ],
+      "itemListCount": 8,
+      "checks": {
+        "jsonLdExists": true,
+        "hasCollectionPage": true,
+        "hasBreadcrumbList": true,
+        "hasItemList": true,
+        "itemListCapped": true,
+        "canonicalWww": true,
+        "noSvgUrls": true,
+        "noDeferredRecords": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "cookie",
+      "routePath": "/coloring-pages/cookie",
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList"
+      ],
+      "itemListCount": 8,
+      "checks": {
+        "jsonLdExists": true,
+        "hasCollectionPage": true,
+        "hasBreadcrumbList": true,
+        "hasItemList": true,
+        "itemListCapped": true,
+        "canonicalWww": true,
+        "noSvgUrls": true,
+        "noDeferredRecords": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "daisy",
+      "routePath": "/coloring-pages/daisy",
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList"
+      ],
+      "itemListCount": 8,
+      "checks": {
+        "jsonLdExists": true,
+        "hasCollectionPage": true,
+        "hasBreadcrumbList": true,
+        "hasItemList": true,
+        "itemListCapped": true,
+        "canonicalWww": true,
+        "noSvgUrls": true,
+        "noDeferredRecords": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "pteranodon",
+      "routePath": "/coloring-pages/pteranodon",
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList"
+      ],
+      "itemListCount": 6,
+      "checks": {
+        "jsonLdExists": true,
+        "hasCollectionPage": true,
+        "hasBreadcrumbList": true,
+        "hasItemList": true,
+        "itemListCapped": true,
+        "canonicalWww": true,
+        "noSvgUrls": true,
+        "noDeferredRecords": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "nigiri",
+      "routePath": "/coloring-pages/nigiri",
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList"
+      ],
+      "itemListCount": 8,
+      "checks": {
+        "jsonLdExists": true,
+        "hasCollectionPage": true,
+        "hasBreadcrumbList": true,
+        "hasItemList": true,
+        "itemListCapped": true,
+        "canonicalWww": true,
+        "noSvgUrls": true,
+        "noDeferredRecords": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "orchid",
+      "routePath": "/coloring-pages/orchid",
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList"
+      ],
+      "itemListCount": 8,
+      "checks": {
+        "jsonLdExists": true,
+        "hasCollectionPage": true,
+        "hasBreadcrumbList": true,
+        "hasItemList": true,
+        "itemListCapped": true,
+        "canonicalWww": true,
+        "noSvgUrls": true,
+        "noDeferredRecords": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "poppy",
+      "routePath": "/coloring-pages/poppy",
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList"
+      ],
+      "itemListCount": 7,
+      "checks": {
+        "jsonLdExists": true,
+        "hasCollectionPage": true,
+        "hasBreadcrumbList": true,
+        "hasItemList": true,
+        "itemListCapped": true,
+        "canonicalWww": true,
+        "noSvgUrls": true,
+        "noDeferredRecords": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "lotus",
+      "routePath": "/coloring-pages/lotus",
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList"
+      ],
+      "itemListCount": 6,
+      "checks": {
+        "jsonLdExists": true,
+        "hasCollectionPage": true,
+        "hasBreadcrumbList": true,
+        "hasItemList": true,
+        "itemListCapped": true,
+        "canonicalWww": true,
+        "noSvgUrls": true,
+        "noDeferredRecords": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "palm",
+      "routePath": "/coloring-pages/palm",
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList"
+      ],
+      "itemListCount": 6,
+      "checks": {
+        "jsonLdExists": true,
+        "hasCollectionPage": true,
+        "hasBreadcrumbList": true,
+        "hasItemList": true,
+        "itemListCapped": true,
+        "canonicalWww": true,
+        "noSvgUrls": true,
+        "noDeferredRecords": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "leprechaun",
+      "routePath": "/coloring-pages/leprechaun",
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList"
+      ],
+      "itemListCount": 8,
+      "checks": {
+        "jsonLdExists": true,
+        "hasCollectionPage": true,
+        "hasBreadcrumbList": true,
+        "hasItemList": true,
+        "itemListCapped": true,
+        "canonicalWww": true,
+        "noSvgUrls": true,
+        "noDeferredRecords": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "salmon",
+      "routePath": "/coloring-pages/salmon",
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList"
+      ],
+      "itemListCount": 8,
+      "checks": {
+        "jsonLdExists": true,
+        "hasCollectionPage": true,
+        "hasBreadcrumbList": true,
+        "hasItemList": true,
+        "itemListCapped": true,
+        "canonicalWww": true,
+        "noSvgUrls": true,
+        "noDeferredRecords": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "gingerbread",
+      "routePath": "/coloring-pages/gingerbread",
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "ItemList"
+      ],
+      "itemListCount": 8,
+      "checks": {
+        "jsonLdExists": true,
+        "hasCollectionPage": true,
+        "hasBreadcrumbList": true,
+        "hasItemList": true,
+        "itemListCapped": true,
+        "canonicalWww": true,
+        "noSvgUrls": true,
+        "noDeferredRecords": true
+      },
+      "passed": true
+    }
+  ],
+  "blockers": []
+}

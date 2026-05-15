@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-14T04:06:18.916Z",
+  "generatedAt": "2026-05-15T01:32:29.190Z",
   "phase": "jsonld",
   "summary": {
     "correctRepository": true,
@@ -12,11 +12,11 @@
     "runtimeGeneratedDataExists": true,
     "runtimeAvailableRecords": 6352,
     "deferredManualReviewRecords": 205,
-    "runtimeIndexableHubs": 131,
+    "runtimeIndexableHubs": 163,
     "regularSitemapExists": true,
     "imageSitemapExists": true,
     "ogImagesExist": true,
-    "ogImageCount": 133,
+    "ogImageCount": 165,
     "siteUrl": "https://www.ilovecoloringpage.com",
     "publicAssetBaseUrl": "https://assets.ilovecoloringpage.com/coloring-pages",
     "contactEmail": "admin@ilovecoloringpage.com",
@@ -32,7 +32,7 @@
   "checks": {
     "availableRecordCountExpected": 6352,
     "deferredRecordCountExpected": 205,
-    "publicFilesChecked": 134,
+    "publicFilesChecked": 166,
     "mediaCopiedToPublicBeyondXmlAndOg": []
   }
 }

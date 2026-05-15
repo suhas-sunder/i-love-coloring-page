@@ -1,0 +1,531 @@
+{
+  "generatedAt": "2026-05-15T01:43:12.071Z",
+  "runId": "post-long-tail-r2-navigation-search-audit",
+  "summary": {
+    "promotedHubCount": 32,
+    "promotedMenuSearchCandidates": 32,
+    "promotedInternalLinksValid": true,
+    "promotedRelatedLinksValid": true,
+    "groupedSectionsRemain": true,
+    "moreMenuUsesRuntimeHubs": true,
+    "noEllipsisRuleRegression": true,
+    "noManualBacklogRoutesLinked": true,
+    "mobileNavSearchPresent": true,
+    "navigationSearchPassed": true
+  },
+  "promoted": [
+    {
+      "slug": "dodo",
+      "title": "Dodo Coloring Pages",
+      "routePath": "/coloring-pages/dodo",
+      "internalLinkCount": 8,
+      "relatedHubCount": 8,
+      "checks": {
+        "routePresent": true,
+        "titleAvailableForMenuSearch": true,
+        "searchTextAvailable": true,
+        "internalLinksValid": true,
+        "relatedLinksValid": true,
+        "noManualBacklogLink": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "bamboo",
+      "title": "Bamboo Coloring Pages",
+      "routePath": "/coloring-pages/bamboo",
+      "internalLinkCount": 8,
+      "relatedHubCount": 8,
+      "checks": {
+        "routePresent": true,
+        "titleAvailableForMenuSearch": true,
+        "searchTextAvailable": true,
+        "internalLinksValid": true,
+        "relatedLinksValid": true,
+        "noManualBacklogLink": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "steam-train",
+      "title": "Steam Train Coloring Pages",
+      "routePath": "/coloring-pages/steam-train",
+      "internalLinkCount": 8,
+      "relatedHubCount": 8,
+      "checks": {
+        "routePresent": true,
+        "titleAvailableForMenuSearch": true,
+        "searchTextAvailable": true,
+        "internalLinksValid": true,
+        "relatedLinksValid": true,
+        "noManualBacklogLink": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "birthday-celebration",
+      "title": "Birthday Celebration Coloring Pages",
+      "routePath": "/coloring-pages/birthday-celebration",
+      "internalLinkCount": 8,
+      "relatedHubCount": 8,
+      "checks": {
+        "routePresent": true,
+        "titleAvailableForMenuSearch": true,
+        "searchTextAvailable": true,
+        "internalLinksValid": true,
+        "relatedLinksValid": true,
+        "noManualBacklogLink": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "christmas-plushie",
+      "title": "Christmas Plushies Coloring Pages",
+      "routePath": "/coloring-pages/christmas-plushie",
+      "internalLinkCount": 8,
+      "relatedHubCount": 8,
+      "checks": {
+        "routePresent": true,
+        "titleAvailableForMenuSearch": true,
+        "searchTextAvailable": true,
+        "internalLinksValid": true,
+        "relatedLinksValid": true,
+        "noManualBacklogLink": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "halloween-costume",
+      "title": "Halloween Costumes Coloring Pages",
+      "routePath": "/coloring-pages/halloween-costume",
+      "internalLinkCount": 8,
+      "relatedHubCount": 8,
+      "checks": {
+        "routePresent": true,
+        "titleAvailableForMenuSearch": true,
+        "searchTextAvailable": true,
+        "internalLinksValid": true,
+        "relatedLinksValid": true,
+        "noManualBacklogLink": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "summoning",
+      "title": "Summoning Coloring Pages",
+      "routePath": "/coloring-pages/summoning",
+      "internalLinkCount": 8,
+      "relatedHubCount": 8,
+      "checks": {
+        "routePresent": true,
+        "titleAvailableForMenuSearch": true,
+        "searchTextAvailable": true,
+        "internalLinksValid": true,
+        "relatedLinksValid": true,
+        "noManualBacklogLink": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "terrier",
+      "title": "Terrier Coloring Pages",
+      "routePath": "/coloring-pages/terrier",
+      "internalLinkCount": 8,
+      "relatedHubCount": 8,
+      "checks": {
+        "routePresent": true,
+        "titleAvailableForMenuSearch": true,
+        "searchTextAvailable": true,
+        "internalLinksValid": true,
+        "relatedLinksValid": true,
+        "noManualBacklogLink": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "woolly-mammoth",
+      "title": "Woolly Mammoth Coloring Pages",
+      "routePath": "/coloring-pages/woolly-mammoth",
+      "internalLinkCount": 8,
+      "relatedHubCount": 8,
+      "checks": {
+        "routePresent": true,
+        "titleAvailableForMenuSearch": true,
+        "searchTextAvailable": true,
+        "internalLinksValid": true,
+        "relatedLinksValid": true,
+        "noManualBacklogLink": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "saber-toothed-tiger",
+      "title": "Saber Toothed Tiger Coloring Pages",
+      "routePath": "/coloring-pages/saber-toothed-tiger",
+      "internalLinkCount": 8,
+      "relatedHubCount": 8,
+      "checks": {
+        "routePresent": true,
+        "titleAvailableForMenuSearch": true,
+        "searchTextAvailable": true,
+        "internalLinksValid": true,
+        "relatedLinksValid": true,
+        "noManualBacklogLink": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "magic",
+      "title": "Magic Coloring Pages",
+      "routePath": "/coloring-pages/magic",
+      "internalLinkCount": 8,
+      "relatedHubCount": 8,
+      "checks": {
+        "routePresent": true,
+        "titleAvailableForMenuSearch": true,
+        "searchTextAvailable": true,
+        "internalLinksValid": true,
+        "relatedLinksValid": true,
+        "noManualBacklogLink": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "ankylosaurus",
+      "title": "Ankylosaurus Coloring Pages",
+      "routePath": "/coloring-pages/ankylosaurus",
+      "internalLinkCount": 8,
+      "relatedHubCount": 8,
+      "checks": {
+        "routePresent": true,
+        "titleAvailableForMenuSearch": true,
+        "searchTextAvailable": true,
+        "internalLinksValid": true,
+        "relatedLinksValid": true,
+        "noManualBacklogLink": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "trick-or-treat",
+      "title": "Trick or Treat Coloring Pages",
+      "routePath": "/coloring-pages/trick-or-treat",
+      "internalLinkCount": 8,
+      "relatedHubCount": 8,
+      "checks": {
+        "routePresent": true,
+        "titleAvailableForMenuSearch": true,
+        "searchTextAvailable": true,
+        "internalLinksValid": true,
+        "relatedLinksValid": true,
+        "noManualBacklogLink": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "lily",
+      "title": "Lily Coloring Pages",
+      "routePath": "/coloring-pages/lily",
+      "internalLinkCount": 8,
+      "relatedHubCount": 8,
+      "checks": {
+        "routePresent": true,
+        "titleAvailableForMenuSearch": true,
+        "searchTextAvailable": true,
+        "internalLinksValid": true,
+        "relatedLinksValid": true,
+        "noManualBacklogLink": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "forget-me-not",
+      "title": "Forget-Me-Not Coloring Pages",
+      "routePath": "/coloring-pages/forget-me-not",
+      "internalLinkCount": 8,
+      "relatedHubCount": 8,
+      "checks": {
+        "routePresent": true,
+        "titleAvailableForMenuSearch": true,
+        "searchTextAvailable": true,
+        "internalLinksValid": true,
+        "relatedLinksValid": true,
+        "noManualBacklogLink": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "mosasaurus",
+      "title": "Mosasaurus Coloring Pages",
+      "routePath": "/coloring-pages/mosasaurus",
+      "internalLinkCount": 8,
+      "relatedHubCount": 8,
+      "checks": {
+        "routePresent": true,
+        "titleAvailableForMenuSearch": true,
+        "searchTextAvailable": true,
+        "internalLinksValid": true,
+        "relatedLinksValid": true,
+        "noManualBacklogLink": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "plesiosaurus",
+      "title": "Plesiosaurus Coloring Pages",
+      "routePath": "/coloring-pages/plesiosaurus",
+      "internalLinkCount": 8,
+      "relatedHubCount": 8,
+      "checks": {
+        "routePresent": true,
+        "titleAvailableForMenuSearch": true,
+        "searchTextAvailable": true,
+        "internalLinksValid": true,
+        "relatedLinksValid": true,
+        "noManualBacklogLink": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "pterodactyl",
+      "title": "Pterodactyl Coloring Pages",
+      "routePath": "/coloring-pages/pterodactyl",
+      "internalLinkCount": 8,
+      "relatedHubCount": 8,
+      "checks": {
+        "routePresent": true,
+        "titleAvailableForMenuSearch": true,
+        "searchTextAvailable": true,
+        "internalLinksValid": true,
+        "relatedLinksValid": true,
+        "noManualBacklogLink": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "iguanodon",
+      "title": "Iguanodon Coloring Pages",
+      "routePath": "/coloring-pages/iguanodon",
+      "internalLinkCount": 8,
+      "relatedHubCount": 8,
+      "checks": {
+        "routePresent": true,
+        "titleAvailableForMenuSearch": true,
+        "searchTextAvailable": true,
+        "internalLinksValid": true,
+        "relatedLinksValid": true,
+        "noManualBacklogLink": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "bulldog",
+      "title": "Bulldog Coloring Pages",
+      "routePath": "/coloring-pages/bulldog",
+      "internalLinkCount": 8,
+      "relatedHubCount": 8,
+      "checks": {
+        "routePresent": true,
+        "titleAvailableForMenuSearch": true,
+        "searchTextAvailable": true,
+        "internalLinksValid": true,
+        "relatedLinksValid": true,
+        "noManualBacklogLink": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "collie",
+      "title": "Collie Coloring Pages",
+      "routePath": "/coloring-pages/collie",
+      "internalLinkCount": 8,
+      "relatedHubCount": 8,
+      "checks": {
+        "routePresent": true,
+        "titleAvailableForMenuSearch": true,
+        "searchTextAvailable": true,
+        "internalLinksValid": true,
+        "relatedLinksValid": true,
+        "noManualBacklogLink": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "cookie",
+      "title": "Cookie Coloring Pages",
+      "routePath": "/coloring-pages/cookie",
+      "internalLinkCount": 8,
+      "relatedHubCount": 8,
+      "checks": {
+        "routePresent": true,
+        "titleAvailableForMenuSearch": true,
+        "searchTextAvailable": true,
+        "internalLinksValid": true,
+        "relatedLinksValid": true,
+        "noManualBacklogLink": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "daisy",
+      "title": "Daisy Coloring Pages",
+      "routePath": "/coloring-pages/daisy",
+      "internalLinkCount": 8,
+      "relatedHubCount": 8,
+      "checks": {
+        "routePresent": true,
+        "titleAvailableForMenuSearch": true,
+        "searchTextAvailable": true,
+        "internalLinksValid": true,
+        "relatedLinksValid": true,
+        "noManualBacklogLink": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "pteranodon",
+      "title": "Pteranodon Coloring Pages",
+      "routePath": "/coloring-pages/pteranodon",
+      "internalLinkCount": 8,
+      "relatedHubCount": 8,
+      "checks": {
+        "routePresent": true,
+        "titleAvailableForMenuSearch": true,
+        "searchTextAvailable": true,
+        "internalLinksValid": true,
+        "relatedLinksValid": true,
+        "noManualBacklogLink": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "nigiri",
+      "title": "Nigiri Coloring Pages",
+      "routePath": "/coloring-pages/nigiri",
+      "internalLinkCount": 8,
+      "relatedHubCount": 8,
+      "checks": {
+        "routePresent": true,
+        "titleAvailableForMenuSearch": true,
+        "searchTextAvailable": true,
+        "internalLinksValid": true,
+        "relatedLinksValid": true,
+        "noManualBacklogLink": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "orchid",
+      "title": "Orchid Coloring Pages",
+      "routePath": "/coloring-pages/orchid",
+      "internalLinkCount": 8,
+      "relatedHubCount": 8,
+      "checks": {
+        "routePresent": true,
+        "titleAvailableForMenuSearch": true,
+        "searchTextAvailable": true,
+        "internalLinksValid": true,
+        "relatedLinksValid": true,
+        "noManualBacklogLink": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "poppy",
+      "title": "Poppy Coloring Pages",
+      "routePath": "/coloring-pages/poppy",
+      "internalLinkCount": 8,
+      "relatedHubCount": 8,
+      "checks": {
+        "routePresent": true,
+        "titleAvailableForMenuSearch": true,
+        "searchTextAvailable": true,
+        "internalLinksValid": true,
+        "relatedLinksValid": true,
+        "noManualBacklogLink": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "lotus",
+      "title": "Lotus Coloring Pages",
+      "routePath": "/coloring-pages/lotus",
+      "internalLinkCount": 8,
+      "relatedHubCount": 8,
+      "checks": {
+        "routePresent": true,
+        "titleAvailableForMenuSearch": true,
+        "searchTextAvailable": true,
+        "internalLinksValid": true,
+        "relatedLinksValid": true,
+        "noManualBacklogLink": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "palm",
+      "title": "Palm Coloring Pages",
+      "routePath": "/coloring-pages/palm",
+      "internalLinkCount": 4,
+      "relatedHubCount": 4,
+      "checks": {
+        "routePresent": true,
+        "titleAvailableForMenuSearch": true,
+        "searchTextAvailable": true,
+        "internalLinksValid": true,
+        "relatedLinksValid": true,
+        "noManualBacklogLink": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "leprechaun",
+      "title": "Leprechaun Coloring Pages",
+      "routePath": "/coloring-pages/leprechaun",
+      "internalLinkCount": 8,
+      "relatedHubCount": 8,
+      "checks": {
+        "routePresent": true,
+        "titleAvailableForMenuSearch": true,
+        "searchTextAvailable": true,
+        "internalLinksValid": true,
+        "relatedLinksValid": true,
+        "noManualBacklogLink": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "salmon",
+      "title": "Salmon Coloring Pages",
+      "routePath": "/coloring-pages/salmon",
+      "internalLinkCount": 8,
+      "relatedHubCount": 8,
+      "checks": {
+        "routePresent": true,
+        "titleAvailableForMenuSearch": true,
+        "searchTextAvailable": true,
+        "internalLinksValid": true,
+        "relatedLinksValid": true,
+        "noManualBacklogLink": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "gingerbread",
+      "title": "Gingerbread Coloring Pages",
+      "routePath": "/coloring-pages/gingerbread",
+      "internalLinkCount": 8,
+      "relatedHubCount": 8,
+      "checks": {
+        "routePresent": true,
+        "titleAvailableForMenuSearch": true,
+        "searchTextAvailable": true,
+        "internalLinksValid": true,
+        "relatedLinksValid": true,
+        "noManualBacklogLink": true
+      },
+      "passed": true
+    }
+  ],
+  "blockers": []
+}

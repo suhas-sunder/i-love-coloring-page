@@ -1,0 +1,662 @@
+{
+  "generatedAt": "2026-05-15T01:43:12.042Z",
+  "runId": "post-long-tail-r2-og-sync",
+  "summary": {
+    "promotedHubCount": 32,
+    "promotedHubOgImagesPresent": 32,
+    "promotedHubMetadataPresent": 32,
+    "promotedOgImagesPassed": 32,
+    "metadataRouteCount": 164,
+    "generatedImageCount": 165,
+    "publicOgFileCount": 165,
+    "dimensions1200x630": true,
+    "formatJpg": true,
+    "noSvgOgImages": true,
+    "noLocalhostR2Dev": true,
+    "noPerImageOgPages": true,
+    "ogImagesPassed": true
+  },
+  "promoted": [
+    {
+      "slug": "dodo",
+      "routePath": "/coloring-pages/dodo",
+      "publicPath": "public/og/hubs/dodo.jpg",
+      "bytes": 96882,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg",
+      "checks": {
+        "metadataExists": true,
+        "publicFileExists": true,
+        "dimensions1200x630": true,
+        "formatJpg": true,
+        "pathUnderPublicOgHubs": true,
+        "metadataReferencesCorrectPath": true,
+        "noSvgOgImage": true,
+        "noLocalhostR2Dev": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "bamboo",
+      "routePath": "/coloring-pages/bamboo",
+      "publicPath": "public/og/hubs/bamboo.jpg",
+      "bytes": 105438,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg",
+      "checks": {
+        "metadataExists": true,
+        "publicFileExists": true,
+        "dimensions1200x630": true,
+        "formatJpg": true,
+        "pathUnderPublicOgHubs": true,
+        "metadataReferencesCorrectPath": true,
+        "noSvgOgImage": true,
+        "noLocalhostR2Dev": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "steam-train",
+      "routePath": "/coloring-pages/steam-train",
+      "publicPath": "public/og/hubs/steam-train.jpg",
+      "bytes": 110296,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg",
+      "checks": {
+        "metadataExists": true,
+        "publicFileExists": true,
+        "dimensions1200x630": true,
+        "formatJpg": true,
+        "pathUnderPublicOgHubs": true,
+        "metadataReferencesCorrectPath": true,
+        "noSvgOgImage": true,
+        "noLocalhostR2Dev": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "birthday-celebration",
+      "routePath": "/coloring-pages/birthday-celebration",
+      "publicPath": "public/og/hubs/birthday-celebration.jpg",
+      "bytes": 101042,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg",
+      "checks": {
+        "metadataExists": true,
+        "publicFileExists": true,
+        "dimensions1200x630": true,
+        "formatJpg": true,
+        "pathUnderPublicOgHubs": true,
+        "metadataReferencesCorrectPath": true,
+        "noSvgOgImage": true,
+        "noLocalhostR2Dev": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "christmas-plushie",
+      "routePath": "/coloring-pages/christmas-plushie",
+      "publicPath": "public/og/hubs/christmas-plushie.jpg",
+      "bytes": 96004,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg",
+      "checks": {
+        "metadataExists": true,
+        "publicFileExists": true,
+        "dimensions1200x630": true,
+        "formatJpg": true,
+        "pathUnderPublicOgHubs": true,
+        "metadataReferencesCorrectPath": true,
+        "noSvgOgImage": true,
+        "noLocalhostR2Dev": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "halloween-costume",
+      "routePath": "/coloring-pages/halloween-costume",
+      "publicPath": "public/og/hubs/halloween-costume.jpg",
+      "bytes": 98226,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg",
+      "checks": {
+        "metadataExists": true,
+        "publicFileExists": true,
+        "dimensions1200x630": true,
+        "formatJpg": true,
+        "pathUnderPublicOgHubs": true,
+        "metadataReferencesCorrectPath": true,
+        "noSvgOgImage": true,
+        "noLocalhostR2Dev": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "summoning",
+      "routePath": "/coloring-pages/summoning",
+      "publicPath": "public/og/hubs/summoning.jpg",
+      "bytes": 105805,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg",
+      "checks": {
+        "metadataExists": true,
+        "publicFileExists": true,
+        "dimensions1200x630": true,
+        "formatJpg": true,
+        "pathUnderPublicOgHubs": true,
+        "metadataReferencesCorrectPath": true,
+        "noSvgOgImage": true,
+        "noLocalhostR2Dev": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "terrier",
+      "routePath": "/coloring-pages/terrier",
+      "publicPath": "public/og/hubs/terrier.jpg",
+      "bytes": 96979,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg",
+      "checks": {
+        "metadataExists": true,
+        "publicFileExists": true,
+        "dimensions1200x630": true,
+        "formatJpg": true,
+        "pathUnderPublicOgHubs": true,
+        "metadataReferencesCorrectPath": true,
+        "noSvgOgImage": true,
+        "noLocalhostR2Dev": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "woolly-mammoth",
+      "routePath": "/coloring-pages/woolly-mammoth",
+      "publicPath": "public/og/hubs/woolly-mammoth.jpg",
+      "bytes": 104939,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg",
+      "checks": {
+        "metadataExists": true,
+        "publicFileExists": true,
+        "dimensions1200x630": true,
+        "formatJpg": true,
+        "pathUnderPublicOgHubs": true,
+        "metadataReferencesCorrectPath": true,
+        "noSvgOgImage": true,
+        "noLocalhostR2Dev": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "saber-toothed-tiger",
+      "routePath": "/coloring-pages/saber-toothed-tiger",
+      "publicPath": "public/og/hubs/saber-toothed-tiger.jpg",
+      "bytes": 102731,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg",
+      "checks": {
+        "metadataExists": true,
+        "publicFileExists": true,
+        "dimensions1200x630": true,
+        "formatJpg": true,
+        "pathUnderPublicOgHubs": true,
+        "metadataReferencesCorrectPath": true,
+        "noSvgOgImage": true,
+        "noLocalhostR2Dev": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "magic",
+      "routePath": "/coloring-pages/magic",
+      "publicPath": "public/og/hubs/magic.jpg",
+      "bytes": 105507,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg",
+      "checks": {
+        "metadataExists": true,
+        "publicFileExists": true,
+        "dimensions1200x630": true,
+        "formatJpg": true,
+        "pathUnderPublicOgHubs": true,
+        "metadataReferencesCorrectPath": true,
+        "noSvgOgImage": true,
+        "noLocalhostR2Dev": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "ankylosaurus",
+      "routePath": "/coloring-pages/ankylosaurus",
+      "publicPath": "public/og/hubs/ankylosaurus.jpg",
+      "bytes": 100493,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg",
+      "checks": {
+        "metadataExists": true,
+        "publicFileExists": true,
+        "dimensions1200x630": true,
+        "formatJpg": true,
+        "pathUnderPublicOgHubs": true,
+        "metadataReferencesCorrectPath": true,
+        "noSvgOgImage": true,
+        "noLocalhostR2Dev": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "trick-or-treat",
+      "routePath": "/coloring-pages/trick-or-treat",
+      "publicPath": "public/og/hubs/trick-or-treat.jpg",
+      "bytes": 99829,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg",
+      "checks": {
+        "metadataExists": true,
+        "publicFileExists": true,
+        "dimensions1200x630": true,
+        "formatJpg": true,
+        "pathUnderPublicOgHubs": true,
+        "metadataReferencesCorrectPath": true,
+        "noSvgOgImage": true,
+        "noLocalhostR2Dev": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "lily",
+      "routePath": "/coloring-pages/lily",
+      "publicPath": "public/og/hubs/lily.jpg",
+      "bytes": 102714,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg",
+      "checks": {
+        "metadataExists": true,
+        "publicFileExists": true,
+        "dimensions1200x630": true,
+        "formatJpg": true,
+        "pathUnderPublicOgHubs": true,
+        "metadataReferencesCorrectPath": true,
+        "noSvgOgImage": true,
+        "noLocalhostR2Dev": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "forget-me-not",
+      "routePath": "/coloring-pages/forget-me-not",
+      "publicPath": "public/og/hubs/forget-me-not.jpg",
+      "bytes": 102156,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg",
+      "checks": {
+        "metadataExists": true,
+        "publicFileExists": true,
+        "dimensions1200x630": true,
+        "formatJpg": true,
+        "pathUnderPublicOgHubs": true,
+        "metadataReferencesCorrectPath": true,
+        "noSvgOgImage": true,
+        "noLocalhostR2Dev": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "mosasaurus",
+      "routePath": "/coloring-pages/mosasaurus",
+      "publicPath": "public/og/hubs/mosasaurus.jpg",
+      "bytes": 97967,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg",
+      "checks": {
+        "metadataExists": true,
+        "publicFileExists": true,
+        "dimensions1200x630": true,
+        "formatJpg": true,
+        "pathUnderPublicOgHubs": true,
+        "metadataReferencesCorrectPath": true,
+        "noSvgOgImage": true,
+        "noLocalhostR2Dev": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "plesiosaurus",
+      "routePath": "/coloring-pages/plesiosaurus",
+      "publicPath": "public/og/hubs/plesiosaurus.jpg",
+      "bytes": 95664,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg",
+      "checks": {
+        "metadataExists": true,
+        "publicFileExists": true,
+        "dimensions1200x630": true,
+        "formatJpg": true,
+        "pathUnderPublicOgHubs": true,
+        "metadataReferencesCorrectPath": true,
+        "noSvgOgImage": true,
+        "noLocalhostR2Dev": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "pterodactyl",
+      "routePath": "/coloring-pages/pterodactyl",
+      "publicPath": "public/og/hubs/pterodactyl.jpg",
+      "bytes": 100281,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg",
+      "checks": {
+        "metadataExists": true,
+        "publicFileExists": true,
+        "dimensions1200x630": true,
+        "formatJpg": true,
+        "pathUnderPublicOgHubs": true,
+        "metadataReferencesCorrectPath": true,
+        "noSvgOgImage": true,
+        "noLocalhostR2Dev": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "iguanodon",
+      "routePath": "/coloring-pages/iguanodon",
+      "publicPath": "public/og/hubs/iguanodon.jpg",
+      "bytes": 100674,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg",
+      "checks": {
+        "metadataExists": true,
+        "publicFileExists": true,
+        "dimensions1200x630": true,
+        "formatJpg": true,
+        "pathUnderPublicOgHubs": true,
+        "metadataReferencesCorrectPath": true,
+        "noSvgOgImage": true,
+        "noLocalhostR2Dev": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "bulldog",
+      "routePath": "/coloring-pages/bulldog",
+      "publicPath": "public/og/hubs/bulldog.jpg",
+      "bytes": 99329,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg",
+      "checks": {
+        "metadataExists": true,
+        "publicFileExists": true,
+        "dimensions1200x630": true,
+        "formatJpg": true,
+        "pathUnderPublicOgHubs": true,
+        "metadataReferencesCorrectPath": true,
+        "noSvgOgImage": true,
+        "noLocalhostR2Dev": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "collie",
+      "routePath": "/coloring-pages/collie",
+      "publicPath": "public/og/hubs/collie.jpg",
+      "bytes": 98891,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg",
+      "checks": {
+        "metadataExists": true,
+        "publicFileExists": true,
+        "dimensions1200x630": true,
+        "formatJpg": true,
+        "pathUnderPublicOgHubs": true,
+        "metadataReferencesCorrectPath": true,
+        "noSvgOgImage": true,
+        "noLocalhostR2Dev": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "cookie",
+      "routePath": "/coloring-pages/cookie",
+      "publicPath": "public/og/hubs/cookie.jpg",
+      "bytes": 105843,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg",
+      "checks": {
+        "metadataExists": true,
+        "publicFileExists": true,
+        "dimensions1200x630": true,
+        "formatJpg": true,
+        "pathUnderPublicOgHubs": true,
+        "metadataReferencesCorrectPath": true,
+        "noSvgOgImage": true,
+        "noLocalhostR2Dev": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "daisy",
+      "routePath": "/coloring-pages/daisy",
+      "publicPath": "public/og/hubs/daisy.jpg",
+      "bytes": 101387,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg",
+      "checks": {
+        "metadataExists": true,
+        "publicFileExists": true,
+        "dimensions1200x630": true,
+        "formatJpg": true,
+        "pathUnderPublicOgHubs": true,
+        "metadataReferencesCorrectPath": true,
+        "noSvgOgImage": true,
+        "noLocalhostR2Dev": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "pteranodon",
+      "routePath": "/coloring-pages/pteranodon",
+      "publicPath": "public/og/hubs/pteranodon.jpg",
+      "bytes": 102400,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg",
+      "checks": {
+        "metadataExists": true,
+        "publicFileExists": true,
+        "dimensions1200x630": true,
+        "formatJpg": true,
+        "pathUnderPublicOgHubs": true,
+        "metadataReferencesCorrectPath": true,
+        "noSvgOgImage": true,
+        "noLocalhostR2Dev": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "nigiri",
+      "routePath": "/coloring-pages/nigiri",
+      "publicPath": "public/og/hubs/nigiri.jpg",
+      "bytes": 107977,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg",
+      "checks": {
+        "metadataExists": true,
+        "publicFileExists": true,
+        "dimensions1200x630": true,
+        "formatJpg": true,
+        "pathUnderPublicOgHubs": true,
+        "metadataReferencesCorrectPath": true,
+        "noSvgOgImage": true,
+        "noLocalhostR2Dev": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "orchid",
+      "routePath": "/coloring-pages/orchid",
+      "publicPath": "public/og/hubs/orchid.jpg",
+      "bytes": 104467,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg",
+      "checks": {
+        "metadataExists": true,
+        "publicFileExists": true,
+        "dimensions1200x630": true,
+        "formatJpg": true,
+        "pathUnderPublicOgHubs": true,
+        "metadataReferencesCorrectPath": true,
+        "noSvgOgImage": true,
+        "noLocalhostR2Dev": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "poppy",
+      "routePath": "/coloring-pages/poppy",
+      "publicPath": "public/og/hubs/poppy.jpg",
+      "bytes": 103092,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg",
+      "checks": {
+        "metadataExists": true,
+        "publicFileExists": true,
+        "dimensions1200x630": true,
+        "formatJpg": true,
+        "pathUnderPublicOgHubs": true,
+        "metadataReferencesCorrectPath": true,
+        "noSvgOgImage": true,
+        "noLocalhostR2Dev": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "lotus",
+      "routePath": "/coloring-pages/lotus",
+      "publicPath": "public/og/hubs/lotus.jpg",
+      "bytes": 102944,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg",
+      "checks": {
+        "metadataExists": true,
+        "publicFileExists": true,
+        "dimensions1200x630": true,
+        "formatJpg": true,
+        "pathUnderPublicOgHubs": true,
+        "metadataReferencesCorrectPath": true,
+        "noSvgOgImage": true,
+        "noLocalhostR2Dev": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "palm",
+      "routePath": "/coloring-pages/palm",
+      "publicPath": "public/og/hubs/palm.jpg",
+      "bytes": 96004,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg",
+      "checks": {
+        "metadataExists": true,
+        "publicFileExists": true,
+        "dimensions1200x630": true,
+        "formatJpg": true,
+        "pathUnderPublicOgHubs": true,
+        "metadataReferencesCorrectPath": true,
+        "noSvgOgImage": true,
+        "noLocalhostR2Dev": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "leprechaun",
+      "routePath": "/coloring-pages/leprechaun",
+      "publicPath": "public/og/hubs/leprechaun.jpg",
+      "bytes": 91783,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg",
+      "checks": {
+        "metadataExists": true,
+        "publicFileExists": true,
+        "dimensions1200x630": true,
+        "formatJpg": true,
+        "pathUnderPublicOgHubs": true,
+        "metadataReferencesCorrectPath": true,
+        "noSvgOgImage": true,
+        "noLocalhostR2Dev": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "salmon",
+      "routePath": "/coloring-pages/salmon",
+      "publicPath": "public/og/hubs/salmon.jpg",
+      "bytes": 105388,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg",
+      "checks": {
+        "metadataExists": true,
+        "publicFileExists": true,
+        "dimensions1200x630": true,
+        "formatJpg": true,
+        "pathUnderPublicOgHubs": true,
+        "metadataReferencesCorrectPath": true,
+        "noSvgOgImage": true,
+        "noLocalhostR2Dev": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "gingerbread",
+      "routePath": "/coloring-pages/gingerbread",
+      "publicPath": "public/og/hubs/gingerbread.jpg",
+      "bytes": 102923,
+      "width": 1200,
+      "height": 630,
+      "format": "jpeg",
+      "checks": {
+        "metadataExists": true,
+        "publicFileExists": true,
+        "dimensions1200x630": true,
+        "formatJpg": true,
+        "pathUnderPublicOgHubs": true,
+        "metadataReferencesCorrectPath": true,
+        "noSvgOgImage": true,
+        "noLocalhostR2Dev": true
+      },
+      "passed": true
+    }
+  ],
+  "blockers": []
+}

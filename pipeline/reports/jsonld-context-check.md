@@ -7,10 +7,10 @@
 - app/api present: false
 - Runtime available records: 6352
 - Deferred manual-review records: 205
-- Runtime indexable hubs: 131
+- Runtime indexable hubs: 163
 - Regular sitemap exists: true
 - Image sitemap exists: true
-- Route-level OG images: true (133)
+- Route-level OG images: true (165)
 - Public site URL: https://www.ilovecoloringpage.com
 - Public asset base: https://assets.ilovecoloringpage.com/coloring-pages
 - SVG internal-only: true
