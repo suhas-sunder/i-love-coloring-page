@@ -1,0 +1,58 @@
+{
+  "generatedAt": "2026-05-14T21:54:18.3696229-04:00",
+  "runId": "final-local-acceptance-context-check",
+  "repo": {
+    "expectedProjectName": "i-love-coloring-page",
+    "topLevel": "D:/PROJECTS-and-WORK/work-projects/all_projects/i-love-coloring-page",
+    "projectNamePassed": true,
+    "branch": "ver-5-deployed-may-13-2026",
+    "branchPassed": true,
+    "head": "1e91c7bdeb9f2cfb71500f94d84e0aa8d1644ce0",
+    "requiredCommit": "1e91c7bdeb9f2cfb71500f94d84e0aa8d1644ce0",
+    "requiredCommitExists": true
+  },
+  "appShape": {
+    "appApiExists": false,
+    "staticExportConfigured": true,
+    "frontendOnlyStaticExport": true
+  },
+  "runtime": {
+    "availableRecords": 6352,
+    "availableRecordsPassed": true,
+    "runtimeHubCount": 163,
+    "runtimeHubCountPassed": true,
+    "runtimeSitemapRouteCount": 163,
+    "runtimeSitemapRouteCountPassed": true
+  },
+  "seoAssets": {
+    "imageSitemapExists": true,
+    "imageSitemapWebpEntries": 6352,
+    "imageSitemapWebpEntriesPassed": true,
+    "ogImagesExist": true,
+    "routeLevelOgJpgCount": 165,
+    "routeLevelOgJpgCountPassed": true,
+    "jsonLdExists": true
+  },
+  "publicSafeDefaults": {
+    "siteUrl": "https://www.ilovecoloringpage.com",
+    "assetBaseUrl": "https://assets.ilovecoloringpage.com/coloring-pages",
+    "contactEmail": "admin@ilovecoloringpage.com",
+    "passed": true
+  },
+  "downloadsAndMedia": {
+    "publicDownloadFormats": ["PNG", "JPG", "WebP"],
+    "svgInternalOnly": true,
+    "svgUserDownloadAbsent": true
+  },
+  "ads": {
+    "liveAdsenseCodeAbsent": true
+  },
+  "protectedPaths": {
+    "imagesUntouchedAtBaseline": true,
+    "ilovesvgUntouchedAtBaseline": true
+  },
+  "summary": {
+    "contextCheckPassed": true,
+    "blockers": []
+  }
+}

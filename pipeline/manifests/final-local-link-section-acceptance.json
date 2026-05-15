@@ -1,0 +1,83 @@
+{
+  "generatedAt": "2026-05-15T02:29:13.293Z",
+  "runId": "final-local-link-section-acceptance",
+  "summary": {
+    "headerHoverFocusPassed": true,
+    "popularCollectionsPassed": true,
+    "relatedCollectionsPassed": true,
+    "moreWaysRemovedOrDistinct": true,
+    "moreMenuPassed": true,
+    "mobileMenuPassed": true,
+    "noRoughTableLook": true,
+    "noCrampedPills": true,
+    "noLabelCountCollisions": true,
+    "noEllipsizedImportantLabels": true,
+    "noLazyDuplicateSection": true,
+    "sourceHandlersPresent": true,
+    "linkSectionAcceptancePassed": true
+  },
+  "details": {
+    "header": {
+      "hoverBackgroundChanges": false,
+      "hoverNoUnderline": true,
+      "hoverNoPseudoUnderline": true,
+      "hoverNoLayoutShift": true,
+      "hoverCursorPointer": true,
+      "focusVisibleNonUnderline": true,
+      "focusVisibleNoOutline": true,
+      "focusVisibleBackground": false,
+      "passed": true
+    },
+    "linkSections": {
+      "popular": {
+        "count": 8,
+        "collisions": 0,
+        "countAlignRight": true,
+        "ellipsized": false
+      },
+      "heroRelated": {
+        "count": 6,
+        "collisions": 0,
+        "countAlignRight": true,
+        "ellipsized": false
+      },
+      "related": {
+        "count": 8,
+        "collisions": 0,
+        "countAlignRight": true,
+        "ellipsized": false
+      },
+      "moreWaysRemovedOrDistinct": true,
+      "noUselessEyebrowLabels": true,
+      "passed": true
+    },
+    "moreMenu": {
+      "width": 1376,
+      "height": 860,
+      "maxHeight": "860px",
+      "searchAtTop": true,
+      "groupedSectionCount": 10,
+      "ellipsizedLabels": 0,
+      "nowrapLabels": 0,
+      "countAlignRight": true,
+      "hasAd": false,
+      "unnecessaryLargeScreenScroll": false,
+      "searchFound": true,
+      "escapeClosed": true,
+      "outsideClosed": true,
+      "linkClickClosesAndNavigates": true,
+      "passed": true
+    },
+    "mobileMenu": {
+      "open": true,
+      "hasSearch": true,
+      "hasAds": false,
+      "width": 390,
+      "searchFound": true,
+      "escapeClosed": true,
+      "linkClickClosesAndNavigates": true,
+      "passed": true
+    }
+  },
+  "blockers": []
+}

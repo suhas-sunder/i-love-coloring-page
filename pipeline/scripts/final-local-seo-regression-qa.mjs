@@ -1,0 +1,396 @@
+#!/usr/bin/env node
+
+import { createRequire } from "node:module";
+import fs from "node:fs";
+import fsp from "node:fs/promises";
+import path from "node:path";
+
+const require = createRequire(import.meta.url);
+const {
+  REPO_ROOT,
+  ensureStaticExport,
+  passFail,
+  readJson,
+  readText,
+  renderTable,
+  writeJson,
+  writeText,
+} = require("./predeploy-local-utils.cjs");
+
+const SITE_URL = "https://www.ilovecoloringpage.com";
+const EXPECTED_RUNTIME_HUBS = 163;
+const EXPECTED_IMAGE_SITEMAP_ENTRIES = 6352;
+const EXPECTED_OG_JPG_COUNT = 165;
+const forbiddenSchemaTypes = new Set(["Review", "AggregateRating", "Product", "Offer", "FAQPage", "SearchAction"]);
+const sampledRoutes = [
+  "/",
+  "/coloring-pages",
+  "/coloring-pages/animals",
+  "/coloring-pages/t-rex",
+  "/coloring-pages/dragons",
+  "/coloring-pages/dodo",
+  "/coloring-pages/magic",
+  "/coloring-pages/lily",
+  "/about",
+  "/contact",
+  "/privacy",
+  "/terms",
+  "/affiliate-disclosure",
+  "/editorial-policy",
+];
+const trustRoutes = ["/about", "/contact", "/privacy", "/terms", "/affiliate-disclosure", "/editorial-policy"];
+
+main().catch((error) => {
+  console.error(error);
+  process.exitCode = 1;
+});
+
+async function main() {
+  const build = await ensureStaticExport({ force: false });
+  const seoRegression = await runSeoRegression(build);
+  await writeJson("pipeline/manifests/final-local-seo-regression-results.json", seoRegression);
+  await writeText("pipeline/reports/final-local-seo-regression-report.md", renderSeoReport(seoRegression));
+
+  const trustReview = await runTrustContentReview(build);
+  await writeJson("pipeline/manifests/final-local-trust-content-review.json", trustReview);
+  await writeText("pipeline/reports/final-local-trust-content-review.md", renderTrustReport(trustReview));
+
+  const gate = await buildAcceptanceGate(seoRegression, trustReview);
+  await writeJson("pipeline/manifests/final-local-acceptance-gate.json", gate);
+  await writeText("pipeline/reports/final-local-acceptance-gate.md", renderGateReport(gate));
+
+  console.log(JSON.stringify({ seoRegressionPassed: seoRegression.summary.seoRegressionPassed, trustContentPassed: trustReview.summary.trustContentPassed, readyForNetlifyDeployment: gate.ready_for_netlify_deployment }, null, 2));
+  if (!gate.ready_for_netlify_deployment) process.exitCode = 1;
+}
+
+async function runSeoRegression(build) {
+  const runtimeSiteMap = await readJson("src/generated/coloring/runtime-site-map.json");
+  const runtimeHubs = await readJson("src/generated/coloring/runtime-hubs.json");
+  const jsonLdData = await readJson("pipeline/manifests/jsonld-route-data.json");
+  const ogData = await readJson("src/generated/coloring/og-images.json");
+  const sitemapPath = path.join(build.outDir, "sitemap.xml");
+  const imageSitemapPath = path.join(build.outDir, "image-sitemap.xml");
+  const publicImageSitemap = path.join(REPO_ROOT, "public", "image-sitemap.xml");
+  const sitemap = await fsp.readFile(sitemapPath, "utf8");
+  const imageSitemap = await fsp.readFile(fs.existsSync(imageSitemapPath) ? imageSitemapPath : publicImageSitemap, "utf8");
+  const sitemapLocs = extractXmlLocs(sitemap);
+  const imageLocCount = countMatches(imageSitemap, /<image:loc>/g);
+  const runtimeUrls = runtimeSiteMap.entries.map((entry) => `${SITE_URL}${entry.path === "/" ? "" : entry.path}`);
+  const hubOgMissing = runtimeHubs.hubs
+    .map((hub) => {
+      const metadata = ogData.metadataByPath?.[hub.route];
+      const relativePath = metadata?.ogImagePath ? `public${metadata.ogImagePath}` : "";
+      return { route: hub.route, relativePath };
+    })
+    .filter((entry) => !entry.relativePath || !fs.existsSync(path.join(REPO_ROOT, entry.relativePath)));
+  const ogJpgCount = await countFiles(path.join(REPO_ROOT, "public", "og"), /\.jpg$/i);
+  const sampled = await Promise.all(sampledRoutes.map((route) => inspectRouteMetadata(build.outDir, route)));
+  const sampledJsonLdTypes = sampled.flatMap((entry) => entry.jsonLdTypes);
+  const allJsonLdTypes = flattenTypes(jsonLdData.routes);
+  const sitemapTextUnsafe = /localhost|127\.0\.0\.1|r2\.dev|r2\.cloudflarestorage\.com/i.test(`${sitemap}\n${imageSitemap}`);
+  const perImageRoutePattern = /\/coloring-pages\/[^/\s<]+\/[^/\s<]+/i;
+
+  const summary = {
+    sitemapExistsInStaticOutput: fs.existsSync(sitemapPath),
+    sitemapContainsExpectedRuntimeRouteSet: runtimeUrls.every((url) => sitemapLocs.includes(url)),
+    sitemapRuntimeRouteCount: runtimeUrls.length,
+    runtimeSitemapRouteCount: runtimeSiteMap.entries.length,
+    sitemapLocCount: sitemapLocs.length,
+    imageSitemapExists: fs.existsSync(imageSitemapPath) || fs.existsSync(publicImageSitemap),
+    imageSitemapWebpEntries: imageLocCount,
+    imageSitemapWebpEntryCountPassed: imageLocCount === EXPECTED_IMAGE_SITEMAP_ENTRIES,
+    imageSitemapExcludesSvgPngThumbs: !/\/svg\/|\.svg(?:<|$)|\/png\/|\/thumbs\//i.test(imageSitemap),
+    ogImagesExistForAllHubRoutes: hubOgMissing.length === 0,
+    ogRouteLevelJpgCount: ogJpgCount,
+    ogRouteLevelJpgCountPassed: ogJpgCount === EXPECTED_OG_JPG_COUNT,
+    jsonLdExistsForSampledRoutes: sampled.every((entry) => entry.jsonLdScriptCount > 0),
+    jsonLdParsesForSampledRoutes: sampled.every((entry) => entry.jsonLdParseErrors.length === 0),
+    noForbiddenSchemaTypes: [...forbiddenSchemaTypes].every((schemaType) => !allJsonLdTypes.includes(schemaType) && !sampledJsonLdTypes.includes(schemaType)),
+    noPerImageRoutes: !perImageRoutePattern.test(sitemap),
+    noLocalhostR2DevPrivateEndpoints: !sitemapTextUnsafe && sampled.every((entry) => entry.noUnsafeEndpoints),
+    canonicalUrlsUseWww: sampled.every((entry) => entry.canonical?.startsWith(SITE_URL)),
+  };
+  summary.seoRegressionPassed =
+    summary.sitemapExistsInStaticOutput &&
+    summary.sitemapContainsExpectedRuntimeRouteSet &&
+    summary.runtimeSitemapRouteCount === EXPECTED_RUNTIME_HUBS &&
+    summary.imageSitemapExists &&
+    summary.imageSitemapWebpEntryCountPassed &&
+    summary.imageSitemapExcludesSvgPngThumbs &&
+    summary.ogImagesExistForAllHubRoutes &&
+    summary.ogRouteLevelJpgCountPassed &&
+    summary.jsonLdExistsForSampledRoutes &&
+    summary.jsonLdParsesForSampledRoutes &&
+    summary.noForbiddenSchemaTypes &&
+    summary.noPerImageRoutes &&
+    summary.noLocalhostR2DevPrivateEndpoints &&
+    summary.canonicalUrlsUseWww;
+
+  return {
+    generatedAt: new Date().toISOString(),
+    runId: "final-local-seo-regression-results",
+    build,
+    sampledRoutes,
+    summary,
+    sampled,
+    missingHubOgImages: hubOgMissing,
+    blockers: buildBlockers(summary, "seoRegressionPassed"),
+  };
+}
+
+async function inspectRouteMetadata(outDir, route) {
+  const html = await readOutRouteHtml(outDir, route);
+  const jsonLdScripts = [...html.matchAll(/<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)].map((match) => decodeHtml(match[1].trim()));
+  const parsed = [];
+  const parseErrors = [];
+  for (const script of jsonLdScripts) {
+    try {
+      parsed.push(JSON.parse(script));
+    } catch (error) {
+      parseErrors.push(error instanceof Error ? error.message : String(error));
+    }
+  }
+  const canonical = html.match(/<link[^>]+rel=["']canonical["'][^>]+href=["']([^"']+)["']/i)?.[1] || null;
+  return {
+    route,
+    titleExists: /<title>[^<]+<\/title>/i.test(html),
+    metaDescriptionExists: /<meta[^>]+name=["']description["'][^>]+content=["'][^"']+["']/i.test(html),
+    canonical,
+    ogTitleExists: /property=["']og:title["']/i.test(html),
+    ogDescriptionExists: /property=["']og:description["']/i.test(html),
+    ogUrlExists: /property=["']og:url["']/i.test(html),
+    ogImageExists: /property=["']og:image["']/i.test(html),
+    ogImageStaticJpg: /content=["']https:\/\/www\.ilovecoloringpage\.com\/og\/[^"']+\.jpg["']/i.test(html),
+    twitterCardLarge: /name=["']twitter:card["'][^>]+content=["']summary_large_image["']/i.test(html),
+    twitterImageExists: /name=["']twitter:image["']/i.test(html),
+    jsonLdScriptCount: jsonLdScripts.length,
+    jsonLdParseErrors: parseErrors,
+    jsonLdTypes: flattenTypes(parsed),
+    noUnsafeEndpoints: !/localhost|127\.0\.0\.1|r2\.dev|r2\.cloudflarestorage\.com/i.test(html),
+    noSvgUrls: !/\/svg\/|\.svg(?:["'<\s]|$)/i.test(html),
+  };
+}
+
+async function runTrustContentReview(build) {
+  const trustPageSource = await readText("src/lib/trust/trustPages.ts");
+  const pageResults = [];
+  for (const route of trustRoutes) {
+    const html = await readOutRouteHtml(build.outDir, route);
+    const text = normalizeText(stripHtml(html));
+    pageResults.push({
+      route,
+      exists: html.length > 0,
+      contactEmailAppears: text.includes("admin@ilovecoloringpage.com"),
+      noFakeAddress: !/\b\d{2,6}\s+[A-Z][A-Za-z0-9'.-]+\s+(Street|St\.|Avenue|Ave\.|Road|Rd\.|Drive|Dr\.|Lane|Ln\.|Boulevard|Blvd\.)\b/.test(text),
+      noFakePhone: !/\b(?:\+?1[-.\s]?)?\(?\d{3}\)?[-.\s]\d{3}[-.\s]\d{4}\b/.test(text),
+      noFalseCompanyClaims: !/\b(LLC|Inc\.|Corporation|Corp\.)\b/.test(text),
+      noPublicSvgDownloadClaims: !/Download SVG|SVG download/i.test(text),
+      noInternalPipelineWording: !/\bpipeline\b/i.test(text),
+      noMisleadingOnlineColoringClaims: !/(color online now|online coloring tools? (?:are|is) available|use our online coloring)/i.test(text),
+    });
+  }
+
+  const privacy = pageResults.find((page) => page.route === "/privacy");
+  const terms = pageResults.find((page) => page.route === "/terms");
+  const affiliate = pageResults.find((page) => page.route === "/affiliate-disclosure");
+  const editorial = pageResults.find((page) => page.route === "/editorial-policy");
+  const homepage = await inspectContentRoute(build.outDir, "/");
+  const coloringPages = await inspectContentRoute(build.outDir, "/coloring-pages");
+  const sampledHub = await inspectContentRoute(build.outDir, "/coloring-pages/animals");
+
+  const summary = {
+    pagesExist: pageResults.every((page) => page.exists),
+    contactEmailIsAdmin: pageResults.some((page) => page.route === "/contact" && page.contactEmailAppears),
+    noFakeAddress: pageResults.every((page) => page.noFakeAddress),
+    noFakePhone: pageResults.every((page) => page.noFakePhone),
+    noFalseCompanyClaims: pageResults.every((page) => page.noFalseCompanyClaims),
+    privacyTermsDraftSafe: /draft/i.test(await readOutRouteHtml(build.outDir, "/privacy")) && /draft/i.test(await readOutRouteHtml(build.outDir, "/terms")),
+    privacyMentionsFutureAdsCookiesAccurately: privacy ? /Live Google AdSense code is not installed yet|future advertising/i.test(stripHtml(await readOutRouteHtml(build.outDir, "/privacy"))) : false,
+    affiliateDisclosurePresent: Boolean(affiliate?.exists),
+    editorialPolicyPresent: Boolean(editorial?.exists),
+    noMisleadingOnlineColoringClaims: pageResults.every((page) => page.noMisleadingOnlineColoringClaims) && homepage.noMisleadingOnlineColoringClaims && coloringPages.noMisleadingOnlineColoringClaims && sampledHub.noMisleadingOnlineColoringClaims,
+    noPublicSvgDownloadClaims: pageResults.every((page) => page.noPublicSvgDownloadClaims) && homepage.noPublicSvgDownloadClaims && coloringPages.noPublicSvgDownloadClaims && sampledHub.noPublicSvgDownloadClaims,
+    noInternalPipelineWording: pageResults.every((page) => page.noInternalPipelineWording) && homepage.noInternalPipelineWording && coloringPages.noInternalPipelineWording && sampledHub.noInternalPipelineWording,
+    legalOwnerReviewRecommended: /legalReviewRecommended:\s*true|ownerReviewRequired:\s*true/.test(trustPageSource),
+  };
+  summary.trustContentPassed = Object.values(summary).every(Boolean);
+
+  return {
+    generatedAt: new Date().toISOString(),
+    runId: "final-local-trust-content-review",
+    summary,
+    pageResults,
+    sampledPublicRoutes: [homepage, coloringPages, sampledHub],
+    ownerReviewStatus: "Owner and legal review remain recommended for draft policy pages before launch and live ads.",
+    blockers: buildBlockers(summary, "trustContentPassed"),
+  };
+}
+
+async function inspectContentRoute(outDir, route) {
+  const html = await readOutRouteHtml(outDir, route);
+  const text = normalizeText(stripHtml(html));
+  return {
+    route,
+    exists: html.length > 0,
+    galleryFirstUxPreserved: route === "/" ? /Popular collections|Fresh pages|Featured/i.test(text) : /Printable gallery|Browse gallery/i.test(text),
+    noMisleadingOnlineColoringClaims: !/(color online now|online coloring tools? (?:are|is) available|use our online coloring)/i.test(text),
+    noPublicSvgDownloadClaims: !/Download SVG|SVG download/i.test(text),
+    noInternalPipelineWording: !/\bpipeline\b/i.test(text),
+  };
+}
+
+async function buildAcceptanceGate(seoRegression, trustReview) {
+  const staticExport = await readJson("pipeline/manifests/final-local-static-export-results.json");
+  const browser = await readJson("pipeline/manifests/final-local-acceptance-browser-qa-results.json");
+  const print = await readJson("pipeline/manifests/final-local-acceptance-print-qa-results.json");
+  const links = await readJson("pipeline/manifests/final-local-link-section-acceptance.json");
+  const ad = await readJson("pipeline/manifests/final-local-ad-placeholder-qa.json");
+  const noAppApi = !fs.existsSync(path.join(REPO_ROOT, "app", "api"));
+  const noSvgDownload = browser.summary.svgDownloadAbsent && print.summary.svgDownloadAbsent;
+  const fields = {
+    generatedAt: new Date().toISOString(),
+    runId: "final-local-acceptance-gate",
+    static_export_passed: staticExport.summary.staticExportPassed === true,
+    browser_qa_passed: browser.summary.browserQaPassed === true,
+    print_pdf_passed: print.summary.printQaPassed === true,
+    print_one_page_passed: print.summary.allGeneratedPdfsOnePage === true,
+    print_branding_safe: print.summary.brandingIntegratedIntoFrame === true && print.summary.brandingDoesNotOverlapArtwork === true,
+    navigation_hover_passed: browser.summary.headerNavHoverFocusPassed === true,
+    popular_collections_passed: links.summary.popularCollectionsPassed === true,
+    related_collections_passed: links.summary.relatedCollectionsPassed === true,
+    more_menu_passed: links.summary.moreMenuPassed === true,
+    seo_assets_passed: seoRegression.summary.seoRegressionPassed === true,
+    trust_content_passed: trustReview.summary.trustContentPassed === true,
+    ad_placeholders_passed: ad.summary.adPlaceholderQaPassed === true,
+    no_app_api: noAppApi,
+    no_svg_download: noSvgDownload,
+    no_horizontal_overflow: browser.summary.noHorizontalOverflow === true,
+    ready_for_live_ads_round: false,
+  };
+  const blockers = Object.entries(fields)
+    .filter(([key, value]) => !["generatedAt", "runId", "ready_for_live_ads_round"].includes(key) && value !== true)
+    .map(([key]) => `${key} failed.`);
+  return {
+    ...fields,
+    ready_for_netlify_deployment: blockers.length === 0,
+    ready_for_gsc_submission_after_live_deploy: blockers.length === 0 && seoRegression.summary.seoRegressionPassed === true,
+    blockers,
+  };
+}
+
+function renderSeoReport(payload) {
+  return [
+    "# Final Local SEO Regression QA",
+    "",
+    renderTable(Object.entries(payload.summary).map(([key, value]) => [key, typeof value === "boolean" ? passFail(value) : String(value)])),
+    "",
+    `Sampled routes: ${payload.sampledRoutes.join(", ")}`,
+    `Missing hub OG images: ${payload.missingHubOgImages.length}`,
+    "",
+    `Blockers: ${payload.blockers.length ? payload.blockers.join("; ") : "none"}`,
+  ].join("\n");
+}
+
+function renderTrustReport(payload) {
+  return [
+    "# Final Local Trust Content Review",
+    "",
+    renderTable(Object.entries(payload.summary).map(([key, value]) => [key, typeof value === "boolean" ? passFail(value) : String(value)])),
+    "",
+    payload.ownerReviewStatus,
+    "",
+    "## Pages",
+    "",
+    ...payload.pageResults.map((page) => `- ${page.route}: exists ${passFail(page.exists)}, email ${passFail(page.contactEmailAppears || page.route !== "/contact")}, no fake phone ${passFail(page.noFakePhone)}`),
+    "",
+    `Blockers: ${payload.blockers.length ? payload.blockers.join("; ") : "none"}`,
+  ].join("\n");
+}
+
+function renderGateReport(payload) {
+  return [
+    "# Final Local Acceptance Gate",
+    "",
+    renderTable(
+      Object.entries(payload)
+        .filter(([key]) => !["generatedAt", "runId", "blockers"].includes(key))
+        .map(([key, value]) => [key, typeof value === "boolean" ? passFail(value) : String(value)]),
+    ),
+    "",
+    `Blockers: ${payload.blockers.length ? payload.blockers.join("; ") : "none"}`,
+  ].join("\n");
+}
+
+async function readOutRouteHtml(outDir, route) {
+  const cleanRoute = route.replace(/^\/+/, "");
+  const candidates = route === "/"
+    ? [path.join(outDir, "index.html")]
+    : [
+        path.join(outDir, `${cleanRoute}.html`),
+        path.join(outDir, cleanRoute, "index.html"),
+      ];
+  for (const filePath of candidates) {
+    if (fs.existsSync(filePath)) return fsp.readFile(filePath, "utf8");
+  }
+  throw new Error(`Static HTML not found for route ${route}`);
+}
+
+function extractXmlLocs(xml) {
+  return [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
+}
+
+function flattenTypes(value, output = []) {
+  if (Array.isArray(value)) {
+    for (const entry of value) flattenTypes(entry, output);
+    return output;
+  }
+  if (value && typeof value === "object") {
+    if (typeof value["@type"] === "string") output.push(value["@type"]);
+    for (const entry of Object.values(value)) flattenTypes(entry, output);
+  }
+  return output;
+}
+
+function countMatches(value, regex) {
+  return [...value.matchAll(regex)].length;
+}
+
+async function countFiles(root, regex) {
+  let count = 0;
+  async function walk(directory) {
+    for (const entry of await fsp.readdir(directory, { withFileTypes: true })) {
+      const absolute = path.join(directory, entry.name);
+      if (entry.isDirectory()) await walk(absolute);
+      else if (regex.test(absolute)) count += 1;
+    }
+  }
+  await walk(root);
+  return count;
+}
+
+function stripHtml(html) {
+  return html
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, " ");
+}
+
+function normalizeText(value) {
+  return decodeHtml(value).replace(/\s+/g, " ").trim();
+}
+
+function decodeHtml(value) {
+  return value
+    .replace(/&quot;/g, '"')
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&#x27;/g, "'")
+    .replace(/&#39;/g, "'");
+}
+
+function buildBlockers(summary, passKey) {
+  return Object.entries(summary)
+    .filter(([key, value]) => key !== passKey && value !== true && typeof value !== "number")
+    .map(([key]) => `${key} failed.`);
+}

@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-05-14T21:54:18.3696229-04:00",
+  "runId": "final-local-acceptance-working-tree-audit",
+  "commands": {
+    "gitStatusShort": "",
+    "gitDiffStat": "",
+    "gitDiffNameOnly": ""
+  },
+  "classification": {
+    "baselineWasCleanBeforeRoundEdits": true,
+    "unrelatedDriftFound": false,
+    "safeToProceed": true
+  },
+  "summary": {
+    "workingTreeAuditPassed": true,
+    "blockers": []
+  }
+}
