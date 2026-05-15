@@ -1,0 +1,512 @@
+{
+  "generatedAt": "2026-05-15T05:27:57.028Z",
+  "runId": "final-seo-local-print-qa",
+  "artifactDirectory": "pipeline/review/final-seo-local-acceptance/print",
+  "sourceChecks": {
+    "modalDownloadLabelRemoved": true,
+    "previewUsesContain": true,
+    "downloadControlsPresent": true,
+    "svgDownloadAbsent": true,
+    "printPdfHelperExists": true,
+    "oneSlimBorderConfigured": true,
+    "brandTextConfigured": true,
+    "brandFramePlacementConfigured": true,
+    "noFooterRowReserved": true
+  },
+  "browserChecks": {
+    "build": {
+      "buildRan": true,
+      "outDir": "D:\\PROJECTS-and-WORK\\work-projects\\all_projects\\i-love-coloring-page\\out",
+      "startedAt": "2026-05-15T05:27:19.205Z",
+      "finishedAt": "2026-05-15T05:27:40.028Z"
+    },
+    "samples": [
+      {
+        "key": "animals-alligator",
+        "label": "Animals Alligator",
+        "route": "/coloring-pages/animals",
+        "assetId": "animals__animals-alligator__4feec8505a",
+        "title": "Animals Alligator",
+        "usedFallbackVisibleCard": false,
+        "modal": {
+          "previewObjectFit": "contain",
+          "previewImageLoaded": true,
+          "panelHasUnnecessaryScrollbar": false,
+          "standaloneDownloadLabelCount": 0
+        },
+        "printSnapshot": {
+          "pageCount": 1,
+          "pageSize": "letter-portrait",
+          "pdfByteLength": 11521080,
+          "artworkBox": {
+            "x": 15,
+            "y": 15,
+            "width": 582,
+            "height": 762
+          },
+          "imageBox": {
+            "width": 508,
+            "height": 762,
+            "x": 52,
+            "y": 15
+          },
+          "brandBox": {
+            "x": 267.78,
+            "y": 7.62,
+            "width": 76.44,
+            "height": 7
+          },
+          "brandPlacement": "bottom-frame-label",
+          "brandingOverlapsArtwork": false,
+          "appUiControlsIncluded": false,
+          "printableBorderCount": 1,
+          "metadataTitle": "Animals Alligator - iLoveColoringPage.com",
+          "source": "internal-svg"
+        },
+        "pdf": {
+          "path": "pipeline\\review\\final-seo-local-acceptance\\print\\animals-alligator.pdf",
+          "exists": true,
+          "byteLength": 11521080,
+          "pageCount": 1,
+          "borderDrawCount": 1,
+          "oneSlimBorderOnly": true,
+          "logoVisible": true,
+          "logoKnockoutPresent": true,
+          "logoOverlapsArtwork": false,
+          "appUiControlsIncluded": false,
+          "brandFontSize": 7,
+          "artworkAreaRatio": 0.9149584076054664,
+          "imageAreaRatio": 0.7986234897999603
+        },
+        "downloads": {
+          "png": true,
+          "jpg": true,
+          "webp": true
+        },
+        "svgDownloadAbsent": true
+      },
+      {
+        "key": "t-rex",
+        "label": "T-Rex or dinosaur item",
+        "route": "/coloring-pages/t-rex",
+        "assetId": "anime-girls__anime-girl-summoning-jutsu-tyrannosaurus-rex-dinosaur__f9c57f8569",
+        "title": "Anime Girl Summoning Jutsu Tyrannosaurus Rex Dinosaur",
+        "usedFallbackVisibleCard": false,
+        "modal": {
+          "previewObjectFit": "contain",
+          "previewImageLoaded": true,
+          "panelHasUnnecessaryScrollbar": false,
+          "standaloneDownloadLabelCount": 0
+        },
+        "printSnapshot": {
+          "pageCount": 1,
+          "pageSize": "letter-portrait",
+          "pdfByteLength": 11521116,
+          "artworkBox": {
+            "x": 15,
+            "y": 15,
+            "width": 582,
+            "height": 762
+          },
+          "imageBox": {
+            "width": 508,
+            "height": 762,
+            "x": 52,
+            "y": 15
+          },
+          "brandBox": {
+            "x": 267.78,
+            "y": 7.62,
+            "width": 76.44,
+            "height": 7
+          },
+          "brandPlacement": "bottom-frame-label",
+          "brandingOverlapsArtwork": false,
+          "appUiControlsIncluded": false,
+          "printableBorderCount": 1,
+          "metadataTitle": "Anime Girl Summoning Jutsu Tyrannosaurus Rex Dinosaur - iLoveColoringPage.com",
+          "source": "internal-svg"
+        },
+        "pdf": {
+          "path": "pipeline\\review\\final-seo-local-acceptance\\print\\t-rex.pdf",
+          "exists": true,
+          "byteLength": 11521116,
+          "pageCount": 1,
+          "borderDrawCount": 1,
+          "oneSlimBorderOnly": true,
+          "logoVisible": true,
+          "logoKnockoutPresent": true,
+          "logoOverlapsArtwork": false,
+          "appUiControlsIncluded": false,
+          "brandFontSize": 7,
+          "artworkAreaRatio": 0.9149584076054664,
+          "imageAreaRatio": 0.7986234897999603
+        },
+        "downloads": {
+          "png": true,
+          "jpg": true,
+          "webp": true
+        },
+        "svgDownloadAbsent": true
+      },
+      {
+        "key": "christmas",
+        "label": "Christmas item",
+        "route": "/coloring-pages/christmas",
+        "assetId": "christmas__christmas-holiday-advent-calendar__a1245c4617",
+        "title": "Christmas Holiday Advent Calendar",
+        "usedFallbackVisibleCard": false,
+        "modal": {
+          "previewObjectFit": "contain",
+          "previewImageLoaded": true,
+          "panelHasUnnecessaryScrollbar": false,
+          "standaloneDownloadLabelCount": 0
+        },
+        "printSnapshot": {
+          "pageCount": 1,
+          "pageSize": "letter-portrait",
+          "pdfByteLength": 11521096,
+          "artworkBox": {
+            "x": 15,
+            "y": 15,
+            "width": 582,
+            "height": 762
+          },
+          "imageBox": {
+            "width": 508,
+            "height": 762,
+            "x": 52,
+            "y": 15
+          },
+          "brandBox": {
+            "x": 267.78,
+            "y": 7.62,
+            "width": 76.44,
+            "height": 7
+          },
+          "brandPlacement": "bottom-frame-label",
+          "brandingOverlapsArtwork": false,
+          "appUiControlsIncluded": false,
+          "printableBorderCount": 1,
+          "metadataTitle": "Christmas Holiday Advent Calendar - iLoveColoringPage.com",
+          "source": "internal-svg"
+        },
+        "pdf": {
+          "path": "pipeline\\review\\final-seo-local-acceptance\\print\\christmas.pdf",
+          "exists": true,
+          "byteLength": 11521096,
+          "pageCount": 1,
+          "borderDrawCount": 1,
+          "oneSlimBorderOnly": true,
+          "logoVisible": true,
+          "logoKnockoutPresent": true,
+          "logoOverlapsArtwork": false,
+          "appUiControlsIncluded": false,
+          "brandFontSize": 7,
+          "artworkAreaRatio": 0.9149584076054664,
+          "imageAreaRatio": 0.7986234897999603
+        },
+        "downloads": {
+          "png": true,
+          "jpg": true,
+          "webp": true
+        },
+        "svgDownloadAbsent": true
+      },
+      {
+        "key": "anime-girls",
+        "label": "Anime Girls item",
+        "route": "/coloring-pages/anime-girls",
+        "assetId": "anime-girls__anime-girl-air-balloon__1f6b5be7bc",
+        "title": "Anime Girl Air Balloon",
+        "usedFallbackVisibleCard": false,
+        "modal": {
+          "previewObjectFit": "contain",
+          "previewImageLoaded": true,
+          "panelHasUnnecessaryScrollbar": false,
+          "standaloneDownloadLabelCount": 0
+        },
+        "printSnapshot": {
+          "pageCount": 1,
+          "pageSize": "letter-portrait",
+          "pdfByteLength": 11521085,
+          "artworkBox": {
+            "x": 15,
+            "y": 15,
+            "width": 582,
+            "height": 762
+          },
+          "imageBox": {
+            "width": 508,
+            "height": 762,
+            "x": 52,
+            "y": 15
+          },
+          "brandBox": {
+            "x": 267.78,
+            "y": 7.62,
+            "width": 76.44,
+            "height": 7
+          },
+          "brandPlacement": "bottom-frame-label",
+          "brandingOverlapsArtwork": false,
+          "appUiControlsIncluded": false,
+          "printableBorderCount": 1,
+          "metadataTitle": "Anime Girl Air Balloon - iLoveColoringPage.com",
+          "source": "internal-svg"
+        },
+        "pdf": {
+          "path": "pipeline\\review\\final-seo-local-acceptance\\print\\anime-girls.pdf",
+          "exists": true,
+          "byteLength": 11521085,
+          "pageCount": 1,
+          "borderDrawCount": 1,
+          "oneSlimBorderOnly": true,
+          "logoVisible": true,
+          "logoKnockoutPresent": true,
+          "logoOverlapsArtwork": false,
+          "appUiControlsIncluded": false,
+          "brandFontSize": 7,
+          "artworkAreaRatio": 0.9149584076054664,
+          "imageAreaRatio": 0.7986234897999603
+        },
+        "downloads": {
+          "png": true,
+          "jpg": true,
+          "webp": true
+        },
+        "svgDownloadAbsent": true
+      },
+      {
+        "key": "geometric-mandala",
+        "label": "Geometric/Mandala item",
+        "route": "/coloring-pages/geometric",
+        "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-bakery-danish-pastry__e8c3e2e66e",
+        "title": "Mandala Geometry Patterns Bakery Danish Pastry",
+        "usedFallbackVisibleCard": true,
+        "modal": {
+          "previewObjectFit": "contain",
+          "previewImageLoaded": true,
+          "panelHasUnnecessaryScrollbar": false,
+          "standaloneDownloadLabelCount": 0
+        },
+        "printSnapshot": {
+          "pageCount": 1,
+          "pageSize": "letter-portrait",
+          "pdfByteLength": 11521109,
+          "artworkBox": {
+            "x": 15,
+            "y": 15,
+            "width": 582,
+            "height": 762
+          },
+          "imageBox": {
+            "width": 508,
+            "height": 762,
+            "x": 52,
+            "y": 15
+          },
+          "brandBox": {
+            "x": 267.78,
+            "y": 7.62,
+            "width": 76.44,
+            "height": 7
+          },
+          "brandPlacement": "bottom-frame-label",
+          "brandingOverlapsArtwork": false,
+          "appUiControlsIncluded": false,
+          "printableBorderCount": 1,
+          "metadataTitle": "Mandala Geometry Patterns Bakery Danish Pastry - iLoveColoringPage.com",
+          "source": "internal-svg"
+        },
+        "pdf": {
+          "path": "pipeline\\review\\final-seo-local-acceptance\\print\\geometric-mandala.pdf",
+          "exists": true,
+          "byteLength": 11521109,
+          "pageCount": 1,
+          "borderDrawCount": 1,
+          "oneSlimBorderOnly": true,
+          "logoVisible": true,
+          "logoKnockoutPresent": true,
+          "logoOverlapsArtwork": false,
+          "appUiControlsIncluded": false,
+          "brandFontSize": 7,
+          "artworkAreaRatio": 0.9149584076054664,
+          "imageAreaRatio": 0.7986234897999603
+        },
+        "downloads": {
+          "png": true,
+          "jpg": true,
+          "webp": true
+        },
+        "svgDownloadAbsent": true
+      },
+      {
+        "key": "st-patricks-day",
+        "label": "St Patricks Day item",
+        "route": "/coloring-pages/st-patricks-day",
+        "assetId": "st-patricks-day__st-patricks-day-celtic-knot-mandala-pattern-coloring-page__46e5c80f77",
+        "title": "St Patricks Day Celtic Knot Mandala Pattern Coloring Page",
+        "usedFallbackVisibleCard": false,
+        "modal": {
+          "previewObjectFit": "contain",
+          "previewImageLoaded": true,
+          "panelHasUnnecessaryScrollbar": false,
+          "standaloneDownloadLabelCount": 0
+        },
+        "printSnapshot": {
+          "pageCount": 1,
+          "pageSize": "letter-portrait",
+          "pdfByteLength": 11521120,
+          "artworkBox": {
+            "x": 15,
+            "y": 15,
+            "width": 582,
+            "height": 762
+          },
+          "imageBox": {
+            "width": 508,
+            "height": 762,
+            "x": 52,
+            "y": 15
+          },
+          "brandBox": {
+            "x": 267.78,
+            "y": 7.62,
+            "width": 76.44,
+            "height": 7
+          },
+          "brandPlacement": "bottom-frame-label",
+          "brandingOverlapsArtwork": false,
+          "appUiControlsIncluded": false,
+          "printableBorderCount": 1,
+          "metadataTitle": "St Patricks Day Celtic Knot Mandala Pattern Coloring Page - iLoveColoringPage.com",
+          "source": "internal-svg"
+        },
+        "pdf": {
+          "path": "pipeline\\review\\final-seo-local-acceptance\\print\\st-patricks-day.pdf",
+          "exists": true,
+          "byteLength": 11521120,
+          "pageCount": 1,
+          "borderDrawCount": 1,
+          "oneSlimBorderOnly": true,
+          "logoVisible": true,
+          "logoKnockoutPresent": true,
+          "logoOverlapsArtwork": false,
+          "appUiControlsIncluded": false,
+          "brandFontSize": 7,
+          "artworkAreaRatio": 0.9149584076054664,
+          "imageAreaRatio": 0.7986234897999603
+        },
+        "downloads": {
+          "png": true,
+          "jpg": true,
+          "webp": true
+        },
+        "svgDownloadAbsent": true
+      },
+      {
+        "key": "high-detail",
+        "label": "High-detail item",
+        "route": "/coloring-pages/detailed-for-adults",
+        "assetId": "mandala-geometry-patterns__mandala-geometry-patterns-bakery-brownie__995c25947e",
+        "title": "Mandala Geometry Patterns Bakery Brownie",
+        "usedFallbackVisibleCard": true,
+        "modal": {
+          "previewObjectFit": "contain",
+          "previewImageLoaded": true,
+          "panelHasUnnecessaryScrollbar": false,
+          "standaloneDownloadLabelCount": 0
+        },
+        "printSnapshot": {
+          "pageCount": 1,
+          "pageSize": "letter-portrait",
+          "pdfByteLength": 11521103,
+          "artworkBox": {
+            "x": 15,
+            "y": 15,
+            "width": 582,
+            "height": 762
+          },
+          "imageBox": {
+            "width": 508,
+            "height": 762,
+            "x": 52,
+            "y": 15
+          },
+          "brandBox": {
+            "x": 267.78,
+            "y": 7.62,
+            "width": 76.44,
+            "height": 7
+          },
+          "brandPlacement": "bottom-frame-label",
+          "brandingOverlapsArtwork": false,
+          "appUiControlsIncluded": false,
+          "printableBorderCount": 1,
+          "metadataTitle": "Mandala Geometry Patterns Bakery Brownie - iLoveColoringPage.com",
+          "source": "internal-svg"
+        },
+        "pdf": {
+          "path": "pipeline\\review\\final-seo-local-acceptance\\print\\high-detail.pdf",
+          "exists": true,
+          "byteLength": 11521103,
+          "pageCount": 1,
+          "borderDrawCount": 1,
+          "oneSlimBorderOnly": true,
+          "logoVisible": true,
+          "logoKnockoutPresent": true,
+          "logoOverlapsArtwork": false,
+          "appUiControlsIncluded": false,
+          "brandFontSize": 7,
+          "artworkAreaRatio": 0.9149584076054664,
+          "imageAreaRatio": 0.7986234897999603
+        },
+        "downloads": {
+          "png": true,
+          "jpg": true,
+          "webp": true
+        },
+        "svgDownloadAbsent": true
+      }
+    ],
+    "consoleErrors": [],
+    "summary": {
+      "sampleCount": 7,
+      "requiredSamplesCovered": true,
+      "allGeneratedPdfsExist": true,
+      "allGeneratedPdfsOnePage": true,
+      "noBlankPages": true,
+      "artworkUsesAvailablePageSpace": true,
+      "oneSlimBorderOnly": true,
+      "noDoubleBorder": true,
+      "brandingSmallAndDiscreet": true,
+      "brandingIntegratedIntoFrame": true,
+      "brandingDoesNotOverlapArtwork": true,
+      "noAppUiControlsInPrintOutput": true,
+      "svgDownloadAbsent": true,
+      "pngJpgWebpDownloadsWork": true,
+      "noConsoleErrors": true
+    }
+  },
+  "summary": {
+    "allGeneratedPdfsExist": true,
+    "allGeneratedPdfsOnePage": true,
+    "noBlankPages": true,
+    "artworkUsesAvailablePageSpace": true,
+    "oneSlimBorderOnly": true,
+    "noDoubleBorder": true,
+    "brandingSmallAndDiscreet": true,
+    "brandingIntegratedIntoFrame": true,
+    "brandingDoesNotOverlapArtwork": true,
+    "noAppUiControlsInPrintOutput": true,
+    "modalPreviewNotCropped": true,
+    "modalNoUnnecessaryScrollbar": true,
+    "modalDownloadLabelRemoved": true,
+    "svgDownloadAbsent": true,
+    "pngJpgWebpDownloadsWork": true,
+    "noConsoleErrors": true,
+    "printQaPassed": true
+  },
+  "blockers": []
+}

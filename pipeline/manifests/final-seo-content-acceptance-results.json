@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-05-15T05:21:52.439Z",
+  "runId": "final-seo-content-acceptance",
+  "sourceFiles": [
+    "src/generated/coloring/hub-content-quality.json",
+    "src/generated/coloring/hub-seo-content.json",
+    "src/components/coloring/HubPageContent.tsx",
+    "src/components/coloring/SeoContentSection.tsx"
+  ],
+  "sourceOrder": {
+    "galleryBeforeSeoContent": true,
+    "seoContentSectionExists": true,
+    "noSeoContentBeforeGallery": true
+  },
+  "duplicateIntroGroups": [],
+  "repeatedOpeningPhraseGroups": [],
+  "wallOfTextSections": [],
+  "summary": {
+    "hubs_checked": 163,
+    "quality_records": 163,
+    "hub_seo_records": 162,
+    "all_163_hubs_have_generated_content": true,
+    "duplicate_intros": 0,
+    "unsupported_claims": 0,
+    "svg_download_claims": 0,
+    "online_coloring_claims": 0,
+    "keyword_stuffing_risk": 0,
+    "content_below_gallery": true,
+    "no_wall_of_text_above_gallery": true,
+    "generic_filler_sections": 0,
+    "repeated_opening_phrase_groups": 0,
+    "content_matches_intent": true,
+    "fake_commercial_use_claims": 0,
+    "fake_ratings_reviews_claims": 0,
+    "fake_author_expert_claims": 0,
+    "metadata_passed": true,
+    "content_quality_passed": true,
+    "blockers": []
+  }
+}

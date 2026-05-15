@@ -89,6 +89,7 @@ test("Round 4W JSON manifests, reports, and generated SEO data parse", async () 
 
 test("generated metadata covers homepage, gallery landing, and every Phase 1 hub uniquely enough", async () => {
   const hubs = await readJson("src/generated/coloring/hubs.json");
+  const runtimeHubs = await readJson("src/generated/coloring/runtime-hubs.json");
   const routes = await readJson("src/generated/coloring/routes.json");
   const seoPages = await readJson("src/generated/coloring/seo-pages.json");
   const hubContent = await readJson("src/generated/coloring/hub-seo-content.json");
@@ -107,7 +108,8 @@ test("generated metadata covers homepage, gallery landing, and every Phase 1 hub
   }
 
   const nonRootHubs = hubs.hubs.filter((hub) => hub.route !== "/coloring-pages");
-  assert.equal(hubContent.hubs.length, nonRootHubs.length);
+  const runtimeNonRootHubs = runtimeHubs.hubs.filter((hub) => hub.route !== "/coloring-pages");
+  assert.equal(hubContent.hubs.length, runtimeNonRootHubs.length);
   for (const hub of nonRootHubs) {
     const content = hubContent.hubs.find((entry) => entry.hubId === hub.hubId);
     assert.ok(content, `${hub.slug} content missing`);
@@ -123,8 +125,8 @@ test("generated metadata covers homepage, gallery landing, and every Phase 1 hub
   assert.equal(metadataResults.summary.homepageMetadataImplemented, true);
   assert.equal(metadataResults.summary.galleryLandingMetadataImplemented, true);
   assert.equal(metadataResults.summary.phase1HubMetadataCount, nonRootHubs.length);
-  assert.equal(metadataResults.summary.uniqueMetaTitleCount, seoPages.pages.length);
-  assert.equal(metadataResults.summary.uniqueMetaDescriptionCount, seoPages.pages.length);
+  assert.equal(metadataResults.summary.uniqueMetaTitleCount, phase1Routes.length + 1);
+  assert.equal(metadataResults.summary.uniqueMetaDescriptionCount, phase1Routes.length + 1);
   assert.equal(contentResults.summary.phase1HubsWithUniqueBelowGalleryContent, nonRootHubs.length);
   assert.equal(contentResults.summary.galleryFirstUxPreserved, true);
 

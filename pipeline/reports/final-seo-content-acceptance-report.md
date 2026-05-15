@@ -1,0 +1,33 @@
+# Final SEO Content Acceptance
+
+| Check | Result |
+| --- | --- |
+| hubs_checked | 163 |
+| quality_records | 163 |
+| hub_seo_records | 162 |
+| all_163_hubs_have_generated_content | true |
+| duplicate_intros | 0 |
+| unsupported_claims | 0 |
+| svg_download_claims | 0 |
+| online_coloring_claims | 0 |
+| keyword_stuffing_risk | 0 |
+| content_below_gallery | true |
+| no_wall_of_text_above_gallery | true |
+| generic_filler_sections | 0 |
+| repeated_opening_phrase_groups | 0 |
+| content_matches_intent | true |
+| fake_commercial_use_claims | 0 |
+| fake_ratings_reviews_claims | 0 |
+| fake_author_expert_claims | 0 |
+| metadata_passed | true |
+| content_quality_passed | true |
+
+## Source Order
+| Check | Result |
+| --- | --- |
+| galleryBeforeSeoContent | true |
+| seoContentSectionExists | true |
+| noSeoContentBeforeGallery | true |
+
+## Blockers
+- None.

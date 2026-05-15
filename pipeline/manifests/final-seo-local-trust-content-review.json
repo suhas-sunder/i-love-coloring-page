@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-05-15T05:31:12.067Z",
+  "runId": "final-seo-local-trust-content-review",
+  "routes": [
+    "/about",
+    "/contact",
+    "/privacy",
+    "/terms",
+    "/affiliate-disclosure",
+    "/editorial-policy"
+  ],
+  "checks": {
+    "aboutExists": true,
+    "contactExists": true,
+    "privacyExists": true,
+    "termsExists": true,
+    "affiliateDisclosureExists": true,
+    "editorialPolicyExists": true,
+    "contactEmailCorrect": true,
+    "noFakeAddress": true,
+    "noFakePhone": true,
+    "noFalseCompanyClaims": true,
+    "noPublicSvgDownloadClaims": true,
+    "noInternalPipelineWording": true,
+    "legalOwnerReviewRecommended": true
+  },
+  "summary": {
+    "trust_content_passed": true,
+    "legal_owner_review_still_recommended": true,
+    "blockers": []
+  }
+}

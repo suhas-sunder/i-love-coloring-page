@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-05-15T05:00:58.734Z",
+  "runId": "content-quality-adsense-readiness",
+  "references": [
+    {
+      "name": "Google Search Central helpful content",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "use": "People-first copy, page experience, and avoiding search-first filler."
+    },
+    {
+      "name": "Google Search spam policies",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "use": "Avoid scaled low-value pages, scraped copy, keyword stuffing, and pages made only for rankings."
+    },
+    {
+      "name": "Google AdSense page readiness",
+      "url": "https://support.google.com/adsense/answer/7299563/make-sure-that-your-site-s-pages-are-ready-for-adsense?hl=en-GB",
+      "use": "Unique relevant content, clear navigation, and a useful page experience before ads."
+    }
+  ],
+  "summary": {
+    "uniqueRelevantContentImproved": true,
+    "clearNavigationPresent": true,
+    "trustPagesPresent": false,
+    "contentToAdBalancePreserved": true,
+    "noLowValueEmptyPages": true,
+    "noUnderConstructionPages": false,
+    "noScrapedCopyrightedText": true,
+    "noMisleadingContent": true,
+    "noIntrusiveAdLayout": true,
+    "liveAdsStillDeferred": true,
+    "ownerLegalReviewRequired": true,
+    "approvalGuaranteed": false
+  },
+  "remainingRisks": [
+    "AdSense approval is not guaranteed by local checks.",
+    "Owner/legal review is still needed for policy pages before live ads.",
+    "Live deployment and Search Console checks are intentionally not run in this local content round."
+  ]
+}

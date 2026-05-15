@@ -211,6 +211,7 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Desktop side rail placeholders should render on both left and right only when enough room exists.
 - Side rail placeholders must have a safe content gap and must not overlap content.
 - Side rails must disappear on smaller screens.
+- Side rail placeholder QA must include compact-wide desktop around 1536 CSS pixels as well as wider desktop, because browser zoom and device-pixel ratio can otherwise hide rails despite visible side space.
 - Small-screen banner ad placeholders may appear below the header, but must not crowd navigation.
 - Every ad placeholder slot needs a stable unique slot ID.
 - Round 4R freezes ad placeholder placement and slot IDs unless a documented bug requires a change.
@@ -249,6 +250,15 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Deployment waits until local sitemap and Related Collections UI QA passes.
 - SEO content must be useful, unique, intent-matched, and below or secondary to gallery access.
 - Do not create keyword-stuffed or cookie-cutter hub pages.
+- Hub content must be unique, useful, and page-specific, with actual hub counts, representative subjects, and related public hubs.
+- SEO content must not overpower the image-first gallery UI.
+- Do not invent claims not supported by the image collection.
+- Every hub content update must pass duplicate, boilerplate, unsupported-claim, and keyword-stuffing checks.
+- AdSense readiness requires content quality, clear navigation, trust pages, ad placeholder balance, and layout checks, but local checks do not guarantee approval.
+- Final local acceptance must be rerun after hub content quality changes.
+- Content quality is a deployment blocker.
+- Gallery-first UX must be preserved after SEO content additions.
+- Compact-wide side rail behavior must be verified before deployment.
 - Gallery access must remain near the top.
 - SEO sections must follow the design system: no nested cards, borders, shadows, outlines, gradients, or random colors.
 - Metadata must stay route-specific and accurate.

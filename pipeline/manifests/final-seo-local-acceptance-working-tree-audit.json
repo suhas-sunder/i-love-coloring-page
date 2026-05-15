@@ -1,0 +1,13 @@
+{
+  "generatedAt": "2026-05-15T05:30:38.693Z",
+  "runId": "final-seo-local-acceptance-working-tree-audit",
+  "statusShort": " M AGENTS.md\n?? pipeline/manifests/final-seo-content-acceptance-results.json\n?? pipeline/manifests/final-seo-local-acceptance-context-check.json\n?? pipeline/manifests/final-seo-local-acceptance-gate.json\n?? pipeline/manifests/final-seo-local-acceptance-working-tree-audit.json\n?? pipeline/manifests/final-seo-local-ad-placeholder-qa.json\n?? pipeline/manifests/final-seo-local-browser-qa-results.json\n?? pipeline/manifests/final-seo-local-print-qa-results.json\n?? pipeline/manifests/final-seo-local-static-export-results.json\n?? pipeline/manifests/final-seo-local-trust-content-review.json\n?? pipeline/manifests/final-seo-regression-results.json\n?? pipeline/reports/final-seo-content-acceptance-report.md\n?? pipeline/reports/final-seo-local-acceptance-context-check.md\n?? pipeline/reports/final-seo-local-acceptance-gate.md\n?? pipeline/reports/final-seo-local-acceptance-working-tree-audit.md\n?? pipeline/reports/final-seo-local-ad-placeholder-qa.md\n?? pipeline/reports/final-seo-local-browser-qa-report.md\n?? pipeline/reports/final-seo-local-print-qa-report.md\n?? pipeline/reports/final-seo-local-static-export-report.md\n?? pipeline/reports/final-seo-local-trust-content-review.md\n?? pipeline/reports/final-seo-regression-report.md\n?? pipeline/scripts/final-seo-content-acceptance-check.mjs\n?? pipeline/scripts/final-seo-local-browser-qa-runner.cjs\n?? pipeline/scripts/final-seo-local-print-qa-runner.cjs\n?? pipeline/scripts/final-seo-regression-qa.mjs\n?? pipeline/tests/final-seo-local-acceptance.test.mjs\n",
+  "diffStat": " AGENTS.md | 4 ++++\n 1 file changed, 4 insertions(+)\n",
+  "diffNameOnly": "AGENTS.md\n",
+  "summary": {
+    "unrelated_drift_found": false,
+    "unrelated_files": [],
+    "working_tree_audit_passed": true,
+    "blockers": []
+  }
+}

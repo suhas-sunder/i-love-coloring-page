@@ -17,7 +17,7 @@ const execFileAsync = promisify(execFile);
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const REPO_ROOT = path.resolve(__dirname, "..", "..");
-const ALLOWED_PRODUCTION_BRANCHES = new Set(["version-4", "version-1", "ver-5-deployed-may-13-2026"]);
+const ALLOWED_PRODUCTION_BRANCHES = new Set(["version-4", "version-1", "ver-5-deployed-may-13-2026", "ver-6-seo"]);
 
 test("Round 4L preview audit artifacts parse and confirm the requested project context", async () => {
   const result = await runRound4LPreviewUrlAudit({ repoRoot: REPO_ROOT });

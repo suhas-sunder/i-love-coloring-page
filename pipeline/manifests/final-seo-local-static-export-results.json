@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-05-15T05:31:12.036Z",
+  "runId": "final-seo-local-static-export",
+  "build": {
+    "buildRan": true,
+    "outDir": "D:\\PROJECTS-and-WORK\\work-projects\\all_projects\\i-love-coloring-page\\out",
+    "startedAt": "2026-05-15T05:30:39.477Z",
+    "finishedAt": "2026-05-15T05:31:01.299Z"
+  },
+  "generatedFileCount": 6689,
+  "scan": {
+    "localhostRefs": [],
+    "r2DevRefs": [],
+    "privateR2Refs": [],
+    "appApiRefs": [],
+    "downloadSvgRefs": [],
+    "liveAdsRefs": []
+  },
+  "checks": {
+    "buildSucceeded": true,
+    "sitemapPageExists": true,
+    "sitemapXmlExists": true,
+    "imageSitemapXmlExists": true,
+    "robotsTxtExists": true,
+    "noLocalhost": true,
+    "noR2Dev": true,
+    "noPrivateR2Endpoint": true,
+    "noAppApiRefs": true,
+    "noDownloadSvgText": true,
+    "noLiveAdsense": true
+  },
+  "summary": {
+    "static_export_passed": true,
+    "blockers": []
+  }
+}

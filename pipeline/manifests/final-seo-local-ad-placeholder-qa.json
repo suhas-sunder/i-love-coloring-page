@@ -1,0 +1,70 @@
+{
+  "generatedAt": "2026-05-15T05:31:12.080Z",
+  "runId": "final-seo-local-ad-placeholder-qa",
+  "railResults": [
+    {
+      "viewport": "1536",
+      "viewportWidth": 1536,
+      "visibleAdSlots": 3,
+      "visibleRails": 2,
+      "leftRailVisible": true,
+      "rightRailVisible": true,
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "1600",
+      "viewportWidth": 1600,
+      "visibleAdSlots": 3,
+      "visibleRails": 2,
+      "leftRailVisible": true,
+      "rightRailVisible": true,
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "1739",
+      "viewportWidth": 1739,
+      "visibleAdSlots": 3,
+      "visibleRails": 2,
+      "leftRailVisible": true,
+      "rightRailVisible": true,
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "1740",
+      "viewportWidth": 1740,
+      "visibleAdSlots": 3,
+      "visibleRails": 2,
+      "leftRailVisible": true,
+      "rightRailVisible": true,
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "1440",
+      "viewportWidth": 1440,
+      "visibleAdSlots": 1,
+      "visibleRails": 0,
+      "leftRailVisible": false,
+      "rightRailVisible": false,
+      "horizontalOverflow": false
+    }
+  ],
+  "checks": {
+    "adWellsVisibleByDefault": true,
+    "noLiveAdsenseScript": true,
+    "noAdClientIds": true,
+    "compactWideSideRailsVisibleOnlyWhereIntended": true,
+    "wideDesktopDensityCorrect": true,
+    "mobileTabletDensityCorrect": true,
+    "noAdsInsideNav": true,
+    "noAdsInsideGalleryGrid": true,
+    "noAdsBesidePrintDownloadControls": true,
+    "noOverlap": true,
+    "noHorizontalOverflow": true,
+    "compactRailBreakpointPresent": true
+  },
+  "summary": {
+    "ad_placeholders_passed": true,
+    "compact_side_rails_passed": true,
+    "blockers": []
+  }
+}
