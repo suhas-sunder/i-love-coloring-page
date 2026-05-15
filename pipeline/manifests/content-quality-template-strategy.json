@@ -1,0 +1,223 @@
+{
+  "generatedAt": "2026-05-15T05:00:58.734Z",
+  "runId": "content-quality-template-strategy",
+  "references": [
+    {
+      "name": "Google Search Central helpful content",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "use": "People-first copy, page experience, and avoiding search-first filler."
+    },
+    {
+      "name": "Google Search spam policies",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "use": "Avoid scaled low-value pages, scraped copy, keyword stuffing, and pages made only for rankings."
+    },
+    {
+      "name": "Google AdSense page readiness",
+      "url": "https://support.google.com/adsense/answer/7299563/make-sure-that-your-site-s-pages-are-ready-for-adsense?hl=en-GB",
+      "use": "Unique relevant content, clear navigation, and a useful page experience before ads."
+    }
+  ],
+  "patterns": [
+    {
+      "type": "broad",
+      "label": "Broad collection hubs",
+      "contentPurpose": "Help visitors choose a direction without turning the page into a directory.",
+      "recommendedSections": [
+        "What users will find",
+        "Best ways to use these pages",
+        "Printing tips"
+      ],
+      "approximateLengthRange": "120-220 words below the gallery",
+      "userIntent": "Browsing a large set by subject, style, or season.",
+      "whatNotToSay": "Do not claim every possible subject appears; mention representative patterns from runtime items.",
+      "examplesToInclude": "Use runtime representative asset titles, section terms, and related hubs.",
+      "internalLinkStrategy": "Link only to generated runtime hubs already present in route data.",
+      "boilerplateAvoidance": "Vary intro, section heading, and use-case wording by type."
+    },
+    {
+      "type": "animal",
+      "label": "Animals and nature hubs",
+      "contentPurpose": "Explain the kind of creature or nature artwork users can expect and how to pick detail levels.",
+      "recommendedSections": [
+        "What users will find",
+        "Best ways to use these pages",
+        "Printing tips"
+      ],
+      "approximateLengthRange": "110-190 words",
+      "userIntent": "Printing animal pages for lessons, activities, or relaxed coloring.",
+      "whatNotToSay": "Do not add animal facts that are not visible in the image set.",
+      "examplesToInclude": "Use runtime representative asset titles, section terms, and related hubs.",
+      "internalLinkStrategy": "Link only to generated runtime hubs already present in route data.",
+      "boilerplateAvoidance": "Vary intro, section heading, and use-case wording by type."
+    },
+    {
+      "type": "dogBreed",
+      "label": "Dog breed hubs",
+      "contentPurpose": "Keep breed wording specific and practical for choosing a page.",
+      "recommendedSections": [
+        "What users will find",
+        "Best ways to use these pages",
+        "Printing tips"
+      ],
+      "approximateLengthRange": "100-170 words",
+      "userIntent": "Finding a printable dog breed page quickly.",
+      "whatNotToSay": "Do not invent breed traits beyond obvious collection labels.",
+      "examplesToInclude": "Use runtime representative asset titles, section terms, and related hubs.",
+      "internalLinkStrategy": "Link only to generated runtime hubs already present in route data.",
+      "boilerplateAvoidance": "Vary intro, section heading, and use-case wording by type."
+    },
+    {
+      "type": "dinosaur",
+      "label": "Dinosaur and prehistoric hubs",
+      "contentPurpose": "Distinguish species or prehistoric subjects from the broader dinosaur collection.",
+      "recommendedSections": [
+        "What users will find",
+        "Best ways to use these pages",
+        "Printing tips"
+      ],
+      "approximateLengthRange": "110-180 words",
+      "userIntent": "School, prehistoric, and dinosaur-themed printing.",
+      "whatNotToSay": "Do not use franchise language or unsupported science claims.",
+      "examplesToInclude": "Use runtime representative asset titles, section terms, and related hubs.",
+      "internalLinkStrategy": "Link only to generated runtime hubs already present in route data.",
+      "boilerplateAvoidance": "Vary intro, section heading, and use-case wording by type."
+    },
+    {
+      "type": "plant",
+      "label": "Flowers and plant hubs",
+      "contentPurpose": "Call out plant or flower motifs, simple craft uses, and printable display ideas.",
+      "recommendedSections": [
+        "What users will find",
+        "Best ways to use these pages",
+        "Printing tips"
+      ],
+      "approximateLengthRange": "100-175 words",
+      "userIntent": "Seasonal, classroom, craft, and nature-themed coloring.",
+      "whatNotToSay": "Do not imply botanical accuracy for every image.",
+      "examplesToInclude": "Use runtime representative asset titles, section terms, and related hubs.",
+      "internalLinkStrategy": "Link only to generated runtime hubs already present in route data.",
+      "boilerplateAvoidance": "Vary intro, section heading, and use-case wording by type."
+    },
+    {
+      "type": "food",
+      "label": "Food and dessert hubs",
+      "contentPurpose": "Describe the visible treats or food subjects and likely party/classroom uses.",
+      "recommendedSections": [
+        "What users will find",
+        "Best ways to use these pages",
+        "Printing tips"
+      ],
+      "approximateLengthRange": "100-170 words",
+      "userIntent": "Printable food pages for parties, menus, crafts, and light activities.",
+      "whatNotToSay": "Do not make nutrition, recipe, or commercial-use claims.",
+      "examplesToInclude": "Use runtime representative asset titles, section terms, and related hubs.",
+      "internalLinkStrategy": "Link only to generated runtime hubs already present in route data.",
+      "boilerplateAvoidance": "Vary intro, section heading, and use-case wording by type."
+    },
+    {
+      "type": "holiday",
+      "label": "Holiday and seasonal hubs",
+      "contentPurpose": "Support party, classroom, and home planning while keeping dates and themes clear.",
+      "recommendedSections": [
+        "What users will find",
+        "Best ways to use these pages",
+        "Printing tips"
+      ],
+      "approximateLengthRange": "120-200 words",
+      "userIntent": "Finding printable pages for a holiday activity.",
+      "whatNotToSay": "Do not overpromise complete event packs.",
+      "examplesToInclude": "Use runtime representative asset titles, section terms, and related hubs.",
+      "internalLinkStrategy": "Link only to generated runtime hubs already present in route data.",
+      "boilerplateAvoidance": "Vary intro, section heading, and use-case wording by type."
+    },
+    {
+      "type": "fantasy",
+      "label": "Fantasy and character hubs",
+      "contentPurpose": "Frame the artwork as generic fantasy, magic, or character themes without protected IP wording.",
+      "recommendedSections": [
+        "What users will find",
+        "Best ways to use these pages",
+        "Printing tips"
+      ],
+      "approximateLengthRange": "110-190 words",
+      "userIntent": "Fantasy-themed coloring and imaginative projects.",
+      "whatNotToSay": "Do not mention franchise names or imply branded characters.",
+      "examplesToInclude": "Use runtime representative asset titles, section terms, and related hubs.",
+      "internalLinkStrategy": "Link only to generated runtime hubs already present in route data.",
+      "boilerplateAvoidance": "Vary intro, section heading, and use-case wording by type."
+    },
+    {
+      "type": "pattern",
+      "label": "Mandala, geometric, and detailed hubs",
+      "contentPurpose": "Help users choose complexity and printing use.",
+      "recommendedSections": [
+        "What users will find",
+        "Best ways to use these pages",
+        "Printing tips"
+      ],
+      "approximateLengthRange": "110-180 words",
+      "userIntent": "Relaxed coloring, detailed pages, and pattern practice.",
+      "whatNotToSay": "Do not promise therapeutic or medical benefits.",
+      "examplesToInclude": "Use runtime representative asset titles, section terms, and related hubs.",
+      "internalLinkStrategy": "Link only to generated runtime hubs already present in route data.",
+      "boilerplateAvoidance": "Vary intro, section heading, and use-case wording by type."
+    },
+    {
+      "type": "kidsEasy",
+      "label": "Kids and easy hubs",
+      "contentPurpose": "Explain simpler page choices and supervision-friendly printing without age overclaims.",
+      "recommendedSections": [
+        "What users will find",
+        "Best ways to use these pages",
+        "Printing tips"
+      ],
+      "approximateLengthRange": "100-170 words",
+      "userIntent": "Quick activities and simpler coloring pages.",
+      "whatNotToSay": "Do not imply all pages are suitable for every child.",
+      "examplesToInclude": "Use runtime representative asset titles, section terms, and related hubs.",
+      "internalLinkStrategy": "Link only to generated runtime hubs already present in route data.",
+      "boilerplateAvoidance": "Vary intro, section heading, and use-case wording by type."
+    },
+    {
+      "type": "vehiclePlace",
+      "label": "Vehicles and places hubs",
+      "contentPurpose": "Mention recognizable object or place types from runtime titles.",
+      "recommendedSections": [
+        "What users will find",
+        "Best ways to use these pages",
+        "Printing tips"
+      ],
+      "approximateLengthRange": "100-180 words",
+      "userIntent": "Subject-based classroom, travel, and hobby pages.",
+      "whatNotToSay": "Do not invent real-world locations unless the titles support them.",
+      "examplesToInclude": "Use runtime representative asset titles, section terms, and related hubs.",
+      "internalLinkStrategy": "Link only to generated runtime hubs already present in route data.",
+      "boilerplateAvoidance": "Vary intro, section heading, and use-case wording by type."
+    },
+    {
+      "type": "cute",
+      "label": "Plushie and cute hubs",
+      "contentPurpose": "Keep the tone calm and practical while describing soft, cute, or kawaii-style subjects.",
+      "recommendedSections": [
+        "What users will find",
+        "Best ways to use these pages",
+        "Printing tips"
+      ],
+      "approximateLengthRange": "100-175 words",
+      "userIntent": "Cute printable pages, party activities, and relaxed browsing.",
+      "whatNotToSay": "Do not make the page sound childish or cluttered.",
+      "examplesToInclude": "Use runtime representative asset titles, section terms, and related hubs.",
+      "internalLinkStrategy": "Link only to generated runtime hubs already present in route data.",
+      "boilerplateAvoidance": "Vary intro, section heading, and use-case wording by type."
+    }
+  ],
+  "internalLinkStrategy": "Use runtime relatedHubIds, childHubIds, and parentHubId only. Do not link to backlog/manual-review routes.",
+  "antiBoilerplateRules": [
+    "Vary section headings by hub type.",
+    "Use actual representative item titles or section terms in every hub.",
+    "Avoid one universal intro with only the hub title swapped.",
+    "Keep supporting content after the gallery.",
+    "State only PNG, JPG, and WebP as public download formats."
+  ]
+}

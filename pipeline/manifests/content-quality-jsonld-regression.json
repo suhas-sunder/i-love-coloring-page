@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-05-15T05:00:58.734Z",
+  "runId": "content-quality-jsonld-regression",
+  "summary": {
+    "jsonLdDataExists": true,
+    "collectionPagePresent": true,
+    "breadcrumbListPresent": true,
+    "itemListCapped": true,
+    "noReviewSchema": true,
+    "noAggregateRatingSchema": true,
+    "noProductSchema": true,
+    "noOfferSchema": true,
+    "noFaqSchema": true,
+    "noSearchAction": true,
+    "noSvgUrls": true,
+    "noLocalhost": true,
+    "noR2Dev": true,
+    "canonicalWwwDomain": true,
+    "changedByThisRound": false
+  }
+}

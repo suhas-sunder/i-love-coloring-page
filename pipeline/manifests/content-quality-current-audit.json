@@ -1,0 +1,863 @@
+{
+  "generatedAt": "2026-05-15T05:00:58.734Z",
+  "runId": "content-quality-current-audit",
+  "summary": {
+    "hubsAudited": 163,
+    "existingHubSeoRecords": 162,
+    "repeatedIntroFrameCount": 0,
+    "largestRepeatedIntroFrame": 0,
+    "staleDownloadClaimCount": 0,
+    "thinHubCount": 23,
+    "galleryFirstLayoutAlreadyPresent": true,
+    "supportingContentBelowGallery": true
+  },
+  "repeatedFrames": [],
+  "staleDownloadClaims": [],
+  "thinHubs": [
+    "robots",
+    "roses",
+    "santa",
+    "dodo",
+    "bamboo",
+    "ankylosaurus",
+    "trick-or-treat",
+    "forget-me-not",
+    "mosasaurus",
+    "plesiosaurus",
+    "pterodactyl",
+    "iguanodon",
+    "bulldog",
+    "collie",
+    "daisy",
+    "pteranodon",
+    "orchid",
+    "poppy",
+    "lotus",
+    "palm",
+    "leprechaun",
+    "salmon",
+    "gingerbread"
+  ],
+  "hubTypes": [
+    {
+      "slug": "coloring-pages",
+      "type": "broad",
+      "assetCount": 6352
+    },
+    {
+      "slug": "animals",
+      "type": "broad",
+      "assetCount": 1450
+    },
+    {
+      "slug": "anime-girls",
+      "type": "fantasy",
+      "assetCount": 905
+    },
+    {
+      "slug": "bakery",
+      "type": "food",
+      "assetCount": 93
+    },
+    {
+      "slug": "bats",
+      "type": "animal",
+      "assetCount": 27
+    },
+    {
+      "slug": "bears",
+      "type": "animal",
+      "assetCount": 60
+    },
+    {
+      "slug": "bees",
+      "type": "animal",
+      "assetCount": 15
+    },
+    {
+      "slug": "beetles",
+      "type": "animal",
+      "assetCount": 25
+    },
+    {
+      "slug": "birds",
+      "type": "animal",
+      "assetCount": 188
+    },
+    {
+      "slug": "birthday",
+      "type": "holiday",
+      "assetCount": 211
+    },
+    {
+      "slug": "brachiosaurus",
+      "type": "dinosaur",
+      "assetCount": 15
+    },
+    {
+      "slug": "bridges",
+      "type": "vehiclePlace",
+      "assetCount": 23
+    },
+    {
+      "slug": "buildings",
+      "type": "broad",
+      "assetCount": 156
+    },
+    {
+      "slug": "butterflies",
+      "type": "broad",
+      "assetCount": 26
+    },
+    {
+      "slug": "cakes",
+      "type": "food",
+      "assetCount": 21
+    },
+    {
+      "slug": "cars",
+      "type": "vehiclePlace",
+      "assetCount": 193
+    },
+    {
+      "slug": "castles",
+      "type": "fantasy",
+      "assetCount": 25
+    },
+    {
+      "slug": "cats",
+      "type": "animal",
+      "assetCount": 55
+    },
+    {
+      "slug": "chess",
+      "type": "cute",
+      "assetCount": 23
+    },
+    {
+      "slug": "chibi",
+      "type": "fantasy",
+      "assetCount": 908
+    },
+    {
+      "slug": "chibi-dogs",
+      "type": "dogBreed",
+      "assetCount": 79
+    },
+    {
+      "slug": "chibi-flowers",
+      "type": "fantasy",
+      "assetCount": 152
+    },
+    {
+      "slug": "christmas",
+      "type": "holiday",
+      "assetCount": 332
+    },
+    {
+      "slug": "christmas-dogs",
+      "type": "dogBreed",
+      "assetCount": 36
+    },
+    {
+      "slug": "cows",
+      "type": "animal",
+      "assetCount": 14
+    },
+    {
+      "slug": "crabs",
+      "type": "animal",
+      "assetCount": 21
+    },
+    {
+      "slug": "cute",
+      "type": "cute",
+      "assetCount": 375
+    },
+    {
+      "slug": "deer",
+      "type": "animal",
+      "assetCount": 15
+    },
+    {
+      "slug": "detailed-for-adults",
+      "type": "pattern",
+      "assetCount": 1459
+    },
+    {
+      "slug": "dinosaurs",
+      "type": "broad",
+      "assetCount": 189
+    },
+    {
+      "slug": "diplodocus",
+      "type": "dinosaur",
+      "assetCount": 16
+    },
+    {
+      "slug": "dogs",
+      "type": "dogBreed",
+      "assetCount": 284
+    },
+    {
+      "slug": "dolphins",
+      "type": "animal",
+      "assetCount": 14
+    },
+    {
+      "slug": "dragons",
+      "type": "fantasy",
+      "assetCount": 259
+    },
+    {
+      "slug": "ducks",
+      "type": "animal",
+      "assetCount": 19
+    },
+    {
+      "slug": "dungeon",
+      "type": "fantasy",
+      "assetCount": 99
+    },
+    {
+      "slug": "eagles",
+      "type": "animal",
+      "assetCount": 22
+    },
+    {
+      "slug": "easy",
+      "type": "kidsEasy",
+      "assetCount": 1300
+    },
+    {
+      "slug": "elephants",
+      "type": "animal",
+      "assetCount": 17
+    },
+    {
+      "slug": "fairies",
+      "type": "broad",
+      "assetCount": 37
+    },
+    {
+      "slug": "fantasy",
+      "type": "broad",
+      "assetCount": 1265
+    },
+    {
+      "slug": "fantasy-creatures",
+      "type": "fantasy",
+      "assetCount": 531
+    },
+    {
+      "slug": "fantasy-dragons",
+      "type": "fantasy",
+      "assetCount": 49
+    },
+    {
+      "slug": "fish",
+      "type": "animal",
+      "assetCount": 16
+    },
+    {
+      "slug": "flowers",
+      "type": "broad",
+      "assetCount": 346
+    },
+    {
+      "slug": "food",
+      "type": "broad",
+      "assetCount": 261
+    },
+    {
+      "slug": "for-kids",
+      "type": "kidsEasy",
+      "assetCount": 1335
+    },
+    {
+      "slug": "forest",
+      "type": "plant",
+      "assetCount": 72
+    },
+    {
+      "slug": "foxes",
+      "type": "animal",
+      "assetCount": 40
+    },
+    {
+      "slug": "garden",
+      "type": "plant",
+      "assetCount": 195
+    },
+    {
+      "slug": "garden-flowers",
+      "type": "plant",
+      "assetCount": 95
+    },
+    {
+      "slug": "geometric",
+      "type": "pattern",
+      "assetCount": 1457
+    },
+    {
+      "slug": "geometric-dogs",
+      "type": "dogBreed",
+      "assetCount": 85
+    },
+    {
+      "slug": "giraffes",
+      "type": "animal",
+      "assetCount": 19
+    },
+    {
+      "slug": "griffins",
+      "type": "fantasy",
+      "assetCount": 21
+    },
+    {
+      "slug": "halloween",
+      "type": "holiday",
+      "assetCount": 305
+    },
+    {
+      "slug": "hedgehogs",
+      "type": "animal",
+      "assetCount": 15
+    },
+    {
+      "slug": "hippos",
+      "type": "animal",
+      "assetCount": 16
+    },
+    {
+      "slug": "holidays",
+      "type": "broad",
+      "assetCount": 874
+    },
+    {
+      "slug": "horses",
+      "type": "animal",
+      "assetCount": 16
+    },
+    {
+      "slug": "houses",
+      "type": "vehiclePlace",
+      "assetCount": 54
+    },
+    {
+      "slug": "hydras",
+      "type": "fantasy",
+      "assetCount": 15
+    },
+    {
+      "slug": "indoor-plants",
+      "type": "plant",
+      "assetCount": 128
+    },
+    {
+      "slug": "insects",
+      "type": "broad",
+      "assetCount": 179
+    },
+    {
+      "slug": "kawaii",
+      "type": "cute",
+      "assetCount": 88
+    },
+    {
+      "slug": "knights",
+      "type": "fantasy",
+      "assetCount": 39
+    },
+    {
+      "slug": "koalas",
+      "type": "animal",
+      "assetCount": 22
+    },
+    {
+      "slug": "lions",
+      "type": "animal",
+      "assetCount": 32
+    },
+    {
+      "slug": "lizards",
+      "type": "animal",
+      "assetCount": 32
+    },
+    {
+      "slug": "llamas",
+      "type": "animal",
+      "assetCount": 15
+    },
+    {
+      "slug": "mammoths",
+      "type": "dinosaur",
+      "assetCount": 20
+    },
+    {
+      "slug": "mandalas",
+      "type": "pattern",
+      "assetCount": 1459
+    },
+    {
+      "slug": "medieval-fantasy",
+      "type": "fantasy",
+      "assetCount": 194
+    },
+    {
+      "slug": "megalodon",
+      "type": "dinosaur",
+      "assetCount": 16
+    },
+    {
+      "slug": "mermaids",
+      "type": "fantasy",
+      "assetCount": 26
+    },
+    {
+      "slug": "monkeys",
+      "type": "animal",
+      "assetCount": 14
+    },
+    {
+      "slug": "moose",
+      "type": "animal",
+      "assetCount": 18
+    },
+    {
+      "slug": "mushrooms",
+      "type": "plant",
+      "assetCount": 218
+    },
+    {
+      "slug": "mythology",
+      "type": "fantasy",
+      "assetCount": 227
+    },
+    {
+      "slug": "ocean",
+      "type": "broad",
+      "assetCount": 154
+    },
+    {
+      "slug": "octopus",
+      "type": "animal",
+      "assetCount": 20
+    },
+    {
+      "slug": "otters",
+      "type": "animal",
+      "assetCount": 21
+    },
+    {
+      "slug": "owls",
+      "type": "animal",
+      "assetCount": 28
+    },
+    {
+      "slug": "pandas",
+      "type": "animal",
+      "assetCount": 30
+    },
+    {
+      "slug": "pegasus",
+      "type": "fantasy",
+      "assetCount": 29
+    },
+    {
+      "slug": "penguins",
+      "type": "animal",
+      "assetCount": 20
+    },
+    {
+      "slug": "phoenix",
+      "type": "fantasy",
+      "assetCount": 18
+    },
+    {
+      "slug": "planes",
+      "type": "vehiclePlace",
+      "assetCount": 92
+    },
+    {
+      "slug": "plants",
+      "type": "broad",
+      "assetCount": 586
+    },
+    {
+      "slug": "playing-cards",
+      "type": "vehiclePlace",
+      "assetCount": 12
+    },
+    {
+      "slug": "plushie-animals",
+      "type": "cute",
+      "assetCount": 105
+    },
+    {
+      "slug": "plushie-cats",
+      "type": "cute",
+      "assetCount": 21
+    },
+    {
+      "slug": "plushie-dogs",
+      "type": "dogBreed",
+      "assetCount": 12
+    },
+    {
+      "slug": "plushie-dragons",
+      "type": "fantasy",
+      "assetCount": 75
+    },
+    {
+      "slug": "plushie-triceratops",
+      "type": "dinosaur",
+      "assetCount": 13
+    },
+    {
+      "slug": "plushie-unicorns",
+      "type": "fantasy",
+      "assetCount": 14
+    },
+    {
+      "slug": "plushie-whales",
+      "type": "cute",
+      "assetCount": 27
+    },
+    {
+      "slug": "plushies",
+      "type": "broad",
+      "assetCount": 1704
+    },
+    {
+      "slug": "prehistoric-animals",
+      "type": "broad",
+      "assetCount": 220
+    },
+    {
+      "slug": "pumpkins",
+      "type": "holiday",
+      "assetCount": 23
+    },
+    {
+      "slug": "rabbits",
+      "type": "animal",
+      "assetCount": 22
+    },
+    {
+      "slug": "reindeer",
+      "type": "holiday",
+      "assetCount": 15
+    },
+    {
+      "slug": "reptiles",
+      "type": "animal",
+      "assetCount": 156
+    },
+    {
+      "slug": "robots",
+      "type": "fantasy",
+      "assetCount": 9
+    },
+    {
+      "slug": "roses",
+      "type": "plant",
+      "assetCount": 9
+    },
+    {
+      "slug": "santa",
+      "type": "holiday",
+      "assetCount": 10
+    },
+    {
+      "slug": "sea-life",
+      "type": "broad",
+      "assetCount": 236
+    },
+    {
+      "slug": "sharks",
+      "type": "animal",
+      "assetCount": 19
+    },
+    {
+      "slug": "sheep",
+      "type": "animal",
+      "assetCount": 14
+    },
+    {
+      "slug": "sloths",
+      "type": "animal",
+      "assetCount": 28
+    },
+    {
+      "slug": "snakes",
+      "type": "animal",
+      "assetCount": 18
+    },
+    {
+      "slug": "spiders",
+      "type": "animal",
+      "assetCount": 28
+    },
+    {
+      "slug": "st-patricks-day",
+      "type": "holiday",
+      "assetCount": 20
+    },
+    {
+      "slug": "stegosaurus",
+      "type": "dinosaur",
+      "assetCount": 17
+    },
+    {
+      "slug": "sushi",
+      "type": "food",
+      "assetCount": 161
+    },
+    {
+      "slug": "t-rex",
+      "type": "dinosaur",
+      "assetCount": 18
+    },
+    {
+      "slug": "tigers",
+      "type": "animal",
+      "assetCount": 43
+    },
+    {
+      "slug": "trains",
+      "type": "vehiclePlace",
+      "assetCount": 102
+    },
+    {
+      "slug": "trees",
+      "type": "plant",
+      "assetCount": 38
+    },
+    {
+      "slug": "triceratops",
+      "type": "dinosaur",
+      "assetCount": 22
+    },
+    {
+      "slug": "turtles",
+      "type": "animal",
+      "assetCount": 44
+    },
+    {
+      "slug": "unicorns",
+      "type": "fantasy",
+      "assetCount": 38
+    },
+    {
+      "slug": "vehicles",
+      "type": "broad",
+      "assetCount": 373
+    },
+    {
+      "slug": "velociraptors",
+      "type": "dinosaur",
+      "assetCount": 22
+    },
+    {
+      "slug": "whales",
+      "type": "animal",
+      "assetCount": 40
+    },
+    {
+      "slug": "witches",
+      "type": "fantasy",
+      "assetCount": 32
+    },
+    {
+      "slug": "wizards",
+      "type": "fantasy",
+      "assetCount": 30
+    },
+    {
+      "slug": "wolves",
+      "type": "broad",
+      "assetCount": 45
+    },
+    {
+      "slug": "world-landmarks",
+      "type": "vehiclePlace",
+      "assetCount": 47
+    },
+    {
+      "slug": "wyverns",
+      "type": "fantasy",
+      "assetCount": 15
+    },
+    {
+      "slug": "zebras",
+      "type": "animal",
+      "assetCount": 19
+    },
+    {
+      "slug": "dodo",
+      "type": "dinosaur",
+      "assetCount": 11
+    },
+    {
+      "slug": "bamboo",
+      "type": "plant",
+      "assetCount": 7
+    },
+    {
+      "slug": "steam-train",
+      "type": "vehiclePlace",
+      "assetCount": 15
+    },
+    {
+      "slug": "birthday-celebration",
+      "type": "holiday",
+      "assetCount": 190
+    },
+    {
+      "slug": "christmas-plushie",
+      "type": "holiday",
+      "assetCount": 183
+    },
+    {
+      "slug": "halloween-costume",
+      "type": "holiday",
+      "assetCount": 161
+    },
+    {
+      "slug": "summoning",
+      "type": "fantasy",
+      "assetCount": 336
+    },
+    {
+      "slug": "terrier",
+      "type": "dogBreed",
+      "assetCount": 29
+    },
+    {
+      "slug": "woolly-mammoth",
+      "type": "dinosaur",
+      "assetCount": 19
+    },
+    {
+      "slug": "saber-toothed-tiger",
+      "type": "dinosaur",
+      "assetCount": 13
+    },
+    {
+      "slug": "magic",
+      "type": "fantasy",
+      "assetCount": 35
+    },
+    {
+      "slug": "ankylosaurus",
+      "type": "dinosaur",
+      "assetCount": 11
+    },
+    {
+      "slug": "trick-or-treat",
+      "type": "holiday",
+      "assetCount": 11
+    },
+    {
+      "slug": "lily",
+      "type": "plant",
+      "assetCount": 14
+    },
+    {
+      "slug": "forget-me-not",
+      "type": "plant",
+      "assetCount": 6
+    },
+    {
+      "slug": "mosasaurus",
+      "type": "dinosaur",
+      "assetCount": 9
+    },
+    {
+      "slug": "plesiosaurus",
+      "type": "dinosaur",
+      "assetCount": 9
+    },
+    {
+      "slug": "pterodactyl",
+      "type": "dinosaur",
+      "assetCount": 9
+    },
+    {
+      "slug": "iguanodon",
+      "type": "dinosaur",
+      "assetCount": 8
+    },
+    {
+      "slug": "bulldog",
+      "type": "dogBreed",
+      "assetCount": 8
+    },
+    {
+      "slug": "collie",
+      "type": "dogBreed",
+      "assetCount": 8
+    },
+    {
+      "slug": "cookie",
+      "type": "food",
+      "assetCount": 17
+    },
+    {
+      "slug": "daisy",
+      "type": "plant",
+      "assetCount": 10
+    },
+    {
+      "slug": "pteranodon",
+      "type": "dinosaur",
+      "assetCount": 6
+    },
+    {
+      "slug": "nigiri",
+      "type": "food",
+      "assetCount": 16
+    },
+    {
+      "slug": "orchid",
+      "type": "plant",
+      "assetCount": 9
+    },
+    {
+      "slug": "poppy",
+      "type": "plant",
+      "assetCount": 7
+    },
+    {
+      "slug": "lotus",
+      "type": "plant",
+      "assetCount": 6
+    },
+    {
+      "slug": "palm",
+      "type": "plant",
+      "assetCount": 6
+    },
+    {
+      "slug": "leprechaun",
+      "type": "holiday",
+      "assetCount": 9
+    },
+    {
+      "slug": "salmon",
+      "type": "food",
+      "assetCount": 11
+    },
+    {
+      "slug": "gingerbread",
+      "type": "holiday",
+      "assetCount": 10
+    }
+  ],
+  "findings": [
+    "Existing hub intros are mostly generated from the same broad sentence frame.",
+    "Several records still mention PNG-only or card-level download wording even though downloads now live in the preview workflow.",
+    "The React layout already keeps supporting SEO content below the gallery, so the main fix is content data quality rather than moving blocks above the gallery."
+  ]
+}

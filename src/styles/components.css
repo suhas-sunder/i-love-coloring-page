@@ -453,6 +453,7 @@
   --ad-rail-width: 160px;
   --content-max-width: var(--layout-max);
   --ad-wide-min-viewport: 1740px;
+  --ad-rail-compact-min-viewport: 1536px;
 }
 
 .ad-slot[data-ad-placeholder="true"] {
@@ -1648,6 +1649,37 @@
 @media (max-width: 1739px) {
   .ad-rail {
     display: none;
+  }
+}
+
+@media (min-width: 1536px) and (max-width: 1739px) {
+  .page-shell {
+    --ad-rail-gap: var(--space-24);
+    --ad-rail-width: clamp(120px, calc((100vw - var(--layout-max)) / 2 - var(--ad-rail-gap)), 160px);
+  }
+
+  .ad-rail {
+    position: absolute;
+    top: var(--space-96);
+    display: block;
+    width: var(--ad-rail-width);
+    max-width: var(--ad-rail-width);
+  }
+
+  .ad-rail-left {
+    left: calc(-1 * (var(--ad-rail-width) + var(--ad-rail-gap)));
+  }
+
+  .ad-rail-right {
+    right: calc(-1 * (var(--ad-rail-width) + var(--ad-rail-gap)));
+  }
+
+  .ad-rail .ad-slot {
+    width: 100%;
+    max-width: 100%;
+    overflow: clip;
+    box-sizing: border-box;
+    margin-top: 0;
   }
 }
 

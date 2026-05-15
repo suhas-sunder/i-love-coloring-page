@@ -1,0 +1,44 @@
+{
+  "generatedAt": "2026-05-15T05:00:58.734Z",
+  "runId": "content-quality-context-check",
+  "references": [
+    {
+      "name": "Google Search Central helpful content",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "use": "People-first copy, page experience, and avoiding search-first filler."
+    },
+    {
+      "name": "Google Search spam policies",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "use": "Avoid scaled low-value pages, scraped copy, keyword stuffing, and pages made only for rankings."
+    },
+    {
+      "name": "Google AdSense page readiness",
+      "url": "https://support.google.com/adsense/answer/7299563/make-sure-that-your-site-s-pages-are-ready-for-adsense?hl=en-GB",
+      "use": "Unique relevant content, clear navigation, and a useful page experience before ads."
+    }
+  ],
+  "summary": {
+    "correctRepo": true,
+    "currentBranch": "ver-6-seo",
+    "appApiRoutePresent": false,
+    "staticExportConfigured": true,
+    "runtimeHubCount": 163,
+    "runtimeAvailableRecords": 6352,
+    "sitemapPageExists": true,
+    "xmlSitemapExists": true,
+    "imageSitemapExists": true,
+    "imageSitemapWebpEntries": 6352,
+    "ogImagesExist": true,
+    "jsonLdExists": true,
+    "publicSafeSiteUrl": true,
+    "publicSafeAssetBase": true,
+    "publicSafeEmail": true,
+    "svgDownloadAbsent": true,
+    "publicDownloadsPngJpgWebp": true,
+    "liveAdSenseAbsent": true,
+    "imagesUntouched": true,
+    "ilovesvgUntouched": true
+  },
+  "blockers": []
+}

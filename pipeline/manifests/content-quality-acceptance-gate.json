@@ -1,0 +1,23 @@
+{
+  "generatedAt": "2026-05-15T05:02:31.017Z",
+  "runId": "content-quality-acceptance-gate",
+  "summary": {
+    "hubs_checked": 163,
+    "hubs_updated": 162,
+    "uniqueness_passed": true,
+    "boilerplate_risk_passed": true,
+    "helpfulness_passed": true,
+    "gallery_first_passed": true,
+    "metadata_passed": true,
+    "jsonld_regression_passed": true,
+    "browser_qa_passed": true,
+    "static_export_passed": true,
+    "static_seo_passed": true,
+    "adsense_readiness_improved": true,
+    "ready_for_final_local_acceptance_rerun": true,
+    "ready_for_netlify_deployment": true,
+    "ready_for_live_ads_round": false,
+    "blockers": [],
+    "contentAcceptancePassed": true
+  }
+}

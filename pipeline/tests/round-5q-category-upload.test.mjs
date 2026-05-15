@@ -15,7 +15,7 @@ const EXPECTED_BUCKET = "i-love-coloring-page";
 const EXPECTED_PREFIX = "coloring-pages";
 const SCRIPT = "pipeline/scripts/round-5o-upload-clean-bundle-to-r2.mjs";
 const VERIFY_SCRIPT = "pipeline/scripts/round-5o-verify-clean-upload-r2.mjs";
-const ALLOWED_PRODUCTION_BRANCHES = new Set(["version-4", "version-1", "ver-5-deployed-may-13-2026"]);
+const ALLOWED_PRODUCTION_BRANCHES = new Set(["version-4", "version-1", "ver-5-deployed-may-13-2026", "ver-6-seo"]);
 const REQUIRED_JSON = [
   "pipeline/manifests/round-5q-project-context-check.json",
   "pipeline/manifests/round-5q-st-patricks-day-upload-plan.json",

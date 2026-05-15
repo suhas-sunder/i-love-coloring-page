@@ -1,0 +1,293 @@
+{
+  "generatedAt": "2026-05-15T05:02:31.014Z",
+  "runId": "content-quality-static-seo",
+  "build": {
+    "buildRan": true,
+    "outDir": "D:\\PROJECTS-and-WORK\\work-projects\\all_projects\\i-love-coloring-page\\out",
+    "startedAt": "2026-05-15T05:02:01.763Z",
+    "finishedAt": "2026-05-15T05:02:22.310Z"
+  },
+  "sampledRoutes": [
+    {
+      "route": "/",
+      "jsonLdCount": 1,
+      "jsonLdParses": true,
+      "jsonLdTypes": [
+        "WebSite",
+        "ImageObject",
+        "Organization",
+        "ImageObject",
+        "WebPage",
+        "ImageObject"
+      ],
+      "canonicalWwwDomain": true,
+      "titlePresent": true,
+      "descriptionPresent": true
+    },
+    {
+      "route": "/coloring-pages",
+      "jsonLdCount": 1,
+      "jsonLdParses": true,
+      "jsonLdTypes": [
+        "CollectionPage",
+        "ImageObject",
+        "BreadcrumbList",
+        "ListItem",
+        "ItemList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "canonicalWwwDomain": true,
+      "titlePresent": true,
+      "descriptionPresent": true
+    },
+    {
+      "route": "/coloring-pages/animals",
+      "jsonLdCount": 1,
+      "jsonLdParses": true,
+      "jsonLdTypes": [
+        "CollectionPage",
+        "ImageObject",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ItemList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "canonicalWwwDomain": true,
+      "titlePresent": true,
+      "descriptionPresent": true
+    },
+    {
+      "route": "/coloring-pages/t-rex",
+      "jsonLdCount": 1,
+      "jsonLdParses": true,
+      "jsonLdTypes": [
+        "CollectionPage",
+        "ImageObject",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ItemList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "canonicalWwwDomain": true,
+      "titlePresent": true,
+      "descriptionPresent": true
+    },
+    {
+      "route": "/coloring-pages/dodo",
+      "jsonLdCount": 1,
+      "jsonLdParses": true,
+      "jsonLdTypes": [
+        "CollectionPage",
+        "ImageObject",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ItemList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "canonicalWwwDomain": true,
+      "titlePresent": true,
+      "descriptionPresent": true
+    },
+    {
+      "route": "/coloring-pages/magic",
+      "jsonLdCount": 1,
+      "jsonLdParses": true,
+      "jsonLdTypes": [
+        "CollectionPage",
+        "ImageObject",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ItemList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "canonicalWwwDomain": true,
+      "titlePresent": true,
+      "descriptionPresent": true
+    },
+    {
+      "route": "/coloring-pages/orchid",
+      "jsonLdCount": 1,
+      "jsonLdParses": true,
+      "jsonLdTypes": [
+        "CollectionPage",
+        "ImageObject",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ItemList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "canonicalWwwDomain": true,
+      "titlePresent": true,
+      "descriptionPresent": true
+    },
+    {
+      "route": "/coloring-pages/salmon",
+      "jsonLdCount": 1,
+      "jsonLdParses": true,
+      "jsonLdTypes": [
+        "CollectionPage",
+        "ImageObject",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ItemList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ],
+      "canonicalWwwDomain": true,
+      "titlePresent": true,
+      "descriptionPresent": true
+    },
+    {
+      "route": "/sitemap",
+      "jsonLdCount": 1,
+      "jsonLdParses": true,
+      "jsonLdTypes": [
+        "WebPage",
+        "ImageObject"
+      ],
+      "canonicalWwwDomain": true,
+      "titlePresent": true,
+      "descriptionPresent": true
+    },
+    {
+      "route": "/about",
+      "jsonLdCount": 1,
+      "jsonLdParses": true,
+      "jsonLdTypes": [
+        "AboutPage",
+        "ImageObject"
+      ],
+      "canonicalWwwDomain": true,
+      "titlePresent": true,
+      "descriptionPresent": true
+    },
+    {
+      "route": "/contact",
+      "jsonLdCount": 1,
+      "jsonLdParses": true,
+      "jsonLdTypes": [
+        "ContactPage",
+        "ImageObject"
+      ],
+      "canonicalWwwDomain": true,
+      "titlePresent": true,
+      "descriptionPresent": true
+    },
+    {
+      "route": "/privacy",
+      "jsonLdCount": 1,
+      "jsonLdParses": true,
+      "jsonLdTypes": [
+        "PrivacyPolicy",
+        "ImageObject"
+      ],
+      "canonicalWwwDomain": true,
+      "titlePresent": true,
+      "descriptionPresent": true
+    }
+  ],
+  "sitemapLocCount": 171,
+  "routeCountExpected": 163,
+  "hubCountExpected": 163,
+  "ogJpgCount": 165,
+  "outputScan": {
+    "filesScanned": 6517,
+    "perImageRouteMatches": 0,
+    "appApiMatches": 0,
+    "privateEndpointMatches": 0,
+    "svgDownloadMatches": 0,
+    "samples": []
+  },
+  "hubOgMissing": [],
+  "forbiddenSchemaTypesFound": [],
+  "summary": {
+    "buildPassed": true,
+    "sitemapExists": true,
+    "sitemapLocCount": 171,
+    "sitemapIncludesCurrentRouteSet": true,
+    "sitemapIncludesHtmlSitemap": true,
+    "sitemapIncludesAllHubs": true,
+    "sitemapExcludesPerImageRoutes": true,
+    "sitemapExcludesManualBacklog": true,
+    "imageSitemapExists": true,
+    "imageSitemapWebpEntries": 6352,
+    "imageSitemapWebpEntriesPassed": true,
+    "imageSitemapExcludesSvgPngThumbs": true,
+    "robotsExists": true,
+    "robotsReferencesBothSitemaps": true,
+    "htmlSitemapExists": true,
+    "ogImagesExist": true,
+    "hubOgImagesExist": true,
+    "jsonLdExistsForSampledRoutes": true,
+    "jsonLdParses": true,
+    "noForbiddenSchemaTypes": true,
+    "canonicalWwwDomain": true,
+    "noPerImageRoutes": true,
+    "noAppApi": true,
+    "noLocalhostR2DevPrivateEndpoints": true,
+    "noSvgDownload": true,
+    "hubContentRecords": 163,
+    "allHubsHaveContent": true,
+    "staticSeoPassed": true
+  },
+  "blockers": []
+}
