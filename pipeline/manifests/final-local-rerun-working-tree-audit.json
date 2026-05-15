@@ -1,0 +1,20 @@
+{
+  "generatedAt": "2026-05-15T03:46:25.196Z",
+  "runId": "final-local-rerun-working-tree-audit",
+  "commands": {
+    "gitStatusShort": " M AGENTS.md\n?? pipeline/manifests/final-local-rerun-acceptance-gate.json\n?? pipeline/manifests/final-local-rerun-ad-placeholder-qa.json\n?? pipeline/manifests/final-local-rerun-browser-qa-results.json\n?? pipeline/manifests/final-local-rerun-context-check.json\n?? pipeline/manifests/final-local-rerun-link-section-acceptance.json\n?? pipeline/manifests/final-local-rerun-print-qa-results.json\n?? pipeline/manifests/final-local-rerun-seo-results.json\n?? pipeline/manifests/final-local-rerun-static-export-results.json\n?? pipeline/manifests/final-local-rerun-trust-content-review.json\n?? pipeline/manifests/final-local-rerun-working-tree-audit.json\n?? pipeline/reports/final-local-rerun-acceptance-gate.md\n?? pipeline/reports/final-local-rerun-ad-placeholder-qa.md\n?? pipeline/reports/final-local-rerun-browser-qa-report.md\n?? pipeline/reports/final-local-rerun-context-check.md\n?? pipeline/reports/final-local-rerun-link-section-acceptance.md\n?? pipeline/reports/final-local-rerun-print-qa-report.md\n?? pipeline/reports/final-local-rerun-seo-report.md\n?? pipeline/reports/final-local-rerun-static-export-report.md\n?? pipeline/reports/final-local-rerun-trust-content-review.md\n?? pipeline/reports/final-local-rerun-working-tree-audit.md\n?? pipeline/scripts/final-local-rerun-browser-qa-runner.cjs\n?? pipeline/scripts/final-local-rerun-print-qa-runner.cjs\n?? pipeline/scripts/final-local-rerun-seo-qa.mjs\n?? pipeline/tests/final-local-rerun-acceptance.test.mjs\n",
+    "gitDiffStat": " AGENTS.md | 5 +++++\n 1 file changed, 5 insertions(+)\n",
+    "gitDiffNameOnly": "AGENTS.md\n"
+  },
+  "classification": {
+    "baselineWasCleanBeforeRoundEdits": true,
+    "currentRoundFilesDetected": true,
+    "unrelatedDriftFound": false,
+    "unrelatedFiles": [],
+    "safeToProceed": true
+  },
+  "summary": {
+    "workingTreeAuditPassed": true,
+    "blockers": []
+  }
+}

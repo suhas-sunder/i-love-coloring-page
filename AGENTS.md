@@ -601,9 +601,14 @@ This repository is the foundation for a future Next.js coloring page website. Th
 ## Live SEO Verification Gate
 
 - Final local acceptance must pass before Netlify deployment.
+- Final local rerun acceptance must pass after sitemap or link-section changes before deployment.
 - Link-section visual quality is a deployment blocker.
 - Print/PDF quality is a deployment blocker.
 - Local acceptance must cover browser QA, print QA, SEO assets, trust pages, and ad placeholders.
+- The HTML sitemap page must remain grouped, readable, and user-friendly.
+- Related Collections must not regress into a cramped pill dump.
+- XML sitemap output remains `/sitemap.xml`; do not replace it with `/sitemaps.xml` unless explicitly requested.
+- Image sitemap output remains `/image-sitemap.xml`.
 - Live ads remain deferred until the owner explicitly reopens a live ads round.
 - Live SEO verification must pass before GSC submission or manual social preview validation.
 - Local sitemap, image sitemap, OG, and JSON-LD validation is not enough; production pages must be checked after deployment.

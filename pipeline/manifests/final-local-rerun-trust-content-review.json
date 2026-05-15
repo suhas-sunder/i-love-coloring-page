@@ -1,0 +1,116 @@
+{
+  "generatedAt": "2026-05-15T03:46:25.274Z",
+  "runId": "final-local-rerun-trust-content-review",
+  "summary": {
+    "pagesExist": true,
+    "contactEmailIsAdmin": true,
+    "noFakeAddress": true,
+    "noFakePhone": true,
+    "noFalseCompanyClaims": true,
+    "privacyTermsDraftSafe": true,
+    "privacyMentionsFutureAdsCookiesAccurately": true,
+    "affiliateDisclosurePresent": true,
+    "editorialPolicyPresent": true,
+    "noMisleadingOnlineColoringClaims": true,
+    "noPublicSvgDownloadClaims": true,
+    "noInternalPipelineWording": true,
+    "legalOwnerReviewRecommended": true,
+    "trustContentPassed": true
+  },
+  "pageResults": [
+    {
+      "route": "/about",
+      "exists": true,
+      "contactEmailAppears": false,
+      "noFakeAddress": true,
+      "noFakePhone": true,
+      "noFalseCompanyClaims": true,
+      "noPublicSvgDownloadClaims": true,
+      "noInternalPipelineWording": true,
+      "noMisleadingOnlineColoringClaims": true
+    },
+    {
+      "route": "/contact",
+      "exists": true,
+      "contactEmailAppears": true,
+      "noFakeAddress": true,
+      "noFakePhone": true,
+      "noFalseCompanyClaims": true,
+      "noPublicSvgDownloadClaims": true,
+      "noInternalPipelineWording": true,
+      "noMisleadingOnlineColoringClaims": true
+    },
+    {
+      "route": "/privacy",
+      "exists": true,
+      "contactEmailAppears": true,
+      "noFakeAddress": true,
+      "noFakePhone": true,
+      "noFalseCompanyClaims": true,
+      "noPublicSvgDownloadClaims": true,
+      "noInternalPipelineWording": true,
+      "noMisleadingOnlineColoringClaims": true
+    },
+    {
+      "route": "/terms",
+      "exists": true,
+      "contactEmailAppears": true,
+      "noFakeAddress": true,
+      "noFakePhone": true,
+      "noFalseCompanyClaims": true,
+      "noPublicSvgDownloadClaims": true,
+      "noInternalPipelineWording": true,
+      "noMisleadingOnlineColoringClaims": true
+    },
+    {
+      "route": "/affiliate-disclosure",
+      "exists": true,
+      "contactEmailAppears": true,
+      "noFakeAddress": true,
+      "noFakePhone": true,
+      "noFalseCompanyClaims": true,
+      "noPublicSvgDownloadClaims": true,
+      "noInternalPipelineWording": true,
+      "noMisleadingOnlineColoringClaims": true
+    },
+    {
+      "route": "/editorial-policy",
+      "exists": true,
+      "contactEmailAppears": true,
+      "noFakeAddress": true,
+      "noFakePhone": true,
+      "noFalseCompanyClaims": true,
+      "noPublicSvgDownloadClaims": true,
+      "noInternalPipelineWording": true,
+      "noMisleadingOnlineColoringClaims": true
+    }
+  ],
+  "sampledPublicRoutes": [
+    {
+      "route": "/",
+      "exists": true,
+      "galleryFirstUxPreserved": true,
+      "noMisleadingOnlineColoringClaims": true,
+      "noPublicSvgDownloadClaims": true,
+      "noInternalPipelineWording": true
+    },
+    {
+      "route": "/coloring-pages",
+      "exists": true,
+      "galleryFirstUxPreserved": true,
+      "noMisleadingOnlineColoringClaims": true,
+      "noPublicSvgDownloadClaims": true,
+      "noInternalPipelineWording": true
+    },
+    {
+      "route": "/coloring-pages/animals",
+      "exists": true,
+      "galleryFirstUxPreserved": true,
+      "noMisleadingOnlineColoringClaims": true,
+      "noPublicSvgDownloadClaims": true,
+      "noInternalPipelineWording": true
+    }
+  ],
+  "ownerReviewStatus": "Owner and legal review remain recommended for draft policy pages before launch and live ads.",
+  "blockers": []
+}

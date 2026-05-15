@@ -1,0 +1,546 @@
+{
+  "generatedAt": "2026-05-15T03:40:08.194Z",
+  "runId": "final-local-rerun-ad-placeholder-qa",
+  "summary": {
+    "adWellsVisibleByDefault": true,
+    "noLiveAdsenseScript": true,
+    "noAdClientIds": true,
+    "desktopWideDensityCorrect": true,
+    "mobileTabletDensityCorrect": true,
+    "desktopDensityCorrect": true,
+    "noAdsInsideNav": true,
+    "noAdsInsideGalleryGrid": true,
+    "noAdsBesidePrintDownloadControls": true,
+    "noOverlap": true,
+    "noHorizontalOverflow": true,
+    "adPlaceholderQaPassed": true
+  },
+  "visibleAdCounts": [
+    {
+      "route": "/",
+      "viewport": "390",
+      "width": 390,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages",
+      "viewport": "390",
+      "width": 390,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/animals",
+      "viewport": "390",
+      "width": 390,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/t-rex",
+      "viewport": "390",
+      "width": 390,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/dragons",
+      "viewport": "390",
+      "width": 390,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/dodo",
+      "viewport": "390",
+      "width": 390,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/bamboo",
+      "viewport": "390",
+      "width": 390,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/steam-train",
+      "viewport": "390",
+      "width": 390,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/magic",
+      "viewport": "390",
+      "width": 390,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/lily",
+      "viewport": "390",
+      "width": 390,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/bulldog",
+      "viewport": "390",
+      "width": 390,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/geometric",
+      "viewport": "390",
+      "width": 390,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/anime-girls",
+      "viewport": "390",
+      "width": 390,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/christmas",
+      "viewport": "390",
+      "width": 390,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/plushies",
+      "viewport": "390",
+      "width": 390,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/",
+      "viewport": "768",
+      "width": 768,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages",
+      "viewport": "768",
+      "width": 768,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/animals",
+      "viewport": "768",
+      "width": 768,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/t-rex",
+      "viewport": "768",
+      "width": 768,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/dragons",
+      "viewport": "768",
+      "width": 768,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/dodo",
+      "viewport": "768",
+      "width": 768,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/bamboo",
+      "viewport": "768",
+      "width": 768,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/steam-train",
+      "viewport": "768",
+      "width": 768,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/magic",
+      "viewport": "768",
+      "width": 768,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/lily",
+      "viewport": "768",
+      "width": 768,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/bulldog",
+      "viewport": "768",
+      "width": 768,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/geometric",
+      "viewport": "768",
+      "width": 768,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/anime-girls",
+      "viewport": "768",
+      "width": 768,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/christmas",
+      "viewport": "768",
+      "width": 768,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/plushies",
+      "viewport": "768",
+      "width": 768,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/",
+      "viewport": "1440",
+      "width": 1440,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages",
+      "viewport": "1440",
+      "width": 1440,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/animals",
+      "viewport": "1440",
+      "width": 1440,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/t-rex",
+      "viewport": "1440",
+      "width": 1440,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/dragons",
+      "viewport": "1440",
+      "width": 1440,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/dodo",
+      "viewport": "1440",
+      "width": 1440,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/bamboo",
+      "viewport": "1440",
+      "width": 1440,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/steam-train",
+      "viewport": "1440",
+      "width": 1440,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/magic",
+      "viewport": "1440",
+      "width": 1440,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/lily",
+      "viewport": "1440",
+      "width": 1440,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/bulldog",
+      "viewport": "1440",
+      "width": 1440,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/geometric",
+      "viewport": "1440",
+      "width": 1440,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/anime-girls",
+      "viewport": "1440",
+      "width": 1440,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/christmas",
+      "viewport": "1440",
+      "width": 1440,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/coloring-pages/plushies",
+      "viewport": "1440",
+      "width": 1440,
+      "visibleAdCount": 1,
+      "expectedAdCount": 1
+    },
+    {
+      "route": "/",
+      "viewport": "1920",
+      "width": 1920,
+      "visibleAdCount": 3,
+      "expectedAdCount": 3
+    },
+    {
+      "route": "/coloring-pages",
+      "viewport": "1920",
+      "width": 1920,
+      "visibleAdCount": 3,
+      "expectedAdCount": 3
+    },
+    {
+      "route": "/coloring-pages/animals",
+      "viewport": "1920",
+      "width": 1920,
+      "visibleAdCount": 3,
+      "expectedAdCount": 3
+    },
+    {
+      "route": "/coloring-pages/t-rex",
+      "viewport": "1920",
+      "width": 1920,
+      "visibleAdCount": 3,
+      "expectedAdCount": 3
+    },
+    {
+      "route": "/coloring-pages/dragons",
+      "viewport": "1920",
+      "width": 1920,
+      "visibleAdCount": 3,
+      "expectedAdCount": 3
+    },
+    {
+      "route": "/coloring-pages/dodo",
+      "viewport": "1920",
+      "width": 1920,
+      "visibleAdCount": 3,
+      "expectedAdCount": 3
+    },
+    {
+      "route": "/coloring-pages/bamboo",
+      "viewport": "1920",
+      "width": 1920,
+      "visibleAdCount": 3,
+      "expectedAdCount": 3
+    },
+    {
+      "route": "/coloring-pages/steam-train",
+      "viewport": "1920",
+      "width": 1920,
+      "visibleAdCount": 3,
+      "expectedAdCount": 3
+    },
+    {
+      "route": "/coloring-pages/magic",
+      "viewport": "1920",
+      "width": 1920,
+      "visibleAdCount": 3,
+      "expectedAdCount": 3
+    },
+    {
+      "route": "/coloring-pages/lily",
+      "viewport": "1920",
+      "width": 1920,
+      "visibleAdCount": 3,
+      "expectedAdCount": 3
+    },
+    {
+      "route": "/coloring-pages/bulldog",
+      "viewport": "1920",
+      "width": 1920,
+      "visibleAdCount": 3,
+      "expectedAdCount": 3
+    },
+    {
+      "route": "/coloring-pages/geometric",
+      "viewport": "1920",
+      "width": 1920,
+      "visibleAdCount": 3,
+      "expectedAdCount": 3
+    },
+    {
+      "route": "/coloring-pages/anime-girls",
+      "viewport": "1920",
+      "width": 1920,
+      "visibleAdCount": 3,
+      "expectedAdCount": 3
+    },
+    {
+      "route": "/coloring-pages/christmas",
+      "viewport": "1920",
+      "width": 1920,
+      "visibleAdCount": 3,
+      "expectedAdCount": 3
+    },
+    {
+      "route": "/coloring-pages/plushies",
+      "viewport": "1920",
+      "width": 1920,
+      "visibleAdCount": 3,
+      "expectedAdCount": 3
+    },
+    {
+      "route": "/",
+      "viewport": "2560",
+      "width": 2560,
+      "visibleAdCount": 3,
+      "expectedAdCount": 3
+    },
+    {
+      "route": "/coloring-pages",
+      "viewport": "2560",
+      "width": 2560,
+      "visibleAdCount": 3,
+      "expectedAdCount": 3
+    },
+    {
+      "route": "/coloring-pages/animals",
+      "viewport": "2560",
+      "width": 2560,
+      "visibleAdCount": 3,
+      "expectedAdCount": 3
+    },
+    {
+      "route": "/coloring-pages/t-rex",
+      "viewport": "2560",
+      "width": 2560,
+      "visibleAdCount": 3,
+      "expectedAdCount": 3
+    },
+    {
+      "route": "/coloring-pages/dragons",
+      "viewport": "2560",
+      "width": 2560,
+      "visibleAdCount": 3,
+      "expectedAdCount": 3
+    },
+    {
+      "route": "/coloring-pages/dodo",
+      "viewport": "2560",
+      "width": 2560,
+      "visibleAdCount": 3,
+      "expectedAdCount": 3
+    },
+    {
+      "route": "/coloring-pages/bamboo",
+      "viewport": "2560",
+      "width": 2560,
+      "visibleAdCount": 3,
+      "expectedAdCount": 3
+    },
+    {
+      "route": "/coloring-pages/steam-train",
+      "viewport": "2560",
+      "width": 2560,
+      "visibleAdCount": 3,
+      "expectedAdCount": 3
+    },
+    {
+      "route": "/coloring-pages/magic",
+      "viewport": "2560",
+      "width": 2560,
+      "visibleAdCount": 3,
+      "expectedAdCount": 3
+    },
+    {
+      "route": "/coloring-pages/lily",
+      "viewport": "2560",
+      "width": 2560,
+      "visibleAdCount": 3,
+      "expectedAdCount": 3
+    },
+    {
+      "route": "/coloring-pages/bulldog",
+      "viewport": "2560",
+      "width": 2560,
+      "visibleAdCount": 3,
+      "expectedAdCount": 3
+    },
+    {
+      "route": "/coloring-pages/geometric",
+      "viewport": "2560",
+      "width": 2560,
+      "visibleAdCount": 3,
+      "expectedAdCount": 3
+    },
+    {
+      "route": "/coloring-pages/anime-girls",
+      "viewport": "2560",
+      "width": 2560,
+      "visibleAdCount": 3,
+      "expectedAdCount": 3
+    },
+    {
+      "route": "/coloring-pages/christmas",
+      "viewport": "2560",
+      "width": 2560,
+      "visibleAdCount": 3,
+      "expectedAdCount": 3
+    },
+    {
+      "route": "/coloring-pages/plushies",
+      "viewport": "2560",
+      "width": 2560,
+      "visibleAdCount": 3,
+      "expectedAdCount": 3
+    }
+  ],
+  "blockers": []
+}

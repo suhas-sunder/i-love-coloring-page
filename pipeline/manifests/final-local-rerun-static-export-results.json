@@ -1,0 +1,31 @@
+{
+  "generatedAt": "2026-05-15T03:37:53.259Z",
+  "runId": "final-local-rerun-static-export-results",
+  "build": {
+    "buildRan": true,
+    "outDir": "D:\\PROJECTS-and-WORK\\work-projects\\all_projects\\i-love-coloring-page\\out",
+    "startedAt": "2026-05-15T03:37:08.614Z",
+    "finishedAt": "2026-05-15T03:37:37.401Z"
+  },
+  "outDir": "out",
+  "summary": {
+    "buildPassed": true,
+    "buildRan": true,
+    "staticExportConfigured": true,
+    "htmlFileCount": 624,
+    "runtimeSitemapRouteCount": 163,
+    "generatedExpectedRuntimeRoutes": true,
+    "htmlSitemapPageGenerated": true,
+    "sitemapXmlExists": true,
+    "imageSitemapXmlExists": true,
+    "robotsTxtExists": true,
+    "noLocalhost": true,
+    "noR2Dev": true,
+    "noPrivateR2Endpoint": true,
+    "noAppApiReferences": true,
+    "noDownloadSvgText": true,
+    "noLiveAdsenseScriptsOrIds": true,
+    "staticExportPassed": true
+  },
+  "blockers": []
+}
