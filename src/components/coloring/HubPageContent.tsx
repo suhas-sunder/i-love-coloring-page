@@ -1,26 +1,27 @@
-import { AdRail } from "@/components/ads/AdRail";
-import { AdSlot } from "@/components/ads/AdSlot";
-import { GallerySearch } from "@/components/coloring/GallerySearch";
-import { HubCard } from "@/components/coloring/HubCard";
-import { HubHero, type HeroRelatedLink } from "@/components/coloring/HubHero";
-import { Pagination } from "@/components/coloring/Pagination";
-import { RelatedHubs } from "@/components/coloring/RelatedHubs";
-import { RotatingFeaturedGrid } from "@/components/coloring/RotatingFeaturedGrid";
-import { SeoContentSection } from "@/components/coloring/SeoContentSection";
-import { JsonLdScript } from "@/components/seo/JsonLdScript";
+import Link from "next/link";
+
+import { PageAdSlot } from "@/components/ads/PageAdSlot";
+import { PublicPageShell } from "@/components/site/PublicPageShell";
+import { SupportingInformation } from "@/components/site/SupportingInformation";
 import {
   getChildHubs,
   getFeaturedRotationCandidateItems,
   getGeneratedFeaturedItems,
   getHubFilterTags,
-  getHubSearchEntries,
-  getHubSeoContent,
   getPagedHubItems,
-  getPublicItemsForHub,
   getRelatedHubs,
 } from "@/lib/coloring/data";
 import type { ColoringHub } from "@/lib/coloring/types";
 import { buildHubPageJsonLd } from "@/lib/seo/pageJsonLd";
+
+import { JsonLdScript } from "../seo/JsonLdScript";
+import { CollectionPageHeader } from "./CollectionPageHeader";
+import { GallerySearch } from "./GallerySearch";
+import { HubCard } from "./HubCard";
+import { Pagination } from "./Pagination";
+import { PaginatedGalleryGrid } from "./PaginatedGalleryGrid";
+import { RelatedHubs } from "./RelatedHubs";
+import { RotatingFeaturedGrid } from "./RotatingFeaturedGrid";
 
 type HubPageContentProps = {
   hub: ColoringHub;
@@ -28,180 +29,168 @@ type HubPageContentProps = {
 };
 
 export function HubPageContent({ hub, page }: HubPageContentProps) {
+  const isPageOne = page === 1;
+  const pageFamily = isPageOne ? "hub" : "hub-pagination";
   const pagedGallery = getPagedHubItems(hub, page);
-  const featuredItems = getGeneratedFeaturedItems(hub);
-  const featuredRotationCandidates = getFeaturedRotationCandidateItems(hub, 96);
-  const allHubItems = getPublicItemsForHub(hub);
-  const searchEntries = getHubSearchEntries(hub);
-  const { tags, tabs } = getHubFilterTags(hub);
-  const relatedHubs = getRelatedHubs(hub, 8);
-  const childHubs = getChildHubs(hub, 8);
-  const seoContent = getHubSeoContent(hub.hubId);
-  const browsingSections = getSectionListItems(hub.sectionGroupings, 10);
-  const heroRelatedLinks = getHeroRelatedLinks([...childHubs, ...relatedHubs], 6);
-  const jsonLdItems = page === 1 && featuredItems.length > 0 ? featuredItems : pagedGallery.items;
+  const featuredItems = getGeneratedFeaturedItems(hub).slice(0, 8);
+  const featuredRotationCandidates = getFeaturedRotationCandidateItems(hub, 64);
+  const { tags } = getHubFilterTags(hub);
+  const relatedHubs = getRelatedHubs(hub, 12)
+    .filter((related) => related.route !== hub.route && related.route !== "/coloring-pages")
+    .slice(0, 8);
+  const childHubs = getChildHubs(hub, 8).filter((child) => child.route !== hub.route);
+  const showFeatured = isPageOne && hub.assetCount >= 12 && featuredItems.length >= 4;
+  const jsonLdItems = showFeatured ? featuredItems : pagedGallery.items;
+  const intro = friendlyHubIntro(hub);
 
   return (
-    <main className="page-shell">
+    <PublicPageShell pageFamily={pageFamily} className={isPageOne ? "hub-page hub-page-one" : "hub-page hub-pagination-page"}>
       <JsonLdScript
         id={`jsonld-hub-${hub.slug}-${page}`}
-        data={buildHubPageJsonLd({
-          hub,
-          page,
-          visibleItems: jsonLdItems,
-        })}
-      />
-      <AdSlot slotId="hub-header-banner" />
-      <AdRail side="left" slotId="rail-left-desktop" />
-      <AdRail side="right" slotId="rail-right-desktop" />
-      <HubHero
-        hub={hub}
-        intro={friendlyHubIntro(hub.title)}
-        primaryCtaLabel="Browse gallery"
-        relatedTitle="Related collections"
-        relatedLinks={heroRelatedLinks}
+        data={buildHubPageJsonLd({ hub, page, visibleItems: jsonLdItems })}
       />
 
-      {featuredItems.length > 0 ? (
-        <section className="content-section section-band featured-band" aria-labelledby="featured-pages">
-          <div className="section-inner">
-            <div className="section-heading-row">
+      <CollectionPageHeader
+        hub={hub}
+        page={page}
+        intro={isPageOne ? intro : `Showing page ${page.toLocaleString()} of ${pagedGallery.totalPages.toLocaleString()} in this ${hub.title.toLowerCase()} collection.`}
+        showFacts={isPageOne}
+      />
+      <PageAdSlot pageFamily={pageFamily} placement="post-header-banner" />
+
+      {isPageOne ? (
+        <>
+          {showFeatured ? (
+            <section className="content-section section-band featured-band" aria-labelledby="featured-pages" data-page-section="featured-printables">
+              <div className="section-inner">
+                <div className="section-heading-row">
+                  <div>
+                    <h2 className="section-title" id="featured-pages">Featured printables</h2>
+                    <p>Eight useful starting points from this collection, rotated on the existing three-day schedule.</p>
+                  </div>
+                </div>
+                <RotatingFeaturedGrid
+                  fallbackItems={featuredItems}
+                  candidateItems={featuredRotationCandidates}
+                  mode="hub-three-day"
+                  hubSlug={hub.slug}
+                  priorityCount={6}
+                />
+              </div>
+            </section>
+          ) : null}
+
+          <section className="content-section gallery-section" id="gallery" aria-labelledby="printable-gallery-title" data-page-section="gallery">
+            <div className="section-heading-row gallery-heading-row">
               <div>
-                <h2 className="section-title" id="featured-pages">Featured pages</h2>
-                <p>Representative picks from this collection, selected from successful production assets.</p>
+                <h2 className="section-title" id="printable-gallery-title">Printable gallery</h2>
+                <p>Search this collection or choose a filter, then open an image or title for its printable page.</p>
               </div>
             </div>
-            <RotatingFeaturedGrid
-              fallbackItems={featuredItems}
-              candidateItems={featuredRotationCandidates}
-              mode="hub-three-day"
-              hubSlug={hub.slug}
-              itemHrefBasePath={hub.route}
-              priorityCount={6}
+            <GallerySearch
+              hubTitle={hub.title}
+              totalItems={pagedGallery.totalItems}
+              pageItems={pagedGallery.items}
+              searchDataPath={`/search-data/hubs/${hub.slug}.json`}
+              filterTags={tags}
+              pagination={{
+                basePath: hub.route,
+                currentPage: pagedGallery.currentPage,
+                totalPages: pagedGallery.totalPages,
+                hasPreviousPage: pagedGallery.hasPreviousPage,
+                hasNextPage: pagedGallery.hasNextPage,
+              }}
             />
-          </div>
-        </section>
-      ) : null}
+          </section>
 
-      <section className="content-section gallery-section" id="gallery">
-        <div className="section-heading-row">
-          <div>
-            <h2 className="section-title">Printable gallery</h2>
-            <p>
-              Search this collection, use a useful filter, or keep browsing page {pagedGallery.currentPage.toLocaleString()}.
-            </p>
-          </div>
-        </div>
-        <GallerySearch
-          hubTitle={hub.title}
-          totalItems={pagedGallery.totalItems}
-          pageItems={pagedGallery.items}
-          allItems={allHubItems}
-          featuredItems={featuredItems}
-          searchEntries={searchEntries}
-          filterTags={tags}
-          itemHrefBasePath={hub.route}
-          tabs={tabs}
-        />
-        <Pagination
-          basePath={hub.route}
-          currentPage={pagedGallery.currentPage}
-          totalPages={pagedGallery.totalPages}
-          hasPreviousPage={pagedGallery.hasPreviousPage}
-          hasNextPage={pagedGallery.hasNextPage}
-        />
-      </section>
-
-      <AdSlot slotId="hub-after-gallery" />
-
-      {childHubs.length > 0 || browsingSections.length > 0 ? (
-        <section className="content-section supporting-browse" aria-labelledby="supporting-browse-title">
-          <div className="section-heading-row">
-            <div>
-              <h2 className="section-title" id="supporting-browse-title">Narrower ways to browse</h2>
-              <p>Use these after the gallery when a specific subcollection or repeated theme would be faster than filtering again.</p>
-            </div>
-          </div>
-          <div className="supporting-browse-grid">
-            {childHubs.length > 0 ? (
-              <div>
-                <h3 className="supporting-title">Subcollections</h3>
-                <div className="hub-link-grid hub-link-grid-compact">
-                  {childHubs.map((child) => (
-                    <HubCard key={child.hubId} hub={child} compact />
-                  ))}
+          {childHubs.length > 0 ? (
+            <section className="content-section collection-section" aria-labelledby="narrower-browse-title" data-page-section="narrower-browse">
+              <div className="section-heading-row">
+                <div>
+                  <h2 className="section-title" id="narrower-browse-title">Narrower ways to browse</h2>
+                  <p>Open a more specific public collection when it is a better fit than another filter.</p>
                 </div>
               </div>
-            ) : null}
-            {browsingSections.length > 0 ? (
-              <div className="section-list-group">
-                <h3 className="supporting-title">Common themes</h3>
-                <ul className="section-list">
-                  {browsingSections.map((item) => (
-                    <li key={item.term}>
-                      <span>{item.label}</span>
-                      <strong>{item.assetCount.toLocaleString()}</strong>
-                    </li>
-                  ))}
-                </ul>
+              <div className="hub-link-grid hub-link-grid-compact">
+                {childHubs.map((child) => <HubCard key={child.hubId} hub={child} compact />)}
               </div>
-            ) : null}
+            </section>
+          ) : null}
+
+          <div data-page-section="related-collections">
+            <RelatedHubs title="Related Collections" hubs={relatedHubs} />
           </div>
-        </section>
-      ) : null}
 
-      <AdSlot slotId="hub-lower-content" />
+          <SupportingInformation
+            pageFamily="hub"
+            title={`Using this ${collectionName(hub)} collection`}
+            intro={supportingIntro(hub, relatedHubs)}
+            sections={[
+              { title: "Choose a printable", body: "Search within the collection or use a visible filter. Each image and title opens one printable page, while utility actions remain separate." },
+              { title: "Print or download", body: "Use Print for the prepared Letter layout, or choose PNG, JPG, or WebP from the printable page when those formats suit your project." },
+            ]}
+          />
+        </>
+      ) : (
+        <>
+          <section className="content-section paginated-gallery-section" aria-labelledby="page-gallery-title" data-page-section="paginated-gallery">
+            <div className="section-heading-row">
+              <div>
+                <h2 className="section-title" id="page-gallery-title">Printables on page {page.toLocaleString()}</h2>
+                <p>Showing {pagedGallery.items.length.toLocaleString()} printable pages from this collection.</p>
+              </div>
+            </div>
+            <p className="results-note" aria-live="polite">
+              Page {pagedGallery.currentPage.toLocaleString()} of {pagedGallery.totalPages.toLocaleString()}, with {pagedGallery.totalItems.toLocaleString()} printables in the collection.
+            </p>
+            <PaginatedGalleryGrid items={pagedGallery.items} />
+            <Pagination
+              basePath={hub.route}
+              currentPage={pagedGallery.currentPage}
+              totalPages={pagedGallery.totalPages}
+              hasPreviousPage={pagedGallery.hasPreviousPage}
+              hasNextPage={pagedGallery.hasNextPage}
+            />
+          </section>
 
-      <SeoContentSection content={seoContent} id="about-this-collection" />
+          <section className="content-section pagination-return" aria-labelledby="return-to-collection-title" data-page-section="return-to-collection">
+            <div>
+              <h2 className="section-title" id="return-to-collection-title">Return to the collection</h2>
+              <p className="section-copy">Start again at page one or continue with a nearby public collection.</p>
+            </div>
+            <div className="pagination-return-links">
+              <Link className="button button-primary" href={hub.route} prefetch={false}>View {hub.title}</Link>
+              {relatedHubs.slice(0, 3).map((related) => (
+                <Link className="button button-subtle" href={related.route} key={related.hubId} prefetch={false}>
+                  {collectionName(related)}
+                </Link>
+              ))}
+            </div>
+          </section>
+        </>
+      )}
 
-      <RelatedHubs title="Related collections" hubs={relatedHubs} id="related-collections" />
-    </main>
+      <PageAdSlot pageFamily={pageFamily} placement="related-banner" />
+    </PublicPageShell>
   );
 }
 
-function friendlyHubIntro(title: string) {
-  if (title === "Coloring Pages for Kids") {
-    return "Simple printable pages for kids, with downloads and print controls ready when you find one you like.";
-  }
-
-  if (title === "Detailed Coloring Pages for Adults") {
-    return "More intricate designs for relaxed coloring, ready to print or download from the gallery.";
-  }
-
-  const collectionName = title.replace(/ Coloring Pages$/, "");
-  return `${collectionName} coloring pages you can print or download. Browse the first set below, then use the page controls for more designs.`;
+function collectionName(hub: ColoringHub) {
+  return hub.title.replace(/ Coloring Pages$/, "");
 }
 
-function getSectionListItems(sections: ColoringHub["sectionGroupings"], limit: number) {
-  const seenTerms = new Set<string>();
-  const items: Array<{ term: string; label: string; assetCount: number }> = [];
-
-  for (const section of sections) {
-    for (const item of section.items) {
-      if (seenTerms.has(item.term)) continue;
-      seenTerms.add(item.term);
-      items.push(item);
-      if (items.length >= limit) return items;
-    }
-  }
-
-  return items;
+function friendlyHubIntro(hub: ColoringHub) {
+  const name = collectionName(hub);
+  return `Browse ${hub.assetCount.toLocaleString()} ${name.toLowerCase()} printables, then open a favorite for its full preview, Print action, and PNG, JPG, or WebP downloads.`;
 }
 
-function getHeroRelatedLinks(hubs: ColoringHub[], limit: number): HeroRelatedLink[] {
-  const seen = new Set<string>();
-  const links: HeroRelatedLink[] = [];
+function supportingIntro(hub: ColoringHub, relatedHubs: ColoringHub[]) {
+  const names = relatedHubs.slice(0, 3).map(collectionName);
+  const relatedSentence = names.length > 0 ? ` Related subjects include ${formatList(names)}.` : "";
+  return `This gallery contains ${hub.assetCount.toLocaleString()} available ${collectionName(hub).toLowerCase()} printables.${relatedSentence}`;
+}
 
-  for (const hub of hubs) {
-    if (seen.has(hub.route)) continue;
-    seen.add(hub.route);
-    links.push({
-      label: hub.title.replace(/ Coloring Pages$/, ""),
-      href: hub.route,
-      assetCount: hub.assetCount,
-    });
-    if (links.length >= limit) return links;
-  }
-
-  return links;
+function formatList(values: string[]) {
+  if (values.length < 2) return values[0] || "";
+  return `${values.slice(0, -1).join(", ")}, and ${values.at(-1)}`;
 }

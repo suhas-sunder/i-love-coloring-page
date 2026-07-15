@@ -1,16 +1,15 @@
 import type { MetadataRoute } from "next";
 
-import { getSiteUrl } from "@/lib/coloring/data";
+import { getCanonicalUrl } from "@/lib/site/siteConfig";
 
 export const dynamic = "force-static";
 
 export default function robots(): MetadataRoute.Robots {
-  const siteUrl = getSiteUrl();
   return {
     rules: {
       userAgent: "*",
-      allow: ["/", "/coloring-pages"],
+      allow: "/",
     },
-    sitemap: [`${siteUrl}/sitemap.xml`, `${siteUrl}/image-sitemap.xml`],
+    sitemap: [getCanonicalUrl("/sitemap.xml"), getCanonicalUrl("/image-sitemap.xml")],
   };
 }

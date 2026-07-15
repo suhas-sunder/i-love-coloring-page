@@ -103,9 +103,9 @@ test("runtime data supports available-only featured rotation", () => {
   const availableIds = new Set(available.items.map((item) => item.assetId));
   const deferredIds = new Set(deferred.records.map((item) => item.assetId));
 
-  assert.equal(available.items.length, 6352);
-  assert.equal(deferred.records.length, 205);
-  assert.equal(hubs.hubs.length, 131);
+  assert.equal(available.items.length, available.summary.itemCount);
+  assert.equal(deferred.records.length, deferred.summary.deferredRecordCount);
+  assert.equal(hubs.hubs.length, hubs.summary.hubCount);
   assert.ok(rootHub);
   assert.ok(tRexHub);
   assert.equal(tRexHub.assetCount, 18);
@@ -149,7 +149,7 @@ test("rotation stays within static-export and deferred-feature boundaries", () =
   const nextConfig = readText(new URL("../../next.config.mjs", import.meta.url));
   const imageCardSource = readText(new URL("../../src/components/coloring/ImageCard.tsx", import.meta.url));
   const downloadSource = readText(new URL("../../src/components/coloring/DownloadMenu.tsx", import.meta.url));
-  const publicEntries = fs.readdirSync(new URL("../../public/", import.meta.url), { withFileTypes: true });
+  const publicEntries = listPublicFiles(new URL("../../public/", import.meta.url));
 
   assert.match(nextConfig, /output:\s*"export"/);
   assert.equal(fs.existsSync(new URL("../../app/api", import.meta.url)), false);
@@ -160,5 +160,21 @@ test("rotation stays within static-export and deferred-feature boundaries", () =
   assert.match(`${imageCardSource}\n${downloadSource}`, /PNG/);
   assert.match(`${imageCardSource}\n${downloadSource}`, /JPG|JPEG/);
   assert.match(`${imageCardSource}\n${downloadSource}`, /WebP/);
-  assert.ok(publicEntries.every((entry) => entry.isFile() && entry.name.endsWith(".xml")), "public should contain only approved XML files");
+  assert.ok(
+    publicEntries.every((entry) => entry === "image-sitemap.xml" || /^og\/.+\.jpg$/i.test(entry) || /^search-data\/.+\.json$/i.test(entry)),
+    "public should contain only approved XML, route-level OG, and static search files",
+  );
 });
+
+function listPublicFiles(root) {
+  const files = [];
+  function walk(directory, prefix = "") {
+    for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
+      const relative = `${prefix}${entry.name}`;
+      if (entry.isDirectory()) walk(new URL(`${entry.name}/`, directory), `${relative}/`);
+      else files.push(relative);
+    }
+  }
+  walk(root);
+  return files.sort();
+}

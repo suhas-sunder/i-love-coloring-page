@@ -1,102 +1,106 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useId, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
+import { useCallback, useEffect, useId, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 
-import type { HubNavGroup, SiteNavLink } from "@/lib/navigation/siteNav";
+import { restoreFocusAfterModalClose, useModalDialog } from "@/hooks/useModalDialog";
+import {
+  mobileDirectLinks,
+  mobileNavigationGroups,
+  viewAllCollectionsLink,
+} from "@/lib/navigation/siteNav";
 
-import { MoreHubMenu } from "./MoreHubMenu";
+import { useSiteInteractions } from "./SiteInteractionProvider";
 
-type MobileNavProps = {
-  ariaLabel?: string;
-  groups: HubNavGroup[];
-  primaryLinks: SiteNavLink[];
-  utilityLinks: SiteNavLink[];
-};
-
-export function MobileNav({ ariaLabel = "Mobile browse navigation", groups, primaryLinks, utilityLinks }: MobileNavProps) {
-  const [isOpen, setIsOpen] = useState(false);
+export function MobileNav() {
+  const [mounted, setMounted] = useState(false);
+  const pathname = usePathname();
   const panelId = useId();
-  const buttonRef = useRef<HTMLButtonElement | null>(null);
-  const panelRef = useRef<HTMLDivElement | null>(null);
+  const surfaceId = useId();
+  const surface = { kind: "mobile-navigation" as const, id: surfaceId };
+  const buttonRef = useRef<HTMLButtonElement>(null);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
+  const panelRef = useRef<HTMLElement>(null);
+  const { closeModal, isModalOpen, openModal } = useSiteInteractions();
+  const isOpen = isModalOpen(surface);
 
+  useEffect(() => setMounted(true), []);
   useEffect(() => {
-    if (!isOpen) return;
+    if (isOpen) closeModal(surface);
+    // Route navigation is intentionally the only dependency that closes without restoring focus.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pathname]);
 
-    function handleKeyDown(event: KeyboardEvent) {
-      if (event.key === "Escape") {
-        setIsOpen(false);
-        buttonRef.current?.focus();
-      }
-    }
+  const closeAndRestore = useCallback(() => {
+    closeModal(surface);
+    restoreFocusAfterModalClose(buttonRef.current);
+  }, [closeModal, surface]);
 
-    document.addEventListener("keydown", handleKeyDown);
-    return () => document.removeEventListener("keydown", handleKeyDown);
-  }, [isOpen]);
+  useModalDialog({ open: isOpen, panelRef, initialFocusRef: closeButtonRef, onEscape: closeAndRestore });
 
-  useEffect(() => {
-    if (!isOpen) return;
-
-    function handlePointerDown(event: PointerEvent) {
-      const target = event.target;
-      if (!(target instanceof Node)) return;
-      if (buttonRef.current?.contains(target) || panelRef.current?.contains(target)) return;
-      setIsOpen(false);
-    }
-
-    document.addEventListener("pointerdown", handlePointerDown);
-    return () => document.removeEventListener("pointerdown", handlePointerDown);
-  }, [isOpen]);
-
-  function closeMenu() {
-    setIsOpen(false);
+  function navigateAndClose() {
+    closeModal(surface);
   }
 
   return (
     <div className="site-nav-mobile mobile-nav">
       <button
-        className="mobile-nav-toggle"
+        ref={buttonRef}
+        className="mobile-header-button mobile-nav-toggle"
         type="button"
-        aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+        aria-label="Open navigation menu"
         aria-expanded={isOpen}
         aria-controls={panelId}
-        ref={buttonRef}
-        onClick={() => setIsOpen((current) => !current)}
+        onClick={() => isOpen ? closeAndRestore() : openModal(surface)}
       >
-        <span className="mobile-nav-toggle-lines" aria-hidden="true">
-          <span />
-          <span />
-          <span />
-        </span>
+        <span className="mobile-nav-toggle-lines" aria-hidden="true"><span /><span /><span /></span>
       </button>
 
-      {isOpen ? (
-        <div className="mobile-nav-panel" id={panelId} ref={panelRef}>
-          <div className="mobile-nav-panel-header">
-            <div className="mobile-nav-panel-title">
-              <span className="brand-mark" aria-hidden="true">IL</span>
-              <span>I Love Coloring Page</span>
+      {mounted && isOpen ? createPortal(
+        <div className="mobile-nav-overlay" role="presentation">
+          <section ref={panelRef} className="mobile-nav-panel" id={panelId} role="dialog" aria-modal="true" aria-labelledby={`${panelId}-title`}>
+            <div className="mobile-nav-panel-header">
+              <div className="mobile-nav-panel-title" id={`${panelId}-title`}>
+                <span className="brand-mark" aria-hidden="true">IL</span>
+                <span>Browse coloring pages</span>
+              </div>
+              <button ref={closeButtonRef} className="mobile-nav-close" type="button" onClick={closeAndRestore}>Close</button>
             </div>
-            <button className="mobile-nav-close" type="button" aria-label="Close navigation menu" onClick={closeMenu}>
-              <span aria-hidden="true">Close</span>
-            </button>
-          </div>
-          <nav aria-label={ariaLabel}>
-            <MoreHubMenu groups={groups} leadLinks={primaryLinks} utilityLinks={[]} variant="mobile" onNavigate={closeMenu} />
-            <div className="mobile-nav-links" aria-label="Primary mobile links">
-              {utilityLinks.length > 0 ? (
-                <div className="mobile-nav-link-group">
-                  <span className="mobile-nav-link-group-title">Library</span>
-                  {utilityLinks.map((link) => (
-                    <Link className="mobile-nav-link" href={link.href} key={link.href} onClick={closeMenu} prefetch={false}>
-                      {link.label}
-                    </Link>
-                  ))}
-                </div>
-              ) : null}
-            </div>
-          </nav>
-        </div>
+
+            <nav className="mobile-nav-content" aria-label="Mobile navigation">
+              <div className="mobile-nav-direct-links">
+                {mobileDirectLinks.map((link) => (
+                  <Link href={link.href} key={link.id} aria-current={pathname === link.href ? "page" : undefined} onClick={navigateAndClose} prefetch={false}>
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+
+              {mobileNavigationGroups.map((group) => (
+                <details className="mobile-nav-group" key={group.id}>
+                  <summary>{group.label}<span aria-hidden="true">⌄</span></summary>
+                  <ul>
+                    {group.links.map((link) => (
+                      <li key={link.href}>
+                        <Link href={link.href} aria-current={pathname === link.href ? "page" : undefined} onClick={navigateAndClose} prefetch={false}>
+                          <span>{link.label}</span>
+                          {typeof link.assetCount === "number" ? <strong>{link.assetCount.toLocaleString()}</strong> : null}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </details>
+              ))}
+
+              <Link className="mobile-nav-view-all" href={viewAllCollectionsLink.href} onClick={navigateAndClose} prefetch={false}>
+                {viewAllCollectionsLink.label}
+              </Link>
+            </nav>
+          </section>
+        </div>,
+        document.body,
       ) : null}
     </div>
   );

@@ -1,32 +1,22 @@
-# Image Sitemap Data Report
+# Canonical Printable Image Sitemap Data
 
-Strategy: Each available runtime image is assigned once to the most specific existing public hub route. Every public hub route receives at least one representative image before remaining assets are assigned. This avoids duplicating the same image across broad and narrow hubs while preserving full image discovery.
+Each runtime printable uses its frozen canonicalPath as the HTML page location and its centralized runtime WebP path as the sole image location.
 
 | Metric | Value |
 | --- | --- |
-| Available runtime records | 6352 |
+| Runtime printables | 6352 |
+| Frozen printable routes | 6352 |
 | Deferred records excluded | 205 |
-| Page URLs | 163 |
-| Image entries | 6352 |
-| Unique image URLs | 6352 |
-| Max images on one page URL | 358 |
+| Canonical page/image pairs | 6352 |
+| Unique page URLs | 6352 |
+| Unique WebP URLs | 6352 |
 | Invalid entries | 0 |
 
-## Largest Page Assignments
+## Generator contract
 
-| Route | Images |
-| --- | --- |
-| /coloring-pages/anime-girls | 358 |
-| /coloring-pages/geometric | 266 |
-| /coloring-pages/mythology | 212 |
-| /coloring-pages/fantasy | 210 |
-| /coloring-pages/chibi | 198 |
-| /coloring-pages/cute | 190 |
-| /coloring-pages/cars | 175 |
-| /coloring-pages/birds | 152 |
-| /coloring-pages/medieval-fantasy | 134 |
-| /coloring-pages/summoning | 128 |
-| /coloring-pages/mushrooms | 115 |
-| /coloring-pages/sushi | 112 |
+- Inputs: `src/generated/coloring/runtime-printables.json`, `pipeline/manifests/runtime-printable-route-manifest.json`, `src/generated/coloring/runtime-deferred-items.json`
+- Outputs: `pipeline/manifests/image-sitemap-data.json`, `pipeline/reports/image-sitemap-data-report.md`, `public/image-sitemap.xml`
+- Ordering: canonicalPath ascending, then assetId ascending
+- Image title source: runtime-printables.records.publicTitle
 
-Every image entry uses the uploaded clean WebP preview URL. SVG, PNG, and thumbnail URLs are excluded from sitemap XML.
+SVG, PNG, thumbnails, deferred records, hub page locations, local URLs, private storage endpoints, and r2.dev URLs are excluded.

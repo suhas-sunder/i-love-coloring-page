@@ -10,9 +10,11 @@ type AssetImageProps = {
   fallbackImageUrl?: string | null;
   priority?: boolean;
   interactive?: boolean;
+  width?: number | null;
+  height?: number | null;
 };
 
-export function AssetImage({ item, imageUrl, fallbackImageUrl = null, priority = false, interactive = false }: AssetImageProps) {
+export function AssetImage({ item, imageUrl, fallbackImageUrl = null, priority = false, interactive = false, width, height }: AssetImageProps) {
   const [activeImageUrl, setActiveImageUrl] = useState(imageUrl);
   const [failed, setFailed] = useState(false);
   const [loaded, setLoaded] = useState(false);
@@ -76,6 +78,8 @@ export function AssetImage({ item, imageUrl, fallbackImageUrl = null, priority =
         data-state={loaded ? "loaded" : "loading"}
         decoding="async"
         loading={priority ? "eager" : "lazy"}
+        width={width || undefined}
+        height={height || undefined}
         onError={handleImageError}
         onLoad={handleImageLoad}
         src={activeImageUrl}

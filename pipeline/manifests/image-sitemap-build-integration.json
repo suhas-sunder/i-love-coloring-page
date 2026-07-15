@@ -1,20 +1,18 @@
 {
   "generatedAt": "2026-05-14T23:46:55.619Z",
-  "runId": "image-sitemap-build-integration",
+  "runId": "image-sitemap-canonical-printable-build-integration",
   "summary": {
     "buildScriptRegeneratesImageSitemap": true,
     "robotsReferencesRegularSitemap": true,
     "robotsReferencesImageSitemap": true,
-    "robotsUsesCanonicalWwwDomain": true,
-    "regularSitemapRouteUnchanged": true,
+    "robotsUsesCentralizedCanonicalUrl": true,
+    "regularSitemapUsesCentralRouteInventory": true,
     "staticExportConfigured": true,
     "appApiRequired": false,
     "xmlCopiedByStaticExportFromPublic": true,
-    "imageSitemapUrl": "https://www.ilovecoloringpage.com/image-sitemap.xml",
-    "regularSitemapUrl": "https://www.ilovecoloringpage.com/sitemap.xml",
     "noMediaCopiedToPublic": true
   },
-  "packageBuildScript": "node pipeline/scripts/build-image-sitemap-data.mjs && node pipeline/scripts/build-image-sitemap-xml.mjs && next build",
+  "packageBuildScript": "node pipeline/scripts/build-runtime-printables.mjs && node pipeline/scripts/build-static-search-data.mjs && node pipeline/scripts/build-image-sitemap-data.mjs && node pipeline/scripts/build-image-sitemap-xml.mjs && next build",
   "robotsSitemapUrls": [
     "https://www.ilovecoloringpage.com/sitemap.xml",
     "https://www.ilovecoloringpage.com/image-sitemap.xml"

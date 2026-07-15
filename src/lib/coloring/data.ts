@@ -8,9 +8,11 @@ import hubSeoContentJson from "@/generated/coloring/runtime-hub-seo-content.json
 import siteMapJson from "@/generated/coloring/runtime-site-map.json";
 import seoPagesJson from "@/generated/coloring/runtime-seo-pages.json";
 import socialMetadataJson from "@/generated/coloring/runtime-social-metadata.json";
+import printablesJson from "@/generated/coloring/runtime-printables.json";
 import titleOverridesJson from "@/generated/coloring/title-overrides.json";
 import { getSiteUrl as getConfiguredSiteUrl } from "@/lib/site/siteConfig";
 
+import { getPrintablePath } from "./printablePath";
 import type {
   ColoringHub,
   ColoringItem,
@@ -95,6 +97,10 @@ type SocialMetadataManifest = {
   }>;
 };
 
+type PrintablesManifest = {
+  records: Array<{ assetId: string; canonicalPath: string; publicTitle: string; altText: string }>;
+};
+
 const hubsManifest = hubsJson as HubsManifest;
 const itemsManifest = itemsJson as ItemsManifest;
 const routesManifest = routesJson as RoutesManifest;
@@ -106,6 +112,7 @@ const titleOverridesManifest = titleOverridesJson as TitleOverridesManifest;
 const seoPagesManifest = seoPagesJson as SeoPagesManifest;
 const hubSeoContentManifest = hubSeoContentJson as HubSeoContentManifest;
 const socialMetadataManifest = socialMetadataJson as SocialMetadataManifest;
+const printablesManifest = printablesJson as PrintablesManifest;
 
 const hubsById = new Map(hubsManifest.hubs.map((hub) => [hub.hubId, hub]));
 const hubsBySlug = new Map(hubsManifest.hubs.map((hub) => [hub.slug, hub]));
@@ -117,14 +124,19 @@ const titleOverrideByAssetId = new Map(titleOverridesManifest.overrides.map((ent
 const seoPageByPath = new Map(seoPagesManifest.pages.map((entry) => [entry.path, entry]));
 const hubSeoContentByHubId = new Map(hubSeoContentManifest.hubs.map((entry) => [entry.hubId, entry]));
 const socialMetadataByPath = new Map(socialMetadataManifest.pages.map((entry) => [entry.path, entry]));
+const printableByAssetId = new Map(printablesManifest.records.map((entry) => [entry.assetId, entry]));
 
 function toPublicItem(item: ColoringItem): PublicColoringItem {
   const override = titleOverrideByAssetId.get(item.assetId);
+  const printable = printableByAssetId.get(item.assetId);
+  if (!printable) throw new Error(`Missing canonical printable record for ${item.assetId}`);
+
   return {
     assetId: item.assetId,
-    title: override?.cleanTitle || item.title,
-    altText: override?.cleanAltText || item.altText,
+    title: override?.cleanTitle || printable.publicTitle,
+    altText: override?.cleanAltText || printable.altText,
     assetSubpaths: item.assetSubpaths,
+    canonicalPath: printable.canonicalPath,
   };
 }
 
@@ -221,8 +233,8 @@ export function getFeaturedRotationCandidateItems(hub: ColoringHub, limit = 96) 
   return getPublicItemsByIds(candidateIds, candidateIds.length);
 }
 
-export function getColoringItemHref(item: Pick<PublicColoringItem, "assetId">, preferredRoute?: string) {
-  return `${preferredRoute || getPrimaryRouteForAsset(item.assetId)}#asset-${item.assetId}`;
+export function getColoringItemHref(item: Pick<PublicColoringItem, "assetId" | "canonicalPath">) {
+  return getPrintablePath(item);
 }
 
 export function getHubFilterTags(hub: ColoringHub): { tags: GalleryFilterTag[]; tabs: HubGalleryUx["tabs"] } {
@@ -307,15 +319,6 @@ export function parseStaticPageParam(value: string | undefined) {
 
 export function getSiteUrl() {
   return getConfiguredSiteUrl();
-}
-
-function getPrimaryRouteForAsset(assetId: string) {
-  const entry = searchEntryByAssetId.get(assetId);
-  const primaryHub = entry?.hubIds
-    .map((hubId) => hubsById.get(hubId))
-    .find((hub): hub is ColoringHub => Boolean(hub?.route));
-
-  return primaryHub?.route || getRootHub().route;
 }
 
 function getDiverseRotationAssetIds(assetIds: string[], limit: number) {

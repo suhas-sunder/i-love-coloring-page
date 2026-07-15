@@ -1,166 +1,137 @@
-import routesJson from "@/generated/coloring/runtime-routes.json";
-import hubsJson from "@/generated/coloring/runtime-hubs.json";
 import { footerTrustLinks } from "@/lib/trust/trustPages";
 
-type RoutesManifest = {
-  routes: Array<{ path: string }>;
-};
-
-type HubsManifest = {
-  hubs: Array<{
-    slug: string;
-    title: string;
-    route: string;
-    assetCount: number;
-  }>;
-  backlogHubs?: Array<{ slug: string }>;
-  sectionOnlyTopics?: Array<{ slug: string }>;
-};
-
-export type SiteNavLink = {
+export type NavigationLink = {
+  id: string;
   label: string;
-  shortLabel?: string;
   href: string;
-  group: "primary" | "footer" | "utility";
+  hubId?: string;
+  assetCount?: number;
 };
 
-export type HubNavLink = {
+export type NavigationGroup = {
+  id: string;
   label: string;
-  slug: string;
-  href: string;
-  assetCount: number;
-  searchText: string;
+  links: NavigationLink[];
 };
 
-export type HubNavGroup = {
-  label: string;
-  links: HubNavLink[];
-};
+export type DesktopNavigationItem =
+  | { id: "coloring-pages" | "for-kids" | "for-adults"; kind: "link"; label: string; href: string }
+  | { id: "categories" | "seasonal"; kind: "disclosure"; label: string }
+  | { id: "search"; kind: "search"; label: string };
 
-const routesManifest = routesJson as RoutesManifest;
-const hubsManifest = hubsJson as HubsManifest;
-const generatedRoutePaths = new Set(routesManifest.routes.map((route) => route.path));
+const links = {
+  coloringPages: direct("coloring-pages", "Coloring Pages", "/coloring-pages"),
+  kids: hub("for-kids", "Coloring Pages for Kids", "/coloring-pages/for-kids", "hub_for_kids", 1335),
+  adults: hub("detailed-for-adults", "Detailed Coloring Pages for Adults", "/coloring-pages/detailed-for-adults", "hub_detailed_for_adults", 1459),
+  animals: hub("animals", "Animals", "/coloring-pages/animals", "hub_animals", 1450),
+  plushies: hub("plushies", "Plushies", "/coloring-pages/plushies", "hub_plushies", 1704),
+  mandalas: hub("mandalas", "Mandalas", "/coloring-pages/mandalas", "hub_mandalas", 1459),
+  fantasy: hub("fantasy", "Fantasy", "/coloring-pages/fantasy", "hub_fantasy", 1265),
+  dinosaurs: hub("dinosaurs", "Dinosaurs", "/coloring-pages/dinosaurs", "hub_dinosaurs", 189),
+  vehicles: hub("vehicles", "Vehicles", "/coloring-pages/vehicles", "hub_vehicles", 373),
+  easy: hub("easy", "Easy", "/coloring-pages/easy", "hub_easy", 1300),
+  geometric: hub("geometric", "Geometric", "/coloring-pages/geometric", "hub_geometric", 1457),
+  chibi: hub("chibi", "Chibi", "/coloring-pages/chibi", "hub_chibi", 908),
+  kawaii: hub("kawaii", "Kawaii", "/coloring-pages/kawaii", "hub_kawaii", 88),
+  flowers: hub("flowers", "Flowers", "/coloring-pages/flowers", "hub_flowers", 346),
+  seaLife: hub("sea-life", "Sea Life", "/coloring-pages/sea-life", "hub_sea_life", 236),
+  dogs: hub("dogs", "Dogs", "/coloring-pages/dogs", "hub_dogs", 284),
+  birds: hub("birds", "Birds", "/coloring-pages/birds", "hub_birds", 188),
+  prehistoric: hub("prehistoric-animals", "Prehistoric Animals", "/coloring-pages/prehistoric-animals", "hub_prehistoric_animals", 220),
+  food: hub("food", "Food", "/coloring-pages/food", "hub_food", 261),
+  christmas: hub("christmas", "Christmas", "/coloring-pages/christmas", "hub_christmas", 332),
+  halloween: hub("halloween", "Halloween", "/coloring-pages/halloween", "hub_halloween", 305),
+  stPatricksDay: hub("st-patricks-day", "St. Patrick's Day", "/coloring-pages/st-patricks-day", "hub_st_patricks_day", 20),
+} as const;
 
-const requestedNavLinks: SiteNavLink[] = [
-  { label: "Popular", href: "/coloring-pages/animals", group: "primary" },
-  { label: "Seasonal", href: "/coloring-pages/christmas", group: "primary" },
-  { label: "For Kids", href: "/coloring-pages/for-kids", group: "primary" },
-  { label: "For Adults", href: "/coloring-pages/detailed-for-adults", group: "primary" },
-  { label: "Search/Browse", shortLabel: "Search", href: "/coloring-pages#gallery", group: "primary" },
-  { label: "All Coloring Pages", href: "/coloring-pages", group: "utility" },
-  { label: "Animals", href: "/coloring-pages/animals", group: "footer" },
-  { label: "Mandalas", href: "/coloring-pages/mandalas", group: "footer" },
-  { label: "Halloween", href: "/coloring-pages/halloween", group: "footer" },
-  { label: "Plushies", href: "/coloring-pages/plushies", group: "footer" },
+export const desktopPrimaryItems: DesktopNavigationItem[] = [
+  { id: "coloring-pages", kind: "link", label: "Coloring Pages", href: links.coloringPages.href },
+  { id: "categories", kind: "disclosure", label: "Categories" },
+  { id: "for-kids", kind: "link", label: "For Kids", href: links.kids.href },
+  { id: "for-adults", kind: "link", label: "For Adults", href: links.adults.href },
+  { id: "seasonal", kind: "disclosure", label: "Seasonal" },
+  { id: "search", kind: "search", label: "Search" },
 ];
 
-export const siteNavLinks = requestedNavLinks.filter((link) => isKnownStaticRoute(link.href));
-export const footerNavLinks = siteNavLinks.filter((link) => link.group === "footer");
-export const primaryNavLinks = siteNavLinks.filter((link) => link.group === "primary");
-export const utilityNavLinks = siteNavLinks.filter((link) => link.group === "utility");
+export const categoryNavigationGroups: NavigationGroup[] = [
+  {
+    id: "popular",
+    label: "Popular",
+    links: [links.animals, links.plushies, links.mandalas, links.fantasy, links.dinosaurs, links.vehicles],
+  },
+  {
+    id: "audience",
+    label: "Browse by audience",
+    links: [links.kids, links.adults, links.easy, links.geometric, links.chibi, links.kawaii],
+  },
+  {
+    id: "subjects",
+    label: "Subjects",
+    links: [links.flowers, links.seaLife, links.dogs, links.birds, links.prehistoric, links.food],
+  },
+  {
+    id: "seasonal-occasions",
+    label: "Seasonal and occasions",
+    links: [links.christmas, links.halloween, links.stPatricksDay],
+  },
+];
+
+export const seasonalNavigationLinks: NavigationLink[] = [links.christmas, links.halloween, links.stPatricksDay];
+
+export const mobileDirectLinks: NavigationLink[] = [
+  direct("home", "Home", "/"),
+  links.coloringPages,
+  direct("for-kids-mobile", "For Kids", links.kids.href),
+  direct("for-adults-mobile", "For Adults", links.adults.href),
+];
+
+export const mobileNavigationGroups: NavigationGroup[] = [
+  { id: "mobile-seasonal", label: "Seasonal collections", links: seasonalNavigationLinks },
+  { id: "mobile-popular", label: "Popular categories", links: categoryNavigationGroups[0].links },
+  { id: "mobile-more", label: "More categories", links: categoryNavigationGroups[2].links },
+];
+
+export const viewAllCollectionsLink = direct("view-all-collections", "View all collections", "/sitemap");
+export const browseAllColoringPagesLink = direct("browse-all-coloring-pages", "Browse all coloring pages", "/coloring-pages");
+export const searchEntryPoint = { id: "search", label: "Search", dialogLabel: "Search coloring pages" } as const;
+
+export const footerNavLinks: NavigationLink[] = [links.animals, links.mandalas, links.halloween, links.plushies];
 export const footerPolicyLinks = footerTrustLinks;
 
-const primaryRoutePaths = new Set(primaryNavLinks.map((link) => getRoutePath(link.href)));
-const backlogSlugs = new Set((hubsManifest.backlogHubs || []).map((hub) => hub.slug));
-const sectionOnlySlugs = new Set((hubsManifest.sectionOnlyTopics || []).map((topic) => topic.slug));
+export type PrimaryNavigationId = DesktopNavigationItem["id"];
 
-export const phase1HubLinks = hubsManifest.hubs
-  .filter((hub) => hub.slug && isKnownStaticRoute(hub.route))
-  .filter((hub) => !backlogSlugs.has(hub.slug) && !sectionOnlySlugs.has(hub.slug))
-  .map((hub) => ({
-    label: cleanHubTitle(hub.title),
-    slug: hub.slug,
-    href: hub.route,
-    assetCount: hub.assetCount,
-    searchText: `${hub.title} ${hub.slug}`.toLowerCase(),
-  }))
-  .sort((a, b) => a.label.localeCompare(b.label) || a.slug.localeCompare(b.slug));
-
-export const moreHubLinks = phase1HubLinks.filter((link) => !primaryRoutePaths.has(link.href));
-export const moreHubGroups = groupHubLinks(moreHubLinks);
-export const sitemapHubGroups = groupHubLinks(phase1HubLinks.filter((link) => link.href !== "/coloring-pages")).map((group) => ({
-  ...group,
-  label: group.label === "More Specific Collections" ? "More Collections" : group.label,
-}));
-
-export function isKnownStaticRoute(href: string) {
-  if (href === "/") return true;
-  const [path] = href.split("#");
-  return generatedRoutePaths.has(path);
+export function getActivePrimaryNavigationId(pathname: string): PrimaryNavigationId | null {
+  const path = normalizePathname(pathname);
+  if (path.startsWith("/printables/")) return "coloring-pages";
+  if (path === links.coloringPages.href) return "coloring-pages";
+  if (isRouteOrPagination(path, links.kids.href)) return "for-kids";
+  if (isRouteOrPagination(path, links.adults.href)) return "for-adults";
+  if (seasonalNavigationLinks.some((link) => isRouteOrPagination(path, link.href))) return "seasonal";
+  if (/^\/coloring-pages\/[^/]+(?:\/page\/[1-9]\d*)?$/.test(path)) return "categories";
+  return null;
 }
 
-function getRoutePath(href: string) {
-  const [path] = href.split("#");
-  return path;
+export function isExactNavigationPath(pathname: string, href: string) {
+  return normalizePathname(pathname) === href;
 }
 
-function cleanHubTitle(title: string) {
-  return title.replace(/\s+Coloring Pages$/i, "");
+function direct(id: string, label: string, href: string): NavigationLink {
+  return { id, label, href };
 }
 
-function groupHubLinks(links: HubNavLink[]): HubNavGroup[] {
-  const groupOrder = [
-    "Popular",
-    "Seasonal",
-    "Animals & Nature",
-    "Dinosaurs & Prehistoric",
-    "Fantasy & Characters",
-    "Food & Cute Objects",
-    "Vehicles & Places",
-    "Patterns & Detailed",
-    "Kids & Easy",
-    "More Specific Collections",
-  ];
-  const groups = new Map(groupOrder.map((label) => [label, [] as HubNavLink[]]));
-
-  for (const link of links) {
-    groups.get(getHubGroup(link.slug))?.push(link);
-  }
-
-  return groupOrder
-    .map((label) => ({
-      label,
-      links: (groups.get(label) || []).sort((a, b) => b.assetCount - a.assetCount || a.label.localeCompare(b.label)),
-    }))
-    .filter((group) => group.links.length > 0);
+function hub(id: string, label: string, href: string, hubId: string, assetCount: number): NavigationLink {
+  return { id, label, href, hubId, assetCount };
 }
 
-function getHubGroup(slug: string) {
-  if (/^(animals|plushies|mandalas|geometric|anime-girls|chibi|fantasy|dragons|unicorns)$/.test(slug)) {
-    return "Popular";
-  }
+function normalizePathname(pathname: string) {
+  if (!pathname || pathname === "/") return "/";
+  return pathname.replace(/\/+$/, "") || "/";
+}
 
-  if (/(christmas|halloween|halloween-costume|easter|thanksgiving|valentine|seasonal|holiday|holidays|summer|winter|spring|autumn|fall|birthday|pumpkin|santa|reindeer|st-patricks|trick-or-treat|leprechaun|gingerbread)/.test(slug)) {
-    return "Seasonal";
-  }
+function isRouteOrPagination(pathname: string, href: string) {
+  return pathname === href || new RegExp(`^${escapeRegExp(href)}\/page\/[1-9]\\d*$`).test(pathname);
+}
 
-  if (/(mandala|geometric|pattern|adult|detailed|zentangle|abstract)/.test(slug)) {
-    return "Patterns & Detailed";
-  }
-
-  if (/(for-kids|easy|simple)/.test(slug)) {
-    return "Kids & Easy";
-  }
-
-  if (/(bakery|cake|cupcake|cookie|food|sushi|nigiri|salmon|cute|kawaii|plushie|playing-card|chess|gingerbread)/.test(slug)) {
-    return "Food & Cute Objects";
-  }
-
-  if (/(dinosaur|prehistoric|ankylosaurus|brachiosaurus|diplodocus|iguanodon|mosasaurus|plesiosaurus|pteranodon|pterodactyl|stegosaurus|triceratops|velociraptor|t-rex|mammoth|saber-toothed|megalodon|dodo)/.test(slug)) {
-    return "Dinosaurs & Prehistoric";
-  }
-
-  if (/(anime|chibi|fantasy|fairy|princess|myth|dragon|monster|robot|superhero|character|unicorn|mermaid|magic|wizard|witch|griffin|hydra|phoenix|pegasus|wyvern|knight|medieval|dungeon|castle)/.test(slug)) {
-    return "Fantasy & Characters";
-  }
-
-  if (/(animal|bird|cat|dog|terrier|bulldog|collie|horse|fish|sea|ocean|plant|flower|lily|daisy|orchid|poppy|lotus|forget-me-not|bamboo|palm|nature|farm|forest|butterfly|beetle|insect|reptile|mammal|bat|bear|bee|cow|crab|deer|dolphin|duck|eagle|elephant|fox|garden|giraffe|hedgehog|hippo|koala|lion|lizard|llama|monkey|moose|mushroom|octopus|otter|owl|panda|penguin|rabbit|rose|shark|sheep|sloth|snake|spider|tiger|tree|turtle|whale|wolf|zebra)/.test(slug)) {
-    return "Animals & Nature";
-  }
-
-  if (/(car|vehicle|truck|train|airplane|plane|ship|boat|city|house|place|space|sports|school|bridge|building|landmark)/.test(slug)) {
-    return "Vehicles & Places";
-  }
-
-  return "More Specific Collections";
+function escapeRegExp(value: string) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }

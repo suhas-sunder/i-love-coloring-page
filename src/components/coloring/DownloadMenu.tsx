@@ -50,14 +50,18 @@ export function DownloadMenu({ title, internalSvgUrl, pngPreviewUrl, "aria-label
     setBusyFormat(option.format);
     onStatus("");
 
-    const result = await DOWNLOADERS[option.format]({
-      internalSvgUrl,
-      pngPreviewUrl,
-      title,
-    });
-
-    onStatus(getDownloadStatusMessage(result, option.label));
-    setBusyFormat(null);
+    try {
+      const result = await DOWNLOADERS[option.format]({
+        internalSvgUrl,
+        pngPreviewUrl,
+        title,
+      });
+      onStatus(getDownloadStatusMessage(result, option.label));
+    } catch {
+      onStatus(option.label === "PNG" ? "Download could not be prepared. Please try again." : `${option.label} download could not be prepared. Try PNG instead.`);
+    } finally {
+      setBusyFormat(null);
+    }
   }
 
   return (

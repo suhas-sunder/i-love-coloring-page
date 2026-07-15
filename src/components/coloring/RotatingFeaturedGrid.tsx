@@ -16,7 +16,6 @@ type RotatingFeaturedGridProps = {
   candidateItems: PublicColoringItem[];
   mode: "homepage-random" | "hub-three-day";
   hubSlug?: string;
-  itemHrefBasePath: string;
   priorityCount?: number;
 };
 
@@ -25,7 +24,6 @@ export function RotatingFeaturedGrid({
   candidateItems,
   mode,
   hubSlug = "coloring-pages",
-  itemHrefBasePath,
   priorityCount = 6,
 }: RotatingFeaturedGridProps) {
   const [items, setItems] = useState(fallbackItems);
@@ -48,11 +46,7 @@ export function RotatingFeaturedGrid({
       data-featured-rotation-hub={hubSlug}
       data-featured-rotation-mode={mode}
     >
-      <GalleryGrid
-        items={items}
-        getItemHref={(item) => `${itemHrefBasePath}#asset-${item.assetId}`}
-        priorityCount={priorityCount}
-      />
+      <GalleryGrid items={items} priorityCount={priorityCount} />
     </div>
   );
 }

@@ -1,113 +1,124 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import { AdRail } from "@/components/ads/AdRail";
-import { AdSlot } from "@/components/ads/AdSlot";
+import { PageAdSlot } from "@/components/ads/PageAdSlot";
 import { HubCard } from "@/components/coloring/HubCard";
 import { RotatingFeaturedGrid } from "@/components/coloring/RotatingFeaturedGrid";
-import { SeoContentSection } from "@/components/coloring/SeoContentSection";
 import { JsonLdScript } from "@/components/seo/JsonLdScript";
-import { getAllPhase1Hubs, getFeaturedRotationCandidateItems, getGeneratedFeaturedItems, getRootHub, getSeoPageContent } from "@/lib/coloring/data";
+import { PublicPageShell } from "@/components/site/PublicPageShell";
+import { SupportingInformation } from "@/components/site/SupportingInformation";
+import {
+  getAllPhase1Hubs,
+  getFeaturedRotationCandidateItems,
+  getGeneratedFeaturedItems,
+  getPreviewItems,
+  getRootHub,
+} from "@/lib/coloring/data";
 import { buildColoringMetadata } from "@/lib/coloring/metadata";
+import type { ColoringHub } from "@/lib/coloring/types";
 import { buildHomePageJsonLd } from "@/lib/seo/pageJsonLd";
 
 export function generateMetadata(): Metadata {
   return buildColoringMetadata("/");
 }
 
+const PRIMARY_COLLECTION_SLUGS = ["animals", "christmas", "for-kids", "detailed-for-adults", "mandalas", "plushies"];
+const DISCOVERY_COLLECTION_SLUGS = ["fantasy", "flowers", "dinosaurs", "vehicles", "sea-life", "easy"];
+
 export default function HomePage() {
   const rootHub = getRootHub();
-  const seoContent = getSeoPageContent("/");
-  const featuredItems = getGeneratedFeaturedItems(rootHub);
-  const featuredRotationCandidates = getFeaturedRotationCandidateItems(rootHub, 192);
-  const rootHubSlug = rootHub.slug || "coloring-pages";
-  const featuredHubs = getAllPhase1Hubs()
-    .filter((hub) => ["animals", "plushies", "mandalas", "for-kids", "fantasy", "christmas"].includes(hub.slug))
-    .slice(0, 6);
+  const featuredItems = getGeneratedFeaturedItems(rootHub).slice(0, 8);
+  const featuredRotationCandidates = getFeaturedRotationCandidateItems(rootHub, 64);
+  const hubs = getAllPhase1Hubs();
+  const primaryHubs = selectHubs(hubs, PRIMARY_COLLECTION_SLUGS);
+  const discoveryHubs = selectHubs(hubs, DISCOVERY_COLLECTION_SLUGS);
 
   return (
-    <main className="page-shell">
+    <PublicPageShell pageFamily="home" className="home-page">
       <JsonLdScript id="jsonld-home" data={buildHomePageJsonLd()} />
-      <AdSlot slotId="home-header-banner" />
-      <AdRail side="left" slotId="rail-left-desktop" />
-      <AdRail side="right" slotId="rail-right-desktop" />
-      <section className="hub-hero">
-        <div className="hero-copy">
-          <h1 className="page-title">I Love Coloring Page</h1>
-          <p>Printable coloring pages with real previews, quick browsing, and clean print controls when you find the right page.</p>
-          <ul className="hero-facts" aria-label="Gallery summary">
-            <li><strong>{rootHub.assetCount.toLocaleString()}</strong> printable pages</li>
-            <li>Image previews open print controls</li>
-            <li>Searchable subject collections</li>
-          </ul>
-          <div className="hero-actions">
-            <Link className="button button-primary" href="#gallery" prefetch={false}>
-              Browse gallery
-            </Link>
-            <Link className="button button-ghost" href="#related-collections" prefetch={false}>
-              View collections
-            </Link>
-            <Link className="button button-ghost" href="#about-this-collection" prefetch={false}>
-              Printing tips
-            </Link>
+
+      <header className="home-hero" data-page-section="hero">
+        <h1 className="page-title page-title-wide">I Love Coloring Page</h1>
+        <p className="page-intro">
+          Browse {rootHub.assetCount.toLocaleString()} printable coloring pages, open any image or title for its own page, then print or download separately.
+        </p>
+        <div className="hero-actions">
+          <Link className="button button-primary" href="/coloring-pages" prefetch={false}>Browse all coloring pages</Link>
+          <Link className="button button-ghost" href="#primary-collections" prefetch={false}>Browse collections</Link>
+        </div>
+      </header>
+
+      <PageAdSlot pageFamily="home" placement="post-header-banner" />
+
+      <section className="content-section collection-section" id="primary-collections" aria-labelledby="primary-collections-title" data-page-section="primary-collections">
+        <div className="section-heading-row">
+          <div>
+            <h2 className="section-title" id="primary-collections-title">Start with a collection</h2>
+            <p>Popular, seasonal, easy, detailed, animal, and pattern-focused galleries offer a useful first step.</p>
           </div>
         </div>
-        <div className="hero-panel">
-          <nav className="hero-related-panel" aria-label="Popular coloring page collections">
-            <h2 className="hero-related-title">Popular collections</h2>
-            <div className="hero-related-links">
-              {featuredHubs.map((hub) => (
-                <Link className="hero-related-link" href={hub.route} key={hub.hubId} prefetch={false}>
-                  <span className="hero-related-label">{hub.title.replace(/ Coloring Pages$/, "")}</span>
-                  <strong className="hero-related-count">{hub.assetCount.toLocaleString()}</strong>
-                </Link>
-              ))}
-            </div>
-          </nav>
+        <div className="hub-preview-grid">
+          {primaryHubs.map((hub) => <HubCard key={hub.hubId} hub={hub} previewItem={getPreviewItems(hub)[0] || null} />)}
         </div>
       </section>
 
-      <AdSlot slotId="home-after-hero" />
-
-      <section className="content-section section-band featured-band" id="gallery" aria-labelledby="fresh-pages">
+      <section className="content-section section-band featured-band" aria-labelledby="fresh-pages" data-page-section="fresh-printables">
         <div className="section-inner">
           <div className="section-heading-row">
             <div>
-              <h2 className="section-title" id="fresh-pages">Fresh pages to print</h2>
-              <p>Start with a few strong previews, then jump into the full library when you want more.</p>
+              <h2 className="section-title" id="fresh-pages">Fresh printable pages</h2>
+              <p>Open a page for the full preview, then use its separate Print or Download controls.</p>
             </div>
           </div>
           <RotatingFeaturedGrid
-            fallbackItems={featuredItems.slice(0, 8)}
+            fallbackItems={featuredItems}
             candidateItems={featuredRotationCandidates}
             mode="homepage-random"
-            hubSlug={rootHubSlug}
-            itemHrefBasePath={rootHub.route}
+            hubSlug={rootHub.slug || "coloring-pages"}
             priorityCount={6}
           />
         </div>
       </section>
 
-      <section className="content-section collection-section" id="related-collections">
+      <section className="content-section collection-section" aria-labelledby="more-collections-title" data-page-section="additional-discovery">
         <div className="section-heading-row">
           <div>
-            <h2 className="section-title">Good places to start</h2>
-            <p>Choose a familiar collection, or open the main gallery for search and filters.</p>
+            <h2 className="section-title" id="more-collections-title">More ways to browse</h2>
+            <p>Explore another subject, style, or difficulty without repeating the collections above.</p>
           </div>
-          <Link className="button button-ghost" href="/coloring-pages" prefetch={false}>
-            View all collections
-          </Link>
         </div>
         <div className="hub-link-grid">
-          {featuredHubs.map((hub) => (
-            <HubCard key={hub.hubId} hub={hub} />
-          ))}
+          {discoveryHubs.map((hub) => <HubCard key={hub.hubId} hub={hub} />)}
         </div>
       </section>
 
-      <AdSlot slotId="home-lower-content" />
+      <SupportingInformation
+        pageFamily="home"
+        title="Browse, choose, and use a printable"
+        intro="The library keeps browsing, page navigation, and utility actions distinct so each step is clear."
+        sections={[
+          { title: "Find the right page", body: "Open a collection to search its available printables. Images and titles lead to canonical printable pages with a larger preview and related choices." },
+          { title: "Print or download", body: "Print remains the primary utility action. PNG, JPG, and WebP downloads are prepared separately in your browser where supported." },
+        ]}
+      />
 
-      <SeoContentSection content={seoContent} id="about-this-collection" />
-    </main>
+      <section className="content-section browse-complete-library" aria-labelledby="browse-complete-title" data-page-section="related-browse">
+        <div>
+          <h2 className="section-title" id="browse-complete-title">Browse the complete library</h2>
+          <p className="section-copy">Use the main gallery for search and filters, or open the grouped sitemap when you want a collection index.</p>
+        </div>
+        <div className="hero-actions">
+          <Link className="button button-primary" href="/coloring-pages" prefetch={false}>Open the main gallery</Link>
+          <Link className="button button-subtle" href="/sitemap" prefetch={false}>View the sitemap</Link>
+        </div>
+      </section>
+
+      <PageAdSlot pageFamily="home" placement="related-banner" />
+    </PublicPageShell>
   );
+}
+
+function selectHubs(hubs: ColoringHub[], slugs: string[]) {
+  const bySlug = new Map(hubs.map((hub) => [hub.slug, hub]));
+  return slugs.map((slug) => bySlug.get(slug)).filter((hub): hub is ColoringHub => Boolean(hub));
 }

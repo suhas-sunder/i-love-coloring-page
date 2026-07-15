@@ -1,6 +1,6 @@
 # Codex Project Rules
 
-This repository is the foundation for a future Next.js coloring page website. The current round is discovery and workflow setup only.
+This repository is a mature static Next.js coloring page gallery with an accepted canonical printable-page and discovery architecture.
 
 ## Source Image Safety
 
@@ -34,7 +34,7 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Production dry-run outputs must stay under `pipeline/production/dry-run/` and out of any Next.js `public/` folder.
 - Full production export outputs must stay under `pipeline/production/full/` and out of any Next.js `public/` folder until Round 4 explicitly decides the public asset strategy.
 - Future Next.js builds must consume generated metadata and data files instead of importing thousands of image files directly into React components.
-- Category and gallery pages may be indexable; individual image pages must not be created as indexable pages.
+- Category and gallery pages may be indexable. Every approved, runtime-available image may also receive one indexable canonical HTML printable page under the approved canonical route architecture.
 - Final asset IDs must be deterministic and collision-safe.
 - Duplicate original filenames cannot be trusted as unique IDs.
 - Duplicate filenames are not duplicate images by themselves; keep same-name images when content differs and use deterministic collision-safe output IDs.
@@ -69,17 +69,17 @@ This repository is the foundation for a future Next.js coloring page website. Th
 
 ## Public Site Structure
 
-- The public Next.js site should use hub and gallery pages, not one indexable page per image.
+- The public Next.js site should use useful hub and gallery pages plus exactly one canonical HTML printable page for each approved, runtime-available image.
 - Use public SEO hubs such as `/coloring-pages`, `/coloring-pages/animals`, `/coloring-pages/christmas`, and other category hubs when there is enough quality content and search intent.
 - Optional subhub pages are allowed only when there is enough quality content and distinct user intent.
-- Individual images should exist as static assets and metadata records, not separate indexable HTML pages.
+- Individual images exist as static assets and canonical metadata records. Their HTML detail pages are generated from the frozen printable contract and remain static-export compatible.
 - Future coloring app or dashboard routes should be kept separate from public SEO gallery pages.
 - Original source folders are not the final public website taxonomy.
 - Public hub pages must be generated from approved production metadata and descriptive filenames, not raw folders alone.
 - Images may belong to multiple public hubs when the filename, subject, style, theme, or metadata supports that assignment.
 - Hub pages must be useful, distinct, and supported by enough approved production assets.
 - Do not create thin SEO pages, duplicate singular/plural routes, or keyword-stuffed hub variants.
-- Do not create indexable per-image pages.
+- Do not create arbitrary, duplicate, thin, or non-canonical per-image pages.
 - Final public route planning should use the approved hub taxonomy, not raw category folders.
 - The Next.js build should consume the Round 4A hub taxonomy and image-to-hub maps.
 - Next.js gallery pages must consume Round 4A and Round 4B generated data, not raw folders.
@@ -89,6 +89,23 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Asset URL logic must stay centralized in the coloring asset resolver.
 - Large hub pages must use pagination or limited initial rendering.
 - Public gallery UI should be structured and useful, not a raw asset dump.
+
+## Canonical Printable Detail Architecture
+
+- Every approved, runtime-available image has exactly one indexable canonical HTML detail page.
+- The canonical route format is `/printables/{primary-category}/{clean-slug}-{stable-id}`.
+- The compact public `stable-id` is the existing terminal 10-character lowercase hexadecimal identifier from the full deterministic `assetId`.
+- Canonical route fields must be frozen after first publication. Later taxonomy, title, or hub-order changes must not silently move a published canonical route.
+- Normal printable image and image-title clicks open the canonical HTML detail page.
+- Print and Download remain separate utility actions.
+- Canonical printable pages appear in the regular sitemap.
+- The image sitemap associates each canonical HTML printable page with its verified public WebP image.
+- Search, filter, sort, modal, preview, print, and other arbitrary client states remain non-indexable.
+- Raw WebP, SVG, PNG, and storage-object URLs must not be used as normal page-navigation destinations.
+- SVG remains internal infrastructure and must never appear as a public download format.
+- Public gallery previews use WebP; internal conversion and print preparation may use SVG.
+- Canonical printable pages and their supporting metadata must remain static-export compatible and must not require a backend, API route, database, server action, or search service.
+- The canonical printable routes exist because the frozen printable contract, payload-reduction work, and shared export composition passed their acceptance gates; future changes must preserve that contract.
 
 ## Long-Tail Hub Expansion Rules
 
@@ -100,7 +117,7 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Franchise/IP route names are blocked.
 - Do not create spammy token-only hub pages, doorway pages, reordered duplicate hubs, or near-duplicate singular/plural routes.
 - Minimum asset thresholds and overlap rules must be enforced before any hub becomes indexable.
-- Do not create per-image pages.
+- Do not create arbitrary or duplicate per-image pages; only the approved frozen canonical printable route is eligible for later implementation.
 - New indexable hubs need unique metadata, a useful short intro, related links, and supporting content below or secondary to the gallery.
 - Gallery access must remain near the top of every hub page.
 - Sitemap entries must include only promoted indexable hubs.
@@ -134,7 +151,7 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Use semantic HTML.
 - Use native buttons and links instead of div-based fake controls.
 - Gallery media must resolve through the centralized asset resolver.
-- No per-image indexable pages.
+- Do not create ad hoc per-image routes outside the approved frozen canonical printable route architecture.
 - Do not copy production assets into `public/`.
 - Large hub pages must use limited rendering or pagination.
 - Any new public page must declare page type, indexability status, metadata strategy, and component variants used.
@@ -191,7 +208,7 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Public download formats are PNG plus verified browser-side JPG/JPEG/WebP only.
 - If JPG/JPEG/WebP conversion is not implemented and verified, do not show those download options.
 - Browser-side conversion must remain static-export compatible.
-- Browser-side conversion must use PNG preview input, not a user-facing SVG path.
+- Browser-side conversion should prefer the internal SVG source and use a PNG preview only as a fallback; SVG must never be shown as a user-facing download.
 - Do not add backend or API routes for download conversion.
 - Ad placeholders should be QA-tested with real media before live AdSense work.
 - Normal static builds must show `Advertisement`-labeled ad wells.
@@ -200,10 +217,10 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - SEO sections must be useful, unique, intent-matched, and visually aligned with the locked public gallery design system.
 - SEO sections must not use nested cards, shadows, borders, outlines, gradients, or random colors.
 - JSON-LD, image sitemap, and Open Graph image work should wait until the appropriate SEO round.
-- The top-level navbar should not include a redundant `Coloring Pages` button.
-- The More menu must provide searchable access to generated hub pages.
-- Mobile navigation must include searchable hub navigation.
-- More and mobile navigation must use existing generated routes only.
+- The top-level navbar must retain the approved direct `Coloring Pages` link.
+- The Categories disclosure must provide curated access to approved generated hub pages without dumping every hub into the header.
+- Search must remain directly accessible from both desktop and mobile headers rather than being buried inside navigation.
+- Categories, Seasonal, and mobile navigation must use existing generated routes only.
 - If ad placeholders exist, they must be visibly QA-tested in the normal static build.
 - Ad placeholder QA requires screenshot paths and visible `Advertisement` label counts.
 - Remove `out/` before ad QA builds to avoid stale static exports.
@@ -274,7 +291,7 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Policy pages are drafts and require owner/legal review.
 - Do not add fake company, contact, address, phone, or legal details.
 - Do not add live AdSense before privacy, contact, and trust pages are accepted.
-- Sitemap may include trust pages but must still exclude per-image routes, Phase 2 hubs, rejected hubs, and image sitemap entries.
+- Sitemap may include trust pages and the frozen canonical printable routes. Phase 2 hubs, rejected hubs, arbitrary per-image routes, and image sitemap entries remain excluded.
 - Public contact method is required before AdSense application.
 - `NEXT_PUBLIC_SITE_URL` must be configured before production launch.
 - `NEXT_PUBLIC_COLORING_ASSET_BASE_URL` must be configured before public media, image sitemap, or Open Graph image work.
@@ -286,13 +303,13 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Side rail ad containers must keep a clear gap from the main content and must hide before the viewport becomes unsafe.
 - A wider future ad creative must not overlap page content, create horizontal overflow, or cover navigation, gallery, search, filters, Print, or Download controls.
 - Do not rely on body-level horizontal overflow masking as the primary ad rail safety fix.
-- More menu must open and close predictably.
-- More menu should use available desktop width responsibly and must not be cramped on large screens.
-- Mobile nav must use a proper hamburger full-screen or near-full-screen panel with search at the top.
+- Categories and Seasonal disclosures must open and close predictably.
+- The Categories browser should use available desktop width responsibly and must not be cramped on large screens.
+- Mobile nav must use a proper hamburger full-screen or near-full-screen panel, while Search remains a separate mobile-header action.
 - Mobile nav must not use a hacky narrow overlay with awkward exposed page space.
 - Burger menu must not use a bordered button style.
 - Nav and menu surfaces must not contain ads.
-- Nav and menu surfaces must not reintroduce a top-level `Coloring Pages` button.
+- Nav and menu surfaces must retain the approved top-level `Coloring Pages` destination without duplicating it in the same group.
 - Nav and menu surfaces must use generated Phase 1 routes only.
 - Nav and ad fixes must preserve static export and must not add `app/api` routes.
 - Do not mark layout QA complete until manual-screenshot issues are fixed.
@@ -510,7 +527,7 @@ This repository is the foundation for a future Next.js coloring page website. Th
 ## UX Polish Gate
 
 - Image cards should have intuitive click behavior.
-- Clicking a printable image should open the print/prep flow, not jump to an odd fragment anchor.
+- After canonical routes exist, clicking a printable image or title should open its canonical HTML detail page, never a fragment anchor or raw asset URL.
 - Card grids must prioritize print-first interaction.
 - Do not put noisy format controls beside every card.
 - Download formats should remain available without cluttering the gallery grid.
@@ -525,9 +542,9 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Hero right-side content should help users navigate to related collections.
 - Hero quick links should target real sections on the current page.
 - Related collections must be readable navigation, not cramped pills.
-- The More menu must group long-tail hubs by intent and must not dump all hubs into one broad list.
-- The More menu must use available desktop space and must not ellipsize important hub titles.
-- Navigation menus must keep search near the top, remain accessible, and contain no ads.
+- The Categories browser must group curated hubs by intent and must not dump all hubs into one broad list.
+- The Categories browser must use available desktop space and must not ellipsize important hub titles.
+- The global header must keep Search directly accessible; navigation surfaces must remain accessible and contain no ads.
 - Do not start Open Graph image work, JSON-LD expansion, or live ads until corrective UX QA passes.
 
 ## Local Predeployment Gate
@@ -542,16 +559,15 @@ This repository is the foundation for a future Next.js coloring page website. Th
 
 ## Final Local UX Gate
 
-- Do not show a redundant card-level Print button when clicking the image already opens print preview.
-- Card images should be the primary print and preview trigger, with a subtle visual cue on the image surface.
+- Each gallery card may expose one separate Print action; image and title clicks must navigate to the canonical HTML page rather than opening print preview.
 - Download formats must remain available in the modal without cluttering every gallery card.
 - Print PDF output must have one slim border, minimal safe padding, and small `iLoveColoringPage.com` branding outside the artwork area.
 - Print branding must never overlap, obscure, or watermark the coloring artwork.
 - Related and browsing link sections must be professionally spaced, purposeful, and readable, with counts separated from labels.
 - Popular and related collection link sections must use polished spacing and separate count alignment.
 - Do not create lazy duplicate browse sections; each browse or related section needs a distinct purpose.
-- Do not ellipsize important hub names in the More menu; allow long labels to wrap cleanly.
-- Use available desktop space for large navigation menus while keeping grouped sections and search near the top.
+- Do not ellipsize important hub names in the Categories browser; allow long labels to wrap cleanly.
+- Use available desktop space for the grouped Categories browser while keeping Search directly accessible in the primary header.
 - Do not prompt for deployment until the final local UX browser and print gates pass.
 
 ## Image Sitemap Gate
@@ -560,10 +576,10 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - SVG remains internal-only and should not appear as an image sitemap URL.
 - PNG preview and thumbnail URLs should not appear in image sitemap XML.
 - Deferred manual-review records must not appear in the image sitemap.
-- Do not create per-image pages for image discovery.
+- Image discovery should use the single approved canonical printable page for each available image; do not create duplicate discovery pages or index arbitrary client states.
 - Image sitemap generation must remain static-export compatible and must not require app/api or server runtime.
 - Robots and sitemap references must use the canonical `https://www.ilovecoloringpage.com` domain.
-- The image sitemap should attach images to existing public hub URLs, not fragment anchors or per-image routes.
+- The image sitemap must associate each frozen canonical printable HTML URL with its verified public WebP image and must never use fragment anchors or raw asset URLs as page locations.
 - Open Graph image work and JSON-LD expansion may only start after image sitemap acceptance passes.
 - Live ads remain separate and require explicit owner approval.
 
@@ -577,14 +593,14 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Rotated featured cards must preserve WebP preview URLs and internal SVG paths for print/download conversion.
 - SVG must remain internal-only and must not appear as a user-facing download.
 - PNG, JPG, and WebP downloads must remain available through the print preview workflow.
-- Do not add per-image routes, taxonomy changes, Open Graph image generation, JSON-LD expansion, live ads, or ad scripts as part of featured rotation work.
+- Do not add canonical printable routes, taxonomy changes, Open Graph image generation, JSON-LD expansion, live ads, or ad scripts as part of featured rotation work; those changes require their own accepted pass.
 - Do not proceed to Open Graph image work, JSON-LD expansion, or live ads until featured rotation browser QA and sampled URL checks pass.
 
 ## Open Graph Image Gate
 
 - OG images must be static generated assets under `public/og`.
 - OG images should be route-level only: homepage, `/coloring-pages`, and public hub routes.
-- Do not create per-image OG files, per-image pages, or indexable per-image routes.
+- Do not create per-image generated OG files or arbitrary per-image routes. Canonical printable HTML pages may reference their verified public WebP preview in accurate page metadata.
 - OG metadata must use canonical `https://www.ilovecoloringpage.com` URLs.
 - OG image generation must not require server runtime, dynamic Next OG image routes, `ImageResponse`, backend services, middleware, or `app/api`.
 - OG images must not use SVG source URLs as the social image.
@@ -601,7 +617,7 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - Use conservative route-level schema only: site, organization, webpage, collection, breadcrumb, limited visible item lists, and appropriate trust-page types.
 - Do not add fake ratings, reviews, products, offers, prices, authors, dates, or FAQ schema.
 - Do not add `SearchAction` unless there is a real URL-addressable search route.
-- Do not create per-image pages or per-image schema spam.
+- Do not create duplicate per-image pages or per-image schema spam. Canonical printable schema must remain accurate, visible-content-aligned, and limited to the accepted WebPage, BreadcrumbList, and ImageObject contract.
 - ItemList schema must stay capped to visible featured or gallery items, not all runtime records on every page.
 - SVG remains internal and must not be used as a public structured data image.
 - JSON-LD URLs must use canonical `https://www.ilovecoloringpage.com` URLs and must not include localhost, `r2.dev`, or private storage endpoints.
@@ -627,7 +643,7 @@ This repository is the foundation for a future Next.js coloring page website. Th
 - GSC submission is a manual owner step unless a later prompt explicitly asks for automation.
 - Do not claim live verification passed when the deployed site is stale, missing current routes, missing image sitemap, missing OG metadata, or missing JSON-LD.
 - Live verification must check routes, redirects, `robots.txt`, the regular sitemap, image sitemap, OG metadata, JSON-LD, WebP gallery previews, print, and PNG/JPG/WebP downloads.
-- Production checks must confirm no localhost, `r2.dev`, private storage endpoint, `app/api`, per-image route, or SVG download leakage.
+- Production checks must confirm no localhost, `r2.dev`, private storage endpoint, `app/api`, arbitrary or duplicate per-image route, or SVG download leakage. Approved canonical printable routes are the only permitted image-level HTML routes after implementation.
 - Optional later work and social preview validation are skipped unless the owner explicitly reopens them.
 - Do not proceed with live ads unless the owner explicitly reopens a live ads round after live sitemap, image sitemap, OG, JSON-LD, trust pages, downloads, print, and layout are accepted.
 - Live ads remain separate and require explicit owner approval.

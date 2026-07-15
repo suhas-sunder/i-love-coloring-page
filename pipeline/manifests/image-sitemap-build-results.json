@@ -1,7 +1,8 @@
 {
   "generatedAt": "2026-05-14T23:46:55.619Z",
-  "runId": "image-sitemap-xml-build",
+  "runId": "image-sitemap-canonical-printable-xml-build",
   "summary": {
+    "buildPassed": true,
     "imageSitemapCreated": true,
     "outputArchitecture": "single-static-xml-file",
     "generatedFiles": [
@@ -9,35 +10,33 @@
     ],
     "splitCount": 0,
     "sitemapIndexCreated": false,
-    "pageUrlCount": 163,
+    "pageUrlCount": 6352,
     "imageEntryCount": 6352,
+    "uniquePageUrlCount": 6352,
     "uniqueImageUrlCount": 6352,
-    "fileSizeBytes": 1204477,
-    "maxImagesPerPage": 358,
+    "fileSizeBytes": 2477178,
+    "xmlSha256": "7c3a701e186b89c9781d814dd19b194835b2c4eb2d7184f8f147bf49e459606a",
     "xmlWithinUrlLimit": true,
     "xmlWithinSizeLimit": true,
-    "noEmptySitemapFiles": true,
     "allLocUrlsAbsolute": true,
     "allImageLocUrlsAbsolute": true,
-    "noLocalUrls": true,
-    "noR2Dev": true,
+    "noLocalOrPrivateUrls": true,
     "noSvgImageUrls": true,
     "noPngThumbImageUrls": true,
+    "noDuplicatePageUrls": true,
     "noDuplicateImageUrls": true,
-    "noPerImageHtmlRoutes": true,
-    "emptyPageCount": 0,
-    "overImageLimitPageCount": 0
+    "oneImagePerPage": true,
+    "imageTitlesPresent": true
   },
   "files": [
     {
       "path": "public/image-sitemap.xml",
       "publicUrl": "https://www.ilovecoloringpage.com/image-sitemap.xml",
       "type": "urlset",
-      "pageUrlCount": 163,
+      "pageUrlCount": 6352,
       "imageEntryCount": 6352,
-      "fileSizeBytes": 1204477
+      "fileSizeBytes": 2477178,
+      "sha256": "7c3a701e186b89c9781d814dd19b194835b2c4eb2d7184f8f147bf49e459606a"
     }
-  ],
-  "emptyPages": [],
-  "overImageLimitPages": []
+  ]
 }

@@ -1,67 +1,70 @@
 {
-  "generatedAt": "2026-05-13T22:53:14.447Z",
-  "runId": "image-sitemap-xml-validation",
+  "generatedAt": "2026-05-14T23:46:55.619Z",
+  "runId": "image-sitemap-canonical-printable-xml-validation",
   "summary": {
     "xmlValidationPassed": true,
     "fileCount": 1,
-    "pageUrlCount": 131,
+    "pageUrlCount": 6352,
     "imageEntryCount": 6352,
+    "imageTitleCount": 6352,
     "namespaceCorrect": true,
     "tagBalanceValid": true,
     "xmlDeclarationPresent": true,
     "noFileExceedsLimits": true,
-    "noUrlExceedsImageLimit": true,
-    "allPageLocsAbsolute": true,
-    "allImageLocsAbsolute": true,
-    "noSvgImageUrls": true,
-    "noPngThumbImageUrls": true,
-    "noLocalUrls": true,
-    "noR2DevUrls": true,
-    "noDuplicatePrefix": true,
-    "noPerImageRoutes": true,
-    "noDuplicateImageUrls": true,
+    "oneImagePerPage": true,
+    "allPageLocsCanonicalPrintables": true,
+    "allImageLocsPublicWebp": true,
+    "noSvgPngThumbUrls": true,
+    "noLocalPrivateOrTestUrls": true,
     "noDuplicatePageUrls": true,
-    "noDeprecatedImageTags": true,
-    "noObviousInvalidTitlesCaptions": true,
+    "noDuplicateImageUrls": true,
+    "titlesNatural": true,
+    "noUnsupportedImageFields": true,
+    "exactManifestPairing": true,
     "noPrivateInternalData": true,
-    "fileSizeBytes": 1201552,
-    "maxImagesOnPage": 492
+    "fileSizeBytes": 2477178
   },
-  "files": [
-    {
-      "path": "public/image-sitemap.xml",
-      "pageUrlCount": 131,
-      "imageEntryCount": 6352,
-      "fileSizeBytes": 1201552
-    }
-  ],
   "errors": [],
   "samples": {
-    "firstPageLocs": [
-      "https://www.ilovecoloringpage.com/coloring-pages",
-      "https://www.ilovecoloringpage.com/coloring-pages/animals",
-      "https://www.ilovecoloringpage.com/coloring-pages/anime-girls",
-      "https://www.ilovecoloringpage.com/coloring-pages/bakery",
-      "https://www.ilovecoloringpage.com/coloring-pages/bats"
+    "first": [
+      {
+        "pageUrl": "https://www.ilovecoloringpage.com/printables/animals/animals-alligator-4feec8505a",
+        "imageUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+        "imageTitle": "Animals Alligator",
+        "imageCount": 1
+      },
+      {
+        "pageUrl": "https://www.ilovecoloringpage.com/printables/animals/animals-antelopes-49a5eb802f",
+        "imageUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-antelopes-49a5eb802f.webp",
+        "imageTitle": "Animals Antelopes",
+        "imageCount": 1
+      },
+      {
+        "pageUrl": "https://www.ilovecoloringpage.com/printables/animals/animals-buffalo-42947367b4",
+        "imageUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-buffalo-42947367b4.webp",
+        "imageTitle": "Animals Buffalo",
+        "imageCount": 1
+      }
     ],
-    "firstImageLocs": [
-      "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-antelopes-49a5eb802f.webp",
-      "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
-      "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-buffalo-42947367b4.webp",
-      "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-chickens-1d898c58de.webp",
-      "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-crocodile-0389692b30.webp"
-    ],
-    "largestImageCounts": [
-      492,
-      277,
-      224,
-      213,
-      207,
-      204,
-      175,
-      166,
-      159,
-      153
+    "last": [
+      {
+        "pageUrl": "https://www.ilovecoloringpage.com/printables/indoor-plants/indoor-plants-zebra-succulent-cf66ffd286",
+        "imageUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/indoor-plants/indoor-plants-zebra-succulent-cf66ffd286.webp",
+        "imageTitle": "Indoor Plants Zebra Succulent",
+        "imageCount": 1
+      },
+      {
+        "pageUrl": "https://www.ilovecoloringpage.com/printables/indoor-plants/indoor-plants-zz-plant-1d08b038f8",
+        "imageUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/indoor-plants/indoor-plants-zz-plant-1d08b038f8.webp",
+        "imageTitle": "Indoor Plants Zz Plant",
+        "imageCount": 1
+      },
+      {
+        "pageUrl": "https://www.ilovecoloringpage.com/printables/indoor-plants/indoor-plants-zz-raven-e805afdc45",
+        "imageUrl": "https://assets.ilovecoloringpage.com/coloring-pages/webp/indoor-plants/indoor-plants-zz-raven-e805afdc45.webp",
+        "imageTitle": "Indoor Plants Zz Raven",
+        "imageCount": 1
+      }
     ]
   }
 }

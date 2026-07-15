@@ -1,5 +1,6 @@
 import ogImagesJson from "@/generated/coloring/og-images.json";
 import { getHubPagePath } from "@/lib/coloring/data";
+import { getPrintablePath } from "@/lib/coloring/printablePath";
 import type { ColoringHub, PublicColoringItem } from "@/lib/coloring/types";
 import { siteConfig } from "@/lib/site/siteConfig";
 
@@ -120,7 +121,7 @@ function buildHubCollectionJsonLd(options: {
     ogImageWidth: ogImage.width,
     ogImageHeight: ogImage.height,
     breadcrumbs: getBreadcrumbEntries(options.hub, path, options.page),
-    itemListItems: getItemListEntries(path, options.visibleItems),
+    itemListItems: getItemListEntries(options.visibleItems),
   });
 }
 
@@ -137,10 +138,10 @@ function getBreadcrumbEntries(hub: ColoringHub, currentPath: string, page: numbe
   return crumbs;
 }
 
-function getItemListEntries(path: string, items: PublicColoringItem[]): ItemListEntry[] {
+function getItemListEntries(items: PublicColoringItem[]): ItemListEntry[] {
   return items.slice(0, VISIBLE_ITEMLIST_LIMIT).map((item) => ({
     name: item.title,
-    url: `${absoluteUrl(siteConfig.siteUrl, path)}#asset-${item.assetId}`,
+    url: absoluteUrl(siteConfig.siteUrl, getPrintablePath(item)),
   }));
 }
 

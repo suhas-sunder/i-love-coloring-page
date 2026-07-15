@@ -1,30 +1,27 @@
-# Image Sitemap XML Validation Report
+# Canonical Printable Image Sitemap XML Validation
 
 | Check | Result |
 | --- | --- |
 | xmlValidationPassed | pass |
 | fileCount | 1 |
-| pageUrlCount | 131 |
+| pageUrlCount | 6352 |
 | imageEntryCount | 6352 |
+| imageTitleCount | 6352 |
 | namespaceCorrect | pass |
 | tagBalanceValid | pass |
 | xmlDeclarationPresent | pass |
 | noFileExceedsLimits | pass |
-| noUrlExceedsImageLimit | pass |
-| allPageLocsAbsolute | pass |
-| allImageLocsAbsolute | pass |
-| noSvgImageUrls | pass |
-| noPngThumbImageUrls | pass |
-| noLocalUrls | pass |
-| noR2DevUrls | pass |
-| noDuplicatePrefix | pass |
-| noPerImageRoutes | pass |
-| noDuplicateImageUrls | pass |
+| oneImagePerPage | pass |
+| allPageLocsCanonicalPrintables | pass |
+| allImageLocsPublicWebp | pass |
+| noSvgPngThumbUrls | pass |
+| noLocalPrivateOrTestUrls | pass |
 | noDuplicatePageUrls | pass |
-| noDeprecatedImageTags | pass |
-| noObviousInvalidTitlesCaptions | pass |
+| noDuplicateImageUrls | pass |
+| titlesNatural | pass |
+| noUnsupportedImageFields | pass |
+| exactManifestPairing | pass |
 | noPrivateInternalData | pass |
-| fileSizeBytes | 1201552 |
-| maxImagesOnPage | 492 |
+| fileSizeBytes | 2477178 |
 
 No XML validation blockers were found.

@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { JsonLdScript } from "@/components/seo/JsonLdScript";
-import { phase1HubLinks, sitemapHubGroups, type HubNavLink } from "@/lib/navigation/siteNav";
+import { PublicPageShell } from "@/components/site/PublicPageShell";
+import { sitemapHubGroups, sitemapRootHubLink, type SitemapHubLink } from "@/lib/navigation/sitemapNav";
 import { buildTrustPageJsonLd } from "@/lib/seo/pageJsonLd";
 import { getCanonicalUrl, siteConfig } from "@/lib/site/siteConfig";
 import { trustPages } from "@/lib/trust/trustPages";
@@ -41,10 +42,9 @@ export const metadata: Metadata = {
   },
 };
 
-const rootHub = phase1HubLinks.find((link) => link.href === "/coloring-pages");
 const mainLinks: SitemapLink[] = [
   { label: "Home", href: "/" },
-  rootHub ? toSitemapLink(rootHub, "All coloring pages") : { label: "All coloring pages", href: "/coloring-pages" },
+  sitemapRootHubLink ? toSitemapLink(sitemapRootHubLink, "All coloring pages") : { label: "All coloring pages", href: "/coloring-pages" },
   { label: "Sitemap", href: "/sitemap" },
 ];
 
@@ -69,7 +69,7 @@ export default function SitemapPage() {
   ].filter((group) => group.links.length > 0);
 
   return (
-    <main className="page-shell html-sitemap-page">
+    <PublicPageShell pageFamily="html-sitemap" className="html-sitemap-page">
       <JsonLdScript
         id="jsonld-sitemap"
         data={buildTrustPageJsonLd({
@@ -108,11 +108,11 @@ export default function SitemapPage() {
           ))}
         </div>
       </section>
-    </main>
+    </PublicPageShell>
   );
 }
 
-function toSitemapLink(link: HubNavLink, label = link.label): SitemapLink {
+function toSitemapLink(link: SitemapHubLink, label = link.label): SitemapLink {
   return {
     label,
     href: link.href,

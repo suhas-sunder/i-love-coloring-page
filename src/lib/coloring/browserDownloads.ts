@@ -1,3 +1,11 @@
+import {
+  canvasTopFromBottomOrigin,
+  computePrintableLayout,
+  pdfPointToRasterPixels,
+  PRINTABLE_COMPOSITION,
+  type PrintableLayout,
+} from "./exportComposition";
+
 export type PublicDownloadFormat = "png" | "jpg" | "jpeg" | "webp";
 export type CanvasDownloadFormat = Exclude<PublicDownloadFormat, "png">;
 export type RasterDownloadFormat = PublicDownloadFormat;
@@ -131,15 +139,7 @@ type RenderedCanvasResult =
     }
   | Extract<BrowserRasterResult, { ok: false }>;
 
-type PrintPdfLayout = {
-  outerFrame: PrintDocumentBox;
-  artworkBox: PrintDocumentBox;
-  imageBox: PrintDocumentBox;
-  brandBox: PrintDocumentBox;
-  brandKnockoutBox: PrintDocumentBox;
-  brandPlacement: "bottom-frame-label";
-  printableBorderCount: 1;
-};
+type PrintPdfLayout = PrintableLayout;
 
 type PrintDocumentQaSnapshot = {
   pageCount: 1;
@@ -167,10 +167,10 @@ const DOWNLOAD_TARGET_LONG_EDGE = 2400;
 const IMAGE_LOAD_TIMEOUT_MS = 12_000;
 export const PRINT_PREPARE_TIMEOUT_MS = 15_000;
 export const INTERNAL_SVG_CONTENT_TYPE = "image/svg+xml";
-export const PRINT_DOCUMENT_BRAND = "iLoveColoringPage.com";
-const PRINT_PAGE_WIDTH_PT = 612;
-const PRINT_PAGE_HEIGHT_PT = 792;
-const PRINT_BRAND_FONT_SIZE = 7;
+export const PRINT_DOCUMENT_BRAND = PRINTABLE_COMPOSITION.branding.text;
+const PRINT_PAGE_WIDTH_PT = PRINTABLE_COMPOSITION.page.widthPt;
+const PRINT_PAGE_HEIGHT_PT = PRINTABLE_COMPOSITION.page.heightPt;
+const PRINT_BRAND_FONT_SIZE = PRINTABLE_COMPOSITION.branding.fontSizePt;
 
 const CANVAS_FORMATS: Record<RasterDownloadFormat, FormatConfig> = {
   png: { mimeType: "image/png", extension: "png" },
@@ -265,7 +265,58 @@ export async function convertInternalSvgToBlob(options: BrowserRasterOptions): P
       source: "internal-svg",
     };
   } catch {
-    return failure("canvas-tainted", "Canvas export was blocked. The asset host must allow CORS for browser conversion.");
+    return failure("canvas-tainted", "The browser could not prepare this image. Please try again.");
+  }
+}
+
+export async function composePrintableRasterToBlob(options: DownloadOptions & { format: "png" | "jpg" | "jpeg" }): Promise<BrowserRasterResult> {
+  if (!canUseCanvasExport()) return failure("browser-api-unavailable", "Browser image conversion APIs are unavailable.");
+  const formatConfig = CANVAS_FORMATS[options.format];
+  if (!formatConfig) return failure("unsupported-format", "This download format is not supported.");
+
+  let image: HTMLImageElement | null = null;
+  let source: "internal-svg" | "png-preview" = "internal-svg";
+  if (options.internalSvgUrl) image = await loadCorsImage(options.internalSvgUrl, IMAGE_LOAD_TIMEOUT_MS);
+  if (!image && options.pngPreviewUrl) {
+    source = "png-preview";
+    image = await loadCorsImage(options.pngPreviewUrl, IMAGE_LOAD_TIMEOUT_MS);
+  }
+  if (!image) {
+    return failure(
+      options.internalSvgUrl ? "image-load-failed" : "missing-internal-svg",
+      "The printable page could not be prepared from the available artwork.",
+    );
+  }
+
+  const sourceWidth = image.naturalWidth || image.width || 800;
+  const sourceHeight = image.naturalHeight || image.height || 1200;
+  const canvas = document.createElement("canvas");
+  const context = canvas.getContext("2d");
+  if (!context) return failure("canvas-unavailable", "Canvas rendering is unavailable in this browser.");
+
+  canvas.width = PRINTABLE_COMPOSITION.page.widthPx;
+  canvas.height = PRINTABLE_COMPOSITION.page.heightPx;
+  const layout = computePrintableLayout(sourceWidth, sourceHeight, "raster");
+  drawPrintableRasterComposition(context, canvas, image, layout);
+
+  try {
+    const blob = await canvasToBlob(canvas, formatConfig.mimeType, options.quality ?? formatConfig.quality);
+    if (!blob) return failure("canvas-export-failed", "The browser could not export this printable page.");
+    if (blob.type && blob.type !== formatConfig.mimeType) {
+      return failure("canvas-export-unsupported", "The browser fell back to another image format.");
+    }
+    return {
+      ok: true,
+      blob,
+      format: options.format,
+      mimeType: formatConfig.mimeType,
+      filename: buildDownloadFilename(options.title, formatConfig.extension),
+      width: canvas.width,
+      height: canvas.height,
+      source,
+    };
+  } catch {
+    return failure("canvas-tainted", "The browser could not prepare this image. Please try again.");
   }
 }
 
@@ -312,18 +363,12 @@ export async function convertPngPreviewToBrowserDownload(options: {
       source: "png-preview",
     };
   } catch {
-    return failure("canvas-tainted", "Canvas export was blocked. The asset host must allow CORS for browser conversion.");
+    return failure("canvas-tainted", "The browser could not prepare this image. Please try again.");
   }
 }
 
 export async function downloadPng(options: DownloadOptions): Promise<BrowserDownloadResult> {
-  const converted = await convertInternalSvgToBlob({
-    internalSvgUrl: options.internalSvgUrl,
-    title: options.title,
-    format: "png",
-    quality: options.quality,
-    targetLongEdge: DOWNLOAD_TARGET_LONG_EDGE,
-  });
+  const converted = await composePrintableRasterToBlob({ ...options, format: "png" });
 
   if (converted.ok) {
     downloadBlob(converted.blob, converted.filename);
@@ -331,23 +376,22 @@ export async function downloadPng(options: DownloadOptions): Promise<BrowserDown
       ok: true,
       filename: converted.filename,
       format: "png",
-      source: "internal-svg",
+      source: converted.source === "internal-svg" ? "internal-svg" : "png-preview-fallback",
     };
   }
-
-  if (!options.pngPreviewUrl) return converted.reason === "missing-internal-svg" ? failure("missing-png-preview", "PNG preview is unavailable.") : converted;
-  triggerUrlDownload(options.pngPreviewUrl, buildDownloadFilename(options.title, "png"));
-  return {
-    ok: true,
-    filename: buildDownloadFilename(options.title, "png"),
-    format: "png",
-    source: "png-preview-fallback",
-    message: "Downloaded the best available PNG file for this page.",
-  };
+  return converted;
 }
 
 export async function downloadJpeg(options: DownloadOptions): Promise<BrowserDownloadResult> {
-  return downloadConvertedCanvasFormat(options, "jpg");
+  const converted = await composePrintableRasterToBlob({ ...options, format: "jpg" });
+  if (!converted.ok) return converted;
+  downloadBlob(converted.blob, converted.filename);
+  return {
+    ok: true,
+    filename: converted.filename,
+    format: "jpg",
+    source: converted.source === "internal-svg" ? "internal-svg" : "png-preview-fallback",
+  };
 }
 
 export async function downloadWebp(options: DownloadOptions): Promise<BrowserDownloadResult> {
@@ -405,7 +449,7 @@ export async function prepareOnePagePrintPdf(options: PrintOptions): Promise<Pre
   if (!rendered.ok) return rendered;
 
   try {
-    const layout = getPrintPdfLayout(rendered.width, rendered.height);
+    const layout = computePrintableLayout(rendered.width, rendered.height, "pdf");
     const metadataTitle = buildPrintPdfTitle(options.title);
     const pdfBytes = buildPrintPdfBytes(rendered.canvas, layout, metadataTitle);
     const pdfBlob = new Blob([pdfBytes], { type: "application/pdf" });
@@ -493,11 +537,11 @@ async function renderInternalSvgToCanvas(options: {
   targetLongEdge: number;
   imageLoadTimeoutMs: number;
 }): Promise<RenderedCanvasResult> {
-  if (!options.internalSvgUrl) return failure("missing-internal-svg", "The internal SVG source is unavailable for high-quality conversion.");
+  if (!options.internalSvgUrl) return failure("missing-internal-svg", "The high-quality artwork is unavailable.");
   if (!canUseCanvasExport()) return failure("browser-api-unavailable", "Browser image conversion APIs are unavailable.");
 
   const image = await loadCorsImage(options.internalSvgUrl, options.imageLoadTimeoutMs);
-  if (!image) return failure("image-load-failed", "The internal SVG source could not be loaded for conversion.");
+  if (!image) return failure("image-load-failed", "The high-quality artwork could not be loaded. Please try again.");
 
   const sourceWidth = image.naturalWidth || image.width || 800;
   const sourceHeight = image.naturalHeight || image.height || 1200;
@@ -637,6 +681,46 @@ function getTargetDimensions(sourceWidth: number, sourceHeight: number, targetLo
   };
 }
 
+function drawPrintableRasterComposition(
+  context: CanvasRenderingContext2D,
+  canvas: HTMLCanvasElement,
+  image: HTMLImageElement,
+  layout: PrintableLayout,
+) {
+  context.save();
+  context.fillStyle = PRINTABLE_COMPOSITION.background;
+  context.fillRect(0, 0, canvas.width, canvas.height);
+
+  const imageTop = canvasTopFromBottomOrigin(layout.imageBox, canvas.height);
+  context.drawImage(image, layout.imageBox.x, imageTop, layout.imageBox.width, layout.imageBox.height);
+
+  context.strokeStyle = PRINTABLE_COMPOSITION.frame.color;
+  context.lineWidth = pdfPointToRasterPixels(PRINTABLE_COMPOSITION.frame.lineWidthPt);
+  context.strokeRect(
+    layout.outerFrame.x,
+    canvasTopFromBottomOrigin(layout.outerFrame, canvas.height),
+    layout.outerFrame.width,
+    layout.outerFrame.height,
+  );
+
+  context.fillStyle = PRINTABLE_COMPOSITION.background;
+  context.fillRect(
+    layout.brandKnockoutBox.x,
+    canvasTopFromBottomOrigin(layout.brandKnockoutBox, canvas.height),
+    layout.brandKnockoutBox.width,
+    layout.brandKnockoutBox.height,
+  );
+  context.fillStyle = PRINTABLE_COMPOSITION.branding.color;
+  context.font = `${pdfPointToRasterPixels(PRINTABLE_COMPOSITION.branding.fontSizePt)}px ${PRINTABLE_COMPOSITION.branding.fontFamily}`;
+  context.textBaseline = "alphabetic";
+  context.fillText(
+    PRINTABLE_COMPOSITION.branding.text,
+    layout.brandBox.x,
+    canvas.height - layout.brandBox.y,
+  );
+  context.restore();
+}
+
 function buildPrintPdfFilename(title: string) {
   return buildDownloadFilename(title, "png").replace(/\.png$/i, ".pdf");
 }
@@ -644,54 +728,6 @@ function buildPrintPdfFilename(title: string) {
 function buildPrintPdfTitle(title: string) {
   const cleanTitle = title.trim() || "Coloring Page";
   return `${cleanTitle} - ${PRINT_DOCUMENT_BRAND}`;
-}
-
-function getPrintPdfLayout(imageWidth: number, imageHeight: number): PrintPdfLayout {
-  const outerFrame = {
-    x: 10,
-    y: 10,
-    width: PRINT_PAGE_WIDTH_PT - 20,
-    height: PRINT_PAGE_HEIGHT_PT - 20,
-  };
-  const safePadding = 5;
-  const brandTextWidth = estimatePdfTextWidth(PRINT_DOCUMENT_BRAND, PRINT_BRAND_FONT_SIZE);
-  const brandKnockoutPaddingX = 4;
-  const brandKnockoutPaddingY = 1;
-  const brandKnockoutBox = {
-    x: roundPdfNumber(outerFrame.x + (outerFrame.width - brandTextWidth) / 2 - brandKnockoutPaddingX),
-    y: roundPdfNumber(outerFrame.y - PRINT_BRAND_FONT_SIZE * 0.55 - brandKnockoutPaddingY),
-    width: roundPdfNumber(brandTextWidth + brandKnockoutPaddingX * 2),
-    height: roundPdfNumber(PRINT_BRAND_FONT_SIZE + brandKnockoutPaddingY * 2),
-  };
-  const artworkBox = {
-    x: outerFrame.x + safePadding,
-    y: roundPdfNumber(Math.max(outerFrame.y + safePadding, brandKnockoutBox.y + brandKnockoutBox.height + 0.5)),
-    width: outerFrame.width - safePadding * 2,
-    height: 0,
-  };
-  artworkBox.height = roundPdfNumber(outerFrame.y + outerFrame.height - safePadding - artworkBox.y);
-  const imageScale = Math.min(artworkBox.width / imageWidth, artworkBox.height / imageHeight);
-  const imageBox = {
-    width: roundPdfNumber(imageWidth * imageScale),
-    height: roundPdfNumber(imageHeight * imageScale),
-    x: roundPdfNumber(artworkBox.x + (artworkBox.width - imageWidth * imageScale) / 2),
-    y: roundPdfNumber(artworkBox.y + (artworkBox.height - imageHeight * imageScale) / 2),
-  };
-
-  return {
-    outerFrame,
-    artworkBox,
-    imageBox,
-    brandBox: {
-      x: roundPdfNumber(outerFrame.x + (outerFrame.width - brandTextWidth) / 2),
-      y: roundPdfNumber(outerFrame.y - PRINT_BRAND_FONT_SIZE * 0.34),
-      width: roundPdfNumber(brandTextWidth),
-      height: PRINT_BRAND_FONT_SIZE,
-    },
-    brandKnockoutBox,
-    brandPlacement: "bottom-frame-label",
-    printableBorderCount: 1,
-  };
 }
 
 function buildPrintPdfBytes(canvas: HTMLCanvasElement, layout: PrintPdfLayout, metadataTitle: string) {
@@ -832,10 +868,6 @@ function formatPdfNumber(value: number) {
 
 function roundPdfNumber(value: number) {
   return Math.round(value * 100) / 100;
-}
-
-function estimatePdfTextWidth(value: string, fontSize: number) {
-  return roundPdfNumber(value.length * fontSize * 0.52);
 }
 
 function recordPrintDocumentQa(prepared: Extract<PreparedPrintPdfResult, { ok: true }>) {

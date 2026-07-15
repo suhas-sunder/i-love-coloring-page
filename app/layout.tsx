@@ -6,6 +6,7 @@ import "./globals.css";
 
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
+import { SiteInteractionProvider } from "@/components/site/SiteInteractionProvider";
 import { siteConfig } from "@/lib/site/siteConfig";
 
 const defaultDescription = "Printable coloring pages organized by useful subjects, styles, holidays, and themes.";
@@ -63,11 +64,13 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
   return (
     <html lang="en">
       <body className={`${figtree.variable} ${fraunces.variable}`}>
-        <div className="site-shell">
-          <SiteHeader />
-          {children}
-          <SiteFooter />
-        </div>
+        <SiteInteractionProvider>
+          <div className="site-shell">
+            <SiteHeader />
+            {children}
+            <SiteFooter />
+          </div>
+        </SiteInteractionProvider>
       </body>
     </html>
   );

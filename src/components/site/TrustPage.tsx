@@ -1,5 +1,7 @@
 import type { ReactNode } from "react";
 
+import { PublicPageShell } from "./PublicPageShell";
+
 type TrustPageProps = {
   eyebrow?: string;
   title: string;
@@ -15,17 +17,17 @@ type TrustSectionProps = {
 
 export function TrustPage({ eyebrow, title, intro, reviewNote, children }: TrustPageProps) {
   return (
-    <main className="page-shell trust-page">
+    <PublicPageShell pageFamily="trust" className="trust-page">
       <section className="trust-hero" aria-labelledby="trust-page-title">
         {eyebrow ? <p className="trust-eyebrow">{eyebrow}</p> : null}
-        <h1 className="hero-title" id="trust-page-title">
+        <h1 className="page-title page-title-wide" id="trust-page-title">
           {title}
         </h1>
         <p className="hero-copy">{intro}</p>
         {reviewNote ? <p className="trust-review-note">{reviewNote}</p> : null}
       </section>
       <div className="trust-content">{children}</div>
-    </main>
+    </PublicPageShell>
   );
 }
 

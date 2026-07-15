@@ -3,7 +3,6 @@
 }
 
 html {
-  min-width: 320px;
   background: var(--color-canvas);
   color: var(--color-ink);
   text-size-adjust: 100%;
@@ -68,4 +67,15 @@ p {
 
 strong {
   color: var(--color-ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

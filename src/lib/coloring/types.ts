@@ -25,7 +25,48 @@ export type ColoringItem = {
   warningMetadataPolicy: "internal_metadata_only";
 };
 
-export type PublicColoringItem = Pick<ColoringItem, "assetId" | "title" | "altText" | "assetSubpaths">;
+export type PublicColoringItem = Pick<ColoringItem, "assetId" | "title" | "altText" | "assetSubpaths"> & {
+  canonicalPath: string;
+};
+
+export type RuntimePrintable = {
+  assetId: string;
+  stableId: string;
+  publicTitle: string;
+  canonicalSlug: string;
+  primaryHubId: string;
+  primaryCategorySlug: string;
+  slugAndId: string;
+  canonicalPath: string;
+  altText: string;
+  webpPath: string;
+  svgPath: string;
+  width: number | null;
+  height: number | null;
+  hubIds: string[];
+  publicAvailabilityStatus: "available";
+  relatedAssetIds: string[];
+  relatedHubIds: string[];
+};
+
+export type StaticSearchItem = {
+  id: string;
+  title: string;
+  alt: string;
+  path: string;
+  webp: string;
+  svg: string;
+  primary: string;
+  tags: string[];
+  text: string;
+};
+
+export type StaticSearchPayload = {
+  version: 1;
+  scope: string;
+  count: number;
+  items: StaticSearchItem[];
+};
 
 export type GallerySearchEntry = {
   assetId: string;

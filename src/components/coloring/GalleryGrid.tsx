@@ -1,15 +1,16 @@
 import type { PublicColoringItem } from "@/lib/coloring/types";
 import { resolveColoringItemAssetUrls } from "@/lib/coloring/assets";
+import { getPrintablePath } from "@/lib/coloring/printablePath";
 
 import { ImageCard } from "./ImageCard";
 
 type GalleryGridProps = {
   items: PublicColoringItem[];
-  getItemHref?: (item: PublicColoringItem) => string;
   priorityCount?: number;
+  showPrintActions?: boolean;
 };
 
-export function GalleryGrid({ items, getItemHref, priorityCount = 4 }: GalleryGridProps) {
+export function GalleryGrid({ items, priorityCount = 4, showPrintActions = true }: GalleryGridProps) {
   if (items.length === 0) {
     return (
       <div className="empty-state">
@@ -27,7 +28,8 @@ export function GalleryGrid({ items, getItemHref, priorityCount = 4 }: GalleryGr
           <ImageCard
             key={item.assetId}
             item={item}
-            itemHref={getItemHref ? getItemHref(item) : `#asset-${item.assetId}`}
+            itemHref={getPrintablePath(item)}
+            showPrintAction={showPrintActions}
             priority={index < priorityCount}
             assetUrls={{
               preview: resolvedUrls.preview,

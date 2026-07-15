@@ -70,10 +70,11 @@ test("static export routing remains frontend-only and public-safe", async () => 
   assert.doesNotMatch(projectText, /opengraph-image|twitter-image|ImageResponse/i);
 });
 
-test("regular sitemap excludes per-image routes, Phase 2 hubs, and image sitemap routes", async () => {
+test("legacy hub sitemap input stays fragment-free while the canonical route inventory owns the regular sitemap", async () => {
   const generatedSitemap = await readJson("src/generated/coloring/runtime-site-map.json");
   const hubs = await readJson("src/generated/coloring/runtime-hubs.json");
-  const localSitemap = await readJson("pipeline/manifests/live-routing-sitemap-local-check.json");
+  const routeInventory = await readText("src/lib/seo/routeInventory.ts");
+  const sitemapRoute = await readText("app/sitemap.ts");
 
   const sitemapPaths = generatedSitemap.entries.map((entry) => entry.path);
   const phase2Routes = hubs.backlogHubs.map((hub) => `/coloring-pages/${hub.slug}`);
@@ -84,10 +85,9 @@ test("regular sitemap excludes per-image routes, Phase 2 hubs, and image sitemap
   assert.equal(sitemapPaths.some((route) => /\/image-sitemap/i.test(route)), false);
   assert.equal(phase2Routes.some((route) => sitemapPaths.includes(route)), false);
   assert.equal(sectionOnlyRoutes.some((route) => sitemapPaths.includes(route)), false);
-  assert.equal(localSitemap.summary.noPerImageRoutes, true);
-  assert.equal(localSitemap.summary.noPhase2HubRoutes, true);
-  assert.equal(localSitemap.summary.noSectionOnlyTopicRoutes, true);
-  assert.equal(localSitemap.summary.noImageSitemap, true);
+  assert.match(routeInventory, /printablesManifest\.records\.map/);
+  assert.match(routeInventory, /"canonical-printable", true, true/);
+  assert.match(sitemapRoute, /getRegularSitemapRoutes/);
 });
 
 test("runtime switch and user-facing download boundaries remain intact", async () => {

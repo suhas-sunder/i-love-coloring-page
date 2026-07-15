@@ -1,135 +1,207 @@
 "use client";
 
-import { useDeferredValue, useMemo, useState } from "react";
+import { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 
-import type { GalleryFilterTag, GallerySearchEntry, PublicColoringItem } from "@/lib/coloring/types";
+import type {
+  GalleryFilterTag,
+  PublicColoringItem,
+  StaticSearchItem,
+  StaticSearchPayload,
+} from "@/lib/coloring/types";
+import { normalizeSearchText, rankSearchItems } from "@/lib/search/ranking";
 
 import { GalleryFilters } from "./GalleryFilters";
 import { GalleryGrid } from "./GalleryGrid";
+import { Pagination } from "./Pagination";
 
-export const MAX_INTERACTIVE_RESULTS = 48;
+export const INTERACTIVE_RESULT_BATCH_SIZE = 48;
 
 type GallerySearchProps = {
   hubTitle: string;
   totalItems: number;
   pageItems: PublicColoringItem[];
-  allItems: PublicColoringItem[];
-  featuredItems: PublicColoringItem[];
-  searchEntries: GallerySearchEntry[];
+  searchDataPath: string;
   filterTags: GalleryFilterTag[];
-  itemHrefBasePath?: string;
-  tabs: Array<Pick<GalleryFilterTag, "id" | "label" | "assetCount">>;
+  pagination?: {
+    basePath: string;
+    currentPage: number;
+    totalPages: number;
+    hasPreviousPage: boolean;
+    hasNextPage: boolean;
+  };
 };
 
-type GalleryMode = "featured" | "all" | string;
+type LoadState = "idle" | "loading" | "loaded" | "error";
 
 export function GallerySearch({
   hubTitle,
   totalItems,
   pageItems,
-  allItems,
-  featuredItems,
-  searchEntries,
+  searchDataPath,
   filterTags,
-  itemHrefBasePath = "",
-  tabs,
+  pagination,
 }: GallerySearchProps) {
   const [query, setQuery] = useState("");
-  const [activeTag, setActiveTag] = useState<string | null>(null);
-  const [activeMode, setActiveMode] = useState<GalleryMode>("all");
+  const [activeFilterIds, setActiveFilterIds] = useState<string[]>([]);
+  const [visibleCount, setVisibleCount] = useState(INTERACTIVE_RESULT_BATCH_SIZE);
+  const [searchItems, setSearchItems] = useState<StaticSearchItem[] | null>(null);
+  const [loadState, setLoadState] = useState<LoadState>("idle");
+  const loadStateRef = useRef<LoadState>("idle");
+  const requestRef = useRef<AbortController | null>(null);
+  const mountedRef = useRef(true);
   const deferredQuery = useDeferredValue(query);
-  const itemById = useMemo(() => new Map(allItems.map((item) => [item.assetId, item])), [allItems]);
-  const normalizedQuery = normalizeSearchInput(deferredQuery);
-  const visibleTabs = useMemo(
-    () => [
-      { id: "featured", label: "Featured", assetCount: featuredItems.length },
-      { id: "all", label: "All", assetCount: totalItems },
-      ...tabs.filter((tab) => tab.assetCount >= Math.min(12, Math.max(3, Math.floor(totalItems / 24)))),
-    ],
-    [featuredItems.length, tabs, totalItems],
-  );
+  const normalizedQuery = normalizeSearchText(deferredQuery);
+  const filterKey = activeFilterIds.join("|");
+  const hasInteractiveState = Boolean(normalizedQuery || activeFilterIds.length > 0);
+  const isStaticPageView = !hasInteractiveState;
 
-  const isDefaultAllView = activeMode === "all" && !activeTag && !normalizedQuery;
-  const featuredIds = useMemo(() => new Set(featuredItems.map((item) => item.assetId)), [featuredItems]);
+  useEffect(() => {
+    mountedRef.current = true;
+    return () => {
+      mountedRef.current = false;
+      requestRef.current?.abort();
+    };
+  }, []);
+
+  useEffect(() => setVisibleCount(INTERACTIVE_RESULT_BATCH_SIZE), [filterKey, normalizedQuery]);
+
+  async function ensureSearchData({ retry = false } = {}) {
+    if (searchItems || loadStateRef.current === "loading") return;
+    if (loadStateRef.current === "error" && !retry) return;
+    requestRef.current?.abort();
+    const controller = new AbortController();
+    requestRef.current = controller;
+    loadStateRef.current = "loading";
+    setLoadState("loading");
+
+    try {
+      const response = await fetch(searchDataPath, { cache: retry ? "no-store" : "force-cache", signal: controller.signal });
+      if (!response.ok) throw new Error(`Search data request failed with ${response.status}`);
+      const payload = (await response.json()) as StaticSearchPayload;
+      if (payload.version !== 1 || !Array.isArray(payload.items) || payload.count !== payload.items.length) {
+        throw new Error("Search data response is invalid");
+      }
+      if (!mountedRef.current || controller.signal.aborted) return;
+      setSearchItems(payload.items);
+      loadStateRef.current = "loaded";
+      setLoadState("loaded");
+    } catch (error) {
+      if (!mountedRef.current || controller.signal.aborted) return;
+      loadStateRef.current = "error";
+      setLoadState("error");
+    }
+  }
 
   const resultEntries = useMemo(() => {
-    if (activeMode === "featured" && !activeTag && !normalizedQuery) {
-      return featuredItems
-        .map((item) => searchEntries.find((entry) => entry.assetId === item.assetId))
-        .filter((entry): entry is GallerySearchEntry => Boolean(entry));
-    }
+    if (!hasInteractiveState || !searchItems) return [];
+    const filtered = searchItems.filter((entry) => activeFilterIds.every((filterId) => entry.tags.includes(filterId)));
+    if (!normalizedQuery) return filtered;
+    return rankSearchItems(
+      filtered.map((entry) => ({
+        ...entry,
+        stableKey: entry.id,
+        primaryLabel: entry.primary,
+        searchTerms: entry.tags,
+        normalizedText: entry.text,
+      })),
+      normalizedQuery,
+    ).map((result) => result.item);
+  }, [activeFilterIds, hasInteractiveState, normalizedQuery, searchItems]);
 
-    return searchEntries.filter((entry) => {
-      if (activeMode === "featured" && !featuredIds.has(entry.assetId)) return false;
-      if (activeMode !== "all" && activeMode !== "featured" && !entry.tags.includes(activeMode)) return false;
-      if (activeTag && !entry.tags.includes(activeTag)) return false;
-      if (normalizedQuery && !entry.searchText.includes(normalizedQuery)) return false;
-      return true;
-    });
-  }, [activeMode, activeTag, featuredIds, featuredItems, normalizedQuery, searchEntries]);
+  let resultItems: PublicColoringItem[];
+  let resultCount: number;
+  if (isStaticPageView || !searchItems) {
+    resultItems = pageItems;
+    resultCount = totalItems;
+  } else {
+    resultItems = resultEntries.slice(0, visibleCount).map(toPublicItem);
+    resultCount = resultEntries.length;
+  }
+  const canShowMore = Boolean(searchItems && hasInteractiveState && resultItems.length < resultCount);
+  const activeLabels = activeFilterIds.map((id) => filterTags.find((tag) => tag.id === id)?.label).filter(Boolean) as string[];
 
-  const resultItems = isDefaultAllView
-    ? pageItems
-    : resultEntries
-        .slice(0, MAX_INTERACTIVE_RESULTS)
-        .map((entry) => itemById.get(entry.assetId))
-        .filter((item): item is PublicColoringItem => Boolean(item));
-  const resultCount = isDefaultAllView ? totalItems : resultEntries.length;
-  const capped = !isDefaultAllView && resultEntries.length > MAX_INTERACTIVE_RESULTS;
+  function clearAll() {
+    setQuery("");
+    setActiveFilterIds([]);
+  }
 
   return (
     <div className="gallery-explorer">
-      <div className="gallery-controls">
-        <label className="gallery-search">
-          <span>Search this collection</span>
-          <input
-            type="search"
-            value={query}
-            aria-label="Search this collection"
-            placeholder={`Search ${hubTitle.replace(/ Coloring Pages$/, "").toLowerCase()} pages`}
-            onChange={(event) => setQuery(event.currentTarget.value)}
+      <div className="gallery-controls" aria-label="Search and filter controls">
+        <div className="gallery-search-row">
+          <label className="gallery-search">
+            <span>Search this collection</span>
+            <input
+              type="search"
+              value={query}
+              aria-label="Search this collection"
+              placeholder={`Search ${hubTitle.replace(/ Coloring Pages$/, "").toLowerCase()} pages`}
+              onChange={(event) => {
+                const value = event.currentTarget.value;
+                setQuery(value);
+                if (normalizeSearchText(value)) void ensureSearchData();
+              }}
+            />
+          </label>
+          <GalleryFilters
+            tags={filterTags}
+            activeFilterIds={activeFilterIds}
+            onActiveFilterIdsChange={(ids) => {
+              setActiveFilterIds(ids);
+              if (ids.length > 0) void ensureSearchData();
+            }}
           />
-        </label>
+        </div>
 
-        <div className="gallery-tabs" role="tablist" aria-label="Gallery views">
-          {visibleTabs.map((tab) => (
-            <button
-              className="gallery-tab"
-              type="button"
-              role="tab"
-              aria-selected={activeMode === tab.id}
-              key={tab.id}
-              onClick={() => setActiveMode(tab.id)}
-            >
-              {tab.label}
-              <span>{tab.assetCount.toLocaleString()}</span>
-            </button>
-          ))}
+        <div className="gallery-control-summary">
+          <p aria-live="polite">
+            {isStaticPageView
+              ? `${totalItems.toLocaleString()} coloring pages`
+              : searchItems
+                ? `${resultCount.toLocaleString()} matching coloring pages`
+                : `Showing the current gallery while results are ${loadState === "error" ? "unavailable" : "loading"}`}
+          </p>
+          {activeLabels.length > 0 ? <span>Active filters: {activeLabels.join(", ")}</span> : null}
+          {hasInteractiveState ? <button className="button button-ghost button-small" type="button" onClick={clearAll}>Clear all</button> : null}
         </div>
       </div>
 
-      <GalleryFilters tags={filterTags} activeTag={activeTag} onTagChange={setActiveTag} />
+      {hasInteractiveState && loadState === "loading" ? <p className="results-note" role="status">Loading matching coloring pages…</p> : null}
+      {hasInteractiveState && loadState === "error" ? (
+        <div className="gallery-search-error" role="alert">
+          <p>Search could not be completed. The initial gallery is still available.</p>
+          <button className="button button-subtle" type="button" onClick={() => void ensureSearchData({ retry: true })}>Try again</button>
+        </div>
+      ) : null}
 
-      <p className="results-note" aria-live="polite">
-        {isDefaultAllView
-          ? `Showing this page of ${totalItems.toLocaleString()} ${hubTitle.toLowerCase()}.`
-          : `Showing ${resultItems.length.toLocaleString()} of ${resultCount.toLocaleString()} matching pages.`}
-        {capped ? " Refine the search to narrow the list." : ""}
-      </p>
+      {!isStaticPageView && searchItems && resultCount === 0 ? (
+        <div className="empty-state">
+          <h2 className="section-title">No matching coloring pages</h2>
+          <p>Try another search or clear your filters.</p>
+          <button className="button button-subtle" type="button" onClick={clearAll}>Clear all</button>
+        </div>
+      ) : (
+        <GalleryGrid items={resultItems} priorityCount={4} />
+      )}
 
-      <GalleryGrid
-        items={resultItems}
-        getItemHref={(item) => `${itemHrefBasePath}#asset-${item.assetId}`}
-        priorityCount={activeMode === "featured" ? 6 : 4}
-      />
+      {canShowMore ? (
+        <div className="gallery-show-more">
+          <button className="button button-subtle" type="button" onClick={() => setVisibleCount((count) => count + INTERACTIVE_RESULT_BATCH_SIZE)}>Show more</button>
+          <span aria-live="polite">Showing {resultItems.length.toLocaleString()} of {resultCount.toLocaleString()}</span>
+        </div>
+      ) : null}
+
+      {isStaticPageView && pagination ? <Pagination {...pagination} /> : null}
     </div>
   );
 }
 
-function normalizeSearchInput(value: string) {
-  return value
-    .toLowerCase()
-    .replace(/[^a-z0-9+]+/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
+function toPublicItem(entry: StaticSearchItem): PublicColoringItem {
+  return {
+    assetId: entry.id,
+    title: entry.title,
+    altText: entry.alt,
+    canonicalPath: entry.path,
+    assetSubpaths: { svg: entry.svg, webpPreview: entry.webp, pngPreview: null, thumbnail: null },
+  };
 }

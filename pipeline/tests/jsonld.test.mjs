@@ -10,8 +10,14 @@ const execFileAsync = promisify(execFile);
 const REPO_ROOT = process.cwd();
 const SITE_URL = "https://www.ilovecoloringpage.com";
 const ASSET_BASE_URL = "https://assets.ilovecoloringpage.com/coloring-pages";
-const EXPECTED_AVAILABLE_RECORDS = 6352;
-const EXPECTED_RUNTIME_HUBS = 131;
+const runtimeAvailable = await readJson("src/generated/coloring/runtime-available-items.json");
+const runtimeHubs = await readJson("src/generated/coloring/runtime-hubs.json");
+const ogImages = await readJson("src/generated/coloring/og-images.json");
+const trustPageSource = await readText("src/lib/trust/trustPages.ts");
+const EXPECTED_AVAILABLE_RECORDS = runtimeAvailable.items.length;
+const EXPECTED_RUNTIME_HUBS = runtimeHubs.hubs.length;
+const EXPECTED_OG_IMAGE_COUNT = ogImages.routes.length;
+const EXPECTED_JSONLD_ROUTE_COUNT = EXPECTED_RUNTIME_HUBS + 2 + (trustPageSource.match(/indexable:\s*true/g) || []).length;
 const FORBIDDEN_SCHEMA_TYPES = new Set(["Review", "AggregateRating", "Product", "Offer", "FAQPage", "Question", "Answer"]);
 
 const REQUIRED_MANIFESTS = [
@@ -67,7 +73,7 @@ test("context preserves project, runtime, sitemap, OG, and deferred ad boundarie
   assert.equal(context.summary.regularSitemapExists, true);
   assert.equal(context.summary.imageSitemapExists, true);
   assert.equal(context.summary.ogImagesExist, true);
-  assert.equal(context.summary.ogImageCount, 133);
+  assert.equal(context.summary.ogImageCount, EXPECTED_OG_IMAGE_COUNT);
   assert.equal(context.summary.siteUrl, SITE_URL);
   assert.equal(context.summary.publicAssetBaseUrl, ASSET_BASE_URL);
   assert.equal(context.summary.contactEmail, "admin@ilovecoloringpage.com");
@@ -85,7 +91,7 @@ test("selected schema plan is conservative and excludes unsupported schema types
   assert.deepEqual(requirements.summary.rejectedSchemaTypes.sort(), ["AggregateRating", "FAQPage", "Offer", "Product", "Review", "SearchAction"].sort());
   assert.equal(requirements.summary.searchActionUsed, false);
   assert.equal(requirements.summary.perImageSchemaAvoided, true);
-  assert.equal(routeData.summary.routeCount, 139);
+  assert.equal(routeData.summary.routeCount, EXPECTED_JSONLD_ROUTE_COUNT);
   assert.equal(routeData.summary.homepageHasJsonLd, true);
   assert.equal(routeData.summary.coloringPagesHasJsonLd, true);
   assert.equal(routeData.summary.hubPagesWithJsonLd, EXPECTED_RUNTIME_HUBS);
@@ -214,7 +220,7 @@ test("static export, source media, public media, and public download boundaries 
   assert.match(downloadMenu, /label: "PNG"/);
   assert.match(downloadMenu, /label: "JPG"/);
   assert.match(downloadMenu, /label: "WebP"/);
-  assert.equal(publicFiles.every((file) => /^public\/(?:image-sitemap\.xml|og\/.+\.jpg)$/.test(normalizePath(file)) || normalizePath(file) === "public/icon.svg"), true);
+  assert.equal(publicFiles.every((file) => /^public\/(?:image-sitemap\.xml|og\/.+\.jpg|search-data\/.+\.json)$/.test(normalizePath(file)) || normalizePath(file) === "public/icon.svg"), true);
   assert.equal((await gitStatusFor("images")).trim(), "");
   assert.equal((await gitStatusFor("ilovesvg")).trim(), "");
 });

@@ -210,7 +210,7 @@ export function buildImageObjectJsonLd(options: {
   return compactJsonLd({
     "@type": "ImageObject",
     "@id": `${options.url}#image`,
-    url: options.url,
+    contentUrl: options.url,
     width: options.width,
     height: options.height,
     caption: options.caption,

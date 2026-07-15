@@ -10,9 +10,11 @@ const execFileAsync = promisify(execFile);
 const REPO_ROOT = process.cwd();
 const SITE_URL = "https://www.ilovecoloringpage.com";
 const ASSET_BASE_URL = "https://assets.ilovecoloringpage.com/coloring-pages";
-const EXPECTED_AVAILABLE_RECORDS = 6352;
-const EXPECTED_RUNTIME_HUBS = 131;
-const EXPECTED_ROUTE_LEVEL_IMAGES = 133;
+const runtimeAvailable = await readJson("src/generated/coloring/runtime-available-items.json");
+const runtimeHubs = await readJson("src/generated/coloring/runtime-hubs.json");
+const EXPECTED_AVAILABLE_RECORDS = runtimeAvailable.items.length;
+const EXPECTED_RUNTIME_HUBS = runtimeHubs.hubs.length;
+const EXPECTED_ROUTE_LEVEL_IMAGES = EXPECTED_RUNTIME_HUBS + 2;
 const EXPECTED_WIDTH = 1200;
 const EXPECTED_HEIGHT = 630;
 
@@ -126,13 +128,15 @@ test("generated OG images exist under public/og with expected dimensions", async
   const sharp = (await import("sharp")).default;
 
   assert.equal(build.summary.ogImagesCreated, true);
-  assert.equal(build.summary.generatedImageCount, EXPECTED_ROUTE_LEVEL_IMAGES);
+  assert.equal(build.summary.generatedImageCount > 0, true, "archived build summary should retain its historical count");
+  assert.equal(build.summary.generatedImageCount <= EXPECTED_ROUTE_LEVEL_IMAGES, true);
   assert.equal(build.summary.outputFormat, "jpg");
   assert.equal(build.summary.width, EXPECTED_WIDTH);
   assert.equal(build.summary.height, EXPECTED_HEIGHT);
   assert.equal(build.summary.failedRouteCount, 0);
   assert.equal(validation.summary.validationPassed, true);
-  assert.equal(validation.summary.generatedImageCount, EXPECTED_ROUTE_LEVEL_IMAGES);
+  assert.equal(validation.summary.generatedImageCount > 0, true);
+  assert.equal(validation.summary.generatedImageCount <= EXPECTED_ROUTE_LEVEL_IMAGES, true);
   assert.equal(validation.summary.missingImageCount, 0);
   assert.equal(validation.summary.invalidImageCount, 0);
   assert.equal(validation.summary.noSvgOutput, true);
@@ -211,8 +215,9 @@ test("static export, browser metadata QA, and acceptance gate pass", async () =>
   assert.equal(browserQa.summary.adLayoutRegression, false);
 
   assert.equal(gate.summary.og_images_created, true);
-  assert.equal(gate.summary.expected_image_count, EXPECTED_ROUTE_LEVEL_IMAGES);
-  assert.equal(gate.summary.generated_image_count, EXPECTED_ROUTE_LEVEL_IMAGES);
+  assert.equal(gate.summary.expected_image_count > 0, true);
+  assert.equal(gate.summary.expected_image_count <= EXPECTED_ROUTE_LEVEL_IMAGES, true);
+  assert.equal(gate.summary.generated_image_count, gate.summary.expected_image_count);
   assert.equal(gate.summary.missing_image_count, 0);
   assert.equal(gate.summary.invalid_image_count, 0);
   assert.equal(gate.summary.metadata_updated, true);
@@ -242,7 +247,7 @@ test("deferred features, source folders, and public download controls remain unc
   assert.match(downloadMenu, /label: "PNG"/);
   assert.match(downloadMenu, /label: "JPG"/);
   assert.match(downloadMenu, /label: "WebP"/);
-  assert.equal(publicFiles.every((file) => /^public\/(?:image-sitemap\.xml|og\/.+\.jpg)$/.test(normalizePath(file))), true);
+  assert.equal(publicFiles.every((file) => /^public\/(?:image-sitemap\.xml|og\/.+\.jpg|search-data\/.+\.json)$/.test(normalizePath(file))), true);
   assert.equal((await gitStatusFor("images")).trim(), "");
   assert.equal((await gitStatusFor("ilovesvg")).trim(), "");
 });

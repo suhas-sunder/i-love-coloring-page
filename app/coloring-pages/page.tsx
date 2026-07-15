@@ -1,23 +1,17 @@
 import type { Metadata } from "next";
 
-import { AdRail } from "@/components/ads/AdRail";
-import { AdSlot } from "@/components/ads/AdSlot";
+import { PageAdSlot } from "@/components/ads/PageAdSlot";
+import { CollectionPageHeader } from "@/components/coloring/CollectionPageHeader";
 import { GallerySearch } from "@/components/coloring/GallerySearch";
 import { HubCard } from "@/components/coloring/HubCard";
-import { HubHero } from "@/components/coloring/HubHero";
-import { RotatingFeaturedGrid } from "@/components/coloring/RotatingFeaturedGrid";
-import { SeoContentSection } from "@/components/coloring/SeoContentSection";
 import { JsonLdScript } from "@/components/seo/JsonLdScript";
+import { PublicPageShell } from "@/components/site/PublicPageShell";
+import { SupportingInformation } from "@/components/site/SupportingInformation";
 import {
   getAllPhase1Hubs,
-  getFeaturedRotationCandidateItems,
-  getGeneratedFeaturedItems,
   getHubFilterTags,
-  getHubSearchEntries,
   getPreviewItems,
-  getPublicItemsForHub,
   getRootHub,
-  getSeoPageContent,
 } from "@/lib/coloring/data";
 import { buildColoringMetadata } from "@/lib/coloring/metadata";
 import { buildGalleryLandingJsonLd } from "@/lib/seo/pageJsonLd";
@@ -26,153 +20,65 @@ export function generateMetadata(): Metadata {
   return buildColoringMetadata("/coloring-pages");
 }
 
+const SUPPORTING_HUB_SLUGS = ["animals", "plushies", "mandalas", "for-kids", "detailed-for-adults", "christmas", "fantasy", "flowers"];
+
 export default function ColoringPagesLanding() {
   const rootHub = getRootHub();
-  const seoContent = getSeoPageContent("/coloring-pages");
-  const featuredItems = getGeneratedFeaturedItems(rootHub);
-  const featuredRotationCandidates = getFeaturedRotationCandidateItems(rootHub, 192);
-  const rootHubSlug = rootHub.slug || "coloring-pages";
   const previewItems = getPreviewItems(rootHub).slice(0, 48);
-  const allRootItems = getPublicItemsForHub(rootHub);
-  const searchEntries = getHubSearchEntries(rootHub);
-  const { tags, tabs } = getHubFilterTags(rootHub);
-  const hubs = getAllPhase1Hubs().filter((hub) => hub.route !== "/coloring-pages");
-  const featuredHubs = hubs.filter((hub) => ["plushies", "animals", "mandalas", "anime-girls", "chibi", "fantasy", "christmas", "halloween"].includes(hub.slug));
-  const popularThemes = hubs.filter((hub) => ["christmas", "halloween", "birthday", "holidays", "fantasy", "mythology", "medieval-fantasy", "st-patricks-day"].includes(hub.slug));
-  const subjectHubs = hubs.filter((hub) => ["animals", "plushies", "dinosaurs", "prehistoric-animals", "plants", "indoor-plants", "sea-life", "vehicles"].includes(hub.slug));
-  const styleHubs = hubs.filter((hub) => ["mandalas", "geometric", "cute", "chibi", "kawaii", "detailed-for-adults", "for-kids", "easy"].includes(hub.slug));
-  const heroRelatedLinks = featuredHubs.slice(0, 6).map((hub) => ({
-    label: hub.title.replace(/ Coloring Pages$/, ""),
-    href: hub.route,
-    assetCount: hub.assetCount,
-  }));
+  const { tags } = getHubFilterTags(rootHub);
+  const hubsBySlug = new Map(getAllPhase1Hubs().map((hub) => [hub.slug, hub]));
+  const supportingHubs = SUPPORTING_HUB_SLUGS.map((slug) => hubsBySlug.get(slug)).filter(Boolean);
+  const intro = `Browse, search, print, and download from ${rootHub.assetCount.toLocaleString()} available printable coloring pages.`;
 
   return (
-    <main className="page-shell">
+    <PublicPageShell pageFamily="gallery" className="gallery-landing-page">
       <JsonLdScript
         id="jsonld-coloring-pages"
-        data={buildGalleryLandingJsonLd({
-          hub: rootHub,
-          visibleItems: featuredItems.length > 0 ? featuredItems : previewItems,
-          description: "Browse printable coloring pages by subject, season, style, and difficulty. Search the gallery, pick a favorite, then download or print.",
-        })}
-      />
-      <AdSlot slotId="coloring-pages-header-banner" />
-      <AdRail side="left" slotId="rail-left-desktop" />
-      <AdRail side="right" slotId="rail-right-desktop" />
-      <HubHero
-        hub={rootHub}
-        intro="Browse printable coloring pages by subject, season, style, and difficulty. Search the gallery, pick a favorite, then download or print."
-        quickLinks={[
-          { label: "Browse gallery", href: "#gallery" },
-          { label: "Featured pages", href: "#featured-pages" },
-          { label: "Related collections", href: "#related-collections" },
-          { label: "Printing tips", href: "#about-this-collection" },
-        ]}
-        relatedTitle="Popular collections"
-        relatedLinks={heroRelatedLinks}
+        data={buildGalleryLandingJsonLd({ hub: rootHub, visibleItems: previewItems, description: intro })}
       />
 
-      <section className="content-section section-band featured-band" aria-labelledby="featured-pages">
-        <div className="section-inner">
-          <div className="section-heading-row">
-            <div>
-              <h2 className="section-title" id="featured-pages">Featured pages</h2>
-              <p>A quick shelf of printable pages so the library starts with artwork, not a directory.</p>
-            </div>
-          </div>
-          <RotatingFeaturedGrid
-            fallbackItems={featuredItems}
-            candidateItems={featuredRotationCandidates}
-            mode="hub-three-day"
-            hubSlug={rootHubSlug}
-            itemHrefBasePath={rootHub.route}
-            priorityCount={6}
-          />
-        </div>
-      </section>
+      <CollectionPageHeader hub={rootHub} title="Printable Coloring Pages" intro={intro} />
+      <PageAdSlot pageFamily="gallery" placement="post-header-banner" />
 
-      <AdSlot slotId="coloring-pages-after-featured" />
-
-      <section className="content-section gallery-section" id="gallery">
-        <div className="section-heading-row">
+      <section className="content-section gallery-section" id="gallery" aria-labelledby="gallery-title" data-page-section="gallery">
+        <div className="section-heading-row gallery-heading-row">
           <div>
-            <h2 className="section-title">Find a coloring page</h2>
-            <p>Search across the main library or use a filter for style, season, subject, or difficulty.</p>
+            <h2 className="section-title" id="gallery-title">Find a coloring page</h2>
+            <p>Search the library first, or use a subject, style, season, or difficulty filter.</p>
           </div>
         </div>
         <GallerySearch
           hubTitle={rootHub.title}
           totalItems={rootHub.assetCount}
           pageItems={previewItems}
-          allItems={allRootItems}
-          featuredItems={featuredItems}
-          searchEntries={searchEntries}
+          searchDataPath="/search-data/all.json"
           filterTags={tags}
-          itemHrefBasePath={rootHub.route}
-          tabs={tabs}
         />
       </section>
 
-      <AdSlot slotId="coloring-pages-lower-content" />
-
-      <section className="content-section collection-section" id="related-collections">
+      <section className="content-section collection-section" aria-labelledby="browse-collections-title" data-page-section="supporting-browse">
         <div className="section-heading-row">
           <div>
-            <h2 className="section-title">Popular coloring page collections</h2>
-            <p>Start with the broad collections people usually need first: animals, plushies, mandalas, fantasy themes, and holidays.</p>
+            <h2 className="section-title" id="browse-collections-title">Browse useful collections</h2>
+            <p>Move into a focused public gallery when a broad search is more than you need.</p>
           </div>
         </div>
         <div className="hub-link-grid">
-          {featuredHubs.map((hub) => (
-            <HubCard key={hub.hubId} hub={hub} />
-          ))}
+          {supportingHubs.map((hub) => <HubCard key={hub!.hubId} hub={hub!} />)}
         </div>
       </section>
 
-      <section className="content-section split-section">
-        <div>
-            <h2 className="section-title">Seasonal favorites</h2>
-          <p className="section-copy">Find holiday pages and fantasy themes for classrooms, parties, or weekend printing.</p>
-        </div>
-        <div className="hub-link-grid hub-link-grid-compact">
-          {popularThemes.map((hub) => (
-            <HubCard key={hub.hubId} hub={hub} compact />
-          ))}
-        </div>
-      </section>
+      <SupportingInformation
+        pageFamily="gallery"
+        title="How to use the gallery"
+        intro="Search and filters change only the current browser view; every normal image and title still opens one canonical printable page."
+        sections={[
+          { title: "Choose a page", body: "Use the search field for a subject or select a filter for a broader group. Clear the controls to return to the original static gallery view." },
+          { title: "Print or download", body: "Open a printable page for its larger preview. Print is separate from PNG, JPG, and WebP download preparation." },
+        ]}
+      />
 
-      <section className="content-section section-band">
-        <div className="section-inner">
-          <div className="section-heading-row">
-            <div>
-              <h2 className="section-title">Browse by subject</h2>
-              <p>Go straight to familiar subjects like animals, plants, vehicles, dinosaurs, sea life, and plushies.</p>
-            </div>
-          </div>
-          <div className="hub-link-grid">
-            {subjectHubs.map((hub) => (
-              <HubCard key={hub.hubId} hub={hub} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="content-section">
-        <div className="section-heading-row">
-          <div>
-            <h2 className="section-title">Style and difficulty</h2>
-            <p>Choose simple pages, detailed designs, cute art, chibi characters, geometric patterns, or mandalas.</p>
-          </div>
-        </div>
-        <div className="hub-link-grid">
-          {styleHubs.map((hub) => (
-            <HubCard key={hub.hubId} hub={hub} />
-          ))}
-        </div>
-      </section>
-
-      <SeoContentSection content={seoContent} id="about-this-collection" />
-    </main>
+      <PageAdSlot pageFamily="gallery" placement="related-banner" />
+    </PublicPageShell>
   );
 }
