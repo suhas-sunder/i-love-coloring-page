@@ -63,7 +63,7 @@ function selectRepresentatives(records) {
     records.find((record) => record.primaryCategorySlug === "mandalas"),
     records.find((record) => record.primaryCategorySlug === "anime-girls"),
     records.find((record) => /christmas|halloween/i.test(record.publicTitle)),
-    [...records].sort((left, right) => right.publicTitle.length - left.publicTitle.length || left.assetId.localeCompare(right.assetId))[0],
+    [...records].sort((left, right) => right.displayTitle.length - left.displayTitle.length || left.assetId.localeCompare(right.assetId))[0],
   ].filter(Boolean);
   return candidates.filter((record, index) => candidates.findIndex((candidate) => candidate.canonicalPath === record.canonicalPath) === index);
 }

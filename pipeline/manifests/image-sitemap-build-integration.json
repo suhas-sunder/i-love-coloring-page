@@ -12,7 +12,7 @@
     "xmlCopiedByStaticExportFromPublic": true,
     "noMediaCopiedToPublic": true
   },
-  "packageBuildScript": "node pipeline/scripts/build-runtime-printables.mjs && node pipeline/scripts/build-static-search-data.mjs && node pipeline/scripts/build-image-sitemap-data.mjs && node pipeline/scripts/build-image-sitemap-xml.mjs && next build",
+  "packageBuildScript": "node pipeline/scripts/apply-runtime-taxonomy-policy.mjs && node pipeline/scripts/apply-runtime-public-content-quality.mjs && node pipeline/scripts/build-runtime-printables.mjs && node pipeline/scripts/build-printable-title-quality.mjs && node pipeline/scripts/build-static-search-data.mjs && node pipeline/scripts/build-image-sitemap-data.mjs && node pipeline/scripts/build-image-sitemap-xml.mjs && next build && node pipeline/scripts/build-trust-ads-readiness.mjs",
   "robotsSitemapUrls": [
     "https://www.ilovecoloringpage.com/sitemap.xml",
     "https://www.ilovecoloringpage.com/image-sitemap.xml"

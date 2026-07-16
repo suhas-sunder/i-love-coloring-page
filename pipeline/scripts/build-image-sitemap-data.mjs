@@ -44,7 +44,7 @@ export function buildImageSitemapData({ runtimePrintables, frozenRoutes, deferre
       const frozenRoute = routeByAssetId.get(record.assetId);
       const pageUrl = publicPageUrl(record.canonicalPath);
       const imageUrl = resolveWebpUrl(record.webpPath);
-      const imageTitle = normalizePublicTitle(record.publicTitle);
+      const imageTitle = normalizePublicTitle(record.displayTitle);
       const errors = validateEntry({ record, frozenRoute, deferredIds, pageUrl, imageUrl, imageTitle });
       return {
         assetId: record.assetId,
@@ -71,7 +71,7 @@ export function buildImageSitemapData({ runtimePrintables, frozenRoutes, deferre
       description:
         "Each runtime printable uses its frozen canonicalPath as the HTML page location and its centralized runtime WebP path as the sole image location.",
       ordering: "canonicalPath ascending, then assetId ascending",
-      titleSource: "runtime-printables.records.publicTitle",
+      titleSource: "runtime-printables.records.displayTitle",
     },
     generator: {
       owner: "pipeline/scripts/build-image-sitemap-data.mjs + pipeline/scripts/build-image-sitemap-xml.mjs",

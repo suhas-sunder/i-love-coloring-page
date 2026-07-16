@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "homepageMinimumAssets": 48,
+  "navigationMinimumAssets": 24,
+  "thinHubMaximumAssets": 11,
+  "maximumThinHubsPerRelatedList": 1,
+  "thinHubRequiresDirectMembership": true,
+  "parentOverrides": [
+    {
+      "hubId": "hub_bridges",
+      "previousParentHubId": "hub_landmarks",
+      "parentHubId": "hub_buildings"
+    },
+    {
+      "hubId": "hub_world_landmarks",
+      "previousParentHubId": "hub_landmarks",
+      "parentHubId": "hub_buildings"
+    },
+    {
+      "hubId": "hub_palm",
+      "previousParentHubId": "hub_flowers",
+      "parentHubId": "hub_indoor_plants"
+    }
+  ],
+  "promotionClusters": [
+    {
+      "id": "adult-style",
+      "preferredHubId": "hub_detailed_for_adults",
+      "hubIds": [
+        "hub_detailed_for_adults",
+        "hub_mandalas",
+        "hub_geometric"
+      ],
+      "exactDuplicateHubIds": [
+        "hub_detailed_for_adults",
+        "hub_mandalas"
+      ]
+    },
+    {
+      "id": "audience-difficulty",
+      "preferredHubId": "hub_for_kids",
+      "hubIds": [
+        "hub_for_kids",
+        "hub_easy"
+      ]
+    },
+    {
+      "id": "mammoth",
+      "preferredHubId": "hub_mammoths",
+      "hubIds": [
+        "hub_mammoths",
+        "hub_woolly_mammoth"
+      ]
+    },
+    {
+      "id": "birthday",
+      "preferredHubId": "hub_birthday",
+      "hubIds": [
+        "hub_birthday",
+        "hub_birthday_celebration"
+      ]
+    }
+  ],
+  "preservationBaseline": {
+    "runtimePrintableCount": 6352,
+    "publicHubCount": 163,
+    "paginationRouteCount": 451,
+    "regularSitemapUrlCount": 6523,
+    "imageSitemapPairCount": 6352,
+    "staticOutputCount": 6979,
+    "canonicalRouteFieldsSha256": "c9f0fc577efe9e616d46720d8a8cd84ae3fa110f5d948f3d7601bf9faca61c89",
+    "hubMembershipSha256": "b07b6a7cf043434fcd49a55b9e3cdf0d4a54eda5b88bb306cd991fc2749ebcee"
+  },
+  "thinHubExposureBaseline": {
+    "ankylosaurus": 11,
+    "bamboo": 120,
+    "bulldog": 8,
+    "collie": 8,
+    "daisy": 102,
+    "dodo": 616,
+    "forget-me-not": 10,
+    "gingerbread": 81,
+    "iguanodon": 198,
+    "leprechaun": 17,
+    "lotus": 5,
+    "mosasaurus": 9,
+    "orchid": 9,
+    "palm": 6,
+    "plesiosaurus": 9,
+    "poppy": 92,
+    "pteranodon": 6,
+    "pterodactyl": 9,
+    "robots": 9,
+    "roses": 7,
+    "salmon": 11,
+    "santa": 217,
+    "trick-or-treat": 157
+  }
+}

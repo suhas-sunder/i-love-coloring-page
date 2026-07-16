@@ -9,10 +9,11 @@ import siteMapJson from "@/generated/coloring/runtime-site-map.json";
 import seoPagesJson from "@/generated/coloring/runtime-seo-pages.json";
 import socialMetadataJson from "@/generated/coloring/runtime-social-metadata.json";
 import printablesJson from "@/generated/coloring/runtime-printables.json";
-import titleOverridesJson from "@/generated/coloring/title-overrides.json";
 import { getSiteUrl as getConfiguredSiteUrl } from "@/lib/site/siteConfig";
 
 import { getPrintablePath } from "./printablePath";
+import { getPrintableTitleModel } from "./printableTitles";
+import { selectPromotedHubs } from "./taxonomyPromotion";
 import type {
   ColoringHub,
   ColoringItem,
@@ -22,6 +23,7 @@ import type {
   HubGalleryUx,
   PagedGallery,
   PublicColoringItem,
+  RuntimePrintable,
   SeoPageContent,
   SeoPageMetadata,
   SiteMapEntry,
@@ -57,14 +59,6 @@ type SearchIndexManifest = {
   entries: GallerySearchEntry[];
 };
 
-type TitleOverridesManifest = {
-  overrides: Array<{
-    assetId: string;
-    cleanTitle: string;
-    cleanAltText: string;
-  }>;
-};
-
 type SeoPagesManifest = {
   pages: SeoPageMetadata[];
 };
@@ -98,7 +92,7 @@ type SocialMetadataManifest = {
 };
 
 type PrintablesManifest = {
-  records: Array<{ assetId: string; canonicalPath: string; publicTitle: string; altText: string }>;
+  records: RuntimePrintable[];
 };
 
 const hubsManifest = hubsJson as HubsManifest;
@@ -108,7 +102,6 @@ const siteMapManifest = siteMapJson as SiteMapManifest;
 const hubFeaturedItemsManifest = hubFeaturedItemsJson as HubFeaturedItemsManifest;
 const hubFilterTagsManifest = hubFilterTagsJson as HubFilterTagsManifest;
 const searchIndexManifest = searchIndexJson as SearchIndexManifest;
-const titleOverridesManifest = titleOverridesJson as TitleOverridesManifest;
 const seoPagesManifest = seoPagesJson as SeoPagesManifest;
 const hubSeoContentManifest = hubSeoContentJson as HubSeoContentManifest;
 const socialMetadataManifest = socialMetadataJson as SocialMetadataManifest;
@@ -120,21 +113,21 @@ const itemsById = new Map(itemsManifest.items.map((item) => [item.assetId, item]
 const featuredByHubId = new Map(hubFeaturedItemsManifest.hubs.map((entry) => [entry.hubId, entry.assetIds]));
 const filterUxByHubId = new Map(hubFilterTagsManifest.hubs.map((entry) => [entry.hubId, entry]));
 const searchEntryByAssetId = new Map(searchIndexManifest.entries.map((entry) => [entry.assetId, entry]));
-const titleOverrideByAssetId = new Map(titleOverridesManifest.overrides.map((entry) => [entry.assetId, entry]));
 const seoPageByPath = new Map(seoPagesManifest.pages.map((entry) => [entry.path, entry]));
 const hubSeoContentByHubId = new Map(hubSeoContentManifest.hubs.map((entry) => [entry.hubId, entry]));
 const socialMetadataByPath = new Map(socialMetadataManifest.pages.map((entry) => [entry.path, entry]));
 const printableByAssetId = new Map(printablesManifest.records.map((entry) => [entry.assetId, entry]));
 
 function toPublicItem(item: ColoringItem): PublicColoringItem {
-  const override = titleOverrideByAssetId.get(item.assetId);
   const printable = printableByAssetId.get(item.assetId);
   if (!printable) throw new Error(`Missing canonical printable record for ${item.assetId}`);
+  const titleModel = getPrintableTitleModel(printable);
 
   return {
     assetId: item.assetId,
-    title: override?.cleanTitle || printable.publicTitle,
-    altText: override?.cleanAltText || printable.altText,
+    title: titleModel.displayTitle,
+    altText: titleModel.shortAccessibleTitle,
+    downloadBaseName: titleModel.downloadBaseName,
     assetSubpaths: item.assetSubpaths,
     canonicalPath: printable.canonicalPath,
   };
@@ -256,17 +249,17 @@ export function getPreviewItems(hub: ColoringHub) {
 }
 
 export function getRelatedHubs(hub: ColoringHub, limit = 8) {
-  return hub.relatedHubIds
+  const candidates = hub.relatedHubIds
     .map((hubId) => hubsById.get(hubId))
-    .filter((related): related is ColoringHub => Boolean(related))
-    .slice(0, limit);
+    .filter((related): related is ColoringHub => Boolean(related));
+  return selectPromotedHubs(hub, candidates, limit);
 }
 
 export function getChildHubs(hub: ColoringHub, limit = 8) {
-  return hub.childHubIds
+  const candidates = hub.childHubIds
     .map((hubId) => hubsById.get(hubId))
-    .filter((child): child is ColoringHub => Boolean(child))
-    .slice(0, limit);
+    .filter((child): child is ColoringHub => Boolean(child));
+  return selectPromotedHubs(hub, candidates, limit);
 }
 
 export function getParentHub(hub: ColoringHub) {

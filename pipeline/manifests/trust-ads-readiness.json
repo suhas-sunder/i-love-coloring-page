@@ -1,0 +1,692 @@
+{
+  "reportDate": "2026-07-15",
+  "runId": "trust-ads-readiness",
+  "trustRoutes": [
+    {
+      "path": "/about",
+      "metadataTitle": "About I Love Coloring Page | I Love Coloring Page",
+      "metadataDescription": "Learn about I Love Coloring Page, a static library for browsing, printing, and downloading coloring pages.",
+      "h1Count": 1,
+      "canonical": "https://www.ilovecoloringpage.com/about",
+      "indexable": true,
+      "footerLinked": true,
+      "lastUpdated": null,
+      "contactExpected": false,
+      "contactEmailPresent": false,
+      "logicalAdvertisementSlots": 1,
+      "findings": {
+        "visibleDraftLanguage": false,
+        "placeholderContact": false,
+        "outdatedPngOnlyClaim": false,
+        "liveAdvertisingClaim": false,
+        "activeGoogleCookieClaim": false,
+        "unsupportedAnalyticsClaim": false,
+        "internalWording": false,
+        "h1Mismatch": false,
+        "canonicalMismatch": false,
+        "missingMetadata": false,
+        "missingVerifiedContact": false,
+        "unexpectedForm": false
+      }
+    },
+    {
+      "path": "/contact",
+      "metadataTitle": "Contact I Love Coloring Page | I Love Coloring Page",
+      "metadataDescription": "Contact I Love Coloring Page about site problems, accessibility, corrections, privacy, rights concerns, or partnerships.",
+      "h1Count": 1,
+      "canonical": "https://www.ilovecoloringpage.com/contact",
+      "indexable": true,
+      "footerLinked": true,
+      "lastUpdated": null,
+      "contactExpected": true,
+      "contactEmailPresent": true,
+      "logicalAdvertisementSlots": 1,
+      "findings": {
+        "visibleDraftLanguage": false,
+        "placeholderContact": false,
+        "outdatedPngOnlyClaim": false,
+        "liveAdvertisingClaim": false,
+        "activeGoogleCookieClaim": false,
+        "unsupportedAnalyticsClaim": false,
+        "internalWording": false,
+        "h1Mismatch": false,
+        "canonicalMismatch": false,
+        "missingMetadata": false,
+        "missingVerifiedContact": false,
+        "unexpectedForm": false
+      }
+    },
+    {
+      "path": "/privacy",
+      "metadataTitle": "Privacy Policy | I Love Coloring Page",
+      "metadataDescription": "How I Love Coloring Page handles current static-site requests and how future features would change its privacy practices.",
+      "h1Count": 1,
+      "canonical": "https://www.ilovecoloringpage.com/privacy",
+      "indexable": true,
+      "footerLinked": true,
+      "lastUpdated": "July 15, 2026",
+      "contactExpected": true,
+      "contactEmailPresent": true,
+      "logicalAdvertisementSlots": 1,
+      "findings": {
+        "visibleDraftLanguage": false,
+        "placeholderContact": false,
+        "outdatedPngOnlyClaim": false,
+        "liveAdvertisingClaim": false,
+        "activeGoogleCookieClaim": false,
+        "unsupportedAnalyticsClaim": false,
+        "internalWording": false,
+        "h1Mismatch": false,
+        "canonicalMismatch": false,
+        "missingMetadata": false,
+        "missingVerifiedContact": false,
+        "unexpectedForm": false
+      }
+    },
+    {
+      "path": "/terms",
+      "metadataTitle": "Terms of Use | I Love Coloring Page",
+      "metadataDescription": "Terms for browsing, printing, and downloading coloring pages from I Love Coloring Page.",
+      "h1Count": 1,
+      "canonical": "https://www.ilovecoloringpage.com/terms",
+      "indexable": true,
+      "footerLinked": true,
+      "lastUpdated": "July 15, 2026",
+      "contactExpected": true,
+      "contactEmailPresent": true,
+      "logicalAdvertisementSlots": 1,
+      "findings": {
+        "visibleDraftLanguage": false,
+        "placeholderContact": false,
+        "outdatedPngOnlyClaim": false,
+        "liveAdvertisingClaim": false,
+        "activeGoogleCookieClaim": false,
+        "unsupportedAnalyticsClaim": false,
+        "internalWording": false,
+        "h1Mismatch": false,
+        "canonicalMismatch": false,
+        "missingMetadata": false,
+        "missingVerifiedContact": false,
+        "unexpectedForm": false
+      }
+    },
+    {
+      "path": "/affiliate-disclosure",
+      "metadataTitle": "Affiliate Disclosure | I Love Coloring Page",
+      "metadataDescription": "Current affiliate-link status and disclosure practices for I Love Coloring Page.",
+      "h1Count": 1,
+      "canonical": "https://www.ilovecoloringpage.com/affiliate-disclosure",
+      "indexable": true,
+      "footerLinked": true,
+      "lastUpdated": "July 15, 2026",
+      "contactExpected": true,
+      "contactEmailPresent": true,
+      "logicalAdvertisementSlots": 1,
+      "findings": {
+        "visibleDraftLanguage": false,
+        "placeholderContact": false,
+        "outdatedPngOnlyClaim": false,
+        "liveAdvertisingClaim": false,
+        "activeGoogleCookieClaim": false,
+        "unsupportedAnalyticsClaim": false,
+        "internalWording": false,
+        "h1Mismatch": false,
+        "canonicalMismatch": false,
+        "missingMetadata": false,
+        "missingVerifiedContact": false,
+        "unexpectedForm": false
+      }
+    },
+    {
+      "path": "/editorial-policy",
+      "metadataTitle": "Editorial Policy | I Love Coloring Page",
+      "metadataDescription": "How I Love Coloring Page handles public titles, collections, corrections, and established page URLs.",
+      "h1Count": 1,
+      "canonical": "https://www.ilovecoloringpage.com/editorial-policy",
+      "indexable": true,
+      "footerLinked": true,
+      "lastUpdated": "July 15, 2026",
+      "contactExpected": true,
+      "contactEmailPresent": true,
+      "logicalAdvertisementSlots": 1,
+      "findings": {
+        "visibleDraftLanguage": false,
+        "placeholderContact": false,
+        "outdatedPngOnlyClaim": false,
+        "liveAdvertisingClaim": false,
+        "activeGoogleCookieClaim": false,
+        "unsupportedAnalyticsClaim": false,
+        "internalWording": false,
+        "h1Mismatch": false,
+        "canonicalMismatch": false,
+        "missingMetadata": false,
+        "missingVerifiedContact": false,
+        "unexpectedForm": false
+      }
+    }
+  ],
+  "publicContactStatus": {
+    "available": true,
+    "status": "verified_repository_public_contact",
+    "publicContactEmail": "admin@ilovecoloringpage.com",
+    "consistentAcrossRequiredTrustRoutes": true
+  },
+  "placeholderContactFindings": [],
+  "liveAdvertisingStatus": {
+    "active": false,
+    "findingCount": 0
+  },
+  "analyticsStatus": {
+    "active": false,
+    "findingCount": 0
+  },
+  "affiliateStatus": {
+    "active": false,
+    "findingCount": 0
+  },
+  "cmpStatus": {
+    "active": false,
+    "findingCount": 0
+  },
+  "publisherIdStatus": {
+    "active": false,
+    "findingCount": 0
+  },
+  "adsTxtStatus": {
+    "present": false,
+    "findingCount": 0
+  },
+  "ageTreatmentDecisionStatus": {
+    "decided": false,
+    "classification": "Owner/legal review required"
+  },
+  "trustPageContentFindings": {
+    "findingCount": 0,
+    "uniqueMetadata": true,
+    "visibleDraftLabelFindingCount": 0,
+    "placeholderEmailFindingCount": 0
+  },
+  "placementFindings": {
+    "pageFamilies": [
+      {
+        "family": "homepage",
+        "route": "/",
+        "expectedLayout": "full",
+        "expectedLogicalSlots": 6,
+        "actualLogicalSlots": 6,
+        "uniqueLogicalSlots": 6,
+        "slotIds": [
+          "home-header-banner",
+          "rail-left-desktop",
+          "rail-right-desktop",
+          "home-after-hero",
+          "home-supporting-square",
+          "home-lower-content"
+        ],
+        "meaningfulPublisherContent": true
+      },
+      {
+        "family": "main-gallery",
+        "route": "/coloring-pages",
+        "expectedLayout": "full",
+        "expectedLogicalSlots": 6,
+        "actualLogicalSlots": 6,
+        "uniqueLogicalSlots": 6,
+        "slotIds": [
+          "coloring-pages-header-banner",
+          "rail-left-desktop",
+          "rail-right-desktop",
+          "coloring-pages-after-featured",
+          "coloring-pages-supporting-square",
+          "coloring-pages-lower-content"
+        ],
+        "meaningfulPublisherContent": true
+      },
+      {
+        "family": "hub-page-one",
+        "route": "/coloring-pages/animals",
+        "expectedLayout": "full",
+        "expectedLogicalSlots": 6,
+        "actualLogicalSlots": 6,
+        "uniqueLogicalSlots": 6,
+        "slotIds": [
+          "hub-header-banner",
+          "rail-left-desktop",
+          "rail-right-desktop",
+          "hub-post-header-banner",
+          "hub-supporting-square",
+          "hub-lower-content"
+        ],
+        "meaningfulPublisherContent": true
+      },
+      {
+        "family": "hub-pagination",
+        "route": "/coloring-pages/animals/page/2",
+        "expectedLayout": "condensed",
+        "expectedLogicalSlots": 3,
+        "actualLogicalSlots": 3,
+        "uniqueLogicalSlots": 3,
+        "slotIds": [
+          "hub-header-banner",
+          "hub-post-header-banner",
+          "hub-after-gallery"
+        ],
+        "meaningfulPublisherContent": true
+      },
+      {
+        "family": "printable-detail",
+        "route": "/printables/animals/animals-alligator-4feec8505a",
+        "expectedLayout": "full",
+        "expectedLogicalSlots": 6,
+        "actualLogicalSlots": 6,
+        "uniqueLogicalSlots": 6,
+        "slotIds": [
+          "printable-header-banner",
+          "rail-left-desktop",
+          "rail-right-desktop",
+          "printable-post-header-banner",
+          "printable-after-related",
+          "printable-supporting-square"
+        ],
+        "meaningfulPublisherContent": true
+      },
+      {
+        "family": "trust-page",
+        "route": "/privacy",
+        "expectedLayout": "condensed",
+        "expectedLogicalSlots": 1,
+        "actualLogicalSlots": 1,
+        "uniqueLogicalSlots": 1,
+        "slotIds": [
+          "trust-header-banner"
+        ],
+        "meaningfulPublisherContent": true
+      },
+      {
+        "family": "human-sitemap",
+        "route": "/sitemap",
+        "expectedLayout": "condensed",
+        "expectedLogicalSlots": 1,
+        "actualLogicalSlots": 1,
+        "uniqueLogicalSlots": 1,
+        "slotIds": [
+          "sitemap-header-banner"
+        ],
+        "meaningfulPublisherContent": true
+      },
+      {
+        "family": "static-404",
+        "route": "/404",
+        "expectedLayout": "none",
+        "expectedLogicalSlots": 0,
+        "actualLogicalSlots": 0,
+        "uniqueLogicalSlots": 0,
+        "slotIds": [],
+        "meaningfulPublisherContent": false
+      }
+    ],
+    "logicalSlotModelPreserved": true,
+    "stableIdentifiersPreserved": true,
+    "visibleModel": [
+      {
+        "viewport": "320x800",
+        "fullPageVisibleSlots": 1,
+        "condensedPageVisibleSlots": 1,
+        "trustAndSitemapVisibleSlots": 1,
+        "reservedPixelAreaFullPage": 16000,
+        "approximatePublisherContentArea": 256000,
+        "approximationMethod": "Viewport area is a conservative lower-bound proxy; full documents contain additional publisher content below the fold."
+      },
+      {
+        "viewport": "360x800",
+        "fullPageVisibleSlots": 1,
+        "condensedPageVisibleSlots": 1,
+        "trustAndSitemapVisibleSlots": 1,
+        "reservedPixelAreaFullPage": 16000,
+        "approximatePublisherContentArea": 288000,
+        "approximationMethod": "Viewport area is a conservative lower-bound proxy; full documents contain additional publisher content below the fold."
+      },
+      {
+        "viewport": "430x932",
+        "fullPageVisibleSlots": 1,
+        "condensedPageVisibleSlots": 1,
+        "trustAndSitemapVisibleSlots": 1,
+        "reservedPixelAreaFullPage": 16000,
+        "approximatePublisherContentArea": 400760,
+        "approximationMethod": "Viewport area is a conservative lower-bound proxy; full documents contain additional publisher content below the fold."
+      },
+      {
+        "viewport": "768x1024",
+        "fullPageVisibleSlots": 1,
+        "condensedPageVisibleSlots": 1,
+        "trustAndSitemapVisibleSlots": 1,
+        "reservedPixelAreaFullPage": 28080,
+        "approximatePublisherContentArea": 786432,
+        "approximationMethod": "Viewport area is a conservative lower-bound proxy; full documents contain additional publisher content below the fold."
+      },
+      {
+        "viewport": "1366x900",
+        "fullPageVisibleSlots": 1,
+        "condensedPageVisibleSlots": 1,
+        "trustAndSitemapVisibleSlots": 1,
+        "reservedPixelAreaFullPage": 65520,
+        "approximatePublisherContentArea": 1229400,
+        "approximationMethod": "Viewport area is a conservative lower-bound proxy; full documents contain additional publisher content below the fold."
+      },
+      {
+        "viewport": "1536x960",
+        "fullPageVisibleSlots": 3,
+        "condensedPageVisibleSlots": 1,
+        "trustAndSitemapVisibleSlots": 1,
+        "reservedPixelAreaFullPage": 204720,
+        "approximatePublisherContentArea": 1474560,
+        "approximationMethod": "Viewport area is a conservative lower-bound proxy; full documents contain additional publisher content below the fold."
+      },
+      {
+        "viewport": "1920x1080",
+        "fullPageVisibleSlots": 3,
+        "condensedPageVisibleSlots": 1,
+        "trustAndSitemapVisibleSlots": 1,
+        "reservedPixelAreaFullPage": 257520,
+        "approximatePublisherContentArea": 2073600,
+        "approximationMethod": "Viewport area is a conservative lower-bound proxy; full documents contain additional publisher content below the fold."
+      }
+    ],
+    "actionControlSeparation": "Print and Download remain inside the printable main region; no placeholder is inside that region.",
+    "meaningfulContentSeparation": "Page headings, galleries, related content, or policy sections separate configured banner positions.",
+    "thinPageFindings": [],
+    "correction": "CSS visibility restored the accepted one-well small-screen/intermediate model and three-well wide-desktop model without removing logical slots or changing IDs."
+  },
+  "networkDomainFindings": [
+    {
+      "domain": "assets.ilovecoloringpage.com",
+      "purpose": "Required site asset delivery",
+      "pageFamilies": [
+        "gallery",
+        "home",
+        "hub",
+        "hub-pagination",
+        "printable"
+      ],
+      "activeOnInitialLoad": true,
+      "identifierRisk": "Routine request data may be processed; no site-installed tracking identifier was found.",
+      "privacyDisclosureStatus": "Disclosed as hosting, content-delivery, asset-delivery, and security infrastructure.",
+      "requiredForCoreFunctionality": true,
+      "ownerControlledDomain": true,
+      "blocker": false
+    }
+  ],
+  "integrationFindings": {
+    "liveAdvertising": false,
+    "publisherId": false,
+    "adUnitId": false,
+    "verificationTag": false,
+    "analytics": false,
+    "cmp": false,
+    "consentMode": false,
+    "affiliateTracking": false,
+    "siteCookieCode": false
+  },
+  "accountReadiness": {
+    "adsTxtPresent": false,
+    "apiDirectoryPresent": false,
+    "liveAdvertisingActive": false,
+    "verifiedPublisherIdExists": false,
+    "cmpDecisionExists": false,
+    "consentModeActive": false,
+    "siteCookieCodeActive": false
+  },
+  "ageTreatmentFindings": [
+    {
+      "routeGroup": "/coloring-pages/for-kids",
+      "publicLabel": "Coloring Pages for Kids",
+      "classification": "Explicit child-oriented labeling",
+      "audienceSignals": "Children are named directly; family, teacher, and caregiver use is also plausible.",
+      "currentThirdPartyCollection": "Routine hosting or asset request processing only; no live advertising or analytics was found.",
+      "currentAdvertisingState": "Inert placeholders only",
+      "futureAgeTreatmentDecisionRequired": true
+    },
+    {
+      "routeGroup": "/coloring-pages/easy",
+      "publicLabel": "Easy Coloring Pages",
+      "classification": "Mixed or ambiguous audience",
+      "audienceSignals": "Difficulty wording can appeal to children, beginners, families, or adults.",
+      "currentThirdPartyCollection": "Routine hosting or asset request processing only; no live advertising or analytics was found.",
+      "currentAdvertisingState": "Inert placeholders only",
+      "futureAgeTreatmentDecisionRequired": true
+    },
+    {
+      "routeGroup": "chibi, cute, kawaii, and plushies collections",
+      "publicLabel": "Style collections",
+      "classification": "Mixed or ambiguous audience",
+      "audienceSignals": "Visual and subject cues may appeal across ages.",
+      "currentThirdPartyCollection": "Routine hosting or asset request processing only; no live advertising or analytics was found.",
+      "currentAdvertisingState": "Inert placeholders only",
+      "futureAgeTreatmentDecisionRequired": true
+    },
+    {
+      "routeGroup": "animals and seasonal collections",
+      "publicLabel": "Subject and holiday collections",
+      "classification": "Mixed or ambiguous audience",
+      "audienceSignals": "Subjects commonly serve children, families, teachers, and adults.",
+      "currentThirdPartyCollection": "Routine hosting or asset request processing only; no live advertising or analytics was found.",
+      "currentAdvertisingState": "Inert placeholders only",
+      "futureAgeTreatmentDecisionRequired": true
+    },
+    {
+      "routeGroup": "/coloring-pages/detailed-for-adults",
+      "publicLabel": "Detailed Coloring Pages for Adults",
+      "classification": "Owner/legal review required",
+      "audienceSignals": "The label names adults, while the surrounding library includes mixed-audience content.",
+      "currentThirdPartyCollection": "Routine hosting or asset request processing only; no live advertising or analytics was found.",
+      "currentAdvertisingState": "Inert placeholders only",
+      "futureAgeTreatmentDecisionRequired": true
+    },
+    {
+      "routeGroup": "/coloring-pages",
+      "publicLabel": "Printable Coloring Pages",
+      "classification": "Mixed or ambiguous audience",
+      "audienceSignals": "The general gallery combines audience, style, subject, and seasonal collections.",
+      "currentThirdPartyCollection": "Routine hosting or asset request processing only; no live advertising or analytics was found.",
+      "currentAdvertisingState": "Inert placeholders only",
+      "futureAgeTreatmentDecisionRequired": true
+    },
+    {
+      "routeGroup": "/printables/...",
+      "publicLabel": "Printable detail pages",
+      "classification": "Owner/legal review required",
+      "audienceSignals": "Audience signals depend on each page's title and collections.",
+      "currentThirdPartyCollection": "Routine hosting or asset request processing only; no live advertising or analytics was found.",
+      "currentAdvertisingState": "Inert placeholders only",
+      "futureAgeTreatmentDecisionRequired": true
+    },
+    {
+      "routeGroup": "trust and informational pages",
+      "publicLabel": "Site information",
+      "classification": "Clearly general informational page",
+      "audienceSignals": "These pages explain the site, policies, and contact details.",
+      "currentThirdPartyCollection": "Routine hosting or asset request processing only; no live advertising or analytics was found.",
+      "currentAdvertisingState": "Inert placeholders only",
+      "futureAgeTreatmentDecisionRequired": false
+    }
+  ],
+  "blockingIssues": [
+    {
+      "id": "owner.operator_identity",
+      "classification": "Ready after owner field",
+      "description": "Confirm the public operator name and whether a business or legal entity should be identified."
+    },
+    {
+      "id": "owner.mailing_address",
+      "classification": "Ready after owner field",
+      "description": "Decide whether a public mailing address is required or desired and provide only a verified address."
+    },
+    {
+      "id": "owner.governing_law",
+      "classification": "Ready after owner field",
+      "description": "Select governing-law language with qualified review before adding it to the Terms."
+    },
+    {
+      "id": "legal.audience_treatment",
+      "classification": "Ready after legal decision",
+      "description": "Decide child-directed, mixed-audience, or general-audience treatment, including explicitly child-oriented collections."
+    },
+    {
+      "id": "legal.policy_approval",
+      "classification": "Ready after legal decision",
+      "description": "Review and approve the Privacy Policy, Terms, permitted-use rules, and rights-removal wording."
+    },
+    {
+      "id": "legal.trademark_policy",
+      "classification": "Ready after legal decision",
+      "description": "Choose a policy for brand and trademark references in public titles."
+    },
+    {
+      "id": "ads.account_configuration",
+      "classification": "Ready after account configuration",
+      "description": "Supply verified account credentials, verification method, ads.txt line, ad-unit plan, and Auto Ads decision in a separate approved round."
+    },
+    {
+      "id": "ads.consent_and_age_configuration",
+      "classification": "Ready after account configuration",
+      "description": "Choose ad personalization, regional consent, CMP, and age-treatment configuration before live advertising."
+    },
+    {
+      "id": "external.production_validation",
+      "classification": "External verification required",
+      "description": "Validate account review, real creatives, production consent, production requests, and production asset-origin behavior externally."
+    }
+  ],
+  "ownerActions": [
+    {
+      "order": 1,
+      "description": "Confirm legal/operator identity and whether a business entity should be named.",
+      "classification": "Ready after owner field"
+    },
+    {
+      "order": 2,
+      "description": "Confirm that admin@ilovecoloringpage.com remains the approved public contact address.",
+      "classification": "Ready based on local evidence"
+    },
+    {
+      "order": 3,
+      "description": "Decide whether a public mailing address is required or desired.",
+      "classification": "Ready after owner field"
+    },
+    {
+      "order": 4,
+      "description": "Select a governing-law preference with qualified review.",
+      "classification": "Ready after owner field"
+    },
+    {
+      "order": 5,
+      "description": "Decide audience and age treatment, including child-oriented collections.",
+      "classification": "Ready after legal decision"
+    },
+    {
+      "order": 6,
+      "description": "Approve the Privacy Policy, Terms, permitted-use rules, removal language, and trademark policy.",
+      "classification": "Ready after legal decision"
+    },
+    {
+      "order": 7,
+      "description": "Choose personalized, non-personalized, or limited-ad strategy.",
+      "classification": "Ready after account configuration"
+    },
+    {
+      "order": 8,
+      "description": "Select a Google-certified CMP when the chosen regions and ad strategy require one.",
+      "classification": "Ready after account configuration"
+    },
+    {
+      "order": 9,
+      "description": "Obtain the actual publisher ID and choose the account-verification method.",
+      "classification": "Ready after account configuration"
+    },
+    {
+      "order": 10,
+      "description": "Create root ads.txt using the exact account-provided line and verify that it is public.",
+      "classification": "Ready after account configuration"
+    },
+    {
+      "order": 11,
+      "description": "Add live code only in a separately approved implementation round and test real creative dimensions and layout shift.",
+      "classification": "Blocked"
+    },
+    {
+      "order": 12,
+      "description": "Update the Privacy Policy with active vendors and actual practices before activation.",
+      "classification": "Ready after account configuration"
+    },
+    {
+      "order": 13,
+      "description": "Re-run network, accessibility, consent, age-treatment, and placement validation in production.",
+      "classification": "External verification required"
+    }
+  ],
+  "externalActions": [
+    "Complete any required legal or regulatory review.",
+    "Complete AdSense account and site review.",
+    "Obtain account-provided publisher, verification, ad-unit, and ads.txt values.",
+    "Verify real advertising creatives, consent behavior, network requests, and asset-origin behavior in production."
+  ],
+  "counts": {
+    "runtimePrintables": 6352,
+    "publicHubs": 163,
+    "paginationRoutes": 451,
+    "canonicalPrintablePages": 6352,
+    "trustRoutes": 6,
+    "regularSitemapUrls": 6523,
+    "imageSitemapPairs": 6352,
+    "staticOutputs": 6979,
+    "totalFiles": 70378,
+    "totalBytes": 1253613106,
+    "staticJavascriptBytes": 745760,
+    "globallyUniquePrintableDisplayTitles": 6352,
+    "globallyUniquePrintableMetadataTitles": 6352,
+    "deferredRuntimeLeakage": 0,
+    "canonicalMismatches": 0
+  },
+  "preservation": {
+    "frozenRouteFieldHash": "c9f0fc577efe9e616d46720d8a8cd84ae3fa110f5d948f3d7601bf9faca61c89",
+    "hubMembershipHash": "b07b6a7cf043434fcd49a55b9e3cdf0d4a54eda5b88bb306cd991fc2749ebcee"
+  },
+  "payload": {
+    "trustPages": {
+      "/about": {
+        "htmlBytes": 20668,
+        "rscBytes": 10867
+      },
+      "/contact": {
+        "htmlBytes": 21110,
+        "rscBytes": 11143
+      },
+      "/privacy": {
+        "htmlBytes": 28233,
+        "rscBytes": 14790
+      },
+      "/terms": {
+        "htmlBytes": 27775,
+        "rscBytes": 14655
+      },
+      "/affiliate-disclosure": {
+        "htmlBytes": 20693,
+        "rscBytes": 10921
+      },
+      "/editorial-policy": {
+        "htmlBytes": 22697,
+        "rscBytes": 11922
+      }
+    }
+  },
+  "safety": {
+    "volatileTimestampPresent": false,
+    "localPathFindingCount": 0,
+    "privateEmailFindingCount": 0,
+    "credentialFindingCount": 0,
+    "publisherIdExampleFindingCount": 0,
+    "browserProfilePathFindingCount": 0,
+    "screenshotPathFindingCount": 0,
+    "readinessReportEmbeddedInClientOutput": false
+  }
+}

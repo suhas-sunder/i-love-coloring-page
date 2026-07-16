@@ -205,6 +205,7 @@ export function buildImageObjectJsonLd(options: {
   url: string;
   width?: number;
   height?: number;
+  name?: string;
   caption?: string;
 }): JsonLdObject {
   return compactJsonLd({
@@ -213,6 +214,7 @@ export function buildImageObjectJsonLd(options: {
     contentUrl: options.url,
     width: options.width,
     height: options.height,
+    name: options.name,
     caption: options.caption,
   });
 }

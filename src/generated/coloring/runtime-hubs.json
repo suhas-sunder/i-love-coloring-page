@@ -13,7 +13,13 @@
     "runtimeAvailableRecords": 6352,
     "deferredRecordsHidden": 205,
     "longTailPromotedHubCount": 66,
-    "longTailRound2PromotedHubCount": 32
+    "longTailRound2PromotedHubCount": 32,
+    "taxonomyPromotionPolicyVersion": 1,
+    "taxonomyPromotionPolicy": "src/config/taxonomy-promotion-policy.json",
+    "parentOverrideCount": 3,
+    "publicContentQualityVersion": 1,
+    "qualityControlledIntroCount": 97,
+    "internalIntroWordingCount": 0
   },
   "backlogHubs": [
     {
@@ -701,7 +707,7 @@
       "h1": "Coloring Pages",
       "metaTitle": "Printable Coloring Pages",
       "metaDescription": "Browse printable coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 6,352 printable pages in the full collection, then search or filter the available designs.",
       "assetCount": 6352,
       "assetIds": [
         "animals-playing-cards__cats-playing-cards__c22648db9b",
@@ -7427,7 +7433,6 @@
       "relatedHubIds": [
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_fantasy",
         "hub_plants",
         "hub_fantasy_creatures",
@@ -7545,11 +7550,10 @@
         "hub_birds",
         "hub_buildings",
         "hub_dungeon",
-        "hub_easy",
+        "hub_for_kids",
         "hub_fantasy",
         "hub_fantasy_creatures",
         "hub_food",
-        "hub_for_kids",
         "hub_forest",
         "hub_plants"
       ],
@@ -7576,7 +7580,7 @@
       "h1": "Animals Coloring Pages",
       "metaTitle": "Animals Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable animals coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore animals coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 1,450 printable pages in the Animals collection, then search or filter the available designs.",
       "assetCount": 1450,
       "assetIds": [
         "animals-playing-cards__cats-playing-cards__c22648db9b",
@@ -9390,7 +9394,6 @@
       "relatedHubIds": [
         "hub_coloring_pages",
         "hub_for_kids",
-        "hub_easy",
         "hub_fantasy",
         "hub_fantasy_creatures",
         "hub_dogs",
@@ -9468,9 +9471,8 @@
         "hub_cats",
         "hub_coloring_pages",
         "hub_dogs",
-        "hub_easy",
-        "hub_fantasy",
         "hub_for_kids",
+        "hub_fantasy",
         "hub_insects",
         "hub_dodo"
       ],
@@ -9497,7 +9499,7 @@
       "h1": "Anime Girls Coloring Pages",
       "metaTitle": "Anime Girls Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable anime girls coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore anime girls coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 905 printable pages in the Anime Girls collection, then search or filter the available designs.",
       "assetCount": 905,
       "assetIds": [
         "anime-girls__anime-girl-air-balloon__1f6b5be7bc",
@@ -10881,8 +10883,6 @@
       "relatedHubIds": [
         "hub_coloring_pages",
         "hub_detailed_for_adults",
-        "hub_mandalas",
-        "hub_geometric",
         "hub_holidays",
         "hub_food",
         "hub_houses",
@@ -10914,8 +10914,6 @@
         "hub_food",
         "hub_coloring_pages",
         "hub_detailed_for_adults",
-        "hub_mandalas",
-        "hub_geometric",
         "hub_holidays",
         "hub_cakes",
         "hub_houses",
@@ -11088,7 +11086,6 @@
         "hub_coloring_pages",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_chibi",
         "hub_holidays",
         "hub_halloween",
@@ -11116,7 +11113,6 @@
         "hub_coloring_pages",
         "hub_holidays",
         "hub_for_kids",
-        "hub_easy",
         "hub_halloween",
         "hub_chibi",
         "hub_houses"
@@ -11343,7 +11339,6 @@
         "hub_detailed_for_adults",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_holidays",
         "hub_pandas",
         "hub_koalas"
@@ -11369,7 +11364,6 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_for_kids",
-        "hub_easy",
         "hub_holidays",
         "hub_detailed_for_adults",
         "hub_pandas"
@@ -11540,7 +11534,7 @@
       "h1": "Beetles Coloring Pages",
       "metaTitle": "Beetles Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable beetles coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore beetles coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 25 printable pages in the Beetles collection, then search or filter the available designs.",
       "assetCount": 25,
       "assetIds": [
         "anime-girls__anime-girl-summoning-jutsu-beetles__13ee413203",
@@ -11706,7 +11700,6 @@
         "hub_coloring_pages",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_flowers",
         "hub_insects",
         "hub_buildings",
@@ -11757,7 +11750,7 @@
       "h1": "Birds Coloring Pages",
       "metaTitle": "Birds Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable birds coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore birds coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 188 printable pages in the Birds collection, then search or filter the available designs.",
       "assetCount": 188,
       "assetIds": [
         "anime-girls__anime-girl-birds-duck__5c61314642",
@@ -12244,7 +12237,7 @@
       "h1": "Birthday Coloring Pages",
       "metaTitle": "Birthday Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable birthday coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore birthday coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 211 printable pages in the Birthday collection, then search or filter the available designs.",
       "assetCount": 211,
       "assetIds": [
         "anime-girls__anime-girl-birthday-cake__a75fa3e263",
@@ -12860,7 +12853,7 @@
       "h1": "Bridges Coloring Pages",
       "metaTitle": "Bridges Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable bridges coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore bridges coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 23 printable pages in the Bridges collection, then search or filter the available designs.",
       "assetCount": 23,
       "assetIds": [
         "chibi__chibi-dungeon-adventure-bridge-over-lava__906729f5e5",
@@ -13059,7 +13052,7 @@
         "hub_fairies",
         "hub_steam_train"
       ],
-      "parentHubId": "hub_landmarks",
+      "parentHubId": "hub_buildings",
       "childHubIds": [],
       "breadcrumbPath": [
         {
@@ -13067,8 +13060,12 @@
           "route": "/coloring-pages"
         },
         {
+          "label": "Buildings",
+          "route": "/coloring-pages/buildings"
+        },
+        {
           "label": "Bridges",
-          "route": "/coloring-pages/bridges"
+          "route": ""
         }
       ],
       "internalLinkingTargets": [
@@ -13102,7 +13099,7 @@
       "h1": "Buildings Coloring Pages",
       "metaTitle": "Buildings Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable buildings coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore buildings coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 156 printable pages in the Buildings collection, then search or filter the available designs.",
       "assetCount": 156,
       "assetIds": [
         "anime-girls__anime-girl-journaling-at-home__4243797a12",
@@ -13570,7 +13567,9 @@
       "parentHubId": "hub_coloring_pages",
       "childHubIds": [
         "hub_houses",
-        "hub_castles"
+        "hub_castles",
+        "hub_bridges",
+        "hub_world_landmarks"
       ],
       "breadcrumbPath": [
         {
@@ -13614,7 +13613,7 @@
       "h1": "Butterflies Coloring Pages",
       "metaTitle": "Butterflies Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable butterflies coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore butterflies coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 26 printable pages in the Butterflies collection, then search or filter the available designs.",
       "assetCount": 26,
       "assetIds": [
         "animals__animals-butterflies__016ffbb0de",
@@ -13812,7 +13811,6 @@
         "hub_coloring_pages",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_birds",
         "hub_insects",
         "hub_buildings",
@@ -13834,7 +13832,6 @@
         "hub_animals",
         "hub_birds",
         "hub_coloring_pages",
-        "hub_easy",
         "hub_for_kids",
         "hub_insects"
       ],
@@ -13985,8 +13982,6 @@
       "relatedHubIds": [
         "hub_coloring_pages",
         "hub_detailed_for_adults",
-        "hub_mandalas",
-        "hub_geometric",
         "hub_holidays",
         "hub_food",
         "hub_bakery"
@@ -14011,8 +14006,6 @@
         "hub_food",
         "hub_coloring_pages",
         "hub_detailed_for_adults",
-        "hub_mandalas",
-        "hub_geometric",
         "hub_holidays",
         "hub_bakery"
       ],
@@ -14035,7 +14028,7 @@
       "h1": "Cars Coloring Pages",
       "metaTitle": "Cars Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable cars coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore cars coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 193 printable pages in the Cars collection, then search or filter the available designs.",
       "assetCount": 193,
       "assetIds": [
         "anime-girls__anime-girl-driving-race-car-driving__07de9e75de",
@@ -14390,8 +14383,6 @@
       "relatedHubIds": [
         "hub_coloring_pages",
         "hub_detailed_for_adults",
-        "hub_mandalas",
-        "hub_geometric",
         "hub_animals",
         "hub_vehicles",
         "hub_birds",
@@ -14414,8 +14405,6 @@
         "hub_animals",
         "hub_coloring_pages",
         "hub_detailed_for_adults",
-        "hub_geometric",
-        "hub_mandalas",
         "hub_vehicles"
       ],
       "indexable": true,
@@ -14568,7 +14557,6 @@
       "relatedHubIds": [
         "hub_coloring_pages",
         "hub_for_kids",
-        "hub_easy",
         "hub_fantasy",
         "hub_chibi",
         "hub_buildings",
@@ -14597,7 +14585,6 @@
         "hub_coloring_pages",
         "hub_fantasy",
         "hub_for_kids",
-        "hub_easy",
         "hub_chibi",
         "hub_knights",
         "hub_bats"
@@ -14621,7 +14608,7 @@
       "h1": "Cats Coloring Pages",
       "metaTitle": "Cats Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable cats coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore cats coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 55 printable pages in the Cats collection, then search or filter the available designs.",
       "assetCount": 55,
       "assetIds": [
         "animals-playing-cards__cats-playing-cards__c22648db9b",
@@ -15190,7 +15177,7 @@
       "h1": "Chibi Coloring Pages",
       "metaTitle": "Chibi Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable chibi coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore chibi coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 908 printable pages in the Chibi collection, then search or filter the available designs.",
       "assetCount": 908,
       "assetIds": [
         "anime-girls__anime-girl-chibi-bear-summon__443fa88c61",
@@ -16347,7 +16334,6 @@
       "relatedHubIds": [
         "hub_coloring_pages",
         "hub_for_kids",
-        "hub_easy",
         "hub_flowers",
         "hub_chibi_flowers",
         "hub_chibi_dogs",
@@ -16384,7 +16370,6 @@
       ],
       "internalLinkingTargets": [
         "hub_chibi_flowers",
-        "hub_easy",
         "hub_for_kids"
       ],
       "indexable": true,
@@ -16600,7 +16585,6 @@
         "hub_coloring_pages",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_chibi",
         "hub_dogs",
         "hub_foxes",
@@ -16628,7 +16612,6 @@
         "hub_animals",
         "hub_coloring_pages",
         "hub_for_kids",
-        "hub_easy",
         "hub_chibi",
         "hub_dogs",
         "hub_foxes",
@@ -16653,7 +16636,7 @@
       "h1": "Chibi Flowers Coloring Pages",
       "metaTitle": "Chibi Flowers Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable chibi flowers coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore chibi flowers coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 152 printable pages in the Chibi Flowers collection, then search or filter the available designs.",
       "assetCount": 152,
       "assetIds": [
         "chibi__chibi-enchanted-forest-fairy-dancing-in-flower-ring__c4cb5961c2",
@@ -16936,7 +16919,6 @@
       ],
       "relatedHubIds": [
         "hub_for_kids",
-        "hub_easy",
         "hub_chibi",
         "hub_flowers",
         "hub_lily",
@@ -16960,9 +16942,8 @@
       ],
       "internalLinkingTargets": [
         "hub_chibi",
-        "hub_easy",
-        "hub_flowers",
         "hub_for_kids",
+        "hub_flowers",
         "hub_plants"
       ],
       "indexable": true,
@@ -16988,7 +16969,7 @@
       "h1": "Christmas Coloring Pages",
       "metaTitle": "Christmas Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable christmas coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore christmas coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 332 printable pages in the Christmas collection, then search or filter the available designs.",
       "assetCount": 332,
       "assetIds": [
         "christmas__christmas-holiday-advent-calendar__a1245c4617",
@@ -17874,7 +17855,6 @@
         "hub_plushies",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_anime_girls",
         "hub_holidays"
       ],
@@ -17899,7 +17879,6 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_for_kids",
-        "hub_easy",
         "hub_anime_girls",
         "hub_holidays"
       ],
@@ -17922,7 +17901,7 @@
       "h1": "Crabs Coloring Pages",
       "metaTitle": "Crabs Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable crabs coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore crabs coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 21 printable pages in the Crabs collection, then search or filter the available designs.",
       "assetCount": 21,
       "assetIds": [
         "chibi__chibi-plushie-crab__0a927497b6",
@@ -18136,7 +18115,6 @@
         "hub_coloring_pages",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_fantasy",
         "hub_fantasy_creatures",
         "hub_sea_life",
@@ -18185,7 +18163,7 @@
       "h1": "Cute Coloring Pages",
       "metaTitle": "Cute Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable cute coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore cute coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 375 printable pages in the Cute collection, then search or filter the available designs.",
       "assetCount": 375,
       "assetIds": [
         "anime-girls__anime-girl-cute-teddy-bear-plushie__9e3171aa9b",
@@ -18826,7 +18804,6 @@
         "hub_plushies",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_otters",
         "hub_trick_or_treat",
         "hub_mosasaurus",
@@ -18849,7 +18826,6 @@
       "internalLinkingTargets": [
         "hub_animals",
         "hub_coloring_pages",
-        "hub_easy",
         "hub_for_kids",
         "hub_plushies"
       ],
@@ -18979,8 +18955,6 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_detailed_for_adults",
-        "hub_mandalas",
-        "hub_geometric",
         "hub_animals",
         "hub_holidays",
         "hub_mushrooms"
@@ -19007,8 +18981,6 @@
         "hub_plushies",
         "hub_holidays",
         "hub_detailed_for_adults",
-        "hub_mandalas",
-        "hub_geometric",
         "hub_mushrooms"
       ],
       "indexable": true,
@@ -19030,7 +19002,7 @@
       "h1": "Detailed Coloring Pages for Adults",
       "metaTitle": "Detailed Coloring Pages for Adults | Printable Coloring Pages",
       "metaDescription": "Browse printable detailed coloring pages for adults coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore detailed coloring pages for adults coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 1,459 printable pages in the Detailed Coloring Pages for Adults collection, then search or filter the available designs.",
       "assetCount": 1459,
       "assetIds": [
         "mandala-geometry-patterns__mandala-geometry-patterns-abstract-mandala__29dbb1eecf",
@@ -20801,7 +20773,6 @@
         }
       ],
       "relatedHubIds": [
-        "hub_mandalas",
         "hub_geometric",
         "hub_animals",
         "hub_mushrooms",
@@ -20843,8 +20814,7 @@
       ],
       "internalLinkingTargets": [
         "hub_animals",
-        "hub_geometric",
-        "hub_mandalas"
+        "hub_geometric"
       ],
       "indexable": true,
       "sitemap": true,
@@ -20869,7 +20839,7 @@
       "h1": "Dinosaurs Coloring Pages",
       "metaTitle": "Dinosaurs Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable dinosaurs coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore dinosaurs coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 189 printable pages in the Dinosaurs collection, then search or filter the available designs.",
       "assetCount": 189,
       "assetIds": [
         "anime-girls__anime-girl-brachiosaurus-hoodie-plushie__73442e8b67",
@@ -21580,7 +21550,7 @@
       "h1": "Dogs Coloring Pages",
       "metaTitle": "Dogs Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable dogs coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore dogs coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 284 printable pages in the Dogs collection, then search or filter the available designs.",
       "assetCount": 284,
       "assetIds": [
         "animals__animals-dog__18819a83c1",
@@ -22154,7 +22124,6 @@
         "hub_coloring_pages",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_geometric_dogs",
         "hub_chibi_dogs",
         "hub_christmas_dogs",
@@ -22183,7 +22152,6 @@
       "internalLinkingTargets": [
         "hub_animals",
         "hub_coloring_pages",
-        "hub_easy",
         "hub_for_kids",
         "hub_terrier",
         "hub_bulldog",
@@ -22318,7 +22286,6 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_detailed_for_adults",
-        "hub_mandalas",
         "hub_animals",
         "hub_sea_life"
       ],
@@ -22343,8 +22310,7 @@
         "hub_coloring_pages",
         "hub_animals",
         "hub_plushies",
-        "hub_detailed_for_adults",
-        "hub_mandalas"
+        "hub_detailed_for_adults"
       ],
       "indexable": true,
       "sitemap": true,
@@ -22926,7 +22892,6 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_detailed_for_adults",
-        "hub_mandalas",
         "hub_animals",
         "hub_birds"
       ],
@@ -22951,8 +22916,7 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_animals",
-        "hub_detailed_for_adults",
-        "hub_mandalas"
+        "hub_detailed_for_adults"
       ],
       "indexable": true,
       "sitemap": true,
@@ -22973,7 +22937,7 @@
       "h1": "Dungeon Coloring Pages",
       "metaTitle": "Dungeon Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable dungeon coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore dungeon coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 99 printable pages in the Dungeon collection, then search or filter the available designs.",
       "assetCount": 99,
       "assetIds": [
         "chibi__chibi-dungeon-adventure-bridge-over-lava__906729f5e5",
@@ -23216,7 +23180,6 @@
         "hub_coloring_pages",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_chibi",
         "hub_birds",
         "hub_buildings",
@@ -23242,7 +23205,6 @@
         "hub_buildings",
         "hub_chibi",
         "hub_coloring_pages",
-        "hub_easy",
         "hub_for_kids"
       ],
       "indexable": true,
@@ -23390,7 +23352,6 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_detailed_for_adults",
-        "hub_mandalas",
         "hub_animals",
         "hub_birds"
       ],
@@ -23415,8 +23376,7 @@
         "hub_coloring_pages",
         "hub_animals",
         "hub_plushies",
-        "hub_detailed_for_adults",
-        "hub_mandalas"
+        "hub_detailed_for_adults"
       ],
       "indexable": true,
       "sitemap": true,
@@ -23437,7 +23397,7 @@
       "h1": "Easy Coloring Pages",
       "metaTitle": "Easy Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable easy coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore easy coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 1,300 printable pages in the Easy collection, then search or filter the available designs.",
       "assetCount": 1300,
       "assetIds": [
         "anime-girls__anime-girl-chibi-bear-summon__443fa88c61",
@@ -25266,8 +25226,6 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_detailed_for_adults",
-        "hub_mandalas",
-        "hub_geometric",
         "hub_animals",
         "hub_for_kids"
       ],
@@ -25292,8 +25250,6 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_detailed_for_adults",
-        "hub_mandalas",
-        "hub_geometric",
         "hub_for_kids"
       ],
       "indexable": true,
@@ -25315,7 +25271,7 @@
       "h1": "Fairies Coloring Pages",
       "metaTitle": "Fairies Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable fairies coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore fairies coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 37 printable pages in the Fairies collection, then search or filter the available designs.",
       "assetCount": 37,
       "assetIds": [
         "anime-girls__anime-girl-summoning-fairy-plushies__0c86dd4c47",
@@ -25591,7 +25547,7 @@
       "h1": "Fantasy Coloring Pages",
       "metaTitle": "Fantasy Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable fantasy coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore fantasy coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 1,265 printable pages in the Fantasy collection, then search or filter the available designs.",
       "assetCount": 1265,
       "assetIds": [
         "anime-girls__anime-girl-centaur-standoff__d462b8fcc6",
@@ -27206,7 +27162,6 @@
         "hub_coloring_pages",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_plants",
         "hub_fantasy_creatures",
         "hub_dragons",
@@ -27254,9 +27209,8 @@
       "internalLinkingTargets": [
         "hub_animals",
         "hub_coloring_pages",
-        "hub_easy",
-        "hub_fantasy_creatures",
         "hub_for_kids",
+        "hub_fantasy_creatures",
         "hub_forest",
         "hub_medieval_fantasy",
         "hub_mythology",
@@ -27287,7 +27241,7 @@
       "h1": "Fantasy Creatures Coloring Pages",
       "metaTitle": "Fantasy Creatures Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable fantasy creatures coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore fantasy creatures coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 531 printable pages in the Fantasy Creatures collection, then search or filter the available designs.",
       "assetCount": 531,
       "assetIds": [
         "anime-girls__anime-girl-centaur-standoff__d462b8fcc6",
@@ -28168,7 +28122,6 @@
         "hub_coloring_pages",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_fantasy",
         "hub_plants",
         "hub_dragons",
@@ -28207,11 +28160,10 @@
       "internalLinkingTargets": [
         "hub_animals",
         "hub_coloring_pages",
-        "hub_easy",
+        "hub_for_kids",
         "hub_fairies",
         "hub_fantasy",
         "hub_fantasy_dragons",
-        "hub_for_kids",
         "hub_forest",
         "hub_griffins",
         "hub_unicorns"
@@ -28239,7 +28191,7 @@
       "h1": "Fantasy Dragons Coloring Pages",
       "metaTitle": "Fantasy Dragons Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable fantasy dragons coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore fantasy dragons coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 49 printable pages in the Fantasy Dragons collection, then search or filter the available designs.",
       "assetCount": 49,
       "assetIds": [
         "fantasy__fantasy-angry-volcano-dragon__2d2fb81a98",
@@ -28598,8 +28550,6 @@
       "relatedHubIds": [
         "hub_coloring_pages",
         "hub_detailed_for_adults",
-        "hub_mandalas",
-        "hub_geometric",
         "hub_animals",
         "hub_sea_life",
         "hub_sushi",
@@ -28626,8 +28576,6 @@
         "hub_coloring_pages",
         "hub_animals",
         "hub_detailed_for_adults",
-        "hub_mandalas",
-        "hub_geometric",
         "hub_sushi",
         "hub_megalodon"
       ],
@@ -28650,7 +28598,7 @@
       "h1": "Flowers Coloring Pages",
       "metaTitle": "Flowers Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable flowers coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore flowers coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 346 printable pages in the Flowers collection, then search or filter the available designs.",
       "assetCount": 346,
       "assetIds": [
         "anime-girls__anime-girl-field-of-flowers-nature__401fe52b71",
@@ -29245,7 +29193,6 @@
         "hub_coloring_pages",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_plants",
         "hub_garden",
         "hub_chibi_flowers",
@@ -29267,8 +29214,7 @@
         "hub_daisy",
         "hub_orchid",
         "hub_poppy",
-        "hub_lotus",
-        "hub_palm"
+        "hub_lotus"
       ],
       "breadcrumbPath": [
         {
@@ -29284,7 +29230,6 @@
         "hub_animals",
         "hub_chibi_flowers",
         "hub_coloring_pages",
-        "hub_easy",
         "hub_for_kids",
         "hub_garden",
         "hub_garden_flowers",
@@ -29320,7 +29265,7 @@
       "h1": "Food Coloring Pages",
       "metaTitle": "Food Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable food coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore food coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 261 printable pages in the Food collection, then search or filter the available designs.",
       "assetCount": 261,
       "assetIds": [
         "anime-girls__anime-girl-birthday-cake__a75fa3e263",
@@ -29830,8 +29775,6 @@
       "relatedHubIds": [
         "hub_coloring_pages",
         "hub_detailed_for_adults",
-        "hub_mandalas",
-        "hub_geometric",
         "hub_animals",
         "hub_birthday",
         "hub_birds",
@@ -29862,9 +29805,7 @@
       "internalLinkingTargets": [
         "hub_animals",
         "hub_coloring_pages",
-        "hub_detailed_for_adults",
-        "hub_geometric",
-        "hub_mandalas"
+        "hub_detailed_for_adults"
       ],
       "indexable": true,
       "sitemap": true,
@@ -29889,7 +29830,7 @@
       "h1": "Coloring Pages for Kids",
       "metaTitle": "Coloring Pages for Kids | Printable Coloring Pages",
       "metaDescription": "Browse printable coloring pages for kids coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore coloring pages for kids coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 1,335 printable pages in the Coloring Pages for Kids collection, then search or filter the available designs.",
       "assetCount": 1335,
       "assetIds": [
         "animals__animals-puppies__093b6e6276",
@@ -31638,7 +31579,7 @@
       "h1": "Forest Coloring Pages",
       "metaTitle": "Forest Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable forest coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore forest coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 72 printable pages in the Forest collection, then search or filter the available designs.",
       "assetCount": 72,
       "assetIds": [
         "anime-girls__anime-girl-enchanted-forest-ambush__e6f3722767",
@@ -31995,7 +31936,6 @@
         "hub_coloring_pages",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_fantasy",
         "hub_plants",
         "hub_fantasy_creatures",
@@ -32221,7 +32161,6 @@
         "hub_plushies",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_holidays",
         "hub_mushrooms",
         "hub_geometric_dogs",
@@ -32250,7 +32189,6 @@
         "hub_plushies",
         "hub_holidays",
         "hub_for_kids",
-        "hub_easy",
         "hub_mushrooms",
         "hub_geometric_dogs"
       ],
@@ -32273,7 +32211,7 @@
       "h1": "Garden Coloring Pages",
       "metaTitle": "Garden Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable garden coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore garden coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 195 printable pages in the Garden collection, then search or filter the available designs.",
       "assetCount": 195,
       "assetIds": [
         "anime-girls__anime-girl-smelling-daisies-in-garden__8e712687ca",
@@ -32768,7 +32706,7 @@
       "h1": "Garden Flowers Coloring Pages",
       "metaTitle": "Garden Flowers Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable garden flowers coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore garden flowers coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 95 printable pages in the Garden Flowers collection, then search or filter the available designs.",
       "assetCount": 95,
       "assetIds": [
         "chibi__chibi-flowers-tulip-garden__68470e6363",
@@ -33006,7 +32944,7 @@
       "h1": "Geometric Coloring Pages",
       "metaTitle": "Geometric Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable geometric coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore geometric coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 1,457 printable pages in the Geometric collection, then search or filter the available designs.",
       "assetCount": 1457,
       "assetIds": [
         "mandala-geometry-patterns__mandala-geometry-patterns-abstract-mandala__29dbb1eecf",
@@ -34778,7 +34716,6 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_detailed_for_adults",
-        "hub_mandalas",
         "hub_animals",
         "hub_vehicles",
         "hub_food",
@@ -34818,7 +34755,6 @@
         "hub_coloring_pages",
         "hub_detailed_for_adults",
         "hub_food",
-        "hub_mandalas",
         "hub_plushies",
         "hub_vehicles"
       ],
@@ -35040,8 +34976,6 @@
       "relatedHubIds": [
         "hub_coloring_pages",
         "hub_detailed_for_adults",
-        "hub_mandalas",
-        "hub_geometric",
         "hub_animals",
         "hub_dogs",
         "hub_foxes",
@@ -35068,8 +35002,6 @@
         "hub_animals",
         "hub_coloring_pages",
         "hub_detailed_for_adults",
-        "hub_mandalas",
-        "hub_geometric",
         "hub_dogs",
         "hub_plushie_dogs",
         "hub_foxes"
@@ -35216,7 +35148,6 @@
         "hub_detailed_for_adults",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_anime_girls"
       ],
       "parentHubId": "hub_animals",
@@ -35241,7 +35172,6 @@
         "hub_plushies",
         "hub_anime_girls",
         "hub_for_kids",
-        "hub_easy",
         "hub_detailed_for_adults"
       ],
       "indexable": true,
@@ -35263,7 +35193,7 @@
       "h1": "Griffins Coloring Pages",
       "metaTitle": "Griffins Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable griffins coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore griffins coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 21 printable pages in the Griffins collection, then search or filter the available designs.",
       "assetCount": 21,
       "assetIds": [
         "chibi__chibi-dungeon-pet-griffin__7156ac6ffb",
@@ -35497,7 +35427,7 @@
       "h1": "Halloween Coloring Pages",
       "metaTitle": "Halloween Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable halloween coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore halloween coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 305 printable pages in the Halloween collection, then search or filter the available designs.",
       "assetCount": 305,
       "assetIds": [
         "anime-girls__anime-girl-zombie-halloween-png__93ec2c4c40",
@@ -36063,7 +35993,6 @@
         "hub_plushies",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_holidays",
         "hub_houses",
         "hub_witches",
@@ -36091,7 +36020,6 @@
       ],
       "internalLinkingTargets": [
         "hub_coloring_pages",
-        "hub_easy",
         "hub_for_kids",
         "hub_holidays",
         "hub_plushies",
@@ -36244,8 +36172,6 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_detailed_for_adults",
-        "hub_mandalas",
-        "hub_geometric",
         "hub_animals",
         "hub_for_kids",
         "hub_mushrooms"
@@ -36271,8 +36197,6 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_detailed_for_adults",
-        "hub_mandalas",
-        "hub_geometric",
         "hub_for_kids",
         "hub_mushrooms"
       ],
@@ -36411,7 +36335,6 @@
         "hub_plushies",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_anime_girls",
         "hub_holidays"
       ],
@@ -36437,7 +36360,6 @@
         "hub_plushies",
         "hub_anime_girls",
         "hub_for_kids",
-        "hub_easy",
         "hub_holidays"
       ],
       "indexable": true,
@@ -36459,7 +36381,7 @@
       "h1": "Holidays Coloring Pages",
       "metaTitle": "Holidays Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable holidays coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore holidays coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 874 printable pages in the Holidays collection, then search or filter the available designs.",
       "assetCount": 874,
       "assetIds": [
         "anime-girls__anime-girl-birthday-cake__a75fa3e263",
@@ -37658,7 +37580,6 @@
         "hub_coloring_pages",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_fantasy",
         "hub_fantasy_creatures",
         "hub_christmas",
@@ -37703,10 +37624,9 @@
         "hub_birthday",
         "hub_christmas",
         "hub_coloring_pages",
-        "hub_easy",
+        "hub_for_kids",
         "hub_fantasy",
         "hub_fantasy_creatures",
-        "hub_for_kids",
         "hub_leprechaun"
       ],
       "indexable": true,
@@ -37833,7 +37753,6 @@
         "hub_plushies",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_anime_girls",
         "hub_holidays"
       ],
@@ -37858,7 +37777,6 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_for_kids",
-        "hub_easy",
         "hub_anime_girls",
         "hub_holidays"
       ],
@@ -38065,7 +37983,6 @@
       "relatedHubIds": [
         "hub_coloring_pages",
         "hub_for_kids",
-        "hub_easy",
         "hub_holidays",
         "hub_halloween",
         "hub_mushrooms",
@@ -38095,7 +38012,6 @@
         "hub_holidays",
         "hub_halloween",
         "hub_for_kids",
-        "hub_easy",
         "hub_mushrooms",
         "hub_bakery"
       ],
@@ -38215,7 +38131,6 @@
       "relatedHubIds": [
         "hub_coloring_pages",
         "hub_for_kids",
-        "hub_easy",
         "hub_fantasy",
         "hub_chibi",
         "hub_fantasy_creatures",
@@ -38243,7 +38158,6 @@
         "hub_coloring_pages",
         "hub_fantasy_creatures",
         "hub_for_kids",
-        "hub_easy",
         "hub_chibi",
         "hub_dragons",
         "hub_castles"
@@ -38267,7 +38181,7 @@
       "h1": "Indoor Plants Coloring Pages",
       "metaTitle": "Indoor Plants Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable indoor plants coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore indoor plants coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 128 printable pages in the Indoor Plants collection, then search or filter the available designs.",
       "assetCount": 128,
       "assetIds": [
         "indoor-plants__indoor-plants-african-violet__633e0af20e",
@@ -38502,7 +38416,8 @@
       ],
       "parentHubId": "hub_plants",
       "childHubIds": [
-        "hub_bamboo"
+        "hub_bamboo",
+        "hub_palm"
       ],
       "breadcrumbPath": [
         {
@@ -38546,7 +38461,7 @@
       "h1": "Insects Coloring Pages",
       "metaTitle": "Insects Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable insects coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore insects coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 179 printable pages in the Insects collection, then search or filter the available designs.",
       "assetCount": 179,
       "assetIds": [
         "animals__animals-butterflies__016ffbb0de",
@@ -39005,7 +38920,6 @@
         "hub_coloring_pages",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_fantasy",
         "hub_fantasy_creatures",
         "hub_birds",
@@ -39035,10 +38949,9 @@
         "hub_beetles",
         "hub_butterflies",
         "hub_coloring_pages",
-        "hub_easy",
+        "hub_for_kids",
         "hub_fantasy",
         "hub_fantasy_creatures",
-        "hub_for_kids",
         "hub_spiders"
       ],
       "indexable": true,
@@ -39064,7 +38977,7 @@
       "h1": "Kawaii Coloring Pages",
       "metaTitle": "Kawaii Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable kawaii coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore kawaii coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 88 printable pages in the Kawaii collection, then search or filter the available designs.",
       "assetCount": 88,
       "assetIds": [
         "anime-girls__anime-girl-fluffy-clothes-kawaii__09f36541df",
@@ -39397,7 +39310,6 @@
         "hub_coloring_pages",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_plants",
         "hub_dogs",
         "hub_dinosaurs",
@@ -39420,7 +39332,6 @@
         "hub_cats",
         "hub_coloring_pages",
         "hub_dinosaurs",
-        "hub_easy",
         "hub_for_kids",
         "hub_plants"
       ],
@@ -39607,7 +39518,6 @@
       "relatedHubIds": [
         "hub_coloring_pages",
         "hub_for_kids",
-        "hub_easy",
         "hub_fantasy",
         "hub_chibi",
         "hub_dragons",
@@ -39637,7 +39547,6 @@
         "hub_coloring_pages",
         "hub_fantasy",
         "hub_for_kids",
-        "hub_easy",
         "hub_chibi",
         "hub_chess",
         "hub_dragons"
@@ -39799,7 +39708,6 @@
         "hub_plushies",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_anime_girls",
         "hub_holidays",
         "hub_bears"
@@ -39825,7 +39733,6 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_for_kids",
-        "hub_easy",
         "hub_anime_girls",
         "hub_holidays",
         "hub_bears"
@@ -40006,10 +39913,8 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_detailed_for_adults",
-        "hub_mandalas",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_mushrooms"
       ],
       "parentHubId": "hub_animals",
@@ -40033,9 +39938,7 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_for_kids",
-        "hub_easy",
         "hub_detailed_for_adults",
-        "hub_mandalas",
         "hub_mushrooms"
       ],
       "indexable": true,
@@ -40376,8 +40279,6 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_detailed_for_adults",
-        "hub_mandalas",
-        "hub_geometric",
         "hub_animals",
         "hub_holidays"
       ],
@@ -40402,8 +40303,6 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_detailed_for_adults",
-        "hub_mandalas",
-        "hub_geometric",
         "hub_holidays"
       ],
       "indexable": true,
@@ -40425,7 +40324,7 @@
       "h1": "Mammoths Coloring Pages",
       "metaTitle": "Mammoths Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable mammoths coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore mammoths coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 20 printable pages in the Mammoths collection, then search or filter the available designs.",
       "assetCount": 20,
       "assetIds": [
         "anime-girls__anime-girl-summoning-jutsu-woolly-mammoth-kawaii-plushies__06dda78301",
@@ -40680,7 +40579,7 @@
       "h1": "Mandalas Coloring Pages",
       "metaTitle": "Mandalas Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable mandalas coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore mandalas coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 1,459 printable pages in the Mandalas collection, then search or filter the available designs.",
       "assetCount": 1459,
       "assetIds": [
         "mandala-geometry-patterns__mandala-geometry-patterns-abstract-mandala__29dbb1eecf",
@@ -42452,7 +42351,6 @@
       ],
       "relatedHubIds": [
         "hub_detailed_for_adults",
-        "hub_geometric",
         "hub_animals",
         "hub_mushrooms",
         "hub_sushi",
@@ -42492,8 +42390,7 @@
       ],
       "internalLinkingTargets": [
         "hub_animals",
-        "hub_detailed_for_adults",
-        "hub_geometric"
+        "hub_detailed_for_adults"
       ],
       "indexable": true,
       "sitemap": true,
@@ -42518,7 +42415,7 @@
       "h1": "Medieval Fantasy Coloring Pages",
       "metaTitle": "Medieval Fantasy Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable medieval fantasy coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore medieval fantasy coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 194 printable pages in the Medieval Fantasy collection, then search or filter the available designs.",
       "assetCount": 194,
       "assetIds": [
         "anime-girls__anime-girl-medieval-knight-armor__55bc056bae",
@@ -43090,7 +42987,6 @@
         "hub_plushies",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_anime_girls",
         "hub_prehistoric_animals",
         "hub_tigers",
@@ -43118,7 +43014,6 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_for_kids",
-        "hub_easy",
         "hub_animals",
         "hub_anime_girls",
         "hub_tigers"
@@ -43142,7 +43037,7 @@
       "h1": "Mermaids Coloring Pages",
       "metaTitle": "Mermaids Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable mermaids coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore mermaids coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 26 printable pages in the Mermaids collection, then search or filter the available designs.",
       "assetCount": 26,
       "assetIds": [
         "anime-girls__anime-girl-mermaid-scale-armor__887218d4ed",
@@ -43472,10 +43367,8 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_detailed_for_adults",
-        "hub_mandalas",
         "hub_animals",
-        "hub_for_kids",
-        "hub_easy"
+        "hub_for_kids"
       ],
       "parentHubId": "hub_animals",
       "childHubIds": [],
@@ -43498,9 +43391,7 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_for_kids",
-        "hub_easy",
-        "hub_detailed_for_adults",
-        "hub_mandalas"
+        "hub_detailed_for_adults"
       ],
       "indexable": true,
       "sitemap": true,
@@ -43651,7 +43542,6 @@
         "hub_plushies",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_holidays"
       ],
       "parentHubId": "hub_animals",
@@ -43675,7 +43565,6 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_for_kids",
-        "hub_easy",
         "hub_holidays"
       ],
       "indexable": true,
@@ -44035,8 +43924,6 @@
       "relatedHubIds": [
         "hub_coloring_pages",
         "hub_detailed_for_adults",
-        "hub_mandalas",
-        "hub_geometric",
         "hub_plants",
         "hub_garden",
         "hub_houses",
@@ -44068,8 +43955,6 @@
         "hub_coloring_pages",
         "hub_garden",
         "hub_detailed_for_adults",
-        "hub_mandalas",
-        "hub_geometric",
         "hub_witches",
         "hub_lions"
       ],
@@ -44092,7 +43977,7 @@
       "h1": "Mythology Coloring Pages",
       "metaTitle": "Mythology Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable mythology coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore mythology coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 227 printable pages in the Mythology collection, then search or filter the available designs.",
       "assetCount": 227,
       "assetIds": [
         "anime-girls__anime-girl-greek-mythology__d024d88a00",
@@ -44496,7 +44381,7 @@
       "h1": "Ocean Coloring Pages",
       "metaTitle": "Ocean Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable ocean coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore ocean coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 154 printable pages in the Ocean collection, then search or filter the available designs.",
       "assetCount": 154,
       "assetIds": [
         "anime-girls__anime-girl-tentacle-yoga-in-ocean-smiling__dc79a75b99",
@@ -44803,7 +44688,6 @@
         "hub_coloring_pages",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_fantasy",
         "hub_fantasy_creatures",
         "hub_flowers",
@@ -44826,10 +44710,9 @@
       "internalLinkingTargets": [
         "hub_animals",
         "hub_coloring_pages",
-        "hub_easy",
+        "hub_for_kids",
         "hub_fantasy",
         "hub_fantasy_creatures",
-        "hub_for_kids",
         "hub_sea_life"
       ],
       "indexable": true,
@@ -44855,7 +44738,7 @@
       "h1": "Octopus Coloring Pages",
       "metaTitle": "Octopus Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable octopus coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore octopus coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 20 printable pages in the Octopus collection, then search or filter the available designs.",
       "assetCount": 20,
       "assetIds": [
         "anime-girls__anime-girl-octopus-hoodie-plushie__6202e52d7f",
@@ -45046,7 +44929,6 @@
         "hub_coloring_pages",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_fantasy",
         "hub_fantasy_creatures",
         "hub_sea_life",
@@ -45068,10 +44950,9 @@
       "internalLinkingTargets": [
         "hub_animals",
         "hub_coloring_pages",
-        "hub_easy",
+        "hub_for_kids",
         "hub_fantasy",
         "hub_fantasy_creatures",
-        "hub_for_kids",
         "hub_sea_life"
       ],
       "indexable": true,
@@ -45218,7 +45099,6 @@
         "hub_plushies",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_cute"
       ],
       "parentHubId": "hub_animals",
@@ -45242,7 +45122,6 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_for_kids",
-        "hub_easy",
         "hub_cute"
       ],
       "indexable": true,
@@ -45610,8 +45489,6 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_detailed_for_adults",
-        "hub_mandalas",
-        "hub_geometric",
         "hub_animals",
         "hub_for_kids",
         "hub_bears"
@@ -45637,8 +45514,6 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_detailed_for_adults",
-        "hub_mandalas",
-        "hub_geometric",
         "hub_for_kids",
         "hub_bears"
       ],
@@ -45661,7 +45536,7 @@
       "h1": "Pegasus Coloring Pages",
       "metaTitle": "Pegasus Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable pegasus coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore pegasus coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 29 printable pages in the Pegasus collection, then search or filter the available designs.",
       "assetCount": 29,
       "assetIds": [
         "chibi__chibi-flying-pegasus__3b3b6b5009",
@@ -46099,7 +45974,6 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_detailed_for_adults",
-        "hub_mandalas",
         "hub_animals",
         "hub_holidays",
         "hub_birds"
@@ -46126,8 +46000,7 @@
         "hub_plushies",
         "hub_animals",
         "hub_holidays",
-        "hub_detailed_for_adults",
-        "hub_mandalas"
+        "hub_detailed_for_adults"
       ],
       "indexable": true,
       "sitemap": true,
@@ -46246,7 +46119,6 @@
       "relatedHubIds": [
         "hub_coloring_pages",
         "hub_for_kids",
-        "hub_easy",
         "hub_fantasy",
         "hub_chibi",
         "hub_fantasy_creatures"
@@ -46272,7 +46144,6 @@
         "hub_coloring_pages",
         "hub_fantasy_creatures",
         "hub_for_kids",
-        "hub_easy",
         "hub_chibi"
       ],
       "indexable": true,
@@ -46294,7 +46165,7 @@
       "h1": "Planes Coloring Pages",
       "metaTitle": "Planes Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable planes coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore planes coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 92 printable pages in the Planes collection, then search or filter the available designs.",
       "assetCount": 92,
       "assetIds": [
         "mandala-geometry-patterns__mandala-geometry-patterns-vehiacle-planes-a-10-thunderbolt-ii__2b4b4c8bc7",
@@ -46533,8 +46404,6 @@
       "relatedHubIds": [
         "hub_coloring_pages",
         "hub_detailed_for_adults",
-        "hub_mandalas",
-        "hub_geometric",
         "hub_animals",
         "hub_vehicles",
         "hub_beetles"
@@ -46555,8 +46424,6 @@
         "hub_animals",
         "hub_coloring_pages",
         "hub_detailed_for_adults",
-        "hub_geometric",
-        "hub_mandalas",
         "hub_vehicles"
       ],
       "indexable": true,
@@ -46582,7 +46449,7 @@
       "h1": "Plants Coloring Pages",
       "metaTitle": "Plants Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable plants coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore plants coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 586 printable pages in the Plants collection, then search or filter the available designs.",
       "assetCount": 586,
       "assetIds": [
         "anime-girls__anime-girl-field-of-flowers-nature__401fe52b71",
@@ -47483,7 +47350,6 @@
         "hub_coloring_pages",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_fantasy",
         "hub_fantasy_creatures",
         "hub_flowers",
@@ -47523,10 +47389,9 @@
         "hub_animals",
         "hub_chibi_flowers",
         "hub_coloring_pages",
-        "hub_easy",
+        "hub_for_kids",
         "hub_fantasy",
         "hub_flowers",
-        "hub_for_kids",
         "hub_garden",
         "hub_garden_flowers",
         "hub_indoor_plants",
@@ -47555,7 +47420,7 @@
       "h1": "Playing Cards Coloring Pages",
       "metaTitle": "Playing Cards Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable playing cards coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore playing cards coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 12 printable pages in the Playing Cards collection, then search or filter the available designs.",
       "assetCount": 12,
       "assetIds": [
         "animals-playing-cards__cats-playing-cards__c22648db9b",
@@ -47719,7 +47584,7 @@
       "h1": "Plushie Animals Coloring Pages",
       "metaTitle": "Plushie Animals Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable plushie animals coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore plushie animals coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 105 printable pages in the Plushie Animals collection, then search or filter the available designs.",
       "assetCount": 105,
       "assetIds": [
         "anime-girls__anime-girl-armadillo-hoodie-animal-plushie__d2e31ff395",
@@ -48377,7 +48242,7 @@
       "h1": "Plushie Dragons Coloring Pages",
       "metaTitle": "Plushie Dragons Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable plushie dragons coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore plushie dragons coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 75 printable pages in the Plushie Dragons collection, then search or filter the available designs.",
       "assetCount": 75,
       "assetIds": [
         "anime-girls__anime-girl-dragon-eggs-hoodie-plushie__b1747e4988",
@@ -49241,7 +49106,7 @@
       "h1": "Plushies Coloring Pages",
       "metaTitle": "Plushies Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable plushies coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore plushies coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 1,704 printable pages in the Plushies collection, then search or filter the available designs.",
       "assetCount": 1704,
       "assetIds": [
         "anime-girls__anime-girl-ankylosaurus-hoodie-plushie__c819919e77",
@@ -51313,7 +51178,7 @@
       "h1": "Prehistoric Animals Coloring Pages",
       "metaTitle": "Prehistoric Animals Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable prehistoric animals coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore prehistoric animals coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 220 printable pages in the Prehistoric Animals collection, then search or filter the available designs.",
       "assetCount": 220,
       "assetIds": [
         "anime-girls__anime-girl-brachiosaurus-hoodie-plushie__73442e8b67",
@@ -51819,7 +51684,6 @@
         "hub_plushies",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_dinosaurs",
         "hub_birds",
         "hub_cats",
@@ -51834,7 +51698,6 @@
         "hub_birthday_celebration",
         "hub_christmas_plushie",
         "hub_halloween_costume",
-        "hub_woolly_mammoth",
         "hub_saber_toothed_tiger"
       ],
       "parentHubId": "hub_animals",
@@ -51858,7 +51721,6 @@
         "hub_cats",
         "hub_coloring_pages",
         "hub_dinosaurs",
-        "hub_easy",
         "hub_for_kids",
         "hub_mammoths",
         "hub_plushies"
@@ -52019,7 +51881,6 @@
       "relatedHubIds": [
         "hub_coloring_pages",
         "hub_for_kids",
-        "hub_easy",
         "hub_chibi",
         "hub_holidays",
         "hub_halloween",
@@ -52047,7 +51908,6 @@
         "hub_coloring_pages",
         "hub_holidays",
         "hub_for_kids",
-        "hub_easy",
         "hub_chibi",
         "hub_sushi",
         "hub_bakery"
@@ -52365,7 +52225,6 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_detailed_for_adults",
-        "hub_mandalas",
         "hub_holidays",
         "hub_christmas",
         "hub_mushrooms"
@@ -52392,7 +52251,6 @@
         "hub_plushies",
         "hub_holidays",
         "hub_detailed_for_adults",
-        "hub_mandalas",
         "hub_mushrooms"
       ],
       "indexable": true,
@@ -52414,7 +52272,7 @@
       "h1": "Reptiles Coloring Pages",
       "metaTitle": "Reptiles Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable reptiles coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore reptiles coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 156 printable pages in the Reptiles collection, then search or filter the available designs.",
       "assetCount": 156,
       "assetIds": [
         "anime-girls__anime-girl-reptile-martial-arts__8927e39f70",
@@ -52865,7 +52723,6 @@
         "hub_coloring_pages",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_fantasy",
         "hub_fantasy_creatures",
         "hub_sea_life",
@@ -52893,10 +52750,9 @@
       "internalLinkingTargets": [
         "hub_animals",
         "hub_coloring_pages",
-        "hub_easy",
+        "hub_for_kids",
         "hub_fantasy",
         "hub_fantasy_creatures",
-        "hub_for_kids",
         "hub_turtles"
       ],
       "indexable": true,
@@ -52991,7 +52847,6 @@
         "hub_plushies",
         "hub_detailed_for_adults",
         "hub_for_kids",
-        "hub_easy",
         "hub_fantasy",
         "hub_holidays"
       ],
@@ -53016,7 +52871,6 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_for_kids",
-        "hub_easy",
         "hub_holidays",
         "hub_detailed_for_adults"
       ],
@@ -53116,8 +52970,6 @@
       "relatedHubIds": [
         "hub_coloring_pages",
         "hub_detailed_for_adults",
-        "hub_mandalas",
-        "hub_geometric",
         "hub_plants",
         "hub_flowers",
         "hub_sushi"
@@ -53143,8 +52995,6 @@
         "hub_coloring_pages",
         "hub_plants",
         "hub_detailed_for_adults",
-        "hub_mandalas",
-        "hub_geometric",
         "hub_sushi"
       ],
       "indexable": true,
@@ -53283,7 +53133,7 @@
       "h1": "Sea Life Coloring Pages",
       "metaTitle": "Sea Life Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable sea life coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore sea life coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 236 printable pages in the Sea Life collection, then search or filter the available designs.",
       "assetCount": 236,
       "assetIds": [
         "animals__animals-dolphins__06e09058c7",
@@ -53814,7 +53664,6 @@
         "hub_coloring_pages",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_fantasy",
         "hub_fantasy_creatures",
         "hub_insects",
@@ -53849,10 +53698,9 @@
         "hub_animals",
         "hub_coloring_pages",
         "hub_crabs",
-        "hub_easy",
+        "hub_for_kids",
         "hub_fantasy",
         "hub_fantasy_creatures",
-        "hub_for_kids",
         "hub_octopus",
         "hub_whales"
       ],
@@ -54158,7 +54006,6 @@
         "hub_plushies",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_anime_girls",
         "hub_holidays"
       ],
@@ -54183,7 +54030,6 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_for_kids",
-        "hub_easy",
         "hub_anime_girls",
         "hub_holidays"
       ],
@@ -54355,10 +54201,8 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_detailed_for_adults",
-        "hub_mandalas",
         "hub_animals",
-        "hub_for_kids",
-        "hub_easy"
+        "hub_for_kids"
       ],
       "parentHubId": "hub_animals",
       "childHubIds": [],
@@ -54381,9 +54225,7 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_for_kids",
-        "hub_easy",
-        "hub_detailed_for_adults",
-        "hub_mandalas"
+        "hub_detailed_for_adults"
       ],
       "indexable": true,
       "sitemap": true,
@@ -54572,7 +54414,7 @@
       "h1": "Spiders Coloring Pages",
       "metaTitle": "Spiders Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable spiders coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore spiders coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 28 printable pages in the Spiders collection, then search or filter the available designs.",
       "assetCount": 28,
       "assetIds": [
         "anime-girls__anime-girl-summoning-jutsu-spiders__22b5057f1f",
@@ -54800,7 +54642,6 @@
         "hub_coloring_pages",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_fantasy",
         "hub_plants",
         "hub_fantasy_creatures",
@@ -54822,10 +54663,9 @@
       "internalLinkingTargets": [
         "hub_animals",
         "hub_coloring_pages",
-        "hub_easy",
+        "hub_for_kids",
         "hub_fantasy",
         "hub_fantasy_creatures",
-        "hub_for_kids",
         "hub_insects"
       ],
       "indexable": true,
@@ -54851,7 +54691,7 @@
       "h1": "St. Patrick's Day Coloring Pages",
       "metaTitle": "St. Patrick's Day Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable st. patrick's day coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore st. patrick's day coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 20 printable pages in the St. Patrick's Day collection, then search or filter the available designs.",
       "assetCount": 20,
       "assetIds": [
         "st-patricks-day__st-patricks-day-celtic-knot-mandala-pattern-coloring-page__46e5c80f77",
@@ -55434,8 +55274,6 @@
       "relatedHubIds": [
         "hub_coloring_pages",
         "hub_detailed_for_adults",
-        "hub_mandalas",
-        "hub_geometric",
         "hub_animals",
         "hub_food",
         "hub_dragons",
@@ -55470,8 +55308,6 @@
         "hub_food",
         "hub_coloring_pages",
         "hub_detailed_for_adults",
-        "hub_mandalas",
-        "hub_geometric",
         "hub_animals",
         "hub_fish",
         "hub_dragons",
@@ -55853,7 +55689,6 @@
         "hub_plushies",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_prehistoric_animals",
         "hub_sushi",
         "hub_sharks",
@@ -55882,7 +55717,6 @@
         "hub_plushies",
         "hub_prehistoric_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_sharks",
         "hub_sushi"
       ],
@@ -55905,7 +55739,7 @@
       "h1": "Trains Coloring Pages",
       "metaTitle": "Trains Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable trains coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore trains coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 102 printable pages in the Trains collection, then search or filter the available designs.",
       "assetCount": 102,
       "assetIds": [
         "chibi__chibi-holiday-halloween-ghostly-train-passing-through-tunnel-coloring-pa__e62e0a874f",
@@ -56184,8 +56018,6 @@
       "relatedHubIds": [
         "hub_coloring_pages",
         "hub_detailed_for_adults",
-        "hub_mandalas",
-        "hub_geometric",
         "hub_animals",
         "hub_vehicles",
         "hub_birds",
@@ -56209,8 +56041,6 @@
         "hub_animals",
         "hub_coloring_pages",
         "hub_detailed_for_adults",
-        "hub_geometric",
-        "hub_mandalas",
         "hub_vehicles",
         "hub_steam_train"
       ],
@@ -56237,7 +56067,7 @@
       "h1": "Trees Coloring Pages",
       "metaTitle": "Trees Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable trees coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore trees coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 38 printable pages in the Trees collection, then search or filter the available designs.",
       "assetCount": 38,
       "assetIds": [
         "anime-girls__anime-girl-summoning-jutsu-kittens-sitting-on-tree__8caa305aa0",
@@ -56510,7 +56340,6 @@
         "hub_coloring_pages",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_fantasy",
         "hub_plants",
         "hub_fantasy_creatures",
@@ -56561,7 +56390,7 @@
       "h1": "Triceratops Coloring Pages",
       "metaTitle": "Triceratops Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable triceratops coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore triceratops coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 22 printable pages in the Triceratops collection, then search or filter the available designs.",
       "assetCount": 22,
       "assetIds": [
         "anime-girls__anime-girl-summoning-jutsu-triceratops-dino__62a38d00e9",
@@ -56832,7 +56661,7 @@
       "h1": "Turtles Coloring Pages",
       "metaTitle": "Turtles Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable turtles coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore turtles coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 44 printable pages in the Turtles collection, then search or filter the available designs.",
       "assetCount": 44,
       "assetIds": [
         "chibi__chibi-plushie-sea-turtle-hatchling__5ca385e431",
@@ -57112,7 +56941,6 @@
         "hub_coloring_pages",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_fantasy",
         "hub_fantasy_creatures",
         "hub_sea_life",
@@ -57134,10 +56962,9 @@
       "internalLinkingTargets": [
         "hub_animals",
         "hub_coloring_pages",
-        "hub_easy",
+        "hub_for_kids",
         "hub_fantasy",
         "hub_fantasy_creatures",
-        "hub_for_kids",
         "hub_reptiles"
       ],
       "indexable": true,
@@ -57163,7 +56990,7 @@
       "h1": "Unicorns Coloring Pages",
       "metaTitle": "Unicorns Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable unicorns coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore unicorns coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 38 printable pages in the Unicorns collection, then search or filter the available designs.",
       "assetCount": 38,
       "assetIds": [
         "anime-girls__anime-girl-summoning-unicorn-plushies__2038d034d6",
@@ -57521,7 +57348,7 @@
       "h1": "Vehicles Coloring Pages",
       "metaTitle": "Vehicles Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable vehicles coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore vehicles coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 373 printable pages in the Vehicles collection, then search or filter the available designs.",
       "assetCount": 373,
       "assetIds": [
         "anime-girls__anime-girl-driving-race-car-driving__07de9e75de",
@@ -58081,8 +57908,6 @@
       "relatedHubIds": [
         "hub_coloring_pages",
         "hub_detailed_for_adults",
-        "hub_mandalas",
-        "hub_geometric",
         "hub_animals",
         "hub_cars",
         "hub_birds",
@@ -58110,8 +57935,6 @@
         "hub_cars",
         "hub_coloring_pages",
         "hub_detailed_for_adults",
-        "hub_geometric",
-        "hub_mandalas",
         "hub_planes",
         "hub_trains"
       ],
@@ -58322,7 +58145,7 @@
       "h1": "Whales Coloring Pages",
       "metaTitle": "Whales Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable whales coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore whales coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 40 printable pages in the Whales collection, then search or filter the available designs.",
       "assetCount": 40,
       "assetIds": [
         "animals__animals-whales__9b53c68a15",
@@ -58624,7 +58447,6 @@
         "hub_coloring_pages",
         "hub_animals",
         "hub_for_kids",
-        "hub_easy",
         "hub_dogs",
         "hub_sea_life",
         "hub_insects",
@@ -58831,7 +58653,6 @@
       "relatedHubIds": [
         "hub_coloring_pages",
         "hub_for_kids",
-        "hub_easy",
         "hub_chibi",
         "hub_holidays",
         "hub_halloween",
@@ -58858,7 +58679,6 @@
         "hub_halloween",
         "hub_coloring_pages",
         "hub_for_kids",
-        "hub_easy",
         "hub_chibi",
         "hub_holidays",
         "hub_mushrooms",
@@ -59035,7 +58855,6 @@
       "relatedHubIds": [
         "hub_coloring_pages",
         "hub_for_kids",
-        "hub_easy",
         "hub_fantasy",
         "hub_chibi",
         "hub_medieval_fantasy",
@@ -59062,7 +58881,6 @@
         "hub_fantasy",
         "hub_coloring_pages",
         "hub_for_kids",
-        "hub_easy",
         "hub_chibi",
         "hub_medieval_fantasy",
         "hub_owls",
@@ -59319,7 +59137,7 @@
       "h1": "World Landmarks Coloring Pages",
       "metaTitle": "World Landmarks Coloring Pages | Printable Coloring Pages",
       "metaDescription": "Browse printable world landmarks coloring pages selected from approved production assets, with no indexable per-image pages.",
-      "intro": "Explore world landmarks coloring pages grouped from descriptive filenames and approved production metadata.",
+      "intro": "Browse 47 printable pages in the World Landmarks collection, then search or filter the available designs.",
       "assetCount": 47,
       "assetIds": [
         "world-landmarks__world-landmarks-abu-simbel-temples__46e1dff5bc",
@@ -59462,7 +59280,7 @@
         "hub_buildings",
         "hub_bridges"
       ],
-      "parentHubId": "hub_landmarks",
+      "parentHubId": "hub_buildings",
       "childHubIds": [],
       "breadcrumbPath": [
         {
@@ -59470,8 +59288,12 @@
           "route": "/coloring-pages"
         },
         {
+          "label": "Buildings",
+          "route": "/coloring-pages/buildings"
+        },
+        {
           "label": "World Landmarks",
-          "route": "/coloring-pages/world-landmarks"
+          "route": ""
         }
       ],
       "internalLinkingTargets": [
@@ -59589,7 +59411,6 @@
       "relatedHubIds": [
         "hub_coloring_pages",
         "hub_for_kids",
-        "hub_easy",
         "hub_fantasy",
         "hub_chibi",
         "hub_fantasy_creatures",
@@ -59615,7 +59436,6 @@
         "hub_fantasy",
         "hub_coloring_pages",
         "hub_for_kids",
-        "hub_easy",
         "hub_chibi",
         "hub_fantasy_creatures",
         "hub_dragons"
@@ -59770,8 +59590,6 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_detailed_for_adults",
-        "hub_mandalas",
-        "hub_geometric",
         "hub_animals",
         "hub_anime_girls"
       ],
@@ -59796,9 +59614,7 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_anime_girls",
-        "hub_detailed_for_adults",
-        "hub_mandalas",
-        "hub_geometric"
+        "hub_detailed_for_adults"
       ],
       "indexable": true,
       "sitemap": true,
@@ -59819,7 +59635,7 @@
       "h1": "Dodo Coloring Pages",
       "metaTitle": "Dodo Coloring Pages to Print",
       "metaDescription": "Browse 11 dodo coloring pages with real previews, gallery search, and PNG, JPG, or WebP downloads for printing.",
-      "intro": "Dodo Coloring Pages gathers 11 printable pages supported by actual runtime assets. Start with the previews, then search or filter within the collection.",
+      "intro": "Browse 11 printable pages in the Dodo collection, then search or filter the available designs.",
       "assetCount": 11,
       "assetIds": [
         "anime-girls__anime-girl-dodo-bird-hoodie-plushie__18189d3f2f",
@@ -59935,7 +59751,6 @@
         "hub_plushies",
         "hub_birds",
         "hub_for_kids",
-        "hub_easy",
         "hub_anime_girls",
         "hub_chibi"
       ],
@@ -59961,7 +59776,6 @@
         "hub_plushies",
         "hub_birds",
         "hub_for_kids",
-        "hub_easy",
         "hub_anime_girls",
         "hub_chibi"
       ],
@@ -59996,7 +59810,7 @@
       "h1": "Bamboo Coloring Pages",
       "metaTitle": "Bamboo Coloring Pages to Print",
       "metaDescription": "Browse 7 bamboo coloring pages with real previews, gallery search, and PNG, JPG, or WebP downloads for printing.",
-      "intro": "Bamboo Coloring Pages gathers 7 printable pages supported by actual runtime assets. Start with the previews, then search or filter within the collection.",
+      "intro": "Browse 7 printable pages in the Bamboo collection, then search or filter the available designs.",
       "assetCount": 7,
       "assetIds": [
         "indoor-plants__indoor-plants-bamboo-palm__b182761ba2",
@@ -60098,8 +59912,6 @@
         "hub_indoor_plants",
         "hub_coloring_pages",
         "hub_detailed_for_adults",
-        "hub_geometric",
-        "hub_mandalas",
         "hub_food",
         "hub_sushi",
         "hub_plants"
@@ -60124,8 +59936,6 @@
         "hub_indoor_plants",
         "hub_coloring_pages",
         "hub_detailed_for_adults",
-        "hub_geometric",
-        "hub_mandalas",
         "hub_food",
         "hub_sushi",
         "hub_plants"
@@ -60161,7 +59971,7 @@
       "h1": "Steam Train Coloring Pages",
       "metaTitle": "Steam Train Coloring Pages to Print",
       "metaDescription": "Browse 15 steam train coloring pages with real previews, gallery search, and PNG, JPG, or WebP downloads for printing.",
-      "intro": "Steam Train Coloring Pages gathers 15 printable pages supported by actual runtime assets. Start with the previews, then search or filter within the collection.",
+      "intro": "Browse 15 printable pages in the Steam Train collection, then search or filter the available designs.",
       "assetCount": 15,
       "assetIds": [
         "mandala-geometry-patterns__mandala-geometry-patterns-trains-locomotives-classic-steam-train-at-smal__937925e879",
@@ -60284,8 +60094,6 @@
         "hub_trains",
         "hub_coloring_pages",
         "hub_detailed_for_adults",
-        "hub_geometric",
-        "hub_mandalas",
         "hub_vehicles",
         "hub_cars",
         "hub_bridges"
@@ -60310,8 +60118,6 @@
         "hub_trains",
         "hub_coloring_pages",
         "hub_detailed_for_adults",
-        "hub_geometric",
-        "hub_mandalas",
         "hub_vehicles",
         "hub_cars",
         "hub_bridges"
@@ -60347,7 +60153,7 @@
       "h1": "Birthday Celebration Coloring Pages",
       "metaTitle": "Birthday Celebration Coloring Pages to Print",
       "metaDescription": "Browse 190 birthday celebration coloring pages with real previews, gallery search, and PNG, JPG, or WebP downloads for printing.",
-      "intro": "Birthday Celebration Coloring Pages gathers 190 printable pages supported by actual runtime assets. Start with the previews, then search or filter within the collection.",
+      "intro": "Browse 190 printable pages in the Birthday Celebration collection, then search or filter the available designs.",
       "assetCount": 190,
       "assetIds": [
         "holiday__holiday-birthday-celebration-cat__d6e01d08ac",
@@ -60717,7 +60523,7 @@
       "h1": "Christmas Plushies Coloring Pages",
       "metaTitle": "Christmas Plushies Coloring Pages to Print",
       "metaDescription": "Browse 183 christmas plushies coloring pages with real previews, gallery search, and PNG, JPG, or WebP downloads for printing.",
-      "intro": "Christmas Plushies Coloring Pages gathers 183 printable pages supported by actual runtime assets. Start with the previews, then search or filter within the collection.",
+      "intro": "Browse 183 printable pages in the Christmas Plushies collection, then search or filter the available designs.",
       "assetCount": 183,
       "assetIds": [
         "holiday__holiday-christmas-plushie-alligator-family__e57629ca9d",
@@ -61080,7 +60886,7 @@
       "h1": "Halloween Costumes Coloring Pages",
       "metaTitle": "Halloween Costumes Coloring Pages to Print",
       "metaDescription": "Browse 161 halloween costumes coloring pages with real previews, gallery search, and PNG, JPG, or WebP downloads for printing.",
-      "intro": "Halloween Costumes Coloring Pages gathers 161 printable pages supported by actual runtime assets. Start with the previews, then search or filter within the collection.",
+      "intro": "Browse 161 printable pages in the Halloween Costumes collection, then search or filter the available designs.",
       "assetCount": 161,
       "assetIds": [
         "holiday__holiday-halloween-costume-plushie-alligator-family__34d6f58480",
@@ -61421,7 +61227,7 @@
       "h1": "Summoning Coloring Pages",
       "metaTitle": "Summoning Coloring Pages to Print",
       "metaDescription": "Browse 336 summoning coloring pages with real previews, gallery search, and PNG, JPG, or WebP downloads for printing.",
-      "intro": "Summoning Coloring Pages gathers 336 printable pages supported by actual runtime assets. Start with the previews, then search or filter within the collection.",
+      "intro": "Browse 336 printable pages in the Summoning collection, then search or filter the available designs.",
       "assetCount": 336,
       "assetIds": [
         "anime-girls__anime-girl-demon-summoning__86bc23e91f",
@@ -61937,7 +61743,7 @@
       "h1": "Terrier Coloring Pages",
       "metaTitle": "Terrier Coloring Pages to Print",
       "metaDescription": "Browse 29 terrier coloring pages with real previews, gallery search, and PNG, JPG, or WebP downloads for printing.",
-      "intro": "Terrier Coloring Pages gathers 29 printable pages supported by actual runtime assets. Start with the previews, then search or filter within the collection.",
+      "intro": "Browse 29 printable pages in the Terrier collection, then search or filter the available designs.",
       "assetCount": 29,
       "assetIds": [
         "chibi__chibi-animals-pets-dogs-american-staffordshire-terrier__0d5f95f4f2",
@@ -62084,9 +61890,7 @@
         "hub_coloring_pages",
         "hub_animals",
         "hub_detailed_for_adults",
-        "hub_geometric",
         "hub_geometric_dogs",
-        "hub_mandalas",
         "hub_chibi"
       ],
       "parentHubId": "hub_dogs",
@@ -62110,9 +61914,7 @@
         "hub_coloring_pages",
         "hub_animals",
         "hub_detailed_for_adults",
-        "hub_geometric",
         "hub_geometric_dogs",
-        "hub_mandalas",
         "hub_chibi"
       ],
       "indexable": true,
@@ -62146,7 +61948,7 @@
       "h1": "Woolly Mammoth Coloring Pages",
       "metaTitle": "Woolly Mammoth Coloring Pages to Print",
       "metaDescription": "Browse 19 woolly mammoth coloring pages with real previews, gallery search, and PNG, JPG, or WebP downloads for printing.",
-      "intro": "Woolly Mammoth Coloring Pages gathers 19 printable pages supported by actual runtime assets. Start with the previews, then search or filter within the collection.",
+      "intro": "Browse 19 printable pages in the Woolly Mammoth collection, then search or filter the available designs.",
       "assetCount": 19,
       "assetIds": [
         "anime-girls__anime-girl-summoning-jutsu-woolly-mammoth__49c45dca6d",
@@ -62340,7 +62142,7 @@
       "h1": "Saber Toothed Tiger Coloring Pages",
       "metaTitle": "Saber Toothed Tiger Coloring Pages to Print",
       "metaDescription": "Browse 13 saber toothed tiger coloring pages with real previews, gallery search, and PNG, JPG, or WebP downloads for printing.",
-      "intro": "Saber Toothed Tiger Coloring Pages gathers 13 printable pages supported by actual runtime assets. Start with the previews, then search or filter within the collection.",
+      "intro": "Browse 13 printable pages in the Saber Toothed Tiger collection, then search or filter the available designs.",
       "assetCount": 13,
       "assetIds": [
         "anime-girls__anime-girl-saber-toothed-tiger-hoodie-plushie__0df82031f8",
@@ -62522,7 +62324,7 @@
       "h1": "Magic Coloring Pages",
       "metaTitle": "Magic Coloring Pages to Print",
       "metaDescription": "Browse 35 magic coloring pages with real previews, gallery search, and PNG, JPG, or WebP downloads for printing.",
-      "intro": "Magic Coloring Pages gathers 35 printable pages supported by actual runtime assets. Start with the previews, then search or filter within the collection.",
+      "intro": "Browse 35 printable pages in the Magic collection, then search or filter the available designs.",
       "assetCount": 35,
       "assetIds": [
         "anime-girls__anime-girl-summoning-magic-cats__be349530e6",
@@ -62674,7 +62476,6 @@
         "hub_fantasy",
         "hub_coloring_pages",
         "hub_for_kids",
-        "hub_easy",
         "hub_chibi",
         "hub_dungeon",
         "hub_forest",
@@ -62700,7 +62501,6 @@
         "hub_fantasy",
         "hub_coloring_pages",
         "hub_for_kids",
-        "hub_easy",
         "hub_chibi",
         "hub_dungeon",
         "hub_forest",
@@ -62737,7 +62537,7 @@
       "h1": "Ankylosaurus Coloring Pages",
       "metaTitle": "Ankylosaurus Coloring Pages to Print",
       "metaDescription": "Browse 11 ankylosaurus coloring pages with real previews, gallery search, and PNG, JPG, or WebP downloads for printing.",
-      "intro": "Ankylosaurus Coloring Pages gathers 11 printable pages supported by actual runtime assets. Start with the previews, then search or filter within the collection.",
+      "intro": "Browse 11 printable pages in the Ankylosaurus collection, then search or filter the available designs.",
       "assetCount": 11,
       "assetIds": [
         "anime-girls__anime-girl-ankylosaurus-hoodie-plushie__c819919e77",
@@ -62853,7 +62653,6 @@
         "hub_plushies",
         "hub_holidays",
         "hub_for_kids",
-        "hub_easy",
         "hub_anime_girls",
         "hub_christmas"
       ],
@@ -62879,7 +62678,6 @@
         "hub_plushies",
         "hub_holidays",
         "hub_for_kids",
-        "hub_easy",
         "hub_anime_girls",
         "hub_christmas"
       ],
@@ -62914,7 +62712,7 @@
       "h1": "Trick or Treat Coloring Pages",
       "metaTitle": "Trick or Treat Coloring Pages to Print",
       "metaDescription": "Browse 11 trick or treat coloring pages with real previews, gallery search, and PNG, JPG, or WebP downloads for printing.",
-      "intro": "Trick or Treat Coloring Pages gathers 11 printable pages supported by actual runtime assets. Start with the previews, then search or filter within the collection.",
+      "intro": "Browse 11 printable pages in the Trick or Treat collection, then search or filter the available designs.",
       "assetCount": 11,
       "assetIds": [
         "chibi__chibi-holiday-halloween-trick-or-treat-children-with-pumpkin-bags-colori__abe00661e0",
@@ -63029,7 +62827,6 @@
         "hub_coloring_pages",
         "hub_holidays",
         "hub_for_kids",
-        "hub_easy",
         "hub_chibi",
         "hub_animals",
         "hub_cute"
@@ -63055,7 +62852,6 @@
         "hub_coloring_pages",
         "hub_holidays",
         "hub_for_kids",
-        "hub_easy",
         "hub_chibi",
         "hub_animals",
         "hub_cute"
@@ -63091,7 +62887,7 @@
       "h1": "Lily Coloring Pages",
       "metaTitle": "Lily Coloring Pages to Print",
       "metaDescription": "Browse 14 lily coloring pages with real previews, gallery search, and PNG, JPG, or WebP downloads for printing.",
-      "intro": "Lily Coloring Pages gathers 14 printable pages supported by actual runtime assets. Start with the previews, then search or filter within the collection.",
+      "intro": "Browse 14 printable pages in the Lily collection, then search or filter the available designs.",
       "assetCount": 14,
       "assetIds": [
         "chibi__chibi-flowers-calla-lily__94920a8fca",
@@ -63215,7 +63011,6 @@
         "hub_chibi",
         "hub_chibi_flowers",
         "hub_for_kids",
-        "hub_easy",
         "hub_garden"
       ],
       "parentHubId": "hub_flowers",
@@ -63241,7 +63036,6 @@
         "hub_chibi",
         "hub_chibi_flowers",
         "hub_for_kids",
-        "hub_easy",
         "hub_garden"
       ],
       "indexable": true,
@@ -63275,7 +63069,7 @@
       "h1": "Forget-Me-Not Coloring Pages",
       "metaTitle": "Forget-Me-Not Coloring Pages to Print",
       "metaDescription": "Browse 6 forget-me-not coloring pages with real previews, gallery search, and PNG, JPG, or WebP downloads for printing.",
-      "intro": "Forget-Me-Not Coloring Pages gathers 6 printable pages supported by actual runtime assets. Start with the previews, then search or filter within the collection.",
+      "intro": "Browse 6 printable pages in the Forget-Me-Not collection, then search or filter the available designs.",
       "assetCount": 6,
       "assetIds": [
         "chibi__chibi-flowers-forget-me-not__bc7c2e01c7",
@@ -63377,7 +63171,6 @@
         "hub_chibi",
         "hub_chibi_flowers",
         "hub_for_kids",
-        "hub_easy",
         "hub_garden"
       ],
       "parentHubId": "hub_flowers",
@@ -63403,7 +63196,6 @@
         "hub_chibi",
         "hub_chibi_flowers",
         "hub_for_kids",
-        "hub_easy",
         "hub_garden"
       ],
       "indexable": true,
@@ -63437,7 +63229,7 @@
       "h1": "Mosasaurus Coloring Pages",
       "metaTitle": "Mosasaurus Coloring Pages to Print",
       "metaDescription": "Browse 9 mosasaurus coloring pages with real previews, gallery search, and PNG, JPG, or WebP downloads for printing.",
-      "intro": "Mosasaurus Coloring Pages gathers 9 printable pages supported by actual runtime assets. Start with the previews, then search or filter within the collection.",
+      "intro": "Browse 9 printable pages in the Mosasaurus collection, then search or filter the available designs.",
       "assetCount": 9,
       "assetIds": [
         "chibi__chibi-plushie-prehistoric-mosasaurus__e7c98f3020",
@@ -63547,7 +63339,6 @@
         "hub_plushies",
         "hub_holidays",
         "hub_for_kids",
-        "hub_easy",
         "hub_christmas",
         "hub_cute"
       ],
@@ -63573,7 +63364,6 @@
         "hub_plushies",
         "hub_holidays",
         "hub_for_kids",
-        "hub_easy",
         "hub_christmas",
         "hub_cute"
       ],
@@ -63608,7 +63398,7 @@
       "h1": "Plesiosaurus Coloring Pages",
       "metaTitle": "Plesiosaurus Coloring Pages to Print",
       "metaDescription": "Browse 9 plesiosaurus coloring pages with real previews, gallery search, and PNG, JPG, or WebP downloads for printing.",
-      "intro": "Plesiosaurus Coloring Pages gathers 9 printable pages supported by actual runtime assets. Start with the previews, then search or filter within the collection.",
+      "intro": "Browse 9 printable pages in the Plesiosaurus collection, then search or filter the available designs.",
       "assetCount": 9,
       "assetIds": [
         "chibi__chibi-plushie-prehistoric-plesiosaurus__ea6db596f6",
@@ -63718,7 +63508,6 @@
         "hub_plushies",
         "hub_holidays",
         "hub_for_kids",
-        "hub_easy",
         "hub_christmas",
         "hub_cute"
       ],
@@ -63744,7 +63533,6 @@
         "hub_plushies",
         "hub_holidays",
         "hub_for_kids",
-        "hub_easy",
         "hub_christmas",
         "hub_cute"
       ],
@@ -63779,7 +63567,7 @@
       "h1": "Pterodactyl Coloring Pages",
       "metaTitle": "Pterodactyl Coloring Pages to Print",
       "metaDescription": "Browse 9 pterodactyl coloring pages with real previews, gallery search, and PNG, JPG, or WebP downloads for printing.",
-      "intro": "Pterodactyl Coloring Pages gathers 9 printable pages supported by actual runtime assets. Start with the previews, then search or filter within the collection.",
+      "intro": "Browse 9 printable pages in the Pterodactyl collection, then search or filter the available designs.",
       "assetCount": 9,
       "assetIds": [
         "anime-girls__anime-girl-pterodactyl-hoodie-plushie__2b4315b24b",
@@ -63888,7 +63676,6 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_for_kids",
-        "hub_easy",
         "hub_holidays",
         "hub_anime_girls",
         "hub_cute"
@@ -63914,7 +63701,6 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_for_kids",
-        "hub_easy",
         "hub_holidays",
         "hub_anime_girls",
         "hub_cute"
@@ -63950,7 +63736,7 @@
       "h1": "Iguanodon Coloring Pages",
       "metaTitle": "Iguanodon Coloring Pages to Print",
       "metaDescription": "Browse 8 iguanodon coloring pages with real previews, gallery search, and PNG, JPG, or WebP downloads for printing.",
-      "intro": "Iguanodon Coloring Pages gathers 8 printable pages supported by actual runtime assets. Start with the previews, then search or filter within the collection.",
+      "intro": "Browse 8 printable pages in the Iguanodon collection, then search or filter the available designs.",
       "assetCount": 8,
       "assetIds": [
         "chibi__chibi-plushie-prehistoric-iguanodon__d835d9df5c",
@@ -64056,7 +63842,6 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_for_kids",
-        "hub_easy",
         "hub_holidays",
         "hub_cute",
         "hub_animals"
@@ -64082,7 +63867,6 @@
         "hub_coloring_pages",
         "hub_plushies",
         "hub_for_kids",
-        "hub_easy",
         "hub_holidays",
         "hub_cute",
         "hub_animals"
@@ -64118,7 +63902,7 @@
       "h1": "Bulldog Coloring Pages",
       "metaTitle": "Bulldog Coloring Pages to Print",
       "metaDescription": "Browse 8 bulldog coloring pages with real previews, gallery search, and PNG, JPG, or WebP downloads for printing.",
-      "intro": "Bulldog Coloring Pages gathers 8 printable pages supported by actual runtime assets. Start with the previews, then search or filter within the collection.",
+      "intro": "Browse 8 printable pages in the Bulldog collection, then search or filter the available designs.",
       "assetCount": 8,
       "assetIds": [
         "chibi__chibi-animals-pets-dogs-bulldog__82dca02cef",
@@ -64286,7 +64070,7 @@
       "h1": "Collie Coloring Pages",
       "metaTitle": "Collie Coloring Pages to Print",
       "metaDescription": "Browse 8 collie coloring pages with real previews, gallery search, and PNG, JPG, or WebP downloads for printing.",
-      "intro": "Collie Coloring Pages gathers 8 printable pages supported by actual runtime assets. Start with the previews, then search or filter within the collection.",
+      "intro": "Browse 8 printable pages in the Collie collection, then search or filter the available designs.",
       "assetCount": 8,
       "assetIds": [
         "chibi__chibi-animals-pets-dogs-border-collie__d66dc03111",
@@ -64394,8 +64178,7 @@
         "hub_chibi",
         "hub_chibi_dogs",
         "hub_for_kids",
-        "hub_detailed_for_adults",
-        "hub_easy"
+        "hub_detailed_for_adults"
       ],
       "parentHubId": "hub_dogs",
       "childHubIds": [],
@@ -64420,8 +64203,7 @@
         "hub_chibi",
         "hub_chibi_dogs",
         "hub_for_kids",
-        "hub_detailed_for_adults",
-        "hub_easy"
+        "hub_detailed_for_adults"
       ],
       "indexable": true,
       "sitemap": true,
@@ -64454,7 +64236,7 @@
       "h1": "Cookie Coloring Pages",
       "metaTitle": "Cookie Coloring Pages to Print",
       "metaDescription": "Browse 17 cookie coloring pages with real previews, gallery search, and PNG, JPG, or WebP downloads for printing.",
-      "intro": "Cookie Coloring Pages gathers 17 printable pages supported by actual runtime assets. Start with the previews, then search or filter within the collection.",
+      "intro": "Browse 17 printable pages in the Cookie collection, then search or filter the available designs.",
       "assetCount": 17,
       "assetIds": [
         "chibi__chibi-plushie-cookie-character__cbbcab378b",
@@ -64581,8 +64363,6 @@
         "hub_bakery",
         "hub_coloring_pages",
         "hub_detailed_for_adults",
-        "hub_geometric",
-        "hub_mandalas",
         "hub_food",
         "hub_christmas",
         "hub_holidays"
@@ -64607,8 +64387,6 @@
         "hub_bakery",
         "hub_coloring_pages",
         "hub_detailed_for_adults",
-        "hub_geometric",
-        "hub_mandalas",
         "hub_food",
         "hub_christmas",
         "hub_holidays"
@@ -64644,7 +64422,7 @@
       "h1": "Daisy Coloring Pages",
       "metaTitle": "Daisy Coloring Pages to Print",
       "metaDescription": "Browse 10 daisy coloring pages with real previews, gallery search, and PNG, JPG, or WebP downloads for printing.",
-      "intro": "Daisy Coloring Pages gathers 10 printable pages supported by actual runtime assets. Start with the previews, then search or filter within the collection.",
+      "intro": "Browse 10 printable pages in the Daisy collection, then search or filter the available designs.",
       "assetCount": 10,
       "assetIds": [
         "chibi__chibi-flowers-daisy__4e83fb3127",
@@ -64758,7 +64536,6 @@
         "hub_chibi",
         "hub_chibi_flowers",
         "hub_for_kids",
-        "hub_easy",
         "hub_detailed_for_adults"
       ],
       "parentHubId": "hub_flowers",
@@ -64784,7 +64561,6 @@
         "hub_chibi",
         "hub_chibi_flowers",
         "hub_for_kids",
-        "hub_easy",
         "hub_detailed_for_adults"
       ],
       "indexable": true,
@@ -64818,7 +64594,7 @@
       "h1": "Pteranodon Coloring Pages",
       "metaTitle": "Pteranodon Coloring Pages to Print",
       "metaDescription": "Browse 6 pteranodon coloring pages with real previews, gallery search, and PNG, JPG, or WebP downloads for printing.",
-      "intro": "Pteranodon Coloring Pages gathers 6 printable pages supported by actual runtime assets. Start with the previews, then search or filter within the collection.",
+      "intro": "Browse 6 printable pages in the Pteranodon collection, then search or filter the available designs.",
       "assetCount": 6,
       "assetIds": [
         "anime-girls__anime-girl-summoning-jutsu-baby-pteranodon-plushies__b8eca7a99c",
@@ -64980,7 +64756,7 @@
       "h1": "Nigiri Coloring Pages",
       "metaTitle": "Nigiri Coloring Pages to Print",
       "metaDescription": "Browse 16 nigiri coloring pages with real previews, gallery search, and PNG, JPG, or WebP downloads for printing.",
-      "intro": "Nigiri Coloring Pages gathers 16 printable pages supported by actual runtime assets. Start with the previews, then search or filter within the collection.",
+      "intro": "Browse 16 printable pages in the Nigiri collection, then search or filter the available designs.",
       "assetCount": 16,
       "assetIds": [
         "mandala-geometry-patterns__mandala-geometry-patterns-sushi-aburi-ebi-nigiri__e6a7198dae",
@@ -65106,8 +64882,6 @@
         "hub_coloring_pages",
         "hub_detailed_for_adults",
         "hub_food",
-        "hub_geometric",
-        "hub_mandalas",
         "hub_animals",
         "hub_sea_life"
       ],
@@ -65132,8 +64906,6 @@
         "hub_coloring_pages",
         "hub_detailed_for_adults",
         "hub_food",
-        "hub_geometric",
-        "hub_mandalas",
         "hub_animals",
         "hub_sea_life"
       ],
@@ -65168,7 +64940,7 @@
       "h1": "Orchid Coloring Pages",
       "metaTitle": "Orchid Coloring Pages to Print",
       "metaDescription": "Browse 9 orchid coloring pages with real previews, gallery search, and PNG, JPG, or WebP downloads for printing.",
-      "intro": "Orchid Coloring Pages gathers 9 printable pages supported by actual runtime assets. Start with the previews, then search or filter within the collection.",
+      "intro": "Browse 9 printable pages in the Orchid collection, then search or filter the available designs.",
       "assetCount": 9,
       "assetIds": [
         "chibi__chibi-flowers-orchid__8683825abb",
@@ -65339,7 +65111,7 @@
       "h1": "Poppy Coloring Pages",
       "metaTitle": "Poppy Coloring Pages to Print",
       "metaDescription": "Browse 7 poppy coloring pages with real previews, gallery search, and PNG, JPG, or WebP downloads for printing.",
-      "intro": "Poppy Coloring Pages gathers 7 printable pages supported by actual runtime assets. Start with the previews, then search or filter within the collection.",
+      "intro": "Browse 7 printable pages in the Poppy collection, then search or filter the available designs.",
       "assetCount": 7,
       "assetIds": [
         "chibi__chibi-flowers-iceland-poppy__c450d66a03",
@@ -65434,7 +65206,6 @@
         "hub_chibi",
         "hub_chibi_flowers",
         "hub_for_kids",
-        "hub_easy",
         "hub_detailed_for_adults"
       ],
       "parentHubId": "hub_flowers",
@@ -65460,7 +65231,6 @@
         "hub_chibi",
         "hub_chibi_flowers",
         "hub_for_kids",
-        "hub_easy",
         "hub_detailed_for_adults"
       ],
       "indexable": true,
@@ -65494,7 +65264,7 @@
       "h1": "Lotus Coloring Pages",
       "metaTitle": "Lotus Coloring Pages to Print",
       "metaDescription": "Browse 6 lotus coloring pages with real previews, gallery search, and PNG, JPG, or WebP downloads for printing.",
-      "intro": "Lotus Coloring Pages gathers 6 printable pages supported by actual runtime assets. Start with the previews, then search or filter within the collection.",
+      "intro": "Browse 6 printable pages in the Lotus collection, then search or filter the available designs.",
       "assetCount": 6,
       "assetIds": [
         "chibi__chibi-flowers-lotus__0d87de91bc",
@@ -65589,8 +65359,6 @@
         "hub_coloring_pages",
         "hub_plants",
         "hub_detailed_for_adults",
-        "hub_geometric",
-        "hub_mandalas",
         "hub_chibi",
         "hub_chibi_flowers"
       ],
@@ -65615,8 +65383,6 @@
         "hub_coloring_pages",
         "hub_plants",
         "hub_detailed_for_adults",
-        "hub_geometric",
-        "hub_mandalas",
         "hub_chibi",
         "hub_chibi_flowers"
       ],
@@ -65651,7 +65417,7 @@
       "h1": "Palm Coloring Pages",
       "metaTitle": "Palm Coloring Pages to Print",
       "metaDescription": "Browse 6 palm coloring pages with real previews, gallery search, and PNG, JPG, or WebP downloads for printing.",
-      "intro": "Palm Coloring Pages gathers 6 printable pages supported by actual runtime assets. Start with the previews, then search or filter within the collection.",
+      "intro": "Browse 6 printable pages in the Palm collection, then search or filter the available designs.",
       "assetCount": 6,
       "assetIds": [
         "indoor-plants__indoor-plants-areca-palm__454f9da715",
@@ -65747,12 +65513,11 @@
         }
       ],
       "relatedHubIds": [
-        "hub_flowers",
         "hub_coloring_pages",
         "hub_indoor_plants",
         "hub_plants"
       ],
-      "parentHubId": "hub_flowers",
+      "parentHubId": "hub_indoor_plants",
       "childHubIds": [],
       "breadcrumbPath": [
         {
@@ -65760,8 +65525,8 @@
           "route": "/coloring-pages"
         },
         {
-          "label": "Flowers",
-          "route": "/coloring-pages/flowers"
+          "label": "Indoor Plants",
+          "route": "/coloring-pages/indoor-plants"
         },
         {
           "label": "Palm",
@@ -65769,7 +65534,6 @@
         }
       ],
       "internalLinkingTargets": [
-        "hub_flowers",
         "hub_coloring_pages",
         "hub_indoor_plants",
         "hub_plants"
@@ -65805,7 +65569,7 @@
       "h1": "Leprechaun Coloring Pages",
       "metaTitle": "Leprechaun Coloring Pages to Print",
       "metaDescription": "Browse 9 leprechaun coloring pages with real previews, gallery search, and PNG, JPG, or WebP downloads for printing.",
-      "intro": "Leprechaun Coloring Pages gathers 9 printable pages supported by actual runtime assets. Start with the previews, then search or filter within the collection.",
+      "intro": "Browse 9 printable pages in the Leprechaun collection, then search or filter the available designs.",
       "assetCount": 9,
       "assetIds": [
         "fantasy__fantasy-creatures-leprechaun__37036955f1",
@@ -65976,7 +65740,7 @@
       "h1": "Salmon Coloring Pages",
       "metaTitle": "Salmon Coloring Pages to Print",
       "metaDescription": "Browse 11 salmon coloring pages with real previews, gallery search, and PNG, JPG, or WebP downloads for printing.",
-      "intro": "Salmon Coloring Pages gathers 11 printable pages supported by actual runtime assets. Start with the previews, then search or filter within the collection.",
+      "intro": "Browse 11 printable pages in the Salmon collection, then search or filter the available designs.",
       "assetCount": 11,
       "assetIds": [
         "mandala-geometry-patterns__mandala-geometry-patterns-sushi-aburi-salmon-nigiri__6009e02cb8",
@@ -66091,8 +65855,6 @@
         "hub_coloring_pages",
         "hub_detailed_for_adults",
         "hub_food",
-        "hub_geometric",
-        "hub_mandalas",
         "hub_animals",
         "hub_ocean"
       ],
@@ -66117,8 +65879,6 @@
         "hub_coloring_pages",
         "hub_detailed_for_adults",
         "hub_food",
-        "hub_geometric",
-        "hub_mandalas",
         "hub_animals",
         "hub_ocean"
       ],
@@ -66153,7 +65913,7 @@
       "h1": "Gingerbread Coloring Pages",
       "metaTitle": "Gingerbread Coloring Pages to Print",
       "metaDescription": "Browse 10 gingerbread coloring pages with real previews, gallery search, and PNG, JPG, or WebP downloads for printing.",
-      "intro": "Gingerbread Coloring Pages gathers 10 printable pages supported by actual runtime assets. Start with the previews, then search or filter within the collection.",
+      "intro": "Browse 10 printable pages in the Gingerbread collection, then search or filter the available designs.",
       "assetCount": 10,
       "assetIds": [
         "chibi__chibi-plushie-gingerbread-character__31a1a21871",
@@ -66266,8 +66026,6 @@
         "hub_christmas",
         "hub_holidays",
         "hub_detailed_for_adults",
-        "hub_geometric",
-        "hub_mandalas",
         "hub_buildings"
       ],
       "parentHubId": "hub_bakery",
@@ -66292,8 +66050,6 @@
         "hub_christmas",
         "hub_holidays",
         "hub_detailed_for_adults",
-        "hub_geometric",
-        "hub_mandalas",
         "hub_buildings"
       ],
       "indexable": true,

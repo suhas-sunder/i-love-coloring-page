@@ -3,75 +3,58 @@ import Link from "next/link";
 
 import { JsonLdScript } from "@/components/seo/JsonLdScript";
 import { TrustPage, TrustSection } from "@/components/site/TrustPage";
+import { siteIdentity } from "@/config/siteIdentity";
 import { buildTrustPageJsonLd } from "@/lib/seo/pageJsonLd";
-import { getCanonicalUrl, siteConfig } from "@/lib/site/siteConfig";
+import { getCanonicalUrl } from "@/lib/site/siteConfig";
 
 const canonical = getCanonicalUrl("/affiliate-disclosure");
+const title = "Affiliate Disclosure";
+const description = `Current affiliate-link status and disclosure practices for ${siteIdentity.siteName}.`;
+const contactEmail = siteIdentity.publicContactEmail;
 
 export const metadata: Metadata = {
-  title: "Affiliate Disclosure",
-  description: "Read the draft affiliate disclosure for future recommendation or referral links on I Love Coloring Page.",
+  title,
+  description,
   alternates: { canonical },
-  openGraph: {
-    title: "Affiliate Disclosure",
-    description: "Draft affiliate disclosure for future recommendation or referral links.",
-    url: canonical,
-    type: "website",
-  },
-  twitter: {
-    card: "summary",
-    title: "Affiliate Disclosure",
-    description: "Draft affiliate disclosure for future recommendation or referral links.",
-  },
+  openGraph: { title, description, url: canonical, type: "website" },
+  twitter: { card: "summary", title, description },
 };
 
 export default function AffiliateDisclosurePage() {
   return (
     <TrustPage
-      eyebrow="Draft disclosure"
-      title="Affiliate Disclosure"
-      intro="Affiliate links are not active in this round, but this page prepares the site for future recommendation or referral content."
-      reviewNote="Draft requiring owner/legal review before affiliate links are used."
+      eyebrow="Disclosure"
+      title={title}
+      intro="No affiliate links are currently active on this site. This page explains what will change before affiliate monetization begins."
     >
       <JsonLdScript
         id="jsonld-affiliate-disclosure"
-        data={buildTrustPageJsonLd({
-          path: "/affiliate-disclosure",
-          title: "Affiliate Disclosure",
-          description: metadata.description as string,
-          schemaType: "WebPage",
-        })}
+        data={buildTrustPageJsonLd({ path: "/affiliate-disclosure", title, description, schemaType: "WebPage" })}
       />
-      <TrustSection title="How affiliate links may work">
+
+      <TrustSection title="Last updated">
+        <p>{siteIdentity.policyLastUpdatedLabel}</p>
+      </TrustSection>
+
+      <TrustSection title="Current status">
         <p>
-          In the future, I Love Coloring Page may link to products, supplies, books, printing tools, or other resources. If an affiliate relationship is
-          active, the site may earn a commission from qualifying purchases or referral links at no additional cost to the visitor.
+          The site currently has no active affiliate links or documented affiliate program relationships. It does not earn commissions from ordinary
+          printable-page links, Print actions, or download actions.
         </p>
       </TrustSection>
 
-      <TrustSection title="Where disclosures should appear">
+      <TrustSection title="If affiliate links are added">
         <p>
-          This page is not a substitute for clear disclosure near affiliate content. If affiliate links are added, a simple disclosure should appear
-          close to the recommendation or link so visitors can understand the relationship before clicking.
+          Qualifying links will be disclosed clearly near the relevant content so visitors can understand the relationship before clicking. This page
+          will be updated before affiliate monetization begins.
         </p>
       </TrustSection>
 
-      <TrustSection title="Editorial independence">
+      <TrustSection title="Questions">
         <p>
-          Future affiliate content should be chosen because it is relevant to printable coloring, crafts, classrooms, or family activities. Affiliate
-          compensation should not change the need for useful, honest, and clearly labeled recommendations.
+          Questions about affiliate or partnership plans can be sent to <a href={`mailto:${contactEmail}`}>{contactEmail}</a> or through the{" "}
+          <Link href="/contact">contact page</Link>.
         </p>
-        {siteConfig.contactEmail ? (
-          <p>
-            Questions about affiliate content can be sent to <a href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a> or through the{" "}
-            <Link href="/contact">contact page</Link>.
-          </p>
-        ) : (
-          <p>
-            Questions about affiliate content can be sent through the <Link href="/contact">contact page</Link> once the public contact method is
-            configured.
-          </p>
-        )}
       </TrustSection>
     </TrustPage>
   );

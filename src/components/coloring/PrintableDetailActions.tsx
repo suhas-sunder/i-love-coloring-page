@@ -22,7 +22,7 @@ export function PrintableDetailActions({ item, internalSvgUrl, pngPreviewUrl }: 
       <div className="printable-download-group">
         <h2>Download</h2>
         <Suspense fallback={<p className="utility-note">Loading download options...</p>}>
-          <DownloadMenu title={item.title} internalSvgUrl={internalSvgUrl} pngPreviewUrl={pngPreviewUrl} aria-label={`Download PNG, JPG, or WebP for ${item.title}`} onStatus={setStatus} />
+          <DownloadMenu title={item.title} downloadBaseName={item.downloadBaseName} internalSvgUrl={internalSvgUrl} pngPreviewUrl={pngPreviewUrl} aria-label={`Download PNG, JPG, or WebP for ${item.title}`} onStatus={setStatus} />
         </Suspense>
       </div>
       {status ? <p className="print-preview-status" aria-live="polite">{status}</p> : null}

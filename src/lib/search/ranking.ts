@@ -66,8 +66,16 @@ function compareRankedResults<T extends SearchRankInput>(left: RankedSearchResul
   return left.rankClass - right.rankClass
     || Number(right.titleOnly) - Number(left.titleOnly)
     || normalizeSearchText(left.item.title).length - normalizeSearchText(right.item.title).length
+    || compareDesignNumbers(left.item.title, right.item.title)
     || left.item.title.localeCompare(right.item.title)
     || left.item.stableKey.localeCompare(right.item.stableKey);
+}
+
+function compareDesignNumbers(left: string, right: string) {
+  const leftMatch = left.match(/^(.*)\s+—\s+Design\s+(\d+)$/i);
+  const rightMatch = right.match(/^(.*)\s+—\s+Design\s+(\d+)$/i);
+  if (!leftMatch || !rightMatch || normalizeSearchText(leftMatch[1]) !== normalizeSearchText(rightMatch[1])) return 0;
+  return Number(leftMatch[2]) - Number(rightMatch[2]);
 }
 
 function matchesSearchField(field: string, query: string, queryTokens: string[]) {

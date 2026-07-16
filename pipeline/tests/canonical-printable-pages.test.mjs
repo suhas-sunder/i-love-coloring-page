@@ -42,18 +42,15 @@ test("terminal stable-ID parsing and exact canonical matching reject all mismatc
 });
 
 test("all metadata inputs are unique, bounded, public, canonical, and WebP-only", async () => {
-  const hubById = new Map(hubs.hubs.map((hub) => [hub.hubId, hub]));
-  const metadataTitles = buildExpectedMetadataTitles(printables.records);
   const titles = [];
   const descriptions = [];
   const canonicals = [];
   for (const record of printables.records) {
-    const title = metadataTitles.get(record.assetId);
-    const subject = title.slice(0, -" | Free Printable".length);
-    const description = `Print ${subject} from ${hubById.get(record.primaryHubId).title}. PNG, JPG, or WebP.`;
+    const title = record.metadataTitle;
+    const description = `Print ${record.displayTitle} or download this coloring page as PNG, JPG, or WebP.`;
     const canonical = `https://www.ilovecoloringpage.com${record.canonicalPath}`;
     const image = `https://assets.ilovecoloringpage.com/coloring-pages/${record.webpPath}`;
-    assert.ok(title.length <= 72, record.assetId);
+    assert.ok(title.length <= 128, record.assetId);
     assert.ok(description.length <= 210, record.assetId);
     assert.doesNotMatch(`${title}\n${description}\n${canonical}\n${image}`, /localhost|r2\.dev|cloudflarestorage|amazonaws|\.svg|[A-Za-z]:\\/i);
     assert.match(image, /\/webp\/.+\.webp$/);
@@ -65,8 +62,9 @@ test("all metadata inputs are unique, bounded, public, canonical, and WebP-only"
   const source = await readText("src/lib/coloring/printableMetadata.ts");
   assert.match(source, /title: \{ absolute: title \}/);
   assert.match(source, /robots: \{ index: true, follow: true \}/);
-  assert.match(source, /METADATA_TITLE_MAX_LENGTH = 72/);
-  assert.match(source, /Print \$\{metadataSubject\} from \$\{hub\.title\}\. PNG, JPG, or WebP\./);
+  assert.match(source, /getPrintableTitleModel\(printable\)/);
+  const titleSource = await readText("src/lib/coloring/printableTitles.ts");
+  assert.match(titleSource, /Print \$\{displayTitle\} or download this coloring page as PNG, JPG, or WebP\./);
 });
 
 test("normal cards use canonical image and title links with a separate Print action", async () => {
@@ -88,8 +86,8 @@ test("normal cards use canonical image and title links with a separate Print act
   assert.match(card, /<PrintableCardActions/);
   assert.match(actions, />\s*Print\s*<\/button>/);
   assert.match(gallery, /getPrintablePath\(item\)/);
-  assert.match(data, /title: override\?\.cleanTitle \|\| printable\.publicTitle/);
-  assert.match(data, /altText: override\?\.cleanAltText \|\| printable\.altText/);
+  assert.match(data, /title: titleModel\.displayTitle/);
+  assert.match(data, /altText: titleModel\.shortAccessibleTitle/);
   assert.doesNotMatch(gallery, /runtime-printables\.json|runtime-printable-route-index\.json/);
   assert.match(card, /prefetch=\{false\}/);
   assert.doesNotMatch(card, /href=\{assetUrls\.|<Link[\s\S]{0,120}<button/);
@@ -107,7 +105,7 @@ test("detail page preserves the approved section order and exposes no internal u
   assert.match(breadcrumbs, /aria-current=\{isCurrent \? "page" : undefined\}/);
   assert.match(detail, /<GalleryGrid items=\{relatedItems\}[\s\S]*showPrintActions=\{false\}/);
   assert.match(detail, /getRelatedPrintables\(printable, 8\)/);
-  assert.match(detail, /Print or download the \{naturalTitle\}/);
+  assert.match(detail, /buildPrintableDescription\(printable\)/);
   assert.doesNotMatch(detail, /\{printable\.(?:stableId|slugAndId|canonicalSlug)\}|>SVG<|Download SVG/);
   assert.equal((detail.match(/Related Collections/g) || []).length, 1);
 });

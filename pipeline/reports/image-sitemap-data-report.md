@@ -17,6 +17,6 @@ Each runtime printable uses its frozen canonicalPath as the HTML page location a
 - Inputs: `src/generated/coloring/runtime-printables.json`, `pipeline/manifests/runtime-printable-route-manifest.json`, `src/generated/coloring/runtime-deferred-items.json`
 - Outputs: `pipeline/manifests/image-sitemap-data.json`, `pipeline/reports/image-sitemap-data-report.md`, `public/image-sitemap.xml`
 - Ordering: canonicalPath ascending, then assetId ascending
-- Image title source: runtime-printables.records.publicTitle
+- Image title source: runtime-printables.records.displayTitle
 
 SVG, PNG, thumbnails, deferred records, hub page locations, local URLs, private storage endpoints, and r2.dev URLs are excluded.

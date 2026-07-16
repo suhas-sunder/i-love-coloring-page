@@ -20,7 +20,7 @@ export function generateMetadata(): Metadata {
   return buildColoringMetadata("/coloring-pages");
 }
 
-const SUPPORTING_HUB_SLUGS = ["animals", "plushies", "mandalas", "for-kids", "detailed-for-adults", "christmas", "fantasy", "flowers"];
+const SUPPORTING_HUB_SLUGS = ["animals", "plushies", "buildings", "for-kids", "detailed-for-adults", "christmas", "fantasy", "flowers"];
 
 export default function ColoringPagesLanding() {
   const rootHub = getRootHub();

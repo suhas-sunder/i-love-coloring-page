@@ -7,6 +7,6 @@
 | Canonical page URLs | 6352 |
 | WebP image entries | 6352 |
 | Image titles | pass |
-| File size bytes | 2477178 |
-| SHA-256 | 7c3a701e186b89c9781d814dd19b194835b2c4eb2d7184f8f147bf49e459606a |
+| File size bytes | 2478509 |
+| SHA-256 | 6857214773f668aca3148a9222928f4913b14afad6a05814fccdbb618e77c4b4 |
 | Sitemap index created | fail |

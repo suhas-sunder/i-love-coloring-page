@@ -3,76 +3,66 @@ import Link from "next/link";
 
 import { JsonLdScript } from "@/components/seo/JsonLdScript";
 import { TrustPage, TrustSection } from "@/components/site/TrustPage";
+import { siteIdentity } from "@/config/siteIdentity";
 import { buildTrustPageJsonLd } from "@/lib/seo/pageJsonLd";
-import { getCanonicalUrl, siteConfig } from "@/lib/site/siteConfig";
+import { getCanonicalUrl } from "@/lib/site/siteConfig";
 
 const canonical = getCanonicalUrl("/editorial-policy");
+const title = "Editorial Policy";
+const description = `How ${siteIdentity.siteName} handles public titles, collections, corrections, and established page URLs.`;
+const contactEmail = siteIdentity.publicContactEmail;
 
 export const metadata: Metadata = {
-  title: "Editorial Policy",
-  description: "Learn how I Love Coloring Page organizes collections, reviews printable page usefulness, and handles issue reports.",
+  title,
+  description,
   alternates: { canonical },
-  openGraph: {
-    title: "Editorial Policy",
-    description: "How this printable coloring page library organizes collections and handles issue reports.",
-    url: canonical,
-    type: "website",
-  },
-  twitter: {
-    card: "summary",
-    title: "Editorial Policy",
-    description: "How this printable coloring page library organizes collections and handles issue reports.",
-  },
+  openGraph: { title, description, url: canonical, type: "website" },
+  twitter: { card: "summary", title, description },
 };
 
 export default function EditorialPolicyPage() {
   return (
     <TrustPage
-      eyebrow="Editorial policy"
-      title="Editorial Policy"
-      intro="This page explains how the public coloring page library is organized and how visitors can report issues."
+      eyebrow="Editorial"
+      title={title}
+      intro="This page explains how visible titles, collections, related links, and corrections are handled across the printable library."
     >
       <JsonLdScript
         id="jsonld-editorial-policy"
-        data={buildTrustPageJsonLd({
-          path: "/editorial-policy",
-          title: "Editorial Policy",
-          description: metadata.description as string,
-          schemaType: "WebPage",
-        })}
+        data={buildTrustPageJsonLd({ path: "/editorial-policy", title, description, schemaType: "WebPage" })}
       />
-      <TrustSection title="How collections are organized">
+
+      <TrustSection title="Last updated">
+        <p>{siteIdentity.policyLastUpdatedLabel}</p>
+      </TrustSection>
+
+      <TrustSection title="Titles and duplicate designs">
         <p>
-          Collections are organized around useful visitor intent, such as animals, seasonal topics, fantasy subjects, simple pages for kids, and more
-          detailed printable pages. A topic should have enough useful pages and a clear browsing purpose before it becomes a public collection.
+          Public titles start from reviewed base titles and use deterministic quality rules. High-confidence spelling or formatting corrections may be
+          applied. When multiple pages have the same base title, stable Design N labels distinguish them consistently. Uncertain wording is held for
+          editorial review rather than guessed.
         </p>
       </TrustSection>
 
-      <TrustSection title="How page usefulness is reviewed">
+      <TrustSection title="Established page URLs">
         <p>
-          Public pages should show readable previews, clear titles, working print controls, and PNG downloads. Collections should help visitors choose
-          a page without hiding the gallery behind long text or unrelated links.
+          Correcting visible wording does not silently create a new printable-page address. Established page URLs are preserved when display titles,
+          descriptions, or classifications are corrected, where practical.
         </p>
       </TrustSection>
 
-      <TrustSection title="Quality and safety issues">
+      <TrustSection title="Collections, search, and related links">
         <p>
-          Visitors can report broken images, confusing page titles, accessibility issues, copyright concerns, or image quality problems through the{" "}
-          <Link href="/contact">contact page</Link>
-          {siteConfig.contactEmail ? (
-            <>
-              {" "}
-              or by email at <a href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a>
-            </>
-          ) : null}
-          . Reports should include the page URL and a short explanation.
+          Collections are based on the classifications of pages currently available in the library. Search results and related collections use stable,
+          repeatable rules so the same content does not change merely because files are read in a different order.
         </p>
       </TrustSection>
 
-      <TrustSection title="Advertising and affiliate separation">
+      <TrustSection title="Corrections and availability">
         <p>
-          Advertising wells are labeled Advertisement and should stay separate from navigation, gallery cards, image controls, and download actions.
-          Future affiliate recommendations should be clearly disclosed and should not be mixed into navigation menus.
+          Report confusing titles, classification problems, broken pages, accessibility issues, or rights concerns through the{" "}
+          <Link href="/contact">contact page</Link> or email <a href={`mailto:${contactEmail}`}>{contactEmail}</a>. Include the page URL and a concise
+          explanation. The site may update titles, descriptions, classifications, or availability while preserving established URLs where practical.
         </p>
       </TrustSection>
     </TrustPage>

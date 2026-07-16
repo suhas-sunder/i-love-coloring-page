@@ -13,6 +13,7 @@ import {
 
 type DownloadMenuProps = {
   title: string;
+  downloadBaseName: string;
   internalSvgUrl: string | null | undefined;
   pngPreviewUrl: string | null | undefined;
   "aria-label": string;
@@ -36,7 +37,7 @@ const DOWNLOADERS = {
   webp: downloadWebp,
 };
 
-export function DownloadMenu({ title, internalSvgUrl, pngPreviewUrl, "aria-label": ariaLabel, onStatus }: DownloadMenuProps) {
+export function DownloadMenu({ title, downloadBaseName, internalSvgUrl, pngPreviewUrl, "aria-label": ariaLabel, onStatus }: DownloadMenuProps) {
   const [busyFormat, setBusyFormat] = useState<DownloadOption["format"] | null>(null);
   const [supportedFormats, setSupportedFormats] = useState<readonly PublicDownloadFormat[]>(["png"]);
 
@@ -55,6 +56,7 @@ export function DownloadMenu({ title, internalSvgUrl, pngPreviewUrl, "aria-label
         internalSvgUrl,
         pngPreviewUrl,
         title,
+        filenameBaseName: downloadBaseName,
       });
       onStatus(getDownloadStatusMessage(result, option.label));
     } catch {

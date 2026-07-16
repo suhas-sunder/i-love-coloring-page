@@ -2,27 +2,21 @@ import type { Metadata } from "next";
 
 import { JsonLdScript } from "@/components/seo/JsonLdScript";
 import { TrustPage, TrustSection } from "@/components/site/TrustPage";
+import { siteIdentity } from "@/config/siteIdentity";
 import { buildTrustPageJsonLd } from "@/lib/seo/pageJsonLd";
-import { getCanonicalUrl, siteConfig } from "@/lib/site/siteConfig";
+import { getCanonicalUrl } from "@/lib/site/siteConfig";
 
 const canonical = getCanonicalUrl("/contact");
-const contactEmail = siteConfig.contactEmail;
+const title = `Contact ${siteIdentity.siteName}`;
+const description = `Contact ${siteIdentity.siteName} about site problems, accessibility, corrections, privacy, rights concerns, or partnerships.`;
+const contactEmail = siteIdentity.publicContactEmail;
 
 export const metadata: Metadata = {
-  title: `Contact ${siteConfig.siteName}`,
-  description: `Contact ${siteConfig.siteName} about broken pages, image issues, copyright concerns, accessibility issues, partnerships, or affiliate inquiries.`,
+  title,
+  description,
   alternates: { canonical },
-  openGraph: {
-    title: `Contact ${siteConfig.siteName}`,
-    description: "Contact the site about page issues, image concerns, accessibility, copyright, or partnership questions.",
-    url: canonical,
-    type: "website",
-  },
-  twitter: {
-    card: "summary",
-    title: `Contact ${siteConfig.siteName}`,
-    description: "Contact the site about page issues, image concerns, accessibility, copyright, or partnership questions.",
-  },
+  openGraph: { title, description, url: canonical, type: "website" },
+  twitter: { card: "summary", title, description },
 };
 
 export default function ContactPage() {
@@ -30,45 +24,42 @@ export default function ContactPage() {
     <TrustPage
       eyebrow="Contact"
       title="Contact"
-      intro="Use this page for site questions, issue reports, copyright concerns, accessibility notes, and future partnership or affiliate inquiries."
-      reviewNote={contactEmail ? undefined : "Owner input needed: provide a real public contact email before launch and AdSense review."}
+      intro="Use this address for factual site questions and issue reports. This page does not collect submissions through a form."
     >
       <JsonLdScript
         id="jsonld-contact"
         data={buildTrustPageJsonLd({
           path: "/contact",
-          title: `Contact ${siteConfig.siteName}`,
-          description: metadata.description as string,
+          title,
+          description,
           schemaType: "ContactPage",
           contactEmail,
         })}
       />
-      <TrustSection title="Contact details">
-        {contactEmail ? (
-          <p>
-            Email: <a href={`mailto:${contactEmail}`}>{contactEmail}</a>
-          </p>
-        ) : (
-          <p>
-            Contact details coming soon. The site owner needs to provide a public contact email before launch and before any AdSense review.
-          </p>
-        )}
+
+      <TrustSection title="Email">
+        <p>
+          Email <a href={`mailto:${contactEmail}`}>{contactEmail}</a>.
+        </p>
+        <p>Please do not send passwords, financial information, health information, identity documents, or other sensitive personal information.</p>
       </TrustSection>
 
-      <TrustSection title="Reasons to contact">
+      <TrustSection title="Reasons to contact us">
         <ul>
-          <li>A page does not load or a gallery image appears broken.</li>
-          <li>An image has a quality, safety, or accessibility issue.</li>
-          <li>You have a copyright concern or ownership question.</li>
-          <li>You found confusing text, a broken link, or a print/download problem.</li>
-          <li>You have a partnership or affiliate inquiry for a future content round.</li>
+          <li>Broken page or image reports</li>
+          <li>Print or download problems</li>
+          <li>Accessibility feedback</li>
+          <li>Copyright or ownership concerns</li>
+          <li>Title, description, or classification corrections</li>
+          <li>Privacy questions</li>
+          <li>Partnership or affiliate inquiries</li>
         </ul>
       </TrustSection>
 
-      <TrustSection title="Copyright and image concerns">
+      <TrustSection title="Copyright and ownership concerns">
         <p>
-          If you believe a page or image should be reviewed, include the page URL, a short explanation, and any ownership or rights information that
-          helps the site owner evaluate the issue. Do not send private personal information that is not needed for the request.
+          Include the page URL, a concise explanation of the concern, and relevant information showing your connection to the work or rights involved.
+          The information will be reviewed, but contacting the site does not guarantee a particular outcome or removal.
         </p>
       </TrustSection>
     </TrustPage>

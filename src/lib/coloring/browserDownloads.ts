@@ -106,6 +106,7 @@ export type PreparedPrintPdfResult =
 type BrowserRasterOptions = {
   internalSvgUrl: string | null | undefined;
   title: string;
+  filenameBaseName?: string;
   format: RasterDownloadFormat;
   quality?: number;
   targetLongEdge?: number;
@@ -116,6 +117,7 @@ type DownloadOptions = {
   internalSvgUrl: string | null | undefined;
   pngPreviewUrl: string | null | undefined;
   title: string;
+  filenameBaseName?: string;
   quality?: number;
 };
 
@@ -259,7 +261,7 @@ export async function convertInternalSvgToBlob(options: BrowserRasterOptions): P
       blob,
       format: options.format,
       mimeType: formatConfig.mimeType,
-      filename: buildDownloadFilename(options.title, formatConfig.extension),
+      filename: buildDownloadFilename(options.filenameBaseName || options.title, formatConfig.extension),
       width: rendered.width,
       height: rendered.height,
       source: "internal-svg",
@@ -310,7 +312,7 @@ export async function composePrintableRasterToBlob(options: DownloadOptions & { 
       blob,
       format: options.format,
       mimeType: formatConfig.mimeType,
-      filename: buildDownloadFilename(options.title, formatConfig.extension),
+      filename: buildDownloadFilename(options.filenameBaseName || options.title, formatConfig.extension),
       width: canvas.width,
       height: canvas.height,
       source,
@@ -323,6 +325,7 @@ export async function composePrintableRasterToBlob(options: DownloadOptions & { 
 export async function convertPngPreviewToBrowserDownload(options: {
   pngPreviewUrl: string | null | undefined;
   title: string;
+  filenameBaseName?: string;
   format: CanvasDownloadFormat;
   quality?: number;
 }): Promise<BrowserRasterResult> {
@@ -357,7 +360,7 @@ export async function convertPngPreviewToBrowserDownload(options: {
       blob,
       format: options.format,
       mimeType: formatConfig.mimeType,
-      filename: buildDownloadFilename(options.title, formatConfig.extension),
+      filename: buildDownloadFilename(options.filenameBaseName || options.title, formatConfig.extension),
       width: canvas.width,
       height: canvas.height,
       source: "png-preview",
@@ -402,6 +405,7 @@ export async function prepareHighQualityPrintImage(options: PrintOptions): Promi
   const converted = await convertInternalSvgToBlob({
     internalSvgUrl: options.internalSvgUrl,
     title: options.title,
+    filenameBaseName: options.filenameBaseName,
     format: "png",
     targetLongEdge: PRINT_TARGET_LONG_EDGE,
     imageLoadTimeoutMs: PRINT_PREPARE_TIMEOUT_MS,
@@ -458,7 +462,7 @@ export async function prepareOnePagePrintPdf(options: PrintOptions): Promise<Pre
       ok: true,
       pdfBlob,
       pdfUrl,
-      filename: buildPrintPdfFilename(options.title),
+      filename: buildPrintPdfFilename(options.filenameBaseName || options.title),
       source: "internal-svg",
       revokeObjectUrl: true,
       pageCount: 1,
@@ -517,6 +521,7 @@ async function downloadConvertedCanvasFormat(options: DownloadOptions, format: C
   const converted = await convertInternalSvgToBlob({
     internalSvgUrl: options.internalSvgUrl,
     title: options.title,
+    filenameBaseName: options.filenameBaseName,
     format,
     quality: options.quality,
     targetLongEdge: DOWNLOAD_TARGET_LONG_EDGE,

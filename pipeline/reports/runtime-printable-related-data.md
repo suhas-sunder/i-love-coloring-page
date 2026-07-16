@@ -12,6 +12,6 @@ Candidates are the deterministic union of available records in the printable's r
 
 ## Related hub scoring
 
-Candidates must already exist as a direct printable membership, a primary-hub relatedHubId, an internal-linking target, or a parent/child relationship. Root, non-routed, non-indexable, and non-sitemap hubs are excluded. Direct membership receives 1,000,000 points; relatedHubIds receive 100,000; internal targets receive 50,000; family relationships receive 25,000; and every available member shared with the primary hub adds 100. Higher scores sort first; hub ID ascending is the final tie-break. The list is capped at six.
+Candidates must already exist as a direct printable membership, a primary-hub relatedHubId, an internal-linking target, or a supported parent/child relationship. Zero-overlap family metadata does not add eligibility or score. Direct membership receives 1,000,000 points; relatedHubIds receive 100,000; internal targets receive 50,000; supported family relationships receive 25,000; and every available member shared with the primary hub adds 100. Hubs below 12 printables require direct membership, at most one thin hub may appear, and configured near-duplicate clusters contribute at most one result. Higher scores sort first; hub ID ascending is the final tie-break. The list is capped at six.
 
-Canonical route fields remain frozen and do not participate in either score. Runtime randomness, build-time randomness, and external keyword data are not used.
+Canonical route fields remain frozen and do not participate in either score. Runtime randomness, build-time randomness, stale internal-linking output, and external keyword data are not used.

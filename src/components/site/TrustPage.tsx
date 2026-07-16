@@ -6,7 +6,6 @@ type TrustPageProps = {
   eyebrow?: string;
   title: string;
   intro: string;
-  reviewNote?: string;
   children: ReactNode;
 };
 
@@ -15,7 +14,7 @@ type TrustSectionProps = {
   children: ReactNode;
 };
 
-export function TrustPage({ eyebrow, title, intro, reviewNote, children }: TrustPageProps) {
+export function TrustPage({ eyebrow, title, intro, children }: TrustPageProps) {
   return (
     <PublicPageShell pageFamily="trust" className="trust-page">
       <section className="trust-hero" aria-labelledby="trust-page-title">
@@ -24,7 +23,6 @@ export function TrustPage({ eyebrow, title, intro, reviewNote, children }: Trust
           {title}
         </h1>
         <p className="hero-copy">{intro}</p>
-        {reviewNote ? <p className="trust-review-note">{reviewNote}</p> : null}
       </section>
       <div className="trust-content">{children}</div>
     </PublicPageShell>

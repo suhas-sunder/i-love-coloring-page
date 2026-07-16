@@ -77,14 +77,15 @@ function toStaticItem(entry, printableById, hubById, deferredIds) {
   if (deferredIds.has(entry.assetId)) throw new Error(`Deferred search record leaked: ${entry.assetId}`);
   return {
     id: printable.assetId,
-    title: printable.publicTitle,
+    title: printable.displayTitle,
     alt: printable.altText,
     path: printable.canonicalPath,
     webp: printable.webpPath,
     svg: printable.svgPath,
     primary: cleanHubTitle(hubById.get(printable.primaryHubId)?.title || "Coloring Pages"),
     tags: [...entry.tags],
-    text: buildApprovedSearchText(entry.tags),
+    text: buildApprovedSearchText(entry.tags, getLegacyBaseSearchTerm(printable)),
+    ...(printable.designNumber == null && printable.publicTitle !== printable.displayTitle ? { download: printable.publicTitle } : {}),
   };
 }
 
@@ -120,18 +121,18 @@ function validateFiles(input, files, deferredIds) {
 function serializeNavigationPayload(input, printableById, hubById) {
   const searchEntryById = new Map(input.searchIndex.entries.map((entry) => [entry.assetId, entry]));
   const printables = [...input.printables.records]
-    .sort((left, right) => left.publicTitle.localeCompare(right.publicTitle) || left.stableId.localeCompare(right.stableId))
+    .sort((left, right) => left.displayTitle.localeCompare(right.displayTitle) || left.stableId.localeCompare(right.stableId))
     .map((printable) => {
       const searchEntry = searchEntryById.get(printable.assetId);
       if (!searchEntry) throw new Error(`Missing navigation search entry ${printable.assetId}`);
       const primaryLabel = cleanHubTitle(hubById.get(printable.primaryHubId)?.title || "Coloring Pages");
       return [
         printable.stableId,
-        printable.publicTitle,
+        printable.displayTitle,
         printable.canonicalPath,
         printable.webpPath,
         primaryLabel,
-        buildApprovedSearchText(searchEntry.tags),
+        buildApprovedSearchText(searchEntry.tags, getLegacyBaseSearchTerm(printable)),
       ];
     });
   const collections = input.hubs.hubs
@@ -168,8 +169,14 @@ function isApprovedRoutedHub(hub) {
   return Boolean(hub.route && hub.indexable === true && hub.sitemap === true);
 }
 
-function buildApprovedSearchText(tags) {
-  return normalizeSearchText([...new Set(tags)].join(" "));
+function buildApprovedSearchText(tags, legacyBaseTitle = "") {
+  return normalizeSearchText([...new Set([...tags, legacyBaseTitle].filter(Boolean))].join(" "));
+}
+
+function getLegacyBaseSearchTerm(printable) {
+  const display = normalizeSearchText(printable.displayTitle);
+  const base = normalizeSearchText(printable.publicTitle);
+  return display.includes(base) ? "" : printable.publicTitle;
 }
 
 function normalizeSearchText(value) {

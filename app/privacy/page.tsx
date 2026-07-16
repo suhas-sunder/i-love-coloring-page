@@ -3,117 +3,105 @@ import Link from "next/link";
 
 import { JsonLdScript } from "@/components/seo/JsonLdScript";
 import { TrustPage, TrustSection } from "@/components/site/TrustPage";
+import { siteIdentity } from "@/config/siteIdentity";
 import { buildTrustPageJsonLd } from "@/lib/seo/pageJsonLd";
-import { getCanonicalUrl, siteConfig } from "@/lib/site/siteConfig";
+import { getCanonicalUrl } from "@/lib/site/siteConfig";
 
 const canonical = getCanonicalUrl("/privacy");
-const updatedAt = "May 11, 2026";
+const title = "Privacy Policy";
+const description = `How ${siteIdentity.siteName} handles current static-site requests and how future features would change its privacy practices.`;
+const contactEmail = siteIdentity.publicContactEmail;
 
 export const metadata: Metadata = {
-  title: "Privacy Policy",
-  description: "Read the draft privacy policy for I Love Coloring Page, including current static-site behavior and future advertising disclosures.",
+  title,
+  description,
   alternates: { canonical },
-  openGraph: {
-    title: "Privacy Policy",
-    description: "Draft privacy policy for the printable coloring page library and future advertising disclosures.",
-    url: canonical,
-    type: "website",
-  },
-  twitter: {
-    card: "summary",
-    title: "Privacy Policy",
-    description: "Draft privacy policy for the printable coloring page library and future advertising disclosures.",
-  },
+  openGraph: { title, description, url: canonical, type: "website" },
+  twitter: { card: "summary", title, description },
 };
 
 export default function PrivacyPage() {
   return (
     <TrustPage
-      eyebrow="Draft policy"
-      title="Privacy Policy"
-      intro="This draft privacy policy describes the current static coloring page site and the disclosures that will need owner and legal review before launch or live advertising."
-      reviewNote="Draft requiring owner/legal review before launch. This page is practical website policy copy, not final legal advice."
+      eyebrow="Privacy"
+      title={title}
+      intro="This policy describes the website's current data practices and separates them from changes that would be required before future advertising or interactive features are enabled."
     >
       <JsonLdScript
         id="jsonld-privacy"
-        data={buildTrustPageJsonLd({
-          path: "/privacy",
-          title: "Privacy Policy",
-          description: metadata.description as string,
-          schemaType: "PrivacyPolicy",
-        })}
+        data={buildTrustPageJsonLd({ path: "/privacy", title, description, schemaType: "PrivacyPolicy" })}
       />
+
       <TrustSection title="Last updated">
-        <p>{updatedAt}</p>
+        <p>{siteIdentity.policyLastUpdatedLabel}</p>
       </TrustSection>
 
-      <TrustSection title="What this site is">
+      <TrustSection title="Scope and current site">
         <p>
-          {siteConfig.siteName} is currently a static printable coloring page gallery. Visitors can browse collections, preview images, print visible
-          pages, and download PNG files. The current site does not provide accounts, user uploads, comments, saved galleries, payments, or a backend
-          contact form.
+          {siteIdentity.siteName} is a static printable gallery. Visitors can browse, search, filter, print, and download files. Search and filters run
+          in the browser and do not create public search routes.
         </p>
-      </TrustSection>
-
-      <TrustSection title="Information currently collected">
         <p>
-          The static site does not currently ask visitors to create an account or submit personal information through the website. Standard hosting,
-          CDN, and browser-request logs may still include technical information such as IP address, browser type, requested URL, referrer, and timing
-          data when pages and media load.
+          The site currently provides no accounts, comments, user uploads, payments, or contact form. It does not intentionally request names, birth
+          dates, account details, or profile information through the website.
         </p>
       </TrustSection>
 
-      <TrustSection title="Analytics, advertising, and cookies">
+      <TrustSection title="Hosting and technical logs">
         <p>
-          Live Google AdSense code is not installed yet. The current ad wells are visible layout placeholders labeled Advertisement and do not request
-          live ads. Analytics tooling is not documented as active in this round.
-        </p>
-        <p>
-          If Google AdSense or other advertising is added later, third-party vendors including Google may use cookies or similar identifiers to serve
-          ads based on a visitor&apos;s prior visits to this site or other sites. Google&apos;s use of advertising cookies enables Google and its
-          partners to serve personalized or non-personalized ads, depending on settings, consent requirements, and configuration.
-        </p>
-        <p>
-          Visitors may learn about personalized advertising choices through{" "}
-          <a href="https://www.google.com/settings/ads" rel="noreferrer" target="_blank">
-            Google Ads Settings
-          </a>{" "}
-          and about some third-party advertising opt-outs through{" "}
-          <a href="https://www.aboutads.info/" rel="noreferrer" target="_blank">
-            aboutads.info
-          </a>
-          . A future live-ad round should review cookie consent, regional privacy requirements, and AdSense settings before ad code is added.
+          Hosting, content-delivery, asset-delivery, and security infrastructure may process routine request data when a page or image is requested.
+          This may include an IP address, browser or device information, the requested URL, referrer, request time, and technical error or security
+          information. Retention, location, and access depend on the infrastructure actually serving the request.
         </p>
       </TrustSection>
 
-      <TrustSection title="Affiliate links">
+      <TrustSection title="Current cookies, analytics, and advertising">
         <p>
-          Affiliate links are not active in this round. If affiliate links are added later, the site may earn a commission from qualifying purchases or
-          referral links. Affiliate disclosures should appear near affiliate content and on the <Link href="/affiliate-disclosure">Affiliate Disclosure</Link> page.
+          Advertisement areas are inert layout placeholders. No live Google AdSense code, publisher ID, or live ad-unit ID is installed, and the
+          placeholders do not request advertisements. They do not by themselves set Google advertising cookies.
+        </p>
+        <p>
+          No site analytics tool is currently documented as active. The site does not document an active analytics or advertising cookie, but this is
+          not a claim that browsers, hosting, content-delivery, asset-delivery, or security systems can never use technical storage or logs.
         </p>
       </TrustSection>
 
-      <TrustSection title="Children's privacy">
+      <TrustSection title="If advertising is enabled later">
         <p>
-          Coloring pages may be useful for families, classrooms, and children, but the site is intended as a general-audience printable gallery. The
-          current site does not knowingly collect account information from children. Future interactive features should be reviewed separately before
-          launch.
+          Before live advertising is activated, this policy will be updated to identify the vendors and choices actually in use. Third-party vendors
+          may then use cookies or other identifiers, and Google or advertising partners may process data to serve, measure, personalize, or limit ads
+          according to the site's configuration and applicable consent.
+        </p>
+        <p>
+          Regional consent and age-treatment requirements must be configured before activation. Visitors will be given applicable controls when they
+          are required. These are conditional future practices and are not active merely because advertisement placeholders are visible.
         </p>
       </TrustSection>
 
-      <TrustSection title="Contact and updates">
-        {siteConfig.contactEmail ? (
-          <p>
-            Privacy questions can be sent to <a href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a> or through the{" "}
-            <Link href="/contact">contact page</Link>. This policy may be updated as analytics, advertising, affiliate links, or interactive features
-            are added.
-          </p>
-        ) : (
-          <p>
-            Privacy questions should be directed through the <Link href="/contact">contact page</Link>. The owner should provide a real contact method
-            before launch. This policy may be updated as analytics, advertising, affiliate links, or interactive features are added.
-          </p>
-        )}
+      <TrustSection title="Children and families">
+        <p>
+          The library includes content that may appeal to children, families, teachers, and adults. The current site has no account registration,
+          comments, uploads, contact form, or age-entry mechanism, and it does not intentionally ask children to submit personal information.
+        </p>
+        <p>
+          Parents or guardians may email <a href={`mailto:${contactEmail}`}>{contactEmail}</a>. Any future interactive feature or live advertising
+          implementation requires a separate children's-privacy and age-treatment review.
+        </p>
+      </TrustSection>
+
+      <TrustSection title="Privacy questions and requests">
+        <p>
+          Visitors may email <a href={`mailto:${contactEmail}`}>{contactEmail}</a> or use the <Link href="/contact">contact page</Link> with privacy
+          questions or requests concerning information they believe the site controls. A request may require reasonable verification. Applicable
+          rights depend on the visitor's location and circumstances, and the site may not control records held by infrastructure providers.
+        </p>
+      </TrustSection>
+
+      <TrustSection title="Policy updates">
+        <p>
+          This page may be updated when site features or data practices change. The displayed date records this text revision. Material feature changes
+          should trigger another privacy review before they are enabled.
+        </p>
       </TrustSection>
     </TrustPage>
   );

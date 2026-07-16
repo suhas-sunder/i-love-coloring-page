@@ -42,6 +42,7 @@ test("Netlify production branch build shape is static export and frontend-only",
   const available = await readJson("src/generated/coloring/runtime-available-items.json");
   const assetPaths = await readJson("src/generated/coloring/runtime-asset-paths.json");
   const siteConfig = await readText("src/lib/site/siteConfig.ts");
+  const siteIdentity = await readText("src/config/siteIdentity.ts");
   const assets = await readText("src/lib/coloring/assets.ts");
   const downloadMenu = await readText("src/components/coloring/DownloadMenu.tsx");
   const browserDownloads = await readText("src/lib/coloring/browserDownloads.ts");
@@ -56,9 +57,10 @@ test("Netlify production branch build shape is static export and frontend-only",
   assert.equal(existsSync(path.join(REPO_ROOT, "app", "sitemap.ts")), true);
   assert.equal(available.summary.itemCount, 6352);
   assert.equal(assetPaths.summary.recordCount, 6352);
-  assert.match(siteConfig, /https:\/\/www\.ilovecoloringpage\.com/);
+  assert.match(siteIdentity, /https:\/\/www\.ilovecoloringpage\.com/);
   assert.match(siteConfig, /https:\/\/assets\.ilovecoloringpage\.com\/coloring-pages/);
-  assert.match(siteConfig, /admin@ilovecoloringpage\.com/);
+  assert.match(siteIdentity, /admin@ilovecoloringpage\.com/);
+  assert.match(siteConfig, /import \{ siteIdentity \}/);
   assert.match(assets, /https:\/\/assets\.ilovecoloringpage\.com\/coloring-pages/);
   assert.doesNotMatch(siteConfig, /throw new Error|process\.exit/);
   assert.doesNotMatch(`${downloadMenu}\n${browserDownloads}`, /Download SVG|downloadSvg|svgDownload/i);

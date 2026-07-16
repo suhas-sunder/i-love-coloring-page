@@ -5,8 +5,8 @@ import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { PublicPageShell } from "@/components/site/PublicPageShell";
 import { SupportingInformation } from "@/components/site/SupportingInformation";
 import { resolveSvgAssetUrl, resolveWebpPreviewAssetUrl } from "@/lib/coloring/assets";
-import { getNaturalPrintableTitle } from "@/lib/coloring/printableMetadata";
 import { getPrintablePrimaryHub, getRelatedPrintableHubs, getRelatedPrintables } from "@/lib/coloring/printables";
+import { buildPrintableDescription, getPrintableTitleModel } from "@/lib/coloring/printableTitles";
 import type { PublicColoringItem, RuntimePrintable } from "@/lib/coloring/types";
 
 import { AssetImage } from "./AssetImage";
@@ -15,7 +15,8 @@ import { PrintableDetailActions } from "./PrintableDetailActions";
 
 export function PrintableDetailPage({ printable }: { printable: RuntimePrintable }) {
   const primaryHub = getPrintablePrimaryHub(printable);
-  const naturalTitle = getNaturalPrintableTitle(printable.publicTitle);
+  const titleModel = getPrintableTitleModel(printable);
+  const displayTitle = titleModel.displayTitle;
   const relatedItems = getRelatedPrintables(printable, 8).map(toPublicItem);
   const relatedHubs = getRelatedPrintableHubs(printable, 6);
   const item = toPublicItem(printable);
@@ -33,18 +34,18 @@ export function PrintableDetailPage({ printable }: { printable: RuntimePrintable
           { label: "Home", href: "/" },
           { label: "Coloring Pages", href: "/coloring-pages" },
           { label: primaryHub.title, href: primaryHub.route },
-          { label: naturalTitle },
+          { label: displayTitle },
         ]}
       />
 
       <header className="printable-heading">
-        <h1 className="page-title page-title-wide">{naturalTitle}</h1>
-        <p>Print or download the {naturalTitle} for coloring at home, in the classroom, or during a quiet activity.</p>
+        <h1 className="page-title page-title-wide">{displayTitle}</h1>
+        <p>{buildPrintableDescription(printable)}</p>
       </header>
 
       <PageAdSlot pageFamily="printable" placement="post-header-banner" />
 
-      <section className="printable-main" aria-label={`${naturalTitle} preview and actions`} data-page-section="printable-main">
+      <section className="printable-main" aria-label={`${displayTitle} preview and actions`} data-page-section="printable-main">
         <div className="printable-preview" style={{ aspectRatio: printable.width && printable.height ? `${printable.width} / ${printable.height}` : "3 / 4" }}>
           <AssetImage item={item} imageUrl={webpUrl} priority width={printable.width} height={printable.height} />
         </div>
@@ -94,10 +95,12 @@ export function PrintableDetailPage({ printable }: { printable: RuntimePrintable
 }
 
 function toPublicItem(printable: RuntimePrintable): PublicColoringItem {
+  const titleModel = getPrintableTitleModel(printable);
   return {
     assetId: printable.assetId,
-    title: printable.publicTitle,
-    altText: printable.altText,
+    title: titleModel.displayTitle,
+    altText: titleModel.shortAccessibleTitle,
+    downloadBaseName: titleModel.downloadBaseName,
     canonicalPath: printable.canonicalPath,
     assetSubpaths: { svg: printable.svgPath, webpPreview: printable.webpPath, pngPreview: null, thumbnail: null },
   };

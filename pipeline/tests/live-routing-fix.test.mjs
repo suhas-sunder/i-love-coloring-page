@@ -97,6 +97,7 @@ test("runtime switch and user-facing download boundaries remain intact", async (
   const downloadMenu = await readText("src/components/coloring/DownloadMenu.tsx");
   const browserDownloads = await readText("src/lib/coloring/browserDownloads.ts");
   const siteConfig = await readText("src/lib/site/siteConfig.ts");
+  const siteIdentity = await readText("src/config/siteIdentity.ts");
   const assets = await readText("src/lib/coloring/assets.ts");
 
   assert.equal(available.summary.itemCount, EXPECTED_AVAILABLE_RECORDS);
@@ -106,9 +107,10 @@ test("runtime switch and user-facing download boundaries remain intact", async (
   assert.match(`${downloadMenu}\n${browserDownloads}`, /label:\s*"JPG"|EXPOSED_PUBLIC_DOWNLOAD_FORMATS[\s\S]*"jpg"/);
   assert.match(`${downloadMenu}\n${browserDownloads}`, /label:\s*"WebP"|EXPOSED_PUBLIC_DOWNLOAD_FORMATS[\s\S]*"webp"/);
   assert.doesNotMatch(`${downloadMenu}\n${browserDownloads}`, /Download SVG|downloadSvg|svgDownload/i);
-  assert.match(siteConfig, new RegExp(escapeRegExp(SITE_URL)));
+  assert.match(siteIdentity, new RegExp(escapeRegExp(SITE_URL)));
   assert.match(siteConfig, new RegExp(escapeRegExp(ASSET_BASE_URL)));
-  assert.match(siteConfig, new RegExp(escapeRegExp(CONTACT_EMAIL)));
+  assert.match(siteIdentity, new RegExp(escapeRegExp(CONTACT_EMAIL)));
+  assert.match(siteConfig, /import \{ siteIdentity \}/);
   assert.match(assets, new RegExp(escapeRegExp(ASSET_BASE_URL)));
 });
 

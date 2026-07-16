@@ -22,7 +22,7 @@ export function generateMetadata(): Metadata {
   return buildColoringMetadata("/");
 }
 
-const PRIMARY_COLLECTION_SLUGS = ["animals", "christmas", "for-kids", "detailed-for-adults", "mandalas", "plushies"];
+const PRIMARY_COLLECTION_SLUGS = ["animals", "christmas", "for-kids", "detailed-for-adults", "dogs", "plushies"];
 const DISCOVERY_COLLECTION_SLUGS = ["fantasy", "flowers", "dinosaurs", "vehicles", "sea-life", "easy"];
 
 export default function HomePage() {

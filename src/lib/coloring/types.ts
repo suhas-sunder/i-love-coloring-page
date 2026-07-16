@@ -27,12 +27,16 @@ export type ColoringItem = {
 
 export type PublicColoringItem = Pick<ColoringItem, "assetId" | "title" | "altText" | "assetSubpaths"> & {
   canonicalPath: string;
+  downloadBaseName: string;
 };
 
 export type RuntimePrintable = {
   assetId: string;
   stableId: string;
   publicTitle: string;
+  displayTitle: string;
+  metadataTitle: string;
+  designNumber: number | null;
   canonicalSlug: string;
   primaryHubId: string;
   primaryCategorySlug: string;
@@ -59,6 +63,7 @@ export type StaticSearchItem = {
   primary: string;
   tags: string[];
   text: string;
+  download?: string;
 };
 
 export type StaticSearchPayload = {

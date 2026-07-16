@@ -107,6 +107,20 @@ This repository is a mature static Next.js coloring page gallery with an accepte
 - Canonical printable pages and their supporting metadata must remain static-export compatible and must not require a backend, API route, database, server action, or search service.
 - The canonical printable routes exist because the frozen printable contract, payload-reduction work, and shared export composition passed their acceptance gates; future changes must preserve that contract.
 
+## Printable Title Quality
+
+- The reviewed runtime `publicTitle` is the base editorial title and must remain available without generated duplicate numbering.
+- Public cards, printable H1s, breadcrumbs, search labels, related-printable labels, metadata, structured data, image sitemap titles, and image alternative text must consume the centralized generated printable title model.
+- Exact duplicate base-title groups use `Design N` consistently for every record in the group.
+- Preserve valid prior design numbers; otherwise order duplicate designs by frozen canonical path and stable ID. Never use array order, hub order, filesystem order, randomness, or build time.
+- Display-title corrections must never recompute a canonical printable slug, primary category, route, stable ID, hub membership, related printable ID, or related hub ID.
+- Only deterministic, high-confidence mechanical corrections may be automated. Uncertain spelling, numeric suffixes, source-context questions, and brand or model wording require editorial review.
+- Public title fields must not expose filenames, extensions, source paths, private URLs, stable IDs, asset IDs, pipeline terms, model or prompt terms, timestamps, SVG terminology, or R2 terminology.
+- Printable metadata descriptions may mention only the generated display title, the available Print action, and the verified PNG, JPG, and WebP download formats. Do not invent artwork, age, difficulty, educational, or therapeutic claims.
+- Printable alternative text must identify the generated display title, remain concise, and prevent repeated `coloring page` wording.
+- Download filename bases remain the reviewed base title for unique records. Duplicate groups may use the generated display title to prevent same-title file collisions.
+- The deterministic title manifest and report are owned by `npm run generate:printable-titles`; do not hand-edit generated title assignments.
+
 ## Long-Tail Hub Expansion Rules
 
 - Long-tail hubs must be generated from real available runtime inventory, not raw `images/` globs or deferred manual-review records.
@@ -131,6 +145,19 @@ This repository is a mature static Next.js coloring page gallery with an accepte
 - Manual-review, backlog, rejected, and deferred candidates must not leak into public route, sitemap, image sitemap, OG, JSON-LD, navigation, or search metadata.
 - Reordered duplicate hubs and token-only hub names should be blocked before routing.
 - New hub pages must preserve gallery-first UX and useful non-spam SEO copy.
+
+## Taxonomy Promotion And Related Links
+
+- Exact-duplicate hub inventories must not be prominently co-promoted.
+- Near-duplicate hubs may remain public, indexable, searchable, and sitemap-visible, but bounded promotional and related-collection lists must treat them as one cluster.
+- Frozen printable primary-category routes must never be recomputed as a consequence of taxonomy or promotion changes.
+- Removing a hub from homepage, navigation, or related-link promotion does not remove or retire its public route.
+- Hubs below 12 runtime printables require direct printable membership to appear in printable-detail related collections.
+- Search and the HTML sitemap remain comprehensive discovery surfaces for all approved public hubs even when promotion is reduced.
+- Generated `internal-linking.json` is not authoritative unless it is explicitly reconciled with current runtime hub and printable data.
+- Every runtime parent reference must resolve to an approved public hub.
+- A declared parent relationship must not receive containment-based related-link eligibility or score when current runtime membership sets have zero overlap.
+- Related-hub selection must remain deterministic, exclude the current hub and duplicate IDs, and use stable tie-breaking.
 
 ## Public Gallery Visual System
 

@@ -2,14 +2,10 @@
 # Public defaults are built into the static site and do not require Netlify env vars:
 # - NEXT_PUBLIC_SITE_URL defaults to https://www.ilovecoloringpage.com
 # - NEXT_PUBLIC_COLORING_ASSET_BASE_URL defaults to https://assets.ilovecoloringpage.com/coloring-pages
-# - NEXT_PUBLIC_CONTACT_EMAIL defaults to admin@ilovecoloringpage.com
 # Optional public overrides:
 # - NEXT_PUBLIC_SITE_URL
 # - NEXT_PUBLIC_COLORING_ASSET_BASE_URL
-# - NEXT_PUBLIC_CONTACT_EMAIL
 # - NEXT_PUBLIC_SITE_NAME
-# - NEXT_PUBLIC_SITE_OWNER_NAME
-# - NEXT_PUBLIC_SITE_JURISDICTION
 
 [build]
   command = "npm run build"

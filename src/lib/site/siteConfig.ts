@@ -1,7 +1,10 @@
-const DEFAULT_SITE_NAME = "I Love Coloring Page";
-const DEFAULT_SITE_URL = "https://www.ilovecoloringpage.com";
+import "server-only";
+
+import { siteIdentity } from "@/config/siteIdentity";
+
+const DEFAULT_SITE_NAME = siteIdentity.siteName;
+const DEFAULT_SITE_URL = siteIdentity.canonicalSiteUrl;
 const DEFAULT_COLORING_ASSET_BASE_URL = "https://assets.ilovecoloringpage.com/coloring-pages";
-const DEFAULT_CONTACT_EMAIL = "admin@ilovecoloringpage.com";
 const COLORING_PREFIX = "/coloring-pages";
 const LEGACY_TEST_PREFIX = ["", "coloring", "test-v1"].join("/");
 const PRIVATE_STORAGE_HOST_PATTERNS = [
@@ -26,8 +29,6 @@ type PublicUrlStatus = {
 
 const rawSiteUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim() || DEFAULT_SITE_URL;
 const rawAssetBaseUrl = process.env.NEXT_PUBLIC_COLORING_ASSET_BASE_URL?.trim() || DEFAULT_COLORING_ASSET_BASE_URL;
-const rawContactEmail = process.env.NEXT_PUBLIC_CONTACT_EMAIL?.trim() || DEFAULT_CONTACT_EMAIL;
-
 const siteUrlStatus = getPublicUrlStatus(rawSiteUrl, { requireColoringPagesPrefix: false });
 const assetUrlStatus = getPublicUrlStatus(rawAssetBaseUrl, { requireColoringPagesPrefix: true });
 
@@ -35,13 +36,9 @@ export const siteConfig = {
   siteName: process.env.NEXT_PUBLIC_SITE_NAME?.trim() || DEFAULT_SITE_NAME,
   siteUrl: siteUrlStatus.normalizedValue || DEFAULT_SITE_URL,
   assetBaseUrl: assetUrlStatus.ready ? assetUrlStatus.normalizedValue : DEFAULT_COLORING_ASSET_BASE_URL,
-  contactEmail: isUsablePublicEmail(rawContactEmail) ? rawContactEmail : DEFAULT_CONTACT_EMAIL,
-  ownerName: process.env.NEXT_PUBLIC_SITE_OWNER_NAME?.trim() || "",
-  jurisdiction: process.env.NEXT_PUBLIC_SITE_JURISDICTION?.trim() || "",
   currentYear: new Date().getFullYear(),
   siteUrlStatus,
   assetUrlStatus,
-  isPublicContactConfigured: isUsablePublicEmail(rawContactEmail),
   isProductionSiteUrlConfigured: siteUrlStatus.ready,
   isProductionAssetUrlConfigured: assetUrlStatus.ready,
 };
@@ -114,11 +111,6 @@ function getPublicUrlStatus(value: string, options: { requireColoringPagesPrefix
   }
 
   return status;
-}
-
-function isUsablePublicEmail(value: string) {
-  if (!value || /example\.com$/i.test(value)) return false;
-  return /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(value);
 }
 
 function normalizePathname(pathname: string) {

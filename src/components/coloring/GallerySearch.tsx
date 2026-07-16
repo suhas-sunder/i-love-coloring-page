@@ -201,6 +201,7 @@ function toPublicItem(entry: StaticSearchItem): PublicColoringItem {
     assetId: entry.id,
     title: entry.title,
     altText: entry.alt,
+    downloadBaseName: entry.download || entry.title,
     canonicalPath: entry.path,
     assetSubpaths: { svg: entry.svg, webpPreview: entry.webp, pngPreview: null, thumbnail: null },
   };

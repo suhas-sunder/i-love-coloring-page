@@ -503,6 +503,16 @@
   contain: layout paint;
 }
 
+/* Keep every frozen logical slot in the document while enforcing the accepted
+   one-well small-screen model and three-well wide-desktop model. */
+.public-page-shell[data-ad-layout="full"] > .ad-slot-top-banner,
+.public-page-shell[data-page-family="gallery-pagination"] > .ad-slot-top-banner,
+.public-page-shell[data-page-family="hub-pagination"] > .ad-slot-top-banner,
+.public-page-shell .ad-slot-supporting-square,
+.public-page-shell .ad-slot-related-banner {
+  display: none;
+}
+
 @media (min-width: 641px) and (max-width: 1023px) {
   .ad-slot-responsive-banner {
     width: min(100%, 468px);
@@ -516,6 +526,16 @@
 }
 
 @media (min-width: 1024px) {
+  .public-page-shell[data-ad-layout="full"] > .ad-slot-top-banner,
+  .public-page-shell[data-page-family="gallery-pagination"] > .ad-slot-top-banner,
+  .public-page-shell[data-page-family="hub-pagination"] > .ad-slot-top-banner {
+    display: grid;
+  }
+
+  .public-page-shell .ad-slot-post-header-banner {
+    display: none;
+  }
+
   .ad-slot-responsive-banner {
     width: min(100%, 728px);
     min-height: 90px;
@@ -641,14 +661,6 @@
   letter-spacing: 0;
   line-height: var(--text-sm-line);
   text-transform: uppercase;
-}
-
-.trust-review-note {
-  max-width: var(--measure);
-  color: var(--color-text-muted);
-  font-size: var(--text-sm-size);
-  font-weight: 800;
-  line-height: var(--text-sm-line);
 }
 
 .trust-content {

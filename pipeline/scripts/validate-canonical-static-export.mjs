@@ -25,7 +25,7 @@ const representatives = uniqueByPath([
   records.find((record) => /mandala/i.test(record.publicTitle)),
   records.find((record) => record.primaryCategorySlug === "anime-girls"),
   records.find((record) => /christmas|halloween|easter|thanksgiving/i.test(record.publicTitle)),
-  [...records].sort((a, b) => b.publicTitle.length - a.publicTitle.length || a.assetId.localeCompare(b.assetId))[0],
+  [...records].sort((a, b) => b.displayTitle.length - a.displayTitle.length || a.assetId.localeCompare(b.assetId))[0],
   records.find((record) => titleCounts.get(record.publicTitle) > 1),
   records.find((record) => record.primaryHubId === smallestHub?.hubId),
   [...records].sort((a, b) => b.hubIds.length - a.hubIds.length || a.assetId.localeCompare(b.assetId))[0],
@@ -45,7 +45,7 @@ try {
     const response = await fetch(`${origin}${printable.canonicalPath}`);
     const html = await response.text();
     const primaryHub = hubById.get(printable.primaryHubId);
-    const expectedTitle = /\bcoloring page$/i.test(printable.publicTitle) ? printable.publicTitle : `${printable.publicTitle} Coloring Page`;
+    const expectedTitle = printable.displayTitle;
     const checks = {
       status: response.status === 200,
       h1: html.includes(`<h1`) && html.includes(escapeHtml(expectedTitle)),

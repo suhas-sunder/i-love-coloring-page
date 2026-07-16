@@ -6,6 +6,9 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
+import { buildPrintableTitleAssignments } from "../lib/printable-title-quality.mjs";
+import { selectClusteredHubIds } from "../lib/taxonomy-promotion-policy.mjs";
+
 const SCRIPT_PATH = fileURLToPath(import.meta.url);
 const DEFAULT_ROOT = path.resolve(path.dirname(SCRIPT_PATH), "..", "..");
 
@@ -17,6 +20,7 @@ export const PRINTABLE_INPUTS = Object.freeze({
   assetPaths: "src/generated/coloring/runtime-asset-paths.json",
   searchIndex: "src/generated/coloring/runtime-search-index.json",
   titleOverrides: "src/generated/coloring/title-overrides.json",
+  taxonomyPolicy: "src/config/taxonomy-promotion-policy.json",
 });
 
 export const PRINTABLE_OUTPUTS = Object.freeze({
@@ -29,13 +33,15 @@ export const PRINTABLE_OUTPUTS = Object.freeze({
 
 const STABLE_ID_PATTERN = /^[a-f0-9]{10}$/;
 const SLUG_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+const TITLE_MANIFEST_PATH = "pipeline/manifests/printable-title-manifest.json";
 const INTERNAL_TERM_PATTERN = /(?:chatgpt|failed|pipeline|export[-_ ]?(?:\d|timestamp)|timestamp)/i;
 const LOCAL_OR_PRIVATE_PATTERN = /(?:localhost|127\.0\.0\.1|[A-Za-z]:\\|file:\/\/|r2\.dev|r2\.cloudflarestorage\.com|amazonaws\.com|coloring-pages\/coloring-pages)/i;
 
 export async function buildRuntimePrintables({ repoRoot = DEFAULT_ROOT, write = true } = {}) {
   const input = await readInputs(repoRoot);
   const previous = await readPreviousManifest(repoRoot);
-  const outputs = buildOutputs(input, previous);
+  const previousTitleManifest = await readPreviousTitleManifest(repoRoot);
+  const outputs = buildOutputs(input, previous, previousTitleManifest);
   validateOutputs(input, outputs);
 
   if (write) {
@@ -49,7 +55,7 @@ export async function buildRuntimePrintables({ repoRoot = DEFAULT_ROOT, write = 
   return outputs;
 }
 
-function buildOutputs(input, previousManifest) {
+function buildOutputs(input, previousManifest, previousTitleManifest) {
   const generatedAt = latestGeneratedAt(input);
   const hubById = new Map(input.hubs.hubs.map((hub) => [hub.hubId, hub]));
   const membershipByAssetId = new Map(input.hubItems.items.map((entry) => [entry.assetId, entry]));
@@ -68,7 +74,6 @@ function buildOutputs(input, previousManifest) {
     const override = overrideByAssetId.get(item.assetId);
     const reviewedTitle = override?.cleanTitle || item.title;
     const publicTitle = normalizePublicTitle(reviewedTitle, item.assetId, normalizations);
-    const altText = normalizeAltText(override?.cleanAltText || item.altText, publicTitle);
     const previous = previousByAssetId.get(item.assetId);
 
     let canonicalSlug;
@@ -102,7 +107,6 @@ function buildOutputs(input, previousManifest) {
       primaryCategorySlug,
       slugAndId,
       canonicalPath,
-      altText,
       webpPath: assetPath.webpPreviewSubpath,
       svgPath: assetPath.internalSvgSubpath,
       width: numberOrNull(dimensions?.width),
@@ -113,7 +117,18 @@ function buildOutputs(input, previousManifest) {
   });
 
   records.sort((left, right) => left.assetId.localeCompare(right.assetId));
-  const recordsWithRelated = addRelatedData(records, input.hubs.hubs);
+  const titleAssignments = buildPrintableTitleAssignments(records, { previousManifest: previousTitleManifest });
+  const recordsWithTitles = records.map((record) => {
+    const title = required(titleAssignments.get(record.assetId), `Missing title assignment for ${record.assetId}`);
+    return {
+      ...record,
+      displayTitle: title.displayTitle,
+      metadataTitle: title.metadataTitle,
+      designNumber: title.designNumber,
+      altText: title.altText,
+    };
+  });
+  const recordsWithRelated = addRelatedData(recordsWithTitles, input.hubs.hubs, input.taxonomyPolicy);
   const titleReview = buildTitleReview(recordsWithRelated, normalizations);
   const routes = recordsWithRelated.map(({ assetId, stableId, canonicalSlug, primaryHubId, primaryCategorySlug, slugAndId, canonicalPath }) => ({
     assetId,
@@ -144,7 +159,7 @@ function buildOutputs(input, previousManifest) {
         titleReviewItemCount: titleReview.reviewItemCount,
         recordSha256: recordHash,
         relatedPrintableRule: "candidate-union-from-shared-routed-hubs-and-primary-hub-existing-relations; score=1000000-primary-hub-share+100000-per-additional-shared-hub+10000-per-ranked-related-hub; unique-title-first; assetId-ascending-final-tie-break; maximum-12",
-        relatedHubRule: "existing-membership-or-routed-hub-relationship-only; score=1000000-direct-membership+100000-relatedHubIds+50000-internalLinkingTargets+25000-parent-or-child+100-shared-primary-members; hubId-ascending-final-tie-break; maximum-6",
+        relatedHubRule: "existing-membership-or-routed-hub-relationship-only; parent-family-requires-shared-primary-members; thin-hubs-require-direct-membership; promotion-cluster-cap-1; stable-score-and-hubId-tie-break; maximum-6",
       },
       titleReview,
       routes,
@@ -173,7 +188,7 @@ function buildOutputs(input, previousManifest) {
   };
 }
 
-function addRelatedData(records, hubs) {
+function addRelatedData(records, hubs, taxonomyPolicy) {
   const ROOT_HUB_ID = "hub_coloring_pages";
   const recordByAssetId = new Map(records.map((record) => [record.assetId, record]));
   const eligibleHubById = new Map(
@@ -182,6 +197,7 @@ function addRelatedData(records, hubs) {
       .map((hub) => [hub.hubId, hub]),
   );
   const availableAssetIdsByHub = new Map();
+  const thinExposureByHubId = new Map();
 
   for (const [hubId, hub] of eligibleHubById) {
     availableAssetIdsByHub.set(
@@ -192,7 +208,20 @@ function addRelatedData(records, hubs) {
 
   return records.map((record) => {
     const primaryHub = required(eligibleHubById.get(record.primaryHubId), `Missing eligible primary hub for ${record.assetId}`);
-    const relatedHubIds = selectRelatedHubIds(record, primaryHub, eligibleHubById, availableAssetIdsByHub);
+    const relatedHubIds = selectRelatedHubIds(
+      record,
+      primaryHub,
+      eligibleHubById,
+      availableAssetIdsByHub,
+      taxonomyPolicy,
+      thinExposureByHubId,
+    );
+    for (const hubId of relatedHubIds) {
+      const hub = eligibleHubById.get(hubId);
+      if (hub && hub.assetCount <= taxonomyPolicy.thinHubMaximumAssets) {
+        thinExposureByHubId.set(hubId, (thinExposureByHubId.get(hubId) || 0) + 1);
+      }
+    }
     const relatedAssetIds = selectRelatedAssetIds(
       record,
       relatedHubIds,
@@ -204,7 +233,7 @@ function addRelatedData(records, hubs) {
   });
 }
 
-function selectRelatedHubIds(record, primaryHub, eligibleHubById, availableAssetIdsByHub) {
+function selectRelatedHubIds(record, primaryHub, eligibleHubById, availableAssetIdsByHub, taxonomyPolicy, thinExposureByHubId) {
   const directMembership = new Set(record.hubIds.filter((hubId) => eligibleHubById.has(hubId)));
   const explicitRelated = new Set((primaryHub.relatedHubIds || []).filter((hubId) => eligibleHubById.has(hubId)));
   const internalTargets = new Set((primaryHub.internalLinkingTargets || []).filter((hubId) => eligibleHubById.has(hubId)));
@@ -215,23 +244,49 @@ function selectRelatedHubIds(record, primaryHub, eligibleHubById, availableAsset
   candidates.delete(record.primaryHubId);
 
   const primaryAssets = new Set(availableAssetIdsByHub.get(record.primaryHubId) || []);
-  return [...candidates]
+  const scored = [...candidates]
     .map((hubId) => {
       const sharedPrimaryMembers = (availableAssetIdsByHub.get(hubId) || []).reduce(
         (count, assetId) => count + Number(primaryAssets.has(assetId)),
         0,
       );
+      const hasVerifiedSemanticRelationship = directMembership.has(hubId) || explicitRelated.has(hubId) || internalTargets.has(hubId);
+      const hasSupportedFamilyRelationship = family.has(hubId) && sharedPrimaryMembers > 0;
       const score =
         Number(directMembership.has(hubId)) * 1_000_000 +
         Number(explicitRelated.has(hubId)) * 100_000 +
         Number(internalTargets.has(hubId)) * 50_000 +
-        Number(family.has(hubId)) * 25_000 +
+        Number(hasSupportedFamilyRelationship) * 25_000 +
         sharedPrimaryMembers * 100;
-      return { hubId, score };
+      return { hubId, score, hasVerifiedSemanticRelationship, hasSupportedFamilyRelationship };
+    })
+    .filter((entry) => entry.hasVerifiedSemanticRelationship || entry.hasSupportedFamilyRelationship)
+    .filter((entry) => {
+      const hubAssetCount = (availableAssetIdsByHub.get(entry.hubId) || []).length;
+      return hubAssetCount > taxonomyPolicy.thinHubMaximumAssets || directMembership.has(entry.hubId);
     })
     .sort((left, right) => right.score - left.score || left.hubId.localeCompare(right.hubId))
-    .slice(0, 6)
-    .map((entry) => entry.hubId);
+  const scoreByHubId = new Map(scored.map((entry) => [entry.hubId, entry.score]));
+  const clustered = selectClusteredHubIds(scored.map((entry) => entry.hubId), {
+    currentHubId: record.primaryHubId,
+    policy: taxonomyPolicy,
+  }).sort((left, right) => (scoreByHubId.get(right) || 0) - (scoreByHubId.get(left) || 0) || left.localeCompare(right));
+
+  const selected = [];
+  let thinHubCount = 0;
+  for (const hubId of clustered) {
+    const hub = eligibleHubById.get(hubId);
+    const isThin = (availableAssetIdsByHub.get(hubId) || []).length <= taxonomyPolicy.thinHubMaximumAssets;
+    if (isThin && thinHubCount >= taxonomyPolicy.maximumThinHubsPerRelatedList) continue;
+    if (isThin) {
+      const baseline = taxonomyPolicy.thinHubExposureBaseline[hub?.slug];
+      if (Number.isInteger(baseline) && (thinExposureByHubId.get(hubId) || 0) >= baseline) continue;
+    }
+    selected.push(hubId);
+    if (isThin) thinHubCount += 1;
+    if (selected.length === 6) break;
+  }
+  return selected;
 }
 
 function selectRelatedAssetIds(record, relatedHubIds, recordByAssetId, eligibleHubById, availableAssetIdsByHub) {
@@ -318,6 +373,8 @@ function validateOutputs(input, outputs) {
     if (LOCAL_OR_PRIVATE_PATTERN.test(serialized)) throw new Error(`Unsafe path leakage: ${record.assetId}`);
     if (/"(?:pngPath|thumbnailPath|sourcePath|localPath|svgDownload)"/.test(serialized)) throw new Error(`Browser-irrelevant field leaked: ${record.assetId}`);
     if (record.publicAvailabilityStatus !== "available") throw new Error(`Invalid availability: ${record.assetId}`);
+    if (!record.publicTitle || !record.displayTitle || !record.metadataTitle || !record.altText) throw new Error(`Missing title model: ${record.assetId}`);
+    if (record.designNumber !== null && (!Number.isInteger(record.designNumber) || record.designNumber < 1)) throw new Error(`Invalid design number: ${record.assetId}`);
     if (!Array.isArray(record.relatedAssetIds) || record.relatedAssetIds.length > 12) throw new Error(`Invalid related printable list: ${record.assetId}`);
     if (!Array.isArray(record.relatedHubIds) || record.relatedHubIds.length > 6) throw new Error(`Invalid related hub list: ${record.assetId}`);
     assertUnique(record.relatedAssetIds, `related printable for ${record.assetId}`);
@@ -341,7 +398,7 @@ function validateOutputs(input, outputs) {
 }
 
 function renderRelatedReport(routeManifest) {
-  return `# Runtime Printable Related Data\n\nGenerated: ${routeManifest.generatedAt}\n\n- Printable records: ${routeManifest.summary.routeCount.toLocaleString("en-US")}\n- Related printables per record: up to 12\n- Related hubs per record: up to 6\n\n## Related printable scoring\n\nCandidates are the deterministic union of available records in the printable's routed public hub memberships and its generated related hubs. The current item is removed. Candidates receive 1,000,000 points for sharing the primary hub, 100,000 points for every additional shared public hub, and 10,000 points multiplied by the inverse rank of each generated related hub they belong to. Higher scores sort first; asset ID ascending is the final tie-break. Selection takes unique normalized public titles first, then fills remaining slots without duplicate asset IDs, up to 12.\n\n## Related hub scoring\n\nCandidates must already exist as a direct printable membership, a primary-hub relatedHubId, an internal-linking target, or a parent/child relationship. Root, non-routed, non-indexable, and non-sitemap hubs are excluded. Direct membership receives 1,000,000 points; relatedHubIds receive 100,000; internal targets receive 50,000; family relationships receive 25,000; and every available member shared with the primary hub adds 100. Higher scores sort first; hub ID ascending is the final tie-break. The list is capped at six.\n\nCanonical route fields remain frozen and do not participate in either score. Runtime randomness, build-time randomness, and external keyword data are not used.\n`;
+  return `# Runtime Printable Related Data\n\nGenerated: ${routeManifest.generatedAt}\n\n- Printable records: ${routeManifest.summary.routeCount.toLocaleString("en-US")}\n- Related printables per record: up to 12\n- Related hubs per record: up to 6\n\n## Related printable scoring\n\nCandidates are the deterministic union of available records in the printable's routed public hub memberships and its generated related hubs. The current item is removed. Candidates receive 1,000,000 points for sharing the primary hub, 100,000 points for every additional shared public hub, and 10,000 points multiplied by the inverse rank of each generated related hub they belong to. Higher scores sort first; asset ID ascending is the final tie-break. Selection takes unique normalized public titles first, then fills remaining slots without duplicate asset IDs, up to 12.\n\n## Related hub scoring\n\nCandidates must already exist as a direct printable membership, a primary-hub relatedHubId, an internal-linking target, or a supported parent/child relationship. Zero-overlap family metadata does not add eligibility or score. Direct membership receives 1,000,000 points; relatedHubIds receive 100,000; internal targets receive 50,000; supported family relationships receive 25,000; and every available member shared with the primary hub adds 100. Hubs below 12 printables require direct membership, at most one thin hub may appear, and configured near-duplicate clusters contribute at most one result. Higher scores sort first; hub ID ascending is the final tie-break. The list is capped at six.\n\nCanonical route fields remain frozen and do not participate in either score. Runtime randomness, build-time randomness, stale internal-linking output, and external keyword data are not used.\n`;
 }
 
 function buildTitleReview(records, normalizations) {
@@ -423,11 +480,6 @@ function normalizePublicTitle(title, assetId, normalizations) {
   return normalized;
 }
 
-function normalizeAltText(altText, publicTitle) {
-  const normalized = String(altText || "").replace(/\.(?:png|jpe?g|webp|svg)(?=\s|$)/gi, "").trim();
-  return normalized || `${publicTitle} coloring page`;
-}
-
 function toTitleReviewItem(record) {
   return { assetId: record.assetId, title: record.publicTitle };
 }
@@ -467,6 +519,11 @@ async function readInputs(repoRoot) {
 
 async function readPreviousManifest(repoRoot) {
   const target = path.join(repoRoot, PRINTABLE_OUTPUTS.routeManifest);
+  return existsSync(target) ? JSON.parse(await readFile(target, "utf8")) : null;
+}
+
+async function readPreviousTitleManifest(repoRoot) {
+  const target = path.join(repoRoot, TITLE_MANIFEST_PATH);
   return existsSync(target) ? JSON.parse(await readFile(target, "utf8")) : null;
 }
 

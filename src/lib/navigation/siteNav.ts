@@ -30,18 +30,19 @@ const links = {
   dinosaurs: hub("dinosaurs", "Dinosaurs", "/coloring-pages/dinosaurs", "hub_dinosaurs", 189),
   vehicles: hub("vehicles", "Vehicles", "/coloring-pages/vehicles", "hub_vehicles", 373),
   easy: hub("easy", "Easy", "/coloring-pages/easy", "hub_easy", 1300),
-  geometric: hub("geometric", "Geometric", "/coloring-pages/geometric", "hub_geometric", 1457),
   chibi: hub("chibi", "Chibi", "/coloring-pages/chibi", "hub_chibi", 908),
   kawaii: hub("kawaii", "Kawaii", "/coloring-pages/kawaii", "hub_kawaii", 88),
+  cute: hub("cute", "Cute", "/coloring-pages/cute", "hub_cute", 375),
   flowers: hub("flowers", "Flowers", "/coloring-pages/flowers", "hub_flowers", 346),
   seaLife: hub("sea-life", "Sea Life", "/coloring-pages/sea-life", "hub_sea_life", 236),
   dogs: hub("dogs", "Dogs", "/coloring-pages/dogs", "hub_dogs", 284),
   birds: hub("birds", "Birds", "/coloring-pages/birds", "hub_birds", 188),
   prehistoric: hub("prehistoric-animals", "Prehistoric Animals", "/coloring-pages/prehistoric-animals", "hub_prehistoric_animals", 220),
   food: hub("food", "Food", "/coloring-pages/food", "hub_food", 261),
+  buildings: hub("buildings", "Buildings", "/coloring-pages/buildings", "hub_buildings", 156),
+  fantasyCreatures: hub("fantasy-creatures", "Fantasy Creatures", "/coloring-pages/fantasy-creatures", "hub_fantasy_creatures", 531),
   christmas: hub("christmas", "Christmas", "/coloring-pages/christmas", "hub_christmas", 332),
   halloween: hub("halloween", "Halloween", "/coloring-pages/halloween", "hub_halloween", 305),
-  stPatricksDay: hub("st-patricks-day", "St. Patrick's Day", "/coloring-pages/st-patricks-day", "hub_st_patricks_day", 20),
 } as const;
 
 export const desktopPrimaryItems: DesktopNavigationItem[] = [
@@ -57,26 +58,21 @@ export const categoryNavigationGroups: NavigationGroup[] = [
   {
     id: "popular",
     label: "Popular",
-    links: [links.animals, links.plushies, links.mandalas, links.fantasy, links.dinosaurs, links.vehicles],
+    links: [links.animals, links.plushies, links.fantasy, links.dinosaurs, links.vehicles, links.buildings],
   },
   {
     id: "audience",
-    label: "Browse by audience",
-    links: [links.kids, links.adults, links.easy, links.geometric, links.chibi, links.kawaii],
+    label: "Styles and difficulty",
+    links: [links.easy, links.chibi, links.kawaii, links.cute],
   },
   {
     id: "subjects",
     label: "Subjects",
-    links: [links.flowers, links.seaLife, links.dogs, links.birds, links.prehistoric, links.food],
-  },
-  {
-    id: "seasonal-occasions",
-    label: "Seasonal and occasions",
-    links: [links.christmas, links.halloween, links.stPatricksDay],
+    links: [links.flowers, links.seaLife, links.dogs, links.birds, links.prehistoric, links.food, links.fantasyCreatures],
   },
 ];
 
-export const seasonalNavigationLinks: NavigationLink[] = [links.christmas, links.halloween, links.stPatricksDay];
+export const seasonalNavigationLinks: NavigationLink[] = [links.christmas, links.halloween];
 
 export const mobileDirectLinks: NavigationLink[] = [
   direct("home", "Home", "/"),

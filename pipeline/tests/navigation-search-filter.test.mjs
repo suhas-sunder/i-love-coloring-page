@@ -26,7 +26,7 @@ test("navigation model owns approved routes, labels, groups, and route relations
   const routedHubs = new Map(hubs.hubs.map((hub) => [hub.route, hub]));
   const configuredHubs = [...siteNav.matchAll(/\w+: hub\("([^"]+)", "([^"]+)", "([^"]+)", "([^"]+)", (\d+)\)/g)]
     .map(([, id, label, href, hubId, count]) => ({ id, label, href, hubId, count: Number(count) }));
-  assert.equal(configuredHubs.length, 21);
+  assert.equal(configuredHubs.length, 22);
   for (const link of configuredHubs) {
     const hub = routedHubs.get(link.href);
     assert.ok(hub, link.href);
@@ -39,8 +39,8 @@ test("navigation model owns approved routes, labels, groups, and route relations
     assert.doesNotMatch(link.href, /[?#]|\/page\/|\.(?:svg|webp|png)$/i);
     assert.ok(link.label.trim().length > 0);
   }
-  assert.deepEqual(configuredHubs.filter((link) => ["christmas", "halloween", "st-patricks-day"].includes(link.id)).map((link) => link.id), ["christmas", "halloween", "st-patricks-day"]);
-  assert.match(siteNav, /label: "Popular"[\s\S]*label: "Browse by audience"[\s\S]*label: "Subjects"[\s\S]*label: "Seasonal and occasions"/);
+  assert.deepEqual(configuredHubs.filter((link) => ["christmas", "halloween", "st-patricks-day"].includes(link.id)).map((link) => link.id), ["christmas", "halloween"]);
+  assert.match(siteNav, /label: "Popular"[\s\S]*label: "Styles and difficulty"[\s\S]*label: "Subjects"/);
   assert.match(siteNav, /getActivePrimaryNavigationId/);
   assert.doesNotMatch(siteNav, /includes\(.*pathname|pathname\.includes/);
 });

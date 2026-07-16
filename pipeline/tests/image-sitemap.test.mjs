@@ -37,7 +37,7 @@ test("image sitemap owns exactly one canonical printable page and WebP pair per 
     assert.equal(entry.canonicalPath, frozenPathByAssetId.get(entry.assetId));
     assert.equal(entry.pageUrl, `${SITE_URL}${record.canonicalPath}`);
     assert.equal(entry.imageUrl, `${ASSET_BASE_URL}/${record.webpPath}`);
-    assert.equal(entry.imageTitle, record.publicTitle.trim().replace(/\s+/g, " "));
+    assert.equal(entry.imageTitle, record.displayTitle.trim().replace(/\s+/g, " "));
     assert.match(entry.pageUrl, /^https:\/\/www\.ilovecoloringpage\.com\/printables\//);
     assert.match(entry.imageUrl, /^https:\/\/assets\.ilovecoloringpage\.com\/coloring-pages\/webp\/.+\.webp$/);
     assert.doesNotMatch(`${entry.pageUrl}\n${entry.imageUrl}`, /localhost|127\.0\.0\.1|r2\.dev|cloudflarestorage|amazonaws|\/svg\/|\/png\/|\/thumbs\//i);

@@ -10,46 +10,46 @@
     "rootRecordCount": 6352,
     "hubFileCount": 162,
     "outputFileCount": 164,
-    "rootBytes": 3235817,
-    "navigationBytes": 1529118,
+    "rootBytes": 3272751,
+    "navigationBytes": 1546605,
     "navigationPrintableCount": 6352,
     "navigationCollectionCount": 163,
-    "navigationSha256": "494995db4ff3f2f4b9dc51c3530ba7fb6c98108c98c925a360878b866657d33a",
-    "totalBytes": 18251609,
+    "navigationSha256": "6cdfb1bdce57876ab555134ac167fbd5e060b1c5af87ce1adb4bc5d67fd64f6c",
+    "totalBytes": 18452187,
     "largestHubFile": {
       "relativePath": "hubs/detailed-for-adults.json",
-      "bytes": 981731
+      "bytes": 1000276
     },
     "deferredRecordCount": 205
   },
   "files": [
     {
       "relativePath": "all.json",
-      "bytes": 3235817
+      "bytes": 3272751
     },
     {
       "relativePath": "navigation.json",
-      "bytes": 1529118
+      "bytes": 1546605
     },
     {
       "relativePath": "hubs/animals.json",
-      "bytes": 709000
+      "bytes": 709825
     },
     {
       "relativePath": "hubs/anime-girls.json",
-      "bytes": 451557
+      "bytes": 455521
     },
     {
       "relativePath": "hubs/bakery.json",
-      "bytes": 58073
+      "bytes": 58281
     },
     {
       "relativePath": "hubs/bats.json",
-      "bytes": 15095
+      "bytes": 14927
     },
     {
       "relativePath": "hubs/bears.json",
-      "bytes": 31003
+      "bytes": 31225
     },
     {
       "relativePath": "hubs/bees.json",
@@ -61,23 +61,23 @@
     },
     {
       "relativePath": "hubs/birds.json",
-      "bytes": 68303
+      "bytes": 68432
     },
     {
       "relativePath": "hubs/birthday.json",
-      "bytes": 120982
+      "bytes": 121069
     },
     {
       "relativePath": "hubs/brachiosaurus.json",
-      "bytes": 9284
+      "bytes": 9336
     },
     {
       "relativePath": "hubs/bridges.json",
-      "bytes": 14231
+      "bytes": 14454
     },
     {
       "relativePath": "hubs/buildings.json",
-      "bytes": 78189
+      "bytes": 78736
     },
     {
       "relativePath": "hubs/butterflies.json",
@@ -85,19 +85,19 @@
     },
     {
       "relativePath": "hubs/cakes.json",
-      "bytes": 12304
+      "bytes": 12391
     },
     {
       "relativePath": "hubs/cars.json",
-      "bytes": 131314
+      "bytes": 136134
     },
     {
       "relativePath": "hubs/castles.json",
-      "bytes": 12819
+      "bytes": 13229
     },
     {
       "relativePath": "hubs/cats.json",
-      "bytes": 30094
+      "bytes": 30114
     },
     {
       "relativePath": "hubs/chess.json",
@@ -105,19 +105,19 @@
     },
     {
       "relativePath": "hubs/chibi.json",
-      "bytes": 429507
+      "bytes": 431570
     },
     {
       "relativePath": "hubs/chibi-dogs.json",
-      "bytes": 42051
+      "bytes": 42037
     },
     {
       "relativePath": "hubs/chibi-flowers.json",
-      "bytes": 70116
+      "bytes": 70102
     },
     {
       "relativePath": "hubs/christmas.json",
-      "bytes": 177116
+      "bytes": 178294
     },
     {
       "relativePath": "hubs/christmas-dogs.json",
@@ -133,7 +133,7 @@
     },
     {
       "relativePath": "hubs/cute.json",
-      "bytes": 152107
+      "bytes": 152037
     },
     {
       "relativePath": "hubs/deer.json",
@@ -141,11 +141,11 @@
     },
     {
       "relativePath": "hubs/detailed-for-adults.json",
-      "bytes": 981731
+      "bytes": 1000276
     },
     {
       "relativePath": "hubs/dinosaurs.json",
-      "bytes": 102527
+      "bytes": 102839
     },
     {
       "relativePath": "hubs/diplodocus.json",
@@ -153,7 +153,7 @@
     },
     {
       "relativePath": "hubs/dogs.json",
-      "bytes": 145834
+      "bytes": 145896
     },
     {
       "relativePath": "hubs/dolphins.json",
@@ -161,7 +161,7 @@
     },
     {
       "relativePath": "hubs/dragons.json",
-      "bytes": 132038
+      "bytes": 132913
     },
     {
       "relativePath": "hubs/ducks.json",
@@ -169,7 +169,7 @@
     },
     {
       "relativePath": "hubs/dungeon.json",
-      "bytes": 46534
+      "bytes": 46739
     },
     {
       "relativePath": "hubs/eagles.json",
@@ -177,7 +177,7 @@
     },
     {
       "relativePath": "hubs/easy.json",
-      "bytes": 592476
+      "bytes": 594511
     },
     {
       "relativePath": "hubs/elephants.json",
@@ -185,43 +185,43 @@
     },
     {
       "relativePath": "hubs/fairies.json",
-      "bytes": 18963
+      "bytes": 19093
     },
     {
       "relativePath": "hubs/fantasy.json",
-      "bytes": 557800
+      "bytes": 572168
     },
     {
       "relativePath": "hubs/fantasy-creatures.json",
-      "bytes": 258585
+      "bytes": 260652
     },
     {
       "relativePath": "hubs/fantasy-dragons.json",
-      "bytes": 21846
+      "bytes": 22492
     },
     {
       "relativePath": "hubs/fish.json",
-      "bytes": 8457
+      "bytes": 8570
     },
     {
       "relativePath": "hubs/flowers.json",
-      "bytes": 167012
+      "bytes": 167117
     },
     {
       "relativePath": "hubs/food.json",
-      "bytes": 170446
+      "bytes": 172281
     },
     {
       "relativePath": "hubs/for-kids.json",
-      "bytes": 613189
+      "bytes": 615210
     },
     {
       "relativePath": "hubs/forest.json",
-      "bytes": 35755
+      "bytes": 36280
     },
     {
       "relativePath": "hubs/foxes.json",
-      "bytes": 19486
+      "bytes": 19538
     },
     {
       "relativePath": "hubs/garden.json",
@@ -233,7 +233,7 @@
     },
     {
       "relativePath": "hubs/geometric.json",
-      "bytes": 980411
+      "bytes": 998984
     },
     {
       "relativePath": "hubs/geometric-dogs.json",
@@ -241,15 +241,15 @@
     },
     {
       "relativePath": "hubs/giraffes.json",
-      "bytes": 9972
+      "bytes": 10024
     },
     {
       "relativePath": "hubs/griffins.json",
-      "bytes": 9817
+      "bytes": 10036
     },
     {
       "relativePath": "hubs/halloween.json",
-      "bytes": 188238
+      "bytes": 187520
     },
     {
       "relativePath": "hubs/hedgehogs.json",
@@ -261,19 +261,19 @@
     },
     {
       "relativePath": "hubs/holidays.json",
-      "bytes": 502341
+      "bytes": 502608
     },
     {
       "relativePath": "hubs/horses.json",
-      "bytes": 7669
+      "bytes": 7721
     },
     {
       "relativePath": "hubs/houses.json",
-      "bytes": 26054
+      "bytes": 26057
     },
     {
       "relativePath": "hubs/hydras.json",
-      "bytes": 6645
+      "bytes": 6720
     },
     {
       "relativePath": "hubs/indoor-plants.json",
@@ -281,23 +281,23 @@
     },
     {
       "relativePath": "hubs/insects.json",
-      "bytes": 84833
+      "bytes": 84777
     },
     {
       "relativePath": "hubs/kawaii.json",
-      "bytes": 43851
+      "bytes": 43823
     },
     {
       "relativePath": "hubs/knights.json",
-      "bytes": 17638
+      "bytes": 18240
     },
     {
       "relativePath": "hubs/koalas.json",
-      "bytes": 11446
+      "bytes": 11498
     },
     {
       "relativePath": "hubs/lions.json",
-      "bytes": 15609
+      "bytes": 15661
     },
     {
       "relativePath": "hubs/lizards.json",
@@ -309,19 +309,19 @@
     },
     {
       "relativePath": "hubs/mammoths.json",
-      "bytes": 12020
+      "bytes": 12072
     },
     {
       "relativePath": "hubs/mandalas.json",
-      "bytes": 981720
+      "bytes": 1000265
     },
     {
       "relativePath": "hubs/medieval-fantasy.json",
-      "bytes": 86228
+      "bytes": 100345
     },
     {
       "relativePath": "hubs/megalodon.json",
-      "bytes": 9073
+      "bytes": 9125
     },
     {
       "relativePath": "hubs/mermaids.json",
@@ -357,19 +357,19 @@
     },
     {
       "relativePath": "hubs/owls.json",
-      "bytes": 12206
+      "bytes": 12192
     },
     {
       "relativePath": "hubs/pandas.json",
-      "bytes": 15666
+      "bytes": 15718
     },
     {
       "relativePath": "hubs/pegasus.json",
-      "bytes": 13523
+      "bytes": 13861
     },
     {
       "relativePath": "hubs/penguins.json",
-      "bytes": 10196
+      "bytes": 10168
     },
     {
       "relativePath": "hubs/phoenix.json",
@@ -377,11 +377,11 @@
     },
     {
       "relativePath": "hubs/planes.json",
-      "bytes": 68029
+      "bytes": 79915
     },
     {
       "relativePath": "hubs/plants.json",
-      "bytes": 284018
+      "bytes": 284663
     },
     {
       "relativePath": "hubs/playing-cards.json",
@@ -393,7 +393,7 @@
     },
     {
       "relativePath": "hubs/plushie-cats.json",
-      "bytes": 11535
+      "bytes": 11587
     },
     {
       "relativePath": "hubs/plushie-dogs.json",
@@ -401,11 +401,11 @@
     },
     {
       "relativePath": "hubs/plushie-dragons.json",
-      "bytes": 44040
+      "bytes": 44144
     },
     {
       "relativePath": "hubs/plushie-triceratops.json",
-      "bytes": 8172
+      "bytes": 8224
     },
     {
       "relativePath": "hubs/plushie-unicorns.json",
@@ -417,27 +417,27 @@
     },
     {
       "relativePath": "hubs/plushies.json",
-      "bytes": 903204
+      "bytes": 905165
     },
     {
       "relativePath": "hubs/prehistoric-animals.json",
-      "bytes": 121774
+      "bytes": 122190
     },
     {
       "relativePath": "hubs/pumpkins.json",
-      "bytes": 15197
+      "bytes": 15102
     },
     {
       "relativePath": "hubs/rabbits.json",
-      "bytes": 11268
+      "bytes": 11320
     },
     {
       "relativePath": "hubs/reindeer.json",
-      "bytes": 8450
+      "bytes": 8422
     },
     {
       "relativePath": "hubs/reptiles.json",
-      "bytes": 72936
+      "bytes": 72988
     },
     {
       "relativePath": "hubs/robots.json",
@@ -449,63 +449,63 @@
     },
     {
       "relativePath": "hubs/santa.json",
-      "bytes": 6218
+      "bytes": 6092
     },
     {
       "relativePath": "hubs/sea-life.json",
-      "bytes": 110113
+      "bytes": 110278
     },
     {
       "relativePath": "hubs/sharks.json",
-      "bytes": 8917
+      "bytes": 8969
     },
     {
       "relativePath": "hubs/sheep.json",
-      "bytes": 6639
+      "bytes": 6691
     },
     {
       "relativePath": "hubs/sloths.json",
-      "bytes": 14364
+      "bytes": 14416
     },
     {
       "relativePath": "hubs/snakes.json",
-      "bytes": 9117
+      "bytes": 9169
     },
     {
       "relativePath": "hubs/spiders.json",
-      "bytes": 14255
+      "bytes": 14199
     },
     {
       "relativePath": "hubs/st-patricks-day.json",
-      "bytes": 12035
+      "bytes": 11755
     },
     {
       "relativePath": "hubs/stegosaurus.json",
-      "bytes": 10158
+      "bytes": 10210
     },
     {
       "relativePath": "hubs/sushi.json",
-      "bytes": 108585
+      "bytes": 110125
     },
     {
       "relativePath": "hubs/t-rex.json",
-      "bytes": 11053
+      "bytes": 11105
     },
     {
       "relativePath": "hubs/tigers.json",
-      "bytes": 23074
+      "bytes": 23126
     },
     {
       "relativePath": "hubs/trains.json",
-      "bytes": 83911
+      "bytes": 83897
     },
     {
       "relativePath": "hubs/trees.json",
-      "bytes": 20608
+      "bytes": 21148
     },
     {
       "relativePath": "hubs/triceratops.json",
-      "bytes": 13015
+      "bytes": 13067
     },
     {
       "relativePath": "hubs/turtles.json",
@@ -513,15 +513,15 @@
     },
     {
       "relativePath": "hubs/unicorns.json",
-      "bytes": 18611
+      "bytes": 18735
     },
     {
       "relativePath": "hubs/vehicles.json",
-      "bytes": 272071
+      "bytes": 288763
     },
     {
       "relativePath": "hubs/velociraptors.json",
-      "bytes": 13376
+      "bytes": 13744
     },
     {
       "relativePath": "hubs/whales.json",
@@ -529,15 +529,15 @@
     },
     {
       "relativePath": "hubs/witches.json",
-      "bytes": 16718
+      "bytes": 16764
     },
     {
       "relativePath": "hubs/wizards.json",
-      "bytes": 13341
+      "bytes": 13775
     },
     {
       "relativePath": "hubs/wolves.json",
-      "bytes": 21212
+      "bytes": 21331
     },
     {
       "relativePath": "hubs/world-landmarks.json",
@@ -545,15 +545,15 @@
     },
     {
       "relativePath": "hubs/wyverns.json",
-      "bytes": 6534
+      "bytes": 6737
     },
     {
       "relativePath": "hubs/zebras.json",
-      "bytes": 9622
+      "bytes": 9674
     },
     {
       "relativePath": "hubs/dodo.json",
-      "bytes": 5946
+      "bytes": 5998
     },
     {
       "relativePath": "hubs/bamboo.json",
@@ -585,23 +585,23 @@
     },
     {
       "relativePath": "hubs/woolly-mammoth.json",
-      "bytes": 11549
+      "bytes": 11601
     },
     {
       "relativePath": "hubs/saber-toothed-tiger.json",
-      "bytes": 8264
+      "bytes": 8316
     },
     {
       "relativePath": "hubs/magic.json",
-      "bytes": 16506
+      "bytes": 16737
     },
     {
       "relativePath": "hubs/ankylosaurus.json",
-      "bytes": 6398
+      "bytes": 6450
     },
     {
       "relativePath": "hubs/trick-or-treat.json",
-      "bytes": 7557
+      "bytes": 7403
     },
     {
       "relativePath": "hubs/lily.json",
@@ -621,7 +621,7 @@
     },
     {
       "relativePath": "hubs/pterodactyl.json",
-      "bytes": 5372
+      "bytes": 5424
     },
     {
       "relativePath": "hubs/iguanodon.json",
@@ -637,7 +637,7 @@
     },
     {
       "relativePath": "hubs/cookie.json",
-      "bytes": 10818
+      "bytes": 10748
     },
     {
       "relativePath": "hubs/daisy.json",
@@ -669,7 +669,7 @@
     },
     {
       "relativePath": "hubs/leprechaun.json",
-      "bytes": 5036
+      "bytes": 4938
     },
     {
       "relativePath": "hubs/salmon.json",
@@ -677,7 +677,7 @@
     },
     {
       "relativePath": "hubs/gingerbread.json",
-      "bytes": 6359
+      "bytes": 6303
     }
   ]
 }

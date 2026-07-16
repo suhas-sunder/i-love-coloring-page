@@ -3,75 +3,61 @@ import Link from "next/link";
 
 import { JsonLdScript } from "@/components/seo/JsonLdScript";
 import { TrustPage, TrustSection } from "@/components/site/TrustPage";
+import { siteIdentity } from "@/config/siteIdentity";
 import { buildTrustPageJsonLd } from "@/lib/seo/pageJsonLd";
-import { getCanonicalUrl, siteConfig } from "@/lib/site/siteConfig";
+import { getCanonicalUrl } from "@/lib/site/siteConfig";
 
 const canonical = getCanonicalUrl("/about");
+const title = `About ${siteIdentity.siteName}`;
+const description = `Learn about ${siteIdentity.siteName}, a static library for browsing, printing, and downloading coloring pages.`;
 
 export const metadata: Metadata = {
-  title: `About ${siteConfig.siteName}`,
-  description: `Learn about ${siteConfig.siteName}, a printable coloring page library organized into useful collections with PNG print and download options.`,
+  title,
+  description,
   alternates: { canonical },
-  openGraph: {
-    title: `About ${siteConfig.siteName}`,
-    description: "A printable coloring page library organized into searchable collections with PNG downloads.",
-    url: canonical,
-    type: "website",
-  },
-  twitter: {
-    card: "summary",
-    title: `About ${siteConfig.siteName}`,
-    description: "A printable coloring page library organized into searchable collections with PNG downloads.",
-  },
+  openGraph: { title, description, url: canonical, type: "website" },
+  twitter: { card: "summary", title, description },
 };
 
 export default function AboutPage() {
   return (
     <TrustPage
       eyebrow="About"
-      title={`About ${siteConfig.siteName}`}
-      intro={`${siteConfig.siteName} is a printable coloring page library built for quick browsing, clear previews, and simple PNG printing or downloads.`}
+      title={title}
+      intro={`${siteIdentity.siteName} is a static printable coloring-page library organized to make browsing and using individual pages straightforward.`}
     >
       <JsonLdScript
         id="jsonld-about"
         data={buildTrustPageJsonLd({
           path: "/about",
-          title: `About ${siteConfig.siteName}`,
-          description: metadata.description as string,
+          title,
+          description,
           schemaType: "AboutPage",
         })}
       />
-      <TrustSection title="What this site is">
+
+      <TrustSection title="What this site offers">
         <p>
-          The site organizes coloring pages into practical collections, including animals, seasonal themes, fantasy subjects, detailed pages for adults,
-          simpler pages for kids, and other printable topics. The goal is to help visitors find a page quickly without digging through raw file names or
-          unrelated image folders.
+          Visitors can browse collections and open an individual printable page by selecting its image or title. Print is a separate action, and PNG,
+          JPG, and WebP downloads are available from the printable workflow.
         </p>
       </TrustSection>
 
-      <TrustSection title="How the library is organized">
+      <TrustSection title="Finding a printable">
         <p>
-          Pages are grouped into public collections when there is enough useful content and a clear reason for visitors to browse that topic. The main
-          gallery includes search, filters, featured previews, print controls, and PNG downloads for visible items.
+          Pages are organized into subject, audience, style, and seasonal collections. Search and filters operate in the browser to help visitors find
+          a relevant printable without creating separate public search pages.
         </p>
       </TrustSection>
 
-      <TrustSection title="What you can do here">
-        <ul>
-          <li>Browse printable coloring page collections by subject, style, or season.</li>
-          <li>Preview pages before printing or downloading.</li>
-          <li>Use PNG downloads for personal, home, classroom, and casual craft use, subject to the Terms of Use.</li>
-          <li>Report broken pages, image problems, copyright concerns, or accessibility issues through the contact page.</li>
-        </ul>
-      </TrustSection>
-
-      <TrustSection title="What is not available yet">
+      <TrustSection title="Current scope">
         <p>
-          The current public site is a static printable gallery. Future online coloring tools may be explored separately, but this version focuses on
-          browsing, printing, and downloading PNG coloring pages.
+          The site currently has no accounts, comments, user uploads, payments, or online coloring editor. It does not ask visitors to submit content
+          through the website.
         </p>
         <p>
-          For questions or issue reports, visit the <Link href="/contact">contact page</Link>.
+          Broken pages, print or download problems, accessibility issues, and rights concerns can be reported through the{" "}
+          <Link href="/contact">contact page</Link>.
         </p>
       </TrustSection>
     </TrustPage>
