@@ -7,6 +7,49 @@ type AssetSubpathsLike = {
   thumbnail?: string | null;
 };
 
+export type PrintableAssetSources = {
+  gridThumbnail: {
+    kind: "webp-preview";
+    url: string;
+    width: number;
+    height: number;
+  };
+  cardThumbnail: {
+    kind: "webp-preview";
+    url: string;
+    width: number;
+    height: number;
+  };
+  principalPreview: {
+    kind: "webp-preview";
+    url: string;
+    width: number;
+    height: number;
+    mayUpscale: false;
+  };
+  fullResolutionArtwork: {
+    kind: "internal-svg-artwork";
+    url: string;
+    width: number;
+    height: number;
+  };
+  printReadyComposition: {
+    kind: "browser-composed-from-internal-svg";
+    sourceUrl: string;
+  };
+  downloadableFormats: Readonly<Record<"png" | "jpg" | "webp", "browser-generated-from-internal-svg">>;
+};
+
+type PrintableAssetRecord = {
+  assetId: string;
+  webpPath: string;
+  svgPath: string;
+  previewWidth: number | null;
+  previewHeight: number | null;
+  artworkWidth: number | null;
+  artworkHeight: number | null;
+};
+
 export type ResolvedColoringAssetUrls = {
   preview: string | null;
   previewFallback: string | null;
@@ -62,6 +105,47 @@ export function resolveColoringItemAssetUrls(assetSubpaths: AssetSubpathsLike): 
     thumbnail,
     png,
     svg,
+  };
+}
+
+export function resolvePrintableAssetSources(printable: PrintableAssetRecord): PrintableAssetSources {
+  const webpUrl = resolveWebpPreviewAssetUrl(printable.webpPath);
+  const svgUrl = resolveSvgAssetUrl(printable.svgPath);
+  const previewWidth = positiveDimension(printable.previewWidth);
+  const previewHeight = positiveDimension(printable.previewHeight);
+  const artworkWidth = positiveDimension(printable.artworkWidth);
+  const artworkHeight = positiveDimension(printable.artworkHeight);
+
+  if (!webpUrl || !svgUrl || !previewWidth || !previewHeight || !artworkWidth || !artworkHeight) {
+    throw new Error(`Incomplete printable asset source contract: ${printable.assetId}`);
+  }
+
+  const publicPreview = {
+    kind: "webp-preview" as const,
+    url: webpUrl,
+    width: previewWidth,
+    height: previewHeight,
+  };
+
+  return {
+    gridThumbnail: publicPreview,
+    cardThumbnail: publicPreview,
+    principalPreview: { ...publicPreview, mayUpscale: false },
+    fullResolutionArtwork: {
+      kind: "internal-svg-artwork",
+      url: svgUrl,
+      width: artworkWidth,
+      height: artworkHeight,
+    },
+    printReadyComposition: {
+      kind: "browser-composed-from-internal-svg",
+      sourceUrl: svgUrl,
+    },
+    downloadableFormats: {
+      png: "browser-generated-from-internal-svg",
+      jpg: "browser-generated-from-internal-svg",
+      webp: "browser-generated-from-internal-svg",
+    },
   };
 }
 
@@ -141,4 +225,8 @@ function isUsablePublicAssetBaseUrl(value: string) {
 function getPublicAssetBaseUrlOverride() {
   const runtimeProcess = globalThis.process as { env?: Record<string, string | undefined> } | undefined;
   return runtimeProcess?.env?.NEXT_PUBLIC_COLORING_ASSET_BASE_URL;
+}
+
+function positiveDimension(value: number | null | undefined) {
+  return Number.isFinite(value) && Number(value) > 0 ? Number(value) : null;
 }

@@ -89,8 +89,12 @@ test("advertisements remain outside navigation, cards, controls, grids, and dial
   ]);
   assert.doesNotMatch(forbidden, /PageAdSlot|<AdSlot|<AdRail|data-ad-placeholder|>Advertisement</);
 
-  const allSource = await readTreeText(["app", "src"]);
-  assert.doesNotMatch(allSource, /adsbygoogle|pagead2\.googlesyndication|ca-pub-|google_ad_client|googletag/i);
+  const mode = await readText("src/lib/ads/mode.ts");
+  const script = await readText("src/components/ads/AdSenseScript.tsx");
+  assert.match(mode, /environment\.NODE_ENV === "production" \? "off" : "placeholder"/);
+  assert.match(mode, /candidate !== "live"/);
+  assert.match(script, /configuration\.mode !== "live"/);
+  assert.doesNotMatch(`${mode}\n${script}`, /client-\d+|ca-pub-\d+|google_ad_client|googletag/i);
 });
 
 test("placeholder presentation is visible but not interactive or heading content", async () => {

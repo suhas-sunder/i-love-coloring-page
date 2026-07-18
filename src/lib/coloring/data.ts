@@ -12,6 +12,7 @@ import printablesJson from "@/generated/coloring/runtime-printables.json";
 import { getSiteUrl as getConfiguredSiteUrl } from "@/lib/site/siteConfig";
 
 import { getPrintablePath } from "./printablePath";
+import { getCollectionCount, getCollectionPageCount } from "./collectionCounts";
 import { getPrintableTitleModel } from "./printableTitles";
 import { selectPromotedHubs } from "./taxonomyPromotion";
 import type {
@@ -173,7 +174,7 @@ export function getPublicItemsForHub(hub: ColoringHub) {
 
 export function getPagedHubItems(hub: ColoringHub, requestedPage: number): PagedGallery {
   const pageSize = hub.galleryPageSize;
-  const totalItems = hub.assetIds.length;
+  const totalItems = getCollectionCount(hub);
   const totalPages = getHubPageCount(hub);
   const currentPage = Math.min(Math.max(1, requestedPage), totalPages);
   const start = (currentPage - 1) * pageSize;
@@ -191,7 +192,7 @@ export function getPagedHubItems(hub: ColoringHub, requestedPage: number): Paged
 }
 
 export function getHubPageCount(hub: ColoringHub) {
-  return Math.max(1, Math.ceil(hub.assetIds.length / hub.galleryPageSize));
+  return getCollectionPageCount(hub);
 }
 
 export function getHubPagePath(hub: ColoringHub, page: number) {

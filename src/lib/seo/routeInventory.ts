@@ -4,6 +4,7 @@ import hubsJson from "@/generated/coloring/runtime-hubs.json";
 import printablesJson from "@/generated/coloring/runtime-printables.json";
 import routesJson from "@/generated/coloring/runtime-routes.json";
 import { getPrintablePath } from "@/lib/coloring/printablePath";
+import { getCollectionPageCount } from "@/lib/coloring/collectionCounts";
 import type { ColoringHub, RuntimePrintable } from "@/lib/coloring/types";
 import { trustPages } from "@/lib/trust/trustPages";
 
@@ -98,7 +99,7 @@ function getPublicHubRoutes() {
 function getPaginatedHubRoutes() {
   return hubsManifest.hubs.flatMap((hub) => {
     if (hub.route === "/coloring-pages" || !hub.indexable || !hub.sitemap) return [];
-    const pageCount = Math.max(1, Math.ceil(hub.assetIds.length / hub.galleryPageSize));
+    const pageCount = getCollectionPageCount(hub);
     return Array.from({ length: Math.max(0, pageCount - 1) }, (_, index) =>
       route(`${hub.route}/page/${index + 2}`, "paginated-hub", true, false),
     );

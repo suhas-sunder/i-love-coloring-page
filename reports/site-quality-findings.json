@@ -1,0 +1,213 @@
+{
+  "generatedOn": "2026-07-18",
+  "summary": {
+    "hubsAnalyzed": 163,
+    "printableRoutesAnalyzed": 6352,
+    "exactDuplicateHubGroups": 1,
+    "nearDuplicateHubGroups": 5,
+    "exactDuplicateHubPairs": 1,
+    "nearDuplicateHubPairs": 6,
+    "highContainmentPairs": 378,
+    "countInconsistencies": 0,
+    "repeatedContentGroups": 4,
+    "internalWordingOccurrences": 134,
+    "missingOrInvalidFullResolutionAssets": 0,
+    "baselinePrintablePreviewDimensionMismatches": 6352,
+    "currentPrintablePreviewDimensionMismatches": 0,
+    "safeguardsPassed": 7,
+    "safeguardsFailed": 2,
+    "retainAndIndex": 152,
+    "retainPubliclyButNoindex": 0,
+    "consolidateIntoAStrongerParent": 2,
+    "redirectToAGenuineReplacement": 0,
+    "correctCollectionMembership": 3,
+    "manualEditorialReview": 6
+  },
+  "safeguards": [
+    {
+      "name": "identical introductions across indexable hubs",
+      "status": "PASS",
+      "detail": "0 duplicated route occurrences"
+    },
+    {
+      "name": "near-identical introduction templates",
+      "status": "FAIL",
+      "detail": "3 normalized templates across 163 hubs"
+    },
+    {
+      "name": "forbidden internal terminology",
+      "status": "FAIL",
+      "detail": "134 occurrences"
+    },
+    {
+      "name": "one related-collections section maximum",
+      "status": "PASS",
+      "detail": "1 shared component occurrences"
+    },
+    {
+      "name": "visible count consistency",
+      "status": "PASS",
+      "detail": "0 mismatches"
+    },
+    {
+      "name": "noindex routes excluded from sitemap",
+      "status": "PASS",
+      "detail": "current runtime metadata"
+    },
+    {
+      "name": "navigation destinations exist",
+      "status": "PASS",
+      "detail": "0 invalid destinations"
+    },
+    {
+      "name": "redirected routes absent from navigation",
+      "status": "PASS",
+      "detail": "audit manifest is non-active and has no redirects"
+    },
+    {
+      "name": "exact inventory duplicates have explicit exception",
+      "status": "PASS",
+      "detail": "1 exact pairs"
+    }
+  ],
+  "liveChecks": [
+    {
+      "route": "/",
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "edgeCache": "DYNAMIC",
+      "canonical": "https://www.ilovecoloringpage.com",
+      "robots": null,
+      "buildRevisionPresent": false,
+      "advertisementTextOccurrences": 12,
+      "loadingPreviewPresent": true,
+      "principalImage": "<img alt=\"\" class=\"asset-image\" data-priority=\"false\" data-state=\"loading\" decoding=\"async\" loading=\"lazy\" src=\"https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp\"/>",
+      "bodySha": "40eddcfc"
+    },
+    {
+      "route": "/coloring-pages",
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "edgeCache": "DYNAMIC",
+      "canonical": "https://www.ilovecoloringpage.com/coloring-pages",
+      "robots": null,
+      "buildRevisionPresent": false,
+      "advertisementTextOccurrences": 12,
+      "loadingPreviewPresent": true,
+      "principalImage": "<img alt=\"\" class=\"asset-image\" data-priority=\"true\" data-state=\"loading\" decoding=\"async\" loading=\"eager\" src=\"https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp\"/>",
+      "bodySha": "d429f0bf"
+    },
+    {
+      "route": "/coloring-pages/animals",
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "edgeCache": "DYNAMIC",
+      "canonical": "https://www.ilovecoloringpage.com/coloring-pages/animals",
+      "robots": null,
+      "buildRevisionPresent": false,
+      "advertisementTextOccurrences": 12,
+      "loadingPreviewPresent": true,
+      "principalImage": "<img alt=\"\" class=\"asset-image\" data-priority=\"true\" data-state=\"loading\" decoding=\"async\" loading=\"eager\" src=\"https://assets.ilovecoloringpage.com/coloring-pages/webp/chibi/chibi-animals-pets-dogs-afghan-hound-d9a83b6ec9.webp\"/>",
+      "bodySha": "57e4b62a"
+    },
+    {
+      "route": "/coloring-pages/detailed-for-adults",
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "edgeCache": "DYNAMIC",
+      "canonical": "https://www.ilovecoloringpage.com/coloring-pages/detailed-for-adults",
+      "robots": null,
+      "buildRevisionPresent": false,
+      "advertisementTextOccurrences": 12,
+      "loadingPreviewPresent": true,
+      "principalImage": "<img alt=\"\" class=\"asset-image\" data-priority=\"true\" data-state=\"loading\" decoding=\"async\" loading=\"eager\" src=\"https://assets.ilovecoloringpage.com/coloring-pages/webp/mandala/mandala-geometry-patterns-animal-mandala-fox-3e8e80a2fd.webp\"/>",
+      "bodySha": "9310cc96"
+    },
+    {
+      "route": "/coloring-pages/mandalas",
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "edgeCache": "DYNAMIC",
+      "canonical": "https://www.ilovecoloringpage.com/coloring-pages/mandalas",
+      "robots": null,
+      "buildRevisionPresent": false,
+      "advertisementTextOccurrences": 12,
+      "loadingPreviewPresent": true,
+      "principalImage": "<img alt=\"\" class=\"asset-image\" data-priority=\"true\" data-state=\"loading\" decoding=\"async\" loading=\"eager\" src=\"https://assets.ilovecoloringpage.com/coloring-pages/webp/mandala/mandala-geometry-patterns-animal-mandala-fox-3e8e80a2fd.webp\"/>",
+      "bodySha": "38d61b7e"
+    },
+    {
+      "route": "/coloring-pages/geometric",
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "edgeCache": "DYNAMIC",
+      "canonical": "https://www.ilovecoloringpage.com/coloring-pages/geometric",
+      "robots": null,
+      "buildRevisionPresent": false,
+      "advertisementTextOccurrences": 12,
+      "loadingPreviewPresent": true,
+      "principalImage": "<img alt=\"\" class=\"asset-image\" data-priority=\"true\" data-state=\"loading\" decoding=\"async\" loading=\"eager\" src=\"https://assets.ilovecoloringpage.com/coloring-pages/webp/mandala/mandala-geometry-patterns-animal-mandala-fox-3e8e80a2fd.webp\"/>",
+      "bodySha": "c4084229"
+    },
+    {
+      "route": "/printables/fantasy/fantasy-abyss-wyrm-7a01eb3636",
+      "status": 200,
+      "cacheControl": "public,max-age=0,must-revalidate",
+      "edgeCache": "DYNAMIC",
+      "canonical": "https://www.ilovecoloringpage.com/printables/fantasy/fantasy-abyss-wyrm-7a01eb3636",
+      "robots": "index, follow",
+      "buildRevisionPresent": false,
+      "advertisementTextOccurrences": 12,
+      "loadingPreviewPresent": true,
+      "principalImage": "<img alt=\"\" class=\"asset-image\" data-priority=\"true\" data-state=\"loading\" decoding=\"async\" loading=\"eager\" width=\"1024\" height=\"1536\" src=\"https://assets.ilovecoloringpage.com/coloring-pages/webp/fantasy/fantasy-abyss-wyrm-7a01eb3636.webp\"/>",
+      "bodySha": "0f51b8df"
+    },
+    {
+      "route": "/robots.txt",
+      "status": 200,
+      "cacheControl": "public, max-age=31536000, must-revalidate",
+      "edgeCache": "REVALIDATED",
+      "canonical": null,
+      "robots": null,
+      "buildRevisionPresent": false,
+      "advertisementTextOccurrences": 0,
+      "loadingPreviewPresent": false,
+      "principalImage": "",
+      "bodySha": "b8807be4"
+    }
+  ],
+  "localChecks": [
+    {
+      "route": "/",
+      "exportPresent": true,
+      "advertisementTextOccurrences": 0,
+      "loadingPreviewPresent": true,
+      "buildRevisionPresent": true,
+      "bodySha": "073f2f09"
+    },
+    {
+      "route": "/coloring-pages",
+      "exportPresent": true,
+      "advertisementTextOccurrences": 0,
+      "loadingPreviewPresent": true,
+      "buildRevisionPresent": true,
+      "bodySha": "2999e9c1"
+    },
+    {
+      "route": "/coloring-pages/animals",
+      "exportPresent": true,
+      "advertisementTextOccurrences": 0,
+      "loadingPreviewPresent": true,
+      "buildRevisionPresent": true,
+      "bodySha": "a49ffcc9"
+    },
+    {
+      "route": "/printables/fantasy/fantasy-abyss-wyrm-7a01eb3636",
+      "exportPresent": true,
+      "advertisementTextOccurrences": 0,
+      "loadingPreviewPresent": true,
+      "buildRevisionPresent": true,
+      "bodySha": "11fa27b1"
+    }
+  ]
+}

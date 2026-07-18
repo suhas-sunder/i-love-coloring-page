@@ -1,4 +1,5 @@
 import hubsJson from "@/generated/coloring/runtime-hubs.json";
+import { getCollectionCount } from "@/lib/coloring/collectionCounts";
 
 export type SitemapHubLink = {
   label: string;
@@ -8,7 +9,7 @@ export type SitemapHubLink = {
 };
 
 type RuntimeHubs = {
-  hubs: Array<{ slug: string; title: string; route: string; assetCount: number; indexable: boolean; sitemap: boolean }>;
+  hubs: Array<{ slug: string; title: string; route: string; assetCount: number; assetIds: string[]; indexable: boolean; sitemap: boolean }>;
 };
 
 const publicHubs = (hubsJson as RuntimeHubs).hubs
@@ -17,7 +18,7 @@ const publicHubs = (hubsJson as RuntimeHubs).hubs
     label: hub.title.replace(/\s+Coloring Pages$/i, ""),
     slug: hub.slug,
     href: hub.route,
-    assetCount: hub.assetCount,
+    assetCount: getCollectionCount(hub),
   }));
 
 export const sitemapRootHubLink = publicHubs.find((link) => link.href === "/coloring-pages") || null;

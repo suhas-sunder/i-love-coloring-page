@@ -60,8 +60,6 @@ export function AssetImage({ item, imageUrl, fallbackImageUrl = null, priority =
   return (
     <span
       className="asset-image-frame"
-      role="img"
-      aria-label={item.altText}
       data-interactive={interactive ? "true" : "false"}
       data-state={loaded ? "loaded" : "loading"}
     >
@@ -72,7 +70,7 @@ export function AssetImage({ item, imageUrl, fallbackImageUrl = null, priority =
       ) : null}
       <img
         ref={imageRef}
-        alt=""
+        alt={item.altText}
         className="asset-image"
         data-priority={priority ? "true" : "false"}
         data-state={loaded ? "loaded" : "loading"}

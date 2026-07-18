@@ -168,7 +168,10 @@ function parseStringArray(source, name) {
 }
 
 async function importSiteNav() {
-  const source = siteNavSource.replace(/import \{ footerTrustLinks \}[^;]+;/, "const footerTrustLinks = [];");
+  const fixtureCounts = Object.fromEntries(hubs.hubs.map((hub) => [hub.hubId, new Set(hub.assetIds).size]));
+  const source = siteNavSource
+    .replace(/import \{ footerTrustLinks \}[^;]+;/, "const footerTrustLinks = [];")
+    .replace(/import \{ getCollectionCountById \}[^;]+;/, `const navigationCounts = ${JSON.stringify(fixtureCounts)}; const getCollectionCountById = (hubId) => navigationCounts[hubId];`);
   const output = ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.ES2022, target: ts.ScriptTarget.ES2022 } }).outputText;
   return import(`data:text/javascript;base64,${Buffer.from(output).toString("base64")}`);
 }

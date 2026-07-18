@@ -21,6 +21,7 @@ export const PRINTABLE_INPUTS = Object.freeze({
   searchIndex: "src/generated/coloring/runtime-search-index.json",
   titleOverrides: "src/generated/coloring/title-overrides.json",
   taxonomyPolicy: "src/config/taxonomy-promotion-policy.json",
+  productionAssets: "pipeline/manifests/round-3c-production-assets.json",
 });
 
 export const PRINTABLE_OUTPUTS = Object.freeze({
@@ -63,6 +64,7 @@ function buildOutputs(input, previousManifest, previousTitleManifest) {
   const searchByAssetId = new Map(input.searchIndex.entries.map((entry) => [entry.assetId, entry]));
   const overrideByAssetId = new Map((input.titleOverrides.overrides || []).map((entry) => [entry.assetId, entry]));
   const previousByAssetId = new Map((previousManifest?.routes || []).map((entry) => [entry.assetId, entry]));
+  const productionAssetById = new Map(input.productionAssets.assets.map((entry) => [entry.assetId, entry]));
   const deferredIds = new Set(input.deferred.records.map((entry) => entry.assetId));
   const normalizations = [];
 
@@ -72,6 +74,7 @@ function buildOutputs(input, previousManifest, previousTitleManifest) {
     const assetPath = required(pathByAssetId.get(item.assetId), `Missing runtime asset paths for ${item.assetId}`);
     const search = required(searchByAssetId.get(item.assetId), `Missing runtime search entry for ${item.assetId}`);
     const override = overrideByAssetId.get(item.assetId);
+    const productionAsset = required(productionAssetById.get(item.assetId), `Missing production asset dimensions for ${item.assetId}`);
     const reviewedTitle = override?.cleanTitle || item.title;
     const publicTitle = normalizePublicTitle(reviewedTitle, item.assetId, normalizations);
     const previous = previousByAssetId.get(item.assetId);
@@ -111,6 +114,10 @@ function buildOutputs(input, previousManifest, previousTitleManifest) {
       svgPath: assetPath.internalSvgSubpath,
       width: numberOrNull(dimensions?.width),
       height: numberOrNull(dimensions?.height),
+      previewWidth: numberOrNull(productionAsset.outputDimensions?.pngPreview?.width),
+      previewHeight: numberOrNull(productionAsset.outputDimensions?.pngPreview?.height),
+      artworkWidth: numberOrNull(productionAsset.outputDimensions?.svg?.width),
+      artworkHeight: numberOrNull(productionAsset.outputDimensions?.svg?.height),
       hubIds: [...membership.hubIds],
       publicAvailabilityStatus: "available",
     };
@@ -346,6 +353,7 @@ function validateOutputs(input, outputs) {
   const availableIds = new Set(input.available.items.map((entry) => entry.assetId));
   const routedHubById = new Map(input.hubs.hubs.map((hub) => [hub.hubId, hub]));
   const assetPathById = new Map(input.assetPaths.records.map((entry) => [entry.assetId, entry]));
+  const productionAssetById = new Map(input.productionAssets.assets.map((entry) => [entry.assetId, entry]));
 
   if (records.length !== input.available.items.length) throw new Error("Printable count does not equal runtime-available count");
   assertUnique(records.map((record) => record.assetId), "assetId");
@@ -369,6 +377,15 @@ function validateOutputs(input, outputs) {
     const sourcePaths = assetPathById.get(record.assetId);
     if (record.webpPath !== sourcePaths?.webpPreviewSubpath || !/^webp\/.+\.webp$/.test(record.webpPath)) throw new Error(`Invalid WebP path: ${record.assetId}`);
     if (record.svgPath !== sourcePaths?.internalSvgSubpath || !/^svg\/.+\.svg$/.test(record.svgPath)) throw new Error(`Invalid SVG path: ${record.assetId}`);
+    const productionAsset = productionAssetById.get(record.assetId);
+    if (
+      record.previewWidth !== numberOrNull(productionAsset?.outputDimensions?.pngPreview?.width)
+      || record.previewHeight !== numberOrNull(productionAsset?.outputDimensions?.pngPreview?.height)
+    ) throw new Error(`Invalid WebP preview dimensions: ${record.assetId}`);
+    if (
+      record.artworkWidth !== numberOrNull(productionAsset?.outputDimensions?.svg?.width)
+      || record.artworkHeight !== numberOrNull(productionAsset?.outputDimensions?.svg?.height)
+    ) throw new Error(`Invalid SVG artwork dimensions: ${record.assetId}`);
     const serialized = JSON.stringify(record);
     if (LOCAL_OR_PRIVATE_PATTERN.test(serialized)) throw new Error(`Unsafe path leakage: ${record.assetId}`);
     if (/"(?:pngPath|thumbnailPath|sourcePath|localPath|svgDownload)"/.test(serialized)) throw new Error(`Browser-irrelevant field leaked: ${record.assetId}`);
@@ -506,7 +523,10 @@ function hashJson(value) {
 }
 
 function latestGeneratedAt(input) {
-  return Object.values(input)
+  // Editorial override bookkeeping and dimensional lookup manifests may be
+  // regenerated after the authoritative runtime inventory. They must not
+  // make otherwise identical printable output volatile.
+  return [input.available, input.deferred, input.hubs, input.hubItems, input.assetPaths, input.searchIndex]
     .map((value) => value?.generatedAt)
     .filter(Boolean)
     .sort()

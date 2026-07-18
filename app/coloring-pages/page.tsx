@@ -14,6 +14,7 @@ import {
   getRootHub,
 } from "@/lib/coloring/data";
 import { buildColoringMetadata } from "@/lib/coloring/metadata";
+import { getCollectionCount } from "@/lib/coloring/collectionCounts";
 import { buildGalleryLandingJsonLd } from "@/lib/seo/pageJsonLd";
 
 export function generateMetadata(): Metadata {
@@ -24,11 +25,12 @@ const SUPPORTING_HUB_SLUGS = ["animals", "plushies", "buildings", "for-kids", "d
 
 export default function ColoringPagesLanding() {
   const rootHub = getRootHub();
+  const rootCount = getCollectionCount(rootHub);
   const previewItems = getPreviewItems(rootHub).slice(0, 48);
   const { tags } = getHubFilterTags(rootHub);
   const hubsBySlug = new Map(getAllPhase1Hubs().map((hub) => [hub.slug, hub]));
   const supportingHubs = SUPPORTING_HUB_SLUGS.map((slug) => hubsBySlug.get(slug)).filter(Boolean);
-  const intro = `Browse, search, print, and download from ${rootHub.assetCount.toLocaleString()} available printable coloring pages.`;
+  const intro = `Browse, search, print, and download from ${rootCount.toLocaleString()} available printable coloring pages.`;
 
   return (
     <PublicPageShell pageFamily="gallery" className="gallery-landing-page">
@@ -49,7 +51,7 @@ export default function ColoringPagesLanding() {
         </div>
         <GallerySearch
           hubTitle={rootHub.title}
-          totalItems={rootHub.assetCount}
+          totalItems={rootCount}
           pageItems={previewItems}
           searchDataPath="/search-data/all.json"
           filterTags={tags}

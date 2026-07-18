@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { resolveWebpPreviewAssetUrl } from "./assets";
+import { resolvePrintableAssetSources } from "./assets";
 import { getPrintablePath } from "./printables";
 import { buildPrintableDescription, getPrintableTitleModel } from "./printableTitles";
 import type { RuntimePrintable } from "./types";
@@ -11,9 +11,9 @@ export function buildPrintableMetadata(printable: RuntimePrintable): Metadata {
   const title = titleModel.metadataTitle;
   const description = buildPrintableDescription(printable);
   const canonical = getCanonicalUrl(getPrintablePath(printable));
-  const imageUrl = resolveWebpPreviewAssetUrl(printable.webpPath);
-  if (!imageUrl) throw new Error(`Missing public WebP metadata URL: ${printable.assetId}`);
-  const dimensions = printable.width && printable.height ? { width: printable.width, height: printable.height } : {};
+  const assetSources = resolvePrintableAssetSources(printable);
+  const imageUrl = assetSources.principalPreview.url;
+  const dimensions = { width: assetSources.principalPreview.width, height: assetSources.principalPreview.height };
 
   return {
     title: { absolute: title },

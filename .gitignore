@@ -9,6 +9,7 @@ out/
 dist/
 .playwright-cli/
 *.tsbuildinfo
+public/build-revision.json
 
 # Local environment values
 .env

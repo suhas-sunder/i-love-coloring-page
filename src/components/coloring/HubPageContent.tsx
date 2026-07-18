@@ -12,6 +12,7 @@ import {
   getRelatedHubs,
 } from "@/lib/coloring/data";
 import type { ColoringHub } from "@/lib/coloring/types";
+import { getCollectionCount } from "@/lib/coloring/collectionCounts";
 import { buildHubPageJsonLd } from "@/lib/seo/pageJsonLd";
 
 import { JsonLdScript } from "../seo/JsonLdScript";
@@ -30,6 +31,7 @@ type HubPageContentProps = {
 
 export function HubPageContent({ hub, page }: HubPageContentProps) {
   const isPageOne = page === 1;
+  const collectionCount = getCollectionCount(hub);
   const pageFamily = isPageOne ? "hub" : "hub-pagination";
   const pagedGallery = getPagedHubItems(hub, page);
   const featuredItems = getGeneratedFeaturedItems(hub).slice(0, 8);
@@ -39,7 +41,7 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
     .filter((related) => related.route !== hub.route && related.route !== "/coloring-pages")
     .slice(0, 8);
   const childHubs = getChildHubs(hub, 8).filter((child) => child.route !== hub.route);
-  const showFeatured = isPageOne && hub.assetCount >= 12 && featuredItems.length >= 4;
+  const showFeatured = isPageOne && collectionCount >= 12 && featuredItems.length >= 4;
   const jsonLdItems = showFeatured ? featuredItems : pagedGallery.items;
   const intro = friendlyHubIntro(hub);
 
@@ -181,13 +183,13 @@ function collectionName(hub: ColoringHub) {
 
 function friendlyHubIntro(hub: ColoringHub) {
   const name = collectionName(hub);
-  return `Browse ${hub.assetCount.toLocaleString()} ${name.toLowerCase()} printables, then open a favorite for its full preview, Print action, and PNG, JPG, or WebP downloads.`;
+  return `Browse ${getCollectionCount(hub).toLocaleString()} ${name.toLowerCase()} printables, then open a favorite for its full preview, Print action, and PNG, JPG, or WebP downloads.`;
 }
 
 function supportingIntro(hub: ColoringHub, relatedHubs: ColoringHub[]) {
   const names = relatedHubs.slice(0, 3).map(collectionName);
   const relatedSentence = names.length > 0 ? ` Related subjects include ${formatList(names)}.` : "";
-  return `This gallery contains ${hub.assetCount.toLocaleString()} available ${collectionName(hub).toLowerCase()} printables.${relatedSentence}`;
+  return `This gallery contains ${getCollectionCount(hub).toLocaleString()} available ${collectionName(hub).toLowerCase()} printables.${relatedSentence}`;
 }
 
 function formatList(values: string[]) {

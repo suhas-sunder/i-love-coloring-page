@@ -4,10 +4,11 @@ import { PageAdSlot } from "@/components/ads/PageAdSlot";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { PublicPageShell } from "@/components/site/PublicPageShell";
 import { SupportingInformation } from "@/components/site/SupportingInformation";
-import { resolveSvgAssetUrl, resolveWebpPreviewAssetUrl } from "@/lib/coloring/assets";
+import { resolvePrintableAssetSources } from "@/lib/coloring/assets";
 import { getPrintablePrimaryHub, getRelatedPrintableHubs, getRelatedPrintables } from "@/lib/coloring/printables";
 import { buildPrintableDescription, getPrintableTitleModel } from "@/lib/coloring/printableTitles";
 import type { PublicColoringItem, RuntimePrintable } from "@/lib/coloring/types";
+import { getCollectionCount } from "@/lib/coloring/collectionCounts";
 
 import { AssetImage } from "./AssetImage";
 import { GalleryGrid } from "./GalleryGrid";
@@ -20,8 +21,7 @@ export function PrintableDetailPage({ printable }: { printable: RuntimePrintable
   const relatedItems = getRelatedPrintables(printable, 8).map(toPublicItem);
   const relatedHubs = getRelatedPrintableHubs(printable, 6);
   const item = toPublicItem(printable);
-  const webpUrl = resolveWebpPreviewAssetUrl(printable.webpPath);
-  const svgUrl = resolveSvgAssetUrl(printable.svgPath);
+  const assetSources = resolvePrintableAssetSources(printable);
   const orientation = printable.width && printable.height
     ? printable.width > printable.height ? "Landscape" : printable.width === printable.height ? "Square" : "Portrait"
     : null;
@@ -46,16 +46,29 @@ export function PrintableDetailPage({ printable }: { printable: RuntimePrintable
       <PageAdSlot pageFamily="printable" placement="post-header-banner" />
 
       <section className="printable-main" aria-label={`${displayTitle} preview and actions`} data-page-section="printable-main">
-        <div className="printable-preview" style={{ aspectRatio: printable.width && printable.height ? `${printable.width} / ${printable.height}` : "3 / 4" }}>
-          <AssetImage item={item} imageUrl={webpUrl} priority width={printable.width} height={printable.height} />
+        <div
+          className="printable-preview"
+          data-preview-source={assetSources.principalPreview.kind}
+          style={{
+            aspectRatio: `${assetSources.principalPreview.width} / ${assetSources.principalPreview.height}`,
+            maxWidth: `${assetSources.principalPreview.width}px`,
+          }}
+        >
+          <AssetImage
+            item={item}
+            imageUrl={assetSources.principalPreview.url}
+            priority
+            width={assetSources.principalPreview.width}
+            height={assetSources.principalPreview.height}
+          />
         </div>
         <aside className="printable-action-panel" aria-label="Print and download options">
-          <PrintableDetailActions item={item} internalSvgUrl={svgUrl} pngPreviewUrl={null} />
+          <PrintableDetailActions item={item} internalSvgUrl={assetSources.fullResolutionArtwork.url} pngPreviewUrl={null} />
           <dl className="printable-facts">
             <div><dt>Collection</dt><dd><Link href={primaryHub.route}>{primaryHub.title}</Link></dd></div>
             <div><dt>Formats</dt><dd>PNG, JPG, WebP</dd></div>
             {orientation ? <div><dt>Orientation</dt><dd>{orientation}</dd></div> : null}
-            {printable.width && printable.height ? <div><dt>Preview</dt><dd>{printable.width} × {printable.height} px</dd></div> : null}
+            <div><dt>Preview</dt><dd>{assetSources.principalPreview.width} × {assetSources.principalPreview.height} px</dd></div>
           </dl>
           <p className="utility-note">Print uses a branded Letter-size page. Downloads are prepared in your browser.</p>
         </aside>
@@ -75,7 +88,7 @@ export function PrintableDetailPage({ printable }: { printable: RuntimePrintable
         <section className="content-section" aria-labelledby="related-collections-title" data-page-section="related-collections">
           <h2 className="section-title" id="related-collections-title">Related Collections</h2>
           <div className="related-list printable-related-collections">
-            {relatedHubs.map((hub) => <Link className="related-link" href={hub.route} key={hub.hubId} prefetch={false}><span className="related-link-label">{hub.title}</span><span className="related-link-count">{hub.assetCount.toLocaleString("en-US")} pages</span></Link>)}
+            {relatedHubs.map((hub) => <Link className="related-link" href={hub.route} key={hub.hubId} prefetch={false}><span className="related-link-label">{hub.title}</span><span className="related-link-count">{getCollectionCount(hub).toLocaleString("en-US")} pages</span></Link>)}
           </div>
         </section>
       ) : null}

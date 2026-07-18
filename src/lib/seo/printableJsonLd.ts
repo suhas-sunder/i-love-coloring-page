@@ -1,4 +1,4 @@
-import { resolveWebpPreviewAssetUrl } from "@/lib/coloring/assets";
+import { resolvePrintableAssetSources } from "@/lib/coloring/assets";
 import { getPrintablePath, getPrintablePrimaryHub } from "@/lib/coloring/printables";
 import { buildPrintableDescription, getPrintableTitleModel } from "@/lib/coloring/printableTitles";
 import type { RuntimePrintable } from "@/lib/coloring/types";
@@ -11,8 +11,8 @@ export function buildPrintableJsonLd(printable: RuntimePrintable): JsonLdObject[
   const pageUrl = absoluteUrl(siteConfig.siteUrl, path);
   const hub = getPrintablePrimaryHub(printable);
   const titleModel = getPrintableTitleModel(printable);
-  const imageUrl = resolveWebpPreviewAssetUrl(printable.webpPath);
-  if (!imageUrl) throw new Error(`Missing public WebP JSON-LD URL: ${printable.assetId}`);
+  const assetSources = resolvePrintableAssetSources(printable);
+  const imageUrl = assetSources.principalPreview.url;
   const breadcrumb = buildBreadcrumbListJsonLd({
     siteUrl: siteConfig.siteUrl,
     pageUrl,
@@ -25,8 +25,8 @@ export function buildPrintableJsonLd(printable: RuntimePrintable): JsonLdObject[
   });
   const image = buildImageObjectJsonLd({
     url: imageUrl,
-    width: printable.width || undefined,
-    height: printable.height || undefined,
+    width: assetSources.principalPreview.width,
+    height: assetSources.principalPreview.height,
     name: titleModel.displayTitle,
     caption: titleModel.shortAccessibleTitle,
   });

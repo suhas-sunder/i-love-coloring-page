@@ -16,6 +16,7 @@ import {
 } from "@/lib/coloring/data";
 import { buildColoringMetadata } from "@/lib/coloring/metadata";
 import type { ColoringHub } from "@/lib/coloring/types";
+import { getCollectionCount } from "@/lib/coloring/collectionCounts";
 import { buildHomePageJsonLd } from "@/lib/seo/pageJsonLd";
 
 export function generateMetadata(): Metadata {
@@ -27,6 +28,7 @@ const DISCOVERY_COLLECTION_SLUGS = ["fantasy", "flowers", "dinosaurs", "vehicles
 
 export default function HomePage() {
   const rootHub = getRootHub();
+  const rootCount = getCollectionCount(rootHub);
   const featuredItems = getGeneratedFeaturedItems(rootHub).slice(0, 8);
   const featuredRotationCandidates = getFeaturedRotationCandidateItems(rootHub, 64);
   const hubs = getAllPhase1Hubs();
@@ -40,7 +42,7 @@ export default function HomePage() {
       <header className="home-hero" data-page-section="hero">
         <h1 className="page-title page-title-wide">I Love Coloring Page</h1>
         <p className="page-intro">
-          Browse {rootHub.assetCount.toLocaleString()} printable coloring pages, open any image or title for its own page, then print or download separately.
+          Browse {rootCount.toLocaleString()} printable coloring pages, open any image or title for its own page, then print or download separately.
         </p>
         <div className="hero-actions">
           <Link className="button button-primary" href="/coloring-pages" prefetch={false}>Browse all coloring pages</Link>

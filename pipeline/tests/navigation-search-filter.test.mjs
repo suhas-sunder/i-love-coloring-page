@@ -24,14 +24,14 @@ const ranking = await importTypeScript("src/lib/search/ranking.ts");
 
 test("navigation model owns approved routes, labels, groups, and route relationships", () => {
   const routedHubs = new Map(hubs.hubs.map((hub) => [hub.route, hub]));
-  const configuredHubs = [...siteNav.matchAll(/\w+: hub\("([^"]+)", "([^"]+)", "([^"]+)", "([^"]+)", (\d+)\)/g)]
-    .map(([, id, label, href, hubId, count]) => ({ id, label, href, hubId, count: Number(count) }));
+  const configuredHubs = [...siteNav.matchAll(/\w+: hub\("([^"]+)", "([^"]+)", "([^"]+)", "([^"]+)"\)/g)]
+    .map(([, id, label, href, hubId]) => ({ id, label, href, hubId }));
   assert.equal(configuredHubs.length, 22);
   for (const link of configuredHubs) {
     const hub = routedHubs.get(link.href);
     assert.ok(hub, link.href);
     assert.equal(hub.hubId, link.hubId, link.href);
-    assert.equal(hub.assetCount, link.count, link.href);
+    assert.equal(new Set(hub.assetIds).size, hub.assetCount, link.href);
     assert.equal(hub.indexable, true, link.href);
     assert.equal(hub.sitemap, true, link.href);
     assert.equal(hubs.backlogHubs.some((entry) => entry.slug === hub.slug), false, link.href);
@@ -42,6 +42,7 @@ test("navigation model owns approved routes, labels, groups, and route relations
   assert.deepEqual(configuredHubs.filter((link) => ["christmas", "halloween", "st-patricks-day"].includes(link.id)).map((link) => link.id), ["christmas", "halloween"]);
   assert.match(siteNav, /label: "Popular"[\s\S]*label: "Styles and difficulty"[\s\S]*label: "Subjects"/);
   assert.match(siteNav, /getActivePrimaryNavigationId/);
+  assert.match(siteNav, /getCollectionCountById\(hubId\)/);
   assert.doesNotMatch(siteNav, /includes\(.*pathname|pathname\.includes/);
 });
 

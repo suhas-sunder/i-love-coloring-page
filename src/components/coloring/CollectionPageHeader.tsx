@@ -1,6 +1,7 @@
 import type { ColoringHub } from "@/lib/coloring/types";
 
 import { Breadcrumbs, type BreadcrumbItem } from "@/components/site/Breadcrumbs";
+import { getCollectionCount } from "@/lib/coloring/collectionCounts";
 
 type CollectionPageHeaderProps = {
   hub: ColoringHub;
@@ -13,6 +14,7 @@ type CollectionPageHeaderProps = {
 export function CollectionPageHeader({ hub, intro, title = hub.h1, page = 1, showFacts = true }: CollectionPageHeaderProps) {
   const heading = page > 1 ? `${title}, Page ${page}` : title;
   const breadcrumbs = getBreadcrumbs(hub, page);
+  const collectionCount = getCollectionCount(hub);
 
   return (
     <header className="collection-page-header" data-page-section="page-header">
@@ -21,7 +23,7 @@ export function CollectionPageHeader({ hub, intro, title = hub.h1, page = 1, sho
       <p className="page-intro">{intro}</p>
       {showFacts ? (
         <ul className="hero-facts" aria-label="Collection summary">
-          <li><strong>{hub.assetCount.toLocaleString()}</strong> printable pages</li>
+          <li><strong>{collectionCount.toLocaleString()}</strong> printable pages</li>
           <li>Images and titles open printable pages</li>
           <li>Print and download actions stay separate</li>
         </ul>

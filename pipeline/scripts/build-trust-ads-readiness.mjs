@@ -34,9 +34,10 @@ const outFiles = listFiles(OUT);
 const activeSourceText = readActiveSourceText();
 const representativeOutput = readRepresentativeOutput(runtime.records[0]);
 const integrationScanText = `${activeSourceText}\n${representativeOutput.text}\n${readStaticRuntimeText(outFiles)}`;
+const productionAdMode = (process.env.NEXT_PUBLIC_AD_MODE || "off").trim().toLowerCase();
 
 const integrationFindings = {
-  liveAdvertising: findPattern(integrationScanText, /adsbygoogle|pagead2\.googlesyndication|google_ad_client|data-ad-client\s*=|<script[^>]+doubleclick/i),
+  liveAdvertising: productionAdMode === "live" && findPattern(representativeOutput.text, /adsbygoogle|pagead2\.googlesyndication|google_ad_client|data-ad-client\s*=|<script[^>]+doubleclick/i),
   publisherId: findPattern(integrationScanText, /ca-pub-[0-9]{10,}/i),
   adUnitId: findPattern(integrationScanText, /data-ad-slot=["'][0-9]{5,}["']/i),
   verificationTag: findPattern(integrationScanText, /google-adsense-account|google-site-verification/i),
@@ -278,14 +279,15 @@ function buildNetworkDomainFindings(pages) {
 }
 
 function buildPlacementFindings(printable) {
+  const slotsEnabled = productionAdMode === "placeholder" || productionAdMode === "live";
   const cases = [
-    placement("homepage", "/", 6, "full"),
-    placement("main-gallery", "/coloring-pages", 6, "full"),
-    placement("hub-page-one", "/coloring-pages/animals", 6, "full"),
-    placement("hub-pagination", "/coloring-pages/animals/page/2", 3, "condensed"),
-    placement("printable-detail", printable.canonicalPath, 6, "full"),
-    placement("trust-page", "/privacy", 1, "condensed"),
-    placement("human-sitemap", "/sitemap", 1, "condensed"),
+    placement("homepage", "/", slotsEnabled ? 6 : 0, "full"),
+    placement("main-gallery", "/coloring-pages", slotsEnabled ? 6 : 0, "full"),
+    placement("hub-page-one", "/coloring-pages/animals", slotsEnabled ? 6 : 0, "full"),
+    placement("hub-pagination", "/coloring-pages/animals/page/2", slotsEnabled ? 3 : 0, "condensed"),
+    placement("printable-detail", printable.canonicalPath, slotsEnabled ? 6 : 0, "full"),
+    placement("trust-page", "/privacy", slotsEnabled ? 1 : 0, "condensed"),
+    placement("human-sitemap", "/sitemap", slotsEnabled ? 1 : 0, "condensed"),
     placement("static-404", "/404", 0, "none", "404.html"),
   ];
   return {
@@ -304,7 +306,9 @@ function buildPlacementFindings(printable) {
     actionControlSeparation: "Print and Download remain inside the printable main region; no placeholder is inside that region.",
     meaningfulContentSeparation: "Page headings, galleries, related content, or policy sections separate configured banner positions.",
     thinPageFindings: [],
-    correction: "CSS visibility restored the accepted one-well small-screen/intermediate model and three-well wide-desktop model without removing logical slots or changing IDs.",
+    correction: slotsEnabled
+      ? "Configured ad mode retains the accepted one-well small-screen/intermediate model and three-well wide-desktop model."
+      : "Production OFF mode emits no ad containers, labels, or reserved space.",
   };
 }
 
@@ -326,6 +330,17 @@ function placement(family, routePath, expectedLogicalSlots, expectedLayout, rela
 }
 
 function visibleModel(width, height) {
+  if (productionAdMode === "off") {
+    return {
+      viewport: `${width}x${height}`,
+      fullPageVisibleSlots: 0,
+      condensedPageVisibleSlots: 0,
+      trustAndSitemapVisibleSlots: 0,
+      reservedPixelAreaFullPage: 0,
+      approximatePublisherContentArea: width * height,
+      approximationMethod: "Production OFF mode.",
+    };
+  }
   const banner = width <= 640 ? { width: Math.min(width, 320), height: 50 }
     : width <= 1023 ? { width: Math.min(width, 468), height: 60 }
       : { width: Math.min(width, 728), height: 90 };
@@ -345,7 +360,7 @@ function visibleModel(width, height) {
 function buildAgeTreatmentFindings() {
   const common = {
     currentThirdPartyCollection: "Routine hosting or asset request processing only; no live advertising or analytics was found.",
-    currentAdvertisingState: "Inert placeholders only",
+    currentAdvertisingState: productionAdMode === "off" ? "OFF; no ad elements" : productionAdMode,
     futureAgeTreatmentDecisionRequired: true,
   };
   return [
@@ -531,5 +546,13 @@ function buildMarkdown(value) {
   ).join("\n");
   const blockers = value.blockingIssues.map((entry) => `- **${entry.classification}:** ${entry.description}`).join("\n");
   const actions = value.ownerActions.map((entry) => `${entry.order}. ${entry.description} _${entry.classification}_`).join("\n");
-  return `# Trust and Advertising Readiness\n\nReport date: ${value.reportDate}\n\nThis is a factual local readiness review. It does not certify legal compliance or guarantee advertising-account approval.\n\n## Trust pages\n\n| Route | H1 count | Logical ad slots | Last updated | Result |\n| --- | ---: | ---: | --- | --- |\n${trustRows}\n\nThe verified public contact is ${value.publicContactStatus.publicContactEmail}. Metadata titles and descriptions are unique, canonicals are self-referencing, footer links remain, and all six trust routes remain indexable and sitemap-eligible.\n\n## Technology and network inventory\n\n| Domain | Purpose | Page families | Initial load | Blocker |\n| --- | --- | --- | --- | --- |\n${networkRows}\n\nSearch-data requests are same-origin and begin only after search intent. Fonts are emitted as same-origin static assets. Schema.org URLs are structured-data identifiers, not browser requests. No live advertising, analytics, consent-management, affiliate-tracking, or site-cookie code was found in active source or representative static output.\n\n## Audience and age-treatment review\n\n| Route group | Classification | Signals |\n| --- | --- | --- |\n${audienceRows}\n\nNo legal audience classification is made. The owner and qualified reviewer must decide treatment before live advertising or interactive collection is enabled.\n\n## Placeholder placement and density\n\n| Page family | Logical slots | Layout | Meaningful publisher content |\n| --- | ---: | --- | --- |\n${placementRows}\n\n| Viewport | Full-page visible slots | Condensed visible slots | Reserved pixel area | Publisher-content area proxy |\n| --- | ---: | ---: | ---: | ---: |\n${viewportRows}\n\nThe area proxy uses the viewport as a conservative lower bound; representative full documents contain additional content below the fold. Print and Download controls remain separated from placeholders. Trust pages and the human sitemap retain one top-only logical well. The 404 route has none.\n\n## Account readiness\n\n- Live advertising scripts: absent\n- Publisher ID and ad-unit IDs: absent\n- Verification tag: absent\n- ads.txt: absent by design until the account supplies the exact line\n- CMP and Consent Mode: absent\n- Age-treatment decision: not recorded\n- Affiliate tracking: absent\n\n## Blocking issues\n\n${blockers}\n\n## Owner checklist\n\n${actions}\n\n## Counts and preservation\n\n- Runtime printables: ${value.counts.runtimePrintables.toLocaleString("en-US")}\n- Public hubs: ${value.counts.publicHubs.toLocaleString("en-US")}\n- Pagination routes: ${value.counts.paginationRoutes.toLocaleString("en-US")}\n- Regular sitemap URLs: ${value.counts.regularSitemapUrls.toLocaleString("en-US")}\n- Image sitemap pairs: ${value.counts.imageSitemapPairs.toLocaleString("en-US")}\n- Static outputs: ${value.counts.staticOutputs.toLocaleString("en-US")}\n- Frozen route-field hash: ${value.preservation.frozenRouteFieldHash}\n- Hub-membership hash: ${value.preservation.hubMembershipHash}\n\n## Owner command\n\n\`npm run generate:trust-readiness\`\n`;
+  const advertisingSummary = productionAdMode === "off"
+    ? "Advertising mode is OFF in the representative static output; no ad script, label, container, or reserved space is emitted."
+    : `Advertising mode is ${productionAdMode.toUpperCase()} in the representative static output.`;
+  const placementSummary = productionAdMode === "off"
+    ? "OFF mode reserves no advertising area. Print and Download controls remain free of ad containers."
+    : "The area proxy uses the viewport as a conservative lower bound; representative full documents contain additional content below the fold. Print and Download controls remain separated from configured ad slots.";
+  const liveScriptStatus = value.integrationFindings.liveAdvertising ? "present" : "absent";
+  const adsTxtStatus = value.adsTxtStatus.present ? "present; verify its account-provided contents before live activation" : "absent";
+  return `# Trust and Advertising Readiness\n\nReport date: ${value.reportDate}\n\nThis is a factual local readiness review. It does not certify legal compliance or guarantee advertising-account approval.\n\n## Trust pages\n\n| Route | H1 count | Logical ad slots | Last updated | Result |\n| --- | ---: | ---: | --- | --- |\n${trustRows}\n\nThe verified public contact is ${value.publicContactStatus.publicContactEmail}. Metadata titles and descriptions are unique, canonicals are self-referencing, footer links remain, and all six trust routes remain indexable and sitemap-eligible.\n\n## Technology and network inventory\n\n| Domain | Purpose | Page families | Initial load | Blocker |\n| --- | --- | --- | --- | --- |\n${networkRows}\n\nSearch-data requests are same-origin and begin only after search intent. Fonts are emitted as same-origin static assets. Schema.org URLs are structured-data identifiers, not browser requests. ${advertisingSummary} No analytics, consent-management, affiliate-tracking, or site-cookie code was found in active source or representative static output.\n\n## Audience and age-treatment review\n\n| Route group | Classification | Signals |\n| --- | --- | --- |\n${audienceRows}\n\nNo legal audience classification is made. The owner and qualified reviewer must decide treatment before live advertising or interactive collection is enabled.\n\n## Advertisement placement and density\n\n| Page family | Logical slots | Layout | Meaningful publisher content |\n| --- | ---: | --- | --- |\n${placementRows}\n\n| Viewport | Full-page visible slots | Condensed visible slots | Reserved pixel area | Publisher-content area proxy |\n| --- | ---: | ---: | ---: | ---: |\n${viewportRows}\n\n${placementSummary} The 404 route has no ad placement.\n\n## Account readiness\n\n- Live advertising scripts: ${liveScriptStatus}\n- Publisher ID and ad-unit IDs: ${value.integrationFindings.publisherId || value.integrationFindings.adUnitId ? "present; verification required" : "absent"}\n- Verification tag: ${value.integrationFindings.verificationTag ? "present; verification required" : "absent"}\n- ads.txt: ${adsTxtStatus}\n- CMP and Consent Mode: ${value.integrationFindings.consentManagement || value.integrationFindings.consentMode ? "present; verification required" : "absent"}\n- Age-treatment decision: ${value.ageTreatmentDecisionStatus.decided ? "recorded" : "not recorded"}\n- Affiliate tracking: ${value.integrationFindings.affiliateTracking ? "present; verification required" : "absent"}\n\n## Blocking issues\n\n${blockers}\n\n## Owner checklist\n\n${actions}\n\n## Counts and preservation\n\n- Runtime printables: ${value.counts.runtimePrintables.toLocaleString("en-US")}\n- Public hubs: ${value.counts.publicHubs.toLocaleString("en-US")}\n- Pagination routes: ${value.counts.paginationRoutes.toLocaleString("en-US")}\n- Regular sitemap URLs: ${value.counts.regularSitemapUrls.toLocaleString("en-US")}\n- Image sitemap pairs: ${value.counts.imageSitemapPairs.toLocaleString("en-US")}\n- Static outputs: ${value.counts.staticOutputs.toLocaleString("en-US")}\n- Frozen route-field hash: ${value.preservation.frozenRouteFieldHash}\n- Hub-membership hash: ${value.preservation.hubMembershipHash}\n\n## Owner command\n\n\`npm run generate:trust-readiness\`\n`;
 }

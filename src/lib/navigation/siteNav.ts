@@ -1,4 +1,5 @@
 import { footerTrustLinks } from "@/lib/trust/trustPages";
+import { getCollectionCountById } from "@/lib/coloring/collectionCounts";
 
 export type NavigationLink = {
   id: string;
@@ -21,28 +22,28 @@ export type DesktopNavigationItem =
 
 const links = {
   coloringPages: direct("coloring-pages", "Coloring Pages", "/coloring-pages"),
-  kids: hub("for-kids", "Coloring Pages for Kids", "/coloring-pages/for-kids", "hub_for_kids", 1335),
-  adults: hub("detailed-for-adults", "Detailed Coloring Pages for Adults", "/coloring-pages/detailed-for-adults", "hub_detailed_for_adults", 1459),
-  animals: hub("animals", "Animals", "/coloring-pages/animals", "hub_animals", 1450),
-  plushies: hub("plushies", "Plushies", "/coloring-pages/plushies", "hub_plushies", 1704),
-  mandalas: hub("mandalas", "Mandalas", "/coloring-pages/mandalas", "hub_mandalas", 1459),
-  fantasy: hub("fantasy", "Fantasy", "/coloring-pages/fantasy", "hub_fantasy", 1265),
-  dinosaurs: hub("dinosaurs", "Dinosaurs", "/coloring-pages/dinosaurs", "hub_dinosaurs", 189),
-  vehicles: hub("vehicles", "Vehicles", "/coloring-pages/vehicles", "hub_vehicles", 373),
-  easy: hub("easy", "Easy", "/coloring-pages/easy", "hub_easy", 1300),
-  chibi: hub("chibi", "Chibi", "/coloring-pages/chibi", "hub_chibi", 908),
-  kawaii: hub("kawaii", "Kawaii", "/coloring-pages/kawaii", "hub_kawaii", 88),
-  cute: hub("cute", "Cute", "/coloring-pages/cute", "hub_cute", 375),
-  flowers: hub("flowers", "Flowers", "/coloring-pages/flowers", "hub_flowers", 346),
-  seaLife: hub("sea-life", "Sea Life", "/coloring-pages/sea-life", "hub_sea_life", 236),
-  dogs: hub("dogs", "Dogs", "/coloring-pages/dogs", "hub_dogs", 284),
-  birds: hub("birds", "Birds", "/coloring-pages/birds", "hub_birds", 188),
-  prehistoric: hub("prehistoric-animals", "Prehistoric Animals", "/coloring-pages/prehistoric-animals", "hub_prehistoric_animals", 220),
-  food: hub("food", "Food", "/coloring-pages/food", "hub_food", 261),
-  buildings: hub("buildings", "Buildings", "/coloring-pages/buildings", "hub_buildings", 156),
-  fantasyCreatures: hub("fantasy-creatures", "Fantasy Creatures", "/coloring-pages/fantasy-creatures", "hub_fantasy_creatures", 531),
-  christmas: hub("christmas", "Christmas", "/coloring-pages/christmas", "hub_christmas", 332),
-  halloween: hub("halloween", "Halloween", "/coloring-pages/halloween", "hub_halloween", 305),
+  kids: hub("for-kids", "Coloring Pages for Kids", "/coloring-pages/for-kids", "hub_for_kids"),
+  adults: hub("detailed-for-adults", "Detailed Coloring Pages for Adults", "/coloring-pages/detailed-for-adults", "hub_detailed_for_adults"),
+  animals: hub("animals", "Animals", "/coloring-pages/animals", "hub_animals"),
+  plushies: hub("plushies", "Plushies", "/coloring-pages/plushies", "hub_plushies"),
+  mandalas: hub("mandalas", "Mandalas", "/coloring-pages/mandalas", "hub_mandalas"),
+  fantasy: hub("fantasy", "Fantasy", "/coloring-pages/fantasy", "hub_fantasy"),
+  dinosaurs: hub("dinosaurs", "Dinosaurs", "/coloring-pages/dinosaurs", "hub_dinosaurs"),
+  vehicles: hub("vehicles", "Vehicles", "/coloring-pages/vehicles", "hub_vehicles"),
+  easy: hub("easy", "Easy", "/coloring-pages/easy", "hub_easy"),
+  chibi: hub("chibi", "Chibi", "/coloring-pages/chibi", "hub_chibi"),
+  kawaii: hub("kawaii", "Kawaii", "/coloring-pages/kawaii", "hub_kawaii"),
+  cute: hub("cute", "Cute", "/coloring-pages/cute", "hub_cute"),
+  flowers: hub("flowers", "Flowers", "/coloring-pages/flowers", "hub_flowers"),
+  seaLife: hub("sea-life", "Sea Life", "/coloring-pages/sea-life", "hub_sea_life"),
+  dogs: hub("dogs", "Dogs", "/coloring-pages/dogs", "hub_dogs"),
+  birds: hub("birds", "Birds", "/coloring-pages/birds", "hub_birds"),
+  prehistoric: hub("prehistoric-animals", "Prehistoric Animals", "/coloring-pages/prehistoric-animals", "hub_prehistoric_animals"),
+  food: hub("food", "Food", "/coloring-pages/food", "hub_food"),
+  buildings: hub("buildings", "Buildings", "/coloring-pages/buildings", "hub_buildings"),
+  fantasyCreatures: hub("fantasy-creatures", "Fantasy Creatures", "/coloring-pages/fantasy-creatures", "hub_fantasy_creatures"),
+  christmas: hub("christmas", "Christmas", "/coloring-pages/christmas", "hub_christmas"),
+  halloween: hub("halloween", "Halloween", "/coloring-pages/halloween", "hub_halloween"),
 } as const;
 
 export const desktopPrimaryItems: DesktopNavigationItem[] = [
@@ -115,8 +116,8 @@ function direct(id: string, label: string, href: string): NavigationLink {
   return { id, label, href };
 }
 
-function hub(id: string, label: string, href: string, hubId: string, assetCount: number): NavigationLink {
-  return { id, label, href, hubId, assetCount };
+function hub(id: string, label: string, href: string, hubId: string): NavigationLink {
+  return { id, label, href, hubId, assetCount: getCollectionCountById(hubId) };
 }
 
 function normalizePathname(pathname: string) {

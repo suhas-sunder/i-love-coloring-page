@@ -6,6 +6,8 @@ import path from "node:path";
 const ROOT = process.cwd();
 const OUT = path.join(ROOT, "out");
 const printable = JSON.parse(readFileSync(path.join(ROOT, "src/generated/coloring/runtime-printables.json"), "utf8")).records[0];
+const adMode = (process.env.NEXT_PUBLIC_AD_MODE || "off").trim().toLowerCase();
+const adsEnabled = adMode === "placeholder" || adMode === "live";
 
 if (!existsSync(OUT)) {
   console.error("Public page layout validation not_run: out/ does not exist.");
@@ -13,14 +15,14 @@ if (!existsSync(OUT)) {
 }
 
 const cases = [
-  page("homepage", "index.html", "full", 6),
-  page("gallery", "coloring-pages.html", "full", 6),
-  page("largeHub", "coloring-pages/animals.html", "full", 6),
-  page("smallHub", "coloring-pages/forget-me-not.html", "full", 6),
-  page("hubPagination", "coloring-pages/animals/page/2.html", "condensed", 3),
-  page("printable", `${printable.canonicalPath.slice(1)}.html`, "full", 6),
-  page("trust", "privacy.html", "condensed", 1),
-  page("htmlSitemap", "sitemap.html", "condensed", 1),
+  page("homepage", "index.html", "full", adCount(6)),
+  page("gallery", "coloring-pages.html", "full", adCount(6)),
+  page("largeHub", "coloring-pages/animals.html", "full", adCount(6)),
+  page("smallHub", "coloring-pages/forget-me-not.html", "full", adCount(6)),
+  page("hubPagination", "coloring-pages/animals/page/2.html", "condensed", adCount(3)),
+  page("printable", `${printable.canonicalPath.slice(1)}.html`, "full", adCount(6)),
+  page("trust", "privacy.html", "condensed", adCount(1)),
+  page("htmlSitemap", "sitemap.html", "condensed", adCount(1)),
   page("notFound", "404.html", "none", 0),
 ];
 
@@ -56,7 +58,9 @@ for (const entry of cases) {
     Object.assign(entry.checks, {
       previewActionsTogether: mainStart >= 0 && mainRegion.includes(">Print<") && mainRegion.includes(">Download<"),
       noAdInsidePreviewActions: !mainRegion.includes("data-ad-placeholder"),
-      relatedBannerAfterCards: html.indexOf('data-ad-logical-placement="related-banner"') > html.indexOf("Related printable pages"),
+      relatedBannerAfterCards:
+        !adsEnabled ||
+        html.indexOf('data-ad-logical-placement="related-banner"') > html.indexOf("Related printable pages"),
     });
   }
   if (entry.name === "largeHub") {
@@ -81,4 +85,8 @@ function page(name, relativePath, expectedLayout, expectedSlotCount) {
     checks: {},
     slots: [],
   };
+}
+
+function adCount(enabledCount) {
+  return adsEnabled ? enabledCount : 0;
 }

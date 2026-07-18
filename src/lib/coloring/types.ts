@@ -47,6 +47,10 @@ export type RuntimePrintable = {
   svgPath: string;
   width: number | null;
   height: number | null;
+  previewWidth: number | null;
+  previewHeight: number | null;
+  artworkWidth: number | null;
+  artworkHeight: number | null;
   hubIds: string[];
   publicAvailabilityStatus: "available";
   relatedAssetIds: string[];
