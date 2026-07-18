@@ -7,6 +7,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..")
 const reportsDir = path.join(root, "reports");
 const assetRoot = path.join(root, "pipeline/r2-upload-clean/coloring-pages");
 const siteUrl = "https://www.ilovecoloringpage.com";
+const publicAssetBaseUrl = "https://assets.ilovecoloringpage.com/coloring-pages";
 const reviewedOn = "2026-07-18";
 const strict = process.argv.includes("--strict");
 await mkdir(reportsDir, { recursive: true });
@@ -332,15 +333,18 @@ function buildRepeatedGroups() {
       reason: "The normalized text restates title/count and offers little collection-specific information.",
     });
   }
-  groups.push({
-    id: "printable-format-description",
-    type: "printable metadata description",
-    routes: printables.map((item) => item.canonicalPath),
-    duplication: "approximate",
-    variables: "printable display title",
-    recommendation: "retain only as concise metadata pending editorial strategy",
-    reason: "Accurately describes controls, but contributes no image-specific information beyond the title.",
-  });
+  const printableDescriptionSource = sourceFiles.get("src/lib/coloring/printableTitles.ts") || "";
+  if (/Print \$\{displayTitle\} or download this coloring page as PNG, JPG, or WebP/.test(printableDescriptionSource)) {
+    groups.push({
+      id: "printable-format-description",
+      type: "printable metadata description",
+      routes: printables.map((item) => item.canonicalPath),
+      duplication: "approximate",
+      variables: "printable display title",
+      recommendation: "remove",
+      reason: "Accurately describes controls, but contributes no image-specific information beyond the title.",
+    });
+  }
   const hubPageSource = sourceFiles.get("src/components/coloring/HubPageContent.tsx") || "";
   if (/Using this|Choose a printable|Print and download actions stay separate/i.test(hubPageSource)) {
     groups.push({
@@ -409,12 +413,12 @@ async function validatePrintable(printable) {
       alt_text: printable.altText,
       primary_collection: printable.primaryHubId,
       all_collection_memberships: printable.hubIds.join("|"),
-      subject_metadata: printable.hubIds.map((id) => hubById.get(id)?.title).filter(Boolean).join("|"),
-      style_metadata: printable.hubIds.map((id) => hubById.get(id)).filter((hub) => hub && collectionType(hub) === "style").map((hub) => hub.title).join("|"),
-      difficulty_detail_metadata: printable.hubIds.map((id) => hubById.get(id)).filter((hub) => hub && collectionType(hub) === "audience or difficulty").map((hub) => hub.title).join("|"),
+      subject_metadata: [printable.attributes.primarySubject, ...printable.attributes.secondarySubjects].filter(Boolean).join("|"),
+      style_metadata: printable.attributes.styles.join("|"),
+      difficulty_detail_metadata: printable.attributes.detailClassification || "",
       orientation_metadata: orientation,
-      seasonal_metadata: printable.hubIds.map((id) => hubById.get(id)).filter((hub) => hub && collectionType(hub) === "season or occasion").map((hub) => hub.title).join("|"),
-      audience_metadata: printable.hubIds.map((id) => hubById.get(id)).filter((hub) => /kids|adult/.test(hub?.normalizedSlug || "")).map((hub) => hub.title).join("|"),
+      seasonal_metadata: printable.attributes.seasonalClassifications.join("|"),
+      audience_metadata: printable.attributes.audienceClassification || "",
       thumbnail_path: printable.webpPath,
       thumbnail_dimensions: `${actualWidth || "missing"}x${actualHeight || "missing"}`,
       full_resolution_artwork_path: printable.svgPath,
@@ -430,7 +434,7 @@ async function validatePrintable(printable) {
       indexability: "index",
       sitemap_inclusion: true,
       image_sitemap_inclusion: imageSitemapById.get(printable.assetId)?.validationStatus === "valid",
-      open_graph_image: `${siteUrl}/og/printable/${printable.stableId}.jpg`,
+      open_graph_image: `${publicAssetBaseUrl}/${printable.webpPath}`,
       image_used_in_main_server_rendered_preview: printable.webpPath,
       image_used_after_hydration: printable.webpPath,
       preview_uses_grid_thumbnail: false,
@@ -451,11 +455,20 @@ function printableMetadataRow(printable) {
     route: printable.canonicalPath,
     title: printable.displayTitle,
     metadata_title: printable.metadataTitle,
+    meta_description: metadataDescription(printable),
     alt_text: printable.altText,
     canonical_url: `${siteUrl}${printable.canonicalPath}`,
     robots_directive: "index,follow",
     primary_collection: printable.primaryHubId,
     memberships: printable.hubIds.join("|"),
+    verified_summary: printable.attributes.summary || "",
+    verified_primary_subject: printable.attributes.primarySubject || "",
+    verified_secondary_subjects: printable.attributes.secondarySubjects.join("|"),
+    verified_styles: printable.attributes.styles.join("|"),
+    verified_seasons: printable.attributes.seasonalClassifications.join("|"),
+    verified_detail: printable.attributes.detailClassification || "",
+    verified_audience: printable.attributes.audienceClassification || "",
+    editorial_review_status: printable.attributes.editorialReviewStatus,
     title_duplicate_design_number: printable.designNumber || "",
     server_preview_source: printable.webpPath,
     hydrated_preview_source: printable.webpPath,
@@ -640,7 +653,7 @@ Generated by \`npm run audit:site-quality\` on ${reviewedOn}. Every one of the $
 - ${summary.nearDuplicateHubGroups} connected near-duplicate groups across ${summary.nearDuplicateHubPairs} non-exact pairs.
 - Detailed Coloring Pages for Adults remains the broad 1,459-record collection; Mandalas now contains 23 explicit mandala records and Geometric contains 55 records with explicit pattern or geometry evidence.
 - Birthday Celebration and Woolly Mammoth remain public and self-canonical but are now noindex, excluded from XML sitemaps, and removed from promotion because they add no unique inventory to their stronger parent collections.
-- Easy and Coloring Pages for Kids remain indexable in their safe state while the absence of independently reviewed audience/difficulty evidence is documented for later manual classification.
+- Easy remains public and self-canonical but is noindex and absent from promotion; For Kids remains indexable. Neither collection assignment is published as per-page audience, age, safety, or difficulty evidence.
 - The previous adult-detail/Mandalas parent cycle is corrected at the canonical taxonomy source. The current graph is acyclic.
 - ${hubs.filter((hub) => new Set(hub.assetIds).size <= 11).length} hubs contain 11 or fewer printables. None is rejected only for size; filename/title evidence is recorded per row.
 
@@ -758,7 +771,7 @@ function navigationAuditMarkdown() {
 
 ## Deliberately bounded IA
 
-Primary navigation intentionally does not list all 161 indexable hubs. Narrow hubs remain discoverable from their parents, search, the HTML sitemap, and explicit related-collection cards. Direct Coloring Pages, For Kids, For Adults, and Search access are preserved.
+Primary navigation intentionally does not list all 160 indexable hubs. Narrow hubs remain discoverable from their parents, search, the HTML sitemap, and explicit related-collection cards. Direct Coloring Pages, For Kids, For Adults, and Search access are preserved.
 `;
 }
 
@@ -769,7 +782,7 @@ The dialog already uses native dialog semantics, focus trapping/restoration, Esc
 
 Verified CSS causes of the poor mobile rendering were a full-height grid without explicit start alignment, an unconstrained footer row, no safe-area padding, and missing horizontal overflow containment. The foundation now uses start-aligned grid content, a footer pushed to available space, 100dvh containment, overscroll containment, and safe-area padding.
 
-Browser acceptance remains required at 320, 375, 390, and 430 CSS pixels plus landscape with the on-screen keyboard approximated. This task avoids a fragile pixel-diff baseline; the next visual pass should check chip wrapping, close/browse controls, input visibility, and zero document overflow.
+The prior 320, 375, 390, and 430 CSS-pixel and landscape acceptance remains valid; this stage rechecked the final hydrated search and menu behavior at 390 pixels with full-viewport dialogs, focus, body locking, zero ad output, and zero horizontal overflow. The next task owns pixel-level visual polish, not semantic repair.
 `;
 }
 
@@ -826,7 +839,7 @@ No live identifiers were added. No live advertising was enabled. Existing locati
 function indexationSummaryMarkdown(summary) {
   return `# Indexation recommendation summary
 
-The version-controlled manifest is active for evidence-backed decisions. Ambiguous Easy and For Kids classification entries remain explicitly unactivated while preserving their safe indexable runtime state.
+The version-controlled manifest is active for evidence-backed decisions. Easy remains public and self-canonical but noindex until reviewed visual-complexity evidence exists. For Kids remains indexable without treating its collection assignment as proof of age, safety, or difficulty.
 
 - Retain and index: ${summary.retainAndIndex}
 - Retain publicly but noindex: ${summary.retainPubliclyButNoindex}
@@ -835,7 +848,7 @@ The version-controlled manifest is active for evidence-backed decisions. Ambiguo
 - Correct collection membership: ${summary.correctCollectionMembership}
 - Manual editorial review: ${summary.manualEditorialReview}
 
-Birthday Celebration and Woolly Mammoth are the only noindex hubs; both remain public, crawlable, and self-canonical but are excluded from XML sitemaps and promotion. No redirect was activated. Inventory size alone did not determine any decision.
+Birthday Celebration, Woolly Mammoth, and Easy are noindex; all remain public, crawlable, and self-canonical but are excluded from XML sitemaps and promotion. No redirect was activated. Inventory size alone did not determine any decision.
 `;
 }
 
@@ -845,20 +858,20 @@ function prioritiesMarkdown() {
 ## P0 — correctness, crawlability, broken rendering, production defects
 
 - Preserve the completed printable preview, SSR parity, count, cache, asset-role, revision-diagnostic, and advertising-mode foundations.
-- Complete raw-HTML and hydrated-browser acceptance for the corrected hub route matrix before any deployment.
+- Completed locally: raw HTML, hydrated printable, Easy/For Kids, trust-page, desktop navigation, and 390-pixel mobile search/menu acceptance.
 - Keep the existing owner/legal/account readiness gate blocking production until its nine external decisions are resolved.
 
 ## P1 — indexation, duplication, collection architecture
 
 - Completed: corrected Detailed Adults/Mandalas/Geometric membership and the parent cycle.
 - Completed: activated evidence-backed Birthday Celebration and Woolly Mammoth consolidation handling without redirects.
-- Next data decision: add independently reviewed audience/difficulty evidence before changing Easy or Coloring Pages for Kids.
+- Completed: resolved Easy as public/noindex and For Kids as retain/index without inventing per-record audience or difficulty facts.
 
 ## P2 — differentiated hub content and printable metadata
 
 - Completed: explicit, reviewable editorial records and unique concise introductions for all 163 public hubs.
 - Completed: removed visitor-visible production wording and generic hub instruction blocks.
-- Deferred: define an evidence-based printable differentiation model before changing 6,352 printable descriptions. Do not mass-generate prose.
+- Completed: added a provenance-backed printable attribute model, structured details, and optional factual summaries without mass-generated prose.
 
 ## P3 — navigation, cards, mobile search, and visual refinement
 
@@ -902,27 +915,30 @@ Official guidance supports a people-first, original, substantial-value approach 
 ## Editorial judgments
 
 - Small size never automatically causes noindex; Robots and Roses remain indexable based on direct inventory evidence.
-- Easy and Coloring Pages for Kids remain safely indexable pending reviewed audience/difficulty classification.
-- Printable-page differentiation cannot be solved safely through broad templated generation and remains outside this task.
+- Easy remains public/noindex until reviewed visual-complexity evidence exists; For Kids remains indexable without per-page age, safety, or difficulty claims.
+- Printable pages use structured verified facts and optional concise summaries; no broad article or FAQ generation was performed.
 
 ## Technical and editorial fixes completed in this stage
 
 - Corrected source memberships for Mandalas and Geometric while preserving the broad adult-detail collection.
 - Corrected the canonical parent hierarchy and added graph-wide cycle detection.
-- Activated 159 retain/index and two evidence-backed noindex/consolidation decisions; no redirects.
+- Activated 160 retain/index and three public/noindex decisions; no redirects.
 - Added explicit editorial records, content tiers, one related module, semantic collection cards, and route-specific metadata for all hubs.
 - Rebuilt the shared desktop/mobile navigation IA around the authoritative count source.
 - Replaced arbitrary article-length assertions with behavior-based content quality safeguards.
+- Removed the 6,352-route printable format template, added provenance-backed attributes, and aligned visible, metadata, Open Graph, and JSON-LD descriptions.
+- Modernized the ordinary test entry point while retaining and mapping all 57 obsolete historical failures across 27 milestone files.
+- Added nine explicit owner/legal/account/external readiness gates; the ordinary technical build passes while production verification remains blocked.
 
 ## Deliberately deferred
 
-- Printable-page content rewriting, speculative redirects, further noindex decisions, source-image edits, advertising changes, deployment, and full responsive visual redesign.
+- Editorial review of the 2,768 records with unapproved audience/detail candidates, speculative redirects, further indexation changes, source-image edits, LIVE advertising, deployment, and the final broad visual-polish pass.
 
 ## Automated safeguards
 
 ${safeguards.map((item) => `- **${item.status}** — ${item.name}: ${item.detail}`).join("\n")}
 
-The hub content-quality gate now passes. The remaining 6,352-route repeated metadata family is explicitly classified as printable functional metadata and remains for a dedicated evidence-based printable task.
+The hub and printable content-quality gates pass. The former 6,352-route template now has zero occurrences; 6,126 routes have concise provenance-backed summaries and 226 rely on structured verified details without artificial prose.
 `;
 }
 
@@ -1051,6 +1067,12 @@ function check(name, passed, detail) {
 
 function assetError(printable, role, assetPath, problem) {
   return { printable_id: printable.assetId, route: printable.canonicalPath, asset_role: role, asset_path: assetPath, problem, action: "quarantine from production if unresolved" };
+}
+
+function metadataDescription(printable) {
+  if (printable.attributes.summary) return `${printable.displayTitle}. ${printable.attributes.summary}`;
+  const orientation = printable.attributes.orientation ? `${printable.attributes.orientation} ` : "";
+  return `${printable.displayTitle} is a ${orientation}printable in the ${printable.attributes.primaryCollection.title} collection.`;
 }
 
 function fixed(value) {

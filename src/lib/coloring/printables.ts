@@ -67,7 +67,7 @@ export function getRelatedPrintableHubs(printable: RuntimePrintable, limit = pri
 
 export function getPrintablePrimaryHub(printable: RuntimePrintable) {
   const hub = hubById.get(printable.primaryHubId);
-  if (!hub || hub.route === "/coloring-pages" || !hub.indexable || !hub.sitemap) {
+  if (!hub || !hub.route || hub.route === "/coloring-pages") {
     throw new Error(`Invalid printable primary hub: ${printable.assetId}`);
   }
   return hub;

@@ -4,4 +4,4 @@ The dialog already uses native dialog semantics, focus trapping/restoration, Esc
 
 Verified CSS causes of the poor mobile rendering were a full-height grid without explicit start alignment, an unconstrained footer row, no safe-area padding, and missing horizontal overflow containment. The foundation now uses start-aligned grid content, a footer pushed to available space, 100dvh containment, overscroll containment, and safe-area padding.
 
-Browser acceptance remains required at 320, 375, 390, and 430 CSS pixels plus landscape with the on-screen keyboard approximated. This task avoids a fragile pixel-diff baseline; the next visual pass should check chip wrapping, close/browse controls, input visibility, and zero document overflow.
+The prior 320, 375, 390, and 430 CSS-pixel and landscape acceptance remains valid; this stage rechecked the final hydrated search and menu behavior at 390 pixels with full-viewport dialogs, focus, body locking, zero ad output, and zero horizontal overflow. The next task owns pixel-level visual polish, not semantic repair.

@@ -1,0 +1,23 @@
+field,verified_value_count,inferred_unapproved_count,missing_count,source_of_truth,safe_to_display,safe_for_related_selection,safe_for_metadata
+printable_id,6352,0,0,runtime printable contract,true,true,true
+public_title,6352,0,0,reviewed runtime title model,true,true,true
+primary_subject,5117,0,1235,explicit collection assignment + approved taxonomy rule,true,true,true
+secondary_subjects,3926,0,2426,explicit collection assignments + approved taxonomy rule,true,true,true
+narrow_subject_category,5116,0,1236,leaf collection assignment + approved taxonomy rule,true,true,true
+style_classification,3153,0,3199,explicit style collection assignment + approved taxonomy rule,true,true,true
+pattern_focused_status,157,0,6195,explicit Mandalas/Geometric assignment,true,true,true
+character_focused_status,0,0,6352,no verified source,false,false,false
+scene_focused_status,0,0,6352,no verified source,false,false,false
+seasonal_classification,881,0,5471,explicit seasonal collection assignment + approved taxonomy rule,true,true,true
+holiday_classification,881,0,5471,explicit seasonal collection assignment + approved taxonomy rule,true,true,true
+orientation,6352,0,0,computed source dimensions,true,true,true
+source_dimensions,6352,0,0,verified production asset dimensions,true,false,true
+print_layout_dimensions,6352,0,0,verified shared print composition,true,false,false
+detail_or_complexity_classification,0,2744,3608,legacy collection candidates; not independently reviewed,false,false,false
+audience_classification,0,2768,3584,legacy collection candidates; not independently reviewed,false,false,false
+primary_collection,6352,0,0,explicit collection assignment,true,true,true
+additional_collection_memberships,5717,0,635,explicit collection assignment,true,true,false
+available_formats,6352,0,0,verified asset and browser capability model,true,false,false
+principal_image_role,6352,0,0,verified asset resolver role,true,false,true
+related_printable_signals,6352,0,0,verified attribute and collection scoring,false,true,false
+editorial_review_status,6352,0,0,attribute validation result,false,false,false

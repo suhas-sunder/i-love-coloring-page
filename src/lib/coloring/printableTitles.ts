@@ -28,5 +28,12 @@ export function getPrintableTitleModel(printable: RuntimePrintable): PrintableTi
 
 export function buildPrintableDescription(printable: RuntimePrintable) {
   const { displayTitle } = getPrintableTitleModel(printable);
-  return `Print ${displayTitle} or download this coloring page as PNG, JPG, or WebP.`;
+  const attributes = printable.attributes;
+  if (attributes.summary) return `${displayTitle}. ${attributes.summary}`;
+  const orientation = attributes.orientation ? `${attributes.orientation} ` : "";
+  return `${displayTitle} is a ${orientation}printable in the ${attributes.primaryCollection.title} collection.`;
+}
+
+export function getPrintableSummary(printable: RuntimePrintable) {
+  return printable.attributes.summary;
 }

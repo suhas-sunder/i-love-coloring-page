@@ -88,7 +88,7 @@ export function PrintablePreviewDialog({ open, onClose, item, internalSvgUrl, pn
           {preparing ? <div className="print-preview-state"><strong>{item.title}</strong><span>Preparing print preview...</span></div> : prepared?.ok ? <img src={prepared.imageUrl} alt={item.altText} /> : <div className="print-preview-state print-preview-state-error"><strong>Print preview could not be prepared.</strong><span>Try a download instead, or reload the page and try again.</span></div>}
         </div>
         <div className="print-preview-downloads">
-          <Suspense fallback={<span>Loading download options...</span>}><DownloadMenu title={item.title} downloadBaseName={item.downloadBaseName} internalSvgUrl={internalSvgUrl} pngPreviewUrl={pngPreviewUrl} aria-label={`Download PNG, JPG, or WebP for ${item.title}`} onStatus={setStatus} /></Suspense>
+          <Suspense fallback={<span>Loading download options...</span>}><DownloadMenu title={item.title} downloadBaseName={item.downloadBaseName} internalSvgUrl={internalSvgUrl} pngPreviewUrl={pngPreviewUrl} aria-label={`Download available formats for ${item.title}`} onStatus={setStatus} /></Suspense>
         </div>
         {status ? <p className="print-preview-status" aria-live="polite">{status}</p> : null}
       </section>

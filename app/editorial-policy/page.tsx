@@ -53,8 +53,9 @@ export default function EditorialPolicyPage() {
 
       <TrustSection title="Collections, search, and related links">
         <p>
-          Collections are based on the classifications of pages currently available in the library. Search results and related collections use stable,
-          repeatable rules so the same content does not change merely because files are read in a different order.
+          Collections are based on current explicit assignments. Printable details display only values with recorded provenance, such as an approved
+          collection assignment or computed dimensions. Filename tokens and broad parent collections are not displayed as independently verified facts.
+          Related pages rank shared narrow subjects, styles, and seasonal assignments before broader collection signals, with a stable final tie-break.
         </p>
       </TrustSection>
 

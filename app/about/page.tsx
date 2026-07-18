@@ -38,15 +38,15 @@ export default function AboutPage() {
 
       <TrustSection title="What this site offers">
         <p>
-          Visitors can browse collections and open an individual printable page by selecting its image or title. Print is a separate action, and PNG,
-          JPG, and WebP downloads are available from the printable workflow.
+          Visitors can browse collections and open an individual printable page by selecting its image or title. Print is a separate action. PNG is
+          the initial download option; JPG and WebP appear only when the browser reports that it can create those formats.
         </p>
       </TrustSection>
 
       <TrustSection title="Finding a printable">
         <p>
-          Pages are organized into subject, audience, style, and seasonal collections. Search and filters operate in the browser to help visitors find
-          a relevant printable without creating separate public search pages.
+          Pages are organized into subject, style, seasonal, and other browsing collections. Audience and visual-complexity labels are not treated as
+          per-page facts unless a reviewed classification supports them. Search and filters operate in the browser without creating public search pages.
         </p>
       </TrustSection>
 

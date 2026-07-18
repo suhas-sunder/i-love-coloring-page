@@ -229,11 +229,6 @@
       "priority": 0.6
     },
     {
-      "path": "/coloring-pages/easy",
-      "changeFrequency": "monthly",
-      "priority": 0.8
-    },
-    {
       "path": "/coloring-pages/elephants",
       "changeFrequency": "monthly",
       "priority": 0.6
@@ -812,6 +807,6 @@
   "summary": {
     "entryCount": 163,
     "noPerImageRoutes": true,
-    "activeHubEntryCount": 161
+    "activeHubEntryCount": 160
   }
 }

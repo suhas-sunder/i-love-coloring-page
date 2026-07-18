@@ -1,7 +1,7 @@
 # Hub Content Quality Score
 
 - Hubs checked: 163
-- Indexable hubs checked: 161
+- Indexable hubs checked: 160
 - Explicit editorial records: 163
 - Duplicate introductions: 0
 - Forbidden or internal wording: 0

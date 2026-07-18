@@ -30,6 +30,57 @@ export type PublicColoringItem = Pick<ColoringItem, "assetId" | "title" | "altTe
   downloadBaseName: string;
 };
 
+export type PrintableAttributeProvenance =
+  | "explicit_content_record"
+  | "explicit_collection_assignment"
+  | "approved_taxonomy_rule"
+  | "computed_file_dimensions"
+  | "verified_asset_capability"
+  | "manually_reviewed_override";
+
+export type PrintableAttributeModel = {
+  primarySubject: string | null;
+  secondarySubjects: string[];
+  narrowSubjectCategory: string | null;
+  styles: string[];
+  patternFocused: boolean | null;
+  seasonalClassifications: string[];
+  orientation: "portrait" | "landscape" | "square" | null;
+  sourceDimensions: { width: number; height: number } | null;
+  artworkDimensions: { width: number; height: number } | null;
+  printLayout: { width: number; height: number; unit: "px"; name: string };
+  detailClassification: string | null;
+  audienceClassification: string | null;
+  unapprovedDetailCandidates: string[];
+  unapprovedAudienceCandidates: string[];
+  primaryCollection: { hubId: string; title: string; route: string };
+  additionalCollections: Array<{ hubId: string; title: string; route: string }>;
+  serverAvailableFormats: Array<"PNG">;
+  browserConditionalFormats: Array<"JPG" | "WebP">;
+  principalImageRole: "public-webp-preview";
+  editorialReviewStatus: "verified-attributes-only" | "metadata-review-required";
+  summary: string | null;
+  provenance: Partial<Record<
+    | "primarySubject"
+    | "secondarySubjects"
+    | "narrowSubjectCategory"
+    | "styles"
+    | "patternFocused"
+    | "seasonalClassifications"
+    | "orientation"
+    | "sourceDimensions"
+    | "artworkDimensions"
+    | "printLayout"
+    | "primaryCollection"
+    | "additionalCollections"
+    | "serverAvailableFormats"
+    | "browserConditionalFormats"
+    | "principalImageRole"
+    | "summary",
+    PrintableAttributeProvenance | PrintableAttributeProvenance[]
+  >>;
+};
+
 export type RuntimePrintable = {
   assetId: string;
   stableId: string;
@@ -55,6 +106,7 @@ export type RuntimePrintable = {
   publicAvailabilityStatus: "available";
   relatedAssetIds: string[];
   relatedHubIds: string[];
+  attributes: PrintableAttributeModel;
 };
 
 export type StaticSearchItem = {

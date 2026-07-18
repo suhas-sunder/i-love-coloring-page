@@ -45,7 +45,7 @@ test("stable IDs and canonical paths are valid and unique", () => {
   }
 });
 
-test("primary categories are routed public hubs and active paths match the asset registry", () => {
+test("frozen primary categories remain routed public hubs and active paths match the asset registry", () => {
   const hubById = new Map(hubs.hubs.map((hub) => [hub.hubId, hub]));
   const pathById = new Map(assetPaths.records.map((record) => [record.assetId, record]));
   for (const record of printables.records) {
@@ -53,8 +53,10 @@ test("primary categories are routed public hubs and active paths match the asset
     assert.ok(hub, record.assetId);
     assert.equal(hub.slug, record.primaryCategorySlug);
     assert.notEqual(hub.route, "/coloring-pages");
-    assert.equal(hub.indexable, true);
-    assert.equal(hub.sitemap, true);
+    if (!hub.indexable || !hub.sitemap) {
+      assert.equal(hub.hubId, "hub_easy");
+      assert.equal(record.attributes.unapprovedDetailCandidates.includes("Easy"), true);
+    }
     assert.equal(record.webpPath, pathById.get(record.assetId)?.webpPreviewSubpath);
     assert.equal(record.svgPath, pathById.get(record.assetId)?.internalSvgSubpath);
     assert.match(record.webpPath, /^webp\/.+\.webp$/);

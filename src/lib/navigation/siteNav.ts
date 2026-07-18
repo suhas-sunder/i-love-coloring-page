@@ -30,7 +30,6 @@ const links = {
   fantasy: hub("fantasy", "Fantasy", "/coloring-pages/fantasy", "hub_fantasy"),
   dinosaurs: hub("dinosaurs", "Dinosaurs", "/coloring-pages/dinosaurs", "hub_dinosaurs"),
   vehicles: hub("vehicles", "Vehicles", "/coloring-pages/vehicles", "hub_vehicles"),
-  easy: hub("easy", "Easy", "/coloring-pages/easy", "hub_easy"),
   chibi: hub("chibi", "Chibi", "/coloring-pages/chibi", "hub_chibi"),
   kawaii: hub("kawaii", "Kawaii", "/coloring-pages/kawaii", "hub_kawaii"),
   cute: hub("cute", "Cute", "/coloring-pages/cute", "hub_cute"),
@@ -72,7 +71,7 @@ export const categoryNavigationGroups: NavigationGroup[] = [
   {
     id: "styles",
     label: "Styles",
-    links: [links.mandalas, links.geometric, links.chibi, links.kawaii, links.cute, links.easy],
+    links: [links.mandalas, links.geometric, links.chibi, links.kawaii, links.cute],
   },
 ];
 

@@ -13,7 +13,7 @@ const OUTPUTS = {
   hubSeo: "src/generated/coloring/runtime-hub-seo-content.json",
   social: "src/generated/coloring/runtime-social-metadata.json",
 };
-const FORBIDDEN = /production assets|asset rotation|three-day schedule|no indexable per-image pages|images and titles open printable pages|print and download actions stay separate|using this collection|choose a printable/i;
+const FORBIDDEN = /production assets|asset rotation|three-day schedule|no indexable per-image pages|images and titles open printable pages|print and download actions stay separate|using this collection|choose a printable|index-promoted|legacy inventory|audience assignments/i;
 
 export async function applyRuntimePublicContentQuality({ repoRoot = DEFAULT_ROOT, write = true } = {}) {
   const editorial = await readJson(repoRoot, EDITORIAL_PATH);
@@ -69,12 +69,19 @@ export function applyPublicContentQuality(source, editorialManifest) {
 
 function updateSeoPages(source, hubsManifest) {
   const hubByRoute = new Map(hubsManifest.hubs.map((hub) => [hub.route, hub]));
+  const homeDescription = buildHomeDescription(hubsManifest);
   return {
     ...source,
     runId: "runtime-seo-pages-editorial-v2",
     pages: source.pages.map((page) => {
       const hub = hubByRoute.get(page.path);
-      if (!hub) return page;
+      if (!hub && page.path !== "/") return page;
+      if (!hub) return {
+        ...page,
+        metaDescription: homeDescription,
+        shortIntro: homeDescription,
+        content: null,
+      };
       return {
         ...page,
         pageTitle: hub.title,
@@ -117,12 +124,20 @@ function buildHubSeoManifest(source, hubsManifest) {
 
 function updateSocialMetadata(source, hubsManifest) {
   const hubByRoute = new Map(hubsManifest.hubs.map((hub) => [hub.route, hub]));
+  const homeDescription = buildHomeDescription(hubsManifest);
   return {
     ...source,
     runId: "runtime-social-metadata-editorial-v2",
     pages: source.pages.map((page) => {
       const hub = hubByRoute.get(page.path);
-      if (!hub) return page;
+      if (!hub && page.path !== "/") return page;
+      if (!hub) return {
+        ...page,
+        description: homeDescription,
+        openGraph: { ...page.openGraph, description: homeDescription },
+        twitter: { ...page.twitter, description: homeDescription },
+        pinterest: { ...page.pinterest, description: homeDescription },
+      };
       return {
         ...page,
         title: hub.metaTitle,
@@ -133,6 +148,12 @@ function updateSocialMetadata(source, hubsManifest) {
       };
     }),
   };
+}
+
+function buildHomeDescription(hubsManifest) {
+  const rootHub = hubsManifest.hubs.find((hub) => hub.route === "/coloring-pages");
+  if (!rootHub) throw new Error("Missing root coloring-pages hub for homepage metadata");
+  return `Browse ${rootHub.assetCount.toLocaleString("en-US")} printable coloring pages with real previews, collection browsing, search, and print controls.`;
 }
 
 function collectionPageTitle(title) {

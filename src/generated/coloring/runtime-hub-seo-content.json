@@ -771,19 +771,19 @@
       "title": "Easy Coloring Pages",
       "pageTitle": "Easy Coloring Pages",
       "metaTitle": "Easy Coloring Pages",
-      "metaDescription": "The current Easy inventory emphasizes simplified character and animal designs with broad, readable shapes.",
-      "shortIntro": "The current Easy inventory emphasizes simplified character and animal designs with broad, readable shapes.",
-      "contentTier": "A",
+      "metaDescription": "This collection gathers printable pages under the existing Easy label.",
+      "shortIntro": "This collection gathers printable pages under the existing Easy label.",
+      "contentTier": "D",
       "editorial": {
-        "tier": "A",
-        "introduction": "The current Easy inventory emphasizes simplified character and animal designs with broad, readable shapes.",
-        "scope": "This route expresses a visual-simplicity intent, although the source metadata does not yet carry an independent difficulty field.",
-        "distinction": "For Kids is an audience route and adds a small set of puppy and kitten records; the two memberships otherwise remain highly similar.",
-        "selectionGuidance": "Use subject hubs when topic matters most; treat this route as the current simplified-design view pending stronger difficulty classification.",
-        "reviewStatus": "manual-review-retained"
+        "tier": "D",
+        "introduction": "This collection gathers printable pages under the existing Easy label.",
+        "scope": "Individual pages do not yet carry reviewed visual-complexity ratings or age-band labels.",
+        "distinction": "The broader For Kids collection contains these pages plus additional designs.",
+        "selectionGuidance": "Use artwork previews and subject collections to choose the page that fits what you want to color.",
+        "reviewStatus": "consolidated"
       },
-      "indexable": true,
-      "sitemap": true
+      "indexable": false,
+      "sitemap": false
     },
     {
       "pageType": "hubPage",
@@ -963,16 +963,16 @@
       "title": "Coloring Pages for Kids",
       "pageTitle": "Coloring Pages for Kids",
       "metaTitle": "Coloring Pages for Kids",
-      "metaDescription": "Friendly animals and character-led designs make up the current child-audience collection.",
-      "shortIntro": "Friendly animals and character-led designs make up the current child-audience collection.",
+      "metaDescription": "Animals and character-led designs make up this broad printable collection.",
+      "shortIntro": "Animals and character-led designs make up this broad printable collection.",
       "contentTier": "A",
       "editorial": {
         "tier": "A",
-        "introduction": "Friendly animals and character-led designs make up the current child-audience collection.",
-        "scope": "The route is organized around audience intent rather than a single subject.",
-        "distinction": "Easy is the visually simplified sibling; current records overlap heavily, with this hub adding a small kitten-and-puppy set.",
-        "selectionGuidance": "A subject hub is more precise when the desired animal or character is already known.",
-        "reviewStatus": "manual-review-retained"
+        "introduction": "Animals and character-led designs make up this broad printable collection.",
+        "scope": "Browse the artwork previews by subject; individual pages do not carry age-band, safety, or difficulty labels.",
+        "distinction": "The Easy collection is a separate browsing path whose current inventory is almost entirely contained here.",
+        "selectionGuidance": "A subject collection is more precise when the desired animal or character is already known.",
+        "reviewStatus": "reviewed"
       },
       "indexable": true,
       "sitemap": true

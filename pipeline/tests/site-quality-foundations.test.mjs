@@ -88,8 +88,10 @@ test("indexation policy is explicit, complete, versioned, and activates only res
   assert.equal(indexation.schemaVersion, 2);
   assert.equal(indexation.activated, true);
   assert.equal(indexation.hubs.length, hubs.hubs.length);
-  assert.deepEqual(indexation.hubs.filter((entry) => !entry.activated).map((entry) => entry.hubId).sort(), ["hub_easy", "hub_for_kids"]);
-  assert.equal(indexation.hubs.filter((entry) => entry.recommendation === "retain publicly but noindex" && entry.activated).length, 2);
+  assert.deepEqual(indexation.hubs.filter((entry) => !entry.activated).map((entry) => entry.hubId).sort(), []);
+  assert.equal(indexation.hubs.filter((entry) => entry.recommendation === "retain publicly but noindex" && entry.activated).length, 3);
+  assert.equal(indexation.hubs.find((entry) => entry.hubId === "hub_easy")?.proposedSitemapInclusion, false);
+  assert.equal(indexation.hubs.find((entry) => entry.hubId === "hub_for_kids")?.recommendation, "retain and index");
   assert.ok(indexation.hubs.every((entry) => indexation.allowedRecommendations.includes(entry.recommendation)));
 });
 

@@ -203,7 +203,7 @@ function rebuildDerivedManifests(inputs, hubsManifest, policy) {
       };
     }),
   };
-  const unresolvedManualIds = new Set(["hub_easy", "hub_for_kids"]);
+  const unresolvedManualIds = new Set();
   const correctionIds = new Set((policy.membershipCorrections || []).map((entry) => entry.hubId));
   const decisionById = new Map((policy.indexationDecisions || []).map((entry) => [entry.hubId, entry]));
   const resolutionById = new Map((policy.manualReviewResolutions || []).map((entry) => [entry.hubId, entry]));
@@ -213,7 +213,7 @@ function rebuildDerivedManifests(inputs, hubsManifest, policy) {
     schemaVersion: 2,
     reviewedOn: "2026-07-18",
     activated: true,
-    note: "Runtime taxonomy policy v2 consumes resolved decisions. Easy and For Kids remain explicitly unactivated pending independent difficulty/audience classification evidence.",
+    note: "Runtime taxonomy policy v2 consumes resolved decisions. Easy remains public but noindex pending reviewed complexity evidence; For Kids remains indexable without per-record age, safety, or difficulty claims.",
     hubs: hubsManifest.hubs.map((hub) => {
       const previous = previousById.get(hub.hubId) || {};
       const decision = decisionById.get(hub.hubId);

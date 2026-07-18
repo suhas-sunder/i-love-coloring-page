@@ -1549,6 +1549,14 @@
   background: var(--color-paper);
 }
 
+.printable-details-title {
+  margin: 0;
+  color: var(--color-ink);
+  font-family: var(--font-ui);
+  font-size: var(--text-lg-size);
+  line-height: var(--text-lg-line);
+}
+
 .printable-facts {
   display: grid;
   gap: var(--space-12);
@@ -1581,6 +1589,27 @@
 
 .printable-facts a {
   color: var(--color-plum);
+}
+
+.printable-help {
+  color: var(--color-text-muted);
+  font-size: var(--text-sm-size);
+  line-height: var(--text-sm-line);
+}
+
+.printable-help summary {
+  cursor: pointer;
+  color: var(--color-ink);
+  font-weight: 800;
+}
+
+.printable-help summary:focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: var(--focus-offset);
+}
+
+.printable-help p {
+  margin-top: var(--space-12);
 }
 
 .printable-related-collections {

@@ -15,6 +15,7 @@ After: Coloring Pages → Detailed Coloring Pages for Adults → Mandalas and Ge
 - Detailed for Adults: retained as the 1,459-record broad source collection.
 - Birthday Celebration: public and self-canonical, but `noindex,follow`, absent from XML sitemap and promotion; no redirect.
 - Woolly Mammoth: public and self-canonical, but `noindex,follow`, absent from XML sitemap and promotion; no redirect.
-- Easy and For Kids: retained indexable in the current safe state; their unresolved classification question is documented separately.
+- Easy: public and self-canonical, but `noindex,follow`, absent from XML sitemap and promotion until reviewed complexity evidence exists.
+- For Kids: retained indexable with its 35 unique records; collection membership is not published as a per-page age, safety, or difficulty fact.
 
 See `hub-decisions.csv` for every route.

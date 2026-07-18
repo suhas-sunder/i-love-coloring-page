@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "reviewedOn": "2026-07-18",
+  "provenancePolicy": {
+    "collectionAssignments": "Only current runtime hub memberships may supply subject, style, or seasonal values.",
+    "dimensions": "Orientation and dimensions come from verified production asset records.",
+    "titles": "Titles may label the page but never establish an attribute by themselves.",
+    "unapproved": "Audience and detail candidates remain non-displayable until separately reviewed."
+  },
+  "rootHubIds": ["hub_coloring_pages"],
+  "pureStyleHubIds": [
+    "hub_anime_girls",
+    "hub_chibi",
+    "hub_geometric",
+    "hub_mandalas",
+    "hub_plushies"
+  ],
+  "styleHubRules": [
+    { "prefix": "hub_anime", "value": "Anime" },
+    { "prefix": "hub_chibi", "value": "Chibi" },
+    { "prefix": "hub_geometric", "value": "Geometric" },
+    { "prefix": "hub_mandalas", "value": "Mandala" },
+    { "prefix": "hub_plushie", "value": "Plushie" }
+  ],
+  "seasonalHubIds": [
+    "hub_birthday",
+    "hub_christmas",
+    "hub_christmas_dogs",
+    "hub_halloween",
+    "hub_holidays",
+    "hub_santa",
+    "hub_st_patricks_day",
+    "hub_birthday_celebration",
+    "hub_christmas_plushie",
+    "hub_halloween_costume",
+    "hub_trick_or_treat",
+    "hub_leprechaun",
+    "hub_gingerbread"
+  ],
+  "unapprovedAudienceHubIds": ["hub_for_kids", "hub_detailed_for_adults"],
+  "unapprovedDetailHubIds": ["hub_easy", "hub_detailed_for_adults"],
+  "patternHubIds": ["hub_geometric", "hub_mandalas", "hub_geometric_dogs"],
+  "printLayout": { "width": 2550, "height": 3300, "unit": "px", "name": "Letter portrait" },
+  "serverAdvertisedFormats": ["PNG"],
+  "browserConditionalFormats": ["JPG", "WebP"]
+}

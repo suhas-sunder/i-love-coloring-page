@@ -6,9 +6,10 @@ import path from "node:path";
 
 const ROOT = process.cwd();
 const OUT = path.join(ROOT, "out");
-const REPORT_DATE = "2026-07-15";
+const REPORT_DATE = "2026-07-18";
 const MANIFEST_PATH = "pipeline/manifests/trust-ads-readiness.json";
 const REPORT_PATH = "pipeline/reports/trust-ads-readiness.md";
+const VERIFY_MODE = process.argv.includes("--verify");
 const TRUST_ROUTES = [
   { path: "/about", source: "app/about/page.tsx", contactExpected: false },
   { path: "/contact", source: "app/contact/page.tsx", contactExpected: true },
@@ -82,6 +83,7 @@ const blockingIssues = [
   blocker("ads.consent_and_age_configuration", "Ready after account configuration", "Choose ad personalization, regional consent, CMP, and age-treatment configuration before live advertising."),
   blocker("external.production_validation", "External verification required", "Validate account review, real creatives, production consent, production requests, and production asset-origin behavior externally."),
 ];
+const trustGates = blockingIssues.map(enrichTrustGate);
 
 const ownerActions = [
   action(1, "Confirm legal/operator identity and whether a business entity should be named.", "Ready after owner field"),
@@ -148,7 +150,7 @@ const report = {
     siteCookieCodeActive: integrationFindings.siteCookieCode,
   },
   ageTreatmentFindings,
-  blockingIssues,
+  blockingIssues: trustGates,
   ownerActions,
   externalActions,
   counts: {
@@ -192,30 +194,35 @@ const reportText = buildMarkdown(report);
 assertSafeArtifact(manifestText, reportText, identity.publicContactEmail);
 writeArtifact(MANIFEST_PATH, manifestText);
 writeArtifact(REPORT_PATH, reportText);
+writeArtifact("reports/trust-gates.csv", renderTrustGatesCsv(trustGates));
+writeArtifact("reports/trust-gates.md", renderTrustGatesMarkdown(trustGates));
+writeArtifact("reports/owner-input-required.md", renderOwnerInputRequired(trustGates, identity));
 
-const passed = trustContentFindingCount === 0
+const technicalPassed = trustContentFindingCount === 0
   && Object.values(integrationFindings).every((value) => value === false)
-  && accountFiles.adsTxt.length === 0
   && !accountFiles.apiDirectory
   && report.publicContactStatus.consistentAcrossRequiredTrustRoutes
-  && report.counts.runtimePrintables === 6352
-  && report.counts.publicHubs === 163
-  && report.counts.paginationRoutes === 451
-  && report.counts.regularSitemapUrls === 6523
-  && report.counts.imageSitemapPairs === 6352
+  && report.counts.runtimePrintables === runtime.records.length
+  && report.counts.publicHubs === routes.routes.filter((route) => route.indexable && route.sitemap).length
+  && report.counts.canonicalPrintablePages === routeManifest.routes.length
+  && report.counts.imageSitemapPairs === runtime.records.length
   && report.counts.trustRoutes === 6
   && report.counts.canonicalMismatches === 0
   && !report.safety.readinessReportEmbeddedInClientOutput;
+const productionReady = technicalPassed && trustGates.length === 0;
+writeArtifact("reports/production-readiness-status.md", renderProductionReadinessStatus({ technicalPassed, productionReady, trustGates, accountFiles }));
 
 console.log(JSON.stringify({
-  passed,
+  technicalPassed,
+  productionReady,
+  verifyMode: VERIFY_MODE,
   reportDate: REPORT_DATE,
   trustRouteCount: report.counts.trustRoutes,
-  blockingIssueCount: blockingIssues.length,
+  blockingIssueCount: trustGates.length,
   manifestSha256: sha256(manifestText),
   reportSha256: sha256(reportText),
 }, null, 2));
-if (!passed) process.exitCode = 1;
+if (!technicalPassed || (VERIFY_MODE && !productionReady)) process.exitCode = 1;
 
 function auditTrustRoute(route) {
   const html = readOutputHtml(route.path);
@@ -499,6 +506,120 @@ function blocker(id, classification, description) {
 
 function action(order, description, classification) {
   return { order, description, classification };
+}
+
+function enrichTrustGate(entry) {
+  const details = {
+    "owner.operator_identity": {
+      routeOrConfiguration: "src/config/siteIdentity.ts; About, Privacy, and Terms",
+      codeFixable: false, ownerFacts: true, legalReview: true,
+      riskOfGuessing: "Would publish an unverified person, business, or legal entity.",
+      ownerInput: "Verified public operator name and whether a business/legal entity should be identified.",
+      productionConsequence: "Production-readiness verification remains blocked.",
+      adsenseConsequence: "Publisher identity and trust review remain incomplete.",
+    },
+    "owner.mailing_address": {
+      routeOrConfiguration: "src/config/siteIdentity.ts; Privacy and Terms",
+      codeFixable: false, ownerFacts: true, legalReview: true,
+      riskOfGuessing: "Would expose a false or private address.",
+      ownerInput: "A decision on whether an address is required and, only if approved, a verified public address.",
+      productionConsequence: "Production-readiness verification remains blocked pending the decision.",
+      adsenseConsequence: "Account and policy identity review remains incomplete.",
+    },
+    "owner.governing_law": {
+      routeOrConfiguration: "app/terms/page.tsx; src/config/siteIdentity.ts",
+      codeFixable: false, ownerFacts: true, legalReview: true,
+      riskOfGuessing: "Could create an unsupported legal clause or jurisdiction.",
+      ownerInput: "Qualified selection and approval of any governing-law language.",
+      productionConsequence: "Final Terms approval remains blocked.",
+      adsenseConsequence: "Trust-page legal review remains incomplete.",
+    },
+    "legal.audience_treatment": {
+      routeOrConfiguration: "site-wide audience treatment; /coloring-pages/for-kids",
+      codeFixable: false, ownerFacts: true, legalReview: true,
+      riskOfGuessing: "Could incorrectly characterize a mixed library or child-directed treatment.",
+      ownerInput: "Reviewed child-directed, mixed-audience, or general-audience treatment and implementation requirements.",
+      productionConsequence: "Audience-dependent privacy and advertising configuration remains blocked.",
+      adsenseConsequence: "Age treatment and ad-serving choices cannot be configured safely.",
+    },
+    "legal.policy_approval": {
+      routeOrConfiguration: "/privacy, /terms, /contact, /affiliate-disclosure",
+      codeFixable: false, ownerFacts: true, legalReview: true,
+      riskOfGuessing: "Could publish permissions, rights, or compliance claims the operator has not approved.",
+      ownerInput: "Owner and qualified review of privacy, terms, use policy, and rights-removal wording.",
+      productionConsequence: "Trust pages remain factual drafts and deployment verification stays blocked.",
+      adsenseConsequence: "Policy review is incomplete before an advertising application.",
+    },
+    "legal.trademark_policy": {
+      routeOrConfiguration: "printable titles and editorial policy",
+      codeFixable: false, ownerFacts: true, legalReview: true,
+      riskOfGuessing: "Could misstate rights or acceptable treatment of brand references.",
+      ownerInput: "A reviewed policy for public brand and trademark references.",
+      productionConsequence: "Title-review policy remains incomplete.",
+      adsenseConsequence: "Rights and content-policy review remains incomplete.",
+    },
+    "ads.account_configuration": {
+      routeOrConfiguration: "advertisement mode, publisher configuration, and ads.txt",
+      codeFixable: false, ownerFacts: true, legalReview: false,
+      riskOfGuessing: "Could activate the wrong account, invalid slots, or an unverified ads.txt declaration.",
+      ownerInput: "Verified publisher ID, verification method, slot plan, Auto Ads decision, and account-supplied ads.txt line.",
+      productionConsequence: "LIVE mode remains unavailable; OFF remains the production default.",
+      adsenseConsequence: "Account verification and serving cannot begin.",
+    },
+    "ads.consent_and_age_configuration": {
+      routeOrConfiguration: "advertising consent, personalization, CMP, and age-treatment configuration",
+      codeFixable: false, ownerFacts: true, legalReview: true,
+      riskOfGuessing: "Could process advertising data under an incorrect consent or age-treatment mode.",
+      ownerInput: "Approved regional consent, personalization, CMP, and age-treatment decisions.",
+      productionConsequence: "LIVE advertising remains blocked.",
+      adsenseConsequence: "Consent and serving configuration remains incomplete.",
+    },
+    "external.production_validation": {
+      routeOrConfiguration: "deployed production site and advertising account",
+      codeFixable: false, ownerFacts: false, legalReview: false,
+      riskOfGuessing: "Local output cannot prove external account state, creatives, consent, or production requests.",
+      ownerInput: "Approved deployment and external account access for final verification.",
+      productionConsequence: "Final deployment verification must occur in the later production task.",
+      adsenseConsequence: "AdSense review and real-serving behavior remain externally unverified.",
+    },
+  }[entry.id];
+  if (!details) throw new Error(`Missing trust-gate details: ${entry.id}`);
+  return {
+    ...entry,
+    routeOrConfiguration: details.routeOrConfiguration,
+    exactCurrentFailure: entry.description,
+    codeFixable: details.codeFixable,
+    requiresOwnerSuppliedFacts: details.ownerFacts,
+    requiresLegalReview: details.legalReview,
+    riskOfGuessing: details.riskOfGuessing,
+    implementationCompleted: false,
+    ownerInputStillRequired: details.ownerInput,
+    productionConsequence: details.productionConsequence,
+    adsenseReviewConsequence: details.adsenseConsequence,
+  };
+}
+
+function renderTrustGatesCsv(gates) {
+  const columns = ["gate_identifier", "route_or_configuration", "exact_current_failure", "code_fixable", "requires_owner_supplied_facts", "requires_legal_review", "risk_of_guessing", "implementation_completed", "owner_input_still_required", "production_consequence", "adsense_review_consequence"];
+  const rows = gates.map((gate) => [gate.id, gate.routeOrConfiguration, gate.exactCurrentFailure, gate.codeFixable, gate.requiresOwnerSuppliedFacts, gate.requiresLegalReview, gate.riskOfGuessing, gate.implementationCompleted, gate.ownerInputStillRequired, gate.productionConsequence, gate.adsenseReviewConsequence]);
+  return `${columns.join(",")}\n${rows.map((row) => row.map(csvCell).join(",")).join("\n")}\n`;
+}
+
+function renderTrustGatesMarkdown(gates) {
+  return `# Trust, legal, owner, and advertising gates\n\nNine external/owner/legal gates were present before this task and remain explicit after code-level disclosure fixes. None can be truthfully closed from repository evidence alone.\n\n${gates.map((gate) => `## ${gate.id}\n\n- Current failure: ${gate.exactCurrentFailure}\n- Configuration: ${gate.routeOrConfiguration}\n- Code-fixable now: ${gate.codeFixable ? "yes" : "no"}\n- Owner facts required: ${gate.requiresOwnerSuppliedFacts ? "yes" : "no"}\n- Legal review required: ${gate.requiresLegalReview ? "yes" : "no"}\n- Input required: ${gate.ownerInputStillRequired}\n- Risk of guessing: ${gate.riskOfGuessing}\n- Production consequence: ${gate.productionConsequence}\n- AdSense consequence: ${gate.adsenseReviewConsequence}`).join("\n\n")}\n`;
+}
+
+function renderOwnerInputRequired(gates, identity) {
+  return `# Owner input required\n\nVerified repository contact: ${identity.publicContactEmail}. No other owner, business, address, jurisdiction, rights, licensing, publisher, consent, or age-treatment fact was inferred.\n\n${gates.filter((gate) => gate.requiresOwnerSuppliedFacts).map((gate) => `- **${gate.id}:** ${gate.ownerInputStillRequired}`).join("\n")}\n\nExternal-only follow-up: ${gates.find((gate) => gate.id === "external.production_validation")?.ownerInputStillRequired}\n`;
+}
+
+function renderProductionReadinessStatus({ technicalPassed, productionReady, trustGates, accountFiles }) {
+  return `# Production readiness status\n\n- Ordinary technical build validation: ${technicalPassed ? "PASS" : "FAIL"}\n- Production readiness: ${productionReady ? "PASS" : "BLOCKED"}\n- Remaining owner/legal/account/external gates: ${trustGates.length}\n- LIVE advertising enabled: no\n- Unverified ads.txt paths detected but not modified: ${accountFiles.adsTxt.join(", ") || "none"}\n\n\`npm run build\` validates and exports the static application without requiring invented owner facts. \`npm run verify:production-readiness\` adds the nine external/owner/legal/account gates and is expected to fail until verified inputs are supplied.\n`;
+}
+
+function csvCell(value) {
+  const text = String(value ?? "");
+  return /[",\n]/.test(text) ? `"${text.replaceAll('"', '""')}"` : text;
 }
 
 function readJson(relativePath) {

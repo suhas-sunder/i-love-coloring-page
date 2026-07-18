@@ -25,7 +25,7 @@ export default function TermsPage() {
     <TrustPage
       eyebrow="Terms"
       title={title}
-      intro={`These terms describe permitted use of ${siteIdentity.siteName} and its printable pages.`}
+      intro={`This page records current site-use information for ${siteIdentity.siteName}. It does not invent an artwork license or unverified operator terms.`}
     >
       <JsonLdScript
         id="jsonld-terms"
@@ -36,34 +36,26 @@ export default function TermsPage() {
         <p>{siteIdentity.policyLastUpdatedLabel}</p>
       </TrustSection>
 
-      <TrustSection title="Acceptance and site purpose">
+      <TrustSection title="Site purpose and current status">
         <p>
-          By using this site, you agree to these terms. The site provides a static library for browsing printable coloring pages, using a separate Print
-          action, and downloading PNG, JPG, or WebP files.
+          The site provides a static library for browsing printable coloring pages and using separate Print and download actions. The public operator
+          identity, governing-law language, artwork-rights provenance, and final permitted-use policy still require owner or legal review before
+          publication.
         </p>
       </TrustSection>
 
-      <TrustSection title="Permitted use">
+      <TrustSection title="Artwork use and licensing">
         <p>
-          Visitors may print or download pages for personal, home, classroom, library, and casual craft use. Teachers, librarians, caregivers, and
-          families may make reasonable copies for their own groups or activities.
+          Verified rights records are not currently available to support a sitewide personal, classroom, commercial, redistribution,
+          or derivative-use license. This page therefore does not grant those permissions or claim ownership of every artwork. A reviewed use policy
+          must be supplied before production launch.
         </p>
-      </TrustSection>
-
-      <TrustSection title="Restrictions">
-        <ul>
-          <li>Do not resell individual files or printed pages.</li>
-          <li>Do not bulk-redistribute, repackage, or publish the library as another collection.</li>
-          <li>Do not claim that you created or own site content that you did not create or own.</li>
-          <li>Do not scrape or bulk-copy the site to build a competing printable library.</li>
-          <li>Do not remove notices or mislead others about the source of content.</li>
-        </ul>
       </TrustSection>
 
       <TrustSection title="Print, downloads, and availability">
         <p>
-          Print and download are separate actions. Available downloads are PNG, JPG, and WebP; SVG is not offered as a public download. Pages,
-          formats, and features may be corrected, reorganized, removed, or unavailable, and permanent or uninterrupted access is not promised.
+          Print and download are separate actions. PNG is the server-rendered initial download option; JPG and WebP are shown only after browser
+          capability detection. SVG remains internal and is not offered as a public download. Pages and features may change as factual defects are corrected.
         </p>
       </TrustSection>
 
@@ -83,22 +75,8 @@ export default function TermsPage() {
         </p>
       </TrustSection>
 
-      <TrustSection title="No warranties">
-        <p>
-          The site and its content are provided as available. No promise is made that every page will always be accurate, available, or suitable for a
-          particular purpose.
-        </p>
-      </TrustSection>
-
-      <TrustSection title="Limitations">
-        <p>
-          To the extent permitted by applicable law, the site operator is not responsible for indirect or consequential losses arising from use of the
-          site, unavailable pages, printing problems, download problems, or reliance on site content.
-        </p>
-      </TrustSection>
-
       <TrustSection title="Changes to the site or terms">
-        <p>The site and these terms may be updated. Material changes to features or permitted use should trigger another review of this page.</p>
+        <p>The site and this page may be updated. A final permitted-use policy, operator identity, or governing-law clause must not be added without verified owner input and appropriate review.</p>
       </TrustSection>
 
       <TrustSection title="Contact">

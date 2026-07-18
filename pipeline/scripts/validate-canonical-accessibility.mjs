@@ -22,7 +22,7 @@ const results = representatives.map((printable) => {
     oneH1: (html.match(/<h1\b/g) || []).length === 1,
     breadcrumbNav: /<nav[^>]+aria-label="Breadcrumb"/.test(html) && /aria-current="page"/.test(html),
     nativePrintButton: /<button[^>]+type="button"[^>]*>Print<\/button>/.test(html),
-    downloadGroupNamed: /role="group" aria-label="Download PNG, JPG, or WebP/.test(html),
+    downloadGroupNamed: /<div[^>]*role="group"[^>]*aria-label="Download [^"]+"/.test(html),
     canonicalRelatedLinks:
       anchorHasClassAndPrintableHref(html, "gallery-item-media-link") &&
       anchorHasClassAndPrintableHref(html, "item-title-link"),

@@ -9,77 +9,12 @@
       "canonicalPath": "/",
       "pageTitle": "I Love Coloring Page",
       "metaTitle": "I Love Coloring Page | Printable Coloring Pages",
-      "metaDescription": "Browse 6,352 printable coloring pages with real previews, gallery search, print controls, and PNG, JPG, or WebP downloads.",
+      "metaDescription": "Browse 6,352 printable coloring pages with real previews, collection browsing, search, and print controls.",
       "h1": "I Love Coloring Page",
-      "shortIntro": "A printable coloring page library built around fast browsing, real previews, simple search, and clean print controls.",
+      "shortIntro": "Browse 6,352 printable coloring pages with real previews, collection browsing, search, and print controls.",
       "noIndex": false,
       "sitemap": true,
-      "content": {
-        "pageType": "home",
-        "canonicalPath": "/",
-        "guideTitle": "A faster way to choose a printable coloring page",
-        "shortIntro": "Start with featured pages or open the full gallery to search 6,352 printable coloring pages by subject, season, style, or detail level.",
-        "aboveGalleryValueBullets": [
-          "Real preview images help you choose before printing",
-          "Preview controls include Print plus PNG, JPG, and WebP downloads",
-          "Collections group supported subjects without creating per-image pages"
-        ],
-        "belowGallerySections": [
-          {
-            "heading": "What the site is built for",
-            "body": "The site is meant for quick printable use: choose a collection, scan real preview art, open the page you like, then print or download from the preview workflow."
-          },
-          {
-            "heading": "How to browse",
-            "body": "Use the main gallery when you want search and filters. Use collections when you need a familiar theme such as animals, mandalas, plushies, fantasy, holidays, plants, food, or dinosaurs."
-          },
-          {
-            "heading": "Printing notes",
-            "body": "Simpler pages work better for quick activities, while detailed pages are better for longer coloring sessions. Preview the full image before printing so the artwork fits the paper and activity."
-          }
-        ],
-        "relatedHubLinks": [
-          {
-            "label": "Plushies Coloring Pages",
-            "href": "/coloring-pages/plushies",
-            "reason": "narrower collection",
-            "assetCount": 1704
-          },
-          {
-            "label": "Animals Coloring Pages",
-            "href": "/coloring-pages/animals",
-            "reason": "narrower collection",
-            "assetCount": 1450
-          },
-          {
-            "label": "Coloring Pages for Kids",
-            "href": "/coloring-pages/for-kids",
-            "reason": "narrower collection",
-            "assetCount": 1335
-          },
-          {
-            "label": "Fantasy Coloring Pages",
-            "href": "/coloring-pages/fantasy",
-            "reason": "narrower collection",
-            "assetCount": 1265
-          },
-          {
-            "label": "Anime Girls Coloring Pages",
-            "href": "/coloring-pages/anime-girls",
-            "reason": "narrower collection",
-            "assetCount": 905
-          },
-          {
-            "label": "Holidays Coloring Pages",
-            "href": "/coloring-pages/holidays",
-            "reason": "narrower collection",
-            "assetCount": 874
-          }
-        ],
-        "internalLinkStrategy": "Home links emphasize broad supported public collections and the main gallery.",
-        "faqCandidates": [],
-        "pinterestDescription": "Browse a printable coloring page library with real previews, searchable collections, and PNG, JPG, or WebP downloads."
-      }
+      "content": null
     },
     {
       "pageType": "galleryLanding",
@@ -643,11 +578,11 @@
       "canonicalPath": "/coloring-pages/easy",
       "pageTitle": "Easy Coloring Pages",
       "metaTitle": "Easy Coloring Pages",
-      "metaDescription": "The current Easy inventory emphasizes simplified character and animal designs with broad, readable shapes.",
+      "metaDescription": "This collection gathers printable pages under the existing Easy label.",
       "h1": "Easy Coloring Pages",
-      "shortIntro": "The current Easy inventory emphasizes simplified character and animal designs with broad, readable shapes.",
-      "noIndex": false,
-      "sitemap": true,
+      "shortIntro": "This collection gathers printable pages under the existing Easy label.",
+      "noIndex": true,
+      "sitemap": false,
       "content": null
     },
     {
@@ -778,9 +713,9 @@
       "canonicalPath": "/coloring-pages/for-kids",
       "pageTitle": "Coloring Pages for Kids",
       "metaTitle": "Coloring Pages for Kids",
-      "metaDescription": "Friendly animals and character-led designs make up the current child-audience collection.",
+      "metaDescription": "Animals and character-led designs make up this broad printable collection.",
       "h1": "Coloring Pages for Kids",
-      "shortIntro": "Friendly animals and character-led designs make up the current child-audience collection.",
+      "shortIntro": "Animals and character-led designs make up this broad printable collection.",
       "noIndex": false,
       "sitemap": true,
       "content": null

@@ -1,54 +1,37 @@
 # Browser QA evidence
 
-Local browser checks were run against the final production export on 2026-07-18 using the connected Chromium browser. The browser hydrated the exported pages; its console contained no warnings or errors.
+Local checks ran against the final production export on 2026-07-18 in the connected in-app Chromium browser. Console warnings and errors were zero.
 
-## Route matrix
+## Printable rendering
 
-Checked:
+Fantasy Abyss Wyrm verified:
 
-- homepage
-- Coloring Pages landing
-- Animals
-- Detailed Coloring Pages for Adults
-- Mandalas
-- Geometric
-- Birthday Celebration
-- Woolly Mammoth
+- factual H1, visible summary, meta description, Open Graph description, and WebPage JSON-LD description agree
+- principal image is the public WebP at 341×512 declared and natural pixels
+- no thumbnail upscaling and no persistent loading fallback after hydration
+- PNG is the truthful server state; JPG and WebP appear only after browser capability detection
+- Page details show verified collection, subject, orientation, and artwork dimensions only
+- eight deterministic related printables produce server-rendered image/title links
+- zero advertisement slots or labels in OFF mode
+- footer and homepage metadata do not advertise browser-conditional formats
 
-Verified across the matrix:
+## Hub decisions
 
-- zero horizontal document overflow at desktop
-- self-referencing canonical URLs
-- `index, follow` for retained indexable hubs
-- `noindex, follow` for Birthday Celebration and Woolly Mammoth
-- one Related Collections region per hub
-- no “View all collections” control
-- no visitor-visible production, rotation, scheduling, or indexation wording
-- zero Advertisement labels in the preserved production OFF mode
-- corrected breadcrumbs: Coloring Pages → Detailed Coloring Pages for Adults → Mandalas/Geometric
-- route-specific H1, document title, Open Graph title, and description data
+- Easy: self-canonical, `noindex, follow`, public, and absent from primary navigation.
+- Coloring Pages for Kids: self-canonical, `index, follow`, 1,335 pages, with visitor-facing copy that publishes no age band, safety, or per-page difficulty claim.
+- No visitor-visible audit terms such as `index-promoted`, `legacy inventory`, or `audience assignments` remain in either decision page.
 
-The browser exposed a duplicated site-name suffix in the first export. The metadata generator was corrected and the export rebuilt. Final examples are:
+## Navigation and responsive search
 
-- `Printable Coloring Pages | I Love Coloring Page`
-- `Detailed Coloring Pages for Adults | I Love Coloring Page`
-- `Coloring Pages for Kids | I Love Coloring Page`
-- `Mandalas Coloring Pages | I Love Coloring Page`
+- Desktop Categories: 17 unique valid collection destinations, zero invalid links, no Easy destination, and zero horizontal overflow.
+- Mobile menu at 390×844: full-viewport modal, body scroll locked, one Close control, zero horizontal overflow, zero ads, and current count-backed links.
+- Mobile search at 390×844: full-viewport labelled modal, focused 350×52 input within the dialog, body scroll locked, zero horizontal overflow, and zero ads.
+- The earlier 320, 375, 390, 430, and landscape acceptance matrix remains documented; this stage intentionally did not create a broad visual-regression baseline.
 
-## Navigation
+## Trust pages
 
-The desktop Categories disclosure rendered 18 valid destinations in three semantic groups with live counts. Mandalas showed 23 and Geometric showed 55. Seasonal uses the same authoritative navigation data as mobile. No obsolete consolidation route is promoted.
+- Privacy states that advertising is currently off; output contains no AdSense script, labels, slots, or reserved space.
+- Terms does not invent ownership, licensing, governing law, operator identity, or permitted-use facts.
+- Machine-oriented `production-default`, `production-readiness gate`, and repository terminology were removed from visible trust copy.
 
-The mobile menu is modal, locks body scrolling, fills the viewport, exposes one Close control, and renders the same 27 direct/category/seasonal destinations. It produced zero horizontal overflow at 320, 375, 390, and 430 CSS pixels.
-
-## Search responsiveness
-
-The mobile search overlay was checked at 320×720, 375×780, 390×780, 430×820, and landscape 720×320.
-
-- zero horizontal overflow at every viewport
-- body scrolling locked
-- dialog spans the available viewport
-- input remained within the dialog
-- dialog semantics and accessible labelling present
-
-Final pixel-level dropdown, card-frame, and compact-height refinement remains assigned to the later responsive UI pass; the information architecture and semantic behavior are accepted here.
+Pixel-level dropdown, card-frame, compact-height, and cross-breakpoint visual polish remains assigned to the next task.

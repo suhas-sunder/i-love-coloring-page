@@ -1,6 +1,6 @@
 # Trust and Advertising Readiness
 
-Report date: 2026-07-15
+Report date: 2026-07-18
 
 This is a factual local readiness review. It does not certify legal compliance or guarantee advertising-account approval.
 
@@ -10,10 +10,10 @@ This is a factual local readiness review. It does not certify legal compliance o
 | --- | ---: | ---: | --- | --- |
 | /about | 1 | 0 | Not displayed | Pass |
 | /contact | 1 | 0 | Not displayed | Pass |
-| /privacy | 1 | 0 | July 15, 2026 | Pass |
-| /terms | 1 | 0 | July 15, 2026 | Pass |
-| /affiliate-disclosure | 1 | 0 | July 15, 2026 | Pass |
-| /editorial-policy | 1 | 0 | July 15, 2026 | Pass |
+| /privacy | 1 | 0 | July 18, 2026 | Pass |
+| /terms | 1 | 0 | July 18, 2026 | Pass |
+| /affiliate-disclosure | 1 | 0 | July 18, 2026 | Pass |
+| /editorial-policy | 1 | 0 | July 18, 2026 | Pass |
 
 The verified public contact is admin@ilovecoloringpage.com. Metadata titles and descriptions are unique, canonicals are self-referencing, footer links remain, and all six trust routes remain indexable and sitemap-eligible.
 
@@ -106,9 +106,9 @@ OFF mode reserves no advertising area. Print and Download controls remain free o
 ## Counts and preservation
 
 - Runtime printables: 6,352
-- Public hubs: 161
-- Pagination routes: 389
-- Regular sitemap URLs: 6,521
+- Public hubs: 160
+- Pagination routes: 362
+- Regular sitemap URLs: 6,520
 - Image sitemap pairs: 6,352
 - Static outputs: 6,920
 - Frozen route-field hash: c9f0fc577efe9e616d46720d8a8cd84ae3fa110f5d948f3d7601bf9faca61c89

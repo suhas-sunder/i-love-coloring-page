@@ -47,7 +47,9 @@ test("all metadata inputs are unique, bounded, public, canonical, and WebP-only"
   const canonicals = [];
   for (const record of printables.records) {
     const title = record.metadataTitle;
-    const description = `Print ${record.displayTitle} or download this coloring page as PNG, JPG, or WebP.`;
+    const description = record.attributes.summary
+      ? `${record.displayTitle}. ${record.attributes.summary}`
+      : `${record.displayTitle} is a ${record.attributes.orientation ? `${record.attributes.orientation} ` : ""}printable in the ${record.attributes.primaryCollection.title} collection.`;
     const canonical = `https://www.ilovecoloringpage.com${record.canonicalPath}`;
     const image = `https://assets.ilovecoloringpage.com/coloring-pages/${record.webpPath}`;
     assert.ok(title.length <= 128, record.assetId);
@@ -64,7 +66,8 @@ test("all metadata inputs are unique, bounded, public, canonical, and WebP-only"
   assert.match(source, /robots: \{ index: true, follow: true \}/);
   assert.match(source, /getPrintableTitleModel\(printable\)/);
   const titleSource = await readText("src/lib/coloring/printableTitles.ts");
-  assert.match(titleSource, /Print \$\{displayTitle\} or download this coloring page as PNG, JPG, or WebP\./);
+  assert.match(titleSource, /const attributes = printable\.attributes/);
+  assert.doesNotMatch(titleSource, /download this coloring page as PNG, JPG, or WebP/);
 });
 
 test("normal cards use canonical image and title links with a separate Print action", async () => {
@@ -96,7 +99,7 @@ test("normal cards use canonical image and title links with a separate Print act
 
 test("detail page preserves the approved section order and exposes no internal utility", async () => {
   const detail = await readText("src/components/coloring/PrintableDetailPage.tsx");
-  const order = ["PrintableDetailActions", "Related printable pages", "Related Collections", "Printing this coloring page"].map((needle) => detail.indexOf(needle));
+  const order = ["PrintableDetailActions", "Page details", "Printing and downloads", "Related printable pages", "Related Collections"].map((needle) => detail.indexOf(needle));
   assert.equal(order.every((value) => value >= 0), true);
   assert.deepEqual(order, [...order].sort((a, b) => a - b));
   assert.match(detail, /<Breadcrumbs[\s\S]*className="printable-breadcrumb"/);
@@ -105,7 +108,8 @@ test("detail page preserves the approved section order and exposes no internal u
   assert.match(breadcrumbs, /aria-current=\{isCurrent \? "page" : undefined\}/);
   assert.match(detail, /<GalleryGrid items=\{relatedItems\}[\s\S]*showPrintActions=\{false\}/);
   assert.match(detail, /getRelatedPrintables\(printable, 8\)/);
-  assert.match(detail, /buildPrintableDescription\(printable\)/);
+  assert.match(detail, /getPrintableSummary\(printable\)/);
+  assert.match(detail, /data-printable-details/);
   assert.doesNotMatch(detail, /\{printable\.(?:stableId|slugAndId|canonicalSlug)\}|>SVG<|Download SVG/);
   assert.equal((detail.match(/Related Collections/g) || []).length, 1);
 });

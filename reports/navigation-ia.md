@@ -10,4 +10,4 @@ Desktop and mobile render the same authoritative category and seasonal destinati
 - Removed control: View all collections. The HTML sitemap remains available through the footer and normal site discovery.
 - Consolidated routes in navigation: none.
 
-The IA intentionally does not place all 161 approved hubs in the header.
+The IA intentionally does not place all 160 indexable hubs in the header.

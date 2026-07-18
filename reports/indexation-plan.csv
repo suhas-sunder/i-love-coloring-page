@@ -36,7 +36,7 @@ hub_dragons,/coloring-pages/dragons,retain and index,,,true,true,weak filename/t
 hub_ducks,/coloring-pages/ducks,retain and index,,,true,true,weak filename/title evidence: 5.3% of members contain a route-subject token,2026-07-18
 hub_dungeon,/coloring-pages/dungeon,retain and index,,,true,true,direct filename/title evidence: 100.0% of members contain a route-subject token,2026-07-18
 hub_eagles,/coloring-pages/eagles,retain and index,,,true,true,weak filename/title evidence: 4.5% of members contain a route-subject token,2026-07-18
-hub_easy,/coloring-pages/easy,manual editorial review,,,true,false,"The route has a distinct difficulty intent, but current metadata does not provide an independent difficulty signal; destructive membership or indexation changes remain deferred.",2026-07-18
+hub_easy,/coloring-pages/easy,retain publicly but noindex,,,false,true,"The route remains public and self-canonical, but its legacy membership has no independently reviewed visual-complexity field and is wholly contained in For Kids.",2026-07-18
 hub_elephants,/coloring-pages/elephants,retain and index,,,true,true,weak filename/title evidence: 11.8% of members contain a route-subject token,2026-07-18
 hub_fairies,/coloring-pages/fairies,retain and index,,,true,true,weak filename/title evidence: 8.1% of members contain a route-subject token,2026-07-18
 hub_fantasy,/coloring-pages/fantasy,retain and index,,,true,true,direct filename/title evidence: 57.6% of members contain a route-subject token,2026-07-18
@@ -45,7 +45,7 @@ hub_fantasy_dragons,/coloring-pages/fantasy-dragons,retain and index,,,true,true
 hub_fish,/coloring-pages/fish,retain and index,,,true,true,direct filename/title evidence: 100.0% of members contain a route-subject token,2026-07-18
 hub_flowers,/coloring-pages/flowers,retain and index,,,true,true,direct filename/title evidence: 92.5% of members contain a route-subject token,2026-07-18
 hub_food,/coloring-pages/food,retain and index,,,true,true,weak filename/title evidence: 1.9% of members contain a route-subject token,2026-07-18
-hub_for_kids,/coloring-pages/for-kids,manual editorial review,,,true,false,"The audience route remains useful, but the present inventory is almost identical to Easy and needs future editorial classification evidence.",2026-07-18
+hub_for_kids,/coloring-pages/for-kids,retain and index,,,true,true,"Preserve the established audience route and its 35 unique records without treating its collection assignment as proof of age, safety, or difficulty.",2026-07-18
 hub_forest,/coloring-pages/forest,retain and index,,,true,true,direct filename/title evidence: 100.0% of members contain a route-subject token,2026-07-18
 hub_foxes,/coloring-pages/foxes,retain and index,,,true,true,weak filename/title evidence: 10.0% of members contain a route-subject token,2026-07-18
 hub_garden,/coloring-pages/garden,retain and index,,,true,true,direct filename/title evidence: 53.8% of members contain a route-subject token,2026-07-18

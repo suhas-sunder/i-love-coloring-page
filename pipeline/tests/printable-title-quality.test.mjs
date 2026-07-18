@@ -131,13 +131,16 @@ test("image-alt quality is unique, concise, nonempty, and avoids redundant color
   }
 });
 
-test("description quality is unique across designs and makes only verified format and action claims", async () => {
+test("description quality is unique across designs and uses only provenance-backed facts", async () => {
   const source = await readText("src/lib/coloring/printableTitles.ts");
-  assert.match(source, /Print \$\{displayTitle\} or download this coloring page as PNG, JPG, or WebP\./);
-  const descriptions = printables.records.map((record) => `Print ${record.displayTitle} or download this coloring page as PNG, JPG, or WebP.`);
+  assert.match(source, /const attributes = printable\.attributes/);
+  assert.doesNotMatch(source, /download this coloring page as PNG, JPG, or WebP/);
+  const descriptions = printables.records.map((record) => record.attributes.summary
+    ? `${record.displayTitle}. ${record.attributes.summary}`
+    : `${record.displayTitle} is a ${record.attributes.orientation ? `${record.attributes.orientation} ` : ""}printable in the ${record.attributes.primaryCollection.title} collection.`);
   assert.equal(new Set(descriptions).size, descriptions.length);
-  assert.equal(descriptions.every((description) => description.length >= 40 && description.length <= 180), true);
-  assert.equal(descriptions.every((description) => !/SVG|source file|runtime data|conversion pipeline|educational|therapeutic/i.test(description.slice(description.indexOf(" or download")))), true);
+  assert.equal(descriptions.every((description) => description.length > 0 && description.length <= 210), true);
+  assert.equal(descriptions.every((description) => !/SVG|source file|runtime data|conversion pipeline|educational|therapeutic|perfect for|all ages/i.test(description)), true);
 });
 
 test("search keeps base-title matching, design-number matching, and deterministic design ordering", async () => {

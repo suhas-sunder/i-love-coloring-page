@@ -9,19 +9,19 @@
     "nearDuplicateHubPairs": 4,
     "highContainmentPairs": 358,
     "countInconsistencies": 0,
-    "repeatedContentGroups": 1,
+    "repeatedContentGroups": 0,
     "internalWordingOccurrences": 0,
     "missingOrInvalidFullResolutionAssets": 0,
     "baselinePrintablePreviewDimensionMismatches": 6352,
     "currentPrintablePreviewDimensionMismatches": 0,
     "safeguardsPassed": 9,
     "safeguardsFailed": 0,
-    "retainAndIndex": 159,
-    "retainPubliclyButNoindex": 2,
+    "retainAndIndex": 160,
+    "retainPubliclyButNoindex": 3,
     "consolidateIntoAStrongerParent": 0,
     "redirectToAGenuineReplacement": 0,
     "correctCollectionMembership": 0,
-    "manualEditorialReview": 2
+    "manualEditorialReview": 0
   },
   "safeguards": [
     {
@@ -82,7 +82,7 @@
       "advertisementTextOccurrences": 12,
       "loadingPreviewPresent": true,
       "principalImage": "<img alt=\"\" class=\"asset-image\" data-priority=\"false\" data-state=\"loading\" decoding=\"async\" loading=\"lazy\" src=\"https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp\"/>",
-      "bodySha": "21fed294"
+      "bodySha": "950bb17d"
     },
     {
       "route": "/coloring-pages",
@@ -95,7 +95,7 @@
       "advertisementTextOccurrences": 12,
       "loadingPreviewPresent": true,
       "principalImage": "<img alt=\"\" class=\"asset-image\" data-priority=\"true\" data-state=\"loading\" decoding=\"async\" loading=\"eager\" src=\"https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp\"/>",
-      "bodySha": "3c2b64c3"
+      "bodySha": "fd503553"
     },
     {
       "route": "/coloring-pages/animals",
@@ -108,7 +108,7 @@
       "advertisementTextOccurrences": 12,
       "loadingPreviewPresent": true,
       "principalImage": "<img alt=\"\" class=\"asset-image\" data-priority=\"true\" data-state=\"loading\" decoding=\"async\" loading=\"eager\" src=\"https://assets.ilovecoloringpage.com/coloring-pages/webp/chibi/chibi-animals-pets-dogs-afghan-hound-d9a83b6ec9.webp\"/>",
-      "bodySha": "f60c3d4d"
+      "bodySha": "886a725c"
     },
     {
       "route": "/coloring-pages/detailed-for-adults",
@@ -121,7 +121,7 @@
       "advertisementTextOccurrences": 12,
       "loadingPreviewPresent": true,
       "principalImage": "<img alt=\"\" class=\"asset-image\" data-priority=\"true\" data-state=\"loading\" decoding=\"async\" loading=\"eager\" src=\"https://assets.ilovecoloringpage.com/coloring-pages/webp/mandala/mandala-geometry-patterns-animal-mandala-fox-3e8e80a2fd.webp\"/>",
-      "bodySha": "762f3bef"
+      "bodySha": "f3c691fa"
     },
     {
       "route": "/coloring-pages/mandalas",
@@ -134,7 +134,7 @@
       "advertisementTextOccurrences": 12,
       "loadingPreviewPresent": true,
       "principalImage": "<img alt=\"\" class=\"asset-image\" data-priority=\"true\" data-state=\"loading\" decoding=\"async\" loading=\"eager\" src=\"https://assets.ilovecoloringpage.com/coloring-pages/webp/mandala/mandala-geometry-patterns-animal-mandala-fox-3e8e80a2fd.webp\"/>",
-      "bodySha": "f59ab982"
+      "bodySha": "44b9979e"
     },
     {
       "route": "/coloring-pages/geometric",
@@ -147,7 +147,7 @@
       "advertisementTextOccurrences": 12,
       "loadingPreviewPresent": true,
       "principalImage": "<img alt=\"\" class=\"asset-image\" data-priority=\"true\" data-state=\"loading\" decoding=\"async\" loading=\"eager\" src=\"https://assets.ilovecoloringpage.com/coloring-pages/webp/mandala/mandala-geometry-patterns-animal-mandala-fox-3e8e80a2fd.webp\"/>",
-      "bodySha": "c348d170"
+      "bodySha": "c9ba2113"
     },
     {
       "route": "/printables/fantasy/fantasy-abyss-wyrm-7a01eb3636",
@@ -160,7 +160,7 @@
       "advertisementTextOccurrences": 12,
       "loadingPreviewPresent": true,
       "principalImage": "<img alt=\"\" class=\"asset-image\" data-priority=\"true\" data-state=\"loading\" decoding=\"async\" loading=\"eager\" width=\"1024\" height=\"1536\" src=\"https://assets.ilovecoloringpage.com/coloring-pages/webp/fantasy/fantasy-abyss-wyrm-7a01eb3636.webp\"/>",
-      "bodySha": "27705615"
+      "bodySha": "c70ba841"
     },
     {
       "route": "/robots.txt",
@@ -183,7 +183,7 @@
       "advertisementTextOccurrences": 0,
       "loadingPreviewPresent": true,
       "buildRevisionPresent": true,
-      "bodySha": "a5879536"
+      "bodySha": "658d5cee"
     },
     {
       "route": "/coloring-pages",
@@ -191,7 +191,7 @@
       "advertisementTextOccurrences": 0,
       "loadingPreviewPresent": true,
       "buildRevisionPresent": true,
-      "bodySha": "405c7dae"
+      "bodySha": "6bcc6048"
     },
     {
       "route": "/coloring-pages/animals",
@@ -199,7 +199,7 @@
       "advertisementTextOccurrences": 0,
       "loadingPreviewPresent": true,
       "buildRevisionPresent": true,
-      "bodySha": "eef25fec"
+      "bodySha": "66be3216"
     },
     {
       "route": "/printables/fantasy/fantasy-abyss-wyrm-7a01eb3636",
@@ -207,7 +207,7 @@
       "advertisementTextOccurrences": 0,
       "loadingPreviewPresent": true,
       "buildRevisionPresent": true,
-      "bodySha": "3e3b4977"
+      "bodySha": "6bcfafb7"
     }
   ]
 }

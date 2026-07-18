@@ -101,6 +101,7 @@ function baselineHubs() {
 
 function finalAction(manifest) {
   if (manifest.consolidationTarget) return `retain public URL without indexation; consolidate discovery into ${manifest.consolidationTarget}`;
+  if (!manifest.currentIndexable || !manifest.proposedSitemapInclusion) return "retain publicly but noindex";
   if (!manifest.activated) return "retain current safe state pending manual classification evidence";
   return "retain and index";
 }
@@ -128,7 +129,7 @@ function pairResolution(left, right) {
   const ids = new Set([left, right]);
   if (ids.has("hub_birthday") && ids.has("hub_birthday_celebration")) return "Birthday Celebration noindexed and removed from promotion; Birthday retained.";
   if (ids.has("hub_mammoths") && ids.has("hub_woolly_mammoth")) return "Woolly Mammoth noindexed and removed from promotion; Mammoths retained.";
-  if (ids.has("hub_easy") && ids.has("hub_for_kids")) return "Distinct stated intent retained safely; classification question remains documented.";
+  if (ids.has("hub_easy") && ids.has("hub_for_kids")) return "Easy retained publicly but noindexed pending reviewed complexity evidence; For Kids retained indexable without per-record age or difficulty claims.";
   if (ids.has("hub_dinosaurs") && ids.has("hub_prehistoric_animals")) return "Valid dinosaur subset versus broader extinct-animal inventory.";
   return "";
 }
@@ -151,7 +152,8 @@ After: Coloring Pages → Detailed Coloring Pages for Adults → Mandalas and Ge
 - Detailed for Adults: retained as the 1,459-record broad source collection.
 - Birthday Celebration: public and self-canonical, but \`noindex,follow\`, absent from XML sitemap and promotion; no redirect.
 - Woolly Mammoth: public and self-canonical, but \`noindex,follow\`, absent from XML sitemap and promotion; no redirect.
-- Easy and For Kids: retained indexable in the current safe state; their unresolved classification question is documented separately.
+- Easy: public and self-canonical, but \`noindex,follow\`, absent from XML sitemap and promotion until reviewed complexity evidence exists.
+- For Kids: retained indexable with its 35 unique records; collection membership is not published as a per-page age, safety, or difficulty fact.
 
 See \`hub-decisions.csv\` for every route.
 `;
@@ -186,12 +188,35 @@ function renderManualReview() {
 - Robots: retain/index; all nine titles directly support the subject.
 - Roses: retain/index; all nine titles directly support the subject, including stylized rose forms.
 
-## Retained safely; decision still open
+## Easy
 
-- Easy and Coloring Pages for Kids overlap at Jaccard 0.973783. Easy is wholly contained in Kids; Kids adds 35 kitten/puppy records.
-- The current source labels inject audience/difficulty wording but do not provide an independent reviewed difficulty field.
-- Options for a later editorial/data task: add reviewed audience and visual-complexity classifications, redefine Easy from that evidence, or consolidate only after confirming the routes do not serve distinct browsing intent.
-- Current action: preserve both indexable routes and memberships; do not redirect, canonicalize together, or infer a destructive change.
+- Route: /coloring-pages/easy
+- Hub type: visual complexity intent
+- Current selection rule: legacy collection assignment; no independent reviewed complexity field
+- Current inventory: 1,300
+- Adjacent overlap: wholly contained in For Kids; Jaccard 0.973783; zero unique records
+- Explicit support: the route and current collection assignment exist
+- Unsupported inference: per-page simplicity, child suitability, age band, safety, or educational use
+- Previous indexability: index
+- Options considered: retain/index, public/noindex, redirect, or reclassify from invented signals
+- Final decision: retain publicly but noindex, self-canonical, excluded from sitemap and promotion
+- Rationale: preserves a legitimate route and visitor utility without indexing an inventory whose stated complexity distinction is not supported per record
+- Remaining owner/data decision: supply independently reviewed visual-complexity classifications before reconsidering indexation
+
+## Coloring Pages for Kids
+
+- Route: /coloring-pages/for-kids
+- Hub type: audience browsing intent
+- Current selection rule: explicit existing collection assignment; no per-record age or safety classification
+- Current inventory: 1,335
+- Adjacent overlap: contains all Easy records and adds 35 kitten/puppy records
+- Explicit support: established audience route, direct assignments, and 35 unique records
+- Unsupported inference: an age band, safety, ease, educational benefit, or suitability of every member
+- Previous indexability: index
+- Options considered: retain/index, public/noindex, redirect, or merge with Easy
+- Final decision: retain and index; preserve current membership while suppressing unverified per-page audience/detail attributes
+- Rationale: retains the stronger established audience destination without pretending that its assignment establishes a difficulty level
+- Remaining owner/legal decision: sitewide legal audience and age-treatment classification remains a production-readiness gate
 `;
 }
 
@@ -199,13 +224,13 @@ function renderIndexation() {
   return `# Indexation Changes
 
 - Before: 163 indexable hub routes, 163 hub routes in the sitemap.
-- After: 161 indexable hub routes, 161 hub routes in the sitemap.
-- Noindex: Birthday Celebration and Woolly Mammoth.
+- After: 160 indexable hub routes, 160 hub routes in the sitemap.
+- Noindex: Birthday Celebration, Woolly Mammoth, and Easy.
 - Redirects: none.
 - Canonicals: every retained and noindex public hub remains self-referencing.
 - Corrected memberships: Detailed for Adults, Mandalas, and Geometric remain indexable after their inventories were differentiated.
-- Activated recommendations: 159 retain/index decisions, two evidence-backed consolidation/noindex decisions, and four resolved manual-review decisions.
-- Awaiting manual classification: Easy and For Kids remain explicitly unactivated in the manifest while retaining their safe runtime state.
+- Activated recommendations: 160 retain/index decisions and three retain-public/noindex decisions.
+- Manual hub decisions remaining: none. Per-record visual-complexity evidence and legal audience treatment remain separate owner/data gates.
 `;
 }
 
@@ -214,7 +239,7 @@ function navigationDestinations() {
     "Desktop direct": ["hub_for_kids", "hub_detailed_for_adults"],
     Subjects: ["hub_animals", "hub_sea_life", "hub_dinosaurs", "hub_plants", "hub_flowers", "hub_food", "hub_vehicles", "hub_buildings"],
     "Characters and imagined worlds": ["hub_fantasy", "hub_fantasy_creatures", "hub_anime_girls", "hub_plushies"],
-    Styles: ["hub_mandalas", "hub_geometric", "hub_chibi", "hub_kawaii", "hub_cute", "hub_easy"],
+    Styles: ["hub_mandalas", "hub_geometric", "hub_chibi", "hub_kawaii", "hub_cute"],
     Seasonal: ["hub_holidays", "hub_christmas", "hub_halloween", "hub_birthday", "hub_st_patricks_day"],
   };
   return Object.entries(areas).flatMap(([area, ids]) => ids.map((id) => {
@@ -236,7 +261,7 @@ Desktop and mobile render the same authoritative category and seasonal destinati
 - Removed control: View all collections. The HTML sitemap remains available through the footer and normal site discovery.
 - Consolidated routes in navigation: none.
 
-The IA intentionally does not place all 161 approved hubs in the header.
+The IA intentionally does not place all 160 indexable hubs in the header.
 `;
 }
 

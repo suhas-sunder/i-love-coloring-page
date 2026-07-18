@@ -55,8 +55,6 @@ export function HubHero({
         <p>{intro || hub.intro}</p>
         <ul className="hero-facts" aria-label="Gallery summary">
           <li><strong>{hub.assetCount.toLocaleString()}</strong> printable pages</li>
-          <li>Images and titles open printable pages</li>
-          <li>PNG, JPG, and WebP downloads</li>
         </ul>
         <div className="hero-actions">
           {heroQuickLinks.map((link, index) => (

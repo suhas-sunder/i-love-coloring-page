@@ -8,8 +8,8 @@ export const siteIdentity = Object.freeze({
   "publicContactEmail": "admin@ilovecoloringpage.com",
   "publicMailingAddress": null,
   "governingRegion": null,
-  "policyLastUpdatedDate": "2026-07-15",
-  "policyLastUpdatedLabel": "July 15, 2026",
+  "policyLastUpdatedDate": "2026-07-18",
+  "policyLastUpdatedLabel": "July 18, 2026",
   "features": {
     "analyticsActive": false,
     "liveAdvertisingActive": false,

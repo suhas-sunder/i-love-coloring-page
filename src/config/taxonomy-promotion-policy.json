@@ -68,6 +68,13 @@
       "sitemap": false,
       "consolidationTargetHubId": "hub_mammoths",
       "rationale": "All 19 records already belong to Mammoths; the singular variant contributes no unique printable and remains available as a crawlable, self-canonical public URL."
+    },
+    {
+      "hubId": "hub_easy",
+      "indexable": false,
+      "sitemap": false,
+      "consolidationTargetHubId": null,
+      "rationale": "The route remains public and self-canonical, but its legacy membership has no independently reviewed visual-complexity field and is wholly contained in For Kids."
     }
   ],
   "manualReviewResolutions": [
@@ -93,13 +100,13 @@
     },
     {
       "hubId": "hub_easy",
-      "action": "retain current safe state",
-      "rationale": "The route has a distinct difficulty intent, but current metadata does not provide an independent difficulty signal; destructive membership or indexation changes remain deferred."
+      "action": "retain publicly but noindex",
+      "rationale": "Preserve the distinct complexity browsing intent without indexing a collection that lacks reviewed complexity evidence."
     },
     {
       "hubId": "hub_for_kids",
-      "action": "retain current safe state",
-      "rationale": "The audience route remains useful, but the present inventory is almost identical to Easy and needs future editorial classification evidence."
+      "action": "retain and index",
+      "rationale": "Preserve the established audience route and its 35 unique records without treating its collection assignment as proof of age, safety, or difficulty."
     }
   ],
   "promotionClusters": [

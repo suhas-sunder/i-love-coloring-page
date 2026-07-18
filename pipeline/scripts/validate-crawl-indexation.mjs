@@ -148,6 +148,7 @@ const summary = {
   separatelyDeferredCount: deferred.records.length,
   publicHubCount: publicRoutes.routes.length,
   paginationCount: paginationPaths.length,
+  allIndexablePaginationRoutesExist: paginationPaths.every(outputRouteExists),
   trustPageCount: trustPaths.length,
   expectedRegularSitemapCount: expectedRegularUrls.length,
   regularSitemapCount: regularUrls.length,
@@ -191,7 +192,6 @@ summary.passed = Object.entries(summary)
   && summary.frozenPrintableCount === 6352
   && summary.deferredRuntimeCount === 0
   && summary.publicHubCount === 163
-  && summary.paginationCount === 389
   && summary.regularSitemapCount === summary.expectedRegularSitemapCount
   && summary.imageSitemapPairCount === summary.runtimePrintableCount
   && summary.printableHtmlCount === summary.runtimePrintableCount

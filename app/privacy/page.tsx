@@ -57,8 +57,7 @@ export default function PrivacyPage() {
 
       <TrustSection title="Current cookies, analytics, and advertising">
         <p>
-          Advertisement areas are inert layout placeholders. No live Google AdSense code, publisher ID, or live ad-unit ID is installed, and the
-          placeholders do not request advertisements. They do not by themselves set Google advertising cookies.
+          Advertising is currently off. Pages contain no advertising script, label, reserved advertising space, publisher ID, or live ad-unit ID.
         </p>
         <p>
           No site analytics tool is currently documented as active. The site does not document an active analytics or advertising cookie, but this is
@@ -73,8 +72,8 @@ export default function PrivacyPage() {
           according to the site's configuration and applicable consent.
         </p>
         <p>
-          Regional consent and age-treatment requirements must be configured before activation. Visitors will be given applicable controls when they
-          are required. These are conditional future practices and are not active merely because advertisement placeholders are visible.
+          Regional consent and age-treatment requirements must be configured before activation. Any applicable visitor controls must be implemented
+          and reviewed with the actual advertising configuration. These are conditional future practices, not current behavior.
         </p>
       </TrustSection>
 

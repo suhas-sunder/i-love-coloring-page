@@ -4,59 +4,36 @@ Audit date: 2026-07-18
 
 ## Passing current checks
 
-- `npm run typecheck`
-- `npm run validate:site-quality` — 9/9 safeguards
-- `npm run test:hub-architecture` — 8/8
-- `npm run test:taxonomy-promotion` — 8/8
-- `npm run test:navigation` and full discovery-UX suite — 11/11
-- `npm run test:page-structure` — 7/7
-- `npm run test:site-quality-foundations` — 8/8
-- `npm run test:crawl` — 8/8
-- `npm run test:canonical` — 8/8
-- `npm run test:image-sitemap` — 4/4
-- affected foundation, printable-title, and static-search tests — 23/23
-- `npm run validate:payload`
-- `npm run validate:static-routes`
-- `npm run validate:accessibility`
-- `npm run validate:export-safety`
-- `npm run validate:image-sitemap`
-- `npm run validate:crawl`
-- `npm run validate:page-layout`
-- `npm run audit:site-quality`
-- Next.js production compilation and static generation — 6,920 static pages
+- `npm test` — 143/143 current behavioral tests passed.
+- `npm run typecheck` — passed.
+- `npm run build` — passed; 6,920 static pages generated, including all 6,352 canonical printable routes.
+- `npm run audit:site-quality` — 163 hubs and 6,352 printables analyzed; 9/9 safeguards passed.
+- `npm run validate:payload` — passed.
+- `npm run validate:static-routes` — seven representative canonical routes and eight invalid-route cases passed.
+- `npm run validate:accessibility` — four representative printable routes plus dialog/focus/source checks passed.
+- `npm run validate:export-safety` — 69,558 exported files scanned with zero findings.
+- `npm run validate:image-sitemap` — passed.
+- `npm run validate:crawl` — passed: 6,520 regular sitemap URLs, 6,352 image pairs, 362 indexable pagination routes, and zero mismatches.
+- `npm run validate:page-layout` — nine page families passed with advertising OFF and zero live units.
+- Browser QA — desktop discovery, 390-pixel mobile search/menu, Easy/For Kids, Fantasy Abyss Wyrm, Privacy, and Terms passed with zero console warnings/errors.
 
-The repository has no configured formatter or lint command. TypeScript type checking is the configured static-analysis check.
+The repository has no configured formatter or lint script. TypeScript is the configured static-analysis check.
 
-## Content-quality gate
+## Content-quality results
 
-All nine site-quality safeguards pass:
+- Former printable format template occurrences: 0.
+- Provenance-backed concise summaries: 6,126.
+- Structured-details-only routes: 226.
+- Duplicate meta-description groups: 0.
+- Duplicate summary groups across unrelated records: 0.
+- Alt-text issues: 0.
+- Unique related-printable sets: 5,928.
+- Site-quality safeguards: 9/9 passed.
 
-- zero duplicate indexable introductions
-- zero near-template introduction failures
-- zero forbidden internal wording occurrences
-- one Related Collections module maximum
-- zero count mismatches
-- noindex routes excluded from the sitemap
-- zero invalid navigation destinations
-- zero redirected routes in navigation
-- zero exact duplicate indexable inventories
+## Historical test modernization
 
-## Production build post-step blocker
+The baseline ordinary suite had 57 failing phase-snapshot tests across 27 milestone files. They asserted superseded component source, permanent production placeholders, obsolete navigation, and PNG-only implementation stages. The files were retained for provenance; the 57 obsolete failures were mapped in `reports/historical-test-review.csv` and removed from the ordinary behavioral entry point without deleting or weakening current accessibility, crawl, asset, ad-mode, download, taxonomy, or navigation coverage.
 
-The Next.js production build and export complete successfully. The composite `npm run build` exits after export because `build-trust-ads-readiness.mjs` correctly retains nine owner, legal, age-treatment, and advertising-account blockers. The gate was not weakened. The locally supplied untracked `public/ads.txt` was not modified or staged.
+## Production readiness
 
-## Historical aggregate suite
-
-The current aggregate `npm test` result is 281 tests: 224 pass and 57 fail. Those failures are historical phase snapshots asserting mutually superseded UI, advertisement-placeholder, download-control, and component-source shapes. They are not used to claim current collection correctness.
-
-Tests affected by this task were modernized to assert behavior:
-
-- public route preservation is separate from sitemap eligibility
-- navigation-search collections follow active indexability
-- graph, membership, count, canonical, robots, sitemap, related-module, and navigation behavior is checked directly
-
-Four separate trust/advertising-readiness assertions also remain red against the preserved ad-mode system. They are outside this task; the nine-item readiness gate remains the authoritative blocker.
-
-## Browser coverage
-
-Hydrated Chromium checks passed for the representative route matrix at desktop plus 320, 375, 390, and 430 CSS-pixel widths and 720×320 landscape. Console warnings/errors were zero. See `reports/browser-qa.md`.
+`npm run verify:production-readiness` exits 1 as designed with exactly nine owner/legal/account/external gates. The ordinary technical build passes. The locally supplied untracked `public/ads.txt`, `public/favicon.ico`, and `public/robots.txt` were not modified or staged.

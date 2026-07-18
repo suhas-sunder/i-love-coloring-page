@@ -103,12 +103,13 @@ test("printable detail protects preview actions and aligns the standard placemen
     "Related printable pages",
     "placement=\"related-banner\"",
     "Related Collections",
-    "<SupportingInformation",
   ]);
   const mainStart = source.indexOf("<section className=\"printable-main\"");
   const mainEnd = source.indexOf("</section>", mainStart);
   assert.doesNotMatch(source.slice(mainStart, mainEnd), /PageAdSlot|AdSlot|Advertisement/);
-  assert.match(source, /pageFamily="printable"[\s\S]*title="Printing this coloring page"/);
+  assert.match(source, /data-printable-details/);
+  assert.match(source, /<summary>Printing and downloads<\/summary>/);
+  assert.doesNotMatch(source, /<SupportingInformation/);
   assert.match(source, /<PrintableDetailActions item=\{item\} internalSvgUrl=\{assetSources\.fullResolutionArtwork\.url\} pngPreviewUrl=\{null\}/);
 });
 
@@ -128,7 +129,7 @@ test("copy regression scan rejects outdated and internal page wording", async ()
     /selected from successful production assets/i,
     /clean PNG downloads/i,
   ]) assert.doesNotMatch(source, forbidden);
-  assert.match(source, /PNG, JPG, (?:and )?WebP/);
+  assert.doesNotMatch(source, /PNG, JPG, (?:and )?WebP/);
   assert.equal((await readText("src/components/coloring/HubPageContent.tsx")).match(/Related Collections/g)?.length, 1);
 });
 

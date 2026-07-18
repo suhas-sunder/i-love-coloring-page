@@ -1,5 +1,5 @@
 {
-  "reportDate": "2026-07-15",
+  "reportDate": "2026-07-18",
   "runId": "trust-ads-readiness",
   "trustRoutes": [
     {
@@ -64,7 +64,7 @@
       "canonical": "https://www.ilovecoloringpage.com/privacy",
       "indexable": true,
       "footerLinked": true,
-      "lastUpdated": "July 15, 2026",
+      "lastUpdated": "July 18, 2026",
       "contactExpected": true,
       "contactEmailPresent": true,
       "logicalAdvertisementSlots": 0,
@@ -91,7 +91,7 @@
       "canonical": "https://www.ilovecoloringpage.com/terms",
       "indexable": true,
       "footerLinked": true,
-      "lastUpdated": "July 15, 2026",
+      "lastUpdated": "July 18, 2026",
       "contactExpected": true,
       "contactEmailPresent": true,
       "logicalAdvertisementSlots": 0,
@@ -118,7 +118,7 @@
       "canonical": "https://www.ilovecoloringpage.com/affiliate-disclosure",
       "indexable": true,
       "footerLinked": true,
-      "lastUpdated": "July 15, 2026",
+      "lastUpdated": "July 18, 2026",
       "contactExpected": true,
       "contactEmailPresent": true,
       "logicalAdvertisementSlots": 0,
@@ -145,7 +145,7 @@
       "canonical": "https://www.ilovecoloringpage.com/editorial-policy",
       "indexable": true,
       "footerLinked": true,
-      "lastUpdated": "July 15, 2026",
+      "lastUpdated": "July 18, 2026",
       "contactExpected": true,
       "contactEmailPresent": true,
       "logicalAdvertisementSlots": 0,
@@ -478,47 +478,137 @@
     {
       "id": "owner.operator_identity",
       "classification": "Ready after owner field",
-      "description": "Confirm the public operator name and whether a business or legal entity should be identified."
+      "description": "Confirm the public operator name and whether a business or legal entity should be identified.",
+      "routeOrConfiguration": "src/config/siteIdentity.ts; About, Privacy, and Terms",
+      "exactCurrentFailure": "Confirm the public operator name and whether a business or legal entity should be identified.",
+      "codeFixable": false,
+      "requiresOwnerSuppliedFacts": true,
+      "requiresLegalReview": true,
+      "riskOfGuessing": "Would publish an unverified person, business, or legal entity.",
+      "implementationCompleted": false,
+      "ownerInputStillRequired": "Verified public operator name and whether a business/legal entity should be identified.",
+      "productionConsequence": "Production-readiness verification remains blocked.",
+      "adsenseReviewConsequence": "Publisher identity and trust review remain incomplete."
     },
     {
       "id": "owner.mailing_address",
       "classification": "Ready after owner field",
-      "description": "Decide whether a public mailing address is required or desired and provide only a verified address."
+      "description": "Decide whether a public mailing address is required or desired and provide only a verified address.",
+      "routeOrConfiguration": "src/config/siteIdentity.ts; Privacy and Terms",
+      "exactCurrentFailure": "Decide whether a public mailing address is required or desired and provide only a verified address.",
+      "codeFixable": false,
+      "requiresOwnerSuppliedFacts": true,
+      "requiresLegalReview": true,
+      "riskOfGuessing": "Would expose a false or private address.",
+      "implementationCompleted": false,
+      "ownerInputStillRequired": "A decision on whether an address is required and, only if approved, a verified public address.",
+      "productionConsequence": "Production-readiness verification remains blocked pending the decision.",
+      "adsenseReviewConsequence": "Account and policy identity review remains incomplete."
     },
     {
       "id": "owner.governing_law",
       "classification": "Ready after owner field",
-      "description": "Select governing-law language with qualified review before adding it to the Terms."
+      "description": "Select governing-law language with qualified review before adding it to the Terms.",
+      "routeOrConfiguration": "app/terms/page.tsx; src/config/siteIdentity.ts",
+      "exactCurrentFailure": "Select governing-law language with qualified review before adding it to the Terms.",
+      "codeFixable": false,
+      "requiresOwnerSuppliedFacts": true,
+      "requiresLegalReview": true,
+      "riskOfGuessing": "Could create an unsupported legal clause or jurisdiction.",
+      "implementationCompleted": false,
+      "ownerInputStillRequired": "Qualified selection and approval of any governing-law language.",
+      "productionConsequence": "Final Terms approval remains blocked.",
+      "adsenseReviewConsequence": "Trust-page legal review remains incomplete."
     },
     {
       "id": "legal.audience_treatment",
       "classification": "Ready after legal decision",
-      "description": "Decide child-directed, mixed-audience, or general-audience treatment, including explicitly child-oriented collections."
+      "description": "Decide child-directed, mixed-audience, or general-audience treatment, including explicitly child-oriented collections.",
+      "routeOrConfiguration": "site-wide audience treatment; /coloring-pages/for-kids",
+      "exactCurrentFailure": "Decide child-directed, mixed-audience, or general-audience treatment, including explicitly child-oriented collections.",
+      "codeFixable": false,
+      "requiresOwnerSuppliedFacts": true,
+      "requiresLegalReview": true,
+      "riskOfGuessing": "Could incorrectly characterize a mixed library or child-directed treatment.",
+      "implementationCompleted": false,
+      "ownerInputStillRequired": "Reviewed child-directed, mixed-audience, or general-audience treatment and implementation requirements.",
+      "productionConsequence": "Audience-dependent privacy and advertising configuration remains blocked.",
+      "adsenseReviewConsequence": "Age treatment and ad-serving choices cannot be configured safely."
     },
     {
       "id": "legal.policy_approval",
       "classification": "Ready after legal decision",
-      "description": "Review and approve the Privacy Policy, Terms, permitted-use rules, and rights-removal wording."
+      "description": "Review and approve the Privacy Policy, Terms, permitted-use rules, and rights-removal wording.",
+      "routeOrConfiguration": "/privacy, /terms, /contact, /affiliate-disclosure",
+      "exactCurrentFailure": "Review and approve the Privacy Policy, Terms, permitted-use rules, and rights-removal wording.",
+      "codeFixable": false,
+      "requiresOwnerSuppliedFacts": true,
+      "requiresLegalReview": true,
+      "riskOfGuessing": "Could publish permissions, rights, or compliance claims the operator has not approved.",
+      "implementationCompleted": false,
+      "ownerInputStillRequired": "Owner and qualified review of privacy, terms, use policy, and rights-removal wording.",
+      "productionConsequence": "Trust pages remain factual drafts and deployment verification stays blocked.",
+      "adsenseReviewConsequence": "Policy review is incomplete before an advertising application."
     },
     {
       "id": "legal.trademark_policy",
       "classification": "Ready after legal decision",
-      "description": "Choose a policy for brand and trademark references in public titles."
+      "description": "Choose a policy for brand and trademark references in public titles.",
+      "routeOrConfiguration": "printable titles and editorial policy",
+      "exactCurrentFailure": "Choose a policy for brand and trademark references in public titles.",
+      "codeFixable": false,
+      "requiresOwnerSuppliedFacts": true,
+      "requiresLegalReview": true,
+      "riskOfGuessing": "Could misstate rights or acceptable treatment of brand references.",
+      "implementationCompleted": false,
+      "ownerInputStillRequired": "A reviewed policy for public brand and trademark references.",
+      "productionConsequence": "Title-review policy remains incomplete.",
+      "adsenseReviewConsequence": "Rights and content-policy review remains incomplete."
     },
     {
       "id": "ads.account_configuration",
       "classification": "Ready after account configuration",
-      "description": "Supply verified account credentials, verification method, ads.txt line, ad-unit plan, and Auto Ads decision in a separate approved round."
+      "description": "Supply verified account credentials, verification method, ads.txt line, ad-unit plan, and Auto Ads decision in a separate approved round.",
+      "routeOrConfiguration": "advertisement mode, publisher configuration, and ads.txt",
+      "exactCurrentFailure": "Supply verified account credentials, verification method, ads.txt line, ad-unit plan, and Auto Ads decision in a separate approved round.",
+      "codeFixable": false,
+      "requiresOwnerSuppliedFacts": true,
+      "requiresLegalReview": false,
+      "riskOfGuessing": "Could activate the wrong account, invalid slots, or an unverified ads.txt declaration.",
+      "implementationCompleted": false,
+      "ownerInputStillRequired": "Verified publisher ID, verification method, slot plan, Auto Ads decision, and account-supplied ads.txt line.",
+      "productionConsequence": "LIVE mode remains unavailable; OFF remains the production default.",
+      "adsenseReviewConsequence": "Account verification and serving cannot begin."
     },
     {
       "id": "ads.consent_and_age_configuration",
       "classification": "Ready after account configuration",
-      "description": "Choose ad personalization, regional consent, CMP, and age-treatment configuration before live advertising."
+      "description": "Choose ad personalization, regional consent, CMP, and age-treatment configuration before live advertising.",
+      "routeOrConfiguration": "advertising consent, personalization, CMP, and age-treatment configuration",
+      "exactCurrentFailure": "Choose ad personalization, regional consent, CMP, and age-treatment configuration before live advertising.",
+      "codeFixable": false,
+      "requiresOwnerSuppliedFacts": true,
+      "requiresLegalReview": true,
+      "riskOfGuessing": "Could process advertising data under an incorrect consent or age-treatment mode.",
+      "implementationCompleted": false,
+      "ownerInputStillRequired": "Approved regional consent, personalization, CMP, and age-treatment decisions.",
+      "productionConsequence": "LIVE advertising remains blocked.",
+      "adsenseReviewConsequence": "Consent and serving configuration remains incomplete."
     },
     {
       "id": "external.production_validation",
       "classification": "External verification required",
-      "description": "Validate account review, real creatives, production consent, production requests, and production asset-origin behavior externally."
+      "description": "Validate account review, real creatives, production consent, production requests, and production asset-origin behavior externally.",
+      "routeOrConfiguration": "deployed production site and advertising account",
+      "exactCurrentFailure": "Validate account review, real creatives, production consent, production requests, and production asset-origin behavior externally.",
+      "codeFixable": false,
+      "requiresOwnerSuppliedFacts": false,
+      "requiresLegalReview": false,
+      "riskOfGuessing": "Local output cannot prove external account state, creatives, consent, or production requests.",
+      "implementationCompleted": false,
+      "ownerInputStillRequired": "Approved deployment and external account access for final verification.",
+      "productionConsequence": "Final deployment verification must occur in the later production task.",
+      "adsenseReviewConsequence": "AdSense review and real-serving behavior remain externally unverified."
     }
   ],
   "ownerActions": [
@@ -596,16 +686,16 @@
   ],
   "counts": {
     "runtimePrintables": 6352,
-    "publicHubs": 161,
-    "paginationRoutes": 389,
+    "publicHubs": 160,
+    "paginationRoutes": 362,
     "canonicalPrintablePages": 6352,
     "trustRoutes": 6,
-    "regularSitemapUrls": 6521,
+    "regularSitemapUrls": 6520,
     "imageSitemapPairs": 6352,
     "staticOutputs": 6920,
     "totalFiles": 69732,
-    "totalBytes": 1181176362,
-    "staticJavascriptBytes": 751557,
+    "totalBytes": 1140239183,
+    "staticJavascriptBytes": 751480,
     "globallyUniquePrintableDisplayTitles": 6352,
     "globallyUniquePrintableMetadataTitles": 6352,
     "deferredRuntimeLeakage": 0,
@@ -618,28 +708,28 @@
   "payload": {
     "trustPages": {
       "/about": {
-        "htmlBytes": 20515,
-        "rscBytes": 10788
+        "htmlBytes": 20739,
+        "rscBytes": 10900
       },
       "/contact": {
-        "htmlBytes": 21000,
-        "rscBytes": 11064
+        "htmlBytes": 20988,
+        "rscBytes": 11058
       },
       "/privacy": {
-        "htmlBytes": 28067,
-        "rscBytes": 14701
+        "htmlBytes": 27833,
+        "rscBytes": 14584
       },
       "/terms": {
-        "htmlBytes": 27622,
-        "rscBytes": 14576
+        "htmlBytes": 25372,
+        "rscBytes": 13340
       },
       "/affiliate-disclosure": {
-        "htmlBytes": 20527,
-        "rscBytes": 10832
+        "htmlBytes": 20515,
+        "rscBytes": 10826
       },
       "/editorial-policy": {
-        "htmlBytes": 22488,
-        "rscBytes": 11833
+        "htmlBytes": 22830,
+        "rscBytes": 12004
       }
     }
   },

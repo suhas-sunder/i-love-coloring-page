@@ -21,6 +21,7 @@ export const PRINTABLE_INPUTS = Object.freeze({
   searchIndex: "src/generated/coloring/runtime-search-index.json",
   titleOverrides: "src/generated/coloring/title-overrides.json",
   taxonomyPolicy: "src/config/taxonomy-promotion-policy.json",
+  attributePolicy: "src/config/printable-attribute-policy.json",
   productionAssets: "pipeline/manifests/round-3c-production-assets.json",
 });
 
@@ -135,7 +136,11 @@ function buildOutputs(input, previousManifest, previousTitleManifest) {
       altText: title.altText,
     };
   });
-  const recordsWithRelated = addRelatedData(recordsWithTitles, input.hubs.hubs, input.taxonomyPolicy);
+  const recordsWithAttributes = recordsWithTitles.map((record) => ({
+    ...record,
+    attributes: buildPrintableAttributes(record, input.hubs.hubs, input.attributePolicy),
+  }));
+  const recordsWithRelated = addRelatedData(recordsWithAttributes, input.hubs.hubs, input.taxonomyPolicy);
   const titleReview = buildTitleReview(recordsWithRelated, normalizations);
   const routes = recordsWithRelated.map(({ assetId, stableId, canonicalSlug, primaryHubId, primaryCategorySlug, slugAndId, canonicalPath }) => ({
     assetId,
@@ -165,7 +170,7 @@ function buildOutputs(input, previousManifest, previousTitleManifest) {
         exceptionalNormalizationCount: normalizations.length,
         titleReviewItemCount: titleReview.reviewItemCount,
         recordSha256: recordHash,
-        relatedPrintableRule: "candidate-union-from-shared-routed-hubs-and-primary-hub-existing-relations; score=1000000-primary-hub-share+100000-per-additional-shared-hub+10000-per-ranked-related-hub; unique-title-first; assetId-ascending-final-tie-break; maximum-12",
+        relatedPrintableRule: "verified-shared-narrow-subjects-rank-first; then verified-style-season-pattern and broader-hub signals; unique-title-first; deterministic-pair-hash-final-tie-break; maximum-12",
         relatedHubRule: "existing-membership-or-routed-hub-relationship-only; parent-family-requires-shared-primary-members; thin-hubs-require-direct-membership; promotion-cluster-cap-1; stable-score-and-hubId-tie-break; maximum-6",
       },
       titleReview,
@@ -198,6 +203,11 @@ function buildOutputs(input, previousManifest, previousTitleManifest) {
 function addRelatedData(records, hubs, taxonomyPolicy) {
   const ROOT_HUB_ID = "hub_coloring_pages";
   const recordByAssetId = new Map(records.map((record) => [record.assetId, record]));
+  const publicHubById = new Map(
+    hubs
+      .filter((hub) => hub.hubId !== ROOT_HUB_ID && hub.route)
+      .map((hub) => [hub.hubId, hub]),
+  );
   const eligibleHubById = new Map(
     hubs
       .filter((hub) => hub.hubId !== ROOT_HUB_ID && hub.route && hub.indexable === true && hub.sitemap === true)
@@ -206,7 +216,7 @@ function addRelatedData(records, hubs, taxonomyPolicy) {
   const availableAssetIdsByHub = new Map();
   const thinExposureByHubId = new Map();
 
-  for (const [hubId, hub] of eligibleHubById) {
+  for (const [hubId, hub] of publicHubById) {
     availableAssetIdsByHub.set(
       hubId,
       [...new Set((hub.assetIds || []).filter((assetId) => recordByAssetId.has(assetId)))].sort(),
@@ -214,7 +224,7 @@ function addRelatedData(records, hubs, taxonomyPolicy) {
   }
 
   return records.map((record) => {
-    const primaryHub = required(eligibleHubById.get(record.primaryHubId), `Missing eligible primary hub for ${record.assetId}`);
+    const primaryHub = required(publicHubById.get(record.primaryHubId), `Missing public primary hub for ${record.assetId}`);
     const relatedHubIds = selectRelatedHubIds(
       record,
       primaryHub,
@@ -308,6 +318,9 @@ function selectRelatedAssetIds(record, relatedHubIds, recordByAssetId, eligibleH
   candidateIds.delete(record.assetId);
 
   const meaningfulHubIds = new Set(record.hubIds.filter((hubId) => eligibleHubById.has(hubId)));
+  const narrowSubjects = new Set([record.attributes.narrowSubjectCategory, record.attributes.primarySubject].filter(Boolean));
+  const styles = new Set(record.attributes.styles);
+  const seasons = new Set(record.attributes.seasonalClassifications);
   const relatedRankByHubId = new Map(relatedHubIds.map((hubId, index) => [hubId, relatedHubIds.length - index]));
   const scored = [...candidateIds]
     .map((assetId) => {
@@ -320,13 +333,23 @@ function selectRelatedAssetIds(record, relatedHubIds, recordByAssetId, eligibleH
         (score, hubId) => score + (relatedRankByHubId.get(hubId) || 0) * 10_000,
         0,
       );
+      const candidateSubjects = new Set([candidate.attributes.narrowSubjectCategory, candidate.attributes.primarySubject].filter(Boolean));
+      const sharedSubjectCount = [...narrowSubjects].filter((value) => candidateSubjects.has(value)).length;
+      const sharedStyleCount = [...styles].filter((value) => candidate.attributes.styles.includes(value)).length;
+      const sharedSeasonCount = [...seasons].filter((value) => candidate.attributes.seasonalClassifications.includes(value)).length;
+      const sharedPattern = record.attributes.patternFocused === true && candidate.attributes.patternFocused === true;
       const score =
-        Number(candidateHubs.has(record.primaryHubId)) * 1_000_000 +
+        sharedSubjectCount * 2_000_000 +
+        sharedStyleCount * 400_000 +
+        sharedSeasonCount * 300_000 +
+        Number(sharedPattern) * 250_000 +
         additionalSharedHubCount * 100_000 +
-        relatedHubScore;
-      return { candidate, score };
+        Number(candidateHubs.has(record.primaryHubId)) * 50_000 +
+        relatedHubScore +
+        Number(record.attributes.orientation === candidate.attributes.orientation) * 1_000;
+      return { candidate, score, tieBreak: stablePairTieBreak(record.assetId, candidate.assetId) };
     })
-    .sort((left, right) => right.score - left.score || left.candidate.assetId.localeCompare(right.candidate.assetId));
+    .sort((left, right) => right.score - left.score || left.tieBreak.localeCompare(right.tieBreak) || left.candidate.assetId.localeCompare(right.candidate.assetId));
 
   const selected = [];
   const selectedIds = new Set();
@@ -345,6 +368,106 @@ function selectRelatedAssetIds(record, relatedHubIds, recordByAssetId, eligibleH
     if (selected.length === 12) break;
   }
   return selected;
+}
+
+function buildPrintableAttributes(record, hubs, policy) {
+  const hubById = new Map(hubs.map((hub) => [hub.hubId, hub]));
+  const memberships = record.hubIds.map((hubId) => hubById.get(hubId)).filter(Boolean);
+  const seasonalIds = new Set(policy.seasonalHubIds);
+  const audienceIds = new Set(policy.unapprovedAudienceHubIds);
+  const detailIds = new Set(policy.unapprovedDetailHubIds);
+  const pureStyleIds = new Set(policy.pureStyleHubIds);
+  const excludedSubjects = new Set([...policy.rootHubIds, ...seasonalIds, ...audienceIds, ...detailIds, ...pureStyleIds]);
+  const subjects = memberships
+    .filter((hub) => !excludedSubjects.has(hub.hubId))
+    .sort((left, right) => left.assetCount - right.assetCount || left.hubId.localeCompare(right.hubId));
+  const leafSubjects = subjects.filter((hub) => !hub.childHubIds?.some((childId) => record.hubIds.includes(childId)));
+  const narrowSubject = leafSubjects[0] || null;
+  const styles = [...new Set(memberships.flatMap((hub) => {
+    const rule = policy.styleHubRules.find((entry) => hub.hubId.startsWith(entry.prefix));
+    return rule ? [rule.value] : [];
+  }))].sort();
+  const seasonal = memberships.filter((hub) => seasonalIds.has(hub.hubId)).map(hubLabel).sort();
+  const audienceCandidates = memberships.filter((hub) => audienceIds.has(hub.hubId)).map(hubLabel).sort();
+  const detailCandidates = memberships.filter((hub) => detailIds.has(hub.hubId)).map(hubLabel).sort();
+  const primaryHub = required(hubById.get(record.primaryHubId), `Missing primary hub for attributes: ${record.assetId}`);
+  const additionalCollections = memberships
+    .filter((hub) => hub.hubId !== policy.rootHubIds[0] && hub.hubId !== record.primaryHubId)
+    .map((hub) => ({ hubId: hub.hubId, title: hub.title, route: hub.route }));
+  const orientation = record.width && record.height
+    ? record.width > record.height ? "landscape" : record.width < record.height ? "portrait" : "square"
+    : null;
+  const patternFocused = memberships.some((hub) => policy.patternHubIds.includes(hub.hubId)) ? true : null;
+  const primarySubject = subjects[0] ? hubLabel(subjects[0]) : null;
+  const narrowSubjectCategory = narrowSubject ? hubLabel(narrowSubject) : null;
+  const hasMeaningfulSummaryEvidence = Boolean(
+    narrowSubjectCategory || patternFocused || styles.length || seasonal.length,
+  );
+  const summary = hasMeaningfulSummaryEvidence
+    ? buildAttributeSummary({ orientation, subject: narrowSubjectCategory || primarySubject, styles, patternFocused, seasonal })
+    : null;
+  const metadataReviewRequired = audienceCandidates.length > 0 || detailCandidates.length > 0;
+  return {
+    primarySubject,
+    secondarySubjects: subjects.slice(1).map(hubLabel),
+    narrowSubjectCategory,
+    styles,
+    patternFocused,
+    seasonalClassifications: seasonal,
+    orientation,
+    sourceDimensions: record.width && record.height ? { width: record.width, height: record.height } : null,
+    artworkDimensions: record.artworkWidth && record.artworkHeight ? { width: record.artworkWidth, height: record.artworkHeight } : null,
+    printLayout: { ...policy.printLayout },
+    detailClassification: null,
+    audienceClassification: null,
+    unapprovedDetailCandidates: detailCandidates,
+    unapprovedAudienceCandidates: audienceCandidates,
+    primaryCollection: { hubId: primaryHub.hubId, title: primaryHub.title, route: primaryHub.route },
+    additionalCollections,
+    serverAvailableFormats: [...policy.serverAdvertisedFormats],
+    browserConditionalFormats: [...policy.browserConditionalFormats],
+    principalImageRole: "public-webp-preview",
+    editorialReviewStatus: metadataReviewRequired ? "metadata-review-required" : "verified-attributes-only",
+    summary,
+    provenance: {
+      ...(primarySubject ? { primarySubject: ["explicit_collection_assignment", "approved_taxonomy_rule"] } : {}),
+      ...(subjects.length > 1 ? { secondarySubjects: ["explicit_collection_assignment", "approved_taxonomy_rule"] } : {}),
+      ...(narrowSubjectCategory ? { narrowSubjectCategory: ["explicit_collection_assignment", "approved_taxonomy_rule"] } : {}),
+      ...(styles.length ? { styles: ["explicit_collection_assignment", "approved_taxonomy_rule"] } : {}),
+      ...(patternFocused ? { patternFocused: ["explicit_collection_assignment", "approved_taxonomy_rule"] } : {}),
+      ...(seasonal.length ? { seasonalClassifications: ["explicit_collection_assignment", "approved_taxonomy_rule"] } : {}),
+      ...(orientation ? { orientation: "computed_file_dimensions" } : {}),
+      ...(record.width && record.height ? { sourceDimensions: "computed_file_dimensions" } : {}),
+      ...(record.artworkWidth && record.artworkHeight ? { artworkDimensions: "verified_asset_capability" } : {}),
+      printLayout: "verified_asset_capability",
+      primaryCollection: "explicit_collection_assignment",
+      ...(additionalCollections.length ? { additionalCollections: "explicit_collection_assignment" } : {}),
+      serverAvailableFormats: "verified_asset_capability",
+      browserConditionalFormats: "verified_asset_capability",
+      principalImageRole: "verified_asset_capability",
+      ...(summary ? { summary: ["explicit_collection_assignment", "approved_taxonomy_rule", "computed_file_dimensions"] } : {}),
+    },
+  };
+}
+
+function buildAttributeSummary({ orientation, subject, styles, patternFocused, seasonal }) {
+  const orientationPrefix = orientation ? `${orientation} ` : "";
+  if (patternFocused) return `A ${orientationPrefix}pattern-focused printable${subject ? ` in the ${subject} collection` : ""}.`;
+  if (styles.length && subject) return `A ${orientationPrefix}${styles[0].toLowerCase()} printable in the ${subject} collection.`;
+  if (seasonal.length && subject) return `A ${orientationPrefix}printable in the ${subject} collection with an explicit ${seasonal[0]} classification.`;
+  if (subject) return `A ${orientationPrefix}printable in the ${subject} collection.`;
+  if (styles.length) return `A ${orientationPrefix}${styles[0].toLowerCase()} printable.`;
+  return null;
+}
+
+function hubLabel(hub) {
+  return hub.title.replace(/ Coloring Pages$/i, "").trim();
+}
+
+function stablePairTieBreak(left, right) {
+  const leftId = Number.parseInt(left.slice(-10), 16);
+  const rightId = Number.parseInt(right.slice(-10), 16);
+  return Math.abs(leftId - rightId).toString(16).padStart(10, "0");
 }
 
 function validateOutputs(input, outputs) {
@@ -371,7 +494,7 @@ function validateOutputs(input, outputs) {
     if (record.slugAndId !== `${record.canonicalSlug}-${record.stableId}`) throw new Error(`Invalid slugAndId: ${record.assetId}`);
     if (record.canonicalPath !== `/printables/${record.primaryCategorySlug}/${record.slugAndId}`) throw new Error(`Invalid canonicalPath: ${record.assetId}`);
     const hub = routedHubById.get(record.primaryHubId);
-    if (!hub || hub.slug !== record.primaryCategorySlug || hub.route === "/coloring-pages" || !hub.indexable || !hub.sitemap) {
+    if (!hub || hub.slug !== record.primaryCategorySlug || !hub.route || hub.route === "/coloring-pages") {
       throw new Error(`Invalid primary category: ${record.assetId}`);
     }
     const sourcePaths = assetPathById.get(record.assetId);
@@ -392,6 +515,9 @@ function validateOutputs(input, outputs) {
     if (record.publicAvailabilityStatus !== "available") throw new Error(`Invalid availability: ${record.assetId}`);
     if (!record.publicTitle || !record.displayTitle || !record.metadataTitle || !record.altText) throw new Error(`Missing title model: ${record.assetId}`);
     if (record.designNumber !== null && (!Number.isInteger(record.designNumber) || record.designNumber < 1)) throw new Error(`Invalid design number: ${record.assetId}`);
+    if (!record.attributes || record.attributes.principalImageRole !== "public-webp-preview") throw new Error(`Missing printable attribute model: ${record.assetId}`);
+    if (!record.attributes.provenance?.orientation || !record.attributes.provenance?.primaryCollection) throw new Error(`Missing attribute provenance: ${record.assetId}`);
+    if (record.attributes.audienceClassification || record.attributes.detailClassification) throw new Error(`Unapproved audience/detail attribute leaked: ${record.assetId}`);
     if (!Array.isArray(record.relatedAssetIds) || record.relatedAssetIds.length > 12) throw new Error(`Invalid related printable list: ${record.assetId}`);
     if (!Array.isArray(record.relatedHubIds) || record.relatedHubIds.length > 6) throw new Error(`Invalid related hub list: ${record.assetId}`);
     assertUnique(record.relatedAssetIds, `related printable for ${record.assetId}`);

@@ -7,12 +7,12 @@
     "note": "Thresholds create warnings only; intent and classification evidence remain required."
   },
   "summary": {
-    "retainAndIndex": 159,
-    "retainPubliclyButNoindex": 2,
+    "retainAndIndex": 160,
+    "retainPubliclyButNoindex": 3,
     "consolidateIntoAStrongerParent": 0,
     "redirectToAGenuineReplacement": 0,
     "correctCollectionMembership": 0,
-    "manualEditorialReview": 2
+    "manualEditorialReview": 0
   },
   "hubs": [
     {
@@ -1320,16 +1320,16 @@
       "collection_type": "audience or difficulty",
       "current_visible_count": 1300,
       "independently_calculated_count": 1300,
-      "sitemap_count": 1,
+      "sitemap_count": 0,
       "first_page_result_count": 48,
       "total_unique_printable_ids": 1300,
-      "indexability": "index",
-      "robots_directive": "index,follow",
-      "sitemap_inclusion": true,
+      "indexability": "noindex",
+      "robots_directive": "noindex,follow",
+      "sitemap_inclusion": false,
       "pagination_state": "28 pages",
-      "introduction_text": "The current Easy inventory emphasizes simplified character and animal designs with broad, readable shapes.",
-      "introduction_length": 106,
-      "content_template_fingerprint": "c95e04ad",
+      "introduction_text": "This collection gathers printable pages under the existing Easy label.",
+      "introduction_length": 70,
+      "content_template_fingerprint": "515dda0e",
       "fingerprint_occurrences": 1,
       "repeated_headings": "",
       "repeated_instructional_blocks": 0,
@@ -1342,8 +1342,8 @@
       "suspicious_internal_or_production_wording": "",
       "missing_or_inaccurate_description": false,
       "count_inconsistency": false,
-      "preliminary_recommendation": "manual editorial review",
-      "recommendation_reason": "The route has a distinct difficulty intent, but current metadata does not provide an independent difficulty signal; destructive membership or indexation changes remain deferred."
+      "preliminary_recommendation": "retain publicly but noindex",
+      "recommendation_reason": "The route remains public and self-canonical, but its legacy membership has no independently reviewed visual-complexity field and is wholly contained in For Kids."
     },
     {
       "internal_identifier": "hub_elephants",
@@ -1407,7 +1407,7 @@
       "representative_image": "anime-girls__anime-girl-summoning-fairy-plushies__0c86dd4c47",
       "representative_belongs_to_collection": true,
       "distinct_narrower_subcollections": 0,
-      "meaningful_internal_links": 8,
+      "meaningful_internal_links": 7,
       "distinct_user_intent_evidence": "weak filename/title evidence: 8.1% of members contain a route-subject token",
       "suspicious_internal_or_production_wording": "",
       "missing_or_inaccurate_description": false,
@@ -1642,9 +1642,9 @@
       "robots_directive": "index,follow",
       "sitemap_inclusion": true,
       "pagination_state": "28 pages",
-      "introduction_text": "Friendly animals and character-led designs make up the current child-audience collection.",
-      "introduction_length": 89,
-      "content_template_fingerprint": "59425acb",
+      "introduction_text": "Animals and character-led designs make up this broad printable collection.",
+      "introduction_length": 74,
+      "content_template_fingerprint": "d007f66c",
       "fingerprint_occurrences": 1,
       "repeated_headings": "",
       "repeated_instructional_blocks": 0,
@@ -1657,8 +1657,8 @@
       "suspicious_internal_or_production_wording": "",
       "missing_or_inaccurate_description": false,
       "count_inconsistency": false,
-      "preliminary_recommendation": "manual editorial review",
-      "recommendation_reason": "The audience route remains useful, but the present inventory is almost identical to Easy and needs future editorial classification evidence."
+      "preliminary_recommendation": "retain and index",
+      "recommendation_reason": "Preserve the established audience route and its 35 unique records without treating its collection assignment as proof of age, safety, or difficulty."
     },
     {
       "internal_identifier": "hub_forest",
@@ -1757,7 +1757,7 @@
       "representative_image": "anime-girls__anime-girl-smelling-daisies-in-garden__8e712687ca",
       "representative_belongs_to_collection": true,
       "distinct_narrower_subcollections": 0,
-      "meaningful_internal_links": 8,
+      "meaningful_internal_links": 7,
       "distinct_user_intent_evidence": "direct filename/title evidence: 53.8% of members contain a route-subject token",
       "suspicious_internal_or_production_wording": "",
       "missing_or_inaccurate_description": false,

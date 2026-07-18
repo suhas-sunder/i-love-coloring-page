@@ -27,9 +27,9 @@ test("authoritative crawl inventory counts are complete, collision-free, and bel
   assert.equal(Object.keys(routeIndex.index).length, 6352);
   assert.equal(hubs.hubs.length, 163);
   assert.equal(publicRoutes.routes.length, 163);
-  assert.equal(paginationCount, 389);
+  assert.equal(paginationCount, 362);
   assert.equal(trustCount, 6);
-  assert.equal(expectedRegularSitemapCount, 6521);
+  assert.equal(expectedRegularSitemapCount, 6520);
   assert.equal(expectedRegularSitemapCount < 45_000, true);
 
   const printablePaths = printables.records.map((record) => record.canonicalPath);
@@ -62,7 +62,7 @@ test("regular sitemap consumes only the central inventory and omits invented fre
 });
 
 test("valid pagination stays static, self-canonical, linked, indexable, and outside the XML sitemap", async () => {
-  assert.equal(paginationCount, 389);
+  assert.equal(paginationCount, 362);
   const page = await readText("app/coloring-pages/[hubSlug]/page/[page]/page.tsx");
   const pagination = await readText("src/components/coloring/Pagination.tsx");
   const inventory = await readText("src/lib/seo/routeInventory.ts");

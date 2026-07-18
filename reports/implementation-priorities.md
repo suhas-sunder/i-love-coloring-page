@@ -3,20 +3,20 @@
 ## P0 — correctness, crawlability, broken rendering, production defects
 
 - Preserve the completed printable preview, SSR parity, count, cache, asset-role, revision-diagnostic, and advertising-mode foundations.
-- Complete raw-HTML and hydrated-browser acceptance for the corrected hub route matrix before any deployment.
+- Completed locally: raw HTML, hydrated printable, Easy/For Kids, trust-page, desktop navigation, and 390-pixel mobile search/menu acceptance.
 - Keep the existing owner/legal/account readiness gate blocking production until its nine external decisions are resolved.
 
 ## P1 — indexation, duplication, collection architecture
 
 - Completed: corrected Detailed Adults/Mandalas/Geometric membership and the parent cycle.
 - Completed: activated evidence-backed Birthday Celebration and Woolly Mammoth consolidation handling without redirects.
-- Next data decision: add independently reviewed audience/difficulty evidence before changing Easy or Coloring Pages for Kids.
+- Completed: resolved Easy as public/noindex and For Kids as retain/index without inventing per-record audience or difficulty facts.
 
 ## P2 — differentiated hub content and printable metadata
 
 - Completed: explicit, reviewable editorial records and unique concise introductions for all 163 public hubs.
 - Completed: removed visitor-visible production wording and generic hub instruction blocks.
-- Deferred: define an evidence-based printable differentiation model before changing 6,352 printable descriptions. Do not mass-generate prose.
+- Completed: added a provenance-backed printable attribute model, structured details, and optional factual summaries without mass-generated prose.
 
 ## P3 — navigation, cards, mobile search, and visual refinement
 

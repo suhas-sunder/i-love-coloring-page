@@ -3,10 +3,9 @@ import Link from "next/link";
 import { PageAdSlot } from "@/components/ads/PageAdSlot";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { PublicPageShell } from "@/components/site/PublicPageShell";
-import { SupportingInformation } from "@/components/site/SupportingInformation";
 import { resolvePrintableAssetSources } from "@/lib/coloring/assets";
 import { getPrintablePrimaryHub, getRelatedPrintableHubs, getRelatedPrintables } from "@/lib/coloring/printables";
-import { buildPrintableDescription, getPrintableTitleModel } from "@/lib/coloring/printableTitles";
+import { getPrintableSummary, getPrintableTitleModel } from "@/lib/coloring/printableTitles";
 import type { PublicColoringItem, RuntimePrintable } from "@/lib/coloring/types";
 import { getCollectionCount } from "@/lib/coloring/collectionCounts";
 
@@ -22,9 +21,8 @@ export function PrintableDetailPage({ printable }: { printable: RuntimePrintable
   const relatedHubs = getRelatedPrintableHubs(printable, 6);
   const item = toPublicItem(printable);
   const assetSources = resolvePrintableAssetSources(printable);
-  const orientation = printable.width && printable.height
-    ? printable.width > printable.height ? "Landscape" : printable.width === printable.height ? "Square" : "Portrait"
-    : null;
+  const summary = getPrintableSummary(printable);
+  const attributes = printable.attributes;
 
   return (
     <PublicPageShell pageFamily="printable" className="printable-detail-page">
@@ -40,7 +38,7 @@ export function PrintableDetailPage({ printable }: { printable: RuntimePrintable
 
       <header className="printable-heading">
         <h1 className="page-title page-title-wide">{displayTitle}</h1>
-        <p>{buildPrintableDescription(printable)}</p>
+        {summary ? <p>{summary}</p> : null}
       </header>
 
       <PageAdSlot pageFamily="printable" placement="post-header-banner" />
@@ -64,13 +62,19 @@ export function PrintableDetailPage({ printable }: { printable: RuntimePrintable
         </div>
         <aside className="printable-action-panel" aria-label="Print and download options">
           <PrintableDetailActions item={item} internalSvgUrl={assetSources.fullResolutionArtwork.url} pngPreviewUrl={null} />
-          <dl className="printable-facts">
+          <h2 className="printable-details-title">Page details</h2>
+          <dl className="printable-facts" data-printable-details>
             <div><dt>Collection</dt><dd><Link href={primaryHub.route}>{primaryHub.title}</Link></dd></div>
-            <div><dt>Formats</dt><dd>PNG, JPG, WebP</dd></div>
-            {orientation ? <div><dt>Orientation</dt><dd>{orientation}</dd></div> : null}
-            <div><dt>Preview</dt><dd>{assetSources.principalPreview.width} × {assetSources.principalPreview.height} px</dd></div>
+            {attributes.narrowSubjectCategory ? <div><dt>Subject</dt><dd>{attributes.narrowSubjectCategory}</dd></div> : null}
+            {attributes.styles.length ? <div><dt>Style</dt><dd>{attributes.styles.join(", ")}</dd></div> : null}
+            {attributes.seasonalClassifications.length ? <div><dt>Occasion</dt><dd>{attributes.seasonalClassifications.join(", ")}</dd></div> : null}
+            {attributes.orientation ? <div><dt>Orientation</dt><dd>{capitalize(attributes.orientation)}</dd></div> : null}
+            {attributes.artworkDimensions ? <div><dt>Artwork size</dt><dd>{attributes.artworkDimensions.width} × {attributes.artworkDimensions.height} px</dd></div> : null}
           </dl>
-          <p className="utility-note">Print uses a branded Letter-size page. Downloads are prepared in your browser.</p>
+          <details className="printable-help">
+            <summary>Printing and downloads</summary>
+            <p>Print prepares a Letter-size page. Download options appear only when the browser can create that file type.</p>
+          </details>
         </aside>
       </section>
 
@@ -93,18 +97,12 @@ export function PrintableDetailPage({ printable }: { printable: RuntimePrintable
         </section>
       ) : null}
 
-      <SupportingInformation
-        pageFamily="printable"
-        id="printing-guidance"
-        title="Printing this coloring page"
-        intro="The preview remains paired with its Print and Download controls; the guidance below does not interrupt that task."
-        sections={[
-          { title: "Print the prepared page", body: "Use Print for the branded Letter layout. Check printer scaling and choose fit-to-page when needed." },
-          { title: "Choose a download", body: "PNG and JPG use the prepared page composition, while WebP provides the artwork-oriented image." },
-        ]}
-      />
     </PublicPageShell>
   );
+}
+
+function capitalize(value: string) {
+  return value.charAt(0).toUpperCase() + value.slice(1);
 }
 
 function toPublicItem(printable: RuntimePrintable): PublicColoringItem {

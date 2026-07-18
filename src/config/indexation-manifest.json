@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "reviewedOn": "2026-07-18",
   "activated": true,
-  "note": "Runtime taxonomy policy v2 consumes resolved decisions. Easy and For Kids remain explicitly unactivated pending independent difficulty/audience classification evidence.",
+  "note": "Runtime taxonomy policy v2 consumes resolved decisions. Easy remains public but noindex pending reviewed complexity evidence; For Kids remains indexable without per-record age, safety, or difficulty claims.",
   "allowedRecommendations": [
     "retain and index",
     "retain publicly but noindex",
@@ -496,15 +496,15 @@
     {
       "hubId": "hub_easy",
       "route": "/coloring-pages/easy",
-      "currentIndexable": true,
-      "currentSitemapInclusion": true,
-      "recommendation": "manual editorial review",
+      "currentIndexable": false,
+      "currentSitemapInclusion": false,
+      "recommendation": "retain publicly but noindex",
       "consolidationTarget": null,
       "redirectTarget": null,
-      "proposedSitemapInclusion": true,
-      "rationale": "The route has a distinct difficulty intent, but current metadata does not provide an independent difficulty signal; destructive membership or indexation changes remain deferred.",
+      "proposedSitemapInclusion": false,
+      "rationale": "The route remains public and self-canonical, but its legacy membership has no independently reviewed visual-complexity field and is wholly contained in For Kids.",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_elephants",
@@ -615,13 +615,13 @@
       "route": "/coloring-pages/for-kids",
       "currentIndexable": true,
       "currentSitemapInclusion": true,
-      "recommendation": "manual editorial review",
+      "recommendation": "retain and index",
       "consolidationTarget": null,
       "redirectTarget": null,
       "proposedSitemapInclusion": true,
-      "rationale": "The audience route remains useful, but the present inventory is almost identical to Easy and needs future editorial classification evidence.",
+      "rationale": "Preserve the established audience route and its 35 unique records without treating its collection assignment as proof of age, safety, or difficulty.",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_forest",
