@@ -8,12 +8,12 @@ This is a factual local readiness review. It does not certify legal compliance o
 
 | Route | H1 count | Logical ad slots | Last updated | Result |
 | --- | ---: | ---: | --- | --- |
-| /about | 1 | 1 | Not displayed | Pass |
-| /contact | 1 | 1 | Not displayed | Pass |
-| /privacy | 1 | 1 | July 15, 2026 | Pass |
-| /terms | 1 | 1 | July 15, 2026 | Pass |
-| /affiliate-disclosure | 1 | 1 | July 15, 2026 | Pass |
-| /editorial-policy | 1 | 1 | July 15, 2026 | Pass |
+| /about | 1 | 0 | Not displayed | Pass |
+| /contact | 1 | 0 | Not displayed | Pass |
+| /privacy | 1 | 0 | July 15, 2026 | Pass |
+| /terms | 1 | 0 | July 15, 2026 | Pass |
+| /affiliate-disclosure | 1 | 0 | July 15, 2026 | Pass |
+| /editorial-policy | 1 | 0 | July 15, 2026 | Pass |
 
 The verified public contact is admin@ilovecoloringpage.com. Metadata titles and descriptions are unique, canonicals are self-referencing, footer links remain, and all six trust routes remain indexable and sitemap-eligible.
 
@@ -23,7 +23,7 @@ The verified public contact is admin@ilovecoloringpage.com. Metadata titles and 
 | --- | --- | --- | --- | --- |
 | assets.ilovecoloringpage.com | Required site asset delivery | gallery, home, hub, hub-pagination, printable | Yes | No |
 
-Search-data requests are same-origin and begin only after search intent. Fonts are emitted as same-origin static assets. Schema.org URLs are structured-data identifiers, not browser requests. No live advertising, analytics, consent-management, affiliate-tracking, or site-cookie code was found in active source or representative static output.
+Search-data requests are same-origin and begin only after search intent. Fonts are emitted as same-origin static assets. Schema.org URLs are structured-data identifiers, not browser requests. Advertising mode is OFF in the representative static output; no ad script, label, container, or reserved space is emitted. No analytics, consent-management, affiliate-tracking, or site-cookie code was found in active source or representative static output.
 
 ## Audience and age-treatment review
 
@@ -40,37 +40,37 @@ Search-data requests are same-origin and begin only after search intent. Fonts a
 
 No legal audience classification is made. The owner and qualified reviewer must decide treatment before live advertising or interactive collection is enabled.
 
-## Placeholder placement and density
+## Advertisement placement and density
 
 | Page family | Logical slots | Layout | Meaningful publisher content |
 | --- | ---: | --- | --- |
-| homepage | 6 | full | Yes |
-| main-gallery | 6 | full | Yes |
-| hub-page-one | 6 | full | Yes |
-| hub-pagination | 3 | condensed | Yes |
-| printable-detail | 6 | full | Yes |
-| trust-page | 1 | condensed | Yes |
-| human-sitemap | 1 | condensed | Yes |
+| homepage | 0 | full | Yes |
+| main-gallery | 0 | full | Yes |
+| hub-page-one | 0 | full | Yes |
+| hub-pagination | 0 | condensed | Yes |
+| printable-detail | 0 | full | Yes |
+| trust-page | 0 | condensed | Yes |
+| human-sitemap | 0 | condensed | Yes |
 | static-404 | 0 | none | No |
 
 | Viewport | Full-page visible slots | Condensed visible slots | Reserved pixel area | Publisher-content area proxy |
 | --- | ---: | ---: | ---: | ---: |
-| 320x800 | 1 | 1 | 16,000 | 256,000 |
-| 360x800 | 1 | 1 | 16,000 | 288,000 |
-| 430x932 | 1 | 1 | 16,000 | 400,760 |
-| 768x1024 | 1 | 1 | 28,080 | 786,432 |
-| 1366x900 | 1 | 1 | 65,520 | 1,229,400 |
-| 1536x960 | 3 | 1 | 204,720 | 1,474,560 |
-| 1920x1080 | 3 | 1 | 257,520 | 2,073,600 |
+| 320x800 | 0 | 0 | 0 | 256,000 |
+| 360x800 | 0 | 0 | 0 | 288,000 |
+| 430x932 | 0 | 0 | 0 | 400,760 |
+| 768x1024 | 0 | 0 | 0 | 786,432 |
+| 1366x900 | 0 | 0 | 0 | 1,229,400 |
+| 1536x960 | 0 | 0 | 0 | 1,474,560 |
+| 1920x1080 | 0 | 0 | 0 | 2,073,600 |
 
-The area proxy uses the viewport as a conservative lower bound; representative full documents contain additional content below the fold. Print and Download controls remain separated from placeholders. Trust pages and the human sitemap retain one top-only logical well. The 404 route has none.
+OFF mode reserves no advertising area. Print and Download controls remain free of ad containers. The 404 route has no ad placement.
 
 ## Account readiness
 
 - Live advertising scripts: absent
 - Publisher ID and ad-unit IDs: absent
 - Verification tag: absent
-- ads.txt: absent by design until the account supplies the exact line
+- ads.txt: present; verify its account-provided contents before live activation
 - CMP and Consent Mode: absent
 - Age-treatment decision: not recorded
 - Affiliate tracking: absent
@@ -106,13 +106,13 @@ The area proxy uses the viewport as a conservative lower bound; representative f
 ## Counts and preservation
 
 - Runtime printables: 6,352
-- Public hubs: 163
-- Pagination routes: 451
-- Regular sitemap URLs: 6,523
+- Public hubs: 161
+- Pagination routes: 389
+- Regular sitemap URLs: 6,521
 - Image sitemap pairs: 6,352
-- Static outputs: 6,979
+- Static outputs: 6,920
 - Frozen route-field hash: c9f0fc577efe9e616d46720d8a8cd84ae3fa110f5d948f3d7601bf9faca61c89
-- Hub-membership hash: b07b6a7cf043434fcd49a55b9e3cdf0d4a54eda5b88bb306cd991fc2749ebcee
+- Hub-membership hash: 7f89fd63041dc99deee32f1eec9e4769e38318673225792cc7493469d8d538d5
 
 ## Owner command
 

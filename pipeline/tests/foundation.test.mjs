@@ -40,12 +40,15 @@ test("runtime routes, hubs, sitemap inputs, and pagination are derived consisten
 
   assert.equal(hubs.hubs.length, hubs.summary.hubCount);
   assert.equal(routes.routes.length, routes.summary.routeCount);
-  assert.equal(siteMap.entries.length, hubs.hubs.length);
+  assert.equal(siteMap.entries.length, hubs.hubs.filter((hub) => hub.sitemap).length);
   assert.equal(paginatedRouteCount > 0, true);
   assert.equal(new Set(routes.routes.map((route) => route.path)).size, routes.routes.length);
   assert.equal(new Set(siteMap.entries.map((entry) => entry.path)).size, siteMap.entries.length);
   for (const hub of hubs.hubs) assert.equal(routedHubIds.has(hub.hubId), true, hub.hubId);
-  for (const route of routes.routes) assert.equal(sitemapPaths.has(route.path), true, route.path);
+  for (const route of routes.routes) {
+    const hub = hubs.hubs.find((candidate) => candidate.hubId === route.hubId);
+    assert.equal(sitemapPaths.has(route.path), hub.sitemap, route.path);
+  }
 });
 
 test("runtime hub membership and search data exclude deferred records", () => {

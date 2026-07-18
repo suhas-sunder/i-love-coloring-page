@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-05-14T23:46:55.619Z",
-  "runId": "runtime-switch-hub-featured-items+long-tail+long-tail+long-tail+long-tail+long-tail+long-tail+long-tail-round-2",
+  "runId": "runtime-featured-hub-architecture-v2",
   "summary": {
     "hubCount": 163,
     "maxFeaturedItemsPerHub": 12,
@@ -696,20 +696,20 @@
       "hubId": "hub_geometric",
       "slug": "geometric",
       "title": "Geometric Coloring Pages",
-      "assetCount": 1457,
+      "assetCount": 55,
       "assetIds": [
-        "mandala__mandala-geometry-patterns-animal-mandala-fox__3e8e80a2fd",
         "mandala-geometry-patterns__mandala-geometry-patterns-abstract-mandala__29dbb1eecf",
-        "mandala__mandala-geometry-patterns-hindu-mandala__fc5ca81596",
-        "mandala__mandala-geometry-patterns-celestial-mandala__84d5358083",
-        "mandala__mandala-geometry-patterns-nature-mandala__89a2f93a25",
         "mandala__mandala-geometry-patterns-geometric-mandala__3369a57b28",
-        "mandala-geometry-patterns__mandala-geometry-patterns-bakery-apple-pie__572ed1fcfb",
-        "mandala__mandala-geometry-patterns-psychedelic-mandala__9b152d5112",
-        "mandala-geometry-patterns__mandala-geometry-patterns-bald-eagle__cd94a6a15f",
-        "mandala-geometry-patterns__mandala-geometry-patterns-bakery-wedding-cake__f6db51bfb8",
-        "mandala-geometry-patterns__mandala-geometry-patterns-buddhist-mandala__8e4e5ac1a0",
-        "mandala-geometry-patterns__mandala-geometry-patterns-abstract-shapes__96fa3013f6"
+        "mandala-geometry-patterns__mandala-geometry-patterns-abstract-shapes__96fa3013f6",
+        "mandala-geometry-patterns__mandala-geometry-patterns-bakery-rolling-pin-patterned__93634ab8bd",
+        "mandala-geometry-patterns__mandala-geometry-patterns-bald-eagle-face-patterns__74e6423cc2",
+        "mandala-geometry-patterns__mandala-geometry-patterns-butterfly-face-patterns__7fdbdb0cde",
+        "mandala-geometry-patterns__mandala-geometry-patterns-chameleon-face-patterns__34103ddf91",
+        "mandala-geometry-patterns__mandala-geometry-patterns-cobra-face-patterns__3abc17f967",
+        "mandala-geometry-patterns__mandala-geometry-patterns-crocodile-face-patterns__e2f1666318",
+        "mandala-geometry-patterns__mandala-geometry-patterns-dolphin-face-patterns__a2788fe8a9",
+        "mandala-geometry-patterns__mandala-geometry-patterns-dragonfly-patterns__d30f3769c4",
+        "mandala-geometry-patterns__mandala-geometry-patterns-elephant-face-patterns__b126735965"
       ],
       "warningFlagsPreservedInternally": true,
       "selectionRule": "deterministic score using existing featured assets, preview assets, hub membership, useful tags, and title variety"
@@ -872,7 +872,7 @@
       "hubId": "hub_mandalas",
       "slug": "mandalas",
       "title": "Mandalas Coloring Pages",
-      "assetCount": 1459,
+      "assetCount": 23,
       "assetIds": [
         "mandala__mandala-geometry-patterns-animal-mandala-fox__3e8e80a2fd",
         "mandala-geometry-patterns__mandala-geometry-patterns-abstract-mandala__29dbb1eecf",
@@ -882,10 +882,10 @@
         "mandala__mandala-geometry-patterns-nature-mandala__89a2f93a25",
         "st-patricks-day__st-patricks-day-shamrock-mandala-pattern-coloring-page__8993f17565",
         "mandala__mandala-geometry-patterns-geometric-mandala__3369a57b28",
-        "mandala-geometry-patterns__mandala-geometry-patterns-bakery-apple-pie__572ed1fcfb",
-        "mandala-geometry-patterns__mandala-geometry-patterns-bakery-baguette__f3931efe05",
-        "mandala-geometry-patterns__mandala-geometry-patterns-bakery-baker-hat__85eb9a820b",
-        "mandala-geometry-patterns__mandala-geometry-patterns-abstract-shapes__96fa3013f6"
+        "mandala-geometry-patterns__mandala-geometry-patterns-buddhist-mandala__8e4e5ac1a0",
+        "mandala-geometry-patterns__mandala-geometry-patterns-cosmic-mandala__62b4f45277",
+        "mandala-geometry-patterns__mandala-geometry-patterns-heart-mandala__fdb693495b",
+        "mandala-geometry-patterns__mandala-geometry-patterns-japan-cherry-blossom-park-mandala-mascot__7fd35519ca"
       ],
       "warningFlagsPreservedInternally": true,
       "selectionRule": "deterministic score using existing featured assets, preview assets, hub membership, useful tags, and title variety"

@@ -1,7 +1,6 @@
-import Link from "next/link";
-
 import type { ColoringHub } from "@/lib/coloring/types";
-import { getCollectionCount } from "@/lib/coloring/collectionCounts";
+
+import { HubCard } from "./HubCard";
 
 type RelatedHubsProps = {
   title: string;
@@ -17,12 +16,9 @@ export function RelatedHubs({ title, hubs, id = "related-collections" }: Related
       <div className="section-heading-row">
         <h2 className="section-title">{title}</h2>
       </div>
-      <div className="related-list">
+      <div className="hub-link-grid hub-link-grid-compact">
         {hubs.map((hub) => (
-          <Link className="related-link" href={hub.route} key={hub.hubId} prefetch={false}>
-            <span className="related-link-label">{hub.title.replace(/ Coloring Pages$/, "")}</span>
-            <strong className="related-link-count">{getCollectionCount(hub).toLocaleString()} pages</strong>
-          </Link>
+          <HubCard hub={hub} compact key={hub.hubId} />
         ))}
       </div>
     </section>

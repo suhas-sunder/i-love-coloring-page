@@ -1,11 +1,26 @@
 {
-  "version": 1,
+  "version": 2,
   "homepageMinimumAssets": 48,
   "navigationMinimumAssets": 24,
   "thinHubMaximumAssets": 11,
   "maximumThinHubsPerRelatedList": 1,
   "thinHubRequiresDirectMembership": true,
   "parentOverrides": [
+    {
+      "hubId": "hub_detailed_for_adults",
+      "previousParentHubId": "hub_mandalas",
+      "parentHubId": "hub_coloring_pages"
+    },
+    {
+      "hubId": "hub_mandalas",
+      "previousParentHubId": "hub_detailed_for_adults",
+      "parentHubId": "hub_detailed_for_adults"
+    },
+    {
+      "hubId": "hub_geometric",
+      "previousParentHubId": "hub_detailed_for_adults",
+      "parentHubId": "hub_detailed_for_adults"
+    },
     {
       "hubId": "hub_bridges",
       "previousParentHubId": "hub_landmarks",
@@ -22,20 +37,72 @@
       "parentHubId": "hub_indoor_plants"
     }
   ],
-  "promotionClusters": [
+  "membershipCorrections": [
     {
-      "id": "adult-style",
-      "preferredHubId": "hub_detailed_for_adults",
-      "hubIds": [
-        "hub_detailed_for_adults",
-        "hub_mandalas",
-        "hub_geometric"
-      ],
-      "exactDuplicateHubIds": [
-        "hub_detailed_for_adults",
-        "hub_mandalas"
-      ]
+      "hubId": "hub_detailed_for_adults",
+      "selector": "existing-source-category",
+      "rationale": "The source category is the verified broad detailed-design inventory; its narrower Mandalas and Geometric children are selected from descriptive record identifiers."
     },
+    {
+      "hubId": "hub_mandalas",
+      "selector": "descriptive-term:mandala",
+      "rationale": "Only records whose descriptive identifier explicitly contains mandala belong in the Mandalas subject/style hub."
+    },
+    {
+      "hubId": "hub_geometric",
+      "selector": "descriptive-pattern-terms",
+      "rationale": "Only records with explicit geometry, pattern, abstract, kaleidoscope, fractal, spiral, or Celtic-knot evidence belong in Geometric."
+    }
+  ],
+  "indexationDecisions": [
+    {
+      "hubId": "hub_birthday_celebration",
+      "indexable": false,
+      "sitemap": false,
+      "consolidationTargetHubId": "hub_birthday",
+      "rationale": "All 190 records already belong to Birthday; the variant contributes no unique printable and remains available as a crawlable, self-canonical public URL."
+    },
+    {
+      "hubId": "hub_woolly_mammoth",
+      "indexable": false,
+      "sitemap": false,
+      "consolidationTargetHubId": "hub_mammoths",
+      "rationale": "All 19 records already belong to Mammoths; the singular variant contributes no unique printable and remains available as a crawlable, self-canonical public URL."
+    }
+  ],
+  "manualReviewResolutions": [
+    {
+      "hubId": "hub_dinosaurs",
+      "action": "retain and index",
+      "rationale": "The inventory is the dinosaur subset of the broader Prehistoric Animals hub."
+    },
+    {
+      "hubId": "hub_prehistoric_animals",
+      "action": "retain and index",
+      "rationale": "The broader hub adds 31 extinct-animal records, including mammoths and saber-toothed tigers."
+    },
+    {
+      "hubId": "hub_robots",
+      "action": "retain and index",
+      "rationale": "All nine records have direct robot subject evidence."
+    },
+    {
+      "hubId": "hub_roses",
+      "action": "retain and index",
+      "rationale": "All nine records have direct rose subject evidence, including stylized and origami forms."
+    },
+    {
+      "hubId": "hub_easy",
+      "action": "retain current safe state",
+      "rationale": "The route has a distinct difficulty intent, but current metadata does not provide an independent difficulty signal; destructive membership or indexation changes remain deferred."
+    },
+    {
+      "hubId": "hub_for_kids",
+      "action": "retain current safe state",
+      "rationale": "The audience route remains useful, but the present inventory is almost identical to Easy and needs future editorial classification evidence."
+    }
+  ],
+  "promotionClusters": [
     {
       "id": "audience-difficulty",
       "preferredHubId": "hub_for_kids",
@@ -47,29 +114,23 @@
     {
       "id": "mammoth",
       "preferredHubId": "hub_mammoths",
-      "hubIds": [
-        "hub_mammoths",
-        "hub_woolly_mammoth"
-      ]
+      "hubIds": ["hub_mammoths", "hub_woolly_mammoth"]
     },
     {
       "id": "birthday",
       "preferredHubId": "hub_birthday",
-      "hubIds": [
-        "hub_birthday",
-        "hub_birthday_celebration"
-      ]
+      "hubIds": ["hub_birthday", "hub_birthday_celebration"]
     }
   ],
   "preservationBaseline": {
     "runtimePrintableCount": 6352,
     "publicHubCount": 163,
-    "paginationRouteCount": 451,
-    "regularSitemapUrlCount": 6523,
+    "paginationRouteCount": 389,
+    "regularSitemapUrlCount": 6521,
     "imageSitemapPairCount": 6352,
-    "staticOutputCount": 6979,
+    "staticOutputCount": 6920,
     "canonicalRouteFieldsSha256": "c9f0fc577efe9e616d46720d8a8cd84ae3fa110f5d948f3d7601bf9faca61c89",
-    "hubMembershipSha256": "b07b6a7cf043434fcd49a55b9e3cdf0d4a54eda5b88bb306cd991fc2749ebcee"
+    "hubMembershipSha256": "7f89fd63041dc99deee32f1eec9e4769e38318673225792cc7493469d8d538d5"
   },
   "thinHubExposureBaseline": {
     "ankylosaurus": 11,

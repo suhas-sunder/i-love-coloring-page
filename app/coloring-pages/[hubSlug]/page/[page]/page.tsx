@@ -34,6 +34,7 @@ export async function generateMetadata({ params }: HubPaginationPageProps): Prom
     canonicalPath: path,
     fallbackTitle: hub.metaTitle,
     fallbackDescription: hub.metaDescription,
+    indexable: hub.indexable,
   });
 }
 

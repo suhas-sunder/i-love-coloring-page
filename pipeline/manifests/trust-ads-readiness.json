@@ -13,7 +13,7 @@
       "lastUpdated": null,
       "contactExpected": false,
       "contactEmailPresent": false,
-      "logicalAdvertisementSlots": 1,
+      "logicalAdvertisementSlots": 0,
       "findings": {
         "visibleDraftLanguage": false,
         "placeholderContact": false,
@@ -40,7 +40,7 @@
       "lastUpdated": null,
       "contactExpected": true,
       "contactEmailPresent": true,
-      "logicalAdvertisementSlots": 1,
+      "logicalAdvertisementSlots": 0,
       "findings": {
         "visibleDraftLanguage": false,
         "placeholderContact": false,
@@ -67,7 +67,7 @@
       "lastUpdated": "July 15, 2026",
       "contactExpected": true,
       "contactEmailPresent": true,
-      "logicalAdvertisementSlots": 1,
+      "logicalAdvertisementSlots": 0,
       "findings": {
         "visibleDraftLanguage": false,
         "placeholderContact": false,
@@ -94,7 +94,7 @@
       "lastUpdated": "July 15, 2026",
       "contactExpected": true,
       "contactEmailPresent": true,
-      "logicalAdvertisementSlots": 1,
+      "logicalAdvertisementSlots": 0,
       "findings": {
         "visibleDraftLanguage": false,
         "placeholderContact": false,
@@ -121,7 +121,7 @@
       "lastUpdated": "July 15, 2026",
       "contactExpected": true,
       "contactEmailPresent": true,
-      "logicalAdvertisementSlots": 1,
+      "logicalAdvertisementSlots": 0,
       "findings": {
         "visibleDraftLanguage": false,
         "placeholderContact": false,
@@ -148,7 +148,7 @@
       "lastUpdated": "July 15, 2026",
       "contactExpected": true,
       "contactEmailPresent": true,
-      "logicalAdvertisementSlots": 1,
+      "logicalAdvertisementSlots": 0,
       "findings": {
         "visibleDraftLanguage": false,
         "placeholderContact": false,
@@ -193,8 +193,8 @@
     "findingCount": 0
   },
   "adsTxtStatus": {
-    "present": false,
-    "findingCount": 0
+    "present": true,
+    "findingCount": 2
   },
   "ageTreatmentDecisionStatus": {
     "decided": false,
@@ -212,106 +212,70 @@
         "family": "homepage",
         "route": "/",
         "expectedLayout": "full",
-        "expectedLogicalSlots": 6,
-        "actualLogicalSlots": 6,
-        "uniqueLogicalSlots": 6,
-        "slotIds": [
-          "home-header-banner",
-          "rail-left-desktop",
-          "rail-right-desktop",
-          "home-after-hero",
-          "home-supporting-square",
-          "home-lower-content"
-        ],
+        "expectedLogicalSlots": 0,
+        "actualLogicalSlots": 0,
+        "uniqueLogicalSlots": 0,
+        "slotIds": [],
         "meaningfulPublisherContent": true
       },
       {
         "family": "main-gallery",
         "route": "/coloring-pages",
         "expectedLayout": "full",
-        "expectedLogicalSlots": 6,
-        "actualLogicalSlots": 6,
-        "uniqueLogicalSlots": 6,
-        "slotIds": [
-          "coloring-pages-header-banner",
-          "rail-left-desktop",
-          "rail-right-desktop",
-          "coloring-pages-after-featured",
-          "coloring-pages-supporting-square",
-          "coloring-pages-lower-content"
-        ],
+        "expectedLogicalSlots": 0,
+        "actualLogicalSlots": 0,
+        "uniqueLogicalSlots": 0,
+        "slotIds": [],
         "meaningfulPublisherContent": true
       },
       {
         "family": "hub-page-one",
         "route": "/coloring-pages/animals",
         "expectedLayout": "full",
-        "expectedLogicalSlots": 6,
-        "actualLogicalSlots": 6,
-        "uniqueLogicalSlots": 6,
-        "slotIds": [
-          "hub-header-banner",
-          "rail-left-desktop",
-          "rail-right-desktop",
-          "hub-post-header-banner",
-          "hub-supporting-square",
-          "hub-lower-content"
-        ],
+        "expectedLogicalSlots": 0,
+        "actualLogicalSlots": 0,
+        "uniqueLogicalSlots": 0,
+        "slotIds": [],
         "meaningfulPublisherContent": true
       },
       {
         "family": "hub-pagination",
         "route": "/coloring-pages/animals/page/2",
         "expectedLayout": "condensed",
-        "expectedLogicalSlots": 3,
-        "actualLogicalSlots": 3,
-        "uniqueLogicalSlots": 3,
-        "slotIds": [
-          "hub-header-banner",
-          "hub-post-header-banner",
-          "hub-after-gallery"
-        ],
+        "expectedLogicalSlots": 0,
+        "actualLogicalSlots": 0,
+        "uniqueLogicalSlots": 0,
+        "slotIds": [],
         "meaningfulPublisherContent": true
       },
       {
         "family": "printable-detail",
         "route": "/printables/animals/animals-alligator-4feec8505a",
         "expectedLayout": "full",
-        "expectedLogicalSlots": 6,
-        "actualLogicalSlots": 6,
-        "uniqueLogicalSlots": 6,
-        "slotIds": [
-          "printable-header-banner",
-          "rail-left-desktop",
-          "rail-right-desktop",
-          "printable-post-header-banner",
-          "printable-after-related",
-          "printable-supporting-square"
-        ],
+        "expectedLogicalSlots": 0,
+        "actualLogicalSlots": 0,
+        "uniqueLogicalSlots": 0,
+        "slotIds": [],
         "meaningfulPublisherContent": true
       },
       {
         "family": "trust-page",
         "route": "/privacy",
         "expectedLayout": "condensed",
-        "expectedLogicalSlots": 1,
-        "actualLogicalSlots": 1,
-        "uniqueLogicalSlots": 1,
-        "slotIds": [
-          "trust-header-banner"
-        ],
+        "expectedLogicalSlots": 0,
+        "actualLogicalSlots": 0,
+        "uniqueLogicalSlots": 0,
+        "slotIds": [],
         "meaningfulPublisherContent": true
       },
       {
         "family": "human-sitemap",
         "route": "/sitemap",
         "expectedLayout": "condensed",
-        "expectedLogicalSlots": 1,
-        "actualLogicalSlots": 1,
-        "uniqueLogicalSlots": 1,
-        "slotIds": [
-          "sitemap-header-banner"
-        ],
+        "expectedLogicalSlots": 0,
+        "actualLogicalSlots": 0,
+        "uniqueLogicalSlots": 0,
+        "slotIds": [],
         "meaningfulPublisherContent": true
       },
       {
@@ -330,72 +294,72 @@
     "visibleModel": [
       {
         "viewport": "320x800",
-        "fullPageVisibleSlots": 1,
-        "condensedPageVisibleSlots": 1,
-        "trustAndSitemapVisibleSlots": 1,
-        "reservedPixelAreaFullPage": 16000,
+        "fullPageVisibleSlots": 0,
+        "condensedPageVisibleSlots": 0,
+        "trustAndSitemapVisibleSlots": 0,
+        "reservedPixelAreaFullPage": 0,
         "approximatePublisherContentArea": 256000,
-        "approximationMethod": "Viewport area is a conservative lower-bound proxy; full documents contain additional publisher content below the fold."
+        "approximationMethod": "Production OFF mode."
       },
       {
         "viewport": "360x800",
-        "fullPageVisibleSlots": 1,
-        "condensedPageVisibleSlots": 1,
-        "trustAndSitemapVisibleSlots": 1,
-        "reservedPixelAreaFullPage": 16000,
+        "fullPageVisibleSlots": 0,
+        "condensedPageVisibleSlots": 0,
+        "trustAndSitemapVisibleSlots": 0,
+        "reservedPixelAreaFullPage": 0,
         "approximatePublisherContentArea": 288000,
-        "approximationMethod": "Viewport area is a conservative lower-bound proxy; full documents contain additional publisher content below the fold."
+        "approximationMethod": "Production OFF mode."
       },
       {
         "viewport": "430x932",
-        "fullPageVisibleSlots": 1,
-        "condensedPageVisibleSlots": 1,
-        "trustAndSitemapVisibleSlots": 1,
-        "reservedPixelAreaFullPage": 16000,
+        "fullPageVisibleSlots": 0,
+        "condensedPageVisibleSlots": 0,
+        "trustAndSitemapVisibleSlots": 0,
+        "reservedPixelAreaFullPage": 0,
         "approximatePublisherContentArea": 400760,
-        "approximationMethod": "Viewport area is a conservative lower-bound proxy; full documents contain additional publisher content below the fold."
+        "approximationMethod": "Production OFF mode."
       },
       {
         "viewport": "768x1024",
-        "fullPageVisibleSlots": 1,
-        "condensedPageVisibleSlots": 1,
-        "trustAndSitemapVisibleSlots": 1,
-        "reservedPixelAreaFullPage": 28080,
+        "fullPageVisibleSlots": 0,
+        "condensedPageVisibleSlots": 0,
+        "trustAndSitemapVisibleSlots": 0,
+        "reservedPixelAreaFullPage": 0,
         "approximatePublisherContentArea": 786432,
-        "approximationMethod": "Viewport area is a conservative lower-bound proxy; full documents contain additional publisher content below the fold."
+        "approximationMethod": "Production OFF mode."
       },
       {
         "viewport": "1366x900",
-        "fullPageVisibleSlots": 1,
-        "condensedPageVisibleSlots": 1,
-        "trustAndSitemapVisibleSlots": 1,
-        "reservedPixelAreaFullPage": 65520,
+        "fullPageVisibleSlots": 0,
+        "condensedPageVisibleSlots": 0,
+        "trustAndSitemapVisibleSlots": 0,
+        "reservedPixelAreaFullPage": 0,
         "approximatePublisherContentArea": 1229400,
-        "approximationMethod": "Viewport area is a conservative lower-bound proxy; full documents contain additional publisher content below the fold."
+        "approximationMethod": "Production OFF mode."
       },
       {
         "viewport": "1536x960",
-        "fullPageVisibleSlots": 3,
-        "condensedPageVisibleSlots": 1,
-        "trustAndSitemapVisibleSlots": 1,
-        "reservedPixelAreaFullPage": 204720,
+        "fullPageVisibleSlots": 0,
+        "condensedPageVisibleSlots": 0,
+        "trustAndSitemapVisibleSlots": 0,
+        "reservedPixelAreaFullPage": 0,
         "approximatePublisherContentArea": 1474560,
-        "approximationMethod": "Viewport area is a conservative lower-bound proxy; full documents contain additional publisher content below the fold."
+        "approximationMethod": "Production OFF mode."
       },
       {
         "viewport": "1920x1080",
-        "fullPageVisibleSlots": 3,
-        "condensedPageVisibleSlots": 1,
-        "trustAndSitemapVisibleSlots": 1,
-        "reservedPixelAreaFullPage": 257520,
+        "fullPageVisibleSlots": 0,
+        "condensedPageVisibleSlots": 0,
+        "trustAndSitemapVisibleSlots": 0,
+        "reservedPixelAreaFullPage": 0,
         "approximatePublisherContentArea": 2073600,
-        "approximationMethod": "Viewport area is a conservative lower-bound proxy; full documents contain additional publisher content below the fold."
+        "approximationMethod": "Production OFF mode."
       }
     ],
     "actionControlSeparation": "Print and Download remain inside the printable main region; no placeholder is inside that region.",
     "meaningfulContentSeparation": "Page headings, galleries, related content, or policy sections separate configured banner positions.",
     "thinPageFindings": [],
-    "correction": "CSS visibility restored the accepted one-well small-screen/intermediate model and three-well wide-desktop model without removing logical slots or changing IDs."
+    "correction": "Production OFF mode emits no ad containers, labels, or reserved space."
   },
   "networkDomainFindings": [
     {
@@ -428,7 +392,7 @@
     "siteCookieCode": false
   },
   "accountReadiness": {
-    "adsTxtPresent": false,
+    "adsTxtPresent": true,
     "apiDirectoryPresent": false,
     "liveAdvertisingActive": false,
     "verifiedPublisherIdExists": false,
@@ -443,7 +407,7 @@
       "classification": "Explicit child-oriented labeling",
       "audienceSignals": "Children are named directly; family, teacher, and caregiver use is also plausible.",
       "currentThirdPartyCollection": "Routine hosting or asset request processing only; no live advertising or analytics was found.",
-      "currentAdvertisingState": "Inert placeholders only",
+      "currentAdvertisingState": "OFF; no ad elements",
       "futureAgeTreatmentDecisionRequired": true
     },
     {
@@ -452,7 +416,7 @@
       "classification": "Mixed or ambiguous audience",
       "audienceSignals": "Difficulty wording can appeal to children, beginners, families, or adults.",
       "currentThirdPartyCollection": "Routine hosting or asset request processing only; no live advertising or analytics was found.",
-      "currentAdvertisingState": "Inert placeholders only",
+      "currentAdvertisingState": "OFF; no ad elements",
       "futureAgeTreatmentDecisionRequired": true
     },
     {
@@ -461,7 +425,7 @@
       "classification": "Mixed or ambiguous audience",
       "audienceSignals": "Visual and subject cues may appeal across ages.",
       "currentThirdPartyCollection": "Routine hosting or asset request processing only; no live advertising or analytics was found.",
-      "currentAdvertisingState": "Inert placeholders only",
+      "currentAdvertisingState": "OFF; no ad elements",
       "futureAgeTreatmentDecisionRequired": true
     },
     {
@@ -470,7 +434,7 @@
       "classification": "Mixed or ambiguous audience",
       "audienceSignals": "Subjects commonly serve children, families, teachers, and adults.",
       "currentThirdPartyCollection": "Routine hosting or asset request processing only; no live advertising or analytics was found.",
-      "currentAdvertisingState": "Inert placeholders only",
+      "currentAdvertisingState": "OFF; no ad elements",
       "futureAgeTreatmentDecisionRequired": true
     },
     {
@@ -479,7 +443,7 @@
       "classification": "Owner/legal review required",
       "audienceSignals": "The label names adults, while the surrounding library includes mixed-audience content.",
       "currentThirdPartyCollection": "Routine hosting or asset request processing only; no live advertising or analytics was found.",
-      "currentAdvertisingState": "Inert placeholders only",
+      "currentAdvertisingState": "OFF; no ad elements",
       "futureAgeTreatmentDecisionRequired": true
     },
     {
@@ -488,7 +452,7 @@
       "classification": "Mixed or ambiguous audience",
       "audienceSignals": "The general gallery combines audience, style, subject, and seasonal collections.",
       "currentThirdPartyCollection": "Routine hosting or asset request processing only; no live advertising or analytics was found.",
-      "currentAdvertisingState": "Inert placeholders only",
+      "currentAdvertisingState": "OFF; no ad elements",
       "futureAgeTreatmentDecisionRequired": true
     },
     {
@@ -497,7 +461,7 @@
       "classification": "Owner/legal review required",
       "audienceSignals": "Audience signals depend on each page's title and collections.",
       "currentThirdPartyCollection": "Routine hosting or asset request processing only; no live advertising or analytics was found.",
-      "currentAdvertisingState": "Inert placeholders only",
+      "currentAdvertisingState": "OFF; no ad elements",
       "futureAgeTreatmentDecisionRequired": true
     },
     {
@@ -506,7 +470,7 @@
       "classification": "Clearly general informational page",
       "audienceSignals": "These pages explain the site, policies, and contact details.",
       "currentThirdPartyCollection": "Routine hosting or asset request processing only; no live advertising or analytics was found.",
-      "currentAdvertisingState": "Inert placeholders only",
+      "currentAdvertisingState": "OFF; no ad elements",
       "futureAgeTreatmentDecisionRequired": false
     }
   ],
@@ -632,16 +596,16 @@
   ],
   "counts": {
     "runtimePrintables": 6352,
-    "publicHubs": 163,
-    "paginationRoutes": 451,
+    "publicHubs": 161,
+    "paginationRoutes": 389,
     "canonicalPrintablePages": 6352,
     "trustRoutes": 6,
-    "regularSitemapUrls": 6523,
+    "regularSitemapUrls": 6521,
     "imageSitemapPairs": 6352,
-    "staticOutputs": 6979,
-    "totalFiles": 70378,
-    "totalBytes": 1253613106,
-    "staticJavascriptBytes": 745760,
+    "staticOutputs": 6920,
+    "totalFiles": 69732,
+    "totalBytes": 1181176362,
+    "staticJavascriptBytes": 751557,
     "globallyUniquePrintableDisplayTitles": 6352,
     "globallyUniquePrintableMetadataTitles": 6352,
     "deferredRuntimeLeakage": 0,
@@ -649,33 +613,33 @@
   },
   "preservation": {
     "frozenRouteFieldHash": "c9f0fc577efe9e616d46720d8a8cd84ae3fa110f5d948f3d7601bf9faca61c89",
-    "hubMembershipHash": "b07b6a7cf043434fcd49a55b9e3cdf0d4a54eda5b88bb306cd991fc2749ebcee"
+    "hubMembershipHash": "7f89fd63041dc99deee32f1eec9e4769e38318673225792cc7493469d8d538d5"
   },
   "payload": {
     "trustPages": {
       "/about": {
-        "htmlBytes": 20668,
-        "rscBytes": 10867
+        "htmlBytes": 20515,
+        "rscBytes": 10788
       },
       "/contact": {
-        "htmlBytes": 21110,
-        "rscBytes": 11143
+        "htmlBytes": 21000,
+        "rscBytes": 11064
       },
       "/privacy": {
-        "htmlBytes": 28233,
-        "rscBytes": 14790
+        "htmlBytes": 28067,
+        "rscBytes": 14701
       },
       "/terms": {
-        "htmlBytes": 27775,
-        "rscBytes": 14655
+        "htmlBytes": 27622,
+        "rscBytes": 14576
       },
       "/affiliate-disclosure": {
-        "htmlBytes": 20693,
-        "rscBytes": 10921
+        "htmlBytes": 20527,
+        "rscBytes": 10832
       },
       "/editorial-policy": {
-        "htmlBytes": 22697,
-        "rscBytes": 11922
+        "htmlBytes": 22488,
+        "rscBytes": 11833
       }
     }
   },

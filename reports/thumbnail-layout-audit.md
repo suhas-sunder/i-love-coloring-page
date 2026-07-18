@@ -1,8 +1,8 @@
 # Thumbnail layout audit
 
-Measured 150 representative WebP files (one per hub where available) using a grayscale line-art threshold; originals were not modified.
+Measured 151 representative WebP files (one per hub where available) using a grayscale line-art threshold; originals were not modified.
 
-- Average canvas whitespace: left 0.000371, right 0.000587, top 0.019115, bottom 0.03763 as fractions of canvas.
+- Average canvas whitespace: left 0.000369, right 0.000583, top 0.018988, bottom 0.037381 as fractions of canvas.
 - Homepage/collection preview frames used a 4:3 landscape ratio around predominantly 341×512 portrait previews with `object-fit: contain`. This frame mismatch created large visible side wells even when artwork bounds were reasonable.
 - Some whitespace is intentionally baked into printable page composition and must remain in downloads/print output.
 - Cropping the source or applying an aggressive cover rule could clip line art and is deferred.

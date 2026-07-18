@@ -14,7 +14,6 @@ test("homepage layout follows the approved image-first section order", async () 
     "data-page-section=\"primary-collections\"",
     "data-page-section=\"fresh-printables\"",
     "data-page-section=\"additional-discovery\"",
-    "<SupportingInformation",
     "data-page-section=\"related-browse\"",
     "placement=\"related-banner\"",
   ]);
@@ -43,13 +42,11 @@ test("main gallery layout keeps controls next to the canonical gallery", async (
     "data-page-section=\"gallery\"",
     "<GallerySearch",
     "data-page-section=\"supporting-browse\"",
-    "<SupportingInformation",
     "placement=\"related-banner\"",
   ]);
   assert.match(source, /title="Printable Coloring Pages"/);
-  assert.match(source, /Browse, search, print, and download/);
-  assert.equal((source.match(/<SupportingInformation/g) || []).length, 1);
-  assert.equal((source.match(/placement="supporting-square"/g) || []).length, 0, "the shared information component owns the square");
+  assert.match(source, /rootHub\.editorial\.introduction/);
+  assert.equal((source.match(/<SupportingInformation/g) || []).length, 0);
   assert.equal(existsSync(path.join(ROOT, "app/coloring-pages/page/[page]/page.tsx")), false, "no new main-gallery pagination route was invented");
 
   const search = await readText("src/components/coloring/GallerySearch.tsx");
@@ -67,13 +64,13 @@ test("hub page-one layout has one related region and bounded featured printables
     "placement=\"post-header-banner\"",
     "data-page-section=\"featured-printables\"",
     "<GallerySearch",
+    "data-page-section=\"collection-scope\"",
     "data-page-section=\"narrower-browse\"",
     "data-page-section=\"related-collections\"",
-    "<SupportingInformation",
     "placement=\"related-banner\"",
   ]);
   assert.match(source, /getGeneratedFeaturedItems\(hub\)\.slice\(0, 8\)/);
-  assert.match(source, /hub\.assetCount >= 12 && featuredItems\.length >= 4/);
+  assert.match(source, /collectionCount >= 12 && featuredItems\.length >= 4/);
   assert.equal((source.match(/title="Related Collections"/g) || []).length, 1);
   assert.match(source, /getChildHubs\(hub, 8\)/);
   assert.match(source, /related\.route !== hub\.route/);
@@ -82,8 +79,8 @@ test("hub page-one layout has one related region and bounded featured printables
 
 test("hub pagination uses the materially condensed template", async () => {
   const source = await readText("src/components/coloring/HubPageContent.tsx");
-  const marker = source.indexOf("      ) : (\n        <>");
-  const end = source.indexOf("\n\n      <PageAdSlot pageFamily={pageFamily} placement=\"related-banner\"", marker);
+  const marker = source.indexOf('data-page-section="paginated-gallery"');
+  const end = source.indexOf('<PageAdSlot pageFamily={pageFamily} placement="related-banner"', marker);
   assert.ok(marker >= 0 && end > marker, "pagination branch is identifiable");
   const branch = source.slice(marker, end);
   assert.match(source, /const pageFamily = isPageOne \? "hub" : "hub-pagination"/);
@@ -112,7 +109,7 @@ test("printable detail protects preview actions and aligns the standard placemen
   const mainEnd = source.indexOf("</section>", mainStart);
   assert.doesNotMatch(source.slice(mainStart, mainEnd), /PageAdSlot|AdSlot|Advertisement/);
   assert.match(source, /pageFamily="printable"[\s\S]*title="Printing this coloring page"/);
-  assert.match(source, /<PrintableDetailActions item=\{item\} internalSvgUrl=\{svgUrl\}/);
+  assert.match(source, /<PrintableDetailActions item=\{item\} internalSvgUrl=\{assetSources\.fullResolutionArtwork\.url\} pngPreviewUrl=\{null\}/);
 });
 
 test("copy regression scan rejects outdated and internal page wording", async () => {

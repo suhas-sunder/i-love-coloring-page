@@ -6,7 +6,6 @@ import { GallerySearch } from "@/components/coloring/GallerySearch";
 import { HubCard } from "@/components/coloring/HubCard";
 import { JsonLdScript } from "@/components/seo/JsonLdScript";
 import { PublicPageShell } from "@/components/site/PublicPageShell";
-import { SupportingInformation } from "@/components/site/SupportingInformation";
 import {
   getAllPhase1Hubs,
   getHubFilterTags,
@@ -30,7 +29,7 @@ export default function ColoringPagesLanding() {
   const { tags } = getHubFilterTags(rootHub);
   const hubsBySlug = new Map(getAllPhase1Hubs().map((hub) => [hub.slug, hub]));
   const supportingHubs = SUPPORTING_HUB_SLUGS.map((slug) => hubsBySlug.get(slug)).filter(Boolean);
-  const intro = `Browse, search, print, and download from ${rootCount.toLocaleString()} available printable coloring pages.`;
+  const intro = `${rootHub.editorial.introduction} ${rootCount.toLocaleString()} printable pages are currently available.`;
 
   return (
     <PublicPageShell pageFamily="gallery" className="gallery-landing-page">
@@ -46,7 +45,6 @@ export default function ColoringPagesLanding() {
         <div className="section-heading-row gallery-heading-row">
           <div>
             <h2 className="section-title" id="gallery-title">Find a coloring page</h2>
-            <p>Search the library first, or use a subject, style, season, or difficulty filter.</p>
           </div>
         </div>
         <GallerySearch
@@ -62,23 +60,13 @@ export default function ColoringPagesLanding() {
         <div className="section-heading-row">
           <div>
             <h2 className="section-title" id="browse-collections-title">Browse useful collections</h2>
-            <p>Move into a focused public gallery when a broad search is more than you need.</p>
+            <p>These broad collections provide distinct starting points within the complete inventory.</p>
           </div>
         </div>
         <div className="hub-link-grid">
           {supportingHubs.map((hub) => <HubCard key={hub!.hubId} hub={hub!} />)}
         </div>
       </section>
-
-      <SupportingInformation
-        pageFamily="gallery"
-        title="How to use the gallery"
-        intro="Search and filters change only the current browser view; every normal image and title still opens one canonical printable page."
-        sections={[
-          { title: "Choose a page", body: "Use the search field for a subject or select a filter for a broader group. Clear the controls to return to the original static gallery view." },
-          { title: "Print or download", body: "Open a printable page for its larger preview. Print is separate from PNG, JPG, and WebP download preparation." },
-        ]}
-      />
 
       <PageAdSlot pageFamily="gallery" placement="related-banner" />
     </PublicPageShell>

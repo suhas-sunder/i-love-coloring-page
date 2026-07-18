@@ -2,7 +2,6 @@ import Link from "next/link";
 
 import { PageAdSlot } from "@/components/ads/PageAdSlot";
 import { PublicPageShell } from "@/components/site/PublicPageShell";
-import { SupportingInformation } from "@/components/site/SupportingInformation";
 import {
   getChildHubs,
   getFeaturedRotationCandidateItems,
@@ -43,7 +42,7 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
   const childHubs = getChildHubs(hub, 8).filter((child) => child.route !== hub.route);
   const showFeatured = isPageOne && collectionCount >= 12 && featuredItems.length >= 4;
   const jsonLdItems = showFeatured ? featuredItems : pagedGallery.items;
-  const intro = friendlyHubIntro(hub);
+  const intro = hub.editorial.introduction;
 
   return (
     <PublicPageShell pageFamily={pageFamily} className={isPageOne ? "hub-page hub-page-one" : "hub-page hub-pagination-page"}>
@@ -56,7 +55,6 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
         hub={hub}
         page={page}
         intro={isPageOne ? intro : `Showing page ${page.toLocaleString()} of ${pagedGallery.totalPages.toLocaleString()} in this ${hub.title.toLowerCase()} collection.`}
-        showFacts={isPageOne}
       />
       <PageAdSlot pageFamily={pageFamily} placement="post-header-banner" />
 
@@ -68,7 +66,6 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
                 <div className="section-heading-row">
                   <div>
                     <h2 className="section-title" id="featured-pages">Featured printables</h2>
-                    <p>Eight useful starting points from this collection, rotated on the existing three-day schedule.</p>
                   </div>
                 </div>
                 <RotatingFeaturedGrid
@@ -86,7 +83,6 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
             <div className="section-heading-row gallery-heading-row">
               <div>
                 <h2 className="section-title" id="printable-gallery-title">Printable gallery</h2>
-                <p>Search this collection or choose a filter, then open an image or title for its printable page.</p>
               </div>
             </div>
             <GallerySearch
@@ -105,12 +101,20 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
             />
           </section>
 
+          {hub.editorial.scope || hub.editorial.distinction || hub.editorial.selectionGuidance ? (
+            <section className="content-section hub-editorial-details" aria-labelledby="collection-scope-title" data-page-section="collection-scope">
+              <h2 className="section-title" id="collection-scope-title">About this collection</h2>
+              {hub.editorial.scope ? <p>{hub.editorial.scope}</p> : null}
+              {hub.editorial.distinction ? <p>{hub.editorial.distinction}</p> : null}
+              {hub.editorial.selectionGuidance ? <p>{hub.editorial.selectionGuidance}</p> : null}
+            </section>
+          ) : null}
+
           {childHubs.length > 0 ? (
             <section className="content-section collection-section" aria-labelledby="narrower-browse-title" data-page-section="narrower-browse">
               <div className="section-heading-row">
                 <div>
                   <h2 className="section-title" id="narrower-browse-title">Narrower ways to browse</h2>
-                  <p>Open a more specific public collection when it is a better fit than another filter.</p>
                 </div>
               </div>
               <div className="hub-link-grid hub-link-grid-compact">
@@ -122,16 +126,6 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
           <div data-page-section="related-collections">
             <RelatedHubs title="Related Collections" hubs={relatedHubs} />
           </div>
-
-          <SupportingInformation
-            pageFamily="hub"
-            title={`Using this ${collectionName(hub)} collection`}
-            intro={supportingIntro(hub, relatedHubs)}
-            sections={[
-              { title: "Choose a printable", body: "Search within the collection or use a visible filter. Each image and title opens one printable page, while utility actions remain separate." },
-              { title: "Print or download", body: "Use Print for the prepared Letter layout, or choose PNG, JPG, or WebP from the printable page when those formats suit your project." },
-            ]}
-          />
         </>
       ) : (
         <>
@@ -179,20 +173,4 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
 
 function collectionName(hub: ColoringHub) {
   return hub.title.replace(/ Coloring Pages$/, "");
-}
-
-function friendlyHubIntro(hub: ColoringHub) {
-  const name = collectionName(hub);
-  return `Browse ${getCollectionCount(hub).toLocaleString()} ${name.toLowerCase()} printables, then open a favorite for its full preview, Print action, and PNG, JPG, or WebP downloads.`;
-}
-
-function supportingIntro(hub: ColoringHub, relatedHubs: ColoringHub[]) {
-  const names = relatedHubs.slice(0, 3).map(collectionName);
-  const relatedSentence = names.length > 0 ? ` Related subjects include ${formatList(names)}.` : "";
-  return `This gallery contains ${getCollectionCount(hub).toLocaleString()} available ${collectionName(hub).toLowerCase()} printables.${relatedSentence}`;
-}
-
-function formatList(values: string[]) {
-  if (values.length < 2) return values[0] || "";
-  return `${values.slice(0, -1).join(", ")}, and ${values.at(-1)}`;
 }

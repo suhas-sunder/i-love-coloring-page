@@ -50,7 +50,8 @@ test("collection membership is the authoritative count snapshot for every hub", 
     }
     assert.ok(hub.galleryPageSize > 0, hub.hubId);
   }
-  assert.equal(Object.keys(hubCounts.counts).length, 22);
+  assert.equal(Object.keys(hubCounts.counts).length, hubCounts.navigationHubCount);
+  assert.ok(Object.keys(hubCounts.counts).every((hubId) => hubs.hubs.some((hub) => hub.hubId === hubId && hub.indexable && hub.sitemap)));
 });
 
 test("asset source contract preserves physical dimensions for portrait, landscape, and square previews", () => {
@@ -83,11 +84,12 @@ test("every printable has truthful generated preview/artwork dimensions and a se
   }
 });
 
-test("indexation audit is explicit, complete, versioned, and non-active", () => {
-  assert.equal(indexation.schemaVersion, 1);
-  assert.equal(indexation.activated, false);
+test("indexation policy is explicit, complete, versioned, and activates only resolved decisions", () => {
+  assert.equal(indexation.schemaVersion, 2);
+  assert.equal(indexation.activated, true);
   assert.equal(indexation.hubs.length, hubs.hubs.length);
-  assert.ok(indexation.hubs.every((entry) => entry.activated === false));
+  assert.deepEqual(indexation.hubs.filter((entry) => !entry.activated).map((entry) => entry.hubId).sort(), ["hub_easy", "hub_for_kids"]);
+  assert.equal(indexation.hubs.filter((entry) => entry.recommendation === "retain publicly but noindex" && entry.activated).length, 2);
   assert.ok(indexation.hubs.every((entry) => indexation.allowedRecommendations.includes(entry.recommendation)));
 });
 

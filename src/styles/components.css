@@ -895,6 +895,12 @@
   align-items: start;
 }
 
+.hub-card-description {
+  grid-column: 1 / -1;
+  color: var(--color-muted);
+  line-height: 1.5;
+}
+
 .supporting-information {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 300px;

@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-05-14T23:46:55.619Z",
-  "runId": "runtime-switch-site-map+long-tail+long-tail+long-tail+long-tail+long-tail+long-tail+long-tail-round-2",
+  "runId": "runtime-site-map-hub-architecture-v2",
   "source": "src/generated/coloring/site-map.json",
   "entries": [
     {
@@ -62,11 +62,6 @@
       "path": "/coloring-pages/birthday",
       "changeFrequency": "monthly",
       "priority": 0.8
-    },
-    {
-      "path": "/coloring-pages/birthday-celebration",
-      "changeFrequency": "weekly",
-      "priority": 0.7
     },
     {
       "path": "/coloring-pages/brachiosaurus",
@@ -799,11 +794,6 @@
       "priority": 0.7
     },
     {
-      "path": "/coloring-pages/woolly-mammoth",
-      "changeFrequency": "monthly",
-      "priority": 0.6
-    },
-    {
       "path": "/coloring-pages/world-landmarks",
       "changeFrequency": "monthly",
       "priority": 0.8
@@ -821,6 +811,7 @@
   ],
   "summary": {
     "entryCount": 163,
-    "noPerImageRoutes": true
+    "noPerImageRoutes": true,
+    "activeHubEntryCount": 161
   }
 }

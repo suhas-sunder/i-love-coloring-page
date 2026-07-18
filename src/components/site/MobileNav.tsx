@@ -9,7 +9,6 @@ import { restoreFocusAfterModalClose, useModalDialog } from "@/hooks/useModalDia
 import {
   mobileDirectLinks,
   mobileNavigationGroups,
-  viewAllCollectionsLink,
 } from "@/lib/navigation/siteNav";
 
 import { useSiteInteractions } from "./SiteInteractionProvider";
@@ -94,9 +93,6 @@ export function MobileNav() {
                 </details>
               ))}
 
-              <Link className="mobile-nav-view-all" href={viewAllCollectionsLink.href} onClick={navigateAndClose} prefetch={false}>
-                {viewAllCollectionsLink.label}
-              </Link>
             </nav>
           </section>
         </div>,

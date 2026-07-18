@@ -8,50 +8,48 @@ Official guidance supports a people-first, original, substantial-value approach 
 
 ## Verified defects
 
-- Adult-detail and Mandalas inventories are exactly equal; Geometric differs by only two records.
-- All 6,352 principal previews declared larger source dimensions than their WebP pixels and could upscale.
-- Live production renders development ad placeholders despite no live advertising.
-- Hub metadata and shared visible copy expose production/indexation language.
-- Categories used a four-column layout for three groups.
-- Counts had multiple consumers and navigation literals rather than one authoritative helper.
-- Production had no machine-readable revision marker and crawl files could inherit unsuitable caching.
+- The baseline adult-detail and Mandalas inventories were exactly equal, while Geometric differed by only two records.
+- The canonical data encoded an adult-detail/Mandalas parent cycle.
+- Birthday Celebration and Woolly Mammoth contributed no unique records beyond their stronger collections.
+- Hub copy exposed 134 visitor-visible production/indexation wording occurrences and four repeated-content groups.
+- Navigation mixed hard-coded counts, incomplete grouping, and a catch-all disclosure control.
 
-## Likely defects / needs browser confirmation
+## Post-implementation verified state
 
-- Mobile search whitespace and footer positioning were caused by full-height grid distribution; CSS foundations are fixed, but keyboard/safe-area acceptance remains.
-- Text-only browse counts can appear detached at narrow/intermediate widths.
-- Live placeholder disappearance likely reflects breakpoint/hydration layout changes, because no live fill script exists.
+- 0 exact duplicate inventory groups and 4 documented near-duplicate pairs remain.
+- The collection graph is acyclic, counts are consistent, and the active manifest matches robots and sitemap behavior.
+- All 163 hubs have explicit editorial records; indexable introductions are unique; unresolved hub internal wording is zero.
+- Desktop and mobile use the same authoritative navigation destinations and semantic collection-card records.
 
 ## Editorial judgments
 
-- Recommendation status is evidence-backed but non-active. Small size never automatically causes noindex.
-- Distinct hub and printable copy cannot be solved safely through broad templated generation.
-- Whether near-duplicate names represent valuable intents requires human review after membership repair.
+- Small size never automatically causes noindex; Robots and Roses remain indexable based on direct inventory evidence.
+- Easy and Coloring Pages for Kids remain safely indexable pending reviewed audience/difficulty classification.
+- Printable-page differentiation cannot be solved safely through broad templated generation and remains outside this task.
 
-## Technical fixes completed
+## Technical and editorial fixes completed in this stage
 
-- Authoritative collection count helper and consumer migration.
-- Typed asset-role resolver; truthful preview dimensions; SSR/hydration alt/source/dimension parity.
-- Explicit OFF/PLACEHOLDER/LIVE advertising modes with production OFF default and guarded initialization.
-- Non-active versioned indexation manifest.
-- Build revision diagnostic and cache rules.
-- Repeatable full audit command and quality safeguards.
-- Safe Categories and mobile-search CSS foundations.
+- Corrected source memberships for Mandalas and Geometric while preserving the broad adult-detail collection.
+- Corrected the canonical parent hierarchy and added graph-wide cycle detection.
+- Activated 159 retain/index and two evidence-backed noindex/consolidation decisions; no redirects.
+- Added explicit editorial records, content tiers, one related module, semantic collection cards, and route-specific metadata for all hubs.
+- Rebuilt the shared desktop/mobile navigation IA around the authoritative count source.
+- Replaced arbitrary article-length assertions with behavior-based content quality safeguards.
 
 ## Deliberately deferred
 
-- Mass content rewriting, broad noindex, redirects, destructive taxonomy changes, source-image edits, live advertising, deployment, and full visual redesign.
+- Printable-page content rewriting, speculative redirects, further noindex decisions, source-image edits, advertising changes, deployment, and full responsive visual redesign.
 
 ## Automated safeguards
 
 - **PASS** — identical introductions across indexable hubs: 0 duplicated route occurrences
-- **FAIL** — near-identical introduction templates: 3 normalized templates across 163 hubs
-- **FAIL** — forbidden internal terminology: 134 occurrences
+- **PASS** — near-identical introduction templates: 163 normalized templates across 163 hubs
+- **PASS** — forbidden internal terminology: 0 occurrences
 - **PASS** — one related-collections section maximum: 1 shared component occurrences
 - **PASS** — visible count consistency: 0 mismatches
 - **PASS** — noindex routes excluded from sitemap: current runtime metadata
 - **PASS** — navigation destinations exist: 0 invalid destinations
-- **PASS** — redirected routes absent from navigation: audit manifest is non-active and has no redirects
-- **PASS** — exact inventory duplicates have explicit exception: 1 exact pairs
+- **PASS** — redirected routes absent from navigation: active manifest has no redirects
+- **PASS** — exact inventory duplicates have explicit exception: 0 exact pairs
 
-Known editorial debt is reported rather than silently rewritten. Use `npm run validate:site-quality` for a deliberately strict non-zero gate after the editorial/taxonomy work is complete.
+The hub content-quality gate now passes. The remaining 6,352-route repeated metadata family is explicitly classified as printable functional metadata and remains for a dedicated evidence-based printable task.

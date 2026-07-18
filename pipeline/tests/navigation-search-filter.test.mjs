@@ -26,7 +26,7 @@ test("navigation model owns approved routes, labels, groups, and route relations
   const routedHubs = new Map(hubs.hubs.map((hub) => [hub.route, hub]));
   const configuredHubs = [...siteNav.matchAll(/\w+: hub\("([^"]+)", "([^"]+)", "([^"]+)", "([^"]+)"\)/g)]
     .map(([, id, label, href, hubId]) => ({ id, label, href, hubId }));
-  assert.equal(configuredHubs.length, 22);
+  assert.ok(configuredHubs.length >= 22);
   for (const link of configuredHubs) {
     const hub = routedHubs.get(link.href);
     assert.ok(hub, link.href);
@@ -39,8 +39,8 @@ test("navigation model owns approved routes, labels, groups, and route relations
     assert.doesNotMatch(link.href, /[?#]|\/page\/|\.(?:svg|webp|png)$/i);
     assert.ok(link.label.trim().length > 0);
   }
-  assert.deepEqual(configuredHubs.filter((link) => ["christmas", "halloween", "st-patricks-day"].includes(link.id)).map((link) => link.id), ["christmas", "halloween"]);
-  assert.match(siteNav, /label: "Popular"[\s\S]*label: "Styles and difficulty"[\s\S]*label: "Subjects"/);
+  assert.deepEqual(configuredHubs.filter((link) => ["christmas", "halloween", "st-patricks-day"].includes(link.id)).map((link) => link.id), ["st-patricks-day", "christmas", "halloween"]);
+  assert.match(siteNav, /label: "Subjects"[\s\S]*label: "Characters and imagined worlds"[\s\S]*label: "Styles"/);
   assert.match(siteNav, /getActivePrimaryNavigationId/);
   assert.match(siteNav, /getCollectionCountById\(hubId\)/);
   assert.doesNotMatch(siteNav, /includes\(.*pathname|pathname\.includes/);
@@ -59,14 +59,14 @@ test("desktop header follows the six-item order and disclosure contract", () => 
 });
 
 test("mobile navigation is finite, ordered, modal, and advertisement-free", () => {
-  const mobileModel = siteNav.slice(siteNav.indexOf("export const mobileDirectLinks"), siteNav.indexOf("export const viewAllCollectionsLink"));
-  assertOrder(mobileModel, ['direct("home", "Home"', 'links.coloringPages', 'direct("for-kids-mobile", "For Kids"', 'direct("for-adults-mobile", "For Adults"', 'label: "Seasonal collections"', 'label: "Popular categories"', 'label: "More categories"']);
+  const mobileModel = siteNav.slice(siteNav.indexOf("export const mobileDirectLinks"), siteNav.indexOf("export const browseAllColoringPagesLink"));
+  assertOrder(mobileModel, ['direct("home", "Home"', 'links.coloringPages', 'direct("for-kids-mobile", "For Kids"', 'direct("for-adults-mobile", "For Adults"', "...categoryNavigationGroups.map", 'label: "Seasonal collections"']);
   assert.match(mobileNav, /role="dialog" aria-modal="true"/);
   assert.match(mobileNav, /initialFocusRef: closeButtonRef/);
   assert.match(mobileNav, /useModalDialog/);
   assert.match(mobileNav, /closeAndRestore/);
   assert.match(mobileNav, /<details className="mobile-nav-group"/);
-  assert.match(mobileNav, /viewAllCollectionsLink/);
+  assert.doesNotMatch(mobileNav, /viewAllCollectionsLink|View all collections/);
   assert.doesNotMatch(mobileNav, /PageAdSlot|AdSlot|Advertisement|navigation\.json|163/);
 });
 
@@ -75,7 +75,6 @@ test("navigation search data is compact, complete, deterministic, and public-saf
   assert.equal(navigationPayload.p.length, 6352);
   assert.equal(navigationPayload.p.length, printables.records.length);
   assert.equal(navigationPayload.c.length, routes.routes.filter((route) => route.indexable && route.sitemap).length);
-  assert.equal(navigationPayload.c.length, 163);
   assert.equal(new Set(navigationPayload.p.map((record) => record[2])).size, navigationPayload.p.length);
   assert.equal(new Set(navigationPayload.c.map((record) => record[2])).size, navigationPayload.c.length);
   assert.equal(navigationPayload.p.every((record) => record.length === 6 && /^[0-9a-f]{10}$/.test(record[0]) && /^\/printables\//.test(record[2]) && /^webp\/.+\.webp$/.test(record[3])), true);

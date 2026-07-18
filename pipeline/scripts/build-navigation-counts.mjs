@@ -6,12 +6,8 @@ import path from "node:path";
 
 const root = process.cwd();
 const source = JSON.parse(await readFile(path.join(root, "src/generated/coloring/runtime-hubs.json"), "utf8"));
-const NAVIGATION_HUB_IDS = new Set([
-  "hub_for_kids", "hub_detailed_for_adults", "hub_animals", "hub_plushies", "hub_mandalas", "hub_fantasy",
-  "hub_dinosaurs", "hub_vehicles", "hub_easy", "hub_chibi", "hub_kawaii", "hub_cute", "hub_flowers",
-  "hub_sea_life", "hub_dogs", "hub_birds", "hub_prehistoric_animals", "hub_food", "hub_buildings",
-  "hub_fantasy_creatures", "hub_christmas", "hub_halloween",
-]);
+const navigationSource = await readFile(path.join(root, "src/lib/navigation/siteNav.ts"), "utf8");
+const NAVIGATION_HUB_IDS = new Set([...navigationSource.matchAll(/\bhub\("[^"]+",\s*"[^"]+",\s*"[^"]+",\s*"([^"]+)"\)/g)].map((match) => match[1]));
 const counts = Object.fromEntries(
   [...source.hubs]
     .filter((hub) => NAVIGATION_HUB_IDS.has(hub.hubId))

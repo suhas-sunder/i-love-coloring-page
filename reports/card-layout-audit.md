@@ -6,4 +6,4 @@
 - Gallery and related-printable cards use the centralized WebP resolver; the printable detail page no longer silently scales a grid-sized preview to a full-page visual.
 - No source artwork was cropped, moved, renamed, or rewritten.
 
-Samples measured: 150. The detailed values are intentionally kept in the companion thumbnail report rather than duplicated here.
+Samples measured: 151. The detailed values are intentionally kept in the companion thumbnail report rather than duplicated here.

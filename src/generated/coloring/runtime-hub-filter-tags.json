@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-05-14T23:46:55.619Z",
-  "runId": "runtime-switch-hub-filter-tags+long-tail+long-tail+long-tail+long-tail+long-tail+long-tail+long-tail-round-2",
+  "runId": "runtime-filters-hub-architecture-v2",
   "summary": {
     "hubCount": 163,
     "deferredRecordsHidden": true,
@@ -1697,61 +1697,38 @@
       "hubId": "hub_geometric",
       "slug": "geometric",
       "title": "Geometric Coloring Pages",
-      "assetCount": 1457,
+      "assetCount": 55,
       "tags": [
         {
           "id": "simple",
           "label": "Simple",
           "group": "difficulty",
-          "assetCount": 27
-        },
-        {
-          "id": "cute",
-          "label": "Cute",
-          "group": "style",
-          "assetCount": 332
-        },
-        {
-          "id": "vehicles",
-          "label": "Vehicles",
-          "group": "subject",
-          "assetCount": 383
+          "assetCount": 3
         },
         {
           "id": "animals",
           "label": "Animals",
           "group": "subject",
-          "assetCount": 305
+          "assetCount": 12
         },
         {
           "id": "flowers",
           "label": "Flowers",
           "group": "subject",
-          "assetCount": 101
-        },
-        {
-          "id": "dinosaurs",
-          "label": "Dinosaurs",
-          "group": "subject",
-          "assetCount": 53
+          "assetCount": 3
         },
         {
           "id": "fantasy",
           "label": "Fantasy",
           "group": "theme",
-          "assetCount": 36
+          "assetCount": 2
         }
       ],
       "tabs": [
         {
           "id": "simple",
           "label": "Simple",
-          "assetCount": 27
-        },
-        {
-          "id": "cute",
-          "label": "Cute",
-          "assetCount": 332
+          "assetCount": 3
         }
       ]
     },
@@ -2108,63 +2085,22 @@
       "hubId": "hub_mandalas",
       "slug": "mandalas",
       "title": "Mandalas Coloring Pages",
-      "assetCount": 1459,
+      "assetCount": 23,
       "tags": [
-        {
-          "id": "simple",
-          "label": "Simple",
-          "group": "difficulty",
-          "assetCount": 27
-        },
-        {
-          "id": "cute",
-          "label": "Cute",
-          "group": "style",
-          "assetCount": 332
-        },
-        {
-          "id": "vehicles",
-          "label": "Vehicles",
-          "group": "subject",
-          "assetCount": 383
-        },
         {
           "id": "animals",
           "label": "Animals",
           "group": "subject",
-          "assetCount": 305
+          "assetCount": 1
         },
         {
           "id": "flowers",
           "label": "Flowers",
           "group": "subject",
-          "assetCount": 101
-        },
-        {
-          "id": "dinosaurs",
-          "label": "Dinosaurs",
-          "group": "subject",
-          "assetCount": 53
-        },
-        {
-          "id": "fantasy",
-          "label": "Fantasy",
-          "group": "theme",
-          "assetCount": 36
+          "assetCount": 2
         }
       ],
-      "tabs": [
-        {
-          "id": "simple",
-          "label": "Simple",
-          "assetCount": 27
-        },
-        {
-          "id": "cute",
-          "label": "Cute",
-          "assetCount": 332
-        }
-      ]
+      "tabs": []
     },
     {
       "hubId": "hub_medieval_fantasy",
@@ -7659,7 +7595,7 @@
           "id": "animals",
           "label": "Animals",
           "group": "subject",
-          "assetCount": 11
+          "assetCount": 5
         },
         {
           "id": "cute",
@@ -7809,13 +7745,13 @@
           "id": "animals",
           "label": "Animals",
           "group": "subject",
-          "assetCount": 28
+          "assetCount": 34
         },
         {
           "id": "fantasy",
           "label": "Fantasy",
           "group": "theme",
-          "assetCount": 7
+          "assetCount": 15
         }
       ],
       "tabs": [
@@ -7855,13 +7791,13 @@
           "id": "animals",
           "label": "Animals",
           "group": "subject",
-          "assetCount": 28
+          "assetCount": 30
         },
         {
           "id": "fantasy",
           "label": "Fantasy",
           "group": "theme",
-          "assetCount": 5
+          "assetCount": 13
         }
       ],
       "tabs": [
@@ -7907,7 +7843,7 @@
           "id": "fantasy",
           "label": "Fantasy",
           "group": "theme",
-          "assetCount": 3
+          "assetCount": 7
         }
       ],
       "tabs": [
@@ -7935,19 +7871,19 @@
           "id": "fantasy",
           "label": "Fantasy",
           "group": "theme",
-          "assetCount": 336
+          "assetCount": 99
         },
         {
           "id": "animals",
           "label": "Animals",
           "group": "subject",
-          "assetCount": 16
+          "assetCount": 53
         },
         {
           "id": "cute",
           "label": "Cute",
           "group": "style",
-          "assetCount": 8
+          "assetCount": 160
         }
       ],
       "tabs": [
@@ -7955,7 +7891,7 @@
           "id": "cute",
           "label": "Cute",
           "group": "style",
-          "assetCount": 8
+          "assetCount": 160
         }
       ]
     },
@@ -8033,13 +7969,13 @@
           "id": "animals",
           "label": "Animals",
           "group": "subject",
-          "assetCount": 12
+          "assetCount": 19
         },
         {
           "id": "cute",
           "label": "Cute",
           "group": "style",
-          "assetCount": 12
+          "assetCount": 13
         },
         {
           "id": "seasonal",
@@ -8054,12 +7990,6 @@
           "assetCount": 3
         },
         {
-          "id": "fantasy",
-          "label": "Fantasy",
-          "group": "theme",
-          "assetCount": 3
-        },
-        {
           "id": "patterns",
           "label": "Patterns",
           "group": "style",
@@ -8071,7 +8001,7 @@
           "id": "cute",
           "label": "Cute",
           "group": "style",
-          "assetCount": 12
+          "assetCount": 13
         },
         {
           "id": "seasonal",
@@ -8103,25 +8033,19 @@
           "id": "cute",
           "label": "Cute",
           "group": "style",
-          "assetCount": 10
+          "assetCount": 11
         },
         {
           "id": "animals",
           "label": "Animals",
           "group": "subject",
-          "assetCount": 7
+          "assetCount": 13
         },
         {
           "id": "seasonal",
           "label": "Seasonal",
           "group": "theme",
           "assetCount": 4
-        },
-        {
-          "id": "fantasy",
-          "label": "Fantasy",
-          "group": "theme",
-          "assetCount": 2
         },
         {
           "id": "detailed",
@@ -8141,7 +8065,7 @@
           "id": "cute",
           "label": "Cute",
           "group": "style",
-          "assetCount": 10
+          "assetCount": 11
         },
         {
           "id": "seasonal",
@@ -8173,13 +8097,13 @@
           "id": "fantasy",
           "label": "Fantasy",
           "group": "theme",
-          "assetCount": 35
+          "assetCount": 20
         },
         {
           "id": "cute",
           "label": "Cute",
           "group": "style",
-          "assetCount": 10
+          "assetCount": 11
         },
         {
           "id": "animals",
@@ -8205,7 +8129,7 @@
           "id": "cute",
           "label": "Cute",
           "group": "style",
-          "assetCount": 10
+          "assetCount": 11
         },
         {
           "id": "detailed",
@@ -8231,7 +8155,7 @@
           "id": "animals",
           "label": "Animals",
           "group": "subject",
-          "assetCount": 9
+          "assetCount": 1
         },
         {
           "id": "cute",
@@ -8427,7 +8351,7 @@
           "id": "animals",
           "label": "Animals",
           "group": "subject",
-          "assetCount": 9
+          "assetCount": 1
         },
         {
           "id": "cute",
@@ -8491,7 +8415,7 @@
           "id": "animals",
           "label": "Animals",
           "group": "subject",
-          "assetCount": 9
+          "assetCount": 1
         },
         {
           "id": "cute",
@@ -8558,12 +8482,6 @@
           "assetCount": 9
         },
         {
-          "id": "animals",
-          "label": "Animals",
-          "group": "subject",
-          "assetCount": 7
-        },
-        {
           "id": "seasonal",
           "label": "Seasonal",
           "group": "theme",
@@ -8619,7 +8537,7 @@
           "id": "animals",
           "label": "Animals",
           "group": "subject",
-          "assetCount": 8
+          "assetCount": 1
         },
         {
           "id": "cute",
@@ -8823,7 +8741,7 @@
           "id": "seasonal",
           "label": "Seasonal",
           "group": "theme",
-          "assetCount": 6
+          "assetCount": 5
         },
         {
           "id": "cute",
@@ -8855,7 +8773,7 @@
           "id": "seasonal",
           "label": "Seasonal",
           "group": "theme",
-          "assetCount": 6
+          "assetCount": 5
         },
         {
           "id": "cute",
@@ -8875,7 +8793,7 @@
           "id": "flowers",
           "label": "Flowers",
           "group": "subject",
-          "assetCount": 10
+          "assetCount": 9
         },
         {
           "id": "cute",
@@ -8930,22 +8848,16 @@
       "assetCount": 6,
       "tags": [
         {
-          "id": "fantasy",
-          "label": "Fantasy",
-          "group": "theme",
-          "assetCount": 3
-        },
-        {
           "id": "animals",
           "label": "Animals",
           "group": "subject",
-          "assetCount": 2
+          "assetCount": 1
         },
         {
           "id": "cute",
           "label": "Cute",
           "group": "style",
-          "assetCount": 1
+          "assetCount": 3
         },
         {
           "id": "detailed",
@@ -8965,7 +8877,7 @@
           "id": "cute",
           "label": "Cute",
           "group": "style",
-          "assetCount": 1
+          "assetCount": 3
         },
         {
           "id": "detailed",
@@ -8998,12 +8910,6 @@
           "label": "Patterns",
           "group": "style",
           "assetCount": 16
-        },
-        {
-          "id": "flowers",
-          "label": "Flowers",
-          "group": "subject",
-          "assetCount": 1
         }
       ],
       "tabs": [
@@ -9141,7 +9047,7 @@
           "id": "flowers",
           "label": "Flowers",
           "group": "subject",
-          "assetCount": 6
+          "assetCount": 4
         },
         {
           "id": "detailed",
@@ -9214,7 +9120,7 @@
           "id": "fantasy",
           "label": "Fantasy",
           "group": "theme",
-          "assetCount": 1
+          "assetCount": 2
         }
       ],
       "tabs": [
@@ -9270,7 +9176,7 @@
           "id": "seasonal",
           "label": "Seasonal",
           "group": "theme",
-          "assetCount": 10
+          "assetCount": 5
         },
         {
           "id": "detailed",
@@ -9296,7 +9202,7 @@
           "id": "seasonal",
           "label": "Seasonal",
           "group": "theme",
-          "assetCount": 10
+          "assetCount": 5
         },
         {
           "id": "detailed",

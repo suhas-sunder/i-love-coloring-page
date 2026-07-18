@@ -11,11 +11,11 @@
     "hubFileCount": 162,
     "outputFileCount": 164,
     "rootBytes": 3272751,
-    "navigationBytes": 1546605,
+    "navigationBytes": 1546324,
     "navigationPrintableCount": 6352,
-    "navigationCollectionCount": 163,
-    "navigationSha256": "6cdfb1bdce57876ab555134ac167fbd5e060b1c5af87ce1adb4bc5d67fd64f6c",
-    "totalBytes": 18452187,
+    "navigationCollectionCount": 161,
+    "navigationSha256": "68c9d63db8ec1689ce52bcab10d07b192dfffb4b7e00347dccd226915c97d523",
+    "totalBytes": 16502909,
     "largestHubFile": {
       "relativePath": "hubs/detailed-for-adults.json",
       "bytes": 1000276
@@ -29,7 +29,7 @@
     },
     {
       "relativePath": "navigation.json",
-      "bytes": 1546605
+      "bytes": 1546324
     },
     {
       "relativePath": "hubs/animals.json",
@@ -233,7 +233,7 @@
     },
     {
       "relativePath": "hubs/geometric.json",
-      "bytes": 998984
+      "bytes": 35869
     },
     {
       "relativePath": "hubs/geometric-dogs.json",
@@ -313,7 +313,7 @@
     },
     {
       "relativePath": "hubs/mandalas.json",
-      "bytes": 1000265
+      "bytes": 14383
     },
     {
       "relativePath": "hubs/medieval-fantasy.json",

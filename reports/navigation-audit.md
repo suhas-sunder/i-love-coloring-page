@@ -2,12 +2,13 @@
 
 ## Verified
 
-- Configured destination rows: 22; invalid routes: 0; duplicate routes: 0.
-- Counts previously lived as literals in `siteNav.ts`; they now resolve through the authoritative hub inventory.
-- The Categories panel declared four equal columns for three semantic groups, producing a malformed empty column. It now uses three columns.
-- “View all collections” remains in the desktop and mobile disclosures and is explicitly deferred for the next information-architecture implementation; it must not be treated as a substitute for curated missing destinations.
-- Menu contents are curated rather than exhaustive. The inventory identifies subject, style, season/occasion, audience/difficulty, and parent relationships for the next IA decision.
+- Configured destination rows: 25; invalid routes: 0; duplicate routes: 0.
+- Desktop and mobile render one authoritative destination data set; counts resolve through the generated collection-count manifest.
+- Categories now uses three real groups: Subjects, Characters and imagined worlds, and Styles.
+- The obsolete “View all collections” disclosure control is removed. Comprehensive discovery remains available through parent hubs, search, internal collection navigation, the gallery landing page, and the HTML sitemap.
+- Seasonal uses five approved destinations: Holidays, Christmas, Halloween, Birthday, and St. Patrick's Day.
+- Birthday Celebration and Woolly Mammoth are absent from primary and related promotion.
 
-## Deferred visual/editorial decisions
+## Deliberately bounded IA
 
-Do not add all 163 hubs to primary navigation. First resolve the duplicate adult/mandala/geometric taxonomy, determine the status of weak/small hubs, then choose a bounded set of high-value destinations. Preserve direct Coloring Pages and Search access.
+Primary navigation intentionally does not list all 161 indexable hubs. Narrow hubs remain discoverable from their parents, search, the HTML sitemap, and explicit related-collection cards. Direct Coloring Pages, For Kids, For Adults, and Search access are preserved.

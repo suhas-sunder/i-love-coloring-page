@@ -113,7 +113,10 @@ const sitemapHtml = readFileSync(outputHtmlPath("/sitemap"), "utf8");
 const sitemapHtmlLinks = [...sitemapHtml.matchAll(/<a\b[^>]*href="(\/[^"?#]*)"/g)].map((match) => match[1]);
 const uniqueHtmlSitemapLinks = [...new Set(sitemapHtmlLinks)];
 const brokenHtmlSitemapLinks = uniqueHtmlSitemapLinks.filter((href) => !outputRouteExists(href));
-const missingHtmlSitemapHubs = publicRoutes.routes.map((route) => route.path).filter((routePath) => !uniqueHtmlSitemapLinks.includes(routePath));
+const missingHtmlSitemapHubs = publicRoutes.routes
+  .filter((route) => route.indexable && route.sitemap)
+  .map((route) => route.path)
+  .filter((routePath) => !uniqueHtmlSitemapLinks.includes(routePath));
 const missingHtmlSitemapTrust = trustPaths.filter((routePath) => !uniqueHtmlSitemapLinks.includes(routePath));
 
 const structuredItemFindings = [];
@@ -188,7 +191,7 @@ summary.passed = Object.entries(summary)
   && summary.frozenPrintableCount === 6352
   && summary.deferredRuntimeCount === 0
   && summary.publicHubCount === 163
-  && summary.paginationCount === 451
+  && summary.paginationCount === 389
   && summary.regularSitemapCount === summary.expectedRegularSitemapCount
   && summary.imageSitemapPairCount === summary.runtimePrintableCount
   && summary.printableHtmlCount === summary.runtimePrintableCount

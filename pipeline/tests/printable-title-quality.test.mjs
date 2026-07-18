@@ -16,6 +16,7 @@ import { buildRuntimePrintables } from "../scripts/build-runtime-printables.mjs"
 
 const ROOT = process.cwd();
 const printables = await readJson("src/generated/coloring/runtime-printables.json");
+const hubs = await readJson("src/generated/coloring/runtime-hubs.json");
 const titleManifest = await readJson("pipeline/manifests/printable-title-manifest.json");
 const routeManifest = await readJson("pipeline/manifests/runtime-printable-route-manifest.json");
 const taxonomyPolicy = await readJson("src/config/taxonomy-promotion-policy.json");
@@ -155,7 +156,7 @@ test("search keeps base-title matching, design-number matching, and deterministi
   const correctedUnique = printables.records.find((record) => record.designNumber == null && record.publicTitle !== record.displayTitle);
   const searchEntry = searchPayload.items.find((entry) => entry.id === correctedUnique.assetId);
   assert.ok(ranking.rankSearchItems([{ title: searchEntry.title, stableKey: correctedUnique.stableId, normalizedText: searchEntry.text }], correctedUnique.publicTitle).length > 0);
-  assert.equal(navigationPayload.c.length, 163);
+  assert.equal(navigationPayload.c.length, hubs.hubs.filter((hub) => hub.indexable).length);
 });
 
 test("title determinism produces identical runtime, manifest, and report hashes without volatile timestamps", async () => {

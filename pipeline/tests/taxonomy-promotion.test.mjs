@@ -28,7 +28,7 @@ test("taxonomy promotion policy preserves routed public inventory", () => {
   assert.equal(hashRouteFields(printables.records), policy.preservationBaseline.canonicalRouteFieldsSha256);
   assert.equal(hashMembership(hubs.hubs), policy.preservationBaseline.hubMembershipSha256);
   assert.equal(new Set(routes.routes.map((route) => route.path)).size, routes.routes.length);
-  assert.equal(navigationPayload.c.length, policy.preservationBaseline.publicHubCount);
+  assert.equal(navigationPayload.c.length, hubs.hubs.filter((hub) => hub.indexable && hub.sitemap).length);
 });
 
 test("parent resolution applies only the approved corrections", () => {
@@ -45,7 +45,7 @@ test("parent resolution applies only the approved corrections", () => {
     const parent = hubById.get(hub.parentHubId);
     return parent?.parentHubId === hub.hubId ? [[hub.hubId, parent.hubId].sort().join("|")] : [];
   });
-  assert.deepEqual([...new Set(circularPairs)], ["hub_detailed_for_adults|hub_mandalas"]);
+  assert.deepEqual([...new Set(circularPairs)], []);
 });
 
 test("related-hub clusters are bounded, deterministic, and exclude exact duplicate reinforcement", async () => {
@@ -53,7 +53,6 @@ test("related-hub clusters are bounded, deterministic, and exclude exact duplica
     assert.equal(new Set(record.relatedHubIds).size, record.relatedHubIds.length, record.assetId);
     assert.equal(record.relatedHubIds.includes(record.primaryHubId), false, record.assetId);
     assert.equal(hasPromotionClusterConflict(record.relatedHubIds, policy, record.primaryHubId), false, record.assetId);
-    assert.equal(record.primaryHubId === "hub_detailed_for_adults" && record.relatedHubIds.includes("hub_mandalas"), false, record.assetId);
     for (const hubId of record.relatedHubIds) assert.ok(hubById.has(hubId), `${record.assetId}: ${hubId}`);
   }
   for (const hub of hubs.hubs) {
@@ -64,7 +63,7 @@ test("related-hub clusters are bounded, deterministic, and exclude exact duplica
   const first = selectClusteredHubIds(fixture, { policy, limit: 8 });
   const second = selectClusteredHubIds(fixture, { policy, limit: 8 });
   assert.deepEqual(first, second);
-  assert.deepEqual(first, ["hub_detailed_for_adults", "hub_animals"]);
+  assert.deepEqual(first, fixture);
   const implementation = await readText("pipeline/scripts/build-runtime-printables.mjs");
   assert.doesNotMatch(implementation, /internal-linking\.json/);
 });
@@ -97,8 +96,8 @@ test("navigation deduplication keeps canonical paths unique and St. Patrick's Da
   assert.equal(new Set([...desktopDirect, ...categories, ...seasonal]).size, desktopDirect.length + categories.length + seasonal.length);
   assert.equal(new Set(mobile).size, mobile.length);
   assert.equal(categories.length <= 21, true);
-  assert.deepEqual(seasonal, ["/coloring-pages/christmas", "/coloring-pages/halloween"]);
-  assert.equal([...desktopDirect, ...categories, ...seasonal, ...mobile].includes("/coloring-pages/st-patricks-day"), false);
+  assert.deepEqual(seasonal, ["/coloring-pages/holidays", "/coloring-pages/christmas", "/coloring-pages/halloween", "/coloring-pages/birthday", "/coloring-pages/st-patricks-day"]);
+  assert.equal([...desktopDirect, ...categories, ...seasonal, ...mobile].includes("/coloring-pages/st-patricks-day"), true);
   for (const href of [...desktopDirect, ...categories, ...seasonal, ...mobile]) {
     if (["/", "/coloring-pages"].includes(href)) continue;
     assert.ok(hubs.hubs.some((hub) => hub.route === href), href);

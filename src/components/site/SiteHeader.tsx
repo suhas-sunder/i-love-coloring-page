@@ -10,7 +10,6 @@ import {
   getActivePrimaryNavigationId,
   isExactNavigationPath,
   seasonalNavigationLinks,
-  viewAllCollectionsLink,
 } from "@/lib/navigation/siteNav";
 import { restoreFocusAfterModalClose } from "@/hooks/useModalDialog";
 
@@ -194,9 +193,6 @@ function CategoryDisclosure({ id, pathname, onNavigate }: { id: string; pathname
           </section>
         ))}
       </div>
-      <Link className="category-browser-all" href={viewAllCollectionsLink.href} onClick={onNavigate} prefetch={false}>
-        {viewAllCollectionsLink.label}
-      </Link>
     </div>
   );
 }

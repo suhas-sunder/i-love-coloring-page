@@ -139,6 +139,18 @@ export type ColoringHub = {
   indexable: boolean;
   sitemap: boolean;
   noPerImageIndexableRoute: true;
+  contentTier: "A" | "B" | "C" | "D";
+  consolidationTargetHubId?: string;
+  editorial: HubEditorialContent;
+};
+
+export type HubEditorialContent = {
+  tier: "A" | "B" | "C" | "D";
+  introduction: string;
+  scope?: string;
+  distinction?: string;
+  selectionGuidance?: string;
+  reviewStatus: "reviewed" | "manual-review-retained" | "consolidated";
 };
 
 export type ColoringRoute = {

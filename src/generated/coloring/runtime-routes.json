@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-05-14T23:46:55.619Z",
-  "runId": "runtime-switch-routes+long-tail+long-tail+long-tail+long-tail+long-tail+long-tail+long-tail-round-2",
+  "runId": "runtime-routes-hub-architecture-v2",
   "source": "src/generated/coloring/routes.json",
   "routePattern": "/coloring-pages/[hubSlug]",
   "rootRoute": "/coloring-pages",
@@ -122,8 +122,8 @@
       "slug": "birthday-celebration",
       "path": "/coloring-pages/birthday-celebration",
       "title": "Birthday Celebration Coloring Pages",
-      "indexable": true,
-      "sitemap": true,
+      "indexable": false,
+      "sitemap": false,
       "assetCount": 190
     },
     {
@@ -565,7 +565,7 @@
       "title": "Geometric Coloring Pages",
       "indexable": true,
       "sitemap": true,
-      "assetCount": 1457
+      "assetCount": 55
     },
     {
       "hubId": "hub_geometric_dogs",
@@ -808,7 +808,7 @@
       "title": "Mandalas Coloring Pages",
       "indexable": true,
       "sitemap": true,
-      "assetCount": 1459
+      "assetCount": 23
     },
     {
       "hubId": "hub_medieval_fantasy",
@@ -1445,8 +1445,8 @@
       "slug": "woolly-mammoth",
       "path": "/coloring-pages/woolly-mammoth",
       "title": "Woolly Mammoth Coloring Pages",
-      "indexable": true,
-      "sitemap": true,
+      "indexable": false,
+      "sitemap": false,
       "assetCount": 19
     },
     {

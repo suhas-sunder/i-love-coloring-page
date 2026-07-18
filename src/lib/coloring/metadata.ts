@@ -9,6 +9,7 @@ type ColoringMetadataOptions = {
   canonicalPath?: string;
   fallbackTitle?: string;
   fallbackDescription?: string;
+  indexable?: boolean;
 };
 
 type OgImageMetadata = {
@@ -35,9 +36,9 @@ const ogImagesManifest = ogImagesJson as OgImagesManifest;
 export function buildColoringMetadata(path: string, options: ColoringMetadataOptions = {}): Metadata {
   const page = getSeoPageMetadata(path);
   const canonicalPath = options.canonicalPath || page?.canonicalPath || path;
-  const baseTitle = page?.metaTitle || options.fallbackTitle || "Printable Coloring Pages";
+  const baseTitle = options.fallbackTitle || page?.metaTitle || "Printable Coloring Pages";
   const baseDescription =
-    page?.metaDescription || options.fallbackDescription || "Browse printable coloring pages with real previews, search, print controls, and PNG downloads.";
+    options.fallbackDescription || page?.metaDescription || "Browse printable coloring pages with real previews, search, print controls, and PNG downloads.";
   const title = options.page && options.page > 1 ? `${baseTitle}, Page ${options.page}` : baseTitle;
   const description =
     options.page && options.page > 1
@@ -52,6 +53,7 @@ export function buildColoringMetadata(path: string, options: ColoringMetadataOpt
     alternates: {
       canonical: url,
     },
+    robots: options.indexable === false ? { index: false, follow: true } : { index: true, follow: true },
     openGraph: {
       title,
       description,

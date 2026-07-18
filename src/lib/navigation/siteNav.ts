@@ -36,12 +36,15 @@ const links = {
   cute: hub("cute", "Cute", "/coloring-pages/cute", "hub_cute"),
   flowers: hub("flowers", "Flowers", "/coloring-pages/flowers", "hub_flowers"),
   seaLife: hub("sea-life", "Sea Life", "/coloring-pages/sea-life", "hub_sea_life"),
-  dogs: hub("dogs", "Dogs", "/coloring-pages/dogs", "hub_dogs"),
-  birds: hub("birds", "Birds", "/coloring-pages/birds", "hub_birds"),
-  prehistoric: hub("prehistoric-animals", "Prehistoric Animals", "/coloring-pages/prehistoric-animals", "hub_prehistoric_animals"),
   food: hub("food", "Food", "/coloring-pages/food", "hub_food"),
   buildings: hub("buildings", "Buildings", "/coloring-pages/buildings", "hub_buildings"),
+  plants: hub("plants", "Plants", "/coloring-pages/plants", "hub_plants"),
   fantasyCreatures: hub("fantasy-creatures", "Fantasy Creatures", "/coloring-pages/fantasy-creatures", "hub_fantasy_creatures"),
+  animeGirls: hub("anime-girls", "Anime Girls", "/coloring-pages/anime-girls", "hub_anime_girls"),
+  geometric: hub("geometric", "Geometric", "/coloring-pages/geometric", "hub_geometric"),
+  holidays: hub("holidays", "Holidays", "/coloring-pages/holidays", "hub_holidays"),
+  birthday: hub("birthday", "Birthday", "/coloring-pages/birthday", "hub_birthday"),
+  stPatricksDay: hub("st-patricks-day", "St. Patrick's Day", "/coloring-pages/st-patricks-day", "hub_st_patricks_day"),
   christmas: hub("christmas", "Christmas", "/coloring-pages/christmas", "hub_christmas"),
   halloween: hub("halloween", "Halloween", "/coloring-pages/halloween", "hub_halloween"),
 } as const;
@@ -57,23 +60,23 @@ export const desktopPrimaryItems: DesktopNavigationItem[] = [
 
 export const categoryNavigationGroups: NavigationGroup[] = [
   {
-    id: "popular",
-    label: "Popular",
-    links: [links.animals, links.plushies, links.fantasy, links.dinosaurs, links.vehicles, links.buildings],
-  },
-  {
-    id: "audience",
-    label: "Styles and difficulty",
-    links: [links.easy, links.chibi, links.kawaii, links.cute],
-  },
-  {
     id: "subjects",
     label: "Subjects",
-    links: [links.flowers, links.seaLife, links.dogs, links.birds, links.prehistoric, links.food, links.fantasyCreatures],
+    links: [links.animals, links.seaLife, links.dinosaurs, links.plants, links.flowers, links.food, links.vehicles, links.buildings],
+  },
+  {
+    id: "characters",
+    label: "Characters and imagined worlds",
+    links: [links.fantasy, links.fantasyCreatures, links.animeGirls, links.plushies],
+  },
+  {
+    id: "styles",
+    label: "Styles",
+    links: [links.mandalas, links.geometric, links.chibi, links.kawaii, links.cute, links.easy],
   },
 ];
 
-export const seasonalNavigationLinks: NavigationLink[] = [links.christmas, links.halloween];
+export const seasonalNavigationLinks: NavigationLink[] = [links.holidays, links.christmas, links.halloween, links.birthday, links.stPatricksDay];
 
 export const mobileDirectLinks: NavigationLink[] = [
   direct("home", "Home", "/"),
@@ -83,12 +86,10 @@ export const mobileDirectLinks: NavigationLink[] = [
 ];
 
 export const mobileNavigationGroups: NavigationGroup[] = [
+  ...categoryNavigationGroups.map((group) => ({ ...group, id: `mobile-${group.id}` })),
   { id: "mobile-seasonal", label: "Seasonal collections", links: seasonalNavigationLinks },
-  { id: "mobile-popular", label: "Popular categories", links: categoryNavigationGroups[0].links },
-  { id: "mobile-more", label: "More categories", links: categoryNavigationGroups[2].links },
 ];
 
-export const viewAllCollectionsLink = direct("view-all-collections", "View all collections", "/sitemap");
 export const browseAllColoringPagesLink = direct("browse-all-coloring-pages", "Browse all coloring pages", "/coloring-pages");
 export const searchEntryPoint = { id: "search", label: "Search", dialogLabel: "Search coloring pages" } as const;
 

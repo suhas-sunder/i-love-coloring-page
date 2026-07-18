@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "next dev -H localhost -p 3005",
     "build": "node pipeline/scripts/apply-runtime-taxonomy-policy.mjs && node pipeline/scripts/apply-runtime-public-content-quality.mjs && node pipeline/scripts/build-runtime-printables.mjs && node pipeline/scripts/build-printable-title-quality.mjs && node pipeline/scripts/build-static-search-data.mjs && node pipeline/scripts/build-image-sitemap-data.mjs && node pipeline/scripts/build-image-sitemap-xml.mjs && node pipeline/scripts/build-navigation-counts.mjs && node pipeline/scripts/build-revision-diagnostic.mjs && next build && node pipeline/scripts/build-trust-ads-readiness.mjs",
-    "audit:site-quality": "node pipeline/scripts/audit-site-quality.mjs",
-    "validate:site-quality": "node pipeline/scripts/audit-site-quality.mjs --strict",
+    "audit:site-quality": "node pipeline/scripts/apply-runtime-taxonomy-policy.mjs && node pipeline/scripts/apply-runtime-public-content-quality.mjs && node pipeline/scripts/build-navigation-counts.mjs && node pipeline/scripts/audit-site-quality.mjs && node pipeline/scripts/audit-hub-content-quality.mjs && node pipeline/scripts/build-hub-architecture-reports.mjs",
+    "validate:site-quality": "node pipeline/scripts/apply-runtime-taxonomy-policy.mjs && node pipeline/scripts/apply-runtime-public-content-quality.mjs && node pipeline/scripts/build-navigation-counts.mjs && node pipeline/scripts/audit-site-quality.mjs --strict && node pipeline/scripts/audit-hub-content-quality.mjs && node pipeline/scripts/build-hub-architecture-reports.mjs",
     "generate:taxonomy-policy": "node pipeline/scripts/apply-runtime-taxonomy-policy.mjs && node pipeline/scripts/apply-runtime-public-content-quality.mjs && node pipeline/scripts/build-runtime-printables.mjs && node pipeline/scripts/build-printable-title-quality.mjs",
     "generate:printable-titles": "node pipeline/scripts/build-runtime-printables.mjs && node pipeline/scripts/build-printable-title-quality.mjs",
     "generate:search-data": "node pipeline/scripts/build-static-search-data.mjs",
@@ -60,6 +60,7 @@
     "test:pagination-layout": "node --test --test-concurrency=1 --test-name-pattern=\"hub pagination\" pipeline/tests/public-page-restructure.test.mjs",
     "test:advertisements": "node --test --test-concurrency=1 pipeline/tests/advertisement-layout.test.mjs",
     "test:site-quality-foundations": "node --test --test-concurrency=1 pipeline/tests/site-quality-foundations.test.mjs",
+    "test:hub-architecture": "node --test --test-concurrency=1 pipeline/tests/hub-architecture.test.mjs",
     "test:responsive-ads": "node --test --test-concurrency=1 --test-name-pattern=\"responsive advertisement behavior|page-family density\" pipeline/tests/advertisement-layout.test.mjs",
     "test:navigation": "node --test --test-concurrency=1 --test-name-pattern=\"navigation model\" pipeline/tests/navigation-search-filter.test.mjs",
     "test:desktop-navigation": "node --test --test-concurrency=1 --test-name-pattern=\"desktop header\" pipeline/tests/navigation-search-filter.test.mjs",

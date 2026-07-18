@@ -17,7 +17,7 @@ const trustCount = (trustSource.match(/indexable:\s*true/g) || []).length;
 const paginationCount = hubs.hubs
   .filter((hub) => hub.route !== "/coloring-pages" && hub.indexable && hub.sitemap)
   .reduce((total, hub) => total + Math.max(0, Math.ceil(hub.assetIds.length / hub.galleryPageSize) - 1), 0);
-const expectedRegularSitemapCount = 1 + publicRoutes.routes.length + printables.records.length + trustCount + 1;
+const expectedRegularSitemapCount = 1 + publicRoutes.routes.filter((route) => route.indexable && route.sitemap).length + printables.records.length + trustCount + 1;
 
 test("authoritative crawl inventory counts are complete, collision-free, and below warning thresholds", async () => {
   assert.equal(printables.records.length, 6352);
@@ -27,9 +27,9 @@ test("authoritative crawl inventory counts are complete, collision-free, and bel
   assert.equal(Object.keys(routeIndex.index).length, 6352);
   assert.equal(hubs.hubs.length, 163);
   assert.equal(publicRoutes.routes.length, 163);
-  assert.equal(paginationCount, 451);
+  assert.equal(paginationCount, 389);
   assert.equal(trustCount, 6);
-  assert.equal(expectedRegularSitemapCount, 6523);
+  assert.equal(expectedRegularSitemapCount, 6521);
   assert.equal(expectedRegularSitemapCount < 45_000, true);
 
   const printablePaths = printables.records.map((record) => record.canonicalPath);
@@ -62,7 +62,7 @@ test("regular sitemap consumes only the central inventory and omits invented fre
 });
 
 test("valid pagination stays static, self-canonical, linked, indexable, and outside the XML sitemap", async () => {
-  assert.equal(paginationCount, 451);
+  assert.equal(paginationCount, 389);
   const page = await readText("app/coloring-pages/[hubSlug]/page/[page]/page.tsx");
   const pagination = await readText("src/components/coloring/Pagination.tsx");
   const inventory = await readText("src/lib/seo/routeInventory.ts");

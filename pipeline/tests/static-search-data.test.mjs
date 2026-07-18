@@ -61,7 +61,7 @@ test("navigation search data is a dedicated compact printable and collection ind
   const text = JSON.stringify(payload);
   assert.equal(payload.v, 2);
   assert.equal(payload.p.length, available.items.length);
-  assert.equal(payload.c.length, hubs.hubs.length);
+  assert.equal(payload.c.length, hubs.hubs.filter((hub) => hub.indexable).length);
   assert.equal(payload.p.every((record) => record.length === 6 && /^webp\/.+\.webp$/.test(record[3])), true);
   assert.equal(payload.c.every((record) => record.length === 5 && /^\/coloring-pages(?:\/|$)/.test(record[2])), true);
   assert.doesNotMatch(text, /\.svg\b|sourceRelativePath|warningFlags|manualReview|localhost|r2\.dev/i);

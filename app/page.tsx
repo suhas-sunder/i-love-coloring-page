@@ -6,7 +6,6 @@ import { HubCard } from "@/components/coloring/HubCard";
 import { RotatingFeaturedGrid } from "@/components/coloring/RotatingFeaturedGrid";
 import { JsonLdScript } from "@/components/seo/JsonLdScript";
 import { PublicPageShell } from "@/components/site/PublicPageShell";
-import { SupportingInformation } from "@/components/site/SupportingInformation";
 import {
   getAllPhase1Hubs,
   getFeaturedRotationCandidateItems,
@@ -42,7 +41,7 @@ export default function HomePage() {
       <header className="home-hero" data-page-section="hero">
         <h1 className="page-title page-title-wide">I Love Coloring Page</h1>
         <p className="page-intro">
-          Browse {rootCount.toLocaleString()} printable coloring pages, open any image or title for its own page, then print or download separately.
+          {rootHub.editorial.introduction} The library currently contains {rootCount.toLocaleString()} printable pages.
         </p>
         <div className="hero-actions">
           <Link className="button button-primary" href="/coloring-pages" prefetch={false}>Browse all coloring pages</Link>
@@ -56,7 +55,7 @@ export default function HomePage() {
         <div className="section-heading-row">
           <div>
             <h2 className="section-title" id="primary-collections-title">Start with a collection</h2>
-            <p>Popular, seasonal, easy, detailed, animal, and pattern-focused galleries offer a useful first step.</p>
+            <p>These broad destinations separate subject, season, audience, and visual style.</p>
           </div>
         </div>
         <div className="hub-preview-grid">
@@ -69,7 +68,6 @@ export default function HomePage() {
           <div className="section-heading-row">
             <div>
               <h2 className="section-title" id="fresh-pages">Fresh printable pages</h2>
-              <p>Open a page for the full preview, then use its separate Print or Download controls.</p>
             </div>
           </div>
           <RotatingFeaturedGrid
@@ -86,23 +84,13 @@ export default function HomePage() {
         <div className="section-heading-row">
           <div>
             <h2 className="section-title" id="more-collections-title">More ways to browse</h2>
-            <p>Explore another subject, style, or difficulty without repeating the collections above.</p>
+            <p>Each collection below has a distinct subject or browsing purpose.</p>
           </div>
         </div>
         <div className="hub-link-grid">
           {discoveryHubs.map((hub) => <HubCard key={hub.hubId} hub={hub} />)}
         </div>
       </section>
-
-      <SupportingInformation
-        pageFamily="home"
-        title="Browse, choose, and use a printable"
-        intro="The library keeps browsing, page navigation, and utility actions distinct so each step is clear."
-        sections={[
-          { title: "Find the right page", body: "Open a collection to search its available printables. Images and titles lead to canonical printable pages with a larger preview and related choices." },
-          { title: "Print or download", body: "Print remains the primary utility action. PNG, JPG, and WebP downloads are prepared separately in your browser where supported." },
-        ]}
-      />
 
       <section className="content-section browse-complete-library" aria-labelledby="browse-complete-title" data-page-section="related-browse">
         <div>

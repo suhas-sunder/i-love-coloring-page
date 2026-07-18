@@ -22,7 +22,7 @@
     "fallbackCount": 0,
     "exceptionalNormalizationCount": 1,
     "titleReviewItemCount": 341,
-    "recordSha256": "c6af934ef0599e4dd6443b90767654f89ca64c7fbe3b8e067896357d45730289",
+    "recordSha256": "a4229ad7630076a4e166cc2758c220ec63554519f2d1754a5fe292cd5af53647",
     "relatedPrintableRule": "candidate-union-from-shared-routed-hubs-and-primary-hub-existing-relations; score=1000000-primary-hub-share+100000-per-additional-shared-hub+10000-per-ranked-related-hub; unique-title-first; assetId-ascending-final-tie-break; maximum-12",
     "relatedHubRule": "existing-membership-or-routed-hub-relationship-only; parent-family-requires-shared-primary-members; thin-hubs-require-direct-membership; promotion-cluster-cap-1; stable-score-and-hubId-tie-break; maximum-6"
   },

@@ -1,33 +1,23 @@
 import type { ColoringHub } from "@/lib/coloring/types";
 
 import { Breadcrumbs, type BreadcrumbItem } from "@/components/site/Breadcrumbs";
-import { getCollectionCount } from "@/lib/coloring/collectionCounts";
 
 type CollectionPageHeaderProps = {
   hub: ColoringHub;
   intro: string;
   title?: string;
   page?: number;
-  showFacts?: boolean;
 };
 
-export function CollectionPageHeader({ hub, intro, title = hub.h1, page = 1, showFacts = true }: CollectionPageHeaderProps) {
+export function CollectionPageHeader({ hub, intro, title = hub.h1, page = 1 }: CollectionPageHeaderProps) {
   const heading = page > 1 ? `${title}, Page ${page}` : title;
   const breadcrumbs = getBreadcrumbs(hub, page);
-  const collectionCount = getCollectionCount(hub);
 
   return (
     <header className="collection-page-header" data-page-section="page-header">
       <Breadcrumbs items={breadcrumbs} />
       <h1 className="page-title page-title-wide">{heading}</h1>
       <p className="page-intro">{intro}</p>
-      {showFacts ? (
-        <ul className="hero-facts" aria-label="Collection summary">
-          <li><strong>{collectionCount.toLocaleString()}</strong> printable pages</li>
-          <li>Images and titles open printable pages</li>
-          <li>Print and download actions stay separate</li>
-        </ul>
-      ) : null}
     </header>
   );
 }

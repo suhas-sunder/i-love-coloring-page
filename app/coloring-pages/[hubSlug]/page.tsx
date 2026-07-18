@@ -23,6 +23,7 @@ export async function generateMetadata({ params }: HubPageProps): Promise<Metada
   return buildColoringMetadata(hub.route, {
     fallbackTitle: hub.metaTitle,
     fallbackDescription: hub.metaDescription,
+    indexable: hub.indexable,
   });
 }
 

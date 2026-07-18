@@ -1,69 +1,155 @@
 #!/usr/bin/env node
 
-import { createHash } from "node:crypto";
 import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const SCRIPT_PATH = fileURLToPath(import.meta.url);
 const DEFAULT_ROOT = path.resolve(path.dirname(SCRIPT_PATH), "..", "..");
+export const EDITORIAL_PATH = "src/config/hub-editorial-content.json";
 export const RUNTIME_HUBS_PATH = "src/generated/coloring/runtime-hubs.json";
-const INTERNAL_INTRO_PATTERNS = [
-  /grouped from descriptive filenames and approved production metadata\./i,
-  /supported by actual runtime assets\./i,
-];
+const OUTPUTS = {
+  seoPages: "src/generated/coloring/runtime-seo-pages.json",
+  hubSeo: "src/generated/coloring/runtime-hub-seo-content.json",
+  social: "src/generated/coloring/runtime-social-metadata.json",
+};
+const FORBIDDEN = /production assets|asset rotation|three-day schedule|no indexable per-image pages|images and titles open printable pages|print and download actions stay separate|using this collection|choose a printable/i;
 
 export async function applyRuntimePublicContentQuality({ repoRoot = DEFAULT_ROOT, write = true } = {}) {
-  const source = JSON.parse(await readFile(path.join(repoRoot, RUNTIME_HUBS_PATH), "utf8"));
-  const output = applyPublicContentQuality(source);
-  if (write) await writeFile(path.join(repoRoot, RUNTIME_HUBS_PATH), `${JSON.stringify(output, null, 2)}\n`, "utf8");
+  const editorial = await readJson(repoRoot, EDITORIAL_PATH);
+  const hubs = await readJson(repoRoot, RUNTIME_HUBS_PATH);
+  const seoPages = await readJson(repoRoot, OUTPUTS.seoPages);
+  const hubSeo = await readJson(repoRoot, OUTPUTS.hubSeo);
+  const social = await readJson(repoRoot, OUTPUTS.social);
+  const output = applyPublicContentQuality(hubs, editorial);
+  const derived = {
+    seoPages: updateSeoPages(seoPages, output),
+    hubSeo: buildHubSeoManifest(hubSeo, output),
+    social: updateSocialMetadata(social, output),
+  };
+  if (write) {
+    await Promise.all([
+      writeJson(repoRoot, RUNTIME_HUBS_PATH, output),
+      ...Object.entries(derived).map(([key, value]) => writeJson(repoRoot, OUTPUTS[key], value)),
+    ]);
+  }
   return output;
 }
 
-export function applyPublicContentQuality(source) {
+export function applyPublicContentQuality(source, editorialManifest) {
   const output = structuredClone(source);
-  const membershipHashBefore = hashMembership(output.hubs);
+  const records = editorialManifest.hubs;
   for (const hub of output.hubs) {
-    if (!INTERNAL_INTRO_PATTERNS.some((pattern) => pattern.test(hub.intro))) continue;
-    hub.intro = buildApprovedIntro(hub);
-  }
-  const membershipHashAfter = hashMembership(output.hubs);
-  if (membershipHashAfter !== membershipHashBefore) throw new Error("Public content quality changed hub membership");
-
-  const qualityControlledIntroCount = output.hubs.filter((hub) => isApprovedIntro(hub.intro)).length;
-  const internalWordingCount = output.hubs.filter((hub) => INTERNAL_INTRO_PATTERNS.some((pattern) => pattern.test(hub.intro))).length;
-  if (internalWordingCount !== 0) throw new Error("Internal hub introduction wording remains");
-  for (const hub of output.hubs) {
+    const editorial = records[hub.hubId];
+    if (!editorial) throw new Error(`Missing explicit editorial content: ${hub.hubId}`);
+    hub.contentTier = editorial.tier;
+    hub.editorial = structuredClone(editorial);
+    hub.intro = editorial.introduction;
+    hub.metaTitle = hub.route === "/coloring-pages" ? "Printable Coloring Pages" : collectionPageTitle(hub.title);
+    hub.metaDescription = editorial.introduction;
     if (hub.h1 !== hub.title) throw new Error(`Hub H1/title mismatch: ${hub.hubId}`);
-    if (hub.assetCount !== hub.assetIds.length) throw new Error(`Hub asset count mismatch: ${hub.hubId}`);
+    if (hub.assetCount !== new Set(hub.assetIds).size) throw new Error(`Hub asset count mismatch: ${hub.hubId}`);
   }
+  const indexable = output.hubs.filter((hub) => hub.indexable);
+  const normalizedIntros = indexable.map((hub) => normalize(hub.intro));
+  if (new Set(normalizedIntros).size !== normalizedIntros.length) throw new Error("Duplicate editorial introductions remain");
+  if (output.hubs.some((hub) => FORBIDDEN.test(JSON.stringify(hub.editorial)))) throw new Error("Internal wording remains in hub editorial content");
   output.summary = {
     ...output.summary,
-    publicContentQualityVersion: 1,
-    qualityControlledIntroCount,
-    internalIntroWordingCount: internalWordingCount,
+    publicContentQualityVersion: 2,
+    editorialSource: EDITORIAL_PATH,
+    explicitEditorialRecordCount: output.hubs.length,
+    indexableEditorialRecordCount: indexable.length,
+    duplicateIndexableIntroductionCount: 0,
+    internalIntroWordingCount: 0,
+    contentTierCounts: Object.fromEntries(["A", "B", "C", "D"].map((tier) => [tier, output.hubs.filter((hub) => hub.contentTier === tier).length])),
   };
   return output;
 }
 
-function buildApprovedIntro(hub) {
-  const count = hub.assetCount.toLocaleString("en-US");
-  if (hub.route === "/coloring-pages") {
-    return `Browse ${count} printable pages in the full collection, then search or filter the available designs.`;
-  }
-  return `Browse ${count} printable pages in the ${collectionLabel(hub.title)} collection, then search or filter the available designs.`;
+function updateSeoPages(source, hubsManifest) {
+  const hubByRoute = new Map(hubsManifest.hubs.map((hub) => [hub.route, hub]));
+  return {
+    ...source,
+    runId: "runtime-seo-pages-editorial-v2",
+    pages: source.pages.map((page) => {
+      const hub = hubByRoute.get(page.path);
+      if (!hub) return page;
+      return {
+        ...page,
+        pageTitle: hub.title,
+        metaTitle: hub.metaTitle,
+        metaDescription: hub.metaDescription,
+        h1: hub.h1,
+        shortIntro: hub.intro,
+        noIndex: !hub.indexable,
+        sitemap: hub.sitemap,
+        content: null,
+      };
+    }),
+  };
 }
 
-function isApprovedIntro(value) {
-  return /^Browse [\d,]+ printable pages (?:in the .+ collection|in the full collection), then search or filter the available designs\.$/.test(value);
+function buildHubSeoManifest(source, hubsManifest) {
+  return {
+    generatedAt: source.generatedAt,
+    phase: "explicit-hub-editorial-v2",
+    runId: "runtime-hub-seo-editorial-v2",
+    source: EDITORIAL_PATH,
+    hubs: hubsManifest.hubs.map((hub) => ({
+      pageType: "hubPage",
+      hubId: hub.hubId,
+      slug: hub.slug,
+      route: hub.route,
+      canonicalPath: hub.route,
+      title: hub.title,
+      pageTitle: hub.title,
+      metaTitle: hub.metaTitle,
+      metaDescription: hub.metaDescription,
+      shortIntro: hub.intro,
+      contentTier: hub.contentTier,
+      editorial: hub.editorial,
+      indexable: hub.indexable,
+      sitemap: hub.sitemap,
+    })),
+  };
 }
 
-function collectionLabel(title) {
-  return title.replace(/\s+Coloring Pages$/i, "").trim();
+function updateSocialMetadata(source, hubsManifest) {
+  const hubByRoute = new Map(hubsManifest.hubs.map((hub) => [hub.route, hub]));
+  return {
+    ...source,
+    runId: "runtime-social-metadata-editorial-v2",
+    pages: source.pages.map((page) => {
+      const hub = hubByRoute.get(page.path);
+      if (!hub) return page;
+      return {
+        ...page,
+        title: hub.metaTitle,
+        description: hub.metaDescription,
+        openGraph: { ...page.openGraph, title: hub.metaTitle, description: hub.metaDescription, urlPath: hub.route },
+        twitter: { ...page.twitter, title: hub.metaTitle, description: hub.metaDescription },
+        pinterest: { ...page.pinterest, description: hub.metaDescription },
+      };
+    }),
+  };
 }
 
-function hashMembership(hubs) {
-  return createHash("sha256").update(JSON.stringify(hubs.map((hub) => ({ hubId: hub.hubId, assetIds: hub.assetIds })))).digest("hex");
+function collectionPageTitle(title) {
+  const value = title.trim();
+  return /\bColoring Pages\b/i.test(value) ? value : `${value} Coloring Pages`;
+}
+
+function normalize(value) {
+  return String(value).toLowerCase().replace(/\s+/g, " ").trim();
+}
+
+async function readJson(repoRoot, relativePath) {
+  return JSON.parse(await readFile(path.join(repoRoot, relativePath), "utf8"));
+}
+
+async function writeJson(repoRoot, relativePath, value) {
+  await writeFile(path.join(repoRoot, relativePath), `${JSON.stringify(value, null, 2)}\n`, "utf8");
 }
 
 if (path.resolve(process.argv[1] || "") === SCRIPT_PATH) {

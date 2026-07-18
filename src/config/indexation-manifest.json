@@ -1,8 +1,8 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "reviewedOn": "2026-07-18",
-  "activated": false,
-  "note": "Audit recommendations only. Runtime metadata, redirects, robots, and sitemap generation do not consume this manifest yet.",
+  "activated": true,
+  "note": "Runtime taxonomy policy v2 consumes resolved decisions. Easy and For Kids remain explicitly unactivated pending independent difficulty/audience classification evidence.",
   "allowedRecommendations": [
     "retain and index",
     "retain publicly but noindex",
@@ -23,7 +23,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "Primary gallery destination with comprehensive browsing intent.",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_animals",
@@ -36,7 +36,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 14.4% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_anime_girls",
@@ -49,7 +49,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_bakery",
@@ -62,7 +62,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_bats",
@@ -75,7 +75,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 25.9% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_bears",
@@ -88,7 +88,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 6.7% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_bees",
@@ -101,7 +101,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 6.7% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_beetles",
@@ -114,7 +114,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 8.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_birds",
@@ -127,7 +127,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 89.9% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_birthday",
@@ -140,7 +140,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_brachiosaurus",
@@ -153,7 +153,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_bridges",
@@ -166,7 +166,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 0.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_buildings",
@@ -179,7 +179,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 0.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_butterflies",
@@ -192,7 +192,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 7.7% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_cakes",
@@ -205,7 +205,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 4.8% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_cars",
@@ -218,7 +218,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 94.3% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_castles",
@@ -231,7 +231,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 0.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_cats",
@@ -244,7 +244,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 7.3% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_chess",
@@ -257,7 +257,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_chibi",
@@ -270,7 +270,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_chibi_dogs",
@@ -283,7 +283,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_chibi_flowers",
@@ -296,7 +296,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_christmas",
@@ -309,7 +309,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_christmas_dogs",
@@ -322,7 +322,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_cows",
@@ -335,7 +335,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 0.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_crabs",
@@ -348,7 +348,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 0.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_cute",
@@ -361,7 +361,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 7.5% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_deer",
@@ -374,33 +374,33 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_detailed_for_adults",
       "route": "/coloring-pages/detailed-for-adults",
       "currentIndexable": true,
       "currentSitemapInclusion": true,
-      "recommendation": "correct collection membership",
+      "recommendation": "retain and index",
       "consolidationTarget": null,
       "redirectTarget": null,
-      "proposedSitemapInclusion": false,
-      "rationale": "Distinct labels imply different intents, but the inventories are exact or more than 99.8% similar; repair the classification rule before an indexation decision.",
+      "proposedSitemapInclusion": true,
+      "rationale": "Corrected membership now represents a distinct, evidence-backed browsing intent.",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_dinosaurs",
       "route": "/coloring-pages/dinosaurs",
       "currentIndexable": true,
       "currentSitemapInclusion": true,
-      "recommendation": "manual editorial review",
+      "recommendation": "retain and index",
       "consolidationTarget": null,
       "redirectTarget": null,
-      "proposedSitemapInclusion": false,
-      "rationale": "The intent may be legitimate, but current membership is highly overlapping and does not adequately demonstrate the stated distinction.",
+      "proposedSitemapInclusion": true,
+      "rationale": "The inventory is the dinosaur subset of the broader Prehistoric Animals hub.",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_diplodocus",
@@ -413,7 +413,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_dogs",
@@ -426,7 +426,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 92.3% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_dolphins",
@@ -439,7 +439,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 7.1% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_dragons",
@@ -452,7 +452,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 3.1% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_ducks",
@@ -465,7 +465,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 5.3% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_dungeon",
@@ -478,7 +478,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_eagles",
@@ -491,7 +491,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 4.5% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_easy",
@@ -501,8 +501,8 @@
       "recommendation": "manual editorial review",
       "consolidationTarget": null,
       "redirectTarget": null,
-      "proposedSitemapInclusion": false,
-      "rationale": "The intent may be legitimate, but current membership is highly overlapping and does not adequately demonstrate the stated distinction.",
+      "proposedSitemapInclusion": true,
+      "rationale": "The route has a distinct difficulty intent, but current metadata does not provide an independent difficulty signal; destructive membership or indexation changes remain deferred.",
       "dateReviewed": "2026-07-18",
       "activated": false
     },
@@ -517,7 +517,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 11.8% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_fairies",
@@ -530,7 +530,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 8.1% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_fantasy",
@@ -543,7 +543,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 57.6% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_fantasy_creatures",
@@ -556,7 +556,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 39.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_fantasy_dragons",
@@ -569,7 +569,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_fish",
@@ -582,7 +582,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_flowers",
@@ -595,7 +595,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 92.5% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_food",
@@ -608,7 +608,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 1.9% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_for_kids",
@@ -618,8 +618,8 @@
       "recommendation": "manual editorial review",
       "consolidationTarget": null,
       "redirectTarget": null,
-      "proposedSitemapInclusion": false,
-      "rationale": "The intent may be legitimate, but current membership is highly overlapping and does not adequately demonstrate the stated distinction.",
+      "proposedSitemapInclusion": true,
+      "rationale": "The audience route remains useful, but the present inventory is almost identical to Easy and needs future editorial classification evidence.",
       "dateReviewed": "2026-07-18",
       "activated": false
     },
@@ -634,7 +634,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_foxes",
@@ -647,7 +647,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 10.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_garden",
@@ -660,7 +660,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 53.8% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_garden_flowers",
@@ -673,20 +673,20 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_geometric",
       "route": "/coloring-pages/geometric",
       "currentIndexable": true,
       "currentSitemapInclusion": true,
-      "recommendation": "correct collection membership",
+      "recommendation": "retain and index",
       "consolidationTarget": null,
       "redirectTarget": null,
-      "proposedSitemapInclusion": false,
-      "rationale": "Distinct labels imply different intents, but the inventories are exact or more than 99.8% similar; repair the classification rule before an indexation decision.",
+      "proposedSitemapInclusion": true,
+      "rationale": "Corrected membership now represents a distinct, evidence-backed browsing intent.",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_geometric_dogs",
@@ -699,7 +699,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 95.3% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_giraffes",
@@ -712,7 +712,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 5.3% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_griffins",
@@ -725,7 +725,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 0.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_halloween",
@@ -738,7 +738,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_hedgehogs",
@@ -751,7 +751,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 6.7% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_hippos",
@@ -764,7 +764,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 6.3% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_holidays",
@@ -777,7 +777,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 0.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_horses",
@@ -790,7 +790,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 12.5% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_houses",
@@ -803,7 +803,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 1.9% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_hydras",
@@ -816,7 +816,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 0.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_indoor_plants",
@@ -829,7 +829,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_insects",
@@ -842,7 +842,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 77.1% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_kawaii",
@@ -855,7 +855,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_knights",
@@ -868,7 +868,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 7.7% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_koalas",
@@ -881,7 +881,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 4.5% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_lions",
@@ -894,7 +894,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 18.8% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_lizards",
@@ -907,7 +907,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 3.1% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_llamas",
@@ -920,7 +920,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 6.7% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_mammoths",
@@ -933,20 +933,20 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 0.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_mandalas",
       "route": "/coloring-pages/mandalas",
       "currentIndexable": true,
       "currentSitemapInclusion": true,
-      "recommendation": "correct collection membership",
+      "recommendation": "retain and index",
       "consolidationTarget": null,
       "redirectTarget": null,
-      "proposedSitemapInclusion": false,
-      "rationale": "Distinct labels imply different intents, but the inventories are exact or more than 99.8% similar; repair the classification rule before an indexation decision.",
+      "proposedSitemapInclusion": true,
+      "rationale": "Corrected membership now represents a distinct, evidence-backed browsing intent.",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_medieval_fantasy",
@@ -959,7 +959,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_megalodon",
@@ -972,7 +972,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_mermaids",
@@ -985,7 +985,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 0.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_monkeys",
@@ -998,7 +998,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 7.1% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_moose",
@@ -1011,7 +1011,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_mushrooms",
@@ -1024,7 +1024,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 2.8% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_mythology",
@@ -1037,7 +1037,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_ocean",
@@ -1050,7 +1050,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 6.5% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_octopus",
@@ -1063,7 +1063,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_otters",
@@ -1076,7 +1076,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 0.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_owls",
@@ -1089,7 +1089,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 10.7% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_pandas",
@@ -1102,7 +1102,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 6.7% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_pegasus",
@@ -1115,7 +1115,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_penguins",
@@ -1128,7 +1128,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 15.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_phoenix",
@@ -1141,7 +1141,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_planes",
@@ -1154,7 +1154,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_plants",
@@ -1167,7 +1167,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 21.8% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_playing_cards",
@@ -1180,7 +1180,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_plushie_animals",
@@ -1193,7 +1193,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_plushie_cats",
@@ -1206,7 +1206,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_plushie_dogs",
@@ -1219,7 +1219,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_plushie_dragons",
@@ -1232,7 +1232,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_plushie_triceratops",
@@ -1245,7 +1245,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_plushie_unicorns",
@@ -1258,7 +1258,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_plushie_whales",
@@ -1271,7 +1271,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_plushies",
@@ -1284,20 +1284,20 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 9.3% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_prehistoric_animals",
       "route": "/coloring-pages/prehistoric-animals",
       "currentIndexable": true,
       "currentSitemapInclusion": true,
-      "recommendation": "manual editorial review",
+      "recommendation": "retain and index",
       "consolidationTarget": null,
       "redirectTarget": null,
-      "proposedSitemapInclusion": false,
-      "rationale": "The intent may be legitimate, but current membership is highly overlapping and does not adequately demonstrate the stated distinction.",
+      "proposedSitemapInclusion": true,
+      "rationale": "The broader hub adds 31 extinct-animal records, including mammoths and saber-toothed tigers.",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_pumpkins",
@@ -1310,7 +1310,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 21.7% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_rabbits",
@@ -1323,7 +1323,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 13.6% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_reindeer",
@@ -1336,7 +1336,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_reptiles",
@@ -1349,33 +1349,33 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 62.8% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_robots",
       "route": "/coloring-pages/robots",
       "currentIndexable": true,
       "currentSitemapInclusion": true,
-      "recommendation": "manual editorial review",
+      "recommendation": "retain and index",
       "consolidationTarget": null,
       "redirectTarget": null,
-      "proposedSitemapInclusion": false,
-      "rationale": "weak filename/title evidence: 0.0% of members contain a route-subject token; small size is not the decision criterion, but the current titles do not independently verify the intended subject.",
+      "proposedSitemapInclusion": true,
+      "rationale": "All nine records have direct robot subject evidence.",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_roses",
       "route": "/coloring-pages/roses",
       "currentIndexable": true,
       "currentSitemapInclusion": true,
-      "recommendation": "manual editorial review",
+      "recommendation": "retain and index",
       "consolidationTarget": null,
       "redirectTarget": null,
-      "proposedSitemapInclusion": false,
-      "rationale": "weak filename/title evidence: 11.1% of members contain a route-subject token; small size is not the decision criterion, but the current titles do not independently verify the intended subject.",
+      "proposedSitemapInclusion": true,
+      "rationale": "All nine records have direct rose subject evidence, including stylized and origami forms.",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_santa",
@@ -1388,7 +1388,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_sea_life",
@@ -1401,7 +1401,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 61.9% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_sharks",
@@ -1414,7 +1414,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 0.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_sheep",
@@ -1427,7 +1427,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_sloths",
@@ -1440,7 +1440,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 7.1% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_snakes",
@@ -1453,7 +1453,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 11.1% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_spiders",
@@ -1466,7 +1466,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 3.6% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_st_patricks_day",
@@ -1479,7 +1479,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_stegosaurus",
@@ -1492,7 +1492,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_sushi",
@@ -1505,7 +1505,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_t_rex",
@@ -1518,7 +1518,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_tigers",
@@ -1531,7 +1531,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 4.7% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_trains",
@@ -1544,7 +1544,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 97.1% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_trees",
@@ -1557,7 +1557,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 2.6% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_triceratops",
@@ -1570,7 +1570,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_turtles",
@@ -1583,7 +1583,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 4.5% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_unicorns",
@@ -1596,7 +1596,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 5.3% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_vehicles",
@@ -1609,7 +1609,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 0.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_velociraptors",
@@ -1622,7 +1622,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 4.5% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_whales",
@@ -1635,7 +1635,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 2.5% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_witches",
@@ -1648,7 +1648,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 6.3% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_wizards",
@@ -1661,7 +1661,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 0.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_wolves",
@@ -1674,7 +1674,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 4.4% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_world_landmarks",
@@ -1687,7 +1687,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_wyverns",
@@ -1700,7 +1700,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 0.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_zebras",
@@ -1713,7 +1713,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "weak filename/title evidence: 5.3% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_dodo",
@@ -1726,7 +1726,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_bamboo",
@@ -1739,7 +1739,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_steam_train",
@@ -1752,20 +1752,20 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_birthday_celebration",
       "route": "/coloring-pages/birthday-celebration",
-      "currentIndexable": true,
-      "currentSitemapInclusion": true,
-      "recommendation": "consolidate into a stronger parent",
+      "currentIndexable": false,
+      "currentSitemapInclusion": false,
+      "recommendation": "retain publicly but noindex",
       "consolidationTarget": "hub_birthday",
       "redirectTarget": null,
       "proposedSitemapInclusion": false,
-      "rationale": "The inventory overlaps Birthday by about 90%, and the names do not communicate a reliably distinct browsing task.",
+      "rationale": "All 190 records already belong to Birthday; the variant contributes no unique printable and remains available as a crawlable, self-canonical public URL.",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_christmas_plushie",
@@ -1778,7 +1778,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_halloween_costume",
@@ -1791,7 +1791,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_summoning",
@@ -1804,7 +1804,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_terrier",
@@ -1817,20 +1817,20 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_woolly_mammoth",
       "route": "/coloring-pages/woolly-mammoth",
-      "currentIndexable": true,
-      "currentSitemapInclusion": true,
-      "recommendation": "consolidate into a stronger parent",
+      "currentIndexable": false,
+      "currentSitemapInclusion": false,
+      "recommendation": "retain publicly but noindex",
       "consolidationTarget": "hub_mammoths",
       "redirectTarget": null,
       "proposedSitemapInclusion": false,
-      "rationale": "Nineteen of twenty Mammoths records are shared; confirm whether the single non-woolly record warrants a separate parent/child pair.",
+      "rationale": "All 19 records already belong to Mammoths; the singular variant contributes no unique printable and remains available as a crawlable, self-canonical public URL.",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_saber_toothed_tiger",
@@ -1843,7 +1843,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_magic",
@@ -1856,7 +1856,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_ankylosaurus",
@@ -1869,7 +1869,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_trick_or_treat",
@@ -1882,7 +1882,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_lily",
@@ -1895,7 +1895,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_forget_me_not",
@@ -1908,7 +1908,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_mosasaurus",
@@ -1921,7 +1921,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_plesiosaurus",
@@ -1934,7 +1934,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_pterodactyl",
@@ -1947,7 +1947,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_iguanodon",
@@ -1960,7 +1960,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_bulldog",
@@ -1973,7 +1973,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_collie",
@@ -1986,7 +1986,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_cookie",
@@ -1999,7 +1999,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_daisy",
@@ -2012,7 +2012,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_pteranodon",
@@ -2025,7 +2025,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_nigiri",
@@ -2038,7 +2038,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_orchid",
@@ -2051,7 +2051,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_poppy",
@@ -2064,7 +2064,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_lotus",
@@ -2077,7 +2077,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_palm",
@@ -2090,7 +2090,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_leprechaun",
@@ -2103,7 +2103,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_salmon",
@@ -2116,7 +2116,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     },
     {
       "hubId": "hub_gingerbread",
@@ -2129,7 +2129,7 @@
       "proposedSitemapInclusion": true,
       "rationale": "direct filename/title evidence: 100.0% of members contain a route-subject token",
       "dateReviewed": "2026-07-18",
-      "activated": false
+      "activated": true
     }
   ]
 }

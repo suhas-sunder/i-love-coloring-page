@@ -22,6 +22,7 @@ import type {
   GalleryFilterTag,
   GallerySearchEntry,
   HubGalleryUx,
+  HubEditorialContent,
   PagedGallery,
   PublicColoringItem,
   RuntimePrintable,
@@ -65,7 +66,14 @@ type SeoPagesManifest = {
 };
 
 type HubSeoContentManifest = {
-  hubs: Array<SeoPageContent & { hubId: string; slug: string; route: string }>;
+  hubs: Array<{
+    hubId: string;
+    slug: string;
+    route: string;
+    contentTier: ColoringHub["contentTier"];
+    editorial: HubEditorialContent;
+    shortIntro: string;
+  }>;
 };
 
 type SocialMetadataManifest = {

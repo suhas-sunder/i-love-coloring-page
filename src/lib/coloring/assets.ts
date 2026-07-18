@@ -52,6 +52,8 @@ type PrintableAssetRecord = {
 
 export type ResolvedColoringAssetUrls = {
   preview: string | null;
+  gridThumbnail: string | null;
+  cardThumbnail: string | null;
   previewFallback: string | null;
   webp: string | null;
   thumbnail: string | null;
@@ -100,6 +102,8 @@ export function resolveColoringItemAssetUrls(assetSubpaths: AssetSubpathsLike): 
 
   return {
     preview: webp || png || thumbnail,
+    gridThumbnail: webp || png || thumbnail,
+    cardThumbnail: webp || png || thumbnail,
     previewFallback: png || thumbnail,
     webp,
     thumbnail,
