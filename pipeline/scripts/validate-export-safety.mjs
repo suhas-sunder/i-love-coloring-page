@@ -17,6 +17,7 @@ const checks = {
   duplicatePrintablePrefix: /\/printables\/printables\//i,
   staleFragmentNavigation: /href="\#(?:image|printable)-/i,
   liveAdvertisementCode: /adsbygoogle|pagead2\.googlesyndication|ca-pub-|google_ad_client|googletagservices|doubleclick\.net/i,
+  metadataReviewLeak: /unapprovedDetailCandidates|unapprovedAudienceCandidates|metadata-review-decisions|pipeline[\\/]review[\\/]metadata-review/i,
 };
 const visibleChecks = {
   svgDownloadOrLink: />\s*Download SVG\s*</i,

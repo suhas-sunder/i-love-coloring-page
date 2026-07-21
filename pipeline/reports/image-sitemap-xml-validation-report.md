@@ -22,6 +22,6 @@
 | noUnsupportedImageFields | pass |
 | exactManifestPairing | pass |
 | noPrivateInternalData | pass |
-| fileSizeBytes | 2478509 |
+| fileSizeBytes | 2478095 |
 
 No XML validation blockers were found.

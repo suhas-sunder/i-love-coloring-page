@@ -2414,6 +2414,12 @@
   width: min(440px, calc(100vw - 32px));
 }
 
+.header-disclosure-seasonal .header-disclosure-panel {
+  right: 0;
+  left: auto;
+  transform: none;
+}
+
 .mobile-header-button {
   display: grid;
   width: 44px;
@@ -2862,6 +2868,12 @@
     position: fixed;
     top: 64px;
     left: 50%;
+  }
+
+  .header-disclosure-seasonal .header-disclosure-panel {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 

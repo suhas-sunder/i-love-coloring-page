@@ -45,14 +45,14 @@ Official guidance supports a people-first, original, substantial-value approach 
 
 ## Automated safeguards
 
-- **PASS** — identical introductions across indexable hubs: 0 duplicated route occurrences
-- **PASS** — near-identical introduction templates: 163 normalized templates across 163 hubs
-- **PASS** — forbidden internal terminology: 0 occurrences
-- **PASS** — one related-collections section maximum: 1 shared component occurrences
-- **PASS** — visible count consistency: 0 mismatches
-- **PASS** — noindex routes excluded from sitemap: current runtime metadata
-- **PASS** — navigation destinations exist: 0 invalid destinations
-- **PASS** — redirected routes absent from navigation: active manifest has no redirects
-- **PASS** — exact inventory duplicates have explicit exception: 0 exact pairs
+- **PASS**: identical introductions across indexable hubs: 0 duplicated route occurrences
+- **PASS**: near-identical introduction templates: 163 normalized templates across 163 hubs
+- **PASS**: forbidden internal terminology: 0 occurrences
+- **PASS**: one related-collections section maximum: 1 shared component occurrences
+- **PASS**: visible count consistency: 0 mismatches
+- **PASS**: noindex routes excluded from sitemap: current runtime metadata
+- **PASS**: navigation destinations exist: 0 invalid destinations
+- **PASS**: redirected routes absent from navigation: active manifest has no redirects
+- **PASS**: exact inventory duplicates have explicit exception: 0 exact pairs
 
 The hub and printable content-quality gates pass. The former 6,352-route template now has zero occurrences; 6,126 routes have concise provenance-backed summaries and 226 rely on structured verified details without artificial prose.

@@ -1,9 +1,9 @@
 # Editorial Content Review
 
-- Tier A — core: 16
-- Tier B — focused: 121
-- Tier C — small distinct: 23
-- Tier D — non-independent: 3
+- Tier A: core: 16
+- Tier B: focused: 121
+- Tier C: small distinct: 23
+- Tier D: non-independent: 3
 - Explicit records: 163
 - Indexable hubs with explicit records: 160
 - Duplicate indexable introductions: 0
