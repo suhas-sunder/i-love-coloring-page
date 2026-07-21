@@ -1,0 +1,5 @@
+surface,asset_role,raw_dimensions,frame_ratio,fit,expected_result,decision
+homepage_collection_card,public_webp_preview,341x512,3:4,contain,portrait line art uses more of the frame without clipping,implemented
+compact_collection_card,public_webp_preview,341x512,4:5,contain,compact card preserves full line art,implemented
+hub_printable_grid,public_webp_preview,341x512,2:3,contain,portrait line art avoids wide side wells,implemented
+printable_detail,public_webp_preview,341x512,asset_truthful,contain,principal preview remains width/height truthful,retained

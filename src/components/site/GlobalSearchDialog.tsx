@@ -104,6 +104,7 @@ export function GlobalSearchDialog({ open, onRequestClose, onNavigate }: GlobalS
             <h2 id={titleId}>Search coloring pages</h2>
             <p>Find a collection or open a printable page.</p>
           </div>
+          <button className="global-search-close" type="button" onClick={onRequestClose}>Close</button>
         </div>
 
         <label className="global-search-field" htmlFor={inputId}>
@@ -178,7 +179,6 @@ export function GlobalSearchDialog({ open, onRequestClose, onNavigate }: GlobalS
           <Link className="button button-subtle" href={browseAllColoringPagesLink.href} onClick={onNavigate} prefetch={false}>
             {browseAllColoringPagesLink.label}
           </Link>
-          <button className="button button-ghost" type="button" onClick={onRequestClose}>Close</button>
         </div>
       </section>
     </div>,

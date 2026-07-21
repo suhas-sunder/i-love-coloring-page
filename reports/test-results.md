@@ -1,5 +1,14 @@
 # Test results
 
+## Final refinement verification — 2026-07-21
+
+- `npm run typecheck` — passed.
+- `npm test` — passed: 146 tests, 0 failures.
+- `npm run build` — passed: 6,920 static routes generated.
+- `npm run validate:refinement` — passed.
+- `npm run validate:static-routes`, `validate:accessibility`, `validate:export-safety`, `validate:image-sitemap`, `validate:crawl`, `validate:page-layout`, and `validate:payload` — passed.
+- `npm run verify:production-readiness` — intentionally non-zero: technical checks passed, but 9 owner/legal/account/deployment gates remain. This is a release block, not a test regression.
+
 Audit date: 2026-07-18
 
 ## Passing current checks

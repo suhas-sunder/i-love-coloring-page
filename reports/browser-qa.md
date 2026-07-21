@@ -34,4 +34,9 @@ Fantasy Abyss Wyrm verified:
 - Terms does not invent ownership, licensing, governing law, operator identity, or permitted-use facts.
 - Machine-oriented `production-default`, `production-readiness gate`, and repository terminology were removed from visible trust copy.
 
-Pixel-level dropdown, card-frame, compact-height, and cross-breakpoint visual polish remains assigned to the next task.
+## Refinement follow-up
+
+- Collection cards now use portrait-first frames (3:4 standard and 4:5 compact); printable gallery cards use a 2:3 frame. Contain-fit remains in place, so no original line art is cropped.
+- Categories uses trigger-relative positioning at roomy desktop widths and a viewport-bounded fixed fallback at compact desktop widths. At 1024 pixels it stayed within the viewport after the correction.
+- Mobile search at 390 x 844 is a compact safe-area top sheet with a visible header Close action. It no longer reserves full-page blank space below the single Browse action.
+- Detailed visual production verification remains required after deployment. See `reports/pre-refinement-visual-audit.md` and `reports/live-verification-plan.md`.

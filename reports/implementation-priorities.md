@@ -1,5 +1,9 @@
 # Implementation priorities
 
+## Current refinement status
+
+P3 now includes completed portrait-first card/grid framing, viewport-bounded desktop disclosures, a compact mobile-search top sheet with an immediate Close control, and a readable trust-page measure. The remaining P3 work is deployed-revision verification at the documented desktop/mobile widths and any future deliberate aesthetic refinements.
+
 ## P0 — correctness, crawlability, broken rendering, production defects
 
 - Preserve the completed printable preview, SSR parity, count, cache, asset-role, revision-diagnostic, and advertising-mode foundations.
