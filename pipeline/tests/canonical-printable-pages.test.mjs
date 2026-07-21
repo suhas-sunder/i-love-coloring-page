@@ -163,7 +163,7 @@ test("canonical controls and image fallbacks retain accessible native semantics"
 function buildExpectedMetadataTitles(records) {
   const suffix = " | Free Printable";
   const subjectLimit = 72 - suffix.length;
-  const designReserve = " — Design 9999".length;
+  const designReserve = ": Design 9999".length;
   const groups = new Map();
   for (const record of records) {
     const collisionKey = truncateAtWord(naturalTitle(record), subjectLimit - designReserve).toLowerCase();
@@ -175,7 +175,7 @@ function buildExpectedMetadataTitles(records) {
   for (const group of groups.values()) {
     group.sort((left, right) => left.assetId.localeCompare(right.assetId));
     group.forEach((record, index) => {
-      const qualifier = group.length > 1 ? ` — Design ${index + 1}` : "";
+      const qualifier = group.length > 1 ? `: Design ${index + 1}` : "";
       const subject = `${truncateAtWord(naturalTitle(record), subjectLimit - qualifier.length)}${qualifier}`;
       titles.set(record.assetId, `${subject}${suffix}`);
     });

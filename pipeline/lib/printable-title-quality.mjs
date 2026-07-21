@@ -1,10 +1,12 @@
 import { createHash } from "node:crypto";
 
-export const DISPLAY_DESIGN_SEPARATOR = " — Design ";
+export const DISPLAY_DESIGN_SEPARATOR = ": Design ";
 export const METADATA_TITLE_SUFFIX = " | Free Printable";
 export const METADATA_TITLE_MAX_LENGTH = 128;
 
-const DESIGN_SUFFIX_PATTERN = /\s+—\s+Design\s+(\d+)$/i;
+const LEGACY_DESIGN_SEPARATOR = String.fromCodePoint(0x2014);
+const DESIGN_SUFFIX_PATTERN = new RegExp(`\\s+(?::|${LEGACY_DESIGN_SEPARATOR})\\s+Design\\s+(\\d+)$`, "i");
+const NORMALIZED_DASH_PATTERN = new RegExp(`[${[0x2010, 0x2011, 0x2012, 0x2013, 0x2014, 0x2212].map((codePoint) => String.fromCodePoint(codePoint)).join("")}]`, "g");
 const PUBLIC_TECHNICAL_PATTERN = /(?:chatgpt|\bfailed\b|pipeline|asset[ -]?id|stable[ -]?id|source filename|object key|r2\.dev|cloudflarestorage|amazonaws|file:\/\/|localhost|127\.0\.0\.1|[A-Za-z]:\\|\.(?:svg|png|webp|jpe?g)\s*$)/i;
 const PLACEHOLDER_PATTERN = /^(?:untitled|unknown|placeholder|generic coloring page|printable|coloring page)$/i;
 const HASH_FRAGMENT_PATTERN = /(?:^|[-_\s])[a-f0-9]{10,}(?:$|[-_\s])/i;
@@ -123,8 +125,8 @@ export function getDesignNumber(value) {
 export function normalizeExactTitle(value) {
   return normalizeVisibleTitle(value)
     .toLocaleLowerCase("en-US")
-    .replace(/[\u2018\u2019`\u00b4]/g, "'")
-    .replace(/[\u2010\u2011\u2012\u2013\u2014\u2212]/g, "-");
+    .replace(/[‘’`´]/g, "'")
+    .replace(NORMALIZED_DASH_PATTERN, "-");
 }
 
 export function normalizePunctuationInsensitiveTitle(value) {

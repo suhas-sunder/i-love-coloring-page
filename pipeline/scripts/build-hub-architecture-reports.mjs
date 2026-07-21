@@ -163,10 +163,10 @@ function renderEditorialReview(rows) {
   const counts = Object.fromEntries(["A", "B", "C", "D"].map((tier) => [tier, rows.filter((row) => row.tier === tier).length]));
   return `# Editorial Content Review
 
-- Tier A — core: ${counts.A}
-- Tier B — focused: ${counts.B}
-- Tier C — small distinct: ${counts.C}
-- Tier D — non-independent: ${counts.D}
+- Tier A: core: ${counts.A}
+- Tier B: focused: ${counts.B}
+- Tier C: small distinct: ${counts.C}
+- Tier D: non-independent: ${counts.D}
 - Explicit records: ${rows.length}
 - Indexable hubs with explicit records: ${current.hubs.filter((hub) => hub.indexable && hub.editorial?.introduction).length}
 - Duplicate indexable introductions: ${contentResults.summary.duplicateIntroCount}

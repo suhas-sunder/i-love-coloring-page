@@ -97,7 +97,7 @@ test("shared search ranking follows documented classes and stable tie-breaking",
   ];
   assert.deepEqual(ranking.rankSearchItems(records, "cat").map((result) => result.item.stableKey), ["b", "a", "c", "d"]);
   assert.equal(ranking.rankSearchItems([{ title: "St. Patrick’s Day", stableKey: "a" }], "st patricks-day")[0].rankClass, 1);
-  assert.equal(ranking.normalizeSearchText("  Café—Mándala  "), "cafe mandala");
+  assert.equal(ranking.normalizeSearchText("  Café: Mándala  "), "cafe mandala");
   assert.deepEqual(ranking.rankSearchItems([
     { title: "Blue Flower", stableKey: "b" },
     { title: "Blue Flower", stableKey: "a" },

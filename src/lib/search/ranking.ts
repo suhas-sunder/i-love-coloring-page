@@ -32,7 +32,7 @@ export function normalizeSearchText(value: string) {
     .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
     .replace(/[’‘`´']/g, "")
-    .replace(/[‐‑‒–—−-]/g, " ")
+    .replace(/[‐‑‒–−-]/g, " ")
     .replace(/[^a-z0-9+]+/g, " ")
     .replace(/\s+/g, " ")
     .trim();
@@ -72,8 +72,8 @@ function compareRankedResults<T extends SearchRankInput>(left: RankedSearchResul
 }
 
 function compareDesignNumbers(left: string, right: string) {
-  const leftMatch = left.match(/^(.*)\s+—\s+Design\s+(\d+)$/i);
-  const rightMatch = right.match(/^(.*)\s+—\s+Design\s+(\d+)$/i);
+  const leftMatch = left.match(/^(.*)\s+(?::)\s+Design\s+(\d+)$/i);
+  const rightMatch = right.match(/^(.*)\s+(?::)\s+Design\s+(\d+)$/i);
   if (!leftMatch || !rightMatch || normalizeSearchText(leftMatch[1]) !== normalizeSearchText(rightMatch[1])) return 0;
   return Number(leftMatch[2]) - Number(rightMatch[2]);
 }

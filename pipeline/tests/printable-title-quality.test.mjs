@@ -55,7 +55,7 @@ test("duplicate-title handling uses consistent stable Design N numbering and doe
   }
   for (const entry of titleManifest.entries) {
     assert.equal(entry.duplicateGroupSize === 1, entry.designNumber == null, entry.stableId);
-    assert.equal(entry.duplicateGroupSize > 1, / — Design \d+$/.test(entry.displayTitle), entry.stableId);
+    assert.equal(entry.duplicateGroupSize > 1, /: Design \d+$/.test(entry.displayTitle), entry.stableId);
   }
 
   const first = buildPrintableTitleAssignments([

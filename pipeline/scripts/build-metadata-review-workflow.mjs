@@ -122,7 +122,7 @@ function renderSampling(candidates) {
     if (!groups.has(key)) groups.set(key, []);
     groups.get(key).push(candidate);
   }
-  const samples = [...groups.entries()].sort(([left], [right]) => left.localeCompare(right)).flatMap(([key, entries]) => entries.slice(0, Math.min(3, entries.length)).map((entry) => `- ${key}: [${entry.title}](${entry.route}) — proposed \`${entry.candidateValue}\`.`));
+  const samples = [...groups.entries()].sort(([left], [right]) => left.localeCompare(right)).flatMap(([key, entries]) => entries.slice(0, Math.min(3, entries.length)).map((entry) => `- ${key}: [${entry.title}](${entry.route}): proposed \`${entry.candidateValue}\`.`));
   return `# Metadata review sampling\n\nThese deterministic samples make the queue auditable without claiming that a collection label proves a per-image attribute. Review the image and source context before deciding.\n\n${samples.join("\n")}\n`;
 }
 
