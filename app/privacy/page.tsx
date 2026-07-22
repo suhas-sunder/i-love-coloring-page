@@ -47,17 +47,27 @@ export default function PrivacyPage() {
         </p>
       </TrustSection>
 
+      <TrustSection title="Operator and contact">
+        <p>
+          {siteIdentity.publicOperatorDisplayName} is the public operator display used by this site. No personal name, business entity, or mailing
+          address is published. Privacy questions may be sent to <a href={`mailto:${contactEmail}`}>{contactEmail}</a>.
+        </p>
+      </TrustSection>
+
       <TrustSection title="Hosting and technical logs">
         <p>
-          Hosting, content-delivery, asset-delivery, and security infrastructure may process routine request data when a page or image is requested.
-          This may include an IP address, browser or device information, the requested URL, referrer, request time, and technical error or security
-          information. Retention, location, and access depend on the infrastructure actually serving the request.
+          The static site is configured for Netlify hosting, and current production responses show Netlify delivery behind Cloudflare. Coloring-page
+          files are requested from the site&apos;s separate public asset host. These hosting, content-delivery, asset-delivery, and security services may
+          process routine request data when a page or image is requested. This may include an IP address, browser or device information, the requested
+          URL, referrer, request time, and technical error or security information. Retention, location, and access depend on the infrastructure
+          actually serving the request.
         </p>
       </TrustSection>
 
       <TrustSection title="Current cookies, analytics, and advertising">
         <p>
-          Advertising is currently off. Pages contain no advertising script, label, reserved advertising space, publisher ID, or live ad-unit ID.
+          Advertising and related consent features are not currently active. Advertising is currently off. Pages contain no advertising script,
+          label, reserved advertising space, publisher ID, or live ad-unit ID.
         </p>
         <p>
           No site analytics tool is currently documented as active. The site does not document an active analytics or advertising cookie, but this is
@@ -85,6 +95,10 @@ export default function PrivacyPage() {
         <p>
           Parents or guardians may email <a href={`mailto:${contactEmail}`}>{contactEmail}</a>. Any future interactive feature or live advertising
           implementation requires a separate children's-privacy and age-treatment review.
+        </p>
+        <p>
+          The existence of a For Kids collection does not establish a legal or advertising classification for the entire site. The site does not ask
+          for a visitor's age or birth date and does not infer a visitor's age.
         </p>
       </TrustSection>
 

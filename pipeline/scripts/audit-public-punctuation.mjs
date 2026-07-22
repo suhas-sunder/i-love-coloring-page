@@ -124,4 +124,17 @@ async function readCsvCount(file) {
   return { source: rows.filter((row) => row.startsWith("first-party-source,")).length, output: rows.filter((row) => row.startsWith("generated-public-output,")).length, total: rows.length };
 }
 
-async function writeText(relativePath, value) { const target = path.join(ROOT, relativePath); await mkdir(path.dirname(target), { recursive: true }); await writeFile(target, value, "utf8"); }
+async function writeText(relativePath, value) {
+  const target = path.join(ROOT, relativePath);
+  await mkdir(path.dirname(target), { recursive: true });
+  const retryableCodes = new Set(["UNKNOWN", "EBUSY", "EPERM", "EACCES"]);
+  for (let attempt = 1; attempt <= 5; attempt += 1) {
+    try {
+      await writeFile(target, value, "utf8");
+      return;
+    } catch (error) {
+      if (!retryableCodes.has(error?.code) || attempt === 5) throw error;
+      await new Promise((resolve) => setTimeout(resolve, attempt * 100));
+    }
+  }
+}

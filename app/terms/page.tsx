@@ -9,7 +9,7 @@ import { getCanonicalUrl } from "@/lib/site/siteConfig";
 
 const canonical = getCanonicalUrl("/terms");
 const title = "Terms of Use";
-const description = `Terms for browsing, printing, and downloading coloring pages from ${siteIdentity.siteName}.`;
+const description = `Current use information for browsing, printing, and downloading coloring pages from ${siteIdentity.siteName}.`;
 const contactEmail = siteIdentity.publicContactEmail;
 
 export const metadata: Metadata = {
@@ -38,17 +38,22 @@ export default function TermsPage() {
 
       <TrustSection title="Site purpose and current status">
         <p>
-          The site provides a static library for browsing printable coloring pages and using separate Print and download actions. The public operator
-          identity, governing-law language, artwork-rights provenance, and final permitted-use policy still require owner or legal review before
-          publication.
+          The site provides a static library for browsing printable coloring pages and using separate Print and download actions.{" "}
+          {siteIdentity.publicOperatorDisplayName} is the public operator display. No personal name, business entity, mailing address, governing-law
+          clause, venue rule, or dispute-resolution clause is published.
         </p>
       </TrustSection>
 
       <TrustSection title="Artwork use and licensing">
         <p>
-          Verified rights records are not currently available to support a sitewide personal, classroom, commercial, redistribution,
-          or derivative-use license. This page therefore does not grant those permissions or claim ownership of every artwork. A reviewed use policy
-          must be supplied before production launch.
+          Verified record-level provenance, licensing, assignment, or public-domain evidence is not currently available to support a sitewide
+          ownership or licensing conclusion. A final public-use license is under review. The presence of Print and download controls is a technical
+          capability and does not itself create a general public license.
+        </p>
+        <p>
+          No general rule for printing, downloading, redistribution, modification, commercial use, or attribution has been approved. This statement
+          does not claim ownership of every artwork or third-party right, and it does not turn the absence of an approved license into an invented
+          prohibition. Final permitted-use terms remain under review.
         </p>
       </TrustSection>
 
@@ -65,6 +70,12 @@ export default function TermsPage() {
           party's rights or guarantee that every title or subject is free of third-party claims. Send concerns with the page URL and relevant rights
           information to <a href={`mailto:${contactEmail}`}>{contactEmail}</a> or see the <Link href="/contact">contact page</Link>.
         </p>
+        <p>
+          A request should identify the exact page URL and material at issue, provide the requester's name and contact information, explain the
+          claimed right or factual concern, include supporting information sufficient to evaluate it, and state the requested correction or removal.
+          {siteIdentity.siteName} may review, restrict, correct, or remove material after evaluating the request.
+        </p>
+        <p>This process is not presented as a statutory notice procedure, designated-agent process, or legal determination.</p>
       </TrustSection>
 
       <TrustSection title="External and affiliate links">
@@ -76,7 +87,10 @@ export default function TermsPage() {
       </TrustSection>
 
       <TrustSection title="Changes to the site or terms">
-        <p>The site and this page may be updated. A final permitted-use policy, operator identity, or governing-law clause must not be added without verified owner input and appropriate review.</p>
+        <p>
+          The site and this page may be updated. A final permitted-use policy or governing-law clause will not be added without verified owner input
+          and appropriate review.
+        </p>
       </TrustSection>
 
       <TrustSection title="Contact">

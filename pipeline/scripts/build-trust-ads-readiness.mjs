@@ -6,7 +6,7 @@ import path from "node:path";
 
 const ROOT = process.cwd();
 const OUT = path.join(ROOT, "out");
-const REPORT_DATE = "2026-07-18";
+const REPORT_DATE = "2026-07-21";
 const MANIFEST_PATH = "pipeline/manifests/trust-ads-readiness.json";
 const REPORT_PATH = "pipeline/reports/trust-ads-readiness.md";
 const VERIFY_MODE = process.argv.includes("--verify");
@@ -73,32 +73,38 @@ const staticOutputs = htmlFiles.length + ["sitemap.xml", "image-sitemap.xml", "r
 const metadataTitles = trustPageContentFindings.map((page) => page.metadataTitle);
 
 const blockingIssues = [
-  blocker("owner.operator_identity", "Ready after owner field", "Confirm the public operator name and whether a business or legal entity should be identified."),
-  blocker("owner.mailing_address", "Ready after owner field", "Decide whether a public mailing address is required or desired and provide only a verified address."),
+  ...(identity.readiness.operatorIdentityDecisionExists
+    ? []
+    : [blocker("owner.operator_identity", "Ready after owner field", "Confirm the public operator display and whether a person or business entity should be identified.")]),
+  ...(identity.readiness.mailingAddressDecisionExists
+    ? []
+    : [blocker("owner.mailing_address", "Ready after owner field", "Decide whether a public mailing address should be published or omitted.")]),
   blocker("owner.governing_law", "Ready after owner field", "Select governing-law language with qualified review before adding it to the Terms."),
   blocker("legal.audience_treatment", "Ready after legal decision", "Decide child-directed, mixed-audience, or general-audience treatment, including explicitly child-oriented collections."),
-  blocker("legal.policy_approval", "Ready after legal decision", "Review and approve the Privacy Policy, Terms, permitted-use rules, and rights-removal wording."),
-  blocker("legal.trademark_policy", "Ready after legal decision", "Choose a policy for brand and trademark references in public titles."),
-  blocker("ads.account_configuration", "Ready after account configuration", "Supply verified account credentials, verification method, ads.txt line, ad-unit plan, and Auto Ads decision in a separate approved round."),
+  blocker("legal.policy_approval", "Ready after legal decision", "Complete qualified review of the Privacy Policy, Terms, artwork-rights position, and final public-use policy."),
+  blocker(
+    "legal.trademark_policy",
+    "Ready after legal decision",
+    identity.readiness.trademarkPolicyDecisionExists
+      ? "Complete qualified review of the approved case-by-case policy for brand and trademark references."
+      : "Choose a policy for brand and trademark references in public titles.",
+  ),
+  blocker("ads.account_configuration", "Ready after account configuration", "Verify account status, site verification, ads.txt, placement, and Auto Ads decisions in the authenticated provider interface."),
   blocker("ads.consent_and_age_configuration", "Ready after account configuration", "Choose ad personalization, regional consent, CMP, and age-treatment configuration before live advertising."),
-  blocker("external.production_validation", "External verification required", "Validate account review, real creatives, production consent, production requests, and production asset-origin behavior externally."),
+  blocker("external.production_validation", "External verification required", "Confirm the Netlify production and rollback workflow, then validate the deployed revision, Search Console state, and any later account behavior externally."),
 ];
 const trustGates = blockingIssues.map(enrichTrustGate);
 
 const ownerActions = [
-  action(1, "Confirm legal/operator identity and whether a business entity should be named.", "Ready after owner field"),
-  action(2, `Confirm that ${identity.publicContactEmail} remains the approved public contact address.`, "Ready based on local evidence"),
-  action(3, "Decide whether a public mailing address is required or desired.", "Ready after owner field"),
-  action(4, "Select a governing-law preference with qualified review.", "Ready after owner field"),
-  action(5, "Decide audience and age treatment, including child-oriented collections.", "Ready after legal decision"),
-  action(6, "Approve the Privacy Policy, Terms, permitted-use rules, removal language, and trademark policy.", "Ready after legal decision"),
-  action(7, "Choose personalized, non-personalized, or limited-ad strategy.", "Ready after account configuration"),
-  action(8, "Select a Google-certified CMP when the chosen regions and ad strategy require one.", "Ready after account configuration"),
-  action(9, "Obtain the actual publisher ID and choose the account-verification method.", "Ready after account configuration"),
-  action(10, "Create root ads.txt using the exact account-provided line and verify that it is public.", "Ready after account configuration"),
-  action(11, "Add live code only in a separately approved implementation round and test real creative dimensions and layout shift.", "Blocked"),
-  action(12, "Update the Privacy Policy with active vendors and actual practices before activation.", "Ready after account configuration"),
-  action(13, "Re-run network, accessibility, consent, age-treatment, and placement validation in production.", "External verification required"),
+  action(1, "Obtain qualified review of the Privacy Policy, Terms, artwork-rights position, final public-use policy, and case-by-case trademark policy.", "Ready after legal decision"),
+  action(2, "Select a governing-law preference or approve omission after qualified review.", "Ready after legal decision"),
+  action(3, "Decide audience and age treatment, including child-oriented collections.", "Ready after legal decision"),
+  action(4, "Confirm the exact Netlify site, production branch, deployment method, and rollback method in the authenticated Netlify interface.", "Ready after account confirmation"),
+  action(5, "Confirm Search Console property, verification, sitemap, coverage, security, and manual-action status in Search Console.", "Ready after account confirmation"),
+  action(6, "Resolve the reported AdSense needs-action status without submitting the site during this task.", "Ready after account configuration"),
+  action(7, "Keep ads.txt absent until the complete account-supplied declaration is verified and publication is separately approved.", "Blocked"),
+  action(8, "Keep advertising OFF until audience, consent, CMP, age treatment, and account configuration are reviewed.", "Blocked"),
+  action(9, "Re-run network, accessibility, consent, age-treatment, and placement validation after any future advertising implementation.", "External verification required"),
 ];
 
 const externalActions = [
@@ -119,6 +125,15 @@ const report = {
     consistentAcrossRequiredTrustRoutes: trustPageContentFindings
       .filter((page) => page.contactExpected)
       .every((page) => page.contactEmailPresent),
+  },
+  resolvedOwnerDecisions: {
+    publicOperatorDisplayName: identity.publicOperatorDisplayName,
+    publicOperatorDisplayBasis: identity.publicOperatorDisplayBasis,
+    mailingAddressDecision: identity.publicMailingAddressDecision,
+    artworkRightsBasis: identity.ownerDecisions.artworkRightsBasis,
+    publicUseLicense: identity.ownerDecisions.publicUseLicense,
+    trademarkReferencePolicy: identity.ownerDecisions.trademarkReferencePolicy,
+    advertisingPlan: identity.ownerDecisions.advertisingPlan,
   },
   placeholderContactFindings: trustPageContentFindings.filter((page) => page.findings.placeholderContact).map((page) => page.path),
   liveAdvertisingStatus: status(!integrationFindings.liveAdvertising, integrationFindings.liveAdvertising),
@@ -606,15 +621,15 @@ function renderTrustGatesCsv(gates) {
 }
 
 function renderTrustGatesMarkdown(gates) {
-  return `# Trust, legal, owner, and advertising gates\n\nNine external/owner/legal gates were present before this task and remain explicit after code-level disclosure fixes. None can be truthfully closed from repository evidence alone.\n\n${gates.map((gate) => `## ${gate.id}\n\n- Current failure: ${gate.exactCurrentFailure}\n- Configuration: ${gate.routeOrConfiguration}\n- Code-fixable now: ${gate.codeFixable ? "yes" : "no"}\n- Owner facts required: ${gate.requiresOwnerSuppliedFacts ? "yes" : "no"}\n- Legal review required: ${gate.requiresLegalReview ? "yes" : "no"}\n- Input required: ${gate.ownerInputStillRequired}\n- Risk of guessing: ${gate.riskOfGuessing}\n- Production consequence: ${gate.productionConsequence}\n- AdSense consequence: ${gate.adsenseReviewConsequence}`).join("\n\n")}\n`;
+  return `# Trust, legal, owner, and advertising gates\n\nThe public operator-display and mailing-address decisions are recorded. The ${gates.length} gates below remain unresolved and cannot be truthfully closed from repository evidence alone.\n\n${gates.map((gate) => `## ${gate.id}\n\n- Current failure: ${gate.exactCurrentFailure}\n- Configuration: ${gate.routeOrConfiguration}\n- Code-fixable now: ${gate.codeFixable ? "yes" : "no"}\n- Owner facts required: ${gate.requiresOwnerSuppliedFacts ? "yes" : "no"}\n- Legal review required: ${gate.requiresLegalReview ? "yes" : "no"}\n- Input required: ${gate.ownerInputStillRequired}\n- Risk of guessing: ${gate.riskOfGuessing}\n- Production consequence: ${gate.productionConsequence}\n- AdSense consequence: ${gate.adsenseReviewConsequence}`).join("\n\n")}\n`;
 }
 
 function renderOwnerInputRequired(gates, identity) {
-  return `# Owner input required\n\nVerified repository contact: ${identity.publicContactEmail}. No other owner, business, address, jurisdiction, rights, licensing, publisher, consent, or age-treatment fact was inferred.\n\n${gates.filter((gate) => gate.requiresOwnerSuppliedFacts).map((gate) => `- **${gate.id}:** ${gate.ownerInputStillRequired}`).join("\n")}\n\nExternal-only follow-up: ${gates.find((gate) => gate.id === "external.production_validation")?.ownerInputStillRequired}\n`;
+  return `# Owner input required\n\nVerified repository contact: ${identity.publicContactEmail}. The public operator display is ${identity.publicOperatorDisplayName}, no person or business entity is named, and the mailing-address decision is omit. No jurisdiction, final rights or licensing conclusion, publisher configuration, consent treatment, age treatment, or external account state was inferred.\n\n${gates.filter((gate) => gate.requiresOwnerSuppliedFacts).map((gate) => `- **${gate.id}:** ${gate.ownerInputStillRequired}`).join("\n")}\n\nExternal-only follow-up: ${gates.find((gate) => gate.id === "external.production_validation")?.ownerInputStillRequired}\n`;
 }
 
 function renderProductionReadinessStatus({ technicalPassed, productionReady, trustGates, accountFiles }) {
-  return `# Production readiness status\n\n- Ordinary technical build validation: ${technicalPassed ? "PASS" : "FAIL"}\n- Production readiness: ${productionReady ? "PASS" : "BLOCKED"}\n- Remaining owner/legal/account/external gates: ${trustGates.length}\n- LIVE advertising enabled: no\n- Unverified ads.txt paths detected but not modified: ${accountFiles.adsTxt.join(", ") || "none"}\n\n\`npm run build\` validates and exports the static application without requiring invented owner facts. \`npm run verify:production-readiness\` adds the nine external/owner/legal/account gates and is expected to fail until verified inputs are supplied.\n`;
+  return `# Production readiness status\n\n- Ordinary technical build validation: ${technicalPassed ? "PASS" : "FAIL"}\n- Production readiness: ${productionReady ? "PASS" : "BLOCKED"}\n- Remaining owner/legal/account/external gates: ${trustGates.length}\n- LIVE advertising enabled: no\n- Unverified ads.txt paths detected but not modified: ${accountFiles.adsTxt.join(", ") || "none"}\n\n\`npm run build\` validates and exports the static application without requiring invented owner facts. \`npm run verify:production-readiness\` adds the remaining external, owner, legal, and account gates and is expected to fail until they are resolved.\n`;
 }
 
 function csvCell(value) {
@@ -633,7 +648,16 @@ function readText(relativePath) {
 function writeArtifact(relativePath, contents) {
   const absolute = path.join(ROOT, relativePath);
   mkdirSync(path.dirname(absolute), { recursive: true });
-  writeFileSync(absolute, contents, "utf8");
+  const retryableCodes = new Set(["UNKNOWN", "EBUSY", "EPERM", "EACCES"]);
+  for (let attempt = 1; attempt <= 5; attempt += 1) {
+    try {
+      writeFileSync(absolute, contents, "utf8");
+      return;
+    } catch (error) {
+      if (!retryableCodes.has(error?.code) || attempt === 5) throw error;
+      Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, attempt * 100);
+    }
+  }
 }
 
 function sha256(value) {

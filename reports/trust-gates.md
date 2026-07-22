@@ -1,30 +1,6 @@
 # Trust, legal, owner, and advertising gates
 
-Nine external/owner/legal gates were present before this task and remain explicit after code-level disclosure fixes. None can be truthfully closed from repository evidence alone.
-
-## owner.operator_identity
-
-- Current failure: Confirm the public operator name and whether a business or legal entity should be identified.
-- Configuration: src/config/siteIdentity.ts; About, Privacy, and Terms
-- Code-fixable now: no
-- Owner facts required: yes
-- Legal review required: yes
-- Input required: Verified public operator name and whether a business/legal entity should be identified.
-- Risk of guessing: Would publish an unverified person, business, or legal entity.
-- Production consequence: Production-readiness verification remains blocked.
-- AdSense consequence: Publisher identity and trust review remain incomplete.
-
-## owner.mailing_address
-
-- Current failure: Decide whether a public mailing address is required or desired and provide only a verified address.
-- Configuration: src/config/siteIdentity.ts; Privacy and Terms
-- Code-fixable now: no
-- Owner facts required: yes
-- Legal review required: yes
-- Input required: A decision on whether an address is required and, only if approved, a verified public address.
-- Risk of guessing: Would expose a false or private address.
-- Production consequence: Production-readiness verification remains blocked pending the decision.
-- AdSense consequence: Account and policy identity review remains incomplete.
+The public operator-display and mailing-address decisions are recorded. The 7 gates below remain unresolved and cannot be truthfully closed from repository evidence alone.
 
 ## owner.governing_law
 
@@ -52,7 +28,7 @@ Nine external/owner/legal gates were present before this task and remain explici
 
 ## legal.policy_approval
 
-- Current failure: Review and approve the Privacy Policy, Terms, permitted-use rules, and rights-removal wording.
+- Current failure: Complete qualified review of the Privacy Policy, Terms, artwork-rights position, and final public-use policy.
 - Configuration: /privacy, /terms, /contact, /affiliate-disclosure
 - Code-fixable now: no
 - Owner facts required: yes
@@ -64,7 +40,7 @@ Nine external/owner/legal gates were present before this task and remain explici
 
 ## legal.trademark_policy
 
-- Current failure: Choose a policy for brand and trademark references in public titles.
+- Current failure: Complete qualified review of the approved case-by-case policy for brand and trademark references.
 - Configuration: printable titles and editorial policy
 - Code-fixable now: no
 - Owner facts required: yes
@@ -76,7 +52,7 @@ Nine external/owner/legal gates were present before this task and remain explici
 
 ## ads.account_configuration
 
-- Current failure: Supply verified account credentials, verification method, ads.txt line, ad-unit plan, and Auto Ads decision in a separate approved round.
+- Current failure: Verify account status, site verification, ads.txt, placement, and Auto Ads decisions in the authenticated provider interface.
 - Configuration: advertisement mode, publisher configuration, and ads.txt
 - Code-fixable now: no
 - Owner facts required: yes
@@ -100,7 +76,7 @@ Nine external/owner/legal gates were present before this task and remain explici
 
 ## external.production_validation
 
-- Current failure: Validate account review, real creatives, production consent, production requests, and production asset-origin behavior externally.
+- Current failure: Confirm the Netlify production and rollback workflow, then validate the deployed revision, Search Console state, and any later account behavior externally.
 - Configuration: deployed production site and advertising account
 - Code-fixable now: no
 - Owner facts required: no

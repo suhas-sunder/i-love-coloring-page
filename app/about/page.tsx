@@ -43,6 +43,25 @@ export default function AboutPage() {
         </p>
       </TrustSection>
 
+      <TrustSection title="Who operates the site">
+        <p>
+          {siteIdentity.publicOperatorDisplayName} is the public name used to operate this site. No personal name or registered business entity is
+          identified as the operator.
+        </p>
+      </TrustSection>
+
+      <TrustSection title="How the library is organized">
+        <p>
+          Automated tools organize approved runtime records, generate consistent page data, and validate routes, titles, counts, asset roles, and
+          public-output rules. Editorial rules and record-specific review are used where evidence supports a decision. Uncertain metadata remains
+          outside public output until it is reviewed.
+        </p>
+        <p>
+          These checks do not mean that every printable received an individual manual visual review. The site also does not make a sitewide claim of
+          ownership over every artwork, depicted subject, character, brand, trademark, or other third-party right.
+        </p>
+      </TrustSection>
+
       <TrustSection title="Finding a printable">
         <p>
           Pages are organized into subject, style, seasonal, and other browsing collections. Audience and visual-complexity labels are not treated as

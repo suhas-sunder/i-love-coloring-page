@@ -1,6 +1,6 @@
 # Trust and Advertising Readiness
 
-Report date: 2026-07-18
+Report date: 2026-07-21
 
 This is a factual local readiness review. It does not certify legal compliance or guarantee advertising-account approval.
 
@@ -10,10 +10,10 @@ This is a factual local readiness review. It does not certify legal compliance o
 | --- | ---: | ---: | --- | --- |
 | /about | 1 | 0 | Not displayed | Pass |
 | /contact | 1 | 0 | Not displayed | Pass |
-| /privacy | 1 | 0 | July 18, 2026 | Pass |
-| /terms | 1 | 0 | July 18, 2026 | Pass |
-| /affiliate-disclosure | 1 | 0 | July 18, 2026 | Pass |
-| /editorial-policy | 1 | 0 | July 18, 2026 | Pass |
+| /privacy | 1 | 0 | July 21, 2026 | Pass |
+| /terms | 1 | 0 | July 21, 2026 | Pass |
+| /affiliate-disclosure | 1 | 0 | July 21, 2026 | Pass |
+| /editorial-policy | 1 | 0 | July 21, 2026 | Pass |
 
 The verified public contact is admin@ilovecoloringpage.com. Metadata titles and descriptions are unique, canonicals are self-referencing, footer links remain, and all six trust routes remain indexable and sitemap-eligible.
 
@@ -70,38 +70,32 @@ OFF mode reserves no advertising area. Print and Download controls remain free o
 - Live advertising scripts: absent
 - Publisher ID and ad-unit IDs: absent
 - Verification tag: absent
-- ads.txt: present; verify its account-provided contents before live activation
+- ads.txt: absent
 - CMP and Consent Mode: absent
 - Age-treatment decision: not recorded
 - Affiliate tracking: absent
 
 ## Blocking issues
 
-- **Ready after owner field:** Confirm the public operator name and whether a business or legal entity should be identified.
-- **Ready after owner field:** Decide whether a public mailing address is required or desired and provide only a verified address.
 - **Ready after owner field:** Select governing-law language with qualified review before adding it to the Terms.
 - **Ready after legal decision:** Decide child-directed, mixed-audience, or general-audience treatment, including explicitly child-oriented collections.
-- **Ready after legal decision:** Review and approve the Privacy Policy, Terms, permitted-use rules, and rights-removal wording.
-- **Ready after legal decision:** Choose a policy for brand and trademark references in public titles.
-- **Ready after account configuration:** Supply verified account credentials, verification method, ads.txt line, ad-unit plan, and Auto Ads decision in a separate approved round.
+- **Ready after legal decision:** Complete qualified review of the Privacy Policy, Terms, artwork-rights position, and final public-use policy.
+- **Ready after legal decision:** Complete qualified review of the approved case-by-case policy for brand and trademark references.
+- **Ready after account configuration:** Verify account status, site verification, ads.txt, placement, and Auto Ads decisions in the authenticated provider interface.
 - **Ready after account configuration:** Choose ad personalization, regional consent, CMP, and age-treatment configuration before live advertising.
-- **External verification required:** Validate account review, real creatives, production consent, production requests, and production asset-origin behavior externally.
+- **External verification required:** Confirm the Netlify production and rollback workflow, then validate the deployed revision, Search Console state, and any later account behavior externally.
 
 ## Owner checklist
 
-1. Confirm legal/operator identity and whether a business entity should be named. _Ready after owner field_
-2. Confirm that admin@ilovecoloringpage.com remains the approved public contact address. _Ready based on local evidence_
-3. Decide whether a public mailing address is required or desired. _Ready after owner field_
-4. Select a governing-law preference with qualified review. _Ready after owner field_
-5. Decide audience and age treatment, including child-oriented collections. _Ready after legal decision_
-6. Approve the Privacy Policy, Terms, permitted-use rules, removal language, and trademark policy. _Ready after legal decision_
-7. Choose personalized, non-personalized, or limited-ad strategy. _Ready after account configuration_
-8. Select a Google-certified CMP when the chosen regions and ad strategy require one. _Ready after account configuration_
-9. Obtain the actual publisher ID and choose the account-verification method. _Ready after account configuration_
-10. Create root ads.txt using the exact account-provided line and verify that it is public. _Ready after account configuration_
-11. Add live code only in a separately approved implementation round and test real creative dimensions and layout shift. _Blocked_
-12. Update the Privacy Policy with active vendors and actual practices before activation. _Ready after account configuration_
-13. Re-run network, accessibility, consent, age-treatment, and placement validation in production. _External verification required_
+1. Obtain qualified review of the Privacy Policy, Terms, artwork-rights position, final public-use policy, and case-by-case trademark policy. _Ready after legal decision_
+2. Select a governing-law preference or approve omission after qualified review. _Ready after legal decision_
+3. Decide audience and age treatment, including child-oriented collections. _Ready after legal decision_
+4. Confirm the exact Netlify site, production branch, deployment method, and rollback method in the authenticated Netlify interface. _Ready after account confirmation_
+5. Confirm Search Console property, verification, sitemap, coverage, security, and manual-action status in Search Console. _Ready after account confirmation_
+6. Resolve the reported AdSense needs-action status without submitting the site during this task. _Ready after account configuration_
+7. Keep ads.txt absent until the complete account-supplied declaration is verified and publication is separately approved. _Blocked_
+8. Keep advertising OFF until audience, consent, CMP, age treatment, and account configuration are reviewed. _Blocked_
+9. Re-run network, accessibility, consent, age-treatment, and placement validation after any future advertising implementation. _External verification required_
 
 ## Counts and preservation
 

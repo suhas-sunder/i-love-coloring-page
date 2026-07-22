@@ -1,5 +1,5 @@
 {
-  "reportDate": "2026-07-18",
+  "reportDate": "2026-07-21",
   "runId": "trust-ads-readiness",
   "trustRoutes": [
     {
@@ -64,7 +64,7 @@
       "canonical": "https://www.ilovecoloringpage.com/privacy",
       "indexable": true,
       "footerLinked": true,
-      "lastUpdated": "July 18, 2026",
+      "lastUpdated": "July 21, 2026",
       "contactExpected": true,
       "contactEmailPresent": true,
       "logicalAdvertisementSlots": 0,
@@ -86,12 +86,12 @@
     {
       "path": "/terms",
       "metadataTitle": "Terms of Use | I Love Coloring Page",
-      "metadataDescription": "Terms for browsing, printing, and downloading coloring pages from I Love Coloring Page.",
+      "metadataDescription": "Current use information for browsing, printing, and downloading coloring pages from I Love Coloring Page.",
       "h1Count": 1,
       "canonical": "https://www.ilovecoloringpage.com/terms",
       "indexable": true,
       "footerLinked": true,
-      "lastUpdated": "July 18, 2026",
+      "lastUpdated": "July 21, 2026",
       "contactExpected": true,
       "contactEmailPresent": true,
       "logicalAdvertisementSlots": 0,
@@ -118,7 +118,7 @@
       "canonical": "https://www.ilovecoloringpage.com/affiliate-disclosure",
       "indexable": true,
       "footerLinked": true,
-      "lastUpdated": "July 18, 2026",
+      "lastUpdated": "July 21, 2026",
       "contactExpected": true,
       "contactEmailPresent": true,
       "logicalAdvertisementSlots": 0,
@@ -145,7 +145,7 @@
       "canonical": "https://www.ilovecoloringpage.com/editorial-policy",
       "indexable": true,
       "footerLinked": true,
-      "lastUpdated": "July 18, 2026",
+      "lastUpdated": "July 21, 2026",
       "contactExpected": true,
       "contactEmailPresent": true,
       "logicalAdvertisementSlots": 0,
@@ -171,6 +171,15 @@
     "publicContactEmail": "admin@ilovecoloringpage.com",
     "consistentAcrossRequiredTrustRoutes": true
   },
+  "resolvedOwnerDecisions": {
+    "publicOperatorDisplayName": "I Love Coloring Page",
+    "publicOperatorDisplayBasis": "site-name-only",
+    "mailingAddressDecision": "omit",
+    "artworkRightsBasis": "unverified",
+    "publicUseLicense": "under-review",
+    "trademarkReferencePolicy": "case-by-case-review",
+    "advertisingPlan": "deferred"
+  },
   "placeholderContactFindings": [],
   "liveAdvertisingStatus": {
     "active": false,
@@ -193,8 +202,8 @@
     "findingCount": 0
   },
   "adsTxtStatus": {
-    "present": true,
-    "findingCount": 2
+    "present": false,
+    "findingCount": 0
   },
   "ageTreatmentDecisionStatus": {
     "decided": false,
@@ -392,7 +401,7 @@
     "siteCookieCode": false
   },
   "accountReadiness": {
-    "adsTxtPresent": true,
+    "adsTxtPresent": false,
     "apiDirectoryPresent": false,
     "liveAdvertisingActive": false,
     "verifiedPublisherIdExists": false,
@@ -476,36 +485,6 @@
   ],
   "blockingIssues": [
     {
-      "id": "owner.operator_identity",
-      "classification": "Ready after owner field",
-      "description": "Confirm the public operator name and whether a business or legal entity should be identified.",
-      "routeOrConfiguration": "src/config/siteIdentity.ts; About, Privacy, and Terms",
-      "exactCurrentFailure": "Confirm the public operator name and whether a business or legal entity should be identified.",
-      "codeFixable": false,
-      "requiresOwnerSuppliedFacts": true,
-      "requiresLegalReview": true,
-      "riskOfGuessing": "Would publish an unverified person, business, or legal entity.",
-      "implementationCompleted": false,
-      "ownerInputStillRequired": "Verified public operator name and whether a business/legal entity should be identified.",
-      "productionConsequence": "Production-readiness verification remains blocked.",
-      "adsenseReviewConsequence": "Publisher identity and trust review remain incomplete."
-    },
-    {
-      "id": "owner.mailing_address",
-      "classification": "Ready after owner field",
-      "description": "Decide whether a public mailing address is required or desired and provide only a verified address.",
-      "routeOrConfiguration": "src/config/siteIdentity.ts; Privacy and Terms",
-      "exactCurrentFailure": "Decide whether a public mailing address is required or desired and provide only a verified address.",
-      "codeFixable": false,
-      "requiresOwnerSuppliedFacts": true,
-      "requiresLegalReview": true,
-      "riskOfGuessing": "Would expose a false or private address.",
-      "implementationCompleted": false,
-      "ownerInputStillRequired": "A decision on whether an address is required and, only if approved, a verified public address.",
-      "productionConsequence": "Production-readiness verification remains blocked pending the decision.",
-      "adsenseReviewConsequence": "Account and policy identity review remains incomplete."
-    },
-    {
       "id": "owner.governing_law",
       "classification": "Ready after owner field",
       "description": "Select governing-law language with qualified review before adding it to the Terms.",
@@ -538,9 +517,9 @@
     {
       "id": "legal.policy_approval",
       "classification": "Ready after legal decision",
-      "description": "Review and approve the Privacy Policy, Terms, permitted-use rules, and rights-removal wording.",
+      "description": "Complete qualified review of the Privacy Policy, Terms, artwork-rights position, and final public-use policy.",
       "routeOrConfiguration": "/privacy, /terms, /contact, /affiliate-disclosure",
-      "exactCurrentFailure": "Review and approve the Privacy Policy, Terms, permitted-use rules, and rights-removal wording.",
+      "exactCurrentFailure": "Complete qualified review of the Privacy Policy, Terms, artwork-rights position, and final public-use policy.",
       "codeFixable": false,
       "requiresOwnerSuppliedFacts": true,
       "requiresLegalReview": true,
@@ -553,9 +532,9 @@
     {
       "id": "legal.trademark_policy",
       "classification": "Ready after legal decision",
-      "description": "Choose a policy for brand and trademark references in public titles.",
+      "description": "Complete qualified review of the approved case-by-case policy for brand and trademark references.",
       "routeOrConfiguration": "printable titles and editorial policy",
-      "exactCurrentFailure": "Choose a policy for brand and trademark references in public titles.",
+      "exactCurrentFailure": "Complete qualified review of the approved case-by-case policy for brand and trademark references.",
       "codeFixable": false,
       "requiresOwnerSuppliedFacts": true,
       "requiresLegalReview": true,
@@ -568,9 +547,9 @@
     {
       "id": "ads.account_configuration",
       "classification": "Ready after account configuration",
-      "description": "Supply verified account credentials, verification method, ads.txt line, ad-unit plan, and Auto Ads decision in a separate approved round.",
+      "description": "Verify account status, site verification, ads.txt, placement, and Auto Ads decisions in the authenticated provider interface.",
       "routeOrConfiguration": "advertisement mode, publisher configuration, and ads.txt",
-      "exactCurrentFailure": "Supply verified account credentials, verification method, ads.txt line, ad-unit plan, and Auto Ads decision in a separate approved round.",
+      "exactCurrentFailure": "Verify account status, site verification, ads.txt, placement, and Auto Ads decisions in the authenticated provider interface.",
       "codeFixable": false,
       "requiresOwnerSuppliedFacts": true,
       "requiresLegalReview": false,
@@ -598,9 +577,9 @@
     {
       "id": "external.production_validation",
       "classification": "External verification required",
-      "description": "Validate account review, real creatives, production consent, production requests, and production asset-origin behavior externally.",
+      "description": "Confirm the Netlify production and rollback workflow, then validate the deployed revision, Search Console state, and any later account behavior externally.",
       "routeOrConfiguration": "deployed production site and advertising account",
-      "exactCurrentFailure": "Validate account review, real creatives, production consent, production requests, and production asset-origin behavior externally.",
+      "exactCurrentFailure": "Confirm the Netlify production and rollback workflow, then validate the deployed revision, Search Console state, and any later account behavior externally.",
       "codeFixable": false,
       "requiresOwnerSuppliedFacts": false,
       "requiresLegalReview": false,
@@ -614,67 +593,47 @@
   "ownerActions": [
     {
       "order": 1,
-      "description": "Confirm legal/operator identity and whether a business entity should be named.",
-      "classification": "Ready after owner field"
+      "description": "Obtain qualified review of the Privacy Policy, Terms, artwork-rights position, final public-use policy, and case-by-case trademark policy.",
+      "classification": "Ready after legal decision"
     },
     {
       "order": 2,
-      "description": "Confirm that admin@ilovecoloringpage.com remains the approved public contact address.",
-      "classification": "Ready based on local evidence"
+      "description": "Select a governing-law preference or approve omission after qualified review.",
+      "classification": "Ready after legal decision"
     },
     {
       "order": 3,
-      "description": "Decide whether a public mailing address is required or desired.",
-      "classification": "Ready after owner field"
-    },
-    {
-      "order": 4,
-      "description": "Select a governing-law preference with qualified review.",
-      "classification": "Ready after owner field"
-    },
-    {
-      "order": 5,
       "description": "Decide audience and age treatment, including child-oriented collections.",
       "classification": "Ready after legal decision"
     },
     {
+      "order": 4,
+      "description": "Confirm the exact Netlify site, production branch, deployment method, and rollback method in the authenticated Netlify interface.",
+      "classification": "Ready after account confirmation"
+    },
+    {
+      "order": 5,
+      "description": "Confirm Search Console property, verification, sitemap, coverage, security, and manual-action status in Search Console.",
+      "classification": "Ready after account confirmation"
+    },
+    {
       "order": 6,
-      "description": "Approve the Privacy Policy, Terms, permitted-use rules, removal language, and trademark policy.",
-      "classification": "Ready after legal decision"
+      "description": "Resolve the reported AdSense needs-action status without submitting the site during this task.",
+      "classification": "Ready after account configuration"
     },
     {
       "order": 7,
-      "description": "Choose personalized, non-personalized, or limited-ad strategy.",
-      "classification": "Ready after account configuration"
-    },
-    {
-      "order": 8,
-      "description": "Select a Google-certified CMP when the chosen regions and ad strategy require one.",
-      "classification": "Ready after account configuration"
-    },
-    {
-      "order": 9,
-      "description": "Obtain the actual publisher ID and choose the account-verification method.",
-      "classification": "Ready after account configuration"
-    },
-    {
-      "order": 10,
-      "description": "Create root ads.txt using the exact account-provided line and verify that it is public.",
-      "classification": "Ready after account configuration"
-    },
-    {
-      "order": 11,
-      "description": "Add live code only in a separately approved implementation round and test real creative dimensions and layout shift.",
+      "description": "Keep ads.txt absent until the complete account-supplied declaration is verified and publication is separately approved.",
       "classification": "Blocked"
     },
     {
-      "order": 12,
-      "description": "Update the Privacy Policy with active vendors and actual practices before activation.",
-      "classification": "Ready after account configuration"
+      "order": 8,
+      "description": "Keep advertising OFF until audience, consent, CMP, age treatment, and account configuration are reviewed.",
+      "classification": "Blocked"
     },
     {
-      "order": 13,
-      "description": "Re-run network, accessibility, consent, age-treatment, and placement validation in production.",
+      "order": 9,
+      "description": "Re-run network, accessibility, consent, age-treatment, and placement validation after any future advertising implementation.",
       "classification": "External verification required"
     }
   ],
@@ -693,8 +652,8 @@
     "regularSitemapUrls": 6520,
     "imageSitemapPairs": 6352,
     "staticOutputs": 6920,
-    "totalFiles": 69732,
-    "totalBytes": 1140130730,
+    "totalFiles": 69730,
+    "totalBytes": 1140147572,
     "staticJavascriptBytes": 751483,
     "globallyUniquePrintableDisplayTitles": 6352,
     "globallyUniquePrintableMetadataTitles": 6352,
@@ -708,28 +667,28 @@
   "payload": {
     "trustPages": {
       "/about": {
-        "htmlBytes": 20739,
-        "rscBytes": 10900
+        "htmlBytes": 23178,
+        "rscBytes": 12175
       },
       "/contact": {
-        "htmlBytes": 20988,
-        "rscBytes": 11058
+        "htmlBytes": 22426,
+        "rscBytes": 11855
       },
       "/privacy": {
-        "htmlBytes": 27833,
-        "rscBytes": 14584
+        "htmlBytes": 29865,
+        "rscBytes": 15630
       },
       "/terms": {
-        "htmlBytes": 25372,
-        "rscBytes": 13340
+        "htmlBytes": 27414,
+        "rscBytes": 14369
       },
       "/affiliate-disclosure": {
-        "htmlBytes": 20515,
-        "rscBytes": 10826
+        "htmlBytes": 21582,
+        "rscBytes": 11384
       },
       "/editorial-policy": {
-        "htmlBytes": 22830,
-        "rscBytes": 12004
+        "htmlBytes": 26443,
+        "rscBytes": 13856
       }
     }
   },

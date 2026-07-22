@@ -39,15 +39,26 @@ test("site identity is centralized and server-safe", () => {
   assert.match(source, /import "server-only"/);
   assert.equal(identity.siteName, "I Love Coloring Page");
   assert.equal(identity.canonicalSiteUrl, "https://www.ilovecoloringpage.com");
+  assert.equal(identity.publicOperatorDisplayName, "I Love Coloring Page");
+  assert.equal(identity.publicOperatorDisplayBasis, "site-name-only");
   assert.equal(identity.publicContactEmail, "admin@ilovecoloringpage.com");
   assert.equal(identity.publicOperatorName, null);
   assert.equal(identity.publicBusinessName, null);
   assert.equal(identity.publicMailingAddress, null);
+  assert.equal(identity.publicMailingAddressDecision, "omit");
   assert.equal(identity.governingRegion, null);
-  assert.equal(identity.policyLastUpdatedDate, "2026-07-18");
-  assert.equal(identity.policyLastUpdatedLabel, "July 18, 2026");
+  assert.equal(identity.policyLastUpdatedDate, "2026-07-21");
+  assert.equal(identity.policyLastUpdatedLabel, "July 21, 2026");
   assert.equal(Object.values(identity.features).every((active) => active === false), true);
-  assert.equal(Object.values(identity.readiness).every((ready) => ready === false), true);
+  assert.equal(identity.readiness.operatorIdentityDecisionExists, true);
+  assert.equal(identity.readiness.mailingAddressDecisionExists, true);
+  assert.equal(identity.readiness.trademarkPolicyDecisionExists, true);
+  assert.equal(identity.readiness.trademarkQualifiedReviewComplete, false);
+  assert.equal(identity.readiness.privacyPolicyQualifiedReviewComplete, false);
+  assert.equal(identity.readiness.termsPolicyQualifiedReviewComplete, false);
+  assert.equal(identity.readiness.verifiedPublisherIdExists, false);
+  assert.equal(identity.readiness.cmpDecisionExists, false);
+  assert.equal(identity.readiness.ageTreatmentDecisionExists, false);
   assert.match(siteConfig, /import \{ siteIdentity \}/);
   assert.doesNotMatch(siteConfig, /NEXT_PUBLIC_CONTACT_EMAIL|NEXT_PUBLIC_SITE_OWNER_NAME|NEXT_PUBLIC_SITE_JURISDICTION|ownerName|jurisdiction/);
 
@@ -65,7 +76,16 @@ test("contact safety uses only the verified public address", () => {
     assert.match(contact, new RegExp(escapeRegExp(phrase)));
   }
   assert.match(contact, /Please do not send passwords, financial information, health information, identity documents, or other sensitive personal information/);
-  assert.match(contact, /page URL, a concise explanation/);
+  for (const phrase of [
+    "The exact page URL",
+    "Identification of the material at issue",
+    "The requester's name and contact information",
+    "A clear explanation of the claimed right or factual concern",
+    "Supporting information sufficient to evaluate the request",
+    "The requested correction or removal",
+  ]) assert.match(contact.replace(/&apos;/g, "'"), new RegExp(escapeRegExp(phrase)));
+  assert.match(contact, /may review, restrict, correct, or remove material after evaluating the request/);
+  assert.match(contact, /not presented as a statutory notice procedure, designated-agent process, or legal determination/);
   assert.doesNotMatch(contact, /<form|<input|<textarea|type="file"|newsletter|birth date|age field|DMCA agent|respond within|remove within/i);
   assert.doesNotMatch(trustSource, /contact@ilovecoloringpage\.com|\[email protected\]|example\.com/i);
   const emails = [...trustSource.matchAll(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi)].map((match) => match[0].toLowerCase());
@@ -81,12 +101,14 @@ test("privacy accuracy distinguishes current and conditional practices", () => {
     "Search and filters run in the browser",
     "Hosting and technical logs",
     "Advertising is currently off",
+    "Advertising and related consent features are not currently active",
     "No site analytics tool is currently documented as active",
     "If advertising is enabled later",
     "These are conditional future practices",
     "Children and families",
     "Applicable rights depend on the visitor's location and circumstances",
     "Material feature changes should trigger another privacy review",
+    "does not establish a legal or advertising classification for the entire site",
   ]) assert.match(normalized, new RegExp(escapeRegExp(phrase), "i"));
   assert.match(source, /siteIdentity\.policyLastUpdatedLabel/);
   assert.doesNotMatch(source, /COPPA compliant|COPPA does not apply|not child-directed|general-audience printable gallery|GDPR compliant|no data collection|no logs exist|logs are anonymous|guaranteed response/i);
@@ -96,13 +118,15 @@ test("privacy accuracy distinguishes current and conditional practices", () => {
 test("terms accuracy avoids unsupported ownership, licensing, and jurisdiction claims", () => {
   const source = readText("app/terms/page.tsx");
   const normalized = source.replace(/\s+/g, " ");
-  assert.match(normalized, /Verified rights records are not currently available to support a sitewide/);
+  assert.match(normalized, /Verified record-level provenance, licensing, assignment, or public-domain evidence is not currently available/);
+  assert.match(normalized, /A final public-use license is under review/);
+  assert.match(normalized, /does not itself create a general public license/);
   assert.match(normalized, /PNG is the server-rendered initial download option/);
   assert.match(normalized, /Print and download are separate actions/);
   for (const section of ["Site purpose and current status", "Artwork use and licensing", "Intellectual property and removal concerns", "External and affiliate links", "Changes to the site or terms", "Contact"]) assert.match(normalized, new RegExp(escapeRegExp(section)));
   assert.doesNotMatch(source, /Visitors may print or download pages for personal|Do not resell|bulk-redistribute|competing printable library/i);
   assert.doesNotMatch(source, /governed by the laws|exclusive jurisdiction|arbitration|limited liability company|corporation|street address|minimum age|commercial use is permitted|therapy/i);
-  assert.match(source, /owner or legal review/);
+  assert.match(source, /verified owner input.*appropriate review/s);
 });
 
 test("affiliate accuracy matches inactive implementation", () => {
@@ -113,6 +137,8 @@ test("affiliate accuracy matches inactive implementation", () => {
   assert.match(normalized, /does not earn commissions from ordinary.*printable-page links, Print actions, or download actions/);
   assert.match(normalized, /will be disclosed clearly near the relevant content/);
   assert.match(normalized, /updated before affiliate monetization begins/);
+  assert.match(normalized, /Live advertising is currently disabled/);
+  assert.match(normalized, /Advertising is not the same as an affiliate link/);
   assert.doesNotMatch(source, /Amazon|qualifying purchases|at no additional cost|future round/i);
   assert.doesNotMatch(active, /[?&](?:aff(?:iliate)?_?id|tag|ref)=[^\s"'&]+/i);
 });
@@ -126,7 +152,11 @@ test("editorial-policy accuracy matches deterministic title behavior", () => {
   assert.match(normalized, /explicit assignments/);
   assert.match(normalized, /display only values with recorded provenance/);
   assert.match(normalized, /Uncertain wording is held for.*editorial review/);
-  assert.doesNotMatch(source, /assetId|stableId|hash|pipeline|source filename|local path|prompt|model|storage|every image|original artwork|legally cleared|suitable for every age|educational review|therapeutic/i);
+  assert.match(normalized, /Uncertain metadata is withheld from public output until it is reviewed/);
+  assert.match(normalized, /does not mean that all 6,352 printables received individual manual visual inspection/);
+  assert.match(normalized, /handled case by case/);
+  assert.match(normalized, /does not authorize a bulk title rewrite/);
+  assert.doesNotMatch(source, /assetId|stableId|hash|pipeline|source filename|local path|prompt|AI model|language model|generation model|storage|every image|original artwork|legally cleared|suitable for every age|educational review|therapeutic/i);
 });
 
 test("network integrations contain only required runtime flows", () => {
@@ -213,15 +243,23 @@ test("AdSense account readiness contains no live credentials or tooling", () => 
 });
 
 test("trust-report determinism and artifact safety", () => {
-  const command = ["pipeline/scripts/build-trust-ads-readiness.mjs"];
-  execFileSync(process.execPath, command, { cwd: ROOT, stdio: "pipe" });
+  runTrustReadinessGenerator();
   const firstManifest = readText("pipeline/manifests/trust-ads-readiness.json");
   const firstReport = readText("pipeline/reports/trust-ads-readiness.md");
-  execFileSync(process.execPath, command, { cwd: ROOT, stdio: "pipe" });
+  runTrustReadinessGenerator();
   const secondManifest = readText("pipeline/manifests/trust-ads-readiness.json");
   const secondReport = readText("pipeline/reports/trust-ads-readiness.md");
   assert.equal(sha256(firstManifest), sha256(secondManifest));
   assert.equal(sha256(firstReport), sha256(secondReport));
+  const readiness = JSON.parse(secondManifest);
+  assert.equal(readiness.blockingIssues.length, 7);
+  assert.equal(readiness.blockingIssues.some((gate) => gate.id === "owner.operator_identity"), false);
+  assert.equal(readiness.blockingIssues.some((gate) => gate.id === "owner.mailing_address"), false);
+  assert.equal(readiness.blockingIssues.some((gate) => gate.id === "legal.trademark_policy"), true);
+  assert.equal(readiness.resolvedOwnerDecisions.publicOperatorDisplayBasis, "site-name-only");
+  assert.equal(readiness.resolvedOwnerDecisions.mailingAddressDecision, "omit");
+  assert.equal(readiness.resolvedOwnerDecisions.trademarkReferencePolicy, "case-by-case-review");
+  assert.equal(readiness.adsTxtStatus.present, false);
   const combined = `${secondManifest}\n${secondReport}`;
   assert.doesNotMatch(combined, /generatedAt|T\d{2}:\d{2}:\d{2}|[A-Za-z]:\\|file:\/\/|\/Users\/|browser profile|screenshots?\//i);
   assert.doesNotMatch(combined, /ca-pub-[0-9]|pub-0{6,}|AKIA[0-9A-Z]{12,}|BEGIN (?:RSA |EC )?PRIVATE KEY/i);
@@ -229,6 +267,23 @@ test("trust-report determinism and artifact safety", () => {
   assert.equal(emails.every((email) => email === identity.publicContactEmail), true);
   assert.equal(listTree("out").some((file) => /trust-ads-readiness/i.test(file)), false);
 });
+
+function runTrustReadinessGenerator() {
+  const command = ["pipeline/scripts/build-trust-ads-readiness.mjs"];
+  for (let attempt = 1; attempt <= 3; attempt += 1) {
+    try {
+      execFileSync(process.execPath, command, { cwd: ROOT, stdio: "pipe" });
+      return;
+    } catch (error) {
+      const diagnostic = [error?.stdout, error?.stderr]
+        .filter(Boolean)
+        .map((value) => value.toString())
+        .join("")
+        .trim();
+      if (diagnostic || attempt === 3) throw error;
+    }
+  }
+}
 
 function parseSiteIdentity() {
   const source = readText("src/config/siteIdentity.ts");

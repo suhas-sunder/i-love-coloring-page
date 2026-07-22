@@ -59,6 +59,31 @@ export default function EditorialPolicyPage() {
         </p>
       </TrustSection>
 
+      <TrustSection title="Automated processing and review">
+        <p>
+          Automated tools assemble approved runtime records, apply deterministic title and collection rules, and validate public routes, counts, asset
+          roles, metadata provenance, and exported output. Editorial review is used for decisions that cannot be supported safely by those rules.
+          Uncertain metadata is withheld from public output until it is reviewed.
+        </p>
+        <p>
+          This process does not mean that all 6,352 printables received individual manual visual inspection. It also does not claim professional
+          subject-matter expertise.
+        </p>
+      </TrustSection>
+
+      <TrustSection title="Brand and trademark references">
+        <p>
+          Brand, franchise, character, vehicle-model, product, and trademark references are handled case by case. A factual reference may be retained
+          when it accurately describes the depicted subject. A reference must not imply sponsorship, approval, authorization, affiliation, or
+          endorsement, and the site does not claim ownership of third-party names or marks.
+        </p>
+        <p>
+          Uncertain references are flagged for record-specific review. A reference may be corrected or removed when it is inaccurate, unsupported,
+          misleading, or unnecessary. Uncertain brand names are not automatically replaced with invented generic wording, and this policy does not
+          authorize a bulk title rewrite. Qualified review of this policy remains pending.
+        </p>
+      </TrustSection>
+
       <TrustSection title="Corrections and availability">
         <p>
           Report confusing titles, classification problems, broken pages, accessibility issues, or rights concerns through the{" "}

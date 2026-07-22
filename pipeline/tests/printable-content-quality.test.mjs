@@ -88,7 +88,8 @@ test("trust copy reflects OFF advertising and does not publish an invented artwo
   const terms = text("app/terms/page.tsx");
   assert.match(privacy, /Advertising is currently off/);
   assert.doesNotMatch(privacy, /Advertisement areas are inert layout placeholders/);
-  assert.match(terms, /Verified rights records are not currently available to support a sitewide/);
+  assert.match(terms, /Verified record-level provenance, licensing, assignment, or public-domain evidence is not currently available/);
+  assert.match(terms, /A final public-use license is under review/);
   assert.doesNotMatch(terms, /Visitors may print or download pages for personal|Do not resell individual files|governed by the laws|COPPA compliant/i);
 });
 

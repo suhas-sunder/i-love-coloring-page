@@ -50,6 +50,14 @@ export default function AffiliateDisclosurePage() {
         </p>
       </TrustSection>
 
+      <TrustSection title="Advertising is separate">
+        <p>
+          Live advertising is currently disabled, and the site does not claim an active advertiser relationship. Advertising is not the same as an
+          affiliate link. Advertising-related policies, audience treatment, consent choices, and account configuration require review before any
+          advertising is enabled.
+        </p>
+      </TrustSection>
+
       <TrustSection title="Questions">
         <p>
           Questions about affiliate or partnership plans can be sent to <a href={`mailto:${contactEmail}`}>{contactEmail}</a> or through the{" "}

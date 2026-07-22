@@ -56,11 +56,22 @@ export default function ContactPage() {
         </ul>
       </TrustSection>
 
-      <TrustSection title="Copyright and ownership concerns">
+      <TrustSection title="Correction and removal requests">
         <p>
-          Include the page URL, a concise explanation of the concern, and relevant information showing your connection to the work or rights involved.
-          The information will be reviewed, but contacting the site does not guarantee a particular outcome or removal.
+          A person who believes that material on the site should be corrected or removed may contact{" "}
+          <a href={`mailto:${contactEmail}`}>{contactEmail}</a>.
         </p>
+        <p>The request should include:</p>
+        <ol>
+          <li>The exact page URL.</li>
+          <li>Identification of the material at issue.</li>
+          <li>The requester&apos;s name and contact information.</li>
+          <li>A clear explanation of the claimed right or factual concern.</li>
+          <li>Supporting information sufficient to evaluate the request.</li>
+          <li>The requested correction or removal.</li>
+        </ol>
+        <p>{siteIdentity.siteName} may review, restrict, correct, or remove material after evaluating the request.</p>
+        <p>This is a contact and review process. It is not presented as a statutory notice procedure, designated-agent process, or legal determination.</p>
       </TrustSection>
     </TrustPage>
   );
