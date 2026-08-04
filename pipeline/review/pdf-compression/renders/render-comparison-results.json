@@ -1,0 +1,262 @@
+[
+  {
+    "fixture": "alligator",
+    "candidate": "animals-flate-rgb",
+    "highres_exact": true,
+    "diff_bbox": null,
+    "channel_extrema": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "fixture": "alligator",
+    "candidate": "animals-flate-gray",
+    "highres_exact": true,
+    "diff_bbox": null,
+    "channel_extrema": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "fixture": "alligator",
+    "candidate": "animals-jpeg-95",
+    "highres_exact": false,
+    "diff_bbox": [
+      216,
+      104,
+      2335,
+      3239
+    ],
+    "channel_extrema": [
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        8
+      ]
+    ]
+  },
+  {
+    "fixture": "cats",
+    "candidate": "playing-cards-flate-rgb",
+    "highres_exact": true,
+    "diff_bbox": null,
+    "channel_extrema": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "fixture": "cats",
+    "candidate": "playing-cards-flate-gray",
+    "highres_exact": true,
+    "diff_bbox": null,
+    "channel_extrema": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "fixture": "cats",
+    "candidate": "playing-cards-jpeg-95",
+    "highres_exact": false,
+    "diff_bbox": [
+      279,
+      72,
+      2272,
+      3239
+    ],
+    "channel_extrema": [
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        9
+      ]
+    ]
+  },
+  {
+    "fixture": "anime",
+    "candidate": "girl-brazilian-jiu-jitsu-flate-rgb",
+    "highres_exact": true,
+    "diff_bbox": null,
+    "channel_extrema": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "fixture": "anime",
+    "candidate": "girl-brazilian-jiu-jitsu-flate-gray",
+    "highres_exact": true,
+    "diff_bbox": null,
+    "channel_extrema": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "fixture": "anime",
+    "candidate": "girl-brazilian-jiu-jitsu-jpeg-95",
+    "highres_exact": false,
+    "diff_bbox": [
+      226,
+      62,
+      2335,
+      3239
+    ],
+    "channel_extrema": [
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        9
+      ]
+    ]
+  },
+  {
+    "fixture": "synthetic",
+    "candidate": "line-art-flate-rgb",
+    "highres_exact": true,
+    "diff_bbox": null,
+    "channel_extrema": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "fixture": "synthetic",
+    "candidate": "line-art-flate-gray",
+    "highres_exact": true,
+    "diff_bbox": null,
+    "channel_extrema": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "fixture": "synthetic",
+    "candidate": "line-art-jpeg-95",
+    "highres_exact": false,
+    "diff_bbox": [
+      321,
+      188,
+      2219,
+      3028
+    ],
+    "channel_extrema": [
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        8
+      ]
+    ]
+  }
+]

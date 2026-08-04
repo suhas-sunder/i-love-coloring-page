@@ -1,0 +1,282 @@
+{
+  "generatedAt": "2026-08-03T00:30:42.475Z",
+  "methods": {
+    "flate-rgb": "Lossless zlib/deflate of the existing 8-bit RGB pixels; PDF /FlateDecode.",
+    "flate-gray": "Lossless zlib/deflate after converting RGB pixels to 8-bit luminance; PDF /FlateDecode.",
+    "jpeg-95": "High-quality 4:4:4 JPEG at quality 95; PDF /DCTDecode."
+  },
+  "records": [
+    {
+      "source": "/printables/animals/animals-alligator-4feec8505a",
+      "fixture": false,
+      "candidate": "flate-rgb",
+      "path": "pipeline/review/pdf-compression/bakeoff/animals-alligator-flate-rgb.pdf",
+      "byteLength": 581331,
+      "reductionPercent": 94.9542,
+      "encodingDurationMs": 861.85,
+      "imageDimensions": "1600x2400",
+      "colorSpace": "/DeviceRGB",
+      "bitsPerComponent": 8,
+      "filter": "/FlateDecode",
+      "pageCount": 1,
+      "mediaBox": "0 0 612 792",
+      "metadataTitle": "Animals Alligator - iLoveColoringPage.com",
+      "pixelComparison": {
+        "sameLength": true,
+        "changedChannels": 0,
+        "channelsOverFive": 0,
+        "meanAbsoluteError": 0,
+        "maxAbsoluteError": 0
+      }
+    },
+    {
+      "source": "/printables/animals/animals-alligator-4feec8505a",
+      "fixture": false,
+      "candidate": "flate-gray",
+      "path": "pipeline/review/pdf-compression/bakeoff/animals-alligator-flate-gray.pdf",
+      "byteLength": 312428,
+      "reductionPercent": 97.2882,
+      "encodingDurationMs": 866.56,
+      "imageDimensions": "1600x2400",
+      "colorSpace": "/DeviceGray",
+      "bitsPerComponent": 8,
+      "filter": "/FlateDecode",
+      "pageCount": 1,
+      "mediaBox": "0 0 612 792",
+      "metadataTitle": "Animals Alligator - iLoveColoringPage.com",
+      "pixelComparison": {
+        "nonNeutralPixels": 0,
+        "changedChannels": 0,
+        "meanAbsoluteError": 0,
+        "maxAbsoluteError": 0
+      }
+    },
+    {
+      "source": "/printables/animals/animals-alligator-4feec8505a",
+      "fixture": false,
+      "candidate": "jpeg-95",
+      "path": "pipeline/review/pdf-compression/bakeoff/animals-alligator-jpeg-95.pdf",
+      "byteLength": 921307,
+      "reductionPercent": 92.0033,
+      "encodingDurationMs": 104.67,
+      "imageDimensions": "1600x2400",
+      "colorSpace": "/DeviceRGB",
+      "bitsPerComponent": 8,
+      "filter": "/DCTDecode",
+      "pageCount": 1,
+      "mediaBox": "0 0 612 792",
+      "metadataTitle": "Animals Alligator - iLoveColoringPage.com",
+      "pixelComparison": {
+        "sameLength": true,
+        "changedChannels": 1664766,
+        "channelsOverFive": 11250,
+        "meanAbsoluteError": 0.2644,
+        "maxAbsoluteError": 9
+      }
+    },
+    {
+      "source": "/printables/animals/cats-playing-cards-c22648db9b",
+      "fixture": false,
+      "candidate": "flate-rgb",
+      "path": "pipeline/review/pdf-compression/bakeoff/cats-playing-cards-flate-rgb.pdf",
+      "byteLength": 504661,
+      "reductionPercent": 95.6197,
+      "encodingDurationMs": 774.88,
+      "imageDimensions": "1600x2400",
+      "colorSpace": "/DeviceRGB",
+      "bitsPerComponent": 8,
+      "filter": "/FlateDecode",
+      "pageCount": 1,
+      "mediaBox": "0 0 612 792",
+      "metadataTitle": "Cats Playing Cards - iLoveColoringPage.com",
+      "pixelComparison": {
+        "sameLength": true,
+        "changedChannels": 0,
+        "channelsOverFive": 0,
+        "meanAbsoluteError": 0,
+        "maxAbsoluteError": 0
+      }
+    },
+    {
+      "source": "/printables/animals/cats-playing-cards-c22648db9b",
+      "fixture": false,
+      "candidate": "flate-gray",
+      "path": "pipeline/review/pdf-compression/bakeoff/cats-playing-cards-flate-gray.pdf",
+      "byteLength": 270391,
+      "reductionPercent": 97.6531,
+      "encodingDurationMs": 591.1,
+      "imageDimensions": "1600x2400",
+      "colorSpace": "/DeviceGray",
+      "bitsPerComponent": 8,
+      "filter": "/FlateDecode",
+      "pageCount": 1,
+      "mediaBox": "0 0 612 792",
+      "metadataTitle": "Cats Playing Cards - iLoveColoringPage.com",
+      "pixelComparison": {
+        "nonNeutralPixels": 0,
+        "changedChannels": 0,
+        "meanAbsoluteError": 0,
+        "maxAbsoluteError": 0
+      }
+    },
+    {
+      "source": "/printables/animals/cats-playing-cards-c22648db9b",
+      "fixture": false,
+      "candidate": "jpeg-95",
+      "path": "pipeline/review/pdf-compression/bakeoff/cats-playing-cards-jpeg-95.pdf",
+      "byteLength": 675201,
+      "reductionPercent": 94.1394,
+      "encodingDurationMs": 69.16,
+      "imageDimensions": "1600x2400",
+      "colorSpace": "/DeviceRGB",
+      "bitsPerComponent": 8,
+      "filter": "/DCTDecode",
+      "pageCount": 1,
+      "mediaBox": "0 0 612 792",
+      "metadataTitle": "Cats Playing Cards - iLoveColoringPage.com",
+      "pixelComparison": {
+        "sameLength": true,
+        "changedChannels": 1147494,
+        "channelsOverFive": 7860,
+        "meanAbsoluteError": 0.1833,
+        "maxAbsoluteError": 10
+      }
+    },
+    {
+      "source": "/printables/anime-girls/anime-girl-brazilian-jiu-jitsu-5a40029b84",
+      "fixture": false,
+      "candidate": "flate-rgb",
+      "path": "pipeline/review/pdf-compression/bakeoff/anime-girl-brazilian-jiu-jitsu-flate-rgb.pdf",
+      "byteLength": 538443,
+      "reductionPercent": 95.3265,
+      "encodingDurationMs": 944.7,
+      "imageDimensions": "1600x2400",
+      "colorSpace": "/DeviceRGB",
+      "bitsPerComponent": 8,
+      "filter": "/FlateDecode",
+      "pageCount": 1,
+      "mediaBox": "0 0 612 792",
+      "metadataTitle": "Anime Girl Brazilian Jiu Jitsu - iLoveColoringPage.com",
+      "pixelComparison": {
+        "sameLength": true,
+        "changedChannels": 0,
+        "channelsOverFive": 0,
+        "meanAbsoluteError": 0,
+        "maxAbsoluteError": 0
+      }
+    },
+    {
+      "source": "/printables/anime-girls/anime-girl-brazilian-jiu-jitsu-5a40029b84",
+      "fixture": false,
+      "candidate": "flate-gray",
+      "path": "pipeline/review/pdf-compression/bakeoff/anime-girl-brazilian-jiu-jitsu-flate-gray.pdf",
+      "byteLength": 293061,
+      "reductionPercent": 97.4563,
+      "encodingDurationMs": 767.28,
+      "imageDimensions": "1600x2400",
+      "colorSpace": "/DeviceGray",
+      "bitsPerComponent": 8,
+      "filter": "/FlateDecode",
+      "pageCount": 1,
+      "mediaBox": "0 0 612 792",
+      "metadataTitle": "Anime Girl Brazilian Jiu Jitsu - iLoveColoringPage.com",
+      "pixelComparison": {
+        "nonNeutralPixels": 0,
+        "changedChannels": 0,
+        "meanAbsoluteError": 0,
+        "maxAbsoluteError": 0
+      }
+    },
+    {
+      "source": "/printables/anime-girls/anime-girl-brazilian-jiu-jitsu-5a40029b84",
+      "fixture": false,
+      "candidate": "jpeg-95",
+      "path": "pipeline/review/pdf-compression/bakeoff/anime-girl-brazilian-jiu-jitsu-jpeg-95.pdf",
+      "byteLength": 790130,
+      "reductionPercent": 93.1419,
+      "encodingDurationMs": 66.25,
+      "imageDimensions": "1600x2400",
+      "colorSpace": "/DeviceRGB",
+      "bitsPerComponent": 8,
+      "filter": "/DCTDecode",
+      "pageCount": 1,
+      "mediaBox": "0 0 612 792",
+      "metadataTitle": "Anime Girl Brazilian Jiu Jitsu - iLoveColoringPage.com",
+      "pixelComparison": {
+        "sameLength": true,
+        "changedChannels": 1392312,
+        "channelsOverFive": 9051,
+        "meanAbsoluteError": 0.2199,
+        "maxAbsoluteError": 10
+      }
+    },
+    {
+      "source": "synthetic-line-art",
+      "fixture": true,
+      "candidate": "flate-rgb",
+      "path": "pipeline/review/pdf-compression/bakeoff/synthetic-line-art-flate-rgb.pdf",
+      "byteLength": 39868,
+      "reductionPercent": 99.654,
+      "encodingDurationMs": 149.33,
+      "imageDimensions": "1600x2400",
+      "colorSpace": "/DeviceRGB",
+      "bitsPerComponent": 8,
+      "filter": "/FlateDecode",
+      "pageCount": 1,
+      "mediaBox": "0 0 612 792",
+      "metadataTitle": "Animals Alligator - iLoveColoringPage.com",
+      "pixelComparison": {
+        "sameLength": true,
+        "changedChannels": 0,
+        "channelsOverFive": 0,
+        "meanAbsoluteError": 0,
+        "maxAbsoluteError": 0
+      }
+    },
+    {
+      "source": "synthetic-line-art",
+      "fixture": true,
+      "candidate": "flate-gray",
+      "path": "pipeline/review/pdf-compression/bakeoff/synthetic-line-art-flate-gray.pdf",
+      "byteLength": 25590,
+      "reductionPercent": 99.7779,
+      "encodingDurationMs": 129.06,
+      "imageDimensions": "1600x2400",
+      "colorSpace": "/DeviceGray",
+      "bitsPerComponent": 8,
+      "filter": "/FlateDecode",
+      "pageCount": 1,
+      "mediaBox": "0 0 612 792",
+      "metadataTitle": "Animals Alligator - iLoveColoringPage.com",
+      "pixelComparison": {
+        "nonNeutralPixels": 0,
+        "changedChannels": 0,
+        "meanAbsoluteError": 0,
+        "maxAbsoluteError": 0
+      }
+    },
+    {
+      "source": "synthetic-line-art",
+      "fixture": true,
+      "candidate": "jpeg-95",
+      "path": "pipeline/review/pdf-compression/bakeoff/synthetic-line-art-jpeg-95.pdf",
+      "byteLength": 608722,
+      "reductionPercent": 94.7166,
+      "encodingDurationMs": 63.41,
+      "imageDimensions": "1600x2400",
+      "colorSpace": "/DeviceRGB",
+      "bitsPerComponent": 8,
+      "filter": "/DCTDecode",
+      "pageCount": 1,
+      "mediaBox": "0 0 612 792",
+      "metadataTitle": "Animals Alligator - iLoveColoringPage.com",
+      "pixelComparison": {
+        "sameLength": true,
+        "changedChannels": 726642,
+        "channelsOverFive": 5520,
+        "meanAbsoluteError": 0.1118,
+        "maxAbsoluteError": 8
+      }
+    }
+  ]
+}

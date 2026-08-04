@@ -1,0 +1,550 @@
+{
+  "verifiedAt": "2026-08-03T00:51:12.882Z",
+  "appUrl": "http://127.0.0.1:3005",
+  "viewports": [
+    390,
+    768,
+    1024,
+    1440,
+    1920
+  ],
+  "routes": [
+    "/printables/animals/animals-alligator-4feec8505a",
+    "/printables/animals/cats-playing-cards-c22648db9b",
+    "/printables/anime-girls/anime-girl-brazilian-jiu-jitsu-5a40029b84"
+  ],
+  "browsers": [
+    {
+      "id": "chrome",
+      "available": true,
+      "version": "150.0.7871.187",
+      "engineCoverage": "Chromium",
+      "pagesChecked": 15,
+      "failures": [],
+      "downloads": [
+        {
+          "route": "/printables/animals/animals-alligator-4feec8505a",
+          "path": "pipeline/review/pdf-compression/final/chrome/animals-alligator.pdf",
+          "filename": "animals-alligator.pdf",
+          "byteLength": 613584,
+          "mimeType": "application/pdf",
+          "magic": "%PDF",
+          "pageCount": 1,
+          "mediaBox": "0 0 612 792",
+          "metadataTitle": "Animals Alligator - iLoveColoringPage.com",
+          "image": {
+            "width": 1600,
+            "height": 2400,
+            "colorSpace": "/DeviceRGB",
+            "bitsPerComponent": 8,
+            "filter": "/FlateDecode",
+            "streamLength": 612487
+          },
+          "inflatedImageBytes": 11520000,
+          "xrefValid": true,
+          "directTimingsMs": [
+            727.93,
+            366.89
+          ],
+          "printTimingMs": 271.66,
+          "lifecycleAfterDownloads": {
+            "created": 2,
+            "revoked": 2,
+            "active": 0,
+            "printCalls": 0,
+            "opens": 0,
+            "pdfSizes": [
+              613584,
+              613584
+            ],
+            "links": 0,
+            "printFrames": 0
+          },
+          "lifecycleAfterPrint": {
+            "qa": {
+              "created": 3,
+              "revoked": 2,
+              "active": 1,
+              "printCalls": 0,
+              "opens": 0,
+              "pdfSizes": [
+                613584,
+                613584,
+                613584
+              ]
+            },
+            "snapshot": {
+              "pageCount": 1,
+              "pageSize": "letter-portrait",
+              "pdfByteLength": 613584,
+              "artworkBox": {
+                "x": 15,
+                "y": 15,
+                "width": 582,
+                "height": 762
+              },
+              "imageBox": {
+                "x": 52,
+                "y": 15,
+                "width": 508,
+                "height": 762
+              },
+              "brandBox": {
+                "x": 267.78,
+                "y": 7.62,
+                "width": 76.44,
+                "height": 7
+              },
+              "brandPlacement": "bottom-frame-label",
+              "brandingOverlapsArtwork": false,
+              "appUiControlsIncluded": false,
+              "printableBorderCount": 1,
+              "metadataTitle": "Animals Alligator - iLoveColoringPage.com",
+              "source": "internal-svg"
+            },
+            "printFrames": 1
+          }
+        },
+        {
+          "route": "/printables/animals/cats-playing-cards-c22648db9b",
+          "path": "pipeline/review/pdf-compression/final/chrome/cats-playing-cards.pdf",
+          "filename": "cats-playing-cards.pdf",
+          "byteLength": 539659,
+          "mimeType": "application/pdf",
+          "magic": "%PDF",
+          "pageCount": 1,
+          "mediaBox": "0 0 612 792",
+          "metadataTitle": "Cats Playing Cards - iLoveColoringPage.com",
+          "image": {
+            "width": 1600,
+            "height": 2400,
+            "colorSpace": "/DeviceRGB",
+            "bitsPerComponent": 8,
+            "filter": "/FlateDecode",
+            "streamLength": 538561
+          },
+          "inflatedImageBytes": 11520000,
+          "xrefValid": true,
+          "directTimingsMs": [
+            533.33,
+            381.87
+          ],
+          "printTimingMs": 252.63,
+          "lifecycleAfterDownloads": {
+            "created": 2,
+            "revoked": 2,
+            "active": 0,
+            "printCalls": 0,
+            "opens": 0,
+            "pdfSizes": [
+              539659,
+              539659
+            ],
+            "links": 0,
+            "printFrames": 0
+          },
+          "lifecycleAfterPrint": {
+            "qa": {
+              "created": 3,
+              "revoked": 2,
+              "active": 1,
+              "printCalls": 0,
+              "opens": 0,
+              "pdfSizes": [
+                539659,
+                539659,
+                539659
+              ]
+            },
+            "snapshot": {
+              "pageCount": 1,
+              "pageSize": "letter-portrait",
+              "pdfByteLength": 539659,
+              "artworkBox": {
+                "x": 15,
+                "y": 15,
+                "width": 582,
+                "height": 762
+              },
+              "imageBox": {
+                "x": 52,
+                "y": 15,
+                "width": 508,
+                "height": 762
+              },
+              "brandBox": {
+                "x": 267.78,
+                "y": 7.62,
+                "width": 76.44,
+                "height": 7
+              },
+              "brandPlacement": "bottom-frame-label",
+              "brandingOverlapsArtwork": false,
+              "appUiControlsIncluded": false,
+              "printableBorderCount": 1,
+              "metadataTitle": "Cats Playing Cards - iLoveColoringPage.com",
+              "source": "internal-svg"
+            },
+            "printFrames": 1
+          }
+        },
+        {
+          "route": "/printables/anime-girls/anime-girl-brazilian-jiu-jitsu-5a40029b84",
+          "path": "pipeline/review/pdf-compression/final/chrome/anime-girl-brazilian-jiu-jitsu.pdf",
+          "filename": "anime-girl-brazilian-jiu-jitsu.pdf",
+          "byteLength": 573452,
+          "mimeType": "application/pdf",
+          "magic": "%PDF",
+          "pageCount": 1,
+          "mediaBox": "0 0 612 792",
+          "metadataTitle": "Anime Girl Brazilian Jiu Jitsu - iLoveColoringPage.com",
+          "image": {
+            "width": 1600,
+            "height": 2400,
+            "colorSpace": "/DeviceRGB",
+            "bitsPerComponent": 8,
+            "filter": "/FlateDecode",
+            "streamLength": 572342
+          },
+          "inflatedImageBytes": 11520000,
+          "xrefValid": true,
+          "directTimingsMs": [
+            503.9,
+            395.45
+          ],
+          "printTimingMs": 285.87,
+          "lifecycleAfterDownloads": {
+            "created": 2,
+            "revoked": 2,
+            "active": 0,
+            "printCalls": 0,
+            "opens": 0,
+            "pdfSizes": [
+              573452,
+              573452
+            ],
+            "links": 0,
+            "printFrames": 0
+          },
+          "lifecycleAfterPrint": {
+            "qa": {
+              "created": 3,
+              "revoked": 2,
+              "active": 1,
+              "printCalls": 0,
+              "opens": 0,
+              "pdfSizes": [
+                573452,
+                573452,
+                573452
+              ]
+            },
+            "snapshot": {
+              "pageCount": 1,
+              "pageSize": "letter-portrait",
+              "pdfByteLength": 573452,
+              "artworkBox": {
+                "x": 15,
+                "y": 15,
+                "width": 582,
+                "height": 762
+              },
+              "imageBox": {
+                "x": 52,
+                "y": 15,
+                "width": 508,
+                "height": 762
+              },
+              "brandBox": {
+                "x": 267.78,
+                "y": 7.62,
+                "width": 76.44,
+                "height": 7
+              },
+              "brandPlacement": "bottom-frame-label",
+              "brandingOverlapsArtwork": false,
+              "appUiControlsIncluded": false,
+              "printableBorderCount": 1,
+              "metadataTitle": "Anime Girl Brazilian Jiu Jitsu - iLoveColoringPage.com",
+              "source": "internal-svg"
+            },
+            "printFrames": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "edge",
+      "available": true,
+      "version": "151.0.4129.59",
+      "engineCoverage": "Chromium",
+      "pagesChecked": 15,
+      "failures": [],
+      "downloads": [
+        {
+          "route": "/printables/animals/animals-alligator-4feec8505a",
+          "path": "pipeline/review/pdf-compression/final/edge/animals-alligator.pdf",
+          "filename": "animals-alligator.pdf",
+          "byteLength": 613584,
+          "mimeType": "application/pdf",
+          "magic": "%PDF",
+          "pageCount": 1,
+          "mediaBox": "0 0 612 792",
+          "metadataTitle": "Animals Alligator - iLoveColoringPage.com",
+          "image": {
+            "width": 1600,
+            "height": 2400,
+            "colorSpace": "/DeviceRGB",
+            "bitsPerComponent": 8,
+            "filter": "/FlateDecode",
+            "streamLength": 612487
+          },
+          "inflatedImageBytes": 11520000,
+          "xrefValid": true,
+          "directTimingsMs": [
+            758.87,
+            396.85
+          ],
+          "printTimingMs": 285.57,
+          "lifecycleAfterDownloads": {
+            "created": 2,
+            "revoked": 2,
+            "active": 0,
+            "printCalls": 0,
+            "opens": 0,
+            "pdfSizes": [
+              613584,
+              613584
+            ],
+            "links": 0,
+            "printFrames": 0
+          },
+          "lifecycleAfterPrint": {
+            "qa": {
+              "created": 3,
+              "revoked": 2,
+              "active": 1,
+              "printCalls": 0,
+              "opens": 0,
+              "pdfSizes": [
+                613584,
+                613584,
+                613584
+              ]
+            },
+            "snapshot": {
+              "pageCount": 1,
+              "pageSize": "letter-portrait",
+              "pdfByteLength": 613584,
+              "artworkBox": {
+                "x": 15,
+                "y": 15,
+                "width": 582,
+                "height": 762
+              },
+              "imageBox": {
+                "x": 52,
+                "y": 15,
+                "width": 508,
+                "height": 762
+              },
+              "brandBox": {
+                "x": 267.78,
+                "y": 7.62,
+                "width": 76.44,
+                "height": 7
+              },
+              "brandPlacement": "bottom-frame-label",
+              "brandingOverlapsArtwork": false,
+              "appUiControlsIncluded": false,
+              "printableBorderCount": 1,
+              "metadataTitle": "Animals Alligator - iLoveColoringPage.com",
+              "source": "internal-svg"
+            },
+            "printFrames": 1
+          }
+        },
+        {
+          "route": "/printables/animals/cats-playing-cards-c22648db9b",
+          "path": "pipeline/review/pdf-compression/final/edge/cats-playing-cards.pdf",
+          "filename": "cats-playing-cards.pdf",
+          "byteLength": 539659,
+          "mimeType": "application/pdf",
+          "magic": "%PDF",
+          "pageCount": 1,
+          "mediaBox": "0 0 612 792",
+          "metadataTitle": "Cats Playing Cards - iLoveColoringPage.com",
+          "image": {
+            "width": 1600,
+            "height": 2400,
+            "colorSpace": "/DeviceRGB",
+            "bitsPerComponent": 8,
+            "filter": "/FlateDecode",
+            "streamLength": 538561
+          },
+          "inflatedImageBytes": 11520000,
+          "xrefValid": true,
+          "directTimingsMs": [
+            557.05,
+            397.9
+          ],
+          "printTimingMs": 255.15,
+          "lifecycleAfterDownloads": {
+            "created": 2,
+            "revoked": 2,
+            "active": 0,
+            "printCalls": 0,
+            "opens": 0,
+            "pdfSizes": [
+              539659,
+              539659
+            ],
+            "links": 0,
+            "printFrames": 0
+          },
+          "lifecycleAfterPrint": {
+            "qa": {
+              "created": 3,
+              "revoked": 2,
+              "active": 1,
+              "printCalls": 0,
+              "opens": 0,
+              "pdfSizes": [
+                539659,
+                539659,
+                539659
+              ]
+            },
+            "snapshot": {
+              "pageCount": 1,
+              "pageSize": "letter-portrait",
+              "pdfByteLength": 539659,
+              "artworkBox": {
+                "x": 15,
+                "y": 15,
+                "width": 582,
+                "height": 762
+              },
+              "imageBox": {
+                "x": 52,
+                "y": 15,
+                "width": 508,
+                "height": 762
+              },
+              "brandBox": {
+                "x": 267.78,
+                "y": 7.62,
+                "width": 76.44,
+                "height": 7
+              },
+              "brandPlacement": "bottom-frame-label",
+              "brandingOverlapsArtwork": false,
+              "appUiControlsIncluded": false,
+              "printableBorderCount": 1,
+              "metadataTitle": "Cats Playing Cards - iLoveColoringPage.com",
+              "source": "internal-svg"
+            },
+            "printFrames": 1
+          }
+        },
+        {
+          "route": "/printables/anime-girls/anime-girl-brazilian-jiu-jitsu-5a40029b84",
+          "path": "pipeline/review/pdf-compression/final/edge/anime-girl-brazilian-jiu-jitsu.pdf",
+          "filename": "anime-girl-brazilian-jiu-jitsu.pdf",
+          "byteLength": 573452,
+          "mimeType": "application/pdf",
+          "magic": "%PDF",
+          "pageCount": 1,
+          "mediaBox": "0 0 612 792",
+          "metadataTitle": "Anime Girl Brazilian Jiu Jitsu - iLoveColoringPage.com",
+          "image": {
+            "width": 1600,
+            "height": 2400,
+            "colorSpace": "/DeviceRGB",
+            "bitsPerComponent": 8,
+            "filter": "/FlateDecode",
+            "streamLength": 572342
+          },
+          "inflatedImageBytes": 11520000,
+          "xrefValid": true,
+          "directTimingsMs": [
+            589.48,
+            420.39
+          ],
+          "printTimingMs": 256.07,
+          "lifecycleAfterDownloads": {
+            "created": 2,
+            "revoked": 2,
+            "active": 0,
+            "printCalls": 0,
+            "opens": 0,
+            "pdfSizes": [
+              573452,
+              573452
+            ],
+            "links": 0,
+            "printFrames": 0
+          },
+          "lifecycleAfterPrint": {
+            "qa": {
+              "created": 3,
+              "revoked": 2,
+              "active": 1,
+              "printCalls": 0,
+              "opens": 0,
+              "pdfSizes": [
+                573452,
+                573452,
+                573452
+              ]
+            },
+            "snapshot": {
+              "pageCount": 1,
+              "pageSize": "letter-portrait",
+              "pdfByteLength": 573452,
+              "artworkBox": {
+                "x": 15,
+                "y": 15,
+                "width": 582,
+                "height": 762
+              },
+              "imageBox": {
+                "x": 52,
+                "y": 15,
+                "width": 508,
+                "height": 762
+              },
+              "brandBox": {
+                "x": 267.78,
+                "y": 7.62,
+                "width": 76.44,
+                "height": 7
+              },
+              "brandPlacement": "bottom-frame-label",
+              "brandingOverlapsArtwork": false,
+              "appUiControlsIncluded": false,
+              "printableBorderCount": 1,
+              "metadataTitle": "Anime Girl Brazilian Jiu Jitsu - iLoveColoringPage.com",
+              "source": "internal-svg"
+            },
+            "printFrames": 1
+          }
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    "pipeline/review/pdf-compression/final/chrome-390-printable-actions.png",
+    "pipeline/review/pdf-compression/final/chrome-1440-printable-actions.png"
+  ],
+  "summary": {
+    "availableBrowsers": [
+      "chrome",
+      "edge"
+    ],
+    "unavailableBrowsers": [],
+    "maxPdfBytes": 613584,
+    "everyPdfAtOrBelow3MiB": true,
+    "allChecksPassed": true
+  }
+}

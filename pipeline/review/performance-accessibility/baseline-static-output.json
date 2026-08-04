@@ -1,0 +1,1323 @@
+{
+  "schemaVersion": 1,
+  "label": "baseline-static-output",
+  "measuredAt": "2026-08-04T02:44:50.350Z",
+  "measurementClass": "local static-output artifact measurement",
+  "fieldData": null,
+  "browserLabData": null,
+  "browserLabReason": "Requires an available controlled browser session; static artifact checks do not claim LCP, CLS, INP, TBT, long tasks, overflow, or interaction timing.",
+  "budgets": {
+    "galleryJavaScriptGzipBytes": 215040,
+    "printableJavaScriptGzipBytes": 204800,
+    "sharedCssGzipBytes": 12288,
+    "mobileInitialImageBytes": 307200,
+    "desktopInitialImageBytes": 614400,
+    "interactionLongTaskMs": 200,
+    "labTotalBlockingTimeMs": 200,
+    "printablePdfBytes": 3145728,
+    "brokenPublicImages": 0,
+    "horizontalOverflowRoutes": 0
+  },
+  "budgetResults": [
+    {
+      "id": "gallery:gallery-js-gzip",
+      "measured": 202058,
+      "limit": 215040,
+      "unit": "bytes",
+      "passed": true
+    },
+    {
+      "id": "large-hub:gallery-js-gzip",
+      "measured": 202814,
+      "limit": 215040,
+      "unit": "bytes",
+      "passed": true
+    },
+    {
+      "id": "small-hub:gallery-js-gzip",
+      "measured": 202814,
+      "limit": 215040,
+      "unit": "bytes",
+      "passed": true
+    },
+    {
+      "id": "seasonal-hub:gallery-js-gzip",
+      "measured": 202814,
+      "limit": 215040,
+      "unit": "bytes",
+      "passed": true
+    },
+    {
+      "id": "paginated-hub:gallery-js-gzip",
+      "measured": 202814,
+      "limit": 215040,
+      "unit": "bytes",
+      "passed": true
+    },
+    {
+      "id": "printable:printable-js-gzip",
+      "measured": 197663,
+      "limit": 204800,
+      "unit": "bytes",
+      "passed": true
+    },
+    {
+      "id": "shared-css-gzip",
+      "measured": 9938,
+      "limit": 12288,
+      "unit": "bytes",
+      "passed": true
+    },
+    {
+      "id": "gallery:mobile-initial-images",
+      "measured": 152962,
+      "limit": 307200,
+      "unit": "bytes",
+      "passed": true
+    },
+    {
+      "id": "gallery:desktop-initial-images",
+      "measured": 152962,
+      "limit": 614400,
+      "unit": "bytes",
+      "passed": true
+    },
+    {
+      "id": "large-hub:mobile-initial-images",
+      "measured": 402178,
+      "limit": 307200,
+      "unit": "bytes",
+      "passed": false
+    },
+    {
+      "id": "large-hub:desktop-initial-images",
+      "measured": 402178,
+      "limit": 614400,
+      "unit": "bytes",
+      "passed": true
+    },
+    {
+      "id": "small-hub:mobile-initial-images",
+      "measured": 202208,
+      "limit": 307200,
+      "unit": "bytes",
+      "passed": true
+    },
+    {
+      "id": "small-hub:desktop-initial-images",
+      "measured": 202208,
+      "limit": 614400,
+      "unit": "bytes",
+      "passed": true
+    },
+    {
+      "id": "seasonal-hub:mobile-initial-images",
+      "measured": 370464,
+      "limit": 307200,
+      "unit": "bytes",
+      "passed": false
+    },
+    {
+      "id": "seasonal-hub:desktop-initial-images",
+      "measured": 370464,
+      "limit": 614400,
+      "unit": "bytes",
+      "passed": true
+    },
+    {
+      "id": "paginated-hub:mobile-initial-images",
+      "measured": 153084,
+      "limit": 307200,
+      "unit": "bytes",
+      "passed": true
+    },
+    {
+      "id": "paginated-hub:desktop-initial-images",
+      "measured": 153084,
+      "limit": 614400,
+      "unit": "bytes",
+      "passed": true
+    },
+    {
+      "id": "representative-pdf",
+      "measured": 613584,
+      "limit": 3145728,
+      "unit": "bytes",
+      "passed": true
+    },
+    {
+      "id": "broken-public-images",
+      "measured": 0,
+      "limit": 0,
+      "unit": "count",
+      "passed": true
+    }
+  ],
+  "passedMeasuredBudgets": false,
+  "routes": [
+    {
+      "id": "home",
+      "route": "/",
+      "output": "index.html",
+      "family": "home",
+      "htmlBytes": 100627,
+      "htmlGzipBytes": 14423,
+      "javascriptAssets": [
+        "/_next/static/chunks/0pqt~8bl3ukh4.js",
+        "/_next/static/chunks/07lhk_q6pmm3r.js",
+        "/_next/static/chunks/02j8d7.9f.ryz.js",
+        "/_next/static/chunks/turbopack-07x.j2~8wlu4s.js",
+        "/_next/static/chunks/0kewni5cv3k0l.js",
+        "/_next/static/chunks/0d3shmwh5_nmn.js",
+        "/_next/static/chunks/15aov5f_3w522.js",
+        "/_next/static/chunks/03~yq9q893hmn.js",
+        "/_next/static/chunks/0bzupvr5gt3k9.js"
+      ],
+      "javascriptBytes": 668212,
+      "javascriptGzipBytes": 199248,
+      "cssAssets": [
+        "/_next/static/chunks/01n6jte95t5ma.css"
+      ],
+      "cssBytes": 60210,
+      "cssGzipBytes": 9938,
+      "fontAssets": [
+        "/_next/static/media/03bda585a99c6450-s.p.0zzh68k1~whtc.woff2",
+        "/_next/static/media/f7aa21714c1c53f8-s.p.0bhxxck2.9j91.woff2"
+      ],
+      "fontRequestCount": 2,
+      "fontBytes": 56744,
+      "initialImageRequestCount": 6,
+      "initialImageBytes": 235946,
+      "initialImages": [
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/chibi/chibi-african-dragon-ebdfccdd0d.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/chibi/chibi-african-dragon-ebdfccdd0d.webp",
+          "exists": true,
+          "bytes": 35728
+        },
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+          "exists": true,
+          "bytes": 49052
+        },
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-air-balloon-1f6b5be7bc.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/anime-girls/anime-girl-air-balloon-1f6b5be7bc.webp",
+          "exists": true,
+          "bytes": 41420
+        },
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/birds/birds-albatross-2380234539.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/birds/birds-albatross-2380234539.webp",
+          "exists": true,
+          "bytes": 26762
+        },
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/christmas/christmas-holiday-advent-calendar-a1245c4617.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/christmas/christmas-holiday-advent-calendar-a1245c4617.webp",
+          "exists": true,
+          "bytes": 35042
+        },
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/dinosaurs/prehistoric-allosaurus-9787e7d0fd.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/dinosaurs/prehistoric-allosaurus-9787e7d0fd.webp",
+          "exists": true,
+          "bytes": 47942
+        }
+      ],
+      "totalImageElementCount": 20,
+      "brokenPublicImageCount": 0,
+      "firstPartyRequestCount": 13,
+      "estimatedFirstPartyTransferBytes": 280353,
+      "semantics": {
+        "h1Count": 1,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2
+        ],
+        "duplicateIds": [],
+        "missingImageAltCount": 0,
+        "nestedInteractiveControls": false,
+        "mainCount": 1
+      }
+    },
+    {
+      "id": "gallery",
+      "route": "/coloring-pages",
+      "output": "coloring-pages.html",
+      "family": "gallery",
+      "htmlBytes": 117610,
+      "htmlGzipBytes": 14185,
+      "javascriptAssets": [
+        "/_next/static/chunks/0pqt~8bl3ukh4.js",
+        "/_next/static/chunks/07lhk_q6pmm3r.js",
+        "/_next/static/chunks/02j8d7.9f.ryz.js",
+        "/_next/static/chunks/turbopack-07x.j2~8wlu4s.js",
+        "/_next/static/chunks/0kewni5cv3k0l.js",
+        "/_next/static/chunks/0d3shmwh5_nmn.js",
+        "/_next/static/chunks/17bh~uc.hgoqx.js",
+        "/_next/static/chunks/03~yq9q893hmn.js",
+        "/_next/static/chunks/0bzupvr5gt3k9.js"
+      ],
+      "javascriptBytes": 677935,
+      "javascriptGzipBytes": 202058,
+      "cssAssets": [
+        "/_next/static/chunks/01n6jte95t5ma.css"
+      ],
+      "cssBytes": 60210,
+      "cssGzipBytes": 9938,
+      "fontAssets": [
+        "/_next/static/media/03bda585a99c6450-s.p.0zzh68k1~whtc.woff2",
+        "/_next/static/media/f7aa21714c1c53f8-s.p.0bhxxck2.9j91.woff2"
+      ],
+      "fontRequestCount": 2,
+      "fontBytes": 56744,
+      "initialImageRequestCount": 4,
+      "initialImageBytes": 152962,
+      "initialImages": [
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+          "exists": true,
+          "bytes": 49052
+        },
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-air-balloon-1f6b5be7bc.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/anime-girls/anime-girl-air-balloon-1f6b5be7bc.webp",
+          "exists": true,
+          "bytes": 41420
+        },
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/birds/birds-albatross-2380234539.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/birds/birds-albatross-2380234539.webp",
+          "exists": true,
+          "bytes": 26762
+        },
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/chibi/chibi-african-dragon-ebdfccdd0d.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/chibi/chibi-african-dragon-ebdfccdd0d.webp",
+          "exists": true,
+          "bytes": 35728
+        }
+      ],
+      "totalImageElementCount": 56,
+      "brokenPublicImageCount": 0,
+      "firstPartyRequestCount": 13,
+      "estimatedFirstPartyTransferBytes": 282925,
+      "semantics": {
+        "h1Count": 1,
+        "headingLevels": [
+          1,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2
+        ],
+        "duplicateIds": [],
+        "missingImageAltCount": 0,
+        "nestedInteractiveControls": false,
+        "mainCount": 1
+      }
+    },
+    {
+      "id": "large-hub",
+      "route": "/coloring-pages/animals",
+      "output": "coloring-pages/animals.html",
+      "family": "gallery",
+      "htmlBytes": 183430,
+      "htmlGzipBytes": 19368,
+      "javascriptAssets": [
+        "/_next/static/chunks/0pqt~8bl3ukh4.js",
+        "/_next/static/chunks/07lhk_q6pmm3r.js",
+        "/_next/static/chunks/02j8d7.9f.ryz.js",
+        "/_next/static/chunks/turbopack-07x.j2~8wlu4s.js",
+        "/_next/static/chunks/0kewni5cv3k0l.js",
+        "/_next/static/chunks/0d3shmwh5_nmn.js",
+        "/_next/static/chunks/02qwv4yspfm6..js",
+        "/_next/static/chunks/03~yq9q893hmn.js",
+        "/_next/static/chunks/0bzupvr5gt3k9.js"
+      ],
+      "javascriptBytes": 679923,
+      "javascriptGzipBytes": 202814,
+      "cssAssets": [
+        "/_next/static/chunks/01n6jte95t5ma.css"
+      ],
+      "cssBytes": 60210,
+      "cssGzipBytes": 9938,
+      "fontAssets": [
+        "/_next/static/media/03bda585a99c6450-s.p.0zzh68k1~whtc.woff2",
+        "/_next/static/media/f7aa21714c1c53f8-s.p.0bhxxck2.9j91.woff2"
+      ],
+      "fontRequestCount": 2,
+      "fontBytes": 56744,
+      "initialImageRequestCount": 10,
+      "initialImageBytes": 402178,
+      "initialImages": [
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/chibi/chibi-animals-pets-dogs-afghan-hound-d9a83b6ec9.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/chibi/chibi-animals-pets-dogs-afghan-hound-d9a83b6ec9.webp",
+          "exists": true,
+          "bytes": 38308
+        },
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-armadillo-hoodie-animal-plushie-d2e31ff395.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/anime-girls/anime-girl-armadillo-hoodie-animal-plushie-d2e31ff395.webp",
+          "exists": true,
+          "bytes": 29998
+        },
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/christmas/christmas-holiday-kitten-9c698f8609.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/christmas/christmas-holiday-kitten-9c698f8609.webp",
+          "exists": true,
+          "bytes": 36694
+        },
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+          "exists": true,
+          "bytes": 49052
+        },
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/birds/birds-albatross-2380234539.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/birds/birds-albatross-2380234539.webp",
+          "exists": true,
+          "bytes": 26762
+        },
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/dinosaurs/prehistoric-allosaurus-9787e7d0fd.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/dinosaurs/prehistoric-allosaurus-9787e7d0fd.webp",
+          "exists": true,
+          "bytes": 47942
+        },
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals-playing-cards/cats-playing-cards-c22648db9b.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/animals-playing-cards/cats-playing-cards-c22648db9b.webp",
+          "exists": true,
+          "bytes": 32450
+        },
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+          "exists": true,
+          "bytes": 49052
+        },
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-antelopes-49a5eb802f.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/animals/animals-antelopes-49a5eb802f.webp",
+          "exists": true,
+          "bytes": 44298
+        },
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-buffalo-42947367b4.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/animals/animals-buffalo-42947367b4.webp",
+          "exists": true,
+          "bytes": 47622
+        }
+      ],
+      "totalImageElementCount": 71,
+      "brokenPublicImageCount": 0,
+      "firstPartyRequestCount": 13,
+      "estimatedFirstPartyTransferBytes": 288864,
+      "semantics": {
+        "h1Count": 1,
+        "headingLevels": [
+          1,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2
+        ],
+        "duplicateIds": [],
+        "missingImageAltCount": 0,
+        "nestedInteractiveControls": false,
+        "mainCount": 1
+      }
+    },
+    {
+      "id": "small-hub",
+      "route": "/coloring-pages/lotus",
+      "output": "coloring-pages/lotus.html",
+      "family": "gallery",
+      "htmlBytes": 53410,
+      "htmlGzipBytes": 7975,
+      "javascriptAssets": [
+        "/_next/static/chunks/0pqt~8bl3ukh4.js",
+        "/_next/static/chunks/07lhk_q6pmm3r.js",
+        "/_next/static/chunks/02j8d7.9f.ryz.js",
+        "/_next/static/chunks/turbopack-07x.j2~8wlu4s.js",
+        "/_next/static/chunks/0kewni5cv3k0l.js",
+        "/_next/static/chunks/0d3shmwh5_nmn.js",
+        "/_next/static/chunks/02qwv4yspfm6..js",
+        "/_next/static/chunks/03~yq9q893hmn.js",
+        "/_next/static/chunks/0bzupvr5gt3k9.js"
+      ],
+      "javascriptBytes": 679923,
+      "javascriptGzipBytes": 202814,
+      "cssAssets": [
+        "/_next/static/chunks/01n6jte95t5ma.css"
+      ],
+      "cssBytes": 60210,
+      "cssGzipBytes": 9938,
+      "fontAssets": [
+        "/_next/static/media/03bda585a99c6450-s.p.0zzh68k1~whtc.woff2",
+        "/_next/static/media/f7aa21714c1c53f8-s.p.0bhxxck2.9j91.woff2"
+      ],
+      "fontRequestCount": 2,
+      "fontBytes": 56744,
+      "initialImageRequestCount": 4,
+      "initialImageBytes": 202208,
+      "initialImages": [
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/chibi/chibi-flowers-lotus-0d87de91bc.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/chibi/chibi-flowers-lotus-0d87de91bc.webp",
+          "exists": true,
+          "bytes": 38816
+        },
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/chibi/chibi-flowers-lotus-kawaii-0e0fa19a21.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/chibi/chibi-flowers-lotus-kawaii-0e0fa19a21.webp",
+          "exists": true,
+          "bytes": 52092
+        },
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/flowers/flowers-lotus-76705cae88.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/flowers/flowers-lotus-76705cae88.webp",
+          "exists": true,
+          "bytes": 42398
+        },
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-flowers-lotus-1e19f377e6.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-flowers-lotus-1e19f377e6.webp",
+          "exists": true,
+          "bytes": 68902
+        }
+      ],
+      "totalImageElementCount": 11,
+      "brokenPublicImageCount": 0,
+      "firstPartyRequestCount": 13,
+      "estimatedFirstPartyTransferBytes": 277471,
+      "semantics": {
+        "h1Count": 1,
+        "headingLevels": [
+          1,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2
+        ],
+        "duplicateIds": [],
+        "missingImageAltCount": 0,
+        "nestedInteractiveControls": false,
+        "mainCount": 1
+      }
+    },
+    {
+      "id": "seasonal-hub",
+      "route": "/coloring-pages/christmas",
+      "output": "coloring-pages/christmas.html",
+      "family": "gallery",
+      "htmlBytes": 179525,
+      "htmlGzipBytes": 17539,
+      "javascriptAssets": [
+        "/_next/static/chunks/0pqt~8bl3ukh4.js",
+        "/_next/static/chunks/07lhk_q6pmm3r.js",
+        "/_next/static/chunks/02j8d7.9f.ryz.js",
+        "/_next/static/chunks/turbopack-07x.j2~8wlu4s.js",
+        "/_next/static/chunks/0kewni5cv3k0l.js",
+        "/_next/static/chunks/0d3shmwh5_nmn.js",
+        "/_next/static/chunks/02qwv4yspfm6..js",
+        "/_next/static/chunks/03~yq9q893hmn.js",
+        "/_next/static/chunks/0bzupvr5gt3k9.js"
+      ],
+      "javascriptBytes": 679923,
+      "javascriptGzipBytes": 202814,
+      "cssAssets": [
+        "/_next/static/chunks/01n6jte95t5ma.css"
+      ],
+      "cssBytes": 60210,
+      "cssGzipBytes": 9938,
+      "fontAssets": [
+        "/_next/static/media/03bda585a99c6450-s.p.0zzh68k1~whtc.woff2",
+        "/_next/static/media/f7aa21714c1c53f8-s.p.0bhxxck2.9j91.woff2"
+      ],
+      "fontRequestCount": 2,
+      "fontBytes": 56744,
+      "initialImageRequestCount": 10,
+      "initialImageBytes": 370464,
+      "initialImages": [
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/christmas/christmas-holiday-advent-calendar-a1245c4617.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/christmas/christmas-holiday-advent-calendar-a1245c4617.webp",
+          "exists": true,
+          "bytes": 35042
+        },
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/holiday/holiday-christmas-dogs-australian-shepherd-324967ed9d.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/holiday/holiday-christmas-dogs-australian-shepherd-324967ed9d.webp",
+          "exists": true,
+          "bytes": 40366
+        },
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/indoor-plants/indoor-plants-christmas-cactus-150b46b5de.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/indoor-plants/indoor-plants-christmas-cactus-150b46b5de.webp",
+          "exists": true,
+          "bytes": 35574
+        },
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/christmas/christmas-holiday-candy-canes-6f112e464c.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/christmas/christmas-holiday-candy-canes-6f112e464c.webp",
+          "exists": true,
+          "bytes": 31328
+        },
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-sushi-holiday-christmas-roll-44ec0c8f04.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/mandala-geometry-patterns/mandala-geometry-patterns-sushi-holiday-christmas-roll-44ec0c8f04.webp",
+          "exists": true,
+          "bytes": 52668
+        },
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/gardening/gardening-mushroom-reindeer-lichen-reindeer-gardener-christmas-284b794095.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/gardening/gardening-mushroom-reindeer-lichen-reindeer-gardener-christmas-284b794095.webp",
+          "exists": true,
+          "bytes": 43338
+        },
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/christmas/christmas-holiday-advent-calendar-a1245c4617.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/christmas/christmas-holiday-advent-calendar-a1245c4617.webp",
+          "exists": true,
+          "bytes": 35042
+        },
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/christmas/christmas-holiday-candy-canes-6f112e464c.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/christmas/christmas-holiday-candy-canes-6f112e464c.webp",
+          "exists": true,
+          "bytes": 31328
+        },
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/christmas/christmas-holiday-christmas-cards-cc6fed095e.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/christmas/christmas-holiday-christmas-cards-cc6fed095e.webp",
+          "exists": true,
+          "bytes": 34152
+        },
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/christmas/christmas-holiday-carolers-50a8cc6073.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/christmas/christmas-holiday-carolers-50a8cc6073.webp",
+          "exists": true,
+          "bytes": 31626
+        }
+      ],
+      "totalImageElementCount": 66,
+      "brokenPublicImageCount": 0,
+      "firstPartyRequestCount": 13,
+      "estimatedFirstPartyTransferBytes": 287035,
+      "semantics": {
+        "h1Count": 1,
+        "headingLevels": [
+          1,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2
+        ],
+        "duplicateIds": [],
+        "missingImageAltCount": 0,
+        "nestedInteractiveControls": false,
+        "mainCount": 1
+      }
+    },
+    {
+      "id": "paginated-hub",
+      "route": "/coloring-pages/animals/page/2",
+      "output": "coloring-pages/animals/page/2.html",
+      "family": "gallery",
+      "htmlBytes": 116096,
+      "htmlGzipBytes": 11822,
+      "javascriptAssets": [
+        "/_next/static/chunks/0pqt~8bl3ukh4.js",
+        "/_next/static/chunks/07lhk_q6pmm3r.js",
+        "/_next/static/chunks/02j8d7.9f.ryz.js",
+        "/_next/static/chunks/turbopack-07x.j2~8wlu4s.js",
+        "/_next/static/chunks/0kewni5cv3k0l.js",
+        "/_next/static/chunks/0d3shmwh5_nmn.js",
+        "/_next/static/chunks/02qwv4yspfm6..js",
+        "/_next/static/chunks/03~yq9q893hmn.js",
+        "/_next/static/chunks/0bzupvr5gt3k9.js"
+      ],
+      "javascriptBytes": 679923,
+      "javascriptGzipBytes": 202814,
+      "cssAssets": [
+        "/_next/static/chunks/01n6jte95t5ma.css"
+      ],
+      "cssBytes": 60210,
+      "cssGzipBytes": 9938,
+      "fontAssets": [
+        "/_next/static/media/03bda585a99c6450-s.p.0zzh68k1~whtc.woff2",
+        "/_next/static/media/f7aa21714c1c53f8-s.p.0bhxxck2.9j91.woff2"
+      ],
+      "fontRequestCount": 2,
+      "fontBytes": 56744,
+      "initialImageRequestCount": 4,
+      "initialImageBytes": 153084,
+      "initialImages": [
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-fox-hoodie-animal-plushie-82cedecea8.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/anime-girls/anime-girl-fox-hoodie-animal-plushie-82cedecea8.webp",
+          "exists": true,
+          "bytes": 38230
+        },
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-frog-tongue-c07e152335.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/anime-girls/anime-girl-frog-tongue-c07e152335.webp",
+          "exists": true,
+          "bytes": 37160
+        },
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-frog-148346a00d.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/anime-girls/anime-girl-frog-148346a00d.webp",
+          "exists": true,
+          "bytes": 37566
+        },
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/anime-girls/anime-girl-giraffe-hoodie-animal-plushie-41223afd5c.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/anime-girls/anime-girl-giraffe-hoodie-animal-plushie-41223afd5c.webp",
+          "exists": true,
+          "bytes": 40128
+        }
+      ],
+      "totalImageElementCount": 48,
+      "brokenPublicImageCount": 0,
+      "firstPartyRequestCount": 13,
+      "estimatedFirstPartyTransferBytes": 281318,
+      "semantics": {
+        "h1Count": 1,
+        "headingLevels": [
+          1,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2
+        ],
+        "duplicateIds": [],
+        "missingImageAltCount": 0,
+        "nestedInteractiveControls": false,
+        "mainCount": 1
+      }
+    },
+    {
+      "id": "printable",
+      "route": "/printables/animals/animals-alligator-4feec8505a",
+      "output": "printables/animals/animals-alligator-4feec8505a.html",
+      "family": "printable",
+      "htmlBytes": 58298,
+      "htmlGzipBytes": 8590,
+      "javascriptAssets": [
+        "/_next/static/chunks/0pqt~8bl3ukh4.js",
+        "/_next/static/chunks/07lhk_q6pmm3r.js",
+        "/_next/static/chunks/02j8d7.9f.ryz.js",
+        "/_next/static/chunks/turbopack-07x.j2~8wlu4s.js",
+        "/_next/static/chunks/0kewni5cv3k0l.js",
+        "/_next/static/chunks/0d3shmwh5_nmn.js",
+        "/_next/static/chunks/10lci.osu.-.a.js",
+        "/_next/static/chunks/03~yq9q893hmn.js",
+        "/_next/static/chunks/0bzupvr5gt3k9.js"
+      ],
+      "javascriptBytes": 664944,
+      "javascriptGzipBytes": 197663,
+      "cssAssets": [
+        "/_next/static/chunks/01n6jte95t5ma.css"
+      ],
+      "cssBytes": 60210,
+      "cssGzipBytes": 9938,
+      "fontAssets": [
+        "/_next/static/media/03bda585a99c6450-s.p.0zzh68k1~whtc.woff2",
+        "/_next/static/media/f7aa21714c1c53f8-s.p.0bhxxck2.9j91.woff2"
+      ],
+      "fontRequestCount": 2,
+      "fontBytes": 56744,
+      "initialImageRequestCount": 1,
+      "initialImageBytes": 49052,
+      "initialImages": [
+        {
+          "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+          "localPath": "pipeline/r2-upload-optimized/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp",
+          "exists": true,
+          "bytes": 49052
+        }
+      ],
+      "totalImageElementCount": 9,
+      "brokenPublicImageCount": 0,
+      "firstPartyRequestCount": 13,
+      "estimatedFirstPartyTransferBytes": 272935,
+      "semantics": {
+        "h1Count": 1,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2
+        ],
+        "duplicateIds": [],
+        "missingImageAltCount": 0,
+        "nestedInteractiveControls": false,
+        "mainCount": 1
+      }
+    },
+    {
+      "id": "privacy",
+      "route": "/privacy",
+      "output": "privacy.html",
+      "family": "trust",
+      "htmlBytes": 32838,
+      "htmlGzipBytes": 6754,
+      "javascriptAssets": [
+        "/_next/static/chunks/0pqt~8bl3ukh4.js",
+        "/_next/static/chunks/07lhk_q6pmm3r.js",
+        "/_next/static/chunks/02j8d7.9f.ryz.js",
+        "/_next/static/chunks/turbopack-07x.j2~8wlu4s.js",
+        "/_next/static/chunks/0kewni5cv3k0l.js",
+        "/_next/static/chunks/0d3shmwh5_nmn.js",
+        "/_next/static/chunks/03~yq9q893hmn.js",
+        "/_next/static/chunks/0bzupvr5gt3k9.js"
+      ],
+      "javascriptBytes": 657873,
+      "javascriptGzipBytes": 195260,
+      "cssAssets": [
+        "/_next/static/chunks/01n6jte95t5ma.css"
+      ],
+      "cssBytes": 60210,
+      "cssGzipBytes": 9938,
+      "fontAssets": [
+        "/_next/static/media/03bda585a99c6450-s.p.0zzh68k1~whtc.woff2",
+        "/_next/static/media/f7aa21714c1c53f8-s.p.0bhxxck2.9j91.woff2"
+      ],
+      "fontRequestCount": 2,
+      "fontBytes": 56744,
+      "initialImageRequestCount": 0,
+      "initialImageBytes": 0,
+      "initialImages": [],
+      "totalImageElementCount": 0,
+      "brokenPublicImageCount": 0,
+      "firstPartyRequestCount": 12,
+      "estimatedFirstPartyTransferBytes": 268696,
+      "semantics": {
+        "h1Count": 1,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "duplicateIds": [],
+        "missingImageAltCount": 0,
+        "nestedInteractiveControls": false,
+        "mainCount": 1
+      }
+    },
+    {
+      "id": "terms",
+      "route": "/terms",
+      "output": "terms.html",
+      "family": "trust",
+      "htmlBytes": 29066,
+      "htmlGzipBytes": 6074,
+      "javascriptAssets": [
+        "/_next/static/chunks/0pqt~8bl3ukh4.js",
+        "/_next/static/chunks/07lhk_q6pmm3r.js",
+        "/_next/static/chunks/02j8d7.9f.ryz.js",
+        "/_next/static/chunks/turbopack-07x.j2~8wlu4s.js",
+        "/_next/static/chunks/0kewni5cv3k0l.js",
+        "/_next/static/chunks/0d3shmwh5_nmn.js",
+        "/_next/static/chunks/03~yq9q893hmn.js",
+        "/_next/static/chunks/0bzupvr5gt3k9.js"
+      ],
+      "javascriptBytes": 657873,
+      "javascriptGzipBytes": 195260,
+      "cssAssets": [
+        "/_next/static/chunks/01n6jte95t5ma.css"
+      ],
+      "cssBytes": 60210,
+      "cssGzipBytes": 9938,
+      "fontAssets": [
+        "/_next/static/media/03bda585a99c6450-s.p.0zzh68k1~whtc.woff2",
+        "/_next/static/media/f7aa21714c1c53f8-s.p.0bhxxck2.9j91.woff2"
+      ],
+      "fontRequestCount": 2,
+      "fontBytes": 56744,
+      "initialImageRequestCount": 0,
+      "initialImageBytes": 0,
+      "initialImages": [],
+      "totalImageElementCount": 0,
+      "brokenPublicImageCount": 0,
+      "firstPartyRequestCount": 12,
+      "estimatedFirstPartyTransferBytes": 268016,
+      "semantics": {
+        "h1Count": 1,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "duplicateIds": [],
+        "missingImageAltCount": 0,
+        "nestedInteractiveControls": false,
+        "mainCount": 1
+      }
+    },
+    {
+      "id": "about",
+      "route": "/about",
+      "output": "about.html",
+      "family": "trust",
+      "htmlBytes": 24292,
+      "htmlGzipBytes": 5238,
+      "javascriptAssets": [
+        "/_next/static/chunks/0pqt~8bl3ukh4.js",
+        "/_next/static/chunks/07lhk_q6pmm3r.js",
+        "/_next/static/chunks/02j8d7.9f.ryz.js",
+        "/_next/static/chunks/turbopack-07x.j2~8wlu4s.js",
+        "/_next/static/chunks/0kewni5cv3k0l.js",
+        "/_next/static/chunks/0d3shmwh5_nmn.js",
+        "/_next/static/chunks/03~yq9q893hmn.js",
+        "/_next/static/chunks/0bzupvr5gt3k9.js"
+      ],
+      "javascriptBytes": 657873,
+      "javascriptGzipBytes": 195260,
+      "cssAssets": [
+        "/_next/static/chunks/01n6jte95t5ma.css"
+      ],
+      "cssBytes": 60210,
+      "cssGzipBytes": 9938,
+      "fontAssets": [
+        "/_next/static/media/03bda585a99c6450-s.p.0zzh68k1~whtc.woff2",
+        "/_next/static/media/f7aa21714c1c53f8-s.p.0bhxxck2.9j91.woff2"
+      ],
+      "fontRequestCount": 2,
+      "fontBytes": 56744,
+      "initialImageRequestCount": 0,
+      "initialImageBytes": 0,
+      "initialImages": [],
+      "totalImageElementCount": 0,
+      "brokenPublicImageCount": 0,
+      "firstPartyRequestCount": 12,
+      "estimatedFirstPartyTransferBytes": 267180,
+      "semantics": {
+        "h1Count": 1,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "duplicateIds": [],
+        "missingImageAltCount": 0,
+        "nestedInteractiveControls": false,
+        "mainCount": 1
+      }
+    },
+    {
+      "id": "sitemap",
+      "route": "/sitemap",
+      "output": "sitemap.html",
+      "family": "sitemap",
+      "htmlBytes": 111584,
+      "htmlGzipBytes": 11842,
+      "javascriptAssets": [
+        "/_next/static/chunks/0pqt~8bl3ukh4.js",
+        "/_next/static/chunks/07lhk_q6pmm3r.js",
+        "/_next/static/chunks/02j8d7.9f.ryz.js",
+        "/_next/static/chunks/turbopack-07x.j2~8wlu4s.js",
+        "/_next/static/chunks/0kewni5cv3k0l.js",
+        "/_next/static/chunks/0d3shmwh5_nmn.js",
+        "/_next/static/chunks/03~yq9q893hmn.js",
+        "/_next/static/chunks/0bzupvr5gt3k9.js"
+      ],
+      "javascriptBytes": 657873,
+      "javascriptGzipBytes": 195260,
+      "cssAssets": [
+        "/_next/static/chunks/01n6jte95t5ma.css"
+      ],
+      "cssBytes": 60210,
+      "cssGzipBytes": 9938,
+      "fontAssets": [
+        "/_next/static/media/03bda585a99c6450-s.p.0zzh68k1~whtc.woff2",
+        "/_next/static/media/f7aa21714c1c53f8-s.p.0bhxxck2.9j91.woff2"
+      ],
+      "fontRequestCount": 2,
+      "fontBytes": 56744,
+      "initialImageRequestCount": 0,
+      "initialImageBytes": 0,
+      "initialImages": [],
+      "totalImageElementCount": 0,
+      "brokenPublicImageCount": 0,
+      "firstPartyRequestCount": 12,
+      "estimatedFirstPartyTransferBytes": 273784,
+      "semantics": {
+        "h1Count": 1,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "duplicateIds": [],
+        "missingImageAltCount": 0,
+        "nestedInteractiveControls": false,
+        "mainCount": 1
+      }
+    },
+    {
+      "id": "not-found",
+      "route": "/404",
+      "output": "404.html",
+      "family": "not-found",
+      "htmlBytes": 16642,
+      "htmlGzipBytes": 3428,
+      "javascriptAssets": [
+        "/_next/static/chunks/0pqt~8bl3ukh4.js",
+        "/_next/static/chunks/07lhk_q6pmm3r.js",
+        "/_next/static/chunks/02j8d7.9f.ryz.js",
+        "/_next/static/chunks/turbopack-07x.j2~8wlu4s.js",
+        "/_next/static/chunks/0kewni5cv3k0l.js",
+        "/_next/static/chunks/0d3shmwh5_nmn.js",
+        "/_next/static/chunks/03~yq9q893hmn.js",
+        "/_next/static/chunks/0bzupvr5gt3k9.js"
+      ],
+      "javascriptBytes": 657873,
+      "javascriptGzipBytes": 195260,
+      "cssAssets": [
+        "/_next/static/chunks/01n6jte95t5ma.css"
+      ],
+      "cssBytes": 60210,
+      "cssGzipBytes": 9938,
+      "fontAssets": [],
+      "fontRequestCount": 0,
+      "fontBytes": 0,
+      "initialImageRequestCount": 0,
+      "initialImageBytes": 0,
+      "initialImages": [],
+      "totalImageElementCount": 0,
+      "brokenPublicImageCount": 0,
+      "firstPartyRequestCount": 10,
+      "estimatedFirstPartyTransferBytes": 208626,
+      "semantics": {
+        "h1Count": 1,
+        "headingLevels": [
+          1
+        ],
+        "duplicateIds": [],
+        "missingImageAltCount": 0,
+        "nestedInteractiveControls": false,
+        "mainCount": 1
+      }
+    }
+  ],
+  "sharedCss": {
+    "assets": [
+      {
+        "url": "/_next/static/chunks/01n6jte95t5ma.css",
+        "bytes": 60210,
+        "gzipBytes": 9938
+      }
+    ],
+    "rawBytes": 60210,
+    "gzipBytes": 9938
+  },
+  "pdf": {
+    "source": "pipeline/review/pdf-compression/final/browser-verification-results.json",
+    "browser": {
+      "id": "chrome",
+      "version": "150.0.7871.187",
+      "engineCoverage": "Chromium"
+    },
+    "maxBytes": 613584,
+    "samples": [
+      {
+        "route": "/printables/animals/animals-alligator-4feec8505a",
+        "bytes": 613584
+      },
+      {
+        "route": "/printables/animals/cats-playing-cards-c22648db9b",
+        "bytes": 539659
+      },
+      {
+        "route": "/printables/anime-girls/anime-girl-brazilian-jiu-jitsu-5a40029b84",
+        "bytes": 573452
+      }
+    ]
+  },
+  "cssAudit": {
+    "definedCount": 103,
+    "referenceCount": 891,
+    "unresolved": [],
+    "runtimeProvided": [
+      "--font-figtree",
+      "--font-fraunces"
+    ]
+  },
+  "sourceAccessibility": {
+    "focusTrapFiltersRenderedControls": true,
+    "printablePreviewSingleStatusRegion": true,
+    "printablePreviewFailureRecovery": true,
+    "directPdfStatusRegion": true,
+    "searchStatusRegion": true,
+    "reducedMotion": true,
+    "noGlobalOverflowMask": true,
+    "focusVisibleUsesApprovedTokens": true
+  }
+}

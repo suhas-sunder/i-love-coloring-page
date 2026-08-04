@@ -1,0 +1,90 @@
+{
+  "appUrl": "http://localhost:3005",
+  "browsers": [
+    {
+      "id": "chrome",
+      "available": true,
+      "version": "150.0.7871.187",
+      "matrix": {
+        "browserId": "chrome",
+        "pageChecks": 45,
+        "failures": []
+      },
+      "interactions": {
+        "checks": {
+          "mobileCardDensity": true,
+          "canonicalCardTargetsMatch": true,
+          "cardFocusVisible": true,
+          "printOpensDialogWithoutNavigation": true,
+          "searchUsesRelevantCompleteData": true,
+          "searchHasNoDuplicates": true,
+          "noResultState": true,
+          "clearRestoresStaticPresentation": true,
+          "showMoreAvailable": true,
+          "showMoreAddsWithoutDuplicates": true,
+          "filterCombinationUsesCompleteData": true,
+          "searchPlusFilters": true,
+          "filterClearRestoresGallery": true,
+          "paginationCrawlable": true,
+          "paginationFramingConcise": true,
+          "alligatorPrintableRelevance": true,
+          "alligatorCollectionRelevance": true,
+          "relatedLinksCanonical": true,
+          "flowerPrintableRelevance": true
+        }
+      }
+    },
+    {
+      "id": "edge",
+      "available": true,
+      "version": "151.0.4129.59",
+      "matrix": {
+        "browserId": "edge",
+        "pageChecks": 45,
+        "failures": []
+      },
+      "interactions": null
+    }
+  ],
+  "routes": [
+    "/coloring-pages",
+    "/coloring-pages/animals",
+    "/coloring-pages/forget-me-not",
+    "/coloring-pages/christmas",
+    "/coloring-pages/animals/page/2",
+    "/coloring-pages/anime-girls",
+    "/printables/animals/animals-alligator-4feec8505a",
+    "/printables/animals/anime-girl-cat-3794ff8eaa",
+    "/printables/animals/anime-girl-dinosaur-fossil-hoodie-plushie-8dda1f7ef2"
+  ],
+  "viewports": [
+    390,
+    768,
+    1024,
+    1440,
+    1920
+  ],
+  "screenshots": [
+    "pipeline/review/gallery-discovery/after/chrome-main-gallery-390.png",
+    "pipeline/review/gallery-discovery/after/chrome-card-keyboard-focus-390.png",
+    "pipeline/review/gallery-discovery/after/chrome-search-alligator-390.png",
+    "pipeline/review/gallery-discovery/after/chrome-search-no-results-390.png",
+    "pipeline/review/gallery-discovery/after/chrome-show-more-before-390.png",
+    "pipeline/review/gallery-discovery/after/chrome-show-more-after-390.png",
+    "pipeline/review/gallery-discovery/after/chrome-main-gallery-1440.png",
+    "pipeline/review/gallery-discovery/after/chrome-animals-pagination-1440.png",
+    "pipeline/review/gallery-discovery/after/chrome-alligator-related-printables.png",
+    "pipeline/review/gallery-discovery/after/chrome-alligator-related-collections.png",
+    "pipeline/review/gallery-discovery/after/chrome-flower-related-printables.png"
+  ],
+  "summary": {
+    "availableBrowsers": [
+      "chrome",
+      "edge"
+    ],
+    "chromiumCoverageOnly": true,
+    "pageChecks": 90,
+    "failures": [],
+    "passed": true
+  }
+}

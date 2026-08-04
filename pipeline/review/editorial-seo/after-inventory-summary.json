@@ -1,0 +1,2924 @@
+{
+  "generatedAt": "2026-08-03T22:23:47.082Z",
+  "label": "after",
+  "sources": [
+    "src/generated/coloring/runtime-printables.json",
+    "src/generated/coloring/runtime-hubs.json",
+    "src/config/hub-editorial-content.json",
+    "src/generated/coloring/runtime-routes.json",
+    "pipeline/manifests/runtime-printable-route-manifest.json",
+    "pipeline/manifests/printable-title-manifest.json",
+    "public/image-sitemap.xml"
+  ],
+  "summary": {
+    "printableCount": 6352,
+    "routeManifestCount": 6352,
+    "publicHubCount": 163,
+    "indexableHubCount": 160,
+    "sitemapHubCount": 160,
+    "hubBelow12Count": 23,
+    "hubBelow20Count": 59,
+    "introOnlyHubCount": 146,
+    "exactDuplicateDisplayTitleGroupCount": 0,
+    "normalizedNearDuplicateTitleGroupCount": 69,
+    "exactDuplicateMetadataTitleGroupCount": 0,
+    "exactDuplicateMetadataDescriptionGroupCount": 0,
+    "exactDuplicateHubIntroGroupCount": 0,
+    "nearDuplicateHubIntroPairCount": 0,
+    "exactDuplicateHubParagraphGroupCount": 0,
+    "nearDuplicateHubParagraphPairCount": 0,
+    "metadataTitleOver70Count": 2398,
+    "metadataTitleOver128Count": 0,
+    "metadataDescriptionMissingCount": 0,
+    "metadataDescriptionOver210Count": 0,
+    "genericPrintableDescriptionCount": 0,
+    "unsupportedClaimCount": 0,
+    "internalLeakCount": 0,
+    "sitemapHubRouteCount": 160,
+    "imageSitemapPageLocCount": 6352,
+    "imageSitemapImageLocCount": 6352,
+    "midievalCount": 0,
+    "bakiniCount": 0,
+    "aligatorCount": 0,
+    "dalmationCount": 0,
+    "celetbratingCount": 0,
+    "holidayChristmasHolidayCount": 0,
+    "christmasHolidayChristmasCount": 0,
+    "terminalColoringPageCount": 0,
+    "repeatedColoringPageCount": 0,
+    "adjacentRepeatedWordCount": 0,
+    "emptyOrShortTitleCount": 0,
+    "displayTitleOver80Count": 46,
+    "metadataTitleMissingSubjectCount": 0,
+    "numericSuffixReviewCount": 33,
+    "introsContainingAppearCount": 67,
+    "introsContainingDesignsShowCount": 3,
+    "introsContainingThisCollectionIncludesCount": 0,
+    "introsContainingPerfectForCount": 0,
+    "introsContainingGreatForCount": 0,
+    "numberLedIntroCount": 1,
+    "formulaicNearDuplicateIntroPairCount": 0,
+    "formulaicRepeatedOpeningGroupCount": 0,
+    "formulaicVaguePhraseFindingCount": 71,
+    "formulaicInventoryMismatchCount": 0
+  },
+  "hashes": {
+    "protectedPrintableContract": "7ca3c2b9ae80ecb676fad4b62eb87ed31ca6a51896df38f471becbe7d54b451d",
+    "printableDisplayMetadata": "33f6af34155360c37b3ea41c5a089313d0217037fcabcc65492aa09090152a2a",
+    "protectedHubContract": "b717ad11b2355a924355a5c8eb4389a5b20a6340cc44a00c3997cd081d2d163e",
+    "hubEditorialMetadata": "ae51da3154f4d55f64c7456334dd5b71d2dec1d98a5061ce23f4cb13a52edb16",
+    "sitemapRouteContract": "2e3e2f7e37fe96f8b07ea75a5172748cdc4b3cde07b7a717def4fbeaeb762bbf",
+    "imageSitemapXml": "442c4d3a35316442110ef1ab5c69dcc7cdab981b7d7db7b371b45a8b4bc9d69b"
+  },
+  "titleDefects": {
+    "counts": {
+      "midievalCount": 0,
+      "bakiniCount": 0,
+      "aligatorCount": 0,
+      "dalmationCount": 0,
+      "celetbratingCount": 0,
+      "holidayChristmasHolidayCount": 0,
+      "christmasHolidayChristmasCount": 0,
+      "terminalColoringPageCount": 0,
+      "repeatedColoringPageCount": 0,
+      "adjacentRepeatedWordCount": 0,
+      "emptyOrShortTitleCount": 0,
+      "displayTitleOver80Count": 46,
+      "metadataTitleMissingSubjectCount": 0,
+      "numericSuffixReviewCount": 33
+    },
+    "findings": {
+      "midievalCount": [],
+      "bakiniCount": [],
+      "aligatorCount": [],
+      "dalmationCount": [],
+      "celetbratingCount": [],
+      "holidayChristmasHolidayCount": [],
+      "christmasHolidayChristmasCount": [],
+      "terminalColoringPageCount": [],
+      "repeatedColoringPageCount": [],
+      "adjacentRepeatedWordCount": []
+    }
+  },
+  "titleQualityManifest": {
+    "summary": {
+      "printableCount": 6352,
+      "uniqueBaseTitleCount": 6283,
+      "duplicateGroupCount": 69,
+      "duplicateRecordCount": 138,
+      "largestDuplicateGroupSize": 2,
+      "duplicateGroupSizeDistribution": {
+        "2": 69
+      },
+      "duplicateGroupsWithOneHubInUnion": 0,
+      "duplicateGroupsWithSeveralHubsInUnion": 69,
+      "duplicateGroupsWithDifferentHubMembership": 0,
+      "duplicateGroupsAcrossPrimaryCategories": 0,
+      "duplicateGroupsWithDistinctRuntimeWebpPaths": 69,
+      "duplicateGroupsWithRepeatedRuntimeWebpPaths": 0,
+      "punctuationOnlyNearDuplicateGroupCount": 0,
+      "uniqueDisplayTitleCount": 6352,
+      "uniqueMetadataTitleCount": 6352,
+      "uniqueAltTextCount": 6352,
+      "mechanicallyCorrectedRecordCount": 569,
+      "editorialReviewRecordCount": 323,
+      "publicSafetyFindingCount": 0,
+      "entrySha256": "158a448cf958e89d1ac3bc9434939e2bdb63681b05ead9afb1a3c96a0bb67288"
+    },
+    "correctionFlagCounts": {
+      "corrected-duplicate-adjacent-word": 40,
+      "corrected-phrase-christmas-holiday-christmas": 13,
+      "corrected-phrase-holiday-christmas-holiday": 3,
+      "corrected-redundant-coloring-page-suffix": 202,
+      "corrected-spacing-polar-bear": 1,
+      "corrected-spelling-aligator": 1,
+      "corrected-spelling-anima-plushie": 1,
+      "corrected-spelling-bakini": 4,
+      "corrected-spelling-celetbrating": 1,
+      "corrected-spelling-dalmation": 1,
+      "corrected-spelling-midieval": 193,
+      "corrected-spelling-vehiacle": 134
+    },
+    "editorialFlagCounts": {
+      "ambiguous-numeric-suffix": 10,
+      "brand-or-model-name-review": 110,
+      "long-title-review": 46,
+      "numeric-suffix-review": 171,
+      "uncertain-spelling": 4,
+      "uncertain-term-review": 4
+    }
+  },
+  "introFrameCounts": {
+    "introsContainingAppearCount": 67,
+    "introsContainingDesignsShowCount": 3,
+    "introsContainingThisCollectionIncludesCount": 0,
+    "introsContainingPerfectForCount": 0,
+    "introsContainingGreatForCount": 0,
+    "numberLedIntroCount": 1
+  },
+  "formulaicContent": {
+    "summary": {
+      "hubCount": 160,
+      "exactDuplicateIntroGroupCount": 0,
+      "nearDuplicateIntroPairCount": 0,
+      "repeatedOpeningGroupCount": 0,
+      "vaguePhraseFindingCount": 71,
+      "unsupportedClaimCount": 0,
+      "internalLeakageCount": 0,
+      "repeatedHubNameCount": 0,
+      "inventoryMismatchCount": 0
+    },
+    "openingGroups": [],
+    "vaguePhraseFindings": [
+      {
+        "phrase": "appear",
+        "hubId": "hub_bears",
+        "route": "/coloring-pages/bears",
+        "intro": "Bear subjects appear as standing animals, forest scenes, family groups, and stylized characters."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_bees",
+        "route": "/coloring-pages/bees",
+        "intro": "Bees appear in flight, on flowers, near hives, and in decorative insect compositions."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_birds",
+        "route": "/coloring-pages/birds",
+        "intro": "Songbirds, water birds, birds of prey, and other feathered species appear alone or in natural settings."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_butterflies",
+        "route": "/coloring-pages/butterflies",
+        "intro": "Butterflies appear with varied wing patterns, flowers, garden settings, and close symmetrical views."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_cats",
+        "route": "/coloring-pages/cats",
+        "intro": "Cats and kittens appear in resting, playful, portrait, household, and decorative scenes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_christmas_dogs",
+        "route": "/coloring-pages/christmas-dogs",
+        "intro": "Dogs appear with Santa hats, gifts, decorated trees, winter clothing, and other Christmas details."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_cows",
+        "route": "/coloring-pages/cows",
+        "intro": "Cows appear in pasture views, farm scenes, portraits, and friendly stylized poses."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_deer",
+        "route": "/coloring-pages/deer",
+        "intro": "Deer appear as woodland animals, antlered portraits, family groups, and quiet forest scenes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_dolphins",
+        "route": "/coloring-pages/dolphins",
+        "intro": "Dolphins leap, swim in groups, surface near waves, and appear in underwater scenes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_ducks",
+        "route": "/coloring-pages/ducks",
+        "intro": "Ducks and ducklings appear swimming, standing, nesting, and moving through pond settings."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_eagles",
+        "route": "/coloring-pages/eagles",
+        "intro": "Eagles appear in flight, perched with spread wings, in close portraits, and over landscapes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_elephants",
+        "route": "/coloring-pages/elephants",
+        "intro": "Elephants appear alone, in family groups, walking through landscapes, and in decorative portrait treatments."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_fairies",
+        "route": "/coloring-pages/fairies",
+        "intro": "Winged fairy characters appear in gardens, forests, floral scenes, and other magical settings."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_fantasy_dragons",
+        "route": "/coloring-pages/fantasy-dragons",
+        "intro": "These dragons appear in explicitly fantastic settings, magical scenes, and imaginative creature designs."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_foxes",
+        "route": "/coloring-pages/foxes",
+        "intro": "Foxes appear standing, curled, running, in family groups, and within woodland scenes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_giraffes",
+        "route": "/coloring-pages/giraffes",
+        "intro": "Giraffes appear in tall standing poses, family scenes, close portraits, and savanna settings."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_hedgehogs",
+        "route": "/coloring-pages/hedgehogs",
+        "intro": "Hedgehogs appear curled, walking, holding small objects, and exploring garden or woodland scenes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_hippos",
+        "route": "/coloring-pages/hippos",
+        "intro": "Hippos appear in water, on riverbanks, in family groups, and as rounded character designs."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_horses",
+        "route": "/coloring-pages/horses",
+        "intro": "Horses appear running, standing, in portraits, with riders, and across open landscape scenes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_hydras",
+        "route": "/coloring-pages/hydras",
+        "intro": "Multi-headed hydras appear in battle poses, mythic scenes, and detailed creature portraits."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_insects",
+        "route": "/coloring-pages/insects",
+        "intro": "Bees, beetles, butterflies, spiders, and other small creatures appear in close views and nature settings."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_knights",
+        "route": "/coloring-pages/knights",
+        "intro": "Armored knights appear with shields, swords, horses, castles, and medieval-fantasy settings."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_koalas",
+        "route": "/coloring-pages/koalas",
+        "intro": "Koalas appear climbing, resting in eucalyptus trees, in family groups, and as friendly characters."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_lions",
+        "route": "/coloring-pages/lions",
+        "intro": "Lions appear in portraits, prides, walking poses, savanna scenes, and decorative mane studies."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_lizards",
+        "route": "/coloring-pages/lizards",
+        "intro": "Lizards appear on rocks and branches, in close body studies, and with varied scales and tails."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_llamas",
+        "route": "/coloring-pages/llamas",
+        "intro": "Llamas appear standing, in mountain settings, wearing decorations, and as playful character designs."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_mammoths",
+        "route": "/coloring-pages/mammoths",
+        "intro": "Mammoths appear with curved tusks, shaggy coats, herd scenes, and icy prehistoric settings."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_mermaids",
+        "route": "/coloring-pages/mermaids",
+        "intro": "Mermaid characters appear underwater, near reefs and shells, with sea creatures, and in decorative portraits."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_monkeys",
+        "route": "/coloring-pages/monkeys",
+        "intro": "Monkeys appear climbing, swinging, sitting in groups, and moving through jungle or forest scenes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_moose",
+        "route": "/coloring-pages/moose",
+        "intro": "Moose appear with broad antlers, in forest and lakeside settings, and in calm standing poses."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_octopus",
+        "route": "/coloring-pages/octopus",
+        "intro": "Octopuses appear swimming, resting on the seabed, curling their arms, and exploring reef scenes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_otters",
+        "route": "/coloring-pages/otters",
+        "intro": "Otters swim, float, hold objects, gather in pairs, and appear along rivers or coasts."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_owls",
+        "route": "/coloring-pages/owls",
+        "intro": "Owls appear perched, flying, in close facial studies, and among woodland branches."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_pandas",
+        "route": "/coloring-pages/pandas",
+        "intro": "Pandas appear eating bamboo, climbing, sitting, in family groups, and as rounded characters."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_pegasus",
+        "route": "/coloring-pages/pegasus",
+        "intro": "Winged horses appear in flight, among clouds, in magical landscapes, and in decorative portraits."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_penguins",
+        "route": "/coloring-pages/penguins",
+        "intro": "Penguins appear on ice, swimming, in family groups, and in winter character scenes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_planes",
+        "route": "/coloring-pages/planes",
+        "intro": "Passenger aircraft, propeller planes, jets, and imaginative flying machines appear on runways or in flight."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_plushie_dogs",
+        "route": "/coloring-pages/plushie-dogs",
+        "intro": "Dog breeds and puppies appear as stitched toys with soft shapes and simplified features."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_plushie_unicorns",
+        "route": "/coloring-pages/plushie-unicorns",
+        "intro": "Unicorns appear as stitched toys with rounded hooves, small horns, soft manes, and compact bodies."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_pumpkins",
+        "route": "/coloring-pages/pumpkins",
+        "intro": "Pumpkins appear as harvest produce, carved lanterns, decorated characters, and autumn or Halloween arrangements."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_rabbits",
+        "route": "/coloring-pages/rabbits",
+        "intro": "Rabbits and bunnies appear sitting, hopping, in family groups, and among garden or woodland settings."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_reindeer",
+        "route": "/coloring-pages/reindeer",
+        "intro": "Reindeer appear with antlers, sleighs, Santa, gifts, and snowy Christmas settings."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_reptiles",
+        "route": "/coloring-pages/reptiles",
+        "intro": "Snakes, lizards, turtles, and other scaled animals appear in portraits and habitat scenes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_sharks",
+        "route": "/coloring-pages/sharks",
+        "intro": "Sharks appear swimming, hunting, in close body views, and among reefs or open-water scenes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_sheep",
+        "route": "/coloring-pages/sheep",
+        "intro": "Sheep and lambs appear in pasture, farm, flock, portrait, and friendly character designs."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_sloths",
+        "route": "/coloring-pages/sloths",
+        "intro": "Sloths appear hanging, climbing, resting in trees, and in patterned or character-like portraits."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_snakes",
+        "route": "/coloring-pages/snakes",
+        "intro": "Snakes appear coiled, moving through habitats, in close scale studies, and in patterned designs."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_spiders",
+        "route": "/coloring-pages/spiders",
+        "intro": "Spiders appear on webs, in close body views, in nature scenes, and in seasonal compositions."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_tigers",
+        "route": "/coloring-pages/tigers",
+        "intro": "Tigers appear in striped portraits, walking or resting poses, family groups, and forest settings."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_trees",
+        "route": "/coloring-pages/trees",
+        "intro": "Trees appear as individual forms, forests, seasonal canopies, roots, branches, and decorative silhouettes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_turtles",
+        "route": "/coloring-pages/turtles",
+        "intro": "Land and sea turtles appear swimming, walking, hatching, and in close shell-pattern views."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_unicorns",
+        "route": "/coloring-pages/unicorns",
+        "intro": "Unicorns appear in portraits, running poses, magical landscapes, and decorative mane-and-horn designs."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_velociraptors",
+        "route": "/coloring-pages/velociraptors",
+        "intro": "Velociraptors appear running, hunting, in close portraits, and within group or landscape scenes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_whales",
+        "route": "/coloring-pages/whales",
+        "intro": "Whales appear surfacing, breaching, swimming in groups, and moving through open-ocean scenes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_witches",
+        "route": "/coloring-pages/witches",
+        "intro": "Witches appear with hats, brooms, cauldrons, cats, spell books, and Halloween or fantasy settings."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_wizards",
+        "route": "/coloring-pages/wizards",
+        "intro": "Wizards appear with staffs, spell books, robes, magical effects, and fantasy landscapes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_wolves",
+        "route": "/coloring-pages/wolves",
+        "intro": "Wolves appear alone, in packs, howling, moving through forests, and in close patterned portraits."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_wyverns",
+        "route": "/coloring-pages/wyverns",
+        "intro": "Two-legged winged wyverns appear in flight, perched, in battle poses, and in fantasy landscapes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_zebras",
+        "route": "/coloring-pages/zebras",
+        "intro": "Zebras appear in striped portraits, walking or running poses, herds, and savanna settings."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_bamboo",
+        "route": "/coloring-pages/bamboo",
+        "intro": "Bamboo appears as indoor plants, Japanese grove scenes, and small details in several sushi-themed patterns."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_steam_train",
+        "route": "/coloring-pages/steam-train",
+        "intro": "Steam locomotives appear with smoke, carriages, tracks, stations, and historic-looking rail scenes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_christmas_plushie",
+        "route": "/coloring-pages/christmas-plushie",
+        "intro": "Stuffed-toy characters and animals appear with Christmas clothing, gifts, trees, and festive stitched details."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_halloween_costume",
+        "route": "/coloring-pages/halloween-costume",
+        "intro": "Costumed characters appear as witches, monsters, animals, and other dressed-up Halloween figures."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_terrier",
+        "route": "/coloring-pages/terrier",
+        "intro": "Terrier breeds appear in portraits, alert standing poses, playful scenes, and stylized character treatments."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_saber_toothed_tiger",
+        "route": "/coloring-pages/saber-toothed-tiger",
+        "intro": "Saber-toothed tigers appear with long canine teeth in stalking, resting, and prehistoric landscape scenes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_lily",
+        "route": "/coloring-pages/lily",
+        "intro": "Lilies appear as single blossoms, bouquets, garden stems, and decorative floral arrangements."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_bulldog",
+        "route": "/coloring-pages/bulldog",
+        "intro": "Bulldog and French bulldog subjects appear as direct dog portraits, chibi pets, Christmas scenes, and geometric patterns."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_cookie",
+        "route": "/coloring-pages/cookie",
+        "intro": "Cookies appear as individual treats, decorated shapes, stacked assortments, and baking scenes."
+      },
+      {
+        "phrase": "designs show",
+        "hubId": "hub_brachiosaurus",
+        "route": "/coloring-pages/brachiosaurus",
+        "intro": "Long-necked Brachiosaurus designs show standing, walking, feeding, and scenic prehistoric poses."
+      },
+      {
+        "phrase": "designs show",
+        "hubId": "hub_megalodon",
+        "route": "/coloring-pages/megalodon",
+        "intro": "Megalodon designs show the extinct shark in open water, near other sea life, and in dramatic close views."
+      },
+      {
+        "phrase": "designs show",
+        "hubId": "hub_t_rex",
+        "route": "/coloring-pages/t-rex",
+        "intro": "T-Rex designs show large-headed predators in roaring, walking, hunting, and scenic prehistoric poses."
+      }
+    ],
+    "unsupportedClaimFindings": [],
+    "internalLeakageFindings": [],
+    "repeatedHubNameFindings": [],
+    "inventoryMismatchFindings": []
+  },
+  "exactTitleGroups": [],
+  "normalizedTitleGroups": [
+    {
+      "value": "anime girl ankylosaurus hoodie plushie",
+      "entries": [
+        {
+          "stableId": "c819919e77",
+          "displayTitle": "Anime Girl Ankylosaurus Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "eb8de86d73",
+          "displayTitle": "Anime Girl Ankylosaurus Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl axolotl hoodie plushie",
+      "entries": [
+        {
+          "stableId": "10dcbb08c2",
+          "displayTitle": "Anime Girl Axolotl Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "4fbeebbbf9",
+          "displayTitle": "Anime Girl Axolotl Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl beach bikini",
+      "entries": [
+        {
+          "stableId": "1d77abd2f3",
+          "displayTitle": "Anime Girl Beach Bikini: Design 1"
+        },
+        {
+          "stableId": "b9ede8c4db",
+          "displayTitle": "Anime Girl Beach Bikini: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl boxing",
+      "entries": [
+        {
+          "stableId": "31e8b864b6",
+          "displayTitle": "Anime Girl Boxing: Design 1"
+        },
+        {
+          "stableId": "a787e2192f",
+          "displayTitle": "Anime Girl Boxing: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl brachiosaurus hoodie plushie",
+      "entries": [
+        {
+          "stableId": "73442e8b67",
+          "displayTitle": "Anime Girl Brachiosaurus Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "a676a7c044",
+          "displayTitle": "Anime Girl Brachiosaurus Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl brontosaurus hoodie plushie",
+      "entries": [
+        {
+          "stableId": "3ad488831a",
+          "displayTitle": "Anime Girl Brontosaurus Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "6175891702",
+          "displayTitle": "Anime Girl Brontosaurus Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl cat hoodie plushie",
+      "entries": [
+        {
+          "stableId": "62ed67bd39",
+          "displayTitle": "Anime Girl Cat Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "82a3c178ef",
+          "displayTitle": "Anime Girl Cat Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl crying",
+      "entries": [
+        {
+          "stableId": "2510ace89a",
+          "displayTitle": "Anime Girl Crying: Design 1"
+        },
+        {
+          "stableId": "ada81436a5",
+          "displayTitle": "Anime Girl Crying: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl deadlift",
+      "entries": [
+        {
+          "stableId": "582628521a",
+          "displayTitle": "Anime Girl Deadlift: Design 1"
+        },
+        {
+          "stableId": "a9e092fc9d",
+          "displayTitle": "Anime Girl Deadlift: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl dinosaur fossil hoodie plushie",
+      "entries": [
+        {
+          "stableId": "8dda1f7ef2",
+          "displayTitle": "Anime Girl Dinosaur Fossil Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "a77e1d62f4",
+          "displayTitle": "Anime Girl Dinosaur Fossil Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl dips",
+      "entries": [
+        {
+          "stableId": "18b57d82ae",
+          "displayTitle": "Anime Girl Dips: Design 1"
+        },
+        {
+          "stableId": "6fb384e480",
+          "displayTitle": "Anime Girl Dips: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl dodo bird hoodie plushie",
+      "entries": [
+        {
+          "stableId": "18189d3f2f",
+          "displayTitle": "Anime Girl Dodo Bird Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "5314caa215",
+          "displayTitle": "Anime Girl Dodo Bird Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl dragon eggs hoodie plushie",
+      "entries": [
+        {
+          "stableId": "b1747e4988",
+          "displayTitle": "Anime Girl Dragon Eggs Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "f41a8578b5",
+          "displayTitle": "Anime Girl Dragon Eggs Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl dragon hoodie plushie",
+      "entries": [
+        {
+          "stableId": "0492bac704",
+          "displayTitle": "Anime Girl Dragon Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "89af7a2cf7",
+          "displayTitle": "Anime Girl Dragon Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl dragon queen",
+      "entries": [
+        {
+          "stableId": "8c2e2a124f",
+          "displayTitle": "Anime Girl Dragon Queen: Design 1"
+        },
+        {
+          "stableId": "d532fdf0fd",
+          "displayTitle": "Anime Girl Dragon Queen: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl fishing",
+      "entries": [
+        {
+          "stableId": "379d012add",
+          "displayTitle": "Anime Girl Fishing: Design 1"
+        },
+        {
+          "stableId": "db00abd519",
+          "displayTitle": "Anime Girl Fishing: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl fox",
+      "entries": [
+        {
+          "stableId": "82e9f04c2c",
+          "displayTitle": "Anime Girl Fox: Design 1"
+        },
+        {
+          "stableId": "8b012cdc07",
+          "displayTitle": "Anime Girl Fox: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl future mech",
+      "entries": [
+        {
+          "stableId": "299de64d3f",
+          "displayTitle": "Anime Girl Future Mech: Design 1"
+        },
+        {
+          "stableId": "48efe0fb8e",
+          "displayTitle": "Anime Girl Future Mech: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl giraffe hoodie plushie",
+      "entries": [
+        {
+          "stableId": "1416704b0e",
+          "displayTitle": "Anime Girl Giraffe Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "b2e72b248e",
+          "displayTitle": "Anime Girl Giraffe Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl gorilla hoodie plushie",
+      "entries": [
+        {
+          "stableId": "3b980b9953",
+          "displayTitle": "Anime Girl Gorilla Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "7e398204b0",
+          "displayTitle": "Anime Girl Gorilla Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl horse hoodie plushie",
+      "entries": [
+        {
+          "stableId": "19fe517464",
+          "displayTitle": "Anime Girl Horse Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "5237363b2b",
+          "displayTitle": "Anime Girl Horse Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl ice climbing",
+      "entries": [
+        {
+          "stableId": "64165ab9f1",
+          "displayTitle": "Anime Girl Ice Climbing: Design 1"
+        },
+        {
+          "stableId": "edc1a5d0e7",
+          "displayTitle": "Anime Girl Ice Climbing: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl koala hoodie plushie",
+      "entries": [
+        {
+          "stableId": "a0ff921e3d",
+          "displayTitle": "Anime Girl Koala Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "f55012edb9",
+          "displayTitle": "Anime Girl Koala Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl lion hoodie plushie",
+      "entries": [
+        {
+          "stableId": "0be0222b50",
+          "displayTitle": "Anime Girl Lion Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "8e35521d72",
+          "displayTitle": "Anime Girl Lion Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl martial arts",
+      "entries": [
+        {
+          "stableId": "09ac9f457d",
+          "displayTitle": "Anime Girl Martial Arts: Design 1"
+        },
+        {
+          "stableId": "8f695b1f3d",
+          "displayTitle": "Anime Girl Martial Arts: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl megalodon hoodie plushie",
+      "entries": [
+        {
+          "stableId": "1ee3da0f28",
+          "displayTitle": "Anime Girl Megalodon Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "e1e622c3a6",
+          "displayTitle": "Anime Girl Megalodon Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl nurse doing cpr",
+      "entries": [
+        {
+          "stableId": "686d31e262",
+          "displayTitle": "Anime Girl Nurse Doing Cpr: Design 1"
+        },
+        {
+          "stableId": "97cb133692",
+          "displayTitle": "Anime Girl Nurse Doing Cpr: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl panda hoodie plushie",
+      "entries": [
+        {
+          "stableId": "28ae998098",
+          "displayTitle": "Anime Girl Panda Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "34886c72fd",
+          "displayTitle": "Anime Girl Panda Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl parasaurolophus hoodie plushie",
+      "entries": [
+        {
+          "stableId": "7be1711b4a",
+          "displayTitle": "Anime Girl Parasaurolophus Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "bde184c45d",
+          "displayTitle": "Anime Girl Parasaurolophus Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl pistol shrimp hoodie plushie",
+      "entries": [
+        {
+          "stableId": "978eeb75e4",
+          "displayTitle": "Anime Girl Pistol Shrimp Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "f489358366",
+          "displayTitle": "Anime Girl Pistol Shrimp Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl polar bear hoodie plushie",
+      "entries": [
+        {
+          "stableId": "9f7c56fd44",
+          "displayTitle": "Anime Girl Polar Bear Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "e7831d7ddc",
+          "displayTitle": "Anime Girl Polar Bear Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl potion shop",
+      "entries": [
+        {
+          "stableId": "49612ea98f",
+          "displayTitle": "Anime Girl Potion Shop: Design 1"
+        },
+        {
+          "stableId": "6e30ef7e14",
+          "displayTitle": "Anime Girl Potion Shop: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl pterodactyl hoodie plushie",
+      "entries": [
+        {
+          "stableId": "2b4315b24b",
+          "displayTitle": "Anime Girl Pterodactyl Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "6b078f0b47",
+          "displayTitle": "Anime Girl Pterodactyl Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl pull up",
+      "entries": [
+        {
+          "stableId": "3623487d0d",
+          "displayTitle": "Anime Girl Pull Up: Design 1"
+        },
+        {
+          "stableId": "ecf5a1e138",
+          "displayTitle": "Anime Girl Pull Up: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl rabbit hoodie plushie",
+      "entries": [
+        {
+          "stableId": "1631765d48",
+          "displayTitle": "Anime Girl Rabbit Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "88ad45a887",
+          "displayTitle": "Anime Girl Rabbit Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl raccoon",
+      "entries": [
+        {
+          "stableId": "847e600c4b",
+          "displayTitle": "Anime Girl Raccoon: Design 1"
+        },
+        {
+          "stableId": "dcfab092d6",
+          "displayTitle": "Anime Girl Raccoon: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl raccoon hoodie plushie",
+      "entries": [
+        {
+          "stableId": "31e1567ff8",
+          "displayTitle": "Anime Girl Raccoon Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "fc614867f5",
+          "displayTitle": "Anime Girl Raccoon Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl rock climbing",
+      "entries": [
+        {
+          "stableId": "cca1816458",
+          "displayTitle": "Anime Girl Rock Climbing: Design 1"
+        },
+        {
+          "stableId": "ed8cc63537",
+          "displayTitle": "Anime Girl Rock Climbing: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl running",
+      "entries": [
+        {
+          "stableId": "1848f864a1",
+          "displayTitle": "Anime Girl Running: Design 1"
+        },
+        {
+          "stableId": "664e9a5bd1",
+          "displayTitle": "Anime Girl Running: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl saber toothed tiger hoodie plushie",
+      "entries": [
+        {
+          "stableId": "0df82031f8",
+          "displayTitle": "Anime Girl Saber Toothed Tiger Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "14e1ec01ad",
+          "displayTitle": "Anime Girl Saber Toothed Tiger Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl shark hoodie plushie",
+      "entries": [
+        {
+          "stableId": "d129be38aa",
+          "displayTitle": "Anime Girl Shark Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "fa5478b739",
+          "displayTitle": "Anime Girl Shark Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl sheep hoodie plushie",
+      "entries": [
+        {
+          "stableId": "758204ddc0",
+          "displayTitle": "Anime Girl Sheep Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "fa8069a940",
+          "displayTitle": "Anime Girl Sheep Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl skunk hoodie plushie",
+      "entries": [
+        {
+          "stableId": "100f99934f",
+          "displayTitle": "Anime Girl Skunk Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "e46f25f24b",
+          "displayTitle": "Anime Girl Skunk Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl sloth hoodie plushie",
+      "entries": [
+        {
+          "stableId": "714f59e3d0",
+          "displayTitle": "Anime Girl Sloth Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "addf74f9c0",
+          "displayTitle": "Anime Girl Sloth Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl snake hoodie plushie",
+      "entries": [
+        {
+          "stableId": "18ff159176",
+          "displayTitle": "Anime Girl Snake Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "a3d6dff189",
+          "displayTitle": "Anime Girl Snake Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl spinosaurus hoodie plushie",
+      "entries": [
+        {
+          "stableId": "5f5fe5ac55",
+          "displayTitle": "Anime Girl Spinosaurus Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "b1c4da2cc4",
+          "displayTitle": "Anime Girl Spinosaurus Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl stegosaurus hoodie plushie",
+      "entries": [
+        {
+          "stableId": "191f4bdb4d",
+          "displayTitle": "Anime Girl Stegosaurus Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "1d07718adb",
+          "displayTitle": "Anime Girl Stegosaurus Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl t rex hoodie plushie",
+      "entries": [
+        {
+          "stableId": "518ba8dd62",
+          "displayTitle": "Anime Girl T Rex Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "8a87f18c10",
+          "displayTitle": "Anime Girl T Rex Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl thief",
+      "entries": [
+        {
+          "stableId": "8a5252f8da",
+          "displayTitle": "Anime Girl Thief: Design 1"
+        },
+        {
+          "stableId": "a2a9ffde90",
+          "displayTitle": "Anime Girl Thief: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl tree climbing",
+      "entries": [
+        {
+          "stableId": "88fbdf51e9",
+          "displayTitle": "Anime Girl Tree Climbing: Design 1"
+        },
+        {
+          "stableId": "d0d5f7375c",
+          "displayTitle": "Anime Girl Tree Climbing: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl triceratops hoodie plushie",
+      "entries": [
+        {
+          "stableId": "35b8a70219",
+          "displayTitle": "Anime Girl Triceratops Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "dceea22cc8",
+          "displayTitle": "Anime Girl Triceratops Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl velociraptor hoodie plushie",
+      "entries": [
+        {
+          "stableId": "09fa9dfa72",
+          "displayTitle": "Anime Girl Velociraptor Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "d744747b6a",
+          "displayTitle": "Anime Girl Velociraptor Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl witch riding broom",
+      "entries": [
+        {
+          "stableId": "57ec0926f1",
+          "displayTitle": "Anime Girl Witch Riding Broom: Design 1"
+        },
+        {
+          "stableId": "75a4274ba0",
+          "displayTitle": "Anime Girl Witch Riding Broom: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl wolf hoodie plushie",
+      "entries": [
+        {
+          "stableId": "02c1f663d3",
+          "displayTitle": "Anime Girl Wolf Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "54e2d6631a",
+          "displayTitle": "Anime Girl Wolf Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl woolly mammoth hoodie plushie",
+      "entries": [
+        {
+          "stableId": "4e018104ac",
+          "displayTitle": "Anime Girl Woolly Mammoth Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "f4b9879b0d",
+          "displayTitle": "Anime Girl Woolly Mammoth Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl workout barbell squat",
+      "entries": [
+        {
+          "stableId": "22106d1624",
+          "displayTitle": "Anime Girl Workout Barbell Squat: Design 1"
+        },
+        {
+          "stableId": "963002bf98",
+          "displayTitle": "Anime Girl Workout Barbell Squat: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl workout sumo squat",
+      "entries": [
+        {
+          "stableId": "3178749205",
+          "displayTitle": "Anime Girl Workout Sumo Squat: Design 1"
+        },
+        {
+          "stableId": "49f5a3dff0",
+          "displayTitle": "Anime Girl Workout Sumo Squat: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl yoga adho mukha svanasana",
+      "entries": [
+        {
+          "stableId": "6ae8fb4d1c",
+          "displayTitle": "Anime Girl Yoga Adho Mukha Svanasana: Design 1"
+        },
+        {
+          "stableId": "88efa82eab",
+          "displayTitle": "Anime Girl Yoga Adho Mukha Svanasana: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl yoga cat pose",
+      "entries": [
+        {
+          "stableId": "8f1ad64f33",
+          "displayTitle": "Anime Girl Yoga Cat Pose: Design 1"
+        },
+        {
+          "stableId": "b9c34831e3",
+          "displayTitle": "Anime Girl Yoga Cat Pose: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl yoga crane pose",
+      "entries": [
+        {
+          "stableId": "68d31d8787",
+          "displayTitle": "Anime Girl Yoga Crane Pose: Design 1"
+        },
+        {
+          "stableId": "b0c728f830",
+          "displayTitle": "Anime Girl Yoga Crane Pose: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl yoga crow pose",
+      "entries": [
+        {
+          "stableId": "5ec68177e5",
+          "displayTitle": "Anime Girl Yoga Crow Pose: Design 1"
+        },
+        {
+          "stableId": "c99c1666a8",
+          "displayTitle": "Anime Girl Yoga Crow Pose: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl yoga deep squats",
+      "entries": [
+        {
+          "stableId": "1e52f3ee9e",
+          "displayTitle": "Anime Girl Yoga Deep Squats: Design 1"
+        },
+        {
+          "stableId": "95d1dec836",
+          "displayTitle": "Anime Girl Yoga Deep Squats: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl yoga downward dog pose",
+      "entries": [
+        {
+          "stableId": "7ef0da1e5b",
+          "displayTitle": "Anime Girl Yoga Downward Dog Pose: Design 1"
+        },
+        {
+          "stableId": "db00bb01c8",
+          "displayTitle": "Anime Girl Yoga Downward Dog Pose: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl yoga downward facing dog",
+      "entries": [
+        {
+          "stableId": "45dac09d58",
+          "displayTitle": "Anime Girl Yoga Downward Facing Dog: Design 1"
+        },
+        {
+          "stableId": "acb30310e2",
+          "displayTitle": "Anime Girl Yoga Downward Facing Dog: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl yoga mountain pose",
+      "entries": [
+        {
+          "stableId": "9fed83ed3c",
+          "displayTitle": "Anime Girl Yoga Mountain Pose: Design 1"
+        },
+        {
+          "stableId": "b4108d5a66",
+          "displayTitle": "Anime Girl Yoga Mountain Pose: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl yoga tree pose",
+      "entries": [
+        {
+          "stableId": "6aa02d0dff",
+          "displayTitle": "Anime Girl Yoga Tree Pose: Design 1"
+        },
+        {
+          "stableId": "d797bae638",
+          "displayTitle": "Anime Girl Yoga Tree Pose: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl yoga triangle pose",
+      "entries": [
+        {
+          "stableId": "8bbe16961b",
+          "displayTitle": "Anime Girl Yoga Triangle Pose: Design 1"
+        },
+        {
+          "stableId": "e58cff7b5d",
+          "displayTitle": "Anime Girl Yoga Triangle Pose: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl yoga warrior i",
+      "entries": [
+        {
+          "stableId": "1a9a130a72",
+          "displayTitle": "Anime Girl Yoga Warrior I: Design 1"
+        },
+        {
+          "stableId": "9064348078",
+          "displayTitle": "Anime Girl Yoga Warrior I: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl zebra hoodie plushie",
+      "entries": [
+        {
+          "stableId": "825c503b8d",
+          "displayTitle": "Anime Girl Zebra Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "ed9bd916ff",
+          "displayTitle": "Anime Girl Zebra Hoodie Plushie: Design 2"
+        }
+      ]
+    }
+  ],
+  "exactDescriptionGroups": [],
+  "exactHubIntroGroups": [],
+  "nearHubIntroPairs": [],
+  "exactHubParagraphGroups": [],
+  "nearHubParagraphPairs": [],
+  "smallHubReviews": [
+    {
+      "hubId": "hub_forget_me_not",
+      "route": "/coloring-pages/forget-me-not",
+      "title": "Forget-Me-Not Coloring Pages",
+      "assetCount": 6,
+      "intro": "Forget-me-not artwork includes individual blossoms, kawaii and chibi versions, a dragon scene, and a spell-book ingredient design.",
+      "portraitCount": 6,
+      "displayTitles": [
+        "Chibi Flowers Forget Me Not",
+        "Chibi Flowers Forget Me Not Kawaii",
+        "Chibi Flowers Kawaii Forget Me Not",
+        "Flowers Forget Me Not",
+        "Flowers Forget Me Not Dragon",
+        "Flowers Spell Book Featuring Forget Me Not Ingredient"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_lotus",
+      "route": "/coloring-pages/lotus",
+      "title": "Lotus Coloring Pages",
+      "assetCount": 6,
+      "intro": "Lotus artwork includes direct and kawaii flowers, symmetrical mandalas, and a sushi design set on a lotus leaf.",
+      "portraitCount": 6,
+      "displayTitles": [
+        "Chibi Flowers Lotus",
+        "Chibi Flowers Lotus Kawaii",
+        "Flowers Lotus",
+        "Mandala Geometry Patterns Flowers Lotus",
+        "Mandala Geometry Patterns Lotus Mandala",
+        "Mandala Geometry Patterns Sushi Nigiri On Lotus Leaf"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_palm",
+      "route": "/coloring-pages/palm",
+      "title": "Palm Coloring Pages",
+      "assetCount": 6,
+      "intro": "The palm collection focuses on six named indoor plants: areca, bamboo, Kentia, majesty, parlor, and sago palms.",
+      "portraitCount": 6,
+      "displayTitles": [
+        "Indoor Plants Areca Palm",
+        "Indoor Plants Bamboo Palm",
+        "Indoor Plants Kentia Palm",
+        "Indoor Plants Majesty Palm",
+        "Indoor Plants Parlor Palm",
+        "Indoor Plants Sago Palm"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_pteranodon",
+      "route": "/coloring-pages/pteranodon",
+      "title": "Pteranodon Coloring Pages",
+      "assetCount": 6,
+      "intro": "Pteranodon artwork includes direct, chibi, plushie, summoning-scene, and geometric-pattern interpretations.",
+      "portraitCount": 6,
+      "displayTitles": [
+        "Anime Girl Summoning Jutsu Baby Pteranodon Plushies",
+        "Anime Girl Summoning Jutsu Pteranodon",
+        "Anime Girl Summoning Jutsu Pteranodon Plushies",
+        "Chibi Pteranodon",
+        "Mandala Geometry Patterns Prehistoric Pteranodon",
+        "Prehistoric Pteranodon"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_bamboo",
+      "route": "/coloring-pages/bamboo",
+      "title": "Bamboo Coloring Pages",
+      "assetCount": 7,
+      "intro": "Bamboo appears as indoor plants, Japanese grove scenes, and small details in several sushi-themed patterns.",
+      "portraitCount": 7,
+      "displayTitles": [
+        "Indoor Plants Bamboo Palm",
+        "Indoor Plants Lucky Bamboo",
+        "Mandala Geometry Patterns Japan Bamboo Forest",
+        "Mandala Geometry Patterns Japan Kyoto Bamboo Grove Path",
+        "Mandala Geometry Patterns Sushi Bamboo Chopstick Rest",
+        "Mandala Geometry Patterns Sushi Bamboo Sushi Steamer",
+        "Mandala Geometry Patterns Sushi Nigiri On Bamboo Leaf"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_poppy",
+      "route": "/coloring-pages/poppy",
+      "title": "Poppy Coloring Pages",
+      "assetCount": 7,
+      "intro": "Poppy artwork covers standard and Iceland poppies in direct, kawaii, chibi, and geometric-pattern treatments.",
+      "portraitCount": 7,
+      "displayTitles": [
+        "Chibi Flowers Iceland Poppy",
+        "Chibi Flowers Iceland Poppy Kawaii",
+        "Chibi Flowers Poppy",
+        "Chibi Flowers Poppy Kawaii",
+        "Flowers Iceland Poppy",
+        "Mandala Geometry Patterns Flowers Iceland Poppy",
+        "Mandala Geometry Patterns Flowers Poppy"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_bulldog",
+      "route": "/coloring-pages/bulldog",
+      "title": "Bulldog Coloring Pages",
+      "assetCount": 8,
+      "intro": "Bulldog and French bulldog subjects appear as direct dog portraits, chibi pets, Christmas scenes, and geometric patterns.",
+      "portraitCount": 8,
+      "displayTitles": [
+        "Chibi Animals Pets Dogs Bulldog",
+        "Chibi Animals Pets Dogs French Bulldog",
+        "Dogs Bulldog",
+        "Dogs French Bulldog",
+        "Holiday Christmas Dogs Bulldog",
+        "Holiday Christmas Dogs French Bulldog",
+        "Mandala Geometry Patterns Dogs Bulldog",
+        "Mandala Geometry Patterns Dogs French Bulldog"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_collie",
+      "route": "/coloring-pages/collie",
+      "title": "Collie Coloring Pages",
+      "assetCount": 8,
+      "intro": "Collie and border collie subjects include direct dog portraits, a playing scene, chibi pets, Christmas artwork, and geometric patterns.",
+      "portraitCount": 8,
+      "displayTitles": [
+        "Chibi Animals Pets Dogs Border Collie",
+        "Chibi Animals Pets Dogs Collie",
+        "Dogs Border Collie",
+        "Dogs Border Collie Playing",
+        "Dogs Collie",
+        "Holiday Christmas Dogs Border Collie",
+        "Mandala Geometry Patterns Dogs Border Collie",
+        "Mandala Geometry Patterns Dogs Collie"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_iguanodon",
+      "route": "/coloring-pages/iguanodon",
+      "title": "Iguanodon Coloring Pages",
+      "assetCount": 8,
+      "intro": "Iguanodon artwork combines a direct prehistoric subject with chibi, plushie-family, holiday, and geometric-pattern versions.",
+      "portraitCount": 8,
+      "displayTitles": [
+        "Chibi Plushie Prehistoric Iguanodon",
+        "Holiday Birthday Celebration Plushie Prehistoric Iguanodon Family",
+        "Holiday Christmas Plushie Prehistoric Iguanodon Family",
+        "Holiday Halloween Costume Plushie Prehistoric Iguanodon Family",
+        "Mandala Geometry Patterns Plushie Prehistoric Iguanodon",
+        "Plushie Prehistoric Iguanodon",
+        "Plushie Prehistoric Iguanodon Family",
+        "Prehistoric Iguanodon"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_leprechaun",
+      "route": "/coloring-pages/leprechaun",
+      "title": "Leprechaun Coloring Pages",
+      "assetCount": 9,
+      "intro": "Leprechaun scenes feature shamrocks, dancing, rainbows, pots of gold, costumes, and a puppy in a festive hat.",
+      "portraitCount": 9,
+      "displayTitles": [
+        "Fantasy Creatures Leprechaun",
+        "Mythology Leprechaun",
+        "St Patricks Day Kids Dressed As Leprechauns",
+        "St Patricks Day Leprechaun Dancing Jig",
+        "St Patricks Day Leprechaun Holding Shamrock",
+        "St Patricks Day Leprechaun Rainbow And Gold",
+        "St Patricks Day Leprechaun With Pot Of Gold",
+        "St Patricks Day Pot Of Gold Guarded By Leprechaun",
+        "St Patricks Day Puppy Wearing Leprechaun Hat"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_mosasaurus",
+      "route": "/coloring-pages/mosasaurus",
+      "title": "Mosasaurus Coloring Pages",
+      "assetCount": 9,
+      "intro": "Mosasaurus artwork ranges from a direct prehistoric subject to chibi, plushie-family, holiday, and geometric-pattern versions.",
+      "portraitCount": 9,
+      "displayTitles": [
+        "Chibi Plushie Prehistoric Mosasaurus",
+        "Holiday Birthday Celebration Plushie Prehistoric Mosasaurus Family",
+        "Holiday Christmas Plushie Prehistoric Mosasaurus Family",
+        "Holiday Christmas Prehistoric Mosasaurus",
+        "Holiday Halloween Costume Plushie Prehistoric Mosasaurus Family",
+        "Mandala Geometry Patterns Plushie Prehistoric Mosasaurus",
+        "Plushie Prehistoric Mosasaurus",
+        "Plushie Prehistoric Mosasaurus Family",
+        "Prehistoric Mosasaurus"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_orchid",
+      "route": "/coloring-pages/orchid",
+      "title": "Orchid Coloring Pages",
+      "assetCount": 9,
+      "intro": "Orchid artwork includes a gardener scene, a patterned flower, and named Cattleya, Dendrobium, Oncidium, Phalaenopsis, and Vanda houseplants.",
+      "portraitCount": 9,
+      "displayTitles": [
+        "Chibi Flowers Orchid",
+        "Flowers Orchid",
+        "Flowers Orchid Gardener",
+        "Indoor Plants Orchid Cattleya",
+        "Indoor Plants Orchid Dendrobium",
+        "Indoor Plants Orchid Oncidium",
+        "Indoor Plants Orchid Phalaenopsis",
+        "Indoor Plants Orchid Vanda",
+        "Mandala Geometry Patterns Flowers Orchid"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_plesiosaurus",
+      "route": "/coloring-pages/plesiosaurus",
+      "title": "Plesiosaurus Coloring Pages",
+      "assetCount": 9,
+      "intro": "The Plesiosaurus inventory combines one direct prehistoric view with aquatic-reptile plushies, family scenes, seasonal versions, and a patterned treatment.",
+      "portraitCount": 9,
+      "displayTitles": [
+        "Chibi Plushie Prehistoric Plesiosaurus",
+        "Holiday Birthday Celebration Plushie Prehistoric Plesiosaurus Family",
+        "Holiday Christmas Plushie Prehistoric Plesiosaurus Family",
+        "Holiday Christmas Prehistoric Plesiosaurus",
+        "Holiday Halloween Costume Plushie Prehistoric Plesiosaurus Family",
+        "Mandala Geometry Patterns Plushie Prehistoric Plesiosaurus",
+        "Plushie Prehistoric Plesiosaurus",
+        "Plushie Prehistoric Plesiosaurus Family",
+        "Prehistoric Plesiosaurus"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_pterodactyl",
+      "route": "/coloring-pages/pterodactyl",
+      "title": "Pterodactyl Coloring Pages",
+      "assetCount": 9,
+      "intro": "Pterodactyl-labeled artwork centers on hoodie and plushie interpretations, including family, holiday, and geometric-pattern versions.",
+      "portraitCount": 9,
+      "displayTitles": [
+        "Anime Girl Pterodactyl Hoodie Plushie: Design 1",
+        "Anime Girl Pterodactyl Hoodie Plushie: Design 2",
+        "Chibi Plushie Prehistoric Pterodactyl",
+        "Holiday Birthday Celebration Plushie Prehistoric Pterodactyl Family",
+        "Holiday Christmas Plushie Prehistoric Pterodactyl Family",
+        "Holiday Halloween Costume Plushie Prehistoric Pterodactyl Family",
+        "Mandala Geometry Patterns Plushie Prehistoric Pterodactyl",
+        "Plushie Prehistoric Pterodactyl",
+        "Plushie Prehistoric Pterodactyl Family"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_robots",
+      "route": "/coloring-pages/robots",
+      "title": "Robots Coloring Pages",
+      "assetCount": 9,
+      "intro": "Robot subjects range from toy-like machines and plushie families to futuristic pets and a cyberpunk companion scene.",
+      "portraitCount": 9,
+      "displayTitles": [
+        "Plushie Robot",
+        "Plushie Robot Family",
+        "Holiday Birthday Celebration Plushie Robot Family",
+        "Holiday Christmas Plushie Robot Family",
+        "Holiday Halloween Costume Plushie Robot Family",
+        "Mandala Geometry Patterns Plushie Robot",
+        "Mandala Geometry Patterns Plushie Robot Animal",
+        "Anime Girl Cyber Punk Hoodie And Robot Pets",
+        "Chibi Plushie Robot"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_roses",
+      "route": "/coloring-pages/roses",
+      "title": "Roses Coloring Pages",
+      "assetCount": 9,
+      "intro": "Rose artwork ranges from single blossoms and garden scenes to patterned flowers, origami, and a sushi garnish detail.",
+      "portraitCount": 9,
+      "displayTitles": [
+        "Anime Girl Smelling Roses In Garden",
+        "Flowers Rose",
+        "Mandala Geometry Patterns Flower Rose",
+        "Mandala Geometry Patterns Flowers Rose",
+        "Mandala Geometry Patterns Japan Origami Rose Flower",
+        "Mandala Geometry Patterns Sushi Platter With Ginger Rose",
+        "Anime Girl Smelling Rose",
+        "Chibi Flowers Rose",
+        "Chibi Flowers Rose Kawaii"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_daisy",
+      "route": "/coloring-pages/daisy",
+      "title": "Daisy Coloring Pages",
+      "assetCount": 10,
+      "intro": "Daisy artwork includes standard and paper daisies, Gerbera houseplants, kawaii versions, patterned flowers, and a ladybug scene.",
+      "portraitCount": 10,
+      "displayTitles": [
+        "Chibi Flowers Daisy",
+        "Chibi Flowers Daisy Kawaii",
+        "Chibi Flowers Paper Daisy",
+        "Chibi Flowers Paper Daisy Kawaii",
+        "Flowers Daisy",
+        "Flowers Paper Daisy",
+        "Indoor Plants Gerbera Daisy",
+        "Insects Ladybug On Daisy",
+        "Mandala Geometry Patterns Flowers Daisy",
+        "Mandala Geometry Patterns Flowers Paper Daisy"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_gingerbread",
+      "route": "/coloring-pages/gingerbread",
+      "title": "Gingerbread Coloring Pages",
+      "assetCount": 10,
+      "intro": "Gingerbread subjects include figures, houses, a candy village, cookie decorating, a snowy cookie family, and patterned bakery scenes.",
+      "portraitCount": 10,
+      "displayTitles": [
+        "Chibi Plushie Gingerbread Character",
+        "Christmas Holiday Gingerbread House",
+        "Holiday Christmas Gingerbread City Village With Candy Streets",
+        "Holiday Christmas Gingerbread Cookie Decorating Scene",
+        "Holiday Christmas Gingerbread Cookie Family In Snow Scene",
+        "Holiday Christmas Gingerbread House Decorated With Candy",
+        "Mandala Geometry Patterns Bakery Gingerbread Cookie",
+        "Mandala Geometry Patterns Bakery Gingerbread House",
+        "Mandala Geometry Patterns Bakery Gingerbread Men Decorating",
+        "Mandala Geometry Patterns Plushie Gingerbread Character"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_santa",
+      "route": "/coloring-pages/santa",
+      "title": "Santa Coloring Pages",
+      "assetCount": 10,
+      "intro": "Santa scenes cover chimney arrivals, gift delivery, sleigh travel, letter reading, the workshop, and a quiet cocoa break with Mrs. Claus.",
+      "portraitCount": 10,
+      "displayTitles": [
+        "Christmas Holiday Santa Claus",
+        "Holiday Christmas Santa Claus Coming Down Chimney",
+        "Holiday Christmas Santa Claus Costume",
+        "Holiday Christmas Santa Claus Delivering Gifts By Fireplace",
+        "Holiday Christmas Santa Claus Delivering Gifts In Sleigh",
+        "Holiday Christmas Santa Claus Packing Toys In Big Sack",
+        "Holiday Christmas Santa Claus Reading Letters From Children",
+        "Holiday Christmas Mrs Claus Serving Hot Cocoa To Santa",
+        "Holiday Christmas Santa Claus Riding Sleigh Over Moonlit Town",
+        "Holiday Christmas Santa Workshop With Elves Packing Toys"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_ankylosaurus",
+      "route": "/coloring-pages/ankylosaurus",
+      "title": "Ankylosaurus Coloring Pages",
+      "assetCount": 11,
+      "intro": "Ankylosaurus artwork combines the armored dinosaur with hoodie, chibi, plushie-family, holiday, and patterned treatments.",
+      "portraitCount": 11,
+      "displayTitles": [
+        "Anime Girl Ankylosaurus Hoodie Plushie: Design 1",
+        "Anime Girl Ankylosaurus Hoodie Plushie: Design 2",
+        "Chibi Plushie Prehistoric Ankylosaurus",
+        "Holiday Birthday Celebration Plushie Prehistoric Ankylosaurus Family",
+        "Holiday Christmas Plushie Prehistoric Ankylosaurus Family",
+        "Holiday Christmas Prehistoric Ankylosaurus",
+        "Holiday Halloween Costume Plushie Prehistoric Ankylosaurus Family",
+        "Mandala Geometry Patterns Plushie Prehistoric Ankylosaurus",
+        "Plushie Prehistoric Ankylosaurus",
+        "Plushie Prehistoric Ankylosaurus Family",
+        "Prehistoric Ankylosaurus"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_dodo",
+      "route": "/coloring-pages/dodo",
+      "title": "Dodo Coloring Pages",
+      "assetCount": 11,
+      "intro": "Dodo artwork includes bird portraits plus chibi, plushie-family, holiday, and geometric-pattern interpretations.",
+      "portraitCount": 11,
+      "displayTitles": [
+        "Anime Girl Dodo Bird Hoodie Plushie: Design 1",
+        "Anime Girl Dodo Bird Hoodie Plushie: Design 2",
+        "Chibi Dodo Birds",
+        "Chibi Plushie Prehistoric Dodo",
+        "Holiday Birthday Celebration Plushie Prehistoric Dodo Family",
+        "Holiday Halloween Costume Plushie Prehistoric Dodo Family",
+        "Mandala Geometry Patterns Plushie Prehistoric Dodo",
+        "Mandala Geometry Patterns Prehistoric Dodo Bird",
+        "Plushie Prehistoric Dodo",
+        "Plushie Prehistoric Dodo Family",
+        "Prehistoric Dodo Bird"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_salmon",
+      "route": "/coloring-pages/salmon",
+      "title": "Salmon Coloring Pages",
+      "assetCount": 11,
+      "intro": "Salmon subjects range from a swimming fish scene to nigiri, maki, hand rolls, roe, onigiri, sashimi, and other sushi details.",
+      "portraitCount": 11,
+      "displayTitles": [
+        "Mandala Geometry Patterns Sushi Aburi Salmon Nigiri",
+        "Mandala Geometry Patterns Sushi Chef Torching Aburi Salmon",
+        "Mandala Geometry Patterns Sushi Gunkan Sushi Salmon Roe",
+        "Mandala Geometry Patterns Sushi Hand Roll Salmon",
+        "Mandala Geometry Patterns Sushi Ikura Salmon Roe",
+        "Mandala Geometry Patterns Sushi Onigiri With Salmon",
+        "Mandala Geometry Patterns Sushi Salmon Maki",
+        "Mandala Geometry Patterns Sushi Salmon Nigiri",
+        "Mandala Geometry Patterns Sushi Salmon Skin Roll",
+        "Mandala Geometry Patterns Sushi Sashimi Salmon Roll Tuna",
+        "Sea Life Orca Hunting Salmon"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_trick_or_treat",
+      "route": "/coloring-pages/trick-or-treat",
+      "title": "Trick or Treat Coloring Pages",
+      "assetCount": 11,
+      "intro": "Trick-or-treat scenes focus on costumed children and pets, pumpkin bags, decorated porches, lantern-lined paths, and carved pumpkins.",
+      "portraitCount": 11,
+      "displayTitles": [
+        "Chibi Holiday Halloween Trick Or Treat Children With Pumpkin Bags",
+        "Chibi Holiday Halloween Trick Or Treat Dog In Cute Costume",
+        "Chibi Holiday Halloween Trick Or Treat Doorstep With Carved Pumpkins",
+        "Chibi Holiday Halloween Trick Or Treat Front Porch Decorated",
+        "Chibi Holiday Halloween Trick Or Treat Walkway Lined With Lanterns",
+        "Chibi Holiday Halloween Zombie With Torn Trick Or Treat Bag",
+        "Holiday Halloween Trick Or Treat Dog In Cute Costume",
+        "Holiday Halloween Trick Or Treat Front Porch Decorated",
+        "Holiday Halloween Trick Or Treat Kids In Costumes",
+        "Holiday Halloween Trick Or Treat Walkway Lined With Lanterns",
+        "Holiday Halloween Trick Or Treat With Lanterns"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_playing_cards",
+      "route": "/coloring-pages/playing-cards",
+      "title": "Playing Cards Coloring Pages",
+      "assetCount": 12,
+      "intro": "Card suits, face cards, decks, hands, and game-table compositions make up this playing-card collection.",
+      "portraitCount": 12,
+      "displayTitles": [
+        "Cats Playing Cards",
+        "Anime Girl Playing Cards Professionally",
+        "Anime Girl Playing Cards",
+        "Fantasy Creatures Flying Unicorn Playing Cards",
+        "Fantasy Creatures Ghost Pirate Ship Playing Cards",
+        "Fantasy Creatures Magical Unicorn Playing Cards",
+        "Fantasy Creatures Mermaid Playing Cards",
+        "Fantasy Creatures Necromancer Playing Cards",
+        "Fantasy Creatures Shaman Playing Cards",
+        "Fantasy Creatures Undead Dragon Playing Cards",
+        "Fantasy Creatures Unicorn Playing Cards",
+        "Fantasy Creatures Wizard Playing Cards"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_plushie_dogs",
+      "route": "/coloring-pages/plushie-dogs",
+      "title": "Plushie Dogs Coloring Pages",
+      "assetCount": 12,
+      "intro": "Dog breeds and puppies appear as stitched toys with soft shapes and simplified features.",
+      "portraitCount": 12,
+      "displayTitles": [
+        "Plushie Pets Dogs Labrador Retriever",
+        "Plushie Puppy Dog",
+        "Plushie Puppy Dog Family",
+        "Holiday Birthday Celebration Plushie Puppy Dog Family",
+        "Holiday Christmas Plushie Puppy Dog",
+        "Holiday Halloween Costume Plushie Puppy Dog Family",
+        "Mandala Geometry Patterns Plushie Puppy",
+        "Mandala Geometry Patterns Plushie Puppy Dog",
+        "Mandala Geometry Patterns Plushie Puppy Dog Animals",
+        "Mandala Geometry Patterns Plushie Puppy Dog Halloween",
+        "Chibi Plushie Puppy Dog",
+        "Holiday Christmas Plushie Puppy Dog Family"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_plushie_triceratops",
+      "route": "/coloring-pages/plushie-triceratops",
+      "title": "Plushie Triceratops Coloring Pages",
+      "assetCount": 13,
+      "intro": "Triceratops designs use toy-like bodies, stitched details, compact frills, and rounded horns.",
+      "portraitCount": 13,
+      "displayTitles": [
+        "Plushie Prehistoric Triceratops",
+        "Holiday Christmas Plushie Prehistoric Triceratops Family",
+        "Holiday Halloween Costume Plushie Prehistoric Triceratops Family",
+        "Mandala Geometry Patterns Plushie Prehistoric Triceratops",
+        "Mandala Geometry Patterns Plushie Prehistoric Triceratops Animal",
+        "Plushie Prehistoric Triceratops Family",
+        "Anime Girl Triceratops Hoodie Plushie: Design 1",
+        "Anime Girl Triceratops Hoodie Plushie: Design 2",
+        "Anime Girl Triceratops Hoodie Plushie In Park",
+        "Anime Girl Triceratops Hoodie Plushie Jungle",
+        "Anime Girl Triceratops Hoodie Plushie Playing Board Games",
+        "Chibi Plushie Prehistoric Triceratops",
+        "Holiday Birthday Celebration Plushie Prehistoric Triceratops Family"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_saber_toothed_tiger",
+      "route": "/coloring-pages/saber-toothed-tiger",
+      "title": "Saber Toothed Tiger Coloring Pages",
+      "assetCount": 13,
+      "intro": "Saber-toothed tigers appear with long canine teeth in stalking, resting, and prehistoric landscape scenes.",
+      "portraitCount": 13,
+      "displayTitles": [
+        "Anime Girl Saber Toothed Tiger Hoodie Plushie: Design 1",
+        "Anime Girl Saber Toothed Tiger Hoodie Plushie: Design 2",
+        "Anime Girl Summoning Jutsu Saber Toothed Tiger",
+        "Anime Girl Summoning Jutsu Saber Toothed Tiger Plushies",
+        "Chibi Plushie Prehistoric Saber Toothed Tiger",
+        "Chibi Saber Toothed Tiger",
+        "Holiday Birthday Celebration Plushie Prehistoric Saber Toothed Tiger Family",
+        "Holiday Birthday Celebration Saber Toothed Tiger",
+        "Holiday Christmas Plushie Prehistoric Saber Toothed Tiger Family",
+        "Holiday Halloween Costume Plushie Prehistoric Saber Toothed Tiger Family",
+        "Mandala Geometry Patterns Plushie Prehistoric Saber Toothed Tiger",
+        "Plushie Prehistoric Saber Toothed Tiger",
+        "Plushie Prehistoric Saber Toothed Tiger Family"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_cows",
+      "route": "/coloring-pages/cows",
+      "title": "Cows Coloring Pages",
+      "assetCount": 14,
+      "intro": "Cows appear in pasture views, farm scenes, portraits, and friendly stylized poses.",
+      "portraitCount": 14,
+      "displayTitles": [
+        "Plushie Cow",
+        "Holiday Birthday Celebration Plushie Cow Jumps Over The Moon",
+        "Holiday Christmas Plushie Cow Family",
+        "Mandala Geometry Patterns Plushie Cow",
+        "Mandala Geometry Patterns Plushie Cow Animals",
+        "Mandala Geometry Patterns Plushie Farm Cow",
+        "Plushie Cow Family",
+        "Anime Girl Chibi Cow Summon",
+        "Anime Girl Cow Hoodie Plushie",
+        "Anime Girl Cow Hoodie Plushie Farm",
+        "Anime Girl Summoning Jutsu Cow Plushies",
+        "Chibi Plushie Cow",
+        "Holiday Birthday Celebration Plushie Cow Family",
+        "Holiday Halloween Costume Plushie Cow Family"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_dolphins",
+      "route": "/coloring-pages/dolphins",
+      "title": "Dolphins Coloring Pages",
+      "assetCount": 14,
+      "intro": "Dolphins leap, swim in groups, surface near waves, and appear in underwater scenes.",
+      "portraitCount": 14,
+      "displayTitles": [
+        "Animals Dolphins",
+        "Plushie Dolphin",
+        "Plushie Dolphin Family",
+        "Sea Life Bottlenose Dolphin Family",
+        "Sea Life Dolphin",
+        "Sea Life Dolphin Jumping Over Waves",
+        "Holiday Birthday Celebration Plushie Dolphin Family",
+        "Holiday Christmas Plushie Dolphin Family",
+        "Holiday Halloween Costume Plushie Dolphin Family",
+        "Mandala Geometry Patterns Dolphin",
+        "Mandala Geometry Patterns Dolphin Face Patterns",
+        "Mandala Geometry Patterns Plushie Dolphin",
+        "Mandala Geometry Patterns Plushie Dolphin Animals",
+        "Chibi Plushie Dolphin"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_lily",
+      "route": "/coloring-pages/lily",
+      "title": "Lily Coloring Pages",
+      "assetCount": 14,
+      "intro": "Lilies appear as single blossoms, bouquets, garden stems, and decorative floral arrangements.",
+      "portraitCount": 14,
+      "displayTitles": [
+        "Chibi Flowers Calla Lily",
+        "Chibi Flowers Calla Lily Kawaii",
+        "Chibi Flowers Kawaii Calla Lily",
+        "Chibi Flowers Lily",
+        "Chibi Flowers Lily Kawaii",
+        "Flowers Calla Lily",
+        "Flowers Lily",
+        "Flowers Water Lily",
+        "Indoor Plants Peace Lily",
+        "Indoor Plants Peace Lily Domino",
+        "Indoor Plants Peace Lily Sensation",
+        "Mandala Geometry Patterns Flowers Calla Lily",
+        "Mandala Geometry Patterns Flowers Lily",
+        "Reptiles Tree Frog On Lily Pad"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_monkeys",
+      "route": "/coloring-pages/monkeys",
+      "title": "Monkeys Coloring Pages",
+      "assetCount": 14,
+      "intro": "Monkeys appear climbing, swinging, sitting in groups, and moving through jungle or forest scenes.",
+      "portraitCount": 14,
+      "displayTitles": [
+        "Mandala Geometry Patterns Japan Snow Monkeys In Onsen",
+        "Plushie Monkey",
+        "Plushie Monkey Family",
+        "Holiday Birthday Celebration Plushie Monkey Family",
+        "Holiday Christmas Plushie Monkey Family",
+        "Holiday Halloween Costume Plushie Monkey Family",
+        "Mandala Geometry Patterns Plushie Monkey",
+        "Mandala Geometry Patterns Plushie Monkey Animals",
+        "Mandala Geometry Patterns Plushie Animal Monkey",
+        "Anime Girl Monkey Hoodie Animal Plushie",
+        "Anime Girl Monkey Hoodie Plushie",
+        "Chibi Monkey King",
+        "Chibi Monkey King Clouds",
+        "Chibi Plushie Monkey"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_plushie_unicorns",
+      "route": "/coloring-pages/plushie-unicorns",
+      "title": "Plushie Unicorns Coloring Pages",
+      "assetCount": 14,
+      "intro": "Unicorns appear as stitched toys with rounded hooves, small horns, soft manes, and compact bodies.",
+      "portraitCount": 14,
+      "displayTitles": [
+        "Plushie Unicorn",
+        "Plushie Unicorn Family",
+        "Holiday Birthday Celebration Plushie Unicorn Family",
+        "Holiday Christmas Plushie Unicorn Family",
+        "Mandala Geometry Patterns Plushie Unicorn",
+        "Anime Girl Summoning Unicorn Plushies",
+        "Anime Girl Unicorn Hoodie Plushie",
+        "Chibi Plushie Unicorn",
+        "Holiday Birthday Plushie Unicorn Family",
+        "Holiday Christmas Plushie Unicorn",
+        "Holiday Halloween Costume Plushie Unicorn Family",
+        "Holiday Halloween Plushie Unicorn Family",
+        "Mandala Geometry Patterns Plushie Cute Unicorn",
+        "Mandala Geometry Patterns Plushie Unicorn Samurai"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_sheep",
+      "route": "/coloring-pages/sheep",
+      "title": "Sheep Coloring Pages",
+      "assetCount": 14,
+      "intro": "Sheep and lambs appear in pasture, farm, flock, portrait, and friendly character designs.",
+      "portraitCount": 14,
+      "displayTitles": [
+        "Christmas Holiday Sheep",
+        "Plushie Bighorn Sheep",
+        "Plushie Horned Sheep Family",
+        "Plushie Little Sheep",
+        "Holiday Birthday Celebration Plushie Bighorn Sheep Family",
+        "Holiday Christmas Plushie Bighorn Sheep Family",
+        "Holiday Halloween Costume Plushie Bighorn Sheep Family",
+        "Plushie Bighorn Sheep Family",
+        "Anime Girl Sheep Hoodie Plushie: Design 1",
+        "Anime Girl Sheep Hoodie Plushie: Design 2",
+        "Anime Girl Summoning Jutsu Sheep",
+        "Anime Girl Summoning Jutsu Sheep Plushies",
+        "Chibi Plushie Bighorn Sheep",
+        "Chibi Sheep"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_bees",
+      "route": "/coloring-pages/bees",
+      "title": "Bees Coloring Pages",
+      "assetCount": 15,
+      "intro": "Bees appear in flight, on flowers, near hives, and in decorative insect compositions.",
+      "portraitCount": 15,
+      "displayTitles": [
+        "Anime Girl Summoning Killer Bees",
+        "Insects Leafcutter Bee Carrying Leaf",
+        "Plushie Bee",
+        "Plushie Bee Family",
+        "Holiday Birthday Celebration Plushie Bee Family",
+        "Holiday Halloween Costume Plushie Bee Family",
+        "Mandala Geometry Patterns Plushie Bee",
+        "Mandala Geometry Patterns Plushie Bee Insects",
+        "Anime Girl Bee Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Bumble Bee Battle Armor",
+        "Anime Girl Summoning Jutsu Bumble Bee Battle Armor Plushies",
+        "Anime Girl Summoning Killer Bee Plushies",
+        "Chibi Bee Dragon",
+        "Chibi Plushie Bee",
+        "Holiday Christmas Plushie Bee Family"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_brachiosaurus",
+      "route": "/coloring-pages/brachiosaurus",
+      "title": "Brachiosaurus Coloring Pages",
+      "assetCount": 15,
+      "intro": "Long-necked Brachiosaurus designs show standing, walking, feeding, and scenic prehistoric poses.",
+      "portraitCount": 15,
+      "displayTitles": [
+        "Plushie Prehistoric Brachiosaurus",
+        "Plushie Prehistoric Brachiosaurus Family",
+        "Holiday Birthday Celebration Plushie Prehistoric Brachiosaurus Family",
+        "Holiday Christmas Plushie Prehistoric Brachiosaurus Family",
+        "Holiday Christmas Prehistoric Brachiosaurus",
+        "Holiday Halloween Costume Plushie Prehistoric Brachiosaurus Family",
+        "Mandala Geometry Patterns Plushie Prehistoric Brachiosaurus",
+        "Mandala Geometry Patterns Plushie Prehistoric Brachiosaurus Animal",
+        "Mandala Geometry Patterns Prehistoric Brachiosaurus",
+        "Anime Girl Brachiosaurus Hoodie Plushie: Design 1",
+        "Anime Girl Brachiosaurus Hoodie Plushie: Design 2",
+        "Anime Girl Summoning Jutsu Brachiosaurus",
+        "Anime Girl Summoning Jutsu Brachiosaurus Plushies",
+        "Chibi Brachiosaurus",
+        "Chibi Plushie Prehistoric Brachiosaurus"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_deer",
+      "route": "/coloring-pages/deer",
+      "title": "Deer Coloring Pages",
+      "assetCount": 15,
+      "intro": "Deer appear as woodland animals, antlered portraits, family groups, and quiet forest scenes.",
+      "portraitCount": 15,
+      "displayTitles": [
+        "Holiday Christmas Animals Deer",
+        "Gardening Mushroom Deer Mushroom",
+        "Insects Deer Fly",
+        "Plushie Deer",
+        "Plushie Deer Family",
+        "Holiday Christmas Plushie Deer Family",
+        "Holiday Halloween Costume Plushie Deer Family",
+        "Mandala Geometry Patterns Mushroom Deer Mushroom",
+        "Mandala Geometry Patterns Plushie Animals Deer",
+        "Mandala Geometry Patterns Plushie Deer",
+        "Mandala Geometry Patterns Japan Nara Deer In Park",
+        "Plushie Arctic Deer Family",
+        "Chibi Plushie Deer",
+        "Holiday Birthday Celebration Plushie Deer Family",
+        "Holiday Christmas Plushie Deer"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_hedgehogs",
+      "route": "/coloring-pages/hedgehogs",
+      "title": "Hedgehogs Coloring Pages",
+      "assetCount": 15,
+      "intro": "Hedgehogs appear curled, walking, holding small objects, and exploring garden or woodland scenes.",
+      "portraitCount": 15,
+      "displayTitles": [
+        "Anime Girl Summoning Jutsu Hedgehogs",
+        "Gardening Mushroom Hedgehog Tooth",
+        "Plushie Hedgehog",
+        "Plushie Hedgehog Family",
+        "Holiday Christmas Plushie Hedgehog Family",
+        "Holiday Halloween Costume Plushie Hedgehog Family",
+        "Mandala Geometry Patterns Mushroom Hedgehog Tooth",
+        "Mandala Geometry Patterns Plushie Animals Hedgehog",
+        "Mandala Geometry Patterns Plushie Hedgehog",
+        "Mandala Geometry Patterns Plushie Hedgehog Animals",
+        "Anime Girl Hedgehog Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Hedgehog Plushies",
+        "Chibi Hedgehog",
+        "Chibi Mushroom Hedgehog Tooth",
+        "Holiday Birthday Celebration Plushie Hedgehog Family"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_hydras",
+      "route": "/coloring-pages/hydras",
+      "title": "Hydras Coloring Pages",
+      "assetCount": 15,
+      "intro": "Multi-headed hydras appear in battle poses, mythic scenes, and detailed creature portraits.",
+      "portraitCount": 15,
+      "displayTitles": [
+        "Plushie Baby Hydra",
+        "Mandala Geometry Patterns Plushie Baby Hydra",
+        "Anime Girl Hydra Hunt",
+        "Anime Girl Summoning Jutsu Hydra Dragon",
+        "Chibi Dungeon Hydra Dragon",
+        "Chibi Hydra",
+        "Chibi Hydra Castle Pet",
+        "Chibi Hydra Dragon",
+        "Chibi Plushie Baby Hydra",
+        "Fantasy Creatures Hydra",
+        "Fantasy Creatures Hydra Marsh",
+        "Fantasy Hydra Swamp",
+        "Fantasy Three Headed Hydra Swamp",
+        "Medieval Fantasy Hydra Serpent",
+        "Mythology Hydra"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_llamas",
+      "route": "/coloring-pages/llamas",
+      "title": "Llamas Coloring Pages",
+      "assetCount": 15,
+      "intro": "Llamas appear standing, in mountain settings, wearing decorations, and as playful character designs.",
+      "portraitCount": 15,
+      "displayTitles": [
+        "Anime Girl Summoning Jutsu Llamas",
+        "Christmas Holiday Llama",
+        "Plushie Llama",
+        "Plushie Llama Family",
+        "Holiday Birthday Celebration Plushie Llama Family",
+        "Holiday Christmas Plushie Llama Family",
+        "Holiday Halloween Costume Plushie Llama Family",
+        "Mandala Geometry Patterns Llama",
+        "Mandala Geometry Patterns Llama Face Patterns",
+        "Mandala Geometry Patterns Llama Patterns",
+        "Mandala Geometry Patterns Plushie Llama",
+        "Mandala Geometry Patterns Plushie Llama Animals",
+        "Anime Girl Llama Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Llama Plushies",
+        "Chibi Plushie Llama"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_reindeer",
+      "route": "/coloring-pages/reindeer",
+      "title": "Reindeer Coloring Pages",
+      "assetCount": 15,
+      "intro": "Reindeer appear with antlers, sleighs, Santa, gifts, and snowy Christmas settings.",
+      "portraitCount": 15,
+      "displayTitles": [
+        "Holiday Christmas Reindeer Rudolph With Red Nose",
+        "Holiday Christmas Reindeer Team Pulling Sleigh Over Rooftops",
+        "Gardening Mushroom Reindeer Lichen Reindeer Gardener Christmas",
+        "Plushie Reindeer",
+        "Plushie Reindeer Family",
+        "Holiday Christmas Plushie Reindeer",
+        "Holiday Christmas Plushie Reindeer Family",
+        "Holiday Halloween Costume Plushie Reindeer Family",
+        "Mandala Geometry Patterns Mushroom Reindeer Lichen",
+        "Mandala Geometry Patterns Plushie Reindeer",
+        "Mandala Geometry Patterns Plushie Reindeer Rudolph",
+        "Chibi Plushie Reindeer",
+        "Chibi Plushie Reindeer Rudolph",
+        "Holiday Birthday Celebration Plushie Reindeer Family",
+        "Mandala Geometry Patterns Plushie Reindeer Animals"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_steam_train",
+      "route": "/coloring-pages/steam-train",
+      "title": "Steam Train Coloring Pages",
+      "assetCount": 15,
+      "intro": "Steam locomotives appear with smoke, carriages, tracks, stations, and historic-looking rail scenes.",
+      "portraitCount": 15,
+      "displayTitles": [
+        "Mandala Geometry Patterns Trains Locomotives Classic Steam Train At Small Town Station",
+        "Mandala Geometry Patterns Trains Locomotives Classic Steam Train In Winter Snow",
+        "Mandala Geometry Patterns Trains Locomotives Classic Steam Train Puffing Over Hill",
+        "Mandala Geometry Patterns Trains Locomotives Classic Steam Train With Dining Car",
+        "Mandala Geometry Patterns Trains Locomotives Classic Steam Train With Sleeper Car",
+        "Mandala Geometry Patterns Trains Locomotives Steam Train At Old Town Station",
+        "Mandala Geometry Patterns Trains Locomotives Steam Train Blowing Whistle And Steam Cloud",
+        "Mandala Geometry Patterns Trains Locomotives Steam Train On Coastal Route",
+        "Mandala Geometry Patterns Trains Locomotives Steam Train On Forest Trestle Bridge",
+        "Mandala Geometry Patterns Trains Locomotives Steam Train With Open Air Carriage",
+        "Mandala Geometry Patterns Trains Locomotives Steam Train With Open Air Carriages",
+        "Mandala Geometry Patterns Trains Locomotives Steam Train With Open Coal Tender Car",
+        "Mandala Geometry Patterns Trains Locomotives Steam Train With Snowplow Front Attachment",
+        "Mandala Geometry Patterns Trains Locomotives Vintage Steam Train Crossing Bridge",
+        "Mandala Geometry Patterns Trains Locomotives Vintage Steam Train Through Mountains"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_wyverns",
+      "route": "/coloring-pages/wyverns",
+      "title": "Wyverns Coloring Pages",
+      "assetCount": 15,
+      "intro": "Two-legged winged wyverns appear in flight, perched, in battle poses, and in fantasy landscapes.",
+      "portraitCount": 15,
+      "displayTitles": [
+        "Anime Girl Summoning Jutsu Wyvern Dragon",
+        "Anime Girl Summoning Jutsu Wyvern Dragon Plushies",
+        "Chibi Dungeon Wyvern",
+        "Chibi Medieval Fantasy Wyvern",
+        "Chibi Wyvern",
+        "Chibi Wyvern Flying",
+        "Fantasy Chibi Wyvern Baby",
+        "Fantasy Creatures Wyvern Mountain",
+        "Fantasy Mechanical Wyvern",
+        "Fantasy Ridge Wyvern",
+        "Fantasy Wyvern Canyon",
+        "Fantasy Wyvern Family Nest",
+        "Fantasy Wyvern Nest",
+        "Medieval Fantasy Wyvern",
+        "Medieval Fantasy Wyvern Sky"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_diplodocus",
+      "route": "/coloring-pages/diplodocus",
+      "title": "Diplodocus Coloring Pages",
+      "assetCount": 16,
+      "intro": "Diplodocus designs emphasize the long tail and neck in standing, walking, and scenic herd poses.",
+      "portraitCount": 16,
+      "displayTitles": [
+        "Prehistoric Diplodocus",
+        "Prehistoric Diplodocus Happy",
+        "Plushie Prehistoric Diplodocus",
+        "Plushie Prehistoric Diplodocus Family",
+        "Holiday Birthday Celebration Plushie Prehistoric Diplodocus Family",
+        "Holiday Christmas Plushie Prehistoric Diplodocus Family",
+        "Holiday Halloween Costume Plushie Prehistoric Diplodocus Family",
+        "Mandala Geometry Patterns Plushie Prehistoric Diplodocus",
+        "Mandala Geometry Patterns Plushie Prehistoric Diplodocus Animal",
+        "Mandala Geometry Patterns Prehistoric Diplodocus",
+        "Mandala Geometry Patterns Prehistoric Diplodocus Roaming",
+        "Mandala Geometry Patterns Prehistoric Diplodocus Walking",
+        "Anime Girl Summoning Jutsu Diplodocus",
+        "Anime Girl Summoning Jutsu Diplodocus Plushies",
+        "Chibi Diplodocus",
+        "Chibi Plushie Prehistoric Diplodocus"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_fish",
+      "route": "/coloring-pages/fish",
+      "title": "Fish Coloring Pages",
+      "assetCount": 16,
+      "intro": "Fish designs include single swimmers, schools, reef settings, patterned bodies, and close aquatic views.",
+      "portraitCount": 16,
+      "displayTitles": [
+        "Sea Life Coral Reef Fish",
+        "Sea Life Coral Reef Fish Swimming",
+        "Sea Life Coral Reef Scene With Colorful Fish",
+        "Sea Life Fighting Fish",
+        "Mandala Geometry Patterns Sushi Chef Knife And Fish",
+        "Mandala Geometry Patterns Sushi Gunkan Sushi Fish Roe Mix",
+        "Mandala Geometry Patterns Sushi Tobiko Flying Fish Roe",
+        "Mandala Geometry Patterns Sushi Koi Fish At Restaurant",
+        "Sea Life Betta Fish",
+        "Anime Girl Catching Fish",
+        "Anime Girl Fish Net Clothes Fishing",
+        "Anime Girl Fish Net Stocking",
+        "Anime Girl Summoning Angler Fish",
+        "Anime Girl Summoning Angler Fish Plushies",
+        "Chibi Megalodon Fish",
+        "Mandala Geometry Patterns Sushi Chef Slicing Fish"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_hippos",
+      "route": "/coloring-pages/hippos",
+      "title": "Hippos Coloring Pages",
+      "assetCount": 16,
+      "intro": "Hippos appear in water, on riverbanks, in family groups, and as rounded character designs.",
+      "portraitCount": 16,
+      "displayTitles": [
+        "Anime Girl Summoning Jutsu Hippos",
+        "Plushie Hippo",
+        "Holiday Birthday Celebration Plushie Hippo Family",
+        "Holiday Christmas Plushie Hippo",
+        "Holiday Christmas Plushie Hippo Family",
+        "Holiday Halloween Costume Plushie Hippo Family",
+        "Mandala Geometry Patterns Animal Plushie Hippo",
+        "Mandala Geometry Patterns Plushie Hippo",
+        "Mandala Geometry Patterns Plushie Hippo Animals",
+        "Plushie Hippo Family",
+        "Anime Girl Hippo Hoodie Animal Plushie",
+        "Anime Girl Hippo Hoodie Plushie",
+        "Anime Girl Hippo Hoodie Plushie Cosplay",
+        "Anime Girl Summoning Jutsu Hippo Plushies",
+        "Chibi Hippo",
+        "Chibi Plushie Hippo"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_horses",
+      "route": "/coloring-pages/horses",
+      "title": "Horses Coloring Pages",
+      "assetCount": 16,
+      "intro": "Horses appear running, standing, in portraits, with riders, and across open landscape scenes.",
+      "portraitCount": 16,
+      "displayTitles": [
+        "Holiday Birthday Celebration Horses",
+        "Anime Girl Summoning Jutsu Horses",
+        "Plushie Horse",
+        "Plushie Horse Family",
+        "Holiday Birthday Celebration Plushie Horse Family",
+        "Holiday Christmas Plushie Horse Family",
+        "Mandala Geometry Patterns Plushie Horse",
+        "Mandala Geometry Patterns Plushie Horse Animals",
+        "Anime Girl Horse Hoodie Plushie: Design 1",
+        "Anime Girl Horse Hoodie Plushie: Design 2",
+        "Anime Girl Summoning Jutsu Horse Plushies",
+        "Chibi Horse",
+        "Chibi Plushie Horse",
+        "Fantasy Spectral Horse",
+        "Holiday Halloween Costume Plushie Horse Family",
+        "Mythology Kelpie Horse"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_megalodon",
+      "route": "/coloring-pages/megalodon",
+      "title": "Megalodon Coloring Pages",
+      "assetCount": 16,
+      "intro": "Megalodon designs show the extinct shark in open water, near other sea life, and in dramatic close views.",
+      "portraitCount": 16,
+      "displayTitles": [
+        "Prehistoric Megalodon",
+        "Plushie Prehistoric Megalodon",
+        "Plushie Prehistoric Megalodon Family",
+        "Holiday Christmas Plushie Prehistoric Megalodon Family",
+        "Holiday Halloween Costume Plushie Prehistoric Megalodon Family",
+        "Mandala Geometry Patterns Plushie Prehistoric Megalodon",
+        "Mandala Geometry Patterns Prehistoric Megalodon",
+        "Mandala Geometry Patterns Plushie Prehistoric Megalodon Animal",
+        "Anime Girl Megalodon Hoodie Plushie: Design 1",
+        "Anime Girl Megalodon Hoodie Plushie: Design 2",
+        "Anime Girl Summoning Jutsu Megalodon",
+        "Anime Girl Summoning Jutsu Megalodon Plushies",
+        "Chibi Megalodon Fish",
+        "Chibi Megalodon Tiger Shark",
+        "Chibi Plushie Prehistoric Megalodon",
+        "Holiday Birthday Celebration Plushie Prehistoric Megalodon Family"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_nigiri",
+      "route": "/coloring-pages/nigiri",
+      "title": "Nigiri Coloring Pages",
+      "assetCount": 16,
+      "intro": "Nigiri pieces feature rice and fish toppings in individual views, assortments, and sushi platters.",
+      "portraitCount": 16,
+      "displayTitles": [
+        "Mandala Geometry Patterns Sushi Aburi Ebi Nigiri",
+        "Mandala Geometry Patterns Sushi Aburi Salmon Nigiri",
+        "Mandala Geometry Patterns Sushi Aburi Tuna Nigiri",
+        "Mandala Geometry Patterns Sushi Avocado Nigiri",
+        "Mandala Geometry Patterns Sushi Chef Shaping Nigiri",
+        "Mandala Geometry Patterns Sushi Crab Stick Nigiri",
+        "Mandala Geometry Patterns Sushi Egg Tamago Nigiri",
+        "Mandala Geometry Patterns Sushi Nigiri On Bamboo Leaf",
+        "Mandala Geometry Patterns Sushi Nigiri On Lotus Leaf",
+        "Mandala Geometry Patterns Sushi Octopus Nigiri",
+        "Mandala Geometry Patterns Sushi Salmon Nigiri",
+        "Mandala Geometry Patterns Sushi Scallop Nigiri",
+        "Mandala Geometry Patterns Sushi Shrimp Nigiri",
+        "Mandala Geometry Patterns Sushi Smiling Nigiri Roll Tuna",
+        "Mandala Geometry Patterns Sushi Tuna Nigiri",
+        "Mandala Geometry Patterns Sushi Unagi Eel Nigiri"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_cookie",
+      "route": "/coloring-pages/cookie",
+      "title": "Cookie Coloring Pages",
+      "assetCount": 17,
+      "intro": "Cookies appear as individual treats, decorated shapes, stacked assortments, and baking scenes.",
+      "portraitCount": 17,
+      "displayTitles": [
+        "Chibi Plushie Cookie Character",
+        "Holiday Christmas Gingerbread Cookie Decorating Scene",
+        "Holiday Christmas Gingerbread Cookie Family In Snow Scene",
+        "Holiday Christmas Cookie Decorating",
+        "Holiday Christmas Cookie Decorating With Kids",
+        "Holiday Christmas Mrs Claus Baking Holiday Cookies",
+        "Mandala Geometry Patterns Bakery Animal Shaped Cookies",
+        "Mandala Geometry Patterns Bakery Baking Sheet Full Of Cookies",
+        "Mandala Geometry Patterns Bakery Candy Cane Cookies",
+        "Mandala Geometry Patterns Bakery Chocolate Chip Cookie",
+        "Mandala Geometry Patterns Bakery Cookie Decorating",
+        "Mandala Geometry Patterns Bakery Cookie Jar",
+        "Mandala Geometry Patterns Bakery Gingerbread Cookie",
+        "Mandala Geometry Patterns Bakery Heart Shaped Cookies",
+        "Mandala Geometry Patterns Bakery Star Shaped Cookies",
+        "Mandala Geometry Patterns Bakery Sugar Cookie Shapes",
+        "Mandala Geometry Patterns Plushie Cookie Character"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_elephants",
+      "route": "/coloring-pages/elephants",
+      "title": "Elephants Coloring Pages",
+      "assetCount": 17,
+      "intro": "Elephants appear alone, in family groups, walking through landscapes, and in decorative portrait treatments.",
+      "portraitCount": 17,
+      "displayTitles": [
+        "Animals Elephants",
+        "Anime Girl Summoning Jutsu Elephants",
+        "Plushie Elephant",
+        "Plushie Elephant Family",
+        "Holiday Birthday Celebration Plushie Elephant Family",
+        "Holiday Christmas Plushie Elephant Family",
+        "Holiday Halloween Costume Plushie Elephant Family",
+        "Mandala Geometry Patterns Elephant",
+        "Mandala Geometry Patterns Plushie Animals Elephant",
+        "Mandala Geometry Patterns Plushie Elephant",
+        "Mandala Geometry Patterns Plushie Elephant Animals",
+        "Indoor Plants Colocasia Elephant Ear",
+        "Anime Girl Elephant Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Elephant Plushies",
+        "Chibi Elephant",
+        "Chibi Plushie Elephant",
+        "Mandala Geometry Patterns Elephant Face Patterns"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_stegosaurus",
+      "route": "/coloring-pages/stegosaurus",
+      "title": "Stegosaurus Coloring Pages",
+      "assetCount": 17,
+      "intro": "Stegosaurus designs emphasize back plates and tail spikes in standing, walking, and prehistoric scenes.",
+      "portraitCount": 17,
+      "displayTitles": [
+        "Prehistoric Stegosaurus",
+        "Prehistoric Stegosaurus Gardening",
+        "Plushie Prehistoric Stegosaurus",
+        "Plushie Prehistoric Stegosaurus Family",
+        "Holiday Christmas Prehistoric Stegosaurus",
+        "Holiday Halloween Costume Plushie Prehistoric Stegosaurus Family",
+        "Mandala Geometry Patterns Plushie Prehistoric Stegosaurus",
+        "Mandala Geometry Patterns Plushie Prehistoric Stegosaurus Animal",
+        "Mandala Geometry Patterns Prehistoric Stegosaurus",
+        "Anime Girl Stegosaurus Hoodie Plushie: Design 1",
+        "Anime Girl Stegosaurus Hoodie Plushie: Design 2",
+        "Anime Girl Stegosaurus Hoodie Plushies",
+        "Anime Girl Summoning Jutsu Stegosaurus",
+        "Anime Girl Summoning Jutsu Stegosaurus Plushies",
+        "Chibi Plushie Prehistoric Stegosaurus",
+        "Holiday Birthday Celebration Plushie Prehistoric Stegosaurus Family",
+        "Holiday Christmas Plushie Prehistoric Stegosaurus Family"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_moose",
+      "route": "/coloring-pages/moose",
+      "title": "Moose Coloring Pages",
+      "assetCount": 18,
+      "intro": "Moose appear with broad antlers, in forest and lakeside settings, and in calm standing poses.",
+      "portraitCount": 18,
+      "displayTitles": [
+        "Christmas Holiday Moose",
+        "Plushie Moose",
+        "Plushie Moose Family",
+        "Holiday Christmas Plushie Happy Moose Family",
+        "Holiday Christmas Plushie Moose Family",
+        "Holiday Halloween Costume Plushie Moose Family",
+        "Mandala Geometry Patterns Plushie Animals Moose",
+        "Mandala Geometry Patterns Plushie Moose",
+        "Anime Girl Moose Hoodie Plushie",
+        "Anime Girl Moose Hoodie Plushie Cosplay",
+        "Anime Girl Summoning Jutsu Moose",
+        "Anime Girl Summoning Jutsu Moose Plushies",
+        "Chibi Dino Moose",
+        "Chibi Moose",
+        "Chibi Moose Animal",
+        "Chibi Plushie Moose",
+        "Holiday Birthday Celebration Plushie Moose Family",
+        "Mandala Geometry Patterns Plushie Moose Animals"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_phoenix",
+      "route": "/coloring-pages/phoenix",
+      "title": "Phoenix Coloring Pages",
+      "assetCount": 18,
+      "intro": "Phoenix designs emphasize sweeping wings, flame-like feathers, flight, and dramatic fantasy compositions.",
+      "portraitCount": 18,
+      "displayTitles": [
+        "Plushie Phoenix",
+        "Holiday Birthday Celebration Phoenix",
+        "Mandala Geometry Patterns Plushie Phoenix",
+        "Anime Girl Phoenix Rebirth Battle",
+        "Anime Girl Phoenix Spirit",
+        "Chibi Flaming Phoenix",
+        "Chibi Phoenix",
+        "Chibi Plushie Phoenix",
+        "Fantasy Chibi Phoenix",
+        "Fantasy Chibi Phoenix Flight",
+        "Fantasy Creatures Phoenix",
+        "Fantasy Creatures Phoenix Rising",
+        "Fantasy Flaming Phoenix Rebirth",
+        "Fantasy Phoenix Feather Nest",
+        "Fantasy Phoenix Rebirth",
+        "Fantasy Phoenix Rising From The Ashes",
+        "Fantasy Sunrise Phoenix Guardian",
+        "Mythology Phoenix"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_snakes",
+      "route": "/coloring-pages/snakes",
+      "title": "Snakes Coloring Pages",
+      "assetCount": 18,
+      "intro": "Snakes appear coiled, moving through habitats, in close scale studies, and in patterned designs.",
+      "portraitCount": 18,
+      "displayTitles": [
+        "Reptiles Snakes",
+        "Anime Girl Summoning Jutsu Snakes",
+        "Plushie Snake",
+        "Plushie Snake Family",
+        "Reptiles Monitor Lizard With Rattle Snake Rattler",
+        "Reptiles Snake Coiled On Tree Branch",
+        "Holiday Birthday Celebration Plushie Snake Family",
+        "Holiday Christmas Plushie Snake Family",
+        "Mandala Geometry Patterns Plushie Snake",
+        "Mandala Geometry Patterns Plushie Snake Animals",
+        "Mandala Geometry Patterns Snake",
+        "Indoor Plants Snake Plant",
+        "Mandala Geometry Patterns Two Headed Snake Patterns",
+        "Anime Girl Snake Charming",
+        "Anime Girl Snake Hoodie Plushie: Design 1",
+        "Anime Girl Snake Hoodie Plushie: Design 2",
+        "Anime Girl Summoning Jutsu Snake Plushies",
+        "Chibi Plushie Snake"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_t_rex",
+      "route": "/coloring-pages/t-rex",
+      "title": "T-Rex Coloring Pages",
+      "assetCount": 18,
+      "intro": "T-Rex designs show large-headed predators in roaring, walking, hunting, and scenic prehistoric poses.",
+      "portraitCount": 18,
+      "displayTitles": [
+        "Anime Girl T Rex Hoodie Plushie: Design 1",
+        "Anime Girl T Rex Hoodie Plushie: Design 2",
+        "Anime Girl T Rex Hoodie Plushie Back Yard",
+        "Anime Girl T Rex Hoodie Plushie Volcano",
+        "Prehistoric Tyrannosaurus Rex",
+        "Plushie Prehistoric Tyrannosaurus Rex",
+        "Plushie Prehistoric Tyrannosaurus Rex Family",
+        "Holiday Birthday Celebration Plushie Prehistoric Tyrannosaurus Rex Family",
+        "Holiday Birthday Celebration Tyrannosaurus Rex",
+        "Holiday Christmas Plushie Prehistoric Tyrannosaurus Rex Family",
+        "Holiday Halloween Costume Plushie Prehistoric Tyrannosaurus Rex Family",
+        "Mandala Geometry Patterns Plushie Prehistoric Tyrannosaurus Rex",
+        "Mandala Geometry Patterns Plushie Prehistoric Tyrannosaurus Rex Animal",
+        "Mandala Geometry Patterns Prehistoric Tyrannosaurus Rex",
+        "Anime Girl Summoning Jutsu Tyrannosaurus Rex Dinosaur",
+        "Chibi Plushie Prehistoric Tyrannosaurus Rex",
+        "Chibi Tyrannosaurus Rex",
+        "Holiday Christmas Prehistoric Tyrannosaurus Rex"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_ducks",
+      "route": "/coloring-pages/ducks",
+      "title": "Ducks Coloring Pages",
+      "assetCount": 19,
+      "intro": "Ducks and ducklings appear swimming, standing, nesting, and moving through pond settings.",
+      "portraitCount": 19,
+      "displayTitles": [
+        "Birds Ducks",
+        "Birds Pintail Duck",
+        "Birds Ruddy Duck",
+        "Birds Whistling Duck",
+        "Birds Wood Duck",
+        "Plushie Duck Family",
+        "Plushie Turtle Duck",
+        "Animals Duck",
+        "Holiday Christmas Plushie Duck Family",
+        "Holiday Halloween Costume Plushie Duck Family",
+        "Mandala Geometry Patterns Plushie Duck",
+        "Mandala Geometry Patterns Plushie Duck Animals",
+        "Mandala Geometry Patterns Plushie Happy Duck",
+        "Birds Shoveler Duck",
+        "Anime Girl Birds Duck",
+        "Anime Girl Duck Hoodie Plushie",
+        "Anime Girl Duck Outfit",
+        "Chibi Plushie Duck",
+        "Holiday Birthday Celebration Plushie Duck Family"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_giraffes",
+      "route": "/coloring-pages/giraffes",
+      "title": "Giraffes Coloring Pages",
+      "assetCount": 19,
+      "intro": "Giraffes appear in tall standing poses, family scenes, close portraits, and savanna settings.",
+      "portraitCount": 19,
+      "displayTitles": [
+        "Anime Girl Summoning Jutsu Giraffes",
+        "Plushie Giraffe",
+        "Plushie Giraffe Family",
+        "Holiday Birthday Celebration Plushie Giraffe Family",
+        "Holiday Christmas Plushie Giraffe Family",
+        "Holiday Halloween Costume Plushie Giraffe Family",
+        "Mandala Geometry Patterns Giraffe",
+        "Mandala Geometry Patterns Giraffe Face Patterns",
+        "Anime Girl Giraffe Hoodie Animal Plushie",
+        "Anime Girl Giraffe Hoodie Plushie: Design 1",
+        "Anime Girl Giraffe Hoodie Plushie: Design 2",
+        "Anime Girl Giraffe Hoodie Plushie Cosplay",
+        "Anime Girl Summoning Jutsu Cute Giraffe Plushies",
+        "Anime Girl Summoning Jutsu Giraffe",
+        "Anime Girl Summoning Jutsu Giraffe Plushies",
+        "Chibi Giraffe",
+        "Chibi Plushie Giraffe",
+        "Mandala Geometry Patterns Plushie Animals Giraffe",
+        "Mandala Geometry Patterns Plushie Giraffe"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_sharks",
+      "route": "/coloring-pages/sharks",
+      "title": "Sharks Coloring Pages",
+      "assetCount": 19,
+      "intro": "Sharks appear swimming, hunting, in close body views, and among reefs or open-water scenes.",
+      "portraitCount": 19,
+      "displayTitles": [
+        "Plushie Prehistoric Land Shark Family",
+        "Sea Life Basking Shark",
+        "Sea Life Blue Shark Deep Sea Scene",
+        "Sea Life Great White Shark",
+        "Sea Life Great White Shark Hunting Scene",
+        "Sea Life Hammerhead Shark",
+        "Sea Life Leopard Shark",
+        "Sea Life Reef Shark",
+        "Sea Life Shark",
+        "Sea Life Thresher Shark",
+        "Sea Life Tiger Shark",
+        "Sea Life Tiger Shark Swimming Near Reef",
+        "Mandala Geometry Patterns Shark",
+        "Mandala Geometry Patterns Shark Face Patterns",
+        "Sea Life Hammerhead Shark School Swimming",
+        "Anime Girl Shark Hoodie Plushie: Design 1",
+        "Anime Girl Shark Hoodie Plushie: Design 2",
+        "Anime Girl Summoning Jutsu Great White Shark Plushies",
+        "Chibi Megalodon Tiger Shark"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_zebras",
+      "route": "/coloring-pages/zebras",
+      "title": "Zebras Coloring Pages",
+      "assetCount": 19,
+      "intro": "Zebras appear in striped portraits, walking or running poses, herds, and savanna settings.",
+      "portraitCount": 19,
+      "displayTitles": [
+        "Anime Girl Summoning Jutsu Zebras",
+        "Indoor Plants Zebra Haworthia",
+        "Indoor Plants Zebra Plant Aphelandra",
+        "Indoor Plants Zebra Succulent",
+        "Plushie Zebra",
+        "Holiday Birthday Celebration Plushie Zebra Family",
+        "Holiday Halloween Costume Plushie Zebra Family",
+        "Mandala Geometry Patterns Zebra",
+        "Mandala Geometry Patterns Plushie Zebra Animals",
+        "Plushie Zebra Family",
+        "Anime Girl Summoning Jutsu Zebra Plushies",
+        "Anime Girl Zebra Hoodie Plushie: Design 1",
+        "Anime Girl Zebra Hoodie Plushie: Design 2",
+        "Anime Girl Zebra Hoodie Plushie Blowing Bubbles",
+        "Chibi Plushie Zebra",
+        "Chibi Zebra",
+        "Holiday Christmas Plushie Zebra Family",
+        "Mandala Geometry Patterns Plushie Zebra",
+        "Mandala Geometry Patterns Zebra Face Patterns"
+      ],
+      "reviewStatus": "reviewed"
+    }
+  ]
+}

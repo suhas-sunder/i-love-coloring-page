@@ -1,0 +1,4314 @@
+{
+  "generatedAt": "2026-08-03T21:38:15.099Z",
+  "label": "before",
+  "sources": [
+    "src/generated/coloring/runtime-printables.json",
+    "src/generated/coloring/runtime-hubs.json",
+    "src/config/hub-editorial-content.json",
+    "src/generated/coloring/runtime-routes.json",
+    "pipeline/manifests/runtime-printable-route-manifest.json",
+    "pipeline/manifests/printable-title-manifest.json",
+    "public/image-sitemap.xml"
+  ],
+  "summary": {
+    "printableCount": 6352,
+    "routeManifestCount": 6352,
+    "publicHubCount": 163,
+    "indexableHubCount": 160,
+    "sitemapHubCount": 160,
+    "hubBelow12Count": 23,
+    "hubBelow20Count": 59,
+    "introOnlyHubCount": 146,
+    "exactDuplicateDisplayTitleGroupCount": 0,
+    "normalizedNearDuplicateTitleGroupCount": 69,
+    "exactDuplicateMetadataTitleGroupCount": 0,
+    "exactDuplicateMetadataDescriptionGroupCount": 0,
+    "exactDuplicateHubIntroGroupCount": 0,
+    "nearDuplicateHubIntroPairCount": 0,
+    "exactDuplicateHubParagraphGroupCount": 0,
+    "nearDuplicateHubParagraphPairCount": 0,
+    "metadataTitleOver70Count": 2400,
+    "metadataTitleOver128Count": 0,
+    "metadataDescriptionMissingCount": 0,
+    "metadataDescriptionOver210Count": 0,
+    "genericPrintableDescriptionCount": 2812,
+    "unsupportedClaimCount": 1,
+    "internalLeakCount": 0,
+    "sitemapHubRouteCount": 160,
+    "imageSitemapPageLocCount": 6352,
+    "imageSitemapImageLocCount": 6352,
+    "midievalCount": 0,
+    "bakiniCount": 0,
+    "aligatorCount": 1,
+    "dalmationCount": 1,
+    "celetbratingCount": 0,
+    "holidayChristmasHolidayCount": 3,
+    "christmasHolidayChristmasCount": 13,
+    "terminalColoringPageCount": 202,
+    "repeatedColoringPageCount": 0,
+    "adjacentRepeatedWordCount": 0,
+    "emptyOrShortTitleCount": 0,
+    "displayTitleOver80Count": 48,
+    "metadataTitleMissingSubjectCount": 0,
+    "numericSuffixReviewCount": 33,
+    "introsContainingAppearCount": 67,
+    "introsContainingDesignsShowCount": 14,
+    "introsContainingThisCollectionIncludesCount": 0,
+    "introsContainingPerfectForCount": 0,
+    "introsContainingGreatForCount": 0,
+    "numberLedIntroCount": 18,
+    "formulaicNearDuplicateIntroPairCount": 0,
+    "formulaicRepeatedOpeningGroupCount": 0,
+    "formulaicVaguePhraseFindingCount": 81,
+    "formulaicInventoryMismatchCount": 2
+  },
+  "hashes": {
+    "protectedPrintableContract": "7ca3c2b9ae80ecb676fad4b62eb87ed31ca6a51896df38f471becbe7d54b451d",
+    "printableDisplayMetadata": "7543f21a3db009715fa59e1dc0fcbed88a48f2ef3fa4944df1d2d1889dbd219a",
+    "protectedHubContract": "b717ad11b2355a924355a5c8eb4389a5b20a6340cc44a00c3997cd081d2d163e",
+    "hubEditorialMetadata": "6178a4441260418b2b049a7a00398bd9509c9bf191ee4e06a948cb6373ecb32d",
+    "sitemapRouteContract": "2e3e2f7e37fe96f8b07ea75a5172748cdc4b3cde07b7a717def4fbeaeb762bbf",
+    "imageSitemapXml": "4d1c603e64a0a6c4ce7b3ef670fb070ccdf34c411a138ccab86986251d8bc379"
+  },
+  "titleDefects": {
+    "counts": {
+      "midievalCount": 0,
+      "bakiniCount": 0,
+      "aligatorCount": 1,
+      "dalmationCount": 1,
+      "celetbratingCount": 0,
+      "holidayChristmasHolidayCount": 3,
+      "christmasHolidayChristmasCount": 13,
+      "terminalColoringPageCount": 202,
+      "repeatedColoringPageCount": 0,
+      "adjacentRepeatedWordCount": 0,
+      "emptyOrShortTitleCount": 0,
+      "displayTitleOver80Count": 48,
+      "metadataTitleMissingSubjectCount": 0,
+      "numericSuffixReviewCount": 33
+    },
+    "findings": {
+      "midievalCount": [],
+      "bakiniCount": [],
+      "aligatorCount": [
+        {
+          "stableId": "a87cc13ec7",
+          "canonicalPath": "/printables/animals/reptiles-aligator-with-turtle-shell-a87cc13ec7",
+          "publicTitle": "Reptiles Aligator With Turtle Shell",
+          "displayTitle": "Reptiles Aligator With Turtle Shell"
+        }
+      ],
+      "dalmationCount": [
+        {
+          "stableId": "12eb9bb13b",
+          "canonicalPath": "/printables/indoor-plants/indoor-plants-aglaonema-pink-dalmation-12eb9bb13b",
+          "publicTitle": "Indoor Plants Aglaonema Pink Dalmation",
+          "displayTitle": "Indoor Plants Aglaonema Pink Dalmation"
+        }
+      ],
+      "celetbratingCount": [],
+      "holidayChristmasHolidayCount": [
+        {
+          "stableId": "2dd968539b",
+          "canonicalPath": "/printables/christmas/holiday-christmas-holiday-cookie-decorating-2dd968539b",
+          "publicTitle": "Holiday Christmas Holiday Cookie Decorating Coloring Page",
+          "displayTitle": "Holiday Christmas Holiday Cookie Decorating Coloring Page"
+        },
+        {
+          "stableId": "f5f66ac510",
+          "canonicalPath": "/printables/christmas/holiday-christmas-holiday-cookie-decorating-with-kids-f5f66ac510",
+          "publicTitle": "Holiday Christmas Holiday Cookie Decorating With Kids Coloring Page",
+          "displayTitle": "Holiday Christmas Holiday Cookie Decorating With Kids Coloring Page"
+        },
+        {
+          "stableId": "3265e65ae7",
+          "canonicalPath": "/printables/christmas/holiday-christmas-holiday-morning-gift-opening-by-fireplace-3265e65ae7",
+          "publicTitle": "Holiday Christmas Holiday Morning Gift Opening By Fireplace Coloring Page",
+          "displayTitle": "Holiday Christmas Holiday Morning Gift Opening By Fireplace Coloring Page"
+        }
+      ],
+      "christmasHolidayChristmasCount": [
+        {
+          "stableId": "cc6fed095e",
+          "canonicalPath": "/printables/christmas/christmas-holiday-christmas-cards-cc6fed095e",
+          "publicTitle": "Christmas Holiday Christmas Cards",
+          "displayTitle": "Christmas Holiday Christmas Cards"
+        },
+        {
+          "stableId": "d1dfbb8bc8",
+          "canonicalPath": "/printables/christmas/christmas-holiday-christmas-carols-d1dfbb8bc8",
+          "publicTitle": "Christmas Holiday Christmas Carols",
+          "displayTitle": "Christmas Holiday Christmas Carols"
+        },
+        {
+          "stableId": "671e7e3cef",
+          "canonicalPath": "/printables/christmas/christmas-holiday-christmas-day-671e7e3cef",
+          "publicTitle": "Christmas Holiday Christmas Day",
+          "displayTitle": "Christmas Holiday Christmas Day"
+        },
+        {
+          "stableId": "210beddaf3",
+          "canonicalPath": "/printables/christmas/christmas-holiday-christmas-decorations-210beddaf3",
+          "publicTitle": "Christmas Holiday Christmas Decorations",
+          "displayTitle": "Christmas Holiday Christmas Decorations"
+        },
+        {
+          "stableId": "eddd380bbc",
+          "canonicalPath": "/printables/christmas/christmas-holiday-christmas-eve-eddd380bbc",
+          "publicTitle": "Christmas Holiday Christmas Eve",
+          "displayTitle": "Christmas Holiday Christmas Eve"
+        },
+        {
+          "stableId": "f742a925a8",
+          "canonicalPath": "/printables/christmas/christmas-holiday-christmas-lights-f742a925a8",
+          "publicTitle": "Christmas Holiday Christmas Lights",
+          "displayTitle": "Christmas Holiday Christmas Lights"
+        },
+        {
+          "stableId": "404524eba7",
+          "canonicalPath": "/printables/christmas/christmas-holiday-christmas-ornaments-404524eba7",
+          "publicTitle": "Christmas Holiday Christmas Ornaments",
+          "displayTitle": "Christmas Holiday Christmas Ornaments"
+        },
+        {
+          "stableId": "53bc9f83a6",
+          "canonicalPath": "/printables/christmas/christmas-holiday-christmas-presents-53bc9f83a6",
+          "publicTitle": "Christmas Holiday Christmas Presents",
+          "displayTitle": "Christmas Holiday Christmas Presents"
+        },
+        {
+          "stableId": "3c9136a458",
+          "canonicalPath": "/printables/christmas/christmas-holiday-christmas-songs-3c9136a458",
+          "publicTitle": "Christmas Holiday Christmas Songs",
+          "displayTitle": "Christmas Holiday Christmas Songs"
+        },
+        {
+          "stableId": "a71271c320",
+          "canonicalPath": "/printables/christmas/christmas-holiday-christmas-stockings-a71271c320",
+          "publicTitle": "Christmas Holiday Christmas Stockings",
+          "displayTitle": "Christmas Holiday Christmas Stockings"
+        },
+        {
+          "stableId": "4661674d18",
+          "canonicalPath": "/printables/christmas/christmas-holiday-christmas-sweater-4661674d18",
+          "publicTitle": "Christmas Holiday Christmas Sweater",
+          "displayTitle": "Christmas Holiday Christmas Sweater"
+        },
+        {
+          "stableId": "be936df7b8",
+          "canonicalPath": "/printables/christmas/christmas-holiday-christmas-wreath-be936df7b8",
+          "publicTitle": "Christmas Holiday Christmas Wreath",
+          "displayTitle": "Christmas Holiday Christmas Wreath"
+        },
+        {
+          "stableId": "484fd4b2af",
+          "canonicalPath": "/printables/christmas/christmas-holiday-christmas-wreath-decorations-484fd4b2af",
+          "publicTitle": "Christmas Holiday Christmas Wreath Decorations",
+          "displayTitle": "Christmas Holiday Christmas Wreath Decorations"
+        }
+      ],
+      "terminalColoringPageCount": [
+        {
+          "stableId": "3624fb1d72",
+          "canonicalPath": "/printables/bats/chibi-holiday-halloween-bat-colony-flying-in-night-sky-3624fb1d72",
+          "publicTitle": "Chibi Holiday Halloween Bat Colony Flying In Night Sky Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Bat Colony Flying In Night Sky Coloring Page"
+        },
+        {
+          "stableId": "c47ea723e5",
+          "canonicalPath": "/printables/animals/chibi-holiday-halloween-black-cat-peeking-out-of-pumpkin-c47ea723e5",
+          "publicTitle": "Chibi Holiday Halloween Black Cat Peeking Out Of Pumpkin Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Black Cat Peeking Out Of Pumpkin Coloring Page"
+        },
+        {
+          "stableId": "81d2ff4c89",
+          "canonicalPath": "/printables/animals/chibi-holiday-halloween-black-cat-sitting-on-fence-under-moon-81d2ff4c89",
+          "publicTitle": "Chibi Holiday Halloween Black Cat Sitting On Fence Under Moon Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Black Cat Sitting On Fence Under Moon Coloring Page"
+        },
+        {
+          "stableId": "27d5c14d60",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-candy-bucket-filled-with-treats-27d5c14d60",
+          "publicTitle": "Chibi Holiday Halloween Candy Bucket Filled With Treats Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Candy Bucket Filled With Treats Coloring Page"
+        },
+        {
+          "stableId": "7e70d5d5ae",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-candy-corn-pattern-background-7e70d5d5ae",
+          "publicTitle": "Chibi Holiday Halloween Candy Corn Pattern Background Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Candy Corn Pattern Background Coloring Page"
+        },
+        {
+          "stableId": "50f8dcfa9b",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-candy-stall-at-halloween-festival-50f8dcfa9b",
+          "publicTitle": "Chibi Holiday Halloween Candy Stall At Halloween Festival Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Candy Stall At Halloween Festival Coloring Page"
+        },
+        {
+          "stableId": "64ae58c6d8",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-candy-trail-leading-to-haunted-door-64ae58c6d8",
+          "publicTitle": "Chibi Holiday Halloween Candy Trail Leading To Haunted Door Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Candy Trail Leading To Haunted Door Coloring Page"
+        },
+        {
+          "stableId": "cea100bc43",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-cauldron-bubbling-over-firewood-cea100bc43",
+          "publicTitle": "Chibi Holiday Halloween Cauldron Bubbling Over Firewood Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Cauldron Bubbling Over Firewood Coloring Page"
+        },
+        {
+          "stableId": "a7e4efaae7",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-cauldron-bubbling-with-green-slime-a7e4efaae7",
+          "publicTitle": "Chibi Holiday Halloween Cauldron Bubbling With Green Slime Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Cauldron Bubbling With Green Slime Coloring Page"
+        },
+        {
+          "stableId": "2565671600",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-cauldron-surrounded-by-potion-bottles-2565671600",
+          "publicTitle": "Chibi Holiday Halloween Cauldron Surrounded By Potion Bottles Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Cauldron Surrounded By Potion Bottles Coloring Page"
+        },
+        {
+          "stableId": "9a8a418b04",
+          "canonicalPath": "/printables/bats/chibi-holiday-halloween-cauldron-with-green-smoke-and-bats-9a8a418b04",
+          "publicTitle": "Chibi Holiday Halloween Cauldron With Green Smoke And Bats Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Cauldron With Green Smoke And Bats Coloring Page"
+        },
+        {
+          "stableId": "7b53c373f3",
+          "canonicalPath": "/printables/animals/chibi-holiday-halloween-cobweb-in-corner-with-spider-7b53c373f3",
+          "publicTitle": "Chibi Holiday Halloween Cobweb In Corner With Spider Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Cobweb In Corner With Spider Coloring Page"
+        },
+        {
+          "stableId": "08e80ab431",
+          "canonicalPath": "/printables/buildings/chibi-holiday-halloween-creepy-castle-with-torch-lit-windows-08e80ab431",
+          "publicTitle": "Chibi Holiday Halloween Creepy Castle With Torch Lit Windows Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Creepy Castle With Torch Lit Windows Coloring Page"
+        },
+        {
+          "stableId": "975b8f919b",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-crow-sitting-on-fence-post-975b8f919b",
+          "publicTitle": "Chibi Holiday Halloween Crow Sitting On Fence Post Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Crow Sitting On Fence Post Coloring Page"
+        },
+        {
+          "stableId": "1cc339c68a",
+          "canonicalPath": "/printables/animals/chibi-holiday-halloween-cute-halloween-ghost-cat-bat-friends-1cc339c68a",
+          "publicTitle": "Chibi Holiday Halloween Cute Halloween Ghost Cat Bat Friends Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Cute Halloween Ghost Cat Bat Friends Coloring Page"
+        },
+        {
+          "stableId": "7d69f90252",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-cute-kawaii-halloween-characters-7d69f90252",
+          "publicTitle": "Chibi Holiday Halloween Cute Kawaii Halloween Characters Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Cute Kawaii Halloween Characters Coloring Page"
+        },
+        {
+          "stableId": "16b1ef94ce",
+          "canonicalPath": "/printables/bats/chibi-holiday-halloween-dracula-flying-as-bat-over-castle-16b1ef94ce",
+          "publicTitle": "Chibi Holiday Halloween Dracula Flying As Bat Over Castle Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Dracula Flying As Bat Over Castle Coloring Page"
+        },
+        {
+          "stableId": "145ac201f0",
+          "canonicalPath": "/printables/bats/chibi-holiday-halloween-dracula-in-coffin-with-bats-145ac201f0",
+          "publicTitle": "Chibi Holiday Halloween Dracula In Coffin With Bats Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Dracula In Coffin With Bats Coloring Page"
+        },
+        {
+          "stableId": "2dd26b010c",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-foggy-swamp-with-creepy-trees-2dd26b010c",
+          "publicTitle": "Chibi Holiday Halloween Foggy Swamp With Creepy Trees Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Foggy Swamp With Creepy Trees Coloring Page"
+        },
+        {
+          "stableId": "7af91016f5",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-frankenstein-and-bride-standing-together-7af91016f5",
+          "publicTitle": "Chibi Holiday Halloween Frankenstein And Bride Standing Together Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Frankenstein And Bride Standing Together Coloring Page"
+        },
+        {
+          "stableId": "a39841457f",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-frankenstein-monster-smiling-a39841457f",
+          "publicTitle": "Chibi Holiday Halloween Frankenstein Monster Smiling Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Frankenstein Monster Smiling Coloring Page"
+        },
+        {
+          "stableId": "f4a78ca0e4",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-ghost-family-f4a78ca0e4",
+          "publicTitle": "Chibi Holiday Halloween Ghost Family Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Ghost Family Coloring Page"
+        },
+        {
+          "stableId": "fc38fdeb9d",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-ghost-family-with-smiling-faces-fc38fdeb9d",
+          "publicTitle": "Chibi Holiday Halloween Ghost Family With Smiling Faces Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Ghost Family With Smiling Faces Coloring Page"
+        },
+        {
+          "stableId": "1dcafd9556",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-ghost-floating-above-graveyard-1dcafd9556",
+          "publicTitle": "Chibi Holiday Halloween Ghost Floating Above Graveyard Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Ghost Floating Above Graveyard Coloring Page"
+        },
+        {
+          "stableId": "2ecd4724a1",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-ghost-floating-in-haunted-hallway-2ecd4724a1",
+          "publicTitle": "Chibi Holiday Halloween Ghost Floating In Haunted Hallway Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Ghost Floating In Haunted Hallway Coloring Page"
+        },
+        {
+          "stableId": "c136970593",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-ghost-peeking-behind-tombstone-c136970593",
+          "publicTitle": "Chibi Holiday Halloween Ghost Peeking Behind Tombstone Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Ghost Peeking Behind Tombstone Coloring Page"
+        },
+        {
+          "stableId": "55ab382228",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-ghost-peeking-from-pumpkin-55ab382228",
+          "publicTitle": "Chibi Holiday Halloween Ghost Peeking From Pumpkin Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Ghost Peeking From Pumpkin Coloring Page"
+        },
+        {
+          "stableId": "f62927f988",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-ghost-riding-on-broom-with-witch-f62927f988",
+          "publicTitle": "Chibi Holiday Halloween Ghost Riding On Broom With Witch Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Ghost Riding On Broom With Witch Coloring Page"
+        },
+        {
+          "stableId": "e62e0a874f",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-ghostly-train-passing-through-tunnel-e62e0a874f",
+          "publicTitle": "Chibi Holiday Halloween Ghostly Train Passing Through Tunnel Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Ghostly Train Passing Through Tunnel Coloring Page"
+        },
+        {
+          "stableId": "9aa47c8b6a",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-ghosts-holding-hands-in-circle-9aa47c8b6a",
+          "publicTitle": "Chibi Holiday Halloween Ghosts Holding Hands In Circle Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Ghosts Holding Hands In Circle Coloring Page"
+        },
+        {
+          "stableId": "990dc9d87f",
+          "canonicalPath": "/printables/animals/chibi-holiday-halloween-giant-spider-crawling-on-wall-990dc9d87f",
+          "publicTitle": "Chibi Holiday Halloween Giant Spider Crawling On Wall Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Giant Spider Crawling On Wall Coloring Page"
+        },
+        {
+          "stableId": "b293cf953e",
+          "canonicalPath": "/printables/bats/chibi-holiday-halloween-graveyard-with-bats-and-foggy-moonlight-b293cf953e",
+          "publicTitle": "Chibi Holiday Halloween Graveyard With Bats And Foggy Moonlight Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Graveyard With Bats And Foggy Moonlight Coloring Page"
+        },
+        {
+          "stableId": "c64f2d6601",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-graveyard-with-creepy-crows-c64f2d6601",
+          "publicTitle": "Chibi Holiday Halloween Graveyard With Creepy Crows Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Graveyard With Creepy Crows Coloring Page"
+        },
+        {
+          "stableId": "2f0f3d2c2f",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-graveyard-with-creepy-crows-on-crosses-2f0f3d2c2f",
+          "publicTitle": "Chibi Holiday Halloween Graveyard With Creepy Crows On Crosses Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Graveyard With Creepy Crows On Crosses Coloring Page"
+        },
+        {
+          "stableId": "a2a741e801",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-carnival-with-games-and-booths-a2a741e801",
+          "publicTitle": "Chibi Holiday Halloween Halloween Carnival With Games And Booths Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Carnival With Games And Booths Coloring Page"
+        },
+        {
+          "stableId": "21641bdc41",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-garland-and-decorated-door-21641bdc41",
+          "publicTitle": "Chibi Holiday Halloween Halloween Garland And Decorated Door Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Garland And Decorated Door Coloring Page"
+        },
+        {
+          "stableId": "31885be148",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-market-stall-with-pumpkins-31885be148",
+          "publicTitle": "Chibi Holiday Halloween Halloween Market Stall With Pumpkins Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Market Stall With Pumpkins Coloring Page"
+        },
+        {
+          "stableId": "1a71fa21e1",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-maze-with-cornfield-paths-1a71fa21e1",
+          "publicTitle": "Chibi Holiday Halloween Halloween Maze With Cornfield Paths Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Maze With Cornfield Paths Coloring Page"
+        },
+        {
+          "stableId": "10288dab01",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-parade-with-children-in-costumes-10288dab01",
+          "publicTitle": "Chibi Holiday Halloween Halloween Parade With Children In Costumes Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Parade With Children In Costumes Coloring Page"
+        },
+        {
+          "stableId": "3c16bfa9fb",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-party-with-balloons-and-streamers-3c16bfa9fb",
+          "publicTitle": "Chibi Holiday Halloween Halloween Party With Balloons And Streamers Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Party With Balloons And Streamers Coloring Page"
+        },
+        {
+          "stableId": "fa503c2b9a",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-happy-pumpkin-patch-scene-fa503c2b9a",
+          "publicTitle": "Chibi Holiday Halloween Happy Pumpkin Patch Scene Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Happy Pumpkin Patch Scene Coloring Page"
+        },
+        {
+          "stableId": "f63a303b4e",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-harvest-scene-with-hay-bales-and-crows-f63a303b4e",
+          "publicTitle": "Chibi Holiday Halloween Harvest Scene With Hay Bales And Crows Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Harvest Scene With Hay Bales And Crows Coloring Page"
+        },
+        {
+          "stableId": "c0eae7d121",
+          "canonicalPath": "/printables/buildings/chibi-holiday-halloween-haunted-house-c0eae7d121",
+          "publicTitle": "Chibi Holiday Halloween Haunted House Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Haunted House Coloring Page"
+        },
+        {
+          "stableId": "c7aba2cae1",
+          "canonicalPath": "/printables/buildings/chibi-holiday-halloween-haunted-house-on-hill-c7aba2cae1",
+          "publicTitle": "Chibi Holiday Halloween Haunted House On Hill Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Haunted House On Hill Coloring Page"
+        },
+        {
+          "stableId": "6de4b2a74b",
+          "canonicalPath": "/printables/buildings/chibi-holiday-halloween-haunted-house-on-hill-under-full-moon-6de4b2a74b",
+          "publicTitle": "Chibi Holiday Halloween Haunted House On Hill Under Full Moon Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Haunted House On Hill Under Full Moon Coloring Page"
+        },
+        {
+          "stableId": "362fdd250c",
+          "canonicalPath": "/printables/buildings/chibi-holiday-halloween-haunted-house-on-stilts-in-swamp-362fdd250c",
+          "publicTitle": "Chibi Holiday Halloween Haunted House On Stilts In Swamp Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Haunted House On Stilts In Swamp Coloring Page"
+        },
+        {
+          "stableId": "1cb79db677",
+          "canonicalPath": "/printables/bats/chibi-holiday-halloween-haunted-house-with-bats-flying-around-1cb79db677",
+          "publicTitle": "Chibi Holiday Halloween Haunted House With Bats Flying Around Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Haunted House With Bats Flying Around Coloring Page"
+        },
+        {
+          "stableId": "c23ca248b8",
+          "canonicalPath": "/printables/buildings/chibi-holiday-halloween-haunted-house-with-broken-fence-c23ca248b8",
+          "publicTitle": "Chibi Holiday Halloween Haunted House With Broken Fence Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Haunted House With Broken Fence Coloring Page"
+        },
+        {
+          "stableId": "a27ab1a344",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-haunted-mansion-with-creaky-gate-a27ab1a344",
+          "publicTitle": "Chibi Holiday Halloween Haunted Mansion With Creaky Gate Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Haunted Mansion With Creaky Gate Coloring Page"
+        },
+        {
+          "stableId": "e05357e953",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-haunted-mansion-with-lantern-lit-path-e05357e953",
+          "publicTitle": "Chibi Holiday Halloween Haunted Mansion With Lantern Lit Path Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Haunted Mansion With Lantern Lit Path Coloring Page"
+        },
+        {
+          "stableId": "0e546b82e0",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-jack-o-lantern-faces-variety-0e546b82e0",
+          "publicTitle": "Chibi Holiday Halloween Jack O Lantern Faces Variety Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Jack O Lantern Faces Variety Coloring Page"
+        },
+        {
+          "stableId": "915e33dd1c",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-jack-o-lantern-glowing-in-window-915e33dd1c",
+          "publicTitle": "Chibi Holiday Halloween Jack O Lantern Glowing In Window Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Jack O Lantern Glowing In Window Coloring Page"
+        },
+        {
+          "stableId": "1b72f4cc2e",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-jack-o-lantern-lined-front-porch-1b72f4cc2e",
+          "publicTitle": "Chibi Holiday Halloween Jack O Lantern Lined Front Porch Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Jack O Lantern Lined Front Porch Coloring Page"
+        },
+        {
+          "stableId": "a26d735941",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-jack-o-lantern-stack-of-three-pumpkins-a26d735941",
+          "publicTitle": "Chibi Holiday Halloween Jack O Lantern Stack Of Three Pumpkins Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Jack O Lantern Stack Of Three Pumpkins Coloring Page"
+        },
+        {
+          "stableId": "3d6746f90b",
+          "canonicalPath": "/printables/animals/chibi-holiday-halloween-mummy-running-away-from-black-cat-3d6746f90b",
+          "publicTitle": "Chibi Holiday Halloween Mummy Running Away From Black Cat Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Mummy Running Away From Black Cat Coloring Page"
+        },
+        {
+          "stableId": "3d7b5dcceb",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-mummy-walking-with-bandages-loose-3d7b5dcceb",
+          "publicTitle": "Chibi Holiday Halloween Mummy Walking With Bandages Loose Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Mummy Walking With Bandages Loose Coloring Page"
+        },
+        {
+          "stableId": "67a78d4043",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-pirate-treasure-67a78d4043",
+          "publicTitle": "Chibi Holiday Halloween Pirate Treasure Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Pirate Treasure Coloring Page"
+        },
+        {
+          "stableId": "eb38dfff5d",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-pumpkin-carving-party-eb38dfff5d",
+          "publicTitle": "Chibi Holiday Halloween Pumpkin Carving Party Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Pumpkin Carving Party Coloring Page"
+        },
+        {
+          "stableId": "d7adf41e8e",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-pumpkin-patch-with-cornstalks-and-scarecrow-d7adf41e8e",
+          "publicTitle": "Chibi Holiday Halloween Pumpkin Patch With Cornstalks And Scarecrow Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Pumpkin Patch With Cornstalks And Scarecrow Coloring Page"
+        },
+        {
+          "stableId": "91ce03c1b2",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-pumpkin-patch-with-crows-flying-over-91ce03c1b2",
+          "publicTitle": "Chibi Holiday Halloween Pumpkin Patch With Crows Flying Over Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Pumpkin Patch With Crows Flying Over Coloring Page"
+        },
+        {
+          "stableId": "01c2f0ce30",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-pumpkin-patch-with-family-picking-pumpkins-01c2f0ce30",
+          "publicTitle": "Chibi Holiday Halloween Pumpkin Patch With Family Picking Pumpkins Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Pumpkin Patch With Family Picking Pumpkins Coloring Page"
+        },
+        {
+          "stableId": "7d3c695c2b",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-pumpkin-pie-and-spice-decor-scene-7d3c695c2b",
+          "publicTitle": "Chibi Holiday Halloween Pumpkin Pie And Spice Decor Scene Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Pumpkin Pie And Spice Decor Scene Coloring Page"
+        },
+        {
+          "stableId": "e97953d8aa",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-scarecrow-guarding-pumpkin-field-e97953d8aa",
+          "publicTitle": "Chibi Holiday Halloween Scarecrow Guarding Pumpkin Field Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Scarecrow Guarding Pumpkin Field Coloring Page"
+        },
+        {
+          "stableId": "beeabe84e8",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-skeleton-band-playing-in-graveyard-beeabe84e8",
+          "publicTitle": "Chibi Holiday Halloween Skeleton Band Playing In Graveyard Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Skeleton Band Playing In Graveyard Coloring Page"
+        },
+        {
+          "stableId": "3ddcbf334e",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-skeleton-dancing-with-top-hat-3ddcbf334e",
+          "publicTitle": "Chibi Holiday Halloween Skeleton Dancing With Top Hat Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Skeleton Dancing With Top Hat Coloring Page"
+        },
+        {
+          "stableId": "d08afbfad3",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-skeleton-riding-bicycle-through-town-d08afbfad3",
+          "publicTitle": "Chibi Holiday Halloween Skeleton Riding Bicycle Through Town Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Skeleton Riding Bicycle Through Town Coloring Page"
+        },
+        {
+          "stableId": "861748f12e",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-skeleton-sitting-on-bench-in-park-861748f12e",
+          "publicTitle": "Chibi Holiday Halloween Skeleton Sitting On Bench In Park Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Skeleton Sitting On Bench In Park Coloring Page"
+        },
+        {
+          "stableId": "5063003da3",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-spooky-forest-path-with-glowing-eyes-5063003da3",
+          "publicTitle": "Chibi Holiday Halloween Spooky Forest Path With Glowing Eyes Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Spooky Forest Path With Glowing Eyes Coloring Page"
+        },
+        {
+          "stableId": "5686477b0a",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-spooky-graveyard-with-tombstones-5686477b0a",
+          "publicTitle": "Chibi Holiday Halloween Spooky Graveyard With Tombstones Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Spooky Graveyard With Tombstones Coloring Page"
+        },
+        {
+          "stableId": "0fce902c33",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-tombstone-with-rip-inscription-0fce902c33",
+          "publicTitle": "Chibi Holiday Halloween Tombstone With Rip Inscription Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Tombstone With Rip Inscription Coloring Page"
+        },
+        {
+          "stableId": "dbdec0dd78",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-tombstone-with-wilted-flowers-dbdec0dd78",
+          "publicTitle": "Chibi Holiday Halloween Tombstone With Wilted Flowers Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Tombstone With Wilted Flowers Coloring Page"
+        },
+        {
+          "stableId": "abe00661e0",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-trick-or-treat-children-with-pumpkin-bags-abe00661e0",
+          "publicTitle": "Chibi Holiday Halloween Trick Or Treat Children With Pumpkin Bags Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Trick Or Treat Children With Pumpkin Bags Coloring Page"
+        },
+        {
+          "stableId": "79fa5d8c2d",
+          "canonicalPath": "/printables/animals/chibi-holiday-halloween-trick-or-treat-dog-in-cute-costume-79fa5d8c2d",
+          "publicTitle": "Chibi Holiday Halloween Trick Or Treat Dog In Cute Costume Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Trick Or Treat Dog In Cute Costume Coloring Page"
+        },
+        {
+          "stableId": "764a39620c",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-trick-or-treat-doorstep-with-carved-pumpkins-764a39620c",
+          "publicTitle": "Chibi Holiday Halloween Trick Or Treat Doorstep With Carved Pumpkins Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Trick Or Treat Doorstep With Carved Pumpkins Coloring Page"
+        },
+        {
+          "stableId": "aad2950ba7",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-trick-or-treat-front-porch-decorated-aad2950ba7",
+          "publicTitle": "Chibi Holiday Halloween Trick Or Treat Front Porch Decorated Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Trick Or Treat Front Porch Decorated Coloring Page"
+        },
+        {
+          "stableId": "604d716265",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-trick-or-treat-walkway-lined-with-lanterns-604d716265",
+          "publicTitle": "Chibi Holiday Halloween Trick Or Treat Walkway Lined With Lanterns Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Trick Or Treat Walkway Lined With Lanterns Coloring Page"
+        },
+        {
+          "stableId": "62c9c0a50f",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-vampire-holding-goblet-under-crescent-moon-62c9c0a50f",
+          "publicTitle": "Chibi Holiday Halloween Vampire Holding Goblet Under Crescent Moon Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Vampire Holding Goblet Under Crescent Moon Coloring Page"
+        },
+        {
+          "stableId": "450302864b",
+          "canonicalPath": "/printables/bats/chibi-holiday-halloween-vampire-standing-with-bat-cloak-450302864b",
+          "publicTitle": "Chibi Holiday Halloween Vampire Standing With Bat Cloak Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Vampire Standing With Bat Cloak Coloring Page"
+        },
+        {
+          "stableId": "560dde82c2",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-vampire-with-spooky-shadow-on-wall-560dde82c2",
+          "publicTitle": "Chibi Holiday Halloween Vampire With Spooky Shadow On Wall Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Vampire With Spooky Shadow On Wall Coloring Page"
+        },
+        {
+          "stableId": "fd3be2b3e7",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-vintage-halloween-postcard-style-scene-fd3be2b3e7",
+          "publicTitle": "Chibi Holiday Halloween Vintage Halloween Postcard Style Scene Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Vintage Halloween Postcard Style Scene Coloring Page"
+        },
+        {
+          "stableId": "a6643004a9",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-werewolf-howling-under-full-moon-a6643004a9",
+          "publicTitle": "Chibi Holiday Halloween Werewolf Howling Under Full Moon Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Werewolf Howling Under Full Moon Coloring Page"
+        },
+        {
+          "stableId": "eac93f03f5",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-werewolf-in-forest-with-fireflies-eac93f03f5",
+          "publicTitle": "Chibi Holiday Halloween Werewolf In Forest With Fireflies Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Werewolf In Forest With Fireflies Coloring Page"
+        },
+        {
+          "stableId": "7466595531",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-werewolf-jumping-over-haunted-fence-7466595531",
+          "publicTitle": "Chibi Holiday Halloween Werewolf Jumping Over Haunted Fence Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Werewolf Jumping Over Haunted Fence Coloring Page"
+        },
+        {
+          "stableId": "a8e1c3adf2",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-werewolf-standing-atop-rock-under-moon-a8e1c3adf2",
+          "publicTitle": "Chibi Holiday Halloween Werewolf Standing Atop Rock Under Moon Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Werewolf Standing Atop Rock Under Moon Coloring Page"
+        },
+        {
+          "stableId": "7d050e8926",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-witch-cooking-potion-in-cauldron-7d050e8926",
+          "publicTitle": "Chibi Holiday Halloween Witch Cooking Potion In Cauldron Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Witch Cooking Potion In Cauldron Coloring Page"
+        },
+        {
+          "stableId": "c97fddfd8f",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-witch-cottage-in-forest-scene-c97fddfd8f",
+          "publicTitle": "Chibi Holiday Halloween Witch Cottage In Forest Scene Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Witch Cottage In Forest Scene Coloring Page"
+        },
+        {
+          "stableId": "c631f661fc",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-witch-flying-on-broomstick-across-moon-c631f661fc",
+          "publicTitle": "Chibi Holiday Halloween Witch Flying On Broomstick Across Moon Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Witch Flying On Broomstick Across Moon Coloring Page"
+        },
+        {
+          "stableId": "74c5898630",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-witch-hat-and-potion-bottles-74c5898630",
+          "publicTitle": "Chibi Holiday Halloween Witch Hat And Potion Bottles Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Witch Hat And Potion Bottles Coloring Page"
+        },
+        {
+          "stableId": "4c5f9d69ca",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-witch-reading-spellbook-near-cauldron-4c5f9d69ca",
+          "publicTitle": "Chibi Holiday Halloween Witch Reading Spellbook Near Cauldron Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Witch Reading Spellbook Near Cauldron Coloring Page"
+        },
+        {
+          "stableId": "09368c189e",
+          "canonicalPath": "/printables/animals/chibi-holiday-halloween-witch-with-black-cat-on-shoulder-09368c189e",
+          "publicTitle": "Chibi Holiday Halloween Witch With Black Cat On Shoulder Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Witch With Black Cat On Shoulder Coloring Page"
+        },
+        {
+          "stableId": "b59b806249",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-zombie-peeking-out-of-ground-b59b806249",
+          "publicTitle": "Chibi Holiday Halloween Zombie Peeking Out Of Ground Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Zombie Peeking Out Of Ground Coloring Page"
+        },
+        {
+          "stableId": "0d47fdf121",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-zombie-walking-with-pumpkin-bucket-0d47fdf121",
+          "publicTitle": "Chibi Holiday Halloween Zombie Walking With Pumpkin Bucket Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Zombie Walking With Pumpkin Bucket Coloring Page"
+        },
+        {
+          "stableId": "1862dece82",
+          "canonicalPath": "/printables/chibi/chibi-holiday-halloween-zombie-with-torn-trick-or-treat-bag-1862dece82",
+          "publicTitle": "Chibi Holiday Halloween Zombie With Torn Trick Or Treat Bag Coloring Page",
+          "displayTitle": "Chibi Holiday Halloween Zombie With Torn Trick Or Treat Bag Coloring Page"
+        },
+        {
+          "stableId": "fde31c074f",
+          "canonicalPath": "/printables/christmas/holiday-christmas-angel-holding-candle-in-snowy-night-fde31c074f",
+          "publicTitle": "Holiday Christmas Angel Holding Candle In Snowy Night Coloring Page",
+          "displayTitle": "Holiday Christmas Angel Holding Candle In Snowy Night Coloring Page"
+        },
+        {
+          "stableId": "666c70174b",
+          "canonicalPath": "/printables/christmas/holiday-christmas-candle-in-lantern-on-snowy-porch-666c70174b",
+          "publicTitle": "Holiday Christmas Christmas Candle In Lantern On Snowy Porch Coloring Page",
+          "displayTitle": "Holiday Christmas Candle In Lantern On Snowy Porch Coloring Page"
+        },
+        {
+          "stableId": "622c2a5211",
+          "canonicalPath": "/printables/christmas/holiday-christmas-nativity-three-kings-on-camels-622c2a5211",
+          "publicTitle": "Holiday Christmas Christmas Nativity Three Kings On Camels Coloring Page",
+          "displayTitle": "Holiday Christmas Nativity Three Kings On Camels Coloring Page"
+        },
+        {
+          "stableId": "be3c723822",
+          "canonicalPath": "/printables/christmas/holiday-christmas-ornaments-pattern-be3c723822",
+          "publicTitle": "Holiday Christmas Christmas Ornaments Pattern Coloring Page",
+          "displayTitle": "Holiday Christmas Ornaments Pattern Coloring Page"
+        },
+        {
+          "stableId": "28af25679e",
+          "canonicalPath": "/printables/christmas/holiday-christmas-stockings-filled-with-goodies-28af25679e",
+          "publicTitle": "Holiday Christmas Christmas Stockings Filled With Goodies Coloring Page",
+          "displayTitle": "Holiday Christmas Stockings Filled With Goodies Coloring Page"
+        },
+        {
+          "stableId": "ed4330e59f",
+          "canonicalPath": "/printables/christmas/holiday-christmas-stockings-fireplace-ed4330e59f",
+          "publicTitle": "Holiday Christmas Christmas Stockings Fireplace Coloring Page",
+          "displayTitle": "Holiday Christmas Stockings Fireplace Coloring Page"
+        },
+        {
+          "stableId": "74e88ea7de",
+          "canonicalPath": "/printables/christmas/holiday-christmas-stockings-hanging-on-fireplace-74e88ea7de",
+          "publicTitle": "Holiday Christmas Christmas Stockings Hanging On Fireplace Coloring Page",
+          "displayTitle": "Holiday Christmas Stockings Hanging On Fireplace Coloring Page"
+        },
+        {
+          "stableId": "e11c99e6fb",
+          "canonicalPath": "/printables/christmas/holiday-christmas-tree-lit-up-in-town-square-e11c99e6fb",
+          "publicTitle": "Holiday Christmas Christmas Tree Lit Up In Town Square Coloring Page",
+          "displayTitle": "Holiday Christmas Tree Lit Up In Town Square Coloring Page"
+        },
+        {
+          "stableId": "422c4414c2",
+          "canonicalPath": "/printables/christmas/holiday-christmas-tree-outdoor-with-snowfall-422c4414c2",
+          "publicTitle": "Holiday Christmas Christmas Tree Outdoor With Snowfall Coloring Page",
+          "displayTitle": "Holiday Christmas Tree Outdoor With Snowfall Coloring Page"
+        },
+        {
+          "stableId": "84ffd8322d",
+          "canonicalPath": "/printables/christmas/holiday-christmas-tree-with-presents-underneath-84ffd8322d",
+          "publicTitle": "Holiday Christmas Christmas Tree With Presents Underneath Coloring Page",
+          "displayTitle": "Holiday Christmas Tree With Presents Underneath Coloring Page"
+        },
+        {
+          "stableId": "63c2db51c5",
+          "canonicalPath": "/printables/christmas/holiday-christmas-tree-with-star-and-ornaments-63c2db51c5",
+          "publicTitle": "Holiday Christmas Christmas Tree With Star And Ornaments Coloring Page",
+          "displayTitle": "Holiday Christmas Tree With Star And Ornaments Coloring Page"
+        },
+        {
+          "stableId": "a06efe72af",
+          "canonicalPath": "/printables/christmas/holiday-christmas-village-market-with-stalls-a06efe72af",
+          "publicTitle": "Holiday Christmas Christmas Village Market With Stalls Coloring Page",
+          "displayTitle": "Holiday Christmas Village Market With Stalls Coloring Page"
+        },
+        {
+          "stableId": "b297f1c694",
+          "canonicalPath": "/printables/buildings/holiday-christmas-village-with-snowy-houses-b297f1c694",
+          "publicTitle": "Holiday Christmas Christmas Village With Snowy Houses Coloring Page",
+          "displayTitle": "Holiday Christmas Village With Snowy Houses Coloring Page"
+        },
+        {
+          "stableId": "70f6a435a1",
+          "canonicalPath": "/printables/christmas/holiday-christmas-wreath-decorated-with-bells-and-bow-70f6a435a1",
+          "publicTitle": "Holiday Christmas Christmas Wreath Decorated With Bells And Bow Coloring Page",
+          "displayTitle": "Holiday Christmas Wreath Decorated With Bells And Bow Coloring Page"
+        },
+        {
+          "stableId": "4c2d9ac697",
+          "canonicalPath": "/printables/christmas/holiday-christmas-wreath-on-front-door-4c2d9ac697",
+          "publicTitle": "Holiday Christmas Christmas Wreath On Front Door Coloring Page",
+          "displayTitle": "Holiday Christmas Wreath On Front Door Coloring Page"
+        },
+        {
+          "stableId": "c3fff62b55",
+          "canonicalPath": "/printables/christmas/holiday-christmas-gingerbread-city-village-with-candy-streets-c3fff62b55",
+          "publicTitle": "Holiday Christmas Gingerbread City Village With Candy Streets Coloring Page",
+          "displayTitle": "Holiday Christmas Gingerbread City Village With Candy Streets Coloring Page"
+        },
+        {
+          "stableId": "19a6c72dea",
+          "canonicalPath": "/printables/christmas/holiday-christmas-gingerbread-cookie-decorating-scene-19a6c72dea",
+          "publicTitle": "Holiday Christmas Gingerbread Cookie Decorating Scene Coloring Page",
+          "displayTitle": "Holiday Christmas Gingerbread Cookie Decorating Scene Coloring Page"
+        },
+        {
+          "stableId": "5e8fe7c930",
+          "canonicalPath": "/printables/christmas/holiday-christmas-gingerbread-cookie-family-in-snow-scene-5e8fe7c930",
+          "publicTitle": "Holiday Christmas Gingerbread Cookie Family In Snow Scene Coloring Page",
+          "displayTitle": "Holiday Christmas Gingerbread Cookie Family In Snow Scene Coloring Page"
+        },
+        {
+          "stableId": "4648bc3409",
+          "canonicalPath": "/printables/buildings/holiday-christmas-gingerbread-house-decorated-with-candy-4648bc3409",
+          "publicTitle": "Holiday Christmas Gingerbread House Decorated With Candy Coloring Page",
+          "displayTitle": "Holiday Christmas Gingerbread House Decorated With Candy Coloring Page"
+        },
+        {
+          "stableId": "2dd968539b",
+          "canonicalPath": "/printables/christmas/holiday-christmas-holiday-cookie-decorating-2dd968539b",
+          "publicTitle": "Holiday Christmas Holiday Cookie Decorating Coloring Page",
+          "displayTitle": "Holiday Christmas Holiday Cookie Decorating Coloring Page"
+        },
+        {
+          "stableId": "f5f66ac510",
+          "canonicalPath": "/printables/christmas/holiday-christmas-holiday-cookie-decorating-with-kids-f5f66ac510",
+          "publicTitle": "Holiday Christmas Holiday Cookie Decorating With Kids Coloring Page",
+          "displayTitle": "Holiday Christmas Holiday Cookie Decorating With Kids Coloring Page"
+        },
+        {
+          "stableId": "3265e65ae7",
+          "canonicalPath": "/printables/christmas/holiday-christmas-holiday-morning-gift-opening-by-fireplace-3265e65ae7",
+          "publicTitle": "Holiday Christmas Holiday Morning Gift Opening By Fireplace Coloring Page",
+          "displayTitle": "Holiday Christmas Holiday Morning Gift Opening By Fireplace Coloring Page"
+        },
+        {
+          "stableId": "f596e7dc44",
+          "canonicalPath": "/printables/christmas/holiday-christmas-holly-berries-and-leaves-pattern-f596e7dc44",
+          "publicTitle": "Holiday Christmas Holly Berries And Leaves Pattern Coloring Page",
+          "displayTitle": "Holiday Christmas Holly Berries And Leaves Pattern Coloring Page"
+        },
+        {
+          "stableId": "408348413a",
+          "canonicalPath": "/printables/buildings/holiday-christmas-kids-building-snow-fort-in-yard-408348413a",
+          "publicTitle": "Holiday Christmas Kids Building Snow Fort In Yard Coloring Page",
+          "displayTitle": "Holiday Christmas Kids Building Snow Fort In Yard Coloring Page"
+        },
+        {
+          "stableId": "4843cecb87",
+          "canonicalPath": "/printables/christmas/holiday-christmas-mrs-claus-baking-holiday-cookies-4843cecb87",
+          "publicTitle": "Holiday Christmas Mrs Claus Baking Holiday Cookies Coloring Page",
+          "displayTitle": "Holiday Christmas Mrs Claus Baking Holiday Cookies Coloring Page"
+        },
+        {
+          "stableId": "2cabc1a43f",
+          "canonicalPath": "/printables/christmas/holiday-christmas-mrs-claus-serving-hot-cocoa-to-santa-2cabc1a43f",
+          "publicTitle": "Holiday Christmas Mrs Claus Serving Hot Cocoa To Santa Coloring Page",
+          "displayTitle": "Holiday Christmas Mrs Claus Serving Hot Cocoa To Santa Coloring Page"
+        },
+        {
+          "stableId": "33d01d460f",
+          "canonicalPath": "/printables/animals/holiday-christmas-nativity-scene-with-manger-and-animals-33d01d460f",
+          "publicTitle": "Holiday Christmas Nativity Scene With Manger And Animals Coloring Page",
+          "displayTitle": "Holiday Christmas Nativity Scene With Manger And Animals Coloring Page"
+        },
+        {
+          "stableId": "5c2ccd9a9b",
+          "canonicalPath": "/printables/christmas/holiday-christmas-penguins-decorating-tree-in-snow-5c2ccd9a9b",
+          "publicTitle": "Holiday Christmas Penguins Decorating Tree In Snow Coloring Page",
+          "displayTitle": "Holiday Christmas Penguins Decorating Tree In Snow Coloring Page"
+        },
+        {
+          "stableId": "4adc12f31d",
+          "canonicalPath": "/printables/bears/holiday-christmas-polar-bears-wrapping-gifts-4adc12f31d",
+          "publicTitle": "Holiday Christmas Polar Bears Wrapping Gifts Coloring Page",
+          "displayTitle": "Holiday Christmas Polar Bears Wrapping Gifts Coloring Page"
+        },
+        {
+          "stableId": "b8f43869bd",
+          "canonicalPath": "/printables/christmas/holiday-christmas-reindeer-rudolph-with-red-nose-b8f43869bd",
+          "publicTitle": "Holiday Christmas Reindeer Rudolph With Red Nose Coloring Page",
+          "displayTitle": "Holiday Christmas Reindeer Rudolph With Red Nose Coloring Page"
+        },
+        {
+          "stableId": "d30dbfb71b",
+          "canonicalPath": "/printables/christmas/holiday-christmas-reindeer-team-pulling-sleigh-over-rooftops-d30dbfb71b",
+          "publicTitle": "Holiday Christmas Reindeer Team Pulling Sleigh Over Rooftops Coloring Page",
+          "displayTitle": "Holiday Christmas Reindeer Team Pulling Sleigh Over Rooftops Coloring Page"
+        },
+        {
+          "stableId": "2dd72cc61b",
+          "canonicalPath": "/printables/christmas/holiday-christmas-santa-claus-coming-down-chimney-2dd72cc61b",
+          "publicTitle": "Holiday Christmas Santa Claus Coming Down Chimney Coloring Page",
+          "displayTitle": "Holiday Christmas Santa Claus Coming Down Chimney Coloring Page"
+        },
+        {
+          "stableId": "597455887c",
+          "canonicalPath": "/printables/christmas/holiday-christmas-santa-claus-costume-597455887c",
+          "publicTitle": "Holiday Christmas Santa Claus Costume Coloring Page",
+          "displayTitle": "Holiday Christmas Santa Claus Costume Coloring Page"
+        },
+        {
+          "stableId": "50a3731b97",
+          "canonicalPath": "/printables/christmas/holiday-christmas-santa-claus-delivering-gifts-by-fireplace-50a3731b97",
+          "publicTitle": "Holiday Christmas Santa Claus Delivering Gifts By Fireplace Coloring Page",
+          "displayTitle": "Holiday Christmas Santa Claus Delivering Gifts By Fireplace Coloring Page"
+        },
+        {
+          "stableId": "848c33a1ce",
+          "canonicalPath": "/printables/christmas/holiday-christmas-santa-claus-delivering-gifts-in-sleigh-848c33a1ce",
+          "publicTitle": "Holiday Christmas Santa Claus Delivering Gifts In Sleigh Coloring Page",
+          "displayTitle": "Holiday Christmas Santa Claus Delivering Gifts In Sleigh Coloring Page"
+        },
+        {
+          "stableId": "7bc38b9ef7",
+          "canonicalPath": "/printables/christmas/holiday-christmas-santa-claus-packing-toys-in-big-sack-7bc38b9ef7",
+          "publicTitle": "Holiday Christmas Santa Claus Packing Toys In Big Sack Coloring Page",
+          "displayTitle": "Holiday Christmas Santa Claus Packing Toys In Big Sack Coloring Page"
+        },
+        {
+          "stableId": "c2c0cf036d",
+          "canonicalPath": "/printables/christmas/holiday-christmas-santa-claus-reading-letters-from-children-c2c0cf036d",
+          "publicTitle": "Holiday Christmas Santa Claus Reading Letters From Children Coloring Page",
+          "displayTitle": "Holiday Christmas Santa Claus Reading Letters From Children Coloring Page"
+        },
+        {
+          "stableId": "ebac4be947",
+          "canonicalPath": "/printables/christmas/holiday-christmas-santa-claus-riding-sleigh-over-moonlit-town-ebac4be947",
+          "publicTitle": "Holiday Christmas Santa Claus Riding Sleigh Over Moonlit Town Coloring Page",
+          "displayTitle": "Holiday Christmas Santa Claus Riding Sleigh Over Moonlit Town Coloring Page"
+        },
+        {
+          "stableId": "17b1894498",
+          "canonicalPath": "/printables/christmas/holiday-christmas-santa-workshop-with-elves-packing-toys-17b1894498",
+          "publicTitle": "Holiday Christmas Santa Workshop With Elves Packing Toys Coloring Page",
+          "displayTitle": "Holiday Christmas Santa Workshop With Elves Packing Toys Coloring Page"
+        },
+        {
+          "stableId": "4a97e6a224",
+          "canonicalPath": "/printables/christmas/holiday-christmas-snowman-decorated-with-string-lights-4a97e6a224",
+          "publicTitle": "Holiday Christmas Snowman Decorated With String Lights Coloring Page",
+          "displayTitle": "Holiday Christmas Snowman Decorated With String Lights Coloring Page"
+        },
+        {
+          "stableId": "00540e278f",
+          "canonicalPath": "/printables/christmas/holiday-christmas-snowman-hugging-small-penguin-friend-00540e278f",
+          "publicTitle": "Holiday Christmas Snowman Hugging Small Penguin Friend Coloring Page",
+          "displayTitle": "Holiday Christmas Snowman Hugging Small Penguin Friend Coloring Page"
+        },
+        {
+          "stableId": "e25f11f9cf",
+          "canonicalPath": "/printables/christmas/holiday-christmas-snowman-ice-skating-on-frozen-pond-e25f11f9cf",
+          "publicTitle": "Holiday Christmas Snowman Ice Skating On Frozen Pond Coloring Page",
+          "displayTitle": "Holiday Christmas Snowman Ice Skating On Frozen Pond Coloring Page"
+        },
+        {
+          "stableId": "d73bbba3f2",
+          "canonicalPath": "/printables/christmas/holiday-christmas-snowman-with-carrot-nose-and-top-hat-d73bbba3f2",
+          "publicTitle": "Holiday Christmas Snowman With Carrot Nose And Top Hat Coloring Page",
+          "displayTitle": "Holiday Christmas Snowman With Carrot Nose And Top Hat Coloring Page"
+        },
+        {
+          "stableId": "7458ad600d",
+          "canonicalPath": "/printables/christmas/holiday-christmas-winter-cabin-in-woods-with-smoke-in-chimney-7458ad600d",
+          "publicTitle": "Holiday Christmas Winter Cabin In Woods With Smoke In Chimney Coloring Page",
+          "displayTitle": "Holiday Christmas Winter Cabin In Woods With Smoke In Chimney Coloring Page"
+        },
+        {
+          "stableId": "2314a178ce",
+          "canonicalPath": "/printables/christmas/holiday-christmas-winter-ice-skating-rink-in-village-square-2314a178ce",
+          "publicTitle": "Holiday Christmas Winter Ice Skating Rink In Village Square Coloring Page",
+          "displayTitle": "Holiday Christmas Winter Ice Skating Rink In Village Square Coloring Page"
+        },
+        {
+          "stableId": "661f3b44b5",
+          "canonicalPath": "/printables/christmas/holiday-christmas-winter-kids-sledding-down-hill-in-park-661f3b44b5",
+          "publicTitle": "Holiday Christmas Winter Kids Sledding Down Hill In Park Coloring Page",
+          "displayTitle": "Holiday Christmas Winter Kids Sledding Down Hill In Park Coloring Page"
+        },
+        {
+          "stableId": "325a202b5a",
+          "canonicalPath": "/printables/christmas/holiday-christmas-winter-log-cabin-with-glowing-windows-325a202b5a",
+          "publicTitle": "Holiday Christmas Winter Log Cabin With Glowing Windows Coloring Page",
+          "displayTitle": "Holiday Christmas Winter Log Cabin With Glowing Windows Coloring Page"
+        },
+        {
+          "stableId": "cbe38b131a",
+          "canonicalPath": "/printables/christmas/holiday-christmas-winter-night-sky-with-northern-lights-cbe38b131a",
+          "publicTitle": "Holiday Christmas Winter Night Sky With Northern Lights Coloring Page",
+          "displayTitle": "Holiday Christmas Winter Night Sky With Northern Lights Coloring Page"
+        },
+        {
+          "stableId": "b88ffd2d89",
+          "canonicalPath": "/printables/bats/holiday-halloween-bat-colony-flying-in-night-sky-b88ffd2d89",
+          "publicTitle": "Holiday Halloween Bat Colony Flying In Night Sky Coloring Page",
+          "displayTitle": "Holiday Halloween Bat Colony Flying In Night Sky Coloring Page"
+        },
+        {
+          "stableId": "108e733c60",
+          "canonicalPath": "/printables/animals/holiday-halloween-black-cat-sitting-on-fence-under-moon-108e733c60",
+          "publicTitle": "Holiday Halloween Black Cat Sitting On Fence Under Moon Coloring Page",
+          "displayTitle": "Holiday Halloween Black Cat Sitting On Fence Under Moon Coloring Page"
+        },
+        {
+          "stableId": "1c60d58016",
+          "canonicalPath": "/printables/halloween/holiday-halloween-candy-bucket-filled-with-treats-1c60d58016",
+          "publicTitle": "Holiday Halloween Candy Bucket Filled With Treats Coloring Page",
+          "displayTitle": "Holiday Halloween Candy Bucket Filled With Treats Coloring Page"
+        },
+        {
+          "stableId": "a82a9ad584",
+          "canonicalPath": "/printables/halloween/holiday-halloween-candy-corn-a82a9ad584",
+          "publicTitle": "Holiday Halloween Candy Corn Coloring Page",
+          "displayTitle": "Holiday Halloween Candy Corn Coloring Page"
+        },
+        {
+          "stableId": "3d62d9779b",
+          "canonicalPath": "/printables/halloween/holiday-halloween-candy-corn-pattern-background-3d62d9779b",
+          "publicTitle": "Holiday Halloween Candy Corn Pattern Background Coloring Page",
+          "displayTitle": "Holiday Halloween Candy Corn Pattern Background Coloring Page"
+        },
+        {
+          "stableId": "efeaea9775",
+          "canonicalPath": "/printables/animals/holiday-halloween-cobweb-in-corner-with-spider-efeaea9775",
+          "publicTitle": "Holiday Halloween Cobweb In Corner With Spider Coloring Page",
+          "displayTitle": "Holiday Halloween Cobweb In Corner With Spider Coloring Page"
+        },
+        {
+          "stableId": "97d298d5be",
+          "canonicalPath": "/printables/cute/holiday-halloween-cute-kawaii-halloween-characters-97d298d5be",
+          "publicTitle": "Holiday Halloween Cute Kawaii Halloween Characters Coloring Page",
+          "displayTitle": "Holiday Halloween Cute Kawaii Halloween Characters Coloring Page"
+        },
+        {
+          "stableId": "4397409e48",
+          "canonicalPath": "/printables/bats/holiday-halloween-dracula-in-coffin-with-bats-4397409e48",
+          "publicTitle": "Holiday Halloween Dracula In Coffin With Bats Coloring Page",
+          "displayTitle": "Holiday Halloween Dracula In Coffin With Bats Coloring Page"
+        },
+        {
+          "stableId": "fa9fda3da2",
+          "canonicalPath": "/printables/halloween/holiday-halloween-frankenstein-monster-smiling-fa9fda3da2",
+          "publicTitle": "Holiday Halloween Frankenstein Monster Smiling Coloring Page",
+          "displayTitle": "Holiday Halloween Frankenstein Monster Smiling Coloring Page"
+        },
+        {
+          "stableId": "182de898dd",
+          "canonicalPath": "/printables/halloween/holiday-halloween-ghost-family-with-smiling-faces-182de898dd",
+          "publicTitle": "Holiday Halloween Ghost Family With Smiling Faces Coloring Page",
+          "displayTitle": "Holiday Halloween Ghost Family With Smiling Faces Coloring Page"
+        },
+        {
+          "stableId": "eec2bc1168",
+          "canonicalPath": "/printables/halloween/holiday-halloween-ghost-floating-above-graveyard-eec2bc1168",
+          "publicTitle": "Holiday Halloween Ghost Floating Above Graveyard Coloring Page",
+          "displayTitle": "Holiday Halloween Ghost Floating Above Graveyard Coloring Page"
+        },
+        {
+          "stableId": "b8d98dab62",
+          "canonicalPath": "/printables/halloween/holiday-halloween-ghost-floating-in-haunted-hallway-b8d98dab62",
+          "publicTitle": "Holiday Halloween Ghost Floating In Haunted Hallway Coloring Page",
+          "displayTitle": "Holiday Halloween Ghost Floating In Haunted Hallway Coloring Page"
+        },
+        {
+          "stableId": "86bfe30900",
+          "canonicalPath": "/printables/halloween/holiday-halloween-ghost-graveyard-86bfe30900",
+          "publicTitle": "Holiday Halloween Ghost Graveyard Coloring Page",
+          "displayTitle": "Holiday Halloween Ghost Graveyard Coloring Page"
+        },
+        {
+          "stableId": "9f9f5f3bbd",
+          "canonicalPath": "/printables/animals/holiday-halloween-giant-spider-crawling-on-wall-9f9f5f3bbd",
+          "publicTitle": "Holiday Halloween Giant Spider Crawling On Wall Coloring Page",
+          "displayTitle": "Holiday Halloween Giant Spider Crawling On Wall Coloring Page"
+        },
+        {
+          "stableId": "eeafc51927",
+          "canonicalPath": "/printables/bats/holiday-halloween-graveyard-with-bats-and-foggy-moonlight-eeafc51927",
+          "publicTitle": "Holiday Halloween Graveyard With Bats And Foggy Moonlight Coloring Page",
+          "displayTitle": "Holiday Halloween Graveyard With Bats And Foggy Moonlight Coloring Page"
+        },
+        {
+          "stableId": "b1e54b5734",
+          "canonicalPath": "/printables/halloween/holiday-halloween-carnival-with-games-and-booths-b1e54b5734",
+          "publicTitle": "Holiday Halloween Halloween Carnival With Games And Booths Coloring Page",
+          "displayTitle": "Holiday Halloween Carnival With Games And Booths Coloring Page"
+        },
+        {
+          "stableId": "190fe7a9e9",
+          "canonicalPath": "/printables/halloween/holiday-halloween-maze-with-cornfield-paths-190fe7a9e9",
+          "publicTitle": "Holiday Halloween Halloween Maze With Cornfield Paths Coloring Page",
+          "displayTitle": "Holiday Halloween Maze With Cornfield Paths Coloring Page"
+        },
+        {
+          "stableId": "ab99e07ffc",
+          "canonicalPath": "/printables/halloween/holiday-halloween-happy-pumpkin-patch-scene-ab99e07ffc",
+          "publicTitle": "Holiday Halloween Happy Pumpkin Patch Scene Coloring Page",
+          "displayTitle": "Holiday Halloween Happy Pumpkin Patch Scene Coloring Page"
+        },
+        {
+          "stableId": "4846172bbc",
+          "canonicalPath": "/printables/buildings/holiday-halloween-haunted-house-on-hill-under-full-moon-4846172bbc",
+          "publicTitle": "Holiday Halloween Haunted House On Hill Under Full Moon Coloring Page",
+          "displayTitle": "Holiday Halloween Haunted House On Hill Under Full Moon Coloring Page"
+        },
+        {
+          "stableId": "05c36a42eb",
+          "canonicalPath": "/printables/halloween/holiday-halloween-haunted-mansion-with-creaky-gate-05c36a42eb",
+          "publicTitle": "Holiday Halloween Haunted Mansion With Creaky Gate Coloring Page",
+          "displayTitle": "Holiday Halloween Haunted Mansion With Creaky Gate Coloring Page"
+        },
+        {
+          "stableId": "d207ad5dad",
+          "canonicalPath": "/printables/halloween/holiday-halloween-haunted-mansion-with-lantern-lit-path-d207ad5dad",
+          "publicTitle": "Holiday Halloween Haunted Mansion With Lantern Lit Path Coloring Page",
+          "displayTitle": "Holiday Halloween Haunted Mansion With Lantern Lit Path Coloring Page"
+        },
+        {
+          "stableId": "f52227a508",
+          "canonicalPath": "/printables/halloween/holiday-halloween-jack-o-lantern-faces-variety-f52227a508",
+          "publicTitle": "Holiday Halloween Jack O Lantern Faces Variety Coloring Page",
+          "displayTitle": "Holiday Halloween Jack O Lantern Faces Variety Coloring Page"
+        },
+        {
+          "stableId": "dffc2763f4",
+          "canonicalPath": "/printables/halloween/holiday-halloween-jack-o-lantern-lined-front-porch-dffc2763f4",
+          "publicTitle": "Holiday Halloween Jack O Lantern Lined Front Porch Coloring Page",
+          "displayTitle": "Holiday Halloween Jack O Lantern Lined Front Porch Coloring Page"
+        },
+        {
+          "stableId": "180f3db01b",
+          "canonicalPath": "/printables/halloween/holiday-halloween-mummy-walking-with-bandages-loose-180f3db01b",
+          "publicTitle": "Holiday Halloween Mummy Walking With Bandages Loose Coloring Page",
+          "displayTitle": "Holiday Halloween Mummy Walking With Bandages Loose Coloring Page"
+        },
+        {
+          "stableId": "f25df122a7",
+          "canonicalPath": "/printables/halloween/holiday-halloween-owl-sitting-on-tree-branch-at-night-f25df122a7",
+          "publicTitle": "Holiday Halloween Owl Sitting On Tree Branch At Night Coloring Page",
+          "displayTitle": "Holiday Halloween Owl Sitting On Tree Branch At Night Coloring Page"
+        },
+        {
+          "stableId": "236c4af6d3",
+          "canonicalPath": "/printables/halloween/holiday-halloween-pumpkin-patch-with-family-picking-pumpkins-236c4af6d3",
+          "publicTitle": "Holiday Halloween Pumpkin Patch With Family Picking Pumpkins Coloring Page",
+          "displayTitle": "Holiday Halloween Pumpkin Patch With Family Picking Pumpkins Coloring Page"
+        },
+        {
+          "stableId": "6656d38f06",
+          "canonicalPath": "/printables/halloween/holiday-halloween-scarecrow-guarding-pumpkin-field-6656d38f06",
+          "publicTitle": "Holiday Halloween Scarecrow Guarding Pumpkin Field Coloring Page",
+          "displayTitle": "Holiday Halloween Scarecrow Guarding Pumpkin Field Coloring Page"
+        },
+        {
+          "stableId": "05830cafb9",
+          "canonicalPath": "/printables/halloween/holiday-halloween-skeleton-dancing-with-top-hat-05830cafb9",
+          "publicTitle": "Holiday Halloween Skeleton Dancing With Top Hat Coloring Page",
+          "displayTitle": "Holiday Halloween Skeleton Dancing With Top Hat Coloring Page"
+        },
+        {
+          "stableId": "16de6b4b56",
+          "canonicalPath": "/printables/forest/holiday-halloween-spooky-forest-path-with-glowing-eyes-16de6b4b56",
+          "publicTitle": "Holiday Halloween Spooky Forest Path With Glowing Eyes Coloring Page",
+          "displayTitle": "Holiday Halloween Spooky Forest Path With Glowing Eyes Coloring Page"
+        },
+        {
+          "stableId": "ba2dd0e228",
+          "canonicalPath": "/printables/halloween/holiday-halloween-spooky-graveyard-with-tombstones-ba2dd0e228",
+          "publicTitle": "Holiday Halloween Spooky Graveyard With Tombstones Coloring Page",
+          "displayTitle": "Holiday Halloween Spooky Graveyard With Tombstones Coloring Page"
+        },
+        {
+          "stableId": "1914e85657",
+          "canonicalPath": "/printables/animals/holiday-halloween-trick-or-treat-dog-in-cute-costume-1914e85657",
+          "publicTitle": "Holiday Halloween Trick Or Treat Dog In Cute Costume Coloring Page",
+          "displayTitle": "Holiday Halloween Trick Or Treat Dog In Cute Costume Coloring Page"
+        },
+        {
+          "stableId": "92e42d44a8",
+          "canonicalPath": "/printables/halloween/holiday-halloween-trick-or-treat-front-porch-decorated-92e42d44a8",
+          "publicTitle": "Holiday Halloween Trick Or Treat Front Porch Decorated Coloring Page",
+          "displayTitle": "Holiday Halloween Trick Or Treat Front Porch Decorated Coloring Page"
+        },
+        {
+          "stableId": "00504a7b54",
+          "canonicalPath": "/printables/halloween/holiday-halloween-trick-or-treat-kids-in-costumes-00504a7b54",
+          "publicTitle": "Holiday Halloween Trick Or Treat Kids In Costumes Coloring Page",
+          "displayTitle": "Holiday Halloween Trick Or Treat Kids In Costumes Coloring Page"
+        },
+        {
+          "stableId": "ac8d74f0a9",
+          "canonicalPath": "/printables/halloween/holiday-halloween-trick-or-treat-walkway-lined-with-lanterns-ac8d74f0a9",
+          "publicTitle": "Holiday Halloween Trick Or Treat Walkway Lined With Lanterns Coloring Page",
+          "displayTitle": "Holiday Halloween Trick Or Treat Walkway Lined With Lanterns Coloring Page"
+        },
+        {
+          "stableId": "0b0a06368b",
+          "canonicalPath": "/printables/halloween/holiday-halloween-trick-or-treat-with-lanterns-0b0a06368b",
+          "publicTitle": "Holiday Halloween Trick Or Treat With Lanterns Coloring Page",
+          "displayTitle": "Holiday Halloween Trick Or Treat With Lanterns Coloring Page"
+        },
+        {
+          "stableId": "e5d31a73ba",
+          "canonicalPath": "/printables/bats/holiday-halloween-vampire-standing-with-bat-cloak-e5d31a73ba",
+          "publicTitle": "Holiday Halloween Vampire Standing With Bat Cloak Coloring Page",
+          "displayTitle": "Holiday Halloween Vampire Standing With Bat Cloak Coloring Page"
+        },
+        {
+          "stableId": "31b871d117",
+          "canonicalPath": "/printables/halloween/holiday-halloween-werewolf-howling-under-full-moon-31b871d117",
+          "publicTitle": "Holiday Halloween Werewolf Howling Under Full Moon Coloring Page",
+          "displayTitle": "Holiday Halloween Werewolf Howling Under Full Moon Coloring Page"
+        },
+        {
+          "stableId": "65476d7753",
+          "canonicalPath": "/printables/halloween/holiday-halloween-witch-cooking-potion-in-cauldron-65476d7753",
+          "publicTitle": "Holiday Halloween Witch Cooking Potion In Cauldron Coloring Page",
+          "displayTitle": "Holiday Halloween Witch Cooking Potion In Cauldron Coloring Page"
+        },
+        {
+          "stableId": "e67904355e",
+          "canonicalPath": "/printables/halloween/holiday-halloween-witch-flying-e67904355e",
+          "publicTitle": "Holiday Halloween Witch Flying Coloring Page",
+          "displayTitle": "Holiday Halloween Witch Flying Coloring Page"
+        },
+        {
+          "stableId": "addb4ccfba",
+          "canonicalPath": "/printables/halloween/holiday-halloween-witch-flying-on-broomstick-across-moon-addb4ccfba",
+          "publicTitle": "Holiday Halloween Witch Flying On Broomstick Across Moon Coloring Page",
+          "displayTitle": "Holiday Halloween Witch Flying On Broomstick Across Moon Coloring Page"
+        },
+        {
+          "stableId": "9eb92bda25",
+          "canonicalPath": "/printables/halloween/holiday-halloween-witch-flying-over-haunted-village-9eb92bda25",
+          "publicTitle": "Holiday Halloween Witch Flying Over Haunted Village Coloring Page",
+          "displayTitle": "Holiday Halloween Witch Flying Over Haunted Village Coloring Page"
+        },
+        {
+          "stableId": "46e5c80f77",
+          "canonicalPath": "/printables/detailed-for-adults/st-patricks-day-celtic-knot-mandala-pattern-46e5c80f77",
+          "publicTitle": "St Patricks Day Celtic Knot Mandala Pattern Coloring Page",
+          "displayTitle": "St Patricks Day Celtic Knot Mandala Pattern Coloring Page"
+        },
+        {
+          "stableId": "fcdadb8e6a",
+          "canonicalPath": "/printables/dragons/st-patricks-day-dragon-guarding-pot-of-gold-fcdadb8e6a",
+          "publicTitle": "St Patricks Day Dragon Guarding Pot Of Gold Coloring Page",
+          "displayTitle": "St Patricks Day Dragon Guarding Pot Of Gold Coloring Page"
+        },
+        {
+          "stableId": "862176e869",
+          "canonicalPath": "/printables/buildings/st-patricks-day-irish-castle-on-hilltop-862176e869",
+          "publicTitle": "St Patricks Day Irish Castle On Hilltop Coloring Page",
+          "displayTitle": "St Patricks Day Irish Castle On Hilltop Coloring Page"
+        },
+        {
+          "stableId": "118da3d1f5",
+          "canonicalPath": "/printables/holidays/st-patricks-day-irish-harp-with-shamrocks-118da3d1f5",
+          "publicTitle": "St Patricks Day Irish Harp With Shamrocks Coloring Page",
+          "displayTitle": "St Patricks Day Irish Harp With Shamrocks Coloring Page"
+        },
+        {
+          "stableId": "fa10cf2184",
+          "canonicalPath": "/printables/holidays/st-patricks-day-kids-dressed-as-leprechauns-fa10cf2184",
+          "publicTitle": "St Patricks Day Kids Dressed As Leprechauns Coloring Page",
+          "displayTitle": "St Patricks Day Kids Dressed As Leprechauns Coloring Page"
+        },
+        {
+          "stableId": "24da6e22e3",
+          "canonicalPath": "/printables/holidays/st-patricks-day-leprechaun-dancing-jig-24da6e22e3",
+          "publicTitle": "St Patricks Day Leprechaun Dancing Jig Coloring Page",
+          "displayTitle": "St Patricks Day Leprechaun Dancing Jig Coloring Page"
+        },
+        {
+          "stableId": "f607fb59c7",
+          "canonicalPath": "/printables/holidays/st-patricks-day-leprechaun-holding-shamrock-f607fb59c7",
+          "publicTitle": "St Patricks Day Leprechaun Holding Shamrock Coloring Page",
+          "displayTitle": "St Patricks Day Leprechaun Holding Shamrock Coloring Page"
+        },
+        {
+          "stableId": "e0a5ebbce1",
+          "canonicalPath": "/printables/holidays/st-patricks-day-leprechaun-rainbow-and-gold-e0a5ebbce1",
+          "publicTitle": "St Patricks Day Leprechaun Rainbow And Gold Coloring Page",
+          "displayTitle": "St Patricks Day Leprechaun Rainbow And Gold Coloring Page"
+        },
+        {
+          "stableId": "3da829fc28",
+          "canonicalPath": "/printables/holidays/st-patricks-day-leprechaun-with-pot-of-gold-3da829fc28",
+          "publicTitle": "St Patricks Day Leprechaun With Pot Of Gold Coloring Page",
+          "displayTitle": "St Patricks Day Leprechaun With Pot Of Gold Coloring Page"
+        },
+        {
+          "stableId": "606f1c9a7b",
+          "canonicalPath": "/printables/holidays/st-patricks-day-lucky-clover-field-landscape-606f1c9a7b",
+          "publicTitle": "St Patricks Day Lucky Clover Field Landscape Coloring Page",
+          "displayTitle": "St Patricks Day Lucky Clover Field Landscape Coloring Page"
+        },
+        {
+          "stableId": "a4cb083c40",
+          "canonicalPath": "/printables/holidays/st-patricks-day-lucky-gnome-holding-pot-of-gold-a4cb083c40",
+          "publicTitle": "St Patricks Day Lucky Gnome Holding Pot Of Gold Coloring Page",
+          "displayTitle": "St Patricks Day Lucky Gnome Holding Pot Of Gold Coloring Page"
+        },
+        {
+          "stableId": "7c1f426b75",
+          "canonicalPath": "/printables/holidays/st-patricks-day-lucky-horseshoe-with-clovers-7c1f426b75",
+          "publicTitle": "St Patricks Day Lucky Horseshoe With Clovers Coloring Page",
+          "displayTitle": "St Patricks Day Lucky Horseshoe With Clovers Coloring Page"
+        },
+        {
+          "stableId": "0cac522f50",
+          "canonicalPath": "/printables/holidays/st-patricks-day-pot-of-gold-guarded-by-leprechaun-0cac522f50",
+          "publicTitle": "St Patricks Day Pot Of Gold Guarded By Leprechaun Coloring Page",
+          "displayTitle": "St Patricks Day Pot Of Gold Guarded By Leprechaun Coloring Page"
+        },
+        {
+          "stableId": "1dad44bef5",
+          "canonicalPath": "/printables/holidays/st-patricks-day-pot-of-gold-under-rainbow-1dad44bef5",
+          "publicTitle": "St Patricks Day Pot Of Gold Under Rainbow Coloring Page",
+          "displayTitle": "St Patricks Day Pot Of Gold Under Rainbow Coloring Page"
+        },
+        {
+          "stableId": "16a305e6b2",
+          "canonicalPath": "/printables/animals/st-patricks-day-puppy-wearing-leprechaun-hat-16a305e6b2",
+          "publicTitle": "St Patricks Day Puppy Wearing Leprechaun Hat Coloring Page",
+          "displayTitle": "St Patricks Day Puppy Wearing Leprechaun Hat Coloring Page"
+        },
+        {
+          "stableId": "b0dcaa0204",
+          "canonicalPath": "/printables/holidays/st-patricks-day-rainbow-arch-with-gold-coins-b0dcaa0204",
+          "publicTitle": "St Patricks Day Rainbow Arch With Gold Coins Coloring Page",
+          "displayTitle": "St Patricks Day Rainbow Arch With Gold Coins Coloring Page"
+        },
+        {
+          "stableId": "df165a35b6",
+          "canonicalPath": "/printables/holidays/st-patricks-day-rainbow-over-green-hills-df165a35b6",
+          "publicTitle": "St Patricks Day Rainbow Over Green Hills Coloring Page",
+          "displayTitle": "St Patricks Day Rainbow Over Green Hills Coloring Page"
+        },
+        {
+          "stableId": "ffa1652840",
+          "canonicalPath": "/printables/holidays/st-patricks-day-shamrock-clover-pattern-ffa1652840",
+          "publicTitle": "St Patricks Day Shamrock Clover Pattern Coloring Page",
+          "displayTitle": "St Patricks Day Shamrock Clover Pattern Coloring Page"
+        },
+        {
+          "stableId": "8993f17565",
+          "canonicalPath": "/printables/detailed-for-adults/st-patricks-day-shamrock-mandala-pattern-8993f17565",
+          "publicTitle": "St Patricks Day Shamrock Mandala Pattern Coloring Page",
+          "displayTitle": "St Patricks Day Shamrock Mandala Pattern Coloring Page"
+        },
+        {
+          "stableId": "1805eaf83d",
+          "canonicalPath": "/printables/fantasy/st-patricks-day-unicorn-with-shamrock-mane-1805eaf83d",
+          "publicTitle": "St Patricks Day Unicorn With Shamrock Mane Coloring Page",
+          "displayTitle": "St Patricks Day Unicorn With Shamrock Mane Coloring Page"
+        }
+      ],
+      "repeatedColoringPageCount": [],
+      "adjacentRepeatedWordCount": []
+    }
+  },
+  "titleQualityManifest": {
+    "summary": {
+      "printableCount": 6352,
+      "uniqueBaseTitleCount": 6283,
+      "duplicateGroupCount": 69,
+      "duplicateRecordCount": 138,
+      "largestDuplicateGroupSize": 2,
+      "duplicateGroupSizeDistribution": {
+        "2": 69
+      },
+      "duplicateGroupsWithOneHubInUnion": 0,
+      "duplicateGroupsWithSeveralHubsInUnion": 69,
+      "duplicateGroupsWithDifferentHubMembership": 0,
+      "duplicateGroupsAcrossPrimaryCategories": 0,
+      "duplicateGroupsWithDistinctRuntimeWebpPaths": 69,
+      "duplicateGroupsWithRepeatedRuntimeWebpPaths": 0,
+      "punctuationOnlyNearDuplicateGroupCount": 0,
+      "uniqueDisplayTitleCount": 6352,
+      "uniqueMetadataTitleCount": 6352,
+      "uniqueAltTextCount": 6352,
+      "mechanicallyCorrectedRecordCount": 374,
+      "editorialReviewRecordCount": 122,
+      "publicSafetyFindingCount": 0,
+      "entrySha256": "d023dffefa5981c84a578cfab4e4667aba11ac706d8b9d093f3a397597efcf1c"
+    },
+    "correctionFlagCounts": {
+      "corrected-duplicate-adjacent-word": 40,
+      "corrected-spacing-polar-bear": 1,
+      "corrected-spelling-anima-plushie": 1,
+      "corrected-spelling-bakini": 4,
+      "corrected-spelling-celetbrating": 1,
+      "corrected-spelling-midieval": 193,
+      "corrected-spelling-vehiacle": 134
+    },
+    "editorialFlagCounts": {
+      "ambiguous-numeric-suffix": 10,
+      "brand-or-model-name-review": 110,
+      "uncertain-spelling": 4
+    }
+  },
+  "introFrameCounts": {
+    "introsContainingAppearCount": 67,
+    "introsContainingDesignsShowCount": 14,
+    "introsContainingThisCollectionIncludesCount": 0,
+    "introsContainingPerfectForCount": 0,
+    "introsContainingGreatForCount": 0,
+    "numberLedIntroCount": 18
+  },
+  "formulaicContent": {
+    "summary": {
+      "hubCount": 160,
+      "exactDuplicateIntroGroupCount": 0,
+      "nearDuplicateIntroPairCount": 0,
+      "repeatedOpeningGroupCount": 0,
+      "vaguePhraseFindingCount": 81,
+      "unsupportedClaimCount": 0,
+      "internalLeakageCount": 0,
+      "repeatedHubNameCount": 0,
+      "inventoryMismatchCount": 2
+    },
+    "openingGroups": [],
+    "vaguePhraseFindings": [
+      {
+        "phrase": "appear",
+        "hubId": "hub_bears",
+        "route": "/coloring-pages/bears",
+        "intro": "Bear subjects appear as standing animals, forest scenes, family groups, and stylized characters."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_bees",
+        "route": "/coloring-pages/bees",
+        "intro": "Bees appear in flight, on flowers, near hives, and in decorative insect compositions."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_birds",
+        "route": "/coloring-pages/birds",
+        "intro": "Songbirds, water birds, birds of prey, and other feathered species appear alone or in natural settings."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_butterflies",
+        "route": "/coloring-pages/butterflies",
+        "intro": "Butterflies appear with varied wing patterns, flowers, garden settings, and close symmetrical views."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_cats",
+        "route": "/coloring-pages/cats",
+        "intro": "Cats and kittens appear in resting, playful, portrait, household, and decorative scenes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_christmas_dogs",
+        "route": "/coloring-pages/christmas-dogs",
+        "intro": "Dogs appear with Santa hats, gifts, decorated trees, winter clothing, and other Christmas details."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_cows",
+        "route": "/coloring-pages/cows",
+        "intro": "Cows appear in pasture views, farm scenes, portraits, and friendly stylized poses."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_deer",
+        "route": "/coloring-pages/deer",
+        "intro": "Deer appear as woodland animals, antlered portraits, family groups, and quiet forest scenes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_dinosaurs",
+        "route": "/coloring-pages/dinosaurs",
+        "intro": "Recognizable dinosaur genera appear in portraits, action poses, family groups, and prehistoric scenes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_dolphins",
+        "route": "/coloring-pages/dolphins",
+        "intro": "Dolphins leap, swim in groups, surface near waves, and appear in underwater scenes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_ducks",
+        "route": "/coloring-pages/ducks",
+        "intro": "Ducks and ducklings appear swimming, standing, nesting, and moving through pond settings."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_eagles",
+        "route": "/coloring-pages/eagles",
+        "intro": "Eagles appear in flight, perched with spread wings, in close portraits, and over landscapes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_elephants",
+        "route": "/coloring-pages/elephants",
+        "intro": "Elephants appear alone, in family groups, walking through landscapes, and in decorative portrait treatments."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_fairies",
+        "route": "/coloring-pages/fairies",
+        "intro": "Winged fairy characters appear in gardens, forests, floral scenes, and other magical settings."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_fantasy_dragons",
+        "route": "/coloring-pages/fantasy-dragons",
+        "intro": "These dragons appear in explicitly fantastic settings, magical scenes, and imaginative creature designs."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_foxes",
+        "route": "/coloring-pages/foxes",
+        "intro": "Foxes appear standing, curled, running, in family groups, and within woodland scenes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_giraffes",
+        "route": "/coloring-pages/giraffes",
+        "intro": "Giraffes appear in tall standing poses, family scenes, close portraits, and savanna settings."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_hedgehogs",
+        "route": "/coloring-pages/hedgehogs",
+        "intro": "Hedgehogs appear curled, walking, holding small objects, and exploring garden or woodland scenes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_hippos",
+        "route": "/coloring-pages/hippos",
+        "intro": "Hippos appear in water, on riverbanks, in family groups, and as rounded character designs."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_horses",
+        "route": "/coloring-pages/horses",
+        "intro": "Horses appear running, standing, in portraits, with riders, and across open landscape scenes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_hydras",
+        "route": "/coloring-pages/hydras",
+        "intro": "Multi-headed hydras appear in battle poses, mythic scenes, and detailed creature portraits."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_insects",
+        "route": "/coloring-pages/insects",
+        "intro": "Bees, beetles, butterflies, spiders, and other small creatures appear in close views and nature settings."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_knights",
+        "route": "/coloring-pages/knights",
+        "intro": "Armored knights appear with shields, swords, horses, castles, and medieval-fantasy settings."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_koalas",
+        "route": "/coloring-pages/koalas",
+        "intro": "Koalas appear climbing, resting in eucalyptus trees, in family groups, and as friendly characters."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_lions",
+        "route": "/coloring-pages/lions",
+        "intro": "Lions appear in portraits, prides, walking poses, savanna scenes, and decorative mane studies."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_lizards",
+        "route": "/coloring-pages/lizards",
+        "intro": "Lizards appear on rocks and branches, in close body studies, and with varied scales and tails."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_llamas",
+        "route": "/coloring-pages/llamas",
+        "intro": "Llamas appear standing, in mountain settings, wearing decorations, and as playful character designs."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_mammoths",
+        "route": "/coloring-pages/mammoths",
+        "intro": "Mammoths appear with curved tusks, shaggy coats, herd scenes, and icy prehistoric settings."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_mermaids",
+        "route": "/coloring-pages/mermaids",
+        "intro": "Mermaid characters appear underwater, near reefs and shells, with sea creatures, and in decorative portraits."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_monkeys",
+        "route": "/coloring-pages/monkeys",
+        "intro": "Monkeys appear climbing, swinging, sitting in groups, and moving through jungle or forest scenes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_moose",
+        "route": "/coloring-pages/moose",
+        "intro": "Moose appear with broad antlers, in forest and lakeside settings, and in calm standing poses."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_octopus",
+        "route": "/coloring-pages/octopus",
+        "intro": "Octopuses appear swimming, resting on the seabed, curling their arms, and exploring reef scenes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_otters",
+        "route": "/coloring-pages/otters",
+        "intro": "Otters swim, float, hold objects, gather in pairs, and appear along rivers or coasts."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_owls",
+        "route": "/coloring-pages/owls",
+        "intro": "Owls appear perched, flying, in close facial studies, and among woodland branches."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_pandas",
+        "route": "/coloring-pages/pandas",
+        "intro": "Pandas appear eating bamboo, climbing, sitting, in family groups, and as rounded characters."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_pegasus",
+        "route": "/coloring-pages/pegasus",
+        "intro": "Winged horses appear in flight, among clouds, in magical landscapes, and in decorative portraits."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_penguins",
+        "route": "/coloring-pages/penguins",
+        "intro": "Penguins appear on ice, swimming, in family groups, and in winter character scenes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_planes",
+        "route": "/coloring-pages/planes",
+        "intro": "Passenger aircraft, propeller planes, jets, and imaginative flying machines appear on runways or in flight."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_plushie_dogs",
+        "route": "/coloring-pages/plushie-dogs",
+        "intro": "Dog breeds and puppies appear as stitched toys with soft shapes and simplified features."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_plushie_unicorns",
+        "route": "/coloring-pages/plushie-unicorns",
+        "intro": "Unicorns appear as stitched toys with rounded hooves, small horns, soft manes, and compact bodies."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_pumpkins",
+        "route": "/coloring-pages/pumpkins",
+        "intro": "Pumpkins appear as harvest produce, carved lanterns, decorated characters, and autumn or Halloween arrangements."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_rabbits",
+        "route": "/coloring-pages/rabbits",
+        "intro": "Rabbits and bunnies appear sitting, hopping, in family groups, and among garden or woodland settings."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_reindeer",
+        "route": "/coloring-pages/reindeer",
+        "intro": "Reindeer appear with antlers, sleighs, Santa, gifts, and snowy Christmas settings."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_reptiles",
+        "route": "/coloring-pages/reptiles",
+        "intro": "Snakes, lizards, turtles, and other scaled animals appear in portraits and habitat scenes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_sharks",
+        "route": "/coloring-pages/sharks",
+        "intro": "Sharks appear swimming, hunting, in close body views, and among reefs or open-water scenes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_sheep",
+        "route": "/coloring-pages/sheep",
+        "intro": "Sheep and lambs appear in pasture, farm, flock, portrait, and friendly character designs."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_sloths",
+        "route": "/coloring-pages/sloths",
+        "intro": "Sloths appear hanging, climbing, resting in trees, and in patterned or character-like portraits."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_snakes",
+        "route": "/coloring-pages/snakes",
+        "intro": "Snakes appear coiled, moving through habitats, in close scale studies, and in patterned designs."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_spiders",
+        "route": "/coloring-pages/spiders",
+        "intro": "Spiders appear on webs, in close body views, in nature scenes, and in seasonal compositions."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_tigers",
+        "route": "/coloring-pages/tigers",
+        "intro": "Tigers appear in striped portraits, walking or resting poses, family groups, and forest settings."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_trees",
+        "route": "/coloring-pages/trees",
+        "intro": "Trees appear as individual forms, forests, seasonal canopies, roots, branches, and decorative silhouettes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_turtles",
+        "route": "/coloring-pages/turtles",
+        "intro": "Land and sea turtles appear swimming, walking, hatching, and in close shell-pattern views."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_unicorns",
+        "route": "/coloring-pages/unicorns",
+        "intro": "Unicorns appear in portraits, running poses, magical landscapes, and decorative mane-and-horn designs."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_velociraptors",
+        "route": "/coloring-pages/velociraptors",
+        "intro": "Velociraptors appear running, hunting, in close portraits, and within group or landscape scenes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_whales",
+        "route": "/coloring-pages/whales",
+        "intro": "Whales appear surfacing, breaching, swimming in groups, and moving through open-ocean scenes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_witches",
+        "route": "/coloring-pages/witches",
+        "intro": "Witches appear with hats, brooms, cauldrons, cats, spell books, and Halloween or fantasy settings."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_wizards",
+        "route": "/coloring-pages/wizards",
+        "intro": "Wizards appear with staffs, spell books, robes, magical effects, and fantasy landscapes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_wolves",
+        "route": "/coloring-pages/wolves",
+        "intro": "Wolves appear alone, in packs, howling, moving through forests, and in close patterned portraits."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_wyverns",
+        "route": "/coloring-pages/wyverns",
+        "intro": "Two-legged winged wyverns appear in flight, perched, in battle poses, and in fantasy landscapes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_zebras",
+        "route": "/coloring-pages/zebras",
+        "intro": "Zebras appear in striped portraits, walking or running poses, herds, and savanna settings."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_steam_train",
+        "route": "/coloring-pages/steam-train",
+        "intro": "Steam locomotives appear with smoke, carriages, tracks, stations, and historic-looking rail scenes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_christmas_plushie",
+        "route": "/coloring-pages/christmas-plushie",
+        "intro": "Stuffed-toy characters and animals appear with Christmas clothing, gifts, trees, and festive stitched details."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_halloween_costume",
+        "route": "/coloring-pages/halloween-costume",
+        "intro": "Costumed characters appear as witches, monsters, animals, and other dressed-up Halloween figures."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_terrier",
+        "route": "/coloring-pages/terrier",
+        "intro": "Terrier breeds appear in portraits, alert standing poses, playful scenes, and stylized character treatments."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_saber_toothed_tiger",
+        "route": "/coloring-pages/saber-toothed-tiger",
+        "intro": "Saber-toothed tigers appear with long canine teeth in stalking, resting, and prehistoric landscape scenes."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_lily",
+        "route": "/coloring-pages/lily",
+        "intro": "Lilies appear as single blossoms, bouquets, garden stems, and decorative floral arrangements."
+      },
+      {
+        "phrase": "appear",
+        "hubId": "hub_cookie",
+        "route": "/coloring-pages/cookie",
+        "intro": "Cookies appear as individual treats, decorated shapes, stacked assortments, and baking scenes."
+      },
+      {
+        "phrase": "designs show",
+        "hubId": "hub_brachiosaurus",
+        "route": "/coloring-pages/brachiosaurus",
+        "intro": "Long-necked Brachiosaurus designs show standing, walking, feeding, and scenic prehistoric poses."
+      },
+      {
+        "phrase": "designs show",
+        "hubId": "hub_megalodon",
+        "route": "/coloring-pages/megalodon",
+        "intro": "Megalodon designs show the extinct shark in open water, near other sea life, and in dramatic close views."
+      },
+      {
+        "phrase": "designs show",
+        "hubId": "hub_t_rex",
+        "route": "/coloring-pages/t-rex",
+        "intro": "T-Rex designs show large-headed predators in roaring, walking, hunting, and scenic prehistoric poses."
+      },
+      {
+        "phrase": "designs show",
+        "hubId": "hub_bamboo",
+        "route": "/coloring-pages/bamboo",
+        "intro": "Seven bamboo designs show stalk clusters, leaves, potted arrangements, and panda-associated scenes."
+      },
+      {
+        "phrase": "designs show",
+        "hubId": "hub_forget_me_not",
+        "route": "/coloring-pages/forget-me-not",
+        "intro": "Six forget-me-not designs show small clustered blossoms in stems, bouquets, and floral arrangements."
+      },
+      {
+        "phrase": "designs show",
+        "hubId": "hub_pterodactyl",
+        "route": "/coloring-pages/pterodactyl",
+        "intro": "Pterodactyl-labeled designs show winged prehistoric reptiles in flight, perched, and over ancient landscapes."
+      },
+      {
+        "phrase": "designs show",
+        "hubId": "hub_iguanodon",
+        "route": "/coloring-pages/iguanodon",
+        "intro": "Eight Iguanodon designs show beaked herbivores standing, walking, feeding, and moving in groups."
+      },
+      {
+        "phrase": "designs show",
+        "hubId": "hub_collie",
+        "route": "/coloring-pages/collie",
+        "intro": "Eight collie designs show long-coated dogs in portraits, standing poses, and outdoor scenes."
+      },
+      {
+        "phrase": "designs show",
+        "hubId": "hub_daisy",
+        "route": "/coloring-pages/daisy",
+        "intro": "Ten daisy designs show open-petaled flowers in single stems, clusters, bouquets, and garden scenes."
+      },
+      {
+        "phrase": "designs show",
+        "hubId": "hub_pteranodon",
+        "route": "/coloring-pages/pteranodon",
+        "intro": "Six Pteranodon designs show crested flying reptiles gliding, landing, and crossing prehistoric skies."
+      },
+      {
+        "phrase": "designs show",
+        "hubId": "hub_orchid",
+        "route": "/coloring-pages/orchid",
+        "intro": "Nine orchid designs show distinctive blossoms on stems, in pots, and in decorative arrangements."
+      },
+      {
+        "phrase": "designs show",
+        "hubId": "hub_poppy",
+        "route": "/coloring-pages/poppy",
+        "intro": "Seven poppy designs show open blooms, buds, fields, and simple floral arrangements."
+      },
+      {
+        "phrase": "designs show",
+        "hubId": "hub_lotus",
+        "route": "/coloring-pages/lotus",
+        "intro": "Six lotus designs show layered blossoms, leaves, water settings, and symmetrical floral views."
+      },
+      {
+        "phrase": "designs show",
+        "hubId": "hub_palm",
+        "route": "/coloring-pages/palm",
+        "intro": "Six palm designs show fronds, potted plants, trunks, and tropical-looking arrangements."
+      }
+    ],
+    "unsupportedClaimFindings": [],
+    "internalLeakageFindings": [],
+    "repeatedHubNameFindings": [],
+    "inventoryMismatchFindings": [
+      {
+        "hubId": "hub_mythology",
+        "route": "/coloring-pages/mythology",
+        "title": "Mythology Coloring Pages",
+        "intro": "Mythic figures and creatures draw from gods, heroes, monsters, symbols, and legendary scenes."
+      },
+      {
+        "hubId": "hub_lily",
+        "route": "/coloring-pages/lily",
+        "title": "Lily Coloring Pages",
+        "intro": "Lilies appear as single blossoms, bouquets, garden stems, and decorative floral arrangements."
+      }
+    ]
+  },
+  "exactTitleGroups": [],
+  "normalizedTitleGroups": [
+    {
+      "value": "anime girl ankylosaurus hoodie plushie",
+      "entries": [
+        {
+          "stableId": "c819919e77",
+          "displayTitle": "Anime Girl Ankylosaurus Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "eb8de86d73",
+          "displayTitle": "Anime Girl Ankylosaurus Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl axolotl hoodie plushie",
+      "entries": [
+        {
+          "stableId": "10dcbb08c2",
+          "displayTitle": "Anime Girl Axolotl Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "4fbeebbbf9",
+          "displayTitle": "Anime Girl Axolotl Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl beach bikini",
+      "entries": [
+        {
+          "stableId": "1d77abd2f3",
+          "displayTitle": "Anime Girl Beach Bikini: Design 1"
+        },
+        {
+          "stableId": "b9ede8c4db",
+          "displayTitle": "Anime Girl Beach Bikini: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl boxing",
+      "entries": [
+        {
+          "stableId": "31e8b864b6",
+          "displayTitle": "Anime Girl Boxing: Design 1"
+        },
+        {
+          "stableId": "a787e2192f",
+          "displayTitle": "Anime Girl Boxing: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl brachiosaurus hoodie plushie",
+      "entries": [
+        {
+          "stableId": "73442e8b67",
+          "displayTitle": "Anime Girl Brachiosaurus Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "a676a7c044",
+          "displayTitle": "Anime Girl Brachiosaurus Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl brontosaurus hoodie plushie",
+      "entries": [
+        {
+          "stableId": "3ad488831a",
+          "displayTitle": "Anime Girl Brontosaurus Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "6175891702",
+          "displayTitle": "Anime Girl Brontosaurus Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl cat hoodie plushie",
+      "entries": [
+        {
+          "stableId": "62ed67bd39",
+          "displayTitle": "Anime Girl Cat Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "82a3c178ef",
+          "displayTitle": "Anime Girl Cat Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl crying",
+      "entries": [
+        {
+          "stableId": "2510ace89a",
+          "displayTitle": "Anime Girl Crying: Design 1"
+        },
+        {
+          "stableId": "ada81436a5",
+          "displayTitle": "Anime Girl Crying: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl deadlift",
+      "entries": [
+        {
+          "stableId": "582628521a",
+          "displayTitle": "Anime Girl Deadlift: Design 1"
+        },
+        {
+          "stableId": "a9e092fc9d",
+          "displayTitle": "Anime Girl Deadlift: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl dinosaur fossil hoodie plushie",
+      "entries": [
+        {
+          "stableId": "8dda1f7ef2",
+          "displayTitle": "Anime Girl Dinosaur Fossil Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "a77e1d62f4",
+          "displayTitle": "Anime Girl Dinosaur Fossil Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl dips",
+      "entries": [
+        {
+          "stableId": "18b57d82ae",
+          "displayTitle": "Anime Girl Dips: Design 1"
+        },
+        {
+          "stableId": "6fb384e480",
+          "displayTitle": "Anime Girl Dips: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl dodo bird hoodie plushie",
+      "entries": [
+        {
+          "stableId": "18189d3f2f",
+          "displayTitle": "Anime Girl Dodo Bird Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "5314caa215",
+          "displayTitle": "Anime Girl Dodo Bird Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl dragon eggs hoodie plushie",
+      "entries": [
+        {
+          "stableId": "b1747e4988",
+          "displayTitle": "Anime Girl Dragon Eggs Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "f41a8578b5",
+          "displayTitle": "Anime Girl Dragon Eggs Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl dragon hoodie plushie",
+      "entries": [
+        {
+          "stableId": "0492bac704",
+          "displayTitle": "Anime Girl Dragon Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "89af7a2cf7",
+          "displayTitle": "Anime Girl Dragon Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl dragon queen",
+      "entries": [
+        {
+          "stableId": "8c2e2a124f",
+          "displayTitle": "Anime Girl Dragon Queen: Design 1"
+        },
+        {
+          "stableId": "d532fdf0fd",
+          "displayTitle": "Anime Girl Dragon Queen: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl fishing",
+      "entries": [
+        {
+          "stableId": "379d012add",
+          "displayTitle": "Anime Girl Fishing: Design 1"
+        },
+        {
+          "stableId": "db00abd519",
+          "displayTitle": "Anime Girl Fishing: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl fox",
+      "entries": [
+        {
+          "stableId": "82e9f04c2c",
+          "displayTitle": "Anime Girl Fox: Design 1"
+        },
+        {
+          "stableId": "8b012cdc07",
+          "displayTitle": "Anime Girl Fox: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl future mech",
+      "entries": [
+        {
+          "stableId": "299de64d3f",
+          "displayTitle": "Anime Girl Future Mech: Design 1"
+        },
+        {
+          "stableId": "48efe0fb8e",
+          "displayTitle": "Anime Girl Future Mech: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl giraffe hoodie plushie",
+      "entries": [
+        {
+          "stableId": "1416704b0e",
+          "displayTitle": "Anime Girl Giraffe Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "b2e72b248e",
+          "displayTitle": "Anime Girl Giraffe Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl gorilla hoodie plushie",
+      "entries": [
+        {
+          "stableId": "3b980b9953",
+          "displayTitle": "Anime Girl Gorilla Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "7e398204b0",
+          "displayTitle": "Anime Girl Gorilla Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl horse hoodie plushie",
+      "entries": [
+        {
+          "stableId": "19fe517464",
+          "displayTitle": "Anime Girl Horse Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "5237363b2b",
+          "displayTitle": "Anime Girl Horse Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl ice climbing",
+      "entries": [
+        {
+          "stableId": "64165ab9f1",
+          "displayTitle": "Anime Girl Ice Climbing: Design 1"
+        },
+        {
+          "stableId": "edc1a5d0e7",
+          "displayTitle": "Anime Girl Ice Climbing: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl koala hoodie plushie",
+      "entries": [
+        {
+          "stableId": "a0ff921e3d",
+          "displayTitle": "Anime Girl Koala Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "f55012edb9",
+          "displayTitle": "Anime Girl Koala Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl lion hoodie plushie",
+      "entries": [
+        {
+          "stableId": "0be0222b50",
+          "displayTitle": "Anime Girl Lion Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "8e35521d72",
+          "displayTitle": "Anime Girl Lion Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl martial arts",
+      "entries": [
+        {
+          "stableId": "09ac9f457d",
+          "displayTitle": "Anime Girl Martial Arts: Design 1"
+        },
+        {
+          "stableId": "8f695b1f3d",
+          "displayTitle": "Anime Girl Martial Arts: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl megalodon hoodie plushie",
+      "entries": [
+        {
+          "stableId": "1ee3da0f28",
+          "displayTitle": "Anime Girl Megalodon Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "e1e622c3a6",
+          "displayTitle": "Anime Girl Megalodon Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl nurse doing cpr",
+      "entries": [
+        {
+          "stableId": "686d31e262",
+          "displayTitle": "Anime Girl Nurse Doing Cpr: Design 1"
+        },
+        {
+          "stableId": "97cb133692",
+          "displayTitle": "Anime Girl Nurse Doing Cpr: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl panda hoodie plushie",
+      "entries": [
+        {
+          "stableId": "28ae998098",
+          "displayTitle": "Anime Girl Panda Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "34886c72fd",
+          "displayTitle": "Anime Girl Panda Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl parasaurolophus hoodie plushie",
+      "entries": [
+        {
+          "stableId": "7be1711b4a",
+          "displayTitle": "Anime Girl Parasaurolophus Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "bde184c45d",
+          "displayTitle": "Anime Girl Parasaurolophus Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl pistol shrimp hoodie plushie",
+      "entries": [
+        {
+          "stableId": "978eeb75e4",
+          "displayTitle": "Anime Girl Pistol Shrimp Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "f489358366",
+          "displayTitle": "Anime Girl Pistol Shrimp Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl polar bear hoodie plushie",
+      "entries": [
+        {
+          "stableId": "9f7c56fd44",
+          "displayTitle": "Anime Girl Polar Bear Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "e7831d7ddc",
+          "displayTitle": "Anime Girl Polar Bear Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl potion shop",
+      "entries": [
+        {
+          "stableId": "49612ea98f",
+          "displayTitle": "Anime Girl Potion Shop: Design 1"
+        },
+        {
+          "stableId": "6e30ef7e14",
+          "displayTitle": "Anime Girl Potion Shop: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl pterodactyl hoodie plushie",
+      "entries": [
+        {
+          "stableId": "2b4315b24b",
+          "displayTitle": "Anime Girl Pterodactyl Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "6b078f0b47",
+          "displayTitle": "Anime Girl Pterodactyl Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl pull up",
+      "entries": [
+        {
+          "stableId": "3623487d0d",
+          "displayTitle": "Anime Girl Pull Up: Design 1"
+        },
+        {
+          "stableId": "ecf5a1e138",
+          "displayTitle": "Anime Girl Pull Up: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl rabbit hoodie plushie",
+      "entries": [
+        {
+          "stableId": "1631765d48",
+          "displayTitle": "Anime Girl Rabbit Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "88ad45a887",
+          "displayTitle": "Anime Girl Rabbit Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl raccoon",
+      "entries": [
+        {
+          "stableId": "847e600c4b",
+          "displayTitle": "Anime Girl Raccoon: Design 1"
+        },
+        {
+          "stableId": "dcfab092d6",
+          "displayTitle": "Anime Girl Raccoon: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl raccoon hoodie plushie",
+      "entries": [
+        {
+          "stableId": "31e1567ff8",
+          "displayTitle": "Anime Girl Raccoon Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "fc614867f5",
+          "displayTitle": "Anime Girl Raccoon Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl rock climbing",
+      "entries": [
+        {
+          "stableId": "cca1816458",
+          "displayTitle": "Anime Girl Rock Climbing: Design 1"
+        },
+        {
+          "stableId": "ed8cc63537",
+          "displayTitle": "Anime Girl Rock Climbing: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl running",
+      "entries": [
+        {
+          "stableId": "1848f864a1",
+          "displayTitle": "Anime Girl Running: Design 1"
+        },
+        {
+          "stableId": "664e9a5bd1",
+          "displayTitle": "Anime Girl Running: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl saber toothed tiger hoodie plushie",
+      "entries": [
+        {
+          "stableId": "0df82031f8",
+          "displayTitle": "Anime Girl Saber Toothed Tiger Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "14e1ec01ad",
+          "displayTitle": "Anime Girl Saber Toothed Tiger Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl shark hoodie plushie",
+      "entries": [
+        {
+          "stableId": "d129be38aa",
+          "displayTitle": "Anime Girl Shark Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "fa5478b739",
+          "displayTitle": "Anime Girl Shark Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl sheep hoodie plushie",
+      "entries": [
+        {
+          "stableId": "758204ddc0",
+          "displayTitle": "Anime Girl Sheep Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "fa8069a940",
+          "displayTitle": "Anime Girl Sheep Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl skunk hoodie plushie",
+      "entries": [
+        {
+          "stableId": "100f99934f",
+          "displayTitle": "Anime Girl Skunk Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "e46f25f24b",
+          "displayTitle": "Anime Girl Skunk Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl sloth hoodie plushie",
+      "entries": [
+        {
+          "stableId": "714f59e3d0",
+          "displayTitle": "Anime Girl Sloth Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "addf74f9c0",
+          "displayTitle": "Anime Girl Sloth Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl snake hoodie plushie",
+      "entries": [
+        {
+          "stableId": "18ff159176",
+          "displayTitle": "Anime Girl Snake Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "a3d6dff189",
+          "displayTitle": "Anime Girl Snake Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl spinosaurus hoodie plushie",
+      "entries": [
+        {
+          "stableId": "5f5fe5ac55",
+          "displayTitle": "Anime Girl Spinosaurus Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "b1c4da2cc4",
+          "displayTitle": "Anime Girl Spinosaurus Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl stegosaurus hoodie plushie",
+      "entries": [
+        {
+          "stableId": "191f4bdb4d",
+          "displayTitle": "Anime Girl Stegosaurus Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "1d07718adb",
+          "displayTitle": "Anime Girl Stegosaurus Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl t rex hoodie plushie",
+      "entries": [
+        {
+          "stableId": "518ba8dd62",
+          "displayTitle": "Anime Girl T Rex Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "8a87f18c10",
+          "displayTitle": "Anime Girl T Rex Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl thief",
+      "entries": [
+        {
+          "stableId": "8a5252f8da",
+          "displayTitle": "Anime Girl Thief: Design 1"
+        },
+        {
+          "stableId": "a2a9ffde90",
+          "displayTitle": "Anime Girl Thief: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl tree climbing",
+      "entries": [
+        {
+          "stableId": "88fbdf51e9",
+          "displayTitle": "Anime Girl Tree Climbing: Design 1"
+        },
+        {
+          "stableId": "d0d5f7375c",
+          "displayTitle": "Anime Girl Tree Climbing: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl triceratops hoodie plushie",
+      "entries": [
+        {
+          "stableId": "35b8a70219",
+          "displayTitle": "Anime Girl Triceratops Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "dceea22cc8",
+          "displayTitle": "Anime Girl Triceratops Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl velociraptor hoodie plushie",
+      "entries": [
+        {
+          "stableId": "09fa9dfa72",
+          "displayTitle": "Anime Girl Velociraptor Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "d744747b6a",
+          "displayTitle": "Anime Girl Velociraptor Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl witch riding broom",
+      "entries": [
+        {
+          "stableId": "57ec0926f1",
+          "displayTitle": "Anime Girl Witch Riding Broom: Design 1"
+        },
+        {
+          "stableId": "75a4274ba0",
+          "displayTitle": "Anime Girl Witch Riding Broom: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl wolf hoodie plushie",
+      "entries": [
+        {
+          "stableId": "02c1f663d3",
+          "displayTitle": "Anime Girl Wolf Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "54e2d6631a",
+          "displayTitle": "Anime Girl Wolf Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl woolly mammoth hoodie plushie",
+      "entries": [
+        {
+          "stableId": "4e018104ac",
+          "displayTitle": "Anime Girl Woolly Mammoth Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "f4b9879b0d",
+          "displayTitle": "Anime Girl Woolly Mammoth Hoodie Plushie: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl workout barbell squat",
+      "entries": [
+        {
+          "stableId": "22106d1624",
+          "displayTitle": "Anime Girl Workout Barbell Squat: Design 1"
+        },
+        {
+          "stableId": "963002bf98",
+          "displayTitle": "Anime Girl Workout Barbell Squat: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl workout sumo squat",
+      "entries": [
+        {
+          "stableId": "3178749205",
+          "displayTitle": "Anime Girl Workout Sumo Squat: Design 1"
+        },
+        {
+          "stableId": "49f5a3dff0",
+          "displayTitle": "Anime Girl Workout Sumo Squat: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl yoga adho mukha svanasana",
+      "entries": [
+        {
+          "stableId": "6ae8fb4d1c",
+          "displayTitle": "Anime Girl Yoga Adho Mukha Svanasana: Design 1"
+        },
+        {
+          "stableId": "88efa82eab",
+          "displayTitle": "Anime Girl Yoga Adho Mukha Svanasana: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl yoga cat pose",
+      "entries": [
+        {
+          "stableId": "8f1ad64f33",
+          "displayTitle": "Anime Girl Yoga Cat Pose: Design 1"
+        },
+        {
+          "stableId": "b9c34831e3",
+          "displayTitle": "Anime Girl Yoga Cat Pose: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl yoga crane pose",
+      "entries": [
+        {
+          "stableId": "68d31d8787",
+          "displayTitle": "Anime Girl Yoga Crane Pose: Design 1"
+        },
+        {
+          "stableId": "b0c728f830",
+          "displayTitle": "Anime Girl Yoga Crane Pose: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl yoga crow pose",
+      "entries": [
+        {
+          "stableId": "5ec68177e5",
+          "displayTitle": "Anime Girl Yoga Crow Pose: Design 1"
+        },
+        {
+          "stableId": "c99c1666a8",
+          "displayTitle": "Anime Girl Yoga Crow Pose: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl yoga deep squats",
+      "entries": [
+        {
+          "stableId": "1e52f3ee9e",
+          "displayTitle": "Anime Girl Yoga Deep Squats: Design 1"
+        },
+        {
+          "stableId": "95d1dec836",
+          "displayTitle": "Anime Girl Yoga Deep Squats: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl yoga downward dog pose",
+      "entries": [
+        {
+          "stableId": "7ef0da1e5b",
+          "displayTitle": "Anime Girl Yoga Downward Dog Pose: Design 1"
+        },
+        {
+          "stableId": "db00bb01c8",
+          "displayTitle": "Anime Girl Yoga Downward Dog Pose: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl yoga downward facing dog",
+      "entries": [
+        {
+          "stableId": "45dac09d58",
+          "displayTitle": "Anime Girl Yoga Downward Facing Dog: Design 1"
+        },
+        {
+          "stableId": "acb30310e2",
+          "displayTitle": "Anime Girl Yoga Downward Facing Dog: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl yoga mountain pose",
+      "entries": [
+        {
+          "stableId": "9fed83ed3c",
+          "displayTitle": "Anime Girl Yoga Mountain Pose: Design 1"
+        },
+        {
+          "stableId": "b4108d5a66",
+          "displayTitle": "Anime Girl Yoga Mountain Pose: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl yoga tree pose",
+      "entries": [
+        {
+          "stableId": "6aa02d0dff",
+          "displayTitle": "Anime Girl Yoga Tree Pose: Design 1"
+        },
+        {
+          "stableId": "d797bae638",
+          "displayTitle": "Anime Girl Yoga Tree Pose: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl yoga triangle pose",
+      "entries": [
+        {
+          "stableId": "8bbe16961b",
+          "displayTitle": "Anime Girl Yoga Triangle Pose: Design 1"
+        },
+        {
+          "stableId": "e58cff7b5d",
+          "displayTitle": "Anime Girl Yoga Triangle Pose: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl yoga warrior i",
+      "entries": [
+        {
+          "stableId": "1a9a130a72",
+          "displayTitle": "Anime Girl Yoga Warrior I: Design 1"
+        },
+        {
+          "stableId": "9064348078",
+          "displayTitle": "Anime Girl Yoga Warrior I: Design 2"
+        }
+      ]
+    },
+    {
+      "value": "anime girl zebra hoodie plushie",
+      "entries": [
+        {
+          "stableId": "825c503b8d",
+          "displayTitle": "Anime Girl Zebra Hoodie Plushie: Design 1"
+        },
+        {
+          "stableId": "ed9bd916ff",
+          "displayTitle": "Anime Girl Zebra Hoodie Plushie: Design 2"
+        }
+      ]
+    }
+  ],
+  "exactDescriptionGroups": [],
+  "exactHubIntroGroups": [],
+  "nearHubIntroPairs": [],
+  "exactHubParagraphGroups": [],
+  "nearHubParagraphPairs": [],
+  "smallHubReviews": [
+    {
+      "hubId": "hub_forget_me_not",
+      "route": "/coloring-pages/forget-me-not",
+      "title": "Forget-Me-Not Coloring Pages",
+      "assetCount": 6,
+      "intro": "Six forget-me-not designs show small clustered blossoms in stems, bouquets, and floral arrangements.",
+      "portraitCount": 6,
+      "displayTitles": [
+        "Chibi Flowers Forget Me Not",
+        "Chibi Flowers Forget Me Not Kawaii",
+        "Chibi Flowers Kawaii Forget Me Not",
+        "Flowers Forget Me Not",
+        "Flowers Forget Me Not Dragon",
+        "Flowers Spell Book Featuring Forget Me Not Ingredient"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_lotus",
+      "route": "/coloring-pages/lotus",
+      "title": "Lotus Coloring Pages",
+      "assetCount": 6,
+      "intro": "Six lotus designs show layered blossoms, leaves, water settings, and symmetrical floral views.",
+      "portraitCount": 6,
+      "displayTitles": [
+        "Chibi Flowers Lotus",
+        "Chibi Flowers Lotus Kawaii",
+        "Flowers Lotus",
+        "Mandala Geometry Patterns Flowers Lotus",
+        "Mandala Geometry Patterns Lotus Mandala",
+        "Mandala Geometry Patterns Sushi Nigiri On Lotus Leaf"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_palm",
+      "route": "/coloring-pages/palm",
+      "title": "Palm Coloring Pages",
+      "assetCount": 6,
+      "intro": "Six palm designs show fronds, potted plants, trunks, and tropical-looking arrangements.",
+      "portraitCount": 6,
+      "displayTitles": [
+        "Indoor Plants Areca Palm",
+        "Indoor Plants Bamboo Palm",
+        "Indoor Plants Kentia Palm",
+        "Indoor Plants Majesty Palm",
+        "Indoor Plants Parlor Palm",
+        "Indoor Plants Sago Palm"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_pteranodon",
+      "route": "/coloring-pages/pteranodon",
+      "title": "Pteranodon Coloring Pages",
+      "assetCount": 6,
+      "intro": "Six Pteranodon designs show crested flying reptiles gliding, landing, and crossing prehistoric skies.",
+      "portraitCount": 6,
+      "displayTitles": [
+        "Anime Girl Summoning Jutsu Baby Pteranodon Plushies",
+        "Anime Girl Summoning Jutsu Pteranodon",
+        "Anime Girl Summoning Jutsu Pteranodon Plushies",
+        "Chibi Pteranodon",
+        "Mandala Geometry Patterns Prehistoric Pteranodon",
+        "Prehistoric Pteranodon"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_bamboo",
+      "route": "/coloring-pages/bamboo",
+      "title": "Bamboo Coloring Pages",
+      "assetCount": 7,
+      "intro": "Seven bamboo designs show stalk clusters, leaves, potted arrangements, and panda-associated scenes.",
+      "portraitCount": 7,
+      "displayTitles": [
+        "Indoor Plants Bamboo Palm",
+        "Indoor Plants Lucky Bamboo",
+        "Mandala Geometry Patterns Japan Bamboo Forest",
+        "Mandala Geometry Patterns Japan Kyoto Bamboo Grove Path",
+        "Mandala Geometry Patterns Sushi Bamboo Chopstick Rest",
+        "Mandala Geometry Patterns Sushi Bamboo Sushi Steamer",
+        "Mandala Geometry Patterns Sushi Nigiri On Bamboo Leaf"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_poppy",
+      "route": "/coloring-pages/poppy",
+      "title": "Poppy Coloring Pages",
+      "assetCount": 7,
+      "intro": "Seven poppy designs show open blooms, buds, fields, and simple floral arrangements.",
+      "portraitCount": 7,
+      "displayTitles": [
+        "Chibi Flowers Iceland Poppy",
+        "Chibi Flowers Iceland Poppy Kawaii",
+        "Chibi Flowers Poppy",
+        "Chibi Flowers Poppy Kawaii",
+        "Flowers Iceland Poppy",
+        "Mandala Geometry Patterns Flowers Iceland Poppy",
+        "Mandala Geometry Patterns Flowers Poppy"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_bulldog",
+      "route": "/coloring-pages/bulldog",
+      "title": "Bulldog Coloring Pages",
+      "assetCount": 8,
+      "intro": "Eight bulldog designs emphasize broad faces and stocky bodies in portraits and friendly poses.",
+      "portraitCount": 8,
+      "displayTitles": [
+        "Chibi Animals Pets Dogs Bulldog",
+        "Chibi Animals Pets Dogs French Bulldog",
+        "Dogs Bulldog",
+        "Dogs French Bulldog",
+        "Holiday Christmas Dogs Bulldog",
+        "Holiday Christmas Dogs French Bulldog",
+        "Mandala Geometry Patterns Dogs Bulldog",
+        "Mandala Geometry Patterns Dogs French Bulldog"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_collie",
+      "route": "/coloring-pages/collie",
+      "title": "Collie Coloring Pages",
+      "assetCount": 8,
+      "intro": "Eight collie designs show long-coated dogs in portraits, standing poses, and outdoor scenes.",
+      "portraitCount": 8,
+      "displayTitles": [
+        "Chibi Animals Pets Dogs Border Collie",
+        "Chibi Animals Pets Dogs Collie",
+        "Dogs Border Collie",
+        "Dogs Border Collie Playing",
+        "Dogs Collie",
+        "Holiday Christmas Dogs Border Collie",
+        "Mandala Geometry Patterns Dogs Border Collie",
+        "Mandala Geometry Patterns Dogs Collie"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_iguanodon",
+      "route": "/coloring-pages/iguanodon",
+      "title": "Iguanodon Coloring Pages",
+      "assetCount": 8,
+      "intro": "Eight Iguanodon designs show beaked herbivores standing, walking, feeding, and moving in groups.",
+      "portraitCount": 8,
+      "displayTitles": [
+        "Chibi Plushie Prehistoric Iguanodon",
+        "Holiday Birthday Celebration Plushie Prehistoric Iguanodon Family",
+        "Holiday Christmas Plushie Prehistoric Iguanodon Family",
+        "Holiday Halloween Costume Plushie Prehistoric Iguanodon Family",
+        "Mandala Geometry Patterns Plushie Prehistoric Iguanodon",
+        "Plushie Prehistoric Iguanodon",
+        "Plushie Prehistoric Iguanodon Family",
+        "Prehistoric Iguanodon"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_leprechaun",
+      "route": "/coloring-pages/leprechaun",
+      "title": "Leprechaun Coloring Pages",
+      "assetCount": 9,
+      "intro": "Nine leprechaun designs include hats, shamrocks, pots of gold, dancing, and rainbow scenes.",
+      "portraitCount": 9,
+      "displayTitles": [
+        "Fantasy Creatures Leprechaun",
+        "Mythology Leprechaun",
+        "St Patricks Day Kids Dressed As Leprechauns Coloring Page",
+        "St Patricks Day Leprechaun Dancing Jig Coloring Page",
+        "St Patricks Day Leprechaun Holding Shamrock Coloring Page",
+        "St Patricks Day Leprechaun Rainbow And Gold Coloring Page",
+        "St Patricks Day Leprechaun With Pot Of Gold Coloring Page",
+        "St Patricks Day Pot Of Gold Guarded By Leprechaun Coloring Page",
+        "St Patricks Day Puppy Wearing Leprechaun Hat Coloring Page"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_mosasaurus",
+      "route": "/coloring-pages/mosasaurus",
+      "title": "Mosasaurus Coloring Pages",
+      "assetCount": 9,
+      "intro": "The Mosasaurus set shows the marine reptile swimming, hunting, and moving through prehistoric seas.",
+      "portraitCount": 9,
+      "displayTitles": [
+        "Chibi Plushie Prehistoric Mosasaurus",
+        "Holiday Birthday Celebration Plushie Prehistoric Mosasaurus Family",
+        "Holiday Christmas Plushie Prehistoric Mosasaurus Family",
+        "Holiday Christmas Prehistoric Mosasaurus",
+        "Holiday Halloween Costume Plushie Prehistoric Mosasaurus Family",
+        "Mandala Geometry Patterns Plushie Prehistoric Mosasaurus",
+        "Plushie Prehistoric Mosasaurus",
+        "Plushie Prehistoric Mosasaurus Family",
+        "Prehistoric Mosasaurus"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_orchid",
+      "route": "/coloring-pages/orchid",
+      "title": "Orchid Coloring Pages",
+      "assetCount": 9,
+      "intro": "Nine orchid designs show distinctive blossoms on stems, in pots, and in decorative arrangements.",
+      "portraitCount": 9,
+      "displayTitles": [
+        "Chibi Flowers Orchid",
+        "Flowers Orchid",
+        "Flowers Orchid Gardener",
+        "Indoor Plants Orchid Cattleya",
+        "Indoor Plants Orchid Dendrobium",
+        "Indoor Plants Orchid Oncidium",
+        "Indoor Plants Orchid Phalaenopsis",
+        "Indoor Plants Orchid Vanda",
+        "Mandala Geometry Patterns Flowers Orchid"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_plesiosaurus",
+      "route": "/coloring-pages/plesiosaurus",
+      "title": "Plesiosaurus Coloring Pages",
+      "assetCount": 9,
+      "intro": "Nine Plesiosaurus designs emphasize long necks, flippers, and movement through prehistoric water.",
+      "portraitCount": 9,
+      "displayTitles": [
+        "Chibi Plushie Prehistoric Plesiosaurus",
+        "Holiday Birthday Celebration Plushie Prehistoric Plesiosaurus Family",
+        "Holiday Christmas Plushie Prehistoric Plesiosaurus Family",
+        "Holiday Christmas Prehistoric Plesiosaurus",
+        "Holiday Halloween Costume Plushie Prehistoric Plesiosaurus Family",
+        "Mandala Geometry Patterns Plushie Prehistoric Plesiosaurus",
+        "Plushie Prehistoric Plesiosaurus",
+        "Plushie Prehistoric Plesiosaurus Family",
+        "Prehistoric Plesiosaurus"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_pterodactyl",
+      "route": "/coloring-pages/pterodactyl",
+      "title": "Pterodactyl Coloring Pages",
+      "assetCount": 9,
+      "intro": "Pterodactyl-labeled designs show winged prehistoric reptiles in flight, perched, and over ancient landscapes.",
+      "portraitCount": 9,
+      "displayTitles": [
+        "Anime Girl Pterodactyl Hoodie Plushie: Design 1",
+        "Anime Girl Pterodactyl Hoodie Plushie: Design 2",
+        "Chibi Plushie Prehistoric Pterodactyl",
+        "Holiday Birthday Celebration Plushie Prehistoric Pterodactyl Family",
+        "Holiday Christmas Plushie Prehistoric Pterodactyl Family",
+        "Holiday Halloween Costume Plushie Prehistoric Pterodactyl Family",
+        "Mandala Geometry Patterns Plushie Prehistoric Pterodactyl",
+        "Plushie Prehistoric Pterodactyl",
+        "Plushie Prehistoric Pterodactyl Family"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_robots",
+      "route": "/coloring-pages/robots",
+      "title": "Robots Coloring Pages",
+      "assetCount": 9,
+      "intro": "Nine distinct robots include mechanical characters, futuristic pets, cyberpunk forms, and toy-like machines.",
+      "portraitCount": 9,
+      "displayTitles": [
+        "Plushie Robot",
+        "Plushie Robot Family",
+        "Holiday Birthday Celebration Plushie Robot Family",
+        "Holiday Christmas Plushie Robot Family",
+        "Holiday Halloween Costume Plushie Robot Family",
+        "Mandala Geometry Patterns Plushie Robot",
+        "Mandala Geometry Patterns Plushie Robot Animal",
+        "Anime Girl Cyber Punk Hoodie And Robot Pets",
+        "Chibi Plushie Robot"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_roses",
+      "route": "/coloring-pages/roses",
+      "title": "Roses Coloring Pages",
+      "assetCount": 9,
+      "intro": "Nine rose designs include blossoms, arrangements, decorative forms, an origami rose, and a ginger-rose interpretation.",
+      "portraitCount": 9,
+      "displayTitles": [
+        "Anime Girl Smelling Roses In Garden",
+        "Flowers Rose",
+        "Mandala Geometry Patterns Flower Rose",
+        "Mandala Geometry Patterns Flowers Rose",
+        "Mandala Geometry Patterns Japan Origami Rose Flower",
+        "Mandala Geometry Patterns Sushi Platter With Ginger Rose",
+        "Anime Girl Smelling Rose",
+        "Chibi Flowers Rose",
+        "Chibi Flowers Rose Kawaii"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_daisy",
+      "route": "/coloring-pages/daisy",
+      "title": "Daisy Coloring Pages",
+      "assetCount": 10,
+      "intro": "Ten daisy designs show open-petaled flowers in single stems, clusters, bouquets, and garden scenes.",
+      "portraitCount": 10,
+      "displayTitles": [
+        "Chibi Flowers Daisy",
+        "Chibi Flowers Daisy Kawaii",
+        "Chibi Flowers Paper Daisy",
+        "Chibi Flowers Paper Daisy Kawaii",
+        "Flowers Daisy",
+        "Flowers Paper Daisy",
+        "Indoor Plants Gerbera Daisy",
+        "Insects Ladybug On Daisy",
+        "Mandala Geometry Patterns Flowers Daisy",
+        "Mandala Geometry Patterns Flowers Paper Daisy"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_gingerbread",
+      "route": "/coloring-pages/gingerbread",
+      "title": "Gingerbread Coloring Pages",
+      "assetCount": 10,
+      "intro": "Ten gingerbread designs include decorated figures, houses, cookies, icing details, and holiday arrangements.",
+      "portraitCount": 10,
+      "displayTitles": [
+        "Chibi Plushie Gingerbread Character",
+        "Christmas Holiday Gingerbread House",
+        "Holiday Christmas Gingerbread City Village With Candy Streets Coloring Page",
+        "Holiday Christmas Gingerbread Cookie Decorating Scene Coloring Page",
+        "Holiday Christmas Gingerbread Cookie Family In Snow Scene Coloring Page",
+        "Holiday Christmas Gingerbread House Decorated With Candy Coloring Page",
+        "Mandala Geometry Patterns Bakery Gingerbread Cookie",
+        "Mandala Geometry Patterns Bakery Gingerbread House",
+        "Mandala Geometry Patterns Bakery Gingerbread Men Decorating",
+        "Mandala Geometry Patterns Plushie Gingerbread Character"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_santa",
+      "route": "/coloring-pages/santa",
+      "title": "Santa Coloring Pages",
+      "assetCount": 10,
+      "intro": "The Santa set shows gift-carrying, waving, sleigh-side, and festive portrait designs.",
+      "portraitCount": 10,
+      "displayTitles": [
+        "Christmas Holiday Santa Claus",
+        "Holiday Christmas Santa Claus Coming Down Chimney Coloring Page",
+        "Holiday Christmas Santa Claus Costume Coloring Page",
+        "Holiday Christmas Santa Claus Delivering Gifts By Fireplace Coloring Page",
+        "Holiday Christmas Santa Claus Delivering Gifts In Sleigh Coloring Page",
+        "Holiday Christmas Santa Claus Packing Toys In Big Sack Coloring Page",
+        "Holiday Christmas Santa Claus Reading Letters From Children Coloring Page",
+        "Holiday Christmas Mrs Claus Serving Hot Cocoa To Santa Coloring Page",
+        "Holiday Christmas Santa Claus Riding Sleigh Over Moonlit Town Coloring Page",
+        "Holiday Christmas Santa Workshop With Elves Packing Toys Coloring Page"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_ankylosaurus",
+      "route": "/coloring-pages/ankylosaurus",
+      "title": "Ankylosaurus Coloring Pages",
+      "assetCount": 11,
+      "intro": "The Ankylosaurus set emphasizes armored backs and clubbed tails in standing and walking scenes.",
+      "portraitCount": 11,
+      "displayTitles": [
+        "Anime Girl Ankylosaurus Hoodie Plushie: Design 1",
+        "Anime Girl Ankylosaurus Hoodie Plushie: Design 2",
+        "Chibi Plushie Prehistoric Ankylosaurus",
+        "Holiday Birthday Celebration Plushie Prehistoric Ankylosaurus Family",
+        "Holiday Christmas Plushie Prehistoric Ankylosaurus Family",
+        "Holiday Christmas Prehistoric Ankylosaurus",
+        "Holiday Halloween Costume Plushie Prehistoric Ankylosaurus Family",
+        "Mandala Geometry Patterns Plushie Prehistoric Ankylosaurus",
+        "Plushie Prehistoric Ankylosaurus",
+        "Plushie Prehistoric Ankylosaurus Family",
+        "Prehistoric Ankylosaurus"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_dodo",
+      "route": "/coloring-pages/dodo",
+      "title": "Dodo Coloring Pages",
+      "assetCount": 11,
+      "intro": "The dodo set shows the extinct bird standing, walking, in profile, and in island-like settings.",
+      "portraitCount": 11,
+      "displayTitles": [
+        "Anime Girl Dodo Bird Hoodie Plushie: Design 1",
+        "Anime Girl Dodo Bird Hoodie Plushie: Design 2",
+        "Chibi Dodo Birds",
+        "Chibi Plushie Prehistoric Dodo",
+        "Holiday Birthday Celebration Plushie Prehistoric Dodo Family",
+        "Holiday Halloween Costume Plushie Prehistoric Dodo Family",
+        "Mandala Geometry Patterns Plushie Prehistoric Dodo",
+        "Mandala Geometry Patterns Prehistoric Dodo Bird",
+        "Plushie Prehistoric Dodo",
+        "Plushie Prehistoric Dodo Family",
+        "Prehistoric Dodo Bird"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_salmon",
+      "route": "/coloring-pages/salmon",
+      "title": "Salmon Coloring Pages",
+      "assetCount": 11,
+      "intro": "Eleven salmon designs include swimming fish, close body views, nigiri toppings, and plated sushi pieces.",
+      "portraitCount": 11,
+      "displayTitles": [
+        "Mandala Geometry Patterns Sushi Aburi Salmon Nigiri",
+        "Mandala Geometry Patterns Sushi Chef Torching Aburi Salmon",
+        "Mandala Geometry Patterns Sushi Gunkan Sushi Salmon Roe",
+        "Mandala Geometry Patterns Sushi Hand Roll Salmon",
+        "Mandala Geometry Patterns Sushi Ikura Salmon Roe",
+        "Mandala Geometry Patterns Sushi Onigiri With Salmon",
+        "Mandala Geometry Patterns Sushi Salmon Maki",
+        "Mandala Geometry Patterns Sushi Salmon Nigiri",
+        "Mandala Geometry Patterns Sushi Salmon Skin Roll",
+        "Mandala Geometry Patterns Sushi Sashimi Salmon Roll Tuna",
+        "Sea Life Orca Hunting Salmon"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_trick_or_treat",
+      "route": "/coloring-pages/trick-or-treat",
+      "title": "Trick or Treat Coloring Pages",
+      "assetCount": 11,
+      "intro": "Costumed visitors, candy containers, decorated doors, pumpkins, and neighborhood scenes represent trick-or-treating.",
+      "portraitCount": 11,
+      "displayTitles": [
+        "Chibi Holiday Halloween Trick Or Treat Children With Pumpkin Bags Coloring Page",
+        "Chibi Holiday Halloween Trick Or Treat Dog In Cute Costume Coloring Page",
+        "Chibi Holiday Halloween Trick Or Treat Doorstep With Carved Pumpkins Coloring Page",
+        "Chibi Holiday Halloween Trick Or Treat Front Porch Decorated Coloring Page",
+        "Chibi Holiday Halloween Trick Or Treat Walkway Lined With Lanterns Coloring Page",
+        "Chibi Holiday Halloween Zombie With Torn Trick Or Treat Bag Coloring Page",
+        "Holiday Halloween Trick Or Treat Dog In Cute Costume Coloring Page",
+        "Holiday Halloween Trick Or Treat Front Porch Decorated Coloring Page",
+        "Holiday Halloween Trick Or Treat Kids In Costumes Coloring Page",
+        "Holiday Halloween Trick Or Treat Walkway Lined With Lanterns Coloring Page",
+        "Holiday Halloween Trick Or Treat With Lanterns Coloring Page"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_playing_cards",
+      "route": "/coloring-pages/playing-cards",
+      "title": "Playing Cards Coloring Pages",
+      "assetCount": 12,
+      "intro": "Card suits, face cards, decks, hands, and game-table compositions make up this playing-card collection.",
+      "portraitCount": 12,
+      "displayTitles": [
+        "Cats Playing Cards",
+        "Anime Girl Playing Cards Professionally",
+        "Anime Girl Playing Cards",
+        "Fantasy Creatures Flying Unicorn Playing Cards",
+        "Fantasy Creatures Ghost Pirate Ship Playing Cards",
+        "Fantasy Creatures Magical Unicorn Playing Cards",
+        "Fantasy Creatures Mermaid Playing Cards",
+        "Fantasy Creatures Necromancer Playing Cards",
+        "Fantasy Creatures Shaman Playing Cards",
+        "Fantasy Creatures Undead Dragon Playing Cards",
+        "Fantasy Creatures Unicorn Playing Cards",
+        "Fantasy Creatures Wizard Playing Cards"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_plushie_dogs",
+      "route": "/coloring-pages/plushie-dogs",
+      "title": "Plushie Dogs Coloring Pages",
+      "assetCount": 12,
+      "intro": "Dog breeds and puppies appear as stitched toys with soft shapes and simplified features.",
+      "portraitCount": 12,
+      "displayTitles": [
+        "Plushie Pets Dogs Labrador Retriever",
+        "Plushie Puppy Dog",
+        "Plushie Puppy Dog Family",
+        "Holiday Birthday Celebration Plushie Puppy Dog Family",
+        "Holiday Christmas Plushie Puppy Dog",
+        "Holiday Halloween Costume Plushie Puppy Dog Family",
+        "Mandala Geometry Patterns Plushie Puppy",
+        "Mandala Geometry Patterns Plushie Puppy Dog",
+        "Mandala Geometry Patterns Plushie Puppy Dog Animals",
+        "Mandala Geometry Patterns Plushie Puppy Dog Halloween",
+        "Chibi Plushie Puppy Dog",
+        "Holiday Christmas Plushie Puppy Dog Family"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_plushie_triceratops",
+      "route": "/coloring-pages/plushie-triceratops",
+      "title": "Plushie Triceratops Coloring Pages",
+      "assetCount": 13,
+      "intro": "Triceratops designs use toy-like bodies, stitched details, compact frills, and rounded horns.",
+      "portraitCount": 13,
+      "displayTitles": [
+        "Plushie Prehistoric Triceratops",
+        "Holiday Christmas Plushie Prehistoric Triceratops Family",
+        "Holiday Halloween Costume Plushie Prehistoric Triceratops Family",
+        "Mandala Geometry Patterns Plushie Prehistoric Triceratops",
+        "Mandala Geometry Patterns Plushie Prehistoric Triceratops Animal",
+        "Plushie Prehistoric Triceratops Family",
+        "Anime Girl Triceratops Hoodie Plushie: Design 1",
+        "Anime Girl Triceratops Hoodie Plushie: Design 2",
+        "Anime Girl Triceratops Hoodie Plushie In Park",
+        "Anime Girl Triceratops Hoodie Plushie Jungle",
+        "Anime Girl Triceratops Hoodie Plushie Playing Board Games",
+        "Chibi Plushie Prehistoric Triceratops",
+        "Holiday Birthday Celebration Plushie Prehistoric Triceratops Family"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_saber_toothed_tiger",
+      "route": "/coloring-pages/saber-toothed-tiger",
+      "title": "Saber Toothed Tiger Coloring Pages",
+      "assetCount": 13,
+      "intro": "Saber-toothed tigers appear with long canine teeth in stalking, resting, and prehistoric landscape scenes.",
+      "portraitCount": 13,
+      "displayTitles": [
+        "Anime Girl Saber Toothed Tiger Hoodie Plushie: Design 1",
+        "Anime Girl Saber Toothed Tiger Hoodie Plushie: Design 2",
+        "Anime Girl Summoning Jutsu Saber Toothed Tiger",
+        "Anime Girl Summoning Jutsu Saber Toothed Tiger Plushies",
+        "Chibi Plushie Prehistoric Saber Toothed Tiger",
+        "Chibi Saber Toothed Tiger",
+        "Holiday Birthday Celebration Plushie Prehistoric Saber Toothed Tiger Family",
+        "Holiday Birthday Celebration Saber Toothed Tiger",
+        "Holiday Christmas Plushie Prehistoric Saber Toothed Tiger Family",
+        "Holiday Halloween Costume Plushie Prehistoric Saber Toothed Tiger Family",
+        "Mandala Geometry Patterns Plushie Prehistoric Saber Toothed Tiger",
+        "Plushie Prehistoric Saber Toothed Tiger",
+        "Plushie Prehistoric Saber Toothed Tiger Family"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_cows",
+      "route": "/coloring-pages/cows",
+      "title": "Cows Coloring Pages",
+      "assetCount": 14,
+      "intro": "Cows appear in pasture views, farm scenes, portraits, and friendly stylized poses.",
+      "portraitCount": 14,
+      "displayTitles": [
+        "Plushie Cow",
+        "Holiday Birthday Celebration Plushie Cow Jumps Over The Moon",
+        "Holiday Christmas Plushie Cow Family",
+        "Mandala Geometry Patterns Plushie Cow",
+        "Mandala Geometry Patterns Plushie Cow Animals",
+        "Mandala Geometry Patterns Plushie Farm Cow",
+        "Plushie Cow Family",
+        "Anime Girl Chibi Cow Summon",
+        "Anime Girl Cow Hoodie Plushie",
+        "Anime Girl Cow Hoodie Plushie Farm",
+        "Anime Girl Summoning Jutsu Cow Plushies",
+        "Chibi Plushie Cow",
+        "Holiday Birthday Celebration Plushie Cow Family",
+        "Holiday Halloween Costume Plushie Cow Family"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_dolphins",
+      "route": "/coloring-pages/dolphins",
+      "title": "Dolphins Coloring Pages",
+      "assetCount": 14,
+      "intro": "Dolphins leap, swim in groups, surface near waves, and appear in underwater scenes.",
+      "portraitCount": 14,
+      "displayTitles": [
+        "Animals Dolphins",
+        "Plushie Dolphin",
+        "Plushie Dolphin Family",
+        "Sea Life Bottlenose Dolphin Family",
+        "Sea Life Dolphin",
+        "Sea Life Dolphin Jumping Over Waves",
+        "Holiday Birthday Celebration Plushie Dolphin Family",
+        "Holiday Christmas Plushie Dolphin Family",
+        "Holiday Halloween Costume Plushie Dolphin Family",
+        "Mandala Geometry Patterns Dolphin",
+        "Mandala Geometry Patterns Dolphin Face Patterns",
+        "Mandala Geometry Patterns Plushie Dolphin",
+        "Mandala Geometry Patterns Plushie Dolphin Animals",
+        "Chibi Plushie Dolphin"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_lily",
+      "route": "/coloring-pages/lily",
+      "title": "Lily Coloring Pages",
+      "assetCount": 14,
+      "intro": "Lilies appear as single blossoms, bouquets, garden stems, and decorative floral arrangements.",
+      "portraitCount": 14,
+      "displayTitles": [
+        "Chibi Flowers Calla Lily",
+        "Chibi Flowers Calla Lily Kawaii",
+        "Chibi Flowers Kawaii Calla Lily",
+        "Chibi Flowers Lily",
+        "Chibi Flowers Lily Kawaii",
+        "Flowers Calla Lily",
+        "Flowers Lily",
+        "Flowers Water Lily",
+        "Indoor Plants Peace Lily",
+        "Indoor Plants Peace Lily Domino",
+        "Indoor Plants Peace Lily Sensation",
+        "Mandala Geometry Patterns Flowers Calla Lily",
+        "Mandala Geometry Patterns Flowers Lily",
+        "Reptiles Tree Frog On Lily Pad"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_monkeys",
+      "route": "/coloring-pages/monkeys",
+      "title": "Monkeys Coloring Pages",
+      "assetCount": 14,
+      "intro": "Monkeys appear climbing, swinging, sitting in groups, and moving through jungle or forest scenes.",
+      "portraitCount": 14,
+      "displayTitles": [
+        "Mandala Geometry Patterns Japan Snow Monkeys In Onsen",
+        "Plushie Monkey",
+        "Plushie Monkey Family",
+        "Holiday Birthday Celebration Plushie Monkey Family",
+        "Holiday Christmas Plushie Monkey Family",
+        "Holiday Halloween Costume Plushie Monkey Family",
+        "Mandala Geometry Patterns Plushie Monkey",
+        "Mandala Geometry Patterns Plushie Monkey Animals",
+        "Mandala Geometry Patterns Plushie Animal Monkey",
+        "Anime Girl Monkey Hoodie Animal Plushie",
+        "Anime Girl Monkey Hoodie Plushie",
+        "Chibi Monkey King",
+        "Chibi Monkey King Clouds",
+        "Chibi Plushie Monkey"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_plushie_unicorns",
+      "route": "/coloring-pages/plushie-unicorns",
+      "title": "Plushie Unicorns Coloring Pages",
+      "assetCount": 14,
+      "intro": "Unicorns appear as stitched toys with rounded hooves, small horns, soft manes, and compact bodies.",
+      "portraitCount": 14,
+      "displayTitles": [
+        "Plushie Unicorn",
+        "Plushie Unicorn Family",
+        "Holiday Birthday Celebration Plushie Unicorn Family",
+        "Holiday Christmas Plushie Unicorn Family",
+        "Mandala Geometry Patterns Plushie Unicorn",
+        "Anime Girl Summoning Unicorn Plushies",
+        "Anime Girl Unicorn Hoodie Plushie",
+        "Chibi Plushie Unicorn",
+        "Holiday Birthday Plushie Unicorn Family",
+        "Holiday Christmas Plushie Unicorn",
+        "Holiday Halloween Costume Plushie Unicorn Family",
+        "Holiday Halloween Plushie Unicorn Family",
+        "Mandala Geometry Patterns Plushie Cute Unicorn",
+        "Mandala Geometry Patterns Plushie Unicorn Samurai"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_sheep",
+      "route": "/coloring-pages/sheep",
+      "title": "Sheep Coloring Pages",
+      "assetCount": 14,
+      "intro": "Sheep and lambs appear in pasture, farm, flock, portrait, and friendly character designs.",
+      "portraitCount": 14,
+      "displayTitles": [
+        "Christmas Holiday Sheep",
+        "Plushie Bighorn Sheep",
+        "Plushie Horned Sheep Family",
+        "Plushie Little Sheep",
+        "Holiday Birthday Celebration Plushie Bighorn Sheep Family",
+        "Holiday Christmas Plushie Bighorn Sheep Family",
+        "Holiday Halloween Costume Plushie Bighorn Sheep Family",
+        "Plushie Bighorn Sheep Family",
+        "Anime Girl Sheep Hoodie Plushie: Design 1",
+        "Anime Girl Sheep Hoodie Plushie: Design 2",
+        "Anime Girl Summoning Jutsu Sheep",
+        "Anime Girl Summoning Jutsu Sheep Plushies",
+        "Chibi Plushie Bighorn Sheep",
+        "Chibi Sheep"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_bees",
+      "route": "/coloring-pages/bees",
+      "title": "Bees Coloring Pages",
+      "assetCount": 15,
+      "intro": "Bees appear in flight, on flowers, near hives, and in decorative insect compositions.",
+      "portraitCount": 15,
+      "displayTitles": [
+        "Anime Girl Summoning Killer Bees",
+        "Insects Leafcutter Bee Carrying Leaf",
+        "Plushie Bee",
+        "Plushie Bee Family",
+        "Holiday Birthday Celebration Plushie Bee Family",
+        "Holiday Halloween Costume Plushie Bee Family",
+        "Mandala Geometry Patterns Plushie Bee",
+        "Mandala Geometry Patterns Plushie Bee Insects",
+        "Anime Girl Bee Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Bumble Bee Battle Armor",
+        "Anime Girl Summoning Jutsu Bumble Bee Battle Armor Plushies",
+        "Anime Girl Summoning Killer Bee Plushies",
+        "Chibi Bee Dragon",
+        "Chibi Plushie Bee",
+        "Holiday Christmas Plushie Bee Family"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_brachiosaurus",
+      "route": "/coloring-pages/brachiosaurus",
+      "title": "Brachiosaurus Coloring Pages",
+      "assetCount": 15,
+      "intro": "Long-necked Brachiosaurus designs show standing, walking, feeding, and scenic prehistoric poses.",
+      "portraitCount": 15,
+      "displayTitles": [
+        "Plushie Prehistoric Brachiosaurus",
+        "Plushie Prehistoric Brachiosaurus Family",
+        "Holiday Birthday Celebration Plushie Prehistoric Brachiosaurus Family",
+        "Holiday Christmas Plushie Prehistoric Brachiosaurus Family",
+        "Holiday Christmas Prehistoric Brachiosaurus",
+        "Holiday Halloween Costume Plushie Prehistoric Brachiosaurus Family",
+        "Mandala Geometry Patterns Plushie Prehistoric Brachiosaurus",
+        "Mandala Geometry Patterns Plushie Prehistoric Brachiosaurus Animal",
+        "Mandala Geometry Patterns Prehistoric Brachiosaurus",
+        "Anime Girl Brachiosaurus Hoodie Plushie: Design 1",
+        "Anime Girl Brachiosaurus Hoodie Plushie: Design 2",
+        "Anime Girl Summoning Jutsu Brachiosaurus",
+        "Anime Girl Summoning Jutsu Brachiosaurus Plushies",
+        "Chibi Brachiosaurus",
+        "Chibi Plushie Prehistoric Brachiosaurus"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_deer",
+      "route": "/coloring-pages/deer",
+      "title": "Deer Coloring Pages",
+      "assetCount": 15,
+      "intro": "Deer appear as woodland animals, antlered portraits, family groups, and quiet forest scenes.",
+      "portraitCount": 15,
+      "displayTitles": [
+        "Holiday Christmas Animals Deer",
+        "Gardening Mushroom Deer Mushroom",
+        "Insects Deer Fly",
+        "Plushie Deer",
+        "Plushie Deer Family",
+        "Holiday Christmas Plushie Deer Family",
+        "Holiday Halloween Costume Plushie Deer Family",
+        "Mandala Geometry Patterns Mushroom Deer Mushroom",
+        "Mandala Geometry Patterns Plushie Animals Deer",
+        "Mandala Geometry Patterns Plushie Deer",
+        "Mandala Geometry Patterns Japan Nara Deer In Park",
+        "Plushie Arctic Deer Family",
+        "Chibi Plushie Deer",
+        "Holiday Birthday Celebration Plushie Deer Family",
+        "Holiday Christmas Plushie Deer"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_hedgehogs",
+      "route": "/coloring-pages/hedgehogs",
+      "title": "Hedgehogs Coloring Pages",
+      "assetCount": 15,
+      "intro": "Hedgehogs appear curled, walking, holding small objects, and exploring garden or woodland scenes.",
+      "portraitCount": 15,
+      "displayTitles": [
+        "Anime Girl Summoning Jutsu Hedgehogs",
+        "Gardening Mushroom Hedgehog Tooth",
+        "Plushie Hedgehog",
+        "Plushie Hedgehog Family",
+        "Holiday Christmas Plushie Hedgehog Family",
+        "Holiday Halloween Costume Plushie Hedgehog Family",
+        "Mandala Geometry Patterns Mushroom Hedgehog Tooth",
+        "Mandala Geometry Patterns Plushie Animals Hedgehog",
+        "Mandala Geometry Patterns Plushie Hedgehog",
+        "Mandala Geometry Patterns Plushie Hedgehog Animals",
+        "Anime Girl Hedgehog Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Hedgehog Plushies",
+        "Chibi Hedgehog",
+        "Chibi Mushroom Hedgehog Tooth",
+        "Holiday Birthday Celebration Plushie Hedgehog Family"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_hydras",
+      "route": "/coloring-pages/hydras",
+      "title": "Hydras Coloring Pages",
+      "assetCount": 15,
+      "intro": "Multi-headed hydras appear in battle poses, mythic scenes, and detailed creature portraits.",
+      "portraitCount": 15,
+      "displayTitles": [
+        "Plushie Baby Hydra",
+        "Mandala Geometry Patterns Plushie Baby Hydra",
+        "Anime Girl Hydra Hunt",
+        "Anime Girl Summoning Jutsu Hydra Dragon",
+        "Chibi Dungeon Hydra Dragon",
+        "Chibi Hydra",
+        "Chibi Hydra Castle Pet",
+        "Chibi Hydra Dragon",
+        "Chibi Plushie Baby Hydra",
+        "Fantasy Creatures Hydra",
+        "Fantasy Creatures Hydra Marsh",
+        "Fantasy Hydra Swamp",
+        "Fantasy Three Headed Hydra Swamp",
+        "Medieval Fantasy Hydra Serpent",
+        "Mythology Hydra"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_llamas",
+      "route": "/coloring-pages/llamas",
+      "title": "Llamas Coloring Pages",
+      "assetCount": 15,
+      "intro": "Llamas appear standing, in mountain settings, wearing decorations, and as playful character designs.",
+      "portraitCount": 15,
+      "displayTitles": [
+        "Anime Girl Summoning Jutsu Llamas",
+        "Christmas Holiday Llama",
+        "Plushie Llama",
+        "Plushie Llama Family",
+        "Holiday Birthday Celebration Plushie Llama Family",
+        "Holiday Christmas Plushie Llama Family",
+        "Holiday Halloween Costume Plushie Llama Family",
+        "Mandala Geometry Patterns Llama",
+        "Mandala Geometry Patterns Llama Face Patterns",
+        "Mandala Geometry Patterns Llama Patterns",
+        "Mandala Geometry Patterns Plushie Llama",
+        "Mandala Geometry Patterns Plushie Llama Animals",
+        "Anime Girl Llama Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Llama Plushies",
+        "Chibi Plushie Llama"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_reindeer",
+      "route": "/coloring-pages/reindeer",
+      "title": "Reindeer Coloring Pages",
+      "assetCount": 15,
+      "intro": "Reindeer appear with antlers, sleighs, Santa, gifts, and snowy Christmas settings.",
+      "portraitCount": 15,
+      "displayTitles": [
+        "Holiday Christmas Reindeer Rudolph With Red Nose Coloring Page",
+        "Holiday Christmas Reindeer Team Pulling Sleigh Over Rooftops Coloring Page",
+        "Gardening Mushroom Reindeer Lichen Reindeer Gardener Christmas",
+        "Plushie Reindeer",
+        "Plushie Reindeer Family",
+        "Holiday Christmas Plushie Reindeer",
+        "Holiday Christmas Plushie Reindeer Family",
+        "Holiday Halloween Costume Plushie Reindeer Family",
+        "Mandala Geometry Patterns Mushroom Reindeer Lichen",
+        "Mandala Geometry Patterns Plushie Reindeer",
+        "Mandala Geometry Patterns Plushie Reindeer Rudolph",
+        "Chibi Plushie Reindeer",
+        "Chibi Plushie Reindeer Rudolph",
+        "Holiday Birthday Celebration Plushie Reindeer Family",
+        "Mandala Geometry Patterns Plushie Reindeer Animals"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_steam_train",
+      "route": "/coloring-pages/steam-train",
+      "title": "Steam Train Coloring Pages",
+      "assetCount": 15,
+      "intro": "Steam locomotives appear with smoke, carriages, tracks, stations, and historic-looking rail scenes.",
+      "portraitCount": 15,
+      "displayTitles": [
+        "Mandala Geometry Patterns Trains Locomotives Classic Steam Train At Small Town Station",
+        "Mandala Geometry Patterns Trains Locomotives Classic Steam Train In Winter Snow",
+        "Mandala Geometry Patterns Trains Locomotives Classic Steam Train Puffing Over Hill",
+        "Mandala Geometry Patterns Trains Locomotives Classic Steam Train With Dining Car",
+        "Mandala Geometry Patterns Trains Locomotives Classic Steam Train With Sleeper Car",
+        "Mandala Geometry Patterns Trains Locomotives Steam Train At Old Town Station",
+        "Mandala Geometry Patterns Trains Locomotives Steam Train Blowing Whistle And Steam Cloud",
+        "Mandala Geometry Patterns Trains Locomotives Steam Train On Coastal Route",
+        "Mandala Geometry Patterns Trains Locomotives Steam Train On Forest Trestle Bridge",
+        "Mandala Geometry Patterns Trains Locomotives Steam Train With Open Air Carriage",
+        "Mandala Geometry Patterns Trains Locomotives Steam Train With Open Air Carriages",
+        "Mandala Geometry Patterns Trains Locomotives Steam Train With Open Coal Tender Car",
+        "Mandala Geometry Patterns Trains Locomotives Steam Train With Snowplow Front Attachment",
+        "Mandala Geometry Patterns Trains Locomotives Vintage Steam Train Crossing Bridge",
+        "Mandala Geometry Patterns Trains Locomotives Vintage Steam Train Through Mountains"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_wyverns",
+      "route": "/coloring-pages/wyverns",
+      "title": "Wyverns Coloring Pages",
+      "assetCount": 15,
+      "intro": "Two-legged winged wyverns appear in flight, perched, in battle poses, and in fantasy landscapes.",
+      "portraitCount": 15,
+      "displayTitles": [
+        "Anime Girl Summoning Jutsu Wyvern Dragon",
+        "Anime Girl Summoning Jutsu Wyvern Dragon Plushies",
+        "Chibi Dungeon Wyvern",
+        "Chibi Medieval Fantasy Wyvern",
+        "Chibi Wyvern",
+        "Chibi Wyvern Flying",
+        "Fantasy Chibi Wyvern Baby",
+        "Fantasy Creatures Wyvern Mountain",
+        "Fantasy Mechanical Wyvern",
+        "Fantasy Ridge Wyvern",
+        "Fantasy Wyvern Canyon",
+        "Fantasy Wyvern Family Nest",
+        "Fantasy Wyvern Nest",
+        "Medieval Fantasy Wyvern",
+        "Medieval Fantasy Wyvern Sky"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_diplodocus",
+      "route": "/coloring-pages/diplodocus",
+      "title": "Diplodocus Coloring Pages",
+      "assetCount": 16,
+      "intro": "Diplodocus designs emphasize the long tail and neck in standing, walking, and scenic herd poses.",
+      "portraitCount": 16,
+      "displayTitles": [
+        "Prehistoric Diplodocus",
+        "Prehistoric Diplodocus Happy",
+        "Plushie Prehistoric Diplodocus",
+        "Plushie Prehistoric Diplodocus Family",
+        "Holiday Birthday Celebration Plushie Prehistoric Diplodocus Family",
+        "Holiday Christmas Plushie Prehistoric Diplodocus Family",
+        "Holiday Halloween Costume Plushie Prehistoric Diplodocus Family",
+        "Mandala Geometry Patterns Plushie Prehistoric Diplodocus",
+        "Mandala Geometry Patterns Plushie Prehistoric Diplodocus Animal",
+        "Mandala Geometry Patterns Prehistoric Diplodocus",
+        "Mandala Geometry Patterns Prehistoric Diplodocus Roaming",
+        "Mandala Geometry Patterns Prehistoric Diplodocus Walking",
+        "Anime Girl Summoning Jutsu Diplodocus",
+        "Anime Girl Summoning Jutsu Diplodocus Plushies",
+        "Chibi Diplodocus",
+        "Chibi Plushie Prehistoric Diplodocus"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_fish",
+      "route": "/coloring-pages/fish",
+      "title": "Fish Coloring Pages",
+      "assetCount": 16,
+      "intro": "Fish designs include single swimmers, schools, reef settings, patterned bodies, and close aquatic views.",
+      "portraitCount": 16,
+      "displayTitles": [
+        "Sea Life Coral Reef Fish",
+        "Sea Life Coral Reef Fish Swimming",
+        "Sea Life Coral Reef Scene With Colorful Fish",
+        "Sea Life Fighting Fish",
+        "Mandala Geometry Patterns Sushi Chef Knife And Fish",
+        "Mandala Geometry Patterns Sushi Gunkan Sushi Fish Roe Mix",
+        "Mandala Geometry Patterns Sushi Tobiko Flying Fish Roe",
+        "Mandala Geometry Patterns Sushi Koi Fish At Restaurant",
+        "Sea Life Betta Fish",
+        "Anime Girl Catching Fish",
+        "Anime Girl Fish Net Clothes Fishing",
+        "Anime Girl Fish Net Stocking",
+        "Anime Girl Summoning Angler Fish",
+        "Anime Girl Summoning Angler Fish Plushies",
+        "Chibi Megalodon Fish",
+        "Mandala Geometry Patterns Sushi Chef Slicing Fish"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_hippos",
+      "route": "/coloring-pages/hippos",
+      "title": "Hippos Coloring Pages",
+      "assetCount": 16,
+      "intro": "Hippos appear in water, on riverbanks, in family groups, and as rounded character designs.",
+      "portraitCount": 16,
+      "displayTitles": [
+        "Anime Girl Summoning Jutsu Hippos",
+        "Plushie Hippo",
+        "Holiday Birthday Celebration Plushie Hippo Family",
+        "Holiday Christmas Plushie Hippo",
+        "Holiday Christmas Plushie Hippo Family",
+        "Holiday Halloween Costume Plushie Hippo Family",
+        "Mandala Geometry Patterns Animal Plushie Hippo",
+        "Mandala Geometry Patterns Plushie Hippo",
+        "Mandala Geometry Patterns Plushie Hippo Animals",
+        "Plushie Hippo Family",
+        "Anime Girl Hippo Hoodie Animal Plushie",
+        "Anime Girl Hippo Hoodie Plushie",
+        "Anime Girl Hippo Hoodie Plushie Cosplay",
+        "Anime Girl Summoning Jutsu Hippo Plushies",
+        "Chibi Hippo",
+        "Chibi Plushie Hippo"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_horses",
+      "route": "/coloring-pages/horses",
+      "title": "Horses Coloring Pages",
+      "assetCount": 16,
+      "intro": "Horses appear running, standing, in portraits, with riders, and across open landscape scenes.",
+      "portraitCount": 16,
+      "displayTitles": [
+        "Holiday Birthday Celebration Horses",
+        "Anime Girl Summoning Jutsu Horses",
+        "Plushie Horse",
+        "Plushie Horse Family",
+        "Holiday Birthday Celebration Plushie Horse Family",
+        "Holiday Christmas Plushie Horse Family",
+        "Mandala Geometry Patterns Plushie Horse",
+        "Mandala Geometry Patterns Plushie Horse Animals",
+        "Anime Girl Horse Hoodie Plushie: Design 1",
+        "Anime Girl Horse Hoodie Plushie: Design 2",
+        "Anime Girl Summoning Jutsu Horse Plushies",
+        "Chibi Horse",
+        "Chibi Plushie Horse",
+        "Fantasy Spectral Horse",
+        "Holiday Halloween Costume Plushie Horse Family",
+        "Mythology Kelpie Horse"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_megalodon",
+      "route": "/coloring-pages/megalodon",
+      "title": "Megalodon Coloring Pages",
+      "assetCount": 16,
+      "intro": "Megalodon designs show the extinct shark in open water, near other sea life, and in dramatic close views.",
+      "portraitCount": 16,
+      "displayTitles": [
+        "Prehistoric Megalodon",
+        "Plushie Prehistoric Megalodon",
+        "Plushie Prehistoric Megalodon Family",
+        "Holiday Christmas Plushie Prehistoric Megalodon Family",
+        "Holiday Halloween Costume Plushie Prehistoric Megalodon Family",
+        "Mandala Geometry Patterns Plushie Prehistoric Megalodon",
+        "Mandala Geometry Patterns Prehistoric Megalodon",
+        "Mandala Geometry Patterns Plushie Prehistoric Megalodon Animal",
+        "Anime Girl Megalodon Hoodie Plushie: Design 1",
+        "Anime Girl Megalodon Hoodie Plushie: Design 2",
+        "Anime Girl Summoning Jutsu Megalodon",
+        "Anime Girl Summoning Jutsu Megalodon Plushies",
+        "Chibi Megalodon Fish",
+        "Chibi Megalodon Tiger Shark",
+        "Chibi Plushie Prehistoric Megalodon",
+        "Holiday Birthday Celebration Plushie Prehistoric Megalodon Family"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_nigiri",
+      "route": "/coloring-pages/nigiri",
+      "title": "Nigiri Coloring Pages",
+      "assetCount": 16,
+      "intro": "Nigiri pieces feature rice and fish toppings in individual views, assortments, and sushi platters.",
+      "portraitCount": 16,
+      "displayTitles": [
+        "Mandala Geometry Patterns Sushi Aburi Ebi Nigiri",
+        "Mandala Geometry Patterns Sushi Aburi Salmon Nigiri",
+        "Mandala Geometry Patterns Sushi Aburi Tuna Nigiri",
+        "Mandala Geometry Patterns Sushi Avocado Nigiri",
+        "Mandala Geometry Patterns Sushi Chef Shaping Nigiri",
+        "Mandala Geometry Patterns Sushi Crab Stick Nigiri",
+        "Mandala Geometry Patterns Sushi Egg Tamago Nigiri",
+        "Mandala Geometry Patterns Sushi Nigiri On Bamboo Leaf",
+        "Mandala Geometry Patterns Sushi Nigiri On Lotus Leaf",
+        "Mandala Geometry Patterns Sushi Octopus Nigiri",
+        "Mandala Geometry Patterns Sushi Salmon Nigiri",
+        "Mandala Geometry Patterns Sushi Scallop Nigiri",
+        "Mandala Geometry Patterns Sushi Shrimp Nigiri",
+        "Mandala Geometry Patterns Sushi Smiling Nigiri Roll Tuna",
+        "Mandala Geometry Patterns Sushi Tuna Nigiri",
+        "Mandala Geometry Patterns Sushi Unagi Eel Nigiri"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_cookie",
+      "route": "/coloring-pages/cookie",
+      "title": "Cookie Coloring Pages",
+      "assetCount": 17,
+      "intro": "Cookies appear as individual treats, decorated shapes, stacked assortments, and baking scenes.",
+      "portraitCount": 17,
+      "displayTitles": [
+        "Chibi Plushie Cookie Character",
+        "Holiday Christmas Gingerbread Cookie Decorating Scene Coloring Page",
+        "Holiday Christmas Gingerbread Cookie Family In Snow Scene Coloring Page",
+        "Holiday Christmas Holiday Cookie Decorating Coloring Page",
+        "Holiday Christmas Holiday Cookie Decorating With Kids Coloring Page",
+        "Holiday Christmas Mrs Claus Baking Holiday Cookies Coloring Page",
+        "Mandala Geometry Patterns Bakery Animal Shaped Cookies",
+        "Mandala Geometry Patterns Bakery Baking Sheet Full Of Cookies",
+        "Mandala Geometry Patterns Bakery Candy Cane Cookies",
+        "Mandala Geometry Patterns Bakery Chocolate Chip Cookie",
+        "Mandala Geometry Patterns Bakery Cookie Decorating",
+        "Mandala Geometry Patterns Bakery Cookie Jar",
+        "Mandala Geometry Patterns Bakery Gingerbread Cookie",
+        "Mandala Geometry Patterns Bakery Heart Shaped Cookies",
+        "Mandala Geometry Patterns Bakery Star Shaped Cookies",
+        "Mandala Geometry Patterns Bakery Sugar Cookie Shapes",
+        "Mandala Geometry Patterns Plushie Cookie Character"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_elephants",
+      "route": "/coloring-pages/elephants",
+      "title": "Elephants Coloring Pages",
+      "assetCount": 17,
+      "intro": "Elephants appear alone, in family groups, walking through landscapes, and in decorative portrait treatments.",
+      "portraitCount": 17,
+      "displayTitles": [
+        "Animals Elephants",
+        "Anime Girl Summoning Jutsu Elephants",
+        "Plushie Elephant",
+        "Plushie Elephant Family",
+        "Holiday Birthday Celebration Plushie Elephant Family",
+        "Holiday Christmas Plushie Elephant Family",
+        "Holiday Halloween Costume Plushie Elephant Family",
+        "Mandala Geometry Patterns Elephant",
+        "Mandala Geometry Patterns Plushie Animals Elephant",
+        "Mandala Geometry Patterns Plushie Elephant",
+        "Mandala Geometry Patterns Plushie Elephant Animals",
+        "Indoor Plants Colocasia Elephant Ear",
+        "Anime Girl Elephant Hoodie Plushie",
+        "Anime Girl Summoning Jutsu Elephant Plushies",
+        "Chibi Elephant",
+        "Chibi Plushie Elephant",
+        "Mandala Geometry Patterns Elephant Face Patterns"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_stegosaurus",
+      "route": "/coloring-pages/stegosaurus",
+      "title": "Stegosaurus Coloring Pages",
+      "assetCount": 17,
+      "intro": "Stegosaurus designs emphasize back plates and tail spikes in standing, walking, and prehistoric scenes.",
+      "portraitCount": 17,
+      "displayTitles": [
+        "Prehistoric Stegosaurus",
+        "Prehistoric Stegosaurus Gardening",
+        "Plushie Prehistoric Stegosaurus",
+        "Plushie Prehistoric Stegosaurus Family",
+        "Holiday Christmas Prehistoric Stegosaurus",
+        "Holiday Halloween Costume Plushie Prehistoric Stegosaurus Family",
+        "Mandala Geometry Patterns Plushie Prehistoric Stegosaurus",
+        "Mandala Geometry Patterns Plushie Prehistoric Stegosaurus Animal",
+        "Mandala Geometry Patterns Prehistoric Stegosaurus",
+        "Anime Girl Stegosaurus Hoodie Plushie: Design 1",
+        "Anime Girl Stegosaurus Hoodie Plushie: Design 2",
+        "Anime Girl Stegosaurus Hoodie Plushies",
+        "Anime Girl Summoning Jutsu Stegosaurus",
+        "Anime Girl Summoning Jutsu Stegosaurus Plushies",
+        "Chibi Plushie Prehistoric Stegosaurus",
+        "Holiday Birthday Celebration Plushie Prehistoric Stegosaurus Family",
+        "Holiday Christmas Plushie Prehistoric Stegosaurus Family"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_moose",
+      "route": "/coloring-pages/moose",
+      "title": "Moose Coloring Pages",
+      "assetCount": 18,
+      "intro": "Moose appear with broad antlers, in forest and lakeside settings, and in calm standing poses.",
+      "portraitCount": 18,
+      "displayTitles": [
+        "Christmas Holiday Moose",
+        "Plushie Moose",
+        "Plushie Moose Family",
+        "Holiday Christmas Plushie Happy Moose Family",
+        "Holiday Christmas Plushie Moose Family",
+        "Holiday Halloween Costume Plushie Moose Family",
+        "Mandala Geometry Patterns Plushie Animals Moose",
+        "Mandala Geometry Patterns Plushie Moose",
+        "Anime Girl Moose Hoodie Plushie",
+        "Anime Girl Moose Hoodie Plushie Cosplay",
+        "Anime Girl Summoning Jutsu Moose",
+        "Anime Girl Summoning Jutsu Moose Plushies",
+        "Chibi Dino Moose",
+        "Chibi Moose",
+        "Chibi Moose Animal",
+        "Chibi Plushie Moose",
+        "Holiday Birthday Celebration Plushie Moose Family",
+        "Mandala Geometry Patterns Plushie Moose Animals"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_phoenix",
+      "route": "/coloring-pages/phoenix",
+      "title": "Phoenix Coloring Pages",
+      "assetCount": 18,
+      "intro": "Phoenix designs emphasize sweeping wings, flame-like feathers, flight, and dramatic fantasy compositions.",
+      "portraitCount": 18,
+      "displayTitles": [
+        "Plushie Phoenix",
+        "Holiday Birthday Celebration Phoenix",
+        "Mandala Geometry Patterns Plushie Phoenix",
+        "Anime Girl Phoenix Rebirth Battle",
+        "Anime Girl Phoenix Spirit",
+        "Chibi Flaming Phoenix",
+        "Chibi Phoenix",
+        "Chibi Plushie Phoenix",
+        "Fantasy Chibi Phoenix",
+        "Fantasy Chibi Phoenix Flight",
+        "Fantasy Creatures Phoenix",
+        "Fantasy Creatures Phoenix Rising",
+        "Fantasy Flaming Phoenix Rebirth",
+        "Fantasy Phoenix Feather Nest",
+        "Fantasy Phoenix Rebirth",
+        "Fantasy Phoenix Rising From The Ashes",
+        "Fantasy Sunrise Phoenix Guardian",
+        "Mythology Phoenix"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_snakes",
+      "route": "/coloring-pages/snakes",
+      "title": "Snakes Coloring Pages",
+      "assetCount": 18,
+      "intro": "Snakes appear coiled, moving through habitats, in close scale studies, and in patterned designs.",
+      "portraitCount": 18,
+      "displayTitles": [
+        "Reptiles Snakes",
+        "Anime Girl Summoning Jutsu Snakes",
+        "Plushie Snake",
+        "Plushie Snake Family",
+        "Reptiles Monitor Lizard With Rattle Snake Rattler",
+        "Reptiles Snake Coiled On Tree Branch",
+        "Holiday Birthday Celebration Plushie Snake Family",
+        "Holiday Christmas Plushie Snake Family",
+        "Mandala Geometry Patterns Plushie Snake",
+        "Mandala Geometry Patterns Plushie Snake Animals",
+        "Mandala Geometry Patterns Snake",
+        "Indoor Plants Snake Plant",
+        "Mandala Geometry Patterns Two Headed Snake Patterns",
+        "Anime Girl Snake Charming",
+        "Anime Girl Snake Hoodie Plushie: Design 1",
+        "Anime Girl Snake Hoodie Plushie: Design 2",
+        "Anime Girl Summoning Jutsu Snake Plushies",
+        "Chibi Plushie Snake"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_t_rex",
+      "route": "/coloring-pages/t-rex",
+      "title": "T-Rex Coloring Pages",
+      "assetCount": 18,
+      "intro": "T-Rex designs show large-headed predators in roaring, walking, hunting, and scenic prehistoric poses.",
+      "portraitCount": 18,
+      "displayTitles": [
+        "Anime Girl T Rex Hoodie Plushie: Design 1",
+        "Anime Girl T Rex Hoodie Plushie: Design 2",
+        "Anime Girl T Rex Hoodie Plushie Back Yard",
+        "Anime Girl T Rex Hoodie Plushie Volcano",
+        "Prehistoric Tyrannosaurus Rex",
+        "Plushie Prehistoric Tyrannosaurus Rex",
+        "Plushie Prehistoric Tyrannosaurus Rex Family",
+        "Holiday Birthday Celebration Plushie Prehistoric Tyrannosaurus Rex Family",
+        "Holiday Birthday Celebration Tyrannosaurus Rex",
+        "Holiday Christmas Plushie Prehistoric Tyrannosaurus Rex Family",
+        "Holiday Halloween Costume Plushie Prehistoric Tyrannosaurus Rex Family",
+        "Mandala Geometry Patterns Plushie Prehistoric Tyrannosaurus Rex",
+        "Mandala Geometry Patterns Plushie Prehistoric Tyrannosaurus Rex Animal",
+        "Mandala Geometry Patterns Prehistoric Tyrannosaurus Rex",
+        "Anime Girl Summoning Jutsu Tyrannosaurus Rex Dinosaur",
+        "Chibi Plushie Prehistoric Tyrannosaurus Rex",
+        "Chibi Tyrannosaurus Rex",
+        "Holiday Christmas Prehistoric Tyrannosaurus Rex"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_ducks",
+      "route": "/coloring-pages/ducks",
+      "title": "Ducks Coloring Pages",
+      "assetCount": 19,
+      "intro": "Ducks and ducklings appear swimming, standing, nesting, and moving through pond settings.",
+      "portraitCount": 19,
+      "displayTitles": [
+        "Birds Ducks",
+        "Birds Pintail Duck",
+        "Birds Ruddy Duck",
+        "Birds Whistling Duck",
+        "Birds Wood Duck",
+        "Plushie Duck Family",
+        "Plushie Turtle Duck",
+        "Animals Duck",
+        "Holiday Christmas Plushie Duck Family",
+        "Holiday Halloween Costume Plushie Duck Family",
+        "Mandala Geometry Patterns Plushie Duck",
+        "Mandala Geometry Patterns Plushie Duck Animals",
+        "Mandala Geometry Patterns Plushie Happy Duck",
+        "Birds Shoveler Duck",
+        "Anime Girl Birds Duck",
+        "Anime Girl Duck Hoodie Plushie",
+        "Anime Girl Duck Outfit",
+        "Chibi Plushie Duck",
+        "Holiday Birthday Celebration Plushie Duck Family"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_giraffes",
+      "route": "/coloring-pages/giraffes",
+      "title": "Giraffes Coloring Pages",
+      "assetCount": 19,
+      "intro": "Giraffes appear in tall standing poses, family scenes, close portraits, and savanna settings.",
+      "portraitCount": 19,
+      "displayTitles": [
+        "Anime Girl Summoning Jutsu Giraffes",
+        "Plushie Giraffe",
+        "Plushie Giraffe Family",
+        "Holiday Birthday Celebration Plushie Giraffe Family",
+        "Holiday Christmas Plushie Giraffe Family",
+        "Holiday Halloween Costume Plushie Giraffe Family",
+        "Mandala Geometry Patterns Giraffe",
+        "Mandala Geometry Patterns Giraffe Face Patterns",
+        "Anime Girl Giraffe Hoodie Animal Plushie",
+        "Anime Girl Giraffe Hoodie Plushie: Design 1",
+        "Anime Girl Giraffe Hoodie Plushie: Design 2",
+        "Anime Girl Giraffe Hoodie Plushie Cosplay",
+        "Anime Girl Summoning Jutsu Cute Giraffe Plushies",
+        "Anime Girl Summoning Jutsu Giraffe",
+        "Anime Girl Summoning Jutsu Giraffe Plushies",
+        "Chibi Giraffe",
+        "Chibi Plushie Giraffe",
+        "Mandala Geometry Patterns Plushie Animals Giraffe",
+        "Mandala Geometry Patterns Plushie Giraffe"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_sharks",
+      "route": "/coloring-pages/sharks",
+      "title": "Sharks Coloring Pages",
+      "assetCount": 19,
+      "intro": "Sharks appear swimming, hunting, in close body views, and among reefs or open-water scenes.",
+      "portraitCount": 19,
+      "displayTitles": [
+        "Plushie Prehistoric Land Shark Family",
+        "Sea Life Basking Shark",
+        "Sea Life Blue Shark Deep Sea Scene",
+        "Sea Life Great White Shark",
+        "Sea Life Great White Shark Hunting Scene",
+        "Sea Life Hammerhead Shark",
+        "Sea Life Leopard Shark",
+        "Sea Life Reef Shark",
+        "Sea Life Shark",
+        "Sea Life Thresher Shark",
+        "Sea Life Tiger Shark",
+        "Sea Life Tiger Shark Swimming Near Reef",
+        "Mandala Geometry Patterns Shark",
+        "Mandala Geometry Patterns Shark Face Patterns",
+        "Sea Life Hammerhead Shark School Swimming",
+        "Anime Girl Shark Hoodie Plushie: Design 1",
+        "Anime Girl Shark Hoodie Plushie: Design 2",
+        "Anime Girl Summoning Jutsu Great White Shark Plushies",
+        "Chibi Megalodon Tiger Shark"
+      ],
+      "reviewStatus": "reviewed"
+    },
+    {
+      "hubId": "hub_zebras",
+      "route": "/coloring-pages/zebras",
+      "title": "Zebras Coloring Pages",
+      "assetCount": 19,
+      "intro": "Zebras appear in striped portraits, walking or running poses, herds, and savanna settings.",
+      "portraitCount": 19,
+      "displayTitles": [
+        "Anime Girl Summoning Jutsu Zebras",
+        "Indoor Plants Zebra Haworthia",
+        "Indoor Plants Zebra Plant Aphelandra",
+        "Indoor Plants Zebra Succulent",
+        "Plushie Zebra",
+        "Holiday Birthday Celebration Plushie Zebra Family",
+        "Holiday Halloween Costume Plushie Zebra Family",
+        "Mandala Geometry Patterns Zebra",
+        "Mandala Geometry Patterns Plushie Zebra Animals",
+        "Plushie Zebra Family",
+        "Anime Girl Summoning Jutsu Zebra Plushies",
+        "Anime Girl Zebra Hoodie Plushie: Design 1",
+        "Anime Girl Zebra Hoodie Plushie: Design 2",
+        "Anime Girl Zebra Hoodie Plushie Blowing Bubbles",
+        "Chibi Plushie Zebra",
+        "Chibi Zebra",
+        "Holiday Christmas Plushie Zebra Family",
+        "Mandala Geometry Patterns Plushie Zebra",
+        "Mandala Geometry Patterns Zebra Face Patterns"
+      ],
+      "reviewStatus": "reviewed"
+    }
+  ]
+}

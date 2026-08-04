@@ -1,0 +1,103 @@
+{
+  "appUrl": "http://localhost:3005",
+  "browsers": [
+    {
+      "id": "chrome",
+      "available": true,
+      "version": "150.0.7871.187",
+      "pageChecks": 55,
+      "failures": []
+    },
+    {
+      "id": "edge",
+      "available": true,
+      "version": "151.0.4129.59",
+      "pageChecks": 55,
+      "failures": []
+    }
+  ],
+  "routes": [
+    {
+      "path": "/",
+      "family": "home",
+      "adsAllowed": true
+    },
+    {
+      "path": "/coloring-pages",
+      "family": "gallery",
+      "adsAllowed": true
+    },
+    {
+      "path": "/coloring-pages/animals",
+      "family": "hub",
+      "adsAllowed": true
+    },
+    {
+      "path": "/printables/animals/animals-alligator-4feec8505a",
+      "family": "printable",
+      "adsAllowed": true
+    },
+    {
+      "path": "/privacy",
+      "family": "trust",
+      "adsAllowed": false
+    },
+    {
+      "path": "/terms",
+      "family": "trust",
+      "adsAllowed": false
+    },
+    {
+      "path": "/editorial-policy",
+      "family": "trust",
+      "adsAllowed": false
+    },
+    {
+      "path": "/affiliate-disclosure",
+      "family": "trust",
+      "adsAllowed": false
+    },
+    {
+      "path": "/contact",
+      "family": "trust",
+      "adsAllowed": false
+    },
+    {
+      "path": "/sitemap",
+      "family": "html-sitemap",
+      "adsAllowed": false
+    },
+    {
+      "path": "/ads-trust-readiness-missing-page",
+      "family": "not-found",
+      "adsAllowed": false,
+      "expectedStatus": 404
+    }
+  ],
+  "viewports": [
+    390,
+    768,
+    1024,
+    1440,
+    1920
+  ],
+  "screenshots": [
+    "pipeline/review/ads-trust-readiness/chrome-390-home.png",
+    "pipeline/review/ads-trust-readiness/chrome-390-printable.png",
+    "pipeline/review/ads-trust-readiness/chrome-390-trust.png",
+    "pipeline/review/ads-trust-readiness/chrome-390-not-found.png",
+    "pipeline/review/ads-trust-readiness/chrome-1440-home.png",
+    "pipeline/review/ads-trust-readiness/chrome-1440-printable.png",
+    "pipeline/review/ads-trust-readiness/chrome-1920-home.png"
+  ],
+  "summary": {
+    "availableBrowsers": [
+      "chrome",
+      "edge"
+    ],
+    "unavailableBrowsers": [],
+    "pageChecks": 110,
+    "failures": [],
+    "passed": true
+  }
+}
