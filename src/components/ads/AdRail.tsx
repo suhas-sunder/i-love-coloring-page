@@ -15,7 +15,7 @@ export function AdRail({ side, pageFamily }: AdRailProps) {
 
   return (
     <aside className={`ad-rail ${sideClass}`} aria-label={`${side} desktop advertising rail`}>
-      <AdSlot slotId={slotId} />
+      <AdSlot slotId={slotId} pageFamily={pageFamily} />
     </aside>
   );
 }

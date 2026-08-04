@@ -4,6 +4,7 @@ import os from "node:os";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
 import test from "node:test";
+import { inflateSync } from "node:zlib";
 
 import ts from "typescript";
 
@@ -21,6 +22,10 @@ test("shared composition constants preserve Letter PDF and 300 DPI raster output
   const spec = composition.PRINTABLE_COMPOSITION;
   assert.equal(spec.page.widthPt, 612);
   assert.equal(spec.page.heightPt, 792);
+  assert.equal(spec.page.paperSize, "US Letter");
+  assert.equal(spec.page.orientation, "portrait");
+  assert.equal(spec.page.widthIn, 8.5);
+  assert.equal(spec.page.heightIn, 11);
   assert.equal(spec.page.widthPx, 2550);
   assert.equal(spec.page.heightPx, 3300);
   assert.equal(spec.page.rasterDpi, 300);
@@ -131,12 +136,101 @@ test("synthetic PDF remains one Letter page with the shared frame, artwork, and 
     assert.equal(pdf.brandingOverlapsArtwork, false);
     assert.equal(pdf.appUiControlsIncluded, false);
     assert.equal(pdf.pdfByteLength > 0, true);
+    assert.equal(pdf.pdfBlob.type, "application/pdf");
+    const pdfBytes = Buffer.from(await pdf.pdfBlob.arrayBuffer());
+    const pdfMagic = pdfBytes.subarray(0, 4).toString("ascii");
+    assert.equal(pdfMagic, "%PDF");
+    assert.ok(pdfBytes.length <= 3 * 1024 * 1024, `compressed fixture is ${pdfBytes.length} bytes`);
+    const image = parsePdfImageStream(pdfBytes);
+    assert.equal(image.colorSpace, "/DeviceRGB");
+    assert.equal(image.bitsPerComponent, 8);
+    assert.equal(image.filter, "/FlateDecode");
+    assert.equal(image.width, 2400);
+    assert.equal(image.height, 1600);
+    assert.ok(image.bytes.length < image.width * image.height * 3);
+    const inflated = inflateSync(image.bytes);
+    assert.equal(inflated.length, image.width * image.height * 3);
+    assert.equal(inflated.every((byte) => byte === 255), true);
+    assert.doesNotMatch(pdfBytes.toString("latin1"), /\/Length 11520000\s*>>\s*stream/);
+    assertValidClassicXref(pdfBytes);
+    assert.match(pdfBytes.toString("latin1"), /\/Title \(Synthetic Landscape - iLoveColoringPage\.com\)/);
     assert.equal(composition.boxesOverlap(pdf.imageBox, pdf.brandBox), false);
     assert.equal(pdf.filename, "synthetic-landscape.pdf");
     downloads.revokePreparedPrintPdf(pdf);
   } finally {
     mock.restore();
   }
+});
+
+test("direct PDF download reuses preparation, stays separate from print, and releases every temporary URL", async () => {
+  const source = await readFile(path.join(ROOT, "src/lib/coloring/browserDownloads.ts"), "utf8");
+  const directDownloadSource = sliceBetween(source, "export async function downloadOnePagePdf", "export function revokePreparedPrintImage");
+  const printSource = sliceBetween(source, "export async function printOnePagePdf", "export async function downloadOnePagePdf");
+  assert.match(directDownloadSource, /prepareOnePagePrintPdf\(options\)/);
+  assert.match(directDownloadSource, /triggerUrlDownload\(prepared\.pdfUrl, prepared\.filename\)/);
+  assert.match(directDownloadSource, /revokePreparedPrintPdf\(prepared\)/);
+  assert.doesNotMatch(directDownloadSource, /triggerPdfPrint|\.print\(|iframe|window\.open/);
+  assert.match(printSource, /prepareOnePagePrintPdf\(options\)/);
+  assert.match(printSource, /triggerPdfPrint\(prepared\)/);
+
+  const mock = installCanvasMock();
+  try {
+    for (let attempt = 0; attempt < 2; attempt += 1) {
+      const result = await downloads.downloadOnePagePdf({
+        internalSvgUrl: svgDataUrl(),
+        pngPreviewUrl: null,
+        title: "Synthetic Landscape",
+        filenameBaseName: "Synthetic Landscape",
+        altText: "Synthetic landscape coloring page",
+      });
+      assert.equal(result.ok, true);
+      assert.equal(result.mimeType, "application/pdf");
+      assert.equal(result.filename, "synthetic-landscape.pdf");
+      assert.equal(result.pageCount, 1);
+      assert.equal(result.pageSize, "letter-portrait");
+      assert.deepEqual(result.pageDimensions, { widthPt: 612, heightPt: 792 });
+      assert.equal(result.message, "PDF download started.");
+      assert.equal(mock.activeObjectUrls.size, 0);
+    }
+
+    assert.equal(mock.anchors.length, 2);
+    assert.equal(mock.anchors.every((anchor) => anchor.clicked && anchor.removed && !anchor.attached), true);
+    assert.deepEqual(mock.anchors.map((anchor) => anchor.download), ["synthetic-landscape.pdf", "synthetic-landscape.pdf"]);
+    assert.equal(mock.createdObjectUrls.length, 2);
+    assert.equal(mock.revokedObjectUrls.length, 2);
+    assert.deepEqual(mock.revokedObjectUrls, mock.createdObjectUrls);
+    assert.equal(mock.createdElements.includes("iframe"), false);
+  } finally {
+    mock.restore();
+  }
+});
+
+test("canonical printable actions and format descriptions communicate the actual outputs", async () => {
+  const actions = await readFile(path.join(ROOT, "src/components/coloring/PrintableDetailActions.tsx"), "utf8");
+  const cardActions = await readFile(path.join(ROOT, "src/components/coloring/PrintableCardActions.tsx"), "utf8");
+  const menu = await readFile(path.join(ROOT, "src/components/coloring/DownloadMenu.tsx"), "utf8");
+  const detail = await readFile(path.join(ROOT, "src/components/coloring/PrintableDetailPage.tsx"), "utf8");
+
+  assert.match(actions, /downloadOnePagePdf/);
+  assert.match(actions, /Preparing PDF/);
+  assert.match(actions, /aria-busy=\{preparingPdf\}/);
+  assert.match(actions, /role="status"[^>]*aria-live="polite"/);
+  assertOrder(actions, ["Download PDF", "<PrintableCardActions", "Download image"]);
+  assert.match(cardActions, /buttonClassName \|\| "button button-ghost button-small gallery-print-button"/);
+  assert.match(actions, /buttonClassName="button button-subtle"/);
+  assert.match(menu, /Printable page image, \$\{PRINTABLE_COMPOSITION\.page\.widthPx\} × \$\{PRINTABLE_COMPOSITION\.page\.heightPx\} px/);
+  assert.match(menu, /High-resolution artwork image/);
+  assert.match(menu, /recommended: true/);
+  assert.match(menu, /aria-describedby/);
+  assert.doesNotMatch(menu, /Download SVG|label:\s*"SVG"|downloadSvg/i);
+  assert.doesNotMatch(detail, /<dt>Artwork size<\/dt>/);
+  assert.match(detail, /<dt>Printable PDF<\/dt>/);
+  assert.match(detail, /<dt>PDF paper size<\/dt>/);
+  assert.match(detail, /<dt>PNG\/JPG output<\/dt>/);
+  assert.match(detail, /<dt>WebP output<\/dt><dd>Artwork image<\/dd>/);
+  assert.match(detail, /PRINTABLE_COMPOSITION\.page\.widthPx/);
+  assert.match(detail, /Download PDF saves a printable US Letter document/);
+  assert.match(detail, /Print prepares the same PDF and opens the device print workflow/);
 });
 
 test("filename behavior, SVG exclusion, and conversion failure remain user-safe", async () => {
@@ -169,7 +263,33 @@ test("PDF output consumes the shared layout and preserves its existing geometry 
   assert.match(source, /PRINT_PAGE_WIDTH_PT = PRINTABLE_COMPOSITION\.page\.widthPt/);
   assert.match(source, /PRINT_PAGE_HEIGHT_PT = PRINTABLE_COMPOSITION\.page\.heightPt/);
   assert.match(source, /PRINT_BRAND_FONT_SIZE = PRINTABLE_COMPOSITION\.branding\.fontSizePt/);
+  assert.match(source, /await buildPrintPdfBytes\(rendered\.canvas, layout, metadataTitle\)/);
+  assert.match(source, /new CompressionStream\("deflate"\)/);
+  assert.match(source, /new Response\(compressor\.readable\)\.arrayBuffer\(\)/);
+  assert.match(source, /"\/Filter \/FlateDecode"/);
+  assert.doesNotMatch(source, /base64|btoa\(|toDataURL\([^)]*pdf/i);
   assert.equal(source.includes("function getPrintPdfLayout"), false);
+});
+
+test("PDF compression failure stays explicit instead of emitting a raw or empty document", async () => {
+  const originalCompressionStream = globalThis.CompressionStream;
+  const mock = installCanvasMock();
+  try {
+    globalThis.CompressionStream = undefined;
+    const result = await downloads.prepareOnePagePrintPdf({
+      internalSvgUrl: svgDataUrl(),
+      pngPreviewUrl: null,
+      title: "Synthetic Landscape",
+      altText: "Synthetic landscape coloring page",
+    });
+    assert.equal(result.ok, false);
+    assert.equal(result.reason, "pdf-generation-failed");
+    assert.match(result.message, /could not be prepared/i);
+    assert.equal(mock.createdObjectUrls.length, 0);
+  } finally {
+    globalThis.CompressionStream = originalCompressionStream;
+    mock.restore();
+  }
 });
 
 function assertOpaqueWhitePage(canvas) {
@@ -186,6 +306,11 @@ function svgDataUrl() {
 function installCanvasMock() {
   const originals = new Map();
   const canvases = [];
+  const anchors = [];
+  const createdElements = [];
+  const createdObjectUrls = [];
+  const revokedObjectUrls = [];
+  const activeObjectUrls = new Set();
 
   class FakeContext {
     constructor(canvas) { this.canvas = canvas; }
@@ -229,20 +354,59 @@ function installCanvasMock() {
     set src(_value) { queueMicrotask(() => this.onload?.()); }
   }
 
+  class FakeAnchor {
+    href = "";
+    download = "";
+    rel = "";
+    attached = false;
+    clicked = false;
+    removed = false;
+    click() { this.clicked = true; }
+    remove() { this.removed = true; this.attached = false; }
+  }
+
   setGlobal("window", { setTimeout, clearTimeout });
   setGlobal("document", {
+    body: {
+      append(element) { element.attached = true; }
+    },
     createElement(name) {
-      if (name !== "canvas") throw new Error(`Unexpected element: ${name}`);
-      const canvas = new FakeCanvas();
-      canvases.push(canvas);
-      return canvas;
+      createdElements.push(name);
+      if (name === "canvas") {
+        const canvas = new FakeCanvas();
+        canvases.push(canvas);
+        return canvas;
+      }
+      if (name === "a") {
+        const anchor = new FakeAnchor();
+        anchors.push(anchor);
+        return anchor;
+      }
+      throw new Error(`Unexpected element: ${name}`);
     },
   });
   setGlobal("Image", FakeImage);
   setGlobal("HTMLCanvasElement", FakeCanvas);
+  setGlobal("URL", {
+    createObjectURL() {
+      const url = `blob:test-${createdObjectUrls.length + 1}`;
+      createdObjectUrls.push(url);
+      activeObjectUrls.add(url);
+      return url;
+    },
+    revokeObjectURL(url) {
+      revokedObjectUrls.push(url);
+      activeObjectUrls.delete(url);
+    },
+  });
 
   return {
     canvases,
+    anchors,
+    createdElements,
+    createdObjectUrls,
+    revokedObjectUrls,
+    activeObjectUrls,
     restore() {
       for (const [key, value] of originals) {
         if (value.exists) globalThis[key] = value.value;
@@ -255,6 +419,64 @@ function installCanvasMock() {
     originals.set(key, { exists: Object.hasOwn(globalThis, key), value: globalThis[key] });
     globalThis[key] = value;
   }
+}
+
+function sliceBetween(source, start, end) {
+  const startIndex = source.indexOf(start);
+  const endIndex = source.indexOf(end, startIndex + start.length);
+  assert.notEqual(startIndex, -1, start);
+  assert.notEqual(endIndex, -1, end);
+  return source.slice(startIndex, endIndex);
+}
+
+function assertOrder(source, values) {
+  let previous = -1;
+  for (const value of values) {
+    const index = source.indexOf(value);
+    assert.ok(index > previous, `${value} must appear after the previous value`);
+    previous = index;
+  }
+}
+
+function parsePdfImageStream(pdfBytes) {
+  const objectStart = pdfBytes.indexOf(Buffer.from("4 0 obj\n", "ascii"));
+  assert.notEqual(objectStart, -1);
+  const streamMarker = Buffer.from("stream\n", "ascii");
+  const streamMarkerStart = pdfBytes.indexOf(streamMarker, objectStart);
+  assert.notEqual(streamMarkerStart, -1);
+  const dictionary = pdfBytes.subarray(objectStart, streamMarkerStart).toString("ascii");
+  const length = Number(requiredMatch(dictionary, /\/Length\s+(\d+)/));
+  const streamStart = streamMarkerStart + streamMarker.length;
+  const bytes = pdfBytes.subarray(streamStart, streamStart + length);
+  assert.equal(pdfBytes.subarray(streamStart + length, streamStart + length + 11).toString("ascii"), "\nendstream\n");
+  return {
+    bytes,
+    width: Number(requiredMatch(dictionary, /\/Width\s+(\d+)/)),
+    height: Number(requiredMatch(dictionary, /\/Height\s+(\d+)/)),
+    colorSpace: requiredMatch(dictionary, /\/ColorSpace\s+(\/\w+)/),
+    bitsPerComponent: Number(requiredMatch(dictionary, /\/BitsPerComponent\s+(\d+)/)),
+    filter: requiredMatch(dictionary, /\/Filter\s+(\/\w+)/),
+  };
+}
+
+function assertValidClassicXref(pdfBytes) {
+  const source = pdfBytes.toString("latin1");
+  const xrefOffset = Number(requiredMatch(source, /startxref\s+(\d+)\s+%%EOF/));
+  assert.equal(pdfBytes.subarray(xrefOffset, xrefOffset + 4).toString("ascii"), "xref");
+  const xref = source.slice(xrefOffset);
+  const entries = [...xref.matchAll(/^(\d{10}) 00000 n $/gm)];
+  assert.equal(entries.length, 7);
+  entries.forEach((entry, index) => {
+    const objectId = index + 1;
+    const objectOffset = Number(entry[1]);
+    assert.equal(pdfBytes.subarray(objectOffset, objectOffset + `${objectId} 0 obj`.length).toString("ascii"), `${objectId} 0 obj`);
+  });
+}
+
+function requiredMatch(value, pattern) {
+  const match = value.match(pattern);
+  assert.ok(match, pattern.toString());
+  return match[1];
 }
 
 async function importExportModules() {

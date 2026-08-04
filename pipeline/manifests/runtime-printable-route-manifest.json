@@ -23,9 +23,9 @@
     "fallbackCount": 0,
     "exceptionalNormalizationCount": 1,
     "titleReviewItemCount": 341,
-    "recordSha256": "97d4f2b81631e987c87e8215182a4ca1f26f6881c478f4f4e076e9e599e214e5",
-    "relatedPrintableRule": "verified-shared-narrow-subjects-rank-first; then verified-style-season-pattern and broader-hub signals; unique-title-first; deterministic-pair-hash-final-tie-break; maximum-12",
-    "relatedHubRule": "existing-membership-or-routed-hub-relationship-only; parent-family-requires-shared-primary-members; thin-hubs-require-direct-membership; promotion-cluster-cap-1; stable-score-and-hubId-tie-break; maximum-6"
+    "recordSha256": "4fc394e39aa4d8e2b0e2e96ebbc586d00c91e5e18479748b72dbb6075e77bed6",
+    "relatedPrintableRule": "verified-specific-subjects-rank-first; direct-shared-membership-and-strong-title-token-overlap-next; then style-season-pattern-parent signals; canonical-destination-deduplication; deterministic-pair-hash-final-tie-break; maximum-12",
+    "relatedHubRule": "direct-membership-first; strong-hub-title-or-member-title-evidence-may-add-routed-candidates; broad inventory size is not a positive signal; thin-hubs-require-direct-membership; promotion-cluster-cap-1; stable-score-and-hubId-tie-break; maximum-6"
   },
   "titleReview": {
     "summary": {

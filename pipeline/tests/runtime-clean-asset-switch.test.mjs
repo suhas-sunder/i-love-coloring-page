@@ -112,7 +112,7 @@ test("runtime switch preserves source and deferred production boundaries", async
   assert.equal(browserQa.summary.svgUserDownloadAbsent, true);
   assert.equal(await gitStatusFor("images"), "");
   assert.equal(await gitStatusFor("ilovesvg"), "");
-  assert.doesNotMatch(projectText, /adsbygoogle|pagead2\.googlesyndication|ca-pub-/i);
+  assert.doesNotMatch(projectText, /google_ad_client|NEXT_PUBLIC_ADSENSE_PUBLISHER_ID|NEXT_PUBLIC_ADSENSE_SLOTS_JSON/i);
   assert.doesNotMatch(projectText, /opengraph-image|twitter-image|ImageResponse/i);
   assert.equal(existsSync(path.join(REPO_ROOT, "app", "api")), false);
 });

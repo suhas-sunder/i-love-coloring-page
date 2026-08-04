@@ -14,6 +14,18 @@ export const AD_BREAKPOINTS = {
   sideRailsMinWidth: 1536,
 } as const;
 
+export const ADSENSE_PUBLISHER_ID = "pub-4810616735714570";
+export const ADSENSE_CLIENT_ID = "ca-pub-4810616735714570";
+export const ADS_TXT_RECORD = "google.com, pub-4810616735714570, DIRECT, f08c47fec0942fa0";
+
+export const ADSENSE_AD_UNIT_IDS = {
+  headerBanner: "5574432869",
+  leftSidebar: "5115981872",
+  rightSidebar: "9929324856",
+  square: "2489818539",
+  lowerBanner: "5382861174",
+} as const;
+
 const bannerSize = sizes({ width: 728, height: 90 }, { width: 468, height: 60 }, { width: 320, height: 50 });
 const squareSize = sizes({ width: 300, height: 300 }, { width: 300, height: 300 }, { width: 280, height: 280 });
 const railSize = sizes({ width: 160, height: 600 }, { width: 0, height: 0 }, { width: 0, height: 0 });
@@ -40,6 +52,30 @@ export const AD_SLOT_DEFINITIONS: Record<AdSlotId, AdSlotDefinition> = {
   "printable-supporting-square": square("printable-supporting-square", ["printable"], "Printable square allocation beside printing guidance."),
   "trust-header-banner": banner("trust-header-banner", "top-banner", ["trust"], "Reduced trust-page banner below the global header."),
   "sitemap-header-banner": banner("sitemap-header-banner", "top-banner", ["html-sitemap"], "Reduced human-sitemap banner below the global header."),
+};
+
+export const ADSENSE_SLOT_IDS: Record<AdSlotId, string> = {
+  "rail-left-desktop": ADSENSE_AD_UNIT_IDS.leftSidebar,
+  "rail-right-desktop": ADSENSE_AD_UNIT_IDS.rightSidebar,
+  "home-header-banner": ADSENSE_AD_UNIT_IDS.headerBanner,
+  "home-after-hero": ADSENSE_AD_UNIT_IDS.headerBanner,
+  "home-lower-content": ADSENSE_AD_UNIT_IDS.lowerBanner,
+  "coloring-pages-header-banner": ADSENSE_AD_UNIT_IDS.headerBanner,
+  "coloring-pages-after-featured": ADSENSE_AD_UNIT_IDS.headerBanner,
+  "coloring-pages-lower-content": ADSENSE_AD_UNIT_IDS.lowerBanner,
+  "hub-header-banner": ADSENSE_AD_UNIT_IDS.headerBanner,
+  "hub-after-gallery": ADSENSE_AD_UNIT_IDS.lowerBanner,
+  "hub-lower-content": ADSENSE_AD_UNIT_IDS.lowerBanner,
+  "printable-header-banner": ADSENSE_AD_UNIT_IDS.headerBanner,
+  "printable-after-related": ADSENSE_AD_UNIT_IDS.lowerBanner,
+  "home-supporting-square": ADSENSE_AD_UNIT_IDS.square,
+  "coloring-pages-supporting-square": ADSENSE_AD_UNIT_IDS.square,
+  "hub-post-header-banner": ADSENSE_AD_UNIT_IDS.headerBanner,
+  "hub-supporting-square": ADSENSE_AD_UNIT_IDS.square,
+  "printable-post-header-banner": ADSENSE_AD_UNIT_IDS.headerBanner,
+  "printable-supporting-square": ADSENSE_AD_UNIT_IDS.square,
+  "trust-header-banner": ADSENSE_AD_UNIT_IDS.headerBanner,
+  "sitemap-header-banner": ADSENSE_AD_UNIT_IDS.headerBanner,
 };
 
 export const AD_PAGE_LAYOUTS: Record<AdPageFamily, AdPageLayout> = {
@@ -77,13 +113,23 @@ export const AD_PAGE_LAYOUTS: Record<AdPageFamily, AdPageLayout> = {
     "supporting-square": "printable-supporting-square",
     "related-banner": "printable-after-related",
   }),
-  trust: condensedLayout({ "top-banner": "trust-header-banner" }),
-  "html-sitemap": condensedLayout({ "top-banner": "sitemap-header-banner" }),
+  trust: { mode: "none", sideRailsAllowed: false, slots: {} },
+  "html-sitemap": { mode: "none", sideRailsAllowed: false, slots: {} },
   "not-found": { mode: "none", sideRailsAllowed: false, slots: {} },
 };
 
 export function getAdSlotDefinition(slotId: AdSlotId) {
   return AD_SLOT_DEFINITIONS[slotId];
+}
+
+export function getAdsenseSlotId(slotId: AdSlotId) {
+  return ADSENSE_SLOT_IDS[slotId];
+}
+
+export function hasValidAdSenseConfiguration() {
+  return /^pub-\d{16}$/.test(ADSENSE_PUBLISHER_ID)
+    && /^ca-pub-\d{16}$/.test(ADSENSE_CLIENT_ID)
+    && Object.values(ADSENSE_SLOT_IDS).every((slotId) => /^\d{10}$/.test(slotId));
 }
 
 export function getAdPageLayout(pageFamily: AdPageFamily) {

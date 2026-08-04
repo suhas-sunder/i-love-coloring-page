@@ -7,6 +7,12 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { buildPrintableTitleAssignments } from "../lib/printable-title-quality.mjs";
+import {
+  buildHubTokenProfile,
+  countTokenOverlap,
+  getDiscoveryTokenProfile,
+  scoreHubInventoryTokenMatch,
+} from "../lib/gallery-discovery-quality.mjs";
 import { selectClusteredHubIds } from "../lib/taxonomy-promotion-policy.mjs";
 
 const SCRIPT_PATH = fileURLToPath(import.meta.url);
@@ -170,8 +176,8 @@ function buildOutputs(input, previousManifest, previousTitleManifest) {
         exceptionalNormalizationCount: normalizations.length,
         titleReviewItemCount: titleReview.reviewItemCount,
         recordSha256: recordHash,
-        relatedPrintableRule: "verified-shared-narrow-subjects-rank-first; then verified-style-season-pattern and broader-hub signals; unique-title-first; deterministic-pair-hash-final-tie-break; maximum-12",
-        relatedHubRule: "existing-membership-or-routed-hub-relationship-only; parent-family-requires-shared-primary-members; thin-hubs-require-direct-membership; promotion-cluster-cap-1; stable-score-and-hubId-tie-break; maximum-6",
+        relatedPrintableRule: "verified-specific-subjects-rank-first; direct-shared-membership-and-strong-title-token-overlap-next; then style-season-pattern-parent signals; canonical-destination-deduplication; deterministic-pair-hash-final-tie-break; maximum-12",
+        relatedHubRule: "direct-membership-first; strong-hub-title-or-member-title-evidence-may-add-routed-candidates; broad inventory size is not a positive signal; thin-hubs-require-direct-membership; promotion-cluster-cap-1; stable-score-and-hubId-tie-break; maximum-6",
       },
       titleReview,
       routes,
@@ -215,6 +221,7 @@ function addRelatedData(records, hubs, taxonomyPolicy) {
   );
   const availableAssetIdsByHub = new Map();
   const thinExposureByHubId = new Map();
+  const tokenProfileByAssetId = new Map(records.map((record) => [record.assetId, getDiscoveryTokenProfile(record.publicTitle)]));
 
   for (const [hubId, hub] of publicHubById) {
     availableAssetIdsByHub.set(
@@ -222,6 +229,25 @@ function addRelatedData(records, hubs, taxonomyPolicy) {
       [...new Set((hub.assetIds || []).filter((assetId) => recordByAssetId.has(assetId)))].sort(),
     );
   }
+
+  const hubTokenProfileById = new Map(
+    [...eligibleHubById].map(([hubId, hub]) => [hubId, {
+      inventory: buildHubTokenProfile(availableAssetIdsByHub.get(hubId) || [], recordByAssetId),
+      title: getDiscoveryTokenProfile(hubLabel(hub)),
+    }]),
+  );
+  const hubIdsByStrongMemberToken = new Map();
+  const hubIdsByStrongTitleToken = new Map();
+  for (const [hubId, profile] of hubTokenProfileById) {
+    for (const token of profile.inventory.strongMemberCounts.keys()) addMapSetValue(hubIdsByStrongMemberToken, token, hubId);
+    for (const token of profile.title.strongTokens) addMapSetValue(hubIdsByStrongTitleToken, token, hubId);
+  }
+  const discoveryContext = {
+    hubIdsByStrongMemberToken,
+    hubIdsByStrongTitleToken,
+    hubTokenProfileById,
+    tokenProfileByAssetId,
+  };
 
   return records.map((record) => {
     const primaryHub = required(publicHubById.get(record.primaryHubId), `Missing public primary hub for ${record.assetId}`);
@@ -232,6 +258,7 @@ function addRelatedData(records, hubs, taxonomyPolicy) {
       availableAssetIdsByHub,
       taxonomyPolicy,
       thinExposureByHubId,
+      discoveryContext,
     );
     for (const hubId of relatedHubIds) {
       const hub = eligibleHubById.get(hubId);
@@ -245,12 +272,13 @@ function addRelatedData(records, hubs, taxonomyPolicy) {
       recordByAssetId,
       eligibleHubById,
       availableAssetIdsByHub,
+      discoveryContext,
     );
     return { ...record, relatedAssetIds, relatedHubIds };
   });
 }
 
-function selectRelatedHubIds(record, primaryHub, eligibleHubById, availableAssetIdsByHub, taxonomyPolicy, thinExposureByHubId) {
+function selectRelatedHubIds(record, primaryHub, eligibleHubById, availableAssetIdsByHub, taxonomyPolicy, thinExposureByHubId, discoveryContext) {
   const directMembership = new Set(record.hubIds.filter((hubId) => eligibleHubById.has(hubId)));
   const explicitRelated = new Set((primaryHub.relatedHubIds || []).filter((hubId) => eligibleHubById.has(hubId)));
   const internalTargets = new Set((primaryHub.internalLinkingTargets || []).filter((hubId) => eligibleHubById.has(hubId)));
@@ -258,6 +286,27 @@ function selectRelatedHubIds(record, primaryHub, eligibleHubById, availableAsset
     [primaryHub.parentHubId, ...(primaryHub.childHubIds || [])].filter((hubId) => hubId && eligibleHubById.has(hubId)),
   );
   const candidates = new Set([...directMembership, ...explicitRelated, ...internalTargets, ...family]);
+  const recordTokenProfile = discoveryContext.tokenProfileByAssetId.get(record.assetId) || getDiscoveryTokenProfile(record.publicTitle);
+  const discoveredHubIds = new Set(recordTokenProfile.strongTokens.flatMap((token) => [
+    ...(discoveryContext.hubIdsByStrongMemberToken.get(token) || []),
+    ...(discoveryContext.hubIdsByStrongTitleToken.get(token) || []),
+  ]));
+  for (const hubId of discoveredHubIds) {
+    if (hubId === record.primaryHubId) continue;
+    const hubTokenProfile = discoveryContext.hubTokenProfileById.get(hubId);
+    if (!hubTokenProfile) continue;
+    const titleOverlap = countTokenOverlap(recordTokenProfile, hubTokenProfile.title);
+    const inventoryMatch = scoreHubInventoryTokenMatch(
+      recordTokenProfile,
+      hubTokenProfile.inventory,
+      (availableAssetIdsByHub.get(hubId) || []).length,
+    );
+    const requiredInventoryTokenMatches = Math.min(2, recordTokenProfile.strongTokens.length);
+    const hasStrongInventoryEvidence = requiredInventoryTokenMatches > 0
+      && inventoryMatch.matchedStrongMembers >= 2
+      && inventoryMatch.matchedStrongTokenCount >= requiredInventoryTokenMatches;
+    if (titleOverlap.strong > 0 || hasStrongInventoryEvidence) candidates.add(hubId);
+  }
   candidates.delete(record.primaryHubId);
 
   const primaryAssets = new Set(availableAssetIdsByHub.get(record.primaryHubId) || []);
@@ -269,15 +318,28 @@ function selectRelatedHubIds(record, primaryHub, eligibleHubById, availableAsset
       );
       const hasVerifiedSemanticRelationship = directMembership.has(hubId) || explicitRelated.has(hubId) || internalTargets.has(hubId);
       const hasSupportedFamilyRelationship = family.has(hubId) && sharedPrimaryMembers > 0;
+      const hubTokenProfile = discoveryContext.hubTokenProfileById.get(hubId);
+      const titleOverlap = hubTokenProfile ? countTokenOverlap(recordTokenProfile, hubTokenProfile.title) : { strong: 0, broad: 0 };
+      const inventoryMatch = hubTokenProfile
+        ? scoreHubInventoryTokenMatch(recordTokenProfile, hubTokenProfile.inventory, (availableAssetIdsByHub.get(hubId) || []).length)
+        : { matchedStrongMembers: 0, matchedStrongTokenCount: 0, score: 0 };
+      const requiredInventoryTokenMatches = Math.min(2, recordTokenProfile.strongTokens.length);
+      const hasStrongInventoryEvidence = requiredInventoryTokenMatches > 0
+        && inventoryMatch.matchedStrongMembers >= 2
+        && inventoryMatch.matchedStrongTokenCount >= requiredInventoryTokenMatches;
+      const hasStrongSubjectEvidence = titleOverlap.strong > 0 || hasStrongInventoryEvidence;
       const score =
-        Number(directMembership.has(hubId)) * 1_000_000 +
+        Number(directMembership.has(hubId)) * 10_000_000 +
+        titleOverlap.strong * 1_200_000 +
+        inventoryMatch.score +
         Number(explicitRelated.has(hubId)) * 100_000 +
         Number(internalTargets.has(hubId)) * 50_000 +
         Number(hasSupportedFamilyRelationship) * 25_000 +
-        sharedPrimaryMembers * 100;
-      return { hubId, score, hasVerifiedSemanticRelationship, hasSupportedFamilyRelationship };
+        titleOverlap.broad * 5_000 +
+        Math.min(sharedPrimaryMembers, 100) * 100;
+      return { hubId, score, hasVerifiedSemanticRelationship, hasSupportedFamilyRelationship, hasStrongSubjectEvidence };
     })
-    .filter((entry) => entry.hasVerifiedSemanticRelationship || entry.hasSupportedFamilyRelationship)
+    .filter((entry) => entry.hasVerifiedSemanticRelationship || entry.hasSupportedFamilyRelationship || entry.hasStrongSubjectEvidence)
     .filter((entry) => {
       const hubAssetCount = (availableAssetIdsByHub.get(entry.hubId) || []).length;
       return hubAssetCount > taxonomyPolicy.thinHubMaximumAssets || directMembership.has(entry.hubId);
@@ -306,7 +368,7 @@ function selectRelatedHubIds(record, primaryHub, eligibleHubById, availableAsset
   return selected;
 }
 
-function selectRelatedAssetIds(record, relatedHubIds, recordByAssetId, eligibleHubById, availableAssetIdsByHub) {
+function selectRelatedAssetIds(record, relatedHubIds, recordByAssetId, eligibleHubById, availableAssetIdsByHub, discoveryContext) {
   const sourceHubIds = [...new Set([
     ...record.hubIds.filter((hubId) => eligibleHubById.has(hubId)),
     ...relatedHubIds,
@@ -318,9 +380,12 @@ function selectRelatedAssetIds(record, relatedHubIds, recordByAssetId, eligibleH
   candidateIds.delete(record.assetId);
 
   const meaningfulHubIds = new Set(record.hubIds.filter((hubId) => eligibleHubById.has(hubId)));
-  const narrowSubjects = new Set([record.attributes.narrowSubjectCategory, record.attributes.primarySubject].filter(Boolean));
+  const subjectProfile = getDiscoveryTokenProfile(
+    [record.attributes.narrowSubjectCategory, record.attributes.primarySubject].filter(Boolean).join(" "),
+  );
   const styles = new Set(record.attributes.styles);
   const seasons = new Set(record.attributes.seasonalClassifications);
+  const recordTitleProfile = discoveryContext.tokenProfileByAssetId.get(record.assetId) || getDiscoveryTokenProfile(record.publicTitle);
   const relatedRankByHubId = new Map(relatedHubIds.map((hubId, index) => [hubId, relatedHubIds.length - index]));
   const scored = [...candidateIds]
     .map((assetId) => {
@@ -333,20 +398,30 @@ function selectRelatedAssetIds(record, relatedHubIds, recordByAssetId, eligibleH
         (score, hubId) => score + (relatedRankByHubId.get(hubId) || 0) * 10_000,
         0,
       );
-      const candidateSubjects = new Set([candidate.attributes.narrowSubjectCategory, candidate.attributes.primarySubject].filter(Boolean));
-      const sharedSubjectCount = [...narrowSubjects].filter((value) => candidateSubjects.has(value)).length;
+      const candidateSubjectProfile = getDiscoveryTokenProfile(
+        [candidate.attributes.narrowSubjectCategory, candidate.attributes.primarySubject].filter(Boolean).join(" "),
+      );
+      const sharedSubjectCount = countTokenOverlap(subjectProfile, candidateSubjectProfile).strong;
+      const candidateTitleProfile = discoveryContext.tokenProfileByAssetId.get(candidate.assetId) || getDiscoveryTokenProfile(candidate.publicTitle);
+      const titleOverlap = countTokenOverlap(recordTitleProfile, candidateTitleProfile);
       const sharedStyleCount = [...styles].filter((value) => candidate.attributes.styles.includes(value)).length;
       const sharedSeasonCount = [...seasons].filter((value) => candidate.attributes.seasonalClassifications.includes(value)).length;
       const sharedPattern = record.attributes.patternFocused === true && candidate.attributes.patternFocused === true;
+      const requiredStrongTitleMatches = Math.min(2, recordTitleProfile.strongTokens.length);
+      const hasStrongCompoundTitleMatch = requiredStrongTitleMatches > 0 && titleOverlap.strong >= requiredStrongTitleMatches;
+      const strongTitleScore = titleOverlap.strong * (hasStrongCompoundTitleMatch ? 900_000 : 700_000);
       const score =
-        sharedSubjectCount * 2_000_000 +
-        sharedStyleCount * 400_000 +
+        sharedSubjectCount * 2_500_000 +
+        additionalSharedHubCount * 300_000 +
+        strongTitleScore +
+        Number(hasStrongCompoundTitleMatch) * 250_000 +
+        sharedStyleCount * 350_000 +
         sharedSeasonCount * 300_000 +
-        Number(sharedPattern) * 250_000 +
-        additionalSharedHubCount * 100_000 +
-        Number(candidateHubs.has(record.primaryHubId)) * 50_000 +
+        Number(sharedPattern) * 200_000 +
+        Number(candidateHubs.has(record.primaryHubId)) * 75_000 +
         relatedHubScore +
-        Number(record.attributes.orientation === candidate.attributes.orientation) * 1_000;
+        titleOverlap.broad * 10_000 +
+        Number(record.attributes.orientation === candidate.attributes.orientation) * 500;
       return { candidate, score, tieBreak: stablePairTieBreak(record.assetId, candidate.assetId) };
     })
     .sort((left, right) => right.score - left.score || left.tieBreak.localeCompare(right.tieBreak) || left.candidate.assetId.localeCompare(right.candidate.assetId));
@@ -354,17 +429,20 @@ function selectRelatedAssetIds(record, relatedHubIds, recordByAssetId, eligibleH
   const selected = [];
   const selectedIds = new Set();
   const selectedTitles = new Set();
+  const selectedCanonicalPaths = new Set();
   for (const entry of scored) {
     const titleKey = entry.candidate.publicTitle.trim().toLowerCase();
-    if (selectedTitles.has(titleKey)) continue;
+    if (selectedTitles.has(titleKey) || selectedCanonicalPaths.has(entry.candidate.canonicalPath)) continue;
     selected.push(entry.candidate.assetId);
     selectedIds.add(entry.candidate.assetId);
     selectedTitles.add(titleKey);
+    selectedCanonicalPaths.add(entry.candidate.canonicalPath);
     if (selected.length === 12) return selected;
   }
   for (const entry of scored) {
-    if (selectedIds.has(entry.candidate.assetId)) continue;
+    if (selectedIds.has(entry.candidate.assetId) || selectedCanonicalPaths.has(entry.candidate.canonicalPath)) continue;
     selected.push(entry.candidate.assetId);
+    selectedCanonicalPaths.add(entry.candidate.canonicalPath);
     if (selected.length === 12) break;
   }
   return selected;
@@ -470,6 +548,12 @@ function stablePairTieBreak(left, right) {
   return Math.abs(leftId - rightId).toString(16).padStart(10, "0");
 }
 
+function addMapSetValue(map, key, value) {
+  const values = map.get(key) || new Set();
+  values.add(value);
+  map.set(key, values);
+}
+
 function validateOutputs(input, outputs) {
   const { records } = outputs.printables;
   const deferredIds = new Set(input.deferred.records.map((entry) => entry.assetId));
@@ -541,7 +625,7 @@ function validateOutputs(input, outputs) {
 }
 
 function renderRelatedReport(routeManifest) {
-  return `# Runtime Printable Related Data\n\nGenerated: ${routeManifest.generatedAt}\n\n- Printable records: ${routeManifest.summary.routeCount.toLocaleString("en-US")}\n- Related printables per record: up to 12\n- Related hubs per record: up to 6\n\n## Related printable scoring\n\nCandidates are the deterministic union of available records in the printable's routed public hub memberships and its generated related hubs. The current item is removed. Candidates receive 1,000,000 points for sharing the primary hub, 100,000 points for every additional shared public hub, and 10,000 points multiplied by the inverse rank of each generated related hub they belong to. Higher scores sort first; asset ID ascending is the final tie-break. Selection takes unique normalized public titles first, then fills remaining slots without duplicate asset IDs, up to 12.\n\n## Related hub scoring\n\nCandidates must already exist as a direct printable membership, a primary-hub relatedHubId, an internal-linking target, or a supported parent/child relationship. Zero-overlap family metadata does not add eligibility or score. Direct membership receives 1,000,000 points; relatedHubIds receive 100,000; internal targets receive 50,000; supported family relationships receive 25,000; and every available member shared with the primary hub adds 100. Hubs below 12 printables require direct membership, at most one thin hub may appear, and configured near-duplicate clusters contribute at most one result. Higher scores sort first; hub ID ascending is the final tie-break. The list is capped at six.\n\nCanonical route fields remain frozen and do not participate in either score. Runtime randomness, build-time randomness, stale internal-linking output, and external keyword data are not used.\n`;
+  return `# Runtime Printable Related Data\n\nGenerated: ${routeManifest.generatedAt}\n\n- Printable records: ${routeManifest.summary.routeCount.toLocaleString("en-US")}\n- Related printables per record: up to 12\n- Related hubs per record: up to 6\n\n## Related printable scoring\n\nCandidates are the deterministic union of available records in the printable's routed public hub memberships and its generated related hubs. The current item is removed. Verified specific-subject overlap ranks first, followed by direct shared collection membership and normalized strong title-token overlap. Style, season, pattern, related-hub rank, broad title tokens, shared primary collection, and orientation are progressively weaker signals. Generic terms are removed, common broad terms are downweighted, simple singular/plural forms are normalized, and stable pair distance plus asset ID provide deterministic tie-breaking. Selection excludes duplicate asset IDs and canonical destinations, takes unique normalized public titles first, and fills to 12 when valid candidates exist.\n\n## Related hub scoring\n\nDirect printable memberships rank first. Additional routed candidates require a strong normalized token match in the hub title or balanced repeated hub-member title evidence; inventory coverage rewards specific collections rather than raw collection size. Existing primary-hub relationships and supported family relationships remain weaker signals. Hubs below 12 printables still require direct membership, at most one thin hub may appear, and configured near-duplicate clusters contribute at most one result. The current primary collection is excluded, hub ID is the final deterministic tie-break, and the list remains capped at six.\n\nCanonical route fields remain frozen and do not participate in either score. Runtime randomness, build-time randomness, stale internal-linking output, broad popularity, and external keyword data are not used.\n`;
 }
 
 function buildTitleReview(records, normalizations) {

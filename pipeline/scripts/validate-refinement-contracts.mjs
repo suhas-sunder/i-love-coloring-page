@@ -15,7 +15,7 @@ assert.match(css, /\.hub-preview-card-media\s*\{[^}]*aspect-ratio:\s*3\s*\/\s*4/
 assert.match(css, /\.gallery-item-media\s*\{[^}]*aspect-ratio:\s*2\s*\/\s*3/s, "printable gallery frames must avoid wide empty wells");
 assert.match(css, /\.global-search-dialog\s*\{[^}]*max-height:\s*calc\(100dvh/s, "mobile search must remain viewport-bounded");
 assert.match(css, /\.header-disclosure-panel\s*\{[^}]*max-height:\s*calc\(100dvh/s, "dropdowns must remain viewport-bounded");
-assert.match(css, /\.header-disclosure-seasonal \.header-disclosure-panel\s*\{[^}]*right:\s*0;[^}]*left:\s*auto;[^}]*transform:\s*none/s, "roomy desktop Seasonal disclosure must anchor to its trigger without viewport overflow");
+assert.match(css, /\.header-disclosure-seasonal \.header-disclosure-panel\s*\{[^}]*right:\s*max\(var\(--page-gutter\),\s*calc\(\(100vw\s*-\s*var\(--layout-max\)\)\s*\/\s*2\)\);[^}]*left:\s*auto;[^}]*transform:\s*none/s, "roomy desktop Seasonal disclosure must align to the header grid without viewport overflow");
 assert.match(css, /@media \(max-width:\s*1100px\)[\s\S]*\.header-disclosure-seasonal \.header-disclosure-panel\s*\{[^}]*right:\s*auto;[^}]*left:\s*50%;[^}]*translateX\(-50%\)/s, "compact desktop Seasonal disclosure must use the viewport-centered fallback");
 assert.match(search, /className="global-search-close"/, "search requires an explicit close control");
 assert.doesNotMatch(search, /global-search-footer[\s\S]{0,300}>\s*Close\s*</, "search must not reserve a detached close action at the bottom");

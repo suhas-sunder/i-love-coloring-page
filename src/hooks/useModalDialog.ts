@@ -70,6 +70,10 @@ export function restoreFocusAfterModalClose(target: HTMLElement | null) {
 function getFocusableControls(container: HTMLElement | null) {
   if (!container) return [];
   return [...container.querySelectorAll<HTMLElement>(FOCUSABLE_SELECTOR)].filter(
-    (element) => !element.hidden && element.getAttribute("aria-hidden") !== "true",
+    (element) => {
+      if (element.hidden || element.getAttribute("aria-hidden") === "true" || element.closest("[inert]")) return false;
+      const style = window.getComputedStyle(element);
+      return style.display !== "none" && style.visibility !== "hidden" && element.getClientRects().length > 0;
+    },
   );
 }

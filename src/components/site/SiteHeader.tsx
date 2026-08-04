@@ -13,6 +13,7 @@ import {
 } from "@/lib/navigation/siteNav";
 import { restoreFocusAfterModalClose } from "@/hooks/useModalDialog";
 
+import { DisclosureChevron } from "./DisclosureChevron";
 import { MobileNav } from "./MobileNav";
 import { useSiteInteractions } from "./SiteInteractionProvider";
 
@@ -137,7 +138,7 @@ export function SiteHeader() {
                   onClick={() => setOpenDisclosure((current) => current === item.id ? null : item.id)}
                 >
                   {item.label}
-                  <span aria-hidden="true">⌄</span>
+                  <DisclosureChevron />
                 </button>
                 {isOpen ? (
                   isCategories

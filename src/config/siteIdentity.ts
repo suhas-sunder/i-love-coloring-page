@@ -11,15 +11,15 @@ export const siteIdentity = Object.freeze({
   "publicMailingAddress": null,
   "publicMailingAddressDecision": "omit",
   "governingRegion": null,
-  "policyLastUpdatedDate": "2026-07-21",
-  "policyLastUpdatedLabel": "July 21, 2026",
+  "policyLastUpdatedDate": "2026-08-02",
+  "policyLastUpdatedLabel": "August 2, 2026",
   "ownerDecisions": {
-    "artworkRightsBasis": "unverified",
-    "publicUseLicense": "under-review",
+    "artworkRightsBasis": "created-and-published-by-site",
+    "publicUseLicense": "personal-family-classroom-homeschool-nonprofit-educational",
     "audienceTreatment": "deferred",
     "trademarkReferencePolicy": "case-by-case-review",
     "governingLaw": "deferred",
-    "advertisingPlan": "deferred"
+    "advertisingPlan": "confirmed-responsive-adsense"
   },
   "features": {
     "analyticsActive": false,
@@ -39,7 +39,7 @@ export const siteIdentity = Object.freeze({
     "trademarkQualifiedReviewComplete": false,
     "privacyPolicyQualifiedReviewComplete": false,
     "termsPolicyQualifiedReviewComplete": false,
-    "verifiedPublisherIdExists": false,
+    "verifiedPublisherIdExists": true,
     "cmpDecisionExists": false,
     "ageTreatmentDecisionExists": false
   }

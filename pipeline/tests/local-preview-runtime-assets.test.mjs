@@ -127,7 +127,7 @@ test("static export and deferred launch boundaries remain intact", async () => {
   assert.equal(existsSync(path.join(REPO_ROOT, "app", "api")), false);
   assert.equal(appFiles.some((file) => normalizePath(file).includes("/api/")), false);
   assert.doesNotMatch(projectText, /Download SVG|downloadSvg|svgDownload/i);
-  assert.doesNotMatch(projectText, /adsbygoogle|pagead2\.googlesyndication|ca-pub-|google_ad_client/i);
+  assert.doesNotMatch(projectText, /google_ad_client|NEXT_PUBLIC_ADSENSE_PUBLISHER_ID|NEXT_PUBLIC_ADSENSE_SLOTS_JSON/i);
   assert.doesNotMatch(projectText, /opengraph-image|twitter-image|ImageResponse/i);
 });
 

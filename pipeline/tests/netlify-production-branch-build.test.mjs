@@ -68,7 +68,7 @@ test("Netlify production branch build shape is static export and frontend-only",
   assert.match(`${downloadMenu}\n${browserDownloads}`, /label:\s*"JPG"|EXPOSED_PUBLIC_DOWNLOAD_FORMATS[\s\S]*"jpg"/);
   assert.match(`${downloadMenu}\n${browserDownloads}`, /label:\s*"WebP"|EXPOSED_PUBLIC_DOWNLOAD_FORMATS[\s\S]*"webp"/);
   assert.doesNotMatch(projectText, /opengraph-image|twitter-image|ImageResponse/i);
-  assert.doesNotMatch(projectText, /adsbygoogle|pagead2\.googlesyndication|ca-pub-|google_ad_client/i);
+  assert.doesNotMatch(projectText, /google_ad_client|NEXT_PUBLIC_ADSENSE_PUBLISHER_ID|NEXT_PUBLIC_ADSENSE_SLOTS_JSON/i);
   assert.equal(publicFiles.some((file) => /(?:^|[\\/])(?:coloring-pages|svg|webp|png|thumbs)[\\/]/i.test(file)), false);
 });
 

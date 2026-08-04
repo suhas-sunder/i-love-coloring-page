@@ -18,6 +18,7 @@ export type ResolvedAdMode = {
   requestedMode: string | null;
   publisherId: string | null;
   slotIds: Partial<Record<AdSlotId, string>>;
+  regionalRequirementsSatisfied: boolean;
   reason: string;
 };
 

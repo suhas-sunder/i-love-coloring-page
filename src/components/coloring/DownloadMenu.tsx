@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useId, useState } from "react";
 
 import {
   downloadJpeg,
@@ -10,6 +10,7 @@ import {
   type BrowserDownloadResult,
   type PublicDownloadFormat,
 } from "@/lib/coloring/browserDownloads";
+import { PRINTABLE_COMPOSITION } from "@/lib/coloring/exportComposition";
 
 type DownloadMenuProps = {
   title: string;
@@ -23,12 +24,14 @@ type DownloadMenuProps = {
 type DownloadOption = {
   format: Extract<PublicDownloadFormat, "png" | "jpg" | "webp">;
   label: "PNG" | "JPG" | "WebP";
+  description: string;
+  recommended?: true;
 };
 
 const DOWNLOAD_OPTIONS: readonly DownloadOption[] = [
-  { format: "png", label: "PNG" },
-  { format: "jpg", label: "JPG" },
-  { format: "webp", label: "WebP" },
+  { format: "png", label: "PNG", description: `Printable page image, ${PRINTABLE_COMPOSITION.page.widthPx} × ${PRINTABLE_COMPOSITION.page.heightPx} px`, recommended: true },
+  { format: "jpg", label: "JPG", description: `Printable page image, ${PRINTABLE_COMPOSITION.page.widthPx} × ${PRINTABLE_COMPOSITION.page.heightPx} px` },
+  { format: "webp", label: "WebP", description: "High-resolution artwork image" },
 ];
 
 const DOWNLOADERS = {
@@ -40,6 +43,7 @@ const DOWNLOADERS = {
 export function DownloadMenu({ title, downloadBaseName, internalSvgUrl, pngPreviewUrl, "aria-label": ariaLabel, onStatus }: DownloadMenuProps) {
   const [busyFormat, setBusyFormat] = useState<DownloadOption["format"] | null>(null);
   const [supportedFormats, setSupportedFormats] = useState<readonly PublicDownloadFormat[]>(["png"]);
+  const descriptionIdPrefix = useId();
 
   useEffect(() => {
     setSupportedFormats(getSupportedDownloadFormats());
@@ -76,8 +80,13 @@ export function DownloadMenu({ title, downloadBaseName, internalSvgUrl, pngPrevi
           onClick={() => downloadFormat(option)}
           disabled={busyFormat !== null}
           aria-label={`Download ${option.label} for ${title}`}
+          aria-describedby={`${descriptionIdPrefix}-${option.format}`}
         >
-          {busyFormat === option.format ? `Preparing ${option.label}` : getDownloadButtonLabel(option.label)}
+          <span className="download-option-title">
+            <span>{busyFormat === option.format ? `Preparing ${option.label}` : getDownloadButtonLabel(option.label)}</span>
+            {option.recommended ? <span className="download-option-recommended">Recommended</span> : null}
+          </span>
+          <span className="download-option-description" id={`${descriptionIdPrefix}-${option.format}`}>{option.description}</span>
         </button>
       ))}
     </div>

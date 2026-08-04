@@ -4,6 +4,8 @@ import { readFileSync } from "node:fs";
 import { test } from "node:test";
 import path from "node:path";
 
+import { countTokenOverlap, getDiscoveryTokenProfile } from "../lib/gallery-discovery-quality.mjs";
+
 const ROOT = process.cwd();
 const runtime = json("src/generated/coloring/runtime-printables.json");
 const hubs = json("src/generated/coloring/runtime-hubs.json");
@@ -83,14 +85,17 @@ test("related printable sets are valid, relevant, deterministic, and varied", ()
   assert.ok(setHashes.size > runtime.records.length / 2, `${setHashes.size} unique sets`);
 });
 
-test("trust copy reflects OFF advertising and does not publish an invented artwork license", () => {
+test("trust copy describes gated advertising and the approved printable-use terms", () => {
   const privacy = text("app/privacy/page.tsx");
   const terms = text("app/terms/page.tsx");
-  assert.match(privacy, /Advertising is currently off/);
+  assert.match(privacy, /AdSense requests remain disabled unless the live-ad setting/);
+  assert.match(privacy, /Google-certified consent\s+management platform or another reliable regional exclusion/);
   assert.doesNotMatch(privacy, /Advertisement areas are inert layout placeholders/);
-  assert.match(terms, /Verified record-level provenance, licensing, assignment, or public-domain evidence is not currently available/);
-  assert.match(terms, /A final public-use license is under review/);
-  assert.doesNotMatch(terms, /Visitors may print or download pages for personal|Do not resell individual files|governed by the laws|COPPA compliant/i);
+  assert.match(terms, /Created and published by I Love Coloring Page/);
+  assert.match(terms, /personal use, family and household use,\s*classroom use, homeschool use, and nonprofit educational use/);
+  assert.match(terms, /Sell, resell, redistribute, republish, re-upload, or sublicense/);
+  assert.match(terms, /own completed colored artwork/);
+  assert.doesNotMatch(terms, /A final public-use license is under review|governed by the laws|COPPA compliant/i);
 });
 
 test("indexable hub inventories remain distinct and the hierarchy remains acyclic", () => {
@@ -119,6 +124,7 @@ function sharesVerifiedContext(left, right) {
   if (left.attributes.styles.some((style) => right.attributes.styles.includes(style))) return true;
   if (left.attributes.seasonalClassifications.some((season) => right.attributes.seasonalClassifications.includes(season))) return true;
   if (left.attributes.patternFocused && right.attributes.patternFocused) return true;
+  if (countTokenOverlap(getDiscoveryTokenProfile(left.publicTitle), getDiscoveryTokenProfile(right.publicTitle)).strong > 0) return true;
   return left.hubIds.some((hubId) => hubId !== "hub_coloring_pages" && right.hubIds.includes(hubId));
 }
 

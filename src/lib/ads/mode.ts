@@ -1,8 +1,5 @@
-import type { AdMode, AdSlotId, ResolvedAdMode } from "./types";
-
-const publisherPrefix = ["ca", "pub"].join("-");
-const publisherPattern = new RegExp(`^${publisherPrefix}-\\d{10,}$`);
-const numericSlotPattern = /^\d+$/;
+import { ADSENSE_CLIENT_ID, ADSENSE_SLOT_IDS, hasValidAdSenseConfiguration } from "./config";
+import type { AdMode, ResolvedAdMode } from "./types";
 
 export function resolveAdMode(environment: NodeJS.ProcessEnv = process.env): ResolvedAdMode {
   const requestedMode = environment.NEXT_PUBLIC_AD_MODE?.trim().toLowerCase() ?? null;
@@ -21,34 +18,29 @@ export function resolveAdMode(environment: NodeJS.ProcessEnv = process.env): Res
     return resolved("off", requestedMode, `Unknown ad mode "${candidate}" was rejected.`);
   }
 
-  const publisherId = environment.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID?.trim() ?? "";
-  const slotIds = parseSlotConfiguration(environment.NEXT_PUBLIC_ADSENSE_SLOTS_JSON);
-  if (!publisherPattern.test(publisherId) || Object.keys(slotIds).length === 0) {
-    return resolved("off", requestedMode, "LIVE was rejected because publisher or slot configuration is missing or invalid.");
+  if (!hasValidAdSenseConfiguration()) {
+    return resolved("off", requestedMode, "LIVE was rejected because the centralized publisher or slot configuration is invalid.");
+  }
+
+  const regionalRequirementsSatisfied = environment.NEXT_PUBLIC_AD_REGIONAL_REQUIREMENTS_SATISFIED?.trim().toLowerCase() === "true";
+  if (!regionalRequirementsSatisfied) {
+    return resolved(
+      "off",
+      requestedMode,
+      "LIVE was rejected because a certified regional consent flow or reliable regional exclusion has not been confirmed.",
+    );
   }
 
   return {
     mode: "live",
     requestedMode,
-    publisherId,
-    slotIds,
-    reason: "LIVE was explicitly requested with valid publisher and slot configuration.",
+    publisherId: ADSENSE_CLIENT_ID,
+    slotIds: ADSENSE_SLOT_IDS,
+    regionalRequirementsSatisfied,
+    reason: "LIVE was explicitly requested with valid centralized configuration and a confirmed regional-requirements gate.",
   };
 }
 
-function parseSlotConfiguration(raw: string | undefined): Partial<Record<AdSlotId, string>> {
-  if (!raw) return {};
-
-  try {
-    const parsed = JSON.parse(raw) as Record<string, unknown>;
-    return Object.fromEntries(
-      Object.entries(parsed).filter((entry): entry is [AdSlotId, string] => typeof entry[1] === "string" && numericSlotPattern.test(entry[1])),
-    );
-  } catch {
-    return {};
-  }
-}
-
 function resolved(mode: AdMode, requestedMode: string | null, reason: string): ResolvedAdMode {
-  return { mode, requestedMode, publisherId: null, slotIds: {}, reason };
+  return { mode, requestedMode, publisherId: null, slotIds: {}, regionalRequirementsSatisfied: false, reason };
 }

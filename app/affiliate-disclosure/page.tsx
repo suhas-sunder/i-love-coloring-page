@@ -52,9 +52,9 @@ export default function AffiliateDisclosurePage() {
 
       <TrustSection title="Advertising is separate">
         <p>
-          Live advertising is currently disabled, and the site does not claim an active advertiser relationship. Advertising is not the same as an
-          affiliate link. Advertising-related policies, audience treatment, consent choices, and account configuration require review before any
-          advertising is enabled.
+          Google AdSense display advertising, when enabled, is separate from affiliate marketing. A display ad is not an affiliate link, and its
+          presence does not mean that the site recommends or receives an affiliate commission from the advertised product or service. Advertising
+          remains subject to the site&apos;s eligibility, regional, and privacy controls.
         </p>
       </TrustSection>
 

@@ -54,7 +54,7 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
       <CollectionPageHeader
         hub={hub}
         page={page}
-        intro={isPageOne ? intro : `Showing page ${page.toLocaleString()} of ${pagedGallery.totalPages.toLocaleString()} in this ${hub.title.toLowerCase()} collection.`}
+        intro={isPageOne ? intro : `Continue browsing ${hub.title.toLowerCase()} with a distinct set of printable pages from this collection.`}
       />
       <PageAdSlot pageFamily={pageFamily} placement="post-header-banner" />
 
@@ -73,7 +73,7 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
                   candidateItems={featuredRotationCandidates}
                   mode="hub-three-day"
                   hubSlug={hub.slug}
-                  priorityCount={6}
+                  priorityCount={2}
                 />
               </div>
             </section>
@@ -91,6 +91,7 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
               pageItems={pagedGallery.items}
               searchDataPath={`/search-data/hubs/${hub.slug}.json`}
               filterTags={tags}
+              priorityCount={showFeatured ? 0 : 4}
               pagination={{
                 basePath: hub.route,
                 currentPage: pagedGallery.currentPage,
@@ -132,12 +133,11 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
           <section className="content-section paginated-gallery-section" aria-labelledby="page-gallery-title" data-page-section="paginated-gallery">
             <div className="section-heading-row">
               <div>
-                <h2 className="section-title" id="page-gallery-title">Printables on page {page.toLocaleString()}</h2>
-                <p>Showing {pagedGallery.items.length.toLocaleString()} printable pages from this collection.</p>
+                <h2 className="section-title" id="page-gallery-title">More {collectionName(hub)}</h2>
               </div>
             </div>
             <p className="results-note" aria-live="polite">
-              Page {pagedGallery.currentPage.toLocaleString()} of {pagedGallery.totalPages.toLocaleString()}, with {pagedGallery.totalItems.toLocaleString()} printables in the collection.
+              Showing {(((pagedGallery.currentPage - 1) * pagedGallery.pageSize) + 1).toLocaleString()}-{Math.min(pagedGallery.currentPage * pagedGallery.pageSize, pagedGallery.totalItems).toLocaleString()} of {pagedGallery.totalItems.toLocaleString()} printables.
             </p>
             <PaginatedGalleryGrid items={pagedGallery.items} />
             <Pagination

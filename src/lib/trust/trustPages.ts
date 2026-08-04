@@ -43,7 +43,7 @@ export const trustPages: TrustPageRoute[] = [
     path: "/privacy",
     label: "Privacy",
     title: "Privacy Policy",
-    description: "How I Love Coloring Page handles current static-site requests and how future features would change its privacy practices.",
+    description: "How I Love Coloring Page handles site requests, Google display advertising, analytics status, and privacy choices.",
     h1: "Privacy Policy",
     footer: true,
     indexable: true,

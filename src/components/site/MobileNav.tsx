@@ -11,6 +11,7 @@ import {
   mobileNavigationGroups,
 } from "@/lib/navigation/siteNav";
 
+import { DisclosureChevron } from "./DisclosureChevron";
 import { useSiteInteractions } from "./SiteInteractionProvider";
 
 export function MobileNav() {
@@ -77,21 +78,27 @@ export function MobileNav() {
                 ))}
               </div>
 
-              {mobileNavigationGroups.map((group) => (
-                <details className="mobile-nav-group" key={group.id}>
-                  <summary>{group.label}<span aria-hidden="true">⌄</span></summary>
-                  <ul>
-                    {group.links.map((link) => (
-                      <li key={link.href}>
-                        <Link href={link.href} aria-current={pathname === link.href ? "page" : undefined} onClick={navigateAndClose} prefetch={false}>
-                          <span>{link.label}</span>
-                          {typeof link.assetCount === "number" ? <strong>{link.assetCount.toLocaleString()}</strong> : null}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </details>
-              ))}
+              {mobileNavigationGroups.map((group) => {
+                const isCurrentGroup = group.links.some((link) => pathname === link.href);
+                return (
+                  <details className="mobile-nav-group" key={group.id} data-active={isCurrentGroup ? "true" : undefined}>
+                    <summary>
+                      <span className="mobile-nav-group-label">{group.label}</span>
+                      <DisclosureChevron />
+                    </summary>
+                    <ul>
+                      {group.links.map((link) => (
+                        <li key={link.href}>
+                          <Link href={link.href} aria-current={pathname === link.href ? "page" : undefined} onClick={navigateAndClose} prefetch={false}>
+                            <span>{link.label}</span>
+                            {typeof link.assetCount === "number" ? <strong>{link.assetCount.toLocaleString()}</strong> : null}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </details>
+                );
+              })}
 
             </nav>
           </section>

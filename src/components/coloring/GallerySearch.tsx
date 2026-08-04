@@ -8,6 +8,7 @@ import type {
   StaticSearchItem,
   StaticSearchPayload,
 } from "@/lib/coloring/types";
+import { diversifyGalleryPresentation } from "@/lib/coloring/galleryPresentation";
 import { normalizeSearchText, rankSearchItems } from "@/lib/search/ranking";
 
 import { GalleryFilters } from "./GalleryFilters";
@@ -22,6 +23,7 @@ type GallerySearchProps = {
   pageItems: PublicColoringItem[];
   searchDataPath: string;
   filterTags: GalleryFilterTag[];
+  priorityCount?: number;
   pagination?: {
     basePath: string;
     currentPage: number;
@@ -39,6 +41,7 @@ export function GallerySearch({
   pageItems,
   searchDataPath,
   filterTags,
+  priorityCount = 4,
   pagination,
 }: GallerySearchProps) {
   const [query, setQuery] = useState("");
@@ -54,6 +57,8 @@ export function GallerySearch({
   const filterKey = activeFilterIds.join("|");
   const hasInteractiveState = Boolean(normalizedQuery || activeFilterIds.length > 0);
   const isStaticPageView = !hasInteractiveState;
+  const searchPlaceholder = getGallerySearchPlaceholder(hubTitle);
+  const presentedPageItems = useMemo(() => diversifyGalleryPresentation(pageItems), [pageItems]);
 
   useEffect(() => {
     mountedRef.current = true;
@@ -111,7 +116,7 @@ export function GallerySearch({
   let resultItems: PublicColoringItem[];
   let resultCount: number;
   if (isStaticPageView || !searchItems) {
-    resultItems = pageItems;
+    resultItems = presentedPageItems;
     resultCount = totalItems;
   } else {
     resultItems = resultEntries.slice(0, visibleCount).map(toPublicItem);
@@ -135,7 +140,7 @@ export function GallerySearch({
               type="search"
               value={query}
               aria-label="Search this collection"
-              placeholder={`Search ${hubTitle.replace(/ Coloring Pages$/, "").toLowerCase()} pages`}
+              placeholder={searchPlaceholder}
               onChange={(event) => {
                 const value = event.currentTarget.value;
                 setQuery(value);
@@ -181,7 +186,7 @@ export function GallerySearch({
           <button className="button button-subtle" type="button" onClick={clearAll}>Clear all</button>
         </div>
       ) : (
-        <GalleryGrid items={resultItems} priorityCount={4} />
+        <GalleryGrid items={resultItems} priorityCount={priorityCount} />
       )}
 
       {canShowMore ? (
@@ -194,6 +199,12 @@ export function GallerySearch({
       {isStaticPageView && pagination ? <Pagination {...pagination} /> : null}
     </div>
   );
+}
+
+function getGallerySearchPlaceholder(hubTitle: string) {
+  const collectionName = hubTitle.replace(/ Coloring Pages$/, "").trim();
+  if (!collectionName || collectionName.toLowerCase() === "coloring pages") return "Search coloring pages";
+  return `Search ${collectionName.toLowerCase()} coloring pages`;
 }
 
 function toPublicItem(entry: StaticSearchItem): PublicColoringItem {

@@ -7,12 +7,23 @@ import { fileURLToPath } from "node:url";
 
 import {
   getEditorialQualityFlags,
+  getGeneratedTitleQualityFlags,
   getPublicTitleSafetyFlags,
   mechanicallyCorrectTitle,
   normalizeExactTitle,
   normalizePunctuationInsensitiveTitle,
   sha256Json,
 } from "../lib/printable-title-quality.mjs";
+
+const EDITORIAL_REVIEW_FLAGS = new Set([
+  "source-context-required",
+  "ambiguous-numeric-suffix",
+  "uncertain-spelling",
+  "brand-or-model-name-review",
+  "long-title-review",
+  "numeric-suffix-review",
+  "uncertain-term-review",
+]);
 
 const SCRIPT_PATH = fileURLToPath(import.meta.url);
 const DEFAULT_ROOT = path.resolve(path.dirname(SCRIPT_PATH), "..", "..");
@@ -62,6 +73,7 @@ function buildOutput(input) {
         ...correction.flags,
         ...(groupSize > 1 ? ["valid-duplicate-base-title"] : []),
         ...getEditorialQualityFlags(record, { manualReviewAssetIds }),
+        ...getGeneratedTitleQualityFlags(record.displayTitle),
         ...publicSafetyFlags,
       ];
       return {
@@ -78,8 +90,8 @@ function buildOutput(input) {
     .sort((left, right) => left.canonicalPath.localeCompare(right.canonicalPath) || left.stableId.localeCompare(right.stableId));
 
   const correctionFlagCounts = countFlags(entries, (flag) => flag.startsWith("corrected-"));
-  const editorialFlagCounts = countFlags(entries, (flag) => ["source-context-required", "ambiguous-numeric-suffix", "uncertain-spelling", "brand-or-model-name-review"].includes(flag));
-  const publicSafetyFlagCounts = countFlags(entries, (flag) => !flag.startsWith("corrected-") && !flag.startsWith("valid-") && !["source-context-required", "ambiguous-numeric-suffix", "uncertain-spelling", "brand-or-model-name-review"].includes(flag));
+  const editorialFlagCounts = countFlags(entries, (flag) => EDITORIAL_REVIEW_FLAGS.has(flag));
+  const publicSafetyFlagCounts = countFlags(entries, (flag) => !flag.startsWith("corrected-") && !flag.startsWith("valid-") && !EDITORIAL_REVIEW_FLAGS.has(flag));
   const duplicateGroupDetails = duplicateGroups.map((group) => {
     const ordered = [...group].sort((left, right) => left.canonicalPath.localeCompare(right.canonicalPath) || left.stableId.localeCompare(right.stableId));
     const hubUnion = new Set(ordered.flatMap((record) => record.hubIds));

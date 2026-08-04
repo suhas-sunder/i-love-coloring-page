@@ -38,8 +38,9 @@ export default function AboutPage() {
 
       <TrustSection title="What this site offers">
         <p>
-          Visitors can browse collections and open an individual printable page by selecting its image or title. Print is a separate action. PNG is
-          the initial download option; JPG and WebP appear only when the browser reports that it can create those formats.
+          Visitors can browse collections and open an individual printable page by selecting its image or title. Download PDF saves a one-page US
+          Letter printable, while Print opens the device print workflow for the same document. PNG and JPG are printable-page images. WebP is an
+          artwork image and appears only when the browser reports that it can create that format.
         </p>
       </TrustSection>
 
@@ -50,15 +51,18 @@ export default function AboutPage() {
         </p>
       </TrustSection>
 
+      <TrustSection title="Content and publication">
+        <p>Created and published by I Love Coloring Page.</p>
+      </TrustSection>
+
       <TrustSection title="How the library is organized">
         <p>
-          Automated tools organize approved runtime records, generate consistent page data, and validate routes, titles, counts, asset roles, and
-          public-output rules. Editorial rules and record-specific review are used where evidence supports a decision. Uncertain metadata remains
-          outside public output until it is reviewed.
+          Editorial rules keep public titles, collections, counts, and established page addresses consistent. Record-specific review is used when a
+          correction cannot be supported confidently. Uncertain metadata remains outside public output until it is reviewed.
         </p>
         <p>
-          These checks do not mean that every printable received an individual manual visual review. The site also does not make a sitewide claim of
-          ownership over every artwork, depicted subject, character, brand, trademark, or other third-party right.
+          These checks do not mean that every printable received an individual manual visual review. References to a depicted subject, character,
+          brand, or trademark do not imply sponsorship, affiliation, or ownership of third-party rights.
         </p>
       </TrustSection>
 

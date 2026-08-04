@@ -4,6 +4,7 @@ import { PageAdSlot } from "@/components/ads/PageAdSlot";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { PublicPageShell } from "@/components/site/PublicPageShell";
 import { resolvePrintableAssetSources } from "@/lib/coloring/assets";
+import { PRINTABLE_COMPOSITION } from "@/lib/coloring/exportComposition";
 import { getPrintablePrimaryHub, getRelatedPrintableHubs, getRelatedPrintables } from "@/lib/coloring/printables";
 import { getPrintableSummary, getPrintableTitleModel } from "@/lib/coloring/printableTitles";
 import type { PublicColoringItem, RuntimePrintable } from "@/lib/coloring/types";
@@ -68,12 +69,15 @@ export function PrintableDetailPage({ printable }: { printable: RuntimePrintable
             {attributes.narrowSubjectCategory ? <div><dt>Subject</dt><dd>{attributes.narrowSubjectCategory}</dd></div> : null}
             {attributes.styles.length ? <div><dt>Style</dt><dd>{attributes.styles.join(", ")}</dd></div> : null}
             {attributes.seasonalClassifications.length ? <div><dt>Occasion</dt><dd>{attributes.seasonalClassifications.join(", ")}</dd></div> : null}
-            {attributes.orientation ? <div><dt>Orientation</dt><dd>{capitalize(attributes.orientation)}</dd></div> : null}
-            {attributes.artworkDimensions ? <div><dt>Artwork size</dt><dd>{attributes.artworkDimensions.width} × {attributes.artworkDimensions.height} px</dd></div> : null}
+            {attributes.orientation ? <div><dt>Artwork orientation</dt><dd>{capitalize(attributes.orientation)}</dd></div> : null}
+            <div><dt>Printable PDF</dt><dd>{PRINTABLE_COMPOSITION.page.paperSize}, {PRINTABLE_COMPOSITION.page.orientation}</dd></div>
+            <div><dt>PDF paper size</dt><dd>{PRINTABLE_COMPOSITION.page.widthIn} × {PRINTABLE_COMPOSITION.page.heightIn} in</dd></div>
+            <div><dt>PNG/JPG output</dt><dd>{PRINTABLE_COMPOSITION.page.widthPx} × {PRINTABLE_COMPOSITION.page.heightPx} px</dd></div>
+            <div><dt>WebP output</dt><dd>Artwork image</dd></div>
           </dl>
           <details className="printable-help">
             <summary>Printing and downloads</summary>
-            <p>Print prepares a Letter-size page. Download options appear only when the browser can create that file type.</p>
+            <p>Download PDF saves a printable US Letter document. Print prepares the same PDF and opens the device print workflow. PNG and JPG save printable-page images; WebP saves the artwork without the Letter page.</p>
           </details>
         </aside>
       </section>

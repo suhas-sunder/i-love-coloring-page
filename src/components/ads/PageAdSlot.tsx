@@ -12,5 +12,5 @@ type PageAdSlotProps = {
 export function PageAdSlot({ pageFamily, placement, className }: PageAdSlotProps) {
   const slotId = getAdSlotForPlacement(pageFamily, placement);
   if (!slotId) return null;
-  return <AdSlot slotId={slotId} className={className} />;
+  return <AdSlot slotId={slotId} pageFamily={pageFamily} className={className} />;
 }

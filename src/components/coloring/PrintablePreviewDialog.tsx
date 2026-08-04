@@ -47,16 +47,22 @@ export function PrintablePreviewDialog({ open, onClose, item, internalSvgUrl, pn
     const runId = ++runIdRef.current;
     setPreparing(true);
     setStatus("Preparing preview...");
-    void import("@/lib/coloring/browserDownloads").then(async ({ prepareHighQualityPrintImage }) => {
-      const result = await prepareHighQualityPrintImage({ internalSvgUrl, pngPreviewUrl, title: item.title, filenameBaseName: item.downloadBaseName, altText: item.altText });
-      if (runIdRef.current !== runId) {
-        revokePreparedImage(result);
-        return;
-      }
-      setPrepared(result);
-      setPreparing(false);
-      setStatus(result.ok ? result.message || "Print preview ready." : result.message);
-    });
+    void import("@/lib/coloring/browserDownloads")
+      .then(async ({ prepareHighQualityPrintImage }) => {
+        const result = await prepareHighQualityPrintImage({ internalSvgUrl, pngPreviewUrl, title: item.title, filenameBaseName: item.downloadBaseName, altText: item.altText });
+        if (runIdRef.current !== runId) {
+          revokePreparedImage(result);
+          return;
+        }
+        setPrepared(result);
+        setPreparing(false);
+        setStatus(result.ok ? result.message || "Print preview ready." : result.message);
+      })
+      .catch(() => {
+        if (runIdRef.current !== runId) return;
+        setPreparing(false);
+        setStatus("Print preview could not be prepared. Please try again.");
+      });
   }, [internalSvgUrl, item.altText, item.title, open, pngPreviewUrl]);
 
   useEffect(() => () => revokePreparedImage(prepared), [prepared]);
@@ -66,11 +72,16 @@ export function PrintablePreviewDialog({ open, onClose, item, internalSvgUrl, pn
     const runId = runIdRef.current;
     setPrinting(true);
     setStatus("Preparing printable PDF...");
-    const { printOnePagePdf } = await import("@/lib/coloring/browserDownloads");
-    const result = await printOnePagePdf({ internalSvgUrl, pngPreviewUrl, title: item.title, filenameBaseName: item.downloadBaseName, altText: item.altText });
-    if (runIdRef.current !== runId) return;
-    setStatus(result.ok ? result.message || "Printable PDF is ready." : result.message);
-    setPrinting(false);
+    try {
+      const { printOnePagePdf } = await import("@/lib/coloring/browserDownloads");
+      const result = await printOnePagePdf({ internalSvgUrl, pngPreviewUrl, title: item.title, filenameBaseName: item.downloadBaseName, altText: item.altText });
+      if (runIdRef.current !== runId) return;
+      setStatus(result.ok ? result.message || "Printable PDF is ready." : result.message);
+    } catch {
+      if (runIdRef.current === runId) setStatus("The printable PDF could not be prepared. Please try again.");
+    } finally {
+      if (runIdRef.current === runId) setPrinting(false);
+    }
   }
 
   if (!mounted || !open) return null;
@@ -84,13 +95,13 @@ export function PrintablePreviewDialog({ open, onClose, item, internalSvgUrl, pn
             <button className="button button-ghost" type="button" onClick={onClose}>Close</button>
           </div>
         </div>
-        <div className="print-preview-media" aria-live="polite">
+        <div className="print-preview-media" aria-busy={preparing}>
           {preparing ? <div className="print-preview-state"><strong>{item.title}</strong><span>Preparing print preview...</span></div> : prepared?.ok ? <img src={prepared.imageUrl} alt={item.altText} /> : <div className="print-preview-state print-preview-state-error"><strong>Print preview could not be prepared.</strong><span>Try a download instead, or reload the page and try again.</span></div>}
         </div>
         <div className="print-preview-downloads">
           <Suspense fallback={<span>Loading download options...</span>}><DownloadMenu title={item.title} downloadBaseName={item.downloadBaseName} internalSvgUrl={internalSvgUrl} pngPreviewUrl={pngPreviewUrl} aria-label={`Download available formats for ${item.title}`} onStatus={setStatus} /></Suspense>
         </div>
-        {status ? <p className="print-preview-status" aria-live="polite">{status}</p> : null}
+        {status ? <p className="print-preview-status" role="status" aria-live="polite" aria-atomic="true">{status}</p> : null}
       </section>
     </div>,
     document.body,

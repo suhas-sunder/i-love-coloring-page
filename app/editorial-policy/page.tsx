@@ -53,17 +53,18 @@ export default function EditorialPolicyPage() {
 
       <TrustSection title="Collections, search, and related links">
         <p>
-          Collections are based on current explicit assignments. Printable details display only values with recorded provenance, such as an approved
-          collection assignment or computed dimensions. Filename tokens and broad parent collections are not displayed as independently verified facts.
+          Collections are based on current explicit assignments. Printable details display useful output facts and values with recorded support, such
+          as an approved collection assignment, paper size, or downloadable-image dimensions. Broad parent collections are not displayed as
+          independently verified facts.
           Related pages rank shared narrow subjects, styles, and seasonal assignments before broader collection signals, with a stable final tie-break.
         </p>
       </TrustSection>
 
-      <TrustSection title="Automated processing and review">
+      <TrustSection title="Content and review">
+        <p>Created and published by I Love Coloring Page.</p>
         <p>
-          Automated tools assemble approved runtime records, apply deterministic title and collection rules, and validate public routes, counts, asset
-          roles, metadata provenance, and exported output. Editorial review is used for decisions that cannot be supported safely by those rules.
-          Uncertain metadata is withheld from public output until it is reviewed.
+          Consistent title, collection, route, count, and output rules are applied across the library. Editorial review is used for decisions that
+          cannot be supported safely by those rules. Uncertain metadata is withheld from public output until it is reviewed.
         </p>
         <p>
           This process does not mean that all 6,352 printables received individual manual visual inspection. It also does not claim professional

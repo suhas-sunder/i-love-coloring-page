@@ -28,10 +28,7 @@ export function getPrintableTitleModel(printable: RuntimePrintable): PrintableTi
 
 export function buildPrintableDescription(printable: RuntimePrintable) {
   const { displayTitle } = getPrintableTitleModel(printable);
-  const attributes = printable.attributes;
-  if (attributes.summary) return `${displayTitle}. ${attributes.summary}`;
-  const orientation = attributes.orientation ? `${attributes.orientation} ` : "";
-  return `${displayTitle} is a ${orientation}printable in the ${attributes.primaryCollection.title} collection.`;
+  return `Print ${displayTitle}, or download a printable-page PNG or JPG and an artwork-only WebP.`;
 }
 
 export function getPrintableSummary(printable: RuntimePrintable) {

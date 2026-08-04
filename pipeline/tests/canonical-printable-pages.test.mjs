@@ -47,9 +47,7 @@ test("all metadata inputs are unique, bounded, public, canonical, and WebP-only"
   const canonicals = [];
   for (const record of printables.records) {
     const title = record.metadataTitle;
-    const description = record.attributes.summary
-      ? `${record.displayTitle}. ${record.attributes.summary}`
-      : `${record.displayTitle} is a ${record.attributes.orientation ? `${record.attributes.orientation} ` : ""}printable in the ${record.attributes.primaryCollection.title} collection.`;
+    const description = `Print ${record.displayTitle}, or download a printable-page PNG or JPG and an artwork-only WebP.`;
     const canonical = `https://www.ilovecoloringpage.com${record.canonicalPath}`;
     const image = `https://assets.ilovecoloringpage.com/coloring-pages/${record.webpPath}`;
     assert.ok(title.length <= 128, record.assetId);
@@ -66,8 +64,7 @@ test("all metadata inputs are unique, bounded, public, canonical, and WebP-only"
   assert.match(source, /robots: \{ index: true, follow: true \}/);
   assert.match(source, /getPrintableTitleModel\(printable\)/);
   const titleSource = await readText("src/lib/coloring/printableTitles.ts");
-  assert.match(titleSource, /const attributes = printable\.attributes/);
-  assert.doesNotMatch(titleSource, /download this coloring page as PNG, JPG, or WebP/);
+  assert.match(titleSource, /Print \$\{displayTitle\}, or download a printable-page PNG or JPG and an artwork-only WebP\./);
 });
 
 test("normal cards use canonical image and title links with a separate Print action", async () => {

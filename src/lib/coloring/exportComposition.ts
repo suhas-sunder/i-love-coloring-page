@@ -21,7 +21,17 @@ export type PrintableLayout = {
   printableBorderCount: 1;
 };
 
-const page = Object.freeze({ widthPt: 612, heightPt: 792, widthPx: 2550, heightPx: 3300, rasterDpi: 300 });
+const page = Object.freeze({
+  paperSize: "US Letter",
+  orientation: "portrait",
+  widthIn: 8.5,
+  heightIn: 11,
+  widthPt: 612,
+  heightPt: 792,
+  widthPx: 2550,
+  heightPx: 3300,
+  rasterDpi: 300,
+});
 const frame = Object.freeze({ insetPt: 10, lineWidthPt: 0.55, color: "#c2bad1" });
 const branding = Object.freeze({
   text: "iLoveColoringPage.com",

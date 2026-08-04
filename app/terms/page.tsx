@@ -25,7 +25,7 @@ export default function TermsPage() {
     <TrustPage
       eyebrow="Terms"
       title={title}
-      intro={`This page records current site-use information for ${siteIdentity.siteName}. It does not invent an artwork license or unverified operator terms.`}
+      intro={`These terms explain how coloring pages from ${siteIdentity.siteName} may be downloaded, printed, and used.`}
     >
       <JsonLdScript
         id="jsonld-terms"
@@ -44,23 +44,32 @@ export default function TermsPage() {
         </p>
       </TrustSection>
 
-      <TrustSection title="Artwork use and licensing">
+      <TrustSection title="Coloring pages and permitted use">
         <p>
-          Verified record-level provenance, licensing, assignment, or public-domain evidence is not currently available to support a sitewide
-          ownership or licensing conclusion. A final public-use license is under review. The presence of Print and download controls is a technical
-          capability and does not itself create a general public license.
+          Created and published by I Love Coloring Page. You may download and print the coloring pages for personal use, family and household use,
+          classroom use, homeschool use, and nonprofit educational use.
         </p>
         <p>
-          No general rule for printing, downloading, redistribution, modification, commercial use, or attribution has been approved. This statement
-          does not claim ownership of every artwork or third-party right, and it does not turn the absence of an approved license into an invented
-          prohibition. Final permitted-use terms remain under review.
+          You may share or display your own completed colored artwork for ordinary personal, family, classroom, homeschool, or nonprofit educational
+          purposes. These permissions apply to the coloring pages supplied by this site and do not grant rights in third-party names, marks, or other
+          protected material that may be referenced by a title or subject.
         </p>
+      </TrustSection>
+
+      <TrustSection title="Uses that require written permission">
+        <p>Without prior written permission, you may not:</p>
+        <ul>
+          <li>Sell, resell, redistribute, republish, re-upload, or sublicense the files.</li>
+          <li>Include the files in paid products, memberships, books, courses, bundles, applications, or services.</li>
+          <li>Use the files for other commercial exploitation.</li>
+        </ul>
       </TrustSection>
 
       <TrustSection title="Print, downloads, and availability">
         <p>
-          Print and download are separate actions. PNG is the server-rendered initial download option; JPG and WebP are shown only after browser
-          capability detection. SVG remains internal and is not offered as a public download. Pages and features may change as factual defects are corrected.
+          Print and download are separate actions. Download PDF saves the current one-page US Letter printable. Print prepares the same PDF and opens the device print workflow. PNG and JPG
+          are printable-page images; WebP is an artwork image. SVG is not offered as a public download. Format availability may depend on browser
+          capability, and pages or features may change as factual defects are corrected.
         </p>
       </TrustSection>
 
@@ -88,8 +97,8 @@ export default function TermsPage() {
 
       <TrustSection title="Changes to the site or terms">
         <p>
-          The site and this page may be updated. A final permitted-use policy or governing-law clause will not be added without verified owner input
-          and appropriate review.
+          The site and this page may be updated. Any governing-law clause or material change to these permissions requires verified owner input and
+          appropriate review.
         </p>
       </TrustSection>
 

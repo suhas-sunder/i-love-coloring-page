@@ -60,6 +60,22 @@ export type BrowserPrintResult =
     }
   | Extract<BrowserRasterResult, { ok: false }>;
 
+export type BrowserPdfDownloadResult =
+  | {
+      ok: true;
+      filename: string;
+      mimeType: "application/pdf";
+      source: "internal-svg";
+      pageCount: 1;
+      pageSize: "letter-portrait";
+      pageDimensions: {
+        widthPt: number;
+        heightPt: number;
+      };
+      message: string;
+    }
+  | Extract<BrowserRasterResult, { ok: false }>;
+
 export type PreparedPrintImageResult =
   | {
       ok: true;
@@ -455,7 +471,7 @@ export async function prepareOnePagePrintPdf(options: PrintOptions): Promise<Pre
   try {
     const layout = computePrintableLayout(rendered.width, rendered.height, "pdf");
     const metadataTitle = buildPrintPdfTitle(options.title);
-    const pdfBytes = buildPrintPdfBytes(rendered.canvas, layout, metadataTitle);
+    const pdfBytes = await buildPrintPdfBytes(rendered.canvas, layout, metadataTitle);
     const pdfBlob = new Blob([pdfBytes], { type: "application/pdf" });
     const pdfUrl = URL.createObjectURL(pdfBlob);
     const result: Extract<PreparedPrintPdfResult, { ok: true }> = {
@@ -505,6 +521,30 @@ export async function printOnePagePdf(options: PrintOptions): Promise<BrowserPri
     pageCount: prepared.pageCount,
     message: "Printable PDF is ready.",
   };
+}
+
+export async function downloadOnePagePdf(options: PrintOptions): Promise<BrowserPdfDownloadResult> {
+  const prepared = await prepareOnePagePrintPdf(options);
+  if (!prepared.ok) return prepared;
+
+  try {
+    if (!triggerUrlDownload(prepared.pdfUrl, prepared.filename)) {
+      return failure("download-unavailable", "The printable PDF was prepared, but this browser could not start the download.");
+    }
+
+    return {
+      ok: true,
+      filename: prepared.filename,
+      mimeType: "application/pdf",
+      source: prepared.source,
+      pageCount: prepared.pageCount,
+      pageSize: prepared.pageSize,
+      pageDimensions: prepared.pageDimensions,
+      message: "PDF download started.",
+    };
+  } finally {
+    revokePreparedPrintPdf(prepared);
+  }
 }
 
 export function revokePreparedPrintImage(prepared: PreparedPrintImageResult | null | undefined) {
@@ -584,7 +624,7 @@ export function downloadBlob(blob: Blob, filename: string) {
 }
 
 function triggerUrlDownload(url: string, filename: string) {
-  if (typeof document === "undefined") return;
+  if (typeof document === "undefined") return false;
   const link = document.createElement("a");
   link.href = url;
   link.download = filename;
@@ -592,6 +632,7 @@ function triggerUrlDownload(url: string, filename: string) {
   document.body.append(link);
   link.click();
   link.remove();
+  return true;
 }
 
 function triggerPdfPrint(prepared: Extract<PreparedPrintPdfResult, { ok: true }>) {
@@ -735,12 +776,13 @@ function buildPrintPdfTitle(title: string) {
   return `${cleanTitle} - ${PRINT_DOCUMENT_BRAND}`;
 }
 
-function buildPrintPdfBytes(canvas: HTMLCanvasElement, layout: PrintPdfLayout, metadataTitle: string) {
+async function buildPrintPdfBytes(canvas: HTMLCanvasElement, layout: PrintPdfLayout, metadataTitle: string) {
   const context = canvas.getContext("2d");
   if (!context) throw new Error("Canvas context unavailable.");
 
   const imageData = context.getImageData(0, 0, canvas.width, canvas.height);
   const rgbBytes = rgbaToRgbBytes(imageData.data);
+  const compressedRgbBytes = await deflatePdfImageBytes(rgbBytes);
   const contentBytes = new TextEncoder().encode(buildPrintPdfContentStream(layout));
   const encoder = new TextEncoder();
   const chunks: Uint8Array[] = [];
@@ -790,11 +832,12 @@ function buildPrintPdfBytes(canvas: HTMLCanvasElement, layout: PrintPdfLayout, m
       `/Height ${canvas.height}`,
       "/ColorSpace /DeviceRGB",
       "/BitsPerComponent 8",
-      `/Length ${rgbBytes.length}`,
+      "/Filter /FlateDecode",
+      `/Length ${compressedRgbBytes.length}`,
       ">>\nstream\n",
     ].join(" "),
   );
-  appendBytes(rgbBytes);
+  appendBytes(compressedRgbBytes);
   appendAscii("\nendstream\nendobj\n");
 
   startObject(5);
@@ -822,6 +865,21 @@ function buildPrintPdfBytes(canvas: HTMLCanvasElement, layout: PrintPdfLayout, m
     offset += chunk.length;
   }
   return output;
+}
+
+async function deflatePdfImageBytes(bytes: Uint8Array<ArrayBuffer>) {
+  if (typeof CompressionStream === "undefined") {
+    throw new Error("PDF compression is unavailable in this browser.");
+  }
+
+  const compressor = new CompressionStream("deflate");
+  const writer = compressor.writable.getWriter();
+  const compressedBytesPromise = new Response(compressor.readable).arrayBuffer();
+  await writer.write(bytes);
+  await writer.close();
+  const compressedBytes = new Uint8Array(await compressedBytesPromise);
+  if (compressedBytes.length === 0) throw new Error("PDF compression returned an empty image stream.");
+  return compressedBytes;
 }
 
 function buildPrintPdfContentStream(layout: PrintPdfLayout) {
@@ -852,7 +910,7 @@ function boxCommand(box: PrintDocumentBox) {
   return `${formatPdfNumber(box.x)} ${formatPdfNumber(box.y)} ${formatPdfNumber(box.width)} ${formatPdfNumber(box.height)} re`;
 }
 
-function rgbaToRgbBytes(rgba: Uint8ClampedArray) {
+function rgbaToRgbBytes(rgba: Uint8ClampedArray): Uint8Array<ArrayBuffer> {
   const rgb = new Uint8Array((rgba.length / 4) * 3);
   for (let source = 0, target = 0; source < rgba.length; source += 4, target += 3) {
     const alpha = rgba[source + 3] / 255;

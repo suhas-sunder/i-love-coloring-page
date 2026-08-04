@@ -9,7 +9,7 @@ import { getCanonicalUrl } from "@/lib/site/siteConfig";
 
 const canonical = getCanonicalUrl("/privacy");
 const title = "Privacy Policy";
-const description = `How ${siteIdentity.siteName} handles current static-site requests and how future features would change its privacy practices.`;
+const description = `How ${siteIdentity.siteName} handles site requests, Google display advertising, analytics status, and privacy choices.`;
 const contactEmail = siteIdentity.publicContactEmail;
 
 export const metadata: Metadata = {
@@ -25,7 +25,7 @@ export default function PrivacyPage() {
     <TrustPage
       eyebrow="Privacy"
       title={title}
-      intro="This policy describes the website's current data practices and separates them from changes that would be required before future advertising or interactive features are enabled."
+      intro="This policy describes the website's current data practices, advertising configuration, analytics status, and visitor choices."
     >
       <JsonLdScript
         id="jsonld-privacy"
@@ -42,8 +42,8 @@ export default function PrivacyPage() {
           in the browser and do not create public search routes.
         </p>
         <p>
-          The site currently provides no accounts, comments, user uploads, payments, or contact form. It does not intentionally request names, birth
-          dates, account details, or profile information through the website.
+          No account is required to browse, download, or print a coloring page. The site currently provides no accounts, comments, user uploads,
+          payments, or contact form. It does not intentionally request names, birth dates, account details, or profile information through the website.
         </p>
       </TrustSection>
 
@@ -64,26 +64,43 @@ export default function PrivacyPage() {
         </p>
       </TrustSection>
 
-      <TrustSection title="Current cookies, analytics, and advertising">
+      <TrustSection title="Google display advertising">
         <p>
-          Advertising and related consent features are not currently active. Advertising is currently off. Pages contain no advertising script,
-          label, reserved advertising space, publisher ID, or live ad-unit ID.
+          The site is configured to use Google AdSense display advertising on eligible content pages. Google and approved advertising partners may
+          process information such as device and browser details, IP address, requested page, ad interactions, and cookie or related-technology
+          identifiers to deliver, limit, secure, and measure advertising.
         </p>
         <p>
-          No site analytics tool is currently documented as active. The site does not document an active analytics or advertising cookie, but this is
-          not a claim that browsers, hosting, content-delivery, asset-delivery, or security systems can never use technical storage or logs.
+          Google may use advertising cookies and related technologies. Personalized advertising may be used only where it is enabled and the required
+          choices or consent have been obtained. Other visitors may receive non-personalized or limited ads, or no ad request, according to the
+          applicable configuration.
+        </p>
+        <p>
+          Visitors can review or change Google advertising choices through{" "}
+          <a href="https://adssettings.google.com/" rel="noreferrer">Google Ads Settings</a> and can learn about additional industry opt-out choices at{" "}
+          <a href="https://optout.aboutads.info/" rel="noreferrer">YourAdChoices</a>. Browser settings may also limit cookies, although doing so may
+          affect site or advertising behavior.
         </p>
       </TrustSection>
 
-      <TrustSection title="If advertising is enabled later">
+      <TrustSection title="Regional advertising controls">
         <p>
-          Before live advertising is activated, this policy will be updated to identify the vendors and choices actually in use. Third-party vendors
-          may then use cookies or other identifiers, and Google or advertising partners may process data to serve, measure, personalize, or limit ads
-          according to the site's configuration and applicable consent.
+          The site does not guess a visitor&apos;s region from language, locale, or time zone. AdSense requests remain disabled unless the live-ad setting,
+          publisher configuration, page and viewport eligibility, and regional requirements are all satisfied. Until a Google-certified consent
+          management platform or another reliable regional exclusion is confirmed, requests must remain disabled for visitors in the EEA, the UK,
+          and Switzerland.
+        </p>
+      </TrustSection>
+
+      <TrustSection title="Analytics status">
+        <p>
+          PostHog is not currently active. The site does not load a PostHog package or script and does not send PostHog events. Another analytics
+          provider may be considered later only after its collection, retention, choices, and policy wording are reviewed.
         </p>
         <p>
-          Regional consent and age-treatment requirements must be configured before activation. Any applicable visitor controls must be implemented
-          and reviewed with the actual advertising configuration. These are conditional future practices, not current behavior.
+          Cloudflare Browser Insights or Real User Monitoring is not included in repository source. A production check on August 2, 2026 still found
+          a Cloudflare-injected performance beacon, so Cloudflare may continue to receive browser performance data until the account-level Web
+          Analytics entry is disabled and a production network check confirms the beacon is gone.
         </p>
       </TrustSection>
 

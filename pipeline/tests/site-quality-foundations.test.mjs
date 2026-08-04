@@ -9,7 +9,8 @@ const hubs = JSON.parse(await read("src/generated/coloring/runtime-hubs.json"));
 const printables = JSON.parse(await read("src/generated/coloring/runtime-printables.json"));
 const indexation = JSON.parse(await read("src/config/indexation-manifest.json"));
 const hubCounts = JSON.parse(await read("src/generated/coloring/runtime-hub-counts.json"));
-const mode = await importTypeScript("src/lib/ads/mode.ts");
+const adsConfigModuleUrl = await transpileTypeScriptToDataUrl("src/lib/ads/config.ts");
+const mode = await importTypeScript("src/lib/ads/mode.ts", { "./config": adsConfigModuleUrl });
 const assets = await importTypeScript("src/lib/coloring/assets.ts");
 
 test("advertising defaults safely and requires explicit complete LIVE configuration", () => {
@@ -20,16 +21,17 @@ test("advertising defaults safely and requires explicit complete LIVE configurat
   assert.equal(mode.resolveAdMode({
     NODE_ENV: "production",
     NEXT_PUBLIC_AD_MODE: "live",
-    NEXT_PUBLIC_ADSENSE_PUBLISHER_ID: ["ca", "pub", "123456789012"].join("-"),
-    NEXT_PUBLIC_ADSENSE_SLOTS_JSON: JSON.stringify({ "home-header-banner": "1234567890" }),
+    NEXT_PUBLIC_AD_REGIONAL_REQUIREMENTS_SATISFIED: "true",
   }).mode, "live");
 });
 
 test("LIVE initialization is idempotent per element and permits a new route element", async () => {
-  const source = await read("src/components/ads/AdSenseScript.tsx");
-  assert.match(source, /:not\(\[data-initialized\]\)/);
-  assert.match(source, /dataset\.initialized="true"/);
-  assert.match(source, /new MutationObserver\(s\)/);
+  const source = await read("src/components/ads/AdSenseRuntime.tsx");
+  assert.match(source, /dataset\.adInitialized === "true"/);
+  assert.match(source, /dataset\.adInitialized = "true"/);
+  assert.match(source, /new MutationObserver\(observeUnits\)/);
+  assert.match(source, /new IntersectionObserver/);
+  assert.match(source, /evaluateAdSlotEligibility/);
 });
 
 test("OFF and PLACEHOLDER cannot load the external script or render a live unit", async () => {
@@ -112,13 +114,25 @@ async function read(relative) {
   return readFile(path.join(root, relative), "utf8");
 }
 
-async function importTypeScript(relative) {
+async function importTypeScript(relative, replacements = {}) {
+  let output = await transpileTypeScript(relative);
+  for (const [specifier, replacement] of Object.entries(replacements)) {
+    output = output.replace(`from "${specifier}"`, `from "${replacement}"`);
+  }
+  return import(`data:text/javascript;base64,${Buffer.from(output).toString("base64")}#${encodeURIComponent(relative)}`);
+}
+
+async function transpileTypeScriptToDataUrl(relative) {
+  const output = await transpileTypeScript(relative);
+  return `data:text/javascript;base64,${Buffer.from(output).toString("base64")}#${encodeURIComponent(relative)}`;
+}
+
+async function transpileTypeScript(relative) {
   const source = await read(relative);
-  const output = ts.transpileModule(source, {
+  return ts.transpileModule(source, {
     compilerOptions: {
       target: ts.ScriptTarget.ES2022,
       module: ts.ModuleKind.ESNext,
     },
   }).outputText;
-  return import(`data:text/javascript;base64,${Buffer.from(output).toString("base64")}#${encodeURIComponent(relative)}`);
 }

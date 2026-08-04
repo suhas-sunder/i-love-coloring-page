@@ -13,7 +13,7 @@ These deterministic samples make the queue auditable without claiming that a col
 - B. RULE-BASED REVIEWABLE|detailClassification|hub_bakery: [Mandala Geometry Patterns Bakery Baker Hat](/printables/bakery/mandala-geometry-patterns-bakery-baker-hat-85eb9a820b): proposed `Detailed Coloring Pages for Adults`.
 - B. RULE-BASED REVIEWABLE|detailClassification|hub_bats: [Chibi Bat](/printables/bats/chibi-bat-fe629d39f4): proposed `Easy`.
 - B. RULE-BASED REVIEWABLE|detailClassification|hub_bats: [Chibi Dungeon Giant Bat Swarm](/printables/bats/chibi-dungeon-giant-bat-swarm-27cc1a9612): proposed `Easy`.
-- B. RULE-BASED REVIEWABLE|detailClassification|hub_bats: [Chibi Holiday Halloween Bat Colony Flying In Night Sky Coloring Page](/printables/bats/chibi-holiday-halloween-bat-colony-flying-in-night-sky-3624fb1d72): proposed `Easy`.
+- B. RULE-BASED REVIEWABLE|detailClassification|hub_bats: [Chibi Holiday Halloween Bat Colony Flying In Night Sky](/printables/bats/chibi-holiday-halloween-bat-colony-flying-in-night-sky-3624fb1d72): proposed `Easy`.
 - B. RULE-BASED REVIEWABLE|detailClassification|hub_bears: [Chibi Bear](/printables/bears/chibi-bear-24adcef6cd): proposed `Easy`.
 - B. RULE-BASED REVIEWABLE|detailClassification|hub_bears: [Chibi Cave Bear](/printables/bears/chibi-cave-bear-34458b23d1): proposed `Easy`.
 - B. RULE-BASED REVIEWABLE|detailClassification|hub_bears: [Chibi Plushie Kawaii Polar Bear](/printables/bears/chibi-plushie-kawaii-polar-bear-938c4d4db3): proposed `Easy`.
@@ -35,7 +35,7 @@ These deterministic samples make the queue auditable without claiming that a col
 - B. RULE-BASED REVIEWABLE|detailClassification|hub_cows: [Mandala Geometry Patterns Plushie Cow](/printables/cows/mandala-geometry-patterns-plushie-cow-61d6615533): proposed `Detailed Coloring Pages for Adults`.
 - B. RULE-BASED REVIEWABLE|detailClassification|hub_cows: [Mandala Geometry Patterns Plushie Farm Cow](/printables/cows/mandala-geometry-patterns-plushie-farm-cow-1d291424a1): proposed `Detailed Coloring Pages for Adults`.
 - B. RULE-BASED REVIEWABLE|detailClassification|hub_cows: [Plushie Cow](/printables/cows/plushie-cow-fc41be5b71): proposed `Easy`.
-- B. RULE-BASED REVIEWABLE|detailClassification|hub_cute: [Holiday Halloween Cute Kawaii Halloween Characters Coloring Page](/printables/cute/holiday-halloween-cute-kawaii-halloween-characters-97d298d5be): proposed `Easy`.
+- B. RULE-BASED REVIEWABLE|detailClassification|hub_cute: [Holiday Halloween Cute Kawaii Halloween Characters](/printables/cute/holiday-halloween-cute-kawaii-halloween-characters-97d298d5be): proposed `Easy`.
 - B. RULE-BASED REVIEWABLE|detailClassification|hub_cute: [Mandala Geometry Patterns Plushie Cute Baby Dragon](/printables/cute/mandala-geometry-patterns-plushie-cute-baby-dragon-fe1a69ef1f): proposed `Detailed Coloring Pages for Adults | Easy`.
 - B. RULE-BASED REVIEWABLE|detailClassification|hub_cute: [Mandala Geometry Patterns Plushie Cute Lamb](/printables/cute/mandala-geometry-patterns-plushie-cute-lamb-2ca0d7808e): proposed `Detailed Coloring Pages for Adults | Easy`.
 - B. RULE-BASED REVIEWABLE|detailClassification|hub_deer: [Mandala Geometry Patterns Japan Nara Deer In Park](/printables/deer/mandala-geometry-patterns-japan-nara-deer-in-park-d98beeb140): proposed `Detailed Coloring Pages for Adults`.
@@ -56,7 +56,7 @@ These deterministic samples make the queue auditable without claiming that a col
 - C. VISUAL OR EDITORIAL REVIEW REQUIRED|audienceClassification|hub_bakery: [Mandala Geometry Patterns Bakery Baker Hat](/printables/bakery/mandala-geometry-patterns-bakery-baker-hat-85eb9a820b): proposed `Detailed Coloring Pages for Adults`.
 - C. VISUAL OR EDITORIAL REVIEW REQUIRED|audienceClassification|hub_bats: [Chibi Bat](/printables/bats/chibi-bat-fe629d39f4): proposed `Coloring Pages for Kids`.
 - C. VISUAL OR EDITORIAL REVIEW REQUIRED|audienceClassification|hub_bats: [Chibi Dungeon Giant Bat Swarm](/printables/bats/chibi-dungeon-giant-bat-swarm-27cc1a9612): proposed `Coloring Pages for Kids`.
-- C. VISUAL OR EDITORIAL REVIEW REQUIRED|audienceClassification|hub_bats: [Chibi Holiday Halloween Bat Colony Flying In Night Sky Coloring Page](/printables/bats/chibi-holiday-halloween-bat-colony-flying-in-night-sky-3624fb1d72): proposed `Coloring Pages for Kids`.
+- C. VISUAL OR EDITORIAL REVIEW REQUIRED|audienceClassification|hub_bats: [Chibi Holiday Halloween Bat Colony Flying In Night Sky](/printables/bats/chibi-holiday-halloween-bat-colony-flying-in-night-sky-3624fb1d72): proposed `Coloring Pages for Kids`.
 - C. VISUAL OR EDITORIAL REVIEW REQUIRED|audienceClassification|hub_bears: [Chibi Bear](/printables/bears/chibi-bear-24adcef6cd): proposed `Coloring Pages for Kids`.
 - C. VISUAL OR EDITORIAL REVIEW REQUIRED|audienceClassification|hub_bears: [Chibi Cave Bear](/printables/bears/chibi-cave-bear-34458b23d1): proposed `Coloring Pages for Kids`.
 - C. VISUAL OR EDITORIAL REVIEW REQUIRED|audienceClassification|hub_bears: [Chibi Plushie Kawaii Polar Bear](/printables/bears/chibi-plushie-kawaii-polar-bear-938c4d4db3): proposed `Coloring Pages for Kids`.
@@ -78,7 +78,7 @@ These deterministic samples make the queue auditable without claiming that a col
 - C. VISUAL OR EDITORIAL REVIEW REQUIRED|audienceClassification|hub_cows: [Mandala Geometry Patterns Plushie Cow](/printables/cows/mandala-geometry-patterns-plushie-cow-61d6615533): proposed `Detailed Coloring Pages for Adults`.
 - C. VISUAL OR EDITORIAL REVIEW REQUIRED|audienceClassification|hub_cows: [Mandala Geometry Patterns Plushie Farm Cow](/printables/cows/mandala-geometry-patterns-plushie-farm-cow-1d291424a1): proposed `Detailed Coloring Pages for Adults`.
 - C. VISUAL OR EDITORIAL REVIEW REQUIRED|audienceClassification|hub_cows: [Plushie Cow](/printables/cows/plushie-cow-fc41be5b71): proposed `Coloring Pages for Kids`.
-- C. VISUAL OR EDITORIAL REVIEW REQUIRED|audienceClassification|hub_cute: [Holiday Halloween Cute Kawaii Halloween Characters Coloring Page](/printables/cute/holiday-halloween-cute-kawaii-halloween-characters-97d298d5be): proposed `Coloring Pages for Kids`.
+- C. VISUAL OR EDITORIAL REVIEW REQUIRED|audienceClassification|hub_cute: [Holiday Halloween Cute Kawaii Halloween Characters](/printables/cute/holiday-halloween-cute-kawaii-halloween-characters-97d298d5be): proposed `Coloring Pages for Kids`.
 - C. VISUAL OR EDITORIAL REVIEW REQUIRED|audienceClassification|hub_cute: [Mandala Geometry Patterns Plushie Cute Baby Dragon](/printables/cute/mandala-geometry-patterns-plushie-cute-baby-dragon-fe1a69ef1f): proposed `Coloring Pages for Kids | Detailed Coloring Pages for Adults`.
 - C. VISUAL OR EDITORIAL REVIEW REQUIRED|audienceClassification|hub_cute: [Mandala Geometry Patterns Plushie Cute Lamb](/printables/cute/mandala-geometry-patterns-plushie-cute-lamb-2ca0d7808e): proposed `Coloring Pages for Kids | Detailed Coloring Pages for Adults`.
 - C. VISUAL OR EDITORIAL REVIEW REQUIRED|audienceClassification|hub_deer: [Mandala Geometry Patterns Japan Nara Deer In Park](/printables/deer/mandala-geometry-patterns-japan-nara-deer-in-park-d98beeb140): proposed `Detailed Coloring Pages for Adults`.

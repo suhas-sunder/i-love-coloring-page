@@ -9,10 +9,15 @@ const ROOT = process.cwd();
 const siteNav = await readText("src/lib/navigation/siteNav.ts");
 const siteHeader = await readText("src/components/site/SiteHeader.tsx");
 const mobileNav = await readText("src/components/site/MobileNav.tsx");
+const disclosureChevron = await readText("src/components/site/DisclosureChevron.tsx");
+const breadcrumbs = await readText("src/components/site/Breadcrumbs.tsx");
 const globalSearch = await readText("src/components/site/GlobalSearchDialog.tsx");
 const navigationSearchData = await readText("src/lib/search/navigationSearchData.ts");
 const gallerySearch = await readText("src/components/coloring/GallerySearch.tsx");
 const galleryFilters = await readText("src/components/coloring/GalleryFilters.tsx");
+const printableDetail = await readText("src/components/coloring/PrintableDetailPage.tsx");
+const printableJsonLd = await readText("src/lib/seo/printableJsonLd.ts");
+const componentsCss = await readText("src/styles/components.css");
 const overlayProvider = await readText("src/components/site/SiteInteractionProvider.tsx");
 const modalHook = await readText("src/hooks/useModalDialog.ts");
 const hubs = await readJson("src/generated/coloring/runtime-hubs.json");
@@ -26,7 +31,32 @@ test("navigation model owns approved routes, labels, groups, and route relations
   const routedHubs = new Map(hubs.hubs.map((hub) => [hub.route, hub]));
   const configuredHubs = [...siteNav.matchAll(/\w+: hub\("([^"]+)", "([^"]+)", "([^"]+)", "([^"]+)"\)/g)]
     .map(([, id, label, href, hubId]) => ({ id, label, href, hubId }));
-  assert.ok(configuredHubs.length >= 22);
+  assert.deepEqual(configuredHubs.map((link) => link.href), [
+    "/coloring-pages/for-kids",
+    "/coloring-pages/detailed-for-adults",
+    "/coloring-pages/animals",
+    "/coloring-pages/plushies",
+    "/coloring-pages/mandalas",
+    "/coloring-pages/fantasy",
+    "/coloring-pages/dinosaurs",
+    "/coloring-pages/vehicles",
+    "/coloring-pages/chibi",
+    "/coloring-pages/kawaii",
+    "/coloring-pages/cute",
+    "/coloring-pages/flowers",
+    "/coloring-pages/sea-life",
+    "/coloring-pages/food",
+    "/coloring-pages/buildings",
+    "/coloring-pages/plants",
+    "/coloring-pages/fantasy-creatures",
+    "/coloring-pages/anime-girls",
+    "/coloring-pages/geometric",
+    "/coloring-pages/holidays",
+    "/coloring-pages/birthday",
+    "/coloring-pages/st-patricks-day",
+    "/coloring-pages/christmas",
+    "/coloring-pages/halloween",
+  ]);
   for (const link of configuredHubs) {
     const hub = routedHubs.get(link.href);
     assert.ok(hub, link.href);
@@ -53,7 +83,21 @@ test("desktop header follows the six-item order and disclosure contract", () => 
   assert.match(siteHeader, /event\.key !== "Escape"/);
   assert.match(siteHeader, /pointerdown/);
   assert.match(siteHeader, /requestAnimationFrame\(\(\) => trigger\?\.focus\(\)\)/);
+  assert.match(siteHeader, /setOpenDisclosure\(\(current\) => current === item\.id \? null : item\.id\)/);
+  assert.match(siteHeader, /function openSearch[\s\S]*setOpenDisclosure\(null\)[\s\S]*openModal\(searchSurface\)/);
   assert.match(siteHeader, /aria-current=\{isExactNavigationPath/);
+  assert.match(siteHeader, /<DisclosureChevron \/>/);
+  assert.doesNotMatch(siteHeader, /⌄/);
+  assert.match(disclosureChevron, /viewBox="0 0 14 14"/);
+  assert.match(disclosureChevron, /stroke="currentColor"/);
+  assert.match(disclosureChevron, /strokeLinecap="round"/);
+  assert.match(disclosureChevron, /strokeLinejoin="round"/);
+  assert.match(disclosureChevron, /aria-hidden="true"/);
+  assert.match(componentsCss, /\.header-disclosure-trigger,[\s\S]*appearance: none;[\s\S]*-webkit-appearance: none;[\s\S]*font-family: var\(--font-ui\)/);
+  assert.match(componentsCss, /\.site-nav-link \{[\s\S]*min-height: 40px;[\s\S]*align-items: center;[\s\S]*padding: var\(--space-8\) var\(--space-12\)/);
+  assert.match(componentsCss, /\.header-disclosure-trigger\[aria-expanded="true"\][\s\S]*background: var\(--color-soft-plum\);[\s\S]*color: var\(--color-plum\)/);
+  assert.match(componentsCss, /\.header-disclosure-trigger\[aria-expanded="true"\] \.disclosure-chevron,[\s\S]*transform: rotate\(180deg\)/);
+  assert.match(componentsCss, /@media \(prefers-reduced-motion: reduce\)[\s\S]*\.disclosure-chevron[\s\S]*transition: none/);
   assert.doesNotMatch(siteHeader, />More<|MoreHubMenu|role="menu"|PageAdSlot|AdSlot|Advertisement/);
   assert.match(siteHeader, /prefetch=\{false\}/);
 });
@@ -66,6 +110,12 @@ test("mobile navigation is finite, ordered, modal, and advertisement-free", () =
   assert.match(mobileNav, /useModalDialog/);
   assert.match(mobileNav, /closeAndRestore/);
   assert.match(mobileNav, /<details className="mobile-nav-group"/);
+  assert.match(mobileNav, /data-active=\{isCurrentGroup \? "true" : undefined\}/);
+  assert.match(mobileNav, /<DisclosureChevron \/>/);
+  assert.doesNotMatch(mobileNav, /⌄/);
+  assert.match(componentsCss, /\.mobile-nav-group\[open\] > summary,[\s\S]*background: var\(--color-soft-plum\);[\s\S]*color: var\(--color-plum\)/);
+  assert.match(componentsCss, /\.mobile-nav-group summary \{[\s\S]*min-height: 48px/);
+  assert.match(componentsCss, /\.mobile-nav-group summary:focus-visible[\s\S]*outline: var\(--focus-ring-width\) solid var\(--color-focus\)/);
   assert.doesNotMatch(mobileNav, /viewAllCollectionsLink|View all collections/);
   assert.doesNotMatch(mobileNav, /PageAdSlot|AdSlot|Advertisement|navigation\.json|163/);
 });
@@ -136,6 +186,20 @@ test("gallery and hub search share ranking, scope data, and batch 48 results", a
   const hubPageSource = await readText("src/components/coloring/HubPageContent.tsx");
   assert.match(hubPageSource, /searchDataPath={`\/search-data\/hubs\/\$\{hub\.slug\}\.json`}/);
   assert.match(gallerySearch, /searchDataPath/);
+  assert.match(gallerySearch, /return "Search coloring pages"/);
+  assert.match(gallerySearch, /return `Search \$\{collectionName\.toLowerCase\(\)\} coloring pages`/);
+  assert.doesNotMatch(gallerySearch, /Search \$\{hubTitle[\s\S]*\} pages|coloring pages pages/);
+});
+
+test("mobile printable breadcrumbs retain parent context without changing breadcrumb data", () => {
+  assert.match(breadcrumbs, /items\.map\(\(item, index\)/);
+  assert.match(breadcrumbs, /<Link href=\{item\.href\} prefetch=\{false\}>\{item\.label\}<\/Link>/);
+  assert.match(printableDetail, /className="printable-breadcrumb"/);
+  assertOrder(printableDetail, ['label: "Home"', 'label: "Coloring Pages"', 'label: primaryHub.title', 'label: displayTitle']);
+  assert.match(componentsCss, /\.printable-breadcrumb \.breadcrumb-item:not\(:nth-last-child\(-n \+ 2\)\)[\s\S]*display: none/);
+  assert.match(componentsCss, /\.printable-breadcrumb a,[\s\S]*\.printable-breadcrumb \[aria-current="page"\][\s\S]*white-space: normal/);
+  assert.match(printableJsonLd, /buildBreadcrumbListJsonLd/);
+  assert.match(printableJsonLd, /items: \[/);
 });
 
 test("filters preserve authoritative dimensions and responsive semantics", () => {

@@ -34,12 +34,23 @@ test("advertisement placement is centralized and preserves every frozen identifi
   assert.match(config, /hub: fullLayout/);
   assert.match(config, /printable: fullLayout/);
   assert.match(config, /"hub-pagination": condensedLayout/);
-  assert.match(config, /trust: condensedLayout/);
-  assert.match(config, /"html-sitemap": condensedLayout/);
+  assert.match(config, /trust: \{ mode: "none", sideRailsAllowed: false, slots: \{\} \}/);
+  assert.match(config, /"html-sitemap": \{ mode: "none", sideRailsAllowed: false, slots: \{\} \}/);
   assert.match(config, /"not-found": \{ mode: "none"/);
 
   const pages = await readProjectText(["app/page.tsx", "app/coloring-pages/page.tsx", "src/components/coloring/HubPageContent.tsx", "src/components/coloring/PrintableDetailPage.tsx"]);
   assert.doesNotMatch(pages, new RegExp(LEGACY_SLOT_IDS.join("|")));
+
+  for (const value of [
+    "pub-4810616735714570",
+    "ca-pub-4810616735714570",
+    "5574432869",
+    "5115981872",
+    "9929324856",
+    "2489818539",
+    "5382861174",
+  ]) assert.match(config, new RegExp(value));
+  assert.match(config, /ADS_TXT_RECORD = "google\.com, pub-4810616735714570, DIRECT, f08c47fec0942fa0"/);
 });
 
 test("responsive advertisement behavior uses one safe rail threshold", async () => {
@@ -61,6 +72,9 @@ test("responsive advertisement behavior uses one safe rail threshold", async () 
   assert.match(css, /\.ad-rail-left[\s\S]*left: calc\(-1 \* \(var\(--ad-rail-width\) \+ var\(--ad-rail-gap\)\)\)/);
   assert.match(css, /\.ad-rail-right[\s\S]*right: calc\(-1 \* \(var\(--ad-rail-width\) \+ var\(--ad-rail-gap\)\)\)/);
   assert.doesNotMatch(css, /\.ad-rail[\s\S]{0,300}position: (?:fixed|sticky)/);
+  assert.doesNotMatch(css, /\.ad-slot-(?:top-banner|post-header-banner|related-banner)[\s\S]{0,200}position: (?:fixed|sticky)/);
+  assert.match(css, /\.public-page-shell \.ad-slot-post-header-banner,[\s\S]*display: none/);
+  assert.doesNotMatch(css, /data-ad-layout="full"[^}]+ad-slot-top-banner[^}]+display: none/);
   assert.doesNotMatch(baseCss, /html\s*\{[^}]*min-width:\s*320px/);
 });
 
@@ -69,8 +83,8 @@ test("page-family density rules and exceptions are explicit", async () => {
   assert.match(config, /function fullLayout[\s\S]*"left-rail": "rail-left-desktop"[\s\S]*"right-rail": "rail-right-desktop"/);
   assert.match(config, /"hub-pagination": condensedLayout\(\{[\s\S]*"related-banner": "hub-after-gallery"/);
   assert.doesNotMatch(extractLayout(config, "hub-pagination", "printable"), /supporting-square|left-rail|right-rail/);
-  assert.doesNotMatch(extractLayout(config, "trust", "html-sitemap"), /supporting-square|left-rail|right-rail|related-banner/);
-  assert.doesNotMatch(extractLayout(config, "html-sitemap", "not-found"), /supporting-square|left-rail|right-rail|related-banner/);
+  assert.match(extractLayout(config, "trust", "html-sitemap"), /mode: "none"[\s\S]*slots: \{\}/);
+  assert.match(extractLayout(config, "html-sitemap", "not-found"), /mode: "none"[\s\S]*slots: \{\}/);
   assert.match(config, /"not-found": \{ mode: "none", sideRailsAllowed: false, slots: \{\} \}/);
 });
 
@@ -91,10 +105,28 @@ test("advertisements remain outside navigation, cards, controls, grids, and dial
 
   const mode = await readText("src/lib/ads/mode.ts");
   const script = await readText("src/components/ads/AdSenseScript.tsx");
+  const runtime = await readText("src/components/ads/AdSenseRuntime.tsx");
+  const eligibility = await readText("src/lib/ads/eligibility.ts");
+  const shell = await readText("src/components/site/PublicPageShell.tsx");
   assert.match(mode, /environment\.NODE_ENV === "production" \? "off" : "placeholder"/);
   assert.match(mode, /candidate !== "live"/);
+  assert.match(mode, /NEXT_PUBLIC_AD_REGIONAL_REQUIREMENTS_SATISFIED/);
   assert.match(script, /configuration\.mode !== "live"/);
-  assert.doesNotMatch(`${mode}\n${script}`, /client-\d+|ca-pub-\d+|google_ad_client|googletag/i);
+  assert.match(script, /<AdSenseRuntime/);
+  assert.equal((`${script}\n${runtime}`.match(/id = "adsense-runtime"|SCRIPT_ID = "adsense-runtime"/g) || []).length, 1);
+  assert.match(runtime, /new IntersectionObserver/);
+  assert.match(runtime, /new MutationObserver/);
+  assert.match(runtime, /if \(unit\.isConnected\) continue/);
+  assert.match(runtime, /isActuallyVisible/);
+  assert.match(runtime, /unit\.dataset\.adInitialized === "true"/);
+  assert.match(runtime, /window\.adsbygoogle[\s\S]*\.push\(\{\}\)/);
+  assert.doesNotMatch(runtime, /querySelectorAll\([^\n]+not\(\[data-initialized\]\)[\s\S]+forEach[\s\S]+push/);
+  for (const field of ["liveAdvertisingEnabled", "configurationValid", "regionalRequirementsSatisfied", "actuallyVisible", "nearViewport", "alreadyInitialized"]) {
+    assert.match(eligibility, new RegExp(`${field}:`));
+  }
+  assert.match(eligibility, /supportedPageFamilies\.includes/);
+  assert.match(eligibility, /sideRailsMinWidth/);
+  assert.match(shell, /<PageAdSlot pageFamily=\{pageFamily\} placement="top-banner" \/>[\s\S]*\{layout\.sideRailsAllowed/);
 });
 
 test("placeholder presentation is visible but not interactive or heading content", async () => {
@@ -103,7 +135,10 @@ test("placeholder presentation is visible but not interactive or heading content
   const css = await readText("src/styles/components.css");
   assert.match(slot, /<span className="ad-slot-label">Advertisement<\/span>/);
   assert.doesNotMatch(slot, /tabIndex|tabindex|<a\b|<button\b|role="(?:button|link|navigation)"|<h[1-6]\b/);
-  assert.doesNotMatch(slot, /aria-label="Advertisement"/);
+  assert.match(slot, /aria-label="Advertisement"/);
+  assert.match(slot, /role="complementary"/);
+  assert.match(slot, /data-ad-format="auto"/);
+  assert.match(slot, /data-full-width-responsive="true"/);
   assert.match(rail, /<aside[^>]+aria-label=\{`\$\{side\} desktop advertising rail`\}/);
   assert.doesNotMatch(css, /\.ad-slot:focus-visible/);
   assert.doesNotMatch(css, /\.ad-slot[\s\S]{0,220}(?:gradient|box-shadow)/);

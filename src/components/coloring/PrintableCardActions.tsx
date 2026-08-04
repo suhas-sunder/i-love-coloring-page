@@ -15,9 +15,10 @@ type PrintableCardActionsProps = {
     internalSvg?: string | null;
   };
   className?: string;
+  buttonClassName?: string;
 };
 
-export function PrintableCardActions({ item, assetUrls, className }: PrintableCardActionsProps) {
+export function PrintableCardActions({ item, assetUrls, className, buttonClassName }: PrintableCardActionsProps) {
   const surfaceId = useId();
   const surface = { kind: "printable-dialog" as const, id: surfaceId };
   const { closeModal, isModalOpen, openModal } = useSiteInteractions();
@@ -34,7 +35,7 @@ export function PrintableCardActions({ item, assetUrls, className }: PrintableCa
     <div className={className || "gallery-actions"}>
       <button
         ref={triggerRef}
-        className="button button-primary button-small"
+        className={buttonClassName || "button button-ghost button-small gallery-print-button"}
         type="button"
         onClick={() => openModal(surface)}
         disabled={!hasPrintableAsset}

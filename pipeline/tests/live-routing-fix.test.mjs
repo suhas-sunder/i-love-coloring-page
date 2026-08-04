@@ -66,7 +66,7 @@ test("static export routing remains frontend-only and public-safe", async () => 
   assert.match(netlifyConfig, /publish\s*=\s*"out"/);
   assert.equal(existsSync(path.join(REPO_ROOT, "app", "api")), false);
   assert.equal(publicFiles.some((file) => /(?:^|[\\/])(?:coloring-pages|svg|webp|png|thumbs)[\\/]/i.test(file)), false);
-  assert.doesNotMatch(projectText, /adsbygoogle|pagead2\.googlesyndication|ca-pub-|google_ad_client/i);
+  assert.doesNotMatch(projectText, /google_ad_client|NEXT_PUBLIC_ADSENSE_PUBLISHER_ID|NEXT_PUBLIC_ADSENSE_SLOTS_JSON/i);
   assert.doesNotMatch(projectText, /opengraph-image|twitter-image|ImageResponse/i);
 });
 

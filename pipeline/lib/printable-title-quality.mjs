@@ -26,13 +26,32 @@ const AMBIGUOUS_NUMERIC_SUFFIX_STABLE_IDS = new Set([
   "2d0cdb0f1d",
 ]);
 
+export const APPROVED_UNCOMMON_TITLE_WORDS = new Set([
+  "ankylosaurus",
+  "iguanodon",
+  "mosasaurus",
+  "plesiosaurus",
+  "pteranodon",
+  "pterodactyl",
+]);
+
+const CONFIRMED_SPELLING_DEFECT_PATTERN = /\b(?:Aligator|Bakini|Celetbrating|Dalmation|Midieval|Vehiacle)\b/i;
+const PHRASE_ORDER_DEFECT_PATTERN = /\b(?:Holiday Christmas Holiday|Christmas Holiday Christmas)\b/i;
+const REPEATED_ADJACENT_WORD_PATTERN = /\b([a-z][a-z'-]*)\s+\1\b/i;
+const REDUNDANT_COLORING_PAGE_PATTERN = /\bcoloring page(?:\s*: Design \d+)?$/i;
+const UNEXPLAINED_NUMERIC_SUFFIX_PATTERN = /\s\d+$/;
+
 const MECHANICAL_REPLACEMENTS = Object.freeze([
   { pattern: /\bVehiacle\b/gi, replacement: "Vehicle", flag: "corrected-spelling-vehiacle" },
   { pattern: /\bMidieval\b/gi, replacement: "Medieval", flag: "corrected-spelling-midieval" },
   { pattern: /\bBakini\b/gi, replacement: "Bikini", flag: "corrected-spelling-bakini" },
   { pattern: /\bCeletbrating\b/gi, replacement: "Celebrating", flag: "corrected-spelling-celetbrating" },
+  { pattern: /\bAligator\b/gi, replacement: "Alligator", flag: "corrected-spelling-aligator" },
+  { pattern: /\bDalmation\b/gi, replacement: "Dalmatian", flag: "corrected-spelling-dalmation" },
   { pattern: /\bAnima Plushie\b/gi, replacement: "Animal Plushie", flag: "corrected-spelling-anima-plushie" },
   { pattern: /\bPolarbear\b/gi, replacement: "Polar Bear", flag: "corrected-spacing-polar-bear" },
+  { pattern: /\bHoliday Christmas Holiday\b/gi, replacement: "Holiday Christmas", flag: "corrected-phrase-holiday-christmas-holiday" },
+  { pattern: /\bChristmas Holiday Christmas\b/gi, replacement: "Christmas", flag: "corrected-phrase-christmas-holiday-christmas" },
 ]);
 
 export function buildPrintableTitleAssignments(records, { previousManifest = null } = {}) {
@@ -92,7 +111,35 @@ export function mechanicallyCorrectTitle(value) {
     deduplicated.push(word);
   }
   if (removedAdjacentWord) flags.push("corrected-duplicate-adjacent-word");
-  return { title: deduplicated.join(" "), flags };
+  title = deduplicated.join(" ");
+  if (/\bColoring Page$/i.test(title)) {
+    title = title.replace(/\s+Coloring Page$/i, "").trim();
+    flags.push("corrected-redundant-coloring-page-suffix");
+  }
+  return { title, flags };
+}
+
+export function getGeneratedTitleQualityFlags(value, { approvedWords = APPROVED_UNCOMMON_TITLE_WORDS } = {}) {
+  const title = normalizeVisibleTitle(value);
+  const flags = [];
+  const base = stripDesignSuffix(title);
+  const words = base.split(/\s+/).filter(Boolean);
+  if (!title) flags.push("empty-title");
+  else if (words.length < 2) flags.push("extremely-short-title");
+  if (title.length > 80) flags.push("long-title-review");
+  if (CONFIRMED_SPELLING_DEFECT_PATTERN.test(title)) flags.push("confirmed-spelling-defect");
+  if (REPEATED_ADJACENT_WORD_PATTERN.test(base)) flags.push("repeated-adjacent-word");
+  if (PHRASE_ORDER_DEFECT_PATTERN.test(base)) flags.push("repeated-phrase-order-defect");
+  if (REDUNDANT_COLORING_PAGE_PATTERN.test(title)) flags.push("redundant-coloring-page-wording");
+  if (UNEXPLAINED_NUMERIC_SUFFIX_PATTERN.test(base)) flags.push("numeric-suffix-review");
+  if (PUBLIC_TECHNICAL_PATTERN.test(title) || HASH_FRAGMENT_PATTERN.test(title)) flags.push("internal-leakage");
+  if (PLACEHOLDER_PATTERN.test(title)) flags.push("generic-title");
+
+  const approved = new Set([...approvedWords].map((word) => normalizeWord(word)));
+  if (UNCERTAIN_SPELLING_PATTERN.test(title) && !words.some((word) => approved.has(normalizeWord(word)))) {
+    flags.push("uncertain-term-review");
+  }
+  return flags;
 }
 
 export function buildMetadataTitle(displayTitle) {

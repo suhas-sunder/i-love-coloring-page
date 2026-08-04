@@ -8,6 +8,7 @@ import ts from "typescript";
 import {
   buildPrintableAltText,
   buildPrintableTitleAssignments,
+  getGeneratedTitleQualityFlags,
   getPublicTitleSafetyFlags,
   normalizeExactTitle,
 } from "../lib/printable-title-quality.mjs";
@@ -133,14 +134,32 @@ test("image-alt quality is unique, concise, nonempty, and avoids redundant color
 
 test("description quality is unique across designs and uses only provenance-backed facts", async () => {
   const source = await readText("src/lib/coloring/printableTitles.ts");
-  assert.match(source, /const attributes = printable\.attributes/);
-  assert.doesNotMatch(source, /download this coloring page as PNG, JPG, or WebP/);
-  const descriptions = printables.records.map((record) => record.attributes.summary
-    ? `${record.displayTitle}. ${record.attributes.summary}`
-    : `${record.displayTitle} is a ${record.attributes.orientation ? `${record.attributes.orientation} ` : ""}printable in the ${record.attributes.primaryCollection.title} collection.`);
+  assert.match(source, /Print \$\{displayTitle\}, or download a printable-page PNG or JPG and an artwork-only WebP\./);
+  const descriptions = printables.records.map((record) => `Print ${record.displayTitle}, or download a printable-page PNG or JPG and an artwork-only WebP.`);
   assert.equal(new Set(descriptions).size, descriptions.length);
   assert.equal(descriptions.every((description) => description.length > 0 && description.length <= 210), true);
   assert.equal(descriptions.every((description) => !/SVG|source file|runtime data|conversion pipeline|educational|therapeutic|perfect for|all ages/i.test(description)), true);
+});
+
+test("editorial title rules catch confirmed defects while preserving approved uncommon subjects", () => {
+  const assignments = buildPrintableTitleAssignments([
+    fixture("alligator", "aaaaaaaaaa", "/printables/test/alligator", "Animals Aligator"),
+    fixture("dalmatian", "bbbbbbbbbb", "/printables/test/dalmatian", "Plants Dalmation"),
+    fixture("phrase-a", "cccccccccc", "/printables/test/phrase-a", "Holiday Christmas Holiday Train Coloring Page"),
+    fixture("phrase-b", "dddddddddd", "/printables/test/phrase-b", "Christmas Holiday Christmas Village"),
+  ]);
+  assert.equal(assignments.get("alligator").displayTitle, "Animals Alligator");
+  assert.equal(assignments.get("dalmatian").displayTitle, "Plants Dalmatian");
+  assert.equal(assignments.get("phrase-a").displayTitle, "Holiday Christmas Train");
+  assert.equal(assignments.get("phrase-b").displayTitle, "Christmas Village");
+
+  assert.ok(getGeneratedTitleQualityFlags("Holiday Holiday Train").includes("repeated-adjacent-word"));
+  assert.ok(getGeneratedTitleQualityFlags("Holiday Christmas Holiday Train").includes("repeated-phrase-order-defect"));
+  assert.ok(getGeneratedTitleQualityFlags("Holiday Train Coloring Page").includes("redundant-coloring-page-wording"));
+  assert.ok(getGeneratedTitleQualityFlags("Placeholder").includes("generic-title"));
+  assert.ok(getGeneratedTitleQualityFlags("Holiday Train 7").includes("numeric-suffix-review"));
+  assert.deepEqual(getGeneratedTitleQualityFlags("Prehistoric Pteranodon"), []);
+  assert.deepEqual(getGeneratedTitleQualityFlags("Fantasy Ankylosaurus"), []);
 });
 
 test("search keeps base-title matching, design-number matching, and deterministic design ordering", async () => {

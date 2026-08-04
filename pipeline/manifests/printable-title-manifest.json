@@ -35,24 +35,32 @@
     "uniqueDisplayTitleCount": 6352,
     "uniqueMetadataTitleCount": 6352,
     "uniqueAltTextCount": 6352,
-    "mechanicallyCorrectedRecordCount": 374,
-    "editorialReviewRecordCount": 122,
+    "mechanicallyCorrectedRecordCount": 569,
+    "editorialReviewRecordCount": 323,
     "publicSafetyFindingCount": 0,
-    "entrySha256": "d023dffefa5981c84a578cfab4e4667aba11ac706d8b9d093f3a397597efcf1c"
+    "entrySha256": "158a448cf958e89d1ac3bc9434939e2bdb63681b05ead9afb1a3c96a0bb67288"
   },
   "correctionFlagCounts": {
     "corrected-duplicate-adjacent-word": 40,
+    "corrected-phrase-christmas-holiday-christmas": 13,
+    "corrected-phrase-holiday-christmas-holiday": 3,
+    "corrected-redundant-coloring-page-suffix": 202,
     "corrected-spacing-polar-bear": 1,
+    "corrected-spelling-aligator": 1,
     "corrected-spelling-anima-plushie": 1,
     "corrected-spelling-bakini": 4,
     "corrected-spelling-celetbrating": 1,
+    "corrected-spelling-dalmation": 1,
     "corrected-spelling-midieval": 193,
     "corrected-spelling-vehiacle": 134
   },
   "editorialFlagCounts": {
     "ambiguous-numeric-suffix": 10,
     "brand-or-model-name-review": 110,
-    "uncertain-spelling": 4
+    "long-title-review": 46,
+    "numeric-suffix-review": 171,
+    "uncertain-spelling": 4,
+    "uncertain-term-review": 4
   },
   "publicSafetyFlagCounts": {},
   "hubContent": {
@@ -2958,7 +2966,8 @@
       "designNumber": 1,
       "primaryCategory": "animals",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -2970,7 +2979,8 @@
       "designNumber": 2,
       "primaryCategory": "animals",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -3002,7 +3012,8 @@
       "designNumber": 1,
       "primaryCategory": "animals",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -3014,7 +3025,8 @@
       "designNumber": 2,
       "primaryCategory": "animals",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -3056,7 +3068,8 @@
       "designNumber": 1,
       "primaryCategory": "animals",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -3068,7 +3081,8 @@
       "designNumber": 2,
       "primaryCategory": "animals",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -3090,7 +3104,8 @@
       "designNumber": 1,
       "primaryCategory": "animals",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -3102,7 +3117,8 @@
       "designNumber": 2,
       "primaryCategory": "animals",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -3264,7 +3280,8 @@
       "designNumber": 1,
       "primaryCategory": "animals",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -3276,7 +3293,8 @@
       "designNumber": 2,
       "primaryCategory": "animals",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -3288,7 +3306,8 @@
       "designNumber": 1,
       "primaryCategory": "animals",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -3300,7 +3319,8 @@
       "designNumber": 2,
       "primaryCategory": "animals",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -3322,7 +3342,8 @@
       "designNumber": 1,
       "primaryCategory": "animals",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -3334,7 +3355,8 @@
       "designNumber": 2,
       "primaryCategory": "animals",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -3356,7 +3378,8 @@
       "designNumber": 1,
       "primaryCategory": "animals",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -3368,7 +3391,8 @@
       "designNumber": 2,
       "primaryCategory": "animals",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -3880,7 +3904,8 @@
       "designNumber": 1,
       "primaryCategory": "animals",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -3892,7 +3917,8 @@
       "designNumber": 2,
       "primaryCategory": "animals",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -3924,7 +3950,8 @@
       "designNumber": 1,
       "primaryCategory": "animals",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -3936,7 +3963,8 @@
       "designNumber": 2,
       "primaryCategory": "animals",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -3988,7 +4016,8 @@
       "designNumber": 1,
       "primaryCategory": "animals",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -4000,7 +4029,8 @@
       "designNumber": 2,
       "primaryCategory": "animals",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -4032,7 +4062,8 @@
       "designNumber": 1,
       "primaryCategory": "animals",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -4044,7 +4075,8 @@
       "designNumber": 2,
       "primaryCategory": "animals",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -4056,7 +4088,8 @@
       "designNumber": 1,
       "primaryCategory": "animals",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -4068,7 +4101,8 @@
       "designNumber": 2,
       "primaryCategory": "animals",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -4080,7 +4114,8 @@
       "designNumber": 1,
       "primaryCategory": "animals",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -4092,7 +4127,8 @@
       "designNumber": 2,
       "primaryCategory": "animals",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -4104,7 +4140,8 @@
       "designNumber": 1,
       "primaryCategory": "animals",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -4116,7 +4153,8 @@
       "designNumber": 2,
       "primaryCategory": "animals",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -6633,81 +6671,97 @@
       "stableId": "c47ea723e5",
       "canonicalPath": "/printables/animals/chibi-holiday-halloween-black-cat-peeking-out-of-pumpkin-c47ea723e5",
       "baseTitle": "Chibi Holiday Halloween Black Cat Peeking Out Of Pumpkin Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Black Cat Peeking Out Of Pumpkin Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Black Cat Peeking Out Of Pumpkin",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "animals",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "81d2ff4c89",
       "canonicalPath": "/printables/animals/chibi-holiday-halloween-black-cat-sitting-on-fence-under-moon-81d2ff4c89",
       "baseTitle": "Chibi Holiday Halloween Black Cat Sitting On Fence Under Moon Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Black Cat Sitting On Fence Under Moon Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Black Cat Sitting On Fence Under Moon",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "animals",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "7b53c373f3",
       "canonicalPath": "/printables/animals/chibi-holiday-halloween-cobweb-in-corner-with-spider-7b53c373f3",
       "baseTitle": "Chibi Holiday Halloween Cobweb In Corner With Spider Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Cobweb In Corner With Spider Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Cobweb In Corner With Spider",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "animals",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "1cc339c68a",
       "canonicalPath": "/printables/animals/chibi-holiday-halloween-cute-halloween-ghost-cat-bat-friends-1cc339c68a",
       "baseTitle": "Chibi Holiday Halloween Cute Halloween Ghost Cat Bat Friends Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Cute Halloween Ghost Cat Bat Friends Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Cute Halloween Ghost Cat Bat Friends",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "animals",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "990dc9d87f",
       "canonicalPath": "/printables/animals/chibi-holiday-halloween-giant-spider-crawling-on-wall-990dc9d87f",
       "baseTitle": "Chibi Holiday Halloween Giant Spider Crawling On Wall Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Giant Spider Crawling On Wall Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Giant Spider Crawling On Wall",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "animals",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "3d6746f90b",
       "canonicalPath": "/printables/animals/chibi-holiday-halloween-mummy-running-away-from-black-cat-3d6746f90b",
       "baseTitle": "Chibi Holiday Halloween Mummy Running Away From Black Cat Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Mummy Running Away From Black Cat Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Mummy Running Away From Black Cat",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "animals",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "79fa5d8c2d",
       "canonicalPath": "/printables/animals/chibi-holiday-halloween-trick-or-treat-dog-in-cute-costume-79fa5d8c2d",
       "baseTitle": "Chibi Holiday Halloween Trick Or Treat Dog In Cute Costume Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Trick Or Treat Dog In Cute Costume Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Trick Or Treat Dog In Cute Costume",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "animals",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "09368c189e",
       "canonicalPath": "/printables/animals/chibi-holiday-halloween-witch-with-black-cat-on-shoulder-09368c189e",
       "baseTitle": "Chibi Holiday Halloween Witch With Black Cat On Shoulder Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Witch With Black Cat On Shoulder Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Witch With Black Cat On Shoulder",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "animals",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "aec37cad01",
@@ -8713,11 +8767,13 @@
       "stableId": "33d01d460f",
       "canonicalPath": "/printables/animals/holiday-christmas-nativity-scene-with-manger-and-animals-33d01d460f",
       "baseTitle": "Holiday Christmas Nativity Scene With Manger And Animals Coloring Page",
-      "displayTitle": "Holiday Christmas Nativity Scene With Manger And Animals Coloring Page",
+      "displayTitle": "Holiday Christmas Nativity Scene With Manger And Animals",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "animals",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "5d4b7f2e42",
@@ -9083,21 +9139,25 @@
       "stableId": "108e733c60",
       "canonicalPath": "/printables/animals/holiday-halloween-black-cat-sitting-on-fence-under-moon-108e733c60",
       "baseTitle": "Holiday Halloween Black Cat Sitting On Fence Under Moon Coloring Page",
-      "displayTitle": "Holiday Halloween Black Cat Sitting On Fence Under Moon Coloring Page",
+      "displayTitle": "Holiday Halloween Black Cat Sitting On Fence Under Moon",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "animals",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "efeaea9775",
       "canonicalPath": "/printables/animals/holiday-halloween-cobweb-in-corner-with-spider-efeaea9775",
       "baseTitle": "Holiday Halloween Cobweb In Corner With Spider Coloring Page",
-      "displayTitle": "Holiday Halloween Cobweb In Corner With Spider Coloring Page",
+      "displayTitle": "Holiday Halloween Cobweb In Corner With Spider",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "animals",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "de362762e7",
@@ -9343,21 +9403,25 @@
       "stableId": "9f9f5f3bbd",
       "canonicalPath": "/printables/animals/holiday-halloween-giant-spider-crawling-on-wall-9f9f5f3bbd",
       "baseTitle": "Holiday Halloween Giant Spider Crawling On Wall Coloring Page",
-      "displayTitle": "Holiday Halloween Giant Spider Crawling On Wall Coloring Page",
+      "displayTitle": "Holiday Halloween Giant Spider Crawling On Wall",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "animals",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "1914e85657",
       "canonicalPath": "/printables/animals/holiday-halloween-trick-or-treat-dog-in-cute-costume-1914e85657",
       "baseTitle": "Holiday Halloween Trick Or Treat Dog In Cute Costume Coloring Page",
-      "displayTitle": "Holiday Halloween Trick Or Treat Dog In Cute Costume Coloring Page",
+      "displayTitle": "Holiday Halloween Trick Or Treat Dog In Cute Costume",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "animals",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "6af898d102",
@@ -13409,7 +13473,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "animals",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "ec28058965",
@@ -14711,11 +14777,13 @@
       "stableId": "a87cc13ec7",
       "canonicalPath": "/printables/animals/reptiles-aligator-with-turtle-shell-a87cc13ec7",
       "baseTitle": "Reptiles Aligator With Turtle Shell",
-      "displayTitle": "Reptiles Aligator With Turtle Shell",
+      "displayTitle": "Reptiles Alligator With Turtle Shell",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "animals",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-spelling-aligator"
+      ]
     },
     {
       "stableId": "ac73c705a8",
@@ -17141,11 +17209,13 @@
       "stableId": "16a305e6b2",
       "canonicalPath": "/printables/animals/st-patricks-day-puppy-wearing-leprechaun-hat-16a305e6b2",
       "baseTitle": "St Patricks Day Puppy Wearing Leprechaun Hat Coloring Page",
-      "displayTitle": "St Patricks Day Puppy Wearing Leprechaun Hat Coloring Page",
+      "displayTitle": "St Patricks Day Puppy Wearing Leprechaun Hat",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "animals",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "1f6b5be7bc",
@@ -17196,7 +17266,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -17208,7 +17279,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -17270,7 +17342,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -17282,7 +17355,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -17357,7 +17431,8 @@
       "primaryCategory": "anime-girls",
       "qualityFlags": [
         "corrected-spelling-bakini",
-        "ambiguous-numeric-suffix"
+        "ambiguous-numeric-suffix",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -17370,7 +17445,8 @@
       "primaryCategory": "anime-girls",
       "qualityFlags": [
         "corrected-spelling-bakini",
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -17383,7 +17459,8 @@
       "primaryCategory": "anime-girls",
       "qualityFlags": [
         "corrected-spelling-bakini",
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -17535,7 +17612,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -17547,7 +17625,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -17569,7 +17648,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -17581,7 +17661,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -17665,7 +17746,8 @@
       "designNumber": null,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "ambiguous-numeric-suffix"
+        "ambiguous-numeric-suffix",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -18049,7 +18131,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -18061,7 +18144,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -18203,7 +18287,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -18215,7 +18300,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -18277,7 +18363,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -18289,7 +18376,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -18361,7 +18449,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -18373,7 +18462,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -18385,7 +18475,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -18397,7 +18488,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -18409,7 +18501,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -18421,7 +18514,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -18693,7 +18787,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -18705,7 +18800,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -18777,7 +18873,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -18789,7 +18886,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -18811,7 +18909,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -18823,7 +18922,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -18865,7 +18965,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -18877,7 +18978,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -18919,7 +19021,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -18931,7 +19034,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -19013,7 +19117,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -19025,7 +19130,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -19117,7 +19223,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -19129,7 +19236,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -19331,7 +19439,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -19363,7 +19472,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -19475,7 +19585,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -19487,7 +19598,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -19589,7 +19701,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -19601,7 +19714,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -19663,7 +19777,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -19675,7 +19790,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -19877,7 +19993,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -19889,7 +20006,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -20001,7 +20119,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -20013,7 +20132,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -20065,7 +20185,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -20077,7 +20198,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -20169,7 +20291,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -20181,7 +20304,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -20253,7 +20377,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -20265,7 +20390,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -20347,7 +20473,8 @@
       "designNumber": null,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "ambiguous-numeric-suffix"
+        "ambiguous-numeric-suffix",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -20359,7 +20486,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -20371,7 +20499,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -20393,7 +20522,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -20405,7 +20535,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -20417,7 +20548,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -20429,7 +20561,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -20481,7 +20614,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -20493,7 +20627,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -20505,7 +20640,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -20517,7 +20653,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -20539,7 +20676,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -20551,7 +20689,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -20663,7 +20802,8 @@
       "designNumber": null,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "ambiguous-numeric-suffix"
+        "ambiguous-numeric-suffix",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -20675,7 +20815,8 @@
       "designNumber": null,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "ambiguous-numeric-suffix"
+        "ambiguous-numeric-suffix",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -20687,7 +20828,8 @@
       "designNumber": null,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "ambiguous-numeric-suffix"
+        "ambiguous-numeric-suffix",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -20779,7 +20921,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -20791,7 +20934,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -20823,7 +20967,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -20835,7 +20980,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -20987,7 +21133,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -20999,7 +21146,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -21081,7 +21229,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -21093,7 +21242,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -21155,7 +21305,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -21167,7 +21318,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -21279,7 +21431,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -21291,7 +21444,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -21763,7 +21917,8 @@
       "designNumber": null,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "ambiguous-numeric-suffix"
+        "ambiguous-numeric-suffix",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -21805,7 +21960,8 @@
       "designNumber": null,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "ambiguous-numeric-suffix"
+        "ambiguous-numeric-suffix",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -21847,7 +22003,8 @@
       "designNumber": null,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "ambiguous-numeric-suffix"
+        "ambiguous-numeric-suffix",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -24429,7 +24586,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -24441,7 +24599,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -24533,7 +24692,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -24545,7 +24705,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -24747,7 +24908,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -24759,7 +24921,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -24791,7 +24954,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -24803,7 +24967,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -24815,7 +24980,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -24827,7 +24993,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -24859,7 +25026,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -24871,7 +25039,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -24893,7 +25062,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -24905,7 +25075,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -24917,7 +25088,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -24929,7 +25101,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -24941,7 +25114,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -24953,7 +25127,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -24965,7 +25140,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -24977,7 +25153,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -25029,7 +25206,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -25041,7 +25219,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -25083,7 +25262,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -25095,7 +25275,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -25107,7 +25288,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -25119,7 +25301,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -25151,7 +25334,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -25163,7 +25347,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -25185,7 +25370,8 @@
       "designNumber": 1,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -25207,7 +25393,8 @@
       "designNumber": 2,
       "primaryCategory": "anime-girls",
       "qualityFlags": [
-        "valid-duplicate-base-title"
+        "valid-duplicate-base-title",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -26218,71 +26405,85 @@
       "stableId": "3624fb1d72",
       "canonicalPath": "/printables/bats/chibi-holiday-halloween-bat-colony-flying-in-night-sky-3624fb1d72",
       "baseTitle": "Chibi Holiday Halloween Bat Colony Flying In Night Sky Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Bat Colony Flying In Night Sky Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Bat Colony Flying In Night Sky",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "bats",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "9a8a418b04",
       "canonicalPath": "/printables/bats/chibi-holiday-halloween-cauldron-with-green-smoke-and-bats-9a8a418b04",
       "baseTitle": "Chibi Holiday Halloween Cauldron With Green Smoke And Bats Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Cauldron With Green Smoke And Bats Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Cauldron With Green Smoke And Bats",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "bats",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "16b1ef94ce",
       "canonicalPath": "/printables/bats/chibi-holiday-halloween-dracula-flying-as-bat-over-castle-16b1ef94ce",
       "baseTitle": "Chibi Holiday Halloween Dracula Flying As Bat Over Castle Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Dracula Flying As Bat Over Castle Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Dracula Flying As Bat Over Castle",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "bats",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "145ac201f0",
       "canonicalPath": "/printables/bats/chibi-holiday-halloween-dracula-in-coffin-with-bats-145ac201f0",
       "baseTitle": "Chibi Holiday Halloween Dracula In Coffin With Bats Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Dracula In Coffin With Bats Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Dracula In Coffin With Bats",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "bats",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "b293cf953e",
       "canonicalPath": "/printables/bats/chibi-holiday-halloween-graveyard-with-bats-and-foggy-moonlight-b293cf953e",
       "baseTitle": "Chibi Holiday Halloween Graveyard With Bats And Foggy Moonlight Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Graveyard With Bats And Foggy Moonlight Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Graveyard With Bats And Foggy Moonlight",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "bats",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "1cb79db677",
       "canonicalPath": "/printables/bats/chibi-holiday-halloween-haunted-house-with-bats-flying-around-1cb79db677",
       "baseTitle": "Chibi Holiday Halloween Haunted House With Bats Flying Around Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Haunted House With Bats Flying Around Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Haunted House With Bats Flying Around",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "bats",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "450302864b",
       "canonicalPath": "/printables/bats/chibi-holiday-halloween-vampire-standing-with-bat-cloak-450302864b",
       "baseTitle": "Chibi Holiday Halloween Vampire Standing With Bat Cloak Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Vampire Standing With Bat Cloak Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Vampire Standing With Bat Cloak",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "bats",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "38f7ed18a6",
@@ -26328,11 +26529,13 @@
       "stableId": "b88ffd2d89",
       "canonicalPath": "/printables/bats/holiday-halloween-bat-colony-flying-in-night-sky-b88ffd2d89",
       "baseTitle": "Holiday Halloween Bat Colony Flying In Night Sky Coloring Page",
-      "displayTitle": "Holiday Halloween Bat Colony Flying In Night Sky Coloring Page",
+      "displayTitle": "Holiday Halloween Bat Colony Flying In Night Sky",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "bats",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "c51b53ebbc",
@@ -26348,31 +26551,37 @@
       "stableId": "4397409e48",
       "canonicalPath": "/printables/bats/holiday-halloween-dracula-in-coffin-with-bats-4397409e48",
       "baseTitle": "Holiday Halloween Dracula In Coffin With Bats Coloring Page",
-      "displayTitle": "Holiday Halloween Dracula In Coffin With Bats Coloring Page",
+      "displayTitle": "Holiday Halloween Dracula In Coffin With Bats",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "bats",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "eeafc51927",
       "canonicalPath": "/printables/bats/holiday-halloween-graveyard-with-bats-and-foggy-moonlight-eeafc51927",
       "baseTitle": "Holiday Halloween Graveyard With Bats And Foggy Moonlight Coloring Page",
-      "displayTitle": "Holiday Halloween Graveyard With Bats And Foggy Moonlight Coloring Page",
+      "displayTitle": "Holiday Halloween Graveyard With Bats And Foggy Moonlight",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "bats",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "e5d31a73ba",
       "canonicalPath": "/printables/bats/holiday-halloween-vampire-standing-with-bat-cloak-e5d31a73ba",
       "baseTitle": "Holiday Halloween Vampire Standing With Bat Cloak Coloring Page",
-      "displayTitle": "Holiday Halloween Vampire Standing With Bat Cloak Coloring Page",
+      "displayTitle": "Holiday Halloween Vampire Standing With Bat Cloak",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "bats",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "8c215e7042",
@@ -26598,11 +26807,13 @@
       "stableId": "4adc12f31d",
       "canonicalPath": "/printables/bears/holiday-christmas-polar-bears-wrapping-gifts-4adc12f31d",
       "baseTitle": "Holiday Christmas Polar Bears Wrapping Gifts Coloring Page",
-      "displayTitle": "Holiday Christmas Polar Bears Wrapping Gifts Coloring Page",
+      "displayTitle": "Holiday Christmas Polar Bears Wrapping Gifts",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "bears",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "6b0df5fb9a",
@@ -28554,7 +28765,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "bridges",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "130d98c162",
@@ -28564,7 +28777,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "bridges",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "2b48d7893e",
@@ -28574,7 +28789,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "bridges",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "20aaf431d4",
@@ -28594,7 +28811,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "bridges",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "b6b87eb7c0",
@@ -28604,7 +28823,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "bridges",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "33a77a8607",
@@ -28726,61 +28947,73 @@
       "stableId": "08e80ab431",
       "canonicalPath": "/printables/buildings/chibi-holiday-halloween-creepy-castle-with-torch-lit-windows-08e80ab431",
       "baseTitle": "Chibi Holiday Halloween Creepy Castle With Torch Lit Windows Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Creepy Castle With Torch Lit Windows Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Creepy Castle With Torch Lit Windows",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "buildings",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "c0eae7d121",
       "canonicalPath": "/printables/buildings/chibi-holiday-halloween-haunted-house-c0eae7d121",
       "baseTitle": "Chibi Holiday Halloween Haunted House Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Haunted House Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Haunted House",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "buildings",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "c7aba2cae1",
       "canonicalPath": "/printables/buildings/chibi-holiday-halloween-haunted-house-on-hill-c7aba2cae1",
       "baseTitle": "Chibi Holiday Halloween Haunted House On Hill Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Haunted House On Hill Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Haunted House On Hill",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "buildings",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "6de4b2a74b",
       "canonicalPath": "/printables/buildings/chibi-holiday-halloween-haunted-house-on-hill-under-full-moon-6de4b2a74b",
       "baseTitle": "Chibi Holiday Halloween Haunted House On Hill Under Full Moon Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Haunted House On Hill Under Full Moon Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Haunted House On Hill Under Full Moon",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "buildings",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "362fdd250c",
       "canonicalPath": "/printables/buildings/chibi-holiday-halloween-haunted-house-on-stilts-in-swamp-362fdd250c",
       "baseTitle": "Chibi Holiday Halloween Haunted House On Stilts In Swamp Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Haunted House On Stilts In Swamp Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Haunted House On Stilts In Swamp",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "buildings",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "c23ca248b8",
       "canonicalPath": "/printables/buildings/chibi-holiday-halloween-haunted-house-with-broken-fence-c23ca248b8",
       "baseTitle": "Chibi Holiday Halloween Haunted House With Broken Fence Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Haunted House With Broken Fence Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Haunted House With Broken Fence",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "buildings",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "49e2d5c525",
@@ -28968,43 +29201,50 @@
       "stableId": "4648bc3409",
       "canonicalPath": "/printables/buildings/holiday-christmas-gingerbread-house-decorated-with-candy-4648bc3409",
       "baseTitle": "Holiday Christmas Gingerbread House Decorated With Candy Coloring Page",
-      "displayTitle": "Holiday Christmas Gingerbread House Decorated With Candy Coloring Page",
+      "displayTitle": "Holiday Christmas Gingerbread House Decorated With Candy",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "buildings",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "408348413a",
       "canonicalPath": "/printables/buildings/holiday-christmas-kids-building-snow-fort-in-yard-408348413a",
       "baseTitle": "Holiday Christmas Kids Building Snow Fort In Yard Coloring Page",
-      "displayTitle": "Holiday Christmas Kids Building Snow Fort In Yard Coloring Page",
+      "displayTitle": "Holiday Christmas Kids Building Snow Fort In Yard",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "buildings",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "b297f1c694",
       "canonicalPath": "/printables/buildings/holiday-christmas-village-with-snowy-houses-b297f1c694",
       "baseTitle": "Holiday Christmas Christmas Village With Snowy Houses Coloring Page",
-      "displayTitle": "Holiday Christmas Village With Snowy Houses Coloring Page",
+      "displayTitle": "Holiday Christmas Village With Snowy Houses",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "buildings",
       "qualityFlags": [
-        "corrected-duplicate-adjacent-word"
+        "corrected-duplicate-adjacent-word",
+        "corrected-redundant-coloring-page-suffix"
       ]
     },
     {
       "stableId": "4846172bbc",
       "canonicalPath": "/printables/buildings/holiday-halloween-haunted-house-on-hill-under-full-moon-4846172bbc",
       "baseTitle": "Holiday Halloween Haunted House On Hill Under Full Moon Coloring Page",
-      "displayTitle": "Holiday Halloween Haunted House On Hill Under Full Moon Coloring Page",
+      "displayTitle": "Holiday Halloween Haunted House On Hill Under Full Moon",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "buildings",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "f69cf800b3",
@@ -29518,11 +29758,13 @@
       "stableId": "862176e869",
       "canonicalPath": "/printables/buildings/st-patricks-day-irish-castle-on-hilltop-862176e869",
       "baseTitle": "St Patricks Day Irish Castle On Hilltop Coloring Page",
-      "displayTitle": "St Patricks Day Irish Castle On Hilltop Coloring Page",
+      "displayTitle": "St Patricks Day Irish Castle On Hilltop",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "buildings",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "4ccae2c33f",
@@ -30022,7 +30264,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "cars",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "1d9488574e",
@@ -30042,7 +30286,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "cars",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "01e70c6de0",
@@ -30052,7 +30298,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "cars",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "77162dcc9f",
@@ -30072,7 +30320,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "cars",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "b89cad5ed9",
@@ -30082,7 +30332,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "cars",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "2663ac3776",
@@ -30112,7 +30364,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "cars",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "e8ec35f3aa",
@@ -30122,7 +30376,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "cars",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "24834c30e1",
@@ -30827,7 +31083,8 @@
       "primaryCategory": "cars",
       "qualityFlags": [
         "corrected-spelling-vehiacle",
-        "brand-or-model-name-review"
+        "brand-or-model-name-review",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -30936,7 +31193,8 @@
       "designNumber": null,
       "primaryCategory": "cars",
       "qualityFlags": [
-        "corrected-spelling-vehiacle"
+        "corrected-spelling-vehiacle",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -31773,7 +32031,8 @@
       "primaryCategory": "cars",
       "qualityFlags": [
         "corrected-spelling-vehiacle",
-        "brand-or-model-name-review"
+        "brand-or-model-name-review",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -31948,7 +32207,8 @@
       "designNumber": null,
       "primaryCategory": "cars",
       "qualityFlags": [
-        "brand-or-model-name-review"
+        "brand-or-model-name-review",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -31997,7 +32257,8 @@
       "designNumber": null,
       "primaryCategory": "cars",
       "qualityFlags": [
-        "brand-or-model-name-review"
+        "brand-or-model-name-review",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -33564,7 +33825,8 @@
       "designNumber": null,
       "primaryCategory": "chibi",
       "qualityFlags": [
-        "uncertain-spelling"
+        "uncertain-spelling",
+        "uncertain-term-review"
       ]
     },
     {
@@ -35181,733 +35443,871 @@
       "stableId": "27d5c14d60",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-candy-bucket-filled-with-treats-27d5c14d60",
       "baseTitle": "Chibi Holiday Halloween Candy Bucket Filled With Treats Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Candy Bucket Filled With Treats Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Candy Bucket Filled With Treats",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "7e70d5d5ae",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-candy-corn-pattern-background-7e70d5d5ae",
       "baseTitle": "Chibi Holiday Halloween Candy Corn Pattern Background Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Candy Corn Pattern Background Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Candy Corn Pattern Background",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "50f8dcfa9b",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-candy-stall-at-halloween-festival-50f8dcfa9b",
       "baseTitle": "Chibi Holiday Halloween Candy Stall At Halloween Festival Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Candy Stall At Halloween Festival Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Candy Stall At Halloween Festival",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "64ae58c6d8",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-candy-trail-leading-to-haunted-door-64ae58c6d8",
       "baseTitle": "Chibi Holiday Halloween Candy Trail Leading To Haunted Door Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Candy Trail Leading To Haunted Door Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Candy Trail Leading To Haunted Door",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "a2a741e801",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-carnival-with-games-and-booths-a2a741e801",
       "baseTitle": "Chibi Holiday Halloween Halloween Carnival With Games And Booths Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Carnival With Games And Booths Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Carnival With Games And Booths",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
       "qualityFlags": [
-        "corrected-duplicate-adjacent-word"
+        "corrected-duplicate-adjacent-word",
+        "corrected-redundant-coloring-page-suffix"
       ]
     },
     {
       "stableId": "cea100bc43",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-cauldron-bubbling-over-firewood-cea100bc43",
       "baseTitle": "Chibi Holiday Halloween Cauldron Bubbling Over Firewood Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Cauldron Bubbling Over Firewood Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Cauldron Bubbling Over Firewood",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "a7e4efaae7",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-cauldron-bubbling-with-green-slime-a7e4efaae7",
       "baseTitle": "Chibi Holiday Halloween Cauldron Bubbling With Green Slime Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Cauldron Bubbling With Green Slime Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Cauldron Bubbling With Green Slime",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "2565671600",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-cauldron-surrounded-by-potion-bottles-2565671600",
       "baseTitle": "Chibi Holiday Halloween Cauldron Surrounded By Potion Bottles Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Cauldron Surrounded By Potion Bottles Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Cauldron Surrounded By Potion Bottles",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "975b8f919b",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-crow-sitting-on-fence-post-975b8f919b",
       "baseTitle": "Chibi Holiday Halloween Crow Sitting On Fence Post Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Crow Sitting On Fence Post Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Crow Sitting On Fence Post",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "7d69f90252",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-cute-kawaii-halloween-characters-7d69f90252",
       "baseTitle": "Chibi Holiday Halloween Cute Kawaii Halloween Characters Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Cute Kawaii Halloween Characters Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Cute Kawaii Halloween Characters",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "2dd26b010c",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-foggy-swamp-with-creepy-trees-2dd26b010c",
       "baseTitle": "Chibi Holiday Halloween Foggy Swamp With Creepy Trees Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Foggy Swamp With Creepy Trees Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Foggy Swamp With Creepy Trees",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "7af91016f5",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-frankenstein-and-bride-standing-together-7af91016f5",
       "baseTitle": "Chibi Holiday Halloween Frankenstein And Bride Standing Together Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Frankenstein And Bride Standing Together Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Frankenstein And Bride Standing Together",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "a39841457f",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-frankenstein-monster-smiling-a39841457f",
       "baseTitle": "Chibi Holiday Halloween Frankenstein Monster Smiling Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Frankenstein Monster Smiling Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Frankenstein Monster Smiling",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "21641bdc41",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-garland-and-decorated-door-21641bdc41",
       "baseTitle": "Chibi Holiday Halloween Halloween Garland And Decorated Door Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Garland And Decorated Door Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Garland And Decorated Door",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
       "qualityFlags": [
-        "corrected-duplicate-adjacent-word"
+        "corrected-duplicate-adjacent-word",
+        "corrected-redundant-coloring-page-suffix"
       ]
     },
     {
       "stableId": "f4a78ca0e4",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-ghost-family-f4a78ca0e4",
       "baseTitle": "Chibi Holiday Halloween Ghost Family Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Ghost Family Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Ghost Family",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "fc38fdeb9d",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-ghost-family-with-smiling-faces-fc38fdeb9d",
       "baseTitle": "Chibi Holiday Halloween Ghost Family With Smiling Faces Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Ghost Family With Smiling Faces Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Ghost Family With Smiling Faces",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "1dcafd9556",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-ghost-floating-above-graveyard-1dcafd9556",
       "baseTitle": "Chibi Holiday Halloween Ghost Floating Above Graveyard Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Ghost Floating Above Graveyard Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Ghost Floating Above Graveyard",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "2ecd4724a1",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-ghost-floating-in-haunted-hallway-2ecd4724a1",
       "baseTitle": "Chibi Holiday Halloween Ghost Floating In Haunted Hallway Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Ghost Floating In Haunted Hallway Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Ghost Floating In Haunted Hallway",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "c136970593",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-ghost-peeking-behind-tombstone-c136970593",
       "baseTitle": "Chibi Holiday Halloween Ghost Peeking Behind Tombstone Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Ghost Peeking Behind Tombstone Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Ghost Peeking Behind Tombstone",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "55ab382228",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-ghost-peeking-from-pumpkin-55ab382228",
       "baseTitle": "Chibi Holiday Halloween Ghost Peeking From Pumpkin Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Ghost Peeking From Pumpkin Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Ghost Peeking From Pumpkin",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "f62927f988",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-ghost-riding-on-broom-with-witch-f62927f988",
       "baseTitle": "Chibi Holiday Halloween Ghost Riding On Broom With Witch Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Ghost Riding On Broom With Witch Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Ghost Riding On Broom With Witch",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "e62e0a874f",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-ghostly-train-passing-through-tunnel-e62e0a874f",
       "baseTitle": "Chibi Holiday Halloween Ghostly Train Passing Through Tunnel Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Ghostly Train Passing Through Tunnel Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Ghostly Train Passing Through Tunnel",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "9aa47c8b6a",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-ghosts-holding-hands-in-circle-9aa47c8b6a",
       "baseTitle": "Chibi Holiday Halloween Ghosts Holding Hands In Circle Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Ghosts Holding Hands In Circle Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Ghosts Holding Hands In Circle",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "c64f2d6601",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-graveyard-with-creepy-crows-c64f2d6601",
       "baseTitle": "Chibi Holiday Halloween Graveyard With Creepy Crows Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Graveyard With Creepy Crows Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Graveyard With Creepy Crows",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "2f0f3d2c2f",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-graveyard-with-creepy-crows-on-crosses-2f0f3d2c2f",
       "baseTitle": "Chibi Holiday Halloween Graveyard With Creepy Crows On Crosses Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Graveyard With Creepy Crows On Crosses Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Graveyard With Creepy Crows On Crosses",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "fa503c2b9a",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-happy-pumpkin-patch-scene-fa503c2b9a",
       "baseTitle": "Chibi Holiday Halloween Happy Pumpkin Patch Scene Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Happy Pumpkin Patch Scene Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Happy Pumpkin Patch Scene",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "f63a303b4e",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-harvest-scene-with-hay-bales-and-crows-f63a303b4e",
       "baseTitle": "Chibi Holiday Halloween Harvest Scene With Hay Bales And Crows Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Harvest Scene With Hay Bales And Crows Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Harvest Scene With Hay Bales And Crows",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "a27ab1a344",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-haunted-mansion-with-creaky-gate-a27ab1a344",
       "baseTitle": "Chibi Holiday Halloween Haunted Mansion With Creaky Gate Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Haunted Mansion With Creaky Gate Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Haunted Mansion With Creaky Gate",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "e05357e953",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-haunted-mansion-with-lantern-lit-path-e05357e953",
       "baseTitle": "Chibi Holiday Halloween Haunted Mansion With Lantern Lit Path Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Haunted Mansion With Lantern Lit Path Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Haunted Mansion With Lantern Lit Path",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "0e546b82e0",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-jack-o-lantern-faces-variety-0e546b82e0",
       "baseTitle": "Chibi Holiday Halloween Jack O Lantern Faces Variety Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Jack O Lantern Faces Variety Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Jack O Lantern Faces Variety",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "915e33dd1c",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-jack-o-lantern-glowing-in-window-915e33dd1c",
       "baseTitle": "Chibi Holiday Halloween Jack O Lantern Glowing In Window Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Jack O Lantern Glowing In Window Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Jack O Lantern Glowing In Window",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "1b72f4cc2e",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-jack-o-lantern-lined-front-porch-1b72f4cc2e",
       "baseTitle": "Chibi Holiday Halloween Jack O Lantern Lined Front Porch Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Jack O Lantern Lined Front Porch Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Jack O Lantern Lined Front Porch",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "a26d735941",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-jack-o-lantern-stack-of-three-pumpkins-a26d735941",
       "baseTitle": "Chibi Holiday Halloween Jack O Lantern Stack Of Three Pumpkins Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Jack O Lantern Stack Of Three Pumpkins Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Jack O Lantern Stack Of Three Pumpkins",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "31885be148",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-market-stall-with-pumpkins-31885be148",
       "baseTitle": "Chibi Holiday Halloween Halloween Market Stall With Pumpkins Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Market Stall With Pumpkins Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Market Stall With Pumpkins",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
       "qualityFlags": [
-        "corrected-duplicate-adjacent-word"
+        "corrected-duplicate-adjacent-word",
+        "corrected-redundant-coloring-page-suffix"
       ]
     },
     {
       "stableId": "1a71fa21e1",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-maze-with-cornfield-paths-1a71fa21e1",
       "baseTitle": "Chibi Holiday Halloween Halloween Maze With Cornfield Paths Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Maze With Cornfield Paths Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Maze With Cornfield Paths",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
       "qualityFlags": [
-        "corrected-duplicate-adjacent-word"
+        "corrected-duplicate-adjacent-word",
+        "corrected-redundant-coloring-page-suffix"
       ]
     },
     {
       "stableId": "3d7b5dcceb",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-mummy-walking-with-bandages-loose-3d7b5dcceb",
       "baseTitle": "Chibi Holiday Halloween Mummy Walking With Bandages Loose Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Mummy Walking With Bandages Loose Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Mummy Walking With Bandages Loose",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "10288dab01",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-parade-with-children-in-costumes-10288dab01",
       "baseTitle": "Chibi Holiday Halloween Halloween Parade With Children In Costumes Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Parade With Children In Costumes Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Parade With Children In Costumes",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
       "qualityFlags": [
-        "corrected-duplicate-adjacent-word"
+        "corrected-duplicate-adjacent-word",
+        "corrected-redundant-coloring-page-suffix"
       ]
     },
     {
       "stableId": "3c16bfa9fb",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-party-with-balloons-and-streamers-3c16bfa9fb",
       "baseTitle": "Chibi Holiday Halloween Halloween Party With Balloons And Streamers Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Party With Balloons And Streamers Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Party With Balloons And Streamers",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
       "qualityFlags": [
-        "corrected-duplicate-adjacent-word"
+        "corrected-duplicate-adjacent-word",
+        "corrected-redundant-coloring-page-suffix"
       ]
     },
     {
       "stableId": "67a78d4043",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-pirate-treasure-67a78d4043",
       "baseTitle": "Chibi Holiday Halloween Pirate Treasure Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Pirate Treasure Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Pirate Treasure",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "eb38dfff5d",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-pumpkin-carving-party-eb38dfff5d",
       "baseTitle": "Chibi Holiday Halloween Pumpkin Carving Party Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Pumpkin Carving Party Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Pumpkin Carving Party",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "d7adf41e8e",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-pumpkin-patch-with-cornstalks-and-scarecrow-d7adf41e8e",
       "baseTitle": "Chibi Holiday Halloween Pumpkin Patch With Cornstalks And Scarecrow Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Pumpkin Patch With Cornstalks And Scarecrow Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Pumpkin Patch With Cornstalks And Scarecrow",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "91ce03c1b2",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-pumpkin-patch-with-crows-flying-over-91ce03c1b2",
       "baseTitle": "Chibi Holiday Halloween Pumpkin Patch With Crows Flying Over Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Pumpkin Patch With Crows Flying Over Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Pumpkin Patch With Crows Flying Over",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "01c2f0ce30",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-pumpkin-patch-with-family-picking-pumpkins-01c2f0ce30",
       "baseTitle": "Chibi Holiday Halloween Pumpkin Patch With Family Picking Pumpkins Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Pumpkin Patch With Family Picking Pumpkins Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Pumpkin Patch With Family Picking Pumpkins",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "7d3c695c2b",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-pumpkin-pie-and-spice-decor-scene-7d3c695c2b",
       "baseTitle": "Chibi Holiday Halloween Pumpkin Pie And Spice Decor Scene Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Pumpkin Pie And Spice Decor Scene Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Pumpkin Pie And Spice Decor Scene",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "e97953d8aa",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-scarecrow-guarding-pumpkin-field-e97953d8aa",
       "baseTitle": "Chibi Holiday Halloween Scarecrow Guarding Pumpkin Field Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Scarecrow Guarding Pumpkin Field Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Scarecrow Guarding Pumpkin Field",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "beeabe84e8",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-skeleton-band-playing-in-graveyard-beeabe84e8",
       "baseTitle": "Chibi Holiday Halloween Skeleton Band Playing In Graveyard Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Skeleton Band Playing In Graveyard Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Skeleton Band Playing In Graveyard",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "3ddcbf334e",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-skeleton-dancing-with-top-hat-3ddcbf334e",
       "baseTitle": "Chibi Holiday Halloween Skeleton Dancing With Top Hat Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Skeleton Dancing With Top Hat Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Skeleton Dancing With Top Hat",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "d08afbfad3",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-skeleton-riding-bicycle-through-town-d08afbfad3",
       "baseTitle": "Chibi Holiday Halloween Skeleton Riding Bicycle Through Town Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Skeleton Riding Bicycle Through Town Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Skeleton Riding Bicycle Through Town",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "861748f12e",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-skeleton-sitting-on-bench-in-park-861748f12e",
       "baseTitle": "Chibi Holiday Halloween Skeleton Sitting On Bench In Park Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Skeleton Sitting On Bench In Park Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Skeleton Sitting On Bench In Park",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "5063003da3",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-spooky-forest-path-with-glowing-eyes-5063003da3",
       "baseTitle": "Chibi Holiday Halloween Spooky Forest Path With Glowing Eyes Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Spooky Forest Path With Glowing Eyes Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Spooky Forest Path With Glowing Eyes",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "5686477b0a",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-spooky-graveyard-with-tombstones-5686477b0a",
       "baseTitle": "Chibi Holiday Halloween Spooky Graveyard With Tombstones Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Spooky Graveyard With Tombstones Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Spooky Graveyard With Tombstones",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "0fce902c33",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-tombstone-with-rip-inscription-0fce902c33",
       "baseTitle": "Chibi Holiday Halloween Tombstone With Rip Inscription Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Tombstone With Rip Inscription Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Tombstone With Rip Inscription",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "dbdec0dd78",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-tombstone-with-wilted-flowers-dbdec0dd78",
       "baseTitle": "Chibi Holiday Halloween Tombstone With Wilted Flowers Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Tombstone With Wilted Flowers Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Tombstone With Wilted Flowers",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "abe00661e0",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-trick-or-treat-children-with-pumpkin-bags-abe00661e0",
       "baseTitle": "Chibi Holiday Halloween Trick Or Treat Children With Pumpkin Bags Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Trick Or Treat Children With Pumpkin Bags Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Trick Or Treat Children With Pumpkin Bags",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "764a39620c",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-trick-or-treat-doorstep-with-carved-pumpkins-764a39620c",
       "baseTitle": "Chibi Holiday Halloween Trick Or Treat Doorstep With Carved Pumpkins Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Trick Or Treat Doorstep With Carved Pumpkins Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Trick Or Treat Doorstep With Carved Pumpkins",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "aad2950ba7",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-trick-or-treat-front-porch-decorated-aad2950ba7",
       "baseTitle": "Chibi Holiday Halloween Trick Or Treat Front Porch Decorated Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Trick Or Treat Front Porch Decorated Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Trick Or Treat Front Porch Decorated",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "604d716265",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-trick-or-treat-walkway-lined-with-lanterns-604d716265",
       "baseTitle": "Chibi Holiday Halloween Trick Or Treat Walkway Lined With Lanterns Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Trick Or Treat Walkway Lined With Lanterns Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Trick Or Treat Walkway Lined With Lanterns",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "62c9c0a50f",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-vampire-holding-goblet-under-crescent-moon-62c9c0a50f",
       "baseTitle": "Chibi Holiday Halloween Vampire Holding Goblet Under Crescent Moon Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Vampire Holding Goblet Under Crescent Moon Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Vampire Holding Goblet Under Crescent Moon",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "560dde82c2",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-vampire-with-spooky-shadow-on-wall-560dde82c2",
       "baseTitle": "Chibi Holiday Halloween Vampire With Spooky Shadow On Wall Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Vampire With Spooky Shadow On Wall Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Vampire With Spooky Shadow On Wall",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "fd3be2b3e7",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-vintage-halloween-postcard-style-scene-fd3be2b3e7",
       "baseTitle": "Chibi Holiday Halloween Vintage Halloween Postcard Style Scene Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Vintage Halloween Postcard Style Scene Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Vintage Halloween Postcard Style Scene",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "a6643004a9",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-werewolf-howling-under-full-moon-a6643004a9",
       "baseTitle": "Chibi Holiday Halloween Werewolf Howling Under Full Moon Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Werewolf Howling Under Full Moon Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Werewolf Howling Under Full Moon",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "eac93f03f5",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-werewolf-in-forest-with-fireflies-eac93f03f5",
       "baseTitle": "Chibi Holiday Halloween Werewolf In Forest With Fireflies Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Werewolf In Forest With Fireflies Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Werewolf In Forest With Fireflies",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "7466595531",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-werewolf-jumping-over-haunted-fence-7466595531",
       "baseTitle": "Chibi Holiday Halloween Werewolf Jumping Over Haunted Fence Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Werewolf Jumping Over Haunted Fence Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Werewolf Jumping Over Haunted Fence",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "a8e1c3adf2",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-werewolf-standing-atop-rock-under-moon-a8e1c3adf2",
       "baseTitle": "Chibi Holiday Halloween Werewolf Standing Atop Rock Under Moon Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Werewolf Standing Atop Rock Under Moon Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Werewolf Standing Atop Rock Under Moon",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "7d050e8926",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-witch-cooking-potion-in-cauldron-7d050e8926",
       "baseTitle": "Chibi Holiday Halloween Witch Cooking Potion In Cauldron Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Witch Cooking Potion In Cauldron Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Witch Cooking Potion In Cauldron",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "c97fddfd8f",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-witch-cottage-in-forest-scene-c97fddfd8f",
       "baseTitle": "Chibi Holiday Halloween Witch Cottage In Forest Scene Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Witch Cottage In Forest Scene Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Witch Cottage In Forest Scene",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "c631f661fc",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-witch-flying-on-broomstick-across-moon-c631f661fc",
       "baseTitle": "Chibi Holiday Halloween Witch Flying On Broomstick Across Moon Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Witch Flying On Broomstick Across Moon Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Witch Flying On Broomstick Across Moon",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "74c5898630",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-witch-hat-and-potion-bottles-74c5898630",
       "baseTitle": "Chibi Holiday Halloween Witch Hat And Potion Bottles Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Witch Hat And Potion Bottles Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Witch Hat And Potion Bottles",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "4c5f9d69ca",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-witch-reading-spellbook-near-cauldron-4c5f9d69ca",
       "baseTitle": "Chibi Holiday Halloween Witch Reading Spellbook Near Cauldron Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Witch Reading Spellbook Near Cauldron Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Witch Reading Spellbook Near Cauldron",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "b59b806249",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-zombie-peeking-out-of-ground-b59b806249",
       "baseTitle": "Chibi Holiday Halloween Zombie Peeking Out Of Ground Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Zombie Peeking Out Of Ground Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Zombie Peeking Out Of Ground",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "0d47fdf121",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-zombie-walking-with-pumpkin-bucket-0d47fdf121",
       "baseTitle": "Chibi Holiday Halloween Zombie Walking With Pumpkin Bucket Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Zombie Walking With Pumpkin Bucket Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Zombie Walking With Pumpkin Bucket",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "1862dece82",
       "canonicalPath": "/printables/chibi/chibi-holiday-halloween-zombie-with-torn-trick-or-treat-bag-1862dece82",
       "baseTitle": "Chibi Holiday Halloween Zombie With Torn Trick Or Treat Bag Coloring Page",
-      "displayTitle": "Chibi Holiday Halloween Zombie With Torn Trick Or Treat Bag Coloring Page",
+      "displayTitle": "Chibi Holiday Halloween Zombie With Torn Trick Or Treat Bag",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "chibi",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "5cc57ff98a",
@@ -39635,131 +40035,157 @@
       "stableId": "cc6fed095e",
       "canonicalPath": "/printables/christmas/christmas-holiday-christmas-cards-cc6fed095e",
       "baseTitle": "Christmas Holiday Christmas Cards",
-      "displayTitle": "Christmas Holiday Christmas Cards",
+      "displayTitle": "Christmas Cards",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-phrase-christmas-holiday-christmas"
+      ]
     },
     {
       "stableId": "d1dfbb8bc8",
       "canonicalPath": "/printables/christmas/christmas-holiday-christmas-carols-d1dfbb8bc8",
       "baseTitle": "Christmas Holiday Christmas Carols",
-      "displayTitle": "Christmas Holiday Christmas Carols",
+      "displayTitle": "Christmas Carols",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-phrase-christmas-holiday-christmas"
+      ]
     },
     {
       "stableId": "671e7e3cef",
       "canonicalPath": "/printables/christmas/christmas-holiday-christmas-day-671e7e3cef",
       "baseTitle": "Christmas Holiday Christmas Day",
-      "displayTitle": "Christmas Holiday Christmas Day",
+      "displayTitle": "Christmas Day",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-phrase-christmas-holiday-christmas"
+      ]
     },
     {
       "stableId": "210beddaf3",
       "canonicalPath": "/printables/christmas/christmas-holiday-christmas-decorations-210beddaf3",
       "baseTitle": "Christmas Holiday Christmas Decorations",
-      "displayTitle": "Christmas Holiday Christmas Decorations",
+      "displayTitle": "Christmas Decorations",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-phrase-christmas-holiday-christmas"
+      ]
     },
     {
       "stableId": "eddd380bbc",
       "canonicalPath": "/printables/christmas/christmas-holiday-christmas-eve-eddd380bbc",
       "baseTitle": "Christmas Holiday Christmas Eve",
-      "displayTitle": "Christmas Holiday Christmas Eve",
+      "displayTitle": "Christmas Eve",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-phrase-christmas-holiday-christmas"
+      ]
     },
     {
       "stableId": "f742a925a8",
       "canonicalPath": "/printables/christmas/christmas-holiday-christmas-lights-f742a925a8",
       "baseTitle": "Christmas Holiday Christmas Lights",
-      "displayTitle": "Christmas Holiday Christmas Lights",
+      "displayTitle": "Christmas Lights",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-phrase-christmas-holiday-christmas"
+      ]
     },
     {
       "stableId": "404524eba7",
       "canonicalPath": "/printables/christmas/christmas-holiday-christmas-ornaments-404524eba7",
       "baseTitle": "Christmas Holiday Christmas Ornaments",
-      "displayTitle": "Christmas Holiday Christmas Ornaments",
+      "displayTitle": "Christmas Ornaments",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-phrase-christmas-holiday-christmas"
+      ]
     },
     {
       "stableId": "53bc9f83a6",
       "canonicalPath": "/printables/christmas/christmas-holiday-christmas-presents-53bc9f83a6",
       "baseTitle": "Christmas Holiday Christmas Presents",
-      "displayTitle": "Christmas Holiday Christmas Presents",
+      "displayTitle": "Christmas Presents",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-phrase-christmas-holiday-christmas"
+      ]
     },
     {
       "stableId": "3c9136a458",
       "canonicalPath": "/printables/christmas/christmas-holiday-christmas-songs-3c9136a458",
       "baseTitle": "Christmas Holiday Christmas Songs",
-      "displayTitle": "Christmas Holiday Christmas Songs",
+      "displayTitle": "Christmas Songs",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-phrase-christmas-holiday-christmas"
+      ]
     },
     {
       "stableId": "a71271c320",
       "canonicalPath": "/printables/christmas/christmas-holiday-christmas-stockings-a71271c320",
       "baseTitle": "Christmas Holiday Christmas Stockings",
-      "displayTitle": "Christmas Holiday Christmas Stockings",
+      "displayTitle": "Christmas Stockings",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-phrase-christmas-holiday-christmas"
+      ]
     },
     {
       "stableId": "4661674d18",
       "canonicalPath": "/printables/christmas/christmas-holiday-christmas-sweater-4661674d18",
       "baseTitle": "Christmas Holiday Christmas Sweater",
-      "displayTitle": "Christmas Holiday Christmas Sweater",
+      "displayTitle": "Christmas Sweater",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-phrase-christmas-holiday-christmas"
+      ]
     },
     {
       "stableId": "be936df7b8",
       "canonicalPath": "/printables/christmas/christmas-holiday-christmas-wreath-be936df7b8",
       "baseTitle": "Christmas Holiday Christmas Wreath",
-      "displayTitle": "Christmas Holiday Christmas Wreath",
+      "displayTitle": "Christmas Wreath",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-phrase-christmas-holiday-christmas"
+      ]
     },
     {
       "stableId": "484fd4b2af",
       "canonicalPath": "/printables/christmas/christmas-holiday-christmas-wreath-decorations-484fd4b2af",
       "baseTitle": "Christmas Holiday Christmas Wreath Decorations",
-      "displayTitle": "Christmas Holiday Christmas Wreath Decorations",
+      "displayTitle": "Christmas Wreath Decorations",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-phrase-christmas-holiday-christmas"
+      ]
     },
     {
       "stableId": "e65842f553",
@@ -39935,147 +40361,175 @@
       "stableId": "fde31c074f",
       "canonicalPath": "/printables/christmas/holiday-christmas-angel-holding-candle-in-snowy-night-fde31c074f",
       "baseTitle": "Holiday Christmas Angel Holding Candle In Snowy Night Coloring Page",
-      "displayTitle": "Holiday Christmas Angel Holding Candle In Snowy Night Coloring Page",
+      "displayTitle": "Holiday Christmas Angel Holding Candle In Snowy Night",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "666c70174b",
       "canonicalPath": "/printables/christmas/holiday-christmas-candle-in-lantern-on-snowy-porch-666c70174b",
       "baseTitle": "Holiday Christmas Christmas Candle In Lantern On Snowy Porch Coloring Page",
-      "displayTitle": "Holiday Christmas Candle In Lantern On Snowy Porch Coloring Page",
+      "displayTitle": "Holiday Christmas Candle In Lantern On Snowy Porch",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
       "qualityFlags": [
-        "corrected-duplicate-adjacent-word"
+        "corrected-duplicate-adjacent-word",
+        "corrected-redundant-coloring-page-suffix"
       ]
     },
     {
       "stableId": "c3fff62b55",
       "canonicalPath": "/printables/christmas/holiday-christmas-gingerbread-city-village-with-candy-streets-c3fff62b55",
       "baseTitle": "Holiday Christmas Gingerbread City Village With Candy Streets Coloring Page",
-      "displayTitle": "Holiday Christmas Gingerbread City Village With Candy Streets Coloring Page",
+      "displayTitle": "Holiday Christmas Gingerbread City Village With Candy Streets",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "19a6c72dea",
       "canonicalPath": "/printables/christmas/holiday-christmas-gingerbread-cookie-decorating-scene-19a6c72dea",
       "baseTitle": "Holiday Christmas Gingerbread Cookie Decorating Scene Coloring Page",
-      "displayTitle": "Holiday Christmas Gingerbread Cookie Decorating Scene Coloring Page",
+      "displayTitle": "Holiday Christmas Gingerbread Cookie Decorating Scene",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "5e8fe7c930",
       "canonicalPath": "/printables/christmas/holiday-christmas-gingerbread-cookie-family-in-snow-scene-5e8fe7c930",
       "baseTitle": "Holiday Christmas Gingerbread Cookie Family In Snow Scene Coloring Page",
-      "displayTitle": "Holiday Christmas Gingerbread Cookie Family In Snow Scene Coloring Page",
+      "displayTitle": "Holiday Christmas Gingerbread Cookie Family In Snow Scene",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "2dd968539b",
       "canonicalPath": "/printables/christmas/holiday-christmas-holiday-cookie-decorating-2dd968539b",
       "baseTitle": "Holiday Christmas Holiday Cookie Decorating Coloring Page",
-      "displayTitle": "Holiday Christmas Holiday Cookie Decorating Coloring Page",
+      "displayTitle": "Holiday Christmas Cookie Decorating",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-phrase-holiday-christmas-holiday",
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "f5f66ac510",
       "canonicalPath": "/printables/christmas/holiday-christmas-holiday-cookie-decorating-with-kids-f5f66ac510",
       "baseTitle": "Holiday Christmas Holiday Cookie Decorating With Kids Coloring Page",
-      "displayTitle": "Holiday Christmas Holiday Cookie Decorating With Kids Coloring Page",
+      "displayTitle": "Holiday Christmas Cookie Decorating With Kids",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-phrase-holiday-christmas-holiday",
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "3265e65ae7",
       "canonicalPath": "/printables/christmas/holiday-christmas-holiday-morning-gift-opening-by-fireplace-3265e65ae7",
       "baseTitle": "Holiday Christmas Holiday Morning Gift Opening By Fireplace Coloring Page",
-      "displayTitle": "Holiday Christmas Holiday Morning Gift Opening By Fireplace Coloring Page",
+      "displayTitle": "Holiday Christmas Morning Gift Opening By Fireplace",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-phrase-holiday-christmas-holiday",
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "f596e7dc44",
       "canonicalPath": "/printables/christmas/holiday-christmas-holly-berries-and-leaves-pattern-f596e7dc44",
       "baseTitle": "Holiday Christmas Holly Berries And Leaves Pattern Coloring Page",
-      "displayTitle": "Holiday Christmas Holly Berries And Leaves Pattern Coloring Page",
+      "displayTitle": "Holiday Christmas Holly Berries And Leaves Pattern",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "4843cecb87",
       "canonicalPath": "/printables/christmas/holiday-christmas-mrs-claus-baking-holiday-cookies-4843cecb87",
       "baseTitle": "Holiday Christmas Mrs Claus Baking Holiday Cookies Coloring Page",
-      "displayTitle": "Holiday Christmas Mrs Claus Baking Holiday Cookies Coloring Page",
+      "displayTitle": "Holiday Christmas Mrs Claus Baking Holiday Cookies",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "2cabc1a43f",
       "canonicalPath": "/printables/christmas/holiday-christmas-mrs-claus-serving-hot-cocoa-to-santa-2cabc1a43f",
       "baseTitle": "Holiday Christmas Mrs Claus Serving Hot Cocoa To Santa Coloring Page",
-      "displayTitle": "Holiday Christmas Mrs Claus Serving Hot Cocoa To Santa Coloring Page",
+      "displayTitle": "Holiday Christmas Mrs Claus Serving Hot Cocoa To Santa",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "622c2a5211",
       "canonicalPath": "/printables/christmas/holiday-christmas-nativity-three-kings-on-camels-622c2a5211",
       "baseTitle": "Holiday Christmas Christmas Nativity Three Kings On Camels Coloring Page",
-      "displayTitle": "Holiday Christmas Nativity Three Kings On Camels Coloring Page",
+      "displayTitle": "Holiday Christmas Nativity Three Kings On Camels",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
       "qualityFlags": [
-        "corrected-duplicate-adjacent-word"
+        "corrected-duplicate-adjacent-word",
+        "corrected-redundant-coloring-page-suffix"
       ]
     },
     {
       "stableId": "be3c723822",
       "canonicalPath": "/printables/christmas/holiday-christmas-ornaments-pattern-be3c723822",
       "baseTitle": "Holiday Christmas Christmas Ornaments Pattern Coloring Page",
-      "displayTitle": "Holiday Christmas Ornaments Pattern Coloring Page",
+      "displayTitle": "Holiday Christmas Ornaments Pattern",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
       "qualityFlags": [
-        "corrected-duplicate-adjacent-word"
+        "corrected-duplicate-adjacent-word",
+        "corrected-redundant-coloring-page-suffix"
       ]
     },
     {
       "stableId": "5c2ccd9a9b",
       "canonicalPath": "/printables/christmas/holiday-christmas-penguins-decorating-tree-in-snow-5c2ccd9a9b",
       "baseTitle": "Holiday Christmas Penguins Decorating Tree In Snow Coloring Page",
-      "displayTitle": "Holiday Christmas Penguins Decorating Tree In Snow Coloring Page",
+      "displayTitle": "Holiday Christmas Penguins Decorating Tree In Snow",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "e57629ca9d",
@@ -41631,310 +42085,358 @@
       "stableId": "b8f43869bd",
       "canonicalPath": "/printables/christmas/holiday-christmas-reindeer-rudolph-with-red-nose-b8f43869bd",
       "baseTitle": "Holiday Christmas Reindeer Rudolph With Red Nose Coloring Page",
-      "displayTitle": "Holiday Christmas Reindeer Rudolph With Red Nose Coloring Page",
+      "displayTitle": "Holiday Christmas Reindeer Rudolph With Red Nose",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "d30dbfb71b",
       "canonicalPath": "/printables/christmas/holiday-christmas-reindeer-team-pulling-sleigh-over-rooftops-d30dbfb71b",
       "baseTitle": "Holiday Christmas Reindeer Team Pulling Sleigh Over Rooftops Coloring Page",
-      "displayTitle": "Holiday Christmas Reindeer Team Pulling Sleigh Over Rooftops Coloring Page",
+      "displayTitle": "Holiday Christmas Reindeer Team Pulling Sleigh Over Rooftops",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "2dd72cc61b",
       "canonicalPath": "/printables/christmas/holiday-christmas-santa-claus-coming-down-chimney-2dd72cc61b",
       "baseTitle": "Holiday Christmas Santa Claus Coming Down Chimney Coloring Page",
-      "displayTitle": "Holiday Christmas Santa Claus Coming Down Chimney Coloring Page",
+      "displayTitle": "Holiday Christmas Santa Claus Coming Down Chimney",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "597455887c",
       "canonicalPath": "/printables/christmas/holiday-christmas-santa-claus-costume-597455887c",
       "baseTitle": "Holiday Christmas Santa Claus Costume Coloring Page",
-      "displayTitle": "Holiday Christmas Santa Claus Costume Coloring Page",
+      "displayTitle": "Holiday Christmas Santa Claus Costume",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "50a3731b97",
       "canonicalPath": "/printables/christmas/holiday-christmas-santa-claus-delivering-gifts-by-fireplace-50a3731b97",
       "baseTitle": "Holiday Christmas Santa Claus Delivering Gifts By Fireplace Coloring Page",
-      "displayTitle": "Holiday Christmas Santa Claus Delivering Gifts By Fireplace Coloring Page",
+      "displayTitle": "Holiday Christmas Santa Claus Delivering Gifts By Fireplace",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "848c33a1ce",
       "canonicalPath": "/printables/christmas/holiday-christmas-santa-claus-delivering-gifts-in-sleigh-848c33a1ce",
       "baseTitle": "Holiday Christmas Santa Claus Delivering Gifts In Sleigh Coloring Page",
-      "displayTitle": "Holiday Christmas Santa Claus Delivering Gifts In Sleigh Coloring Page",
+      "displayTitle": "Holiday Christmas Santa Claus Delivering Gifts In Sleigh",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "7bc38b9ef7",
       "canonicalPath": "/printables/christmas/holiday-christmas-santa-claus-packing-toys-in-big-sack-7bc38b9ef7",
       "baseTitle": "Holiday Christmas Santa Claus Packing Toys In Big Sack Coloring Page",
-      "displayTitle": "Holiday Christmas Santa Claus Packing Toys In Big Sack Coloring Page",
+      "displayTitle": "Holiday Christmas Santa Claus Packing Toys In Big Sack",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "c2c0cf036d",
       "canonicalPath": "/printables/christmas/holiday-christmas-santa-claus-reading-letters-from-children-c2c0cf036d",
       "baseTitle": "Holiday Christmas Santa Claus Reading Letters From Children Coloring Page",
-      "displayTitle": "Holiday Christmas Santa Claus Reading Letters From Children Coloring Page",
+      "displayTitle": "Holiday Christmas Santa Claus Reading Letters From Children",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "ebac4be947",
       "canonicalPath": "/printables/christmas/holiday-christmas-santa-claus-riding-sleigh-over-moonlit-town-ebac4be947",
       "baseTitle": "Holiday Christmas Santa Claus Riding Sleigh Over Moonlit Town Coloring Page",
-      "displayTitle": "Holiday Christmas Santa Claus Riding Sleigh Over Moonlit Town Coloring Page",
+      "displayTitle": "Holiday Christmas Santa Claus Riding Sleigh Over Moonlit Town",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "17b1894498",
       "canonicalPath": "/printables/christmas/holiday-christmas-santa-workshop-with-elves-packing-toys-17b1894498",
       "baseTitle": "Holiday Christmas Santa Workshop With Elves Packing Toys Coloring Page",
-      "displayTitle": "Holiday Christmas Santa Workshop With Elves Packing Toys Coloring Page",
+      "displayTitle": "Holiday Christmas Santa Workshop With Elves Packing Toys",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "4a97e6a224",
       "canonicalPath": "/printables/christmas/holiday-christmas-snowman-decorated-with-string-lights-4a97e6a224",
       "baseTitle": "Holiday Christmas Snowman Decorated With String Lights Coloring Page",
-      "displayTitle": "Holiday Christmas Snowman Decorated With String Lights Coloring Page",
+      "displayTitle": "Holiday Christmas Snowman Decorated With String Lights",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "00540e278f",
       "canonicalPath": "/printables/christmas/holiday-christmas-snowman-hugging-small-penguin-friend-00540e278f",
       "baseTitle": "Holiday Christmas Snowman Hugging Small Penguin Friend Coloring Page",
-      "displayTitle": "Holiday Christmas Snowman Hugging Small Penguin Friend Coloring Page",
+      "displayTitle": "Holiday Christmas Snowman Hugging Small Penguin Friend",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "e25f11f9cf",
       "canonicalPath": "/printables/christmas/holiday-christmas-snowman-ice-skating-on-frozen-pond-e25f11f9cf",
       "baseTitle": "Holiday Christmas Snowman Ice Skating On Frozen Pond Coloring Page",
-      "displayTitle": "Holiday Christmas Snowman Ice Skating On Frozen Pond Coloring Page",
+      "displayTitle": "Holiday Christmas Snowman Ice Skating On Frozen Pond",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "d73bbba3f2",
       "canonicalPath": "/printables/christmas/holiday-christmas-snowman-with-carrot-nose-and-top-hat-d73bbba3f2",
       "baseTitle": "Holiday Christmas Snowman With Carrot Nose And Top Hat Coloring Page",
-      "displayTitle": "Holiday Christmas Snowman With Carrot Nose And Top Hat Coloring Page",
+      "displayTitle": "Holiday Christmas Snowman With Carrot Nose And Top Hat",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "28af25679e",
       "canonicalPath": "/printables/christmas/holiday-christmas-stockings-filled-with-goodies-28af25679e",
       "baseTitle": "Holiday Christmas Christmas Stockings Filled With Goodies Coloring Page",
-      "displayTitle": "Holiday Christmas Stockings Filled With Goodies Coloring Page",
+      "displayTitle": "Holiday Christmas Stockings Filled With Goodies",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
       "qualityFlags": [
-        "corrected-duplicate-adjacent-word"
+        "corrected-duplicate-adjacent-word",
+        "corrected-redundant-coloring-page-suffix"
       ]
     },
     {
       "stableId": "ed4330e59f",
       "canonicalPath": "/printables/christmas/holiday-christmas-stockings-fireplace-ed4330e59f",
       "baseTitle": "Holiday Christmas Christmas Stockings Fireplace Coloring Page",
-      "displayTitle": "Holiday Christmas Stockings Fireplace Coloring Page",
+      "displayTitle": "Holiday Christmas Stockings Fireplace",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
       "qualityFlags": [
-        "corrected-duplicate-adjacent-word"
+        "corrected-duplicate-adjacent-word",
+        "corrected-redundant-coloring-page-suffix"
       ]
     },
     {
       "stableId": "74e88ea7de",
       "canonicalPath": "/printables/christmas/holiday-christmas-stockings-hanging-on-fireplace-74e88ea7de",
       "baseTitle": "Holiday Christmas Christmas Stockings Hanging On Fireplace Coloring Page",
-      "displayTitle": "Holiday Christmas Stockings Hanging On Fireplace Coloring Page",
+      "displayTitle": "Holiday Christmas Stockings Hanging On Fireplace",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
       "qualityFlags": [
-        "corrected-duplicate-adjacent-word"
+        "corrected-duplicate-adjacent-word",
+        "corrected-redundant-coloring-page-suffix"
       ]
     },
     {
       "stableId": "e11c99e6fb",
       "canonicalPath": "/printables/christmas/holiday-christmas-tree-lit-up-in-town-square-e11c99e6fb",
       "baseTitle": "Holiday Christmas Christmas Tree Lit Up In Town Square Coloring Page",
-      "displayTitle": "Holiday Christmas Tree Lit Up In Town Square Coloring Page",
+      "displayTitle": "Holiday Christmas Tree Lit Up In Town Square",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
       "qualityFlags": [
-        "corrected-duplicate-adjacent-word"
+        "corrected-duplicate-adjacent-word",
+        "corrected-redundant-coloring-page-suffix"
       ]
     },
     {
       "stableId": "422c4414c2",
       "canonicalPath": "/printables/christmas/holiday-christmas-tree-outdoor-with-snowfall-422c4414c2",
       "baseTitle": "Holiday Christmas Christmas Tree Outdoor With Snowfall Coloring Page",
-      "displayTitle": "Holiday Christmas Tree Outdoor With Snowfall Coloring Page",
+      "displayTitle": "Holiday Christmas Tree Outdoor With Snowfall",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
       "qualityFlags": [
-        "corrected-duplicate-adjacent-word"
+        "corrected-duplicate-adjacent-word",
+        "corrected-redundant-coloring-page-suffix"
       ]
     },
     {
       "stableId": "84ffd8322d",
       "canonicalPath": "/printables/christmas/holiday-christmas-tree-with-presents-underneath-84ffd8322d",
       "baseTitle": "Holiday Christmas Christmas Tree With Presents Underneath Coloring Page",
-      "displayTitle": "Holiday Christmas Tree With Presents Underneath Coloring Page",
+      "displayTitle": "Holiday Christmas Tree With Presents Underneath",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
       "qualityFlags": [
-        "corrected-duplicate-adjacent-word"
+        "corrected-duplicate-adjacent-word",
+        "corrected-redundant-coloring-page-suffix"
       ]
     },
     {
       "stableId": "63c2db51c5",
       "canonicalPath": "/printables/christmas/holiday-christmas-tree-with-star-and-ornaments-63c2db51c5",
       "baseTitle": "Holiday Christmas Christmas Tree With Star And Ornaments Coloring Page",
-      "displayTitle": "Holiday Christmas Tree With Star And Ornaments Coloring Page",
+      "displayTitle": "Holiday Christmas Tree With Star And Ornaments",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
       "qualityFlags": [
-        "corrected-duplicate-adjacent-word"
+        "corrected-duplicate-adjacent-word",
+        "corrected-redundant-coloring-page-suffix"
       ]
     },
     {
       "stableId": "a06efe72af",
       "canonicalPath": "/printables/christmas/holiday-christmas-village-market-with-stalls-a06efe72af",
       "baseTitle": "Holiday Christmas Christmas Village Market With Stalls Coloring Page",
-      "displayTitle": "Holiday Christmas Village Market With Stalls Coloring Page",
+      "displayTitle": "Holiday Christmas Village Market With Stalls",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
       "qualityFlags": [
-        "corrected-duplicate-adjacent-word"
+        "corrected-duplicate-adjacent-word",
+        "corrected-redundant-coloring-page-suffix"
       ]
     },
     {
       "stableId": "7458ad600d",
       "canonicalPath": "/printables/christmas/holiday-christmas-winter-cabin-in-woods-with-smoke-in-chimney-7458ad600d",
       "baseTitle": "Holiday Christmas Winter Cabin In Woods With Smoke In Chimney Coloring Page",
-      "displayTitle": "Holiday Christmas Winter Cabin In Woods With Smoke In Chimney Coloring Page",
+      "displayTitle": "Holiday Christmas Winter Cabin In Woods With Smoke In Chimney",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "2314a178ce",
       "canonicalPath": "/printables/christmas/holiday-christmas-winter-ice-skating-rink-in-village-square-2314a178ce",
       "baseTitle": "Holiday Christmas Winter Ice Skating Rink In Village Square Coloring Page",
-      "displayTitle": "Holiday Christmas Winter Ice Skating Rink In Village Square Coloring Page",
+      "displayTitle": "Holiday Christmas Winter Ice Skating Rink In Village Square",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "661f3b44b5",
       "canonicalPath": "/printables/christmas/holiday-christmas-winter-kids-sledding-down-hill-in-park-661f3b44b5",
       "baseTitle": "Holiday Christmas Winter Kids Sledding Down Hill In Park Coloring Page",
-      "displayTitle": "Holiday Christmas Winter Kids Sledding Down Hill In Park Coloring Page",
+      "displayTitle": "Holiday Christmas Winter Kids Sledding Down Hill In Park",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "325a202b5a",
       "canonicalPath": "/printables/christmas/holiday-christmas-winter-log-cabin-with-glowing-windows-325a202b5a",
       "baseTitle": "Holiday Christmas Winter Log Cabin With Glowing Windows Coloring Page",
-      "displayTitle": "Holiday Christmas Winter Log Cabin With Glowing Windows Coloring Page",
+      "displayTitle": "Holiday Christmas Winter Log Cabin With Glowing Windows",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "cbe38b131a",
       "canonicalPath": "/printables/christmas/holiday-christmas-winter-night-sky-with-northern-lights-cbe38b131a",
       "baseTitle": "Holiday Christmas Winter Night Sky With Northern Lights Coloring Page",
-      "displayTitle": "Holiday Christmas Winter Night Sky With Northern Lights Coloring Page",
+      "displayTitle": "Holiday Christmas Winter Night Sky With Northern Lights",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "70f6a435a1",
       "canonicalPath": "/printables/christmas/holiday-christmas-wreath-decorated-with-bells-and-bow-70f6a435a1",
       "baseTitle": "Holiday Christmas Christmas Wreath Decorated With Bells And Bow Coloring Page",
-      "displayTitle": "Holiday Christmas Wreath Decorated With Bells And Bow Coloring Page",
+      "displayTitle": "Holiday Christmas Wreath Decorated With Bells And Bow",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
       "qualityFlags": [
-        "corrected-duplicate-adjacent-word"
+        "corrected-duplicate-adjacent-word",
+        "corrected-redundant-coloring-page-suffix"
       ]
     },
     {
       "stableId": "4c2d9ac697",
       "canonicalPath": "/printables/christmas/holiday-christmas-wreath-on-front-door-4c2d9ac697",
       "baseTitle": "Holiday Christmas Christmas Wreath On Front Door Coloring Page",
-      "displayTitle": "Holiday Christmas Wreath On Front Door Coloring Page",
+      "displayTitle": "Holiday Christmas Wreath On Front Door",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "christmas",
       "qualityFlags": [
-        "corrected-duplicate-adjacent-word"
+        "corrected-duplicate-adjacent-word",
+        "corrected-redundant-coloring-page-suffix"
       ]
     },
     {
@@ -42011,11 +42513,13 @@
       "stableId": "97d298d5be",
       "canonicalPath": "/printables/cute/holiday-halloween-cute-kawaii-halloween-characters-97d298d5be",
       "baseTitle": "Holiday Halloween Cute Kawaii Halloween Characters Coloring Page",
-      "displayTitle": "Holiday Halloween Cute Kawaii Halloween Characters Coloring Page",
+      "displayTitle": "Holiday Halloween Cute Kawaii Halloween Characters",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "cute",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "fe1a69ef1f",
@@ -51733,7 +52237,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "a0770cfa7a",
@@ -51753,7 +52259,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "76b0f4b4c3",
@@ -51763,7 +52271,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "d5fbd7536b",
@@ -51773,7 +52283,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "18ac6c6422",
@@ -51783,7 +52295,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "4d8766c6dc",
@@ -51823,7 +52337,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "937925e879",
@@ -51833,7 +52349,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "a4f8bc4dbb",
@@ -51853,7 +52371,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "be3a6ae377",
@@ -51863,7 +52383,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "ee1196d89a",
@@ -51903,7 +52425,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "f736317bf4",
@@ -51913,7 +52437,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "e2315ee4a1",
@@ -51943,7 +52469,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "8d0469941d",
@@ -52003,7 +52531,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "ab0e0253c0",
@@ -52013,7 +52543,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "5e359d2a25",
@@ -52053,7 +52585,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "ea5d493702",
@@ -52063,7 +52597,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "84ec7d677b",
@@ -52073,7 +52609,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "a608d5a96b",
@@ -52083,7 +52621,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "71b4230e37",
@@ -52133,7 +52673,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "1cbc7596b7",
@@ -52153,7 +52695,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "a7a794ee64",
@@ -52163,7 +52707,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "220bfb7725",
@@ -52173,7 +52719,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "915925b6be",
@@ -52183,7 +52731,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "37d1d6ceea",
@@ -52213,7 +52763,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "bc802e98d3",
@@ -52263,7 +52815,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "e2f4dddeaa",
@@ -52303,7 +52857,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "cd271991e8",
@@ -52313,7 +52869,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "751f7bb691",
@@ -52323,7 +52881,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "d54768a03f",
@@ -52343,7 +52903,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "cf12022ea2",
@@ -52353,7 +52915,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "eaa473bdb1",
@@ -52363,7 +52927,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "ff4991ca7b",
@@ -52373,7 +52939,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "5683e60bd9",
@@ -52433,7 +53001,9 @@
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "long-title-review"
+      ]
     },
     {
       "stableId": "4876445aa4",
@@ -52540,7 +53110,8 @@
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
       "qualityFlags": [
-        "corrected-spelling-vehiacle"
+        "corrected-spelling-vehiacle",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -52588,7 +53159,8 @@
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
       "qualityFlags": [
-        "corrected-spelling-vehiacle"
+        "corrected-spelling-vehiacle",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -52600,7 +53172,8 @@
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
       "qualityFlags": [
-        "corrected-spelling-vehiacle"
+        "corrected-spelling-vehiacle",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -52650,7 +53223,8 @@
       "primaryCategory": "detailed-for-adults",
       "qualityFlags": [
         "corrected-spelling-vehiacle",
-        "brand-or-model-name-review"
+        "brand-or-model-name-review",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -52663,7 +53237,8 @@
       "primaryCategory": "detailed-for-adults",
       "qualityFlags": [
         "corrected-spelling-vehiacle",
-        "brand-or-model-name-review"
+        "brand-or-model-name-review",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -52690,7 +53265,8 @@
       "qualityFlags": [
         "corrected-spelling-vehiacle",
         "uncertain-spelling",
-        "brand-or-model-name-review"
+        "brand-or-model-name-review",
+        "uncertain-term-review"
       ]
     },
     {
@@ -52798,7 +53374,8 @@
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
       "qualityFlags": [
-        "corrected-spelling-vehiacle"
+        "corrected-spelling-vehiacle",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -52822,7 +53399,8 @@
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
       "qualityFlags": [
-        "corrected-spelling-vehiacle"
+        "corrected-spelling-vehiacle",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -52858,7 +53436,8 @@
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
       "qualityFlags": [
-        "corrected-spelling-vehiacle"
+        "corrected-spelling-vehiacle",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -52990,7 +53569,8 @@
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
       "qualityFlags": [
-        "corrected-spelling-vehiacle"
+        "corrected-spelling-vehiacle",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -53164,7 +53744,8 @@
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
       "qualityFlags": [
-        "corrected-spelling-vehiacle"
+        "corrected-spelling-vehiacle",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -53188,7 +53769,8 @@
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
       "qualityFlags": [
-        "corrected-spelling-vehiacle"
+        "corrected-spelling-vehiacle",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -53250,7 +53832,8 @@
       "qualityFlags": [
         "corrected-spelling-vehiacle",
         "uncertain-spelling",
-        "brand-or-model-name-review"
+        "brand-or-model-name-review",
+        "uncertain-term-review"
       ]
     },
     {
@@ -53275,7 +53858,8 @@
       "primaryCategory": "detailed-for-adults",
       "qualityFlags": [
         "corrected-spelling-vehiacle",
-        "uncertain-spelling"
+        "uncertain-spelling",
+        "uncertain-term-review"
       ]
     },
     {
@@ -53299,7 +53883,8 @@
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
       "qualityFlags": [
-        "corrected-spelling-vehiacle"
+        "corrected-spelling-vehiacle",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -53371,7 +53956,8 @@
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
       "qualityFlags": [
-        "corrected-spelling-vehiacle"
+        "corrected-spelling-vehiacle",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -53383,7 +53969,8 @@
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
       "qualityFlags": [
-        "corrected-spelling-vehiacle"
+        "corrected-spelling-vehiacle",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -53419,7 +54006,8 @@
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
       "qualityFlags": [
-        "corrected-spelling-vehiacle"
+        "corrected-spelling-vehiacle",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -53431,7 +54019,8 @@
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
       "qualityFlags": [
-        "corrected-spelling-vehiacle"
+        "corrected-spelling-vehiacle",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -53443,7 +54032,8 @@
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
       "qualityFlags": [
-        "corrected-spelling-vehiacle"
+        "corrected-spelling-vehiacle",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -53539,7 +54129,8 @@
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
       "qualityFlags": [
-        "corrected-spelling-vehiacle"
+        "corrected-spelling-vehiacle",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -53618,21 +54209,25 @@
       "stableId": "46e5c80f77",
       "canonicalPath": "/printables/detailed-for-adults/st-patricks-day-celtic-knot-mandala-pattern-46e5c80f77",
       "baseTitle": "St Patricks Day Celtic Knot Mandala Pattern Coloring Page",
-      "displayTitle": "St Patricks Day Celtic Knot Mandala Pattern Coloring Page",
+      "displayTitle": "St Patricks Day Celtic Knot Mandala Pattern",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "8993f17565",
       "canonicalPath": "/printables/detailed-for-adults/st-patricks-day-shamrock-mandala-pattern-8993f17565",
       "baseTitle": "St Patricks Day Shamrock Mandala Pattern Coloring Page",
-      "displayTitle": "St Patricks Day Shamrock Mandala Pattern Coloring Page",
+      "displayTitle": "St Patricks Day Shamrock Mandala Pattern",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "detailed-for-adults",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "2d2fb81a98",
@@ -54194,11 +54789,13 @@
       "stableId": "fcdadb8e6a",
       "canonicalPath": "/printables/dragons/st-patricks-day-dragon-guarding-pot-of-gold-fcdadb8e6a",
       "baseTitle": "St Patricks Day Dragon Guarding Pot Of Gold Coloring Page",
-      "displayTitle": "St Patricks Day Dragon Guarding Pot Of Gold Coloring Page",
+      "displayTitle": "St Patricks Day Dragon Guarding Pot Of Gold",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "dragons",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "19c9d1249b",
@@ -61449,7 +62046,8 @@
       "designNumber": null,
       "primaryCategory": "fantasy",
       "qualityFlags": [
-        "ambiguous-numeric-suffix"
+        "ambiguous-numeric-suffix",
+        "numeric-suffix-review"
       ]
     },
     {
@@ -62766,11 +63364,13 @@
       "stableId": "1805eaf83d",
       "canonicalPath": "/printables/fantasy/st-patricks-day-unicorn-with-shamrock-mane-1805eaf83d",
       "baseTitle": "St Patricks Day Unicorn With Shamrock Mane Coloring Page",
-      "displayTitle": "St Patricks Day Unicorn With Shamrock Mane Coloring Page",
+      "displayTitle": "St Patricks Day Unicorn With Shamrock Mane",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "fantasy",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "d321bad81a",
@@ -63726,11 +64326,13 @@
       "stableId": "16de6b4b56",
       "canonicalPath": "/printables/forest/holiday-halloween-spooky-forest-path-with-glowing-eyes-16de6b4b56",
       "baseTitle": "Holiday Halloween Spooky Forest Path With Glowing Eyes Coloring Page",
-      "displayTitle": "Holiday Halloween Spooky Forest Path With Glowing Eyes Coloring Page",
+      "displayTitle": "Holiday Halloween Spooky Forest Path With Glowing Eyes",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "forest",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "9c8e86ffd5",
@@ -64516,42 +65118,49 @@
       "stableId": "1c60d58016",
       "canonicalPath": "/printables/halloween/holiday-halloween-candy-bucket-filled-with-treats-1c60d58016",
       "baseTitle": "Holiday Halloween Candy Bucket Filled With Treats Coloring Page",
-      "displayTitle": "Holiday Halloween Candy Bucket Filled With Treats Coloring Page",
+      "displayTitle": "Holiday Halloween Candy Bucket Filled With Treats",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "halloween",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "a82a9ad584",
       "canonicalPath": "/printables/halloween/holiday-halloween-candy-corn-a82a9ad584",
       "baseTitle": "Holiday Halloween Candy Corn Coloring Page",
-      "displayTitle": "Holiday Halloween Candy Corn Coloring Page",
+      "displayTitle": "Holiday Halloween Candy Corn",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "halloween",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "3d62d9779b",
       "canonicalPath": "/printables/halloween/holiday-halloween-candy-corn-pattern-background-3d62d9779b",
       "baseTitle": "Holiday Halloween Candy Corn Pattern Background Coloring Page",
-      "displayTitle": "Holiday Halloween Candy Corn Pattern Background Coloring Page",
+      "displayTitle": "Holiday Halloween Candy Corn Pattern Background",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "halloween",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "b1e54b5734",
       "canonicalPath": "/printables/halloween/holiday-halloween-carnival-with-games-and-booths-b1e54b5734",
       "baseTitle": "Holiday Halloween Halloween Carnival With Games And Booths Coloring Page",
-      "displayTitle": "Holiday Halloween Carnival With Games And Booths Coloring Page",
+      "displayTitle": "Holiday Halloween Carnival With Games And Booths",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "halloween",
       "qualityFlags": [
-        "corrected-duplicate-adjacent-word"
+        "corrected-duplicate-adjacent-word",
+        "corrected-redundant-coloring-page-suffix"
       ]
     },
     {
@@ -65728,133 +66337,158 @@
       "stableId": "fa9fda3da2",
       "canonicalPath": "/printables/halloween/holiday-halloween-frankenstein-monster-smiling-fa9fda3da2",
       "baseTitle": "Holiday Halloween Frankenstein Monster Smiling Coloring Page",
-      "displayTitle": "Holiday Halloween Frankenstein Monster Smiling Coloring Page",
+      "displayTitle": "Holiday Halloween Frankenstein Monster Smiling",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "halloween",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "182de898dd",
       "canonicalPath": "/printables/halloween/holiday-halloween-ghost-family-with-smiling-faces-182de898dd",
       "baseTitle": "Holiday Halloween Ghost Family With Smiling Faces Coloring Page",
-      "displayTitle": "Holiday Halloween Ghost Family With Smiling Faces Coloring Page",
+      "displayTitle": "Holiday Halloween Ghost Family With Smiling Faces",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "halloween",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "eec2bc1168",
       "canonicalPath": "/printables/halloween/holiday-halloween-ghost-floating-above-graveyard-eec2bc1168",
       "baseTitle": "Holiday Halloween Ghost Floating Above Graveyard Coloring Page",
-      "displayTitle": "Holiday Halloween Ghost Floating Above Graveyard Coloring Page",
+      "displayTitle": "Holiday Halloween Ghost Floating Above Graveyard",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "halloween",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "b8d98dab62",
       "canonicalPath": "/printables/halloween/holiday-halloween-ghost-floating-in-haunted-hallway-b8d98dab62",
       "baseTitle": "Holiday Halloween Ghost Floating In Haunted Hallway Coloring Page",
-      "displayTitle": "Holiday Halloween Ghost Floating In Haunted Hallway Coloring Page",
+      "displayTitle": "Holiday Halloween Ghost Floating In Haunted Hallway",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "halloween",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "86bfe30900",
       "canonicalPath": "/printables/halloween/holiday-halloween-ghost-graveyard-86bfe30900",
       "baseTitle": "Holiday Halloween Ghost Graveyard Coloring Page",
-      "displayTitle": "Holiday Halloween Ghost Graveyard Coloring Page",
+      "displayTitle": "Holiday Halloween Ghost Graveyard",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "halloween",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "ab99e07ffc",
       "canonicalPath": "/printables/halloween/holiday-halloween-happy-pumpkin-patch-scene-ab99e07ffc",
       "baseTitle": "Holiday Halloween Happy Pumpkin Patch Scene Coloring Page",
-      "displayTitle": "Holiday Halloween Happy Pumpkin Patch Scene Coloring Page",
+      "displayTitle": "Holiday Halloween Happy Pumpkin Patch Scene",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "halloween",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "05c36a42eb",
       "canonicalPath": "/printables/halloween/holiday-halloween-haunted-mansion-with-creaky-gate-05c36a42eb",
       "baseTitle": "Holiday Halloween Haunted Mansion With Creaky Gate Coloring Page",
-      "displayTitle": "Holiday Halloween Haunted Mansion With Creaky Gate Coloring Page",
+      "displayTitle": "Holiday Halloween Haunted Mansion With Creaky Gate",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "halloween",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "d207ad5dad",
       "canonicalPath": "/printables/halloween/holiday-halloween-haunted-mansion-with-lantern-lit-path-d207ad5dad",
       "baseTitle": "Holiday Halloween Haunted Mansion With Lantern Lit Path Coloring Page",
-      "displayTitle": "Holiday Halloween Haunted Mansion With Lantern Lit Path Coloring Page",
+      "displayTitle": "Holiday Halloween Haunted Mansion With Lantern Lit Path",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "halloween",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "f52227a508",
       "canonicalPath": "/printables/halloween/holiday-halloween-jack-o-lantern-faces-variety-f52227a508",
       "baseTitle": "Holiday Halloween Jack O Lantern Faces Variety Coloring Page",
-      "displayTitle": "Holiday Halloween Jack O Lantern Faces Variety Coloring Page",
+      "displayTitle": "Holiday Halloween Jack O Lantern Faces Variety",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "halloween",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "dffc2763f4",
       "canonicalPath": "/printables/halloween/holiday-halloween-jack-o-lantern-lined-front-porch-dffc2763f4",
       "baseTitle": "Holiday Halloween Jack O Lantern Lined Front Porch Coloring Page",
-      "displayTitle": "Holiday Halloween Jack O Lantern Lined Front Porch Coloring Page",
+      "displayTitle": "Holiday Halloween Jack O Lantern Lined Front Porch",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "halloween",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "190fe7a9e9",
       "canonicalPath": "/printables/halloween/holiday-halloween-maze-with-cornfield-paths-190fe7a9e9",
       "baseTitle": "Holiday Halloween Halloween Maze With Cornfield Paths Coloring Page",
-      "displayTitle": "Holiday Halloween Maze With Cornfield Paths Coloring Page",
+      "displayTitle": "Holiday Halloween Maze With Cornfield Paths",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "halloween",
       "qualityFlags": [
-        "corrected-duplicate-adjacent-word"
+        "corrected-duplicate-adjacent-word",
+        "corrected-redundant-coloring-page-suffix"
       ]
     },
     {
       "stableId": "180f3db01b",
       "canonicalPath": "/printables/halloween/holiday-halloween-mummy-walking-with-bandages-loose-180f3db01b",
       "baseTitle": "Holiday Halloween Mummy Walking With Bandages Loose Coloring Page",
-      "displayTitle": "Holiday Halloween Mummy Walking With Bandages Loose Coloring Page",
+      "displayTitle": "Holiday Halloween Mummy Walking With Bandages Loose",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "halloween",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "f25df122a7",
       "canonicalPath": "/printables/halloween/holiday-halloween-owl-sitting-on-tree-branch-at-night-f25df122a7",
       "baseTitle": "Holiday Halloween Owl Sitting On Tree Branch At Night Coloring Page",
-      "displayTitle": "Holiday Halloween Owl Sitting On Tree Branch At Night Coloring Page",
+      "displayTitle": "Holiday Halloween Owl Sitting On Tree Branch At Night",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "halloween",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "f107f37eb2",
@@ -65910,271 +66544,325 @@
       "stableId": "236c4af6d3",
       "canonicalPath": "/printables/halloween/holiday-halloween-pumpkin-patch-with-family-picking-pumpkins-236c4af6d3",
       "baseTitle": "Holiday Halloween Pumpkin Patch With Family Picking Pumpkins Coloring Page",
-      "displayTitle": "Holiday Halloween Pumpkin Patch With Family Picking Pumpkins Coloring Page",
+      "displayTitle": "Holiday Halloween Pumpkin Patch With Family Picking Pumpkins",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "halloween",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "6656d38f06",
       "canonicalPath": "/printables/halloween/holiday-halloween-scarecrow-guarding-pumpkin-field-6656d38f06",
       "baseTitle": "Holiday Halloween Scarecrow Guarding Pumpkin Field Coloring Page",
-      "displayTitle": "Holiday Halloween Scarecrow Guarding Pumpkin Field Coloring Page",
+      "displayTitle": "Holiday Halloween Scarecrow Guarding Pumpkin Field",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "halloween",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "05830cafb9",
       "canonicalPath": "/printables/halloween/holiday-halloween-skeleton-dancing-with-top-hat-05830cafb9",
       "baseTitle": "Holiday Halloween Skeleton Dancing With Top Hat Coloring Page",
-      "displayTitle": "Holiday Halloween Skeleton Dancing With Top Hat Coloring Page",
+      "displayTitle": "Holiday Halloween Skeleton Dancing With Top Hat",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "halloween",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "ba2dd0e228",
       "canonicalPath": "/printables/halloween/holiday-halloween-spooky-graveyard-with-tombstones-ba2dd0e228",
       "baseTitle": "Holiday Halloween Spooky Graveyard With Tombstones Coloring Page",
-      "displayTitle": "Holiday Halloween Spooky Graveyard With Tombstones Coloring Page",
+      "displayTitle": "Holiday Halloween Spooky Graveyard With Tombstones",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "halloween",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "92e42d44a8",
       "canonicalPath": "/printables/halloween/holiday-halloween-trick-or-treat-front-porch-decorated-92e42d44a8",
       "baseTitle": "Holiday Halloween Trick Or Treat Front Porch Decorated Coloring Page",
-      "displayTitle": "Holiday Halloween Trick Or Treat Front Porch Decorated Coloring Page",
+      "displayTitle": "Holiday Halloween Trick Or Treat Front Porch Decorated",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "halloween",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "00504a7b54",
       "canonicalPath": "/printables/halloween/holiday-halloween-trick-or-treat-kids-in-costumes-00504a7b54",
       "baseTitle": "Holiday Halloween Trick Or Treat Kids In Costumes Coloring Page",
-      "displayTitle": "Holiday Halloween Trick Or Treat Kids In Costumes Coloring Page",
+      "displayTitle": "Holiday Halloween Trick Or Treat Kids In Costumes",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "halloween",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "ac8d74f0a9",
       "canonicalPath": "/printables/halloween/holiday-halloween-trick-or-treat-walkway-lined-with-lanterns-ac8d74f0a9",
       "baseTitle": "Holiday Halloween Trick Or Treat Walkway Lined With Lanterns Coloring Page",
-      "displayTitle": "Holiday Halloween Trick Or Treat Walkway Lined With Lanterns Coloring Page",
+      "displayTitle": "Holiday Halloween Trick Or Treat Walkway Lined With Lanterns",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "halloween",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "0b0a06368b",
       "canonicalPath": "/printables/halloween/holiday-halloween-trick-or-treat-with-lanterns-0b0a06368b",
       "baseTitle": "Holiday Halloween Trick Or Treat With Lanterns Coloring Page",
-      "displayTitle": "Holiday Halloween Trick Or Treat With Lanterns Coloring Page",
+      "displayTitle": "Holiday Halloween Trick Or Treat With Lanterns",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "halloween",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "31b871d117",
       "canonicalPath": "/printables/halloween/holiday-halloween-werewolf-howling-under-full-moon-31b871d117",
       "baseTitle": "Holiday Halloween Werewolf Howling Under Full Moon Coloring Page",
-      "displayTitle": "Holiday Halloween Werewolf Howling Under Full Moon Coloring Page",
+      "displayTitle": "Holiday Halloween Werewolf Howling Under Full Moon",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "halloween",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "65476d7753",
       "canonicalPath": "/printables/halloween/holiday-halloween-witch-cooking-potion-in-cauldron-65476d7753",
       "baseTitle": "Holiday Halloween Witch Cooking Potion In Cauldron Coloring Page",
-      "displayTitle": "Holiday Halloween Witch Cooking Potion In Cauldron Coloring Page",
+      "displayTitle": "Holiday Halloween Witch Cooking Potion In Cauldron",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "halloween",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "e67904355e",
       "canonicalPath": "/printables/halloween/holiday-halloween-witch-flying-e67904355e",
       "baseTitle": "Holiday Halloween Witch Flying Coloring Page",
-      "displayTitle": "Holiday Halloween Witch Flying Coloring Page",
+      "displayTitle": "Holiday Halloween Witch Flying",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "halloween",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "addb4ccfba",
       "canonicalPath": "/printables/halloween/holiday-halloween-witch-flying-on-broomstick-across-moon-addb4ccfba",
       "baseTitle": "Holiday Halloween Witch Flying On Broomstick Across Moon Coloring Page",
-      "displayTitle": "Holiday Halloween Witch Flying On Broomstick Across Moon Coloring Page",
+      "displayTitle": "Holiday Halloween Witch Flying On Broomstick Across Moon",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "halloween",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "9eb92bda25",
       "canonicalPath": "/printables/halloween/holiday-halloween-witch-flying-over-haunted-village-9eb92bda25",
       "baseTitle": "Holiday Halloween Witch Flying Over Haunted Village Coloring Page",
-      "displayTitle": "Holiday Halloween Witch Flying Over Haunted Village Coloring Page",
+      "displayTitle": "Holiday Halloween Witch Flying Over Haunted Village",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "halloween",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "118da3d1f5",
       "canonicalPath": "/printables/holidays/st-patricks-day-irish-harp-with-shamrocks-118da3d1f5",
       "baseTitle": "St Patricks Day Irish Harp With Shamrocks Coloring Page",
-      "displayTitle": "St Patricks Day Irish Harp With Shamrocks Coloring Page",
+      "displayTitle": "St Patricks Day Irish Harp With Shamrocks",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "holidays",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "fa10cf2184",
       "canonicalPath": "/printables/holidays/st-patricks-day-kids-dressed-as-leprechauns-fa10cf2184",
       "baseTitle": "St Patricks Day Kids Dressed As Leprechauns Coloring Page",
-      "displayTitle": "St Patricks Day Kids Dressed As Leprechauns Coloring Page",
+      "displayTitle": "St Patricks Day Kids Dressed As Leprechauns",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "holidays",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "24da6e22e3",
       "canonicalPath": "/printables/holidays/st-patricks-day-leprechaun-dancing-jig-24da6e22e3",
       "baseTitle": "St Patricks Day Leprechaun Dancing Jig Coloring Page",
-      "displayTitle": "St Patricks Day Leprechaun Dancing Jig Coloring Page",
+      "displayTitle": "St Patricks Day Leprechaun Dancing Jig",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "holidays",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "f607fb59c7",
       "canonicalPath": "/printables/holidays/st-patricks-day-leprechaun-holding-shamrock-f607fb59c7",
       "baseTitle": "St Patricks Day Leprechaun Holding Shamrock Coloring Page",
-      "displayTitle": "St Patricks Day Leprechaun Holding Shamrock Coloring Page",
+      "displayTitle": "St Patricks Day Leprechaun Holding Shamrock",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "holidays",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "e0a5ebbce1",
       "canonicalPath": "/printables/holidays/st-patricks-day-leprechaun-rainbow-and-gold-e0a5ebbce1",
       "baseTitle": "St Patricks Day Leprechaun Rainbow And Gold Coloring Page",
-      "displayTitle": "St Patricks Day Leprechaun Rainbow And Gold Coloring Page",
+      "displayTitle": "St Patricks Day Leprechaun Rainbow And Gold",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "holidays",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "3da829fc28",
       "canonicalPath": "/printables/holidays/st-patricks-day-leprechaun-with-pot-of-gold-3da829fc28",
       "baseTitle": "St Patricks Day Leprechaun With Pot Of Gold Coloring Page",
-      "displayTitle": "St Patricks Day Leprechaun With Pot Of Gold Coloring Page",
+      "displayTitle": "St Patricks Day Leprechaun With Pot Of Gold",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "holidays",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "606f1c9a7b",
       "canonicalPath": "/printables/holidays/st-patricks-day-lucky-clover-field-landscape-606f1c9a7b",
       "baseTitle": "St Patricks Day Lucky Clover Field Landscape Coloring Page",
-      "displayTitle": "St Patricks Day Lucky Clover Field Landscape Coloring Page",
+      "displayTitle": "St Patricks Day Lucky Clover Field Landscape",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "holidays",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "a4cb083c40",
       "canonicalPath": "/printables/holidays/st-patricks-day-lucky-gnome-holding-pot-of-gold-a4cb083c40",
       "baseTitle": "St Patricks Day Lucky Gnome Holding Pot Of Gold Coloring Page",
-      "displayTitle": "St Patricks Day Lucky Gnome Holding Pot Of Gold Coloring Page",
+      "displayTitle": "St Patricks Day Lucky Gnome Holding Pot Of Gold",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "holidays",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "7c1f426b75",
       "canonicalPath": "/printables/holidays/st-patricks-day-lucky-horseshoe-with-clovers-7c1f426b75",
       "baseTitle": "St Patricks Day Lucky Horseshoe With Clovers Coloring Page",
-      "displayTitle": "St Patricks Day Lucky Horseshoe With Clovers Coloring Page",
+      "displayTitle": "St Patricks Day Lucky Horseshoe With Clovers",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "holidays",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "0cac522f50",
       "canonicalPath": "/printables/holidays/st-patricks-day-pot-of-gold-guarded-by-leprechaun-0cac522f50",
       "baseTitle": "St Patricks Day Pot Of Gold Guarded By Leprechaun Coloring Page",
-      "displayTitle": "St Patricks Day Pot Of Gold Guarded By Leprechaun Coloring Page",
+      "displayTitle": "St Patricks Day Pot Of Gold Guarded By Leprechaun",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "holidays",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "1dad44bef5",
       "canonicalPath": "/printables/holidays/st-patricks-day-pot-of-gold-under-rainbow-1dad44bef5",
       "baseTitle": "St Patricks Day Pot Of Gold Under Rainbow Coloring Page",
-      "displayTitle": "St Patricks Day Pot Of Gold Under Rainbow Coloring Page",
+      "displayTitle": "St Patricks Day Pot Of Gold Under Rainbow",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "holidays",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "b0dcaa0204",
       "canonicalPath": "/printables/holidays/st-patricks-day-rainbow-arch-with-gold-coins-b0dcaa0204",
       "baseTitle": "St Patricks Day Rainbow Arch With Gold Coins Coloring Page",
-      "displayTitle": "St Patricks Day Rainbow Arch With Gold Coins Coloring Page",
+      "displayTitle": "St Patricks Day Rainbow Arch With Gold Coins",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "holidays",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "df165a35b6",
       "canonicalPath": "/printables/holidays/st-patricks-day-rainbow-over-green-hills-df165a35b6",
       "baseTitle": "St Patricks Day Rainbow Over Green Hills Coloring Page",
-      "displayTitle": "St Patricks Day Rainbow Over Green Hills Coloring Page",
+      "displayTitle": "St Patricks Day Rainbow Over Green Hills",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "holidays",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "ffa1652840",
       "canonicalPath": "/printables/holidays/st-patricks-day-shamrock-clover-pattern-ffa1652840",
       "baseTitle": "St Patricks Day Shamrock Clover Pattern Coloring Page",
-      "displayTitle": "St Patricks Day Shamrock Clover Pattern Coloring Page",
+      "displayTitle": "St Patricks Day Shamrock Clover Pattern",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "holidays",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-redundant-coloring-page-suffix"
+      ]
     },
     {
       "stableId": "633e0af20e",
@@ -66190,11 +66878,13 @@
       "stableId": "12eb9bb13b",
       "canonicalPath": "/printables/indoor-plants/indoor-plants-aglaonema-pink-dalmation-12eb9bb13b",
       "baseTitle": "Indoor Plants Aglaonema Pink Dalmation",
-      "displayTitle": "Indoor Plants Aglaonema Pink Dalmation",
+      "displayTitle": "Indoor Plants Aglaonema Pink Dalmatian",
       "duplicateGroupSize": 1,
       "designNumber": null,
       "primaryCategory": "indoor-plants",
-      "qualityFlags": []
+      "qualityFlags": [
+        "corrected-spelling-dalmation"
+      ]
     },
     {
       "stableId": "83812d4fae",
