@@ -108,9 +108,11 @@ test("advertisements remain outside navigation, cards, controls, grids, and dial
   const runtime = await readText("src/components/ads/AdSenseRuntime.tsx");
   const eligibility = await readText("src/lib/ads/eligibility.ts");
   const shell = await readText("src/components/site/PublicPageShell.tsx");
-  assert.match(mode, /environment\.NODE_ENV === "production" \? "off" : "placeholder"/);
-  assert.match(mode, /candidate !== "live"/);
-  assert.match(mode, /NEXT_PUBLIC_AD_REGIONAL_REQUIREMENTS_SATISFIED/);
+  assert.match(mode, /runtimeEnvironment !== "production"/);
+  assert.match(mode, /return resolved\("placeholder"/);
+  assert.match(mode, /mode: "live"/);
+  assert.match(mode, /configurationValid/);
+  assert.doesNotMatch(mode, /NEXT_PUBLIC_[A-Z0-9_]*AD|requestedMode|regionalRequirementsSatisfied/);
   assert.match(script, /configuration\.mode !== "live"/);
   assert.match(script, /<AdSenseRuntime/);
   assert.equal((`${script}\n${runtime}`.match(/id = "adsense-runtime"|SCRIPT_ID = "adsense-runtime"/g) || []).length, 1);
@@ -121,12 +123,19 @@ test("advertisements remain outside navigation, cards, controls, grids, and dial
   assert.match(runtime, /unit\.dataset\.adInitialized === "true"/);
   assert.match(runtime, /window\.adsbygoogle[\s\S]*\.push\(\{\}\)/);
   assert.doesNotMatch(runtime, /querySelectorAll\([^\n]+not\(\[data-initialized\]\)[\s\S]+forEach[\s\S]+push/);
-  for (const field of ["liveAdvertisingEnabled", "configurationValid", "regionalRequirementsSatisfied", "actuallyVisible", "nearViewport", "alreadyInitialized"]) {
+  for (const field of ["configurationValid", "actuallyVisible", "nearViewport", "alreadyInitialized"]) {
     assert.match(eligibility, new RegExp(`${field}:`));
   }
+  assert.doesNotMatch(eligibility, /liveAdvertisingEnabled|regionalRequirementsSatisfied/);
   assert.match(eligibility, /supportedPageFamilies\.includes/);
   assert.match(eligibility, /sideRailsMinWidth/);
   assert.match(shell, /<PageAdSlot pageFamily=\{pageFamily\} placement="top-banner" \/>[\s\S]*\{layout\.sideRailsAllowed/);
+
+  const project = await readTreeText(["app", "src", "pipeline/scripts", "pipeline/tests"]);
+  const legacyModeVariable = ["NEXT", "PUBLIC", "AD", "MODE"].join("_");
+  const legacyRegionalVariable = ["NEXT", "PUBLIC", "AD", "REGIONAL", "REQUIREMENTS", "SATISFIED"].join("_");
+  assert.equal(project.includes(legacyModeVariable), false);
+  assert.equal(project.includes(legacyRegionalVariable), false);
 });
 
 test("placeholder presentation is visible but not interactive or heading content", async () => {

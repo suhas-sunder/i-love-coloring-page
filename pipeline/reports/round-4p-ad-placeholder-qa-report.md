@@ -2,7 +2,7 @@
 
 - Placeholders hidden when disabled: true
 - Placeholders visible when enabled: true
-- Enabled by: NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS=1
+- Historical local placeholder switch: removed
 - Label text: Advertisement
 - No live ad code: true
 - No publisher or client IDs: true

@@ -34,7 +34,7 @@ Recommended future AdSense units:
 - ilcp-rail-right-desktop
 
 Placeholder-off preview command:
-`$env:NEXT_PUBLIC_COLORING_ASSET_BASE_URL='http://127.0.0.1:4175/coloring-pages'; Remove-Item Env:NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS -ErrorAction SilentlyContinue; npm run build; npx serve out -l 3005`
+Historical disabled-placeholder command removed.
 
 Placeholder-on preview command:
-`$env:NEXT_PUBLIC_COLORING_ASSET_BASE_URL='http://127.0.0.1:4175/coloring-pages'; $env:NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS='1'; npm run build; npx serve out -l 3005`
+`$env:NEXT_PUBLIC_COLORING_ASSET_BASE_URL='http://127.0.0.1:4175/coloring-pages'; npm run dev`

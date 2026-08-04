@@ -133,7 +133,7 @@ function buildAdPlaceholderInventory(source) {
       currentSlotDefinitionCount: slotDefinitions.length,
       round4mPlannedSlotCount: 8,
       hiddenByDefault: /if \(!showAdPlaceholders\(\)\) return null/.test(source.adSlot) && /if \(!showAdPlaceholders\(\)\) return null/.test(source.adRail),
-      enabledByEnvFlag: "NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS=1",
+      enabledByEnvFlag: "historical switch removed",
       labelText: "Advertisement",
       liveAdCodePresent: /adsbygoogle|pagead2\.googlesyndication|google_ad_client|ca-pub-/i.test(source.allProjectSource),
       publisherOrClientIdsPresent: /ca-pub-|google_ad_client|client-\d+/i.test(source.allProjectSource),

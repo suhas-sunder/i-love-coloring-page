@@ -8,7 +8,6 @@ import type { AdSlotId } from "@/lib/ads/types";
 
 type AdSenseRuntimeProps = {
   clientId: string;
-  regionalRequirementsSatisfied: boolean;
 };
 
 const SCRIPT_ID = "adsense-runtime";
@@ -20,7 +19,7 @@ declare global {
   }
 }
 
-export function AdSenseRuntime({ clientId, regionalRequirementsSatisfied }: AdSenseRuntimeProps) {
+export function AdSenseRuntime({ clientId }: AdSenseRuntimeProps) {
   useEffect(() => {
     const observed = new Set<HTMLElement>();
     const observer = new IntersectionObserver(
@@ -65,9 +64,7 @@ export function AdSenseRuntime({ clientId, regionalRequirementsSatisfied }: AdSe
         slotId,
         pageFamily,
         viewportWidth: window.innerWidth,
-        liveAdvertisingEnabled: true,
         configurationValid: hasValidAdSenseConfiguration(),
-        regionalRequirementsSatisfied,
         actuallyVisible: isActuallyVisible(slot) && isActuallyVisible(unit),
         nearViewport,
         alreadyInitialized: unit.dataset.adInitialized === "true",
@@ -83,7 +80,7 @@ export function AdSenseRuntime({ clientId, regionalRequirementsSatisfied }: AdSe
         unit.dataset.adInitializationError = "true";
       }
     }
-  }, [clientId, regionalRequirementsSatisfied]);
+  }, [clientId]);
 
   return null;
 }

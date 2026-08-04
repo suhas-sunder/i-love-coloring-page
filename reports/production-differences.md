@@ -2,7 +2,7 @@
 
 The live site remains intentionally untouched. It currently differs from this repair in three high-confidence areas:
 
-1. Live production emits advertisement placeholder markup; the local production default is now OFF.
+1. This capture predates the automatic live-unit correction; current local production emits the centralized live units and no development placeholder text.
 2. Live printable markup declares source dimensions for a smaller WebP; local markup declares 341×512 and prevents upscaling.
 3. Live has no build-revision marker, so same-revision verification across routes is impossible until a later approved deployment.
 
@@ -19,7 +19,4 @@ Live snapshots:
 
 Local snapshots:
 
-- /: status=local, ads=0, loading-preview=true, revision-marker=true, cache=n/a, sha=5e1692f5
-- /coloring-pages: status=local, ads=0, loading-preview=true, revision-marker=true, cache=n/a, sha=646751a6
-- /coloring-pages/animals: status=local, ads=0, loading-preview=true, revision-marker=true, cache=n/a, sha=dc0e9ca8
-- /printables/fantasy/fantasy-abyss-wyrm-7a01eb3636: status=local, ads=0, loading-preview=true, revision-marker=true, cache=n/a, sha=67917ba4
+- The local snapshot rows below are historical and were superseded by the August 4 production build and advertising browser QA.

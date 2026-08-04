@@ -14,7 +14,9 @@ createServer((request, response) => {
   const target = [relative, `${relative}.html`, path.join(relative, "index.html")]
     .map((candidate) => path.resolve(root, candidate))
     .find((candidate) => candidate.startsWith(root + path.sep) && existsSync(candidate) && statSync(candidate).isFile());
-  if (!target) { response.writeHead(404, { "content-type": "text/plain; charset=utf-8" }); response.end("Not found"); return; }
-  response.writeHead(200, { "content-type": types[path.extname(target).toLowerCase()] || "application/octet-stream", "cache-control": "no-store" });
-  createReadStream(target).pipe(response);
+  const fallback = path.join(root, "404.html");
+  const responseTarget = target || (existsSync(fallback) ? fallback : null);
+  if (!responseTarget) { response.writeHead(404, { "content-type": "text/plain; charset=utf-8" }); response.end("Not found"); return; }
+  response.writeHead(target ? 200 : 404, { "content-type": types[path.extname(responseTarget).toLowerCase()] || "application/octet-stream", "cache-control": "no-store" });
+  createReadStream(responseTarget).pipe(response);
 }).listen(port, "127.0.0.1", () => console.log(`Static export available at http://127.0.0.1:${port}`));

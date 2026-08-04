@@ -636,7 +636,7 @@ function buildProjectContextManifest() {
       nestedReferenceUntouched: runGit(["status", "--short", "--", "ilovesvg"]).trim() === "",
       currentPublicDownloadFormats: ["PNG"],
       visibleSvgDownloadOptions: false,
-      adWellsVisibleByDefault: !/NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS/.test(readTextSync("src/components/ads/AdSlot.tsx") + readTextSync("src/lib/ads/config.ts")),
+      adWellsVisibleByDefault: /Development placeholder/.test(readTextSync("src/components/ads/AdSlot.tsx")),
       liveAdCodeExists: /adsbygoogle|pagead2\.googlesyndication|ca-pub-|google_ad_client/i.test(readProjectSourceSync(["app", "src"])),
       wrongContextIndicatorsFound: /image-to-favicon-generator|iLoveSVG|Vite|SVG wrapper/i.test(readProjectSourceSync(["app", "src", "package.json", "next.config.mjs"])),
     },

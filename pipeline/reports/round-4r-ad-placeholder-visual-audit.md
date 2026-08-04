@@ -2,7 +2,7 @@
 
 - Label text: Advertisement
 - Hidden by default: true
-- Enabled by: NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS=1
+- Historical local placeholder switch: removed
 - Build-time flag read: true
 - Too noisy before Round 4R: true
 - Too content-like before Round 4R: true

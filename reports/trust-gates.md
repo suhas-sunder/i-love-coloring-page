@@ -1,6 +1,6 @@
 # Trust, legal, owner, and advertising gates
 
-The public operator-display and mailing-address decisions are recorded. The 7 gates below remain unresolved and cannot be truthfully closed from repository evidence alone.
+The public operator-display and mailing-address decisions are recorded. The 6 gates below remain unresolved and cannot be truthfully closed from repository evidence alone.
 
 ## owner.governing_law
 
@@ -50,29 +50,17 @@ The public operator-display and mailing-address decisions are recorded. The 7 ga
 - Production consequence: Title-review policy remains incomplete.
 - AdSense consequence: Rights and content-policy review remains incomplete.
 
-## ads.account_configuration
-
-- Current failure: Verify account status, site verification, ads.txt, placement, and Auto Ads decisions in the authenticated provider interface.
-- Configuration: advertisement mode, publisher configuration, and ads.txt
-- Code-fixable now: no
-- Owner facts required: yes
-- Legal review required: no
-- Input required: Verified publisher ID, verification method, slot plan, Auto Ads decision, and account-supplied ads.txt line.
-- Risk of guessing: Could activate the wrong account, invalid slots, or an unverified ads.txt declaration.
-- Production consequence: LIVE mode remains unavailable; OFF remains the production default.
-- AdSense consequence: Account verification and serving cannot begin.
-
 ## ads.consent_and_age_configuration
 
-- Current failure: Choose ad personalization, regional consent, CMP, and age-treatment configuration before live advertising.
+- Current failure: Review and configure ad personalization, regional consent, CMP, and age treatment for live advertising.
 - Configuration: advertising consent, personalization, CMP, and age-treatment configuration
 - Code-fixable now: no
 - Owner facts required: yes
 - Legal review required: yes
 - Input required: Approved regional consent, personalization, CMP, and age-treatment decisions.
 - Risk of guessing: Could process advertising data under an incorrect consent or age-treatment mode.
-- Production consequence: LIVE advertising remains blocked.
-- AdSense consequence: Consent and serving configuration remains incomplete.
+- Production consequence: Production advertising is active while consent and age-treatment review remains externally unresolved.
+- AdSense consequence: Consent and serving configuration still requires owner and qualified review.
 
 ## external.production_validation
 

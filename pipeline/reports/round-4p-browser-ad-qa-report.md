@@ -5,7 +5,7 @@ Status: completed
 Local preview used:
 - App: `http://localhost:3005`
 - Media: `http://127.0.0.1:4175/coloring-pages`
-- Placeholder flag: `NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS=1` for the enabled pass
+- The historical enabled pass used a local placeholder switch that has since been removed.
 
 Pages inspected:
 - `/`

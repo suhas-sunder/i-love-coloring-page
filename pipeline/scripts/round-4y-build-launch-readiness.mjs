@@ -57,7 +57,7 @@ const context = {
     ilovesvgStatusClean: git(["status", "--short", "--", "ilovesvg"]).trim() === "",
     publicDownloadsRemainPngOnly: /Download PNG/.test(readText("src/components/coloring/ImageCard.tsx")) && !/Download SVG|Download JPG|Download JPEG|Download WebP/i.test(publicSource),
     svgExposedToUsers: /Download SVG|SVG download/i.test(publicSource),
-    adWellsVisibleByDefault: /Advertisement/.test(readText("src/components/ads/AdSlot.tsx")) && !/NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS/.test(publicSource),
+    adWellsVisibleByDefault: /Advertisement/.test(readText("src/components/ads/AdSlot.tsx")),
     liveAdCodeExists: !liveAdCodeAbsent,
   },
 };

@@ -117,7 +117,7 @@ async function buildProjectContext() {
       ilovesvgStatusClean: (await gitStatusFor("ilovesvg")).trim() === "",
       svgInternalOnly: !/Download SVG|downloadSvg|svgDownload/i.test(`${downloadMenu}\n${browserDownloads}`),
       publicDownloadsPngJpgWebp: /label:\s*"PNG"/.test(downloadMenu) && /label:\s*"JPG"/.test(downloadMenu) && /label:\s*"WebP"/.test(downloadMenu),
-      adWellsVisibleByDefault: /Advertisement/.test(sourceText) && !/NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS/.test(sourceText),
+      adWellsVisibleByDefault: /Advertisement/.test(sourceText),
       liveAdSenseCodePresent: /adsbygoogle|pagead2\.googlesyndication|ca-pub-|google_ad_client/i.test(sourceText),
       imageSitemapPresent: /image-sitemap|ImageSitemap/i.test(sourceText),
       openGraphImageGenerationPresent: /opengraph-image|twitter-image|ImageResponse/i.test(sourceText),

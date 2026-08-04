@@ -122,7 +122,7 @@
   "checks": [
     "real media rendering",
     "ad placeholders hidden by default",
-    "ad placeholders visible with NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS=1",
+    "ad placeholders visible in the historical enabled pass",
     "navigation wraps without overflow",
     "no app/api route"
   ]

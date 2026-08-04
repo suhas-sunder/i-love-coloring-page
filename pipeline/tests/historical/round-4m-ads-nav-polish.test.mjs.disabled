@@ -78,7 +78,7 @@ test("ad placeholder implementation is static, permanent, and never live ad code
 
   assert.match(types, /AdSlotId/);
   assert.match(slot, /Advertisement/);
-  assert.doesNotMatch(`${config}\n${slot}\n${rail}`, /NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS|showAdPlaceholders|return null/);
+  assert.doesNotMatch(`${config}\n${slot}\n${rail}`, /showAdPlaceholders|return null/);
   assert.doesNotMatch(`${config}\n${slot}\n${rail}`, /adsbygoogle|pagead2\.googlesyndication|ca-pub-|google_ad_client/i);
   assert.doesNotMatch(`${imageCard}\n${galleryGrid}`, /AdSlot|Advertisement|ad-slot/i);
   assert.match(css, /@media print[\s\S]*\.ad-slot/);

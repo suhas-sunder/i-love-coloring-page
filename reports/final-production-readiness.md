@@ -10,7 +10,7 @@ Assessment date: 2026-07-21
 - Production readiness: BLOCKED
 - Trust-ready for initial public release: NO
 - Ready for AdSense resubmission: NO
-- LIVE advertising: BLOCKED and disabled
+- LIVE advertising: enabled automatically in production output; external account and policy review remains unresolved
 - Deployment authorized: NO
 - Deployment requested: NO
 - Remaining readiness gates: 7
@@ -37,10 +37,10 @@ Owner approval is recorded only where supplied. It is not represented as qualifi
 
 ## External production boundary
 
-The built artifact is technically safe in OFF mode. No deployment or live-site verification is requested. The exact Netlify production site, production branch, deployment mechanism, authorized operator, current deploy revision, known-good rollback point, and rollback method remain unknown.
+The August 4 build emits live AdSense units automatically on eligible content pages. No deployment or live-site verification is requested. The exact Netlify production site, production branch, deployment mechanism, authorized operator, current deploy revision, known-good rollback point, and rollback method remain unknown.
 
 The deployment checkpoint has been cancelled. These unknowns remain documented because they prevent a production-validation claim, but they do not block committing and pushing the completed repository work. No Netlify information or deployment approval is currently requested.
 
 ## AdSense status
 
-Owner-reported status: NEEDS-ACTION following low-value-content feedback. This account state has not been independently verified. The site must not be resubmitted in this task. ads.txt remains absent, no publisher identity is accepted, and no ad code or consent system is active.
+Owner-reported status: NEEDS-ACTION following low-value-content feedback. This historical account state has not been independently verified. Repository source now contains the confirmed public publisher configuration, exact `ads.txt` record, and automatic production units; authenticated account, consent, and age-treatment settings remain external review items.

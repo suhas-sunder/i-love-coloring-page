@@ -127,7 +127,7 @@ async function buildProjectContext(publicBaseUrl) {
       svgUserDownloadExposed: /Download SVG|downloadSvg|svgDownload/i.test(projectText),
       currentPublicDownloadFormats: getPublicDownloadFormats(projectText),
       jpgJpegWebpControlsVisible: /\bDownload JPG\b|\bDownload JPEG\b|\bDownload WebP\b/i.test(projectText),
-      adWellsVisibleByDefault: /Advertisement/.test(projectText) && !/NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS/.test(projectText),
+      adWellsVisibleByDefault: /Advertisement/.test(projectText),
       liveAdSenseCodePresent: /adsbygoogle|pagead2\.googlesyndication|ca-pub-|google_ad_client/i.test(projectText),
       wrongTaskContextDetected: /image-to-favicon-generator|Vite|SVG wrapper/i.test(projectText),
     },

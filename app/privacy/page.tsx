@@ -85,10 +85,10 @@ export default function PrivacyPage() {
 
       <TrustSection title="Regional advertising controls">
         <p>
-          The site does not guess a visitor&apos;s region from language, locale, or time zone. AdSense requests remain disabled unless the live-ad setting,
-          publisher configuration, page and viewport eligibility, and regional requirements are all satisfied. Until a Google-certified consent
-          management platform or another reliable regional exclusion is confirmed, requests must remain disabled for visitors in the EEA, the UK,
-          and Switzerland.
+          The site does not guess a visitor&apos;s region from language, locale, or time zone. Eligible production content pages use the configured
+          AdSense units automatically. Advertising choices, consent messages, and any required treatment for visitors in the EEA, the UK, and
+          Switzerland depend on Google&apos;s approved controls and the site&apos;s authenticated advertising-account configuration. Those external
+          settings require owner and qualified review and are not inferred from repository source.
         </p>
       </TrustSection>
 

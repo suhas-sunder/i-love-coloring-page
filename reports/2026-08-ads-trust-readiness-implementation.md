@@ -4,11 +4,11 @@ Date: August 2, 2026
 
 ## Outcome
 
-The confirmed AdSense publisher and five ad-unit IDs are now centralized in the existing advertisement system. The responsive header allocation is the first element inside the page main region, immediately below the complete site header and outside the navigation landmark. Live initialization is centralized, near-viewport, breakpoint-aware, page-family-aware, visibility-aware, idempotent, and fail-closed behind an explicit regional-requirements gate.
+The confirmed AdSense publisher and five ad-unit IDs are now centralized in the existing advertisement system. The responsive header allocation is the first element inside the page main region, immediately below the complete site header and outside the navigation landmark. Live initialization is centralized, near-viewport, breakpoint-aware, page-family-aware, visibility-aware, and idempotent.
 
 The production `/ads.txt` endpoint was already correct and did not need a content edit. The build and hosting configuration now explicitly preserve its plain-text response. Privacy, Terms, About, Editorial Policy, and Affiliate Disclosure describe the current downloads, approved use rights, advertising configuration, analytics status, and external Cloudflare RUM issue accurately.
 
-Live advertising remains disabled in a normal production build. The publisher configuration alone cannot activate it. `NEXT_PUBLIC_AD_MODE=live` and `NEXT_PUBLIC_AD_REGIONAL_REQUIREMENTS_SATISFIED=true` are both required, and the latter must not be set until a Google-certified CMP or reliable regional exclusion has been implemented and verified.
+As corrected on August 4, normal local development and tests render noninteractive placeholders while a production build renders the configured live units automatically. Advertising uses no project-specific environment switch. Invalid centralized publisher or slot configuration still fails closed.
 
 ## Starting state
 
@@ -128,18 +128,17 @@ The live wrapper and unit both expose the accessible name `Advertisement`. Place
 
 The centralized eligibility decision requires all of the following:
 
-1. Live mode is explicitly enabled.
+1. The standard Next.js runtime is production.
 2. The centralized publisher and slot configuration passes validation.
-3. The explicit regional-requirements gate is true.
-4. The page family supports the logical slot.
-5. The current viewport supports the slot.
-6. The wrapper and unit are actually rendered with nonzero dimensions and are not `display:none` or `visibility:hidden`.
-7. Intersection Observer reports the unit in or within 400 px of the viewport.
-8. The unit does not already have `data-ad-initialized="true"`.
+3. The page family supports the logical slot.
+4. The current viewport supports the slot.
+5. The wrapper and unit are actually rendered with nonzero dimensions and are not `display:none` or `visibility:hidden`.
+6. Intersection Observer reports the unit in or within 400 px of the viewport.
+7. The unit does not already have `data-ad-initialized="true"`.
 
 Only then is the unit marked initialized and one `adsbygoogle.push({})` queued. Mutation Observer discovers route-change content; removed elements are unobserved and removed from the runtime set. The script element is keyed by one stable ID, route changes do not duplicate it, and resize/scroll do not reinitialize a completed unit. Hidden breakpoint alternatives never initialize.
 
-The normal production build, where the regional gate is unset, contained zero AdSense script tags and zero live units. Browser QA used a local live-mode build with the regional gate explicitly enabled and intercepted only the external AdSense JavaScript request; no fake ad response or creative was injected.
+The production static output contains live units and no development placeholder text. The runtime creates the external AdSense script only when the first eligible unit approaches the viewport; the stable script ID prevents duplicates. Development output contains placeholders and does not create the runtime or make a Google request.
 
 ## Trust and public-copy changes
 
@@ -222,7 +221,7 @@ Chrome and Edge are both Chromium coverage; this is not independent cross-engine
 ## Unresolved external actions and launch gates
 
 1. Disable the Cloudflare Web Analytics entry in the dashboard and confirm the production network beacon is gone.
-2. Implement and verify a Google-certified CMP or a reliable geographic exclusion before setting the regional gate true. Do not infer region from locale, language, or timezone.
+2. Review and configure Google-approved regional consent, personalization, CMP, and age-treatment controls in the authenticated provider interface. Do not infer region from locale, language, or timezone.
 3. Obtain owner/qualified review of general-audience versus child-directed treatment and the revised Privacy/Terms text.
 4. Deploy the source/configuration changes, then repeat the 390–1920 px DOM/visual matrix against production with real AdSense script behavior and no fake creative.
 5. Measure CLS, LCP, INP, script cost, visible/initialized/no-fill counts, viewability, and accidental-click indicators before expanding beyond the conservative header-plus-wide-rails model.
@@ -242,11 +241,39 @@ Fresh command results:
 - Exact `npm run build` retry: PASS, 6,920/6,920 static pages in 446 seconds. This transient first failure is recorded rather than concealed.
 - `git diff --check`: PASS; only Git line-ending conversion warnings were emitted.
 
-Post-build `/ads.txt` verification remained unchanged: `out/ads.txt` is 58 bytes, UTF-8 without BOM, contains the authorized seller record exactly once, contains no `ca-` prefix, and is not blocked by the exported `robots.txt`. Representative default-production HTML contained no live AdSense script or unit markup because the regional gate was unset. All generated trust/readiness outputs were restored to exact HEAD content after tests and build.
+Post-build `/ads.txt` verification remained unchanged: `out/ads.txt` is 58 bytes, UTF-8 without BOM, contains the authorized seller record exactly once, contains no `ca-` prefix, and is not blocked by the exported `robots.txt`. The August 3 representative build predated the automatic-production-mode correction; the August 4 verification supersedes its disabled-output observation.
 
-Fresh Chrome `150.0.7871.187` and Edge `151.0.4129.59` QA again passed 110/110 page checks across the 11 routes and five required widths. The first harness launch used `127.0.0.1` against a dev server bound only to `localhost` and failed before any assertion with `ERR_CONNECTION_REFUSED`; rerunning the unchanged harness with `ADS_TRUST_APP_URL=http://localhost:3005` completed with zero failures. The temporary server and logs were removed, and port 3005 was no longer listening.
+Fresh Chrome `150.0.7871.187` and Edge `151.0.4129.59` QA again passed 110/110 page checks across the 11 routes and five required widths. The first harness launch used `127.0.0.1` against a dev server bound only to `localhost` and failed before any assertion with `ERR_CONNECTION_REFUSED`; rerunning against `http://localhost:3005` completed with zero failures. The runner now accepts an optional `--base-url` argument and does not read a project-specific environment variable. The temporary server and logs were removed, and port 3005 was no longer listening.
 
 All four production `/ads.txt` variants again returned or redirected to the valid HTTPS `www` file with HTTP 200, `text/plain; charset=UTF-8`, and exact 58-byte content. Redirect counts were 0 for HTTPS `www`, 1 for HTTPS apex, 1 for HTTP `www`, and 2 for HTTP apex. A curl fetch of initial HTML did not contain a Cloudflare beacon string, but a real in-app browser inspection loaded `https://static.cloudflareinsights.com/beacon.min.js/...`; Cloudflare Web Analytics therefore remains externally active until the dashboard action and a production network recheck prove otherwise.
+
+## August 4, 2026 automatic-mode correction
+
+Starting from clean `main` at `63ba98264e037b8269bb5126ecb26c4754b2e8f7`, the project-specific advertising switches were removed from runtime source, validation scripts, tests, configuration comments, and retained documentation. The central resolver now accepts an explicit runtime-environment argument for deterministic tests and otherwise uses only standard Next.js `NODE_ENV` behavior:
+
+- development and tests: `placeholder`;
+- production with valid centralized IDs: `live`;
+- invalid centralized publisher or slot configuration: `off`.
+
+Development-server HTML contained five placeholder wrappers, no live unit, no publisher attribute, and no AdSense URL. Fresh production output contained five live homepage logical slots and five matching numeric units, no development placeholder text, and zero units on Privacy, Sitemap, and 404. The runtime still loads the external script only when the first eligible unit is near the viewport, keys it by one stable ID, rejects hidden units, and prevents a second initialization of the same element.
+
+Verification results:
+
+- `npm run test:advertisements`: PASS, 5/5.
+- `npm run test:site-quality-foundations`: PASS, 9/9.
+- `npm run test:trust-ads-readiness`: PASS, 12/12.
+- `npm run test:printable-content`: PASS, 8/8.
+- `npm run typecheck`: PASS.
+- `npm test`: PASS, 173/173 in 219.9 seconds.
+- `npm run build`: PASS, 6,920/6,920 static pages in 268 seconds; readiness generation reported technical PASS and six unresolved owner/legal/account/external gates.
+- `npm run validate:page-layout`: PASS across nine representative page families.
+- `npm run validate:refinement`: PASS.
+- `git diff --check`: PASS; only Git line-ending conversion notices were emitted.
+- Repository search for the removed advertising variables and the older placeholder variable: zero matches.
+
+Chrome `150.0.7871.187` and Edge `151.0.4129.59` passed 110/110 checks across the existing 11-route, five-width matrix. The first static-server run passed all 100 content-route checks but served a plain-text fallback for the ten 404 checks; the durable static-export server now serves exported `404.html` with HTTP 404, and the complete rerun passed. Google script requests were intercepted; no fake creative was injected. Approved evidence was refreshed under `pipeline/review/ads-trust-readiness/`.
+
+Firefox, Playwright WebKit, real Safari/iOS, screen-reader review, physical mobile, real AdSense fill/no-fill, authenticated consent/account behavior, and field layout-shift measurements remain manual checks. No deployment or external-service change was performed.
 
 ## Scope confirmation
 

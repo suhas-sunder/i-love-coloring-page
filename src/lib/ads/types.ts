@@ -13,12 +13,12 @@ export type AdLayoutMode = "full" | "condensed" | "none";
 
 export type AdMode = "off" | "placeholder" | "live";
 
+export type AdRuntimeEnvironment = "development" | "test" | "production";
+
 export type ResolvedAdMode = {
   mode: AdMode;
-  requestedMode: string | null;
   publisherId: string | null;
   slotIds: Partial<Record<AdSlotId, string>>;
-  regionalRequirementsSatisfied: boolean;
   reason: string;
 };
 

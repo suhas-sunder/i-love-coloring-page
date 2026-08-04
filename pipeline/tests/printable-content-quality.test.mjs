@@ -85,11 +85,11 @@ test("related printable sets are valid, relevant, deterministic, and varied", ()
   assert.ok(setHashes.size > runtime.records.length / 2, `${setHashes.size} unique sets`);
 });
 
-test("trust copy describes gated advertising and the approved printable-use terms", () => {
+test("trust copy describes automatic production advertising and the approved printable-use terms", () => {
   const privacy = text("app/privacy/page.tsx");
   const terms = text("app/terms/page.tsx");
-  assert.match(privacy, /AdSense requests remain disabled unless the live-ad setting/);
-  assert.match(privacy, /Google-certified consent\s+management platform or another reliable regional exclusion/);
+  assert.match(privacy, /Eligible production content pages use the configured\s+AdSense units automatically/);
+  assert.match(privacy, /Google&apos;s approved controls and the site&apos;s authenticated advertising-account configuration/);
   assert.doesNotMatch(privacy, /Advertisement areas are inert layout placeholders/);
   assert.match(terms, /Created and published by I Love Coloring Page/);
   assert.match(terms, /personal use, family and household use,\s*classroom use, homeschool use, and nonprofit educational use/);

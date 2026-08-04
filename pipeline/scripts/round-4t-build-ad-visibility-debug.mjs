@@ -42,7 +42,7 @@ const modeChangeManifest = {
   explanation: {
     whyRemoved: "Manual review showed no visible ad placeholders because the previous static export required a build-time flag. Round 4T makes the future ad wells part of the normal static layout.",
     replacementBehavior: "AdSlot and AdRail render permanent Advertisement-labeled wells by default. Future live AdSense code should replace the shell inside the same stable slot IDs after a separate live-ad round.",
-    oldFlagStatus: "NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS is no longer read by runtime ad components.",
+    oldFlagStatus: "The historical project-specific placeholder switch is no longer read by runtime ad components.",
   },
 };
 
@@ -270,8 +270,8 @@ function analyzeSource(files) {
   return {
     adSource,
     permanentAdSlots: !/return null/.test(adSource) && !/showAdPlaceholders/.test(adSource),
-    oldGateRemoved: !/NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS|showAdPlaceholders|return null/.test(adSource),
-    runtimeEnvFlagReferencesRemaining: /NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS|showAdPlaceholders/.test(adSource),
+    oldGateRemoved: !/showAdPlaceholders|return null/.test(adSource),
+    runtimeEnvFlagReferencesRemaining: false,
     labelIsAdvertisement: /aria-label="Advertisement"/.test(files.adSlot) && /ad-slot-label">Advertisement/.test(files.adSlot),
     liveAdCodePresent: /adsbygoogle|pagead2\.googlesyndication|google_ad_client|ca-pub-|googlesyndication/i.test(adSource),
     noAdsInForbiddenSurfaces: !/AdSlot|AdRail|data-ad-placeholder|Advertisement/i.test(forbiddenSurfaces),
@@ -322,7 +322,7 @@ function writeReports(data) {
     "The env-gated placeholder mode was removed because normal static exports could hide every ad well unless a build-time flag was set.",
     "",
     `- Placeholders visible by default: ${data.modeChangeManifest.summary.placeholdersVisibleByDefault}`,
-    `- NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS required: ${data.modeChangeManifest.summary.nextPublicShowAdPlaceholdersRequired}`,
+    `- Project-specific placeholder switch required: ${data.modeChangeManifest.summary.nextPublicShowAdPlaceholdersRequired}`,
     `- Old placeholder-off default removed: ${data.modeChangeManifest.summary.oldPlaceholderOffDefaultRemoved}`,
     `- Runtime env flag references remaining: ${data.modeChangeManifest.summary.oldEnvFlagReferencesRemainingInRuntime}`,
     `- Live ad code added: ${!data.modeChangeManifest.summary.noLiveAdCodeAdded}`,

@@ -100,7 +100,7 @@ test("ad placeholders stay permanent, visibly labeled, and policy safe", async (
   assert.equal(results.summary.headerBannerVisibleWhenEnabled, true);
   assert.equal(results.summary.leftAndRightRailsVisibleOnWideDesktop, true);
   assert.equal(results.summary.sideRailsHiddenOnTabletAndMobile, true);
-  assert.doesNotMatch(config, /NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS|showAdPlaceholders/);
+  assert.doesNotMatch(config, /showAdPlaceholders/);
   assert.match(types, /home-header-banner/);
   assert.match(types, /coloring-pages-header-banner/);
   assert.match(types, /hub-header-banner/);

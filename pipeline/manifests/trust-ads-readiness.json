@@ -1,5 +1,5 @@
 {
-  "reportDate": "2026-07-21",
+  "reportDate": "2026-08-04",
   "runId": "trust-ads-readiness",
   "trustRoutes": [
     {
@@ -59,12 +59,12 @@
     {
       "path": "/privacy",
       "metadataTitle": "Privacy Policy | I Love Coloring Page",
-      "metadataDescription": "How I Love Coloring Page handles current static-site requests and how future features would change its privacy practices.",
+      "metadataDescription": "How I Love Coloring Page handles site requests, Google display advertising, analytics status, and privacy choices.",
       "h1Count": 1,
       "canonical": "https://www.ilovecoloringpage.com/privacy",
       "indexable": true,
       "footerLinked": true,
-      "lastUpdated": "July 21, 2026",
+      "lastUpdated": "August 4, 2026",
       "contactExpected": true,
       "contactEmailPresent": true,
       "logicalAdvertisementSlots": 0,
@@ -91,7 +91,7 @@
       "canonical": "https://www.ilovecoloringpage.com/terms",
       "indexable": true,
       "footerLinked": true,
-      "lastUpdated": "July 21, 2026",
+      "lastUpdated": "August 4, 2026",
       "contactExpected": true,
       "contactEmailPresent": true,
       "logicalAdvertisementSlots": 0,
@@ -118,7 +118,7 @@
       "canonical": "https://www.ilovecoloringpage.com/affiliate-disclosure",
       "indexable": true,
       "footerLinked": true,
-      "lastUpdated": "July 21, 2026",
+      "lastUpdated": "August 4, 2026",
       "contactExpected": true,
       "contactEmailPresent": true,
       "logicalAdvertisementSlots": 0,
@@ -145,7 +145,7 @@
       "canonical": "https://www.ilovecoloringpage.com/editorial-policy",
       "indexable": true,
       "footerLinked": true,
-      "lastUpdated": "July 21, 2026",
+      "lastUpdated": "August 4, 2026",
       "contactExpected": true,
       "contactEmailPresent": true,
       "logicalAdvertisementSlots": 0,
@@ -175,15 +175,15 @@
     "publicOperatorDisplayName": "I Love Coloring Page",
     "publicOperatorDisplayBasis": "site-name-only",
     "mailingAddressDecision": "omit",
-    "artworkRightsBasis": "unverified",
-    "publicUseLicense": "under-review",
+    "artworkRightsBasis": "created-and-published-by-site",
+    "publicUseLicense": "personal-family-classroom-homeschool-nonprofit-educational",
     "trademarkReferencePolicy": "case-by-case-review",
-    "advertisingPlan": "deferred"
+    "advertisingPlan": "confirmed-responsive-adsense"
   },
   "placeholderContactFindings": [],
   "liveAdvertisingStatus": {
-    "active": false,
-    "findingCount": 0
+    "active": true,
+    "findingCount": 1
   },
   "analyticsStatus": {
     "active": false,
@@ -198,12 +198,17 @@
     "findingCount": 0
   },
   "publisherIdStatus": {
-    "active": false,
-    "findingCount": 0
+    "active": true,
+    "findingCount": 1
   },
   "adsTxtStatus": {
-    "present": false,
-    "findingCount": 0
+    "present": true,
+    "findingCount": 0,
+    "exactAuthorizedSellerRecord": true,
+    "paths": [
+      "public/ads.txt",
+      "out/ads.txt"
+    ]
   },
   "ageTreatmentDecisionStatus": {
     "decided": false,
@@ -221,56 +226,84 @@
         "family": "homepage",
         "route": "/",
         "expectedLayout": "full",
-        "expectedLogicalSlots": 0,
-        "actualLogicalSlots": 0,
-        "uniqueLogicalSlots": 0,
-        "slotIds": [],
+        "expectedLogicalSlots": 5,
+        "actualLogicalSlots": 5,
+        "uniqueLogicalSlots": 5,
+        "slotIds": [
+          "home-header-banner",
+          "rail-left-desktop",
+          "rail-right-desktop",
+          "home-after-hero",
+          "home-lower-content"
+        ],
         "meaningfulPublisherContent": true
       },
       {
         "family": "main-gallery",
         "route": "/coloring-pages",
         "expectedLayout": "full",
-        "expectedLogicalSlots": 0,
-        "actualLogicalSlots": 0,
-        "uniqueLogicalSlots": 0,
-        "slotIds": [],
+        "expectedLogicalSlots": 5,
+        "actualLogicalSlots": 5,
+        "uniqueLogicalSlots": 5,
+        "slotIds": [
+          "coloring-pages-header-banner",
+          "rail-left-desktop",
+          "rail-right-desktop",
+          "coloring-pages-after-featured",
+          "coloring-pages-lower-content"
+        ],
         "meaningfulPublisherContent": true
       },
       {
         "family": "hub-page-one",
         "route": "/coloring-pages/animals",
         "expectedLayout": "full",
-        "expectedLogicalSlots": 0,
-        "actualLogicalSlots": 0,
-        "uniqueLogicalSlots": 0,
-        "slotIds": [],
+        "expectedLogicalSlots": 5,
+        "actualLogicalSlots": 5,
+        "uniqueLogicalSlots": 5,
+        "slotIds": [
+          "hub-header-banner",
+          "rail-left-desktop",
+          "rail-right-desktop",
+          "hub-post-header-banner",
+          "hub-lower-content"
+        ],
         "meaningfulPublisherContent": true
       },
       {
         "family": "hub-pagination",
         "route": "/coloring-pages/animals/page/2",
         "expectedLayout": "condensed",
-        "expectedLogicalSlots": 0,
-        "actualLogicalSlots": 0,
-        "uniqueLogicalSlots": 0,
-        "slotIds": [],
+        "expectedLogicalSlots": 3,
+        "actualLogicalSlots": 3,
+        "uniqueLogicalSlots": 3,
+        "slotIds": [
+          "hub-header-banner",
+          "hub-post-header-banner",
+          "hub-after-gallery"
+        ],
         "meaningfulPublisherContent": true
       },
       {
         "family": "printable-detail",
         "route": "/printables/animals/animals-alligator-4feec8505a",
         "expectedLayout": "full",
-        "expectedLogicalSlots": 0,
-        "actualLogicalSlots": 0,
-        "uniqueLogicalSlots": 0,
-        "slotIds": [],
+        "expectedLogicalSlots": 5,
+        "actualLogicalSlots": 5,
+        "uniqueLogicalSlots": 5,
+        "slotIds": [
+          "printable-header-banner",
+          "rail-left-desktop",
+          "rail-right-desktop",
+          "printable-post-header-banner",
+          "printable-after-related"
+        ],
         "meaningfulPublisherContent": true
       },
       {
         "family": "trust-page",
         "route": "/privacy",
-        "expectedLayout": "condensed",
+        "expectedLayout": "none",
         "expectedLogicalSlots": 0,
         "actualLogicalSlots": 0,
         "uniqueLogicalSlots": 0,
@@ -280,7 +313,7 @@
       {
         "family": "human-sitemap",
         "route": "/sitemap",
-        "expectedLayout": "condensed",
+        "expectedLayout": "none",
         "expectedLogicalSlots": 0,
         "actualLogicalSlots": 0,
         "uniqueLogicalSlots": 0,
@@ -303,72 +336,72 @@
     "visibleModel": [
       {
         "viewport": "320x800",
-        "fullPageVisibleSlots": 0,
-        "condensedPageVisibleSlots": 0,
+        "fullPageVisibleSlots": 1,
+        "condensedPageVisibleSlots": 1,
         "trustAndSitemapVisibleSlots": 0,
-        "reservedPixelAreaFullPage": 0,
+        "reservedPixelAreaFullPage": 16000,
         "approximatePublisherContentArea": 256000,
-        "approximationMethod": "Production OFF mode."
+        "approximationMethod": "Viewport area is a conservative lower-bound proxy; full documents contain additional publisher content below the fold."
       },
       {
         "viewport": "360x800",
-        "fullPageVisibleSlots": 0,
-        "condensedPageVisibleSlots": 0,
+        "fullPageVisibleSlots": 1,
+        "condensedPageVisibleSlots": 1,
         "trustAndSitemapVisibleSlots": 0,
-        "reservedPixelAreaFullPage": 0,
+        "reservedPixelAreaFullPage": 16000,
         "approximatePublisherContentArea": 288000,
-        "approximationMethod": "Production OFF mode."
+        "approximationMethod": "Viewport area is a conservative lower-bound proxy; full documents contain additional publisher content below the fold."
       },
       {
         "viewport": "430x932",
-        "fullPageVisibleSlots": 0,
-        "condensedPageVisibleSlots": 0,
+        "fullPageVisibleSlots": 1,
+        "condensedPageVisibleSlots": 1,
         "trustAndSitemapVisibleSlots": 0,
-        "reservedPixelAreaFullPage": 0,
+        "reservedPixelAreaFullPage": 16000,
         "approximatePublisherContentArea": 400760,
-        "approximationMethod": "Production OFF mode."
+        "approximationMethod": "Viewport area is a conservative lower-bound proxy; full documents contain additional publisher content below the fold."
       },
       {
         "viewport": "768x1024",
-        "fullPageVisibleSlots": 0,
-        "condensedPageVisibleSlots": 0,
+        "fullPageVisibleSlots": 1,
+        "condensedPageVisibleSlots": 1,
         "trustAndSitemapVisibleSlots": 0,
-        "reservedPixelAreaFullPage": 0,
+        "reservedPixelAreaFullPage": 28080,
         "approximatePublisherContentArea": 786432,
-        "approximationMethod": "Production OFF mode."
+        "approximationMethod": "Viewport area is a conservative lower-bound proxy; full documents contain additional publisher content below the fold."
       },
       {
         "viewport": "1366x900",
-        "fullPageVisibleSlots": 0,
-        "condensedPageVisibleSlots": 0,
+        "fullPageVisibleSlots": 1,
+        "condensedPageVisibleSlots": 1,
         "trustAndSitemapVisibleSlots": 0,
-        "reservedPixelAreaFullPage": 0,
+        "reservedPixelAreaFullPage": 65520,
         "approximatePublisherContentArea": 1229400,
-        "approximationMethod": "Production OFF mode."
+        "approximationMethod": "Viewport area is a conservative lower-bound proxy; full documents contain additional publisher content below the fold."
       },
       {
         "viewport": "1536x960",
-        "fullPageVisibleSlots": 0,
-        "condensedPageVisibleSlots": 0,
+        "fullPageVisibleSlots": 3,
+        "condensedPageVisibleSlots": 1,
         "trustAndSitemapVisibleSlots": 0,
-        "reservedPixelAreaFullPage": 0,
+        "reservedPixelAreaFullPage": 204720,
         "approximatePublisherContentArea": 1474560,
-        "approximationMethod": "Production OFF mode."
+        "approximationMethod": "Viewport area is a conservative lower-bound proxy; full documents contain additional publisher content below the fold."
       },
       {
         "viewport": "1920x1080",
-        "fullPageVisibleSlots": 0,
-        "condensedPageVisibleSlots": 0,
+        "fullPageVisibleSlots": 3,
+        "condensedPageVisibleSlots": 1,
         "trustAndSitemapVisibleSlots": 0,
-        "reservedPixelAreaFullPage": 0,
+        "reservedPixelAreaFullPage": 257520,
         "approximatePublisherContentArea": 2073600,
-        "approximationMethod": "Production OFF mode."
+        "approximationMethod": "Viewport area is a conservative lower-bound proxy; full documents contain additional publisher content below the fold."
       }
     ],
     "actionControlSeparation": "Print and Download remain inside the printable main region; no placeholder is inside that region.",
     "meaningfulContentSeparation": "Page headings, galleries, related content, or policy sections separate configured banner positions.",
     "thinPageFindings": [],
-    "correction": "Production OFF mode emits no ad containers, labels, or reserved space."
+    "correction": "Configured ad mode retains the accepted one-well small-screen/intermediate model and three-well wide-desktop model."
   },
   "networkDomainFindings": [
     {
@@ -390,21 +423,22 @@
     }
   ],
   "integrationFindings": {
-    "liveAdvertising": false,
-    "publisherId": false,
-    "adUnitId": false,
+    "liveAdvertising": true,
+    "publisherId": true,
+    "adUnitId": true,
     "verificationTag": false,
     "analytics": false,
     "cmp": false,
+    "consentManagement": false,
     "consentMode": false,
     "affiliateTracking": false,
     "siteCookieCode": false
   },
   "accountReadiness": {
-    "adsTxtPresent": false,
+    "adsTxtPresent": true,
     "apiDirectoryPresent": false,
-    "liveAdvertisingActive": false,
-    "verifiedPublisherIdExists": false,
+    "liveAdvertisingActive": true,
+    "verifiedPublisherIdExists": true,
     "cmpDecisionExists": false,
     "consentModeActive": false,
     "siteCookieCodeActive": false
@@ -415,8 +449,8 @@
       "publicLabel": "Coloring Pages for Kids",
       "classification": "Explicit child-oriented labeling",
       "audienceSignals": "Children are named directly; family, teacher, and caregiver use is also plausible.",
-      "currentThirdPartyCollection": "Routine hosting or asset request processing only; no live advertising or analytics was found.",
-      "currentAdvertisingState": "OFF; no ad elements",
+      "currentThirdPartyCollection": "Live AdSense units are configured on eligible content pages; no analytics integration was found.",
+      "currentAdvertisingState": "live",
       "futureAgeTreatmentDecisionRequired": true
     },
     {
@@ -424,8 +458,8 @@
       "publicLabel": "Easy Coloring Pages",
       "classification": "Mixed or ambiguous audience",
       "audienceSignals": "Difficulty wording can appeal to children, beginners, families, or adults.",
-      "currentThirdPartyCollection": "Routine hosting or asset request processing only; no live advertising or analytics was found.",
-      "currentAdvertisingState": "OFF; no ad elements",
+      "currentThirdPartyCollection": "Live AdSense units are configured on eligible content pages; no analytics integration was found.",
+      "currentAdvertisingState": "live",
       "futureAgeTreatmentDecisionRequired": true
     },
     {
@@ -433,8 +467,8 @@
       "publicLabel": "Style collections",
       "classification": "Mixed or ambiguous audience",
       "audienceSignals": "Visual and subject cues may appeal across ages.",
-      "currentThirdPartyCollection": "Routine hosting or asset request processing only; no live advertising or analytics was found.",
-      "currentAdvertisingState": "OFF; no ad elements",
+      "currentThirdPartyCollection": "Live AdSense units are configured on eligible content pages; no analytics integration was found.",
+      "currentAdvertisingState": "live",
       "futureAgeTreatmentDecisionRequired": true
     },
     {
@@ -442,8 +476,8 @@
       "publicLabel": "Subject and holiday collections",
       "classification": "Mixed or ambiguous audience",
       "audienceSignals": "Subjects commonly serve children, families, teachers, and adults.",
-      "currentThirdPartyCollection": "Routine hosting or asset request processing only; no live advertising or analytics was found.",
-      "currentAdvertisingState": "OFF; no ad elements",
+      "currentThirdPartyCollection": "Live AdSense units are configured on eligible content pages; no analytics integration was found.",
+      "currentAdvertisingState": "live",
       "futureAgeTreatmentDecisionRequired": true
     },
     {
@@ -451,8 +485,8 @@
       "publicLabel": "Detailed Coloring Pages for Adults",
       "classification": "Owner/legal review required",
       "audienceSignals": "The label names adults, while the surrounding library includes mixed-audience content.",
-      "currentThirdPartyCollection": "Routine hosting or asset request processing only; no live advertising or analytics was found.",
-      "currentAdvertisingState": "OFF; no ad elements",
+      "currentThirdPartyCollection": "Live AdSense units are configured on eligible content pages; no analytics integration was found.",
+      "currentAdvertisingState": "live",
       "futureAgeTreatmentDecisionRequired": true
     },
     {
@@ -460,8 +494,8 @@
       "publicLabel": "Printable Coloring Pages",
       "classification": "Mixed or ambiguous audience",
       "audienceSignals": "The general gallery combines audience, style, subject, and seasonal collections.",
-      "currentThirdPartyCollection": "Routine hosting or asset request processing only; no live advertising or analytics was found.",
-      "currentAdvertisingState": "OFF; no ad elements",
+      "currentThirdPartyCollection": "Live AdSense units are configured on eligible content pages; no analytics integration was found.",
+      "currentAdvertisingState": "live",
       "futureAgeTreatmentDecisionRequired": true
     },
     {
@@ -469,8 +503,8 @@
       "publicLabel": "Printable detail pages",
       "classification": "Owner/legal review required",
       "audienceSignals": "Audience signals depend on each page's title and collections.",
-      "currentThirdPartyCollection": "Routine hosting or asset request processing only; no live advertising or analytics was found.",
-      "currentAdvertisingState": "OFF; no ad elements",
+      "currentThirdPartyCollection": "Live AdSense units are configured on eligible content pages; no analytics integration was found.",
+      "currentAdvertisingState": "live",
       "futureAgeTreatmentDecisionRequired": true
     },
     {
@@ -478,8 +512,8 @@
       "publicLabel": "Site information",
       "classification": "Clearly general informational page",
       "audienceSignals": "These pages explain the site, policies, and contact details.",
-      "currentThirdPartyCollection": "Routine hosting or asset request processing only; no live advertising or analytics was found.",
-      "currentAdvertisingState": "OFF; no ad elements",
+      "currentThirdPartyCollection": "Live AdSense units are configured on eligible content pages; no analytics integration was found.",
+      "currentAdvertisingState": "live",
       "futureAgeTreatmentDecisionRequired": false
     }
   ],
@@ -545,34 +579,19 @@
       "adsenseReviewConsequence": "Rights and content-policy review remains incomplete."
     },
     {
-      "id": "ads.account_configuration",
-      "classification": "Ready after account configuration",
-      "description": "Verify account status, site verification, ads.txt, placement, and Auto Ads decisions in the authenticated provider interface.",
-      "routeOrConfiguration": "advertisement mode, publisher configuration, and ads.txt",
-      "exactCurrentFailure": "Verify account status, site verification, ads.txt, placement, and Auto Ads decisions in the authenticated provider interface.",
-      "codeFixable": false,
-      "requiresOwnerSuppliedFacts": true,
-      "requiresLegalReview": false,
-      "riskOfGuessing": "Could activate the wrong account, invalid slots, or an unverified ads.txt declaration.",
-      "implementationCompleted": false,
-      "ownerInputStillRequired": "Verified publisher ID, verification method, slot plan, Auto Ads decision, and account-supplied ads.txt line.",
-      "productionConsequence": "LIVE mode remains unavailable; OFF remains the production default.",
-      "adsenseReviewConsequence": "Account verification and serving cannot begin."
-    },
-    {
       "id": "ads.consent_and_age_configuration",
       "classification": "Ready after account configuration",
-      "description": "Choose ad personalization, regional consent, CMP, and age-treatment configuration before live advertising.",
+      "description": "Review and configure ad personalization, regional consent, CMP, and age treatment for live advertising.",
       "routeOrConfiguration": "advertising consent, personalization, CMP, and age-treatment configuration",
-      "exactCurrentFailure": "Choose ad personalization, regional consent, CMP, and age-treatment configuration before live advertising.",
+      "exactCurrentFailure": "Review and configure ad personalization, regional consent, CMP, and age treatment for live advertising.",
       "codeFixable": false,
       "requiresOwnerSuppliedFacts": true,
       "requiresLegalReview": true,
       "riskOfGuessing": "Could process advertising data under an incorrect consent or age-treatment mode.",
       "implementationCompleted": false,
       "ownerInputStillRequired": "Approved regional consent, personalization, CMP, and age-treatment decisions.",
-      "productionConsequence": "LIVE advertising remains blocked.",
-      "adsenseReviewConsequence": "Consent and serving configuration remains incomplete."
+      "productionConsequence": "Production advertising is active while consent and age-treatment review remains externally unresolved.",
+      "adsenseReviewConsequence": "Consent and serving configuration still requires owner and qualified review."
     },
     {
       "id": "external.production_validation",
@@ -618,29 +637,24 @@
     },
     {
       "order": 6,
-      "description": "Resolve the reported AdSense needs-action status without submitting the site during this task.",
-      "classification": "Ready after account configuration"
+      "description": "Confirm AdSense account and site-review state in the authenticated provider interface.",
+      "classification": "Ready after account confirmation"
     },
     {
       "order": 7,
-      "description": "Keep ads.txt absent until the complete account-supplied declaration is verified and publication is separately approved.",
-      "classification": "Blocked"
+      "description": "Review and configure audience, consent, CMP, and age treatment for production advertising in the authenticated provider interface.",
+      "classification": "Ready after account configuration"
     },
     {
       "order": 8,
-      "description": "Keep advertising OFF until audience, consent, CMP, age treatment, and account configuration are reviewed.",
-      "classification": "Blocked"
-    },
-    {
-      "order": 9,
-      "description": "Re-run network, accessibility, consent, age-treatment, and placement validation after any future advertising implementation.",
+      "description": "Re-run network, accessibility, consent, age-treatment, and placement validation after deployment.",
       "classification": "External verification required"
     }
   ],
   "externalActions": [
     "Complete any required legal or regulatory review.",
     "Complete AdSense account and site review.",
-    "Obtain account-provided publisher, verification, ad-unit, and ads.txt values.",
+    "Verify the configured publisher, ad units, and ads.txt status in the authenticated AdSense interface.",
     "Verify real advertising creatives, consent behavior, network requests, and asset-origin behavior in production."
   ],
   "counts": {
@@ -652,9 +666,9 @@
     "regularSitemapUrls": 6520,
     "imageSitemapPairs": 6352,
     "staticOutputs": 6920,
-    "totalFiles": 69730,
-    "totalBytes": 1140147572,
-    "staticJavascriptBytes": 751483,
+    "totalFiles": 69731,
+    "totalBytes": 1274534597,
+    "staticJavascriptBytes": 762184,
     "globallyUniquePrintableDisplayTitles": 6352,
     "globallyUniquePrintableMetadataTitles": 6352,
     "deferredRuntimeLeakage": 0,
@@ -667,28 +681,28 @@
   "payload": {
     "trustPages": {
       "/about": {
-        "htmlBytes": 23178,
-        "rscBytes": 12175
+        "htmlBytes": 24470,
+        "rscBytes": 12674
       },
       "/contact": {
-        "htmlBytes": 22426,
-        "rscBytes": 11855
+        "htmlBytes": 23042,
+        "rscBytes": 12013
       },
       "/privacy": {
-        "htmlBytes": 29865,
-        "rscBytes": 15630
+        "htmlBytes": 33134,
+        "rscBytes": 17106
       },
       "/terms": {
-        "htmlBytes": 27414,
-        "rscBytes": 14369
+        "htmlBytes": 29244,
+        "rscBytes": 15190
       },
       "/affiliate-disclosure": {
-        "htmlBytes": 21582,
-        "rscBytes": 11384
+        "htmlBytes": 22275,
+        "rscBytes": 11578
       },
       "/editorial-policy": {
-        "htmlBytes": 26443,
-        "rscBytes": 13856
+        "htmlBytes": 26965,
+        "rscBytes": 13975
       }
     }
   },

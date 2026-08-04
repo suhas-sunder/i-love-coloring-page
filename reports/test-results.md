@@ -1,5 +1,15 @@
 # Test results
 
+## Automatic advertising-mode milestone — 2026-08-04
+
+- `npm run typecheck` — passed.
+- `npm test` — passed: 173 tests, 0 failures.
+- `npm run build` — passed: 6,920 static routes generated with live units on eligible production pages.
+- `npm run validate:page-layout` and `npm run validate:refinement` — passed.
+- Chrome and Edge browser QA — passed: 110 of 110 route/viewport checks.
+- Local development HTML — five visible noninteractive placeholders, zero live units, zero AdSense URLs.
+- Production homepage HTML — five live logical slots and five configured AdSense units, zero development placeholder labels.
+
 ## Final refinement verification — 2026-07-21
 
 - `npm run typecheck` — passed.
@@ -25,7 +35,7 @@ Audit date: 2026-07-18
 - `npm run validate:export-safety` — 69,558 exported files scanned with zero findings.
 - `npm run validate:image-sitemap` — passed.
 - `npm run validate:crawl` — passed: 6,520 regular sitemap URLs, 6,352 image pairs, 362 indexable pagination routes, and zero mismatches.
-- `npm run validate:page-layout` — nine page families passed with advertising OFF and zero live units.
+- `npm run validate:page-layout` — nine page families passed; eligible production pages contained live units and prohibited pages remained ad-free.
 - Browser QA — desktop discovery, 390-pixel mobile search/menu, Easy/For Kids, Fantasy Abyss Wyrm, Privacy, and Terms passed with zero console warnings/errors.
 
 The repository has no configured formatter or lint script. TypeScript is the configured static-analysis check.

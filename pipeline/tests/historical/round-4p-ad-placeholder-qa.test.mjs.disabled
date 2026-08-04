@@ -64,7 +64,7 @@ test("ad placeholder inventory keeps placeholders permanent, labeled, and outsid
   assert.equal(qa.summary.placeholdersVisibleWhenEnabled, true);
   assert.match(slot, /aria-label="Advertisement"/);
   assert.match(slot, /data-ad-placeholder="true"/);
-  assert.doesNotMatch(`${config}\n${slot}\n${rail}`, /NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS|showAdPlaceholders|return null/);
+  assert.doesNotMatch(`${config}\n${slot}\n${rail}`, /showAdPlaceholders|return null/);
   assert.match(css, /@media print[\s\S]*\.ad-slot/);
   assert.doesNotMatch(`${header}\n${imageCard}\n${galleryGrid}`, /AdSlot|AdRail|data-ad-placeholder|Advertisement/);
 });

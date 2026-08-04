@@ -222,7 +222,7 @@ test("side rail safety reserves and constrains real ad space without changing pl
   assert.match(componentsCss, /\.ad-rail\s*{[\s\S]*overflow:\s*clip/);
   assert.match(componentsCss, /\.ad-rail \.ad-slot\s*{[\s\S]*max-width:\s*100%/);
   assert.match(componentsCss, /calc\(-1 \* \(var\(--ad-rail-width\) \+ var\(--ad-rail-gap\)\)\)/);
-  assert.doesNotMatch(`${adSlot}\n${adsConfig}`, /NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS|return null|showAdPlaceholders/);
+  assert.doesNotMatch(`${adSlot}\n${adsConfig}`, /return null|showAdPlaceholders/);
 });
 
 test("Round 4W keeps route, media, source, download, and ad boundaries intact", async () => {

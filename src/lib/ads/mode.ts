@@ -1,46 +1,37 @@
 import { ADSENSE_CLIENT_ID, ADSENSE_SLOT_IDS, hasValidAdSenseConfiguration } from "./config";
-import type { AdMode, ResolvedAdMode } from "./types";
+import type { AdMode, AdRuntimeEnvironment, ResolvedAdMode } from "./types";
 
-export function resolveAdMode(environment: NodeJS.ProcessEnv = process.env): ResolvedAdMode {
-  const requestedMode = environment.NEXT_PUBLIC_AD_MODE?.trim().toLowerCase() ?? null;
-  const defaultMode: AdMode = environment.NODE_ENV === "production" ? "off" : "placeholder";
-  const candidate = requestedMode || defaultMode;
+type ResolveAdModeOptions = {
+  runtimeEnvironment?: AdRuntimeEnvironment;
+  configurationValid?: boolean;
+};
 
-  if (candidate === "off") {
-    return resolved("off", requestedMode, "Advertising is explicitly disabled or production used the safe default.");
+export function resolveAdMode(options: ResolveAdModeOptions = {}): ResolvedAdMode {
+  const runtimeEnvironment = options.runtimeEnvironment ?? getRuntimeEnvironment();
+  const configurationValid = options.configurationValid ?? hasValidAdSenseConfiguration();
+
+  if (!configurationValid) {
+    return resolved("off", "Advertising was disabled because the centralized publisher or slot configuration is invalid.");
   }
 
-  if (candidate === "placeholder") {
-    return resolved("placeholder", requestedMode, "Stable development-only layout placeholders are enabled.");
-  }
-
-  if (candidate !== "live") {
-    return resolved("off", requestedMode, `Unknown ad mode "${candidate}" was rejected.`);
-  }
-
-  if (!hasValidAdSenseConfiguration()) {
-    return resolved("off", requestedMode, "LIVE was rejected because the centralized publisher or slot configuration is invalid.");
-  }
-
-  const regionalRequirementsSatisfied = environment.NEXT_PUBLIC_AD_REGIONAL_REQUIREMENTS_SATISFIED?.trim().toLowerCase() === "true";
-  if (!regionalRequirementsSatisfied) {
-    return resolved(
-      "off",
-      requestedMode,
-      "LIVE was rejected because a certified regional consent flow or reliable regional exclusion has not been confirmed.",
-    );
+  if (runtimeEnvironment !== "production") {
+    return resolved("placeholder", "Stable, non-interactive development placeholders are enabled without loading AdSense.");
   }
 
   return {
     mode: "live",
-    requestedMode,
     publisherId: ADSENSE_CLIENT_ID,
     slotIds: ADSENSE_SLOT_IDS,
-    regionalRequirementsSatisfied,
-    reason: "LIVE was explicitly requested with valid centralized configuration and a confirmed regional-requirements gate.",
+    reason: "Production uses the valid centralized AdSense publisher and slot configuration.",
   };
 }
 
-function resolved(mode: AdMode, requestedMode: string | null, reason: string): ResolvedAdMode {
-  return { mode, requestedMode, publisherId: null, slotIds: {}, regionalRequirementsSatisfied: false, reason };
+function getRuntimeEnvironment(): AdRuntimeEnvironment {
+  if (process.env.NODE_ENV === "production") return "production";
+  if (process.env.NODE_ENV === "test") return "test";
+  return "development";
+}
+
+function resolved(mode: AdMode, reason: string): ResolvedAdMode {
+  return { mode, publisherId: null, slotIds: {}, reason };
 }

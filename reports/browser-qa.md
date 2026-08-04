@@ -12,7 +12,7 @@ Fantasy Abyss Wyrm verified:
 - PNG is the truthful server state; JPG and WebP appear only after browser capability detection
 - Page details show verified collection, subject, orientation, and artwork dimensions only
 - eight deterministic related printables produce server-rendered image/title links
-- zero advertisement slots or labels in OFF mode
+- this July 18 capture predates the automatic production advertising correction; current ad behavior is verified by the August advertising report
 - footer and homepage metadata do not advertise browser-conditional formats
 
 ## Hub decisions

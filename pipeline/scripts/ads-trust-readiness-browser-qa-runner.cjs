@@ -5,7 +5,7 @@ const path = require("node:path");
 const { chromium } = require("playwright");
 
 const ROOT = process.cwd();
-const APP_URL = (process.env.ADS_TRUST_APP_URL || "http://127.0.0.1:3005").replace(/\/$/, "");
+const APP_URL = resolveAppUrl(process.argv.slice(2));
 const REVIEW_DIR = path.join(ROOT, "pipeline", "review", "ads-trust-readiness");
 const VIEWPORTS = [
   { width: 390, height: 844 },
@@ -31,6 +31,13 @@ const BROWSERS = [
   { id: "chrome", options: { channel: "chrome" } },
   { id: "edge", options: { channel: "msedge" } },
 ];
+
+function resolveAppUrl(arguments_) {
+  const index = arguments_.indexOf("--base-url");
+  const value = index >= 0 ? arguments_[index + 1] : "http://127.0.0.1:3005";
+  if (!value || !/^https?:\/\//i.test(value)) throw new Error("--base-url must be followed by an HTTP(S) URL.");
+  return value.replace(/\/$/, "");
+}
 
 main().catch((error) => {
   console.error(error?.stack || error?.message || String(error));

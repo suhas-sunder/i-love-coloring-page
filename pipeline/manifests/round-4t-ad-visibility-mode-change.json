@@ -13,6 +13,6 @@
   "explanation": {
     "whyRemoved": "Manual review showed no visible ad placeholders because the previous static export required a build-time flag. Round 4T makes the future ad wells part of the normal static layout.",
     "replacementBehavior": "AdSlot and AdRail render permanent Advertisement-labeled wells by default. Future live AdSense code should replace the shell inside the same stable slot IDs after a separate live-ad round.",
-    "oldFlagStatus": "NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS is no longer read by runtime ad components."
+    "oldFlagStatus": "The historical project-specific placeholder switch is no longer read by runtime ad components."
   }
 }

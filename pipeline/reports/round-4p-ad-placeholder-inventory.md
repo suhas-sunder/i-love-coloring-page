@@ -5,7 +5,7 @@
 - Current code slot definitions: 7
 - Round 4M planned slot count: 8
 - Hidden by default: true
-- Enabled by: NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS=1
+- Historical local placeholder switch: removed
 - Label text: Advertisement
 - Live ad code present: false
 - Publisher or client IDs present: false

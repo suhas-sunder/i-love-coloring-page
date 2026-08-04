@@ -40,7 +40,7 @@ async function main() {
     status: "running",
     localAppUrl: BASE_URL,
     localMediaBaseUrl: "http://127.0.0.1:4175/coloring-pages",
-    nextPublicShowAdPlaceholders: process.env.NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS || null,
+    advertisingMode: "automatic",
     pagesInspected: PAGES.map((page) => page.pagePath),
     viewportsInspected: VIEWPORTS,
     screenshotRoots: {

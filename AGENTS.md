@@ -222,7 +222,7 @@ This repository is a mature static Next.js coloring page gallery with an accepte
 - Ads must be planned as policy-safe slots, not improvised in content.
 - Do not add live AdSense code, ad scripts, ad client values, or publisher values until a later prompt explicitly requests live ad integration.
 - Ad placeholders are visible by default as permanent layout wells until live ads replace them.
-- Do not rely on `NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS` to show ad placeholders.
+- Do not rely on a project-specific environment variable to show ad placeholders.
 - Ad placeholders must be clearly labeled `Advertisement`.
 - Do not place ads or ad placeholders inside gallery grids as fake cards.
 - Do not place ads or ad placeholders near Print or Download controls.

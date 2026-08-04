@@ -6,7 +6,7 @@ import path from "node:path";
 
 const ROOT = process.cwd();
 const OUT = path.join(ROOT, "out");
-const REPORT_DATE = "2026-08-02";
+const REPORT_DATE = "2026-08-04";
 const EXPECTED_ADS_TXT = "google.com, pub-4810616735714570, DIRECT, f08c47fec0942fa0";
 const MANIFEST_PATH = "pipeline/manifests/trust-ads-readiness.json";
 const REPORT_PATH = "pipeline/reports/trust-ads-readiness.md";
@@ -36,11 +36,11 @@ const outFiles = listFiles(OUT);
 const activeSourceText = readActiveSourceText();
 const representativeOutput = readRepresentativeOutput(runtime.records[0]);
 const integrationScanText = `${activeSourceText}\n${representativeOutput.text}\n${readStaticRuntimeText(outFiles)}`;
-const productionAdMode = (process.env.NEXT_PUBLIC_AD_MODE || "off").trim().toLowerCase();
+const productionAdMode = detectAdvertisingMode(representativeOutput.text);
 const consentManagementFinding = findPattern(integrationScanText, /__tcfapi|cookiebot|onetrust|consentmanager|fundingchoices|quantcast.*choice/i);
 
 const integrationFindings = {
-  liveAdvertising: productionAdMode === "live" && findPattern(representativeOutput.text, /adsbygoogle|pagead2\.googlesyndication|google_ad_client|data-ad-client\s*=|<script[^>]+doubleclick/i),
+  liveAdvertising: productionAdMode === "live" && findPattern(representativeOutput.text, /data-ad-client\s*=|class="ad-slot-live-unit"/i),
   publisherId: findPattern(integrationScanText, /ca-pub-[0-9]{10,}/i),
   adUnitId: ["5574432869", "5115981872", "9929324856", "2489818539", "5382861174"].every((slotId) => integrationScanText.includes(slotId)),
   verificationTag: findPattern(integrationScanText, /google-adsense-account|google-site-verification/i),
@@ -97,7 +97,7 @@ const blockingIssues = [
   ...(identity.readiness.verifiedPublisherIdExists && exactAdsTxtRecord
     ? []
     : [blocker("ads.account_configuration", "Ready after account configuration", "Verify account status, site verification, ads.txt, placement, and Auto Ads decisions in the authenticated provider interface.")]),
-  blocker("ads.consent_and_age_configuration", "Ready after account configuration", "Choose ad personalization, regional consent, CMP, and age-treatment configuration before live advertising."),
+  blocker("ads.consent_and_age_configuration", "Ready after account configuration", "Review and configure ad personalization, regional consent, CMP, and age treatment for live advertising."),
   blocker("external.production_validation", "External verification required", "Confirm the Netlify production and rollback workflow, then validate the deployed revision, Search Console state, and any later account behavior externally."),
 ];
 const trustGates = blockingIssues.map(enrichTrustGate);
@@ -109,7 +109,7 @@ const ownerActions = [
   action(4, "Confirm the exact Netlify site, production branch, deployment method, and rollback method in the authenticated Netlify interface.", "Ready after account confirmation"),
   action(5, "Confirm Search Console property, verification, sitemap, coverage, security, and manual-action status in Search Console.", "Ready after account confirmation"),
   action(6, "Confirm AdSense account and site-review state in the authenticated provider interface.", "Ready after account confirmation"),
-  action(7, "Keep advertising requests OFF until audience, consent, CMP, and age-treatment configuration are reviewed.", "Blocked"),
+  action(7, "Review and configure audience, consent, CMP, and age treatment for production advertising in the authenticated provider interface.", "Ready after account configuration"),
   action(8, "Re-run network, accessibility, consent, age-treatment, and placement validation after deployment.", "External verification required"),
 ];
 
@@ -277,7 +277,7 @@ function auditTrustRoute(route) {
     lastUpdated,
     contactExpected: route.contactExpected,
     contactEmailPresent,
-    logicalAdvertisementSlots: countMatches(html, /data-ad-slot="/g),
+    logicalAdvertisementSlots: extractLogicalSlotIds(html).length,
     findings: {
       visibleDraftLanguage: /draft policy|draft terms|draft disclosure|future round|requires legal review before launch|under construction/i.test(visible),
       placeholderContact: /\[email protected\]|example\.com|contact details coming soon/i.test(visible),
@@ -356,7 +356,7 @@ function placement(family, routePath, expectedLogicalSlots, expectedLayout, rela
   const html = relativeOverride
     ? readFileSync(path.join(OUT, relativeOverride), "utf8")
     : readOutputHtml(routePath);
-  const slotIds = [...html.matchAll(/data-ad-slot="([^"]+)"/g)].map((match) => match[1]);
+  const slotIds = extractLogicalSlotIds(html);
   return {
     family,
     route: routePath,
@@ -399,8 +399,8 @@ function visibleModel(width, height) {
 
 function buildAgeTreatmentFindings() {
   const common = {
-    currentThirdPartyCollection: "Routine hosting or asset request processing only; no live advertising or analytics was found.",
-    currentAdvertisingState: productionAdMode === "off" ? "OFF; no ad elements" : productionAdMode,
+    currentThirdPartyCollection: "Live AdSense units are configured on eligible content pages; no analytics integration was found.",
+    currentAdvertisingState: productionAdMode,
     futureAgeTreatmentDecisionRequired: true,
   };
   return [
@@ -596,16 +596,16 @@ function enrichTrustGate(entry) {
       codeFixable: false, ownerFacts: true, legalReview: false,
       riskOfGuessing: "Could activate the wrong account, invalid slots, or an unverified ads.txt declaration.",
       ownerInput: "Verified publisher ID, verification method, slot plan, Auto Ads decision, and account-supplied ads.txt line.",
-      productionConsequence: "LIVE mode remains unavailable; OFF remains the production default.",
-      adsenseConsequence: "Account verification and serving cannot begin.",
+      productionConsequence: "The automatic production mode must not serve with invalid publisher or slot configuration.",
+      adsenseConsequence: "Account verification and serving require the confirmed account configuration.",
     },
     "ads.consent_and_age_configuration": {
       routeOrConfiguration: "advertising consent, personalization, CMP, and age-treatment configuration",
       codeFixable: false, ownerFacts: true, legalReview: true,
       riskOfGuessing: "Could process advertising data under an incorrect consent or age-treatment mode.",
       ownerInput: "Approved regional consent, personalization, CMP, and age-treatment decisions.",
-      productionConsequence: "LIVE advertising remains blocked.",
-      adsenseConsequence: "Consent and serving configuration remains incomplete.",
+      productionConsequence: "Production advertising is active while consent and age-treatment review remains externally unresolved.",
+      adsenseConsequence: "Consent and serving configuration still requires owner and qualified review.",
     },
     "external.production_validation": {
       routeOrConfiguration: "deployed production site and advertising account",
@@ -647,7 +647,7 @@ function renderOwnerInputRequired(gates, identity) {
 }
 
 function renderProductionReadinessStatus({ technicalPassed, productionReady, trustGates, accountFiles }) {
-  return `# Production readiness status\n\n- Ordinary technical build validation: ${technicalPassed ? "PASS" : "FAIL"}\n- Production readiness: ${productionReady ? "PASS" : "BLOCKED"}\n- Remaining owner/legal/account/external gates: ${trustGates.length}\n- LIVE advertising enabled in the default build: no\n- Verified ads.txt paths: ${accountFiles.adsTxt.join(", ") || "none"}\n\n\`npm run build\` validates and exports the static application without requiring invented owner facts. \`npm run verify:production-readiness\` adds the remaining external, owner, legal, and account gates and is expected to fail until they are resolved.\n`;
+  return `# Production readiness status\n\n- Ordinary technical build validation: ${technicalPassed ? "PASS" : "FAIL"}\n- Production readiness: ${productionReady ? "PASS" : "BLOCKED"}\n- Remaining owner/legal/account/external gates: ${trustGates.length}\n- LIVE advertising enabled in the default build: ${productionAdMode === "live" ? "yes" : "no"}\n- Verified ads.txt paths: ${accountFiles.adsTxt.join(", ") || "none"}\n\n\`npm run build\` validates and exports the static application without requiring invented owner facts. \`npm run verify:production-readiness\` adds the remaining external, owner, legal, and account gates and is expected to fail until they are resolved.\n`;
 }
 
 function csvCell(value) {
@@ -717,5 +717,17 @@ function buildMarkdown(value) {
     : "The area proxy uses the viewport as a conservative lower bound; representative full documents contain additional content below the fold. Print and Download controls remain separated from configured ad slots.";
   const liveScriptStatus = value.integrationFindings.liveAdvertising ? "present" : "absent";
   const adsTxtStatus = value.adsTxtStatus.exactAuthorizedSellerRecord ? "present with the exact confirmed authorized-seller record" : "missing or mismatched";
-  return `# Trust and Advertising Readiness\n\nReport date: ${value.reportDate}\n\nThis is a factual local readiness review. It does not certify legal compliance or guarantee advertising-account approval.\n\n## Trust pages\n\n| Route | H1 count | Logical ad slots | Last updated | Result |\n| --- | ---: | ---: | --- | --- |\n${trustRows}\n\nThe verified public contact is ${value.publicContactStatus.publicContactEmail}. Metadata titles and descriptions are unique, canonicals are self-referencing, footer links remain, and all six trust routes remain indexable and sitemap-eligible.\n\n## Technology and network inventory\n\n| Domain | Purpose | Page families | Initial load | Blocker |\n| --- | --- | --- | --- | --- |\n${networkRows}\n\nSearch-data requests are same-origin and begin only after search intent. Fonts are emitted as same-origin static assets. Schema.org URLs are structured-data identifiers, not browser requests. ${advertisingSummary} No analytics, consent-management, affiliate-tracking, or site-cookie code was found in active source or representative static output.\n\n## Audience and age-treatment review\n\n| Route group | Classification | Signals |\n| --- | --- | --- |\n${audienceRows}\n\nNo legal audience classification is made. The owner and qualified reviewer must decide treatment before live advertising or interactive collection is enabled.\n\n## Advertisement placement and density\n\n| Page family | Logical slots | Layout | Meaningful publisher content |\n| --- | ---: | --- | --- |\n${placementRows}\n\n| Viewport | Full-page visible slots | Condensed visible slots | Reserved pixel area | Publisher-content area proxy |\n| --- | ---: | ---: | ---: | ---: |\n${viewportRows}\n\n${placementSummary} The 404 route has no ad placement.\n\n## Account readiness\n\n- Live advertising scripts: ${liveScriptStatus}\n- Publisher ID and ad-unit IDs: ${value.integrationFindings.publisherId || value.integrationFindings.adUnitId ? "present; verification required" : "absent"}\n- Verification tag: ${value.integrationFindings.verificationTag ? "present; verification required" : "absent"}\n- ads.txt: ${adsTxtStatus}\n- CMP and Consent Mode: ${value.integrationFindings.consentManagement || value.integrationFindings.consentMode ? "present; verification required" : "absent"}\n- Age-treatment decision: ${value.ageTreatmentDecisionStatus.decided ? "recorded" : "not recorded"}\n- Affiliate tracking: ${value.integrationFindings.affiliateTracking ? "present; verification required" : "absent"}\n\n## Blocking issues\n\n${blockers}\n\n## Owner checklist\n\n${actions}\n\n## Counts and preservation\n\n- Runtime printables: ${value.counts.runtimePrintables.toLocaleString("en-US")}\n- Public hubs: ${value.counts.publicHubs.toLocaleString("en-US")}\n- Pagination routes: ${value.counts.paginationRoutes.toLocaleString("en-US")}\n- Regular sitemap URLs: ${value.counts.regularSitemapUrls.toLocaleString("en-US")}\n- Image sitemap pairs: ${value.counts.imageSitemapPairs.toLocaleString("en-US")}\n- Static outputs: ${value.counts.staticOutputs.toLocaleString("en-US")}\n- Frozen route-field hash: ${value.preservation.frozenRouteFieldHash}\n- Hub-membership hash: ${value.preservation.hubMembershipHash}\n\n## Owner command\n\n\`npm run generate:trust-readiness\`\n`;
+  return `# Trust and Advertising Readiness\n\nReport date: ${value.reportDate}\n\nThis is a factual local readiness review. It does not certify legal compliance or guarantee advertising-account approval.\n\n## Trust pages\n\n| Route | H1 count | Logical ad slots | Last updated | Result |\n| --- | ---: | ---: | --- | --- |\n${trustRows}\n\nThe verified public contact is ${value.publicContactStatus.publicContactEmail}. Metadata titles and descriptions are unique, canonicals are self-referencing, footer links remain, and all six trust routes remain indexable and sitemap-eligible.\n\n## Technology and network inventory\n\n| Domain | Purpose | Page families | Initial load | Blocker |\n| --- | --- | --- | --- | --- |\n${networkRows}\n\nSearch-data requests are same-origin and begin only after search intent. Fonts are emitted as same-origin static assets. Schema.org URLs are structured-data identifiers, not browser requests. ${advertisingSummary} No analytics, consent-management, affiliate-tracking, or site-cookie code was found in active source or representative static output.\n\n## Audience and age-treatment review\n\n| Route group | Classification | Signals |\n| --- | --- | --- |\n${audienceRows}\n\nNo legal audience classification is made. The owner and qualified reviewer must review the live-advertising treatment for the site and its child-oriented or mixed-audience collections.\n\n## Advertisement placement and density\n\n| Page family | Logical slots | Layout | Meaningful publisher content |\n| --- | ---: | --- | --- |\n${placementRows}\n\n| Viewport | Full-page visible slots | Condensed visible slots | Reserved pixel area | Publisher-content area proxy |\n| --- | ---: | ---: | ---: | ---: |\n${viewportRows}\n\n${placementSummary} The 404 route has no ad placement.\n\n## Account readiness\n\n- Live advertising units in production output: ${liveScriptStatus}\n- Publisher ID and ad-unit IDs: ${value.integrationFindings.publisherId || value.integrationFindings.adUnitId ? "present; verification required" : "absent"}\n- Verification tag: ${value.integrationFindings.verificationTag ? "present; verification required" : "absent"}\n- ads.txt: ${adsTxtStatus}\n- CMP and Consent Mode: ${value.integrationFindings.consentManagement || value.integrationFindings.consentMode ? "present; verification required" : "absent"}\n- Age-treatment decision: ${value.ageTreatmentDecisionStatus.decided ? "recorded" : "not recorded"}\n- Affiliate tracking: ${value.integrationFindings.affiliateTracking ? "present; verification required" : "absent"}\n\n## Blocking issues\n\n${blockers}\n\n## Owner checklist\n\n${actions}\n\n## Counts and preservation\n\n- Runtime printables: ${value.counts.runtimePrintables.toLocaleString("en-US")}\n- Public hubs: ${value.counts.publicHubs.toLocaleString("en-US")}\n- Pagination routes: ${value.counts.paginationRoutes.toLocaleString("en-US")}\n- Regular sitemap URLs: ${value.counts.regularSitemapUrls.toLocaleString("en-US")}\n- Image sitemap pairs: ${value.counts.imageSitemapPairs.toLocaleString("en-US")}\n- Static outputs: ${value.counts.staticOutputs.toLocaleString("en-US")}\n- Frozen route-field hash: ${value.preservation.frozenRouteFieldHash}\n- Hub-membership hash: ${value.preservation.hubMembershipHash}\n\n## Owner command\n\n\`npm run generate:trust-readiness\`\n`;
+}
+
+function detectAdvertisingMode(html) {
+  if (/data-ad-mode="live"/.test(html)) return "live";
+  if (/data-ad-mode="placeholder"/.test(html)) return "placeholder";
+  return "off";
+}
+
+function extractLogicalSlotIds(html) {
+  return [...html.matchAll(/data-ad-slot="([^"]+)"/g)]
+    .map((match) => match[1])
+    .filter((slotId) => !/^\d{10}$/.test(slotId));
 }

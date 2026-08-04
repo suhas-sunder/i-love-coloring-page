@@ -52,7 +52,7 @@ export default function AffiliateDisclosurePage() {
 
       <TrustSection title="Advertising is separate">
         <p>
-          Google AdSense display advertising, when enabled, is separate from affiliate marketing. A display ad is not an affiliate link, and its
+          Google AdSense display advertising is separate from affiliate marketing. A display ad is not an affiliate link, and its
           presence does not mean that the site recommends or receives an affiliate commission from the advertised product or service. Advertising
           remains subject to the site&apos;s eligibility, regional, and privacy controls.
         </p>

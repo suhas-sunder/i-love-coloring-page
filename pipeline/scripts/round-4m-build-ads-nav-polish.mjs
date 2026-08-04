@@ -287,7 +287,7 @@ function buildPolicyRules() {
       "Never style ad placeholders as buttons, cards, or gallery items",
     ],
     placeholderVisibilityRules: [
-      "Hidden by default unless NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS=1 or true",
+      "Historical implementation used an explicit local placeholder switch",
       "Visible placeholders are clearly labeled Advertisement",
       "No external requests, scripts, ad client values, or live ad behavior",
       "Placeholders are hidden in print styles",
@@ -305,7 +305,7 @@ function buildAdSlotMap() {
       liveAdCodeAdded: false,
       desktopRailsSticky: false,
       hiddenByDefault: true,
-      enabledByEnvFlag: "NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS=1",
+      enabledByEnvFlag: "historical switch removed",
     },
     slots: AD_SLOTS,
     forbiddenPlacements: [
@@ -366,7 +366,7 @@ function buildAdImplementation() {
       configCreated: ["src/lib/ads/config.ts", "src/lib/ads/types.ts"],
       liveAdCodeAdded: false,
       hiddenByDefault: true,
-      enabledByEnvFlag: "NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS=1",
+      enabledByEnvFlag: "historical switch removed",
       externalRequestsAdded: false,
       trackingAdded: false,
       printStylesHideAds: true,
@@ -444,7 +444,7 @@ function buildBrowserQaResults(screenshotPaths) {
     checks: [
       "real media rendering",
       "ad placeholders hidden by default",
-      "ad placeholders visible with NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS=1",
+      "ad placeholders visible in the historical enabled pass",
       "navigation wraps without overflow",
       "no app/api route",
     ],

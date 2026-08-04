@@ -11,18 +11,39 @@ const indexation = JSON.parse(await read("src/config/indexation-manifest.json"))
 const hubCounts = JSON.parse(await read("src/generated/coloring/runtime-hub-counts.json"));
 const adsConfigModuleUrl = await transpileTypeScriptToDataUrl("src/lib/ads/config.ts");
 const mode = await importTypeScript("src/lib/ads/mode.ts", { "./config": adsConfigModuleUrl });
+const eligibility = await importTypeScript("src/lib/ads/eligibility.ts", { "./config": adsConfigModuleUrl });
 const assets = await importTypeScript("src/lib/coloring/assets.ts");
 
-test("advertising defaults safely and requires explicit complete LIVE configuration", () => {
-  assert.equal(mode.resolveAdMode({ NODE_ENV: "production" }).mode, "off");
-  assert.equal(mode.resolveAdMode({ NODE_ENV: "development" }).mode, "placeholder");
-  assert.equal(mode.resolveAdMode({ NODE_ENV: "production", NEXT_PUBLIC_AD_MODE: "placeholder" }).mode, "placeholder");
-  assert.equal(mode.resolveAdMode({ NODE_ENV: "production", NEXT_PUBLIC_AD_MODE: "live" }).mode, "off");
-  assert.equal(mode.resolveAdMode({
-    NODE_ENV: "production",
-    NEXT_PUBLIC_AD_MODE: "live",
-    NEXT_PUBLIC_AD_REGIONAL_REQUIREMENTS_SATISFIED: "true",
-  }).mode, "live");
+test("advertising mode follows the injected runtime environment without custom gates", () => {
+  const development = mode.resolveAdMode({ runtimeEnvironment: "development" });
+  const tests = mode.resolveAdMode({ runtimeEnvironment: "test" });
+  const production = mode.resolveAdMode({ runtimeEnvironment: "production" });
+  const invalid = mode.resolveAdMode({ runtimeEnvironment: "production", configurationValid: false });
+
+  assert.equal(development.mode, "placeholder");
+  assert.equal(tests.mode, "placeholder");
+  assert.equal(production.mode, "live");
+  assert.equal(production.publisherId, "ca-pub-4810616735714570");
+  assert.equal(production.slotIds["home-header-banner"], "5574432869");
+  assert.equal(invalid.mode, "off");
+  assert.equal(invalid.publisherId, null);
+});
+
+test("live slot eligibility rejects invalid, hidden, distant, and duplicate units", () => {
+  const eligibleInput = {
+    slotId: "home-header-banner",
+    pageFamily: "home",
+    viewportWidth: 1440,
+    configurationValid: true,
+    actuallyVisible: true,
+    nearViewport: true,
+    alreadyInitialized: false,
+  };
+  assert.deepEqual(eligibility.evaluateAdSlotEligibility(eligibleInput), { eligible: true, reason: "eligible" });
+  assert.equal(eligibility.evaluateAdSlotEligibility({ ...eligibleInput, configurationValid: false }).reason, "invalid-configuration");
+  assert.equal(eligibility.evaluateAdSlotEligibility({ ...eligibleInput, actuallyVisible: false }).reason, "css-hidden");
+  assert.equal(eligibility.evaluateAdSlotEligibility({ ...eligibleInput, nearViewport: false }).reason, "outside-load-range");
+  assert.equal(eligibility.evaluateAdSlotEligibility({ ...eligibleInput, alreadyInitialized: true }).reason, "already-initialized");
 });
 
 test("LIVE initialization is idempotent per element and permits a new route element", async () => {
@@ -34,7 +55,7 @@ test("LIVE initialization is idempotent per element and permits a new route elem
   assert.match(source, /evaluateAdSlotEligibility/);
 });
 
-test("OFF and PLACEHOLDER cannot load the external script or render a live unit", async () => {
+test("invalid configuration and development placeholders cannot load the external script or render a live unit", async () => {
   const script = await read("src/components/ads/AdSenseScript.tsx");
   const slot = await read("src/components/ads/AdSlot.tsx");
   assert.match(script, /configuration\.mode !== "live"/);

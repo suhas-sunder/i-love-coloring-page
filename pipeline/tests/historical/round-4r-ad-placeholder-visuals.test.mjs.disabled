@@ -117,7 +117,7 @@ test("ad placeholder visuals are polished without live ad code or policy-risk st
   assert.match(adSlot, /data-ad-slot=\{slot\.slotId\}/);
   assert.doesNotMatch(adSlot, /Future ad slot|Sponsored Links|fake ad|ad creative/i);
   assert.match(adRail, /slotId: AdSlotId/);
-  assert.doesNotMatch(`${adConfig}\n${adSlot}\n${adRail}`, /NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS|showAdPlaceholders|return null/);
+  assert.doesNotMatch(`${adConfig}\n${adSlot}\n${adRail}`, /showAdPlaceholders|return null/);
 
   assert.match(adCss, /background:\s*var\(--color-[^)]+\)/);
   assert.match(adCss, /\.ad-slot-label[\s\S]*Advertisement|\.ad-slot-label/);

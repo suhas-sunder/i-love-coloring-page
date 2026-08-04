@@ -5,9 +5,7 @@ export type AdSlotEligibilityInput = {
   slotId: AdSlotId;
   pageFamily: AdPageFamily;
   viewportWidth: number;
-  liveAdvertisingEnabled: boolean;
   configurationValid: boolean;
-  regionalRequirementsSatisfied: boolean;
   actuallyVisible: boolean;
   nearViewport: boolean;
   alreadyInitialized: boolean;
@@ -17,9 +15,7 @@ export type AdSlotEligibilityDecision = {
   eligible: boolean;
   reason:
     | "eligible"
-    | "live-disabled"
     | "invalid-configuration"
-    | "regional-requirements"
     | "page-family"
     | "breakpoint"
     | "css-hidden"
@@ -28,9 +24,7 @@ export type AdSlotEligibilityDecision = {
 };
 
 export function evaluateAdSlotEligibility(input: AdSlotEligibilityInput): AdSlotEligibilityDecision {
-  if (!input.liveAdvertisingEnabled) return denied("live-disabled");
   if (!input.configurationValid) return denied("invalid-configuration");
-  if (!input.regionalRequirementsSatisfied) return denied("regional-requirements");
 
   const slot = getAdSlotDefinition(input.slotId);
   if (!slot.supportedPageFamilies.includes(input.pageFamily)) return denied("page-family");

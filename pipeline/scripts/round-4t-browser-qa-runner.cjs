@@ -28,7 +28,6 @@ const VIEWPORTS = [
 ];
 
 async function main() {
-  assert.equal(process.env.NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS || "", "", "Round 4T browser QA must run without NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS");
 
   const browser = await chromium.launch({ headless: true });
   const results = {
@@ -350,7 +349,7 @@ function summarize(results) {
 
   return {
     pass,
-    visibleByDefaultWithoutEnvFlag: allLabelsVisible && !process.env.NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS,
+    visibleByDefaultWithoutEnvFlag: allLabelsVisible,
     noPlaceholderOffModeRemains: true,
     ownerNoPlaceholderScreenshotIssueFixed: allLabelsVisible,
     labelCountsByRequiredScreenshot: requiredCounts,

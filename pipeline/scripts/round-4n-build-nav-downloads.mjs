@@ -34,7 +34,7 @@ const ROUND4M_COMMIT = "b90b4a004b647ccb1274637d4eb8c36387f965fd";
 const LOCAL_PREVIEW_COMMANDS = [
   "python -m http.server 4175 --bind 127.0.0.1 --directory pipeline/r2-upload",
   "$env:NEXT_PUBLIC_COLORING_ASSET_BASE_URL='http://127.0.0.1:4175/coloring-pages'; npm run build; npx serve out -l 3005",
-  "$env:NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS='1'; $env:NEXT_PUBLIC_COLORING_ASSET_BASE_URL='http://127.0.0.1:4175/coloring-pages'; npm run build; npx serve out -l 3005",
+  "$env:NEXT_PUBLIC_COLORING_ASSET_BASE_URL='http://127.0.0.1:4175/coloring-pages'; npm run build; npx serve out -l 3005",
 ];
 const BROWSER_QA_PAGES = [
   "/",

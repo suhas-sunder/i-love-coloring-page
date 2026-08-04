@@ -6,11 +6,8 @@
 # - NEXT_PUBLIC_SITE_URL
 # - NEXT_PUBLIC_COLORING_ASSET_BASE_URL
 # - NEXT_PUBLIC_SITE_NAME
-# Advertising remains OFF unless both values below are explicitly configured.
-# Set the regional gate to true only after a Google-certified CMP or another
-# reliable regional exclusion has been implemented and verified:
-# - NEXT_PUBLIC_AD_MODE=live
-# - NEXT_PUBLIC_AD_REGIONAL_REQUIREMENTS_SATISFIED=true
+# Advertising behavior follows the standard Next.js runtime environment:
+# local development shows placeholders and production builds emit live units.
 
 [build]
   command = "npm run build"

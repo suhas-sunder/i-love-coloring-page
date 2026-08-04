@@ -680,7 +680,7 @@ function buildProjectContext() {
     currentPublicDownloadFormats: /Download PNG/.test(imageCard) ? ["PNG"] : [],
     visibleSvgDownloadOptions: /Download SVG|SVG download/i.test(imageCard),
     visibleJpegWebpOptions: /Download JPG|Download JPEG|Download WebP/i.test(imageCard),
-    adWellsVisibleByDefault: !/NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS|showAdPlaceholders|return null/.test(`${readText("src/components/ads/AdSlot.tsx")}\n${readText("src/components/ads/AdRail.tsx")}\n${readText("src/lib/ads/config.ts")}`),
+    adWellsVisibleByDefault: !/showAdPlaceholders|return null/.test(`${readText("src/components/ads/AdSlot.tsx")}\n${readText("src/components/ads/AdRail.tsx")}\n${readText("src/lib/ads/config.ts")}`),
     noLiveAdCode: !/adsbygoogle|pagead2\.googlesyndication|google_ad_client|ca-pub-|googlesyndication/i.test(source),
     noSeoImplementationStarted: !/application\/ld\+json|ImageObject|BreadcrumbList|FAQPage|image-sitemap|opengraph-image/i.test(source),
   };

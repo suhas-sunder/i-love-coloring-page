@@ -129,8 +129,8 @@ function buildVisualAudit(source) {
       labelText: "Advertisement",
       hiddenByDefault: /if \(!showAdPlaceholders\(\)\) return null/.test(source.adSlot)
         && /if \(!showAdPlaceholders\(\)\) return null/.test(source.adRail),
-      enabledByEnvFlag: "NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS=1",
-      buildTimeFlagRead: /process\.env\.NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS/.test(source.adsConfig),
+      enabledByEnvFlag: "historical switch removed",
+      buildTimeFlagRead: false,
       tooUglyBefore: true,
       tooSubtleBefore: false,
       tooNoisyBefore: true,

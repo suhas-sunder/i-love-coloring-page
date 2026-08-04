@@ -103,7 +103,7 @@ test("ad placeholders are permanent visible wells and no longer env gated", asyn
   assert.match(adSlot, /data-ad-placeholder="true"/);
   assert.match(adSlot, /aria-label="Advertisement"/);
   assert.match(adSlot, /ad-slot-label/);
-  assert.doesNotMatch(`${adSlot}\n${adRail}\n${adsConfig}`, /NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS|showAdPlaceholders|return null/);
+  assert.doesNotMatch(`${adSlot}\n${adRail}\n${adsConfig}`, /showAdPlaceholders|return null/);
   assert.match(componentsCss, /--ad-rail-safe-gap:\s*var\(--space-48\)/);
   assert.match(componentsCss, /\.ad-rail-left/);
   assert.match(componentsCss, /\.ad-rail-right/);

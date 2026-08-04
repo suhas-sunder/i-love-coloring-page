@@ -114,7 +114,7 @@ test("responsive ad density model exposes the expected visible ad count by viewp
   assert.match(componentsCss, /@media \(max-width:\s*1739px\)[\s\S]*\.ad-rail/);
   assert.match(componentsCss, /--ad-rail-safe-gap:\s*var\(--space-48\)/);
   assert.match(adSlot, /aria-label="Advertisement"/);
-  assert.doesNotMatch(`${adSlot}\n${adRail}\n${adsConfig}`, /NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS|showAdPlaceholders|return null/);
+  assert.doesNotMatch(`${adSlot}\n${adRail}\n${adsConfig}`, /showAdPlaceholders|return null/);
 });
 
 test("Round 4U keeps ads out of forbidden surfaces and preserves nav behavior", async () => {

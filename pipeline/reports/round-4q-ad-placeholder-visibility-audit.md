@@ -1,7 +1,7 @@
 # Round 4Q Ad Placeholder Visibility Audit
 
 - Hidden by default: true
-- Enabled by: NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS=1
+- Historical local placeholder switch: removed
 - Build-time flag read: true
 - Label text: Advertisement
 - Label text visibly styled: true

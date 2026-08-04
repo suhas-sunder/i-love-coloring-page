@@ -1,6 +1,6 @@
 # Trust and Advertising Readiness
 
-Report date: 2026-07-21
+Report date: 2026-08-04
 
 This is a factual local readiness review. It does not certify legal compliance or guarantee advertising-account approval.
 
@@ -10,10 +10,10 @@ This is a factual local readiness review. It does not certify legal compliance o
 | --- | ---: | ---: | --- | --- |
 | /about | 1 | 0 | Not displayed | Pass |
 | /contact | 1 | 0 | Not displayed | Pass |
-| /privacy | 1 | 0 | July 21, 2026 | Pass |
-| /terms | 1 | 0 | July 21, 2026 | Pass |
-| /affiliate-disclosure | 1 | 0 | July 21, 2026 | Pass |
-| /editorial-policy | 1 | 0 | July 21, 2026 | Pass |
+| /privacy | 1 | 0 | August 4, 2026 | Pass |
+| /terms | 1 | 0 | August 4, 2026 | Pass |
+| /affiliate-disclosure | 1 | 0 | August 4, 2026 | Pass |
+| /editorial-policy | 1 | 0 | August 4, 2026 | Pass |
 
 The verified public contact is admin@ilovecoloringpage.com. Metadata titles and descriptions are unique, canonicals are self-referencing, footer links remain, and all six trust routes remain indexable and sitemap-eligible.
 
@@ -23,7 +23,7 @@ The verified public contact is admin@ilovecoloringpage.com. Metadata titles and 
 | --- | --- | --- | --- | --- |
 | assets.ilovecoloringpage.com | Required site asset delivery | gallery, home, hub, hub-pagination, printable | Yes | No |
 
-Search-data requests are same-origin and begin only after search intent. Fonts are emitted as same-origin static assets. Schema.org URLs are structured-data identifiers, not browser requests. Advertising mode is OFF in the representative static output; no ad script, label, container, or reserved space is emitted. No analytics, consent-management, affiliate-tracking, or site-cookie code was found in active source or representative static output.
+Search-data requests are same-origin and begin only after search intent. Fonts are emitted as same-origin static assets. Schema.org URLs are structured-data identifiers, not browser requests. Advertising mode is LIVE in the representative static output. No analytics, consent-management, affiliate-tracking, or site-cookie code was found in active source or representative static output.
 
 ## Audience and age-treatment review
 
@@ -38,39 +38,39 @@ Search-data requests are same-origin and begin only after search intent. Fonts a
 | /printables/... | Owner/legal review required | Audience signals depend on each page's title and collections. |
 | trust and informational pages | Clearly general informational page | These pages explain the site, policies, and contact details. |
 
-No legal audience classification is made. The owner and qualified reviewer must decide treatment before live advertising or interactive collection is enabled.
+No legal audience classification is made. The owner and qualified reviewer must review the live-advertising treatment for the site and its child-oriented or mixed-audience collections.
 
 ## Advertisement placement and density
 
 | Page family | Logical slots | Layout | Meaningful publisher content |
 | --- | ---: | --- | --- |
-| homepage | 0 | full | Yes |
-| main-gallery | 0 | full | Yes |
-| hub-page-one | 0 | full | Yes |
-| hub-pagination | 0 | condensed | Yes |
-| printable-detail | 0 | full | Yes |
-| trust-page | 0 | condensed | Yes |
-| human-sitemap | 0 | condensed | Yes |
+| homepage | 5 | full | Yes |
+| main-gallery | 5 | full | Yes |
+| hub-page-one | 5 | full | Yes |
+| hub-pagination | 3 | condensed | Yes |
+| printable-detail | 5 | full | Yes |
+| trust-page | 0 | none | Yes |
+| human-sitemap | 0 | none | Yes |
 | static-404 | 0 | none | No |
 
 | Viewport | Full-page visible slots | Condensed visible slots | Reserved pixel area | Publisher-content area proxy |
 | --- | ---: | ---: | ---: | ---: |
-| 320x800 | 0 | 0 | 0 | 256,000 |
-| 360x800 | 0 | 0 | 0 | 288,000 |
-| 430x932 | 0 | 0 | 0 | 400,760 |
-| 768x1024 | 0 | 0 | 0 | 786,432 |
-| 1366x900 | 0 | 0 | 0 | 1,229,400 |
-| 1536x960 | 0 | 0 | 0 | 1,474,560 |
-| 1920x1080 | 0 | 0 | 0 | 2,073,600 |
+| 320x800 | 1 | 1 | 16,000 | 256,000 |
+| 360x800 | 1 | 1 | 16,000 | 288,000 |
+| 430x932 | 1 | 1 | 16,000 | 400,760 |
+| 768x1024 | 1 | 1 | 28,080 | 786,432 |
+| 1366x900 | 1 | 1 | 65,520 | 1,229,400 |
+| 1536x960 | 3 | 1 | 204,720 | 1,474,560 |
+| 1920x1080 | 3 | 1 | 257,520 | 2,073,600 |
 
-OFF mode reserves no advertising area. Print and Download controls remain free of ad containers. The 404 route has no ad placement.
+The area proxy uses the viewport as a conservative lower bound; representative full documents contain additional content below the fold. Print and Download controls remain separated from configured ad slots. The 404 route has no ad placement.
 
 ## Account readiness
 
-- Live advertising scripts: absent
-- Publisher ID and ad-unit IDs: absent
+- Live advertising units in production output: present
+- Publisher ID and ad-unit IDs: present; verification required
 - Verification tag: absent
-- ads.txt: absent
+- ads.txt: present with the exact confirmed authorized-seller record
 - CMP and Consent Mode: absent
 - Age-treatment decision: not recorded
 - Affiliate tracking: absent
@@ -81,8 +81,7 @@ OFF mode reserves no advertising area. Print and Download controls remain free o
 - **Ready after legal decision:** Decide child-directed, mixed-audience, or general-audience treatment, including explicitly child-oriented collections.
 - **Ready after legal decision:** Complete qualified review of the Privacy Policy, Terms, artwork-rights position, and final public-use policy.
 - **Ready after legal decision:** Complete qualified review of the approved case-by-case policy for brand and trademark references.
-- **Ready after account configuration:** Verify account status, site verification, ads.txt, placement, and Auto Ads decisions in the authenticated provider interface.
-- **Ready after account configuration:** Choose ad personalization, regional consent, CMP, and age-treatment configuration before live advertising.
+- **Ready after account configuration:** Review and configure ad personalization, regional consent, CMP, and age treatment for live advertising.
 - **External verification required:** Confirm the Netlify production and rollback workflow, then validate the deployed revision, Search Console state, and any later account behavior externally.
 
 ## Owner checklist
@@ -92,10 +91,9 @@ OFF mode reserves no advertising area. Print and Download controls remain free o
 3. Decide audience and age treatment, including child-oriented collections. _Ready after legal decision_
 4. Confirm the exact Netlify site, production branch, deployment method, and rollback method in the authenticated Netlify interface. _Ready after account confirmation_
 5. Confirm Search Console property, verification, sitemap, coverage, security, and manual-action status in Search Console. _Ready after account confirmation_
-6. Resolve the reported AdSense needs-action status without submitting the site during this task. _Ready after account configuration_
-7. Keep ads.txt absent until the complete account-supplied declaration is verified and publication is separately approved. _Blocked_
-8. Keep advertising OFF until audience, consent, CMP, age treatment, and account configuration are reviewed. _Blocked_
-9. Re-run network, accessibility, consent, age-treatment, and placement validation after any future advertising implementation. _External verification required_
+6. Confirm AdSense account and site-review state in the authenticated provider interface. _Ready after account confirmation_
+7. Review and configure audience, consent, CMP, and age treatment for production advertising in the authenticated provider interface. _Ready after account configuration_
+8. Re-run network, accessibility, consent, age-treatment, and placement validation after deployment. _External verification required_
 
 ## Counts and preservation
 

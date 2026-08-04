@@ -320,7 +320,7 @@ function buildProjectContext() {
     currentPublicDownloadFormats: /Download PNG/.test(imageCard) ? ["PNG"] : [],
     visibleSvgDownloadOptions: /Download SVG|SVG download/i.test(imageCard),
     visibleJpegWebpOptions: /Download JPG|Download JPEG|Download WebP/i.test(imageCard),
-    adWellsVisibleByDefault: !/NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS|showAdPlaceholders|return null/.test(source.adSource),
+    adWellsVisibleByDefault: !/showAdPlaceholders|return null/.test(source.adSource),
     wrongTaskContextDetected: /image-to-favicon-generator|createManifestMeta|routeManifestClientAssets|Vite-specific/i.test(sourceForContext),
   };
 }

@@ -4,7 +4,7 @@ Verification date: 2026-07-21
 
 ## Outcome
 
-The repository is technically healthy in OFF mode. The complete static application builds, all active tests pass, and the approved owner-safe trust changes are present. No deployment or live-site verification is requested. The exact Netlify and rollback workflow remains unknown and is documented only as an unresolved external-production gate.
+This July 21 verification has been superseded for advertising behavior by the August 4 automatic-mode correction. The complete static application remains the relevant verification target; development uses placeholders and production uses the centralized live units.
 
 ## Confirmed
 
@@ -26,8 +26,8 @@ The repository is technically healthy in OFF mode. The complete static applicati
 - Full-resolution SVG and WebP asset pairs remain valid.
 - Principal-image roles and server-render parity remain intact.
 - Related printable scoring remains deterministic.
-- OFF mode emits no script, label, container, placeholder, or reserved advertising gap.
-- Public `ads.txt` is absent.
+- Development emits visible noninteractive placeholders without loading AdSense; production emits live units and initializes eligible units once.
+- Public `ads.txt` contains the confirmed authorized-seller record.
 - Generated robots references both regular and image sitemaps.
 - Tracked purple IL icon remains authoritative.
 - Representative WebP and SVG assets return correct MIME types and production-origin CORS.
@@ -42,7 +42,7 @@ No visual system or navigation implementation was changed in this owner-input ro
 - About distinguishes automated processing from record-specific editorial review.
 - About does not claim every printable received manual visual review.
 - Contact contains the approved correction/removal request process.
-- Privacy describes static behavior, hosting logs, Netlify/Cloudflare delivery, separate asset delivery, inactive analytics, and advertising OFF.
+- Privacy describes static behavior, hosting logs, Netlify/Cloudflare delivery, separate asset delivery, inactive analytics, and automatic production advertising.
 - Privacy makes no audience classification and says age is neither requested nor inferred.
 - Terms states that rights provenance is unverified and the final public-use license is under review.
 - Terms grants no invented personal, classroom, commercial, redistribution, or derivative rights.

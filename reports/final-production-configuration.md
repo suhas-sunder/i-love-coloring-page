@@ -16,7 +16,7 @@ No deployment or provider-account mutation was performed.
 | Netlify Node version | 22 | Verified in `netlify.toml` |
 | Local validation runtime | Node 25.9.0, npm 10.9.0 | Diagnostic only |
 | Package-manager pin | None | Not configured |
-| Production ad mode | OFF by default | Verified |
+| Production ad mode | LIVE automatically with centralized valid IDs | Verified in the August 4 correction |
 | Site URL default | `https://www.ilovecoloringpage.com` | Verified |
 | Asset base default | `https://assets.ilovecoloringpage.com/coloring-pages` | Verified |
 | Revision diagnostic | `out/build-revision.json` | Generated locally |
@@ -40,10 +40,11 @@ Public defaults are safe without hosting variables. Optional public overrides ar
 
 Production must keep:
 
-- `NEXT_PUBLIC_AD_MODE=off` or the safe production default
 - canonical site URL on the `www` host
 - asset base on the approved custom asset domain
-- all AdSense publisher and slot variables absent
+- the centralized public AdSense publisher and five slot identifiers unchanged
+
+Advertising uses no project-specific environment variables. Development and tests show placeholders; production emits live units.
 
 No secret belongs in static output.
 

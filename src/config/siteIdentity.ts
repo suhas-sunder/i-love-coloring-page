@@ -11,8 +11,8 @@ export const siteIdentity = Object.freeze({
   "publicMailingAddress": null,
   "publicMailingAddressDecision": "omit",
   "governingRegion": null,
-  "policyLastUpdatedDate": "2026-08-02",
-  "policyLastUpdatedLabel": "August 2, 2026",
+  "policyLastUpdatedDate": "2026-08-04",
+  "policyLastUpdatedLabel": "August 4, 2026",
   "ownerDecisions": {
     "artworkRightsBasis": "created-and-published-by-site",
     "publicUseLicense": "personal-family-classroom-homeschool-nonprofit-educational",
@@ -23,7 +23,7 @@ export const siteIdentity = Object.freeze({
   },
   "features": {
     "analyticsActive": false,
-    "liveAdvertisingActive": false,
+    "liveAdvertisingActive": true,
     "affiliateLinksActive": false,
     "accountsActive": false,
     "formsActive": false,

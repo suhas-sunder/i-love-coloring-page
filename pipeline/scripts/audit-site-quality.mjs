@@ -724,7 +724,7 @@ function productionDifferencesMarkdown(live, local) {
 
 The live site remains intentionally untouched. It currently differs from this repair in three high-confidence areas:
 
-1. Live production emits advertisement placeholder markup; the local production default is now OFF.
+1. Live and local production markup may differ until the automatic live-unit implementation is deployed; current local production emits the centralized live units.
 2. Live printable markup declares source dimensions for a smaller WebP; local markup declares ${printables[0].previewWidth}×${printables[0].previewHeight} and prevents upscaling.
 3. Live has no build-revision marker, so same-revision verification across routes is impossible until a later approved deployment.
 

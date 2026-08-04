@@ -6,7 +6,7 @@ Run ID: round-4m-ads-nav-polish
 
 - Slot count: 8
 - Hidden by default: true
-- Enabled with: NEXT_PUBLIC_SHOW_AD_PLACEHOLDERS=1
+- Historical enabled pass used a local placeholder switch that has since been removed.
 - Live ad code added: false
 - Sticky side rails: false
 

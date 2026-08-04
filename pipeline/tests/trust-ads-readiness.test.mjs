@@ -47,9 +47,13 @@ test("site identity is centralized and server-safe", () => {
   assert.equal(identity.publicMailingAddress, null);
   assert.equal(identity.publicMailingAddressDecision, "omit");
   assert.equal(identity.governingRegion, null);
-  assert.equal(identity.policyLastUpdatedDate, "2026-08-02");
-  assert.equal(identity.policyLastUpdatedLabel, "August 2, 2026");
-  assert.equal(Object.values(identity.features).every((active) => active === false), true);
+  assert.equal(identity.policyLastUpdatedDate, "2026-08-04");
+  assert.equal(identity.policyLastUpdatedLabel, "August 4, 2026");
+  assert.equal(identity.features.liveAdvertisingActive, true);
+  assert.equal(identity.features.analyticsActive, false);
+  assert.equal(identity.features.affiliateLinksActive, false);
+  assert.equal(identity.features.accountsActive, false);
+  assert.equal(identity.features.formsActive, false);
   assert.equal(identity.readiness.operatorIdentityDecisionExists, true);
   assert.equal(identity.readiness.mailingAddressDecisionExists, true);
   assert.equal(identity.readiness.trademarkPolicyDecisionExists, true);
@@ -112,6 +116,7 @@ test("privacy accuracy describes advertising, analytics status, and regional gat
     "YourAdChoices",
     "Regional advertising controls",
     "does not guess a visitor's region from language, locale, or time zone",
+    "Eligible production content pages use the configured AdSense units automatically",
     "EEA, the UK, and Switzerland",
     "PostHog is not currently active",
     "Cloudflare Browser Insights or Real User Monitoring is not included in repository source",
@@ -154,7 +159,7 @@ test("affiliate accuracy matches inactive implementation", () => {
   assert.match(normalized, /does not earn commissions from ordinary.*printable-page links, Print actions, or download actions/);
   assert.match(normalized, /will be disclosed clearly near the relevant content/);
   assert.match(normalized, /updated before affiliate monetization begins/);
-  assert.match(normalized, /Google AdSense display advertising, when enabled, is separate from affiliate marketing/);
+  assert.match(normalized, /Google AdSense display advertising is separate from affiliate marketing/);
   assert.match(normalized, /A display ad is not an affiliate link/);
   assert.doesNotMatch(source, /Amazon|qualifying purchases|at no additional cost|future round/i);
   assert.doesNotMatch(active, /[?&](?:aff(?:iliate)?_?id|tag|ref)=[^\s"'&]+/i);
@@ -188,9 +193,13 @@ test("network integrations contain configured AdSense but no Cloudflare RUM, Pos
     /static\.cloudflareinsights\.com|\/cdn-cgi\/rum|beacon\.min\.js/i,
     /__tcfapi|cookiebot|onetrust|consentmanager|fundingchoices|quantcast.*choice/i,
   ]) assert.doesNotMatch(combined, pattern);
-  for (const route of ["/", "/coloring-pages", "/coloring-pages/animals", "/privacy"]) {
-    assert.doesNotMatch(readOutputHtml(route), /adsbygoogle|pagead2\.googlesyndication|google_ad_client|data-ad-client\s*=|<script[^>]+doubleclick/i);
+  for (const route of ["/", "/coloring-pages", "/coloring-pages/animals"]) {
+    const html = readOutputHtml(route);
+    assert.match(html, /data-ad-mode="live"/);
+    assert.match(html, /data-ad-client="ca-pub-4810616735714570"/);
+    assert.doesNotMatch(html, /data-ad-placeholder="true"/);
   }
+  assert.doesNotMatch(readOutputHtml("/privacy"), /data-ad-mode=|data-ad-client=|data-ad-placeholder=/i);
   assert.doesNotMatch(active, /document\.cookie|cookies\s*\(|set-cookie/i);
   assert.match(active, /fetch\("\/search-data\/navigation\.json"/);
   assert.match(active, /fetch\(searchDataPath/);
@@ -239,7 +248,7 @@ test("AdSense placement readiness preserves slots and accepted visible density",
     logicalSlots("/coloring-pages/animals/page/2"),
     logicalSlots("/privacy"),
     logicalSlots("/sitemap"),
-  ], [0, 0, 0, 0, 0, 0]);
+  ], [5, 5, 5, 3, 0, 0]);
   assert.equal((readFileSync(path.join(OUT, "404.html"), "utf8").match(/data-ad-slot="/g) || []).length, 0);
 });
 
@@ -248,9 +257,13 @@ test("AdSense account readiness contains the confirmed public configuration and 
   assert.match(combined, /ca-pub-4810616735714570/);
   for (const slot of ["5574432869", "5115981872", "9929324856", "2489818539", "5382861174"]) assert.match(combined, new RegExp(slot));
   for (const pattern of [/google-adsense-account|google-site-verification/i, /__tcfapi|cookiebot|onetrust|consentmanager|fundingchoices/i, /ad_storage|analytics_storage/i]) assert.doesNotMatch(combined, pattern);
-  for (const route of ["/", "/coloring-pages", "/coloring-pages/animals", "/privacy"]) {
-    assert.doesNotMatch(readOutputHtml(route), /adsbygoogle|pagead2\.googlesyndication|google_ad_client|data-ad-client/i);
+  for (const route of ["/", "/coloring-pages", "/coloring-pages/animals"]) {
+    const html = readOutputHtml(route);
+    assert.match(html, /data-ad-mode="live"/);
+    assert.match(html, /data-ad-client="ca-pub-4810616735714570"/);
+    assert.doesNotMatch(html, /data-ad-placeholder="true"/);
   }
+  assert.doesNotMatch(readOutputHtml("/privacy"), /data-ad-mode=|data-ad-client=|data-ad-placeholder=/i);
   assert.equal(existsSync(path.join(ROOT, "ads.txt")), false);
   assert.equal(execFileSync("git", ["ls-files", "public/ads.txt"], { cwd: ROOT, encoding: "utf8" }).trim(), "public/ads.txt");
   assert.equal(readText("public/ads.txt").trim(), "google.com, pub-4810616735714570, DIRECT, f08c47fec0942fa0");
@@ -280,6 +293,8 @@ test("trust-report determinism and artifact safety", () => {
   assert.equal(readiness.blockingIssues.some((gate) => gate.id === "ads.account_configuration"), false);
   assert.equal(readiness.adsTxtStatus.present, true);
   assert.equal(readiness.adsTxtStatus.exactAuthorizedSellerRecord, true);
+  assert.equal(readiness.liveAdvertisingStatus.active, true);
+  assert.equal(readiness.accountReadiness.liveAdvertisingActive, true);
   const combined = `${secondManifest}\n${secondReport}`;
   assert.doesNotMatch(combined, /generatedAt|T\d{2}:\d{2}:\d{2}|[A-Za-z]:\\|file:\/\/|\/Users\/|browser profile|screenshots?\//i);
   assert.doesNotMatch(combined, /AKIA[0-9A-Z]{12,}|BEGIN (?:RSA |EC )?PRIVATE KEY/i);
@@ -313,7 +328,10 @@ function parseSiteIdentity() {
 }
 
 function logicalSlots(route) {
-  return (readOutputHtml(route).match(/data-ad-slot="/g) || []).length;
+  return [...readOutputHtml(route).matchAll(/data-ad-slot="([^"]+)"/g)]
+    .map((match) => match[1])
+    .filter((slotId) => !/^\d{10}$/.test(slotId))
+    .length;
 }
 
 function readActiveRuntimeSource() {

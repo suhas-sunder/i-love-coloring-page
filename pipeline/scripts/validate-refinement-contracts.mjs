@@ -28,7 +28,17 @@ assert.match(printable, /assetSources\.principalPreview\.height/, "printable pre
 const home = path.join(root, "out", "index.html");
 if (existsSync(home)) {
   const html = read("out/index.html");
-  assert.doesNotMatch(html, /data-ad-slot/, "production export must not emit ad slots while advertising is OFF");
+  const logicalSlots = [...html.matchAll(/data-ad-slot="([^"]+)"/g)]
+    .map((match) => match[1])
+    .filter((slotId) => !/^\d{10}$/.test(slotId));
+  assert.equal(logicalSlots.length, 5, "production homepage must retain its five configured logical slots");
+  assert.match(html, /data-ad-mode="live"/, "production export must emit live units");
+  assert.match(html, /data-ad-client="ca-pub-4810616735714570"/, "production units must use the centralized client ID");
+  assert.doesNotMatch(html, /data-ad-placeholder="true"|Development placeholder/, "production export must not emit development placeholders");
+
+  for (const relativePath of ["out/privacy.html", "out/sitemap.html", "out/404.html"]) {
+    assert.doesNotMatch(read(relativePath), /data-ad-mode=|data-ad-client=|data-ad-placeholder=/, `${relativePath} must remain ad-free`);
+  }
 }
 
 process.stdout.write("Refinement contract checks passed.\n");
