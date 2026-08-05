@@ -4,6 +4,8 @@ import {
   pdfPointToRasterPixels,
   PRINTABLE_COMPOSITION,
   type PrintableLayout,
+  type PrintablePageProfile,
+  type PrintableProfileRequest,
 } from "./exportComposition";
 
 export type PublicDownloadFormat = "png" | "jpg" | "jpeg" | "webp";
@@ -67,7 +69,7 @@ export type BrowserPdfDownloadResult =
       mimeType: "application/pdf";
       source: "internal-svg";
       pageCount: 1;
-      pageSize: "letter-portrait";
+      pageSize: PrintablePageProfile["id"];
       pageDimensions: {
         widthPt: number;
         heightPt: number;
@@ -102,7 +104,7 @@ export type PreparedPrintPdfResult =
       source: "internal-svg";
       revokeObjectUrl: true;
       pageCount: 1;
-      pageSize: "letter-portrait";
+      pageSize: PrintablePageProfile["id"];
       pdfByteLength: number;
       pageDimensions: {
         widthPt: number;
@@ -135,6 +137,7 @@ type DownloadOptions = {
   title: string;
   filenameBaseName?: string;
   quality?: number;
+  composition?: PrintableProfileRequest;
 };
 
 type PrintOptions = DownloadOptions & {
@@ -161,7 +164,7 @@ type PrintPdfLayout = PrintableLayout;
 
 type PrintDocumentQaSnapshot = {
   pageCount: 1;
-  pageSize: "letter-portrait";
+  pageSize: PrintablePageProfile["id"];
   pdfByteLength: number;
   artworkBox: PrintDocumentBox;
   imageBox: PrintDocumentBox;
@@ -186,8 +189,6 @@ const IMAGE_LOAD_TIMEOUT_MS = 12_000;
 export const PRINT_PREPARE_TIMEOUT_MS = 15_000;
 export const INTERNAL_SVG_CONTENT_TYPE = "image/svg+xml";
 export const PRINT_DOCUMENT_BRAND = PRINTABLE_COMPOSITION.branding.text;
-const PRINT_PAGE_WIDTH_PT = PRINTABLE_COMPOSITION.page.widthPt;
-const PRINT_PAGE_HEIGHT_PT = PRINTABLE_COMPOSITION.page.heightPt;
 const PRINT_BRAND_FONT_SIZE = PRINTABLE_COMPOSITION.branding.fontSizePt;
 
 const CANVAS_FORMATS: Record<RasterDownloadFormat, FormatConfig> = {
@@ -312,9 +313,12 @@ export async function composePrintableRasterToBlob(options: DownloadOptions & { 
   const context = canvas.getContext("2d");
   if (!context) return failure("canvas-unavailable", "Canvas rendering is unavailable in this browser.");
 
-  canvas.width = PRINTABLE_COMPOSITION.page.widthPx;
-  canvas.height = PRINTABLE_COMPOSITION.page.heightPx;
-  const layout = computePrintableLayout(sourceWidth, sourceHeight, "raster");
+  const layout = computePrintableLayout(sourceWidth, sourceHeight, {
+    ...options.composition,
+    unit: "raster",
+  });
+  canvas.width = layout.page.widthPx;
+  canvas.height = layout.page.heightPx;
   drawPrintableRasterComposition(context, canvas, image, layout);
 
   try {
@@ -469,7 +473,10 @@ export async function prepareOnePagePrintPdf(options: PrintOptions): Promise<Pre
   if (!rendered.ok) return rendered;
 
   try {
-    const layout = computePrintableLayout(rendered.width, rendered.height, "pdf");
+    const layout = computePrintableLayout(rendered.width, rendered.height, {
+      ...options.composition,
+      unit: "pdf",
+    });
     const metadataTitle = buildPrintPdfTitle(options.title);
     const pdfBytes = await buildPrintPdfBytes(rendered.canvas, layout, metadataTitle);
     const pdfBlob = new Blob([pdfBytes], { type: "application/pdf" });
@@ -482,11 +489,11 @@ export async function prepareOnePagePrintPdf(options: PrintOptions): Promise<Pre
       source: "internal-svg",
       revokeObjectUrl: true,
       pageCount: 1,
-      pageSize: "letter-portrait",
+      pageSize: layout.page.id,
       pdfByteLength: pdfBlob.size,
       pageDimensions: {
-        widthPt: PRINT_PAGE_WIDTH_PT,
-        heightPt: PRINT_PAGE_HEIGHT_PT,
+        widthPt: layout.page.widthPt,
+        heightPt: layout.page.heightPt,
       },
       artworkBox: layout.artworkBox,
       imageBox: layout.imageBox,
@@ -741,7 +748,7 @@ function drawPrintableRasterComposition(
   context.drawImage(image, layout.imageBox.x, imageTop, layout.imageBox.width, layout.imageBox.height);
 
   context.strokeStyle = PRINTABLE_COMPOSITION.frame.color;
-  context.lineWidth = pdfPointToRasterPixels(PRINTABLE_COMPOSITION.frame.lineWidthPt);
+  context.lineWidth = pdfPointToRasterPixels(PRINTABLE_COMPOSITION.frame.lineWidthPt, "x", layout.page);
   context.strokeRect(
     layout.outerFrame.x,
     canvasTopFromBottomOrigin(layout.outerFrame, canvas.height),
@@ -757,7 +764,7 @@ function drawPrintableRasterComposition(
     layout.brandKnockoutBox.height,
   );
   context.fillStyle = PRINTABLE_COMPOSITION.branding.color;
-  context.font = `${pdfPointToRasterPixels(PRINTABLE_COMPOSITION.branding.fontSizePt)}px ${PRINTABLE_COMPOSITION.branding.fontFamily}`;
+  context.font = `${pdfPointToRasterPixels(PRINTABLE_COMPOSITION.branding.fontSizePt, "y", layout.page)}px ${PRINTABLE_COMPOSITION.branding.fontFamily}`;
   context.textBaseline = "alphabetic";
   context.fillText(
     PRINTABLE_COMPOSITION.branding.text,
@@ -816,7 +823,7 @@ async function buildPrintPdfBytes(canvas: HTMLCanvasElement, layout: PrintPdfLay
     [
       "<< /Type /Page",
       "/Parent 2 0 R",
-      `/MediaBox [0 0 ${PRINT_PAGE_WIDTH_PT} ${PRINT_PAGE_HEIGHT_PT}]`,
+      `/MediaBox [0 0 ${formatPdfNumber(layout.pageBounds.width)} ${formatPdfNumber(layout.pageBounds.height)}]`,
       "/Resources << /XObject << /Im0 4 0 R >> /Font << /F1 5 0 R >> >>",
       "/Contents 6 0 R",
       ">>\nendobj\n",

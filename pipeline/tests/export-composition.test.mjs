@@ -12,6 +12,7 @@ const ROOT = process.cwd();
 const modules = await importExportModules();
 const composition = modules.composition;
 const downloads = modules.downloads;
+const baseline = JSON.parse(await readFile(path.join(ROOT, "pipeline/tests/fixtures/printable-paper-profile-baseline.json"), "utf8"));
 const SYNTHETIC_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="white"/><path d="M40 400H1160" fill="none" stroke="black" stroke-width="8"/></svg>`;
 
 test.after(async () => {
@@ -35,6 +36,78 @@ test("shared composition constants preserve Letter PDF and 300 DPI raster output
   assert.equal(spec.branding.fontSizePt, 7);
   assert.equal(spec.jpegQuality, 0.94);
   assert.equal(spec.page.widthPt / spec.page.heightPt, spec.page.widthPx / spec.page.heightPx);
+  assert.deepEqual(spec.defaultProfile, {
+    paperKind: "letter",
+    orientation: "portrait",
+    artworkScalePercent: 100,
+  });
+  assert.deepEqual(spec.supportedOrientations, ["portrait", "landscape", "auto"]);
+  assert.deepEqual(spec.supportedArtworkScales, [100, 90, 75, 50]);
+  assert.equal(spec.page.id, "letter-portrait");
+  assert.equal(spec.page.paperKind, "letter");
+});
+
+test("paper registry resolves Letter and A4 in both physical orientations", () => {
+  const expected = {
+    "letter-portrait": [612, 792, 2550, 3300],
+    "letter-landscape": [792, 612, 3300, 2550],
+    "a4-portrait": [595.28, 841.89, 2480, 3508],
+    "a4-landscape": [841.89, 595.28, 3508, 2480],
+  };
+
+  for (const paperKind of ["letter", "a4"]) {
+    for (const orientation of ["portrait", "landscape"]) {
+      const resolved = composition.resolvePrintableProfile(800, 1200, { paperKind, orientation });
+      assert.equal(resolved.page.id, `${paperKind}-${orientation}`);
+      assert.deepEqual(
+        [resolved.page.widthPt, resolved.page.heightPt, resolved.page.widthPx, resolved.page.heightPx],
+        expected[resolved.page.id],
+      );
+      assert.equal(resolved.page.rasterDpi, 300);
+    }
+  }
+});
+
+test("automatic orientation maximizes safe fit with a deterministic portrait tie", () => {
+  assert.equal(composition.selectAutomaticOrientation(800, 1200, "letter"), "portrait");
+  assert.equal(composition.selectAutomaticOrientation(1200, 800, "letter"), "landscape");
+  assert.equal(composition.selectAutomaticOrientation(1000, 1000, "letter"), "portrait");
+  assert.equal(composition.resolvePrintableProfile(800, 1200, { paperKind: "a4", orientation: "auto" }).page.orientation, "portrait");
+  assert.equal(composition.resolvePrintableProfile(1200, 800, { paperKind: "a4", orientation: "auto" }).page.orientation, "landscape");
+});
+
+test("artwork scales are percentages of maximum safe fit, centered, and never clip", () => {
+  const maximum = composition.computePrintableLayout(800, 1200, { artworkScalePercent: 100 });
+  for (const artworkScalePercent of [100, 90, 75, 50]) {
+    const layout = composition.computePrintableLayout(800, 1200, { artworkScalePercent });
+    assert.equal(layout.artworkScalePercent, artworkScalePercent);
+    assert.equal(layout.imageBox.width, round4(maximum.maximumImageBox.width * artworkScalePercent / 100));
+    assert.equal(layout.imageBox.height, round4(maximum.maximumImageBox.height * artworkScalePercent / 100));
+    assert.equal(round4(layout.imageBox.x + layout.imageBox.width / 2), round4(layout.safeContentBounds.x + layout.safeContentBounds.width / 2));
+    assert.equal(round4(layout.imageBox.y + layout.imageBox.height / 2), round4(layout.safeContentBounds.y + layout.safeContentBounds.height / 2));
+    assert.ok(layout.imageBox.x >= layout.safeContentBounds.x);
+    assert.ok(layout.imageBox.y >= layout.safeContentBounds.y);
+    assert.ok(layout.imageBox.x + layout.imageBox.width <= layout.safeContentBounds.x + layout.safeContentBounds.width);
+    assert.ok(layout.imageBox.y + layout.imageBox.height <= layout.safeContentBounds.y + layout.safeContentBounds.height);
+  }
+});
+
+test("default profile remains geometrically identical to the accepted baseline fixture", () => {
+  const layout = composition.computePrintableLayout(800, 1200);
+  assert.equal(layout.page.id, baseline.defaultProfile.pageSize);
+  assert.deepEqual([layout.pageBounds.width, layout.pageBounds.height], baseline.defaultProfile.pdfPoints);
+  assert.deepEqual(layout.outerFrame, baseline.defaultProfile.outerFrame);
+  assert.deepEqual(layout.safeContentBounds, baseline.defaultProfile.safeContentBounds);
+  assert.deepEqual(layout.imageBox, baseline.defaultProfile.portraitArtworkBox);
+  assert.deepEqual(layout.brandBox, baseline.defaultProfile.brandBox);
+  assert.deepEqual(layout.brandKnockoutBox, baseline.defaultProfile.brandKnockoutBox);
+});
+
+test("invalid profile inputs fail explicitly instead of producing malformed geometry", () => {
+  assert.throws(() => composition.computePrintableLayout(0, 1200), /positive finite/);
+  assert.throws(() => composition.computePrintableLayout(800, 1200, { paperKind: "legal" }), /paper kind/);
+  assert.throws(() => composition.computePrintableLayout(800, 1200, { orientation: "sideways" }), /orientation/);
+  assert.throws(() => composition.computePrintableLayout(800, 1200, { artworkScalePercent: 80 }), /artwork scale/);
 });
 
 test("point-to-pixel scale and normalized PDF/raster geometry match", () => {
@@ -99,6 +172,38 @@ test("branded PNG and JPEG use opaque 2550x3300 Letter canvases", async () => {
   }
 });
 
+test("printable raster composition consumes the selected centralized paper profile", async () => {
+  const mock = installCanvasMock();
+  try {
+    const result = await downloads.composePrintableRasterToBlob({
+      internalSvgUrl: svgDataUrl(),
+      pngPreviewUrl: null,
+      title: "Synthetic Landscape",
+      format: "png",
+      composition: { paperKind: "a4", orientation: "landscape", artworkScalePercent: 75 },
+    });
+    assert.equal(result.ok, true);
+    assert.deepEqual([result.width, result.height], [3508, 2480]);
+    const canvas = mock.canvases[0];
+    assert.deepEqual([canvas.width, canvas.height], [3508, 2480]);
+    const draw = canvas.context.operations.find((operation) => operation.name === "drawImage");
+    const layout = composition.computePrintableLayout(1200, 800, {
+      unit: "raster",
+      paperKind: "a4",
+      orientation: "landscape",
+      artworkScalePercent: 75,
+    });
+    assert.deepEqual(draw.args, [
+      layout.imageBox.x,
+      composition.canvasTopFromBottomOrigin(layout.imageBox, 2480),
+      layout.imageBox.width,
+      layout.imageBox.height,
+    ]);
+  } finally {
+    mock.restore();
+  }
+});
+
 test("WebP remains artwork-oriented instead of using the branded Letter page", async () => {
   const mock = installCanvasMock();
   try {
@@ -156,6 +261,39 @@ test("synthetic PDF remains one Letter page with the shared frame, artwork, and 
     assert.match(pdfBytes.toString("latin1"), /\/Title \(Synthetic Landscape - iLoveColoringPage\.com\)/);
     assert.equal(composition.boxesOverlap(pdf.imageBox, pdf.brandBox), false);
     assert.equal(pdf.filename, "synthetic-landscape.pdf");
+    downloads.revokePreparedPrintPdf(pdf);
+  } finally {
+    mock.restore();
+  }
+});
+
+test("PDF writer uses the selected A4 landscape profile without changing document structure", async () => {
+  const mock = installCanvasMock();
+  try {
+    const pdf = await downloads.prepareOnePagePrintPdf({
+      internalSvgUrl: svgDataUrl(),
+      pngPreviewUrl: null,
+      title: "Synthetic Landscape",
+      altText: "Synthetic landscape coloring page",
+      composition: { paperKind: "a4", orientation: "landscape", artworkScalePercent: 75 },
+    });
+    assert.equal(pdf.ok, true);
+    assert.equal(pdf.pageCount, 1);
+    assert.equal(pdf.pageSize, "a4-landscape");
+    assert.deepEqual(pdf.pageDimensions, { widthPt: 841.89, heightPt: 595.28 });
+    const bytes = Buffer.from(await pdf.pdfBlob.arrayBuffer());
+    assert.match(bytes.toString("latin1"), /\/MediaBox \[0 0 841\.89 595\.28\]/);
+    assert.match(bytes.toString("latin1"), /\/Filter \/FlateDecode/);
+    assertValidClassicXref(bytes);
+    const expected = composition.computePrintableLayout(1200, 800, {
+      paperKind: "a4",
+      orientation: "landscape",
+      artworkScalePercent: 75,
+    });
+    assert.deepEqual(pdf.imageBox, expected.imageBox);
+    assert.deepEqual(pdf.artworkBox, expected.artworkBox);
+    assert.equal(pdf.filename, "synthetic-landscape.pdf");
+    assert.equal(pdf.metadataTitle, "Synthetic Landscape - iLoveColoringPage.com");
     downloads.revokePreparedPrintPdf(pdf);
   } finally {
     mock.restore();
@@ -257,11 +395,12 @@ test("filename behavior, SVG exclusion, and conversion failure remain user-safe"
   assert.doesNotMatch(menuSource, /Download SVG|label:\s*"SVG"|downloadSvg/i);
 });
 
-test("PDF output consumes the shared layout and preserves its existing geometry constants", async () => {
+test("PDF and raster outputs consume one shared paper-profile layout engine", async () => {
   const source = await readFile(path.join(ROOT, "src/lib/coloring/browserDownloads.ts"), "utf8");
-  assert.match(source, /computePrintableLayout\(rendered\.width, rendered\.height, "pdf"\)/);
-  assert.match(source, /PRINT_PAGE_WIDTH_PT = PRINTABLE_COMPOSITION\.page\.widthPt/);
-  assert.match(source, /PRINT_PAGE_HEIGHT_PT = PRINTABLE_COMPOSITION\.page\.heightPt/);
+  assert.match(source, /computePrintableLayout\(rendered\.width, rendered\.height, \{[\s\S]*?\.\.\.options\.composition,[\s\S]*?unit: "pdf"/);
+  assert.match(source, /computePrintableLayout\(sourceWidth, sourceHeight, \{[\s\S]*?\.\.\.options\.composition,[\s\S]*?unit: "raster"/);
+  assert.match(source, /`\/MediaBox \[0 0 \$\{formatPdfNumber\(layout\.pageBounds\.width\)\} \$\{formatPdfNumber\(layout\.pageBounds\.height\)\}\]`/);
+  assert.doesNotMatch(source, /PRINT_PAGE_WIDTH_PT|PRINT_PAGE_HEIGHT_PT/);
   assert.match(source, /PRINT_BRAND_FONT_SIZE = PRINTABLE_COMPOSITION\.branding\.fontSizePt/);
   assert.match(source, /await buildPrintPdfBytes\(rendered\.canvas, layout, metadataTitle\)/);
   assert.match(source, /new CompressionStream\("deflate"\)/);
@@ -269,6 +408,18 @@ test("PDF output consumes the shared layout and preserves its existing geometry 
   assert.match(source, /"\/Filter \/FlateDecode"/);
   assert.doesNotMatch(source, /base64|btoa\(|toDataURL\([^)]*pdf/i);
   assert.equal(source.includes("function getPrintPdfLayout"), false);
+});
+
+test("paper profiles remain internal and expose no new printable controls", async () => {
+  const actions = await readFile(path.join(ROOT, "src/components/coloring/PrintableDetailActions.tsx"), "utf8");
+  const preview = await readFile(path.join(ROOT, "src/components/coloring/PrintablePreviewDialog.tsx"), "utf8");
+  const page = await readFile(path.join(ROOT, "src/components/coloring/PrintableDetailPage.tsx"), "utf8");
+  const visibleSource = `${actions}\n${preview}\n${page}`;
+  assert.doesNotMatch(visibleSource, /paperKind|artworkScalePercent|OrientationPreference/);
+  assert.doesNotMatch(visibleSource, /<select|type="radio"|>A4</);
+  assert.match(actions, /Download PDF/);
+  assert.match(actions, /<PrintableCardActions/);
+  assert.match(page, /PRINTABLE_COMPOSITION\.page\.paperSize/);
 });
 
 test("PDF compression failure stays explicit instead of emitting a raw or empty document", async () => {
@@ -477,6 +628,10 @@ function requiredMatch(value, pattern) {
   const match = value.match(pattern);
   assert.ok(match, pattern.toString());
   return match[1];
+}
+
+function round4(value) {
+  return Math.round(value * 10_000) / 10_000;
 }
 
 async function importExportModules() {

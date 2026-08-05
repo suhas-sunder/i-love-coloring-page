@@ -52,7 +52,7 @@ try {
       canonical: html.includes(`rel="canonical" href="https://www.ilovecoloringpage.com${printable.canonicalPath}"`),
       webp: html.includes(`https://assets.ilovecoloringpage.com/coloring-pages/${printable.webpPath}`),
       breadcrumbs: html.includes("Breadcrumb") && html.includes(primaryHub.route),
-      actions: html.includes(">Print<") && html.includes(">Download<"),
+      actions: html.includes(">Download PDF<") && html.includes(">Print<") && html.includes(">Download image<"),
       related: html.includes("Related printable pages") && html.includes("Related Collections"),
       metadata: /<meta name="robots" content="index, follow"/.test(html) && /property="og:image" content="https:\/\/assets\.ilovecoloringpage\.com\/coloring-pages\/webp\//.test(html),
       structuredData: html.includes('"@type":"WebPage"') && html.includes('"@type":"BreadcrumbList"') && html.includes('"@type":"ImageObject"'),

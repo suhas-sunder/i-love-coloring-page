@@ -33,6 +33,7 @@
     "test:canonical": "node --test --test-concurrency=1 pipeline/tests/canonical-printable-pages.test.mjs",
     "test:search-data": "node --test --test-concurrency=1 pipeline/tests/static-search-data.test.mjs",
     "test:export": "node --test --test-concurrency=1 pipeline/tests/export-composition.test.mjs",
+    "qa:paper-profiles": "node pipeline/scripts/printable-paper-profile-browser-qa-runner.cjs",
     "test:crawl": "node --test --test-concurrency=1 pipeline/tests/crawl-indexation.test.mjs",
     "test:sitemap": "node --test --test-concurrency=1 --test-name-pattern=\"authoritative crawl inventory|regular sitemap|valid pagination|production origins\" pipeline/tests/crawl-indexation.test.mjs",
     "test:image-sitemap": "node --test --test-concurrency=1 pipeline/tests/image-sitemap.test.mjs",

@@ -1,0 +1,54 @@
+{
+  "capturedAt": "2026-08-04",
+  "browser": "Google Chrome 150.0.7339.0 (Chromium)",
+  "defaultProfile": {
+    "paperKind": "letter",
+    "orientation": "portrait",
+    "artworkScalePercent": 100,
+    "pageSize": "letter-portrait",
+    "pdfPoints": [612, 792],
+    "rasterPixels": [2550, 3300],
+    "outerFrame": { "x": 10, "y": 10, "width": 592, "height": 772 },
+    "safeContentBounds": { "x": 15, "y": 15, "width": 582, "height": 762 },
+    "portraitArtworkBox": { "x": 52, "y": 15, "width": 508, "height": 762 },
+    "brandBox": { "x": 267.78, "y": 7.62, "width": 76.44, "height": 7 },
+    "brandKnockoutBox": { "x": 263.78, "y": 5.15, "width": 84.44, "height": 9 },
+    "pdfImage": {
+      "width": 1600,
+      "height": 2400,
+      "colorSpace": "DeviceRGB",
+      "bitsPerComponent": 8,
+      "filter": "FlateDecode",
+      "effectiveDpi": 226.77
+    }
+  },
+  "representativeOutputs": [
+    {
+      "route": "/printables/animals/animals-alligator-4feec8505a",
+      "sourceViewBox": [800, 1200],
+      "pdfBytes": 613584,
+      "pdfSha256": "8bab1edb0e18f90800974c16be753d2448a20c6b0a104fbc92e7df774ec82bca",
+      "generationMs": { "cold": 343.58, "repeat": 313.75 },
+      "pngBytes": 1404823,
+      "pngSha256": "011726dc272ff5a2217887ddb3c2773da1a95b22df989021caff7b0b66f2d58c",
+      "jpgBytes": 1238249,
+      "jpgSha256": "bd8174f1437414536b89d4679829d78c88753652ba3511bceb8abb78bd1b5a22",
+      "webpBytes": 389232,
+      "webpSha256": "f42a63e22139352fde66dab4705031a156c8b5c9db2c363913fea86fc14c1594"
+    },
+    {
+      "route": "/printables/animals/cats-playing-cards-c22648db9b",
+      "sourceViewBox": [800, 1200],
+      "pdfBytes": 539659,
+      "pdfSha256": "db6063cee65bb1091037c22113d20af2eb09da5571b289a6e834d018c16dd2c3",
+      "generationMs": { "cold": 270.66, "repeat": 1112.26 }
+    },
+    {
+      "route": "/printables/anime-girls/anime-girl-brazilian-jiu-jitsu-5a40029b84",
+      "sourceViewBox": [799, 1200],
+      "pdfBytes": 573452,
+      "pdfSha256": "20c7e92c0ebcd8463d20306a234aabac9305c48155768b8b07ef9621d480ffeb",
+      "generationMs": { "cold": 345.36, "repeat": 321.12 }
+    }
+  ]
+}
