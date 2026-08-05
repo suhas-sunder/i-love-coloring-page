@@ -156,6 +156,7 @@ Compact local evidence is stored under `pipeline/review/ad-fill-fallback/`:
 - `chrome-390-all-unfilled.png`
 - `chrome-1920-all-unfilled.png`
 - `chrome-1440-late-fill-final.png`
+- `production-chrome-1440.png`
 
 The evidence directory remains ignored under the repository’s generated-review-media policy.
 
@@ -206,7 +207,44 @@ There is one line, no duplicate, no HTML, and no `ca-` prefix. Exported robots r
 
 ## Commit, push, and production verification
 
-This section is intentionally pending until the implementation commit is pushed and Netlify’s automatic deployment is observed. It will record the commit, push result, poll timeline, production marker and asset evidence, one controlled live Chrome load, official slot statuses, fallback count, creative iframe result, network results, and console findings.
+The implementation was committed as `cfbf8dfc86c2523e03cf9bae77f03e6cb7d1c2b3` with message `fix: coordinate AdSense fill and fallback placeholders` and pushed normally from `main` to `origin/main`. The push advanced the remote from `493905da3e3fb4b4935f2b24e9c37e4d36cef53e` and left local/upstream divergence at 0/0. No force push or deployment command was used.
+
+### Netlify automatic deployment
+
+The synchronized-push timestamp was 2026-08-05 00:51:36 EDT. No production request was made during the following three full minutes. Polling then used cache-bypassed HTML requests with JavaScript disabled and stopped as soon as the required marker appeared.
+
+| Poll | Timestamp (EDT) | HTTP | Marker | HTML bytes | Evidence |
+| ---: | --- | ---: | --- | ---: | --- |
+| 1 | 2026-08-05 00:55:09 | 200 | absent | 189,646 | Cloudflare response, age 1; prior asset set |
+| 2 | 2026-08-05 00:56:23 | 200 | present | 191,751 | Cloudflare response, age 0; new asset set including `/_next/static/chunks/0pqt~8bl3ukh4.js` |
+
+The marker first appeared 1 minute 14 seconds after polling began and 4 minutes 47 seconds after the recorded push/synchronization check. At 00:56:31 EDT, `/build-revision.json` returned HTTP 200 with production revision `cfbf8dfc86c2523e03cf9bae77f03e6cb7d1c2b3`, branch `main`, and runtime-data hash `d916a37223dc9bcf329c599402302146ef1726561fa5029066766f627f6da5b9`.
+
+### Controlled live Chrome result
+
+One installed Chrome `150.0.7871.187` load was made at 1440 x 1000 on `https://www.ilovecoloringpage.com/coloring-pages/animals`, from 00:57:45 through 00:58:16 EDT. JavaScript was enabled. There was no request interception, blocker, status injection, fake creative, reload, scrolling loop, route cycling, or ad click.
+
+- Navigation returned HTTP 200.
+- Five configured wrappers carried `data-ad-fallback-policy="page-all-or-none-v1"`.
+- Exactly one external AdSense script existed, using `ca-pub-4810616735714570`; its request returned HTTP 200 and its runtime load state was `loaded`.
+- The managed AdSense script, lookup document, and both ad document requests returned HTTP 200. AdSense ping and SODAR requests returned HTTP 204. One ping also surfaced as `ERR_ABORTED` when the browser context closed after evidence capture; it had already returned 204 and caused no page error.
+- No relevant console or duplicate-initialization error was recorded.
+- The header unit was the only configured unit initialized in the unchanged initial viewport. It reported official `data-ad-status="unfilled"` and diagnostic-only `data-adsbygoogle-status="done"`.
+- The two 1440-pixel-hidden rail units and the two below-fold units were not initialized and retained no official status.
+- Configured-unit totals were: filled 0, optimized 0, unfilled 1, unresolved/uninitialized 4.
+- Page state was `fallback`; exactly one fallback was visible, none was clickable, live/fallback overlap was zero, and horizontal overflow was false.
+- AdSense inserted one managed iframe element during the unfilled request, but no paid creative fill occurred: the authoritative configured unit status was `unfilled`, its displayed live surface was 0 x 0 in fallback state, and no claim of a creative fill is made.
+- The visible result is captured at `pipeline/review/ad-fill-fallback/production-chrome-1440.png`; it shows the neutral header fallback below navigation, above content, with no overlap.
+
+| Logical slot | External slot | Initialized | Official `data-ad-status` | Diagnostic processing status | Fallback visible |
+| --- | --- | --- | --- | --- | --- |
+| `hub-header-banner` | `5574432869` | yes | `unfilled` | `done` | yes |
+| `rail-left-desktop` | `5115981872` | no | unresolved | absent | no |
+| `rail-right-desktop` | `9929324856` | no | unresolved | absent | no |
+| `hub-post-header-banner` | `5574432869` | no | unresolved | absent | no |
+| `hub-lower-content` | `5382861174` | no | unresolved | absent | no |
+
+This production observation is the all-unfilled outcome for the one initialized eligible unit, not evidence of an AdSense account fill. The repository integration, status observation, and fallback presentation worked as designed during the controlled check.
 
 ## Remaining limitations and external decisions
 
