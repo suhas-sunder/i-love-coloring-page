@@ -6,8 +6,8 @@
 # - NEXT_PUBLIC_SITE_URL
 # - NEXT_PUBLIC_COLORING_ASSET_BASE_URL
 # - NEXT_PUBLIC_SITE_NAME
-# Advertising behavior follows the standard Next.js runtime environment:
-# local development shows placeholders and production builds emit live units.
+# Eligible pages always emit the centralized AdSense units. Neutral placeholders
+# are status-driven fallbacks for failed, timed-out, or all-unfilled requests.
 
 [build]
   command = "npm run build"

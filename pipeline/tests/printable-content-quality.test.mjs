@@ -85,7 +85,7 @@ test("related printable sets are valid, relevant, deterministic, and varied", ()
   assert.ok(setHashes.size > runtime.records.length / 2, `${setHashes.size} unique sets`);
 });
 
-test("trust copy describes automatic production advertising and the approved printable-use terms", () => {
+test("trust copy describes configured display advertising and the approved printable-use terms", () => {
   const privacy = text("app/privacy/page.tsx");
   const terms = text("app/terms/page.tsx");
   assert.match(privacy, /Eligible production content pages use the configured\s+AdSense units automatically/);

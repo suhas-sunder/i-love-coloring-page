@@ -38,10 +38,11 @@ for (const entry of cases) {
     expectedSlotCount: slots.length === entry.expectedSlotCount,
     uniqueSlots: slots.length === new Set(slots).size,
     topBeforeH1: entry.expectedSlotCount === 0 || html.indexOf('data-ad-logical-placement="top-banner"') < html.indexOf("<h1"),
-    correctAdvertisingMode: entry.expectedSlotCount === 0
-      ? !/data-ad-mode=|data-ad-client=|data-ad-placeholder=/i.test(html)
+    correctAdvertisingArchitecture: entry.expectedSlotCount === 0
+      ? !/data-ad-fallback-policy=|data-ad-client=|data-ad-fallback=/i.test(html)
       : slots.length > 0 && liveUnits.length === slots.length
-        && !html.includes('data-ad-placeholder="true"')
+        && (html.match(/data-ad-fallback-policy="page-all-or-none-v1"/g) || []).length === slots.length
+        && (html.match(/data-ad-fallback="true" hidden=""/g) || []).length === slots.length
         && (html.match(/data-ad-client="ca-pub-4810616735714570"/g) || []).length === liveUnits.length,
   };
   entry.slots = slots;
@@ -64,7 +65,7 @@ for (const entry of cases) {
         && mainRegion.includes(">Print<")
         && mainRegion.includes(">Download PDF<")
         && mainRegion.includes(">Download image<"),
-      noAdInsidePreviewActions: !mainRegion.includes("data-ad-placeholder"),
+      noAdInsidePreviewActions: !mainRegion.includes("data-ad-fallback"),
       relatedBannerAfterCards:
         html.indexOf('data-ad-logical-placement="related-banner"') > html.indexOf("Related printable pages"),
     });

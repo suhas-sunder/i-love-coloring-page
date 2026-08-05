@@ -401,7 +401,7 @@
     "actionControlSeparation": "Print and Download remain inside the printable main region; no placeholder is inside that region.",
     "meaningfulContentSeparation": "Page headings, galleries, related content, or policy sections separate configured banner positions.",
     "thinPageFindings": [],
-    "correction": "Configured ad mode retains the accepted one-well small-screen/intermediate model and three-well wide-desktop model."
+    "correction": "The coordinated live-unit architecture retains the accepted one-well small-screen/intermediate model and three-well wide-desktop model."
   },
   "networkDomainFindings": [
     {
@@ -450,7 +450,7 @@
       "classification": "Explicit child-oriented labeling",
       "audienceSignals": "Children are named directly; family, teacher, and caregiver use is also plausible.",
       "currentThirdPartyCollection": "Live AdSense units are configured on eligible content pages; no analytics integration was found.",
-      "currentAdvertisingState": "live",
+      "currentAdvertisingState": "status-coordinated-live",
       "futureAgeTreatmentDecisionRequired": true
     },
     {
@@ -459,7 +459,7 @@
       "classification": "Mixed or ambiguous audience",
       "audienceSignals": "Difficulty wording can appeal to children, beginners, families, or adults.",
       "currentThirdPartyCollection": "Live AdSense units are configured on eligible content pages; no analytics integration was found.",
-      "currentAdvertisingState": "live",
+      "currentAdvertisingState": "status-coordinated-live",
       "futureAgeTreatmentDecisionRequired": true
     },
     {
@@ -468,7 +468,7 @@
       "classification": "Mixed or ambiguous audience",
       "audienceSignals": "Visual and subject cues may appeal across ages.",
       "currentThirdPartyCollection": "Live AdSense units are configured on eligible content pages; no analytics integration was found.",
-      "currentAdvertisingState": "live",
+      "currentAdvertisingState": "status-coordinated-live",
       "futureAgeTreatmentDecisionRequired": true
     },
     {
@@ -477,7 +477,7 @@
       "classification": "Mixed or ambiguous audience",
       "audienceSignals": "Subjects commonly serve children, families, teachers, and adults.",
       "currentThirdPartyCollection": "Live AdSense units are configured on eligible content pages; no analytics integration was found.",
-      "currentAdvertisingState": "live",
+      "currentAdvertisingState": "status-coordinated-live",
       "futureAgeTreatmentDecisionRequired": true
     },
     {
@@ -486,7 +486,7 @@
       "classification": "Owner/legal review required",
       "audienceSignals": "The label names adults, while the surrounding library includes mixed-audience content.",
       "currentThirdPartyCollection": "Live AdSense units are configured on eligible content pages; no analytics integration was found.",
-      "currentAdvertisingState": "live",
+      "currentAdvertisingState": "status-coordinated-live",
       "futureAgeTreatmentDecisionRequired": true
     },
     {
@@ -495,7 +495,7 @@
       "classification": "Mixed or ambiguous audience",
       "audienceSignals": "The general gallery combines audience, style, subject, and seasonal collections.",
       "currentThirdPartyCollection": "Live AdSense units are configured on eligible content pages; no analytics integration was found.",
-      "currentAdvertisingState": "live",
+      "currentAdvertisingState": "status-coordinated-live",
       "futureAgeTreatmentDecisionRequired": true
     },
     {
@@ -504,7 +504,7 @@
       "classification": "Owner/legal review required",
       "audienceSignals": "Audience signals depend on each page's title and collections.",
       "currentThirdPartyCollection": "Live AdSense units are configured on eligible content pages; no analytics integration was found.",
-      "currentAdvertisingState": "live",
+      "currentAdvertisingState": "status-coordinated-live",
       "futureAgeTreatmentDecisionRequired": true
     },
     {
@@ -513,7 +513,7 @@
       "classification": "Clearly general informational page",
       "audienceSignals": "These pages explain the site, policies, and contact details.",
       "currentThirdPartyCollection": "Live AdSense units are configured on eligible content pages; no analytics integration was found.",
-      "currentAdvertisingState": "live",
+      "currentAdvertisingState": "status-coordinated-live",
       "futureAgeTreatmentDecisionRequired": false
     }
   ],
@@ -667,8 +667,8 @@
     "imageSitemapPairs": 6352,
     "staticOutputs": 6920,
     "totalFiles": 69731,
-    "totalBytes": 1274534597,
-    "staticJavascriptBytes": 762184,
+    "totalBytes": 1311623820,
+    "staticJavascriptBytes": 769728,
     "globallyUniquePrintableDisplayTitles": 6352,
     "globallyUniquePrintableMetadataTitles": 6352,
     "deferredRuntimeLeakage": 0,

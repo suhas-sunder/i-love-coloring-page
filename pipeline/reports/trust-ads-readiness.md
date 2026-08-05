@@ -23,7 +23,7 @@ The verified public contact is admin@ilovecoloringpage.com. Metadata titles and 
 | --- | --- | --- | --- | --- |
 | assets.ilovecoloringpage.com | Required site asset delivery | gallery, home, hub, hub-pagination, printable | Yes | No |
 
-Search-data requests are same-origin and begin only after search intent. Fonts are emitted as same-origin static assets. Schema.org URLs are structured-data identifiers, not browser requests. Advertising mode is LIVE in the representative static output. No analytics, consent-management, affiliate-tracking, or site-cookie code was found in active source or representative static output.
+Search-data requests are same-origin and begin only after search intent. Fonts are emitted as same-origin static assets. Schema.org URLs are structured-data identifiers, not browser requests. The representative static output contains the status-coordinated live units and hidden all-or-none fallback siblings. No analytics, consent-management, affiliate-tracking, or site-cookie code was found in active source or representative static output.
 
 ## Audience and age-treatment review
 

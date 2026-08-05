@@ -11,17 +11,6 @@ export type AdPageFamily =
 
 export type AdLayoutMode = "full" | "condensed" | "none";
 
-export type AdMode = "off" | "placeholder" | "live";
-
-export type AdRuntimeEnvironment = "development" | "test" | "production";
-
-export type ResolvedAdMode = {
-  mode: AdMode;
-  publisherId: string | null;
-  slotIds: Partial<Record<AdSlotId, string>>;
-  reason: string;
-};
-
 export type AdLogicalPlacement =
   | "top-banner"
   | "left-rail"

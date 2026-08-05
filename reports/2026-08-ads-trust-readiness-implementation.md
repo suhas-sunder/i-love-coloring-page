@@ -1,5 +1,7 @@
 # Advertising and trust readiness implementation
 
+> Active advertising architecture note (August 4, 2026): the later fill/fallback coordination milestone removed every runtime/environment mode described historically below. Eligible pages now use one real-unit path with initially hidden fallback siblings governed by official `data-ad-status` results. See `reports/2026-08-ad-fill-fallback-implementation.md`.
+
 Date: August 2, 2026
 
 ## Outcome

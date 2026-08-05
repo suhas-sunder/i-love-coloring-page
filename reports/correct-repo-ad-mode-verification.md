@@ -1,8 +1,8 @@
-# Correct repository advertisement-mode verification
+# Correct repository advertisement coordination verification
 
-This record was updated on August 4, 2026, after the automatic advertising-mode correction. The verified repository now derives advertising behavior only from the standard Next.js runtime environment.
+This record is superseded by `reports/2026-08-ad-fill-fallback-implementation.md`. The repository now uses the same real-unit markup and runtime in every build context; no runtime environment selects advertising behavior.
 
-## Development and tests
+## Historical development-placeholder evidence
 
 - Mode: PLACEHOLDER by default
 - AdSense script: absent
@@ -14,10 +14,11 @@ This record was updated on August 4, 2026, after the automatic advertising-mode 
 - Evidence: `after/desktop-1440-ad-placeholder.png`, `after/desktop-1920-ad-placeholder.png`, `after/mobile-390x844-ad-placeholder.png`, and `after/desktop-1440-printable-ad-placeholder.png`
 - Result: pass
 
-## Production
+## Current architecture
 
-- State: LIVE automatically when the centralized configuration is valid
-- No project-specific advertising environment variable is read or required
-- Duplicate initialization and route-transition slot checks: covered by the active advertisement suite
-- Invalid configuration still resolves safely to OFF
-- Result: live units render in production output; the external script is created once when the first eligible unit approaches the viewport
+- Eligible pages render configured real units and initially hidden fallback siblings.
+- The script is inserted once when the first eligible unit approaches the viewport.
+- Page state is `pending`, `fallback`, or `adsense-present`.
+- Any `filled` or `unfill-optimized` result hides every fallback for the route lifecycle.
+- Duplicate initialization and route-transition cleanup are covered by the active advertisement suite.
+- No environment variable or runtime environment selects the path.

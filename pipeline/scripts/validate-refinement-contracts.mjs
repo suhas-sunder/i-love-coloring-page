@@ -32,12 +32,13 @@ if (existsSync(home)) {
     .map((match) => match[1])
     .filter((slotId) => !/^\d{10}$/.test(slotId));
   assert.equal(logicalSlots.length, 5, "production homepage must retain its five configured logical slots");
-  assert.match(html, /data-ad-mode="live"/, "production export must emit live units");
+  assert.match(html, /data-ad-fallback-policy="page-all-or-none-v1"/, "production export must emit the coordinated live-unit marker");
   assert.match(html, /data-ad-client="ca-pub-4810616735714570"/, "production units must use the centralized client ID");
-  assert.doesNotMatch(html, /data-ad-placeholder="true"|Development placeholder/, "production export must not emit development placeholders");
+  assert.match(html, /data-ad-fallback="true" hidden=""/, "status fallbacks must exist and start hidden");
+  assert.doesNotMatch(html, /Development placeholder|data-ad-mode=/, "production export must not emit an advertising mode");
 
   for (const relativePath of ["out/privacy.html", "out/sitemap.html", "out/404.html"]) {
-    assert.doesNotMatch(read(relativePath), /data-ad-mode=|data-ad-client=|data-ad-placeholder=/, `${relativePath} must remain ad-free`);
+    assert.doesNotMatch(read(relativePath), /data-ad-fallback-policy=|data-ad-client=|data-ad-fallback=/, `${relativePath} must remain ad-free`);
   }
 }
 

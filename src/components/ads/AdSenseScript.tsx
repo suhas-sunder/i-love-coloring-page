@@ -1,9 +1,8 @@
-import { resolveAdMode } from "@/lib/ads/mode";
+import { ADSENSE_CLIENT_ID, hasValidAdSenseConfiguration } from "@/lib/ads/config";
 
 import { AdSenseRuntime } from "./AdSenseRuntime";
 
 export function AdSenseScript() {
-  const configuration = resolveAdMode();
-  if (configuration.mode !== "live" || !configuration.publisherId) return null;
-  return <AdSenseRuntime clientId={configuration.publisherId} />;
+  if (!hasValidAdSenseConfiguration()) return null;
+  return <AdSenseRuntime clientId={ADSENSE_CLIENT_ID} />;
 }

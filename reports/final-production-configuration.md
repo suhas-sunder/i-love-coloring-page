@@ -16,7 +16,7 @@ No deployment or provider-account mutation was performed.
 | Netlify Node version | 22 | Verified in `netlify.toml` |
 | Local validation runtime | Node 25.9.0, npm 10.9.0 | Diagnostic only |
 | Package-manager pin | None | Not configured |
-| Production ad mode | LIVE automatically with centralized valid IDs | Verified in the August 4 correction |
+| Advertising architecture | Environment-independent real units with status-driven fallback siblings | Verified in the fill/fallback milestone |
 | Site URL default | `https://www.ilovecoloringpage.com` | Verified |
 | Asset base default | `https://assets.ilovecoloringpage.com/coloring-pages` | Verified |
 | Revision diagnostic | `out/build-revision.json` | Generated locally |
@@ -44,7 +44,7 @@ Production must keep:
 - asset base on the approved custom asset domain
 - the centralized public AdSense publisher and five slot identifiers unchanged
 
-Advertising uses no project-specific environment variables. Development and tests show placeholders; production emits live units.
+Advertising uses no project-specific environment variables and does not branch on the runtime environment. Eligible pages emit the same real units and hidden fallbacks in local, test, and production builds.
 
 No secret belongs in static output.
 

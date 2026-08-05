@@ -2,6 +2,15 @@
 
 This repository is a mature static Next.js coloring page gallery with an accepted canonical printable-page and discovery architecture.
 
+## Current AdSense Fill/Fallback Contract
+
+- Eligible pages always render the configured real AdSense units through one environment-independent code path.
+- Advertising behavior must not branch on `NODE_ENV` or a project-specific environment variable.
+- Neutral `Advertisement` placeholders are hidden fallback siblings, not a development or production mode.
+- A page may show fallbacks only after all initialized units are unfilled, script or initialization failure, or the centralized timeout.
+- Any `filled` or `unfill-optimized` `data-ad-status` result suppresses every fallback for that route lifecycle, including after a late fill.
+- Older round-specific rules describing permanently visible or build-switched placeholders are historical and are superseded by this contract.
+
 ## Source Image Safety
 
 - Original source images are immutable.

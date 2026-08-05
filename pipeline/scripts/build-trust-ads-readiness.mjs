@@ -36,11 +36,11 @@ const outFiles = listFiles(OUT);
 const activeSourceText = readActiveSourceText();
 const representativeOutput = readRepresentativeOutput(runtime.records[0]);
 const integrationScanText = `${activeSourceText}\n${representativeOutput.text}\n${readStaticRuntimeText(outFiles)}`;
-const productionAdMode = detectAdvertisingMode(representativeOutput.text);
+const coordinatedLiveAdvertising = hasCoordinatedLiveAdvertising(representativeOutput.text);
 const consentManagementFinding = findPattern(integrationScanText, /__tcfapi|cookiebot|onetrust|consentmanager|fundingchoices|quantcast.*choice/i);
 
 const integrationFindings = {
-  liveAdvertising: productionAdMode === "live" && findPattern(representativeOutput.text, /data-ad-client\s*=|class="ad-slot-live-unit"/i),
+  liveAdvertising: coordinatedLiveAdvertising && findPattern(representativeOutput.text, /data-ad-client\s*=|class="adsbygoogle ad-slot-live-unit"/i),
   publisherId: findPattern(integrationScanText, /ca-pub-[0-9]{10,}/i),
   adUnitId: ["5574432869", "5115981872", "9929324856", "2489818539", "5382861174"].every((slotId) => integrationScanText.includes(slotId)),
   verificationTag: findPattern(integrationScanText, /google-adsense-account|google-site-verification/i),
@@ -319,7 +319,7 @@ function buildNetworkDomainFindings(pages) {
 }
 
 function buildPlacementFindings(printable) {
-  const slotsEnabled = productionAdMode === "placeholder" || productionAdMode === "live";
+  const slotsEnabled = coordinatedLiveAdvertising;
   const cases = [
     placement("homepage", "/", slotsEnabled ? 5 : 0, "full"),
     placement("main-gallery", "/coloring-pages", slotsEnabled ? 5 : 0, "full"),
@@ -347,8 +347,8 @@ function buildPlacementFindings(printable) {
     meaningfulContentSeparation: "Page headings, galleries, related content, or policy sections separate configured banner positions.",
     thinPageFindings: [],
     correction: slotsEnabled
-      ? "Configured ad mode retains the accepted one-well small-screen/intermediate model and three-well wide-desktop model."
-      : "Production OFF mode emits no ad containers, labels, or reserved space.",
+      ? "The coordinated live-unit architecture retains the accepted one-well small-screen/intermediate model and three-well wide-desktop model."
+      : "No coordinated live-unit architecture was detected in the representative output.",
   };
 }
 
@@ -370,7 +370,7 @@ function placement(family, routePath, expectedLogicalSlots, expectedLayout, rela
 }
 
 function visibleModel(width, height) {
-  if (productionAdMode === "off") {
+  if (!coordinatedLiveAdvertising) {
     return {
       viewport: `${width}x${height}`,
       fullPageVisibleSlots: 0,
@@ -378,7 +378,7 @@ function visibleModel(width, height) {
       trustAndSitemapVisibleSlots: 0,
       reservedPixelAreaFullPage: 0,
       approximatePublisherContentArea: width * height,
-      approximationMethod: "Production OFF mode.",
+      approximationMethod: "No coordinated live-unit architecture was detected.",
     };
   }
   const banner = width <= 640 ? { width: Math.min(width, 320), height: 50 }
@@ -400,7 +400,7 @@ function visibleModel(width, height) {
 function buildAgeTreatmentFindings() {
   const common = {
     currentThirdPartyCollection: "Live AdSense units are configured on eligible content pages; no analytics integration was found.",
-    currentAdvertisingState: productionAdMode,
+    currentAdvertisingState: coordinatedLiveAdvertising ? "status-coordinated-live" : "absent",
     futureAgeTreatmentDecisionRequired: true,
   };
   return [
@@ -647,7 +647,7 @@ function renderOwnerInputRequired(gates, identity) {
 }
 
 function renderProductionReadinessStatus({ technicalPassed, productionReady, trustGates, accountFiles }) {
-  return `# Production readiness status\n\n- Ordinary technical build validation: ${technicalPassed ? "PASS" : "FAIL"}\n- Production readiness: ${productionReady ? "PASS" : "BLOCKED"}\n- Remaining owner/legal/account/external gates: ${trustGates.length}\n- LIVE advertising enabled in the default build: ${productionAdMode === "live" ? "yes" : "no"}\n- Verified ads.txt paths: ${accountFiles.adsTxt.join(", ") || "none"}\n\n\`npm run build\` validates and exports the static application without requiring invented owner facts. \`npm run verify:production-readiness\` adds the remaining external, owner, legal, and account gates and is expected to fail until they are resolved.\n`;
+  return `# Production readiness status\n\n- Ordinary technical build validation: ${technicalPassed ? "PASS" : "FAIL"}\n- Production readiness: ${productionReady ? "PASS" : "BLOCKED"}\n- Remaining owner/legal/account/external gates: ${trustGates.length}\n- Status-coordinated live advertising in the default build: ${coordinatedLiveAdvertising ? "yes" : "no"}\n- Verified ads.txt paths: ${accountFiles.adsTxt.join(", ") || "none"}\n\n\`npm run build\` validates and exports the static application without requiring invented owner facts. \`npm run verify:production-readiness\` adds the remaining external, owner, legal, and account gates and is expected to fail until they are resolved.\n`;
 }
 
 function csvCell(value) {
@@ -709,21 +709,21 @@ function buildMarkdown(value) {
   ).join("\n");
   const blockers = value.blockingIssues.map((entry) => `- **${entry.classification}:** ${entry.description}`).join("\n");
   const actions = value.ownerActions.map((entry) => `${entry.order}. ${entry.description} _${entry.classification}_`).join("\n");
-  const advertisingSummary = productionAdMode === "off"
-    ? "Advertising mode is OFF in the representative static output; no ad script, label, container, or reserved space is emitted."
-    : `Advertising mode is ${productionAdMode.toUpperCase()} in the representative static output.`;
-  const placementSummary = productionAdMode === "off"
-    ? "OFF mode reserves no advertising area. Print and Download controls remain free of ad containers."
+  const advertisingSummary = !coordinatedLiveAdvertising
+    ? "The representative static output does not contain the status-coordinated live-unit architecture."
+    : "The representative static output contains the status-coordinated live units and hidden all-or-none fallback siblings.";
+  const placementSummary = !coordinatedLiveAdvertising
+    ? "No coordinated advertising area was detected. Print and Download controls remain free of ad containers."
     : "The area proxy uses the viewport as a conservative lower bound; representative full documents contain additional content below the fold. Print and Download controls remain separated from configured ad slots.";
   const liveScriptStatus = value.integrationFindings.liveAdvertising ? "present" : "absent";
   const adsTxtStatus = value.adsTxtStatus.exactAuthorizedSellerRecord ? "present with the exact confirmed authorized-seller record" : "missing or mismatched";
   return `# Trust and Advertising Readiness\n\nReport date: ${value.reportDate}\n\nThis is a factual local readiness review. It does not certify legal compliance or guarantee advertising-account approval.\n\n## Trust pages\n\n| Route | H1 count | Logical ad slots | Last updated | Result |\n| --- | ---: | ---: | --- | --- |\n${trustRows}\n\nThe verified public contact is ${value.publicContactStatus.publicContactEmail}. Metadata titles and descriptions are unique, canonicals are self-referencing, footer links remain, and all six trust routes remain indexable and sitemap-eligible.\n\n## Technology and network inventory\n\n| Domain | Purpose | Page families | Initial load | Blocker |\n| --- | --- | --- | --- | --- |\n${networkRows}\n\nSearch-data requests are same-origin and begin only after search intent. Fonts are emitted as same-origin static assets. Schema.org URLs are structured-data identifiers, not browser requests. ${advertisingSummary} No analytics, consent-management, affiliate-tracking, or site-cookie code was found in active source or representative static output.\n\n## Audience and age-treatment review\n\n| Route group | Classification | Signals |\n| --- | --- | --- |\n${audienceRows}\n\nNo legal audience classification is made. The owner and qualified reviewer must review the live-advertising treatment for the site and its child-oriented or mixed-audience collections.\n\n## Advertisement placement and density\n\n| Page family | Logical slots | Layout | Meaningful publisher content |\n| --- | ---: | --- | --- |\n${placementRows}\n\n| Viewport | Full-page visible slots | Condensed visible slots | Reserved pixel area | Publisher-content area proxy |\n| --- | ---: | ---: | ---: | ---: |\n${viewportRows}\n\n${placementSummary} The 404 route has no ad placement.\n\n## Account readiness\n\n- Live advertising units in production output: ${liveScriptStatus}\n- Publisher ID and ad-unit IDs: ${value.integrationFindings.publisherId || value.integrationFindings.adUnitId ? "present; verification required" : "absent"}\n- Verification tag: ${value.integrationFindings.verificationTag ? "present; verification required" : "absent"}\n- ads.txt: ${adsTxtStatus}\n- CMP and Consent Mode: ${value.integrationFindings.consentManagement || value.integrationFindings.consentMode ? "present; verification required" : "absent"}\n- Age-treatment decision: ${value.ageTreatmentDecisionStatus.decided ? "recorded" : "not recorded"}\n- Affiliate tracking: ${value.integrationFindings.affiliateTracking ? "present; verification required" : "absent"}\n\n## Blocking issues\n\n${blockers}\n\n## Owner checklist\n\n${actions}\n\n## Counts and preservation\n\n- Runtime printables: ${value.counts.runtimePrintables.toLocaleString("en-US")}\n- Public hubs: ${value.counts.publicHubs.toLocaleString("en-US")}\n- Pagination routes: ${value.counts.paginationRoutes.toLocaleString("en-US")}\n- Regular sitemap URLs: ${value.counts.regularSitemapUrls.toLocaleString("en-US")}\n- Image sitemap pairs: ${value.counts.imageSitemapPairs.toLocaleString("en-US")}\n- Static outputs: ${value.counts.staticOutputs.toLocaleString("en-US")}\n- Frozen route-field hash: ${value.preservation.frozenRouteFieldHash}\n- Hub-membership hash: ${value.preservation.hubMembershipHash}\n\n## Owner command\n\n\`npm run generate:trust-readiness\`\n`;
 }
 
-function detectAdvertisingMode(html) {
-  if (/data-ad-mode="live"/.test(html)) return "live";
-  if (/data-ad-mode="placeholder"/.test(html)) return "placeholder";
-  return "off";
+function hasCoordinatedLiveAdvertising(html) {
+  return /data-ad-fallback-policy="page-all-or-none-v1"/.test(html)
+    && /class="adsbygoogle ad-slot-live-unit"/.test(html)
+    && /data-ad-fallback="true" hidden=""/.test(html);
 }
 
 function extractLogicalSlotIds(html) {

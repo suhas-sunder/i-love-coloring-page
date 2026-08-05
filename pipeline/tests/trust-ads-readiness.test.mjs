@@ -195,11 +195,12 @@ test("network integrations contain configured AdSense but no Cloudflare RUM, Pos
   ]) assert.doesNotMatch(combined, pattern);
   for (const route of ["/", "/coloring-pages", "/coloring-pages/animals"]) {
     const html = readOutputHtml(route);
-    assert.match(html, /data-ad-mode="live"/);
+    assert.match(html, /data-ad-fallback-policy="page-all-or-none-v1"/);
     assert.match(html, /data-ad-client="ca-pub-4810616735714570"/);
-    assert.doesNotMatch(html, /data-ad-placeholder="true"/);
+    assert.match(html, /data-ad-fallback="true" hidden=""/);
+    assert.doesNotMatch(html, /data-ad-mode=|Development placeholder/);
   }
-  assert.doesNotMatch(readOutputHtml("/privacy"), /data-ad-mode=|data-ad-client=|data-ad-placeholder=/i);
+  assert.doesNotMatch(readOutputHtml("/privacy"), /data-ad-fallback-policy=|data-ad-client=|data-ad-fallback=/i);
   assert.doesNotMatch(active, /document\.cookie|cookies\s*\(|set-cookie/i);
   assert.match(active, /fetch\("\/search-data\/navigation\.json"/);
   assert.match(active, /fetch\(searchDataPath/);
@@ -240,7 +241,7 @@ test("AdSense placement readiness preserves slots and accepted visible density",
   assert.match(css, /\.public-page-shell \.ad-slot-post-header-banner,[\s\S]*display: none/);
   assert.doesNotMatch(css, /data-ad-layout="full"[^}]+ad-slot-top-banner[^}]+display: none/);
   assert.match(css, /@media \(min-width: 1536px\)[\s\S]*\.ad-rail[\s\S]*display: block/);
-  assert.doesNotMatch(forbidden, /PageAdSlot|<AdSlot|<AdRail|data-ad-placeholder|>Advertisement</);
+  assert.doesNotMatch(forbidden, /PageAdSlot|<AdSlot|<AdRail|data-ad-fallback|>Advertisement</);
   assert.deepEqual([
     logicalSlots("/"),
     logicalSlots("/coloring-pages"),
@@ -259,11 +260,12 @@ test("AdSense account readiness contains the confirmed public configuration and 
   for (const pattern of [/google-adsense-account|google-site-verification/i, /__tcfapi|cookiebot|onetrust|consentmanager|fundingchoices/i, /ad_storage|analytics_storage/i]) assert.doesNotMatch(combined, pattern);
   for (const route of ["/", "/coloring-pages", "/coloring-pages/animals"]) {
     const html = readOutputHtml(route);
-    assert.match(html, /data-ad-mode="live"/);
+    assert.match(html, /data-ad-fallback-policy="page-all-or-none-v1"/);
     assert.match(html, /data-ad-client="ca-pub-4810616735714570"/);
-    assert.doesNotMatch(html, /data-ad-placeholder="true"/);
+    assert.match(html, /data-ad-fallback="true" hidden=""/);
+    assert.doesNotMatch(html, /data-ad-mode=|Development placeholder/);
   }
-  assert.doesNotMatch(readOutputHtml("/privacy"), /data-ad-mode=|data-ad-client=|data-ad-placeholder=/i);
+  assert.doesNotMatch(readOutputHtml("/privacy"), /data-ad-fallback-policy=|data-ad-client=|data-ad-fallback=/i);
   assert.equal(existsSync(path.join(ROOT, "ads.txt")), false);
   assert.equal(execFileSync("git", ["ls-files", "public/ads.txt"], { cwd: ROOT, encoding: "utf8" }).trim(), "public/ads.txt");
   assert.equal(readText("public/ads.txt").trim(), "google.com, pub-4810616735714570, DIRECT, f08c47fec0942fa0");

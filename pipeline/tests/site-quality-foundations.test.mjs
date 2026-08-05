@@ -10,23 +10,20 @@ const printables = JSON.parse(await read("src/generated/coloring/runtime-printab
 const indexation = JSON.parse(await read("src/config/indexation-manifest.json"));
 const hubCounts = JSON.parse(await read("src/generated/coloring/runtime-hub-counts.json"));
 const adsConfigModuleUrl = await transpileTypeScriptToDataUrl("src/lib/ads/config.ts");
-const mode = await importTypeScript("src/lib/ads/mode.ts", { "./config": adsConfigModuleUrl });
 const eligibility = await importTypeScript("src/lib/ads/eligibility.ts", { "./config": adsConfigModuleUrl });
 const assets = await importTypeScript("src/lib/coloring/assets.ts");
 
-test("advertising mode follows the injected runtime environment without custom gates", () => {
-  const development = mode.resolveAdMode({ runtimeEnvironment: "development" });
-  const tests = mode.resolveAdMode({ runtimeEnvironment: "test" });
-  const production = mode.resolveAdMode({ runtimeEnvironment: "production" });
-  const invalid = mode.resolveAdMode({ runtimeEnvironment: "production", configurationValid: false });
-
-  assert.equal(development.mode, "placeholder");
-  assert.equal(tests.mode, "placeholder");
-  assert.equal(production.mode, "live");
-  assert.equal(production.publisherId, "ca-pub-4810616735714570");
-  assert.equal(production.slotIds["home-header-banner"], "5574432869");
-  assert.equal(invalid.mode, "off");
-  assert.equal(invalid.publisherId, null);
+test("advertising uses one environment-independent real-unit and fallback path", async () => {
+  const script = await read("src/components/ads/AdSenseScript.tsx");
+  const slot = await read("src/components/ads/AdSlot.tsx");
+  const runtime = await read("src/components/ads/AdSenseRuntime.tsx");
+  const combined = `${script}\n${slot}\n${runtime}`;
+  assert.doesNotMatch(combined, /process\.env|NODE_ENV|resolveAdMode|AdRuntimeEnvironment|AdMode/);
+  assert.match(slot, /className="adsbygoogle ad-slot-live-unit"/);
+  assert.match(slot, /data-ad-fallback-policy="page-all-or-none-v1"/);
+  assert.match(slot, /data-ad-fallback="true" hidden/);
+  assert.match(script, /hasValidAdSenseConfiguration/);
+  assert.match(script, /<AdSenseRuntime clientId=\{ADSENSE_CLIENT_ID\}/);
 });
 
 test("live slot eligibility rejects invalid, hidden, distant, and duplicate units", () => {
@@ -46,7 +43,7 @@ test("live slot eligibility rejects invalid, hidden, distant, and duplicate unit
   assert.equal(eligibility.evaluateAdSlotEligibility({ ...eligibleInput, alreadyInitialized: true }).reason, "already-initialized");
 });
 
-test("LIVE initialization is idempotent per element and permits a new route element", async () => {
+test("AdSense initialization is idempotent per element and permits a new route element", async () => {
   const source = await read("src/components/ads/AdSenseRuntime.tsx");
   assert.match(source, /dataset\.adInitialized === "true"/);
   assert.match(source, /dataset\.adInitialized = "true"/);
@@ -55,14 +52,12 @@ test("LIVE initialization is idempotent per element and permits a new route elem
   assert.match(source, /evaluateAdSlotEligibility/);
 });
 
-test("invalid configuration and development placeholders cannot load the external script or render a live unit", async () => {
+test("invalid centralized configuration fails closed without introducing an advertising mode", async () => {
   const script = await read("src/components/ads/AdSenseScript.tsx");
   const slot = await read("src/components/ads/AdSlot.tsx");
-  assert.match(script, /configuration\.mode !== "live"/);
-  assert.match(slot, /configuration\.mode === "off"\) return null/);
-  assert.match(slot, /configuration\.mode === "placeholder"/);
-  assert.match(slot, /configuration\.mode === "live"/);
-  assert.match(slot, /className="ad-slot-live-unit"/);
+  assert.match(script, /if \(!hasValidAdSenseConfiguration\(\)\) return null/);
+  assert.match(slot, /if \(!hasValidAdSenseConfiguration\(\) \|\| !externalSlotId\) return null/);
+  assert.doesNotMatch(`${script}\n${slot}`, /placeholder mode|development mode|production mode|data-ad-mode/i);
 });
 
 test("collection membership is the authoritative count snapshot for every hub", () => {

@@ -101,27 +101,27 @@ test("advertisements remain outside navigation, cards, controls, grids, and dial
     "src/components/coloring/PrintablePreviewDialog.tsx",
     "src/components/coloring/PrintableDetailActions.tsx",
   ]);
-  assert.doesNotMatch(forbidden, /PageAdSlot|<AdSlot|<AdRail|data-ad-placeholder|>Advertisement</);
+  assert.doesNotMatch(forbidden, /PageAdSlot|<AdSlot|<AdRail|data-ad-fallback|>Advertisement</);
 
-  const mode = await readText("src/lib/ads/mode.ts");
   const script = await readText("src/components/ads/AdSenseScript.tsx");
   const runtime = await readText("src/components/ads/AdSenseRuntime.tsx");
+  const coordinator = await readText("src/lib/ads/pageCoordinator.ts");
   const eligibility = await readText("src/lib/ads/eligibility.ts");
   const shell = await readText("src/components/site/PublicPageShell.tsx");
-  assert.match(mode, /runtimeEnvironment !== "production"/);
-  assert.match(mode, /return resolved\("placeholder"/);
-  assert.match(mode, /mode: "live"/);
-  assert.match(mode, /configurationValid/);
-  assert.doesNotMatch(mode, /NEXT_PUBLIC_[A-Z0-9_]*AD|requestedMode|regionalRequirementsSatisfied/);
-  assert.match(script, /configuration\.mode !== "live"/);
+  assert.match(script, /hasValidAdSenseConfiguration/);
   assert.match(script, /<AdSenseRuntime/);
   assert.equal((`${script}\n${runtime}`.match(/id = "adsense-runtime"|SCRIPT_ID = "adsense-runtime"/g) || []).length, 1);
   assert.match(runtime, /new IntersectionObserver/);
-  assert.match(runtime, /new MutationObserver/);
+  assert.equal((runtime.match(/new MutationObserver/g) || []).length, 2);
+  assert.match(runtime, /attributeFilter: \["data-ad-status"\]/);
+  assert.doesNotMatch(runtime, /data-adsbygoogle-status/);
   assert.match(runtime, /if \(unit\.isConnected\) continue/);
   assert.match(runtime, /isActuallyVisible/);
   assert.match(runtime, /unit\.dataset\.adInitialized === "true"/);
   assert.match(runtime, /window\.adsbygoogle[\s\S]*\.push\(\{\}\)/);
+  assert.match(coordinator, /"pending" \| "fallback" \| "adsense-present"/);
+  assert.match(coordinator, /AD_FALLBACK_TIMEOUT_MS = 13_000/);
+  assert.match(coordinator, /"filled" \| "unfilled" \| "unfill-optimized"/);
   assert.doesNotMatch(runtime, /querySelectorAll\([^\n]+not\(\[data-initialized\]\)[\s\S]+forEach[\s\S]+push/);
   for (const field of ["configurationValid", "actuallyVisible", "nearViewport", "alreadyInitialized"]) {
     assert.match(eligibility, new RegExp(`${field}:`));
@@ -131,14 +131,15 @@ test("advertisements remain outside navigation, cards, controls, grids, and dial
   assert.match(eligibility, /sideRailsMinWidth/);
   assert.match(shell, /<PageAdSlot pageFamily=\{pageFamily\} placement="top-banner" \/>[\s\S]*\{layout\.sideRailsAllowed/);
 
-  const project = await readTreeText(["app", "src", "pipeline/scripts", "pipeline/tests"]);
+  const project = await readTreeText(["app", "src"]);
   const legacyModeVariable = ["NEXT", "PUBLIC", "AD", "MODE"].join("_");
   const legacyRegionalVariable = ["NEXT", "PUBLIC", "AD", "REGIONAL", "REQUIREMENTS", "SATISFIED"].join("_");
   assert.equal(project.includes(legacyModeVariable), false);
   assert.equal(project.includes(legacyRegionalVariable), false);
+  assert.doesNotMatch(project, /process\.env\.NODE_ENV|resolveAdMode|AdRuntimeEnvironment|ResolvedAdMode/);
 });
 
-test("placeholder presentation is visible but not interactive or heading content", async () => {
+test("fallback presentation is initially hidden, neutral, and noninteractive", async () => {
   const slot = await readText("src/components/ads/AdSlot.tsx");
   const rail = await readText("src/components/ads/AdRail.tsx");
   const css = await readText("src/styles/components.css");
@@ -146,11 +147,17 @@ test("placeholder presentation is visible but not interactive or heading content
   assert.doesNotMatch(slot, /tabIndex|tabindex|<a\b|<button\b|role="(?:button|link|navigation)"|<h[1-6]\b/);
   assert.match(slot, /aria-label="Advertisement"/);
   assert.match(slot, /role="complementary"/);
+  assert.match(slot, /data-ad-fallback="true" hidden/);
+  assert.doesNotMatch(slot, /Development placeholder|Sponsored|Learn more|Shop now/i);
   assert.match(slot, /data-ad-format="auto"/);
   assert.match(slot, /data-full-width-responsive="true"/);
   assert.match(rail, /<aside[^>]+aria-label=\{`\$\{side\} desktop advertising rail`\}/);
   assert.doesNotMatch(css, /\.ad-slot:focus-visible/);
   assert.doesNotMatch(css, /\.ad-slot[\s\S]{0,220}(?:gradient|box-shadow)/);
+  assert.match(css, /\.adsbygoogle\[data-ad-status="filled"\] ~ \[data-ad-fallback\]/);
+  assert.match(css, /\.adsbygoogle\[data-ad-status="unfill-optimized"\] ~ \[data-ad-fallback\]/);
+  assert.match(css, /\[data-ad-page-state="adsense-present"\] \[data-ad-fallback\]/);
+  assert.doesNotMatch(css, /\.ad-slot-fallback[\s\S]{0,180}position:\s*(?:fixed|sticky|absolute)/);
 });
 
 function extractLayout(source, start, end) {
