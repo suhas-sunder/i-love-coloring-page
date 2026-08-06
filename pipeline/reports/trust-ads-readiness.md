@@ -44,24 +44,26 @@ No legal audience classification is made. The owner and qualified reviewer must 
 
 | Page family | Logical slots | Layout | Meaningful publisher content |
 | --- | ---: | --- | --- |
-| homepage | 5 | full | Yes |
-| main-gallery | 5 | full | Yes |
-| hub-page-one | 5 | full | Yes |
+| homepage | 6 | full | Yes |
+| main-gallery | 6 | full | Yes |
+| hub-page-one | 6 | full | Yes |
 | hub-pagination | 3 | condensed | Yes |
-| printable-detail | 5 | full | Yes |
+| printable-detail | 6 | full | Yes |
 | trust-page | 0 | none | Yes |
 | human-sitemap | 0 | none | Yes |
 | static-404 | 0 | none | No |
 
 | Viewport | Full-page visible slots | Condensed visible slots | Reserved pixel area | Publisher-content area proxy |
 | --- | ---: | ---: | ---: | ---: |
-| 320x800 | 1 | 1 | 16,000 | 256,000 |
-| 360x800 | 1 | 1 | 16,000 | 288,000 |
-| 430x932 | 1 | 1 | 16,000 | 400,760 |
-| 768x1024 | 1 | 1 | 28,080 | 786,432 |
-| 1366x900 | 1 | 1 | 65,520 | 1,229,400 |
-| 1536x960 | 3 | 1 | 204,720 | 1,474,560 |
-| 1920x1080 | 3 | 1 | 257,520 | 2,073,600 |
+| 320x800 | 4 | 3 | 138,000 | 256,000 |
+| 360x800 | 4 | 3 | 138,000 | 288,000 |
+| 430x932 | 4 | 3 | 138,000 | 400,760 |
+| 768x1024 | 4 | 3 | 174,240 | 786,432 |
+| 1366x900 | 4 | 3 | 286,560 | 1,229,400 |
+| 1536x960 | 4 | 3 | 286,560 | 1,474,560 |
+| 1920x1080 | 4 | 3 | 286,560 | 2,073,600 |
+| 2400x1080 | 6 | 3 | 646,560 | 2,592,000 |
+| 3440x1440 | 6 | 3 | 646,560 | 4,953,600 |
 
 The area proxy uses the viewport as a conservative lower bound; representative full documents contain additional content below the fold. Print and Download controls remain separated from configured ad slots. The 404 route has no ad placement.
 

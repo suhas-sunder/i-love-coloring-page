@@ -7,8 +7,10 @@ This repository is a mature static Next.js coloring page gallery with an accepte
 - Eligible pages always render the configured real AdSense units through one environment-independent code path.
 - Advertising behavior must not branch on `NODE_ENV` or a project-specific environment variable.
 - Neutral `Advertisement` placeholders are hidden fallback siblings, not a development or production mode.
-- A page may show fallbacks only after all initialized units are unfilled, script or initialization failure, or the centralized timeout.
-- Any `filled` or `unfill-optimized` `data-ad-status` result suppresses every fallback for that route lifecycle, including after a late fill.
+- A page may show fallbacks only after all initialized units are unfilled, script or initialization failure, the script-availability grace period, or the centralized timeout.
+- A raw `filled` or `unfill-optimized` status is not global fill evidence by itself. Global fallback suppression requires that official status plus a visible non-zero Google-managed iframe or equivalent AdSense-owned surface.
+- A verified filled or optimized surface suppresses every fallback for that route lifecycle, including after a late fill. A blank optimized slot suppresses only its own sibling fallback while other eligible fallbacks may remain.
+- Full content layouts use four in-flow positions and two measured 300 by 600 ultra-wide rails. The header is fixed-size by breakpoint, never fixed-position; the two rails remain page-anchored rather than mirrored sticky units.
 - Older round-specific rules describing permanently visible or build-switched placeholders are historical and are superseded by this contract.
 
 ## Source Image Safety

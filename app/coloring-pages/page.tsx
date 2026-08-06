@@ -56,6 +56,8 @@ export default function ColoringPagesLanding() {
         />
       </section>
 
+      <PageAdSlot pageFamily="gallery" placement="supporting-square" />
+
       <section className="content-section collection-section" aria-labelledby="browse-collections-title" data-page-section="supporting-browse">
         <div className="section-heading-row">
           <div>

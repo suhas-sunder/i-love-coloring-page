@@ -111,6 +111,8 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
             </section>
           ) : null}
 
+          <PageAdSlot pageFamily="hub" placement="supporting-square" />
+
           {childHubs.length > 0 ? (
             <section className="content-section collection-section" aria-labelledby="narrower-browse-title" data-page-section="narrower-browse">
               <div className="section-heading-row">

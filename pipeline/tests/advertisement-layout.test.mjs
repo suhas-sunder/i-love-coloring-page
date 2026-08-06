@@ -53,34 +53,55 @@ test("advertisement placement is centralized and preserves every frozen identifi
   assert.match(config, /ADS_TXT_RECORD = "google\.com, pub-4810616735714570, DIRECT, f08c47fec0942fa0"/);
 });
 
-test("responsive advertisement behavior uses one safe rail threshold", async () => {
+test("manual advertisement geometry uses fixed header sizes and measured ultra-wide rails", async () => {
   const config = await readText("src/lib/ads/config.ts");
+  const layout = await readText("src/lib/ads/layout.ts");
   const css = await readText("src/styles/components.css");
   const baseCss = await readText("src/styles/base.css");
   assert.match(config, /mobileMaxWidth: 640/);
   assert.match(config, /tabletMaxWidth: 1023/);
   assert.match(config, /desktopMinWidth: 1024/);
-  assert.match(config, /sideRailsMinWidth: 1536/);
+  assert.match(config, /sideRailsMinWidth: AD_RAIL_LAYOUT\.minViewportWidth/);
+  assert.match(layout, /minViewportWidth: 2400/);
+  assert.match(layout, /width: 300/);
+  assert.match(layout, /height: 600/);
+  assert.match(layout, /contentGap: 24/);
+  assert.match(layout, /outerPadding: 16/);
   assert.match(css, /@media \(min-width: 641px\) and \(max-width: 1023px\)/);
   assert.match(css, /@media \(min-width: 1024px\)/);
-  assert.match(css, /\.ad-slot-responsive-banner \{[\s\S]*width: min\(100%, 320px\)[\s\S]*min-height: 50px/);
-  assert.match(css, /@media \(min-width: 641px\)[\s\S]*\.ad-slot-responsive-banner \{[\s\S]*width: min\(100%, 468px\)[\s\S]*min-height: 60px/);
-  assert.match(css, /@media \(min-width: 1024px\)[\s\S]*\.ad-slot-responsive-banner \{[\s\S]*width: min\(100%, 728px\)[\s\S]*min-height: 90px/);
-  assert.equal((css.match(/@media \(min-width: 1536px\)/g) || []).length, 1);
+  assert.match(css, /\.ad-slot-top-banner \{[\s\S]*width: min\(300px, calc\(100vw - 16px\)\)[\s\S]*height: 50px[\s\S]*max-height: 50px/);
+  assert.match(css, /@media \(min-width: 360px\)[\s\S]*\.ad-slot-top-banner \{[\s\S]*width: 320px/);
+  assert.match(css, /@media \(min-width: 641px\)[\s\S]*\.ad-slot-top-banner \{[\s\S]*width: 468px[\s\S]*height: 60px/);
+  assert.match(css, /@media \(min-width: 1024px\)[\s\S]*\.ad-slot-top-banner \{[\s\S]*width: 728px[\s\S]*height: 90px/);
+  assert.equal((css.match(/@media \(min-width: 2400px\)/g) || []).length, 1);
   assert.match(css, /\.ad-rail \{[\s\S]*display: none/);
-  assert.match(css, /@media \(min-width: 1536px\)[\s\S]*\.ad-rail \{[\s\S]*display: block/);
+  assert.match(css, /@media \(min-width: 2400px\)[\s\S]*data-ad-rails-eligible="true"[\s\S]*\.ad-rail \{[\s\S]*display: block/);
   assert.match(css, /\.ad-rail-left[\s\S]*left: calc\(-1 \* \(var\(--ad-rail-width\) \+ var\(--ad-rail-gap\)\)\)/);
   assert.match(css, /\.ad-rail-right[\s\S]*right: calc\(-1 \* \(var\(--ad-rail-width\) \+ var\(--ad-rail-gap\)\)\)/);
+  assert.match(css, /\.ad-rail \{[\s\S]*position: absolute[\s\S]*top: 112px[\s\S]*height: 600px/);
   assert.doesNotMatch(css, /\.ad-rail[\s\S]{0,300}position: (?:fixed|sticky)/);
   assert.doesNotMatch(css, /\.ad-slot-(?:top-banner|post-header-banner|related-banner)[\s\S]{0,200}position: (?:fixed|sticky)/);
-  assert.match(css, /\.public-page-shell \.ad-slot-post-header-banner,[\s\S]*display: none/);
+  assert.doesNotMatch(css, /\.public-page-shell \.ad-slot-(?:post-header-banner|supporting-square|related-banner)[\s\S]{0,300}display: none/);
   assert.doesNotMatch(css, /data-ad-layout="full"[^}]+ad-slot-top-banner[^}]+display: none/);
   assert.doesNotMatch(baseCss, /html\s*\{[^}]*min-width:\s*320px/);
 });
 
 test("page-family density rules and exceptions are explicit", async () => {
   const config = await readText("src/lib/ads/config.ts");
+  const routes = await readProjectText([
+    "app/page.tsx",
+    "app/coloring-pages/page.tsx",
+    "src/components/coloring/HubPageContent.tsx",
+    "src/components/coloring/PrintableDetailPage.tsx",
+  ]);
   assert.match(config, /function fullLayout[\s\S]*"left-rail": "rail-left-desktop"[\s\S]*"right-rail": "rail-right-desktop"/);
+  for (const family of ["home", "gallery", "hub", "printable"]) {
+    const pageLayout = extractLayout(config, family, family === "home" ? "gallery" : family === "gallery" ? "gallery-pagination" : family === "hub" ? "hub-pagination" : "trust");
+    for (const placement of ["top-banner", "post-header-banner", "supporting-square", "related-banner"]) {
+      assert.match(pageLayout, new RegExp(`"${placement}"`), `${family} ${placement}`);
+    }
+  }
+  assert.equal((routes.match(/placement="supporting-square"/g) || []).length, 4);
   assert.match(config, /"hub-pagination": condensedLayout\(\{[\s\S]*"related-banner": "hub-after-gallery"/);
   assert.doesNotMatch(extractLayout(config, "hub-pagination", "printable"), /supporting-square|left-rail|right-rail/);
   assert.match(extractLayout(config, "trust", "html-sitemap"), /mode: "none"[\s\S]*slots: \{\}/);
@@ -106,6 +127,7 @@ test("advertisements remain outside navigation, cards, controls, grids, and dial
   const script = await readText("src/components/ads/AdSenseScript.tsx");
   const runtime = await readText("src/components/ads/AdSenseRuntime.tsx");
   const coordinator = await readText("src/lib/ads/pageCoordinator.ts");
+  const creativeEvidence = await readText("src/lib/ads/creativeEvidence.ts");
   const eligibility = await readText("src/lib/ads/eligibility.ts");
   const shell = await readText("src/components/site/PublicPageShell.tsx");
   assert.match(script, /hasValidAdSenseConfiguration/);
@@ -113,14 +135,18 @@ test("advertisements remain outside navigation, cards, controls, grids, and dial
   assert.equal((`${script}\n${runtime}`.match(/id = "adsense-runtime"|SCRIPT_ID = "adsense-runtime"/g) || []).length, 1);
   assert.match(runtime, /new IntersectionObserver/);
   assert.equal((runtime.match(/new MutationObserver/g) || []).length, 2);
+  assert.equal((runtime.match(/new ResizeObserver/g) || []).length, 1);
   assert.match(runtime, /attributeFilter: \["data-ad-status"\]/);
   assert.doesNotMatch(runtime, /data-adsbygoogle-status/);
   assert.match(runtime, /if \(unit\.isConnected\) continue/);
   assert.match(runtime, /isActuallyVisible/);
+  assert.match(runtime, /hasVisibleAdSenseOwnedSurface/);
+  assert.match(creativeEvidence, /googleads\.g\.doubleclick\.net|doubleclick\.net/);
   assert.match(runtime, /unit\.dataset\.adInitialized === "true"/);
   assert.match(runtime, /window\.adsbygoogle[\s\S]*\.push\(\{\}\)/);
   assert.match(coordinator, /"pending" \| "fallback" \| "adsense-present"/);
   assert.match(coordinator, /AD_FALLBACK_TIMEOUT_MS = 13_000/);
+  assert.match(coordinator, /AD_SCRIPT_AVAILABILITY_GRACE_MS = 4_000/);
   assert.match(coordinator, /"filled" \| "unfilled" \| "unfill-optimized"/);
   assert.doesNotMatch(runtime, /querySelectorAll\([^\n]+not\(\[data-initialized\]\)[\s\S]+forEach[\s\S]+push/);
   for (const field of ["configurationValid", "actuallyVisible", "nearViewport", "alreadyInitialized"]) {
@@ -130,6 +156,7 @@ test("advertisements remain outside navigation, cards, controls, grids, and dial
   assert.match(eligibility, /supportedPageFamilies\.includes/);
   assert.match(eligibility, /sideRailsMinWidth/);
   assert.match(shell, /<PageAdSlot pageFamily=\{pageFamily\} placement="top-banner" \/>[\s\S]*\{layout\.sideRailsAllowed/);
+  assert.match(shell, /data-ad-layout-version=\{layout\.mode === "full" \? "manual-six-v2" : undefined\}/);
 
   const project = await readTreeText(["app", "src"]);
   const legacyModeVariable = ["NEXT", "PUBLIC", "AD", "MODE"].join("_");
@@ -144,13 +171,17 @@ test("fallback presentation is initially hidden, neutral, and noninteractive", a
   const rail = await readText("src/components/ads/AdRail.tsx");
   const css = await readText("src/styles/components.css");
   assert.match(slot, /<span className="ad-slot-label">Advertisement<\/span>/);
+  assert.match(slot, /<span className="ad-slot-fallback-lines" aria-hidden="true">/);
   assert.doesNotMatch(slot, /tabIndex|tabindex|<a\b|<button\b|role="(?:button|link|navigation)"|<h[1-6]\b/);
   assert.match(slot, /aria-label="Advertisement"/);
   assert.match(slot, /role="complementary"/);
-  assert.match(slot, /data-ad-fallback="true" hidden/);
+  assert.match(slot, /aria-hidden="true" data-ad-fallback="true" hidden/);
   assert.doesNotMatch(slot, /Development placeholder|Sponsored|Learn more|Shop now/i);
-  assert.match(slot, /data-ad-format="auto"/);
-  assert.match(slot, /data-full-width-responsive="true"/);
+  assert.match(slot, /data-ad-format=\{isFixedHeader \? undefined : "auto"\}/);
+  assert.match(slot, /data-full-width-responsive=\{isFixedHeader \? undefined : "true"\}/);
+  assert.match(slot, /data-ad-size-policy=\{isFixedHeader \? "fixed-header-v1" : undefined\}/);
+  assert.match(rail, /data-ad-rail=\{side\}/);
+  assert.match(rail, /data-ad-rail-size="300x600"/);
   assert.match(rail, /<aside[^>]+aria-label=\{`\$\{side\} desktop advertising rail`\}/);
   assert.doesNotMatch(css, /\.ad-slot:focus-visible/);
   assert.doesNotMatch(css, /\.ad-slot[\s\S]{0,220}(?:gradient|box-shadow)/);
@@ -158,6 +189,7 @@ test("fallback presentation is initially hidden, neutral, and noninteractive", a
   assert.match(css, /\.adsbygoogle\[data-ad-status="unfill-optimized"\] ~ \[data-ad-fallback\]/);
   assert.match(css, /\[data-ad-page-state="adsense-present"\] \[data-ad-fallback\]/);
   assert.doesNotMatch(css, /\.ad-slot-fallback[\s\S]{0,180}position:\s*(?:fixed|sticky|absolute)/);
+  assert.doesNotMatch(css, /\.ad-slot-fallback[\s\S]{0,260}(?:box-shadow|gradient|cursor:\s*pointer|transition)/);
 });
 
 function extractLayout(source, start, end) {

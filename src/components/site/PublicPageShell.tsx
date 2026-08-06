@@ -16,7 +16,12 @@ export function PublicPageShell({ pageFamily, className, children }: PublicPageS
   const classes = ["page-shell", "public-page-shell", className].filter(Boolean).join(" ");
 
   return (
-    <main className={classes} data-ad-layout={layout.mode} data-page-family={pageFamily}>
+    <main
+      className={classes}
+      data-ad-layout={layout.mode}
+      data-ad-layout-version={layout.mode === "full" ? "manual-six-v2" : undefined}
+      data-page-family={pageFamily}
+    >
       <PageAdSlot pageFamily={pageFamily} placement="top-banner" />
       {layout.sideRailsAllowed ? (
         <>

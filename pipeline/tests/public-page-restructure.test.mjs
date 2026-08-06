@@ -101,8 +101,9 @@ test("printable detail protects preview actions and aligns the standard placemen
     "data-page-section=\"printable-main\"",
     "<PrintableDetailActions",
     "Related printable pages",
-    "placement=\"related-banner\"",
     "Related Collections",
+    "placement=\"supporting-square\"",
+    "placement=\"related-banner\"",
   ]);
   const mainStart = source.indexOf("<section className=\"printable-main\"");
   const mainEnd = source.indexOf("</section>", mainStart);

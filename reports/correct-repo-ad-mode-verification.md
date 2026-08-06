@@ -19,6 +19,6 @@ This record is superseded by `reports/2026-08-ad-fill-fallback-implementation.md
 - Eligible pages render configured real units and initially hidden fallback siblings.
 - The script is inserted once when the first eligible unit approaches the viewport.
 - Page state is `pending`, `fallback`, or `adsense-present`.
-- Any `filled` or `unfill-optimized` result hides every fallback for the route lifecycle.
+- Official `filled` or `unfill-optimized` status hides every fallback only when a visible non-zero Google-managed surface is also present; raw or empty status results do not falsely claim a loaded ad.
 - Duplicate initialization and route-transition cleanup are covered by the active advertisement suite.
 - No environment variable or runtime environment selects the path.

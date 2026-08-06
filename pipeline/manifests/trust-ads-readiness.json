@@ -226,14 +226,15 @@
         "family": "homepage",
         "route": "/",
         "expectedLayout": "full",
-        "expectedLogicalSlots": 5,
-        "actualLogicalSlots": 5,
-        "uniqueLogicalSlots": 5,
+        "expectedLogicalSlots": 6,
+        "actualLogicalSlots": 6,
+        "uniqueLogicalSlots": 6,
         "slotIds": [
           "home-header-banner",
           "rail-left-desktop",
           "rail-right-desktop",
           "home-after-hero",
+          "home-supporting-square",
           "home-lower-content"
         ],
         "meaningfulPublisherContent": true
@@ -242,14 +243,15 @@
         "family": "main-gallery",
         "route": "/coloring-pages",
         "expectedLayout": "full",
-        "expectedLogicalSlots": 5,
-        "actualLogicalSlots": 5,
-        "uniqueLogicalSlots": 5,
+        "expectedLogicalSlots": 6,
+        "actualLogicalSlots": 6,
+        "uniqueLogicalSlots": 6,
         "slotIds": [
           "coloring-pages-header-banner",
           "rail-left-desktop",
           "rail-right-desktop",
           "coloring-pages-after-featured",
+          "coloring-pages-supporting-square",
           "coloring-pages-lower-content"
         ],
         "meaningfulPublisherContent": true
@@ -258,14 +260,15 @@
         "family": "hub-page-one",
         "route": "/coloring-pages/animals",
         "expectedLayout": "full",
-        "expectedLogicalSlots": 5,
-        "actualLogicalSlots": 5,
-        "uniqueLogicalSlots": 5,
+        "expectedLogicalSlots": 6,
+        "actualLogicalSlots": 6,
+        "uniqueLogicalSlots": 6,
         "slotIds": [
           "hub-header-banner",
           "rail-left-desktop",
           "rail-right-desktop",
           "hub-post-header-banner",
+          "hub-supporting-square",
           "hub-lower-content"
         ],
         "meaningfulPublisherContent": true
@@ -288,14 +291,15 @@
         "family": "printable-detail",
         "route": "/printables/animals/animals-alligator-4feec8505a",
         "expectedLayout": "full",
-        "expectedLogicalSlots": 5,
-        "actualLogicalSlots": 5,
-        "uniqueLogicalSlots": 5,
+        "expectedLogicalSlots": 6,
+        "actualLogicalSlots": 6,
+        "uniqueLogicalSlots": 6,
         "slotIds": [
           "printable-header-banner",
           "rail-left-desktop",
           "rail-right-desktop",
           "printable-post-header-banner",
+          "printable-supporting-square",
           "printable-after-related"
         ],
         "meaningfulPublisherContent": true
@@ -336,72 +340,90 @@
     "visibleModel": [
       {
         "viewport": "320x800",
-        "fullPageVisibleSlots": 1,
-        "condensedPageVisibleSlots": 1,
+        "fullPageVisibleSlots": 4,
+        "condensedPageVisibleSlots": 3,
         "trustAndSitemapVisibleSlots": 0,
-        "reservedPixelAreaFullPage": 16000,
+        "reservedPixelAreaFullPage": 138000,
         "approximatePublisherContentArea": 256000,
         "approximationMethod": "Viewport area is a conservative lower-bound proxy; full documents contain additional publisher content below the fold."
       },
       {
         "viewport": "360x800",
-        "fullPageVisibleSlots": 1,
-        "condensedPageVisibleSlots": 1,
+        "fullPageVisibleSlots": 4,
+        "condensedPageVisibleSlots": 3,
         "trustAndSitemapVisibleSlots": 0,
-        "reservedPixelAreaFullPage": 16000,
+        "reservedPixelAreaFullPage": 138000,
         "approximatePublisherContentArea": 288000,
         "approximationMethod": "Viewport area is a conservative lower-bound proxy; full documents contain additional publisher content below the fold."
       },
       {
         "viewport": "430x932",
-        "fullPageVisibleSlots": 1,
-        "condensedPageVisibleSlots": 1,
+        "fullPageVisibleSlots": 4,
+        "condensedPageVisibleSlots": 3,
         "trustAndSitemapVisibleSlots": 0,
-        "reservedPixelAreaFullPage": 16000,
+        "reservedPixelAreaFullPage": 138000,
         "approximatePublisherContentArea": 400760,
         "approximationMethod": "Viewport area is a conservative lower-bound proxy; full documents contain additional publisher content below the fold."
       },
       {
         "viewport": "768x1024",
-        "fullPageVisibleSlots": 1,
-        "condensedPageVisibleSlots": 1,
+        "fullPageVisibleSlots": 4,
+        "condensedPageVisibleSlots": 3,
         "trustAndSitemapVisibleSlots": 0,
-        "reservedPixelAreaFullPage": 28080,
+        "reservedPixelAreaFullPage": 174240,
         "approximatePublisherContentArea": 786432,
         "approximationMethod": "Viewport area is a conservative lower-bound proxy; full documents contain additional publisher content below the fold."
       },
       {
         "viewport": "1366x900",
-        "fullPageVisibleSlots": 1,
-        "condensedPageVisibleSlots": 1,
+        "fullPageVisibleSlots": 4,
+        "condensedPageVisibleSlots": 3,
         "trustAndSitemapVisibleSlots": 0,
-        "reservedPixelAreaFullPage": 65520,
+        "reservedPixelAreaFullPage": 286560,
         "approximatePublisherContentArea": 1229400,
         "approximationMethod": "Viewport area is a conservative lower-bound proxy; full documents contain additional publisher content below the fold."
       },
       {
         "viewport": "1536x960",
-        "fullPageVisibleSlots": 3,
-        "condensedPageVisibleSlots": 1,
+        "fullPageVisibleSlots": 4,
+        "condensedPageVisibleSlots": 3,
         "trustAndSitemapVisibleSlots": 0,
-        "reservedPixelAreaFullPage": 204720,
+        "reservedPixelAreaFullPage": 286560,
         "approximatePublisherContentArea": 1474560,
         "approximationMethod": "Viewport area is a conservative lower-bound proxy; full documents contain additional publisher content below the fold."
       },
       {
         "viewport": "1920x1080",
-        "fullPageVisibleSlots": 3,
-        "condensedPageVisibleSlots": 1,
+        "fullPageVisibleSlots": 4,
+        "condensedPageVisibleSlots": 3,
         "trustAndSitemapVisibleSlots": 0,
-        "reservedPixelAreaFullPage": 257520,
+        "reservedPixelAreaFullPage": 286560,
         "approximatePublisherContentArea": 2073600,
+        "approximationMethod": "Viewport area is a conservative lower-bound proxy; full documents contain additional publisher content below the fold."
+      },
+      {
+        "viewport": "2400x1080",
+        "fullPageVisibleSlots": 6,
+        "condensedPageVisibleSlots": 3,
+        "trustAndSitemapVisibleSlots": 0,
+        "reservedPixelAreaFullPage": 646560,
+        "approximatePublisherContentArea": 2592000,
+        "approximationMethod": "Viewport area is a conservative lower-bound proxy; full documents contain additional publisher content below the fold."
+      },
+      {
+        "viewport": "3440x1440",
+        "fullPageVisibleSlots": 6,
+        "condensedPageVisibleSlots": 3,
+        "trustAndSitemapVisibleSlots": 0,
+        "reservedPixelAreaFullPage": 646560,
+        "approximatePublisherContentArea": 4953600,
         "approximationMethod": "Viewport area is a conservative lower-bound proxy; full documents contain additional publisher content below the fold."
       }
     ],
     "actionControlSeparation": "Print and Download remain inside the printable main region; no placeholder is inside that region.",
     "meaningfulContentSeparation": "Page headings, galleries, related content, or policy sections separate configured banner positions.",
     "thinPageFindings": [],
-    "correction": "The coordinated live-unit architecture retains the accepted one-well small-screen/intermediate model and three-well wide-desktop model."
+    "correction": "The coordinated manual layout exposes four in-flow positions on full pages and adds two measured 300 by 600 rails only on qualifying ultra-wide viewports."
   },
   "networkDomainFindings": [
     {
@@ -667,8 +689,8 @@
     "imageSitemapPairs": 6352,
     "staticOutputs": 6920,
     "totalFiles": 69731,
-    "totalBytes": 1311623820,
-    "staticJavascriptBytes": 769728,
+    "totalBytes": 1395756076,
+    "staticJavascriptBytes": 772892,
     "globallyUniquePrintableDisplayTitles": 6352,
     "globallyUniquePrintableMetadataTitles": 6352,
     "deferredRuntimeLeakage": 0,
@@ -681,28 +703,28 @@
   "payload": {
     "trustPages": {
       "/about": {
-        "htmlBytes": 24470,
-        "rscBytes": 12674
+        "htmlBytes": 24554,
+        "rscBytes": 12750
       },
       "/contact": {
-        "htmlBytes": 23042,
-        "rscBytes": 12013
+        "htmlBytes": 23126,
+        "rscBytes": 12089
       },
       "/privacy": {
-        "htmlBytes": 33134,
-        "rscBytes": 17106
+        "htmlBytes": 33218,
+        "rscBytes": 17182
       },
       "/terms": {
-        "htmlBytes": 29244,
-        "rscBytes": 15190
+        "htmlBytes": 29328,
+        "rscBytes": 15266
       },
       "/affiliate-disclosure": {
-        "htmlBytes": 22275,
-        "rscBytes": 11578
+        "htmlBytes": 22359,
+        "rscBytes": 11654
       },
       "/editorial-policy": {
-        "htmlBytes": 26965,
-        "rscBytes": 13975
+        "htmlBytes": 27049,
+        "rscBytes": 14051
       }
     }
   },

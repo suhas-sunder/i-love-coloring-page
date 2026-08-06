@@ -321,11 +321,11 @@ function buildNetworkDomainFindings(pages) {
 function buildPlacementFindings(printable) {
   const slotsEnabled = coordinatedLiveAdvertising;
   const cases = [
-    placement("homepage", "/", slotsEnabled ? 5 : 0, "full"),
-    placement("main-gallery", "/coloring-pages", slotsEnabled ? 5 : 0, "full"),
-    placement("hub-page-one", "/coloring-pages/animals", slotsEnabled ? 5 : 0, "full"),
+    placement("homepage", "/", slotsEnabled ? 6 : 0, "full"),
+    placement("main-gallery", "/coloring-pages", slotsEnabled ? 6 : 0, "full"),
+    placement("hub-page-one", "/coloring-pages/animals", slotsEnabled ? 6 : 0, "full"),
     placement("hub-pagination", "/coloring-pages/animals/page/2", slotsEnabled ? 3 : 0, "condensed"),
-    placement("printable-detail", printable.canonicalPath, slotsEnabled ? 5 : 0, "full"),
+    placement("printable-detail", printable.canonicalPath, slotsEnabled ? 6 : 0, "full"),
     placement("trust-page", "/privacy", 0, "none"),
     placement("human-sitemap", "/sitemap", 0, "none"),
     placement("static-404", "/404", 0, "none", "404.html"),
@@ -342,12 +342,14 @@ function buildPlacementFindings(printable) {
       visibleModel(1366, 900),
       visibleModel(1536, 960),
       visibleModel(1920, 1080),
+      visibleModel(2400, 1080),
+      visibleModel(3440, 1440),
     ],
     actionControlSeparation: "Print and Download remain inside the printable main region; no placeholder is inside that region.",
     meaningfulContentSeparation: "Page headings, galleries, related content, or policy sections separate configured banner positions.",
     thinPageFindings: [],
     correction: slotsEnabled
-      ? "The coordinated live-unit architecture retains the accepted one-well small-screen/intermediate model and three-well wide-desktop model."
+      ? "The coordinated manual layout exposes four in-flow positions on full pages and adds two measured 300 by 600 rails only on qualifying ultra-wide viewports."
       : "No coordinated live-unit architecture was detected in the representative output.",
   };
 }
@@ -384,14 +386,15 @@ function visibleModel(width, height) {
   const banner = width <= 640 ? { width: Math.min(width, 320), height: 50 }
     : width <= 1023 ? { width: Math.min(width, 468), height: 60 }
       : { width: Math.min(width, 728), height: 90 };
-  const railWidth = width >= 1536 ? Math.min(160, Math.max(112, ((width - 1240 - 16) / 2) - 24)) : 0;
+  const railWidth = width >= 2400 ? 300 : 0;
   const railArea = railWidth * 600 * 2;
+  const inFlowArea = (banner.width * banner.height * 3) + (300 * 300);
   return {
     viewport: `${width}x${height}`,
-    fullPageVisibleSlots: width >= 1536 ? 3 : 1,
-    condensedPageVisibleSlots: 1,
+    fullPageVisibleSlots: width >= 2400 ? 6 : 4,
+    condensedPageVisibleSlots: 3,
     trustAndSitemapVisibleSlots: 0,
-    reservedPixelAreaFullPage: Math.round((banner.width * banner.height) + railArea),
+    reservedPixelAreaFullPage: Math.round(inFlowArea + railArea),
     approximatePublisherContentArea: width * height,
     approximationMethod: "Viewport area is a conservative lower-bound proxy; full documents contain additional publisher content below the fold.",
   };

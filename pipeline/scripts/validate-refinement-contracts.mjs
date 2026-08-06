@@ -31,7 +31,10 @@ if (existsSync(home)) {
   const logicalSlots = [...html.matchAll(/data-ad-slot="([^"]+)"/g)]
     .map((match) => match[1])
     .filter((slotId) => !/^\d{10}$/.test(slotId));
-  assert.equal(logicalSlots.length, 5, "production homepage must retain its five configured logical slots");
+  assert.equal(logicalSlots.length, 6, "production homepage must retain its six configured logical slots");
+  assert.equal(new Set(logicalSlots).size, 6, "production homepage logical wrappers must remain unique");
+  assert.match(html, /data-ad-layout-version="manual-six-v2"/, "full layouts must emit the manual six-position deployment marker");
+  assert.match(html, /data-ad-size-policy="fixed-header-v1"/, "the production header must use fixed breakpoint dimensions");
   assert.match(html, /data-ad-fallback-policy="page-all-or-none-v1"/, "production export must emit the coordinated live-unit marker");
   assert.match(html, /data-ad-client="ca-pub-4810616735714570"/, "production units must use the centralized client ID");
   assert.match(html, /data-ad-fallback="true" hidden=""/, "status fallbacks must exist and start hidden");

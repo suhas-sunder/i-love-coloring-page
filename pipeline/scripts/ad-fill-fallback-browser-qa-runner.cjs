@@ -6,7 +6,7 @@ const { chromium } = require("playwright");
 
 const ROOT = process.cwd();
 const BASE_URL = readBaseUrl(process.argv.slice(2));
-const REVIEW_DIR = path.join(ROOT, "pipeline", "review", "ad-fill-fallback");
+const REVIEW_DIR = path.join(ROOT, "pipeline", "review", "ad-layout-finalization");
 const ROUTES = [
   { id: "home", path: "/", ads: true },
   { id: "gallery", path: "/coloring-pages", ads: true },
@@ -23,6 +23,9 @@ const VIEWPORTS = [
   { width: 1024, height: 900 },
   { width: 1440, height: 1000 },
   { width: 1920, height: 1080 },
+  { width: 2400, height: 1080 },
+  { width: 2560, height: 1080 },
+  { width: 3440, height: 1440 },
 ];
 const BROWSERS = [
   { id: "chrome", channel: "chrome" },
@@ -110,7 +113,9 @@ async function runAllUnfilledMatrix(browser, browserId, evidence) {
             await waitForState(page, "fallback");
           }
           const snapshot = await inspectPage(page);
-          const expectedVisible = route.ads ? (viewport.width >= 1536 && route.id !== "hub-pagination" ? 3 : 1) : 0;
+          const expectedVisible = route.ads
+            ? (route.id === "hub-pagination" ? 3 : viewport.width >= 2400 ? 6 : 4)
+            : 0;
           const passed = Boolean(response)
             && (route.id === "not-found" ? response.status() === 404 : response.status() === 200)
             && snapshot.wrapperCount === (route.ads ? expectedWrapperCount(route.id) : 0)
@@ -125,10 +130,10 @@ async function runAllUnfilledMatrix(browser, browserId, evidence) {
           checks.push(check);
           if (!passed) failures.push(`${browserId}:${route.id}@${viewport.width}`);
 
-          if (browserId === "chrome" && route.id === "hub" && (viewport.width === 390 || viewport.width === 1920)) {
+          if (browserId === "chrome" && route.id === "hub" && [390, 1440, 3440].includes(viewport.width)) {
             const filename = `chrome-${viewport.width}-all-unfilled.png`;
             await page.screenshot({ path: path.join(REVIEW_DIR, filename), fullPage: false });
-            evidence.push(`pipeline/review/ad-fill-fallback/${filename}`);
+            evidence.push(`pipeline/review/ad-layout-finalization/${filename}`);
           }
         } finally {
           await page.close();
@@ -144,29 +149,41 @@ async function runAllUnfilledMatrix(browser, browserId, evidence) {
 async function runStateScenarios(browser, browserId, evidence) {
   const scenarios = [];
   scenarios.push(await runStatusScenario(browser, "one-filled", async (page) => {
-    await setMixedStatuses(page, "filled");
+    await setMixedStatuses(page, "filled", true);
     await waitForState(page, "adsense-present");
     const snapshot = await inspectPage(page);
     return { snapshot, passed: snapshot.visibleFallbackCount === 0 && snapshot.filledCount === 1 };
   }));
-  scenarios.push(await runStatusScenario(browser, "optimized", async (page) => {
-    await setMixedStatuses(page, "unfill-optimized");
+  scenarios.push(await runStatusScenario(browser, "optimized-visible", async (page) => {
+    await setMixedStatuses(page, "unfill-optimized", true);
     await waitForState(page, "adsense-present");
     const snapshot = await inspectPage(page);
     return { snapshot, passed: snapshot.visibleFallbackCount === 0 && snapshot.optimizedCount === 1 };
+  }));
+  scenarios.push(await runStatusScenario(browser, "filled-empty-iframe", async (page) => {
+    await setMixedStatuses(page, "filled", false, true);
+    await page.waitForTimeout(100);
+    const snapshot = await inspectPage(page);
+    return { snapshot, passed: snapshot.pageState === "pending" && snapshot.visibleFallbackCount === 0 };
+  }));
+  scenarios.push(await runStatusScenario(browser, "optimized-blank", async (page) => {
+    await setMixedStatuses(page, "unfill-optimized", false);
+    await page.waitForTimeout(100);
+    const snapshot = await inspectPage(page);
+    return { snapshot, passed: snapshot.pageState === "pending" && snapshot.visibleFallbackCount === 0 };
   }));
   scenarios.push(await runStatusScenario(browser, "late-fill", async (page) => {
     await setEveryInitializedStatus(page, "unfilled");
     await waitForState(page, "fallback");
     const fallbackSnapshot = await inspectPage(page);
-    await setFirstInitializedStatus(page, "filled");
+    await setFirstInitializedStatus(page, "filled", true);
     await waitForState(page, "adsense-present");
     await setFirstInitializedStatus(page, "unfilled");
     const finalSnapshot = await inspectPage(page);
     if (browserId === "chrome") {
       const filename = "chrome-1440-late-fill-final.png";
       await page.screenshot({ path: path.join(REVIEW_DIR, filename), fullPage: false });
-      evidence.push(`pipeline/review/ad-fill-fallback/${filename}`);
+      evidence.push(`pipeline/review/ad-layout-finalization/${filename}`);
     }
     return {
       fallbackSnapshot,
@@ -228,7 +245,7 @@ async function runTimeoutScenario(browser) {
     const pendingSnapshot = await inspectPage(page);
     await waitForState(page, "fallback", FALLBACK_TIMEOUT_MS + 3_000);
     const fallbackSnapshot = await inspectPage(page);
-    await setFirstInitializedStatus(page, "filled");
+    await setFirstInitializedStatus(page, "filled", true);
     await waitForState(page, "adsense-present");
     const lateSnapshot = await inspectPage(page);
     return {
@@ -254,7 +271,7 @@ async function runNavigationResetScenario(browser) {
     await page.setViewportSize({ width: 1440, height: 1000 });
     await page.goto(`${BASE_URL}/coloring-pages/animals`, { waitUntil: "domcontentloaded", timeout: 45_000 });
     await waitForInitialized(page);
-    await setFirstInitializedStatus(page, "filled");
+    await setFirstInitializedStatus(page, "filled", true);
     await waitForState(page, "adsense-present");
     await page.evaluate(() => { window.__adQaOldUnit = document.querySelector(".ad-slot-live-unit[data-ad-initialized='true']"); });
     await page.getByRole("link", { name: "Coloring Pages", exact: true }).first().click();
@@ -295,6 +312,11 @@ async function installHarness(context, scriptOutcome) {
     if (scriptOutcome === "failure") return route.abort("failed");
     return route.fulfill({ status: 200, contentType: "application/javascript", body: "/* deterministic AdSense script stub; statuses are injected by the QA harness */" });
   });
+  await context.route("https://googleads.g.doubleclick.net/**", (route) => route.fulfill({
+    status: 200,
+    contentType: "text/html",
+    body: "<!doctype html><title>AdSense QA surface</title>",
+  }));
 }
 
 async function waitForInitialized(page) {
@@ -311,15 +333,35 @@ async function setEveryInitializedStatus(page, status) {
   }, status);
 }
 
-async function setMixedStatuses(page, presentStatus) {
-  await page.evaluate((value) => {
+async function setMixedStatuses(page, presentStatus, withVisibleCreative, withEmptyCreative = false) {
+  await page.evaluate(({ value, visibleCreative, emptyCreative }) => {
     const units = [...document.querySelectorAll(".ad-slot-live-unit[data-ad-initialized='true']")];
-    units.forEach((unit, index) => unit.setAttribute("data-ad-status", index === 0 ? value : "unfilled"));
-  }, presentStatus);
+    units.forEach((unit, index) => {
+      unit.setAttribute("data-ad-status", index === 0 ? value : "unfilled");
+      if (index !== 0 || (!visibleCreative && !emptyCreative)) return;
+      const frame = document.createElement("iframe");
+      frame.src = "https://googleads.g.doubleclick.net/pagead/ads";
+      frame.style.width = visibleCreative ? "300px" : "0";
+      frame.style.height = visibleCreative ? "250px" : "0";
+      frame.setAttribute("data-qa-google-creative", visibleCreative ? "visible" : "empty");
+      unit.append(frame);
+    });
+  }, { value: presentStatus, visibleCreative: withVisibleCreative, emptyCreative: withEmptyCreative });
 }
 
-async function setFirstInitializedStatus(page, status) {
-  await page.evaluate((value) => document.querySelector(".ad-slot-live-unit[data-ad-initialized='true']")?.setAttribute("data-ad-status", value), status);
+async function setFirstInitializedStatus(page, status, withVisibleCreative = false) {
+  await page.evaluate(({ value, visibleCreative }) => {
+    const unit = document.querySelector(".ad-slot-live-unit[data-ad-initialized='true']");
+    if (!unit) return;
+    unit.setAttribute("data-ad-status", value);
+    if (!visibleCreative) return;
+    const frame = document.createElement("iframe");
+    frame.src = "https://googleads.g.doubleclick.net/pagead/ads";
+    frame.style.width = "300px";
+    frame.style.height = "250px";
+    frame.setAttribute("data-qa-google-creative", "visible");
+    unit.append(frame);
+  }, { value: status, visibleCreative: withVisibleCreative });
 }
 
 async function inspectPage(page) {
@@ -360,13 +402,23 @@ async function inspectPage(page) {
       optimizedCount: initialized.filter((unit) => unit.getAttribute("data-ad-status") === "unfill-optimized").length,
       unfilledCount: initialized.filter((unit) => unit.getAttribute("data-ad-status") === "unfilled").length,
       creativeIframeCount: document.querySelectorAll(".ad-slot iframe").length,
+      headerSize: (() => {
+        const header = document.querySelector("[data-ad-size-policy='fixed-header-v1']");
+        if (!header) return null;
+        const rect = header.getBoundingClientRect();
+        return { width: rect.width, height: rect.height };
+      })(),
+      railSizes: [...document.querySelectorAll("[data-ad-rail]")].filter(visible).map((rail) => {
+        const rect = rail.getBoundingClientRect();
+        return { side: rail.dataset.adRail, width: rect.width, height: rect.height };
+      }),
       horizontalOverflow: document.documentElement.scrollWidth > window.innerWidth,
     };
   });
 }
 
 function expectedWrapperCount(routeId) {
-  return routeId === "hub-pagination" ? 3 : 5;
+  return routeId === "hub-pagination" ? 3 : 6;
 }
 
 function readBaseUrl(args) {

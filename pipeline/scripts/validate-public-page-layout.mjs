@@ -13,12 +13,12 @@ if (!existsSync(OUT)) {
 }
 
 const cases = [
-  page("homepage", "index.html", "full", 5),
-  page("gallery", "coloring-pages.html", "full", 5),
-  page("largeHub", "coloring-pages/animals.html", "full", 5),
-  page("smallHub", "coloring-pages/forget-me-not.html", "full", 5),
+  page("homepage", "index.html", "full", 6),
+  page("gallery", "coloring-pages.html", "full", 6),
+  page("largeHub", "coloring-pages/animals.html", "full", 6),
+  page("smallHub", "coloring-pages/forget-me-not.html", "full", 6),
   page("hubPagination", "coloring-pages/animals/page/2.html", "condensed", 3),
-  page("printable", `${printable.canonicalPath.slice(1)}.html`, "full", 5),
+  page("printable", `${printable.canonicalPath.slice(1)}.html`, "full", 6),
   page("trust", "privacy.html", "none", 0),
   page("htmlSitemap", "sitemap.html", "none", 0),
   page("notFound", "404.html", "none", 0),

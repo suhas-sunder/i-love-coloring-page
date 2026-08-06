@@ -1,4 +1,5 @@
 export const AD_FALLBACK_TIMEOUT_MS = 13_000;
+export const AD_SCRIPT_AVAILABILITY_GRACE_MS = 4_000;
 
 export type AdPageState = "pending" | "fallback" | "adsense-present";
 
@@ -16,6 +17,7 @@ export type AdPageSnapshot = {
   state: AdPageState;
   registeredUnitCount: number;
   statuses: Readonly<Record<string, OfficialAdSenseStatus | null>>;
+  visibleAdSenseContent: Readonly<Record<string, boolean>>;
   lastTransitionReason: AdPageTransitionReason | null;
 };
 
@@ -24,7 +26,7 @@ type AdPageCoordinator = {
   getSnapshot: () => AdPageSnapshot;
   registerUnit: (logicalSlotId: string) => boolean;
   reportFailure: (reason: Extract<AdPageTransitionReason, "script-failure" | "initialization-failure">) => void;
-  reportStatus: (logicalSlotId: string, status: OfficialAdSenseStatus) => void;
+  reportStatus: (logicalSlotId: string, status: OfficialAdSenseStatus, hasVisibleContent?: boolean) => void;
   reportTimeout: () => void;
 };
 
@@ -32,6 +34,7 @@ export function createAdPageCoordinator(
   onStateChange: (snapshot: AdPageSnapshot) => void,
 ): AdPageCoordinator {
   const statuses = new Map<string, OfficialAdSenseStatus | null>();
+  const visibleAdSenseContent = new Map<string, boolean>();
   let state: AdPageState = "pending";
   let lastTransitionReason: AdPageTransitionReason | null = null;
   let disposed = false;
@@ -40,21 +43,24 @@ export function createAdPageCoordinator(
     dispose() {
       disposed = true;
       statuses.clear();
+      visibleAdSenseContent.clear();
     },
     getSnapshot,
     registerUnit(logicalSlotId) {
       if (disposed || statuses.has(logicalSlotId)) return false;
       statuses.set(logicalSlotId, null);
+      visibleAdSenseContent.set(logicalSlotId, false);
       return true;
     },
     reportFailure(reason) {
       transitionToFallback(reason);
     },
-    reportStatus(logicalSlotId, status) {
+    reportStatus(logicalSlotId, status, hasVisibleContent = false) {
       if (disposed || !statuses.has(logicalSlotId)) return;
 
       statuses.set(logicalSlotId, status);
-      if (status === "filled" || status === "unfill-optimized") {
+      if (hasVisibleContent) visibleAdSenseContent.set(logicalSlotId, true);
+      if ((status === "filled" || status === "unfill-optimized") && hasVisibleContent) {
         transition("adsense-present", status);
         return;
       }
@@ -88,6 +94,7 @@ export function createAdPageCoordinator(
       state,
       registeredUnitCount: statuses.size,
       statuses: Object.freeze(Object.fromEntries([...statuses.entries()].sort(([left], [right]) => left.localeCompare(right)))),
+      visibleAdSenseContent: Object.freeze(Object.fromEntries([...visibleAdSenseContent.entries()].sort(([left], [right]) => left.localeCompare(right)))),
       lastTransitionReason,
     };
   }

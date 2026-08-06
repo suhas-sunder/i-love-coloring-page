@@ -90,8 +90,6 @@ export function PrintableDetailPage({ printable }: { printable: RuntimePrintable
         <GalleryGrid items={relatedItems} priorityCount={0} showPrintActions={false} />
       </section>
 
-      <PageAdSlot pageFamily="printable" placement="related-banner" />
-
       {relatedHubs.length > 0 ? (
         <section className="content-section" aria-labelledby="related-collections-title" data-page-section="related-collections">
           <h2 className="section-title" id="related-collections-title">Related Collections</h2>
@@ -100,6 +98,9 @@ export function PrintableDetailPage({ printable }: { printable: RuntimePrintable
           </div>
         </section>
       ) : null}
+
+      <PageAdSlot pageFamily="printable" placement="supporting-square" />
+      <PageAdSlot pageFamily="printable" placement="related-banner" />
 
     </PublicPageShell>
   );

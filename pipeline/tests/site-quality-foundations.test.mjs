@@ -9,7 +9,8 @@ const hubs = JSON.parse(await read("src/generated/coloring/runtime-hubs.json"));
 const printables = JSON.parse(await read("src/generated/coloring/runtime-printables.json"));
 const indexation = JSON.parse(await read("src/config/indexation-manifest.json"));
 const hubCounts = JSON.parse(await read("src/generated/coloring/runtime-hub-counts.json"));
-const adsConfigModuleUrl = await transpileTypeScriptToDataUrl("src/lib/ads/config.ts");
+const adLayoutModuleUrl = await transpileTypeScriptToDataUrl("src/lib/ads/layout.ts");
+const adsConfigModuleUrl = await transpileTypeScriptToDataUrl("src/lib/ads/config.ts", { "./layout": adLayoutModuleUrl });
 const eligibility = await importTypeScript("src/lib/ads/eligibility.ts", { "./config": adsConfigModuleUrl });
 const assets = await importTypeScript("src/lib/coloring/assets.ts");
 
@@ -47,7 +48,7 @@ test("AdSense initialization is idempotent per element and permits a new route e
   const source = await read("src/components/ads/AdSenseRuntime.tsx");
   assert.match(source, /dataset\.adInitialized === "true"/);
   assert.match(source, /dataset\.adInitialized = "true"/);
-  assert.match(source, /new MutationObserver\(observeUnits\)/);
+  assert.match(source, /new MutationObserver\(\(\) => \{[\s\S]*observeUnits\(\)/);
   assert.match(source, /new IntersectionObserver/);
   assert.match(source, /evaluateAdSlotEligibility/);
 });
@@ -138,8 +139,11 @@ async function importTypeScript(relative, replacements = {}) {
   return import(`data:text/javascript;base64,${Buffer.from(output).toString("base64")}#${encodeURIComponent(relative)}`);
 }
 
-async function transpileTypeScriptToDataUrl(relative) {
-  const output = await transpileTypeScript(relative);
+async function transpileTypeScriptToDataUrl(relative, replacements = {}) {
+  let output = await transpileTypeScript(relative);
+  for (const [specifier, replacement] of Object.entries(replacements)) {
+    output = output.replaceAll(`from "${specifier}"`, `from "${replacement}"`);
+  }
   return `data:text/javascript;base64,${Buffer.from(output).toString("base64")}#${encodeURIComponent(relative)}`;
 }
 

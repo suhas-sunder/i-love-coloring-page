@@ -6,12 +6,22 @@ import type {
   AdSlotId,
   AdViewportDimensions,
 } from "./types";
+import { AD_RAIL_LAYOUT } from "./layout";
+
+export { AD_RAIL_LAYOUT } from "./layout";
 
 export const AD_BREAKPOINTS = {
   mobileMaxWidth: 640,
   tabletMaxWidth: 1023,
   desktopMinWidth: 1024,
-  sideRailsMinWidth: 1536,
+  sideRailsMinWidth: AD_RAIL_LAYOUT.minViewportWidth,
+} as const;
+
+export const AD_FIXED_HEADER_SIZES = {
+  narrow: { width: 300, height: 50 },
+  mobile: { width: 320, height: 50 },
+  tablet: { width: 468, height: 60 },
+  desktop: { width: 728, height: 90 },
 } as const;
 
 export const ADSENSE_PUBLISHER_ID = "pub-4810616735714570";
@@ -27,8 +37,8 @@ export const ADSENSE_AD_UNIT_IDS = {
 } as const;
 
 const bannerSize = sizes({ width: 728, height: 90 }, { width: 468, height: 60 }, { width: 320, height: 50 });
-const squareSize = sizes({ width: 300, height: 300 }, { width: 300, height: 300 }, { width: 280, height: 280 });
-const railSize = sizes({ width: 160, height: 600 }, { width: 0, height: 0 }, { width: 0, height: 0 });
+const squareSize = sizes({ width: 300, height: 300 }, { width: 300, height: 300 }, { width: 300, height: 300 });
+const railSize = sizes({ width: AD_RAIL_LAYOUT.width, height: AD_RAIL_LAYOUT.height }, { width: 0, height: 0 }, { width: 0, height: 0 });
 
 export const AD_SLOT_DEFINITIONS: Record<AdSlotId, AdSlotDefinition> = {
   "rail-left-desktop": rail("rail-left-desktop", "left-rail", "Wide-desktop left rail outside the main reading and gallery column."),
@@ -134,6 +144,13 @@ export function hasValidAdSenseConfiguration() {
 
 export function getAdPageLayout(pageFamily: AdPageFamily) {
   return AD_PAGE_LAYOUTS[pageFamily];
+}
+
+export function getFixedHeaderSize(viewportWidth: number) {
+  if (viewportWidth < 360) return AD_FIXED_HEADER_SIZES.narrow;
+  if (viewportWidth <= AD_BREAKPOINTS.mobileMaxWidth) return AD_FIXED_HEADER_SIZES.mobile;
+  if (viewportWidth <= AD_BREAKPOINTS.tabletMaxWidth) return AD_FIXED_HEADER_SIZES.tablet;
+  return AD_FIXED_HEADER_SIZES.desktop;
 }
 
 export function getAdSlotForPlacement(pageFamily: AdPageFamily, placement: AdLogicalPlacement) {

@@ -6,6 +6,17 @@ import path from "node:path";
 const ROOT = process.cwd();
 const OUT = path.join(ROOT, "out");
 const SCANNED_EXTENSIONS = new Set([".html", ".txt", ".xml", ".json", ".js"]);
+const KNOWN_AD_SLOT_IDS = new Set(["5574432869", "5115981872", "9929324856", "2489818539", "5382861174"]);
+const AD_FREE_HTML_FILES = new Set([
+  "404.html",
+  "about.html",
+  "affiliate-disclosure.html",
+  "contact.html",
+  "editorial-policy.html",
+  "privacy.html",
+  "sitemap.html",
+  "terms.html",
+]);
 
 if (!existsSync(OUT)) {
   console.error("Export safety validation not_run: out/ does not exist.");
@@ -16,7 +27,7 @@ const checks = {
   localOrPrivateUrl: /https?:\/\/(?:localhost|127\.0\.0\.1)(?::\d+)?|file:\/\/|[A-Za-z]:\\\\|https?:\/\/[^"'\s]*\.(?:r2\.dev|r2\.cloudflarestorage\.com)/i,
   duplicatePrintablePrefix: /\/printables\/printables\//i,
   staleFragmentNavigation: /href="\#(?:image|printable)-/i,
-  liveAdvertisementCode: /adsbygoogle|pagead2\.googlesyndication|ca-pub-|google_ad_client|googletagservices|doubleclick\.net/i,
+  unauthorizedAdvertisementClient: /ca-pub-(?!4810616735714570\b)\d{16}/i,
   metadataReviewLeak: /unapprovedDetailCandidates|unapprovedAudienceCandidates|metadata-review-decisions|pipeline[\\/]review[\\/]metadata-review/i,
 };
 const visibleChecks = {
@@ -30,6 +41,8 @@ const visibleChecks = {
 };
 const findings = Object.fromEntries([...Object.keys(checks), ...Object.keys(visibleChecks)].map((name) => [name, []]));
 const duplicateAdvertisementSlotIds = [];
+const unknownAdvertisementSlotIds = [];
+const advertisementsOnProhibitedRoutes = [];
 const duplicateCanonicalLinks = [];
 const duplicateRelatedCollectionHeadings = [];
 let scannedFileCount = 0;
@@ -46,6 +59,13 @@ walk(OUT, (absolutePath) => {
     const adSlotIds = [...text.matchAll(/\sid="(ad-slot-[^"]+)"/g)].map((match) => match[1]);
     const duplicateAdIds = duplicates(adSlotIds);
     if (duplicateAdIds.length > 0) duplicateAdvertisementSlotIds.push({ relativePath, ids: duplicateAdIds });
+    const externalAdSlotIds = [...text.matchAll(/\sdata-ad-slot="(\d{10})"/g)].map((match) => match[1]);
+    const unknownAdIds = [...new Set(externalAdSlotIds.filter((slotId) => !KNOWN_AD_SLOT_IDS.has(slotId)))];
+    if (unknownAdIds.length > 0) unknownAdvertisementSlotIds.push({ relativePath, ids: unknownAdIds });
+    const renderedAdvertisementPattern = /data-ad-fallback-policy=|<ins\b[^>]*class="[^"]*\badsbygoogle\b|data-ad-client="ca-pub-4810616735714570"/i;
+    if (AD_FREE_HTML_FILES.has(relativePath) && renderedAdvertisementPattern.test(visibleHtml)) {
+      advertisementsOnProhibitedRoutes.push(relativePath);
+    }
     const canonicalCount = (text.match(/<link rel="canonical"/g) || []).length;
     if (canonicalCount > 1) duplicateCanonicalLinks.push({ relativePath, count: canonicalCount });
     const relatedHeadingCount = (visibleHtml.match(/>Related Collections<\/h[1-6]>/gi) || []).length;
@@ -65,6 +85,8 @@ const passed = Object.values(findings).every((paths) => paths.length === 0)
   && canonicalCollisions.length === 0
   && missingPrintableHtml.length === 0
   && duplicateAdvertisementSlotIds.length === 0
+  && unknownAdvertisementSlotIds.length === 0
+  && advertisementsOnProhibitedRoutes.length === 0
   && duplicateCanonicalLinks.length === 0
   && duplicateRelatedCollectionHeadings.length === 0;
 console.log(JSON.stringify({
@@ -74,6 +96,8 @@ console.log(JSON.stringify({
   findings: Object.fromEntries(Object.entries(findings).map(([name, paths]) => [name, { count: paths.length, samples: paths.slice(0, 10) }])),
   canonicalCollisions,
   duplicateAdvertisementSlotIds: { count: duplicateAdvertisementSlotIds.length, samples: duplicateAdvertisementSlotIds.slice(0, 10) },
+  unknownAdvertisementSlotIds: { count: unknownAdvertisementSlotIds.length, samples: unknownAdvertisementSlotIds.slice(0, 10) },
+  advertisementsOnProhibitedRoutes: { count: advertisementsOnProhibitedRoutes.length, samples: advertisementsOnProhibitedRoutes.slice(0, 10) },
   duplicateCanonicalLinks: { count: duplicateCanonicalLinks.length, samples: duplicateCanonicalLinks.slice(0, 10) },
   duplicateRelatedCollectionHeadings: { count: duplicateRelatedCollectionHeadings.length, samples: duplicateRelatedCollectionHeadings.slice(0, 10) },
   missingPrintableHtml: { count: missingPrintableHtml.length, samples: missingPrintableHtml.slice(0, 10) },

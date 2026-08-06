@@ -80,6 +80,8 @@ export default function HomePage() {
         </div>
       </section>
 
+      <PageAdSlot pageFamily="home" placement="supporting-square" />
+
       <section className="content-section collection-section" aria-labelledby="more-collections-title" data-page-section="additional-discovery">
         <div className="section-heading-row">
           <div>

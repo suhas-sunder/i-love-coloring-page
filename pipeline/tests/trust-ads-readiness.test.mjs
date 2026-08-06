@@ -238,9 +238,9 @@ test("AdSense placement readiness preserves slots and accepted visible density",
   assert.match(config, /trust: \{ mode: "none", sideRailsAllowed: false, slots: \{\} \}/);
   assert.match(config, /"html-sitemap": \{ mode: "none", sideRailsAllowed: false, slots: \{\} \}/);
   assert.match(config, /"not-found": \{ mode: "none", sideRailsAllowed: false, slots: \{\} \}/);
-  assert.match(css, /\.public-page-shell \.ad-slot-post-header-banner,[\s\S]*display: none/);
+  assert.doesNotMatch(css, /\.public-page-shell \.ad-slot-(?:post-header-banner|supporting-square|related-banner)[\s\S]{0,300}display: none/);
   assert.doesNotMatch(css, /data-ad-layout="full"[^}]+ad-slot-top-banner[^}]+display: none/);
-  assert.match(css, /@media \(min-width: 1536px\)[\s\S]*\.ad-rail[\s\S]*display: block/);
+  assert.match(css, /@media \(min-width: 2400px\)[\s\S]*data-ad-rails-eligible="true"[\s\S]*\.ad-rail[\s\S]*display: block/);
   assert.doesNotMatch(forbidden, /PageAdSlot|<AdSlot|<AdRail|data-ad-fallback|>Advertisement</);
   assert.deepEqual([
     logicalSlots("/"),
@@ -249,7 +249,7 @@ test("AdSense placement readiness preserves slots and accepted visible density",
     logicalSlots("/coloring-pages/animals/page/2"),
     logicalSlots("/privacy"),
     logicalSlots("/sitemap"),
-  ], [5, 5, 5, 3, 0, 0]);
+  ], [6, 6, 6, 3, 0, 0]);
   assert.equal((readFileSync(path.join(OUT, "404.html"), "utf8").match(/data-ad-slot="/g) || []).length, 0);
 });
 

@@ -14,7 +14,12 @@ export function AdRail({ side, pageFamily }: AdRailProps) {
   if (!slotId) return null;
 
   return (
-    <aside className={`ad-rail ${sideClass}`} aria-label={`${side} desktop advertising rail`}>
+    <aside
+      className={`ad-rail ${sideClass}`}
+      aria-label={`${side} desktop advertising rail`}
+      data-ad-rail={side}
+      data-ad-rail-size="300x600"
+    >
       <AdSlot slotId={slotId} pageFamily={pageFamily} />
     </aside>
   );

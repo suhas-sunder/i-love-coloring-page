@@ -435,42 +435,48 @@
   border-radius: var(--radius-sm);
   background: transparent;
   color: var(--color-plum);
-  padding: var(--space-12);
+  padding: 0;
   scroll-margin-top: 88px;
   text-align: center;
 }
 
 .ad-slot-responsive-banner {
   width: min(100%, 320px);
-  min-height: 50px;
+  height: 50px;
+  overflow: clip;
 }
 
 .ad-slot-supporting-square {
-  width: min(100%, 280px);
-  min-height: 280px;
+  width: min(100%, 300px);
+  height: 300px;
+  overflow: clip;
 }
 
 .ad-slot-desktop-rail {
   width: 100%;
-  min-height: 600px;
+  height: 600px;
 }
 
 .page-shell {
-  --ad-rail-safe-gap: var(--space-24);
   --ad-rail-gap: var(--space-24);
-  --ad-rail-width: 160px;
+  --ad-rail-width: 300px;
   --content-max-width: var(--layout-max);
-  --ad-rail-compact-min-viewport: 1536px;
+  --ad-rail-min-viewport: 2400px;
 }
 
 .ad-slot-fallback {
   display: grid;
+  grid-template-rows: max-content max-content;
   place-items: center;
+  align-content: center;
+  gap: var(--space-16);
+  box-sizing: border-box;
   width: 100%;
-  min-height: inherit;
+  height: 100%;
+  border: 1px solid var(--color-soft-plum);
   border-radius: inherit;
-  background: var(--color-soft-plum);
-  color: var(--color-plum);
+  background: var(--color-paper-soft);
+  color: var(--color-text-muted);
 }
 
 .ad-slot-fallback[hidden] {
@@ -478,23 +484,44 @@
 }
 
 .ad-slot-label {
-  color: var(--color-plum);
+  color: var(--color-text-muted);
   font-size: var(--text-sm-size);
-  font-weight: 800;
+  font-weight: 700;
   line-height: var(--text-sm-line);
+}
+
+.ad-slot-fallback-lines {
+  display: grid;
+  gap: var(--space-8);
+  width: min(70%, 220px);
+}
+
+.ad-slot-fallback-lines span {
+  display: block;
+  height: var(--space-6);
+  border-radius: var(--radius-pill);
+  background: var(--color-soft-plum);
+}
+
+.ad-slot-fallback-lines span:nth-child(2) {
+  width: 84%;
+}
+
+.ad-slot-fallback-lines span:nth-child(3) {
+  width: 62%;
 }
 
 .ad-slot-live-unit {
   display: block;
-  min-height: inherit;
+  height: 100%;
   width: 100%;
 }
 
 .ad-slot-live-unit[data-ad-status="unfilled"] {
-  min-height: inherit;
+  height: 100%;
 }
 
-[data-ad-page-state="fallback"] .ad-slot-live-unit {
+[data-ad-page-state="fallback"] .ad-slot-live-unit:not([data-ad-status="filled"]):not([data-ad-status="unfill-optimized"]) {
   display: none;
 }
 
@@ -505,7 +532,12 @@
 }
 
 .ad-slot-top-banner {
+  width: min(300px, calc(100vw - 16px));
+  height: 50px;
+  min-height: 50px;
+  max-height: 50px;
   margin-block: 0 var(--space-32);
+  overflow: clip;
 }
 
 .ad-slot-post-header-banner {
@@ -522,47 +554,78 @@
 }
 
 .ad-slot-desktop-rail {
-  padding-inline: var(--space-16);
+  overflow: clip;
 }
 
 .ad-rail {
   display: none;
+  position: absolute;
+  top: 112px;
+  width: var(--ad-rail-width);
   max-width: var(--ad-rail-width);
+  height: 600px;
   overflow: clip;
   contain: layout paint;
 }
 
-/* Keep every frozen logical slot in the document while enforcing the accepted
-   one-well small-screen model and three-well wide-desktop model. The one
-   responsive header banner is always the first child below the site header;
-   post-header alternatives remain ineligible and visually hidden. */
-.public-page-shell .ad-slot-post-header-banner,
-.public-page-shell .ad-slot-supporting-square,
-.public-page-shell .ad-slot-related-banner {
-  display: none;
+.ad-rail-left {
+  left: calc(-1 * (var(--ad-rail-width) + var(--ad-rail-gap)));
+}
+
+.ad-rail-right {
+  right: calc(-1 * (var(--ad-rail-width) + var(--ad-rail-gap)));
+}
+
+.ad-rail .ad-slot {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  overflow: clip;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+@media (min-width: 360px) {
+  .ad-slot-top-banner {
+    width: 320px;
+  }
 }
 
 @media (min-width: 641px) and (max-width: 1023px) {
   .ad-slot-responsive-banner {
     width: min(100%, 468px);
+    height: 60px;
+  }
+
+  .ad-slot-top-banner {
+    width: 468px;
+    height: 60px;
     min-height: 60px;
+    max-height: 60px;
   }
 
   .ad-slot-supporting-square {
     width: min(100%, 300px);
-    min-height: 300px;
+    height: 300px;
   }
 }
 
 @media (min-width: 1024px) {
   .ad-slot-responsive-banner {
     width: min(100%, 728px);
+    height: 90px;
+  }
+
+  .ad-slot-top-banner {
+    width: 728px;
+    height: 90px;
     min-height: 90px;
+    max-height: 90px;
   }
 
   .ad-slot-supporting-square {
     width: min(100%, 300px);
-    min-height: 300px;
+    height: 300px;
   }
 }
 
@@ -2114,34 +2177,13 @@
   }
 }
 
-@media (min-width: 1536px) {
-  .page-shell {
-    --ad-rail-gap: var(--space-24);
-    --ad-rail-width: clamp(112px, calc((100vw - var(--layout-max) - 16px) / 2 - var(--ad-rail-gap)), 160px);
+@media (min-width: 2400px) {
+  [data-ad-rails-eligible="true"] .public-page-shell[data-ad-layout="full"] .ad-rail {
+    display: block;
   }
 
   .ad-rail {
-    position: absolute;
-    top: var(--space-96);
-    display: block;
-    width: var(--ad-rail-width);
-    max-width: var(--ad-rail-width);
-  }
-
-  .ad-rail-left {
-    left: calc(-1 * (var(--ad-rail-width) + var(--ad-rail-gap)));
-  }
-
-  .ad-rail-right {
-    right: calc(-1 * (var(--ad-rail-width) + var(--ad-rail-gap)));
-  }
-
-  .ad-rail .ad-slot {
-    width: 100%;
-    max-width: 100%;
-    overflow: clip;
-    box-sizing: border-box;
-    margin: 0;
+    top: 112px;
   }
 }
 
