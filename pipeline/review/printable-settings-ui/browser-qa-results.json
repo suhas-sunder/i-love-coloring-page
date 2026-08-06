@@ -1,0 +1,672 @@
+{
+  "capturedAt": "2026-08-06T06:58:09.160Z",
+  "appUrl": "http://127.0.0.1:3012",
+  "browsers": [
+    {
+      "id": "chrome",
+      "available": true,
+      "engine": "Chromium",
+      "version": "150.0.7871.187",
+      "pageCount": 21,
+      "failures": []
+    },
+    {
+      "id": "edge",
+      "available": true,
+      "engine": "Chromium",
+      "version": "151.0.4129.59",
+      "pageCount": 21,
+      "failures": []
+    }
+  ],
+  "viewports": [
+    390,
+    768,
+    1024,
+    1440,
+    1920,
+    2400,
+    3440
+  ],
+  "routes": [
+    "/printables/animals/animals-alligator-4feec8505a",
+    "/printables/animals/cats-playing-cards-c22648db9b",
+    "/printables/anime-girls/anime-girl-brazilian-jiu-jitsu-5a40029b84"
+  ],
+  "defaultOutputChecks": [
+    {
+      "route": "/printables/animals/animals-alligator-4feec8505a",
+      "filename": "animals-alligator.pdf",
+      "bytes": 613584,
+      "sha256": "8bab1edb0e18f90800974c16be753d2448a20c6b0a104fbc92e7df774ec82bca",
+      "magic": "%PDF",
+      "pageCount": 1,
+      "mediaBox": "0 0 612 792",
+      "filter": "/FlateDecode",
+      "generationMs": {
+        "cold": 331,
+        "repeat": 322
+      },
+      "repeatedBytes": 613584,
+      "repeatedSha256": "8bab1edb0e18f90800974c16be753d2448a20c6b0a104fbc92e7df774ec82bca",
+      "matchesBaseline": true
+    },
+    {
+      "route": "/printables/animals/cats-playing-cards-c22648db9b",
+      "filename": "cats-playing-cards.pdf",
+      "bytes": 539659,
+      "sha256": "db6063cee65bb1091037c22113d20af2eb09da5571b289a6e834d018c16dd2c3",
+      "magic": "%PDF",
+      "pageCount": 1,
+      "mediaBox": "0 0 612 792",
+      "filter": "/FlateDecode",
+      "generationMs": {
+        "cold": 282,
+        "repeat": 1074
+      },
+      "repeatedBytes": 539659,
+      "repeatedSha256": "db6063cee65bb1091037c22113d20af2eb09da5571b289a6e834d018c16dd2c3",
+      "matchesBaseline": true
+    },
+    {
+      "route": "/printables/anime-girls/anime-girl-brazilian-jiu-jitsu-5a40029b84",
+      "filename": "anime-girl-brazilian-jiu-jitsu.pdf",
+      "bytes": 573452,
+      "sha256": "20c7e92c0ebcd8463d20306a234aabac9305c48155768b8b07ef9621d480ffeb",
+      "magic": "%PDF",
+      "pageCount": 1,
+      "mediaBox": "0 0 612 792",
+      "filter": "/FlateDecode",
+      "generationMs": {
+        "cold": 268,
+        "repeat": 1094
+      },
+      "repeatedBytes": 573452,
+      "repeatedSha256": "20c7e92c0ebcd8463d20306a234aabac9305c48155768b8b07ef9621d480ffeb",
+      "matchesBaseline": true
+    }
+  ],
+  "imageOutputChecks": {
+    "png": {
+      "filename": "animals-alligator.png",
+      "bytes": 1404823,
+      "sha256": "011726dc272ff5a2217887ddb3c2773da1a95b22df989021caff7b0b66f2d58c"
+    },
+    "jpg": {
+      "filename": "animals-alligator.jpg",
+      "bytes": 1238249,
+      "sha256": "bd8174f1437414536b89d4679829d78c88753652ba3511bceb8abb78bd1b5a22"
+    },
+    "webp": {
+      "filename": "animals-alligator.webp",
+      "bytes": 389232,
+      "sha256": "f42a63e22139352fde66dab4705031a156c8b5c9db2c363913fea86fc14c1594"
+    },
+    "matchesBaseline": true
+  },
+  "publicSettingsChecks": {
+    "route": "/printables/animals/animals-alligator-4feec8505a",
+    "selected": {
+      "paper": "a4",
+      "orientation": "auto",
+      "scale": "75",
+      "pageProfile": "a4-portrait",
+      "requestedOrientation": "auto",
+      "scalePercent": "75",
+      "outputSummary": "Auto selected: Portrait. Current output: A4, portrait, 75% artwork size.",
+      "resetVisible": true,
+      "overflow": false
+    },
+    "downloads": {
+      "pdf": {
+        "filename": "animals-alligator-a4-auto-portrait-75.pdf",
+        "bytes": 613609,
+        "durationMs": 253
+      },
+      "png": {
+        "filename": "animals-alligator-a4-auto-portrait-75.png",
+        "width": 2480,
+        "height": 3508,
+        "durationMs": 192
+      },
+      "jpg": {
+        "filename": "animals-alligator-a4-auto-portrait-75.jpg",
+        "width": 2480,
+        "height": 3508,
+        "durationMs": 173
+      },
+      "webp": {
+        "filename": "animals-alligator.webp",
+        "durationMs": 309
+      }
+    },
+    "performance": {
+      "previewUpdateMs": 200,
+      "geometryResolution": {
+        "iterations": 10000,
+        "totalMs": 8.899999998509884,
+        "averageMs": 0.0008899999998509884
+      },
+      "longTasks": [
+        135,
+        120,
+        69
+      ],
+      "layoutShiftScore": 0
+    },
+    "dialogProfile": "a4-portrait",
+    "printPageSize": "a4-portrait",
+    "reset": {
+      "paper": "letter",
+      "orientation": "portrait",
+      "scale": "100",
+      "pageProfile": "letter-portrait",
+      "resetVisible": false,
+      "activeValue": "letter"
+    },
+    "keyboardSelection": {
+      "paper": "a4",
+      "orientation": "landscape",
+      "scale": "90",
+      "activeValue": "90"
+    },
+    "zoomChecks": [
+      {
+        "factor": 2,
+        "visualScale": 2,
+        "controlsReachable": true
+      },
+      {
+        "factor": 4,
+        "visualScale": 4,
+        "controlsReachable": true
+      }
+    ],
+    "checks": {
+      "selectedProfile": true,
+      "autoResolutionVisible": true,
+      "scaleVisible": true,
+      "noOverflow": true,
+      "resetAppears": true,
+      "pdfFilename": true,
+      "pdfStructure": true,
+      "printUsesSameProfile": true,
+      "pngOutput": true,
+      "jpgOutput": true,
+      "webpIndependent": true,
+      "resetRestoresDefaults": true,
+      "nativeKeyboardSelection": true,
+      "keyboardReset": true,
+      "zoomReachability": true
+    },
+    "passed": true
+  },
+  "internalProfileChecks": [
+    {
+      "name": "a4-portrait-100",
+      "generationMs": 288.9,
+      "pageSize": "a4-portrait",
+      "pageDimensions": {
+        "widthPt": 595.28,
+        "heightPt": 841.89
+      },
+      "pageCount": 1,
+      "pdfBytes": 613605,
+      "imageBox": {
+        "x": 27.01,
+        "y": 15,
+        "width": 541.26,
+        "height": 811.89
+      },
+      "artworkBox": {
+        "x": 15,
+        "y": 15,
+        "width": 565.28,
+        "height": 811.89
+      },
+      "brandBox": {
+        "x": 259.42,
+        "y": 7.62,
+        "width": 76.44,
+        "height": 7
+      },
+      "filename": "animals-alligator-a4.pdf",
+      "metadataTitle": "Animals Alligator - iLoveColoringPage.com",
+      "raster": {
+        "width": 2480,
+        "height": 3508,
+        "mimeType": "image/png"
+      },
+      "mediaBox": "0 0 595.28 841.89",
+      "filter": "/FlateDecode",
+      "sha256": "e2d8d87cb7aaf878577021e8d462bad98ded96416d1ac018c5fdb29f2d5aeb60",
+      "imageContainedInSafeArea": true,
+      "pdfInfoPageCount": 1,
+      "renderedOutput": "pipeline/review/printable-settings-ui/a4-portrait-100.png",
+      "passed": true
+    },
+    {
+      "name": "letter-landscape-100",
+      "generationMs": 234,
+      "pageSize": "letter-landscape",
+      "pageDimensions": {
+        "widthPt": 792,
+        "heightPt": 612
+      },
+      "pageCount": 1,
+      "pdfBytes": 613585,
+      "imageBox": {
+        "x": 202,
+        "y": 15,
+        "width": 388,
+        "height": 582
+      },
+      "artworkBox": {
+        "x": 15,
+        "y": 15,
+        "width": 762,
+        "height": 582
+      },
+      "brandBox": {
+        "x": 357.78,
+        "y": 7.62,
+        "width": 76.44,
+        "height": 7
+      },
+      "filename": "animals-alligator-landscape.pdf",
+      "metadataTitle": "Animals Alligator - iLoveColoringPage.com",
+      "raster": {
+        "width": 3300,
+        "height": 2550,
+        "mimeType": "image/png"
+      },
+      "mediaBox": "0 0 792 612",
+      "filter": "/FlateDecode",
+      "sha256": "21e64b5b790e433f5f43fff099b97342f1a2df9cc6b970a7c4db474fa531a4cb",
+      "imageContainedInSafeArea": true,
+      "pdfInfoPageCount": 1,
+      "renderedOutput": "pipeline/review/printable-settings-ui/letter-landscape-100.png",
+      "passed": true
+    },
+    {
+      "name": "letter-auto-portrait-100",
+      "generationMs": 238.2,
+      "pageSize": "letter-portrait",
+      "pageDimensions": {
+        "widthPt": 612,
+        "heightPt": 792
+      },
+      "pageCount": 1,
+      "pdfBytes": 613584,
+      "imageBox": {
+        "x": 52,
+        "y": 15,
+        "width": 508,
+        "height": 762
+      },
+      "artworkBox": {
+        "x": 15,
+        "y": 15,
+        "width": 582,
+        "height": 762
+      },
+      "brandBox": {
+        "x": 267.78,
+        "y": 7.62,
+        "width": 76.44,
+        "height": 7
+      },
+      "filename": "animals-alligator-auto-portrait.pdf",
+      "metadataTitle": "Animals Alligator - iLoveColoringPage.com",
+      "raster": {
+        "width": 2550,
+        "height": 3300,
+        "mimeType": "image/png"
+      },
+      "mediaBox": "0 0 612 792",
+      "filter": "/FlateDecode",
+      "sha256": "8bab1edb0e18f90800974c16be753d2448a20c6b0a104fbc92e7df774ec82bca",
+      "imageContainedInSafeArea": true,
+      "pdfInfoPageCount": 1,
+      "renderedOutput": "pipeline/review/printable-settings-ui/letter-auto-portrait-100.png",
+      "passed": true
+    },
+    {
+      "name": "letter-auto-landscape-100",
+      "generationMs": 154.2,
+      "pageSize": "letter-landscape",
+      "pageDimensions": {
+        "widthPt": 792,
+        "heightPt": 612
+      },
+      "pageCount": 1,
+      "pdfBytes": 98619,
+      "imageBox": {
+        "x": 15,
+        "y": 52,
+        "width": 762,
+        "height": 508
+      },
+      "artworkBox": {
+        "x": 15,
+        "y": 15,
+        "width": 762,
+        "height": 582
+      },
+      "brandBox": {
+        "x": 357.78,
+        "y": 7.62,
+        "width": 76.44,
+        "height": 7
+      },
+      "filename": "animals-alligator-auto-landscape.pdf",
+      "metadataTitle": "Animals Alligator - iLoveColoringPage.com",
+      "raster": {
+        "width": 3300,
+        "height": 2550,
+        "mimeType": "image/png"
+      },
+      "mediaBox": "0 0 792 612",
+      "filter": "/FlateDecode",
+      "sha256": "649eb8a703f232bb01e84ff1622e7f6510004fda9a7aefa68b6a83b09bacb1c4",
+      "imageContainedInSafeArea": true,
+      "pdfInfoPageCount": 1,
+      "renderedOutput": "pipeline/review/printable-settings-ui/letter-auto-landscape-100.png",
+      "passed": true
+    },
+    {
+      "name": "a4-auto-square-100",
+      "generationMs": 210.1,
+      "pageSize": "a4-portrait",
+      "pageDimensions": {
+        "widthPt": 595.28,
+        "heightPt": 841.89
+      },
+      "pageCount": 1,
+      "pdfBytes": 100945,
+      "imageBox": {
+        "x": 15,
+        "y": 138.305,
+        "width": 565.28,
+        "height": 565.28
+      },
+      "artworkBox": {
+        "x": 15,
+        "y": 15,
+        "width": 565.28,
+        "height": 811.89
+      },
+      "brandBox": {
+        "x": 259.42,
+        "y": 7.62,
+        "width": 76.44,
+        "height": 7
+      },
+      "filename": "animals-alligator-a4-auto-portrait.pdf",
+      "metadataTitle": "Animals Alligator - iLoveColoringPage.com",
+      "raster": {
+        "width": 2480,
+        "height": 3508,
+        "mimeType": "image/png"
+      },
+      "mediaBox": "0 0 595.28 841.89",
+      "filter": "/FlateDecode",
+      "sha256": "d0bb0ee3d62e0d3504634bf41c6bcf62d9c2024833fe2f767764a3dfbf311052",
+      "imageContainedInSafeArea": true,
+      "pdfInfoPageCount": 1,
+      "renderedOutput": "pipeline/review/printable-settings-ui/a4-auto-square-100.png",
+      "passed": true
+    },
+    {
+      "name": "letter-portrait-90",
+      "generationMs": 251.4,
+      "pageSize": "letter-portrait",
+      "pageDimensions": {
+        "widthPt": 612,
+        "heightPt": 792
+      },
+      "pageCount": 1,
+      "pdfBytes": 613596,
+      "imageBox": {
+        "x": 77.4,
+        "y": 53.1,
+        "width": 457.2,
+        "height": 685.8
+      },
+      "artworkBox": {
+        "x": 15,
+        "y": 15,
+        "width": 582,
+        "height": 762
+      },
+      "brandBox": {
+        "x": 267.78,
+        "y": 7.62,
+        "width": 76.44,
+        "height": 7
+      },
+      "filename": "animals-alligator-90.pdf",
+      "metadataTitle": "Animals Alligator - iLoveColoringPage.com",
+      "raster": {
+        "width": 2550,
+        "height": 3300,
+        "mimeType": "image/png"
+      },
+      "mediaBox": "0 0 612 792",
+      "filter": "/FlateDecode",
+      "sha256": "7c686e811eb6452f57a4662113ce1c1ec46884a26692fb5ef95b2d7cab2de0fa",
+      "imageContainedInSafeArea": true,
+      "pdfInfoPageCount": 1,
+      "renderedOutput": "pipeline/review/printable-settings-ui/letter-portrait-90.png",
+      "passed": true
+    },
+    {
+      "name": "letter-portrait-75",
+      "generationMs": 222.6,
+      "pageSize": "letter-portrait",
+      "pageDimensions": {
+        "widthPt": 612,
+        "heightPt": 792
+      },
+      "pageCount": 1,
+      "pdfBytes": 613595,
+      "imageBox": {
+        "x": 115.5,
+        "y": 110.25,
+        "width": 381,
+        "height": 571.5
+      },
+      "artworkBox": {
+        "x": 15,
+        "y": 15,
+        "width": 582,
+        "height": 762
+      },
+      "brandBox": {
+        "x": 267.78,
+        "y": 7.62,
+        "width": 76.44,
+        "height": 7
+      },
+      "filename": "animals-alligator-75.pdf",
+      "metadataTitle": "Animals Alligator - iLoveColoringPage.com",
+      "raster": {
+        "width": 2550,
+        "height": 3300,
+        "mimeType": "image/png"
+      },
+      "mediaBox": "0 0 612 792",
+      "filter": "/FlateDecode",
+      "sha256": "837813a0f7ade39c2e04b86ca34b0d9e09bc048de1f6537245c2994feb333806",
+      "imageContainedInSafeArea": true,
+      "pdfInfoPageCount": 1,
+      "renderedOutput": "pipeline/review/printable-settings-ui/letter-portrait-75.png",
+      "passed": true
+    },
+    {
+      "name": "letter-portrait-50",
+      "generationMs": 212.2,
+      "pageSize": "letter-portrait",
+      "pageDimensions": {
+        "widthPt": 612,
+        "heightPt": 792
+      },
+      "pageCount": 1,
+      "pdfBytes": 613589,
+      "imageBox": {
+        "x": 179,
+        "y": 205.5,
+        "width": 254,
+        "height": 381
+      },
+      "artworkBox": {
+        "x": 15,
+        "y": 15,
+        "width": 582,
+        "height": 762
+      },
+      "brandBox": {
+        "x": 267.78,
+        "y": 7.62,
+        "width": 76.44,
+        "height": 7
+      },
+      "filename": "animals-alligator-50.pdf",
+      "metadataTitle": "Animals Alligator - iLoveColoringPage.com",
+      "raster": {
+        "width": 2550,
+        "height": 3300,
+        "mimeType": "image/png"
+      },
+      "mediaBox": "0 0 612 792",
+      "filter": "/FlateDecode",
+      "sha256": "7cfbac83b0775f02521d22cff7f4a360dc2dcd6d33daaa318a06df185b79c922",
+      "imageContainedInSafeArea": true,
+      "pdfInfoPageCount": 1,
+      "renderedOutput": "pipeline/review/printable-settings-ui/letter-portrait-50.png",
+      "passed": true
+    },
+    {
+      "name": "a4-landscape-75",
+      "generationMs": 233.8,
+      "pageSize": "a4-landscape",
+      "pageDimensions": {
+        "widthPt": 841.89,
+        "heightPt": 595.28
+      },
+      "pageCount": 1,
+      "pdfBytes": 613609,
+      "imageBox": {
+        "x": 279.625,
+        "y": 85.66,
+        "width": 282.64,
+        "height": 423.96
+      },
+      "artworkBox": {
+        "x": 15,
+        "y": 15,
+        "width": 811.89,
+        "height": 565.28
+      },
+      "brandBox": {
+        "x": 382.725,
+        "y": 7.62,
+        "width": 76.44,
+        "height": 7
+      },
+      "filename": "animals-alligator-a4-landscape-75.pdf",
+      "metadataTitle": "Animals Alligator - iLoveColoringPage.com",
+      "raster": {
+        "width": 3508,
+        "height": 2480,
+        "mimeType": "image/png"
+      },
+      "mediaBox": "0 0 841.89 595.28",
+      "filter": "/FlateDecode",
+      "sha256": "50f7e4bd3c0cb8dd57bb723040d6e036d03cd548dda9bea75cbf8a179ca51a10",
+      "imageContainedInSafeArea": true,
+      "pdfInfoPageCount": 1,
+      "renderedOutput": "pipeline/review/printable-settings-ui/a4-landscape-75.png",
+      "passed": true
+    }
+  ],
+  "screenshots": [
+    "pipeline/review/printable-settings-ui/chrome-390-default-printable-actions.png",
+    "pipeline/review/printable-settings-ui/chrome-1440-a4-auto-75-printable-settings.png",
+    "pipeline/review/printable-settings-ui/a4-portrait-100.png",
+    "pipeline/review/printable-settings-ui/letter-landscape-100.png",
+    "pipeline/review/printable-settings-ui/letter-auto-portrait-100.png",
+    "pipeline/review/printable-settings-ui/letter-auto-landscape-100.png",
+    "pipeline/review/printable-settings-ui/a4-auto-square-100.png",
+    "pipeline/review/printable-settings-ui/letter-portrait-90.png",
+    "pipeline/review/printable-settings-ui/letter-portrait-75.png",
+    "pipeline/review/printable-settings-ui/letter-portrait-50.png",
+    "pipeline/review/printable-settings-ui/a4-landscape-75.png"
+  ],
+  "limitations": [
+    "Chrome and Edge are both Chromium-based coverage.",
+    "The UI checks cover all seven required widths; both installed channels are Chromium-based.",
+    "The 200% and 400% checks use Chromium DevTools visual page scaling plus narrow-width reflow checks; physical browser UI zoom remains a manual check."
+  ],
+  "lifecycle": {
+    "temporaryAnchorsRemoved": true,
+    "directDownloadDidNotPrint": true,
+    "printPreparedDefaultProfile": true,
+    "printHandoffRetained": true,
+    "printIframeHiddenFromAccessibilityTree": true
+  },
+  "lifecycleDiagnostics": {
+    "directState": {
+      "pdfAnchors": 0,
+      "printIframes": 0,
+      "opens": 0
+    },
+    "printState": {
+      "printIframes": 1,
+      "iframeAriaHidden": "true"
+    },
+    "printSnapshot": {
+      "pageCount": 1,
+      "pageSize": "letter-portrait",
+      "pdfByteLength": 613584,
+      "artworkBox": {
+        "x": 15,
+        "y": 15,
+        "width": 582,
+        "height": 762
+      },
+      "imageBox": {
+        "x": 52,
+        "y": 15,
+        "width": 508,
+        "height": 762
+      },
+      "brandBox": {
+        "x": 267.78,
+        "y": 7.62,
+        "width": 76.44,
+        "height": 7
+      },
+      "brandPlacement": "bottom-frame-label",
+      "brandingOverlapsArtwork": false,
+      "appUiControlsIncluded": false,
+      "printableBorderCount": 1,
+      "metadataTitle": "Animals Alligator - iLoveColoringPage.com",
+      "source": "internal-svg"
+    }
+  },
+  "summary": {
+    "availableBrowsers": [
+      "chrome",
+      "edge"
+    ],
+    "unavailableBrowsers": [],
+    "layoutChecksPassed": true,
+    "defaultPdfBytesPreserved": true,
+    "defaultImageBytesPreserved": true,
+    "lifecyclePassed": true,
+    "internalProfilesPassed": true,
+    "publicSettingsPassed": true,
+    "browserQaPassed": true
+  }
+}
