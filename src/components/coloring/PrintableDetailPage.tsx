@@ -4,15 +4,13 @@ import { PageAdSlot } from "@/components/ads/PageAdSlot";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { PublicPageShell } from "@/components/site/PublicPageShell";
 import { resolvePrintableAssetSources } from "@/lib/coloring/assets";
-import { PRINTABLE_COMPOSITION } from "@/lib/coloring/exportComposition";
+import { getCollectionCount } from "@/lib/coloring/collectionCounts";
 import { getPrintablePrimaryHub, getRelatedPrintableHubs, getRelatedPrintables } from "@/lib/coloring/printables";
 import { getPrintableSummary, getPrintableTitleModel } from "@/lib/coloring/printableTitles";
 import type { PublicColoringItem, RuntimePrintable } from "@/lib/coloring/types";
-import { getCollectionCount } from "@/lib/coloring/collectionCounts";
 
-import { AssetImage } from "./AssetImage";
 import { GalleryGrid } from "./GalleryGrid";
-import { PrintableDetailActions } from "./PrintableDetailActions";
+import { PrintableDetailExperience } from "./PrintableDetailExperience";
 
 export function PrintableDetailPage({ printable }: { printable: RuntimePrintable }) {
   const primaryHub = getPrintablePrimaryHub(printable);
@@ -44,43 +42,24 @@ export function PrintableDetailPage({ printable }: { printable: RuntimePrintable
 
       <PageAdSlot pageFamily="printable" placement="post-header-banner" />
 
-      <section className="printable-main" aria-label={`${displayTitle} preview and actions`} data-page-section="printable-main">
-        <div
-          className="printable-preview"
-          data-preview-source={assetSources.principalPreview.kind}
-          style={{
-            aspectRatio: `${assetSources.principalPreview.width} / ${assetSources.principalPreview.height}`,
-            maxWidth: `${assetSources.principalPreview.width}px`,
-          }}
-        >
-          <AssetImage
-            item={item}
-            imageUrl={assetSources.principalPreview.url}
-            priority
-            width={assetSources.principalPreview.width}
-            height={assetSources.principalPreview.height}
-          />
-        </div>
-        <aside className="printable-action-panel" aria-label="Print and download options">
-          <PrintableDetailActions item={item} internalSvgUrl={assetSources.fullResolutionArtwork.url} pngPreviewUrl={null} />
-          <h2 className="printable-details-title">Page details</h2>
-          <dl className="printable-facts" data-printable-details>
+      <PrintableDetailExperience
+        key={printable.assetId}
+        item={item}
+        preview={assetSources.principalPreview}
+        artworkWidth={assetSources.fullResolutionArtwork.width}
+        artworkHeight={assetSources.fullResolutionArtwork.height}
+        internalSvgUrl={assetSources.fullResolutionArtwork.url}
+        pngPreviewUrl={null}
+        detailItems={(
+          <>
             <div><dt>Collection</dt><dd><Link href={primaryHub.route}>{primaryHub.title}</Link></dd></div>
             {attributes.narrowSubjectCategory ? <div><dt>Subject</dt><dd>{attributes.narrowSubjectCategory}</dd></div> : null}
             {attributes.styles.length ? <div><dt>Style</dt><dd>{attributes.styles.join(", ")}</dd></div> : null}
             {attributes.seasonalClassifications.length ? <div><dt>Occasion</dt><dd>{attributes.seasonalClassifications.join(", ")}</dd></div> : null}
             {attributes.orientation ? <div><dt>Artwork orientation</dt><dd>{capitalize(attributes.orientation)}</dd></div> : null}
-            <div><dt>Printable PDF</dt><dd>{PRINTABLE_COMPOSITION.page.paperSize}, {PRINTABLE_COMPOSITION.page.orientation}</dd></div>
-            <div><dt>PDF paper size</dt><dd>{PRINTABLE_COMPOSITION.page.widthIn} × {PRINTABLE_COMPOSITION.page.heightIn} in</dd></div>
-            <div><dt>PNG/JPG output</dt><dd>{PRINTABLE_COMPOSITION.page.widthPx} × {PRINTABLE_COMPOSITION.page.heightPx} px</dd></div>
-            <div><dt>WebP output</dt><dd>Artwork image</dd></div>
-          </dl>
-          <details className="printable-help">
-            <summary>Printing and downloads</summary>
-            <p>Download PDF saves a printable US Letter document. Print prepares the same PDF and opens the device print workflow. PNG and JPG save printable-page images; WebP saves the artwork without the Letter page.</p>
-          </details>
-        </aside>
-      </section>
+          </>
+        )}
+      />
 
       <section className="content-section printable-related-section" aria-labelledby="related-printables-title">
         <div className="section-heading-row">

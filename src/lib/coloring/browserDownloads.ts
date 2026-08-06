@@ -9,6 +9,7 @@ import {
 } from "./exportComposition";
 
 export type PublicDownloadFormat = "png" | "jpg" | "jpeg" | "webp";
+export type DownloadFileFormat = PublicDownloadFormat | "pdf";
 export type CanvasDownloadFormat = Exclude<PublicDownloadFormat, "png">;
 export type RasterDownloadFormat = PublicDownloadFormat;
 
@@ -230,7 +231,7 @@ export function canUseCanvasExport() {
   );
 }
 
-export function buildDownloadFilename(title: string, format: PublicDownloadFormat) {
+export function buildDownloadFilename(title: string, format: DownloadFileFormat) {
   const extension = format === "jpeg" ? "jpg" : format;
   const slug = title
     .toLowerCase()
@@ -239,6 +240,29 @@ export function buildDownloadFilename(title: string, format: PublicDownloadForma
     .slice(0, 96);
 
   return `${slug || "coloring-page"}.${extension}`;
+}
+
+export function buildPrintablePageFilename(
+  title: string,
+  format: Exclude<DownloadFileFormat, "webp">,
+  layout: PrintableLayout,
+) {
+  const filename = buildDownloadFilename(title, format);
+  const suffixParts: string[] = [];
+
+  if (layout.page.paperKind === "a4") suffixParts.push("a4");
+  if (layout.requestedOrientation === "auto") {
+    suffixParts.push("auto", layout.page.orientation);
+  } else if (layout.page.orientation === "landscape") {
+    suffixParts.push("landscape");
+  }
+  if (layout.artworkScalePercent !== 100) suffixParts.push(String(layout.artworkScalePercent));
+  if (suffixParts.length === 0) return filename;
+
+  const extension = filename.slice(filename.lastIndexOf("."));
+  const stem = filename.slice(0, -extension.length);
+  const suffix = `-${suffixParts.join("-")}`;
+  return `${stem.endsWith(suffix) ? stem : `${stem}${suffix}`}${extension}`;
 }
 
 export async function downloadRasterImage(options: DownloadOptions & { format: PublicDownloadFormat }): Promise<BrowserDownloadResult> {
@@ -332,7 +356,7 @@ export async function composePrintableRasterToBlob(options: DownloadOptions & { 
       blob,
       format: options.format,
       mimeType: formatConfig.mimeType,
-      filename: buildDownloadFilename(options.filenameBaseName || options.title, formatConfig.extension),
+      filename: buildPrintablePageFilename(options.filenameBaseName || options.title, options.format, layout),
       width: canvas.width,
       height: canvas.height,
       source,
@@ -485,7 +509,7 @@ export async function prepareOnePagePrintPdf(options: PrintOptions): Promise<Pre
       ok: true,
       pdfBlob,
       pdfUrl,
-      filename: buildPrintPdfFilename(options.filenameBaseName || options.title),
+      filename: buildPrintablePageFilename(options.filenameBaseName || options.title, "pdf", layout),
       source: "internal-svg",
       revokeObjectUrl: true,
       pageCount: 1,
@@ -772,10 +796,6 @@ function drawPrintableRasterComposition(
     canvas.height - layout.brandBox.y,
   );
   context.restore();
-}
-
-function buildPrintPdfFilename(title: string) {
-  return buildDownloadFilename(title, "png").replace(/\.png$/i, ".pdf");
 }
 
 function buildPrintPdfTitle(title: string) {

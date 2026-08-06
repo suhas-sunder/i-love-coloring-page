@@ -96,9 +96,13 @@ test("normal cards use canonical image and title links with a separate Print act
 
 test("detail page preserves the approved section order and exposes no internal utility", async () => {
   const detail = await readText("src/components/coloring/PrintableDetailPage.tsx");
-  const order = ["PrintableDetailActions", "Page details", "Printing and downloads", "Related printable pages", "Related Collections"].map((needle) => detail.indexOf(needle));
-  assert.equal(order.every((value) => value >= 0), true);
-  assert.deepEqual(order, [...order].sort((a, b) => a - b));
+  const experience = await readText("src/components/coloring/PrintableDetailExperience.tsx");
+  const detailOrder = ["<PrintableDetailExperience", "Related printable pages", "Related Collections"].map((needle) => detail.indexOf(needle));
+  assert.equal(detailOrder.every((value) => value >= 0), true);
+  assert.deepEqual(detailOrder, [...detailOrder].sort((a, b) => a - b));
+  const experienceOrder = ["<PrintableDetailActions", "Page details", "Printing and downloads"].map((needle) => experience.indexOf(needle));
+  assert.equal(experienceOrder.every((value) => value >= 0), true);
+  assert.deepEqual(experienceOrder, [...experienceOrder].sort((a, b) => a - b));
   assert.match(detail, /<Breadcrumbs[\s\S]*className="printable-breadcrumb"/);
   const breadcrumbs = await readText("src/components/site/Breadcrumbs.tsx");
   assert.match(breadcrumbs, /<nav className=\{classes\} aria-label="Breadcrumb">/);
@@ -106,8 +110,8 @@ test("detail page preserves the approved section order and exposes no internal u
   assert.match(detail, /<GalleryGrid items=\{relatedItems\}[\s\S]*showPrintActions=\{false\}/);
   assert.match(detail, /getRelatedPrintables\(printable, 8\)/);
   assert.match(detail, /getPrintableSummary\(printable\)/);
-  assert.match(detail, /data-printable-details/);
-  assert.doesNotMatch(detail, /\{printable\.(?:stableId|slugAndId|canonicalSlug)\}|>SVG<|Download SVG/);
+  assert.match(experience, /data-printable-details/);
+  assert.doesNotMatch(`${detail}\n${experience}`, /\{printable\.(?:stableId|slugAndId|canonicalSlug)\}|>SVG<|Download SVG/);
   assert.equal((detail.match(/Related Collections/g) || []).length, 1);
 });
 

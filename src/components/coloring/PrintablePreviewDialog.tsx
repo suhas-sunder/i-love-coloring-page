@@ -5,7 +5,11 @@ import { createPortal } from "react-dom";
 
 import { useModalDialog } from "@/hooks/useModalDialog";
 import type { PreparedPrintImageResult } from "@/lib/coloring/browserDownloads";
+import type { PrintableProfileRequest } from "@/lib/coloring/exportComposition";
 import type { PublicColoringItem } from "@/lib/coloring/types";
+
+import type { PrintablePaperOperationController } from "./PrintableDetailActions";
+import { PrintablePagePreview } from "./PrintablePagePreview";
 
 const DownloadMenu = lazy(() => import("./DownloadMenu").then((module) => ({ default: module.DownloadMenu })));
 
@@ -15,9 +19,16 @@ type PrintablePreviewDialogProps = {
   item: PublicColoringItem;
   internalSvgUrl: string | null | undefined;
   pngPreviewUrl: string | null | undefined;
+  composition?: Required<PrintableProfileRequest>;
+  paperOperation?: PrintablePaperOperationController;
+  paperPreview?: {
+    imageUrl: string;
+    width: number;
+    height: number;
+  };
 };
 
-export function PrintablePreviewDialog({ open, onClose, item, internalSvgUrl, pngPreviewUrl }: PrintablePreviewDialogProps) {
+export function PrintablePreviewDialog({ open, onClose, item, internalSvgUrl, pngPreviewUrl, composition, paperOperation, paperPreview }: PrintablePreviewDialogProps) {
   const [mounted, setMounted] = useState(false);
   const [status, setStatus] = useState("");
   const [preparing, setPreparing] = useState(false);
@@ -26,6 +37,7 @@ export function PrintablePreviewDialog({ open, onClose, item, internalSvgUrl, pn
   const panelRef = useRef<HTMLElement>(null);
   const runIdRef = useRef(0);
   const titleId = useId();
+  const usesPaperPreview = Boolean(composition && paperPreview);
 
   useEffect(() => setMounted(true), []);
 
@@ -45,6 +57,15 @@ export function PrintablePreviewDialog({ open, onClose, item, internalSvgUrl, pn
     }
 
     const runId = ++runIdRef.current;
+    if (usesPaperPreview) {
+      setPrepared((current) => {
+        revokePreparedImage(current);
+        return null;
+      });
+      setPreparing(false);
+      setStatus("Print preview ready.");
+      return;
+    }
     setPreparing(true);
     setStatus("Preparing preview...");
     void import("@/lib/coloring/browserDownloads")
@@ -63,24 +84,26 @@ export function PrintablePreviewDialog({ open, onClose, item, internalSvgUrl, pn
         setPreparing(false);
         setStatus("Print preview could not be prepared. Please try again.");
       });
-  }, [internalSvgUrl, item.altText, item.title, open, pngPreviewUrl]);
+  }, [internalSvgUrl, item.altText, item.downloadBaseName, item.title, open, pngPreviewUrl, usesPaperPreview]);
 
   useEffect(() => () => revokePreparedImage(prepared), [prepared]);
 
   async function printPreview() {
-    if (!prepared?.ok || printing || !internalSvgUrl) return;
+    if ((!usesPaperPreview && !prepared?.ok) || printing || !internalSvgUrl || (paperOperation && !paperOperation.begin())) return;
+    const compositionSnapshot = composition ? { ...composition } : undefined;
     const runId = runIdRef.current;
     setPrinting(true);
     setStatus("Preparing printable PDF...");
     try {
       const { printOnePagePdf } = await import("@/lib/coloring/browserDownloads");
-      const result = await printOnePagePdf({ internalSvgUrl, pngPreviewUrl, title: item.title, filenameBaseName: item.downloadBaseName, altText: item.altText });
+      const result = await printOnePagePdf({ internalSvgUrl, pngPreviewUrl, title: item.title, filenameBaseName: item.downloadBaseName, altText: item.altText, composition: compositionSnapshot });
       if (runIdRef.current !== runId) return;
       setStatus(result.ok ? result.message || "Printable PDF is ready." : result.message);
     } catch {
       if (runIdRef.current === runId) setStatus("The printable PDF could not be prepared. Please try again.");
     } finally {
       if (runIdRef.current === runId) setPrinting(false);
+      paperOperation?.end();
     }
   }
 
@@ -91,15 +114,17 @@ export function PrintablePreviewDialog({ open, onClose, item, internalSvgUrl, pn
         <div className="print-preview-header">
           <div className="print-preview-copy"><h2 id={titleId}>{item.title}</h2></div>
           <div className="print-preview-actions">
-            <button className="button button-primary" type="button" onClick={printPreview} disabled={!prepared?.ok || printing || !internalSvgUrl}>{printing ? "Preparing PDF" : "Print"}</button>
+            <button className="button button-primary" type="button" onClick={printPreview} disabled={(!usesPaperPreview && !prepared?.ok) || printing || !internalSvgUrl || paperOperation?.busy}>{printing ? "Preparing PDF" : "Print"}</button>
             <button className="button button-ghost" type="button" onClick={onClose}>Close</button>
           </div>
         </div>
         <div className="print-preview-media" aria-busy={preparing}>
-          {preparing ? <div className="print-preview-state"><strong>{item.title}</strong><span>Preparing print preview...</span></div> : prepared?.ok ? <img src={prepared.imageUrl} alt={item.altText} /> : <div className="print-preview-state print-preview-state-error"><strong>Print preview could not be prepared.</strong><span>Try a download instead, or reload the page and try again.</span></div>}
+          {usesPaperPreview && composition && paperPreview ? (
+            <PrintablePagePreview item={item} imageUrl={paperPreview.imageUrl} sourceWidth={paperPreview.width} sourceHeight={paperPreview.height} settings={composition} compact />
+          ) : preparing ? <div className="print-preview-state"><strong>{item.title}</strong><span>Preparing print preview...</span></div> : prepared?.ok ? <img src={prepared.imageUrl} alt={item.altText} /> : <div className="print-preview-state print-preview-state-error"><strong>Print preview could not be prepared.</strong><span>Try a download instead, or reload the page and try again.</span></div>}
         </div>
         <div className="print-preview-downloads">
-          <Suspense fallback={<span>Loading download options...</span>}><DownloadMenu title={item.title} downloadBaseName={item.downloadBaseName} internalSvgUrl={internalSvgUrl} pngPreviewUrl={pngPreviewUrl} aria-label={`Download available formats for ${item.title}`} onStatus={setStatus} /></Suspense>
+          <Suspense fallback={<span>Loading download options...</span>}><DownloadMenu title={item.title} downloadBaseName={item.downloadBaseName} internalSvgUrl={internalSvgUrl} pngPreviewUrl={pngPreviewUrl} aria-label={`Download available formats for ${item.title}`} onStatus={setStatus} composition={composition} paperOperation={paperOperation} sourceWidth={paperPreview?.width} sourceHeight={paperPreview?.height} /></Suspense>
         </div>
         {status ? <p className="print-preview-status" role="status" aria-live="polite" aria-atomic="true">{status}</p> : null}
       </section>

@@ -184,6 +184,7 @@ test("printable raster composition consumes the selected centralized paper profi
     });
     assert.equal(result.ok, true);
     assert.deepEqual([result.width, result.height], [3508, 2480]);
+    assert.equal(result.filename, "synthetic-landscape-a4-landscape-75.png");
     const canvas = mock.canvases[0];
     assert.deepEqual([canvas.width, canvas.height], [3508, 2480]);
     const draw = canvas.context.operations.find((operation) => operation.name === "drawImage");
@@ -292,7 +293,7 @@ test("PDF writer uses the selected A4 landscape profile without changing documen
     });
     assert.deepEqual(pdf.imageBox, expected.imageBox);
     assert.deepEqual(pdf.artworkBox, expected.artworkBox);
-    assert.equal(pdf.filename, "synthetic-landscape.pdf");
+    assert.equal(pdf.filename, "synthetic-landscape-a4-landscape-75.pdf");
     assert.equal(pdf.metadataTitle, "Synthetic Landscape - iLoveColoringPage.com");
     downloads.revokePreparedPrintPdf(pdf);
   } finally {
@@ -348,6 +349,7 @@ test("canonical printable actions and format descriptions communicate the actual
   const cardActions = await readFile(path.join(ROOT, "src/components/coloring/PrintableCardActions.tsx"), "utf8");
   const menu = await readFile(path.join(ROOT, "src/components/coloring/DownloadMenu.tsx"), "utf8");
   const detail = await readFile(path.join(ROOT, "src/components/coloring/PrintableDetailPage.tsx"), "utf8");
+  const experience = await readFile(path.join(ROOT, "src/components/coloring/PrintableDetailExperience.tsx"), "utf8");
 
   assert.match(actions, /downloadOnePagePdf/);
   assert.match(actions, /Preparing PDF/);
@@ -356,24 +358,33 @@ test("canonical printable actions and format descriptions communicate the actual
   assertOrder(actions, ["Download PDF", "<PrintableCardActions", "Download image"]);
   assert.match(cardActions, /buttonClassName \|\| "button button-ghost button-small gallery-print-button"/);
   assert.match(actions, /buttonClassName="button button-subtle"/);
-  assert.match(menu, /Printable page image, \$\{PRINTABLE_COMPOSITION\.page\.widthPx\} × \$\{PRINTABLE_COMPOSITION\.page\.heightPx\} px/);
+  assert.match(menu, /Printable page image, \$\{page\.widthPx\} × \$\{page\.heightPx\} px/);
   assert.match(menu, /High-resolution artwork image/);
   assert.match(menu, /recommended: true/);
   assert.match(menu, /aria-describedby/);
   assert.doesNotMatch(menu, /Download SVG|label:\s*"SVG"|downloadSvg/i);
-  assert.doesNotMatch(detail, /<dt>Artwork size<\/dt>/);
-  assert.match(detail, /<dt>Printable PDF<\/dt>/);
-  assert.match(detail, /<dt>PDF paper size<\/dt>/);
-  assert.match(detail, /<dt>PNG\/JPG output<\/dt>/);
-  assert.match(detail, /<dt>WebP output<\/dt><dd>Artwork image<\/dd>/);
-  assert.match(detail, /PRINTABLE_COMPOSITION\.page\.widthPx/);
-  assert.match(detail, /Download PDF saves a printable US Letter document/);
-  assert.match(detail, /Print prepares the same PDF and opens the device print workflow/);
+  assert.doesNotMatch(`${detail}\n${experience}`, /<dt>Artwork size<\/dt>/);
+  assert.match(experience, /<dt>Printable PDF<\/dt>/);
+  assert.match(experience, /<dt>PDF paper size<\/dt>/);
+  assert.match(experience, /<dt>PNG\/JPG output<\/dt>/);
+  assert.match(experience, /<dt>WebP output<\/dt><dd>Artwork image<\/dd>/);
+  assert.match(experience, /layout\.page\.widthPx/);
+  assert.match(experience, /Download PDF saves the selected printable document/);
+  assert.match(experience, /Print prepares the same PDF and opens the device print workflow/);
 });
 
 test("filename behavior, SVG exclusion, and conversion failure remain user-safe", async () => {
   assert.equal(downloads.buildDownloadFilename("  Anime Girl: Balloon!  ", "png"), "anime-girl-balloon.png");
   assert.equal(downloads.buildDownloadFilename("", "jpeg"), "coloring-page.jpg");
+  const defaultLayout = composition.computePrintableLayout(800, 1200);
+  const a4Portrait = composition.computePrintableLayout(800, 1200, { paperKind: "a4" });
+  const letterLandscape = composition.computePrintableLayout(800, 1200, { orientation: "landscape" });
+  const a4Auto = composition.computePrintableLayout(1200, 800, { paperKind: "a4", orientation: "auto", artworkScalePercent: 75 });
+  assert.equal(downloads.buildPrintablePageFilename("Animal Coloring Page", "pdf", defaultLayout), "animal-coloring-page.pdf");
+  assert.equal(downloads.buildPrintablePageFilename("Animal Coloring Page", "pdf", a4Portrait), "animal-coloring-page-a4.pdf");
+  assert.equal(downloads.buildPrintablePageFilename("Animal Coloring Page", "png", letterLandscape), "animal-coloring-page-landscape.png");
+  assert.equal(downloads.buildPrintablePageFilename("Animal Coloring Page", "jpg", a4Auto), "animal-coloring-page-a4-auto-landscape-75.jpg");
+  assert.equal(downloads.buildPrintablePageFilename("Animal Coloring Page A4", "pdf", a4Portrait), "animal-coloring-page-a4.pdf");
   assert.deepEqual(downloads.EXPOSED_PUBLIC_DOWNLOAD_FORMATS, ["png", "jpg", "webp"]);
 
   const mock = installCanvasMock();
@@ -410,16 +421,24 @@ test("PDF and raster outputs consume one shared paper-profile layout engine", as
   assert.equal(source.includes("function getPrintPdfLayout"), false);
 });
 
-test("paper profiles remain internal and expose no new printable controls", async () => {
+test("paper profile controls expose the existing engine without duplicating geometry", async () => {
   const actions = await readFile(path.join(ROOT, "src/components/coloring/PrintableDetailActions.tsx"), "utf8");
   const preview = await readFile(path.join(ROOT, "src/components/coloring/PrintablePreviewDialog.tsx"), "utf8");
   const page = await readFile(path.join(ROOT, "src/components/coloring/PrintableDetailPage.tsx"), "utf8");
-  const visibleSource = `${actions}\n${preview}\n${page}`;
-  assert.doesNotMatch(visibleSource, /paperKind|artworkScalePercent|OrientationPreference/);
-  assert.doesNotMatch(visibleSource, /<select|type="radio"|>A4</);
+  const experience = await readFile(path.join(ROOT, "src/components/coloring/PrintableDetailExperience.tsx"), "utf8");
+  const pagePreview = await readFile(path.join(ROOT, "src/components/coloring/PrintablePagePreview.tsx"), "utf8");
+  assert.match(experience, /data-printable-settings-version="paper-controls-v1"/);
+  assert.equal((experience.match(/<fieldset/g) || []).length, 3);
+  assert.equal((experience.match(/<legend>/g) || []).length, 3);
+  assert.match(experience, /type="radio"/);
+  assert.match(experience, /normalizePrintableProfileRequest/);
+  assert.match(pagePreview, /computePrintableLayout/);
+  assert.doesNotMatch(pagePreview, /createElement\("canvas"\)|2550|3300|3508|2480/);
   assert.match(actions, /Download PDF/);
   assert.match(actions, /<PrintableCardActions/);
-  assert.match(page, /PRINTABLE_COMPOSITION\.page\.paperSize/);
+  assert.match(actions, /composition: compositionSnapshot/);
+  assert.match(preview, /composition: compositionSnapshot/);
+  assert.match(page, /key=\{printable\.assetId\}/);
 });
 
 test("PDF compression failure stays explicit instead of emitting a raw or empty document", async () => {

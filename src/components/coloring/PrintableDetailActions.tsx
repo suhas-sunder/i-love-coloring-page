@@ -2,6 +2,7 @@
 
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
 
+import type { PrintableProfileRequest } from "@/lib/coloring/exportComposition";
 import type { PublicColoringItem } from "@/lib/coloring/types";
 
 import { PrintableCardActions } from "./PrintableCardActions";
@@ -12,10 +13,33 @@ type PrintableDetailActionsProps = {
   item: PublicColoringItem;
   internalSvgUrl: string | null;
   pngPreviewUrl: string | null;
+  composition: Required<PrintableProfileRequest>;
+  paperOperation: PrintablePaperOperationController;
+  paperPreview: {
+    imageUrl: string;
+    width: number;
+    height: number;
+  };
+  status: string;
+  onStatus: (message: string) => void;
 };
 
-export function PrintableDetailActions({ item, internalSvgUrl, pngPreviewUrl }: PrintableDetailActionsProps) {
-  const [status, setStatus] = useState("");
+export type PrintablePaperOperationController = {
+  busy: boolean;
+  begin: () => boolean;
+  end: () => void;
+};
+
+export function PrintableDetailActions({
+  item,
+  internalSvgUrl,
+  pngPreviewUrl,
+  composition,
+  paperOperation,
+  paperPreview,
+  status,
+  onStatus,
+}: PrintableDetailActionsProps) {
   const [preparingPdf, setPreparingPdf] = useState(false);
   const pdfDownloadButtonRef = useRef<HTMLButtonElement>(null);
   const pdfDownloadInProgressRef = useRef(false);
@@ -28,11 +52,12 @@ export function PrintableDetailActions({ item, internalSvgUrl, pngPreviewUrl }: 
   }, [preparingPdf]);
 
   async function downloadPdf() {
-    if (!internalSvgUrl || pdfDownloadInProgressRef.current) return;
+    if (!internalSvgUrl || pdfDownloadInProgressRef.current || !paperOperation.begin()) return;
+    const compositionSnapshot = { ...composition };
     restorePdfFocusRef.current = document.activeElement === pdfDownloadButtonRef.current;
     pdfDownloadInProgressRef.current = true;
     setPreparingPdf(true);
-    setStatus("Preparing PDF...");
+    onStatus("Preparing PDF...");
 
     try {
       const { downloadOnePagePdf } = await import("@/lib/coloring/browserDownloads");
@@ -42,13 +67,15 @@ export function PrintableDetailActions({ item, internalSvgUrl, pngPreviewUrl }: 
         title: item.title,
         filenameBaseName: item.downloadBaseName,
         altText: item.altText,
+        composition: compositionSnapshot,
       });
-      setStatus(result.message);
+      onStatus(result.message);
     } catch {
-      setStatus("The printable PDF could not be prepared. Please try again.");
+      onStatus("The printable PDF could not be prepared. Please try again.");
     } finally {
       pdfDownloadInProgressRef.current = false;
       setPreparingPdf(false);
+      paperOperation.end();
     }
   }
 
@@ -59,7 +86,7 @@ export function PrintableDetailActions({ item, internalSvgUrl, pngPreviewUrl }: 
         className="button button-primary printable-pdf-download"
         type="button"
         onClick={downloadPdf}
-        disabled={!internalSvgUrl || preparingPdf}
+        disabled={!internalSvgUrl || preparingPdf || paperOperation.busy}
         aria-busy={preparingPdf}
       >
         {preparingPdf ? "Preparing PDF" : "Download PDF"}
@@ -69,11 +96,14 @@ export function PrintableDetailActions({ item, internalSvgUrl, pngPreviewUrl }: 
         buttonClassName="button button-subtle"
         item={item}
         assetUrls={{ internalSvg: internalSvgUrl, png: pngPreviewUrl }}
+        composition={composition}
+        paperOperation={paperOperation}
+        paperPreview={paperPreview}
       />
       <div className="printable-download-group">
         <h2>Download image</h2>
         <Suspense fallback={<p className="utility-note">Loading download options...</p>}>
-          <DownloadMenu title={item.title} downloadBaseName={item.downloadBaseName} internalSvgUrl={internalSvgUrl} pngPreviewUrl={pngPreviewUrl} aria-label={`Download available formats for ${item.title}`} onStatus={setStatus} />
+          <DownloadMenu title={item.title} downloadBaseName={item.downloadBaseName} internalSvgUrl={internalSvgUrl} pngPreviewUrl={pngPreviewUrl} aria-label={`Download available formats for ${item.title}`} onStatus={onStatus} composition={composition} paperOperation={paperOperation} sourceWidth={paperPreview.width} sourceHeight={paperPreview.height} />
         </Suspense>
       </div>
       <p className="print-preview-status" role="status" aria-live="polite" aria-atomic="true">{status}</p>

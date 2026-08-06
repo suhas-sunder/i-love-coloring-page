@@ -10,7 +10,9 @@ import {
   type BrowserDownloadResult,
   type PublicDownloadFormat,
 } from "@/lib/coloring/browserDownloads";
-import { PRINTABLE_COMPOSITION } from "@/lib/coloring/exportComposition";
+import { computePrintableLayout, PRINTABLE_COMPOSITION, type PrintableProfileRequest } from "@/lib/coloring/exportComposition";
+
+import type { PrintablePaperOperationController } from "./PrintableDetailActions";
 
 type DownloadMenuProps = {
   title: string;
@@ -19,6 +21,10 @@ type DownloadMenuProps = {
   pngPreviewUrl: string | null | undefined;
   "aria-label": string;
   onStatus: (message: string) => void;
+  composition?: Required<PrintableProfileRequest>;
+  paperOperation?: PrintablePaperOperationController;
+  sourceWidth?: number;
+  sourceHeight?: number;
 };
 
 type DownloadOption = {
@@ -28,19 +34,24 @@ type DownloadOption = {
   recommended?: true;
 };
 
-const DOWNLOAD_OPTIONS: readonly DownloadOption[] = [
-  { format: "png", label: "PNG", description: `Printable page image, ${PRINTABLE_COMPOSITION.page.widthPx} × ${PRINTABLE_COMPOSITION.page.heightPx} px`, recommended: true },
-  { format: "jpg", label: "JPG", description: `Printable page image, ${PRINTABLE_COMPOSITION.page.widthPx} × ${PRINTABLE_COMPOSITION.page.heightPx} px` },
-  { format: "webp", label: "WebP", description: "High-resolution artwork image" },
-];
-
 const DOWNLOADERS = {
   png: downloadPng,
   jpg: downloadJpeg,
   webp: downloadWebp,
 };
 
-export function DownloadMenu({ title, downloadBaseName, internalSvgUrl, pngPreviewUrl, "aria-label": ariaLabel, onStatus }: DownloadMenuProps) {
+export function DownloadMenu({
+  title,
+  downloadBaseName,
+  internalSvgUrl,
+  pngPreviewUrl,
+  "aria-label": ariaLabel,
+  onStatus,
+  composition,
+  paperOperation,
+  sourceWidth,
+  sourceHeight,
+}: DownloadMenuProps) {
   const [busyFormat, setBusyFormat] = useState<DownloadOption["format"] | null>(null);
   const [supportedFormats, setSupportedFormats] = useState<readonly PublicDownloadFormat[]>(["png"]);
   const descriptionIdPrefix = useId();
@@ -49,9 +60,14 @@ export function DownloadMenu({ title, downloadBaseName, internalSvgUrl, pngPrevi
     setSupportedFormats(getSupportedDownloadFormats());
   }, []);
 
-  const visibleOptions = DOWNLOAD_OPTIONS.filter((option) => supportedFormats.includes(option.format));
+  const visibleOptions = getDownloadOptions(composition, sourceWidth, sourceHeight)
+    .filter((option) => supportedFormats.includes(option.format));
 
   async function downloadFormat(option: DownloadOption) {
+    const usesPaperSettings = option.format !== "webp";
+    const operationStarted = usesPaperSettings && paperOperation ? paperOperation.begin() : false;
+    if (usesPaperSettings && paperOperation && !operationStarted) return;
+    const compositionSnapshot = composition ? { ...composition } : undefined;
     setBusyFormat(option.format);
     onStatus("");
 
@@ -61,12 +77,14 @@ export function DownloadMenu({ title, downloadBaseName, internalSvgUrl, pngPrevi
         pngPreviewUrl,
         title,
         filenameBaseName: downloadBaseName,
+        composition: usesPaperSettings ? compositionSnapshot : undefined,
       });
       onStatus(getDownloadStatusMessage(result, option.label));
     } catch {
       onStatus(option.label === "PNG" ? "Download could not be prepared. Please try again." : `${option.label} download could not be prepared. Try PNG instead.`);
     } finally {
       setBusyFormat(null);
+      if (operationStarted) paperOperation?.end();
     }
   }
 
@@ -78,7 +96,7 @@ export function DownloadMenu({ title, downloadBaseName, internalSvgUrl, pngPrevi
           type="button"
           key={option.format}
           onClick={() => downloadFormat(option)}
-          disabled={busyFormat !== null}
+          disabled={busyFormat !== null || (option.format !== "webp" && Boolean(paperOperation?.busy))}
           aria-label={`Download ${option.label} for ${title}`}
           aria-describedby={`${descriptionIdPrefix}-${option.format}`}
         >
@@ -91,6 +109,22 @@ export function DownloadMenu({ title, downloadBaseName, internalSvgUrl, pngPrevi
       ))}
     </div>
   );
+}
+
+function getDownloadOptions(
+  composition: Required<PrintableProfileRequest> | undefined,
+  sourceWidth: number | undefined,
+  sourceHeight: number | undefined,
+): readonly DownloadOption[] {
+  const page = composition && sourceWidth && sourceHeight
+    ? computePrintableLayout(sourceWidth, sourceHeight, { ...composition, unit: "raster" }).page
+    : PRINTABLE_COMPOSITION.page;
+  const printableDescription = `Printable page image, ${page.widthPx} × ${page.heightPx} px`;
+  return [
+    { format: "png", label: "PNG", description: printableDescription, recommended: true },
+    { format: "jpg", label: "JPG", description: printableDescription },
+    { format: "webp", label: "WebP", description: "High-resolution artwork image" },
+  ];
 }
 
 function getDownloadButtonLabel(label: DownloadOption["label"]) {

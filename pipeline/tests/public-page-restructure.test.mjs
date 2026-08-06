@@ -94,24 +94,23 @@ test("hub pagination uses the materially condensed template", async () => {
 
 test("printable detail protects preview actions and aligns the standard placements", async () => {
   const source = await readText("src/components/coloring/PrintableDetailPage.tsx");
+  const experience = await readText("src/components/coloring/PrintableDetailExperience.tsx");
   assertOrder(source, [
     "<Breadcrumbs",
     "<header className=\"printable-heading\"",
     "placement=\"post-header-banner\"",
-    "data-page-section=\"printable-main\"",
-    "<PrintableDetailActions",
+    "<PrintableDetailExperience",
     "Related printable pages",
     "Related Collections",
     "placement=\"supporting-square\"",
     "placement=\"related-banner\"",
   ]);
-  const mainStart = source.indexOf("<section className=\"printable-main\"");
-  const mainEnd = source.indexOf("</section>", mainStart);
-  assert.doesNotMatch(source.slice(mainStart, mainEnd), /PageAdSlot|AdSlot|Advertisement/);
-  assert.match(source, /data-printable-details/);
-  assert.match(source, /<summary>Printing and downloads<\/summary>/);
+  assert.match(experience, /data-page-section="printable-main"/);
+  assert.doesNotMatch(experience, /PageAdSlot|AdSlot|Advertisement/);
+  assert.match(experience, /data-printable-details/);
+  assert.match(experience, /<summary>Printing and downloads<\/summary>/);
   assert.doesNotMatch(source, /<SupportingInformation/);
-  assert.match(source, /<PrintableDetailActions item=\{item\} internalSvgUrl=\{assetSources\.fullResolutionArtwork\.url\} pngPreviewUrl=\{null\}/);
+  assert.match(experience, /<PrintableDetailActions[\s\S]*item=\{item\}[\s\S]*internalSvgUrl=\{internalSvgUrl\}[\s\S]*pngPreviewUrl=\{pngPreviewUrl\}/);
 });
 
 test("copy regression scan rejects outdated and internal page wording", async () => {

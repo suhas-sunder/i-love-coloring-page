@@ -35,13 +35,14 @@ test("all printable attributes are provenance-backed and omit unapproved audienc
 test("printable text removes the global format paragraph and forbids promotional claims", () => {
   const titleSource = text("src/lib/coloring/printableTitles.ts");
   const pageSource = text("src/components/coloring/PrintableDetailPage.tsx");
+  const experienceSource = text("src/components/coloring/PrintableDetailExperience.tsx");
   const footerSource = text("src/components/site/SiteFooter.tsx");
   const seoPages = json("src/generated/coloring/runtime-seo-pages.json");
   assert.doesNotMatch(titleSource, /Print \$\{displayTitle\} or download this coloring page as PNG, JPG, or WebP/);
-  assert.doesNotMatch(pageSource, /<dt>Formats<\/dt>|PNG, JPG, WebP|perfect for|spark your creativity|great for classrooms/i);
+  assert.doesNotMatch(`${pageSource}\n${experienceSource}`, /<dt>Formats<\/dt>|PNG, JPG, WebP|perfect for|spark your creativity|great for classrooms/i);
   assert.doesNotMatch(footerSource, /PNG, JPG|JPG, or WebP/i);
   assert.doesNotMatch(seoPages.pages.find((page) => page.path === "/").metaDescription, /PNG|JPG|WebP/i);
-  assert.match(pageSource, /data-printable-details/);
+  assert.match(experienceSource, /data-printable-details/);
   assert.match(pageSource, /summary \? <p>/);
   const forbidden = /enjoy|perfect for|great for|spark your creativity|relax|beautiful|therapy|educational|all ages|kids and adults/i;
   for (const record of runtime.records) {
