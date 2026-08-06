@@ -1,0 +1,40 @@
+{
+  "measuredAt": "2026-08-06T18:01:06.638Z",
+  "route": "/printables/animals/animals-alligator-4feec8505a",
+  "status": 200,
+  "deployedRevision": "3e810c2963c9123a63e48df7697f0a6192aa8b1f",
+  "bodySha256": "40d96e500a299afa8bfcb8ba5e16f9aedab049cc6936bcb23acacc82602c5087",
+  "runtimeOptimizationMarker": true,
+  "serverRenderedHeading": true,
+  "serverRenderedPrimaryActions": true,
+  "lazyImageMenuPlaceholder": true,
+  "crawlableRelatedPrintableLinkCount": 16,
+  "manualSixMarker": true,
+  "balancedAdFlowMarker": true,
+  "fixedHeaderMarker": true,
+  "privacyStatus": 200,
+  "privacyAdWrapperCount": 0,
+  "adsTxt": {
+    "status": 200,
+    "bytes": 58,
+    "bom": false,
+    "text": "google.com, pub-4810616735714570, DIRECT, f08c47fec0942fa0"
+  },
+  "initialJavaScript": {
+    "fileCount": 9,
+    "rawBytes": 670089,
+    "gzipBytes": 199351,
+    "allStatuses200": true,
+    "assets": [
+      "/_next/static/chunks/0n35cz-_9zsnr.js",
+      "/_next/static/chunks/0pqt~8bl3ukh4.js",
+      "/_next/static/chunks/07lhk_q6pmm3r.js",
+      "/_next/static/chunks/0x8cw3rwmwl8m.js",
+      "/_next/static/chunks/turbopack-11tvfvz44i1~s.js",
+      "/_next/static/chunks/0jtlm3x27lqyp.js",
+      "/_next/static/chunks/0d3shmwh5_nmn.js",
+      "/_next/static/chunks/0k5wh.2melljt.js",
+      "/_next/static/chunks/03~yq9q893hmn.js"
+    ]
+  }
+}

@@ -1,0 +1,975 @@
+{
+  "schemaVersion": 1,
+  "measurementClass": "fresh local production-build artifact analysis",
+  "representativeRouteCount": 12,
+  "routes": [
+    {
+      "id": "home",
+      "route": "/",
+      "output": "index.html",
+      "family": "home",
+      "initialJavaScriptAssets": [
+        "/_next/static/chunks/0pqt~8bl3ukh4.js",
+        "/_next/static/chunks/07lhk_q6pmm3r.js",
+        "/_next/static/chunks/0x8cw3rwmwl8m.js",
+        "/_next/static/chunks/turbopack-11tvfvz44i1~s.js",
+        "/_next/static/chunks/0jtlm3x27lqyp.js",
+        "/_next/static/chunks/0d3shmwh5_nmn.js",
+        "/_next/static/chunks/043mezgz8fxn9.js",
+        "/_next/static/chunks/03~yq9q893hmn.js",
+        "/_next/static/chunks/0n35cz-_9zsnr.js"
+      ],
+      "initialChunkCount": 9,
+      "initialRawBytes": 672804,
+      "initialGzipBytes": 200637
+    },
+    {
+      "id": "gallery",
+      "route": "/coloring-pages",
+      "output": "coloring-pages.html",
+      "family": "gallery",
+      "initialJavaScriptAssets": [
+        "/_next/static/chunks/0pqt~8bl3ukh4.js",
+        "/_next/static/chunks/07lhk_q6pmm3r.js",
+        "/_next/static/chunks/0x8cw3rwmwl8m.js",
+        "/_next/static/chunks/turbopack-11tvfvz44i1~s.js",
+        "/_next/static/chunks/0jtlm3x27lqyp.js",
+        "/_next/static/chunks/0d3shmwh5_nmn.js",
+        "/_next/static/chunks/10cktq98-nl46.js",
+        "/_next/static/chunks/03~yq9q893hmn.js",
+        "/_next/static/chunks/0n35cz-_9zsnr.js"
+      ],
+      "initialChunkCount": 9,
+      "initialRawBytes": 682545,
+      "initialGzipBytes": 203624
+    },
+    {
+      "id": "large-hub",
+      "route": "/coloring-pages/animals",
+      "output": "coloring-pages/animals.html",
+      "family": "gallery",
+      "initialJavaScriptAssets": [
+        "/_next/static/chunks/0pqt~8bl3ukh4.js",
+        "/_next/static/chunks/07lhk_q6pmm3r.js",
+        "/_next/static/chunks/0x8cw3rwmwl8m.js",
+        "/_next/static/chunks/turbopack-11tvfvz44i1~s.js",
+        "/_next/static/chunks/0jtlm3x27lqyp.js",
+        "/_next/static/chunks/0d3shmwh5_nmn.js",
+        "/_next/static/chunks/00xpbxzd2yw8_.js",
+        "/_next/static/chunks/03~yq9q893hmn.js",
+        "/_next/static/chunks/0n35cz-_9zsnr.js"
+      ],
+      "initialChunkCount": 9,
+      "initialRawBytes": 684533,
+      "initialGzipBytes": 204367
+    },
+    {
+      "id": "small-hub",
+      "route": "/coloring-pages/lotus",
+      "output": "coloring-pages/lotus.html",
+      "family": "gallery",
+      "initialJavaScriptAssets": [
+        "/_next/static/chunks/0pqt~8bl3ukh4.js",
+        "/_next/static/chunks/07lhk_q6pmm3r.js",
+        "/_next/static/chunks/0x8cw3rwmwl8m.js",
+        "/_next/static/chunks/turbopack-11tvfvz44i1~s.js",
+        "/_next/static/chunks/0jtlm3x27lqyp.js",
+        "/_next/static/chunks/0d3shmwh5_nmn.js",
+        "/_next/static/chunks/00xpbxzd2yw8_.js",
+        "/_next/static/chunks/03~yq9q893hmn.js",
+        "/_next/static/chunks/0n35cz-_9zsnr.js"
+      ],
+      "initialChunkCount": 9,
+      "initialRawBytes": 684533,
+      "initialGzipBytes": 204367
+    },
+    {
+      "id": "seasonal-hub",
+      "route": "/coloring-pages/christmas",
+      "output": "coloring-pages/christmas.html",
+      "family": "gallery",
+      "initialJavaScriptAssets": [
+        "/_next/static/chunks/0pqt~8bl3ukh4.js",
+        "/_next/static/chunks/07lhk_q6pmm3r.js",
+        "/_next/static/chunks/0x8cw3rwmwl8m.js",
+        "/_next/static/chunks/turbopack-11tvfvz44i1~s.js",
+        "/_next/static/chunks/0jtlm3x27lqyp.js",
+        "/_next/static/chunks/0d3shmwh5_nmn.js",
+        "/_next/static/chunks/00xpbxzd2yw8_.js",
+        "/_next/static/chunks/03~yq9q893hmn.js",
+        "/_next/static/chunks/0n35cz-_9zsnr.js"
+      ],
+      "initialChunkCount": 9,
+      "initialRawBytes": 684533,
+      "initialGzipBytes": 204367
+    },
+    {
+      "id": "paginated-hub",
+      "route": "/coloring-pages/animals/page/2",
+      "output": "coloring-pages/animals/page/2.html",
+      "family": "gallery",
+      "initialJavaScriptAssets": [
+        "/_next/static/chunks/0pqt~8bl3ukh4.js",
+        "/_next/static/chunks/07lhk_q6pmm3r.js",
+        "/_next/static/chunks/0x8cw3rwmwl8m.js",
+        "/_next/static/chunks/turbopack-11tvfvz44i1~s.js",
+        "/_next/static/chunks/0jtlm3x27lqyp.js",
+        "/_next/static/chunks/0d3shmwh5_nmn.js",
+        "/_next/static/chunks/00xpbxzd2yw8_.js",
+        "/_next/static/chunks/03~yq9q893hmn.js",
+        "/_next/static/chunks/0n35cz-_9zsnr.js"
+      ],
+      "initialChunkCount": 9,
+      "initialRawBytes": 684533,
+      "initialGzipBytes": 204367
+    },
+    {
+      "id": "printable",
+      "route": "/printables/animals/animals-alligator-4feec8505a",
+      "output": "printables/animals/animals-alligator-4feec8505a.html",
+      "family": "printable",
+      "initialJavaScriptAssets": [
+        "/_next/static/chunks/0pqt~8bl3ukh4.js",
+        "/_next/static/chunks/07lhk_q6pmm3r.js",
+        "/_next/static/chunks/0x8cw3rwmwl8m.js",
+        "/_next/static/chunks/turbopack-11tvfvz44i1~s.js",
+        "/_next/static/chunks/0jtlm3x27lqyp.js",
+        "/_next/static/chunks/0d3shmwh5_nmn.js",
+        "/_next/static/chunks/0k5wh.2melljt.js",
+        "/_next/static/chunks/03~yq9q893hmn.js",
+        "/_next/static/chunks/0n35cz-_9zsnr.js"
+      ],
+      "initialChunkCount": 9,
+      "initialRawBytes": 670089,
+      "initialGzipBytes": 199351
+    },
+    {
+      "id": "privacy",
+      "route": "/privacy",
+      "output": "privacy.html",
+      "family": "trust",
+      "initialJavaScriptAssets": [
+        "/_next/static/chunks/0pqt~8bl3ukh4.js",
+        "/_next/static/chunks/07lhk_q6pmm3r.js",
+        "/_next/static/chunks/0x8cw3rwmwl8m.js",
+        "/_next/static/chunks/turbopack-11tvfvz44i1~s.js",
+        "/_next/static/chunks/0jtlm3x27lqyp.js",
+        "/_next/static/chunks/0d3shmwh5_nmn.js",
+        "/_next/static/chunks/03~yq9q893hmn.js",
+        "/_next/static/chunks/0n35cz-_9zsnr.js"
+      ],
+      "initialChunkCount": 8,
+      "initialRawBytes": 665464,
+      "initialGzipBytes": 197511
+    },
+    {
+      "id": "terms",
+      "route": "/terms",
+      "output": "terms.html",
+      "family": "trust",
+      "initialJavaScriptAssets": [
+        "/_next/static/chunks/0pqt~8bl3ukh4.js",
+        "/_next/static/chunks/07lhk_q6pmm3r.js",
+        "/_next/static/chunks/0x8cw3rwmwl8m.js",
+        "/_next/static/chunks/turbopack-11tvfvz44i1~s.js",
+        "/_next/static/chunks/0jtlm3x27lqyp.js",
+        "/_next/static/chunks/0d3shmwh5_nmn.js",
+        "/_next/static/chunks/03~yq9q893hmn.js",
+        "/_next/static/chunks/0n35cz-_9zsnr.js"
+      ],
+      "initialChunkCount": 8,
+      "initialRawBytes": 665464,
+      "initialGzipBytes": 197511
+    },
+    {
+      "id": "about",
+      "route": "/about",
+      "output": "about.html",
+      "family": "trust",
+      "initialJavaScriptAssets": [
+        "/_next/static/chunks/0pqt~8bl3ukh4.js",
+        "/_next/static/chunks/07lhk_q6pmm3r.js",
+        "/_next/static/chunks/0x8cw3rwmwl8m.js",
+        "/_next/static/chunks/turbopack-11tvfvz44i1~s.js",
+        "/_next/static/chunks/0jtlm3x27lqyp.js",
+        "/_next/static/chunks/0d3shmwh5_nmn.js",
+        "/_next/static/chunks/03~yq9q893hmn.js",
+        "/_next/static/chunks/0n35cz-_9zsnr.js"
+      ],
+      "initialChunkCount": 8,
+      "initialRawBytes": 665464,
+      "initialGzipBytes": 197511
+    },
+    {
+      "id": "sitemap",
+      "route": "/sitemap",
+      "output": "sitemap.html",
+      "family": "sitemap",
+      "initialJavaScriptAssets": [
+        "/_next/static/chunks/0pqt~8bl3ukh4.js",
+        "/_next/static/chunks/07lhk_q6pmm3r.js",
+        "/_next/static/chunks/0x8cw3rwmwl8m.js",
+        "/_next/static/chunks/turbopack-11tvfvz44i1~s.js",
+        "/_next/static/chunks/0jtlm3x27lqyp.js",
+        "/_next/static/chunks/0d3shmwh5_nmn.js",
+        "/_next/static/chunks/03~yq9q893hmn.js",
+        "/_next/static/chunks/0n35cz-_9zsnr.js"
+      ],
+      "initialChunkCount": 8,
+      "initialRawBytes": 665464,
+      "initialGzipBytes": 197511
+    },
+    {
+      "id": "not-found",
+      "route": "/404",
+      "output": "404.html",
+      "family": "not-found",
+      "initialJavaScriptAssets": [
+        "/_next/static/chunks/0pqt~8bl3ukh4.js",
+        "/_next/static/chunks/07lhk_q6pmm3r.js",
+        "/_next/static/chunks/0x8cw3rwmwl8m.js",
+        "/_next/static/chunks/turbopack-11tvfvz44i1~s.js",
+        "/_next/static/chunks/0jtlm3x27lqyp.js",
+        "/_next/static/chunks/0d3shmwh5_nmn.js",
+        "/_next/static/chunks/03~yq9q893hmn.js",
+        "/_next/static/chunks/0n35cz-_9zsnr.js"
+      ],
+      "initialChunkCount": 8,
+      "initialRawBytes": 665464,
+      "initialGzipBytes": 197511
+    }
+  ],
+  "chunks": [
+    {
+      "asset": "/_next/static/chunks/07lhk_q6pmm3r.js",
+      "rawBytes": 227537,
+      "gzipBytes": 70860,
+      "initialRouteIds": [
+        "about",
+        "gallery",
+        "home",
+        "large-hub",
+        "not-found",
+        "paginated-hub",
+        "printable",
+        "privacy",
+        "seasonal-hub",
+        "sitemap",
+        "small-hub",
+        "terms"
+      ],
+      "initialRouteCount": 12,
+      "phase": "initial",
+      "sharedAcrossRepresentativeRoutes": true,
+      "owner": "framework or dynamically imported module",
+      "sourceModules": [],
+      "exportRuntime": false,
+      "neededBeforeInteraction": null,
+      "safeToDefer": null,
+      "signatures": {
+        "hasPdfWriter": false,
+        "hasPreviewDialog": false,
+        "hasDownloadOptions": false,
+        "hasArtworkCanvas": false
+      }
+    },
+    {
+      "asset": "/_next/static/chunks/0x8cw3rwmwl8m.js",
+      "rawBytes": 146196,
+      "gzipBytes": 39255,
+      "initialRouteIds": [
+        "about",
+        "gallery",
+        "home",
+        "large-hub",
+        "not-found",
+        "paginated-hub",
+        "printable",
+        "privacy",
+        "seasonal-hub",
+        "sitemap",
+        "small-hub",
+        "terms"
+      ],
+      "initialRouteCount": 12,
+      "phase": "initial",
+      "sharedAcrossRepresentativeRoutes": true,
+      "owner": "framework or dynamically imported module",
+      "sourceModules": [],
+      "exportRuntime": false,
+      "neededBeforeInteraction": null,
+      "safeToDefer": null,
+      "signatures": {
+        "hasPdfWriter": false,
+        "hasPreviewDialog": false,
+        "hasDownloadOptions": false,
+        "hasArtworkCanvas": false
+      }
+    },
+    {
+      "asset": "/_next/static/chunks/03~yq9q893hmn.js",
+      "rawBytes": 112594,
+      "gzipBytes": 39520,
+      "initialRouteIds": [
+        "about",
+        "gallery",
+        "home",
+        "large-hub",
+        "not-found",
+        "paginated-hub",
+        "printable",
+        "privacy",
+        "seasonal-hub",
+        "sitemap",
+        "small-hub",
+        "terms"
+      ],
+      "initialRouteCount": 12,
+      "phase": "initial",
+      "sharedAcrossRepresentativeRoutes": true,
+      "owner": "framework or dynamically imported module",
+      "sourceModules": [],
+      "exportRuntime": false,
+      "neededBeforeInteraction": null,
+      "safeToDefer": null,
+      "signatures": {
+        "hasPdfWriter": false,
+        "hasPreviewDialog": false,
+        "hasDownloadOptions": false,
+        "hasArtworkCanvas": false
+      }
+    },
+    {
+      "asset": "/_next/static/chunks/0d3shmwh5_nmn.js",
+      "rawBytes": 54646,
+      "gzipBytes": 12823,
+      "initialRouteIds": [
+        "about",
+        "gallery",
+        "home",
+        "large-hub",
+        "not-found",
+        "paginated-hub",
+        "printable",
+        "privacy",
+        "seasonal-hub",
+        "sitemap",
+        "small-hub",
+        "terms"
+      ],
+      "initialRouteCount": 12,
+      "phase": "initial",
+      "sharedAcrossRepresentativeRoutes": true,
+      "owner": "node_modules/next/dist/client/app-dir/link.js, node_modules/next/dist/client/components/builtin/global-error.js, node_modules/next/dist/esm/client/components/client-page.js, node_modules/next/dist/esm/client/components/client-segment.js, node_modules/next/dist/esm/client/components/http-access-fallback/error-boundary.js, node_modules/next/dist/esm/client/components/layout-router.js, node_modules/next/dist/esm/client/components/render-from-template-context.js, node_modules/next/dist/esm/lib/framework/boundary-components.js, node_modules/next/dist/esm/lib/metadata/generate/icon-mark.js, src/components/ads/AdSenseRuntime.tsx, src/components/coloring/AssetImage.tsx, src/components/coloring/GallerySearch.tsx, src/components/coloring/PaginatedGalleryGrid.tsx, src/components/coloring/PrintableCardActions.tsx, src/components/coloring/PrintableDetailActions.tsx, src/components/coloring/RotatingFeaturedGrid.tsx, src/components/site/SiteHeader.tsx, src/components/site/SiteInteractionProvider.tsx",
+      "sourceModules": [
+        "node_modules/next/dist/client/app-dir/link.js",
+        "node_modules/next/dist/client/components/builtin/global-error.js",
+        "node_modules/next/dist/esm/client/components/client-page.js",
+        "node_modules/next/dist/esm/client/components/client-segment.js",
+        "node_modules/next/dist/esm/client/components/http-access-fallback/error-boundary.js",
+        "node_modules/next/dist/esm/client/components/layout-router.js",
+        "node_modules/next/dist/esm/client/components/render-from-template-context.js",
+        "node_modules/next/dist/esm/lib/framework/boundary-components.js",
+        "node_modules/next/dist/esm/lib/metadata/generate/icon-mark.js",
+        "src/components/ads/AdSenseRuntime.tsx",
+        "src/components/coloring/AssetImage.tsx",
+        "src/components/coloring/GallerySearch.tsx",
+        "src/components/coloring/PaginatedGalleryGrid.tsx",
+        "src/components/coloring/PrintableCardActions.tsx",
+        "src/components/coloring/PrintableDetailActions.tsx",
+        "src/components/coloring/RotatingFeaturedGrid.tsx",
+        "src/components/site/SiteHeader.tsx",
+        "src/components/site/SiteInteractionProvider.tsx"
+      ],
+      "exportRuntime": false,
+      "neededBeforeInteraction": null,
+      "safeToDefer": null,
+      "signatures": {
+        "hasPdfWriter": false,
+        "hasPreviewDialog": false,
+        "hasDownloadOptions": false,
+        "hasArtworkCanvas": false
+      }
+    },
+    {
+      "asset": "/_next/static/chunks/0pqt~8bl3ukh4.js",
+      "rawBytes": 44414,
+      "gzipBytes": 9195,
+      "initialRouteIds": [
+        "about",
+        "gallery",
+        "home",
+        "large-hub",
+        "not-found",
+        "paginated-hub",
+        "printable",
+        "privacy",
+        "seasonal-hub",
+        "sitemap",
+        "small-hub",
+        "terms"
+      ],
+      "initialRouteCount": 12,
+      "phase": "initial",
+      "sharedAcrossRepresentativeRoutes": true,
+      "owner": "framework or dynamically imported module",
+      "sourceModules": [],
+      "exportRuntime": false,
+      "neededBeforeInteraction": null,
+      "safeToDefer": null,
+      "signatures": {
+        "hasPdfWriter": false,
+        "hasPreviewDialog": false,
+        "hasDownloadOptions": false,
+        "hasArtworkCanvas": false
+      }
+    },
+    {
+      "asset": "/_next/static/chunks/0jtlm3x27lqyp.js",
+      "rawBytes": 42146,
+      "gzipBytes": 13269,
+      "initialRouteIds": [
+        "about",
+        "gallery",
+        "home",
+        "large-hub",
+        "not-found",
+        "paginated-hub",
+        "printable",
+        "privacy",
+        "seasonal-hub",
+        "sitemap",
+        "small-hub",
+        "terms"
+      ],
+      "initialRouteCount": 12,
+      "phase": "initial",
+      "sharedAcrossRepresentativeRoutes": true,
+      "owner": "node_modules/next/dist/client/app-dir/link.js, node_modules/next/dist/client/components/builtin/global-error.js, node_modules/next/dist/esm/client/components/client-page.js, node_modules/next/dist/esm/client/components/client-segment.js, node_modules/next/dist/esm/client/components/http-access-fallback/error-boundary.js, node_modules/next/dist/esm/client/components/layout-router.js, node_modules/next/dist/esm/client/components/render-from-template-context.js, node_modules/next/dist/esm/lib/framework/boundary-components.js, node_modules/next/dist/esm/lib/metadata/generate/icon-mark.js, src/components/ads/AdSenseRuntime.tsx, src/components/coloring/AssetImage.tsx, src/components/coloring/GallerySearch.tsx, src/components/coloring/PaginatedGalleryGrid.tsx, src/components/coloring/PrintableCardActions.tsx, src/components/coloring/PrintableDetailActions.tsx, src/components/coloring/RotatingFeaturedGrid.tsx, src/components/site/SiteHeader.tsx, src/components/site/SiteInteractionProvider.tsx",
+      "sourceModules": [
+        "node_modules/next/dist/client/app-dir/link.js",
+        "node_modules/next/dist/client/components/builtin/global-error.js",
+        "node_modules/next/dist/esm/client/components/client-page.js",
+        "node_modules/next/dist/esm/client/components/client-segment.js",
+        "node_modules/next/dist/esm/client/components/http-access-fallback/error-boundary.js",
+        "node_modules/next/dist/esm/client/components/layout-router.js",
+        "node_modules/next/dist/esm/client/components/render-from-template-context.js",
+        "node_modules/next/dist/esm/lib/framework/boundary-components.js",
+        "node_modules/next/dist/esm/lib/metadata/generate/icon-mark.js",
+        "src/components/ads/AdSenseRuntime.tsx",
+        "src/components/coloring/AssetImage.tsx",
+        "src/components/coloring/GallerySearch.tsx",
+        "src/components/coloring/PaginatedGalleryGrid.tsx",
+        "src/components/coloring/PrintableCardActions.tsx",
+        "src/components/coloring/PrintableDetailActions.tsx",
+        "src/components/coloring/RotatingFeaturedGrid.tsx",
+        "src/components/site/SiteHeader.tsx",
+        "src/components/site/SiteInteractionProvider.tsx"
+      ],
+      "exportRuntime": false,
+      "neededBeforeInteraction": null,
+      "safeToDefer": null,
+      "signatures": {
+        "hasPdfWriter": false,
+        "hasPreviewDialog": false,
+        "hasDownloadOptions": false,
+        "hasArtworkCanvas": false
+      }
+    },
+    {
+      "asset": "/_next/static/chunks/0n35cz-_9zsnr.js",
+      "rawBytes": 27351,
+      "gzipBytes": 8439,
+      "initialRouteIds": [
+        "about",
+        "gallery",
+        "home",
+        "large-hub",
+        "not-found",
+        "paginated-hub",
+        "printable",
+        "privacy",
+        "seasonal-hub",
+        "sitemap",
+        "small-hub",
+        "terms"
+      ],
+      "initialRouteCount": 12,
+      "phase": "initial",
+      "sharedAcrossRepresentativeRoutes": true,
+      "owner": "framework or dynamically imported module",
+      "sourceModules": [],
+      "exportRuntime": false,
+      "neededBeforeInteraction": null,
+      "safeToDefer": null,
+      "signatures": {
+        "hasPdfWriter": false,
+        "hasPreviewDialog": false,
+        "hasDownloadOptions": false,
+        "hasArtworkCanvas": false
+      }
+    },
+    {
+      "asset": "/_next/static/chunks/0.weety0uh.ux.js",
+      "rawBytes": 21359,
+      "gzipBytes": 6738,
+      "initialRouteIds": [],
+      "initialRouteCount": 0,
+      "phase": "deferred-or-nonroute",
+      "sharedAcrossRepresentativeRoutes": false,
+      "owner": "src/lib/coloring/browserDownloads.ts (printable PDF/PNG/JPG runtime)",
+      "sourceModules": [],
+      "exportRuntime": true,
+      "neededBeforeInteraction": false,
+      "safeToDefer": true,
+      "signatures": {
+        "hasPdfWriter": true,
+        "hasPreviewDialog": false,
+        "hasDownloadOptions": false,
+        "hasArtworkCanvas": false
+      }
+    },
+    {
+      "asset": "/_next/static/chunks/00xpbxzd2yw8_.js",
+      "rawBytes": 19069,
+      "gzipBytes": 6856,
+      "initialRouteIds": [
+        "large-hub",
+        "paginated-hub",
+        "seasonal-hub",
+        "small-hub"
+      ],
+      "initialRouteCount": 4,
+      "phase": "initial",
+      "sharedAcrossRepresentativeRoutes": false,
+      "owner": "node_modules/next/dist/client/app-dir/link.js, src/components/coloring/AssetImage.tsx, src/components/coloring/GallerySearch.tsx, src/components/coloring/PaginatedGalleryGrid.tsx, src/components/coloring/RotatingFeaturedGrid.tsx",
+      "sourceModules": [
+        "node_modules/next/dist/client/app-dir/link.js",
+        "src/components/coloring/AssetImage.tsx",
+        "src/components/coloring/GallerySearch.tsx",
+        "src/components/coloring/PaginatedGalleryGrid.tsx",
+        "src/components/coloring/RotatingFeaturedGrid.tsx"
+      ],
+      "exportRuntime": false,
+      "neededBeforeInteraction": null,
+      "safeToDefer": null,
+      "signatures": {
+        "hasPdfWriter": false,
+        "hasPreviewDialog": false,
+        "hasDownloadOptions": false,
+        "hasArtworkCanvas": false
+      }
+    },
+    {
+      "asset": "/_next/static/chunks/10cktq98-nl46.js",
+      "rawBytes": 17081,
+      "gzipBytes": 6113,
+      "initialRouteIds": [
+        "gallery"
+      ],
+      "initialRouteCount": 1,
+      "phase": "initial",
+      "sharedAcrossRepresentativeRoutes": false,
+      "owner": "node_modules/next/dist/client/app-dir/link.js, src/components/coloring/AssetImage.tsx, src/components/coloring/GallerySearch.tsx",
+      "sourceModules": [
+        "node_modules/next/dist/client/app-dir/link.js",
+        "src/components/coloring/AssetImage.tsx",
+        "src/components/coloring/GallerySearch.tsx"
+      ],
+      "exportRuntime": false,
+      "neededBeforeInteraction": null,
+      "safeToDefer": null,
+      "signatures": {
+        "hasPdfWriter": false,
+        "hasPreviewDialog": false,
+        "hasDownloadOptions": false,
+        "hasArtworkCanvas": false
+      }
+    },
+    {
+      "asset": "/_next/static/chunks/turbopack-11tvfvz44i1~s.js",
+      "rawBytes": 10580,
+      "gzipBytes": 4150,
+      "initialRouteIds": [
+        "about",
+        "gallery",
+        "home",
+        "large-hub",
+        "not-found",
+        "paginated-hub",
+        "printable",
+        "privacy",
+        "seasonal-hub",
+        "sitemap",
+        "small-hub",
+        "terms"
+      ],
+      "initialRouteCount": 12,
+      "phase": "initial",
+      "sharedAcrossRepresentativeRoutes": true,
+      "owner": "framework or dynamically imported module",
+      "sourceModules": [],
+      "exportRuntime": false,
+      "neededBeforeInteraction": null,
+      "safeToDefer": null,
+      "signatures": {
+        "hasPdfWriter": false,
+        "hasPreviewDialog": false,
+        "hasDownloadOptions": false,
+        "hasArtworkCanvas": false
+      }
+    },
+    {
+      "asset": "/_next/static/chunks/10hs6e7zkrtbf.js",
+      "rawBytes": 8806,
+      "gzipBytes": 3454,
+      "initialRouteIds": [],
+      "initialRouteCount": 0,
+      "phase": "deferred-or-nonroute",
+      "sharedAcrossRepresentativeRoutes": false,
+      "owner": "framework or dynamically imported module",
+      "sourceModules": [],
+      "exportRuntime": false,
+      "neededBeforeInteraction": null,
+      "safeToDefer": null,
+      "signatures": {
+        "hasPdfWriter": false,
+        "hasPreviewDialog": false,
+        "hasDownloadOptions": false,
+        "hasArtworkCanvas": false
+      }
+    },
+    {
+      "asset": "/_next/static/chunks/043mezgz8fxn9.js",
+      "rawBytes": 7340,
+      "gzipBytes": 3126,
+      "initialRouteIds": [
+        "home"
+      ],
+      "initialRouteCount": 1,
+      "phase": "initial",
+      "sharedAcrossRepresentativeRoutes": false,
+      "owner": "node_modules/next/dist/client/app-dir/link.js, src/components/coloring/AssetImage.tsx, src/components/coloring/RotatingFeaturedGrid.tsx",
+      "sourceModules": [
+        "node_modules/next/dist/client/app-dir/link.js",
+        "src/components/coloring/AssetImage.tsx",
+        "src/components/coloring/RotatingFeaturedGrid.tsx"
+      ],
+      "exportRuntime": false,
+      "neededBeforeInteraction": null,
+      "safeToDefer": null,
+      "signatures": {
+        "hasPdfWriter": false,
+        "hasPreviewDialog": false,
+        "hasDownloadOptions": false,
+        "hasArtworkCanvas": false
+      }
+    },
+    {
+      "asset": "/_next/static/chunks/0k5wh.2melljt.js",
+      "rawBytes": 4625,
+      "gzipBytes": 1840,
+      "initialRouteIds": [
+        "printable"
+      ],
+      "initialRouteCount": 1,
+      "phase": "initial",
+      "sharedAcrossRepresentativeRoutes": false,
+      "owner": "node_modules/next/dist/client/app-dir/link.js, src/components/coloring/AssetImage.tsx, src/components/coloring/PrintableCardActions.tsx, src/components/coloring/PrintableDetailActions.tsx",
+      "sourceModules": [
+        "node_modules/next/dist/client/app-dir/link.js",
+        "src/components/coloring/AssetImage.tsx",
+        "src/components/coloring/PrintableCardActions.tsx",
+        "src/components/coloring/PrintableDetailActions.tsx"
+      ],
+      "exportRuntime": false,
+      "neededBeforeInteraction": null,
+      "safeToDefer": null,
+      "signatures": {
+        "hasPdfWriter": false,
+        "hasPreviewDialog": false,
+        "hasDownloadOptions": false,
+        "hasArtworkCanvas": false
+      }
+    },
+    {
+      "asset": "/_next/static/chunks/0cd.aiiezzgxn.js",
+      "rawBytes": 4233,
+      "gzipBytes": 1825,
+      "initialRouteIds": [],
+      "initialRouteCount": 0,
+      "phase": "deferred-or-nonroute",
+      "sharedAcrossRepresentativeRoutes": false,
+      "owner": "src/lib/coloring/browserCanvasRuntime.ts and browserArtworkDownloads.ts",
+      "sourceModules": [],
+      "exportRuntime": true,
+      "neededBeforeInteraction": false,
+      "safeToDefer": true,
+      "signatures": {
+        "hasPdfWriter": false,
+        "hasPreviewDialog": false,
+        "hasDownloadOptions": false,
+        "hasArtworkCanvas": true
+      }
+    },
+    {
+      "asset": "/_next/static/chunks/026srm3b.uazn.js",
+      "rawBytes": 4064,
+      "gzipBytes": 1578,
+      "initialRouteIds": [],
+      "initialRouteCount": 0,
+      "phase": "deferred-or-nonroute",
+      "sharedAcrossRepresentativeRoutes": false,
+      "owner": "src/components/coloring/PrintablePreviewDialog.tsx",
+      "sourceModules": [],
+      "exportRuntime": true,
+      "neededBeforeInteraction": false,
+      "safeToDefer": true,
+      "signatures": {
+        "hasPdfWriter": false,
+        "hasPreviewDialog": true,
+        "hasDownloadOptions": false,
+        "hasArtworkCanvas": false
+      }
+    },
+    {
+      "asset": "/_next/static/chunks/09k6_stq33_cf.js",
+      "rawBytes": 3549,
+      "gzipBytes": 1383,
+      "initialRouteIds": [],
+      "initialRouteCount": 0,
+      "phase": "deferred-or-nonroute",
+      "sharedAcrossRepresentativeRoutes": false,
+      "owner": "src/components/coloring/PrintablePreviewDialog.tsx",
+      "sourceModules": [],
+      "exportRuntime": true,
+      "neededBeforeInteraction": false,
+      "safeToDefer": true,
+      "signatures": {
+        "hasPdfWriter": false,
+        "hasPreviewDialog": true,
+        "hasDownloadOptions": false,
+        "hasArtworkCanvas": false
+      }
+    },
+    {
+      "asset": "/_next/static/chunks/10pl-mtsvd1hi.js",
+      "rawBytes": 3427,
+      "gzipBytes": 1439,
+      "initialRouteIds": [],
+      "initialRouteCount": 0,
+      "phase": "deferred-or-nonroute",
+      "sharedAcrossRepresentativeRoutes": false,
+      "owner": "src/components/coloring/DownloadMenu.tsx",
+      "sourceModules": [],
+      "exportRuntime": true,
+      "neededBeforeInteraction": true,
+      "safeToDefer": false,
+      "signatures": {
+        "hasPdfWriter": false,
+        "hasPreviewDialog": false,
+        "hasDownloadOptions": true,
+        "hasArtworkCanvas": false
+      }
+    },
+    {
+      "asset": "/_next/static/chunks/01xlw8hd842-c.js",
+      "rawBytes": 3377,
+      "gzipBytes": 1451,
+      "initialRouteIds": [],
+      "initialRouteCount": 0,
+      "phase": "deferred-or-nonroute",
+      "sharedAcrossRepresentativeRoutes": false,
+      "owner": "node_modules/next/dist/client/components/builtin/global-error.js, node_modules/next/dist/esm/client/components/client-page.js, node_modules/next/dist/esm/client/components/client-segment.js, node_modules/next/dist/esm/client/components/http-access-fallback/error-boundary.js, node_modules/next/dist/esm/client/components/layout-router.js, node_modules/next/dist/esm/client/components/render-from-template-context.js, node_modules/next/dist/esm/lib/framework/boundary-components.js, node_modules/next/dist/esm/lib/metadata/generate/icon-mark.js",
+      "sourceModules": [
+        "node_modules/next/dist/client/components/builtin/global-error.js",
+        "node_modules/next/dist/esm/client/components/client-page.js",
+        "node_modules/next/dist/esm/client/components/client-segment.js",
+        "node_modules/next/dist/esm/client/components/http-access-fallback/error-boundary.js",
+        "node_modules/next/dist/esm/client/components/layout-router.js",
+        "node_modules/next/dist/esm/client/components/render-from-template-context.js",
+        "node_modules/next/dist/esm/lib/framework/boundary-components.js",
+        "node_modules/next/dist/esm/lib/metadata/generate/icon-mark.js"
+      ],
+      "exportRuntime": false,
+      "neededBeforeInteraction": null,
+      "safeToDefer": null,
+      "signatures": {
+        "hasPdfWriter": false,
+        "hasPreviewDialog": false,
+        "hasDownloadOptions": false,
+        "hasArtworkCanvas": false
+      }
+    },
+    {
+      "asset": "/_next/static/LdQUb32fthQKjf_TlYsDM/_ssgManifest.js",
+      "rawBytes": 236,
+      "gzipBytes": 149,
+      "initialRouteIds": [],
+      "initialRouteCount": 0,
+      "phase": "deferred-or-nonroute",
+      "sharedAcrossRepresentativeRoutes": false,
+      "owner": "framework or dynamically imported module",
+      "sourceModules": [],
+      "exportRuntime": false,
+      "neededBeforeInteraction": null,
+      "safeToDefer": null,
+      "signatures": {
+        "hasPdfWriter": false,
+        "hasPreviewDialog": false,
+        "hasDownloadOptions": false,
+        "hasArtworkCanvas": false
+      }
+    },
+    {
+      "asset": "/_next/static/LdQUb32fthQKjf_TlYsDM/_buildManifest.js",
+      "rawBytes": 219,
+      "gzipBytes": 154,
+      "initialRouteIds": [],
+      "initialRouteCount": 0,
+      "phase": "deferred-or-nonroute",
+      "sharedAcrossRepresentativeRoutes": false,
+      "owner": "framework or dynamically imported module",
+      "sourceModules": [],
+      "exportRuntime": false,
+      "neededBeforeInteraction": null,
+      "safeToDefer": null,
+      "signatures": {
+        "hasPdfWriter": false,
+        "hasPreviewDialog": false,
+        "hasDownloadOptions": false,
+        "hasArtworkCanvas": false
+      }
+    },
+    {
+      "asset": "/_next/static/LdQUb32fthQKjf_TlYsDM/_clientMiddlewareManifest.js",
+      "rawBytes": 96,
+      "gzipBytes": 66,
+      "initialRouteIds": [],
+      "initialRouteCount": 0,
+      "phase": "deferred-or-nonroute",
+      "sharedAcrossRepresentativeRoutes": false,
+      "owner": "framework or dynamically imported module",
+      "sourceModules": [],
+      "exportRuntime": false,
+      "neededBeforeInteraction": null,
+      "safeToDefer": null,
+      "signatures": {
+        "hasPdfWriter": false,
+        "hasPreviewDialog": false,
+        "hasDownloadOptions": false,
+        "hasArtworkCanvas": false
+      }
+    }
+  ],
+  "deferredExportChunks": [
+    {
+      "asset": "/_next/static/chunks/0.weety0uh.ux.js",
+      "rawBytes": 21359,
+      "gzipBytes": 6738,
+      "initialRouteIds": [],
+      "initialRouteCount": 0,
+      "phase": "deferred-or-nonroute",
+      "sharedAcrossRepresentativeRoutes": false,
+      "owner": "src/lib/coloring/browserDownloads.ts (printable PDF/PNG/JPG runtime)",
+      "sourceModules": [],
+      "exportRuntime": true,
+      "neededBeforeInteraction": false,
+      "safeToDefer": true,
+      "signatures": {
+        "hasPdfWriter": true,
+        "hasPreviewDialog": false,
+        "hasDownloadOptions": false,
+        "hasArtworkCanvas": false
+      }
+    },
+    {
+      "asset": "/_next/static/chunks/0cd.aiiezzgxn.js",
+      "rawBytes": 4233,
+      "gzipBytes": 1825,
+      "initialRouteIds": [],
+      "initialRouteCount": 0,
+      "phase": "deferred-or-nonroute",
+      "sharedAcrossRepresentativeRoutes": false,
+      "owner": "src/lib/coloring/browserCanvasRuntime.ts and browserArtworkDownloads.ts",
+      "sourceModules": [],
+      "exportRuntime": true,
+      "neededBeforeInteraction": false,
+      "safeToDefer": true,
+      "signatures": {
+        "hasPdfWriter": false,
+        "hasPreviewDialog": false,
+        "hasDownloadOptions": false,
+        "hasArtworkCanvas": true
+      }
+    },
+    {
+      "asset": "/_next/static/chunks/026srm3b.uazn.js",
+      "rawBytes": 4064,
+      "gzipBytes": 1578,
+      "initialRouteIds": [],
+      "initialRouteCount": 0,
+      "phase": "deferred-or-nonroute",
+      "sharedAcrossRepresentativeRoutes": false,
+      "owner": "src/components/coloring/PrintablePreviewDialog.tsx",
+      "sourceModules": [],
+      "exportRuntime": true,
+      "neededBeforeInteraction": false,
+      "safeToDefer": true,
+      "signatures": {
+        "hasPdfWriter": false,
+        "hasPreviewDialog": true,
+        "hasDownloadOptions": false,
+        "hasArtworkCanvas": false
+      }
+    },
+    {
+      "asset": "/_next/static/chunks/09k6_stq33_cf.js",
+      "rawBytes": 3549,
+      "gzipBytes": 1383,
+      "initialRouteIds": [],
+      "initialRouteCount": 0,
+      "phase": "deferred-or-nonroute",
+      "sharedAcrossRepresentativeRoutes": false,
+      "owner": "src/components/coloring/PrintablePreviewDialog.tsx",
+      "sourceModules": [],
+      "exportRuntime": true,
+      "neededBeforeInteraction": false,
+      "safeToDefer": true,
+      "signatures": {
+        "hasPdfWriter": false,
+        "hasPreviewDialog": true,
+        "hasDownloadOptions": false,
+        "hasArtworkCanvas": false
+      }
+    },
+    {
+      "asset": "/_next/static/chunks/10pl-mtsvd1hi.js",
+      "rawBytes": 3427,
+      "gzipBytes": 1439,
+      "initialRouteIds": [],
+      "initialRouteCount": 0,
+      "phase": "deferred-or-nonroute",
+      "sharedAcrossRepresentativeRoutes": false,
+      "owner": "src/components/coloring/DownloadMenu.tsx",
+      "sourceModules": [],
+      "exportRuntime": true,
+      "neededBeforeInteraction": true,
+      "safeToDefer": false,
+      "signatures": {
+        "hasPdfWriter": false,
+        "hasPreviewDialog": false,
+        "hasDownloadOptions": true,
+        "hasArtworkCanvas": false
+      }
+    }
+  ],
+  "aggregate": {
+    "rawBytes": 762945,
+    "gzipBytes": 233683,
+    "fileCount": 22,
+    "historicalRawLimitBytes": 753081,
+    "historicalRawLimitPassed": false,
+    "overHistoricalRawLimitBytes": 9864
+  }
+}

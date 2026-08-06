@@ -1,0 +1,63 @@
+{
+  "measuredAt": "2026-08-06T18:02:18.983Z",
+  "browser": "Google Chrome 150.0.7871.187 (Chromium)",
+  "route": "https://www.ilovecoloringpage.com/printables/animals/animals-alligator-4feec8505a",
+  "status": 200,
+  "marker": true,
+  "initialHeavyExportChunks": [],
+  "initialScriptCount": 10,
+  "webp": {
+    "filename": "animals-alligator.webp",
+    "bytes": 389232,
+    "sha256": "f42a63e22139352fde66dab4705031a156c8b5c9db2c363913fea86fc14c1594",
+    "dimensions": [1600, 2400],
+    "durationMs": 707.42,
+    "newChunks": ["0cd.aiiezzgxn.js"],
+    "loadedPdfWriter": false
+  },
+  "pdf": {
+    "filename": "animals-alligator.pdf",
+    "bytes": 613584,
+    "sha256": "8bab1edb0e18f90800974c16be753d2448a20c6b0a104fbc92e7df774ec82bca",
+    "magic": "%PDF",
+    "durationMs": 566.89,
+    "newChunks": ["0.weety0uh.ux.js"]
+  },
+  "repeatedPdf": {
+    "bytes": 613584,
+    "sha256": "8bab1edb0e18f90800974c16be753d2448a20c6b0a104fbc92e7df774ec82bca",
+    "durationMs": 1173.69,
+    "byteIdentical": true,
+    "newChunks": []
+  },
+  "png": {
+    "filename": "animals-alligator.png",
+    "bytes": 1404823,
+    "sha256": "011726dc272ff5a2217887ddb3c2773da1a95b22df989021caff7b0b66f2d58c",
+    "dimensions": [2550, 3300],
+    "durationMs": 252.72,
+    "newChunks": []
+  },
+  "jpg": {
+    "filename": "animals-alligator.jpg",
+    "bytes": 1238249,
+    "sha256": "bd8174f1437414536b89d4679829d78c88753652ba3511bceb8abb78bd1b5a22",
+    "dimensions": [2550, 3300],
+    "durationMs": 222.77,
+    "newChunks": []
+  },
+  "page": {
+    "horizontalOverflow": false,
+    "adOverlapIds": [],
+    "availableWidthZero": false,
+    "applicationConsoleErrors": [],
+    "hydrationErrors": [],
+    "thirdPartyPageErrors": ["Y"],
+    "adScriptCount": 1,
+    "visibleFallbackCountAtCapture": 0,
+    "observedAdStatus": "unfilled",
+    "creativeFillVerified": false
+  },
+  "noAdClicked": true,
+  "screenshot": "pipeline/review/client-bundle-hydration/production-printable-1440.png"
+}
