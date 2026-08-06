@@ -83,6 +83,7 @@ test("gallery components use WebP previews first and never promote SVG as a publ
   const assetImage = await readText("src/components/coloring/AssetImage.tsx");
   const downloadMenu = await readText("src/components/coloring/DownloadMenu.tsx");
   const browserDownloads = await readText("src/lib/coloring/browserDownloads.ts");
+  const downloadSupport = await readText("src/lib/coloring/browserDownloadSupport.ts");
 
   assert.match(assetsSource, /preview:\s*webp\s*\|\|\s*png\s*\|\|\s*thumbnail/);
   assert.doesNotMatch(assetsSource, /png\s*\|\|\s*thumbnail\s*\|\|\s*webp/);
@@ -92,18 +93,19 @@ test("gallery components use WebP previews first and never promote SVG as a publ
   assert.match(downloadMenu, /label: "PNG"/);
   assert.match(downloadMenu, /label: "JPG"/);
   assert.match(downloadMenu, /label: "WebP"/);
-  assert.match(browserDownloads, /EXPOSED_PUBLIC_DOWNLOAD_FORMATS:\s*readonly PublicDownloadFormat\[\]\s*=\s*\["png", "jpg", "webp"\]/);
+  assert.match(downloadSupport, /EXPOSED_PUBLIC_DOWNLOAD_FORMATS:\s*readonly PublicDownloadFormat\[\]\s*=\s*\["png", "jpg", "webp"\]/);
   assert.doesNotMatch(`${imageCard}\n${downloadMenu}\n${browserDownloads}`, /Download SVG|downloadSvg|svgDownload/i);
 });
 
 test("print conversion has timeout and failure UI guards instead of hanging on the preparing page", async () => {
   const browserDownloads = await readText("src/lib/coloring/browserDownloads.ts");
+  const canvasRuntime = await readText("src/lib/coloring/browserCanvasRuntime.ts");
 
   assert.match(browserDownloads, /PRINT_PREPARE_TIMEOUT_MS/);
   assert.match(browserDownloads, /prepareHighQualityPrintImage/);
   assert.match(browserDownloads, /Print preview could not be prepared|image-load-failed|missing-png-preview/);
-  assert.match(browserDownloads, /loadCorsImage\([^)]*timeoutMs/);
-  assert.match(browserDownloads, /window\.setTimeout/);
+  assert.match(canvasRuntime, /loadCorsImage\([^)]*timeoutMs/);
+  assert.match(canvasRuntime, /window\.setTimeout/);
 });
 
 test("local preview bug artifacts exist and parse", async () => {

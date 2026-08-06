@@ -2,15 +2,10 @@
 
 import { useEffect, useId, useState } from "react";
 
-import {
-  downloadJpeg,
-  downloadPng,
-  downloadWebp,
-  getSupportedDownloadFormats,
-  type BrowserDownloadResult,
-  type PublicDownloadFormat,
-} from "@/lib/coloring/browserDownloads";
-import { PRINTABLE_COMPOSITION } from "@/lib/coloring/exportComposition";
+import type { BrowserDownloadResult, PublicDownloadFormat } from "@/lib/coloring/browserDownloads";
+import { getSupportedDownloadFormats } from "@/lib/coloring/browserDownloadSupport";
+import { loadArtworkDownloadRuntime, loadPrintableExportRuntime } from "@/lib/coloring/browserExportLoader";
+import { DEFAULT_PRINTABLE_RASTER_DIMENSIONS } from "@/lib/coloring/printableOutputFacts";
 
 type DownloadMenuProps = {
   title: string;
@@ -29,16 +24,10 @@ type DownloadOption = {
 };
 
 const DOWNLOAD_OPTIONS: readonly DownloadOption[] = [
-  { format: "png", label: "PNG", description: `Printable page image, ${PRINTABLE_COMPOSITION.page.widthPx} × ${PRINTABLE_COMPOSITION.page.heightPx} px`, recommended: true },
-  { format: "jpg", label: "JPG", description: `Printable page image, ${PRINTABLE_COMPOSITION.page.widthPx} × ${PRINTABLE_COMPOSITION.page.heightPx} px` },
+  { format: "png", label: "PNG", description: `Printable page image, ${DEFAULT_PRINTABLE_RASTER_DIMENSIONS.widthPx} × ${DEFAULT_PRINTABLE_RASTER_DIMENSIONS.heightPx} px`, recommended: true },
+  { format: "jpg", label: "JPG", description: `Printable page image, ${DEFAULT_PRINTABLE_RASTER_DIMENSIONS.widthPx} × ${DEFAULT_PRINTABLE_RASTER_DIMENSIONS.heightPx} px` },
   { format: "webp", label: "WebP", description: "High-resolution artwork image" },
 ];
-
-const DOWNLOADERS = {
-  png: downloadPng,
-  jpg: downloadJpeg,
-  webp: downloadWebp,
-};
 
 export function DownloadMenu({ title, downloadBaseName, internalSvgUrl, pngPreviewUrl, "aria-label": ariaLabel, onStatus }: DownloadMenuProps) {
   const [busyFormat, setBusyFormat] = useState<DownloadOption["format"] | null>(null);
@@ -56,12 +45,12 @@ export function DownloadMenu({ title, downloadBaseName, internalSvgUrl, pngPrevi
     onStatus("");
 
     try {
-      const result = await DOWNLOADERS[option.format]({
-        internalSvgUrl,
-        pngPreviewUrl,
-        title,
-        filenameBaseName: downloadBaseName,
-      });
+      const downloadOptions = { internalSvgUrl, pngPreviewUrl, title, filenameBaseName: downloadBaseName };
+      const result = option.format === "webp"
+        ? await (await loadArtworkDownloadRuntime()).downloadWebp(downloadOptions)
+        : option.format === "jpg"
+          ? await (await loadPrintableExportRuntime()).downloadJpeg(downloadOptions)
+          : await (await loadPrintableExportRuntime()).downloadPng(downloadOptions);
       onStatus(getDownloadStatusMessage(result, option.label));
     } catch {
       onStatus(option.label === "PNG" ? "Download could not be prepared. Please try again." : `${option.label} download could not be prepared. Try PNG instead.`);

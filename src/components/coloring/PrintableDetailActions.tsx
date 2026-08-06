@@ -2,6 +2,7 @@
 
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
 
+import { loadPrintableExportRuntime } from "@/lib/coloring/browserExportLoader";
 import type { PublicColoringItem } from "@/lib/coloring/types";
 
 import { PrintableCardActions } from "./PrintableCardActions";
@@ -35,7 +36,7 @@ export function PrintableDetailActions({ item, internalSvgUrl, pngPreviewUrl }: 
     setStatus("Preparing PDF...");
 
     try {
-      const { downloadOnePagePdf } = await import("@/lib/coloring/browserDownloads");
+      const { downloadOnePagePdf } = await loadPrintableExportRuntime();
       const result = await downloadOnePagePdf({
         internalSvgUrl,
         pngPreviewUrl,

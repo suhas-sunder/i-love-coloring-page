@@ -20,6 +20,7 @@ export function PublicPageShell({ pageFamily, className, children }: PublicPageS
       className={classes}
       data-ad-layout={layout.mode}
       data-ad-layout-version={layout.mode === "full" ? "manual-six-v2" : undefined}
+      data-runtime-optimization-version="client-split-v1"
       data-page-family={pageFamily}
     >
       <PageAdSlot pageFamily={pageFamily} placement="top-banner" />

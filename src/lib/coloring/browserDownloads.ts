@@ -7,6 +7,38 @@ import {
   type PrintablePageProfile,
   type PrintableProfileRequest,
 } from "./exportComposition";
+import { downloadWebp as downloadArtworkWebp } from "./browserArtworkDownloads";
+import {
+  buildDownloadFilename,
+  CANVAS_FORMATS,
+  canvasToBlob,
+  convertInternalSvgToBlob,
+  downloadBlob,
+  failure,
+  IMAGE_LOAD_TIMEOUT_MS,
+  loadCorsImage,
+  renderInternalSvgToCanvas,
+} from "./browserCanvasRuntime";
+import {
+  canUseCanvasExport,
+  DEFERRED_CANVAS_DOWNLOAD_FORMATS,
+  EXPOSED_PUBLIC_DOWNLOAD_FORMATS,
+  getSupportedDownloadFormats,
+  getVisibleDownloadFormats,
+  VERIFIED_PUBLIC_DOWNLOAD_FORMATS,
+} from "./browserDownloadSupport";
+
+export {
+  buildDownloadFilename,
+  canUseCanvasExport,
+  convertInternalSvgToBlob,
+  DEFERRED_CANVAS_DOWNLOAD_FORMATS,
+  downloadBlob,
+  EXPOSED_PUBLIC_DOWNLOAD_FORMATS,
+  getSupportedDownloadFormats,
+  getVisibleDownloadFormats,
+  VERIFIED_PUBLIC_DOWNLOAD_FORMATS,
+};
 
 export type PublicDownloadFormat = "png" | "jpg" | "jpeg" | "webp";
 export type CanvasDownloadFormat = Exclude<PublicDownloadFormat, "png">;
@@ -121,7 +153,7 @@ export type PreparedPrintPdfResult =
     }
   | Extract<BrowserRasterResult, { ok: false }>;
 
-type BrowserRasterOptions = {
+export type BrowserRasterOptions = {
   internalSvgUrl: string | null | undefined;
   title: string;
   filenameBaseName?: string;
@@ -131,7 +163,7 @@ type BrowserRasterOptions = {
   imageLoadTimeoutMs?: number;
 };
 
-type DownloadOptions = {
+export type DownloadOptions = {
   internalSvgUrl: string | null | undefined;
   pngPreviewUrl: string | null | undefined;
   title: string;
@@ -144,13 +176,13 @@ type PrintOptions = DownloadOptions & {
   altText: string;
 };
 
-type FormatConfig = {
+export type FormatConfig = {
   mimeType: "image/png" | "image/jpeg" | "image/webp";
   extension: "png" | "jpg" | "webp";
   quality?: number;
 };
 
-type RenderedCanvasResult =
+export type RenderedCanvasResult =
   | {
       ok: true;
       canvas: HTMLCanvasElement;
@@ -184,62 +216,10 @@ declare global {
 }
 
 const PRINT_TARGET_LONG_EDGE = 2400;
-const DOWNLOAD_TARGET_LONG_EDGE = 2400;
-const IMAGE_LOAD_TIMEOUT_MS = 12_000;
 export const PRINT_PREPARE_TIMEOUT_MS = 15_000;
 export const INTERNAL_SVG_CONTENT_TYPE = "image/svg+xml";
 export const PRINT_DOCUMENT_BRAND = PRINTABLE_COMPOSITION.branding.text;
 const PRINT_BRAND_FONT_SIZE = PRINTABLE_COMPOSITION.branding.fontSizePt;
-
-const CANVAS_FORMATS: Record<RasterDownloadFormat, FormatConfig> = {
-  png: { mimeType: "image/png", extension: "png" },
-  jpg: { mimeType: "image/jpeg", extension: "jpg", quality: 0.94 },
-  jpeg: { mimeType: "image/jpeg", extension: "jpg", quality: 0.94 },
-  webp: { mimeType: "image/webp", extension: "webp", quality: 0.92 },
-};
-
-export const VERIFIED_PUBLIC_DOWNLOAD_FORMATS: readonly PublicDownloadFormat[] = ["png"];
-export const EXPOSED_PUBLIC_DOWNLOAD_FORMATS: readonly PublicDownloadFormat[] = ["png", "jpg", "webp"];
-export const DEFERRED_CANVAS_DOWNLOAD_FORMATS: readonly CanvasDownloadFormat[] = [];
-
-export function getVisibleDownloadFormats(options: { canvasConversionVerified: boolean; supportsJpeg?: boolean; supportsWebp?: boolean }) {
-  if (!options.canvasConversionVerified) return VERIFIED_PUBLIC_DOWNLOAD_FORMATS;
-
-  const formats: PublicDownloadFormat[] = ["png"];
-  if (options.supportsJpeg) formats.push("jpg");
-  if (options.supportsWebp) formats.push("webp");
-  return formats;
-}
-
-export function getSupportedDownloadFormats() {
-  if (!canUseCanvasExport()) return VERIFIED_PUBLIC_DOWNLOAD_FORMATS;
-
-  const formats: PublicDownloadFormat[] = ["png"];
-  if (supportsCanvasMimeType("image/jpeg")) formats.push("jpg");
-  if (supportsCanvasMimeType("image/webp")) formats.push("webp");
-  return formats;
-}
-
-export function canUseCanvasExport() {
-  return (
-    typeof window !== "undefined" &&
-    typeof document !== "undefined" &&
-    typeof Image !== "undefined" &&
-    typeof HTMLCanvasElement !== "undefined" &&
-    typeof URL !== "undefined"
-  );
-}
-
-export function buildDownloadFilename(title: string, format: PublicDownloadFormat) {
-  const extension = format === "jpeg" ? "jpg" : format;
-  const slug = title
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/(^-|-$)/g, "")
-    .slice(0, 96);
-
-  return `${slug || "coloring-page"}.${extension}`;
-}
 
 export async function downloadRasterImage(options: DownloadOptions & { format: PublicDownloadFormat }): Promise<BrowserDownloadResult> {
   switch (options.format) {
@@ -252,39 +232,6 @@ export async function downloadRasterImage(options: DownloadOptions & { format: P
       return downloadWebp(options);
     default:
       return failure("unsupported-format", "This download format is not supported.");
-  }
-}
-
-export async function convertInternalSvgToBlob(options: BrowserRasterOptions): Promise<BrowserRasterResult> {
-  const formatConfig = CANVAS_FORMATS[options.format];
-  if (!formatConfig) return failure("unsupported-format", "This download format is not supported.");
-  const rendered = await renderInternalSvgToCanvas({
-    internalSvgUrl: options.internalSvgUrl,
-    targetLongEdge: options.targetLongEdge ?? DOWNLOAD_TARGET_LONG_EDGE,
-    imageLoadTimeoutMs: options.imageLoadTimeoutMs ?? IMAGE_LOAD_TIMEOUT_MS,
-  });
-  if (!rendered.ok) return rendered;
-
-  try {
-    const blob = await canvasToBlob(rendered.canvas, formatConfig.mimeType, options.quality ?? formatConfig.quality);
-    if (!blob) return failure("canvas-export-failed", "The browser could not export this image.");
-
-    if (blob.type && blob.type !== formatConfig.mimeType) {
-      return failure("canvas-export-unsupported", "The browser fell back to another image format.");
-    }
-
-    return {
-      ok: true,
-      blob,
-      format: options.format,
-      mimeType: formatConfig.mimeType,
-      filename: buildDownloadFilename(options.filenameBaseName || options.title, formatConfig.extension),
-      width: rendered.width,
-      height: rendered.height,
-      source: "internal-svg",
-    };
-  } catch {
-    return failure("canvas-tainted", "The browser could not prepare this image. Please try again.");
   }
 }
 
@@ -418,7 +365,7 @@ export async function downloadJpeg(options: DownloadOptions): Promise<BrowserDow
 }
 
 export async function downloadWebp(options: DownloadOptions): Promise<BrowserDownloadResult> {
-  return downloadConvertedCanvasFormat(options, "webp");
+  return downloadArtworkWebp(options);
 }
 
 export async function prepareHighQualityPrintImage(options: PrintOptions): Promise<PreparedPrintImageResult> {
@@ -564,72 +511,6 @@ export function revokePreparedPrintPdf(prepared: PreparedPrintPdfResult | null |
   URL.revokeObjectURL(prepared.pdfUrl);
 }
 
-async function downloadConvertedCanvasFormat(options: DownloadOptions, format: CanvasDownloadFormat): Promise<BrowserDownloadResult> {
-  const converted = await convertInternalSvgToBlob({
-    internalSvgUrl: options.internalSvgUrl,
-    title: options.title,
-    filenameBaseName: options.filenameBaseName,
-    format,
-    quality: options.quality,
-    targetLongEdge: DOWNLOAD_TARGET_LONG_EDGE,
-  });
-
-  if (!converted.ok) return converted;
-  downloadBlob(converted.blob, converted.filename);
-  return {
-    ok: true,
-    filename: converted.filename,
-    format,
-    source: "internal-svg",
-  };
-}
-
-async function renderInternalSvgToCanvas(options: {
-  internalSvgUrl: string | null | undefined;
-  targetLongEdge: number;
-  imageLoadTimeoutMs: number;
-}): Promise<RenderedCanvasResult> {
-  if (!options.internalSvgUrl) return failure("missing-internal-svg", "The high-quality artwork is unavailable.");
-  if (!canUseCanvasExport()) return failure("browser-api-unavailable", "Browser image conversion APIs are unavailable.");
-
-  const image = await loadCorsImage(options.internalSvgUrl, options.imageLoadTimeoutMs);
-  if (!image) return failure("image-load-failed", "The high-quality artwork could not be loaded. Please try again.");
-
-  const sourceWidth = image.naturalWidth || image.width || 800;
-  const sourceHeight = image.naturalHeight || image.height || 1200;
-  const dimensions = getTargetDimensions(sourceWidth, sourceHeight, options.targetLongEdge);
-  const canvas = document.createElement("canvas");
-  const context = canvas.getContext("2d");
-  if (!context) return failure("canvas-unavailable", "Canvas rendering is unavailable in this browser.");
-
-  canvas.width = dimensions.width;
-  canvas.height = dimensions.height;
-  context.fillStyle = "white";
-  context.fillRect(0, 0, canvas.width, canvas.height);
-  context.drawImage(image, 0, 0, canvas.width, canvas.height);
-
-  return {
-    ok: true,
-    canvas,
-    width: canvas.width,
-    height: canvas.height,
-    source: "internal-svg",
-  };
-}
-
-export function downloadBlob(blob: Blob, filename: string) {
-  if (typeof document === "undefined" || typeof URL === "undefined") return;
-  const objectUrl = URL.createObjectURL(blob);
-  const link = document.createElement("a");
-  link.href = objectUrl;
-  link.download = filename;
-  link.rel = "noopener";
-  document.body.append(link);
-  link.click();
-  link.remove();
-  window.setTimeout(() => URL.revokeObjectURL(objectUrl), 30_000);
-}
-
 function triggerUrlDownload(url: string, filename: string) {
   if (typeof document === "undefined") return false;
   const link = document.createElement("a");
@@ -681,57 +562,6 @@ function triggerPdfPrint(prepared: Extract<PreparedPrintPdfResult, { ok: true }>
   document.body.append(frame);
   window.setTimeout(cleanup, 120_000);
   return true;
-}
-
-function supportsCanvasMimeType(mimeType: "image/png" | "image/jpeg" | "image/webp") {
-  if (mimeType === "image/png") return true;
-  if (typeof document === "undefined") return false;
-
-  try {
-    const canvas = document.createElement("canvas");
-    canvas.width = 1;
-    canvas.height = 1;
-    return canvas.toDataURL(mimeType).startsWith(`data:${mimeType}`);
-  } catch {
-    return false;
-  }
-}
-
-function loadCorsImage(imageUrl: string, timeoutMs = IMAGE_LOAD_TIMEOUT_MS) {
-  return new Promise<HTMLImageElement | null>((resolve) => {
-    const image = new Image();
-    const timeout = window.setTimeout(() => {
-      image.onload = null;
-      image.onerror = null;
-      resolve(null);
-    }, timeoutMs);
-    image.crossOrigin = "anonymous";
-    image.decoding = "async";
-    image.onload = () => {
-      window.clearTimeout(timeout);
-      resolve(image);
-    };
-    image.onerror = () => {
-      window.clearTimeout(timeout);
-      resolve(null);
-    };
-    image.src = imageUrl;
-  });
-}
-
-function canvasToBlob(canvas: HTMLCanvasElement, mimeType: "image/png" | "image/jpeg" | "image/webp", quality?: number) {
-  return new Promise<Blob | null>((resolve) => {
-    canvas.toBlob((blob) => resolve(blob), mimeType, quality);
-  });
-}
-
-function getTargetDimensions(sourceWidth: number, sourceHeight: number, targetLongEdge: number) {
-  const longEdge = Math.max(sourceWidth, sourceHeight);
-  const scale = longEdge > 0 ? Math.max(1, targetLongEdge / longEdge) : 1;
-  return {
-    width: Math.round(sourceWidth * scale),
-    height: Math.round(sourceHeight * scale),
-  };
 }
 
 function drawPrintableRasterComposition(
@@ -955,13 +785,5 @@ function recordPrintDocumentQa(prepared: Extract<PreparedPrintPdfResult, { ok: t
     printableBorderCount: prepared.printableBorderCount,
     metadataTitle: prepared.metadataTitle,
     source: prepared.source,
-  };
-}
-
-function failure(reason: Extract<BrowserRasterResult, { ok: false }>["reason"], message: string): Extract<BrowserRasterResult, { ok: false }> {
-  return {
-    ok: false,
-    reason,
-    message,
   };
 }

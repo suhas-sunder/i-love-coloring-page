@@ -75,6 +75,7 @@ test("runtime data layer uses clean runtime manifests without exposing SVG downl
   const dataSource = await readText("src/lib/coloring/data.ts");
   const assetsSource = await readText("src/lib/coloring/assets.ts");
   const browserDownloads = await readText("src/lib/coloring/browserDownloads.ts");
+  const downloadSupport = await readText("src/lib/coloring/browserDownloadSupport.ts");
   const downloadMenu = await readText("src/components/coloring/DownloadMenu.tsx");
   const nextConfig = await readText("next.config.mjs");
   const publicFiles = await listFilesIfExists(path.join(REPO_ROOT, "public"));
@@ -84,7 +85,7 @@ test("runtime data layer uses clean runtime manifests without exposing SVG downl
   assert.match(dataSource, /runtime-routes\.json/);
   assert.match(dataSource, /runtime-search-index\.json/);
   assert.match(assetsSource, /webp/);
-  assert.match(browserDownloads, /EXPOSED_PUBLIC_DOWNLOAD_FORMATS:\s*readonly PublicDownloadFormat\[\]\s*=\s*\["png", "jpg", "webp"\]/);
+  assert.match(downloadSupport, /EXPOSED_PUBLIC_DOWNLOAD_FORMATS:\s*readonly PublicDownloadFormat\[\]\s*=\s*\["png", "jpg", "webp"\]/);
   assert.match(downloadMenu, /label: "PNG"/);
   assert.match(downloadMenu, /label: "JPG"/);
   assert.match(downloadMenu, /label: "WebP"/);

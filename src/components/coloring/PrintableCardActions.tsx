@@ -1,12 +1,14 @@
 "use client";
 
-import { useId, useRef } from "react";
+import { lazy, Suspense, useId, useRef } from "react";
 
 import { useSiteInteractions } from "@/components/site/SiteInteractionProvider";
 import { restoreFocusAfterModalClose } from "@/hooks/useModalDialog";
 import type { PublicColoringItem } from "@/lib/coloring/types";
 
-import { PrintablePreviewDialog } from "./PrintablePreviewDialog";
+const PrintablePreviewDialog = lazy(() => import("./PrintablePreviewDialog").then((module) => ({
+  default: module.PrintablePreviewDialog,
+})));
 
 type PrintableCardActionsProps = {
   item: PublicColoringItem;
@@ -43,13 +45,17 @@ export function PrintableCardActions({ item, assetUrls, className, buttonClassNa
       >
         Print
       </button>
-      <PrintablePreviewDialog
-        open={open}
-        onClose={closeDialog}
-        item={item}
-        internalSvgUrl={assetUrls.internalSvg}
-        pngPreviewUrl={assetUrls.png}
-      />
+      {open ? (
+        <Suspense fallback={null}>
+          <PrintablePreviewDialog
+            open
+            onClose={closeDialog}
+            item={item}
+            internalSvgUrl={assetUrls.internalSvg}
+            pngPreviewUrl={assetUrls.png}
+          />
+        </Suspense>
+      ) : null}
     </div>
   );
 }

@@ -356,7 +356,7 @@ test("canonical printable actions and format descriptions communicate the actual
   assertOrder(actions, ["Download PDF", "<PrintableCardActions", "Download image"]);
   assert.match(cardActions, /buttonClassName \|\| "button button-ghost button-small gallery-print-button"/);
   assert.match(actions, /buttonClassName="button button-subtle"/);
-  assert.match(menu, /Printable page image, \$\{PRINTABLE_COMPOSITION\.page\.widthPx\} × \$\{PRINTABLE_COMPOSITION\.page\.heightPx\} px/);
+  assert.match(menu, /Printable page image, \$\{DEFAULT_PRINTABLE_RASTER_DIMENSIONS\.widthPx\} × \$\{DEFAULT_PRINTABLE_RASTER_DIMENSIONS\.heightPx\} px/);
   assert.match(menu, /High-resolution artwork image/);
   assert.match(menu, /recommended: true/);
   assert.match(menu, /aria-describedby/);
@@ -636,20 +636,24 @@ function round4(value) {
 
 async function importExportModules() {
   const tempRoot = await mkdtemp(path.join(os.tmpdir(), "ilcp-export-tests-"));
-  const compositionSource = await readFile(path.join(ROOT, "src/lib/coloring/exportComposition.ts"), "utf8");
-  const compositionOutput = ts.transpileModule(compositionSource, {
-    compilerOptions: { module: ts.ModuleKind.ES2022, target: ts.ScriptTarget.ES2022, isolatedModules: true },
-  }).outputText;
-  const compositionPath = path.join(tempRoot, "exportComposition.mjs");
-  await writeFile(compositionPath, compositionOutput, "utf8");
+  const moduleNames = [
+    "printableOutputFacts",
+    "exportComposition",
+    "browserDownloadSupport",
+    "browserCanvasRuntime",
+    "browserArtworkDownloads",
+    "browserDownloads",
+  ];
+  for (const moduleName of moduleNames) {
+    const sourceText = await readFile(path.join(ROOT, `src/lib/coloring/${moduleName}.ts`), "utf8");
+    const outputText = ts.transpileModule(sourceText, {
+      compilerOptions: { module: ts.ModuleKind.ES2022, target: ts.ScriptTarget.ES2022, isolatedModules: true },
+    }).outputText.replace(/from "\.\/([^".]+)";/g, 'from "./$1.mjs";');
+    await writeFile(path.join(tempRoot, `${moduleName}.mjs`), outputText, "utf8");
+  }
 
-  const downloadsSource = (await readFile(path.join(ROOT, "src/lib/coloring/browserDownloads.ts"), "utf8"))
-    .replace('from "./exportComposition";', `from "${pathToFileURL(compositionPath).href}";`);
-  const downloadsOutput = ts.transpileModule(downloadsSource, {
-    compilerOptions: { module: ts.ModuleKind.ES2022, target: ts.ScriptTarget.ES2022, isolatedModules: true },
-  }).outputText;
+  const compositionPath = path.join(tempRoot, "exportComposition.mjs");
   const downloadsPath = path.join(tempRoot, "browserDownloads.mjs");
-  await writeFile(downloadsPath, downloadsOutput, "utf8");
 
   return {
     tempRoot,

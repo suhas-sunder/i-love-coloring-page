@@ -5,6 +5,7 @@ import { createPortal } from "react-dom";
 
 import { useModalDialog } from "@/hooks/useModalDialog";
 import type { PreparedPrintImageResult } from "@/lib/coloring/browserDownloads";
+import { loadPrintableExportRuntime } from "@/lib/coloring/browserExportLoader";
 import type { PublicColoringItem } from "@/lib/coloring/types";
 
 const DownloadMenu = lazy(() => import("./DownloadMenu").then((module) => ({ default: module.DownloadMenu })));
@@ -47,7 +48,7 @@ export function PrintablePreviewDialog({ open, onClose, item, internalSvgUrl, pn
     const runId = ++runIdRef.current;
     setPreparing(true);
     setStatus("Preparing preview...");
-    void import("@/lib/coloring/browserDownloads")
+    void loadPrintableExportRuntime()
       .then(async ({ prepareHighQualityPrintImage }) => {
         const result = await prepareHighQualityPrintImage({ internalSvgUrl, pngPreviewUrl, title: item.title, filenameBaseName: item.downloadBaseName, altText: item.altText });
         if (runIdRef.current !== runId) {
@@ -73,7 +74,7 @@ export function PrintablePreviewDialog({ open, onClose, item, internalSvgUrl, pn
     setPrinting(true);
     setStatus("Preparing printable PDF...");
     try {
-      const { printOnePagePdf } = await import("@/lib/coloring/browserDownloads");
+      const { printOnePagePdf } = await loadPrintableExportRuntime();
       const result = await printOnePagePdf({ internalSvgUrl, pngPreviewUrl, title: item.title, filenameBaseName: item.downloadBaseName, altText: item.altText });
       if (runIdRef.current !== runId) return;
       setStatus(result.ok ? result.message || "Printable PDF is ready." : result.message);

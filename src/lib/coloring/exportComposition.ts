@@ -1,3 +1,5 @@
+import { DEFAULT_PRINTABLE_RASTER_DIMENSIONS } from "./printableOutputFacts";
+
 export type CompositionBox = {
   x: number;
   y: number;
@@ -81,8 +83,8 @@ export const PRINTABLE_PAPER_PROFILES = Object.freeze({
     heightIn: 11,
     widthPt: 612,
     heightPt: 792,
-    widthPx: 2550,
-    heightPx: 3300,
+    widthPx: DEFAULT_PRINTABLE_RASTER_DIMENSIONS.widthPx,
+    heightPx: DEFAULT_PRINTABLE_RASTER_DIMENSIONS.heightPx,
     rasterDpi: 300,
   } satisfies PortraitPaperDefinition),
   a4: Object.freeze({
