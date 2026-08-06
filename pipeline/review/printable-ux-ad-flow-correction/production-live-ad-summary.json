@@ -1,0 +1,42 @@
+{
+  "checkedAt": "2026-08-06T14:40:40.611Z",
+  "route": "/coloring-pages/animals",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "browser": "Chrome 150.0.7871.187 (Chromium)",
+  "buildRevision": "b5550ee51db88a877f141f410006abfeee9bfd26",
+  "httpStatus": 200,
+  "script": {
+    "count": 1,
+    "src": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4810616735714570",
+    "httpStatus": 200
+  },
+  "pageState": "fallback",
+  "headerUnit": {
+    "logicalSlotId": "hub-header-banner",
+    "externalSlotId": "5574432869",
+    "initialized": true,
+    "officialDataAdStatus": "unfilled",
+    "diagnosticDataAdsbygoogleStatus": "done",
+    "width": 728,
+    "height": 90,
+    "adRequestHttpStatus": 200
+  },
+  "outcomes": {
+    "filled": 0,
+    "optimized": 0,
+    "unfilled": 1,
+    "unresolvedInitialized": 0,
+    "verifiedCreative": 0,
+    "visibleFallbacks": 4,
+    "horizontalOverflow": false,
+    "consoleErrors": 0
+  },
+  "diagnostics": [
+    "One Google ping was reported as net::ERR_ABORTED after a 204 response.",
+    "One iframe existed inside the officially unfilled unit but did not satisfy visible creative evidence.",
+    "No ad was clicked."
+  ]
+}

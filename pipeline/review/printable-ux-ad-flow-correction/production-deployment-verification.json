@@ -1,0 +1,52 @@
+{
+  "pushTimestamp": "2026-08-06T10:30:10.1924189-04:00",
+  "quietWaitMinutes": 3,
+  "pollRoute": "/coloring-pages/animals",
+  "polls": [
+    {
+      "timestamp": "2026-08-06T10:33:35.0529854-04:00",
+      "httpStatus": 200,
+      "balancedFlowMarkerPresent": false
+    },
+    {
+      "timestamp": "2026-08-06T10:34:47.9579143-04:00",
+      "httpStatus": 200,
+      "balancedFlowMarkerPresent": false
+    },
+    {
+      "timestamp": "2026-08-06T10:35:58.0541930-04:00",
+      "httpStatus": 200,
+      "balancedFlowMarkerPresent": true
+    }
+  ],
+  "firstMarkerTimestamp": "2026-08-06T10:35:58.0541930-04:00",
+  "deploymentWaitSeconds": 348,
+  "buildRevision": "b5550ee51db88a877f141f410006abfeee9bfd26",
+  "productionHtml": {
+    "eligibleRoutesVerified": [
+      "/",
+      "/coloring-pages",
+      "/coloring-pages/animals",
+      "/coloring-pages/animals/page/2",
+      "/printables/animals/animals-alligator-4feec8505a"
+    ],
+    "adFreeRoutesVerified": [
+      "/privacy",
+      "/terms",
+      "/editorial-policy",
+      "/affiliate-disclosure",
+      "/contact",
+      "/sitemap",
+      "/missing-printable-ux-ad-flow-route"
+    ],
+    "defaultOnlyPrintableMarkerCount": 1,
+    "supersededSettingsMarkerCount": 0,
+    "secondaryAfterMeaningfulContent": true
+  },
+  "adsTxt": {
+    "httpStatus": 200,
+    "contentType": "text/plain; charset=UTF-8",
+    "bytes": 58,
+    "exact": true
+  }
+}

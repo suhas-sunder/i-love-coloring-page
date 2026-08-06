@@ -1,5 +1,7 @@
 # Printable Settings UI Implementation
 
+> Superseded on 2026-08-06. The public paper, orientation, and artwork-size controls documented below were removed by `fix: restore default printable experience` (`baf0f045b7a30244969953a886a6767246e37d79`). The centralized paper-profile engine remains available internally, while the canonical printable page again exposes only the accepted US Letter portrait default. This report is retained as historical implementation evidence; the active behavior is documented in `reports/2026-08-printable-ux-ad-flow-correction.md`.
+
 Date: 2026-08-06
 Status: implementation verified locally, released, and verified on the production domain
 
