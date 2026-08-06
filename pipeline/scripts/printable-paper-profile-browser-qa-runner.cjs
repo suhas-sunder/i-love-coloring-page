@@ -10,7 +10,7 @@ const ts = require("typescript");
 
 const ROOT = process.cwd();
 const APP_URL = (process.argv[2] || "http://127.0.0.1:3012").replace(/\/$/, "");
-const REVIEW_DIR = path.join(ROOT, "pipeline", "review", "printable-settings-ui");
+const REVIEW_DIR = path.join(ROOT, "pipeline", "review", "printable-paper-profile");
 const BASELINE_PATH = path.join(ROOT, "pipeline", "tests", "fixtures", "printable-paper-profile-baseline.json");
 const RUNTIME_PRINTABLES_PATH = path.join(ROOT, "src", "generated", "coloring", "runtime-printables.json");
 const ASSET_BASE_URL = "https://assets.ilovecoloringpage.com/coloring-pages";
@@ -20,10 +20,7 @@ const VIEWPORTS = [
   { width: 1024, height: 900 },
   { width: 1440, height: 1000 },
   { width: 1920, height: 1080 },
-  { width: 2400, height: 1200 },
-  { width: 3440, height: 1440 },
 ];
-const INTERNAL_PROFILE_CASE_COUNT = 9;
 const BROWSERS = [
   { id: "chrome", channel: "chrome" },
   { id: "edge", channel: "msedge" },
@@ -44,7 +41,6 @@ async function main() {
   });
   const svgAssets = await fetchSvgAssets(records);
   const tempRoot = await mkdtemp(path.join(os.tmpdir(), "ilcp-paper-profile-qa-"));
-  await rm(REVIEW_DIR, { recursive: true, force: true });
   await mkdir(REVIEW_DIR, { recursive: true });
 
   const results = {
@@ -55,13 +51,11 @@ async function main() {
     routes: records.map(({ expected }) => expected.route),
     defaultOutputChecks: [],
     imageOutputChecks: null,
-    publicSettingsChecks: null,
     internalProfileChecks: [],
     screenshots: [],
     limitations: [
       "Chrome and Edge are both Chromium-based coverage.",
-      "The UI checks cover all seven required widths; both installed channels are Chromium-based.",
-      "The 200% and 400% checks use Chromium DevTools visual page scaling plus narrow-width reflow checks; physical browser UI zoom remains a manual check.",
+      "No paper, orientation, or artwork-scale controls are exposed by this milestone.",
     ],
   };
 
@@ -90,14 +84,6 @@ async function main() {
           results.imageOutputChecks = output.imageChecks;
           results.lifecycle = output.lifecycle;
           results.lifecycleDiagnostics = output.diagnostics;
-          results.publicSettingsChecks = await runPublicSettingsChecks(
-            browser,
-            records[0],
-            svgAssets,
-            tempRoot,
-            results.screenshots,
-            buildExportCompositionModuleUrl(),
-          );
           results.internalProfileChecks = await runInternalProfileChecks(
             browser,
             buildBrowserDownloadsModuleUrl(),
@@ -123,9 +109,8 @@ async function main() {
       && results.defaultOutputChecks.every((entry) => entry.matchesBaseline),
     defaultImageBytesPreserved: Boolean(results.imageOutputChecks?.matchesBaseline),
     lifecyclePassed: Object.values(results.lifecycle || {}).every(Boolean),
-    internalProfilesPassed: results.internalProfileChecks.length === INTERNAL_PROFILE_CASE_COUNT
+    internalProfilesPassed: results.internalProfileChecks.length === 4
       && results.internalProfileChecks.every((entry) => entry.passed),
-    publicSettingsPassed: Boolean(results.publicSettingsChecks?.passed),
   };
   results.summary.browserQaPassed = Object.values(results.summary).every((value) => Array.isArray(value) || value === true);
 
@@ -133,188 +118,6 @@ async function main() {
   await writeFile(evidencePath, `${JSON.stringify(results, null, 2)}\n`, "utf8");
   console.log(JSON.stringify(results, null, 2));
   if (!results.summary.browserQaPassed) process.exitCode = 1;
-}
-
-async function runPublicSettingsChecks(browser, { expected }, svgAssets, tempRoot, screenshots, compositionModuleUrl) {
-  const context = await browser.newContext({ acceptDownloads: true });
-  await installSvgFulfillment(context, svgAssets);
-  await context.addInitScript(() => {
-    window.print = () => {};
-    window.open = () => null;
-    window.__ILCP_PRINTABLE_SETTINGS_PERF__ = { longTasks: [], layoutShifts: [] };
-    try {
-      new PerformanceObserver((list) => {
-        window.__ILCP_PRINTABLE_SETTINGS_PERF__.longTasks.push(...list.getEntries().map((entry) => entry.duration));
-      }).observe({ type: "longtask", buffered: true });
-    } catch {}
-    try {
-      new PerformanceObserver((list) => {
-        window.__ILCP_PRINTABLE_SETTINGS_PERF__.layoutShifts.push(...list.getEntries()
-          .filter((entry) => !entry.hadRecentInput)
-          .map((entry) => entry.value));
-      }).observe({ type: "layout-shift", buffered: true });
-    } catch {}
-  });
-  const page = await context.newPage();
-  try {
-    await page.setViewportSize({ width: 1440, height: 1000 });
-    await page.goto(staticRouteUrl(expected.route), { waitUntil: "domcontentloaded", timeout: 45_000 });
-    const previewUpdateStartedAt = Date.now();
-    await page.locator('input[name$="-paper"][value="a4"]').check();
-    await page.locator('input[name$="-orientation"][value="auto"]').check();
-    await page.locator('input[name$="-scale"][value="75"]').check();
-    await page.waitForFunction(() => document.querySelector("[data-printable-page-preview]")?.getAttribute("data-artwork-scale") === "75");
-    const previewUpdateMs = Date.now() - previewUpdateStartedAt;
-    const geometryResolution = await page.evaluate(async (moduleUrl) => {
-      const module = await import(moduleUrl);
-      const iterations = 10_000;
-      const startedAt = performance.now();
-      for (let index = 0; index < iterations; index += 1) {
-        module.computePrintableLayout(800, 1200, {
-          paperKind: index % 2 ? "letter" : "a4",
-          orientation: index % 3 ? "auto" : "landscape",
-          artworkScalePercent: index % 4 ? 75 : 100,
-        });
-      }
-      const totalMs = performance.now() - startedAt;
-      return { iterations, totalMs, averageMs: totalMs / iterations };
-    }, compositionModuleUrl);
-
-    const selected = await page.evaluate(() => ({
-      paper: document.querySelector('input[name$="-paper"]:checked')?.value,
-      orientation: document.querySelector('input[name$="-orientation"]:checked')?.value,
-      scale: document.querySelector('input[name$="-scale"]:checked')?.value,
-      pageProfile: document.querySelector("[data-printable-page-preview]")?.getAttribute("data-page-profile"),
-      requestedOrientation: document.querySelector("[data-printable-page-preview]")?.getAttribute("data-requested-orientation"),
-      scalePercent: document.querySelector("[data-printable-page-preview]")?.getAttribute("data-artwork-scale"),
-      outputSummary: document.querySelector(".printable-settings-current")?.textContent?.trim(),
-      resetVisible: Boolean(document.querySelector(".printable-settings-reset")),
-      overflow: document.documentElement.scrollWidth > window.innerWidth,
-    }));
-
-    const screenshotName = "chrome-1440-a4-auto-75-printable-settings.png";
-    await page.locator(".printable-main").screenshot({ path: path.join(REVIEW_DIR, screenshotName) });
-    screenshots.push(`pipeline/review/printable-settings-ui/${screenshotName}`);
-
-    const pdfDownload = await captureDownload(page, page.getByRole("button", { name: "Download PDF", exact: true }), tempRoot);
-    const pdfBytes = await readFile(pdfDownload.path);
-    const pdfSource = pdfBytes.toString("latin1");
-
-    await page.getByRole("button", { name: "Print", exact: true }).click();
-    const dialog = page.getByRole("dialog");
-    await dialog.waitFor({ state: "visible" });
-    await page.getByText("Print preview ready.", { exact: true }).waitFor();
-    const dialogProfile = await dialog.locator("[data-printable-page-preview]").getAttribute("data-page-profile");
-    await dialog.getByRole("button", { name: "Print", exact: true }).click();
-    await page.getByText("Printable PDF is ready.", { exact: true }).waitFor();
-    const printSnapshot = await page.evaluate(() => window.__ILCP_LAST_PRINT_DOCUMENT__);
-    await dialog.getByRole("button", { name: "Close", exact: true }).click();
-
-    const pngDownload = await captureDownload(page, page.getByRole("button", { name: /^Download PNG for / }), tempRoot);
-    const jpgDownload = await captureDownload(page, page.getByRole("button", { name: /^Download JPG for / }), tempRoot);
-    const webpDownload = await captureDownload(page, page.getByRole("button", { name: /^Download WebP for / }), tempRoot);
-    const pngDimensions = readPngDimensions(await readFile(pngDownload.path));
-    const jpgDimensions = readJpegDimensions(await readFile(jpgDownload.path));
-
-    const resetButton = page.getByRole("button", { name: "Reset to defaults", exact: true });
-    await resetButton.focus();
-    await page.keyboard.press("Space");
-    const reset = await page.evaluate(() => ({
-      paper: document.querySelector('input[name$="-paper"]:checked')?.value,
-      orientation: document.querySelector('input[name$="-orientation"]:checked')?.value,
-      scale: document.querySelector('input[name$="-scale"]:checked')?.value,
-      pageProfile: document.querySelector("[data-printable-page-preview]")?.getAttribute("data-page-profile"),
-      resetVisible: Boolean(document.querySelector(".printable-settings-reset")),
-      activeValue: document.activeElement?.getAttribute("value"),
-    }));
-
-    const a4Control = page.locator('input[name$="-paper"][value="a4"]');
-    await a4Control.focus();
-    await page.keyboard.press("Space");
-    const landscapeControl = page.locator('input[name$="-orientation"][value="landscape"]');
-    await landscapeControl.focus();
-    await page.keyboard.press("Space");
-    const scaleControl = page.locator('input[name$="-scale"][value="90"]');
-    await scaleControl.focus();
-    await page.keyboard.press("Space");
-    const keyboardSelection = await page.evaluate(() => ({
-      paper: document.querySelector('input[name$="-paper"]:checked')?.value,
-      orientation: document.querySelector('input[name$="-orientation"]:checked')?.value,
-      scale: document.querySelector('input[name$="-scale"]:checked')?.value,
-      activeValue: document.activeElement?.getAttribute("value"),
-    }));
-    const keyboardReset = page.getByRole("button", { name: "Reset to defaults", exact: true });
-    await keyboardReset.focus();
-    await page.keyboard.press("Enter");
-    const cdp = await context.newCDPSession(page);
-    const zoomChecks = [];
-    for (const factor of [2, 4]) {
-      await cdp.send("Emulation.setPageScaleFactor", { pageScaleFactor: factor });
-      zoomChecks.push(await page.evaluate((expectedScale) => {
-        const panel = document.querySelector(".printable-action-panel");
-        const bounds = panel?.getBoundingClientRect();
-        return {
-          factor: expectedScale,
-          visualScale: window.visualViewport?.scale || 1,
-          controlsReachable: Boolean(bounds && bounds.width > 0 && bounds.height > 0),
-        };
-      }, factor));
-    }
-    await cdp.send("Emulation.setPageScaleFactor", { pageScaleFactor: 1 });
-
-    const expectedBase = pdfDownload.filename.replace(/-a4-auto-portrait-75\.pdf$/, "");
-    const checks = {
-      selectedProfile: selected.paper === "a4" && selected.orientation === "auto" && selected.scale === "75",
-      autoResolutionVisible: selected.pageProfile === "a4-portrait"
-        && selected.requestedOrientation === "auto"
-        && /Auto selected: Portrait/.test(selected.outputSummary || ""),
-      scaleVisible: selected.scalePercent === "75",
-      noOverflow: !selected.overflow,
-      resetAppears: selected.resetVisible,
-      pdfFilename: pdfDownload.filename === `${expectedBase}-a4-auto-portrait-75.pdf`,
-      pdfStructure: pdfBytes.subarray(0, 4).toString("ascii") === "%PDF"
-        && requiredMatch(pdfSource, /\/MediaBox \[([^\]]+)\]/) === "0 0 595.28 841.89"
-        && requiredMatch(pdfSource, /\/Filter (\/\w+)/) === "/FlateDecode",
-      printUsesSameProfile: dialogProfile === "a4-portrait" && printSnapshot?.pageSize === "a4-portrait",
-      pngOutput: pngDownload.filename === `${expectedBase}-a4-auto-portrait-75.png`
-        && pngDimensions.width === 2480 && pngDimensions.height === 3508,
-      jpgOutput: jpgDownload.filename === `${expectedBase}-a4-auto-portrait-75.jpg`
-        && jpgDimensions.width === 2480 && jpgDimensions.height === 3508,
-      webpIndependent: webpDownload.filename === `${expectedBase}.webp`,
-      resetRestoresDefaults: reset.paper === "letter" && reset.orientation === "portrait"
-        && reset.scale === "100" && reset.pageProfile === "letter-portrait" && !reset.resetVisible
-        && reset.activeValue === "letter",
-      nativeKeyboardSelection: keyboardSelection.paper === "a4" && keyboardSelection.orientation === "landscape"
-        && keyboardSelection.scale === "90" && keyboardSelection.activeValue === "90",
-      keyboardReset: !await page.locator(".printable-settings-reset").count(),
-      zoomReachability: zoomChecks.every((entry) => entry.visualScale === entry.factor && entry.controlsReachable),
-    };
-    return {
-      route: expected.route,
-      selected,
-      downloads: {
-        pdf: { filename: pdfDownload.filename, bytes: pdfBytes.length, durationMs: pdfDownload.durationMs },
-        png: { filename: pngDownload.filename, ...pngDimensions, durationMs: pngDownload.durationMs },
-        jpg: { filename: jpgDownload.filename, ...jpgDimensions, durationMs: jpgDownload.durationMs },
-        webp: { filename: webpDownload.filename, durationMs: webpDownload.durationMs },
-      },
-      performance: await page.evaluate(({ previewUpdateMs: measuredPreviewUpdateMs, geometryResolution: measuredGeometry }) => ({
-        previewUpdateMs: measuredPreviewUpdateMs,
-        geometryResolution: measuredGeometry,
-        longTasks: window.__ILCP_PRINTABLE_SETTINGS_PERF__?.longTasks || [],
-        layoutShiftScore: (window.__ILCP_PRINTABLE_SETTINGS_PERF__?.layoutShifts || []).reduce((sum, value) => sum + value, 0),
-      }), { previewUpdateMs, geometryResolution }),
-      dialogProfile,
-      printPageSize: printSnapshot?.pageSize || null,
-      reset,
-      keyboardSelection,
-      zoomChecks,
-      checks,
-      passed: Object.values(checks).every(Boolean),
-    };
-  } finally {
-    await context.close();
-  }
 }
 
 async function runLayoutMatrix(browser, records, svgAssets, browserId, screenshots) {
@@ -338,12 +141,7 @@ async function runLayoutMatrix(browser, records, svgAssets, browserId, screensho
               documentOverflow: document.documentElement.scrollWidth > window.innerWidth,
               panelOverflow: panel.scrollWidth > panel.clientWidth,
               labels,
-              settingsMarker: document.querySelector('[data-printable-settings-version="paper-controls-v1"]') !== null,
-              settingsGroups: [...document.querySelectorAll(".printable-settings fieldset")].map((fieldset) => ({
-                legend: fieldset.querySelector("legend")?.textContent?.trim() || "",
-                checked: fieldset.querySelector('input[type="radio"]:checked')?.value || "",
-              })),
-              previewProfile: document.querySelector("[data-printable-page-preview]")?.getAttribute("data-page-profile") || "",
+              newControlText: /\bA4\b|automatic orientation|artwork scale|landscape/i.test(panel.textContent),
               details: document.querySelector(".printable-facts")?.textContent || "",
             };
           });
@@ -351,19 +149,13 @@ async function runLayoutMatrix(browser, records, svgAssets, browserId, screensho
           if (!response || response.status() !== 200) failures.push(`${expected.route}@${viewport.width}: HTTP ${response?.status() || 0}`);
           if (metrics.documentOverflow || metrics.panelOverflow) failures.push(`${expected.route}@${viewport.width}: horizontal overflow`);
           if (!containsInOrder(metrics.labels, ["Download PDF", "Print"])) failures.push(`${expected.route}@${viewport.width}: default action order changed`);
-          if (!metrics.settingsMarker) failures.push(`${expected.route}@${viewport.width}: settings marker missing`);
-          if (JSON.stringify(metrics.settingsGroups) !== JSON.stringify([
-            { legend: "Paper", checked: "letter" },
-            { legend: "Orientation", checked: "portrait" },
-            { legend: "Artwork size", checked: "100" },
-          ])) failures.push(`${expected.route}@${viewport.width}: default settings changed`);
-          if (metrics.previewProfile !== "letter-portrait") failures.push(`${expected.route}@${viewport.width}: preview default changed`);
+          if (metrics.newControlText) failures.push(`${expected.route}@${viewport.width}: future paper controls leaked into UI`);
           if (!metrics.details.includes("US Letter, portrait")) failures.push(`${expected.route}@${viewport.width}: default paper fact changed`);
 
-          if (browserId === "chrome" && expected === records[0].expected && viewport.width === 390) {
+          if (expected === records[0].expected && (viewport.width === 390 || viewport.width === 1440)) {
             const name = `${browserId}-${viewport.width}-default-printable-actions.png`;
             await page.locator(".printable-detail-page").screenshot({ path: path.join(REVIEW_DIR, name) });
-            screenshots.push(`pipeline/review/printable-settings-ui/${name}`);
+            screenshots.push(`pipeline/review/printable-paper-profile/${name}`);
           }
         } finally {
           await page.close();
@@ -487,21 +279,11 @@ async function runDefaultOutputChecks(browser, records, svgAssets, tempRoot) {
 
 async function runInternalProfileChecks(browser, moduleUrl, svgBytes, tempRoot, screenshots) {
   const profiles = [
-    { name: "a4-portrait-100", source: "portrait", request: { paperKind: "a4", orientation: "portrait", artworkScalePercent: 100 }, expectedPage: "a4-portrait", expectedMediaBox: "0 0 595.28 841.89", expectedRaster: [2480, 3508], expectedFilename: "animals-alligator-a4.pdf" },
-    { name: "letter-landscape-100", source: "portrait", request: { paperKind: "letter", orientation: "landscape", artworkScalePercent: 100 }, expectedPage: "letter-landscape", expectedMediaBox: "0 0 792 612", expectedRaster: [3300, 2550], expectedFilename: "animals-alligator-landscape.pdf" },
-    { name: "letter-auto-portrait-100", source: "portrait", request: { paperKind: "letter", orientation: "auto", artworkScalePercent: 100 }, expectedPage: "letter-portrait", expectedMediaBox: "0 0 612 792", expectedRaster: [2550, 3300], expectedFilename: "animals-alligator-auto-portrait.pdf" },
-    { name: "letter-auto-landscape-100", source: "landscape", request: { paperKind: "letter", orientation: "auto", artworkScalePercent: 100 }, expectedPage: "letter-landscape", expectedMediaBox: "0 0 792 612", expectedRaster: [3300, 2550], expectedFilename: "animals-alligator-auto-landscape.pdf" },
-    { name: "a4-auto-square-100", source: "square", request: { paperKind: "a4", orientation: "auto", artworkScalePercent: 100 }, expectedPage: "a4-portrait", expectedMediaBox: "0 0 595.28 841.89", expectedRaster: [2480, 3508], expectedFilename: "animals-alligator-a4-auto-portrait.pdf" },
-    { name: "letter-portrait-90", source: "portrait", request: { paperKind: "letter", orientation: "portrait", artworkScalePercent: 90 }, expectedPage: "letter-portrait", expectedMediaBox: "0 0 612 792", expectedRaster: [2550, 3300], expectedFilename: "animals-alligator-90.pdf" },
-    { name: "letter-portrait-75", source: "portrait", request: { paperKind: "letter", orientation: "portrait", artworkScalePercent: 75 }, expectedPage: "letter-portrait", expectedMediaBox: "0 0 612 792", expectedRaster: [2550, 3300], expectedFilename: "animals-alligator-75.pdf" },
-    { name: "letter-portrait-50", source: "portrait", request: { paperKind: "letter", orientation: "portrait", artworkScalePercent: 50 }, expectedPage: "letter-portrait", expectedMediaBox: "0 0 612 792", expectedRaster: [2550, 3300], expectedFilename: "animals-alligator-50.pdf" },
-    { name: "a4-landscape-75", source: "portrait", request: { paperKind: "a4", orientation: "landscape", artworkScalePercent: 75 }, expectedPage: "a4-landscape", expectedMediaBox: "0 0 841.89 595.28", expectedRaster: [3508, 2480], expectedFilename: "animals-alligator-a4-landscape-75.pdf" },
+    { name: "letter-landscape-100", request: { paperKind: "letter", orientation: "landscape", artworkScalePercent: 100 }, expectedPage: "letter-landscape", expectedMediaBox: "0 0 792 612", expectedRaster: [3300, 2550] },
+    { name: "a4-portrait-90", request: { paperKind: "a4", orientation: "portrait", artworkScalePercent: 90 }, expectedPage: "a4-portrait", expectedMediaBox: "0 0 595.28 841.89", expectedRaster: [2480, 3508] },
+    { name: "a4-landscape-75", request: { paperKind: "a4", orientation: "landscape", artworkScalePercent: 75 }, expectedPage: "a4-landscape", expectedMediaBox: "0 0 841.89 595.28", expectedRaster: [3508, 2480] },
+    { name: "a4-auto-50", request: { paperKind: "a4", orientation: "auto", artworkScalePercent: 50 }, expectedPage: "a4-portrait", expectedMediaBox: "0 0 595.28 841.89", expectedRaster: [2480, 3508] },
   ];
-  const sourceFixtures = {
-    portrait: svgBytes.toString("base64"),
-    landscape: Buffer.from(syntheticLineArtSvg(1200, 800)).toString("base64"),
-    square: Buffer.from(syntheticLineArtSvg(1000, 1000)).toString("base64"),
-  };
   const saved = new Map();
   const context = await browser.newContext();
   const page = await context.newPage();
@@ -514,11 +296,11 @@ async function runInternalProfileChecks(browser, moduleUrl, svgBytes, tempRoot, 
   let browserResults;
   try {
     await page.goto("about:blank");
-    browserResults = await page.evaluate(async ({ moduleUrl: sourceModuleUrl, sources, profileInputs }) => {
+    browserResults = await page.evaluate(async ({ moduleUrl: sourceModuleUrl, svgBase64, profileInputs }) => {
       const downloads = await import(sourceModuleUrl);
+      const svgUrl = `data:image/svg+xml;base64,${svgBase64}`;
       const results = [];
       for (const profile of profileInputs) {
-        const svgUrl = `data:image/svg+xml;base64,${sources[profile.source]}`;
         const startedAt = performance.now();
         const prepared = await downloads.prepareOnePagePrintPdf({
           internalSvgUrl: svgUrl,
@@ -564,7 +346,7 @@ async function runInternalProfileChecks(browser, moduleUrl, svgBytes, tempRoot, 
       return results;
     }, {
       moduleUrl,
-      sources: sourceFixtures,
+      svgBase64: svgBytes.toString("base64"),
       profileInputs: profiles,
     });
   } finally {
@@ -582,7 +364,7 @@ async function runInternalProfileChecks(browser, moduleUrl, svgBytes, tempRoot, 
     const info = runPdfTool("pdfinfo", [pdfPath], { encoding: "utf8" });
     const renderPrefix = path.join(REVIEW_DIR, result.name);
     runPdfTool("pdftoppm", ["-f", "1", "-singlefile", "-r", "144", "-png", pdfPath, renderPrefix]);
-    const renderedPath = `pipeline/review/printable-settings-ui/${result.name}.png`;
+    const renderedPath = `pipeline/review/printable-paper-profile/${result.name}.png`;
     screenshots.push(renderedPath);
     const contained = result.imageBox.x >= result.artworkBox.x
       && result.imageBox.y >= result.artworkBox.y
@@ -594,7 +376,7 @@ async function runInternalProfileChecks(browser, moduleUrl, svgBytes, tempRoot, 
       && filter === "/FlateDecode"
       && result.pdfBytes > 0
       && result.pdfBytes <= 3 * 1024 * 1024
-      && result.filename === expected.expectedFilename
+      && result.filename === "animals-alligator.pdf"
       && result.metadataTitle === "Animals Alligator - iLoveColoringPage.com"
       && result.raster?.mimeType === "image/png"
       && result.raster?.width === expected.expectedRaster[0]
@@ -673,59 +455,22 @@ function requiredMatch(source, pattern) {
   return match[1];
 }
 
-function readPngDimensions(bytes) {
-  if (bytes.subarray(1, 4).toString("ascii") !== "PNG") throw new Error("Downloaded PNG has invalid magic bytes");
-  return { width: bytes.readUInt32BE(16), height: bytes.readUInt32BE(20) };
-}
-
-function readJpegDimensions(bytes) {
-  if (bytes[0] !== 0xff || bytes[1] !== 0xd8) throw new Error("Downloaded JPG has invalid magic bytes");
-  let offset = 2;
-  while (offset + 8 < bytes.length) {
-    if (bytes[offset] !== 0xff) {
-      offset += 1;
-      continue;
-    }
-    const marker = bytes[offset + 1];
-    if (marker === 0xd8 || marker === 0xd9 || (marker >= 0xd0 && marker <= 0xd7)) {
-      offset += 2;
-      continue;
-    }
-    const length = bytes.readUInt16BE(offset + 2);
-    if (length < 2 || offset + length + 2 > bytes.length) break;
-    if ((marker >= 0xc0 && marker <= 0xc3) || (marker >= 0xc5 && marker <= 0xc7)
-      || (marker >= 0xc9 && marker <= 0xcb) || (marker >= 0xcd && marker <= 0xcf)) {
-      return { width: bytes.readUInt16BE(offset + 7), height: bytes.readUInt16BE(offset + 5) };
-    }
-    offset += length + 2;
-  }
-  throw new Error("Downloaded JPG has no readable frame dimensions");
-}
-
-function syntheticLineArtSvg(width, height) {
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}"><rect width="100%" height="100%" fill="white"/><g fill="none" stroke="black" stroke-width="4"><rect x="12" y="12" width="${width - 24}" height="${height - 24}"/><path d="M 40 ${height - 40} L ${width - 40} 40 M 40 40 Q ${width / 2} ${height - 80} ${width - 40} 40"/><circle cx="${width / 2}" cy="${height / 2}" r="${Math.min(width, height) / 5}"/></g></svg>`;
-}
-
 function sha256(bytes) {
   return createHash("sha256").update(bytes).digest("hex");
 }
 
 function buildBrowserDownloadsModuleUrl() {
-  const compositionUrl = buildExportCompositionModuleUrl();
+  const compositionSource = require("node:fs").readFileSync(path.join(ROOT, "src", "lib", "coloring", "exportComposition.ts"), "utf8");
+  const compositionOutput = ts.transpileModule(compositionSource, {
+    compilerOptions: { module: ts.ModuleKind.ES2022, target: ts.ScriptTarget.ES2022, isolatedModules: true },
+  }).outputText;
+  const compositionUrl = `data:text/javascript;base64,${Buffer.from(compositionOutput).toString("base64")}`;
   const downloadsSource = require("node:fs").readFileSync(path.join(ROOT, "src", "lib", "coloring", "browserDownloads.ts"), "utf8")
     .replace('from "./exportComposition";', `from "${compositionUrl}";`);
   const downloadsOutput = ts.transpileModule(downloadsSource, {
     compilerOptions: { module: ts.ModuleKind.ES2022, target: ts.ScriptTarget.ES2022, isolatedModules: true },
   }).outputText;
   return `data:text/javascript;base64,${Buffer.from(downloadsOutput).toString("base64")}`;
-}
-
-function buildExportCompositionModuleUrl() {
-  const compositionSource = require("node:fs").readFileSync(path.join(ROOT, "src", "lib", "coloring", "exportComposition.ts"), "utf8");
-  const compositionOutput = ts.transpileModule(compositionSource, {
-    compilerOptions: { module: ts.ModuleKind.ES2022, target: ts.ScriptTarget.ES2022, isolatedModules: true },
-  }).outputText;
-  return `data:text/javascript;base64,${Buffer.from(compositionOutput).toString("base64")}`;
 }
 
 function firstLine(error) {

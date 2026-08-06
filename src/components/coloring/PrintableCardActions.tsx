@@ -4,10 +4,8 @@ import { useId, useRef } from "react";
 
 import { useSiteInteractions } from "@/components/site/SiteInteractionProvider";
 import { restoreFocusAfterModalClose } from "@/hooks/useModalDialog";
-import type { PrintableProfileRequest } from "@/lib/coloring/exportComposition";
 import type { PublicColoringItem } from "@/lib/coloring/types";
 
-import type { PrintablePaperOperationController } from "./PrintableDetailActions";
 import { PrintablePreviewDialog } from "./PrintablePreviewDialog";
 
 type PrintableCardActionsProps = {
@@ -18,16 +16,9 @@ type PrintableCardActionsProps = {
   };
   className?: string;
   buttonClassName?: string;
-  composition?: Required<PrintableProfileRequest>;
-  paperOperation?: PrintablePaperOperationController;
-  paperPreview?: {
-    imageUrl: string;
-    width: number;
-    height: number;
-  };
 };
 
-export function PrintableCardActions({ item, assetUrls, className, buttonClassName, composition, paperOperation, paperPreview }: PrintableCardActionsProps) {
+export function PrintableCardActions({ item, assetUrls, className, buttonClassName }: PrintableCardActionsProps) {
   const surfaceId = useId();
   const surface = { kind: "printable-dialog" as const, id: surfaceId };
   const { closeModal, isModalOpen, openModal } = useSiteInteractions();
@@ -47,7 +38,7 @@ export function PrintableCardActions({ item, assetUrls, className, buttonClassNa
         className={buttonClassName || "button button-ghost button-small gallery-print-button"}
         type="button"
         onClick={() => openModal(surface)}
-        disabled={!hasPrintableAsset || paperOperation?.busy}
+        disabled={!hasPrintableAsset}
         aria-haspopup="dialog"
       >
         Print
@@ -58,9 +49,6 @@ export function PrintableCardActions({ item, assetUrls, className, buttonClassNa
         item={item}
         internalSvgUrl={assetUrls.internalSvg}
         pngPreviewUrl={assetUrls.png}
-        composition={composition}
-        paperOperation={paperOperation}
-        paperPreview={paperPreview}
       />
     </div>
   );

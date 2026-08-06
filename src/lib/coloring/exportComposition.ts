@@ -151,10 +151,10 @@ export function resolvePrintableProfile(
 ): ResolvedPrintableProfile {
   assertArtworkDimensions(sourceWidth, sourceHeight);
 
-  const normalized = normalizePrintableProfileRequest(request);
-  const paperKind = normalized.paperKind;
-  const requestedOrientation = normalized.orientation;
-  const artworkScalePercent = normalized.artworkScalePercent;
+  const paperKind = request.paperKind ?? DEFAULT_PRINTABLE_PROFILE.paperKind;
+  const requestedOrientation = request.orientation ?? DEFAULT_PRINTABLE_PROFILE.orientation;
+  const artworkScalePercent = request.artworkScalePercent ?? DEFAULT_PRINTABLE_PROFILE.artworkScalePercent;
+  assertProfileRequest(paperKind, requestedOrientation, artworkScalePercent);
 
   const orientation = requestedOrientation === "auto"
     ? selectAutomaticOrientation(sourceWidth, sourceHeight, paperKind)
@@ -165,31 +165,6 @@ export function resolvePrintableProfile(
     requestedOrientation,
     artworkScalePercent,
   };
-}
-
-export function normalizePrintableProfileRequest(
-  request: PrintableProfileRequest = DEFAULT_PRINTABLE_PROFILE,
-): Required<PrintableProfileRequest> {
-  const paperKind = request.paperKind ?? DEFAULT_PRINTABLE_PROFILE.paperKind;
-  const orientation = request.orientation ?? DEFAULT_PRINTABLE_PROFILE.orientation;
-  const artworkScalePercent = request.artworkScalePercent ?? DEFAULT_PRINTABLE_PROFILE.artworkScalePercent;
-  assertProfileRequest(paperKind, orientation, artworkScalePercent);
-  return { paperKind, orientation, artworkScalePercent };
-}
-
-export function formatPrintablePaperDimensions(paperKind: PaperKind) {
-  const definition = PRINTABLE_PAPER_PROFILES[paperKind];
-  if (paperKind === "a4") {
-    return `${Math.round(definition.widthIn * 25.4)} × ${Math.round(definition.heightIn * 25.4)} mm`;
-  }
-  return `${definition.widthIn} × ${definition.heightIn} in`;
-}
-
-export function formatPrintablePageDimensions(profile: PrintablePageProfile) {
-  if (profile.paperKind === "a4") {
-    return `${Math.round(profile.widthIn * 25.4)} × ${Math.round(profile.heightIn * 25.4)} mm`;
-  }
-  return `${profile.widthIn} × ${profile.heightIn} in`;
 }
 
 export function selectAutomaticOrientation(
@@ -388,9 +363,10 @@ function normalizeLayoutRequest(
   if (typeof unitOrRequest === "string") {
     return { ...DEFAULT_PRINTABLE_PROFILE, unit: unitOrRequest };
   }
-  const profile = normalizePrintableProfileRequest(unitOrRequest);
   return {
-    ...profile,
+    paperKind: unitOrRequest.paperKind ?? DEFAULT_PRINTABLE_PROFILE.paperKind,
+    orientation: unitOrRequest.orientation ?? DEFAULT_PRINTABLE_PROFILE.orientation,
+    artworkScalePercent: unitOrRequest.artworkScalePercent ?? DEFAULT_PRINTABLE_PROFILE.artworkScalePercent,
     unit: unitOrRequest.unit ?? "pdf",
   };
 }

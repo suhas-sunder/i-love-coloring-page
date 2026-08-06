@@ -10,7 +10,6 @@ const css = read("src/styles/components.css");
 const search = read("src/components/site/GlobalSearchDialog.tsx");
 const header = read("src/components/site/SiteHeader.tsx");
 const printable = read("src/components/coloring/PrintableDetailPage.tsx");
-const printableExperience = read("src/components/coloring/PrintableDetailExperience.tsx");
 
 assert.match(css, /\.hub-preview-card-media\s*\{[^}]*aspect-ratio:\s*3\s*\/\s*4/s, "hub artwork frames must remain portrait-first");
 assert.match(css, /\.gallery-item-media\s*\{[^}]*aspect-ratio:\s*2\s*\/\s*3/s, "printable gallery frames must avoid wide empty wells");
@@ -23,9 +22,8 @@ assert.doesNotMatch(search, /global-search-footer[\s\S]{0,300}>\s*Close\s*</, "s
 assert.match(header, /function handleKeyDown\(event: KeyboardEvent\)/, "desktop disclosures must handle Escape");
 assert.match(header, /trigger\?\.focus\(\)/, "desktop disclosures must restore trigger focus");
 assert.match(header, /aria-expanded=\{isOpen\}/, "desktop disclosures must expose their state");
-assert.match(printable, /artworkWidth=\{assetSources\.fullResolutionArtwork\.width\}/, "printable width must come from verified full-resolution asset metadata");
-assert.match(printable, /artworkHeight=\{assetSources\.fullResolutionArtwork\.height\}/, "printable height must come from verified full-resolution asset metadata");
-assert.match(printableExperience, /computePrintableLayout\(artworkWidth, artworkHeight, settings\)/, "printable preview must consume verified metadata through the central composition engine");
+assert.match(printable, /assetSources\.principalPreview\.width/, "printable preview dimensions must be driven by verified asset metadata");
+assert.match(printable, /assetSources\.principalPreview\.height/, "printable preview dimensions must be driven by verified asset metadata");
 
 const home = path.join(root, "out", "index.html");
 if (existsSync(home)) {
