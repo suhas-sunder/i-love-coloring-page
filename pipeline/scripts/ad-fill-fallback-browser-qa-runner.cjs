@@ -6,7 +6,7 @@ const { chromium } = require("playwright");
 
 const ROOT = process.cwd();
 const BASE_URL = readBaseUrl(process.argv.slice(2));
-const REVIEW_DIR = path.join(ROOT, "pipeline", "review", "ad-layout-finalization");
+const REVIEW_DIR = path.join(ROOT, "pipeline", "review", "printable-ux-ad-flow-correction");
 const ROUTES = [
   { id: "home", path: "/", ads: true },
   { id: "gallery", path: "/coloring-pages", ads: true },
@@ -15,6 +15,7 @@ const ROUTES = [
   { id: "printable", path: "/printables/animals/animals-alligator-4feec8505a", ads: true },
   { id: "privacy", path: "/privacy", ads: false },
   { id: "terms", path: "/terms", ads: false },
+  { id: "sitemap", path: "/sitemap", ads: false },
   { id: "not-found", path: "/missing-ad-fill-fallback-route", ads: false },
 ];
 const VIEWPORTS = [
@@ -125,15 +126,25 @@ async function runAllUnfilledMatrix(browser, browserId, evidence) {
             && snapshot.horizontalOverflow === false
             && snapshot.scriptCount === (route.ads ? 1 : 0)
             && snapshot.duplicateLogicalInitializations.length === 0
-            && snapshot.creativeIframeCount === 0;
+            && snapshot.creativeIframeCount === 0
+            && snapshot.flowMarkerCount === (route.ads ? 1 : 0)
+            && (!route.ads || Boolean(snapshot.secondarySpacing?.balanced))
+            && (route.id !== "printable" || snapshot.printableExperienceMarkerCount === 1);
           const check = { route: route.path, width: viewport.width, expectedVisible, passed, snapshot };
           checks.push(check);
           if (!passed) failures.push(`${browserId}:${route.id}@${viewport.width}`);
 
           if (browserId === "chrome" && route.id === "hub" && [390, 1440, 3440].includes(viewport.width)) {
             const filename = `chrome-${viewport.width}-all-unfilled.png`;
+            await page.locator('[data-ad-flow-version="balanced-mid-content-v1"]').scrollIntoViewIfNeeded();
             await page.screenshot({ path: path.join(REVIEW_DIR, filename), fullPage: false });
-            evidence.push(`pipeline/review/ad-layout-finalization/${filename}`);
+            evidence.push(`pipeline/review/printable-ux-ad-flow-correction/${filename}`);
+          }
+          if (browserId === "chrome" && route.id === "printable" && [390, 1440].includes(viewport.width)) {
+            const filename = `chrome-${viewport.width}-printable-default.png`;
+            await page.locator('[data-ad-flow-version="balanced-mid-content-v1"]').scrollIntoViewIfNeeded();
+            await page.screenshot({ path: path.join(REVIEW_DIR, filename), fullPage: false });
+            evidence.push(`pipeline/review/printable-ux-ad-flow-correction/${filename}`);
           }
         } finally {
           await page.close();
@@ -173,6 +184,9 @@ async function runStateScenarios(browser, browserId, evidence) {
     return { snapshot, passed: snapshot.pageState === "pending" && snapshot.visibleFallbackCount === 0 };
   }));
   scenarios.push(await runStatusScenario(browser, "late-fill", async (page) => {
+    await page.waitForTimeout(750);
+    await setEveryInitializedStatus(page, "unfilled");
+    await page.waitForTimeout(100);
     await setEveryInitializedStatus(page, "unfilled");
     await waitForState(page, "fallback");
     const fallbackSnapshot = await inspectPage(page);
@@ -183,12 +197,12 @@ async function runStateScenarios(browser, browserId, evidence) {
     if (browserId === "chrome") {
       const filename = "chrome-1440-late-fill-final.png";
       await page.screenshot({ path: path.join(REVIEW_DIR, filename), fullPage: false });
-      evidence.push(`pipeline/review/ad-layout-finalization/${filename}`);
+      evidence.push(`pipeline/review/printable-ux-ad-flow-correction/${filename}`);
     }
     return {
       fallbackSnapshot,
       finalSnapshot,
-      passed: fallbackSnapshot.visibleFallbackCount === 1
+      passed: fallbackSnapshot.visibleFallbackCount > 0
         && finalSnapshot.pageState === "adsense-present"
         && finalSnapshot.visibleFallbackCount === 0,
     };
@@ -196,6 +210,7 @@ async function runStateScenarios(browser, browserId, evidence) {
   scenarios.push(await runScriptFailureScenario(browser));
   scenarios.push(await runTimeoutScenario(browser));
   scenarios.push(await runNavigationResetScenario(browser));
+  scenarios.push(await runZeroWidthInitializationScenario(browser));
   return scenarios;
 
   async function runStatusScenario(targetBrowser, id, exercise) {
@@ -214,6 +229,75 @@ async function runStateScenarios(browser, browserId, evidence) {
   }
 }
 
+async function runZeroWidthInitializationScenario(browser) {
+  const context = await browser.newContext();
+  await installHarness(context, "success");
+  await context.addInitScript(() => {
+    const installConstraint = () => {
+      if (!document.documentElement || document.getElementById("ad-zero-width-qa")) return;
+      const style = document.createElement("style");
+      style.id = "ad-zero-width-qa";
+      style.textContent = `
+        [data-ad-logical-placement="top-banner"],
+        [data-ad-logical-placement="top-banner"] .ad-slot-live-unit {
+          width: 0 !important;
+          min-width: 0 !important;
+          max-width: 0 !important;
+        }
+      `;
+      document.documentElement.append(style);
+    };
+    installConstraint();
+    const observer = new MutationObserver(installConstraint);
+    observer.observe(document, { childList: true, subtree: true });
+    window.__adQaZeroWidthObserver = observer;
+  });
+  const page = await context.newPage();
+  try {
+    await page.setViewportSize({ width: 1440, height: 1000 });
+    await page.goto(`${BASE_URL}/`, { waitUntil: "domcontentloaded", timeout: 45_000 });
+    await page.waitForTimeout(300);
+    const blocked = await page.evaluate(() => {
+      const wrapper = document.querySelector('[data-ad-logical-placement="top-banner"]');
+      const unit = wrapper?.querySelector(".ad-slot-live-unit");
+      return {
+        connected: Boolean(wrapper?.isConnected && unit?.isConnected),
+        width: unit?.getBoundingClientRect().width || 0,
+        initialized: unit?.dataset.adInitialized === "true",
+        pushCount: window.__adQaPushCount || 0,
+      };
+    });
+    await page.evaluate(() => {
+      window.__adQaZeroWidthObserver?.disconnect();
+      document.getElementById("ad-zero-width-qa")?.remove();
+    });
+    await page.waitForFunction(() => (
+      document.querySelector('[data-ad-logical-placement="top-banner"] .ad-slot-live-unit')?.dataset.adInitialized === "true"
+    ), null, { timeout: 5_000 });
+    const recovered = await page.evaluate(() => {
+      const unit = document.querySelector('[data-ad-logical-placement="top-banner"] .ad-slot-live-unit');
+      return {
+        width: unit?.getBoundingClientRect().width || 0,
+        initialized: unit?.dataset.adInitialized === "true",
+        pushCount: window.__adQaPushCount || 0,
+      };
+    });
+    return {
+      id: "zero-width-initialization",
+      blocked,
+      recovered,
+      passed: blocked.connected
+        && blocked.width === 0
+        && blocked.initialized === false
+        && recovered.width === 728
+        && recovered.initialized
+        && recovered.pushCount === blocked.pushCount + 1,
+    };
+  } finally {
+    await context.close();
+  }
+}
+
 async function runScriptFailureScenario(browser) {
   const context = await browser.newContext();
   await installHarness(context, "failure");
@@ -223,11 +307,18 @@ async function runScriptFailureScenario(browser) {
     await page.goto(`${BASE_URL}/coloring-pages/animals`, { waitUntil: "domcontentloaded", timeout: 45_000 });
     await waitForInitialized(page);
     await waitForState(page, "fallback");
-    const snapshot = await inspectPage(page);
+    const initialSnapshot = await inspectPage(page);
+    await page.waitForTimeout(30_000);
+    const stableSnapshot = await inspectPage(page);
     return {
       id: "script-failure",
-      snapshot,
-      passed: snapshot.visibleFallbackCount === 1 && snapshot.scriptCount === 1 && snapshot.adScriptLoadState === "failed",
+      initialSnapshot,
+      stableSnapshot,
+      passed: initialSnapshot.visibleFallbackCount > 0
+        && initialSnapshot.scriptCount === 1
+        && initialSnapshot.adScriptLoadState === "failed"
+        && stableSnapshot.visibleFallbackCount === initialSnapshot.visibleFallbackCount
+        && stableSnapshot.pageState === "fallback",
     };
   } finally {
     await context.close();
@@ -255,7 +346,7 @@ async function runTimeoutScenario(browser) {
       lateSnapshot,
       passed: pendingSnapshot.pageState === "pending"
         && pendingSnapshot.visibleFallbackCount === 0
-        && fallbackSnapshot.visibleFallbackCount === 1
+        && fallbackSnapshot.visibleFallbackCount > 0
         && lateSnapshot.visibleFallbackCount === 0,
     };
   } finally {
@@ -281,6 +372,9 @@ async function runNavigationResetScenario(browser) {
     await page.evaluate(() => window.__adQaOldUnit?.setAttribute("data-ad-status", "filled"));
     await page.waitForTimeout(50);
     const staleSnapshot = await inspectPage(page);
+    await page.waitForTimeout(750);
+    await setEveryInitializedStatus(page, "unfilled");
+    await page.waitForTimeout(100);
     await setEveryInitializedStatus(page, "unfilled");
     await waitForState(page, "fallback");
     const finalSnapshot = await inspectPage(page);
@@ -341,8 +435,9 @@ async function setMixedStatuses(page, presentStatus, withVisibleCreative, withEm
       if (index !== 0 || (!visibleCreative && !emptyCreative)) return;
       const frame = document.createElement("iframe");
       frame.src = "https://googleads.g.doubleclick.net/pagead/ads";
-      frame.style.width = visibleCreative ? "300px" : "0";
-      frame.style.height = visibleCreative ? "250px" : "0";
+      frame.style.setProperty("width", visibleCreative ? "300px" : "0", "important");
+      frame.style.setProperty("height", visibleCreative ? "250px" : "0", "important");
+      frame.style.setProperty("display", visibleCreative ? "block" : "none", "important");
       frame.setAttribute("data-qa-google-creative", visibleCreative ? "visible" : "empty");
       unit.append(frame);
     });
@@ -374,8 +469,18 @@ async function inspectPage(page) {
     const fallbacks = [...document.querySelectorAll("[data-ad-fallback]")];
     const units = [...document.querySelectorAll(".ad-slot-live-unit")];
     const initialized = units.filter((unit) => unit.dataset.adInitialized === "true");
+    const secondary = document.querySelector('[data-ad-flow-version="balanced-mid-content-v1"]');
+    const secondarySpacing = (() => {
+      if (!secondary?.previousElementSibling || !secondary.nextElementSibling) return null;
+      const previous = secondary.previousElementSibling.getBoundingClientRect();
+      const current = secondary.getBoundingClientRect();
+      const next = secondary.nextElementSibling.getBoundingClientRect();
+      const top = current.top - previous.bottom;
+      const bottom = next.top - current.bottom;
+      return { top, bottom, delta: Math.abs(top - bottom), balanced: Math.abs(top - bottom) <= 2 };
+    })();
     const logicalCounts = initialized.reduce((counts, unit) => {
-      const id = unit.closest("[data-ad-slot]")?.dataset.adSlot || "missing";
+      const id = unit.closest("[data-ad-fallback-policy]")?.dataset.adSlot || "missing";
       counts[id] = (counts[id] || 0) + 1;
       return counts;
     }, {});
@@ -402,6 +507,9 @@ async function inspectPage(page) {
       optimizedCount: initialized.filter((unit) => unit.getAttribute("data-ad-status") === "unfill-optimized").length,
       unfilledCount: initialized.filter((unit) => unit.getAttribute("data-ad-status") === "unfilled").length,
       creativeIframeCount: document.querySelectorAll(".ad-slot iframe").length,
+      flowMarkerCount: document.querySelectorAll('[data-ad-flow-version="balanced-mid-content-v1"]').length,
+      printableExperienceMarkerCount: document.querySelectorAll('[data-printable-experience-version="default-only-v2"]').length,
+      secondarySpacing,
       headerSize: (() => {
         const header = document.querySelector("[data-ad-size-policy='fixed-header-v1']");
         if (!header) return null;

@@ -165,6 +165,11 @@ test("runtime is environment-independent, route-scoped, measured, and fully clea
   assert.match(runtime, /removeEventListener\("orientationchange"/);
   assert.match(runtime, /cancelAnimationFrame\(layoutFrame\)/);
   assert.match(runtime, /cancelAnimationFrame\(reviewFrame\)/);
+  assert.match(runtime, /MAX_INITIALIZATION_MEASUREMENT_RETRIES = 8/);
+  assert.match(runtime, /getClientRects\(\)\.length > 0/);
+  assert.match(runtime, /hasRequiredAdSurfaceSize/);
+  assert.match(runtime, /resizeObserver\.observe\(wrapper\)/);
+  assert.match(runtime, /initializationRetryFrames\.values\(\)/);
   assert.match(runtime, /coordinator\.dispose\(\)/);
   assert.match(runtime, /unit\.dataset\.adInitialized = "true"/);
   assert.match(runtime, /unit\.dataset\.adInitialized === "true"/);
@@ -180,6 +185,7 @@ test("slot markup separates fixed header policy from auto units and provides a n
   assert.match(slot, /data-full-width-responsive=\{isFixedHeader \? undefined : "true"\}/);
   assert.match(slot, /data-ad-size-policy=\{isFixedHeader \? "fixed-header-v1" : undefined\}/);
   assert.match(slot, /data-ad-fixed-width=\{isFixedHeader \? "728" : undefined\}/);
+  assert.match(slot, /data-ad-flow-version=\{slot\.logicalPlacement === "post-header-banner" \? "balanced-mid-content-v1" : undefined\}/);
   assert.match(slot, /className="ad-slot-fallback" aria-hidden="true" data-ad-fallback="true" hidden/);
   assert.match(slot, /className="ad-slot-fallback-lines"/);
   assert.doesNotMatch(slot, /<a\b|<button\b|tabIndex|fake advertiser|creative|call to action/i);

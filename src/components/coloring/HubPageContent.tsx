@@ -56,7 +56,6 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
         page={page}
         intro={isPageOne ? intro : `Continue browsing ${hub.title.toLowerCase()} with a distinct set of printable pages from this collection.`}
       />
-      <PageAdSlot pageFamily={pageFamily} placement="post-header-banner" />
 
       {isPageOne ? (
         <>
@@ -102,6 +101,8 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
             />
           </section>
 
+          <PageAdSlot pageFamily="hub" placement="post-header-banner" />
+
           {hub.editorial.scope || hub.editorial.distinction || hub.editorial.selectionGuidance ? (
             <section className="content-section hub-editorial-details" aria-labelledby="collection-scope-title" data-page-section="collection-scope">
               <h2 className="section-title" id="collection-scope-title">About this collection</h2>
@@ -110,8 +111,6 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
               {hub.editorial.selectionGuidance ? <p>{hub.editorial.selectionGuidance}</p> : null}
             </section>
           ) : null}
-
-          <PageAdSlot pageFamily="hub" placement="supporting-square" />
 
           {childHubs.length > 0 ? (
             <section className="content-section collection-section" aria-labelledby="narrower-browse-title" data-page-section="narrower-browse">
@@ -127,7 +126,11 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
           ) : null}
 
           <div data-page-section="related-collections">
-            <RelatedHubs title="Related Collections" hubs={relatedHubs} />
+            <RelatedHubs
+              title="Related Collections"
+              hubs={relatedHubs}
+              interstitial={<PageAdSlot pageFamily="hub" placement="supporting-square" />}
+            />
           </div>
         </>
       ) : (
@@ -150,6 +153,8 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
               hasNextPage={pagedGallery.hasNextPage}
             />
           </section>
+
+          <PageAdSlot pageFamily="hub-pagination" placement="post-header-banner" />
 
           <section className="content-section pagination-return" aria-labelledby="return-to-collection-title" data-page-section="return-to-collection">
             <div>

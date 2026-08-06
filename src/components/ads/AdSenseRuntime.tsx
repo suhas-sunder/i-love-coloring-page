@@ -3,9 +3,10 @@
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
-import { getFixedHeaderSize, hasValidAdSenseConfiguration } from "@/lib/ads/config";
+import { getAdInitializationMinimumSize, getAdSlotDefinition, getFixedHeaderSize, hasValidAdSenseConfiguration } from "@/lib/ads/config";
 import { hasVisibleAdSenseOwnedSurface } from "@/lib/ads/creativeEvidence";
 import { evaluateAdSlotEligibility, isAdPageFamily } from "@/lib/ads/eligibility";
+import { hasRequiredAdSurfaceSize } from "@/lib/ads/initializationReadiness";
 import { measureAdRailLayout } from "@/lib/ads/layout";
 import {
   AD_FALLBACK_TIMEOUT_MS,
@@ -25,6 +26,7 @@ const LIVE_UNIT_SELECTOR = ".ad-slot-live-unit";
 const SLOT_WRAPPER_SELECTOR = "[data-ad-fallback-policy='page-all-or-none-v1']";
 const FULL_LAYOUT_SELECTOR = ".public-page-shell[data-ad-layout='full']";
 const NEAR_VIEWPORT_MARGIN_PX = 400;
+const MAX_INITIALIZATION_MEASUREMENT_RETRIES = 8;
 
 declare global {
   interface Window {
@@ -44,7 +46,10 @@ export function AdSenseRuntime({ clientId }: AdSenseRuntimeProps) {
     let scriptListenerCleanup: (() => void) | null = null;
     let scriptEnsuredForLifecycle = false;
     const observedUnits = new Set<HTMLElement>();
+    const observedWrappers = new Set<HTMLElement>();
     const observedFrames = new Set<HTMLIFrameElement>();
+    const initializationRetryCounts = new Map<HTMLElement, number>();
+    const initializationRetryFrames = new Map<HTMLElement, number>();
     const coordinator = createAdPageCoordinator((snapshot) => {
       if (!active) return;
       applyPageState(snapshot.state);
@@ -60,7 +65,20 @@ export function AdSenseRuntime({ clientId }: AdSenseRuntimeProps) {
       { rootMargin: `${NEAR_VIEWPORT_MARGIN_PX}px 0px`, threshold: 0 },
     );
 
-    const resizeObserver = new ResizeObserver(() => scheduleUnitReview());
+    const resizeObserver = new ResizeObserver((entries) => {
+      for (const entry of entries) {
+        const target = entry.target as HTMLElement;
+        const unit = target.matches(LIVE_UNIT_SELECTOR)
+          ? target
+          : target.matches(SLOT_WRAPPER_SELECTOR)
+            ? target.querySelector<HTMLElement>(LIVE_UNIT_SELECTOR)
+            : null;
+        if (unit && unit.dataset.adInitialized !== "true") {
+          initializeUnit(unit, isWithinLoadRange(unit));
+        }
+      }
+      scheduleUnitReview();
+    });
     const structureObserver = new MutationObserver(() => {
       observeUnits();
       scheduleUnitReview();
@@ -95,8 +113,12 @@ export function AdSenseRuntime({ clientId }: AdSenseRuntimeProps) {
       resizeObserver.disconnect();
       if (layoutFrame) cancelAnimationFrame(layoutFrame);
       if (reviewFrame) cancelAnimationFrame(reviewFrame);
+      for (const frame of initializationRetryFrames.values()) cancelAnimationFrame(frame);
       observedUnits.clear();
+      observedWrappers.clear();
       observedFrames.clear();
+      initializationRetryCounts.clear();
+      initializationRetryFrames.clear();
       coordinator.dispose();
       window.removeEventListener("resize", scheduleLayoutSync);
       window.removeEventListener("orientationchange", scheduleLayoutSync);
@@ -112,6 +134,15 @@ export function AdSenseRuntime({ clientId }: AdSenseRuntimeProps) {
         intersectionObserver.unobserve(unit);
         resizeObserver.unobserve(unit);
         observedUnits.delete(unit);
+        initializationRetryCounts.delete(unit);
+        const retryFrame = initializationRetryFrames.get(unit);
+        if (retryFrame) cancelAnimationFrame(retryFrame);
+        initializationRetryFrames.delete(unit);
+      }
+      for (const wrapper of observedWrappers) {
+        if (wrapper.isConnected) continue;
+        resizeObserver.unobserve(wrapper);
+        observedWrappers.delete(wrapper);
       }
       for (const frame of observedFrames) {
         if (frame.isConnected) continue;
@@ -119,14 +150,24 @@ export function AdSenseRuntime({ clientId }: AdSenseRuntimeProps) {
         observedFrames.delete(frame);
       }
       for (const unit of document.querySelectorAll<HTMLElement>(LIVE_UNIT_SELECTOR)) {
+        const wrapper = unit.closest<HTMLElement>(SLOT_WRAPPER_SELECTOR);
         if (!observedUnits.has(unit)) {
           observedUnits.add(unit);
           intersectionObserver.observe(unit);
           resizeObserver.observe(unit);
         }
+        if (wrapper && !observedWrappers.has(wrapper)) {
+          observedWrappers.add(wrapper);
+          resizeObserver.observe(wrapper);
+        }
         observeCreativeFrames(unit);
-        if (unit.dataset.adInitialized === "true") reportUnitState(unit);
-        if (isWithinLoadRange(unit)) initializeUnit(unit, true);
+        if (unit.dataset.adInitialized === "true") {
+          const slotId = wrapper?.dataset.adSlot as AdSlotId | undefined;
+          if (slotId) registerUnitForLifecycle(slotId);
+          reportUnitState(unit);
+        } else if (isWithinLoadRange(unit)) {
+          initializeUnit(unit, true);
+        }
       }
       syncFallbackVisibility();
     }
@@ -138,33 +179,27 @@ export function AdSenseRuntime({ clientId }: AdSenseRuntimeProps) {
       const slotId = slot?.dataset.adSlot as AdSlotId | undefined;
       if (!slot || !slotId || !isAdPageFamily(pageFamily)) return;
 
+      const placement = getAdSlotDefinition(slotId).logicalPlacement;
+      const measurement = readInitializationMeasurement(slot, unit, placement);
+
       const decision = evaluateAdSlotEligibility({
         slotId,
         pageFamily,
         viewportWidth: window.innerWidth,
         configurationValid: hasValidAdSenseConfiguration(),
-        actuallyVisible: isActuallyVisible(slot) && isActuallyVisible(unit),
+        actuallyVisible: measurement.ready,
         nearViewport,
         alreadyInitialized: unit.dataset.adInitialized === "true",
       });
       unit.dataset.adEligibility = decision.reason;
-      if (!decision.eligible) return;
+      if (!decision.eligible) {
+        if (decision.reason === "css-hidden" && measurement.retryable) scheduleInitializationRetry(unit);
+        return;
+      }
 
       unit.dataset.adInitialized = "true";
-      const registered = coordinator.registerUnit(slotId);
-      if (registered && coordinator.getSnapshot().state === "pending") startFallbackTimer();
-      if (!scriptEnsuredForLifecycle) {
-        scriptEnsuredForLifecycle = true;
-        startScriptGraceTimer();
-        scriptListenerCleanup = ensureScript(
-          clientId,
-          () => clearScriptGraceTimer(),
-          () => {
-            clearScriptGraceTimer();
-            if (active) coordinator.reportFailure("script-failure");
-          },
-        );
-      }
+      clearInitializationRetry(unit);
+      registerUnitForLifecycle(slotId);
 
       try {
         (window.adsbygoogle = window.adsbygoogle || []).push({});
@@ -173,6 +208,23 @@ export function AdSenseRuntime({ clientId }: AdSenseRuntimeProps) {
         unit.dataset.adInitializationError = "true";
         coordinator.reportFailure("initialization-failure");
       }
+    }
+
+    function registerUnitForLifecycle(slotId: AdSlotId) {
+      const registered = coordinator.registerUnit(slotId);
+      if (!registered) return;
+      if (coordinator.getSnapshot().state === "pending") startFallbackTimer();
+      if (scriptEnsuredForLifecycle) return;
+      scriptEnsuredForLifecycle = true;
+      startScriptGraceTimer();
+      scriptListenerCleanup = ensureScript(
+        clientId,
+        () => clearScriptGraceTimer(),
+        () => {
+          clearScriptGraceTimer();
+          if (active) coordinator.reportFailure("script-failure");
+        },
+      );
     }
 
     function reportUnitState(unit: HTMLElement) {
@@ -268,6 +320,7 @@ export function AdSenseRuntime({ clientId }: AdSenseRuntimeProps) {
         reviewFrame = 0;
         for (const unit of observedUnits) {
           if (unit.dataset.adInitialized === "true") reportUnitState(unit);
+          else initializeUnit(unit, isWithinLoadRange(unit));
         }
       });
     }
@@ -307,6 +360,52 @@ export function AdSenseRuntime({ clientId }: AdSenseRuntimeProps) {
     function isWithinLoadRange(element: HTMLElement) {
       const rect = element.getBoundingClientRect();
       return rect.bottom >= -NEAR_VIEWPORT_MARGIN_PX && rect.top <= window.innerHeight + NEAR_VIEWPORT_MARGIN_PX;
+    }
+
+    function readInitializationMeasurement(
+      slot: HTMLElement,
+      unit: HTMLElement,
+      placement: ReturnType<typeof getAdSlotDefinition>["logicalPlacement"],
+    ) {
+      const currentWrapper = unit.closest<HTMLElement>(SLOT_WRAPPER_SELECTOR);
+      if (!slot.isConnected || !unit.isConnected || currentWrapper !== slot) {
+        return { ready: false, retryable: false };
+      }
+      if (!hasRenderedClientRect(slot) || !hasRenderedClientRect(unit)) {
+        return { ready: false, retryable: isCssRendered(slot) && isCssRendered(unit) };
+      }
+      const wrapperRect = slot.getBoundingClientRect();
+      const unitRect = unit.getBoundingClientRect();
+      return {
+        ready: isCssRendered(slot)
+          && isCssRendered(unit)
+          && hasRequiredAdSurfaceSize(
+            wrapperRect,
+            unitRect,
+            getAdInitializationMinimumSize(placement, window.innerWidth),
+          ),
+        retryable: isCssRendered(slot) && isCssRendered(unit),
+      };
+    }
+
+    function scheduleInitializationRetry(unit: HTMLElement) {
+      if (!active || unit.dataset.adInitialized === "true" || initializationRetryFrames.has(unit)) return;
+      const attempts = initializationRetryCounts.get(unit) || 0;
+      if (attempts >= MAX_INITIALIZATION_MEASUREMENT_RETRIES) return;
+      initializationRetryCounts.set(unit, attempts + 1);
+      const frame = requestAnimationFrame(() => {
+        initializationRetryFrames.delete(unit);
+        if (!active || !unit.isConnected || unit.dataset.adInitialized === "true") return;
+        initializeUnit(unit, isWithinLoadRange(unit));
+      });
+      initializationRetryFrames.set(unit, frame);
+    }
+
+    function clearInitializationRetry(unit: HTMLElement) {
+      initializationRetryCounts.delete(unit);
+      const frame = initializationRetryFrames.get(unit);
+      if (frame) cancelAnimationFrame(frame);
+      initializationRetryFrames.delete(unit);
     }
   }, [clientId, pathname]);
 
@@ -358,8 +457,21 @@ function hideEveryFallback() {
 }
 
 function isActuallyVisible(element: HTMLElement) {
-  const style = getComputedStyle(element);
-  if (style.display === "none" || style.visibility === "hidden") return false;
+  if (!isCssRendered(element) || !hasRenderedClientRect(element)) return false;
   const rect = element.getBoundingClientRect();
-  return rect.width > 0 && rect.height > 0;
+  return Number.isFinite(rect.width) && Number.isFinite(rect.height) && rect.width > 0 && rect.height > 0;
+}
+
+function isCssRendered(element: HTMLElement) {
+  let current: HTMLElement | null = element;
+  while (current) {
+    const style = getComputedStyle(current);
+    if (style.display === "none" || style.visibility === "hidden" || style.contentVisibility === "hidden") return false;
+    current = current.parentElement;
+  }
+  return true;
+}
+
+function hasRenderedClientRect(element: HTMLElement) {
+  return element.getClientRects().length > 0;
 }

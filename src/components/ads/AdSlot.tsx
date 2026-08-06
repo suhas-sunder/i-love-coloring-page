@@ -32,6 +32,7 @@ export function AdSlot({ slotId, pageFamily, className }: AdSlotProps) {
       data-ad-page-family={pageFamily}
       data-ad-logical-placement={slot.logicalPlacement}
       data-ad-position={positionMarker}
+      data-ad-flow-version={slot.logicalPlacement === "post-header-banner" ? "balanced-mid-content-v1" : undefined}
       data-ad-size-policy={isFixedHeader ? "fixed-header-v1" : undefined}
       data-ad-fixed-width={isFixedHeader ? "728" : undefined}
       data-ad-fixed-height={isFixedHeader ? "90" : undefined}

@@ -541,7 +541,7 @@
 }
 
 .ad-slot-post-header-banner {
-  margin-block: var(--space-32) 0;
+  margin-block: var(--space-32);
 }
 
 .ad-slot-related-banner {
@@ -550,7 +550,12 @@
 
 .ad-slot-supporting-square {
   align-self: start;
-  margin-block: 0;
+  margin-block: var(--space-32);
+}
+
+.ad-slot-post-header-banner + .content-section,
+.ad-slot-supporting-square + .content-section {
+  margin-top: 0;
 }
 
 .ad-slot-desktop-rail {
@@ -611,6 +616,11 @@
 }
 
 @media (min-width: 1024px) {
+  .ad-slot-post-header-banner,
+  .ad-slot-supporting-square {
+    margin-block: var(--space-48);
+  }
+
   .ad-slot-responsive-banner {
     width: min(100%, 728px);
     height: 90px;

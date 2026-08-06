@@ -44,22 +44,22 @@ export const AD_SLOT_DEFINITIONS: Record<AdSlotId, AdSlotDefinition> = {
   "rail-left-desktop": rail("rail-left-desktop", "left-rail", "Wide-desktop left rail outside the main reading and gallery column."),
   "rail-right-desktop": rail("rail-right-desktop", "right-rail", "Wide-desktop right rail outside the main reading and gallery column."),
   "home-header-banner": banner("home-header-banner", "top-banner", ["home"], "Homepage responsive banner below the global header and above the hero."),
-  "home-after-hero": banner("home-after-hero", "post-header-banner", ["home"], "Homepage responsive banner after the complete hero block."),
+  "home-after-hero": banner("home-after-hero", "post-header-banner", ["home"], "Homepage responsive banner after the complete primary-collections section."),
   "home-lower-content": banner("home-lower-content", "related-banner", ["home"], "Homepage responsive banner after the final broader-browsing region."),
   "coloring-pages-header-banner": banner("coloring-pages-header-banner", "top-banner", ["gallery", "gallery-pagination"], "Gallery responsive banner below the global header and above the heading."),
-  "coloring-pages-after-featured": banner("coloring-pages-after-featured", "post-header-banner", ["gallery", "gallery-pagination"], "Gallery responsive banner after breadcrumbs, H1, and the concise introduction."),
+  "coloring-pages-after-featured": banner("coloring-pages-after-featured", "post-header-banner", ["gallery", "gallery-pagination"], "Gallery responsive banner after the initial searchable gallery results."),
   "coloring-pages-lower-content": banner("coloring-pages-lower-content", "related-banner", ["gallery", "gallery-pagination"], "Gallery responsive banner after supporting browse and information content."),
   "hub-header-banner": banner("hub-header-banner", "top-banner", ["hub", "hub-pagination"], "Hub responsive banner below the global header and above the collection heading."),
   "hub-after-gallery": banner("hub-after-gallery", "related-banner", ["hub-pagination"], "Paginated hub banner after the concise return-to-collection region."),
   "hub-lower-content": banner("hub-lower-content", "related-banner", ["hub"], "Hub page-one banner after related and supporting content.", true),
   "printable-header-banner": banner("printable-header-banner", "top-banner", ["printable"], "Printable responsive banner below the global header and before breadcrumbs."),
-  "printable-after-related": banner("printable-after-related", "related-banner", ["printable"], "Printable responsive banner immediately after related printable cards."),
+  "printable-after-related": banner("printable-after-related", "related-banner", ["printable"], "Printable lower banner after related printable and collection content."),
   "home-supporting-square": square("home-supporting-square", ["home"], "Homepage square allocation inside the compact supporting information section."),
   "coloring-pages-supporting-square": square("coloring-pages-supporting-square", ["gallery"], "Gallery square allocation inside the compact information section."),
-  "hub-post-header-banner": banner("hub-post-header-banner", "post-header-banner", ["hub", "hub-pagination"], "Hub responsive banner after the complete collection heading block."),
-  "hub-supporting-square": square("hub-supporting-square", ["hub"], "Hub page-one square allocation inside the supporting information section."),
-  "printable-post-header-banner": banner("printable-post-header-banner", "post-header-banner", ["printable"], "Printable responsive banner after breadcrumbs, H1, and the purpose sentence."),
-  "printable-supporting-square": square("printable-supporting-square", ["printable"], "Printable square allocation beside printing guidance."),
+  "hub-post-header-banner": banner("hub-post-header-banner", "post-header-banner", ["hub", "hub-pagination"], "Hub responsive banner after the initial gallery results and pagination controls."),
+  "hub-supporting-square": square("hub-supporting-square", ["hub"], "Hub page-one square allocation between two related-collection groups."),
+  "printable-post-header-banner": banner("printable-post-header-banner", "post-header-banner", ["printable"], "Printable responsive banner after the complete artwork and action workspace."),
+  "printable-supporting-square": square("printable-supporting-square", ["printable"], "Printable square allocation after related printable cards and before related collections."),
   "trust-header-banner": banner("trust-header-banner", "top-banner", ["trust"], "Reduced trust-page banner below the global header."),
   "sitemap-header-banner": banner("sitemap-header-banner", "top-banner", ["html-sitemap"], "Reduced human-sitemap banner below the global header."),
 };
@@ -151,6 +151,15 @@ export function getFixedHeaderSize(viewportWidth: number) {
   if (viewportWidth <= AD_BREAKPOINTS.mobileMaxWidth) return AD_FIXED_HEADER_SIZES.mobile;
   if (viewportWidth <= AD_BREAKPOINTS.tabletMaxWidth) return AD_FIXED_HEADER_SIZES.tablet;
   return AD_FIXED_HEADER_SIZES.desktop;
+}
+
+export function getAdInitializationMinimumSize(placement: AdLogicalPlacement, viewportWidth: number) {
+  if (placement === "top-banner") return { ...getFixedHeaderSize(viewportWidth), exact: true } as const;
+  if (placement === "left-rail" || placement === "right-rail") {
+    return { width: 300, height: 600, exact: true } as const;
+  }
+  if (placement === "supporting-square") return { width: 250, height: 250, exact: false } as const;
+  return { width: 250, height: 50, exact: false } as const;
 }
 
 export function getAdSlotForPlacement(pageFamily: AdPageFamily, placement: AdLogicalPlacement) {

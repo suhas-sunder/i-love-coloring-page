@@ -39,7 +39,6 @@ export default function ColoringPagesLanding() {
       />
 
       <CollectionPageHeader hub={rootHub} title="Printable Coloring Pages" intro={intro} />
-      <PageAdSlot pageFamily="gallery" placement="post-header-banner" />
 
       <section className="content-section gallery-section" id="gallery" aria-labelledby="gallery-title" data-page-section="gallery">
         <div className="section-heading-row gallery-heading-row">
@@ -56,7 +55,7 @@ export default function ColoringPagesLanding() {
         />
       </section>
 
-      <PageAdSlot pageFamily="gallery" placement="supporting-square" />
+      <PageAdSlot pageFamily="gallery" placement="post-header-banner" />
 
       <section className="content-section collection-section" aria-labelledby="browse-collections-title" data-page-section="supporting-browse">
         <div className="section-heading-row">
@@ -66,7 +65,11 @@ export default function ColoringPagesLanding() {
           </div>
         </div>
         <div className="hub-link-grid">
-          {supportingHubs.map((hub) => <HubCard key={hub!.hubId} hub={hub!} />)}
+          {supportingHubs.slice(0, 4).map((hub) => <HubCard key={hub!.hubId} hub={hub!} />)}
+        </div>
+        <PageAdSlot pageFamily="gallery" placement="supporting-square" />
+        <div className="hub-link-grid">
+          {supportingHubs.slice(4).map((hub) => <HubCard key={hub!.hubId} hub={hub!} />)}
         </div>
       </section>
 

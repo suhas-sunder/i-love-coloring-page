@@ -10,8 +10,8 @@ test("homepage layout follows the approved image-first section order", async () 
   const source = await readText("app/page.tsx");
   assertOrder(source, [
     "<header className=\"home-hero\"",
-    "placement=\"post-header-banner\"",
     "data-page-section=\"primary-collections\"",
+    "placement=\"post-header-banner\"",
     "data-page-section=\"fresh-printables\"",
     "data-page-section=\"additional-discovery\"",
     "data-page-section=\"related-browse\"",
@@ -38,10 +38,11 @@ test("main gallery layout keeps controls next to the canonical gallery", async (
   const source = await readText("app/coloring-pages/page.tsx");
   assertOrder(source, [
     "<CollectionPageHeader",
-    "placement=\"post-header-banner\"",
     "data-page-section=\"gallery\"",
     "<GallerySearch",
+    "placement=\"post-header-banner\"",
     "data-page-section=\"supporting-browse\"",
+    "placement=\"supporting-square\"",
     "placement=\"related-banner\"",
   ]);
   assert.match(source, /title="Printable Coloring Pages"/);
@@ -61,12 +62,13 @@ test("hub page-one layout has one related region and bounded featured printables
   const source = await readText("src/components/coloring/HubPageContent.tsx");
   assertOrder(source, [
     "<CollectionPageHeader",
-    "placement=\"post-header-banner\"",
     "data-page-section=\"featured-printables\"",
     "<GallerySearch",
+    "placement=\"post-header-banner\"",
     "data-page-section=\"collection-scope\"",
     "data-page-section=\"narrower-browse\"",
     "data-page-section=\"related-collections\"",
+    "placement=\"supporting-square\"",
     "placement=\"related-banner\"",
   ]);
   assert.match(source, /getGeneratedFeaturedItems\(hub\)\.slice\(0, 8\)/);
@@ -86,6 +88,7 @@ test("hub pagination uses the materially condensed template", async () => {
   assert.match(source, /const pageFamily = isPageOne \? "hub" : "hub-pagination"/);
   assert.match(branch, /<PaginatedGalleryGrid items=\{pagedGallery\.items\}/);
   assert.match(branch, /<Pagination/);
+  assertOrder(branch, ["<PaginatedGalleryGrid", "placement=\"post-header-banner\"", "data-page-section=\"return-to-collection\""]);
   assert.match(branch, /data-page-section="return-to-collection"/);
   assert.doesNotMatch(branch, /GallerySearch|RotatingFeaturedGrid|SupportingInformation|RelatedHubs|supporting-square/);
   const heading = await readText("src/components/coloring/CollectionPageHeader.tsx");
@@ -97,12 +100,12 @@ test("printable detail protects preview actions and aligns the standard placemen
   assertOrder(source, [
     "<Breadcrumbs",
     "<header className=\"printable-heading\"",
-    "placement=\"post-header-banner\"",
     "data-page-section=\"printable-main\"",
     "<PrintableDetailActions",
+    "placement=\"post-header-banner\"",
     "Related printable pages",
-    "Related Collections",
     "placement=\"supporting-square\"",
+    "Related Collections",
     "placement=\"related-banner\"",
   ]);
   const mainStart = source.indexOf("<section className=\"printable-main\"");

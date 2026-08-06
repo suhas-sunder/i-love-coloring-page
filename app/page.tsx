@@ -49,8 +49,6 @@ export default function HomePage() {
         </div>
       </header>
 
-      <PageAdSlot pageFamily="home" placement="post-header-banner" />
-
       <section className="content-section collection-section" id="primary-collections" aria-labelledby="primary-collections-title" data-page-section="primary-collections">
         <div className="section-heading-row">
           <div>
@@ -62,6 +60,8 @@ export default function HomePage() {
           {primaryHubs.map((hub) => <HubCard key={hub.hubId} hub={hub} previewItem={getPreviewItems(hub)[0] || null} />)}
         </div>
       </section>
+
+      <PageAdSlot pageFamily="home" placement="post-header-banner" />
 
       <section className="content-section section-band featured-band" aria-labelledby="fresh-pages" data-page-section="fresh-printables">
         <div className="section-inner">

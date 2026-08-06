@@ -31,6 +31,15 @@ for (const entry of cases) {
   const allSlotValues = [...html.matchAll(/data-ad-slot="([^"]+)"/g)].map((match) => match[1]);
   const slots = allSlotValues.filter((slotId) => !/^\d{10}$/.test(slotId));
   const liveUnits = allSlotValues.filter((slotId) => /^\d{10}$/.test(slotId));
+  const meaningfulSectionMarker = {
+    homepage: 'data-page-section="primary-collections"',
+    gallery: 'data-page-section="gallery"',
+    largeHub: 'data-page-section="gallery"',
+    smallHub: 'data-page-section="gallery"',
+    hubPagination: 'data-page-section="paginated-gallery"',
+    printable: 'data-page-section="printable-main"',
+  }[entry.name];
+  const secondaryFlowIndex = html.indexOf('data-ad-flow-version="balanced-mid-content-v1"');
   entry.checks = {
     oneH1: (html.match(/<h1\b/g) || []).length === 1,
     uniqueIds: ids.length === new Set(ids).size,
@@ -38,6 +47,11 @@ for (const entry of cases) {
     expectedSlotCount: slots.length === entry.expectedSlotCount,
     uniqueSlots: slots.length === new Set(slots).size,
     topBeforeH1: entry.expectedSlotCount === 0 || html.indexOf('data-ad-logical-placement="top-banner"') < html.indexOf("<h1"),
+    balancedFlowMarker: entry.expectedSlotCount === 0
+      ? secondaryFlowIndex === -1
+      : (html.match(/data-ad-flow-version="balanced-mid-content-v1"/g) || []).length === 1,
+    secondaryAfterMeaningfulContent: entry.expectedSlotCount === 0
+      || (Boolean(meaningfulSectionMarker) && secondaryFlowIndex > html.indexOf(meaningfulSectionMarker)),
     correctAdvertisingArchitecture: entry.expectedSlotCount === 0
       ? !/data-ad-fallback-policy=|data-ad-client=|data-ad-fallback=/i.test(html)
       : slots.length > 0 && liveUnits.length === slots.length
@@ -58,14 +72,19 @@ for (const entry of cases) {
   }
   if (entry.name === "printable") {
     const mainStart = html.indexOf('data-page-section="printable-main"');
+    const secondaryMarker = html.indexOf('data-ad-flow-version="balanced-mid-content-v1"', mainStart);
+    const mainEnd = html.lastIndexOf('<div class="ad-slot', secondaryMarker);
     const relatedStart = html.indexOf("Related printable pages", mainStart);
-    const mainRegion = html.slice(mainStart, relatedStart);
+    const mainRegion = html.slice(mainStart, mainEnd);
     Object.assign(entry.checks, {
       previewActionsTogether: mainStart >= 0
         && mainRegion.includes(">Print<")
         && mainRegion.includes(">Download PDF<")
         && mainRegion.includes(">Download image<"),
       noAdInsidePreviewActions: !mainRegion.includes("data-ad-fallback"),
+      defaultOnlyPrintableExperience:
+        (html.match(/data-printable-experience-version="default-only-v2"/g) || []).length === 1
+        && !html.includes('data-printable-settings-version="paper-controls-v1"'),
       relatedBannerAfterCards:
         html.indexOf('data-ad-logical-placement="related-banner"') > html.indexOf("Related printable pages"),
     });

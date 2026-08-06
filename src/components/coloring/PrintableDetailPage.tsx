@@ -42,8 +42,6 @@ export function PrintableDetailPage({ printable }: { printable: RuntimePrintable
         {summary ? <p>{summary}</p> : null}
       </header>
 
-      <PageAdSlot pageFamily="printable" placement="post-header-banner" />
-
       <section
         className="printable-main"
         aria-label={`${displayTitle} preview and actions`}
@@ -87,6 +85,8 @@ export function PrintableDetailPage({ printable }: { printable: RuntimePrintable
         </aside>
       </section>
 
+      <PageAdSlot pageFamily="printable" placement="post-header-banner" />
+
       <section className="content-section printable-related-section" aria-labelledby="related-printables-title">
         <div className="section-heading-row">
           <div><h2 className="section-title" id="related-printables-title">Related printable pages</h2><p>Browse more coloring pages closely connected to this printable.</p></div>
@@ -94,6 +94,8 @@ export function PrintableDetailPage({ printable }: { printable: RuntimePrintable
         </div>
         <GalleryGrid items={relatedItems} priorityCount={0} showPrintActions={false} />
       </section>
+
+      <PageAdSlot pageFamily="printable" placement="supporting-square" />
 
       {relatedHubs.length > 0 ? (
         <section className="content-section" aria-labelledby="related-collections-title" data-page-section="related-collections">
@@ -104,7 +106,6 @@ export function PrintableDetailPage({ printable }: { printable: RuntimePrintable
         </section>
       ) : null}
 
-      <PageAdSlot pageFamily="printable" placement="supporting-square" />
       <PageAdSlot pageFamily="printable" placement="related-banner" />
 
     </PublicPageShell>
