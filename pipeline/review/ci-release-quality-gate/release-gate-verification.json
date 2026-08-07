@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "recordedAtUtc": "2026-08-07T05:10:41Z",
+  "startingState": {
+    "branch": "main",
+    "head": "2b4445f1d616384e5b68b41ff24cf4d5c21dbd4a",
+    "upstream": "origin/main",
+    "clean": true,
+    "divergence": [0, 0]
+  },
+  "workflow": {
+    "path": ".github/workflows/release-quality-gate.yml",
+    "name": "Release Quality Gate",
+    "jobName": "Deterministic release verification",
+    "nodeMajor": 22,
+    "runner": "ubuntu-24.04",
+    "permissions": "contents: read",
+    "timeoutMinutes": 35,
+    "authoritativeCommand": "npm run verify:release"
+  },
+  "localFinal": {
+    "command": "npm run verify:release -- --allow-dirty",
+    "conclusion": "success",
+    "totalSeconds": 921.639,
+    "stages": {
+      "preflight": 0.345,
+      "typecheck": 9.645,
+      "build": 439.791,
+      "tests": 319.05,
+      "staticRoutes": 0.502,
+      "accessibility": 0.398,
+      "crawl": 6.834,
+      "internalLinks": 81.73,
+      "imageSitemap": 0.319,
+      "exportSafety": 39.256,
+      "pageLayout": 0.434,
+      "refinement": 0.264,
+      "punctuation": 10.085,
+      "performanceBudgets": 0.737,
+      "clientBundle": 1.979,
+      "technicalReadiness": 2.839,
+      "historicalPayloadDiagnostic": 3.88,
+      "externalReadinessDiagnostic": 2.896,
+      "protectedContracts": 0.211,
+      "generatedCleanliness": 0.442
+    },
+    "diagnosticExitCodes": {
+      "historicalPayload": 1,
+      "externalOwnerReadiness": 1
+    },
+    "focusedReleaseTests": { "passed": 16, "failed": 0 },
+    "focusedTrustTests": { "passed": 12, "failed": 0 },
+    "fullTests": { "passed": 237, "failed": 0 },
+    "staticOutputs": 6920,
+    "protectedPrintables": 6352,
+    "protectedHash": "4fc394e39aa4d8e2b0e2e96ebbc586d00c91e5e18479748b72dbb6075e77bed6",
+    "defaultPdfBytes": 613584,
+    "defaultPdfSha256": "8bab1edb0e18f90800974c16be753d2448a20c6b0a104fbc92e7df774ec82bca"
+  },
+  "ciRuns": [
+    {
+      "id": 31144513920,
+      "head": "cf2e138290857705d5680b8ef2ee4319096f660e",
+      "conclusion": "failure",
+      "finding": "Ignored local media bundle was absent and broken-image accounting treated 281 unmeasured URLs as failures.",
+      "correction": "Authoritative public URL validation plus compact exact-byte eager-image fixture."
+    },
+    {
+      "id": 31146115519,
+      "head": "f583b9d76655d9448243475169ce22c1beb7a212",
+      "conclusion": "failure",
+      "finding": "All substantive stages passed; cleanliness found one platform-derived staticJavascriptBytes line.",
+      "correction": "Removed the volatile aggregate and added a regression assertion."
+    },
+    {
+      "id": 31147671350,
+      "head": "76ebd9d8d5db73dccdd116cb1dfb410c2d247a58",
+      "conclusion": "failure",
+      "finding": "All substantive stages passed; cleanliness found one platform-derived totalBytes line.",
+      "correction": "Removed the volatile whole-export total and added a regression assertion."
+    },
+    {
+      "id": 31149149648,
+      "url": "https://github.com/suhas-sunder/i-love-coloring-page/actions/runs/31149149648",
+      "head": "10c568e2eef07de1257c598540484b863461d944",
+      "event": "push",
+      "conclusion": "success",
+      "startedAtUtc": "2026-08-07T04:59:49Z",
+      "completedAtUtc": "2026-08-07T05:09:57Z",
+      "jobSeconds": 608,
+      "gateSeconds": 583.763,
+      "stepSeconds": {
+        "checkout": 6,
+        "setupNode": 1,
+        "npmCi": 11,
+        "build": 146.396,
+        "tests": 329.859,
+        "internalLinks": 61.961,
+        "exportSafety": 12.667,
+        "generatedCleanliness": 0.237
+      }
+    }
+  ],
+  "deployment": {
+    "pushAtUtc": "2026-08-07T04:59:47Z",
+    "polls": [
+      { "atUtc": "2026-08-07T05:03:17Z", "revision": "76ebd9d8d5db73dccdd116cb1dfb410c2d247a58" },
+      { "atUtc": "2026-08-07T05:04:34Z", "revision": "10c568e2eef07de1257c598540484b863461d944" }
+    ],
+    "publishedAfterSeconds": 287,
+    "runtimeDataSha256": "d916a37223dc9bcf329c599402302146ef1726561fa5029066766f627f6da5b9"
+  },
+  "productionSmoke": {
+    "checkedAtUtc": "2026-08-07T05:05:55Z",
+    "routes": {
+      "/": 200,
+      "/coloring-pages/animals": 200,
+      "/printables/animals/animals-alligator-4feec8505a": 200,
+      "/privacy": 200,
+      "/ads.txt": 200,
+      "/sitemap.xml": 200,
+      "/image-sitemap.xml": 200
+    },
+    "adsTxtExact": true,
+    "privacyAdLayoutWrappers": 0,
+    "browser": {
+      "engineCoverage": "single in-app Chromium session",
+      "route": "/coloring-pages/animals",
+      "visibleH1Count": 1,
+      "mainCount": 1,
+      "horizontalOverflow": false,
+      "centralAdScriptCount": 1,
+      "eligibleAdUnitCountAtMeasuredLayout": 6,
+      "consoleErrorCount": 0,
+      "adClicked": false
+    }
+  }
+}
