@@ -126,10 +126,11 @@ function buildHubCollectionJsonLd(options: {
 }
 
 function getBreadcrumbEntries(hub: ColoringHub, currentPath: string, page: number): BreadcrumbEntry[] {
-  const crumbs = hub.breadcrumbPath.map((entry) => ({
+  const crumbs: BreadcrumbEntry[] = [{ name: "Home", path: "/" }];
+  crumbs.push(...hub.breadcrumbPath.map((entry) => ({
     name: entry.label,
     path: entry.route || hub.route,
-  }));
+  })));
 
   if (page > 1 && !crumbs.some((entry) => entry.path === currentPath)) {
     crumbs.push({ name: `Page ${page}`, path: currentPath });
