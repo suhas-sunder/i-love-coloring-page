@@ -127,6 +127,7 @@ async function inspectBrowser(browser, browserId, baseUrl, reviewDir) {
           if (message.type() !== "error") return;
           const text = message.text();
           if (/googlesyndication|doubleclick|ERR_BLOCKED_BY_CLIENT|404 \(Not Found\)/i.test(text)) return;
+          if (routeId === "404" && /Failed to load resource:.*404/i.test(text)) return;
           consoleErrors.push(text);
         });
         try {
