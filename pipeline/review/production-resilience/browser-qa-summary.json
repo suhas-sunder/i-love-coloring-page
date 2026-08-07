@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "measuredAt": "2026-08-07T17:43:34.197Z",
+  "browsers": [
+    { "name": "Chrome", "version": "151.0.7922.76", "engine": "Chromium" },
+    { "name": "Edge", "version": "151.0.4129.72", "engine": "Chromium" }
+  ],
+  "widths": [320, 390, 768, 1024, 1440, 1920, 2400, 3440],
+  "routes": [
+    "/",
+    "/coloring-pages",
+    "/coloring-pages/animals",
+    "/coloring-pages/christmas",
+    "/coloring-pages/lotus",
+    "/coloring-pages/plushies/page/36",
+    "/printables/animals/animals-alligator-4feec8505a",
+    "/privacy",
+    "/sitemap",
+    "/resilience-missing-route"
+  ],
+  "normalChecks": 160,
+  "normalFailures": 0,
+  "javascriptDisabledChecks": 16,
+  "javascriptDisabledFailures": 0,
+  "maximumLayoutShift": 0.08772136688232421,
+  "maximumLongTaskMs": 65,
+  "horizontalOverflowFailures": 0,
+  "passed": true,
+  "limitations": [
+    "Chrome and Edge are both Chromium-based coverage.",
+    "Firefox, Playwright WebKit, Safari/iOS, screen readers, physical devices, native print dialogs, and physical printers remain manual."
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "deployment": {
+    "implementationPushUtc": "2026-08-07T17:46:43.721Z",
+    "polls": [
+      { "timestamp": "2026-08-07T17:50:09.083Z", "status": 200, "marker": false },
+      { "timestamp": "2026-08-07T17:51:21.991Z", "status": 200, "marker": false },
+      { "timestamp": "2026-08-07T17:52:31.327Z", "status": 200, "marker": true }
+    ],
+    "firstMarkerUtc": "2026-08-07T17:52:31.327Z",
+    "deploymentWaitSeconds": 347.606,
+    "marker": "data-resilience-version=\"failure-hardening-v1\""
+  },
+  "http": {
+    "checkedAt": "2026-08-07T17:59:28.258Z",
+    "routes": [
+      { "route": "/", "status": 200, "marker": true },
+      { "route": "/coloring-pages/animals", "status": 200, "marker": true },
+      { "route": "/coloring-pages/plushies/page/36", "status": 200, "marker": false, "reason": "non-full paginated shell" },
+      { "route": "/printables/animals/animals-alligator-4feec8505a", "status": 200, "marker": true },
+      { "route": "/privacy", "status": 200, "marker": false, "reason": "utility/trust shell" },
+      { "route": "/sitemap", "status": 200, "marker": false, "reason": "utility shell" },
+      { "route": "/resilience-missing-route-404", "status": 404, "marker": false, "robots": "noindex" }
+    ]
+  },
+  "printable": {
+    "checkedAt": "2026-08-07T17:59:10.453Z",
+    "browser": "Chrome 151.0.7922.76",
+    "route": "/printables/animals/animals-alligator-4feec8505a",
+    "pdf": { "filename": "animals-alligator.pdf", "bytes": 613584, "sha256": "8bab1edb0e18f90800974c16be753d2448a20c6b0a104fbc92e7df774ec82bca", "pageCount": 1, "mediaBox": "0 0 612 792", "filter": "/FlateDecode" },
+    "png": { "filename": "animals-alligator.png", "bytes": 1404823, "width": 2550, "height": 3300 },
+    "jpg": { "filename": "animals-alligator.jpg", "bytes": 1238249, "width": 2550, "height": 3300 },
+    "webp": { "filename": "animals-alligator.webp", "bytes": 389232, "width": 1600, "height": 2400, "artworkOnly": true },
+    "printAvailable": true,
+    "temporaryAnchors": 0,
+    "temporaryFrames": 0,
+    "applicationPageErrors": 0,
+    "note": "Ad requests were blocked for this export-only capture to avoid additional ad impressions; the sole console resource error was the deliberate block."
+  },
+  "adClicked": false
+}

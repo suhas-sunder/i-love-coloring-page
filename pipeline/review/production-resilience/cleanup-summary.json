@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "passed": true,
+  "results": {
+    "failedPdfDownload": { "temporaryAnchors": 0, "activeObjectUrls": 0 },
+    "failedPngDownload": { "temporaryAnchors": 0, "activeObjectUrls": 0 },
+    "failedJpgDownload": { "temporaryAnchors": 0, "activeObjectUrls": 0 },
+    "failedPrintHandoff": { "temporaryFrames": 0, "activeObjectUrls": 0 },
+    "rapidPdfActivation": { "activations": 5, "deferredRuntimeRequests": 1, "temporaryAnchors": 0 },
+    "routeChange": { "operationAborted": true, "staleStatus": false },
+    "productionSuccessPath": { "temporaryAnchors": 0, "temporaryFrames": 0 }
+  },
+  "lifecycleContracts": [
+    "Abort listeners are removed when image and print work settles.",
+    "Print iframe load, error, timeout, abort, and delayed cleanup timers are bounded.",
+    "Temporary download anchors are removed in finally blocks.",
+    "Object URLs are revoked immediately on failed initiation and on the established delayed successful-download lifecycle.",
+    "Existing ad IntersectionObserver, ResizeObserver, orientation, animation-frame, and timeout cleanup remained unchanged and passing."
+  ],
+  "heapClaim": "No precise browser heap-retention claim is made."
+}

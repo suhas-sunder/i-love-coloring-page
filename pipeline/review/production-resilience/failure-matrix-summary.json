@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "measuredAt": "2026-08-07T17:43:34.197Z",
+  "implementationCommit": "faaca3220c49e5ffaa94e6df57cbc5b33ee52a33",
+  "passed": true,
+  "scenarios": {
+    "javascriptDisabled": { "checks": 16, "failures": 0 },
+    "deferredRuntimeBlocked": ["pdf", "png", "jpg"],
+    "generationExceptions": ["pdf", "png", "jpg", "object-url", "print-handoff"],
+    "rapidActivation": { "calls": 5, "runtimeRequests": 1, "temporaryAnchors": 0 },
+    "routeChangeDuringExport": { "staleStatus": false, "destinationH1Count": 1 },
+    "brokenArtwork": { "fallbacks": 8, "canonicalMediaLinks": 96, "canonicalTitleLinks": 48 },
+    "slowArtwork": { "reservedWidth": 149, "reservedHeight": 223.5, "cls": 0.041894898504273505 },
+    "searchEdgeQueries": 9,
+    "invalidRoutes": { "checks": 5, "http404": 5, "adWrappers": 0, "robots": "noindex" },
+    "longSession": { "routeChecks": 24, "applicationErrors": 0 },
+    "advertisingRegression": "existing blocked, zero-width, resize, unfilled, late-fill, and stale-route tests passed"
+  },
+  "notes": [
+    "All injected failures were local-only and used no production query switch.",
+    "Expected aborted intercepted requests are retained as diagnostics and are not application errors."
+  ]
+}

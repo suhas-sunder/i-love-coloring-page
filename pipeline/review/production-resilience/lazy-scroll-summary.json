@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "local": [
+    { "route": "/", "images": 20, "lazy": 14, "broken": 0, "missingSource": 0 },
+    { "route": "/coloring-pages", "images": 56, "lazy": 52, "broken": 0, "missingSource": 0 },
+    { "route": "/coloring-pages/animals", "images": 71, "lazy": 69, "broken": 0, "missingSource": 0 },
+    { "route": "/coloring-pages/christmas", "images": 66, "lazy": 64, "broken": 0, "missingSource": 0 },
+    { "route": "/coloring-pages/plushies/page/36", "images": 24, "lazy": 20, "broken": 0, "missingSource": 0 }
+  ],
+  "production": {
+    "measuredAt": "2026-08-07T17:53:00Z",
+    "route": "/coloring-pages/animals",
+    "viewport": { "width": 1280, "height": 720 },
+    "images": 71,
+    "complete": 71,
+    "lazy": 69,
+    "broken": 0,
+    "missingSource": 0,
+    "horizontalOverflowPx": 0,
+    "scrollHeightPx": 12290
+  },
+  "passed": true
+}
