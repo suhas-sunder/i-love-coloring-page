@@ -13,7 +13,7 @@ import {
 const ROOT = process.cwd();
 
 test("representative static routes pass measured first-party payload and image budgets", () => {
-  const snapshot = collectPerformanceAccessibilitySnapshot(ROOT, { label: "test" });
+  const snapshot = collectPerformanceAccessibilitySnapshot(ROOT, { label: "test", forceTrackedImageFixture: true });
   assert.equal(snapshot.passedMeasuredBudgets, true, JSON.stringify(snapshot.budgetResults.filter((entry) => !entry.passed), null, 2));
   for (const route of snapshot.routes.filter((entry) => entry.family === "gallery")) {
     assert.ok(route.javascriptGzipBytes <= PERFORMANCE_BUDGETS.galleryJavaScriptGzipBytes, route.route);
@@ -34,6 +34,8 @@ test("representative static routes pass measured first-party payload and image b
   const printable = snapshot.routes.find((route) => route.family === "printable");
   assert.ok(printable.javascriptGzipBytes <= PERFORMANCE_BUDGETS.printableJavaScriptGzipBytes);
   assert.equal(snapshot.routes.reduce((sum, route) => sum + route.brokenPublicImageCount, 0), 0);
+  assert.equal(snapshot.routes.reduce((sum, route) => sum + route.unmeasuredInitialImageCount, 0), 0);
+  assert.ok(snapshot.routes.flatMap((route) => route.initialImages).every((image) => image.hasMeasuredBytes));
   assert.ok(snapshot.pdf.maxBytes <= PERFORMANCE_BUDGETS.printablePdfBytes);
 });
 

@@ -32,11 +32,12 @@ export const REPRESENTATIVE_ROUTES = Object.freeze([
   { id: "not-found", route: "/404", output: "404.html", family: "not-found" },
 ]);
 
-export function collectPerformanceAccessibilitySnapshot(root, { label = "snapshot" } = {}) {
+export function collectPerformanceAccessibilitySnapshot(root, { label = "snapshot", forceTrackedImageFixture = false } = {}) {
   const outDir = path.join(root, "out");
   if (!existsSync(outDir)) throw new Error("out/ does not exist; run a production build before measuring.");
 
-  const routes = REPRESENTATIVE_ROUTES.map((definition) => measureRoute(root, outDir, definition));
+  const publicImageCatalog = readPublicImageCatalog(root, { ignoreLocalBundle: forceTrackedImageFixture });
+  const routes = REPRESENTATIVE_ROUTES.map((definition) => measureRoute(root, outDir, definition, publicImageCatalog));
   const sharedCssAssets = unique(routes.flatMap((route) => route.cssAssets));
   const sharedCss = measureLocalAssets(outDir, sharedCssAssets);
   const pdf = readPdfEvidence(root);
@@ -57,6 +58,7 @@ export function collectPerformanceAccessibilitySnapshot(root, { label = "snapsho
     ]),
     budget("representative-pdf", pdf.maxBytes, PERFORMANCE_BUDGETS.printablePdfBytes, "bytes"),
     budget("broken-public-images", routes.reduce((sum, route) => sum + route.brokenPublicImageCount, 0), PERFORMANCE_BUDGETS.brokenPublicImages, "count"),
+    budget("unmeasured-initial-images", routes.reduce((sum, route) => sum + route.unmeasuredInitialImageCount, 0), 0, "count"),
   ];
 
   return {
@@ -129,7 +131,7 @@ export function auditAccessibilitySource(root) {
   };
 }
 
-function measureRoute(root, outDir, definition) {
+function measureRoute(root, outDir, definition, publicImageCatalog) {
   const absoluteHtml = path.join(outDir, definition.output);
   if (!existsSync(absoluteHtml)) throw new Error(`${definition.route}: missing ${definition.output}`);
   const htmlBuffer = readFileSync(absoluteHtml);
@@ -142,8 +144,8 @@ function measureRoute(root, outDir, definition) {
   const fonts = measureLocalAssets(outDir, fontAssets, { gzip: false });
   const imageTags = [...html.matchAll(/<img\b[^>]*>/gi)].map((match) => match[0]);
   const eagerImages = imageTags.filter((tag) => /\bloading="eager"/.test(tag) || /\bdata-priority="true"/.test(tag));
-  const initialImageMeasurements = eagerImages.map((tag) => measurePublicImage(root, attribute(tag, "src"))).filter(Boolean);
-  const allImageMeasurements = imageTags.map((tag) => measurePublicImage(root, attribute(tag, "src"))).filter(Boolean);
+  const initialImageMeasurements = eagerImages.map((tag) => measurePublicImage(root, attribute(tag, "src"), publicImageCatalog)).filter(Boolean);
+  const allImageMeasurements = imageTags.map((tag) => measurePublicImage(root, attribute(tag, "src"), publicImageCatalog)).filter(Boolean);
   const ids = [...html.matchAll(/\sid="([^"]+)"/g)].map((match) => match[1]);
   const headings = [...html.matchAll(/<h([1-6])\b[^>]*>/gi)].map((match) => Number(match[1]));
   const imageElements = [...html.matchAll(/<img\b[^>]*>/gi)].map((match) => match[0]);
@@ -167,6 +169,7 @@ function measureRoute(root, outDir, definition) {
     initialImages: initialImageMeasurements,
     totalImageElementCount: imageElements.length,
     brokenPublicImageCount: allImageMeasurements.filter((entry) => !entry.exists).length,
+    unmeasuredInitialImageCount: initialImageMeasurements.filter((entry) => !entry.hasMeasuredBytes).length,
     firstPartyRequestCount: 1 + scriptAssets.length + cssAssets.length + fontAssets.length + initialImageMeasurements.length,
     estimatedFirstPartyTransferBytes:
       htmlGzipBytes + scripts.gzipBytes + css.gzipBytes + fonts.rawBytes + sum(initialImageMeasurements.map((entry) => entry.bytes)),
@@ -205,18 +208,45 @@ function measureLocalAssets(outDir, urls, { gzip = true } = {}) {
   return { assets, rawBytes: sum(assets.map((asset) => asset.bytes)), gzipBytes: sum(assets.map((asset) => asset.gzipBytes)) };
 }
 
-function measurePublicImage(root, url) {
+function measurePublicImage(root, url, publicImageCatalog) {
   if (!url || !/^https:\/\/assets\.ilovecoloringpage\.com\/coloring-pages\//.test(url)) return null;
   const pathname = new URL(url).pathname.replace(/^\//, "");
   const preferred = path.join(root, "pipeline", "r2-upload-optimized", ...pathname.split("/"));
   const fallback = path.join(root, "pipeline", "r2-upload-clean", ...pathname.split("/"));
   const absolutePath = existsSync(preferred) ? preferred : fallback;
+  const localExists = !publicImageCatalog.ignoreLocalBundle && existsSync(absolutePath);
+  const trackedBytes = publicImageCatalog.byteFixtures.get(url) || 0;
+  const approvedRuntimeUrl = publicImageCatalog.approvedUrls.has(url);
   return {
     url,
     localPath: path.relative(root, absolutePath).replaceAll("\\", "/"),
-    exists: existsSync(absolutePath),
-    bytes: existsSync(absolutePath) ? statSync(absolutePath).size : 0,
+    exists: localExists || approvedRuntimeUrl,
+    bytes: localExists ? statSync(absolutePath).size : trackedBytes,
+    hasMeasuredBytes: localExists || trackedBytes > 0,
+    verification: localExists ? "approved-local-upload-bundle" : trackedBytes > 0 ? "tracked-byte-fixture" : approvedRuntimeUrl ? "approved-runtime-record" : "unrecognized-public-url",
   };
+}
+
+function readPublicImageCatalog(root, { ignoreLocalBundle = false } = {}) {
+  const runtimePath = path.join(root, "src", "generated", "coloring", "runtime-printables.json");
+  const fixturePath = path.join(root, "pipeline", "manifests", "performance-image-byte-fixture.json");
+  const runtime = JSON.parse(readFileSync(runtimePath, "utf8"));
+  const fixture = JSON.parse(readFileSync(fixturePath, "utf8"));
+  const records = Array.isArray(runtime) ? runtime : runtime.records || runtime.printables || [];
+  const approvedUrls = new Set(records.map((record) => `https://assets.ilovecoloringpage.com/coloring-pages/${record.webpPath}`));
+  const byteFixtures = new Map();
+
+  if (fixture.schemaVersion !== 1 || !Array.isArray(fixture.assets)) {
+    throw new Error("performance-image-byte-fixture.json must use schemaVersion 1 and an assets array.");
+  }
+  for (const asset of fixture.assets) {
+    if (!approvedUrls.has(asset.url)) throw new Error(`Performance image fixture is not an approved runtime asset: ${asset.url}`);
+    if (!Number.isInteger(asset.bytes) || asset.bytes <= 0) throw new Error(`Performance image fixture has invalid bytes: ${asset.url}`);
+    if (byteFixtures.has(asset.url)) throw new Error(`Performance image fixture contains a duplicate URL: ${asset.url}`);
+    byteFixtures.set(asset.url, asset.bytes);
+  }
+
+  return { approvedUrls, byteFixtures, ignoreLocalBundle };
 }
 
 function extractAssetUrls(html, tagName, attributeName) {
