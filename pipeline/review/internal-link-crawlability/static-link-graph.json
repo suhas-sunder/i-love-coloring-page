@@ -1,0 +1,498 @@
+{
+  "version": 1,
+  "policy": "static-crawl-v1",
+  "summary": {
+    "publicHtmlNodeCount": 6916,
+    "indexableNodeCount": 6882,
+    "physicalHtmlFileCount": 6917,
+    "htmlBytesScanned": 535825645,
+    "staticInternalEdgeCount": 334452,
+    "uniqueInternalEdgeCount": 214370,
+    "duplicateInternalEdgeCount": 120082,
+    "staticFileAnchorCount": 0,
+    "brokenLinkCount": 0,
+    "orphanIndexableCount": 0,
+    "weakOnlyViaSitemapCount": 0,
+    "deadEndCount": 0,
+    "routeInventoryFailureCount": 0,
+    "noncanonicalEdgeCount": 0,
+    "clientOnlyDiscoveryFindingCount": 0,
+    "clickDepth": {
+      "minimum": 0,
+      "median": 3,
+      "p90": 7,
+      "p95": 10,
+      "maximum": 36
+    },
+    "printableInboundLinks": {
+      "minimum": 1,
+      "median": 10,
+      "p90": 20,
+      "p95": 25,
+      "maximum": 221
+    },
+    "hubInboundLinks": {
+      "minimum": 6,
+      "median": 129,
+      "p90": 815,
+      "p95": 1454,
+      "maximum": 6914
+    },
+    "paginationSequenceFailureCount": 0,
+    "breadcrumbFailureCount": 0,
+    "relatedLinkFailureCount": 0,
+    "htmlSitemapFailureCount": 0,
+    "xmlSitemapFailureCount": 0,
+    "imageSitemapFailureCount": 0,
+    "anchorTextFailureCount": 0,
+    "printableCount": 6352,
+    "hubCount": 163,
+    "paginationRouteCount": 392,
+    "runtimeMs": 65600.79,
+    "approximatePeakHeapBytes": 797065448,
+    "heapGrowthBytes": 791397680,
+    "passed": true
+  },
+  "routeFamilies": {
+    "home": 1,
+    "html-sitemap": 1,
+    "hub-page-one": 162,
+    "hub-pagination": 392,
+    "main-gallery": 1,
+    "not-found": 1,
+    "printable-detail": 6352,
+    "trust-page": 6
+  },
+  "maximumDepthRoutes": [
+    "/coloring-pages/plushies/page/36"
+  ],
+  "printableChecks": {
+    "printableCount": 6352,
+    "missingOutputCount": 0,
+    "missingContentInboundCount": 0,
+    "missingPrimaryHubInboundCount": 0,
+    "inboundContentSources": {
+      "minimum": 1,
+      "median": 10,
+      "p90": 20,
+      "p95": 25,
+      "maximum": 221
+    }
+  },
+  "paginationChecks": {
+    "checkedHubCount": 159,
+    "checkedPageCount": 521,
+    "failureCount": 0
+  },
+  "breadcrumbChecks": {
+    "checkedCount": 6906,
+    "failureCount": 0
+  },
+  "relatedChecks": {
+    "printableRegionCount": 6352,
+    "failureCount": 0
+  },
+  "sitemapChecks": {
+    "htmlLinkCount": 168,
+    "regularSitemapUrlCount": 6520,
+    "imageSitemapPairCount": 6352,
+    "failureCount": 0
+  },
+  "graphDigests": {
+    "nodesSha256": "8972dd9024f6df7809bc3a3e473fe6a3738e7e507c87c860b4b4308ba13154da",
+    "edgesSha256": "b9c0fe61c0e86753d0755d77ddaa98981b066933d5d3c02d13ff3b4fa7efaf15",
+    "evidenceSha256": "6dc9964fa004c1f5aff27ae5bc5343624efcf79c1d40544b0f6b29582cfaf988"
+  },
+  "linkDensity": {
+    "home": {
+      "routeCount": 1,
+      "anchorCount": {
+        "minimum": 48,
+        "median": 48,
+        "p90": 48,
+        "p95": 48,
+        "maximum": 48
+      },
+      "largestRoutes": [
+        {
+          "route": "/",
+          "anchors": 48,
+          "uniqueInternalTargets": 31,
+          "regions": {
+            "collection-card": 12,
+            "content": 2,
+            "featured-card": 16,
+            "footer": 12,
+            "navigation": 4,
+            "related": 2
+          }
+        }
+      ]
+    },
+    "not-found": {
+      "routeCount": 1,
+      "anchorCount": {
+        "minimum": 18,
+        "median": 18,
+        "p90": 18,
+        "p95": 18,
+        "maximum": 18
+      },
+      "largestRoutes": [
+        {
+          "route": "/404",
+          "anchors": 18,
+          "uniqueInternalTargets": 15,
+          "regions": {
+            "content": 2,
+            "footer": 12,
+            "navigation": 4
+          }
+        }
+      ]
+    },
+    "trust-page": {
+      "routeCount": 6,
+      "anchorCount": {
+        "minimum": 17,
+        "median": 18,
+        "p90": 22,
+        "p95": 22,
+        "maximum": 22
+      },
+      "largestRoutes": [
+        {
+          "route": "/privacy",
+          "anchors": 22,
+          "uniqueInternalTargets": 15,
+          "regions": {
+            "content": 6,
+            "footer": 12,
+            "navigation": 4
+          }
+        },
+        {
+          "route": "/terms",
+          "anchors": 21,
+          "uniqueInternalTargets": 15,
+          "regions": {
+            "content": 5,
+            "footer": 12,
+            "navigation": 4
+          }
+        },
+        {
+          "route": "/affiliate-disclosure",
+          "anchors": 18,
+          "uniqueInternalTargets": 15,
+          "regions": {
+            "content": 2,
+            "footer": 12,
+            "navigation": 4
+          }
+        },
+        {
+          "route": "/contact",
+          "anchors": 18,
+          "uniqueInternalTargets": 15,
+          "regions": {
+            "content": 2,
+            "footer": 12,
+            "navigation": 4
+          }
+        },
+        {
+          "route": "/editorial-policy",
+          "anchors": 18,
+          "uniqueInternalTargets": 15,
+          "regions": {
+            "content": 2,
+            "footer": 12,
+            "navigation": 4
+          }
+        }
+      ]
+    },
+    "main-gallery": {
+      "routeCount": 1,
+      "anchorCount": {
+        "minimum": 121,
+        "median": 121,
+        "p90": 121,
+        "p95": 121,
+        "maximum": 121
+      },
+      "largestRoutes": [
+        {
+          "route": "/coloring-pages",
+          "anchors": 121,
+          "uniqueInternalTargets": 67,
+          "regions": {
+            "breadcrumb": 1,
+            "collection-card": 8,
+            "footer": 12,
+            "gallery-card": 96,
+            "navigation": 4
+          }
+        }
+      ]
+    },
+    "hub-page-one": {
+      "routeCount": 162,
+      "anchorCount": {
+        "minimum": 34,
+        "median": 93,
+        "p90": 142,
+        "p95": 143,
+        "maximum": 149
+      },
+      "largestRoutes": [
+        {
+          "route": "/coloring-pages/dinosaurs",
+          "anchors": 149,
+          "uniqueInternalTargets": 77,
+          "regions": {
+            "breadcrumb": 4,
+            "collection-card": 8,
+            "featured-card": 16,
+            "footer": 12,
+            "gallery-card": 96,
+            "navigation": 4,
+            "pagination": 1,
+            "related": 8
+          }
+        },
+        {
+          "route": "/coloring-pages/fantasy-creatures",
+          "anchors": 147,
+          "uniqueInternalTargets": 78,
+          "regions": {
+            "breadcrumb": 3,
+            "collection-card": 7,
+            "featured-card": 16,
+            "footer": 12,
+            "gallery-card": 96,
+            "navigation": 4,
+            "pagination": 1,
+            "related": 8
+          }
+        },
+        {
+          "route": "/coloring-pages/flowers",
+          "anchors": 147,
+          "uniqueInternalTargets": 74,
+          "regions": {
+            "breadcrumb": 3,
+            "collection-card": 7,
+            "featured-card": 16,
+            "footer": 12,
+            "gallery-card": 96,
+            "navigation": 4,
+            "pagination": 1,
+            "related": 8
+          }
+        },
+        {
+          "route": "/coloring-pages/sea-life",
+          "anchors": 147,
+          "uniqueInternalTargets": 72,
+          "regions": {
+            "breadcrumb": 3,
+            "collection-card": 7,
+            "featured-card": 16,
+            "footer": 12,
+            "gallery-card": 96,
+            "navigation": 4,
+            "pagination": 1,
+            "related": 8
+          }
+        },
+        {
+          "route": "/coloring-pages/animals",
+          "anchors": 146,
+          "uniqueInternalTargets": 78,
+          "regions": {
+            "breadcrumb": 2,
+            "collection-card": 8,
+            "featured-card": 16,
+            "footer": 12,
+            "gallery-card": 96,
+            "navigation": 4,
+            "pagination": 1,
+            "related": 7
+          }
+        }
+      ]
+    },
+    "hub-pagination": {
+      "routeCount": 392,
+      "anchorCount": {
+        "minimum": 27,
+        "median": 121,
+        "p90": 122,
+        "p95": 123,
+        "maximum": 123
+      },
+      "largestRoutes": [
+        {
+          "route": "/coloring-pages/birthday-celebration/page/2",
+          "anchors": 123,
+          "uniqueInternalTargets": 67,
+          "regions": {
+            "breadcrumb": 5,
+            "content": 4,
+            "footer": 12,
+            "gallery-card": 96,
+            "navigation": 4,
+            "pagination": 2
+          }
+        },
+        {
+          "route": "/coloring-pages/birthday-celebration/page/3",
+          "anchors": 123,
+          "uniqueInternalTargets": 68,
+          "regions": {
+            "breadcrumb": 5,
+            "content": 4,
+            "footer": 12,
+            "gallery-card": 96,
+            "navigation": 4,
+            "pagination": 2
+          }
+        },
+        {
+          "route": "/coloring-pages/chibi/page/10",
+          "anchors": 123,
+          "uniqueInternalTargets": 69,
+          "regions": {
+            "breadcrumb": 5,
+            "content": 4,
+            "footer": 12,
+            "gallery-card": 96,
+            "navigation": 4,
+            "pagination": 2
+          }
+        },
+        {
+          "route": "/coloring-pages/chibi/page/11",
+          "anchors": 123,
+          "uniqueInternalTargets": 69,
+          "regions": {
+            "breadcrumb": 5,
+            "content": 4,
+            "footer": 12,
+            "gallery-card": 96,
+            "navigation": 4,
+            "pagination": 2
+          }
+        },
+        {
+          "route": "/coloring-pages/chibi/page/12",
+          "anchors": 123,
+          "uniqueInternalTargets": 69,
+          "regions": {
+            "breadcrumb": 5,
+            "content": 4,
+            "footer": 12,
+            "gallery-card": 96,
+            "navigation": 4,
+            "pagination": 2
+          }
+        }
+      ]
+    },
+    "printable-detail": {
+      "routeCount": 6352,
+      "anchorCount": {
+        "minimum": 41,
+        "median": 43,
+        "p90": 43,
+        "p95": 43,
+        "maximum": 43
+      },
+      "largestRoutes": [
+        {
+          "route": "/printables/animals/animals-alligator-4feec8505a",
+          "anchors": 43,
+          "uniqueInternalTargets": 26,
+          "regions": {
+            "breadcrumb": 3,
+            "content": 1,
+            "footer": 12,
+            "navigation": 4,
+            "related": 23
+          }
+        },
+        {
+          "route": "/printables/animals/animals-antelopes-49a5eb802f",
+          "anchors": 43,
+          "uniqueInternalTargets": 26,
+          "regions": {
+            "breadcrumb": 3,
+            "content": 1,
+            "footer": 12,
+            "navigation": 4,
+            "related": 23
+          }
+        },
+        {
+          "route": "/printables/animals/animals-buffalo-42947367b4",
+          "anchors": 43,
+          "uniqueInternalTargets": 26,
+          "regions": {
+            "breadcrumb": 3,
+            "content": 1,
+            "footer": 12,
+            "navigation": 4,
+            "related": 23
+          }
+        },
+        {
+          "route": "/printables/animals/animals-butterflies-016ffbb0de",
+          "anchors": 43,
+          "uniqueInternalTargets": 26,
+          "regions": {
+            "breadcrumb": 3,
+            "content": 1,
+            "footer": 12,
+            "navigation": 4,
+            "related": 23
+          }
+        },
+        {
+          "route": "/printables/animals/animals-chickens-1d898c58de",
+          "anchors": 43,
+          "uniqueInternalTargets": 28,
+          "regions": {
+            "breadcrumb": 3,
+            "content": 1,
+            "footer": 12,
+            "navigation": 4,
+            "related": 23
+          }
+        }
+      ]
+    },
+    "html-sitemap": {
+      "routeCount": 1,
+      "anchorCount": {
+        "minimum": 184,
+        "median": 184,
+        "p90": 184,
+        "p95": 184,
+        "maximum": 184
+      },
+      "largestRoutes": [
+        {
+          "route": "/sitemap",
+          "anchors": 184,
+          "uniqueInternalTargets": 168,
+          "regions": {
+            "html-sitemap": 184
+          }
+        }
+      ]
+    }
+  },
+  "findings": []
+}

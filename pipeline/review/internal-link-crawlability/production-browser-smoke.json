@@ -1,0 +1,50 @@
+{
+  "capturedAt": "2026-08-07T01:37:00.842Z",
+  "measurementClass": "bounded production browser interaction smoke",
+  "engineNote": "Chrome and Edge are both Chromium-based coverage.",
+  "viewport": { "width": 1440, "height": 1000 },
+  "adsenseRequests": "blocked in the deterministic navigation smoke; no ad was clicked",
+  "browsers": [
+    {
+      "id": "chrome",
+      "version": "151.0.7922.76",
+      "passed": true,
+      "steps": [
+        ["home", "/"],
+        ["home-to-collection", "/coloring-pages/animals"],
+        ["collection-card-to-printable", "/printables/animals/chibi-animals-pets-dogs-afghan-hound-d9a83b6ec9"],
+        ["breadcrumb-to-hub", "/coloring-pages/animals"],
+        ["pagination-next", "/coloring-pages/animals/page/2"],
+        ["pagination-previous", "/coloring-pages/animals"],
+        ["related-printable", "/printables/animals/chibi-animals-pets-dogs-papillon-db23515839"],
+        ["browser-back", "/printables/animals/chibi-animals-pets-dogs-afghan-hound-d9a83b6ec9"],
+        ["browser-forward", "/printables/animals/chibi-animals-pets-dogs-papillon-db23515839"]
+      ],
+      "keyboardFocus": { "tag": "A", "name": "Home" },
+      "horizontalOverflow": false,
+      "adLinkOverlap": false,
+      "consoleErrors": []
+    },
+    {
+      "id": "edge",
+      "version": "151.0.4129.59",
+      "passed": true,
+      "steps": [
+        ["home", "/"],
+        ["home-to-collection", "/coloring-pages/animals"],
+        ["collection-card-to-printable", "/printables/animals/chibi-animals-pets-dogs-afghan-hound-d9a83b6ec9"],
+        ["breadcrumb-to-hub", "/coloring-pages/animals"],
+        ["pagination-next", "/coloring-pages/animals/page/2"],
+        ["pagination-previous", "/coloring-pages/animals"],
+        ["related-printable", "/printables/animals/chibi-animals-pets-dogs-papillon-db23515839"],
+        ["browser-back", "/printables/animals/chibi-animals-pets-dogs-afghan-hound-d9a83b6ec9"],
+        ["browser-forward", "/printables/animals/chibi-animals-pets-dogs-papillon-db23515839"]
+      ],
+      "keyboardFocus": { "tag": "A", "name": "Home" },
+      "horizontalOverflow": false,
+      "adLinkOverlap": false,
+      "consoleErrors": []
+    }
+  ],
+  "passed": true
+}

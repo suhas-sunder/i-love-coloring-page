@@ -1,0 +1,54 @@
+{
+  "capturedAt": "2026-08-07T01:30:10.110Z",
+  "measurementClass": "bounded production HTTP and static-HTML smoke",
+  "deployment": {
+    "implementationCommit": "41cab54a0afe44301cbd1851c843484690f1712b",
+    "route": "/coloring-pages/animals",
+    "marker": "data-link-graph-version=\"static-crawl-v1\"",
+    "firstConclusiveMarkerAt": "2026-08-06T21:27:40.3327159-04:00",
+    "status": 200,
+    "htmlBytes": 197490,
+    "asset": "/_next/static/chunks/0n35cz-_9zsnr.js"
+  },
+  "summary": {
+    "sampledHtmlRoutes": 16,
+    "expectedStatuses": 16,
+    "markerCount": 16,
+    "h1Failures": 0,
+    "canonicalFailures": 0,
+    "malformedInternalAnchorFailures": 0,
+    "trustAdExclusionFailures": 0,
+    "mainGalleryPaginationRouteCount": 0,
+    "mainGalleryPageTwoProbeStatus": 404
+  },
+  "routes": [
+    { "route": "/", "status": 200, "canonical": "https://www.ilovecoloringpage.com", "anchors": 49 },
+    { "route": "/coloring-pages", "status": 200, "canonical": "https://www.ilovecoloringpage.com/coloring-pages", "anchors": 122 },
+    { "route": "/coloring-pages/animals", "status": 200, "canonical": "https://www.ilovecoloringpage.com/coloring-pages/animals", "anchors": 147 },
+    { "route": "/coloring-pages/forget-me-not", "status": 200, "canonical": "https://www.ilovecoloringpage.com/coloring-pages/forget-me-not", "anchors": 39 },
+    { "route": "/coloring-pages/christmas", "status": 200, "canonical": "https://www.ilovecoloringpage.com/coloring-pages/christmas", "anchors": 143 },
+    { "route": "/coloring-pages/animals/page/2", "status": 200, "canonical": "https://www.ilovecoloringpage.com/coloring-pages/animals/page/2", "anchors": 122 },
+    { "route": "/printables/animals/animals-alligator-4feec8505a", "status": 200, "canonical": "https://www.ilovecoloringpage.com/printables/animals/animals-alligator-4feec8505a", "anchors": 44 },
+    { "route": "/printables/anime-girls/anime-girl-air-balloon-1f6b5be7bc", "status": 200, "canonical": "https://www.ilovecoloringpage.com/printables/anime-girls/anime-girl-air-balloon-1f6b5be7bc", "anchors": 44 },
+    { "route": "/printables/chibi/chibi-african-dragon-ebdfccdd0d", "status": 200, "canonical": "https://www.ilovecoloringpage.com/printables/chibi/chibi-african-dragon-ebdfccdd0d", "anchors": 44 },
+    { "route": "/printables/bats/chibi-bat-fe629d39f4", "status": 200, "canonical": "https://www.ilovecoloringpage.com/printables/bats/chibi-bat-fe629d39f4", "anchors": 44 },
+    { "route": "/printables/bears/chibi-bear-24adcef6cd", "status": 200, "canonical": "https://www.ilovecoloringpage.com/printables/bears/chibi-bear-24adcef6cd", "anchors": 44 },
+    { "route": "/privacy", "status": 200, "canonical": "https://www.ilovecoloringpage.com/privacy", "anchors": 23, "adWrappers": 0 },
+    { "route": "/terms", "status": 200, "canonical": "https://www.ilovecoloringpage.com/terms", "anchors": 22, "adWrappers": 0 },
+    { "route": "/about", "status": 200, "canonical": "https://www.ilovecoloringpage.com/about", "anchors": 18 },
+    { "route": "/sitemap", "status": 200, "canonical": "https://www.ilovecoloringpage.com/sitemap", "anchors": 185, "adWrappers": 0 },
+    { "route": "/definitely-not-a-real-route-link-graph", "status": 404, "canonical": null, "anchors": 19, "adWrappers": 0 }
+  ],
+  "protectedMarkers": {
+    "runtimeOptimization": "client-split-v1",
+    "advertisingLayout": "manual-six-v2",
+    "advertisingMarkupMarkers": 11
+  },
+  "rootArtifacts": {
+    "robotsTxt": { "status": 200, "contentType": "text/plain; charset=UTF-8", "bytes": 140, "regularSitemapDeclared": true, "imageSitemapDeclared": true },
+    "sitemapXml": { "status": 200, "contentType": "application/xml", "bytes": 810504, "urlCount": 6520 },
+    "imageSitemapXml": { "status": 200, "contentType": "application/xml", "bytes": 2475010, "imageCount": 6352, "svgCount": 0 },
+    "sampleImageAsset": { "url": "https://assets.ilovecoloringpage.com/coloring-pages/webp/animals/animals-alligator-4feec8505a.webp", "status": 206, "contentType": "image/webp", "rangeBytes": 64, "webpMagic": true },
+    "adsTxt": { "status": 200, "contentType": "text/plain; charset=UTF-8", "bytes": 58, "exactRecord": true, "bom": false }
+  }
+}
