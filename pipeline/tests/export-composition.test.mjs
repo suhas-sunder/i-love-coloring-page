@@ -309,7 +309,7 @@ test("direct PDF download reuses preparation, stays separate from print, and rel
   assert.match(directDownloadSource, /revokePreparedPrintPdf\(prepared\)/);
   assert.doesNotMatch(directDownloadSource, /triggerPdfPrint|\.print\(|iframe|window\.open/);
   assert.match(printSource, /prepareOnePagePrintPdf\(options\)/);
-  assert.match(printSource, /triggerPdfPrint\(prepared\)/);
+  assert.match(printSource, /await triggerPdfPrint\(prepared, options\.signal\)/);
 
   const mock = installCanvasMock();
   try {
@@ -340,6 +340,101 @@ test("direct PDF download reuses preparation, stays separate from print, and rel
     assert.equal(mock.createdElements.includes("iframe"), false);
   } finally {
     mock.restore();
+  }
+});
+
+test("failed PDF download triggers clean anchors and object URLs", async () => {
+  const mock = installCanvasMock({ anchorClickThrows: true });
+  try {
+    const result = await downloads.downloadOnePagePdf({
+      internalSvgUrl: svgDataUrl(),
+      pngPreviewUrl: null,
+      title: "Synthetic Landscape",
+      altText: "Synthetic landscape coloring page",
+    });
+    assert.equal(result.ok, false);
+    assert.equal(result.reason, "download-unavailable");
+    assert.match(result.message, /could not start the download/i);
+    assert.equal(mock.anchors.length, 1);
+    assert.equal(mock.anchors[0].removed, true);
+    assert.equal(mock.anchors[0].attached, false);
+    assert.equal(mock.activeObjectUrls.size, 0);
+    assert.deepEqual(mock.revokedObjectUrls, mock.createdObjectUrls);
+  } finally {
+    mock.restore();
+  }
+});
+
+test("PNG and JPG draw and download failures remain typed, isolated, and leak-free", async () => {
+  const drawFailure = installCanvasMock({ drawImageThrows: true });
+  try {
+    const result = await downloads.composePrintableRasterToBlob({
+      internalSvgUrl: svgDataUrl(),
+      pngPreviewUrl: null,
+      title: "Synthetic Landscape",
+      format: "png",
+    });
+    assert.equal(result.ok, false);
+    assert.equal(result.reason, "canvas-export-failed");
+    assert.equal(drawFailure.createdObjectUrls.length, 0);
+  } finally {
+    drawFailure.restore();
+  }
+
+  const triggerFailure = installCanvasMock({ anchorClickThrows: true });
+  try {
+    const png = await downloads.downloadPng({
+      internalSvgUrl: svgDataUrl(),
+      pngPreviewUrl: null,
+      title: "Synthetic Landscape",
+    });
+    const jpg = await downloads.downloadJpeg({
+      internalSvgUrl: svgDataUrl(),
+      pngPreviewUrl: null,
+      title: "Synthetic Landscape",
+    });
+    assert.deepEqual([png.ok, png.reason], [false, "download-unavailable"]);
+    assert.deepEqual([jpg.ok, jpg.reason], [false, "download-unavailable"]);
+    assert.match(png.message, /PNG was created/i);
+    assert.match(jpg.message, /JPG was created/i);
+    assert.equal(triggerFailure.anchors.every((anchor) => anchor.removed && !anchor.attached), true);
+    assert.equal(triggerFailure.activeObjectUrls.size, 0);
+  } finally {
+    triggerFailure.restore();
+  }
+});
+
+test("PDF object URL and print handoff failures are explicit and release resources", async () => {
+  const urlFailure = installCanvasMock({ objectUrlThrows: true });
+  try {
+    const result = await downloads.prepareOnePagePrintPdf({
+      internalSvgUrl: svgDataUrl(),
+      pngPreviewUrl: null,
+      title: "Synthetic Landscape",
+      altText: "Synthetic landscape coloring page",
+    });
+    assert.equal(result.ok, false);
+    assert.equal(result.reason, "pdf-generation-failed");
+    assert.equal(urlFailure.activeObjectUrls.size, 0);
+  } finally {
+    urlFailure.restore();
+  }
+
+  const printFailure = installCanvasMock({ printWindowUnavailable: true });
+  try {
+    const result = await downloads.printOnePagePdf({
+      internalSvgUrl: svgDataUrl(),
+      pngPreviewUrl: null,
+      title: "Synthetic Landscape",
+      altText: "Synthetic landscape coloring page",
+    });
+    assert.equal(result.ok, false);
+    assert.equal(result.reason, "print-unavailable");
+    assert.equal(printFailure.iframes.length, 1);
+    assert.equal(printFailure.iframes[0].removed, true);
+    assert.equal(printFailure.activeObjectUrls.size, 0);
+  } finally {
+    printFailure.restore();
   }
 });
 
@@ -454,10 +549,11 @@ function svgDataUrl() {
   return `data:image/svg+xml,${encodeURIComponent(SYNTHETIC_SVG)}`;
 }
 
-function installCanvasMock() {
+function installCanvasMock(options = {}) {
   const originals = new Map();
   const canvases = [];
   const anchors = [];
+  const iframes = [];
   const createdElements = [];
   const createdObjectUrls = [];
   const revokedObjectUrls = [];
@@ -475,7 +571,10 @@ function installCanvasMock() {
     restore() {}
     fillRect(...args) { this.operations.push({ name: "fillRect", fillStyle: this.fillStyle, args }); }
     strokeRect(...args) { this.operations.push({ name: "strokeRect", strokeStyle: this.strokeStyle, lineWidth: this.lineWidth, args }); }
-    drawImage(...args) { this.operations.push({ name: "drawImage", args: args.slice(1) }); }
+    drawImage(...args) {
+      if (options.drawImageThrows) throw new Error("controlled draw failure");
+      this.operations.push({ name: "drawImage", args: args.slice(1) });
+    }
     fillText(...args) { this.operations.push({ name: "fillText", fillStyle: this.fillStyle, font: this.font, args }); }
     getImageData() { return { data: new Uint8ClampedArray(this.canvas.width * this.canvas.height * 4).fill(255) }; }
   }
@@ -486,11 +585,11 @@ function installCanvasMock() {
     context = new FakeContext(this);
     lastMimeType = null;
     lastQuality = undefined;
-    getContext() { return this.context; }
+    getContext() { return options.canvasContextUnavailable ? null : this.context; }
     toBlob(callback, mimeType, quality) {
       this.lastMimeType = mimeType;
       this.lastQuality = quality;
-      callback(new Blob(["synthetic-raster"], { type: mimeType }));
+      callback(options.blobUnavailable ? null : new Blob(["synthetic-raster"], { type: mimeType }));
     }
     toDataURL(mimeType) { return `data:${mimeType};base64,fixture`; }
   }
@@ -512,14 +611,40 @@ function installCanvasMock() {
     attached = false;
     clicked = false;
     removed = false;
-    click() { this.clicked = true; }
+    click() {
+      this.clicked = true;
+      if (options.anchorClickThrows) throw new Error("controlled anchor failure");
+    }
+    remove() { this.removed = true; this.attached = false; }
+  }
+
+  class FakeIframe {
+    title = "";
+    src = "";
+    style = {};
+    attached = false;
+    removed = false;
+    onload = null;
+    onerror = null;
+    contentWindow = options.printWindowUnavailable ? null : {
+      focus() {},
+      print() {
+        if (options.printThrows) throw new Error("controlled print failure");
+      },
+    };
+    setAttribute() {}
     remove() { this.removed = true; this.attached = false; }
   }
 
   setGlobal("window", { setTimeout, clearTimeout });
   setGlobal("document", {
     body: {
-      append(element) { element.attached = true; }
+      append(element) {
+        element.attached = true;
+        if (element instanceof FakeIframe) {
+          queueMicrotask(() => options.iframeLoadFails ? element.onerror?.() : element.onload?.());
+        }
+      }
     },
     createElement(name) {
       createdElements.push(name);
@@ -533,6 +658,11 @@ function installCanvasMock() {
         anchors.push(anchor);
         return anchor;
       }
+      if (name === "iframe") {
+        const iframe = new FakeIframe();
+        iframes.push(iframe);
+        return iframe;
+      }
       throw new Error(`Unexpected element: ${name}`);
     },
   });
@@ -540,6 +670,7 @@ function installCanvasMock() {
   setGlobal("HTMLCanvasElement", FakeCanvas);
   setGlobal("URL", {
     createObjectURL() {
+      if (options.objectUrlThrows) throw new Error("controlled object URL failure");
       const url = `blob:test-${createdObjectUrls.length + 1}`;
       createdObjectUrls.push(url);
       activeObjectUrls.add(url);
@@ -554,6 +685,7 @@ function installCanvasMock() {
   return {
     canvases,
     anchors,
+    iframes,
     createdElements,
     createdObjectUrls,
     revokedObjectUrls,

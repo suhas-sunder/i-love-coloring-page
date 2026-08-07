@@ -3,6 +3,7 @@
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
 
 import { loadPrintableExportRuntime } from "@/lib/coloring/browserExportLoader";
+import { createAsyncOperationController } from "@/lib/coloring/asyncOperationController";
 import type { PublicColoringItem } from "@/lib/coloring/types";
 
 import { PrintableCardActions } from "./PrintableCardActions";
@@ -19,7 +20,7 @@ export function PrintableDetailActions({ item, internalSvgUrl, pngPreviewUrl }: 
   const [status, setStatus] = useState("");
   const [preparingPdf, setPreparingPdf] = useState(false);
   const pdfDownloadButtonRef = useRef<HTMLButtonElement>(null);
-  const pdfDownloadInProgressRef = useRef(false);
+  const pdfDownloadOperationRef = useRef(createAsyncOperationController());
   const restorePdfFocusRef = useRef(false);
 
   useEffect(() => {
@@ -28,28 +29,43 @@ export function PrintableDetailActions({ item, internalSvgUrl, pngPreviewUrl }: 
     pdfDownloadButtonRef.current?.focus({ preventScroll: true });
   }, [preparingPdf]);
 
+  useEffect(() => {
+    pdfDownloadOperationRef.current.cancel();
+    restorePdfFocusRef.current = false;
+    setPreparingPdf(false);
+    setStatus("");
+    return () => {
+      restorePdfFocusRef.current = false;
+      pdfDownloadOperationRef.current.cancel();
+    };
+  }, [item.canonicalPath]);
+
   async function downloadPdf() {
-    if (!internalSvgUrl || pdfDownloadInProgressRef.current) return;
+    if (!internalSvgUrl) return;
+    const operation = pdfDownloadOperationRef.current.start();
+    if (!operation) return;
     restorePdfFocusRef.current = document.activeElement === pdfDownloadButtonRef.current;
-    pdfDownloadInProgressRef.current = true;
     setPreparingPdf(true);
     setStatus("Preparing PDF...");
 
     try {
       const { downloadOnePagePdf } = await loadPrintableExportRuntime();
+      if (!pdfDownloadOperationRef.current.isCurrent(operation.id)) return;
       const result = await downloadOnePagePdf({
         internalSvgUrl,
         pngPreviewUrl,
         title: item.title,
         filenameBaseName: item.downloadBaseName,
         altText: item.altText,
+        signal: operation.signal,
       });
-      setStatus(result.message);
+      if (pdfDownloadOperationRef.current.isCurrent(operation.id)) setStatus(result.message);
     } catch {
-      setStatus("The printable PDF could not be prepared. Please try again.");
+      if (pdfDownloadOperationRef.current.isCurrent(operation.id)) {
+        setStatus("The PDF download could not be prepared. Please try again.");
+      }
     } finally {
-      pdfDownloadInProgressRef.current = false;
-      setPreparingPdf(false);
+      if (pdfDownloadOperationRef.current.finish(operation.id)) setPreparingPdf(false);
     }
   }
 

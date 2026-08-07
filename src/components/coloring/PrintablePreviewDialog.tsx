@@ -6,6 +6,7 @@ import { createPortal } from "react-dom";
 import { useModalDialog } from "@/hooks/useModalDialog";
 import type { PreparedPrintImageResult } from "@/lib/coloring/browserDownloads";
 import { loadPrintableExportRuntime } from "@/lib/coloring/browserExportLoader";
+import { createAsyncOperationController } from "@/lib/coloring/asyncOperationController";
 import type { PublicColoringItem } from "@/lib/coloring/types";
 
 const DownloadMenu = lazy(() => import("./DownloadMenu").then((module) => ({ default: module.DownloadMenu })));
@@ -26,6 +27,7 @@ export function PrintablePreviewDialog({ open, onClose, item, internalSvgUrl, pn
   const [prepared, setPrepared] = useState<PreparedPrintImageResult | null>(null);
   const panelRef = useRef<HTMLElement>(null);
   const runIdRef = useRef(0);
+  const printOperationRef = useRef(createAsyncOperationController());
   const titleId = useId();
 
   useEffect(() => setMounted(true), []);
@@ -35,6 +37,7 @@ export function PrintablePreviewDialog({ open, onClose, item, internalSvgUrl, pn
   useEffect(() => {
     if (!open) {
       runIdRef.current += 1;
+      printOperationRef.current.cancel();
       setPreparing(false);
       setPrinting(false);
       setStatus("");
@@ -46,11 +49,12 @@ export function PrintablePreviewDialog({ open, onClose, item, internalSvgUrl, pn
     }
 
     const runId = ++runIdRef.current;
+    const previewController = new AbortController();
     setPreparing(true);
     setStatus("Preparing preview...");
     void loadPrintableExportRuntime()
       .then(async ({ prepareHighQualityPrintImage }) => {
-        const result = await prepareHighQualityPrintImage({ internalSvgUrl, pngPreviewUrl, title: item.title, filenameBaseName: item.downloadBaseName, altText: item.altText });
+        const result = await prepareHighQualityPrintImage({ internalSvgUrl, pngPreviewUrl, title: item.title, filenameBaseName: item.downloadBaseName, altText: item.altText, signal: previewController.signal });
         if (runIdRef.current !== runId) {
           revokePreparedImage(result);
           return;
@@ -64,24 +68,31 @@ export function PrintablePreviewDialog({ open, onClose, item, internalSvgUrl, pn
         setPreparing(false);
         setStatus("Print preview could not be prepared. Please try again.");
       });
+    return () => {
+      previewController.abort();
+      runIdRef.current += 1;
+    };
   }, [internalSvgUrl, item.altText, item.title, open, pngPreviewUrl]);
 
   useEffect(() => () => revokePreparedImage(prepared), [prepared]);
 
   async function printPreview() {
-    if (!prepared?.ok || printing || !internalSvgUrl) return;
+    if (!prepared?.ok || !internalSvgUrl) return;
+    const operation = printOperationRef.current.start();
+    if (!operation) return;
     const runId = runIdRef.current;
     setPrinting(true);
     setStatus("Preparing printable PDF...");
     try {
       const { printOnePagePdf } = await loadPrintableExportRuntime();
-      const result = await printOnePagePdf({ internalSvgUrl, pngPreviewUrl, title: item.title, filenameBaseName: item.downloadBaseName, altText: item.altText });
-      if (runIdRef.current !== runId) return;
+      if (!printOperationRef.current.isCurrent(operation.id)) return;
+      const result = await printOnePagePdf({ internalSvgUrl, pngPreviewUrl, title: item.title, filenameBaseName: item.downloadBaseName, altText: item.altText, signal: operation.signal });
+      if (runIdRef.current !== runId || !printOperationRef.current.isCurrent(operation.id)) return;
       setStatus(result.ok ? result.message || "Printable PDF is ready." : result.message);
     } catch {
       if (runIdRef.current === runId) setStatus("The printable PDF could not be prepared. Please try again.");
     } finally {
-      if (runIdRef.current === runId) setPrinting(false);
+      if (printOperationRef.current.finish(operation.id) && runIdRef.current === runId) setPrinting(false);
     }
   }
 

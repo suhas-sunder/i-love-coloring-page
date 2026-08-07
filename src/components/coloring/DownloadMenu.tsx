@@ -1,10 +1,11 @@
 "use client";
 
-import { useEffect, useId, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 
 import type { BrowserDownloadResult, PublicDownloadFormat } from "@/lib/coloring/browserDownloads";
 import { getSupportedDownloadFormats } from "@/lib/coloring/browserDownloadSupport";
 import { loadArtworkDownloadRuntime, loadPrintableExportRuntime } from "@/lib/coloring/browserExportLoader";
+import { createAsyncOperationController } from "@/lib/coloring/asyncOperationController";
 import { DEFAULT_PRINTABLE_RASTER_DIMENSIONS } from "@/lib/coloring/printableOutputFacts";
 
 type DownloadMenuProps = {
@@ -33,29 +34,40 @@ export function DownloadMenu({ title, downloadBaseName, internalSvgUrl, pngPrevi
   const [busyFormat, setBusyFormat] = useState<DownloadOption["format"] | null>(null);
   const [supportedFormats, setSupportedFormats] = useState<readonly PublicDownloadFormat[]>(["png"]);
   const descriptionIdPrefix = useId();
+  const downloadOperationRef = useRef(createAsyncOperationController());
 
   useEffect(() => {
     setSupportedFormats(getSupportedDownloadFormats());
   }, []);
 
+  useEffect(() => {
+    downloadOperationRef.current.cancel();
+    setBusyFormat(null);
+    return () => downloadOperationRef.current.cancel();
+  }, [downloadBaseName, title]);
+
   const visibleOptions = DOWNLOAD_OPTIONS.filter((option) => supportedFormats.includes(option.format));
 
   async function downloadFormat(option: DownloadOption) {
+    const operation = downloadOperationRef.current.start();
+    if (!operation) return;
     setBusyFormat(option.format);
     onStatus("");
 
     try {
-      const downloadOptions = { internalSvgUrl, pngPreviewUrl, title, filenameBaseName: downloadBaseName };
+      const downloadOptions = { internalSvgUrl, pngPreviewUrl, title, filenameBaseName: downloadBaseName, signal: operation.signal };
       const result = option.format === "webp"
         ? await (await loadArtworkDownloadRuntime()).downloadWebp(downloadOptions)
         : option.format === "jpg"
           ? await (await loadPrintableExportRuntime()).downloadJpeg(downloadOptions)
           : await (await loadPrintableExportRuntime()).downloadPng(downloadOptions);
-      onStatus(getDownloadStatusMessage(result, option.label));
+      if (downloadOperationRef.current.isCurrent(operation.id)) onStatus(getDownloadStatusMessage(result, option.label));
     } catch {
-      onStatus(option.label === "PNG" ? "Download could not be prepared. Please try again." : `${option.label} download could not be prepared. Try PNG instead.`);
+      if (downloadOperationRef.current.isCurrent(operation.id)) {
+        onStatus(`The ${option.label} download could not be prepared. Please try again.`);
+      }
     } finally {
-      setBusyFormat(null);
+      if (downloadOperationRef.current.finish(operation.id)) setBusyFormat(null);
     }
   }
 
@@ -93,6 +105,6 @@ function getDownloadStatusMessage(result: BrowserDownloadResult, label: Download
   if (result.reason === "unsupported-format" || result.reason === "canvas-export-unsupported") {
     return `${label} is not supported by this browser.`;
   }
-  if (label !== "PNG") return `${label} download could not be prepared. Try PNG instead.`;
-  return "Download could not be prepared. Please try again.";
+  if (result.reason === "download-unavailable") return result.message;
+  return `The ${label} could not be created. Please try again.`;
 }

@@ -70,7 +70,8 @@ export type BrowserRasterResult =
         | "download-unavailable"
         | "popup-blocked"
         | "pdf-generation-failed"
-        | "print-unavailable";
+        | "print-unavailable"
+        | "operation-cancelled";
       message: string;
     };
 
@@ -161,6 +162,7 @@ export type BrowserRasterOptions = {
   quality?: number;
   targetLongEdge?: number;
   imageLoadTimeoutMs?: number;
+  signal?: AbortSignal;
 };
 
 export type DownloadOptions = {
@@ -170,6 +172,7 @@ export type DownloadOptions = {
   filenameBaseName?: string;
   quality?: number;
   composition?: PrintableProfileRequest;
+  signal?: AbortSignal;
 };
 
 type PrintOptions = DownloadOptions & {
@@ -217,6 +220,7 @@ declare global {
 
 const PRINT_TARGET_LONG_EDGE = 2400;
 export const PRINT_PREPARE_TIMEOUT_MS = 15_000;
+export const PRINT_HANDOFF_TIMEOUT_MS = 10_000;
 export const INTERNAL_SVG_CONTENT_TYPE = "image/svg+xml";
 export const PRINT_DOCUMENT_BRAND = PRINTABLE_COMPOSITION.branding.text;
 const PRINT_BRAND_FONT_SIZE = PRINTABLE_COMPOSITION.branding.fontSizePt;
@@ -242,11 +246,13 @@ export async function composePrintableRasterToBlob(options: DownloadOptions & { 
 
   let image: HTMLImageElement | null = null;
   let source: "internal-svg" | "png-preview" = "internal-svg";
-  if (options.internalSvgUrl) image = await loadCorsImage(options.internalSvgUrl, IMAGE_LOAD_TIMEOUT_MS);
+  if (options.internalSvgUrl) image = await loadCorsImage(options.internalSvgUrl, IMAGE_LOAD_TIMEOUT_MS, options.signal);
+  if (options.signal?.aborted) return failure("operation-cancelled", "The image download was cancelled.");
   if (!image && options.pngPreviewUrl) {
     source = "png-preview";
-    image = await loadCorsImage(options.pngPreviewUrl, IMAGE_LOAD_TIMEOUT_MS);
+    image = await loadCorsImage(options.pngPreviewUrl, IMAGE_LOAD_TIMEOUT_MS, options.signal);
   }
+  if (options.signal?.aborted) return failure("operation-cancelled", "The image download was cancelled.");
   if (!image) {
     return failure(
       options.internalSvgUrl ? "image-load-failed" : "missing-internal-svg",
@@ -260,14 +266,19 @@ export async function composePrintableRasterToBlob(options: DownloadOptions & { 
   const context = canvas.getContext("2d");
   if (!context) return failure("canvas-unavailable", "Canvas rendering is unavailable in this browser.");
 
-  const layout = computePrintableLayout(sourceWidth, sourceHeight, {
-    ...options.composition,
-    unit: "raster",
-  });
-  canvas.width = layout.page.widthPx;
-  canvas.height = layout.page.heightPx;
-  drawPrintableRasterComposition(context, canvas, image, layout);
+  try {
+    const layout = computePrintableLayout(sourceWidth, sourceHeight, {
+      ...options.composition,
+      unit: "raster",
+    });
+    canvas.width = layout.page.widthPx;
+    canvas.height = layout.page.heightPx;
+    drawPrintableRasterComposition(context, canvas, image, layout);
+  } catch {
+    return failure("canvas-export-failed", "The browser could not draw this printable page. Please try again.");
+  }
 
+  if (options.signal?.aborted) return failure("operation-cancelled", "The image download was cancelled.");
   try {
     const blob = await canvasToBlob(canvas, formatConfig.mimeType, options.quality ?? formatConfig.quality);
     if (!blob) return failure("canvas-export-failed", "The browser could not export this printable page.");
@@ -295,11 +306,13 @@ export async function convertPngPreviewToBrowserDownload(options: {
   filenameBaseName?: string;
   format: CanvasDownloadFormat;
   quality?: number;
+  signal?: AbortSignal;
 }): Promise<BrowserRasterResult> {
   if (!options.pngPreviewUrl) return failure("missing-png-preview", "PNG preview is unavailable.");
   if (!canUseCanvasExport()) return failure("browser-api-unavailable", "Browser image conversion APIs are unavailable.");
 
-  const image = await loadCorsImage(options.pngPreviewUrl, IMAGE_LOAD_TIMEOUT_MS);
+  const image = await loadCorsImage(options.pngPreviewUrl, IMAGE_LOAD_TIMEOUT_MS, options.signal);
+  if (options.signal?.aborted) return failure("operation-cancelled", "The image download was cancelled.");
   if (!image) return failure("image-load-failed", "The PNG preview could not be loaded for conversion.");
 
   const formatConfig = CANVAS_FORMATS[options.format];
@@ -309,11 +322,15 @@ export async function convertPngPreviewToBrowserDownload(options: {
   const context = canvas.getContext("2d");
   if (!context) return failure("canvas-unavailable", "Canvas rendering is unavailable in this browser.");
 
-  canvas.width = image.naturalWidth || image.width;
-  canvas.height = image.naturalHeight || image.height;
-  context.fillStyle = "white";
-  context.fillRect(0, 0, canvas.width, canvas.height);
-  context.drawImage(image, 0, 0);
+  try {
+    canvas.width = image.naturalWidth || image.width;
+    canvas.height = image.naturalHeight || image.height;
+    context.fillStyle = "white";
+    context.fillRect(0, 0, canvas.width, canvas.height);
+    context.drawImage(image, 0, 0);
+  } catch {
+    return failure("canvas-export-failed", "The browser could not draw this image. Please try again.");
+  }
 
   try {
     const blob = await canvasToBlob(canvas, formatConfig.mimeType, options.quality ?? formatConfig.quality);
@@ -341,7 +358,10 @@ export async function downloadPng(options: DownloadOptions): Promise<BrowserDown
   const converted = await composePrintableRasterToBlob({ ...options, format: "png" });
 
   if (converted.ok) {
-    downloadBlob(converted.blob, converted.filename);
+    if (options.signal?.aborted) return failure("operation-cancelled", "The PNG download was cancelled.");
+    if (!downloadBlob(converted.blob, converted.filename)) {
+      return failure("download-unavailable", "The PNG was created, but this browser could not start the download.");
+    }
     return {
       ok: true,
       filename: converted.filename,
@@ -355,7 +375,10 @@ export async function downloadPng(options: DownloadOptions): Promise<BrowserDown
 export async function downloadJpeg(options: DownloadOptions): Promise<BrowserDownloadResult> {
   const converted = await composePrintableRasterToBlob({ ...options, format: "jpg" });
   if (!converted.ok) return converted;
-  downloadBlob(converted.blob, converted.filename);
+  if (options.signal?.aborted) return failure("operation-cancelled", "The JPG download was cancelled.");
+  if (!downloadBlob(converted.blob, converted.filename)) {
+    return failure("download-unavailable", "The JPG was created, but this browser could not start the download.");
+  }
   return {
     ok: true,
     filename: converted.filename,
@@ -376,17 +399,24 @@ export async function prepareHighQualityPrintImage(options: PrintOptions): Promi
     format: "png",
     targetLongEdge: PRINT_TARGET_LONG_EDGE,
     imageLoadTimeoutMs: PRINT_PREPARE_TIMEOUT_MS,
+    signal: options.signal,
   });
 
   if (converted.ok) {
-    const objectUrl = URL.createObjectURL(converted.blob);
-    return {
-      ok: true,
-      imageUrl: objectUrl,
-      source: "internal-svg",
-      revokeObjectUrl: true,
-    };
+    try {
+      const objectUrl = URL.createObjectURL(converted.blob);
+      return {
+        ok: true,
+        imageUrl: objectUrl,
+        source: "internal-svg",
+        revokeObjectUrl: true,
+      };
+    } catch {
+      return failure("download-unavailable", "The print preview could not create a temporary browser URL. Please try again.");
+    }
   }
+
+  if (converted.reason === "operation-cancelled") return converted;
 
   if (!options.pngPreviewUrl) {
     return converted;
@@ -416,9 +446,11 @@ export async function prepareOnePagePrintPdf(options: PrintOptions): Promise<Pre
     internalSvgUrl: options.internalSvgUrl,
     targetLongEdge: PRINT_TARGET_LONG_EDGE,
     imageLoadTimeoutMs: PRINT_PREPARE_TIMEOUT_MS,
+    signal: options.signal,
   });
   if (!rendered.ok) return rendered;
 
+  let pdfUrl: string | null = null;
   try {
     const layout = computePrintableLayout(rendered.width, rendered.height, {
       ...options.composition,
@@ -426,8 +458,9 @@ export async function prepareOnePagePrintPdf(options: PrintOptions): Promise<Pre
     });
     const metadataTitle = buildPrintPdfTitle(options.title);
     const pdfBytes = await buildPrintPdfBytes(rendered.canvas, layout, metadataTitle);
+    if (options.signal?.aborted) return failure("operation-cancelled", "The PDF operation was cancelled.");
     const pdfBlob = new Blob([pdfBytes], { type: "application/pdf" });
-    const pdfUrl = URL.createObjectURL(pdfBlob);
+    pdfUrl = URL.createObjectURL(pdfBlob);
     const result: Extract<PreparedPrintPdfResult, { ok: true }> = {
       ok: true,
       pdfBlob,
@@ -454,6 +487,8 @@ export async function prepareOnePagePrintPdf(options: PrintOptions): Promise<Pre
     recordPrintDocumentQa(result);
     return result;
   } catch {
+    if (pdfUrl) URL.revokeObjectURL(pdfUrl);
+    if (options.signal?.aborted) return failure("operation-cancelled", "The PDF operation was cancelled.");
     return failure("pdf-generation-failed", "The printable PDF could not be prepared. Try again, or use a PNG download.");
   }
 }
@@ -462,9 +497,8 @@ export async function printOnePagePdf(options: PrintOptions): Promise<BrowserPri
   const prepared = await prepareOnePagePrintPdf(options);
   if (!prepared.ok) return prepared;
 
-  const printStarted = triggerPdfPrint(prepared);
+  const printStarted = await triggerPdfPrint(prepared, options.signal);
   if (!printStarted) {
-    revokePreparedPrintPdf(prepared);
     return failure("print-unavailable", "The printable PDF was prepared, but this browser could not open the print workflow.");
   }
 
@@ -482,6 +516,7 @@ export async function downloadOnePagePdf(options: PrintOptions): Promise<Browser
   if (!prepared.ok) return prepared;
 
   try {
+    if (options.signal?.aborted) return failure("operation-cancelled", "The PDF download was cancelled.");
     if (!triggerUrlDownload(prepared.pdfUrl, prepared.filename)) {
       return failure("download-unavailable", "The printable PDF was prepared, but this browser could not start the download.");
     }
@@ -513,55 +548,99 @@ export function revokePreparedPrintPdf(prepared: PreparedPrintPdfResult | null |
 
 function triggerUrlDownload(url: string, filename: string) {
   if (typeof document === "undefined") return false;
-  const link = document.createElement("a");
-  link.href = url;
-  link.download = filename;
-  link.rel = "noopener";
-  document.body.append(link);
-  link.click();
-  link.remove();
-  return true;
+  let link: HTMLAnchorElement | null = null;
+  try {
+    link = document.createElement("a");
+    link.href = url;
+    link.download = filename;
+    link.rel = "noopener";
+    document.body.append(link);
+    link.click();
+    return true;
+  } catch {
+    return false;
+  } finally {
+    link?.remove();
+  }
 }
 
-function triggerPdfPrint(prepared: Extract<PreparedPrintPdfResult, { ok: true }>) {
-  if (typeof document === "undefined" || typeof window === "undefined") return false;
+function triggerPdfPrint(prepared: Extract<PreparedPrintPdfResult, { ok: true }>, signal?: AbortSignal) {
+  if (typeof document === "undefined" || typeof window === "undefined") return Promise.resolve(false);
 
-  const frame = document.createElement("iframe");
-  let cleanedUp = false;
-  let printed = false;
+  return new Promise<boolean>((resolve) => {
+    const frame = document.createElement("iframe");
+    let settled = false;
+    let cleanedUp = false;
+    let handoffTimer: number | null = null;
+    let timeoutTimer: number | null = null;
+    let cleanupTimer: number | null = null;
 
-  function cleanup() {
-    if (cleanedUp) return;
-    cleanedUp = true;
-    frame.remove();
-    URL.revokeObjectURL(prepared.pdfUrl);
-  }
+    function cleanup() {
+      if (cleanedUp) return;
+      cleanedUp = true;
+      if (handoffTimer !== null) window.clearTimeout(handoffTimer);
+      if (timeoutTimer !== null) window.clearTimeout(timeoutTimer);
+      if (cleanupTimer !== null) window.clearTimeout(cleanupTimer);
+      signal?.removeEventListener("abort", abort);
+      frame.remove();
+      URL.revokeObjectURL(prepared.pdfUrl);
+    }
 
-  frame.title = "Printable coloring page PDF";
-  frame.src = prepared.pdfUrl;
-  frame.style.position = "fixed";
-  frame.style.right = "0";
-  frame.style.bottom = "0";
-  frame.style.width = "1px";
-  frame.style.height = "1px";
-  frame.style.border = "0";
-  frame.style.opacity = "0";
-  frame.setAttribute("aria-hidden", "true");
-  frame.onload = () => {
-    window.setTimeout(() => {
-      try {
-        frame.contentWindow?.focus();
-        frame.contentWindow?.print();
-        printed = true;
-      } finally {
-        window.setTimeout(cleanup, printed ? 90_000 : 10_000);
-      }
-    }, 120);
-  };
+    function settle(result: boolean) {
+      if (settled) return;
+      settled = true;
+      if (timeoutTimer !== null) window.clearTimeout(timeoutTimer);
+      if (!result) cleanup();
+      resolve(result);
+    }
 
-  document.body.append(frame);
-  window.setTimeout(cleanup, 120_000);
-  return true;
+    function abort() {
+      settle(false);
+      cleanup();
+    }
+
+    frame.title = "Printable coloring page PDF";
+    frame.src = prepared.pdfUrl;
+    frame.style.position = "fixed";
+    frame.style.right = "0";
+    frame.style.bottom = "0";
+    frame.style.width = "1px";
+    frame.style.height = "1px";
+    frame.style.border = "0";
+    frame.style.opacity = "0";
+    frame.setAttribute("aria-hidden", "true");
+    frame.onerror = () => settle(false);
+    frame.onload = () => {
+      handoffTimer = window.setTimeout(() => {
+        const printWindow = frame.contentWindow;
+        if (!printWindow || typeof printWindow.print !== "function") {
+          settle(false);
+          return;
+        }
+        try {
+          printWindow.focus();
+          printWindow.print();
+          settle(true);
+          cleanupTimer = window.setTimeout(cleanup, 90_000);
+        } catch {
+          settle(false);
+        }
+      }, 120);
+    };
+
+    signal?.addEventListener("abort", abort, { once: true });
+    if (signal?.aborted) {
+      abort();
+      return;
+    }
+
+    try {
+      document.body.append(frame);
+      timeoutTimer = window.setTimeout(() => settle(false), PRINT_HANDOFF_TIMEOUT_MS);
+    } catch {
+      settle(false);
+    }
+  });
 }
 
 function drawPrintableRasterComposition(

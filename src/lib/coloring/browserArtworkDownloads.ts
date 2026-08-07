@@ -11,9 +11,15 @@ export async function downloadWebp(options: DownloadOptions): Promise<BrowserDow
     format: "webp",
     quality: options.quality,
     targetLongEdge: DOWNLOAD_TARGET_LONG_EDGE,
+    signal: options.signal,
   });
 
   if (!converted.ok) return converted;
-  downloadBlob(converted.blob, converted.filename);
+  if (options.signal?.aborted) {
+    return { ok: false, reason: "operation-cancelled", message: "The WebP download was cancelled." };
+  }
+  if (!downloadBlob(converted.blob, converted.filename)) {
+    return { ok: false, reason: "download-unavailable", message: "The WebP was created, but this browser could not start the download." };
+  }
   return { ok: true, filename: converted.filename, format: "webp", source: "internal-svg" };
 }

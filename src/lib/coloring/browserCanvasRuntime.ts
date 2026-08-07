@@ -35,6 +35,7 @@ export async function convertInternalSvgToBlob(options: BrowserRasterOptions): P
     internalSvgUrl: options.internalSvgUrl,
     targetLongEdge: options.targetLongEdge ?? 2400,
     imageLoadTimeoutMs: options.imageLoadTimeoutMs ?? IMAGE_LOAD_TIMEOUT_MS,
+    signal: options.signal,
   });
   if (!rendered.ok) return rendered;
 
@@ -64,11 +65,13 @@ export async function renderInternalSvgToCanvas(options: {
   internalSvgUrl: string | null | undefined;
   targetLongEdge: number;
   imageLoadTimeoutMs: number;
+  signal?: AbortSignal;
 }): Promise<RenderedCanvasResult> {
   if (!options.internalSvgUrl) return failure("missing-internal-svg", "The high-quality artwork is unavailable.");
   if (!canUseCanvasExport()) return failure("browser-api-unavailable", "Browser image conversion APIs are unavailable.");
 
-  const image = await loadCorsImage(options.internalSvgUrl, options.imageLoadTimeoutMs);
+  const image = await loadCorsImage(options.internalSvgUrl, options.imageLoadTimeoutMs, options.signal);
+  if (options.signal?.aborted) return failure("operation-cancelled", "The image operation was cancelled.");
   if (!image) return failure("image-load-failed", "The high-quality artwork could not be loaded. Please try again.");
 
   const sourceWidth = image.naturalWidth || image.width || 800;
@@ -78,46 +81,78 @@ export async function renderInternalSvgToCanvas(options: {
   const context = canvas.getContext("2d");
   if (!context) return failure("canvas-unavailable", "Canvas rendering is unavailable in this browser.");
 
-  canvas.width = dimensions.width;
-  canvas.height = dimensions.height;
-  context.fillStyle = "white";
-  context.fillRect(0, 0, canvas.width, canvas.height);
-  context.drawImage(image, 0, 0, canvas.width, canvas.height);
+  try {
+    canvas.width = dimensions.width;
+    canvas.height = dimensions.height;
+    context.fillStyle = "white";
+    context.fillRect(0, 0, canvas.width, canvas.height);
+    context.drawImage(image, 0, 0, canvas.width, canvas.height);
+  } catch {
+    return failure("canvas-export-failed", "The browser could not draw the requested image. Please try again.");
+  }
 
   return { ok: true, canvas, width: canvas.width, height: canvas.height, source: "internal-svg" };
 }
 
 export function downloadBlob(blob: Blob, filename: string) {
-  if (typeof document === "undefined" || typeof URL === "undefined") return;
-  const objectUrl = URL.createObjectURL(blob);
-  const link = document.createElement("a");
-  link.href = objectUrl;
-  link.download = filename;
-  link.rel = "noopener";
-  document.body.append(link);
-  link.click();
-  link.remove();
-  window.setTimeout(() => URL.revokeObjectURL(objectUrl), 30_000);
+  if (typeof document === "undefined" || typeof URL === "undefined") return false;
+  let objectUrl: string | null = null;
+  let link: HTMLAnchorElement | null = null;
+  let initiated = false;
+
+  try {
+    objectUrl = URL.createObjectURL(blob);
+    link = document.createElement("a");
+    link.href = objectUrl;
+    link.download = filename;
+    link.rel = "noopener";
+    document.body.append(link);
+    link.click();
+    initiated = true;
+    return true;
+  } catch {
+    return false;
+  } finally {
+    link?.remove();
+    if (objectUrl) {
+      if (initiated && typeof window !== "undefined") {
+        try {
+          window.setTimeout(() => URL.revokeObjectURL(objectUrl as string), 30_000);
+        } catch {
+          URL.revokeObjectURL(objectUrl);
+        }
+      } else {
+        URL.revokeObjectURL(objectUrl);
+      }
+    }
+  }
 }
 
-export function loadCorsImage(imageUrl: string, timeoutMs = IMAGE_LOAD_TIMEOUT_MS) {
+export function loadCorsImage(imageUrl: string, timeoutMs = IMAGE_LOAD_TIMEOUT_MS, signal?: AbortSignal) {
   return new Promise<HTMLImageElement | null>((resolve) => {
+    if (signal?.aborted) {
+      resolve(null);
+      return;
+    }
+
     const image = new Image();
-    const timeout = window.setTimeout(() => {
+    let settled = false;
+    const finish = (result: HTMLImageElement | null) => {
+      if (settled) return;
+      settled = true;
+      window.clearTimeout(timeout);
       image.onload = null;
       image.onerror = null;
-      resolve(null);
-    }, timeoutMs);
+      signal?.removeEventListener("abort", abort);
+      resolve(result);
+    };
+    const abort = () => finish(null);
+    const timeout = window.setTimeout(() => finish(null), timeoutMs);
     image.crossOrigin = "anonymous";
     image.decoding = "async";
-    image.onload = () => {
-      window.clearTimeout(timeout);
-      resolve(image);
-    };
-    image.onerror = () => {
-      window.clearTimeout(timeout);
-      resolve(null);
-    };
+    image.onload = () => finish(image);
+    image.onerror = () => finish(null);
+    signal?.addEventListener("abort", abort, { once: true });
     image.src = imageUrl;
   });
 }
