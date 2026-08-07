@@ -29,8 +29,8 @@ test("workflow is a read-only main-branch gate with a manual trigger", async () 
   const workflow = await readFile(WORKFLOW_PATH, "utf8");
   assert.match(workflow, /^name: Release Quality Gate$/m);
   assert.match(workflow, /^on:\s*$/m);
-  assert.match(workflow, /^  pull_request:\s*\n    branches:\s*\n      - main$/m);
-  assert.match(workflow, /^  push:\s*\n    branches:\s*\n      - main$/m);
+  assert.match(workflow, /^  pull_request:\s*\n    branches:\s*\n      - main\n    paths-ignore:\s*\n      - "reports\/\*\*"\n      - "pipeline\/review\/\*\*"$/m);
+  assert.match(workflow, /^  push:\s*\n    branches:\s*\n      - main\n    paths-ignore:\s*\n      - "reports\/\*\*"\n      - "pipeline\/review\/\*\*"$/m);
   assert.match(workflow, /^  workflow_dispatch:\s*$/m);
   assert.doesNotMatch(workflow, /pull_request_target|repository_dispatch|workflow_run|schedule:/);
   assert.match(workflow, /^permissions:\s*\n  contents: read$/m);
@@ -38,6 +38,50 @@ test("workflow is a read-only main-branch gate with a manual trigger", async () 
   assert.match(workflow, /^concurrency:\s*$/m);
   assert.match(workflow, /cancel-in-progress: true/);
   assert.match(workflow, /timeout-minutes: 35/);
+});
+
+test("workflow skips only documentation and review-evidence-only changes", async () => {
+  const workflow = await readFile(WORKFLOW_PATH, "utf8");
+  const ignoredPatterns = [...workflow.matchAll(/^      - "((?:reports|pipeline\/review)\/\*\*)"$/gm)]
+    .map((match) => match[1]);
+  assert.deepEqual(ignoredPatterns, [
+    "reports/**",
+    "pipeline/review/**",
+    "reports/**",
+    "pipeline/review/**",
+  ]);
+  assert.equal((workflow.match(/^    paths-ignore:\s*$/gm) || []).length, 2);
+  assert.doesNotMatch(workflow, /\*\*\/\*\.(?:md|json)|AGENTS\.md|pipeline\/manifests|pipeline\/reports|\.github\/\*\*/);
+
+  const pathsIgnoredForOneEvent = [...new Set(ignoredPatterns)];
+  const shouldRun = (changedPaths) => changedPaths.some((changedPath) =>
+    !pathsIgnoredForOneEvent.some((pattern) => changedPath.startsWith(pattern.slice(0, -3))),
+  );
+
+  assert.equal(shouldRun(["reports/2026-08-implementation.md"]), false);
+  assert.equal(shouldRun(["pipeline/review/browser/result.json"]), false);
+  assert.equal(shouldRun(["reports/a.md", "pipeline/review/a.png"]), false);
+  assert.equal(shouldRun(["reports/a.md", "src/components/App.tsx"]), true);
+
+  for (const releaseRelevantPath of [
+    ".github/workflows/release-quality-gate.yml",
+    "AGENTS.md",
+    "app/page.tsx",
+    "src/lib/example.ts",
+    "public/ads.txt",
+    "pipeline/lib/release-quality-gate.mjs",
+    "pipeline/scripts/run-release-quality-gate.mjs",
+    "pipeline/tests/release-quality-gate.test.mjs",
+    "pipeline/manifests/runtime-printable-route-manifest.json",
+    "pipeline/reports/trust-ads-readiness.md",
+    "package.json",
+    "package-lock.json",
+    "next.config.ts",
+    "netlify.toml",
+    ".gitignore",
+  ]) {
+    assert.equal(shouldRun([releaseRelevantPath]), true, releaseRelevantPath);
+  }
 });
 
 test("workflow pins only current official actions and uses Node 22 with npm download caching", async () => {

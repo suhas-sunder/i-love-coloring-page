@@ -4,9 +4,15 @@ on:
   pull_request:
     branches:
       - main
+    paths-ignore:
+      - "reports/**"
+      - "pipeline/review/**"
   push:
     branches:
       - main
+    paths-ignore:
+      - "reports/**"
+      - "pipeline/review/**"
   workflow_dispatch:
 
 permissions:
