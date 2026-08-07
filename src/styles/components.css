@@ -1551,6 +1551,8 @@
 }
 
 .item-title {
+  min-width: 0;
+  overflow-wrap: anywhere;
   font-family: var(--font-ui);
   font-size: var(--text-md-size);
   font-weight: 700;
@@ -1559,6 +1561,7 @@
 
 .item-title-link {
   display: inline;
+  overflow-wrap: anywhere;
   border-radius: var(--radius-sm);
 }
 

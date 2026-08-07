@@ -41,6 +41,8 @@ test("keyboard focus remains visible in normal and forced-color presentations", 
   }
   assert.match(css, /outline:\s*var\(--focus-ring-width\) solid CanvasText/);
   assert.match(css, /\.trust-section a\s*\{[\s\S]*?overflow-wrap:\s*anywhere/);
+  assert.match(css, /\.item-title\s*\{[\s\S]*?min-width:\s*0[\s\S]*?overflow-wrap:\s*anywhere/);
+  assert.match(css, /\.item-title-link\s*\{[\s\S]*?overflow-wrap:\s*anywhere/);
 });
 
 test("reduced motion and non-hover input contracts remain explicit", () => {
@@ -145,6 +147,7 @@ test("cross-browser QA runner is deterministic, local, and blocks advertising re
   assert.match(runner, /\["chrome", "edge", "firefox", "webkit"\]/);
   for (const blockedDomain of ["googlesyndication", "doubleclick", "googleadservices"]) assert.ok(runner.includes(blockedDomain));
   assert.match(runner, /pipeline["'], "review["'], "cross-browser-accessibility/);
+  assert.match(runner, /server\.closeAllConnections\(\)/);
   assert.doesNotMatch(runner, /process\.env|navigator\.userAgent/);
 });
 

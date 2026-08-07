@@ -839,7 +839,13 @@ async function startStaticServer() {
     server.once("error", reject);
     server.listen(0, "127.0.0.1", resolve);
   });
-  return { baseUrl: `http://127.0.0.1:${server.address().port}`, close: () => new Promise((resolve) => server.close(resolve)) };
+  return {
+    baseUrl: `http://127.0.0.1:${server.address().port}`,
+    close: () => new Promise((resolve, reject) => {
+      server.close((error) => error ? reject(error) : resolve());
+      server.closeAllConnections();
+    }),
+  };
 }
 
 function send404(response) {
