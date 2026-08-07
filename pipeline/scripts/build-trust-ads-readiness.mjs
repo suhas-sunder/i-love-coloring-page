@@ -74,7 +74,6 @@ const paginationCount = hubs.hubs
 const sitemapXml = readFileSync(path.join(OUT, "sitemap.xml"), "utf8");
 const imageSitemapXml = readFileSync(path.join(OUT, "image-sitemap.xml"), "utf8");
 const htmlFiles = outFiles.filter((file) => file.relativePath.endsWith(".html"));
-const staticJavascript = outFiles.filter((file) => file.relativePath.endsWith(".js"));
 const staticOutputs = htmlFiles.length + ["sitemap.xml", "image-sitemap.xml", "robots.txt"].filter((file) => existsSync(path.join(OUT, file))).length;
 const metadataTitles = trustPageContentFindings.map((page) => page.metadataTitle);
 
@@ -191,7 +190,6 @@ const report = {
     staticOutputs,
     totalFiles: outFiles.length,
     totalBytes: outFiles.reduce((total, file) => total + file.bytes, 0),
-    staticJavascriptBytes: staticJavascript.reduce((total, file) => total + file.bytes, 0),
     globallyUniquePrintableDisplayTitles: titleManifest.summary.uniqueDisplayTitleCount,
     globallyUniquePrintableMetadataTitles: titleManifest.summary.uniqueMetadataTitleCount,
     deferredRuntimeLeakage: runtime.summary.deferredRecordCount,

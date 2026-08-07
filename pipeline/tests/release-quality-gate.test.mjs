@@ -245,6 +245,8 @@ test("governed generated outputs use stable UTF-8 text and contain no local rele
   const imageData = JSON.parse(await readFile(path.join(ROOT, "pipeline/manifests/image-sitemap-data.json"), "utf8"));
   const pageUrls = imageData.imageEntries.map((entry) => entry.pageUrl);
   assert.deepEqual(pageUrls, [...pageUrls].sort((left, right) => left.localeCompare(right)));
+  const trustManifest = JSON.parse(await readFile(path.join(ROOT, "pipeline/manifests/trust-ads-readiness.json"), "utf8"));
+  assert.equal("staticJavascriptBytes" in trustManifest.counts, false, "cross-platform build aggregates do not belong in tracked readiness output");
 });
 
 test("technical readiness mode preserves external owner gates without claiming production approval", async () => {
