@@ -10,7 +10,7 @@ test("sitewide visual-polish marker and approved token-only layout contracts rem
     read("src/styles/components.css"),
   ]);
 
-  assert.match(shell, /data-visual-polish-version="professional-sweep-v1"/);
+  assert.match(shell, /layout\.mode === "full"[\s\S]*"data-visual-polish-version": "professional-sweep-v1"/);
   assert.match(css, /\.related-link\s*\{[^}]*display:\s*flex;[^}]*column-gap:\s*var\(--space-8\);[^}]*row-gap:\s*var\(--space-4\);/s);
   assert.match(css, /\.related-list\s*\{[^}]*gap:\s*var\(--space-12\) var\(--space-32\);/s);
   assert.match(css, /\.hub-preview-card-body\s*\{[^}]*grid-template-columns:\s*minmax\(0, 1fr\);[^}]*row-gap:\s*var\(--space-4\);/s);

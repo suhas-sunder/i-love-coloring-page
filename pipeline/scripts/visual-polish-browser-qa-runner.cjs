@@ -146,6 +146,7 @@ async function inspectBrowser(browser, browserId, baseUrl, reviewDir) {
             const links = related ? [...related.querySelectorAll(".related-link")] : [];
             return {
               marker: document.querySelector("[data-visual-polish-version='professional-sweep-v1']") !== null,
+              adLayout: document.querySelector(".public-page-shell")?.getAttribute("data-ad-layout") || null,
               h1Count: document.querySelectorAll("h1").length,
               horizontalOverflowPx: Math.max(0, document.documentElement.scrollWidth - document.documentElement.clientWidth),
               brokenImages: [...document.images].filter((image) => visible(image) && image.complete && image.naturalWidth === 0).length,
@@ -164,7 +165,7 @@ async function inspectBrowser(browser, browserId, baseUrl, reviewDir) {
           });
           const expectedStatus = routeId === "404" ? 404 : 200;
           const passed = response?.status() === expectedStatus
-            && snapshot.marker
+            && snapshot.marker === (snapshot.adLayout === "full")
             && snapshot.h1Count === 1
             && snapshot.horizontalOverflowPx === 0
             && snapshot.brokenImages === 0

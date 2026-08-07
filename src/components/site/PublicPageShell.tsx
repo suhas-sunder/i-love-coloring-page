@@ -14,15 +14,18 @@ type PublicPageShellProps = {
 export function PublicPageShell({ pageFamily, className, children }: PublicPageShellProps) {
   const layout = getAdPageLayout(pageFamily);
   const classes = ["page-shell", "public-page-shell", className].filter(Boolean).join(" ");
+  const visualPolishAttributes = layout.mode === "full"
+    ? { "data-visual-polish-version": "professional-sweep-v1" }
+    : {};
 
   return (
     <main
+      {...visualPolishAttributes}
       className={classes}
       data-ad-layout={layout.mode}
       data-ad-layout-version={layout.mode === "full" ? "manual-six-v2" : undefined}
       data-runtime-optimization-version="client-split-v1"
       data-link-graph-version="static-crawl-v1"
-      data-visual-polish-version="professional-sweep-v1"
       data-page-family={pageFamily}
     >
       <PageAdSlot pageFamily={pageFamily} placement="top-banner" />
