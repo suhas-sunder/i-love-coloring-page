@@ -11,6 +11,7 @@ const EXPECTED_ADS_TXT = "google.com, pub-4810616735714570, DIRECT, f08c47fec094
 const MANIFEST_PATH = "pipeline/manifests/trust-ads-readiness.json";
 const REPORT_PATH = "pipeline/reports/trust-ads-readiness.md";
 const VERIFY_MODE = process.argv.includes("--verify");
+const VERIFY_TECHNICAL_MODE = process.argv.includes("--verify-technical");
 const TRUST_ROUTES = [
   { path: "/about", source: "app/about/page.tsx", contactExpected: false },
   { path: "/contact", source: "app/contact/page.tsx", contactExpected: true },
@@ -249,6 +250,7 @@ console.log(JSON.stringify({
   technicalPassed,
   productionReady,
   verifyMode: VERIFY_MODE,
+  verifyTechnicalMode: VERIFY_TECHNICAL_MODE,
   reportDate: REPORT_DATE,
   trustRouteCount: report.counts.trustRoutes,
   blockingIssueCount: trustGates.length,

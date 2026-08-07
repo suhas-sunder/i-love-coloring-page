@@ -2,10 +2,10 @@
 
 - Printable routes evaluated: 6,352
 - Minimum related results per route: 12
-- Routes with at least one verified shared subject/style/season/pattern signal: 6,237
-- Unique related-set hashes: 5,928
-- Identical related-set groups: 198
-- Largest identical related-set group: 27
+- Routes with at least one verified shared subject/style/season/pattern signal: 6,147
+- Unique related-set hashes: 6,350
+- Identical related-set groups: 2
+- Largest identical related-set group: 2
 - Self references: 0
 - Invalid or unavailable targets: 0
 

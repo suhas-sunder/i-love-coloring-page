@@ -22,6 +22,7 @@ if (writeEvidence) {
 console.log(JSON.stringify({
   policy: result.policy,
   evidenceWritten: writeEvidence,
+  maxRssBytes: process.resourceUsage().maxRSS * 1024,
   ...result.summary,
 }, null, 2));
 

@@ -15,7 +15,7 @@
 | regularSitemapCount | 6520 |
 | regularSitemapBytes | 810504 |
 | imageSitemapPairCount | 6352 |
-| imageSitemapBytes | 2478095 |
+| imageSitemapBytes | 2475010 |
 | printableHtmlCount | 6352 |
 | htmlSitemapLinkCount | 168 |
 | internalPrintableLinkCount | 101632 |

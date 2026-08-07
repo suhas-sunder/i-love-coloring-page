@@ -688,9 +688,9 @@
     "regularSitemapUrls": 6520,
     "imageSitemapPairs": 6352,
     "staticOutputs": 6920,
-    "totalFiles": 69731,
-    "totalBytes": 1395756076,
-    "staticJavascriptBytes": 772892,
+    "totalFiles": 69734,
+    "totalBytes": 1410208386,
+    "staticJavascriptBytes": 762945,
     "globallyUniquePrintableDisplayTitles": 6352,
     "globallyUniquePrintableMetadataTitles": 6352,
     "deferredRuntimeLeakage": 0,
@@ -703,28 +703,28 @@
   "payload": {
     "trustPages": {
       "/about": {
-        "htmlBytes": 24554,
-        "rscBytes": 12750
+        "htmlBytes": 24860,
+        "rscBytes": 12946
       },
       "/contact": {
-        "htmlBytes": 23126,
-        "rscBytes": 12089
+        "htmlBytes": 23432,
+        "rscBytes": 12285
       },
       "/privacy": {
-        "htmlBytes": 33218,
-        "rscBytes": 17182
+        "htmlBytes": 33524,
+        "rscBytes": 17378
       },
       "/terms": {
-        "htmlBytes": 29328,
-        "rscBytes": 15266
+        "htmlBytes": 29634,
+        "rscBytes": 15462
       },
       "/affiliate-disclosure": {
-        "htmlBytes": 22359,
-        "rscBytes": 11654
+        "htmlBytes": 22721,
+        "rscBytes": 11860
       },
       "/editorial-policy": {
-        "htmlBytes": 27049,
-        "rscBytes": 14051
+        "htmlBytes": 27355,
+        "rscBytes": 14247
       }
     }
   },
