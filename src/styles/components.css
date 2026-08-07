@@ -59,10 +59,17 @@
 }
 
 .site-nav-link:hover,
-.site-nav-link:focus-visible,
-.more-hub-button:focus-visible,
 .more-hub-button[aria-expanded="true"] {
   outline: 0;
+  background: var(--color-soft-plum);
+  color: var(--color-plum);
+  text-decoration: none;
+}
+
+.site-nav-link:focus-visible,
+.more-hub-button:focus-visible {
+  outline: var(--focus-ring-width) solid var(--color-focus);
+  outline-offset: var(--focus-ring-offset);
   background: var(--color-soft-plum);
   color: var(--color-plum);
   text-decoration: none;
@@ -784,6 +791,7 @@
 .trust-section a {
   color: var(--color-plum);
   font-weight: 800;
+  overflow-wrap: anywhere;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.18em;
@@ -1193,7 +1201,8 @@
 }
 
 .hero-related-link:focus-visible {
-  outline: 0;
+  outline: var(--focus-ring-width) solid var(--color-focus);
+  outline-offset: var(--focus-ring-offset);
   background: var(--color-soft-plum);
   color: var(--color-plum);
 }
@@ -1358,7 +1367,8 @@
 }
 
 .hub-link:focus-visible {
-  outline: 0;
+  outline: var(--focus-ring-width) solid var(--color-focus);
+  outline-offset: var(--focus-ring-offset);
   background: var(--color-soft-plum);
   color: var(--color-plum);
 }
@@ -2133,7 +2143,8 @@
 }
 
 .related-link:focus-visible {
-  outline: 0;
+  outline: var(--focus-ring-width) solid var(--color-focus);
+  outline-offset: var(--focus-ring-offset);
   background: var(--color-soft-plum);
   color: var(--color-plum);
 }
@@ -3078,6 +3089,17 @@
   }
 }
 
+@media (forced-colors: active) {
+  .site-nav-link:focus-visible,
+  .more-hub-button:focus-visible,
+  .hero-related-link:focus-visible,
+  .hub-link:focus-visible,
+  .related-link:focus-visible {
+    outline: var(--focus-ring-width) solid CanvasText;
+    outline-offset: var(--focus-ring-offset);
+  }
+}
+
 @media (max-width: 899px) {
   .brand-name {
     white-space: nowrap;
@@ -3141,8 +3163,28 @@
     margin: 0.35in;
   }
 
+  .site-header,
+  .site-footer,
   .ad-slot,
-  .ad-rail {
+  .ad-rail,
+  .mobile-nav-overlay,
+  .global-search-overlay,
+  .gallery-filter-overlay,
+  .print-preview-overlay,
+  .gallery-controls,
+  .pagination,
+  .printable-action-panel,
+  .hero-actions,
+  button,
+  .button {
     display: none !important;
+  }
+
+  .page-shell {
+    padding-block: 0;
+  }
+
+  .printable-main {
+    grid-template-columns: 1fr;
   }
 }

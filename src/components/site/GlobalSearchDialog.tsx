@@ -62,7 +62,7 @@ export function GlobalSearchDialog({ open, onRequestClose, onNavigate }: GlobalS
       });
   }, [data, hasSearchIntent, loadState, open]);
 
-  useModalDialog({ open, panelRef, initialFocusRef: inputRef, onEscape: onRequestClose });
+  useModalDialog({ open: open && mounted, panelRef, initialFocusRef: inputRef, onEscape: onRequestClose });
 
   const collectionResults = useMemo(() => {
     if (!data || !hasSearchIntent) return [];

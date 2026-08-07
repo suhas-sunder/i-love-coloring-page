@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useCallback, useEffect, useId, useRef, useState } from "react";
+import { useCallback, useEffect, useId, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 
 import { restoreFocusAfterModalClose, useModalDialog } from "@/hooks/useModalDialog";
@@ -19,7 +19,7 @@ export function MobileNav() {
   const pathname = usePathname();
   const panelId = useId();
   const surfaceId = useId();
-  const surface = { kind: "mobile-navigation" as const, id: surfaceId };
+  const surface = useMemo(() => ({ kind: "mobile-navigation" as const, id: surfaceId }), [surfaceId]);
   const buttonRef = useRef<HTMLButtonElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
   const panelRef = useRef<HTMLElement>(null);
@@ -32,6 +32,19 @@ export function MobileNav() {
     // Route navigation is intentionally the only dependency that closes without restoring focus.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname]);
+
+  useEffect(() => {
+    const desktopNavigation = window.matchMedia("(min-width: 900px)");
+    const closeForDesktopLayout = () => {
+      if (!desktopNavigation.matches || !isOpen) return;
+      closeModal(surface);
+      restoreFocusAfterModalClose(document.querySelector<HTMLElement>(".brand"));
+    };
+
+    closeForDesktopLayout();
+    desktopNavigation.addEventListener("change", closeForDesktopLayout);
+    return () => desktopNavigation.removeEventListener("change", closeForDesktopLayout);
+  }, [closeModal, isOpen, surface]);
 
   const closeAndRestore = useCallback(() => {
     closeModal(surface);
