@@ -189,7 +189,6 @@ const report = {
     imageSitemapPairs: countMatches(imageSitemapXml, /<image:image>/g),
     staticOutputs,
     totalFiles: outFiles.length,
-    totalBytes: outFiles.reduce((total, file) => total + file.bytes, 0),
     globallyUniquePrintableDisplayTitles: titleManifest.summary.uniqueDisplayTitleCount,
     globallyUniquePrintableMetadataTitles: titleManifest.summary.uniqueMetadataTitleCount,
     deferredRuntimeLeakage: runtime.summary.deferredRecordCount,
