@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 1,
-  "recordedAtUtc": "2026-08-07T05:10:41Z",
+  "schemaVersion": 2,
+  "recordedAtUtc": "2026-08-07T19:00:38Z",
   "startingState": {
     "branch": "main",
     "head": "2b4445f1d616384e5b68b41ff24cf4d5c21dbd4a",
@@ -101,6 +101,40 @@
       }
     }
   ],
+  "triggerPolicyOptimization": {
+    "startingHead": "62d59c10012f49a1ee3b6723ff4256d5859cf2a1",
+    "implementationCommit": "ef8f9b59a4cef22ad7406437c01971037357dec8",
+    "ignoredPathRoots": [
+      "reports/**",
+      "pipeline/review/**"
+    ],
+    "events": {
+      "pushBranch": "main",
+      "pullRequestTarget": "main",
+      "manualDispatchUnconditional": true
+    },
+    "baselineDocumentationOnlyRun": {
+      "commit": "62d59c10012f49a1ee3b6723ff4256d5859cf2a1",
+      "runId": 31207036798,
+      "conclusion": "success"
+    },
+    "localVerification": {
+      "focusedReleaseTests": { "passed": 17, "failed": 0 },
+      "fullTests": { "passed": 254, "failed": 0 },
+      "typecheck": "passed",
+      "diffCheck": "passed"
+    },
+    "releaseRelevantImplementationRun": {
+      "id": 31208732187,
+      "url": "https://github.com/suhas-sunder/i-love-coloring-page/actions/runs/31208732187",
+      "event": "push",
+      "conclusion": "success",
+      "startedAtUtc": "2026-08-07T18:49:40Z",
+      "completedAtUtc": "2026-08-07T19:00:38Z",
+      "gateStartedAtUtc": "2026-08-07T18:50:11Z",
+      "gateCompletedAtUtc": "2026-08-07T19:00:33Z"
+    }
+  },
   "deployment": {
     "pushAtUtc": "2026-08-07T04:59:47Z",
     "polls": [

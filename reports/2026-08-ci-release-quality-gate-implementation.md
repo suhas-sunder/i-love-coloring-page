@@ -84,7 +84,7 @@ The build occurs once and the full primary test command occurs once. Focused val
 
 ## 10–16. Workflow security and execution policy
 
-- Triggers: pull requests targeting `main`, pushes to `main`, and manual `workflow_dispatch`
+- Triggers: pull requests targeting `main` and pushes to `main` when at least one changed path is outside `reports/**` and `pipeline/review/**`; manual `workflow_dispatch` remains unconditional
 - Excluded triggers: no `pull_request_target`, schedule, repository dispatch, or write-back workflow
 - Permissions: explicit `contents: read`; no write permission
 - Runner: `ubuntu-24.04`
@@ -237,3 +237,15 @@ Owner action: require `Release Quality Gate / Deterministic release verification
 ## 42. External-change confirmation
 
 No deployment workflow, application dependency, package version, environment variable, repository secret, write permission, branch setting, Netlify directive, Cloudflare setting, DNS setting, AdSense account setting, consent setting, analytics integration, manual deployment, or other external-service change was introduced. No ad was clicked. Application behavior, routes, printables, generated editorial content, advertising behavior, and public assets remain unchanged.
+
+## 43. Documentation-only trigger-policy optimization
+
+On August 7, 2026, the workflow trigger was narrowed with native `paths-ignore` filters for exactly two documentation/evidence roots: `reports/**` and `pipeline/review/**`. The same filters apply to pushes to `main` and pull requests targeting `main`; `workflow_dispatch` remains available without a path condition. No file-extension-wide pattern is used.
+
+The ownership review retained CI for `.github/**`, `AGENTS.md`, `app/**`, `src/**`, `public/**`, `pipeline/lib/**`, `pipeline/scripts/**`, `pipeline/tests/**`, `pipeline/manifests/**`, `pipeline/reports/**`, package and lock files, Next/TypeScript configuration, `netlify.toml`, `.gitignore`, and every mixed change containing at least one path outside the two ignored roots. This follows GitHub's documented rule that `paths-ignore` skips a run only when every changed path matches an ignored pattern: [GitHub Actions workflow syntax](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#onpushpull_requestpull_request_targetpathspaths-ignore).
+
+Concrete baseline evidence came from documentation-only commit `62d59c10012f49a1ee3b6723ff4256d5859cf2a1`, which changed only this repository's report/evidence surfaces yet launched successful release-gate run `31207036798`. The optimized implementation commit `ef8f9b59a4cef22ad7406437c01971037357dec8` changed the workflow and its focused tests, correctly launched run `31208732187`, and completed successfully from 18:49:40 to 19:00:38 UTC. Its deterministic gate step passed from 18:50:11 to 19:00:33 UTC.
+
+Local verification passed 17/17 focused release-gate tests, 254/254 full primary tests, TypeScript validation, and `git diff --check`. Tests cover report-only, review-evidence-only, combined ignored-root, mixed source/documentation, workflow, governance, generated-data, validation, package, and configuration changes. They also prohibit broad Markdown/JSON exclusions.
+
+The documentation/evidence commit containing this section is the live all-ignored-path verification case. Its resulting SHA and the bounded GitHub Actions API observation are recorded in the milestone completion response because the commit identifier does not exist until this evidence is committed. No branch-protection setting was changed; owners should account for GitHub's documented pending-check behavior if this workflow is configured as a required pull-request check.
