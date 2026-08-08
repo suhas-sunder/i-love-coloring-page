@@ -1,0 +1,2781 @@
+{
+  "measuredAt": "2026-08-07T23:10:22.853Z",
+  "measurementClass": "local static-production browser lab measurement",
+  "baseUrl": "http://127.0.0.1:64148",
+  "browserIds": [
+    "chrome",
+    "edge",
+    "firefox",
+    "webkit"
+  ],
+  "routeCount": 12,
+  "widths": [
+    320,
+    390,
+    480,
+    768,
+    1024,
+    1280,
+    1440,
+    1920,
+    2400,
+    3440
+  ],
+  "routeViewportChecksPerBrowser": 120,
+  "limitations": [
+    "Chrome and Edge are both Blink coverage, not independent rendering engines.",
+    "Playwright WebKit is WebKit automation, not real Safari or iOS hardware.",
+    "Zoom checks use equivalent CSS viewport widths; they are deterministic reflow checks, not browser UI zoom automation.",
+    "Native print-dialog appearance, physical printing, physical screen readers, and real touch hardware remain manual checks.",
+    "Advertising requests are blocked to avoid creating QA impressions."
+  ],
+  "cssFeatureInventory": {
+    "aspect-ratio": 4,
+    "min(": 24,
+    "max(": 55,
+    "clamp(": 4,
+    "gap:": 158,
+    "display: grid": 106,
+    "display: flex": 35,
+    "position: sticky": 2,
+    "position: fixed": 6,
+    "inset:": 6,
+    "overflow:": 23,
+    "scrollbar-gutter": 0,
+    "content-visibility": 0,
+    "contain:": 1,
+    ":focus-visible": 38,
+    ":has(": 0,
+    "dvh": 11,
+    "svh": 0,
+    "lvh": 0,
+    "text-wrap": 0,
+    "overflow-wrap": 14,
+    "word-break": 0,
+    "appearance:": 2,
+    "object-fit": 3,
+    "object-position": 0,
+    "@supports": 0,
+    "prefers-reduced-motion": 2,
+    "prefers-contrast": 0,
+    "@media print": 1
+  },
+  "browsers": [
+    {
+      "id": "chrome",
+      "engine": "Blink",
+      "available": true,
+      "version": "151.0.7922.76",
+      "automation": "Playwright installed channel",
+      "capabilities": {
+        "headless": true,
+        "screenshots": true,
+        "keyboard": true,
+        "pointerAndTouch": true,
+        "networkInterception": true,
+        "consoleCapture": true,
+        "accessibilitySnapshot": true,
+        "nativePrintDialog": false
+      },
+      "failures": [],
+      "routeViewport": {
+        "passed": true,
+        "failures": [],
+        "checks": 120,
+        "maximumLayoutShift": 0.0916173193359375,
+        "maximumLongTaskMs": 0
+      },
+      "keyboard": {
+        "passed": true,
+        "failures": []
+      },
+      "touch": {
+        "passed": true,
+        "failures": []
+      },
+      "reflow": {
+        "passed": true,
+        "failures": [],
+        "checks": 36,
+        "method": "equivalent CSS viewport widths",
+        "factors": [
+          100,
+          125,
+          150,
+          200,
+          300,
+          400
+        ]
+      },
+      "textEnlargement": {
+        "passed": true,
+        "failures": [],
+        "checks": 12,
+        "factors": [
+          100,
+          150,
+          200
+        ]
+      },
+      "focus": {
+        "passed": true,
+        "failures": [],
+        "samples": [
+          {
+            "route": "/",
+            "key": "A:ILI Love Coloring Page",
+            "tag": "a",
+            "name": "ILI Love Coloring Page",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:Coloring Pages",
+            "tag": "a",
+            "name": "Coloring Pages",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "BUTTON:Categories",
+            "tag": "button",
+            "name": "Categories",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:For Kids",
+            "tag": "a",
+            "name": "For Kids",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:For Adults",
+            "tag": "a",
+            "name": "For Adults",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "BUTTON:Seasonal",
+            "tag": "button",
+            "name": "Seasonal",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "BUTTON:Search",
+            "tag": "button",
+            "name": "Search",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:Browse all coloring pages",
+            "tag": "a",
+            "name": "Browse all coloring pages",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:Browse collections",
+            "tag": "a",
+            "name": "Browse collections",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:Animals Coloring Pages: 1,450 printable pages",
+            "tag": "a",
+            "name": "Animals Coloring Pages: 1,450 printable pages",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:Christmas Coloring Pages: 332 printable pages",
+            "tag": "a",
+            "name": "Christmas Coloring Pages: 332 printable pages",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:Coloring Pages for Kids: 1,335 printable pages",
+            "tag": "a",
+            "name": "Coloring Pages for Kids: 1,335 printable pages",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:Detailed Coloring Pages for Adults: 1,459 printable pages",
+            "tag": "a",
+            "name": "Detailed Coloring Pages for Adults: 1,459 printable pages",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:Dogs Coloring Pages: 284 printable pages",
+            "tag": "a",
+            "name": "Dogs Coloring Pages: 284 printable pages",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:Plushies Coloring Pages: 1,704 printable pages",
+            "tag": "a",
+            "name": "Plushies Coloring Pages: 1,704 printable pages",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:View Plushie Alligator printable page",
+            "tag": "a",
+            "name": "View Plushie Alligator printable page",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:Plushie Alligator",
+            "tag": "a",
+            "name": "Plushie Alligator",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "BUTTON:Print",
+            "tag": "button",
+            "name": "Print",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:View Medieval Fantasy Ancient Bridge printable page",
+            "tag": "a",
+            "name": "View Medieval Fantasy Ancient Bridge printable page",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:Medieval Fantasy Ancient Bridge",
+            "tag": "a",
+            "name": "Medieval Fantasy Ancient Bridge",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "A:ILI Love Coloring Page",
+            "tag": "a",
+            "name": "ILI Love Coloring Page",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "A:Coloring Pages",
+            "tag": "a",
+            "name": "Coloring Pages",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "BUTTON:Categories",
+            "tag": "button",
+            "name": "Categories",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "A:For Kids",
+            "tag": "a",
+            "name": "For Kids",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "A:For Adults",
+            "tag": "a",
+            "name": "For Adults",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "BUTTON:Seasonal",
+            "tag": "button",
+            "name": "Seasonal",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "BUTTON:Search",
+            "tag": "button",
+            "name": "Search",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "A:Home",
+            "tag": "a",
+            "name": "Home",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "INPUT:Search this collection",
+            "tag": "input",
+            "name": "Search this collection",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "BUTTON:Filters",
+            "tag": "button",
+            "name": "Filters",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "A:View Animals Alligator printable page",
+            "tag": "a",
+            "name": "View Animals Alligator printable page",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "A:Animals Alligator",
+            "tag": "a",
+            "name": "Animals Alligator",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "BUTTON:Print",
+            "tag": "button",
+            "name": "Print",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "A:View Anime Girl Air Balloon printable page",
+            "tag": "a",
+            "name": "View Anime Girl Air Balloon printable page",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "A:Anime Girl Air Balloon",
+            "tag": "a",
+            "name": "Anime Girl Air Balloon",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "key": "A:ILI Love Coloring Page",
+            "tag": "a",
+            "name": "ILI Love Coloring Page",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "key": "A:Coloring Pages",
+            "tag": "a",
+            "name": "Coloring Pages",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "key": "BUTTON:Categories",
+            "tag": "button",
+            "name": "Categories",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "key": "A:For Kids",
+            "tag": "a",
+            "name": "For Kids",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "key": "A:For Adults",
+            "tag": "a",
+            "name": "For Adults",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "key": "BUTTON:Seasonal",
+            "tag": "button",
+            "name": "Seasonal",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "key": "BUTTON:Search",
+            "tag": "button",
+            "name": "Search",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "key": "A:Home",
+            "tag": "a",
+            "name": "Home",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          }
+        ],
+        "scanned": 43
+      },
+      "semantics": {
+        "passed": true,
+        "failures": [],
+        "snapshots": [
+          {
+            "route": "/",
+            "main": "- main:\n  - complementary \"Advertisement\":\n    - insertion\n  - heading \"I Love Coloring Page\" [level=1]\n  - paragraph: The complete library spans animals, characters, patterns, plants, food, vehicles, places, and seasonal designs. The library currently contains 6,352 printable pages.\n  - link \"Browse all coloring pages\":\n    - /url: /coloring-pages\n  - link \"Browse collections\":\n    - /url: \"#primary-collections\"\n  - region \"Start with a collection\":\n    - heading \"Start with a collection\" [level=2]\n    - paragraph: These broad destinations separate subject, season, audience, and visual style.\n    - 'link \"Animals Coloring Pages: 1,450 printable pages\"':\n      - /url: /coloring-pages/animals\n      - img \"Animals Alligator coloring page\"\n      - text: Animals\n      - strong: 1,450 pages\n      - text: Wild and domestic animals range from dogs and birds to reptiles, insects, sea life, and prehistoric species.\n    - 'link \"Christmas Coloring Pages: 332 printable pages\"':\n      - /url: /coloring-pages/christmas\n      - img \"Christmas Holiday Advent Calendar coloring page\"\n      - text: Christmas\n      - strong: 332 pages\n      - text: Santa, reindeer, trees, ornaments, gifts, winter sce"
+          },
+          {
+            "route": "/coloring-pages",
+            "main": "- main:\n  - complementary \"Advertisement\":\n    - insertion\n  - navigation \"Breadcrumb\":\n    - link \"Home\":\n      - /url: /\n    - text: Coloring Pages\n  - heading \"Printable Coloring Pages\" [level=1]\n  - paragraph: The complete library spans animals, characters, patterns, plants, food, vehicles, places, and seasonal designs. 6,352 printable pages are currently available.\n  - region \"Find a coloring page\":\n    - heading \"Find a coloring page\" [level=2]\n    - text: Search this collection\n    - searchbox \"Search this collection\"\n    - button \"Filters\"\n    - paragraph: 6,352 coloring pages\n    - article:\n      - link \"View Animals Alligator printable page\":\n        - /url: /printables/animals/animals-alligator-4feec8505a\n        - img \"Animals Alligator coloring page\"\n      - heading \"Animals Alligator\" [level=3]:\n        - link \"Animals Alligator\":\n          - /url: /printables/animals/animals-alligator-4feec8505a\n      - button \"Print\"\n    - article:\n      - link \"View Anime Girl Air Balloon printable page\":\n        - /url: /printables/anime-girls/anime-girl-air-balloon-1f6b5be7bc\n        - img \"Anime Girl Air Balloon coloring page\"\n      - heading \"Anime Girl Air Balloon\" [level=3]:\n"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "main": "- main:\n  - complementary \"Advertisement\":\n    - insertion\n  - navigation \"Breadcrumb\":\n    - link \"Home\":\n      - /url: /\n    - link \"Coloring Pages\":\n      - /url: /coloring-pages\n    - link \"Animals Coloring Pages\":\n      - /url: /coloring-pages/animals\n    - text: Animals Alligator\n  - heading \"Animals Alligator\" [level=1]\n  - paragraph: A portrait printable in the Animals collection.\n  - region \"Animals Alligator preview and actions\":\n    - img \"Animals Alligator coloring page\"\n    - complementary \"Print and download options\":\n      - button \"Download PDF\"\n      - button \"Print\"\n      - heading \"Download image\" [level=2]\n      - group \"Download available formats for Animals Alligator\":\n        - button \"Download PNG for Animals Alligator\": Download PNG Recommended Printable page image, 2550 × 3300 px\n        - button \"Download JPG for Animals Alligator\": Download JPG Printable page image, 2550 × 3300 px\n        - button \"Download WebP for Animals Alligator\": Download WebP High-resolution artwork image\n      - status\n      - heading \"Page details\" [level=2]\n      - term: Collection\n      - definition:\n        - link \"Animals Coloring Pages\":\n          - /url: /coloring-pages/an"
+          },
+          {
+            "route": "/privacy",
+            "main": "- main:\n  - region \"Privacy Policy\":\n    - paragraph: Privacy\n    - heading \"Privacy Policy\" [level=1]\n    - paragraph: This policy describes the website's current data practices, advertising configuration, analytics status, and visitor choices.\n  - region \"Last updated\":\n    - heading \"Last updated\" [level=2]\n    - paragraph: August 4, 2026\n  - region \"Scope and current site\":\n    - heading \"Scope and current site\" [level=2]\n    - paragraph: I Love Coloring Page is a static printable gallery. Visitors can browse, search, filter, print, and download files. Search and filters run in the browser and do not create public search routes.\n    - paragraph: No account is required to browse, download, or print a coloring page. The site currently provides no accounts, comments, user uploads, payments, or contact form. It does not intentionally request names, birth dates, account details, or profile information through the website.\n  - region \"Operator and contact\":\n    - heading \"Operator and contact\" [level=2]\n    - paragraph:\n      - text: I Love Coloring Page is the public operator display used by this site. No personal name, business entity, or mailing address is published. Privacy quest"
+          },
+          {
+            "route": "/sitemap",
+            "main": "- main:\n  - region \"Sitemap\":\n    - heading \"Sitemap\" [level=1]\n    - paragraph: A grouped index of the public pages and printable coloring page collections on I Love Coloring Page.\n  - region \"Sitemap links\":\n    - region \"Main pages\":\n      - heading \"Main pages\" [level=2]\n      - link \"Home\":\n        - /url: /\n      - link \"All coloring pages 6,352\":\n        - /url: /coloring-pages\n        - text: All coloring pages\n        - strong: 6,352\n      - link \"Sitemap\":\n        - /url: /sitemap\n    - region \"Popular\":\n      - heading \"Popular\" [level=2]\n      - link \"Plushies 1,704\":\n        - /url: /coloring-pages/plushies\n        - text: Plushies\n        - strong: 1,704\n      - link \"Animals 1,450\":\n        - /url: /coloring-pages/animals\n        - text: Animals\n        - strong: 1,450\n      - link \"Fantasy 1,265\":\n        - /url: /coloring-pages/fantasy\n        - text: Fantasy\n        - strong: 1,265\n      - link \"Chibi 908\":\n        - /url: /coloring-pages/chibi\n        - text: Chibi\n        - strong: \"908\"\n      - link \"Anime Girls 905\":\n        - /url: /coloring-pages/anime-girls\n        - text: Anime Girls\n        - strong: \"905\"\n      - link \"Dragons 259\":\n        - /url: /colo"
+          }
+        ]
+      },
+      "liveRegions": {
+        "passed": true,
+        "failures": []
+      },
+      "reducedMotion": {
+        "passed": true,
+        "failures": []
+      },
+      "forcedColors": {
+        "passed": true,
+        "failures": [],
+        "supported": true,
+        "samples": [
+          {
+            "route": "/",
+            "selector": ".site-nav-link",
+            "outlineWidth": "3px",
+            "outlineStyle": "solid",
+            "color": "rgb(0, 0, 159)",
+            "background": "rgba(255, 255, 255, 0)"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "selector": ".related-link",
+            "outlineWidth": "3px",
+            "outlineStyle": "solid",
+            "color": "rgb(0, 0, 159)",
+            "background": "rgba(255, 255, 255, 0)"
+          }
+        ]
+      },
+      "printCss": {
+        "passed": true,
+        "failures": [],
+        "checks": [
+          {
+            "route": "/",
+            "header": "none",
+            "footer": "none",
+            "ad": "none",
+            "buttonDisplays": [
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none"
+            ],
+            "main": "block",
+            "printableColumns": null
+          },
+          {
+            "route": "/privacy",
+            "header": "none",
+            "footer": "none",
+            "ad": null,
+            "buttonDisplays": [
+              "none",
+              "none",
+              "none",
+              "none",
+              "none"
+            ],
+            "main": "grid",
+            "printableColumns": null
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "header": "none",
+            "footer": "none",
+            "ad": "none",
+            "buttonDisplays": [
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none"
+            ],
+            "main": "block",
+            "printableColumns": "1216px"
+          }
+        ],
+        "limitation": "CSS print emulation only; native print dialog was not inspected."
+      },
+      "downloads": {
+        "passed": true,
+        "failures": [],
+        "files": [
+          {
+            "id": "pdf",
+            "filename": "animals-alligator.pdf",
+            "bytes": 613584,
+            "prefix": "%PDF"
+          },
+          {
+            "id": "pdf-repeat",
+            "filename": "animals-alligator.pdf",
+            "bytes": 613584,
+            "prefix": "%PDF"
+          },
+          {
+            "id": "png",
+            "filename": "animals-alligator.png",
+            "bytes": 1404823,
+            "prefix": "89504e47"
+          },
+          {
+            "id": "jpg",
+            "filename": "animals-alligator.jpg",
+            "bytes": 1238249,
+            "prefix": "ffd8ffe0"
+          },
+          {
+            "id": "webp",
+            "filename": "animals-alligator.webp",
+            "bytes": 389232,
+            "prefix": "RIFF"
+          }
+        ],
+        "lifecycle": {
+          "created": 5,
+          "revoked": 5,
+          "active": 0,
+          "anchors": 0
+        },
+        "navigated": false
+      },
+      "printHandoff": {
+        "passed": true,
+        "failures": [],
+        "dialogVisible": true,
+        "printButtonVisible": true,
+        "closeButtonVisible": true,
+        "iframeCount": 0,
+        "limitation": "Preview and handoff controls verified; native OS print dialog was not invoked."
+      },
+      "imageScroll": {
+        "passed": true,
+        "failures": [],
+        "checks": [
+          {
+            "route": "/coloring-pages/animals",
+            "images": 71,
+            "broken": 0,
+            "collapsedCards": 0,
+            "layoutShift": 0.06937758789062501
+          },
+          {
+            "route": "/coloring-pages/christmas",
+            "images": 66,
+            "broken": 0,
+            "collapsedCards": 0,
+            "layoutShift": 0
+          },
+          {
+            "route": "/coloring-pages/plushies/page/36",
+            "images": 24,
+            "broken": 0,
+            "collapsedCards": 0,
+            "layoutShift": 0
+          }
+        ]
+      },
+      "fontFallback": {
+        "passed": true,
+        "failures": [],
+        "checks": [
+          {
+            "route": "/",
+            "width": 320,
+            "overflowPx": 0,
+            "clipped": []
+          },
+          {
+            "route": "/coloring-pages",
+            "width": 320,
+            "overflowPx": 0,
+            "clipped": []
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "width": 320,
+            "overflowPx": 0,
+            "clipped": []
+          },
+          {
+            "route": "/",
+            "width": 390,
+            "overflowPx": 0,
+            "clipped": []
+          },
+          {
+            "route": "/coloring-pages",
+            "width": 390,
+            "overflowPx": 0,
+            "clipped": []
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "width": 390,
+            "overflowPx": 0,
+            "clipped": []
+          },
+          {
+            "route": "/",
+            "width": 1280,
+            "overflowPx": 0,
+            "clipped": []
+          },
+          {
+            "route": "/coloring-pages",
+            "width": 1280,
+            "overflowPx": 0,
+            "clipped": []
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "width": 1280,
+            "overflowPx": 0,
+            "clipped": []
+          }
+        ]
+      },
+      "orientation": {
+        "passed": true,
+        "failures": [],
+        "limitation": "Viewport resizing simulates orientation; this is not real iOS rotation."
+      }
+    },
+    {
+      "id": "edge",
+      "engine": "Blink",
+      "available": true,
+      "version": "151.0.4129.72",
+      "automation": "Playwright installed channel",
+      "capabilities": {
+        "headless": true,
+        "screenshots": true,
+        "keyboard": true,
+        "pointerAndTouch": true,
+        "networkInterception": true,
+        "consoleCapture": true,
+        "accessibilitySnapshot": true,
+        "nativePrintDialog": false
+      },
+      "failures": [],
+      "routeViewport": {
+        "passed": true,
+        "failures": [],
+        "checks": 120,
+        "maximumLayoutShift": 0.0916173193359375,
+        "maximumLongTaskMs": 0
+      },
+      "keyboard": {
+        "passed": true,
+        "failures": []
+      },
+      "touch": {
+        "passed": true,
+        "failures": []
+      },
+      "reflow": {
+        "passed": true,
+        "failures": [],
+        "checks": 36,
+        "method": "equivalent CSS viewport widths",
+        "factors": [
+          100,
+          125,
+          150,
+          200,
+          300,
+          400
+        ]
+      },
+      "textEnlargement": {
+        "passed": true,
+        "failures": [],
+        "checks": 12,
+        "factors": [
+          100,
+          150,
+          200
+        ]
+      },
+      "focus": {
+        "passed": true,
+        "failures": [],
+        "samples": [
+          {
+            "route": "/",
+            "key": "A:ILI Love Coloring Page",
+            "tag": "a",
+            "name": "ILI Love Coloring Page",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:Coloring Pages",
+            "tag": "a",
+            "name": "Coloring Pages",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "BUTTON:Categories",
+            "tag": "button",
+            "name": "Categories",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:For Kids",
+            "tag": "a",
+            "name": "For Kids",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:For Adults",
+            "tag": "a",
+            "name": "For Adults",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "BUTTON:Seasonal",
+            "tag": "button",
+            "name": "Seasonal",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "BUTTON:Search",
+            "tag": "button",
+            "name": "Search",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:Browse all coloring pages",
+            "tag": "a",
+            "name": "Browse all coloring pages",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:Browse collections",
+            "tag": "a",
+            "name": "Browse collections",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:Animals Coloring Pages: 1,450 printable pages",
+            "tag": "a",
+            "name": "Animals Coloring Pages: 1,450 printable pages",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:Christmas Coloring Pages: 332 printable pages",
+            "tag": "a",
+            "name": "Christmas Coloring Pages: 332 printable pages",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:Coloring Pages for Kids: 1,335 printable pages",
+            "tag": "a",
+            "name": "Coloring Pages for Kids: 1,335 printable pages",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:Detailed Coloring Pages for Adults: 1,459 printable pages",
+            "tag": "a",
+            "name": "Detailed Coloring Pages for Adults: 1,459 printable pages",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:Dogs Coloring Pages: 284 printable pages",
+            "tag": "a",
+            "name": "Dogs Coloring Pages: 284 printable pages",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:Plushies Coloring Pages: 1,704 printable pages",
+            "tag": "a",
+            "name": "Plushies Coloring Pages: 1,704 printable pages",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:View Reptiles Alligator With Turtle Shell printable page",
+            "tag": "a",
+            "name": "View Reptiles Alligator With Turtle Shell printable page",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:Reptiles Alligator With Turtle Shell",
+            "tag": "a",
+            "name": "Reptiles Alligator With Turtle Shell",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "BUTTON:Print",
+            "tag": "button",
+            "name": "Print",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:View Reptiles Alligator Basking On Riverbank printable page",
+            "tag": "a",
+            "name": "View Reptiles Alligator Basking On Riverbank printable page",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:Reptiles Alligator Basking On Riverbank",
+            "tag": "a",
+            "name": "Reptiles Alligator Basking On Riverbank",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "A:ILI Love Coloring Page",
+            "tag": "a",
+            "name": "ILI Love Coloring Page",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "A:Coloring Pages",
+            "tag": "a",
+            "name": "Coloring Pages",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "BUTTON:Categories",
+            "tag": "button",
+            "name": "Categories",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "A:For Kids",
+            "tag": "a",
+            "name": "For Kids",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "A:For Adults",
+            "tag": "a",
+            "name": "For Adults",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "BUTTON:Seasonal",
+            "tag": "button",
+            "name": "Seasonal",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "BUTTON:Search",
+            "tag": "button",
+            "name": "Search",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "A:Home",
+            "tag": "a",
+            "name": "Home",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "INPUT:Search this collection",
+            "tag": "input",
+            "name": "Search this collection",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "BUTTON:Filters",
+            "tag": "button",
+            "name": "Filters",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "A:View Animals Alligator printable page",
+            "tag": "a",
+            "name": "View Animals Alligator printable page",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "A:Animals Alligator",
+            "tag": "a",
+            "name": "Animals Alligator",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "BUTTON:Print",
+            "tag": "button",
+            "name": "Print",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "A:View Anime Girl Air Balloon printable page",
+            "tag": "a",
+            "name": "View Anime Girl Air Balloon printable page",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "A:Anime Girl Air Balloon",
+            "tag": "a",
+            "name": "Anime Girl Air Balloon",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "key": "A:ILI Love Coloring Page",
+            "tag": "a",
+            "name": "ILI Love Coloring Page",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "key": "A:Coloring Pages",
+            "tag": "a",
+            "name": "Coloring Pages",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "key": "BUTTON:Categories",
+            "tag": "button",
+            "name": "Categories",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "key": "A:For Kids",
+            "tag": "a",
+            "name": "For Kids",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "key": "A:For Adults",
+            "tag": "a",
+            "name": "For Adults",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "key": "BUTTON:Seasonal",
+            "tag": "button",
+            "name": "Seasonal",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "key": "BUTTON:Search",
+            "tag": "button",
+            "name": "Search",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "key": "A:Home",
+            "tag": "a",
+            "name": "Home",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          }
+        ],
+        "scanned": 43
+      },
+      "semantics": {
+        "passed": true,
+        "failures": [],
+        "snapshots": [
+          {
+            "route": "/",
+            "main": "- main:\n  - complementary \"Advertisement\":\n    - insertion\n  - heading \"I Love Coloring Page\" [level=1]\n  - paragraph: The complete library spans animals, characters, patterns, plants, food, vehicles, places, and seasonal designs. The library currently contains 6,352 printable pages.\n  - link \"Browse all coloring pages\":\n    - /url: /coloring-pages\n  - link \"Browse collections\":\n    - /url: \"#primary-collections\"\n  - region \"Start with a collection\":\n    - heading \"Start with a collection\" [level=2]\n    - paragraph: These broad destinations separate subject, season, audience, and visual style.\n    - 'link \"Animals Coloring Pages: 1,450 printable pages\"':\n      - /url: /coloring-pages/animals\n      - img \"Animals Alligator coloring page\"\n      - text: Animals\n      - strong: 1,450 pages\n      - text: Wild and domestic animals range from dogs and birds to reptiles, insects, sea life, and prehistoric species.\n    - 'link \"Christmas Coloring Pages: 332 printable pages\"':\n      - /url: /coloring-pages/christmas\n      - img \"Christmas Holiday Advent Calendar coloring page\"\n      - text: Christmas\n      - strong: 332 pages\n      - text: Santa, reindeer, trees, ornaments, gifts, winter sce"
+          },
+          {
+            "route": "/coloring-pages",
+            "main": "- main:\n  - complementary \"Advertisement\":\n    - insertion\n  - navigation \"Breadcrumb\":\n    - link \"Home\":\n      - /url: /\n    - text: Coloring Pages\n  - heading \"Printable Coloring Pages\" [level=1]\n  - paragraph: The complete library spans animals, characters, patterns, plants, food, vehicles, places, and seasonal designs. 6,352 printable pages are currently available.\n  - region \"Find a coloring page\":\n    - heading \"Find a coloring page\" [level=2]\n    - text: Search this collection\n    - searchbox \"Search this collection\"\n    - button \"Filters\"\n    - paragraph: 6,352 coloring pages\n    - article:\n      - link \"View Animals Alligator printable page\":\n        - /url: /printables/animals/animals-alligator-4feec8505a\n        - img \"Animals Alligator coloring page\"\n      - heading \"Animals Alligator\" [level=3]:\n        - link \"Animals Alligator\":\n          - /url: /printables/animals/animals-alligator-4feec8505a\n      - button \"Print\"\n    - article:\n      - link \"View Anime Girl Air Balloon printable page\":\n        - /url: /printables/anime-girls/anime-girl-air-balloon-1f6b5be7bc\n        - img \"Anime Girl Air Balloon coloring page\"\n      - heading \"Anime Girl Air Balloon\" [level=3]:\n"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "main": "- main:\n  - complementary \"Advertisement\":\n    - insertion\n  - navigation \"Breadcrumb\":\n    - link \"Home\":\n      - /url: /\n    - link \"Coloring Pages\":\n      - /url: /coloring-pages\n    - link \"Animals Coloring Pages\":\n      - /url: /coloring-pages/animals\n    - text: Animals Alligator\n  - heading \"Animals Alligator\" [level=1]\n  - paragraph: A portrait printable in the Animals collection.\n  - region \"Animals Alligator preview and actions\":\n    - img \"Animals Alligator coloring page\"\n    - complementary \"Print and download options\":\n      - button \"Download PDF\"\n      - button \"Print\"\n      - heading \"Download image\" [level=2]\n      - group \"Download available formats for Animals Alligator\":\n        - button \"Download PNG for Animals Alligator\": Download PNG Recommended Printable page image, 2550 × 3300 px\n        - button \"Download JPG for Animals Alligator\": Download JPG Printable page image, 2550 × 3300 px\n        - button \"Download WebP for Animals Alligator\": Download WebP High-resolution artwork image\n      - status\n      - heading \"Page details\" [level=2]\n      - term: Collection\n      - definition:\n        - link \"Animals Coloring Pages\":\n          - /url: /coloring-pages/an"
+          },
+          {
+            "route": "/privacy",
+            "main": "- main:\n  - region \"Privacy Policy\":\n    - paragraph: Privacy\n    - heading \"Privacy Policy\" [level=1]\n    - paragraph: This policy describes the website's current data practices, advertising configuration, analytics status, and visitor choices.\n  - region \"Last updated\":\n    - heading \"Last updated\" [level=2]\n    - paragraph: August 4, 2026\n  - region \"Scope and current site\":\n    - heading \"Scope and current site\" [level=2]\n    - paragraph: I Love Coloring Page is a static printable gallery. Visitors can browse, search, filter, print, and download files. Search and filters run in the browser and do not create public search routes.\n    - paragraph: No account is required to browse, download, or print a coloring page. The site currently provides no accounts, comments, user uploads, payments, or contact form. It does not intentionally request names, birth dates, account details, or profile information through the website.\n  - region \"Operator and contact\":\n    - heading \"Operator and contact\" [level=2]\n    - paragraph:\n      - text: I Love Coloring Page is the public operator display used by this site. No personal name, business entity, or mailing address is published. Privacy quest"
+          },
+          {
+            "route": "/sitemap",
+            "main": "- main:\n  - region \"Sitemap\":\n    - heading \"Sitemap\" [level=1]\n    - paragraph: A grouped index of the public pages and printable coloring page collections on I Love Coloring Page.\n  - region \"Sitemap links\":\n    - region \"Main pages\":\n      - heading \"Main pages\" [level=2]\n      - link \"Home\":\n        - /url: /\n      - link \"All coloring pages 6,352\":\n        - /url: /coloring-pages\n        - text: All coloring pages\n        - strong: 6,352\n      - link \"Sitemap\":\n        - /url: /sitemap\n    - region \"Popular\":\n      - heading \"Popular\" [level=2]\n      - link \"Plushies 1,704\":\n        - /url: /coloring-pages/plushies\n        - text: Plushies\n        - strong: 1,704\n      - link \"Animals 1,450\":\n        - /url: /coloring-pages/animals\n        - text: Animals\n        - strong: 1,450\n      - link \"Fantasy 1,265\":\n        - /url: /coloring-pages/fantasy\n        - text: Fantasy\n        - strong: 1,265\n      - link \"Chibi 908\":\n        - /url: /coloring-pages/chibi\n        - text: Chibi\n        - strong: \"908\"\n      - link \"Anime Girls 905\":\n        - /url: /coloring-pages/anime-girls\n        - text: Anime Girls\n        - strong: \"905\"\n      - link \"Dragons 259\":\n        - /url: /colo"
+          }
+        ]
+      },
+      "liveRegions": {
+        "passed": true,
+        "failures": []
+      },
+      "reducedMotion": {
+        "passed": true,
+        "failures": []
+      },
+      "forcedColors": {
+        "passed": true,
+        "failures": [],
+        "supported": true,
+        "samples": [
+          {
+            "route": "/",
+            "selector": ".site-nav-link",
+            "outlineWidth": "3px",
+            "outlineStyle": "solid",
+            "color": "rgb(0, 0, 159)",
+            "background": "rgba(255, 255, 255, 0)"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "selector": ".related-link",
+            "outlineWidth": "3px",
+            "outlineStyle": "solid",
+            "color": "rgb(0, 0, 159)",
+            "background": "rgba(255, 255, 255, 0)"
+          }
+        ]
+      },
+      "printCss": {
+        "passed": true,
+        "failures": [],
+        "checks": [
+          {
+            "route": "/",
+            "header": "none",
+            "footer": "none",
+            "ad": "none",
+            "buttonDisplays": [
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none"
+            ],
+            "main": "block",
+            "printableColumns": null
+          },
+          {
+            "route": "/privacy",
+            "header": "none",
+            "footer": "none",
+            "ad": null,
+            "buttonDisplays": [
+              "none",
+              "none",
+              "none",
+              "none",
+              "none"
+            ],
+            "main": "grid",
+            "printableColumns": null
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "header": "none",
+            "footer": "none",
+            "ad": "none",
+            "buttonDisplays": [
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none"
+            ],
+            "main": "block",
+            "printableColumns": "1216px"
+          }
+        ],
+        "limitation": "CSS print emulation only; native print dialog was not inspected."
+      },
+      "downloads": {
+        "passed": true,
+        "failures": [],
+        "files": [
+          {
+            "id": "pdf",
+            "filename": "animals-alligator.pdf",
+            "bytes": 613584,
+            "prefix": "%PDF"
+          },
+          {
+            "id": "pdf-repeat",
+            "filename": "animals-alligator.pdf",
+            "bytes": 613584,
+            "prefix": "%PDF"
+          },
+          {
+            "id": "png",
+            "filename": "animals-alligator.png",
+            "bytes": 1404823,
+            "prefix": "89504e47"
+          },
+          {
+            "id": "jpg",
+            "filename": "animals-alligator.jpg",
+            "bytes": 1238249,
+            "prefix": "ffd8ffe0"
+          },
+          {
+            "id": "webp",
+            "filename": "animals-alligator.webp",
+            "bytes": 389232,
+            "prefix": "RIFF"
+          }
+        ],
+        "lifecycle": {
+          "created": 5,
+          "revoked": 5,
+          "active": 0,
+          "anchors": 0
+        },
+        "navigated": false
+      },
+      "printHandoff": {
+        "passed": true,
+        "failures": [],
+        "dialogVisible": true,
+        "printButtonVisible": true,
+        "closeButtonVisible": true,
+        "iframeCount": 0,
+        "limitation": "Preview and handoff controls verified; native OS print dialog was not invoked."
+      },
+      "imageScroll": {
+        "passed": true,
+        "failures": [],
+        "checks": [
+          {
+            "route": "/coloring-pages/animals",
+            "images": 71,
+            "broken": 0,
+            "collapsedCards": 0,
+            "layoutShift": 0.06937758789062501
+          },
+          {
+            "route": "/coloring-pages/christmas",
+            "images": 66,
+            "broken": 0,
+            "collapsedCards": 0,
+            "layoutShift": 0
+          },
+          {
+            "route": "/coloring-pages/plushies/page/36",
+            "images": 24,
+            "broken": 0,
+            "collapsedCards": 0,
+            "layoutShift": 0
+          }
+        ]
+      },
+      "fontFallback": {
+        "passed": true,
+        "failures": [],
+        "checks": [
+          {
+            "route": "/",
+            "width": 320,
+            "overflowPx": 0,
+            "clipped": []
+          },
+          {
+            "route": "/coloring-pages",
+            "width": 320,
+            "overflowPx": 0,
+            "clipped": []
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "width": 320,
+            "overflowPx": 0,
+            "clipped": []
+          },
+          {
+            "route": "/",
+            "width": 390,
+            "overflowPx": 0,
+            "clipped": []
+          },
+          {
+            "route": "/coloring-pages",
+            "width": 390,
+            "overflowPx": 0,
+            "clipped": []
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "width": 390,
+            "overflowPx": 0,
+            "clipped": []
+          },
+          {
+            "route": "/",
+            "width": 1280,
+            "overflowPx": 0,
+            "clipped": []
+          },
+          {
+            "route": "/coloring-pages",
+            "width": 1280,
+            "overflowPx": 0,
+            "clipped": []
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "width": 1280,
+            "overflowPx": 0,
+            "clipped": []
+          }
+        ]
+      },
+      "orientation": {
+        "passed": true,
+        "failures": [],
+        "limitation": "Viewport resizing simulates orientation; this is not real iOS rotation."
+      }
+    },
+    {
+      "id": "firefox",
+      "engine": "Gecko",
+      "available": true,
+      "version": "150.0.2",
+      "automation": "Playwright managed binary",
+      "capabilities": {
+        "headless": true,
+        "screenshots": true,
+        "keyboard": true,
+        "pointerAndTouch": true,
+        "networkInterception": true,
+        "consoleCapture": true,
+        "accessibilitySnapshot": true,
+        "nativePrintDialog": false
+      },
+      "failures": [],
+      "routeViewport": {
+        "passed": true,
+        "failures": [],
+        "checks": 120,
+        "maximumLayoutShift": 0,
+        "maximumLongTaskMs": 0
+      },
+      "keyboard": {
+        "passed": true,
+        "failures": []
+      },
+      "touch": {
+        "passed": true,
+        "failures": []
+      },
+      "reflow": {
+        "passed": true,
+        "failures": [],
+        "checks": 36,
+        "method": "equivalent CSS viewport widths",
+        "factors": [
+          100,
+          125,
+          150,
+          200,
+          300,
+          400
+        ]
+      },
+      "textEnlargement": {
+        "passed": true,
+        "failures": [],
+        "checks": 12,
+        "factors": [
+          100,
+          150,
+          200
+        ]
+      },
+      "focus": {
+        "passed": true,
+        "failures": [],
+        "samples": [
+          {
+            "route": "/",
+            "key": "A:Coloring Pages",
+            "tag": "a",
+            "name": "Coloring Pages",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "BUTTON:Categories",
+            "tag": "button",
+            "name": "Categories",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:For Kids",
+            "tag": "a",
+            "name": "For Kids",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:For Adults",
+            "tag": "a",
+            "name": "For Adults",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "BUTTON:Seasonal",
+            "tag": "button",
+            "name": "Seasonal",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "BUTTON:Search",
+            "tag": "button",
+            "name": "Search",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:Browse all coloring pages",
+            "tag": "a",
+            "name": "Browse all coloring pages",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:Browse collections",
+            "tag": "a",
+            "name": "Browse collections",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:Animals Coloring Pages: 1,450 printable pages",
+            "tag": "a",
+            "name": "Animals Coloring Pages: 1,450 printable pages",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:Christmas Coloring Pages: 332 printable pages",
+            "tag": "a",
+            "name": "Christmas Coloring Pages: 332 printable pages",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:Coloring Pages for Kids: 1,335 printable pages",
+            "tag": "a",
+            "name": "Coloring Pages for Kids: 1,335 printable pages",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:Detailed Coloring Pages for Adults: 1,459 printable pages",
+            "tag": "a",
+            "name": "Detailed Coloring Pages for Adults: 1,459 printable pages",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:Dogs Coloring Pages: 284 printable pages",
+            "tag": "a",
+            "name": "Dogs Coloring Pages: 284 printable pages",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:Plushies Coloring Pages: 1,704 printable pages",
+            "tag": "a",
+            "name": "Plushies Coloring Pages: 1,704 printable pages",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:View Indoor Plants Aglaonema Pink Dalmatian printable page",
+            "tag": "a",
+            "name": "View Indoor Plants Aglaonema Pink Dalmatian printable page",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:Indoor Plants Aglaonema Pink Dalmatian",
+            "tag": "a",
+            "name": "Indoor Plants Aglaonema Pink Dalmatian",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "BUTTON:Print",
+            "tag": "button",
+            "name": "Print",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:View Animals Antelopes printable page",
+            "tag": "a",
+            "name": "View Animals Antelopes printable page",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "A:Animals Antelopes",
+            "tag": "a",
+            "name": "Animals Antelopes",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "A:Coloring Pages",
+            "tag": "a",
+            "name": "Coloring Pages",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "BUTTON:Categories",
+            "tag": "button",
+            "name": "Categories",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "A:For Kids",
+            "tag": "a",
+            "name": "For Kids",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "A:For Adults",
+            "tag": "a",
+            "name": "For Adults",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "BUTTON:Seasonal",
+            "tag": "button",
+            "name": "Seasonal",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "BUTTON:Search",
+            "tag": "button",
+            "name": "Search",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "A:Home",
+            "tag": "a",
+            "name": "Home",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "INPUT:Search this collection",
+            "tag": "input",
+            "name": "Search this collection",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "BUTTON:Filters",
+            "tag": "button",
+            "name": "Filters",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "A:View Animals Alligator printable page",
+            "tag": "a",
+            "name": "View Animals Alligator printable page",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "A:Animals Alligator",
+            "tag": "a",
+            "name": "Animals Alligator",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "BUTTON:Print",
+            "tag": "button",
+            "name": "Print",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "A:View Anime Girl Air Balloon printable page",
+            "tag": "a",
+            "name": "View Anime Girl Air Balloon printable page",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "A:Anime Girl Air Balloon",
+            "tag": "a",
+            "name": "Anime Girl Air Balloon",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "key": "A:Coloring Pages",
+            "tag": "a",
+            "name": "Coloring Pages",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "key": "BUTTON:Categories",
+            "tag": "button",
+            "name": "Categories",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "key": "A:For Kids",
+            "tag": "a",
+            "name": "For Kids",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "key": "A:For Adults",
+            "tag": "a",
+            "name": "For Adults",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "key": "BUTTON:Seasonal",
+            "tag": "button",
+            "name": "Seasonal",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "key": "BUTTON:Search",
+            "tag": "button",
+            "name": "Search",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "key": "A:Home",
+            "tag": "a",
+            "name": "Home",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          }
+        ],
+        "scanned": 40
+      },
+      "semantics": {
+        "passed": true,
+        "failures": [],
+        "snapshots": [
+          {
+            "route": "/",
+            "main": "- main:\n  - complementary \"Advertisement\":\n    - insertion\n  - heading \"I Love Coloring Page\" [level=1]\n  - paragraph: The complete library spans animals, characters, patterns, plants, food, vehicles, places, and seasonal designs. The library currently contains 6,352 printable pages.\n  - link \"Browse all coloring pages\":\n    - /url: /coloring-pages\n  - link \"Browse collections\":\n    - /url: \"#primary-collections\"\n  - region \"Start with a collection\":\n    - heading \"Start with a collection\" [level=2]\n    - paragraph: These broad destinations separate subject, season, audience, and visual style.\n    - 'link \"Animals Coloring Pages: 1,450 printable pages\"':\n      - /url: /coloring-pages/animals\n      - img \"Animals Alligator coloring page\"\n      - text: Animals\n      - strong: 1,450 pages\n      - text: Wild and domestic animals range from dogs and birds to reptiles, insects, sea life, and prehistoric species.\n    - 'link \"Christmas Coloring Pages: 332 printable pages\"':\n      - /url: /coloring-pages/christmas\n      - img \"Christmas Holiday Advent Calendar coloring page\"\n      - text: Christmas\n      - strong: 332 pages\n      - text: Santa, reindeer, trees, ornaments, gifts, winter sce"
+          },
+          {
+            "route": "/coloring-pages",
+            "main": "- main:\n  - complementary \"Advertisement\":\n    - insertion\n  - navigation \"Breadcrumb\":\n    - link \"Home\":\n      - /url: /\n    - text: Coloring Pages\n  - heading \"Printable Coloring Pages\" [level=1]\n  - paragraph: The complete library spans animals, characters, patterns, plants, food, vehicles, places, and seasonal designs. 6,352 printable pages are currently available.\n  - region \"Find a coloring page\":\n    - heading \"Find a coloring page\" [level=2]\n    - text: Search this collection\n    - searchbox \"Search this collection\"\n    - button \"Filters\"\n    - paragraph: 6,352 coloring pages\n    - article:\n      - link \"View Animals Alligator printable page\":\n        - /url: /printables/animals/animals-alligator-4feec8505a\n        - img \"Animals Alligator coloring page\"\n      - heading \"Animals Alligator\" [level=3]:\n        - link \"Animals Alligator\":\n          - /url: /printables/animals/animals-alligator-4feec8505a\n      - button \"Print\"\n    - article:\n      - link \"View Anime Girl Air Balloon printable page\":\n        - /url: /printables/anime-girls/anime-girl-air-balloon-1f6b5be7bc\n        - img \"Anime Girl Air Balloon coloring page\"\n      - heading \"Anime Girl Air Balloon\" [level=3]:\n"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "main": "- main:\n  - complementary \"Advertisement\":\n    - insertion\n  - navigation \"Breadcrumb\":\n    - link \"Home\":\n      - /url: /\n    - link \"Coloring Pages\":\n      - /url: /coloring-pages\n    - link \"Animals Coloring Pages\":\n      - /url: /coloring-pages/animals\n    - text: Animals Alligator\n  - heading \"Animals Alligator\" [level=1]\n  - paragraph: A portrait printable in the Animals collection.\n  - region \"Animals Alligator preview and actions\":\n    - img \"Animals Alligator coloring page\"\n    - complementary \"Print and download options\":\n      - button \"Download PDF\"\n      - button \"Print\"\n      - heading \"Download image\" [level=2]\n      - group \"Download available formats for Animals Alligator\":\n        - button \"Download PNG for Animals Alligator\": Download PNG Recommended Printable page image, 2550 × 3300 px\n        - button \"Download JPG for Animals Alligator\": Download JPG Printable page image, 2550 × 3300 px\n        - button \"Download WebP for Animals Alligator\": Download WebP High-resolution artwork image\n      - status\n      - heading \"Page details\" [level=2]\n      - term: Collection\n      - definition:\n        - link \"Animals Coloring Pages\":\n          - /url: /coloring-pages/an"
+          },
+          {
+            "route": "/privacy",
+            "main": "- main:\n  - region \"Privacy Policy\":\n    - paragraph: Privacy\n    - heading \"Privacy Policy\" [level=1]\n    - paragraph: This policy describes the website's current data practices, advertising configuration, analytics status, and visitor choices.\n  - region \"Last updated\":\n    - heading \"Last updated\" [level=2]\n    - paragraph: August 4, 2026\n  - region \"Scope and current site\":\n    - heading \"Scope and current site\" [level=2]\n    - paragraph: I Love Coloring Page is a static printable gallery. Visitors can browse, search, filter, print, and download files. Search and filters run in the browser and do not create public search routes.\n    - paragraph: No account is required to browse, download, or print a coloring page. The site currently provides no accounts, comments, user uploads, payments, or contact form. It does not intentionally request names, birth dates, account details, or profile information through the website.\n  - region \"Operator and contact\":\n    - heading \"Operator and contact\" [level=2]\n    - paragraph:\n      - text: I Love Coloring Page is the public operator display used by this site. No personal name, business entity, or mailing address is published. Privacy quest"
+          },
+          {
+            "route": "/sitemap",
+            "main": "- main:\n  - region \"Sitemap\":\n    - heading \"Sitemap\" [level=1]\n    - paragraph: A grouped index of the public pages and printable coloring page collections on I Love Coloring Page.\n  - region \"Sitemap links\":\n    - region \"Main pages\":\n      - heading \"Main pages\" [level=2]\n      - link \"Home\":\n        - /url: /\n      - link \"All coloring pages 6,352\":\n        - /url: /coloring-pages\n        - text: All coloring pages\n        - strong: 6,352\n      - link \"Sitemap\":\n        - /url: /sitemap\n    - region \"Popular\":\n      - heading \"Popular\" [level=2]\n      - link \"Plushies 1,704\":\n        - /url: /coloring-pages/plushies\n        - text: Plushies\n        - strong: 1,704\n      - link \"Animals 1,450\":\n        - /url: /coloring-pages/animals\n        - text: Animals\n        - strong: 1,450\n      - link \"Fantasy 1,265\":\n        - /url: /coloring-pages/fantasy\n        - text: Fantasy\n        - strong: 1,265\n      - link \"Chibi 908\":\n        - /url: /coloring-pages/chibi\n        - text: Chibi\n        - strong: \"908\"\n      - link \"Anime Girls 905\":\n        - /url: /coloring-pages/anime-girls\n        - text: Anime Girls\n        - strong: \"905\"\n      - link \"Dragons 259\":\n        - /url: /colo"
+          }
+        ]
+      },
+      "liveRegions": {
+        "passed": true,
+        "failures": []
+      },
+      "reducedMotion": {
+        "passed": true,
+        "failures": []
+      },
+      "forcedColors": {
+        "passed": true,
+        "failures": [],
+        "supported": false,
+        "limitation": "Playwright forced-colors emulation is recorded only for installed Chromium channels."
+      },
+      "printCss": {
+        "passed": true,
+        "failures": [],
+        "checks": [
+          {
+            "route": "/",
+            "header": "none",
+            "footer": "none",
+            "ad": "none",
+            "buttonDisplays": [
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none"
+            ],
+            "main": "block",
+            "printableColumns": null
+          },
+          {
+            "route": "/privacy",
+            "header": "none",
+            "footer": "none",
+            "ad": null,
+            "buttonDisplays": [
+              "none",
+              "none",
+              "none",
+              "none",
+              "none"
+            ],
+            "main": "grid",
+            "printableColumns": null
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "header": "none",
+            "footer": "none",
+            "ad": "none",
+            "buttonDisplays": [
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none"
+            ],
+            "main": "block",
+            "printableColumns": "1216px"
+          }
+        ],
+        "limitation": "CSS print emulation only; native print dialog was not inspected."
+      },
+      "downloads": {
+        "passed": true,
+        "failures": [],
+        "files": [
+          {
+            "id": "pdf",
+            "filename": "animals-alligator.pdf",
+            "bytes": 600964,
+            "prefix": "%PDF"
+          },
+          {
+            "id": "pdf-repeat",
+            "filename": "animals-alligator.pdf",
+            "bytes": 600964,
+            "prefix": "%PDF"
+          },
+          {
+            "id": "png",
+            "filename": "animals-alligator.png",
+            "bytes": 1588974,
+            "prefix": "89504e47"
+          },
+          {
+            "id": "jpg",
+            "filename": "animals-alligator.jpg",
+            "bytes": 1375986,
+            "prefix": "ffd8ffe0"
+          },
+          {
+            "id": "webp",
+            "filename": "animals-alligator.webp",
+            "bytes": 388704,
+            "prefix": "RIFF"
+          }
+        ],
+        "lifecycle": {
+          "created": 5,
+          "revoked": 5,
+          "active": 0,
+          "anchors": 0
+        },
+        "navigated": false
+      },
+      "printHandoff": {
+        "passed": true,
+        "failures": [],
+        "dialogVisible": true,
+        "printButtonVisible": true,
+        "closeButtonVisible": true,
+        "iframeCount": 0,
+        "limitation": "Preview and handoff controls verified; native OS print dialog was not invoked."
+      },
+      "imageScroll": {
+        "passed": true,
+        "failures": [],
+        "checks": [
+          {
+            "route": "/coloring-pages/animals",
+            "images": 71,
+            "broken": 0,
+            "collapsedCards": 0,
+            "layoutShift": 0
+          },
+          {
+            "route": "/coloring-pages/christmas",
+            "images": 66,
+            "broken": 0,
+            "collapsedCards": 0,
+            "layoutShift": 0
+          },
+          {
+            "route": "/coloring-pages/plushies/page/36",
+            "images": 24,
+            "broken": 0,
+            "collapsedCards": 0,
+            "layoutShift": 0
+          }
+        ]
+      },
+      "fontFallback": {
+        "passed": true,
+        "failures": [],
+        "checks": [
+          {
+            "route": "/",
+            "width": 320,
+            "overflowPx": 0,
+            "clipped": []
+          },
+          {
+            "route": "/coloring-pages",
+            "width": 320,
+            "overflowPx": 0,
+            "clipped": []
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "width": 320,
+            "overflowPx": 0,
+            "clipped": []
+          },
+          {
+            "route": "/",
+            "width": 390,
+            "overflowPx": 0,
+            "clipped": []
+          },
+          {
+            "route": "/coloring-pages",
+            "width": 390,
+            "overflowPx": 0,
+            "clipped": []
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "width": 390,
+            "overflowPx": 0,
+            "clipped": []
+          },
+          {
+            "route": "/",
+            "width": 1280,
+            "overflowPx": 0,
+            "clipped": []
+          },
+          {
+            "route": "/coloring-pages",
+            "width": 1280,
+            "overflowPx": 0,
+            "clipped": []
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "width": 1280,
+            "overflowPx": 0,
+            "clipped": []
+          }
+        ]
+      },
+      "orientation": {
+        "passed": true,
+        "failures": [],
+        "limitation": "Viewport resizing simulates orientation; this is not real iOS rotation."
+      }
+    },
+    {
+      "id": "webkit",
+      "engine": "WebKit",
+      "available": true,
+      "version": "26.4",
+      "automation": "Playwright managed binary",
+      "capabilities": {
+        "headless": true,
+        "screenshots": true,
+        "keyboard": true,
+        "pointerAndTouch": true,
+        "networkInterception": true,
+        "consoleCapture": true,
+        "accessibilitySnapshot": true,
+        "nativePrintDialog": false
+      },
+      "failures": [],
+      "routeViewport": {
+        "passed": true,
+        "failures": [],
+        "checks": 120,
+        "maximumLayoutShift": 0,
+        "maximumLongTaskMs": 0
+      },
+      "keyboard": {
+        "passed": true,
+        "failures": []
+      },
+      "touch": {
+        "passed": true,
+        "failures": []
+      },
+      "reflow": {
+        "passed": true,
+        "failures": [],
+        "checks": 36,
+        "method": "equivalent CSS viewport widths",
+        "factors": [
+          100,
+          125,
+          150,
+          200,
+          300,
+          400
+        ]
+      },
+      "textEnlargement": {
+        "passed": true,
+        "failures": [],
+        "checks": 12,
+        "factors": [
+          100,
+          150,
+          200
+        ]
+      },
+      "focus": {
+        "passed": true,
+        "failures": [],
+        "samples": [
+          {
+            "route": "/",
+            "key": "BUTTON:Categories",
+            "tag": "button",
+            "name": "Categories",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "BUTTON:Seasonal",
+            "tag": "button",
+            "name": "Seasonal",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "BUTTON:Search",
+            "tag": "button",
+            "name": "Search",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/",
+            "key": "BUTTON:Print",
+            "tag": "button",
+            "name": "Print",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "BUTTON:Categories",
+            "tag": "button",
+            "name": "Categories",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "BUTTON:Seasonal",
+            "tag": "button",
+            "name": "Seasonal",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "BUTTON:Search",
+            "tag": "button",
+            "name": "Search",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "INPUT:Search this collection",
+            "tag": "input",
+            "name": "Search this collection",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "BUTTON:Filters",
+            "tag": "button",
+            "name": "Filters",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/coloring-pages",
+            "key": "BUTTON:Print",
+            "tag": "button",
+            "name": "Print",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "key": "BUTTON:Categories",
+            "tag": "button",
+            "name": "Categories",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "key": "BUTTON:Seasonal",
+            "tag": "button",
+            "name": "Seasonal",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "key": "BUTTON:Search",
+            "tag": "button",
+            "name": "Search",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "key": "BUTTON:Download PDF",
+            "tag": "button",
+            "name": "Download PDF",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "key": "BUTTON:Print",
+            "tag": "button",
+            "name": "Print",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "key": "SUMMARY:Printing and downloads",
+            "tag": "summary",
+            "name": "Printing and downloads",
+            "visible": true,
+            "focusIndicator": true,
+            "outline": "3px solid rgb(27, 31, 59)",
+            "boxShadow": "none"
+          }
+        ],
+        "scanned": 16
+      },
+      "semantics": {
+        "passed": true,
+        "failures": [],
+        "snapshots": [
+          {
+            "route": "/",
+            "main": "- main:\n  - complementary \"Advertisement\":\n    - insertion\n  - heading \"I Love Coloring Page\" [level=1]\n  - paragraph: The complete library spans animals, characters, patterns, plants, food, vehicles, places, and seasonal designs. The library currently contains 6,352 printable pages.\n  - link \"Browse all coloring pages\":\n    - /url: /coloring-pages\n  - link \"Browse collections\":\n    - /url: \"#primary-collections\"\n  - region \"Start with a collection\":\n    - heading \"Start with a collection\" [level=2]\n    - paragraph: These broad destinations separate subject, season, audience, and visual style.\n    - 'link \"Animals Coloring Pages: 1,450 printable pages\"':\n      - /url: /coloring-pages/animals\n      - img \"Animals Alligator coloring page\"\n      - text: Animals\n      - strong: 1,450 pages\n      - text: Wild and domestic animals range from dogs and birds to reptiles, insects, sea life, and prehistoric species.\n    - 'link \"Christmas Coloring Pages: 332 printable pages\"':\n      - /url: /coloring-pages/christmas\n      - img \"Christmas Holiday Advent Calendar coloring page\"\n      - text: Christmas\n      - strong: 332 pages\n      - text: Santa, reindeer, trees, ornaments, gifts, winter sce"
+          },
+          {
+            "route": "/coloring-pages",
+            "main": "- main:\n  - complementary \"Advertisement\":\n    - insertion\n  - navigation \"Breadcrumb\":\n    - link \"Home\":\n      - /url: /\n    - text: Coloring Pages\n  - heading \"Printable Coloring Pages\" [level=1]\n  - paragraph: The complete library spans animals, characters, patterns, plants, food, vehicles, places, and seasonal designs. 6,352 printable pages are currently available.\n  - region \"Find a coloring page\":\n    - heading \"Find a coloring page\" [level=2]\n    - text: Search this collection\n    - searchbox \"Search this collection\"\n    - button \"Filters\"\n    - paragraph: 6,352 coloring pages\n    - article:\n      - link \"View Animals Alligator printable page\":\n        - /url: /printables/animals/animals-alligator-4feec8505a\n        - img \"Animals Alligator coloring page\"\n      - heading \"Animals Alligator\" [level=3]:\n        - link \"Animals Alligator\":\n          - /url: /printables/animals/animals-alligator-4feec8505a\n      - button \"Print\"\n    - article:\n      - link \"View Anime Girl Air Balloon printable page\":\n        - /url: /printables/anime-girls/anime-girl-air-balloon-1f6b5be7bc\n        - img \"Anime Girl Air Balloon coloring page\"\n      - heading \"Anime Girl Air Balloon\" [level=3]:\n"
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "main": "- main:\n  - complementary \"Advertisement\":\n    - insertion\n  - navigation \"Breadcrumb\":\n    - link \"Home\":\n      - /url: /\n    - link \"Coloring Pages\":\n      - /url: /coloring-pages\n    - link \"Animals Coloring Pages\":\n      - /url: /coloring-pages/animals\n    - text: Animals Alligator\n  - heading \"Animals Alligator\" [level=1]\n  - paragraph: A portrait printable in the Animals collection.\n  - region \"Animals Alligator preview and actions\":\n    - img \"Animals Alligator coloring page\"\n    - complementary \"Print and download options\":\n      - button \"Download PDF\"\n      - button \"Print\"\n      - heading \"Download image\" [level=2]\n      - group \"Download available formats for Animals Alligator\":\n        - button \"Download PNG for Animals Alligator\": Download PNG Recommended Printable page image, 2550 × 3300 px\n      - status\n      - heading \"Page details\" [level=2]\n      - term: Collection\n      - definition:\n        - link \"Animals Coloring Pages\":\n          - /url: /coloring-pages/animals\n      - term: Subject\n      - definition: Animals\n      - term: Artwork orientation\n      - definition: Portrait\n      - term: Printable PDF\n      - definition: US Letter, portrait\n      - term: PDF "
+          },
+          {
+            "route": "/privacy",
+            "main": "- main:\n  - region \"Privacy Policy\":\n    - paragraph: Privacy\n    - heading \"Privacy Policy\" [level=1]\n    - paragraph: This policy describes the website's current data practices, advertising configuration, analytics status, and visitor choices.\n  - region \"Last updated\":\n    - heading \"Last updated\" [level=2]\n    - paragraph: August 4, 2026\n  - region \"Scope and current site\":\n    - heading \"Scope and current site\" [level=2]\n    - paragraph: I Love Coloring Page is a static printable gallery. Visitors can browse, search, filter, print, and download files. Search and filters run in the browser and do not create public search routes.\n    - paragraph: No account is required to browse, download, or print a coloring page. The site currently provides no accounts, comments, user uploads, payments, or contact form. It does not intentionally request names, birth dates, account details, or profile information through the website.\n  - region \"Operator and contact\":\n    - heading \"Operator and contact\" [level=2]\n    - paragraph:\n      - text: I Love Coloring Page is the public operator display used by this site. No personal name, business entity, or mailing address is published. Privacy quest"
+          },
+          {
+            "route": "/sitemap",
+            "main": "- main:\n  - region \"Sitemap\":\n    - heading \"Sitemap\" [level=1]\n    - paragraph: A grouped index of the public pages and printable coloring page collections on I Love Coloring Page.\n  - region \"Sitemap links\":\n    - region \"Main pages\":\n      - heading \"Main pages\" [level=2]\n      - link \"Home\":\n        - /url: /\n      - link \"All coloring pages 6,352\":\n        - /url: /coloring-pages\n        - text: All coloring pages\n        - strong: 6,352\n      - link \"Sitemap\":\n        - /url: /sitemap\n    - region \"Popular\":\n      - heading \"Popular\" [level=2]\n      - link \"Plushies 1,704\":\n        - /url: /coloring-pages/plushies\n        - text: Plushies\n        - strong: 1,704\n      - link \"Animals 1,450\":\n        - /url: /coloring-pages/animals\n        - text: Animals\n        - strong: 1,450\n      - link \"Fantasy 1,265\":\n        - /url: /coloring-pages/fantasy\n        - text: Fantasy\n        - strong: 1,265\n      - link \"Chibi 908\":\n        - /url: /coloring-pages/chibi\n        - text: Chibi\n        - strong: \"908\"\n      - link \"Anime Girls 905\":\n        - /url: /coloring-pages/anime-girls\n        - text: Anime Girls\n        - strong: \"905\"\n      - link \"Dragons 259\":\n        - /url: /colo"
+          }
+        ]
+      },
+      "liveRegions": {
+        "passed": true,
+        "failures": []
+      },
+      "reducedMotion": {
+        "passed": true,
+        "failures": []
+      },
+      "forcedColors": {
+        "passed": true,
+        "failures": [],
+        "supported": false,
+        "limitation": "Playwright forced-colors emulation is recorded only for installed Chromium channels."
+      },
+      "printCss": {
+        "passed": true,
+        "failures": [],
+        "checks": [
+          {
+            "route": "/",
+            "header": "none",
+            "footer": "none",
+            "ad": "none",
+            "buttonDisplays": [
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none"
+            ],
+            "main": "block",
+            "printableColumns": null
+          },
+          {
+            "route": "/privacy",
+            "header": "none",
+            "footer": "none",
+            "ad": null,
+            "buttonDisplays": [
+              "none",
+              "none",
+              "none",
+              "none",
+              "none"
+            ],
+            "main": "grid",
+            "printableColumns": null
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "header": "none",
+            "footer": "none",
+            "ad": "none",
+            "buttonDisplays": [
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none",
+              "none"
+            ],
+            "main": "block",
+            "printableColumns": "1216px"
+          }
+        ],
+        "limitation": "CSS print emulation only; native print dialog was not inspected."
+      },
+      "downloads": {
+        "passed": true,
+        "failures": [],
+        "files": [
+          {
+            "id": "pdf",
+            "filename": "animals-alligator.pdf",
+            "bytes": 578193,
+            "prefix": "%PDF"
+          },
+          {
+            "id": "pdf-repeat",
+            "filename": "animals-alligator.pdf",
+            "bytes": 578193,
+            "prefix": "%PDF"
+          },
+          {
+            "id": "png",
+            "filename": "animals-alligator.png",
+            "bytes": 1003356,
+            "prefix": "89504e47"
+          },
+          {
+            "id": "jpg",
+            "filename": "animals-alligator.jpg",
+            "bytes": 1239072,
+            "prefix": "ffd8ffe0"
+          },
+          {
+            "id": "webp",
+            "filename": "animals-alligator.webp",
+            "bytes": 389170,
+            "prefix": "RIFF"
+          }
+        ],
+        "lifecycle": {
+          "created": 5,
+          "revoked": 5,
+          "active": 0,
+          "anchors": 0
+        },
+        "navigated": false
+      },
+      "printHandoff": {
+        "passed": true,
+        "failures": [],
+        "dialogVisible": true,
+        "printButtonVisible": true,
+        "closeButtonVisible": true,
+        "iframeCount": 0,
+        "limitation": "Preview and handoff controls verified; native OS print dialog was not invoked."
+      },
+      "imageScroll": {
+        "passed": true,
+        "failures": [],
+        "checks": [
+          {
+            "route": "/coloring-pages/animals",
+            "images": 71,
+            "broken": 0,
+            "collapsedCards": 0,
+            "layoutShift": 0
+          },
+          {
+            "route": "/coloring-pages/christmas",
+            "images": 66,
+            "broken": 0,
+            "collapsedCards": 0,
+            "layoutShift": 0
+          },
+          {
+            "route": "/coloring-pages/plushies/page/36",
+            "images": 24,
+            "broken": 0,
+            "collapsedCards": 0,
+            "layoutShift": 0
+          }
+        ]
+      },
+      "fontFallback": {
+        "passed": true,
+        "failures": [],
+        "checks": [
+          {
+            "route": "/",
+            "width": 320,
+            "overflowPx": 0,
+            "clipped": []
+          },
+          {
+            "route": "/coloring-pages",
+            "width": 320,
+            "overflowPx": 0,
+            "clipped": []
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "width": 320,
+            "overflowPx": 0,
+            "clipped": []
+          },
+          {
+            "route": "/",
+            "width": 390,
+            "overflowPx": 0,
+            "clipped": []
+          },
+          {
+            "route": "/coloring-pages",
+            "width": 390,
+            "overflowPx": 0,
+            "clipped": []
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "width": 390,
+            "overflowPx": 0,
+            "clipped": []
+          },
+          {
+            "route": "/",
+            "width": 1280,
+            "overflowPx": 0,
+            "clipped": []
+          },
+          {
+            "route": "/coloring-pages",
+            "width": 1280,
+            "overflowPx": 0,
+            "clipped": []
+          },
+          {
+            "route": "/printables/animals/animals-alligator-4feec8505a",
+            "width": 1280,
+            "overflowPx": 0,
+            "clipped": []
+          }
+        ]
+      },
+      "orientation": {
+        "passed": true,
+        "failures": [],
+        "limitation": "Viewport resizing simulates orientation; this is not real iOS rotation."
+      }
+    }
+  ],
+  "summary": {
+    "availableBrowsers": 4,
+    "expectedBrowsers": 4,
+    "routeViewportChecks": 480,
+    "keyboardJourneys": 4,
+    "touchJourneys": 4,
+    "downloadSuites": 4,
+    "maximumLayoutShift": 0.0916173193359375,
+    "maximumLongTaskMs": 0,
+    "failures": [],
+    "passed": true
+  }
+}
