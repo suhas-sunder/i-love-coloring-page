@@ -43,6 +43,17 @@ export function RotatingFeaturedGrid({
   return (
     <div
       className="rotating-featured-grid"
+      role="region"
+      aria-label="Featured coloring pages, scroll for more"
+      tabIndex={0}
+      onFocusCapture={(event) => {
+        const card = event.target.closest<HTMLElement>(".gallery-item");
+        if (!card) return;
+        const shelf = event.currentTarget.getBoundingClientRect();
+        const artwork = card.getBoundingClientRect();
+        if (artwork.left < shelf.left) event.currentTarget.scrollLeft -= shelf.left - artwork.left;
+        else if (artwork.right > shelf.right) event.currentTarget.scrollLeft += artwork.right - shelf.right;
+      }}
       data-featured-rotation-hub={hubSlug}
       data-featured-rotation-mode={mode}
     >

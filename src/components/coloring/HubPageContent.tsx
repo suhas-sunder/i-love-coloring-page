@@ -18,8 +18,6 @@ import { JsonLdScript } from "../seo/JsonLdScript";
 import { CollectionPageHeader } from "./CollectionPageHeader";
 import { GallerySearch } from "./GallerySearch";
 import { HubCard } from "./HubCard";
-import { Pagination } from "./Pagination";
-import { PaginatedGalleryGrid } from "./PaginatedGalleryGrid";
 import { RelatedHubs } from "./RelatedHubs";
 import { RotatingFeaturedGrid } from "./RotatingFeaturedGrid";
 
@@ -85,6 +83,7 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
               </div>
             </div>
             <GallerySearch
+              key={`${hub.hubId}-${page}`}
               hubTitle={hub.title}
               totalItems={pagedGallery.totalItems}
               pageItems={pagedGallery.items}
@@ -94,6 +93,7 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
               pagination={{
                 basePath: hub.route,
                 currentPage: pagedGallery.currentPage,
+                pageSize: pagedGallery.pageSize,
                 totalPages: pagedGallery.totalPages,
                 hasPreviousPage: pagedGallery.hasPreviousPage,
                 hasNextPage: pagedGallery.hasNextPage,
@@ -135,22 +135,27 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
         </>
       ) : (
         <>
-          <section className="content-section paginated-gallery-section" aria-labelledby="page-gallery-title" data-page-section="paginated-gallery">
+          <section className="content-section paginated-gallery-section" id="gallery" aria-labelledby="page-gallery-title" data-page-section="paginated-gallery">
             <div className="section-heading-row">
               <div>
                 <h2 className="section-title" id="page-gallery-title">More {collectionName(hub)}</h2>
               </div>
             </div>
-            <p className="results-note" aria-live="polite">
-              Showing {(((pagedGallery.currentPage - 1) * pagedGallery.pageSize) + 1).toLocaleString()}-{Math.min(pagedGallery.currentPage * pagedGallery.pageSize, pagedGallery.totalItems).toLocaleString()} of {pagedGallery.totalItems.toLocaleString()} printables.
-            </p>
-            <PaginatedGalleryGrid items={pagedGallery.items} />
-            <Pagination
-              basePath={hub.route}
-              currentPage={pagedGallery.currentPage}
-              totalPages={pagedGallery.totalPages}
-              hasPreviousPage={pagedGallery.hasPreviousPage}
-              hasNextPage={pagedGallery.hasNextPage}
+            <GallerySearch
+              key={`${hub.hubId}-${page}`}
+              hubTitle={hub.title}
+              totalItems={pagedGallery.totalItems}
+              pageItems={pagedGallery.items}
+              searchDataPath={`/search-data/hubs/${hub.slug}.json`}
+              filterTags={tags}
+              pagination={{
+                basePath: hub.route,
+                currentPage: pagedGallery.currentPage,
+                pageSize: pagedGallery.pageSize,
+                totalPages: pagedGallery.totalPages,
+                hasPreviousPage: pagedGallery.hasPreviousPage,
+                hasNextPage: pagedGallery.hasNextPage,
+              }}
             />
           </section>
 

@@ -13,6 +13,7 @@ import { getCollectionCount } from "@/lib/coloring/collectionCounts";
 import { AssetImage } from "./AssetImage";
 import { GalleryGrid } from "./GalleryGrid";
 import { PrintableDetailActions } from "./PrintableDetailActions";
+import { PrintableCardActions } from "./PrintableCardActions";
 
 export function PrintableDetailPage({ printable }: { printable: RuntimePrintable }) {
   const primaryHub = getPrintablePrimaryHub(printable);
@@ -48,6 +49,7 @@ export function PrintableDetailPage({ printable }: { printable: RuntimePrintable
         data-page-section="printable-main"
         data-printable-experience-version="default-only-v2"
       >
+        <div className="printable-artwork">
         <div
           className="printable-preview"
           data-preview-source={assetSources.principalPreview.kind}
@@ -63,6 +65,8 @@ export function PrintableDetailPage({ printable }: { printable: RuntimePrintable
             width={assetSources.principalPreview.width}
             height={assetSources.principalPreview.height}
           />
+        </div>
+        <PrintableCardActions item={item} assetUrls={{ internalSvg: assetSources.fullResolutionArtwork.url, png: null }} className="printable-enlarge" buttonClassName="button button-subtle" label="Enlarge preview" />
         </div>
         <aside className="printable-action-panel" aria-label="Print and download options">
           <PrintableDetailActions item={item} internalSvgUrl={assetSources.fullResolutionArtwork.url} pngPreviewUrl={null} />

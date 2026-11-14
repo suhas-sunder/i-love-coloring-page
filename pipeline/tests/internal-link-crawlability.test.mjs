@@ -8,6 +8,7 @@ import {
   normalizeInternalHref,
   parseHtmlDocument,
   tokenizeHtml,
+  validateHubPagination,
 } from "../lib/internal-link-graph.mjs";
 
 const SITE = "https://www.ilovecoloringpage.com";
@@ -93,6 +94,25 @@ test("full graph analysis fails clearly when the production export prerequisite 
     () => analyzeInternalLinkGraph({ rootDir: process.cwd(), outDir: path.join(process.cwd(), "__missing-static-export__") }),
     /production output was not found.*Run the production build first/,
   );
+});
+
+test("pagination audit accepts bounded numbered destinations and rejects missing or unrelated links", () => {
+  const hub = { route: "/coloring-pages/animals", slug: "animals", indexable: true, sitemap: true, galleryPageSize: 2, assetIds: ["a", "b", "c", "d", "e", "f", "g", "h"] };
+  const route = (page) => page === 1 ? hub.route : `${hub.route}/page/${page}`;
+  const printableById = new Map(hub.assetIds.map((id) => [id, { canonicalPath: `/printables/animals/${id}` }]));
+  const targets = [[1, 2, 4], [1, 2, 3, 4], [1, 2, 3, 4], [1, 3, 4]];
+  const anchorEvidence = targets.flatMap((pages, index) => [
+    ...pages.map((page) => ({ source: route(index + 1), region: "pagination", normalizedTarget: route(page) })),
+    ...hub.assetIds.slice(index * 2, index * 2 + 2).map((id) => ({ source: route(index + 1), region: "gallery-card", normalizedTarget: printableById.get(id).canonicalPath })),
+  ]);
+  const input = { routeModel: { hubs: [hub], printableById }, nodeByRoute: new Map(targets.map((_, i) => [route(i + 1), {}])), anchorEvidence };
+  assert.deepEqual(validateHubPagination(input).findings, []);
+  const missingNext = anchorEvidence.filter((edge) => !(edge.source === route(2) && edge.region === "pagination" && edge.normalizedTarget === route(3)));
+  assert.equal(validateHubPagination({ ...input, anchorEvidence: missingNext }).summary.failureCount, 1);
+  const unrelated = [...anchorEvidence, { source: route(2), region: "pagination", normalizedTarget: "/coloring-pages/flowers" }];
+  assert.equal(validateHubPagination({ ...input, anchorEvidence: unrelated }).summary.failureCount, 1);
+  const missingArtwork = anchorEvidence.filter((edge) => edge.normalizedTarget !== "/printables/animals/a");
+  assert.ok(validateHubPagination({ ...input, anchorEvidence: missingArtwork }).summary.failureCount > 0);
 });
 
 function pick(value) {

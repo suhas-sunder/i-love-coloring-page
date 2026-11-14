@@ -129,9 +129,14 @@ test("related scoring remains build-time deterministic and avoids popularity or 
 test("paginated framing retains orientation once without repeated generated phrasing", async () => {
   const content = await readText("src/components/coloring/HubPageContent.tsx");
   const pagination = await readText("src/components/coloring/Pagination.tsx");
+  const explorer = await readText("src/components/coloring/GallerySearch.tsx");
   assert.match(content, /Continue browsing/);
   assert.match(content, /<h2 className="section-title" id="page-gallery-title">More \{collectionName\(hub\)\}<\/h2>/);
-  assert.match(content, /Showing \{\(\(\(pagedGallery\.currentPage - 1\)/);
+  assert.match(content, /pageSize: pagedGallery\.pageSize/);
+  assert.doesNotMatch(content, /Showing \{/);
+  assert.match(explorer, /isStaticPageView\s*\? pagination/);
+  assert.match(explorer, /Showing \$\{\(\(pagination\.currentPage - 1\) \* pagination\.pageSize \+ 1\)/);
+  assert.match(explorer, /matching coloring pages/);
   assert.doesNotMatch(content, /Printables on page|Showing page \$\{page/);
   assert.match(pagination, /Page \{currentPage\.toLocaleString\(\)\} of \{totalPages\.toLocaleString\(\)\}/);
   assert.match(pagination, />\s*Previous\s*</);

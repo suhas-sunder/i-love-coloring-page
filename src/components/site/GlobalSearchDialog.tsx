@@ -12,6 +12,7 @@ import {
   type NavigationSearchData,
 } from "@/lib/search/navigationSearchData";
 import { normalizeSearchText, rankSearchItems } from "@/lib/search/ranking";
+import { writeGallerySession } from "@/lib/coloring/galleryState";
 
 type GlobalSearchDialogProps = {
   open: boolean;
@@ -176,8 +177,11 @@ export function GlobalSearchDialog({ open, onRequestClose, onNavigate }: GlobalS
         ) : null}
 
         <div className="global-search-footer">
-          <Link className="button button-subtle" href={browseAllColoringPagesLink.href} onClick={onNavigate} prefetch={false}>
-            {browseAllColoringPagesLink.label}
+          <Link className="button button-subtle" href={browseAllColoringPagesLink.href} onClick={() => {
+            if (hasSearchIntent) writeGallerySession("coloring-gallery:v1:/search-data/all.json:1", { query, filters: [], sort: "recommended", visibleCount: 48, expanded: false }, true);
+            onNavigate();
+          }} prefetch={false}>
+            {hasSearchIntent ? "See all printable matches" : browseAllColoringPagesLink.label}
           </Link>
         </div>
       </section>

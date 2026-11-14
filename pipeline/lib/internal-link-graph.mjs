@@ -503,7 +503,7 @@ function validatePrintables({ routeModel, nodeByRoute, anchorEvidence, meaningfu
   };
 }
 
-function validateHubPagination({ routeModel, nodeByRoute, anchorEvidence }) {
+export function validateHubPagination({ routeModel, nodeByRoute, anchorEvidence }) {
   const findings = [];
   let checkedHubCount = 0;
   let checkedPageCount = 0;
@@ -536,9 +536,9 @@ function validateHubPagination({ routeModel, nodeByRoute, anchorEvidence }) {
       represented.push(...primaryCards);
 
       const paginationTargets = anchorEvidence.filter((edge) => edge.source === route && edge.region === "pagination").map((edge) => edge.normalizedTarget);
-      const expectedTargets = [];
-      if (pageNumber > 1) expectedTargets.push(pageNumber === 2 ? hub.route : `${hub.route}/page/${pageNumber - 1}`);
-      if (pageNumber < totalPages) expectedTargets.push(`${hub.route}/page/${pageNumber + 1}`);
+      const expectedTargets = totalPages <= 1 ? [] : [...new Set([1, pageNumber - 1, pageNumber, pageNumber + 1, totalPages])]
+        .filter((page) => page >= 1 && page <= totalPages)
+        .map((page) => page === 1 ? hub.route : `${hub.route}/page/${page}`);
       if (!sameMembers([...new Set(paginationTargets)], expectedTargets)) {
         findings.push(finding(route, "pagination-link-mismatch", { expectedTargets, actualTargets: [...new Set(paginationTargets)] }));
       }

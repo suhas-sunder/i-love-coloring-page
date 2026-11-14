@@ -460,17 +460,21 @@ function sha256(bytes) {
 }
 
 function buildBrowserDownloadsModuleUrl() {
-  const compositionSource = require("node:fs").readFileSync(path.join(ROOT, "src", "lib", "coloring", "exportComposition.ts"), "utf8");
-  const compositionOutput = ts.transpileModule(compositionSource, {
-    compilerOptions: { module: ts.ModuleKind.ES2022, target: ts.ScriptTarget.ES2022, isolatedModules: true },
-  }).outputText;
-  const compositionUrl = `data:text/javascript;base64,${Buffer.from(compositionOutput).toString("base64")}`;
-  const downloadsSource = require("node:fs").readFileSync(path.join(ROOT, "src", "lib", "coloring", "browserDownloads.ts"), "utf8")
-    .replace('from "./exportComposition";', `from "${compositionUrl}";`);
-  const downloadsOutput = ts.transpileModule(downloadsSource, {
-    compilerOptions: { module: ts.ModuleKind.ES2022, target: ts.ScriptTarget.ES2022, isolatedModules: true },
-  }).outputText;
-  return `data:text/javascript;base64,${Buffer.from(downloadsOutput).toString("base64")}`;
+  // The production runtime is split into canvas/support/artwork modules. Resolve
+  // its actual runtime imports after removing type-only imports, rather than
+  // testing an outdated single-file representation of browserDownloads.
+  const cache = new Map();
+  function moduleUrl(name) {
+    if (cache.has(name)) return cache.get(name);
+    const source = require("node:fs").readFileSync(path.join(ROOT, "src", "lib", "coloring", `${name}.ts`), "utf8");
+    const output = ts.transpileModule(source, {
+      compilerOptions: { module: ts.ModuleKind.ES2022, target: ts.ScriptTarget.ES2022, isolatedModules: true },
+    }).outputText.replace(/from "\.\/([\w]+)"/g, (_, dependency) => `from "${moduleUrl(dependency)}"`);
+    const url = `data:text/javascript;base64,${Buffer.from(output).toString("base64")}`;
+    cache.set(name, url);
+    return url;
+  }
+  return moduleUrl("browserDownloads");
 }
 
 function firstLine(error) {

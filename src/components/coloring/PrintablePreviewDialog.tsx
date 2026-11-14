@@ -24,6 +24,9 @@ export function PrintablePreviewDialog({ open, onClose, item, internalSvgUrl, pn
   const [status, setStatus] = useState("");
   const [preparing, setPreparing] = useState(false);
   const [printing, setPrinting] = useState(false);
+  const [downloadingPdf, setDownloadingPdf] = useState(false);
+  const [zoomed, setZoomed] = useState(false);
+  const [retry, setRetry] = useState(0);
   const [prepared, setPrepared] = useState<PreparedPrintImageResult | null>(null);
   const panelRef = useRef<HTMLElement>(null);
   const runIdRef = useRef(0);
@@ -31,6 +34,7 @@ export function PrintablePreviewDialog({ open, onClose, item, internalSvgUrl, pn
   const titleId = useId();
 
   useEffect(() => setMounted(true), []);
+  useEffect(() => () => printOperationRef.current.cancel(), []);
 
   useModalDialog({ open, panelRef, onEscape: onClose });
 
@@ -40,6 +44,8 @@ export function PrintablePreviewDialog({ open, onClose, item, internalSvgUrl, pn
       printOperationRef.current.cancel();
       setPreparing(false);
       setPrinting(false);
+      setDownloadingPdf(false);
+      setZoomed(false);
       setStatus("");
       setPrepared((current) => {
         revokePreparedImage(current);
@@ -72,7 +78,7 @@ export function PrintablePreviewDialog({ open, onClose, item, internalSvgUrl, pn
       previewController.abort();
       runIdRef.current += 1;
     };
-  }, [internalSvgUrl, item.altText, item.title, open, pngPreviewUrl]);
+  }, [internalSvgUrl, item.altText, item.title, open, pngPreviewUrl, retry]);
 
   useEffect(() => () => revokePreparedImage(prepared), [prepared]);
 
@@ -96,6 +102,24 @@ export function PrintablePreviewDialog({ open, onClose, item, internalSvgUrl, pn
     }
   }
 
+  async function downloadPdf() {
+    if (!internalSvgUrl) return;
+    const operation = printOperationRef.current.start();
+    if (!operation) return;
+    setDownloadingPdf(true);
+    setStatus("Preparing PDF...");
+    try {
+      const { downloadOnePagePdf } = await loadPrintableExportRuntime();
+      if (!printOperationRef.current.isCurrent(operation.id)) return;
+      const result = await downloadOnePagePdf({ internalSvgUrl, pngPreviewUrl, title: item.title, filenameBaseName: item.downloadBaseName, altText: item.altText, signal: operation.signal });
+      if (printOperationRef.current.isCurrent(operation.id)) setStatus(result.message);
+    } catch {
+      if (printOperationRef.current.isCurrent(operation.id)) setStatus("The PDF download could not be prepared. Please try again.");
+    } finally {
+      if (printOperationRef.current.finish(operation.id)) setDownloadingPdf(false);
+    }
+  }
+
   if (!mounted || !open) return null;
   return createPortal(
     <div className="print-preview-overlay" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && onClose()}>
@@ -103,14 +127,19 @@ export function PrintablePreviewDialog({ open, onClose, item, internalSvgUrl, pn
         <div className="print-preview-header">
           <div className="print-preview-copy"><h2 id={titleId}>{item.title}</h2></div>
           <div className="print-preview-actions">
-            <button className="button button-primary" type="button" onClick={printPreview} disabled={!prepared?.ok || printing || !internalSvgUrl}>{printing ? "Preparing PDF" : "Print"}</button>
+            <button className="button button-primary" type="button" onClick={printPreview} disabled={!prepared?.ok || printing || downloadingPdf || !internalSvgUrl}>{printing ? "Preparing PDF" : "Print"}</button>
             <button className="button button-ghost" type="button" onClick={onClose}>Close</button>
           </div>
         </div>
-        <div className="print-preview-media" aria-busy={preparing}>
-          {preparing ? <div className="print-preview-state"><strong>{item.title}</strong><span>Preparing print preview...</span></div> : prepared?.ok ? <img src={prepared.imageUrl} alt={item.altText} /> : <div className="print-preview-state print-preview-state-error"><strong>Print preview could not be prepared.</strong><span>Try a download instead, or reload the page and try again.</span></div>}
+        <div className="print-preview-toolbar">
+          <span className="utility-note">US Letter · Portrait · Artwork fits within the page</span>
+          <button className="button button-ghost button-small" type="button" disabled={!prepared?.ok} aria-pressed={zoomed} onClick={() => setZoomed((value) => !value)}>{zoomed ? "Fit preview" : "Zoom in"}</button>
+        </div>
+        <div className="print-preview-media" data-zoomed={zoomed} aria-busy={preparing} tabIndex={zoomed ? 0 : undefined} aria-label={zoomed ? "Enlarged artwork, scroll to inspect" : undefined}>
+          {preparing ? <div className="print-preview-state"><strong>{item.title}</strong><span>Preparing print preview...</span></div> : prepared?.ok ? <img src={prepared.imageUrl} alt={item.altText} /> : <div className="print-preview-state print-preview-state-error"><strong>Print preview could not be prepared.</strong><span>Check your connection and try again.</span><button className="button button-subtle" type="button" onClick={() => setRetry((value) => value + 1)}>Retry preview</button></div>}
         </div>
         <div className="print-preview-downloads">
+          <button className="button button-subtle" type="button" disabled={!internalSvgUrl || printing || downloadingPdf} aria-busy={downloadingPdf} onClick={downloadPdf}>{downloadingPdf ? "Preparing PDF" : "Download PDF"}</button>
           <Suspense fallback={<span>Loading download options...</span>}><DownloadMenu title={item.title} downloadBaseName={item.downloadBaseName} internalSvgUrl={internalSvgUrl} pngPreviewUrl={pngPreviewUrl} aria-label={`Download available formats for ${item.title}`} onStatus={setStatus} /></Suspense>
         </div>
         {status ? <p className="print-preview-status" role="status" aria-live="polite" aria-atomic="true">{status}</p> : null}

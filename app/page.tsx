@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { PageAdSlot } from "@/components/ads/PageAdSlot";
 import { HubCard } from "@/components/coloring/HubCard";
+import { AssetImage } from "@/components/coloring/AssetImage";
 import { RotatingFeaturedGrid } from "@/components/coloring/RotatingFeaturedGrid";
 import { JsonLdScript } from "@/components/seo/JsonLdScript";
 import { PublicPageShell } from "@/components/site/PublicPageShell";
@@ -10,6 +11,7 @@ import {
   getAllPhase1Hubs,
   getFeaturedRotationCandidateItems,
   getGeneratedFeaturedItems,
+  getPagedHubItems,
   getPreviewItems,
   getRootHub,
 } from "@/lib/coloring/data";
@@ -17,6 +19,8 @@ import { buildColoringMetadata } from "@/lib/coloring/metadata";
 import type { ColoringHub } from "@/lib/coloring/types";
 import { getCollectionCount } from "@/lib/coloring/collectionCounts";
 import { buildHomePageJsonLd } from "@/lib/seo/pageJsonLd";
+import { resolveColoringItemAssetUrls } from "@/lib/coloring/assets";
+import { getPrintablePath } from "@/lib/coloring/printablePath";
 
 export function generateMetadata(): Metadata {
   return buildColoringMetadata("/");
@@ -33,19 +37,33 @@ export default function HomePage() {
   const hubs = getAllPhase1Hubs();
   const primaryHubs = selectHubs(hubs, PRIMARY_COLLECTION_SLUGS);
   const discoveryHubs = selectHubs(hubs, DISCOVERY_COLLECTION_SLUGS);
+  const candidateIds = new Set(featuredRotationCandidates.map((item) => item.assetId));
+  const heroItems = selectHubs(hubs, ["flowers", "dinosaurs", "mandalas"]).flatMap((hub) => {
+    const item = [...getGeneratedFeaturedItems(hub), ...getPagedHubItems(hub, 1).items].find((entry) => !candidateIds.has(entry.assetId));
+    return item ? [item] : [];
+  });
 
   return (
     <PublicPageShell pageFamily="home" className="home-page">
       <JsonLdScript id="jsonld-home" data={buildHomePageJsonLd()} />
 
       <header className="home-hero" data-page-section="hero">
+        <div className="home-hero-copy">
         <h1 className="page-title page-title-wide">I Love Coloring Page</h1>
         <p className="page-intro">
-          {rootHub.editorial.introduction} The library currently contains {rootCount.toLocaleString()} printable pages.
+          Find a subject you love. Choose from {rootCount.toLocaleString()} coloring pages, take a closer look, and print or save your favorite.
         </p>
         <div className="hero-actions">
           <Link className="button button-primary" href="/coloring-pages" prefetch={false}>Browse all coloring pages</Link>
           <Link className="button button-ghost" href="#primary-collections" prefetch={false}>Browse collections</Link>
+        </div>
+        <p className="utility-note">Printable PDFs · PNG and JPG page images · No account needed</p>
+        </div>
+        <div className="home-artwork" aria-label="Explore printable artwork">
+          {heroItems.map((item) => {
+            const urls = resolveColoringItemAssetUrls(item.assetSubpaths);
+            return <Link href={getPrintablePath(item)} key={item.assetId} prefetch={false} aria-label={`View ${item.title} printable page`}><AssetImage item={item} imageUrl={urls.preview} fallbackImageUrl={urls.previewFallback} priority interactive /></Link>;
+          })}
         </div>
       </header>
 
@@ -53,7 +71,7 @@ export default function HomePage() {
         <div className="section-heading-row">
           <div>
             <h2 className="section-title" id="primary-collections-title">Start with a collection</h2>
-            <p>These broad destinations separate subject, season, audience, and visual style.</p>
+            <p>Pick a subject or explore a different style.</p>
           </div>
         </div>
         <div className="hub-preview-grid">
@@ -68,6 +86,7 @@ export default function HomePage() {
           <div className="section-heading-row">
             <div>
               <h2 className="section-title" id="fresh-pages">Fresh printable pages</h2>
+              <p>Open a page to inspect the artwork, or use Print for a quick preview.</p>
             </div>
           </div>
           <RotatingFeaturedGrid
@@ -75,7 +94,7 @@ export default function HomePage() {
             candidateItems={featuredRotationCandidates}
             mode="homepage-random"
             hubSlug={rootHub.slug || "coloring-pages"}
-            priorityCount={6}
+            priorityCount={0}
           />
         </div>
       </section>
@@ -86,7 +105,7 @@ export default function HomePage() {
         <div className="section-heading-row">
           <div>
             <h2 className="section-title" id="more-collections-title">More ways to browse</h2>
-            <p>Each collection below has a distinct subject or browsing purpose.</p>
+            <p>From flowers and sea life to fantasy and vehicles.</p>
           </div>
         </div>
         <div className="hub-link-grid">

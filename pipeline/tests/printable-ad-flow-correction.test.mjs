@@ -92,8 +92,8 @@ test("secondary banners follow meaningful content on every approved page family"
   ]);
   const pagination = hub.slice(hub.indexOf('data-page-section="paginated-gallery"'));
   assertOrder(pagination, [
-    '<PaginatedGalleryGrid',
-    '<Pagination',
+    '<GallerySearch',
+    'pagination={{',
     'placement="post-header-banner"',
     'data-page-section="return-to-collection"',
     'placement="related-banner"',
