@@ -9,7 +9,7 @@ const { chromium, firefox, webkit } = require("playwright");
 
 const ROOT = process.cwd();
 const OUT = path.join(ROOT, "out");
-const REVIEW_DIR = path.join(ROOT, "pipeline", "review", "cross-browser-accessibility");
+const REVIEW_DIR = path.join(ROOT, "pipeline", "review", "cross-browser-accessibility", ...(process.argv.includes("--fasttrack") ? ["fasttrack"] : []));
 const ASSET_ROOT = path.join(ROOT, "pipeline", "r2-upload-optimized", "coloring-pages");
 const PRINTABLE = "/printables/animals/animals-alligator-4feec8505a";
 const BROWSER_IDS = ["chrome", "edge", "firefox", "webkit"];
@@ -136,6 +136,7 @@ async function inspectBrowser(browser, specification, baseUrl, tempRoot) {
   const tasks = [
     ["routeViewport", () => runRouteViewportMatrix(browser, specification.id, baseUrl)],
     ["keyboard", () => runKeyboardJourney(browser, baseUrl)],
+    ["featuredFocus", () => runFeaturedFocus(browser, baseUrl)],
     ["touch", () => runTouchJourney(browser, baseUrl)],
     ["reflow", () => runReflow(browser, baseUrl)],
     ["textEnlargement", () => runTextEnlargement(browser, baseUrl)],
@@ -152,6 +153,7 @@ async function inspectBrowser(browser, specification, baseUrl, tempRoot) {
     ["orientation", () => runOrientationSimulation(browser, baseUrl)],
   ];
   for (const [name, task] of tasks) {
+    console.log(`Checking ${specification.id}: ${name}`);
     try {
       entry[name] = await task();
       if (!entry[name].passed) entry.failures.push(...entry[name].failures.map((failure) => `${name}: ${failure}`));
@@ -161,6 +163,30 @@ async function inspectBrowser(browser, specification, baseUrl, tempRoot) {
     }
   }
   return entry;
+}
+
+async function runFeaturedFocus(browser, baseUrl) {
+  const context = await createContext(browser);
+  const page = await context.newPage();
+  const failures = [];
+  try {
+    for (const width of [320, 768, 1440]) {
+      await page.setViewportSize({ width, height: 900 });
+      await gotoReady(page, `${baseUrl}/`);
+      const controls = page.locator('.rotating-featured-grid a[href],.rotating-featured-grid button:not([disabled])');
+      for (let index = 0; index < await controls.count(); index++) {
+        await controls.nth(index).focus();
+        const visible = await controls.nth(index).evaluate((node) => {
+          const rect = node.getBoundingClientRect();
+          const shelf = node.closest('.rotating-featured-grid').getBoundingClientRect();
+          return document.activeElement === node && rect.left >= shelf.left - 1 && rect.right <= shelf.right + 1
+            && shelf.left >= 0 && shelf.right <= innerWidth && document.documentElement.scrollWidth <= innerWidth;
+        });
+        if (!visible) failures.push(`Featured control ${index} is not fully visible on focus at ${width}px`);
+      }
+    }
+  } finally { await context.close(); }
+  return { passed: failures.length === 0, failures };
 }
 
 async function runRouteViewportMatrix(browser, browserId, baseUrl) {
@@ -189,7 +215,11 @@ async function runRouteViewportMatrix(browser, browserId, baseUrl) {
               const rect = node.getBoundingClientRect();
               const style = getComputedStyle(node);
               const clipsInlineContent = /hidden|clip/.test(style.overflowX) && node.scrollWidth > node.clientWidth + 2;
-              return rect.left < -1 || rect.right > innerWidth + 1 || clipsInlineContent;
+              const shelf = node.closest('.rotating-featured-grid[role="region"][tabindex="0"]');
+              const shelfRect = shelf?.getBoundingClientRect();
+              const intentionalShelf = shelfRect && shelfRect.left >= 0 && shelfRect.right <= innerWidth
+                && /auto|scroll/.test(getComputedStyle(shelf).overflowX);
+              return ((!intentionalShelf && (rect.left < -1 || rect.right > innerWidth + 1)) || clipsInlineContent);
             })
             .slice(0, 5)
             .map((node) => `${node.tagName.toLowerCase()}:${node.getAttribute("aria-label") || node.textContent?.trim().slice(0, 40) || "unnamed"}`);
@@ -800,7 +830,11 @@ async function layoutMetrics(page) {
       const rect = node.getBoundingClientRect();
       const style = getComputedStyle(node);
       const clipsInlineContent = /hidden|clip/.test(style.overflowX) && node.scrollWidth > node.clientWidth + 2;
-      return rect.left < -1 || rect.right > innerWidth + 1 || clipsInlineContent;
+      const shelf = node.closest('.rotating-featured-grid[role="region"][tabindex="0"]');
+              const shelfRect = shelf?.getBoundingClientRect();
+              const intentionalShelf = shelfRect && shelfRect.left >= 0 && shelfRect.right <= innerWidth
+                && /auto|scroll/.test(getComputedStyle(shelf).overflowX);
+              return ((!intentionalShelf && (rect.left < -1 || rect.right > innerWidth + 1)) || clipsInlineContent);
     }).slice(0, 6).map((node) => node.getAttribute("aria-label") || node.textContent?.trim().replace(/\s+/g, " ").slice(0, 50) || node.tagName);
     return { overflowPx: Math.max(0, document.documentElement.scrollWidth - document.documentElement.clientWidth), clipped };
   });
