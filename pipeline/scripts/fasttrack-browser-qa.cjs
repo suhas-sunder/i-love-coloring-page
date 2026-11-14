@@ -117,6 +117,8 @@ async function main(){
    });
    await check(`${engine}:actual-image-downloads`,async()=>{
     await page.goto(base+PRINTABLE);
+    await page.getByRole('group',{name:'Download available formats for Animals Alligator',exact:true}).waitFor();
+    await page.getByRole('button',{name:'Download PNG for Animals Alligator',exact:true}).waitFor();
     for(const format of ['PNG','JPG','WebP']){
      const button=page.getByRole('button',{name:`Download ${format} for Animals Alligator`,exact:true});
      if(await button.count()===0){results.outputs.push({engine,format,supported:false});continue;}
