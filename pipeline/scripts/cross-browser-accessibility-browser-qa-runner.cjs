@@ -415,22 +415,24 @@ async function runTextEnlargement(browser, baseUrl) {
   const failures = [];
   let checks = 0;
   try {
-    await page.setViewportSize({ width: 390, height: 900 });
-    for (const factor of [1, 1.5, 2]) {
-      for (const route of ["/", "/coloring-pages", PRINTABLE, "/privacy"] ) {
-        await gotoReady(page, `${baseUrl}${route}`);
-        await page.addStyleTag({ content: `html { font-size: ${factor * 16}px !important; }` });
-        await page.waitForTimeout(25);
-        const metrics = await layoutMetrics(page);
-        if (metrics.overflowPx > 1) failures.push(`${route}@${factor * 100}% text: ${metrics.overflowPx}px overflow`);
-        if (metrics.clipped.length) failures.push(`${route}@${factor * 100}% text: clipped ${metrics.clipped.join(", ")}`);
-        checks += 1;
+    for (const width of [320, 390, 768]) {
+      await page.setViewportSize({ width, height: 900 });
+      for (const factor of [1, 1.5, 2]) {
+        for (const route of ["/", "/coloring-pages", PRINTABLE, "/privacy"] ) {
+          await gotoReady(page, `${baseUrl}${route}`);
+          await page.addStyleTag({ content: `html { font-size: ${factor * 16}px !important; }` });
+          await page.waitForTimeout(25);
+          const metrics = await layoutMetrics(page);
+          if (metrics.overflowPx > 1) failures.push(`${route}@${width}px/${factor * 100}% text: ${metrics.overflowPx}px overflow`);
+          if (metrics.clipped.length) failures.push(`${route}@${width}px/${factor * 100}% text: clipped ${metrics.clipped.join(", ")}`);
+          checks += 1;
+        }
       }
     }
   } finally {
     await context.close();
   }
-  return { passed: failures.length === 0, failures, checks, factors: [100, 150, 200] };
+  return { passed: failures.length === 0, failures, checks, widths: [320, 390, 768], factors: [100, 150, 200] };
 }
 
 async function runFocusScan(browser, baseUrl) {
