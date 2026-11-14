@@ -6,7 +6,7 @@ const { chromium } = require("playwright");
 
 const ROOT = process.cwd();
 const BASE_URL = readBaseUrl(process.argv.slice(2));
-const REVIEW_DIR = path.join(ROOT, "pipeline", "review", "printable-ux-ad-flow-correction");
+const REVIEW_DIR = path.join(ROOT, "pipeline", "review", "printable-ux-ad-flow-correction", ...(process.argv.includes("--fasttrack") ? ["fasttrack"] : []));
 const ROUTES = [
   { id: "home", path: "/", ads: true },
   { id: "gallery", path: "/coloring-pages", ads: true },
@@ -23,6 +23,7 @@ const VIEWPORTS = [
   { width: 768, height: 1024 },
   { width: 1024, height: 900 },
   { width: 1440, height: 1000 },
+  { width: 1536, height: 1000 },
   { width: 1920, height: 1080 },
   { width: 2400, height: 1080 },
   { width: 2560, height: 1080 },
