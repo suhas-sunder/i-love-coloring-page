@@ -16,6 +16,15 @@ Baseline: `3850567fc6c26df17d5c30b8a2d6a5c3c1ef50ec`, clean fast-track branch, 2
 | Brand becomes only “IL” at 390px; footer is undifferentiated links | Shared header/footer | Weak orientation and supporting discovery. Keep a compact readable wordmark; group existing footer destinations. | 360px/reflow, accessible navigation names, route preservation |
 | Filter Done removes focused element; active filters are only a comma list | GalleryFilters / explorer | Keyboard focus loss and cumbersome individual removal. Return focus to trigger; offer labeled removable selections. | Keyboard Done/Escape, mobile draft/apply/cancel |
 
+## Corrections found during acceptance
+
+- At 320px, numbered pagination needed wrapping; the shared pager now stays within the viewport.
+- At 200% text, WebKit native sorting controls overflowed and footer groups became cramped. Wrapping controls, breakable headings and auto-fit footer columns now pass 144 enlarged-text checks across four browsers.
+- The gallery jump offset did not scale with the enlarged header. Its compiled correction passes 36 Chromium/WebKit checks at 320/390/768px and normal/200% text.
+- Static page ranges remained visible during complete-collection search. The shared explorer now owns the range and restores it only in static-page state. Source assertions and the internal-link audit were reconciled with this ownership and bounded numbered pagination; missing or unrelated routes still fail validation.
+- Manual ad review found the header fallback label clipped on unchanged production. Existing DOM-only counters missed this. The protected ad implementation remains unchanged; clipping-aware evidence and the owner-review exception are recorded in the completion report.
+- Netlify preview origins cannot fetch the production CDN assets for raster conversion. Native WebP browsing works; download acceptance uses the allowed local origin. No production CORS configuration was changed.
+
 ## Source conflicts resolved
 
 - October protected ad directive and current AGENTS contract supersede old placeholder/build-switch and ad rollout recommendations. Ad code, placements, lifecycle and suppression remain KEEP.
