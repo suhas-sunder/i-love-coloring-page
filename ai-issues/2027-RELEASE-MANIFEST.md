@@ -2,6 +2,8 @@
 
 > **All windows start HOLD.** This is a capacity/owner-review plan, NOT authorization to create bulk pages or push main. Only one coherent, independently acceptable package in a window. If build is incomplete or evidence missing, NO RELEASE. Never mark PASS automatically.
 
+**Scheduling status (Nov 13, 2026):** The existing ColoringPage task was reconfigured for weekly Sunday review (10 a.m. America/Toronto, beginning Nov 15), but remains **disabled** because the five-active-task account limit was reached. No other active task was changed. Owner must free one active task slot before this automation can run. GitHub release candidates and this manifest remain staged independently.
+
 **Source:** [Maturity program](COLORING-2027-MATURITY-PROGRAM.md) and [search baseline](SEARCH-BASELINE-2026-11-13.md). Main auto-deploys to Netlify. Protected ads: [owner directive](AD-PLACEHOLDER-SAFETY.md).
 
 | Week | Candidate gate Sunday (Toronto) | Proposed lane (not guaranteed) | Branch | PR | SHA / preview | Canonical / image sitemap delta | Tests / owner sign-off | Decision |
