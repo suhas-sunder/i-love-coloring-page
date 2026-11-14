@@ -93,6 +93,7 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
               pagination={{
                 basePath: hub.route,
                 currentPage: pagedGallery.currentPage,
+                pageSize: pagedGallery.pageSize,
                 totalPages: pagedGallery.totalPages,
                 hasPreviousPage: pagedGallery.hasPreviousPage,
                 hasNextPage: pagedGallery.hasNextPage,
@@ -140,9 +141,6 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
                 <h2 className="section-title" id="page-gallery-title">More {collectionName(hub)}</h2>
               </div>
             </div>
-            <p className="results-note" aria-live="polite">
-              Showing {(((pagedGallery.currentPage - 1) * pagedGallery.pageSize) + 1).toLocaleString()}-{Math.min(pagedGallery.currentPage * pagedGallery.pageSize, pagedGallery.totalItems).toLocaleString()} of {pagedGallery.totalItems.toLocaleString()} printables.
-            </p>
             <GallerySearch
               key={`${hub.hubId}-${page}`}
               hubTitle={hub.title}
@@ -153,6 +151,7 @@ export function HubPageContent({ hub, page }: HubPageContentProps) {
               pagination={{
                 basePath: hub.route,
                 currentPage: pagedGallery.currentPage,
+                pageSize: pagedGallery.pageSize,
                 totalPages: pagedGallery.totalPages,
                 hasPreviousPage: pagedGallery.hasPreviousPage,
                 hasNextPage: pagedGallery.hasNextPage,

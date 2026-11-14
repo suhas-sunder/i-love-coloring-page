@@ -79,8 +79,11 @@ async function main(){
    });
    await check(`${engine}:deep-collection-search`,async()=>{
     await page.goto(base+'/coloring-pages/plushies/page/36');assert.equal(await page.locator('.gallery-item').count(),24);
+    assert.match(await page.locator('.gallery-control-summary').textContent(),/1,681-1,704/);
     await page.getByRole('searchbox',{name:'Search this collection'}).fill('plushie');
     await page.waitForFunction(()=>document.querySelectorAll('.gallery-item').length===48);
+    assert.match(await page.locator('.gallery-control-summary').textContent(),/matching coloring pages/);
+    assert.equal(await page.getByText(/1,681-1,704/).count(),0);
     assert.equal(await page.locator('.pagination').count(),0);
     await page.getByRole('button',{name:'Clear all',exact:true}).click();await waitCount(page,'.gallery-item',24);
     assert.equal(await page.getByRole('link',{name:'Page 1',exact:true}).getAttribute('href'),'/coloring-pages/plushies');
@@ -130,7 +133,9 @@ async function main(){
     await page.screenshot({path:path.join(DIR,`${engine}-navigation-390.png`)});await page.keyboard.press('Escape');
     await page.waitForFunction(()=>document.activeElement?.getAttribute('aria-label')==='Open navigation menu');
     await page.getByRole('button',{name:'Search coloring pages',exact:true}).click();await page.getByRole('dialog').getByRole('searchbox').fill('lotus');
-    await page.locator('.global-search-printable-results a').first().waitFor();await page.screenshot({path:path.join(DIR,`${engine}-global-search-390.png`)});
+    await page.locator('.global-search-printable-results a').first().waitFor();
+    await page.waitForFunction(()=>[...document.querySelectorAll('.global-search-result-preview')].some(i=>i instanceof HTMLImageElement&&i.complete&&i.naturalWidth>0));
+    await page.screenshot({path:path.join(DIR,`${engine}-global-search-390.png`)});
     await page.getByRole('link',{name:'See all printable matches'}).click();await page.waitForURL('**/coloring-pages');
     await page.waitForFunction(()=>document.querySelector('.gallery-search input')?.value==='lotus');
     await page.getByRole('button',{name:'Search coloring pages',exact:true}).click();await page.getByRole('dialog').getByRole('searchbox').fill('alligator');

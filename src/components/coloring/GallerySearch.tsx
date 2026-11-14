@@ -28,6 +28,7 @@ type GallerySearchProps = {
   pagination?: {
     basePath: string;
     currentPage: number;
+    pageSize: number;
     totalPages: number;
     hasPreviousPage: boolean;
     hasNextPage: boolean;
@@ -218,7 +219,9 @@ export function GallerySearch({
         <div className="gallery-control-summary">
           <p aria-live="polite">
             {isStaticPageView
-              ? `Showing ${resultItems.length.toLocaleString()} of ${totalItems.toLocaleString()} coloring pages`
+              ? pagination
+                ? `Showing ${((pagination.currentPage - 1) * pagination.pageSize + 1).toLocaleString()}-${Math.min(pagination.currentPage * pagination.pageSize, totalItems).toLocaleString()} of ${totalItems.toLocaleString()} coloring pages`
+                : `Showing ${resultItems.length.toLocaleString()} of ${totalItems.toLocaleString()} coloring pages`
               : searchItems
                 ? `${resultCount.toLocaleString()} matching coloring pages`
                 : `Showing the current gallery while results are ${loadState === "error" ? "unavailable" : "loading"}`}
