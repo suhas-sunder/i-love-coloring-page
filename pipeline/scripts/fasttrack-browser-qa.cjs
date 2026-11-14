@@ -38,7 +38,10 @@ async function main(){
    });
    const page=await context.newPage();page.on('pageerror',e=>results.errors.push({engine,check:currentCheck,url:page.url(),error:e.message}));
    for(const width of process.argv.includes('--tasks-only')?[]:[360,390,768,1280,1440]){
-    await page.setViewportSize({width,height:900});
+    // Each independent screenshot viewport starts without an outgoing route to cancel.
+    const page=await context.newPage();
+    page.on('pageerror',e=>results.errors.push({engine,check:currentCheck,url:page.url(),error:e.message}));
+    await resizePage(page, {width,height:900});
     for(const [id,route] of ROUTES)await check(`${engine}:${id}@${width}`,async()=>{
      await context.clearCookies();await page.goto(base+route,{waitUntil:'networkidle'});
      assert.equal(await page.locator('h1').count(),1);
@@ -53,11 +56,14 @@ async function main(){
       const controls=[...document.querySelectorAll('main button,main input,main select,main .gallery-item,main .pagination')];
       return ads.flatMap(a=>controls.filter(c=>{const x=a.getBoundingClientRect(),y=c.getBoundingClientRect();return y.width&&y.height&&x.left<y.right&&x.right>y.left&&x.top<y.bottom&&x.bottom>y.top;}).map(c=>c.className));
      });assert.deepEqual(overlap,[]);
+     await page.waitForLoadState('networkidle');
      return before;
     });
+    await page.waitForLoadState('networkidle');
+    await page.close();
    }
    await check(`${engine}:library-continuation-and-return`,async()=>{
-    await page.setViewportSize({width:390,height:844});await page.goto(base+'/coloring-pages');
+    await resizePage(page, {width:390,height:844});await page.goto(base+'/coloring-pages');
     await page.evaluate(()=>sessionStorage.clear());await page.reload();
     assert.equal(await page.locator('.gallery-item').count(),48);
     await page.getByRole('button',{name:'Show more',exact:true}).click();await page.waitForFunction(()=>document.querySelectorAll('.gallery-item').length===96);
@@ -99,11 +105,11 @@ async function main(){
     await page.getByRole('button',{name:'Apply filters'}).click();
     await page.locator('.gallery-active-filters button').waitFor();await page.locator('.gallery-active-filters button').click();
     await waitCount(page,'.gallery-active-filters button',0);
-    await page.setViewportSize({width:1280,height:900});await page.getByRole('button',{name:'Filters',exact:true}).click();await page.getByRole('button',{name:'Done',exact:true}).click();
+    await resizePage(page, {width:1280,height:900});await page.getByRole('button',{name:'Filters',exact:true}).click();await page.getByRole('button',{name:'Done',exact:true}).click();
     await page.waitForFunction(()=>document.activeElement?.textContent==='Filters');
    });
    await check(`${engine}:preview-zoom-pdf-and-focus`,async()=>{
-    await page.setViewportSize({width:390,height:844});await page.goto(base+PRINTABLE);await page.getByRole('button',{name:'Enlarge preview',exact:true}).click();
+    await resizePage(page, {width:390,height:844});await page.goto(base+PRINTABLE);await page.getByRole('button',{name:'Enlarge preview',exact:true}).click();
     await page.locator('.print-preview-media img').waitFor({timeout:30000});
     assert.ok(await page.locator('.print-preview-media img').evaluate(i=>i.naturalWidth>=1200));
     await page.screenshot({path:path.join(DIR,`${engine}-preview-390.png`)});
@@ -131,7 +137,7 @@ async function main(){
     }
    });
    await check(`${engine}:navigation-and-global-search`,async()=>{
-    await page.setViewportSize({width:390,height:844});await page.goto(base+'/');
+    await resizePage(page, {width:390,height:844});await page.goto(base+'/');
     await page.getByRole('button',{name:'Open navigation menu'}).click();await page.getByRole('dialog').waitFor();
     await page.screenshot({path:path.join(DIR,`${engine}-navigation-390.png`)});await page.keyboard.press('Escape');
     await page.waitForFunction(()=>document.activeElement?.getAttribute('aria-label')==='Open navigation menu');
@@ -144,7 +150,7 @@ async function main(){
     await page.getByRole('button',{name:'Search coloring pages',exact:true}).click();await page.getByRole('dialog').getByRole('searchbox').fill('alligator');
     await page.getByRole('link',{name:'See all printable matches'}).click();
     await page.waitForFunction(()=>document.querySelector('.gallery-search input')?.value==='alligator');
-    await page.setViewportSize({width:1280,height:900});await page.getByRole('button',{name:'Categories',exact:true}).click();await page.screenshot({path:path.join(DIR,`${engine}-categories-1280.png`)});await page.keyboard.press('Escape');
+    await resizePage(page, {width:1280,height:900});await page.getByRole('button',{name:'Categories',exact:true}).click();await page.screenshot({path:path.join(DIR,`${engine}-categories-1280.png`)});await page.keyboard.press('Escape');
     await page.waitForFunction(()=>document.activeElement?.textContent?.trim()==='Categories');
    });
    // Let disclosure-triggered route prefetches settle before destroying their context.
@@ -174,9 +180,9 @@ async function main(){
     const c=await browser.newContext();await blockAds(c);await c.route('**/*.webp',r=>r.abort());let fail=true;
     await c.route('**/search-data/all.json',r=>fail?r.fulfill({status:503,body:'unavailable'}):r.continue());
     const p=await c.newPage();await p.goto(base+'/coloring-pages');await p.locator('.asset-placeholder').first().waitFor();
-    await p.getByRole('searchbox',{name:'Search this collection'}).fill('alligator');await p.getByRole('alert').waitFor();assert.equal(await p.locator('.gallery-item').count(),48);
+    await p.getByRole('searchbox',{name:'Search this collection'}).fill('alligator');await p.locator('.gallery-search-error').waitFor();assert.equal(await p.locator('.gallery-item').count(),48);
     await p.screenshot({path:path.join(DIR,`${engine}-failure.png`)});fail=false;await p.getByRole('button',{name:'Try again',exact:true}).click();
-    await p.waitForFunction(()=>document.querySelector('.gallery-control-summary')?.textContent.includes('matching'));await waitCount(p,'[role=alert]',0);await c.close();
+    await p.waitForFunction(()=>document.querySelector('.gallery-control-summary')?.textContent.includes('matching'));await waitCount(p,'.gallery-search-error',0);await c.close();
    });
    await check(`${engine}:touch-navigation`,async()=>{
     const c=await browser.newContext({viewport:{width:360,height:800},hasTouch:true,isMobile:true});await blockAds(c);const p=await c.newPage();await p.goto(base+'/');await p.getByRole('button',{name:'Open navigation menu'}).tap();await p.getByRole('dialog').getByRole('button',{name:'Close',exact:true}).tap();assert.equal(await p.getByRole('dialog').count(),0);await c.close();
@@ -185,8 +191,8 @@ async function main(){
     const c=await browser.newContext({viewport:{width:390,height:844}});await blockAds(c);let stall=true,failPreview=true;
     await c.route('**/search-data/all.json',async r=>{if(stall){await new Promise(resolve=>setTimeout(resolve,9000));try{await r.abort();}catch{}}else await r.continue();});
     await c.route('**/*.svg',r=>failPreview?r.fulfill({status:503,body:'unavailable'}):r.continue());
-    const p=await c.newPage();await p.goto(base+'/coloring-pages');await p.getByRole('searchbox',{name:'Search this collection'}).fill('alligator');
-    await p.getByRole('alert').waitFor({timeout:15000});assert.equal(await p.locator('.gallery-item').count(),48);
+    const p=await c.newPage();await p.goto(base+'/coloring-pages',{waitUntil:'networkidle'});await p.locator('.asset-image[data-state=loaded]').first().waitFor();await p.getByRole('searchbox',{name:'Search this collection'}).fill('alligator');
+    await p.locator('.gallery-search-error').waitFor({timeout:15000});assert.equal(await p.locator('.gallery-item').count(),48);
     stall=false;await p.getByRole('button',{name:'Try again',exact:true}).click();await p.waitForFunction(()=>document.querySelector('.gallery-control-summary')?.textContent.includes('matching'));
     await p.goto(base+PRINTABLE);await p.getByRole('button',{name:'Enlarge preview',exact:true}).click();await p.getByRole('button',{name:'Retry preview',exact:true}).waitFor();
     failPreview=false;await p.getByRole('button',{name:'Retry preview',exact:true}).click();await p.locator('.print-preview-media img').waitFor();await c.close();
@@ -195,6 +201,12 @@ async function main(){
  }
  }finally{if(server)await new Promise(r=>server.close(r));await fs.writeFile(RESULT_PATH,JSON.stringify(results,null,2));}
  const failures=results.checks.filter(x=>!x.passed);console.log(JSON.stringify({checks:results.checks.length,failures,errors:results.errors,outputs:results.outputs},null,2));if(failures.length||results.errors.length)process.exitCode=1;
+}
+async function resizePage(page, viewport){
+ await page.setViewportSize(viewport);
+ // A breakpoint change can schedule route prefetches; settle them before navigating.
+ await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
+ await page.waitForLoadState('networkidle');
 }
 async function blockAds(c){await c.route(/googlesyndication|doubleclick|googletagservices|googleadservices/i,r=>r.abort());}
 async function waitCount(page,selector,count){await page.waitForFunction(({selector,count})=>document.querySelectorAll(selector).length===count,{selector,count});}
