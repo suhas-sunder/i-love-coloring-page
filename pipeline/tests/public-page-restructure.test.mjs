@@ -86,11 +86,14 @@ test("hub pagination uses the materially condensed template", async () => {
   assert.ok(marker >= 0 && end > marker, "pagination branch is identifiable");
   const branch = source.slice(marker, end);
   assert.match(source, /const pageFamily = isPageOne \? "hub" : "hub-pagination"/);
-  assert.match(branch, /<PaginatedGalleryGrid items=\{pagedGallery\.items\}/);
-  assert.match(branch, /<Pagination/);
-  assertOrder(branch, ["<PaginatedGalleryGrid", "placement=\"post-header-banner\"", "data-page-section=\"return-to-collection\""]);
+  assert.match(branch, /<GallerySearch/);
+  assert.match(branch, /pageItems=\{pagedGallery\.items\}/);
+  assert.match(branch, /pagination=\{\{/);
+  assert.match(branch, /currentPage: pagedGallery\.currentPage/);
+  assert.match(branch, /searchDataPath=\{`\/search-data\/hubs\/\$\{hub\.slug\}\.json`\}/);
+  assertOrder(branch, ["<GallerySearch", "placement=\"post-header-banner\"", "data-page-section=\"return-to-collection\""]);
   assert.match(branch, /data-page-section="return-to-collection"/);
-  assert.doesNotMatch(branch, /GallerySearch|RotatingFeaturedGrid|SupportingInformation|RelatedHubs|supporting-square/);
+  assert.doesNotMatch(branch, /RotatingFeaturedGrid|SupportingInformation|RelatedHubs|supporting-square/);
   const heading = await readText("src/components/coloring/CollectionPageHeader.tsx");
   assert.match(heading, /page > 1 \? `\$\{title\}, Page \$\{page\}` : title/);
 });

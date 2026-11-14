@@ -123,7 +123,7 @@ export function GalleryFilters({ tags, activeFilterIds, onActiveFilterIdsChange 
           <FilterGroups groups={groupedTags} selectedIds={activeFilterIds} onToggle={toggleDesktop} />
           <div className="gallery-filter-actions">
             <button className="button button-ghost button-small" type="button" disabled={activeFilterIds.length === 0} onClick={() => onActiveFilterIdsChange([])}>Clear all</button>
-            <button className="button button-primary button-small" type="button" onClick={() => setDesktopOpen(false)}>Done</button>
+            <button className="button button-primary button-small" type="button" onClick={() => { setDesktopOpen(false); triggerRef.current?.focus(); }}>Done</button>
           </div>
         </div>
       ) : null}
