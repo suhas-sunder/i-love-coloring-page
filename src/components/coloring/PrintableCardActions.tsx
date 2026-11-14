@@ -18,9 +18,10 @@ type PrintableCardActionsProps = {
   };
   className?: string;
   buttonClassName?: string;
+  label?: string;
 };
 
-export function PrintableCardActions({ item, assetUrls, className, buttonClassName }: PrintableCardActionsProps) {
+export function PrintableCardActions({ item, assetUrls, className, buttonClassName, label = "Print" }: PrintableCardActionsProps) {
   const surfaceId = useId();
   const surface = { kind: "printable-dialog" as const, id: surfaceId };
   const { closeModal, isModalOpen, openModal } = useSiteInteractions();
@@ -43,7 +44,7 @@ export function PrintableCardActions({ item, assetUrls, className, buttonClassNa
         disabled={!hasPrintableAsset}
         aria-haspopup="dialog"
       >
-        Print
+        {label}
       </button>
       {open ? (
         <Suspense fallback={null}>

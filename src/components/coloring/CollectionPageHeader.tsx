@@ -18,6 +18,7 @@ export function CollectionPageHeader({ hub, intro, title = hub.h1, page = 1 }: C
       <Breadcrumbs items={breadcrumbs} />
       <h1 className="page-title page-title-wide">{heading}</h1>
       <p className="page-intro">{intro}</p>
+      <a className="collection-gallery-link" href="#gallery">Browse and search this collection <span aria-hidden="true">↓</span></a>
     </header>
   );
 }

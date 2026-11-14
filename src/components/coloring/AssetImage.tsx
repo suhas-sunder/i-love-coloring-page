@@ -33,10 +33,12 @@ export function AssetImage({ item, imageUrl, fallbackImageUrl = null, priority =
 
     if (image.naturalWidth > 0) {
       setLoaded(true);
+    } else if (fallbackImageUrl && activeImageUrl !== fallbackImageUrl) {
+      setActiveImageUrl(fallbackImageUrl);
     } else {
       setFailed(true);
     }
-  }, [activeImageUrl]);
+  }, [activeImageUrl, fallbackImageUrl]);
 
   if (!activeImageUrl || failed) return <AssetPlaceholder title={item.title} />;
 

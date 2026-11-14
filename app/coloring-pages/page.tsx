@@ -61,7 +61,7 @@ export default function ColoringPagesLanding() {
         <div className="section-heading-row">
           <div>
             <h2 className="section-title" id="browse-collections-title">Browse useful collections</h2>
-            <p>These broad collections provide distinct starting points within the complete inventory.</p>
+            <p>Choose a subject to explore a smaller collection.</p>
           </div>
         </div>
         <div className="hub-link-grid">

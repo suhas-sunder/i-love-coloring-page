@@ -71,6 +71,7 @@ export function PrintableDetailActions({ item, internalSvgUrl, pngPreviewUrl }: 
 
   return (
     <div className="printable-action-controls">
+      <p className="printable-paper-note">Ready to print<br /><strong>US Letter · 8.5 × 11 in · Portrait</strong></p>
       <button
         ref={pdfDownloadButtonRef}
         className="button button-primary printable-pdf-download"

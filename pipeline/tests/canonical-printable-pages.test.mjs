@@ -84,7 +84,9 @@ test("normal cards use canonical image and title links with a separate Print act
   assert.match(card, /<Link className="gallery-item-media-link" href=\{itemHref\}/);
   assert.match(card, /<Link className="item-title-link" href=\{itemHref\}/);
   assert.match(card, /<PrintableCardActions/);
-  assert.match(actions, />\s*Print\s*<\/button>/);
+  assert.match(actions, /label = "Print"/);
+  assert.match(actions, />\s*\{label\}\s*<\/button>/);
+  assert.doesNotMatch(card, /<PrintableCardActions[^>]*\blabel=/);
   assert.match(gallery, /getPrintablePath\(item\)/);
   assert.match(data, /title: titleModel\.displayTitle/);
   assert.match(data, /altText: titleModel\.shortAccessibleTitle/);
