@@ -3179,7 +3179,7 @@
 .collection-gallery-link { display: inline-flex; width: fit-content; max-width: 100%; gap: var(--space-12); align-items: center; min-height: 44px; color: var(--color-plum); font-weight: 700; }
 .section-heading-row > div { min-width: 0; }
 .page-title, .section-title { overflow-wrap: anywhere; }
-.gallery-section, .paginated-gallery-section { scroll-margin-top: var(--space-96); }
+.gallery-section, .paginated-gallery-section { scroll-margin-top: max(var(--space-96), 6rem); }
 .hub-preview-card { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); align-items: center; }
 .hub-preview-card-media, .hub-preview-card[data-compact="true"] .hub-preview-card-media { aspect-ratio: 2 / 3; max-height: none; }
 .hub-card-description { -webkit-line-clamp: 2; font-size: var(--text-sm-size); }
