@@ -23,4 +23,4 @@
 - [#7 Release train](https://github.com/suhas-sunder/i-love-coloring-page/issues/7)
 - [#8 SEO/AdSense measurement](https://github.com/suhas-sunder/i-love-coloring-page/issues/8)
 
-**Status:** planning branch only, not merged; the fast-track branch has been created but no UX code patch has been implemented yet. Codex prompts are ready for execution; they are not evidence that Codex has run. The weekly scheduled review is an owner-gated release preflight and does not itself certify readiness.
+**Status:** planning branch only, not merged; the fast-track branch has been created but no UX code patch has been implemented yet. Codex prompts are ready for execution; they are not evidence that Codex has run. The weekly release review has a Sunday 10 a.m. Toronto cadence configured but is currently **PAUSED** because the account has reached its 5-active-task limit. No other task was disabled. It must be explicitly enabled after a slot is freed; scheduling configuration does not certify readiness.
