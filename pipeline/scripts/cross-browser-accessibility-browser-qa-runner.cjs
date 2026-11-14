@@ -173,6 +173,7 @@ async function runFeaturedFocus(browser, baseUrl) {
     for (const width of [320, 768, 1440]) {
       await page.setViewportSize({ width, height: 900 });
       await gotoReady(page, `${baseUrl}/`);
+      await page.locator('.rotating-featured-grid .asset-image[data-state=loaded]').first().waitFor();
       const controls = page.locator('.rotating-featured-grid a[href],.rotating-featured-grid button:not([disabled])');
       for (let index = 0; index < await controls.count(); index++) {
         await controls.nth(index).focus();
