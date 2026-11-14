@@ -148,6 +148,7 @@ async function main(){
    await check(`${engine}:featured-shelf-keyboard-reachability`,async()=>{
     const c=await browser.newContext({viewport:{width:360,height:800}});await blockAds(c);const p=await c.newPage();await p.goto(base+'/');
     const shelf=p.locator('.rotating-featured-grid').first();
+    await shelf.scrollIntoViewIfNeeded();
     await shelf.locator('.asset-image[data-state=loaded]').first().waitFor();await shelf.focus();
     const controls=shelf.locator('a[href],button:not([disabled])');const count=await controls.count();assert.ok(count>8);
     for(let i=0;i<count;i++){
