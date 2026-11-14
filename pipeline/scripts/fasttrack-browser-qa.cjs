@@ -10,6 +10,7 @@ const DIR = path.resolve('pipeline/review/fasttrack/after');
 const RESULT_PATH = path.join(DIR,process.argv.includes('--tasks-only')?'task-results.json':'results.json');
 const PRINTABLE = '/printables/animals/animals-alligator-4feec8505a';
 const ROUTES = [['home','/'],['gallery','/coloring-pages'],['animals','/coloring-pages/animals'],['lotus','/coloring-pages/lotus'],['christmas','/coloring-pages/christmas'],['plushies','/coloring-pages/plushies'],['deep','/coloring-pages/plushies/page/36'],['printable',PRINTABLE]];
+let currentCheck = 'setup';
 const results = {checks:[], outputs:[], errors:[], limitations:['Ad requests blocked; no claim of genuine AdSense rendering or policy acceptance.','Desktop Chromium and WebKit with touch simulation; physical mobile, assistive technology and printer remain manual.','LCP/CLS/interaction measurements are local lab observations, not field p75.']};
 const mime = {'.html':'text/html','.js':'text/javascript','.css':'text/css','.json':'application/json','.xml':'application/xml','.svg':'image/svg+xml','.webp':'image/webp','.png':'image/png','.woff2':'font/woff2'};
 async function main(){
@@ -35,7 +36,7 @@ async function main(){
     try{new PerformanceObserver(l=>{for(const e of l.getEntries())if(!e.hadRecentInput)window.__metrics.cls+=e.value;}).observe({type:'layout-shift',buffered:true});}catch{}
     try{new PerformanceObserver(l=>{for(const e of l.getEntries())window.__metrics.lcp=e.startTime;}).observe({type:'largest-contentful-paint',buffered:true});}catch{}
    });
-   const page=await context.newPage();page.on('pageerror',e=>results.errors.push({engine,error:e.message}));
+   const page=await context.newPage();page.on('pageerror',e=>results.errors.push({engine,check:currentCheck,url:page.url(),error:e.message}));
    for(const width of process.argv.includes('--tasks-only')?[]:[360,390,768,1280,1440]){
     await page.setViewportSize({width,height:900});
     for(const [id,route] of ROUTES)await check(`${engine}:${id}@${width}`,async()=>{
@@ -146,6 +147,9 @@ async function main(){
     await page.setViewportSize({width:1280,height:900});await page.getByRole('button',{name:'Categories',exact:true}).click();await page.screenshot({path:path.join(DIR,`${engine}-categories-1280.png`)});await page.keyboard.press('Escape');
     await page.waitForFunction(()=>document.activeElement?.textContent?.trim()==='Categories');
    });
+   // Let disclosure-triggered route prefetches settle before destroying their context.
+   // WebKit can surface a cancelled prefetch as a page error during immediate teardown.
+   await page.waitForLoadState('networkidle');
    await context.close();
    await check(`${engine}:featured-shelf-keyboard-reachability`,async()=>{
     const c=await browser.newContext({viewport:{width:360,height:800}});await blockAds(c);const p=await c.newPage();await p.goto(base+'/');
@@ -194,6 +198,6 @@ async function main(){
 }
 async function blockAds(c){await c.route(/googlesyndication|doubleclick|googletagservices|googleadservices/i,r=>r.abort());}
 async function waitCount(page,selector,count){await page.waitForFunction(({selector,count})=>document.querySelectorAll(selector).length===count,{selector,count});}
-async function check(name,fn){try{const evidence=await fn();results.checks.push({name,passed:true,evidence});console.log('PASS',name);}catch(e){results.checks.push({name,passed:false,error:e.stack});console.log('FAIL',name,e.stack);}await fs.writeFile(RESULT_PATH,JSON.stringify(results,null,2));}
+async function check(name,fn){currentCheck=name;try{const evidence=await fn();results.checks.push({name,passed:true,evidence});console.log('PASS',name);}catch(e){results.checks.push({name,passed:false,error:e.stack});console.log('FAIL',name,e.stack);}await fs.writeFile(RESULT_PATH,JSON.stringify(results,null,2));}
 async function scrollAll(page){await page.evaluate(async()=>{for(let y=0;y<document.documentElement.scrollHeight;y+=600){window.scrollTo(0,y);await new Promise(r=>setTimeout(r,30));}window.scrollTo(0,0);});await page.waitForTimeout(500);}
 main().catch(async e=>{console.error(e);await fs.writeFile(RESULT_PATH,JSON.stringify({...results,fatal:e.message},null,2));process.exit(1)});
